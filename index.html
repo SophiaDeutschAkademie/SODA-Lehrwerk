@@ -129,6 +129,54 @@ h1:focus{outline:none}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
+
+/* ───────── 목차 레이아웃: 상단 제목 + 세 묶음 패널 ───────── */
+#inhalt .split{display:block;max-width:1320px;padding:clamp(20px,3.5vw,44px) clamp(16px,5vw,64px) 72px}
+#inhalt .side-l{position:relative;min-height:0;display:block;padding:0}
+#inhalt .side-l .pill{position:absolute;top:0;right:0;align-self:auto;z-index:2}
+#inhalt .side-main{display:grid;grid-template-columns:1fr auto;grid-template-areas:"brand brand" "title info";align-items:end;column-gap:40px;row-gap:0;padding:0 0 clamp(28px,5vw,56px);justify-content:stretch}
+#inhalt .top-brand{grid-area:brand;margin:0 0 clamp(28px,6vw,72px);height:36px}
+#inhalt .big{grid-area:title;font-size:clamp(52px,9.4vw,136px);line-height:.98}
+#inhalt .big span{display:inline}
+#inhalt .big .t1{margin-right:.14em}
+#inhalt .eyebrow,#inhalt .side-main>h2,#inhalt .lead{grid-area:info;justify-self:end;text-align:right}
+#inhalt .eyebrow{margin:0;align-self:start}
+#inhalt .side-main>h2{margin:0;align-self:center;display:none}
+#inhalt .lead{align-self:end;margin:0;padding-bottom:10px}
+#inhalt .eyebrow{display:none}
+#inhalt .side-r{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+#inhalt .cat{display:flex;flex-direction:column;padding:22px 20px 20px;background:#F2F2EE;border-radius:26px}
+#inhalt .cat-h{margin:0 0 16px;padding:0 4px;border:0}
+#inhalt .cat-h h2{font-size:clamp(20px,2vw,24px)}
+#inhalt .cat .grid,#inhalt .cat .grid.three,#inhalt .cat .grid.one{display:flex;flex-direction:column;gap:12px;padding:0;flex:1}
+#inhalt .cat .grid li{flex:0 0 auto}
+#inhalt .cat .grid.one li{flex:1}
+#inhalt .cat .tile{min-height:0;padding:18px 18px 14px;border-radius:18px}
+#inhalt .cat .grid.one .tile{background:var(--accent);border-color:var(--accent);color:#fff}
+#inhalt .cat .grid.one .tile .lab,#inhalt .cat .grid.one .tile .ttl,#inhalt .cat .grid.one .tile .dsc{color:#fff}
+#inhalt .cat .grid.one .tile .dsc{opacity:.78}
+#inhalt .cat .grid.one .tile .meta{background:rgba(255,255,255,.16);color:#fff}
+#inhalt .cat .grid.one .tile .go{background:#fff;color:var(--accent)}
+#inhalt .cat .grid.one .tile:hover{background:var(--accent-d)}
+#inhalt .cat .grid.one .tile .ttl{font-size:clamp(26px,3vw,36px)}
+#inhalt .cat .grid.one .tile{justify-content:flex-start}
+#inhalt .cat .tile.soon{background:transparent}
+@media (max-width:1000px){
+  #inhalt .side-r{grid-template-columns:repeat(2,1fr)}
+  #inhalt .cat:last-child{grid-column:1/-1}
+  #inhalt .cat:last-child .grid{flex-direction:row;flex-wrap:wrap}
+  #inhalt .cat:last-child .grid li{flex:1 1 220px}
+}
+@media (max-width:700px){
+  #inhalt .side-main{grid-template-columns:1fr;grid-template-areas:"brand" "title" "info"}
+  #inhalt .lead{justify-self:start;text-align:left;margin-top:14px;padding:0}
+  #inhalt .side-r{grid-template-columns:1fr;gap:16px}
+  #inhalt .cat:last-child .grid{flex-direction:column}
+  #inhalt .big{font-size:clamp(52px,15vw,96px)}
+  #inhalt .big span{display:block}
+  #inhalt .big .t1{margin:0}
+  #inhalt .top-brand{margin-top:48px}
+}
 </style>
 <noscript><style>#inhalt[hidden]{display:block!important}</style></noscript>
 </head>

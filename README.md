@@ -13,7 +13,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `verben-mit-praepositionen/` | Verben mit Präpositionen | 동사와 전치사 결합 플래시카드, A1–C2, 324장 |
 | `nomen-verb-verbindungen/` | Nomen-Verb-Verbindungen | 명사와 동사 연어 플래시카드, A1–C2, 317장 |
 
-루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(문법 다지기 / 읽고 듣고 말하기 / 전치사와 표현 넓히기)으로 나뉘어 있고, 말하기 훈련은 업데이트 예정 카드로 들어 있어요. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
+루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grundlagen / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 업데이트 예정 카드로 들어 있어요. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
 
 ## 웹 주소로 열기 (GitHub Pages)
 
