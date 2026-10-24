@@ -45,3 +45,7 @@ nomen-verb-verbindungen/     SODA-NVV 저장소의 내용
 - `lesetraining/`의 텍스트 원본과 데이터 파일을 다시 만드는 방법은 `lesetraining/README.md`에 있어요.
 - `hoertraining/`과 `grammatik/`은 오프라인 캐시(서비스워커)를 씁니다. 이 두 폴더의 내용을 고친 뒤에는 같은 폴더의 `sw.js`도 함께 갱신해야 학생 기기에 새 내용이 나와요. 갱신하지 않으면 이전 내용이 계속 보일 수 있습니다.
 - 목차에 자료를 추가하려면 루트 `index.html`의 해당 묶음의 `<ul class="grid">` 안에 `<li>` 항목을 같은 형식으로 추가합니다.
+
+## 홈 화면에 앱 추가
+
+여섯 앱의 표지에 모두 `홈 화면에 앱 추가` 버튼이 있습니다. 휴대폰에서만 보이고, 이미 홈 화면 앱으로 연 경우에는 숨겨져요. `grammatik/`과 `hoertraining/`은 자체 코드를, 나머지 네 앱은 `index.html` 맨 아래의 `SODA 공통 홈 화면에 앱 추가` 블록을 씁니다. 아이콘과 `manifest.webmanifest`는 각 앱 폴더에 있어요.
