@@ -218,21 +218,44 @@ p.secp{font-size:13px;color:var(--ink2);margin-bottom:14px;max-width:40em}
   .bar .ttl{font-size:13px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* ===== SODA 공통 표지 (모든 학습 자료 동일) ===== */
+.uc{--uc-accent:#384568;--uc-accent-d:#2C3754;--uc-ink:#1E1E1E;--uc-mut:#666;--uc-bd:#E0E0DB;--uc-bg:#FAFAF8;--uc-btn-ink:#fff;box-sizing:border-box;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;padding:clamp(24px,4vw,48px) clamp(24px,7vw,112px);padding-bottom:max(clamp(24px,3vw,36px),env(safe-area-inset-bottom));background:var(--uc-bg);color:var(--uc-ink);text-align:left;line-height:1.6;font-family:'Pretendard Variable','Pretendard','Noto Sans KR',system-ui,-apple-system,'Apple SD Gothic Neo',sans-serif;-webkit-font-smoothing:antialiased}
+.uc[hidden]{display:none!important}
+.uc *{box-sizing:border-box}
+.uc-brand{display:flex;align-items:center;gap:14px;animation:ucFade .9s .05s ease both}
+.uc-logo{display:block;height:40px;width:auto;flex:none}
+.uc-brand-t{display:flex;flex-direction:column;line-height:1.25}
+.uc-brand-t b{font-size:15px;font-weight:700;letter-spacing:.2px}
+.uc-brand-t span{font-size:12.5px;color:var(--uc-mut);font-weight:500}
+.uc-hero{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(48px,10vh,120px) 0}
+.uc-title{margin:0;padding:0;font-size:clamp(34px,11.2vw,140px);line-height:1.02;letter-spacing:-.045em;color:var(--uc-accent);animation:ucRise 1s .15s cubic-bezier(.2,.7,.2,1) both}
+.uc-title span{display:block}
+.uc-title .t1{font-weight:800}
+.uc-title .t2{font-weight:300;color:var(--uc-ink);letter-spacing:-.04em}
+.uc-title.long{font-size:clamp(34px,9.6vw,112px)}
+.uc-cta{margin-top:clamp(40px,7vh,64px);align-self:flex-start;display:inline-flex;align-items:center;gap:14px;height:56px;min-width:0;padding:0 26px 0 30px;border:0;border-radius:10px;background:var(--uc-accent);color:var(--uc-btn-ink);font:inherit;font-size:16px;font-weight:700;letter-spacing:.2px;text-decoration:none;cursor:pointer;transition:background .2s,gap .25s cubic-bezier(.2,.7,.2,1);animation:ucRise 1s .4s cubic-bezier(.2,.7,.2,1) both}
+.uc-cta svg{width:18px;height:18px}
+.uc-cta:hover{background:var(--uc-accent-d);gap:20px}
+.uc-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--uc-bd);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--uc-mut);font-weight:600;animation:ucFade 1s .6s ease both}
+.uc .sx-install{align-self:flex-start;margin-top:14px;padding:6px 2px;color:var(--uc-mut);font-size:14px}
+@keyframes ucRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes ucFade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.uc *{animation:none!important;transition:none!important}}
+@media (prefers-color-scheme:dark){.uc{--uc-bg:var(--paper);--uc-ink:var(--ink);--uc-mut:var(--ink2);--uc-bd:var(--line);--uc-accent:#AEB9DD;--uc-accent-d:#C8D0EA;--uc-btn-ink:#14181E}}
+/* ===== /SODA 공통 표지 ===== */
 </style>
+<link rel="stylesheet" href="../assets/pretendard.css">
 </head>
 <body>
 
 <!-- COVER -->
-<section class="view cover" id="v-cover">
-  <div class="cover-top"><span>Sophia Deutsch Akademie</span><span>A1 — C2</span></div>
-  <div class="cover-main">
-    <svg class="logo" viewBox="0 0 1157 1332" role="img" aria-label="Sophia Deutsch Akademie Logo"><polygon points="0,348 686,0 686,679 0,1027" fill="#58595b"/><polygon points="234,501 921,152 921,831 234,1180" fill="#ed1c24"/><polygon points="470,654 1157,305 1157,984 470,1332" fill="#f1c80f"/></svg>
-    <h1><b>Nomen-Verb-</b><br>Verbindungen</h1>
-    <div class="rule"></div>
-    <p class="sub">자주 쓰는 명사-동사 연어와 기능동사 결합을 레벨별로 익히는 플래시카드</p>
-    <button class="start" id="btn-start">시작하기 <span>→</span></button>
+<section class="view uc" id="v-cover">
+  <header class="uc-brand"><svg class="uc-logo" viewBox="0 0 1157 1333" aria-hidden="true" focusable="false"><path fill="#57585A" d="M0 348.6 686 0v678.2L0 1026.8z"/><path fill="#ED1C24" d="M235.4 501.5 921.4 153v678.2l-686 348.6z"/><path fill="#F3C811" d="M470.8 654.3 1156.8 305.7v678.2l-686 348.6z"/></svg><div class="uc-brand-t"><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div></header>
+  <div class="uc-hero">
+    <h1 class="uc-title long"><span class="t1">SODA</span><span class="t2">NOMEN-VERB-</span><span class="t2">VERBINDUNGEN</span></h1>
+    <button class="uc-cta" id="btn-start" type="button">시작하기 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></button>
   </div>
-  <div class="cover-bottom"><span>Sophia Deutsch Akademie</span><span>소피아 독일어학원</span></div>
+  <footer class="uc-foot"><span>Innovative Learning Beyond the Traditional</span><span>317 Karten</span></footer>
 </section>
 
 <!-- LEVELS -->

@@ -246,7 +246,32 @@ html.can-install .sx-install{display:inline-block}
 .tb .bk{flex:none;margin:0 10px 0 0}
 .tb .bk+.tb-brand{flex:1}
 .tb-name em,.lh em{font-style:normal;color:var(--c)}
+/* ===== SODA 공통 표지 (모든 학습 자료 동일) ===== */
+.uc{--uc-accent:#384568;--uc-accent-d:#2C3754;--uc-ink:#1E1E1E;--uc-mut:#666;--uc-bd:#E0E0DB;--uc-bg:#FAFAF8;--uc-btn-ink:#fff;box-sizing:border-box;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;padding:clamp(24px,4vw,48px) clamp(24px,7vw,112px);padding-bottom:max(clamp(24px,3vw,36px),env(safe-area-inset-bottom));background:var(--uc-bg);color:var(--uc-ink);text-align:left;line-height:1.6;font-family:'Pretendard Variable','Pretendard','Noto Sans KR',system-ui,-apple-system,'Apple SD Gothic Neo',sans-serif;-webkit-font-smoothing:antialiased}
+.uc[hidden]{display:none!important}
+.uc *{box-sizing:border-box}
+.uc-brand{display:flex;align-items:center;gap:14px;animation:ucFade .9s .05s ease both}
+.uc-logo{display:block;height:40px;width:auto;flex:none}
+.uc-brand-t{display:flex;flex-direction:column;line-height:1.25}
+.uc-brand-t b{font-size:15px;font-weight:700;letter-spacing:.2px}
+.uc-brand-t span{font-size:12.5px;color:var(--uc-mut);font-weight:500}
+.uc-hero{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(48px,10vh,120px) 0}
+.uc-title{margin:0;padding:0;font-size:clamp(34px,11.2vw,140px);line-height:1.02;letter-spacing:-.045em;color:var(--uc-accent);animation:ucRise 1s .15s cubic-bezier(.2,.7,.2,1) both}
+.uc-title span{display:block}
+.uc-title .t1{font-weight:800}
+.uc-title .t2{font-weight:300;color:var(--uc-ink);letter-spacing:-.04em}
+.uc-title.long{font-size:clamp(34px,9.6vw,112px)}
+.uc-cta{margin-top:clamp(40px,7vh,64px);align-self:flex-start;display:inline-flex;align-items:center;gap:14px;height:56px;min-width:0;padding:0 26px 0 30px;border:0;border-radius:10px;background:var(--uc-accent);color:var(--uc-btn-ink);font:inherit;font-size:16px;font-weight:700;letter-spacing:.2px;text-decoration:none;cursor:pointer;transition:background .2s,gap .25s cubic-bezier(.2,.7,.2,1);animation:ucRise 1s .4s cubic-bezier(.2,.7,.2,1) both}
+.uc-cta svg{width:18px;height:18px}
+.uc-cta:hover{background:var(--uc-accent-d);gap:20px}
+.uc-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--uc-bd);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--uc-mut);font-weight:600;animation:ucFade 1s .6s ease both}
+.uc .sx-install{align-self:flex-start;margin-top:14px;padding:6px 2px;color:var(--uc-mut);font-size:14px}
+@keyframes ucRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes ucFade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.uc *{animation:none!important;transition:none!important}}
+/* ===== /SODA 공통 표지 ===== */
 </style>
+<link rel="stylesheet" href="../assets/pretendard.css">
 </head>
 <body>
 <div id="app" data-screen="boot"><noscript>이 학습 파일은 자바스크립트가 켜져 있어야 열립니다.</noscript></div>
@@ -413,7 +438,8 @@ function lvStat(l){var ss=lvSecs(l),dm=doneMap(),ni=0,nd=0,nq=0,dur=0;ss.forEach
 function levelUrls(l){var u=[];lvSecs(l).forEach(function(s){s.items.forEach(function(ix){var m=media(ITEMS[ix].audio);if(m&&!/^data:/.test(m)&&u.indexOf(m)<0)u.push(m);});});return u;}
 function warmLevel(l){window.__sxWarmQ=levelUrls(l);try{window.dispatchEvent(new Event('sx-warm'));}catch(e){}}
 var LOGO_SVG='<svg viewBox="0 0 1157 1333" aria-hidden="true" focusable="false"><path fill="#57585A" d="M0 348.6 686 0v678.2L0 1026.8z"/><path fill="#ED1C24" d="M235.4 501.5 921.4 153v678.2l-686 348.6z"/><path fill="#F3C811" d="M470.8 654.3 1156.8 305.7v678.2l-686 348.6z"/></svg>';
-function vCover(){var t=M.title||'',i=t.indexOf(' '),a=i>0?t.slice(0,i):t,b=i>0?t.slice(i+1):'',m=/^(.*\s)?([ABC][12])$/.exec(b),col=SECS.length?SECS[0].color:'';var t2=m?esc(m[1]||'')+'<em style="color:'+esc(col)+'">'+esc(m[2])+'</em>':esc(b);return'<div class="cv"><div class="cv-in"><span class="cv-logo" role="img" aria-label="'+esc(M.brand||'')+' 로고">'+LOGO_SVG+'</span><div class="cv-academy">'+esc(M.brand||'')+'</div><h1 class="cv-title"><span>'+esc(a)+'</span>'+(b?'<span>'+t2+'</span>':'')+'</h1><button type="button" class="cv-start" data-act="start">시작하기</button><button type="button" class="sx-install" data-web="install">홈 화면에 앱 추가</button></div></div>';}
+var UC_LOGO='<svg class="uc-logo" viewBox="0 0 1157 1333" aria-hidden="true" focusable="false"><path fill="#57585A" d="M0 348.6 686 0v678.2L0 1026.8z"/><path fill="#ED1C24" d="M235.4 501.5 921.4 153v678.2l-686 348.6z"/><path fill="#F3C811" d="M470.8 654.3 1156.8 305.7v678.2l-686 348.6z"/></svg>';
+function vCover(){var t=M.title||'',i=t.indexOf(' '),b=i>0?t.slice(i+1):t,b2=b.replace(/\s*[ABC][12]$/,'').toUpperCase();return'<div class="uc"><header class="uc-brand">'+UC_LOGO+'<div class="uc-brand-t"><b>'+esc(M.brand||'')+'</b><span>소피아 독일어학원</span></div></header><div class="uc-hero"><h1 class="uc-title"><span class="t1">SODA</span><span class="t2">'+esc(b2)+'</span></h1><button type="button" class="uc-cta" data-act="start">시작하기 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></button><button type="button" class="sx-install" data-web="install">홈 화면에 앱 추가</button></div><footer class="uc-foot"><span>Innovative Learning Beyond the Traditional</span><span>80 Sets</span></footer></div>';}
 function statLine(){return(M.stats||[]).map(function(x){var v=String(x.value),l=String(x.label);return/분$/.test(v)?l+' '+v:v+l;}).join(' · ');}
 function flowCard(){return'<div class="card flowcard"><div class="ct">듣기 훈련 루틴</div><ol class="flow">'+[['예측','단어·문장·문항을 미리 읽는다'],['듣기','지문 없이 듣고 1차로 푼다'],['지문 확인','모르는 단어와 문장을 찾는다'],['다시 듣기','확인한 것이 들리는지 본다'],['이해도','다시 풀고 근거를 확인한다'],['성찰','어려웠던 이유를 고른다'],['복습 카드','체크한 단어·문장을 소리와 함께 본다']].map(function(x){return'<li><b>'+x[0]+'</b><span>'+x[1]+'</span></li>';}).join('')+'</ol></div>';}
 function vLevels(){var dm=doneMap(),nd=0;ITEMS.forEach(function(it){if(dm[it.id])nd++;});
