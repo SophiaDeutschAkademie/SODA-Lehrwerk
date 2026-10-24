@@ -60,21 +60,25 @@ h1:focus{outline:none}
 .cover-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--bd);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-m);font-weight:600;animation:fade 1s .6s ease both}
 
 /* ───────── 목차 ───────── */
-.page{max-width:1080px;margin:0 auto;padding:0 clamp(16px,4vw,32px) 72px}
-.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:clamp(16px,3vw,24px) 0}
-.top-brand{display:flex;align-items:center;gap:12px;min-width:0}
-.top-brand img{height:34px;width:auto;flex:none}
-.top-brand b{font-size:15px;font-weight:800;letter-spacing:.14em;white-space:nowrap;display:block;line-height:1.2}
-.top-brand span{font-size:12.5px;color:var(--text-m);font-weight:500;display:block;line-height:1.3}
-.pill{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 14px 0 10px;border:1px solid var(--bd);border-radius:999px;background:var(--bg-c);font-size:13px;font-weight:600;color:var(--text-s);transition:border-color .15s,color .15s;white-space:nowrap}
+.split{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:minmax(300px,.8fr) 1.7fr;gap:clamp(32px,5vw,72px);padding:clamp(20px,3.5vw,44px) clamp(16px,5vw,64px) 64px}
+.side-l{position:sticky;top:0;align-self:start;display:flex;flex-direction:column;min-height:calc(100vh - 2*clamp(20px,3.5vw,44px));min-height:calc(100svh - 2*clamp(20px,3.5vw,44px));padding:4px 0 8px}
+.pill{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 14px 0 10px;border:1px solid var(--bd);border-radius:999px;background:var(--bg-c);font-size:13px;font-weight:600;color:var(--text-s);transition:border-color .15s,color .15s;white-space:nowrap}
 .pill svg{width:14px;height:14px}
 .pill:hover{border-color:var(--accent);color:var(--accent)}
-.head{padding:clamp(28px,6vh,56px) 0 clamp(20px,3vh,28px)}
-.eyebrow{font-size:12px;font-weight:800;letter-spacing:.22em;color:var(--text-m)}
-.head h1{font-size:clamp(26px,4vw,34px);font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-top:6px}
+.side-main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:32px 0}
+.top-brand{display:flex;align-items:center;gap:14px;min-width:0;margin-bottom:clamp(24px,5vh,48px)}
+.top-brand img{height:44px;width:auto;flex:none}
+.top-brand b{font-size:16px;font-weight:700;letter-spacing:.2px;display:block;line-height:1.25}
+.top-brand span{font-size:13px;color:var(--text-m);font-weight:500;display:block;line-height:1.3}
+.big{font-size:clamp(48px,6vw,92px);line-height:1.02;letter-spacing:-.045em;color:var(--accent);animation:rise 1s .1s var(--ease) both}
+.big span{display:block}
+.big .t1{font-weight:800}
+.big .t2{font-weight:300;color:var(--text);letter-spacing:-.04em}
+.eyebrow{margin-top:clamp(28px,6vh,56px);font-size:12px;font-weight:800;letter-spacing:.22em;color:var(--text-m)}
+.side-main h2{font-size:clamp(22px,2.6vw,28px);font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-top:4px}
 .lead{margin-top:6px;color:var(--text-s);font-size:15.5px}
 
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;padding-top:clamp(0px,1vw,8px)}
 .grid li{display:flex}
 .tile{position:relative;display:flex;flex-direction:column;width:100%;min-height:264px;padding:24px 24px 20px;background:var(--bg-c);border:1px solid var(--bd);border-radius:20px;transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .2s,background .2s;animation:rise .6s var(--ease) both;animation-delay:calc(var(--i)*60ms)}
 .tile:hover{transform:translateY(-3px);border-color:#C9CDDB;box-shadow:0 12px 30px rgba(30,40,70,.1)}
@@ -88,7 +92,14 @@ h1:focus{outline:none}
 .tile:hover .go,.tile:focus-visible .go{background:var(--accent);color:#fff}
 .foot{margin-top:40px;padding-top:20px;border-top:1px solid var(--bd);font-size:12.5px;letter-spacing:.08em;color:var(--text-m);font-weight:500}
 
-@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:900px){
+  .split{grid-template-columns:1fr;gap:20px}
+  .side-l{position:static;min-height:0}
+  .side-main{padding:20px 0 4px;justify-content:flex-start}
+  .big{font-size:clamp(52px,15vw,96px)}
+  .eyebrow{margin-top:28px}
+}
+@media (max-width:520px){.grid{grid-template-columns:1fr}}
 @media (max-width:620px){
   .grid{gap:10px}
   .tile{min-height:0;padding:18px 16px 14px;border-radius:16px}
@@ -96,7 +107,6 @@ h1:focus{outline:none}
   .dsc{font-size:13px;margin-top:8px}
   .meta{font-size:11.5px;padding:3px 9px;white-space:normal;border-radius:10px}
   .go{width:32px;height:32px}
-  .top-brand span{display:none}
 }
 @media (max-width:359px){.grid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){
@@ -121,25 +131,24 @@ h1:focus{outline:none}
   <div class="cover-foot"><span>Innovative learning beyond the traditional</span><span>6 Lernbereiche</span></div>
 </main>
 
-<section id="inhalt" class="view" aria-labelledby="inhalt-h" hidden>
-  <div class="page">
-    <header class="top">
-      <div class="top-brand">
-        <img src="assets/logo.png" alt="">
-        <div><b>SODA LEHRWERK</b><span>Sophia Deutsch Akademie</span></div>
-      </div>
+<section id="inhalt" class="view" aria-label="목차" hidden>
+  <div class="split">
+    <aside class="side-l">
       <a class="pill" href="#">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>표지
       </a>
-    </header>
-
-    <div class="head">
-      <p class="eyebrow">INHALT</p>
-      <h1 id="inhalt-h" tabindex="-1">목차</h1>
-      <p class="lead">학습할 자료를 고르세요.</p>
-    </div>
-
-    <nav aria-label="학습 자료">
+      <div class="side-main">
+        <div class="top-brand">
+          <img src="assets/logo.png" alt="">
+          <div><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div>
+        </div>
+        <h1 class="big" tabindex="-1"><span class="t1">SODA</span><span class="t2">Lehrwerk</span></h1>
+        <p class="eyebrow">INHALT</p>
+        <h2>목차</h2>
+        <p class="lead">학습할 자료를 고르세요.</p>
+      </div>
+    </aside>
+    <nav class="side-r" aria-label="학습 자료">
       <ol class="grid">
         <li><a class="tile" href="grammatik/" style="--i:0">
           <span class="lab">Grammatik</span><b class="ttl">문법 교재</b><span class="dsc">명사의 성과 관사부터 시작해 Lektion 순서대로 독일어 문법을 배워요.</span>
@@ -167,8 +176,6 @@ h1:focus{outline:none}
         </a></li>
       </ol>
     </nav>
-
-    <p class="foot">Sophia Deutsch Akademie · 소피아 독일어학원</p>
   </div>
 </section>
 
