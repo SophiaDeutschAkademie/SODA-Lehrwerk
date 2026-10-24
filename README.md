@@ -44,4 +44,4 @@ nomen-verb-verbindungen/     SODA-NVV 저장소의 내용
 - 자료의 내용은 해당 폴더 안의 파일을 고칩니다.
 - `lesetraining/`의 텍스트 원본과 데이터 파일을 다시 만드는 방법은 `lesetraining/README.md`에 있어요.
 - `hoertraining/`과 `grammatik/`은 오프라인 캐시(서비스워커)를 씁니다. 이 두 폴더의 내용을 고친 뒤에는 같은 폴더의 `sw.js`도 함께 갱신해야 학생 기기에 새 내용이 나와요. 갱신하지 않으면 이전 내용이 계속 보일 수 있습니다.
-- 목차에 자료를 추가하려면 루트 `index.html`의 `<ol class="list">` 안에 `<li>` 항목을 같은 형식으로 추가합니다.
+- 목차에 자료를 추가하려면 루트 `index.html`의 `<ol class="grid">` 안에 `<li>` 항목을 같은 형식으로 추가합니다.
