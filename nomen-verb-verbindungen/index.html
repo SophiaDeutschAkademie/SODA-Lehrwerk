@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nomen-Verb-Verbindungen | Sophia Deutsch Akademie</title>
+<style>
+:root{
+  --ink:#1c2430; --ink2:#5b6470; --ink3:#98a0aa;
+  --paper:#fafaf8; --card:#ffffff; --line:#e6e4de; --soft:#f1efe9;
+  --red:#b8322a; --gold:#b8923a; --gray:#8b8f94;
+  --akk:#b8322a; --dat:#2d5fa8;
+  --ok:#2e7d4f; --no:#b8322a;
+  --radius:18px;
+  --font:"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic","Segoe UI",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--ink:#eceae4;--ink2:#a9b0ba;--ink3:#6f7782;--paper:#14181e;--card:#1b2028;--line:#2a313b;--soft:#222831;--akk:#e26a60;--dat:#6f9be0;--ok:#5cbf85;--no:#e26a60;}
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+[hidden]{display:none!important}
+.view{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+
+/* ===== Cover ===== */
+.cover{padding:max(28px,env(safe-area-inset-top)) 28px max(28px,env(safe-area-inset-bottom));justify-content:space-between;position:relative}
+.cover-top{display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink3)}
+.cover-main{flex:1;display:flex;flex-direction:column;justify-content:center;max-width:860px;width:100%;margin:0 auto}
+.logo{width:78px;height:auto;margin-bottom:44px}
+.cover h1{font-weight:300;font-size:clamp(34px,8.4vw,84px);line-height:1.06;letter-spacing:-.025em}
+.cover h1 b{font-weight:600}
+.rule{width:56px;height:2px;background:var(--ink);margin:36px 0 22px}
+.cover .sub{font-size:clamp(14px,2.4vw,17px);color:var(--ink2);max-width:34em}
+.start{margin-top:44px;align-self:flex-start;display:inline-flex;align-items:center;gap:14px;padding:16px 30px;border-radius:999px;background:var(--ink);color:var(--paper);font-size:15px;font-weight:500;letter-spacing:.02em;transition:transform .15s,opacity .15s}
+.start:hover{opacity:.88}.start:active{transform:scale(.98)}
+.start span{font-size:18px;line-height:1}
+.cover-bottom{max-width:860px;width:100%;margin:0 auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;letter-spacing:.12em;color:var(--ink3);text-transform:uppercase}
+
+/* ===== Header ===== */
+.bar{display:flex;align-items:center;gap:12px;padding:max(14px,env(safe-area-inset-top)) 20px 14px;max-width:960px;width:100%;margin:0 auto}
+.bar .mini{height:30px;width:auto}
+.bar .ttl{font-size:14px;font-weight:600;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .sp{flex:1}
+.ghost{padding:8px 14px;border-radius:999px;border:1px solid var(--line);font-size:13px;color:var(--ink2);background:var(--card);transition:background .15s;white-space:nowrap}
+.ghost:hover{background:var(--soft)}
+.ghost[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* ===== Levels ===== */
+.wrap{max-width:960px;width:100%;margin:0 auto;padding:0 20px 40px;flex:1}
+.lead h2{font-size:clamp(24px,5vw,34px);font-weight:600;letter-spacing:-.02em;margin-top:10px}
+.lead p{color:var(--ink2);font-size:14px;margin-top:8px;max-width:38em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:28px}
+.tile{text-align:left;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 20px;display:flex;flex-direction:column;gap:6px;transition:transform .15s,border-color .15s,box-shadow .15s;position:relative;overflow:hidden}
+.tile:hover{transform:translateY(-2px);border-color:var(--ink3);box-shadow:0 8px 24px rgba(20,30,40,.06)}
+.tile .lv{font-size:40px;font-weight:300;letter-spacing:-.03em;line-height:1}
+.tile .nm{font-size:13px;color:var(--ink2)}
+.tile .ct{margin-top:14px;font-size:12px;color:var(--ink3);display:flex;justify-content:space-between}
+.meter{height:3px;border-radius:3px;background:var(--soft);margin-top:8px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--ink);width:0;transition:width .3s}
+h3.sec{font-size:15px;font-weight:600;margin:40px 0 6px;letter-spacing:-.01em}
+p.secp{font-size:13px;color:var(--ink2);margin-bottom:14px;max-width:40em}
+.preps{display:flex;flex-wrap:wrap;gap:8px}
+.prepbtn{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-size:14px;font-weight:600;transition:transform .12s,box-shadow .15s}
+.prepbtn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(20,30,40,.06)}
+.prepbtn .picon{width:22px;height:22px}
+.prepbtn .n{font-size:11.5px;color:var(--ink3);font-weight:400}
+.note{margin-top:30px;font-size:12.5px;color:var(--ink3);line-height:1.7;max-width:46em}
+.linkbtn{margin-top:14px;font-size:12.5px;color:var(--ink3);text-decoration:underline;text-underline-offset:3px}
+
+/* ===== Study ===== */
+.tools{display:flex;flex-wrap:wrap;gap:8px;max-width:960px;width:100%;margin:0 auto;padding:0 20px 6px}
+.prog{max-width:960px;width:100%;margin:0 auto;padding:6px 20px 0}
+.prog .row{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink2);margin-bottom:8px}
+.stage{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:14px 20px 8px;max-width:960px;width:100%;margin:0 auto}
+.card{width:100%;max-width:640px;min-height:min(56vh,420px);background:var(--card);border:1px solid var(--line);border-radius:26px;padding:34px 30px 28px;display:flex;flex-direction:column;cursor:pointer;position:relative;box-shadow:0 10px 36px rgba(20,30,40,.06);user-select:none;transition:box-shadow .2s;border-top:4px solid var(--pc,var(--line))}
+.card.quiz{cursor:default}
+.card:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.card .tag{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;letter-spacing:.18em;color:var(--ink3);text-transform:uppercase}
+.face{flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px;animation:fade .22s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.big{font-size:clamp(26px,6.6vw,40px);font-weight:600;letter-spacing:-.02em;line-height:1.2;word-break:keep-all;overflow-wrap:break-word}
+.big.ko{font-weight:500}
+.pp{border-bottom:3px solid var(--pc,var(--red));padding-bottom:1px;color:var(--pc,inherit)}
+.blank{display:inline-block;min-width:2.2em;border-bottom:3px solid var(--ink);margin:0 .1em}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:12.5px;letter-spacing:.04em;padding:4px 11px;border-radius:999px;border:1px solid var(--line);color:var(--ink2);background:var(--paper)}
+.chip.akk{color:var(--akk);border-color:color-mix(in srgb,var(--akk) 45%,var(--line));font-weight:600}
+.chip.dat{color:var(--dat);border-color:color-mix(in srgb,var(--dat) 45%,var(--line));font-weight:600}
+.hint{font-size:12.5px;color:var(--ink3);margin-top:6px}
+.small{font-size:14px;color:var(--ink3);letter-spacing:.01em}
+.mean{font-size:clamp(20px,4.6vw,26px);font-weight:600;line-height:1.35;word-break:keep-all}
+.mean.sub{font-size:clamp(17px,4vw,21px);font-weight:500;color:var(--ink2)}
+.syn{font-size:13.5px;color:var(--ink2);display:flex;flex-wrap:wrap;gap:4px 14px}
+.syn b{font-weight:600;color:var(--ink)}
+.syn .arrow{color:var(--ink3)}
+.ex{border-top:1px solid var(--line);padding-top:16px;display:flex;flex-direction:column;gap:6px}
+.ex .de{font-size:16.5px;line-height:1.55}
+.ex .de .vm{font-weight:700;color:var(--pc,inherit);border-bottom:2px solid var(--pc,var(--red))}
+.ex .de .nm{background:color-mix(in srgb,var(--pc,#888) 16%,transparent);border-radius:4px;padding:0 3px;font-weight:600}
+.ex .kr{font-size:14px;color:var(--ink2);word-break:keep-all}
+.tip{background:var(--soft);border-radius:12px;padding:11px 14px;font-size:13px;line-height:1.6;color:var(--ink2)}
+.tip b{color:var(--ink);font-weight:600}
+.tip .lbl{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:3px}
+.rel{font-size:13px;color:var(--ink2);line-height:1.7}
+.rel .lbl{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:2px}
+.rel b{font-weight:600;color:var(--ink)}
+.say{align-self:flex-start;font-size:12.5px;color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:5px 12px;background:var(--paper)}
+.say:hover{background:var(--soft)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.opt{padding:14px 12px;border-radius:14px;border:1px solid var(--line);background:var(--paper);font-size:16px;font-weight:600;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:8px;transition:transform .12s,background .15s,border-color .15s}
+.opt:hover{background:var(--soft)}
+.opt:active{transform:scale(.98)}
+.opt.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,var(--card))}
+.opt.wrong{border-color:var(--no);background:color-mix(in srgb,var(--no) 12%,var(--card))}
+.opt:disabled{cursor:default}
+.verdict{font-size:14px;font-weight:600}
+.verdict.ok{color:var(--ok)}.verdict.no{color:var(--no)}
+.actions{display:grid;grid-template-columns:auto 1fr 1fr auto;gap:10px;width:100%;max-width:640px;margin-top:18px}
+.act{padding:15px 10px;border-radius:16px;border:1px solid var(--line);background:var(--card);font-size:15px;font-weight:500;transition:transform .12s,background .15s}
+.act:active{transform:scale(.97)}
+.act.nav{width:54px;color:var(--ink2);font-size:18px}
+.act.again{color:var(--red);border-color:color-mix(in srgb,var(--red) 35%,var(--line))}
+.act.again:hover{background:color-mix(in srgb,var(--red) 8%,var(--card))}
+.act.know{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.act.know:hover{opacity:.9}
+.act:disabled{opacity:.4;cursor:default}
+.keys{margin:14px 0 18px;font-size:11.5px;color:var(--ink3);text-align:center}
+.keys kbd{font-family:inherit;border:1px solid var(--line);border-radius:5px;padding:1px 6px;background:var(--card)}
+
+.done{width:100%;max-width:640px;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:40px 30px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.done h3{font-size:26px;font-weight:600;letter-spacing:-.02em}
+.done p{color:var(--ink2);font-size:14.5px}
+.stats{display:flex;gap:28px;margin:10px 0 6px}
+.stats div{display:flex;flex-direction:column;gap:2px}
+.stats b{font-size:34px;font-weight:300;letter-spacing:-.02em}
+.stats span{font-size:12px;color:var(--ink3)}
+.done .btns{display:flex;flex-direction:column;gap:10px;width:100%;max-width:320px;margin-top:14px}
+.done .btns button{padding:14px;border-radius:14px;border:1px solid var(--line);font-size:14.5px;font-weight:500;background:var(--card)}
+.done .btns button.main{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.weak{width:100%;max-width:420px;text-align:left;margin-top:6px;font-size:13px;color:var(--ink2)}
+.weak .lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.weak .row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--line)}
+.weak .row:last-child{border-bottom:0}
+
+.picon{width:34px;height:34px;flex:none;color:var(--pc,var(--ink3))}
+.picon svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.bigwrap{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;gap:14px}
+.bigwrap .col{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.fill{font-size:clamp(17px,4vw,21px);line-height:1.7}
+.fill input{font:inherit;font-weight:700;width:6.5em;padding:2px 8px;border:0;border-bottom:3px solid var(--ink);background:transparent;color:var(--ink);text-align:center;outline:none}
+.fill input:focus{border-color:var(--pc,var(--ink))}
+.fill mark{background:color-mix(in srgb,var(--pc,#888) 18%,transparent);color:inherit;border-radius:4px;padding:0 3px;font-weight:600}
+.fillrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.fillbtn{padding:9px 16px;border-radius:999px;background:var(--ink);color:var(--paper);font-size:13.5px;font-weight:500}
+.due{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;flex-wrap:wrap}
+.due .t{font-size:15px;font-weight:600}
+.due .s{font-size:12.5px;color:var(--ink2);margin-top:2px}
+.due button{padding:11px 18px;border-radius:999px;background:var(--ink);color:var(--paper);font-size:14px;font-weight:500}
+.due button:disabled{opacity:.4;cursor:default}
+.boxes{display:flex;gap:4px;margin-top:10px}
+.boxes i{display:block;height:6px;flex:1;border-radius:3px;background:var(--soft);position:relative;overflow:hidden}
+.boxes i b{position:absolute;left:0;top:0;bottom:0;background:var(--ink);opacity:.75}
+.boxlbl{display:flex;justify-content:space-between;font-size:11px;color:var(--ink3);margin-top:4px}
+/* sheet */
+.ov{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:22px}
+.ovb{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.ovb .h{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:4px;color:var(--ink)}
+.ovb .eg{font-size:12.5px;color:var(--ink3);margin-bottom:10px}
+.ovb .ps{display:flex;flex-wrap:wrap;gap:6px}
+.ovb .ps>span{display:inline-flex;align-items:center;gap:5px;font-size:13.5px;font-weight:600;padding:4px 10px 4px 6px;border-radius:999px;background:var(--soft);color:var(--pc)}
+.ovb .ps .picon{width:22px;height:22px;padding:0;background:none;border-radius:0;display:block}
+.ovb .ps>span i{font-style:normal;font-weight:400;font-size:11.5px;color:var(--ink3)}
+.sheet{column-count:2;column-gap:16px;margin-top:28px}
+.sheet .sh{break-inside:avoid;margin-bottom:16px}
+.sh{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.sh .hd{display:flex;align-items:center;gap:12px;padding:14px 18px;background:var(--pc);color:#fff}
+.sh .hd .picon{color:#fff;width:30px;height:30px}
+.sh .hd .nm{font-size:24px;font-weight:700;letter-spacing:-.01em;flex:1}
+.sh .hd .cs{font-size:11.5px;font-weight:600;letter-spacing:.06em;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.22)}
+.sh .hook{font-size:13px;color:var(--ink2);line-height:1.65;padding:12px 18px 0}
+.sh .hook b{color:var(--ink)}
+.sh .vg{padding:12px 18px 4px}
+.sh .vg:last-child{padding-bottom:16px}
+.sh .cl{display:flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:6px;color:var(--ink2)}
+.sh .cl::after{content:"";flex:1;height:1px;background:var(--line)}
+.sh table{width:100%;border-collapse:collapse;font-size:13.5px}
+.sh td{padding:5px 0;border-bottom:1px solid var(--soft);vertical-align:top}
+.sh tr:last-child td{border-bottom:0}
+.sh td.v{font-weight:600;width:52%;padding-right:10px}
+.sh td.v .pp{border-bottom-width:2px}
+.sh td.k{color:var(--ink2);word-break:keep-all}
+.sh td.l{color:var(--ink3);font-size:11px;text-align:right;white-space:nowrap;padding-left:10px}
+@media (max-width:860px){.sheet{column-count:1}}
+@media print{.bar,.tools,.legend,.note,.linkbtn,.due,.start{display:none!important}.sheet{column-count:2;column-gap:10px}.sh{break-inside:avoid;border:1px solid #bbb}.sh .hd{-webkit-print-color-adjust:exact;print-color-adjust:exact}.ovb{break-inside:avoid}body{background:#fff;color:#000}}
+
+/* ===== List ===== */
+.search{width:100%;padding:13px 16px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:14.5px;margin:6px 0 14px}
+.search:focus{outline:2px solid var(--ink);outline-offset:1px}
+.list{display:flex;flex-direction:column;gap:10px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;flex-direction:column;gap:5px;border-left:4px solid var(--pc,var(--line))}
+.item .p{font-size:17px;font-weight:600;letter-spacing:-.01em;display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.item .p .pp{border-bottom-width:2px}
+.item .p i{font-style:normal;font-size:11px;color:var(--ink3);font-weight:400;white-space:nowrap}
+.item .m{font-size:14.5px}
+.item .e{font-size:13.5px;color:var(--ink2);margin-top:4px}
+.item .e2{font-size:13px;color:var(--ink3)}
+.empty{text-align:center;color:var(--ink3);padding:40px 0;font-size:14px}
+.ghead{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin:18px 0 4px}
+
+@media (max-width:520px){
+  .cover{padding-left:22px;padding-right:22px}
+  .card{padding:26px 22px 22px;border-radius:22px}
+  .actions{grid-template-columns:48px 1fr 1fr 48px;gap:8px}
+  .act.nav{width:auto}
+  .keys{display:none}
+  .bar .ttl{font-size:13px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<section class="view cover" id="v-cover">
+  <div class="cover-top"><span>Sophia Deutsch Akademie</span><span>A1 — C2</span></div>
+  <div class="cover-main">
+    <svg class="logo" viewBox="0 0 1157 1332" role="img" aria-label="Sophia Deutsch Akademie Logo"><polygon points="0,348 686,0 686,679 0,1027" fill="#58595b"/><polygon points="234,501 921,152 921,831 234,1180" fill="#ed1c24"/><polygon points="470,654 1157,305 1157,984 470,1332" fill="#f1c80f"/></svg>
+    <h1><b>Nomen-Verb-</b><br>Verbindungen</h1>
+    <div class="rule"></div>
+    <p class="sub">자주 쓰는 명사-동사 연어와 기능동사 결합을 레벨별로 익히는 플래시카드</p>
+    <button class="start" id="btn-start">시작하기 <span>→</span></button>
+  </div>
+  <div class="cover-bottom"><span>Sophia Deutsch Akademie</span><span>소피아 독일어학원</span></div>
+</section>
+
+<!-- LEVELS -->
+<section class="view" id="v-levels" hidden>
+  <div class="bar">
+    <svg class="mini" viewBox="0 0 1157 1332" aria-hidden="true"><polygon points="0,348 686,0 686,679 0,1027" fill="#58595b"/><polygon points="234,501 921,152 921,831 234,1180" fill="#ed1c24"/><polygon points="470,654 1157,305 1157,984 470,1332" fill="#f1c80f"/></svg>
+    <span class="ttl">Nomen-Verb-Verbindungen</span>
+    <span class="sp"></span>
+    <button class="ghost" id="btn-home">표지</button>
+  </div>
+  <div class="wrap">
+    <div class="lead">
+      <h2>레벨을 선택하세요</h2>
+      <p>카드를 넘기며 뜻과 예문을 확인하고, 아는 카드와 다시 볼 카드를 나눕니다. 한 바퀴가 끝나면 다시 볼 카드만 다시 돌릴 수 있습니다.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+
+    <div class="due" id="due">
+      <div><div class="t">오늘 복습</div><div class="s" id="due-s"></div>
+        <div class="boxes" id="boxes"></div><div class="boxlbl"><span>처음</span><span>1일</span><span>3일</span><span>1주</span><span>2주</span><span>한 달</span></div>
+      </div>
+      <button id="btn-due">오늘 복습 시작</button>
+    </div>
+
+    <h3 class="sec">동사별로 모아 보기</h3>
+    <p class="secp">같은 동사를 쓰는 표현을 전 레벨에서 한꺼번에 봅니다. 명사와 짝을 이루는 동사를 외우는 것이 이 자료의 핵심이라서, 동사마다 색과 그림을 정해 두었습니다.</p>
+    <div class="preps" id="preps"></div>
+    <div class="preps" style="margin-top:14px"><button class="ghost" id="btn-sheet">동사 요약표 보기 (인쇄용)</button></div>
+
+    <p class="note">A1–A2는 일상에서 가장 자주 쓰는 명사+동사 연어 중심이고, 엄밀한 의미의 기능동사 결합(Funktionsverbgefüge)은 B1부터 늘어나 B2–C2에서 본격적으로 나옵니다. 학습 모드는 다섯 가지입니다. ① 독일어 → 한국어 ② 한국어 → 독일어 ③ 동사 맞히기(빈칸의 동사를 떠올린 뒤 뒤집기) ④ 동사 퀴즈(보기 4개 중 동사 고르기) ⑤ 동사 쓰기(예문의 빈칸에 동사를 직접 입력). "알아요"를 누를수록 복습 간격이 1일 → 3일 → 1주 → 2주 → 한 달로 늘어나고, "다시 볼래요"를 누르면 처음 칸으로 돌아갑니다. 때가 된 카드는 "오늘 복습"에 모입니다. 카드 뒷면에는 동사별 암기 요령, 같은 명사와 쓰는 다른 동사, 예문 속 동사와 명사 표시가 함께 나옵니다.</p>
+    <button class="linkbtn" id="btn-reset">학습 기록 초기화</button>
+  </div>
+</section>
+
+<!-- SHEET -->
+<section class="view" id="v-sheet" hidden>
+  <div class="bar">
+    <button class="ghost" id="btn-sheet-back">← 목록</button>
+    <span class="ttl">동사 요약표</span>
+    <span class="sp"></span>
+    <button class="ghost" id="btn-print">인쇄</button>
+  </div>
+  <div class="wrap">
+    <div class="lead"><h2>동사 요약표</h2><p id="sheet-lead"></p></div>
+    <div class="ov" id="ov"></div>
+    <div class="sheet" id="sheet"></div>
+  </div>
+</section>
+
+<!-- STUDY -->
+<section class="view" id="v-study" hidden>
+  <div class="bar">
+    <button class="ghost" id="btn-back">← 목록</button>
+    <span class="ttl" id="st-title"></span>
+    <span class="sp"></span>
+    <button class="ghost" id="btn-view" aria-pressed="false">목록</button>
+  </div>
+
+  <div id="cards-view">
+    <div class="tools">
+      <button class="ghost" id="t-mode">독일어 → 한국어</button>
+      <button class="ghost" id="t-shuffle" aria-pressed="false">섞기</button>
+      <button class="ghost" id="t-hide" aria-pressed="false">아는 카드 제외</button>
+      <button class="ghost" id="t-restart">처음부터</button>
+      <button class="ghost" id="t-auto" aria-pressed="false">자동 듣기</button>
+    </div>
+    <div class="prog">
+      <div class="row"><span id="p-count"></span><span id="p-stat"></span></div>
+      <div class="meter"><i id="p-bar"></i></div>
+    </div>
+    <div class="stage" id="stage"></div>
+  </div>
+
+  <div class="wrap" id="list-view" hidden>
+    <input class="search" id="q" type="search" placeholder="검색 (독일어, 한국어, 동의어)" autocomplete="off">
+    <div class="list" id="list"></div>
+  </div>
+</section>
+
+<script>
+const DATA = {
+A1: [
+["Hunger haben","배가 고프다","Ich habe Hunger. Gibt es etwas zu essen?","배고파요. 먹을 것 있나요?","",["habe"],["Hunger"]],
+["Durst haben","목이 마르다","Hast du Durst? Hier ist Wasser.","목말라? 여기 물 있어.","",["Hast"],["Durst"]],
+["Zeit haben","시간이 있다","Hast du morgen Zeit?","내일 시간 있어?","",["Hast"],["Zeit"]],
+["Angst haben vor + Dat.","~을 무서워하다","Meine Tochter hat Angst vor Hunden.","제 딸은 개를 무서워해요.","sich fürchten",["hat"],["Angst"]],
+["Lust haben auf + Akk.","~을 하고 싶다, ~이 당기다","Hast du Lust auf Kino?","영화 보러 갈래?","",["Hast"],["Lust"]],
+["Fieber haben","열이 나다","Das Kind hat seit gestern Fieber.","아이가 어제부터 열이 나요.","",["hat"],["Fieber"]],
+["Kopfschmerzen haben","머리가 아프다","Ich habe heute Kopfschmerzen.","오늘 머리가 아파요.","",["habe"],["Kopfschmerzen"]],
+["Urlaub machen","휴가를 가다","Wir machen im Sommer Urlaub in Spanien.","우리는 여름에 스페인으로 휴가를 가요.","",["machen"],["Urlaub"]],
+["eine Pause machen","(잠깐) 쉬다, 휴식하다","Wir machen jetzt zehn Minuten Pause.","지금 10분 쉬겠습니다.","pausieren",["machen"],["Pause"]],
+["Hausaufgaben machen","숙제를 하다","Er macht seine Hausaufgaben am Nachmittag.","그는 오후에 숙제를 해요.","",["macht"],["Hausaufgaben"]],
+["Sport treiben","운동하다","Sie treibt dreimal pro Woche Sport.","그녀는 일주일에 세 번 운동해요.","",["treibt"],["Sport"]],
+["Rad fahren","자전거를 타다","Am Sonntag fahren wir Rad.","일요일에 우리는 자전거를 타요.","",["fahren"],["Rad"]],
+["Auto fahren","운전하다","Mein Vater fährt jeden Tag Auto.","저희 아버지는 매일 운전을 하세요.","",["fährt"],["Auto"]],
+["eine Frage stellen","질문하다","Darf ich Ihnen eine Frage stellen?","질문 하나 해도 될까요?","fragen",["stellen"],["Frage"]],
+["einen Termin haben","약속(예약)이 있다","Ich habe um drei Uhr einen Termin beim Zahnarzt.","3시에 치과 예약이 있어요.","",["habe"],["Termin"]],
+["Fotos machen","사진을 찍다","Im Urlaub machen wir viele Fotos.","휴가 때 우리는 사진을 많이 찍어요.","fotografieren",["machen"],["Fotos"]],
+["Musik hören","음악을 듣다","Abends höre ich gern Musik.","저녁에 음악 듣는 걸 좋아해요.","",["höre"],["Musik"]],
+["Spaß haben","즐겁다, 재미있게 보내다","Wir haben viel Spaß im Kurs.","우리는 수업 시간이 정말 즐거워요.","",["haben"],["Spaß"]],
+["Probleme haben","문제가 있다","Ich habe Probleme mit meinem Computer.","제 컴퓨터에 문제가 있어요.","",["habe"],["Probleme"]],
+["Besuch haben","손님이 오다, 손님이 와 있다","Heute Abend haben wir Besuch.","오늘 저녁에 손님이 와요.","",["haben"],["Besuch"]],
+["Geburtstag haben","생일이다","Ich habe morgen Geburtstag.","내일이 제 생일이에요.","",["habe"],["Geburtstag"]],
+["Geburtstag feiern","생일 파티를 하다","Wir feiern am Samstag meinen Geburtstag.","토요일에 제 생일 파티를 해요.","",["feiern"],["Geburtstag"]],
+["Fußball spielen","축구를 하다","Am Wochenende spielen wir Fußball.","주말에 우리는 축구를 해요.","",["spielen"],["Fußball"]],
+["Klavier spielen","피아노를 치다","Meine Schwester spielt gut Klavier.","제 여동생은 피아노를 잘 쳐요.","",["spielt"],["Klavier"]],
+["Zug fahren","기차를 타다","Ich fahre gern Zug.","저는 기차 타는 걸 좋아해요.","",["fahre"],["Zug"]],
+["Ski fahren","스키를 타다","Im Winter fahren wir Ski.","겨울에 우리는 스키를 타요.","",["fahren"],["Ski"]],
+["Halsschmerzen haben","목이 아프다","Ich habe seit Montag Halsschmerzen.","월요일부터 목이 아파요.","",["habe"],["Halsschmerzen"]],
+["Husten haben","기침이 나다","Das Kind hat starken Husten.","아이가 기침을 심하게 해요.","",["hat"],["Husten"]],
+["Bauchschmerzen haben","배가 아프다","Hast du Bauchschmerzen?","배 아프니?","",["Hast"],["Bauchschmerzen"]]
+],
+A2: [
+["einen Spaziergang machen","산책하다","Nach dem Essen machen wir einen Spaziergang.","식사 후에 우리는 산책을 해요.","spazieren gehen",["machen"],["Spaziergang"]],
+["einen Ausflug machen","나들이를 가다","Am Wochenende machen wir einen Ausflug an den See.","주말에 우리는 호수로 나들이를 가요.","",["machen"],["Ausflug"]],
+["einen Fehler machen","실수하다","Entschuldigung, ich habe einen Fehler gemacht.","죄송해요, 제가 실수했어요.","sich irren",["gemacht"],["Fehler"]],
+["Pläne machen","계획을 세우다","Hast du schon Pläne für das Wochenende gemacht?","주말 계획은 벌써 세웠어?","planen",["gemacht"],["Pläne"]],
+["ein Praktikum machen","인턴(실습)을 하다","Sie macht ein Praktikum bei einer Firma in Berlin.","그녀는 베를린의 한 회사에서 인턴을 하고 있어요.","",["macht"],["Praktikum"]],
+["Spaß machen","(어떤 일이) 재미있다","Das Deutschlernen macht mir viel Spaß.","독일어 공부가 정말 재미있어요.","",["macht"],["Spaß"]],
+["sich Sorgen machen um + Akk.","~을 걱정하다","Meine Mutter macht sich Sorgen um mich.","어머니는 저를 걱정하세요.","sich sorgen",["macht"],["Sorgen"]],
+["einen Termin vereinbaren","약속(예약)을 잡다","Ich möchte gern einen Termin vereinbaren.","예약을 잡고 싶습니다.","",["vereinbaren"],["Termin"]],
+["Bescheid sagen","알려 주다","Sag mir bitte Bescheid, wenn du kommst.","올 때 알려 줘.","informieren",["Sag"],["Bescheid"]],
+["Recht haben","옳다, 맞다","Du hast völlig Recht.","네 말이 전적으로 맞아.","",["hast"],["Recht"]],
+["Glück haben","운이 좋다","Wir haben Glück: Die Sonne scheint.","운이 좋네요. 해가 났어요.","",["haben"],["Glück"]],
+["Pech haben","운이 나쁘다","Er hat Pech gehabt und den Zug verpasst.","그는 운이 없어서 기차를 놓쳤어요.","",["hat"],["Pech"]],
+["keine Ahnung haben","전혀 모르다","Ich habe keine Ahnung, wo mein Schlüssel ist.","내 열쇠가 어디 있는지 전혀 모르겠어.","",["habe"],["Ahnung"]],
+["Geduld haben","참을성이 있다, 인내심을 가지다","Du musst mit den Kindern Geduld haben.","아이들한테는 참을성 있게 대해야 해.","",["haben"],["Geduld"]],
+["es eilig haben","급하다, 바쁘다","Entschuldigung, ich habe es sehr eilig.","죄송해요, 제가 많이 급해서요.","sich beeilen",["habe"],[]],
+["Platz nehmen","자리에 앉다","Nehmen Sie bitte Platz!","자리에 앉으세요.","sich setzen",["Nehmen"],["Platz"]],
+["ein Bad nehmen","목욕하다","Nach der Arbeit nehme ich ein Bad.","퇴근하고 나서 목욕을 해요.","baden",["nehme"],["Bad"]],
+["Abschied nehmen von + Dat.","~와 작별 인사를 하다","Sie nimmt Abschied von ihren Freunden.","그녀는 친구들과 작별 인사를 해요.","sich verabschieden",["nimmt"],["Abschied"]],
+["einen Test schreiben","(필기) 시험을 보다","Morgen schreiben wir einen Test.","내일 우리는 시험을 봐요.","",["schreiben"],["Test"]],
+["eine Prüfung machen","시험을 보다","Im Mai mache ich die B1-Prüfung.","5월에 저는 B1 시험을 봐요.","",["mache"],["B1-Prüfung"]],
+["eine Antwort geben","대답하다","Bitte geben Sie mir bis Freitag eine Antwort.","금요일까지 답변을 주세요.","antworten",["geben"],["Antwort"]],
+["einen Rat geben","조언하다","Kannst du mir einen Rat geben?","조언 좀 해 줄래?","raten",["geben"],["Rat"]],
+["Interesse haben an + Dat.","~에 관심이 있다","Ich habe großes Interesse an deutscher Geschichte.","저는 독일 역사에 큰 관심이 있어요.","sich interessieren für",["habe"],["Interesse"]],
+["Erfahrung haben mit + Dat.","~을 해 본 경험이 있다","Hast du Erfahrung mit diesem Programm?","이 프로그램 써 본 적 있어?","",["Hast"],["Erfahrung"]],
+["Kontakt haben zu + Dat.","~와 연락하고 지내다","Ich habe noch Kontakt zu meiner Schulfreundin.","저는 학창 시절 친구와 아직 연락하고 지내요.","",["habe"],["Kontakt"]],
+["Feierabend machen","퇴근하다, 일을 마치다","Heute mache ich schon um fünf Feierabend.","오늘은 5시에 일찍 퇴근해요.","",["mache"],["Feierabend"]],
+["einen Kurs machen","강좌를 듣다","Ich mache einen Deutschkurs an der Volkshochschule.","저는 시민대학에서 독일어 강좌를 들어요.","",["mache"],["Deutschkurs"]],
+["Schmerzen haben","통증이 있다","Haben Sie Schmerzen im Rücken?","등에 통증이 있으세요?","",["Haben"],["Schmerzen"]],
+["Verspätung haben","(교통편이) 연착되다, 늦다","Der Zug hat zehn Minuten Verspätung.","기차가 10분 연착됐어요.","",["hat"],["Verspätung"]],
+["eine Reise machen","여행하다","Im Sommer machen wir eine Reise nach Italien.","여름에 우리는 이탈리아로 여행을 가요.","reisen",["machen"],["Reise"]],
+["Urlaub nehmen","휴가를 내다","Im August nehme ich zwei Wochen Urlaub.","8월에 저는 2주 휴가를 내요.","",["nehme"],["Urlaub"]],
+["eine Nachricht hinterlassen","메시지를 남기다","Kann ich bei Ihnen eine Nachricht hinterlassen?","메시지를 남겨도 될까요?","",["hinterlassen"],["Nachricht"]],
+["eine Bestellung aufgeben","주문하다","Ich möchte eine Bestellung aufgeben.","주문하고 싶습니다.","bestellen",["aufgeben"],["Bestellung"]],
+["einen Gefallen tun + Dat.","부탁을 들어주다","Kannst du mir bitte einen Gefallen tun?","부탁 하나만 들어줄래?","",["tun"],["Gefallen"]],
+["Streit haben mit + Dat.","~와 다툼이 있다, ~와 다투다","Er hat oft Streit mit seinem Nachbarn.","그는 이웃과 자주 다퉈요.","sich streiten",["hat"],["Streit"]],
+["Mut haben","용기가 있다","Du brauchst keine Angst zu haben, hab Mut!","무서워할 필요 없어, 용기를 내!","",["haben"],["Mut"]],
+["einen Unfall haben","사고를 당하다, 사고가 나다","Mein Nachbar hatte gestern einen Unfall.","제 이웃이 어제 사고를 당했어요.","",["hatte"],["Unfall"]],
+["Unterricht haben","수업이 있다","Heute haben wir bis vier Uhr Unterricht.","오늘은 4시까지 수업이 있어요.","",["haben"],["Unterricht"]],
+["Lärm machen","시끄럽게 하다, 떠들다","Bitte macht abends keinen Lärm!","저녁에는 떠들지 마.","",["macht"],["Lärm"]],
+["Platz machen","비켜 주다, 자리를 내주다","Könnten Sie bitte Platz machen?","좀 비켜 주시겠어요?","",["machen"],["Platz"]],
+["eine Party machen","파티를 열다","Am Freitag machen wir eine Party.","금요일에 우리는 파티를 열어요.","feiern",["machen"],["Party"]],
+["Ärger haben mit + Dat.","~와 문제가 있다, ~와 갈등이 있다","Ich habe Ärger mit meinem Vermieter.","집주인과 문제가 있어요.","",["habe"],["Ärger"]],
+["Stress haben","스트레스를 받다, 바쁘다","Ich habe diese Woche viel Stress.","이번 주는 스트레스가 많아요.","",["habe"],["Stress"]],
+["Zeit verbringen mit + Dat.","~와 시간을 보내다","Sie verbringt viel Zeit mit ihren Enkeln.","그녀는 손주들과 시간을 많이 보내요.","",["verbringt"],["Zeit"]],
+["Geld verdienen","돈을 벌다","Er verdient im Restaurant gutes Geld.","그는 식당에서 돈을 잘 벌어요.","",["verdient"],["Geld"]],
+["Geld ausgeben für + Akk.","~에 돈을 쓰다","Wofür gibst du so viel Geld aus?","뭐에 그렇게 돈을 많이 써?","",["gibst","aus"],["Geld"]],
+["einen Anruf bekommen","전화를 받다, 전화가 오다","Gestern habe ich einen Anruf von der Bank bekommen.","어제 은행에서 전화가 왔어요.","",["bekommen"],["Anruf"]],
+["eine Einladung bekommen","초대를 받다","Wir haben eine Einladung zur Hochzeit bekommen.","우리는 결혼식에 초대받았어요.","",["bekommen"],["Einladung"]],
+["einen Termin ausmachen","약속을 잡다","Lass uns einen Termin ausmachen.","약속을 잡자.","",["ausmachen"],["Termin"]],
+["Pläne haben","계획이 있다","Hast du am Wochenende schon Pläne?","주말에 무슨 계획 있어?","",["Hast"],["Pläne"]],
+["eine Prüfung haben","시험이 있다","Morgen habe ich eine Prüfung.","내일 시험이 있어요.","",["habe"],["Prüfung"]],
+["Notizen machen","메모하다, 필기하다","Ich mache mir im Unterricht Notizen.","저는 수업 시간에 필기를 해요.","notieren",["mache"],["Notizen"]],
+["eine Aufgabe lösen","문제를 풀다","Kannst du diese Aufgabe lösen?","이 문제 풀 수 있어?","",["lösen"],["Aufgabe"]]
+],
+B1: [
+["eine Entscheidung treffen","결정을 내리다","Wir müssen bald eine Entscheidung treffen.","우리는 곧 결정을 내려야 해요.","entscheiden",["treffen"],["Entscheidung"]],
+["eine Wahl treffen","선택하다","Du musst jetzt eine Wahl treffen.","이제 선택해야 해.","wählen",["treffen"],["Wahl"]],
+["Kontakt aufnehmen mit + Dat.","~와 연락을 취하다","Bitte nehmen Sie mit dem Büro Kontakt auf.","사무실에 연락해 주세요.","sich melden bei",["nehmen","auf"],["Kontakt"]],
+["Rücksicht nehmen auf + Akk.","~을 배려하다","Man sollte auf andere Rücksicht nehmen.","다른 사람을 배려해야 해요.","berücksichtigen",["nehmen"],["Rücksicht"]],
+["einen Eindruck machen auf + Akk.","~에게 인상을 주다","Der Bewerber hat einen guten Eindruck auf uns gemacht.","그 지원자는 우리에게 좋은 인상을 주었어요.","beeindrucken",["gemacht"],["Eindruck"]],
+["Bekanntschaft machen mit + Dat.","~을 알게 되다","Im Kurs habe ich mit netten Leuten Bekanntschaft gemacht.","수업에서 좋은 사람들을 알게 되었어요.","kennenlernen",["gemacht"],["Bekanntschaft"]],
+["ein Gespräch führen","대화를 나누다","Wir haben ein langes Gespräch geführt.","우리는 오랫동안 이야기를 나눴어요.","sich unterhalten",["geführt"],["Gespräch"]],
+["Auskunft geben über + Akk.","~에 대해 안내하다, 정보를 주다","Die Mitarbeiterin gibt gern Auskunft über die Kurse.","직원이 강좌에 대해 친절히 안내해 줘요.","informieren",["gibt"],["Auskunft"]],
+["einen Antrag stellen auf + Akk.","~을 신청하다","Er hat einen Antrag auf Wohngeld gestellt.","그는 주거 보조금을 신청했어요.","beantragen",["gestellt"],["Antrag"]],
+["einen Vorschlag machen","제안하다","Darf ich einen Vorschlag machen?","제안 하나 드려도 될까요?","vorschlagen",["machen"],["Vorschlag"]],
+["Erfolg haben","성공하다","Mit dem neuen Produkt hatte die Firma großen Erfolg.","그 회사는 새 제품으로 크게 성공했어요.","erfolgreich sein",["hatte"],["Erfolg"]],
+["sich Mühe geben","애쓰다, 노력하다","Sie gibt sich viel Mühe mit den Hausaufgaben.","그녀는 숙제를 정말 열심히 해요.","sich bemühen",["gibt"],["Mühe"]],
+["Fortschritte machen","발전하다, 실력이 늘다","Du hast in den letzten Wochen große Fortschritte gemacht.","너는 지난 몇 주 동안 실력이 많이 늘었어.","vorankommen",["gemacht"],["Fortschritte"]],
+["Bescheid wissen über + Akk.","~에 대해 알고 있다","Weißt du darüber Bescheid?","그거 알고 있어?","",["Weißt"],["Bescheid"]],
+["in Frage kommen","고려 대상이 되다","Diese Wohnung kommt für uns nicht in Frage.","이 집은 우리에게 고려 대상이 아니에요.","",["kommt"],["Frage"]],
+["zur Verfügung stehen","(이용할 수 있게) 마련되어 있다","Der Computerraum steht allen Studenten zur Verfügung.","컴퓨터실은 모든 학생이 이용할 수 있어요.","",["steht"],["Verfügung"]],
+["zur Verfügung stellen","제공하다","Die Schule stellt den Schülern Laptops zur Verfügung.","학교는 학생들에게 노트북을 제공해요.","bereitstellen",["stellt"],["Verfügung"]],
+["Verantwortung übernehmen für + Akk.","~의 책임을 맡다, 책임지다","Er übernimmt die Verantwortung für das Projekt.","그가 그 프로젝트의 책임을 맡아요.","",["übernimmt"],["Verantwortung"]],
+["Hilfe leisten","도움을 주다","Die Nachbarn haben sofort Hilfe geleistet.","이웃들이 즉시 도움을 주었어요.","helfen",["geleistet"],["Hilfe"]],
+["Wert legen auf + Akk.","~을 중요시하다","Ich lege großen Wert auf Pünktlichkeit.","저는 시간 엄수를 매우 중요하게 생각해요.","",["lege"],["Wert"]],
+["Gebrauch machen von + Dat.","~을 이용하다","Machen Sie von diesem Angebot Gebrauch!","이 혜택을 이용하세요.","nutzen",["Machen"],["Gebrauch"]],
+["Kritik üben an + Dat.","~을 비판하다","Viele Leute üben Kritik an dem neuen Gesetz.","많은 사람이 새 법을 비판해요.","kritisieren",["üben"],["Kritik"]],
+["Stellung nehmen zu + Dat.","~에 대해 입장을 밝히다","Der Minister nahm zu den Vorwürfen Stellung.","장관은 그 의혹에 대해 입장을 밝혔어요.","sich äußern",["nahm"],["Stellung"]],
+["Anspruch haben auf + Akk.","~에 대한 권리가 있다","Alle Arbeitnehmer haben Anspruch auf Urlaub.","모든 근로자는 휴가를 받을 권리가 있어요.","",["haben"],["Anspruch"]],
+["Einfluss haben auf + Akk.","~에 영향을 미치다","Die Eltern haben großen Einfluss auf ihre Kinder.","부모는 자녀에게 큰 영향을 미쳐요.","beeinflussen",["haben"],["Einfluss"]],
+["Interesse zeigen an + Dat.","~에 관심을 보이다","Die Firma zeigte großes Interesse an meiner Idee.","그 회사는 제 아이디어에 큰 관심을 보였어요.","",["zeigte"],["Interesse"]],
+["um Rat bitten","조언을 구하다","Sie bat ihren Lehrer um Rat.","그녀는 선생님께 조언을 구했어요.","",["bat"],["Rat"]],
+["zu Ende gehen","끝나다","Der Film geht gleich zu Ende.","영화가 곧 끝나요.","enden",["geht"],["Ende"]],
+["eine Bewerbung schicken","지원서를 보내다","Ich habe gestern meine Bewerbung an die Firma geschickt.","어제 그 회사에 지원서를 보냈어요.","sich bewerben",["geschickt"],["Bewerbung"]],
+["eine Reise unternehmen","여행을 떠나다","Im Herbst unternehmen wir eine Reise nach Wien.","가을에 우리는 빈으로 여행을 가요.","reisen",["unternehmen"],["Reise"]],
+["einen Versuch machen","시도하다","Ich mache noch einen Versuch.","한 번 더 시도해 볼게요.","versuchen",["mache"],["Versuch"]],
+["einen Beitrag leisten zu + Dat.","~에 기여하다","Jeder kann einen Beitrag zum Umweltschutz leisten.","누구나 환경 보호에 기여할 수 있어요.","beitragen",["leisten"],["Beitrag"]],
+["unter Druck stehen","압박을 받다, 부담을 느끼다","Vor der Prüfung stehe ich unter großem Druck.","시험을 앞두고 부담이 커요.","",["stehe"],["Druck"]],
+["in Schwierigkeiten geraten","곤경에 빠지다","Die Firma ist in finanzielle Schwierigkeiten geraten.","그 회사는 재정적 어려움에 빠졌어요.","",["geraten"],["Schwierigkeiten"]],
+["in Streit geraten","다투게 되다","Die beiden sind wegen Geld in Streit geraten.","두 사람은 돈 문제로 다투게 됐어요.","sich streiten",["geraten"],["Streit"]],
+["Wort halten","약속을 지키다","Er hat Wort gehalten und ist pünktlich gekommen.","그는 약속을 지켜 제시간에 왔어요.","",["gehalten"],["Wort"]],
+["eine Rolle spielen","역할을 하다, 중요하다","Das Alter spielt dabei keine Rolle.","여기서 나이는 상관없어요.","",["spielt"],["Rolle"]],
+["Erfahrungen machen mit + Dat.","~에 대해 (좋은·나쁜) 경험을 하다","Ich habe mit dem neuen Chef gute Erfahrungen gemacht.","새 상사와 일해 보니 좋았어요.","erleben",["gemacht"],["Erfahrungen"]],
+["eine Chance haben","기회가 있다, 가능성이 있다","Mit diesen Noten hast du gute Chancen.","이 성적이면 가능성이 충분해.","",["hast"],["Chancen"]],
+["die Möglichkeit haben","~할 수 있다, ~할 기회가 있다","Wir haben die Möglichkeit, online zu lernen.","우리는 온라인으로 공부할 수 있어요.","können",["haben"],["Möglichkeit"]],
+["Gelegenheit haben","~할 기회가 있다","Ich hatte noch keine Gelegenheit, mit ihr zu sprechen.","아직 그녀와 이야기할 기회가 없었어요.","",["hatte"],["Gelegenheit"]],
+["Vertrauen haben zu + Dat.","~을 신뢰하다","Ich habe großes Vertrauen zu meinem Arzt.","저는 제 담당 의사를 매우 신뢰해요.","vertrauen",["habe"],["Vertrauen"]],
+["Verständnis haben für + Akk.","~을 이해해 주다","Mein Chef hat Verständnis für meine Situation.","상사는 제 상황을 이해해 줘요.","verstehen",["hat"],["Verständnis"]],
+["Schuld haben an + Dat.","~에 잘못(책임)이 있다","Niemand hat Schuld an dem Unfall.","그 사고는 누구의 잘못도 아니에요.","",["hat"],["Schuld"]],
+["Schwierigkeiten haben mit + Dat.","~에 어려움을 겪다","Viele Schüler haben Schwierigkeiten mit den Artikeln.","많은 학생이 관사를 어려워해요.","",["haben"],["Schwierigkeiten"]],
+["Kontakt halten","연락을 유지하다","Wir halten per E-Mail Kontakt.","우리는 이메일로 연락하며 지내요.","",["halten"],["Kontakt"]],
+["in Kontakt bleiben","연락하며 지내다","Bleiben wir in Kontakt!","계속 연락하자!","",["Bleiben"],["Kontakt"]],
+["sich in Verbindung setzen mit + Dat.","~에 연락하다","Ich setze mich morgen mit Ihnen in Verbindung.","내일 연락드리겠습니다.","kontaktieren",["setze"],["Verbindung"]],
+["seine Meinung äußern","의견을 밝히다","Jeder darf seine Meinung äußern.","누구나 자기 의견을 말할 수 있어요.","sich äußern",["äußern"],["Meinung"]],
+["Vorwürfe machen + Dat.","~을 탓하다, 비난하다 (sich ~: 자책하다)","Mach dir keine Vorwürfe!","자책하지 마.","vorwerfen",["Mach"],["Vorwürfe"]],
+["sich Gedanken machen über + Akk.","~을 고민하다, 걱정하다","Ich mache mir Gedanken über meine Zukunft.","저는 앞으로의 일을 고민하고 있어요.","nachdenken",["mache"],["Gedanken"]],
+["sich Zeit nehmen für + Akk.","~을 위해 시간을 내다","Nimm dir Zeit für deine Familie.","가족과 함께할 시간을 내.","",["Nimm"],["Zeit"]],
+["Freude machen + Dat.","~에게 기쁨을 주다","Das Geschenk hat ihr viel Freude gemacht.","그 선물을 받고 그녀는 무척 기뻐했어요.","erfreuen",["gemacht"],["Freude"]],
+["Sorgen bereiten + Dat.","~에게 걱정을 끼치다","Die Prüfung bereitet mir Sorgen.","그 시험이 걱정돼요.","",["bereitet"],["Sorgen"]],
+["zur Ruhe kommen","안정을 찾다, 쉬다","Nach dem Stress muss ich erst mal zur Ruhe kommen.","스트레스가 많았으니 일단 좀 쉬어야겠어요.","",["kommen"],["Ruhe"]],
+["ins Gespräch kommen","대화를 시작하게 되다","Im Zug sind wir schnell ins Gespräch gekommen.","기차에서 우리는 금세 이야기를 나누게 됐어요.","",["gekommen"],["Gespräch"]],
+["eine Lösung finden","해결책을 찾다","Wir müssen schnell eine Lösung finden.","우리는 빨리 해결책을 찾아야 해요.","lösen",["finden"],["Lösung"]],
+["Unterricht geben","가르치다, 수업하다","Sie gibt an der Schule Deutschunterricht.","그녀는 학교에서 독일어를 가르쳐요.","unterrichten",["gibt"],["Deutschunterricht"]],
+["in Ruhe lassen","내버려 두다","Lass mich bitte in Ruhe!","나 좀 내버려 둬.","",["Lass"],["Ruhe"]],
+["in Gefahr bringen","위험에 빠뜨리다","Das Rauchen bringt deine Gesundheit in Gefahr.","흡연은 네 건강을 위험에 빠뜨려.","gefährden",["bringt"],["Gefahr"]],
+["um Entschuldigung bitten","사과하다","Ich bitte um Entschuldigung für die Verspätung.","늦은 것에 대해 사과드립니다.","sich entschuldigen",["bitte"],["Entschuldigung"]],
+["Schluss machen mit + Dat.","~을 끝내다, 헤어지다","Er hat mit seiner Freundin Schluss gemacht.","그는 여자친구와 헤어졌어요.","",["gemacht"],["Schluss"]],
+["Überstunden machen","야근하다, 초과 근무를 하다","Diese Woche muss ich viele Überstunden machen.","이번 주에는 야근을 많이 해야 해요.","",["machen"],["Überstunden"]],
+["Karriere machen","출세하다, 커리어를 쌓다","Sie hat in der Firma schnell Karriere gemacht.","그녀는 회사에서 빠르게 출세했어요.","",["gemacht"],["Karriere"]],
+["Angst machen + Dat.","~을 겁나게 하다","Der Hund macht den Kindern Angst.","그 개 때문에 아이들이 무서워해요.","ängstigen",["macht"],["Angst"]],
+["Sinn machen","말이 되다, 의미가 있다 (구어)","Das macht für mich keinen Sinn.","제가 보기엔 그건 말이 안 돼요.","Sinn ergeben",["macht"],["Sinn"]],
+["den Anfang machen","먼저 시작하다","Wer macht den Anfang?","누가 먼저 시작할래?","anfangen",["macht"],["Anfang"]],
+["einen Vortrag halten","발표(강연)하다","Er hält morgen einen Vortrag über Umweltschutz.","그는 내일 환경 보호에 관해 발표해요.","vortragen",["hält"],["Vortrag"]],
+["eine Rede halten","연설하다","Der Direktor hielt eine kurze Rede.","교장 선생님이 짧게 연설했어요.","",["hielt"],["Rede"]],
+["Abstand halten","거리를 두다","Bitte halten Sie Abstand!","거리를 유지해 주세요.","",["halten"],["Abstand"]],
+["Erfahrungen sammeln","경험을 쌓다","Im Ausland kann man viele Erfahrungen sammeln.","해외에서 많은 경험을 쌓을 수 있어요.","",["sammeln"],["Erfahrungen"]],
+["ein Ziel erreichen","목표를 달성하다","Wir haben unser Ziel erreicht.","우리는 목표를 달성했어요.","",["erreicht"],["Ziel"]],
+["sich ein Ziel setzen","목표를 세우다","Setz dir realistische Ziele.","현실적인 목표를 세워.","",["Setz"],["Ziele"]],
+["einen Vertrag abschließen","계약을 체결하다","Ich habe gestern einen Handyvertrag abgeschlossen.","어제 휴대폰 요금제 계약을 했어요.","",["abgeschlossen"],["Handyvertrag"]],
+["ein Konto eröffnen","계좌를 개설하다","Ich möchte bei Ihrer Bank ein Konto eröffnen.","이 은행에서 계좌를 개설하고 싶어요.","",["eröffnen"],["Konto"]],
+["ein Interview führen","인터뷰하다","Die Reporterin führte ein Interview mit dem Trainer.","기자는 감독과 인터뷰를 했어요.","",["führte"],["Interview"]],
+["ein Tagebuch führen","일기를 쓰다","Seit Jahren führe ich ein Tagebuch.","저는 몇 년째 일기를 써요.","",["führe"],["Tagebuch"]],
+["Schlange stehen","줄을 서다","Vor dem Museum mussten wir lange Schlange stehen.","박물관 앞에서 우리는 오래 줄을 서야 했어요.","anstehen",["stehen"],["Schlange"]],
+["Hilfe holen","도움을 청하다, 사람을 불러오다","Ich hole schnell Hilfe!","제가 얼른 사람을 불러올게요!","",["hole"],["Hilfe"]],
+["sich Rat holen bei + Dat.","~에게 조언을 구하다, 상담을 받다","Hol dir Rat bei einem Anwalt.","변호사에게 상담을 받아 봐.","",["Hol"],["Rat"]],
+["einen Rekord brechen","기록을 깨다","Die Läuferin hat den Weltrekord gebrochen.","그 선수는 세계 기록을 깼어요.","",["gebrochen"],["Weltrekord"]],
+["ein Problem lösen","문제를 해결하다","Wir müssen das Problem heute lösen.","우리는 오늘 그 문제를 해결해야 해요.","",["lösen"],["Problem"]],
+["Mühe haben mit + Dat.","~에 애를 먹다","Ich habe Mühe mit der Grammatik.","저는 문법 때문에 애를 먹어요.","",["habe"],["Mühe"]]
+],
+B2: [
+["in Kauf nehmen","감수하다","Für den Job nimmt sie lange Fahrzeiten in Kauf.","그 일을 위해 그녀는 긴 통근 시간을 감수해요.","akzeptieren",["nimmt"],["Kauf"]],
+["in Anspruch nehmen","이용하다, (시간·노력을) 들이다","Viele Patienten nehmen die Beratung in Anspruch.","많은 환자가 상담 서비스를 이용해요.","nutzen",["nehmen"],["Anspruch"]],
+["in Betracht ziehen","고려하다","Wir ziehen mehrere Lösungen in Betracht.","우리는 여러 해결책을 고려하고 있어요.","erwägen",["ziehen"],["Betracht"]],
+["zur Kenntnis nehmen","알아 두다, 인지하다","Bitte nehmen Sie die neuen Regeln zur Kenntnis.","새 규칙을 숙지해 주세요.","beachten",["nehmen"],["Kenntnis"]],
+["Einfluss nehmen auf + Akk.","~에 영향력을 행사하다","Der Verband will Einfluss auf die Politik nehmen.","그 협회는 정치에 영향력을 행사하려 해요.","beeinflussen",["nehmen"],["Einfluss"]],
+["Widerstand leisten gegen + Akk.","~에 저항하다","Die Bürger leisteten Widerstand gegen den Plan.","시민들은 그 계획에 저항했어요.","sich widersetzen",["leisteten"],["Widerstand"]],
+["Verantwortung tragen für + Akk.","~에 책임을 지다","Der Chef trägt die Verantwortung für alle Fehler.","상사는 모든 실수에 책임을 져요.","verantworten",["trägt"],["Verantwortung"]],
+["in Kraft treten","(법이) 시행되다, 발효되다","Das Gesetz tritt am 1. Januar in Kraft.","그 법은 1월 1일부터 시행돼요.","wirksam werden",["tritt"],["Kraft"]],
+["in Erfüllung gehen","이루어지다","Ihr Traum ist in Erfüllung gegangen.","그녀의 꿈이 이루어졌어요.","sich erfüllen",["gegangen"],["Erfüllung"]],
+["zum Ausdruck bringen","표현하다","Er brachte seine Freude deutlich zum Ausdruck.","그는 기쁨을 분명하게 표현했어요.","ausdrücken",["brachte"],["Ausdruck"]],
+["in Verbindung stehen mit + Dat.","~와 관련이 있다","Die Krankheit steht mit dem Lebensstil in Verbindung.","그 질병은 생활 방식과 관련이 있어요.","zusammenhängen",["steht"],["Verbindung"]],
+["zur Sprache bringen","(이야기를) 꺼내다, 거론하다","Sie brachte das Problem in der Sitzung zur Sprache.","그녀는 회의에서 그 문제를 꺼냈어요.","ansprechen",["brachte"],["Sprache"]],
+["zur Wahl stehen","후보로 나와 있다, 선택지에 있다","Drei Kandidaten stehen zur Wahl.","세 명의 후보가 출마했어요.","",["stehen"],["Wahl"]],
+["in Frage stellen","의문을 제기하다","Die Studie stellt frühere Ergebnisse in Frage.","그 연구는 이전 결과에 의문을 제기해요.","anzweifeln",["stellt"],["Frage"]],
+["einen Entschluss fassen","결심하다","Er hat den Entschluss gefasst, auszuwandern.","그는 이민 가기로 결심했어요.","sich entschließen",["gefasst"],["Entschluss"]],
+["einen Beschluss fassen","(회의에서) 결정하다, 의결하다","Der Stadtrat fasste einen wichtigen Beschluss.","시의회는 중요한 결정을 내렸어요.","beschließen",["fasste"],["Beschluss"]],
+["Schlussfolgerungen ziehen aus + Dat.","~에서 결론을 이끌어내다","Aus den Daten kann man klare Schlussfolgerungen ziehen.","데이터에서 분명한 결론을 도출할 수 있어요.","folgern",["ziehen"],["Schlussfolgerungen"]],
+["Maßnahmen ergreifen","조치를 취하다","Die Regierung ergreift neue Maßnahmen gegen die Inflation.","정부는 물가 상승을 막기 위해 새로운 조치를 취해요.","",["ergreift"],["Maßnahmen"]],
+["Druck ausüben auf + Akk.","~에게 압력을 가하다","Die Firma übte Druck auf die Mitarbeiter aus.","회사는 직원들에게 압력을 가했어요.","unter Druck setzen",["übte","aus"],["Druck"]],
+["Bezug nehmen auf + Akk.","~을 언급하다, 참조하다","Ich nehme Bezug auf Ihre E-Mail vom 3. Mai.","5월 3일자 이메일과 관련하여 연락드립니다.","sich beziehen auf",["nehme"],["Bezug"]],
+["unter Beweis stellen","입증하다","Er stellte sein Können unter Beweis.","그는 자신의 실력을 입증했어요.","beweisen",["stellte"],["Beweis"]],
+["Bedenken haben","우려가 있다, 걱정하다","Ich habe Bedenken wegen der Kosten.","비용이 걱정돼요.","",["habe"],["Bedenken"]],
+["für Klarheit sorgen","명확히 하다","Die Erklärung sorgte endlich für Klarheit.","그 설명으로 마침내 상황이 분명해졌어요.","klären",["sorgte"],["Klarheit"]],
+["zur Folge haben","~을 초래하다, ~라는 결과를 낳다","Der Fehler hatte hohe Kosten zur Folge.","그 실수 때문에 큰 비용이 들었어요.","bewirken",["hatte"],["Folge"]],
+["im Mittelpunkt stehen","중심에 있다, 초점이다","Im Mittelpunkt der Studie steht die Gesundheit.","이 연구는 건강에 초점을 맞추고 있어요.","",["steht"],["Mittelpunkt"]],
+["im Vordergrund stehen","최우선이다, 가장 중요하게 여겨지다","Bei uns steht der Kunde im Vordergrund.","저희는 고객을 최우선으로 생각해요.","",["steht"],["Vordergrund"]],
+["in Angriff nehmen","착수하다","Wir nehmen das Projekt im Frühjahr in Angriff.","우리는 봄에 그 프로젝트에 착수해요.","beginnen",["nehmen"],["Angriff"]],
+["in Auftrag geben","의뢰하다, 주문하다","Die Stadt gab ein neues Gutachten in Auftrag.","시는 전문가 감정을 새로 의뢰했어요.","beauftragen",["gab"],["Auftrag"]],
+["in Betrieb nehmen","가동하다, 운영을 시작하다","Das Kraftwerk wird nächstes Jahr in Betrieb genommen.","그 발전소는 내년에 가동을 시작해요.","starten",["genommen"],["Betrieb"]],
+["unter Kontrolle bringen","통제하다, 진압하다","Die Feuerwehr brachte den Brand schnell unter Kontrolle.","소방대는 불길을 빠르게 잡았어요.","kontrollieren",["brachte"],["Kontrolle"]],
+["in Erinnerung bleiben","기억에 남다","Der Abend wird mir lange in Erinnerung bleiben.","그날 저녁은 오래 기억에 남을 거예요.","",["bleiben"],["Erinnerung"]],
+["zu dem Ergebnis kommen","결론에 이르다","Die Forscher kamen zu dem Ergebnis, dass Schlaf für das Lernen wichtig ist.","연구자들은 잠이 학습에 중요하다는 결론에 이르렀어요.","",["kamen"],["Ergebnis"]],
+["zu einer Einigung kommen","합의에 이르다","Die Parteien kamen endlich zu einer Einigung.","양측은 마침내 합의에 이르렀어요.","sich einigen",["kamen"],["Einigung"]],
+["zu Wort kommen","발언 기회를 얻다","In der Diskussion kam sie kaum zu Wort.","토론에서 그녀는 거의 발언할 기회가 없었어요.","",["kam"],["Wort"]],
+["zum Abschluss bringen","마무리하다","Wir wollen die Arbeit bis Freitag zum Abschluss bringen.","우리는 금요일까지 작업을 마무리하려 해요.","abschließen",["bringen"],["Abschluss"]],
+["eine Einigung erzielen","합의를 이루다","Man hat eine Einigung erzielt.","합의가 이루어졌어요.","sich einigen",["erzielt"],["Einigung"]],
+["Erfolg erzielen","성과를 거두다","Das Team erzielte große Erfolge.","그 팀은 큰 성과를 거두었어요.","",["erzielte"],["Erfolge"]],
+["Aufmerksamkeit erregen","이목을 끌다, 관심을 끌다","Die Werbung erregte viel Aufmerksamkeit.","그 광고는 많은 관심을 끌었어요.","",["erregte"],["Aufmerksamkeit"]],
+["an Bedeutung gewinnen","중요해지다","Erneuerbare Energien gewinnen an Bedeutung.","재생 에너지가 중요해지고 있어요.","",["gewinnen"],["Bedeutung"]],
+["die Kontrolle verlieren über + Akk.","통제력을 잃다","Der Fahrer verlor die Kontrolle über das Auto.","운전자가 차를 제어하지 못했어요.","",["verlor"],["Kontrolle"]],
+["den Überblick behalten","전체 상황을 파악하고 있다","Bei so vielen Aufgaben ist es schwer, den Überblick zu behalten.","일이 이렇게 많으면 전체를 파악하기 어려워요.","",["behalten"],["Überblick"]],
+["Forderungen stellen","요구하다, 요구 사항을 내걸다","Die Gewerkschaft stellt hohe Forderungen.","노조는 많은 것을 요구하고 있어요.","fordern",["stellt"],["Forderungen"]],
+["Bedingungen stellen","조건을 내걸다","Er stellte mehrere Bedingungen für den Vertrag.","그는 계약에 여러 조건을 내걸었어요.","",["stellte"],["Bedingungen"]],
+["Anforderungen stellen an + Akk.","~에게 (많은 것을) 요구하다","Der Beruf stellt hohe Anforderungen an die Mitarbeiter.","그 직업은 직원에게 많은 것을 요구해요.","",["stellt"],["Anforderungen"]],
+["Regeln aufstellen","규칙을 정하다","Die Eltern stellen klare Regeln auf.","부모는 분명한 규칙을 정해요.","",["stellen","auf"],["Regeln"]],
+["Bericht erstatten über + Akk.","~에 대해 보고하다","Der Leiter erstattete Bericht über die Lage.","책임자는 상황을 보고했어요.","berichten",["erstattete"],["Bericht"]],
+["Anzeige erstatten","신고하다, 고발하다","Sie hat bei der Polizei Anzeige erstattet.","그녀는 경찰에 신고했어요.","anzeigen",["erstattet"],["Anzeige"]],
+["Schaden anrichten","피해를 입히다","Der Sturm hat große Schäden angerichtet.","폭풍이 큰 피해를 입혔어요.","",["angerichtet"],["Schäden"]],
+["einen Eindruck hinterlassen","인상을 남기다","Der Vortrag hinterließ einen starken Eindruck.","그 강연은 강한 인상을 남겼어요.","",["hinterließ"],["Eindruck"]],
+["Spuren hinterlassen","흔적을 남기다, (깊은) 상처를 남기다","Der Krieg hat tiefe Spuren hinterlassen.","전쟁은 깊은 상처를 남겼어요.","",["hinterlassen"],["Spuren"]],
+["in Schwierigkeiten bringen","곤란하게 만들다","Seine Lüge brachte ihn in Schwierigkeiten.","그의 거짓말이 그를 곤경에 빠뜨렸어요.","",["brachte"],["Schwierigkeiten"]],
+["eine Pause einlegen","중간에 쉬다","Nach zwei Stunden legen wir eine Pause ein.","두 시간 뒤에 잠깐 쉬겠습니다.","",["legen","ein"],["Pause"]],
+["ein Risiko eingehen","위험을 감수하다","Für den Erfolg musste er ein Risiko eingehen.","성공하려면 그는 위험을 감수해야 했어요.","riskieren",["eingehen"],["Risiko"]],
+["einen Kompromiss schließen","타협하다","Beide Seiten schlossen einen Kompromiss.","양측이 타협했어요.","sich einigen",["schlossen"],["Kompromiss"]],
+["Freundschaft schließen","친구가 되다","Im Urlaub haben wir schnell Freundschaft geschlossen.","휴가 중에 우리는 금세 친해졌어요.","sich anfreunden",["geschlossen"],["Freundschaft"]],
+["Frieden schließen","화해하다, 평화 협정을 맺다","Die beiden Länder schlossen Frieden.","두 나라는 평화 협정을 맺었어요.","",["schlossen"],["Frieden"]],
+["ein Opfer bringen","희생하다","Für die Familie bringt sie viele Opfer.","그녀는 가족을 위해 많은 것을 희생해요.","",["bringt"],["Opfer"]],
+["Mut machen + Dat.","~에게 용기를 주다","Seine Worte haben mir Mut gemacht.","그의 말이 제게 용기를 주었어요.","ermutigen",["gemacht"],["Mut"]],
+["Prioritäten setzen","우선순위를 정하다","Du musst lernen, Prioritäten zu setzen.","우선순위를 정하는 법을 배워야 해.","",["setzen"],["Prioritäten"]],
+["Grenzen setzen","선을 정하다, 한계를 정하다","Eltern müssen ihren Kindern Grenzen setzen.","부모는 아이에게 지켜야 할 선을 정해 줘야 해요.","",["setzen"],["Grenzen"]],
+["eine Frist setzen","기한을 정하다","Das Amt setzte eine Frist bis Ende Mai.","관청은 기한을 5월 말로 정했어요.","",["setzte"],["Frist"]],
+["ein Zeichen setzen","분명한 신호를 보내다","Mit der Aktion wollen wir ein Zeichen setzen.","이번 활동으로 우리는 분명한 메시지를 전하려 해요.","",["setzen"],["Zeichen"]],
+["Schritte unternehmen","조치를 취하다","Wir müssen rechtzeitig Schritte unternehmen.","우리는 제때 조치를 취해야 해요.","",["unternehmen"],["Schritte"]],
+["Verhandlungen führen","협상하다","Die beiden Länder führen Verhandlungen über den Handel.","두 나라는 무역에 관해 협상 중이에요.","verhandeln",["führen"],["Verhandlungen"]],
+["ein Ziel verfolgen","목표를 추구하다","Die Firma verfolgt ein klares Ziel.","그 회사는 분명한 목표를 추구해요.","",["verfolgt"],["Ziel"]],
+["ums Leben kommen","목숨을 잃다","Bei dem Unfall kamen zwei Menschen ums Leben.","그 사고로 두 명이 목숨을 잃었어요.","sterben",["kamen"],["Leben"]],
+["an die Macht kommen","집권하다","Die Partei kam 2005 an die Macht.","그 당은 2005년에 집권했어요.","",["kam"],["Macht"]],
+["auf den Markt bringen","시장에 출시하다","Die Firma bringt ein neues Modell auf den Markt.","그 회사는 신모델을 출시해요.","herausbringen",["bringt"],["Markt"]],
+["zur Welt bringen","낳다","Sie hat gestern ein Mädchen zur Welt gebracht.","그녀는 어제 딸을 낳았어요.","gebären",["gebracht"],["Welt"]],
+["zur Welt kommen","태어나다","Das Baby kam in der Nacht zur Welt.","아기는 밤에 태어났어요.","",["kam"],["Welt"]],
+["die Arbeit aufnehmen","일을 시작하다, 업무에 들어가다","Ich nehme am Montag meine Arbeit auf.","저는 월요일부터 일을 시작해요.","anfangen",["nehme","auf"],["Arbeit"]],
+["ein Gesetz verabschieden","법을 통과시키다","Das Parlament verabschiedete das Gesetz.","의회는 그 법을 통과시켰어요.","",["verabschiedete"],["Gesetz"]],
+["seine Stimme abgeben","투표하다","Alle Bürger können ihre Stimme abgeben.","모든 시민이 투표할 수 있어요.","wählen",["abgeben"],["Stimme"]],
+["eine Wahl gewinnen","선거에서 이기다","Die Partei hat die Wahl gewonnen.","그 당이 선거에서 이겼어요.","",["gewonnen"],["Wahl"]],
+["einen Rekord aufstellen","기록을 세우다","Das Team hat einen neuen Rekord aufgestellt.","그 팀은 새 기록을 세웠어요.","",["aufgestellt"],["Rekord"]],
+["in Not geraten","곤경에 처하다","Viele Familien sind durch die Krise in Not geraten.","많은 가정이 위기로 어려움에 처했어요.","",["geraten"],["Not"]],
+["außer Kontrolle geraten","통제 불능이 되다","Das Feuer geriet außer Kontrolle.","불이 걷잡을 수 없이 번졌어요.","",["geriet"],["Kontrolle"]],
+["in Sicherheit bringen","안전한 곳으로 옮기다","Die Feuerwehr brachte die Kinder in Sicherheit.","소방대는 아이들을 안전한 곳으로 옮겼어요.","retten",["brachte"],["Sicherheit"]],
+["unter Stress stehen","스트레스를 받고 있다","Vor der Abgabe stehe ich immer unter Stress.","마감 전에 저는 늘 스트레스를 받아요.","",["stehe"],["Stress"]],
+["ins Detail gehen","자세히 다루다","Ich möchte jetzt nicht ins Detail gehen.","지금은 자세한 이야기는 하지 않을게요.","",["gehen"],["Detail"]],
+["Fuß fassen","자리를 잡다, 정착하다","Er hat in Deutschland schnell Fuß gefasst.","그는 독일에서 빨리 자리를 잡았어요.","sich einleben",["gefasst"],["Fuß"]],
+["Interesse wecken","관심을 불러일으키다","Das Thema weckte sofort mein Interesse.","그 주제가 바로 제 관심을 끌었어요.","",["weckte"],["Interesse"]]
+],
+C1: [
+["Anwendung finden","적용되다, 쓰이다","Die Methode findet in vielen Bereichen Anwendung.","그 방법은 많은 분야에 적용돼요.","",["findet"],["Anwendung"]],
+["zum Einsatz kommen","투입되다, 사용되다","Bei der Rettung kamen mehrere Hubschrauber zum Einsatz.","구조에 헬리콥터 여러 대가 투입되었어요.","eingesetzt werden",["kamen"],["Einsatz"]],
+["ins Stocken geraten","난항을 겪다, 정체되다","Die Verhandlungen sind ins Stocken geraten.","협상이 난항을 겪고 있어요.","stocken",["geraten"],["Stocken"]],
+["in Vergessenheit geraten","잊히다","Dieses Handwerk ist fast in Vergessenheit geraten.","그 수공업은 거의 잊혔어요.","vergessen werden",["geraten"],["Vergessenheit"]],
+["in Gang bringen","(일이) 굴러가게 하다, 시동을 걸다","Sie brachte das Projekt endlich in Gang.","그녀 덕분에 그 프로젝트가 마침내 굴러가기 시작했어요.","anstoßen",["brachte"],["Gang"]],
+["ins Leben rufen","설립하다, 출범시키다","Der Verein wurde 1990 ins Leben gerufen.","그 협회는 1990년에 설립되었어요.","gründen",["gerufen"],["Leben"]],
+["in Rechnung stellen","청구하다","Der Handwerker stellt die Arbeitszeit in Rechnung.","기술자는 작업 시간만큼 비용을 청구해요.","berechnen",["stellt"],["Rechnung"]],
+["außer Acht lassen","간과하다","Man darf diesen Aspekt nicht außer Acht lassen.","이 측면을 간과해서는 안 돼요.","übersehen",["lassen"],["Acht"]],
+["Aufsehen erregen","세간의 주목을 끌다","Der Fund erregte weltweit Aufsehen.","그 발견은 전 세계의 이목을 끌었어요.","",["erregte"],["Aufsehen"]],
+["Stellung beziehen","입장을 분명히 하다","Der Verband bezog klar Stellung gegen die Reform.","협회는 개혁에 반대하는 입장을 분명히 했어요.","",["bezog"],["Stellung"]],
+["Bilanz ziehen","결산하다, 총평하다","Am Jahresende ziehen wir Bilanz.","연말에 우리는 결산을 해요.","",["ziehen"],["Bilanz"]],
+["Konsequenzen ziehen","책임지고 결단을 내리다","Er zog die Konsequenzen und trat zurück.","그는 책임을 지고 사임했어요.","",["zog"],["Konsequenzen"]],
+["Bedenken äußern","우려를 표명하다","Die Experten äußerten Bedenken gegen den Plan.","전문가들은 그 계획에 우려를 표명했어요.","",["äußerten"],["Bedenken"]],
+["Zustimmung finden","찬성을 얻다","Der Entwurf fand breite Zustimmung.","그 초안은 폭넓은 찬성을 얻었어요.","",["fand"],["Zustimmung"]],
+["einen Auftrag erteilen + Dat.","일을 맡기다, 주문하다","Die Stadt erteilte der Firma den Auftrag.","시는 그 회사에 일을 맡겼어요.","beauftragen",["erteilte"],["Auftrag"]],
+["ein Verbot aussprechen","금지하다, 금지 조치를 내리다","Die Schule sprach ein Handyverbot aus.","학교는 휴대폰 사용을 금지했어요.","verbieten",["sprach","aus"],["Handyverbot"]],
+["eine Warnung aussprechen","경고하다, 경보를 내리다","Der Wetterdienst sprach eine Warnung aus.","기상청은 경보를 내렸어요.","warnen",["sprach","aus"],["Warnung"]],
+["eine Empfehlung aussprechen","권고하다","Der Ausschuss sprach eine Empfehlung aus.","위원회는 권고안을 냈어요.","empfehlen",["sprach","aus"],["Empfehlung"]],
+["zum Erliegen kommen","완전히 멈추다, 마비되다","Wegen des Schnees kam der Verkehr zum Erliegen.","눈 때문에 교통이 완전히 마비됐어요.","stillstehen",["kam"],["Erliegen"]],
+["zum Stillstand kommen","정지하다","Die Verhandlungen kamen zum Stillstand.","협상이 멈췄어요.","",["kamen"],["Stillstand"]],
+["Fragen aufwerfen","문제를 제기하다, 의문을 낳다","Der Bericht wirft viele Fragen auf.","그 보고서는 많은 의문을 낳아요.","",["wirft","auf"],["Fragen"]],
+["Anerkennung finden","인정받다","Seine Arbeit fand international Anerkennung.","그의 작업은 국제적으로 인정받았어요.","anerkannt werden",["fand"],["Anerkennung"]],
+["die Fassung verlieren","평정을 잃다","Vor Gericht verlor er die Fassung.","법정에서 그는 평정을 잃었어요.","",["verlor"],["Fassung"]],
+["ein Urteil fällen","판결을 내리다","Das Gericht fällte ein hartes Urteil.","법원은 엄한 판결을 내렸어요.","urteilen",["fällte"],["Urteil"]],
+["Wirkung erzielen","효과를 거두다","Die Kampagne erzielte nicht die gewünschte Wirkung.","그 캠페인은 원하는 효과를 거두지 못했어요.","wirken",["erzielte"],["Wirkung"]],
+["einen Bezug herstellen zu + Dat.","~와 연관 짓다","Der Autor stellt einen Bezug zur Gegenwart her.","저자는 이 내용을 현재와 연결 지어요.","verknüpfen",["stellt","her"],["Bezug"]],
+["einen Zusammenhang herstellen","연관성을 찾다, 연결하다","Die Studie stellt einen Zusammenhang zwischen Schlaf und Gedächtnis her.","그 연구는 수면과 기억 사이의 연관성을 밝혀요.","",["stellt","her"],["Zusammenhang"]],
+["Beziehungen pflegen","관계를 유지하다, 관계를 가꾸다","Er pflegt gute Beziehungen zu seinen Kunden.","그는 고객과 좋은 관계를 유지해요.","",["pflegt"],["Beziehungen"]],
+["in die Tat umsetzen","실행에 옮기다","Er setzte seinen Plan endlich in die Tat um.","그는 마침내 계획을 실행에 옮겼어요.","verwirklichen",["setzte","um"],["Tat"]],
+["in die Länge ziehen","질질 끌다","Die Diskussion wurde unnötig in die Länge gezogen.","토론이 쓸데없이 길어졌어요.","",["gezogen"],["Länge"]],
+["in die Pflicht nehmen","책임을 지우다","Die Politik nimmt die Firmen in die Pflicht.","정치권은 기업들에게 책임을 지우고 있어요.","",["nimmt"],["Pflicht"]],
+["aufs Spiel setzen","위태롭게 하다","Er setzt seine Gesundheit aufs Spiel.","그는 건강을 위태롭게 하고 있어요.","riskieren",["setzt"],["Spiel"]],
+["außer Kraft setzen","효력을 정지시키다","Das Gericht setzte das Gesetz außer Kraft.","법원은 그 법의 효력을 정지시켰어요.","",["setzte"],["Kraft"]],
+["zum Opfer fallen + Dat.","~의 희생자가 되다","Viele Menschen fielen dem Betrug zum Opfer.","많은 사람이 사기의 피해자가 되었어요.","",["fielen"],["Opfer"]],
+["an den Tag legen","드러내 보이다","Er legte großen Mut an den Tag.","그는 큰 용기를 보였어요.","zeigen",["legte"],["Tag"]],
+["Schritt halten mit + Dat.","~을 따라가다","Die Löhne halten mit den Preisen nicht Schritt.","임금이 물가를 따라가지 못해요.","",["halten"],["Schritt"]],
+["Akzente setzen","포인트를 주다","Mit Farben kann man im Raum Akzente setzen.","색으로 공간에 포인트를 줄 수 있어요.","",["setzen"],["Akzente"]],
+["Maßstäbe setzen","기준을 세우다, 본보기가 되다","Das Unternehmen setzt Maßstäbe in der Branche.","그 기업은 업계의 기준을 세워요.","",["setzt"],["Maßstäbe"]],
+["auf dem Spiel stehen","(위험에) 걸려 있다","Bei dieser Entscheidung steht viel auf dem Spiel.","이 결정에는 걸린 것이 많아요.","",["steht"],["Spiel"]],
+["im Raum stehen","(의혹·문제가) 남아 있다","Der Vorwurf steht immer noch im Raum.","그 의혹은 여전히 남아 있어요.","",["steht"],["Raum"]],
+["an Fahrt gewinnen","속도가 붙다","Die Entwicklung gewinnt an Fahrt.","변화에 속도가 붙고 있어요.","",["gewinnt"],["Fahrt"]],
+["Fahrt aufnehmen","속도를 내다","Der Zug nimmt langsam Fahrt auf.","기차가 서서히 속도를 내요.","",["nimmt","auf"],["Fahrt"]],
+["Verhandlungen aufnehmen","협상을 시작하다","Beide Seiten nehmen die Verhandlungen wieder auf.","양측이 협상을 재개해요.","",["nehmen","auf"],["Verhandlungen"]],
+["zu Schaden kommen","다치다, 피해를 입다","Bei dem Unfall kam niemand zu Schaden.","그 사고에서 다친 사람은 없었어요.","",["kam"],["Schaden"]]
+],
+C2: [
+["in die Wege leiten","추진하다, 착수하다","Der Minister leitete die Reform in die Wege.","장관은 개혁을 추진했어요.","einleiten",["leitete"],["Wege"]],
+["zur Rede stellen","따져 묻다","Sie stellte ihn wegen der Lüge zur Rede.","그녀는 거짓말에 대해 그를 추궁했어요.","konfrontieren",["stellte"],["Rede"]],
+["in Aussicht stellen + Dat.","(앞으로 줄 것을) 약속하다","Die Firma stellte ihm eine Beförderung in Aussicht.","회사는 그에게 승진을 약속했어요.","versprechen",["stellte"],["Aussicht"]],
+["ins Gewicht fallen","중요하다, 영향이 크다","Dieser Fehler fällt kaum ins Gewicht.","이 실수는 거의 문제가 되지 않아요.","wichtig sein",["fällt"],["Gewicht"]],
+["ins Auge fassen","염두에 두다","Sie fasst eine Stelle im Ausland ins Auge.","그녀는 해외 일자리를 염두에 두고 있어요.","anvisieren",["fasst"],["Auge"]],
+["zu Rate ziehen","자문을 구하다","Wir zogen einen Experten zu Rate.","우리는 전문가에게 자문을 구했어요.","konsultieren",["zogen"],["Rate"]],
+["zur Rechenschaft ziehen","책임을 묻다","Man sollte die Täter zur Rechenschaft ziehen.","가해자에게 책임을 물어야 해요.","verantwortlich machen",["ziehen"],["Rechenschaft"]],
+["zu Buche schlagen","(비용·부담이) 크게 작용하다, 큰 비중을 차지하다","Die Mietkosten schlagen stark zu Buche.","임대료가 큰 비중을 차지해요.","",["schlagen"],["Buche"]],
+["zur Debatte stehen","논의 대상이다","Die Frage steht nicht mehr zur Debatte.","그 문제는 더 이상 논의 대상이 아니에요.","",["steht"],["Debatte"]],
+["den Ausschlag geben","결정적 역할을 하다","Seine Stimme gab den Ausschlag.","그의 표가 결정적이었어요.","entscheiden",["gab"],["Ausschlag"]],
+["Vorsorge treffen","대비하다","Wir sollten für den Notfall Vorsorge treffen.","비상시에 대비해야 해요.","vorsorgen",["treffen"],["Vorsorge"]],
+["Vorkehrungen treffen","대책을 마련하다","Die Stadt traf Vorkehrungen gegen Hochwasser.","시는 홍수에 대한 대책을 마련했어요.","",["traf"],["Vorkehrungen"]],
+["Abstriche machen bei + Dat.","~에서 양보하다, 눈높이를 낮추다","Bei der Qualität darf man keine Abstriche machen.","품질은 양보해서는 안 돼요.","",["machen"],["Abstriche"]],
+["in den Ruhestand treten","은퇴하다","Mit 65 trat er in den Ruhestand.","65세에 그는 은퇴했어요.","in Rente gehen",["trat"],["Ruhestand"]],
+["Lehren ziehen aus + Dat.","~에서 교훈을 얻다","Aus der Krise müssen wir Lehren ziehen.","우리는 위기에서 교훈을 얻어야 해요.","lernen",["ziehen"],["Lehren"]],
+["unter die Lupe nehmen","면밀히 조사하다","Die Prüfer nahmen die Bilanz genau unter die Lupe.","감사관은 결산서를 면밀히 들여다봤어요.","prüfen",["nahmen"],["Lupe"]],
+["ins Rollen bringen","촉발하다, 본격화시키다","Seine Anzeige brachte den Skandal ins Rollen.","그의 고발이 스캔들을 촉발했어요.","auslösen",["brachte"],["Rollen"]],
+["Rückschlüsse ziehen aus + Dat.","~에서 추론하다","Aus den Zahlen lassen sich Rückschlüsse ziehen.","수치에서 추론할 수 있어요.","schließen",["ziehen"],["Rückschlüsse"]],
+["in die Hand nehmen","직접 맡다","Sie nahm die Planung selbst in die Hand.","그녀는 계획을 직접 맡았어요.","übernehmen",["nahm"],["Hand"]],
+["in den Griff bekommen","(문제를) 잡다, 해결하다","Die Stadt bekommt das Verkehrsproblem nicht in den Griff.","시는 교통 문제를 잡지 못하고 있어요.","",["bekommt"],["Griff"]],
+["die Weichen stellen","방향을 정하다","Mit dieser Reform werden die Weichen für die Zukunft gestellt.","이 개혁으로 미래의 방향이 정해져요.","",["gestellt"],["Weichen"]],
+["auf die Probe stellen","시험대에 올리다","Die Krise stellt unsere Geduld auf die Probe.","그 위기는 우리의 인내심을 시험해요.","",["stellt"],["Probe"]],
+["ein Machtwort sprechen","(윗사람이) 단호하게 결론을 내리다","Der Chef sprach endlich ein Machtwort.","상사가 마침내 단호하게 정리했어요.","",["sprach"],["Machtwort"]],
+["in den Hintergrund treten","뒷전으로 밀려나다","Private Interessen treten dabei in den Hintergrund.","그 경우 개인의 이익은 뒷전이 돼요.","",["treten"],["Hintergrund"]],
+["in den Vordergrund rücken","전면에 부상하다","Das Thema Umwelt rückt immer mehr in den Vordergrund.","환경 문제가 점점 더 전면에 부상해요.","",["rückt"],["Vordergrund"]],
+["in den Mittelpunkt rücken","중심으로 끌어올리다","Der Verein will die Jugendarbeit in den Mittelpunkt rücken.","협회는 청소년 활동을 중심에 두려 해요.","",["rücken"],["Mittelpunkt"]]
+]
+};
+
+(function(){
+"use strict";
+var LEVELS=["A1","A2","B1","B2","C1","C2"];
+var NAMES={A1:"기초",A2:"초급",B1:"중급",B2:"중상급",C1:"상급",C2:"최상급"};
+var KEY="soda-nvv-leitner-v2",OLDKEY="soda-nvv-known-v1";
+var GAP=[0,1,3,7,14,30];
+var BOXLBL=["처음","1일","3일","1주","2주","한 달"];
+
+/* 접두사가 붙은 동사는 기본 동사 묶음에 넣는다 */
+var FAMILY={aufnehmen:"nehmen",aufstellen:"stellen",herstellen:"stellen",aufgeben:"geben",abgeben:"geben",ausgeben:"geben",ausmachen:"machen",eingehen:"gehen",umsetzen:"setzen",aussprechen:"sprechen",abschließen:"schließen",behalten:"halten"};
+var PREPSET={vor:1,auf:1,an:1,um:1,"über":1,"für":1,zu:1,mit:1,bei:1,nach:1,von:1,"in":1,gegen:1,aus:1,durch:1,unter:1,zwischen:1,hinter:1};
+var PPSTART=/^(in|im|ins|an|am|ans|auf|aufs|aus|bei|beim|zu|zum|zur|unter|außer|um|ums|für|mit|von|vor|nach|durch|gegen|zwischen|hinter)\s/;
+
+/* 동사 색 */
+var VCOL={haben:"#1d4ed8",machen:"#c2410c",nehmen:"#15803d",kommen:"#7c3aed",stellen:"#be123c",bringen:"#0e7490",stehen:"#b45309",setzen:"#a21caf",ziehen:"#4d7c0f",geben:"#0f766e",geraten:"#9f1239",halten:"#4338ca",fahren:"#047857",treffen:"#b91c1c",führen:"#854d0e",finden:"#0369a1",fassen:"#7e22ce",spielen:"#0d9488",hinterlassen:"#92400e",bekommen:"#3f6212",leisten:"#1e40af",gehen:"#6b21a8",treten:"#be185d",erzielen:"#166534",gewinnen:"#a16207",schließen:"#334155",sprechen:"#9a3412"};
+var ETC="그 밖의 동사",ETCCOL="#6b7280";
+
+/* 동사 그림 (SVG) */
+var ICON={
+haben:'<circle cx="12" cy="12" r="8"/><path d="M8 12h8"/><path d="M12 8v8"/>',
+machen:'<path d="M14 4l6 6-3 3-6-6z"/><path d="M13 11L5 19"/>',
+nehmen:'<path d="M12 3v11"/><path d="M8 10l4 4 4-4"/><path d="M4 20h16"/>',
+kommen:'<circle cx="19" cy="12" r="2"/><path d="M3 12h13"/><path d="M12 8l4 4-4 4"/>',
+stellen:'<rect x="8" y="5" width="8" height="9" rx="1"/><path d="M4 18h16"/><path d="M12 14v4"/>',
+bringen:'<rect x="3" y="8" width="8" height="8" rx="1"/><path d="M13 12h8"/><path d="M17 8l4 4-4 4"/>',
+stehen:'<path d="M12 6v12"/><path d="M6 20h12"/><circle cx="12" cy="4" r="1.5"/>',
+setzen:'<path d="M6 21V4"/><path d="M6 4h11l-2 4 2 4H6"/>',
+ziehen:'<path d="M21 12H8"/><path d="M12 8l-4 4 4 4"/><circle cx="4" cy="12" r="1.5"/>',
+geben:'<path d="M12 14V3"/><path d="M8 7l4-4 4 4"/><path d="M4 20h16"/>',
+geraten:'<path d="M4 8h5l3 8 3-8h5"/>',
+halten:'<path d="M9 5v14"/><path d="M15 5v14"/>',
+fahren:'<path d="M4 15h16l-1.5-5h-13z"/><circle cx="8" cy="17.5" r="1.5"/><circle cx="16" cy="17.5" r="1.5"/>',
+treffen:'<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/>',
+"führen":'<path d="M4 18h5v-6h5V6h6"/>',
+finden:'<circle cx="10" cy="10" r="6"/><path d="M14.5 14.5L21 21"/>',
+fassen:'<path d="M8 4H4v4"/><path d="M16 4h4v4"/><path d="M8 20H4v-4"/><path d="M16 20h4v-4"/>',
+spielen:'<path d="M8 5l11 7-11 7z"/>',
+hinterlassen:'<ellipse cx="8" cy="9" rx="2.5" ry="4"/><ellipse cx="16" cy="15" rx="2.5" ry="4"/>',
+bekommen:'<path d="M4 13h5l1 3h4l1-3h5"/><path d="M4 13l2-8h12l2 8v6H4z"/>',
+leisten:'<path d="M5 13l4 4 10-10"/>',
+gehen:'<circle cx="12" cy="5" r="2"/><path d="M12 8v6l-3 6"/><path d="M12 14l3 6"/>',
+treten:'<path d="M5 20V4h8v16"/><path d="M13 12h8"/><path d="M18 9l3 3-3 3"/>',
+erzielen:'<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/>',
+gewinnen:'<path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M12 13v4"/><path d="M8 20h8"/>',
+"schließen":'<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+sprechen:'<path d="M4 5h16v11H9l-5 4z"/>',
+etc:'<circle cx="12" cy="12" r="3"/>'
+};
+
+/* 한 줄 설명 (요약표) */
+var HOOK={
+haben:"증상·감정·일정·권리처럼 <b>지금 갖고 있는 것</b>을 나타내는 명사와 씁니다.",
+machen:"<b>활동·행위</b>를 하는 명사(휴가, 휴식, 실수, 시험)와 씁니다. 상대에게 감정을 일으킬 때는 3격과 함께 씁니다.",
+nehmen:"<b>받아들이거나 취하는</b> 표현입니다. in + 4격 + nehmen 고정형이 많습니다.",
+kommen:"어떤 상태에 <b>이르는</b> 표현입니다. 대부분 zu + 3격 또는 in + 4격과 함께 씁니다.",
+stellen:"<b>앞에 내놓는</b> 표현입니다. 질문·요구·조건·신청을 내놓을 때 씁니다.",
+bringen:"어떤 상태가 <b>되게 하는</b> 표현입니다. kommen의 타동사 짝입니다.",
+stehen:"어떤 상태에 <b>있다</b>는 표현입니다. stellen의 상태 짝입니다.",
+setzen:"목표·기한·경계처럼 <b>정해 두는</b> 대상과 씁니다.",
+ziehen:"결론·교훈·조치를 <b>끌어낼</b> 때 씁니다.",
+geben:"답·조언·정보·수업처럼 <b>주고 내놓는</b> 표현에 씁니다.",
+geraten:"뜻하지 않게, 대개 좋지 않은 상황에 <b>빠지는</b> 표현입니다.",
+halten:"말·약속을 <b>지키거나 행하고</b> 거리·연락을 <b>유지하는</b> 표현에 씁니다.",
+fahren:"탈것과 탈것으로 하는 운동 이름에 씁니다. 관사가 없습니다.",
+treffen:"결정과 대비를 <b>내리는</b> 표현입니다.",
+"führen":"대화·인터뷰·기록처럼 <b>이어 가는</b> 활동에 씁니다.",
+finden:"해결책·호응·인정 같은 결과를 <b>얻는</b> 표현입니다.",
+fassen:"결심을 <b>정하거나</b> 자리를 잡는 표현입니다.",
+spielen:"운동·악기·역할에 씁니다.",
+hinterlassen:"메모·인상·흔적을 <b>남길</b> 때 씁니다.",
+bekommen:"연락·초대를 <b>받을</b> 때 씁니다.",
+leisten:"도움·저항·기여처럼 <b>해내야 하는 일</b>에 씁니다.",
+gehen:"끝남·실현처럼 진행의 <b>도착점</b>에 이르는 표현입니다.",
+treten:"새로운 상태로 <b>들어서는</b> 표현입니다.",
+erzielen:"합의·성과·효과를 <b>이루는</b> 표현입니다.",
+gewinnen:"선거에서 <b>이기거나</b> 비중·속도가 <b>커질</b> 때 씁니다.",
+"schließen":"합의·우정·평화 같은 관계를 <b>맺는</b> 표현입니다.",
+sprechen:"금지·경고·권고를 공식적으로 <b>말해 내놓는</b> 표현입니다."
+};
+
+/* 카드 뒷면 암기 요령 */
+var TIPS={
+haben:"<b>haben</b>은 몸 상태·감정·일정처럼 지금 갖고 있는 것을 말할 때 씁니다. 증상(Fieber, Husten, Schmerzen), 감정·태도(Angst, Mut, Geduld, Lust), 일정(Termin, Unterricht, Prüfung), 운(Glück, Pech), 권리·영향(Anspruch, Einfluss)이 대표적입니다. 이런 명사를 보면 먼저 haben을 떠올리고, 아니면 다른 동사를 찾으세요.",
+machen:"<b>machen</b>은 활동·행위를 '하다'입니다. 활동(Urlaub, Ausflug, Reise, Party), 일·시험(Hausaufgaben, Prüfung, Überstunden, Praktikum), 결과물·시도(Fehler, Fortschritte, Karriere, Versuch, Vorschlag)에 씁니다. 상대에게 감정을 일으킬 때는 <b>3격 + machen</b>입니다: jm. Angst / Mut / Freude / Vorwürfe machen.",
+nehmen:"<b>nehmen</b>은 받아들이거나 취하는 동작입니다. 자리·휴가·목욕(Platz, Urlaub, Bad), 태도(Rücksicht, Stellung, Bezug, Einfluss nehmen), 그리고 <b>in / zu / unter + 명사 + nehmen</b> 고정형(in Kauf, in Anspruch, in Angriff, in Betrieb, zur Kenntnis, unter die Lupe nehmen)에 씁니다. 접두사가 붙은 <b>aufnehmen</b>은 시작하거나 연결하는 뜻입니다(Kontakt, Arbeit, Fahrt, Verhandlungen).",
+kommen:"<b>kommen</b>은 어떤 상태에 이르는 표현입니다. 대부분 <b>zu + 3격</b>(zur Ruhe, zu Wort, zum Einsatz, zum Stillstand, zu Schaden, zu einer Einigung) 또는 <b>in + 4격</b>(in Frage, ins Gespräch)입니다. 저절로 그 상태에 이르면 kommen, 누군가 그렇게 만들면 bringen입니다(zur Welt kommen ↔ zur Welt bringen).",
+stellen:"<b>stellen</b>은 앞에 내놓는 동작입니다. 질문·요구·조건·신청(Frage, Forderungen, Bedingungen, Anforderungen, Antrag)을 내놓을 때 씁니다. 고정형은 in Frage, unter Beweis, in Rechnung, zur Rede, zur Verfügung, auf die Probe stellen입니다. aufstellen은 세우다(Regeln, Rekord), herstellen은 만들어 내다(Bezug, Zusammenhang)입니다. 상태를 나타내는 짝은 stehen입니다(zur Verfügung stellen ↔ zur Verfügung stehen).",
+bringen:"<b>bringen</b>은 무언가를 어떤 상태로 옮겨 놓는 표현입니다(in / unter / zu / auf + 명사 + bringen): in Gefahr, in Schwierigkeiten, in Sicherheit, in Gang, unter Kontrolle, zum Ausdruck, zum Abschluss, auf den Markt bringen. 저절로 그 상태가 되면 kommen이나 geraten입니다(zur Welt bringen ↔ zur Welt kommen, in Schwierigkeiten bringen ↔ in Schwierigkeiten geraten).",
+stehen:"<b>stehen</b>은 어떤 상태에 있다는 표현입니다: unter Druck / Stress, im Mittelpunkt / Vordergrund, zur Verfügung / Wahl / Debatte, in Verbindung mit, auf dem Spiel, im Raum, Schlange stehen. 내놓는 동작은 stellen입니다(zur Verfügung stehen ↔ zur Verfügung stellen).",
+setzen:"<b>setzen</b>은 의도해서 정해 두는 동작입니다. 목표·기한·경계·표시(Ziel, Frist, Grenzen, Prioritäten, Zeichen, Akzente, Maßstäbe)와 씁니다. 고정형은 außer Kraft setzen, aufs Spiel setzen, sich in Verbindung setzen, in die Tat umsetzen입니다.",
+ziehen:"<b>ziehen</b>은 끌어내는 동작입니다. 평가·결론(Bilanz, Konsequenzen, Schlussfolgerungen, Lehren, Rückschlüsse)을 끌어낼 때 씁니다. 고정형은 in Betracht ziehen, zu Rate ziehen, zur Rechenschaft ziehen, in die Länge ziehen입니다.",
+geben:"<b>geben</b>은 주고 내놓는 동작입니다. 답·조언·정보·수업(Antwort, Rat, Auskunft, Unterricht)을 줄 때, 그리고 sich Mühe geben, den Ausschlag geben, in Auftrag geben에 씁니다. 접두사가 붙은 aufgeben은 주문을 내다, abgeben은 표를 던지다, ausgeben은 돈을 쓰다입니다.",
+geraten:"<b>geraten</b>은 뜻하지 않게, 대개 좋지 않은 상황에 빠지는 표현입니다: in Schwierigkeiten, in Streit, in Not, ins Stocken, in Vergessenheit geraten, außer Kontrolle geraten. 일부러 그렇게 만들면 bringen입니다(in Schwierigkeiten bringen).",
+halten:"<b>halten</b>은 말이나 약속을 행하고 거리·연락을 유지하는 동작입니다. 말·발표(Rede, Vortrag), 약속(Wort), 유지(Kontakt, Abstand, Schritt halten)에 씁니다. behalten은 계속 갖고 있다는 뜻입니다(den Überblick behalten).",
+fahren:"<b>fahren</b>은 탈것이나 탈것으로 하는 운동 이름과 씁니다: Auto, Zug, Rad, Ski fahren. 관사 없이 씁니다.",
+treffen:"<b>treffen</b>은 결정과 대비를 내리는 동작입니다: eine Entscheidung, eine Wahl, Vorsorge, Vorkehrungen treffen.",
+"führen":"<b>führen</b>은 대화·기록처럼 이어 가는 활동과 씁니다: ein Gespräch, ein Interview, ein Tagebuch, Verhandlungen führen.",
+finden:"<b>finden</b>은 결과를 얻는 표현입니다: eine Lösung, Anwendung, Zustimmung, Anerkennung finden.",
+fassen:"<b>fassen</b>은 결심을 정하는 동작입니다: einen Entschluss, einen Beschluss fassen. 고정형은 Fuß fassen(자리 잡다), ins Auge fassen(염두에 두다)입니다.",
+spielen:"<b>spielen</b>은 운동·악기·역할에 씁니다: Fußball, Klavier spielen, eine Rolle spielen.",
+hinterlassen:"<b>hinterlassen</b>은 뒤에 남기는 동작입니다: eine Nachricht, einen Eindruck, Spuren hinterlassen.",
+bekommen:"<b>bekommen</b>은 받는 쪽에서 쓰는 동사입니다: einen Anruf, eine Einladung bekommen. in den Griff bekommen은 '통제하다'입니다.",
+leisten:"<b>leisten</b>은 해내야 하는 일에 씁니다: Hilfe, Widerstand, einen Beitrag leisten.",
+gehen:"<b>gehen</b>은 끝이나 실현 같은 도착점에 이르는 표현입니다: zu Ende, in Erfüllung, ins Detail gehen. eingehen은 위험을 감수한다는 뜻입니다(ein Risiko eingehen).",
+treten:"<b>treten</b>은 새로운 상태로 들어서는 표현입니다: in Kraft, in den Ruhestand, in den Hintergrund treten.",
+erzielen:"<b>erzielen</b>은 합의·성과·효과를 이루는 동작입니다: eine Einigung, Erfolg, Wirkung erzielen.",
+gewinnen:"<b>gewinnen</b>은 선거에서 이기거나(eine Wahl gewinnen), 비중·속도가 커질 때(an Bedeutung, an Fahrt gewinnen) 씁니다.",
+"schließen":"<b>schließen</b>은 관계를 맺는 동작입니다: einen Kompromiss, Freundschaft, Frieden schließen. abschließen은 계약을 맺는다는 뜻입니다(einen Vertrag abschließen).",
+sprechen:"<b>aussprechen</b>은 금지·경고·권고를 공식적으로 말해 내놓는 표현입니다: ein Verbot, eine Warnung, eine Empfehlung aussprechen. ein Machtwort sprechen도 같은 계열입니다."
+};
+
+/* 명사와 함께 쓸 수 있는 다른 동사 (퀴즈 오답 보기에서 제외) */
+var ALT={kopfschmerzen:["machen","bereiten"],halsschmerzen:["machen"],bauchschmerzen:["machen"],schmerzen:["machen"],probleme:["machen","bereiten"],schwierigkeiten:["machen","bereiten"],sorgen:["machen","bereiten"],angst:["machen"],stress:["machen"],freude:["haben","bereiten"],"spaß":["machen","haben"],interesse:["zeigen","wecken"],erfolg:["haben","erzielen","machen"],pause:["haben","machen","einlegen"],urlaub:["haben","nehmen","machen"],termin:["machen","ausmachen","vereinbaren","haben"],"pläne":["machen","haben"],fehler:["machen","haben"],zeit:["haben","nehmen","verbringen"],kontakt:["haben","halten","aufnehmen"],entscheidung:["treffen","fällen"],rat:["geben","holen"],hilfe:["leisten","holen","geben"],frage:["stellen","haben"],antwort:["geben","bekommen"],rede:["halten"],besuch:["haben","machen","bekommen"],bericht:["erstatten","geben"],gespräch:["führen","haben"],erfahrung:["haben","machen","sammeln"],einfluss:["haben","nehmen"],verantwortung:["übernehmen","tragen","haben"],unterricht:["geben","haben"],"geburtstag":["haben","feiern"],ziel:["setzen","erreichen","verfolgen"],eindruck:["machen","hinterlassen"],wahl:["treffen","gewinnen"],auftrag:["erteilen","geben"],einigung:["erzielen"],"mühe":["haben","geben"],bezug:["nehmen","herstellen"],stellung:["nehmen","beziehen"],rad:["nehmen"],auto:["nehmen"],zug:["nehmen"],ski:["laufen"]};
+
+var known={};
+function today(){var d=new Date();return Math.floor((d.getTime()-d.getTimezoneOffset()*60000)/86400000);}
+try{
+  var raw=localStorage.getItem(KEY);
+  if(raw){known=JSON.parse(raw)||{};}
+  else{ /* 이전 버전(알아요 목록)의 기록을 1일 칸으로 옮긴다 */
+    var old=localStorage.getItem(OLDKEY);
+    if(old){var o=JSON.parse(old)||{};for(var L0 in o){(o[L0]||[]).forEach(function(p){known[L0+"|"+p]={b:1,due:today()+1};});}}
+  }
+}catch(e){known={};}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(known));}catch(e){}}
+function kid(c){return c.L+"|"+c.d[0];}
+function rec(c){return known[kid(c)]||null;}
+function isKnown(c){var r=rec(c);return !!(r&&r.b>=1);}
+function boxOf(c){var r=rec(c);return r?r.b:0;}
+function setKnown(c,v){
+  var r=rec(c)||{b:0,due:today()};
+  if(v){r.b=Math.min(r.b+1,GAP.length-1);r.due=today()+GAP[r.b];}
+  else{r.b=0;r.due=today();}
+  known[kid(c)]=r;save();
+}
+function dueCards(){var t=today();return ALL.filter(function(c){var r=rec(c);return r&&r.due<=t;});}
+
+function $(id){return document.getElementById(id);}
+function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e;}
+function show(id){["v-cover","v-levels","v-study","v-sheet"].forEach(function(v){$(v).hidden=(v!==id);});window.scrollTo(0,0);}
+
+/* ---------- 카드 객체 ---------- */
+function parse(d){
+  var seg=d[0].split(" + "),toks=seg[0].split(" "),cas=seg[1]||"",prep="",verb,lead;
+  if(cas&&PREPSET[toks[toks.length-1]]){prep=toks[toks.length-1];verb=toks[toks.length-2];lead=toks.slice(0,-2).join(" ");}
+  else{verb=toks[toks.length-1];lead=toks.slice(0,-1).join(" ");}
+  return {lead:lead,verb:verb,prep:prep,cas:cas,fam:FAMILY[verb]||verb};
+}
+function headNoun(lead){var t=lead.split(" ").filter(function(w){return /^[A-ZÄÖÜ]/.test(w);});return t.length?t[t.length-1]:"";}
+function nounKey(lead){var h=headNoun(lead).toLowerCase();if(h.length>=9&&/en$/.test(h))h=h.slice(0,-2);return h;}
+var ALL=[];
+LEVELS.forEach(function(L){DATA[L].forEach(function(d,i){var P=parse(d);ALL.push({L:L,i:i,d:d,lead:P.lead,verb:P.verb,prep:P.prep,cas:P.cas,fam:P.fam,nk:nounKey(P.lead),pp:PPSTART.test(d[0]),vh:d[5]||[],nh:d[6]||[]});});});
+var FCOUNT={};ALL.forEach(function(c){FCOUNT[c.fam]=(FCOUNT[c.fam]||0)+1;});
+var MAJOR=Object.keys(FCOUNT).filter(function(f){return FCOUNT[f]>=3&&VCOL[f];}).sort(function(a,b){return FCOUNT[b]-FCOUNT[a]||(a<b?-1:1);});
+function isMajor(f){return MAJOR.indexOf(f)>-1;}
+function famKey(c){return isMajor(c.fam)?c.fam:"etc";}
+function colOf(c){return isMajor(c.fam)?VCOL[c.fam]:ETCCOL;}
+function byLevel(L){return ALL.filter(function(c){return c.L===L;});}
+function byFam(f){return ALL.filter(function(c){return famKey(c)===f;});}
+function related(c){if(!c.nk)return [];return ALL.filter(function(o){return o!==c&&o.nk===c.nk;});}
+function knownCount(list){var n=0;list.forEach(function(c){if(isKnown(c))n++;});return n;}
+function norm(s){return String(s).toLowerCase().replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss").replace(/\s+/g,"");}
+function vowelStart(p){return /^[aeiouäöü]/.test(p);}
+function whWord(p){return (vowelStart(p)?"wor":"wo")+p;}
+function daWord(p){return (vowelStart(p)?"dar":"da")+p;}
+
+function icon(f,big){var w=el("span","picon");w.style.setProperty("--pc",f==="etc"?ETCCOL:VCOL[f]);w.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true">'+(ICON[f]||ICON.etc)+'</svg>';return w;}
+function cap(s){return s.charAt(0).toUpperCase()+s.slice(1);}
+function casLabel(c){
+  if(!c.cas)return "";
+  var k=c.cas==="Akk."?"4격":"3격";
+  return c.prep?("+ "+c.prep+" + "+c.cas+" "+k):("+ 사람에게 ("+c.cas+" "+k+")");
+}
+function phraseNode(c,withCase){
+  var s=el("span");
+  if(c.lead)s.appendChild(document.createTextNode(c.lead+" "));
+  var v=el("span","pp",c.verb);v.style.setProperty("--pc",colOf(c));s.appendChild(v);
+  if(c.prep)s.appendChild(document.createTextNode(" "+c.prep));
+  if(withCase&&c.cas)s.appendChild(document.createTextNode(" + "+c.cas));
+  return s;
+}
+function highlightExample(c){
+  var box=el("div","de"),vs=c.vh.slice(),ns=c.nh.slice();
+  c.d[2].split(/(\s+)/).forEach(function(tok){
+    var core=tok.replace(/[.,!?:;"„“]/g,""),vi=vs.indexOf(core),ni=ns.indexOf(core);
+    if(core&&vi>-1){vs.splice(vi,1);box.appendChild(el("span","vm",tok.replace(/[.,!?:;"„“]+$/,"")));var t1=tok.match(/[.,!?:;"„“]+$/);if(t1)box.appendChild(document.createTextNode(t1[0]));}
+    else if(core&&ni>-1){ns.splice(ni,1);box.appendChild(el("span","nm",tok.replace(/[.,!?:;"„“]+$/,"")));var t2=tok.match(/[.,!?:;"„“]+$/);if(t2)box.appendChild(document.createTextNode(t2[0]));}
+    else box.appendChild(document.createTextNode(tok));
+  });
+  return box;
+}
+/* 예문에서 동사 자리를 입력란/빈칸으로 */
+function fillSentence(c,input){
+  var box=el("div","fill"),done=false,first=c.vh[0];
+  box.style.setProperty("--pc",colOf(c));
+  var accepted=[c.verb];if(first)accepted.push(first);
+  c.d[2].split(/(\s+)/).forEach(function(tok){
+    var core=tok.replace(/[.,!?:;"„“]/g,"");
+    if(!done&&first&&core===first){
+      if(input){var inp=el("input");inp.type="text";inp.autocomplete="off";inp.autocapitalize="none";inp.spellcheck=false;inp.setAttribute("aria-label","동사 입력");inp.placeholder="…";box.appendChild(inp);}
+      else{box.appendChild(el("mark","",core));}
+      var tail=tok.match(/[.,!?:;"„“]+$/);if(tail)box.appendChild(document.createTextNode(tail[0]));
+      done=true;
+    }else box.appendChild(document.createTextNode(tok));
+  });
+  box.accepted=accepted;
+  return box;
+}
+
+var S={deck:[],title:"",mode:"de",shuffle:false,hide:false,queue:[],pos:0,res:{},flipped:false,finished:false,tab:"cards",quiz:null,verbStat:{},auto:false};
+var MODES=["de","ko","verb","quiz","fill"];
+var MODE_LABEL={de:"독일어 → 한국어",ko:"한국어 → 독일어",verb:"동사 맞히기",quiz:"동사 퀴즈",fill:"동사 쓰기"};
+
+/* ---------- Levels ---------- */
+function renderLevels(){
+  var g=$("grid");g.innerHTML="";
+  LEVELS.forEach(function(L){
+    var list=byLevel(L),n=list.length,k=knownCount(list);
+    var b=el("button","tile");
+    b.appendChild(el("div","lv",L));
+    b.appendChild(el("div","nm",NAMES[L]));
+    var ct=el("div","ct");ct.appendChild(el("span","",n+"장"));ct.appendChild(el("span","","익힘 "+k+" / "+n));
+    b.appendChild(ct);
+    var m=el("div","meter"),i=el("i");i.style.width=(n?Math.round(k/n*100):0)+"%";m.appendChild(i);b.appendChild(m);
+    b.addEventListener("click",function(){openDeck(list,"Level "+L+" · "+NAMES[L]);});
+    g.appendChild(b);
+  });
+  var due=dueCards(),seen=ALL.filter(function(c){return rec(c);});
+  $("due-s").textContent=due.length?("복습할 때가 된 카드 "+due.length+"장 · 학습한 카드 "+seen.length+" / "+ALL.length):("복습할 카드가 없습니다 · 학습한 카드 "+seen.length+" / "+ALL.length);
+  $("btn-due").disabled=!due.length;
+  var bx=$("boxes");bx.innerHTML="";
+  for(var b0=0;b0<GAP.length;b0++){var n0=ALL.filter(function(c){return rec(c)&&boxOf(c)===b0;}).length;var i0=el("i");var f0=el("b");f0.style.width=(ALL.length?Math.round(n0/ALL.length*100):0)+"%";i0.appendChild(f0);i0.title=BOXLBL[b0]+" 칸: "+n0+"장";bx.appendChild(i0);}
+  var pr=$("preps");pr.innerHTML="";
+  MAJOR.concat(["etc"]).forEach(function(f){
+    var list=byFam(f);if(!list.length)return;
+    var b=el("button","prepbtn");b.style.setProperty("--pc",f==="etc"?ETCCOL:VCOL[f]);
+    b.appendChild(icon(f));b.appendChild(el("span","",f==="etc"?ETC:f));b.appendChild(el("span","n",list.length+"장 · "+knownCount(list)+" 익힘"));
+    b.addEventListener("click",function(){openDeck(list,"동사 "+(f==="etc"?ETC:f));});
+    pr.appendChild(b);
+  });
+}
+
+/* ---------- Study ---------- */
+function shuffleArr(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function openDeck(list,title){
+  S.deck=list;S.title=title;S.tab="cards";S.verbStat={};
+  $("st-title").textContent=title;
+  $("cards-view").hidden=false;$("list-view").hidden=true;$("btn-view").textContent="목록";$("btn-view").setAttribute("aria-pressed","false");
+  $("q").value="";
+  buildQueue();
+  show("v-study");
+}
+function buildQueue(subset){
+  var ids=[];
+  if(subset){ids=subset.slice();}
+  else{for(var i=0;i<S.deck.length;i++){if(S.hide&&isKnown(S.deck[i]))continue;ids.push(i);}}
+  if(S.shuffle)shuffleArr(ids);
+  S.queue=ids;S.pos=0;S.res={};S.flipped=false;S.finished=false;S.quiz=null;
+  renderStudy();
+}
+function updateProg(){
+  var total=S.queue.length,k=0,a=0;
+  for(var id in S.res){if(S.res[id]==="k")k++;else a++;}
+  var cur=S.finished?total:Math.min(S.pos+1,total);
+  $("p-count").textContent=total?(cur+" / "+total):"0 / 0";
+  $("p-stat").textContent="알아요 "+k+" · 다시 "+a;
+  $("p-bar").style.width=(total?Math.round((S.finished?total:S.pos)/total*100):0)+"%";
+}
+function bigLine(c,blank){
+  var w=el("div","bigwrap"),col=el("div","col"),b=el("div","big");
+  if(!blank)w.appendChild(icon(famKey(c)));
+  if(c.lead)b.appendChild(document.createTextNode(c.lead+" "));
+  if(blank){b.appendChild(el("span","blank"," "));}
+  else{var s=el("span","pp",c.verb);s.style.setProperty("--pc",colOf(c));b.appendChild(s);}
+  if(c.prep)b.appendChild(document.createTextNode(" "+c.prep));
+  col.appendChild(b);
+  if(!blank&&c.cas){var ch=el("div","chips");ch.appendChild(el("span","chip "+(c.cas==="Akk."?"akk":"dat"),casLabel(c)));col.appendChild(ch);}
+  w.appendChild(col);
+  return w;
+}
+function backDetails(c,face){
+  var d=c.d;
+  // 비슷한 말, 의문사와 da-형
+  var s=el("div","syn"),any=false;
+  if(d[4]){var q1=el("span");q1.appendChild(document.createTextNode("바꿔 쓰면 "));q1.appendChild(el("b","",d[4]));s.appendChild(q1);any=true;}
+  if(c.prep){
+    var q2=el("span");q2.appendChild(document.createTextNode("의문사 "));q2.appendChild(el("b","",cap(whWord(c.prep))+"? / "+cap(c.prep)+(c.cas==="Akk."?" wen?":" wem?")));s.appendChild(q2);
+    var q3=el("span");q3.appendChild(el("span","arrow","→ "));q3.appendChild(el("b","",daWord(c.prep)));q3.appendChild(document.createTextNode(" (da-형)"));s.appendChild(q3);any=true;
+  }
+  if(any)face.appendChild(s);
+  // 예문
+  var ex=el("div","ex");var de=highlightExample(c);de.style.setProperty("--pc",colOf(c));ex.appendChild(de);ex.appendChild(el("div","kr",d[3]));face.appendChild(ex);
+  // 같은 명사, 다른 동사
+  var rel=related(c);
+  if(rel.length){
+    var r=el("div","rel");r.appendChild(el("span","lbl","같은 명사, 다른 동사"));
+    rel.slice(0,5).forEach(function(o){
+      var line=el("div");var b=el("b");b.appendChild(phraseNode(o,false));line.appendChild(b);
+      line.appendChild(document.createTextNode(" — "+o.d[1]+"  ("+o.L+")"));r.appendChild(line);
+    });
+    face.appendChild(r);
+  }
+  // 암기 요령
+  var tip=TIPS[c.fam];
+  if(tip){var t=el("div","tip");t.appendChild(el("span","lbl","암기 요령"));var body=el("div");body.innerHTML=tip;t.appendChild(body);face.appendChild(t);}
+  if("speechSynthesis" in window){
+    var sb=el("button","say","듣기 (독일어)");
+    sb.addEventListener("click",function(ev){ev.stopPropagation();speak(d[0].split(" + ")[0]+". "+d[2]);});
+    face.appendChild(sb);
+  }
+}
+var BASIC=["haben","machen","nehmen","geben","stellen","setzen","treffen","halten","bringen","kommen","führen","leisten","ziehen","stehen","finden","legen","gehen","fassen","spielen","fahren"];
+function quizOptions(c){
+  var banned={};banned[c.verb]=1;
+  related(c).forEach(function(o){banned[o.verb]=1;banned[o.fam]=1;});
+  (ALT[c.nk]||[]).forEach(function(v){banned[v]=1;});
+  var basic=BASIC.indexOf(c.verb)>-1,pool=[];
+  if(basic){pool=BASIC.filter(function(v){return !banned[v];});}
+  else{var seen={};ALL.forEach(function(o){if(BASIC.indexOf(o.verb)<0&&!banned[o.verb]&&!seen[o.verb]){seen[o.verb]=1;pool.push(o.verb);}});}
+  shuffleArr(pool);
+  var opts=[{verb:c.verb,ok:true}];
+  while(opts.length<4&&pool.length){opts.push({verb:pool.pop(),ok:false});}
+  return shuffleArr(opts);
+}
+function renderStudy(){
+  var st=$("stage");st.innerHTML="";
+  $("t-mode").textContent=MODE_LABEL[S.mode];
+  $("t-shuffle").setAttribute("aria-pressed",S.shuffle);
+  $("t-hide").setAttribute("aria-pressed",S.hide);
+  updateProg();
+  if(!S.queue.length){renderDone(true);return;}
+  if(S.finished){renderDone(false);return;}
+  var c=S.deck[S.queue[S.pos]],d=c.d;
+  var isQuiz=S.mode==="quiz",isFill=S.mode==="fill",noFlip=isQuiz||isFill;
+  var card=el("div","card"+(noFlip?" quiz":""));card.style.setProperty("--pc",colOf(c));
+  if(!noFlip){card.tabIndex=0;card.setAttribute("role","button");card.setAttribute("aria-label","카드 뒤집기");}
+  var tag=el("div","tag");tag.appendChild(el("span","",c.L+" · "+BOXLBL[boxOf(c)]+" 칸"));tag.appendChild(el("span","",noFlip?(S.quiz?"채점":(isFill?"빈칸":"퀴즈")):(S.flipped?"뒷면":"앞면")));card.appendChild(tag);
+  var face=el("div","face");
+  if(isFill){
+    var fs=fillSentence(c,!S.quiz);
+    if(!c.vh.length){ /* 예문에서 동사를 찾지 못한 경우: 표현 앞부분 + 빈칸으로 대체 */
+      fs=el("div","fill");fs.accepted=[c.verb];fs.appendChild(document.createTextNode(c.lead+" "));
+      if(!S.quiz){var ip=el("input");ip.type="text";ip.autocomplete="off";ip.spellcheck=false;ip.placeholder="…";fs.appendChild(ip);}else{fs.appendChild(el("mark","",c.verb));}
+      if(c.prep)fs.appendChild(document.createTextNode(" "+c.prep));
+    }
+    if(!S.quiz){
+      face.appendChild(fs);
+      face.appendChild(el("div","small",d[3]));
+      face.appendChild(el("div","mean sub",c.lead+" ___"+(c.prep?" "+c.prep:"")+" · "+d[1]));
+      var row=el("div","fillrow");var ok=el("button","fillbtn","확인");row.appendChild(ok);row.appendChild(el("span","hint","동사(원형 또는 예문 속 형태)를 입력하고 Enter"));face.appendChild(row);
+      var inp=fs.querySelector("input");
+      var submit=function(){var v=(inp.value||"").trim();if(!v)return;var right=fs.accepted.some(function(a){return norm(a)===norm(v);});answerQuiz(c,{verb:v,ok:right},null);};
+      ok.addEventListener("click",function(ev){ev.stopPropagation();submit();});
+      inp.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();submit();}e.stopPropagation();});
+      setTimeout(function(){try{inp.focus();}catch(e){}},0);
+    }else{
+      face.appendChild(fs);
+      face.appendChild(bigLine(c,false));
+      face.appendChild(el("div","verdict "+(S.quiz.correct?"ok":"no"),S.quiz.correct?"정답입니다":"입력: "+S.quiz.picked.verb+" → 정답은 "+c.verb+" 입니다"));
+      face.appendChild(el("div","mean",d[1]));
+      backDetails(c,face);
+    }
+  }else if(isQuiz){
+    face.appendChild(bigLine(c,true));
+    face.appendChild(el("div","mean sub",d[1]));
+    if(!S.quiz){
+      var opts=quizOptions(c),box=el("div","opts");
+      opts.forEach(function(o){
+        var b=el("button","opt");b.appendChild(el("span","",o.verb));
+        b.addEventListener("click",function(ev){ev.stopPropagation();answerQuiz(c,o,opts);});
+        box.appendChild(b);
+      });
+      face.appendChild(box);
+      face.appendChild(el("div","hint","뜻에 맞는 동사를 고르세요"));
+    }else{
+      var box2=el("div","opts");
+      (S.quiz.opts||[]).forEach(function(o){
+        var b=el("button","opt"+(o.ok?" right":(o===S.quiz.picked?" wrong":"")));b.disabled=true;
+        b.appendChild(el("span","",o.verb));box2.appendChild(b);
+      });
+      face.appendChild(box2);
+      face.appendChild(el("div","verdict "+(S.quiz.correct?"ok":"no"),S.quiz.correct?"정답입니다":"정답은 "+c.verb+" 입니다"));
+      face.appendChild(bigLine(c,false));
+      backDetails(c,face);
+    }
+  }else if(!S.flipped){
+    if(S.mode==="de"){face.appendChild(bigLine(c,false));}
+    else if(S.mode==="ko"){face.appendChild(el("div","big ko",d[1]));}
+    else{face.appendChild(bigLine(c,true));face.appendChild(el("div","mean sub",d[1]));}
+    face.appendChild(el("div","hint",S.mode==="verb"?"알맞은 동사를 떠올린 뒤 뒤집어 확인하세요":"탭하거나 Space를 눌러 뒤집기"));
+  }else{
+    face.appendChild(bigLine(c,false));
+    face.appendChild(el("div",S.mode==="ko"?"small":"mean",d[1]));
+    backDetails(c,face);
+  }
+  card.appendChild(face);
+  if(!noFlip){card.addEventListener("click",flip);card.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();flip();}});}
+  st.appendChild(card);
+  if(S.auto&&((!noFlip&&S.flipped)||(noFlip&&S.quiz)))speak(d[0].split(" + ")[0]+". "+d[2]);
+
+  var ac=el("div","actions");
+  var pv=el("button","act nav","‹");pv.setAttribute("aria-label","이전 카드");pv.addEventListener("click",prev);
+  var ag=el("button","act again","다시 볼래요");ag.addEventListener("click",function(){mark(false);});
+  var kn=el("button","act know","알아요");kn.addEventListener("click",function(){mark(true);});
+  var nx=el("button","act nav","›");nx.setAttribute("aria-label","다음 카드");nx.addEventListener("click",next);
+  if(noFlip&&!S.quiz){ag.disabled=true;kn.disabled=true;}
+  ac.appendChild(pv);ac.appendChild(ag);ac.appendChild(kn);ac.appendChild(nx);
+  st.appendChild(ac);
+  var ks=el("div","keys");ks.innerHTML=isFill?"<kbd>Enter</kbd> 확인 &nbsp; <kbd>←</kbd> <kbd>→</kbd> 이동 &nbsp; <kbd>Space</kbd> 다음":isQuiz?"<kbd>1</kbd>–<kbd>4</kbd> 보기 선택 &nbsp; <kbd>←</kbd> <kbd>→</kbd> 이동 &nbsp; <kbd>Space</kbd> 다음":"<kbd>Space</kbd> 뒤집기 &nbsp; <kbd>←</kbd> <kbd>→</kbd> 이동 &nbsp; <kbd>1</kbd> 다시 &nbsp; <kbd>2</kbd> 알아요";
+  st.appendChild(ks);
+}
+function answerQuiz(c,o,opts){
+  S.quiz={opts:opts,picked:o,correct:!!o.ok};
+  var key=famKey(c);var vs=S.verbStat[key]||(S.verbStat[key]={n:0,ok:0});vs.n++;if(o.ok)vs.ok++;
+  var idx=S.queue[S.pos];S.res[idx]=o.ok?"k":"a";setKnown(c,o.ok);
+  renderStudy();
+}
+function speak(t){
+  try{
+    window.speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(t);u.lang="de-DE";u.rate=.9;
+    var vs=window.speechSynthesis.getVoices();
+    for(var i=0;i<vs.length;i++){if(vs[i].lang&&vs[i].lang.indexOf("de")===0){u.voice=vs[i];break;}}
+    window.speechSynthesis.speak(u);
+  }catch(e){}
+}
+function flip(){if(S.finished||!S.queue.length||S.mode==="quiz"||S.mode==="fill")return;S.flipped=!S.flipped;renderStudy();}
+function prev(){if(S.finished){S.finished=false;S.pos=S.queue.length-1;S.flipped=false;S.quiz=null;renderStudy();return;}if(S.pos>0){S.pos--;S.flipped=false;S.quiz=null;renderStudy();}}
+function next(){if(S.finished||!S.queue.length)return;advance();}
+function advance(){
+  S.flipped=false;S.quiz=null;
+  if(S.pos<S.queue.length-1){S.pos++;}else{S.finished=true;}
+  renderStudy();
+}
+function mark(ok){
+  if(S.finished||!S.queue.length)return;
+  if((S.mode==="quiz"||S.mode==="fill")&&!S.quiz)return;
+  var idx=S.queue[S.pos];
+  S.res[idx]=ok?"k":"a";
+  setKnown(S.deck[idx],ok);
+  advance();
+}
+function renderDone(emptyDeck){
+  var st=$("stage");st.innerHTML="";
+  var box=el("div","done");
+  var k=0,a=0,again=[];
+  if(!emptyDeck){S.queue.forEach(function(id){if(S.res[id]==="k")k++;else{a++;again.push(id);}});}
+  if(emptyDeck){
+    box.appendChild(el("h3","","카드가 없습니다"));
+    box.appendChild(el("p","","이 묶음의 모든 카드를 익혔습니다. 전체를 다시 돌려 보세요."));
+    var bt=el("div","btns");
+    var b1=el("button","main","전체 다시 돌리기");b1.addEventListener("click",function(){S.hide=false;buildQueue();});
+    var b2=el("button","","목록으로");b2.addEventListener("click",toLevels);
+    bt.appendChild(b1);bt.appendChild(b2);box.appendChild(bt);
+  }else{
+    box.appendChild(el("h3","",a===0?"한 바퀴 완료, 모두 익혔어요":"한 바퀴 완료"));
+    var stt=el("div","stats");
+    var d1=el("div");d1.appendChild(el("b","",String(k)));d1.appendChild(el("span","","알아요"));
+    var d2=el("div");d2.appendChild(el("b","",String(a)));d2.appendChild(el("span","","다시 볼 카드"));
+    stt.appendChild(d1);stt.appendChild(d2);box.appendChild(stt);
+    var keys=Object.keys(S.verbStat);
+    if(keys.length){
+      var w=el("div","weak");w.appendChild(el("div","lbl","동사별 퀴즈 정답률"));
+      keys.sort(function(x,y){return (S.verbStat[x].ok/S.verbStat[x].n)-(S.verbStat[y].ok/S.verbStat[y].n);});
+      keys.forEach(function(p){var s=S.verbStat[p];var r=el("div","row");var l=el("span");var pp=el("b","",p==="etc"?ETC:p);pp.style.color=p==="etc"?ETCCOL:VCOL[p];l.appendChild(pp);r.appendChild(l);r.appendChild(el("span","",s.ok+" / "+s.n+"  ("+Math.round(s.ok/s.n*100)+"%)"));w.appendChild(r);});
+      box.appendChild(w);
+    }
+    var bt2=el("div","btns");
+    if(a>0){var r1=el("button","main","다시 볼 카드 "+a+"장 돌리기");r1.addEventListener("click",function(){buildQueue(again);});bt2.appendChild(r1);}
+    var r2=el("button",a>0?"":"main","전체 처음부터 다시");r2.addEventListener("click",function(){S.hide=false;buildQueue();});
+    var r3=el("button","","목록으로");r3.addEventListener("click",toLevels);
+    bt2.appendChild(r2);bt2.appendChild(r3);box.appendChild(bt2);
+  }
+  st.appendChild(box);
+}
+function toLevels(){renderLevels();show("v-levels");}
+
+/* ---------- 요약표 ---------- */
+function ppShare(f){var l=byFam(f);if(!l.length)return 0;return l.filter(function(c){return c.pp;}).length/l.length;}
+function renderSheet(){
+  var total=ALL.length,top=MAJOR.slice(0,6),topN=0;
+  top.forEach(function(f){topN+=FCOUNT[f];});
+  $("sheet-lead").textContent="수록 표현 "+total+"개 중 "+Math.round(topN/total*100)+"%가 "+top.join(", ")+" 여섯 동사로 만들어집니다. 이 동사부터 익히고, 나머지는 동사마다 어떤 명사와 쓰는지 규칙으로 묶어 외우세요.";
+  var ov=$("ov");ov.innerHTML="";
+  var groups=[["전치사구 + 동사","in Kraft treten, zur Sprache bringen",[]],["명사 + 동사","eine Entscheidung treffen, Urlaub machen",[]],["두 형태를 모두 쓰는 동사","Platz nehmen, in Kauf nehmen",[]]];
+  MAJOR.forEach(function(f){var r=ppShare(f);groups[r>=0.7?0:(r<=0.3?1:2)][2].push(f);});
+  groups.forEach(function(g){
+    var b=el("div","ovb");b.appendChild(el("div","h",g[0]+" · "+g[2].length));b.appendChild(el("div","eg",g[1]));
+    var ps=el("div","ps");g[2].forEach(function(f){var s=el("span");s.style.setProperty("--pc",VCOL[f]);s.appendChild(icon(f));s.appendChild(document.createTextNode(f+" "));s.appendChild(el("i","",String(FCOUNT[f])));ps.appendChild(s);});
+    b.appendChild(ps);ov.appendChild(b);
+  });
+  var box=$("sheet");box.innerHTML="";
+  function sortLv(a,b){return LEVELS.indexOf(a.L)-LEVELS.indexOf(b.L)||a.i-b.i;}
+  function table(list){
+    var tb=el("table");
+    list.slice().sort(sortLv).forEach(function(c){
+      var tr=el("tr");var v=el("td","v");v.appendChild(phraseNode(c,true));tr.appendChild(v);
+      tr.appendChild(el("td","k",c.d[1]));tr.appendChild(el("td","l",c.L));tb.appendChild(tr);
+    });
+    return tb;
+  }
+  MAJOR.forEach(function(f){
+    var list=byFam(f);
+    var sh=el("div","sh");sh.style.setProperty("--pc",VCOL[f]);
+    var hd=el("div","hd");hd.appendChild(icon(f));hd.appendChild(el("div","nm",f));hd.appendChild(el("div","cs",list.length+"개"));
+    sh.appendChild(hd);
+    if(HOOK[f]){var h=el("div","hook");h.innerHTML=HOOK[f];sh.appendChild(h);}
+    var pp=list.filter(function(c){return c.pp;}),nn=list.filter(function(c){return !c.pp;});
+    [["명사 + 동사",nn],["전치사구 + 동사",pp]].forEach(function(g){
+      if(!g[1].length)return;
+      var vg=el("div","vg");
+      if(pp.length&&nn.length)vg.appendChild(el("div","cl",g[0]+" · "+g[1].length));
+      vg.appendChild(table(g[1]));sh.appendChild(vg);
+    });
+    box.appendChild(sh);
+  });
+  var etc=byFam("etc");
+  if(etc.length){
+    var sh2=el("div","sh");sh2.style.setProperty("--pc",ETCCOL);
+    var hd2=el("div","hd");hd2.appendChild(icon("etc"));hd2.appendChild(el("div","nm",ETC));hd2.appendChild(el("div","cs",etc.length+"개"));sh2.appendChild(hd2);
+    var hk=el("div","hook");hk.textContent="표현이 1–2개뿐인 동사를 동사 알파벳순으로 모았습니다.";sh2.appendChild(hk);
+    var vg2=el("div","vg");
+    var tb2=el("table");
+    etc.slice().sort(function(a,b){return a.verb<b.verb?-1:(a.verb>b.verb?1:sortLv(a,b));}).forEach(function(c){
+      var tr=el("tr");var v=el("td","v");v.appendChild(phraseNode(c,true));tr.appendChild(v);
+      tr.appendChild(el("td","k",c.d[1]));tr.appendChild(el("td","l",c.L));tb2.appendChild(tr);
+    });
+    vg2.appendChild(tb2);sh2.appendChild(vg2);box.appendChild(sh2);
+  }
+}
+
+/* ---------- List ---------- */
+function renderList(){
+  var q=$("q").value.trim().toLowerCase(),box=$("list");box.innerHTML="";
+  var n=0,lastFam=null,isFamDeck=S.title.indexOf("동사 ")===0;
+  var items=S.deck.slice();
+  if(!isFamDeck){var ord=MAJOR.concat(["etc"]);items.sort(function(x,y){return ord.indexOf(famKey(x))-ord.indexOf(famKey(y))||x.i-y.i;});}
+  items.forEach(function(c){
+    var d=c.d,hay=(d[0]+" "+d[1]+" "+d[4]+" "+d[2]+" "+d[3]).toLowerCase();
+    if(q&&hay.indexOf(q)<0)return;
+    n++;
+    var fk=famKey(c);
+    if(!isFamDeck&&fk!==lastFam){lastFam=fk;var h=el("div","ghead",fk==="etc"?ETC:fk);h.style.color=fk==="etc"?ETCCOL:VCOL[fk];box.appendChild(h);}
+    var it=el("div","item");it.style.setProperty("--pc",colOf(c));
+    var p=el("div","p");var t=el("span");t.appendChild(phraseNode(c,true));p.appendChild(t);
+    p.appendChild(el("i","",(isFamDeck?c.L+(isKnown(c)?" · 익힘":""):(isKnown(c)?"익힘":""))));it.appendChild(p);
+    it.appendChild(el("div","m",d[1]+(d[4]?"  ·  "+d[4]:"")));
+    it.appendChild(el("div","e",d[2]));
+    it.appendChild(el("div","e2",d[3]));
+    box.appendChild(it);
+  });
+  if(!n)box.appendChild(el("div","empty","검색 결과가 없습니다"));
+}
+
+/* ---------- Events ---------- */
+$("btn-start").addEventListener("click",function(){renderLevels();show("v-levels");});
+$("btn-home").addEventListener("click",function(){show("v-cover");});
+$("btn-back").addEventListener("click",toLevels);
+$("btn-due").addEventListener("click",function(){var d=dueCards();if(d.length)openDeck(d,"오늘 복습");});
+$("btn-sheet").addEventListener("click",function(){renderSheet();show("v-sheet");});
+$("btn-sheet-back").addEventListener("click",toLevels);
+$("btn-print").addEventListener("click",function(){try{window.print();}catch(e){}});
+$("t-auto").addEventListener("click",function(){S.auto=!S.auto;$("t-auto").setAttribute("aria-pressed",S.auto);});
+$("t-mode").addEventListener("click",function(){S.mode=MODES[(MODES.indexOf(S.mode)+1)%MODES.length];S.flipped=false;S.quiz=null;renderStudy();});
+$("t-shuffle").addEventListener("click",function(){S.shuffle=!S.shuffle;buildQueue();});
+$("t-hide").addEventListener("click",function(){S.hide=!S.hide;buildQueue();});
+$("t-restart").addEventListener("click",function(){buildQueue();});
+$("btn-view").addEventListener("click",function(){
+  S.tab=S.tab==="cards"?"list":"cards";
+  var l=S.tab==="list";
+  $("cards-view").hidden=l;$("list-view").hidden=!l;
+  $("btn-view").textContent=l?"카드":"목록";
+  $("btn-view").setAttribute("aria-pressed",l);
+  if(l)renderList();else renderStudy();
+});
+$("q").addEventListener("input",renderList);
+$("btn-reset").addEventListener("click",function(){
+  if(confirm("모든 학습 기록을 초기화할까요?")){known={};save();renderLevels();}
+});
+document.addEventListener("keydown",function(e){
+  if($("v-study").hidden||S.tab!=="cards")return;
+  if(e.target&&e.target.tagName==="INPUT")return;
+  if(S.mode==="fill"){
+    if(e.key===" "&&S.quiz){e.preventDefault();next();}
+    else if(e.key==="ArrowRight"&&S.quiz){next();}
+    else if(e.key==="ArrowLeft"){prev();}
+    return;
+  }
+  if(S.mode==="quiz"){
+    if(e.key===" "){e.preventDefault();if(S.quiz)next();}
+    else if(e.key==="ArrowRight"){next();}
+    else if(e.key==="ArrowLeft"){prev();}
+    else if(/^[1-4]$/.test(e.key)&&!S.quiz){var bs=document.querySelectorAll(".opt");var b=bs[parseInt(e.key,10)-1];if(b)b.click();}
+    return;
+  }
+  if(e.key===" "){e.preventDefault();flip();}
+  else if(e.key==="ArrowRight"){next();}
+  else if(e.key==="ArrowLeft"){prev();}
+  else if(e.key==="1"){mark(false);}
+  else if(e.key==="2"){mark(true);}
+});
+})();
+</script>
+</body>
+</html>

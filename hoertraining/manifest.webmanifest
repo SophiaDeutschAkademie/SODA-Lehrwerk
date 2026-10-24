@@ -1,0 +1,33 @@
+{
+  "id": "./",
+  "name": "Lehrwerk Hörtraining",
+  "short_name": "Hörtraining",
+  "description": "Sophia Deutsch Akademie 독일어 듣기 훈련 A1–C1 (SODA Original 80세트)",
+  "lang": "ko",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F6F4EF",
+  "theme_color": "#F6F4EF",
+  "icons": [
+    {
+      "src": "icons/icon-192.png?v=6741d0ebce",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png?v=48d5b62eb0",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png?v=823493397b",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

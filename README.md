@@ -1,15 +1,47 @@
-# SODA PRÄPOSITIONEN · 독일어 전치사의 모든 것
+# SODA Lehrwerk
 
-Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 전치사 학습 웹앱입니다.
+Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 여섯 가지 학습 자료를 골라 열 수 있어요.
 
-- 전치사 목록: 전치사 80개의 핵심 그림, 뜻이 이어지는 방식, 풀어서 정리
-- 전치사 비교: 헷갈리기 쉬운 전치사 50묶음
-- 퀴즈: 214문항
-- 전치사에 관하여: 전치사가 특정 격을 요구하는 이유와 학습 원칙
+## 학습 자료
 
-`index.html` 한 파일로 동작하며 인터넷 연결 없이도 열립니다.
+| 폴더 | 자료 | 내용 |
+|---|---|---|
+| `grammatik/` | Lehrwerk Grammatik | 문법 교재, Lektion 37개 |
+| `lesetraining/` | SODA Lesetraining | 독해 훈련, A1–C1, 텍스트 50개 |
+| `hoertraining/` | Lehrwerk Hörtraining | 듣기 훈련, A1–C1, 80세트 |
+| `praepositionen/` | SODA Präpositionen | 독일어 전치사의 모든 것, 전치사 80개, 비교, 퀴즈 |
+| `verben-mit-praepositionen/` | Verben mit Präpositionen | 동사와 전치사 결합 플래시카드, A1–C2, 324장 |
+| `nomen-verb-verbindungen/` | Nomen-Verb-Verbindungen | 명사와 동사 연어 플래시카드, A1–C2, 317장 |
+
+루트의 `index.html`이 표지와 목차입니다. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
 
 ## 웹 주소로 열기 (GitHub Pages)
 
-Settings → Pages → Build and deployment에서 Source를 `Deploy from a branch`, Branch를 `main` / `/ (root)`로 지정하고 저장합니다.
-몇 분 뒤 https://sophiadeutschakademie.github.io/SODA-PRP/ 에서 열립니다.
+Settings → Pages → Build and deployment에서 Source를 `Deploy from a branch`, Branch를 `main` / `/ (root)`로 지정하고 저장합니다. 몇 분 뒤 아래 주소에서 열립니다.
+
+- 표지와 목차: https://sophiadeutschakademie.github.io/SODA-PRP/
+- 각 자료: 위 주소 뒤에 폴더 이름을 붙입니다. 예) https://sophiadeutschakademie.github.io/SODA-PRP/hoertraining/
+
+`.nojekyll` 파일은 숨김 파일이라 폴더에서 안 보일 수 있어요. 지우지 마세요.
+
+## 구조
+
+```
+index.html        표지와 목차
+assets/           표지와 목차에 쓰는 로고, 글꼴
+grammatik/        SODA-Lehrwerk-Grammatik 저장소의 내용
+lesetraining/     SODA-Lehrwerk-Lesetraining 저장소의 내용
+hoertraining/     SODA-Lehrwerk-Hoertraining 저장소의 내용
+praepositionen/   이 저장소(SODA-PRP)에 있던 전치사 앱
+verben-mit-praepositionen/   SODA-VP 저장소의 내용
+nomen-verb-verbindungen/     SODA-NVV 저장소의 내용
+```
+
+각 폴더는 통합 전 저장소와 파일 내용이 같고, 자료끼리 서로 참조하지 않습니다. 파일 경로가 모두 상대 경로라서 폴더 안에서 그대로 동작해요. 통합 전 저장소는 그대로 남아 있습니다.
+
+## 고치거나 추가하기
+
+- 자료의 내용은 해당 폴더 안의 파일을 고칩니다.
+- `lesetraining/`의 텍스트 원본과 데이터 파일을 다시 만드는 방법은 `lesetraining/README.md`에 있어요.
+- `hoertraining/`과 `grammatik/`은 오프라인 캐시(서비스워커)를 씁니다. 이 두 폴더의 내용을 고친 뒤에는 같은 폴더의 `sw.js`도 함께 갱신해야 학생 기기에 새 내용이 나와요. 갱신하지 않으면 이전 내용이 계속 보일 수 있습니다.
+- 목차에 자료를 추가하려면 루트 `index.html`의 `<ol class="list">` 안에 `<li>` 항목을 같은 형식으로 추가합니다.

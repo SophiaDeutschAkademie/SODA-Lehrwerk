@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Verben mit Präpositionen | Sophia Deutsch Akademie</title>
+<style>
+:root{
+  --ink:#1c2430; --ink2:#5b6470; --ink3:#98a0aa;
+  --paper:#fafaf8; --card:#ffffff; --line:#e6e4de; --soft:#f1efe9;
+  --red:#b8322a; --gold:#b8923a; --gray:#8b8f94;
+  --akk:#b8322a; --dat:#2d5fa8;
+  --ok:#2e7d4f; --no:#b8322a;
+  --radius:18px;
+  --font:"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic","Segoe UI",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--ink:#eceae4;--ink2:#a9b0ba;--ink3:#6f7782;--paper:#14181e;--card:#1b2028;--line:#2a313b;--soft:#222831;--akk:#e26a60;--dat:#6f9be0;--ok:#5cbf85;--no:#e26a60;}
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+[hidden]{display:none!important}
+.view{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+
+/* ===== Cover ===== */
+.cover{padding:max(28px,env(safe-area-inset-top)) 28px max(28px,env(safe-area-inset-bottom));justify-content:space-between;position:relative}
+.cover-top{display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink3)}
+.cover-main{flex:1;display:flex;flex-direction:column;justify-content:center;max-width:860px;width:100%;margin:0 auto}
+.logo{width:78px;height:auto;margin-bottom:44px}
+.cover h1{font-weight:300;font-size:clamp(34px,8.4vw,84px);line-height:1.06;letter-spacing:-.025em}
+.cover h1 b{font-weight:600}
+.rule{width:56px;height:2px;background:var(--ink);margin:36px 0 22px}
+.cover .sub{font-size:clamp(14px,2.4vw,17px);color:var(--ink2);max-width:34em}
+.start{margin-top:44px;align-self:flex-start;display:inline-flex;align-items:center;gap:14px;padding:16px 30px;border-radius:999px;background:var(--ink);color:var(--paper);font-size:15px;font-weight:500;letter-spacing:.02em;transition:transform .15s,opacity .15s}
+.start:hover{opacity:.88}.start:active{transform:scale(.98)}
+.start span{font-size:18px;line-height:1}
+.cover-bottom{max-width:860px;width:100%;margin:0 auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;letter-spacing:.12em;color:var(--ink3);text-transform:uppercase}
+
+/* ===== Header ===== */
+.bar{display:flex;align-items:center;gap:12px;padding:max(14px,env(safe-area-inset-top)) 20px 14px;max-width:960px;width:100%;margin:0 auto}
+.bar .mini{height:30px;width:auto}
+.bar .ttl{font-size:14px;font-weight:600;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .sp{flex:1}
+.ghost{padding:8px 14px;border-radius:999px;border:1px solid var(--line);font-size:13px;color:var(--ink2);background:var(--card);transition:background .15s;white-space:nowrap}
+.ghost:hover{background:var(--soft)}
+.ghost[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* ===== Levels ===== */
+.wrap{max-width:960px;width:100%;margin:0 auto;padding:0 20px 40px;flex:1}
+.lead h2{font-size:clamp(24px,5vw,34px);font-weight:600;letter-spacing:-.02em;margin-top:10px}
+.lead p{color:var(--ink2);font-size:14px;margin-top:8px;max-width:38em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:28px}
+.tile{text-align:left;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 20px;display:flex;flex-direction:column;gap:6px;transition:transform .15s,border-color .15s,box-shadow .15s;position:relative;overflow:hidden}
+.tile:hover{transform:translateY(-2px);border-color:var(--ink3);box-shadow:0 8px 24px rgba(20,30,40,.06)}
+.tile .lv{font-size:40px;font-weight:300;letter-spacing:-.03em;line-height:1}
+.tile .nm{font-size:13px;color:var(--ink2)}
+.tile .ct{margin-top:14px;font-size:12px;color:var(--ink3);display:flex;justify-content:space-between}
+.meter{height:3px;border-radius:3px;background:var(--soft);margin-top:8px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--ink);width:0;transition:width .3s}
+h3.sec{font-size:15px;font-weight:600;margin:40px 0 6px;letter-spacing:-.01em}
+p.secp{font-size:13px;color:var(--ink2);margin-bottom:14px;max-width:40em}
+.preps{display:flex;flex-wrap:wrap;gap:8px}
+.prepbtn{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-size:14px;font-weight:600;transition:transform .12s,box-shadow .15s}
+.prepbtn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(20,30,40,.06)}
+.prepbtn .picon{width:22px;height:22px}
+.prepbtn .n{font-size:11.5px;color:var(--ink3);font-weight:400}
+.note{margin-top:30px;font-size:12.5px;color:var(--ink3);line-height:1.7;max-width:46em}
+.linkbtn{margin-top:14px;font-size:12.5px;color:var(--ink3);text-decoration:underline;text-underline-offset:3px}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:14px;font-size:12.5px;color:var(--ink2)}
+.legend span b{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+
+/* ===== Study ===== */
+.tools{display:flex;flex-wrap:wrap;gap:8px;max-width:960px;width:100%;margin:0 auto;padding:0 20px 6px}
+.prog{max-width:960px;width:100%;margin:0 auto;padding:6px 20px 0}
+.prog .row{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink2);margin-bottom:8px}
+.stage{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:14px 20px 8px;max-width:960px;width:100%;margin:0 auto}
+.card{width:100%;max-width:640px;min-height:min(56vh,420px);background:var(--card);border:1px solid var(--line);border-radius:26px;padding:34px 30px 28px;display:flex;flex-direction:column;cursor:pointer;position:relative;box-shadow:0 10px 36px rgba(20,30,40,.06);user-select:none;transition:box-shadow .2s;border-top:4px solid var(--pc,var(--line))}
+.card.quiz{cursor:default}
+.card:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.card .tag{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;letter-spacing:.18em;color:var(--ink3);text-transform:uppercase}
+.face{flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px;animation:fade .22s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.bigwrap{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.big{font-size:clamp(26px,6.6vw,40px);font-weight:600;letter-spacing:-.02em;line-height:1.2;word-break:keep-all;overflow-wrap:break-word}
+.big.ko{font-weight:500}
+.pp{border-bottom:3px solid var(--pc,var(--red));padding-bottom:1px;color:var(--pc,inherit)}
+.blank{display:inline-block;min-width:2.2em;border-bottom:3px solid var(--ink);margin:0 .1em}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:12.5px;letter-spacing:.04em;padding:4px 11px;border-radius:999px;border:1px solid var(--line);color:var(--ink2);background:var(--paper)}
+.chip.akk{color:var(--akk);border-color:color-mix(in srgb,var(--akk) 45%,var(--line));font-weight:600}
+.chip.dat{color:var(--dat);border-color:color-mix(in srgb,var(--dat) 45%,var(--line));font-weight:600}
+.hint{font-size:12.5px;color:var(--ink3);margin-top:6px}
+.small{font-size:14px;color:var(--ink3);letter-spacing:.01em}
+.mean{font-size:clamp(20px,4.6vw,26px);font-weight:600;line-height:1.35;word-break:keep-all}
+.mean.sub{font-size:clamp(17px,4vw,21px);font-weight:500;color:var(--ink2)}
+.syn{font-size:13.5px;color:var(--ink2);display:flex;flex-wrap:wrap;gap:4px 14px}
+.syn b{font-weight:600;color:var(--ink)}
+.syn .arrow{color:var(--ink3)}
+.ex{border-top:1px solid var(--line);padding-top:16px;display:flex;flex-direction:column;gap:6px}
+.ex .de{font-size:16.5px;line-height:1.55}
+.ex .de mark{background:color-mix(in srgb,var(--pc,#888) 18%,transparent);color:inherit;border-radius:4px;padding:0 3px;font-weight:600}
+.ex .kr{font-size:14px;color:var(--ink2);word-break:keep-all}
+.tip{background:var(--soft);border-radius:12px;padding:11px 14px;font-size:13px;line-height:1.6;color:var(--ink2)}
+.tip b{color:var(--ink);font-weight:600}
+.tip .lbl{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:3px}
+.rel{font-size:13px;color:var(--ink2);line-height:1.7}
+.rel .lbl{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:2px}
+.rel b{font-weight:600;color:var(--ink)}
+.say{align-self:flex-start;font-size:12.5px;color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:5px 12px;background:var(--paper)}
+.say:hover{background:var(--soft)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.opt{padding:14px 12px;border-radius:14px;border:1px solid var(--line);background:var(--paper);font-size:16px;font-weight:600;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:8px;transition:transform .12s,background .15s,border-color .15s}
+.opt:hover{background:var(--soft)}
+.opt:active{transform:scale(.98)}
+.opt small{font-size:12px;font-weight:600}
+.opt small.akk{color:var(--akk)}.opt small.dat{color:var(--dat)}
+.opt.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,var(--card))}
+.opt.wrong{border-color:var(--no);background:color-mix(in srgb,var(--no) 12%,var(--card))}
+.opt:disabled{cursor:default}
+.verdict{font-size:14px;font-weight:600}
+.verdict.ok{color:var(--ok)}.verdict.no{color:var(--no)}
+.actions{display:grid;grid-template-columns:auto 1fr 1fr auto;gap:10px;width:100%;max-width:640px;margin-top:18px}
+.act{padding:15px 10px;border-radius:16px;border:1px solid var(--line);background:var(--card);font-size:15px;font-weight:500;transition:transform .12s,background .15s}
+.act:active{transform:scale(.97)}
+.act.nav{width:54px;color:var(--ink2);font-size:18px}
+.act.again{color:var(--red);border-color:color-mix(in srgb,var(--red) 35%,var(--line))}
+.act.again:hover{background:color-mix(in srgb,var(--red) 8%,var(--card))}
+.act.know{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.act.know:hover{opacity:.9}
+.act:disabled{opacity:.4;cursor:default}
+.keys{margin:14px 0 18px;font-size:11.5px;color:var(--ink3);text-align:center}
+.keys kbd{font-family:inherit;border:1px solid var(--line);border-radius:5px;padding:1px 6px;background:var(--card)}
+
+.done{width:100%;max-width:640px;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:40px 30px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.done h3{font-size:26px;font-weight:600;letter-spacing:-.02em}
+.done p{color:var(--ink2);font-size:14.5px}
+.stats{display:flex;gap:28px;margin:10px 0 6px}
+.stats div{display:flex;flex-direction:column;gap:2px}
+.stats b{font-size:34px;font-weight:300;letter-spacing:-.02em}
+.stats span{font-size:12px;color:var(--ink3)}
+.done .btns{display:flex;flex-direction:column;gap:10px;width:100%;max-width:320px;margin-top:14px}
+.done .btns button{padding:14px;border-radius:14px;border:1px solid var(--line);font-size:14.5px;font-weight:500;background:var(--card)}
+.done .btns button.main{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.weak{width:100%;max-width:420px;text-align:left;margin-top:6px;font-size:13px;color:var(--ink2)}
+.weak .lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.weak .row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--line)}
+.weak .row:last-child{border-bottom:0}
+
+.picon{width:34px;height:34px;flex:none;color:var(--pc,var(--ink3))}
+.picon svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.bigwrap{flex-direction:row;align-items:center;flex-wrap:wrap;gap:14px}
+.bigwrap .col{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.fill{font-size:clamp(17px,4vw,21px);line-height:1.7}
+.fill input{font:inherit;font-weight:700;width:5.5em;padding:2px 8px;border:0;border-bottom:3px solid var(--ink);background:transparent;color:var(--ink);text-align:center;outline:none}
+.fill input:focus{border-color:var(--pc,var(--ink))}
+.fill mark{background:color-mix(in srgb,var(--pc,#888) 18%,transparent);color:inherit;border-radius:4px;padding:0 3px;font-weight:600}
+.fillrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.fillbtn{padding:9px 16px;border-radius:999px;background:var(--ink);color:var(--paper);font-size:13.5px;font-weight:500}
+.due{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;flex-wrap:wrap}
+.due .t{font-size:15px;font-weight:600}
+.due .s{font-size:12.5px;color:var(--ink2);margin-top:2px}
+.due button{padding:11px 18px;border-radius:999px;background:var(--ink);color:var(--paper);font-size:14px;font-weight:500}
+.due button:disabled{opacity:.4;cursor:default}
+.boxes{display:flex;gap:4px;margin-top:10px}
+.boxes i{display:block;height:6px;flex:1;border-radius:3px;background:var(--soft);position:relative;overflow:hidden}
+.boxes i b{position:absolute;left:0;top:0;bottom:0;background:var(--ink);opacity:.75}
+.boxlbl{display:flex;justify-content:space-between;font-size:11px;color:var(--ink3);margin-top:4px}
+/* sheet */
+.ov{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:22px}
+.ovb{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.ovb .h{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:10px}
+.ovb.akk .h{color:var(--akk)}.ovb.dat .h{color:var(--dat)}.ovb.both .h{color:var(--ink2)}
+.ovb .ps{display:flex;flex-wrap:wrap;gap:6px}
+.ovb .ps span{display:inline-flex;align-items:center;gap:5px;font-size:13.5px;font-weight:600;padding:4px 10px 4px 6px;border-radius:999px;background:var(--soft);color:var(--pc)}
+.ovb .ps .picon{width:22px;height:22px}
+.sheet{column-count:2;column-gap:16px;margin-top:28px}
+.sheet .sh{break-inside:avoid;margin-bottom:16px}
+.sh{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.sh .hd{display:flex;align-items:center;gap:12px;padding:14px 18px;background:var(--pc);color:#fff}
+.sh .hd .picon{color:#fff;width:30px;height:30px}
+.sh .hd .nm{font-size:24px;font-weight:700;letter-spacing:-.01em;flex:1}
+.sh .hd .cs{font-size:11.5px;font-weight:600;letter-spacing:.06em;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.22)}
+.sh .hook{font-size:13px;color:var(--ink2);line-height:1.65;padding:12px 18px 0}
+.sh .hook b{color:var(--ink)}
+.sh .vg{padding:12px 18px 4px}
+.sh .vg:last-child{padding-bottom:16px}
+.sh .cl{display:flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:6px}
+.sh .cl.akk{color:var(--akk)}.sh .cl.dat{color:var(--dat)}
+.sh .cl::after{content:"";flex:1;height:1px;background:var(--line)}
+.sh table{width:100%;border-collapse:collapse;font-size:13.5px}
+.sh td{padding:5px 0;border-bottom:1px solid var(--soft);vertical-align:top}
+.sh tr:last-child td{border-bottom:0}
+.sh td.v{font-weight:600;white-space:nowrap;padding-right:12px}
+.sh td.v .pp{border-bottom-width:2px}
+.sh td.k{color:var(--ink2);word-break:keep-all}
+.sh td.l{color:var(--ink3);font-size:11px;text-align:right;white-space:nowrap;padding-left:10px}
+@media (max-width:860px){.sheet{column-count:1}.sh td.v{white-space:normal}}
+@media print{.bar,.tools,.legend,.note,.linkbtn,.due,.start{display:none!important}.sheet{column-count:2;column-gap:10px}.sh{break-inside:avoid;border:1px solid #bbb}.sh .hd{-webkit-print-color-adjust:exact;print-color-adjust:exact}.ovb{break-inside:avoid}body{background:#fff;color:#000}}
+
+/* ===== List ===== */
+.search{width:100%;padding:13px 16px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:14.5px;margin:6px 0 14px}
+.search:focus{outline:2px solid var(--ink);outline-offset:1px}
+.list{display:flex;flex-direction:column;gap:10px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;flex-direction:column;gap:5px;border-left:4px solid var(--pc,var(--line))}
+.item .p{font-size:17px;font-weight:600;letter-spacing:-.01em;display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.item .p .pp{border-bottom-width:2px}
+.item .p i{font-style:normal;font-size:11px;color:var(--ink3);font-weight:400;white-space:nowrap}
+.item .m{font-size:14.5px}
+.item .e{font-size:13.5px;color:var(--ink2);margin-top:4px}
+.item .e2{font-size:13px;color:var(--ink3)}
+.empty{text-align:center;color:var(--ink3);padding:40px 0;font-size:14px}
+.ghead{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin:18px 0 4px}
+
+@media (max-width:520px){
+  .cover{padding-left:22px;padding-right:22px}
+  .card{padding:26px 22px 22px;border-radius:22px}
+  .actions{grid-template-columns:48px 1fr 1fr 48px;gap:8px}
+  .act.nav{width:auto}
+  .keys{display:none}
+  .bar .ttl{font-size:13px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<section class="view cover" id="v-cover">
+  <div class="cover-top"><span>Sophia Deutsch Akademie</span><span>A1 — C2</span></div>
+  <div class="cover-main">
+    <svg class="logo" viewBox="0 0 1157 1332" role="img" aria-label="Sophia Deutsch Akademie Logo"><polygon points="0,348 686,0 686,679 0,1027" fill="#58595b"/><polygon points="234,501 921,152 921,831 234,1180" fill="#ed1c24"/><polygon points="470,654 1157,305 1157,984 470,1332" fill="#f1c80f"/></svg>
+    <h1><b>Verben mit</b><br>Präpositionen</h1>
+    <div class="rule"></div>
+    <p class="sub">동사와 전치사의 고정 결합을 레벨별 빈도순으로 익히는 플래시카드</p>
+    <button class="start" id="btn-start">시작하기 <span>→</span></button>
+  </div>
+  <div class="cover-bottom"><span>Sophia Deutsch Akademie</span><span>소피아 독일어학원</span></div>
+</section>
+
+<!-- LEVELS -->
+<section class="view" id="v-levels" hidden>
+  <div class="bar">
+    <svg class="mini" viewBox="0 0 1157 1332" aria-hidden="true"><polygon points="0,348 686,0 686,679 0,1027" fill="#58595b"/><polygon points="234,501 921,152 921,831 234,1180" fill="#ed1c24"/><polygon points="470,654 1157,305 1157,984 470,1332" fill="#f1c80f"/></svg>
+    <span class="ttl">Verben mit Präpositionen</span>
+    <span class="sp"></span>
+    <button class="ghost" id="btn-home">표지</button>
+  </div>
+  <div class="wrap">
+    <div class="lead">
+      <h2>레벨을 선택하세요</h2>
+      <p>카드를 넘기며 뜻과 예문을 확인하고, 아는 카드와 다시 볼 카드를 나눕니다. 한 바퀴가 끝나면 다시 볼 카드만 다시 돌릴 수 있습니다.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+
+    <div class="due" id="due">
+      <div><div class="t">오늘 복습</div><div class="s" id="due-s"></div>
+        <div class="boxes" id="boxes"></div><div class="boxlbl"><span>처음</span><span>1일</span><span>3일</span><span>1주</span><span>2주</span><span>한 달</span></div>
+      </div>
+      <button id="btn-due">오늘 복습 시작</button>
+    </div>
+
+    <h3 class="sec">전치사별로 모아 보기</h3>
+    <p class="secp">같은 전치사를 쓰는 동사를 전 레벨에서 한꺼번에 봅니다. 전치사마다 색이 정해져 있어 카드 색만 봐도 어떤 전치사인지 떠올릴 수 있습니다.</p>
+    <div class="preps" id="preps"></div>
+    <div class="legend"><span><b style="background:var(--akk)"></b>+ Akk. 4격</span><span><b style="background:var(--dat)"></b>+ Dat. 3격</span></div>
+    <div class="preps" style="margin-top:14px"><button class="ghost" id="btn-sheet">전치사 요약표 보기 (인쇄용)</button></div>
+
+    <p class="note">학습 모드는 다섯 가지입니다. ① 독일어 → 한국어 ② 한국어 → 독일어 ③ 전치사 맞히기(빈칸을 떠올린 뒤 뒤집기) ④ 전치사 퀴즈(보기 4개 중 전치사와 격 고르기) ⑤ 예문 빈칸(예문의 빈칸에 전치사를 직접 입력). "알아요"를 누를수록 복습 간격이 1일 → 3일 → 1주 → 2주 → 한 달로 늘어나고, "다시 볼래요"를 누르면 처음 칸으로 돌아갑니다. 때가 된 카드는 "오늘 복습"에 모입니다. 카드 뒷면에는 전치사별 암기 요령, 같은 동사의 다른 전치사 짝, 의문사와 da-형(worauf → darauf)이 함께 나옵니다.</p>
+    <button class="linkbtn" id="btn-reset">학습 기록 초기화</button>
+  </div>
+</section>
+
+<!-- SHEET -->
+<section class="view" id="v-sheet" hidden>
+  <div class="bar">
+    <button class="ghost" id="btn-sheet-back">← 목록</button>
+    <span class="ttl">전치사 요약표</span>
+    <span class="sp"></span>
+    <button class="ghost" id="btn-print">인쇄</button>
+  </div>
+  <div class="wrap">
+    <div class="lead"><h2>전치사 요약표</h2><p>격이 정해진 전치사부터 외우고, 동사에 따라 격이 갈리는 여섯 개만 따로 익히면 됩니다. 전치사마다 그림, 연상 고리, 수록 동사와 뜻을 함께 정리했습니다.</p></div>
+    <div class="ov" id="ov"></div>
+    <div class="sheet" id="sheet"></div>
+  </div>
+</section>
+
+<!-- STUDY -->
+<section class="view" id="v-study" hidden>
+  <div class="bar">
+    <button class="ghost" id="btn-back">← 목록</button>
+    <span class="ttl" id="st-title"></span>
+    <span class="sp"></span>
+    <button class="ghost" id="btn-view" aria-pressed="false">목록</button>
+  </div>
+
+  <div id="cards-view">
+    <div class="tools">
+      <button class="ghost" id="t-mode">독일어 → 한국어</button>
+      <button class="ghost" id="t-shuffle" aria-pressed="false">섞기</button>
+      <button class="ghost" id="t-hide" aria-pressed="false">아는 카드 제외</button>
+      <button class="ghost" id="t-restart">처음부터</button>
+      <button class="ghost" id="t-auto" aria-pressed="false">자동 듣기</button>
+    </div>
+    <div class="prog">
+      <div class="row"><span id="p-count"></span><span id="p-stat"></span></div>
+      <div class="meter"><i id="p-bar"></i></div>
+    </div>
+    <div class="stage" id="stage"></div>
+  </div>
+
+  <div class="wrap" id="list-view" hidden>
+    <input class="search" id="q" type="search" placeholder="검색 (독일어, 한국어, 의문사)" autocomplete="off">
+    <div class="list" id="list"></div>
+  </div>
+</section>
+
+<script>
+const DATA = {
+A1: [
+["warten auf + Akk.","기다리다","Ich warte auf den Bus.","저는 버스를 기다려요.","Worauf? / Auf wen?"],
+["sprechen mit + Dat.","~와 이야기하다","Ich spreche mit meiner Lehrerin.","저는 선생님과 이야기해요.","Mit wem?"],
+["sprechen über + Akk.","~에 대해 이야기하다","Wir sprechen über das Wetter.","우리는 날씨 이야기를 해요.","Worüber? / Über wen?"],
+["fragen nach + Dat.","~을 묻다, ~에 대해 묻다","Er fragt nach dem Weg.","그는 길을 물어봐요.","Wonach? / Nach wem?"],
+["denken an + Akk.","~을 생각하다","Ich denke oft an meine Familie.","저는 가족을 자주 생각해요.","Woran? / An wen?"],
+["fahren mit + Dat.","~을 타고 가다","Ich fahre mit dem Bus zur Arbeit.","저는 버스를 타고 출근해요.","Womit?"],
+["telefonieren mit + Dat.","~와 통화하다","Sie telefoniert mit ihrer Mutter.","그녀는 어머니와 통화해요.","Mit wem?"],
+["bezahlen mit + Dat.","~으로 지불하다","Ich bezahle mit Karte.","저는 카드로 계산해요.","Womit?"],
+["spielen mit + Dat.","~와 놀다, ~을 가지고 놀다","Das Kind spielt mit dem Ball.","아이가 공을 가지고 놀아요.","Womit? / Mit wem?"],
+["arbeiten bei + Dat.","~에서 일하다 (회사)","Er arbeitet bei einer Autofirma.","그는 자동차 회사에서 일해요.","Bei wem?"],
+["wohnen bei + Dat.","~의 집에서 살다","Ich wohne bei meinen Eltern.","저는 부모님 집에서 살아요.","Bei wem?"],
+["kommen aus + Dat.","~ 출신이다","Ich komme aus Korea.","저는 한국에서 왔어요.","Woher?"],
+["gehen zu + Dat.","~에게 가다, ~에 가다","Ich gehe morgen zum Arzt.","저는 내일 병원에 가요.","Wohin? / Zu wem?"],
+["lernen für + Akk.","~을 위해 공부하다","Ich lerne für die Prüfung.","저는 시험공부를 해요.","Wofür?"],
+["schreiben an + Akk.","~에게 (편지·메일을) 쓰다","Ich schreibe eine E-Mail an meinen Chef.","저는 상사에게 이메일을 써요.","An wen?"],
+["schicken an + Akk.","~에게 보내다","Ich schicke das Paket an meine Schwester.","저는 소포를 언니에게 보내요.","An wen?"],
+["spielen gegen + Akk.","~와 (시합에서) 겨루다","Wir spielen heute gegen Berlin.","우리는 오늘 베를린 팀과 경기해요.","Gegen wen?"],
+["sein für + Akk.","~에 찬성하다","Ich bin für den Plan.","저는 그 계획에 찬성해요.","Wofür?"],
+["sein gegen + Akk.","~에 반대하다","Ich bin gegen den Plan.","저는 그 계획에 반대해요.","Wogegen?"],
+["fahren nach + Dat.","~로 (타고) 가다 (지명)","Wir fahren im Sommer nach Berlin.","우리는 여름에 베를린에 가요.","Wohin?"],
+["gehen in + Akk.","~에 가다 (건물·장소)","Gehen wir heute ins Kino?","오늘 영화관에 갈까?","Wohin?"],
+["Zeit haben für + Akk.","~을 위한 시간이 있다","Hast du Zeit für einen Kaffee?","커피 한잔할 시간 있어?","Wofür? / Für wen?"],
+["kaufen für + Akk.","~을 위해 사다","Ich kaufe ein Geschenk für meine Mutter.","저는 어머니께 드릴 선물을 사요.","Wofür? / Für wen?"],
+["bezahlen für + Akk.","~의 값을 치르다","Ich bezahle für das Essen.","밥값은 제가 낼게요.","Wofür?"]
+],
+A2: [
+["sich freuen auf + Akk.","~을 기대하다, ~이 기다려지다","Ich freue mich auf die Ferien.","저는 방학이 기다려져요.","Worauf? / Auf wen?"],
+["sich freuen über + Akk.","~이 기쁘다","Sie freut sich über die gute Note.","그녀는 좋은 점수를 받아서 기뻐해요.","Worüber? / Über wen?"],
+["sich interessieren für + Akk.","~에 관심이 있다","Er interessiert sich für Fußball.","그는 축구에 관심이 있어요.","Wofür? / Für wen?"],
+["sich ärgern über + Akk.","~에 화가 나다, ~이 짜증 나다","Ich ärgere mich über den Lärm.","저는 소음 때문에 짜증이 나요.","Worüber? / Über wen?"],
+["bitten um + Akk.","~을 부탁하다","Ich bitte Sie um Ihre Hilfe.","도움을 부탁드립니다.","Worum?"],
+["danken für + Akk.","~에 대해 감사하다","Ich danke Ihnen für Ihre Hilfe.","도와주셔서 감사합니다.","Wofür?"],
+["sich erinnern an + Akk.","~을 기억하다","Erinnerst du dich an unsere Reise?","우리 여행 기억나?","Woran? / An wen?"],
+["sich vorbereiten auf + Akk.","~을 준비하다","Ich bereite mich auf die Prüfung vor.","저는 시험을 준비하고 있어요.","Worauf?"],
+["aufpassen auf + Akk.","~을 잘 보다, 돌보다","Kannst du auf mein Kind aufpassen?","우리 아이 좀 봐 줄 수 있어?","Worauf? / Auf wen?"],
+["achten auf + Akk.","~에 주의하다","Achte auf die Ampel!","신호등을 잘 봐!","Worauf? / Auf wen?"],
+["anfangen mit + Dat.","~을 시작하다","Wir fangen mit Lektion fünf an.","우리는 5과부터 시작해요.","Womit?"],
+["aufhören mit + Dat.","~을 그만두다","Er hört mit dem Rauchen auf.","그는 담배를 끊어요.","Womit?"],
+["einladen zu + Dat.","~에 초대하다","Ich lade dich zu meinem Geburtstag ein.","내 생일 파티에 너를 초대할게.","Wozu? / Zu wem?"],
+["gehören zu + Dat.","~에 속하다","Er gehört zu unserem Team.","그는 우리 팀에 속해 있어요.","Wozu? / Zu wem?"],
+["helfen bei + Dat.","~하는 것을 돕다","Sie hilft mir bei den Hausaufgaben.","그녀는 제 숙제를 도와줘요.","Wobei?"],
+["erzählen von + Dat.","~에 대해 이야기하다","Er erzählt von seinem Urlaub.","그는 휴가 이야기를 해요.","Wovon? / Von wem?"],
+["träumen von + Dat.","~을 꿈꾸다","Sie träumt von einer Weltreise.","그녀는 세계 일주를 꿈꿔요.","Wovon? / Von wem?"],
+["lachen über + Akk.","~을 보고 웃다","Wir lachen über den Witz.","우리는 그 농담을 듣고 웃어요.","Worüber? / Über wen?"],
+["sich unterhalten über + Akk.","~에 대해 담소를 나누다","Wir unterhalten uns über Musik.","우리는 음악에 대해 이야기를 나눠요.","Worüber? / Über wen?"],
+["Angst haben vor + Dat.","~이 무섭다","Ich habe Angst vor Spinnen.","저는 거미가 무서워요.","Wovor? / Vor wem?"],
+["sich verstehen mit + Dat.","~와 사이가 좋다","Ich verstehe mich gut mit meinen Kollegen.","저는 동료들과 사이가 좋아요.","Mit wem?"],
+["sich treffen mit + Dat.","~와 만나다","Ich treffe mich morgen mit Anna.","저는 내일 안나를 만나요.","Mit wem?"],
+["sich verabreden mit + Dat.","~와 약속을 잡다","Ich verabrede mich mit Freunden.","저는 친구들과 약속을 잡아요.","Mit wem?"],
+["sich anmelden für + Akk.","~에 등록하다","Ich melde mich für den Deutschkurs an.","저는 독일어 강좌에 등록해요.","Wofür?"],
+["hören von + Dat.","~의 소식을 듣다","Ich habe lange nichts von ihm gehört.","그의 소식을 오랫동안 듣지 못했어요.","Wovon? / Von wem?"],
+["antworten auf + Akk.","~에 대답하다","Bitte antworten Sie auf meine Frage.","제 질문에 답해 주세요.","Worauf?"],
+["gratulieren zu + Dat.","~을 축하하다","Ich gratuliere dir zum Geburtstag.","생일 축하해.","Wozu?"],
+["schmecken nach + Dat.","~ 맛이 나다","Die Suppe schmeckt nach Knoblauch.","수프에서 마늘 맛이 나요.","Wonach?"],
+["riechen nach + Dat.","~ 냄새가 나다","Es riecht nach frischem Kaffee.","갓 내린 커피 냄새가 나요.","Wonach?"],
+["passen zu + Dat.","~와 어울리다","Die Schuhe passen zu deinem Kleid.","그 신발은 네 원피스랑 잘 어울려.","Wozu? / Zu wem?"],
+["sich bedanken für + Akk.","~에 대해 감사 인사를 하다","Er bedankt sich für das Geschenk.","그는 선물에 대해 감사 인사를 해요.","Wofür?"],
+["sich entschuldigen für + Akk.","~에 대해 사과하다","Sie entschuldigt sich für die Verspätung.","그녀는 늦은 것을 사과해요.","Wofür?"],
+["sich Sorgen machen um + Akk.","~을 걱정하다","Meine Mutter macht sich Sorgen um mich.","어머니는 저를 걱정하세요.","Worum? / Um wen?"],
+["wissen von + Dat.","~에 대해 알고 있다","Ich weiß nichts von dem Problem.","저는 그 문제에 대해 아무것도 몰라요.","Wovon? / Von wem?"],
+["bleiben bei + Dat.","~을 고수하다, ~에 머무르다","Ich bleibe bei meiner Meinung.","저는 제 의견을 바꾸지 않아요.","Wobei?"],
+["beginnen mit + Dat.","~을 시작하다","Der Kurs beginnt mit einem Test.","강좌는 시험으로 시작해요.","Womit?"],
+["sich aufregen über + Akk.","~에 흥분하다, 화를 내다","Reg dich nicht über jede Kleinigkeit auf!","사소한 일마다 화내지 마!","Worüber? / Über wen?"],
+["sich bedanken bei + Dat.","~에게 감사 인사를 하다","Ich möchte mich bei Ihnen bedanken.","감사 인사를 드리고 싶습니다.","Bei wem?"],
+["sich entschuldigen bei + Dat.","~에게 사과하다","Er entschuldigt sich bei seiner Kollegin.","그는 동료에게 사과해요.","Bei wem?"],
+["reden mit + Dat.","~와 이야기하다","Ich muss mit dir reden.","너랑 얘기 좀 해야겠어.","Mit wem?"],
+["reden über + Akk.","~에 대해 이야기하다","Lass uns über etwas anderes reden.","다른 얘기 하자.","Worüber? / Über wen?"],
+["sich melden bei + Dat.","~에게 연락하다","Melde dich bei mir, wenn du da bist!","도착하면 연락해!","Bei wem?"],
+["abholen von + Dat.","~에서 데려오다, 찾아오다","Ich hole dich vom Bahnhof ab.","내가 역으로 데리러 갈게.","Wovon?"],
+["sprechen von + Dat.","~을 언급하다, ~에 대해 말하다","Sie spricht oft von ihrer Kindheit.","그녀는 어린 시절 이야기를 자주 해요.","Wovon? / Von wem?"],
+["sich anziehen für + Akk.","~에 맞춰 옷을 입다","Ich ziehe mich für die Party an.","저는 파티에 가려고 옷을 입어요.","Wofür?"],
+["hören auf + Akk.","~의 말을 듣다, 따르다","Hör auf deine Eltern!","부모님 말씀 잘 들어!","Worauf? / Auf wen?"],
+["sagen zu + Dat.","~에 대해 말하다, 의견을 말하다","Was sagst du zu meinem Plan?","내 계획 어떻게 생각해?","Wozu?"],
+["sich verletzen an + Dat.","~에 다치다","Ich habe mich an der Hand verletzt.","저는 손을 다쳤어요.","Woran?"],
+["verstehen von + Dat.","~에 대해 잘 알다","Er versteht viel von Autos.","그는 자동차를 잘 알아요.","Wovon?"],
+["anrufen bei + Dat.","~에 전화하다 (기관·가게)","Ich rufe beim Arzt an.","저는 병원에 전화해요.","Bei wem?"],
+["teilen mit + Dat.","~와 나누다, 공유하다","Ich teile das Zimmer mit meinem Bruder.","저는 형과 방을 같이 써요.","Mit wem?"],
+["tauschen gegen + Akk.","~와 바꾸다","Kann ich den Pullover gegen einen anderen tauschen?","이 스웨터를 다른 것으로 바꿀 수 있나요?","Wogegen?"],
+["sich unterhalten mit + Dat.","~와 이야기를 나누다","Ich habe mich lange mit ihr unterhalten.","저는 그녀와 오랫동안 이야기를 나눴어요.","Mit wem?"],
+["sich streiten mit + Dat.","~와 다투다","Er streitet sich oft mit seiner Schwester.","그는 누나와 자주 다퉈요.","Mit wem?"],
+["schreiben über + Akk.","~에 대해 쓰다","Sie schreibt einen Artikel über Korea.","그녀는 한국에 대한 기사를 써요.","Worüber? / Über wen?"]
+],
+B1: [
+["es geht um + Akk.","~에 관한 것이다, ~이 문제다","In dem Film geht es um Freundschaft.","그 영화는 우정에 관한 이야기예요.","Worum?"],
+["sich kümmern um + Akk.","~을 돌보다, 챙기다","Er kümmert sich um die Kinder.","그가 아이들을 돌봐요.","Worum? / Um wen?"],
+["teilnehmen an + Dat.","~에 참가하다","Ich nehme an einem Wettbewerb teil.","저는 대회에 참가해요.","Woran?"],
+["sich beschäftigen mit + Dat.","~을 다루다, ~에 몰두하다","Er beschäftigt sich mit Astronomie.","그는 천문학에 몰두해 있어요.","Womit? / Mit wem?"],
+["abhängen von + Dat.","~에 달려 있다","Das hängt vom Wetter ab.","그건 날씨에 달려 있어요.","Wovon? / Von wem?"],
+["ankommen auf + Akk.","~에 달려 있다, ~이 관건이다","Es kommt auf den Preis an.","가격이 관건이에요.","Worauf? / Auf wen?"],
+["sich handeln um + Akk.","~에 관한 것이다, ~이다","Es handelt sich um einen Irrtum.","이건 착오예요.","Worum?"],
+["sich entscheiden für + Akk.","~으로 결정하다","Ich habe mich für das blaue Auto entschieden.","저는 파란 차로 결정했어요.","Wofür? / Für wen?"],
+["sich bewerben um + Akk.","~에 지원하다","Sie bewirbt sich um eine Stelle als Lehrerin.","그녀는 교사 자리에 지원해요.","Worum?"],
+["nachdenken über + Akk.","~에 대해 곰곰이 생각하다","Ich muss über dein Angebot nachdenken.","네 제안을 좀 생각해 봐야 해.","Worüber? / Über wen?"],
+["denken über + Akk.","~에 대해 (어떻게) 생각하다","Was denkst du über diesen Plan?","이 계획에 대해 어떻게 생각해?","Worüber? / Über wen?"],
+["sich konzentrieren auf + Akk.","~에 집중하다","Konzentrier dich auf deine Arbeit!","네 일에 집중해!","Worauf? / Auf wen?"],
+["sich verlassen auf + Akk.","~을 믿고 의지하다","Auf ihn kann man sich verlassen.","그는 믿고 의지할 수 있는 사람이에요.","Worauf? / Auf wen?"],
+["reagieren auf + Akk.","~에 반응하다","Wie hat er auf die Kritik reagiert?","그는 비판에 어떻게 반응했어요?","Worauf?"],
+["glauben an + Akk.","~을 믿다","Ich glaube an dich.","나는 너를 믿어.","Woran? / An wen?"],
+["halten von + Dat.","~을 (어떻게) 생각하다","Was hältst du von meinem Vorschlag?","내 제안을 어떻게 생각해?","Wovon? / Von wem?"],
+["diskutieren über + Akk.","~에 대해 토론하다","Die Schüler diskutieren über das Thema.","학생들이 그 주제에 대해 토론해요.","Worüber?"],
+["sich beschweren über + Akk.","~에 대해 불평하다","Die Gäste beschweren sich über das Essen.","손님들이 음식에 대해 불평해요.","Worüber? / Über wen?"],
+["sich gewöhnen an + Akk.","~에 익숙해지다","Ich gewöhne mich langsam an das Klima.","저는 이곳 기후에 서서히 익숙해지고 있어요.","Woran? / An wen?"],
+["sich verlieben in + Akk.","~와 사랑에 빠지다","Sie hat sich in ihn verliebt.","그녀는 그와 사랑에 빠졌어요.","In wen?"],
+["sich informieren über + Akk.","~에 대해 알아보다","Ich informiere mich über Studiengänge.","저는 전공 과정을 알아보고 있어요.","Worüber?"],
+["sich erkundigen nach + Dat.","~에 대해 문의하다","Er erkundigt sich nach den Preisen.","그는 가격을 문의해요.","Wonach? / Nach wem?"],
+["sich wundern über + Akk.","~이 의아하다, ~에 놀라다","Ich wundere mich über seine Antwort.","저는 그의 대답이 의아해요.","Worüber? / Über wen?"],
+["sich verabschieden von + Dat.","~와 작별 인사를 하다","Wir verabschieden uns von den Gästen.","우리는 손님들과 작별 인사를 해요.","Von wem?"],
+["hoffen auf + Akk.","~을 바라다","Wir hoffen auf besseres Wetter.","우리는 날씨가 좋아지기를 바라요.","Worauf? / Auf wen?"],
+["rechnen mit + Dat.","~을 예상하다","Wir rechnen mit hundert Gästen.","우리는 손님 100명을 예상해요.","Womit? / Mit wem?"],
+["sich wenden an + Akk.","~에게 문의하다, 도움을 청하다","Bitte wenden Sie sich an den Kundenservice.","고객 서비스 센터로 문의해 주세요.","An wen?"],
+["beitragen zu + Dat.","~에 기여하다, ~에 도움이 되다","Sport trägt zur Gesundheit bei.","운동은 건강에 도움이 돼요.","Wozu?"],
+["sich einigen auf + Akk.","~에 합의하다","Wir haben uns auf einen Termin geeinigt.","우리는 날짜에 합의했어요.","Worauf?"],
+["vergleichen mit + Dat.","~와 비교하다","Man kann das nicht mit früher vergleichen.","그것은 예전과 비교할 수 없어요.","Womit? / Mit wem?"],
+["bestehen aus + Dat.","~로 이루어져 있다","Das Team besteht aus zehn Personen.","그 팀은 열 명으로 구성돼 있어요.","Woraus?"],
+["verzichten auf + Akk.","~을 포기하다, 삼가다","Ich verzichte auf Zucker.","저는 설탕을 안 먹어요.","Worauf?"],
+["sorgen für + Akk.","~을 챙기다, 마련하다","Wer sorgt für die Getränke?","음료는 누가 챙기나요?","Wofür? / Für wen?"],
+["führen zu + Dat.","~로 이어지다","Das führt zu Problemen.","그러면 문제가 생겨요.","Wozu?"],
+["warnen vor + Dat.","~에 대해 경고하다","Der Arzt warnt vor den Risiken.","의사는 위험성을 경고해요.","Wovor? / Vor wem?"],
+["schützen vor + Dat.","~으로부터 보호하다","Die Creme schützt vor der Sonne.","이 크림은 햇빛으로부터 피부를 보호해요.","Wovor? / Vor wem?"],
+["sich schämen für + Akk.","~이 부끄럽다","Ich schäme mich für mein Verhalten.","저는 제 행동이 부끄러워요.","Wofür? / Für wen?"],
+["sich fürchten vor + Dat.","~을 두려워하다","Sie fürchtet sich vor der Dunkelheit.","그녀는 어둠을 무서워해요.","Wovor? / Vor wem?"],
+["leiden unter + Dat.","~로 시달리다","Er leidet unter Kopfschmerzen.","그는 두통에 시달려요.","Worunter? / Unter wem?"],
+["arbeiten an + Dat.","~을 작업하다, ~에 매달리다","Ich arbeite an einem neuen Projekt.","저는 새 프로젝트를 작업하고 있어요.","Woran?"],
+["zusammenarbeiten mit + Dat.","~와 협력하다","Wir arbeiten mit mehreren Schulen zusammen.","우리는 여러 학교와 협력해요.","Mit wem?"],
+["leben von + Dat.","~로 먹고살다","Er lebt von seinem Gehalt.","그는 월급으로 먹고살아요.","Wovon? / Von wem?"],
+["gelten für + Akk.","~에게 적용되다","Die Regel gilt für alle.","그 규칙은 모두에게 적용돼요.","Wofür? / Für wen?"],
+["sich unterscheiden von + Dat.","~와 다르다","Das neue Modell unterscheidet sich vom alten.","새 모델은 옛 모델과 달라요.","Wovon? / Von wem?"],
+["berichten über + Akk.","~에 대해 보도하다, 보고하다","Die Zeitung berichtet über den Unfall.","신문은 그 사고에 대해 보도해요.","Worüber? / Über wen?"],
+["sich streiten über + Akk.","~을 두고 다투다","Sie streiten sich über Geld.","그들은 돈 문제로 다퉈요.","Worüber?"],
+["sich beteiligen an + Dat.","~에 참여하다","Alle beteiligen sich an der Aktion.","모두가 그 행사에 참여해요.","Woran?"],
+["kämpfen für + Akk.","~을 위해 싸우다","Sie kämpft für ihre Rechte.","그녀는 자신의 권리를 위해 싸워요.","Wofür? / Für wen?"],
+["sich erholen von + Dat.","~에서 회복하다","Ich erhole mich von der Grippe.","저는 독감에서 회복하고 있어요.","Wovon?"],
+["überzeugen von + Dat.","~을 납득시키다, 설득하다","Er hat mich von seiner Idee überzeugt.","그는 저에게 자기 아이디어를 납득시켰어요.","Wovon?"],
+["suchen nach + Dat.","~을 찾다","Er sucht nach seinem Schlüssel.","그는 열쇠를 찾고 있어요.","Wonach? / Nach wem?"],
+["sterben an + Dat.","~로 죽다 (병·원인)","Er ist an Krebs gestorben.","그는 암으로 돌아가셨어요.","Woran?"],
+["wählen zwischen + Dat.","~ 사이에서 고르다","Du kannst zwischen zwei Menüs wählen.","두 가지 메뉴 중에서 고를 수 있어.","Zwischen wem? / Wozwischen?"],
+["sich trennen von + Dat.","~와 헤어지다","Sie hat sich von ihrem Freund getrennt.","그녀는 남자친구와 헤어졌어요.","Von wem? / Wovon?"],
+["sich bewerben bei + Dat.","~에 지원하다 (회사·기관)","Ich habe mich bei mehreren Firmen beworben.","저는 여러 회사에 지원했어요.","Bei wem?"],
+["erwarten von + Dat.","~에게 기대하다","Was erwartest du von diesem Job?","이 일에서 뭘 기대해?","Wovon? / Von wem?"],
+["verlangen von + Dat.","~에게 요구하다","Der Chef verlangt zu viel von uns.","상사는 우리에게 너무 많은 것을 요구해요.","Wovon? / Von wem?"],
+["sich entscheiden gegen + Akk.","~하지 않기로 결정하다","Wir haben uns gegen den Umzug entschieden.","우리는 이사하지 않기로 했어요.","Wogegen? / Gegen wen?"],
+["ausgeben für + Akk.","~에 (돈을) 쓰다","Er gibt viel Geld für Kleidung aus.","그는 옷에 돈을 많이 써요.","Wofür?"],
+["sparen für + Akk.","~을 위해 저축하다","Wir sparen für ein eigenes Haus.","우리는 집을 사려고 저축해요.","Wofür?"],
+["stimmen für + Akk.","~에 찬성표를 던지다","Die Mehrheit stimmte für den Vorschlag.","다수가 그 제안에 찬성표를 던졌어요.","Wofür? / Für wen?"],
+["übersetzen in + Akk.","~로 번역하다","Kannst du den Text ins Koreanische übersetzen?","이 글을 한국어로 번역해 줄 수 있어?","Worin?"],
+["zusammenhängen mit + Dat.","~와 관련이 있다","Das hängt mit dem Wetter zusammen.","그건 날씨와 관련이 있어요.","Womit?"],
+["erkennen an + Dat.","~로 알아보다","Ich habe ihn an der Stimme erkannt.","저는 목소리로 그를 알아봤어요.","Woran?"],
+["sich sorgen um + Akk.","~을 걱정하다","Sie sorgt sich um ihre Gesundheit.","그녀는 건강을 걱정해요.","Worum? / Um wen?"],
+["liegen an + Dat.","~ 때문이다, ~에 달려 있다","Das liegt am Wetter.","그건 날씨 때문이에요.","Woran? / An wem?"],
+["zählen auf + Akk.","~을 믿고 기대다","Ich zähle auf dich.","너만 믿을게.","Worauf? / Auf wen?"],
+["überreden zu + Dat.","~하도록 설득하다","Sie hat mich zu der Reise überredet.","그녀가 저를 설득해서 여행을 가게 됐어요.","Wozu?"],
+["zwingen zu + Dat.","~하도록 강요하다","Niemand zwingt dich zu dieser Entscheidung.","아무도 너한테 이 결정을 강요하지 않아.","Wozu?"],
+["nachfragen bei + Dat.","~에 문의하다","Ich frage beim Kundendienst nach.","제가 고객 센터에 문의해 볼게요.","Bei wem?"],
+["sich vertragen mit + Dat.","~와 사이좋게 지내다","Die Kinder vertragen sich gut mit den Nachbarn.","아이들은 이웃들과 사이좋게 지내요.","Mit wem?"],
+["mitmachen bei + Dat.","~에 참여하다","Machst du beim Wettbewerb mit?","대회에 참가할 거야?","Wobei?"],
+["sich halten an + Akk.","~을 지키다 (규칙·약속)","Bitte halten Sie sich an die Regeln.","규칙을 지켜 주세요.","Woran?"],
+["gewinnen gegen + Akk.","~를 이기다","Wir haben gegen die beste Mannschaft gewonnen.","우리는 최강팀을 이겼어요.","Gegen wen?"],
+["verlieren gegen + Akk.","~에게 지다","Sie haben gegen Bayern verloren.","그들은 바이에른에 졌어요.","Gegen wen?"],
+["erfahren von + Dat.","~을 알게 되다, ~의 소식을 듣다","Ich habe erst gestern von dem Unfall erfahren.","저는 어제서야 그 사고 소식을 들었어요.","Wovon? / Von wem?"],
+["sich auskennen mit + Dat.","~을 잘 알다, ~에 밝다","Kennst du dich mit Computern aus?","너 컴퓨터 잘 알아?","Womit?"],
+["staunen über + Akk.","~에 놀라다, 감탄하다","Alle staunten über seine Leistung.","모두가 그의 성과에 감탄했어요.","Worüber? / Über wen?"],
+["sich anfreunden mit + Dat.","~와 친해지다","Ich habe mich schnell mit den Kollegen angefreundet.","저는 동료들과 금세 친해졌어요.","Mit wem?"],
+["sich abmelden von + Dat.","~에서 탈퇴하다, 등록을 취소하다","Ich habe mich vom Newsletter abgemeldet.","저는 뉴스레터 구독을 취소했어요.","Wovon?"],
+["sich verloben mit + Dat.","~와 약혼하다","Sie hat sich mit ihrem Freund verlobt.","그녀는 남자친구와 약혼했어요.","Mit wem?"],
+["sich scheiden lassen von + Dat.","~와 이혼하다","Er lässt sich von seiner Frau scheiden.","그는 아내와 이혼해요.","Von wem?"],
+["sich beraten lassen von + Dat.","~에게 상담을 받다","Lass dich von einem Experten beraten.","전문가에게 상담을 받아 봐.","Von wem?"]
+],
+B2: [
+["sich einsetzen für + Akk.","~을 위해 힘쓰다, 지지하다","Er setzt sich für den Umweltschutz ein.","그는 환경 보호를 위해 힘써요.","Wofür? / Für wen?"],
+["ausgehen von + Dat.","~에서 출발하다, ~라고 가정하다","Wir gehen von fünfzig Teilnehmern aus.","우리는 참가자가 50명이라고 가정해요.","Wovon? / Von wem?"],
+["hinweisen auf + Akk.","~을 가리키다, 짚어 말하다","Ich möchte auf einen Fehler hinweisen.","오류 하나를 짚고 싶습니다.","Worauf? / Auf wen?"],
+["sich beziehen auf + Akk.","~와 관련되다, ~을 가리키다","Meine Frage bezieht sich auf den dritten Absatz.","제 질문은 세 번째 단락에 관한 것이에요.","Worauf? / Auf wen?"],
+["sich auswirken auf + Akk.","~에 영향을 미치다","Stress wirkt sich auf die Gesundheit aus.","스트레스는 건강에 영향을 미쳐요.","Worauf?"],
+["umgehen mit + Dat.","~에 대처하다, ~을 다루다","Wie gehst du mit Stress um?","스트레스에 어떻게 대처해?","Womit? / Mit wem?"],
+["eingehen auf + Akk.","~에 응하다, ~을 다루다","Er ging nicht auf meine Frage ein.","그는 제 질문에 대해 언급하지 않았어요.","Worauf? / Auf wen?"],
+["bestehen auf + Dat.","~을 고집하다, 강하게 요구하다","Sie besteht auf einer Entschuldigung.","그녀는 사과를 요구해요.","Worauf?"],
+["beruhen auf + Dat.","~에 근거하다","Die Studie beruht auf Umfragen.","그 연구는 설문 조사에 근거해요.","Worauf?"],
+["zurechtkommen mit + Dat.","~을 감당하다, ~와 잘 지내다","Ich komme mit der Hitze nicht zurecht.","저는 이 더위를 견디지 못하겠어요.","Womit? / Mit wem?"],
+["profitieren von + Dat.","~로 이익을 얻다","Alle profitieren von der Reform.","모두가 그 개혁으로 이익을 얻어요.","Wovon? / Von wem?"],
+["sich auseinandersetzen mit + Dat.","~을 깊이 있게 다루다, ~와 씨름하다","Ich setze mich intensiv mit diesem Thema auseinander.","저는 이 주제를 깊이 있게 다루고 있어요.","Womit? / Mit wem?"],
+["halten für + Akk.","~로 여기다","Ich halte ihn für ehrlich.","저는 그가 정직하다고 생각해요.","Wofür? / Für wen?"],
+["sich bemühen um + Akk.","~을 얻으려고 애쓰다","Er bemüht sich um eine Stelle im Ausland.","그는 해외 일자리를 얻으려고 애쓰고 있어요.","Worum?"],
+["sich begeistern für + Akk.","~에 열광하다","Sie begeistert sich für klassische Musik.","그녀는 클래식 음악에 푹 빠져 있어요.","Wofür? / Für wen?"],
+["sich entwickeln zu + Dat.","~로 발전하다","Die Stadt hat sich zu einem Zentrum der Technik entwickelt.","그 도시는 기술의 중심지로 발전했어요.","Wozu?"],
+["sich entschließen zu + Dat.","~하기로 결심하다","Ich habe mich zu einem Umzug entschlossen.","저는 이사하기로 결심했어요.","Wozu?"],
+["zweifeln an + Dat.","~을 의심하다","Ich zweifle an seiner Ehrlichkeit.","저는 그의 정직함이 의심스러워요.","Woran? / An wem?"],
+["klagen über + Akk.","~을 호소하다","Er klagt über Rückenschmerzen.","그는 허리 통증을 호소해요.","Worüber? / Über wen?"],
+["verhandeln über + Akk.","~에 대해 협상하다","Die Länder verhandeln über ein Abkommen.","그 나라들은 협정에 대해 협상하고 있어요.","Worüber?"],
+["sich zusammensetzen aus + Dat.","~로 구성되다","Das Gremium setzt sich aus fünf Mitgliedern zusammen.","그 위원회는 다섯 명으로 구성돼요.","Woraus?"],
+["sich richten nach + Dat.","~에 따르다, ~에 맞추다","Ich richte mich nach den Vorschriften.","저는 규정에 따릅니다.","Wonach? / Nach wem?"],
+["ersetzen durch + Akk.","~로 대체하다","Man kann Zucker durch Honig ersetzen.","설탕을 꿀로 대체할 수 있어요.","Wodurch? / Durch wen?"],
+["verbinden mit + Dat.","~와 연결하다, ~와 연관 짓다","Ich verbinde mit diesem Lied schöne Erinnerungen.","저는 이 노래를 들으면 좋은 추억이 떠올라요.","Womit? / Mit wem?"],
+["sich ernähren von + Dat.","~을 먹고 살다","Pandas ernähren sich hauptsächlich von Bambus.","판다는 주로 대나무를 먹고 살아요.","Wovon?"],
+["verantwortlich machen für + Akk.","~의 책임을 묻다","Man macht ihn für den Fehler verantwortlich.","사람들은 그 실수의 책임을 그에게 물어요.","Wofür?"],
+["aufmerksam machen auf + Akk.","~에 주의를 환기시키다","Ich möchte Sie auf die neue Regel aufmerksam machen.","새 규칙에 주의해 주시기 바랍니다.","Worauf? / Auf wen?"],
+["protestieren gegen + Akk.","~에 항의하다","Die Studenten protestieren gegen die Studiengebühren.","학생들이 등록금에 반대하며 시위해요.","Wogegen? / Gegen wen?"],
+["sich wehren gegen + Akk.","~에 맞서다, 저항하다","Sie wehrt sich gegen die Vorwürfe.","그녀는 그 비난에 맞서요.","Wogegen? / Gegen wen?"],
+["sich anpassen an + Akk.","~에 적응하다","Man muss sich an neue Situationen anpassen.","새로운 상황에 적응해야 해요.","Woran? / An wen?"],
+["sich einstellen auf + Akk.","~에 대비하다, 적응하다","Wir müssen uns auf mehr Kunden einstellen.","우리는 더 많은 고객에 대비해야 해요.","Worauf? / Auf wen?"],
+["zählen zu + Dat.","~에 속하다","Er zählt zu den besten Spielern der Liga.","그는 리그 최고의 선수들 중 한 명이에요.","Wozu? / Zu wem?"],
+["leiden an + Dat.","~을 앓다 (질병)","Sie leidet an einer schweren Grippe.","그녀는 독감을 심하게 앓고 있어요.","Woran? / An wem?"],
+["sich beklagen über + Akk.","~에 대해 불만을 말하다","Mehrere Mieter beklagen sich über die hohen Nebenkosten.","여러 세입자가 높은 관리비에 대해 불만을 말해요.","Worüber? / Über wen?"],
+["sich beschränken auf + Akk.","~에 국한하다","Wir beschränken uns auf das Wesentliche.","우리는 핵심에만 집중해요.","Worauf?"],
+["sich sehnen nach + Dat.","~을 그리워하다","Er sehnt sich nach seiner Heimat.","그는 고향을 그리워해요.","Wonach? / Nach wem?"],
+["trauern um + Akk.","~을 애도하다","Sie trauert um ihren Großvater.","그녀는 할아버지를 애도하고 있어요.","Worum? / Um wen?"],
+["es fehlt an + Dat.","~이 부족하다","Es fehlt uns an Zeit.","우리에게는 시간이 부족해요.","Woran?"],
+["sich lustig machen über + Akk.","~을 놀리다","Sie machen sich über ihn lustig.","그들은 그를 놀려요.","Worüber? / Über wen?"],
+["abstimmen über + Akk.","~에 대해 표결하다","Das Parlament stimmt über das Gesetz ab.","의회는 그 법안에 대해 표결해요.","Worüber?"],
+["schimpfen über + Akk.","~에 대해 투덜거리다, 욕하다","Er schimpft über das Wetter.","그는 날씨에 대해 투덜거려요.","Worüber? / Über wen?"],
+["anstoßen auf + Akk.","~을 위해 건배하다","Wir stoßen auf das Brautpaar an.","우리는 신랑 신부를 위해 건배해요.","Worauf? / Auf wen?"],
+["beneiden um + Akk.","~을 부러워하다","Ich beneide dich um deine Ruhe.","네 침착함이 부러워.","Worum?"],
+["sich verwandeln in + Akk.","~로 변하다","Wasser verwandelt sich bei Kälte in Eis.","물은 추워지면 얼음으로 변해요.","Worin? / In wen?"],
+["unterscheiden zwischen + Dat.","~을 구별하다","Man muss zwischen Ursache und Wirkung unterscheiden.","원인과 결과를 구별해야 해요.","Wozwischen?"],
+["sich eignen für + Akk.","~에 적합하다","Dieses Buch eignet sich gut für Anfänger.","이 책은 초보자에게 잘 맞아요.","Wofür? / Für wen?"],
+["sich zurückziehen aus + Dat.","~에서 물러나다","Er hat sich aus der Politik zurückgezogen.","그는 정계에서 물러났어요.","Woraus?"],
+["sich aussprechen für + Akk.","~에 찬성 입장을 밝히다","Der Minister sprach sich für die Reform aus.","장관은 개혁에 찬성 입장을 밝혔어요.","Wofür? / Für wen?"],
+["sich abheben von + Dat.","~보다 돋보이다","Das Produkt hebt sich von der Konkurrenz ab.","그 제품은 경쟁 제품보다 돋보여요.","Wovon? / Von wem?"],
+["sich beschweren bei + Dat.","~에게 항의하다","Ich habe mich beim Vermieter beschwert.","저는 집주인에게 항의했어요.","Bei wem?"],
+["sich engagieren für + Akk.","~을 위해 활동하다, 헌신하다","Sie engagiert sich für Flüchtlinge.","그녀는 난민을 위해 활동해요.","Wofür? / Für wen?"],
+["vertrauen auf + Akk.","~을 믿다, 신뢰하다","Ich vertraue auf meine Erfahrung.","저는 제 경험을 믿어요.","Worauf? / Auf wen?"],
+["sich verständigen auf + Akk.","~에 합의하다","Die Parteien verständigten sich auf einen Kompromiss.","양측은 타협안에 합의했어요.","Worauf?"],
+["sich durchsetzen gegen + Akk.","~을 이기고 관철하다","Sie setzte sich gegen zehn Bewerber durch.","그녀는 지원자 열 명을 제치고 뽑혔어요.","Wogegen? / Gegen wen?"],
+["sich äußern zu + Dat.","~에 대해 입장을 밝히다","Er wollte sich nicht zu dem Vorfall äußern.","그는 그 사건에 대해 입장을 밝히려 하지 않았어요.","Wozu?"],
+["es mangelt an + Dat.","~이 부족하다","Es mangelt an Fachkräften.","전문 인력이 부족해요.","Woran?"],
+["neigen zu + Dat.","~하는 경향이 있다","Er neigt zu Übertreibungen.","그는 과장하는 경향이 있어요.","Wozu?"],
+["stammen aus + Dat.","~ 출신이다, ~에서 유래하다","Das Wort stammt aus dem Lateinischen.","그 단어는 라틴어에서 왔어요.","Woraus?"],
+["sich versöhnen mit + Dat.","~와 화해하다","Er hat sich mit seinem Bruder versöhnt.","그는 형과 화해했어요.","Mit wem?"],
+["bauen auf + Akk.","~을 믿다, ~에 기대를 걸다","Wir bauen auf deine Unterstützung.","우리는 네 지원을 믿고 있어.","Worauf? / Auf wen?"],
+["entscheiden über + Akk.","~을 결정하다","Das Gericht entscheidet über den Fall.","법원이 그 사건을 판단해요.","Worüber? / Über wen?"],
+["sich fernhalten von + Dat.","~을 멀리하다","Halte dich von schlechten Einflüssen fern!","나쁜 영향은 멀리해!","Wovon? / Von wem?"],
+["bewahren vor + Dat.","~로부터 지키다","Der Gurt hat ihn vor Schlimmerem bewahrt.","안전벨트가 그를 더 큰 사고에서 지켜 줬어요.","Wovor? / Vor wem?"],
+["drängen auf + Akk.","~을 강하게 요구하다, 재촉하다","Die Opposition drängt auf Neuwahlen.","야당은 재선거를 강하게 요구해요.","Worauf?"],
+["sich verpflichten zu + Dat.","~하기로 약속하다, 의무를 지다","Die Firma verpflichtet sich zu mehr Klimaschutz.","그 회사는 기후 보호를 강화하기로 약속해요.","Wozu?"],
+["anregen zu + Dat.","~하도록 북돋우다","Das Buch regt zum Nachdenken an.","그 책은 생각할 거리를 줘요.","Wozu?"],
+["sich zurechtfinden in + Dat.","~에서 길을 찾다, 적응하다","Ich finde mich in der neuen Stadt gut zurecht.","저는 새 도시에 잘 적응하고 있어요.","Worin?"],
+["ausreichen für + Akk.","~에 충분하다","Das Geld reicht für die Miete aus.","그 돈이면 집세를 내기에 충분해요.","Wofür? / Für wen?"],
+["verstehen unter + Dat.","~을 ~로 이해하다","Was verstehen Sie unter einem guten Leben?","좋은 삶이란 무엇이라고 생각하세요?","Worunter?"],
+["übereinstimmen mit + Dat.","~와 일치하다","Seine Aussage stimmt nicht mit den Fakten überein.","그의 진술은 사실과 일치하지 않아요.","Womit? / Mit wem?"],
+["dienen zu + Dat.","~에 쓰이다, ~을 위한 것이다","Dieses Gerät dient zur Messung der Temperatur.","이 기기는 온도를 재는 데 쓰여요.","Wozu?"],
+["zugreifen auf + Akk.","~에 접근하다 (자료·시스템)","Sie können jederzeit auf Ihre Daten zugreifen.","언제든지 데이터에 접근할 수 있습니다.","Worauf?"],
+["befreien von + Dat.","~에서 해방시키다","Die Therapie hat ihn von seinen Schmerzen befreit.","그 치료 덕분에 그는 통증에서 벗어났어요.","Wovon? / Von wem?"],
+["sich irren in + Dat.","~을 잘못 알다","Da irrst du dich in der Person.","사람을 잘못 봤어.","Worin? / In wem?"],
+["sich qualifizieren für + Akk.","~의 자격을 얻다, 진출하다","Die Mannschaft hat sich für das Finale qualifiziert.","그 팀은 결승에 진출했어요.","Wofür?"]
+],
+C1: [
+["verfügen über + Akk.","~을 갖추고 있다, 보유하다","Sie verfügt über umfassende Erfahrung.","그녀는 폭넓은 경험을 갖추고 있어요.","Worüber? / Über wen?"],
+["sich befassen mit + Dat.","~을 다루다","Der Artikel befasst sich mit dem Klimawandel.","그 기사는 기후 변화를 다뤄요.","Womit? / Mit wem?"],
+["zurückgreifen auf + Akk.","~을 (다시) 꺼내 쓰다, ~에 기대다","Wir müssen auf alte Daten zurückgreifen.","우리는 오래된 자료를 활용해야 해요.","Worauf? / Auf wen?"],
+["verweisen auf + Akk.","~을 가리키다, ~을 참조하게 하다","Der Autor verweist auf frühere Studien.","저자는 이전 연구들을 언급해요.","Worauf? / Auf wen?"],
+["hindeuten auf + Akk.","~을 시사하다","Alles deutet auf einen Fehler hin.","모든 정황이 오류를 시사해요.","Worauf?"],
+["zurückführen auf + Akk.","~에서 비롯된 것으로 보다","Er führt den Erfolg auf harte Arbeit zurück.","그는 성공이 노력 덕분이라고 봐요.","Worauf? / Auf wen?"],
+["scheitern an + Dat.","~로 실패하다","Das Projekt scheiterte an den Kosten.","그 프로젝트는 비용 문제로 실패했어요.","Woran? / An wem?"],
+["sich stützen auf + Akk.","~에 근거하다, ~에 의지하다","Die Anklage stützt sich auf Zeugenaussagen.","기소는 증언에 근거해요.","Worauf? / Auf wen?"],
+["sich orientieren an + Dat.","~을 기준으로 삼다","Wir orientieren uns an den Bedürfnissen der Kunden.","우리는 고객의 요구를 기준으로 삼아요.","Woran? / An wem?"],
+["verstoßen gegen + Akk.","~을 위반하다","Er hat gegen die Regeln verstoßen.","그는 규칙을 위반했어요.","Wogegen?"],
+["eintreten für + Akk.","~을 옹호하다","Sie tritt für die Rechte der Frauen ein.","그녀는 여성의 권리를 옹호해요.","Wofür? / Für wen?"],
+["plädieren für + Akk.","~을 주장하다, 지지하다","Viele plädieren für ein Tempolimit.","많은 사람이 속도 제한을 주장해요.","Wofür?"],
+["appellieren an + Akk.","~에 호소하다","Die Regierung appelliert an die Vernunft der Bürger.","정부는 시민의 이성에 호소해요.","An wen? / Woran?"],
+["streben nach + Dat.","~을 추구하다","Viele Menschen streben nach Glück.","많은 사람이 행복을 추구해요.","Wonach?"],
+["sich begnügen mit + Dat.","~으로 만족하다","Er begnügt sich mit wenig.","그는 적은 것에도 만족해요.","Womit?"],
+["sich abfinden mit + Dat.","~을 받아들이다, 체념하다","Sie hat sich mit dem Verlust abgefunden.","그녀는 상실을 받아들였어요.","Womit? / Mit wem?"],
+["sich distanzieren von + Dat.","~와 거리를 두다","Die Partei distanziert sich von dieser Aussage.","그 정당은 이 발언과 선을 그어요.","Wovon? / Von wem?"],
+["sich identifizieren mit + Dat.","~와 자신을 동일시하다","Viele identifizieren sich mit dem Helden.","많은 사람이 그 주인공에게 자신을 동일시해요.","Womit? / Mit wem?"],
+["sich berufen auf + Akk.","~을 근거로 들다","Er beruft sich auf das Gesetz.","그는 법을 근거로 들어요.","Worauf? / Auf wen?"],
+["sich belaufen auf + Akk.","~에 이르다, ~에 달하다","Die Kosten belaufen sich auf 5.000 Euro.","비용이 5,000유로에 달해요.","Worauf?"],
+["abzielen auf + Akk.","~을 목표로 하다","Die Maßnahme zielt auf eine Senkung der Kosten ab.","그 조치는 비용 절감을 목표로 해요.","Worauf?"],
+["hinauslaufen auf + Akk.","~로 귀결되다","Das läuft auf einen Kompromiss hinaus.","결국 타협으로 귀결돼요.","Worauf?"],
+["vorgehen gegen + Akk.","~에 대처하다, 단속하다","Die Polizei geht gegen Raser vor.","경찰은 과속 운전자를 단속해요.","Wogegen? / Gegen wen?"],
+["stoßen auf + Akk.","~와 맞닥뜨리다, ~에 부딪히다","Der Plan stieß auf heftigen Widerstand.","그 계획은 거센 반발에 부딪혔어요.","Worauf? / Auf wen?"],
+["verurteilen zu + Dat.","~형을 선고하다","Er wurde zu einer Geldstrafe verurteilt.","그는 벌금형을 선고받았어요.","Wozu?"],
+["bestehen in + Dat.","~에 있다, ~이다","Die Aufgabe besteht in der Analyse der Daten.","그 과제는 자료를 분석하는 데 있어요.","Worin?"],
+["sich ergeben aus + Dat.","~에서 비롯되다, ~에서 나오다","Das ergibt sich aus den Zahlen.","그것은 수치에서 도출돼요.","Woraus?"],
+["resultieren aus + Dat.","~의 결과로 생기다","Die Probleme resultieren aus Planungsfehlern.","그 문제들은 계획 오류에서 비롯돼요.","Woraus?"],
+["zeugen von + Dat.","~을 보여 주다, 증명하다","Seine Arbeit zeugt von großem Können.","그의 작품은 뛰어난 솜씨를 보여 줘요.","Wovon?"],
+["gelangen zu + Dat.","~에 이르다","Die Forscher gelangten zu einer neuen Erkenntnis.","연구자들은 새로운 통찰에 도달했어요.","Wozu?"],
+["sich einlassen auf + Akk.","~에 응하다, ~에 발을 들이다","Ich lasse mich nicht auf solche Spiele ein.","저는 그런 게임에는 응하지 않아요.","Worauf? / Auf wen?"],
+["verzweifeln an + Dat.","~로 절망하다","Er verzweifelte an der Aufgabe.","그는 그 과제 앞에서 절망했어요.","Woran? / An wem?"],
+["grenzen an + Akk.","~와 맞닿아 있다, ~에 가깝다","Das grenzt an ein Wunder.","그것은 기적에 가까워요.","Woran? / An wen?"],
+["sich spezialisieren auf + Akk.","~을 전문으로 하다","Die Kanzlei spezialisiert sich auf Steuerrecht.","그 법률 사무소는 세법을 전문으로 해요.","Worauf?"],
+["mitwirken an + Dat.","~에 참여하다","Sie wirkte an dem Projekt mit.","그녀는 그 프로젝트에 참여했어요.","Woran?"],
+["schließen auf + Akk.","~을 추론하다","Aus den Daten lässt sich auf einen Trend schließen.","자료로 추세를 추론할 수 있어요.","Worauf?"],
+["sich wenden gegen + Akk.","~에 반대하다","Viele wenden sich gegen den Plan.","많은 사람이 그 계획에 반대해요.","Wogegen? / Gegen wen?"],
+["hinwirken auf + Akk.","~을 이루도록 노력하다","Wir wirken auf eine Einigung hin.","우리는 합의를 이끌어내도록 노력해요.","Worauf?"],
+["anknüpfen an + Akk.","~을 이어받다, ~에 연결하다","Der Roman knüpft an alte Traditionen an.","그 소설은 오랜 전통을 이어받아요.","Woran?"],
+["abweichen von + Dat.","~에서 벗어나다","Das Ergebnis weicht von der Prognose ab.","결과가 예측에서 벗어나요.","Wovon?"],
+["sich hüten vor + Dat.","~을 조심하다, 경계하다","Hüten Sie sich vor falschen Versprechen!","거짓 약속을 조심하세요.","Wovor? / Vor wem?"],
+["sich scheuen vor + Dat.","~을 꺼리다","Er scheut sich vor keiner Herausforderung.","그는 어떤 도전도 마다하지 않아요.","Wovor? / Vor wem?"],
+["münden in + Akk.","~로 이어지다, 귀결되다","Der Streit mündete in eine Klage.","그 다툼은 소송으로 이어졌어요.","Worin?"],
+["haften für + Akk.","~에 대해 책임지다 (법적)","Eltern haften für ihre Kinder.","부모는 자녀에 대해 책임을 져요.","Wofür? / Für wen?"],
+["einwirken auf + Akk.","~에 작용하다, 영향을 주다","Die Werbung wirkt stark auf Kinder ein.","광고는 아이들에게 강하게 영향을 줘요.","Worauf? / Auf wen?"],
+["sich erstrecken auf + Akk.","~에 미치다 (범위)","Das Verbot erstreckt sich auf alle Produkte.","그 금지는 모든 제품에 적용돼요.","Worauf? / Auf wen?"],
+["absehen von + Dat.","~을 제외하다, 단념하다","Abgesehen von den Kosten ist der Plan gut.","비용을 제외하면 그 계획은 좋아요.","Wovon? / Von wem?"],
+["herrühren von + Dat.","~에서 비롯되다","Die Schmerzen rühren von einer alten Verletzung her.","그 통증은 예전 부상에서 비롯된 거예요.","Wovon?"],
+["sich bekennen zu + Dat.","~을 공개적으로 지지하다, 인정하다","Die Firma bekennt sich zum Klimaschutz.","그 회사는 기후 보호를 공개적으로 지지해요.","Wozu? / Zu wem?"],
+["sich einmischen in + Akk.","~에 끼어들다, 간섭하다","Misch dich nicht in meine Angelegenheiten ein!","내 일에 간섭하지 마!","Worin?"],
+["zurückkommen auf + Akk.","~을 다시 언급하다","Ich komme später auf diesen Punkt zurück.","이 점은 나중에 다시 말씀드릴게요.","Worauf? / Auf wen?"],
+["sich vertiefen in + Akk.","~에 몰두하다","Er vertiefte sich in das Buch.","그는 그 책에 몰두했어요.","Worin?"],
+["sich abgrenzen von + Dat.","~와 선을 긋다","Die Partei grenzt sich von extremen Positionen ab.","그 정당은 극단적 입장과 선을 그어요.","Wovon? / Von wem?"],
+["sich richten gegen + Akk.","~을 겨냥하다","Die Kritik richtet sich gegen die Regierung.","그 비판은 정부를 겨냥해요.","Wogegen? / Gegen wen?"],
+["zurückschrecken vor + Dat.","~ 앞에서 주저하다","Er schreckt vor nichts zurück.","그는 무슨 일이든 서슴지 않아요.","Wovor? / Vor wem?"],
+["anspielen auf + Akk.","~을 넌지시 말하다","Sie spielt auf den alten Streit an.","그녀는 예전 다툼을 넌지시 꺼내요.","Worauf? / Auf wen?"],
+["aufkommen für + Akk.","~의 비용을 대다","Die Versicherung kommt für den Schaden auf.","보험사가 손해 비용을 대요.","Wofür? / Für wen?"],
+["ableiten aus + Dat.","~에서 도출하다","Aus den Daten lässt sich keine Regel ableiten.","그 자료에서 규칙을 도출할 수는 없어요.","Woraus?"],
+["abraten von + Dat.","~을 말리다","Der Arzt rät mir von der Operation ab.","의사는 저에게 수술을 하지 말라고 해요.","Wovon?"],
+["sich gefasst machen auf + Akk.","~을 각오하다","Mach dich auf eine lange Wartezeit gefasst!","오래 기다릴 각오를 해!","Worauf?"],
+["folgen aus + Dat.","~에서 결론이 나오다","Das folgt aus den Zahlen.","그것은 수치에서 나오는 결론이에요.","Woraus?"],
+["sich täuschen in + Dat.","~을 잘못 판단하다","Ich habe mich in ihm getäuscht.","저는 그를 잘못 봤어요.","Worin? / In wem?"],
+["übergehen zu + Dat.","~로 넘어가다","Wir gehen jetzt zum nächsten Punkt über.","이제 다음 안건으로 넘어가겠습니다.","Wozu?"],
+["greifen zu + Dat.","~에 손을 뻗다, ~에 기대다","In der Not greifen viele zu Krediten.","궁할 때 많은 사람이 대출에 기대요.","Wozu?"]
+],
+C2: [
+["beharren auf + Dat.","~을 고집하다","Er beharrt auf seinem Standpunkt.","그는 자기 입장을 고수해요.","Worauf?"],
+["pochen auf + Akk.","~을 강하게 요구하다","Die Gewerkschaft pocht auf höhere Löhne.","노조는 임금 인상을 강하게 요구해요.","Worauf?"],
+["sich besinnen auf + Akk.","~을 되새기다, 되돌아보다","Man sollte sich auf seine Stärken besinnen.","자신의 강점을 되새겨야 해요.","Worauf?"],
+["teilhaben an + Dat.","~에 참여하다, 몫을 누리다","Alle sollen am Wohlstand teilhaben.","모두가 번영을 함께 누려야 해요.","Woran? / An wem?"],
+["sich verbürgen für + Akk.","~을 보증하다","Ich verbürge mich für seine Ehrlichkeit.","저는 그의 정직함을 보증합니다.","Wofür? / Für wen?"],
+["schwelgen in + Dat.","~에 흠뻑 빠지다","Sie schwelgt in Erinnerungen.","그녀는 추억에 흠뻑 젖어 있어요.","Worin?"],
+["fußen auf + Dat.","~에 기초하다","Die Theorie fußt auf alten Annahmen.","그 이론은 오래된 가정에 기초해요.","Worauf?"],
+["sich gründen auf + Akk.","~에 근거하다","Sein Urteil gründet sich auf Erfahrung.","그의 판단은 경험에 근거해요.","Worauf?"],
+["verharren in + Dat.","~에 머무르다, 그대로 있다","Er verharrte in Schweigen.","그는 침묵을 지켰어요.","Worin?"],
+["sich sträuben gegen + Akk.","~에 거세게 거부감을 보이다","Er sträubt sich gegen jede Veränderung.","그는 어떤 변화에도 거부감을 보여요.","Wogegen?"],
+["sich auflehnen gegen + Akk.","~에 반발하다","Die Jugend lehnt sich gegen die Regeln auf.","젊은이들은 규칙에 반발해요.","Wogegen? / Gegen wen?"],
+["sich erstrecken über + Akk.","~에 걸쳐 있다","Das Gebiet erstreckt sich über mehrere Kilometer.","그 지역은 몇 킬로미터에 걸쳐 있어요.","Worüber?"],
+["sich stoßen an + Dat.","~을 불쾌해하다","Viele stoßen sich an seinem Ton.","많은 사람이 그의 어조를 불쾌해해요.","Woran? / An wem?"],
+["gipfeln in + Dat.","~에서 절정에 이르다","Der Streit gipfelte in einer Schlägerei.","그 다툼은 몸싸움으로 치달았어요.","Worin?"],
+["sich versteifen auf + Akk.","~을 고집하다","Er versteift sich auf seine Idee.","그는 자기 생각만 고집해요.","Worauf?"],
+["sich hinwegsetzen über + Akk.","~을 무시하고 넘어가다","Er setzte sich über alle Bedenken hinweg.","그는 모든 우려를 무시했어요.","Worüber?"],
+["bangen um + Akk.","~을 걱정하다, 마음 졸이다","Viele bangen um ihren Arbeitsplatz.","많은 사람이 일자리를 걱정하며 마음을 졸여요.","Worum? / Um wen?"],
+["ringen um + Akk.","~을 얻으려 씨름하다","Die Politiker ringen um eine Lösung.","정치인들은 해결책을 놓고 씨름하고 있어요.","Worum?"],
+["sich wappnen gegen + Akk.","~에 대비하다","Die Stadt wappnet sich gegen das Hochwasser.","시는 홍수에 대비해요.","Wogegen?"],
+["sich sperren gegen + Akk.","~을 완강히 거부하다","Er sperrt sich gegen jede Neuerung.","그는 모든 새로운 시도를 완강히 거부해요.","Wogegen?"],
+["sich verschanzen hinter + Dat.","~ 뒤에 숨다 (핑계)","Er verschanzt sich hinter Vorschriften.","그는 규정 뒤에 숨어요.","Wohinter? / Hinter wem?"],
+["sich verzetteln in + Dat.","~에 매달리다 (힘을 분산해 길을 잃다)","Sie verzettelt sich in Details.","그녀는 세부 사항에 매달려 큰 그림을 놓쳐요.","Worin?"],
+["sich verrennen in + Akk.","~에 빠져 헤어나지 못하다 (잘못된 생각)","Er hat sich in eine fixe Idee verrannt.","그는 고정관념에 빠져 헤어나지 못해요.","Worin?"]
+]
+};
+
+
+(function(){
+"use strict";
+var LEVELS=["A1","A2","B1","B2","C1","C2"];
+var NAMES={A1:"기초",A2:"초급",B1:"중급",B2:"중상급",C1:"상급",C2:"최상급"};
+var KEY="soda-vmp-leitner-v3";
+var GAP=[0,1,3,7,14,30];
+
+/* 전치사 색 */
+var PCOL={auf:"#c2410c",über:"#7c3aed",an:"#0e7490",in:"#15803d",vor:"#be123c",unter:"#6b7280",
+          für:"#b45309",um:"#a21caf",gegen:"#9f1239",durch:"#4d7c0f",
+          mit:"#1d4ed8",nach:"#0f766e",von:"#4338ca",bei:"#b91c1c",zu:"#047857",aus:"#854d0e",zwischen:"#475569",hinter:"#475569"};
+var PORDER=["auf","über","an","in","vor","unter","für","um","gegen","durch","mit","nach","von","bei","zu","aus","zwischen","hinter"];
+var WO={auf:"worauf",über:"worüber",an:"woran",in:"worin",vor:"wovor",unter:"worunter",für:"wofür",um:"worum",gegen:"wogegen",durch:"wodurch",mit:"womit",nach:"wonach",von:"wovon",bei:"wobei",zu:"wozu",aus:"woraus",zwischen:"wozwischen",hinter:"wohinter"};
+
+/* 전치사+격 암기 요령 */
+var TIPS={
+"auf|Akk.":"<b>auf + 4격</b>은 앞으로 향하는 일에 씁니다. 기대(sich freuen auf), 기다림(warten auf), 집중(sich konzentrieren auf), 반응(reagieren auf). '아직 오지 않은 것을 바라본다'고 기억하세요.",
+"auf|Dat.":"<b>auf + 3격</b>은 이미 깔린 바탕 위에 서 있는 느낌입니다. 근거(beruhen auf), 고집(bestehen auf). auf 결합 중 3격은 이 둘 정도라 따로 외워 두면 됩니다.",
+"über|Akk.":"<b>über</b>는 동사와 결합하면 거의 언제나 <b>4격</b>입니다. 이미 일어난 일에 대한 감정과 말: 기쁨(sich freuen über), 화(sich ärgern über), 이야기(sprechen über), 불평(sich beschweren über).",
+"an|Akk.":"<b>an + 4격</b>은 마음이 향하는 대상입니다. 생각(denken an), 기억(sich erinnern an), 믿음(glauben an), 익숙해짐(sich gewöhnen an), 적응(sich anpassen an).",
+"an|Dat.":"<b>an + 3격</b>은 참여·관심·원인입니다. 참가(teilnehmen an), 관심(Interesse an), 앓다(leiden an), 실패 원인(scheitern an), 의심(zweifeln an). '마음'이면 4격, '참여·원인'이면 3격으로 나눠 기억하세요.",
+"in|Akk.":"<b>in + 4격</b>은 안으로 들어가는 변화입니다. 사랑에 빠짐(sich verlieben in), 변함(sich verwandeln in), 번역(übersetzen in), 몰두(sich vertiefen in).",
+"in|Dat.":"<b>in + 3격</b>은 그 안에 머물러 있음입니다. 핵심이 ~에 있다(bestehen in), 머무름(verharren in), 적응(sich zurechtfinden in).",
+"vor|Dat.":"<b>vor</b>는 동사와 결합하면 거의 언제나 <b>3격</b>입니다. 피하고 싶은 것 앞에 섭니다. 두려움(Angst haben vor), 경고(warnen vor), 보호(schützen vor), 조심(sich hüten vor).",
+"unter|Dat.":"<b>unter + 3격</b>은 짓누르는 것 아래에 있음입니다. 시달림(leiden unter). leiden an(병)과 leiden unter(상황·사람)를 구분하세요.",
+"für|Akk.":"<b>für</b>는 늘 <b>4격</b>입니다. 관심(sich interessieren für), 감사(danken für), 결정(sich entscheiden für), 지지(sich einsetzen für), 적합(sich eignen für).",
+"um|Akk.":"<b>um</b>은 늘 <b>4격</b>입니다. 무엇을 얻거나 지키려고 애쓰는 대상: 부탁(bitten um), 돌봄(sich kümmern um), 걱정(sich Sorgen machen um), 지원(sich bewerben um), 다툼의 대상.",
+"gegen|Akk.":"<b>gegen</b>은 늘 <b>4격</b>입니다. 맞섬: 항의(protestieren gegen), 저항(sich wehren gegen), 시합 상대(spielen gegen), 반대 결정(sich entscheiden gegen).",
+"durch|Akk.":"<b>durch</b>는 늘 <b>4격</b>입니다. 수단·대체(ersetzen durch).",
+"mit|Dat.":"<b>mit</b>은 늘 <b>3격</b>입니다. 함께(sprechen mit), 수단(fahren mit), 시작·끝(anfangen mit, aufhören mit), 다룸(sich beschäftigen mit), 예상(rechnen mit).",
+"nach|Dat.":"<b>nach</b>는 늘 <b>3격</b>입니다. 찾고 묻고 그리워하는 대상: 묻기(fragen nach), 찾기(suchen nach), 그리움(sich sehnen nach), 맛·냄새(schmecken nach), 추구(streben nach).",
+"von|Dat.":"<b>von</b>은 늘 <b>3격</b>입니다. 출처와 거리: 이야기(erzählen von), 꿈(träumen von), 의존(abhängen von), 평가(halten von), 분리(sich trennen von), 회복(sich erholen von).",
+"bei|Dat.":"<b>bei</b>는 늘 <b>3격</b>입니다. 사람·기관 곁에서: 일함(arbeiten bei), 감사·사과·항의의 상대(sich bedanken bei, sich entschuldigen bei, sich beschweren bei), 도움(helfen bei).",
+"zu|Dat.":"<b>zu</b>는 늘 <b>3격</b>입니다. 향하는 목적지: 초대·축하(einladen zu, gratulieren zu), 소속(gehören zu), 결과(führen zu), 경향(neigen zu), 설득·강요(überreden zu, zwingen zu).",
+"aus|Dat.":"<b>aus</b>는 늘 <b>3격</b>입니다. 출신·재료·원인: 출신(kommen aus, stammen aus), 구성(bestehen aus), 결과(resultieren aus), 도출(ableiten aus).",
+"zwischen|Dat.":"<b>zwischen + 3격</b>은 둘 사이에서 고르거나 구별합니다(wählen zwischen, unterscheiden zwischen).",
+"hinter|Dat.":"<b>hinter + 3격</b>은 뒤에 숨는 느낌입니다(sich verschanzen hinter)."
+};
+
+var known={};
+try{var raw=localStorage.getItem(KEY);if(raw)known=JSON.parse(raw)||{};}catch(e){known={};}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(known));}catch(e){}}
+function kid(c){return c.L+"|"+c.d[0];}
+function today(){var d=new Date();return Math.floor((d.getTime()-d.getTimezoneOffset()*60000)/86400000);}
+function rec(c){return known[kid(c)]||null;}
+function isKnown(c){var r=rec(c);return !!(r&&r.b>=1);}
+function boxOf(c){var r=rec(c);return r?r.b:0;}
+function setKnown(c,v){
+  var r=rec(c)||{b:0,due:today()};
+  if(v){r.b=Math.min(r.b+1,GAP.length-1);r.due=today()+GAP[r.b];}
+  else{r.b=0;r.due=today();}
+  known[kid(c)]=r;save();
+}
+function dueCards(){var t=today();return ALL.filter(function(c){var r=rec(c);return r&&r.due<=t;});}
+
+/* 전치사 그림 (SVG) */
+var ICON={
+auf:'<path d="M3 20h18"/><path d="M6 17l9-9"/><path d="M9 8h6v6"/>',
+"über":'<path d="M3 20h18"/><path d="M4 15c3-8 13-8 16 0"/>',
+an:'<path d="M15 3v18"/><circle cx="9" cy="12" r="3"/><path d="M12 12h3"/>',
+"in":'<rect x="10" y="5" width="11" height="14" rx="2"/><path d="M2 12h10"/><path d="M8 8l4 4-4 4"/>',
+vor:'<path d="M17 3v18"/><path d="M3 12h9"/><path d="M8 8l4 4-4 4"/><path d="M13 7v10"/>',
+unter:'<path d="M3 6h18"/><path d="M12 9v9"/><path d="M8 14l4 4 4-4"/>',
+"für":'<path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/>',
+um:'<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/>',
+gegen:'<path d="M3 12h7"/><path d="M7 8l3 4-3 4"/><path d="M21 12h-7"/><path d="M17 8l-3 4 3 4"/>',
+durch:'<circle cx="12" cy="12" r="6"/><path d="M2 12h20"/><path d="M18 8l4 4-4 4"/>',
+mit:'<circle cx="9" cy="12" r="5"/><circle cx="15" cy="12" r="5"/>',
+nach:'<circle cx="10" cy="10" r="6"/><path d="M14.5 14.5L21 21"/>',
+von:'<circle cx="5" cy="12" r="2.5"/><path d="M8 12h13"/><path d="M17 8l4 4-4 4"/>',
+bei:'<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>',
+zu:'<path d="M3 12h14"/><path d="M13 8l4 4-4 4"/><circle cx="20" cy="12" r="1.5"/>',
+aus:'<rect x="3" y="5" width="11" height="14" rx="2"/><path d="M9 12h13"/><path d="M18 8l4 4-4 4"/>',
+zwischen:'<path d="M5 4v16"/><path d="M19 4v16"/><circle cx="12" cy="12" r="2.5"/>',
+hinter:'<path d="M9 3v18"/><circle cx="16" cy="12" r="2.5" stroke-dasharray="2 2"/><path d="M3 12h4"/>'
+};
+function icon(p){var w=el("span","picon");w.style.setProperty("--pc",PCOL[p]);w.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true">'+(ICON[p]||'')+'</svg>';return w;}
+/* 연상 고리 */
+var HOOK={
+auf:"선 위로 올라서서 <b>앞</b>을 바라보는 그림. 아직 오지 않은 것을 향하면 4격(warten auf, sich freuen auf), 이미 깔린 바탕 위에 서 있으면 3격(beruhen auf, bestehen auf).",
+"über":"무엇의 <b>위를 넘어</b> 내려다보며 말하고 느끼는 그림. 동사와 결합하면 거의 언제나 4격.",
+an:"무언가에 <b>닿아</b> 있는 그림. 마음이 닿으면 4격(denken an, sich erinnern an), 몸이 참여하거나 원인에 닿으면 3격(teilnehmen an, leiden an).",
+"in":"상자 <b>안으로</b> 들어가는 변화는 4격(sich verlieben in, übersetzen in), 안에 머물면 3격(bestehen in).",
+vor:"벽 <b>앞</b>에서 멈춰 선 그림. 피하고 싶은 것 앞 — 두려움·경고·보호. 거의 언제나 3격.",
+unter:"짓누르는 것 <b>아래</b>. leiden unter(상황·사람 때문에 시달리다). 3격.",
+"für":"<b>~을 위해</b> 마음을 주는 그림. 관심·감사·결정·지지. 늘 4격.",
+um:"대상을 <b>빙 둘러싸고</b> 얻거나 지키려 애쓰는 그림. 부탁·돌봄·걱정·지원. 늘 4격.",
+gegen:"두 화살표가 <b>맞부딪히는</b> 그림. 항의·저항·시합 상대. 늘 4격.",
+durch:"고리를 <b>관통</b>하는 화살표. 수단·대체. 늘 4격.",
+mit:"두 원이 <b>겹친</b> 그림. 함께·수단·다룸. 늘 3격.",
+nach:"<b>돋보기</b>로 찾는 그림. 묻고 찾고 그리워하는 대상. 늘 3격.",
+von:"점에서 <b>멀어지는</b> 화살표. 출처·이야기·의존·분리. 늘 3격.",
+bei:"<b>집 곁</b>에 머무는 그림. 사람·기관 곁에서 일하고 감사하고 사과하는 상대. 늘 3격.",
+zu:"<b>목표점을 향해</b> 가는 화살표. 초대·축하·소속·결과·경향. 늘 3격.",
+aus:"상자 <b>밖으로</b> 나오는 화살표. 출신·재료·원인. 늘 3격.",
+zwischen:"두 선 <b>사이</b>의 점. 둘 사이에서 고르고 구별. 3격.",
+hinter:"벽 <b>뒤에 숨은</b> 점. sich verschanzen hinter. 3격."
+};
+
+function $(id){return document.getElementById(id);}
+function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e;}
+function show(id){["v-cover","v-levels","v-study","v-sheet"].forEach(function(v){$(v).hidden=(v!==id);});window.scrollTo(0,0);}
+
+/* 카드 객체 */
+function parts(d){
+  var seg=d[0].split(" + "),words=seg[0].split(" ");
+  var prep=words.pop();
+  return {lead:words.join(" "),prep:prep,cas:seg[1]||""};
+}
+var ALL=[];
+LEVELS.forEach(function(L){DATA[L].forEach(function(d,i){var P=parts(d);ALL.push({L:L,i:i,d:d,lead:P.lead,prep:P.prep,cas:P.cas});});});
+function byLevel(L){return ALL.filter(function(c){return c.L===L;});}
+function byPrep(p){return ALL.filter(function(c){return c.prep===p;});}
+function related(c){return ALL.filter(function(o){return o!==c&&o.lead===c.lead;});}
+function knownCount(list){var n=0;list.forEach(function(c){if(isKnown(c))n++;});return n;}
+function daWord(q){ // "Worauf? / Auf wen?" -> "darauf"
+  var m=q.match(/^(Wo\S+)\?/);if(!m)return "";
+  var w=m[1].toLowerCase();
+  if(w==="woher"||w==="wohin")return "";
+  return w.replace(/^wor/,"dar").replace(/^wo/,"da");
+}
+function highlightExample(c){ // 예문에서 전치사(또는 축약형) 강조
+  var forms={zu:["zu","zum","zur"],von:["von","vom"],an:["an","am","ans"],in:["in","im","ins"],bei:["bei","beim"],auf:["auf","aufs"]}[c.prep]||[c.prep];
+  var box=el("div","de"),done=false;
+  c.d[2].split(/(\s+)/).forEach(function(tok){
+    var core=tok.replace(/[.,!?]/g,"").toLowerCase();
+    if(!done&&forms.indexOf(core)>-1){
+      var m=el("mark","",tok.replace(/[.,!?]+$/,""));box.appendChild(m);
+      var tail=tok.match(/[.,!?]+$/);if(tail)box.appendChild(document.createTextNode(tail[0]));
+      done=true;
+    }else box.appendChild(document.createTextNode(tok));
+  });
+  return box;
+}
+
+var S={deck:[],title:"",mode:"de",shuffle:false,hide:false,queue:[],pos:0,res:{},flipped:false,finished:false,tab:"cards",quiz:null,prepStat:{}};
+var MODES=["de","ko","prep","quiz","fill"];
+var MODE_LABEL={de:"독일어 → 한국어",ko:"한국어 → 독일어",prep:"전치사 맞히기",quiz:"전치사 퀴즈",fill:"예문 빈칸"};
+S.auto=false;
+
+/* ---------- Levels ---------- */
+function renderLevels(){
+  var g=$("grid");g.innerHTML="";
+  LEVELS.forEach(function(L){
+    var list=byLevel(L),n=list.length,k=knownCount(list);
+    var b=el("button","tile");
+    b.appendChild(el("div","lv",L));
+    b.appendChild(el("div","nm",NAMES[L]));
+    var ct=el("div","ct");ct.appendChild(el("span","",n+"장"));ct.appendChild(el("span","","익힘 "+k+" / "+n));
+    b.appendChild(ct);
+    var m=el("div","meter"),i=el("i");i.style.width=(n?Math.round(k/n*100):0)+"%";m.appendChild(i);b.appendChild(m);
+    b.addEventListener("click",function(){openDeck(list,"Level "+L+" · "+NAMES[L]);});
+    g.appendChild(b);
+  });
+  var due=dueCards(),seen=ALL.filter(function(c){return rec(c);});
+  $("due-s").textContent=due.length?("복습할 때가 된 카드 "+due.length+"장 · 학습한 카드 "+seen.length+" / "+ALL.length):("복습할 카드가 없습니다 · 학습한 카드 "+seen.length+" / "+ALL.length);
+  $("btn-due").disabled=!due.length;
+  var bx=$("boxes");bx.innerHTML="";
+  for(var b=0;b<GAP.length;b++){var n=ALL.filter(function(c){return rec(c)&&boxOf(c)===b;}).length;var i=el("i");var f=el("b");f.style.width=(ALL.length?Math.round(n/ALL.length*100):0)+"%";i.appendChild(f);i.title=["처음","1일","3일","1주","2주","한 달"][b]+" 칸: "+n+"장";bx.appendChild(i);}
+  var pr=$("preps");pr.innerHTML="";
+  PORDER.forEach(function(p){
+    var list=byPrep(p);if(!list.length)return;
+    var b=el("button","prepbtn");b.style.setProperty("--pc",PCOL[p]);
+    b.appendChild(icon(p));b.appendChild(el("span","",p));b.appendChild(el("span","n",list.length+"장 · "+knownCount(list)+" 익힘"));
+    b.addEventListener("click",function(){openDeck(list,"전치사 "+p);});
+    pr.appendChild(b);
+  });
+}
+
+/* ---------- Study ---------- */
+function shuffleArr(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function openDeck(list,title){
+  S.deck=list;S.title=title;S.tab="cards";S.prepStat={};
+  $("st-title").textContent=title;
+  $("cards-view").hidden=false;$("list-view").hidden=true;$("btn-view").textContent="목록";$("btn-view").setAttribute("aria-pressed","false");
+  $("q").value="";
+  buildQueue();
+  show("v-study");
+}
+function buildQueue(subset){
+  var ids=[];
+  if(subset){ids=subset.slice();}
+  else{for(var i=0;i<S.deck.length;i++){if(S.hide&&isKnown(S.deck[i]))continue;ids.push(i);}}
+  if(S.shuffle)shuffleArr(ids);
+  S.queue=ids;S.pos=0;S.res={};S.flipped=false;S.finished=false;S.quiz=null;
+  renderStudy();
+}
+function updateProg(){
+  var total=S.queue.length,k=0,a=0;
+  for(var id in S.res){if(S.res[id]==="k")k++;else a++;}
+  var cur=S.finished?total:Math.min(S.pos+1,total);
+  $("p-count").textContent=total?(cur+" / "+total):"0 / 0";
+  $("p-stat").textContent="알아요 "+k+" · 다시 "+a;
+  $("p-bar").style.width=(total?Math.round((S.finished?total:S.pos)/total*100):0)+"%";
+}
+function bigLine(c,blank){
+  var w=el("div","bigwrap"),col=el("div","col"),b=el("div","big");
+  if(!blank)w.appendChild(icon(c.prep));
+  if(c.lead)b.appendChild(document.createTextNode(c.lead+" "));
+  if(blank){b.appendChild(el("span","blank"," "));}
+  else{var s=el("span","pp",c.prep);s.style.setProperty("--pc",PCOL[c.prep]);b.appendChild(s);}
+  col.appendChild(b);
+  if(!blank){var ch=el("div","chips");ch.appendChild(el("span","chip "+(c.cas==="Akk."?"akk":"dat"),"+ "+c.cas+(c.cas==="Akk."?" 4격":" 3격")));col.appendChild(ch);}
+  w.appendChild(col);
+  return w;
+}
+function fillSentence(c,input){ // 예문의 전치사 자리를 빈칸/입력란으로
+  var forms={zu:["zu","zum","zur"],von:["von","vom"],an:["an","am","ans"],in:["in","im","ins"],bei:["bei","beim"],auf:["auf","aufs"]}[c.prep]||[c.prep];
+  var box=el("div","fill"),done=false,answer=c.prep;
+  box.style.setProperty("--pc",PCOL[c.prep]);
+  c.d[2].split(/(\s+)/).forEach(function(tok){
+    var core=tok.replace(/[.,!?]/g,"").toLowerCase();
+    if(!done&&forms.indexOf(core)>-1){
+      answer=core;
+      if(input){var inp=el("input");inp.type="text";inp.autocomplete="off";inp.autocapitalize="none";inp.spellcheck=false;inp.setAttribute("aria-label","전치사 입력");inp.placeholder="…";box.appendChild(inp);}
+      else{box.appendChild(el("mark","",tok.replace(/[.,!?]+$/,"")));}
+      var tail=tok.match(/[.,!?]+$/);if(tail)box.appendChild(document.createTextNode(tail[0]));
+      done=true;
+    }else box.appendChild(document.createTextNode(tok));
+  });
+  box.answer=answer;box.forms=forms;
+  return box;
+}
+function backDetails(c,face){
+  var d=c.d;
+  // 의문사 + da-형
+  if(d[4]){
+    var s=el("div","syn");
+    var q1=el("span");q1.appendChild(document.createTextNode("의문사 "));q1.appendChild(el("b","",d[4]));s.appendChild(q1);
+    var da=daWord(d[4]);
+    if(da){var q2=el("span");q2.appendChild(el("span","arrow","→ "));q2.appendChild(el("b","",da));q2.appendChild(document.createTextNode(" (da-형)"));s.appendChild(q2);}
+    face.appendChild(s);
+  }
+  // 예문
+  var ex=el("div","ex");var de=highlightExample(c);de.style.setProperty("--pc",PCOL[c.prep]);ex.appendChild(de);ex.appendChild(el("div","kr",d[3]));face.appendChild(ex);
+  // 같은 동사의 다른 전치사
+  var rel=related(c);
+  if(rel.length){
+    var r=el("div","rel");r.appendChild(el("span","lbl","같은 동사, 다른 전치사"));
+    rel.forEach(function(o){
+      var line=el("div");var b=el("b","",o.lead+" ");var pp=el("span","pp",o.prep);pp.style.setProperty("--pc",PCOL[o.prep]);b.appendChild(pp);
+      line.appendChild(b);line.appendChild(document.createTextNode(" + "+o.cas+" — "+o.d[1]+"  ("+o.L+")"));r.appendChild(line);
+    });
+    face.appendChild(r);
+  }
+  // 암기 요령
+  var tip=TIPS[c.prep+"|"+c.cas];
+  if(tip){var t=el("div","tip");t.appendChild(el("span","lbl","암기 요령"));var body=el("div");body.innerHTML=tip;t.appendChild(body);
+    if(HOOK[c.prep]){var hk=el("div");hk.style.marginTop="6px";hk.innerHTML="<span style='color:var(--ink3)'>연상 고리 · </span>"+HOOK[c.prep];t.appendChild(hk);}
+    face.appendChild(t);}
+  if("speechSynthesis" in window){
+    var sb=el("button","say","듣기 (독일어)");
+    sb.addEventListener("click",function(ev){ev.stopPropagation();speak(d[0].split(" + ")[0]+". "+d[2]);});
+    face.appendChild(sb);
+  }
+}
+function quizOptions(c){
+  var pool=PORDER.filter(function(p){return p!==c.prep&&byPrep(p).length;});
+  shuffleArr(pool);
+  var opts=[{prep:c.prep,cas:c.cas,ok:true}];
+  var twoCase={auf:1,an:1,in:1,über:1,vor:1,unter:1};
+  // 같은 전치사 다른 격 (양격 전치사일 때) 1개
+  if(twoCase[c.prep]&&Math.random()<.6)opts.push({prep:c.prep,cas:c.cas==="Akk."?"Dat.":"Akk.",ok:false});
+  var fixed={für:"Akk.",um:"Akk.",gegen:"Akk.",durch:"Akk.",mit:"Dat.",nach:"Dat.",bei:"Dat.",von:"Dat.",zu:"Dat.",aus:"Dat.",zwischen:"Dat.",hinter:"Dat."};
+  while(opts.length<4&&pool.length){var p=pool.pop();var cas=fixed[p]||(Math.random()<.5?"Akk.":"Dat.");opts.push({prep:p,cas:cas,ok:false});}
+  return shuffleArr(opts);
+}
+function renderStudy(){
+  var st=$("stage");st.innerHTML="";
+  $("t-mode").textContent=MODE_LABEL[S.mode];
+  $("t-shuffle").setAttribute("aria-pressed",S.shuffle);
+  $("t-hide").setAttribute("aria-pressed",S.hide);
+  updateProg();
+  if(!S.queue.length){renderDone(true);return;}
+  if(S.finished){renderDone(false);return;}
+  var c=S.deck[S.queue[S.pos]],d=c.d;
+  var isQuiz=S.mode==="quiz",isFill=S.mode==="fill",noFlip=isQuiz||isFill;
+  var card=el("div","card"+(noFlip?" quiz":""));card.style.setProperty("--pc",PCOL[c.prep]);
+  if(!noFlip){card.tabIndex=0;card.setAttribute("role","button");card.setAttribute("aria-label","카드 뒤집기");}
+  var tag=el("div","tag");tag.appendChild(el("span","",c.L+" · "+["처음","1일","3일","1주","2주","한 달"][boxOf(c)]+" 칸"));tag.appendChild(el("span","",noFlip?(S.quiz?"채점":(isFill?"빈칸":"퀴즈")):(S.flipped?"뒷면":"앞면")));card.appendChild(tag);
+  var face=el("div","face");
+  if(isFill){
+    if(!S.quiz){
+      var fs=fillSentence(c,true);face.appendChild(fs);
+      face.appendChild(el("div","mean sub",c.lead+" ___ · "+d[1]));
+      var row=el("div","fillrow");var ok=el("button","fillbtn","확인");row.appendChild(ok);row.appendChild(el("span","hint","전치사를 입력하고 Enter"));face.appendChild(row);
+      var inp=fs.querySelector("input");
+      var submit=function(){var v=(inp.value||"").trim().toLowerCase();if(!v)return;var right=fs.forms.indexOf(v)>-1;answerQuiz(c,{prep:v,cas:c.cas,ok:right},null);};
+      ok.addEventListener("click",function(ev){ev.stopPropagation();submit();});
+      inp.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();submit();}e.stopPropagation();});
+      setTimeout(function(){try{inp.focus();}catch(e){}},0);
+    }else{
+      face.appendChild(fillSentence(c,false));
+      face.appendChild(bigLine(c,false));
+      face.appendChild(el("div","verdict "+(S.quiz.correct?"ok":"no"),S.quiz.correct?"정답입니다":"입력: "+S.quiz.picked.prep+" → 정답은 "+c.prep+" + "+c.cas+" 입니다"));
+      face.appendChild(el("div","mean",d[1]));
+      backDetails(c,face);
+    }
+  }else if(isQuiz){
+    face.appendChild(bigLine(c,true));
+    face.appendChild(el("div","mean sub",d[1]));
+    if(!S.quiz){
+      var opts=quizOptions(c),box=el("div","opts");
+      opts.forEach(function(o){
+        var b=el("button","opt");b.appendChild(el("span","",o.prep));b.appendChild(el("small",o.cas==="Akk."?"akk":"dat","+ "+o.cas));
+        b.addEventListener("click",function(ev){ev.stopPropagation();answerQuiz(c,o,opts);});
+        box.appendChild(b);
+      });
+      face.appendChild(box);
+      face.appendChild(el("div","hint","전치사와 격을 함께 고르세요"));
+    }else{
+      var box2=el("div","opts");
+      (S.quiz.opts||[]).forEach(function(o){
+        var b=el("button","opt"+(o.ok?" right":(o===S.quiz.picked?" wrong":"")));b.disabled=true;
+        b.appendChild(el("span","",o.prep));b.appendChild(el("small",o.cas==="Akk."?"akk":"dat","+ "+o.cas));box2.appendChild(b);
+      });
+      face.appendChild(box2);
+      face.appendChild(el("div","verdict "+(S.quiz.correct?"ok":"no"),S.quiz.correct?"정답입니다":"정답은 "+c.prep+" + "+c.cas+" 입니다"));
+      backDetails(c,face);
+    }
+  }else if(!S.flipped){
+    if(S.mode==="de"){face.appendChild(bigLine(c,false));}
+    else if(S.mode==="ko"){face.appendChild(el("div","big ko",d[1]));}
+    else{face.appendChild(bigLine(c,true));face.appendChild(el("div","mean sub",d[1]));}
+    face.appendChild(el("div","hint",S.mode==="prep"?"알맞은 전치사와 격을 떠올린 뒤 뒤집어 확인하세요":"탭하거나 Space를 눌러 뒤집기"));
+  }else{
+    face.appendChild(bigLine(c,false));
+    face.appendChild(el("div",S.mode==="ko"?"small":"mean",d[1]));
+    backDetails(c,face);
+  }
+  card.appendChild(face);
+  if(!noFlip){card.addEventListener("click",flip);card.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();flip();}});}
+  st.appendChild(card);
+  if(S.auto&&((!noFlip&&S.flipped)||(noFlip&&S.quiz)))speak(d[0].split(" + ")[0]+". "+d[2]);
+
+  var ac=el("div","actions");
+  var pv=el("button","act nav","‹");pv.setAttribute("aria-label","이전 카드");pv.addEventListener("click",prev);
+  var ag=el("button","act again","다시 볼래요");ag.addEventListener("click",function(){mark(false);});
+  var kn=el("button","act know","알아요");kn.addEventListener("click",function(){mark(true);});
+  var nx=el("button","act nav","›");nx.setAttribute("aria-label","다음 카드");nx.addEventListener("click",next);
+  if(noFlip&&!S.quiz){ag.disabled=true;kn.disabled=true;}
+  ac.appendChild(pv);ac.appendChild(ag);ac.appendChild(kn);ac.appendChild(nx);
+  st.appendChild(ac);
+  var ks=el("div","keys");ks.innerHTML=isFill?"<kbd>Enter</kbd> 확인 &nbsp; <kbd>←</kbd> <kbd>→</kbd> 이동 &nbsp; <kbd>Space</kbd> 다음":isQuiz?"<kbd>1</kbd>–<kbd>4</kbd> 보기 선택 &nbsp; <kbd>←</kbd> <kbd>→</kbd> 이동 &nbsp; <kbd>Space</kbd> 다음":"<kbd>Space</kbd> 뒤집기 &nbsp; <kbd>←</kbd> <kbd>→</kbd> 이동 &nbsp; <kbd>1</kbd> 다시 &nbsp; <kbd>2</kbd> 알아요";
+  st.appendChild(ks);
+}
+function answerQuiz(c,o,opts){
+  S.quiz={opts:opts,picked:o,correct:!!o.ok};
+  var ps=S.prepStat[c.prep]||(S.prepStat[c.prep]={n:0,ok:0});ps.n++;if(o.ok)ps.ok++;
+  var idx=S.queue[S.pos];S.res[idx]=o.ok?"k":"a";setKnown(c,o.ok);
+  renderStudy();
+}
+function speak(t){
+  try{
+    window.speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(t);u.lang="de-DE";u.rate=.9;
+    var vs=window.speechSynthesis.getVoices();
+    for(var i=0;i<vs.length;i++){if(vs[i].lang&&vs[i].lang.indexOf("de")===0){u.voice=vs[i];break;}}
+    window.speechSynthesis.speak(u);
+  }catch(e){}
+}
+function flip(){if(S.finished||!S.queue.length||S.mode==="quiz"||S.mode==="fill")return;S.flipped=!S.flipped;renderStudy();}
+function prev(){if(S.finished){S.finished=false;S.pos=S.queue.length-1;S.flipped=false;S.quiz=null;renderStudy();return;}if(S.pos>0){S.pos--;S.flipped=false;S.quiz=null;renderStudy();}}
+function next(){if(S.finished||!S.queue.length)return;advance();}
+function advance(){
+  S.flipped=false;S.quiz=null;
+  if(S.pos<S.queue.length-1){S.pos++;}else{S.finished=true;}
+  renderStudy();
+}
+function mark(ok){
+  if(S.finished||!S.queue.length)return;
+  if((S.mode==="quiz"||S.mode==="fill")&&!S.quiz)return;
+  var idx=S.queue[S.pos];
+  S.res[idx]=ok?"k":"a";
+  setKnown(S.deck[idx],ok);
+  advance();
+}
+function renderDone(emptyDeck){
+  var st=$("stage");st.innerHTML="";
+  var box=el("div","done");
+  var k=0,a=0,again=[];
+  if(!emptyDeck){S.queue.forEach(function(id){if(S.res[id]==="k")k++;else{a++;again.push(id);}});}
+  if(emptyDeck){
+    box.appendChild(el("h3","","카드가 없습니다"));
+    box.appendChild(el("p","","이 묶음의 모든 카드를 익혔습니다. 전체를 다시 돌려 보세요."));
+    var bt=el("div","btns");
+    var b1=el("button","main","전체 다시 돌리기");b1.addEventListener("click",function(){S.hide=false;buildQueue();});
+    var b2=el("button","","목록으로");b2.addEventListener("click",toLevels);
+    bt.appendChild(b1);bt.appendChild(b2);box.appendChild(bt);
+  }else{
+    box.appendChild(el("h3","",a===0?"한 바퀴 완료, 모두 익혔어요":"한 바퀴 완료"));
+    var stt=el("div","stats");
+    var d1=el("div");d1.appendChild(el("b","",String(k)));d1.appendChild(el("span","","알아요"));
+    var d2=el("div");d2.appendChild(el("b","",String(a)));d2.appendChild(el("span","","다시 볼 카드"));
+    stt.appendChild(d1);stt.appendChild(d2);box.appendChild(stt);
+    // 전치사별 정답률 (퀴즈)
+    var keys=Object.keys(S.prepStat);
+    if(keys.length){
+      var w=el("div","weak");w.appendChild(el("div","lbl","전치사별 퀴즈 정답률"));
+      keys.sort(function(x,y){return (S.prepStat[x].ok/S.prepStat[x].n)-(S.prepStat[y].ok/S.prepStat[y].n);});
+      keys.forEach(function(p){var s=S.prepStat[p];var r=el("div","row");var l=el("span");var pp=el("b","",p);pp.style.color=PCOL[p];l.appendChild(pp);r.appendChild(l);r.appendChild(el("span","",s.ok+" / "+s.n+"  ("+Math.round(s.ok/s.n*100)+"%)"));w.appendChild(r);});
+      box.appendChild(w);
+    }
+    var bt2=el("div","btns");
+    if(a>0){var r1=el("button","main","다시 볼 카드 "+a+"장 돌리기");r1.addEventListener("click",function(){buildQueue(again);});bt2.appendChild(r1);}
+    var r2=el("button",a>0?"":"main","전체 처음부터 다시");r2.addEventListener("click",function(){S.hide=false;buildQueue();});
+    var r3=el("button","","목록으로");r3.addEventListener("click",toLevels);
+    bt2.appendChild(r2);bt2.appendChild(r3);box.appendChild(bt2);
+  }
+  st.appendChild(box);
+}
+function toLevels(){renderLevels();show("v-levels");}
+function renderSheet(){
+  var ov=$("ov");ov.innerHTML="";
+  var groups=[["늘 4격 (Akkusativ)","akk",[]],["늘 3격 (Dativ)","dat",[]],["동사에 따라 4격 / 3격","both",[]]];
+  PORDER.forEach(function(p){var list=byPrep(p);if(!list.length)return;var a=list.some(function(c){return c.cas==="Akk.";}),d=list.some(function(c){return c.cas==="Dat.";});groups[a&&d?2:(a?0:1)][2].push(p);});
+  groups.forEach(function(g){
+    var b=el("div","ovb "+g[1]);b.appendChild(el("div","h",g[0]+" · "+g[2].length));
+    var ps=el("div","ps");g[2].forEach(function(p){var s=el("span");s.style.setProperty("--pc",PCOL[p]);s.appendChild(icon(p));s.appendChild(document.createTextNode(p));ps.appendChild(s);});
+    b.appendChild(ps);ov.appendChild(b);
+  });
+  var box=$("sheet");box.innerHTML="";
+  PORDER.forEach(function(p){
+    var list=byPrep(p);if(!list.length)return;
+    var sh=el("div","sh");sh.style.setProperty("--pc",PCOL[p]);
+    var hd=el("div","hd");hd.appendChild(icon(p));hd.appendChild(el("div","nm",p));
+    var akk=list.filter(function(c){return c.cas==="Akk.";}),dat=list.filter(function(c){return c.cas==="Dat.";});
+    var cs=akk.length&&dat.length?"both":(akk.length?"akk":"dat");
+    hd.appendChild(el("div","cs",cs==="both"?"4격 / 3격":(cs==="akk"?"늘 4격":"늘 3격")));
+    hd.appendChild(el("div","cs",list.length+"개"));
+    sh.appendChild(hd);
+    if(HOOK[p]){var h=el("div","hook");h.innerHTML=HOOK[p];sh.appendChild(h);}
+    [["+ Akk. 4격","akk",akk],["+ Dat. 3격","dat",dat]].forEach(function(g){
+      if(!g[2].length)return;
+      var vg=el("div","vg");vg.appendChild(el("div","cl "+g[1],g[0]+" · "+g[2].length));
+      var tb=el("table");
+      g[2].slice().sort(function(a,b){return LEVELS.indexOf(a.L)-LEVELS.indexOf(b.L)||a.i-b.i;}).forEach(function(c){
+        var tr=el("tr");var v=el("td","v");v.appendChild(document.createTextNode(c.lead+" "));var pp=el("span","pp",c.prep);pp.style.setProperty("--pc",PCOL[c.prep]);v.appendChild(pp);tr.appendChild(v);
+        tr.appendChild(el("td","k",c.d[1]));tr.appendChild(el("td","l",c.L));tb.appendChild(tr);
+      });
+      vg.appendChild(tb);sh.appendChild(vg);
+    });
+    box.appendChild(sh);
+  });
+}
+
+/* ---------- List ---------- */
+function renderList(){
+  var q=$("q").value.trim().toLowerCase(),box=$("list");box.innerHTML="";
+  var n=0,lastPrep=null,isPrepDeck=S.title.indexOf("전치사 ")===0;
+  // 레벨 묶음은 전치사별로 그룹 표시
+  var items=S.deck.slice();
+  if(!isPrepDeck)items.sort(function(x,y){return PORDER.indexOf(x.prep)-PORDER.indexOf(y.prep)||x.i-y.i;});
+  items.forEach(function(c){
+    var d=c.d,hay=(d[0]+" "+d[1]+" "+d[4]+" "+d[2]+" "+d[3]).toLowerCase();
+    if(q&&hay.indexOf(q)<0)return;
+    n++;
+    if(!isPrepDeck&&c.prep!==lastPrep){lastPrep=c.prep;var h=el("div","ghead",c.prep);h.style.color=PCOL[c.prep];box.appendChild(h);}
+    var it=el("div","item");it.style.setProperty("--pc",PCOL[c.prep]);
+    var p=el("div","p");var t=el("span");t.appendChild(document.createTextNode(c.lead+" "));var pp=el("span","pp",c.prep);pp.style.setProperty("--pc",PCOL[c.prep]);t.appendChild(pp);t.appendChild(document.createTextNode(" + "+c.cas));p.appendChild(t);
+    p.appendChild(el("i","",(isPrepDeck?c.L+(isKnown(c)?" · 익힘":""):(isKnown(c)?"익힘":""))));it.appendChild(p);
+    it.appendChild(el("div","m",d[1]+(d[4]?"  ·  "+d[4]:"")));
+    it.appendChild(el("div","e",d[2]));
+    it.appendChild(el("div","e2",d[3]));
+    box.appendChild(it);
+  });
+  if(!n)box.appendChild(el("div","empty","검색 결과가 없습니다"));
+}
+
+/* ---------- Events ---------- */
+$("btn-start").addEventListener("click",function(){renderLevels();show("v-levels");});
+$("btn-home").addEventListener("click",function(){show("v-cover");});
+$("btn-back").addEventListener("click",toLevels);
+$("btn-due").addEventListener("click",function(){var d=dueCards();if(d.length)openDeck(d,"오늘 복습");});
+$("btn-sheet").addEventListener("click",function(){renderSheet();show("v-sheet");});
+$("btn-sheet-back").addEventListener("click",toLevels);
+$("btn-print").addEventListener("click",function(){try{window.print();}catch(e){}});
+$("t-auto").addEventListener("click",function(){S.auto=!S.auto;$("t-auto").setAttribute("aria-pressed",S.auto);});
+$("t-mode").addEventListener("click",function(){S.mode=MODES[(MODES.indexOf(S.mode)+1)%MODES.length];S.flipped=false;S.quiz=null;renderStudy();});
+$("t-shuffle").addEventListener("click",function(){S.shuffle=!S.shuffle;buildQueue();});
+$("t-hide").addEventListener("click",function(){S.hide=!S.hide;buildQueue();});
+$("t-restart").addEventListener("click",function(){buildQueue();});
+$("btn-view").addEventListener("click",function(){
+  S.tab=S.tab==="cards"?"list":"cards";
+  var l=S.tab==="list";
+  $("cards-view").hidden=l;$("list-view").hidden=!l;
+  $("btn-view").textContent=l?"카드":"목록";
+  $("btn-view").setAttribute("aria-pressed",l);
+  if(l)renderList();else renderStudy();
+});
+$("q").addEventListener("input",renderList);
+$("btn-reset").addEventListener("click",function(){
+  if(confirm("모든 학습 기록을 초기화할까요?")){known={};save();renderLevels();}
+});
+document.addEventListener("keydown",function(e){
+  if($("v-study").hidden||S.tab!=="cards")return;
+  if(e.target&&e.target.tagName==="INPUT")return;
+  if(S.mode==="fill"){
+    if(e.key===" "&&S.quiz){e.preventDefault();next();}
+    else if(e.key==="ArrowRight"&&S.quiz){next();}
+    else if(e.key==="ArrowLeft"){prev();}
+    return;
+  }
+  if(S.mode==="quiz"){
+    if(e.key===" "){e.preventDefault();if(S.quiz)next();}
+    else if(e.key==="ArrowRight"){next();}
+    else if(e.key==="ArrowLeft"){prev();}
+    else if(/^[1-4]$/.test(e.key)&&!S.quiz){var bs=document.querySelectorAll(".opt");var b=bs[parseInt(e.key,10)-1];if(b)b.click();}
+    return;
+  }
+  if(e.key===" "){e.preventDefault();flip();}
+  else if(e.key==="ArrowRight"){next();}
+  else if(e.key==="ArrowLeft"){prev();}
+  else if(e.key==="1"){mark(false);}
+  else if(e.key==="2"){mark(true);}
+});
+})();
+</script>
+</body>
+</html>
