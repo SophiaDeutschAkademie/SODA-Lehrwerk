@@ -75,10 +75,22 @@ h1:focus{outline:none}
 .big .t1{font-weight:800}
 .big .t2{font-weight:300;color:var(--text);letter-spacing:-.04em}
 .eyebrow{margin-top:clamp(28px,6vh,56px);font-size:12px;font-weight:800;letter-spacing:.22em;color:var(--text-m)}
-.side-main h2{font-size:clamp(22px,2.6vw,28px);font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-top:4px}
+.side-main>h2{font-size:clamp(22px,2.6vw,28px);font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-top:4px}
 .lead{margin-top:6px;color:var(--text-s);font-size:15.5px}
 
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;padding-top:clamp(0px,1vw,8px)}
+.side-r{display:flex;flex-direction:column;gap:clamp(36px,5vw,56px)}
+.cat-h{display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--bd)}
+.cat-eb{font-size:11.5px;font-weight:800;letter-spacing:.2em;color:var(--accent);white-space:nowrap}
+.cat-h h2{font-size:clamp(19px,2vw,23px);font-weight:800;letter-spacing:-.02em;color:var(--text)}
+.grid.one .tile{min-height:0}
+.grid.three{grid-template-columns:repeat(3,1fr);gap:14px}
+.grid.three .tile{min-height:236px;padding:22px 20px 18px}
+.grid.three .ttl{font-size:19px}
+.tile.soon{border-style:dashed;background:transparent;cursor:default}
+.tile.soon:hover{transform:none;box-shadow:none;border-color:var(--bd)}
+.tile.soon .ttl{color:var(--text-s)}
+.tile.soon .meta{background:var(--accent-bg);color:var(--accent)}
 .grid li{display:flex}
 .tile{position:relative;display:flex;flex-direction:column;width:100%;min-height:264px;padding:24px 24px 20px;background:var(--bg-c);border:1px solid var(--bd);border-radius:20px;transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .2s,background .2s;animation:rise .6s var(--ease) both;animation-delay:calc(var(--i)*60ms)}
 .tile:hover{transform:translateY(-3px);border-color:#C9CDDB;box-shadow:0 12px 30px rgba(30,40,70,.1)}
@@ -99,7 +111,8 @@ h1:focus{outline:none}
   .big{font-size:clamp(52px,15vw,96px)}
   .eyebrow{margin-top:28px}
 }
-@media (max-width:520px){.grid{grid-template-columns:1fr}}
+@media (max-width:620px){.grid.three{grid-template-columns:repeat(2,1fr)}.grid.three .tile{min-height:0}}
+@media (max-width:520px){.grid,.grid.three{grid-template-columns:1fr}}
 @media (max-width:620px){
   .grid{gap:10px}
   .tile{min-height:0;padding:18px 16px 14px;border-radius:16px}
@@ -108,7 +121,7 @@ h1:focus{outline:none}
   .meta{font-size:11.5px;padding:3px 9px;white-space:normal;border-radius:10px}
   .go{width:32px;height:32px}
 }
-@media (max-width:359px){.grid{grid-template-columns:1fr}}
+@media (max-width:359px){.grid,.grid.three{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
@@ -149,32 +162,49 @@ h1:focus{outline:none}
       </div>
     </aside>
     <nav class="side-r" aria-label="학습 자료">
-      <ol class="grid">
+      <section class="cat" aria-labelledby="cat-grundlagen">
+        <header class="cat-h"><span class="cat-eb">GRUNDLAGEN</span><h2 id="cat-grundlagen">문법 다지기</h2></header>
+        <ul class="grid one">
         <li><a class="tile" href="grammatik/" style="--i:0">
           <span class="lab">Grammatik</span><b class="ttl">문법 교재</b><span class="dsc">명사의 성과 관사부터 시작해 Lektion 순서대로 독일어 문법을 배워요.</span>
           <span class="tile-foot"><span class="meta">Lektion 37개</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
+        </ul>
+      </section>
+      <section class="cat" aria-labelledby="cat-training">
+        <header class="cat-h"><span class="cat-eb">TRAINING</span><h2 id="cat-training">읽고 듣고 말하기</h2></header>
+        <ul class="grid three">
         <li><a class="tile" href="lesetraining/" style="--i:1">
           <span class="lab">Lesetraining</span><b class="ttl">독해 훈련</b><span class="dsc">텍스트마다 독해 문제, 주요 문법, 단어와 숙어를 함께 공부해요.</span>
           <span class="tile-foot"><span class="meta">A1–C1 · 텍스트 50개</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
-        <li><a class="tile" href="hoertraining/" style="--i:2">
+<li><a class="tile" href="hoertraining/" style="--i:2">
           <span class="lab">Hörtraining</span><b class="ttl">듣기 훈련</b><span class="dsc">예측, 듣기, 지문 확인, 다시 듣기, 이해도 확인, 성찰, 복습 카드 순서로 연습해요.</span>
           <span class="tile-foot"><span class="meta">A1–C1 · 80세트</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
-        <li><a class="tile" href="praepositionen/" style="--i:3">
+<li><div class="tile soon" style="--i:3" aria-disabled="true">
+          <span class="lab">Sprechtraining</span><b class="ttl">말하기 훈련</b><span class="dsc">대화문으로 말하기를 연습해요. 새 내용을 준비하고 있어요.</span>
+          <span class="tile-foot"><span class="meta">업데이트 예정</span></span>
+        </div></li>
+        </ul>
+      </section>
+      <section class="cat" aria-labelledby="cat-wortschatz">
+        <header class="cat-h"><span class="cat-eb">WORTSCHATZ</span><h2 id="cat-wortschatz">전치사와 표현 넓히기</h2></header>
+        <ul class="grid three">
+        <li><a class="tile" href="praepositionen/" style="--i:4">
           <span class="lab">Präpositionen</span><b class="ttl">독일어 전치사의 모든 것</b><span class="dsc">전치사 80개의 핵심 그림과 뜻이 이어지는 방식을 익히고, 헷갈리는 전치사를 비교하고 퀴즈로 확인해요.</span>
           <span class="tile-foot"><span class="meta">전치사 80개</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
-        <li><a class="tile" href="verben-mit-praepositionen/" style="--i:4">
+<li><a class="tile" href="verben-mit-praepositionen/" style="--i:5">
           <span class="lab">Verben mit Präpositionen</span><b class="ttl">동사와 전치사 결합</b><span class="dsc">동사와 함께 쓰는 전치사를 플래시카드로 익히고, 복습 간격에 맞춰 다시 봐요.</span>
           <span class="tile-foot"><span class="meta">A1–C2 · 324장</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
-        <li><a class="tile" href="nomen-verb-verbindungen/" style="--i:5">
+<li><a class="tile" href="nomen-verb-verbindungen/" style="--i:6">
           <span class="lab">Nomen-Verb-Verbindungen</span><b class="ttl">명사와 동사 연어</b><span class="dsc">자주 쓰는 명사-동사 연어와 기능동사 결합을 레벨별 플래시카드로 익혀요.</span>
           <span class="tile-foot"><span class="meta">A1–C2 · 317장</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
-      </ol>
+        </ul>
+      </section>
     </nav>
   </div>
 </section>
