@@ -19,7 +19,7 @@
 .turn{position:relative;max-width:88%;padding:14px 16px 12px;background:var(--bg-c);border:1px solid var(--bd);border-radius:18px;transition:border-color .2s,box-shadow .2s,opacity .2s}
 .turn.r-A{align-self:flex-start;border-top-left-radius:6px}
 .turn.r-B{align-self:flex-end;border-top-right-radius:6px;background:var(--accent-l);border-color:var(--accent-bd)}
-.turn.is-current{box-shadow:0 0 0 3px var(--hl)}
+.turn.is-current,.turn.is-playing{box-shadow:0 0 0 3px var(--hl)}
 .turn.is-future{display:none}
 .who{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:12px;color:var(--text-m);font-weight:600;letter-spacing:.03em}
 .who b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:11.5px;font-weight:800}

@@ -29,6 +29,8 @@
     ko: true,         // 해석 보기
     sl: true,         // 구어체 표시
     peek: {},         // 가려진 줄 중 눌러서 연 것
+    playAll: false,   // 대화 전체 듣기 중
+    playing: -1,      // 전체 듣기에서 지금 들리는 줄
     practice: -1,     // 단계별 연습 중 현재 줄 번호 (-1: 꺼짐)
     recs: {},         // 녹음 결과 (메모리에만 보관)
     recording: null   // 녹음 중인 줄 번호
@@ -93,11 +95,11 @@
   }
 
   /* ───────── 음성 (기기의 독일어 음성 사용) ───────── */
-  function speak(text) {
+  function speak(text, onEnd) {
     if (!text) return;
     if (lineAudio) { try { lineAudio.pause(); } catch (e) {} lineAudio = null; }
     if (!('speechSynthesis' in window)) {
-      alert('이 기기에서는 독일어 음성을 들을 수 없어요.');
+      if (onEnd) onEnd(); else alert('이 기기에서는 독일어 음성을 들을 수 없어요.');
       return;
     }
     try {
@@ -108,25 +110,58 @@
       u.rate = 0.9;
       var v = s.getVoices().filter(function (x) { return /^de/i.test(x.lang); })[0];
       if (v) u.voice = v;
+      if (onEnd) { u.onend = onEnd; u.onerror = function (ev) { if (!ev || ev.error !== 'canceled' && ev.error !== 'interrupted') onEnd(); }; }
       s.speak(u);
-    } catch (e) { /* 음성을 쓸 수 없어도 연습은 계속 */ }
+    } catch (e) { if (onEnd) onEnd(); }
   }
-  function stopSpeech() {
+  function cancelMedia() {
     if (lineAudio) { try { lineAudio.pause(); } catch (e) {} lineAudio = null; }
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
   }
+  function stopSpeech() {
+    playToken++;
+    state.playAll = false;
+    state.playing = -1;
+    cancelMedia();
+  }
   /* 대화 줄 음성: 녹음된 mp3(ElevenLabs)를 먼저 쓰고, 파일을 못 불러오면 기기 음성으로 대신해요 */
   var lineAudio = null;
+  var playToken = 0;
   function pad2(n) { return (n < 10 ? '0' : '') + n; }
-  function speakTurn(i) {
+  function speakTurn(i, onEnd) {
     var t = current.turns[i];
-    stopSpeech();
+    cancelMedia();
     var src = 'assets/audio/' + current.lv.toLowerCase() + '-' + pad2(current.no) + '-' + pad2(i + 1) + '.mp3?v=' + (window.APP_VERSION || '');
     var a = new Audio(src);
     lineAudio = a;
-    a.onerror = function () { if (lineAudio === a) { lineAudio = null; speak(t.de); } };
+    a.onended = function () { if (lineAudio === a) { lineAudio = null; if (onEnd) onEnd(); } };
+    a.onerror = function () { if (lineAudio === a) { lineAudio = null; speak(t.de, onEnd); } };
     var pr = a.play();
-    if (pr && pr.catch) pr.catch(function () { if (lineAudio === a) { lineAudio = null; speak(t.de); } });
+    if (pr && pr.catch) pr.catch(function () { if (lineAudio === a) { lineAudio = null; speak(t.de, onEnd); } });
+  }
+  /* 대화 전체 듣기: 처음부터 끝까지 줄마다 이어서 들려줘요 */
+  function markPlaying(i) {
+    var lis = document.querySelectorAll('.turn');
+    for (var k = 0; k < lis.length; k++) lis[k].classList.toggle('is-playing', k === i);
+    if (lis[i] && lis[i].scrollIntoView) lis[i].scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+  function playFrom(i, tok) {
+    if (tok !== playToken) return;
+    if (i >= current.turns.length) { stopSpeech(); render(); return; }
+    state.playing = i;
+    markPlaying(i);
+    speakTurn(i, function () {
+      setTimeout(function () { playFrom(i + 1, tok); }, 500);
+    });
+  }
+  function toggleListenAll() {
+    if (state.playAll) { stopSpeech(); render(); return; }
+    if (state.recording !== null && recorder) recorder.stop();
+    stopSpeech();
+    state.practice = -1;
+    state.playAll = true;
+    render();
+    playFrom(0, playToken);
   }
 
   /* ───────── 녹음 ───────── */
@@ -305,6 +340,8 @@
       ], 'hide', state.hide) + '</div>' +
       '<div class="dctl-row"><span class="dctl-lab">보기</span>' +
       '<button type="button" class="dctl-btn" data-act="ko" aria-pressed="' + (state.ko ? 'true' : 'false') + '">해석 ' + (state.ko ? '가리기' : '보기') + '</button>' +
+      '<button type="button" class="dctl-btn" data-act="listenall" aria-pressed="' + (state.playAll ? 'true' : 'false') + '">' +
+      (state.playAll ? '■ 전체 듣기 멈춤' : '▶ 대화 전체 듣기') + '</button>' +
       '<button type="button" class="dctl-btn" data-act="practice" aria-pressed="' + (pr >= 0 ? 'true' : 'false') + '">' +
       (pr >= 0 ? '연습 끝내기' : '단계별 연습') + '</button>' +
       (t.umg && t.umg.length ? '<button type="button" class="dctl-btn" data-act="sl" aria-pressed="' + (state.sl ? 'true' : 'false') + '">구어체 표시 ' + (state.sl ? '끄기' : '켜기') + '</button>' : '') +
@@ -325,7 +362,7 @@
       if (pr >= 0 && i > pr) break;
       var turn = t.turns[i];
       var hidden = isHidden(i);
-      var cls = 'turn r-' + turn.r + (hidden ? ' is-hidden' : '') + (pr === i ? ' is-current' : '');
+      var cls = 'turn r-' + turn.r + (hidden ? ' is-hidden' : '') + (pr === i ? ' is-current' : '') + (state.playing === i ? ' is-playing' : '');
       var rec = '';
       if (isMineRole(turn.r)) {
         rec = state.recording === i
@@ -393,10 +430,12 @@
     if (!el) return;
     var act = el.getAttribute('data-act');
     var i = parseInt(el.getAttribute('data-i'), 10);
+    if (state.playAll && act !== 'listenall' && act !== 'ko' && act !== 'sl' && act !== 'peek') { stopSpeech(); render(); }
     if (act === 'mine') { state.mine = el.getAttribute('data-v'); if (state.practice >= 0) state.practice = -1; render(); }
     else if (act === 'hide') { state.hide = el.getAttribute('data-v'); state.peek = {}; render(); }
     else if (act === 'ko') { state.ko = !state.ko; render(); }
     else if (act === 'sl') { state.sl = !state.sl; render(); }
+    else if (act === 'listenall') { toggleListenAll(); }
     else if (act === 'practice') { if (state.practice >= 0) stopPractice(); else startPractice(); }
     else if (act === 'next') { if (state.practice + 1 < current.turns.length) enterStep(state.practice + 1); else stopPractice(); }
     else if (act === 'peek') { state.peek[keyOf(i)] = true; render(); }
