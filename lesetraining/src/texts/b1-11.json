@@ -16,7 +16,7 @@
   "paragraphs": [
     {
       "label": "Hanna Lorenz",
-      "de": "Mein Bruder Felix und ich haben uns Anfang September einen alten Traum erfüllt: zwei Tage im Kajak auf der Müritz und einigen kleineren Seen. Die Müritz in Mecklenburg-Vorpommern ist der größte See, der ganz in Deutschland liegt. Viel Erfahrung hatten wir nicht.",
+      "de": "Mein jüngerer Bruder Felix und ich haben uns Anfang September einen alten Traum erfüllt: zwei Tage im Kajak auf der Müritz und einigen kleineren Seen. Die Müritz in Mecklenburg-Vorpommern ist der größte See, der ganz in Deutschland liegt. Viel Erfahrung hatten wir nicht.",
       "ko": "제 남동생 펠릭스와 저는 9월 초에 오랜 꿈을 이뤘어요. 뮈리츠호와 그보다 작은 호수 몇 곳에서 카약을 타며 보내는 이틀이었어요. 메클렌부르크포어포메른주에 있는 뮈리츠호는 전체가 독일 안에 있는 호수 가운데 가장 큰 호수예요. 저희는 경험이 많지 않았어요."
     },
     {
@@ -110,7 +110,7 @@
       "options": [
         "Draußen auf dem See hat ihnen der Wind beim Paddeln geholfen.",
         "Draußen auf dem See hat der Wind das Paddeln schwer gemacht.",
-        "Draußen auf dem See hat der Wind ihr Boot ans Ufer gedrückt."
+        "Draußen auf dem See hat der Wind sie zur Umkehr gezwungen."
       ],
       "answer": 1,
       "evidence": "Auf dem offenen See hat uns dann der Westwind erwischt.",
@@ -124,7 +124,7 @@
           "Draußen auf dem See"
         ]
       ],
-      "explain": "여기서 erwischen은 '바람이 들이닥쳐 저희를 괴롭혔다'는 뜻이에요. 바로 다음 문장에서 맞바람 때문에 힘겹게 노를 저었다고 해요. 호숫가에 붙어서 간 것은 두 사람이 스스로 고른 방법이지 바람이 배를 밀어낸 것이 아니에요."
+      "explain": "여기서 erwischen은 '바람이 갑자기 들이닥쳐 두 사람을 괴롭혔다'는 뜻이에요. 바로 다음 문장에서 맞바람 때문에 힘겹게 노를 저었다고 해요. 펠릭스가 포기하려고 했지만 두 사람은 돌아가지 않고 계속 노를 저었어요."
     },
     {
       "type": "rf",
@@ -142,7 +142,7 @@
           "hätte Felix die Tour am liebsten abgebrochen"
         ]
       ],
-      "explain": "아침 8시에 출발해서 두 시간 뒤면 아직 오전이에요. 그때 펠릭스는 정말로 포기하고 싶어 했어요. 'aufgeben wollen'을 'am liebsten abbrechen'으로 바꿔 말했어요."
+      "explain": "두 사람은 오전 내내 맞바람을 맞으며 노를 저었는데, 두 시간이 지나자 펠릭스는 정말로 포기하고 싶어 했어요. 'Nach zwei Stunden'을 'nach einem Teil des Vormittags'로, 'aufgeben wollen'을 'am liebsten abbrechen'으로 바꿔 말했어요."
     },
     {
       "type": "mc",
@@ -174,7 +174,7 @@
       "options": [
         "Wären sie früher gekommen, hätten sie einen Platz am See bekommen.",
         "Wären sie später gekommen, hätten sie wohl keinen Platz gefunden.",
-        "Wären sie nicht angemeldet gewesen, hätte man sie weggeschickt."
+        "Wären sie im Dunkeln gekommen, hätte es noch freie Plätze gegeben."
       ],
       "answer": 1,
       "evidence": "Der Platzwart hat uns den letzten freien Stellplatz direkt am Wasser gegeben.",
@@ -184,7 +184,7 @@
           "hätten sie wohl keinen Platz gefunden"
         ]
       ],
-      "explain": "두 사람이 받은 자리가 마지막 빈자리였어요. 그러니 조금만 늦게 왔어도 자리를 얻지 못했을 거라고 추론할 수 있어요. 두 사람은 이미 물가 자리를 받았고, 미리 예약했다는 말은 본문에 없어요."
+      "explain": "두 사람이 해 지기 직전에 받은 자리가 마지막 빈자리였어요. 그러니 조금만 늦게 왔어도 자리를 얻지 못했을 거라고 추론할 수 있어요. 두 사람은 이미 물가 자리를 받았고, 날이 어두워진 뒤에는 빈자리가 남아 있지 않았을 거예요."
     },
     {
       "type": "mc",
@@ -233,7 +233,7 @@
     {
       "title": "중간 영역의 부사어 순서",
       "term": "Reihenfolge im Mittelfeld (temporal – kausal – modal – lokal)",
-      "explain": "동사 두 부분 사이(중간 영역)에 부사어가 여러 개 있으면 보통 '언제 – 왜 – 어떻게 – 어디서'의 순서로 써요. 독일에서는 이 순서를 te-ka-mo-lo라고 줄여 불러요. 시간 부사어가 1번 자리로 나가면 나머지 부사어는 같은 순서를 지켜요. 장소 부사어는 동사(끝)에 가장 가까이 와요.",
+      "explain": "동사 두 부분 사이(중간 영역)에 부사어가 여러 개 있으면 보통 '언제 – 왜 – 어떻게 – 어디서'의 순서로 써요. 독일어 수업에서는 이 순서를 TeKaMoLo라고 줄여 불러요. 시간 부사어가 1번 자리로 나가도 나머지 부사어는 같은 순서를 지켜요. 네 가지 중에서는 장소 부사어가 동사(끝)에 가장 가까이 와요. 다만 Pause machen의 Pause처럼 동사와 한 덩어리인 말은 그보다 뒤, 동사(끝) 바로 앞에 와요.",
       "pattern": "동사 … 시간(te) – 이유(ka) – 방법(mo) – 장소(lo) … 동사(끝)",
       "examples": [
         {
@@ -321,7 +321,7 @@
           ]
         }
       ],
-      "tip": "이 순서는 기본 순서예요. 특히 강조하고 싶은 정보는 1번 자리로 보낼 수 있어요. 하지만 중간 영역에서 장소를 시간보다 먼저 쓰면 어색하게 들려요."
+      "tip": "이 순서는 기본 순서예요. 특히 강조하고 싶은 정보는 1번 자리로 보낼 수 있어요. 하지만 중간 영역에서 장소를 시간보다 먼저 쓰면 대개 어색하게 들려요."
     },
     {
       "title": "3격과 4격 목적어의 순서",
@@ -418,7 +418,7 @@
     {
       "title": "문장 부사와 nicht의 위치",
       "term": "Satzadverbien und Stellung von nicht",
-      "explain": "leider, zum Glück, tatsächlich, vermutlich 같은 문장 부사는 문장 전체에 대한 말하는 사람의 판단을 나타내요. 1번 자리에 오거나 중간 영역에서 대명사 주어 뒤에 와요. 문장 전체를 부정하는 nicht는 중간 영역의 뒤쪽, 동사(끝) 바로 앞에 와요. 그래서 문장 부사가 nicht보다 앞에 와요.",
+      "explain": "leider, zum Glück, tatsächlich, vermutlich 같은 문장 부사는 문장 전체에 대한 말하는 사람의 판단을 나타내요. 1번 자리에 오거나, 중간 영역에서는 주어나 대명사 뒤 앞쪽에 와요. 문장 전체를 부정하는 nicht는 중간 영역의 뒤쪽에 오고, 보통 동사(끝) 바로 앞에 와요. 그래서 문장 부사가 nicht보다 앞에 와요.",
       "pattern": "동사 + 주어 + (leider/vermutlich …) + … + nicht + 동사(끝)",
       "examples": [
         {
@@ -496,7 +496,7 @@
       "title": "현재완료로 이야기하기 + war/hatte/화법조동사 과거형",
       "term": "Perfekt als Erzähltempus mit Präteritum von sein, haben und Modalverben",
       "explain": "블로그나 편지처럼 말하듯이 쓰는 글에서는 지난 일을 주로 현재완료(haben/sein + 과거분사)로 이야기해요. 하지만 sein, haben과 화법조동사는 보통 과거형(war, hatte, wollte, musste, konnte)으로 써요. 'Felix hat aufgeben wollen'보다 'Felix wollte aufgeben'이 훨씬 자연스러워요.",
-      "pattern": "haben/sein + … + 과거분사(끝)  ·  war / hatte / wollte + … + 동사원형(끝)",
+      "pattern": "haben/sein + … + 과거분사(끝)  ·  war / hatte  ·  wollte / musste / konnte + … + 동사원형(끝)",
       "examples": [
         {
           "de": "Die Kühltasche mussten wir trotzdem im Auto lassen.",
@@ -623,7 +623,7 @@
     {
       "de": "sich (Dat.) einen Traum erfüllen",
       "ko": "꿈을 이루다",
-      "ex": "Mein Bruder Felix und ich haben uns Anfang September einen alten Traum erfüllt",
+      "ex": "Mein jüngerer Bruder Felix und ich haben uns Anfang September einen alten Traum erfüllt",
       "exko": "제 남동생 펠릭스와 저는 9월 초에 오랜 꿈을 이뤘어요"
     },
     {
