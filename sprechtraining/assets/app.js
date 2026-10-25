@@ -229,6 +229,7 @@
     var p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
     if (!p.length) return { v: 'cover' };
     if (p[0] === 'levels') return { v: 'levels' };
+    if (p[0] === 'guide') return { v: 'guide' };
     var lv = p[0].toUpperCase();
     if (!LEVEL_BY[lv]) return { v: 'cover' };
     if (p.length === 1) return { v: 'list', lv: lv };
@@ -260,6 +261,7 @@
     var r = state.route;
     if (!r || r.v === 'cover') renderCover();
     else if (r.v === 'levels') renderLevels();
+    else if (r.v === 'guide') renderGuide();
     else if (r.v === 'list') renderList(r.lv);
     else renderReader();
   }
@@ -300,7 +302,68 @@
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/', '표지') +
       '<div class="sec-h"><span class="kicker">STUFE</span><h1>레벨 선택</h1>' +
       '<p>A1–C1은 레벨마다 대화가 6개 있어요. 마지막 MZ 챕터에는 독일 젊은 층의 구어체 대화 6개가 있어요. 역할을 나눠 따라 말하고, 문장을 가린 뒤 말해 보고, 녹음해서 원문과 비교해요.</p></div>' +
+      '<a class="guide-link" href="#/guide"><span><b>이렇게 공부하세요</b><small>이 자료를 가장 잘 활용하는 학습법</small></span>' + ICON.right + '</a>' +
       '<ul class="levels">' + cards + '</ul></main>';
+  }
+
+  /* ───────── 학습법 ───────── */
+  var GUIDE_STEPS = [
+    { t: '이해하기', m: '5분', b: [
+      '‘해석 보기’를 켠 채로 ‘대화 전체 듣기’를 눌러 처음부터 끝까지 한 번 들어요.',
+      '다시 한 번 들으면서 눈으로 독일어 문장을 따라 읽어요. 해석은 뜻을 확인할 때만 봐요.',
+      '모르는 표현은 아래 Redemittel에서 눌러 소리와 함께 확인해요.'] },
+    { t: '듣고 따라 말하기', m: '5분', b: [
+      '‘해석 보기’를 끄고 한 줄씩 ‘원문 듣기’를 눌러요. 들은 직후에 바로 소리 내어 따라 말해요.',
+      '속도, 끊어 읽는 곳, 문장 끝의 억양까지 그대로 흉내 내는 것이 목표예요.',
+      '한 줄을 3번쯤 따라 한 뒤 다음 줄로 넘어가요. 눈으로만 읽지 말고 꼭 입으로 말해요.'] },
+    { t: '내 역할 정하기', m: '3분', b: [
+      '‘내 역할’에서 A나 B를 골라요. 내 줄에는 녹음 버튼이 생겨요.',
+      '‘단계별 연습’을 눌러요. 상대 줄은 음성으로 나오고, 내 차례에서는 내 줄이 가려져요.',
+      '내 줄을 먼저 말해 보고, 막히면 눌러서 확인한 뒤 다시 말해요.'] },
+    { t: '가리고 말하기', m: '5분', b: [
+      '‘가리기’에서 내 역할의 줄을 가려요. 상대 줄을 듣고 내 줄을 기억해서 말해요.',
+      '막힌 줄은 눌러 확인하고 공책에 적어 두어요. 다음 연습 때 이 줄부터 시작해요.',
+      '익숙해지면 ‘모두 가리기’로 양쪽 역할을 모두 말해 봐요.'] },
+    { t: '녹음하고 비교하기', m: '5분', b: [
+      '내 줄을 녹음하고 ‘내 녹음 듣기’와 ‘원문 듣기’를 번갈아 들어요.',
+      '한 번에 한 가지만 비교해요. 속도, 끊어 읽기, 강세, 문장 끝 억양 중 하나를 고르면 돼요.',
+      '고친 점이 하나 보이면 다시 녹음해서 바뀐 것을 확인해요.'] },
+    { t: '내 말로 바꾸기', m: '5분', b: [
+      '역할을 바꿔서 한 번 더 연습해요.',
+      '이름, 장소, 시간, 물건을 내 상황으로 바꿔 말해요. 예를 들어 내 직업, 내가 가는 도시, 내 약속 시간으로 바꿔요.',
+      '문장 구조는 그대로 두고 단어만 바꾸는 것이 가장 안전해요.'] }
+  ];
+  var GUIDE_TIPS = [
+    ['복습 간격', '다 외운 대화도 하루 뒤, 사흘 뒤, 일주일 뒤에 한 번씩 ‘모두 가리기’로 말해 보세요. 한 번에 오래 하는 것보다 간격을 두고 여러 번 하는 편이 오래 기억돼요.'],
+    ['분량', '하루에 대화 1개, 15~20분이면 충분해요. 새 대화로 넘어가기 전에 지난 대화를 한 번 말해 보세요.'],
+    ['환경', '이어폰을 끼고 조용한 곳에서 소리 내어 말하세요. 작게 중얼거리는 연습은 실제 말하기에 도움이 적어요.'],
+    ['레벨 고르기', '지금 레벨에서 가리고 말하기가 막힘없이 되면 다음 레벨로 올라가세요. 처음부터 어려운 대화를 고르면 오래 못 가요.'],
+    ['MZ 챕터', '구어체는 말할 때와 친구와의 대화에서 써요. 시험 쓰기와 공식 문서에서는 대화 아래 ‘표준 독일어’ 표현을 쓰세요. 구어체 표시는 끄고 들으면서 소리만으로 알아듣는 연습도 해 보세요.'],
+    ['Redemittel', '대화가 끝나면 Redemittel 표현을 3개 골라 내 문장을 하나씩 만들어 말해 보세요. 새 상황에서 쓸 수 있어야 내 표현이 돼요.']
+  ];
+  var GUIDE_MISTAKES = [
+    '해석만 보고 넘어가요. 독일어 문장을 소리 내어 말하는 단계가 빠지면 말하기가 늘지 않아요.',
+    '읽기만 하고 말하지 않아요. 눈으로 읽는 것과 입으로 말하는 것은 다른 연습이에요.',
+    '틀린 곳을 한꺼번에 다 고치려 해요. 한 번에 한 가지씩 고치세요.',
+    '녹음을 듣기 싫어서 건너뛰어요. 처음엔 어색해도 비교해 보는 단계에서 가장 많이 늘어요.'
+  ];
+  function renderGuide() {
+    document.title = '이렇게 공부하세요 · SODA SPRECHTRAINING';
+    var steps = GUIDE_STEPS.map(function (g, i) {
+      return '<li class="g-step"><div class="g-head"><span class="g-no">' + (i + 1) + '</span><b>' + esc(g.t) + '</b><span class="g-min">' + esc(g.m) + '</span></div>' +
+        '<ul>' + g.b.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></li>';
+    }).join('');
+    var tips = GUIDE_TIPS.map(function (x) {
+      return '<li><b>' + esc(x[0]) + '</b><p>' + esc(x[1]) + '</p></li>';
+    }).join('');
+    var mist = GUIDE_MISTAKES.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('');
+    app.innerHTML = '<main id="main" class="page view guide" tabindex="-1">' + brandTop('#/levels', '레벨 선택') +
+      '<div class="sec-h"><span class="kicker">LERNWEG</span><h1>이렇게 공부하세요</h1>' +
+      '<p>대화 하나를 6단계로 연습하는 방법이에요. 대화 1개에 약 30분이 걸리고, 앞의 3단계만 해도 15분이면 돼요. 듣기, 따라 말하기, 기억해서 말하기, 녹음 비교의 순서로 말하는 힘을 키워요.</p></div>' +
+      '<ol class="g-steps">' + steps + '</ol>' +
+      '<section class="g-sec"><h2>더 잘 활용하려면</h2><ul class="g-tips">' + tips + '</ul></section>' +
+      '<section class="g-sec"><h2>자주 하는 실수</h2><ul class="g-mist">' + mist + '</ul></section>' +
+      '<a class="cta g-cta" href="#/levels">레벨 선택하기' + ICON.right + '</a></main>';
   }
 
   /* ───────── 대화 목록 ───────── */

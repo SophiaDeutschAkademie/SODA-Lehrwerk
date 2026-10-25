@@ -316,3 +316,28 @@ mark.ev{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px;box-s
   .hide-ko .vko,.hide-ko .phko{color:var(--text-s)!important;background:none!important}
   .card,.lv{animation:none}
 }
+
+/* 학습법 */
+.guide-link{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 16px;padding:16px 20px;background:var(--accent-l);border:1px solid var(--accent-bd);border-radius:14px;color:var(--accent-d);transition:border-color .2s,transform .2s var(--ease)}
+.guide-link:hover{border-color:var(--accent);transform:translateY(-1px)}
+.guide-link b{display:block;font-size:16px;font-weight:700}
+.guide-link small{display:block;margin-top:2px;font-size:13px;color:var(--text-m)}
+.guide-link svg{flex:none;width:20px;height:20px}
+.g-steps{list-style:none;display:grid;gap:12px}
+.g-step{padding:18px 20px;background:var(--bg-c);border:1px solid var(--bd);border-radius:16px}
+.g-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.g-head b{font-size:17px;font-weight:700}
+.g-no{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-size:14px;font-weight:700}
+.g-min{margin-left:auto;padding:2px 10px;border-radius:99px;background:var(--accent-bg);color:var(--accent);font-size:12.5px;font-weight:600}
+.g-step ul{list-style:none;display:grid;gap:6px}
+.g-step ul li{position:relative;padding-left:14px;font-size:15px;color:var(--text-s);word-break:keep-all}
+.g-step ul li::before{content:"";position:absolute;left:0;top:.7em;width:5px;height:5px;border-radius:50%;background:var(--accent-bd)}
+.g-sec{margin-top:32px}
+.g-sec h2{font-size:19px;font-weight:800;margin-bottom:12px}
+.g-tips{list-style:none;display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g-tips li{padding:16px 18px;background:var(--bg-s);border-radius:14px}
+.g-tips b{font-size:15px;color:var(--accent-d)}
+.g-tips p{margin-top:6px;font-size:14.5px;color:var(--text-s);word-break:keep-all}
+.g-mist{list-style:none;display:grid;gap:8px}
+.g-mist li{padding:12px 16px;background:var(--no-bg);border:1px solid var(--no-bd);border-radius:12px;font-size:14.5px;color:var(--text);word-break:keep-all}
+.g-cta{margin-top:32px;display:inline-flex}
