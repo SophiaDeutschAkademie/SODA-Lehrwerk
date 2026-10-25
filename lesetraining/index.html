@@ -20,6 +20,7 @@
     function paint(){ var dk=d.getAttribute('data-theme')==='dark'; b.innerHTML=dk?SUN:MOON; b.setAttribute('aria-pressed',dk?'true':'false'); b.setAttribute('aria-label','다크 모드 '+(dk?'끄기':'켜기')); b.title='다크 모드 '+(dk?'켜짐':'꺼짐')+' · 누르면 '+(dk?'라이트':'다크')+'로 바뀌어요'; }
     b.addEventListener('click',function(){ var n=d.getAttribute('data-theme')==='dark'?'light':'dark'; apply(n); try{localStorage.setItem(KEY,n);}catch(e){} paint(); });
     paint(); document.body.appendChild(b);
+    if(!document.getElementById('soda-toc-btn')){ var a=document.createElement('a'); a.id='soda-toc-btn'; a.className='soda-toc-btn'; a.href='../#inhalt'; a.setAttribute('aria-label','목차로 돌아가기'); a.innerHTML='<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg>목차'; document.body.appendChild(a); }
   }
   if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
 })();
@@ -42,6 +43,11 @@
 .soda-theme-btn svg{width:20px;height:20px}
 html[data-theme="dark"] .soda-theme-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
 .soda-theme-btn:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
+.soda-toc-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:calc(max(10px,env(safe-area-inset-right)) + 46px);z-index:2147482000;height:38px;padding:0 14px 0 10px;border-radius:999px;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:inline-flex;align-items:center;gap:4px;font:600 13px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;text-decoration:none;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
+.soda-toc-btn svg{width:16px;height:16px;flex:none}
+html[data-theme="dark"] .soda-toc-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
+.soda-toc-btn:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
+@media print{.soda-toc-btn{display:none!important}}
 html[data-theme="dark"] .a2hs-box{background:#1B2028;color:#C9CCD3;box-shadow:0 24px 60px rgba(0,0,0,.6)}
 html[data-theme="dark"] .a2hs-t,html[data-theme="dark"] .a2hs-c b{color:#ECEAE4}
 html[data-theme="dark"] .a2hs-c li,html[data-theme="dark"] .a2hs-c p{color:#C9CCD3}

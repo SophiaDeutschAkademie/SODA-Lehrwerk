@@ -1,7 +1,7 @@
 /* Lehrwerk Grammatik — offline cache.
    Every file name below carries ?v=<content hash>, so a new upload only
    re-downloads the files that actually changed. */
-const VERSION = 'bb5dc4f570';
+const VERSION = 'b71fa1404d';
 const PREFIX = 'lehrwerk-grammatik-';
 const CACHE = PREFIX + VERSION;
 const CORE = [
