@@ -68,7 +68,7 @@
       "answer": 2,
       "evidence": "Mein Flugzeug landet morgens in Hamburg, von dort nehme ich den Zug.",
       "pairs": [["landet morgens in Hamburg", "landet in einer anderen Stadt"], ["nehme ich den Zug", "fährt dann mit der Bahn weiter"]],
-      "explain": "비행기는 함부르크에 착륙하고 거기서 기차를 탄다고 해요. Hamburg를 '다른 도시'로, Zug를 Bahn으로 바꿔 표현했어요. 세 번째 선택지는 Hamburg, abholen 같은 본문 단어를 쓰지만, 재민은 함부르크에서 기차를 타고 뤼베크 역에서 데리러 와 주는지 묻는 거예요."
+      "explain": "비행기는 함부르크에 착륙하고 거기서 기차를 탄다고 해요. Hamburg를 '다른 도시'로, Zug를 Bahn으로 바꿔 표현했어요. 'Er fliegt bis Hamburg, und die Hoffmanns holen ihn dort mit dem Auto ab.'는 Hamburg, abholen 같은 본문 단어를 쓰지만, 재민은 함부르크에서 기차를 타고 뤼베크 역에서 데리러 와 주는지 묻는 거예요."
     },
     {
       "type": "mc",

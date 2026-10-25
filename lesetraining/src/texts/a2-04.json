@@ -84,7 +84,7 @@
       "answer": 0,
       "evidence": "dass in dem Paket eine blaue Jacke in Größe L war",
       "pairs": [["eine grüne Winterjacke in Größe M bestellt", "als bestellt"], ["eine blaue Jacke in Größe L", "Farbe und Größe sind beide anders"]],
-      "explain": "주문한 것은 초록색 M이고, 온 것은 파란색 L이에요. 색깔과 사이즈가 둘 다 달라요. 첫 번째 선택지는 사이즈가 맞다고, 두 번째 선택지는 색깔이 맞다고 해서 틀려요. 재킷은 너무 작은 것이 아니라 너무 커요(viel zu groß)."
+      "explain": "주문한 것은 초록색 M이고, 온 것은 파란색 L이에요. 색깔과 사이즈가 둘 다 달라요. 'richtige Größe'라고 한 선택지는 사이즈가, 'richtige Farbe'라고 한 선택지는 색깔이 맞다고 해서 틀려요. 재킷은 너무 작은 것이 아니라 너무 커요(viel zu groß)."
     },
     {
       "type": "mc",

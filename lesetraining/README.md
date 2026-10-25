@@ -23,7 +23,7 @@ Sophia Deutsch Akademie의 독일어 독해 훈련 웹앱입니다. 표지 → �
 - `index.html` : 앱 화면 (표지, 레벨 선택, 목록, 읽기 화면을 한 페이지 안에서 전환)
 - `assets/` : 화면 스타일(`app.css`), 동작(`app.js`), 로고, 아이콘, 글꼴 (인터넷 연결 없이도 동작)
 - `data/` : 앱이 읽는 데이터 (`index.js`, `a1.js` … `c1.js`) — 직접 고치지 말고 아래 방법으로 다시 만들어요.
-- `src/texts/` : 텍스트 원본 50개 (`a1-01.json` … `c1-10.json`)
+- `src/texts/` : 텍스트 원본 55개 (`a1-01.json` … `c1-11.json`)
 - `tools/validate.py` : 원본 검사 (근거 문장이 본문과 일치하는지, 문항 수, 형식, 객관식 선지 길이 등)
 - `tools/build.py` : 원본으로 `data/` 파일을 다시 만듦
 

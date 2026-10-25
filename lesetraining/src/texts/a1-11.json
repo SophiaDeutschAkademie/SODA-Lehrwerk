@@ -40,10 +40,10 @@
       "type": "mc",
       "kind": "detail",
       "q": "Wie ist das Wetter am Anfang der Woche?",
-      "options": ["Es gibt viel Regen und tiefe Temperaturen.", "Es gibt keinen Regen, aber sehr viel Wind.", "Es gibt viel Regen, aber hohe Temperaturen."],
+      "options": ["Es gibt viel Regen und niedrige Temperaturen.", "Es gibt keinen Regen, aber sehr viel Wind.", "Es gibt viel Regen, aber hohe Temperaturen."],
       "answer": 0,
       "evidence": "Am Montag und am Dienstag regnet es viel. Es ist kalt",
-      "pairs": [["Am Montag und am Dienstag", "am Anfang der Woche"], ["regnet es viel", "viel Regen"], ["Es ist kalt", "tiefe Temperaturen"]],
+      "pairs": [["Am Montag und am Dienstag", "am Anfang der Woche"], ["regnet es viel", "viel Regen"], ["Es ist kalt", "niedrige Temperaturen"]],
       "explain": "월요일과 화요일, 즉 한 주의 시작에는 비가 많이 오고 추워요(낮 6도, 밤 영하 1도). '비는 없고 바람이 많다'는 수요일 날씨이고, '기온이 높다'는 목요일과 금요일 날씨예요."
     },
     {
@@ -78,8 +78,8 @@
       "type": "mc",
       "kind": "inference",
       "q": "Wann soll man am Samstag grillen, und warum?",
-      "options": ["Um 19 Uhr, denn dann ist die Luft noch warm.", "Um 12 Uhr, denn abends kommt ein Gewitter.", "Um 8 Uhr, denn dann scheint schon die Sonne."],
-      "answer": 1,
+      "options": ["Um 12 Uhr, denn abends kommt ein Gewitter.", "Um 19 Uhr, denn dann ist die Luft noch warm.", "Um 8 Uhr, denn dann scheint schon die Sonne."],
+      "answer": 0,
       "evidence": "Dann grillen Sie lieber am Mittag!",
       "pairs": [["am Mittag", "Um 12 Uhr"], ["am Abend gibt es Gewitter", "abends kommt ein Gewitter"]],
       "explain": "예보는 바비큐를 점심때(12시쯤) 하라고 해요. 토요일 저녁에 뇌우(Gewitter)가 있기 때문이에요. 토요일이 따뜻하다는 말은 맞지만, 저녁 7시는 뇌우가 있는 시간이에요."

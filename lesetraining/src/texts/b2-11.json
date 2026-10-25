@@ -7,12 +7,7 @@
   "type": "Wissenspodcast (Transkript)",
   "typeKo": "지식 팟캐스트 녹취록",
   "intro": "비가 올 때 나는 특유의 냄새를 지구과학자가 설명하는 팟캐스트예요.",
-  "focus": [
-    "대명부사로 문장 잇기",
-    "부정 수량사 (einige, manche, beide …)",
-    "구어체: 현재완료 · 되묻기 · 생략",
-    "수동태와 수동 대체형"
-  ],
+  "focus": ["대명부사로 문장 잇기", "부정 수량사 (einige, manche, beide …)", "구어체: 현재완료 · 되묻기 · 생략", "수동태와 수동 대체형"],
   "paragraphs": [
     {
       "style": "meta",
@@ -108,19 +103,10 @@
       "type": "mc",
       "kind": "gist",
       "q": "Worum geht es in dem Gespräch vor allem?",
-      "options": [
-        "Um die Frage, warum Bakterien im Erdreich bei großer Hitze rasch absterben.",
-        "Um den Ursprung eines Geruchs, der bei einsetzendem Niederschlag auftritt.",
-        "Um die Risiken, die von Duftstoffen im Trinkwasser für Menschen ausgehen."
-      ],
+      "options": ["Um die Frage, warum Bakterien im Boden bei großer Hitze rasch absterben.", "Um den Ursprung eines Geruchs, der bei einsetzendem Niederschlag auftritt.", "Um die Risiken, die von Duftstoffen im Trinkwasser für Menschen ausgehen."],
       "answer": 1,
       "evidence": "Herr Wehner, warum riecht Regen eigentlich?",
-      "pairs": [
-        [
-          "riecht Regen",
-          "Geruchs, der bei einsetzendem Niederschlag auftritt"
-        ]
-      ],
+      "pairs": [["riecht Regen", "Geruchs, der bei einsetzendem Niederschlag auftritt"]],
       "explain": "진행자는 처음에 비에서 왜 냄새가 나는지 묻고, 대화 전체가 이 냄새가 어디서 오는지 설명해요. 세균과 수돗물은 설명 중에 나오는 세부 내용일 뿐이고, 세균이 죽는 이유나 수돗물의 위험은 다루지 않아요."
     },
     {
@@ -129,43 +115,17 @@
       "q": "Laut Wehner stammt der typische Geruch nach einem Schauer nicht vom Wasser, sondern aus dem Erdreich.",
       "answer": 0,
       "evidence": "Was wir wahrnehmen, kommt aus dem Boden.",
-      "pairs": [
-        [
-          "kommt aus dem Boden",
-          "aus dem Erdreich"
-        ],
-        [
-          "Reines Wasser ist ja geruchlos",
-          "nicht vom Wasser"
-        ]
-      ],
+      "pairs": [["kommt aus dem Boden", "aus dem Erdreich"], ["Reines Wasser ist ja geruchlos", "nicht vom Wasser"]],
       "explain": "베너 교수는 순수한 물에는 냄새가 없고, 우리가 맡는 냄새는 땅에서 나온다고 말해요. Boden(땅)을 Erdreich로, 냄새가 없다는 말을 '물에서 오지 않는다'로 바꿔 말했으므로 맞는 진술이에요."
     },
     {
       "type": "mc",
       "kind": "detail",
       "q": "Warum riecht es nach einer langen Trockenzeit besonders stark?",
-      "options": [
-        "Weil der Regen nach heißen Wochen in schwereren Tropfen auf die Erde fällt.",
-        "Weil reines Wasser bei hohen Temperaturen selbst einen Geruch entwickelt.",
-        "Weil sich Pflanzenöle nach und nach auf Gestein und im Erdreich anhäufen."
-      ],
+      "options": ["Weil der Regen nach heißen Wochen in schwereren Tropfen auf die Erde fällt.", "Weil reines Wasser bei hohen Temperaturen selbst einen Geruch entwickelt.", "Weil sich Pflanzenöle nach und nach auf Gestein und im Erdreich anhäufen."],
       "answer": 2,
       "evidence": "Sie sammeln sich mit der Zeit auf Steinen und im Boden an.",
-      "pairs": [
-        [
-          "Öle eine Rolle, die manche Pflanzen",
-          "Pflanzenöle"
-        ],
-        [
-          "mit der Zeit",
-          "nach und nach"
-        ],
-        [
-          "auf Steinen",
-          "auf Gestein"
-        ]
-      ],
+      "pairs": [["Öle eine Rolle, die manche Pflanzen", "Pflanzenöle"], ["mit der Zeit", "nach und nach"], ["auf Steinen", "auf Gestein"]],
       "explain": "식물이 건조한 시기에 내보내는 기름이 시간이 지나면서 돌 위와 흙 속에 쌓이기 때문에 오랜 가뭄 뒤에 냄새가 특히 강하다고 해요. 무거운 빗방울은 오히려 냄새를 줄이고, 물 자체에는 냄새가 없다고 했어요."
     },
     {
@@ -174,62 +134,27 @@
       "q": "Auf welche Weise Tropfen die Aromastoffe vom Boden lösen, ist der Forschung bis heute unbekannt.",
       "answer": 1,
       "evidence": "Vor einigen Jahren hat eine Forschungsgruppe den Vorgang mit Hochgeschwindigkeitskameras gefilmt.",
-      "pairs": [
-        [
-          "hat man lange nicht gewusst",
-          "bis heute unbekannt"
-        ],
-        [
-          "den Vorgang mit Hochgeschwindigkeitskameras gefilmt",
-          "Auf welche Weise Tropfen die Aromastoffe vom Boden lösen"
-        ]
-      ],
+      "pairs": [["hat man lange nicht gewusst", "bis heute unbekannt"], ["den Vorgang mit Hochgeschwindigkeitskameras gefilmt", "Auf welche Weise Tropfen die Aromastoffe vom Boden lösen"]],
       "explain": "이 과정은 오랫동안 알려지지 않았지만, 몇 년 전 한 연구팀이 초고속 카메라로 촬영해서 원리를 밝혀냈다고 해요. '오랫동안 몰랐다'는 과거의 일이므로 '지금까지도 모른다'는 진술은 틀려요."
     },
     {
       "type": "mc",
       "kind": "paraphrase",
       "q": "Was bedeutet der Satz „Schwere Tropfen prallen so schnell auf, dass sich kaum Bläschen bilden können“?",
-      "options": [
-        "Wenn Tropfen mit großer Wucht landen, wird fast keine Luft eingeschlossen.",
-        "Wenn Tropfen mit großer Wucht landen, platzen die Bläschen früher als sonst.",
-        "Wenn Tropfen eher sanft landen, steigen kaum noch Aerosole nach oben auf."
-      ],
+      "options": ["Wenn Tropfen mit großer Wucht landen, wird fast keine Luft eingeschlossen.", "Wenn Tropfen mit großer Wucht landen, platzen die Bläschen früher als sonst.", "Wenn Tropfen eher sanft landen, steigen kaum noch Aerosole nach oben auf."],
       "answer": 0,
       "evidence": "Schwere Tropfen prallen so schnell auf, dass sich kaum Bläschen bilden können.",
-      "pairs": [
-        [
-          "prallen so schnell auf",
-          "mit großer Wucht landen"
-        ],
-        [
-          "sich kaum Bläschen bilden können",
-          "wird fast keine Luft eingeschlossen"
-        ]
-      ],
+      "pairs": [["prallen so schnell auf", "mit großer Wucht landen"], ["sich kaum Bläschen bilden können", "wird fast keine Luft eingeschlossen"]],
       "explain": "무거운 빗방울은 너무 빠르게 부딪혀서 공기 방울이 거의 생기지 못한다는 뜻이에요. kaum(거의 ~않다)을 fast keine로 바꿔 말했어요. 공기 방울이 더 빨리 터진다는 말은 없고, 약한 비에서는 오히려 에어로졸이 더 많이 생겨요."
     },
     {
       "type": "mc",
       "kind": "inference",
       "q": "Was lässt sich aus Wehners Aussagen über den Untergrund schließen?",
-      "options": [
-        "Auf einem Feldweg dürfte der Regen kräftiger duften als auf einer Teerstraße.",
-        "Im Stadtgebiet dürfte der Regen stärker duften, weil Asphalt mehr Öle speichert.",
-        "Auf sandigem Grund dürfte der Regen schwächer duften als auf lehmigem Grund."
-      ],
+      "options": ["Auf einem Feldweg dürfte der Regen kräftiger duften als auf einer Teerstraße.", "Im Stadtgebiet dürfte der Regen stärker duften, weil Asphalt mehr Öle speichert.", "Auf sandigem Grund dürfte der Regen schwächer duften als auf lehmigem Grund."],
       "answer": 0,
       "evidence": "Sandige und lehmige Böden geben viel Duft ab – beide sind porös und voller Bakterien.",
-      "pairs": [
-        [
-          "Sandige und lehmige Böden",
-          "Feldweg"
-        ],
-        [
-          "Asphalt",
-          "Teerstraße"
-        ]
-      ],
+      "pairs": [["Sandige und lehmige Böden", "Feldweg"], ["Asphalt", "Teerstraße"]],
       "explain": "모래흙과 점토질 흙은 냄새를 많이 내고, 아스팔트는 빈틈없이 덮여 있어 도시에서는 비 냄새가 약하다고 해요. 그러므로 흙길이 포장도로보다 냄새가 강할 것이라고 추론할 수 있어요. 모래흙과 점토질 흙은 둘 다 냄새를 많이 낸다고 했으므로 둘 사이에 차이가 있다는 근거는 없어요."
     },
     {
@@ -238,58 +163,27 @@
       "q": "Wehner beschreibt, mit welchen Verfahren die Wasserwerke den erdigen Beigeschmack aus dem Leitungswasser beseitigen.",
       "answer": 2,
       "evidence": null,
-      "pairs": [
-        [
-          "Das kennen übrigens auch die Wasserwerke",
-          "die Wasserwerke"
-        ]
-      ],
+      "pairs": [["Das kennen übrigens auch die Wasserwerke", "die Wasserwerke"]],
       "explain": "베너 교수는 수도 사업소도 이 현상을 알고 있고, 수돗물의 흙 맛이 지오스민 때문인 경우가 많다고만 말해요. 그 맛을 어떤 방법으로 없애는지는 본문에 나오지 않아요."
     },
     {
       "type": "mc",
       "kind": "meaning",
       "q": "Was bedeutet „einleuchtend“ im Text?",
-      "options": [
-        "durch Messungen klar bestätigt",
-        "überraschend und kaum glaubhaft",
-        "logisch und gut nachvollziehbar"
-      ],
+      "options": ["durch Messungen klar bestätigt", "überraschend und kaum glaubhaft", "logisch und gut nachzuvollziehen"],
       "answer": 2,
       "evidence": "Das klingt einleuchtend, ist aber nicht belegt.",
-      "pairs": [
-        [
-          "einleuchtend",
-          "logisch und gut nachvollziehbar"
-        ],
-        [
-          "nicht belegt",
-          "durch Messungen klar bestätigt"
-        ]
-      ],
+      "pairs": [["einleuchtend", "logisch und gut nachzuvollziehen"], ["nicht belegt", "durch Messungen klar bestätigt"]],
       "explain": "einleuchtend는 '납득이 가는, 그럴듯한'이라는 뜻이에요. 문장 뒷부분에서 '그러나 증명되지는 않았다'고 하므로, 측정으로 확인되었다는 뜻일 수는 없어요."
     },
     {
       "type": "mc",
       "kind": "intent",
       "q": "Warum erwähnt Wehner, dass man niemanden aus der Steinzeit befragen kann?",
-      "options": [
-        "Er will humorvoll andeuten, dass Fachleute unsere Vorfahren unterschätzen.",
-        "Er will humorvoll andeuten, dass sich die Vermutung kaum überprüfen lässt.",
-        "Er will humorvoll andeuten, dass sich unser Geruchssinn stark gewandelt hat."
-      ],
+      "options": ["Er will humorvoll andeuten, dass Fachleute unsere Vorfahren unterschätzen.", "Er will humorvoll andeuten, dass sich die Vermutung kaum überprüfen lässt.", "Er will humorvoll andeuten, dass sich unser Geruchssinn stark gewandelt hat."],
       "answer": 1,
       "evidence": "Für eine solche These bräuchte man Daten, die sich kaum erheben lassen – wir können ja niemanden aus der Steinzeit befragen.",
-      "pairs": [
-        [
-          "Daten, die sich kaum erheben lassen",
-          "dass sich die Vermutung kaum überprüfen lässt"
-        ],
-        [
-          "These",
-          "Vermutung"
-        ]
-      ],
+      "pairs": [["Daten, die sich kaum erheben lassen", "dass sich die Vermutung kaum überprüfen lässt"], ["These", "Vermutung"]],
       "explain": "베너 교수는 이 주장을 뒷받침할 데이터를 거의 모을 수 없다고 말하고, 석기 시대 사람에게 물어볼 수 없다는 농담을 덧붙여요. 즉 조상에 관한 추측은 검증하기 어렵다는 점을 가볍게 말하려는 것이에요. 후각이 변했다거나 전문가들이 조상을 과소평가한다는 말은 없어요."
     }
   ],
@@ -303,69 +197,19 @@
         {
           "de": "Darüber hinaus spielen Öle eine Rolle, die manche Pflanzen in trockenen Phasen abgeben.",
           "ko": "그 밖에 일부 식물이 건조한 시기에 내보내는 기름 성분도 영향을 줘요.",
-          "mark": [
-            "Darüber hinaus",
-            "spielen"
-          ],
-          "parts": [
-            [
-              "Darüber hinaus",
-              "접속부사"
-            ],
-            [
-              "spielen",
-              "동사"
-            ],
-            [
-              "Öle",
-              "주어"
-            ],
-            [
-              "eine Rolle,",
-              "4격 목적어"
-            ],
-            [
-              "die manche Pflanzen in trockenen Phasen abgeben.",
-              "관계절"
-            ]
-          ]
+          "mark": ["Darüber hinaus", "spielen"],
+          "parts": [["Darüber hinaus", "접속부사"], ["spielen", "동사"], ["Öle", "주어"], ["eine Rolle,", "4격 목적어"], ["die manche Pflanzen in trockenen Phasen abgeben.", "관계절"]]
         },
         {
           "de": "Daher ist der Duft nach einer langen Trockenzeit besonders intensiv.",
           "ko": "그래서 건조한 날이 오래 이어진 뒤에는 냄새가 특히 강해요.",
-          "mark": [
-            "Daher",
-            "ist"
-          ],
-          "parts": [
-            [
-              "Daher",
-              "접속부사"
-            ],
-            [
-              "ist",
-              "동사"
-            ],
-            [
-              "der Duft",
-              "주어"
-            ],
-            [
-              "nach einer langen Trockenzeit",
-              "부사어(시간)"
-            ],
-            [
-              "besonders intensiv.",
-              "보어"
-            ]
-          ]
+          "mark": ["Daher", "ist"],
+          "parts": [["Daher", "접속부사"], ["ist", "동사"], ["der Duft", "주어"], ["nach einer langen Trockenzeit", "부사어(시간)"], ["besonders intensiv.", "보어"]]
         },
         {
           "de": "Darüber wird viel spekuliert.",
           "ko": "그에 대해서는 여러 추측이 있어요.",
-          "mark": [
-            "Darüber"
-          ]
+          "mark": ["Darüber"]
         }
       ],
       "tip": "대명부사는 사람이 아니라 사물이나 앞 문장의 내용을 가리킬 때만 써요. 사람을 가리킬 때는 über ihn, mit ihr처럼 전치사 + 인칭대명사를 써요."
@@ -379,49 +223,18 @@
         {
           "de": "Vor einigen Jahren hat eine Forschungsgruppe den Vorgang mit Hochgeschwindigkeitskameras gefilmt.",
           "ko": "몇 년 전 한 연구팀이 이 과정을 초고속 카메라로 촬영했어요.",
-          "mark": [
-            "einigen"
-          ],
-          "parts": [
-            [
-              "Vor einigen Jahren",
-              "부사어(시간)"
-            ],
-            [
-              "hat",
-              "동사"
-            ],
-            [
-              "eine Forschungsgruppe",
-              "주어"
-            ],
-            [
-              "den Vorgang",
-              "4격 목적어"
-            ],
-            [
-              "mit Hochgeschwindigkeitskameras",
-              "부사어(방법)"
-            ],
-            [
-              "gefilmt.",
-              "동사(끝)"
-            ]
-          ]
+          "mark": ["einigen"],
+          "parts": [["Vor einigen Jahren", "부사어(시간)"], ["hat", "동사"], ["eine Forschungsgruppe", "주어"], ["den Vorgang", "4격 목적어"], ["mit Hochgeschwindigkeitskameras", "부사어(방법)"], ["gefilmt.", "동사(끝)"]]
         },
         {
           "de": "Aus mehreren Bestandteilen, wenn Sie so wollen.",
           "ko": "말하자면 여러 성분으로 이루어져 있어요.",
-          "mark": [
-            "mehreren"
-          ]
+          "mark": ["mehreren"]
         },
         {
           "de": "Sandige und lehmige Böden geben viel Duft ab – beide sind porös und voller Bakterien.",
           "ko": "모래가 많은 흙과 점토질 흙은 냄새를 많이 내요. 둘 다 구멍이 많고 세균이 가득하거든요.",
-          "mark": [
-            "beide"
-          ]
+          "mark": ["beide"]
         }
       ],
       "tip": "mehreren은 aus 뒤, einigen은 vor 뒤의 3격 복수 형태예요. Dafür reichen schon wenige Milliardstel Gramm처럼 wenige는 '적은 수의'라는 뜻이고, ein paar(몇 개의)와 달리 '적다'는 점을 강조해요."
@@ -435,51 +248,18 @@
         {
           "de": "Wie das im Einzelnen passiert, hat man lange nicht gewusst.",
           "ko": "이 일이 구체적으로 어떻게 일어나는지는 오랫동안 알려지지 않았어요.",
-          "mark": [
-            "hat",
-            "gewusst"
-          ],
-          "parts": [
-            [
-              "Wie das im Einzelnen passiert,",
-              "종속절"
-            ],
-            [
-              "hat",
-              "동사"
-            ],
-            [
-              "man",
-              "주어"
-            ],
-            [
-              "lange",
-              "부사어(시간)"
-            ],
-            [
-              "nicht",
-              "부정어"
-            ],
-            [
-              "gewusst.",
-              "동사(끝)"
-            ]
-          ]
+          "mark": ["hat", "gewusst"],
+          "parts": [["Wie das im Einzelnen passiert,", "종속절"], ["hat", "동사"], ["man", "주어"], ["lange", "부사어(시간)"], ["nicht", "부정어"], ["gewusst.", "동사(끝)"]]
         },
         {
           "de": "Moment – meinen Sie, diese Stoffe sind schon vorher da, und wir riechen sie bloß nicht?",
           "ko": "잠깐만요. 그러니까 이 물질들이 이미 그전부터 있는데, 우리가 냄새를 못 맡을 뿐이라는 말씀인가요?",
-          "mark": [
-            "Moment",
-            "meinen Sie"
-          ]
+          "mark": ["Moment", "meinen Sie"]
         },
         {
           "de": "Durch sie werden die Duftstoffe vom Wind weitergetragen, manchmal ziemlich weit.",
           "ko": "이 에어로졸 덕분에 냄새 물질이 바람을 타고 퍼지는데, 때로는 꽤 멀리까지 가요.",
-          "mark": [
-            "manchmal ziemlich weit"
-          ]
+          "mark": ["manchmal ziemlich weit"]
         }
       ],
       "tip": "Geprägt haben ihn … zwei Forschende처럼 과거분사를 1번 자리에 두면 그 동작을 강조할 수 있어요. 이것도 말할 때 자주 쓰는 어순이에요."
@@ -493,145 +273,43 @@
         {
           "de": "Dieser Stoff wird von Bakterien produziert, die in der Erde leben.",
           "ko": "이 물질은 흙 속에 사는 세균이 만들어 내요.",
-          "mark": [
-            "wird",
-            "produziert",
-            "von Bakterien"
-          ],
-          "parts": [
-            [
-              "Dieser Stoff",
-              "주어"
-            ],
-            [
-              "wird",
-              "동사"
-            ],
-            [
-              "von Bakterien",
-              "기타"
-            ],
-            [
-              "produziert,",
-              "동사(끝)"
-            ],
-            [
-              "die in der Erde leben.",
-              "관계절"
-            ]
-          ]
+          "mark": ["wird", "produziert", "von Bakterien"],
+          "parts": [["Dieser Stoff", "주어"], ["wird", "동사"], ["von Bakterien", "기타"], ["produziert,", "동사(끝)"], ["die in der Erde leben.", "관계절"]]
         },
         {
           "de": "Wenn sie Sporen bilden, wird er freigesetzt.",
           "ko": "세균이 포자를 만들 때 이 물질이 방출돼요.",
-          "mark": [
-            "wird",
-            "freigesetzt"
-          ],
-          "parts": [
-            [
-              "Wenn sie Sporen bilden,",
-              "종속절"
-            ],
-            [
-              "wird",
-              "동사"
-            ],
-            [
-              "er",
-              "주어"
-            ],
-            [
-              "freigesetzt.",
-              "동사(끝)"
-            ]
-          ]
+          "mark": ["wird", "freigesetzt"],
+          "parts": [["Wenn sie Sporen bilden,", "종속절"], ["wird", "동사"], ["er", "주어"], ["freigesetzt.", "동사(끝)"]]
         },
         {
           "de": "Geosmin nehmen wir schon in Mengen wahr, die sich nur mit moderner Labortechnik nachweisen lassen.",
           "ko": "우리는 지오스민을 최신 실험 장비로만 검출할 수 있을 만큼 적은 양에서도 알아차려요.",
-          "mark": [
-            "sich",
-            "nachweisen lassen"
-          ]
+          "mark": ["sich", "nachweisen lassen"]
         }
       ],
       "tip": "관계절 안에서는 lassen이 문장 끝에 오고 그 바로 앞에 동사원형이 와요. (… die sich nachweisen lassen)"
     }
   ],
   "vocab": [
-    {
-      "de": "der Duft, -¨e",
-      "ko": "향기, 냄새"
-    },
-    {
-      "de": "wahr|nehmen (nimmt wahr, nahm wahr, hat wahrgenommen)",
-      "ko": "지각하다, 알아차리다"
-    },
-    {
-      "de": "geruchlos",
-      "ko": "냄새가 없는"
-    },
-    {
-      "de": "der Fachbegriff, -e",
-      "ko": "전문 용어"
-    },
-    {
-      "de": "prägen",
-      "ko": "(용어를) 만들어 내다"
-    },
-    {
-      "de": "der Bestandteil, -e",
-      "ko": "성분, 구성 요소"
-    },
-    {
-      "de": "frei|setzen",
-      "ko": "방출하다, 내보내다"
-    },
-    {
-      "de": "die Spore, -n",
-      "ko": "포자"
-    },
-    {
-      "de": "haften an + Dat.",
-      "ko": "~에 들러붙다"
-    },
-    {
-      "de": "der Vorgang, -¨e",
-      "ko": "과정, 진행"
-    },
-    {
-      "de": "porös",
-      "ko": "구멍이 많은, 다공성의"
-    },
-    {
-      "de": "platzen (ist geplatzt)",
-      "ko": "터지다"
-    },
-    {
-      "de": "auf|prallen (ist aufgeprallt)",
-      "ko": "부딪히다, 충돌하다"
-    },
-    {
-      "de": "der Wolkenbruch, -¨e",
-      "ko": "폭우"
-    },
-    {
-      "de": "der Untergrund (Sg.)",
-      "ko": "바닥, 지면"
-    },
-    {
-      "de": "nach|weisen (wies nach, hat nachgewiesen)",
-      "ko": "검출하다, 증명하다"
-    },
-    {
-      "de": "einleuchtend",
-      "ko": "납득이 가는, 그럴듯한"
-    },
-    {
-      "de": "spekulieren über + Akk.",
-      "ko": "~에 대해 추측하다"
-    }
+    { "de": "der Duft, -¨e", "ko": "향기, 냄새" },
+    { "de": "wahr|nehmen (nimmt wahr, nahm wahr, hat wahrgenommen)", "ko": "지각하다, 알아차리다" },
+    { "de": "geruchlos", "ko": "냄새가 없는" },
+    { "de": "der Fachbegriff, -e", "ko": "전문 용어" },
+    { "de": "prägen", "ko": "(용어를) 만들어 내다" },
+    { "de": "der Bestandteil, -e", "ko": "성분, 구성 요소" },
+    { "de": "frei|setzen", "ko": "방출하다, 내보내다" },
+    { "de": "die Spore, -n", "ko": "포자" },
+    { "de": "haften an + Dat.", "ko": "~에 들러붙다" },
+    { "de": "der Vorgang, -¨e", "ko": "과정, 진행" },
+    { "de": "porös", "ko": "구멍이 많은, 다공성의" },
+    { "de": "platzen (ist geplatzt)", "ko": "터지다" },
+    { "de": "auf|prallen (ist aufgeprallt)", "ko": "부딪히다, 충돌하다" },
+    { "de": "der Wolkenbruch, -¨e", "ko": "폭우" },
+    { "de": "der Untergrund (Sg.)", "ko": "바닥, 지면" },
+    { "de": "nach|weisen (wies nach, hat nachgewiesen)", "ko": "검출하다, 증명하다" },
+    { "de": "einleuchtend", "ko": "납득이 가는, 그럴듯한" },
+    { "de": "spekulieren über + Akk.", "ko": "~에 대해 추측하다" }
   ],
   "phrases": [
     {

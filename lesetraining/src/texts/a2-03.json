@@ -82,7 +82,7 @@
       "answer": 1,
       "evidence": "ein Kaninchen ist fast weggelaufen. Zum Glück hat ein Mitarbeiter es schnell gefangen.",
       "pairs": [["ist fast weggelaufen", "wollte nach draußen laufen"], ["hat ein Mitarbeiter es schnell gefangen", "jemand hat es gefangen"]],
-      "explain": "토끼는 '거의 도망갈 뻔했어요'(fast weggelaufen). fast가 중요해요. 실제로 사라진 것이 아니라 직원이 재빨리 잡았어요. 첫 번째 선택지는 fast를 빼고 토끼가 사라졌다고 해서 틀려요."
+      "explain": "토끼는 '거의 도망갈 뻔했어요'(fast weggelaufen). fast가 중요해요. 실제로 사라진 것이 아니라 직원이 재빨리 잡았어요. 'Es ist durch die offene Tür … gelaufen und war weg.'는 fast를 빼고 토끼가 사라졌다고 해서 틀려요."
     },
     {
       "type": "rf",

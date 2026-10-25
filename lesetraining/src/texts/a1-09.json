@@ -92,7 +92,7 @@
       "answer": 1,
       "evidence": "Heute scheint die Sonne wieder.",
       "pairs": [["scheint die Sonne", "sonnig"], ["scheint die Sonne wieder", "ohne Sonne"]],
-      "explain": "오늘은 다시 해가 나요(scheint die Sonne). 그러니까 날씨가 좋고 맑아요(sonnig). 하루 종일 비가 온 것은 어제의 날씨예요. 세 번째 보기에는 본문의 단어 trocken과 Sonne가 들어 있지만, 해가 나지 않는다는 내용은 본문과 반대예요."
+      "explain": "오늘은 다시 해가 나요(scheint die Sonne). 그러니까 날씨가 좋고 맑아요(sonnig). 하루 종일 비가 온 것은 어제의 날씨예요. 'Es ist trocken, aber ohne Sonne.'에는 본문의 단어 trocken과 Sonne가 들어 있지만, 해가 나지 않는다는 내용은 본문과 반대예요."
     },
     {
       "type": "rf",

@@ -7,11 +7,7 @@
   "type": "Dialog am Flohmarktstand",
   "typeKo": "벼룩시장 가판대 대화",
   "intro": "벼룩시장에서 아빠와 딸이 물건을 사다가 뜻밖의 물건을 발견해요.",
-  "focus": [
-    "3격 지배 동사 (gefallen, gehören …)",
-    "인칭대명사 3격",
-    "이름의 2격 (Mias, Mamas)"
-  ],
+  "focus": ["3격 지배 동사 (gefallen, gehören …)", "인칭대명사 3격", "이름의 2격 (Mias, Mamas)"],
   "paragraphs": [
     {
       "label": "Frau Kern",
@@ -106,35 +102,17 @@
       "q": "Murat entdeckt an der Lampe einen kleinen Schaden.",
       "answer": 0,
       "evidence": "dem Schirm fehlt ein kleines Stück",
-      "pairs": [
-        [
-          "dem Schirm fehlt ein kleines Stück",
-          "einen kleinen Schaden"
-        ]
-      ],
+      "pairs": [["dem Schirm fehlt ein kleines Stück", "einen kleinen Schaden"]],
       "explain": "무라트는 스탠드 갓에서 작은 조각이 떨어져 나갔다고 말해요. '조각이 없다(fehlt ein Stück)'를 '작은 손상(Schaden)'으로 바꿔 말했으므로 맞는 내용이에요."
     },
     {
       "type": "mc",
       "kind": "detail",
       "q": "Wie endet das Handeln um die Lampe?",
-      "options": [
-        "Frau Kern verlangt am Ende drei Euro weniger.",
-        "Frau Kern nimmt Murats Angebot von zehn Euro an.",
-        "Murat bezahlt fünfzehn Euro für die alte Lampe."
-      ],
+      "options": ["Frau Kern verlangt am Ende drei Euro weniger.", "Frau Kern nimmt Murats Angebot von zehn Euro an.", "Murat bezahlt fünfzehn Euro für die alte Lampe."],
       "answer": 0,
       "evidence": "Na ja … zwölf Euro.",
-      "pairs": [
-        [
-          "Fünfzehn Euro",
-          "drei Euro weniger"
-        ],
-        [
-          "zwölf Euro",
-          "drei Euro weniger"
-        ]
-      ],
+      "pairs": [["Fünfzehn Euro", "drei Euro weniger"], ["zwölf Euro", "drei Euro weniger"]],
       "explain": "처음 가격은 15유로였고 케른 씨는 12유로까지 내려 줘요. 15유로에서 3유로를 깎아 준 것이에요. 10유로는 무라트가 제안한 값이고, 15유로는 처음 가격일 뿐이에요."
     },
     {
@@ -143,92 +121,47 @@
       "q": "Murat kauft das Licht für sein eigenes Rad.",
       "answer": 1,
       "evidence": "Ich brauche auch noch ein Licht für das Fahrrad meiner Tochter.",
-      "pairs": [
-        [
-          "für das Fahrrad meiner Tochter",
-          "für sein eigenes Rad"
-        ]
-      ],
+      "pairs": [["für das Fahrrad meiner Tochter", "für sein eigenes Rad"]],
       "explain": "무라트는 딸의 자전거(das Fahrrad meiner Tochter)에 달 라이트가 필요하다고 해요. 자기 자전거에 달려는 것이 아니므로 틀린 내용이에요."
     },
     {
       "type": "mc",
       "kind": "paraphrase",
       "q": "Was bedeutet der Satz „Deine Puppen sitzen doch alle zu Hause im Regal.“?",
-      "options": [
-        "Murat meint, dass Lina zu viele Puppen im Zimmer hat.",
-        "Murat meint, dass Lina noch jede ihrer Puppen hat.",
-        "Murat meint, dass Lina die Puppe daheim lassen soll."
-      ],
+      "options": ["Murat meint, dass Lina zu viele Puppen im Zimmer hat.", "Murat meint, dass Lina noch jede ihrer Puppen hat.", "Murat meint, dass Lina die Puppe daheim lassen soll."],
       "answer": 1,
       "evidence": "Deine Puppen sitzen doch alle zu Hause im Regal.",
-      "pairs": [
-        [
-          "alle zu Hause im Regal",
-          "noch jede ihrer Puppen hat"
-        ]
-      ],
+      "pairs": [["alle zu Hause im Regal", "noch jede ihrer Puppen hat"]],
       "explain": "아빠는 리나의 인형이 전부 집 선반에 있다고 말해요. 그러니까 리나가 인형을 하나도 내놓지 않았다고 생각하는 거예요. 인형이 너무 많다거나 집에 두라는 말은 하지 않아요."
     },
     {
       "type": "mc",
       "kind": "detail",
       "q": "Woher hat Mia die Puppe?",
-      "options": [
-        "Mia hat sie von ihrer Oma zu ihrem Geburtstag bekommen.",
-        "Mia hat sie im Frühling von Linas Mutter bekommen.",
-        "Mia hat sie bei einem Verkauf an einer Schule gekauft."
-      ],
+      "options": ["Mia hat sie von ihrer Oma zum Geburtstag bekommen.", "Mia hat sie im Frühling von Linas Mutter bekommen.", "Mia hat sie bei einem Verkauf an einer Schule gekauft."],
       "answer": 2,
       "evidence": "meine Enkelin hat sie auf einem Schulflohmarkt gekauft",
-      "pairs": [
-        [
-          "auf einem Schulflohmarkt gekauft",
-          "bei einem Verkauf an einer Schule gekauft"
-        ]
-      ],
+      "pairs": [["auf einem Schulflohmarkt gekauft", "bei einem Verkauf an einer Schule gekauft"]],
       "explain": "케른 씨는 손녀가 학교 벼룩시장에서 인형을 샀다고 해요. 생일 선물(Geburtstag)과 엄마는 본문에 나오지만, 리나가 엄마에게 받은 선물 이야기예요."
     },
     {
       "type": "mc",
       "kind": "inference",
       "q": "Warum sagt Frau Kern „Gestohlen habe ich sie aber nicht!“?",
-      "options": [
-        "Sie denkt, dass Mia die Puppe an der Schule genommen hat.",
-        "Sie fürchtet, dass die Familie sie für eine Diebin hält.",
-        "Sie möchte, dass Murat für die Puppe den vollen Preis zahlt."
-      ],
+      "options": ["Sie denkt, dass Mia die Puppe an der Schule genommen hat.", "Sie fürchtet, dass die Familie sie für eine Diebin hält.", "Sie möchte, dass Murat für die Puppe den vollen Preis zahlt."],
       "answer": 1,
       "evidence": "Moment – gehört die Puppe etwa euch?",
-      "pairs": [
-        [
-          "Gestohlen habe ich sie aber nicht!",
-          "sie für eine Diebin hält"
-        ]
-      ],
+      "pairs": [["Gestohlen habe ich sie aber nicht!", "sie für eine Diebin hält"]],
       "explain": "리나가 인형이 자기 것이라고 하자 케른 씨는 혹시 그 인형이 두 분 거냐고 묻고, 바로 자기가 훔친 게 아니라고 말해요. 가족이 자기를 도둑으로 오해할까 봐 걱정하는 거예요. 미아는 인형을 샀고, 인형 값은 오히려 깎아 줘요."
     },
     {
       "type": "mc",
       "kind": "detail",
       "q": "Was bekommt Murat am Schluss von Frau Kern?",
-      "options": [
-        "Er bekommt zwei Euro wieder und ein Licht umsonst.",
-        "Er bekommt eine Tasche und zahlt drei Euro dafür.",
-        "Er bekommt Wechselgeld und eine Tasche umsonst."
-      ],
+      "options": ["Er bekommt zwei Euro wieder und ein Licht umsonst.", "Er bekommt eine Tasche und zahlt drei Euro dafür.", "Er bekommt Wechselgeld und eine Tasche umsonst."],
       "answer": 2,
       "evidence": "Drei Euro zurück – und die Stofftasche bekommen Sie gratis dazu.",
-      "pairs": [
-        [
-          "Drei Euro zurück",
-          "Wechselgeld"
-        ],
-        [
-          "gratis",
-          "umsonst"
-        ]
-      ],
+      "pairs": [["Drei Euro zurück", "Wechselgeld"], ["gratis", "umsonst"]],
       "explain": "케른 씨는 거스름돈 3유로를 주고 천 가방을 공짜로(gratis) 줘요. Drei Euro zurück를 Wechselgeld(거스름돈)로, gratis를 umsonst로 바꿔 말했어요. 라이트는 3유로를 내고 샀어요."
     }
   ],
@@ -242,59 +175,19 @@
         {
           "de": "Die grüne gefällt mir.",
           "ko": "초록색 스탠드가 마음에 들어요.",
-          "mark": [
-            "gefällt",
-            "mir"
-          ],
-          "parts": [
-            [
-              "Die grüne",
-              "주어"
-            ],
-            [
-              "gefällt",
-              "동사"
-            ],
-            [
-              "mir.",
-              "3격 목적어"
-            ]
-          ]
+          "mark": ["gefällt", "mir"],
+          "parts": [["Die grüne", "주어"], ["gefällt", "동사"], ["mir.", "3격 목적어"]]
         },
         {
           "de": "Hm, dem Schirm fehlt ein kleines Stück.",
           "ko": "음, 갓에서 작은 조각이 하나 떨어져 나갔네요.",
-          "mark": [
-            "dem Schirm",
-            "fehlt"
-          ],
-          "parts": [
-            [
-              "Hm,",
-              "기타"
-            ],
-            [
-              "dem Schirm",
-              "3격 목적어"
-            ],
-            [
-              "fehlt",
-              "동사"
-            ],
-            [
-              "ein kleines Stück.",
-              "주어"
-            ]
-          ]
+          "mark": ["dem Schirm", "fehlt"],
+          "parts": [["Hm,", "기타"], ["dem Schirm", "3격 목적어"], ["fehlt", "동사"], ["ein kleines Stück.", "주어"]]
         },
         {
           "de": "Oh, die steht Ihrer Tochter gut!",
           "ko": "어머, 따님한테 잘 어울리네요!",
-          "mark": [
-            "steht",
-            "Ihrer Tochter",
-            "gut"
-          ]
+          "mark": ["steht", "Ihrer Tochter", "gut"]
         }
       ],
       "tip": "영어의 like처럼 사람을 주어로 쓰면 안 돼요. Ich gefalle die Lampe.는 틀린 문장이고, Die Lampe gefällt mir.가 맞아요."
@@ -308,67 +201,19 @@
         {
           "de": "Billiger gebe ich sie Ihnen nicht.",
           "ko": "그보다 싸게는 못 드려요.",
-          "mark": [
-            "sie Ihnen"
-          ],
-          "parts": [
-            [
-              "Billiger",
-              "부사어(방법)"
-            ],
-            [
-              "gebe",
-              "동사"
-            ],
-            [
-              "ich",
-              "주어"
-            ],
-            [
-              "sie",
-              "4격 목적어"
-            ],
-            [
-              "Ihnen",
-              "3격 목적어"
-            ],
-            [
-              "nicht.",
-              "부정어"
-            ]
-          ]
+          "mark": ["sie Ihnen"],
+          "parts": [["Billiger", "부사어(방법)"], ["gebe", "동사"], ["ich", "주어"], ["sie", "4격 목적어"], ["Ihnen", "3격 목적어"], ["nicht.", "부정어"]]
         },
         {
           "de": "Lina, die gehört dir nicht.",
           "ko": "리나, 그건 네 것이 아니에요.",
-          "mark": [
-            "gehört dir"
-          ]
+          "mark": ["gehört dir"]
         },
         {
           "de": "Papa, hilfst du mir?",
           "ko": "아빠, 좀 도와주실래요?",
-          "mark": [
-            "mir"
-          ],
-          "parts": [
-            [
-              "Papa,",
-              "기타"
-            ],
-            [
-              "hilfst",
-              "동사"
-            ],
-            [
-              "du",
-              "주어"
-            ],
-            [
-              "mir?",
-              "3격 목적어"
-            ]
-          ]
+          "mark": ["mir"],
+          "parts": [["Papa,", "기타"], ["hilfst", "동사"], ["du", "주어"], ["mir?", "3격 목적어"]]
         }
       ],
       "tip": "존칭 Sie의 3격은 대문자 Ihnen이에요. 소문자 ihnen은 '그들에게'라는 뜻이에요."
@@ -382,99 +227,38 @@
         {
           "de": "Das war Mamas Geschenk zum Geburtstag.",
           "ko": "엄마가 생일 선물로 주신 인형이었어요.",
-          "mark": [
-            "Mamas Geschenk"
-          ],
-          "parts": [
-            [
-              "Das",
-              "주어"
-            ],
-            [
-              "war",
-              "동사"
-            ],
-            [
-              "Mamas Geschenk zum Geburtstag.",
-              "보어"
-            ]
-          ]
+          "mark": ["Mamas Geschenk"],
+          "parts": [["Das", "주어"], ["war", "동사"], ["Mamas Geschenk zum Geburtstag.", "보어"]]
         },
         {
           "de": "Lina, eigentlich kostet Mias Puppe vier Euro.",
           "ko": "리나, 원래 미아의 인형은 4유로예요.",
-          "mark": [
-            "Mias Puppe"
-          ]
+          "mark": ["Mias Puppe"]
         },
         {
           "de": "Ich brauche auch noch ein Licht für das Fahrrad meiner Tochter.",
           "ko": "딸아이 자전거에 달 라이트도 하나 필요해요.",
-          "mark": [
-            "das Fahrrad meiner Tochter"
-          ]
+          "mark": ["das Fahrrad meiner Tochter"]
         }
       ],
       "tip": "영어처럼 아포스트로피를 쓰지 않아요. Mia's Puppe가 아니라 Mias Puppe라고 써요."
     }
   ],
   "vocab": [
-    {
-      "de": "der Flohmarkt, -¨e",
-      "ko": "벼룩시장"
-    },
-    {
-      "de": "die Lampe, -n",
-      "ko": "전등, 스탠드"
-    },
-    {
-      "de": "der Schreibtisch, -e",
-      "ko": "책상"
-    },
-    {
-      "de": "der Schirm, -e",
-      "ko": "(전등의) 갓"
-    },
-    {
-      "de": "das Stück, -e",
-      "ko": "조각, 부분"
-    },
-    {
-      "de": "die Puppe, -n",
-      "ko": "인형"
-    },
-    {
-      "de": "das Regal, -e",
-      "ko": "선반, 책장"
-    },
-    {
-      "de": "die Enkelin, -nen",
-      "ko": "손녀"
-    },
-    {
-      "de": "das Geschenk, -e",
-      "ko": "선물"
-    },
-    {
-      "de": "die Stofftasche, -n",
-      "ko": "천 가방"
-    },
-    {
-      "de": "gefallen (gefällt, gefiel, hat gefallen) + Dat.",
-      "ko": "~의 마음에 들다"
-    },
-    {
-      "de": "gehören + Dat.",
-      "ko": "~의 것이다"
-    },
-    {
-      "de": "fehlen + Dat.",
-      "ko": "~에게 없다, 빠져 있다"
-    },
-    {
-      "de": "stehlen (stiehlt, stahl, hat gestohlen)",
-      "ko": "훔치다"
-    }
+    { "de": "der Flohmarkt, -¨e", "ko": "벼룩시장" },
+    { "de": "die Lampe, -n", "ko": "전등, 스탠드" },
+    { "de": "der Schreibtisch, -e", "ko": "책상" },
+    { "de": "der Schirm, -e", "ko": "(전등의) 갓" },
+    { "de": "das Stück, -e", "ko": "조각, 부분" },
+    { "de": "die Puppe, -n", "ko": "인형" },
+    { "de": "das Regal, -e", "ko": "선반, 책장" },
+    { "de": "die Enkelin, -nen", "ko": "손녀" },
+    { "de": "das Geschenk, -e", "ko": "선물" },
+    { "de": "die Stofftasche, -n", "ko": "천 가방" },
+    { "de": "gefallen (gefällt, gefiel, hat gefallen) + Dat.", "ko": "~의 마음에 들다" },
+    { "de": "gehören + Dat.", "ko": "~의 것이다" },
+    { "de": "fehlen + Dat.", "ko": "~에게 없다, 빠져 있다" },
+    { "de": "stehlen (stiehlt, stahl, hat gestohlen)", "ko": "훔치다" }
   ],
   "phrases": [
     {
