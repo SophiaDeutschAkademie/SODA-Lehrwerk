@@ -1,0 +1,196 @@
+{
+  "id": "a1-11",
+  "level": "A1",
+  "no": 11,
+  "title": "Das Wetter in dieser Woche",
+  "titleKo": "이번 주 날씨",
+  "type": "Wettervorhersage (Radio)",
+  "typeKo": "라디오 일기 예보",
+  "intro": "함부르크와 킬의 월요일부터 일요일까지 날씨를 알려 주는 라디오 예보예요.",
+  "focus": ["비인칭 주어 es", "am + 요일 · 하루의 때", "sein + 형용사 · 기온"],
+  "paragraphs": [
+    {
+      "de": "Guten Morgen! Hier ist das Wetter für Hamburg und Kiel. Im Norden gibt es diese Woche fast alles: Regen, Wind, Nebel, Sonne und Gewitter.",
+      "ko": "안녕하세요! 함부르크와 킬의 날씨예요. 이번 주 북부 지역에는 비, 바람, 안개, 햇빛, 뇌우까지 거의 모든 날씨가 있어요."
+    },
+    {
+      "de": "Am Montag und am Dienstag regnet es viel. Es ist kalt: Am Tag sind es nur 6 Grad, in der Nacht minus 1 Grad. Nehmen Sie eine Regenjacke mit!",
+      "ko": "월요일과 화요일에는 비가 많이 와요. 날씨가 추워요. 낮에는 6도밖에 안 되고, 밤에는 영하 1도예요. 우비를 챙기세요!"
+    },
+    {
+      "de": "Am Mittwoch regnet es nicht, aber es ist windig. Morgens gibt es in Kiel Nebel. Am Nachmittag kommt die Sonne.",
+      "ko": "수요일에는 비가 오지 않지만 바람이 많이 불어요. 아침에는 킬에 안개가 껴요. 오후에는 해가 나와요."
+    },
+    {
+      "de": "Am Donnerstag und am Freitag ist es sonnig und warm, bis 19 Grad. Die Sonne ist schon stark. Vergessen Sie die Sonnencreme nicht!",
+      "ko": "목요일과 금요일에는 날씨가 맑고 따뜻해요. 기온이 19도까지 올라가요. 햇빛이 벌써 강해요. 자외선 차단제를 잊지 마세요!"
+    },
+    {
+      "de": "Am Samstag ist es noch warm, aber am Abend gibt es Gewitter. Möchten Sie grillen? Dann grillen Sie lieber am Mittag! Am Sonntag ist es wieder kühl, nur 12 Grad, und es regnet.",
+      "ko": "토요일에도 아직 따뜻하지만 저녁에는 천둥 번개가 쳐요. 바비큐를 하고 싶으세요? 그러면 점심때 하는 게 좋아요! 일요일에는 다시 쌀쌀해요. 기온이 12도밖에 안 되고 비가 와요."
+    },
+    {
+      "style": "meta",
+      "de": "Das war das Wetter mit Lena Brodersen. Schöne Woche!",
+      "ko": "지금까지 레나 브로더젠이 전해 드린 날씨였어요. 즐거운 한 주 보내세요!"
+    }
+  ],
+  "questions": [
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wie ist das Wetter am Anfang der Woche?",
+      "options": ["Es gibt viel Regen und tiefe Temperaturen.", "Es gibt keinen Regen, aber sehr viel Wind.", "Es gibt viel Regen, aber hohe Temperaturen."],
+      "answer": 0,
+      "evidence": "Am Montag und am Dienstag regnet es viel. Es ist kalt",
+      "pairs": [["Am Montag und am Dienstag", "am Anfang der Woche"], ["regnet es viel", "viel Regen"], ["Es ist kalt", "tiefe Temperaturen"]],
+      "explain": "월요일과 화요일, 즉 한 주의 시작에는 비가 많이 오고 추워요(낮 6도, 밤 영하 1도). '비는 없고 바람이 많다'는 수요일 날씨이고, '기온이 높다'는 목요일과 금요일 날씨예요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Am Montag ist es nachts unter null Grad.",
+      "answer": 0,
+      "evidence": "in der Nacht minus 1 Grad",
+      "pairs": [["in der Nacht", "nachts"], ["minus 1 Grad", "unter null Grad"]],
+      "explain": "월요일과 화요일 밤에는 영하 1도예요. 영하 1도는 0도보다 낮은 온도라서 맞는 문장이에요. in der Nacht가 문제에서는 nachts로 바뀌었어요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wie ist das Wetter am Mittwochmorgen in Kiel?",
+      "options": ["Es ist sonnig, und es ist schon hell.", "Es ist nass, und der Regen ist stark.", "Es ist neblig, und man sieht wenig."],
+      "answer": 2,
+      "evidence": "Morgens gibt es in Kiel Nebel.",
+      "pairs": [["Morgens", "Mittwochmorgen"], ["gibt es in Kiel Nebel", "Es ist neblig"]],
+      "explain": "수요일 아침 킬에는 안개(Nebel)가 껴요. 명사 Nebel이 형용사 neblig로 바뀌었어요. 해는 오후에야 나오고, 수요일에는 비가 오지 않아요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Am Freitag sind es fast 20 Grad.",
+      "answer": 0,
+      "evidence": "Am Donnerstag und am Freitag ist es sonnig und warm, bis 19 Grad.",
+      "pairs": [["bis 19 Grad", "fast 20 Grad"]],
+      "explain": "목요일과 금요일에는 기온이 19도까지 올라가요. 19도는 거의 20도라서 맞는 문장이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "q": "Wann soll man am Samstag grillen, und warum?",
+      "options": ["Um 19 Uhr, denn dann ist die Luft noch warm.", "Um 12 Uhr, denn abends kommt ein Gewitter.", "Um 8 Uhr, denn dann scheint schon die Sonne."],
+      "answer": 1,
+      "evidence": "Dann grillen Sie lieber am Mittag!",
+      "pairs": [["am Mittag", "Um 12 Uhr"], ["am Abend gibt es Gewitter", "abends kommt ein Gewitter"]],
+      "explain": "예보는 바비큐를 점심때(12시쯤) 하라고 해요. 토요일 저녁에 뇌우(Gewitter)가 있기 때문이에요. 토요일이 따뜻하다는 말은 맞지만, 저녁 7시는 뇌우가 있는 시간이에요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Am Sonntag ist das Wetter schön und warm.",
+      "answer": 1,
+      "evidence": "Am Sonntag ist es wieder kühl, nur 12 Grad, und es regnet.",
+      "pairs": [["wieder kühl", "schön und warm"], ["es regnet", "schön"]],
+      "explain": "본문에서 일요일은 다시 서늘하고(wieder kühl) 12도이며 비가 와요(es regnet). 문제는 '날씨가 좋고 따뜻하다'고 했으니 틀린 내용이에요. 따뜻한 날은 토요일까지예요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "비인칭 주어 es",
+      "term": "unpersönliches es",
+      "explain": "날씨를 말할 때는 주어로 es를 써요. 이 es는 특정한 물건을 가리키지 않아요. es regnet(비가 와요), es ist kalt(추워요), es gibt Nebel(안개가 껴요)처럼 써요. 시간 표현이 1번 자리에 오면 동사가 2번 자리에 오고, es는 동사 바로 뒤로 가요.",
+      "pattern": "(시간 표현) + regnet / ist / gibt + es + …",
+      "examples": [
+        {
+          "de": "Am Montag und am Dienstag regnet es viel.",
+          "ko": "월요일과 화요일에는 비가 많이 와요.",
+          "mark": ["regnet es"],
+          "parts": [["Am Montag und am Dienstag", "부사어(시간)"], ["regnet", "동사"], ["es", "주어"], ["viel.", "부사어"]]
+        },
+        {
+          "de": "Morgens gibt es in Kiel Nebel.",
+          "ko": "아침에는 킬에 안개가 껴요.",
+          "mark": ["gibt es"],
+          "parts": [["Morgens", "부사어(시간)"], ["gibt", "동사"], ["es", "주어"], ["in Kiel", "부사어(장소)"], ["Nebel.", "4격 목적어"]]
+        }
+      ],
+      "tip": "es를 빼면 안 돼요. Am Montag regnet viel은 틀린 문장이에요. es gibt 뒤에는 4격이 와요(es gibt einen Regenbogen)."
+    },
+    {
+      "title": "am + 요일 · 하루의 때",
+      "term": "Zeitangaben: am Montag, am Abend, morgens, in der Nacht",
+      "explain": "요일 앞에는 am을 써요(am Montag, am Samstag). 하루의 때도 대부분 am과 함께 써요(am Mittag, am Nachmittag, am Abend). 밤만 in der Nacht예요. morgens는 '아침에, 아침마다'라는 뜻의 부사라서 전치사 없이 써요. 이 글에서는 시간 표현이 거의 늘 1번 자리에 와요.",
+      "pattern": "am + 요일 / am + Mittag · Nachmittag · Abend / in der Nacht / morgens",
+      "examples": [
+        {
+          "de": "Am Samstag ist es noch warm, aber am Abend gibt es Gewitter.",
+          "ko": "토요일에도 아직 따뜻하지만 저녁에는 천둥 번개가 쳐요.",
+          "mark": ["Am Samstag", "am Abend"],
+          "parts": [["Am Samstag", "부사어(시간)"], ["ist", "동사"], ["es", "주어"], ["noch", "부사어(시간)"], ["warm,", "보어"], ["aber", "접속사"], ["am Abend", "부사어(시간)"], ["gibt", "동사"], ["es", "주어"], ["Gewitter.", "4격 목적어"]]
+        },
+        {
+          "de": "Am Nachmittag kommt die Sonne.",
+          "ko": "오후에는 해가 나와요.",
+          "mark": ["Am Nachmittag"],
+          "parts": [["Am Nachmittag", "부사어(시간)"], ["kommt", "동사"], ["die Sonne.", "주어"]]
+        }
+      ],
+      "tip": "am은 an + dem이에요. 시각 앞에는 am이 아니라 um을 써요(um 12 Uhr). aber는 1번 자리를 차지하지 않아요. 그래서 aber 뒤의 am Abend가 1번 자리이고, 동사 gibt가 2번 자리예요."
+    },
+    {
+      "title": "sein + 형용사 · 기온 말하기",
+      "term": "sein + Adjektiv, Temperaturangaben",
+      "explain": "날씨가 어떤지는 es ist + 형용사로 말해요(es ist kalt, warm, sonnig, windig, kühl). 이때 형용사는 어미가 붙지 않고 기본형 그대로예요. 기온은 숫자 + Grad로 말해요. 영하는 숫자 앞에 minus를 붙여요(minus 1 Grad). 기온을 말할 때는 es sind + 숫자 + Grad를 써요. 동사가 es가 아니라 뒤의 '6 Grad'(여러 도, 복수)에 맞추기 때문에 ist가 아니라 sind가 돼요.",
+      "pattern": "es ist + 형용사 · es sind + 숫자 + Grad",
+      "examples": [
+        {
+          "de": "Am Donnerstag und am Freitag ist es sonnig und warm, bis 19 Grad.",
+          "ko": "목요일과 금요일에는 날씨가 맑고 따뜻해요. 기온이 19도까지 올라가요.",
+          "mark": ["ist es sonnig und warm", "19 Grad"],
+          "parts": [["Am Donnerstag und am Freitag", "부사어(시간)"], ["ist", "동사"], ["es", "주어"], ["sonnig und warm,", "보어"], ["bis 19 Grad.", "기타"]]
+        },
+        {
+          "de": "Am Tag sind es nur 6 Grad, in der Nacht minus 1 Grad.",
+          "ko": "낮에는 6도밖에 안 되고, 밤에는 영하 1도예요.",
+          "mark": ["sind es", "6 Grad", "minus 1 Grad"],
+          "parts": [["Am Tag", "부사어(시간)"], ["sind", "동사"], ["es", "주어"], ["nur 6 Grad,", "보어"], ["in der Nacht", "부사어(시간)"], ["minus 1 Grad.", "보어"]]
+        }
+      ],
+      "tip": "숫자 뒤에서 Grad는 복수라도 모양이 바뀌지 않아요(6 Grad, 19 Grad, Grade가 아님). 형용사가 명사 앞에 오면 어미가 붙지만(ein kalter Tag), sein 뒤에서는 어미가 붙지 않아요(es ist kalt)."
+    }
+  ],
+  "vocab": [
+    { "de": "das Wetter (Sg.)", "ko": "날씨" },
+    { "de": "der Regen (Sg.)", "ko": "비" },
+    { "de": "regnen (es regnet)", "ko": "비가 오다" },
+    { "de": "windig", "ko": "바람이 부는" },
+    { "de": "der Nebel, -", "ko": "안개" },
+    { "de": "das Gewitter, -", "ko": "뇌우, 천둥 번개" },
+    { "de": "sonnig", "ko": "해가 나는, 맑은" },
+    { "de": "kühl", "ko": "쌀쌀한, 서늘한" },
+    { "de": "der Grad, -e", "ko": "(온도의) 도 (숫자 뒤에서는 형태 그대로: 6 Grad)" },
+    { "de": "die Regenjacke, -n", "ko": "우비, 방수 재킷" },
+    { "de": "die Sonnencreme, -s", "ko": "자외선 차단제, 선크림" },
+    { "de": "mit|nehmen (nimmt mit, nahm mit, hat mitgenommen)", "ko": "가지고 가다, 챙기다" }
+  ],
+  "phrases": [
+    {
+      "de": "im Norden",
+      "ko": "북부에서, 북쪽 지방에서",
+      "ex": "Im Norden gibt es diese Woche fast alles: Regen, Wind, Nebel, Sonne und Gewitter.",
+      "exko": "이번 주 북부 지역에는 비, 바람, 안개, 햇빛, 뇌우까지 거의 모든 날씨가 있어요."
+    },
+    {
+      "de": "Es sind … Grad.",
+      "ko": "기온이 …도이다",
+      "ex": "Am Tag sind es nur 6 Grad, in der Nacht minus 1 Grad.",
+      "exko": "낮에는 6도밖에 안 되고, 밤에는 영하 1도예요."
+    },
+    {
+      "de": "Vergessen Sie … nicht!",
+      "ko": "…을/를 잊지 마세요",
+      "ex": "Vergessen Sie die Sonnencreme nicht!",
+      "exko": "자외선 차단제를 잊지 마세요!"
+    }
+  ]
+}
