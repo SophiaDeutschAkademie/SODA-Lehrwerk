@@ -1,6 +1,6 @@
 # SODA Lehrwerk
 
-Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 일곱 가지 학습 자료를 골라 열 수 있어요.
+Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 여덟 가지 학습 자료를 골라 열 수 있어요.
 
 ## 학습 자료
 
@@ -9,12 +9,13 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `grammatik/` | Lehrwerk Grammatik | 문법 교재, Lektion 37개 |
 | `lesetraining/` | SODA Lesetraining | 독해 훈련, A1–C1, 텍스트 50개 |
 | `hoertraining/` | Lehrwerk Hörtraining | 듣기 훈련, A1–C1, 80세트 |
+| `sprechtraining/` | SODA Sprechtraining | 말하기 훈련, A1–C1과 MZ 구어체, 대화 36개, 독일어 음성 433줄 |
 | `praepositionen/` | SODA Präpositionen | 독일어 전치사의 모든 것, 전치사 80개, 비교, 퀴즈 |
 | `verben-mit-praepositionen/` | Verben mit Präpositionen | 동사와 전치사 결합 플래시카드, A1–C2, 324장 |
 | `nomen-verb-verbindungen/` | Nomen-Verb-Verbindungen | 명사와 동사 연어 플래시카드, A1–C2, 317장 |
 | `redemittel/` | SODA Alltagsredemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
 
-루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grundlagen / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 업데이트 예정 카드로 들어 있어요. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
+루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grundlagen / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 Training 묶음에 들어 있어요. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
 
 ## 웹 주소로 열기 (GitHub Pages)
 
@@ -33,6 +34,7 @@ assets/           표지와 목차에 쓰는 로고, 글꼴
 grammatik/        SODA-Lehrwerk-Grammatik 저장소의 내용
 lesetraining/     SODA-Lehrwerk-Lesetraining 저장소의 내용
 hoertraining/     SODA-Lehrwerk-Hoertraining 저장소의 내용
+sprechtraining/   SODA-SPRECHTRAINING 저장소의 내용 (대화 앱, 음성 mp3 포함)
 praepositionen/   이 저장소(SODA-PRP)에 있던 전치사 앱
 verben-mit-praepositionen/   SODA-VP 저장소의 내용
 nomen-verb-verbindungen/     SODA-NVV 저장소의 내용
