@@ -2,7 +2,14 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FAFAF8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Redemittel">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <title>SODA REDEMITTEL</title>
 <style>
 :root{
@@ -18,6 +25,7 @@ body{
 }
 .wrap{max-width:760px; margin:0 auto; padding:28px 18px 48px}
 header{margin-bottom:22px}
+header .to-cover{display:inline-block;font-size:12px;color:var(--sub);text-decoration:none;margin-bottom:8px}
 header .eyebrow{font-size:12px; letter-spacing:.08em; color:var(--sub); font-weight:600}
 header h1{margin:6px 0 4px; font-size:26px; font-weight:700; letter-spacing:-.01em}
 header p{margin:0; color:var(--sub); font-size:14px}
@@ -128,11 +136,45 @@ header p{margin:0; color:var(--sub); font-size:14px}
   .de{font-size:16.5px}
   header h1{font-size:22px}
 }
+/* ===== SODA 공통 표지 (모든 학습 자료 동일) ===== */
+.uc{--uc-accent:#384568;--uc-accent-d:#2C3754;--uc-ink:#1E1E1E;--uc-mut:#666;--uc-bd:#E0E0DB;--uc-bg:#FAFAF8;--uc-btn-ink:#fff;box-sizing:border-box;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;padding:clamp(24px,4vw,48px) clamp(24px,7vw,112px);padding-bottom:max(clamp(24px,3vw,36px),env(safe-area-inset-bottom));background:var(--uc-bg);color:var(--uc-ink);text-align:left;line-height:1.6;font-family:'SODA Latin','Pretendard Variable','Pretendard','Noto Sans KR',system-ui,-apple-system,'Apple SD Gothic Neo',sans-serif;-webkit-font-smoothing:antialiased}
+.uc[hidden]{display:none!important}
+.uc *{box-sizing:border-box}
+.uc-brand{display:flex;align-items:center;gap:18px;animation:ucFade .9s .05s ease both}
+.uc-logo{display:block;height:58px;width:auto;flex:none}
+.uc-brand-t{display:flex;flex-direction:column;line-height:1.25}
+.uc-brand-t b{font-size:21px;font-weight:700;letter-spacing:.2px}
+.uc-brand-t span{font-size:15px;color:var(--uc-mut);font-weight:500}
+.uc-hero{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(48px,10vh,120px) 0}
+.uc-title{margin:0;padding:0;font-size:clamp(34px,11.2vw,140px);line-height:1.02;letter-spacing:-.045em;color:var(--uc-accent);animation:ucRise 1s .15s cubic-bezier(.2,.7,.2,1) both}
+.uc-title span{display:block}
+.uc-title .t1{font-weight:800}
+.uc-title .t2{font-weight:300;color:var(--uc-ink);letter-spacing:-.04em}
+.uc-title.long{font-size:clamp(34px,9.6vw,112px)}
+.uc-cta{margin-top:clamp(40px,7vh,64px);align-self:flex-start;display:inline-flex;align-items:center;gap:14px;height:56px;min-width:0;padding:0 26px 0 30px;border:0;border-radius:10px;background:var(--uc-accent);color:var(--uc-btn-ink);font:inherit;font-size:16px;font-weight:700;letter-spacing:.2px;text-decoration:none;cursor:pointer;transition:background .2s,gap .25s cubic-bezier(.2,.7,.2,1);animation:ucRise 1s .4s cubic-bezier(.2,.7,.2,1) both}
+.uc-cta svg{width:18px;height:18px}
+.uc-cta:hover{background:var(--uc-accent-d);gap:20px}
+.uc-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--uc-bd);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--uc-mut);font-weight:600;animation:ucFade 1s .6s ease both}
+.uc .sx-install{align-self:flex-start;margin-top:14px;padding:6px 2px;color:var(--uc-mut);font-size:14px}
+@keyframes ucRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes ucFade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.uc *{animation:none!important;transition:none!important}}
+/* ===== /SODA 공통 표지 ===== */
 </style>
+<link rel="stylesheet" href="../assets/pretendard.css">
 </head>
-<body>
+<section class="uc" id="v-cover">
+  <header class="uc-brand"><svg class="uc-logo" viewBox="0 0 1157 1333" aria-hidden="true" focusable="false"><path fill="#57585A" d="M0 348.6 686 0v678.2L0 1026.8z"/><path fill="#ED1C24" d="M235.4 501.5 921.4 153v678.2l-686 348.6z"/><path fill="#F3C811" d="M470.8 654.3 1156.8 305.7v678.2l-686 348.6z"/></svg><div class="uc-brand-t"><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div></header>
+  <div class="uc-hero">
+    <h1 class="uc-title"><span class="t1">SODA</span><span class="t2">REDEMITTEL</span></h1>
+    <button class="uc-cta" id="btn-start" type="button">시작하기 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></button>
+  </div>
+  <footer class="uc-foot"><span>Innovative Learning Beyond the Traditional</span><span>279 Karten</span></footer>
+</section>
+<div id="v-app" hidden>
 <div class="wrap">
   <header>
+    <a href="#" id="btnCover" class="to-cover">← 표지</a>
     <div class="eyebrow">회화 패턴 · 상황별 반응 · A1–B2</div>
     <h1>SODA REDEMITTEL</h1>
     <p>회화 패턴(Chunking)은 문장 덩어리로, 상황별 반응(Gesprächsmarker)은 대화를 잇는 추임새와 동의·반대 표현으로 익힙니다. 앞면의 한국어를 보고 독일어를 먼저 말해 본 뒤 카드를 뒤집습니다.</p>
@@ -167,6 +209,7 @@ header p{margin:0; color:var(--sub); font-size:14px}
   <div class="sheet-foot"><span id="sheetCount"></span><button class="go" id="sheetGo">이 카드로 학습</button></div>
 </div>
 
+</div>
 <script>
 const DATA = [
 // 자기소개·인사
@@ -658,6 +701,136 @@ document.addEventListener('keydown', e => {
 });
 
 build();
+
+(function(){
+  var cov=document.getElementById('v-cover'), app=document.getElementById('v-app');
+  function show(c){ cov.hidden=!c; app.hidden=c; window.scrollTo(0,0); }
+  document.getElementById('btn-start').addEventListener('click',function(){ show(false); });
+  var b=document.getElementById('btnCover'); if(b) b.addEventListener('click',function(e){ e.preventDefault(); show(true); });
+})();
 </script>
+<!-- ===== SODA 공통 홈 화면에 앱 추가 ===== -->
+<style id="a2hs-css">
+.a2hs-btn{display:block;width:-webkit-max-content;width:max-content;align-self:flex-start;margin:14px 0 0;padding:6px 2px;border:0;background:none;font:inherit;font-size:14px;font-weight:600;line-height:1.4;color:#6B6B66;cursor:pointer;border-radius:8px;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#CFCEC8;-webkit-tap-highlight-color:transparent}
+.a2hs-btn:hover{color:#1E1E1E}
+.a2hs-btn[hidden]{display:none}
+.a2hs-sheet{position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483000;display:flex;align-items:flex-end;justify-content:center;font-family:"Pretendard Variable","Pretendard","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif}
+.a2hs-sheet[hidden]{display:none}
+.a2hs-bg{position:absolute;top:0;right:0;bottom:0;left:0;background:rgba(20,22,30,.4)}
+.a2hs-box{position:relative;width:calc(100% - 24px);max-width:440px;margin:0 0 calc(12px + env(safe-area-inset-bottom));padding:26px 24px 20px;background:#fff;border-radius:22px;box-shadow:0 24px 60px rgba(0,0,0,.2);text-align:left;outline:none;color:#3A3A37}
+.a2hs-t{margin:0 0 16px;font-size:19px;font-weight:700;letter-spacing:-.01em;color:#1E1E1E;line-height:1.4}
+.a2hs-c ol{margin:0 0 6px;padding:0;list-style:none;counter-reset:a2}
+.a2hs-c li{position:relative;margin:0 0 13px;padding-left:36px;font-size:15.5px;line-height:1.6;color:#3A3A37;word-break:keep-all}
+.a2hs-c li::before{counter-increment:a2;content:counter(a2);position:absolute;left:0;top:1px;display:flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#384568;color:#fff;font-size:13px;font-weight:700;line-height:1}
+.a2hs-c b{font-weight:700;color:#1E1E1E}
+.a2hs-c p{margin:0 0 16px;font-size:15.5px;line-height:1.6;word-break:keep-all}
+.a2hs-c p.n{margin:6px 0 18px;padding-top:14px;border-top:1px solid #E7E6E1;font-size:14px;color:#6B6B66}
+.a2hs-c svg{display:inline-block;width:19px;height:19px;vertical-align:-4px;margin:0 2px}
+.a2hs-go,.a2hs-ok{display:flex;align-items:center;justify-content:center;width:100%;height:52px;border:0;border-radius:10px;background:#384568;color:#fff;font:inherit;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none}
+.a2hs-go{margin:0 0 20px}
+.a2hs-ok.is-ghost{background:#ECEDF3;color:#384568}
+.a2hs-ok:hover,.a2hs-go:hover{filter:brightness(1.12)}
+.a2hs-sheet :focus-visible,.a2hs-btn:focus-visible{outline:3px solid #9DA6C6;outline-offset:3px}
+@media (min-width:641px){.a2hs-sheet{align-items:center}.a2hs-box{margin:0}}
+@media print{.a2hs-btn,.a2hs-sheet{display:none!important}}
+</style>
+<script id="a2hs-js">
+(function(){
+  if (location.protocol === 'file:') return;
+  var ua = navigator.userAgent || '';
+  var standalone = navigator.standalone === true || (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+  var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var android = /Android/i.test(ua);
+  var kakao = /KAKAOTALK/i.test(ua);
+  var inapp = kakao || /NAVER\(inapp|Instagram|FBAN|FBAV|FB_IAB|Line\/|DaumApps/i.test(ua);
+  var deferred = null, sheet = null, lastFocus = null;
+  function can(){ return !standalone && !!(deferred || ios || android || inapp); }
+  function name(){ var m = document.querySelector('meta[name="apple-mobile-web-app-title"]'); return (m && m.content) || document.title; }
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  var SHARE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>';
+  function guide(){
+    var n = esc(name());
+    if (inapp) {
+      var url = location.href.split('#')[0];
+      return { t: '브라우저에서 열어 주세요',
+        c: '<p>카카오톡 같은 앱 안에서 연 화면에서는 홈 화면에 추가할 수 없어요.</p>' +
+          (kakao ? '<a class="a2hs-go" href="kakaotalk://web/openExternal?url=' + encodeURIComponent(url) + '">다른 브라우저로 열기</a>' : '') +
+          '<ol><li>화면 위나 아래의 <b>⋮</b> 또는 <b>⋯</b> 메뉴를 누르세요.</li><li><b>다른 브라우저로 열기</b>(아이폰은 <b>Safari로 열기</b>)를 누르세요.</li><li>' +
+          (ios ? 'Safari' : 'Chrome') + '에서 다시 <b>홈 화면에 앱 추가</b>를 누르세요.</li></ol>', go: true };
+    }
+    if (ios) {
+      return { t: '홈 화면에 추가',
+        c: '<ol><li>Safari의 공유 버튼 ' + SHARE + '을 누르세요. 버튼이 보이지 않으면 <b>⋯</b> 메뉴 안에 있어요.</li>' +
+          '<li><b>홈 화면에 추가</b>를 누르세요.</li><li>홈 화면에 생긴 <b>' + n + '</b> 아이콘으로 여세요.</li></ol>' +
+          '<p class="n">학습 기록은 홈 화면 앱과 Safari에 따로 저장돼요. 아이콘으로 연 앱에서 공부하세요.</p>' };
+    }
+    return { t: '홈 화면에 추가',
+      c: '<ol><li>브라우저 오른쪽 위나 아래의 메뉴 <b>⋮</b> 또는 <b>≡</b>를 누르세요.</li>' +
+        '<li><b>홈 화면에 추가</b> 또는 <b>앱 설치</b>를 누르세요.</li><li>홈 화면에 생긴 <b>' + n + '</b> 아이콘으로 여세요.</li></ol>' };
+  }
+  function build(){
+    if (sheet) return;
+    sheet = document.createElement('div');
+    sheet.className = 'a2hs-sheet'; sheet.hidden = true;
+    sheet.setAttribute('role', 'dialog'); sheet.setAttribute('aria-modal', 'true'); sheet.setAttribute('aria-labelledby', 'a2hs-t');
+    sheet.innerHTML = '<div class="a2hs-bg" data-close></div><div class="a2hs-box" tabindex="-1"><h2 class="a2hs-t" id="a2hs-t"></h2><div class="a2hs-c"></div><button type="button" class="a2hs-ok" data-close>확인</button></div>';
+    sheet.addEventListener('click', function(e){ if (e.target.closest('[data-close]')) close(); });
+    document.body.appendChild(sheet);
+  }
+  function open(){
+    build();
+    var g = guide();
+    sheet.querySelector('.a2hs-t').textContent = g.t;
+    sheet.querySelector('.a2hs-c').innerHTML = g.c;
+    var ok = sheet.querySelector('.a2hs-ok');
+    ok.className = 'a2hs-ok' + (g.go ? ' is-ghost' : '');
+    ok.textContent = g.go ? '닫기' : '확인';
+    lastFocus = document.activeElement;
+    sheet.hidden = false;
+    sheet.querySelector('.a2hs-box').focus();
+  }
+  function close(){
+    if (!sheet || sheet.hidden) return;
+    sheet.hidden = true;
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  function onClick(){
+    if (deferred && !inapp) {
+      var d = deferred; deferred = null;
+      d.prompt();
+      (d.userChoice || Promise.resolve()).then(refresh, refresh);
+      return;
+    }
+    open();
+  }
+  function refresh(){
+    var list = document.querySelectorAll('.a2hs-btn');
+    for (var i = 0; i < list.length; i++) list[i].hidden = !can();
+  }
+  /* 표지가 그려질 때마다(독해 훈련처럼 나중에 그려지는 표지 포함) 시작 버튼 아래에 붙인다 */
+  function mount(){
+    var heroes = document.querySelectorAll('.hero, .uc-hero');
+    for (var i = 0; i < heroes.length; i++) {
+      var h = heroes[i];
+      if (h.querySelector('.a2hs-btn')) continue;
+      var cta = h.querySelector('.cta, .uc-cta');
+      if (!cta) continue;
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'a2hs-btn'; b.textContent = '홈 화면에 앱 추가'; b.hidden = !can();
+      b.addEventListener('click', onClick);
+      cta.parentNode.insertBefore(b, cta.nextSibling);
+    }
+  }
+  window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); deferred = e; refresh(); });
+  window.addEventListener('appinstalled', function(){ deferred = null; standalone = true; refresh(); close(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+  function start(){
+    mount();
+    if (window.MutationObserver) new MutationObserver(mount).observe(document.body, { childList: true, subtree: true });
+  }
+  if (document.body) start(); else document.addEventListener('DOMContentLoaded', start);
+})();
+</script>
+<!-- ===== /SODA 공통 홈 화면에 앱 추가 ===== -->
 </body>
 </html>
