@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="assets/pretendard.css">
 <link rel="stylesheet" href="assets/app.css">
 <style id="soda-dark">
-.soda-theme-btn{position:fixed;top:max(12px,env(safe-area-inset-top));right:max(12px,env(safe-area-inset-right));z-index:2147482000;width:40px;height:40px;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
+.soda-theme-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));z-index:2147482000;width:38px;height:38px;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
 .soda-theme-btn svg{width:20px;height:20px}
 html[data-theme="dark"] .soda-theme-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
 .soda-theme-btn:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
@@ -50,13 +50,10 @@ html[data-theme="dark"] .a2hs-c li::before,html[data-theme="dark"] .a2hs-go,html
 html[data-theme="dark"] .a2hs-ok.is-ghost{background:#232A3D;color:#AEB9DD}
 html[data-theme="dark"] .a2hs-btn{color:#A9B0BA}
 html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
-body:has(#v-cover:not([hidden])) .soda-theme-btn,body:has(#cover:not([hidden])) .soda-theme-btn,body:has(#app[data-screen="cover"]) .soda-theme-btn{top:auto!important;bottom:max(16px,env(safe-area-inset-bottom))!important;right:max(14px,env(safe-area-inset-right))!important}
+@media (max-width:700px){.uc-brand,.cover .brand{padding-right:50px}.uc-brand-t b,.cover .brand-t b{font-size:17px}.uc-brand-t span,.cover .brand-t span{font-size:14px}}
 @media print{.soda-theme-btn{display:none!important}}
 html[data-theme="dark"]{--accent:#AEB9DD;--accent-d:#C8D0EA;--accent-bg:#232A3D;--accent-l:#1E2433;--accent-bd:#34405E;--text:#ECEAE4;--text-s:#C9CCD3;--text-m:#A9B0BA;--text-l:#7C8591;--bg:#14181E;--bg-c:#1B2028;--bg-s:#222831;--bd:#2A313B;--bd-l:#242A33;--ok:#5CBF85;--ok-bg:#16291F;--ok-bd:#2F5A45;--no:#E26A60;--no-bg:#2E1B19;--no-bd:#6A3A34;--hl:#6B5A14;--hl-soft:#4A3F14}
-.soda-theme-btn{top:auto;bottom:max(16px,env(safe-area-inset-bottom));right:auto;left:max(14px,env(safe-area-inset-left))}
 
-body:has(.uc-cta) .soda-theme-btn{left:auto;right:max(14px,env(safe-area-inset-right))}
-html[data-theme="dark"] .uc{background:#14181E}
 
 html[data-theme="dark"] .rd-top,html[data-theme="dark"] .tabs{background:rgba(20,24,30,.94)}
 html[data-theme="dark"] .ex{background:#1B2028}
@@ -73,6 +70,7 @@ html[data-theme="dark"] .q-no{color:#14181E}
 html[data-theme="dark"] .opt[aria-pressed="true"] .k{color:#14181E}
 html[data-theme="dark"] .score{color:#14181E}
 html[data-theme="dark"] .btn.pri{color:#14181E}
+@media (max-width:700px){.pill{margin-right:46px}.rd-top .ibtn:last-child{margin-right:46px}}
 </style>
 </head>
 <body>
