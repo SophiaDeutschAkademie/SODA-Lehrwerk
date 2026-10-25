@@ -12,7 +12,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `praepositionen/` | SODA Präpositionen | 독일어 전치사의 모든 것, 전치사 80개, 비교, 퀴즈 |
 | `verben-mit-praepositionen/` | Verben mit Präpositionen | 동사와 전치사 결합 플래시카드, A1–C2, 324장 |
 | `nomen-verb-verbindungen/` | Nomen-Verb-Verbindungen | 명사와 동사 연어 플래시카드, A1–C2, 317장 |
-| `redemittel/` | SODA Redemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
+| `redemittel/` | SODA Redemittel im Alltag | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
 
 루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grundlagen / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 업데이트 예정 카드로 들어 있어요. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
 
