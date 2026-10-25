@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SODA REDEMITTEL</title>
+<style>
+:root{
+  --bg:#f6f3ec; --panel:#fffdf8; --ink:#1f2f4a; --sub:#5b7088; --line:#ddd5c4;
+  --sand:#e9e1cf; --navy:#1f2f4a; --blue:#3f5f86; --green:#4f7a6a;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px; margin:0 auto; padding:28px 18px 48px}
+header{margin-bottom:22px}
+header .eyebrow{font-size:12px; letter-spacing:.08em; color:var(--sub); font-weight:600}
+header h1{margin:6px 0 4px; font-size:26px; font-weight:700; letter-spacing:-.01em}
+header p{margin:0; color:var(--sub); font-size:14px}
+
+.picker{display:flex; align-items:center; gap:12px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin-bottom:12px; cursor:pointer}
+.pk-sum{flex:1; min-width:0}
+.pk-t{font-size:15px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.pk-s{font-size:12.5px; color:var(--sub)}
+.pk-open{border:1px solid var(--navy); background:var(--navy); color:#fff; border-radius:10px; padding:9px 16px; font-size:14px; font-family:inherit; cursor:pointer}
+.pk-open:hover{filter:brightness(1.12)}
+
+.sheet-bg{position:fixed; inset:0; background:rgba(31,47,74,.38); opacity:0; pointer-events:none; transition:opacity .2s; z-index:20}
+.sheet-bg.open{opacity:1; pointer-events:auto}
+.sheet{
+  position:fixed; left:50%; bottom:0; transform:translate(-50%,100%); width:100%; max-width:680px; max-height:88vh;
+  background:var(--bg); border-radius:20px 20px 0 0; z-index:21; display:flex; flex-direction:column;
+  transition:transform .28s cubic-bezier(.2,.8,.2,1); box-shadow:0 -18px 40px -20px rgba(31,47,74,.45); visibility:hidden;
+}
+.sheet.open{transform:translate(-50%,0); visibility:visible}
+.sheet-head{display:flex; align-items:center; justify-content:space-between; padding:16px 20px 4px; font-size:16px}
+.sheet-x{border:none; background:transparent; font-size:26px; line-height:1; color:var(--sub); cursor:pointer; padding:0 4px}
+.sheet-body{overflow-y:auto; padding:2px 20px 14px}
+.sec-t{font-size:12px; letter-spacing:.08em; color:var(--sub); font-weight:600; margin:16px 0 8px}
+.seg{display:flex; background:var(--sand); border-radius:12px; padding:3px; gap:2px}
+.seg button{
+  flex:1; border:none; background:transparent; padding:8px 4px; border-radius:9px; font-size:14px; color:var(--sub);
+  cursor:pointer; font-family:inherit; display:flex; flex-direction:column; align-items:center; line-height:1.3;
+}
+.seg button small{font-size:11.5px; opacity:.75}
+.seg button.on{background:var(--panel); color:var(--ink); font-weight:700; box-shadow:0 1px 3px rgba(31,47,74,.15)}
+.tiles{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px}
+.tile{text-align:left; border:1px solid var(--line); background:var(--panel); border-radius:12px; padding:11px 12px 10px; cursor:pointer; font-family:inherit; color:var(--ink)}
+.tile:hover{border-color:var(--blue)}
+.tile.on{border-color:var(--navy); box-shadow:0 0 0 1px var(--navy) inset}
+.tile b{display:block; font-size:14px; line-height:1.3; word-break:keep-all}
+.tile span{display:block; font-size:12px; color:var(--sub); margin:2px 0 7px}
+.tile i{display:block; height:3px; border-radius:3px; background:var(--sand); overflow:hidden}
+.tile u{display:block; height:100%; background:var(--green); text-decoration:none}
+.sheet-foot{display:flex; align-items:center; gap:12px; padding:12px 20px calc(14px + env(safe-area-inset-bottom)); border-top:1px solid var(--line)}
+.sheet-foot span{flex:1; font-size:13.5px; color:var(--sub)}
+.go{border:none; background:var(--navy); color:#fff; border-radius:12px; padding:12px 20px; font-size:15px; font-family:inherit; cursor:pointer}
+
+.tools{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:16px 0 18px}
+.tool{
+  border:1px solid var(--line); background:transparent; color:var(--sub);
+  padding:6px 12px; border-radius:8px; font-size:13px; cursor:pointer; font-family:inherit;
+}
+.tool:hover{color:var(--ink); border-color:var(--sub)}
+.tool.on{color:var(--ink); border-color:var(--ink); background:var(--sand)}
+.spacer{flex:1}
+.count{font-size:13px; color:var(--sub)}
+
+.bar{height:4px; background:var(--sand); border-radius:4px; overflow:hidden; margin-bottom:18px}
+.bar i{display:block; height:100%; width:0; background:var(--green); transition:width .3s}
+
+.scene{perspective:1400px}
+.card{position:relative; cursor:pointer; outline:none}
+.inner{display:grid; transform-style:preserve-3d; transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.card.flip .inner{transform:rotateY(180deg)}
+.face{
+  grid-area:1/1; min-height:380px; backface-visibility:hidden; -webkit-backface-visibility:hidden;
+  background:var(--panel); border:1px solid var(--line); border-radius:18px;
+  padding:24px 26px 22px; display:flex; flex-direction:column;
+  box-shadow:0 1px 0 rgba(31,47,74,.04), 0 12px 28px -18px rgba(31,47,74,.25);
+}
+.face.back{transform:rotateY(180deg)}
+.meta{display:flex; align-items:center; gap:8px; font-size:12px; color:var(--sub)}
+.tag{border:1px solid var(--line); border-radius:6px; padding:1px 8px; background:var(--bg)}
+.tag.lv{color:var(--blue); border-color:#c5d1e0; background:#eef2f8}
+.mark{margin-left:auto; font-size:12px; color:var(--green); font-weight:600}
+.lbl{font-size:11.5px; letter-spacing:.08em; color:var(--sub); font-weight:600; margin-bottom:6px}
+
+.front .body{flex:1; display:flex; flex-direction:column; justify-content:center; text-align:center; padding:10px 0}
+.front .body .lbl{margin-bottom:14px}
+.front .ko{font-size:30px; font-weight:700; letter-spacing:-.02em; line-height:1.35; word-break:keep-all}
+.hint{font-size:12.5px; color:var(--sub); text-align:center; margin-top:10px}
+
+.back .body{flex:1; display:flex; flex-direction:column; justify-content:center; padding:14px 0 6px; gap:18px}
+.exprs{display:flex; flex-direction:column; gap:6px}
+.expr{font-size:23px; font-weight:700; color:var(--navy); line-height:1.4; word-break:break-word}
+.slot{font-size:12.5px; color:var(--sub); margin-top:8px}
+.ex{border-left:3px solid var(--sand); padding-left:12px; margin-bottom:10px}
+.ex:last-child{margin-bottom:0}
+.de{font-size:18px; line-height:1.5}
+.dk{font-size:14.5px; color:var(--sub); margin-top:2px}
+.note{font-size:13.5px; background:var(--sand); border-radius:10px; padding:9px 12px; color:var(--ink)}
+
+.nav{display:flex; gap:10px; margin-top:18px}
+.btn{
+  flex:1; padding:13px 10px; border-radius:12px; border:1px solid var(--line);
+  background:var(--panel); color:var(--ink); font-size:15px; font-family:inherit; cursor:pointer;
+}
+.btn:hover{border-color:var(--blue)}
+.btn.again{color:var(--blue)}
+.btn.know{background:var(--green); border-color:var(--green); color:#fff}
+.btn.know:hover{filter:brightness(1.07)}
+.btn.small{flex:0 0 52px; font-size:18px}
+.pos{text-align:center; font-size:13px; color:var(--sub); margin-top:12px}
+.empty{
+  background:var(--panel); border:1px dashed var(--line); border-radius:18px;
+  padding:60px 20px; text-align:center; color:var(--sub);
+}
+.keys{margin-top:26px; font-size:12.5px; color:var(--sub); text-align:center}
+@media (max-width:520px){
+  .face{min-height:360px; padding:20px 18px 18px}
+  .front .ko{font-size:25px}
+  .expr{font-size:20px}
+  .de{font-size:16.5px}
+  header h1{font-size:22px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">회화 패턴 · 상황별 반응 · A1–B2</div>
+    <h1>SODA REDEMITTEL</h1>
+    <p>회화 패턴(Chunking)은 문장 덩어리로, 상황별 반응(Gesprächsmarker)은 대화를 잇는 추임새와 동의·반대 표현으로 익힙니다. 앞면의 한국어를 보고 독일어를 먼저 말해 본 뒤 카드를 뒤집습니다.</p>
+  </header>
+
+  <div class="picker" id="picker">
+    <div class="pk-sum" id="pkSum"></div>
+    <button class="pk-open" id="pkOpen">카드 선택</button>
+  </div>
+  <div class="tools">
+    <button class="tool" id="tShuffle">섞기</button>
+    <button class="tool" id="tUnknown">모르는 카드만</button>
+    <button class="tool" id="tReset">기록 지우기</button>
+    <span class="spacer"></span>
+    <span class="count" id="count"></span>
+  </div>
+  <div class="bar"><i id="bar"></i></div>
+
+  <div id="stage"></div>
+
+  <div class="keys">키보드: ← → 이동 · 스페이스 뒤집기 · 1 다시 볼게요 · 2 외웠어요</div>
+</div>
+
+<div class="sheet-bg" id="sheetBg"></div>
+<div class="sheet" id="sheet" role="dialog" aria-label="카드 선택">
+  <div class="sheet-head"><strong>카드 선택</strong><button class="sheet-x" id="sheetX" aria-label="닫기">×</button></div>
+  <div class="sheet-body">
+    <div class="sec-t">유형</div><div class="seg" id="segType"></div>
+    <div class="sec-t">레벨</div><div class="seg" id="segLv"></div>
+    <div class="sec-t">상황</div><div class="tiles" id="tiles"></div>
+  </div>
+  <div class="sheet-foot"><span id="sheetCount"></span><button class="go" id="sheetGo">이 카드로 학습</button></div>
+</div>
+
+<script>
+const DATA = [
+// 자기소개·인사
+["자기소개·인사", "A1", "제 이름은 ~예요", ["Ich heiße …", "Mein Name ist …"], "", "Ich heiße Jisu Kim.", "제 이름은 김지수예요.", "", "Ich heiße ... / Mein Name ist ...|Ich heiße Jisu Kim."],
+["자기소개·인사", "A1", "저는 ~에서 왔어요", ["Ich komme aus …."], "나라·도시", "Ich komme aus Korea.", "저는 한국에서 왔어요.", "die Schweiz, die USA처럼 관사가 붙는 나라는 aus der Schweiz, aus den USA를 쓴다.", "Ich komme aus + 나라/도시|Ich komme aus Korea."],
+["자기소개·인사", "A1", "저는 ~에 살아요", ["Ich wohne in …."], "도시", "Ich wohne in Bucheon.", "저는 부천에 살아요.", "", "Ich wohne in + 도시|Ich wohne in Bucheon."],
+["자기소개·인사", "A1", "저는 ~살이에요", ["Ich bin … Jahre alt."], "", "Ich bin 28 Jahre alt.", "저는 28살이에요.", "", "Ich bin ... Jahre alt.|Ich bin 28 Jahre alt."],
+["자기소개·인사", "A1", "저는 ~로 일해요", ["Ich arbeite als …."], "직업 (관사 없음)", "Ich arbeite als Ingenieur.", "저는 엔지니어로 일해요.", "직업명 앞에는 관사를 쓰지 않는다.", "Ich arbeite als + 직업|Ich arbeite als Ingenieur."],
+["자기소개·인사", "A1", "직업이 어떻게 되세요?", ["Was sind Sie von Beruf?"], "", "Was sind Sie von Beruf? – Ich bin Lehrerin.", "직업이 어떻게 되세요? – 저는 교사예요.", "", "Was sind Sie von Beruf?|Was sind Sie von Beruf? – Ich bin Lehrerin."],
+["자기소개·인사", "A1", "저는 ~를 배우고 있어요", ["Ich lerne …."], "과목·언어", "Ich lerne seit einem Jahr Deutsch.", "저는 1년째 독일어를 배우고 있어요.", "seit + 3격: 지금까지 이어지는 기간을 말한다.", "Ich lerne + 과목/언어|Ich lerne seit einem Jahr Deutsch."],
+["자기소개·인사", "A1", "만나서 반갑습니다", ["Freut mich!", "Freut mich, Sie kennenzulernen."], "", "Guten Tag, Frau Weber. Freut mich, Sie kennenzulernen.", "안녕하세요, 베버 씨. 만나서 반갑습니다.", "", "Freut mich! / Freut mich, Sie kennenzulernen.|Guten Tag, Frau Weber. Freut mich, Sie kennenzulernen."],
+["자기소개·인사", "A1", "잘 지내세요?", ["Wie geht es Ihnen?", "Wie geht’s dir?"], "", "Wie geht es Ihnen? – Danke, gut. Und Ihnen?", "잘 지내세요? – 네, 잘 지내요. 선생님은요?", "Sie는 격식, du는 친구와 가족에게 쓴다.", "Wie geht es Ihnen? / Wie geht’s dir?|Wie geht es Ihnen? – Danke, gut. Und Ihnen?"],
+["자기소개·인사", "B1", "~년째 ~로 일하고 있어요", ["Ich arbeite seit … Jahren als …."], "기간 · 직업", "Ich arbeite seit fünf Jahren als Lehrerin.", "저는 5년째 교사로 일하고 있어요.", "seit + 3격이라서 Jahre가 Jahren으로 바뀐다.", "Ich arbeite seit ... Jahren als + 직업.|Ich arbeite seit fünf Jahren als Lehrerin."],
+["자기소개·인사", "B1", "저는 ~에 관심이 있어요", ["Ich interessiere mich für …."], "4격", "Ich interessiere mich für deutsche Geschichte.", "저는 독일 역사에 관심이 있어요.", "sich interessieren für는 4격과 함께 쓴다.", "Ich interessiere mich für + 4격.|Ich interessiere mich für deutsche Geschichte."],
+["자기소개·인사", "B2", "~ 분야에서 경험이 있어요", ["Ich habe Erfahrung in …."], "3격 (분야, im·in der)", "Ich habe mehrjährige Erfahrung im Marketing.", "저는 마케팅 분야에서 수년간 일한 경험이 있어요.", "in + dem은 im으로 합쳐진다. 예: im Vertrieb, in der Pflege.", "Ich habe Erfahrung in + 3격 (분야).|Ich habe mehrjährige Erfahrung im Marketing."],
+["자기소개·인사", "B2", "~ 업계에서 일하고 있어요", ["Ich bin in der …-Branche tätig."], "업계", "Ich bin seit zehn Jahren in der IT-Branche tätig.", "저는 10년째 IT 업계에서 일하고 있어요.", "tätig sein: 종사하다. 격식 있는 자기소개에서 쓴다.", "Ich bin in der ...-Branche tätig.|Ich bin seit zehn Jahren in der IT-Branche tätig."],
+["자기소개·인사", "B2", "제 목표는 ~하는 거예요", ["Mein Ziel ist es, … zu …."], "zu + 동사원형 (문장 끝)", "Mein Ziel ist es, als Ärztin zu arbeiten.", "제 목표는 의사로 일하는 거예요.", "", "Mein Ziel ist es, ... zu + 동사원형.|Mein Ziel ist es, in Deutschland als Ärztin zu arbeiten."],
+// 인사·감사·사과
+["인사·감사·사과", "A1", "아침·낮·저녁 인사를 할 때", ["Guten Morgen!", "Guten Tag!", "Guten Abend!"], "", "Guten Morgen, Frau Weber! Wie geht es Ihnen?", "좋은 아침이에요, 베버 씨! 어떻게 지내세요?", "친구 사이에서는 Hallo!나 Hi!도 쓴다.", "Guten Morgen! / Guten Tag! / Guten Abend!|Guten Morgen, Frau Weber! Wie geht es Ihnen?"],
+["인사·감사·사과", "A1", "헤어질 때 인사할 때", ["Tschüss!", "Auf Wiedersehen!", "Bis bald!", "Bis morgen!"], "", "Tschüss, bis morgen! – Bis morgen!", "안녕, 내일 봐요! – 내일 봐요!", "Auf Wiedersehen!은 격식 있는 인사이고, Tschüss!는 친구와 가족에게 쓴다.", "Tschüss! / Auf Wiedersehen! / Bis bald! / Bis morgen!|Tschüss, bis morgen! – Bis morgen!"],
+["인사·감사·사과", "A1", "잠자리에 들기 전에 인사할 때", ["Gute Nacht!", "Schlaf gut!", "Träum was Schönes!"], "", "Gute Nacht! Schlaf gut! – Danke, du auch!", "안녕히 주무세요! 잘 자요! – 고마워요, 당신도요!", "Gute Nacht!은 헤어질 때가 아니라 잠자리에 들기 전에 쓴다.", "Gute Nacht! / Schlaf gut! / Träum was Schönes!|Gute Nacht! Schlaf gut! – Danke, du auch!"],
+["인사·감사·사과", "A1", "고맙다고 말할 때", ["Danke!", "Danke schön!", "Vielen Dank!"], "", "Hier ist Ihr Kaffee. – Vielen Dank!", "커피 나왔습니다. – 정말 감사합니다!", "Vielen Dank!가 Danke!보다 더 정중하다.", "Danke! / Danke schön! / Vielen Dank!|Hier ist Ihr Kaffee. – Vielen Dank!"],
+["인사·감사·사과", "A1", "사과할 때", ["Entschuldigung!", "Es tut mir leid.", "Verzeihung!"], "", "Es tut mir leid, ich bin zu spät.", "죄송해요, 제가 늦었어요.", "Entschuldigung!은 말을 걸거나 부딪혔을 때도 쓰고, Es tut mir leid.는 진심으로 미안할 때 쓴다.", "Entschuldigung! / Es tut mir leid. / Verzeihung!|Es tut mir leid, ich bin zu spät."],
+["인사·감사·사과", "A1", "재채기한 사람에게 말할 때", ["Gesundheit!"], "", "Hatschi! – Gesundheit!", "에취! – 건강하세요!", "Gesundheit!은 재채기한 사람에게 하는 말이다.", "Gesundheit!|Hatschi! – Gesundheit!"],
+["인사·감사·사과", "A2", "정성 들여 사과할 때", ["Es tut mir wirklich leid.", "Das war mein Fehler.", "Ich möchte mich entschuldigen."], "", "Das war mein Fehler. Ich möchte mich entschuldigen.", "제 실수였어요. 사과드리고 싶어요.", "sich entschuldigen은 재귀동사다.", "Es tut mir wirklich leid. / Das war mein Fehler. / Ich möchte mich entschuldigen.|Das war mein Fehler. Ich möchte mich entschuldigen."],
+["인사·감사·사과", "A2", "식사 전에 말할 때", ["Guten Appetit!", "Mahlzeit!"], "", "Guten Appetit! – Danke, gleichfalls!", "맛있게 드세요! – 고마워요, 당신도요!", "Mahlzeit!은 점심 무렵 직장에서 동료끼리 주고받는 인사다.", "Guten Appetit! / Mahlzeit!|Guten Appetit! – Danke, gleichfalls!"],
+["인사·감사·사과", "A2", "건배할 때", ["Prost!", "Zum Wohl!", "Auf …!"], "건배하는 대상 (4격)", "Auf deinen Geburtstag! Prost!", "네 생일을 위해! 건배!", "Zum Wohl!이 Prost!보다 격식 있는 말이다.", "Prost! / Zum Wohl! / Auf …!|Auf deinen Geburtstag! Prost!"],
+["인사·감사·사과", "A2", "생일이나 명절을 축하할 때", ["Alles Gute zum Geburtstag!", "Frohe Weihnachten!", "Frohes neues Jahr!"], "", "Alles Gute zum Geburtstag! – Danke!", "생일 축하해요! – 고마워요!", "Herzlichen Glückwunsch zum Geburtstag!도 같은 뜻으로 쓴다.", "Alles Gute zum Geburtstag! / Frohe Weihnachten! / Frohes neues Jahr!|Alles Gute zum Geburtstag! Ich wünsche dir einen schönen Tag."],
+["인사·감사·사과", "A2", "즐거운 시간을 보내라고 말할 때", ["Viel Spaß!", "Schönes Wochenende!", "Schönen Urlaub!"], "", "Schönes Wochenende! – Danke, gleichfalls!", "주말 잘 보내세요! – 고마워요, 당신도요!", "Ich wünsche Ihnen ...에서 앞부분을 줄여 말하는 표현이 많다.", "Viel Spaß! / Schönes Wochenende! / Schönen Urlaub!|Schönes Wochenende! – Danke, gleichfalls!"],
+["인사·감사·사과", "A2", "여행을 떠나는 사람에게 말할 때", ["Gute Reise!", "Komm gut an!", "Pass auf dich auf!"], "", "Gute Reise! Melde dich, wenn du angekommen bist.", "잘 다녀오세요! 도착하면 연락해요.", "Komm gut an!은 목적지에 안전하게 도착하라는 인사다.", "Gute Reise! / Komm gut an! / Pass auf dich auf!|Gute Reise! Melde dich, wenn du angekommen bist."],
+// 식당
+["식당", "A1", "~로 할게요", ["Ich nehme …."], "목적어", "Ich nehme die Tomatensuppe.", "저는 토마토 수프로 할게요.", "", "Ich nehme + 목적어|Ich nehme die Tomatensuppe."],
+["식당", "A1", "~ 주세요", ["Ich hätte gern …."], "목적어 (4격)", "Ich hätte gern einen Kaffee.", "커피 한 잔 주세요.", "남성 명사는 4격에서 einen, den으로 바뀐다.", "Ich hätte gern + 목적어(4격)|Ich hätte gern einen Kaffee."],
+["식당", "A1", "메뉴판 좀 주세요", ["Könnte ich bitte die Speisekarte haben?"], "", "Entschuldigung, könnte ich bitte die Speisekarte haben?", "실례합니다, 메뉴판 좀 주시겠어요?", "", "Könnte ich bitte die Speisekarte haben?|Entschuldigung, könnte ich bitte die Speisekarte haben?"],
+["식당", "A1", "~명 자리 있나요?", ["Haben Sie einen Tisch für … Personen?"], "", "Haben Sie einen Tisch für zwei Personen?", "두 명 자리 있나요?", "", "Haben Sie einen Tisch für ... Personen?|Haben Sie einen Tisch für zwei Personen?"],
+["식당", "A1", "정말 맛있어요", ["Das schmeckt (mir) sehr gut."], "", "Das schmeckt wirklich sehr gut!", "이거 정말 맛있어요!", "", "Das schmeckt (mir) sehr gut.|Das schmeckt wirklich sehr gut!"],
+["식당", "A1", "계산할게요", ["Ich möchte zahlen.", "Zahlen, bitte!"], "", "Wir möchten zahlen, bitte.", "계산해 주세요.", "", "Ich möchte zahlen. / Zahlen, bitte!|Wir möchten zahlen, bitte."],
+["식당", "A1", "따로 계산할게요", ["Getrennt, bitte."], "", "Zusammen oder getrennt? – Getrennt, bitte.", "같이 계산하시나요, 따로 계산하시나요? – 따로 계산해 주세요.", "독일 식당에서는 테이블에서 각자 직원에게 말하며 계산하는 것이 일반적이다.", "Getrennt, bitte.|Zusammen oder getrennt? – Getrennt, bitte."],
+["식당", "A2", "예약했어요", ["Ich habe einen Tisch für … reserviert."], "", "Ich habe einen Tisch auf den Namen Kim reserviert.", "김이라는 이름으로 자리를 예약했어요.", "auf den Namen + 이름은 '~라는 이름으로'라는 뜻이다.", "Ich habe einen Tisch für ... reserviert.|Ich habe einen Tisch für vier Personen auf den Namen Kim reserviert."],
+["식당", "A2", "추천해 주실 수 있나요?", ["Können Sie etwas empfehlen?"], "", "Können Sie etwas empfehlen? Ich esse kein Fleisch.", "추천해 주실 수 있나요? 저는 고기를 먹지 않아요.", "", "Können Sie etwas empfehlen?|Können Sie etwas empfehlen? Ich esse kein Fleisch."],
+["식당", "A2", "~에 알레르기가 있어요", ["Ich bin allergisch gegen …."], "4격", "Ich bin allergisch gegen Nüsse.", "저는 견과류 알레르기가 있어요.", "gegen은 항상 4격과 함께 쓴다.", "Ich bin allergisch gegen + 4격|Ich bin allergisch gegen Nüsse."],
+["식당", "B1", "주문한 것과 달라요", ["Ich habe … bestellt, aber ich habe … bekommen."], "", "Ich habe Tee bestellt, aber Kaffee bekommen.", "차를 주문했는데 커피가 나왔어요.", "", "Ich habe ... bestellt, aber ich habe ... bekommen.|Ich habe eine Cola bestellt, aber ich habe eine Fanta bekommen."],
+["식당", "B1", "음식이 아직 안 나왔어요", ["Ich warte schon seit … auf …."], "기간 · 4격", "Ich warte schon seit zehn Minuten.", "10분째 기다리고 있어요.", "warten auf는 4격과 함께 쓴다.", "Ich warte schon seit ... auf + 4격.|Ich warte schon seit einer halben Stunde auf mein Essen."],
+["식당", "B2", "~에 대해 항의하고 싶어요", ["Ich möchte mich über … beschweren."], "4격", "Ich möchte mich über die lange Wartezeit beschweren.", "긴 대기 시간에 대해 항의하고 싶어요.", "sich beschweren über는 4격과 함께 쓴다.", "Ich möchte mich über + 4격 + beschweren.|Ich möchte mich über die lange Wartezeit beschweren."],
+["식당", "B2", "~에는 무엇이 들어 있나요?", ["Was ist in … enthalten?"], "3격", "Was ist in diesem Gericht enthalten?", "이 요리에는 무엇이 들어 있나요?", "구어에서는 Was ist da drin?도 자주 쓴다.", "Was ist in + 3격 + enthalten?|Was ist in diesem Gericht enthalten?"],
+["식당", "B2", "음식이 식었어요", ["Mein Essen ist leider kalt."], "", "Mein Essen ist leider kalt.", "음식이 식었어요.", "kalt는 '차가운, 식은'이라는 뜻이다.", "Mein Essen ist leider kalt.|Entschuldigung, mein Essen ist leider kalt. Könnten Sie es bitte noch einmal aufwärmen?"],
+// 길 묻기
+["길 묻기", "A1", "~는 어디예요?", ["Wo ist …?"], "주어", "Entschuldigung, wo ist der Bahnhof?", "실례합니다, 기차역이 어디에 있나요?", "Entschuldigung으로 말을 걸며 시작한다.", "Wo ist + 주어?|Entschuldigung, wo ist der Bahnhof?"],
+["길 묻기", "A1", "근처에 ~가 있나요?", ["Gibt es hier in der Nähe …?"], "4격", "Gibt es hier in der Nähe eine Apotheke?", "이 근처에 약국이 있나요?", "", "Gibt es hier in der Nähe + 4격?|Gibt es hier in der Nähe eine Apotheke?"],
+["길 묻기", "A1", "여기서 먼가요?", ["Ist es weit von hier?"], "", "Ist es weit? – Nein, fünf Minuten.", "멀어요? – 아니요, 5분이에요.", "", "Ist es weit von hier?|Ist es weit von hier? – Nein, nur fünf Minuten zu Fuß."],
+["길 묻기", "A1", "직진하세요", ["Gehen Sie geradeaus."], "", "Gehen Sie geradeaus und dann an der Ampel links.", "쭉 가시다가 신호등에서 왼쪽으로 가세요.", "", "Gehen Sie geradeaus.|Gehen Sie geradeaus und dann an der Ampel links."],
+["길 묻기", "A2", "~에 어떻게 가나요?", ["Wie komme ich zu …?"], "3격 (zum, zur)", "Wie komme ich zum Bahnhof?", "기차역에는 어떻게 가나요?", "zu + dem은 zum, zu + der는 zur로 합쳐진다.", "Wie komme ich zu + 3격?|Wie komme ich zum Bahnhof?"],
+["길 묻기", "A2", "좌회전/우회전하세요", ["Biegen Sie links ab.", "Biegen Sie rechts ab."], "", "Biegen Sie an der Kreuzung rechts ab.", "사거리에서 오른쪽으로 도세요.", "abbiegen은 분리동사라서 ab이 문장 끝에 온다.", "Biegen Sie (links / rechts) ab.|Biegen Sie an der Kreuzung rechts ab."],
+["길 묻기", "A2", "길을 잃었어요", ["Ich habe mich verlaufen."], "", "Entschuldigung, ich habe mich verlaufen. Können Sie mir helfen?", "실례합니다, 길을 잃었어요. 도와주시겠어요?", "걸어서 길을 잃었을 때 쓴다. 차로 길을 잃었다면 Ich habe mich verfahren.이라고 한다.", "Ich habe mich verlaufen.|Entschuldigung, ich habe mich verlaufen. Können Sie mir helfen?"],
+["길 묻기", "A2", "지도에서 보여 주시겠어요?", ["Können Sie mir das auf der Karte zeigen?"], "", "Können Sie mir das bitte auf der Karte zeigen?", "지도에서 어디인지 보여 주시겠어요?", "", "Können Sie mir das auf der Karte zeigen?|Können Sie mir das bitte auf der Karte zeigen?"],
+["길 묻기", "B1", "~를 지나서 가세요", ["Gehen Sie an … vorbei."], "3격", "Gehen Sie an der Bank vorbei.", "은행을 지나서 가세요.", "vorbeigehen은 분리동사라서 vorbei가 문장 끝에 온다.", "Gehen Sie an + 3격 + vorbei.|Gehen Sie an der Bank vorbei und dann die zweite Straße links."],
+["길 묻기", "B1", "~가 어디인지 알려 주시겠어요?", ["Können Sie mir sagen, wo … ist?"], "", "Können Sie mir sagen, wo die nächste Haltestelle ist?", "가장 가까운 정류장이 어디인지 알려 주시겠어요?", "wo 문장에서는 동사가 맨 뒤에 온다.", "Können Sie mir sagen, wo ... ist?|Können Sie mir sagen, wo die nächste Haltestelle ist?"],
+["길 묻기", "B2", "혹시 ~인지 아세요?", ["Wissen Sie zufällig, ob …?"], "", "Wissen Sie zufällig, ob es hier eine Bushaltestelle gibt?", "혹시 이 근처에 버스 정류장이 있는지 아세요?", "ob 문장에서는 동사가 맨 뒤에 온다.", "Wissen Sie zufällig, ob ...?|Wissen Sie zufällig, ob es hier eine Bushaltestelle gibt?"],
+["길 묻기", "B2", "표지판을 따라가세요", ["Folgen Sie der Beschilderung."], "", "Folgen Sie der Beschilderung zum Flughafen.", "공항 표지판을 따라가세요.", "folgen은 3격 동사다.", "Folgen Sie der Beschilderung.|Fahren Sie bis zur Ampel und folgen Sie dann der Beschilderung zum Flughafen."],
+// 약속 잡기
+["약속 잡기", "A1", "시간 있어요?", ["Hast du … Zeit?"], "", "Hast du morgen Abend Zeit?", "내일 저녁에 시간 있어요?", "", "Hast du ... Zeit?|Hast du morgen Abend Zeit?"],
+["약속 잡기", "A1", "그때는 안 돼요", ["Da kann ich leider nicht."], "", "Am Montag kann ich leider nicht. Ich habe Unterricht.", "월요일에는 안 돼요. 수업이 있어요.", "", "Da kann ich leider nicht.|Am Montag kann ich leider nicht. Ich habe Unterricht."],
+["약속 잡기", "A1", "좋아요, 그때 괜찮아요", ["Das passt mir gut."], "", "Freitag um acht? Das passt mir gut.", "금요일 8시요? 저는 괜찮아요.", "", "Das passt mir gut.|Freitag um acht? Das passt mir gut."],
+["약속 잡기", "A1", "언제 만날까요?", ["Wann treffen wir uns?"], "", "Wann treffen wir uns? – Um sieben Uhr.", "우리 언제 만날까요? – 7시에요.", "sich treffen은 재귀동사라서 uns가 들어간다.", "Wann treffen wir uns?|Wann treffen wir uns? – Um sieben Uhr."],
+["약속 잡기", "A2", "~할까요?", ["Wollen wir …?"], "동사원형 (문장 끝)", "Wollen wir zusammen essen gehen?", "같이 밥 먹으러 갈까요?", "동사원형은 문장 맨 끝에 온다.", "Wollen wir + 동사원형?|Wollen wir zusammen essen gehen?"],
+["약속 잡기", "A2", "~는 어때요?", ["Wie wäre es mit …?"], "3격", "Wie wäre es mit Samstagnachmittag?", "토요일 오후는 어때요?", "mit 뒤에는 3격을 쓴다.", "Wie wäre es mit + 3격?|Wie wäre es mit Samstagnachmittag?"],
+["약속 잡기", "A2", "~에서 만나요", ["Wir treffen uns um … Uhr …."], "시각 · 장소", "Wir treffen uns um 19 Uhr am Bahnhof.", "19시에 역에서 만나요.", "", "Wir treffen uns um ... Uhr + 장소.|Wir treffen uns um 19 Uhr am Bahnhof."],
+["약속 잡기", "A2", "조금 늦을 것 같아요", ["Ich komme (etwas) später."], "", "Tut mir leid, ich komme etwa zehn Minuten später.", "죄송해요, 10분쯤 늦을 것 같아요.", "", "Ich komme (etwas) später.|Tut mir leid, ich komme etwa zehn Minuten später."],
+["약속 잡기", "B1", "약속을 취소해야 해요", ["Ich muss den Termin leider absagen."], "", "Ich muss unseren Termin leider absagen. Ich bin krank.", "약속을 취소해야 해요. 몸이 아파요.", "absagen도 분리동사다. 조동사와 함께 쓰면 원형이 문장 끝에 온다.", "Ich muss den Termin leider absagen.|Ich muss unseren Termin leider absagen. Ich bin krank."],
+["약속 잡기", "B1", "약속을 옮길 수 있을까요?", ["Könnten wir den Termin auf … verschieben?"], "", "Könnten wir den Termin auf nächsten Dienstag verschieben?", "약속을 다음 주 화요일로 옮길 수 있을까요?", "", "Könnten wir den Termin auf ... verschieben?|Könnten wir den Termin auf nächsten Dienstag verschieben?"],
+["약속 잡기", "B2", "괜찮으시다면 ~", ["Wenn es Ihnen recht ist, …"], "", "Wenn es Ihnen recht ist, komme ich um zehn.", "괜찮으시다면 10시에 갈게요.", "", "Wenn es Ihnen recht ist, ...|Wenn es Ihnen recht ist, treffen wir uns um zehn Uhr."],
+["약속 잡기", "B2", "그 시간에는 다른 일정이 있어요", ["Um diese Zeit habe ich leider schon einen anderen Termin."], "", "Um diese Zeit habe ich leider schon einen anderen Termin.", "그 시간에는 이미 다른 일정이 있어요.", "", "Um diese Zeit habe ich leider schon einen anderen Termin.|Um diese Zeit habe ich leider schon einen anderen Termin. Geht es auch später?"],
+["약속 잡기", "B2", "일정을 확인하고 연락드릴게요", ["Ich melde mich, sobald ich … geprüft habe."], "", "Ich melde mich, sobald ich meinen Kalender geprüft habe.", "일정을 확인하는 대로 연락드릴게요.", "sobald 문장에서는 동사가 맨 뒤에 온다.", "Ich melde mich, sobald ich ... geprüft habe.|Ich melde mich, sobald ich meinen Kalender geprüft habe."],
+// 부탁·허락
+["부탁·허락", "A1", "~해도 될까요?", ["Darf ich …?"], "동사원형 (문장 끝)", "Darf ich das Fenster öffnen?", "창문을 열어도 될까요?", "", "Darf ich + 동사원형?|Darf ich das Fenster öffnen?"],
+["부탁·허락", "A1", "도와주시겠어요?", ["Können Sie mir helfen?"], "", "Entschuldigung, können Sie mir bitte helfen?", "실례합니다, 저를 도와주시겠어요?", "helfen은 3격 동사라서 mir를 쓴다.", "Können Sie mir helfen?|Entschuldigung, können Sie mir bitte helfen?"],
+["부탁·허락", "A1", "천천히 말씀해 주세요", ["Könnten Sie bitte langsamer sprechen?"], "", "Ich verstehe nicht alles. Könnten Sie bitte langsamer sprechen?", "다 알아듣지는 못해요. 조금 천천히 말씀해 주시겠어요?", "", "Könnten Sie bitte langsamer sprechen?|Ich verstehe nicht alles. Könnten Sie bitte langsamer sprechen?"],
+["부탁·허락", "A1", "이해하지 못했어요", ["Ich habe das nicht verstanden."], "", "Entschuldigung, ich habe das nicht verstanden.", "죄송해요, 이해하지 못했어요.", "", "Ich habe das nicht verstanden.|Entschuldigung, ich habe das nicht verstanden."],
+["부탁·허락", "A1", "~는 무슨 뜻이에요?", ["Was bedeutet …?"], "주어", "Was bedeutet das Wort „Feierabend“?", "„Feierabend“라는 단어는 무슨 뜻이에요?", "", "Was bedeutet + 주어?|Was bedeutet das Wort „Feierabend“?"],
+["부탁·허락", "A1", "어떻게 쓰나요?", ["Wie schreibt man das?"], "", "Wie schreibt man „Entschuldigung“?", "„Entschuldigung“은 어떻게 쓰나요?", "", "Wie schreibt man das?|Wie schreibt man „Entschuldigung“?"],
+["부탁·허락", "A2", "~해 주시겠어요?", ["Könnten Sie bitte …?"], "동사원형 (문장 끝)", "Könnten Sie das bitte wiederholen?", "다시 한 번 말씀해 주시겠어요?", "Können Sie보다 더 정중하다.", "Könnten Sie bitte + 동사원형?|Könnten Sie das bitte wiederholen?"],
+["부탁·허락", "A2", "~ 좀 빌려도 될까요?", ["Kann ich mir … leihen?"], "4격", "Kann ich mir kurz Ihren Stift leihen?", "펜을 잠깐 빌려도 될까요?", "빌릴 때는 sich(3격) etwas leihen을 쓴다. ausleihen은 도서관 등에서 빌릴 때 자주 쓴다.", "Kann ich mir + 4격 + leihen?|Kann ich mir kurz Ihren Stift leihen?"],
+["부탁·허락", "B1", "~해 주실 수 있는지 여쭤보고 싶어요", ["Ich wollte fragen, ob Sie … könnten."], "", "Ich wollte fragen, ob Sie mir kurz helfen könnten.", "잠깐 도와주실 수 있는지 여쭤보고 싶었어요.", "ob 문장에서는 동사가 맨 뒤에 온다.", "Ich wollte fragen, ob Sie ... könnten.|Ich wollte fragen, ob Sie mir kurz helfen könnten."],
+["부탁·허락", "B1", "~해도 괜찮으실까요?", ["Würde es Ihnen etwas ausmachen, wenn ich …?"], "", "Würde es Ihnen etwas ausmachen, wenn ich das Fenster öffne?", "제가 창문을 열면 불편하실까요?", "정중하게 허락을 구할 때 쓴다.", "Würde es Ihnen etwas ausmachen, wenn ich ...?|Würde es Ihnen etwas ausmachen, wenn ich das Fenster öffne?"],
+["부탁·허락", "B2", "~해 주시면 정말 감사하겠습니다", ["Ich wäre Ihnen sehr dankbar, wenn Sie … könnten."], "", "Ich wäre dankbar, wenn Sie mir helfen könnten.", "도와주시면 감사하겠습니다.", "접속법 2식(wäre, könnten)으로 정중함을 높인다.", "Ich wäre Ihnen sehr dankbar, wenn Sie ... könnten.|Ich wäre Ihnen sehr dankbar, wenn Sie mir die Unterlagen schicken könnten."],
+["부탁·허락", "B2", "~해 주시기를 부탁드려도 될까요?", ["Dürfte ich Sie bitten, … zu …?"], "zu + 동사원형 (문장 끝)", "Dürfte ich Sie bitten, das Fenster zu schließen?", "창문을 닫아 주시기를 부탁드려도 될까요?", "매우 격식 있는 부탁 표현이다.", "Dürfte ich Sie bitten, ... zu + 동사원형?|Dürfte ich Sie bitten, das Fenster zu schließen?"],
+["부탁·허락", "B2", "조금 더 자세히 설명해 주시겠어요?", ["Könnten Sie das etwas genauer erklären?"], "", "Könnten Sie das genauer erklären?", "더 자세히 설명해 주시겠어요?", "", "Könnten Sie das etwas genauer erklären?|Könnten Sie das etwas genauer erklären? Ich habe es noch nicht ganz verstanden."],
+// 쇼핑
+["쇼핑", "A1", "얼마예요?", ["Was kostet …?", "Was kosten …?"], "단수 명사 / 복수 명사", "Was kostet dieser Pullover?", "이 스웨터는 얼마예요?", "복수 명사는 Was kosten die Schuhe?처럼 kosten을 쓴다.", "Was kostet + 단수 / Was kosten + 복수|Was kostet dieser Pullover?"],
+["쇼핑", "A1", "그냥 둘러보는 중이에요", ["Ich schaue mich nur um."], "", "Danke, ich schaue mich nur um.", "고맙습니다, 그냥 둘러보는 중이에요.", "", "Ich schaue mich nur um.|Danke, ich schaue mich nur um."],
+["쇼핑", "A1", "이걸로 할게요", ["Ich nehme das.", "Ich nehme es."], "", "Das gefällt mir. Ich nehme es.", "마음에 들어요. 이걸로 할게요.", "", "Ich nehme das. / Ich nehme es.|Das gefällt mir. Ich nehme es."],
+["쇼핑", "A1", "너무 비싸요", ["Das ist mir zu teuer."], "", "Das ist mir leider zu teuer.", "저한테는 좀 비싸네요.", "", "Das ist mir zu teuer.|Das ist mir leider zu teuer."],
+["쇼핑", "A1", "카드로 계산해도 되나요?", ["Kann ich mit Karte bezahlen?"], "", "Kann ich hier mit Karte bezahlen?", "여기서 카드로 계산할 수 있나요?", "독일에서는 현금만 받는 가게도 있다.", "Kann ich mit Karte bezahlen?|Kann ich hier mit Karte bezahlen?"],
+["쇼핑", "A2", "입어 봐도 될까요?", ["Kann ich das anprobieren?"], "", "Kann ich die Jacke anprobieren?", "이 재킷을 입어 봐도 될까요?", "anprobieren은 분리동사다.", "Kann ich das anprobieren?|Kann ich die Jacke anprobieren?"],
+["쇼핑", "A2", "다른 사이즈 있나요?", ["Haben Sie das auch in Größe …?"], "", "Haben Sie das auch in Größe M?", "이것 M 사이즈도 있나요?", "", "Haben Sie das auch in Größe ...?|Haben Sie das auch in Größe M?"],
+["쇼핑", "A2", "영수증 주세요", ["Könnte ich bitte den Kassenbon bekommen?"], "", "Könnte ich bitte den Kassenbon bekommen?", "영수증 좀 받을 수 있을까요?", "가게 영수증은 Kassenbon이라고 한다.", "Könnte ich bitte den Kassenbon bekommen?|Könnte ich bitte den Kassenbon bekommen?"],
+["쇼핑", "B1", "교환하고 싶어요", ["Ich möchte das umtauschen."], "", "Ich möchte diese Hose umtauschen.", "이 바지를 교환하고 싶어요.", "umtauschen은 분리동사다.", "Ich möchte das umtauschen.|Ich möchte diese Hose umtauschen. Sie ist zu klein."],
+["쇼핑", "B1", "환불할 수 있나요?", ["Kann ich das zurückgeben?"], "", "Kann ich das zurückgeben?", "이거 반품할 수 있나요?", "", "Kann ich das zurückgeben?|Kann ich den Pullover zurückgeben? Ich habe den Kassenbon dabei."],
+["쇼핑", "B2", "제품 불량을 신고하고 싶어요", ["Ich möchte … reklamieren."], "4격", "Ich möchte das reklamieren. Es ist kaputt.", "이 제품의 불량을 신고하고 싶어요. 고장 났어요.", "reklamieren은 구매한 물건의 하자를 알리고 교환이나 수리를 요구한다는 뜻이다.", "Ich möchte + 4격 + reklamieren.|Ich möchte diese Kaffeemaschine reklamieren. Sie funktioniert nicht richtig."],
+["쇼핑", "B2", "보증 기간은 얼마나 되나요?", ["Wie lange gilt die Garantie auf …?"], "4격", "Wie lange gilt die Garantie auf dieses Gerät?", "이 기기의 보증 기간은 얼마나 되나요?", "", "Wie lange gilt die Garantie auf + 4격?|Wie lange gilt die Garantie auf dieses Gerät?"],
+["쇼핑", "B2", "할인이 되나요?", ["Gibt es dafür einen Rabatt?"], "", "Gibt es bei mehreren Artikeln einen Rabatt?", "여러 개를 사면 할인이 되나요?", "", "Gibt es dafür einen Rabatt?|Gibt es bei mehreren Artikeln einen Rabatt?"],
+// 교통·숙박
+["교통·숙박", "A1", "~행 표 한 장 주세요", ["Eine Fahrkarte nach …, bitte.", "Einmal nach …, bitte."], "도시", "Eine Fahrkarte nach Berlin, bitte.", "베를린행 표 한 장 주세요.", "구어에서는 Einmal nach Berlin, bitte.라고 짧게 말하기도 한다.", "Eine Fahrkarte nach + 도시, bitte. / Einmal nach + 도시, bitte.|Eine Fahrkarte nach Berlin, bitte."],
+["교통·숙박", "A1", "이 자리 비었나요?", ["Ist dieser Platz frei?"], "", "Entschuldigung, ist dieser Platz frei?", "실례합니다, 이 자리 비었나요?", "", "Ist dieser Platz frei?|Entschuldigung, ist dieser Platz frei?"],
+["교통·숙박", "A2", "다음 ~행 열차는 언제예요?", ["Wann fährt der nächste Zug nach …?"], "", "Wann fährt der nächste Zug nach München?", "다음 뮌헨행 열차는 언제 출발하나요?", "", "Wann fährt der nächste Zug nach ...?|Wann fährt der nächste Zug nach München?"],
+["교통·숙박", "A2", "몇 번 승강장에서 출발하나요?", ["Von welchem Gleis fährt der Zug?"], "", "Von welchem Gleis fährt der Zug nach Hamburg?", "함부르크행 열차는 몇 번 승강장에서 출발하나요?", "Gleis는 중성 명사라서 von welchem이 된다.", "Von welchem Gleis fährt der Zug?|Von welchem Gleis fährt der Zug nach Hamburg?"],
+["교통·숙박", "A2", "어디서 갈아타야 하나요?", ["Wo muss ich umsteigen?"], "", "Wo muss ich umsteigen? – In Frankfurt.", "어디서 갈아타야 하나요? – 프랑크푸르트에서요.", "", "Wo muss ich umsteigen?|Wo muss ich umsteigen? – In Frankfurt."],
+["교통·숙박", "A2", "열차가 늦어지고 있어요", ["Der Zug hat Verspätung."], "", "Der Zug hat zwanzig Minuten Verspätung.", "열차가 20분 늦어지고 있어요.", "", "Der Zug hat Verspätung.|Der Zug hat zwanzig Minuten Verspätung."],
+["교통·숙박", "A2", "호텔 예약을 했어요", ["Ich habe ein Zimmer auf den Namen … reserviert."], "", "Ich habe ein Zimmer auf den Namen Kim reserviert.", "김이라는 이름으로 방을 예약했어요.", "auf den Namen + 이름은 '~라는 이름으로'라는 뜻이다.", "Ich habe ein Zimmer auf den Namen ... reserviert.|Ich habe ein Zimmer auf den Namen Kim reserviert."],
+["교통·숙박", "A2", "체크인은 몇 시부터인가요?", ["Ab wann kann ich einchecken?"], "", "Ab wann kann ich einchecken?", "몇 시부터 체크인할 수 있나요?", "ab wann은 '언제부터'라는 뜻이다.", "Ab wann kann ich einchecken?|Ab wann kann ich einchecken?"],
+["교통·숙박", "B1", "열차를 놓쳤어요", ["Ich habe meinen Zug verpasst."], "", "Ich habe meinen Zug verpasst.", "기차를 놓쳤어요.", "", "Ich habe meinen Zug verpasst.|Ich habe meinen Anschlusszug verpasst. Was soll ich jetzt tun?"],
+["교통·숙박", "B1", "~가 작동하지 않아요", ["In meinem Zimmer funktioniert … nicht."], "", "In meinem Zimmer funktioniert die Heizung nicht.", "제 방의 난방이 작동하지 않아요.", "", "In meinem Zimmer funktioniert ... nicht.|In meinem Zimmer funktioniert die Heizung nicht."],
+["교통·숙박", "B2", "환불을 신청하고 싶어요", ["Ich möchte eine Erstattung für … beantragen."], "4격", "Ich möchte eine Erstattung für mein Ticket beantragen.", "표 환불을 신청하고 싶어요.", "Erstattung은 '환불'이라는 뜻이다.", "Ich möchte eine Erstattung für + 4격 beantragen.|Ich möchte eine Erstattung für mein Ticket beantragen, weil der Zug ausgefallen ist."],
+["교통·숙박", "B2", "환승 열차를 탈 수 있을까요?", ["Erreiche ich meinen Anschlusszug noch?"], "", "Erreiche ich meinen Anschlusszug noch?", "환승 열차를 탈 수 있을까요?", "", "Erreiche ich meinen Anschlusszug noch?|Der Zug hat Verspätung. Erreiche ich meinen Anschlusszug noch?"],
+["교통·숙박", "B2", "예약한 것과 달라요", ["Ich hatte … gebucht, aber …"], "", "Ich hatte ein Zimmer gebucht, aber es ist laut.", "방을 예약했는데 시끄러워요.", "과거에 먼저 일어난 일은 과거완료(hatte + 과거분사)로 쓴다.", "Ich hatte ... gebucht, aber ...|Ich hatte ein ruhiges Zimmer gebucht, aber es liegt direkt an der Straße."],
+// 병원·건강
+["병원·건강", "A1", "~가 아파요", ["Mir tut … weh.", "Mir tun … weh."], "신체 부위 (복수는 tun)", "Mir tut der Kopf weh.", "머리가 아파요.", "부위가 복수이면 tun을 쓴다. Mir tun die Füße weh.", "Mir tut/tun + 신체 부위 weh.|Mir tut der Kopf weh."],
+["병원·건강", "A1", "~통이 있어요", ["Ich habe …schmerzen."], "신체 부위 (한 단어로 붙임)", "Ich habe Bauchschmerzen.", "배가 아파요.", "Kopfschmerzen, Halsschmerzen처럼 한 단어로 붙여 쓴다.", "Ich habe + 부위 + -schmerzen.|Ich habe Bauchschmerzen."],
+["병원·건강", "A1", "열이 나요", ["Ich habe Fieber."], "", "Ich habe seit gestern Fieber.", "어제부터 열이 나요.", "", "Ich habe Fieber.|Ich habe seit gestern Fieber."],
+["병원·건강", "A1", "몸이 안 좋아요", ["Ich fühle mich nicht gut."], "", "Ich fühle mich heute nicht gut.", "오늘 몸이 안 좋아요.", "fühlen은 재귀대명사 mich와 함께 쓴다.", "Ich fühle mich nicht gut.|Ich fühle mich heute nicht gut."],
+["병원·건강", "A2", "진료 예약을 하고 싶어요", ["Ich möchte einen Termin vereinbaren."], "", "Guten Tag, ich möchte einen Termin vereinbaren.", "안녕하세요, 진료 예약을 하고 싶어요.", "", "Ich möchte einen Termin vereinbaren.|Guten Tag, ich möchte einen Termin vereinbaren."],
+["병원·건강", "A2", "하루에 몇 번 먹나요?", ["Wie oft muss ich das Medikament nehmen?"], "", "Wie oft muss ich das Medikament nehmen?", "이 약을 얼마나 자주 먹어야 하나요?", "", "Wie oft muss ich das Medikament nehmen?|Wie oft am Tag muss ich das Medikament nehmen?"],
+["병원·건강", "B1", "~ 전부터 ~해요", ["Ich habe seit drei Tagen …."], "증상", "Ich habe seit drei Tagen Husten.", "3일 전부터 기침을 해요.", "", "Ich habe seit + 3격 + ...|Ich habe seit drei Tagen Husten."],
+["병원·건강", "B1", "처방전이 필요해요", ["Ich brauche ein Rezept für …."], "4격", "Ich brauche ein Rezept für dieses Medikament.", "이 약의 처방전이 필요해요.", "", "Ich brauche ein Rezept für + 4격.|Ich brauche ein Rezept für dieses Medikament."],
+["병원·건강", "B1", "점점 심해지고 있어요", ["… werden immer schlimmer."], "", "Die Schmerzen werden immer schlimmer.", "통증이 점점 심해지고 있어요.", "immer + 비교급은 '점점 더 ~하다'라는 뜻이다.", "... werden immer schlimmer.|Die Schmerzen werden immer schlimmer."],
+["병원·건강", "B2", "~ 이후로 계속 ~해요", ["Seit … habe ich …."], "3격 / 4격", "Seit dem Sturz habe ich Schmerzen im Knie.", "넘어진 이후로 무릎이 계속 아파요.", "", "Seit + 3격 + habe ich + 4격.|Seit dem Sturz habe ich Schmerzen im Knie."],
+["병원·건강", "B2", "부작용이 있나요?", ["Muss ich mit Nebenwirkungen rechnen?"], "", "Muss ich bei diesem Medikament mit Nebenwirkungen rechnen?", "이 약을 먹으면 부작용이 있을 수 있나요?", "rechnen mit + 3격은 '~를 예상하다'라는 뜻이다.", "Muss ich mit Nebenwirkungen rechnen?|Muss ich bei diesem Medikament mit Nebenwirkungen rechnen?"],
+["병원·건강", "B2", "병가 진단서를 부탁드려요", ["Könnten Sie mir bitte eine Krankschreibung ausstellen?"], "", "Könnten Sie mir eine Krankschreibung ausstellen?", "병가 진단서를 발급해 주시겠어요?", "Krankschreibung은 의사가 발급하는 병가 증명서를 말한다.", "Könnten Sie mir bitte eine Krankschreibung ausstellen?|Könnten Sie mir bitte eine Krankschreibung für die ganze Woche ausstellen?"],
+// 전화
+["전화", "A1", "저는 ~입니다 (전화)", ["Hier spricht …."], "이름", "Guten Tag, hier spricht Kim.", "안녕하세요, 김입니다.", "전화에서는 Ich bin이 아니라 Hier spricht를 쓴다.", "Hier spricht + 이름.|Guten Tag, hier spricht Kim."],
+["전화", "A2", "~와 통화할 수 있을까요?", ["Kann ich bitte mit … sprechen?"], "3격 (사람)", "Kann ich bitte mit Frau Weber sprechen?", "베버 씨와 통화할 수 있을까요?", "", "Kann ich bitte mit + 3격 + sprechen?|Kann ich bitte mit Frau Weber sprechen?"],
+["전화", "A2", "잘 안 들려요", ["Ich kann Sie schlecht verstehen."], "", "Entschuldigung, ich kann Sie schlecht verstehen.", "죄송해요, 잘 안 들려요.", "", "Ich kann Sie schlecht verstehen.|Entschuldigung, ich kann Sie schlecht verstehen."],
+["전화", "A2", "나중에 다시 전화할게요", ["Ich rufe später noch einmal an."], "", "Ich rufe später noch einmal an.", "나중에 다시 전화할게요.", "anrufen은 분리동사다.", "Ich rufe später noch einmal an.|Ich rufe später noch einmal an."],
+["전화", "B1", "메시지를 남겨도 될까요?", ["Kann ich eine Nachricht hinterlassen?"], "", "Kann ich ihm eine Nachricht hinterlassen?", "그분께 메시지를 남겨도 될까요?", "", "Kann ich eine Nachricht hinterlassen?|Kann ich ihm eine Nachricht hinterlassen?"],
+["전화", "B1", "다시 전화해 주시겠어요?", ["Könnten Sie mich bitte zurückrufen?"], "", "Könnten Sie mich bitte unter dieser Nummer zurückrufen?", "이 번호로 다시 전화해 주시겠어요?", "zurückrufen은 분리동사다.", "Könnten Sie mich bitte zurückrufen?|Könnten Sie mich bitte unter dieser Nummer zurückrufen?"],
+["전화", "B1", "~에게 연결해 주시겠어요?", ["Könnten Sie mich bitte mit … verbinden?"], "3격", "Könnten Sie mich bitte mit der Personalabteilung verbinden?", "인사팀으로 연결해 주시겠어요?", "", "Könnten Sie mich bitte mit + 3격 + verbinden?|Könnten Sie mich bitte mit der Personalabteilung verbinden?"],
+["전화", "B2", "~ 때문에 전화드렸습니다", ["Ich rufe wegen … an."], "2격", "Ich rufe wegen Ihrer Anzeige an.", "올려 주신 광고를 보고 전화드렸습니다.", "anrufen은 분리동사라서 an이 문장 끝에 온다.", "Ich rufe wegen + 2격 + an.|Ich rufe wegen Ihrer Anzeige an."],
+["전화", "B2", "그 건은 제 담당이 아니에요", ["Dafür bin ich leider nicht zuständig."], "", "Dafür bin ich nicht zuständig.", "그 건은 제 담당이 아니에요.", "", "Dafür bin ich leider nicht zuständig.|Dafür ist Frau Müller zuständig. Ich verbinde Sie gern."],
+["전화", "B2", "서면으로 확인해 주시겠어요?", ["Könnten Sie mir das bitte schriftlich bestätigen?"], "", "Könnten Sie mir das schriftlich bestätigen?", "서면으로 확인해 주시겠어요?", "", "Könnten Sie mir das bitte schriftlich bestätigen?|Könnten Sie mir das bitte per E-Mail schriftlich bestätigen?"],
+// 시간·날짜
+["시간·날짜", "A1", "지금 몇 시인지 물을 때", ["Wie spät ist es?", "Wie viel Uhr ist es?"], "", "Wie spät ist es? – Es ist halb acht.", "지금 몇 시예요? – 7시 반이에요.", "halb acht는 8시를 향해 반이 지났다는 뜻이라서 7시 30분이다.", "Wie spät ist es? / Wie viel Uhr ist es?|Wie spät ist es? – Es ist halb acht."],
+["시간·날짜", "A1", "몇 시에 시작하는지 물을 때", ["Um wie viel Uhr beginnt …?", "Wann beginnt …?"], "주어", "Um wie viel Uhr beginnt der Kurs? – Um zehn.", "수업은 몇 시에 시작해요? – 10시요.", "시각 앞에는 um을 쓴다.", "Um wie viel Uhr beginnt …? / Wann beginnt …?|Um wie viel Uhr beginnt der Kurs? – Um zehn Uhr."],
+["시간·날짜", "A1", "오늘이 무슨 요일인지 말할 때", ["Heute ist Montag.", "Heute ist Sonntag."], "", "Welcher Tag ist heute? – Heute ist Sonntag.", "오늘 무슨 요일이에요? – 오늘은 일요일이에요.", "", "Heute ist Montag. / Heute ist Sonntag.|Welcher Tag ist heute? – Heute ist Sonntag."],
+["시간·날짜", "A2", "며칠인지 물을 때", ["Der Wievielte ist heute?", "Den Wievielten haben wir heute?"], "", "Der Wievielte ist heute? – Der 25.", "오늘 며칠이에요? – 25일이에요.", "날짜는 서수로 읽는다. 25.은 der fünfundzwanzigste라고 읽는다.", "Der Wievielte ist heute? / Den Wievielten haben wir heute?|Der Wievielte ist heute? – Heute ist der 25. Oktober."],
+["시간·날짜", "A2", "요일·시각·달에 쓰는 전치사", ["am Montag", "am Wochenende", "um zehn Uhr", "im Oktober"], "", "Am Montag habe ich um zehn Uhr Unterricht.", "월요일에는 10시에 수업이 있어요.", "요일과 주말에는 am, 시각에는 um, 월과 계절에는 im을 쓴다.", "am Montag / am Wochenende / um zehn Uhr / im Oktober|Am Montag habe ich um zehn Uhr Unterricht."],
+["시간·날짜", "A2", "얼마나 걸리는지 물을 때", ["Wie lange dauert …?"], "주어", "Wie lange dauert die Fahrt? – Vier Stunden.", "얼마나 걸려요? – 네 시간이요.", "dauern은 '걸리다'라는 뜻이다.", "Wie lange dauert …?|Wie lange dauert die Fahrt nach München? – Ungefähr vier Stunden."],
+["시간·날짜", "A2", "얼마나 자주 하는지 물을 때", ["Wie oft …?"], "문장", "Wie oft lernst du Deutsch? – Jeden Tag.", "독일어는 얼마나 자주 공부해요? – 매일 해요.", "빈도는 jeden Tag(매일), einmal pro Woche(주 1회), manchmal(가끔)처럼 말한다.", "Wie oft …?|Wie oft lernst du Deutsch? – Jeden Tag, ungefähr eine Stunde."],
+["시간·날짜", "A2", "언제부터 언제까지인지 말할 때", ["von Montag bis Freitag", "ab nächster Woche", "bis morgen"], "", "Wir haben von Montag bis Freitag geöffnet.", "월요일부터 금요일까지 열어요.", "von ... bis는 기간, ab는 시작 시점, bis는 마감 시점을 나타낸다.", "von Montag bis Freitag / ab nächster Woche / bis morgen|Das Geschäft ist von Montag bis Freitag geöffnet. Ab nächster Woche gelten neue Öffnungszeiten."],
+// 일상 대화·취미
+["일상 대화·취미", "A1", "가족에 대해 말할 때", ["Ich habe einen Bruder und eine Schwester.", "Ich habe keine Geschwister."], "", "Hast du Geschwister? – Ja, ich habe einen Bruder.", "형제자매 있어요? – 네, 남자 형제가 한 명 있어요.", "독일어에는 형·동생을 가르는 단어가 따로 없다. 필요하면 älterer(위), jüngerer(아래)를 붙인다.", "Ich habe einen Bruder und eine Schwester. / Ich habe keine Geschwister.|Hast du Geschwister? – Ja, ich habe einen Bruder und eine Schwester."],
+["일상 대화·취미", "A1", "여가 시간에 뭘 하는지 물을 때", ["Was machst du in deiner Freizeit?", "Was sind deine Hobbys?"], "", "Was machst du in deiner Freizeit? – Ich höre Musik.", "여가 시간에 뭐 해요? – 음악을 들어요.", "", "Was machst du in deiner Freizeit? / Was sind deine Hobbys?|Was machst du in deiner Freizeit? – Ich höre gern Musik und gehe spazieren."],
+["일상 대화·취미", "A1", "취미를 말할 때", ["Mein Hobby ist …."], "명사", "Mein Hobby ist Schwimmen.", "제 취미는 수영이에요.", "", "Mein Hobby ist ….|Mein Hobby ist Schwimmen. Ich gehe zweimal pro Woche ins Schwimmbad."],
+["일상 대화·취미", "A1", "주말 계획을 물을 때", ["Was machst du am Wochenende?", "Hast du am Wochenende schon etwas vor?"], "", "Was machst du am Wochenende? – Ich treffe Freunde.", "주말에 뭐 해요? – 친구들을 만나요.", "etwas vorhaben은 '계획이 있다'는 뜻이다.", "Was machst du am Wochenende? / Hast du am Wochenende schon etwas vor?|Was machst du am Wochenende? – Ich treffe Freunde."],
+["일상 대화·취미", "A2", "지난 주말이나 휴가가 어땠는지 물을 때", ["Wie war dein Wochenende?", "Wie war der Urlaub?"], "", "Wie war dein Wochenende? – Sehr schön!", "주말은 어땠어요? – 아주 좋았어요!", "", "Wie war dein Wochenende? / Wie war der Urlaub?|Wie war dein Wochenende? – Sehr schön, wir waren am Meer."],
+["일상 대화·취미", "A2", "가까운 계획을 말할 때", ["Am Wochenende fahre ich nach …."], "도시", "Am Wochenende fahre ich nach Busan.", "주말에 부산에 가요.", "독일어는 가까운 미래를 현재형으로 말한다.", "Am Wochenende fahre ich nach ….|Am Wochenende fahre ich nach Busan."],
+["일상 대화·취미", "A2", "가 본 적이 있다고 말할 때", ["Ich war schon in …."], "장소", "Ich war schon zweimal in Deutschland.", "저는 독일에 두 번 가 봤어요.", "경험은 sein의 과거형 war를 써서 말한다.", "Ich war schon in ….|Ich war schon zweimal in Deutschland."],
+["일상 대화·취미", "B1", "어릴 때나 지난 일을 이야기할 때", ["Als ich … war, …."], "시기", "Als ich Kind war, habe ich viel Fußball gespielt.", "어렸을 때 축구를 많이 했어요.", "과거의 한 시기나 시점은 als로 말한다. als 문장에서는 동사가 맨 뒤에 온다.", "Als ich … war, ….|Als ich Kind war, habe ich viel Fußball gespielt."],
+// 날씨
+["날씨", "A1", "날씨를 물을 때", ["Wie ist das Wetter?", "Wie ist das Wetter heute?"], "", "Wie ist das Wetter? – Es ist sonnig.", "날씨 어때요? – 맑아요.", "", "Wie ist das Wetter? / Wie ist das Wetter heute?|Wie ist das Wetter heute? – Es ist sonnig, aber ein bisschen kalt."],
+["날씨", "A1", "날씨를 말할 때", ["Es regnet.", "Es schneit.", "Die Sonne scheint."], "", "Heute regnet es. Nimm einen Regenschirm mit!", "오늘은 비가 와요. 우산 챙겨 가요!", "날씨 문장의 주어는 es이다. 단, Die Sonne scheint.는 Sonne가 주어다.", "Es regnet. / Es schneit. / Die Sonne scheint.|Heute regnet es. Nimm einen Regenschirm mit!"],
+["날씨", "A1", "춥거나 덥다고 말할 때", ["Es ist kalt.", "Es ist heiß.", "Mir ist kalt.", "Mir ist heiß."], "", "Mir ist kalt. Kann ich das Fenster schließen?", "추워요. 창문을 닫아도 될까요?", "Es ist kalt.는 날씨가 춥다는 뜻이고, Mir ist kalt.는 내가 춥다고 느낀다는 뜻이다.", "Es ist kalt. / Es ist heiß. / Mir ist kalt. / Mir ist heiß.|Mir ist kalt. Kann ich das Fenster schließen?"],
+["날씨", "A2", "날씨 예보를 말할 때", ["Morgen soll es regnen.", "Morgen wird es sonnig."], "", "Morgen soll es regnen.", "내일은 비가 온대요.", "sollen은 '~라고 한다'는 전언의 뜻으로도 쓴다.", "Morgen soll es regnen. / Morgen wird es sonnig.|Morgen soll es regnen. Wir bleiben besser zu Hause."],
+// 직장·학교
+["직장·학교", "A2", "어디에서 일하는지 말할 때", ["Ich arbeite bei …."], "회사 (3격)", "Ich arbeite bei einer Bank.", "저는 은행에서 일해요.", "arbeiten bei는 회사나 기관 이름에 쓴다.", "Ich arbeite bei ….|Ich arbeite bei einer Bank."],
+["직장·학교", "A2", "대학에서 무엇을 공부하는지 말할 때", ["Ich studiere …."], "전공", "Ich studiere Medizin an der Universität Heidelberg.", "저는 하이델베르크 대학교에서 의학을 공부해요.", "studieren은 대학에서 공부할 때, lernen은 일반적으로 배울 때 쓴다.", "Ich studiere ….|Ich studiere Medizin an der Universität Heidelberg."],
+["직장·학교", "A2", "퇴근 시간을 말할 때", ["Ich habe Feierabend.", "Ich habe heute frei."], "", "Ich habe um fünf Uhr Feierabend.", "저는 5시에 퇴근해요.", "Feierabend는 일과를 마치는 시각 또는 퇴근 후의 시간을 말한다.", "Ich habe Feierabend. / Ich habe heute frei.|Ich habe um fünf Uhr Feierabend."],
+["직장·학교", "B1", "휴가를 내고 싶을 때", ["Ich möchte Urlaub nehmen.", "Ich möchte Urlaub beantragen."], "", "Ich möchte nächste Woche zwei Tage Urlaub nehmen.", "다음 주에 이틀 휴가를 내고 싶어요.", "beantragen은 공식적으로 신청한다는 뜻이다.", "Ich möchte Urlaub nehmen. / Ich möchte Urlaub beantragen.|Ich möchte nächste Woche zwei Tage Urlaub nehmen."],
+["직장·학교", "B1", "야근해야 할 때", ["Ich muss Überstunden machen.", "Ich komme heute später nach Hause."], "", "Ich muss heute Überstunden machen.", "오늘 야근해야 해요.", "", "Ich muss Überstunden machen. / Ich komme heute später nach Hause.|Ich muss heute Überstunden machen. Wir sehen uns später."],
+["직장·학교", "B1", "마감 시한을 물을 때", ["Bis wann muss ich … abgeben?"], "4격 명사", "Bis wann muss ich das abgeben? – Bis Freitag.", "이거 언제까지 제출해야 해요? – 금요일까지요.", "abgeben은 분리동사다.", "Bis wann muss ich … abgeben?|Bis wann muss ich den Bericht abgeben? – Bis Freitag."],
+["직장·학교", "B2", "회의에서 의견을 물을 때", ["Wie ist Ihre Meinung dazu?", "Was meinen Sie dazu?"], "", "Wie ist Ihre Meinung dazu? – Ich finde es gut.", "이에 대해 어떻게 생각하세요? – 좋다고 생각해요.", "격식 있는 회의에서 쓴다.", "Wie ist Ihre Meinung dazu? / Was meinen Sie dazu?|Wie ist Ihre Meinung dazu? – Ich halte den Vorschlag für sinnvoll."],
+["직장·학교", "B2", "일정이 바뀌었다고 알릴 때", ["Der Termin wurde verschoben.", "Leider muss der Termin auf … verschoben werden."], "날짜", "Leider muss der Termin auf Mittwoch verschoben werden.", "죄송하지만 약속이 수요일로 미뤄져야 해요.", "수동태(werden + 과거분사)는 격식 있는 안내문에서 자주 쓴다.", "Der Termin wurde verschoben. / Leider muss der Termin auf … verschoben werden.|Leider muss der Termin auf nächsten Mittwoch verschoben werden."],
+// 은행·우체국·관공서
+["은행·우체국·관공서", "A2", "계좌를 만들고 싶을 때", ["Ich möchte ein Konto eröffnen."], "", "Guten Tag, ich möchte ein Konto eröffnen.", "안녕하세요, 계좌를 개설하고 싶어요.", "eröffnen은 '개설하다'라는 뜻이다.", "Ich möchte ein Konto eröffnen.|Guten Tag, ich möchte ein Konto eröffnen."],
+["은행·우체국·관공서", "A2", "현금이 필요하거나 환전할 때", ["Wo ist der nächste Geldautomat?", "Ich möchte Geld wechseln."], "", "Entschuldigung, wo ist der nächste Geldautomat?", "실례합니다, 가장 가까운 ATM이 어디예요?", "", "Wo ist der nächste Geldautomat? / Ich möchte Geld wechseln.|Entschuldigung, wo ist der nächste Geldautomat?"],
+["은행·우체국·관공서", "A2", "소포를 보낼 때", ["Ich möchte ein Paket nach … schicken."], "나라·도시", "Ich möchte dieses Paket nach Korea schicken.", "이 소포를 한국으로 보내고 싶어요.", "Paket는 소포, Brief는 편지, Postkarte는 엽서다.", "Ich möchte ein Paket nach … schicken.|Ich möchte dieses Paket nach Korea schicken."],
+["은행·우체국·관공서", "A2", "우편 요금을 물을 때", ["Wie viel kostet das Porto nach …?"], "나라", "Wie viel kostet das Porto nach Korea?", "한국까지 우편 요금이 얼마예요?", "Porto는 우편 요금이다.", "Wie viel kostet das Porto nach …?|Wie viel kostet das Porto nach Korea?"],
+["은행·우체국·관공서", "B1", "주소 등록을 하고 싶을 때", ["Ich möchte mich anmelden."], "", "Ich möchte mich anmelden.", "전입 신고를 하고 싶어요.", "독일에서는 새 주소에 살게 되면 관할 관청에 주소 등록(Anmeldung)을 해야 한다.", "Ich möchte mich anmelden.|Ich bin neu in der Stadt und möchte mich anmelden."],
+["은행·우체국·관공서", "B1", "관청 예약이 필요할 때", ["Ich brauche einen Termin beim Bürgeramt.", "Kann ich online einen Termin buchen?"], "", "Ich brauche einen Termin beim Bürgeramt.", "시민사무소 예약이 필요해요.", "Bürgeramt는 주소 등록 등을 처리하는 시민사무소다.", "Ich brauche einen Termin beim Bürgeramt. / Kann ich online einen Termin buchen?|Ich brauche einen Termin beim Bürgeramt. Kann ich ihn online buchen?"],
+["은행·우체국·관공서", "B1", "필요한 서류를 물을 때", ["Welche Unterlagen brauche ich?", "Brauche ich dafür ein Formular?"], "", "Welche Unterlagen brauche ich für die Anmeldung?", "주소 등록에 어떤 서류가 필요해요?", "Unterlagen은 복수형으로 쓰는 '서류'다.", "Welche Unterlagen brauche ich? / Brauche ich dafür ein Formular?|Welche Unterlagen brauche ich für die Anmeldung?"],
+["은행·우체국·관공서", "B2", "처리 기간을 물을 때", ["Wie lange dauert die Bearbeitung?", "Wann kann ich mit einer Antwort rechnen?"], "", "Wie lange dauert die Bearbeitung meines Antrags?", "제 신청서 처리에 얼마나 걸려요?", "두 번째 표현은 답변이 언제쯤 올지 정중하게 묻는다.", "Wie lange dauert die Bearbeitung? / Wann kann ich mit einer Antwort rechnen?|Wie lange dauert die Bearbeitung meines Antrags?"],
+// 집·주거
+["집·주거", "A2", "집이나 방을 구할 때", ["Ich suche eine Wohnung.", "Ich suche ein Zimmer."], "", "Ich suche eine Wohnung.", "집을 구하고 있어요.", "Wohnung은 집 한 채, Zimmer는 방 하나를 말한다.", "Ich suche eine Wohnung. / Ich suche ein Zimmer.|Ich suche eine Wohnung in der Nähe vom Bahnhof."],
+["집·주거", "A2", "월세를 물을 때", ["Wie hoch ist die Miete?", "Ist das die Warmmiete oder die Kaltmiete?"], "", "Wie hoch ist die Miete? – 650 Euro warm.", "월세가 얼마예요? – 관리비 포함 650유로예요.", "warm은 관리비 포함, kalt는 관리비 제외 월세를 말한다.", "Wie hoch ist die Miete? / Ist das die Warmmiete oder die Kaltmiete?|Wie hoch ist die Miete? – 650 Euro warm."],
+["집·주거", "A2", "집 상태를 물을 때", ["Ist die Wohnung möbliert?", "Gibt es einen Balkon?"], "", "Ist die Wohnung möbliert? – Nein, leider nicht.", "가구가 갖춰져 있나요? – 아니요, 없어요.", "", "Ist die Wohnung möbliert? / Gibt es einen Balkon?|Ist die Wohnung möbliert? – Nein, leider nicht."],
+["집·주거", "B1", "집에 문제가 있다고 알릴 때", ["Die Heizung funktioniert nicht.", "Der Wasserhahn tropft."], "", "Die Heizung funktioniert nicht. Könnten Sie jemanden vorbeischicken?", "난방이 작동하지 않아요. 사람을 보내 주실 수 있나요?", "집주인이나 관리인에게 문제를 알릴 때 쓴다.", "Die Heizung funktioniert nicht. / Der Wasserhahn tropft.|Die Heizung funktioniert nicht. Könnten Sie jemanden vorbeischicken?"],
+["집·주거", "B1", "이사 날짜를 말할 때", ["Ich ziehe am … um."], "날짜", "Ich ziehe am ersten November um.", "저는 11월 1일에 이사해요.", "umziehen은 분리동사다. 날짜는 서수로 말한다.", "Ich ziehe am … um.|Ich ziehe am ersten November um."],
+// 의견 말하기
+["의견 말하기", "A1", "~하는 걸 좋아해요", ["Ich … gern."], "동사 (변화형)", "Ich lese gern Bücher.", "저는 책 읽는 것을 좋아해요.", "", "Ich + 동사 + gern.|Ich lese gern Bücher."],
+["의견 말하기", "A1", "~하고 싶어요", ["Ich möchte …."], "동사원형 (문장 끝)", "Ich möchte nach Deutschland reisen.", "저는 독일에 여행 가고 싶어요.", "", "Ich möchte + 동사원형.|Ich möchte nach Deutschland reisen."],
+["의견 말하기", "A1", "~해야 해요", ["Ich muss …."], "동사원형 (문장 끝)", "Ich muss morgen früh aufstehen.", "저는 내일 일찍 일어나야 해요.", "", "Ich muss + 동사원형.|Ich muss morgen früh aufstehen."],
+["의견 말하기", "A2", "제 생각에는 ~예요", ["Ich finde, dass …"], "", "Ich finde, dass der Film sehr spannend ist.", "저는 그 영화가 아주 흥미진진하다고 생각해요.", "dass 문장에서는 동사가 맨 뒤에 온다.", "Ich finde, dass ...|Ich finde, dass der Film sehr spannend ist."],
+["의견 말하기", "A2", "~인지 모르겠어요", ["Ich weiß nicht, ob …"], "", "Ich weiß nicht, ob er heute kommt.", "그가 오늘 올지 잘 모르겠어요.", "", "Ich weiß nicht, ob ...|Ich weiß nicht, ob er heute kommt."],
+["의견 말하기", "A2", "~ 때문에", ["…, weil …"], "", "Ich komme zu spät, weil der Bus Verspätung hat.", "버스가 지연돼서 늦게 도착해요.", "weil 문장에서도 동사는 맨 뒤에 온다.", "..., weil ...|Ich komme zu spät, weil der Bus Verspätung hat."],
+["의견 말하기", "A2", "저도 같은 생각이에요", ["Das sehe ich auch so.", "Da stimme ich dir zu."], "", "Da stimme ich dir zu.", "그 말에 동의해요.", "", "Das sehe ich auch so. / Da stimme ich dir zu.|Da stimme ich dir zu. Das ist eine gute Idee."],
+["의견 말하기", "B1", "제 의견으로는", ["Meiner Meinung nach …."], "동사가 바로 뒤에 온다", "Meiner Meinung nach ist das eine gute Idee.", "제 생각에는 그게 좋은 아이디어예요.", "nach 뒤에서 동사가 두 번째 자리에 온다.", "Meiner Meinung nach + 동사 + ...|Meiner Meinung nach ist das eine gute Idee."],
+["의견 말하기", "B1", "저는 다르게 생각해요", ["Das sehe ich anders."], "", "Das sehe ich anders.", "저는 다르게 봐요.", "", "Das sehe ich anders.|Das sehe ich anders. Ich finde den Preis zu hoch."],
+["의견 말하기", "B1", "~할 계획이에요", ["Ich habe vor, … zu …."], "zu + 동사원형 (문장 끝)", "Ich habe vor, nach Wien zu fahren.", "빈에 갈 계획이에요.", "zu + 동사원형은 문장 끝에 둔다.", "Ich habe vor, ... zu + 동사원형.|Ich habe vor, im Sommer nach Wien zu fahren."],
+["의견 말하기", "B1", "~에 대해 어떻게 생각하세요?", ["Was halten Sie von …?"], "3격", "Was halten Sie von diesem Vorschlag?", "이 제안에 대해 어떻게 생각하세요?", "halten von은 3격과 함께 쓴다.", "Was halten Sie von + 3격?|Was halten Sie von diesem Vorschlag?"],
+["의견 말하기", "B1", "한편으로는 ~, 다른 한편으로는 ~", ["Einerseits …, andererseits …"], "", "Einerseits ist sie günstig, andererseits weit weg.", "한편으로는 저렴하지만, 다른 한편으로는 멀어요.", "", "Einerseits ..., andererseits ...|Einerseits ist die Wohnung günstig, andererseits liegt sie weit vom Zentrum."],
+["의견 말하기", "B1", "~라면 ~하고 싶어요", ["Ich würde gern …, wenn …."], "동사원형 / wenn 문장", "Ich würde reisen, wenn ich Zeit hätte.", "시간이 있다면 여행할 텐데요.", "wenn 문장에서는 접속법 2식(hätte)을 쓴다.", "Ich würde gern + 동사원형, wenn ...|Ich würde gern öfter reisen, wenn ich mehr Zeit hätte."],
+["의견 말하기", "B1", "~하기 위해서", ["…, um … zu …."], "zu + 동사원형 (문장 끝)", "Ich lerne Deutsch, um in Deutschland zu studieren.", "저는 독일에서 공부하기 위해 독일어를 배워요.", "주어가 같을 때 um … zu를 쓴다.", "..., um ... zu + 동사원형.|Ich lerne Deutsch, um in Deutschland zu studieren."],
+["의견 말하기", "B1", "~하는 것이 중요해요", ["Es ist wichtig, … zu …."], "zu + 동사원형 (문장 끝)", "Es ist wichtig, jeden Tag Deutsch zu sprechen.", "매일 독일어로 말하는 것이 중요해요.", "", "Es ist wichtig, ... zu + 동사원형.|Es ist wichtig, jeden Tag Deutsch zu sprechen."],
+["의견 말하기", "B2", "~는 상황에 따라 달라요", ["Das hängt von … ab."], "3격", "Das hängt von der Situation ab.", "그것은 상황에 따라 달라요.", "abhängen은 분리동사다.", "Das hängt von + 3격 + ab.|Das hängt von der Situation ab."],
+["의견 말하기", "B2", "~라고 주장하는 사람도 있어요", ["Manche behaupten, dass …"], "", "Manche behaupten, dass Homeoffice effizienter ist.", "재택근무가 더 효율적이라고 주장하는 사람도 있어요.", "", "Manche behaupten, dass ...|Manche behaupten, dass Homeoffice effizienter ist. Ich sehe das nicht so."],
+["의견 말하기", "B2", "~를 고려하면", ["Wenn man bedenkt, dass …"], "", "Wenn man bedenkt, dass die Mieten steigen, ist das schwierig.", "월세가 오르는 점을 생각하면 어려워요.", "", "Wenn man bedenkt, dass ...|Wenn man bedenkt, dass die Mieten steigen, ist das keine gute Lösung."],
+["의견 말하기", "B2", "장점은 ~이고 단점은 ~예요", ["Der Vorteil ist, dass …, der Nachteil ist, dass …"], "", "Der Vorteil ist, dass man flexibel arbeitet.", "장점은 유연하게 일할 수 있다는 거예요.", "", "Der Vorteil ist, dass ..., der Nachteil ist, dass ...|Der Vorteil ist, dass man flexibel arbeiten kann, der Nachteil ist, dass man weniger Kontakt hat."],
+["의견 말하기", "B2", "~하는 경향이 있어요", ["… neigen dazu, … zu …."], "zu + 동사원형 (문장 끝)", "Viele Menschen neigen dazu, zu viel zu arbeiten.", "많은 사람들이 일을 너무 많이 하는 경향이 있어요.", "neigen zu + 3격 → dazu로 받는다.", "... neigen dazu, ... zu + 동사원형.|Viele Menschen neigen dazu, zu viel zu arbeiten."],
+["의견 말하기", "B2", "그 부분은 일부 동의하기 어려워요", ["Da muss ich Ihnen teilweise widersprechen."], "", "Da muss ich Ihnen teilweise widersprechen.", "그 점은 일부 동의하기 어렵습니다.", "widersprechen은 3격 동사다.", "Da muss ich Ihnen teilweise widersprechen.|Da muss ich Ihnen teilweise widersprechen. Die Kosten sind nicht das einzige Problem."],
+["의견 말하기", "B2", "~에 따르면", ["Laut …, …."], "3격", "Laut Wetterbericht wird es morgen regnen.", "일기예보에 따르면 내일 비가 와요.", "laut는 3격 또는 2격과 함께 쓴다.", "Laut + 3격, ...|Laut Wetterbericht wird es morgen regnen."],
+["의견 말하기", "B2", "~했더라면 ~했을 텐데", ["Wenn ich … hätte, hätte ich …."], "각 빈칸에 과거분사", "Wenn ich es gewusst hätte, hätte ich gekocht.", "알았다면 요리했을 텐데요.", "과거 사실과 반대되는 가정은 접속법 2식 과거로 쓴다.", "Wenn ich ... + 과거분사 + hätte, hätte ich ... + 과거분사.|Wenn ich früher gewusst hätte, dass du kommst, hätte ich gekocht."],
+["의견 말하기", "B2", "~하는 대신", ["Statt … zu …, …."], "zu + 동사원형", "Statt ins Kino zu gehen, bleibe ich zu Hause.", "영화관 대신 집에 있을래요.", "", "Statt ... zu + 동사원형, ...|Statt ins Kino zu gehen, bleibe ich lieber zu Hause."],
+["의견 말하기", "B2", "~할 것처럼 보여요", ["Es sieht so aus, als ob …"], "", "Es sieht so aus, als ob es regnen würde.", "비가 올 것처럼 보여요.", "als ob 문장에서는 접속법 2식을 쓰고 동사는 맨 뒤에 온다.", "Es sieht so aus, als ob ...|Es sieht so aus, als ob es bald regnen würde."],
+// 동의할 때
+["동의할 때", "A1", "상대방 말에 동의할 때", ["Das stimmt.", "Genau!", "Da hast du recht."], "", "Das Wetter ist schön. – Genau!", "날씨가 좋네요. – 맞아요!", "Da hast du recht.는 du에게 쓴다. Sie에게는 Da haben Sie recht.라고 한다.", "Das stimmt. / Genau! / Da hast du recht.|Das Wetter ist heute wirklich schön. – Genau! Gehen wir spazieren?"],
+["동의할 때", "A1", "나도 같은 생각이라고 말할 때", ["Das finde ich auch.", "Ich auch!", "Das sehe ich genauso."], "", "Ich finde den Film super. – Ich auch!", "저는 그 영화가 정말 좋아요. – 저도요!", "부정문에 동의할 때는 Ich auch nicht.라고 한다.", "Das finde ich auch. / Ich auch! / Das sehe ich genauso.|Ich finde den Film super. – Ich auch!"],
+["동의할 때", "A2", "강하게 동의할 때", ["Auf jeden Fall!", "Absolut!", "Total!"], "", "Wollen wir kochen? – Auf jeden Fall!", "같이 요리할까요? – 물론이죠!", "Total!은 친구 사이에서 쓰는 구어체다.", "Auf jeden Fall! / Absolut! / Total!|Wollen wir am Wochenende zusammen kochen? – Auf jeden Fall!"],
+["동의할 때", "A2", "제안을 흔쾌히 받아들일 때", ["Gern!", "Klar!", "Gute Idee!"], "", "Kommst du mit ins Café? – Klar, gern!", "카페에 같이 갈래요? – 그럼요, 좋아요!", "Klar!는 '당연하지', '좋아'라는 뜻의 구어체다.", "Gern! / Klar! / Gute Idee!|Kommst du mit ins Café? – Klar, gern!"],
+["동의할 때", "B1", "상대의 지적이 맞다고 인정할 때", ["Stimmt, daran habe ich nicht gedacht.", "Da hast du recht, das habe ich übersehen."], "", "Es ist spät. – Stimmt, daran habe ich nicht gedacht.", "늦었어요. – 맞네요, 그 생각은 못 했어요.", "denken an + 4격은 daran으로 받는다.", "Stimmt, daran habe ich nicht gedacht. / Da hast du recht, das habe ich übersehen.|Der Zug fährt erst um zehn. – Stimmt, daran habe ich nicht gedacht."],
+["동의할 때", "B2", "정중하게 전적으로 동의할 때", ["Da kann ich Ihnen nur zustimmen.", "Das trifft es genau.", "Genau so sehe ich das auch."], "", "Das ist wichtig. – Da kann ich Ihnen nur zustimmen.", "그건 중요해요. – 전적으로 동의합니다.", "회의나 토론처럼 격식 있는 자리에서 쓴다.", "Da kann ich Ihnen nur zustimmen. / Das trifft es genau. / Genau so sehe ich das auch.|Wir sollten mehr in Bildung investieren. – Da kann ich Ihnen nur zustimmen."],
+// 반대·이의 제기
+["반대·이의 제기", "A2", "그렇지 않다고 말할 때", ["Das stimmt nicht.", "Nein, so ist das nicht.", "Ich glaube nicht."], "", "Er ist bestimmt zu Hause. – Ich glaube nicht.", "그는 분명 집에 있을 거예요. – 아닌 것 같아요.", "", "Das stimmt nicht. / Nein, so ist das nicht. / Ich glaube nicht.|Er ist bestimmt zu Hause. – Ich glaube nicht. Sein Licht ist aus."],
+["반대·이의 제기", "A2", "나는 다르게 생각한다고 말할 때", ["Ich sehe das anders.", "Ich bin anderer Meinung.", "Das finde ich nicht."], "", "Es ist zu teuer. – Ich sehe das anders.", "너무 비싸요. – 저는 다르게 봐요.", "Ich sehe das anders.는 단호하지 않은 부드러운 반대 표현이다.", "Ich sehe das anders. / Ich bin anderer Meinung. / Das finde ich nicht.|Das Restaurant ist zu teuer. – Ich sehe das anders. Das Essen ist sehr gut."],
+["반대·이의 제기", "A2", "부정 질문에 '아니요, 그렇지 않아요'라고 답할 때", ["Doch!", "Doch, natürlich!", "Doch, das stimmt."], "", "Hast du keinen Hunger? – Doch!", "배 안 고파요? – 아니요, 고파요!", "부정 질문에 긍정으로 답할 때는 Ja가 아니라 Doch를 쓴다.", "Doch! / Doch, natürlich! / Doch, das stimmt.|Hast du keinen Hunger? – Doch! Ich habe großen Hunger."],
+["반대·이의 제기", "B1", "일리는 있지만 이의가 있을 때", ["Da ist was dran, aber …", "Das stimmt schon, aber …", "Ja, aber …"], "", "Das ist praktisch. – Da ist was dran, aber teuer.", "편리해요. – 일리는 있지만 비싸요.", "Da ist was dran.은 '일리가 있다'는 구어 표현이다.", "Da ist was dran, aber ... / Das stimmt schon, aber ... / Ja, aber ...|Online lernen ist praktisch. – Da ist was dran, aber ich brauche den Kontakt zu anderen."],
+["반대·이의 제기", "B1", "상대 말을 인정하면서 반박할 때", ["Das mag sein, aber …", "Mag sein, aber …", "Einerseits ja, aber …"], "", "Das mag sein, aber es ist trotzdem zu teuer.", "그럴 수도 있지만, 그래도 너무 비싸요.", "Das mag sein.은 완전히 동의하지는 않는다는 신호다.", "Das mag sein, aber ... / Mag sein, aber ... / Einerseits ja, aber ...|Das mag sein, aber es ist trotzdem zu teuer."],
+["반대·이의 제기", "B2", "정중하게 이의를 제기할 때", ["Dem kann ich nicht ganz zustimmen.", "Da bin ich skeptisch.", "Ich sehe das etwas differenzierter."], "", "Online ist besser. – Dem kann ich nicht ganz zustimmen.", "온라인이 더 낫죠. – 그 말에는 완전히 동의하기 어려워요.", "zustimmen은 3격 동사라서 dem(= 그 말에)을 쓴다.", "Dem kann ich nicht ganz zustimmen. / Da bin ich skeptisch. / Ich sehe das etwas differenzierter.|Online-Unterricht ist in jeder Hinsicht besser. – Dem kann ich nicht ganz zustimmen."],
+["반대·이의 제기", "B2", "과장이라고 느낄 때", ["Das halte ich für übertrieben.", "Das ist nicht ganz richtig.", "So einfach ist das nicht."], "", "Das ist ein großes Problem. – Das halte ich für übertrieben.", "큰 문제예요. – 과장이라고 생각해요.", "halten für + 4격은 '~라고 여기다'라는 뜻이다.", "Das halte ich für übertrieben. / Das ist nicht ganz richtig. / So einfach ist das nicht.|Dieses Problem ruiniert die ganze Firma. – Das halte ich für übertrieben. So schlimm ist es nicht."],
+// 맞장구
+["맞장구", "A1", "듣고 있다는 신호를 줄 때", ["Mhm.", "Ja.", "Aha.", "Ach so."], "", "Ich habe morgen frei. – Ach so!", "내일은 쉬어요. – 아, 그래요!", "Mhm.은 듣고 있다는 신호이고, Ach so!는 새로 알게 되었다는 반응이다.", "Mhm. / Ja. / Aha. / Ach so.|Ich habe morgen frei. – Ach so! Dann können wir uns treffen."],
+["맞장구", "A2", "아, 그렇구나 하고 알게 되었을 때", ["Ach so!", "Aha, verstehe.", "Jetzt verstehe ich."], "", "Sonntags ist geschlossen. – Ach so!", "일요일은 휴무예요. – 아, 그렇군요!", "", "Ach so! / Aha, verstehe. / Jetzt verstehe ich.|Das Geschäft ist sonntags geschlossen. – Ach so, jetzt verstehe ich."],
+["맞장구", "A2", "더 이야기해 달라고 할 때", ["Und dann?", "Erzähl weiter!", "Was ist dann passiert?"], "", "Ich habe einen Freund getroffen. – Und dann?", "친구를 만났어요. – 그래서요?", "", "Und dann? / Erzähl weiter! / Was ist dann passiert?|Ich habe gestern einen alten Freund getroffen. – Und dann? Was hat er gesagt?"],
+["맞장구", "B1", "나도 그런 적이 있다고 공감할 때", ["Ich weiß, was du meinst.", "Das kenne ich.", "Das geht mir genauso."], "", "Montags bin ich müde. – Das kenne ich!", "월요일엔 피곤해요. – 저도 알아요!", "Das kenne ich.는 '나도 그런 경험이 있다'는 공감 표현이다.", "Ich weiß, was du meinst. / Das kenne ich. / Das geht mir genauso.|Montags bin ich immer müde. – Das kenne ich! Das geht mir genauso."],
+// 생각할 시간이 필요할 때
+["생각할 시간이 필요할 때", "A2", "잠시 생각할 시간이 필요할 때", ["Moment mal …", "Warte mal …", "Mal sehen …"], "", "Wann hast du Zeit? – Mal sehen …", "언제 시간 있어요? – 어디 보자…", "Moment mal!은 말을 끊고 이의를 제기할 때도 쓴다.", "Moment mal ... / Warte mal ... / Mal sehen ...|Wann hast du Zeit? – Mal sehen ... Am Donnerstag vielleicht."],
+["생각할 시간이 필요할 때", "A2", "단어가 바로 떠오르지 않을 때", ["Wie heißt das noch mal?", "Das Wort fällt mir gerade nicht ein.", "Wie sagt man …?"], "", "Das Wort fällt mir nicht ein.", "그 단어가 생각이 안 나요.", "einfallen은 3격과 함께 쓴다. 단어가 떠오르지 않을 때 가장 자연스러운 표현이다.", "Wie heißt das noch mal? / Das Wort fällt mir gerade nicht ein. / Wie sagt man ...?|Das Wort fällt mir gerade nicht ein. Wie heißt das noch mal?"],
+["생각할 시간이 필요할 때", "B1", "대답하기 곤란해서 뜸을 들일 때", ["Na ja …", "Wie soll ich sagen …", "Also …"], "", "Wie war der Film? – Na ja … ganz okay.", "영화 어땠어요? – 글쎄요… 그냥 괜찮았어요.", "Na ja …는 완전히 좋지는 않다는 뉘앙스를 담는다.", "Na ja ... / Wie soll ich sagen ... / Also ...|Wie war der Film? – Na ja ... Er war nicht schlecht, aber ein bisschen lang."],
+["생각할 시간이 필요할 때", "B1", "솔직하게 말할 때", ["Ehrlich gesagt, …", "Um ehrlich zu sein, …", "Offen gesagt, …"], "", "Ehrlich gesagt, habe ich keine Lust.", "솔직히 말하면 하고 싶지 않아요.", "Ehrlich gesagt가 문장 첫 자리를 차지하므로 동사가 바로 뒤에 온다.", "Ehrlich gesagt, ... / Um ehrlich zu sein, ... / Offen gesagt, ...|Ehrlich gesagt, habe ich heute keine Lust auf Kino."],
+["생각할 시간이 필요할 때", "B1", "말을 바꿔 다시 설명할 때", ["Anders gesagt, …", "Ich meine …", "Mit anderen Worten, …"], "", "Anders gesagt: Ich brauche mehr Zeit.", "다시 말해, 저는 시간이 더 필요해요.", "", "Anders gesagt, ... / Ich meine ... / Mit anderen Worten, ...|Anders gesagt: Ich brauche mehr Zeit."],
+["생각할 시간이 필요할 때", "B2", "대답하기 전에 생각을 모을 때", ["Das ist eine gute Frage.", "Wenn ich so darüber nachdenke, …", "Lassen Sie mich kurz überlegen."], "", "Warum haben Sie das gewählt? – Das ist eine gute Frage.", "왜 그걸 고르셨어요? – 좋은 질문이네요.", "", "Das ist eine gute Frage. / Wenn ich so darüber nachdenke, ... / Lassen Sie mich kurz überlegen.|Warum haben Sie sich dafür entschieden? – Das ist eine gute Frage. Wenn ich so darüber nachdenke, war es eher Zufall."],
+// 되묻기·확인
+["되묻기·확인", "A1", "잘 못 들어서 다시 말해 달라고 할 때", ["Wie bitte?", "Noch einmal, bitte.", "Was hast du gesagt?"], "", "Wie bitte? Ich habe Sie nicht gehört.", "네? 잘 못 들었어요.", "Wie bitte?가 가장 정중하다. Was?만 말하면 무례하게 들릴 수 있다.", "Wie bitte? / Noch einmal, bitte. / Was hast du gesagt?|Wie bitte? Ich habe Sie nicht gehört."],
+["되묻기·확인", "A1", "무슨 뜻인지 물을 때", ["Wie meinst du das?", "Was meinst du damit?", "Was heißt das?"], "", "Das ist nicht so einfach. – Wie meinst du das?", "그건 그렇게 간단하지 않아요. – 무슨 말이에요?", "Sie에게는 Wie meinen Sie das?라고 한다.", "Wie meinst du das? / Was meinst du damit? / Was heißt das?|Das ist nicht so einfach. – Wie meinst du das?"],
+["되묻기·확인", "A2", "맞게 이해했는지 확인할 때", ["Habe ich das richtig verstanden?", "Du meinst also, …", "Das heißt, …"], "", "Du meinst also, wir treffen uns um acht?", "그러니까 8시에 만나자는 거죠?", "", "Habe ich das richtig verstanden? / Du meinst also, ... / Das heißt, ...|Du meinst also, wir treffen uns um acht?"],
+["되묻기·확인", "A2", "맞는지 가볍게 확인할 때", ["…, oder?", "…, nicht wahr?", "…, ne?"], "", "Du kommst morgen, oder? – Ja, klar.", "내일 오는 거죠? – 네, 그럼요.", "…, ne?는 구어체이고, …, nicht wahr?는 더 격식 있는 말투다.", "…, oder? / …, nicht wahr? / …, ne?|Du kommst morgen, oder? – Ja, klar."],
+["되묻기·확인", "B1", "상대 말을 정리해서 확인할 때", ["Wenn ich Sie richtig verstehe, …", "Das heißt also, …", "Mit anderen Worten, …"], "", "Wenn ich Sie richtig verstehe, zahle ich morgen.", "제가 제대로 이해했다면 내일 내는 거네요.", "Wenn 문장 뒤의 주절은 동사가 맨 앞에 온다.", "Wenn ich Sie richtig verstehe, ... / Das heißt also, ... / Mit anderen Worten, ...|Wenn ich Sie richtig verstehe, muss ich bis Freitag zahlen."],
+["되묻기·확인", "B1", "일부만 알아들었을 때", ["Den letzten Teil habe ich nicht ganz verstanden.", "Könnten Sie den letzten Satz noch einmal sagen?"], "", "Den letzten Teil habe ich nicht verstanden.", "마지막 부분을 이해하지 못했어요.", "", "Den letzten Teil habe ich nicht ganz verstanden. / Könnten Sie den letzten Satz noch einmal sagen?|Den letzten Teil habe ich nicht ganz verstanden. Könnten Sie das bitte erklären?"],
+// 놀람·감탄
+["놀람·감탄", "A1", "놀랐을 때", ["Echt?", "Wirklich?", "Ach, wirklich?"], "", "Ich ziehe nach Berlin. – Echt? Das ist ja toll!", "저는 베를린으로 이사 가요. – 정말요? 대단하네요!", "Echt?는 구어체이고, Wirklich?는 어디서나 쓸 수 있다.", "Echt? / Wirklich? / Ach, wirklich?|Ich ziehe nächsten Monat nach Berlin. – Echt? Das ist ja toll!"],
+["놀람·감탄", "A1", "멋지다고 감탄할 때", ["Toll!", "Super!", "Klasse!", "Wow!"], "", "Ich habe bestanden! – Toll!", "합격했어요! – 멋져요!", "", "Toll! / Super! / Klasse! / Wow!|Ich habe die Prüfung bestanden! – Toll! Herzlichen Glückwunsch!"],
+["놀람·감탄", "A2", "믿기지 않을 때", ["Das gibt’s doch nicht!", "Unglaublich!", "Nicht zu fassen!"], "", "Er hat den Bus verpasst. – Das gibt’s doch nicht!", "그가 버스를 놓쳤어요. – 말도 안 돼요!", "좋은 일에도 나쁜 일에도 쓴다.", "Das gibt’s doch nicht! / Unglaublich! / Nicht zu fassen!|Er hat schon wieder den Bus verpasst. – Das gibt’s doch nicht!"],
+["놀람·감탄", "B1", "예상 밖이었을 때", ["Das hätte ich nicht gedacht.", "Damit habe ich nicht gerechnet.", "Das überrascht mich."], "", "Er hat gekündigt. – Das überrascht mich.", "그가 퇴사했어요. – 의외네요.", "rechnen mit + 3격은 damit으로 받는다.", "Das hätte ich nicht gedacht. / Damit habe ich nicht gerechnet. / Das überrascht mich.|Er hat gekündigt. – Das überrascht mich."],
+["놀람·감탄", "B2", "감탄하며 인정할 때", ["Respekt!", "Das ist beeindruckend.", "Das ist bemerkenswert."], "", "Du hast das allein geschafft? Respekt!", "혼자서 해냈어요? 대단해요!", "", "Respekt! / Das ist beeindruckend. / Das ist bemerkenswert.|Du hast das allein geschafft? Respekt!"],
+// 공감·위로
+["공감·위로", "A1", "안됐다고 말할 때", ["Das tut mir leid.", "Oh nein!", "Schade!"], "", "Ich bin krank. – Oh nein! Gute Besserung!", "저 아파요. – 어떡해요! 얼른 나으세요!", "Schade!는 아쉬운 일에, Das tut mir leid.는 상대가 힘든 일을 겪었을 때 쓴다.", "Das tut mir leid. / Oh nein! / Schade!|Ich bin krank. – Oh nein! Das tut mir leid. Gute Besserung!"],
+["공감·위로", "A2", "축하할 때", ["Herzlichen Glückwunsch!", "Gratuliere!", "Das freut mich für dich!"], "", "Ich habe einen neuen Job. – Herzlichen Glückwunsch!", "새 직장을 구했어요. – 축하해요!", "", "Herzlichen Glückwunsch! / Gratuliere! / Das freut mich für dich!|Ich habe einen neuen Job. – Herzlichen Glückwunsch!"],
+["공감·위로", "A2", "응원할 때", ["Das schaffst du!", "Viel Erfolg!", "Ich drücke dir die Daumen!"], "", "Morgen ist meine Prüfung. – Ich drücke dir die Daumen.", "내일 시험이에요. – 행운을 빌어요.", "Daumen drücken은 엄지손가락을 쥐고 행운을 비는 표현이다.", "Das schaffst du! / Viel Erfolg! / Ich drücke dir die Daumen!|Morgen ist meine Prüfung. – Das schaffst du! Ich drücke dir die Daumen."],
+["공감·위로", "B1", "상대 마음을 이해한다고 말할 때", ["Das kann ich gut verstehen.", "Das verstehe ich gut.", "Das muss schwer für dich sein."], "", "Ich vermisse meine Familie. – Das verstehe ich gut.", "가족이 그리워요. – 충분히 이해해요.", "", "Das kann ich gut verstehen. / Das verstehe ich gut. / Das muss schwer für dich sein.|Ich vermisse meine Familie sehr. – Das kann ich gut verstehen."],
+["공감·위로", "B1", "안심시킬 때", ["Mach dir keine Sorgen.", "Das wird schon.", "Alles halb so schlimm."], "", "Ich habe Angst. – Das wird schon!", "무서워요. – 잘될 거예요!", "", "Mach dir keine Sorgen. / Das wird schon. / Alles halb so schlimm.|Ich habe Angst vor der Prüfung. – Das wird schon! Du hast gut gelernt."],
+["공감·위로", "B2", "곁에 있겠다고 말할 때", ["Wenn du reden möchtest, bin ich für dich da.", "Du bist nicht allein.", "Melde dich jederzeit."], "", "Wenn du reden möchtest, bin ich für dich da.", "이야기하고 싶으면 언제든 곁에 있을게요.", "Sie에게는 Wenn Sie reden möchten, bin ich für Sie da.라고 한다.", "Wenn du reden möchtest, bin ich für dich da. / Du bist nicht allein. / Melde dich jederzeit.|Wenn du reden möchtest, bin ich für dich da."],
+// 화제 전환·이어가기
+["화제 전환·이어가기", "A1", "같은 질문을 상대에게 되돌릴 때", ["Und du?", "Und bei dir?", "Und Sie?"], "", "Ich komme aus Korea. Und du?", "저는 한국에서 왔어요. 당신은요?", "Sie에게는 Und Sie?나 Und bei Ihnen?이라고 한다.", "Und du? / Und bei dir? / Und Sie?|Ich komme aus Korea. Und du?"],
+["화제 전환·이어가기", "A2", "화제를 바꿀 때", ["Übrigens, …", "Was ich noch sagen wollte: …", "Apropos …"], "", "Übrigens, hast du morgen Zeit?", "참, 내일 시간 있어요?", "Apropos는 앞에서 나온 말과 관련된 다른 이야기를 꺼낼 때 쓴다.", "Übrigens, ... / Was ich noch sagen wollte: ... / Apropos ...|Übrigens, hast du morgen Zeit?"],
+["화제 전환·이어가기", "A2", "내용을 덧붙일 때", ["Außerdem …", "Und noch etwas: …", "Dazu kommt, dass …"], "", "Das Hotel ist günstig. Außerdem liegt es zentral.", "호텔은 저렴해요. 게다가 위치도 좋아요.", "Dazu kommt, dass 뒤는 부문장이라 동사가 맨 뒤에 온다.", "Außerdem ... / Und noch etwas: ... / Dazu kommt, dass ...|Das Hotel ist günstig. Außerdem liegt es direkt am Bahnhof."],
+["화제 전환·이어가기", "B1", "이유나 결과를 이어서 말할 때", ["Deshalb …", "Deswegen …", "Darum …"], "", "Ich habe eine Prüfung. Deshalb lerne ich.", "시험이 있어요. 그래서 공부해요.", "Deshalb 뒤에서는 동사가 바로 두 번째 자리에 온다.", "Deshalb ... / Deswegen ... / Darum ...|Ich habe morgen eine Prüfung. Deshalb bleibe ich heute zu Hause."],
+["화제 전환·이어가기", "B1", "예를 들 때", ["Zum Beispiel …", "Ein Beispiel dafür ist …", "Nehmen wir zum Beispiel …"], "", "Ich mag Sport, zum Beispiel Schwimmen.", "저는 운동을 좋아해요. 예를 들면 수영이요.", "", "Zum Beispiel ... / Ein Beispiel dafür ist ... / Nehmen wir zum Beispiel ...|Ich mag Sport, zum Beispiel Schwimmen."],
+["화제 전환·이어가기", "B1", "대조해서 말할 때", ["Dagegen …", "Im Gegensatz dazu …", "Allerdings …"], "", "Im Sommer ist es heiß. Im Winter dagegen kalt.", "여름은 더워요. 반면 겨울은 추워요.", "", "Dagegen ... / Im Gegensatz dazu ... / Allerdings ...|Im Sommer ist es hier heiß. Im Winter dagegen ist es sehr kalt."],
+["화제 전환·이어가기", "B2", "원래 이야기로 돌아갈 때", ["Aber zurück zum Thema: …", "Um auf … zurückzukommen, …", "Wie gesagt, …"], "", "Um auf Ihre Frage zurückzukommen: Ja, das geht.", "질문으로 돌아가면, 네, 가능해요.", "zurückkommen auf는 4격과 함께 쓴다.", "Aber zurück zum Thema: ... / Um auf ... zurückzukommen, ... / Wie gesagt, ...|Um auf Ihre Frage zurückzukommen: Der Kurs beginnt im März."],
+// 말 시작·끼어들기
+["말 시작·끼어들기", "A1", "말을 걸 때", ["Entschuldigung, …", "Entschuldigen Sie, …", "Hallo, …"], "", "Entschuldigung, darf ich etwas fragen?", "실례합니다, 뭘 좀 물어봐도 될까요?", "", "Entschuldigung, ... / Entschuldigen Sie, ... / Hallo, ...|Entschuldigung, darf ich etwas fragen?"],
+["말 시작·끼어들기", "A2", "잠깐 말해도 되는지 물을 때", ["Darf ich kurz etwas sagen?", "Eine Sache noch: …", "Moment, …"], "", "Darf ich kurz etwas sagen?", "잠깐 말해도 될까요?", "", "Darf ich kurz etwas sagen? / Eine Sache noch: ... / Moment, ...|Darf ich kurz etwas sagen? Ich habe eine Idee."],
+["말 시작·끼어들기", "B1", "중요한 이야기를 꺼낼 때", ["Weißt du was?", "Stell dir vor: …", "Ich muss dir etwas sagen."], "", "Weißt du was? Ich habe eine Wohnung!", "있잖아요? 집을 구했어요!", "Weißt du was?는 친구 사이에서 소식을 전할 때 쓴다.", "Weißt du was? / Stell dir vor: ... / Ich muss dir etwas sagen.|Weißt du was? Ich habe eine neue Wohnung gefunden!"],
+["말 시작·끼어들기", "B1", "말을 끊게 되어 미안하다고 할 때", ["Entschuldigung, dass ich unterbreche, aber …", "Darf ich kurz unterbrechen?"], "", "Entschuldigung, dass ich unterbreche.", "말씀 중에 죄송해요.", "", "Entschuldigung, dass ich unterbreche, aber ... / Darf ich kurz unterbrechen?|Entschuldigung, dass ich unterbreche, aber der Bus kommt gleich."],
+["말 시작·끼어들기", "B2", "토론에서 의견을 덧붙일 때", ["Dazu möchte ich noch etwas sagen.", "Wenn ich dazu etwas ergänzen darf, …", "Ich möchte kurz darauf eingehen."], "", "Wenn ich dazu etwas ergänzen darf: Es gilt nicht für alle.", "덧붙이자면, 모두에게 해당하지는 않아요.", "eingehen auf + 4격은 darauf로 받을 수 있다.", "Dazu möchte ich noch etwas sagen. / Wenn ich dazu etwas ergänzen darf, ... / Ich möchte kurz darauf eingehen.|Wenn ich dazu etwas ergänzen darf: Das gilt nicht für alle Kurse."],
+// 요약·마무리
+["요약·마무리", "B1", "정리해서 말할 때", ["Kurz gesagt, …", "Alles in allem …", "Zusammenfassend kann man sagen, dass …"], "", "Kurz gesagt: Das Hotel war gut, aber teuer.", "간단히 말해 호텔은 좋았지만 비쌌어요.", "", "Kurz gesagt, ... / Alles in allem ... / Zusammenfassend kann man sagen, dass ...|Kurz gesagt: Das Hotel war gut, aber teuer."],
+["요약·마무리", "B1", "결국 어떻게 되었는지 말할 때", ["Am Ende …", "Letztendlich …", "Schließlich …"], "", "Letztendlich haben wir uns für diese Wohnung entschieden.", "결국 이 집으로 정했어요.", "sich entscheiden für는 4격과 함께 쓴다.", "Am Ende ... / Letztendlich ... / Schließlich ...|Letztendlich haben wir uns für die Wohnung in der Stadt entschieden."],
+["요약·마무리", "B1", "합의하고 대화를 정리할 때", ["Also abgemacht!", "Dann machen wir das so.", "Einverstanden."], "", "Samstag um zehn am Bahnhof? – Abgemacht!", "토요일 10시에 기차역에서요? – 좋아요, 그렇게 해요!", "", "Also abgemacht! / Dann machen wir das so. / Einverstanden.|Samstag um zehn am Bahnhof? – Abgemacht!"],
+["요약·마무리", "B1", "대화를 끝낼 때", ["Ich muss dann los.", "Es war schön, mit dir zu reden.", "Dann bis bald!"], "", "Ich muss dann los. Es war schön, mit dir zu reden. – Gleichfalls!", "이제 가 봐야 해요. 이야기 나눠서 즐거웠어요. – 저도요!", "Gleichfalls!는 상대의 인사에 똑같이 답할 때 쓴다.", "Ich muss dann los. / Es war schön, mit dir zu reden. / Dann bis bald!|Ich muss dann los. Es war schön, mit dir zu reden. – Gleichfalls!"],
+["요약·마무리", "B2", "가장 중요한 점을 강조할 때", ["Das Wichtigste ist, dass …", "Entscheidend ist, dass …", "Es kommt darauf an, dass …"], "", "Entscheidend ist, dass alle rechtzeitig informiert werden.", "중요한 것은 모두가 제때 안내받는 것이에요.", "dass 문장에서는 동사가 맨 뒤에 온다.", "Das Wichtigste ist, dass ... / Entscheidend ist, dass ... / Es kommt darauf an, dass ...|Entscheidend ist, dass alle rechtzeitig informiert werden."],
+// 완곡하게 말하기
+["완곡하게 말하기", "A2", "의견을 부드럽게 말할 때", ["Ich glaube, …", "Ich denke, …", "Vielleicht …"], "", "Ich glaube, wir sollten früher losfahren.", "우리가 더 일찍 출발하는 게 좋을 것 같아요.", "", "Ich glaube, ... / Ich denke, ... / Vielleicht ...|Ich glaube, wir sollten früher losfahren."],
+["완곡하게 말하기", "B1", "확실하지 않다고 말할 때", ["Soweit ich weiß, …", "Ich bin nicht sicher, aber …", "Ich glaube, dass …"], "", "Soweit ich weiß, öffnet die Bank um neun.", "제가 알기로는 은행은 9시에 열어요.", "", "Soweit ich weiß, ... / Ich bin nicht sicher, aber ... / Ich glaube, dass ...|Soweit ich weiß, öffnet die Bank um neun."],
+["완곡하게 말하기", "B1", "거절을 부드럽게 할 때", ["Leider kann ich nicht.", "Ich fürchte, das geht nicht.", "Das passt mir leider nicht so gut."], "", "Kommst du heute? – Ich fürchte, das geht nicht.", "오늘 올 수 있어요? – 어려울 것 같아요.", "", "Leider kann ich nicht. / Ich fürchte, das geht nicht. / Das passt mir leider nicht so gut.|Kommst du heute Abend? – Ich fürchte, das geht nicht. Ich habe schon einen Termin."],
+["완곡하게 말하기", "B2", "조심스럽게 제안할 때", ["Wie wäre es, wenn wir …?", "Vielleicht könnten wir …", "Ich würde vorschlagen, dass …"], "", "Wie wäre es, wenn wir den Termin verschieben?", "일정을 미루면 어떨까요?", "", "Wie wäre es, wenn wir ...? / Vielleicht könnten wir ... / Ich würde vorschlagen, dass ...|Wie wäre es, wenn wir den Termin verschieben?"],
+["완곡하게 말하기", "B2", "비판을 완곡하게 말할 때", ["Das könnte man vielleicht noch verbessern.", "Ich finde es nicht ganz optimal, dass …"], "", "Das könnte man vielleicht noch etwas klarer formulieren.", "그 부분은 조금 더 분명하게 쓰면 좋을 것 같아요.", "'틀렸다'고 직접 말하지 않고 개선을 제안하는 표현이다.", "Das könnte man vielleicht noch verbessern. / Ich finde es nicht ganz optimal, dass ...|Das könnte man vielleicht noch etwas klarer formulieren."],
+// 감사·사과·칭찬에 답하기
+["감사·사과·칭찬에 답하기", "A1", "고맙다는 말에 답할 때", ["Bitte!", "Gern geschehen!", "Nichts zu danken!", "Kein Problem!"], "", "Vielen Dank für Ihre Hilfe! – Gern geschehen!", "도와주셔서 정말 감사합니다! – 별말씀을요!", "Bitte!는 물건을 건넬 때도 쓴다.", "Bitte! / Gern geschehen! / Nichts zu danken! / Kein Problem!|Vielen Dank für Ihre Hilfe! – Gern geschehen!"],
+["감사·사과·칭찬에 답하기", "A1", "사과를 받아 줄 때", ["Kein Problem!", "Macht nichts!", "Schon gut!"], "", "Entschuldigung, ich bin zu spät. – Macht nichts!", "죄송해요, 제가 늦었어요. – 괜찮아요!", "Macht nichts!는 '괜찮다, 신경 쓰지 마라'는 뜻이다.", "Kein Problem! / Macht nichts! / Schon gut!|Entschuldigung, ich bin zu spät. – Macht nichts!"],
+["감사·사과·칭찬에 답하기", "A2", "칭찬할 때", ["Das sieht toll aus!", "Das hast du gut gemacht!", "Das gefällt mir sehr."], "", "Das hast du gut gemacht! – Danke!", "정말 잘했어요! – 고마워요!", "", "Das sieht toll aus! / Das hast du gut gemacht! / Das gefällt mir sehr.|Das hast du gut gemacht! – Danke!"],
+["감사·사과·칭찬에 답하기", "A2", "칭찬을 받았을 때", ["Danke, das freut mich!", "Das ist nett von dir.", "Ach, so gut bin ich nicht."], "", "Dein Deutsch ist gut! – Danke, das freut mich!", "독일어 잘하네요! – 고마워요, 기뻐요!", "칭찬에 겸손하게 답할 때 Ach, so gut bin ich nicht.를 쓴다.", "Danke, das freut mich! / Das ist nett von dir. / Ach, so gut bin ich nicht.|Dein Deutsch ist wirklich gut! – Danke, das freut mich! Ich lerne noch."],
+["감사·사과·칭찬에 답하기", "B1", "도움에 크게 감사할 때", ["Ich bin Ihnen wirklich dankbar.", "Ich weiß das sehr zu schätzen.", "Das ist wirklich nett von Ihnen."], "", "Ich bin Ihnen wirklich dankbar.", "정말 감사드려요.", "schätzen은 '높이 평가하다'라는 뜻이다.", "Ich bin Ihnen wirklich dankbar. / Ich weiß das sehr zu schätzen. / Das ist wirklich nett von Ihnen.|Sie haben mir sehr geholfen. Ich bin Ihnen wirklich dankbar."],
+// 초대·부탁에 답하기
+["초대·부탁에 답하기", "A1", "부탁을 흔쾌히 들어줄 때", ["Natürlich!", "Kein Problem!", "Gern!"], "", "Können Sie mir helfen? – Natürlich!", "도와주시겠어요? – 물론이죠!", "", "Natürlich! / Kein Problem! / Gern!|Können Sie mir bitte helfen? – Natürlich! Was brauchen Sie?"],
+["초대·부탁에 답하기", "A2", "잠깐 기다려 달라고 할 때", ["Einen Moment, bitte.", "Ich komme gleich.", "Gleich!"], "", "Haben Sie kurz Zeit? – Einen Moment, bitte.", "잠깐 시간 되세요? – 잠시만요.", "", "Einen Moment, bitte. / Ich komme gleich. / Gleich!|Haben Sie kurz Zeit? – Einen Moment, bitte. Ich komme gleich."],
+["초대·부탁에 답하기", "A2", "초대를 수락할 때", ["Gern, danke für die Einladung!", "Ich komme gern.", "Das klingt gut!"], "", "Kommst du am Samstag? – Gern, danke für die Einladung!", "토요일에 올래요? – 좋아요, 초대해 줘서 고마워요!", "Hast du Lust, ... zu ...?는 '~할 마음이 있어?'라고 제안하는 표현이다.", "Gern, danke für die Einladung! / Ich komme gern. / Das klingt gut!|Hast du Lust, am Samstag zu uns zu kommen? – Gern, danke für die Einladung!"],
+["초대·부탁에 답하기", "A2", "초대를 거절할 때", ["Leider kann ich nicht kommen.", "Das ist nett, aber ich habe schon etwas vor.", "Vielleicht ein anderes Mal."], "", "Kommst du mit ins Kino? – Vielleicht ein anderes Mal.", "영화 보러 갈래요? – 다음에 기회가 되면 가요.", "etwas vorhaben은 '계획이 있다'는 뜻이다.", "Leider kann ich nicht kommen. / Das ist nett, aber ich habe schon etwas vor. / Vielleicht ein anderes Mal.|Kommst du am Freitag mit ins Kino? – Das ist nett, aber ich habe schon etwas vor. Vielleicht ein anderes Mal."],
+["초대·부탁에 답하기", "B1", "부탁을 정중히 거절할 때", ["Das tut mir leid, aber das schaffe ich nicht.", "Dabei kann ich leider nicht helfen."], "", "Kannst du mir helfen? – Das schaffe ich leider nicht.", "도와줄 수 있어요? – 미안하지만 어려워요.", "", "Das tut mir leid, aber das schaffe ich nicht. / Dabei kann ich leider nicht helfen.|Kannst du mir morgen beim Umzug helfen? – Das tut mir leid, aber da kann ich leider nicht."],
+["초대·부탁에 답하기", "B1", "생각해 보겠다고 답할 때", ["Ich überlege es mir.", "Ich denke darüber nach.", "Darf ich darüber nachdenken?"], "", "Möchten Sie buchen? – Ich überlege es mir.", "신청하시겠어요? – 생각해 볼게요.", "", "Ich überlege es mir. / Ich denke darüber nach. / Darf ich darüber nachdenken?|Möchten Sie den Kurs buchen? – Ich überlege es mir und melde mich."],
+// 확신·불확실 표현
+["확신·불확실 표현", "A1", "모른다고 말할 때", ["Ich weiß es nicht.", "Keine Ahnung!", "Ich bin nicht sicher."], "", "Wann kommt der Bus? – Keine Ahnung!", "버스가 언제 와요? – 모르겠어요!", "Keine Ahnung!은 친구 사이에서 쓰는 구어체다.", "Ich weiß es nicht. / Keine Ahnung! / Ich bin nicht sicher.|Wann kommt der Bus? – Keine Ahnung!"],
+["확신·불확실 표현", "A2", "아마 그럴 거라고 말할 때", ["Vielleicht.", "Wahrscheinlich.", "Kann sein."], "", "Kommt er heute? – Wahrscheinlich nicht.", "그가 오늘 와요? – 아마 안 올 거예요.", "Wahrscheinlich는 가능성이 높을 때, Vielleicht는 반반일 때 쓴다.", "Vielleicht. / Wahrscheinlich. / Kann sein.|Kommt er heute? – Wahrscheinlich nicht."],
+["확신·불확실 표현", "A2", "틀림없다고 말할 때", ["Bestimmt!", "Ganz sicher!", "Das ist klar."], "", "Ist er schon da? – Bestimmt.", "그 사람 벌써 왔어요? – 틀림없이요.", "Bestimmt는 '틀림없이'라는 뜻이다.", "Bestimmt! / Ganz sicher! / Das ist klar.|Ist er schon zu Hause? – Bestimmt. Er ist immer um sechs da."],
+["확신·불확실 표현", "B1", "추측해서 말할 때", ["Ich vermute, dass …", "Ich nehme an, dass …", "Es könnte sein, dass …"], "", "Ich vermute, dass er den Termin vergessen hat.", "그가 약속을 잊어버린 것 같아요.", "dass 문장에서는 동사가 맨 뒤에 온다.", "Ich vermute, dass … / Ich nehme an, dass … / Es könnte sein, dass …|Ich vermute, dass er den Termin vergessen hat."],
+["확신·불확실 표현", "B1", "확실하지 않을 때 단서를 달아 말할 때", ["Wenn ich mich nicht irre, …", "Ich lasse mich gern korrigieren, aber …"], "", "Wenn ich mich nicht irre, beginnt es um neun.", "제가 틀리지 않았다면 9시에 시작해요.", "Wenn ich mich nicht irre는 단정을 피하는 표현이다.", "Wenn ich mich nicht irre, … / Ich lasse mich gern korrigieren, aber …|Wenn ich mich nicht irre, beginnt der Kurs um neun."],
+["확신·불확실 표현", "B2", "확실하다고 단언할 때", ["Es besteht kein Zweifel, dass …", "Ich bin mir absolut sicher, dass …", "Das steht außer Frage."], "", "Es besteht kein Zweifel, dass es stimmt.", "그것이 맞다는 데 의심의 여지가 없어요.", "격식 있는 글이나 발표에서 자주 쓴다.", "Es besteht kein Zweifel, dass … / Ich bin mir absolut sicher, dass … / Das steht außer Frage.|Es besteht kein Zweifel, dass die Qualität gestiegen ist."],
+// 감정 표현하기
+["감정 표현하기", "A1", "피곤하거나 심심할 때", ["Ich bin müde.", "Mir ist langweilig."], "", "Mir ist langweilig. Wollen wir etwas unternehmen?", "심심해요. 뭔가 같이 할까요?", "Mir ist langweilig.는 3격 mir를 쓴다.", "Ich bin müde. / Mir ist langweilig.|Mir ist langweilig. Wollen wir etwas unternehmen?"],
+["감정 표현하기", "A2", "기대될 때", ["Ich freue mich auf …."], "4격 (앞으로 올 일)", "Ich freue mich auf den Urlaub.", "휴가가 기대돼요.", "sich freuen auf는 앞으로 올 일에, sich freuen über는 이미 일어난 일에 쓴다.", "Ich freue mich auf ….|Ich freue mich auf den Urlaub."],
+["감정 표현하기", "A2", "걱정될 때", ["Ich mache mir Sorgen.", "Ich habe Angst vor …."], "3격", "Ich mache mir Sorgen um die Prüfung.", "시험이 걱정돼요.", "sich Sorgen machen um은 4격과 함께 쓴다.", "Ich mache mir Sorgen. / Ich habe Angst vor ….|Ich mache mir Sorgen um die Prüfung."],
+["감정 표현하기", "A2", "짜증이 날 때", ["Das nervt!", "Ich bin genervt.", "Ich ärgere mich."], "", "Schon wieder Stau! Das nervt!", "또 교통체증이에요! 짜증 나요!", "Das nervt!는 친구 사이에서 쓰는 구어체다.", "Das nervt! / Ich bin genervt. / Ich ärgere mich.|Schon wieder Stau! Das nervt!"],
+["감정 표현하기", "B1", "실망했을 때", ["Ich bin enttäuscht.", "Das ist schade.", "Das habe ich mir anders vorgestellt."], "", "Das habe ich mir anders vorgestellt.", "생각했던 것과 달라요.", "Das habe ich mir anders vorgestellt.는 기대와 달랐다는 뜻이다.", "Ich bin enttäuscht. / Das ist schade. / Das habe ich mir anders vorgestellt.|Das Hotel war nicht sauber. Das habe ich mir anders vorgestellt."],
+["감정 표현하기", "B1", "안도했을 때", ["Zum Glück!", "Gott sei Dank!", "Ich bin erleichtert."], "", "Der Zug ist noch da. – Zum Glück!", "기차가 아직 있어요. – 다행이에요!", "Gott sei Dank!는 일상에서 자주 쓰는 안도 표현이다.", "Zum Glück! / Gott sei Dank! / Ich bin erleichtert.|Der Zug ist noch da. – Zum Glück!"],
+["감정 표현하기", "B2", "불만을 차분히 말할 때", ["Ich finde das nicht in Ordnung.", "Ich bin damit nicht einverstanden.", "Das ärgert mich."], "", "Ich finde es nicht in Ordnung.", "옳지 않다고 생각해요.", "불만을 분명하게 말하면서도 예의를 지키는 표현이다.", "Ich finde das nicht in Ordnung. / Ich bin damit nicht einverstanden. / Das ärgert mich.|Ich finde es nicht in Ordnung, dass niemand Bescheid gesagt hat."]
+];
+const KEY = 'soda-chunking-known';
+let known = {};
+try { known = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) { known = {}; }
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(known)); } catch(e) {} }
+
+// 카드 한 장의 구조: 세트, 레벨, 앞면(한국어), 표현(줄 목록), 빈칸 안내, 예문(독일어), 예문(한국어), 참고, 기록용 id
+const cards = DATA.map(a => ({ set:a[0], lv:a[1], ko:a[2], ex:a[3], slot:a[4], de:a[5], dk:a[6], note:a[7], id:a[8] }));
+const sets = ['전체'].concat(Array.from(new Set(cards.map(c => c.set))));
+
+const LEVELS = ['전체', 'A1', 'A2', 'B1', 'B2'];
+const TYPES = ['전체', '회화 패턴', '상황별 반응'];
+const REACTION_SETS = ["동의할 때", "반대·이의 제기", "맞장구", "생각할 시간이 필요할 때", "되묻기·확인", "놀람·감탄", "공감·위로", "화제 전환·이어가기", "말 시작·끼어들기", "요약·마무리", "완곡하게 말하기", "감사·사과·칭찬에 답하기", "초대·부탁에 답하기", "확신·불확실 표현", "감정 표현하기"];
+const typeOf = c => REACTION_SETS.indexOf(c.set) >= 0 ? '상황별 반응' : '회화 패턴';
+
+let curSet = '전체', curLv = '전체', curType = '전체', onlyUnknown = false, shuffled = false;
+let deck = [], idx = 0, flipped = false;
+
+const inType = c => curType === '전체' || typeOf(c) === curType;
+const inLv = c => curLv === '전체' || c.lv === curLv;
+const inScope = c => inType(c) && inLv(c) && (curSet === '전체' || c.set === curSet);
+function fixSet(){
+  if (curSet !== '전체' && !cards.some(c => inType(c) && inLv(c) && c.set === curSet)) curSet = '전체';
+}
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+function shuffle(a){
+  a = a.slice();
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+function build(){
+  const d = cards.filter(c => inScope(c) && !(onlyUnknown && known[c.id]));
+  deck = shuffled ? shuffle(d) : d;
+  idx = 0; flipped = false;
+  render();
+}
+let sheetOpen = false;
+function openSheet(){
+  sheetOpen = true;
+  $('sheet').classList.add('open'); $('sheetBg').classList.add('open');
+  if (document.body) document.body.style.overflow = 'hidden';
+}
+function closeSheet(){
+  sheetOpen = false;
+  $('sheet').classList.remove('open'); $('sheetBg').classList.remove('open');
+  if (document.body) document.body.style.overflow = '';
+}
+function renderPicker(){
+  const total = cards.filter(inScope).length;
+  const parts = [curType, curLv, curSet].filter(x => x !== '전체');
+  $('pkSum').innerHTML = '<div class="pk-t">' + esc(parts.length ? parts.join(' · ') : '전체 카드') + '</div>' +
+    '<div class="pk-s">' + total + '장 선택됨</div>';
+  $('sheetCount').textContent = total + '장 선택됨';
+  $('segType').innerHTML = TYPES.map(t => {
+    const n = cards.filter(c => inLv(c) && (t === '전체' || typeOf(c) === t)).length;
+    return '<button class="' + (t === curType ? 'on' : '') + '" data-t="' + t + '">' + t + '<small>' + n + '</small></button>';
+  }).join('');
+  $('segLv').innerHTML = LEVELS.map(l => {
+    const n = cards.filter(c => inType(c) && (l === '전체' || c.lv === l)).length;
+    return '<button class="' + (l === curLv ? 'on' : '') + '" data-l="' + l + '">' + l + '<small>' + n + '</small></button>';
+  }).join('');
+  $('tiles').innerHTML = sets.filter(s => s === '전체' || cards.some(c => inType(c) && inLv(c) && c.set === s)).map(s => {
+    const pool = cards.filter(c => inType(c) && inLv(c) && (s === '전체' || c.set === s));
+    const kn = pool.filter(c => known[c.id]).length;
+    return '<button class="tile' + (s === curSet ? ' on' : '') + '" data-s="' + esc(s) + '"><b>' + (s === '전체' ? '전체 상황' : esc(s)) + '</b>' +
+      '<span>' + pool.length + '장 · 외움 ' + kn + '</span><i><u style="width:' + (pool.length ? kn / pool.length * 100 : 0) + '%"></u></i></button>';
+  }).join('');
+}
+function metaHtml(c){
+  return '<div class="meta"><span class="tag">' + esc(c.set) + '</span><span class="tag lv">' + c.lv + '</span>' +
+    (known[c.id] ? '<span class="mark">외움</span>' : '') + '</div>';
+}
+function exampleHtml(c){
+  const d = c.de.split(' – '), k = c.dk.split(' – ');
+  let h = '';
+  for (let i = 0; i < Math.max(d.length, k.length); i++) {
+    h += '<div class="ex"><div class="de">' + esc(d[i] || '') + '</div><div class="dk">' + esc(k[i] || '') + '</div></div>';
+  }
+  return h;
+}
+function frontHtml(c){
+  return '<div class="face front">' + metaHtml(c) +
+    '<div class="body"><div class="lbl">독일어로 어떻게 말할까요?</div><div class="ko">' + esc(c.ko) + '</div></div>' +
+    '<div class="hint">먼저 말해 본 뒤 카드를 누르세요</div></div>';
+}
+function backHtml(c){
+  return '<div class="face back">' + metaHtml(c) + '<div class="body">' +
+    '<div><div class="lbl">표현</div><div class="exprs">' +
+      c.ex.map(x => '<div class="expr">' + esc(x) + '</div>').join('') + '</div>' +
+      (c.slot ? '<div class="slot">… 자리: ' + esc(c.slot) + '</div>' : '') + '</div>' +
+    '<div><div class="lbl">예문</div>' + exampleHtml(c) + '</div>' +
+    (c.note ? '<div><div class="lbl">참고</div><div class="note">' + esc(c.note) + '</div></div>' : '') +
+    '</div></div>';
+}
+function render(){
+  renderPicker();
+  $('tShuffle').classList.toggle('on', shuffled);
+  $('tUnknown').classList.toggle('on', onlyUnknown);
+  const pool = cards.filter(inScope);
+  const kn = pool.filter(c => known[c.id]).length;
+  $('count').textContent = '외운 카드 ' + kn + ' / ' + pool.length;
+  $('bar').style.width = (pool.length ? kn / pool.length * 100 : 0) + '%';
+
+  const st = $('stage');
+  if (!deck.length) {
+    st.innerHTML = '<div class="empty">' + (onlyUnknown ? '모든 카드를 외웠습니다.' : '표시할 카드가 없습니다.') + '</div>';
+    return;
+  }
+  const c = deck[idx];
+  st.innerHTML =
+    '<div class="scene"><div class="card' + (flipped ? ' flip' : '') + '" id="card" tabindex="0">' +
+      '<div class="inner">' + frontHtml(c) + backHtml(c) + '</div></div></div>' +
+    '<div class="nav">' +
+      '<button class="btn small" id="bPrev" aria-label="이전">←</button>' +
+      '<button class="btn again" id="bAgain">다시 볼게요</button>' +
+      '<button class="btn know" id="bKnow">외웠어요</button>' +
+      '<button class="btn small" id="bNext" aria-label="다음">→</button>' +
+    '</div>' +
+    '<div class="pos">' + (idx + 1) + ' / ' + deck.length + '</div>';
+
+  $('card').onclick = flip;
+  $('bPrev').onclick = e => { e.currentTarget.blur(); move(-1); };
+  $('bNext').onclick = e => { e.currentTarget.blur(); move(1); };
+  $('bAgain').onclick = e => { e.currentTarget.blur(); mark(false); };
+  $('bKnow').onclick = e => { e.currentTarget.blur(); mark(true); };
+}
+function flip(){
+  const el = $('card'); if (!el) return;
+  flipped = !flipped; el.classList.toggle('flip', flipped);
+}
+function move(d){
+  if (!deck.length) return;
+  idx = (idx + d + deck.length) % deck.length; flipped = false; render();
+}
+function mark(ok){
+  if (!deck.length) return;
+  const c = deck[idx];
+  if (ok) known[c.id] = true; else delete known[c.id];
+  save();
+  if (deck.length > 1) { idx = (idx + 1) % deck.length; }
+  flipped = false; render();
+}
+
+$('picker').onclick = openSheet;
+$('sheetBg').onclick = closeSheet;
+$('sheetX').onclick = closeSheet;
+$('sheetGo').onclick = closeSheet;
+$('segType').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  curType = b.dataset.t; fixSet(); build();
+});
+$('segLv').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  curLv = b.dataset.l; fixSet(); build();
+});
+$('tiles').addEventListener('click', e => {
+  const b = e.target.closest('.tile'); if (!b) return;
+  curSet = b.dataset.s; build(); closeSheet();
+});
+$('tShuffle').onclick = e => { shuffled = !shuffled; build(); e.currentTarget.blur(); };
+$('tUnknown').onclick = e => { onlyUnknown = !onlyUnknown; build(); e.currentTarget.blur(); };
+$('tReset').onclick = e => {
+  e.currentTarget.blur();
+  if (confirm('외운 카드 기록을 모두 지웁니다.')) { known = {}; save(); build(); }
+};
+document.addEventListener('keydown', e => {
+  if (sheetOpen) { if (e.key === 'Escape') closeSheet(); return; }
+  if (e.key === 'ArrowRight') move(1);
+  else if (e.key === 'ArrowLeft') move(-1);
+  else if (e.key === ' ' || e.key === 'Enter') { if (e.target.tagName === 'BUTTON') return; e.preventDefault(); flip(); }
+  else if (e.key === '1') mark(false);
+  else if (e.key === '2') mark(true);
+});
+
+build();
+</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # SODA Lehrwerk
 
-Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 여섯 가지 학습 자료를 골라 열 수 있어요.
+Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 일곱 가지 학습 자료를 골라 열 수 있어요.
 
 ## 학습 자료
 
@@ -12,6 +12,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `praepositionen/` | SODA Präpositionen | 독일어 전치사의 모든 것, 전치사 80개, 비교, 퀴즈 |
 | `verben-mit-praepositionen/` | Verben mit Präpositionen | 동사와 전치사 결합 플래시카드, A1–C2, 324장 |
 | `nomen-verb-verbindungen/` | Nomen-Verb-Verbindungen | 명사와 동사 연어 플래시카드, A1–C2, 317장 |
+| `redemittel/` | SODA Redemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
 
 루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grundlagen / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 업데이트 예정 카드로 들어 있어요. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
 
@@ -35,6 +36,7 @@ hoertraining/     SODA-Lehrwerk-Hoertraining 저장소의 내용
 praepositionen/   이 저장소(SODA-PRP)에 있던 전치사 앱
 verben-mit-praepositionen/   SODA-VP 저장소의 내용
 nomen-verb-verbindungen/     SODA-NVV 저장소의 내용
+redemittel/                  회화 패턴과 상황별 반응 표현 플래시카드(단일 HTML)
 ```
 
 각 폴더는 통합 전 저장소와 파일 내용이 같고, 자료끼리 서로 참조하지 않습니다. 파일 경로가 모두 상대 경로라서 폴더 안에서 그대로 동작해요. 통합 전 저장소는 그대로 남아 있습니다.
