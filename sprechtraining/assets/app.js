@@ -274,7 +274,8 @@
     app.innerHTML =
       '<main id="main" class="cover view" tabindex="-1" aria-labelledby="cover-title">' +
       '<header class="brand"><img src="assets/logo.png" alt="Sophia Deutsch Akademie 로고">' +
-      '<div class="brand-t"><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div></header>' +
+      '<div class="brand-t"><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div>' +
+      (window.TOC_URL ? '<a class="pill toc-pill" href="' + window.TOC_URL + '">' + ICON.left + '목차로</a>' : '') + '</header>' +
       '<div class="hero"><h1 class="title" id="cover-title"><span class="t1">SODA</span><span class="t2">SPRECHTRAINING</span></h1>' +
       '<a class="cta" href="#/levels">레벨 선택하기' + ICON.right + '</a></div>' +
       '<footer class="cover-foot"><span>Innovative Learning Beyond the Traditional</span>' +

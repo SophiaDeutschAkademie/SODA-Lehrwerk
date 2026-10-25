@@ -341,3 +341,8 @@ mark.ev{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px;box-s
 .g-mist{list-style:none;display:grid;gap:8px}
 .g-mist li{padding:12px 16px;background:var(--no-bg);border:1px solid var(--no-bd);border-radius:12px;font-size:14.5px;color:var(--text);word-break:keep-all}
 .g-cta{margin-top:32px;display:inline-flex}
+
+.toc-pill{margin-left:auto;margin-right:56px}
+@media(max-width:560px){.cover .brand{gap:10px}.cover .brand-t b{font-size:13px;white-space:nowrap}.cover .brand-t span{white-space:nowrap}.toc-pill{margin-right:60px;padding:0 10px}.cover .brand-t b{font-size:12.5px}}
+@media(max-width:560px){.cover .brand{width:calc(100% - 52px)}.toc-pill{margin-right:0}}
+@media(max-width:560px){.cover .brand-t b{font-size:11.5px}.cover .brand-t span{font-size:11px}.cover .brand img{width:30px;height:30px}}
