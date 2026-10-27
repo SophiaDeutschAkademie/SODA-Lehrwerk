@@ -4,7 +4,7 @@ Goethe와 telc 모의고사(Modelltest) 네 묶음입니다. 메인 목차의 �
 
 | 폴더 | 통합 전 저장소 | 내용 |
 |---|---|---|
-| `goethe-a2/` | (이 저장소에서 처음 만듦) | Goethe-Zertifikat A2, Modelltest 4개 (PDF, 듣기 MP3, 디지털 시험 화면) |
+| `goethe-a2/` | (이 저장소에서 처음 만듦) | Goethe-Zertifikat A2, Modelltest 5개 (PDF, 듣기 MP3, 디지털 시험 화면) |
 | `goethe-b1/` | SODA-GZ-B1 | Goethe-Zertifikat B1, Modelltest 10개 (PDF, 듣기 MP3, 디지털 시험 화면) |
 | `goethe-b2/` | SODA-GZ-B2 | Goethe-Zertifikat B2, Modelltest 4개 (PDF, 듣기 MP3, 디지털 시험 화면) |
 | `telc-b2/` | SODA-telc-B2 | telc Deutsch B2, Modelltest 5개 (PDF, 듣기 MP3, 디지털 시험 화면) |

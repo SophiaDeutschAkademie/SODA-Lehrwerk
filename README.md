@@ -15,7 +15,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `verben-mit-praepositionen/` | Verben mit Präpositionen | 동사와 전치사 결합 플래시카드, A1–C2, 324장 |
 | `nomen-verb-verbindungen/` | Nomen-Verb-Verbindungen | 명사와 동사 연어 플래시카드, A1–C2, 317장 |
 | `redemittel/` | SODA Alltagsredemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
-| `zertifikat/goethe-a2/` | Goethe A2 모의고사 | Modelltest 4개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면 |
+| `zertifikat/goethe-a2/` | Goethe A2 모의고사 | Modelltest 5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면 |
 | `zertifikat/goethe-b1/` | Goethe B1 모의고사 | Modelltest 10개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면 |
 | `zertifikat/goethe-b2/` | Goethe B2 모의고사 | Modelltest 4개, 페이퍼와 디지털 |
 | `zertifikat/telc-b2/` | telc B2 모의고사 | Modelltest 5개, 페이퍼와 디지털 |
@@ -46,7 +46,7 @@ verben-mit-praepositionen/   SODA-VP 저장소의 내용
 nomen-verb-verbindungen/     SODA-NVV 저장소의 내용
 redemittel/                  회화 패턴과 상황별 반응 표현 플래시카드(단일 HTML)
 zertifikat/                  Goethe·telc 모의고사 (자세한 내용은 zertifikat/README.md)
-  goethe-a2/                 Goethe A2 Modelltest 4개 (이 저장소에서 처음 만듦)
+  goethe-a2/                 Goethe A2 Modelltest 5개 (이 저장소에서 처음 만듦)
   goethe-b1/                 SODA-GZ-B1 저장소의 내용
   goethe-b2/                 SODA-GZ-B2 저장소의 내용
   telc-b2/                   SODA-telc-B2 저장소의 내용
