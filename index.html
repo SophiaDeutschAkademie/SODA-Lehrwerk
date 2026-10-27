@@ -105,6 +105,7 @@ h1:focus{outline:none}
 .cat-h{display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--bd)}
 .cat-eb{font-size:11.5px;font-weight:800;letter-spacing:.2em;color:var(--accent);white-space:nowrap}
 .cat-h h2{font-size:clamp(20px,2.2vw,26px);font-weight:800;letter-spacing:-.025em;color:var(--accent)}
+.cat-h .cat-note{font-size:13.5px;font-weight:500;color:var(--text-s)}
 .grid.one .tile{min-height:0}
 .tile .lab{display:block}
 .tile .ttl{margin-top:6px}
@@ -168,7 +169,7 @@ h1:focus{outline:none}
 #inhalt .eyebrow{display:none}
 #inhalt .side-r{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
 #inhalt .cat{display:flex;flex-direction:column;padding:22px 20px 20px;background:#F2F2EE;border-radius:26px}
-#inhalt .cat-h{margin:0 0 16px;padding:0 4px;border:0}
+#inhalt .cat-h{margin:0 0 16px;padding:0 4px;border:0;flex-wrap:wrap;row-gap:2px}
 #inhalt .cat-h h2{font-size:clamp(20px,2vw,24px)}
 #inhalt .cat .grid,#inhalt .cat .grid.three,#inhalt .cat .grid.one{display:flex;flex-direction:column;gap:12px;padding:0;flex:1}
 #inhalt .cat .grid li{flex:0 0 auto}
@@ -199,6 +200,7 @@ h1:focus{outline:none}
   #inhalt .lead{justify-self:start;text-align:left;margin-top:14px;padding:0}
   #inhalt .side-r{grid-template-columns:1fr;gap:16px}
   #inhalt .cat:nth-child(n+3) .grid{flex-direction:column}
+  #inhalt .cat.zert .grid li{flex:0 0 auto}
   #inhalt .big{font-size:clamp(52px,15vw,96px)}
   #inhalt .big span{display:block}
   #inhalt .big .t1{margin:0}
@@ -320,30 +322,30 @@ html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visi
         </ul>
       </section>
       <section class="cat zert" aria-labelledby="cat-modelltest">
-        <header class="cat-h"><h2 id="cat-modelltest">SODA Modelltest</h2></header>
+        <header class="cat-h"><h2 id="cat-modelltest">SODA Modelltest</h2><span class="cat-note">페이퍼 시험과 디지털 시험</span></header>
         <ul class="grid three">
         <li><a class="tile" href="https://sophiadeutschakademie.github.io/SODA-Goethe/goethe-a2/" style="--i:9">
-          <span class="lab">Goethe-Zertifikat A2</span><b class="ttl">Goethe A2 모의고사</b><span class="dsc">페이퍼 시험과 디지털 시험</span>
+          <span class="lab">Goethe-Zertifikat</span><b class="ttl">A2</b>
           <span class="tile-foot"><span class="meta">Modelltest 5개</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
 <li><a class="tile" href="https://sophiadeutschakademie.github.io/SODA-Goethe/goethe-b1/" style="--i:10">
-          <span class="lab">Goethe-Zertifikat B1</span><b class="ttl">Goethe B1 모의고사</b><span class="dsc">페이퍼 시험과 디지털 시험</span>
+          <span class="lab">Goethe-Zertifikat</span><b class="ttl">B1</b>
           <span class="tile-foot"><span class="meta">Modelltest 10개</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
 <li><a class="tile" href="https://sophiadeutschakademie.github.io/SODA-Goethe/goethe-b2/" style="--i:11">
-          <span class="lab">Goethe-Zertifikat B2</span><b class="ttl">Goethe B2 모의고사</b><span class="dsc">페이퍼 시험과 디지털 시험</span>
+          <span class="lab">Goethe-Zertifikat</span><b class="ttl">B2</b>
           <span class="tile-foot"><span class="meta">Modelltest 4개</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
 <li><a class="tile" href="https://sophiadeutschakademie.github.io/SODA-TELC/telc-b1/" style="--i:12">
-          <span class="lab">telc Deutsch B1</span><b class="ttl">telc B1 모의고사</b><span class="dsc">페이퍼 시험과 디지털 시험</span>
+          <span class="lab">telc Deutsch</span><b class="ttl">B1</b>
           <span class="tile-foot"><span class="meta">Modelltest 5개</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
 <li><a class="tile" href="https://sophiadeutschakademie.github.io/SODA-TELC/telc-b2/" style="--i:13">
-          <span class="lab">telc Deutsch B2</span><b class="ttl">telc B2 모의고사</b><span class="dsc">페이퍼 시험과 디지털 시험</span>
+          <span class="lab">telc Deutsch</span><b class="ttl">B2</b>
           <span class="tile-foot"><span class="meta">Modelltest 5개</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
 <li><a class="tile" href="https://sophiadeutschakademie.github.io/SODA-TELC/telc-c1-hs/" style="--i:14">
-          <span class="lab">telc Deutsch C1 Hochschule</span><b class="ttl">telc C1 HS 모의고사</b><span class="dsc">페이퍼 시험과 디지털 시험</span>
+          <span class="lab">telc Deutsch</span><b class="ttl">C1 Hochschule</b>
           <span class="tile-foot"><span class="meta">Modelltest 5개</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
         </ul>
