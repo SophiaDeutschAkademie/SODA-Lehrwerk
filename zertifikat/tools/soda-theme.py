@@ -111,7 +111,9 @@ S .mdl,S pre.mdl{background:var(--acc-w)}
 /* 글자색: 배경으로 쓰는 --acc는 어두워서, 글자로 쓰는 곳은 밝은 색으로 */
 S .grid tr.ans td.no,S .sheet .ey,S .tip .stp,S table.rv tr.ok td.m,S .bank .bi.used .bl{color:var(--acc-2)}
 /* 진한 ink 배경 + 흰 글자였던 곳 */
-S .post2 .pl,S .stm .sl2,S .txs .tn b{background:#4A5668}
+S .post2 .pl,S .stm .sl2,S .txs .tn b,S .al{background:#4A5668}
+S .ad.used .al,S .pic.used .al{background:var(--acc)}
+S .board .bh{border-bottom:1px solid var(--line)}
 S .toast{background:#2F3A4A;color:#fff;border:1px solid #4A5668}
 S .toast.w{background:#B63C33;border-color:#B63C33}
 @keyframes sodaflash{0%,40%{background:#4A4012}100%{background:transparent}}
