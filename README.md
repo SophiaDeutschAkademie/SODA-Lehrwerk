@@ -1,6 +1,6 @@
 # SODA Lehrwerk
 
-Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 열두 가지 학습 자료를 골라 열 수 있어요.
+Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 열세 가지 학습 자료를 골라 열 수 있어요.
 
 ## 학습 자료
 
@@ -15,6 +15,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `verben-mit-praepositionen/` | Verben mit Präpositionen | 동사와 전치사 결합 플래시카드, A1–C2, 324장 |
 | `nomen-verb-verbindungen/` | Nomen-Verb-Verbindungen | 명사와 동사 연어 플래시카드, A1–C2, 317장 |
 | `redemittel/` | SODA Alltagsredemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
+| `zertifikat/goethe-a2/` | Goethe A2 모의고사 | Modelltest 4개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면 |
 | `zertifikat/goethe-b1/` | Goethe B1 모의고사 | Modelltest 10개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면 |
 | `zertifikat/goethe-b2/` | Goethe B2 모의고사 | Modelltest 4개, 페이퍼와 디지털 |
 | `zertifikat/telc-b2/` | telc B2 모의고사 | Modelltest 5개, 페이퍼와 디지털 |
@@ -45,6 +46,7 @@ verben-mit-praepositionen/   SODA-VP 저장소의 내용
 nomen-verb-verbindungen/     SODA-NVV 저장소의 내용
 redemittel/                  회화 패턴과 상황별 반응 표현 플래시카드(단일 HTML)
 zertifikat/                  Goethe·telc 모의고사 (자세한 내용은 zertifikat/README.md)
+  goethe-a2/                 Goethe A2 Modelltest 4개 (이 저장소에서 처음 만듦)
   goethe-b1/                 SODA-GZ-B1 저장소의 내용
   goethe-b2/                 SODA-GZ-B2 저장소의 내용
   telc-b2/                   SODA-telc-B2 저장소의 내용
@@ -59,11 +61,11 @@ zertifikat/                  Goethe·telc 모의고사 (자세한 내용은 zert
 - `lesetraining/`의 텍스트 원본과 데이터 파일을 다시 만드는 방법은 `lesetraining/README.md`에 있어요.
 - `hoertraining/`과 `grammatik/`은 오프라인 캐시(서비스워커)를 씁니다. 이 두 폴더의 내용을 고친 뒤에는 같은 폴더의 `sw.js`도 함께 갱신해야 학생 기기에 새 내용이 나와요. 갱신하지 않으면 이전 내용이 계속 보일 수 있습니다.
 - 목차에 자료를 추가하려면 루트 `index.html`의 해당 묶음의 `<ul class="grid">` 안에 `<li>` 항목을 같은 형식으로 추가합니다.
-- `zertifikat/`의 세 앱은 각 앱 폴더의 `digital-src/README.md`에 다시 만드는 방법이 있어요. `index.html`과 `digital.html`을 고치면 `zertifikat/tools/soda-theme.py`로 다크 모드 스위치를 다시 넣습니다(빌드 스크립트는 자동으로 실행).
+- `zertifikat/`의 네 앱은 각 앱 폴더의 `digital-src/README.md`에 다시 만드는 방법이 있어요. `index.html`과 `digital.html`을 고치면 `zertifikat/tools/soda-theme.py`로 다크 모드 스위치를 다시 넣습니다(빌드 스크립트는 자동으로 실행).
 
 ## 다크 모드
 
-모든 앱과 목차에 다크 모드 버튼(해·달 아이콘)이 있습니다. 처음 열면 다크 모드로 시작하고, 버튼을 누르면 라이트 모드로 바뀝니다. 선택은 브라우저에 저장되며 `soda-theme` 하나를 모든 앱이 함께 씁니다. 그래서 한 앱에서 바꾸면 다른 앱에도 같은 모드가 적용돼요. 각 `index.html`에 `soda-theme-js`(버튼과 저장)와 `soda-dark`(다크 색) 블록이 들어 있습니다. `zertifikat/`의 세 앱은 `index.html`과 `digital.html` 모두에 같은 블록이 들어 있어요.
+모든 앱과 목차에 다크 모드 버튼(해·달 아이콘)이 있습니다. 처음 열면 다크 모드로 시작하고, 버튼을 누르면 라이트 모드로 바뀝니다. 선택은 브라우저에 저장되며 `soda-theme` 하나를 모든 앱이 함께 씁니다. 그래서 한 앱에서 바꾸면 다른 앱에도 같은 모드가 적용돼요. 각 `index.html`에 `soda-theme-js`(버튼과 저장)와 `soda-dark`(다크 색) 블록이 들어 있습니다. `zertifikat/`의 네 앱은 `index.html`과 `digital.html` 모두에 같은 블록이 들어 있어요.
 
 ## 홈 화면에 앱 추가
 
