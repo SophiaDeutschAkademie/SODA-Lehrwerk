@@ -16,7 +16,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `nomen-verb-verbindungen/` | Nomen-Verb-Verbindungen | 명사와 동사 연어 플래시카드, A1–C2, 317장 |
 | `redemittel/` | SODA Alltagsredemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
 | 별도 저장소 `SODA-Goethe` | Goethe A2·B1·B2 모의고사 | Modelltest 5·10·4개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면 |
-| 별도 저장소 `SODA-TELC` | telc B1·B2·C1 Hochschule 모의고사 | Modelltest 5개씩, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면 |
+| 별도 저장소 `SODA-TELC` | telc B1·B2·C1 Hochschule 모의고사 | Modelltest 5·6·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면 |
 
 루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grammatik / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 Training 묶음에 들어 있어요. 그 아래에 전체 너비의 「SODA Modelltest」 묶음이 있고, Goethe A2, Goethe B1, Goethe B2, telc B1, telc B2, telc C1 Hochschule 모의고사 여섯 항목이 들어 있습니다. 이 여섯 항목은 용량 한도(GitHub Pages 1 GB) 때문에 별도 저장소(`SODA-Goethe`, `SODA-TELC`)의 주소로 연결됩니다. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
 
