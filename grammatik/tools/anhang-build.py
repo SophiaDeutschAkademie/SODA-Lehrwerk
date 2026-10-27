@@ -221,9 +221,21 @@ FIXES = {
     'L16-t3': [('des Junge<span class="x-e">n</span> (F)', 'des Junge<span class="x-e">n</span>')],
     # wording that only makes sense inside the lesson
     'L14-t2': [('entlang)</td><td>이 과</td>', 'entlang)</td><td>14과</td>'),
-               ('außer)</td><td>이 과</td>', 'außer)</td><td>14과</td>')],
+               ('außer)</td><td>이 과</td>', 'außer)</td><td>14과</td>'),
+               ('um (bis · entlang)</td>', 'um (bis · 명사 뒤의 entlang)</td>')],
     'L36-t1': [('말하는 사람의 판단 (이 과)', '말하는 사람의 판단 (36과)')],
     'L07-k2': [('<br/>지금은 두 가지만 기억해요', '<br/>두 가지만 기억해요')],
+    # proofreading of the appendix (the same spots are in the lessons)
+    'L19-t2': [('<tr><td>반대 — 그 대신</td><td>stattdessen · jedoch</td><td>Er hat nicht gelernt, <strong>stattdessen</strong> hat er gespielt.</td></tr>',
+                '<tr><td>반대 — 그 대신</td><td>stattdessen</td><td>Er hat nicht gelernt, <strong>stattdessen</strong> hat er gespielt.</td></tr>'
+                '<tr><td>대조 — 그러나</td><td>jedoch</td><td>Die Wohnung ist schön, <strong>jedoch</strong> ist sie zu klein.</td></tr>')],
+    'L05-t8': [('<td>바뀐 모음 그대로, -st만 빼요</td>', '<td>바뀐 모음 그대로, du 형에서 -st를 빼요 (어간이 -s·-ss로 끝나면 -t만)</td>')],
+    'L34-k1': [('an·vor·in은 낱말마다 다르니 격까지 함께 외워요', 'vor는 늘 3격이고, an·in은 낱말마다 다르니 격까지 함께 외워요')],
+    'L30-t8': [('wenn du früher kommst.', 'wenn du früher kommen würdest.')],
+    'L34-t3': [('Ich habe eine <strong>Bitte um</strong> Hilfe.', 'Er hat meine <strong>Bitte um</strong> Hilfe ignoriert.')],
+    'L11-t4': [('<strong>Ü</strong>bersetzen', '<strong>ÜBER</strong>setzen')],
+    'L07-t8': [('Vom wievielten bis zum wievielten?', 'Vom Wievielten bis zum Wievielten?')],
+    'L27-t6': [("종속접속사 — 과거의 한 번 / 비교의 '~\u2060보다'", "종속접속사 — 과거의 한 번 / 비교의 말 — '~\u2060보다'")],
 }
 
 # Declension tables whose phone-layout labels are long: label goes above the value.
