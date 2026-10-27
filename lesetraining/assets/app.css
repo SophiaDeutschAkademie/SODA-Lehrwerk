@@ -5,7 +5,7 @@
 
 :root{
   --accent:#384568;--accent-d:#2C3754;--accent-bg:#ECEDF3;--accent-l:#F5F5F9;--accent-bd:#C9CDDB;
-  --text:#1E1E1E;--text-s:#444;--text-m:#666;--text-l:#8A8A86;
+  --text:#1E1E1E;--text-s:#444;--text-m:#666;--text-l:#6F6F6B;
   --bg:#FAFAF8;--bg-c:#FFFFFF;--bg-s:#F2F0EB;--bd:#E0E0DB;--bd-l:#ECEAE4;
   --ok:#2D7A56;--ok-bg:#E8F5EE;--ok-bd:#A9D3BD;
   --no:#C44B3A;--no-bg:#FBE8E5;--no-bd:#EDB5AC;
@@ -240,7 +240,7 @@ mark.ev{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px;box-s
 .r-subj{background:#EAF0FA;border-color:#C5D4EE;color:#2F5DA8}
 .r-verb{background:#FBEAE7;border-color:#F0C4BC;color:#B03A2E}
 .r-obj{background:#E6F4EC;border-color:#BCE0CB;color:#2D7A56}
-.r-comp{background:#E4F3F4;border-color:#B9DFE2;color:#1F7A80}
+.r-comp{background:#E4F3F4;border-color:#B9DFE2;color:#1A7075}
 .r-adv{background:#FBF2E1;border-color:#EEDAB2;color:#8A5A12}
 .r-conj{background:#F1ECF8;border-color:#D8CDEB;color:#6B4AA0}
 .r-clause{background:#EEF1F5;border-color:#D3DAE4;color:#455468}

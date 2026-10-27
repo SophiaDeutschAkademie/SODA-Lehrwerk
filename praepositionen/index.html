@@ -35,8 +35,8 @@
 <link rel="icon" type="image/png" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <style>
-:root{--bg:#faf8f3;--ink:#1f2937;--navy:#1f2d4a;--line:#e3ddd0;--card:#fff;--muted:#6b7280;
---akk:#2f5d8a;--akkbg:#e8f0f8;--dat:#2f7a6a;--datbg:#e6f3ef;--gen:#8a6a3a;--genbg:#f4ede1;--wec:#6a4c8a;--wecbg:#efe9f6;--red:#8a4a4a}
+:root{--bg:#faf8f3;--ink:#1f2937;--navy:#1f2d4a;--line:#e3ddd0;--card:#fff;--muted:#5b6270;
+--akk:#2f5d8a;--akkbg:#e8f0f8;--dat:#2a6b5c;--datbg:#e6f3ef;--gen:#7a5c2e;--genbg:#f4ede1;--wec:#6a4c8a;--wecbg:#efe9f6;--red:#8a4a4a}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.65}
 nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:4px;overflow-x:auto;padding:8px 12px;z-index:5;justify-content:center}
@@ -239,6 +239,10 @@ html[data-theme="dark"] .wl{background:#1A2D29}
 html[data-theme="dark"] .cta{color:#14181E;background:#AEB9DD}
 html[data-theme="dark"] .cta:hover{background:#C8D0EA}
 html[data-theme="dark"] .cover{--navy:#AEB9DD;--bg:#14181E;--ink:#ECEAE4;--muted:#A9B0BA;--line:#2A313B}
+/* 다크 모드 가독성 보정 */
+html[data-theme="dark"] .st .n,html[data-theme="dark"] .btn.pri{color:#14181E}
+html[data-theme="dark"] .tools input::placeholder{color:#8A92A0;opacity:1}
+html[data-theme="dark"] .wcard svg{background:#F6F3EB;border-radius:10px}
 
 
 @media (max-width:700px){.back{margin-right:46px}}
@@ -277,7 +281,7 @@ html[data-theme="dark"] .cover{--navy:#AEB9DD;--bg:#14181E;--ink:#ECEAE4;--muted
 const R=(x,y,w,h,f="#e3ddd0")=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4" fill="${f}" stroke="#b9b09b"/>`;
 const D=(x,y,c="#1f2d4a")=>`<circle cx="${x}" cy="${y}" r="6" fill="${c}"/>`;
 const A=(x1,y1,x2,y2,c="#2f5d8a")=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-width="2" marker-end="url(#ah)"/>`;
-const T=(x,y,s)=>`<text x="${x}" y="${y}" font-size="9" fill="#6b7280" text-anchor="middle">${s}</text>`;
+const T=(x,y,s)=>`<text x="${x}" y="${y}" font-size="9" fill="#555d6a" text-anchor="middle">${s}</text>`;
 const TL=`<line x1="8" y1="54" x2="112" y2="54" stroke="#b9b09b" stroke-width="2"/>`;
 const BUB=`<path d="M10 14 h50 a6 6 0 0 1 6 6 v20 a6 6 0 0 1 -6 6 h-30 l-10 10 v-10 h-10 a6 6 0 0 1 -6 -6 v-20 a6 6 0 0 1 6 -6z" fill="#f4f0e6" stroke="#b9b09b"/>`;
 const IMG={
@@ -334,7 +338,7 @@ anlässlich:`<line x1="60" y1="8" x2="60" y2="56" stroke="#555" stroke-width="2"
 mangels:`<rect x="10" y="24" width="34" height="32" rx="4" fill="none" stroke="#999" stroke-dasharray="3 3"/>`+T(27,70,"없음")+A(48,40,80,40)+`<path d="M90 30 L106 50 M106 30 L90 50" stroke="#8a4a4a" stroke-width="3"/>`,
 zwecks:D(14,40)+A(22,40,78,40)+`<circle cx="98" cy="40" r="16" fill="none" stroke="#8a6a3a" stroke-width="2"/><circle cx="98" cy="40" r="8" fill="none" stroke="#8a6a3a" stroke-width="2"/><circle cx="98" cy="40" r="2" fill="#8a6a3a"/>`
 };
-const EYE=(x,y)=>`<ellipse cx="${x}" cy="${y}" rx="9" ry="6" fill="none" stroke="#6b7280" stroke-width="1.5"/><circle cx="${x}" cy="${y}" r="2.5" fill="#6b7280"/>`;
+const EYE=(x,y)=>`<ellipse cx="${x}" cy="${y}" rx="9" ry="6" fill="none" stroke="#6b7280" stroke-width="1.5"/><circle cx="${x}" cy="${y}" r="2.5" fill="#555d6a"/>`;
 IMG.vor=EYE(18,40)+T(18,60,"보는 쪽")+R(66,18,40,44)+D(46,40);
 IMG.hinter=EYE(18,40)+T(18,60,"보는 쪽")+D(92,40)+R(48,18,40,44);
 const RIVER=`<path d="M60 4 Q50 20 60 40 Q70 60 60 76" fill="none" stroke="#2f7a6a" stroke-width="9" opacity=".35"/>`;
@@ -347,14 +351,14 @@ anstelle:IMG.statt,
 einschließlich:`<line x1="8" y1="54" x2="112" y2="54" stroke="#b9b09b" stroke-width="2"/>`+A(14,54,82,54)+`<line x1="92" y1="36" x2="92" y2="70" stroke="#555" stroke-width="2"/><circle cx="92" cy="54" r="7" fill="#2f7a6a"/>`+T(92,28,"끝도 포함"),
 exklusive:`<rect x="10" y="12" width="70" height="56" rx="8" fill="#f4f0e6" stroke="#b9b09b"/>`+D(44,40)+`<circle cx="102" cy="40" r="6" fill="none" stroke="#999" stroke-dasharray="3 3"/><path d="M95 33 L109 47 M109 33 L95 47" stroke="#8a4a4a" stroke-width="2"/>`+T(102,64,"제외"),
 zuzüglich:R(22,22,48,36,"#f4f0e6")+T(46,44,"금액")+`<text x="94" y="36" font-size="22" fill="#2f7a6a" text-anchor="middle" font-weight="700">+</text><text x="94" y="66" font-size="22" fill="#8a4a4a" text-anchor="middle" font-weight="700">−</text>`,
-ungeachtet:D(12,58)+A(20,58,108,58)+`<path d="M60 8 L77 36 L43 36Z" fill="#f4ede1" stroke="#8a6a3a"/><text x="60" y="32" font-size="14" fill="#8a6a3a" text-anchor="middle" font-weight="700">!</text>`+T(90,24,"경고"),
+ungeachtet:D(12,58)+A(20,58,108,58)+`<path d="M60 8 L77 36 L43 36Z" fill="#f4ede1" stroke="#8a6a3a"/><text x="60" y="32" font-size="14" fill="#7a5c2e" text-anchor="middle" font-weight="700">!</text>`+T(90,24,"경고"),
 zugunsten:`<path d="M60 64 L50 76 L70 76Z" fill="#555"/><line x1="60" y1="64" x2="60" y2="38" stroke="#555" stroke-width="2"/><line x1="18" y1="30" x2="102" y2="46" stroke="#555" stroke-width="2"/>`+R(8,16,22,14)+R(90,32,24,14,"#e6f3ef")+`<text x="102" y="26" font-size="16" fill="#2f7a6a" text-anchor="middle" font-weight="700">+</text>`,
 zuliebe:`<path d="M20 30 C20 20 34 20 34 30 C34 20 48 20 48 30 C48 42 34 50 34 56 C34 50 20 42 20 30Z" fill="#c99a9a"/>`+A(54,40,84,40)+`<circle cx="98" cy="26" r="7" fill="#e3ddd0" stroke="#b9b09b"/>`+R(88,34,20,28),
 "um-willen":`<ellipse cx="60" cy="40" rx="50" ry="33" fill="none" stroke="#2f5d8a" stroke-dasharray="4 3"/><circle cx="60" cy="40" r="16" fill="none" stroke="#8a6a3a" stroke-width="2"/><circle cx="60" cy="40" r="8" fill="none" stroke="#8a6a3a" stroke-width="2"/><circle cx="60" cy="40" r="2" fill="#8a6a3a"/>`+T(14,12,"um")+T(108,76,"willen"),
 halber:IMG.wegen,
 hinsichtlich:R(50,12,62,56)+`<circle cx="70" cy="34" r="15" fill="#fff" fill-opacity=".6" stroke="#1f2d4a" stroke-width="2.5"/><line x1="59" y1="45" x2="40" y2="66" stroke="#1f2d4a" stroke-width="4"/>`+T(92,62,"한 부분"),
 seitens:R(8,14,34,52,"#efe9f6")+T(25,76,"한쪽")+A(46,40,88,40)+D(100,40),
-entsprechend:`<rect x="12" y="22" width="36" height="36" rx="4" fill="none" stroke="#999" stroke-dasharray="4 3"/>`+`<text x="60" y="47" font-size="20" fill="#6b7280" text-anchor="middle">=</text>`+R(72,22,36,36,"#e8f0f8")+T(30,72,"틀")+T(90,72,"맞춤"),
+entsprechend:`<rect x="12" y="22" width="36" height="36" rx="4" fill="none" stroke="#999" stroke-dasharray="4 3"/>`+`<text x="60" y="47" font-size="20" fill="#555d6a" text-anchor="middle">=</text>`+R(72,22,36,36,"#e8f0f8")+T(30,72,"틀")+T(90,72,"맞춤"),
 wider:`<line x1="10" y1="18" x2="104" y2="18" stroke="#b9b09b" stroke-width="2"/><line x1="10" y1="62" x2="104" y2="62" stroke="#b9b09b" stroke-width="2"/><path d="M104 14 L112 18 L104 22Z M104 58 L112 62 L104 66Z" fill="#b9b09b"/>`+A(108,40,16,40,"#8a4a4a")+T(60,76,"흐름을 거슬러"),
 via:D(10,40)+A(18,40,44,40)+`<circle cx="54" cy="40" r="7" fill="#fff" stroke="#2f5d8a" stroke-width="2"/>`+A(62,40,88,40)+R(92,24,22,32)+T(54,62,"경유"),
 unweit:R(12,20,40,40)+D(78,40)+`<line x1="56" y1="66" x2="76" y2="66" stroke="#999"/><line x1="56" y1="62" x2="56" y2="70" stroke="#999"/><line x1="76" y1="62" x2="76" y2="70" stroke="#999"/>`+T(66,78,"가까이"),

@@ -36,7 +36,7 @@
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <style>
 :root{
-  --ink:#1c2430; --ink2:#5b6470; --ink3:#98a0aa;
+  --ink:#1c2430; --ink2:#5b6470; --ink3:#656d78;
   --paper:#fafaf8; --card:#ffffff; --line:#e6e4de; --soft:#f1efe9;
   --red:#b8322a; --gold:#b8923a; --gray:#8b8f94;
   --akk:#b8322a; --dat:#2d5fa8;
@@ -44,7 +44,11 @@
   --radius:18px;
   --font:"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic","Segoe UI",system-ui,-apple-system,sans-serif;
 }
-html[data-theme="dark"]{--ink:#eceae4;--ink2:#a9b0ba;--ink3:#6f7782;--paper:#14181e;--card:#1b2028;--line:#2a313b;--soft:#222831;--akk:#e26a60;--dat:#6f9be0;--ok:#5cbf85;--no:#e26a60;}
+html[data-theme="dark"]{--ink:#eceae4;--ink2:#a9b0ba;--ink3:#8a92a0;--paper:#14181e;--card:#1b2028;--line:#2a313b;--soft:#222831;--akk:#e26a60;--dat:#6f9be0;--ok:#5cbf85;--no:#e26a60;--red:#e26a60;}
+/* 가독성 보정(라이트): 전치사별 색을 살짝 어둡게 섞어 연한 바탕에서도 읽히게 */
+:root .pp,:root .ovb .ps span,:root .ex .de .vm,:root .ghead,:root .weak .row b{color:color-mix(in srgb,var(--pc) 78%,#000)}
+/* 다크 모드 가독성 보정: 전치사별 색을 밝게 섞어 어두운 배경에서도 읽히게 */
+html[data-theme="dark"] .pp,html[data-theme="dark"] .ovb .ps span,html[data-theme="dark"] .ex .de .vm,html[data-theme="dark"] .ghead,html[data-theme="dark"] .weak .row b{color:color-mix(in srgb,var(--pc) 55%,#fff)}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html,body{height:100%}
 body{background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased}
@@ -203,10 +207,10 @@ p.secp{font-size:13px;color:var(--ink2);margin-bottom:14px;max-width:40em}
 .sheet{column-count:2;column-gap:16px;margin-top:28px}
 .sheet .sh{break-inside:avoid;margin-bottom:16px}
 .sh{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
-.sh .hd{display:flex;align-items:center;gap:12px;padding:14px 18px;background:var(--pc);color:#fff}
+.sh .hd{display:flex;align-items:center;gap:12px;padding:14px 18px;background:color-mix(in srgb,var(--pc) 80%,#000);color:#fff}
 .sh .hd .picon{color:#fff;width:30px;height:30px}
 .sh .hd .nm{font-size:24px;font-weight:700;letter-spacing:-.01em;flex:1}
-.sh .hd .cs{font-size:11.5px;font-weight:600;letter-spacing:.06em;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.22)}
+.sh .hd .cs{font-size:11.5px;font-weight:600;letter-spacing:.06em;padding:4px 10px;border-radius:999px;background:rgba(0,0,0,.2)}
 .sh .hook{font-size:13px;color:var(--ink2);line-height:1.65;padding:12px 18px 0}
 .sh .hook b{color:var(--ink)}
 .sh .vg{padding:12px 18px 4px}
@@ -235,7 +239,9 @@ p.secp{font-size:13px;color:var(--ink2);margin-bottom:14px;max-width:40em}
 .item .e{font-size:13.5px;color:var(--ink2);margin-top:4px}
 .item .e2{font-size:13px;color:var(--ink3)}
 .empty{text-align:center;color:var(--ink3);padding:40px 0;font-size:14px}
-.ghead{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin:18px 0 4px}
+.ghead{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--pc,var(--ink3));margin:18px 0 4px}
+.weak .row b{color:var(--pc,var(--ink))}
+.search::placeholder,.fill input::placeholder{color:var(--ink3);opacity:1}
 
 @media (max-width:520px){
   .cover{padding-left:22px;padding-right:22px}
@@ -1189,7 +1195,7 @@ function renderDone(emptyDeck){
     if(keys.length){
       var w=el("div","weak");w.appendChild(el("div","lbl","동사별 퀴즈 정답률"));
       keys.sort(function(x,y){return (S.verbStat[x].ok/S.verbStat[x].n)-(S.verbStat[y].ok/S.verbStat[y].n);});
-      keys.forEach(function(p){var s=S.verbStat[p];var r=el("div","row");var l=el("span");var pp=el("b","",p==="etc"?ETC:p);pp.style.color=p==="etc"?ETCCOL:VCOL[p];l.appendChild(pp);r.appendChild(l);r.appendChild(el("span","",s.ok+" / "+s.n+"  ("+Math.round(s.ok/s.n*100)+"%)"));w.appendChild(r);});
+      keys.forEach(function(p){var s=S.verbStat[p];var r=el("div","row");var l=el("span");var pp=el("b","",p==="etc"?ETC:p);pp.style.setProperty("--pc",p==="etc"?ETCCOL:VCOL[p]);l.appendChild(pp);r.appendChild(l);r.appendChild(el("span","",s.ok+" / "+s.n+"  ("+Math.round(s.ok/s.n*100)+"%)"));w.appendChild(r);});
       box.appendChild(w);
     }
     var bt2=el("div","btns");
@@ -1267,7 +1273,7 @@ function renderList(){
     if(q&&hay.indexOf(q)<0)return;
     n++;
     var fk=famKey(c);
-    if(!isFamDeck&&fk!==lastFam){lastFam=fk;var h=el("div","ghead",fk==="etc"?ETC:fk);h.style.color=fk==="etc"?ETCCOL:VCOL[fk];box.appendChild(h);}
+    if(!isFamDeck&&fk!==lastFam){lastFam=fk;var h=el("div","ghead",fk==="etc"?ETC:fk);h.style.setProperty("--pc",fk==="etc"?ETCCOL:VCOL[fk]);box.appendChild(h);}
     var it=el("div","item");it.style.setProperty("--pc",colOf(c));
     var p=el("div","p");var t=el("span");t.appendChild(phraseNode(c,true));p.appendChild(t);
     p.appendChild(el("i","",(isFamDeck?c.L+(isKnown(c)?" · 익힘":""):(isKnown(c)?"익힘":""))));it.appendChild(p);

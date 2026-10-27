@@ -37,7 +37,7 @@
 <meta name="generator" content="listening-routine-builder template 1.1 + SODA 통합 웹앱판(레벨 선택·호스팅)">
 <title>Lehrwerk Hörtraining</title>
 <style>
-:root{--accent:#1B7A6B;--ink:#2A2925;--mut:#77736b;--faint:#a9a59c;--line:#E5E1DA;--bg:#F6F4EF;--card:#fff;--deep:#1B4332;--ok:#2F7D4F;--no:#C54B4B;--warn:#9A6A12;--c:var(--accent)}
+:root{--accent:var(--accent-user,#1B7A6B);--ink:#2A2925;--mut:#6b675f;--faint:#77736b;--line:#E5E1DA;--bg:#F6F4EF;--card:#fff;--deep:#1B4332;--ok:#2F7D4F;--no:#C54B4B;--warn:#9A6A12;--c:var(--accent)}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR","Malgun Gothic","Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
@@ -68,8 +68,8 @@ h1,h2,h3,p{margin:0}
 .secbtn:hover,.secbtn:active{border-color:var(--c)}
 .secbtn.wide{grid-column:1/-1}
 .secbtn .l{font-size:22px;font-weight:800;color:var(--c);margin-bottom:2px}
-.secbtn .d{font-size:12px;color:#888}
-.secbtn .m{font-size:11px;color:#aaa;margin-top:4px}
+.secbtn .d{font-size:12px;color:#6b675f}
+.secbtn .m{font-size:11px;color:#77736b;margin-top:4px}
 .ghost{display:block;width:100%;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:13px;font-weight:600;margin-top:8px}
 .primary{display:block;width:100%;background:var(--accent);color:#fff;border:0;border-radius:12px;padding:15px;font-weight:700;margin-top:16px}
 .primary[disabled]{background:#d8d4cb;color:#fff;cursor:not-allowed}
@@ -112,7 +112,7 @@ h1,h2,h3,p{margin:0}
 .ln{padding:10px 0 12px;border-top:1px solid #f0ede7}
 .ln:first-child{border-top:0}
 .ln .lh{display:flex;align-items:center;justify-content:space-between;min-height:34px}
-.ln .who{font-size:13px;font-weight:700}
+.ln .who{font-size:13px;font-weight:700;color:color-mix(in srgb,var(--sc,#555) 62%,#000)}
 .ln .tx{display:block;font-size:17px;line-height:1.75;margin-top:2px}
 .ln .ac{display:flex}
 .ib{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--line);background:#fff;font-size:13px;font-weight:700;margin-left:4px;padding:0}
@@ -159,7 +159,7 @@ h1,h2,h3,p{margin:0}
 .opt.ok{border-color:var(--ok);background:#eef7f1}
 .opt.no{border-color:var(--no);background:#fdf0f0}
 .opt[disabled]{cursor:default;color:var(--ink);opacity:1}
-.opt.dim{opacity:.55}
+.opt.dim{opacity:.7}
 .fb{font-size:14px;font-weight:700;margin-top:10px}
 .fb.ok{color:var(--ok)}.fb.no{color:var(--no)}.fb.un{color:var(--warn)}
 .ev{font-size:13.5px;color:var(--mut);margin-top:6px;display:flex;align-items:flex-start}
@@ -263,9 +263,9 @@ html.can-install .sx-install{display:inline-block}
 .lvrow .lc{flex:none;width:58px;font-size:27px;font-weight:800;color:var(--c);letter-spacing:-.02em}
 .lvrow .li{flex:1;min-width:0}
 .lvrow .lvn{display:block;font-size:15.5px;font-weight:700;color:var(--ink)}
-.lvrow .lm{display:block;margin-top:3px;font-size:12px;color:#999;word-break:keep-all}
+.lvrow .lm{display:block;margin-top:3px;font-size:12px;color:#77736b;word-break:keep-all}
 .lvrow .dn{display:inline-block;margin-top:7px;font-size:11px;font-weight:700;color:var(--ok);border:1px solid currentColor;border-radius:9px;padding:1px 8px}
-.lvrow .go{flex:none;margin-left:10px;font-size:24px;line-height:1;color:#C9C5BC}
+.lvrow .go{flex:none;margin-left:10px;font-size:24px;line-height:1;color:#8f8b82}
 .tb .bk{flex:none;margin:0 10px 0 0}
 .tb .bk+.tb-brand{flex:1}
 .tb-name em,.lh em{font-style:normal;color:var(--c)}
@@ -322,7 +322,7 @@ html[data-theme="dark"] .a2hs-btn{color:#A9B0BA}
 html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
 @media (max-width:700px){.uc-brand,.cover .brand{padding-right:50px}.uc-brand-t b,.cover .brand-t b{font-size:17px}.uc-brand-t span,.cover .brand-t span{font-size:14px}}
 @media print{.soda-theme-btn{display:none!important}}
-html[data-theme="dark"]{--accent:#4FB8A5;--ink:#ECEAE4;--mut:#A9B0BA;--faint:#6F7782;--line:#2A313B;--bg:#14181E;--card:#1B2028;--deep:#9AD9C6;--ok:#5CBF85;--no:#E26A60;--warn:#E0A55F}
+html[data-theme="dark"]{--accent:#4FB8A5;--ink:#ECEAE4;--mut:#A9B0BA;--faint:#8A92A0;--line:#2A313B;--bg:#14181E;--card:#1B2028;--deep:#9AD9C6;--ok:#5CBF85;--no:#E26A60;--warn:#E0A55F}
 html[data-theme="dark"] .uc{--uc-bg:#14181E;--uc-ink:#ECEAE4;--uc-mut:#A9B0BA;--uc-bd:#2A313B;--uc-accent:#AEB9DD;--uc-accent-d:#C8D0EA;--uc-btn-ink:#14181E}html[data-theme="dark"] .flow li{border-top:1px solid #2A313B}
 html[data-theme="dark"] .stats span{color:#8A929C}
 html[data-theme="dark"] .secbtn{background:#1B2028}
@@ -364,6 +364,14 @@ html[data-theme="dark"] .lvt span{color:#8A929C}
 html[data-theme="dark"] .lvrow{background:#1B2028}
 html[data-theme="dark"] .lvrow .lm{color:#8A929C}
 html[data-theme="dark"] .primary{color:#14181E}
+/* 가독성 보정: 레벨 색(--c) 위의 흰 글씨는 배경을 깊게, 배경 위의 레벨 색 글씨는 테마별로 명도 조정 */
+.badge,.pp,.q .qn,.ib.on,.chk.on .bx{background:color-mix(in srgb,var(--c) 66%,#000)}
+.q .qn.ex{background:#6E675C}
+.secbtn .l,.sth .k,.sp.on,.tcard .n,.lvrow .lc,.tb-name em,.lh em{color:color-mix(in srgb,var(--c) 70%,#000)}
+textarea::placeholder,input::placeholder{color:#6F6F6B;opacity:1}
+html[data-theme="dark"] .secbtn .l,html[data-theme="dark"] .sth .k,html[data-theme="dark"] .sp.on,html[data-theme="dark"] .tcard .n,html[data-theme="dark"] .lvrow .lc,html[data-theme="dark"] .tb-name em,html[data-theme="dark"] .lh em{color:color-mix(in srgb,var(--c) 62%,#fff)}
+html[data-theme="dark"] .ln .who{color:color-mix(in srgb,var(--sc,#aaa) 60%,#fff)}
+html[data-theme="dark"] textarea::placeholder,html[data-theme="dark"] input::placeholder{color:#8A92A0;opacity:1}
 html[data-theme="dark"] .cv-start{color:#14181E}
 html[data-theme="dark"] .sx-update button{color:#14181E}
 html[data-theme="dark"] .sx-sheet-c li:before{color:#14181E}
@@ -492,7 +500,7 @@ var LVS=[],LVC={};SECS.forEach(function(s){var l=lvOf(s);if(l&&LVS.indexOf(l)<0)
 if(LVS.length<2||SECS.some(function(s){return!lvOf(s);}))LVS=[];
 var S={screen:'cover',sec:null,idx:-1,step:1,L:null,confirmClear:false};
 var mediaCache={},mem={},seg=null,toastT=null;
-document.documentElement.style.setProperty('--accent',M.accent||'#1B7A6B');
+document.documentElement.style.setProperty('--accent-user',M.accent||'#1B7A6B');
 
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
 function media(k){if(!k)return'';if(mediaCache[k]==null){var el=document.querySelector('script[data-media="'+k+'"]');mediaCache[k]=el?el.textContent.replace(/\s+/g,''):'';}return mediaCache[k];}
@@ -615,7 +623,7 @@ return h+nextBtn(ok);}
 
 function vLine(it,li,mode){var L=S.L,ln=it.lines[li],col=M.speakers[S.sec+'|'+ln.sp]||M.speakers[ln.sp]||'#555',toks=ln.text.split(' ');
 var ac='';if(mode==='read')ac=(ln.t?'<button class="ib" data-act="seg" data-arg="'+li+'" data-seg="l'+li+'" aria-label="이 줄만 듣기">▶</button>':'')+'<button class="ib'+(L.sents[li]?' on':'')+'" data-act="sq" data-arg="'+li+'" aria-label="해석 보기" aria-pressed="'+(L.sents[li]?'true':'false')+'">?</button>';else if(ln.t)ac='<button class="ib" data-act="seg" data-arg="'+li+'" data-seg="c'+li+'" aria-label="이 줄만 듣기">▶</button>';
-var h='<div class="ln" data-line="'+li+'"><div class="lh"><span class="who" style="color:'+esc(col)+'">'+esc(ln.sp)+':</span><span class="ac">'+ac+'</span></div><span class="tx">';
+var h='<div class="ln" data-line="'+li+'"><div class="lh"><span class="who" style="--sc:'+esc(col)+'">'+esc(ln.sp)+':</span><span class="ac">'+ac+'</span></div><span class="tx">';
 toks.forEach(function(tok,ti){var hit=lookup(it,tok),c=core(tok);
 if(mode==='cloze'&&c&&L.blanks[li+':'+ti]){var open=!!L.open[li+':'+ti];var pre=tok.slice(0,tok.indexOf(c)),post=tok.slice(tok.indexOf(c)+c.length);h+=esc(pre)+'<button class="blank'+(open?' open':'')+'" data-act="blank" data-arg="'+li+':'+ti+'" aria-label="빈칸 열기">'+esc(c)+'</button>'+esc(post)+' ';return;}
 if(mode==='read'&&c)h+='<span class="tk'+(hit?' v':'')+(L.words[c]?' on':'')+'" data-act="tok" data-arg="'+li+':'+ti+'" role="button" tabindex="0">'+esc(tok)+'</span> ';else h+=esc(tok)+' ';});

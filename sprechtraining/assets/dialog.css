@@ -82,3 +82,5 @@ mark.sl{background:linear-gradient(transparent 58%,var(--hl) 58%);color:inherit;
 .g-std span{font-family:var(--f-serif);font-size:14.5px;color:var(--text-s);line-height:1.5}
 .glist .rde{font-family:var(--f-serif);font-size:17px;color:var(--text);line-height:1.4}
 .glist .rko{font-size:14px;color:var(--text-s);line-height:1.5;word-break:keep-all}
+/* 다크 모드: 가려진 대사 위 안내 글씨가 어두운 바탕에서도 읽히도록 */
+html[data-theme="dark"] .turn.is-hidden::after{background:rgba(20,24,30,.8);color:#E3E6F0}
