@@ -26,7 +26,7 @@
 </script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>SODA Lehrwerk · Sophia Deutsch Akademie</title>
-<meta name="description" content="Sophia Deutsch Akademie의 독일어 학습 자료 모음. 문법, 독해, 듣기, 전치사, 동사와 전치사 결합, 명사와 동사 연어를 한곳에서 열 수 있어요.">
+<meta name="description" content="Sophia Deutsch Akademie의 독일어 학습 자료 모음. 문법, 독해, 듣기, 전치사, 동사와 전치사 결합, 명사와 동사 연어, Goethe·telc 모의고사를 한곳에서 열 수 있어요.">
 <meta name="theme-color" content="#FAFAF8">
 <meta name="color-scheme" content="light">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -183,17 +183,20 @@ h1:focus{outline:none}
 #inhalt .cat .grid.one .tile .ttl{font-size:clamp(26px,3vw,36px)}
 #inhalt .cat .grid.one .tile{justify-content:flex-start}
 #inhalt .cat .tile.soon{background:transparent}
+#inhalt .cat.zert{grid-column:1/-1}
+#inhalt .cat.zert .grid{flex-direction:row;flex-wrap:wrap}
+#inhalt .cat.zert .grid li{flex:1 1 240px}
 @media (max-width:1000px){
   #inhalt .side-r{grid-template-columns:repeat(2,1fr)}
-  #inhalt .cat:last-child{grid-column:1/-1}
-  #inhalt .cat:last-child .grid{flex-direction:row;flex-wrap:wrap}
-  #inhalt .cat:last-child .grid li{flex:1 1 220px}
+  #inhalt .cat:nth-child(n+3){grid-column:1/-1}
+  #inhalt .cat:nth-child(n+3) .grid{flex-direction:row;flex-wrap:wrap}
+  #inhalt .cat:nth-child(n+3) .grid li{flex:1 1 220px}
 }
 @media (max-width:700px){
   #inhalt .side-main{grid-template-columns:1fr;grid-template-areas:"brand" "title" "info"}
   #inhalt .lead{justify-self:start;text-align:left;margin-top:14px;padding:0}
   #inhalt .side-r{grid-template-columns:1fr;gap:16px}
-  #inhalt .cat:last-child .grid{flex-direction:column}
+  #inhalt .cat:nth-child(n+3) .grid{flex-direction:column}
   #inhalt .big{font-size:clamp(52px,15vw,96px)}
   #inhalt .big span{display:block}
   #inhalt .big .t1{margin:0}
@@ -242,7 +245,7 @@ html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visi
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
   </div>
-  <div class="cover-foot"><span>Innovative learning beyond the traditional</span><span>6 Lernbereiche</span></div>
+  <div class="cover-foot"><span>Innovative learning beyond the traditional</span><span>7 Lernbereiche</span></div>
 </main>
 
 <section id="inhalt" class="view" aria-label="목차" hidden>
@@ -311,6 +314,23 @@ html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visi
 <li><a class="tile" href="redemittel/" style="--i:8">
           <span class="lab">Alltagsredemittel</span><b class="ttl">회화 패턴과 반응 표현</b><span class="dsc">플래시카드 학습</span>
           <span class="tile-foot"><span class="meta">A1–B2 · 279장</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </a></li>
+        </ul>
+      </section>
+      <section class="cat zert" aria-labelledby="cat-zertifikat">
+        <header class="cat-h"><h2 id="cat-zertifikat">SODA Zertifikat</h2></header>
+        <ul class="grid three">
+        <li><a class="tile" href="zertifikat/goethe-b1/" style="--i:9">
+          <span class="lab">Goethe-Zertifikat B1</span><b class="ttl">Goethe B1 모의고사</b><span class="dsc">페이퍼 시험과 디지털 시험</span>
+          <span class="tile-foot"><span class="meta">Modelltest 10개</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </a></li>
+<li><a class="tile" href="zertifikat/goethe-b2/" style="--i:10">
+          <span class="lab">Goethe-Zertifikat B2</span><b class="ttl">Goethe B2 모의고사</b><span class="dsc">페이퍼 시험과 디지털 시험</span>
+          <span class="tile-foot"><span class="meta">Modelltest 4개</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </a></li>
+<li><a class="tile" href="zertifikat/telc-b2/" style="--i:11">
+          <span class="lab">telc Deutsch B2</span><b class="ttl">telc B2 모의고사</b><span class="dsc">페이퍼 시험과 디지털 시험</span>
+          <span class="tile-foot"><span class="meta">Modelltest 5개</span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
         </ul>
       </section>
