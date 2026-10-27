@@ -1,6 +1,6 @@
-# SODA Zertifikat
+# SODA Modelltest
 
-Goethe와 telc 모의고사(Modelltest) 세 묶음입니다. 메인 목차의 「SODA Zertifikat」 묶음에서 열립니다. 각 폴더는 통합 전 저장소와 내용이 같고, 폴더마다 표지, 응시 방식(페이퍼·디지털), Modelltest 목록으로 이어지는 자기 목차 페이지(`index.html`)를 가집니다.
+Goethe와 telc 모의고사(Modelltest) 세 묶음입니다. 메인 목차의 「SODA Modelltest」 묶음에서 열립니다. 각 폴더는 통합 전 저장소와 내용이 같고, 폴더마다 표지, 응시 방식(페이퍼·디지털), Modelltest 목록으로 이어지는 자기 목차 페이지(`index.html`)를 가집니다.
 
 | 폴더 | 통합 전 저장소 | 내용 |
 |---|---|---|

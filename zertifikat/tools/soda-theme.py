@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SODA Zertifikat: 다크 모드 스위치와 목차 버튼을 HTML 파일에 넣습니다.
+"""SODA Modelltest: 다크 모드 스위치와 목차 버튼을 HTML 파일에 넣습니다.
 
 Lehrwerk의 다른 앱과 같은 부품입니다.
   - 오른쪽 위 다크 모드 스위치 (기본 다크, 선택은 localStorage 'soda-theme' 하나를 모든 앱이 함께 씁니다)

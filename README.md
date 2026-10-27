@@ -19,7 +19,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `zertifikat/goethe-b2/` | Goethe B2 모의고사 | Modelltest 4개, 페이퍼와 디지털 |
 | `zertifikat/telc-b2/` | telc B2 모의고사 | Modelltest 5개, 페이퍼와 디지털 |
 
-루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grundlagen / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 Training 묶음에 들어 있어요. 그 아래에 전체 너비의 「SODA Zertifikat」 묶음이 있고, Goethe B1, Goethe B2, telc B2 모의고사 세 항목이 들어 있습니다. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
+루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grundlagen / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 Training 묶음에 들어 있어요. 그 아래에 전체 너비의 「SODA Modelltest」 묶음이 있고, Goethe B1, Goethe B2, telc B2 모의고사 세 항목이 들어 있습니다. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
 
 ## 웹 주소로 열기 (GitHub Pages)
 
