@@ -3246,15 +3246,15 @@ function makeLevel(L, shell) {
     };
   }
   function goalPicker(t) {
-    return '<div class="goal"><div class="presets">' + [35, 70, 105, 140].map(function (p) { return '<button type="button" class="chip" data-p="' + p + '">' + p + '개</button>'; }).join('') + '</div>' +
-      '<div class="goalrow"><input type="range" id="goal-range" min="14" max="210" step="1" value="' + t + '"><input type="number" id="goal-num" min="14" max="210" value="' + t + '"><span>개 / 주</span></div>' +
+    return '<div class="goal"><div class="presets">' + [70, 105, 140, 210, 280, 420].map(function (p) { return '<button type="button" class="chip" data-p="' + p + '">' + p + '개</button>'; }).join('') + '</div>' +
+      '<div class="goalrow"><input type="range" id="goal-range" min="14" max="700" step="1" value="' + t + '"><input type="number" id="goal-num" min="14" max="700" value="' + t + '"><span>개 / 주</span></div>' +
       '<div class="goalinfo" id="goal-info"></div></div>';
   }
-  function readGoal() { var v = parseInt(document.getElementById('goal-num').value); return Math.max(14, Math.min(210, isNaN(v) ? 70 : v)); }
+  function readGoal() { var v = parseInt(document.getElementById('goal-num').value); return Math.max(14, Math.min(700, isNaN(v) ? 70 : v)); }
   function bindGoal(t, infoFn) {
     var r = document.getElementById('goal-range'), n = document.getElementById('goal-num');
     var upd = function (v) {
-      v = Math.max(14, Math.min(210, parseInt(v) || 14)); r.value = v; n.value = v;
+      v = Math.max(14, Math.min(700, parseInt(v) || 14)); r.value = v; n.value = v;
       document.querySelectorAll('.presets .chip').forEach(function (c) { c.classList.toggle('on', parseInt(c.dataset.p) === v); });
       document.getElementById('goal-info').innerHTML = goalInfo(v);
     };
