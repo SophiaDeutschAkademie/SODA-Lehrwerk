@@ -3,7 +3,7 @@
    goatcounter.com 에서 만든 사이트 코드를 아래 CODE 에 넣으면 집계가 시작된다.
    CODE 가 비어 있으면 아무 일도 하지 않는다. */
 (function () {
-  var CODE = '';
+  var CODE = 'sodadeutsch';
   if (!CODE) return;
   try {
     if (navigator.doNotTrack === '1') return;
