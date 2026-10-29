@@ -1,0 +1,390 @@
+{
+  "n": "29",
+  "level": "B1",
+  "goals": [
+    "앞 명사의 성·수와 관계문 속 역할로 관계대명사를 골라요",
+    "관계문의 동사를 맨 끝에 놓고 앞뒤에 쉼표를 찍어요",
+    "전치사 + 관계대명사와 소유의 dessen·deren을 써요",
+    "alles·nichts·최상급·문장 전체 뒤의 was, 장소의 wo, 일반적인 사람의 wer를 써요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Der Bäcker, ___ an der Ecke seinen Laden hat, backt das beste Brot der Stadt.",
+      "o": [
+        "der",
+        "den",
+        "dem",
+        "dessen"
+      ],
+      "a": 0,
+      "e": "남성 명사 Bäcker가 관계문의 주어(가게를 가진 사람)라서 1격 der예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Jacke, ___ du mir geschenkt hast, ist wirklich warm.",
+      "ko": "네가 선물해 준 재킷은 정말 따뜻해요.",
+      "h": "Jacke · 여성",
+      "a": [
+        "die"
+      ],
+      "e": "schenken의 목적어(4격)이고 여성이라서 die예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Das Mädchen, ___ wir den Weg erklärt haben, kam aus Spanien.",
+      "o": [
+        "dem",
+        "das",
+        "den",
+        "der"
+      ],
+      "a": 0,
+      "e": "erklären은 '누구에게(3격) 무엇을(4격)'이에요. 길을 설명받은 사람이라서 3격, 중성 → dem."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Nachbarn, ___ wir beim Umzug geholfen haben, haben uns zum Essen eingeladen.",
+      "ko": "이사할 때 우리가 도와준 이웃들이 우리를 식사에 초대했어요.",
+      "h": "Nachbarn · 복수",
+      "a": [
+        "denen"
+      ],
+      "e": "helfen은 3격 동사예요. 3격 복수 관계대명사는 denen이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Koffer, ___ ich am Flughafen verloren habe, ist wieder da.",
+      "ko": "내가 공항에서 잃어버린 여행 가방이 다시 돌아왔어요.",
+      "h": "Koffer · 남성",
+      "a": [
+        "den"
+      ],
+      "e": "verlieren의 목적어(4격), 남성 → den."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "대학교 옆에 있는 카페는 늘 붐벼요.",
+      "a": [
+        "Das Café, das neben der Uni liegt, ist immer voll."
+      ],
+      "e": "관계문은 명사 바로 뒤에서 쉼표로 감싸고, 동사 liegt가 맨 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Kollegin, ___ dieser Schreibtisch gehört, ist heute krank.",
+      "ko": "이 책상의 주인인 동료는 오늘 아파요.",
+      "h": "Kollegin · 여성",
+      "a": [
+        "der"
+      ],
+      "e": "gehören은 3격 동사예요. 여성 3격 → der."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Das ist der Kollege, ___ ich jeden Morgen zur Arbeit fahre.",
+      "o": [
+        "mit dem",
+        "mit den",
+        "dem",
+        "mit der"
+      ],
+      "a": 0,
+      "e": "'~와 함께'는 mit + 3격이에요. 남성 3격 → mit dem."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das Dorf, in ___ meine Großmutter aufgewachsen ist, liegt in den Bergen.",
+      "ko": "할머니가 자란 마을은 산속에 있어요.",
+      "h": "Dorf · 중성",
+      "a": [
+        "dem"
+      ],
+      "e": "in(위치)은 3격이에요. 중성 3격 → in dem."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das ist ein Thema, über ___ wir lange diskutiert haben.",
+      "ko": "이것은 우리가 오래 토론한 주제예요.",
+      "h": "Thema · 중성",
+      "a": [
+        "das"
+      ],
+      "e": "diskutieren über + 4격이에요. 중성 4격 → über das."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich kenne eine Familie, ___ Kinder alle ein Instrument spielen.",
+      "o": [
+        "deren",
+        "dessen",
+        "die",
+        "denen"
+      ],
+      "a": 0,
+      "e": "앞의 명사 Familie가 여성이라서 소유는 deren이에요. 뒤의 Kinder와는 상관없어요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Mein Nachbar, ___ Katze oft in unseren Garten kommt, ist sehr nett.",
+      "ko": "고양이가 자주 우리 정원에 들어오는 이웃은 아주 친절해요.",
+      "h": "Nachbar · 남성",
+      "a": [
+        "dessen"
+      ],
+      "e": "남성 명사의 소유는 dessen이에요. 뒤의 Katze가 여성이어도 dessen이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Er hat mir nichts erzählt, ___ ich nicht schon wusste.",
+      "o": [
+        "was",
+        "das",
+        "dass",
+        "wo"
+      ],
+      "a": 0,
+      "e": "nichts 뒤의 관계사는 was예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Im Sommer fahre ich nach Salzburg, ___ mein Onkel ein kleines Hotel hat.",
+      "o": [
+        "wo",
+        "was",
+        "das",
+        "in das"
+      ],
+      "a": 0,
+      "e": "도시 이름 뒤에서 장소를 말할 때는 wo를 써요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ morgen mitfahren will, muss sich bis heute Abend melden.",
+      "ko": "내일 같이 가고 싶은 사람은 누구든 오늘 저녁까지 연락해야 해요.",
+      "h": "",
+      "a": [
+        "Wer"
+      ],
+      "e": "'~하는 사람은 누구나'는 wer예요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "역 옆에 문을 연 빵집 알아?",
+      "a": [
+        "Kennst du die Bäckerei, die neben dem Bahnhof aufgemacht hat?"
+      ],
+      "e": "관계대명사 die가 주어예요. 현재완료의 보조 동사 hat이 맨 끝이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Die Bücher, die mein Vater mir geschenkt ___, sind alle sehr alt.",
+      "ko": "아버지가 나에게 선물해 준 책들은 모두 아주 오래됐어요.",
+      "h": "haben",
+      "a": [
+        "hat"
+      ],
+      "e": "관계문의 동사는 관계문의 주어(mein Vater)에 맞춰요. 앞의 Bücher(복수)가 아니에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Der Mann, ___ ich gestern im Park begegnet bin, war mein alter Mathelehrer.",
+      "o": [
+        "dem",
+        "den",
+        "der",
+        "dessen"
+      ],
+      "a": 0,
+      "e": "begegnen은 sein과 쓰지만 3격 동사예요. 남성 3격 → dem."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Das ist der Job, ___ ich mich schon lange interessiere.",
+      "o": [
+        "für den",
+        "für dem",
+        "an dem",
+        "für die"
+      ],
+      "a": 0,
+      "e": "sich interessieren für + 4격이에요. 남성 4격 → für den."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Die Freunde, ___ ___ ich am Samstag gewartet habe, sind nicht gekommen.",
+      "ko": "토요일에 내가 기다린 친구들은 오지 않았어요.",
+      "h": [
+        "warten + 전치사",
+        "Freunde · 복수"
+      ],
+      "a": [
+        [
+          "auf"
+        ],
+        [
+          "die"
+        ]
+      ],
+      "e": "warten auf + 4격이에요. 복수 4격 → auf die."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "휴대폰이 울린 학생은 얼굴이 새빨개졌어요.",
+      "a": [
+        "Der Student, dessen Handy klingelte, wurde ganz rot."
+      ],
+      "e": "dessen Handy가 관계문을 시작하고 동사 klingelte가 끝이에요.<br>관계문 뒤에 주문장의 동사 wurde가 와요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Sie hat endlich eine Wohnung gefunden, ___ uns alle sehr freut.",
+      "o": [
+        "was",
+        "das",
+        "die",
+        "dass"
+      ],
+      "a": 0,
+      "e": "앞 문장 전체(집을 구한 일)를 받을 때는 was예요.<br>die라면 Wohnung이 우리를 기쁘게 한다는 뜻이 돼요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Das war das Spannendste, ___ ich je gesehen habe.",
+      "ko": "그건 내가 지금까지 본 것 중에 가장 흥미진진한 것이었어요.",
+      "h": "",
+      "a": [
+        "was"
+      ],
+      "e": "명사로 쓴 최상급 뒤에는 was를 써요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "전에 여기 살던 남자를 어제 봤어요.",
+      "a": [
+        "Ich habe gestern den Mann gesehen, der früher hier gewohnt hat.",
+        "Gestern habe ich den Mann gesehen, der früher hier gewohnt hat.",
+        "Ich habe den Mann gestern gesehen, der früher hier gewohnt hat",
+        "Den Mann, der früher hier gewohnt hat, habe ich gestern gesehen",
+        "Ich habe gestern den Mann gesehen, der hier früher gewohnt hat",
+        "Gestern habe ich den Mann gesehen, der hier früher gewohnt hat"
+      ],
+      "e": "주문장 끝에 gesehen만 남으면 관계문을 그 뒤로 빼는 게 자연스러워요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Kennst du die Frau, dessen Tochter in meiner Klasse ist?",
+        "Das ist alles, was ich dazu sagen kann.",
+        "Der Verein, bei dem mein Bruder Mitglied ist, sucht neue Trainer.",
+        "Die Kinder, denen der Ball gehört, spielen im Hof."
+      ],
+      "a": 0,
+      "e": "앞의 명사 Frau가 여성이라서 deren이어야 해요 — die Frau, deren Tochter …"
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Gestern habe ich eine alte Freundin getroffen, ___ ich seit der Schulzeit nicht mehr gesehen hatte. Sie erzählte mir von ihrem Mann, ___ Eltern aus Portugal kommen, und von der Firma, für ___ sie jetzt arbeitet. Es war ein Abend, ___ ich nie vergessen werde.",
+      "ko": "어제 학교 다닐 때 이후로 못 본 옛 친구를 만났어요. 친구는 부모님이 포르투갈 출신인 남편 이야기와 지금 일하는 회사 이야기를 해 줬어요. 절대 잊지 못할 저녁이었어요.",
+      "h": [
+        "Freundin · 여성",
+        "Mann · 남성",
+        "Firma · 여성",
+        "Abend · 남성"
+      ],
+      "a": [
+        [
+          "die"
+        ],
+        [
+          "dessen"
+        ],
+        [
+          "die"
+        ],
+        [
+          "den"
+        ]
+      ],
+      "e": "sehen의 목적어 → die, 남편의 부모 → dessen, für + 4격 → die, vergessen의 목적어 → den."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "두 문장을 관계문으로 바르게 이은 것은?\nIch habe eine Kollegin. Auf ihren Rat kann ich mich immer verlassen.",
+      "o": [
+        "Ich habe eine Kollegin, auf deren Rat ich mich immer verlassen kann.",
+        "Ich habe eine Kollegin, auf dessen Rat ich mich immer verlassen kann.",
+        "Ich habe eine Kollegin, deren Rat ich mich immer verlassen kann.",
+        "Ich habe eine Kollegin, auf deren Rat kann ich mich immer verlassen."
+      ],
+      "a": 0,
+      "e": "전치사 auf가 맨 앞, 소유는 여성 → deren, 동사 kann은 맨 끝이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Endlich habe ich eine Stelle in Berlin bekommen – genau das, ___ ich so lange gewartet habe.",
+      "ko": "드디어 베를린에 일자리를 얻었어요. 바로 내가 그렇게 오래 기다려 온 일이에요.",
+      "h": "warten + 전치사",
+      "a": [
+        "worauf"
+      ],
+      "e": "das·etwas·alles 뒤에서 전치사가 필요하면 wo(r) + 전치사를 써요.<br>warten auf → worauf."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "지난달에 산 자전거가 벌써 고장 났어요.",
+      "a": [
+        "Das Fahrrad, das ich mir letzten Monat gekauft habe, ist schon kaputt."
+      ],
+      "e": "das가 kaufen의 목적어(중성 4격)예요. mir는 '나를 위해'라는 3격이에요.<br>관계문 뒤에 주문장 동사 ist가 와요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "Das Konzert, ___ wir uns so lange gefreut hatten, fiel leider aus.",
+      "o": [
+        "auf das",
+        "über das",
+        "auf dem",
+        "für das"
+      ],
+      "a": 0,
+      "e": "앞으로 있을 일을 기다리며 기뻐하는 것은 sich freuen auf + 4격이에요. 중성 → auf das.<br>über는 이미 일어난 일에 대한 기쁨이라서, 취소된 콘서트와 맞지 않아요."
+    }
+  ]
+}

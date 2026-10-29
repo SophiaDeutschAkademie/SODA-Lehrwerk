@@ -1,0 +1,404 @@
+{
+  "n": "17",
+  "level": "A2",
+  "goals": [
+    "인칭에 맞는 재귀대명사를 써요 — 3인칭과 존칭은 sich",
+    "다른 4격 목적어가 있으면 재귀대명사를 3격으로 바꿔요",
+    "재귀대명사를 알맞은 자리에 놓고, '서로'의 뜻을 구별해요",
+    "sich freuen auf/über처럼 전치사와 함께 쓰는 재귀동사를 써요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Das Taxi wartet schon. Du musst ___ beeilen!",
+      "o": [
+        "dich",
+        "dir",
+        "sich",
+        "du"
+      ],
+      "a": 0,
+      "e": "sich beeilen은 늘 재귀대명사와 써요.<br>다른 4격 목적어가 없으니 du → dich예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Nach der Arbeit erholt ___ mein Opa im Garten.",
+      "o": [
+        "sich",
+        "ihn",
+        "ihm",
+        "er"
+      ],
+      "a": 0,
+      "e": "주어(mein Opa) 자신을 가리키는 3인칭 재귀대명사는 sich예요.<br>ihn이면 다른 남자가 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Er ___ sich bei uns für die Einladung.",
+      "ko": "그는 초대해 줘서 고맙다고 우리에게 인사해요.",
+      "h": "bedanken",
+      "a": [
+        "bedanken"
+      ],
+      "e": "sich bedanken bei + 3격(누구에게) für + 4격(무엇을)이에요.<br>er → bedankt."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Im Winter müsst ihr ___ warm anziehen.",
+      "ko": "겨울에는 너희 옷을 따뜻하게 입어야 해.",
+      "h": "ihr",
+      "a": [
+        "euch"
+      ],
+      "e": "다른 4격 목적어가 없으니 재귀대명사는 4격이에요.<br>ihr → euch."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Entschuldigung, ich habe ___ geirrt.",
+      "ko": "죄송해요, 제가 착각했어요.",
+      "h": "",
+      "a": [
+        "mich"
+      ],
+      "e": "sich irren은 늘 재귀로 써요.<br>ich → mich, 재귀동사의 현재완료는 haben이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Hier ist Kuchen. Bitte bedienen Sie ___! (마음껏 드세요)",
+      "o": [
+        "sich",
+        "Sich",
+        "Ihnen",
+        "Sie"
+      ],
+      "a": 0,
+      "e": "존칭 Sie의 재귀대명사는 sich예요.<br>Sie는 대문자로 쓰지만 sich는 언제나 소문자예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wäschst du ___ vor dem Essen die Hände?",
+      "ko": "밥 먹기 전에 손 씻니?",
+      "h": "",
+      "a": [
+        "dir"
+      ],
+      "e": "다른 4격 목적어(die Hände)가 있으니 재귀대명사는 3격이에요.<br>du → dir."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그는 아침마다 욕실에서 면도를 해요.",
+      "a": [
+        "Jeden Morgen rasiert er sich im Bad.",
+        "Er rasiert sich jeden Morgen im Bad.",
+        "Im Bad rasiert er sich jeden Morgen",
+        "Er rasiert sich im Bad jeden Morgen"
+      ],
+      "e": "주어가 대명사(er)면 재귀대명사 sich는 주어 바로 뒤에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Heute ziehe ich ___ den Pullover an.",
+      "o": [
+        "mir",
+        "mich",
+        "mein",
+        "sich"
+      ],
+      "a": 0,
+      "e": "다른 4격 목적어(den Pullover)가 있으니 재귀대명사는 3격이에요 — ich → mir."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Mein Sohn wünscht ___ zum Geburtstag einen Hund. (아들 자신이 갖고 싶어 해요)",
+      "o": [
+        "sich",
+        "ihm",
+        "ihn",
+        "mir"
+      ],
+      "a": 0,
+      "e": "sich etwas wünschen은 3격 재귀대명사와 써요.<br>3인칭 주어는 3격도 sich예요. ihm이면 다른 사람이 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Merkt ___ bitte die Telefonnummer!",
+      "ko": "너희, 전화번호 꼭 기억해 둬!",
+      "h": "ihr",
+      "a": [
+        "euch"
+      ],
+      "e": "sich etwas merken은 3격 재귀대명사예요.<br>ihr의 3격도 euch라서 모양이 같아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Anna und Tom kennen ___ seit der Schule.",
+      "ko": "안나와 톰은 학창 시절부터 서로 알아요.",
+      "h": "",
+      "a": [
+        "sich"
+      ],
+      "e": "주어가 여럿이면 sich가 '서로'라는 뜻이 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Interessierst du dich ___ Geschichte?",
+      "o": [
+        "für",
+        "an",
+        "auf",
+        "über"
+      ],
+      "a": 0,
+      "e": "sich interessieren für + 4격(~에 관심이 있다)이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir freuen uns schon ___ die Sommerferien.",
+      "ko": "우리는 벌써 여름방학이 기다려져요.",
+      "h": "앞으로의 일",
+      "a": [
+        "auf"
+      ],
+      "e": "아직 오지 않은 일을 기대할 때는 sich freuen auf + 4격이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Unsere Nachbarin kümmert sich ___ unsere Katze.",
+      "ko": "이웃집 아주머니가 우리 고양이를 돌봐 줘요.",
+      "h": "",
+      "a": [
+        "um"
+      ],
+      "e": "sich kümmern um + 4격(~을 돌보다)이에요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "오늘 나는 사촌 언니와 만나요.",
+      "a": [
+        "Heute treffe ich mich mit meiner Cousine.",
+        "Ich treffe mich heute mit meiner Cousine.",
+        "Mit meiner Cousine treffe ich mich heute",
+        "Ich treffe mich mit meiner Cousine heute"
+      ],
+      "e": "sich treffen mit + 3격이에요.<br>heute가 앞에 오면 동사 → 주어 ich → 재귀대명사 mich 순서예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Nach dem Sport dusche ich, wasche ___ die Haare und ziehe ___ an.",
+      "ko": "운동이 끝나면 샤워하고, 머리를 감고, 옷을 입어요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "mir",
+        "mich"
+      ],
+      "e": "die Haare라는 4격이 따로 있으니 첫 번째는 3격 mir예요.<br>anziehen 뒤에 다른 4격이 없으니 두 번째는 4격 mich예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'오늘 우리는 일찍 작별 인사를 해요.'",
+      "o": [
+        "Heute verabschieden wir uns früh.",
+        "Heute verabschieden uns wir früh.",
+        "Heute wir verabschieden uns früh.",
+        "Heute verabschieden wir früh uns."
+      ],
+      "a": 0,
+      "e": "도치 문장에서 동사는 두 번째, 주어가 대명사면 재귀대명사는 주어 바로 뒤예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich freue mich ___ deine Postkarte aus Spanien. Und ich freue mich schon ___ unser Treffen im Mai.",
+      "ko": "스페인에서 보낸 네 엽서 받아서 기뻐. 그리고 5월에 만나는 게 벌써 기다려져.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "über",
+        "auf"
+      ],
+      "e": "이미 받은 엽서를 기뻐할 때는 über, 아직 오지 않은 만남을 기대할 때는 auf예요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리는 휴가 때 잘 쉬었어요.",
+      "a": [
+        "Wir haben uns im Urlaub gut erholt.",
+        "Im Urlaub haben wir uns gut erholt.",
+        "Wir haben uns gut im Urlaub erholt",
+        "Gut haben wir uns im Urlaub erholt"
+      ],
+      "e": "재귀동사의 현재완료는 haben이에요.<br>재귀대명사 uns는 주어 대명사 바로 뒤, 과거분사 erholt는 끝이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Paul entschuldigt sich ___ ___ Lehrerin ___ die Verspätung.",
+      "ko": "파울은 선생님께 늦은 것을 사과드려요.",
+      "h": [
+        "누구에게",
+        "Lehrerin · 여성",
+        "무엇을"
+      ],
+      "a": [
+        "bei",
+        "der",
+        "für"
+      ],
+      "e": "sich entschuldigen bei + 3격(누구에게) für + 4격(무엇을)이에요.<br>bei der Lehrerin · für die Verspätung."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Nach dem Streit sprechen die Nachbarn nicht mehr ___.",
+      "o": [
+        "miteinander",
+        "mitsich",
+        "sich mit",
+        "einander mit"
+      ],
+      "a": 0,
+      "e": "'서로 함께'는 전치사와 einander를 한 단어로 써요 — miteinander."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Das Auto kostet 50.000 Euro. Kannst du ___ das Auto wirklich leisten?",
+      "o": [
+        "dir",
+        "dich",
+        "sich",
+        "dein"
+      ],
+      "a": 0,
+      "e": "sich etwas leisten은 3격 재귀대명사와 써요.<br>4격 목적어(das Auto)가 따로 있어서 du → dir예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Erinnert ihr ___ noch ___ unseren Mathelehrer?",
+      "ko": "너희 우리 수학 선생님 아직 기억해?",
+      "h": [
+        "ihr",
+        "전치사"
+      ],
+      "a": [
+        "euch",
+        "an"
+      ],
+      "e": "sich erinnern an + 4격이에요.<br>ihr → euch, an unseren Mathelehrer."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Ich habe mir gestern den Arm gebrochen.",
+        "Wir haben uns lange über das Konzert unterhalten.",
+        "Er hat sich eine Jacke gekauft.",
+        "Hast du dir schon für den Kurs angemeldet?"
+      ],
+      "a": 3,
+      "e": "sich anmelden에는 다른 4격 목적어가 없으니 재귀대명사가 4격이에요 — Hast du dich schon für den Kurs angemeldet?<br>den Arm·eine Jacke가 있는 문장은 3격 mir·sich가 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Morgens wasche ich ___ das Gesicht, ziehe ___ schnell an und beeile ___. Im Bus ärgere ich mich ___ die Musik meines Nachbarn.",
+      "ko": "아침에 나는 세수를 하고 얼른 옷을 입고 서둘러요. 버스에서는 옆자리 사람의 음악 때문에 짜증이 나요.",
+      "h": [
+        "",
+        "",
+        "",
+        "전치사"
+      ],
+      "a": [
+        "mir",
+        "mich",
+        "mich",
+        "über"
+      ],
+      "e": "das Gesicht가 있는 waschen은 3격 mir, 다른 4격이 없는 anziehen·beeilen은 mich예요.<br>sich ärgern über + 4격이에요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'파울은 아들에게 재킷을 입혀요.'",
+      "o": [
+        "Paul zieht seinem Sohn die Jacke an.",
+        "Paul zieht sich seinem Sohn die Jacke an.",
+        "Paul zieht sich die Jacke an.",
+        "Paul zieht seinen Sohn die Jacke an."
+      ],
+      "a": 0,
+      "e": "다른 사람에게 입히면 재귀대명사를 쓰지 않아요.<br>입는 사람은 3격(seinem Sohn), 옷은 4격(die Jacke)이에요. sich die Jacke는 파울 자신이 입는 거예요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "월요일에 나는 언니의 아이들을 돌봐야 해요.",
+      "a": [
+        "Am Montag muss ich mich um die Kinder meiner Schwester kümmern.",
+        "Ich muss mich am Montag um die Kinder meiner Schwester kümmern.",
+        "Um die Kinder meiner Schwester muss ich mich am Montag kümmern.",
+        "Ich muss mich um die Kinder meiner Schwester am Montag kümmern"
+      ],
+      "e": "화법조동사 muss는 두 번째, kümmern은 끝이에요.<br>mich는 주어 ich 바로 뒤, um + 4격 die Kinder 뒤에 2격 meiner Schwester가 와요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Heute Abend sehe ich ___ das Fußballspiel an. Danach lege ich ___ sofort ins Bett.",
+      "ko": "오늘 저녁에 축구 경기를 볼 거예요. 그다음에는 바로 침대에 누울 거예요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "mir",
+        "mich"
+      ],
+      "e": "sich etwas ansehen은 3격이라서 mir예요(4격 das Fußballspiel이 따로 있어요).<br>sich legen에는 다른 4격이 없으니 mich예요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'고양이 두 마리가 서로의 털을 핥아 줘요.'를 '서로'의 뜻이 분명하게 나타낸 문장은?",
+      "o": [
+        "Die Katzen putzen sich gegenseitig.",
+        "Die Katzen putzen sich.",
+        "Die Katzen putzen gegenseitig.",
+        "Die Katzen putzen sich einander."
+      ],
+      "a": 0,
+      "e": "sich만 쓰면 '각자 자기 몸을'인지 '서로'인지 분명하지 않아요.<br>gegenseitig를 sich와 함께 쓰면 '서로'가 분명해요. einander는 sich 없이 써요."
+    }
+  ]
+}

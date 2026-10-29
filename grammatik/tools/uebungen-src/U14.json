@@ -1,0 +1,407 @@
+{
+  "n": "14",
+  "level": "A2",
+  "goals": [
+    "4격 전치사와 3격 전치사 뒤에서 관사와 대명사를 격에 맞게 바꿔요",
+    "nach와 zu, zu Hause와 nach Hause를 구별해요",
+    "zum·zur·beim·vom 같은 축약형을 써요",
+    "사람은 전치사 + 대명사로, 사물은 da(r)-·wo(r)-로 말해요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Kinder rennen ___ Wald. (숲을 가로질러)",
+      "o": [
+        "durch den",
+        "durch dem",
+        "durch der",
+        "durch die"
+      ],
+      "a": 0,
+      "e": "durch는 늘 4격이에요.<br>der Wald(남성) → durch den Wald."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Blumen sind für ___ Oma.",
+      "ko": "이 꽃은 우리 할머니 드릴 거예요.",
+      "h": "mein- · Oma · 여성",
+      "a": [
+        "meine"
+      ],
+      "e": "für는 늘 4격이에요.<br>여성 4격은 1격과 같아서 meine Oma예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Am Samstag spielt unsere Mannschaft gegen ___ Team aus Köln.",
+      "ko": "토요일에 우리 팀은 쾰른 팀과 경기해요.",
+      "h": "Team · 중성 · 정관사",
+      "a": [
+        "das"
+      ],
+      "e": "gegen은 늘 4격이에요.<br>중성 4격은 das예요. aus Köln의 aus는 3격 전치사지만 Köln은 관사 없는 도시 이름이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Mein Vater fährt nie ___ Helm Fahrrad. (헬멧 없이는 절대 안 타요)",
+      "o": [
+        "ohne",
+        "mit",
+        "durch",
+        "um"
+      ],
+      "a": 0,
+      "e": "'~ 없이'는 ohne예요.<br>ohne 뒤에 관사 없는 명사가 바로 올 때가 많아요 — ohne Helm."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Gäste stehen um ___ Grill.",
+      "ko": "손님들이 그릴을 빙 둘러서 있어요.",
+      "h": "Grill · 남성",
+      "a": [
+        "den"
+      ],
+      "e": "um이 '~을 둘러'라는 뜻일 때도 늘 4격이에요.<br>der Grill → um den Grill."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Meine Schwester arbeitet seit ___ Woche bei einer Zeitung.",
+      "ko": "우리 언니는 일주일 전부터 신문사에서 일해요.",
+      "h": "ein- · Woche · 여성",
+      "a": [
+        "einer"
+      ],
+      "e": "seit는 늘 3격이에요.<br>여성 3격 부정관사는 einer예요 — seit einer Woche."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "콘서트가 끝나면 우리는 뭘 좀 먹으러 가요.",
+      "a": [
+        "Nach dem Konzert gehen wir noch etwas essen.",
+        "Wir gehen nach dem Konzert noch etwas essen."
+      ],
+      "e": "nach dem Konzert(3격)가 맨 앞에 오면 동사 gehen이 두 번째, 주어 wir가 그 뒤에 와요.<br>essen은 gehen과 함께 끝에 놓아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Frau Weber macht mit ___ ___ einen Ausflug.",
+      "ko": "베버 선생님은 학생들과 소풍을 가요.",
+      "h": [
+        "정관사",
+        "Schüler · 복수"
+      ],
+      "a": [
+        "den",
+        "Schülern"
+      ],
+      "e": "mit는 늘 3격이에요.<br>3격 복수는 관사 den과 명사 끝 -n이 함께 가요 — mit den Schülern."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Morgen gehe ich ___ Friseur. (미용실에)",
+      "o": [
+        "zum",
+        "zur",
+        "beim",
+        "nach dem"
+      ],
+      "a": 0,
+      "e": "사람·가게로 가는 방향은 zu + 3격이에요.<br>der Friseur(남성) → zu dem → zum. nach는 도시·나라에 써요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Holst du mich ___ Bahnhof ab? (역으로 나를 데리러 와 줄래?)",
+      "o": [
+        "vom",
+        "von der",
+        "von den",
+        "vom dem"
+      ],
+      "a": 0,
+      "e": "von은 늘 3격이고, der Bahnhof(남성) → von dem → vom이에요.<br>vom 안에 이미 dem이 들어 있어서 vom dem은 틀려요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Lena bringt jeden Morgen ihren Sohn ___ Kita.",
+      "ko": "레나는 아침마다 아들을 어린이집에 데려다줘요.",
+      "h": "zu · Kita · 여성 · 축약형",
+      "a": [
+        "zur"
+      ],
+      "e": "zu는 늘 3격이고, 여성 3격 der와 합치면 zu + der → zur예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich war gestern ___ Zahnarzt.",
+      "ko": "나는 어제 치과에 갔었어요.",
+      "h": "bei · 진료받는 곳 · Zahnarzt · 남성 · 축약형",
+      "a": [
+        "beim"
+      ],
+      "e": "의사에게 가 있던 곳은 bei + 3격이에요.<br>bei + dem → beim Zahnarzt."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Mein Opa hat Geburtstag. Ich backe einen Kuchen für ___.",
+      "o": [
+        "ihn",
+        "ihm",
+        "er",
+        "sein"
+      ],
+      "a": 0,
+      "e": "für 뒤의 대명사도 4격이에요.<br>er의 4격은 ihn이에요 — für ihn."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich habe lange nichts ___ gehört. (그 남자에게서)",
+      "o": [
+        "von ihm",
+        "von ihn",
+        "von er",
+        "vom ihm"
+      ],
+      "a": 0,
+      "e": "von 뒤의 대명사는 3격이에요.<br>er의 3격은 ihm이에요 — von ihm."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Hier ist ein Stift. Du kannst ___ unterschreiben.",
+      "ko": "여기 펜이 있어요. 그걸로 서명하면 돼요.",
+      "h": "mit + 그것(사물)",
+      "a": [
+        "damit"
+      ],
+      "e": "사물(Stift)을 가리킬 때는 mit es가 아니라 da- + mit → damit이에요.",
+      "ok": "damit은 da- + mit(14과 F), 접속사가 아님"
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "나는 오늘 우산 없이 집을 나서요.",
+      "a": [
+        "Ich gehe heute ohne meinen Schirm aus dem Haus.",
+        "Heute gehe ich ohne meinen Schirm aus dem Haus.",
+        "Ohne meinen Schirm gehe ich heute aus dem Haus.",
+        "Aus dem Haus gehe ich heute ohne meinen Schirm",
+        "Ich gehe ohne meinen Schirm heute aus dem Haus"
+      ],
+      "e": "ohne + 4격(meinen Schirm), aus + 3격(dem Haus)이에요.<br>동사 gehe는 두 번째 자리예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich komme gerade aus ___ Bäckerei und bringe das Brot ___ Nachbarin.",
+      "ko": "막 빵집에서 나왔고, 빵을 이웃집 아주머니에게 가져다줘요.",
+      "h": [
+        "Bäckerei · 여성",
+        "zu · 이웃 여자 · 여성 · 축약형"
+      ],
+      "a": [
+        "der",
+        "zur"
+      ],
+      "e": "aus는 3격이라서 aus der Bäckerei예요.<br>사람에게 가져가는 방향은 zu + 3격 → zur Nachbarin이에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Ich fahre am Samstag ___ Leipzig, ___ meiner Tante.",
+      "o": [
+        "nach … zu",
+        "zu … nach",
+        "nach … bei",
+        "zu … zu"
+      ],
+      "a": 0,
+      "e": "도시로 가는 방향은 nach Leipzig, 사람에게 가는 방향은 zu meiner Tante예요.<br>bei는 이미 그 사람 집에 있을 때 써요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich arbeite heute ___ Hause. Um vier Uhr fährt mein Mann ___ Hause.",
+      "ko": "나는 오늘 집에서 일해요. 남편은 네 시에 집으로 출발해요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "zu",
+        "nach"
+      ],
+      "e": "있는 곳은 zu Hause, 가는 방향은 nach Hause예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Ich spare jeden Monat Geld. — ___ sparst du? — Für eine Reise.",
+      "o": [
+        "Wofür",
+        "Für wen",
+        "Dafür",
+        "Womit"
+      ],
+      "a": 0,
+      "e": "대답이 사물(eine Reise)이라서 wo- + für → wofür로 물어요.<br>für wen은 사람을 물을 때, dafür는 질문이 아니라 대답에 써요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Alle ___ ___ haben ein Eis bekommen.",
+      "ko": "너 말고는 모두 아이스크림을 받았어요.",
+      "h": [
+        "~ 말고는",
+        "du"
+      ],
+      "a": [
+        "außer",
+        "dir"
+      ],
+      "e": "außer(~ 말고는)는 늘 3격이에요.<br>du의 3격은 dir예요 — außer dir."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'약국은 시청 바로 맞은편에 있어요.' 바른 문장은?",
+      "o": [
+        "Die Apotheke ist direkt gegenüber dem Rathaus.",
+        "Die Apotheke ist direkt gegenüber das Rathaus.",
+        "Die Apotheke ist direkt gegenüber den Rathaus.",
+        "Die Apotheke ist direkt das Rathaus gegenüber."
+      ],
+      "a": 0,
+      "e": "gegenüber는 3격과 써요 — das Rathaus → dem Rathaus.<br>명사 뒤에 놓아도 3격이라서 dem Rathaus gegenüber라야 해요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Meine Schwester hat ein Fahrrad. Heute fahre ich ___ zum Markt und trinke danach ___ einen Kaffee. (그것을 타고 / 그녀와)",
+      "o": [
+        "damit … mit ihr",
+        "mit es … mit ihr",
+        "damit … damit",
+        "damit … mit sie"
+      ],
+      "a": 0,
+      "e": "사물(das Fahrrad)은 da- + mit → damit, 사람(meine Schwester)은 mit + 3격 대명사 → mit ihr예요.<br>mit es는 쓰지 않고, mit 뒤의 sie는 3격 ihr로 바꿔요.",
+      "ok": "damit은 da- + mit(14과 F), 접속사가 아님"
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그걸 사는 데 20유로를 냈어요.",
+      "a": [
+        "Ich habe dafür zwanzig Euro bezahlt.",
+        "Dafür habe ich zwanzig Euro bezahlt.",
+        "Zwanzig Euro habe ich dafür bezahlt.",
+        "Ich habe zwanzig Euro dafür bezahlt"
+      ],
+      "e": "dafür는 für + 그것(사물)이에요.<br>현재완료라서 habe는 두 번째, bezahlt는 끝에 와요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Seit dem Sommer wohnt Tim bei seinen Großeltern.",
+        "Mein Bruder fährt nie ohne seinem Handy weg.",
+        "Gegenüber der Schule ist ein Kiosk.",
+        "Mia fährt mit ihren Freundinnen nach Prag."
+      ],
+      "a": 1,
+      "e": "ohne는 늘 4격이에요 — ohne sein Handy.<br>seit·gegenüber·mit는 3격이고, bei seinen Großeltern도 3격 복수라서 나머지 문장은 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Seit ___ Monat fährt Ben mit ___ Fahrrad zur Arbeit. Er fährt durch ___ Stadtpark und dann ___ Rhein entlang.",
+      "ko": "벤은 한 달 전부터 자전거로 출근해요. 시립 공원을 가로지른 다음 라인강을 따라가요.",
+      "h": [
+        "ein- · Monat · 남성",
+        "Fahrrad · 중성 · 정관사",
+        "Stadtpark · 남성",
+        "Rhein · 남성"
+      ],
+      "a": [
+        "einem",
+        "dem",
+        "den",
+        "den"
+      ],
+      "e": "seit·mit는 3격 → seit einem Monat, mit dem Fahrrad.<br>durch는 4격 → durch den Stadtpark.<br>entlang은 명사 뒤에 놓고 4격을 써요 → den Rhein entlang."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "___ hast du die Konzertkarten bekommen? — Von meinem Onkel.\n___ hast du die Fahrkarte bezahlt? — Mit meiner Kreditkarte.",
+      "ko": "콘서트 표는 누구한테서 받았어? — 삼촌한테서. / 기차표는 뭘로 계산했어? — 신용카드로.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "Von wem",
+        "Womit"
+      ],
+      "e": "대답이 사람(meinem Onkel)이면 전치사 + wem → von wem이에요.<br>대답이 사물(meiner Kreditkarte)이면 wo- + 전치사 → womit이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Die Kinder bekommen von ___ Großeltern Geld für ___ Ferien.",
+      "ko": "아이들은 조부모님에게서 방학 때 쓸 돈을 받아요.",
+      "h": [
+        "ihr- · Großeltern · 복수",
+        "ihr- · Ferien · 복수"
+      ],
+      "a": [
+        "ihren",
+        "ihre"
+      ],
+      "e": "von은 3격 → 복수 3격 ihren Großeltern이에요.<br>für는 4격 → 복수 4격 ihre Ferien이에요. 둘 다 복수라도 격이 달라요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "다음 문장에서 틀린 부분은?\n**Seit den Frühling geht Opa jeden Abend mit seinem Hund durch das Dorf.**",
+      "o": [
+        "Seit den Frühling",
+        "jeden Abend",
+        "mit seinem Hund",
+        "durch das Dorf"
+      ],
+      "a": 0,
+      "e": "seit는 3격이라서 seit dem Frühling이에요.<br>jeden Abend는 전치사 없이 쓰는 4격 시간 표현이라서 맞고, durch das Dorf도 4격이라서 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리는 강가를 따라 다리까지 걸었어요.",
+      "a": [
+        "Wir sind das Ufer entlang bis zur Brücke gelaufen.",
+        "Bis zur Brücke sind wir das Ufer entlang gelaufen.",
+        "Das Ufer entlang sind wir bis zur Brücke gelaufen.",
+        "Wir sind bis zur Brücke das Ufer entlang gelaufen."
+      ],
+      "e": "entlang은 명사 뒤에 와요 — das Ufer entlang(4격).<br>관사가 필요한 '~까지'는 bis zu + 3격 → bis zur Brücke예요. laufen은 sein과 현재완료를 만들어요."
+    }
+  ]
+}

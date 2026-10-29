@@ -1,0 +1,399 @@
+{
+  "n": "15",
+  "level": "A2",
+  "goals": [
+    "아홉 전치사 뒤에서 Wo?(위치)면 3격, Wohin?(방향)이면 4격을 골라요",
+    "stellen/stehen · legen/liegen · setzen/sitzen · hängen을 구별해요",
+    "나라·도시·사람·섬·바다에 맞는 '가는 곳·있는 곳·온 곳' 전치사를 써요",
+    "말하는 사람을 기준으로 hin과 her를 골라요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Fahrräder stehen unter ___ Treppe.",
+      "o": [
+        "der",
+        "die",
+        "dem",
+        "den"
+      ],
+      "a": 0,
+      "e": "서 있는 위치(Wo?)라서 3격이에요.<br>die Treppe(여성) → unter der Treppe."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich lege die Zeitung auf ___ Stuhl.",
+      "ko": "신문을 의자 위에 놓아요.",
+      "h": "Stuhl · 남성",
+      "a": [
+        "den"
+      ],
+      "e": "legen(놓다)은 어디로 옮기는 동작(Wohin?)이라서 4격이에요 — auf den Stuhl."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ein Vogel sitzt auf ___ Dach.",
+      "ko": "새 한 마리가 지붕 위에 앉아 있어요.",
+      "h": "Dach · 중성",
+      "a": [
+        "dem"
+      ],
+      "e": "sitzen(앉아 있다)은 위치(Wo?)라서 3격이에요 — auf dem Dach."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Kinder rennen in ___ Garten.",
+      "ko": "아이들이 정원 안으로 뛰어 들어가요.",
+      "h": "Garten · 남성",
+      "a": [
+        "den"
+      ],
+      "e": "밖에서 정원 안으로 들어가는 방향(Wohin?)이라서 4격이에요 — in den Garten."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir hängen die Uhr über ___ Tür.",
+      "ko": "우리는 시계를 문 위에 걸어요.",
+      "h": "Tür · 여성",
+      "a": [
+        "die"
+      ],
+      "e": "hängen이 '걸다'(목적어 die Uhr가 있음)라서 Wohin? → 4격이에요.<br>여성 4격 → über die Tür."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Zwischen ___ ___ steht ein Regal.",
+      "ko": "창문들 사이에 선반이 하나 있어요.",
+      "h": [
+        "정관사",
+        "Fenster · 복수"
+      ],
+      "a": [
+        "den",
+        "Fenstern"
+      ],
+      "e": "steht는 위치(Wo?)라서 3격이에요.<br>복수 3격은 관사 den과 명사 끝 -n → zwischen den Fenstern."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich ___ die Vase auf das Regal.",
+      "o": [
+        "stelle",
+        "stehe",
+        "liege",
+        "sitze"
+      ],
+      "a": 0,
+      "e": "4격 목적어(die Vase)와 Wohin?(auf das Regal)이 있으니 옮기는 동사예요.<br>stehen·liegen·sitzen은 목적어 없이 놓여 있는 상태라서 맞지 않아요. 꽃병은 세워 두니까 stellen이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Mein Mantel ___ an der Garderobe.",
+      "o": [
+        "hängt",
+        "liegt",
+        "steht",
+        "stellt"
+      ],
+      "a": 0,
+      "e": "옷걸이에 걸려 있는 상태(Wo? → an der Garderobe, 3격)예요.<br>hängen은 '걸다'와 '걸려 있다'의 현재형이 같아요 — er hängt."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Deine Brille ___ neben dem Computer.",
+      "ko": "네 안경은 컴퓨터 옆에 있어요.",
+      "h": "liegen / legen",
+      "a": [
+        "liegt"
+      ],
+      "e": "목적어 없이 놓여 있는 상태(neben dem Computer, 3격)라서 liegen이에요.<br>안경은 눕혀 두는 물건이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich ___ das Baby ins Bett.",
+      "ko": "나는 아기를 침대에 눕혀요.",
+      "h": "legen / liegen",
+      "a": [
+        "lege"
+      ],
+      "e": "4격 목적어(das Baby)와 Wohin?(ins Bett = in das Bett)이 있으니 legen(눕히다)이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Nächsten Sommer fliegen wir ___ Türkei.",
+      "o": [
+        "in die",
+        "nach",
+        "in der",
+        "nach der"
+      ],
+      "a": 0,
+      "e": "die Türkei처럼 관사가 있는 나라는 nach가 아니라 in + 4격으로 가요 — in die Türkei."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "저녁에 우리는 발코니에 앉아 있어요.",
+      "a": [
+        "Am Abend sitzen wir auf dem Balkon.",
+        "Wir sitzen am Abend auf dem Balkon.",
+        "Auf dem Balkon sitzen wir am Abend",
+        "Wir sitzen auf dem Balkon am Abend"
+      ],
+      "e": "sitzen은 위치(Wo?)라서 auf dem Balkon(3격)이에요.<br>am Abend가 앞에 오면 동사 sitzen 다음에 주어 wir가 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Im August fahren meine Eltern an ___ See.",
+      "ko": "8월에 우리 부모님은 호수로 가요.",
+      "h": "See · 남성",
+      "a": [
+        "den"
+      ],
+      "e": "호수·바다로 가는 방향은 an + 4격이에요.<br>der See → an den See."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Am Samstag gehen wir auf ___ Flohmarkt.",
+      "ko": "토요일에 우리는 벼룩시장에 가요.",
+      "h": "Flohmarkt · 남성",
+      "a": [
+        "den"
+      ],
+      "e": "시장·광장으로 가는 방향은 auf + 4격이에요 — auf den Flohmarkt."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "(마당에 있는 내가 집 안의 아이들에게) Kommt ___! 밖으로 나와!",
+      "o": [
+        "heraus",
+        "hinaus",
+        "herein",
+        "hinein"
+      ],
+      "a": 0,
+      "e": "말하는 사람(나)이 밖에 있고 아이들이 나에게 오니까 her-예요.<br>밖으로 → heraus."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wo ist der Keller? — ___. Die Treppe ist links.",
+      "o": [
+        "Unten",
+        "Hinunter",
+        "Herunter",
+        "Nach unten"
+      ],
+      "a": 0,
+      "e": "Wo?(어디에 있나)에는 위치 부사 unten을 써요.<br>hinunter·herunter·nach unten은 방향(Wohin?)이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich trage die Kisten in ___ Keller. Dort stelle ich sie auf ___ Boden.",
+      "ko": "상자들을 지하실로 옮겨요. 거기서 상자들을 바닥에 내려놓아요.",
+      "h": [
+        "Keller · 남성",
+        "Boden · 남성"
+      ],
+      "a": [
+        "den",
+        "den"
+      ],
+      "e": "둘 다 옮기는 동작(Wohin?)이라서 4격이에요.<br>이미 지하실 안에 있어도 stellen은 '어디로 놓나'를 말하니까 auf den Boden이에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Jeden Morgen joggt Paula ___ Stadtpark. (공원 안에서 달려요)",
+      "o": [
+        "im",
+        "in den",
+        "ins",
+        "am"
+      ],
+      "a": 0,
+      "e": "공원 안에서만 움직이면 위치(Wo?)라서 3격이에요 — in dem → im Stadtpark.<br>밖에서 공원 안으로 달려 들어갈 때만 in den이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Wohin hast du den Schlüssel gelegt? — Neben ___ Telefon. — Da ___ er nicht!",
+      "ko": "열쇠를 어디에 놓았어? — 전화기 옆에. — 거기 없는데!",
+      "h": [
+        "Telefon · 중성",
+        "liegen / legen"
+      ],
+      "a": [
+        "das",
+        "liegt"
+      ],
+      "e": "Wohin?에 대한 대답이라서 4격 neben das Telefon이에요.<br>두 번째는 놓여 있는 상태라서 liegen → er liegt예요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우유를 냉장고에 넣어 줘!",
+      "a": [
+        "Stell die Milch bitte in den Kühlschrank!",
+        "Stell bitte die Milch in den Kühlschrank!",
+        "Bitte stell die Milch in den Kühlschrank!",
+        "Stell die Milch in den Kühlschrank bitte"
+      ],
+      "e": "명령형 stell이 맨 앞에 와요.<br>우유팩은 세워 두니까 stellen, 넣는 방향이라서 in den Kühlschrank(4격)예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Lukas kommt gerade ___. (시장에서 오는 길이에요)",
+      "o": [
+        "vom Wochenmarkt",
+        "aus dem Wochenmarkt",
+        "auf dem Wochenmarkt",
+        "zum Wochenmarkt"
+      ],
+      "a": 0,
+      "e": "시장은 auf로 가고(auf den Markt) auf에 있고(auf dem Markt) von으로 와요.<br>von + dem → vom Wochenmarkt."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Im Juli fliegt meine Cousine ___ USA, und ich fahre ___ Insel Rügen.",
+      "ko": "7월에 내 사촌은 미국에 가고, 나는 뤼겐섬에 가요.",
+      "h": [
+        "관사 있는 나라 · 복수",
+        "섬 · 여성"
+      ],
+      "a": [
+        "in die",
+        "auf die"
+      ],
+      "e": "관사 있는 나라로 가면 in + 4격 → in die USA예요.<br>섬으로 가면 auf + 4격 → auf die Insel이에요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "공이 장롱 뒤로 굴러갔어요.",
+      "a": [
+        "Der Ball ist hinter den Schrank gerollt.",
+        "Hinter den Schrank ist der Ball gerollt."
+      ],
+      "e": "굴러서 장롱 뒤로 간 방향이라서 hinter den Schrank(4격)예요.<br>rollen은 이동이라서 sein과 현재완료를 만들어요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Ich ___ meinen Sohn auf den Stuhl. Jetzt ___ er da und isst.",
+      "o": [
+        "setze … sitzt",
+        "sitze … setzt",
+        "setze … setzt",
+        "sitze … sitzt"
+      ],
+      "a": 0,
+      "e": "아들을 의자에 앉히는 동작은 setzen + 4격(auf den Stuhl)이에요.<br>그다음 앉아 있는 상태는 sitzen이에요 — er sitzt."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Das Fahrrad steht jetzt im Hof. Gestern Abend hat Opa es in ___ Hof ___.",
+      "ko": "자전거는 지금 마당에 있어요. 어제저녁에 할아버지가 그것을 마당에 세워 두었어요.",
+      "h": [
+        "Hof · 남성",
+        "stellen / stehen"
+      ],
+      "a": [
+        "den",
+        "gestellt"
+      ],
+      "e": "할아버지가 자전거를 옮긴 동작이라서 stellen + 4격 → in den Hof예요.<br>stellen은 규칙 동사라서 과거분사가 gestellt예요. stehen이면 gestanden이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Letzte Woche war ich ___ Schweiz, ___ meiner Freundin. Jetzt bin ich wieder ___ Hause, und morgen fahre ich ___ meinem Onkel ___ Hamburg.",
+      "ko": "지난주에 나는 스위스의 여자 친구 집에 있었어요. 지금은 다시 집에 있고, 내일은 함부르크의 삼촌 댁에 가요.",
+      "h": [
+        "관사 있는 나라",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "a": [
+        "in der",
+        "bei",
+        "zu",
+        "zu",
+        "nach"
+      ],
+      "e": "관사 있는 나라에 있으면 in der Schweiz, 사람 집에 있으면 bei예요.<br>집에 있으면 zu Hause예요.<br>사람에게 가면 zu meinem Onkel, 도시로 가면 nach Hamburg예요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Das Bild hat lange an der Wand gehangen.",
+        "Wir haben die Gläser in den Schrank gestellt.",
+        "Die Kinder sind in den See gesprungen.",
+        "Das Handy hat gestern auf dem Sofa gelegt."
+      ],
+      "a": 3,
+      "e": "놓여 있던 상태는 liegen이라서 과거분사가 gelegen이에요 — Das Handy hat auf dem Sofa gelegen.<br>gelegt는 '눕혀 놓았다'(legen)예요. 걸려 있던 상태의 hängen은 gehangen이 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "격이 틀린 문장은?",
+      "o": [
+        "Wir haben im Garten Fußball gespielt.",
+        "Er ist ins Wasser gesprungen.",
+        "Sie hat das Poster über das Bett gehängt.",
+        "Er hat den Schlüssel unter der Matte gelegt."
+      ],
+      "a": 3,
+      "e": "legen은 어디로 놓는지(Wohin?)를 말하니까 4격이에요 — unter die Matte.<br>정원 안에서 노는 것은 위치라서 im Garten이 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "주말에 어디 가?",
+      "a": [
+        "Wo fährst du am Wochenende hin?"
+      ],
+      "e": "말할 때는 wohin을 wo … hin으로 나누어 hin을 문장 끝에 놓기도 해요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "(내가 지하실에 있어요. 위층의 딸에게) Bring mir bitte die Taschenlampe ___!",
+      "o": [
+        "herunter",
+        "hinunter",
+        "herauf",
+        "hinauf"
+      ],
+      "a": 0,
+      "e": "손전등이 아래에 있는 나(말하는 사람) 쪽으로 오니까 her-예요.<br>위에서 아래로 오니까 herunter예요."
+    }
+  ]
+}

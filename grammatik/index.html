@@ -564,6 +564,47 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
 @media print{.ax-up{display:none}#lx-main section[id^="ax-"] table.decl-m{display:table;width:100%}#lx-main section[id^="ax-"] table.decl-m thead{display:table-header-group}#lx-main section[id^="ax-"] table.decl-m tbody{display:table-row-group}#lx-main section[id^="ax-"]{font-size:.88em}#lx-main section[id^="ax-"] table.decl-m tr{display:table-row;border:0;border-radius:0;margin:0;background:none;overflow:visible}#lx-main section[id^="ax-"] table.decl-m thead tr{background:var(--accent)}#lx-main section[id^="ax-"] table.decl-m tbody tr:nth-child(odd){background:var(--accent-l)}#lx-main section[id^="ax-"] table.decl-m td{display:table-cell;width:auto;position:static;padding:10px 14px;text-align:center;border:0;border-top:1px solid var(--bd);font-size:inherit}#lx-main section[id^="ax-"] table.decl-m td::before{content:none}}
 </style>
 <script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<style id="sx-ux-css">
+/* ── 연습문제 (Übungen) ───────────────────────────────────────── */
+.sx-page .sx-h.sx-h2{margin:64px 0 8px;font-size:24px}
+.sx-h2 em{font-style:normal;margin-left:10px;font-size:14px;font-weight:600;letter-spacing:0;color:var(--sx-mute)}
+.sx-sub{margin:0 0 20px;font-size:14.5px;line-height:1.6;color:var(--sx-mute);word-break:keep-all}
+.sx-st-q{font-size:13px;font-weight:600;color:var(--sx-mute);white-space:nowrap;font-variant-numeric:tabular-nums}
+.sx-st-lv{display:inline-block;margin-right:8px;padding:1px 7px;border-radius:5px;background:var(--sx-empty);font-size:12px;font-weight:700;color:var(--sx-ink2);letter-spacing:.02em}
+.qblank{display:inline-block;width:3.4em;margin:0 .2em;border-bottom:2px solid var(--text-m);vertical-align:baseline}
+.qin{font:inherit;font-size:.95em;box-sizing:border-box;max-width:100%;margin:2px 4px;padding:3px 8px;border:0;border-bottom:2px solid var(--accent);border-radius:6px 6px 0 0;background:var(--bg-s);color:var(--text);text-align:center}
+.qin:focus{outline:none;background:var(--accent-bg)}
+.qin.right{border-color:var(--ok);background:var(--ok-bg)}
+.qin.wrong{border-color:var(--no);background:var(--no-bg)}
+.qin[readonly]{cursor:default}
+.qh{margin:0 6px 0 0;font-size:.78em;color:var(--text-m);white-space:nowrap}
+.qko{margin:-6px 0 14px;font-size:.88em;line-height:1.65;color:var(--text-m);word-break:keep-all}
+.qa{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.qb{height:40px;padding:0 18px;border:0;border-radius:10px;background:var(--accent);color:var(--bg);font:inherit;font-size:.9em;font-weight:650;cursor:pointer}
+.qb.is-ghost{background:transparent;color:var(--text-m);box-shadow:inset 0 0 0 1px var(--bd)}
+.qb.is-ghost:hover{background:var(--bg-s);color:var(--text)}
+.qi .qb[data-q="redo"]{display:none}
+.qi.done .qb[data-q="redo"]{display:inline-block}
+.qi.done .qb[data-q="chk"],.qi.done .qb[data-q="show"],.qi.done .qb[data-q="clr"]{display:none}
+.qbuild{display:flex;flex-wrap:wrap;gap:8px;min-height:50px;margin-bottom:12px;padding:8px;border:2px dashed var(--bd);border-radius:10px}
+.qbuild.right{border-style:solid;border-color:var(--ok);background:var(--ok-bg)}
+.qbuild.wrong{border-style:solid;border-color:var(--no);background:var(--no-bg)}
+.qpool{display:flex;flex-wrap:wrap;gap:8px}
+.qc{padding:8px 14px;border:2px solid transparent;border-radius:8px;background:var(--bg-s);color:var(--text);font:inherit;font-size:.95em;line-height:1.4;cursor:pointer}
+.qc:hover{background:var(--accent-bg)}
+.qbuild .qc{background:var(--accent-bg);border-color:var(--info-bd)}
+.qi.done .qc{cursor:default}
+.qsol{margin-bottom:6px;font-weight:600;color:var(--text)}
+.qsol b{color:var(--ok)}
+.qscore{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin:32px 0 0;padding:20px 24px;background:var(--bg-c);border:1px solid var(--bd);border-radius:12px}
+.qscore-t{flex:1 1 180px;font-size:1.02em}
+.qscore-t b{font-size:1.2em;color:var(--accent)}
+.qscore-bar{order:3;flex:1 1 100%;height:6px;border-radius:3px;background:var(--bd);overflow:hidden}
+.qscore-bar i{display:block;width:0;height:100%;background:var(--ok);transition:width .3s ease}
+.sx-end-ex{padding:22px 28px;border-bottom:1px solid var(--sx-line)}
+@media (max-width:640px){.sx-end-ex{padding:18px}.qi{padding:18px 16px}.qb{height:42px}}
+@media print{.qa,.qscore{display:none!important}.qin{border-bottom:1px solid #000;background:none}.qpool{display:none}}
+</style>
 </head>
 <body>
 
@@ -597,6 +638,9 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     </div>
     <a class="sx-resume" id="sx-resume" href="#/inhalt" hidden></a>
     <ol class="sx-list" id="sx-list"></ol>
+    <h2 class="sx-h sx-h2" id="sx-uh">연습문제<em>Übungen</em></h2>
+    <p class="sx-sub" id="sx-usub">각 과의 문법을 기본·중간·도전 문제로 직접 풀어 봐요.</p>
+    <ol class="sx-list" id="sx-ulist"></ol>
     <div class="sx-foot"><button type="button" class="sx-reset" id="sx-reset">진행 상황 초기화</button></div>
   </div>
 </div>
@@ -627,6 +671,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
 <script type="application/json" id="sx-meta">[{"n":"01","ko":"명사의 성과 관사","de":"Genus und Artikel","title":"Lektion 01 · 명사의 성과 관사","src":"lessons/L01.json?v=e466de97c5"},{"n":"02","ko":"명사의 복수","de":"Der Plural der Nomen","title":"Lektion 02 · 명사의 복수","src":"lessons/L02.json?v=da8b6d4d19"},{"n":"03","ko":"격과 관사 변화","de":"Die Kasus und die Deklination der Artikel","title":"Lektion 03 · 격과 관사 변화","src":"lessons/L03.json?v=c87526baf4"},{"n":"04","ko":"인칭대명사","de":"Personalpronomen","title":"Lektion 04 · 인칭대명사","src":"lessons/L04.json?v=77bbaad68c"},{"n":"05","ko":"현재형 동사변화와 명령형","de":"Präsens und Imperativ","title":"Lektion 05 · 현재형 동사변화와 명령형","src":"lessons/L05.json?v=dd15336942"},{"n":"06","ko":"어순과 의문문","de":"Wortstellung und Fragesätze","title":"Lektion 06 · 어순과 의문문","src":"lessons/L06.json?v=9996f8b200"},{"n":"07","ko":"수와 시간","de":"Zahlen, Datum und Uhrzeit","title":"Lektion 07 · 수와 시간","src":"lessons/L07.json?v=3bb813cf0e"},{"n":"08","ko":"소유관사","de":"Possessivartikel","title":"Lektion 08 · 소유관사","src":"lessons/L08.json?v=f5fc4c8b1a"},{"n":"09","ko":"부정 — kein과 nicht","de":"Negation: kein und nicht","title":"Lektion 09 · 부정 — kein과 nicht","src":"lessons/L09.json?v=68e9a47874"},{"n":"10","ko":"화법조동사","de":"Modalverben","title":"Lektion 10 · 화법조동사","src":"lessons/L10.json?v=1704021d27"},{"n":"11","ko":"분리동사와 비분리동사","de":"Trennbare und untrennbare Verben","title":"Lektion 11 · 분리동사와 비분리동사","src":"lessons/L11.json?v=ca70363759"},{"n":"12","ko":"현재완료","de":"Das Perfekt","title":"Lektion 12 · 현재완료","src":"lessons/L12.json?v=b2e28db1f0"},{"n":"13","ko":"과거형","de":"Das Präteritum","title":"Lektion 13 · 과거형","src":"lessons/L13.json?v=31674a6a81"},{"n":"14","ko":"전치사 1 — 4격 지배와 3격 지배","de":"Präpositionen mit Akkusativ und Dativ","title":"Lektion 14 · 전치사 1 — 4격 지배와 3격 지배","src":"lessons/L14.json?v=f4b013cf6c"},{"n":"15","ko":"전치사 2 — 3·4격 지배와 장소 표현","de":"Wechselpräpositionen und Ortsangaben","title":"Lektion 15 · 전치사 2 — 3·4격 지배와 장소 표현","src":"lessons/L15.json?v=733720004d"},{"n":"16","ko":"2격과 n-변화 명사","de":"Der Genitiv und die n-Deklination","title":"Lektion 16 · 2격과 n-변화 명사","src":"lessons/L16.json?v=b5941892e6"},{"n":"17","ko":"재귀동사","de":"Reflexive Verben","title":"Lektion 17 · 재귀동사","src":"lessons/L17.json?v=1a7882e3bd"},{"n":"18","ko":"동사의 목적어 — 3격 동사·전치사 동사·비인칭 es","de":"Verben mit Dativ, Verben mit Präpositionen, das unpersönliche „es“","title":"Lektion 18 · 동사의 목적어 — 3격 동사·전치사 동사·비인칭 es","src":"lessons/L18.json?v=84e2aeb6d1"},{"n":"19","ko":"등위접속사와 접속부사","de":"Konjunktionen und Konnektoren","title":"Lektion 19 · 등위접속사와 접속부사","src":"lessons/L19.json?v=f2b341af2a"},{"n":"20","ko":"종속절","de":"Nebensätze mit dass, weil, ob, wenn, obwohl, damit","title":"Lektion 20 · 종속절","src":"lessons/L20.json?v=fb9cc1cc4f"},{"n":"21","ko":"화법 불변화사","de":"Modalpartikeln","title":"Lektion 21 · 화법 불변화사","src":"lessons/L21.json?v=6ea7e352c8"},{"n":"22","ko":"dieser·welcher와 부정대명사","de":"Demonstrativ-, Frage- und Indefinitwörter","title":"Lektion 22 · dieser·welcher와 부정대명사","src":"lessons/L22.json?v=33f962b774"},{"n":"23","ko":"형용사 어미 1 — 약변화","de":"Adjektivdeklination I: nach dem bestimmten Artikel","title":"Lektion 23 · 형용사 어미 1 — 약변화","src":"lessons/L23.json?v=0123655bc7"},{"n":"24","ko":"형용사 어미 2 — 혼합변화·강변화","de":"Adjektivdeklination II: nach ein-Wörtern und ohne Artikel","title":"Lektion 24 · 형용사 어미 2 — 혼합변화·강변화","src":"lessons/L24.json?v=66f1ae5c4b"},{"n":"25","ko":"비교급과 최상급","de":"Komparativ und Superlativ","title":"Lektion 25 · 비교급과 최상급","src":"lessons/L25.json?v=fe815e890d"},{"n":"26","ko":"과거완료와 미래","de":"Plusquamperfekt und Futur","title":"Lektion 26 · 과거완료와 미래","src":"lessons/L26.json?v=d903f765af"},{"n":"27","ko":"시간의 종속절","de":"Temporale Nebensätze","title":"Lektion 27 · 시간의 종속절","src":"lessons/L27.json?v=5c12ebb4c0"},{"n":"28","ko":"zu 부정형","de":"Der Infinitiv mit zu","title":"Lektion 28 · zu 부정형","src":"lessons/L28.json?v=405259d995"},{"n":"29","ko":"관계문","de":"Relativsätze","title":"Lektion 29 · 관계문","src":"lessons/L29.json?v=ba96928820"},{"n":"30","ko":"접속법 II","de":"Der Konjunktiv II","title":"Lektion 30 · 접속법 II","src":"lessons/L30.json?v=96b6cf816c"},{"n":"31","ko":"수동태","de":"Das Passiv","title":"Lektion 31 · 수동태","src":"lessons/L31.json?v=199a53fab8"},{"n":"32","ko":"분사","de":"Partizip I und Partizip II","title":"Lektion 32 · 분사","src":"lessons/L32.json?v=32c9dd6b00"},{"n":"33","ko":"접속법 I과 간접화법","de":"Konjunktiv I und indirekte Rede","title":"Lektion 33 · 접속법 I과 간접화법","src":"lessons/L33.json?v=cbf5f68b27"},{"n":"34","ko":"형용사·명사와 전치사","de":"Adjektive und Nomen mit Präpositionen","title":"Lektion 34 · 형용사·명사와 전치사","src":"lessons/L34.json?v=43c12211fa"},{"n":"35","ko":"단어 만들기","de":"Wortbildung","title":"Lektion 35 · 단어 만들기","src":"lessons/L35.json?v=e76544c338"},{"n":"36","ko":"화법조동사의 추측 용법","de":"Modalverben zur Vermutung","title":"Lektion 36 · 화법조동사의 추측 용법","src":"lessons/L36.json?v=e8db682554"},{"n":"37","ko":"고급 연결어와 2격 전치사","de":"Weitere Konnektoren und Präpositionen mit Genitiv","title":"Lektion 37 · 고급 연결어와 2격 전치사","src":"lessons/L37.json?v=8f11bd9420"}]</script>
 <script type="application/json" id="sx-assets">{"%%A0%%":"assets/logo.png?v=d92b73352b","%%A1%%":"assets/image-1.webp?v=f15d5b8096"}</script>
 <script type="application/json" id="sx-ax">{"ko":"암기 노트","de":"Anhang · Das Wichtigste zum Auswendiglernen","title":"부록 · 암기 노트","src":"lessons/anhang.json?v=7baa5408b1"}</script>
+<script type="application/json" id="sx-ux">[{"n":"01","q":32,"lv":[17,9,6],"level":"A1","src":"uebungen/U01.json?v=4f1cca3b86"},{"n":"02","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U02.json?v=3fd334d3f4"},{"n":"03","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U03.json?v=f5e1d18bf4"},{"n":"04","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U04.json?v=778ae431be"},{"n":"05","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U05.json?v=e5d9988b46"},{"n":"06","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U06.json?v=a93553f0db"},{"n":"07","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U07.json?v=0c70d18fa0"},{"n":"08","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U08.json?v=cbb6f565a2"},{"n":"09","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U09.json?v=cb17a334e1"},{"n":"10","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U10.json?v=b607ed0d3b"},{"n":"11","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U11.json?v=f28225827d"},{"n":"12","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U12.json?v=37e60a6eb6"},{"n":"13","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U13.json?v=9d77dcaaf6"},{"n":"14","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U14.json?v=4617525c7f"},{"n":"15","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U15.json?v=06bbd3161e"},{"n":"16","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U16.json?v=b10d0a2d34"},{"n":"17","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U17.json?v=6c5d1e2544"},{"n":"18","q":32,"lv":[17,9,6],"level":"A2","src":"uebungen/U18.json?v=8439c7ab61"},{"n":"19","q":31,"lv":[17,8,6],"level":"A2","src":"uebungen/U19.json?v=bddf843b5f"},{"n":"20","q":32,"lv":[17,9,6],"level":"A2","src":"uebungen/U20.json?v=7a28ef46b5"},{"n":"21","q":31,"lv":[17,8,6],"level":"B1","src":"uebungen/U21.json?v=4e2f2e57ea"},{"n":"22","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U22.json?v=fe6a7da2b3"},{"n":"23","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U23.json?v=69809d05cb"},{"n":"24","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U24.json?v=48a1ce18d4"},{"n":"25","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U25.json?v=eb141128de"},{"n":"26","q":31,"lv":[16,9,6],"level":"B1","src":"uebungen/U26.json?v=54122a2ad8"},{"n":"27","q":31,"lv":[16,9,6],"level":"B1","src":"uebungen/U27.json?v=695cb698dc"},{"n":"28","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U28.json?v=2a530c03b7"},{"n":"29","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U29.json?v=d29ccbeb3b"},{"n":"30","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U30.json?v=2f6f8c0a71"},{"n":"31","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U31.json?v=21d361283d"},{"n":"32","q":30,"lv":[16,8,6],"level":"B2","src":"uebungen/U32.json?v=eb93bc3122"},{"n":"33","q":30,"lv":[16,8,6],"level":"B2","src":"uebungen/U33.json?v=6045bdc8c5"},{"n":"34","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U34.json?v=0b55179ea3"},{"n":"35","q":31,"lv":[16,9,6],"level":"B2","src":"uebungen/U35.json?v=a1be00322e"},{"n":"36","q":30,"lv":[16,8,6],"level":"B2","src":"uebungen/U36.json?v=9a55d4a9aa"},{"n":"37","q":30,"lv":[16,8,6],"level":"B2","src":"uebungen/U37.json?v=ff2030070f"}]</script>
 
 <script>(function () {
   'use strict';
@@ -638,6 +683,9 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
   var META = JSON.parse($('sx-meta').textContent);
   var ASSETS = JSON.parse($('sx-assets').textContent);
   var AX = JSON.parse($('sx-ax').textContent); /* the appendix: read like a lesson, not counted as one */
+  var UX = JSON.parse($('sx-ux').textContent); /* exercises, one per lesson */
+  var UBY = {};
+  UX.forEach(function (u) { UBY[u.n] = u; });
   var N = META.length;
   var BY = {};
   META.forEach(function (m, i) { m.i = i; BY[m.n] = m; });
@@ -713,6 +761,16 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
       '<span class="sx-st"></span></a></li>';
     sheetsEl.innerHTML = sh;
     listEl.innerHTML = li;
+    var ul = '';
+    UX.forEach(function (u) {
+      var m = BY[u.n];
+      ul += '<li><a class="sx-row" href="#/U' + u.n + '" aria-label="Übung ' + u.n + ' ' + esc(m.ko) + ', ' + u.q + '문제">' +
+        '<span class="sx-num">' + u.n + '</span>' +
+        '<span class="sx-tt"><span class="sx-ko">' + esc(m.ko) + '</span><span class="sx-de">' + esc(m.de) + '</span></span>' +
+        '<span class="sx-st"><span class="sx-st-lv">' + u.level + '</span><span class="sx-st-q">' + u.q + '문제</span></span></a></li>';
+    });
+    $('sx-ulist').innerHTML = ul;
+    $('sx-uh').hidden = $('sx-usub').hidden = $('sx-ulist').hidden = !UX.length;
   })();
 
   function nextTarget() {
@@ -832,6 +890,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
   main.addEventListener('click', function (e) {
     var b = e.target.closest('[data-act]');
     if (b && axOpen && b.getAttribute('data-act') === 'retry') { openAppendix(); return; }
+    if (b && curU && b.getAttribute('data-act') === 'retry') { openExercise(curU); return; }
     if (!b || !curN) return;
     if (b.getAttribute('data-act') === 'retry') { openLesson(curN); return; }
     var r = rec(curN);
@@ -923,6 +982,170 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     });
   }
 
+  /* ── exercises #/U01 … #/U37: no saved progress, answers are checked on the page ── */
+  var curU = null;
+
+  function exLink(m, label) {
+    return '<a href="#/U' + m.n + '"><small>' + label + '</small><span><em>' + m.n + '</em>' + esc(m.ko) + '</span></a>';
+  }
+
+  function injectExEnd(n) {
+    var m = BY[n], prev = UBY[META[m.i - 1] && META[m.i - 1].n], next = UBY[META[m.i + 1] && META[m.i + 1].n];
+    var box = document.createElement('div');
+    box.className = 'sx-end';
+    box.setAttribute('data-no-print', '');
+    box.innerHTML =
+      '<div class="sx-end-ex"><div class="sx-end-t">설명이 헷갈리면 교재로 돌아가요</div>' +
+      '<div class="sx-end-act"><a class="sx-btn is-ghost" href="#/L' + n + '">Lektion ' + n + ' 교재 보기</a></div></div>' +
+      '<nav class="sx-end-nav" aria-label="연습 이동">' +
+        (prev ? exLink(BY[prev.n], '이전 연습') : '<a href="#/inhalt"><small>처음</small><span>목차로 돌아가기</span></a>') +
+        (next ? exLink(BY[next.n], '다음 연습').replace('<a ', '<a class="is-go" ') : '<a class="is-go" href="#/inhalt"><small>마지막 연습</small><span>목차로 돌아가기</span></a>') +
+      '</nav>';
+    var foot = main.querySelector('.brand-foot');
+    if (foot) main.insertBefore(box, foot); else main.appendChild(box);
+  }
+
+  function exHtml(n) {
+    return fetch(UBY[n].src).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    });
+  }
+
+  function openExercise(n) {
+    var m = BY[n], seq = ++openSeq;
+    curN = null; axOpen = false; curU = n; mounted = false;
+    document.title = 'Übung ' + n + ' · ' + m.ko;
+    $('sx-now-n').textContent = '연습 ' + n;
+    $('sx-now-t').textContent = m.ko;
+    paintCounts();
+    hideToast();
+    setRead(0);
+    main.style.fontSize = state.fs ? state.fs + 'px' : '';
+    main.innerHTML = '';
+    jump(0);
+    var slow = setTimeout(function () {
+      if (seq === openSeq && !mounted) main.innerHTML = '<div class="sx-wait">불러오는 중…</div>';
+    }, 200);
+    exHtml(n).then(function (html) {
+      if (seq !== openSeq) return;
+      clearTimeout(slow);
+      Object.keys(ASSETS).forEach(function (k) { html = html.split(k).join(ASSETS[k]); });
+      main.innerHTML = html;
+      mounted = true;
+      injectExEnd(n);
+      jump(0);
+    }, function () {
+      if (seq !== openSeq) return;
+      clearTimeout(slow);
+      main.innerHTML = '<div class="sx-fail"><div class="sx-fail-t">연습문제를 열지 못했어요</div>' +
+        '<div class="sx-fail-d">인터넷에 연결한 뒤 다시 시도하세요. 한 번 내려받은 연습문제는 인터넷 없이도 열려요.</div>' +
+        '<button type="button" class="sx-btn" data-act="retry">다시 시도</button></div>';
+    });
+  }
+
+  /* answer checking */
+  function nz(s) {
+    return String(s).toLowerCase().replace(/[’‘`´]/g, "'").replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+      .replace(/^[\s.,!?;:]+|[\s.,!?;:]+$/g, '').replace(/\s+/g, ' ');
+  }
+  function scoreUpdate() {
+    var box = main.querySelector('.qscore');
+    if (!box) return;
+    var total = +box.getAttribute('data-total') || 0, ok = main.querySelectorAll('.qi.ok').length;
+    box.querySelector('.qscore-n').textContent = ok;
+    box.querySelector('.qscore-bar i').style.width = (total ? ok / total * 100 : 0) + '%';
+  }
+  function showSol(it) { var ex = it.querySelector('.qe'); if (ex) ex.style.display = 'block'; }
+  function resetItem(it) {
+    var t = it.getAttribute('data-t');
+    it.classList.remove('done', 'ok', 'peek');
+    var ex = it.querySelector('.qe'); if (ex) ex.style.display = 'none';
+    if (!t) {
+      it.querySelectorAll('.qo').forEach(function (x) { x.className = 'qo'; });
+    } else if (t === 'fill') {
+      it.querySelectorAll('.qin').forEach(function (i) { i.value = ''; i.readOnly = false; i.className = 'qin'; });
+    } else {
+      var pool = it.querySelector('.qpool'), bd = it.querySelector('.qbuild');
+      if (it._pool != null) pool.innerHTML = it._pool;
+      bd.innerHTML = ''; bd.className = 'qbuild';
+    }
+  }
+  function checkItem(it, peek) {
+    var t = it.getAttribute('data-t'), A = JSON.parse(it.getAttribute('data-a')), good = false;
+    if (t === 'fill') {
+      var ins = it.querySelectorAll('.qin');
+      good = true;
+      ins.forEach(function (inp, k) {
+        if (peek) { inp.value = A[k][0]; inp.className = 'qin'; inp.readOnly = true; return; }
+        var v = nz(inp.value), hit = !!v && A[k].some(function (x) { return nz(x) === v; });
+        inp.className = 'qin ' + (hit ? 'right' : 'wrong');
+        if (!hit) good = false;
+      });
+      if (!peek && good) ins.forEach(function (i) { i.readOnly = true; });
+    } else {
+      var bd = it.querySelector('.qbuild');
+      if (peek) {
+        bd.innerHTML = A[0].split(' ').map(function (w) { return '<span class="qc"></span>'; }).join('');
+        Array.prototype.forEach.call(bd.children, function (c, k) { c.textContent = A[0].split(' ')[k]; });
+        it.querySelector('.qpool').innerHTML = '';
+        bd.className = 'qbuild';
+      } else {
+        var s = Array.prototype.map.call(bd.children, function (c) { return c.textContent; }).join(' ');
+        good = !!s && A.some(function (x) { return nz(x) === nz(s); });
+        bd.className = 'qbuild ' + (s ? (good ? 'right' : 'wrong') : '');
+      }
+    }
+    if (peek) { it.classList.add('done', 'peek'); showSol(it); }
+    else if (good) { it.classList.add('done', 'ok'); showSol(it); }
+    scoreUpdate();
+  }
+  main.addEventListener('click', function (e) {
+    var c = e.target.closest('.qc');
+    if (c) {
+      var it = c.closest('.qi');
+      if (!it || it.classList.contains('done')) return;
+      var pool = it.querySelector('.qpool'), bd = it.querySelector('.qbuild');
+      if (it._pool == null) it._pool = pool.innerHTML;
+      bd.className = 'qbuild';
+      if (c.parentNode === pool) bd.appendChild(c);
+      else {
+        var i = +c.getAttribute('data-i'), before = null;
+        Array.prototype.some.call(pool.children, function (x) { if (+x.getAttribute('data-i') > i) { before = x; return true; } return false; });
+        pool.insertBefore(c, before);
+      }
+      return;
+    }
+    var b = e.target.closest('.qb');
+    if (!b) return;
+    var q = b.getAttribute('data-q');
+    if (q === 'all') {
+      main.querySelectorAll('.qi').forEach(resetItem);
+      scoreUpdate();
+      jump(0);
+      return;
+    }
+    var it2 = b.closest('.qi');
+    if (!it2) return;
+    if (q === 'chk') checkItem(it2, false);
+    else if (q === 'show') checkItem(it2, true);
+    else if (q === 'redo') { resetItem(it2); scoreUpdate(); }
+    else if (q === 'clr') {
+      var p2 = it2.querySelector('.qpool'), b2 = it2.querySelector('.qbuild');
+      if (it2._pool != null) p2.innerHTML = it2._pool;
+      b2.innerHTML = ''; b2.className = 'qbuild';
+    }
+  });
+  main.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' || !e.target.classList || !e.target.classList.contains('qin')) return;
+    e.preventDefault();
+    var it = e.target.closest('.qi');
+    if (!it || it.classList.contains('done')) return;
+    var ins = it.querySelectorAll('.qin'), k = Array.prototype.indexOf.call(ins, e.target);
+    if (k >= 0 && k < ins.length - 1 && !ins[ins.length - 1].value && !ins[k + 1].value) { ins[k + 1].focus(); return; }
+    checkItem(it, false);
+  });
+
   /* ── appendix #/anhang: same reading view, remembers where you were, no 'done' button ── */
   var axOpen = false;
   function axHtml() {
@@ -998,13 +1221,14 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
   function leaveLesson() {
     if (curN || axOpen) save();
     openSeq++;
-    curN = null; axOpen = false; mounted = false;
+    curN = null; curU = null; axOpen = false; mounted = false;
     hideToast();
     main.innerHTML = '';
     main.style.fontSize = '';
   }
 
   function onScroll() {
+    if (curU && mounted) { setRead(ratio()); return; }
     if (axOpen && mounted) { var q = ratio(); setRead(q); state.ax = q; saveSoon(); return; }
     if (!curN || !mounted) return;
     var p = ratio(), r = rec(curN);
@@ -1025,12 +1249,15 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     var b = e.target.closest('.qo'); if (!b) return;
     var it = b.closest('.qi'); if (!it) return;
     if (it.classList.contains('done')) {
-      it.classList.remove('done');
+      it.classList.remove('done', 'ok');
+      scoreUpdate();
       it.querySelectorAll('.qo').forEach(function (x) { x.className = 'qo'; });
       var ex0 = it.querySelector('.qe'); if (ex0) ex0.style.display = 'none';
       return;
     }
     it.classList.add('done');
+    if (b.dataset.c === '1') it.classList.add('ok');
+    scoreUpdate();
     b.classList.add(b.dataset.c === '1' ? 'right' : 'wrong');
     it.querySelectorAll('.qo[data-c="1"]').forEach(function (x) { x.classList.add('right'); });
     it.querySelectorAll('.qo:not(.right):not(.wrong)').forEach(function (x) { x.classList.add('dim'); });
@@ -1061,7 +1288,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     printTheme = null;
   });
 
-  /* ── routing: #/ (cover) · #/inhalt (contents) · #/L01 … #/L37 · #/anhang (appendix) ─ */
+  /* ── routing: #/ (cover) · #/inhalt (contents) · #/L01 … #/L37 · #/U01 … #/U37 (exercises) · #/anhang (appendix) ─ */
   var views = { cover: $('cover'), toc: $('toc'), lesson: $('lesson') };
   var cur = null, prevRoute = null, tocY = 0;
 
@@ -1069,8 +1296,11 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     var h = location.hash || '';
     var m = /^#\/L(\d{2})$/.exec(h);
     if (m && BY[m[1]]) return { v: 'lesson', n: m[1], key: 'L' + m[1] };
+    var u = /^#\/U(\d{2})$/.exec(h);
+    if (u && UBY[u[1]]) return { v: 'lesson', u: true, n: u[1], key: 'U' + u[1] };
     if (h === '#/anhang') return { v: 'lesson', ax: true, key: 'AX' };
     if (h === '#/inhalt') return { v: 'toc', key: 'toc' };
+    if (h === '#/uebungen') return { v: 'toc', key: 'toc', ex: true };
     return { v: 'cover', key: 'cover' };
   }
 
@@ -1086,20 +1316,27 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     });
   }
 
+  function scrollToEx() {
+    var h = $('sx-uh');
+    if (!h || h.hidden) return jump(0);
+    window.scrollTo(0, Math.max(0, h.getBoundingClientRect().top + window.scrollY - 24));
+  }
+
   function route() {
     var r = parse();
-    if (r.key === cur) return;
+    if (r.key === cur) { if (r.ex && cur === 'toc') scrollToEx(); return; }
     if (cur === 'toc') tocY = window.scrollY;
-    if (cur === 'AX' || (cur && cur.charAt(0) === 'L')) leaveLesson();
+    if (cur === 'AX' || (cur && (cur.charAt(0) === 'L' || cur.charAt(0) === 'U'))) leaveLesson();
     show(r.v);
     prevRoute = cur;
     cur = r.key;
     if (r.v === 'toc') {
       document.title = 'Lehrwerk Grammatik';
       renderContents();
-      jump(prevRoute && (prevRoute === 'AX' || prevRoute.charAt(0) === 'L') ? tocY : 0);
+      if (r.ex) scrollToEx();
+      else jump(prevRoute && (prevRoute === 'AX' || prevRoute.charAt(0) === 'L' || prevRoute.charAt(0) === 'U') ? tocY : 0);
     } else if (r.v === 'lesson') {
-      if (r.ax) openAppendix(); else openLesson(r.n);
+      if (r.ax) openAppendix(); else if (r.u) openExercise(r.n); else openLesson(r.n);
     } else {
       document.title = 'Lehrwerk Grammatik';
       jump(0);

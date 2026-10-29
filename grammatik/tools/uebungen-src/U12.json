@@ -1,0 +1,423 @@
+{
+  "n": "12",
+  "level": "A2",
+  "goals": [
+    "보조 동사는 두 번째, 과거분사는 문장 끝에 놓아요",
+    "규칙·불규칙·혼합 동사의 과거분사를 만들어요",
+    "분리동사·비분리동사·-ieren 동사에서 ge-의 자리를 정해요",
+    "이동·상태 변화 동사와 bleiben·passieren에 sein을 골라요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir haben gestern lange ___.",
+      "ko": "우리는 어제 오래 춤을 췄어요.",
+      "h": "tanzen",
+      "a": [
+        "getanzt"
+      ],
+      "e": "규칙 동사의 과거분사는 ge + 어간 + t예요 — getanzt."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Hast du die Rechnung schon ___?",
+      "ko": "계산서 벌써 냈어?",
+      "h": "bezahlen",
+      "a": [
+        "bezahlt"
+      ],
+      "e": "be-는 비분리 접두어라서 ge-를 붙이지 않아요 — bezahlt."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Mein Opa hat vierzig Jahre in Hamburg ___.",
+      "ko": "우리 할아버지는 40년 동안 함부르크에서 일하셨어요.",
+      "h": "arbeiten",
+      "a": [
+        "gearbeitet"
+      ],
+      "e": "어간이 -t로 끝나면 -et를 붙여요 — gearbeitet."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich habe heute Morgen keinen Kaffee ___.",
+      "ko": "나는 오늘 아침에 커피를 안 마셨어요.",
+      "h": "trinken",
+      "a": [
+        "getrunken"
+      ],
+      "e": "trinken은 불규칙 동사예요. i → u로 바뀌고 -en이 붙어요 — getrunken."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Lukas ___ letzte Woche nach Wien ___.",
+      "ko": "루카스는 지난주에 빈에 갔어요.",
+      "h": [
+        "haben · sein",
+        "fahren"
+      ],
+      "a": [
+        "ist",
+        "gefahren"
+      ],
+      "e": "목적어 없이 장소를 옮기는 fahren은 sein과 써요 — ist gefahren."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Kinder ___ heute sehr früh ___.",
+      "ko": "아이들은 오늘 아주 일찍 잠에서 깼어요.",
+      "h": [
+        "haben · sein",
+        "aufwachen"
+      ],
+      "a": [
+        "sind",
+        "aufgewacht"
+      ],
+      "e": "aufwachen은 상태가 바뀌는 동사라서 sein이에요.<br>분리동사는 접두어와 동사 사이에 ge가 들어가요 — aufgewacht."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wer hat die Fenster ___?",
+      "ko": "누가 창문들을 열었어요?",
+      "h": "öffnen",
+      "a": [
+        "geöffnet"
+      ],
+      "e": "öffnen처럼 -ffn으로 끝나는 어간에는 -et를 붙여요 — geöffnet."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich habe meinen Schlüssel nicht ___.",
+      "ko": "나는 열쇠를 못 찾았어요.",
+      "h": "finden",
+      "a": [
+        "gefunden"
+      ],
+      "e": "finden은 i → u로 바뀌는 불규칙 동사예요 — gefunden.<br>nicht는 과거분사 바로 앞에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "reparieren(수리하다)의 과거분사는?",
+      "o": [
+        "repariert",
+        "gerepariert",
+        "gereparieren",
+        "reparieren"
+      ],
+      "a": 0,
+      "e": "-ieren 동사는 ge-를 붙이지 않고 -t로 끝나요 — repariert."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "verkaufen(팔다)의 과거분사는?",
+      "o": [
+        "verkauft",
+        "geverkauft",
+        "verkaufen",
+        "vergekauft"
+      ],
+      "a": 0,
+      "e": "ver-는 비분리라서 ge가 없어요.<br>kaufen은 규칙 동사라서 -t로 끝나요 — verkauft."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir ___ am Wochenende zu Hause geblieben.",
+      "o": [
+        "sind",
+        "haben",
+        "hat",
+        "seid"
+      ],
+      "a": 0,
+      "e": "bleiben은 sein과 써요. wir → sind."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ ihr die Serie schon gesehen?",
+      "o": [
+        "Habt",
+        "Seid",
+        "Hat",
+        "Sind"
+      ],
+      "a": 0,
+      "e": "4격 목적어(die Serie)가 있는 sehen은 haben과 써요. ihr → habt."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'아기는 금방 잠들었어요.'",
+      "o": [
+        "Das Baby ist schnell eingeschlafen.",
+        "Das Baby hat schnell eingeschlafen.",
+        "Das Baby ist schnell geeinschlafen.",
+        "Das Baby ist eingeschlafen schnell."
+      ],
+      "a": 0,
+      "e": "einschlafen은 상태 변화라서 sein이에요.<br>분리동사 → ein + ge + schlafen, 과거분사는 문장 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "나는 어제 할머니께 전화했어요.",
+      "a": [
+        "Ich habe gestern meine Oma angerufen.",
+        "Gestern habe ich meine Oma angerufen.",
+        "Meine Oma habe ich gestern angerufen"
+      ],
+      "e": "보조 동사 habe가 두 번째 자리, 과거분사 angerufen이 맨 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "너 어제 뭐 먹었어?",
+      "a": [
+        "Was hast du gestern gegessen?"
+      ],
+      "e": "의문사 + 보조 동사 + 주어, 과거분사 gegessen은 맨 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich ___ meinen Pass ___.",
+      "ko": "나는 여권을 깜빡했어요.",
+      "h": [
+        "haben · sein",
+        "vergessen"
+      ],
+      "a": [
+        "habe",
+        "vergessen"
+      ],
+      "e": "vergessen은 비분리 + 불규칙이라서 과거분사가 원형과 똑같아요 — habe vergessen."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Ich ___ gestern meinem Lehrer begegnet.",
+      "o": [
+        "bin",
+        "habe",
+        "hat",
+        "ist"
+      ],
+      "a": 0,
+      "e": "begegnen(우연히 만나다)은 3격과 쓰지만 보조 동사는 sein이에요. ich → bin."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Mein Vater ___ mich gestern nach Hause gefahren.",
+      "o": [
+        "hat",
+        "ist",
+        "habe",
+        "sind"
+      ],
+      "a": 0,
+      "e": "fahren에 4격 목적어(mich)가 있으면 '태워 주다'라는 뜻이고 haben과 써요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "„Hast du gestern ___?“ – „Nein, ich habe ein Buch ___.“",
+      "ko": "\"어제 TV 봤어?\" – \"아니, 책을 읽었어.\"",
+      "h": [
+        "fernsehen",
+        "lesen"
+      ],
+      "a": [
+        "ferngesehen",
+        "gelesen"
+      ],
+      "e": "분리동사 fernsehen → fern + ge + sehen.<br>lesen은 모음이 그대로인 불규칙 동사예요 — gelesen."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Wann ___ du deine Frau ___?",
+      "ko": "너는 아내를 언제 처음 알게 됐어?",
+      "h": [
+        "haben · sein",
+        "kennenlernen"
+      ],
+      "a": [
+        "hast",
+        "kennengelernt"
+      ],
+      "e": "kennenlernen은 kennen이 접두어처럼 움직여서 ge가 그 뒤에 들어가요 — kennengelernt.<br>4격 목적어가 있어서 haben이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "___ dir etwas ___?",
+      "ko": "너 무슨 일 있었던 거야? (다친 데 없어?)",
+      "h": [
+        "haben · sein",
+        "passieren"
+      ],
+      "a": [
+        "Ist",
+        "passiert"
+      ],
+      "e": "passieren은 sein과 쓰고, -ieren 동사라서 ge가 없어요.<br>'누구에게' 일어났는지는 3격(dir)으로 말해요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Das Konzert ___ um acht Uhr ___ und ich ___ erst um neun Uhr ___.",
+      "ko": "콘서트는 8시에 시작했는데 나는 9시에야 왔어요.",
+      "h": [
+        "haben · sein",
+        "beginnen",
+        "haben · sein",
+        "kommen"
+      ],
+      "a": [
+        "hat",
+        "begonnen",
+        "bin",
+        "gekommen"
+      ],
+      "e": "beginnen은 haben과 쓰고, be-로 시작해서 ge가 없어요 — hat begonnen.<br>kommen은 이동이라서 sein — bin gekommen."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그녀는 지난여름에 혼자 일본을 여행했어요.",
+      "a": [
+        "Sie ist letzten Sommer allein nach Japan gereist.",
+        "Letzten Sommer ist sie allein nach Japan gereist.",
+        "Allein ist sie letzten Sommer nach Japan gereist",
+        "Nach Japan ist sie letzten Sommer allein gereist",
+        "Sie ist allein letzten Sommer nach Japan gereist"
+      ],
+      "e": "reisen은 이동이라서 sein이에요.<br>과거분사 gereist가 맨 끝에 와요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "너희 그 선물 벌써 포장했어?",
+      "a": [
+        "Habt ihr das Geschenk schon eingepackt?",
+        "Habt ihr schon das Geschenk eingepackt"
+      ],
+      "e": "einpacken은 분리동사라서 ein + ge + packt예요.<br>Ja/Nein 의문문이라서 보조 동사 Habt가 맨 앞이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Am Samstag ___ ich erst um zehn Uhr ___. Am Nachmittag ___ ich Mina ___. Wir ___ zwei Stunden ___ und am Abend ___ Mina für mich ___.",
+      "ko": "토요일에 나는 10시에야 일어났어요. 오후에 미나를 찾아갔어요. 우리는 두 시간 동안 걸었고, 저녁에는 미나가 나를 위해 요리했어요.",
+      "h": [
+        "haben · sein",
+        "aufstehen",
+        "haben · sein",
+        "besuchen",
+        "haben · sein",
+        "laufen",
+        "haben · sein",
+        "kochen"
+      ],
+      "a": [
+        "bin",
+        "aufgestanden",
+        "habe",
+        "besucht",
+        "sind",
+        "gelaufen",
+        "hat",
+        "gekocht"
+      ],
+      "e": "aufstehen(상태 변화)·laufen(이동)은 sein, besuchen·kochen은 haben이에요.<br>aufgestanden은 ge가 가운데, besucht는 ge가 없어요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Wir haben am Sonntag zu Hause geblieben.",
+        "Ich habe ihn sofort erkannt.",
+        "Der Baum ist schnell gewachsen.",
+        "Sie hat in Köln Musik studiert."
+      ],
+      "a": 0,
+      "e": "bleiben은 장소를 옮기지 않아도 sein과 써요 — Wir sind … geblieben.<br>erkennen은 er- 비분리 + 혼합 동사라서 erkannt, wachsen은 상태 변화라서 sein이에요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'나는 그녀의 차를 라이프치히까지 몰고 갔어요.'",
+      "o": [
+        "Ich habe ihr Auto nach Leipzig gefahren.",
+        "Ich bin ihr Auto nach Leipzig gefahren.",
+        "Ich habe ihr Auto nach Leipzig gefahrt.",
+        "Ich habe ihr Auto gefahren nach Leipzig."
+      ],
+      "a": 0,
+      "e": "fahren에 4격 목적어(ihr Auto)가 있으면 haben이에요.<br>fahren은 불규칙이라서 gefahren, 과거분사는 맨 끝이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "„___ du das schon ___?“ – „Nein, das habe ich erst heute ___.“",
+      "ko": "\"그거 벌써 알고 있었어?\" – \"아니, 오늘에야 알게 됐어.\"",
+      "h": [
+        "haben · sein",
+        "wissen",
+        "erfahren"
+      ],
+      "a": [
+        "Hast",
+        "gewusst",
+        "erfahren"
+      ],
+      "ok": "Nein, das …의 쉼표 뒤 das는 지시대명사이고 관계문이 아님",
+      "e": "wissen은 혼합 동사 — gewusst.<br>erfahren(알게 되다)은 er- 비분리라서 ge가 없고, fahren처럼 -en으로 끝나요 — erfahren."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "나는 오늘 우산을 안 가져갔어요.",
+      "a": [
+        "Ich habe heute meinen Regenschirm nicht mitgenommen.",
+        "Heute habe ich meinen Regenschirm nicht mitgenommen.",
+        "Meinen Regenschirm habe ich heute nicht mitgenommen",
+        "Ich habe meinen Regenschirm heute nicht mitgenommen"
+      ],
+      "e": "mitnehmen은 분리 + 불규칙 — mit + ge + nommen.<br>nicht는 과거분사 바로 앞에 와요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "보조 동사가 나머지와 다른 동사는?",
+      "o": [
+        "schlafen",
+        "einschlafen",
+        "aufwachen",
+        "werden"
+      ],
+      "a": 0,
+      "ok": "werden은 본동사(되다), 12과 E절의 sein 동사 목록",
+      "e": "schlafen은 자는 상태가 계속되는 것이라서 haben이에요.<br>einschlafen·aufwachen·werden은 상태가 바뀌어서 sein이에요."
+    }
+  ]
+}

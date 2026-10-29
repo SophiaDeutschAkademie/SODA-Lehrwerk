@@ -1,0 +1,400 @@
+{
+  "n": "31",
+  "level": "B1",
+  "goals": [
+    "능동문을 werden + 과거분사의 수동문으로 바꾸고, 3격은 그대로 둬요",
+    "수동의 현재·과거·현재완료·과거완료를 만들고 worden과 geworden을 구별해요",
+    "von·durch, 화법조동사 + 수동, 주어 없는 수동을 써요",
+    "werden(과정)과 sein(상태)을 구별하고, sich lassen·sein … zu·-bar로 바꿔 말해요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "In der Bäckerei nebenan ___ gerade frisches Brot gebacken, es riecht herrlich.",
+      "o": [
+        "wird",
+        "werden",
+        "ist",
+        "hat"
+      ],
+      "a": 0,
+      "e": "gerade(지금 하는 중)는 일어나는 과정이라 werden 수동이에요.<br>주어 frisches Brot가 단수라서 wird예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Pakete ___ morgen früh abgeholt.",
+      "ko": "그 소포들은 내일 아침에 수거돼요.",
+      "h": "werden",
+      "a": [
+        "werden"
+      ],
+      "e": "수동은 werden + 과거분사예요.<br>주어 die Pakete가 복수라서 werden이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Man renoviert gerade das Rathaus. → Das Rathaus ___ gerade renoviert.",
+      "ko": "시청이 지금 보수되고 있어요.",
+      "h": "werden",
+      "a": [
+        "wird"
+      ],
+      "e": "능동문의 4격 목적어 das Rathaus가 수동문의 주어가 돼요.<br>man은 사라지고, 단수 주어라서 wird예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Brücke ist letzten Sommer komplett erneuert ___.",
+      "ko": "그 다리는 지난여름에 완전히 새로 고쳐졌어요.",
+      "h": "werden",
+      "a": [
+        "worden"
+      ],
+      "e": "수동의 현재완료는 sein + 과거분사 + worden이에요.<br>geworden은 '~이 되다'의 과거분사라서 여기에는 쓰지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das erste Fahrrad ___ 1817 in Mannheim erfunden.",
+      "ko": "최초의 자전거는 1817년에 만하임에서 발명됐어요.",
+      "h": "werden",
+      "a": [
+        "wurde"
+      ],
+      "e": "역사 속 사실은 과거 수동으로 많이 써요.<br>werden의 과거형 wurde + 과거분사 erfunden."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Man dankt den Helfern herzlich. → ___ wird herzlich gedankt.",
+      "o": [
+        "Den Helfern",
+        "Die Helfer",
+        "Der Helfer",
+        "Dem Helfern"
+      ],
+      "a": 0,
+      "e": "danken은 3격 동사라서 수동문에서도 3격 den Helfern이 그대로 남아요.<br>주어가 없으니 werden은 3인칭 단수 wird예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das Fest wird jedes Jahr ___ Stadt organisiert.",
+      "ko": "그 축제는 매년 시가 주최해요.",
+      "h": "von · ~에 의해 · Stadt · 여성",
+      "a": [
+        "von der"
+      ],
+      "e": "행위자는 von + 3격으로 나타내요.<br>die Stadt → von der Stadt."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Bewohner wurden mitten in der Nacht ___ einen lauten Knall geweckt.",
+      "o": [
+        "durch",
+        "von",
+        "mit",
+        "für"
+      ],
+      "a": 0,
+      "e": "잠을 깨운 원인은 durch + 4격이에요 — durch einen lauten Knall.<br>von은 3격과 쓰니까 einen과 맞지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Bewerbung muss bis Ende des Monats ___ ___.",
+      "ko": "지원서는 이달 말까지 제출돼야 해요.",
+      "h": [
+        "einreichen",
+        ""
+      ],
+      "a": [
+        "eingereicht",
+        "werden"
+      ],
+      "e": "화법조동사와 수동을 함께 쓰면 끝에 과거분사 + werden이 와요.<br>einreichen은 분리동사라서 eingereicht예요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "이 방에서는 휴대폰을 쓰면 안 돼요.",
+      "a": [
+        "In diesem Raum dürfen keine Handys benutzt werden.",
+        "Keine Handys dürfen in diesem Raum benutzt werden."
+      ],
+      "e": "화법조동사 dürfen이 두 번째 자리에 오고, 끝에는 과거분사 + werden이 와요.<br>주어 keine Handys가 복수라서 dürfen이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Keine Sorge, die Fahrkarten ___ schon bezahlt. Wir können direkt einsteigen.",
+      "o": [
+        "sind",
+        "werden",
+        "worden",
+        "haben"
+      ],
+      "a": 0,
+      "e": "이미 끝나서 그대로인 상태는 sein + 과거분사예요 — 결제돼 있어요.<br>werden은 지금 일어나는 과정에 써요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Auf der Hochzeit ___ bis drei Uhr morgens getanzt.",
+      "ko": "결혼식에서는 새벽 세 시까지 춤을 췄어요.",
+      "h": "werden",
+      "a": [
+        "wurde"
+      ],
+      "e": "tanzen은 4격 목적어가 없어서 주어 없는 수동이에요. werden은 3인칭 단수예요.<br>지난 일이라 과거형 wurde를 써요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "In unserer WG ___ abends oft zusammen gekocht.",
+      "o": [
+        "wird",
+        "werden",
+        "wird es",
+        "ist"
+      ],
+      "a": 0,
+      "e": "주어 없는 수동이라 werden은 3인칭 단수 wird예요.<br>첫 자리에 In unserer WG가 있으니 es는 쓰지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Schrift auf dem Zettel ist so klein, sie ist kaum ___.",
+      "ko": "쪽지의 글씨가 너무 작아서 거의 읽을 수가 없어요.",
+      "h": "lesen",
+      "a": [
+        "zu lesen"
+      ],
+      "e": "sein + zu 부정형은 '~될 수 있다'라는 수동의 뜻이에요.<br>kaum zu lesen은 '거의 읽을 수 없어요'라는 뜻이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ist das Leitungswasser in dieser Gegend ___?",
+      "o": [
+        "trinkbar",
+        "getrunken",
+        "trinkt",
+        "trinkbare"
+      ],
+      "a": 0,
+      "e": "동사 어간 + bar는 '~할 수 있는'이라는 형용사예요 — trinkbar 마실 수 있는.<br>sein 뒤의 형용사라서 어미가 붙지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "창문은 일 년에 한 번 닦아야 해요.",
+      "a": [
+        "Die Fenster müssen einmal im Jahr geputzt werden.",
+        "Einmal im Jahr müssen die Fenster geputzt werden."
+      ],
+      "e": "müssen이 두 번째 자리, 끝에는 geputzt werden이 와요.<br>주어 die Fenster가 복수라서 müssen이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Man hat die Straße wegen eines Unfalls gesperrt.\n→ Die Straße ___ wegen eines Unfalls gesperrt ___.",
+      "ko": "그 도로는 사고 때문에 통제됐어요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "ist",
+        "worden"
+      ],
+      "e": "능동 현재완료(hat … gesperrt)는 수동에서 ist … gesperrt worden이 돼요.<br>보조 동사는 늘 sein이고, 끝에 worden이 와요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Alle Teilnehmer ___ rechtzeitig über die Änderung informiert worden.",
+      "ko": "모든 참가자가 제때 변경 사항을 안내받았어요.",
+      "h": "sein",
+      "a": [
+        "sind"
+      ],
+      "e": "worden이 있으니 수동의 현재완료예요. 보조 동사는 sein이에요.<br>주어 alle Teilnehmer가 복수라서 sind예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Man schickte dem Kunden ein neues Gerät.\n→ ___ Kunden ___ ein neues Gerät geschickt.",
+      "ko": "그 고객에게 새 기기가 보내졌어요.",
+      "h": [
+        "Kunde · 남성",
+        "werden"
+      ],
+      "a": [
+        "Dem",
+        "wurde"
+      ],
+      "e": "받는 사람(3격)은 그대로 3격이에요 — dem Kunden(n-변화).<br>4격이던 ein neues Gerät가 주어가 되고, 과거라서 wurde예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Gestern ___ der Flug wegen des dichten Nebels gestrichen werden.",
+      "o": [
+        "musste",
+        "wurde",
+        "ist",
+        "hatte"
+      ],
+      "a": 0,
+      "e": "끝이 과거분사 + werden이면 앞에는 화법조동사가 와요.<br>어제 일이라 과거형 musste예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Gerade ___ die Tische für das Abendessen gedeckt. In zehn Minuten ___ alles gedeckt, dann können wir essen.",
+      "ko": "지금 저녁 식사를 위해 식탁을 차리는 중이에요. 10분 뒤면 다 차려져 있을 테니 그때 먹을 수 있어요.",
+      "h": [
+        "werden 또는 sein",
+        "werden 또는 sein"
+      ],
+      "a": [
+        "werden",
+        "ist"
+      ],
+      "e": "gerade(지금 하는 중)는 과정 → werden 수동, 주어가 복수라 werden.<br>10분 뒤에 다 끝나 있는 모습은 상태 → sein 수동, alles는 단수라 ist."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "난방기를 급히 고쳐야 해서 우리는 추워요.",
+      "a": [
+        "Wir frieren, weil die Heizung dringend repariert werden muss.",
+        "Weil die Heizung dringend repariert werden muss, frieren wir"
+      ],
+      "e": "weil 절에서는 화법조동사 muss가 맨 끝으로 가요.<br>순서는 과거분사 → werden → muss예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Man kann den Fehler ganz einfach korrigieren.\n→ Der Fehler lässt ___ ganz einfach ___.",
+      "ko": "그 오류는 아주 간단히 고칠 수 있어요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "sich",
+        "korrigieren"
+      ],
+      "e": "sich lassen + 원형은 '~될 수 있다'라는 뜻이에요.<br>과거분사가 아니라 원형 korrigieren을 써요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "바른 문장은?",
+      "o": [
+        "Nach dem Spiel wird laut gesungen.",
+        "Nach dem Spiel wird es laut gesungen.",
+        "Nach dem Spiel werden laut gesungen.",
+        "Nach dem Spiel ist laut gesungen geworden."
+      ],
+      "a": 0,
+      "e": "주어 없는 수동은 3인칭 단수 wird예요.<br>첫 자리에 Nach dem Spiel이 있으면 es를 넣지 않아요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Der Antrag ist leider noch nicht bearbeitet geworden.",
+        "Dem Patienten wurde sofort geholfen.",
+        "Die neuen Regeln sind allen Mitarbeitern erklärt worden.",
+        "Über das Thema wurde lange diskutiert."
+      ],
+      "a": 0,
+      "e": "수동의 현재완료는 geworden이 아니라 worden이에요 → ist … bearbeitet worden.<br>helfen은 3격 그대로, diskutieren über는 주어 없는 수동이라 나머지는 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Gestern Abend ___ in der Innenstadt ein Fahrraddieb festgenommen. Zuvor ___ er von einer Überwachungskamera gefilmt ___. Die Polizei sagt: „Die Fahrräder können jetzt ihren Besitzern zurückgegeben ___.“",
+      "ko": "어제 저녁 시내에서 자전거 도둑이 체포됐어요. 그 전에 그는 감시 카메라에 찍혔었어요. 경찰은 '자전거들을 이제 주인들에게 돌려줄 수 있어요.'라고 말해요.",
+      "h": [
+        "werden",
+        "과거완료",
+        "",
+        ""
+      ],
+      "a": [
+        "wurde",
+        "war",
+        "worden",
+        "werden"
+      ],
+      "e": "① 뉴스의 지난 일 → 과거 수동 wurde.<br>② 체포보다 앞선 일 → 과거완료 수동 war … gefilmt worden.<br>③ 화법조동사 können + 과거분사 + werden."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "소포가 벌써 발송됐는지 확인해 줄 수 있어요?",
+      "a": [
+        "Kannst du nachsehen, ob das Paket schon abgeschickt worden ist?",
+        "Kannst du nachsehen, ob schon das Paket abgeschickt worden ist"
+      ],
+      "e": "ob 절에서는 활용된 동사 ist가 맨 끝에 와요.<br>수동 현재완료의 순서는 과거분사 → worden → ist예요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Man musste den Kindern alles zweimal erklären.\n→ ___ Kindern ___ alles zweimal ___ ___.",
+      "ko": "아이들에게는 모든 것을 두 번씩 설명해 줘야 했어요.",
+      "h": [
+        "",
+        "müssen",
+        "erklären",
+        ""
+      ],
+      "a": [
+        "Den",
+        "musste",
+        "erklärt",
+        "werden"
+      ],
+      "e": "3격 den Kindern은 그대로 남고, 4격이던 alles가 주어가 돼요.<br>alles는 단수라서 musste, 끝에는 erklärt werden이 와요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'이 문은 밖에서 열 수 없어요.'와 뜻이 다른 문장은?",
+      "o": [
+        "Die Tür muss von außen nicht geöffnet werden.",
+        "Die Tür lässt sich von außen nicht öffnen.",
+        "Die Tür ist von außen nicht zu öffnen.",
+        "Die Tür kann von außen nicht geöffnet werden."
+      ],
+      "a": 0,
+      "e": "muss nicht geöffnet werden은 '밖에서 열 필요가 없다'라는 뜻이에요(10과의 nicht müssen).<br>sich lassen, sein … zu, können + 수동은 모두 '열 수 없다'예요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "빈칸에 geworden이 들어가는 문장은?",
+      "o": [
+        "Mein Cousin ist letztes Jahr Vater ___.",
+        "Der Vertrag ist gestern unterschrieben ___.",
+        "Die Halle ist für das Konzert neu gestrichen ___.",
+        "Den Nachbarn ist beim Umzug geholfen ___."
+      ],
+      "a": 0,
+      "e": "Vater werden(아버지가 되다)는 본동사 werden이라 현재완료가 geworden이에요.<br>나머지는 과거분사가 있는 수동이라 worden이에요."
+    }
+  ]
+}

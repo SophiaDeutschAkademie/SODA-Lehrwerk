@@ -1,0 +1,427 @@
+{
+  "n": "11",
+  "level": "A1",
+  "goals": [
+    "분리동사의 접두어를 문장 끝에 놓아요",
+    "비분리 접두어 여덟 개를 알아보고 떼지 않아요",
+    "화법조동사·명령형·의문문에서 분리동사의 자리를 지켜요",
+    "um·wieder·über·unter·durch가 분리일 때와 비분리일 때의 뜻을 구별해요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Bus ___ um acht Uhr ___.",
+      "ko": "버스는 8시에 출발해요.",
+      "h": [
+        "abfahren",
+        ""
+      ],
+      "a": [
+        "fährt",
+        "ab"
+      ],
+      "e": "abfahren은 분리동사예요. fährt가 두 번째 자리, ab은 문장 끝이에요.<br>fahren은 er에서 a → ä로 바뀌어요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Paul ___ seine Oma jeden Sonntag ___.",
+      "ko": "파울은 매주 일요일에 할머니께 전화해요.",
+      "h": [
+        "anrufen",
+        ""
+      ],
+      "a": [
+        "ruft",
+        "an"
+      ],
+      "e": "anrufen → Paul ruft … an. 접두어 an은 문장 맨 끝으로 가요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리는 오늘 저녁에 외출하지 않아요.",
+      "a": [
+        "Wir gehen heute Abend nicht aus.",
+        "Heute Abend gehen wir nicht aus."
+      ],
+      "e": "ausgehen은 분리동사예요. gehen이 두 번째 자리, aus는 맨 끝이에요.<br>nicht는 끝의 접두어 바로 앞에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ du bitte den Kühlschrank ___?",
+      "ko": "냉장고 좀 열어 줄래?",
+      "h": [
+        "aufmachen",
+        ""
+      ],
+      "a": [
+        "Machst",
+        "auf"
+      ],
+      "e": "Ja/Nein 의문문이라서 Machst가 맨 앞, auf는 문장 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Er ___ sein Fahrrad.",
+      "ko": "그는 자기 자전거를 팔아요.",
+      "h": "verkaufen",
+      "a": [
+        "verkauft"
+      ],
+      "e": "ver-는 비분리 접두어예요. 떨어지지 않고 한 덩어리로 두 번째 자리에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Kellner ___ uns die Fischsuppe.",
+      "ko": "웨이터가 우리에게 생선 수프를 추천해요.",
+      "h": "empfehlen",
+      "a": [
+        "empfiehlt"
+      ],
+      "e": "emp-는 비분리 접두어예요.<br>empfehlen은 er에서 e → ie로 바뀌어요 — er empfiehlt."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Meine Kinder ___ um neun Uhr ___.",
+      "ko": "우리 아이들은 9시에 잠들어요.",
+      "h": [
+        "einschlafen",
+        ""
+      ],
+      "a": [
+        "schlafen",
+        "ein"
+      ],
+      "e": "einschlafen → sie schlafen … ein. 복수라서 모음이 바뀌지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "비분리동사는?",
+      "o": [
+        "entdecken",
+        "einladen",
+        "zuhören",
+        "mitbringen"
+      ],
+      "a": 0,
+      "e": "ent-는 비분리 접두어 여덟 개(be·emp·ent·er·ge·miss·ver·zer) 가운데 하나예요.<br>ein-·zu-·mit-는 분리 접두어예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'그는 매일 6시에 일어나요.'",
+      "o": [
+        "Er steht jeden Tag um sechs Uhr auf.",
+        "Er aufsteht jeden Tag um sechs Uhr.",
+        "Er steht auf jeden Tag um sechs Uhr.",
+        "Er steht jeden Tag um sechs Uhr aufstehen."
+      ],
+      "a": 0,
+      "ok": "jeden Tag um … Uhr는 7과의 흔한 시간 표현",
+      "e": "steht가 두 번째 자리, auf는 문장 맨 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "강세가 첫 음절(접두어)에 오는 동사는?",
+      "o": [
+        "einkaufen",
+        "verkaufen",
+        "besuchen",
+        "erklären"
+      ],
+      "a": 0,
+      "e": "분리동사는 접두어에 강세가 와요 — EINkaufen.<br>ver-·be-·er- 동사는 어간에 강세가 와요 — verKAUfen."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'나는 우산을 자꾸 잃어버려요.'",
+      "o": [
+        "Ich verliere immer meinen Schirm.",
+        "Ich liere immer meinen Schirm ver.",
+        "Ich verliere meinen Schirm immer ver.",
+        "Ich lieren immer meinen Schirm ver."
+      ],
+      "a": 0,
+      "e": "verlieren의 ver-는 비분리 접두어라서 떨어지지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "(친구에게) '라디오 좀 꺼 줘!' (ausmachen)",
+      "o": [
+        "Mach bitte das Radio aus!",
+        "Ausmach bitte das Radio!",
+        "Mach bitte aus das Radio!",
+        "Machst bitte das Radio aus!"
+      ],
+      "a": 0,
+      "e": "du 명령형은 동사 부분 Mach가 맨 앞, 접두어 aus는 문장 끝이에요.<br>명령형에는 -st를 붙이지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "비행기는 10시에 도착해요.",
+      "a": [
+        "Das Flugzeug kommt um zehn Uhr an.",
+        "Um zehn Uhr kommt das Flugzeug an."
+      ],
+      "e": "ankommen → kommt가 두 번째 자리, an은 맨 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "오늘 나는 친구들을 초대해요.",
+      "a": [
+        "Heute lade ich meine Freunde ein.",
+        "Ich lade heute meine Freunde ein.",
+        "Meine Freunde lade ich heute ein"
+      ],
+      "e": "einladen → lade가 두 번째 자리, ein은 맨 끝이에요.<br>Heute가 첫 자리면 주어 ich는 동사 뒤로 가요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "(손님에게) '이 서류를 기입해 주세요.' (ausfüllen)",
+      "o": [
+        "Bitte füllen Sie das Formular aus.",
+        "Bitte ausfüllen Sie das Formular.",
+        "Bitte füllt Sie das Formular aus.",
+        "Bitte füllen Sie aus das Formular."
+      ],
+      "a": 0,
+      "e": "Sie 명령형은 동사 + Sie … 접두어 순서예요.<br>füllt는 ihr의 형태예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Was ___ du heute Abend ___?",
+      "ko": "오늘 저녁에 뭐 할 계획이야?",
+      "h": [
+        "vorhaben",
+        ""
+      ],
+      "a": [
+        "hast",
+        "vor"
+      ],
+      "e": "vorhaben은 haben에 vor-가 붙은 분리동사예요 — du hast … vor."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'내일 여동생을 데려올 수 있어?' (mitbringen)",
+      "o": [
+        "Kannst du morgen deine Schwester mitbringen?",
+        "Kannst du morgen deine Schwester bringen mit?",
+        "Kannst du morgen mitbringen deine Schwester?",
+        "Bringst du morgen deine Schwester mitbringen?"
+      ],
+      "a": 0,
+      "e": "화법조동사와 함께 쓰면 분리동사는 원형으로 끝에 가고, 접두어가 다시 붙어요 — … mitbringen."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "___ jetzt das Licht ___! Es ist schon spät.",
+      "ko": "(아이들에게) 너희 이제 불 꺼! 벌써 늦었어.",
+      "h": [
+        "ausmachen · ihr에게 명령",
+        ""
+      ],
+      "a": [
+        "Macht",
+        "aus"
+      ],
+      "e": "ihr 명령형은 ihr 현재형에서 ihr를 뺀 모양이에요 — Macht!<br>접두어 aus는 문장 끝이에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'내일 다시 올게요.'",
+      "o": [
+        "Ich komme morgen wieder.",
+        "Ich wiederkomme morgen.",
+        "Ich komme wieder morgen.",
+        "Ich wiederhole morgen."
+      ],
+      "a": 0,
+      "e": "'다시 오다'는 분리동사 WIEderkommen이에요. wieder는 문장 끝으로 가요.<br>wiederholen(반복하다)은 비분리이고 뜻이 달라요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'그녀는 계약서에 서명해요.' (unterschreiben)",
+      "o": [
+        "Sie unterschreibt den Vertrag.",
+        "Sie schreibt den Vertrag unter.",
+        "Sie unter schreibt den Vertrag.",
+        "Sie schreibt unter den Vertrag."
+      ],
+      "a": 0,
+      "e": "unterSCHREIben(서명하다)은 강세가 어간에 있는 비분리동사예요. 떨어지지 않아요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Der Kurs ___ nächste Woche ___.",
+      "ko": "강좌가 다음 주에 시작해요.",
+      "h": [
+        "anfangen",
+        ""
+      ],
+      "a": [
+        "fängt",
+        "an"
+      ],
+      "e": "anfangen은 분리동사이고, fangen은 er에서 a → ä로 바뀌어요 — er fängt … an."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Er ___ seiner Mutter das Geld ___.",
+      "ko": "그는 어머니에게 돈을 돌려드려요.",
+      "h": [
+        "zurückgeben",
+        ""
+      ],
+      "a": [
+        "gibt",
+        "zurück"
+      ],
+      "e": "zurückgeben → er gibt … zurück. geben은 er에서 e → i로 바뀌어요.<br>받는 사람은 3격(seiner Mutter), 돌려주는 것은 4격(das Geld)이에요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "너는 오늘 네 방을 정리해야 해.",
+      "a": [
+        "Du musst heute dein Zimmer aufräumen.",
+        "Heute musst du dein Zimmer aufräumen.",
+        "Dein Zimmer musst du heute aufräumen",
+        "Du musst dein Zimmer heute aufräumen"
+      ],
+      "e": "화법조동사 musst가 두 번째 자리, 원형 aufräumen이 맨 끝이에요.<br>원형으로 끝에 갈 때는 접두어가 붙어 있어요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "너 오늘 저녁에 같이 갈래?",
+      "a": [
+        "Kommst du heute Abend mit?"
+      ],
+      "e": "mitkommen → Ja/Nein 의문문이라서 Kommst가 맨 앞, mit은 맨 끝이에요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Ich setze den Brief über. (편지를 번역해요)",
+        "Ich bereite heute das Abendessen vor. (저녁을 준비해요)",
+        "Wir lernen heute unsere Nachbarn kennen. (이웃을 알게 돼요)",
+        "Im Winter geht die Sonne früh unter. (겨울에는 해가 일찍 져요)"
+      ],
+      "a": 0,
+      "e": "'번역하다'는 비분리 überSETzen이에요 — Ich übersetze den Brief.<br>vorbereiten은 vor만 떨어지고, kennenlernen은 kennen이 끝으로 가요. '해가 지다'는 분리 UNtergehen이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Morgen ___ meine Tante ___. Ich ___ sie um zehn Uhr ___. Am Nachmittag ___ wir zusammen ___. Am Abend ___ sie das Museum.",
+      "ko": "내일 이모가 도착해요. 나는 10시에 이모를 데리러 가요. 오후에 우리는 함께 장을 봐요. 저녁에 이모는 박물관에 가요.",
+      "h": [
+        "ankommen",
+        "",
+        "abholen",
+        "",
+        "einkaufen",
+        "",
+        "besuchen"
+      ],
+      "a": [
+        "kommt",
+        "an",
+        "hole",
+        "ab",
+        "kaufen",
+        "ein",
+        "besucht"
+      ],
+      "e": "ankommen·abholen·einkaufen은 분리동사라서 접두어가 문장 끝으로 가요.<br>besuchen은 be- 비분리동사라서 떨어지지 않아요 — sie besucht."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Wir ___ in Frankfurt ___. Meine Mutter wartet dort und ___ mich.",
+      "ko": "우리는 프랑크푸르트에서 갈아타요. 어머니가 거기서 기다리다가 나를 안아 줘요.",
+      "h": [
+        "umsteigen",
+        "",
+        "umarmen"
+      ],
+      "a": [
+        "steigen",
+        "um",
+        "umarmt"
+      ],
+      "e": "UMsteigen(갈아타다)은 분리 — wir steigen … um.<br>umARmen(껴안다)은 비분리 — sie umarmt mich."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "(친구에게) '이 편지를 끝까지 읽어 봐!' (durchlesen)",
+      "o": [
+        "Lies den Brief durch!",
+        "Durchlies den Brief!",
+        "Lest den Brief durch!",
+        "Liest den Brief durch!"
+      ],
+      "a": 0,
+      "e": "DURCHlesen(끝까지 읽다)은 분리동사예요.<br>lesen의 du 명령형은 Lies!이고, durch는 문장 끝이에요. Lest는 ihr 명령형이에요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "너는 왜 오늘 아버지께 전화하지 않아?",
+      "a": [
+        "Warum rufst du deinen Vater heute nicht an?",
+        "Warum rufst du heute deinen Vater nicht an?"
+      ],
+      "e": "의문사 + rufst + 주어, 접두어 an은 맨 끝이에요.<br>nicht는 끝의 접두어 바로 앞에 와요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "„___ ihr morgen ___?“ – „Nein, wir ___ leider nicht ___. Wir besuchen unsere Großeltern.“",
+      "ko": "\"너희 내일 같이 갈래?\" – \"아니, 아쉽지만 같이 못 가. 우리는 조부모님 댁을 방문해.\"",
+      "h": [
+        "mitkommen",
+        "",
+        "können",
+        ""
+      ],
+      "a": [
+        "Kommt",
+        "mit",
+        "können",
+        "mitkommen"
+      ],
+      "e": "현재형에서는 mit이 떨어져 끝으로 가요 — Kommt ihr … mit?<br>화법조동사와 함께면 원형이 붙어서 끝에 와요 — können … mitkommen."
+    }
+  ]
+}

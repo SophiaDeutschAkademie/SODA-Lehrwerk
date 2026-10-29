@@ -1,0 +1,397 @@
+{
+  "n": "16",
+  "level": "B1",
+  "goals": [
+    "2격 관사와 명사 어미 -s·-es를 바르게 붙여요",
+    "사람 이름의 2격과 von + 3격으로 '~의'를 말해요",
+    "wegen·trotz·während·statt·innerhalb·außerhalb 뒤에 2격을 써요",
+    "n-변화 명사를 알아보고 1격 밖의 자리에서 -(e)n을 붙여요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Kurz vor dem Anfang ___ Konzerts ist der Strom ausgefallen.",
+      "o": [
+        "des",
+        "der",
+        "dem",
+        "den"
+      ],
+      "a": 0,
+      "e": "das Konzert(중성)의 2격 관사는 des예요.<br>명사에도 -s가 붙어서 des Konzerts예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Im Herbst ist die Farbe ___ Blätter besonders schön.",
+      "o": [
+        "der",
+        "des",
+        "den",
+        "die"
+      ],
+      "a": 0,
+      "e": "복수 2격 관사는 der예요.<br>복수 명사에는 2격 어미를 붙이지 않아요 — der Blätter."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das ist das Fahrrad ___ Nachbarin. Sie fährt jeden Tag damit zur Arbeit.",
+      "ko": "이건 우리 이웃집 아주머니의 자전거예요. 그분은 매일 그걸 타고 출근해요.",
+      "h": "mein- · Nachbarin · 여성",
+      "a": [
+        "meiner"
+      ],
+      "e": "여성 2격 소유관사는 meiner예요.<br>여성 명사 Nachbarin에는 2격 어미를 붙이지 않아요.",
+      "ok": "damit은 da- + mit(14과 F), 접속사가 아님"
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Fenster des ___ sind seit Wochen schmutzig.",
+      "ko": "거실 창문들이 몇 주째 더러워요.",
+      "h": "Wohnzimmer · 중성",
+      "a": [
+        "Wohnzimmers"
+      ],
+      "e": "중성 2격은 des + 명사 -s예요.<br>2음절 이상인 명사는 -s만 붙여요 — des Wohnzimmers."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Den Preis des ___ finden Sie auf der Webseite.",
+      "ko": "티켓 가격은 웹사이트에서 확인하실 수 있어요.",
+      "h": "Ticket · 중성",
+      "a": [
+        "Tickets"
+      ],
+      "e": "중성 2격은 명사 끝에 -s를 붙여요 — des Tickets."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Mauern des ___ sind über 800 Jahre alt.",
+      "ko": "그 성의 성벽은 800년이 넘었어요.",
+      "h": "Schloss · 중성",
+      "a": [
+        "Schlosses"
+      ],
+      "e": "-s·-ß·-x·-z로 끝나는 명사는 2격에서 반드시 -es를 붙여요 — des Schlosses."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'카롤리나의 노트북'을 바르게 쓴 것은?",
+      "o": [
+        "Karolinas Laptop",
+        "Karolina's Laptop",
+        "Karolinas' Laptop",
+        "der Laptop Karolinas'"
+      ],
+      "a": 0,
+      "e": "사람 이름은 -s를 붙여 명사 앞에 놓아요.<br>영어처럼 아포스트로피를 쓰지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'펠릭스의 어머니'를 바르게 쓴 것은?",
+      "o": [
+        "Felix' Mutter",
+        "Felixs Mutter",
+        "Felix's Mutter",
+        "Felixes Mutter"
+      ],
+      "a": 0,
+      "e": "이름이 -x로 끝나면 -s를 붙이지 않고 아포스트로피만 써요 — Felix' Mutter."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ist das die Jacke von ___ Bruder? Sie liegt schon seit Montag hier.",
+      "ko": "이거 네 형 재킷이야? 월요일부터 여기 놓여 있어.",
+      "h": "dein- · Bruder · 남성",
+      "a": [
+        "deinem"
+      ],
+      "e": "말할 때는 2격 대신 von + 3격을 자주 써요.<br>남성 3격 → von deinem Bruder.",
+      "ok": "das die Jacke는 지시대명사 das + 관사, 형용사 어미 아님"
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ eines Unfalls stehen viele Autos auf der Autobahn.",
+      "o": [
+        "Wegen",
+        "Trotz",
+        "Statt",
+        "Während"
+      ],
+      "a": 0,
+      "e": "사고가 차가 막힌 이유라서 wegen(~ 때문에)이에요.<br>wegen + 2격 → wegen eines Unfalls."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ der Kälte gehen die Kinder im See schwimmen.",
+      "ko": "추운데도 아이들은 호수에 수영하러 가요.",
+      "h": "~에도 불구하고",
+      "a": [
+        "Trotz"
+      ],
+      "e": "'~에도 불구하고'는 trotz + 2격이에요 — trotz der Kälte."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Jugendherberge liegt ___ des Dorfes, mitten im Wald.",
+      "o": [
+        "außerhalb",
+        "innerhalb",
+        "statt",
+        "wegen"
+      ],
+      "a": 0,
+      "e": "숲 한가운데라서 마을 밖이에요 — außerhalb + 2격 → außerhalb des Dorfes."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ Koffer steht noch im Flur? — Das ist der Koffer meiner Tante.",
+      "o": [
+        "Wessen",
+        "Wem",
+        "Wen",
+        "Wer"
+      ],
+      "a": 0,
+      "e": "'누구의?'를 묻는 의문사는 wessen이고, 바로 뒤에 명사가 와요 — Wessen Koffer?"
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Kennst du ___? Er schreibt für eine Zeitung in Hamburg. (그 남자 기자)",
+      "o": [
+        "den Journalisten",
+        "den Journalist",
+        "dem Journalisten",
+        "der Journalist"
+      ],
+      "a": 0,
+      "e": "kennen은 4격 목적어를 받아요.<br>Journalist는 -ist로 끝나는 n-변화 명사라서 4격에서 -en이 붙어요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Im Zoo gibt die Pflegerin ___ ___ eine Banane.",
+      "ko": "동물원에서 사육사가 원숭이에게 바나나를 하나 줘요.",
+      "h": [
+        "정관사",
+        "Affe · 남성"
+      ],
+      "a": [
+        "dem",
+        "Affen"
+      ],
+      "e": "받는 쪽은 3격이에요 — dem.<br>Affe는 -e로 끝나는 남성 동물이라서 n-변화 → dem Affen."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Ärztin untersucht ___ ___ sehr gründlich.",
+      "ko": "의사가 그 소년을 아주 꼼꼼하게 진찰해요.",
+      "h": [
+        "정관사",
+        "Junge · 남성"
+      ],
+      "a": [
+        "den",
+        "Jungen"
+      ],
+      "e": "untersuchen의 목적어라서 4격 den이에요.<br>Junge는 n-변화 명사라서 4격에서 -n이 붙어요 — den Jungen."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Das ist der Hund ___ Freundin ___ Cousins.",
+      "ko": "이건 내 사촌(남) 여자 친구의 개예요.",
+      "h": [
+        "정관사 · Freundin · 여성",
+        "mein- · Cousin · 남성"
+      ],
+      "a": [
+        "der",
+        "meines"
+      ],
+      "e": "2격이 이어질 때도 '~의'는 꾸미는 명사 뒤에 와요.<br>der Hund ← der Freundin(여성 2격) ← meines Cousins(남성 2격)."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "der Garten unserer Großeltern = der Garten von ___ Großeltern",
+      "ko": "우리 조부모님의 정원",
+      "h": "unser- · Großeltern · 복수",
+      "a": [
+        "unseren"
+      ],
+      "e": "von은 3격이라서 복수 3격 unseren이에요.<br>Großeltern은 이미 -n으로 끝나서 더 붙이지 않아요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "___ des Staus ist mein Kollege pünktlich zur Besprechung gekommen.",
+      "o": [
+        "Trotz",
+        "Wegen",
+        "Statt",
+        "Innerhalb"
+      ],
+      "a": 0,
+      "e": "길이 막혔는데도 제시간에 왔으니 '~에도 불구하고' → trotz + 2격이에요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "회의를 시작할 때 팀장님이 손님들을 맞이했어요.",
+      "a": [
+        "Am Anfang der Sitzung hat die Chefin die Gäste begrüßt.",
+        "Die Chefin hat am Anfang der Sitzung die Gäste begrüßt.",
+        "Die Gäste hat die Chefin am Anfang der Sitzung begrüßt.",
+        "Die Chefin hat die Gäste am Anfang der Sitzung begrüßt"
+      ],
+      "e": "der Sitzung(여성 2격)은 Anfang 바로 뒤에 붙어요.<br>현재완료라서 hat은 두 번째, begrüßt는 끝이에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Ich habe leider ___ vergessen. (그 남자의 이름을)",
+      "o": [
+        "den Namen des Mannes",
+        "den Name des Mannes",
+        "den Namen dem Mann",
+        "der Name des Mannen"
+      ],
+      "a": 0,
+      "e": "der Name는 4격에서 Namen이 돼요(n-변화).<br>Mann은 n-변화가 아니라서 2격은 des Mannes예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Die Mutter ___ ___ arbeitet auch in unserer Firma.",
+      "ko": "그 인턴의 어머니도 우리 회사에서 일해요.",
+      "h": [
+        "정관사",
+        "Praktikant · 남성"
+      ],
+      "a": [
+        "des",
+        "Praktikanten"
+      ],
+      "e": "남성 2격 관사는 des예요.<br>-ant로 끝나는 사람 명사는 n-변화라서 2격도 -s가 아니라 -en이에요 — des Praktikanten."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "뇌우 때문에 콘서트가 취소됐어요.",
+      "a": [
+        "Wegen des Gewitters ist das Konzert ausgefallen.",
+        "Das Konzert ist wegen des Gewitters ausgefallen."
+      ],
+      "e": "wegen + 2격 → wegen des Gewitters(중성).<br>ausfallen은 sein과 현재완료를 만들고, 분리동사라서 ausgefallen이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Bitte schicken Sie die Unterlagen an ___ Schulz.",
+      "ko": "서류를 슐츠 씨(남)에게 보내 주세요.",
+      "h": "Herr",
+      "a": [
+        "Herrn"
+      ],
+      "e": "an + 4격의 받는 사람이에요.<br>Herr는 n-변화 명사라서 1격만 Herr이고 나머지는 Herrn이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Mein Opa hat seit Jahren Probleme mit ___ ___.",
+      "ko": "우리 할아버지는 몇 년째 심장이 안 좋으세요.",
+      "h": [
+        "sein-",
+        "Herz · 중성"
+      ],
+      "a": [
+        "seinem",
+        "Herzen"
+      ],
+      "e": "mit는 3격이라서 seinem이에요.<br>das Herz는 중성인데도 3격이 Herzen이에요(2격 Herzens, 4격 Herz)."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Wegen ___ Sturms fahren heute keine Busse. Statt ___ Busses nehme ich das Fahrrad. Während ___ Fahrt rufe ich meinen ___ an.",
+      "ko": "폭풍 때문에 오늘은 버스가 다니지 않아요. 버스 대신 자전거를 타요. 가는 동안 동료에게 전화해요.",
+      "h": [
+        "Sturm · 남성",
+        "Bus · 남성",
+        "Fahrt · 여성",
+        "Kollege · 남성"
+      ],
+      "a": [
+        "des",
+        "des",
+        "der",
+        "Kollegen"
+      ],
+      "e": "wegen·statt·während은 모두 2격이에요 — des Sturms · des Busses · der Fahrt.<br>anrufen의 목적어는 4격이고, Kollege는 n-변화라서 meinen Kollegen이에요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Wir haben trotz des Nebels einen Ausflug gemacht.",
+        "Der Name des Hotels steht über der Tür.",
+        "Ich kenne den Freund des Studenten.",
+        "Während des Urlaubs habe ich oft den Nachbar angerufen."
+      ],
+      "a": 3,
+      "e": "Nachbar는 n-변화 명사라서 4격이 den Nachbarn이에요.<br>des Studenten도 n-변화 2격이라서 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'die Ideen von meinem Kollegen'을 2격으로 바르게 바꾼 것은?",
+      "o": [
+        "die Ideen meines Kollegen",
+        "die Ideen meines Kollegens",
+        "die Ideen meines Kolleges",
+        "die Ideen meinen Kollegen"
+      ],
+      "a": 0,
+      "e": "남성 2격 소유관사는 meines예요.<br>Kollege는 n-변화라서 2격도 -n만 붙여요 — -s를 또 붙이지 않아요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "이분은 우리 어머니 상사의 따님이에요.",
+      "a": [
+        "Das ist die Tochter des Chefs meiner Mutter."
+      ],
+      "e": "2격은 꾸미는 명사 뒤에 차례로 와요.<br>die Tochter ← des Chefs ← meiner Mutter: '어머니의 상사의 딸'이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Die Bedeutung meines ___ ist „Weisheit“.",
+      "ko": "제 이름의 뜻은 '지혜'예요.",
+      "h": "Name · 남성",
+      "a": [
+        "Namens"
+      ],
+      "e": "der Name는 n-변화처럼 -n이 붙으면서 2격에는 -s까지 붙어요 — des Namens · meines Namens."
+    }
+  ]
+}

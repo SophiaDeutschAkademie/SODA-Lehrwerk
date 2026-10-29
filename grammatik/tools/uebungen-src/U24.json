@@ -1,0 +1,395 @@
+{
+  "n": "24",
+  "level": "B1",
+  "goals": [
+    "앞에 오는 말로 약변화·혼합변화·강변화를 구별해요",
+    "ein·kein·mein 뒤에서 남성 1격 -er, 중성 1·4격 -es를 붙여요",
+    "관사가 없을 때와 viele·einige·숫자 뒤에서 강변화 어미를 붙여요",
+    "형용사를 명사로 써요 — ein Bekannter · etwas Neues"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das ist wirklich ein ___ Vorschlag.",
+      "ko": "그건 정말 현명한 제안이에요.",
+      "h": "klug",
+      "a": [
+        "kluger"
+      ],
+      "e": "ein은 남성 1격을 보여 주지 못해요. 그래서 형용사가 der의 r을 붙여요 — ein kluger Vorschlag."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir haben am Wochenende ein ___ Sofa gekauft.",
+      "ko": "우리는 주말에 편한 소파를 하나 샀어요.",
+      "h": "bequem",
+      "a": [
+        "bequemes"
+      ],
+      "e": "ein + 중성 4격 → 형용사가 das의 s를 붙여요 — ein bequemes Sofa."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Meine Kollegin sucht eine ___ Wohnung in der Nähe des Bahnhofs.",
+      "ko": "제 동료는 역 근처에 있는 저렴한 집을 찾고 있어요.",
+      "h": "günstig",
+      "a": [
+        "günstige"
+      ],
+      "e": "eine가 여성을 보여 줘서 형용사는 약변화처럼 -e예요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그는 몇 년 전부터 해변의 조용한 마을에 살아요.",
+      "a": [
+        "Er wohnt seit Jahren in einem ruhigen Dorf an der Küste.",
+        "Seit Jahren wohnt er in einem ruhigen Dorf an der Küste.",
+        "In einem ruhigen Dorf an der Küste wohnt er seit Jahren"
+      ],
+      "e": "in einem ruhigen Dorf — 3격은 혼합변화에서도 -en이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich habe leider keine ___ Nachrichten für dich.",
+      "o": [
+        "guten",
+        "gute",
+        "guter",
+        "gutes"
+      ],
+      "a": 0,
+      "e": "kein + 복수 → -en. 강변화 복수(gute)와 헷갈리지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Hast du meinen ___ Regenschirm gesehen?",
+      "o": [
+        "schwarzen",
+        "schwarzer",
+        "schwarze",
+        "schwarzes"
+      ],
+      "a": 0,
+      "e": "meinen이 남성 4격을 보여 줘요 → 형용사 -en."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Zum Frühstück trinke ich immer ___ Kaffee.",
+      "ko": "아침 식사 때 저는 늘 진한 커피를 마셔요.",
+      "h": "stark · Kaffee · 남성",
+      "a": [
+        "starken"
+      ],
+      "e": "관사가 없으면 형용사가 정관사 끝글자를 붙여요. 남성 4격 den → starken."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ Gemüse ist gut für die Gesundheit.",
+      "ko": "신선한 채소는 건강에 좋아요.",
+      "h": "frisch",
+      "a": [
+        "Frisches"
+      ],
+      "e": "관사 없는 중성 1격 → das의 s → frisches."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir backen den Kuchen mit ___ Butter.",
+      "o": [
+        "weicher",
+        "weiche",
+        "weichen",
+        "weichem"
+      ],
+      "a": 0,
+      "e": "mit + 3격, 관사 없음, 여성 → der의 r → weicher Butter."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Spül das Glas mit ___ Wasser aus!",
+      "o": [
+        "warmem",
+        "warmen",
+        "warmes",
+        "warmer"
+      ],
+      "a": 0,
+      "e": "mit + 3격, 관사 없음, 중성 → dem의 m → warmem Wasser."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ Abend, meine Damen und Herren!",
+      "o": [
+        "Guten",
+        "Gute",
+        "Guter",
+        "Gutes"
+      ],
+      "a": 0,
+      "e": "인사말은 4격이에요. der Abend → 남성 4격 강변화 -en."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Im Park spielen viele ___ Kinder.",
+      "o": [
+        "kleine",
+        "kleinen",
+        "kleiner",
+        "kleines"
+      ],
+      "a": 0,
+      "e": "viele 뒤는 강변화예요. 복수 1격 → -e.",
+      "ok": "kleiner는 보기 속 틀린 어미, 비교급 아님"
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich habe schon mit einigen ___ Nachbarn gesprochen.",
+      "ko": "이미 친절한 이웃 몇 분과 이야기했어요.",
+      "h": "nett",
+      "a": [
+        "netten"
+      ],
+      "e": "einige 뒤는 강변화예요. mit + 3격 복수 → den의 n → netten."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Im Wartezimmer sitzen drei ___.",
+      "o": [
+        "Kranke",
+        "Kranken",
+        "Kranker",
+        "kranke"
+      ],
+      "a": 0,
+      "e": "형용사를 명사로 쓰면 대문자로 써요. 숫자 뒤는 강변화, 복수 1격 → Kranke."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Auf dem Markt habe ich zufällig eine ___ von dir gesehen.",
+      "ko": "시장에서 우연히 네가 아는 사람(여자)을 봤어.",
+      "h": "bekannt · 여성",
+      "a": [
+        "Bekannte"
+      ],
+      "e": "형용사 명사도 형용사 어미를 따라요. eine + 여성 4격 → Bekannte."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich habe dir etwas ___ mitgebracht.",
+      "ko": "너한테 단것을 좀 가져왔어.",
+      "h": "süß",
+      "a": [
+        "Süßes"
+      ],
+      "e": "etwas 뒤의 형용사는 대문자로 쓰고 -es를 붙여요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich brauche ein ___ Messer. Das ___ Messer hier schneidet nicht mehr.",
+      "ko": "잘 드는 칼이 필요해요. 여기 이 오래된 칼은 더 이상 안 들어요.",
+      "h": [
+        "scharf",
+        "alt"
+      ],
+      "a": [
+        "scharfes",
+        "alte"
+      ],
+      "e": "ein + 중성 4격 → -es(혼합변화).<br>das + 중성 1격 → -e(약변화)."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Trotz ___ Regens haben wir draußen gegessen.",
+      "o": [
+        "starken",
+        "starkes",
+        "starker",
+        "starkem"
+      ],
+      "a": 0,
+      "e": "관사 없는 2격 남성·중성은 예외예요. 명사에 -s가 있어서 형용사는 -en이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "___ Großeltern, vielen Dank für das Paket!",
+      "ko": "사랑하는 할아버지 할머니, 소포 정말 고마워요!",
+      "h": "lieb",
+      "a": [
+        "Liebe"
+      ],
+      "e": "편지 첫머리는 관사 없는 1격이에요. 복수 강변화 → Liebe."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Dieser Kochkurs ist nur für ___.",
+      "ko": "이 요리 강좌는 성인만 들을 수 있어요.",
+      "h": "erwachsen · 복수",
+      "a": [
+        "Erwachsene"
+      ],
+      "e": "für + 4격 복수, 관사 없음 → 강변화 -e. 명사로 쓰니 대문자예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Im Zug habe ich lange mit einem ___ gesprochen.",
+      "o": [
+        "Deutschen",
+        "Deutscher",
+        "Deutsche",
+        "deutschem"
+      ],
+      "a": 0,
+      "e": "der Deutsche는 형용사 명사예요. einem + 남성 3격 → -en."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그녀는 주말에 오랜 친구 두 명과 요리했어요.",
+      "a": [
+        "Am Wochenende hat sie mit zwei alten Freundinnen gekocht.",
+        "Sie hat am Wochenende mit zwei alten Freundinnen gekocht.",
+        "Mit zwei alten Freundinnen hat sie am Wochenende gekocht",
+        "Sie hat mit zwei alten Freundinnen am Wochenende gekocht"
+      ],
+      "e": "숫자 뒤는 강변화예요. mit + 3격 복수 → alten."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "In diesem Saft ist viel ___ Zucker.",
+      "ko": "이 주스에는 흰 설탕이 많이 들어 있어요.",
+      "h": "weiß",
+      "a": [
+        "weißer"
+      ],
+      "e": "변하지 않는 viel 뒤는 강변화예요. 남성 1격 → der의 r → weißer."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "제 남동생이 새 일자리를 구했어요.",
+      "a": [
+        "Mein kleiner Bruder hat einen neuen Job gefunden.",
+        "Einen neuen Job hat mein kleiner Bruder gefunden."
+      ],
+      "e": "mein + 남성 1격 → kleiner(-er). einen + 남성 4격 → neuen(-en).",
+      "ok": "kleiner는 혼합변화 남성 1격, 비교급 아님"
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Liebe Leserinnen und Leser,\nseit Mai gibt es in unserer Stadt einen ___ Markt. Dort bekommt man ___ Obst, ___ Käse aus der Region und viele ___ Spezialitäten.\nMit ___ Grüßen\nIhre Redaktion",
+      "ko": "독자 여러분, 5월부터 우리 도시에 새 시장이 생겼어요. 그곳에서는 신선한 과일, 이 지역의 향이 진한 치즈, 그리고 이탈리아 특산품을 많이 살 수 있어요. 편집부 드림",
+      "h": [
+        "neu",
+        "frisch",
+        "würzig",
+        "italienisch",
+        "freundlich"
+      ],
+      "a": [
+        "neuen",
+        "frisches",
+        "würzigen",
+        "italienische",
+        "freundlichen"
+      ],
+      "e": "einen + 남성 4격 → neuen · 관사 없는 중성 4격 → frisches · 관사 없는 남성 4격 → würzigen · viele 뒤 복수 4격 → italienische · mit + 3격 복수 → freundlichen."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장을 고르세요.",
+      "o": [
+        "Sie hat mir ein sehr persönlicher Brief geschrieben.",
+        "Bei gutem Wetter frühstücken wir auf der Terrasse.",
+        "Wegen starken Verkehrs hat der Bus eine Stunde gebraucht.",
+        "Die Kinder haben nichts Gesundes gegessen."
+      ],
+      "a": 0,
+      "e": "Brief는 남성이고 schreiben의 목적어(4격)예요 — einen sehr persönlichen Brief.<br>wegen starken Verkehrs는 2격 예외 -en이라서 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Ein ___ hat mir geholfen. Leider weiß ich den Namen des ___ nicht.",
+      "ko": "어떤 낯선 남자가 나를 도와줬어요. 아쉽게도 그 남자의 이름은 몰라요.",
+      "h": [
+        "fremd · 남성",
+        "fremd"
+      ],
+      "a": [
+        "Fremder",
+        "Fremden"
+      ],
+      "e": "ein + 남성 1격 → Fremder(혼합변화 -er).<br>des + 남성 2격 → Fremden(약변화 -en). 형용사 명사에는 2격 -s를 붙이지 않아요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "neu의 어미가 나머지와 다른 것은?",
+      "o": [
+        "viele ___ Bücher",
+        "alle ___ Bücher",
+        "die ___ Bücher",
+        "keine ___ Bücher"
+      ],
+      "a": 0,
+      "e": "viele 뒤는 강변화라서 viele neue Bücher예요.<br>alle·die·keine 뒤 복수는 모두 -en이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Ich wohne mit drei ___ ___ zusammen.",
+      "ko": "저는 젊은 독일인 세 명과 함께 살아요.",
+      "h": [
+        "jung",
+        "deutsch · 형용사 명사"
+      ],
+      "a": [
+        "jungen",
+        "Deutschen"
+      ],
+      "e": "숫자 뒤는 강변화, mit + 3격 복수 → -en.<br>형용사 명사 Deutsche도 같은 어미를 붙여요 — jungen Deutschen."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Im Brief stand nichts ___. Nur am Ende stand: „Alles ___!“",
+      "ko": "편지에는 중요한 내용이 하나도 없었어요. 끝에 '잘 지내!'라고만 쓰여 있었어요.",
+      "h": [
+        "wichtig",
+        "gut"
+      ],
+      "a": [
+        "Wichtiges",
+        "Gute"
+      ],
+      "e": "nichts 뒤는 강변화 -es → nichts Wichtiges.<br>alles 뒤는 약변화 -e → Alles Gute."
+    }
+  ]
+}

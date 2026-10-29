@@ -1,0 +1,465 @@
+{
+  "n": "19",
+  "level": "A2",
+  "goals": [
+    "und·aber·oder·denn·sondern 뒤에서 어순을 그대로 둬요",
+    "deshalb·trotzdem·sonst 같은 접속부사 뒤에서 동사를 먼저 놓아요",
+    "이유·결과·대조·추가·순서에 맞는 연결어를 골라요",
+    "weder … noch 같은 두 부분 접속사를 바르게 써요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich gehe heute nicht ins Büro, denn ___. (아이가 아파서)",
+      "o": [
+        "mein Kind ist krank",
+        "mein Kind krank ist",
+        "ist mein Kind krank",
+        "krank mein Kind ist"
+      ],
+      "a": 0,
+      "e": "denn은 등위접속사라서 자리를 차지하지 않아요.<br>뒤 문장은 평소 어순 그대로 — 주어 + 동사예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir haben Hunger, aber ___. (냉장고가 비었어요)",
+      "o": [
+        "der Kühlschrank ist leer",
+        "ist der Kühlschrank leer",
+        "der Kühlschrank leer ist",
+        "leer der Kühlschrank ist"
+      ],
+      "a": 0,
+      "e": "aber 뒤에서는 어순이 바뀌지 않아요 — der Kühlschrank ist leer."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Sie trinkt keinen Wein, ___ Wasser.",
+      "ko": "그녀는 와인이 아니라 물을 마셔요.",
+      "h": "",
+      "a": [
+        "sondern"
+      ],
+      "e": "앞의 kein을 바로잡을 때는 sondern이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Gehen wir zu Fuß, ___ nehmen wir ein Taxi?",
+      "ko": "걸어갈까, 아니면 택시 탈까?",
+      "h": "",
+      "a": [
+        "oder"
+      ],
+      "e": "둘 중 하나를 고르게 할 때는 oder예요.<br>oder 뒤의 질문도 어순 그대로예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Der Zug hat Verspätung, ___ komme ich zu spät. (그래서)",
+      "o": [
+        "deshalb",
+        "denn",
+        "trotzdem",
+        "sondern"
+      ],
+      "a": 0,
+      "e": "뒤에 결과가 오고 동사가 바로 이어지니 접속부사 deshalb예요.<br>denn이면 주어가 먼저 와야 해요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich habe meinen Schlüssel vergessen, deshalb ___ ___ nicht in die Wohnung.",
+      "ko": "열쇠를 잊어버려서 집에 못 들어가요.",
+      "h": [
+        "kommen",
+        ""
+      ],
+      "a": [
+        [
+          "komme"
+        ],
+        [
+          "ich"
+        ]
+      ],
+      "e": "deshalb가 첫 자리를 차지해요.<br>그래서 동사 komme가 둘째, 주어 ich가 그 뒤예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Es schneit stark, ___ fahren wir in die Berge. (그런데도)",
+      "o": [
+        "trotzdem",
+        "deshalb",
+        "aber",
+        "denn"
+      ],
+      "a": 0,
+      "e": "앞 내용과 반대되는 결과는 trotzdem이에요.<br>aber·denn이면 뒤에 주어가 먼저 와야 해요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Zieh eine Jacke an, ___ erkältest du dich.",
+      "ko": "재킷 입어, 안 그러면 감기 걸려.",
+      "h": "",
+      "a": [
+        "sonst"
+      ],
+      "e": "'그렇지 않으면'은 sonst예요.<br>sonst가 첫 자리라 동사 erkältest가 바로 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Zuerst lesen wir den Text, ___ sprechen wir darüber.",
+      "ko": "먼저 글을 읽고, 그다음에 그것에 대해 이야기해요.",
+      "h": "",
+      "a": [
+        [
+          "dann",
+          "danach"
+        ]
+      ],
+      "e": "순서는 dann·danach예요.<br>첫 자리를 차지해서 동사 sprechen이 바로 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das Zimmer ist ruhig, ___ hat es einen Balkon.",
+      "ko": "그 방은 조용하고, 게다가 발코니도 있어요.",
+      "h": "",
+      "a": [
+        [
+          "außerdem",
+          "zudem"
+        ]
+      ],
+      "e": "내용을 더할 때는 außerdem이에요.<br>첫 자리를 차지해서 hat es 순서가 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Mein Opa hat ___ ein Handy ___ einen Computer.",
+      "ko": "할아버지는 휴대폰도 컴퓨터도 없어요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        [
+          "weder"
+        ],
+        [
+          "noch"
+        ]
+      ],
+      "e": "'~도 ~도 아니다'는 weder … noch예요.<br>이미 부정이라서 kein을 쓰지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir können entweder am Freitag ___ am Samstag kommen. (둘 중 하루)",
+      "o": [
+        "oder",
+        "noch",
+        "als auch",
+        "sondern"
+      ],
+      "a": 0,
+      "e": "둘 중 하나는 entweder … oder예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Lena spielt sowohl Klavier ___ ___ Gitarre.",
+      "ko": "레나는 피아노도 기타도 쳐요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        [
+          "als"
+        ],
+        [
+          "auch"
+        ]
+      ],
+      "e": "'~도 ~도 (둘 다)'는 sowohl … als auch예요.",
+      "ok": "als는 sowohl … als auch의 als, 비교급 아님"
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Er kommt nach Hause ___ macht sofort den Fernseher an.",
+      "o": [
+        "und",
+        "denn",
+        "sondern",
+        "deshalb"
+      ],
+      "a": 0,
+      "e": "뒤 문장에 주어가 없어요. 같은 주어를 뺄 수 있는 건 und·oder·aber 뒤예요.<br>denn 뒤에서는 주어를 빼지 않고, deshalb는 동사 뒤에 주어가 필요해요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das Handy ist ___ alt, ___ es funktioniert noch gut.",
+      "ko": "그 휴대폰은 오래되긴 했지만 아직 잘 돼요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        [
+          "zwar"
+        ],
+        [
+          "aber"
+        ]
+      ],
+      "e": "'~이긴 하지만'은 zwar … aber예요.<br>aber 뒤는 어순 그대로 — es funktioniert."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "열이 있어서 오늘은 누워 있어요.",
+      "a": [
+        "Ich bleibe heute im Bett, denn ich habe Fieber.",
+        "Heute bleibe ich im Bett, denn ich habe Fieber.",
+        "Im Bett bleibe ich heute, denn ich habe Fieber"
+      ],
+      "e": "denn 뒤 문장은 주어 + 동사 순서 그대로예요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "추운데도 아이들이 밖에서 놀아요.",
+      "a": [
+        "Es ist kalt, trotzdem spielen die Kinder draußen.",
+        "Es ist kalt, die Kinder spielen trotzdem draußen.",
+        "Es ist kalt, draußen spielen die Kinder trotzdem"
+      ],
+      "e": "trotzdem이 첫 자리면 동사 spielen이 바로 와요.<br>trotzdem을 가운데 자리에 두면 도치가 없어요.",
+      "ok": "쉼표 뒤 die는 관사, 관계문 아님"
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Das Training beginnt nicht im März, ___ im April.",
+      "o": [
+        "sondern",
+        "aber",
+        "oder",
+        "denn"
+      ],
+      "a": 0,
+      "e": "앞의 nicht를 바로잡아 '3월이 아니라 4월'이라고 말하니 sondern이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich habe schlecht geschlafen, ___ bin ich müde. Ich trinke viel Kaffee, ___ ich muss wach bleiben.",
+      "ko": "잠을 잘 못 자서 피곤해요. 깨어 있어야 해서 커피를 많이 마셔요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        [
+          "deshalb",
+          "deswegen",
+          "darum",
+          "also"
+        ],
+        [
+          "denn"
+        ]
+      ],
+      "e": "첫 빈칸 뒤에는 결과가 오고 동사 bin이 바로 와요 → deshalb.<br>둘째 빈칸 뒤에는 이유가 오고 주어 ich가 먼저 와요 → denn."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "버스가 안 와서 우리는 걸어가요.",
+      "a": [
+        "Der Bus kommt nicht, deshalb gehen wir zu Fuß.",
+        "Der Bus kommt nicht, wir gehen deshalb zu Fuß.",
+        "Der Bus kommt nicht, wir gehen zu Fuß deshalb"
+      ],
+      "e": "deshalb는 첫 자리에 오면 도치, 가운데 자리에 오면 어순 그대로예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich wollte Freunde treffen, ___ habe ich zu Hause gelernt.",
+      "ko": "친구들을 만나려고 했는데, 그 대신 집에서 공부했어요.",
+      "h": "",
+      "a": [
+        "stattdessen"
+      ],
+      "e": "'그 대신'은 stattdessen이에요.<br>첫 자리를 차지해서 보조 동사 habe가 바로 와요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "___ ist das Dorf ruhig, ___ gibt es dort keinen Arzt.",
+      "ko": "한편으로 그 마을은 조용하지만, 다른 한편으로 거기에는 의사가 없어요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        [
+          "Einerseits"
+        ],
+        [
+          "andererseits"
+        ]
+      ],
+      "e": "einerseits … andererseits는 둘 다 접속부사예요.<br>그래서 두 문장 모두 바로 뒤에 동사(ist · gibt)가 와요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Ich gehe früh ins Bett, ich muss ___ um fünf Uhr aufstehen. (~거든요)",
+      "o": [
+        "nämlich",
+        "denn",
+        "deshalb",
+        "also"
+      ],
+      "a": 0,
+      "e": "nämlich는 이유를 덧붙이는 말로 가운데 자리에 와요.<br>denn은 문장 사이에만 오고, deshalb·also는 결과를 말해요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Er ist nicht nur Koch, ___ ___ Musiker.",
+      "ko": "그는 요리사일 뿐 아니라 음악가이기도 해요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        [
+          "sondern"
+        ],
+        [
+          "auch"
+        ]
+      ],
+      "e": "nicht nur … sondern auch — '~뿐 아니라 ~도'예요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "돈 가져가, 안 그러면 표값을 낼 수 없어.",
+      "a": [
+        "Nimm das Geld mit, sonst kannst du das Ticket nicht bezahlen."
+      ],
+      "e": "sonst가 첫 자리라 화법조동사 kannst가 바로 오고, 원형 bezahlen은 끝에 가요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "바른 문장은?",
+      "o": [
+        "Ich war krank, und deshalb bin ich nicht gekommen.",
+        "Ich war krank, deshalb ich bin nicht gekommen.",
+        "Ich war krank, denn bin ich nicht gekommen.",
+        "Ich war krank, aber trotzdem ich bin gekommen."
+      ],
+      "a": 0,
+      "e": "und는 0번 자리, deshalb가 첫 자리라서 바로 뒤에 동사 bin이 와요.<br>trotzdem 뒤에도 동사가 먼저 와야 하고, denn 뒤에서는 도치하지 않아요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "뒤 문장의 주어를 뺄 수 없는 것은?",
+      "o": [
+        "Ich bin müde, denn ich habe viel gearbeitet.",
+        "Er steht auf und er duscht.",
+        "Wir bleiben hier oder wir gehen ins Café.",
+        "Sie ist klein, aber sie ist stark."
+      ],
+      "a": 0,
+      "e": "같은 주어는 und·oder·aber 뒤에서만 뺄 수 있어요.<br>denn 뒤에서는 주어를 빼지 않아요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Mein Bruder isst ___ Fleisch ___ Fisch. Er kauft sein Gemüse auf dem Markt, ___ dort ist es frisch. Heute gibt es keinen Markt, ___ geht er in den Supermarkt.",
+      "ko": "우리 형은 고기도 생선도 먹지 않아요. 채소는 시장에서 사요, 거기 채소가 신선하기 때문이에요. 오늘은 장이 서지 않아서 슈퍼마켓에 가요.",
+      "h": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "a": [
+        [
+          "weder"
+        ],
+        [
+          "noch"
+        ],
+        [
+          "denn"
+        ],
+        [
+          "deshalb",
+          "deswegen",
+          "darum",
+          "also"
+        ]
+      ],
+      "e": "weder … noch로 둘 다 부정해요.<br>이유 + 어순 그대로(dort ist) → denn. 결과 + 도치(geht er) → deshalb."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "네가 사과하든지, 아니면 나 너랑 더는 말 안 해.",
+      "a": [
+        "Entweder du entschuldigst dich, oder ich rede nicht mehr mit dir.",
+        "Entweder entschuldigst du dich, oder ich rede nicht mehr mit dir."
+      ],
+      "e": "entweder로 시작하면 도치해도 되고 안 해도 돼요.<br>oder 뒤는 어순 그대로예요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "빈칸에 들어갈 수 없는 것은? 'Der Aufzug ist kaputt, ___ nehmen wir die Treppe.'",
+      "o": [
+        "denn",
+        "deswegen",
+        "darum",
+        "also"
+      ],
+      "a": 0,
+      "e": "빈칸 뒤에 동사 nehmen이 바로 와서 접속부사 자리예요. deswegen·darum·also는 모두 '그래서'예요.<br>denn은 이유를 말하고 도치를 일으키지 않아요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "어느 부분이 틀렸나요? 'Ich wollte dich anrufen, aber hatte ich keine Zeit, deshalb schreibe ich dir jetzt.'",
+      "o": [
+        "aber hatte ich",
+        "deshalb schreibe ich",
+        "wollte dich anrufen",
+        "schreibe ich dir jetzt"
+      ],
+      "a": 0,
+      "e": "aber는 자리를 차지하지 않아서 도치하지 않아요 — aber ich hatte keine Zeit.<br>deshalb 뒤의 도치는 맞아요."
+    }
+  ]
+}

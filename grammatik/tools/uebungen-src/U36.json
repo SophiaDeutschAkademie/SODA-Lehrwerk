@@ -1,0 +1,411 @@
+{
+  "n": "36",
+  "level": "B2",
+  "goals": [
+    "화법조동사가 주어의 일인지 말하는 사람의 추측인지 구별해요",
+    "확신의 정도에 맞게 muss·müsste·dürfte·kann·könnte·kann nicht를 골라요",
+    "sollen으로 들은 말을, wollen으로 본인의 주장을 전해요",
+    "지난 일의 추측을 화법조동사 + 과거분사 + haben/sein으로 말해요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Mia hat heute schon zehnmal gegähnt. Sie muss sehr müde sein. — 이 muss의 뜻은?",
+      "o": [
+        "피곤한 게 틀림없다(추측)",
+        "피곤해야 한다(의무)",
+        "피곤하대요(소문)",
+        "피곤해도 된다(허가)"
+      ],
+      "a": 0,
+      "e": "하품을 계속한다는 근거로 말하는 사람이 판단해요 → 추측의 muss."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich muss heute Abend noch meine Bewerbung schreiben. — 이 muss의 뜻은?",
+      "o": [
+        "써야 한다(의무)",
+        "쓴 게 틀림없다(추측)",
+        "썼대요(소문)",
+        "쓸 수 있다(능력)"
+      ],
+      "a": 0,
+      "e": "주어(ich)가 해야 하는 일이에요 → 의무의 muss(10과)."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Überall auf der Straße sind Pfützen. Es ___ in der Nacht geregnet haben.",
+      "ko": "길 곳곳에 물웅덩이가 있어요. 밤에 비가 온 게 틀림없어요.",
+      "h": "müssen",
+      "a": [
+        "muss"
+      ],
+      "e": "근거가 분명한 추측 → muss. 지난 일이라서 끝에 과거분사 + haben을 둬요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Frag doch Jonas, er ___ die Antwort wissen. Er ist schließlich Informatiker.",
+      "ko": "요나스에게 물어봐요. 그는 답을 알 거예요(그래야 정상이에요). 어쨌든 IT 전문가잖아요.",
+      "h": "müssen · 기대",
+      "a": [
+        "müsste"
+      ],
+      "e": "'그래야 정상이다'라는 기대 → müsste."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "수리비는 아마 많이 들지 않을 거예요.",
+      "a": [
+        "Die Reparatur dürfte nicht viel kosten."
+      ],
+      "e": "'아마'의 추측 → dürfte. 화법조동사는 두 번째, 원형 kosten은 맨 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Frau Lang ___ nicht im Urlaub sein. Ich habe sie doch heute Morgen beim Bäcker gesehen.",
+      "ko": "랑 씨가 휴가 중일 리가 없어요. 오늘 아침에 빵집에서 그녀를 봤거든요.",
+      "h": "können",
+      "a": [
+        "kann"
+      ],
+      "e": "'~⁠일 리가 없다' → kann nicht."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'그 호텔은 아주 시끄럽대요.' (인터넷 후기에서 읽음)",
+      "o": [
+        "Das Hotel soll sehr laut sein.",
+        "Das Hotel will sehr laut sein.",
+        "Das Hotel muss sehr laut sein.",
+        "Das Hotel darf sehr laut sein."
+      ],
+      "a": 0,
+      "e": "남들이 하는 말을 전할 때 → sollen."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Junge ___ die Vase nicht kaputt gemacht haben. Aber wer war es dann?",
+      "ko": "그 남자아이는 자기가 꽃병을 깨지 않았다고 주장해요. 그럼 누가 그랬을까요?",
+      "h": "",
+      "a": [
+        "will"
+      ],
+      "e": "주어 자신의 주장(말하는 사람은 의심함) → wollen. 주장의 wollen은 주로 지난 일에 써요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Mein Schlüssel ist weg. Ich muss ihn im Taxi ___ ___.",
+      "ko": "열쇠가 없어요. 택시에 두고 내린 게 틀림없어요.",
+      "h": [
+        "vergessen",
+        ""
+      ],
+      "a": [
+        "vergessen",
+        "haben"
+      ],
+      "e": "지난 일의 추측 → muss + 과거분사 + haben. vergessen의 과거분사는 원형과 모양이 같아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Im ganzen Haus ist es dunkel. Die Nachbarn müssen schon in den Urlaub ___ ___.",
+      "ko": "집 전체가 깜깜해요. 이웃들이 벌써 휴가를 떠난 게 틀림없어요.",
+      "h": [
+        "fahren",
+        ""
+      ],
+      "a": [
+        "gefahren",
+        "sein"
+      ],
+      "e": "fahren은 현재완료에서 sein을 써요 → gefahren sein."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Sie dürfte schon zu Hause sein. = Sie ist ___ schon zu Hause.",
+      "o": [
+        "wahrscheinlich",
+        "bestimmt",
+        "sicher nicht",
+        "kaum"
+      ],
+      "a": 0,
+      "e": "dürfte는 '아마' → wahrscheinlich."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Er ist bestimmt beim Training. = Er ___ beim Training sein.",
+      "o": [
+        "muss",
+        "könnte",
+        "kann nicht",
+        "soll"
+      ],
+      "a": 0,
+      "e": "bestimmt(틀림없이)는 muss와 같은 정도예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "'그는 어제 밤늦게까지 일해야 했어요.'\nEr ___ gestern bis spät in die Nacht arbeiten.",
+      "ko": "그는 어제 밤늦게까지 일해야 했어요.",
+      "h": "müssen",
+      "a": [
+        "musste"
+      ],
+      "e": "과거의 의무 → 과거형 musste + 원형.<br>muss + gearbeitet haben이면 '일한 게 틀림없다'는 추측이 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Was teuer ist, ___ nicht unbedingt gut sein.",
+      "ko": "비싼 것이 꼭 좋은 건 아니에요.",
+      "h": "müssen",
+      "a": [
+        "muss"
+      ],
+      "e": "muss nicht = '꼭 ~⁠인 것은 아니다'예요. kann nicht(~⁠일 리 없다)와 구별해요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "소포는 내일 너한테 도착할 거예요(그래야 정상이에요).",
+      "a": [
+        "Das Paket müsste morgen bei dir ankommen.",
+        "Morgen müsste das Paket bei dir ankommen.",
+        "Das Paket müsste bei dir morgen ankommen",
+        "Bei dir müsste das Paket morgen ankommen"
+      ],
+      "e": "기대 → müsste. 분리동사 ankommen은 원형 그대로 맨 끝에 놓아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Der Zeuge ___ den Täter genau gesehen haben, sagt die Polizei. 경찰 말로는 증인이 범인을 정확히 봤대요",
+      "o": [
+        "soll",
+        "will",
+        "muss",
+        "dürfte"
+      ],
+      "a": 0,
+      "e": "경찰(다른 사람)의 말을 전해요 → sollen."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "확신이 가장 약한 문장은?",
+      "o": [
+        "Er könnte recht haben.",
+        "Er dürfte recht haben.",
+        "Er muss recht haben.",
+        "Er hat bestimmt recht."
+      ],
+      "a": 0,
+      "e": "확신의 순서는 muss·bestimmt > dürfte > könnte예요. könnte가 가장 조심스러워요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Der Sänger ___ letzte Woche heimlich in Seoul gewesen ___.",
+      "ko": "그 가수가 지난주에 몰래 서울에 왔었대요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "soll",
+        "sein"
+      ],
+      "e": "소문 → sollen. 지난 일이고 sein의 과거분사는 gewesen, 보조 동사도 sein이에요 → gewesen sein."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "뜻이 '그녀는 그 편지를 받은 게 틀림없어요'인 문장은?",
+      "o": [
+        "Sie muss den Brief bekommen haben.",
+        "Sie musste den Brief bekommen.",
+        "Sie hat den Brief bekommen müssen.",
+        "Sie soll den Brief bekommen haben."
+      ],
+      "a": 0,
+      "e": "추측은 지금 → muss(현재형), 지난 일 → bekommen haben.<br>musste·hat … müssen은 과거의 의무, soll은 소문이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Tim ___ das Geld nicht genommen ___. Er war den ganzen Nachmittag bei mir.",
+      "ko": "팀이 그 돈을 가져갔을 리가 없어요. 오후 내내 저랑 같이 있었거든요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "kann",
+        "haben"
+      ],
+      "e": "'~⁠였을 리 없다' → kann nicht + 과거분사 + haben."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리 선생님은 아마 50대 초반일 거예요.",
+      "a": [
+        "Unsere Lehrerin dürfte Anfang fünfzig sein.",
+        "Anfang fünfzig dürfte unsere Lehrerin sein"
+      ],
+      "e": "'아마' → dürfte. 원형 sein이 맨 끝이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Laura antwortet nicht auf meine Nachrichten. Sie ___ noch im Kino sein, aber ich bin nicht sicher.",
+      "ko": "라우라가 제 메시지에 답이 없어요. 아직 영화관에 있을 수도 있지만 확실하지는 않아요.",
+      "h": "",
+      "a": [
+        [
+          "könnte",
+          "kann"
+        ]
+      ],
+      "e": "확실하지 않은 가능성 → könnte 또는 kann. könnte가 더 조심스러워요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Mein Kollege ___ das ganze Buch an einem Wochenende gelesen haben — das glaube ich ihm nicht.",
+      "o": [
+        "will",
+        "soll",
+        "muss",
+        "dürfte"
+      ],
+      "a": 0,
+      "e": "주어 자신이 그렇게 주장하고, 말하는 사람은 믿지 않아요 → wollen."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Sie hat ihr ganzes Geld wahrscheinlich schon ausgegeben.\n= Sie ___ ihr ganzes Geld schon ausgegeben ___.",
+      "ko": "그녀는 아마 돈을 벌써 다 써 버렸을 거예요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        [
+          "dürfte",
+          "wird"
+        ],
+        "haben"
+      ],
+      "e": "wahrscheinlich(아마) → dürfte, 지난 일 → ausgegeben haben.<br>26과의 미래완료 wird … haben도 같은 정도의 추측이에요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Der Hund muss aus dem Garten gelaufen haben.",
+        "Er dürfte die Nachricht inzwischen gelesen haben.",
+        "Sie soll als Kind in Kanada gelebt haben.",
+        "Sie kann gestern unmöglich in Hamburg gewesen sein."
+      ],
+      "a": 0,
+      "e": "laufen은 이동이라 현재완료에서 sein을 써요 → gelaufen sein.<br>나머지는 모두 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Ein Wolf ___ in der Nähe des Dorfes gesehen worden sein, schreibt die Zeitung. Ein Bauer ___ ihn sogar fotografiert haben, aber er zeigt das Foto niemandem. Es ___ also auch ein großer Hund gewesen sein. Ein echter Wolf ___ hier eigentlich nicht leben, denn der nächste Wald ist 100 Kilometer entfernt.",
+      "ko": "신문에 따르면 마을 근처에서 늑대가 목격됐대요. 한 농부는 늑대 사진까지 찍었다고 주장하지만 아무에게도 사진을 보여 주지 않아요. 그러니 큰 개였을 수도 있어요. 진짜 늑대가 사실 여기 살 리는 없어요, 가장 가까운 숲이 100킬로미터 떨어져 있거든요.",
+      "h": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "a": [
+        "soll",
+        "will",
+        [
+          "könnte",
+          "kann"
+        ],
+        "kann"
+      ],
+      "e": "신문의 말 → soll · 농부 자신의 주장(의심스러움) → will · 가능성 → könnte/kann · ~⁠일 리 없다 → kann nicht.<br>gesehen worden sein은 수동태의 완료 부정형이에요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그 드라마 시리즈는 이미 여러 나라에서 방영됐대요.",
+      "a": [
+        "Die Serie soll schon in vielen Ländern gezeigt worden sein.",
+        "In vielen Ländern soll die Serie schon gezeigt worden sein.",
+        "Die Serie soll in vielen Ländern schon gezeigt worden sein"
+      ],
+      "e": "소문 → soll. 수동태 현재완료(ist gezeigt worden)를 끝에 놓으면 gezeigt worden sein이 돼요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "Man erzählt, dass der Koch früher in Paris gearbeitet hat. — 같은 뜻은?",
+      "o": [
+        "Der Koch soll früher in Paris gearbeitet haben.",
+        "Der Koch will früher in Paris gearbeitet haben.",
+        "Der Koch sollte früher in Paris arbeiten.",
+        "Der Koch muss früher in Paris gearbeitet haben."
+      ],
+      "a": 0,
+      "e": "사람들이 하는 말(man erzählt) → soll + 과거분사 + haben.<br>sollte + 원형은 '일해야 했다', will은 요리사 본인의 주장이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Ich bin sicher, dass sie den Kuchen selbst gebacken hat.\n→ Sie ___ den Kuchen selbst ___ ___.",
+      "ko": "그녀가 케이크를 직접 구운 게 틀림없어요.",
+      "h": [
+        "",
+        "backen",
+        ""
+      ],
+      "a": [
+        "muss",
+        "gebacken",
+        "haben"
+      ],
+      "e": "ich bin sicher → muss. 지난 일이라서 끝에 과거분사 gebacken + haben을 놓아요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'그녀는 그때 아마 겨우 열여덟 살이었을 거예요.'",
+      "o": [
+        "Sie dürfte damals erst achtzehn gewesen sein.",
+        "Sie durfte damals erst achtzehn sein.",
+        "Sie dürfte damals erst achtzehn sein gewesen.",
+        "Sie darf damals erst achtzehn gewesen sein."
+      ],
+      "a": 0,
+      "e": "추측의 dürfen은 늘 dürfte예요. 지난 일 → gewesen sein(과거분사 → sein 순서).<br>durfte는 과거의 허가, darf는 추측에 쓰지 않아요."
+    }
+  ]
+}
