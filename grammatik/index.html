@@ -604,6 +604,9 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
 .sx-end-ex{padding:22px 28px;border-bottom:1px solid var(--sx-line)}
 @media (max-width:640px){.sx-end-ex{padding:18px}.qi{padding:18px 16px}.qb{height:42px}}
 @media print{.qa,.qscore{display:none!important}.qin{border-bottom:1px solid #000;background:none}.qpool{display:none}}
+.uc-sub{margin-top:18px;align-self:flex-start;padding:6px 2px;font-size:15px;font-weight:600;color:var(--uc-mut);text-decoration:none;border-bottom:1px solid var(--uc-bd)}
+.uc-sub:hover{color:var(--uc-ink)}
+#utoc .sx-sub{margin-top:-6px}
 </style>
 </head>
 <body>
@@ -616,6 +619,16 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     <button type="button" class="sx-install" id="sx-install" hidden>홈 화면에 앱 추가</button>
   </div>
   <footer class="uc-foot"><span>Innovative Learning Beyond the Traditional</span><span>37 Lektionen</span></footer>
+</div>
+
+<div id="ucover" hidden class="sx-view uc" data-no-print>
+  <header class="uc-brand"><svg class="uc-logo" viewBox="0 0 1157 1333" aria-hidden="true" focusable="false"><path fill="#57585A" d="M0 348.6 686 0v678.2L0 1026.8z"/><path fill="#ED1C24" d="M235.4 501.5 921.4 153v678.2l-686 348.6z"/><path fill="#F3C811" d="M470.8 654.3 1156.8 305.7v678.2l-686 348.6z"/></svg><div class="uc-brand-t"><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div></header>
+  <div class="uc-hero">
+    <h1 class="uc-title"><span class="t1">SODA</span><span class="t2">ÜBUNGEN</span></h1>
+    <a class="uc-cta" href="#/uebungen/liste">시작하기 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+    <a class="uc-sub" href="#/inhalt">문법 교재로 가기</a>
+  </div>
+  <footer class="uc-foot"><span>Innovative Learning Beyond the Traditional</span><span>37 Übungen</span></footer>
 </div>
 
 <div id="toc" class="sx-view sx-toc" hidden data-no-print>
@@ -638,17 +651,28 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     </div>
     <a class="sx-resume" id="sx-resume" href="#/inhalt" hidden></a>
     <ol class="sx-list" id="sx-list"></ol>
-    <h2 class="sx-h sx-h2" id="sx-uh">연습문제<em>Übungen</em></h2>
+    <div class="sx-foot"><button type="button" class="sx-reset" id="sx-reset">진행 상황 초기화</button></div>
+  </div>
+</div>
+
+<div id="utoc" class="sx-view sx-toc" hidden data-no-print>
+  <header class="sx-bar">
+    <div class="sx-bar-in">
+      <div class="sx-brand"><svg viewBox="0 0 1157 1333" aria-hidden="true"><path fill="#57585A" d="M0 348.6 686 0v678.2L0 1026.8z"/><path fill="#ED1C24" d="M235.4 501.5 921.4 153v678.2l-686 348.6z"/><path fill="#F3C811" d="M470.8 654.3 1156.8 305.7v678.2l-686 348.6z"/></svg><span>Lehrwerk Übungen</span></div>
+      <a class="sx-count" href="#/inhalt">교재 목차</a>
+    </div>
+  </header>
+  <div class="sx-page">
+    <h1 class="sx-h" id="sx-uh">연습 목차</h1>
     <p class="sx-sub" id="sx-usub">각 과의 문법을 기본·중간·도전 문제로 직접 풀어 봐요.</p>
     <ol class="sx-list" id="sx-ulist"></ol>
-    <div class="sx-foot"><button type="button" class="sx-reset" id="sx-reset">진행 상황 초기화</button></div>
   </div>
 </div>
 
 <div id="lesson" class="sx-view sx-lesson" hidden>
   <header class="sx-bar" data-no-print>
     <div class="sx-bar-in">
-      <a class="sx-back" id="sx-back" href="#/inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg>목차</a>
+      <a class="sx-back" id="sx-back" href="#/inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg><span id="sx-back-t">목차</span></a>
       <div class="sx-now"><b id="sx-now-n"></b><span id="sx-now-t"></span></div>
       <a class="sx-count" id="sx-mini" href="#/inhalt" aria-label="학습 진행 보기">완료 <b data-count>0</b> / 37</a>
     </div>
@@ -934,6 +958,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
   var openSeq = 0, mounted = false;
   function openLesson(n) {
     var m = BY[n], r = rec(n), seq = ++openSeq;
+    chrome(false);
     var resumeAt = (!r.done && r.pos > 0.02 && r.pos < 0.98) ? r.pos : 0;
     curN = n; mounted = false;
     r.seen = true; r.t = Date.now(); state.last = n;
@@ -998,8 +1023,8 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
       '<div class="sx-end-ex"><div class="sx-end-t">설명이 헷갈리면 교재로 돌아가요</div>' +
       '<div class="sx-end-act"><a class="sx-btn is-ghost" href="#/L' + n + '">Lektion ' + n + ' 교재 보기</a></div></div>' +
       '<nav class="sx-end-nav" aria-label="연습 이동">' +
-        (prev ? exLink(BY[prev.n], '이전 연습') : '<a href="#/inhalt"><small>처음</small><span>목차로 돌아가기</span></a>') +
-        (next ? exLink(BY[next.n], '다음 연습').replace('<a ', '<a class="is-go" ') : '<a class="is-go" href="#/inhalt"><small>마지막 연습</small><span>목차로 돌아가기</span></a>') +
+        (prev ? exLink(BY[prev.n], '이전 연습') : '<a href="#/uebungen/liste"><small>처음</small><span>연습 목차로 돌아가기</span></a>') +
+        (next ? exLink(BY[next.n], '다음 연습').replace('<a ', '<a class="is-go" ') : '<a class="is-go" href="#/uebungen/liste"><small>마지막 연습</small><span>연습 목차로 돌아가기</span></a>') +
       '</nav>';
     var foot = main.querySelector('.brand-foot');
     if (foot) main.insertBefore(box, foot); else main.appendChild(box);
@@ -1012,8 +1037,15 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     });
   }
 
+  function chrome(ex) {
+    $('sx-back').setAttribute('href', ex ? '#/uebungen/liste' : '#/inhalt');
+    $('sx-back-t').textContent = ex ? '연습 목차' : '목차';
+    $('sx-mini').hidden = !!ex;
+  }
+
   function openExercise(n) {
     var m = BY[n], seq = ++openSeq;
+    chrome(true);
     curN = null; axOpen = false; curU = n; mounted = false;
     document.title = 'Übung ' + n + ' · ' + m.ko;
     $('sx-now-n').textContent = '연습 ' + n;
@@ -1168,6 +1200,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
 
   function openAppendix() {
     var seq = ++openSeq;
+    chrome(false);
     var resumeAt = (state.ax > 0.02 && state.ax < 0.98) ? state.ax : 0;
     curN = null; axOpen = true; mounted = false;
     document.title = AX.title;
@@ -1289,7 +1322,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
   });
 
   /* ── routing: #/ (cover) · #/inhalt (contents) · #/L01 … #/L37 · #/U01 … #/U37 (exercises) · #/anhang (appendix) ─ */
-  var views = { cover: $('cover'), toc: $('toc'), lesson: $('lesson') };
+  var views = { cover: $('cover'), toc: $('toc'), ucover: $('ucover'), utoc: $('utoc'), lesson: $('lesson') };
   var cur = null, prevRoute = null, tocY = 0;
 
   function parse() {
@@ -1300,7 +1333,8 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     if (u && UBY[u[1]]) return { v: 'lesson', u: true, n: u[1], key: 'U' + u[1] };
     if (h === '#/anhang') return { v: 'lesson', ax: true, key: 'AX' };
     if (h === '#/inhalt') return { v: 'toc', key: 'toc' };
-    if (h === '#/uebungen') return { v: 'toc', key: 'toc', ex: true };
+    if (h === '#/uebungen') return { v: 'ucover', key: 'ucover' };
+    if (h === '#/uebungen/liste') return { v: 'utoc', key: 'utoc' };
     return { v: 'cover', key: 'cover' };
   }
 
@@ -1316,16 +1350,10 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     });
   }
 
-  function scrollToEx() {
-    var h = $('sx-uh');
-    if (!h || h.hidden) return jump(0);
-    window.scrollTo(0, Math.max(0, h.getBoundingClientRect().top + window.scrollY - 24));
-  }
-
   function route() {
     var r = parse();
-    if (r.key === cur) { if (r.ex && cur === 'toc') scrollToEx(); return; }
-    if (cur === 'toc') tocY = window.scrollY;
+    if (r.key === cur) return;
+    if (cur === 'toc' || cur === 'utoc') tocY = window.scrollY;
     if (cur === 'AX' || (cur && (cur.charAt(0) === 'L' || cur.charAt(0) === 'U'))) leaveLesson();
     show(r.v);
     prevRoute = cur;
@@ -1333,8 +1361,13 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     if (r.v === 'toc') {
       document.title = 'Lehrwerk Grammatik';
       renderContents();
-      if (r.ex) scrollToEx();
-      else jump(prevRoute && (prevRoute === 'AX' || prevRoute.charAt(0) === 'L' || prevRoute.charAt(0) === 'U') ? tocY : 0);
+      jump(prevRoute && (prevRoute === 'AX' || prevRoute.charAt(0) === 'L') ? tocY : 0);
+    } else if (r.v === 'utoc') {
+      document.title = 'Lehrwerk Übungen';
+      jump(prevRoute && prevRoute.charAt(0) === 'U' && prevRoute !== 'utoc' && prevRoute !== 'ucover' ? tocY : 0);
+    } else if (r.v === 'ucover') {
+      document.title = 'Lehrwerk Übungen';
+      jump(0);
     } else if (r.v === 'lesson') {
       if (r.ax) openAppendix(); else if (r.u) openExercise(r.n); else openLesson(r.n);
     } else {
@@ -1344,7 +1377,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
   }
 
   function backToContents(e) {
-    if (prevRoute === 'toc') { e.preventDefault(); history.back(); }
+    if (prevRoute === (curU ? 'utoc' : 'toc')) { e.preventDefault(); history.back(); }
   }
   $('sx-back').addEventListener('click', backToContents);
   $('sx-mini').addEventListener('click', backToContents);
