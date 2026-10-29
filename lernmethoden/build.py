@@ -446,7 +446,7 @@ def build():
   </div>
   <div class="hero">
     <h1 class="title" tabindex="-1"><span class="t1">SODA</span><span class="t2">Lernmethoden</span></h1>
-    <p class="sub">독일어 공부법. 연구가 확인한 것과 수업에서 본 것을 구분해서 정리했습니다.</p>
+    <p class="sub">독일어를 효과적으로 공부하려면 무엇을 어떻게 해야 하는지, 연구를 근거로 정리했습니다.</p>
     <a class="cta" href="#inhalt">목차 보기
       %(arrow)s
     </a>
