@@ -73,7 +73,8 @@ def render_item(n, idx, it):
                 '<button type="button" class="qb is-ghost" data-q="redo">다시 풀기</button></div>'
                 '<div class="qe"><div class="qsol">정답 · %s</div>%s</div></div>') % (attr(norm), qn, sent, md(it['ko']), sol, md(it['e']))
     # order
-    words = it['a'][0].split()
+    PW = lambda x: re.sub(r'[.,!?;:]', '', x).split()
+    words = PW(it['a'][0])
     idxs = list(range(len(words)))
     for _ in range(20):
         rng.shuffle(idxs)
@@ -86,7 +87,7 @@ def render_item(n, idx, it):
             '<button type="button" class="qb is-ghost" data-q="show">정답 보기</button>'
             '<button type="button" class="qb is-ghost" data-q="redo">다시 풀기</button></div>'
             '<div class="qe"><div class="qsol">정답 · <b>%s</b></div>%s</div></div>') % (
-        attr(it['a']), qn, md(it['q']), md(it['ko']), chips, H.escape(it['a'][0]), md(it['e']))
+        attr([' '.join(PW(x)) for x in it['a']]), qn, md(it['q']), md(it['ko']), chips, H.escape(it['a'][0]), md(it['e']))
 
 
 def chapter_html(d, meta, head, foot):
@@ -100,7 +101,8 @@ def chapter_html(d, meta, head, foot):
              '<div class="x-goals"><div class="x-goals-t">이 연습에서 확인할 것</div>%s</div>'
              '<div class="x-goals" style="margin-top:14px"><div class="x-goals-t">풀이 방법</div>'
              '<div class="x-goal">보기를 고르거나, 빈칸에 쓰거나, 단어를 눌러 문장을 만들어요</div>'
-             '<div class="x-goal">빈칸 옆 괄호와 한국어 뜻이 힌트예요. 대문자와 소문자는 구별하지 않아요</div></div>') % (
+             '<div class="x-goal">빈칸 옆 괄호와 한국어 뜻이 힌트예요. 대문자와 소문자는 구별하지 않아요</div>'
+             '<div class="x-goal">단어 배열에는 문장부호가 없어요. 문법에 맞는 어순이면 모두 정답이에요</div></div>') % (
         n, d['level'], cnt[1], cnt[2], cnt[3], goals)
     out = [head.replace('%%LEKTION%%', n).replace('%%KO%%', H.escape(meta['ko'])).replace('%%DE%%', H.escape(meta['de'])).replace('%%INTRO%%', intro)]
     num = 0

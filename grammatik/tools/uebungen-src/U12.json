@@ -176,7 +176,8 @@
       "ko": "나는 어제 할머니께 전화했어요.",
       "a": [
         "Ich habe gestern meine Oma angerufen.",
-        "Gestern habe ich meine Oma angerufen."
+        "Gestern habe ich meine Oma angerufen.",
+        "Meine Oma habe ich gestern angerufen"
       ],
       "e": "보조 동사 habe가 두 번째 자리, 과거분사 angerufen이 맨 끝이에요."
     },
@@ -302,7 +303,10 @@
       "ko": "그녀는 지난여름에 혼자 일본을 여행했어요.",
       "a": [
         "Sie ist letzten Sommer allein nach Japan gereist.",
-        "Letzten Sommer ist sie allein nach Japan gereist."
+        "Letzten Sommer ist sie allein nach Japan gereist.",
+        "Allein ist sie letzten Sommer nach Japan gereist",
+        "Nach Japan ist sie letzten Sommer allein gereist",
+        "Sie ist allein letzten Sommer nach Japan gereist"
       ],
       "e": "reisen은 이동이라서 sein이에요.<br>과거분사 gereist가 맨 끝에 와요."
     },
@@ -312,7 +316,8 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "너희 그 선물 벌써 포장했어?",
       "a": [
-        "Habt ihr das Geschenk schon eingepackt?"
+        "Habt ihr das Geschenk schon eingepackt?",
+        "Habt ihr schon das Geschenk eingepackt"
       ],
       "e": "einpacken은 분리동사라서 ein + ge + packt예요.<br>Ja/Nein 의문문이라서 보조 동사 Habt가 맨 앞이에요."
     },
@@ -394,7 +399,9 @@
       "ko": "나는 오늘 우산을 안 가져갔어요.",
       "a": [
         "Ich habe heute meinen Regenschirm nicht mitgenommen.",
-        "Heute habe ich meinen Regenschirm nicht mitgenommen."
+        "Heute habe ich meinen Regenschirm nicht mitgenommen.",
+        "Meinen Regenschirm habe ich heute nicht mitgenommen",
+        "Ich habe meinen Regenschirm heute nicht mitgenommen"
       ],
       "e": "mitnehmen은 분리 + 불규칙 — mit + ge + nommen.<br>nicht는 과거분사 바로 앞에 와요."
     },

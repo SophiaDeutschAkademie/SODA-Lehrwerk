@@ -1,384 +1,388 @@
 {
- "n": "22",
- "level": "A2",
- "goals": [
-  "dieser·jeder·welcher·alle 같은 관사를 정관사처럼 변화시켜요",
-  "welcher와 was für ein을 구별하고, ein의 격을 문장에서 정해요",
-  "der·die·das와 man·jemand·niemand를 격에 맞게 써요",
-  "einer·keiner·eins·welche로 명사를 대신해요"
- ],
- "items": [
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "___ Rucksack gehört meinem Bruder. (이 배낭)",
-   "o": [
-    "Dieser",
-    "Diese",
-    "Dieses",
-    "Diesen"
-   ],
-   "a": 0,
-   "e": "Rucksack은 남성이고 문장의 주어(1격)예요.<br>der Rucksack → dieser Rucksack."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Kennst du ___ Restaurant am Marktplatz?",
-   "ko": "시장 광장에 있는 이 식당 알아?",
-   "h": "dies- · Restaurant · 중성",
-   "a": [
-    "dieses"
-   ],
-   "e": "중성 4격은 das → dieses예요. -s가 -es가 돼요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Meine Oma ruft ___ Sonntag an.",
-   "ko": "우리 할머니는 일요일마다 전화하세요.",
-   "h": "jed- · Sonntag · 남성",
-   "a": [
-    "jeden"
-   ],
-   "e": "'~마다'를 뜻하는 시간 표현은 4격이에요.<br>der Sonntag → den Sonntag → jeden Sonntag."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "Wir fahren ___ Jahr ans Meer. (해마다)",
-   "o": [
-    "jedes",
-    "jeden",
-    "jede",
-    "alle"
-   ],
-   "a": 0,
-   "e": "Jahr는 중성이에요. 시간 표현 4격, 중성 → jedes Jahr.<br>alle는 복수 명사와 써요."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "Von ___ Gleis fährt unser Zug nach Leipzig ab?",
-   "o": [
-    "welchem",
-    "welchen",
-    "welches",
-    "welcher"
-   ],
-   "a": 0,
-   "e": "von은 3격 전치사예요. das Gleis → von dem Gleis → von welchem Gleis."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Was für ___ Hund habt ihr? — Einen Dackel.",
-   "ko": "너희는 어떤 개를 키워? — 닥스훈트.",
-   "h": "Hund · 남성",
-   "a": [
-    "einen"
-   ],
-   "e": "was für의 für는 격을 정하지 않아요. haben의 목적어라서 4격, 남성 → einen."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "Kennst du die Frau dort? — Ja, ___ kenne ich aus dem Kurs.",
-   "o": [
-    "die",
-    "der",
-    "den",
-    "das"
-   ],
-   "a": 0,
-   "e": "die Frau를 대명사로 받아요. 4격 여성은 die 그대로예요.",
-   "ok": "쉼표 뒤 die는 관계대명사가 아니라 지시대명사(22과)"
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Wie ___ man dieses Wort aus?",
-   "ko": "이 단어는 어떻게 발음해요?",
-   "h": "aussprechen",
-   "a": [
-    "spricht"
-   ],
-   "e": "man의 동사는 er와 같은 모양이에요. sprechen은 e → i로 바뀌어요 — man spricht … aus."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "___ Kinder haben Angst vor Spinnen. (어떤 아이들은)",
-   "o": [
-    "Manche",
-    "Mancher",
-    "Manches",
-    "Manchen"
-   ],
-   "a": 0,
-   "e": "복수 1격은 die → manche예요."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "Ich habe geklingelt, aber ___ hat aufgemacht. (아무도 문을 열지 않았어요)",
-   "o": [
-    "niemand",
-    "jemand",
-    "nichts",
-    "alles"
-   ],
-   "a": 0,
-   "e": "사람이 '아무도 없다'는 niemand예요. nichts는 사물에 써요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Im Kühlschrank ist ___. Wir müssen einkaufen.",
-   "ko": "냉장고에 아무것도 없어요. 장을 봐야 해요.",
-   "h": "",
-   "a": [
-    "nichts"
-   ],
-   "e": "사물이 '아무것도 없다'는 nichts예요. nichts는 모양이 변하지 않아요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Ich brauche ein Ladekabel. Hast du ___?",
-   "ko": "충전 케이블이 필요해. 하나 있어?",
-   "h": "Ladekabel · 중성",
-   "a": [
-    [
-     "eins",
-     "eines"
-    ]
-   ],
-   "e": "명사 없이 쓰는 ein은 끝으로 성과 격을 보여 줘요. 중성 4격 → eins."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Brauchen wir noch Servietten? — Ja, wir haben ___ mehr.",
-   "ko": "냅킨이 더 필요해? — 응, 이제 하나도 없어.",
-   "h": "",
-   "a": [
-    "keine"
-   ],
-   "e": "복수 명사를 '하나도 없다'로 받을 때는 keine예요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Hast du Briefmarken? Ich brauche ___ für die Postkarten.",
-   "ko": "우표 있어? 엽서에 붙일 게 몇 장 필요해.",
-   "h": "",
-   "a": [
-    "welche"
-   ],
-   "e": "ein에는 복수형이 없어요. 복수 명사를 '몇 개'로 받을 때는 welche를 써요."
-  },
-  {
-   "lv": 1,
-   "t": "order",
-   "q": "단어를 알맞은 순서로 놓으세요.",
-   "ko": "여기서는 사진을 찍으면 안 돼요.",
-   "a": [
-    "Hier darf man keine Fotos machen.",
-    "Man darf hier keine Fotos machen."
-   ],
-   "e": "man은 주어예요. 화법조동사 darf가 두 번째 자리, 원형 machen이 끝에 와요."
-  },
-  {
-   "lv": 1,
-   "t": "order",
-   "q": "단어를 알맞은 순서로 놓으세요.",
-   "ko": "너희 아버지는 어떤 영화를 즐겨 보셔?",
-   "a": [
-    "Was für Filme sieht dein Vater gern?"
-   ],
-   "e": "종류를 물을 때는 was für예요. 복수에는 ein이 없어서 was für Filme예요."
-  },
-  {
-   "lv": 2,
-   "t": "mc",
-   "q": "In ___ Haus wohnt ihr? — In einem Altbau.",
-   "o": [
-    "was für einem",
-    "was für eines",
-    "welchem",
-    "welches"
-   ],
-   "a": 0,
-   "e": "대답이 '오래된 건물'이라는 종류라서 was für ein으로 물어요.<br>in + 3격(장소), 중성 → was für einem."
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "Ich habe das Geheimnis ___ erzählt.",
-   "ko": "그 비밀은 아무에게도 말하지 않았어요.",
-   "h": "niemand",
-   "a": [
-    "niemandem"
-   ],
-   "e": "erzählen은 '누구에게'를 3격으로 받아요. niemand의 3격은 niemandem이에요."
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "Bei dieser Hitze wird ___ schnell schwindlig.",
-   "ko": "이런 더위에는 금방 어지러워져요.",
-   "h": "man",
-   "a": [
-    "einem"
-   ],
-   "e": "'누구에게' 생기는 상태라서 3격이에요. man의 3격은 einem이에요.",
-   "ok": "wird는 본동사 werden '~해지다'(5과)"
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "Wie findest du den Kuchen? — ___ hat meine Oma gebacken.",
-   "ko": "그 케이크 어때? — 그거 우리 할머니가 구우셨어.",
-   "h": "지시대명사",
-   "a": [
-    "Den"
-   ],
-   "e": "den Kuchen을 대명사로 받았어요. 주어는 meine Oma이고 케이크는 목적어라서 4격 den이에요."
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "In was für ___ Firma arbeitet deine Schwester? — In einem Start-up.",
-   "ko": "너희 언니는 어떤 회사에서 일해? — 스타트업에서.",
-   "h": "Firma · 여성",
-   "a": [
-    "einer"
-   ],
-   "e": "für가 아니라 in이 격을 정해요. in + 3격, 여성 → was für einer Firma."
-  },
-  {
-   "lv": 2,
-   "t": "order",
-   "q": "단어를 알맞은 순서로 놓으세요.",
-   "ko": "우리 이웃은 저녁마다 개를 데리고 산책해요.",
-   "a": [
-    "Jeden Abend geht unser Nachbar mit dem Hund spazieren.",
-    "Unser Nachbar geht jeden Abend mit dem Hund spazieren."
-   ],
-   "e": "jeden Abend는 4격 시간 표현이에요. 문장 앞에 오면 동사 geht가 바로 뒤에 와요."
-  },
-  {
-   "lv": 2,
-   "t": "mc",
-   "q": "Die Besitzerin ___ Hauses wohnt in Spanien.",
-   "o": [
-    "dieses",
-    "dieser",
-    "diesem",
-    "diesen"
-   ],
-   "a": 0,
-   "e": "'이 집의'는 2격이에요. des Hauses → dieses Hauses."
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "___ von meinen Brüdern wohnt in Hamburg.",
-   "ko": "제 형제 중 한 명은 함부르크에 살아요.",
-   "h": "",
-   "a": [
-    "Einer"
-   ],
-   "e": "명사 없이 '한 명'이라고 할 때 남성 1격은 einer예요. 동사도 단수 wohnt예요."
-  },
-  {
-   "lv": 3,
-   "t": "mc",
-   "q": "틀린 문장을 고르세요.",
-   "o": [
-    "Mit allen Teilnehmer habe ich gesprochen.",
-    "Was für ein Wetter heute!",
-    "Jeder von uns hat eine Aufgabe.",
-    "Solche Fragen hört man oft."
-   ],
-   "a": 0,
-   "e": "mit + 3격 복수라서 allen 다음 명사에도 -n이 붙어요 — mit allen Teilnehmern.<br>Was für ein …!은 감탄문으로도 써요."
-  },
-  {
-   "lv": 3,
-   "t": "fill",
-   "q": "A: Ich brauche einen Regenschirm. Hast du ___?\nB: Leider nicht, ich habe selbst ___. Aber frag Jonas. ___ hat bestimmt ___.",
-   "ko": "A: 우산이 필요해. 하나 있어?\nB: 아니, 나도 없어. 그런데 요나스한테 물어봐. 걔는 분명 하나 있을 거야.",
-   "h": [
-    "Regenschirm · 남성",
-    "",
-    "Jonas를 가리키는 지시대명사",
-    ""
-   ],
-   "a": [
-    "einen",
-    "keinen",
-    "Der",
-    "einen"
-   ],
-   "e": "Regenschirm은 남성, haben의 목적어라서 4격 einen · keinen이에요.<br>Jonas를 der로 받고, der가 주어라서 1격이에요."
-  },
-  {
-   "lv": 3,
-   "t": "fill",
-   "q": "Wenn ___ in Deutschland eine Wohnung sucht, braucht ___ viel Geduld. Die Suche kostet ___ viel Zeit.",
-   "ko": "독일에서 집을 구하면 인내가 많이 필요해요. 집 찾기는 시간이 많이 들어요.",
-   "h": [
-    "",
-    "",
-    "man"
-   ],
-   "a": [
-    "man",
-    "man",
-    "einen"
-   ],
-   "e": "man은 man으로 이어 받아요. kosten은 사람을 4격으로 받아서 man의 4격 einen을 써요."
-  },
-  {
-   "lv": 3,
-   "t": "fill",
-   "q": "Die Eltern ___ Schüler haben mit ___ Lehrern gesprochen.",
-   "ko": "모든 학생의 부모님이 모든 선생님과 이야기했어요.",
-   "h": [
-    "alle",
-    "alle"
-   ],
-   "a": [
-    "aller",
-    "allen"
-   ],
-   "e": "'모든 학생의'는 2격 복수 → aller(der Schüler처럼).<br>mit + 3격 복수 → allen Lehrern."
-  },
-  {
-   "lv": 3,
-   "t": "order",
-   "q": "단어를 알맞은 순서로 놓으세요.",
-   "ko": "이 사람들 중에 나는 아무도 몰라요.",
-   "a": [
-    "Von diesen Leuten kenne ich niemanden.",
-    "Ich kenne von diesen Leuten niemanden."
-   ],
-   "e": "von은 3격 전치사라서 diesen Leuten(복수 3격 -en, 명사 -n)이에요.<br>kennen의 목적어는 4격이라 niemanden이에요."
-  },
-  {
-   "lv": 3,
-   "t": "mc",
-   "q": "빈칸에 들어갈 수 없는 것은? — ___ hat angerufen.",
-   "o": [
-    "Alle",
-    "Jemand",
-    "Niemand",
-    "Einer"
-   ],
-   "a": 0,
-   "e": "hat은 단수 동사예요. alle는 '모든 사람'이라 복수라서 Alle haben angerufen이 돼요."
-  }
- ]
+  "n": "22",
+  "level": "A2",
+  "goals": [
+    "dieser·jeder·welcher·alle 같은 관사를 정관사처럼 변화시켜요",
+    "welcher와 was für ein을 구별하고, ein의 격을 문장에서 정해요",
+    "der·die·das와 man·jemand·niemand를 격에 맞게 써요",
+    "einer·keiner·eins·welche로 명사를 대신해요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ Rucksack gehört meinem Bruder. (이 배낭)",
+      "o": [
+        "Dieser",
+        "Diese",
+        "Dieses",
+        "Diesen"
+      ],
+      "a": 0,
+      "e": "Rucksack은 남성이고 문장의 주어(1격)예요.<br>der Rucksack → dieser Rucksack."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Kennst du ___ Restaurant am Marktplatz?",
+      "ko": "시장 광장에 있는 이 식당 알아?",
+      "h": "dies- · Restaurant · 중성",
+      "a": [
+        "dieses"
+      ],
+      "e": "중성 4격은 das → dieses예요. -s가 -es가 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Meine Oma ruft ___ Sonntag an.",
+      "ko": "우리 할머니는 일요일마다 전화하세요.",
+      "h": "jed- · Sonntag · 남성",
+      "a": [
+        "jeden"
+      ],
+      "e": "'~마다'를 뜻하는 시간 표현은 4격이에요.<br>der Sonntag → den Sonntag → jeden Sonntag."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir fahren ___ Jahr ans Meer. (해마다)",
+      "o": [
+        "jedes",
+        "jeden",
+        "jede",
+        "alle"
+      ],
+      "a": 0,
+      "e": "Jahr는 중성이에요. 시간 표현 4격, 중성 → jedes Jahr.<br>alle는 복수 명사와 써요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Von ___ Gleis fährt unser Zug nach Leipzig ab?",
+      "o": [
+        "welchem",
+        "welchen",
+        "welches",
+        "welcher"
+      ],
+      "a": 0,
+      "e": "von은 3격 전치사예요. das Gleis → von dem Gleis → von welchem Gleis."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Was für ___ Hund habt ihr? — Einen Dackel.",
+      "ko": "너희는 어떤 개를 키워? — 닥스훈트.",
+      "h": "Hund · 남성",
+      "a": [
+        "einen"
+      ],
+      "e": "was für의 für는 격을 정하지 않아요. haben의 목적어라서 4격, 남성 → einen."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Kennst du die Frau dort? — Ja, ___ kenne ich aus dem Kurs.",
+      "o": [
+        "die",
+        "der",
+        "den",
+        "das"
+      ],
+      "a": 0,
+      "e": "die Frau를 대명사로 받아요. 4격 여성은 die 그대로예요.",
+      "ok": "쉼표 뒤 die는 관계대명사가 아니라 지시대명사(22과)"
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wie ___ man dieses Wort aus?",
+      "ko": "이 단어는 어떻게 발음해요?",
+      "h": "aussprechen",
+      "a": [
+        "spricht"
+      ],
+      "e": "man의 동사는 er와 같은 모양이에요. sprechen은 e → i로 바뀌어요 — man spricht … aus."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ Kinder haben Angst vor Spinnen. (어떤 아이들은)",
+      "o": [
+        "Manche",
+        "Mancher",
+        "Manches",
+        "Manchen"
+      ],
+      "a": 0,
+      "e": "복수 1격은 die → manche예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich habe geklingelt, aber ___ hat aufgemacht. (아무도 문을 열지 않았어요)",
+      "o": [
+        "niemand",
+        "jemand",
+        "nichts",
+        "alles"
+      ],
+      "a": 0,
+      "e": "사람이 '아무도 없다'는 niemand예요. nichts는 사물에 써요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Im Kühlschrank ist ___. Wir müssen einkaufen.",
+      "ko": "냉장고에 아무것도 없어요. 장을 봐야 해요.",
+      "h": "",
+      "a": [
+        "nichts"
+      ],
+      "e": "사물이 '아무것도 없다'는 nichts예요. nichts는 모양이 변하지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich brauche ein Ladekabel. Hast du ___?",
+      "ko": "충전 케이블이 필요해. 하나 있어?",
+      "h": "Ladekabel · 중성",
+      "a": [
+        [
+          "eins",
+          "eines"
+        ]
+      ],
+      "e": "명사 없이 쓰는 ein은 끝으로 성과 격을 보여 줘요. 중성 4격 → eins."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Brauchen wir noch Servietten? — Ja, wir haben ___ mehr.",
+      "ko": "냅킨이 더 필요해? — 응, 이제 하나도 없어.",
+      "h": "",
+      "a": [
+        "keine"
+      ],
+      "e": "복수 명사를 '하나도 없다'로 받을 때는 keine예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Hast du Briefmarken? Ich brauche ___ für die Postkarten.",
+      "ko": "우표 있어? 엽서에 붙일 게 몇 장 필요해.",
+      "h": "",
+      "a": [
+        "welche"
+      ],
+      "e": "ein에는 복수형이 없어요. 복수 명사를 '몇 개'로 받을 때는 welche를 써요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "여기서는 사진을 찍으면 안 돼요.",
+      "a": [
+        "Hier darf man keine Fotos machen.",
+        "Man darf hier keine Fotos machen.",
+        "Keine Fotos darf man hier machen"
+      ],
+      "e": "man은 주어예요. 화법조동사 darf가 두 번째 자리, 원형 machen이 끝에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "너희 아버지는 어떤 영화를 즐겨 보셔?",
+      "a": [
+        "Was für Filme sieht dein Vater gern?"
+      ],
+      "e": "종류를 물을 때는 was für예요. 복수에는 ein이 없어서 was für Filme예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "In ___ Haus wohnt ihr? — In einem Altbau.",
+      "o": [
+        "was für einem",
+        "was für eines",
+        "welchem",
+        "welches"
+      ],
+      "a": 0,
+      "e": "대답이 '오래된 건물'이라는 종류라서 was für ein으로 물어요.<br>in + 3격(장소), 중성 → was für einem."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich habe das Geheimnis ___ erzählt.",
+      "ko": "그 비밀은 아무에게도 말하지 않았어요.",
+      "h": "niemand",
+      "a": [
+        "niemandem"
+      ],
+      "e": "erzählen은 '누구에게'를 3격으로 받아요. niemand의 3격은 niemandem이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Bei dieser Hitze wird ___ schnell schwindlig.",
+      "ko": "이런 더위에는 금방 어지러워져요.",
+      "h": "man",
+      "a": [
+        "einem"
+      ],
+      "e": "'누구에게' 생기는 상태라서 3격이에요. man의 3격은 einem이에요.",
+      "ok": "wird는 본동사 werden '~해지다'(5과)"
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Wie findest du den Kuchen? — ___ hat meine Oma gebacken.",
+      "ko": "그 케이크 어때? — 그거 우리 할머니가 구우셨어.",
+      "h": "지시대명사",
+      "a": [
+        "Den"
+      ],
+      "e": "den Kuchen을 대명사로 받았어요. 주어는 meine Oma이고 케이크는 목적어라서 4격 den이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "In was für ___ Firma arbeitet deine Schwester? — In einem Start-up.",
+      "ko": "너희 언니는 어떤 회사에서 일해? — 스타트업에서.",
+      "h": "Firma · 여성",
+      "a": [
+        "einer"
+      ],
+      "e": "für가 아니라 in이 격을 정해요. in + 3격, 여성 → was für einer Firma."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리 이웃은 저녁마다 개를 데리고 산책해요.",
+      "a": [
+        "Jeden Abend geht unser Nachbar mit dem Hund spazieren.",
+        "Unser Nachbar geht jeden Abend mit dem Hund spazieren.",
+        "Mit dem Hund geht unser Nachbar jeden Abend spazieren",
+        "Unser Nachbar geht mit dem Hund jeden Abend spazieren"
+      ],
+      "e": "jeden Abend는 4격 시간 표현이에요. 문장 앞에 오면 동사 geht가 바로 뒤에 와요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Die Besitzerin ___ Hauses wohnt in Spanien.",
+      "o": [
+        "dieses",
+        "dieser",
+        "diesem",
+        "diesen"
+      ],
+      "a": 0,
+      "e": "'이 집의'는 2격이에요. des Hauses → dieses Hauses."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "___ von meinen Brüdern wohnt in Hamburg.",
+      "ko": "제 형제 중 한 명은 함부르크에 살아요.",
+      "h": "",
+      "a": [
+        "Einer"
+      ],
+      "e": "명사 없이 '한 명'이라고 할 때 남성 1격은 einer예요. 동사도 단수 wohnt예요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장을 고르세요.",
+      "o": [
+        "Mit allen Teilnehmer habe ich gesprochen.",
+        "Was für ein Wetter heute!",
+        "Jeder von uns hat eine Aufgabe.",
+        "Solche Fragen hört man oft."
+      ],
+      "a": 0,
+      "e": "mit + 3격 복수라서 allen 다음 명사에도 -n이 붙어요 — mit allen Teilnehmern.<br>Was für ein …!은 감탄문으로도 써요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "A: Ich brauche einen Regenschirm. Hast du ___?\nB: Leider nicht, ich habe selbst ___. Aber frag Jonas. ___ hat bestimmt ___.",
+      "ko": "A: 우산이 필요해. 하나 있어?\nB: 아니, 나도 없어. 그런데 요나스한테 물어봐. 걔는 분명 하나 있을 거야.",
+      "h": [
+        "Regenschirm · 남성",
+        "",
+        "Jonas를 가리키는 지시대명사",
+        ""
+      ],
+      "a": [
+        "einen",
+        "keinen",
+        "Der",
+        "einen"
+      ],
+      "e": "Regenschirm은 남성, haben의 목적어라서 4격 einen · keinen이에요.<br>Jonas를 der로 받고, der가 주어라서 1격이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Wenn ___ in Deutschland eine Wohnung sucht, braucht ___ viel Geduld. Die Suche kostet ___ viel Zeit.",
+      "ko": "독일에서 집을 구하면 인내가 많이 필요해요. 집 찾기는 시간이 많이 들어요.",
+      "h": [
+        "",
+        "",
+        "man"
+      ],
+      "a": [
+        "man",
+        "man",
+        "einen"
+      ],
+      "e": "man은 man으로 이어 받아요. kosten은 사람을 4격으로 받아서 man의 4격 einen을 써요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Die Eltern ___ Schüler haben mit ___ Lehrern gesprochen.",
+      "ko": "모든 학생의 부모님이 모든 선생님과 이야기했어요.",
+      "h": [
+        "alle",
+        "alle"
+      ],
+      "a": [
+        "aller",
+        "allen"
+      ],
+      "e": "'모든 학생의'는 2격 복수 → aller(der Schüler처럼).<br>mit + 3격 복수 → allen Lehrern."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "이 사람들 중에 나는 아무도 몰라요.",
+      "a": [
+        "Von diesen Leuten kenne ich niemanden.",
+        "Ich kenne von diesen Leuten niemanden.",
+        "Niemanden kenne ich von diesen Leuten"
+      ],
+      "e": "von은 3격 전치사라서 diesen Leuten(복수 3격 -en, 명사 -n)이에요.<br>kennen의 목적어는 4격이라 niemanden이에요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "빈칸에 들어갈 수 없는 것은? — ___ hat angerufen.",
+      "o": [
+        "Alle",
+        "Jemand",
+        "Niemand",
+        "Einer"
+      ],
+      "a": 0,
+      "e": "hat은 단수 동사예요. alle는 '모든 사람'이라 복수라서 Alle haben angerufen이 돼요."
+    }
+  ]
 }

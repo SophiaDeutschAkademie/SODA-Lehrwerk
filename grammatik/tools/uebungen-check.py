@@ -186,9 +186,14 @@ def check_chapter(n, strict_counts=True):
             if not it.get('ko'): errs.append(tag + ' 한국어 뜻(ko)이 없어요')
             a = it.get('a')
             if not isinstance(a, list) or not a: errs.append(tag + ' a는 문장 목록'); continue
-            base = sorted(x.lower() for x in a[0].split())
-            for alt in a[1:]:
-                if sorted(x.lower() for x in alt.split()) != base: errs.append(tag + ' 다른 정답의 단어가 첫 정답과 달라요: ' + alt)
+            W = lambda x: re.sub(r'[.,!?;:]', '', x).lower().split()
+            base = sorted(W(a[0]))
+            aseen = set()
+            for alt in a:
+                if sorted(W(alt)) != base: errs.append(tag + ' 다른 정답의 단어가 첫 정답과 달라요: ' + alt)
+                key = ' '.join(W(alt))
+                if key in aseen: errs.append(tag + ' 같은 정답이 중복돼요(문장부호·대소문자 무시): ' + alt)
+                aseen.add(key)
             if len(base) < 4: errs.append(tag + ' 배열 문장은 4단어 이상')
             if len(base) > 14: warns.append(tag + ' 배열 문장이 너무 길어요 (%d단어)' % len(base))
         # 한국어 말투

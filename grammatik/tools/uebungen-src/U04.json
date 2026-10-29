@@ -184,7 +184,9 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "나는 그녀에게 그 열쇠를 줘요.",
       "a": [
-        "Ich gebe ihr den Schlüssel."
+        "Ich gebe ihr den Schlüssel.",
+        "Den Schlüssel gebe ich ihr",
+        "Ihr gebe ich den Schlüssel"
       ],
       "e": "대명사 ihr가 명사 den Schlüssel보다 앞에 와요."
     },
@@ -194,7 +196,9 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "우리는 그에게 자전거를 한 대 선물해요.",
       "a": [
-        "Wir schenken ihm ein Fahrrad."
+        "Wir schenken ihm ein Fahrrad.",
+        "Ihm schenken wir ein Fahrrad",
+        "Ein Fahrrad schenken wir ihm"
       ],
       "e": "받는 사람 ihm(3격 대명사)이 명사 ein Fahrrad보다 앞에 와요."
     },
@@ -278,7 +282,9 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "나는 그것(die Suppe)을 그 손님에게 가져다줘요.",
       "a": [
-        "Ich bringe sie dem Gast."
+        "Ich bringe sie dem Gast.",
+        "Sie bringe ich dem Gast",
+        "Dem Gast bringe ich sie"
       ],
       "e": "die Suppe는 4격 대명사 sie로 바뀌어요.<br>대명사는 명사보다 앞이라서 sie가 dem Gast보다 먼저 와요."
     },
@@ -288,7 +294,9 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "아이들이 그것(das Bild)을 그 선생님께 선물해요.",
       "a": [
-        "Die Kinder schenken es der Lehrerin."
+        "Die Kinder schenken es der Lehrerin.",
+        "Es schenken die Kinder der Lehrerin",
+        "Der Lehrerin schenken es die Kinder"
       ],
       "e": "das Bild는 4격 대명사 es예요.<br>대명사 es가 명사 der Lehrerin보다 앞에 와요."
     },
@@ -374,7 +382,8 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "그 여종업원이 그것(der Kaffee)을 우리에게 가져다줘요.",
       "a": [
-        "Die Kellnerin bringt ihn uns."
+        "Die Kellnerin bringt ihn uns.",
+        "Ihn bringt uns die Kellnerin"
       ],
       "e": "der Kaffee는 남성 4격 ihn, '우리에게'는 3격 uns예요.<br>대명사 둘은 4격 → 3격 순서라서 ihn uns예요."
     }

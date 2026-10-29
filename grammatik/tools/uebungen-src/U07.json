@@ -91,7 +91,9 @@
       "ko": "토요일에 우리는 정원에서 바비큐를 해요.",
       "a": [
         "Am Samstag grillen wir im Garten.",
-        "Wir grillen am Samstag im Garten."
+        "Wir grillen am Samstag im Garten.",
+        "Im Garten grillen wir am Samstag",
+        "Wir grillen im Garten am Samstag"
       ],
       "e": "요일 앞에는 am을 써요.<br>Am Samstag이 첫 자리면 동사 grillen 뒤에 주어 wir가 와요."
     },
@@ -268,7 +270,9 @@
       "ko": "월요일부터 사라는 8시부터 4시까지 일해요.",
       "a": [
         "Ab Montag arbeitet Sara von acht bis vier.",
-        "Sara arbeitet ab Montag von acht bis vier."
+        "Sara arbeitet ab Montag von acht bis vier.",
+        "Von acht bis vier arbeitet Sara ab Montag",
+        "Sara arbeitet von acht bis vier ab Montag"
       ],
       "e": "앞으로 시작하는 때는 ab, 기간은 von … bis로 말해요.<br>Ab Montag가 첫 자리면 동사 뒤에 주어가 와요."
     },
@@ -394,7 +398,13 @@
         "Am Sonntag gibt es um elf Uhr ein Konzert.",
         "Am Sonntag um elf Uhr gibt es ein Konzert.",
         "Um elf Uhr gibt es am Sonntag ein Konzert.",
-        "Es gibt am Sonntag um elf Uhr ein Konzert."
+        "Es gibt am Sonntag um elf Uhr ein Konzert.",
+        "Es gibt um elf Uhr am Sonntag ein Konzert",
+        "Am Sonntag gibt es ein Konzert um elf Uhr",
+        "Es gibt am Sonntag ein Konzert um elf Uhr",
+        "Um elf Uhr am Sonntag gibt es ein Konzert",
+        "Ein Konzert gibt es am Sonntag um elf Uhr",
+        "Ein Konzert gibt es um elf Uhr am Sonntag"
       ],
       "e": "es gibt 뒤의 ein Konzert는 4격이에요. 시간 표현이 첫 자리에 오면 동사 gibt 뒤에 es가 와요.<br>요일은 am, 시각은 um이에요."
     },

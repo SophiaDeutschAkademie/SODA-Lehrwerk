@@ -1,407 +1,414 @@
 {
- "n": "28",
- "level": "B1",
- "goals": [
-  "zu 부정형을 만들고, 분리동사는 aufzustehen처럼 한 단어로 써요",
-  "zu 부정형과 함께 쓰는 말과, 화법조동사·lassen 뒤처럼 zu를 붙이지 않는 경우를 구별해요",
-  "um … zu · ohne … zu · statt … zu와 damit · dass 문장 가운데 알맞은 것을 골라요",
-  "lassen과 haben … zu · sein … zu · scheinen … zu의 뜻을 알아요"
- ],
- "items": [
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "aussteigen(내리다)의 zu 부정형은?",
-   "o": [
-    "auszusteigen",
-    "zu aussteigen",
-    "ausgezusteigen",
-    "aussteigenzu"
-   ],
-   "a": 0,
-   "e": "분리동사는 접두어와 동사 사이에 zu를 넣어 한 단어로 써요 — aus + zu + steigen."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "erzählen(이야기하다)의 zu 부정형은?",
-   "o": [
-    "zu erzählen",
-    "erzuzählen",
-    "zu erzählt",
-    "erzählenzu"
-   ],
-   "a": 0,
-   "e": "er-는 비분리 접두어라서 zu를 앞에 따로 써요 — zu erzählen."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Meine Eltern haben beschlossen, im Herbst ans Meer ___.",
-   "ko": "부모님은 가을에 바닷가로 이사하기로 결정했어요.",
-   "h": "ziehen",
-   "a": [
-    "zu ziehen"
-   ],
-   "e": "beschließen 뒤에는 zu 부정형이 와요. zu + 원형이 맨 끝이에요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Vergiss bitte nicht, den Herd ___!",
-   "ko": "가스레인지 끄는 거 잊지 마!",
-   "h": "ausschalten",
-   "a": [
-    "auszuschalten"
-   ],
-   "e": "ausschalten은 분리동사라서 aus + zu + schalten을 붙여 써요.",
-   "ok": "쉼표 뒤 관사는 zu 부정형의 목적어, 관계문 아님"
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Es ist nicht leicht, in einer fremden Stadt Freunde ___.",
-   "ko": "낯선 도시에서 친구를 사귀기는 쉽지 않아요.",
-   "h": "finden",
-   "a": [
-    "zu finden"
-   ],
-   "e": "es ist + 형용사 뒤에는 zu 부정형이 와요. 목적어 Freunde는 그 앞에 놓여요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Wir müssen heute länger im Büro ___.",
-   "ko": "우리는 오늘 사무실에서 더 오래 일해야 해요.",
-   "h": "arbeiten",
-   "a": [
-    "arbeiten"
-   ],
-   "e": "화법조동사 뒤의 원형에는 zu를 붙이지 않아요."
-  },
-  {
-   "lv": 1,
-   "t": "order",
-   "q": "단어를 알맞은 순서로 놓으세요.",
-   "ko": "저녁마다 이웃 사람들이 싸우는 소리가 들려요.",
-   "a": [
-    "Jeden Abend höre ich die Nachbarn streiten.",
-    "Ich höre jeden Abend die Nachbarn streiten.",
-    "Ich höre die Nachbarn jeden Abend streiten."
-   ],
-   "e": "hören 뒤의 원형에는 zu가 없어요. 원형 streiten은 맨 끝이에요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Sie ___ ihre Kinder am Wochenende lange schlafen.",
-   "ko": "그녀는 주말에 아이들이 늦잠을 자게 둬요.",
-   "h": "lassen",
-   "a": [
-    "lässt"
-   ],
-   "e": "lassen은 sie(그녀)에서 a가 ä로 바뀌어요 — sie lässt. 원형 schlafen에는 zu가 없어요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "___ uns heute Abend Pizza bestellen!",
-   "ko": "오늘 저녁엔 피자 시키자!",
-   "h": "lassen",
-   "a": [
-    [
-     "Lass",
-     "Lasst"
-    ]
-   ],
-   "e": "제안은 Lass uns + 원형이에요. 여러 사람에게 말하면 Lasst uns도 돼요."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "Er nimmt ein Taxi, ___ den Flug nicht zu verpassen.",
-   "o": [
-    "um",
-    "damit",
-    "ohne",
-    "statt"
-   ],
-   "a": 0,
-   "e": "택시를 타는 사람과 비행기를 놓치지 않으려는 사람이 같아요. 그래서 목적은 um … zu예요.",
-   "ok": "쉼표 뒤 관사는 zu 부정형의 목적어, 관계문 아님"
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "Er hat die Rechnung bezahlt, ___ einen Blick darauf zu werfen. (쳐다보지도 않고)",
-   "o": [
-    "ohne",
-    "um",
-    "statt",
-    "damit"
-   ],
-   "a": 0,
-   "e": "'~하지 않고'는 ohne … zu예요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "___ das Fahrrad selbst zu reparieren, hat er es in die Werkstatt gebracht.",
-   "ko": "자전거를 직접 고치는 대신 그는 그것을 정비소에 맡겼어요.",
-   "h": "~하는 대신",
-   "a": [
-    [
-     "Statt",
-     "Anstatt"
-    ]
-   ],
-   "e": "'~하는 대신'은 (an)statt … zu예요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Ich kann heute nicht ausgehen, ich habe noch einen Bericht ___.",
-   "ko": "오늘은 외출할 수 없어요, 아직 보고서를 써야 하거든요.",
-   "h": "schreiben",
-   "a": [
-    "zu schreiben"
-   ],
-   "e": "haben + zu 부정형은 '~해야 한다'라는 뜻이에요."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "Der Drucker scheint kaputt ___.",
-   "o": [
-    "zu sein",
-    "sein",
-    "zu ist",
-    "ist zu"
-   ],
-   "a": 0,
-   "e": "scheinen + zu 부정형은 '~인 것 같다'예요 — scheint kaputt zu sein."
-  },
-  {
-   "lv": 1,
-   "t": "order",
-   "q": "단어를 알맞은 순서로 놓으세요.",
-   "ko": "집 전체를 치울 시간이 없어요.",
-   "a": [
-    "Ich habe keine Zeit, die ganze Wohnung aufzuräumen."
-   ],
-   "e": "Zeit haben 뒤에 zu 부정형이 와요. 목적어 die ganze Wohnung이 앞, aufzuräumen이 끝이에요.",
-   "ok": "쉼표 뒤 관사는 zu 부정형의 목적어, 관계문 아님"
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "Diese Handschrift ist kaum zu lesen. — 뜻은?",
-   "o": [
-    "이 글씨는 거의 읽을 수 없어요",
-    "이 글씨는 거의 읽지 않아요",
-    "이 글씨를 읽고 싶지 않아요",
-    "이 글씨를 읽으려고 해요"
-   ],
-   "a": 0,
-   "e": "sein + zu 부정형은 '~될 수 있다'라는 뜻이에요. kaum(거의 ~않다)과 함께 '거의 읽을 수 없다'예요."
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "Sie hat versprochen, uns am Bahnhof ___.",
-   "ko": "그녀는 우리를 역에서 데리러 오겠다고 약속했어요.",
-   "h": "abholen",
-   "a": [
-    "abzuholen"
-   ],
-   "e": "versprechen 뒤에 zu 부정형이 와요. abholen은 분리동사라서 abzuholen이에요."
-  },
-  {
-   "lv": 2,
-   "t": "mc",
-   "q": "Der Lehrer erwartet, ___. (우리가 숙제를 제때 내기를)",
-   "o": [
-    "dass wir die Hausaufgaben pünktlich abgeben",
-    "die Hausaufgaben pünktlich abzugeben",
-    "wir die Hausaufgaben pünktlich abzugeben",
-    "um die Hausaufgaben pünktlich abzugeben"
-   ],
-   "a": 0,
-   "e": "숙제를 내는 사람(wir)이 주문장에 없어요. 그래서 zu 부정형이 아니라 dass 문장이에요."
-  },
-  {
-   "lv": 2,
-   "t": "mc",
-   "q": "Ich rate dir, ___. (표를 일찍 사라고)",
-   "o": [
-    "die Tickets früh zu kaufen",
-    "dass du die Tickets früh zu kaufen",
-    "die Tickets zu früh kaufen",
-    "um die Tickets früh zu kaufen"
-   ],
-   "a": 0,
-   "e": "표를 사는 사람은 주문장의 dir예요. 그래서 zu 부정형으로 써요 — 목적어가 앞, zu kaufen이 끝.",
-   "ok": "쉼표 뒤 관사는 zu 부정형의 목적어, 관계문 아님"
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "Wir haben unsere Küche letztes Jahr komplett erneuern ___.",
-   "ko": "우리는 작년에 부엌을 완전히 새로 고쳤어요(업체에 맡겨서).",
-   "h": "lassen",
-   "a": [
-    "lassen"
-   ],
-   "e": "원형과 함께 쓴 lassen은 현재완료에서도 lassen 그대로예요 — erneuern lassen."
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "Hast du den Schlüssel schon wieder im Auto ___?",
-   "ko": "열쇠를 또 차에 두고 온 거야?",
-   "h": "lassen",
-   "a": [
-    "gelassen"
-   ],
-   "e": "원형 없이 '두다'로 쓰면 과거분사는 gelassen이에요."
-  },
-  {
-   "lv": 2,
-   "t": "order",
-   "q": "단어를 알맞은 순서로 놓으세요.",
-   "ko": "그는 출근 전에 조깅하려고 매일 다섯 시에 일어나요.",
-   "a": [
-    "Er steht jeden Tag um fünf auf, um vor der Arbeit zu joggen.",
-    "Jeden Tag steht er um fünf auf, um vor der Arbeit zu joggen."
-   ],
-   "e": "주문장은 분리동사 auf가 끝, 쉼표 뒤에 um … zu joggen이 와요.<br>um fünf(시각)와 um … zu(목적)를 구별해요.",
-   "ok": "jeden Tag um은 흔한 시간 표현일 뿐 교재 문장과 다름"
-  },
-  {
-   "lv": 2,
-   "t": "mc",
-   "q": "Die Kinder sind aus dem Haus gegangen, ___ ihre Mutter es bemerkt hat.",
-   "o": [
-    "ohne dass",
-    "ohne zu",
-    "statt",
-    "um"
-   ],
-   "a": 0,
-   "e": "주어가 다르고(Kinder · Mutter) 뒤에 문장이 와요. 그래서 ohne dass예요."
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "Mein Chef lässt mich manchmal früher nach Hause ___.",
-   "ko": "사장님은 가끔 나를 일찍 집에 보내 줘요.",
-   "h": "gehen",
-   "a": [
-    "gehen"
-   ],
-   "e": "lassen 뒤의 원형에는 zu가 없어요."
-  },
-  {
-   "lv": 3,
-   "t": "mc",
-   "q": "틀린 문장은?",
-   "o": [
-    "Sie hat ihren Sohn das Zimmer aufzuräumen lassen.",
-    "Du brauchst am Samstag nicht ins Büro zu kommen.",
-    "Ich habe gestern meinen Laptop reparieren lassen.",
-    "Ich habe vor, nächstes Jahr ein Auslandssemester zu machen."
-   ],
-   "a": 0,
-   "e": "lassen 뒤의 원형에는 zu가 없어요 — das Zimmer aufräumen lassen.<br>nicht brauchen은 zu와 함께 써서 맞아요."
-  },
-  {
-   "lv": 3,
-   "t": "fill",
-   "q": "Sie hofft, dass sie nächstes Jahr in Wien studieren kann.\n= Sie hofft, nächstes Jahr in Wien studieren ___ ___.",
-   "ko": "그녀는 내년에 빈에서 공부할 수 있기를 바라요.",
-   "h": [
-    "",
-    "können"
-   ],
-   "a": [
-    [
-     "zu"
-    ],
-    [
-     "können"
-    ]
-   ],
-   "e": "주어가 같아서 zu 부정형으로 줄여요. 화법조동사가 있으면 그 앞에 zu가 와요 — studieren zu können."
-  },
-  {
-   "lv": 3,
-   "t": "fill",
-   "q": "Ich habe beschlossen, mehr Sport ___. Deshalb gehe ich jetzt dreimal in der Woche ___, statt abends vor dem Fernseher ___. Morgen ___ ich mir von einem Trainer einen Plan erstellen.",
-   "ko": "운동을 더 하기로 결심했어요. 그래서 이제 저녁에 TV 앞에 앉아 있는 대신 일주일에 세 번 수영하러 가요. 내일은 트레이너에게 계획을 짜 달라고 할 거예요.",
-   "h": [
-    "treiben",
-    "schwimmen",
-    "sitzen",
-    "lassen"
-   ],
-   "a": [
-    [
-     "zu treiben"
-    ],
-    [
-     "schwimmen"
-    ],
-    [
-     "zu sitzen"
-    ],
-    [
-     "lasse"
-    ]
-   ],
-   "e": "beschließen·statt 뒤는 zu 부정형이에요.<br>gehen(이동의 목적)과 lassen 뒤의 원형에는 zu가 없어요."
-  },
-  {
-   "lv": 3,
-   "t": "mc",
-   "q": "두 문장을 바르게 이은 것은?\nIch spare jeden Monat Geld. Meine Tochter soll später studieren können.",
-   "o": [
-    "Ich spare jeden Monat Geld, damit meine Tochter später studieren kann.",
-    "Ich spare jeden Monat Geld, um meine Tochter später studieren zu können.",
-    "Ich spare jeden Monat Geld, um später meine Tochter studieren kann.",
-    "Ich spare jeden Monat Geld, damit meine Tochter später zu studieren kann."
-   ],
-   "a": 0,
-   "e": "돈을 모으는 사람(ich)과 공부할 사람(Tochter)이 달라요. 그래서 um … zu가 아니라 damit이에요."
-  },
-  {
-   "lv": 3,
-   "t": "order",
-   "q": "단어를 알맞은 순서로 놓으세요.",
-   "ko": "그는 서두르는 대신 느긋하게 커피를 한 잔 더 마셔요.",
-   "a": [
-    "Statt sich zu beeilen, trinkt er in aller Ruhe noch einen Kaffee.",
-    "Statt sich zu beeilen, trinkt er noch in aller Ruhe einen Kaffee."
-   ],
-   "e": "statt … zu 부분이 첫 자리라서 주문장은 동사 trinkt로 시작해요.<br>재귀동사는 sich zu beeilen이에요."
-  },
-  {
-   "lv": 3,
-   "t": "fill",
-   "q": "Die Gebrauchsanweisung ist kaum ___, und der Verkäufer scheint selbst nicht genau ___, wie das Gerät funktioniert.",
-   "ko": "사용 설명서는 거의 이해할 수가 없고, 판매원도 기기가 어떻게 작동하는지 정확히 모르는 것 같아요.",
-   "h": [
-    "verstehen",
-    "wissen"
-   ],
-   "a": [
-    [
-     "zu verstehen"
-    ],
-    [
-     "zu wissen"
-    ]
-   ],
-   "e": "sein + zu 부정형은 '~될 수 있다', scheinen + zu 부정형은 '~인 것 같다'예요."
-  }
- ]
+  "n": "28",
+  "level": "B1",
+  "goals": [
+    "zu 부정형을 만들고, 분리동사는 aufzustehen처럼 한 단어로 써요",
+    "zu 부정형과 함께 쓰는 말과, 화법조동사·lassen 뒤처럼 zu를 붙이지 않는 경우를 구별해요",
+    "um … zu · ohne … zu · statt … zu와 damit · dass 문장 가운데 알맞은 것을 골라요",
+    "lassen과 haben … zu · sein … zu · scheinen … zu의 뜻을 알아요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "aussteigen(내리다)의 zu 부정형은?",
+      "o": [
+        "auszusteigen",
+        "zu aussteigen",
+        "ausgezusteigen",
+        "aussteigenzu"
+      ],
+      "a": 0,
+      "e": "분리동사는 접두어와 동사 사이에 zu를 넣어 한 단어로 써요 — aus + zu + steigen."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "erzählen(이야기하다)의 zu 부정형은?",
+      "o": [
+        "zu erzählen",
+        "erzuzählen",
+        "zu erzählt",
+        "erzählenzu"
+      ],
+      "a": 0,
+      "e": "er-는 비분리 접두어라서 zu를 앞에 따로 써요 — zu erzählen."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Meine Eltern haben beschlossen, im Herbst ans Meer ___.",
+      "ko": "부모님은 가을에 바닷가로 이사하기로 결정했어요.",
+      "h": "ziehen",
+      "a": [
+        "zu ziehen"
+      ],
+      "e": "beschließen 뒤에는 zu 부정형이 와요. zu + 원형이 맨 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Vergiss bitte nicht, den Herd ___!",
+      "ko": "가스레인지 끄는 거 잊지 마!",
+      "h": "ausschalten",
+      "a": [
+        "auszuschalten"
+      ],
+      "e": "ausschalten은 분리동사라서 aus + zu + schalten을 붙여 써요.",
+      "ok": "쉼표 뒤 관사는 zu 부정형의 목적어, 관계문 아님"
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Es ist nicht leicht, in einer fremden Stadt Freunde ___.",
+      "ko": "낯선 도시에서 친구를 사귀기는 쉽지 않아요.",
+      "h": "finden",
+      "a": [
+        "zu finden"
+      ],
+      "e": "es ist + 형용사 뒤에는 zu 부정형이 와요. 목적어 Freunde는 그 앞에 놓여요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir müssen heute länger im Büro ___.",
+      "ko": "우리는 오늘 사무실에서 더 오래 일해야 해요.",
+      "h": "arbeiten",
+      "a": [
+        "arbeiten"
+      ],
+      "e": "화법조동사 뒤의 원형에는 zu를 붙이지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "저녁마다 이웃 사람들이 싸우는 소리가 들려요.",
+      "a": [
+        "Jeden Abend höre ich die Nachbarn streiten.",
+        "Ich höre jeden Abend die Nachbarn streiten.",
+        "Ich höre die Nachbarn jeden Abend streiten.",
+        "Die Nachbarn höre ich jeden Abend streiten"
+      ],
+      "e": "hören 뒤의 원형에는 zu가 없어요. 원형 streiten은 맨 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Sie ___ ihre Kinder am Wochenende lange schlafen.",
+      "ko": "그녀는 주말에 아이들이 늦잠을 자게 둬요.",
+      "h": "lassen",
+      "a": [
+        "lässt"
+      ],
+      "e": "lassen은 sie(그녀)에서 a가 ä로 바뀌어요 — sie lässt. 원형 schlafen에는 zu가 없어요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ uns heute Abend Pizza bestellen!",
+      "ko": "오늘 저녁엔 피자 시키자!",
+      "h": "lassen",
+      "a": [
+        [
+          "Lass",
+          "Lasst"
+        ]
+      ],
+      "e": "제안은 Lass uns + 원형이에요. 여러 사람에게 말하면 Lasst uns도 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Er nimmt ein Taxi, ___ den Flug nicht zu verpassen.",
+      "o": [
+        "um",
+        "damit",
+        "ohne",
+        "statt"
+      ],
+      "a": 0,
+      "e": "택시를 타는 사람과 비행기를 놓치지 않으려는 사람이 같아요. 그래서 목적은 um … zu예요.",
+      "ok": "쉼표 뒤 관사는 zu 부정형의 목적어, 관계문 아님"
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Er hat die Rechnung bezahlt, ___ einen Blick darauf zu werfen. (쳐다보지도 않고)",
+      "o": [
+        "ohne",
+        "um",
+        "statt",
+        "damit"
+      ],
+      "a": 0,
+      "e": "'~하지 않고'는 ohne … zu예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ das Fahrrad selbst zu reparieren, hat er es in die Werkstatt gebracht.",
+      "ko": "자전거를 직접 고치는 대신 그는 그것을 정비소에 맡겼어요.",
+      "h": "~하는 대신",
+      "a": [
+        [
+          "Statt",
+          "Anstatt"
+        ]
+      ],
+      "e": "'~하는 대신'은 (an)statt … zu예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich kann heute nicht ausgehen, ich habe noch einen Bericht ___.",
+      "ko": "오늘은 외출할 수 없어요, 아직 보고서를 써야 하거든요.",
+      "h": "schreiben",
+      "a": [
+        "zu schreiben"
+      ],
+      "e": "haben + zu 부정형은 '~해야 한다'라는 뜻이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Der Drucker scheint kaputt ___.",
+      "o": [
+        "zu sein",
+        "sein",
+        "zu ist",
+        "ist zu"
+      ],
+      "a": 0,
+      "e": "scheinen + zu 부정형은 '~인 것 같다'예요 — scheint kaputt zu sein."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "집 전체를 치울 시간이 없어요.",
+      "a": [
+        "Ich habe keine Zeit, die ganze Wohnung aufzuräumen.",
+        "Die ganze Wohnung aufzuräumen habe ich keine Zeit"
+      ],
+      "e": "Zeit haben 뒤에 zu 부정형이 와요. 목적어 die ganze Wohnung이 앞, aufzuräumen이 끝이에요.",
+      "ok": "쉼표 뒤 관사는 zu 부정형의 목적어, 관계문 아님"
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Diese Handschrift ist kaum zu lesen. — 뜻은?",
+      "o": [
+        "이 글씨는 거의 읽을 수 없어요",
+        "이 글씨는 거의 읽지 않아요",
+        "이 글씨를 읽고 싶지 않아요",
+        "이 글씨를 읽으려고 해요"
+      ],
+      "a": 0,
+      "e": "sein + zu 부정형은 '~될 수 있다'라는 뜻이에요. kaum(거의 ~않다)과 함께 '거의 읽을 수 없다'예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Sie hat versprochen, uns am Bahnhof ___.",
+      "ko": "그녀는 우리를 역에서 데리러 오겠다고 약속했어요.",
+      "h": "abholen",
+      "a": [
+        "abzuholen"
+      ],
+      "e": "versprechen 뒤에 zu 부정형이 와요. abholen은 분리동사라서 abzuholen이에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Der Lehrer erwartet, ___. (우리가 숙제를 제때 내기를)",
+      "o": [
+        "dass wir die Hausaufgaben pünktlich abgeben",
+        "die Hausaufgaben pünktlich abzugeben",
+        "wir die Hausaufgaben pünktlich abzugeben",
+        "um die Hausaufgaben pünktlich abzugeben"
+      ],
+      "a": 0,
+      "e": "숙제를 내는 사람(wir)이 주문장에 없어요. 그래서 zu 부정형이 아니라 dass 문장이에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Ich rate dir, ___. (표를 일찍 사라고)",
+      "o": [
+        "die Tickets früh zu kaufen",
+        "dass du die Tickets früh zu kaufen",
+        "die Tickets zu früh kaufen",
+        "um die Tickets früh zu kaufen"
+      ],
+      "a": 0,
+      "e": "표를 사는 사람은 주문장의 dir예요. 그래서 zu 부정형으로 써요 — 목적어가 앞, zu kaufen이 끝.",
+      "ok": "쉼표 뒤 관사는 zu 부정형의 목적어, 관계문 아님"
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Wir haben unsere Küche letztes Jahr komplett erneuern ___.",
+      "ko": "우리는 작년에 부엌을 완전히 새로 고쳤어요(업체에 맡겨서).",
+      "h": "lassen",
+      "a": [
+        "lassen"
+      ],
+      "e": "원형과 함께 쓴 lassen은 현재완료에서도 lassen 그대로예요 — erneuern lassen."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Hast du den Schlüssel schon wieder im Auto ___?",
+      "ko": "열쇠를 또 차에 두고 온 거야?",
+      "h": "lassen",
+      "a": [
+        "gelassen"
+      ],
+      "e": "원형 없이 '두다'로 쓰면 과거분사는 gelassen이에요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그는 출근 전에 조깅하려고 매일 다섯 시에 일어나요.",
+      "a": [
+        "Er steht jeden Tag um fünf auf, um vor der Arbeit zu joggen.",
+        "Jeden Tag steht er um fünf auf, um vor der Arbeit zu joggen.",
+        "Er steht um fünf jeden Tag auf, um vor der Arbeit zu joggen",
+        "Um vor der Arbeit zu joggen, steht er jeden Tag um fünf auf"
+      ],
+      "e": "주문장은 분리동사 auf가 끝, 쉼표 뒤에 um … zu joggen이 와요.<br>um fünf(시각)와 um … zu(목적)를 구별해요.",
+      "ok": "jeden Tag um은 흔한 시간 표현일 뿐 교재 문장과 다름"
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Die Kinder sind aus dem Haus gegangen, ___ ihre Mutter es bemerkt hat.",
+      "o": [
+        "ohne dass",
+        "ohne zu",
+        "statt",
+        "um"
+      ],
+      "a": 0,
+      "e": "주어가 다르고(Kinder · Mutter) 뒤에 문장이 와요. 그래서 ohne dass예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Mein Chef lässt mich manchmal früher nach Hause ___.",
+      "ko": "사장님은 가끔 나를 일찍 집에 보내 줘요.",
+      "h": "gehen",
+      "a": [
+        "gehen"
+      ],
+      "e": "lassen 뒤의 원형에는 zu가 없어요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Sie hat ihren Sohn das Zimmer aufzuräumen lassen.",
+        "Du brauchst am Samstag nicht ins Büro zu kommen.",
+        "Ich habe gestern meinen Laptop reparieren lassen.",
+        "Ich habe vor, nächstes Jahr ein Auslandssemester zu machen."
+      ],
+      "a": 0,
+      "e": "lassen 뒤의 원형에는 zu가 없어요 — das Zimmer aufräumen lassen.<br>nicht brauchen은 zu와 함께 써서 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Sie hofft, dass sie nächstes Jahr in Wien studieren kann.\n= Sie hofft, nächstes Jahr in Wien studieren ___ ___.",
+      "ko": "그녀는 내년에 빈에서 공부할 수 있기를 바라요.",
+      "h": [
+        "",
+        "können"
+      ],
+      "a": [
+        [
+          "zu"
+        ],
+        [
+          "können"
+        ]
+      ],
+      "e": "주어가 같아서 zu 부정형으로 줄여요. 화법조동사가 있으면 그 앞에 zu가 와요 — studieren zu können."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Ich habe beschlossen, mehr Sport ___. Deshalb gehe ich jetzt dreimal in der Woche ___, statt abends vor dem Fernseher ___. Morgen ___ ich mir von einem Trainer einen Plan erstellen.",
+      "ko": "운동을 더 하기로 결심했어요. 그래서 이제 저녁에 TV 앞에 앉아 있는 대신 일주일에 세 번 수영하러 가요. 내일은 트레이너에게 계획을 짜 달라고 할 거예요.",
+      "h": [
+        "treiben",
+        "schwimmen",
+        "sitzen",
+        "lassen"
+      ],
+      "a": [
+        [
+          "zu treiben"
+        ],
+        [
+          "schwimmen"
+        ],
+        [
+          "zu sitzen"
+        ],
+        [
+          "lasse"
+        ]
+      ],
+      "e": "beschließen·statt 뒤는 zu 부정형이에요.<br>gehen(이동의 목적)과 lassen 뒤의 원형에는 zu가 없어요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "두 문장을 바르게 이은 것은?\nIch spare jeden Monat Geld. Meine Tochter soll später studieren können.",
+      "o": [
+        "Ich spare jeden Monat Geld, damit meine Tochter später studieren kann.",
+        "Ich spare jeden Monat Geld, um meine Tochter später studieren zu können.",
+        "Ich spare jeden Monat Geld, um später meine Tochter studieren kann.",
+        "Ich spare jeden Monat Geld, damit meine Tochter später zu studieren kann."
+      ],
+      "a": 0,
+      "e": "돈을 모으는 사람(ich)과 공부할 사람(Tochter)이 달라요. 그래서 um … zu가 아니라 damit이에요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그는 서두르는 대신 느긋하게 커피를 한 잔 더 마셔요.",
+      "a": [
+        "Statt sich zu beeilen, trinkt er in aller Ruhe noch einen Kaffee.",
+        "Statt sich zu beeilen, trinkt er noch in aller Ruhe einen Kaffee.",
+        "Statt sich zu beeilen, trinkt er noch einen Kaffee in aller Ruhe",
+        "Er trinkt, statt sich zu beeilen, in aller Ruhe noch einen Kaffee",
+        "Er trinkt in aller Ruhe noch einen Kaffee, statt sich zu beeilen"
+      ],
+      "e": "statt … zu 부분이 첫 자리라서 주문장은 동사 trinkt로 시작해요.<br>재귀동사는 sich zu beeilen이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Die Gebrauchsanweisung ist kaum ___, und der Verkäufer scheint selbst nicht genau ___, wie das Gerät funktioniert.",
+      "ko": "사용 설명서는 거의 이해할 수가 없고, 판매원도 기기가 어떻게 작동하는지 정확히 모르는 것 같아요.",
+      "h": [
+        "verstehen",
+        "wissen"
+      ],
+      "a": [
+        [
+          "zu verstehen"
+        ],
+        [
+          "zu wissen"
+        ]
+      ],
+      "e": "sein + zu 부정형은 '~될 수 있다', scheinen + zu 부정형은 '~인 것 같다'예요."
+    }
+  ]
 }

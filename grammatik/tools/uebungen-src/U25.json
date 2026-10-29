@@ -1,402 +1,404 @@
 {
- "n": "25",
- "level": "A2",
- "goals": [
-  "비교급과 최상급을 만들고 불규칙형을 외워요",
-  "als와 (nicht) so … wie로 비교해요",
-  "최상급 am -sten과 der -ste, 명사 앞 비교급·최상급의 어미를 구별해요",
-  "immer·je … desto와 sehr·zu·genug를 바르게 써요"
- ],
- "items": [
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Mein Koffer ist ___ als deiner.",
-   "ko": "내 여행 가방이 네 것보다 더 무거워요.",
-   "h": "schwer",
-   "a": [
-    "schwerer"
-   ],
-   "e": "'더 ~한'은 형용사 + -er, 비교 대상 앞에는 als를 써요."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "dunkel의 비교급은?",
-   "o": [
-    "dunkler",
-    "dunkeler",
-    "dünkler",
-    "mehr dunkel"
-   ],
-   "a": 0,
-   "e": "-el로 끝나는 형용사는 비교급에서 e가 빠져요 — dunkler."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "kurz의 최상급은?",
-   "o": [
-    "am kürzesten",
-    "am kürzsten",
-    "am kurzesten",
-    "am kürzersten"
-   ],
-   "a": 0,
-   "e": "kurz는 움라우트가 붙고, -z로 끝나서 최상급에 -e-를 넣어요 — am kürzesten."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Im Sommer sind die Tage ___ als im Winter.",
-   "ko": "여름에는 겨울보다 낮이 더 길어요.",
-   "h": "lang",
-   "a": [
-    "länger"
-   ],
-   "e": "1음절 형용사 lang은 움라우트가 붙어요 — länger."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "Mein Opa ist genauso alt ___ meine Oma.",
-   "o": [
-    "wie",
-    "als",
-    "so",
-    "dann"
-   ],
-   "a": 0,
-   "e": "정도가 같을 때는 (genau)so … wie예요."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "Die Prüfung war schwieriger ___ der Test im Mai.",
-   "o": [
-    "als",
-    "wie",
-    "so",
-    "dass"
-   ],
-   "a": 0,
-   "e": "비교급 뒤에는 als를 써요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Mein Sohn spielt ___ Fußball als Tennis.",
-   "ko": "제 아들은 테니스보다 축구를 더 좋아해요.",
-   "h": "gern",
-   "a": [
-    "lieber"
-   ],
-   "e": "gern의 비교급은 불규칙형 lieber예요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Dieses Hotel ist gut, aber das Hotel am See ist noch ___.",
-   "ko": "이 호텔도 좋지만 호숫가 호텔은 더욱 좋아요.",
-   "h": "gut",
-   "a": [
-    "besser"
-   ],
-   "e": "gut의 비교급은 불규칙형 besser예요. noch는 비교급을 강조해요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Von allen Kindern in der Klasse rechnet Mia ___.",
-   "ko": "반 아이들 중에서 미아가 계산을 제일 빨리 해요.",
-   "h": "schnell · 최상급",
-   "a": [
-    "am schnellsten"
-   ],
-   "e": "동사를 꾸미는 최상급은 am -sten이에요."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "Das ist der ___ Turm der Stadt.",
-   "o": [
-    "höchste",
-    "höchsten",
-    "hochste",
-    "am höchsten"
-   ],
-   "a": 0,
-   "e": "hoch의 최상급은 höchst-예요. 명사 앞에서는 der + -e(남성 1격)를 붙여요."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "바른 문장은?",
-   "o": [
-    "Meine Schwester kocht besser als ich.",
-    "Meine Schwester kocht besser als mich.",
-    "Meine Schwester kocht besser wie ich.",
-    "Meine Schwester kocht guter als ich."
-   ],
-   "a": 0,
-   "e": "주어끼리 비교하니 als 뒤도 1격 ich예요. gut의 비교급은 besser예요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Für die Party brauchen wir ___ Stühle.",
-   "ko": "파티에 쓸 의자가 더 많이 필요해요.",
-   "h": "viel · 비교급",
-   "a": [
-    "mehr"
-   ],
-   "e": "viel의 비교급은 mehr예요. mehr는 명사 앞에서도 어미가 없어요."
-  },
-  {
-   "lv": 1,
-   "t": "mc",
-   "q": "(그래서 먹을 수 없어요) '수프가 너무 짜요.'",
-   "o": [
-    "Die Suppe ist zu salzig.",
-    "Die Suppe ist sehr salzig.",
-    "Die Suppe ist genug salzig.",
-    "Die Suppe ist salzig genug."
-   ],
-   "a": 0,
-   "e": "지나쳐서 문제가 될 때는 zu를 써요. sehr는 정도가 높다는 뜻일 뿐이에요.<br>salzig genug는 '충분히 짜다'라는 뜻이에요."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Der Tisch ist nicht groß ___ für sechs Personen.",
-   "ko": "그 탁자는 여섯 명이 쓰기에 충분히 크지 않아요.",
-   "h": "",
-   "a": [
-    "genug"
-   ],
-   "e": "'충분히'는 genug이고 형용사 뒤에 와요 — groß genug."
-  },
-  {
-   "lv": 1,
-   "t": "fill",
-   "q": "Mein Deutsch wird ___ ___.",
-   "ko": "제 독일어 실력이 점점 좋아져요.",
-   "h": [
-    "",
-    "gut · 비교급"
-   ],
-   "a": [
-    "immer",
-    "besser"
-   ],
-   "e": "immer + 비교급은 '점점 더'예요.",
-   "ok": "wird는 본동사 werden '~해지다'(5과)"
-  },
-  {
-   "lv": 1,
-   "t": "order",
-   "q": "단어를 알맞은 순서로 놓으세요.",
-   "ko": "오늘은 어제만큼 바람이 불지 않아요.",
-   "a": [
-    "Heute ist es nicht so windig wie gestern.",
-    "Es ist heute nicht so windig wie gestern."
-   ],
-   "e": "'~만큼 ~하지 않다'는 nicht so + 원급 + wie예요."
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "Ich brauche einen ___ Laptop für die Arbeit.",
-   "ko": "일할 때 쓸 더 빠른 노트북이 필요해요.",
-   "h": "schnell · 비교급",
-   "a": [
-    "schnelleren"
-   ],
-   "e": "비교급 schneller에 형용사 어미를 붙여요. einen + 남성 4격 → schnelleren."
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "Wir übernachten im ___ Hotel der Stadt.",
-   "ko": "우리는 그 도시에서 가장 싼 호텔에 묵어요.",
-   "h": "billig · 최상급",
-   "a": [
-    "billigsten"
-   ],
-   "e": "최상급 billigst-에 어미를 붙여요. im = in dem, 3격 → -en."
-  },
-  {
-   "lv": 2,
-   "t": "mc",
-   "q": "Mein Bruder isst ___ viel wie ich.",
-   "o": [
-    "doppelt so",
-    "doppelt",
-    "doppelt als",
-    "zweimal als"
-   ],
-   "a": 0,
-   "e": "'두 배'는 doppelt so + 원급 + wie예요."
-  },
-  {
-   "lv": 2,
-   "t": "order",
-   "q": "단어를 알맞은 순서로 놓으세요.",
-   "ko": "연습을 자주 할수록 더 자신감이 생겨요.",
-   "a": [
-    "Je öfter ich übe, desto sicherer werde ich."
-   ],
-   "e": "je 부분은 동사가 끝(übe), desto + 비교급 바로 뒤에 동사(werde)가 와요.",
-   "ok": "werde는 본동사 werden '~해지다'(5과)"
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "Zu Fuß ist der Weg ___ ___ weit. Wir nehmen lieber den Bus.",
-   "ko": "걸어가기에는 길이 지나치게 멀어요. 차라리 버스를 타요.",
-   "h": [
-    "훨씬",
-    "너무"
-   ],
-   "a": [
-    "viel",
-    "zu"
-   ],
-   "e": "zu를 강조할 때는 viel zu예요. 멀어서 걸어갈 수 없으니 zu를 써요."
-  },
-  {
-   "lv": 2,
-   "t": "mc",
-   "q": "Wo ist hier die ___ Apotheke?",
-   "o": [
-    "nächste",
-    "näheste",
-    "nahste",
-    "nächsten"
-   ],
-   "a": 0,
-   "e": "nah의 최상급은 불규칙형 nächst-예요. die + 여성 1격 → nächste."
-  },
-  {
-   "lv": 2,
-   "t": "fill",
-   "q": "Die ___ Schüler haben den Test geschafft.",
-   "ko": "대부분의 학생이 그 테스트를 통과했어요.",
-   "h": "viel · 최상급",
-   "a": [
-    "meisten"
-   ],
-   "e": "viel의 최상급 meist-는 정관사와 함께 '대부분'이라는 뜻이에요 — die meisten."
-  },
-  {
-   "lv": 2,
-   "t": "mc",
-   "q": "Lena verdient genauso viel ___ ihr Mann, aber sie arbeitet weniger ___ er.",
-   "o": [
-    "wie – als",
-    "als – wie",
-    "wie – wie",
-    "als – als"
-   ],
-   "a": 0,
-   "e": "같은 정도(genauso viel)는 wie, 비교급(weniger) 뒤는 als예요."
-  },
-  {
-   "lv": 3,
-   "t": "mc",
-   "q": "틀린 문장을 고르세요.",
-   "o": [
-    "Je länger ich warte, desto nervöser ich werde.",
-    "Das ist das interessanteste Museum in Wien.",
-    "Mein Weg zur Arbeit ist kürzer als deiner.",
-    "Im Winter ist es hier am kältesten."
-   ],
-   "a": 0,
-   "e": "desto + 비교급 바로 뒤에 동사가 와요 — desto nervöser werde ich.<br>interessant는 -t로 끝나서 interessanteste가 맞아요.",
-   "ok": "werde는 본동사 werden '~해지다'(5과)"
-  },
-  {
-   "lv": 3,
-   "t": "fill",
-   "q": "Lukas ist 15, Jan 13 und Tim auch 15.\nJan ist ___ als Lukas. Tim ist ___ alt ___ Lukas. Von den drei Jungen ist Jan ___.",
-   "ko": "루카스는 15살, 얀은 13살, 팀도 15살이에요. 얀은 루카스보다 어려요. 팀은 루카스와 나이가 같아요. 세 소년 중에서 얀이 가장 어려요.",
-   "h": [
-    "jung",
-    "",
-    "",
-    "jung · 최상급"
-   ],
-   "a": [
-    "jünger",
-    [
-     "so",
-     "genauso",
-     "ebenso",
-     "gleich"
-    ],
-    "wie",
-    [
-     "am jüngsten",
-     "der jüngste"
-    ]
-   ],
-   "e": "jung은 움라우트가 붙어요 — jünger · am jüngsten(der jüngste도 돼요).<br>차이가 있으면 비교급 + als, 같으면 so … wie예요."
-  },
-  {
-   "lv": 3,
-   "t": "fill",
-   "q": "Der Feldberg ist der ___ Gipfel im Schwarzwald, aber in den Alpen findet man viel ___ Gipfel.",
-   "ko": "펠트베르크는 슈바르츠발트에서 가장 높은 산이지만, 알프스에는 훨씬 더 높은 산들이 있어요.",
-   "h": [
-    "hoch · 최상급",
-    "hoch · 비교급"
-   ],
-   "a": [
-    "höchste",
-    "höhere"
-   ],
-   "e": "der + 남성 1격 → höchste.<br>관사 없는 복수 4격은 강변화 -e예요. hoch의 비교급 höher + e → höhere. viel은 비교급을 강조해요."
-  },
-  {
-   "lv": 3,
-   "t": "fill",
-   "q": "Unsere Wohnung ist ___ schön, wir wohnen gern hier. Aber jetzt ist sie ___ klein für uns vier – wir müssen umziehen. Leider haben wir nicht ___ Geld für eine größere.",
-   "ko": "우리 집은 아주 예뻐서 여기 사는 게 좋아요. 그런데 이제 우리 넷이 살기에는 너무 작아서 이사해야 해요. 아쉽게도 더 큰 집을 얻을 돈은 충분하지 않아요.",
-   "h": [
-    "sehr · zu · genug 중 하나",
-    "sehr · zu · genug 중 하나",
-    "sehr · zu · genug 중 하나"
-   ],
-   "a": [
-    "sehr",
-    "zu",
-    "genug"
-   ],
-   "e": "① 좋아서 하는 말(칭찬)이라 sehr예요. zu를 쓰면 '지나치게 예쁘다'는 이상한 뜻이 돼요.<br>② 작아서 이사해야 하니 지나침의 zu예요 — zu klein für uns vier.<br>③ 명사 앞의 '충분히'는 genug + 명사예요 — genug Geld."
-  },
-  {
-   "lv": 3,
-   "t": "mc",
-   "q": "알맞은 것은? — Im neuen Job habe ich ___ Zeit und ___ Stress.",
-   "o": [
-    "mehr – weniger",
-    "mehre – wenigeren",
-    "mehr – wenigeren",
-    "mehrere – weniger"
-   ],
-   "a": 0,
-   "e": "mehr와 weniger는 명사 앞에서도 어미를 붙이지 않아요.<br>mehrere는 '여러 개의'라는 뜻이라 셀 수 없는 Zeit와 쓰지 않아요."
-  },
-  {
-   "lv": 3,
-   "t": "order",
-   "q": "단어를 알맞은 순서로 놓으세요.",
-   "ko": "방학 때 대부분의 가족은 산보다 바다로 가는 걸 더 좋아해요.",
-   "a": [
-    "In den Ferien fahren die meisten Familien lieber ans Meer als in die Berge.",
-    "Die meisten Familien fahren in den Ferien lieber ans Meer als in die Berge."
-   ],
-   "e": "lieber는 gern의 비교급이에요. 비교 대상 in die Berge는 als 뒤, 문장 맨 끝에 와요."
-  }
- ]
+  "n": "25",
+  "level": "A2",
+  "goals": [
+    "비교급과 최상급을 만들고 불규칙형을 외워요",
+    "als와 (nicht) so … wie로 비교해요",
+    "최상급 am -sten과 der -ste, 명사 앞 비교급·최상급의 어미를 구별해요",
+    "immer·je … desto와 sehr·zu·genug를 바르게 써요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Mein Koffer ist ___ als deiner.",
+      "ko": "내 여행 가방이 네 것보다 더 무거워요.",
+      "h": "schwer",
+      "a": [
+        "schwerer"
+      ],
+      "e": "'더 ~한'은 형용사 + -er, 비교 대상 앞에는 als를 써요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "dunkel의 비교급은?",
+      "o": [
+        "dunkler",
+        "dunkeler",
+        "dünkler",
+        "mehr dunkel"
+      ],
+      "a": 0,
+      "e": "-el로 끝나는 형용사는 비교급에서 e가 빠져요 — dunkler."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "kurz의 최상급은?",
+      "o": [
+        "am kürzesten",
+        "am kürzsten",
+        "am kurzesten",
+        "am kürzersten"
+      ],
+      "a": 0,
+      "e": "kurz는 움라우트가 붙고, -z로 끝나서 최상급에 -e-를 넣어요 — am kürzesten."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Im Sommer sind die Tage ___ als im Winter.",
+      "ko": "여름에는 겨울보다 낮이 더 길어요.",
+      "h": "lang",
+      "a": [
+        "länger"
+      ],
+      "e": "1음절 형용사 lang은 움라우트가 붙어요 — länger."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Mein Opa ist genauso alt ___ meine Oma.",
+      "o": [
+        "wie",
+        "als",
+        "so",
+        "dann"
+      ],
+      "a": 0,
+      "e": "정도가 같을 때는 (genau)so … wie예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Prüfung war schwieriger ___ der Test im Mai.",
+      "o": [
+        "als",
+        "wie",
+        "so",
+        "dass"
+      ],
+      "a": 0,
+      "e": "비교급 뒤에는 als를 써요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Mein Sohn spielt ___ Fußball als Tennis.",
+      "ko": "제 아들은 테니스보다 축구를 더 좋아해요.",
+      "h": "gern",
+      "a": [
+        "lieber"
+      ],
+      "e": "gern의 비교급은 불규칙형 lieber예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Dieses Hotel ist gut, aber das Hotel am See ist noch ___.",
+      "ko": "이 호텔도 좋지만 호숫가 호텔은 더욱 좋아요.",
+      "h": "gut",
+      "a": [
+        "besser"
+      ],
+      "e": "gut의 비교급은 불규칙형 besser예요. noch는 비교급을 강조해요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Von allen Kindern in der Klasse rechnet Mia ___.",
+      "ko": "반 아이들 중에서 미아가 계산을 제일 빨리 해요.",
+      "h": "schnell · 최상급",
+      "a": [
+        "am schnellsten"
+      ],
+      "e": "동사를 꾸미는 최상급은 am -sten이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Das ist der ___ Turm der Stadt.",
+      "o": [
+        "höchste",
+        "höchsten",
+        "hochste",
+        "am höchsten"
+      ],
+      "a": 0,
+      "e": "hoch의 최상급은 höchst-예요. 명사 앞에서는 der + -e(남성 1격)를 붙여요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "바른 문장은?",
+      "o": [
+        "Meine Schwester kocht besser als ich.",
+        "Meine Schwester kocht besser als mich.",
+        "Meine Schwester kocht besser wie ich.",
+        "Meine Schwester kocht guter als ich."
+      ],
+      "a": 0,
+      "e": "주어끼리 비교하니 als 뒤도 1격 ich예요. gut의 비교급은 besser예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Für die Party brauchen wir ___ Stühle.",
+      "ko": "파티에 쓸 의자가 더 많이 필요해요.",
+      "h": "viel · 비교급",
+      "a": [
+        "mehr"
+      ],
+      "e": "viel의 비교급은 mehr예요. mehr는 명사 앞에서도 어미가 없어요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "(그래서 먹을 수 없어요) '수프가 너무 짜요.'",
+      "o": [
+        "Die Suppe ist zu salzig.",
+        "Die Suppe ist sehr salzig.",
+        "Die Suppe ist genug salzig.",
+        "Die Suppe ist salzig genug."
+      ],
+      "a": 0,
+      "e": "지나쳐서 문제가 될 때는 zu를 써요. sehr는 정도가 높다는 뜻일 뿐이에요.<br>salzig genug는 '충분히 짜다'라는 뜻이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Tisch ist nicht groß ___ für sechs Personen.",
+      "ko": "그 탁자는 여섯 명이 쓰기에 충분히 크지 않아요.",
+      "h": "",
+      "a": [
+        "genug"
+      ],
+      "e": "'충분히'는 genug이고 형용사 뒤에 와요 — groß genug."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Mein Deutsch wird ___ ___.",
+      "ko": "제 독일어 실력이 점점 좋아져요.",
+      "h": [
+        "",
+        "gut · 비교급"
+      ],
+      "a": [
+        "immer",
+        "besser"
+      ],
+      "e": "immer + 비교급은 '점점 더'예요.",
+      "ok": "wird는 본동사 werden '~해지다'(5과)"
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "오늘은 어제만큼 바람이 불지 않아요.",
+      "a": [
+        "Heute ist es nicht so windig wie gestern.",
+        "Es ist heute nicht so windig wie gestern."
+      ],
+      "e": "'~만큼 ~하지 않다'는 nicht so + 원급 + wie예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich brauche einen ___ Laptop für die Arbeit.",
+      "ko": "일할 때 쓸 더 빠른 노트북이 필요해요.",
+      "h": "schnell · 비교급",
+      "a": [
+        "schnelleren"
+      ],
+      "e": "비교급 schneller에 형용사 어미를 붙여요. einen + 남성 4격 → schnelleren."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Wir übernachten im ___ Hotel der Stadt.",
+      "ko": "우리는 그 도시에서 가장 싼 호텔에 묵어요.",
+      "h": "billig · 최상급",
+      "a": [
+        "billigsten"
+      ],
+      "e": "최상급 billigst-에 어미를 붙여요. im = in dem, 3격 → -en."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Mein Bruder isst ___ viel wie ich.",
+      "o": [
+        "doppelt so",
+        "doppelt",
+        "doppelt als",
+        "zweimal als"
+      ],
+      "a": 0,
+      "e": "'두 배'는 doppelt so + 원급 + wie예요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "연습을 자주 할수록 더 자신감이 생겨요.",
+      "a": [
+        "Je öfter ich übe, desto sicherer werde ich."
+      ],
+      "e": "je 부분은 동사가 끝(übe), desto + 비교급 바로 뒤에 동사(werde)가 와요.",
+      "ok": "werde는 본동사 werden '~해지다'(5과)"
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Zu Fuß ist der Weg ___ ___ weit. Wir nehmen lieber den Bus.",
+      "ko": "걸어가기에는 길이 지나치게 멀어요. 차라리 버스를 타요.",
+      "h": [
+        "훨씬",
+        "너무"
+      ],
+      "a": [
+        "viel",
+        "zu"
+      ],
+      "e": "zu를 강조할 때는 viel zu예요. 멀어서 걸어갈 수 없으니 zu를 써요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Wo ist hier die ___ Apotheke?",
+      "o": [
+        "nächste",
+        "näheste",
+        "nahste",
+        "nächsten"
+      ],
+      "a": 0,
+      "e": "nah의 최상급은 불규칙형 nächst-예요. die + 여성 1격 → nächste."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Die ___ Schüler haben den Test geschafft.",
+      "ko": "대부분의 학생이 그 테스트를 통과했어요.",
+      "h": "viel · 최상급",
+      "a": [
+        "meisten"
+      ],
+      "e": "viel의 최상급 meist-는 정관사와 함께 '대부분'이라는 뜻이에요 — die meisten."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Lena verdient genauso viel ___ ihr Mann, aber sie arbeitet weniger ___ er.",
+      "o": [
+        "wie – als",
+        "als – wie",
+        "wie – wie",
+        "als – als"
+      ],
+      "a": 0,
+      "e": "같은 정도(genauso viel)는 wie, 비교급(weniger) 뒤는 als예요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장을 고르세요.",
+      "o": [
+        "Je länger ich warte, desto nervöser ich werde.",
+        "Das ist das interessanteste Museum in Wien.",
+        "Mein Weg zur Arbeit ist kürzer als deiner.",
+        "Im Winter ist es hier am kältesten."
+      ],
+      "a": 0,
+      "e": "desto + 비교급 바로 뒤에 동사가 와요 — desto nervöser werde ich.<br>interessant는 -t로 끝나서 interessanteste가 맞아요.",
+      "ok": "werde는 본동사 werden '~해지다'(5과)"
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Lukas ist 15, Jan 13 und Tim auch 15.\nJan ist ___ als Lukas. Tim ist ___ alt ___ Lukas. Von den drei Jungen ist Jan ___.",
+      "ko": "루카스는 15살, 얀은 13살, 팀도 15살이에요. 얀은 루카스보다 어려요. 팀은 루카스와 나이가 같아요. 세 소년 중에서 얀이 가장 어려요.",
+      "h": [
+        "jung",
+        "",
+        "",
+        "jung · 최상급"
+      ],
+      "a": [
+        "jünger",
+        [
+          "so",
+          "genauso",
+          "ebenso",
+          "gleich"
+        ],
+        "wie",
+        [
+          "am jüngsten",
+          "der jüngste"
+        ]
+      ],
+      "e": "jung은 움라우트가 붙어요 — jünger · am jüngsten(der jüngste도 돼요).<br>차이가 있으면 비교급 + als, 같으면 so … wie예요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Der Feldberg ist der ___ Gipfel im Schwarzwald, aber in den Alpen findet man viel ___ Gipfel.",
+      "ko": "펠트베르크는 슈바르츠발트에서 가장 높은 산이지만, 알프스에는 훨씬 더 높은 산들이 있어요.",
+      "h": [
+        "hoch · 최상급",
+        "hoch · 비교급"
+      ],
+      "a": [
+        "höchste",
+        "höhere"
+      ],
+      "e": "der + 남성 1격 → höchste.<br>관사 없는 복수 4격은 강변화 -e예요. hoch의 비교급 höher + e → höhere. viel은 비교급을 강조해요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Unsere Wohnung ist ___ schön, wir wohnen gern hier. Aber jetzt ist sie ___ klein für uns vier – wir müssen umziehen. Leider haben wir nicht ___ Geld für eine größere.",
+      "ko": "우리 집은 아주 예뻐서 여기 사는 게 좋아요. 그런데 이제 우리 넷이 살기에는 너무 작아서 이사해야 해요. 아쉽게도 더 큰 집을 얻을 돈은 충분하지 않아요.",
+      "h": [
+        "sehr · zu · genug 중 하나",
+        "sehr · zu · genug 중 하나",
+        "sehr · zu · genug 중 하나"
+      ],
+      "a": [
+        "sehr",
+        "zu",
+        "genug"
+      ],
+      "e": "① 좋아서 하는 말(칭찬)이라 sehr예요. zu를 쓰면 '지나치게 예쁘다'는 이상한 뜻이 돼요.<br>② 작아서 이사해야 하니 지나침의 zu예요 — zu klein für uns vier.<br>③ 명사 앞의 '충분히'는 genug + 명사예요 — genug Geld."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "알맞은 것은? — Im neuen Job habe ich ___ Zeit und ___ Stress.",
+      "o": [
+        "mehr – weniger",
+        "mehre – wenigeren",
+        "mehr – wenigeren",
+        "mehrere – weniger"
+      ],
+      "a": 0,
+      "e": "mehr와 weniger는 명사 앞에서도 어미를 붙이지 않아요.<br>mehrere는 '여러 개의'라는 뜻이라 셀 수 없는 Zeit와 쓰지 않아요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "방학 때 대부분의 가족은 산보다 바다로 가는 걸 더 좋아해요.",
+      "a": [
+        "In den Ferien fahren die meisten Familien lieber ans Meer als in die Berge.",
+        "Die meisten Familien fahren in den Ferien lieber ans Meer als in die Berge.",
+        "Die meisten Familien fahren lieber in den Ferien ans Meer als in die Berge",
+        "Lieber fahren die meisten Familien in den Ferien ans Meer als in die Berge"
+      ],
+      "e": "lieber는 gern의 비교급이에요. 비교 대상 in die Berge는 als 뒤, 문장 맨 끝에 와요."
+    }
+  ]
 }

@@ -192,7 +192,9 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "나는 그 할머니께 케이크를 하나 가져다드려요.",
       "a": [
-        "Ich bringe der Oma einen Kuchen."
+        "Ich bringe der Oma einen Kuchen.",
+        "Einen Kuchen bringe ich der Oma",
+        "Der Oma bringe ich einen Kuchen"
       ],
       "e": "명사 목적어가 둘이면 3격(der Oma) → 4격(einen Kuchen) 순서예요."
     },
@@ -202,7 +204,8 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "우리는 소파는 하나 있고, 옷장이 하나 필요해요.",
       "a": [
-        "Wir haben ein Sofa und brauchen einen Schrank."
+        "Wir haben ein Sofa und brauchen einen Schrank.",
+        "Wir brauchen einen Schrank und haben ein Sofa"
       ],
       "e": "haben과 brauchen은 4격 동사예요.<br>중성 das Sofa는 어미 없는 ein, 남성 der Schrank는 einen이에요."
     },
@@ -292,7 +295,10 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "그 코치가 그 선수들에게 규칙 하나를 설명해요.",
       "a": [
-        "Der Trainer erklärt den Spielern eine Regel."
+        "Der Trainer erklärt den Spielern eine Regel.",
+        "Den Spielern erklärt der Trainer eine Regel",
+        "Eine Regel erklärt der Trainer den Spielern",
+        "Der Trainer erklärt eine Regel den Spielern"
       ],
       "e": "erklären은 3격 + 4격 동사예요. 받는 사람 den Spielern(복수 3격, 명사 -n)이 4격 eine Regel보다 앞이에요."
     },
@@ -302,7 +308,10 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "우리는 그 조부모님께 소포를 하나 보내요.",
       "a": [
-        "Wir schicken den Großeltern ein Paket."
+        "Wir schicken den Großeltern ein Paket.",
+        "Den Großeltern schicken wir ein Paket",
+        "Ein Paket schicken wir den Großeltern",
+        "Wir schicken ein Paket den Großeltern"
       ],
       "e": "schicken은 3격 + 4격 동사예요. 복수 3격 den Großeltern이 4격 ein Paket보다 앞이에요.<br>Großeltern은 이미 -n으로 끝나서 -n을 더 붙이지 않아요."
     },
@@ -389,7 +398,10 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "아버지가 그 아이들에게 할아버지의 사진을 한 장 보여 줘요.",
       "a": [
-        "Der Vater zeigt den Kindern ein Foto des Großvaters."
+        "Der Vater zeigt den Kindern ein Foto des Großvaters.",
+        "Den Kindern zeigt der Vater ein Foto des Großvaters",
+        "Ein Foto des Großvaters zeigt der Vater den Kindern",
+        "Der Vater zeigt ein Foto des Großvaters den Kindern"
       ],
       "e": "받는 사람 den Kindern(3격)이 먼저, 보여 주는 것 ein Foto(4격)가 뒤에 와요.<br>'할아버지의'는 2격이라서 꾸미는 명사 뒤에 des Großvaters로 붙어요(2음절 이상 → -s).",
       "ok": "2격 정관사 des와 명사 -es는 3과 정관사 변화표와 '명사 쪽 변화'에서 배움"

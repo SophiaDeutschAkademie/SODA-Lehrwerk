@@ -190,7 +190,9 @@
       "ko": "주말에 요나스는 욕실을 청소해요.",
       "a": [
         "Am Wochenende putzt Jonas das Bad.",
-        "Jonas putzt am Wochenende das Bad."
+        "Jonas putzt am Wochenende das Bad.",
+        "Das Bad putzt Jonas am Wochenende",
+        "Jonas putzt das Bad am Wochenende"
       ],
       "e": "무엇이 첫 자리에 오든 동사 putzt는 두 번째예요.<br>Am Wochenende가 앞에 오면 주어 Jonas가 동사 뒤로 가요."
     },
@@ -226,7 +228,9 @@
       "a": [
         "Tim geht morgens allein ins Fitnessstudio.",
         "Morgens geht Tim allein ins Fitnessstudio.",
-        "Allein geht Tim morgens ins Fitnessstudio."
+        "Allein geht Tim morgens ins Fitnessstudio.",
+        "Tim geht allein morgens ins Fitnessstudio",
+        "Ins Fitnessstudio geht Tim morgens allein"
       ],
       "e": "가운데 자리는 시간(morgens) → 방법(allein) → 장소(ins Fitnessstudio) 순서예요."
     },
@@ -300,7 +304,8 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "수프 맛이 어때?",
       "a": [
-        "Wie schmeckt dir die Suppe?"
+        "Wie schmeckt dir die Suppe?",
+        "Wie schmeckt die Suppe dir"
       ],
       "e": "의문사 wie 바로 뒤에 동사가 와요.<br>대명사 dir가 명사 주어 die Suppe보다 앞에 와요."
     },
@@ -345,7 +350,9 @@
       "ko": "나는 내일 사무실에서 그에게 그것을 설명해요.",
       "a": [
         "Ich erkläre es ihm morgen im Büro.",
-        "Morgen erkläre ich es ihm im Büro."
+        "Morgen erkläre ich es ihm im Büro.",
+        "Im Büro erkläre ich es ihm morgen",
+        "Morgen im Büro erkläre ich es ihm"
       ],
       "e": "대명사가 먼저 오고, 대명사끼리는 4격(es) → 3격(ihm)이에요.<br>그다음 시간(morgen) → 장소(im Büro) 순서예요."
     },
