@@ -22,6 +22,7 @@ LV = {1: ('기본', '기본 문제', '배운 내용을 그대로 확인해요'),
       2: ('중간', '중간 문제', '조건이 한두 개 더 붙어요'),
       3: ('도전', '도전 문제', '함정과 예외까지 따져 봐요')}
 LETTERS = 'abcd'
+LONG_OPT = 22  # 보기 한 줄이 이 글자 수를 넘으면 세로 한 열로 놓아요
 PENCIL = '<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1-4.2L16.2 4.6a1.6 1.6 0 0 1 2.3 0l.9.9a1.6 1.6 0 0 1 0 2.3L8.2 19z"/><path d="M14.5 6.4l3.1 3.1"/></svg>'
 
 
@@ -50,7 +51,8 @@ def render_item(n, idx, it):
         btns = ''.join('<button class="qo" data-c="%d">%s) %s</button>' % (1 if k == it['a'] else 0, LETTERS[j], md(it['o'][k]))
                        for j, k in enumerate(order))
         q = re.sub(r'_{3,}', '<span class="qblank"></span>', md(it['q']))
-        return '<div class="qi"><div class="qq">%s%s</div><div class="qg">%s</div>%s</div>' % (qn, q, btns, e % md(it['e']))
+        col = ' qg1' if max(len(re.sub(r'\*\*', '', o)) for o in it['o']) > LONG_OPT else ''
+        return '<div class="qi"><div class="qq">%s%s</div><div class="qg%s">%s</div>%s</div>' % (qn, q, col, btns, e % md(it['e']))
     if t == 'fill':
         hs = it.get('h')
         if isinstance(hs, str): hs = [hs]
