@@ -1,0 +1,400 @@
+{
+  "n": "06",
+  "level": "A1",
+  "goals": [
+    "활용된 동사를 두 번째 자리에 놓고, 첫 자리가 바뀌면 도치해요",
+    "Ja/Nein 의문문과 W-의문문을 만들어요",
+    "격과 뜻에 맞는 의문사를 골라요 — wer·wen·wem·wessen, wo·wohin·woher",
+    "가운데 자리의 순서와 빈도 부사의 자리를 지켜요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'내일 우리는 수영해요.'",
+      "o": [
+        "Morgen wir schwimmen.",
+        "Morgen schwimmen wir.",
+        "Wir morgen schwimmen.",
+        "Morgen schwimmt wir."
+      ],
+      "a": 1,
+      "e": "Morgen이 첫 자리에 오면 동사가 두 번째, 주어 wir는 동사 바로 뒤로 가요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Heute Abend ___ ich Suppe.",
+      "ko": "오늘 저녁에 나는 수프를 끓여요.",
+      "h": "kochen",
+      "a": [
+        "koche"
+      ],
+      "e": "Heute Abend가 한 성분으로 첫 자리예요.<br>동사 koche가 두 번째, 주어 ich가 그 뒤에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ wohnt Herr Becker? — In Hamburg.",
+      "ko": "베커 씨는 어디 살아요? — 함부르크에서요.",
+      "h": "",
+      "a": [
+        "Wo"
+      ],
+      "e": "머무는 곳(wohnen)은 wo로 물어요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ fliegt ihr? — Nach Wien.",
+      "o": [
+        "Woher",
+        "Wo",
+        "Wohin",
+        "Wann"
+      ],
+      "a": 2,
+      "e": "Nach Wien은 가는 곳이에요. 목적지는 wohin으로 물어요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ kommt Herr Novak? — Aus Prag.",
+      "o": [
+        "Wohin",
+        "Woher",
+        "Wo",
+        "Wer"
+      ],
+      "a": 1,
+      "e": "Aus Prag는 온 곳이에요. 출신은 woher로 물어요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ fragst du? — Den Kellner.",
+      "o": [
+        "Wer",
+        "Wen",
+        "Wem",
+        "Was"
+      ],
+      "a": 1,
+      "e": "fragen은 4격 동사예요. 사람을 4격으로 물을 때는 wen이에요(den Kellner와 끝이 같아요)."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ hilft Felix heute? — Der Nachbarin.",
+      "ko": "펠릭스는 오늘 누구를 도와줘요? — 이웃 아주머니요.",
+      "h": "",
+      "a": [
+        "Wem"
+      ],
+      "e": "helfen은 3격 동사라서 의문사도 3격 wem이에요.<br>한국어 '누구를'에 끌려 wen을 쓰지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ du ein Fahrrad?",
+      "ko": "너 자전거 있어?",
+      "h": "haben",
+      "a": [
+        "Hast"
+      ],
+      "e": "Ja/Nein 의문문은 동사가 맨 앞이에요. du → hast."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "너희 오늘 테니스 쳐?",
+      "a": [
+        "Spielt ihr heute Tennis?"
+      ],
+      "e": "Ja/Nein 의문문은 동사 + 주어 순서로 시작하고, 그다음에 시간·목적어가 와요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'나는 가끔 그림을 그려요.'",
+      "o": [
+        "Ich manchmal male.",
+        "Ich male manchmal.",
+        "Manchmal ich male.",
+        "Male ich manchmal."
+      ],
+      "a": 1,
+      "e": "빈도 부사는 동사 뒤에 와요.<br>Manchmal을 앞에 두면 도치해서 Manchmal male ich.가 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Was ___ du gern?",
+      "ko": "너는 뭘 즐겨 먹어?",
+      "h": "essen",
+      "a": [
+        "isst"
+      ],
+      "e": "의문사 바로 뒤에 동사가 와요.<br>essen은 du에서 e → i, 어간이 -s로 끝나서 du isst예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ Zucker nimmst du? · ___ Eier brauchst du?",
+      "ko": "설탕을 얼마나 넣어? · 달걀이 몇 개 필요해?",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        [
+          "Wie viel",
+          "Wieviel"
+        ],
+        [
+          "Wie viele",
+          "Wieviele"
+        ]
+      ],
+      "e": "셀 수 없는 Zucker는 wie viel, 셀 수 있는 복수 Eier는 wie viele로 물어요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ heißt der Hund?",
+      "ko": "그 개는 이름이 뭐예요?",
+      "h": "",
+      "a": [
+        "Wie"
+      ],
+      "e": "이름은 Wie heißt …?로 물어요. 한국어 '뭐'에 끌려 Was를 쓰지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ singt da? — Lena.",
+      "o": [
+        "Wen",
+        "Wem",
+        "Wer",
+        "Was"
+      ],
+      "a": 2,
+      "e": "노래하는 사람은 주어(1격)예요. 사람을 1격으로 물을 때는 wer예요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "주말에 요나스는 욕실을 청소해요.",
+      "a": [
+        "Am Wochenende putzt Jonas das Bad.",
+        "Jonas putzt am Wochenende das Bad."
+      ],
+      "e": "무엇이 첫 자리에 오든 동사 putzt는 두 번째예요.<br>Am Wochenende가 앞에 오면 주어 Jonas가 동사 뒤로 가요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Warum ___ Lisa heute so müde?",
+      "ko": "리자는 오늘 왜 이렇게 피곤해요?",
+      "h": "sein",
+      "a": [
+        "ist"
+      ],
+      "e": "의문사 warum 바로 뒤에 동사가 와요. Lisa → ist."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'나는 그것을 그에게 팔아요.' (das Fahrrad → es)",
+      "o": [
+        "Ich verkaufe ihm es.",
+        "Ich verkaufe es ihm.",
+        "Ich verkaufe es ihn.",
+        "Ich verkaufe ihn es."
+      ],
+      "a": 1,
+      "e": "대명사끼리는 4격(es)이 먼저, 3격(ihm)이 뒤예요.<br>받는 사람은 3격이라서 ihn이 아니라 ihm이에요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "팀은 아침마다 혼자 헬스장에 가요.",
+      "a": [
+        "Tim geht morgens allein ins Fitnessstudio.",
+        "Morgens geht Tim allein ins Fitnessstudio.",
+        "Allein geht Tim morgens ins Fitnessstudio."
+      ],
+      "e": "가운데 자리는 시간(morgens) → 방법(allein) → 장소(ins Fitnessstudio) 순서예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Im Urlaub ___ Herr Weber oft nach Spanien.",
+      "ko": "휴가 때 베버 씨는 자주 스페인에 가요.",
+      "h": "fahren",
+      "a": [
+        "fährt"
+      ],
+      "e": "Im Urlaub가 첫 자리라서 동사가 두 번째, 주어는 그 뒤예요.<br>fahren은 er에서 a → ä로 바뀌어요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "___ gefällt der Film? — Mir.",
+      "o": [
+        "Wer",
+        "Wem",
+        "Wen",
+        "Was"
+      ],
+      "a": 1,
+      "e": "gefallen은 3격 동사예요. 마음에 들어 하는 사람이 3격(mir)이라서 wem으로 물어요.<br>주어는 der Film이에요.",
+      "ok": "gefällt는 gefallen의 현재형(4과 본문)"
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "___ ___ ihr am Wochenende? — Nach Leipzig.",
+      "ko": "너희 주말에 어디 가? — 라이프치히로.",
+      "h": [
+        "",
+        "fahren"
+      ],
+      "a": [
+        "Wohin",
+        "fahrt"
+      ],
+      "e": "목적지는 wohin, 그 바로 뒤에 동사가 와요.<br>ihr는 모음이 바뀌지 않아서 fahrt예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'나는 그녀를 자주 찾아가요.'",
+      "o": [
+        "Ich besuche sie oft.",
+        "Ich besuche oft sie.",
+        "Ich oft besuche sie.",
+        "Oft ich besuche sie."
+      ],
+      "a": 0,
+      "e": "대명사 목적어가 있으면 빈도 부사는 대명사 뒤에 와요.<br>동사는 언제나 두 번째 자리예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "___ Schlüssel liegt hier?",
+      "ko": "여기 있는 건 누구 열쇠예요?",
+      "h": "주인을 물어요",
+      "a": [
+        "Wessen"
+      ],
+      "e": "'누구의'는 2격 의문사 wessen이에요. 뒤에 명사가 바로 와요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "수프 맛이 어때?",
+      "a": [
+        "Wie schmeckt dir die Suppe?"
+      ],
+      "e": "의문사 wie 바로 뒤에 동사가 와요.<br>대명사 dir가 명사 주어 die Suppe보다 앞에 와요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Am Abend liest er oft Comics.",
+        "Wohin fährt der Bus jetzt?",
+        "Welche Zeitung kauft Herr Wolf?",
+        "Wem fragt Lea im Kurs?"
+      ],
+      "a": 3,
+      "e": "fragen은 4격 동사라서 Wen fragt Lea im Kurs?가 맞아요.<br>나머지는 도치, 모음 변화(liest·fährt), welch-가 모두 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "A: ___ fahrt ihr heute? — B: Zu Jana.\nA: ___ wohnt Jana? — B: In Bonn.\nA: ___ schenkt ihr das Buch? — B: Jana!\nA: Und ___ Buch ist das? — B: Ein Krimi.",
+      "ko": "너희 오늘 어디 가? — 야나한테. / 야나는 어디 살아? — 본에. / 그 책은 누구한테 선물해? — 야나한테! / 그런데 그건 어떤 책이야? — 추리 소설.",
+      "h": [
+        "",
+        "",
+        "",
+        "종류를 물어요"
+      ],
+      "a": [
+        "Wohin",
+        "Wo",
+        "Wem",
+        [
+          "Was für ein"
+        ]
+      ],
+      "e": "가는 곳은 wohin, 사는 곳은 wo예요.<br>schenken의 받는 사람은 3격이라서 wem, 책의 종류는 was für ein으로 물어요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "나는 내일 사무실에서 그에게 그것을 설명해요.",
+      "a": [
+        "Ich erkläre es ihm morgen im Büro.",
+        "Morgen erkläre ich es ihm im Büro."
+      ],
+      "e": "대명사가 먼저 오고, 대명사끼리는 4격(es) → 3격(ihm)이에요.<br>그다음 시간(morgen) → 장소(im Büro) 순서예요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "Paul gibt der Katze morgens immer Milch.<br>이 문장을 Morgens로 시작하면?",
+      "o": [
+        "Morgens gibt Paul der Katze immer Milch.",
+        "Morgens Paul gibt der Katze immer Milch.",
+        "Morgens gibt Paul immer Milch der Katze.",
+        "Morgens immer gibt Paul der Katze Milch."
+      ],
+      "a": 0,
+      "ok": "der Katze는 3격 명사, 형용사 어미 아님",
+      "e": "Morgens가 첫 자리 → 동사 gibt → 주어 Paul이에요.<br>명사 목적어는 3격(der Katze) → 4격(Milch), 빈도 부사 immer는 명사 목적어 Milch 앞이에요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "ok": "gehört는 gehören의 현재형(4과)",
+      "q": "Wem gehört die Brille? — 알맞은 대답은?",
+      "o": [
+        "Sie gehört dem Koch.",
+        "Sie gehört den Koch.",
+        "Er gehört dem Koch.",
+        "Es gehört der Koch."
+      ],
+      "a": 0,
+      "e": "die Brille는 여성이라서 대명사 sie로 받아요.<br>gehören은 3격 동사라서 주인은 dem Koch예요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "___ ___ du den Kuchen? — Der Nachbarin.\n___ ___ du morgen? — Den Trainer.",
+      "ko": "그 케이크를 누구에게 줘? — 이웃 아주머니에게. / 내일 누구를 만나? — 그 코치를.",
+      "h": [
+        "",
+        "geben",
+        "",
+        "treffen"
+      ],
+      "a": [
+        "Wem",
+        "gibst",
+        "Wen",
+        "triffst"
+      ],
+      "e": "대답 der Nachbarin이 3격이라서 wem, den Trainer가 4격이라서 wen이에요.<br>의문사 바로 뒤에 동사가 오고, geben·treffen은 du에서 e → i로 바뀌어요 — gibst · triffst."
+    }
+  ]
+}

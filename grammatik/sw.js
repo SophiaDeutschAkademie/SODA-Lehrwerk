@@ -1,7 +1,7 @@
 /* Lehrwerk Grammatik — offline cache.
    Every file name below carries ?v=<content hash>, so a new upload only
    re-downloads the files that actually changed. */
-const VERSION = '711f695bf5';
+const VERSION = '5818c5c723';
 const PREFIX = 'lehrwerk-grammatik-';
 const CACHE = PREFIX + VERSION;
 const CORE = [
@@ -55,16 +55,56 @@ const LESSONS = [
   "lessons/anhang.json?v=7baa5408b1"
 ];
 
+const UEBUNGEN = [
+  "uebungen/U01.json?v=107011dafd",
+  "uebungen/U02.json?v=c732e613b7",
+  "uebungen/U03.json?v=61f432d9b8",
+  "uebungen/U04.json?v=3fbfc1e7d4",
+  "uebungen/U05.json?v=6fb547f1e8",
+  "uebungen/U06.json?v=79c92b479c",
+  "uebungen/U07.json?v=53eb90df5d",
+  "uebungen/U08.json?v=10f338abe1",
+  "uebungen/U09.json?v=4f2678a710",
+  "uebungen/U10.json?v=07e8ece2ae",
+  "uebungen/U11.json?v=cc2a965500",
+  "uebungen/U12.json?v=695b1b4b10",
+  "uebungen/U13.json?v=fd12c474c3",
+  "uebungen/U14.json?v=06135d6695",
+  "uebungen/U15.json?v=64efe51135",
+  "uebungen/U16.json?v=9560c124eb",
+  "uebungen/U17.json?v=49c99f07d6",
+  "uebungen/U18.json?v=a859ad389e",
+  "uebungen/U19.json?v=ab12cb2523",
+  "uebungen/U20.json?v=1349ae2c08",
+  "uebungen/U21.json?v=8ac4662a70",
+  "uebungen/U22.json?v=47580e18b8",
+  "uebungen/U23.json?v=bf5520a54f",
+  "uebungen/U24.json?v=33c74f5968",
+  "uebungen/U25.json?v=d48bf09f0d",
+  "uebungen/U26.json?v=4c960425d0",
+  "uebungen/U27.json?v=250ff649d6",
+  "uebungen/U28.json?v=8828e53d94",
+  "uebungen/U29.json?v=1ee3387ab4",
+  "uebungen/U30.json?v=190818fe68",
+  "uebungen/U31.json?v=c44acf1e64",
+  "uebungen/U32.json?v=93f39da0b9",
+  "uebungen/U33.json?v=baa4fe6c14",
+  "uebungen/U34.json?v=701fe964e5",
+  "uebungen/U35.json?v=02e78969bb",
+  "uebungen/U36.json?v=b50768030c",
+  "uebungen/U37.json?v=d7de944bc1"
+];
+
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
     const page = await fetch(new Request('index.html?sw=' + VERSION, { cache: 'reload' }));
     if (!page.ok) throw new Error('index.html ' + page.status);
     await cache.put('index.html', page);
-    for (const url of CORE.concat(LESSONS)) {
+    for (const url of CORE.concat(LESSONS, UEBUNGEN)) {
       const kept = await caches.match(url);
       if (kept) { await cache.put(url, kept); continue; }
-      if (LESSONS.includes(url)) continue; // fetched later by warm()
+      if (LESSONS.includes(url) || UEBUNGEN.includes(url)) continue; // fetched later by warm()
       const res = await fetch(url);
       if (!res.ok) throw new Error(url + ' ' + res.status);
       await cache.put(url, res);
@@ -89,7 +129,7 @@ self.addEventListener('message', (event) => {
 /* download every lesson once, so the whole book opens without internet */
 async function warm() {
   const cache = await caches.open(CACHE);
-  for (const url of LESSONS) {
+  for (const url of LESSONS.concat(UEBUNGEN)) {
     if (await cache.match(url)) continue;
     try {
       const res = await fetch(url);

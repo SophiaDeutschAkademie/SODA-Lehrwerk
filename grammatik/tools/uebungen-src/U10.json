@@ -1,0 +1,385 @@
+{
+  "n": "10",
+  "level": "A1",
+  "goals": [
+    "화법조동사는 두 번째 자리, 원형은 문장 끝에 놓아요",
+    "일곱 화법조동사를 주어에 맞게 활용해요",
+    "뜻에 따라 können·dürfen·müssen·sollen·wollen·mögen·möchten을 골라요",
+    "nicht müssen과 nicht dürfen, 본동사 없는 문장을 구별해요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Mein Bruder ___ sehr gut tanzen.",
+      "ko": "우리 형은 춤을 아주 잘 춰요.",
+      "h": "können",
+      "a": [
+        "kann"
+      ],
+      "e": "화법조동사는 ich와 er의 모양이 같고 어미가 없어요 — er kann."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ ihr heute Abend kochen?",
+      "ko": "너희 오늘 저녁에 요리해야 해?",
+      "h": "müssen",
+      "a": [
+        "Müsst"
+      ],
+      "e": "ihr는 원형의 어간으로 돌아와 -t를 붙여요 — ihr müsst.<br>Ja/Nein 의문문이라서 화법조동사가 맨 앞에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Du ___ hier nicht schwimmen. Das Wasser ist sehr tief.",
+      "ko": "여기서 수영하면 안 돼. 물이 아주 깊어.",
+      "h": "dürfen",
+      "a": [
+        "darfst"
+      ],
+      "e": "금지는 nicht dürfen이에요.<br>du는 모음이 바뀐 어간에 -st를 붙여요 — du darfst."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Lena ___ in Wien Musik studieren.",
+      "ko": "레나는 빈에서 음악을 전공하려고 해요.",
+      "h": "wollen",
+      "a": [
+        "will"
+      ],
+      "e": "계획과 의지는 wollen이에요.<br>er·sie는 ich와 같은 will이고 어미가 없어요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ Sie noch etwas Wasser?",
+      "ko": "물을 좀 더 드릴까요?",
+      "h": "möchten",
+      "a": [
+        "Möchten"
+      ],
+      "e": "정중하게 원하는 것을 묻는 말은 möchten이에요.<br>Sie는 원형과 같은 möchten이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Mein Vater ___ keine Pilze.",
+      "ko": "우리 아버지는 버섯을 좋아하지 않아요.",
+      "h": "mögen",
+      "a": [
+        "mag"
+      ],
+      "e": "좋아하는 대상(명사)은 mögen으로 말해요.<br>er는 모음이 바뀌고 어미가 없어요 — er mag."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ihr ___ jeden Tag zehn Wörter lernen. Das sagt Frau Kim.",
+      "ko": "너희는 매일 단어 열 개를 외워야 해요. 김 선생님이 그렇게 말씀하세요.",
+      "h": "sollen",
+      "a": [
+        "sollt"
+      ],
+      "e": "다른 사람이 시킨 일은 sollen이에요.<br>sollen은 모음이 바뀌지 않아요 — ihr sollt."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'우리는 내일 조부모님을 찾아뵈어야 해요.'",
+      "o": [
+        "Wir müssen morgen unsere Großeltern besuchen.",
+        "Wir müssen morgen besuchen unsere Großeltern.",
+        "Wir morgen müssen unsere Großeltern besuchen.",
+        "Wir muss morgen unsere Großeltern besuchen."
+      ],
+      "a": 0,
+      "e": "화법조동사는 두 번째 자리, 원형은 문장 맨 끝이에요.<br>wir에는 müssen을 써요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Er ___ gut Gitarre spielen.",
+      "o": [
+        "kann",
+        "kannt",
+        "könnt",
+        "können"
+      ],
+      "a": 0,
+      "e": "er에도 어미 -t를 붙이지 않아요 — er kann.<br>könnt는 ihr의 형태예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'엄마가 나한테 방 청소하래요.'\nIch ___ mein Zimmer putzen.",
+      "o": [
+        "soll",
+        "will",
+        "darf",
+        "mag"
+      ],
+      "a": 0,
+      "e": "다른 사람(엄마)이 시킨 일은 sollen이에요.<br>will은 내 의지, darf는 허락이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "(박물관 직원에게) '여기서 전화해도 되나요?'\n___ ich hier telefonieren?",
+      "o": [
+        "Darf",
+        "Muss",
+        "Soll",
+        "Will"
+      ],
+      "a": 0,
+      "e": "처음 보는 사람에게 허락을 구할 때는 Darf ich …?가 정중해요.<br>Soll ich …?는 '~⁠할까요?'라고 상대의 뜻을 묻는 말이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'나는 요리하는 걸 좋아해요.'",
+      "o": [
+        "Ich koche gern.",
+        "Ich gern koche.",
+        "Ich mag gern kochen.",
+        "Ich möchte kochen."
+      ],
+      "a": 0,
+      "ok": "mag gern + 원형은 교재 실수 유형을 오답 보기로 씀",
+      "e": "좋아하는 일은 동사 + gern으로 말해요. gern은 동사 바로 뒤에 와요.<br>Ich möchte kochen.은 '지금 요리하고 싶어요'예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'일요일에는 일하지 않아도 돼요.'\nAm Sonntag ___ ich nicht arbeiten.",
+      "o": [
+        "muss",
+        "darf",
+        "soll",
+        "kann"
+      ],
+      "a": 0,
+      "e": "'안 해도 된다'(필요 없음)는 nicht müssen이에요.<br>nicht dürfen은 '하면 안 된다'(금지)예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "In der Bibliothek ___ man nicht laut telefonieren.",
+      "ko": "도서관에서는 큰 소리로 통화하면 안 돼요.",
+      "h": "dürfen",
+      "a": [
+        "darf"
+      ],
+      "e": "금지는 nicht dürfen이에요.<br>man은 er와 같은 형태를 써요 — man darf."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "오늘 내 아들 좀 도와줄 수 있어?",
+      "a": [
+        "Kannst du heute meinem Sohn helfen?",
+        "Kannst du meinem Sohn heute helfen?"
+      ],
+      "e": "Ja/Nein 의문문은 화법조동사가 맨 앞, 원형 helfen이 맨 끝이에요.<br>helfen은 3격과 써요 — meinem Sohn."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리 딸은 아직 수영을 못 해요.",
+      "a": [
+        "Meine Tochter kann noch nicht schwimmen."
+      ],
+      "e": "kann이 두 번째 자리, schwimmen이 맨 끝이에요.<br>noch nicht(아직 ~⁠않다)는 원형 앞에 와요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "„___ du am Samstag mit mir kommen?“ – „Nein, ich ___ leider arbeiten.“",
+      "ko": "\"토요일에 나랑 같이 갈 수 있어?\" – \"아니, 아쉽지만 일해야 해.\"",
+      "h": [
+        "können",
+        "müssen"
+      ],
+      "a": [
+        "Kannst",
+        "muss"
+      ],
+      "e": "du → kannst, ich → muss. 의문문에서는 화법조동사가 맨 앞에 와요.<br>본동사 kommen·arbeiten은 원형으로 끝에 둬요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'나는 생선을 좋아하지 않아요. 오늘은 닭고기를 먹고 싶어요.'\nIch ___ keinen Fisch. Heute ___ ich Hähnchen essen.",
+      "o": [
+        "mag … möchte",
+        "möchte … mag",
+        "mag … mag",
+        "möchte … möchte"
+      ],
+      "a": 0,
+      "e": "늘 좋아하는 대상은 mögen — Ich mag keinen Fisch.<br>지금 바라는 일은 möchte + 원형 — Heute möchte ich Hähnchen essen."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Es ist schon elf Uhr. Du ___ nach Hause.",
+      "ko": "벌써 11시야. 너는 집에 가야 해.",
+      "h": "müssen",
+      "a": [
+        "musst"
+      ],
+      "e": "방향 표현(nach Hause)이 있으면 gehen을 빼고 말할 수 있어요.<br>du → musst."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "본동사를 뺀 문장 가운데 '그는 일본어를 할 줄 알아요'라는 뜻은?",
+      "o": [
+        "Er kann Japanisch.",
+        "Er mag Japanisch.",
+        "Er will Japanisch.",
+        "Er darf Japanisch."
+      ],
+      "a": 0,
+      "e": "언어와 함께 쓰는 können은 sprechen을 빼고 말해요 — Er kann Japanisch.<br>Er mag Japanisch.는 '일본어를 좋아해요'예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Oma schläft. Ihr ___ jetzt nicht laut spielen.",
+      "ko": "할머니가 주무셔. 너희 지금 시끄럽게 놀면 안 돼.",
+      "h": "dürfen",
+      "a": [
+        "dürft"
+      ],
+      "e": "금지는 nicht dürfen이에요.<br>ihr는 원형의 어간으로 돌아와요 — ihr dürft."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "너희는 언제 집에 가야 해?",
+      "a": [
+        "Wann müsst ihr nach Hause gehen?"
+      ],
+      "e": "W-의문문은 의문사 + 화법조동사 + 주어 순서예요.<br>원형 gehen은 맨 끝에 와요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "내일 우리는 오래 기다려야 해요.",
+      "a": [
+        "Morgen müssen wir lange warten.",
+        "Wir müssen morgen lange warten."
+      ],
+      "e": "Morgen이 첫 자리에 오면 müssen이 두 번째, 주어 wir가 그 뒤예요.<br>원형 warten은 언제나 맨 끝이에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "(아이가 떼를 쓰며) '나 지금 초콜릿 먹을래!'",
+      "o": [
+        "Ich will jetzt Schokolade!",
+        "Ich möchte jetzt Schokolade, bitte.",
+        "Ich soll jetzt Schokolade!",
+        "Ich darf jetzt Schokolade!"
+      ],
+      "a": 0,
+      "e": "고집스러운 강한 의지는 wollen이에요.<br>möchte … bitte는 정중한 부탁이라서 떼쓰는 말투가 아니에요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Unser Hund mögt keine Katzen.",
+        "Möchtet ihr etwas trinken?",
+        "Meine Schwester will Pilotin werden.",
+        "Kann ich Ihnen etwas zeigen?"
+      ],
+      "a": 0,
+      "ok": "werden은 본동사(~⁠이 되다), 5과에서 배움",
+      "e": "unser Hund는 er와 같아서 mag이에요. mögt는 ihr의 형태예요.<br>Möchtet ihr …?는 ihr의 바른 형태예요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Am Samstag ___ ich leider nicht kommen. Ich habe Fieber. Meine Ärztin sagt, ich ___ zwei Tage zu Hause bleiben. ___ du am Sonntag kommen? Ich ___ dir mein Fotoalbum zeigen.",
+      "ko": "토요일에는 아쉽지만 못 가. 나 열이 나. 의사 선생님이 이틀 동안 집에 있으래. 일요일에 올 수 있어? 너한테 내 사진첩을 보여 주고 싶어.",
+      "h": [
+        "können",
+        "sollen",
+        "können",
+        "möchten"
+      ],
+      "a": [
+        "kann",
+        "soll",
+        "Kannst",
+        "möchte"
+      ],
+      "ok": "sagt, ich soll은 10과 D절에서 배운 남의 요구를 전하는 틀",
+      "e": "아파서 못 가는 것은 가능성 — kann.<br>의사가 시킨 일 — soll. 의문문의 du — Kannst.<br>정중한 바람 — möchte."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "In der Ausstellung ___ man nicht essen. Der Eintritt ist frei, man ___ nicht bezahlen.",
+      "ko": "전시장에서는 음식을 먹으면 안 돼요. 입장료는 무료예요. 돈을 내지 않아도 돼요.",
+      "h": [
+        "dürfen · müssen 중 하나",
+        "dürfen · müssen 중 하나"
+      ],
+      "a": [
+        "darf",
+        "muss"
+      ],
+      "e": "첫 문장은 금지라서 nicht dürfen — man darf nicht essen.<br>둘째 문장은 필요 없음이라서 nicht müssen — man muss nicht bezahlen."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "„Darfst du heute nicht kommen?“ – „___, ich ___ kommen!“",
+      "ko": "\"너 오늘 오면 안 돼?\" – \"아니, 가도 돼!\"",
+      "h": [
+        "Ja · Nein · Doch",
+        "dürfen"
+      ],
+      "a": [
+        "Doch",
+        "darf"
+      ],
+      "e": "부정 질문에 반대로 답할 때는 Doch예요(9과).<br>허락이니까 dürfen, ich → darf."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리 아이들은 저녁에는 단것을 먹으면 안 돼요.",
+      "a": [
+        "Unsere Kinder dürfen abends keine Süßigkeiten essen.",
+        "Abends dürfen unsere Kinder keine Süßigkeiten essen."
+      ],
+      "e": "dürfen이 두 번째 자리, essen이 맨 끝이에요.<br>명사를 부정하는 keine는 명사 바로 앞에 와요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'너는 오늘 밤에 혼자 운전하면 안 돼.'",
+      "o": [
+        "Heute Abend darfst du nicht allein fahren.",
+        "Heute Abend du darfst nicht allein fahren.",
+        "Heute Abend musst du nicht allein fahren.",
+        "Heute Abend dürfst du nicht allein fahren."
+      ],
+      "a": 0,
+      "e": "Heute Abend가 첫 자리라서 화법조동사가 두 번째, 주어는 그 뒤예요.<br>금지는 nicht dürfen, du → darfst. musst du nicht는 '안 해도 돼'예요."
+    }
+  ]
+}

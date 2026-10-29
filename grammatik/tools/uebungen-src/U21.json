@@ -1,0 +1,419 @@
+{
+ "n": "21",
+ "level": "B1",
+ "goals": [
+  "불변화사가 문장의 뜻이 아니라 말투를 바꾼다는 것을 알아요",
+  "부탁·권유·경고·허락에 맞게 mal·doch·bloß·ruhig를 골라요",
+  "denn·eigentlich, ja·doch, eben·halt, schon·wohl의 말투를 구별해요",
+  "불변화사를 가운데 자리의 알맞은 곳에 놓아요"
+ ],
+ "items": [
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "(동료에게 가볍게 부탁) Mach ___ das Licht an!",
+   "o": [
+    "mal",
+    "denn",
+    "wohl",
+    "ja"
+   ],
+   "a": 0,
+   "e": "가벼운 부탁의 '좀'은 mal이에요.<br>denn은 질문에, wohl은 추측에 써요."
+  },
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "(손님에게 앉으라고 권하며) Setzen Sie sich ___!",
+   "o": [
+    "doch",
+    "denn",
+    "eben",
+    "wohl"
+   ],
+   "a": 0,
+   "e": "권유의 '어서 ~하세요'는 doch예요.<br>재귀대명사 sich 뒤에 와요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Fass ___ den Herd nicht an! Er ist heiß.",
+   "ko": "절대 레인지 만지지 마! 뜨거워.",
+   "h": "경고",
+   "a": [
+    [
+     "bloß",
+     "nur"
+    ]
+   ],
+   "e": "경고의 '절대'는 bloß예요. nur도 같은 뜻으로 써요."
+  },
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "(편하게 해도 된다고) Du darfst ___ mein Fahrrad nehmen.",
+   "o": [
+    "ruhig",
+    "bloß",
+    "denn",
+    "wohl"
+   ],
+   "a": 0,
+   "e": "허락의 '편하게 ~해도 돼'는 ruhig예요.<br>bloß는 경고, denn은 질문, wohl은 추측이에요."
+  },
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "(궁금해서) Wer ist ___ die Frau neben Jonas?",
+   "o": [
+    "denn",
+    "mal",
+    "halt",
+    "ruhig"
+   ],
+   "a": 0,
+   "e": "질문에 궁금한 마음을 더할 때는 denn이에요.<br>mal·halt·ruhig는 질문의 궁금함을 나타내지 않아요."
+  },
+  {
+   "lv": 1,
+   "t": "order",
+   "q": "단어를 알맞은 순서로 놓으세요.",
+   "ko": "그런데 독일어는 어디서 배웠어?",
+   "a": [
+    "Wo hast du eigentlich Deutsch gelernt?",
+    "Wo hast du Deutsch eigentlich gelernt?"
+   ],
+   "e": "이야기하다 문득 묻는 '그런데'는 eigentlich예요.<br>불변화사는 동사·대명사 뒤, 명사 목적어 앞에 와요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Das Essen ist ___ schon fertig!",
+   "ko": "와, 밥이 벌써 다 됐네!",
+   "h": "놀람",
+   "a": [
+    "ja"
+   ],
+   "e": "놀라움의 '-네!'는 ja예요."
+  },
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "(둘 다 아는 사실) Am Montag ist ___ Feiertag, also habe ich frei.",
+   "o": [
+    "ja",
+    "denn",
+    "mal",
+    "bloß"
+   ],
+   "a": 0,
+   "e": "상대도 아는 사실을 말할 때는 ja예요 — '월요일은 공휴일이잖아요'.<br>denn은 평서문에서 불변화사로 쓰지 않아요."
+  },
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "(체념) Der Zug fällt aus. Dann nehmen wir ___ ein Taxi.",
+   "o": [
+    "eben",
+    "ruhig",
+    "denn",
+    "bloß"
+   ],
+   "a": 0,
+   "e": "바꿀 수 없는 일을 받아들일 때는 eben이에요. halt도 같은 뜻이에요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Mach dir keine Sorgen, du findest ___ eine Wohnung.",
+   "ko": "걱정 마, 집은 꼭 구하게 될 거야.",
+   "h": "안심",
+   "a": [
+    "schon"
+   ],
+   "e": "안심시키는 '잘 될 거야'는 schon이에요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Das Licht ist aus. Die Nachbarn sind ___ im Urlaub.",
+   "ko": "불이 꺼져 있네요. 이웃들은 아마 휴가 중인가 봐요.",
+   "h": "추측",
+   "a": [
+    "wohl"
+   ],
+   "e": "'아마 ~인가 봐요' 정도의 추측은 wohl이에요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Ruf mich heute Abend ___ an!",
+   "ko": "오늘 저녁에 나한테 한번 전화 줘!",
+   "h": "가볍게 — '좀, 한번'",
+   "a": [
+    "mal"
+   ],
+   "e": "가벼운 부탁은 mal이에요.<br>분리동사 anrufen의 an은 그대로 끝에 남아요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Was hast du ___ gemacht? Deine Hose ist ganz nass!",
+   "ko": "도대체 뭘 한 거야? 바지가 흠뻑 젖었잖아!",
+   "h": "놀람·답답함이 담긴 질문",
+   "a": [
+    "denn"
+   ],
+   "e": "질문에서 놀람이나 답답함을 나타낼 때는 denn이에요 — '도대체'."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Ich habe dir das ___ schon dreimal erklärt!",
+   "ko": "내가 그거 벌써 세 번이나 설명했잖아!",
+   "h": "상대를 일깨움 — '-잖아!'",
+   "a": [
+    [
+     "doch",
+     "ja"
+    ]
+   ],
+   "e": "상대가 잊었다고 보고 일깨울 때는 doch예요.<br>ja도 문법상 맞지만, 답답해하며 일깨우는 말투는 doch예요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Probier ___ den Kuchen! Er ist nicht zu süß.",
+   "ko": "케이크 편하게 먹어 봐! 너무 달지 않아.",
+   "h": "허락 — '편하게 ~해도 돼'",
+   "a": [
+    "ruhig"
+   ],
+   "e": "망설이는 상대에게 편하게 하라고 할 때는 ruhig예요."
+  },
+  {
+   "lv": 1,
+   "t": "order",
+   "q": "단어를 알맞은 순서로 놓으세요.",
+   "ko": "너 같이 안 가?",
+   "a": [
+    "Kommst du denn nicht mit?"
+   ],
+   "e": "불변화사는 주어 뒤, 부정어 nicht 앞에 와요.<br>mit은 분리동사의 접두어라 맨 끝이에요."
+  },
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "(가볍게 부탁) Darf ich ___ dein Handy benutzen?",
+   "o": [
+    "mal",
+    "ja",
+    "eben",
+    "halt"
+   ],
+   "a": 0,
+   "e": "가벼운 부탁의 질문에도 mal을 넣어요.<br>ja·eben·halt는 질문에 쓰지 않아요."
+  },
+  {
+   "lv": 2,
+   "t": "mc",
+   "q": "불변화사 mal이 바른 자리에 있는 문장은?",
+   "o": [
+    "Zeig mir mal das Foto!",
+    "Mal zeig mir das Foto!",
+    "Zeig mir das mal Foto!",
+    "Zeig mal das mir Foto!"
+   ],
+   "a": 0,
+   "e": "불변화사는 첫 자리에 오지 않아요.<br>대명사 mir 뒤, 명사 목적어 das Foto 앞에 놓아요. 관사와 명사 사이에는 들어가지 않아요."
+  },
+  {
+   "lv": 2,
+   "t": "fill",
+   "q": "Ich verstehe die Regel nicht. — Tja, Deutsch ist ___ schwer.",
+   "ko": "규칙을 모르겠어. — 뭐, 독일어가 원래 어렵잖아.",
+   "h": "바꿀 수 없는 사실",
+   "a": [
+    [
+     "eben",
+     "halt"
+    ]
+   ],
+   "e": "어쩔 수 없는 사실을 말할 때는 eben·halt예요."
+  },
+  {
+   "lv": 2,
+   "t": "order",
+   "q": "단어를 알맞은 순서로 놓으세요.",
+   "ko": "왜 나한테 전화 안 했어?",
+   "a": [
+    "Warum hast du mich denn nicht angerufen?"
+   ],
+   "e": "불변화사 denn은 대명사(du · mich) 뒤, 부정어 nicht 앞에 와요."
+  },
+  {
+   "lv": 2,
+   "t": "fill",
+   "q": "Vergiss ___ nicht, dass morgen die Prüfung ist!",
+   "ko": "내일 시험이라는 거 절대 잊지 마!",
+   "h": "경고",
+   "a": [
+    [
+     "bloß",
+     "nur"
+    ]
+   ],
+   "e": "경고는 bloß·nur예요.<br>vergessen 뒤에 dass 문장이 이어져요."
+  },
+  {
+   "lv": 2,
+   "t": "mc",
+   "q": "(걱정하며) Bist du ___ krank? Du siehst so blass aus.",
+   "o": [
+    "denn",
+    "mal",
+    "ruhig",
+    "halt"
+   ],
+   "a": 0,
+   "e": "걱정하거나 궁금해하며 묻는 질문에는 denn이에요.<br>Ja/Nein 질문에도 써요."
+  },
+  {
+   "lv": 2,
+   "t": "fill",
+   "q": "Komm ___ ___ vorbei, wenn du Zeit hast!",
+   "ko": "시간 있으면 한번 들러!",
+   "h": [
+    "권유",
+    "가볍게"
+   ],
+   "a": [
+    [
+     "doch"
+    ],
+    [
+     "mal"
+    ]
+   ],
+   "e": "친근한 권유는 doch mal이에요. 순서는 doch → mal이에요."
+  },
+  {
+   "lv": 2,
+   "t": "mc",
+   "q": "denn을 불변화사로 쓴 문장은?",
+   "o": [
+    "Wie spät ist es denn?",
+    "Ich gehe nach Hause, denn ich bin müde.",
+    "Er bleibt hier, denn es regnet.",
+    "Wir kommen nicht, denn wir haben Besuch."
+   ],
+   "a": 0,
+   "e": "불변화사 denn은 질문의 가운데 자리에 와요.<br>문장 사이의 denn은 '왜냐하면'이라는 접속사예요(19과)."
+  },
+  {
+   "lv": 2,
+   "t": "fill",
+   "q": "Wir kennen uns ___ schon lange, also sag mir die Wahrheit.",
+   "ko": "우리 서로 오래 알았잖아, 그러니까 사실대로 말해 줘.",
+   "h": "서로 아는 사실",
+   "a": [
+    [
+     "ja",
+     "doch"
+    ]
+   ],
+   "e": "둘 다 아는 사실을 말할 때는 ja예요. 일깨우는 말투로 doch도 돼요."
+  },
+  {
+   "lv": 3,
+   "t": "mc",
+   "q": "(친구가 약속을 잊은 것 같아서) Wir wollten ___ heute zusammen kochen! Hast du das vergessen?",
+   "o": [
+    "doch",
+    "ja",
+    "denn",
+    "wohl"
+   ],
+   "a": 0,
+   "e": "상대가 잊었다고 보고 일깨우니 doch예요.<br>ja는 상대도 알고 있다고 볼 때 써요. 바로 뒤에 Hast du das vergessen?이 있어서 doch가 맞아요."
+  },
+  {
+   "lv": 3,
+   "t": "mc",
+   "q": "말하는 사람이 체념하고 있는 문장은?",
+   "o": [
+    "Dann bleibe ich halt zu Hause.",
+    "Bleib ruhig zu Hause.",
+    "Bleib bloß zu Hause!",
+    "Bleibst du denn zu Hause?"
+   ],
+   "a": 0,
+   "e": "halt는 '어쩔 수 없지'라는 체념이에요.<br>ruhig는 허락, bloß는 경고, denn은 궁금함이에요."
+  },
+  {
+   "lv": 3,
+   "t": "fill",
+   "q": "A: Warum kommst du ___ so spät? Ich warte seit einer Stunde!\nB: Entschuldige! Der Bus ist nicht gekommen. Das passiert ___ manchmal.\nA: Schon gut. Komm, setz dich ___! Nimm dir ___ noch einen Kaffee.",
+   "ko": "A: 도대체 왜 이렇게 늦게 와? 한 시간째 기다리고 있어!\nB: 미안해, 버스가 안 왔어. 그런 일은 가끔 있는 거잖아.\nA: 됐어. 자, 어서 앉아! 커피도 편하게 한 잔 더 마셔.",
+   "h": [
+    "답답함이 담긴 질문",
+    "어쩔 수 없음",
+    "권유",
+    "허락"
+   ],
+   "a": [
+    [
+     "denn"
+    ],
+    [
+     "eben",
+     "halt"
+    ],
+    [
+     "doch"
+    ],
+    [
+     "ruhig"
+    ]
+   ],
+   "e": "답답한 질문 denn · 어쩔 수 없음 eben/halt · 권유 doch · 허락 ruhig예요.<br>모두 가운데 자리에 와요."
+  },
+  {
+   "lv": 3,
+   "t": "mc",
+   "q": "틀린 문장은?",
+   "o": [
+    "Ich habe denn keine Lust.",
+    "Hast du eigentlich keine Geschwister?",
+    "Ruf ihn doch an!",
+    "Er ist ja nicht dumm."
+   ],
+   "a": 0,
+   "e": "불변화사 denn은 질문에만 써요.<br>평서문에서 '-잖아'는 ja나 doch예요 — Ich habe ja keine Lust."
+  },
+  {
+   "lv": 3,
+   "t": "order",
+   "q": "단어를 알맞은 순서로 놓으세요.",
+   "ko": "강좌가 오늘 없다고 내가 말했잖아.",
+   "a": [
+    "Ich habe dir doch gesagt, dass der Kurs heute ausfällt.",
+    "Ich habe dir doch gesagt, dass heute der Kurs ausfällt."
+   ],
+   "e": "doch는 대명사 dir 뒤에 와요.<br>dass 문장에서는 분리동사 ausfallen이 붙어서 맨 끝에 와요."
+  },
+  {
+   "lv": 3,
+   "t": "mc",
+   "q": "'Ich komme morgen DOCH.' (doch에 강세)의 뜻은?",
+   "o": [
+    "(아니라고 했지만) 내일 결국 갈게요.",
+    "내일 어서 와요.",
+    "내일 가잖아요.",
+    "내일 아마 갈 거예요."
+   ],
+   "a": 0,
+   "e": "불변화사는 약하게 말해요. doch에 강세가 오면 불변화사가 아니라 '그래도·결국'이라는 뜻이에요."
+  }
+ ]
+}

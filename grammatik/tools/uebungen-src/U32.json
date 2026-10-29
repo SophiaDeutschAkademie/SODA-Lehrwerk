@@ -1,0 +1,393 @@
+{
+  "n": "32",
+  "level": "B2",
+  "goals": [
+    "현재분사(~하고 있는)와 과거분사(~된·~한)를 뜻에 맞게 골라요",
+    "명사 앞 분사에 격과 관사에 맞는 형용사 어미를 붙여요",
+    "관사와 명사 사이가 긴 분사구를 읽고, 관계문과 서로 바꿔요",
+    "분사를 명사로 쓰고 spannend·gespannt 같은 짝을 구별해요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Leise, das Baby ist gerade eingeschlafen. Weck das ___ Kind bitte nicht!",
+      "ko": "조용히 해요, 아기가 방금 잠들었어요. 자고 있는 아이를 깨우지 마세요!",
+      "h": "schlafen",
+      "a": [
+        "schlafende"
+      ],
+      "e": "'~하고 있는'은 현재분사(원형 + d)예요.<br>정관사 das + 중성 4격이라 약변화 어미 -e를 붙여요 → das schlafende Kind."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Zum Mittagessen gab es ___ Kartoffeln mit Quark.",
+      "ko": "점심으로 삶은 감자와 크바르크가 나왔어요.",
+      "h": "kochen",
+      "a": [
+        "gekochte"
+      ],
+      "e": "이미 삶아진 것은 과거분사 gekocht예요.<br>es gibt 뒤는 4격이에요. 관사 없는 복수 4격이라 강변화 어미 -e예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Viele Familien suchen eine Lösung für die ___ Mieten. (계속 오르고 있는 집세)",
+      "o": [
+        "steigenden",
+        "gestiegenen",
+        "steigende",
+        "steigend"
+      ],
+      "a": 0,
+      "e": "지금도 오르고 있으니 현재분사 steigend예요.<br>für die + 복수 4격이라 약변화 -en → die steigenden Mieten."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir waren alle ___, als er plötzlich vor der Tür stand.",
+      "o": [
+        "überrascht",
+        "überraschend",
+        "überraschte",
+        "überraschten"
+      ],
+      "a": 0,
+      "e": "놀라움을 '받은' 쪽은 과거분사형 überrascht예요.<br>sein 뒤라서 어미가 붙지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das Konzert war ziemlich ___. Die Band hat nur 40 Minuten gespielt.",
+      "ko": "그 공연은 꽤 실망스러웠어요. 밴드가 40분밖에 연주하지 않았어요.",
+      "h": "enttäuschen",
+      "a": [
+        "enttäuschend"
+      ],
+      "e": "실망을 '주는' 쪽은 현재분사형 enttäuschend예요.<br>실망한 사람은 enttäuscht예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "In der Pause rannten die Kinder ___ über den Schulhof.",
+      "ko": "쉬는 시간에 아이들이 소리를 지르며 운동장을 뛰어다녔어요.",
+      "h": "schreien",
+      "a": [
+        "schreiend"
+      ],
+      "e": "'~하면서'라는 동시 동작은 현재분사를 부사로 써요.<br>부사라서 어미가 없어요 → schreiend."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Polizei hat ein ___ Fahrrad am Flussufer gefunden. (도난당한 자전거)",
+      "o": [
+        "gestohlenes",
+        "stehlendes",
+        "gestohlen",
+        "gestohlene"
+      ],
+      "a": 0,
+      "e": "도난당한 것은 과거분사 gestohlen(수동의 뜻)이에요.<br>ein + 중성 4격이라 혼합변화 -es → ein gestohlenes Fahrrad."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die gerade ___ Passagiere warten am Band auf ihr Gepäck. (막 도착한 승객들)",
+      "o": [
+        "angekommenen",
+        "angekommene",
+        "angekommen",
+        "ankommende"
+      ],
+      "a": 0,
+      "e": "ankommen은 sein과 쓰는 이동 동사라서 과거분사가 '도착한'(완료)이라는 뜻이에요.<br>정관사 die + 복수 1격 → 약변화 -en."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Alle ___ bekommen am Ende des Kurses ein Zertifikat.",
+      "ko": "모든 수강생은 강좌가 끝날 때 수료증을 받아요.",
+      "h": "teilnehmen · 현재분사를 명사로",
+      "a": [
+        "Teilnehmenden"
+      ],
+      "e": "현재분사를 명사로 쓰면 '~하는 사람'이에요 — der/die Teilnehmende.<br>alle 뒤의 복수는 약변화 -en이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Bei dem Unfall gab es zum Glück nur einen ___.",
+      "ko": "그 사고에서 다행히 부상자는 한 명뿐이었어요.",
+      "h": "verletzen",
+      "a": [
+        "Verletzten"
+      ],
+      "e": "과거분사 verletzt를 명사로 쓰면 '부상자'예요. 형용사처럼 어미가 붙어요.<br>einen + 남성 4격 → 혼합변화 -en."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Eine ___ fragte mich am Bahnhof nach dem Weg zum Hotel.",
+      "o": [
+        "Reisende",
+        "Reisender",
+        "Reisenden",
+        "Reisendes"
+      ],
+      "a": 0,
+      "e": "여성 여행자 한 명이라 eine + 여성 1격 → -e, eine Reisende예요.<br>Reisender는 남성(ein Reisender)이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Bitte geben Sie das ___ Formular bis Freitag im Sekretariat ab.",
+      "ko": "작성한 서류를 금요일까지 사무실에 제출해 주세요.",
+      "h": "ausfüllen",
+      "a": [
+        "ausgefüllte"
+      ],
+      "e": "작성된 서류는 과거분사예요. ausfüllen은 분리동사라 ausgefüllt예요.<br>das + 중성 4격 → 약변화 -e."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "짖는 개들 때문에 나는 밤새 잠을 못 잤어요.",
+      "a": [
+        "Die bellenden Hunde haben mich die ganze Nacht wach gehalten.",
+        "Die ganze Nacht haben mich die bellenden Hunde wach gehalten.",
+        "Mich haben die bellenden Hunde die ganze Nacht wach gehalten.",
+        "Die ganze Nacht haben die bellenden Hunde mich wach gehalten."
+      ],
+      "e": "현재분사 bellend는 관사와 명사 사이에 오고 어미가 붙어요 → die bellenden Hunde.<br>haben이 두 번째 자리, 과거분사 gehalten이 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die im Urlaub ___ Fotos habe ich in ein Album geklebt.",
+      "ko": "휴가 때 찍은 사진들을 앨범에 붙였어요.",
+      "h": "machen",
+      "a": [
+        "gemachten"
+      ],
+      "e": "찍힌 사진이라 과거분사 gemacht예요.<br>die + 복수 4격 → 약변화 -en. im Urlaub는 분사 앞에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "die Frau, die an der Kasse wartet → die an der Kasse ___ Frau",
+      "o": [
+        "wartende",
+        "gewartete",
+        "wartenden",
+        "wartend"
+      ],
+      "a": 0,
+      "e": "능동·진행이라 현재분사 wartend예요.<br>die + 여성 1격 → 약변화 -e."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "der von allen gelobte Koch = ?",
+      "o": [
+        "der Koch, der von allen gelobt wird",
+        "der Koch, der alle lobt",
+        "der Koch, der von allen loben wird",
+        "alle, die den Koch loben werden"
+      ],
+      "a": 0,
+      "e": "과거분사 gelobt는 수동의 뜻이에요 — 모두에게 칭찬받는 요리사.<br>관계문으로 풀면 수동 wird … gelobt예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Mit ___ Herzen öffnete sie den Brief der Universität.",
+      "o": [
+        "klopfendem",
+        "klopfenden",
+        "geklopftem",
+        "klopfend"
+      ],
+      "a": 0,
+      "e": "두근거리고 있는 심장이라 현재분사 klopfend예요.<br>관사 없는 중성 3격이라 강변화 -em → mit klopfendem Herzen."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "die seit Jahren leer stehende Fabrik\n= die Fabrik, ___ seit Jahren leer ___",
+      "ko": "몇 년째 비어 있는 공장",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "die",
+        "steht"
+      ],
+      "e": "관사 die와 명사 Fabrik 사이를 관계문으로 풀어요.<br>현재분사 stehend → 관계문 현재 die … steht."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Wir wohnen in einem im 18. Jahrhundert ___ Haus.",
+      "ko": "우리는 18세기에 지어진 집에 살아요.",
+      "h": "bauen",
+      "a": [
+        "gebauten"
+      ],
+      "e": "지어진 집이라 과거분사 gebaut예요.<br>in einem + 중성 3격 → 혼합변화 -en."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "몇 시간째 승강장에서 기다리고 있는 남자가 제 삼촌이에요.",
+      "a": [
+        "Der seit Stunden am Gleis wartende Mann ist mein Onkel.",
+        "Der am Gleis seit Stunden wartende Mann ist mein Onkel."
+      ],
+      "e": "관사 der와 명사 Mann 사이에 설명(seit Stunden am Gleis)이 들어가고, 명사 바로 앞에 현재분사 wartende가 와요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Der erste Arbeitstag war ___, und ich war ziemlich ___.",
+      "o": [
+        "aufregend … aufgeregt",
+        "aufgeregt … aufregend",
+        "aufregend … aufregend",
+        "aufgeregt … aufgeregt"
+      ],
+      "a": 0,
+      "e": "긴장을 '주는' 첫 출근 날은 aufregend, 긴장을 '받은' 나는 aufgeregt예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Unsere Firma hat dieses Jahr drei neue ___ eingestellt. Einer der ___ kommt aus Hamburg.",
+      "ko": "우리 회사는 올해 새 직업 훈련생 세 명을 뽑았어요. 그 훈련생들 중 한 명은 함부르크 출신이에요.",
+      "h": [
+        "ausbilden · 현재분사를 명사로",
+        "ausbilden · 현재분사를 명사로"
+      ],
+      "a": [
+        "Auszubildende",
+        "Auszubildenden"
+      ],
+      "e": "분사 명사는 형용사 어미를 따라요.<br>① 관사 없이 neue 뒤의 복수 4격 → 강변화 -e.<br>② der + 복수 2격 → 약변화 -en."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'Der Zug, der gerade abfährt, ist voll.'과 뜻이 같은 것은?",
+      "o": [
+        "Der gerade abfahrende Zug ist voll.",
+        "Der gerade abgefahrene Zug ist voll.",
+        "Der gerade abfahrend Zug ist voll.",
+        "Der gerade abgefahrende Zug ist voll."
+      ],
+      "a": 0,
+      "e": "지금 떠나고 있는 중이라 현재분사 abfahrend예요. 명사 앞이라 어미 -e를 붙여요.<br>abgefahren은 이미 떠난 기차예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Den von dir ___ Brief habe ich leider nie bekommen.",
+      "ko": "네가 보낸 편지를 나는 결국 받지 못했어요.",
+      "h": "schicken",
+      "a": [
+        "geschickten"
+      ],
+      "e": "보내진 편지라 과거분사 geschickt예요.<br>den + 남성 4격 → 약변화 -en. von dir는 분사 앞에 와요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 것은?",
+      "o": [
+        "die in Berlin gewohnte Familie",
+        "die auf dem Spielplatz laufenden Kinder",
+        "der gestern angekommene Brief",
+        "das frisch gestrichene Zimmer"
+      ],
+      "a": 0,
+      "e": "명사 앞 과거분사는 4격 목적어를 갖는 동사(수동)나 sein과 쓰는 이동·변화 동사(완료)만 돼요.<br>wohnen은 둘 다 아니라서 현재분사로 써야 해요 → die in Berlin wohnende Familie."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Die Firma wurde vor zehn Jahren von zwei Studentinnen gegründet. Heute arbeiten dort 500 Menschen.\n→ In der vor zehn Jahren von zwei Studentinnen ___ Firma arbeiten heute 500 Menschen.",
+      "ko": "10년 전에 두 여대생이 세운 그 회사에서 지금은 500명이 일해요.",
+      "h": "gründen",
+      "a": [
+        "gegründeten"
+      ],
+      "e": "수동(wurde gegründet)은 과거분사로 바꿔요.<br>in der + 여성 3격 → 약변화 -en. 관사 der와 명사 Firma 사이가 길어도 어미는 관사와 명사로 정해요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "할머니가 떠 주신 목도리를 버스에 두고 내렸어요.",
+      "a": [
+        "Ich habe den von meiner Oma gestrickten Schal im Bus vergessen.",
+        "Den von meiner Oma gestrickten Schal habe ich im Bus vergessen.",
+        "Im Bus habe ich den von meiner Oma gestrickten Schal vergessen.",
+        "Ich habe im Bus den von meiner Oma gestrickten Schal vergessen."
+      ],
+      "e": "관사 den → 설명 von meiner Oma → 과거분사 gestrickten → 명사 Schal 순서예요.<br>이 덩어리 전체가 한 자리를 차지해요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "die ihren Kunden kostenlose Beratung anbietende Bank\n= die Bank, ___ ihren Kunden kostenlose Beratung ___",
+      "ko": "고객에게 무료 상담을 제공하는 은행",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "die",
+        "anbietet"
+      ],
+      "e": "현재분사 anbietend → 관계문 현재형이에요.<br>관계문에서는 분리동사가 다시 붙어 맨 끝에 와요 → anbietet."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'상처를 주는 말'과 '다친 선수'를 바르게 옮긴 것은?",
+      "o": [
+        "eine verletzende Bemerkung · ein verletzter Spieler",
+        "eine verletzte Bemerkung · ein verletzender Spieler",
+        "eine verletzende Bemerkung · ein verletzender Spieler",
+        "eine verletzte Bemerkung · ein verletzter Spieler"
+      ],
+      "a": 0,
+      "e": "상처를 '주는' 말은 현재분사 verletzend, 상처를 '입은' 선수는 과거분사 verletzt예요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Der ___ Kunde beschwerte sich über das ___ Essen, das kalt war. Die ___ Kellnerin entschuldigte sich ___.",
+      "ko": "소리치는 손님은 자기가 주문한 음식이 차갑다고 불평했어요. 깜짝 놀란 종업원은 말을 더듬으며 사과했어요.",
+      "h": [
+        "schreien",
+        "bestellen",
+        "erschrecken",
+        "stottern"
+      ],
+      "a": [
+        "schreiende",
+        "bestellte",
+        [
+          "erschrockene",
+          "erschreckte"
+        ],
+        "stotternd"
+      ],
+      "e": "① 소리치고 있는 → schreiende(der + 남성 1격 -e).<br>② 주문된 → bestellte(das + 중성 4격 -e).<br>③ 놀란 → erschrocken(자동사 erschrecken의 불규칙 과거분사), 여성 1격 -e.<br>④ 더듬으며 → 부사 stotternd, 어미 없음."
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "n": "33",
+  "level": "B2",
+  "goals": [
+    "접속법 I을 어간 + e 어미로 만들고, 직설법과 같으면 접속법 II나 würde로 바꿔요",
+    "간접화법으로 바꿀 때 인칭·소유관사·시간 표현을 바꿔요",
+    "지난 일은 habe/sei + 과거분사, 앞으로의 일은 werde + 원형으로 전해요",
+    "질문은 ob·의문사로, 명령과 부탁은 sollen·mögen으로 전해요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "[기사] Der Bürgermeister sagte, die neue Brücke ___ absolut sicher.",
+      "o": [
+        "sei",
+        "ist",
+        "wäre",
+        "seie"
+      ],
+      "a": 0,
+      "e": "기사에서 남의 말을 전할 때는 접속법 I을 써요. sein의 3인칭 단수 접속법 I은 sei예요.<br>sei가 직설법 ist와 다르니 접속법 II wäre로 바꾸지 않아요. seie라는 형태는 없어요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Kollege behauptet, er ___ den Schlüssel nicht.",
+      "ko": "그 동료는 자기가 열쇠를 갖고 있지 않다고 주장해요.",
+      "h": "haben · 접속법",
+      "a": [
+        "habe"
+      ],
+      "e": "3인칭 단수 접속법 I은 어간 + e예요 → er habe.<br>직설법 er hat과 모양이 달라서 접속법 I을 그대로 써요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Wetterdienst meldet, es ___ morgen im Norden stark regnen.",
+      "ko": "기상청은 내일 북부에 비가 많이 올 거라고 발표해요.",
+      "h": "werden · 접속법",
+      "a": [
+        "werde"
+      ],
+      "e": "앞으로의 일은 werden의 접속법 I + 원형으로 전해요 → es werde … regnen."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "[기사] Die Jugendlichen erzählen: „Wir haben in den Ferien viel Spaß gehabt.“\n→ Die Jugendlichen erzählen, sie ___ in den Ferien viel Spaß gehabt.",
+      "o": [
+        "hätten",
+        "haben",
+        "hatten",
+        "habe"
+      ],
+      "a": 0,
+      "e": "sie(복수)의 접속법 I haben은 직설법과 같아서 접속법 II hätten으로 바꿔요.<br>habe는 단수 형태예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Mein Nachbar erzählte, er ___ letzte Woche in Wien gewesen.",
+      "ko": "이웃은 지난주에 빈에 다녀왔다고 이야기했어요.",
+      "h": "sein · 접속법",
+      "a": [
+        "sei"
+      ],
+      "e": "지난 일은 habe/sei + 과거분사로 전해요.<br>sein의 현재완료는 sein을 쓰니까 er sei … gewesen."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Händler versichert, er ___ die Ware bis Montag liefern.",
+      "ko": "그 판매자는 월요일까지 상품을 배송할 수 있다고 장담해요.",
+      "h": "können · 접속법",
+      "a": [
+        "könne"
+      ],
+      "e": "können의 접속법 I은 어간 könn + e → er könne.<br>모음은 바뀌지 않아요(kann ✕)."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Der Kellner fragte, ___ wir schon gewählt hätten.",
+      "o": [
+        "ob",
+        "dass",
+        "wenn",
+        "was"
+      ],
+      "a": 0,
+      "e": "예/아니요 질문(„Haben Sie schon gewählt?“)을 전할 때는 ob(~인지)을 써요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Ärztin sagte, ich ___ mich ein paar Tage schonen.",
+      "ko": "의사 선생님은 내가 며칠 몸을 아껴야 한다고 했어요.",
+      "h": "sollen · 접속법",
+      "a": [
+        "solle"
+      ],
+      "e": "명령(„Schonen Sie sich!“)은 sollen으로 전해요.<br>ich의 접속법 I은 solle예요. 직설법 soll과 모양이 달라요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Maria sagt: „Mein Zug hat Verspätung.“\n→ Maria sagt, ___ Zug habe Verspätung.",
+      "o": [
+        "ihr",
+        "mein",
+        "sein",
+        "ihre"
+      ],
+      "a": 0,
+      "e": "말한 사람 Maria를 기준으로 인칭을 바꿔요 → mein → ihr.<br>Zug가 남성 1격이라 어미가 없어요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Sie fragte den Taxifahrer: „Wie lange dauert die Fahrt?“\n→ Sie fragte den Taxifahrer, wie lange die Fahrt ___.",
+      "ko": "그녀는 택시 기사에게 가는 데 얼마나 걸리는지 물었어요.",
+      "h": "dauern · 접속법",
+      "a": [
+        "dauere"
+      ],
+      "e": "의문사 질문은 의문사로 이어 주고 동사는 맨 끝에 와요.<br>3인칭 단수 접속법 I → die Fahrt dauere."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "er weiß의 접속법 I은?",
+      "o": [
+        "er wisse",
+        "er wüsste",
+        "er wusste",
+        "er weiße"
+      ],
+      "a": 0,
+      "e": "접속법 I은 원형의 어간에 -e를 붙여요 → wiss + e = er wisse.<br>wüsste는 접속법 II, wusste는 과거형이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Feuerwehr meldete, alle Bewohner ___ rechtzeitig gerettet worden.",
+      "ko": "소방서는 주민 모두가 제때 구조됐다고 발표했어요.",
+      "h": "sein · 접속법",
+      "a": [
+        "seien"
+      ],
+      "e": "수동 현재완료(sind … gerettet worden)를 전하면 sei/seien + 과거분사 + worden이에요.<br>주어가 복수라서 seien이에요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그는 안경을 사무실에 두고 왔다고 해요.",
+      "a": [
+        "Er sagt, er habe seine Brille im Büro vergessen.",
+        "Er sagt, er habe im Büro seine Brille vergessen.",
+        "Er sagt, seine Brille habe er im Büro vergessen.",
+        "Er sagt, im Büro habe er seine Brille vergessen."
+      ],
+      "e": "dass가 없으면 간접화법 문장은 동사가 두 번째 자리예요.<br>지난 일이라 habe + 과거분사 vergessen이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "바른 문장은?",
+      "o": [
+        "Sie meint, dass das Angebot zu teuer sei.",
+        "Sie meint, dass das Angebot sei zu teuer.",
+        "Sie meint, das Angebot zu teuer sei.",
+        "Sie meint, dass sei das Angebot zu teuer."
+      ],
+      "a": 0,
+      "e": "dass가 있으면 접속법 I 동사도 맨 끝에 와요.<br>dass가 없으면 동사가 두 번째 자리예요 — Sie meint, das Angebot sei zu teuer."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Gäste sagen: „Wir kommen etwas später.“\n→ Die Gäste sagen, sie ___ etwas später.",
+      "ko": "손님들은 조금 늦게 온다고 해요.",
+      "h": "kommen · 접속법",
+      "a": [
+        "kämen"
+      ],
+      "e": "sie(복수)의 접속법 I kommen은 직설법과 같아요.<br>그래서 접속법 II kämen으로 바꿔요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "[기사] Der Pilot kündigte an, das Flugzeug ___ pünktlich in Frankfurt an.",
+      "o": [
+        "komme",
+        "kommt",
+        "käme",
+        "kämen"
+      ],
+      "a": 0,
+      "e": "3인칭 단수 접속법 I komme는 직설법 kommt와 달라서 그대로 써요. 접속법 II käme로 바꾸지 않아요.<br>분리동사 ankommen의 접두어 an은 끝에 남아요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Die Zeugin sagte: „Ich habe den Mann nicht gesehen.“\n→ Die Zeugin sagte, sie ___ den Mann nicht ___.",
+      "ko": "그 증인은 그 남자를 보지 못했다고 말했어요.",
+      "h": [
+        "접속법",
+        "sehen"
+      ],
+      "a": [
+        "habe",
+        "gesehen"
+      ],
+      "e": "지난 일은 habe/sei + 과거분사예요.<br>sehen은 haben을 써요 → sie habe … gesehen."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Am Montag sagte Jonas: „Ich fliege morgen nach Lissabon.“\n→ Am Montag sagte Jonas, er ___ ___ ___ Tag nach Lissabon.",
+      "ko": "월요일에 요나스는 다음 날 리스본에 간다고 했어요.",
+      "h": [
+        "fliegen · 접속법",
+        "",
+        ""
+      ],
+      "a": [
+        "fliege",
+        "am",
+        "nächsten"
+      ],
+      "e": "나중에 전할 때는 시간 표현도 바꿔요 → morgen → am nächsten Tag.<br>동사는 3인칭 단수 접속법 I fliege예요.",
+      "ok": "am nächsten Tag은 이 과에서 익힐 시간 표현 바꾸기 자체라 피할 수 없음"
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Die Trainerin zu Tim: „Bring bitte deine Sportschuhe mit!“\n바르게 전한 것은?",
+      "o": [
+        "Die Trainerin sagt, Tim solle seine Sportschuhe mitbringen.",
+        "Die Trainerin sagt, Tim solle deine Sportschuhe mitbringen.",
+        "Die Trainerin sagt, Tim solle seine Sportschuhe mit.",
+        "Die Trainerin sagt, dass Tim solle seine Sportschuhe mitbringen."
+      ],
+      "a": 0,
+      "e": "명령은 sollen + 원형으로 전해요. 원형 mitbringen은 끝에 붙여 써요.<br>deine는 Tim을 기준으로 seine가 되고, dass가 있으면 solle가 끝으로 가야 해요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Die Chefin fragte: „Hat Felix die Rechnung schon bezahlt?“\n→ Die Chefin fragte, ob Felix die Rechnung schon bezahlt ___.",
+      "ko": "사장님은 펠릭스가 벌써 계산서를 냈는지 물었어요.",
+      "h": "haben · 접속법",
+      "a": [
+        "habe"
+      ],
+      "e": "예/아니요 질문은 ob로 전하고 동사는 맨 끝이에요.<br>지난 일이라 bezahlt habe(3인칭 단수 접속법 I)예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Die Arbeiter sagen: „Wir arbeiten auch am Wochenende.“\n기사에 쓰기에 알맞게 전한 것은?",
+      "o": [
+        "Die Arbeiter sagen, sie würden auch am Wochenende arbeiten.",
+        "Die Arbeiter sagen, sie arbeiteten auch am Wochenende.",
+        "Die Arbeiter sagen, sie arbeiten auch am Wochenende.",
+        "Die Arbeiter sagen, sie arbeite auch am Wochenende."
+      ],
+      "a": 0,
+      "e": "접속법 I arbeiten은 직설법과 같고, 접속법 II arbeiteten은 과거형과 같아요.<br>둘 다 구별이 안 되니 würde + 원형을 써요. arbeite는 단수 형태예요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "손님은 가게가 언제 다시 문을 여는지 알고 싶어 했어요.",
+      "a": [
+        "Der Kunde wollte wissen, wann das Geschäft wieder öffne."
+      ],
+      "e": "간접의문문은 의문사 wann으로 시작하고 동사가 맨 끝에 와요.<br>3인칭 단수 접속법 I → öffne."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Meine Schwester sagt zu mir: „Ich werde dich am Bahnhof abholen.“\n→ Meine Schwester sagt, sie ___ ___ am Bahnhof abholen.",
+      "ko": "언니는 나를 역에서 데리러 오겠다고 해요.",
+      "h": [
+        "werden · 접속법",
+        "dich → ?"
+      ],
+      "a": [
+        "werde",
+        "mich"
+      ],
+      "e": "앞으로의 일은 werde + 원형이에요.<br>듣는 사람이 나라서 dich → mich로 바꿔요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Er hat gesagt, er hätte das Geld schon überwiesen.\n이 말에서 hätte가 주는 느낌은?",
+      "o": [
+        "말하는 사람이 그 말을 믿기 어려워해요",
+        "말하는 사람이 그 말이 사실이라고 확신해요",
+        "아주 오래전에 있었던 일이에요",
+        "상대에게 정중하게 부탁하는 말이에요"
+      ],
+      "a": 0,
+      "e": "일상 대화에서 3인칭 단수에 접속법 I(habe) 대신 접속법 II를 쓰면 '정말 그런지 의심스럽다'는 말투가 돼요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Der Bahnsprecher: „Der Zug ist wegen eines Unwetters liegen geblieben. Die Fahrgäste haben drei Stunden lang gewartet. Morgen wird der Verkehr wieder normal laufen.“\n→ Der Bahnsprecher erklärte, der Zug ___ wegen eines Unwetters liegen geblieben. Die Fahrgäste ___ drei Stunden lang gewartet. Am nächsten Tag ___ der Verkehr wieder normal laufen.",
+      "ko": "철도 대변인은 열차가 악천후 때문에 멈춰 섰다고 밝혔어요. 승객들은 세 시간 동안 기다렸다고 해요. 다음 날에는 운행이 다시 정상으로 돌아올 거라고 해요.",
+      "h": [
+        "접속법",
+        "접속법",
+        "접속법"
+      ],
+      "a": [
+        "sei",
+        "hätten",
+        "werde"
+      ],
+      "e": "① liegen bleiben은 sein → er sei … geblieben.<br>② sie(복수) haben은 직설법과 같아서 접속법 II hätten.<br>③ 앞으로의 일 → werde + 원형.",
+      "ok": "am nächsten Tag은 morgen을 바꾸는 이 과의 핵심 표현"
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "Lena: „Ich habe meinen Pass verloren.“\n틀리게 전한 것은?",
+      "o": [
+        "Lena sagt, sie habe meinen Pass verloren.",
+        "Lena sagt, sie habe ihren Pass verloren.",
+        "Lena sagt, dass sie ihren Pass verloren habe.",
+        "Lena hat gesagt, dass sie ihren Pass verloren hat."
+      ],
+      "a": 0,
+      "e": "인칭을 말한 사람 Lena에 맞춰 바꿔야 해요 → meinen → ihren.<br>마지막 문장은 일상 대화에서 쓰는 직설법 dass 문장이라 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Die Bibliothekarin bat, man ___ die Bücher bis Freitag zurückgeben.",
+      "ko": "사서는 금요일까지 책을 반납해 달라고 부탁했어요.",
+      "h": "mögen · 접속법",
+      "a": [
+        "möge"
+      ],
+      "e": "글에서 정중한 부탁은 mögen의 접속법 I로 전하기도 해요 → man möge + 원형.<br>3인칭 단수라 möge예요.",
+      "ok": "bitten, man möge …는 교재 F절의 문형 자체라 피할 수 없음, 내용은 새로 만듦"
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "경찰관은 누가 그 사고를 목격했는지 물었어요.",
+      "a": [
+        "Die Polizistin fragte, ob jemand den Unfall beobachtet habe.",
+        "Die Polizistin fragte, ob den Unfall jemand beobachtet habe."
+      ],
+      "e": "„Hat jemand den Unfall beobachtet?“를 ob로 전해요.<br>동사 habe는 맨 끝, 과거분사 beobachtet는 그 앞이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Ben schrieb mir: „Ich habe deine Nachricht heute erst gelesen, weil mein Handy kaputt war.“\n→ Ben schrieb mir, er ___ ___ Nachricht an dem Tag erst gelesen, weil ___ Handy kaputt gewesen ___.",
+      "ko": "벤은 휴대폰이 고장 나서 그날에야 내 메시지를 읽었다고 썼어요.",
+      "h": [
+        "haben · 접속법",
+        "deine → ?",
+        "mein → ?",
+        "sein · 접속법"
+      ],
+      "a": [
+        "habe",
+        "meine",
+        "sein",
+        "sei"
+      ],
+      "e": "① 지난 일 → er habe … gelesen.<br>② 듣는 사람이 나라서 deine → meine, 말한 사람이 Ben이라 mein → sein.<br>③ 과거형 war도 간접화법에서는 sei + gewesen이 돼요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "Der Trainer erklärte, man habe ihn nicht rechtzeitig informiert.\n이 문장의 원래 말(직접화법)은?",
+      "o": [
+        "„Man hat mich nicht rechtzeitig informiert.“",
+        "„Man wird mich nicht rechtzeitig informieren.“",
+        "„Man informiert mich nicht rechtzeitig.“",
+        "„Man hätte mich rechtzeitig informieren sollen.“"
+      ],
+      "a": 0,
+      "e": "habe + 과거분사는 지난 일이에요 → hat … informiert. 앞으로의 일이었다면 werde … informieren이에요.<br>간접화법의 ihn은 말한 트레이너 자신이라 원래 말에서는 mich예요."
+    }
+  ]
+}

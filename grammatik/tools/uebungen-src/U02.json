@@ -1,0 +1,379 @@
+{
+  "n": "02",
+  "level": "A1",
+  "goals": [
+    "다섯 가지 복수 어미와 움라우트를 구별해요",
+    "성과 어미를 보고 복수형을 예측하고, 사전 표기를 읽어요",
+    "복수의 관사 die, 관사 없는 복수, 3격 복수의 -n을 써요",
+    "복수만 쓰는 명사와 단위 명사의 수를 바르게 써요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Blume(꽃)의 복수형은?",
+      "o": [
+        "die Blumen",
+        "die Blümen",
+        "die Blumes",
+        "die Blumer"
+      ],
+      "a": 0,
+      "e": "-e로 끝나는 여성 명사는 -n만 붙여요 — die Blume → die Blumen.<br>-(e)n 복수에는 움라우트가 생기지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Glas(유리잔)의 복수형은?",
+      "o": [
+        "die Gläser",
+        "die Glase",
+        "die Glasen",
+        "die Gläse"
+      ],
+      "a": 0,
+      "e": "1음절 중성 명사는 ¨-er가 많아요.<br>바꿀 모음 a가 있으니 움라우트도 붙어요 — das Glas → die Gläser."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Hund(개)의 복수형은?",
+      "o": [
+        "die Hunde",
+        "die Hunder",
+        "die Hunds",
+        "die Hunden"
+      ],
+      "a": 0,
+      "e": "남성 명사는 주로 -e를 붙여요 — der Hund → die Hunde.<br>-s는 외래어·모음 끝 명사에만 써요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Radio(라디오)의 복수형은?",
+      "o": [
+        "die Radios",
+        "die Radioe",
+        "die Radioen",
+        "die Radier"
+      ],
+      "a": 0,
+      "e": "모음으로 끝나는 외래어는 -s를 붙여요 — das Radio → die Radios."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Kollegin(여자 동료)의 복수형은?",
+      "o": [
+        "die Kolleginnen",
+        "die Kolleginen",
+        "die Kollegins",
+        "die Kollegine"
+      ],
+      "a": 0,
+      "e": "-in으로 끝나는 여성형은 n을 하나 더 써서 -innen이 돼요 — die Kolleginnen."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "사전에 Mantel m. -s, ¨-라고 나와 있어요. 복수형은?",
+      "o": [
+        "die Mäntel",
+        "die Mantel",
+        "die Mänteln",
+        "die Mantels"
+      ],
+      "a": 0,
+      "e": "'¨-'는 어미 없이 움라우트만 붙인다는 뜻이에요 — der Mantel → die Mäntel."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ Teller sind sauber.",
+      "o": [
+        "Die",
+        "Der",
+        "Das",
+        "Den"
+      ],
+      "a": 0,
+      "e": "동사가 sind라서 Teller는 복수예요.<br>복수의 정관사는 성과 상관없이 die예요. der Teller의 복수는 모양이 같은 die Teller예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die ___ sind leer.",
+      "ko": "그 컵들은 비어 있어요.",
+      "h": "Tasse · 여성",
+      "a": [
+        "Tassen"
+      ],
+      "e": "-e로 끝나는 여성 명사는 -n을 붙여요 — die Tasse → die Tassen."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich kaufe zwei ___.",
+      "ko": "나는 오이 두 개를 사요.",
+      "h": "Gurke · 여성",
+      "a": [
+        "Gurken"
+      ],
+      "e": "2 이상의 수 뒤에는 복수형을 써요.<br>여성 -e → -n: die Gurke → die Gurken."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir haben drei ___.",
+      "ko": "우리는 아들이 셋 있어요.",
+      "h": "Sohn m. -(e)s, ¨-e",
+      "a": [
+        "Söhne"
+      ],
+      "e": "사전의 쉼표 뒤 '¨-e'는 움라우트 + -e라는 뜻이에요 — der Sohn → die Söhne."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die ___ sind neu.",
+      "ko": "그 침대들은 새것이에요.",
+      "h": "Bett n. -(e)s, -en",
+      "a": [
+        "Betten"
+      ],
+      "e": "사전 표기 '-en'을 그대로 붙여요 — das Bett → die Betten.<br>중성이지만 -en 복수를 쓰는 단어라서 표기를 꼭 확인해요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Hier sind vier ___.",
+      "ko": "여기 열쇠가 네 개 있어요.",
+      "h": "Schlüssel m. -s, -",
+      "a": [
+        "Schlüssel"
+      ],
+      "e": "'-'는 어미가 붙지 않는다는 뜻이에요.<br>-el로 끝나는 남성 명사는 단수와 복수가 같아요 — die Schlüssel."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "사전 표기를 보고 복수형을 쓰세요.\nKleid n. -(e)s, -er → die ___",
+      "ko": "원피스들",
+      "h": "",
+      "a": [
+        "Kleider"
+      ],
+      "e": "쉼표 뒤 둘째 칸 '-er'가 복수예요. 움라우트 표시(¨)가 없으니 모음은 그대로예요 — die Kleider."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich kaufe vier ___ Milch.",
+      "ko": "나는 우유 네 병을 사요.",
+      "h": "Flasche · 여성 · 단위",
+      "a": [
+        "Flaschen"
+      ],
+      "e": "여성 단위 명사는 복수로 써요 — vier Flaschen Milch.<br>Milch는 셀 수 없는 물질이라 단수 그대로예요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그 여학생들은 단어 열 개를 배워요.",
+      "a": [
+        "Die Schülerinnen lernen zehn Wörter."
+      ],
+      "e": "주어 die Schülerinnen이 복수라서 동사도 lernen이에요.<br>das Wort의 복수 Wörter(낱낱의 단어)를 써요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그 형제자매는 고양이 두 마리를 키워요.",
+      "a": [
+        "Die Geschwister haben zwei Katzen."
+      ],
+      "e": "Geschwister는 복수만 있는 명사라서 동사도 복수 haben을 써요.<br>die Katze → die Katzen."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "복수형이 단수형과 모양이 같은 것은?",
+      "o": [
+        "der Koffer",
+        "der Hut",
+        "die Gabel",
+        "das Ei"
+      ],
+      "a": 0,
+      "e": "-er로 끝나는 남성 Koffer는 복수에서 변화가 없어요 — die Koffer.<br>die Gabel은 여성이라서 -n을 붙여 die Gabeln, der Hut → die Hüte, das Ei → die Eier예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Wir spielen mit den ___. (das Baby)",
+      "o": [
+        "Babys",
+        "Babysn",
+        "Babyen",
+        "Baby"
+      ],
+      "a": 0,
+      "e": "3격 복수에는 명사 끝에 -n을 붙이지만, 복수형이 -s로 끝나면 붙이지 않아요 — mit den Babys."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Wir brauchen drei ___ Mehl.",
+      "ko": "우리는 밀가루 3킬로가 필요해요.",
+      "h": "Kilo · 중성 · 단위",
+      "a": [
+        "Kilo"
+      ],
+      "e": "남성·중성 단위 명사는 숫자가 커져도 단수로 써요 — drei Kilo Mehl.<br>Mehl은 셀 수 없는 물질이라 단수 그대로예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Er spielt mit den ___.",
+      "ko": "그는 그 개들과 놀아요.",
+      "h": "Hund · 남성",
+      "a": [
+        "Hunden"
+      ],
+      "e": "mit 뒤는 3격이에요. 3격 복수는 관사 den과 명사 끝 -n이 함께 가요 — die Hunde → mit den Hunden."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Da sind zwei ___.",
+      "ko": "저기 사자가 두 마리 있어요.",
+      "h": "Löwe · 남성 · 동물",
+      "a": [
+        "Löwen"
+      ],
+      "e": "-e로 끝나는 남성 동물·사람 명사는 -e나 -s가 아니라 -n 복수를 써요 — der Löwe → die Löwen."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Die Ferien ___ lang.",
+      "ko": "방학이 길어요.",
+      "h": "sein",
+      "a": [
+        "sind"
+      ],
+      "e": "Ferien은 복수만 있는 명사예요. 한국어로는 '방학' 하나지만 동사는 복수 sind를 써요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리는 토마토 2킬로를 사고 콜라 세 캔을 마셔요.",
+      "a": [
+        "Wir kaufen zwei Kilo Tomaten und trinken drei Dosen Cola."
+      ],
+      "e": "중성 단위 Kilo는 단수 그대로, 여성 단위 Dose는 복수 Dosen으로 써요.<br>셀 수 있는 Tomaten은 복수, 물질 Cola는 단수예요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그 여의사들은 차를 두 잔 마셔요.",
+      "a": [
+        "Die Ärztinnen trinken zwei Tassen Tee."
+      ],
+      "e": "die Ärztin → die Ärztinnen(-innen), 동사도 복수 trinken이에요.<br>여성 단위 Tasse는 복수 Tassen으로 써요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "복수형이 틀린 것은?",
+      "o": [
+        "die Wursten",
+        "die Mäuse",
+        "die Nächte",
+        "die Städte"
+      ],
+      "a": 0,
+      "e": "die Wurst는 여성이지만 -(e)n이 아니라 ¨-e 복수를 쓰는 예외예요 — die Würste.<br>Maus · Nacht · Stadt도 같은 예외라서 Mäuse · Nächte · Städte가 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "바른 문장은?",
+      "o": [
+        "Wir trinken zwei Glas Milch.",
+        "Wir kaufen drei Flasche Saft.",
+        "Wir brauchen drei Liters Öl.",
+        "Wir essen zwei Äpfeln."
+      ],
+      "a": 0,
+      "e": "중성 단위 Glas는 숫자가 커져도 단수로 써요.<br>바르게 고치면 drei Flaschen Saft(여성 단위는 복수) · drei Liter Öl(Liter는 복수도 Liter) · zwei Äpfel(3격이 아니라서 -n 없음)이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Hier sind zwei ___, drei ___, vier ___ und fünf ___.",
+      "ko": "여기 소파 두 개, 선반 세 개, 쿠션 네 개, 담요 다섯 장이 있어요.",
+      "h": [
+        "Sofa · 중성",
+        "Regal · 중성",
+        "Kissen · 중성",
+        "Decke · 여성"
+      ],
+      "a": [
+        "Sofas",
+        "Regale",
+        "Kissen",
+        "Decken"
+      ],
+      "e": "Sofa는 모음으로 끝나서 -s, 2음절 중성 Regal은 -e, -en으로 끝나는 중성 Kissen은 변화 없음, 여성 -e인 Decke는 -n이에요.<br>같은 중성이라도 끝 모양에 따라 복수가 셋으로 갈려요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Die ___ sind alt und die ___ sind neu.",
+      "ko": "그 벤치들은 낡았고 그 은행들은 새것이에요.",
+      "h": [
+        "Bank · 벤치",
+        "Bank · 은행"
+      ],
+      "a": [
+        "Bänke",
+        "Banken"
+      ],
+      "e": "die Bank는 뜻에 따라 복수가 달라요.<br>벤치는 ¨-e로 die Bänke, 은행은 -en으로 die Banken이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Ich spreche mit den ___, den ___ und den ___.",
+      "ko": "나는 그 교사들, 그 여의사들, 그 관광객들과 이야기해요.",
+      "h": [
+        "Lehrer · 남성",
+        "Ärztin · 여성",
+        "Tourist · 남성"
+      ],
+      "a": [
+        "Lehrern",
+        "Ärztinnen",
+        "Touristen"
+      ],
+      "e": "3격 복수는 명사 끝에 -n을 붙여요. Lehrer는 복수가 그대로라서 -n을 더해 Lehrern이에요.<br>Ärztinnen과 Touristen(-ist → -en)은 이미 -n으로 끝나서 더 붙이지 않아요.",
+      "ok": "관계문 아님 — mit 뒤에 3격 명사를 나열한 것"
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그 박물관들과 극장들은 아주 현대적이에요.",
+      "a": [
+        "Die Museen und die Theater sind sehr modern.",
+        "Die Theater und die Museen sind sehr modern."
+      ],
+      "e": "das Museum은 -um이 -en으로 바뀌어 die Museen, -er로 끝나는 das Theater는 복수도 die Theater예요.<br>주어가 복수라서 동사는 sind예요."
+    }
+  ]
+}

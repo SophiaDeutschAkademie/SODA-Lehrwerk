@@ -1,0 +1,447 @@
+{
+ "n": "27",
+ "level": "B1",
+ "goals": [
+  "과거의 한 번은 als, 되풀이와 현재·미래는 wenn으로 구별해요",
+  "während·bevor·nachdem·seit·bis·sobald·solange를 뜻에 맞게 써요",
+  "nachdem과 seit 문장의 시제를 맞춰요",
+  "전치사·접속사·접속부사와 wann·wenn·als를 구별해요"
+ ],
+ "items": [
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "___ ich zum ersten Mal in Wien war, habe ich mich sofort in die Stadt verliebt.",
+   "o": [
+    "Als",
+    "Wenn",
+    "Wann",
+    "Ob"
+   ],
+   "a": 0,
+   "e": "과거에 한 번 있었던 일(처음 빈에 간 일)이라서 als예요."
+  },
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "___ meine Großeltern uns besuchen, backt meine Oma immer Apfelkuchen.",
+   "o": [
+    "Wenn",
+    "Als",
+    "Wann",
+    "Ob"
+   ],
+   "a": 0,
+   "e": "현재에 되풀이되는 일(immer)이라서 wenn이에요.<br>als는 과거의 한 번에만 써요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "___ wir in Italien Urlaub machten, hat es kein einziges Mal geregnet.",
+   "ko": "이탈리아에서 휴가를 보내는 동안 비가 한 번도 오지 않았어요.",
+   "h": "~하는 동안",
+   "a": [
+    [
+     "Während",
+     "Solange"
+    ]
+   ],
+   "e": "휴가 기간과 같은 때에 일어난 일이라서 während예요.<br>'그동안 내내'라는 뜻으로 solange도 돼요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Meine Mutter trinkt immer eine Tasse Tee, ___ sie aus dem Haus geht.",
+   "ko": "엄마는 집을 나서기 전에 늘 차를 한 잔 마셔요.",
+   "h": "~하기 전에",
+   "a": [
+    "bevor"
+   ],
+   "e": "차를 마시는 일이 먼저, 집을 나서는 일이 나중이에요 → bevor."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "___ mein Bruder einen Hund hat, geht er zweimal am Tag spazieren.",
+   "ko": "형은 개를 키운 뒤로 하루에 두 번 산책해요.",
+   "h": "~한 이후로 (지금도)",
+   "a": [
+    [
+     "Seit",
+     "Seitdem"
+    ]
+   ],
+   "e": "지금도 이어지는 일의 시작점은 seit(dem)이에요. 두 문장 모두 현재형이에요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Bleib bitte im Auto, ___ ich zurück bin.",
+   "ko": "내가 돌아올 때까지 차에 있어.",
+   "h": "~할 때까지",
+   "a": [
+    "bis"
+   ],
+   "e": "어떤 일이 일어날 때까지 계속되면 bis예요."
+  },
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "___ der Unterricht vorbei ist, packen die Schüler ihre Taschen. (수업이 끝나자마자)",
+   "o": [
+    "Sobald",
+    "Solange",
+    "Seit",
+    "Bevor"
+   ],
+   "a": 0,
+   "e": "'~하자마자'는 sobald예요. solange는 '~하는 동안 내내'예요."
+  },
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "___ du hohes Fieber hast, darfst du nicht zur Schule gehen. (열이 나는 동안 내내)",
+   "o": [
+    "Solange",
+    "Sobald",
+    "Bis",
+    "Nachdem"
+   ],
+   "a": 0,
+   "e": "어떤 상태가 계속되는 동안 내내는 solange예요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Nachdem sie den Kuchen ___ ___, stellte sie ihn auf den Balkon.",
+   "ko": "그녀는 케이크를 구운 뒤 발코니에 내놓았어요.",
+   "h": [
+    "backen",
+    "haben 또는 sein"
+   ],
+   "a": [
+    [
+     "gebacken"
+    ],
+    [
+     "hatte"
+    ]
+   ],
+   "e": "주문장이 과거형(stellte)이라서 nachdem 절은 과거완료예요 — gebacken hatte."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Nachdem ich die Nachrichten ___ ___, räume ich noch die Küche auf.",
+   "ko": "나는 뉴스를 보고 나서 부엌을 정리해요.",
+   "h": [
+    "sehen",
+    "haben 또는 sein"
+   ],
+   "a": [
+    [
+     "gesehen"
+    ],
+    [
+     "habe"
+    ]
+   ],
+   "e": "주문장이 현재형이면 nachdem 절은 현재완료예요 — gesehen habe."
+  },
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "___ dem Konzert haben wir noch etwas getrunken. (콘서트가 끝난 뒤에)",
+   "o": [
+    "Nach",
+    "Nachdem",
+    "Danach",
+    "Bevor"
+   ],
+   "a": 0,
+   "e": "명사(dem Konzert) 앞에는 전치사 nach를 써요.<br>nachdem은 문장 앞, danach는 혼자 첫 자리에 와요."
+  },
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "Wir haben zuerst eingekauft. ___ sind wir ins Kino gegangen. (그다음에)",
+   "o": [
+    "Danach",
+    "Nachdem",
+    "Nach",
+    "Bevor"
+   ],
+   "a": 0,
+   "e": "앞 문장을 받는 접속부사 danach가 첫 자리에 오고 바로 동사가 와요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "___ der Fahrt hat das Kind die ganze Zeit geschlafen.",
+   "ko": "가는 동안 아이는 내내 잤어요.",
+   "h": "~ 동안 · Fahrt · 여성",
+   "a": [
+    "Während"
+   ],
+   "e": "명사 앞이라서 전치사 während예요. während 뒤는 2격이에요 — der Fahrt."
+  },
+  {
+   "lv": 1,
+   "t": "mc",
+   "q": "Kannst du mir sagen, ___ die Apotheke heute schließt?",
+   "o": [
+    "wann",
+    "wenn",
+    "als",
+    "seit"
+   ],
+   "a": 0,
+   "e": "'언제'를 묻는 간접의문문은 wann이에요."
+  },
+  {
+   "lv": 1,
+   "t": "fill",
+   "q": "Ruf mich bitte an, ___ dein Zug in Köln ankommt.",
+   "ko": "기차가 쾰른에 도착하면 전화해 줘.",
+   "h": "",
+   "a": [
+    [
+     "wenn",
+     "sobald"
+    ]
+   ],
+   "e": "앞으로의 일은 wenn이에요. '도착하자마자'라는 뜻으로 sobald도 돼요."
+  },
+  {
+   "lv": 1,
+   "t": "order",
+   "q": "단어를 알맞은 순서로 놓으세요.",
+   "ko": "출발하기 전에 기름을 넣어야 해요.",
+   "a": [
+    "Bevor wir losfahren, müssen wir noch tanken."
+   ],
+   "e": "bevor 절은 동사가 맨 끝(losfahren)이에요.<br>bevor 절이 앞이면 주문장은 동사 müssen부터, 원형 tanken은 끝이에요."
+  },
+  {
+   "lv": 2,
+   "t": "fill",
+   "q": "___ meine Eltern noch in Daegu wohnten, besuchten wir sie jedes Wochenende.",
+   "ko": "부모님이 아직 대구에 사셨을 때 우리는 주말마다 찾아갔어요.",
+   "h": "~했을 때",
+   "a": [
+    "Als"
+   ],
+   "e": "방문은 되풀이됐지만 '대구에 사신 때'는 과거의 한 시기예요. 그래서 als예요."
+  },
+  {
+   "lv": 2,
+   "t": "mc",
+   "q": "Jedes Mal, ___ ich bei ihr anrief, war die Leitung besetzt.",
+   "o": [
+    "wenn",
+    "als",
+    "wann",
+    "ob"
+   ],
+   "a": 0,
+   "e": "과거에 되풀이된 일은 als가 아니라 wenn이에요 — jedes Mal, wenn …",
+   "ok": "jedes Mal, wenn은 이 과에서 연습할 틀(27과 B절)"
+  },
+  {
+   "lv": 2,
+   "t": "fill",
+   "q": "Seit ich jeden Morgen Yoga ___, ___ ich weniger Rückenschmerzen.",
+   "ko": "매일 아침 요가를 한 뒤로 허리 통증이 줄었어요.",
+   "h": [
+    "machen",
+    "haben"
+   ],
+   "a": [
+    [
+     "mache"
+    ],
+    [
+     "habe"
+    ]
+   ],
+   "e": "seit 절의 일이 지금도 이어지면 두 문장 모두 현재형이에요."
+  },
+  {
+   "lv": 2,
+   "t": "mc",
+   "q": "'일이 끝나자마자 너한테 갈게.'",
+   "o": [
+    "Sobald ich mit der Arbeit fertig bin, komme ich zu dir.",
+    "Sobald ich mit der Arbeit fertig bin, ich komme zu dir.",
+    "Sobald ich bin mit der Arbeit fertig, komme ich zu dir.",
+    "Sobald mit der Arbeit ich fertig bin, komme ich zu dir."
+   ],
+   "a": 0,
+   "e": "sobald 절은 동사가 맨 끝이고, 주문장은 동사부터 시작해요 — bin, komme."
+  },
+  {
+   "lv": 2,
+   "t": "order",
+   "q": "단어를 알맞은 순서로 놓으세요.",
+   "ko": "아이들이 자는 동안 우리는 크리스마스트리를 꾸몄어요.",
+   "a": [
+    "Während die Kinder schliefen, schmückten wir den Weihnachtsbaum."
+   ],
+   "e": "während 절은 동사 schliefen이 끝이에요.<br>앞에 오면 주문장은 동사 schmückten부터 시작해요."
+  },
+  {
+   "lv": 2,
+   "t": "fill",
+   "q": "Vor der Abreise gieße ich die Blumen.\n= ___ ich ___, gieße ich die Blumen.",
+   "ko": "떠나기 전에 꽃에 물을 줘요.",
+   "h": [
+    "",
+    "abreisen"
+   ],
+   "a": [
+    [
+     "Bevor"
+    ],
+    [
+     "abreise"
+    ]
+   ],
+   "e": "명사 앞의 vor를 문장으로 바꾸면 접속사 bevor예요.<br>동사가 끝으로 가면 분리동사가 붙어요 — abreise."
+  },
+  {
+   "lv": 2,
+   "t": "mc",
+   "q": "Er hat sich bei mir entschuldigt. ___ verstehen wir uns wieder gut. (그 뒤로 지금까지)",
+   "o": [
+    "Seitdem",
+    "Seit",
+    "Nachdem",
+    "Bevor"
+   ],
+   "a": 0,
+   "e": "앞 문장을 받아 '그 뒤로 지금까지'는 접속부사 seitdem이에요. 바로 뒤에 동사가 와요."
+  },
+  {
+   "lv": 2,
+   "t": "fill",
+   "q": "Ich weiß nicht mehr genau, ___ wir uns zum ersten Mal getroffen haben – war es 2019 oder 2020?",
+   "ko": "우리가 언제 처음 만났는지 정확히 기억이 안 나요. 2019년이었나, 2020년이었나?",
+   "h": "",
+   "a": [
+    "wann"
+   ],
+   "e": "때를 묻는 간접의문문이라서 wann이에요. als·wenn은 '~했을 때·~하면'이에요."
+  },
+  {
+   "lv": 2,
+   "t": "order",
+   "q": "단어를 알맞은 순서로 놓으세요.",
+   "ko": "그는 담배를 끊은 뒤로 훨씬 잘 자요.",
+   "a": [
+    "Seit er nicht mehr raucht, kann er viel besser schlafen."
+   ],
+   "e": "seit 절은 동사 raucht가 끝, 두 문장 모두 현재형이에요.<br>주문장은 kann이 먼저, 원형 schlafen이 끝이에요."
+  },
+  {
+   "lv": 3,
+   "t": "fill",
+   "q": "___ ich letztes Jahr nach Berlin kam, kannte ich niemanden. ___ ich eine Wohnung fand, wohnte ich bei einer Kollegin. Und ___ ich heute an diese Zeit denke, muss ich lachen.",
+   "ko": "작년에 베를린에 왔을 때 나는 아무도 몰랐어요. 집을 구할 때까지 동료 집에서 지냈어요. 그리고 지금 그때를 생각하면 웃음이 나요.",
+   "h": [
+    "",
+    "~할 때까지",
+    ""
+   ],
+   "a": [
+    [
+     "Als"
+    ],
+    [
+     "Bis"
+    ],
+    [
+     "wenn"
+    ]
+   ],
+   "e": "과거의 한 번 → als, 집을 구할 때까지 → bis, 지금의 때 → wenn이에요."
+  },
+  {
+   "lv": 3,
+   "t": "mc",
+   "q": "틀린 문장은?",
+   "o": [
+    "Nachdem wir die Wohnung renoviert haben, zogen wir ein.",
+    "Wenn ich früher krank war, kochte meine Mutter mir Suppe.",
+    "Als wir 2018 in Japan waren, haben wir viel Sushi gegessen.",
+    "Seit sie die neue Stelle hat, schläft sie besser."
+   ],
+   "a": 0,
+   "e": "주문장이 과거형(zogen)이면 nachdem 절은 과거완료예요 — renoviert hatten.<br>früher의 되풀이는 wenn이 맞아요."
+  },
+  {
+   "lv": 3,
+   "t": "fill",
+   "q": "Während ich studierte, jobbte ich in einem Café.\n= ___ ___ Studiums jobbte ich in einem Café.",
+   "ko": "대학 다니는 동안 카페에서 아르바이트를 했어요.",
+   "h": [
+    "전치사",
+    "mein · 2격"
+   ],
+   "a": [
+    [
+     "Während"
+    ],
+    [
+     "meines"
+    ]
+   ],
+   "e": "문장을 명사로 바꾸면 전치사 während + 2격이에요.<br>das Studium의 2격 → meines Studiums."
+  },
+  {
+   "lv": 3,
+   "t": "mc",
+   "q": "빈칸에 들어갈 수 **없는** 것은?\n___ ich die Präsentation hielt, war ich sehr nervös.",
+   "o": [
+    "Nachdem",
+    "Als",
+    "Während",
+    "Bevor"
+   ],
+   "a": 0,
+   "e": "nachdem 절은 주문장보다 한 단계 앞선 시제여야 해요 — gehalten hatte.<br>als·während·bevor는 같은 시제를 써요."
+  },
+  {
+   "lv": 3,
+   "t": "order",
+   "q": "단어를 알맞은 순서로 놓으세요.",
+   "ko": "그는 서류를 다 작성한 뒤에도 두 시간을 더 기다려야 했어요.",
+   "a": [
+    "Nachdem er das Formular ausgefüllt hatte, musste er noch zwei Stunden warten."
+   ],
+   "e": "nachdem 절은 과거완료 ausgefüllt hatte가 끝이에요.<br>주문장은 musste부터, 원형 warten이 끝이에요."
+  },
+  {
+   "lv": 3,
+   "t": "fill",
+   "q": "___ hast du Zeit? – ___ ich morgen früher Feierabend habe, rufe ich dich an. Letzte Woche, ___ du angerufen hast, war ich leider beim Sport.",
+   "ko": "언제 시간 있어? – 내일 일찍 퇴근하면 전화할게. 지난주에 네가 전화했을 때는 아쉽게도 운동 중이었어.",
+   "h": [
+    "",
+    "",
+    ""
+   ],
+   "a": [
+    [
+     "Wann"
+    ],
+    [
+     "Wenn"
+    ],
+    [
+     "als"
+    ]
+   ],
+   "e": "질문 '언제'는 wann, 미래의 조건·때는 wenn, 과거의 한 번은 als예요."
+  }
+ ]
+}

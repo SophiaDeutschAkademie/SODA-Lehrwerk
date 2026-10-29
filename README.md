@@ -6,7 +6,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 
 | 폴더 | 자료 | 내용 |
 |---|---|---|
-| `grammatik/` | Syntalab | 문법 교재, Lektion 37개와 부록「암기 노트」 |
+| `grammatik/` | Syntalab | 문법 교재, Lektion 37개와 부록「암기 노트」, 과마다 연습문제 37개 |
 | `lesetraining/` | SODA Lesetraining | 독해 훈련, A1–C1, 텍스트 55개 |
 | `hoertraining/` | Lehrwerk Hörtraining | 듣기 훈련, A1–C1, 80세트 |
 | `sprechtraining/` | SODA Sprechtraining | 말하기 훈련, A1–C1과 MZ 구어체, 대화 36개, 독일어 음성 433줄 |
@@ -58,6 +58,7 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 - `lesetraining/`의 텍스트 원본과 데이터 파일을 다시 만드는 방법은 `lesetraining/README.md`에 있어요.
 - `hoertraining/`과 `grammatik/`은 오프라인 캐시(서비스워커)를 씁니다. 이 두 폴더의 내용을 고친 뒤에는 같은 폴더의 `sw.js`도 함께 갱신해야 학생 기기에 새 내용이 나와요. 갱신하지 않으면 이전 내용이 계속 보일 수 있습니다.
 - `grammatik/`의 부록「암기 노트」(`lessons/anhang.json`)는 각 과의 변화표와 목록을 그대로 옮겨 만든 것입니다. 과의 표를 고친 뒤 `python3 grammatik/tools/anhang-build.py`를 실행하면 부록도 같은 내용으로 다시 만들어지고, `index.html`과 `sw.js`의 버전 값도 함께 바뀌어요. 부록에 넣을 표와 순서는 이 스크립트의 `PARTS`에 적혀 있습니다.
+- `grammatik/`의 연습문제(목차 아래 「연습문제 · Übungen」)는 과마다 하나, 37개예요. 원본은 `grammatik/tools/uebungen-src/U01.json` … `U37.json`이고, 쓰는 법과 규칙은 같은 폴더의 `README.md`에 있어요. 원본을 고친 뒤 `python3 grammatik/tools/uebungen-check.py`로 검사하고 `python3 grammatik/tools/uebungen-build.py`를 실행하면 `grammatik/uebungen/`의 앱용 파일, `index.html`의 연습 주소, `sw.js`의 캐시 목록과 버전이 함께 바뀌어요.
 - 목차에 자료를 추가하려면 루트 `index.html`의 해당 묶음의 `<ul class="grid">` 안에 `<li>` 항목을 같은 형식으로 추가합니다.
 - 모의고사 여섯 앱은 `SODA-Goethe`, `SODA-TELC` 저장소의 각 앱 폴더에 있고, 다시 만드는 방법은 앱 폴더의 `digital-src/README.md`에 있어요. 파일을 고치면 그 저장소의 `tools/soda-theme.py`로 다크 모드 스위치를 다시 넣습니다(빌드 스크립트는 자동으로 실행).
 

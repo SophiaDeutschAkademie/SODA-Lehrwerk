@@ -1,0 +1,389 @@
+{
+  "n": "34",
+  "level": "B1",
+  "goals": [
+    "형용사와 명사에 붙는 전치사와 격을 함께 골라요",
+    "전치사구를 sein 문장 안의 알맞은 자리에 놓아요",
+    "사람은 전치사 + 대명사, 사물은 da(r)-·wo(r)-로 받고 물어요",
+    "da(r)- + dass 문장이나 zu 부정형으로 문장을 이어요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Meine Großmutter ist sehr neugierig ___ meinen neuen Freund.",
+      "o": [
+        "auf",
+        "an",
+        "nach",
+        "für"
+      ],
+      "a": 0,
+      "e": "neugierig auf + 4격이에요.<br>meinen neuen Freund가 4격인 것도 단서예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Hausmeister ist ___ die Heizung im ganzen Haus zuständig.",
+      "ko": "관리인이 건물 전체의 난방을 담당해요.",
+      "h": "",
+      "a": [
+        "für"
+      ],
+      "e": "zuständig für + 4격 — '~⁠을 담당하는'이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Bist du endlich fertig mit ___ Hausaufgaben?",
+      "ko": "드디어 숙제 다 했어요?",
+      "h": "Hausaufgaben · 복수",
+      "a": [
+        "den"
+      ],
+      "e": "fertig mit + 3격이에요. 복수 3격 관사는 den이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Kinder waren total begeistert ___ der Zaubershow.",
+      "o": [
+        "von",
+        "für",
+        "auf",
+        "an"
+      ],
+      "a": 0,
+      "e": "형용사 begeistert는 von + 3격이에요.<br>동사 sich begeistern für와 전치사가 달라요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Mein Vater ist seit Jahren mit ___ Nachbarn befreundet.",
+      "ko": "아버지는 몇 년째 옆집 남자와 친하게 지내요.",
+      "h": "Nachbar · 남성 단수, n-변화",
+      "a": [
+        "dem"
+      ],
+      "e": "befreundet mit + 3격 → dem.<br>Nachbar는 n-변화 명사라서 3격에서 -n이 붙어요(16과)."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir sind euch sehr dankbar ___ eure Unterstützung beim Umzug.",
+      "o": [
+        "für",
+        "über",
+        "an",
+        "zu"
+      ],
+      "a": 0,
+      "e": "dankbar für + 4격 — '~⁠에 고마운'이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Viele junge Leute sind finanziell ___ ihren Eltern abhängig.",
+      "ko": "많은 젊은이들이 경제적으로 부모에게 의존해요.",
+      "h": "",
+      "a": [
+        "von"
+      ],
+      "e": "abhängig von + 3격이에요. 동사 abhängen von, 명사 die Abhängigkeit von도 같은 전치사예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich warte noch auf eine Antwort ___ meine Bewerbung.",
+      "o": [
+        "auf",
+        "für",
+        "über",
+        "zu"
+      ],
+      "a": 0,
+      "e": "명사 Antwort는 auf + 4격이에요 — 동사 antworten auf와 같아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Nachfrage ___ Elektroautos steigt jedes Jahr.",
+      "ko": "전기차 수요가 해마다 늘어요.",
+      "h": "",
+      "a": [
+        "nach"
+      ],
+      "e": "명사 Nachfrage는 nach + 3격이에요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "아이들이 새 선생님을 존중해요?",
+      "a": [
+        "Haben die Kinder Respekt vor dem neuen Lehrer?"
+      ],
+      "e": "Respekt vor + 3격이에요. Ja/Nein 의문문이라서 동사 haben이 맨 앞에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Es gibt viele Gründe ___ einen Umzug aufs Land.",
+      "o": [
+        "für",
+        "an",
+        "über",
+        "zu"
+      ],
+      "a": 0,
+      "e": "명사 Grund는 für + 4격이에요.",
+      "ok": "es gibt viele는 흔한 일반 표현, 문장은 새로 씀"
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Bist du mit deinem neuen Laptop zufrieden? — Ja, ich bin sehr zufrieden ___.",
+      "ko": "새 노트북이 마음에 들어요? — 네, 아주 만족해요.",
+      "h": "mit + 사물",
+      "a": [
+        "damit"
+      ],
+      "e": "사물은 da(r)- + 전치사로 받아요 → damit.<br>mit ihm은 사람을 받을 때 써요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ ist Lena so eifersüchtig? — Auf ihre jüngere Schwester.",
+      "o": [
+        "Auf wen",
+        "Worauf",
+        "Auf was",
+        "Wofür"
+      ],
+      "a": 0,
+      "e": "대답이 사람(Schwester)이라서 전치사 + wen으로 물어요.<br>eifersüchtig auf + 4격이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ bist du so enttäuscht? — Vom neuen Album der Band.",
+      "ko": "뭐에 그렇게 실망했어요? — 그 밴드의 새 앨범에요.",
+      "h": "의문사",
+      "a": [
+        "Wovon"
+      ],
+      "e": "enttäuscht von + 3격, 사물을 물으니 wo + von → wovon이에요.",
+      "ok": "bist du so는 흔한 세 낱말, 문장은 새로 씀"
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리는 그 해결책에 동의하지 않아요.",
+      "a": [
+        "Wir sind mit der Lösung nicht einverstanden.",
+        "Mit der Lösung sind wir nicht einverstanden."
+      ],
+      "e": "einverstanden mit + 3격이에요. 전치사구는 보통 형용사 앞에 오고, nicht는 형용사 바로 앞에 놓아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Unser Hund ist ___ Fremden leider nicht sehr freundlich.",
+      "ko": "우리 개는 안타깝게도 낯선 사람들에게 그다지 친절하지 않아요.",
+      "h": "",
+      "a": [
+        "zu"
+      ],
+      "e": "freundlich zu + 3격 — 사람에게 친절하다는 뜻이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Nach drei Monaten in Hamburg bin ich endlich an ___ Regen gewöhnt.",
+      "ko": "함부르크에서 석 달을 보낸 뒤 드디어 비에 익숙해졌어요.",
+      "h": "Regen · 남성",
+      "a": [
+        "den"
+      ],
+      "e": "gewöhnt an은 4격이에요 → an den Regen.<br>interessiert an(3격)과 헷갈리지 않게 격까지 외워요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Herr Krause ist ___ die Planung der Reise verantwortlich, aber er ist nicht schuld ___ der Verspätung.",
+      "ko": "크라우제 씨는 여행 계획을 책임지지만 지연에 책임이 있지는 않아요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "für",
+        "an"
+      ],
+      "e": "verantwortlich für + 4격, schuld an + 3격이에요.<br>둘 다 '책임'으로 옮기지만 전치사가 달라요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Die Teilnahme ___ dem Workshop kostet nichts.",
+      "o": [
+        "an",
+        "bei",
+        "für",
+        "in"
+      ],
+      "a": 0,
+      "e": "teilnehmen an → die Teilnahme an + 3격이에요.<br>동사와 명사가 같은 전치사를 써요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "바른 문장은?",
+      "o": [
+        "Ich bin an deiner Meinung sehr interessiert.",
+        "Ich bin für deine Meinung sehr interessiert.",
+        "Ich bin an deine Meinung sehr interessiert.",
+        "Ich bin über deine Meinung sehr interessiert."
+      ],
+      "a": 0,
+      "e": "형용사 interessiert는 an + 3격이에요 → an deiner Meinung.<br>für는 동사 sich interessieren für에서 옮겨 온 실수예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Wir sind fest ___ überzeugt, dass das Projekt Erfolg haben wird.",
+      "ko": "우리는 그 프로젝트가 성공할 거라고 굳게 확신해요.",
+      "h": "von → ?",
+      "a": [
+        "davon"
+      ],
+      "e": "überzeugt von + 문장 → davon, dass …로 이어요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그녀는 일찍 일어나는 데 익숙해요.",
+      "a": [
+        "Sie ist daran gewöhnt, früh aufzustehen."
+      ],
+      "e": "gewöhnt an + 문장 → daran, + zu 부정형이에요.<br>분리동사는 zu가 가운데 들어가요 → aufzustehen."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "___ hast du so große Sehnsucht? — Nach meiner Heimatstadt.",
+      "ko": "무엇을 그렇게 그리워해요? — 제 고향 도시요.",
+      "h": "의문사",
+      "a": [
+        "Wonach"
+      ],
+      "e": "Sehnsucht nach + 3격, 사물을 물으니 wo + nach → wonach예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Hast du Lust, ___?",
+      "o": [
+        "am Samstag mit uns zu wandern",
+        "auf am Samstag mit uns wandern",
+        "darauf am Samstag mit uns wandern",
+        "am Samstag mit uns wandern zu"
+      ],
+      "a": 0,
+      "e": "Lust haben 뒤에 문장이 오면 쉼표 뒤에 zu 부정형을 이어요. zu는 원형 바로 앞, 맨 끝이에요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Sie ist seit dem Frühling verliebt in ihrem Mitbewohner.",
+        "Viele Eltern haben wenig Verständnis für das Verhalten ihrer Kinder.",
+        "Die Region ist reich an Seen und Wäldern.",
+        "Ich bin inzwischen an das kalte Klima hier gewöhnt."
+      ],
+      "a": 0,
+      "e": "verliebt in은 4격이에요 → in ihren Mitbewohner.<br>Verständnis für + 4격, reich an + 3격, gewöhnt an + 4격은 모두 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Seit meinem Umzug nach Leipzig bin ich sehr zufrieden ___ meiner Wohnung. Nur an ___ Lärm von der Straße bin ich noch nicht gewöhnt. Meine Nachbarn sind sehr nett ___ mir, und ich bin schon gespannt ___ das Straßenfest im Sommer.",
+      "ko": "라이프치히로 이사한 뒤로 집에 아주 만족해요. 거리의 소음에만 아직 익숙하지 않아요. 이웃들은 저에게 아주 친절하고, 여름 거리 축제가 벌써 기대돼요.",
+      "h": [
+        "",
+        "Lärm · 남성",
+        "",
+        ""
+      ],
+      "a": [
+        "mit",
+        "den",
+        "zu",
+        "auf"
+      ],
+      "e": "zufrieden mit + 3격 · gewöhnt an + 4격(den Lärm) · nett zu + 3격 · gespannt auf + 4격이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Sie ist stolz. Sie hat ihr Studium in nur drei Jahren abgeschlossen.\n→ Sie ist stolz ___, dass sie ihr Studium in nur drei Jahren ___ ___.",
+      "ko": "그녀는 3년 만에 학업을 마친 것이 자랑스러워요.",
+      "h": [
+        "",
+        "abschließen",
+        ""
+      ],
+      "a": [
+        "darauf",
+        "abgeschlossen",
+        "hat"
+      ],
+      "e": "stolz auf + 문장 → darauf, dass ….<br>dass 문장에서는 과거분사 다음에 hat이 맨 끝에 와요.",
+      "ok": "stolz darauf, dass는 이 과의 연습 대상 문형 자체"
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Ich bin froh. Ich habe mich für dieses Studium entschieden.\n→ Ich bin froh ___, mich für dieses Studium entschieden ___ ___.",
+      "ko": "이 전공을 선택한 게 기뻐요.",
+      "h": [
+        "",
+        "",
+        ""
+      ],
+      "a": [
+        "darüber",
+        "zu",
+        "haben"
+      ],
+      "e": "froh über + 문장 → darüber, ….<br>이미 끝난 일이라서 완료형 zu 부정형(과거분사 + zu haben)을 써요(28과)."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "바른 표현은?",
+      "o": [
+        "die mit der Leistung ihres Teams zufriedene Trainerin",
+        "die zufriedene mit der Leistung ihres Teams Trainerin",
+        "die mit der Leistung ihres Teams zufrieden Trainerin",
+        "die mit die Leistung ihres Teams zufriedene Trainerin"
+      ],
+      "a": 0,
+      "e": "형용사 + 전치사를 명사 앞에 쓰면 전치사구가 관사와 형용사 사이에 들어가요.<br>형용사에는 어미(-e)를 붙이고, mit 뒤는 3격(der Leistung)이에요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그는 우리 회사와 협력하는 데 관심이 없어요.",
+      "a": [
+        "Er ist an einer Zusammenarbeit mit unserer Firma nicht interessiert.",
+        "An einer Zusammenarbeit mit unserer Firma ist er nicht interessiert."
+      ],
+      "e": "interessiert an + 3격 → an einer Zusammenarbeit.<br>nicht는 형용사 바로 앞, 전치사구는 보통 형용사 앞에 놓아요."
+    }
+  ]
+}

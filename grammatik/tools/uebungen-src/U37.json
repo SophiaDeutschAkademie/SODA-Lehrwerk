@@ -1,0 +1,433 @@
+{
+  "n": "37",
+  "level": "B2",
+  "goals": [
+    "대조·이유·결과를 wohingegen·dagegen·zumal·folglich로 알맞은 어순에 맞춰 이어요",
+    "je nachdem·vorausgesetzt, dass·insofern … als·zu … als dass·nur dass를 뜻에 맞게 골라요",
+    "2격 전치사와 3격의 gemäß·entsprechend·zufolge, entlang을 구별해요",
+    "접속사 문장과 전치사구를 서로 바꿔요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Mein Mann steht gern früh auf, ___ ich am liebsten bis neun schlafe.",
+      "o": [
+        "wohingegen",
+        "dagegen",
+        "zumal",
+        "folglich"
+      ],
+      "a": 0,
+      "e": "뒤 문장의 동사(schlafe)가 맨 끝이에요 → 종속접속사 wohingegen.<br>dagegen은 접속부사라서 동사 끝 어순을 만들지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "In der Stadt gibt es überall Geschäfte. Auf dem Land ___ muss man oft weit fahren.",
+      "ko": "도시에는 어디에나 가게가 있어요. 반면에 시골에서는 멀리 차를 타고 가야 할 때가 많아요.",
+      "h": "접속부사 · 반대로",
+      "a": [
+        [
+          "dagegen",
+          "hingegen"
+        ]
+      ],
+      "e": "dagegen·hingegen은 접속부사예요. 이 문장처럼 첫 자리의 말(Auf dem Land) 바로 뒤에도 놓을 수 있어요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Im ___ ___ ihrer älteren Schwester ist Lisa sehr schüchtern.",
+      "ko": "언니와 달리 리자는 아주 수줍음이 많아요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "Gegensatz",
+        "zu"
+      ],
+      "e": "명사 앞에서 대조를 말할 때는 전치사 im Gegensatz zu + 3격을 써요 → zu ihrer älteren Schwester."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich fahre heute nicht mit dem Rad, ___ es draußen auch sehr windig ist.",
+      "ko": "오늘은 자전거를 안 탈래요, 게다가 밖에 바람도 많이 부니까요.",
+      "h": "'게다가 ~⁠하니까'",
+      "a": [
+        "zumal"
+      ],
+      "e": "이유를 덧붙이는 종속접속사 → zumal. 동사 ist는 맨 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Der Akku war leer. ___ konnte ich dich nicht anrufen.",
+      "o": [
+        "Folglich",
+        "Zumal",
+        "Wohingegen",
+        "Obwohl"
+      ],
+      "a": 0,
+      "e": "앞 문장의 결과 + 바로 뒤에 동사(konnte) → 접속부사 folglich."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir grillen im Garten oder essen drinnen, ___, ob die Sonne scheint.",
+      "o": [
+        "je nachdem",
+        "vorausgesetzt",
+        "insofern",
+        "abgesehen davon"
+      ],
+      "a": 0,
+      "e": "'~⁠에 따라 달라요' → je nachdem, ob ….",
+      "ok": "je nachdem, ob는 이 과의 연습 대상 문형 자체"
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich helfe dir beim Umzug, ___, dass du mir rechtzeitig Bescheid sagst.",
+      "ko": "제때 미리 알려 준다는 조건이라면 이사를 도와줄게요.",
+      "h": "조건",
+      "a": [
+        "vorausgesetzt"
+      ],
+      "e": "'~⁠라는 조건이라면' → vorausgesetzt, dass …."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Koffer ist zu schwer, ___ ___ ich ihn allein tragen könnte.",
+      "ko": "여행 가방이 너무 무거워서 혼자 들 수가 없어요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "als",
+        "dass"
+      ],
+      "e": "zu + 형용사 …, als dass → '너무 ~⁠해서 ~⁠할 수 없다'. als dass 문장에는 접속법 II(könnte)를 써요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Der Abend war gelungen, ___ wir zu wenig zu essen hatten.",
+      "o": [
+        "nur dass",
+        "sodass",
+        "zumal",
+        "als dass"
+      ],
+      "a": 0,
+      "e": "'~⁠만 빼면' → nur dass."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ des heftigen Schneefalls blieben viele Schulen geschlossen.",
+      "o": [
+        "Aufgrund",
+        "Anhand",
+        "Anstelle",
+        "Anlässlich"
+      ],
+      "a": 0,
+      "e": "원인 → aufgrund + 2격.<br>anlässlich는 '~을 맞아', anhand는 '~을 바탕으로', anstelle는 '~ 대신에'라서 뜻이 맞지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ der Unterstützung meiner Familie konnte ich mein Studium beenden.",
+      "ko": "가족의 지원 덕분에 학업을 마칠 수 있었어요.",
+      "h": "~ 덕분에",
+      "a": [
+        "Dank"
+      ],
+      "e": "좋은 결과의 원인 → dank + 2격."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Gemäß ___ Mietvertrag darf man in der Wohnung keine Haustiere halten.",
+      "ko": "임대 계약에 따르면 집에서 반려동물을 키우면 안 돼요.",
+      "h": "Mietvertrag · 남성",
+      "a": [
+        "dem"
+      ],
+      "e": "gemäß는 3격이에요 → dem Mietvertrag. 2격(des Mietvertrags)으로 쓰지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'전문가들에 따르면 월세가 계속 오를 거예요.'",
+      "o": [
+        "Den Experten zufolge werden die Mieten weiter steigen.",
+        "Zufolge den Experten werden die Mieten weiter steigen.",
+        "Zufolge der Experten werden die Mieten weiter steigen.",
+        "Den Experten zufolge die Mieten werden weiter steigen."
+      ],
+      "a": 0,
+      "e": "zufolge는 3격이고 명사 뒤에 와요 → den Experten zufolge.<br>이 덩어리가 첫 자리라서 동사 werden이 바로 뒤에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ein schmaler Weg führt ___ Ufer entlang bis zum nächsten Dorf.",
+      "ko": "좁은 길이 강가를 따라 다음 마을까지 이어져요.",
+      "h": "Ufer · 중성",
+      "a": [
+        [
+          "das",
+          "am"
+        ]
+      ],
+      "e": "entlang이 명사 뒤에 오면 4격이에요 → das Ufer entlang.<br>an + 3격과 함께 쓴 am Ufer entlang도 자주 써요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그는 부상에도 불구하고 끝까지 경기를 계속했어요.",
+      "a": [
+        "Trotz seiner Verletzung hat er bis zum Ende weitergespielt.",
+        "Er hat trotz seiner Verletzung bis zum Ende weitergespielt.",
+        "Bis zum Ende hat er trotz seiner Verletzung weitergespielt."
+      ],
+      "e": "obwohl er verletzt war를 전치사구로 줄이면 trotz + 2격 → trotz seiner Verletzung이에요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "Meine Eltern wohnen auf dem Land. — 이어지는 문장의 단어를 알맞은 순서로 놓으세요.",
+      "ko": "반면에 나는 도시 한가운데에 살아요.",
+      "a": [
+        "Ich dagegen wohne mitten in der Stadt.",
+        "Dagegen wohne ich mitten in der Stadt.",
+        "Ich wohne dagegen mitten in der Stadt."
+      ],
+      "e": "dagegen이 첫 자리면 바로 뒤에 동사가 와요. 주어 바로 뒤(Ich dagegen)나 동사 뒤에도 놓을 수 있어요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Während er in Wien wohnte, lernte er seine Frau kennen.\n→ ___ ___ Zeit in Wien lernte er seine Frau kennen.",
+      "ko": "빈에 사는 동안 그는 아내를 알게 됐어요.",
+      "h": [
+        "",
+        "Zeit · 여성"
+      ],
+      "a": [
+        "Während",
+        "seiner"
+      ],
+      "e": "접속사 während를 전치사 während + 2격으로 바꿔요 → während seiner Zeit."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Der Umzug war ___ ein Vorteil, als ich jetzt nur zehn Minuten zur Arbeit brauche.",
+      "o": [
+        "insofern",
+        "insofern dass",
+        "je nachdem",
+        "zumal"
+      ],
+      "a": 0,
+      "e": "'~⁠라는 점에서' → insofern …, als …. insofern은 앞 문장에, als는 쉼표 뒤에 와요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "바른 표현은?",
+      "o": [
+        "entsprechend den Anweisungen des Arztes",
+        "entsprechend der Anweisungen des Arztes",
+        "entsprechend die Anweisungen des Arztes",
+        "entsprechend des Anweisungen des Arztes"
+      ],
+      "a": 0,
+      "e": "entsprechend는 3격이에요. 복수 3격 → den Anweisungen.<br>der Anweisungen은 2격 복수라서 틀려요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "___ des erkrankten Kollegen hat Frau Weber die Präsentation gehalten.",
+      "ko": "병이 난 동료 대신 베버 씨가 발표를 했어요.",
+      "h": "~ 대신에",
+      "a": [
+        [
+          "Anstelle",
+          "Statt",
+          "Anstatt"
+        ]
+      ],
+      "e": "'~ 대신에' → anstelle + 2격. 16과의 (an)statt + 2격도 같은 뜻이에요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리는 택시를 탈 거예요, 게다가 벌써 늦었으니까요.",
+      "a": [
+        "Wir nehmen ein Taxi, zumal es schon spät ist."
+      ],
+      "e": "zumal은 종속접속사라서 동사 ist가 맨 끝에 와요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "___ ___, dass das Hotel weit vom Strand lag, waren wir sehr zufrieden.",
+      "ko": "호텔이 해변에서 멀었던 것만 빼면 우리는 아주 만족했어요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        "Abgesehen",
+        "davon"
+      ],
+      "e": "'~⁠만 빼면' → abgesehen davon, dass …. 이 덩어리가 첫 자리라서 뒤에 동사 waren이 와요.",
+      "ok": "abgesehen davon, dass는 이 과의 연습 대상 문형 자체"
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'혹시 구시가지에서 길을 잃을 경우에 대비해 내 번호를 줄게요.'",
+      "o": [
+        "Ich gebe dir meine Nummer für den Fall, dass du dich in der Altstadt verläufst.",
+        "Ich gebe dir meine Nummer, vorausgesetzt, dass du dich in der Altstadt verläufst.",
+        "Ich gebe dir meine Nummer, als dass du dich in der Altstadt verläufst.",
+        "Ich gebe dir meine Nummer, je nachdem, dass du dich in der Altstadt verläufst."
+      ],
+      "a": 0,
+      "e": "'~⁠할 경우에 대비해' → für den Fall, dass …."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "___ Ihrer Frage nach den Öffnungszeiten teilen wir Ihnen mit, dass das Büro ab nächster Woche länger geöffnet ist.",
+      "ko": "영업시간에 관한 문의와 관련해 다음 주부터 사무실이 더 오래 문을 연다는 것을 알려 드려요.",
+      "h": "~⁠에 관해",
+      "a": [
+        [
+          "Bezüglich",
+          "Hinsichtlich"
+        ]
+      ],
+      "e": "'~⁠에 관해' → bezüglich·hinsichtlich + 2격. 격식 있는 편지·이메일에 자주 써요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Gemäß des neuen Fahrplans fährt der Bus jetzt alle zwanzig Minuten.",
+        "Infolge eines Stromausfalls fiel die U-Bahn stundenlang aus.",
+        "Das Gesetz ist zu kompliziert, als dass es jeder verstehen könnte.",
+        "Am Samstag machen wir eine Radtour, vorausgesetzt, dass das Wetter gut bleibt."
+      ],
+      "a": 0,
+      "e": "gemäß는 3격이에요 → gemäß dem neuen Fahrplan.<br>infolge + 2격, zu …, als dass + 접속법 II, vorausgesetzt, dass는 모두 맞아요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Sehr geehrte Kundinnen und Kunden,\n___ eines technischen Problems war unsere Website gestern nicht erreichbar. ___ konnten viele von Ihnen keine Bestellungen aufgeben. ___ Ihrer Geduld konnten wir das Problem schnell lösen. ___ unseren Geschäftsbedingungen erhalten alle betroffenen Kunden einen Gutschein.",
+      "ko": "고객 여러분, 기술적인 문제로 어제 저희 웹사이트에 접속할 수 없었어요. 그 결과 많은 분이 주문을 하지 못하셨어요. 여러분이 기다려 주신 덕분에 문제를 빠르게 해결할 수 있었어요. 저희 거래 약관에 따라 피해를 입은 모든 고객께 상품권을 드려요.",
+      "h": [
+        "원인 · 2격",
+        "결과 · 접속부사",
+        "덕분",
+        "~⁠에 따라 · 3격"
+      ],
+      "a": [
+        [
+          "Aufgrund",
+          "Infolge",
+          "Wegen"
+        ],
+        [
+          "Infolgedessen",
+          "Folglich",
+          "Deshalb",
+          "Daher",
+          "Deswegen",
+          "Darum",
+          "Dadurch"
+        ],
+        "Dank",
+        [
+          "Gemäß",
+          "Entsprechend",
+          "Laut",
+          "Nach"
+        ]
+      ],
+      "e": "원인 → aufgrund·infolge + 2격 · 결과 → infolgedessen·folglich(도치) · 덕분 → dank + 2격 · 기준 → gemäß·entsprechend + 3격(unseren Geschäftsbedingungen). laut·nach + 3격도 같은 뜻이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Bei schlechtem Wetter findet das Konzert in der Halle statt.\n→ ___ das Wetter schlecht ___, findet das Konzert in der Halle statt.",
+      "ko": "날씨가 나쁘면 콘서트는 실내 공연장에서 열려요.",
+      "h": [
+        "",
+        ""
+      ],
+      "a": [
+        [
+          "Wenn",
+          "Falls"
+        ],
+        "ist"
+      ],
+      "e": "전치사구 bei + 명사를 조건 문장으로 되돌리면 wenn(falls) …이에요. 종속절이라서 동사 ist가 맨 끝, 주문장은 동사 findet로 시작해요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'그 영화는 너무 지루해서 다시 볼 일은 없을 거예요.'\nDer Film war zu langweilig, ___",
+      "o": [
+        "als dass ich ihn noch einmal sehen würde.",
+        "als dass ich würde ihn noch einmal sehen.",
+        "sodass ich ihn noch einmal sehen würde.",
+        "als dass ich ihn nicht noch einmal sehen würde."
+      ],
+      "a": 0,
+      "e": "zu …, als dass에는 이미 부정의 뜻이 들어 있어서 nicht를 쓰지 않아요.<br>종속절이라 동사 würde가 맨 끝이에요. sodass는 '그래서 다시 볼 것이다'로 뜻이 반대가 돼요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "여기는 겨울에는 조용한 반면 여름에는 관광객이 많이 와요.",
+      "a": [
+        "Im Winter ist es hier ruhig, wohingegen im Sommer viele Touristen kommen.",
+        "Hier ist es im Winter ruhig, wohingegen im Sommer viele Touristen kommen.",
+        "Es ist hier im Winter ruhig, wohingegen im Sommer viele Touristen kommen."
+      ],
+      "e": "주문장은 동사가 두 번째, wohingegen 뒤는 동사 kommen이 맨 끝이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Weil die Kosten stark gestiegen sind, müssen wir die Preise erhöhen.\n→ Aufgrund ___ stark ___ Kosten müssen wir die Preise erhöhen.",
+      "ko": "비용이 크게 올라서 가격을 올려야 해요.",
+      "h": [
+        "",
+        "steigen · 분사"
+      ],
+      "a": [
+        "der",
+        "gestiegenen"
+      ],
+      "e": "aufgrund + 2격 복수 → der Kosten. 동사는 분사가 되어 명사 앞에서 어미를 받아요 → der stark gestiegenen Kosten(32과)."
+    }
+  ]
+}

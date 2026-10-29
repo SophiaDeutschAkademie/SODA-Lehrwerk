@@ -1,0 +1,382 @@
+{
+  "n": "04",
+  "level": "A1",
+  "goals": [
+    "1·2·3인칭과 존칭 Sie를 구별해요",
+    "3격·4격 인칭대명사를 동사와 전치사에 맞춰 골라요",
+    "사물을 명사의 성에 따라 er·sie·es로 받아요",
+    "목적어가 둘일 때 대명사와 명사의 순서를 지켜요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir besuchen ___ heute. (그녀를)",
+      "o": [
+        "sie",
+        "ihr",
+        "ihn",
+        "ihm"
+      ],
+      "a": 0,
+      "e": "besuchen은 4격 동사예요. '그녀를'은 1격과 같은 sie예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich helfe ___. (그를 도와요)",
+      "o": [
+        "ihm",
+        "ihn",
+        "er",
+        "ihr"
+      ],
+      "a": 0,
+      "e": "helfen은 3격 동사예요. er의 3격은 ihm이에요.<br>한국어 '그를'만 보고 4격 ihn을 고르지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Der Rock ist kurz. → ___ ist kurz.",
+      "o": [
+        "Er",
+        "Sie",
+        "Es",
+        "Ihn"
+      ],
+      "a": 0,
+      "e": "der Rock은 남성이라서 er로 받아요. 주어 자리라서 1격 er예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Das Fahrrad ist alt. → ___ ist alt.",
+      "o": [
+        "Es",
+        "Er",
+        "Sie",
+        "Ihm"
+      ],
+      "a": 0,
+      "e": "das Fahrrad는 중성이라서 es로 받아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "(처음 만난 어른에게) '제가 당신을 도와드릴게요.'",
+      "o": [
+        "Ich helfe Ihnen.",
+        "Ich helfe Sie.",
+        "Ich helfe ihnen.",
+        "Ich helfe euch."
+      ],
+      "a": 0,
+      "e": "helfen은 3격 동사이고, 존칭 Sie의 3격은 Ihnen이에요.<br>소문자 ihnen은 '그들에게'라서 뜻이 달라져요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Sie lernt Japanisch.에서 Sie의 뜻은?",
+      "o": [
+        "그녀",
+        "그들",
+        "당신",
+        "당신들"
+      ],
+      "a": 0,
+      "e": "문장 첫머리라 대문자지만 동사 lernt가 3인칭 단수 -t예요. 그래서 '그녀'예요.<br>'그들'이나 '당신'이면 lernen이 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich brauche das Wörterbuch. → Ich brauche ___.",
+      "o": [
+        "es",
+        "ihn",
+        "sie",
+        "ihm"
+      ],
+      "a": 0,
+      "e": "das Wörterbuch는 중성이에요. 중성은 1격과 4격이 같아서 es예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir kennen ___ gut.",
+      "ko": "우리는 너희를 잘 알아요.",
+      "h": "1격: ihr",
+      "a": [
+        "euch"
+      ],
+      "e": "kennen은 4격 동사예요. ihr의 4격은 euch예요(3격도 euch)."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Farbe gefällt ___.",
+      "ko": "그 색깔이 그녀 마음에 들어요.",
+      "h": "1격: sie",
+      "a": [
+        "ihr"
+      ],
+      "e": "gefallen은 마음에 드는 물건이 주어, 마음에 들어 하는 사람이 3격이에요.<br>sie(그녀)의 3격은 ihr예요.",
+      "ok": "gefällt는 현재형 — 4과 본문 Das Kleid gefällt mir."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir danken ___ sehr.",
+      "ko": "우리는 너에게 정말 고마워요.",
+      "h": "1격: du",
+      "a": [
+        "dir"
+      ],
+      "e": "danken은 3격 동사예요. du의 3격은 dir예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Fisch schmeckt ___.",
+      "ko": "그 생선 요리가 우리 입맛에 맞아요.",
+      "h": "1격: wir",
+      "a": [
+        "uns"
+      ],
+      "e": "schmecken은 3격과 함께 써요. wir의 3격은 uns예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Ball gehört ___.",
+      "ko": "그 공은 그들 거예요.",
+      "h": "1격: sie(복수)",
+      "a": [
+        "ihnen"
+      ],
+      "e": "gehören은 3격 동사예요. 복수 sie의 3격은 ihnen이에요. '그들'이니까 소문자로 써요.",
+      "ok": "gehört는 현재형(gehören, 3·4과 표)"
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir bestellen den Salat. → Wir bestellen ___.",
+      "ko": "우리는 그것(그 샐러드)을 주문해요.",
+      "h": "",
+      "a": [
+        "ihn"
+      ],
+      "e": "den Salat는 남성 4격이에요. 관사 den의 끝글자 -n처럼 대명사도 ihn이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir antworten der Nachbarin. → Wir antworten ___.",
+      "ko": "우리는 그녀에게 대답해요.",
+      "h": "",
+      "a": [
+        "ihr"
+      ],
+      "e": "antworten은 3격 동사라서 der Nachbarin은 여성 3격이에요. 여성 3격 대명사는 ihr예요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "나는 그녀에게 그 열쇠를 줘요.",
+      "a": [
+        "Ich gebe ihr den Schlüssel."
+      ],
+      "e": "대명사 ihr가 명사 den Schlüssel보다 앞에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리는 그에게 자전거를 한 대 선물해요.",
+      "a": [
+        "Wir schenken ihm ein Fahrrad."
+      ],
+      "e": "받는 사람 ihm(3격 대명사)이 명사 ein Fahrrad보다 앞에 와요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Ich zeige ___ ___. (그것 = der Plan / 그녀에게)",
+      "o": [
+        "ihn ihr",
+        "ihr ihn",
+        "ihm sie",
+        "sie ihm"
+      ],
+      "a": 0,
+      "e": "der Plan은 남성 4격 ihn, '그녀에게'는 3격 ihr예요.<br>대명사가 둘이면 4격이 먼저라서 ihn ihr 순서예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Die Tomaten sind frisch. Ich kaufe ___.",
+      "o": [
+        "sie",
+        "ihnen",
+        "es",
+        "ihn"
+      ],
+      "a": 0,
+      "e": "die Tomaten은 복수예요. 사물이라도 복수는 sie로 받고, 4격도 sie예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Wir fragen ___.",
+      "ko": "우리는 그에게 물어봐요.",
+      "h": "1격: er",
+      "a": [
+        "ihn"
+      ],
+      "e": "fragen은 한국어로 '~에게 묻다'지만 독일어는 4격 동사예요.<br>그래서 3격 ihm이 아니라 4격 ihn을 써요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich schicke ___ ___.",
+      "ko": "나는 그것(das Foto)을 너에게 보내요.",
+      "h": [
+        "das Foto",
+        "1격: du"
+      ],
+      "a": [
+        "es",
+        "dir"
+      ],
+      "e": "das Foto는 4격 es, '너에게'는 3격 dir예요.<br>대명사끼리는 4격이 먼저예요 — Ich schicke es dir."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Wir essen mit ___.",
+      "ko": "우리는 그들과 함께 먹어요.",
+      "h": "mit + 3격",
+      "a": [
+        "ihnen"
+      ],
+      "e": "mit 뒤는 3격이에요. 복수 sie의 3격은 ihnen이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Der Kaffee ist für ___.",
+      "ko": "그 커피는 너희를 위한 거예요.",
+      "h": "für + 4격",
+      "a": [
+        "euch"
+      ],
+      "e": "für 뒤는 4격이에요. ihr의 4격은 euch예요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "나는 그것(die Suppe)을 그 손님에게 가져다줘요.",
+      "a": [
+        "Ich bringe sie dem Gast."
+      ],
+      "e": "die Suppe는 4격 대명사 sie로 바뀌어요.<br>대명사는 명사보다 앞이라서 sie가 dem Gast보다 먼저 와요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "아이들이 그것(das Bild)을 그 선생님께 선물해요.",
+      "a": [
+        "Die Kinder schenken es der Lehrerin."
+      ],
+      "e": "das Bild는 4격 대명사 es예요.<br>대명사 es가 명사 der Lehrerin보다 앞에 와요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Wir schenken ihr es.",
+        "Die Jacke gefällt mir.",
+        "Wir zeigen ihr den Weg.",
+        "Wir helfen euch."
+      ],
+      "a": 0,
+      "e": "대명사가 둘이면 4격이 먼저예요. Wir schenken es ihr.가 맞아요.<br>나머지는 3격 동사(gefallen · helfen)와 '대명사 → 명사' 순서를 바르게 지켰어요.",
+      "ok": "gefällt는 현재형(4과 본문), Weg는 명사 — 분리동사 아님"
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'그 사과들은 그녀 거예요.'에 맞는 것은?",
+      "o": [
+        "Die Äpfel gehören ihr.",
+        "Die Äpfel gehört ihr.",
+        "Die Äpfel gehören sie.",
+        "Die Äpfel gehören ihnen."
+      ],
+      "a": 0,
+      "e": "주어 die Äpfel이 복수라서 동사는 gehören이에요.<br>gehören은 3격 동사이고 '그녀'의 3격은 ihr예요. ihnen은 '그들'이에요.",
+      "ok": "gehört·gehören은 현재형"
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'우리는 그 노래들이 마음에 들어요.'에 맞는 것은?",
+      "o": [
+        "Die Lieder gefallen uns.",
+        "Die Lieder gefällt uns.",
+        "Wir gefallen die Lieder.",
+        "Die Lieder gefallen wir."
+      ],
+      "a": 0,
+      "e": "gefallen은 마음에 드는 것(die Lieder)이 1격 주어예요. 주어가 복수라서 동사도 gefallen이에요.<br>마음에 들어 하는 '우리'는 3격 uns예요.",
+      "ok": "gefällt는 오답 보기의 현재형(4과 본문)"
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Ich bringe dem Opa die Zeitung. → Ich bringe ___ ___.",
+      "ko": "나는 그것을 그에게 가져다줘요.",
+      "h": [
+        "die Zeitung",
+        "dem Opa"
+      ],
+      "a": [
+        "sie",
+        "ihm"
+      ],
+      "e": "die Zeitung은 4격 sie, dem Opa는 3격 ihm이 돼요.<br>명사일 때는 3격 → 4격이었지만, 대명사 둘은 4격 → 3격으로 순서가 뒤집혀요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Da ist eine Lampe. ___ ist modern. Ich kaufe ___ und schenke ___ ___.",
+      "ko": "저기 램프가 하나 있어요. 그것은 현대적이에요. 나는 그것을 사서 그것을 그들에게 선물해요.",
+      "h": [
+        "die Lampe",
+        "die Lampe",
+        "die Lampe",
+        "1격: sie(복수)"
+      ],
+      "a": [
+        "Sie",
+        "sie",
+        "sie",
+        "ihnen"
+      ],
+      "e": "die Lampe는 여성이라서 1격도 4격도 sie예요.<br>'그들에게'는 3격 ihnen이고, 대명사 둘은 4격 sie → 3격 ihnen 순서예요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그 여종업원이 그것(der Kaffee)을 우리에게 가져다줘요.",
+      "a": [
+        "Die Kellnerin bringt ihn uns."
+      ],
+      "e": "der Kaffee는 남성 4격 ihn, '우리에게'는 3격 uns예요.<br>대명사 둘은 4격 → 3격 순서라서 ihn uns예요."
+    }
+  ]
+}
