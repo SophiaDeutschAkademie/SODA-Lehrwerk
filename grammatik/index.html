@@ -604,6 +604,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
 .sx-end-ex{padding:22px 28px;border-bottom:1px solid var(--sx-line)}
 @media (max-width:640px){.sx-end-ex{padding:18px}.qi{padding:18px 16px}.qb{height:42px}}
 @media print{.qa,.qscore{display:none!important}.qin{border-bottom:1px solid #000;background:none}.qpool{display:none}}
+.uc-title.xlong{font-size:clamp(26px,7.6vw,104px)}
 .uc-sub{margin-top:18px;align-self:flex-start;padding:6px 2px;font-size:15px;font-weight:600;color:var(--uc-mut);text-decoration:none;border-bottom:1px solid var(--uc-bd)}
 .uc-sub:hover{color:var(--uc-ink)}
 #utoc .sx-sub{margin-top:-6px}
@@ -624,7 +625,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
 <div id="ucover" hidden class="sx-view uc" data-no-print>
   <header class="uc-brand"><svg class="uc-logo" viewBox="0 0 1157 1333" aria-hidden="true" focusable="false"><path fill="#57585A" d="M0 348.6 686 0v678.2L0 1026.8z"/><path fill="#ED1C24" d="M235.4 501.5 921.4 153v678.2l-686 348.6z"/><path fill="#F3C811" d="M470.8 654.3 1156.8 305.7v678.2l-686 348.6z"/></svg><div class="uc-brand-t"><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div></header>
   <div class="uc-hero">
-    <h1 class="uc-title"><span class="t1">SODA</span><span class="t2">ÜBUNGEN</span></h1>
+    <h1 class="uc-title xlong"><span class="t1">SODA</span><span class="t2">GRAMMATIKÜBUNGEN</span></h1>
     <a class="uc-cta" href="#/uebungen/liste">시작하기 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
     <a class="uc-sub" href="#/inhalt">문법 교재로 가기</a>
   </div>
@@ -658,7 +659,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
 <div id="utoc" class="sx-view sx-toc" hidden data-no-print>
   <header class="sx-bar">
     <div class="sx-bar-in">
-      <div class="sx-brand"><svg viewBox="0 0 1157 1333" aria-hidden="true"><path fill="#57585A" d="M0 348.6 686 0v678.2L0 1026.8z"/><path fill="#ED1C24" d="M235.4 501.5 921.4 153v678.2l-686 348.6z"/><path fill="#F3C811" d="M470.8 654.3 1156.8 305.7v678.2l-686 348.6z"/></svg><span>Lehrwerk Übungen</span></div>
+      <div class="sx-brand"><svg viewBox="0 0 1157 1333" aria-hidden="true"><path fill="#57585A" d="M0 348.6 686 0v678.2L0 1026.8z"/><path fill="#ED1C24" d="M235.4 501.5 921.4 153v678.2l-686 348.6z"/><path fill="#F3C811" d="M470.8 654.3 1156.8 305.7v678.2l-686 348.6z"/></svg><span>Grammatikübungen</span></div>
       <a class="sx-count" href="#/inhalt">교재 목차</a>
     </div>
   </header>
@@ -1363,10 +1364,10 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
       renderContents();
       jump(prevRoute && (prevRoute === 'AX' || prevRoute.charAt(0) === 'L') ? tocY : 0);
     } else if (r.v === 'utoc') {
-      document.title = 'Lehrwerk Übungen';
+      document.title = 'Grammatikübungen';
       jump(prevRoute && prevRoute.charAt(0) === 'U' && prevRoute !== 'utoc' && prevRoute !== 'ucover' ? tocY : 0);
     } else if (r.v === 'ucover') {
-      document.title = 'Lehrwerk Übungen';
+      document.title = 'Grammatikübungen';
       jump(0);
     } else if (r.v === 'lesson') {
       if (r.ax) openAppendix(); else if (r.u) openExercise(r.n); else openLesson(r.n);
