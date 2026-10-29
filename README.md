@@ -1,6 +1,6 @@
 # SODA Lehrwerk
 
-Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 열여섯 가지 학습 자료를 골라 열 수 있어요.
+Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 열일곱 가지 학습 자료를 골라 열 수 있어요.
 
 ## 학습 자료
 
@@ -16,10 +16,11 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `nomen-verb-verbindungen/` | Nomen-Verb-Verbindungen | 명사와 동사 연어 플래시카드, A1–C2, 317장 |
 | `redemittel/` | SODA Alltagsredemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
 | `kuerze-wuerze/` | In der Kürze liegt die Würze | 독일 일상을 위한 MSG, 짧은 표현 플래시카드, A2–C1, 256장과 헷갈리는 짝 |
+| `lernmethoden/` | SODA Lernmethoden | 독일어 공부법, 어휘·문법·읽기·듣기·말하기·쓰기·특별 주제 글 23편 |
 | 별도 저장소 `SODA-Goethe` | Goethe A2·B1·B2 모의고사 | Modelltest 5·10·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면 |
 | 별도 저장소 `SODA-TELC` | telc B1·B2·C1 Hochschule 모의고사 | Modelltest 5·7·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면 |
 
-루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grammatik / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 Training 묶음에 들어 있어요. 그 아래에 전체 너비의 「SODA Modelltest」 묶음이 있고, Goethe A2, Goethe B1, Goethe B2, telc B1, telc B2, telc C1 Hochschule 모의고사 여섯 항목이 들어 있습니다. 이 여섯 항목은 용량 한도(GitHub Pages 1 GB) 때문에 별도 저장소(`SODA-Goethe`, `SODA-TELC`)의 주소로 연결됩니다. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
+루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grammatik / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 Training 묶음에 들어 있어요. 그 아래에 「Lernmethoden」(독일어 공부법) 묶음이 있고, 그 아래에 전체 너비의 「SODA Modelltest」 묶음이 있고, Goethe A2, Goethe B1, Goethe B2, telc B1, telc B2, telc C1 Hochschule 모의고사 여섯 항목이 들어 있습니다. 이 여섯 항목은 용량 한도(GitHub Pages 1 GB) 때문에 별도 저장소(`SODA-Goethe`, `SODA-TELC`)의 주소로 연결됩니다. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
 
 ## 웹 주소로 열기 (GitHub Pages)
 
@@ -45,6 +46,7 @@ verben-mit-praepositionen/   SODA-VP 저장소의 내용
 nomen-verb-verbindungen/     SODA-NVV 저장소의 내용
 redemittel/                  회화 패턴과 상황별 반응 표현 플래시카드(단일 HTML)
 kuerze-wuerze/               독일 일상을 위한 MSG, 짧은 표현 플래시카드(단일 HTML)
+lernmethoden/                독일어 공부법 글 23편(단일 HTML, 원고와 빌드 스크립트 포함)
 zertifikat/                  옛 모의고사 주소를 새 주소로 넘기는 안내 페이지만 있음 (zertifikat/README.md)
 ```
 
@@ -68,3 +70,9 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 ## 홈 화면에 앱 추가
 
 일곱 앱의 표지에 모두 `홈 화면에 앱 추가` 버튼이 있습니다. 휴대폰에서만 보이고, 이미 홈 화면 앱으로 연 경우에는 숨겨져요. `grammatik/`과 `hoertraining/`은 자체 코드를, 나머지 다섯 앱은 `index.html` 맨 아래의 `SODA 공통 홈 화면에 앱 추가` 블록을 씁니다. 아이콘과 `manifest.webmanifest`는 각 앱 폴더에 있어요.
+
+## 독일어 공부법(`lernmethoden/`) 고치기
+
+- 글 원고는 `lernmethoden/src/<글id>.txt`입니다. 맨 위에 `id`, `cat`, `no`, `date`, `title`, `sum`을 적고 `---` 아래에 본문을 씁니다. 문법은 `lernmethoden/build.py` 맨 위 설명에 있어요.
+- 원고를 고치거나 새 글을 넣은 뒤 `python3 lernmethoden/build.py`를 실행하면 `lernmethoden/index.html`이 다시 만들어집니다. 분류 목록은 `build.py`의 `CATS`에 있습니다.
+- 목차 타일의 「글 23편」과 `README`의 편수는 글을 더하거나 뺄 때 직접 고칩니다.
