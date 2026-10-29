@@ -1300,6 +1300,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     if (u && UBY[u[1]]) return { v: 'lesson', u: true, n: u[1], key: 'U' + u[1] };
     if (h === '#/anhang') return { v: 'lesson', ax: true, key: 'AX' };
     if (h === '#/inhalt') return { v: 'toc', key: 'toc' };
+    if (h === '#/uebungen') return { v: 'toc', key: 'toc', ex: true };
     return { v: 'cover', key: 'cover' };
   }
 
@@ -1315,9 +1316,15 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     });
   }
 
+  function scrollToEx() {
+    var h = $('sx-uh');
+    if (!h || h.hidden) return jump(0);
+    window.scrollTo(0, Math.max(0, h.getBoundingClientRect().top + window.scrollY - 24));
+  }
+
   function route() {
     var r = parse();
-    if (r.key === cur) return;
+    if (r.key === cur) { if (r.ex && cur === 'toc') scrollToEx(); return; }
     if (cur === 'toc') tocY = window.scrollY;
     if (cur === 'AX' || (cur && (cur.charAt(0) === 'L' || cur.charAt(0) === 'U'))) leaveLesson();
     show(r.v);
@@ -1326,7 +1333,8 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     if (r.v === 'toc') {
       document.title = 'Lehrwerk Grammatik';
       renderContents();
-      jump(prevRoute && (prevRoute === 'AX' || prevRoute.charAt(0) === 'L' || prevRoute.charAt(0) === 'U') ? tocY : 0);
+      if (r.ex) scrollToEx();
+      else jump(prevRoute && (prevRoute === 'AX' || prevRoute.charAt(0) === 'L' || prevRoute.charAt(0) === 'U') ? tocY : 0);
     } else if (r.v === 'lesson') {
       if (r.ax) openAppendix(); else if (r.u) openExercise(r.n); else openLesson(r.n);
     } else {
