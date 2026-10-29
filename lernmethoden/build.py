@@ -372,9 +372,9 @@ def build():
         for a in series[cid]:
             rows.append(
                 '<li><a class="row" href="#a/%s"><span class="n">%d</span><span class="tx">'
-                '<span class="rt">%s</span><span class="rs">%s</span><span class="rd">%s</span></span>'
+                '<span class="rt">%s</span><span class="rs">%s</span></span>'
                 '<span class="go" aria-hidden="true">%s</span></a></li>'
-                % (a['id'], a['no'], esc(a['title']), esc(a['sum']), fmt_date(a['date']), ARROW))
+                % (a['id'], a['no'], esc(a['title']), esc(a['sum']), ARROW))
         toc.append(
             '<section class="cat" aria-labelledby="cat-%s"><header class="cat-h"><h2 id="cat-%s">%s</h2>'
             '<span class="ko">%s</span><span class="note">%s</span></header><ul class="rows">%s</ul></section>'
@@ -402,12 +402,12 @@ def build():
                 '<a class="pill" href="#inhalt">%s공부법 목록</a>'
                 '<p class="a-eb">%s<i>·</i>%s %d/%d</p>'
                 '<h1 tabindex="-1">%s</h1><p class="a-sum">%s</p>'
-                '<p class="a-meta">%s · 약 %d분</p>'
+                '<p class="a-meta">약 %d분</p>'
                 '<div class="body">%s</div>%s'
                 '<p class="a-end"><a class="pill" href="#inhalt">%s공부법 목록</a></p>'
                 '<p class="a-note">소피아 독일어학원 · 독일어 공부법</p></article>'
                 % (a['id'], esc(a['title']), BACK, de, ko, idx + 1, len(lst), esc(a['title']), esc(a['sum']),
-                   fmt_date(a['date']), mins, body, pn_html, BACK))
+                   mins, body, pn_html, BACK))
 
     theme = read(os.path.join(SHARED, 'theme.html'))
     chrome = read(os.path.join(SHARED, 'chrome.css'))
