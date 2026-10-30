@@ -217,20 +217,29 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .choice small{display:block;color:var(--muted);margin-left:24px}
 
 /* 과제지 */
-.sheet{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:var(--bg-2);font-size:15px}
-.sheet>*+*{margin-top:9px}
-.sheet .de{font-family:var(--serif);font-size:16px;line-height:1.65}
-.sheet .tt{font-weight:700;font-size:17px;font-family:var(--serif)}
-.sheet ul{padding-left:20px;margin:6px 0 0}
+.sheet{border:1px solid var(--line);border-radius:12px;padding:20px 22px;background:var(--bg-2);font-size:15px;line-height:1.6}
+.sheet>*+*{margin-top:14px}
+.sheet .instr{font-family:var(--font);font-size:14px;line-height:1.65;color:var(--ink-2);background:var(--panel);border-left:3px solid var(--acc);border-radius:0 8px 8px 0;padding:10px 14px}
+.sheet .de{font-family:var(--serif);font-size:17px;line-height:1.8}
+.sheet .de.read{max-width:42em}
+.sheet .de.read+.de.read{margin-top:12px}
+.sheet .tt{font-weight:700;font-size:20px;line-height:1.35;font-family:var(--serif);margin-top:20px}
+.sheet .sub{font-family:var(--serif);font-size:17px;line-height:1.6;font-style:italic;color:var(--ink-2);padding-bottom:12px;border-bottom:1px solid var(--line)}
+.sheet .lab{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-top:20px}
+.sheet ul{padding-left:0;margin:0;list-style:none}
+.sheet li{padding:3px 12px 3px 14px;border-left:2px solid var(--line);line-height:1.65}
 .sheet li+li{margin-top:6px}
-.sheet .hint{color:var(--muted)}
-.sheet .kb{font-size:13px;color:var(--muted);font-family:var(--font)}
+.sheet ul.pick li{border:1px solid var(--line);border-radius:8px;background:var(--panel);padding:10px 14px}
+.sheet li.sel{border-color:var(--acc);background:var(--acc-w)}
+.sheet .hint{display:block;color:var(--muted);font-family:var(--font);font-size:14px;line-height:1.55;margin-top:2px}
+.sheet .kb{font-size:14px;line-height:1.65;color:var(--muted);font-family:var(--font)}
 .cards4{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
-.cards4 div{border:1px solid var(--acc-line);background:var(--acc-w);border-radius:8px;padding:10px;text-align:center;font-family:var(--serif);font-weight:700}
+.cards4 div{border:1px solid var(--acc-line);background:var(--acc-w);border-radius:8px;padding:14px 10px;font-size:17px;text-align:center;font-family:var(--serif);font-weight:700}
 table.sched{width:100%;border-collapse:collapse;font-size:15px}
-table.sched td,table.sched th{border:1px solid var(--line);padding:6px 10px;text-align:left}
+table.sched td,table.sched th{border:1px solid var(--line);padding:9px 12px;text-align:left}
 table.sched th{background:var(--panel-2);font-size:13px;color:var(--ink-2)}
 table.sched td:first-child{white-space:nowrap;font-variant-numeric:tabular-nums;width:1%}
+.folie .de{line-height:1.65}
 .folie{border:1px solid var(--line);border-radius:8px;padding:8px 12px;background:var(--panel)}
 .folie b{font-size:13px;color:var(--acc)}
 .folie small{display:block;color:var(--muted)}
@@ -2739,11 +2748,11 @@ const itemText = i => i ? i.de + (i.hint ? ' (' + i.hint + ')' : '') : '';
 const hasKo = s => /[가-힣]/.test(s);
 
 function sheetHtml(ex, T, chosenId) {
-  let h = '<p class="de">' + esc(T.instruction) + '</p>';
+  let h = '<p class="instr">' + esc(T.instruction) + '</p>';
   for (const b of T.sheet) {
     if (b.t === 'h') h += '<p class="tt">' + esc(b.s) + '</p>';
-    else if (b.t === 'i') h += '<p class="de"><i>' + esc(b.s) + '</i></p>';
-    else if (b.t === 'p') h += hasKo(b.s) ? '<p class="kb">' + esc(b.s) + '</p>' : '<p class="de">' + esc(b.s) + '</p>';
+    else if (b.t === 'i') h += '<p class="sub">' + esc(b.s) + '</p>';
+    else if (b.t === 'p') h += hasKo(b.s) ? '<p class="kb">' + esc(b.s) + '</p>' : '<p class="de' + (b.s.length > 160 ? ' read' : '') + '">' + esc(b.s) + '</p>';
     else if (b.t === 'ul') h += '<ul>' + b.items.map(x => '<li class="' + (hasKo(x) ? 'kb' : 'de') + '">' + esc(x) + '</li>').join('') + '</ul>';
     else if (b.t === 'cards') h += '<div class="cards4">' + b.items.map(x => '<div>' + esc(x) + '</div>').join('') + '</div>';
     else if (b.t === 'sched') h += '<p class="tt">' + esc(b.title) + '</p><table class="sched"><tr><th>Uhrzeit</th><th>Termin</th></tr>' + b.rows.map(r => '<tr><td>' + esc(r[0]) + '</td><td>' + esc(r[1]) + '</td></tr>').join('') + '</table>' + (b.note ? '<p class="kb">' + esc(b.note) + '</p>' : '');
@@ -2751,7 +2760,7 @@ function sheetHtml(ex, T, chosenId) {
     else if (b.t === 'folien') h += b.items.map(f => '<div class="folie"><b>' + esc(f[0]) + '</b> <span class="de">' + esc(f[1]) + '</span><small>→ ' + esc(f[2]) + '</small></div>').join('');
   }
   if (T.choice) {
-    h += '<p class="tt">Zur Auswahl</p><ul>' + T.choice.items.map(i =>
+    h += '<p class="lab">Zur Auswahl</p><ul class="pick">' + T.choice.items.map(i =>
       '<li class="de' + (i.id === chosenId ? ' sel' : '') + '">' + (i.id === chosenId ? '<b>' : '') + esc(i.de) + (i.id === chosenId ? '</b>' : '') +
       (i.hint ? ' <span class="hint">(' + esc(i.hint) + ')</span>' : '') + (i.id === chosenId ? ' <span class="kb">← 내가 고른 것</span>' : '') + '</li>').join('') + '</ul>';
   }
