@@ -338,6 +338,22 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 .mailnote.fail{color:var(--bad)}
 .mailnote button{margin-left:8px;padding:4px 10px;font-size:13px}
 
+/* 마이크 감도 · 파트너 선택 */
+.meter,.level{position:relative}
+.thr{position:absolute;top:0;bottom:0;left:calc(var(--thr,7.5) * 1%);width:2px;background:var(--ink,#222);opacity:.55;text-decoration:none}
+.meter i.over,.level i.over{background:var(--ok)}
+.sens{margin-top:10px}
+.sensrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sensrow label{font-weight:600;min-width:9em}
+.sensrow input[type=range]{flex:1 1 160px;min-width:140px;max-width:320px}
+.opt{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px}
+.optl{font-weight:600;min-width:9em}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:8px 16px;font:inherit;cursor:pointer;color:inherit}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button.on{background:var(--acc);color:#fff}
+.seg button:focus-visible{outline:2px solid var(--acc);outline-offset:-2px}
+
 </style>
 </head>
 <body>
@@ -364,7 +380,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     <div class="copy">
       <div class="brandline"><img class="mark" src="data:image/png;base64,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" alt=""><span class="org">Sophia Deutsch Akademie</span></div>
       <h1><span class="w1">SODA</span><em>Sprechen</em></h1>
-      <p class="sub">시험관과 파트너를 상대로 독일어 말하기 시험을 연습합니다. Teil마다 최대 2회 연습하고, 말한 내용을 분석한 평가를 받을 수 있고, 연습 기록과 평가 결과는 자동으로 선생님께 전송됩니다.</p>
+      <p class="sub">시험관과 파트너를 상대로 독일어 말하기 시험을 연습합니다. Teil마다 최대 2회 연습할 수 있고(추가 연습은 선생님께 문의), 말한 내용을 분석한 평가를 받을 수 있고, 연습 기록과 평가 결과는 자동으로 선생님께 전송됩니다.</p>
       <ul class="exams" aria-label="연습할 수 있는 시험">
         <li><i class="a2"></i>Goethe A2</li>
         <li><i class="b1"></i>Goethe B1</li>
@@ -405,7 +421,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     <label class="field"><span>비밀번호</span><input id="inPw" name="password" type="password" autocomplete="current-password" maxlength="60" required></label>
     <button class="primary" id="btnLogin" type="submit">로그인</button>
     <p class="err" id="loginErr" role="alert"></p>
-    <p class="muted small">로그인하면 내 레벨의 시험이 열립니다. 연습 횟수는 아이디별로 Teil마다 2회이고, 서버에 기록되어 새로고침, 창 닫기, 다른 기기에서도 다시 얻을 수 없습니다.</p>
+    <p class="muted small">로그인하면 내 레벨의 시험이 열립니다. 연습 횟수는 아이디별로 Teil마다 최대 2회이고, 서버에 기록되어 새로고침, 창 닫기, 다른 기기에서도 다시 얻을 수 없습니다. 추가 연습이 필요하면 선생님께 말씀해 주십시오.</p>
   </form>
 </section>
 
@@ -427,13 +443,14 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
       <div>조용한 곳에서 이어폰을 쓰면 인식이 더 정확합니다.</div>
       <div>마이크 사용을 허용해 주십시오. 인터넷 연결이 필요합니다.</div>
       <div>대화의 음성과 내용은 연습과 첨삭을 위해 기록됩니다.</div>
-      <div>연습 횟수는 시험을 시작하는 순간 1회로 계산됩니다. 시험 중에 새로고침하거나 창을 닫아도 1회가 사용됩니다.</div>
+      <div>연습 횟수는 시험을 시작하는 순간 1회로 계산됩니다. 시험 중에 새로고침하거나 창을 닫아도 1회가 사용됩니다. Teil마다 최대 2회 연습할 수 있고, 추가 연습은 선생님께 말씀해 주십시오.</div>
     </div>
     <div class="row">
       <button class="secondary" id="btnMic" type="button">마이크 확인</button>
-      <div class="meter" aria-hidden="true"><i id="meterBar"></i></div>
+      <div class="meter" aria-hidden="true"><i id="meterBar"></i><u class="thr"></u></div>
       <span class="muted small" id="micMsg"></span>
     </div>
+    <div class="sens" data-sens></div>
   </details>
 
   <div id="examCards"></div>
@@ -445,7 +462,6 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     <p class="muted small" id="submitNote">연습 기록과 평가 결과는 연습이 끝날 때마다 선생님께 자동으로 전송됩니다. 이 파일은 내 기기에 보관하고 싶을 때 저장하십시오.</p>
   </div>
 
-  <p class="foot muted small">발음·억양은 자동으로 평가하지 않습니다. 점수는 SODA의 추정치이며 공식 채점이 아닙니다.</p>
 </section>
 
 <!-- ========== 준비 ========== -->
@@ -473,6 +489,24 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
       <div class="avatar" id="prepAvatar">M</div>
       <div><b id="prepPartnerName"></b><div class="muted small">시험 수준에 맞는 독일어로 말하고, 학생의 말에 반응하며 대화를 이어 갑니다. 과제에서 벗어나면 과제로 돌아옵니다.</div></div>
     </div>
+    <div class="opt"><span class="optl">목소리</span>
+      <div class="seg" data-seg="voice" role="group" aria-label="파트너 목소리"><button type="button" data-v="f">여성 (Mila)</button><button type="button" data-v="m">남성 (Ben)</button></div>
+    </div>
+    <div class="opt"><span class="optl">상대의 독일어 실력</span>
+      <div class="seg" data-seg="skill" role="group" aria-label="상대의 독일어 실력"><button type="button" data-v="low">하</button><button type="button" data-v="mid">중</button><button type="button" data-v="high">상</button></div>
+    </div>
+    <p class="muted small">시험 수준은 그대로이고, 같은 수준 안에서 상대가 쓰는 문장의 길이·어휘·말 속도가 달라집니다. 하는 더 짧고 쉽고 천천히, 상은 더 풍부하고 길게 말합니다. 연습을 시작할 때 적용됩니다.</p>
+  </div>
+
+  <div class="card">
+    <h2>마이크 감도</h2>
+    <p class="muted small">마이크를 켜고 말해 보십시오. 말할 때 막대가 세로 표시선을 넘고, 조용할 때는 넘지 않도록 맞추십시오.</p>
+    <div class="row">
+      <button class="secondary" id="btnMic2" type="button">마이크 확인</button>
+      <div class="meter" aria-hidden="true"><i id="meterBar2"></i><u class="thr"></u></div>
+    </div>
+    <span class="muted small" id="micMsg2"></span>
+    <div class="sens" data-sens></div>
   </div>
 
   <div class="card">
@@ -488,6 +522,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 
   <div class="card">
     <div class="time-info" id="timeInfo"></div>
+    <p class="muted small" id="prepLimit"></p>
     <p class="muted small">연습이 끝나면 대화 전사와 평가 결과가 선생님께 자동으로 전송됩니다.</p>
     <div class="row">
       <button class="primary" id="btnStart" type="button">시험 시작</button>
@@ -516,7 +551,8 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     <div class="spk" id="spkPartner"><b>파트너</b><span id="spkPartnerName"></span></div>
     <div class="spk" id="spkStudent"><b>나</b><span id="spkStudentName"></span></div>
   </div>
-  <div class="level"><i id="exLevel"></i></div>
+  <div class="level"><i id="exLevel"></i><u class="thr"></u></div>
+  <div class="sens" data-sens></div>
   <p class="notice" id="exNotice" role="status"></p>
 
   <div class="card">
@@ -1761,7 +1797,23 @@ async function api(path, body, ms) {
   if (!res.ok) { const er = new Error((data && data.message) || '서버 응답을 처리하지 못했습니다.'); er.code = (data && data.error) || 'server'; er.status = res.status; throw er; }
   return data;
 }
-const VOICE_RMS = 0.015;
+const VOICE_RMS = 0.015;   // 감도 5(기본)에서 소리로 인정하는 기준 크기
+/* 파트너 목소리(여성·남성)와 상대의 독일어 실력(하·중·상). 시험 수준은 그대로이고, 같은 수준 안에서 말의 길이·어휘·속도만 조절합니다. */
+const PARTNERS = {
+  f: { name: 'Mila', gender: 'f', voice: 'ZoxS77tXeRuNRJNif3rR', ko: '여성' },
+  m: { name: 'Ben', gender: 'm', voice: 'MMwckqU477oQxnAk1SgA', ko: '남성' }
+};
+const SKILLS = {
+  low: { ko: '하', speed: 0.8, rule: ' Innerhalb dieses Niveaus sprichst du im unteren Bereich: besonders einfache, kurze Sätze, nur sehr häufige Wörter, kaum Nebensätze, wenn möglich nur ein Satz pro Beitrag, deutlich und langsam. Du suchst manchmal nach einem Wort.' },
+  mid: { ko: '중', speed: 0.88, rule: '' },
+  high: { ko: '상', speed: 0.96, rule: ' Innerhalb dieses Niveaus sprichst du im oberen Bereich: abwechslungsreicher Wortschatz, vollständige Nebensätze und Konnektoren, flüssig und gut gegliedert mit Begründungen und Beispielen. Du überschreitest dabei das Niveau nicht.' }
+};
+const Pref = {
+  sens: 5, skill: 'mid', voice: 'f',
+  load() { try { const p = JSON.parse(localStorage.getItem('soda-sprechen:pref') || 'null') || {}; if (p.sens >= 1 && p.sens <= 9) this.sens = p.sens | 0; if (SKILLS[p.skill]) this.skill = p.skill; if (PARTNERS[p.voice]) this.voice = p.voice; } catch (e) { } },
+  save() { try { localStorage.setItem('soda-sprechen:pref', JSON.stringify({ sens: this.sens, skill: this.skill, voice: this.voice })); } catch (e) { } }
+};
+Pref.load();
 const CLOSING_TIME = 'Entschuldigung, wenn ich unterbreche. Die Zeit ist leider um. Bitte kommen Sie jetzt zum Schluss.';
 const CLOSING_USER = 'Gut. Möchten Sie noch etwas ergänzen?';
 
@@ -1770,6 +1822,7 @@ const AudioIO = {
   ctx: null, stream: null, src: null, analyser: null, out: null,
   nextTime: 0, sources: new Set(), sink: null, ready: false,
   pending: [], pendingLen: 0, rsBuf: new Float32Array(0), rsPos: 0,
+  thr: VOICE_RMS, hang: 0, prev: null, wasOpen: false,
   async init() {
     if (this.ready) { if (this.ctx.state === 'suspended') await this.ctx.resume(); return; }
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) throw new Error('이 브라우저는 마이크를 지원하지 않습니다. 최신 Chrome 또는 Safari를 사용해 주십시오.');
@@ -1831,7 +1884,15 @@ const AudioIO = {
       i16[i] = v < 0 ? v * 0x8000 : v * 0x7fff;
     }
     const rms = Math.sqrt(s / all.length);
-    if (this.sink) this.sink(i16, rms, all.length / 16);
+    /* 소음 문턱: 기준보다 작은 소리는 무음으로 바꿔 보냅니다(감도 설정). 말이 시작되는 부분이 잘리지 않도록 직전 조각을 함께 보내고, 끝난 뒤 0.6초는 열어 둡니다. */
+    const thr = this.thr * (this.speaking ? 1.6 : 1);
+    if (rms > thr) this.hang = 6; else if (this.hang > 0) this.hang--;
+    const open = rms > thr || this.hang > 0;
+    let out = i16;
+    if (!open) out = new Int16Array(i16.length);
+    else if (!this.wasOpen && this.prev) { out = new Int16Array(this.prev.length + i16.length); out.set(this.prev); out.set(i16, this.prev.length); }
+    this.wasOpen = open; this.prev = i16;
+    if (this.sink) this.sink(out, rms, all.length / 16);
   },
   level() {
     if (!this.analyser) return 0;
@@ -1862,8 +1923,8 @@ function i16ToB64(i16) {
 
 /* ------------------------------------------------------------------ 세션 */
 class Session {
-  constructor(role, vars, ctx) {
-    this.role = role; this.vars = vars || {}; this.ctx = ctx || {};
+  constructor(role, vars, ctx, override) {
+    this.role = role; this.vars = vars || {}; this.ctx = ctx || {}; this.override = override || null;
     this.ws = null; this.ready = false; this.rate = 16000; this.isClosed = false;
     this.onUser = null; this.onAgent = null; this.onCorrection = null; this.onClose = null;
     this.closeInfo = null;
@@ -1877,7 +1938,11 @@ class Session {
       let ws;
       try { ws = new WebSocket(sg.url); } catch (e) { clearTimeout(timer); return fail('연결할 수 없습니다.'); }
       this.ws = ws;
-      ws.onopen = () => ws.send(JSON.stringify({ type: 'conversation_initiation_client_data', dynamic_variables: this.vars }));
+      ws.onopen = () => {
+        const init = { type: 'conversation_initiation_client_data', dynamic_variables: this.vars };
+        if (this.override) init.conversation_config_override = this.override;
+        ws.send(JSON.stringify(init));
+      };
       ws.onerror = () => fail('서버에 연결할 수 없습니다. 인터넷 연결을 확인해 주십시오.');
       ws.onclose = ev => {
         this.isClosed = true; this.ready = false; this.closeInfo = { code: ev.code, reason: ev.reason };
@@ -2052,6 +2117,7 @@ function examCard(ex) {
       const row = $('.row', div);
       const mk = (txt, cls, fn, dis) => { const b = document.createElement('button'); b.className = cls; b.type = 'button'; b.textContent = txt; b.onclick = fn; b.disabled = !!dis; row.appendChild(b); };
       mk(left > 0 ? (used ? '다시 연습' + (unlimited() ? '' : '(' + left + '회 남음)') : '연습 시작') : '연습 횟수를 모두 썼습니다', 'primary', () => startPrep(ex, T.n), left === 0);
+      if (left === 0 && !unlimited()) { const n = document.createElement('div'); n.className = 'muted small'; n.textContent = '추가 연습이 필요하면 선생님께 말씀해 주십시오.'; div.appendChild(n); }
       if (r.attempts.length > 0) {
         mk(r.evaluation ? '평가 결과 보기' : '평가 받기', 'secondary', () => r.evaluation ? showEval(ex, T.n) : askEvaluate(ex, T.n));
         if (unlimited() && r.evaluation) mk('다시 평가 받기', 'secondary', () => askEvaluate(ex, T.n));
@@ -2083,7 +2149,7 @@ function renderToc() {
     box.appendChild(examCard(open));
     return;
   }
-  $('#tocWho').textContent = S.user.id + ' 님, 연습할 시험을 고르십시오. ' + (unlimited() ? '이 계정은 연습 횟수 제한이 없습니다.' : 'Teil마다 최대 ' + maxA() + '회 연습합니다.');
+  $('#tocWho').textContent = S.user.id + ' 님, 연습할 시험을 고르십시오. ' + (unlimited() ? '이 계정은 연습 횟수 제한이 없습니다.' : 'Teil마다 최대 ' + maxA() + '회 연습할 수 있습니다. 추가 연습이 필요하면 선생님께 말씀해 주십시오.');
   const noAccess = S.target && !mine.some(e => e.id === S.target) ? EXAMS.find(e => e.id === S.target) : null;
   if (noAccess) { const n = document.createElement('div'); n.className = 'card'; n.innerHTML = '<p><b>' + esc(noAccess.label) + '</b> 연습은 이 아이디로 아직 열려 있지 않습니다. 선생님께 문의해 주십시오.</p>'; box.appendChild(n); }
   groupsOf(mine).forEach(g => {
@@ -2107,22 +2173,58 @@ function renderToc() {
 
 /* ------------------------------------------------------------------ 마이크 확인 */
 let meterRAF = 0;
+/* 입력 막대: 세로 표시선이 감도 기준입니다. 막대가 표시선을 넘으면 "말하는 중"으로 인식합니다. */
+function paintLevel(bar) {
+  const l = AudioIO.level();
+  bar.style.width = Math.min(100, l * 500) + '%';
+  bar.classList.toggle('over', l > AudioIO.thr);
+}
 function runMeter(barId, until) {
   cancelAnimationFrame(meterRAF);
   const bar = $(barId);
   const loop = () => {
-    bar.style.width = Math.min(100, AudioIO.level() * 500) + '%';
+    paintLevel(bar);
     if (until()) meterRAF = requestAnimationFrame(loop);
   };
   loop();
 }
-async function micCheck() {
-  $('#micMsg').textContent = '';
+async function micCheck(barId, msgId, viewId) {
+  barId = barId || '#meterBar'; msgId = msgId || '#micMsg'; viewId = viewId || '#v-toc';
+  $(msgId).textContent = '';
   try {
     await AudioIO.init();
-    $('#micMsg').textContent = '마이크가 켜졌습니다. 말씀해 보십시오. 막대가 움직이면 정상입니다.';
-    runMeter('#meterBar', () => !$('#v-toc').hidden);
-  } catch (e) { $('#micMsg').textContent = e.message; }
+    $(msgId).textContent = '마이크가 켜졌습니다. 말씀해 보십시오. 말할 때 막대가 세로 표시선을 넘으면 인식됩니다.';
+    runMeter(barId, () => !$(viewId).hidden);
+  } catch (e) { $(msgId).textContent = e.message; }
+}
+
+/* 마이크 감도: 1(낮음)~9(높음). 낮출수록 작은 소리·주변 소음은 무시합니다. */
+const sensLabel = v => (v <= 3 ? '낮음' : v >= 7 ? '높음' : '보통') + ' ' + v;
+function setSens(v, save) {
+  v = Math.max(1, Math.min(9, v | 0));
+  Pref.sens = v; AudioIO.thr = VOICE_RMS * Math.pow(1.5, 5 - v);
+  document.documentElement.style.setProperty('--thr', Math.min(100, AudioIO.thr * 500).toFixed(2));
+  $$('[data-sensrange]').forEach(r => { r.value = v; });
+  $$('[data-sensval]').forEach(b => { b.textContent = sensLabel(v); });
+  if (save) Pref.save();
+}
+function mountSens() {
+  $$('[data-sens]').forEach(box => {
+    box.innerHTML = '<div class="sensrow"><label>마이크 감도 <b data-sensval></b></label><span class="muted small">낮음</span><input type="range" min="1" max="9" step="1" data-sensrange aria-label="마이크 감도"><span class="muted small">높음</span></div>' +
+      '<p class="muted small">조용한데도 "나"가 말하는 중으로 표시되면 감도를 낮추십시오. 말해도 인식되지 않으면 높이십시오.</p>';
+    $('[data-sensrange]', box).oninput = e => setSens(+e.target.value, true);
+  });
+  setSens(Pref.sens, false);
+}
+/* 파트너 목소리·상대 실력 선택(준비 화면). 이 브라우저에 기억합니다. */
+function mountPrefs() {
+  const paint = () => {
+    $$('[data-seg]').forEach(g => $$('button', g).forEach(b => { const on = Pref[g.dataset.seg] === b.dataset.v; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); }));
+    const p = PARTNERS[Pref.voice];
+    $('#prepPartnerName').textContent = p.name; $('#prepAvatar').textContent = p.name[0];
+  };
+  $$('[data-seg]').forEach(g => $$('button', g).forEach(b => { b.onclick = () => { Pref[g.dataset.seg] = b.dataset.v; Pref.save(); paint(); }; }));
+  paint();
 }
 
 /* ------------------------------------------------------------------ 준비 */
@@ -2152,8 +2254,9 @@ function startPrep(ex, tn) {
     });
   }
   $('#prepTask').innerHTML = sheetHtml(ex, T, T.choice ? S.choice[k] : null);
-  $('#prepPartnerName').textContent = APP.partner.name;
-  $('#prepAvatar').textContent = APP.partner.name[0];
+  mountPrefs();
+  $('#prepLimit').textContent = unlimited() ? '' : '이 Teil은 ' + (usedOf(recOf(ex, tn), ex, tn) + 1) + '번째 연습입니다. Teil마다 최대 ' + maxA() + '회 연습할 수 있고, 추가 연습이 필요하면 선생님께 말씀해 주십시오.';
+  $('#micMsg2').textContent = '';
   $('#notes').value = S.notes[k] || '';
   $('#prepClock').textContent = '';
   $('#prepTimerNote').textContent = (T.prepLabel || '준비 시간') + ': ' + fmt(tm.prep) + '. 실제 시험의 준비 시간을 따릅니다.';
@@ -2185,7 +2288,7 @@ function fill(str, A) {
 function partnerVars(A) {
   const T = A.T;
   return {
-    partner_name: A.partner.name, exam_label: A.ex.label, level: A.ex.level, level_rules: APP.levels[A.ex.level],
+    partner_name: A.partner.name, exam_label: A.ex.label, level: A.ex.level, level_rules: APP.levels[A.ex.level] + SKILLS[A.skill].rule + (A.partner.gender === 'm' ? ' Du bist männlich: Teilnehmer B, nicht Teilnehmerin.' : ''),
     teil_label: T.no + ' · ' + T.name, task_text: taskTextDe(A.ex, T, A.studentItem && A.studentItem.id),
     flow: fill(A.starter === 'student' ? T.flow.student : T.flow.partner, A), redemittel: T.redemittel
   };
@@ -2209,8 +2312,8 @@ function wireSession(s, role, phase) {
   };
   AudioIO.sink = (i16, rms, ms) => {
     const V = S.V, now = performance.now();
-    V.voice = rms > VOICE_RMS * (AudioIO.speaking ? 1.6 : 1);
-    if (V.voice) { V.lastVoiceAt = now; if (!AudioIO.speaking) V.voicedMs += ms; }
+    V.voice = rms > AudioIO.thr * (AudioIO.speaking ? 1.6 : 1);
+    if (V.voice) { V.lastVoiceAt = now; if (!AudioIO.speaking) { V.voicedMs += ms; if (S.A) S.A.heard = true; } }
     s.sendAudio(i16);
   };
 }
@@ -2219,7 +2322,7 @@ function uiTick(role) {
     $('#spkExaminer').classList.toggle('on', AudioIO.speaking && !!S.session && S.session.role === 'examiner');
     $('#spkPartner').classList.toggle('on', AudioIO.speaking && !!S.session && S.session.role === 'partner');
     $('#spkStudent').classList.toggle('on', S.V.voice && !AudioIO.speaking);
-    $('#exLevel').style.width = Math.min(100, AudioIO.level() * 500) + '%';
+    paintLevel($('#exLevel'));
   }, 150);
 }
 
@@ -2291,12 +2394,12 @@ function longHint(A) {
 function runDialog() {
   const A = S.A, T = A.T, tm = A.timing, mono = T.kind === 'monolog';
   return new Promise(async (resolve, reject) => {
-    const s = new Session('partner', partnerVars(A), { ticket: A.ticket });
+    const s = new Session('partner', partnerVars(A), { ticket: A.ticket }, { tts: { voice_id: A.partner.voice, speed: SKILLS[A.skill].speed } });
     S.session = s; wireSession(s, 'partner', 'dialog');
     try { await s.open(); } catch (e) { return reject(e); }
-    A.dialogStart = performance.now(); A.started = new Date().toISOString();
+    A.dialogStart = performance.now(); A.started = new Date().toISOString(); A.heard = false;
     S.V = { lastVoiceAt: performance.now(), voicedMs: 0, voice: false };
-    let finished = false, endHint = false, hintSent = false, timeUpAt = 0, wasSpeaking = false;
+    let finished = false, endHint = false, hintSent = false, timeUpAt = 0, wasSpeaking = false, switched = false;
     const finish = reason => {
       if (finished) return; finished = true;
       clearInterval(S.tick); A.dialogEnd = performance.now(); A.endReason = reason;
@@ -2304,7 +2407,7 @@ function runDialog() {
     };
     s.onClose = () => { if (!finished) finish(S.abort ? 'abort' : 'disconnect'); };
     if (mono) setStage('혼자 이야기하기', '파트너는 듣기만 합니다. 이야기가 끝나면 "여기서 끝내기"를 누르십시오. 시간이 되면 시험관이 알려 줍니다.');
-    else setStage('대화 중', A.starter === 'partner' ? A.partner.name + '가 먼저 말합니다. 끝까지 듣고 질문이나 반응으로 이어 가십시오.' : '먼저 말씀하십시오. 파트너는 끝까지 듣습니다.');
+    else setStage('대화 중', A.starter === 'partner' ? A.partner.name + '가 먼저 말합니다. 끝까지 듣고 질문이나 반응으로 이어 가십시오.' : '먼저 말씀하십시오. 2초 안에 시작하지 않으면 ' + A.partner.name + '가 먼저 시작합니다. 파트너는 끝까지 듣습니다.');
     if (A.starter === 'partner' && !mono) s.sendText('Bitte beginnen Sie.');
     const h = longHint(A);
     S.tick = setInterval(() => {
@@ -2317,9 +2420,16 @@ function runDialog() {
       const sp = AudioIO.speaking;
       $('#spkPartner').classList.toggle('on', sp);
       $('#spkStudent').classList.toggle('on', S.V.voice && !sp);
-      $('#exLevel').style.width = Math.min(100, AudioIO.level() * 500) + '%';
+      paintLevel($('#exLevel'));
       if (sp && !wasSpeaking) { S.V.voicedMs = 0; hintSent = false; }
       wasSpeaking = sp;
+      /* 내가 먼저 시작하는 차례인데 2초 안에 말하지 않으면 파트너가 먼저 시작합니다. */
+      if (!mono && !switched && A.starter === 'student' && !A.heard && !sp && now - A.dialogStart > 2000 && typeof SILENT !== 'undefined' && T.flow && T.flow.partner && T.flow.partner !== SILENT) {
+        switched = true; A.starter = 'partner'; A.autoStart = true;
+        s.sendContext('[Hinweis: A hat nach zwei Sekunden noch nicht begonnen. Du beginnst jetzt selbst. Ab jetzt gilt dieser Ablauf:\n' + fill(T.flow.partner, A) + ']');
+        s.sendText('Bitte beginnen Sie.');
+        setStage('대화 중', A.partner.name + '가 먼저 말합니다. 끝까지 듣고 질문이나 반응으로 이어 가십시오.');
+      }
       if (h && !hintSent && S.V.voicedMs > h[0]) { hintSent = true; s.sendContext(h[1]); }
       if (!mono && !endHint && el >= total - 30) { endHint = true; s.sendContext('[Hinweis: Die Zeit ist fast um. Komm in deinem nächsten Beitrag zu einem Abschluss.]'); }
       if (el > tm.official && !timeUpAt) setStage(mono ? '혼자 이야기하기 · 추가 시간' : '대화 중 · 추가 시간');
@@ -2351,7 +2461,7 @@ async function startExam() {
   // 횟수는 시작하는 순간 저장합니다. 최신 저장값을 다시 읽어 두 창에서 동시에 시작하는 것도 막습니다.
   if (!Store.ok()) { $('#startErr').textContent = '이 브라우저는 연습 기록을 저장할 수 없어 시작할 수 없습니다. 사생활 보호 모드를 끄고 다시 시도해 주십시오.'; return; }
   let fresh = Store.read(S.user.id), fr = fresh.ex[ex.id][t];
-  if ((fr.locked && !unlimited()) || usedOf(fr, ex, t) >= maxA()) { S.rec = Store.load(S.user.id); renderToc(); alert('이 Teil의 연습 횟수를 모두 사용했습니다.'); return; }
+  if ((fr.locked && !unlimited()) || usedOf(fr, ex, t) >= maxA()) { S.rec = Store.load(S.user.id); renderToc(); alert('이 Teil의 연습 횟수를 모두 사용했습니다. 추가 연습이 필요하면 선생님께 말씀해 주십시오.'); return; }
   // 서버에 시작을 알리고 횟수를 차감합니다. 서버의 기록이 기준입니다.
   let rs;
   try { rs = await api('/start', { ...cred(), exam: ex.id, teil: t }); }
@@ -2369,7 +2479,7 @@ async function startExam() {
   if (T.choice && T.choice.partnerItems) other = pick(T.choice.partnerItems);
   else if (T.choice && T.choice.other) other = pick(T.choice.items.filter(i => i.id !== chosen.id));
   const A = S.A = {
-    no: rs.no, ticket: rs.ticket, ex, T, t, partner: APP.partner, timing: T.timing,
+    no: rs.no, ticket: rs.ticket, ex, T, t, partner: PARTNERS[Pref.voice], skill: Pref.skill, heard: false, timing: T.timing,
     studentItem: chosen, partnerItem: other, stance: T.stance ? pickStance(ex, T) : '',
     starter: T.starterFixed || 'student', turns: [], dialogStart: 0, dialogEnd: 0, started: '', endReason: '', followQs: []
   };
@@ -2445,7 +2555,7 @@ function finalizeAttempt(reason) {
   const A = S.A, ex = A.ex, t = A.t;
   const dur = A.dialogStart ? ((A.dialogEnd || performance.now()) - A.dialogStart) / 1000 : 0;
   const rec = {
-    no: A.no, exam: ex.id, teil: t, partnerName: A.partner.name, starter: A.starter,
+    no: A.no, exam: ex.id, teil: t, partnerName: A.partner.name, partnerSkill: A.skill, partnerVoice: A.partner.gender, autoStart: !!A.autoStart, starter: A.starter,
     studentTopic: itemText(A.studentItem), partnerTopic: itemText(A.partnerItem), stance: A.stance,
     followQs: A.followQs, startedAt: A.started, durationSec: Math.round(dur), endReason: reason, turns: A.turns,
     official: A.timing.official, extra: A.timing.extra
@@ -2929,7 +3039,9 @@ $('#loginForm').addEventListener('submit', onLogin);
 $('#btnLogout').onclick = logout;
 $('#btnToc').onclick = () => { clearInterval(S.prepTimer); S.openEx = null; renderToc(); };
 $('#btnBackList').onclick = () => { S.openEx = null; renderToc(); };
-$('#btnMic').onclick = micCheck;
+$('#btnMic').onclick = () => micCheck();
+$('#btnMic2').onclick = () => micCheck('#meterBar2', '#micMsg2', '#v-prep');
+mountSens(); mountPrefs();
 $('#btnPrepBack').onclick = () => { clearInterval(S.prepTimer); renderToc(); };
 $('#btnPrepTimer').onclick = prepTimer;
 $('#btnStart').onclick = () => { $('#btnStart').disabled = true; clearInterval(S.prepTimer); startExam().finally(() => { $('#btnStart').disabled = false; }); };
