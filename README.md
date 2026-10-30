@@ -17,11 +17,11 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `redemittel/` | SODA Alltagsredemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
 | `kuerze-wuerze/` | In der Kürze liegt die Würze | 독일 일상을 위한 MSG, 짧은 표현 플래시카드, A2–C1, 256장과 헷갈리는 짝 |
 | `lernmethoden/` | SODA Lernmethoden | 독일어 공부법, 어휘·문법·읽기·듣기·말하기·쓰기·특별 주제 글 23편 |
-| `sprechen/` | SODA Sprechen | 말하기 실전 연습(시험관·파트너와 Teil별 연습, 평가, 결과 파일). 소피아 독일어학원 재학생 전용이라 아이디와 비밀번호로 로그인해야 합니다. 목차의 「SODA Modelltest」 묶음 맨 아래 전체 너비 타일과, Goethe A2·B1·B2, telc B1·B2 Modelltest 1·2의 「말하기 실전 연습」 줄에서 열립니다 |
+| `sprechen/` | SODA Sprechen | 말하기 실전 연습(시험관·파트너와 Teil별 연습, 평가, 결과 파일). 소피아 독일어학원 수강생 전용이라 아이디와 비밀번호로 로그인해야 합니다. 목차의 「SODA Modelltest」 묶음 맨 아래 전체 너비 타일과, Goethe A2·B1·B2, telc B1·B2 Modelltest 1·2의 「말하기 실전 연습」 줄에서 열립니다 |
 | 별도 저장소 `SODA-Goethe` | Goethe A2·B1·B2 모의고사 | Modelltest 5·10·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면, A2·B1·B2·C1 Hochschule에는 쓰기·말하기 시험 대비 가이드 |
 | 별도 저장소 `SODA-TELC` | telc B1·B2·C1 Hochschule 모의고사 | Modelltest 5·7·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면, B1·B2·C1 Hochschule에는 쓰기·말하기 시험 대비 가이드 |
 
-루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grammatik / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 Training 묶음에 들어 있어요. 그 아래에 「Lernmethoden」(독일어 공부법) 묶음이 있고, 그 아래에 전체 너비의 「SODA Modelltest」 묶음이 있고, Goethe A2, Goethe B1, Goethe B2, telc B1, telc B2, telc C1 Hochschule 모의고사 여섯 항목이 들어 있습니다. 그 아래에 전체 너비의 「말하기 실전 연습」 타일(`sprechen/`, 재학생 전용 로그인)이 하나 더 있습니다. 이 여섯 항목은 용량 한도(GitHub Pages 1 GB) 때문에 별도 저장소(`SODA-Goethe`, `SODA-TELC`)의 주소로 연결됩니다. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
+루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grammatik / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 Training 묶음에 들어 있어요. 그 아래에 「Lernmethoden」(독일어 공부법) 묶음이 있고, 그 아래에 전체 너비의 「SODA Modelltest」 묶음이 있고, Goethe A2, Goethe B1, Goethe B2, telc B1, telc B2, telc C1 Hochschule 모의고사 여섯 항목이 들어 있습니다. 그 아래에 전체 너비의 「말하기 실전 연습」 타일(`sprechen/`, 수강생 전용 로그인)이 하나 더 있습니다. 이 여섯 항목은 용량 한도(GitHub Pages 1 GB) 때문에 별도 저장소(`SODA-Goethe`, `SODA-TELC`)의 주소로 연결됩니다. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요.
 
 ## 웹 주소로 열기 (GitHub Pages)
 
