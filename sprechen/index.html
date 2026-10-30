@@ -261,7 +261,21 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 .members{margin:14px 0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--panel);font-size:14px;line-height:1.6;color:var(--ink-2);max-width:34em}
 .members b{color:var(--ink)}
 .cover .members{margin:22px auto 6px;text-align:left}
-.exam-card.target{outline:2px solid var(--accent, #6b8fd6);outline-offset:3px}
+
+.exam-card.pick{margin-bottom:14px}
+.exam-card.pick .mrow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px}
+.exam-card.pick .mrow+.mrow{border-top:1px solid var(--line-2)}
+.exam-card.pick .mi b{display:block;font-size:16px}
+.exam-card.pick .mi span{display:block;font-size:14px;color:var(--muted);margin-top:2px}
+.exam-card.pick .mrow button{min-width:84px}
+.detail-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.card.prep{padding:0}
+.card.prep>summary{cursor:pointer;list-style:none;padding:14px 18px;font-weight:700;font-size:16px}
+.card.prep>summary::-webkit-details-marker{display:none}
+.card.prep>summary::after{content:'펼치기';float:right;font-size:13px;font-weight:600;color:var(--muted)}
+.card.prep[open]>summary::after{content:'접기'}
+.card.prep>.check-list,.card.prep>.row{padding:0 18px 16px}
+@media (max-width:520px){.exam-card.pick .mrow{padding:12px 14px}.card.prep>summary{padding:12px 14px}.card.prep>.check-list,.card.prep>.row{padding:0 14px 14px}}
 
 </style>
 </head>
@@ -322,14 +336,18 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 
 <!-- ========== 목차 ========== -->
 <section id="v-toc" class="view" hidden>
-  <div class="card">
+  <div class="card" id="tocHead">
     <h1>목차</h1>
     <p class="muted" id="tocWho"></p>
     <div class="row"><button class="secondary" id="btnAdmin" type="button" hidden>사용 현황 (관리자)</button></div>
   </div>
+  <div class="card detail-head" id="detailHead" hidden>
+    <button class="ghost" id="btnBackList" type="button">← 시험 목록</button>
+    <div class="dh-eyebrow muted small" id="dhEyebrow"></div>
+  </div>
 
-  <div class="card">
-    <h2>시작 전 준비</h2>
+  <details class="card prep" id="prepCard">
+    <summary>시작 전 준비 · 마이크 확인</summary>
     <div class="check-list">
       <div>조용한 곳에서 이어폰을 쓰면 인식이 더 정확합니다.</div>
       <div>마이크 사용을 허용해 주십시오. 인터넷 연결이 필요합니다.</div>
@@ -341,7 +359,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
       <div class="meter" aria-hidden="true"><i id="meterBar"></i></div>
       <span class="muted small" id="micMsg"></span>
     </div>
-  </div>
+  </details>
 
   <div id="examCards"></div>
 
@@ -1861,7 +1879,7 @@ const Store = {
 const S = {
   user: null, pw: '', name: '', rec: null, cur: null, choice: {}, notes: {},
   A: null, session: null, V: { lastVoiceAt: 0, voicedMs: 0, voice: false }, abort: false, finishReq: false,
-  tick: null, prepTimer: null, lastStance: {}
+  tick: null, prepTimer: null, lastStance: {}, openEx: null
 };
 const exOf = id => EXAMS.find(e => e.id === id);
 const recOf = (ex, t) => S.rec.ex[ex.id][t];
@@ -1926,19 +1944,10 @@ function summaryOf(ex) {
   const done = ex.teile.filter(T => recOf(ex, T.n).attempts.some(a => a.turns.length));
   return done;
 }
-function renderToc() {
-  show('v-toc');
-  $('#btnLogout').hidden = false;
-  $('#btnAdmin').hidden = !S.user.admin;
-  const box = $('#examCards'); box.innerHTML = '';
-  $('#tocWho').textContent = S.user.id + ' 님 · 열려 있는 시험: ' + myExams().map(exTag).join(', ') + '. Teil별로 연습합니다.';
-  const list = myExams().slice(); const ti = list.findIndex(e => e.id === S.target); if (ti > 0) list.unshift(list.splice(ti, 1)[0]);
-  const noAccess = S.target && !EXAMS.some(e => e.id === S.target && myExams().includes(e)) ? EXAMS.find(e => e.id === S.target) : null;
-  if (noAccess) { const n = document.createElement('div'); n.className = 'card'; n.innerHTML = '<p><b>' + esc(noAccess.label) + '</b> 연습은 이 아이디로 아직 열려 있지 않습니다. 선생님께 문의해 주십시오.</p>'; box.appendChild(n); }
-  list.forEach((ex, ei) => {
-    const card = document.createElement('div'); card.className = 'card exam-card' + (ex.id === S.target ? ' target' : '');
+function examCard(ex) {
+    const card = document.createElement('div'); card.className = 'card exam-card';
     const lv = ex.level.toLowerCase();
-    let html = '<div class="eh"><div><div class="num">' + (ei + 1) + ' · MODELLTEST ' + ex.mdt + '</div><h2>' + esc(ex.name) + '</h2><p>' + esc(ex.lead_ko) + '</p></div><span class="lvl ' + lv + '"><i></i>' + esc(ex.level) + '</span></div>';
+    let html = '<div class="eh"><div><div class="num">MODELLTEST ' + ex.mdt + '</div><h2>' + esc(ex.name) + '</h2><p>' + esc(ex.lead_ko) + '</p></div><span class="lvl ' + lv + '"><i></i>' + esc(ex.level) + '</span></div>';
     html += ex.teile.map(T => '<div class="teil" data-t="' + T.n + '"></div>').join('');
     html += '<div class="ef"><span class="muted small" data-sum></span><button class="secondary" type="button" data-res>이 시험 결과 제출 파일 생성</button></div>';
     card.innerHTML = html;
@@ -1963,11 +1972,47 @@ function renderToc() {
     const done = summaryOf(ex);
     $('[data-sum]', card).textContent = done.length ? '연습한 Teil: ' + done.map(T => T.n + ' (' + (recOf(ex, T.n).evaluation ? '평가 완료' : '평가 전') + ')').join(', ') : '아직 연습한 Teil이 없습니다.';
     const rb = $('[data-res]', card); rb.disabled = !done.length; rb.onclick = () => makeResultFile([ex.id]);
+    return card;
+}
+function groupsOf(list) {
+  const groups = [];
+  list.forEach(e => { const k = e.org + '|' + e.level; let g = groups.find(x => x.k === k); if (!g) groups.push(g = { k, name: e.name, level: e.level, ko: e.ko, list: [] }); g.list.push(e); });
+  return groups;
+}
+/* 목차: 시험을 고르는 목록(시험 종류별 묶음, 안에 Modelltest 1·2). 시험을 고르면 그 시험의 Teil 화면만 보입니다. */
+function renderToc() {
+  show('v-toc');
+  $('#btnLogout').hidden = false;
+  const mine = myExams();
+  if (S.openEx && !mine.some(e => e.id === S.openEx)) S.openEx = null;
+  const open = S.openEx ? exOf(S.openEx) : null;
+  const box = $('#examCards'); box.innerHTML = '';
+  $('#tocHead').hidden = !!open; $('#detailHead').hidden = !open; $('#submitCard').hidden = !!open;
+  $('#btnAdmin').hidden = !S.user.admin;
+  if (open) {
+    $('#dhEyebrow').textContent = open.name + ' · Modelltest ' + open.mdt;
+    box.appendChild(examCard(open));
+    return;
+  }
+  $('#tocWho').textContent = S.user.id + ' 님, 연습할 시험을 고르십시오. Teil마다 최대 ' + maxA() + '회 연습합니다.';
+  const noAccess = S.target && !mine.some(e => e.id === S.target) ? EXAMS.find(e => e.id === S.target) : null;
+  if (noAccess) { const n = document.createElement('div'); n.className = 'card'; n.innerHTML = '<p><b>' + esc(noAccess.label) + '</b> 연습은 이 아이디로 아직 열려 있지 않습니다. 선생님께 문의해 주십시오.</p>'; box.appendChild(n); }
+  groupsOf(mine).forEach(g => {
+    const card = document.createElement('div'); card.className = 'card exam-card pick';
+    card.innerHTML = '<div class="eh"><div><h2>' + esc(g.name) + '</h2><p>' + esc(g.ko) + '</p></div><span class="lvl ' + g.level.toLowerCase() + '"><i></i>' + esc(g.level) + '</span></div>';
+    g.list.forEach(ex => {
+      const done = summaryOf(ex), evald = done.filter(T => recOf(ex, T.n).evaluation).length;
+      const row = document.createElement('div'); row.className = 'mrow';
+      row.innerHTML = '<div class="mi"><b>Modelltest ' + ex.mdt + '</b><span>' + (done.length ? '연습한 Teil ' + done.length + '/' + ex.teile.length + (evald ? ' · 평가 완료 ' + evald : '') : 'Teil ' + ex.teile.length + '개 · 아직 연습 전') + '</span></div>';
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'primary'; b.textContent = '열기'; b.setAttribute('aria-label', ex.name + ' Modelltest ' + ex.mdt + ' 열기');
+      b.onclick = () => { S.openEx = ex.id; renderToc(); };
+      row.appendChild(b); card.appendChild(row);
+    });
     box.appendChild(card);
   });
-  const anyEx = myExams().filter(ex => summaryOf(ex).length);
+  const anyEx = mine.filter(ex => summaryOf(ex).length);
   $('#btnResultAll').disabled = !anyEx.length;
-  $('#btnResultAll').hidden = myExams().length < 2; $('#submitNote').hidden = myExams().length < 2;
+  $('#btnResultAll').hidden = mine.length < 2; $('#submitNote').hidden = mine.length < 2;
   $('#submitInfo').textContent = anyEx.length ? '연습한 시험: ' + anyEx.map(exTag).join(', ') + '. 평가를 받은 Teil은 평가 결과가 파일에 들어갑니다.' : '연습을 한 Teil이 있으면 결과 파일을 만들 수 있습니다.';
 }
 
@@ -1993,6 +2038,7 @@ async function micCheck() {
 
 /* ------------------------------------------------------------------ 준비 */
 function startPrep(ex, tn) {
+  S.openEx = ex.id;
   const T = ex.teile[tn - 1], tm = T.timing;
   S.cur = { ex, t: tn };
   $('#prepEyebrow').textContent = ex.label + ' · ' + T.no;
@@ -2446,6 +2492,7 @@ function checksHtml(checks) {
   return checks.map(c => '<div class="chk"><div class="mk ' + c.status + '">' + (c.status === 'yes' ? '✓' : c.status === 'maybe' ? '△' : '✗') + '</div><div>' + esc(c.ko) + '<small>' + esc(c.note) + '</small></div></div>').join('');
 }
 function showAfter(ex, t, idx) {
+  S.openEx = ex.id;
   const r = recOf(ex, t), a = r.attempts[idx], m = a.metrics, T = ex.teile[t - 1], mono = T.kind === 'monolog';
   S.cur = { ex, t };
   $('#afEyebrow').textContent = ex.label + ' · ' + T.no + ' · ' + a.no + '번째 시도';
@@ -2460,7 +2507,7 @@ function showAfter(ex, t, idx) {
   const mk = (txt, cls, fn) => { const b = document.createElement('button'); b.type = 'button'; b.className = cls; b.textContent = txt; b.onclick = fn; row.appendChild(b); };
   if (left > 0) mk('한 번 더 연습(' + left + '회 남음)', 'primary', () => startPrep(ex, t));
   mk(r.evaluation ? '평가 결과 보기' : (left > 0 ? '지금 평가 받기' : '평가 받기'), left > 0 ? 'secondary' : 'primary', () => r.evaluation ? showEval(ex, t) : askEvaluate(ex, t));
-  mk('목차로', 'ghost', renderToc);
+  mk('Teil 목록으로', 'ghost', renderToc);
   $('#afChecks').innerHTML = checksHtml(m.checks);
   $('#afTranscript').innerHTML = transcriptHtml(a.turns, '나');
   show('v-after');
@@ -2529,7 +2576,7 @@ async function runEvaluation(ex, t) {
     $('#evStatus').textContent = '평가를 불러오지 못했습니다: ' + e.message + ' 자동 점검 결과는 그대로 쓸 수 있습니다.';
     const row = $('#evButtons');
     const b = document.createElement('button'); b.className = 'primary'; b.type = 'button'; b.textContent = '다시 시도'; b.onclick = () => runEvaluation(ex, t); row.appendChild(b);
-    const c = document.createElement('button'); c.className = 'ghost'; c.type = 'button'; c.textContent = '목차로'; c.onclick = renderToc; row.appendChild(c);
+    const c = document.createElement('button'); c.className = 'ghost'; c.type = 'button'; c.textContent = 'Teil 목록으로'; c.onclick = renderToc; row.appendChild(c);
     $('#evBody').innerHTML = '<div class="card">' + localSummaryHtml(r.attempts) + '</div>';
   }
 }
@@ -2560,6 +2607,7 @@ function evalHtml(T, e, attempts) {
     '<div class="card"><h2>자동 점검(전사 기반)</h2>' + localSummaryHtml(attempts) + '</div>';
 }
 function showEval(ex, t) {
+  S.openEx = ex.id;
   const r = recOf(ex, t), T = ex.teile[t - 1];
   S.cur = { ex, t };
   $('#evEyebrow').textContent = ex.label + ' · ' + T.no;
@@ -2567,7 +2615,7 @@ function showEval(ex, t) {
   $('#evStatus').textContent = '평가는 학생이 말한 내용의 자동 음성 인식 전사를 바탕으로 합니다. 발음과 억양은 선생님과 함께 확인합니다.';
   const row = $('#evButtons'); row.innerHTML = '';
   const b = document.createElement('button'); b.className = 'primary'; b.type = 'button'; b.textContent = '이 시험 결과 제출 파일 생성'; b.onclick = () => makeResultFile([ex.id]); row.appendChild(b);
-  const c = document.createElement('button'); c.className = 'ghost'; c.type = 'button'; c.textContent = '목차로'; c.onclick = renderToc; row.appendChild(c);
+  const c = document.createElement('button'); c.className = 'ghost'; c.type = 'button'; c.textContent = 'Teil 목록으로'; c.onclick = renderToc; row.appendChild(c);
   $('#evBody').innerHTML = evalHtml(T, r.evaluation, r.attempts);
   show('v-eval');
 }
@@ -2657,6 +2705,7 @@ async function onLogin(ev) {
     const u = await api('/login', { id: $('#inId').value, pw });
     S.pw = pw; S.user = u; S.name = u.id; S.rec = Store.load(u.id);
     $('#inPw').value = '';
+    S.openEx = myExams().some(e => e.id === S.target) ? S.target : null;
     renderToc();
   } catch (e) {
     err.textContent = e.message;
@@ -2665,16 +2714,17 @@ async function onLogin(ev) {
 function logout() {
   if (S.A) return;
   clearInterval(S.prepTimer);
-  S.user = null; S.pw = ''; S.rec = null; S.name = ''; S.cur = null;
+  S.user = null; S.pw = ''; S.rec = null; S.name = ''; S.cur = null; S.openEx = null;
   $('#inPw').value = '';
   show('v-login');
 }
 
-$('#btnBrand').onclick = () => { if (!$('#v-exam').hidden) return; clearInterval(S.prepTimer); show(S.user ? 'v-toc' : 'v-cover'); if (S.user) renderToc(); };
+$('#btnBrand').onclick = () => { if (!$('#v-exam').hidden) return; clearInterval(S.prepTimer); show(S.user ? 'v-toc' : 'v-cover'); if (S.user) { S.openEx = null; renderToc(); } };
 $('#btnGo').onclick = () => { S.user ? renderToc() : show('v-login'); };
 $('#loginForm').addEventListener('submit', onLogin);
 $('#btnLogout').onclick = logout;
-$('#btnToc').onclick = () => { clearInterval(S.prepTimer); renderToc(); };
+$('#btnToc').onclick = () => { clearInterval(S.prepTimer); S.openEx = null; renderToc(); };
+$('#btnBackList').onclick = () => { S.openEx = null; renderToc(); };
 $('#btnMic').onclick = micCheck;
 $('#btnPrepBack').onclick = () => { clearInterval(S.prepTimer); renderToc(); };
 $('#btnPrepTimer').onclick = prepTimer;
