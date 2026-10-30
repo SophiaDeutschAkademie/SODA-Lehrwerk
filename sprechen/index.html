@@ -332,6 +332,12 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 .card.prep>.check-list,.card.prep>.row{padding:0 18px 16px}
 @media (max-width:520px){.exam-card.pick .mrow{padding:12px 14px}.card.prep>summary{padding:12px 14px}.card.prep>.check-list,.card.prep>.row{padding:0 14px 14px}}
 
+.mailnote{margin:10px 0 0;font-size:13px;color:var(--muted)}
+.mailnote:empty{display:none}
+.mailnote.ok{color:var(--ok)}
+.mailnote.fail{color:var(--bad)}
+.mailnote button{margin-left:8px;padding:4px 10px;font-size:13px}
+
 </style>
 </head>
 <body>
@@ -358,7 +364,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     <div class="copy">
       <div class="brandline"><img class="mark" src="data:image/png;base64,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" alt=""><span class="org">Sophia Deutsch Akademie</span></div>
       <h1><span class="w1">SODA</span><em>Sprechen</em></h1>
-      <p class="sub">시험관과 파트너를 상대로 독일어 말하기 시험을 연습합니다. Teil마다 최대 2회 연습하고, 말한 내용을 분석한 평가와 결과 제출 파일을 받을 수 있습니다.</p>
+      <p class="sub">시험관과 파트너를 상대로 독일어 말하기 시험을 연습합니다. Teil마다 최대 2회 연습하고, 말한 내용을 분석한 평가를 받을 수 있고, 연습 기록과 평가 결과는 자동으로 선생님께 전송됩니다.</p>
       <ul class="exams" aria-label="연습할 수 있는 시험">
         <li><i class="a2"></i>Goethe A2</li>
         <li><i class="b1"></i>Goethe B1</li>
@@ -383,9 +389,9 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
   <ol class="steps">
     <li><span class="n">01</span><b>시험관이 진행합니다</b><p>실제 시험처럼 시험관이 안내하고, 누가 먼저 시작할지 묻고, 시간이 되면 마무리를 알립니다.</p></li>
     <li><span class="n">02</span><b>파트너 Mila와 대화합니다</b><p>시험 수준에 맞는 독일어로 말하고, 학생의 말에 반응하며 대화를 이어 갑니다. 과제에서 벗어나면 과제로 돌아옵니다.</p></li>
-    <li><span class="n">03</span><b>평가와 제출 파일</b><p>연습이 끝나면 전사를 분석하고 결과 제출 파일을 만듭니다.</p></li>
+    <li><span class="n">03</span><b>평가와 자동 전송</b><p>연습이 끝나면 전사를 분석해 평가하고, 연습 기록과 평가 결과를 선생님께 자동으로 전송합니다.</p></li>
   </ol>
-  <p class="fine">공식 시험 화면이 아닌 연습용입니다. 이어폰과 마이크, 인터넷 연결이 필요합니다.</p>
+  <p class="fine">공식 시험 화면이 아닌 연습용입니다. 이어폰과 마이크, 인터넷 연결이 필요합니다. 연습 기록(대화 전사 포함)과 평가 결과는 선생님께 전송됩니다.</p>
 </section>
 
 <!-- ========== 로그인 ========== -->
@@ -433,10 +439,10 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
   <div id="examCards"></div>
 
   <div class="card" id="submitCard">
-    <h2>결과 제출</h2>
-    <p class="muted" id="submitInfo">연습을 한 Teil이 있으면 결과 파일을 만들 수 있습니다.</p>
-    <button class="primary" id="btnResultAll" type="button" disabled>전체 결과 제출 파일 생성</button>
-    <p class="muted small" id="submitNote">시험별 파일은 각 시험 카드 아래 버튼으로 만듭니다. 만든 파일을 선생님께 보내 주십시오.</p>
+    <h2>결과 파일 저장</h2>
+    <p class="muted" id="submitInfo">연습을 한 Teil이 있으면 결과 파일을 저장할 수 있습니다.</p>
+    <button class="primary" id="btnResultAll" type="button" disabled>전체 결과 파일 저장</button>
+    <p class="muted small" id="submitNote">연습 기록과 평가 결과는 연습이 끝날 때마다 선생님께 자동으로 전송됩니다. 이 파일은 내 기기에 보관하고 싶을 때 저장하십시오.</p>
   </div>
 
   <p class="foot muted small">발음·억양은 자동으로 평가하지 않습니다. 점수는 SODA의 추정치이며 공식 채점이 아닙니다.</p>
@@ -482,6 +488,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 
   <div class="card">
     <div class="time-info" id="timeInfo"></div>
+    <p class="muted small">연습이 끝나면 대화 전사와 평가 결과가 선생님께 자동으로 전송됩니다.</p>
     <div class="row">
       <button class="primary" id="btnStart" type="button">시험 시작</button>
       <button class="ghost" id="btnPrepBack" type="button">돌아가기</button>
@@ -536,6 +543,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     <p id="afInfo" class="muted"></p>
     <div id="afMetrics"></div>
     <div class="row" id="afButtons"></div>
+    <p id="afMail" class="mailnote" role="status"></p>
   </div>
   <div class="card">
     <h2>자동 점검</h2>
@@ -564,6 +572,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     <h1 id="evTitle">평가</h1>
     <p id="evStatus" class="muted"></p>
     <div class="row" id="evButtons"></div>
+    <p id="evMail" class="mailnote" role="status"></p>
   </div>
   <div id="evBody"></div>
 </section>
@@ -1742,8 +1751,8 @@ const usedOf = (r, ex, t) => srvUsed(ex, t);
 const cred = () => ({ id: S.user.id, pw: S.pw });
 
 /* ------------------------------------------------------------------ 서버(Worker) */
-async function api(path, body) {
-  const ctl = new AbortController(), to = setTimeout(() => ctl.abort(), 20000);
+async function api(path, body, ms) {
+  const ctl = new AbortController(), to = setTimeout(() => ctl.abort(), ms || 20000);
   let res;
   try { res = await fetch(API_BASE + path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body), signal: ctl.signal }); }
   catch (e) { const er = new Error('서버에 연결할 수 없습니다. 인터넷 연결을 확인해 주십시오.'); er.code = 'network'; throw er; }
@@ -1937,6 +1946,14 @@ const Store = {
         t.attempts.push(rec); delete t.pending; changed = true;
       }
     }
+    if (!r.mailInit) {   // 자동 전송이 생기기 전의 기록은 다시 보내지 않습니다.
+      for (const ex of EXAMS) for (const T of ex.teile) {
+        const t = r.ex[ex.id][T.n];
+        t.attempts.forEach(a => { if (a.sent === undefined) a.sent = 'legacy'; });
+        if (t.evaluation && !t.evalSent) t.evalSent = 'legacy';
+      }
+      r.mailInit = true; changed = true;
+    }
     if (changed) this.save(r);
     return r;
   },
@@ -2020,7 +2037,7 @@ function examCard(ex) {
     const lv = ex.level.toLowerCase();
     let html = '<div class="eh"><div><div class="num">MODELLTEST ' + ex.mdt + '</div><h2>' + esc(ex.name) + '</h2><p>' + esc(ex.lead_ko) + '</p></div><span class="lvl ' + lv + '"><i></i>' + esc(ex.level) + '</span></div>';
     html += ex.teile.map(T => '<div class="teil" data-t="' + T.n + '"></div>').join('');
-    html += '<div class="ef"><span class="muted small" data-sum></span><button class="secondary" type="button" data-res>이 시험 결과 제출 파일 생성</button></div>';
+    html += '<div class="ef"><span class="muted small" data-sum></span><button class="secondary" type="button" data-res>이 시험 결과 파일 저장</button></div>';
     card.innerHTML = html;
     ex.teile.forEach(T => {
       const tm = T.timing;
@@ -2085,7 +2102,7 @@ function renderToc() {
   const anyEx = mine.filter(ex => summaryOf(ex).length);
   $('#btnResultAll').disabled = !anyEx.length;
   $('#btnResultAll').hidden = mine.length < 2; $('#submitNote').hidden = mine.length < 2;
-  $('#submitInfo').textContent = anyEx.length ? '연습한 시험: ' + anyEx.map(exTag).join(', ') + '. 평가를 받은 Teil은 평가 결과가 파일에 들어갑니다.' : '연습을 한 Teil이 있으면 결과 파일을 만들 수 있습니다.';
+  $('#submitInfo').textContent = anyEx.length ? '연습한 시험: ' + anyEx.map(exTag).join(', ') + '. 평가를 받은 Teil은 평가 결과가 파일에 들어갑니다. 연습 기록과 평가 결과는 선생님께 자동으로 전송됩니다.' : '연습을 한 Teil이 있으면 결과 파일을 저장할 수 있습니다.';
 }
 
 /* ------------------------------------------------------------------ 마이크 확인 */
@@ -2437,7 +2454,9 @@ function finalizeAttempt(reason) {
   const tr = recOf(ex, t); delete tr.pending; tr.attempts.push(rec);
   Store.save(S.rec);
   S.A = null;
-  showAfter(ex, t, recOf(ex, t).attempts.length - 1);
+  const idx = recOf(ex, t).attempts.length - 1;
+  showAfter(ex, t, idx);
+  submitReport(ex, t, 'attempt', idx, '#afMail');
 }
 
 /* ------------------------------------------------------------------ 분석(로컬) */
@@ -2583,6 +2602,10 @@ function showAfter(ex, t, idx) {
   mk('Teil 목록으로', 'ghost', renderToc);
   $('#afChecks').innerHTML = checksHtml(m.checks);
   $('#afTranscript').innerHTML = transcriptHtml(a.turns, '나');
+  const mm = $('#afMail'); mm.className = 'mailnote'; mm.textContent = '';
+  if (a.sent === 'legacy' || !hasSpeech(a)) { /* 보낼 기록이 아님 */ }
+  else if (a.sent) setMailStatus('#afMail', 'ok');
+  else if (!mailing.has(ex.id + '|' + t + '|attempt|' + a.no)) setMailStatus('#afMail', 'fail', '', () => submitReport(ex, t, 'attempt', idx, '#afMail'));
   show('v-after');
 }
 
@@ -2647,6 +2670,7 @@ async function runEvaluation(ex, t) {
     r.evaluatedAt = new Date().toISOString();
     Store.save(S.rec);
     showEval(ex, t);
+    submitReport(ex, t, 'eval', 0, '#evMail');
   } catch (e) {
     $('#evStatus').textContent = '평가를 불러오지 못했습니다: ' + e.message + ' 자동 점검 결과는 그대로 쓸 수 있습니다.';
     const row = $('#evButtons');
@@ -2689,25 +2713,31 @@ function showEval(ex, t) {
   $('#evTitle').textContent = '평가 결과';
   $('#evStatus').textContent = '평가는 학생이 말한 내용의 자동 음성 인식 전사를 바탕으로 합니다. 발음과 억양은 선생님과 함께 확인합니다.';
   const row = $('#evButtons'); row.innerHTML = '';
-  const b = document.createElement('button'); b.className = 'primary'; b.type = 'button'; b.textContent = '이 시험 결과 제출 파일 생성'; b.onclick = () => makeResultFile([ex.id]); row.appendChild(b);
+  const b = document.createElement('button'); b.className = 'primary'; b.type = 'button'; b.textContent = '이 시험 결과 파일 저장'; b.onclick = () => makeResultFile([ex.id]); row.appendChild(b);
   const c = document.createElement('button'); c.className = 'ghost'; c.type = 'button'; c.textContent = 'Teil 목록으로'; c.onclick = renderToc; row.appendChild(c);
   $('#evBody').innerHTML = evalHtml(T, r.evaluation, r.attempts);
+  const em = $('#evMail'); em.className = 'mailnote'; em.textContent = '';
+  if (r.evalSent === 'legacy') { /* 이전 기록 */ }
+  else if (evalDone(r)) setMailStatus('#evMail', 'ok');
+  else if (!mailing.has(ex.id + '|' + t + '|eval|' + r.evaluatedAt)) setMailStatus('#evMail', 'fail', '', () => submitReport(ex, t, 'eval', 0, '#evMail'));
   show('v-eval');
 }
 
 /* ------------------------------------------------------------------ 결과 파일 */
-function makeResultFile(examIds) {
+/* 결과 파일(HTML 한 장)을 만듭니다. only = { exam, teil }이면 그 Teil만 담습니다(자동 전송용). */
+function buildResult(examIds, only) {
   const rec = S.rec, now = new Date();
-  const exs = examIds.map(exOf).filter(ex => summaryOf(ex).length);
-  if (!exs.length) return;
+  const tl = ex => summaryOf(ex).filter(T => !only || T.n === only.teil);
+  const exs = examIds.map(exOf).filter(ex => tl(ex).length);
+  if (!exs.length) return null;
   const payload = {
     kind: 'soda-sprechen-result', version: 2, student: rec.name, created: now.toISOString(),
     exams: exs.map(ex => ({
       id: ex.id, label: ex.label,
-      teil: summaryOf(ex).map(T => ({ teil: T.n, evaluation: recOf(ex, T.n).evaluation, attempts: recOf(ex, T.n).attempts }))
+      teil: tl(ex).map(T => ({ teil: T.n, evaluation: recOf(ex, T.n).evaluation, attempts: recOf(ex, T.n).attempts }))
     }))
   };
-  const sect = exs.map(ex => '<section><h2>' + esc(ex.label) + '</h2>' + summaryOf(ex).map(T => {
+  const sect = exs.map(ex => '<section><h2>' + esc(ex.label) + '</h2>' + tl(ex).map(T => {
     const r = recOf(ex, T.n);
     return '<h3 class="teilh">' + esc(T.no + ' · ' + T.name + ' (' + T.ko + ')') + '</h3>' +
       (r.evaluation ? evalHtml(T, r.evaluation, r.attempts).replace(/<div class="card">/g, '<div class="box">') :
@@ -2722,11 +2752,110 @@ function makeResultFile(examIds) {
     '<h1>SODA Sprechen · 말하기 연습 결과</h1><p class="note">' + exs.map(e => esc(e.label)).join(' · ') + ' · 학생 ' + esc(rec.name) + ' · 작성 ' + now.toLocaleString('ko-KR') + '</p>' +
     '<p class="note">이 결과는 파트너 Mila와의 대화 전사를 자동 분석한 것입니다. 점수와 등급은 SODA의 추정치이며 공식 채점이 아닙니다. 발음·억양은 평가하지 않았습니다.</p>' +
     sect + '<script type="application/json" id="soda-result-data">' + JSON.stringify(payload).replace(/</g, '\\u003c') + '</scr' + 'ipt></div></body></html>';
-  const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
-  const tag = exs.length === 1 ? exs[0].short + ' MDT' + exs[0].mdt : '전체';
+  const tag = exs.length === 1 ? exs[0].short + ' MDT' + exs[0].mdt + (only ? ' Teil ' + only.teil : '') : '전체';
   const fname = ('SODA 말하기 결과 ' + tag + ' ' + rec.name + ' ' + now.toISOString().slice(0, 10) + '.html').replace(/[\\/:*?"<>|_]/g, ' ').replace(/\s+/g, ' ');
-  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = fname;
+  return { html, fname };
+}
+function makeResultFile(examIds) {
+  const f = buildResult(examIds);
+  if (!f) return;
+  const blob = new Blob([f.html], { type: 'text/html;charset=utf-8' });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = f.fname;
   document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
+}
+
+/* ------------------------------------------------------------------ 결과 자동 전송(선생님 메일) */
+/* 연습이 끝나면(연습 기록) 그리고 평가가 끝나면(평가 결과) 서버로 보내고, 서버가 선생님 메일로 발송합니다.
+   보낸 기록은 시도마다 a.sent, 평가마다 r.evalSent(= evaluatedAt)에 남겨 같은 것을 두 번 보내지 않습니다. */
+const evalDone = r => !!r.evalSent && (r.evalSent === 'legacy' || r.evalSent === r.evaluatedAt);
+const hasSpeech = a => a && a.turns && a.turns.some(x => x.role === 'student');
+const reportBlocks = turns => {
+  const bl = [];
+  for (const t of turns) {
+    const l = bl[bl.length - 1];
+    if (l && l.role === t.role && l.phase === t.phase) l.text += ' ' + t.text; else bl.push({ role: t.role, phase: t.phase, text: t.text });
+  }
+  return bl.map(b => ({ who: b.role === 'student' ? '학생' : WHO_KO[b.role], text: b.text }));
+};
+function attemptSummary(ex, T, a) {
+  const m = a.metrics;
+  return {
+    no: a.no, durationSec: a.durationSec, reason: REASON[a.endReason] || '', words: m.studentWords, share: T.kind === 'monolog' ? null : m.share,
+    longest: m.longestTurn, phrases: m.phraseKinds, fillers: m.fillers, partner: T.kind === 'monolog' ? '' : a.partnerName, topic: a.studentTopic || '',
+    checks: m.checks.map(c => ({ ko: c.ko, status: c.status, note: c.note })), transcript: reportBlocks(a.turns)
+  };
+}
+function evaluationSummary(T, e) {
+  const rb = T.rubric, sc = Array.isArray(e.scores) ? e.scores : Object.keys(e.scores || {}).map(k => Object.assign({ key: k }, e.scores[k]));
+  let pts = 0, max = 0;
+  const grades = rb.criteria.filter(c => c.assess).map(c => {
+    const s = sc.find(x => x.key === c.key) || {};
+    if (rb.points && s.points != null) { pts += +s.points; max += c.max || 0; }
+    return { name: c.de + ' (' + c.ko + ')', grade: s.grade || '', points: s.points, max: rb.points ? c.max : 0, reason: s.reason_ko || '' };
+  });
+  return {
+    overall: e.overall_ko || '', grades, points: pts, pointsMax: max, strengths: e.strengths_ko || [],
+    errors: (e.errors || []).map(x => ({ o: x.original_de, c: x.corrected_de, why: (x.type_ko ? x.type_ko + ' · ' : '') + (x.why_ko || '') })),
+    next: e.next_steps_ko || [], comparison: e.comparison_ko || ''
+  };
+}
+const MAIL_TEXT = {
+  busy: '결과를 선생님께 전송하고 있습니다.',
+  ok: '결과가 선생님께 전송되었습니다.',
+  fail: '결과를 선생님께 전송하지 못했습니다. '
+};
+function setMailStatus(sel, state, detail, retry) {
+  const el = $(sel); if (!el) return;
+  el.className = 'mailnote ' + state;
+  el.textContent = '';
+  if (state === 'busy') { const s = document.createElement('span'); s.className = 'spin'; el.appendChild(s); }
+  el.appendChild(document.createTextNode(MAIL_TEXT[state] + (state === 'fail' ? (detail || '') + ' ' : '')));
+  if (state === 'fail' && retry) { const b = document.createElement('button'); b.type = 'button'; b.className = 'ghost small'; b.textContent = '다시 보내기'; b.onclick = retry; el.appendChild(b); }
+}
+const mailing = new Set();
+/* kind: 'attempt'(idx번째 시도의 기록) | 'eval'(그 Teil의 평가). sel: 상태를 보여 줄 요소. quiet: 상태를 보여 주지 않음 */
+async function submitReport(ex, t, kind, idx, sel, quiet) {
+  const r = recOf(ex, t), T = ex.teile[t - 1];
+  let atts, ev = null;
+  if (kind === 'attempt') {
+    const a = r.attempts[idx];
+    if (!hasSpeech(a) || a.sent) return true;
+    atts = [a];
+  } else {
+    if (!r.evaluation || evalDone(r)) return true;
+    atts = r.attempts.filter(hasSpeech).slice(-2);
+    ev = evaluationSummary(T, r.evaluation);
+  }
+  const key = ex.id + '|' + t + '|' + kind + '|' + (kind === 'attempt' ? atts[0].no : r.evaluatedAt);
+  if (mailing.has(key)) return false;
+  mailing.add(key);
+  const retry = () => submitReport(ex, t, kind, idx, sel, quiet);
+  if (!quiet && sel) setMailStatus(sel, 'busy');
+  try {
+    const f = buildResult([ex.id], { exam: ex.id, teil: t });
+    await api('/report', {
+      ...cred(), kind, exam: ex.id, teil: t, exam_label: exTag(ex), teil_label: T.no + ' · ' + T.ko,
+      summary: { attempts: atts.map(a => attemptSummary(ex, T, a)), evaluation: ev },
+      file: f ? { name: f.fname, html: f.html } : null
+    }, 60000);
+    if (kind === 'attempt') atts[0].sent = new Date().toISOString(); else r.evalSent = r.evaluatedAt;
+    Store.save(S.rec);
+    if (!quiet && sel) setMailStatus(sel, 'ok');
+    return true;
+  } catch (e) {
+    if (!quiet && sel) setMailStatus(sel, 'fail', e.message, retry);
+    return false;
+  } finally { mailing.delete(key); }
+}
+/* 로그인 직후: 전송에 실패해 남은 기록이 있으면 조용히 다시 보냅니다(한 번에 최대 4건). */
+async function flushUnsent() {
+  const todo = [];
+  for (const ex of myExams()) for (const T of ex.teile) {
+    const r = recOf(ex, T.n);
+    r.attempts.forEach((a, i) => { if (hasSpeech(a) && !a.sent) todo.push([ex, T.n, 'attempt', i]); });
+    if (r.evaluation && !evalDone(r)) todo.push([ex, T.n, 'eval', 0]);
+  }
+  for (const x of todo.slice(0, 4)) { if (!S.user) return; if (!(await submitReport(x[0], x[1], x[2], x[3], null, true))) break; }
 }
 
 /* ------------------------------------------------------------------ 연결 */
@@ -2782,6 +2911,7 @@ async function onLogin(ev) {
     $('#inPw').value = '';
     S.openEx = myExams().some(e => e.id === S.target) ? S.target : null;
     renderToc();
+    flushUnsent();
   } catch (e) {
     err.textContent = e.message;
   } finally { btn.disabled = false; btn.textContent = '로그인'; }
