@@ -1734,6 +1734,8 @@ const fmt = s => { s = Math.max(0, Math.round(s)); return Math.floor(s / 60) + '
 const pick = arr => arr[Math.floor(Math.random() * arr.length)];
 const API_BASE = 'https://sprechen.windschlaf.workers.dev';
 const maxA = () => (S.user ? S.user.max : 2);
+/* max가 999 이상인 계정(관리자)은 횟수 제한이 없는 계정으로 다룹니다: 평가를 받아도 Teil을 잠그지 않고 남은 횟수를 표시하지 않습니다. */
+const unlimited = () => maxA() >= 999;
 /* 사용 횟수는 서버 기록(S.user.used)이 기준입니다. 이 브라우저의 기록은 내용(전사·평가) 보관용입니다. */
 const srvUsed = (ex, t) => (S.user && S.user.used && S.user.used[ex.id + '|' + t]) || 0;
 const usedOf = (r, ex, t) => srvUsed(ex, t);
@@ -2023,7 +2025,7 @@ function examCard(ex) {
     ex.teile.forEach(T => {
       const tm = T.timing;
       const r = recOf(ex, T.n);
-      const used = usedOf(r, ex, T.n), left = r.locked ? 0 : Math.max(0, maxA() - used);
+      const used = usedOf(r, ex, T.n), left = unlimited() ? Infinity : r.locked ? 0 : Math.max(0, maxA() - used);
       const div = $('.teil[data-t="' + T.n + '"]', card);
       div.innerHTML = '<div class="head"><div class="name"><b>' + esc(T.no) + ' · ' + esc(T.ko) + '</b><span>' + esc(T.name) + '</span></div>' +
         '<div class="dots" title="사용한 시도">' + (maxA() <= 3 ? Array.from({ length: maxA() }, (_, i) => '<i class="' + (i < used ? 'used' : '') + '"></i>').join('') + ' ' + used + '/' + maxA() : used + '회') + '</div></div>' +
@@ -2032,9 +2034,10 @@ function examCard(ex) {
         (r.evaluation ? '<div><span class="tag ok">평가 완료</span></div>' : '') + '<div class="row"></div>';
       const row = $('.row', div);
       const mk = (txt, cls, fn, dis) => { const b = document.createElement('button'); b.className = cls; b.type = 'button'; b.textContent = txt; b.onclick = fn; b.disabled = !!dis; row.appendChild(b); };
-      mk(left > 0 ? (used ? '다시 연습(' + left + '회 남음)' : '연습 시작') : '연습 횟수를 모두 썼습니다', 'primary', () => startPrep(ex, T.n), left === 0);
+      mk(left > 0 ? (used ? '다시 연습' + (unlimited() ? '' : '(' + left + '회 남음)') : '연습 시작') : '연습 횟수를 모두 썼습니다', 'primary', () => startPrep(ex, T.n), left === 0);
       if (r.attempts.length > 0) {
         mk(r.evaluation ? '평가 결과 보기' : '평가 받기', 'secondary', () => r.evaluation ? showEval(ex, T.n) : askEvaluate(ex, T.n));
+        if (unlimited() && r.evaluation) mk('다시 평가 받기', 'secondary', () => askEvaluate(ex, T.n));
         mk('기록 보기', 'ghost', () => showAfter(ex, T.n, r.attempts.length - 1));
       }
     });
@@ -2063,7 +2066,7 @@ function renderToc() {
     box.appendChild(examCard(open));
     return;
   }
-  $('#tocWho').textContent = S.user.id + ' 님, 연습할 시험을 고르십시오. Teil마다 최대 ' + maxA() + '회 연습합니다.';
+  $('#tocWho').textContent = S.user.id + ' 님, 연습할 시험을 고르십시오. ' + (unlimited() ? '이 계정은 연습 횟수 제한이 없습니다.' : 'Teil마다 최대 ' + maxA() + '회 연습합니다.');
   const noAccess = S.target && !mine.some(e => e.id === S.target) ? EXAMS.find(e => e.id === S.target) : null;
   if (noAccess) { const n = document.createElement('div'); n.className = 'card'; n.innerHTML = '<p><b>' + esc(noAccess.label) + '</b> 연습은 이 아이디로 아직 열려 있지 않습니다. 선생님께 문의해 주십시오.</p>'; box.appendChild(n); }
   groupsOf(mine).forEach(g => {
@@ -2331,7 +2334,7 @@ async function startExam() {
   // 횟수는 시작하는 순간 저장합니다. 최신 저장값을 다시 읽어 두 창에서 동시에 시작하는 것도 막습니다.
   if (!Store.ok()) { $('#startErr').textContent = '이 브라우저는 연습 기록을 저장할 수 없어 시작할 수 없습니다. 사생활 보호 모드를 끄고 다시 시도해 주십시오.'; return; }
   let fresh = Store.read(S.user.id), fr = fresh.ex[ex.id][t];
-  if (fr.locked || usedOf(fr, ex, t) >= maxA()) { S.rec = Store.load(S.user.id); renderToc(); alert('이 Teil의 연습 횟수를 모두 사용했습니다.'); return; }
+  if ((fr.locked && !unlimited()) || usedOf(fr, ex, t) >= maxA()) { S.rec = Store.load(S.user.id); renderToc(); alert('이 Teil의 연습 횟수를 모두 사용했습니다.'); return; }
   // 서버에 시작을 알리고 횟수를 차감합니다. 서버의 기록이 기준입니다.
   let rs;
   try { rs = await api('/start', { ...cred(), exam: ex.id, teil: t }); }
@@ -2571,11 +2574,12 @@ function showAfter(ex, t, idx) {
   if (mono) { if (T.followup) tiles.push([m.followWords, '추가 질문 답변(단어)']); } else tiles.push([m.share + '%', '내 발화 비율']);
   tiles.push([m.longestTurn, '가장 긴 발화(단어)'], [m.phraseKinds, '쓴 고정 표현 종류'], [m.fillers, '머뭇거림(ähm 등)']);
   $('#afMetrics').innerHTML = '<div class="metrics">' + tiles.map(x => '<div class="metric"><b>' + x[0] + '</b><span>' + x[1] + '</span></div>').join('') + '</div>';
-  const used = usedOf(r, ex, t), left = r.locked ? 0 : Math.max(0, maxA() - used);
+  const used = usedOf(r, ex, t), left = unlimited() ? Infinity : r.locked ? 0 : Math.max(0, maxA() - used);
   const row = $('#afButtons'); row.innerHTML = '';
   const mk = (txt, cls, fn) => { const b = document.createElement('button'); b.type = 'button'; b.className = cls; b.textContent = txt; b.onclick = fn; row.appendChild(b); };
-  if (left > 0) mk('한 번 더 연습(' + left + '회 남음)', 'primary', () => startPrep(ex, t));
+  if (left > 0) mk('한 번 더 연습' + (unlimited() ? '' : '(' + left + '회 남음)'), 'primary', () => startPrep(ex, t));
   mk(r.evaluation ? '평가 결과 보기' : (left > 0 ? '지금 평가 받기' : '평가 받기'), left > 0 ? 'secondary' : 'primary', () => r.evaluation ? showEval(ex, t) : askEvaluate(ex, t));
+  if (unlimited() && r.evaluation) mk('다시 평가 받기', 'secondary', () => askEvaluate(ex, t));
   mk('Teil 목록으로', 'ghost', renderToc);
   $('#afChecks').innerHTML = checksHtml(m.checks);
   $('#afTranscript').innerHTML = transcriptHtml(a.turns, '나');
@@ -2586,8 +2590,10 @@ function showAfter(ex, t, idx) {
 function askEvaluate(ex, t) {
   const r = recOf(ex, t), left = Math.max(0, maxA() - usedOf(r, ex, t));
   if (!r.attempts.some(a => a.turns.some(x => x.role === 'student'))) { alert('평가할 발화 기록이 없습니다. 이 Teil은 시험 도중 중단되어 기록이 남지 않았습니다.'); return; }
-  if (!r.locked && left > 0 && !confirm('지금 평가를 받으면 이 Teil의 남은 연습 ' + left + '회를 쓸 수 없습니다. 평가를 받을까요?')) return;
-  r.locked = true; Store.save(S.rec);
+  if (!unlimited()) {
+    if (!r.locked && left > 0 && !confirm('지금 평가를 받으면 이 Teil의 남은 연습 ' + left + '회를 쓸 수 없습니다. 평가를 받을까요?')) return;
+    r.locked = true; Store.save(S.rec);
+  }
   runEvaluation(ex, t);
 }
 function evalPayload(ex, t) {
@@ -2598,7 +2604,7 @@ function evalPayload(ex, t) {
     task: taskTextDe(ex, T, null) + (lastChoice && lastChoice.studentTopic ? '\n\nGewählt von A: ' + lastChoice.studentTopic : ''),
     check_items: T.checks.map(c => c.ko),
     rubric: { grades: rb.grades, points: rb.points, criteria: rb.criteria.map(c => ({ key: c.key, de: c.de, ko: c.ko, assess: c.assess, desc_ko: c.desc_ko })), notes: rb.notes.concat(T.evalNotes || []) },
-    attempts: r.attempts.filter(a => a.turns.some(x => x.role === 'student')).map(a => ({
+    attempts: r.attempts.filter(a => a.turns.some(x => x.role === 'student')).slice(-2).map(a => ({
       no: a.no, partner_type: a.partnerName, duration_sec: a.durationSec, starter: a.starter,
       turns: a.turns.map(x => ({ role: x.role, text: x.text })),
       local_metrics: { student_words: a.metrics.studentWords, longest_turn_words: a.metrics.longestTurn, subordinate_clauses: a.metrics.subordinate, konjunktiv2: a.metrics.konj2, connectors: a.metrics.connectors, fillers: a.metrics.fillers }
@@ -2742,10 +2748,10 @@ function renderAdmin(d) {
   d.accounts.forEach(a => {
     const card = document.createElement('div'); card.className = 'card adm';
     const exs = EXAMS.filter(e => a.levels.includes(e.access || e.level));
-    let html = '<div class="adm-h"><div><b>' + esc(a.name) + '</b>' + (a.admin ? ' <span class="tag">관리자</span>' : '') + '<div class="muted small">열린 시험 키: ' + esc(a.levels.join(', ')) + ' · Teil당 ' + a.max + '회</div></div>' +
+    let html = '<div class="adm-h"><div><b>' + esc(a.name) + '</b>' + (a.admin ? ' <span class="tag">관리자</span>' : '') + '<div class="muted small">열린 시험 키: ' + esc(a.levels.join(', ')) + ' · ' + (a.max >= 999 ? '횟수 제한 없음' : 'Teil당 ' + a.max + '회') + '</div></div>' +
       '<button class="ghost" type="button" data-all>전체 초기화</button></div>';
     exs.forEach(e => {
-      const cells = e.teile.map(T => { const u = (a.usage[e.id + '|' + T.n] || {}).n || 0; return 'T' + T.n + ' ' + u + (a.admin ? '' : '/' + a.max); }).join(' · ');
+      const cells = e.teile.map(T => { const u = (a.usage[e.id + '|' + T.n] || {}).n || 0; return 'T' + T.n + ' ' + u + (a.admin || a.max >= 999 ? '' : '/' + a.max); }).join(' · ');
       html += '<div class="adm-line"><span><b>' + esc(exTag(e)) + '</b> ' + esc(cells) + '</span><button class="ghost" type="button" data-ex="' + esc(e.id) + '">초기화</button></div>';
     });
     card.innerHTML = html;
