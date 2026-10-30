@@ -547,7 +547,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
   <div class="card">
     <div class="time-info" id="timeInfo"></div>
     <p class="muted small" id="prepLimit"></p>
-    <p class="muted small">연습이 끝나면 대화 전사와 평가 결과가 선생님께 자동으로 전송됩니다.</p>
+    <p class="muted small" id="prepSendNote">연습이 끝나면 대화 전사와 평가 결과가 선생님께 자동으로 전송됩니다.</p>
     <div class="row">
       <button class="primary" id="btnStart" type="button">시험 시작</button>
       <button class="ghost" id="btnPrepBack" type="button">돌아가기</button>
@@ -3867,7 +3867,9 @@ function renderToc() {
   const anyEx = mine.filter(ex => summaryOf(ex).length);
   $('#btnResultAll').disabled = !anyEx.length;
   $('#btnResultAll').hidden = mine.length < 2; $('#submitNote').hidden = mine.length < 2;
-  $('#submitInfo').textContent = anyEx.length ? '연습한 시험: ' + anyEx.map(exTag).join(', ') + '. 평가를 받은 Teil은 평가 결과가 파일에 들어갑니다. 연습 기록과 평가 결과는 선생님께 자동으로 전송됩니다.' : '연습을 한 Teil이 있으면 결과 파일을 저장할 수 있습니다.';
+  const uebOnly = mine.length && mine.every(e => e.hidden);
+  if (uebOnly) { $('#submitInfo').textContent = anyEx.length ? '연습 기록과 평가 결과는 챕터의 「제출하기」를 누를 때 다른 과제와 함께 선생님께 제출됩니다.' : '연습을 한 뒤 챕터로 돌아가 「제출하기」를 누르면 기록이 함께 제출됩니다.'; $('#submitNote').hidden = true; }
+  else $('#submitInfo').textContent = anyEx.length ? '연습한 시험: ' + anyEx.map(exTag).join(', ') + '. 평가를 받은 Teil은 평가 결과가 파일에 들어갑니다. 연습 기록과 평가 결과는 선생님께 자동으로 전송됩니다.' : '연습을 한 Teil이 있으면 결과 파일을 저장할 수 있습니다.';
 }
 
 /* ------------------------------------------------------------------ 마이크 확인 */
@@ -3954,6 +3956,7 @@ function startPrep(ex, tn) {
   }
   $('#prepTask').innerHTML = sheetHtml(ex, T, T.choice ? S.choice[k] : null);
   mountPrefs();
+  $('#prepSendNote').textContent = ex.hidden ? '연습이 끝나면 대화 전사와 평가 결과가 이 기기에 저장되고, 챕터의 「제출하기」를 누를 때 다른 과제와 함께 제출됩니다.' : '연습이 끝나면 대화 전사와 평가 결과가 선생님께 자동으로 전송됩니다.';
   $('#prepLimit').textContent = unlimited() ? '' : '이 Teil은 ' + (usedOf(recOf(ex, tn), ex, tn) + 1) + '번째 연습입니다. Teil마다 최대 ' + maxA() + '회 연습할 수 있고, 추가 연습이 필요하면 선생님께 말씀해 주십시오.';
   $('#micMsg2').textContent = '';
   $('#notes').value = S.notes[k] || '';
@@ -4412,7 +4415,8 @@ function showAfter(ex, t, idx) {
   $('#afChecks').innerHTML = checksHtml(m.checks);
   $('#afTranscript').innerHTML = transcriptHtml(a.turns, '나');
   const mm = $('#afMail'); mm.className = 'mailnote'; mm.textContent = '';
-  if (a.sent === 'legacy' || !hasSpeech(a)) { /* 보낼 기록이 아님 */ }
+  if (ex.hidden) { if (hasSpeech(a)) { saveUeb(ex); setUebNote('#afMail'); } }
+  else if (a.sent === 'legacy' || !hasSpeech(a)) { /* 보낼 기록이 아님 */ }
   else if (a.sent) setMailStatus('#afMail', 'ok');
   else if (!mailing.has(ex.id + '|' + t + '|attempt|' + a.no)) setMailStatus('#afMail', 'fail', '', () => submitReport(ex, t, 'attempt', idx, '#afMail'));
   show('v-after');
@@ -4526,7 +4530,8 @@ function showEval(ex, t) {
   const c = document.createElement('button'); c.className = 'ghost'; c.type = 'button'; c.textContent = 'Teil 목록으로'; c.onclick = renderToc; row.appendChild(c);
   $('#evBody').innerHTML = evalHtml(T, r.evaluation, r.attempts);
   const em = $('#evMail'); em.className = 'mailnote'; em.textContent = '';
-  if (r.evalSent === 'legacy') { /* 이전 기록 */ }
+  if (ex.hidden) { saveUeb(ex); setUebNote('#evMail'); }
+  else if (r.evalSent === 'legacy') { /* 이전 기록 */ }
   else if (evalDone(r)) setMailStatus('#evMail', 'ok');
   else if (!mailing.has(ex.id + '|' + t + '|eval|' + r.evaluatedAt)) setMailStatus('#evMail', 'fail', '', () => submitReport(ex, t, 'eval', 0, '#evMail'));
   show('v-eval');
@@ -4608,6 +4613,47 @@ function evaluationSummary(T, e) {
     next: e.next_steps_ko || [], comparison: e.comparison_ko || ''
   };
 }
+/* ------------------------------------------------------------------ 챕터 Übung: 챕터 제출용 기록 */
+/* 챕터 Übung(hidden)은 선생님께 따로 보내지 않습니다. 연습 기록과 평가 결과를 같은 주소(github.io)의 localStorage에 글로 저장해 두면,
+   SODA-A2·SODA-B1 챕터가 "제출하기"를 누를 때 이 글을 답안과 함께 보냅니다. */
+const UEB_KEY = id => 'soda-sprechen:ueb:' + id;
+function uebText(ex) {
+  const T = ex.teile[0], r = recOf(ex, T.n), L = [];
+  const atts = r.attempts.filter(hasSpeech);
+  L.push('연습 시험: ' + (ex.name || ex.label) + ' (' + ex.id + ')');
+  L.push('연습 횟수: ' + atts.length + '회' + (r.evaluation ? ' · 평가 받음' : ' · 평가 받지 않음'));
+  atts.forEach(a => {
+    const m = attemptSummary(ex, T, a);
+    L.push('', '[' + a.no + '번째 연습] ' + new Date(a.startedAt).toLocaleString('ko-KR') + ' · ' + fmt(a.durationSec) + (m.reason ? ' · ' + m.reason : ''));
+    L.push('학생 발화 ' + m.words + '단어 · 학생 발화 비율 ' + (m.share == null ? '-' : m.share + '%') + ' · 가장 긴 발화 ' + m.longest + '단어');
+    if (m.topic) L.push('고른 주제·카드: ' + m.topic);
+    m.checks.forEach(c => L.push('  - ' + c.ko + ': ' + ({ yes: '충족', maybe: '일부', no: '미충족' }[c.status] || c.status) + (c.note ? ' (' + c.note + ')' : '')));
+    L.push('대화 전사:');
+    m.transcript.forEach(b => L.push('  ' + b.who + ': ' + b.text));
+  });
+  if (r.evaluation) {
+    const e = evaluationSummary(T, r.evaluation);
+    L.push('', '[평가 결과]');
+    if (e.overall) L.push(e.overall);
+    e.grades.forEach(g => L.push('  - ' + g.name + ': ' + (g.grade || '') + (g.points != null && g.max ? ' ' + g.points + '/' + g.max : '') + (g.reason ? ' · ' + g.reason : '')));
+    if (e.strengths.length) { L.push('잘한 점:'); e.strengths.forEach(x => L.push('  - ' + x)); }
+    if (e.errors.length) { L.push('고칠 표현:'); e.errors.forEach(x => L.push('  - ' + x.o + ' → ' + x.c + (x.why ? ' (' + x.why + ')' : ''))); }
+    if (e.next.length) { L.push('다음 연습:'); e.next.forEach(x => L.push('  - ' + x)); }
+  }
+  return L.join('\n');
+}
+function saveUeb(ex) {
+  const T = ex.teile[0], r = recOf(ex, T.n), n = r.attempts.filter(hasSpeech).length;
+  if (!n) return;
+  try {
+    localStorage.setItem(UEB_KEY(ex.id), JSON.stringify({ v: 1, user: S.rec.name, exam: ex.id, label: ex.name || ex.label, attempts: n, evaluated: !!r.evaluation, updated: new Date().toISOString(), text: uebText(ex) }));
+  } catch (e) { }
+}
+function setUebNote(sel) {
+  const el = $(sel); if (!el) return;
+  el.className = 'mailnote ok'; el.textContent = '이 연습 기록은 챕터의 「제출하기」를 누를 때 다른 과제와 함께 선생님께 제출됩니다.';
+}
+
 const MAIL_TEXT = {
   busy: '결과를 선생님께 전송하고 있습니다.',
   ok: '결과가 선생님께 전송되었습니다.',
@@ -4625,6 +4671,7 @@ const mailing = new Set();
 /* kind: 'attempt'(idx번째 시도의 기록) | 'eval'(그 Teil의 평가). sel: 상태를 보여 줄 요소. quiet: 상태를 보여 주지 않음 */
 async function submitReport(ex, t, kind, idx, sel, quiet) {
   const r = recOf(ex, t), T = ex.teile[t - 1];
+  if (ex.hidden) { saveUeb(ex); if (!quiet && sel) setUebNote(sel); return true; }
   let atts, ev = null;
   if (kind === 'attempt') {
     const a = r.attempts[idx];
