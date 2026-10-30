@@ -360,11 +360,11 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
       <h1><span class="w1">SODA</span><em>Sprechen</em></h1>
       <p class="sub">시험관과 파트너를 상대로 독일어 말하기 시험을 연습합니다. Teil마다 최대 2회 연습하고, 말한 내용을 분석한 평가와 결과 제출 파일을 받을 수 있습니다.</p>
       <ul class="exams" aria-label="연습할 수 있는 시험">
-        <li><i class="b2"></i>telc B2</li>
         <li><i class="a2"></i>Goethe A2</li>
         <li><i class="b1"></i>Goethe B1</li>
         <li><i class="b1"></i>telc B1</li>
         <li><i class="b2"></i>Goethe B2</li>
+        <li><i class="b2"></i>telc B2</li>
       </ul>
       <div class="cta">
         <button class="primary go" id="btnGo" type="button">시작하기<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
@@ -1712,8 +1712,8 @@ const EXAMS = [
 
   EXAMS.push(tb1(1, TB1_M1), tb1(2, TB1_M2), gb2(1, GB2_M1), gb2(2, GB2_M2));
 
-  /* 표시 순서: telc B2 → Goethe A2 → Goethe B1 → telc B1 → Goethe B2, 각 시험 안에서 Modelltest 1 → 2 */
-  const ORDER = { 'telc-b2': 0, 'goethe-a2': 1, 'goethe-b1': 2, 'telc-b1': 3, 'goethe-b2': 4 };
+  /* 표시 순서: 레벨이 낮은 순서(A2 → B1 → B2), 같은 레벨에서는 Goethe → telc, 각 시험 안에서 Modelltest 1 → 2 */
+  const ORDER = { 'goethe-a2': 0, 'goethe-b1': 1, 'telc-b1': 2, 'goethe-b2': 3, 'telc-b2': 4 };
   const fam = e => e.id.replace(/-\d+$/, '');
   EXAMS.sort((a, b) => ORDER[fam(a)] - ORDER[fam(b)] || a.mdt - b.mdt);
 })();
