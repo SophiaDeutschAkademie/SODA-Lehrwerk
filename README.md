@@ -17,6 +17,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `redemittel/` | SODA Alltagsredemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
 | `kuerze-wuerze/` | In der Kürze liegt die Würze | 독일 일상을 위한 MSG, 짧은 표현 플래시카드, A2–C1, 256장과 헷갈리는 짝 |
 | `lernmethoden/` | SODA Lernmethoden | 독일어 공부법, 어휘·문법·읽기·듣기·말하기·쓰기·특별 주제 글 23편 |
+| `sprechen/` | SODA Sprechen | 말하기 실전 연습(시험관·파트너와 Teil별 연습, 평가, 결과 파일). 소피아 독일어학원 재학생 전용이라 아이디와 비밀번호로 로그인해야 하고, 목차 타일 없이 Goethe A2·B1·B2, telc B1·B2 Modelltest 1·2의 「말하기 실전 연습」 줄에서 열립니다 |
 | 별도 저장소 `SODA-Goethe` | Goethe A2·B1·B2 모의고사 | Modelltest 5·10·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면, A2·B1·B2·C1 Hochschule에는 쓰기·말하기 시험 대비 가이드 |
 | 별도 저장소 `SODA-TELC` | telc B1·B2·C1 Hochschule 모의고사 | Modelltest 5·7·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면, B1·B2·C1 Hochschule에는 쓰기·말하기 시험 대비 가이드 |
 
@@ -44,6 +45,7 @@ vokalab/          VOKALAB 단어장 (A1–C1, 단일 HTML)
 praepositionen/   이 저장소(SODA-PRP)에 있던 전치사 앱
 verben-mit-praepositionen/   SODA-VP 저장소의 내용
 nomen-verb-verbindungen/     SODA-NVV 저장소의 내용
+sprechen/                    말하기 실전 연습(단일 HTML). 서버(Cloudflare Worker)가 로그인, 연습 횟수, 음성 연결을 맡습니다. 주소 끝의 #goethe-b1-2 같은 시험 id로 시험을 지정해 엽니다
 redemittel/                  회화 패턴과 상황별 반응 표현 플래시카드(단일 HTML)
 kuerze-wuerze/               독일 일상을 위한 MSG, 짧은 표현 플래시카드(단일 HTML)
 lernmethoden/                독일어 공부법 글 23편(단일 HTML, 원고와 빌드 스크립트 포함)
