@@ -2165,6 +2165,166 @@ const EXAMS = [
   );
 })();
 
+/* 시험 데이터 확장: Goethe B1 · Modelltest 3, 4, 5
+   - 과제지 원문(Teil 1 상황·요점, Teil 2 주제와 Folie 지시문, Teil 3 지시문)은 SODA-Goethe 저장소의 Goethe B1 Modelltest 3·4·5 PDF(Sprechen Kandidatenblätter)에서 옮겼습니다.
+   - 파트너의 의견과 구체적인 아이디어, 진행 문구, 점검용 정규식, 추가 질문 목록은 직접 썼습니다.
+   - 구조는 exams2.js의 Goethe B1 Modelltest 2와 같습니다. exams.js(Modelltest 1)의 Teil 중 주제와 무관한 부분(Teil 2·3의 진행 방식, 규칙 기반 점검, 평가 기준)은 그대로 가져와 씁니다. */
+(function () {
+  const B11 = EXAMS.find(e => e.id === 'goethe-b1').teile;
+  const COMMON_INSTR = ' Sprechen Sie über die Punkte unten, machen Sie Vorschläge und reagieren Sie auf die Vorschläge Ihres Gesprächspartners/Ihrer Gesprächspartnerin. Planen und entscheiden Sie gemeinsam, was Sie tun möchten.';
+
+  /* ---------- Teil 1 ---------- */
+  function teil1(c) {
+    const leit = 'Leitpunkte: ' + c.leit + ' Der letzte Punkt (…) ist offen, A darf ihn selbst wählen.';
+    const base = 'Ihr plant gemeinsam: ' + c.plan + ' (Aufgabenblatt). ' + leit + '\nDeine eigenen Ideen: ' + c.ideas + '\n';
+    const tail = '\n2. Reagiere auf die Vorschläge von A: stimme zu oder äußere einen kleinen Einwand mit Grund. Sprecht über alle vier Punkte und entscheidet jeweils gemeinsam („Dann machen wir es so: …“). Verteile Aufgaben („Ich könnte … übernehmen. Übernimmst du …?“).\n3. Widersprich einmal höflich und biete eine Alternative oder einen Kompromiss an.\n4. Fasse am Ende kurz zusammen („Dann halten wir fest: …“).';
+    return Object.assign({}, B11[0], {
+      summary_ko: c.summary_ko,
+      instruction: c.situation + COMMON_INSTR,
+      sheet: [
+        { t: 'h', s: c.title },
+        { t: 'ul', items: c.points.concat(['…']) }
+      ],
+      intro: 'Wir beginnen mit Teil 1: Gemeinsam etwas planen. ' + c.introSit + ' Planen Sie mit {dat} ' + c.introWhat + ' Machen Sie Vorschläge, reagieren Sie auf die Vorschläge und entscheiden Sie gemeinsam. Wer möchte anfangen?',
+      procedure: 'Ihr plant gemeinsam ' + c.procWhat + ' anhand der vier Punkte: Vorschläge machen, reagieren und gemeinsam entscheiden. Ich sage Bescheid, wenn die Zeit um ist.',
+      flow: {
+        student: base + '1. A beginnt. Reagiere auf den ersten Vorschlag, stimme zu oder äußere einen kleinen Einwand mit Grund und mach dann einen eigenen Vorschlag.' + tail.replace('\n2. Reagiere auf die Vorschläge von A: stimme zu oder äußere einen kleinen Einwand mit Grund. Sprecht', '\n2. Sprecht').replace('\n3. Widersprich einmal höflich und biete eine Alternative oder einen Kompromiss an.\n4. Fasse', '\n3. Frage A einmal nach der Meinung („Was hältst du davon?“). Widersprich einmal höflich und biete eine Alternative oder einen Kompromiss an.\n4. Fasse'),
+        partner: base + '1. Auf „Bitte beginnen Sie.“ beginne mit „' + c.opener + '“ und mach einen ersten Vorschlag mit Begründung.' + tail
+      },
+      redemittel: '„' + c.opener + '“ · „Ich schlage vor, dass …“ · „Wie wäre es, wenn wir …?“ · „Was hältst du davon, wenn …?“ · „Das finde ich eine gute Idee, aber …“ · „Da hast du recht.“ · „Ich bin damit einverstanden.“ · „Wer macht was?“ · „Ich könnte … übernehmen.“ · „Dann machen wir es so: …“ · „Dann halten wir fest: …“',
+      checks: [
+        { ko: '여러 가지를 제안하고 이유를 댔다', kind: 'all', parts: [{ re: RE.prop, min: 2, label: '제안' }, { re: /\b(weil|damit|denn|deshalb|dann|da)\b/, min: 1, label: '이유' }] },
+        { ko: c.topicsKo, kind: 'topics', groups: c.groups },
+        { ko: '파트너의 제안에 동의와 이의로 반응했다', kind: 'all', parts: [{ re: RE.agree, min: 1, label: '동의' }, { re: RE.doubt, min: 1, label: '의문·이의' }] },
+        { ko: '역할을 나눴다(누가 무엇을 맡을지)', kind: 'count', re: RE.roles, yes: 2, maybe: 1, note: '역할 분담 표현 {v}회' },
+        { ko: '함께 결정한 내용을 정리했다', kind: 'has', re: RE.sum, yesNote: '결정을 정리하는 표현이 있습니다.', noNote: '결정을 정리하는 표현이 없습니다.' }
+      ]
+    });
+  }
+
+  /* ---------- Teil 2 ---------- */
+  function teil2(items) {
+    return Object.assign({}, B11[1], {
+      choice: { label_ko: '발표할 주제(Thema 1 또는 2)를 고르십시오.', other: 'other', items: items }
+    });
+  }
+
+  /* ---------- Teil 3 ---------- */
+  function teil3(items, pool) {
+    return Object.assign({}, B11[2], {
+      choice: { label_ko: '내가 발표한 주제(Teil 2에서 고른 주제)를 고르십시오. 파트너는 나머지 주제를 발표합니다.', other: 'other', items: items },
+      followup: { lead: 'Ich habe noch eine Frage zu Ihrem Thema: ', pool: pool }
+    });
+  }
+
+  EXAMS.push(
+    /* ====================================================================== Goethe B1 · Modelltest 3 */
+    {
+      id: 'goethe-b1-3', org: 'Goethe', level: 'B1', mdt: 3,
+      name: 'Goethe-Zertifikat B1', short: 'Goethe B1', label: 'Goethe-Zertifikat B1, Modelltest 3',
+      ko: 'Goethe B1 · Sprechen', lead_ko: '함께 계획하고, 5장 발표를 하고, 피드백과 질문으로 이어 갑니다.',
+      teile: [
+        teil1({
+          summary_ko: '이웃을 위한 마당 잔치를 파트너와 함께 계획합니다. 제안하고, 파트너 제안에 반응하고, 함께 결정합니다.',
+          situation: 'In Ihrem Haus wohnen viele Familien, die sich kaum kennen. Sie und Ihr Partner/Ihre Partnerin möchten für alle Nachbarinnen und Nachbarn ein Fest im Hof organisieren.',
+          title: 'Nachbarschaftsfest organisieren',
+          points: ['Wann feiern? (Wochentag, Uhrzeit)', 'Essen und Getränke: Wer bringt was mit?', 'Programm: Musik? Spiele für die Kinder?', 'Wie informieren wir die Nachbarn?'],
+          introSit: 'In Ihrem Haus wohnen viele Familien, die sich kaum kennen.',
+          introWhat: 'ein Fest im Hof für alle Nachbarn.',
+          procWhat: 'das Nachbarschaftsfest',
+          plan: 'ein Fest im Hof für alle Nachbarinnen und Nachbarn in eurem Haus',
+          leit: 'Wann feiern (Wochentag, Uhrzeit)? Essen und Getränke: wer bringt was mit? Programm: Musik, Spiele für die Kinder? Wie informieren wir die Nachbarn?',
+          ideas: 'Du würdest gern am Samstag um fünfzehn Uhr im Hof feiern (bei Regen im Gemeinschaftsraum im Keller), jede Familie soll etwas mitbringen (Salate, Kuchen, Getränke), du backst einen Kuchen, als Programm Musik von einem Lautsprecher und Spiele für die Kinder (Seilspringen, mit Kreide malen), und die Einladung schreibst du auf einen Zettel für den Hausflur und die Briefkästen.',
+          opener: 'Sollen wir zuerst überlegen, wann wir feiern?',
+          groups: [/(samstag|sonntag|freitag|wochentag|uhr|wann feiern|nachmittag|abend)/, /(essen|getränke|mitbringen|bringt|kuchen|salat|grill|buffet)/, /(musik|spiele|programm|kinder|lautsprecher|kreide)/, /(informier|einladung|zettel|hausflur|briefkasten|aushang|nachricht|gruppe)/],
+          topicsKo: '네 가지 Leitpunkt(날짜·시간, 음식·음료, 프로그램, 이웃에게 알리기)를 모두 다뤘다'
+        }),
+        teil2([
+          { id: '1', de: 'Ein eigenes Handy für Kinder?', hint: '', ko: 'Thema 1 · 어린이의 개인 휴대전화' },
+          { id: '2', de: 'Leben in der Stadt oder auf dem Land?', hint: '', ko: 'Thema 2 · 도시 생활 또는 시골 생활' }
+        ]),
+        teil3([
+          { id: '1', de: 'Ein eigenes Handy für Kinder?', hint: '', ko: 'Thema 1 · 어린이의 개인 휴대전화' },
+          { id: '2', de: 'Leben in der Stadt oder auf dem Land?', hint: '', ko: 'Thema 2 · 도시 생활 또는 시골 생활' }
+        ], {
+          '1': ['Ab welchem Alter sollten Kinder ein eigenes Handy haben? Was meinen Sie?', 'Sollten Eltern kontrollieren, was ihre Kinder am Handy machen? Warum (nicht)?'],
+          '2': ['Wo würden Sie selbst lieber wohnen, in der Stadt oder auf dem Land, und warum?', 'Was könnte man tun, damit das Leben auf dem Land für junge Menschen attraktiver wird?']
+        })
+      ]
+    },
+
+    /* ====================================================================== Goethe B1 · Modelltest 4 */
+    {
+      id: 'goethe-b1-4', org: 'Goethe', level: 'B1', mdt: 4,
+      name: 'Goethe-Zertifikat B1', short: 'Goethe B1', label: 'Goethe-Zertifikat B1, Modelltest 4',
+      ko: 'Goethe B1 · Sprechen', lead_ko: '함께 계획하고, 5장 발표를 하고, 피드백과 질문으로 이어 갑니다.',
+      teile: [
+        teil1({
+          summary_ko: '친구 Ana의 주말 방문을 파트너와 함께 계획합니다. 제안하고, 파트너 제안에 반응하고, 함께 결정합니다.',
+          situation: 'Ana, eine Freundin aus Ihrem früheren Deutschkurs, lebt inzwischen in Spanien. Am nächsten Wochenende kommt sie für zwei Tage zu Besuch. Sie und Ihr Partner/Ihre Partnerin möchten das Wochenende für Ana planen.',
+          title: 'Besuch am Wochenende planen',
+          points: ['Wann und wo holen wir Ana ab?', 'Programm am Samstag?', 'Essen: selbst kochen oder ins Restaurant?', 'Wo übernachtet Ana?'],
+          introSit: 'Ana, eine Freundin aus Ihrem früheren Deutschkurs, kommt am nächsten Wochenende für zwei Tage zu Besuch.',
+          introWhat: 'das Wochenende für Ana.',
+          procWhat: 'das Wochenende für Ana',
+          plan: 'das Wochenende für Ana, eine Freundin aus eurem früheren Deutschkurs, die am nächsten Wochenende für zwei Tage aus Spanien zu Besuch kommt',
+          leit: 'Wann und wo holen wir Ana ab? Programm am Samstag? Essen: selbst kochen oder ins Restaurant? Wo übernachtet Ana?',
+          ideas: 'Du würdest Ana gern am Freitagabend um achtzehn Uhr am Hauptbahnhof abholen, am Samstag einen Stadtrundgang mit einem Spaziergang am Fluss machen, mittags in ein Café gehen und abends zu Hause zusammen kochen, und Ana soll bei dir auf dem Sofa übernachten, weil du Platz für eine Gästematratze hast.',
+          opener: 'Sollen wir zuerst überlegen, wann und wo wir Ana abholen?',
+          groups: [/(abholen|abhol|bahnhof|flughafen|freitag|uhr|treffpunkt|ankunft)/, /(samstag|programm|stadtrundgang|spaziergang|museum|ausflug|besichtig|fluss|kino)/, /(essen|kochen|restaurant|café|mittag|abendessen|frühstück)/, /(übernacht|schlafen|sofa|gästezimmer|hotel|matratze|bett|unterkunft)/],
+          topicsKo: '네 가지 Leitpunkt(마중, 토요일 프로그램, 식사, 숙박)를 모두 다뤘다'
+        }),
+        teil2([
+          { id: '1', de: 'Taschengeld für Kinder?', hint: '', ko: 'Thema 1 · 어린이 용돈' },
+          { id: '2', de: 'Ein Haustier in der Stadtwohnung?', hint: '', ko: 'Thema 2 · 도시 아파트에서 반려동물 키우기' }
+        ]),
+        teil3([
+          { id: '1', de: 'Taschengeld für Kinder?', hint: '', ko: 'Thema 1 · 어린이 용돈' },
+          { id: '2', de: 'Ein Haustier in der Stadtwohnung?', hint: '', ko: 'Thema 2 · 도시 아파트에서 반려동물 키우기' }
+        ], {
+          '1': ['Wie viel Taschengeld sollten Kinder in welchem Alter bekommen? Was meinen Sie?', 'Sollten Kinder ihr Taschengeld frei ausgeben dürfen? Warum (nicht)?'],
+          '2': ['Welche Tiere sind Ihrer Meinung nach für eine kleine Wohnung geeignet?', 'Hätten Sie selbst gern ein Haustier, und warum (nicht)?']
+        })
+      ]
+    },
+
+    /* ====================================================================== Goethe B1 · Modelltest 5 */
+    {
+      id: 'goethe-b1-5', org: 'Goethe', level: 'B1', mdt: 5,
+      name: 'Goethe-Zertifikat B1', short: 'Goethe B1', label: 'Goethe-Zertifikat B1, Modelltest 5',
+      ko: 'Goethe B1 · Sprechen', lead_ko: '함께 계획하고, 5장 발표를 하고, 피드백과 질문으로 이어 갑니다.',
+      teile: [
+        teil1({
+          summary_ko: '출산한 동료 Julia의 방문과 선물을 파트너와 함께 계획합니다. 제안하고, 파트너 제안에 반응하고, 함께 결정합니다.',
+          situation: 'Ihre Kollegin Julia hat vor zwei Wochen ein Baby bekommen. Sie und Ihr Partner/Ihre Partnerin möchten Julia besuchen und ihr ein Geschenk mitbringen.',
+          title: 'Besuch bei Julia planen',
+          points: ['Wann besuchen wir Julia?', 'Was schenken wir?', 'Wer bezahlt das Geschenk?', 'Wie kommen wir hin?'],
+          introSit: 'Ihre Kollegin Julia hat vor zwei Wochen ein Baby bekommen.',
+          introWhat: 'einen Besuch bei Julia mit einem Geschenk.',
+          procWhat: 'den Besuch bei Julia',
+          plan: 'einen Besuch bei eurer Kollegin Julia, die vor zwei Wochen ein Baby bekommen hat, und ein Geschenk für sie',
+          leit: 'Wann besuchen wir Julia? Was schenken wir? Wer bezahlt das Geschenk? Wie kommen wir hin?',
+          ideas: 'Du würdest Julia gern am Sonntagnachmittag um vierzehn Uhr besuchen (vormittags schläft das Baby oft), ihr eine Babydecke und ein Buch schenken, die Kosten teilen, sodass jede Person fünfzehn Euro bezahlt, mit dem Bus fahren und vorher anrufen, ob der Termin passt.',
+          opener: 'Sollen wir zuerst überlegen, wann wir Julia besuchen?',
+          groups: [/(besuch|sonntag|samstag|nachmittag|uhr|wann|termin|anrufen)/, /(schenk|geschenk|babydecke|strampler|buch|blumen|gutschein|spielzeug)/, /(bezahl|kosten|geld|euro|teilen|zahlen|sammeln)/, /(hinkommen|fahren|bus|bahn|auto|zug|fahrrad|weg|abholen|treffen)/],
+          topicsKo: '네 가지 Leitpunkt(방문 시간, 선물, 비용, 가는 방법)를 모두 다뤘다'
+        }),
+        teil2([
+          { id: '1', de: 'Wohnen im Alter: Heim oder Familie?', hint: '', ko: 'Thema 1 · 노후의 거주: 요양원 또는 가족과 함께' },
+          { id: '2', de: 'Selbst kochen oder Fertiggerichte?', hint: '', ko: 'Thema 2 · 직접 요리 또는 간편 조리식' }
+        ]),
+        teil3([
+          { id: '1', de: 'Wohnen im Alter: Heim oder Familie?', hint: '', ko: 'Thema 1 · 노후의 거주: 요양원 또는 가족과 함께' },
+          { id: '2', de: 'Selbst kochen oder Fertiggerichte?', hint: '', ko: 'Thema 2 · 직접 요리 또는 간편 조리식' }
+        ], {
+          '1': ['Wo möchten Sie selbst im Alter am liebsten wohnen, und warum?', 'Sollten Kinder ihre Eltern im Alter pflegen? Was meinen Sie?'],
+          '2': ['Kochen Sie selbst gern, und was kochen Sie am häufigsten?', 'Sollte man Kindern in der Schule das Kochen beibringen? Warum (nicht)?']
+        })
+      ]
+    }
+  );
+})();
+
 /* Goethe-Zertifikat B2 · Sprechen — Modelltest 3~5 (exams3.js의 gb2 틀 사용) */
 (function () {
   const H = (a, b, c) => '1 ' + a + ' · 2 ' + b + ' · 3 ' + c;
