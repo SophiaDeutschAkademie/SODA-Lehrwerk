@@ -2650,6 +2650,7 @@ const EXAMS = [
     const late = parseInt(c.no, 10) >= 13;
     const reasonRe = /\b(weil|denn|deshalb|deswegen)\b/;
     return Object.assign({}, BASE, {
+      askStarter: false, starterFixed: 'partner',
       n: 1, no: 'Teil 1', name: 'Gespräch zur Lektion', ko: 'Lektion 주제 대화',
       summary_ko: c.summary_ko,
       timing: { official: 120, extra: 60, prep: 30 }, minFinish: 30, prepLabel: '카드 읽기(약 30초)',
@@ -2664,7 +2665,7 @@ const EXAMS = [
         { t: 'redemittel', items: c.say, ko: c.sayKo }
       ],
       choice: null,
-      intro: 'Wir machen eine Übung zur ' + label + ': „' + c.title + '“. Sie sprechen etwa zwei Minuten mit {dat} über das Thema ' + c.topicDe + '. Wer möchte anfangen?',
+      intro: 'Wir machen eine Übung zur ' + label + ': „' + c.title + '“. Sie sprechen etwa zwei Minuten mit {dat} über das Thema ' + c.topicDe + '. {n} beginnt.',
       procedure: 'Sie und die Partnerin sprechen frei über das Thema der Lektion. Man fragt sich gegenseitig und antwortet in ganzen Sätzen. Ich sage Bescheid, wenn die Zeit um ist.',
       flow: {
         student: head + '\n1. A beginnt und sagt etwas zum Thema oder stellt dir eine Frage. Reagiere kurz darauf und antworte, wenn A fragt, mit einem kleinen Detail. Dann stellst du die erste Frage aus deiner Liste.\n2. Führe das Gespräch mit den Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules,
@@ -3900,6 +3901,7 @@ const PARTNERS = {
   m: { name: 'Ben', gender: 'm', voice: 'MMwckqU477oQxnAk1SgA', ko: '남성' }
 };
 /* 초급(A1) 연습은 말이 더 느리게 나오도록 속도를 낮춥니다. */
+const examinerSpeed = ex => ex.level === 'A1' ? 0.75 : 0.85;
 const speedOf = (ex, skill) => ex.level === 'A1' ? { low: 0.7, mid: 0.76, high: 0.82 }[skill] : SKILLS[skill].speed;
 const SKILLS = {
   low: { ko: '하', speed: 0.8, rule: ' Innerhalb dieses Niveaus sprichst du im unteren Bereich: besonders einfache, kurze Sätze, nur sehr häufige Wörter, kaum Nebensätze, wenn möglich nur ein Satz pro Beitrag, deutlich und langsam. Du suchst manchmal nach einem Wort.' },
@@ -4469,7 +4471,7 @@ async function runExaminer(phase, o) {
     partner_name: A.partner.name, question2: o.question2 || '', procedure: A.T.procedure
   };
   const label = phase === 'announce' ? 'intro' : phase;
-  const s = new Session('examiner', vars, { ticket: A.ticket });
+  const s = new Session('examiner', vars, { ticket: A.ticket }, A.ex.hidden ? { tts: { speed: examinerSpeed(A.ex) } } : undefined);
   S.session = s; wireSession(s, 'examiner', label);
   const tk = uiTick();
   try {
