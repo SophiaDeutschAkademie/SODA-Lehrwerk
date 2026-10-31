@@ -556,28 +556,90 @@ html[data-theme="dark"] #hub .uc-title{color:var(--uc-accent)}
 </style>
 <script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <style id="voka-exam-css">
-#hub .lv{padding:0;cursor:default;overflow:hidden;display:flex;flex-direction:column}
-#hub .lv-main{display:block;width:100%;text-align:left;background:none;border:0;margin:0;padding:20px 20px 18px;font:inherit;color:inherit;cursor:pointer}
-#hub .lv-main:focus-visible,#hub .lv-x:focus-visible{outline:2px solid #384568;outline-offset:-4px}
-#hub .lv-x{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:#F5F2EA;border:0;border-top:1px solid #ddd5c4;margin:0;padding:14px 20px;font:inherit;color:#1f2f4a;cursor:pointer;transition:background .15s}
-#hub .lv-x:hover{background:#ECE6D8}
-#hub .lv-x-tag{flex:none;border:1.5px solid #384568;color:#384568;border-radius:8px;padding:3px 10px;font-size:13px;font-weight:800;letter-spacing:.3px;white-space:nowrap}
-#hub .lv-x-b{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
-#hub .lv-x-b b{font-size:14px;font-weight:700}
-#hub .lv-x-b .nw{white-space:nowrap}
-#hub .lv-x-s{font-size:12px;color:#4c6078}
-#hub .lv-x-b .bar{height:6px;margin-top:3px}
-#hub .lv-x-go{flex:none;font-size:13px;font-weight:700;color:#384568;white-space:nowrap}
-#hub .xnote{position:relative}
-#hub .xnote-tag{display:inline-block;border:1.5px solid #384568;color:#384568;border-radius:8px;padding:2px 9px;font-size:12px;font-weight:800;margin-bottom:8px}
-#hub .xnote h2{margin-bottom:6px}
-html[data-theme="dark"] #hub .lv-x{background:#161B22;border-top-color:#2A313B;color:#ECEAE4}
-html[data-theme="dark"] #hub .lv-x:hover{background:#202631}
-html[data-theme="dark"] #hub .lv-x-tag,html[data-theme="dark"] #hub .xnote-tag{border-color:#AEB9DD;color:#AEB9DD}
-html[data-theme="dark"] #hub .lv-x-s{color:#A9B0BA}
-html[data-theme="dark"] #hub .lv-x-go{color:#AEB9DD}
-html[data-theme="dark"] #hub .lv-main:focus-visible,html[data-theme="dark"] #hub .lv-x:focus-visible{outline-color:#AEB9DD}
-@media (max-width:520px){#hub .lv-x{padding:13px 16px;gap:10px}#hub .lv-main{padding:18px 16px 16px}}
+#hub .lv{padding:18px 18px 18px;cursor:default}
+#hub .lv:hover{border-color:#ddd5c4;box-shadow:none}
+#hub .lv-hd{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+#hub .lv-hd .lv-badge{margin-bottom:0}
+#hub .lv-hd h2{margin:0}
+#hub .lv-opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#hub .lv-opt{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-width:0;text-align:left;font:inherit;cursor:pointer;border-radius:12px;padding:14px 14px 13px;transition:border-color .15s,box-shadow .15s,background .15s}
+#hub .lv-opt .bar{display:block;width:100%;height:6px;margin:auto 0 2px}
+#hub .lv-k{border-radius:7px;padding:3px 10px;font-size:13px;font-weight:800;letter-spacing:.2px;white-space:nowrap;margin-bottom:4px}
+#hub .lv-n{font-size:26px;font-weight:800;line-height:1.1;letter-spacing:-.3px}
+#hub .lv-n small{font-size:13px;font-weight:600;margin-left:2px}
+#hub .lv-d{font-size:12.5px;font-weight:600;line-height:1.4;word-break:keep-all}
+#hub .lv-s{font-size:12px;line-height:1.4;margin:4px 0 8px;word-break:keep-all}
+#hub .lv-g{font-size:13px;font-weight:700;margin-top:6px}
+#hub .lv-main{background:#fff;border:1.5px solid #ddd5c4;color:#1f2f4a}
+#hub .lv-main:hover{border-color:#384568;box-shadow:0 4px 14px rgba(23,62,125,.12)}
+#hub .lv-main .lv-k{background:#384568;color:#fff}
+#hub .lv-main .lv-n,#hub .lv-main .lv-g{color:#384568}
+#hub .lv-main .lv-d,#hub .lv-main .lv-s{color:#4c6078}
+#hub .lv-x{background:#EAF4EF;border:1.5px solid #A9CDBC;color:#173F33}
+#hub .lv-x:hover{border-color:#2B6B55;box-shadow:0 4px 14px rgba(43,107,85,.16)}
+#hub .lv-x .lv-k{background:#2B6B55;color:#fff}
+#hub .lv-x .lv-n,#hub .lv-x .lv-g{color:#22594A}
+#hub .lv-x .lv-d,#hub .lv-x .lv-s{color:#3E6357}
+#hub .lv-x .bar{background:#CFE4DA}
+#hub .lv-x .bar i{background:#2B6B55}
+#hub .lv-opt:focus-visible{outline:2px solid #384568;outline-offset:2px}
+#hub .lv-x:focus-visible{outline-color:#2B6B55}
+html[data-theme="dark"] #hub .lv:hover{border-color:#2A313B}
+html[data-theme="dark"] #hub .lv-main{background:#161B22;border-color:#2F3744;color:#ECEAE4}
+html[data-theme="dark"] #hub .lv-main:hover{border-color:#8FB0E0;box-shadow:none}
+html[data-theme="dark"] #hub .lv-main .lv-k{background:#AEB9DD;color:#14181E}
+html[data-theme="dark"] #hub .lv-main .lv-n,html[data-theme="dark"] #hub .lv-main .lv-g{color:#AEB9DD}
+html[data-theme="dark"] #hub .lv-main .lv-d,html[data-theme="dark"] #hub .lv-main .lv-s{color:#A9B0BA}
+html[data-theme="dark"] #hub .lv-x{background:#13241E;border-color:#2C5A47;color:#ECEAE4}
+html[data-theme="dark"] #hub .lv-x:hover{border-color:#7FCBAA;box-shadow:none}
+html[data-theme="dark"] #hub .lv-x .lv-k{background:#7FCBAA;color:#0F1A15}
+html[data-theme="dark"] #hub .lv-x .lv-n,html[data-theme="dark"] #hub .lv-x .lv-g{color:#8FD6B6}
+html[data-theme="dark"] #hub .lv-x .lv-d,html[data-theme="dark"] #hub .lv-x .lv-s{color:#A9C4B8}
+html[data-theme="dark"] #hub .lv-x .bar{background:#1F3A30}
+html[data-theme="dark"] #hub .lv-x .bar i{background:#6FBF9C}
+html[data-theme="dark"] #hub .lv-opt:focus-visible{outline-color:#AEB9DD}
+html[data-theme="dark"] #hub .lv-x:focus-visible{outline-color:#7FCBAA}
+@media (max-width:520px){#hub .lv{padding:16px 14px}#hub .lv-opts{gap:10px}#hub .lv-opt{padding:12px 12px 11px}#hub .lv-n{font-size:23px}}
+@media (max-width:340px){#hub .lv-opts{grid-template-columns:1fr}}
+
+#hub .mode{display:flex;align-items:center;gap:10px;flex-wrap:wrap;border-radius:12px;padding:10px 14px;margin-bottom:16px;font-size:14px}
+#hub .mode-f{background:#EEF0F6;border:1px solid #CDD3E3}
+#hub .mode-x{background:#EAF4EF;border:1px solid #A9CDBC}
+#hub .mode-tag{border-radius:7px;padding:3px 10px;font-size:13px;font-weight:800;color:#fff;white-space:nowrap}
+#hub .mode-f .mode-tag{background:#384568}
+#hub .mode-x .mode-tag{background:#2B6B55}
+#hub .mode-t{font-weight:600;color:#1f2f4a}
+#hub .mode-x .mode-t{color:#173F33}
+#hub .mode-sw{margin-left:auto;background:none;border:0;font:inherit;font-size:13px;font-weight:700;cursor:pointer;color:#384568;padding:4px 0;white-space:nowrap}
+#hub .mode-x .mode-sw{color:#22594A}
+#hub .mode-sw:hover{text-decoration:underline}
+html[data-theme="dark"] #hub .mode-f{background:#1C2230;border-color:#2F3850}
+html[data-theme="dark"] #hub .mode-x{background:#13241E;border-color:#2C5A47}
+html[data-theme="dark"] #hub .mode-f .mode-tag{background:#AEB9DD;color:#14181E}
+html[data-theme="dark"] #hub .mode-x .mode-tag{background:#7FCBAA;color:#0F1A15}
+html[data-theme="dark"] #hub .mode-t,html[data-theme="dark"] #hub .mode-x .mode-t{color:#ECEAE4}
+html[data-theme="dark"] #hub .mode-sw{color:#AEB9DD}
+html[data-theme="dark"] #hub .mode-x .mode-sw{color:#8FD6B6}
+
+#hub.xmode h1,#hub.xmode h2,#hub.xmode .stat b{color:#22594A}
+#hub.xmode .btn.primary,#hub.xmode .chip.on,#hub.xmode .tag{background:#2B6B55;border-color:#2B6B55;color:#fff}
+#hub.xmode .btn.primary:hover{background:#235A47}
+#hub.xmode input[type=range]{accent-color:#2B6B55}
+#hub.xmode .goalinfo{background:#EAF4EF}
+html[data-theme="dark"] #hub.xmode h1,html[data-theme="dark"] #hub.xmode h2,html[data-theme="dark"] #hub.xmode .stat b{color:#8FD6B6}
+html[data-theme="dark"] #hub.xmode .btn.primary,html[data-theme="dark"] #hub.xmode .chip.on,html[data-theme="dark"] #hub.xmode .tag{background:#7FCBAA;border-color:#7FCBAA;color:#0F1A15}
+html[data-theme="dark"] #hub.xmode .btn.primary:hover{background:#9AD9BD}
+html[data-theme="dark"] #hub.xmode input[type=range]{accent-color:#7FCBAA}
+html[data-theme="dark"] #hub.xmode .goalinfo{background:#13241E}
+html[data-theme="dark"] #hub.xmode .stat b small{color:#A9B0BA}
+
+body.voka-engine .prog-hd::before{content:'전체 학습';flex:none;align-self:center;border:1.5px solid rgba(255,255,255,.7);border-radius:7px;padding:3px 9px;font-size:12px;font-weight:800;letter-spacing:.2px;white-space:nowrap;color:#fff}
+body.voka-exam .prog-hd::before{content:'시험용 학습';background:#fff;color:#1F5040;border-color:#fff}
+body.voka-exam .prog-hd{background:linear-gradient(135deg,#1F5040,#3A8468)!important}
+body.voka-exam .side{background:#24564A!important}
+body.voka-exam .side-title{color:#CFF1E1!important}
+body.voka-exam #hub-fab{background:#2B6B55}
+body.voka-exam #hub-fab:hover{background:#235A47}
 </style>
 </head>
 <body>
@@ -3253,16 +3315,25 @@ function makeLevel(L, shell) {
   function mins(ms) { var m = Math.round(ms / 60000); return m >= 60 ? Math.floor(m / 60) + '시간 ' + (m % 60) + '분' : m + '분'; }
   function name() { return ls.get('voka-name', ls.get('voka-all-name', '')); }
 
+  function modeBar() {
+    var tw = shell.twin(L);
+    return '<div class="mode ' + (L.exam ? 'mode-x' : 'mode-f') + '"><span class="mode-tag">' + (L.exam ? '시험용 학습' : '전체 학습') + '</span>' +
+      '<span class="mode-t">' + (L.exam ? esc(L.examName) + ' 필수 ' + fmtN(N) + '단어' : esc(L.short) + ' 전체 ' + fmtN(N) + '단어') + '</span>' +
+      (tw ? '<button type="button" class="mode-sw" id="btn-sw">' + (L.exam ? '전체 학습으로 전환' : '시험용 학습으로 전환') + ' →</button>' : '') + '</div>';
+  }
+  function bindMode() { var b = document.getElementById('btn-sw'); if (b) b.onclick = function () { shell.switchMode(L); }; }
   function renderSetup() {
     var t = 70;
     hub.innerHTML =
       '<div class="wrap narrow"><header class="hd"><img class="logo" src="' + window.__LOGO + '" alt=""><div><h1>' + TITLE + '</h1><p class="sub">Sophia Deutsch Akademie</p></div><div class="hd-a"><button class="btn" id="btn-levels">← 레벨 선택</button></div></header>' +
-      (L.exam ? '<section class="card xnote"><span class="xnote-tag">시험용</span><h2>' + esc(L.examName) + ' · ' + fmtN(N) + '단어</h2><p class="muted">' + esc(L.examNote) + '</p><p class="muted">전체 단어장과 학습 기록이 따로 저장됩니다.</p></section>' : '') +
+      modeBar() +
+      (L.exam ? '<section class="card xnote"><h2>시험용 단어를 고른 기준</h2><p class="muted">' + esc(L.examNote) + '</p><p class="muted">전체 학습과 목표·주차·학습 기록이 따로 저장됩니다.</p></section>' : '') +
       '<section class="card"><h2>1. 이름</h2><input id="in-name" class="txt" placeholder="이름을 입력하세요" value="' + esc(name()) + '"></section>' +
       '<section class="card"><h2>2. 주차별 목표 단어 수</h2><p class="muted">한 주(7일)에 외울 단어 수를 정하면 전체 ' + fmtN(N) + '개가 주차와 Day로 자동 배정됩니다. 학습 중에도 언제든 바꿀 수 있습니다.</p>' +
       goalPicker(t) + '</section>' +
       '<button class="btn primary big" id="btn-start">학습 시작</button></div>';
     bindGoal(t, function (val) { return val; });
+    bindMode();
     document.getElementById('btn-levels').onclick = function () { shell.levels(); };
     document.getElementById('btn-start').onclick = function () {
       var v = readGoal();
@@ -3320,8 +3391,8 @@ function makeLevel(L, shell) {
     var hint = '';
     if (cs.learned >= cw.size && plan.cur < plan.weeks.length - 1) hint = '<div class="banner">이번 주차 단어를 모두 학습했어요. <button class="btn primary" data-cur="' + (plan.cur + 1) + '">' + (plan.cur + 2) + '주차로 넘어가기</button></div>';
     hub.innerHTML =
-      '<div class="wrap"><header class="hd"><img class="logo" src="' + window.__LOGO + '" alt=""><div><h1>' + TITLE + '</h1><p class="sub">' + (L.exam ? esc(L.examName) + ' · ' : '') + (name() ? esc(name()) + ' · ' : '') + '주 ' + plan.target + '개 목표 · 총 ' + plan.weeks.length + '주 (' + fmtN(N) + '단어)</p></div>' +
-      '<div class="hd-a"><button class="btn" id="btn-levels">← 레벨 선택</button> <button class="btn" id="btn-goal">목표 수정</button></div></header>' + hint +
+      '<div class="wrap"><header class="hd"><img class="logo" src="' + window.__LOGO + '" alt=""><div><h1>' + TITLE + '</h1><p class="sub">' + (name() ? esc(name()) + ' · ' : '') + '주 ' + plan.target + '개 목표 · 총 ' + plan.weeks.length + '주 (' + fmtN(N) + '단어)</p></div>' +
+      '<div class="hd-a"><button class="btn" id="btn-levels">← 레벨 선택</button> <button class="btn" id="btn-goal">목표 수정</button></div></header>' + modeBar() + hint +
       '<section class="cards">' +
       '<div class="stat"><span>전체 학습됨</span><b>' + fmtN(S.learnedNow) + '<small>/' + fmtN(N) + '</small></b>' + bar(learnedPct) + '<em>' + learnedPct + '%</em></div>' +
       '<div class="stat"><span>테스트 통과</span><b>' + fmtN(S.testNow) + '<small>/' + fmtN(N) + '</small></b>' + bar(testPct, 'b2') + '<em>' + testPct + '%</em></div>' +
@@ -3347,6 +3418,7 @@ function makeLevel(L, shell) {
 
   function bindDash() {
     hub.querySelectorAll('[data-open]').forEach(function (b) { b.onclick = function () { launch(parseInt(b.dataset.open)); }; });
+    bindMode();
     hub.querySelectorAll('[data-cur]').forEach(function (b) { b.onclick = function () { plan.cur = parseInt(b.dataset.cur); ls.set(PK, plan); render(); }; });
     document.getElementById('btn-goal').onclick = openGoalModal;
     document.getElementById('btn-levels').onclick = function () { shell.levels(); };
@@ -3460,6 +3532,8 @@ function makeLevel(L, shell) {
     window.__VOKA_NO_FLUSH = false;
     document.title = 'VOKA ' + L.short + ' ' + (i + 1) + '주차 단어장 — Interactive';
     hub.style.display = 'none'; rootEl.style.display = ''; fab.style.display = ''; document.body.classList.add('voka-engine');
+    document.body.classList.toggle('voka-exam', !!L.exam); document.body.classList.toggle('voka-full', !L.exam);
+    fab.textContent = L.exam ? '← 시험용 목표·기록' : '← 목표·기록 허브';
     shell.setCurrent(api);
     ['eng-0', 'eng-1', 'eng-2'].forEach(function (id) { (0, eval)(document.getElementById(id).textContent); });
   }
@@ -3468,7 +3542,7 @@ function makeLevel(L, shell) {
     fab.disabled = true; fab.textContent = '저장 중…';
     setTimeout(function () {
       try { if (window.__ENGINE_ROOT) window.__ENGINE_ROOT.unmount(); } catch (e) {}
-      window.__ENGINE_ROOT = null; rootEl.innerHTML = ''; rootEl.style.display = 'none'; fab.style.display = 'none'; document.body.classList.remove('voka-engine');
+      window.__ENGINE_ROOT = null; rootEl.innerHTML = ''; rootEl.style.display = 'none'; fab.style.display = 'none'; document.body.classList.remove('voka-engine', 'voka-exam', 'voka-full');
       fab.disabled = false; fab.textContent = '← 목표·기록 허브';
       document.title = TITLE + ' — Interactive';
       hub.style.display = ''; render(); window.scrollTo(0, 0);
@@ -3476,7 +3550,7 @@ function makeLevel(L, shell) {
   }
 
 
-  function render() { plan = ls.get(PK, null); if (!plan) renderSetup(); else renderDash(); }
+  function render() { hub.classList.toggle('xmode', !!L.exam); plan = ls.get(PK, null); if (!plan) renderSetup(); else renderDash(); }
   function summary() {
     var p = ls.get(PK, null); if (!p) return null;
     plan = p; var l = 0; p.weeks.forEach(function (_, i) { l += weekStats(i).learned; });
@@ -3488,7 +3562,7 @@ function makeLevel(L, shell) {
 
   var apis = LEVELS.map(function (L) { return makeLevel(L, shell); });
 
-  /* ---------- 시험용 트랙: 레벨마다 시험 필수 단어만 담은 별도 학습 ---------- */
+  /* ---------- 시험용 학습: 레벨마다 시험 필수 단어만 담은 별도 학습 ---------- */
   var EXS = window.EXAM_SETS || {};
   var XLEVELS = LEVELS.map(function (L) {
     var ex = EXS[L.id]; if (!ex || !ex.words || !ex.words.length) return null;
@@ -3500,10 +3574,12 @@ function makeLevel(L, shell) {
       desc: ex.name + ' 필수 어휘 ' + fmtN(ws.length) + '개', words: ws, hintE: L.hintE, hintI: L.hintI };
   });
   var xapis = XLEVELS.map(function (X) { return X ? makeLevel(X, shell) : null; });
+  shell.twin = function (L) { var i = L.exam ? XLEVELS.indexOf(L) : LEVELS.indexOf(L); return i < 0 ? null : (L.exam ? LEVELS[i] : XLEVELS[i]); };
+  shell.switchMode = function (L) { var i = L.exam ? XLEVELS.indexOf(L) : LEVELS.indexOf(L); if (i < 0) return; if (L.exam) enter(i); else enterX(i); window.scrollTo(0, 0); };
 
   /* ---------- 표지 ---------- */
   function showCover() {
-    screen = 'cover'; current = null; closeModal();
+    screen = 'cover'; current = null; closeModal(); hub.classList.remove('xmode');
     document.title = 'SODA VOKALAB';
     hub.innerHTML =
       '<section class="uc" id="v-cover"><header class="uc-brand"><svg class="uc-logo" viewBox="0 0 1157 1333" aria-hidden="true" focusable="false"><path fill="#57585A" d="M0 348.6 686 0v678.2L0 1026.8z"/><path fill="#ED1C24" d="M235.4 501.5 921.4 153v678.2l-686 348.6z"/><path fill="#F3C811" d="M470.8 654.3 1156.8 305.7v678.2l-686 348.6z"/></svg><div class="uc-brand-t"><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div></header>' +
@@ -3515,22 +3591,28 @@ function makeLevel(L, shell) {
   }
 
   /* ---------- 레벨 선택 ---------- */
+  function optTile(ex, i, n, d, sm) {
+    var pct = sm ? Math.round(sm.learned / n * 100) : 0;
+    return '<button type="button" class="lv-opt ' + (ex ? 'lv-x' : 'lv-main') + '" ' + (ex ? 'data-x' : 'data-i') + '="' + i + '">' +
+      '<span class="lv-k">' + (ex ? '시험용 학습' : '전체 학습') + '</span>' +
+      '<span class="lv-n">' + fmtN(n) + '<small>단어</small></span>' +
+      '<span class="lv-d">' + esc(d) + '</span>' +
+      '<span class="lv-s">' + (sm ? sm.cur + '주차 진행 중 · 학습됨 ' + fmtN(sm.learned) + ' (' + pct + '%)' : '아직 시작하지 않았습니다') + '</span>' +
+      '<span class="bar"><i style="width:' + pct + '%"></i></span>' +
+      '<span class="lv-g">' + (sm ? '이어서 학습하기 →' : '시작하기 →') + '</span></button>';
+  }
   function showLevels() {
+    hub.classList.remove('xmode');
     screen = 'levels'; current = null; closeModal();
     document.title = 'SODA VOKALAB';
     var cards = LEVELS.map(function (L, i) {
       var sm = apis[i].summary(), pct = sm ? Math.round(sm.learned / L.words.length * 100) : 0;
       var state = sm ? '<div class="lv-st"><b>' + sm.cur + '주차</b> 진행 중 · 주 ' + sm.target + '개 목표 · 총 ' + sm.weeks + '주</div><div class="bar"><i style="width:' + pct + '%"></i></div><div class="lv-p">학습됨 ' + fmtN(sm.learned) + ' / ' + fmtN(L.words.length) + ' (' + pct + '%)</div>'
         : '<div class="lv-st">아직 시작하지 않았습니다</div><div class="bar"><i style="width:0"></i></div><div class="lv-p">전체 ' + fmtN(L.words.length) + '단어</div>';
-      var X = XLEVELS[i], xb = '';
-      if (X) {
-        var xs = xapis[i].summary(), xn = X.words.length, xp = xs ? Math.round(xs.learned / xn * 100) : 0;
-        xb = '<button type="button" class="lv-x" data-x="' + i + '"><span class="lv-x-tag">시험용</span><span class="lv-x-b"><b>' + esc(X.examName) + ' <span class="nw">필수 ' + fmtN(xn) + '단어</span></b>' +
-          (xs ? '<span class="lv-x-s">' + xs.cur + '주차 진행 중 · 학습됨 ' + fmtN(xs.learned) + ' / ' + fmtN(xn) + ' (' + xp + '%)</span><span class="bar"><i style="width:' + xp + '%"></i></span>'
-              : '<span class="lv-x-s">시험에 꼭 필요한 단어만 골라 학습합니다</span>') +
-          '</span><span class="lv-x-go" aria-hidden="true">' + (xs ? '이어서 →' : '시작 →') + '</span></button>';
-      }
-      return '<div class="lv"><button type="button" class="lv-main" data-i="' + i + '"><span class="lv-badge">' + esc(L.label) + '</span><h2>' + esc(L.name) + '</h2><p class="lv-desc">' + esc(L.desc) + '</p>' + state + '<span class="lv-go">' + (sm ? '전체 단어 이어서 학습하기 →' : '전체 단어 시작하기 →') + '</span></button>' + xb + '</div>';
+      var X = XLEVELS[i];
+      return '<div class="lv"><div class="lv-hd"><span class="lv-badge">' + esc(L.label) + '</span><h2>' + esc(L.name) + '</h2></div><div class="lv-opts">' +
+        optTile(false, i, L.words.length, L.short + ' 어휘 전체', sm) +
+        (X ? optTile(true, i, X.words.length, X.examName + ' 필수', xapis[i].summary()) : '') + '</div></div>';
     }).join('');
     hub.innerHTML =
       '<div class="wrap narrow"><header class="hd"><img class="logo" src="' + window.__LOGO + '" alt=""><div><h1>VOKALAB</h1><p class="sub">학습할 레벨을 선택하세요</p></div><div class="hd-a"><button class="btn" id="btn-cover">표지</button></div></header>' +
