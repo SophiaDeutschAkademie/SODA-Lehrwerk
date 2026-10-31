@@ -4594,7 +4594,7 @@ function runDialog() {
     try { await s.open(); } catch (e) { return reject(e); }
     A.dialogStart = performance.now(); A.started = new Date().toISOString(); A.heard = false;
     S.V = { lastVoiceAt: performance.now(), voicedMs: 0, voice: false };
-    let finished = false, endHint = false, hintSent = false, timeUpAt = 0, wasSpeaking = false, switched = false;
+    let finished = false, endHint = false, hintSent = false, timeUpAt = 0, wasSpeaking = false, switched = false, partnerEndAt = 0, lastNudge = 0, nudges = 0;
     const finish = reason => {
       if (finished) return; finished = true;
       clearInterval(S.tick); A.dialogEnd = performance.now(); A.endReason = reason;
@@ -4617,7 +4617,17 @@ function runDialog() {
       $('#spkStudent').classList.toggle('on', S.V.voice && !sp);
       paintLevel($('#exLevel'));
       if (sp && !wasSpeaking) { S.V.voicedMs = 0; hintSent = false; }
+      if (wasSpeaking && !sp) partnerEndAt = now;
       wasSpeaking = sp;
+      /* 연습(Übung): 학생이 10초 넘게 말하지 않으면 파트너가 다시 말을 겁니다. 시간이 끝날 때까지 반복합니다. */
+      if (!mono && A.ex.hidden && partnerEndAt && !sp && el < total - 8 && now - Math.max(S.V.lastVoiceAt, partnerEndAt) > 10000 && now - lastNudge > 10000) {
+        lastNudge = now; nudges++;
+        const asks = [
+          '[Hinweis: A sagt seit zehn Sekunden nichts. Sage jetzt etwas, rufe skip_turn nicht auf: Wiederhole deine letzte Frage kürzer und einfacher oder hilf mit einer ganz einfachen Antwortmöglichkeit.]',
+          '[Hinweis: A schweigt weiter. Sage jetzt etwas, rufe skip_turn nicht auf: Stelle eine neue, sehr einfache Frage zum Thema, die A mit einem kurzen Satz beantworten kann.]'
+        ];
+        s.sendText(asks[nudges % 2 === 1 ? 0 : 1]);
+      }
       /* 내가 먼저 시작하는 차례인데 2초 안에 말하지 않으면 파트너가 먼저 시작합니다. */
       if (!mono && !switched && A.starter === 'student' && !A.heard && !sp && now - A.dialogStart > 2000 && typeof SILENT !== 'undefined' && T.flow && T.flow.partner && T.flow.partner !== SILENT) {
         switched = true; A.starter = 'partner'; A.autoStart = true;
