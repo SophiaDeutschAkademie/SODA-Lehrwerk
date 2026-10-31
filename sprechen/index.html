@@ -359,6 +359,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 .sens{margin-top:10px}
 .sensrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .sensrow label{font-weight:600;min-width:9em}
+.sensrow+p.muted{margin:4px 0 14px}
 .sensrow input[type=range]{flex:1 1 160px;min-width:140px;max-width:320px}
 .opt{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px}
 .optl{font-weight:600;min-width:9em}
@@ -3941,20 +3942,19 @@ const PARTNERS = {
   m: { name: 'Ben', gender: 'm', voice: 'MMwckqU477oQxnAk1SgA', ko: '남성' }
 };
 /* 초급(A1) 연습은 말이 더 느리게 나오도록 속도를 낮춥니다. */
-const examinerSpeed = ex => ex.level === 'A1' ? 0.7 : 0.85;
+/* 말하기 속도: 학생이 막대로 정합니다(0.7~1.2). 연습(Übung)은 항상 이 값을 쓰고, 모의고사는 학생이 막대를 움직인 뒤부터 씁니다. */
 /* 연습(Übung)은 속도 설정이 실제로 적용되는 음성 모델과, 천천히 또렷하게 말하는 목소리를 씁니다. */
 const SLOW_MODEL = 'eleven_flash_v2_5';
 const SLOW_VOICE = { examiner: 'x9tGbxYQaoX72Y8bvqBh', f: 'le3O97c6UClnRdpxkDTb', m: 'MJ0RnG71ty4LH3dvNfSd' };
-const speedOf = (ex, skill) => ex.level === 'A1' ? { low: 0.7, mid: 0.7, high: 0.75 }[skill] : SKILLS[skill].speed;
 const SKILLS = {
   low: { ko: '하', speed: 0.8, rule: ' Innerhalb dieses Niveaus sprichst du im unteren Bereich: besonders einfache, kurze Sätze, nur sehr häufige Wörter, kaum Nebensätze, wenn möglich nur ein Satz pro Beitrag, deutlich und langsam. Du suchst manchmal nach einem Wort.' },
   mid: { ko: '중', speed: 0.88, rule: '' },
   high: { ko: '상', speed: 0.96, rule: ' Innerhalb dieses Niveaus sprichst du im oberen Bereich: abwechslungsreicher Wortschatz, vollständige Nebensätze und Konnektoren, flüssig und gut gegliedert mit Begründungen und Beispielen. Du überschreitest dabei das Niveau nicht.' }
 };
 const Pref = {
-  sens: 5, skill: 'mid', voice: 'f',
-  load() { try { const p = JSON.parse(localStorage.getItem('soda-sprechen:pref') || 'null') || {}; if (p.sens >= 1 && p.sens <= 9) this.sens = p.sens | 0; if (SKILLS[p.skill]) this.skill = p.skill; if (PARTNERS[p.voice]) this.voice = p.voice; } catch (e) { } },
-  save() { try { localStorage.setItem('soda-sprechen:pref', JSON.stringify({ sens: this.sens, skill: this.skill, voice: this.voice })); } catch (e) { } }
+  sens: 5, skill: 'mid', voice: 'f', speed: 0.9, speedSet: false,
+  load() { try { const p = JSON.parse(localStorage.getItem('soda-sprechen:pref') || 'null') || {}; if (p.sens >= 1 && p.sens <= 9) this.sens = p.sens | 0; if (SKILLS[p.skill]) this.skill = p.skill; if (PARTNERS[p.voice]) this.voice = p.voice; if (p.speed >= 0.7 && p.speed <= 1.2) { this.speed = p.speed; this.speedSet = !!p.speedSet; } } catch (e) { } },
+  save() { try { localStorage.setItem('soda-sprechen:pref', JSON.stringify({ sens: this.sens, skill: this.skill, voice: this.voice, speed: this.speed, speedSet: this.speedSet })); } catch (e) { } }
 };
 Pref.load();
 const CLOSING_TIME = 'Entschuldigung, wenn ich unterbreche. Die Zeit ist leider um. Bitte kommen Sie jetzt zum Schluss.';
@@ -4392,13 +4392,23 @@ function setSens(v, save) {
   $$('[data-sensval]').forEach(b => { b.textContent = sensLabel(v); });
   if (save) Pref.save();
 }
+const speedLabel = v => v.toFixed(2).replace(/0$/, '') + '배';
+function setSpeed(v, save) {
+  v = Math.max(0.7, Math.min(1.2, Math.round(v * 20) / 20));
+  Pref.speed = v; if (save) { Pref.speedSet = true; Pref.save(); }
+  $$('[data-speedrange]').forEach(r => { r.value = v; });
+  $$('[data-speedval]').forEach(b => { b.textContent = speedLabel(v); });
+}
 function mountSens() {
   $$('[data-sens]').forEach(box => {
-    box.innerHTML = '<div class="sensrow"><label>마이크 감도 <b data-sensval></b></label><span class="muted small">낮음</span><input type="range" min="1" max="9" step="1" data-sensrange aria-label="마이크 감도"><span class="muted small">높음</span></div>' +
+    box.innerHTML = '<div class="sensrow"><label>말하기 속도 <b data-speedval></b></label><span class="muted small">느리게</span><input type="range" min="0.7" max="1.2" step="0.05" data-speedrange aria-label="말하기 속도"><span class="muted small">빠르게</span></div>' +
+      '<p class="muted small">안내자와 파트너의 말 속도입니다. 바꾼 속도는 다음에 연결되는 안내자·파트너부터 적용됩니다.</p>' +
+      '<div class="sensrow"><label>마이크 감도 <b data-sensval></b></label><span class="muted small">낮음</span><input type="range" min="1" max="9" step="1" data-sensrange aria-label="마이크 감도"><span class="muted small">높음</span></div>' +
       '<p class="muted small">조용한데도 "나"가 말하는 중으로 표시되면 감도를 낮추십시오. 말해도 인식되지 않으면 높이십시오.</p>';
     $('[data-sensrange]', box).oninput = e => setSens(+e.target.value, true);
+    $('[data-speedrange]', box).oninput = e => setSpeed(+e.target.value, true);
   });
-  setSens(Pref.sens, false);
+  setSens(Pref.sens, false); setSpeed(Pref.speed, false);
 }
 /* 파트너 목소리·상대 실력 선택(준비 화면). 이 브라우저에 기억합니다. */
 function mountPrefs() {
@@ -4520,7 +4530,7 @@ async function runExaminer(phase, o) {
     partner_name: A.partner.name, question2: o.question2 || '', procedure: A.T.procedure
   };
   const label = phase === 'announce' ? 'intro' : phase;
-  const s = new Session('examiner', vars, { ticket: A.ticket }, A.ex.hidden ? { tts: { model_id: SLOW_MODEL, voice_id: SLOW_VOICE.examiner, speed: examinerSpeed(A.ex) } } : undefined);
+  const s = new Session('examiner', vars, { ticket: A.ticket }, A.ex.hidden ? { tts: { model_id: SLOW_MODEL, voice_id: SLOW_VOICE.examiner, speed: Pref.speed } } : (Pref.speedSet ? { tts: { model_id: SLOW_MODEL, speed: Pref.speed } } : undefined));
   S.session = s; wireSession(s, 'examiner', label);
   const tk = uiTick();
   try {
@@ -4579,7 +4589,7 @@ function longHint(A) {
 function runDialog() {
   const A = S.A, T = A.T, tm = A.timing, mono = T.kind === 'monolog';
   return new Promise(async (resolve, reject) => {
-    const s = new Session('partner', partnerVars(A), { ticket: A.ticket }, (A.ex.hidden ? { tts: { model_id: SLOW_MODEL, voice_id: SLOW_VOICE[A.partner.gender], speed: speedOf(A.ex, A.skill) } } : { tts: { voice_id: A.partner.voice, speed: speedOf(A.ex, A.skill) } }));
+    const s = new Session('partner', partnerVars(A), { ticket: A.ticket }, (A.ex.hidden ? { tts: { model_id: SLOW_MODEL, voice_id: SLOW_VOICE[A.partner.gender], speed: Pref.speed } } : (Pref.speedSet ? { tts: { model_id: SLOW_MODEL, voice_id: A.partner.voice, speed: Pref.speed } } : { tts: { voice_id: A.partner.voice, speed: SKILLS[A.skill].speed } })));
     S.session = s; wireSession(s, 'partner', 'dialog');
     try { await s.open(); } catch (e) { return reject(e); }
     A.dialogStart = performance.now(); A.started = new Date().toISOString(); A.heard = false;
