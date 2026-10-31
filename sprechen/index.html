@@ -378,6 +378,9 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 .sheet .tt .gl{font-size:14px}
 .cards4 div small{display:block;margin-top:4px;font-family:var(--font);font-size:13px;font-weight:400;color:var(--muted)}
 
+.sheet ul.helpgrid{list-style:none;margin:6px 0 12px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+.sheet ul.helpgrid li{padding:8px 12px;border:1px solid var(--line);border-radius:10px;margin:0}
+
 </style>
 </head>
 <body>
@@ -579,6 +582,11 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
   <div class="sens" data-sens></div>
   <p class="notice" id="exNotice" role="status"></p>
 
+  <div class="card" id="exHelpCard" hidden>
+    <h2>도움이 되는 표현</h2>
+    <p class="muted small">문장이 떠오르지 않으면 아래 표현을 그대로 읽거나 단어만 바꿔 말하십시오.</p>
+    <div id="exHelp" class="sheet"></div>
+  </div>
   <div class="card">
     <h2>과제지</h2>
     <div id="exTask" class="sheet"></div>
@@ -648,7 +656,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 const APP = { /* 에이전트 ID는 accounts.py가 계정별로 암호화합니다(로그인 후에만 풀림). */
   partner: { name: 'Mila', gender: 'f' },
   levels: {
-    A1: 'Du sprichst auf A1-Niveau: ganz kurze, einfache Sätze mit drei bis sieben Wörtern, nur Präsens (und in Lektion 10 und 11 einfaches Perfekt und Präteritum von sein und haben), sehr einfache Wörter, langsam und deutlich. Keine Nebensätze, kein Konjunktiv außer „ich möchte“. Pro Beitrag ein kurzer Satz und eine einfache Frage. Frage nie zwei Dinge auf einmal.',
+    A1: 'Du sprichst auf A1-Niveau: ganz kurze, einfache Sätze mit drei bis sieben Wörtern, nur Präsens (und in Lektion 10 und 11 einfaches Perfekt und Präteritum von sein und haben), sehr einfache Wörter, langsam und deutlich. Keine Nebensätze, kein Konjunktiv außer „ich möchte“. Pro Beitrag ein kurzer Satz und eine einfache Frage. Frage nie zwei Dinge auf einmal. Sprich sehr langsam und deutlich: Mache nach jedem Satz eine kleine Pause und betone jedes Wort klar. Schreibe jeden Satz einzeln mit Punkt und nenne Zahlen langsam.',
     A2: 'Du sprichst auf A2-Niveau: sehr einfache, kurze Sätze mit fünf bis zehn Wörtern, Präsens und Perfekt, alltägliche Wörter. Nebensätze nur selten (weil, dass). Kein Konjunktiv II außer „ich möchte“ und „wie wäre es“. Pro Beitrag ein bis zwei Sätze.',
     B1: 'Du sprichst auf B1-Niveau: einfache bis mittellange Sätze, Nebensätze mit weil, dass, wenn und obwohl, Perfekt und Präteritum von sein und haben, gelegentlich würde und könnte. Pro Beitrag zwei bis drei Sätze.',
     B2: 'Du sprichst auf B2-Niveau, aber ruhig und nicht zu schnell: klare Nebensätze (weil, obwohl, dass, wenn, damit), gelegentlich Konjunktiv II (würde, könnte, wäre) und Konnektoren (außerdem, trotzdem, deshalb). Pro Beitrag zwei bis drei Sätze, nur in einer Präsentation etwas länger.'
@@ -3902,7 +3910,7 @@ const PARTNERS = {
 };
 /* 초급(A1) 연습은 말이 더 느리게 나오도록 속도를 낮춥니다. */
 const examinerSpeed = ex => ex.level === 'A1' ? 0.75 : 0.85;
-const speedOf = (ex, skill) => ex.level === 'A1' ? { low: 0.7, mid: 0.76, high: 0.82 }[skill] : SKILLS[skill].speed;
+const speedOf = (ex, skill) => ex.level === 'A1' ? { low: 0.7, mid: 0.7, high: 0.75 }[skill] : SKILLS[skill].speed;
 const SKILLS = {
   low: { ko: '하', speed: 0.8, rule: ' Innerhalb dieses Niveaus sprichst du im unteren Bereich: besonders einfache, kurze Sätze, nur sehr häufige Wörter, kaum Nebensätze, wenn möglich nur ein Satz pro Beitrag, deutlich und langsam. Du suchst manchmal nach einem Wort.' },
   mid: { ko: '중', speed: 0.88, rule: '' },
@@ -4181,6 +4189,15 @@ const A1_START = [
   ['Ich heiße … / Ich bin …', '저는 …입니다.'], ['Ich habe …', '저는 …이(가) 있습니다.'], ['Das ist …', '이것은 …입니다.'],
   ['Ich mag …', '저는 …을(를) 좋아합니다.'], ['Ich komme aus …', '저는 …에서 왔습니다.'], ['Es gibt …', '…이(가) 있습니다.']
 ];
+/* A1: 말하는 동안 볼 수 있도록 도움이 되는 표현을 과제지 위의 따로 된 카드로 보여 줍니다. */
+function helpHtml(ex, T) {
+  const lst = arr => '<ul class="helpgrid">' + arr.map(x => '<li class="de">' + esc(x[0]) + '<span class="gl">' + esc(x[1]) + '</span></li>').join('') + '</ul>';
+  const rd = T.sheet.find(b => b.t === 'redemittel');
+  let h = '';
+  if (rd && rd.ko) h += '<p class="kb">이 Lektion에서 쓰기 좋은 문장</p>' + lst(rd.items.map((x, i) => [x, rd.ko[i] || '']));
+  h += '<p class="kb">문장이 바로 떠오르지 않을 때</p>' + lst(A1_START) + '<p class="kb">못 알아들었을 때</p>' + lst(A1_HELP);
+  return h;
+}
 function sheetHtml(ex, T, chosenId) {
   const a1 = ex.level === 'A1';
   /* A1: 과제 안내와 질문은 한국어를 먼저 보여 주고 독일어를 아래에 작게 둡니다. 카드와 표현은 독일어를 먼저 둡니다. */
@@ -4193,13 +4210,10 @@ function sheetHtml(ex, T, chosenId) {
     else if (b.t === 'ul') h += '<ul>' + b.items.map((x, n) => '<li class="' + (hasKo(x) ? 'kb' : 'de') + '">' + pair(x, b.ko && b.ko[n], 'gl') + '</li>').join('') + '</ul>';
     else if (b.t === 'cards') h += '<div class="cards4">' + b.items.map((x, n) => '<div>' + esc(x) + (b.ko && b.ko[n] ? '<small>' + esc(b.ko[n]) + '</small>' : '') + '</div>').join('') + '</div>';
     else if (b.t === 'sched') h += '<p class="tt">' + esc(b.title) + '</p><table class="sched"><tr><th>Uhrzeit</th><th>Termin</th></tr>' + b.rows.map(r => '<tr><td>' + esc(r[0]) + '</td><td>' + esc(r[1]) + '</td></tr>').join('') + '</table>' + (b.note ? '<p class="kb">' + esc(b.note) + '</p>' : '');
+    else if (b.t === 'redemittel' && a1) continue;
     else if (b.t === 'redemittel' && b.ko) h += '<p class="kb">참고 표현</p><ul>' + b.items.map((x, n) => '<li class="de">' + esc(x) + (b.ko[n] ? '<span class="gl">' + esc(b.ko[n]) + '</span>' : '') + '</li>').join('') + '</ul>';
     else if (b.t === 'redemittel') h += '<p class="kb">참고 표현</p><div class="chip-list">' + b.items.map(x => '<span>' + esc(x) + '</span>').join('') + '</div>';
     else if (b.t === 'folien') h += b.items.map(f => '<div class="folie"><b>' + esc(f[0]) + '</b> <span class="de">' + esc(f[1]) + '</span><small>→ ' + esc(f[2]) + '</small></div>').join('');
-  }
-  if (a1) {
-    const lst = arr => '<ul>' + arr.map(x => '<li class="de">' + esc(x[0]) + '<span class="gl">' + esc(x[1]) + '</span></li>').join('') + '</ul>';
-    h += '<p class="kb">도움이 되는 표현 · 문장이 바로 떠오르지 않을 때</p>' + lst(A1_START) + '<p class="kb">못 알아들었을 때</p>' + lst(A1_HELP);
   }
   if (T.choice) {
     h += '<p class="lab">Zur Auswahl</p><ul class="pick">' + T.choice.items.map(i =>
@@ -4622,6 +4636,7 @@ async function startExam() {
   S.abort = false; S.finishReq = false;
   $('#exTeil').textContent = ex.label + ' · ' + T.no + ' · ' + A.no + '번째 시도';
   $('#exTask').innerHTML = sheetHtml(ex, T, chosen && chosen.id);
+  $('#exHelpCard').hidden = ex.level !== 'A1'; $('#exHelp').innerHTML = ex.level === 'A1' ? helpHtml(ex, T) : '';
   $('#exNotes').value = S.notes[ckey(ex, t)] || '';
   $('#spkPartnerName').textContent = A.partner.name; $('#spkStudentName').textContent = S.user.id;
   ['spkExaminer', 'spkPartner', 'spkStudent'].forEach((id, i) => { $('#' + id).className = 'spk ' + ['ex', 'pa', 'st'][i]; });
