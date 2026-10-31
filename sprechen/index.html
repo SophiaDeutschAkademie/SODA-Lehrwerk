@@ -3952,7 +3952,7 @@ const SKILLS = {
   high: { ko: '상', speed: 0.96, rule: ' Innerhalb dieses Niveaus sprichst du im oberen Bereich: abwechslungsreicher Wortschatz, vollständige Nebensätze und Konnektoren, flüssig und gut gegliedert mit Begründungen und Beispielen. Du überschreitest dabei das Niveau nicht.' }
 };
 const Pref = {
-  sens: 5, skill: 'mid', voice: 'f', speed: 0.9, speedSet: false,
+  sens: 5, skill: 'mid', voice: 'f', speed: 0.8, speedSet: false,
   load() { try { const p = JSON.parse(localStorage.getItem('soda-sprechen:pref') || 'null') || {}; if (p.sens >= 1 && p.sens <= 9) this.sens = p.sens | 0; if (SKILLS[p.skill]) this.skill = p.skill; if (PARTNERS[p.voice]) this.voice = p.voice; if (p.speed >= 0.7 && p.speed <= 1.2) { this.speed = p.speed; this.speedSet = !!p.speedSet; } } catch (e) { } },
   save() { try { localStorage.setItem('soda-sprechen:pref', JSON.stringify({ sens: this.sens, skill: this.skill, voice: this.voice, speed: this.speed, speedSet: this.speedSet })); } catch (e) { } }
 };
