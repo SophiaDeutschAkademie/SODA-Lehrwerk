@@ -2777,12 +2777,12 @@ const EXAMS = [
       leitKo: ['당신의 가족은 어떻습니까?', '형제나 자매가 있습니까?', '부모님은 어디에 사십니까?', '아버지와 어머니는 무슨 일을 하십니까?', '아이가 있습니까, 아니면 반려동물이 있습니까?'],
       cardsKo: ['어머니', '아버지', '형제(남자)', '자매', '부모님', '아이', '저의 어머니는 …에 삽니다.', '저는 자매가 없습니다.'],
       sayKo: ['당신의 가족은 어떻습니까?', '저의 아버지는 선생님입니다.', '저의 남동생은 스물다섯 살입니다.', '저는 자매가 없습니다.', '당신의 부모님은 어디에 사십니까?'],
-      leit: ['Wie ist deine Familie?', 'Hast du Geschwister?', 'Wo wohnen deine Eltern?', 'Was sind dein Vater und deine Mutter von Beruf?', 'Hast du Kinder oder ein Haustier?'],
+      leit: ['Wie ist deine Familie?', 'Hast du Geschwister?', 'Wo wohnen deine Eltern?', 'Welchen Beruf haben dein Vater und deine Mutter?', 'Hast du Kinder oder ein Haustier?'],
       cards: ['die Mutter', 'der Vater', 'der Bruder', 'die Schwester', 'die Eltern', 'das Kind', 'Meine Mutter wohnt in …', 'Ich habe keine Schwester.'],
       say: ['Wie ist deine Familie?', 'Mein Vater ist Lehrer.', 'Mein Bruder ist fünfundzwanzig.', 'Ich habe keine Schwester.', 'Wo wohnen deine Eltern?'],
       facts: 'Deine Eltern wohnen in Krakau. Dein Vater ist Lehrer, deine Mutter arbeitet in einer Bank. Dein Bruder heißt Tomek und ist fünfundzwanzig. Du hast keine Schwester und keine Kinder. Du hast auch keinen Hund, aber deine Eltern haben eine Katze.',
       pwords: 'die Eltern, der Bruder, die Mutter, der Vater',
-      pqs: ['Wie ist deine Familie?', 'Hast du Geschwister?', 'Wo wohnen deine Eltern?', 'Was ist dein Vater von Beruf?', 'Hast du Kinder?'],
+      pqs: ['Wie ist deine Familie?', 'Hast du Geschwister?', 'Wo wohnen deine Eltern?', 'Welchen Beruf hat dein Vater?', 'Hast du Kinder?'],
       lang: 'nur Präsens, mein, dein, sein, ihr, kein, keine Nebensätze.',
       phrases: [['Mein Vater / Meine Mutter …', /\b(mein|meine|meinen|meiner) (vater|mutter|bruder|schwester|eltern|kind|kinder|familie|oma|opa)\b/], ['Dein Bruder / Deine Eltern …', /\b(dein|deine|deinen|deiner) [a-zäöüß]+/], ['Ich habe keinen / keine / kein …', /\bich habe (keinen|keine|kein)\b/], ['Seine / Ihre Mutter …', /\b(sein|seine|seinen|ihr|ihre|ihren|unser|unsere) [a-zäöüß]+/]],
       groupsKo: '가족·직업·거주지',
@@ -3899,6 +3899,8 @@ const PARTNERS = {
   f: { name: 'Mila', gender: 'f', voice: 'ZoxS77tXeRuNRJNif3rR', ko: '여성' },
   m: { name: 'Ben', gender: 'm', voice: 'MMwckqU477oQxnAk1SgA', ko: '남성' }
 };
+/* 초급(A1) 연습은 말이 더 느리게 나오도록 속도를 낮춥니다. */
+const speedOf = (ex, skill) => ex.level === 'A1' ? { low: 0.7, mid: 0.76, high: 0.82 }[skill] : SKILLS[skill].speed;
 const SKILLS = {
   low: { ko: '하', speed: 0.8, rule: ' Innerhalb dieses Niveaus sprichst du im unteren Bereich: besonders einfache, kurze Sätze, nur sehr häufige Wörter, kaum Nebensätze, wenn möglich nur ein Satz pro Beitrag, deutlich und langsam. Du suchst manchmal nach einem Wort.' },
   mid: { ko: '중', speed: 0.88, rule: '' },
@@ -4137,6 +4139,21 @@ const exTag = ex => ex.tag || (ex.short + ' MDT ' + ex.mdt);
 const mdtName = ex => ex.rowLabel || ('Modelltest ' + ex.mdt);
 const teilTitle = (ex, T) => exTag(ex) + ' · ' + T.no + ' · ' + T.ko;
 
+/* 챕터·과제 Übung(hidden)에서는 "시험"이라는 말 대신 "연습"으로 보여 줍니다. */
+const uebWord = t => String(t).replace(/시험관(이|은|을|의|과|에게)/g, (m, j) => '안내자' + ({ 이: '가', 은: '는', 을: '를', 의: '의', 과: '와', 에게: '에게' }[j])).replace(/시험관/g, '안내자').replace(/시험/g, '연습');
+const isUebCtx = () => { const id = (S.cur && S.cur.ex && S.cur.ex.id) || S.openEx || S.target; const ex = id && EXAMS.find(e => e.id === id); return !!(ex && ex.hidden); };
+(function () {
+  const A = window.alert, C = window.confirm;
+  window.alert = m => A.call(window, isUebCtx() ? uebWord(m) : m);
+  window.confirm = m => C.call(window, isUebCtx() ? uebWord(m) : m);
+})();
+function uebRewrite() {
+  if (!isUebCtx()) return;
+  const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  let n; while ((n = w.nextNode())) { if (/시험/.test(n.nodeValue) && !n.parentNode.closest('script,style,textarea')) n.nodeValue = uebWord(n.nodeValue); }
+}
+new MutationObserver(() => { if (!uebRewrite.busy) { uebRewrite.busy = true; Promise.resolve().then(() => { uebRewrite(); uebRewrite.busy = false; }); } })
+  .observe(document.body, { childList: true, subtree: true, characterData: true });
 function show(id) {
   $$('.view').forEach(v => v.hidden = v.id !== id);
   $('#btnToc').hidden = ['v-cover', 'v-login', 'v-toc', 'v-exam'].includes(id);
@@ -4153,18 +4170,34 @@ function chosenItem(ex, T) {
 const itemText = i => i ? i.de + (i.hint ? ' (' + i.hint + ')' : '') : '';
 const hasKo = s => /[가-힣]/.test(s);
 
+const A1_HELP = [
+  ['Noch einmal, bitte.', '한 번 더 말씀해 주세요.'], ['Langsam, bitte.', '천천히 말씀해 주세요.'], ['Wie bitte?', '네? (다시 말해 주세요)'],
+  ['Ich verstehe das nicht.', '이해하지 못했습니다.'], ['Ich weiß nicht.', '모르겠습니다.'], ['Einen Moment, bitte.', '잠깐만 기다려 주세요.'],
+  ['Ja. / Nein.', '네. / 아니요.'], ['Und du?', '너는요?']
+];
+const A1_START = [
+  ['Ich heiße … / Ich bin …', '저는 …입니다.'], ['Ich habe …', '저는 …이(가) 있습니다.'], ['Das ist …', '이것은 …입니다.'],
+  ['Ich mag …', '저는 …을(를) 좋아합니다.'], ['Ich komme aus …', '저는 …에서 왔습니다.'], ['Es gibt …', '…이(가) 있습니다.']
+];
 function sheetHtml(ex, T, chosenId) {
-  let h = '<p class="instr">' + esc(T.instruction) + (T.instruction_ko ? '<span class="tr">' + esc(T.instruction_ko) + '</span>' : '') + '</p>';
+  const a1 = ex.level === 'A1';
+  /* A1: 과제 안내와 질문은 한국어를 먼저 보여 주고 독일어를 아래에 작게 둡니다. 카드와 표현은 독일어를 먼저 둡니다. */
+  const pair = (de, ko, cls) => a1 && ko ? esc(ko) + '<span class="gl">' + esc(de) + '</span>' : esc(de) + (ko ? '<span class="' + cls + '">' + esc(ko) + '</span>' : '');
+  let h = '<p class="instr">' + pair(T.instruction, T.instruction_ko, 'tr') + '</p>';
   for (const b of T.sheet) {
-    if (b.t === 'h') h += '<p class="tt">' + esc(b.s) + (b.ko ? '<span class="gl">' + esc(b.ko) + '</span>' : '') + '</p>';
-    else if (b.t === 'i') h += '<p class="sub">' + esc(b.s) + (b.ko ? '<span class="gl">' + esc(b.ko) + '</span>' : '') + '</p>';
+    if (b.t === 'h') h += '<p class="tt">' + pair(b.s, b.ko, 'gl') + '</p>';
+    else if (b.t === 'i') h += '<p class="sub">' + pair(b.s, b.ko, 'gl') + '</p>';
     else if (b.t === 'p') h += hasKo(b.s) ? '<p class="kb">' + esc(b.s) + '</p>' : '<p class="de' + (b.s.length > 160 ? ' read' : '') + '">' + esc(b.s) + '</p>';
-    else if (b.t === 'ul') h += '<ul>' + b.items.map((x, n) => '<li class="' + (hasKo(x) ? 'kb' : 'de') + '">' + esc(x) + (b.ko && b.ko[n] ? '<span class="gl">' + esc(b.ko[n]) + '</span>' : '') + '</li>').join('') + '</ul>';
+    else if (b.t === 'ul') h += '<ul>' + b.items.map((x, n) => '<li class="' + (hasKo(x) ? 'kb' : 'de') + '">' + pair(x, b.ko && b.ko[n], 'gl') + '</li>').join('') + '</ul>';
     else if (b.t === 'cards') h += '<div class="cards4">' + b.items.map((x, n) => '<div>' + esc(x) + (b.ko && b.ko[n] ? '<small>' + esc(b.ko[n]) + '</small>' : '') + '</div>').join('') + '</div>';
     else if (b.t === 'sched') h += '<p class="tt">' + esc(b.title) + '</p><table class="sched"><tr><th>Uhrzeit</th><th>Termin</th></tr>' + b.rows.map(r => '<tr><td>' + esc(r[0]) + '</td><td>' + esc(r[1]) + '</td></tr>').join('') + '</table>' + (b.note ? '<p class="kb">' + esc(b.note) + '</p>' : '');
     else if (b.t === 'redemittel' && b.ko) h += '<p class="kb">참고 표현</p><ul>' + b.items.map((x, n) => '<li class="de">' + esc(x) + (b.ko[n] ? '<span class="gl">' + esc(b.ko[n]) + '</span>' : '') + '</li>').join('') + '</ul>';
     else if (b.t === 'redemittel') h += '<p class="kb">참고 표현</p><div class="chip-list">' + b.items.map(x => '<span>' + esc(x) + '</span>').join('') + '</div>';
     else if (b.t === 'folien') h += b.items.map(f => '<div class="folie"><b>' + esc(f[0]) + '</b> <span class="de">' + esc(f[1]) + '</span><small>→ ' + esc(f[2]) + '</small></div>').join('');
+  }
+  if (a1) {
+    const lst = arr => '<ul>' + arr.map(x => '<li class="de">' + esc(x[0]) + '<span class="gl">' + esc(x[1]) + '</span></li>').join('') + '</ul>';
+    h += '<p class="kb">도움이 되는 표현 · 문장이 바로 떠오르지 않을 때</p>' + lst(A1_START) + '<p class="kb">못 알아들었을 때</p>' + lst(A1_HELP);
   }
   if (T.choice) {
     h += '<p class="lab">Zur Auswahl</p><ul class="pick">' + T.choice.items.map(i =>
@@ -4495,7 +4528,7 @@ function longHint(A) {
 function runDialog() {
   const A = S.A, T = A.T, tm = A.timing, mono = T.kind === 'monolog';
   return new Promise(async (resolve, reject) => {
-    const s = new Session('partner', partnerVars(A), { ticket: A.ticket }, { tts: { voice_id: A.partner.voice, speed: SKILLS[A.skill].speed } });
+    const s = new Session('partner', partnerVars(A), { ticket: A.ticket }, { tts: { voice_id: A.partner.voice, speed: speedOf(A.ex, A.skill) } });
     S.session = s; wireSession(s, 'partner', 'dialog');
     try { await s.open(); } catch (e) { return reject(e); }
     A.dialogStart = performance.now(); A.started = new Date().toISOString(); A.heard = false;
@@ -5019,7 +5052,7 @@ const UEB_KEY = id => 'soda-sprechen:ueb:' + id;
 function uebText(ex) {
   const T = ex.teile[0], r = recOf(ex, T.n), L = [];
   const atts = r.attempts.filter(hasSpeech);
-  L.push('연습 시험: ' + (ex.name || ex.label) + ' (' + ex.id + ')');
+  L.push('연습 과목: ' + (ex.name || ex.label) + ' (' + ex.id + ')');
   L.push('연습 횟수: ' + atts.length + '회' + (r.evaluation ? ' · 평가 받음' : ' · 평가 받지 않음'));
   atts.forEach(a => {
     const m = attemptSummary(ex, T, a);
@@ -5039,7 +5072,7 @@ function uebText(ex) {
     if (e.errors.length) { L.push('고칠 표현:'); e.errors.forEach(x => L.push('  - ' + x.o + ' → ' + x.c + (x.why ? ' (' + x.why + ')' : ''))); }
     if (e.next.length) { L.push('다음 연습:'); e.next.forEach(x => L.push('  - ' + x)); }
   }
-  return L.join('\n');
+  return uebWord(L.join('\n'));
 }
 function saveUeb(ex) {
   const T = ex.teile[0], r = recOf(ex, T.n), n = r.attempts.filter(hasSpeech).length;
