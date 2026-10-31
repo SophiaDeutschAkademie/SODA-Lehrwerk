@@ -54,7 +54,7 @@ try { var th = localStorage.getItem('soda-theme'); document.documentElement.setA
   --shadow:0 8px 30px rgba(0,0,0,.35);
   --glow-1:rgba(110,168,254,.16);--glow-2:rgba(179,162,240,.12);--demo-a:rgba(28,42,61,.85);--demo-b:rgba(18,27,41,.85);--hi:rgba(255,255,255,.06);
   --font:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
-  --serif:Georgia,"Times New Roman",serif;
+  --serif:var(--font);
 }
 :root[data-theme=light]{
   color-scheme:light;
@@ -139,7 +139,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .cover .org{font-size:12px;font-weight:600;letter-spacing:.28em;color:var(--muted);text-transform:uppercase;padding-left:14px;border-left:1px solid var(--line)}
 .cover h1{margin:0;display:flex;flex-direction:column;line-height:.98;font-weight:300;letter-spacing:-.035em;font-size:clamp(46px,8.6vw,92px)}
 .cover h1 .w1{font-weight:200;letter-spacing:.16em;font-size:.42em;color:var(--ink-2);margin-bottom:.22em;padding-left:.06em}
-.cover h1 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.02em;color:var(--ink);background:linear-gradient(100deg,var(--ink) 30%,var(--acc-2) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-bottom:.08em}
+.cover h1 em{font-family:var(--serif);font-style:normal;font-weight:700;letter-spacing:-.03em;color:var(--ink);background:linear-gradient(100deg,var(--ink) 30%,var(--acc-2) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-bottom:.08em}
 .cover .sub{font-size:17px;line-height:1.75;color:var(--ink-2);max-width:31em;margin:0}
 .cover .exams{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 0}
 .cover .exams li{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--ink-2);letter-spacing:.01em;padding:0 14px;border-left:1px solid var(--line)}
@@ -173,7 +173,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .cover .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
 .cover .steps li{padding:22px 26px 4px 0}
 .cover .steps li+li{padding-left:26px;border-left:1px solid var(--line-2)}
-.cover .steps .n{display:block;font-family:var(--serif);font-style:italic;font-size:15px;color:var(--acc);margin-bottom:8px}
+.cover .steps .n{display:block;font-family:var(--serif);font-style:normal;font-weight:700;font-size:15px;color:var(--acc);margin-bottom:8px}
 .cover .steps b{display:block;font-size:16px;color:var(--ink);margin-bottom:6px}
 .cover .steps p{margin:0;font-size:14px;line-height:1.7;color:var(--muted)}
 .cover .fine{font-size:12px;color:var(--muted);margin:0}
@@ -224,11 +224,11 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .sheet{border:1px solid var(--line);border-radius:12px;padding:20px 22px;background:var(--bg-2);font-size:15px;line-height:1.6}
 .sheet>*+*{margin-top:14px}
 .sheet .instr{font-family:var(--font);font-size:14px;line-height:1.65;color:var(--ink-2);background:var(--panel);border-left:3px solid var(--acc);border-radius:0 8px 8px 0;padding:10px 14px}
-.sheet .de{font-family:var(--serif);font-size:17px;line-height:1.8}
+.sheet .de{font-family:var(--serif);font-size:17px;line-height:1.75;letter-spacing:-.005em}
 .sheet .de.read{max-width:42em}
 .sheet .de.read+.de.read{margin-top:12px}
 .sheet .tt{font-weight:700;font-size:20px;line-height:1.35;font-family:var(--serif);margin-top:20px}
-.sheet .sub{font-family:var(--serif);font-size:17px;line-height:1.6;font-style:italic;color:var(--ink-2);padding-bottom:12px;border-bottom:1px solid var(--line)}
+.sheet .sub{font-family:var(--serif);font-size:17px;line-height:1.6;font-style:normal;color:var(--ink-2);padding-bottom:12px;border-bottom:1px solid var(--line)}
 .sheet .lab{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-top:20px}
 .sheet ul{padding-left:0;margin:0;list-style:none}
 .sheet li{padding:3px 12px 3px 14px;border-left:2px solid var(--line);line-height:1.65}
@@ -2670,7 +2670,7 @@ const EXAMS = [
         { t: 'ul', items: c.leit, ko: c.leitKo },
         { t: 'p', x: true, s: '아래 카드는 이 과의 핵심 어휘와 표현입니다. 가능한 한 많이 사용하십시오. 질문에 한 단어로만 답하지 말고 문장으로 말한 뒤 파트너에게도 되물어 보십시오.' },
         { t: 'cards', items: c.cards, ko: c.cardsKo },
-        { t: 'redemittel', items: c.say, ko: c.sayKo }
+        { t: 'redemittel', items: c.help, ko: c.helpKo }
       ],
       choice: null,
       intro: 'Wir machen eine Übung zur ' + label + ': „' + c.title + '“. Sie sprechen etwa zwei Minuten mit {dat} über das Thema ' + c.topicDe + '. {n} beginnt.',
@@ -2706,6 +2706,8 @@ const EXAMS = [
       leitKo: ['방에 무엇이 있습니까?', '탁자와 의자가 있습니까?', '소파가 있습니까?', '창문 옆에 무엇이 있습니까?', '무엇을 더 사고 싶습니까?'],
       cardsKo: ['탁자', '의자', '램프', '침대', '창문', '문', '책', '옷장'],
       sayKo: ['방에 무엇이 있습니까?', '저는 탁자 하나와 의자 하나가 있습니다.', '침대가 있습니다.', '저는 램프를 봅니다.', '당신은요?'],
+      help: ['Was hast du im Zimmer?', 'Ich habe einen Tisch und einen Stuhl.', 'Es gibt ein Bett.', 'Ich habe keine Lampe.', 'Ich sehe das Fenster.', 'Und du?'],
+      helpKo: ['방에 무엇이 있습니까?', '저는 탁자 하나와 의자 하나가 있습니다.', '침대가 있습니다.', '저는 램프가 없습니다.', '저는 창문이 보입니다.', '당신은요?'],
       leit: ['Was hast du im Zimmer?', 'Hast du einen Tisch und einen Stuhl?', 'Gibt es ein Sofa?', 'Was siehst du am Fenster?', 'Was möchtest du noch kaufen?'],
       cards: ['der Tisch', 'der Stuhl', 'die Lampe', 'das Bett', 'das Fenster', 'die Tür', 'das Buch', 'der Schrank'],
       say: ['Was hast du im Zimmer?', 'Ich habe einen Tisch und einen Stuhl.', 'Es gibt ein Bett.', 'Ich sehe die Lampe.', 'Und du?'],
@@ -2726,6 +2728,8 @@ const EXAMS = [
       leitKo: ['가장 친한 친구는 누구입니까?', '그 친구를 자주 만납니까?', '직장 동료를 압니까?', '친구를 기꺼이 도와줍니까?', '친구의 사진이 있습니까?'],
       cardsKo: ['남자 친구', '여자 친구', '여자 동료', '사진', '알다', '돕다', '저는 그를 잘 압니다.', '저는 그녀를 기꺼이 도와줍니다.'],
       sayKo: ['이 사람은 누구입니까?', '저는 그를 잘 압니다.', '저는 그녀를 자주 만납니다.', '저는 그에게 기꺼이 도움을 줍니다.', '당신은 그녀를 압니까?'],
+      help: ['Wer ist das?', 'Das ist meine Freundin.', 'Ich kenne ihn gut.', 'Ich sehe sie oft.', 'Ich helfe ihr gern.', 'Kennst du sie?'],
+      helpKo: ['이 사람은 누구입니까?', '이분은 제 친구입니다.', '저는 그를 잘 압니다.', '저는 그녀를 자주 만납니다.', '저는 그녀를 기꺼이 도와줍니다.', '당신은 그녀를 압니까?'],
       leit: ['Wer ist dein bester Freund oder deine beste Freundin?', 'Siehst du ihn oder sie oft?', 'Kennst du die Kollegen?', 'Hilfst du gern?', 'Hast du ein Foto?'],
       cards: ['der Freund', 'die Freundin', 'die Kollegin', 'das Foto', 'kennen', 'helfen', 'Ich kenne ihn gut.', 'Ich helfe ihr gern.'],
       say: ['Wer ist das?', 'Ich kenne ihn gut.', 'Ich sehe sie oft.', 'Ich helfe ihr gern.', 'Kennst du sie?'],
@@ -2746,6 +2750,8 @@ const EXAMS = [
       leitKo: ['어디에서 일하거나 공부합니까?', '아침에 무엇을 먹습니까?', '어떻게 직장이나 학교에 갑니까?', '저녁에 무엇을 합니까?', '몇 시간 잡니까?'],
       cardsKo: ['일하다', '먹다', '마시다', '자다', '(탈것으로) 가다', '읽다', '요리하다', '저는 매일 일합니다.'],
       sayKo: ['오늘 무엇을 합니까?', '저는 약국에서 일합니다.', '저는 아침에 빵을 먹습니다.', '저는 버스로 갑니다.', '당신은 무엇을 합니까?'],
+      help: ['Was machst du heute?', 'Ich lerne Deutsch.', 'Ich esse Brot und trinke Tee.', 'Ich fahre mit dem Bus.', 'Ich schlafe sieben Stunden.', 'Und du, was machst du?'],
+      helpKo: ['오늘 무엇을 합니까?', '저는 독일어를 배웁니다.', '저는 빵을 먹고 차를 마십니다.', '저는 버스로 갑니다.', '저는 일곱 시간 잡니다.', '당신은 무엇을 합니까?'],
       leit: ['Wo arbeitest du?', 'Was isst du am Morgen?', 'Wie fährst du zur Arbeit?', 'Was machst du am Abend?', 'Wie lange schläfst du?'],
       cards: ['arbeiten', 'essen', 'trinken', 'schlafen', 'fahren', 'lesen', 'kochen', 'Ich arbeite jeden Tag.'],
       say: ['Was machst du heute?', 'Ich arbeite in der Apotheke.', 'Ich esse Brot und trinke Tee.', 'Ich fahre mit dem Bus.', 'Und du, was machst du?'],
@@ -2766,6 +2772,8 @@ const EXAMS = [
       leitKo: ['어디에서 왔습니까?', '어디에 삽니까?', '몇 살입니까?', '언제 일합니까?', '지금 몇 시입니까?'],
       cardsKo: ['어디에서(출신)', '어디로', '언제', '몇 살', '전화번호', '시각', '지금 몇 시입니까?', '저는 여덟 시에 일합니다.'],
       sayKo: ['어디에서 왔습니까?', '저는 폴란드에서 왔습니다.', '저는 스물여덟 살입니다.', '월요일에 저는 일합니다.', '지금 몇 시입니까?'],
+      help: ['Woher kommst du?', 'Ich komme aus Korea.', 'Ich wohne in …', 'Ich bin … Jahre alt.', 'Am Montag arbeite ich.', 'Wie spät ist es?'],
+      helpKo: ['어디에서 왔습니까?', '저는 한국에서 왔습니다.', '저는 …에 삽니다.', '저는 … 살입니다.', '월요일에 저는 일합니다.', '지금 몇 시입니까?'],
       leit: ['Woher kommst du?', 'Wo wohnst du?', 'Wie alt bist du?', 'Wann arbeitest du?', 'Wie spät ist es jetzt?'],
       cards: ['woher', 'wohin', 'wann', 'wie alt', 'die Telefonnummer', 'die Uhr', 'Wie spät ist es?', 'Um acht Uhr arbeite ich.'],
       say: ['Woher kommst du?', 'Ich komme aus Polen.', 'Ich bin achtundzwanzig Jahre alt.', 'Am Montag arbeite ich.', 'Wie spät ist es?'],
@@ -2786,6 +2794,8 @@ const EXAMS = [
       leitKo: ['당신의 가족은 어떻습니까?', '형제나 자매가 있습니까?', '부모님은 어디에 사십니까?', '아버지와 어머니는 무슨 일을 하십니까?', '아이가 있습니까, 아니면 반려동물이 있습니까?'],
       cardsKo: ['어머니', '아버지', '형제(남자)', '자매', '부모님', '아이', '저의 어머니는 …에 삽니다.', '저는 자매가 없습니다.'],
       sayKo: ['당신의 가족은 어떻습니까?', '저의 아버지는 선생님입니다.', '저의 남동생은 스물다섯 살입니다.', '저는 자매가 없습니다.', '당신의 부모님은 어디에 사십니까?'],
+      help: ['Wie ist deine Familie?', 'Ich habe einen Bruder.', 'Ich habe keine Schwester.', 'Mein Bruder ist … Jahre alt.', 'Meine Eltern wohnen in …', 'Wo wohnen deine Eltern?'],
+      helpKo: ['당신의 가족은 어떻습니까?', '저는 남자 형제가 한 명 있습니다.', '저는 여자 형제가 없습니다.', '저의 남자 형제는 … 살입니다.', '저의 부모님은 …에 사십니다.', '당신의 부모님은 어디에 사십니까?'],
       leit: ['Wie ist deine Familie?', 'Hast du Geschwister?', 'Wo wohnen deine Eltern?', 'Welchen Beruf haben dein Vater und deine Mutter?', 'Hast du Kinder oder ein Haustier?'],
       cards: ['die Mutter', 'der Vater', 'der Bruder', 'die Schwester', 'die Eltern', 'das Kind', 'Meine Mutter wohnt in …', 'Ich habe keine Schwester.'],
       say: ['Wie ist deine Familie?', 'Mein Vater ist Lehrer.', 'Mein Bruder ist fünfundzwanzig.', 'Ich habe keine Schwester.', 'Wo wohnen deine Eltern?'],
@@ -2806,6 +2816,8 @@ const EXAMS = [
       leitKo: ['지금 어디에 있습니까?', '탁자 위에 무엇이 있습니까?', '가방은 어디에 있습니까?', '주말에 어디로 갑니까?', '집 근처에 무엇이 있습니까?'],
       cardsKo: ['위에', '안에', '옆에', '아래에', '앞에', '뒤에', '책은 탁자 위에 있습니다.', '저는 도시로 갑니다.'],
       sayKo: ['어디에 있습니까?', '책은 탁자 위에 있습니다.', '저는 부엌에 있습니다.', '저는 도시로 갑니다.', '당신은 어디로 갑니까?'],
+      help: ['Wo ist die Tasche?', 'Die Tasche ist auf dem Tisch.', 'Ich bin in der Küche.', 'Ich gehe in die Stadt.', 'Es gibt einen Park in der Nähe.', 'Wohin gehst du am Wochenende?'],
+      helpKo: ['가방은 어디에 있습니까?', '가방은 탁자 위에 있습니다.', '저는 부엌에 있습니다.', '저는 시내로 갑니다.', '근처에 공원이 있습니다.', '주말에 어디로 갑니까?'],
       leit: ['Wo bist du jetzt?', 'Was liegt auf dem Tisch?', 'Wo ist die Tasche?', 'Wohin gehst du am Wochenende?', 'Was gibt es in der Nähe?'],
       cards: ['auf', 'in', 'neben', 'unter', 'vor', 'hinter', 'Das Buch liegt auf dem Tisch.', 'Ich gehe in die Stadt.'],
       say: ['Wo ist die Tasche?', 'Das Buch liegt auf dem Tisch.', 'Ich bin in der Küche.', 'Ich gehe in die Stadt.', 'Wohin gehst du?'],
@@ -2826,6 +2838,8 @@ const EXAMS = [
       leitKo: ['오늘 무엇을 입고 있습니까?', '어떤 색을 좋아합니까?', '새 옷이 있습니까?', '겨울에는 무엇을 입습니까?', '어떤 신발을 가지고 있습니까?'],
       cardsKo: ['스웨터', '바지', '재킷', '신발', '원피스', '외투', '저는 빨간 스웨터를 입고 있습니다.', '저는 새 신발이 있습니다.'],
       sayKo: ['오늘 무엇을 입고 있습니까?', '저는 파란 재킷이 있습니다.', '저는 빨간 스웨터를 좋아합니다.', '저는 새 신발이 있습니다.', '당신은 어떤 색을 좋아합니까?'],
+      help: ['Was trägst du heute?', 'Ich trage eine blaue Jacke.', 'Ich mag den roten Pullover.', 'Ich habe neue Schuhe.', 'Meine Hose ist schwarz.', 'Welche Farbe magst du?'],
+      helpKo: ['오늘 무엇을 입고 있습니까?', '저는 파란 재킷을 입고 있습니다.', '저는 빨간 스웨터를 좋아합니다.', '저는 새 신발이 있습니다.', '저의 바지는 검은색입니다.', '당신은 어떤 색을 좋아합니까?'],
       leit: ['Was trägst du heute?', 'Welche Farbe magst du?', 'Hast du etwas Neues?', 'Was trägst du im Winter?', 'Was für Schuhe hast du?'],
       cards: ['der Pullover', 'die Hose', 'die Jacke', 'die Schuhe', 'das Kleid', 'der Mantel', 'ein roter Pullover', 'neue Schuhe'],
       say: ['Was trägst du heute?', 'Ich habe eine blaue Jacke.', 'Ich mag den roten Pullover.', 'Ich habe neue Schuhe.', 'Welche Farbe magst du?'],
@@ -2846,6 +2860,8 @@ const EXAMS = [
       leitKo: ['차와 커피 중 무엇이 더 좋습니까?', '가장 좋아하는 음식은 무엇입니까?', '사과와 케이크 중 무엇이 더 건강에 좋습니까?', '집 음식과 식당 음식 중 어느 쪽이 더 싸거나 비쌉니까?', '무엇을 가장 자주 마십니까?'],
       cardsKo: ['차', '커피', '물', '사과', '케이크', '건강한', '저는 차를 커피보다 더 좋아합니다.', '피자가 가장 맛있습니다.'],
       sayKo: ['무엇을 더 좋아합니까?', '저는 차를 커피보다 더 좋아합니다.', '사과는 케이크보다 더 건강합니다.', '피자가 가장 맛있습니다.', '당신은 무엇을 가장 좋아합니까?'],
+      help: ['Was trinkst du lieber?', 'Ich trinke lieber Tee als Kaffee.', 'Ein Apfel ist gesünder als ein Kuchen.', 'Die Pizza schmeckt am besten.', 'Zu Hause essen ist billiger als im Restaurant.', 'Was isst du am liebsten?'],
+      helpKo: ['무엇을 더 좋아합니까? (마시는 것)', '저는 커피보다 차를 더 좋아합니다.', '사과는 케이크보다 더 건강합니다.', '피자가 가장 맛있습니다.', '집에서 먹는 것이 식당에서 먹는 것보다 더 쌉니다.', '당신은 무엇을 가장 좋아합니까? (먹는 것)'],
       leit: ['Was trinkst du lieber: Tee oder Kaffee?', 'Was isst du am liebsten?', 'Was ist gesünder: ein Apfel oder ein Kuchen?', 'Was ist teurer: zu Hause essen oder im Restaurant?', 'Was trinkst du am meisten?'],
       cards: ['der Tee', 'der Kaffee', 'das Wasser', 'der Apfel', 'der Kuchen', 'gesund', 'Ich trinke lieber Tee als Kaffee.', 'Die Pizza schmeckt am besten.'],
       say: ['Was trinkst du lieber?', 'Ich trinke lieber Tee als Kaffee.', 'Ein Apfel ist gesünder als ein Kuchen.', 'Die Pizza schmeckt am besten.', 'Was isst du am liebsten?'],
@@ -2866,6 +2882,8 @@ const EXAMS = [
       leitKo: ['무엇을 잘할 수 있습니까?', '내일 무엇을 해야 합니까?', '몇 시에 일어납니까?', '주말에 무엇을 하고 싶습니까?', '어디에서 장을 봅니까?'],
       cardsKo: ['~할 수 있다', '~해야 한다', '~하고 싶다', '일어나다', '장을 보다', '전화하다', '저는 피아노를 칠 수 있습니다.', '저는 일곱 시에 일어나야 합니다.'],
       sayKo: ['무엇을 할 수 있습니까?', '저는 요리를 할 수 있습니다.', '저는 일곱 시에 일어나야 합니다.', '저는 주말에 영화관에 가고 싶습니다.', '당신은 무엇을 해야 합니까?'],
+      help: ['Was kannst du gut?', 'Ich kann gut kochen.', 'Ich muss um sieben Uhr aufstehen.', 'Ich will am Wochenende ins Kino gehen.', 'Ich kann nicht gut singen.', 'Was musst du morgen machen?'],
+      helpKo: ['무엇을 잘할 수 있습니까?', '저는 요리를 잘할 수 있습니다.', '저는 일곱 시에 일어나야 합니다.', '저는 주말에 영화관에 가고 싶습니다.', '저는 노래를 잘하지 못합니다.', '당신은 내일 무엇을 해야 합니까?'],
       leit: ['Was kannst du gut?', 'Was musst du morgen machen?', 'Wann stehst du auf?', 'Was willst du am Wochenende machen?', 'Wo kaufst du ein?'],
       cards: ['können', 'müssen', 'wollen', 'aufstehen', 'einkaufen', 'anrufen', 'Ich kann gut kochen.', 'Ich muss um sieben aufstehen.'],
       say: ['Was kannst du gut?', 'Ich kann gut kochen.', 'Ich muss um sieben aufstehen.', 'Ich will am Wochenende ins Kino gehen.', 'Was musst du morgen machen?'],
@@ -2886,6 +2904,8 @@ const EXAMS = [
       leitKo: ['주말에 무엇을 했습니까?', '어디에 갔습니까?', '무엇을 먹었습니까?', '누구를 만났습니까?', '주말은 어땠습니까?'],
       cardsKo: ['하다·만들다', '가다(걸어서)', '타고 가다', '먹다', '자다', '만나다', '저는 영화를 보았습니다.', '저는 공원에 갔습니다.'],
       sayKo: ['주말에 무엇을 했습니까?', '저는 공원에 갔습니다.', '저는 피자를 먹었습니다.', '저는 친구를 만났습니다.', '당신은 무엇을 했습니까?'],
+      help: ['Was hast du am Wochenende gemacht?', 'Ich bin in den Park gegangen.', 'Ich habe Pizza gegessen.', 'Ich habe eine Freundin getroffen.', 'Ich habe einen Film gesehen.', 'Und du?'],
+      helpKo: ['주말에 무엇을 했습니까?', '저는 공원에 갔습니다.', '저는 피자를 먹었습니다.', '저는 친구(여성)를 만났습니다.', '저는 영화를 보았습니다.', '당신은요?'],
       leit: ['Was hast du am Wochenende gemacht?', 'Wohin bist du gegangen?', 'Was hast du gegessen?', 'Wen hast du getroffen?', 'Wie war das Wochenende?'],
       cards: ['gemacht', 'gegangen', 'gefahren', 'gegessen', 'geschlafen', 'getroffen', 'Ich habe einen Film gesehen.', 'Ich bin in den Park gegangen.'],
       say: ['Was hast du am Wochenende gemacht?', 'Ich bin in den Park gegangen.', 'Ich habe Pizza gegessen.', 'Ich habe Ola getroffen.', 'Und du?'],
@@ -2906,6 +2926,8 @@ const EXAMS = [
       leitKo: ['어제 어디에 있었습니까?', '어제 피곤했습니까?', '어렸을 때 어디에 살았습니까?', '어렸을 때 반려동물이 있었습니까?', '학교는 어땠습니까?'],
       cardsKo: ['~였다', '~이 있었다', '어제', '예전에', '어린 시절', '학교', '어제 저는 피곤했습니다.', '예전에 저는 폴란드에 살았습니다.'],
       sayKo: ['어제 어디에 있었습니까?', '어제 저는 피곤했습니다.', '저는 일이 많았습니다.', '예전에 저는 폴란드에 살았습니다.', '당신은 어땠습니까?'],
+      help: ['Wo warst du gestern?', 'Gestern war ich zu Hause.', 'Gestern war ich müde.', 'Ich hatte viel Arbeit.', 'Früher hatte ich mehr Zeit.', 'Wie war das bei dir?'],
+      helpKo: ['어제 어디에 있었습니까?', '어제 저는 집에 있었습니다.', '어제 저는 피곤했습니다.', '저는 일이 많았습니다.', '예전에는 시간이 더 많았습니다.', '당신은 어땠습니까?'],
       leit: ['Wo warst du gestern?', 'Warst du gestern müde?', 'Wo hast du als Kind gewohnt?', 'Hattest du ein Haustier?', 'Wie war die Schule?'],
       cards: ['war', 'hatte', 'gestern', 'früher', 'die Kindheit', 'die Schule', 'Gestern war ich müde.', 'Früher hatte ich eine Katze.'],
       say: ['Wo warst du gestern?', 'Gestern war ich müde.', 'Ich hatte viel Arbeit.', 'Früher wohnte ich in Polen.', 'Wie war das bei dir?'],
@@ -2926,6 +2948,8 @@ const EXAMS = [
       leitKo: ['무엇을 기대합니까?', '무엇에 관심이 있습니까?', '오늘 날씨는 어떻습니까?', '누구를 기다립니까?', '지금 무엇을 생각합니까?'],
       cardsKo: ['기뻐하다·기대하다', '~에 관심이 있다', '비가 오다', '~를 기다리다', '~를 생각하다', '~에 대해 말하다', '저는 휴가를 기대합니다.', '저는 음악에 관심이 있습니다.'],
       sayKo: ['무엇을 기대합니까?', '저는 휴가를 기대합니다.', '저는 음악에 관심이 있습니다.', '오늘은 비가 옵니다.', '저는 버스를 기다립니다.'],
+      help: ['Worauf freust du dich?', 'Ich freue mich auf den Urlaub.', 'Ich interessiere mich für Musik.', 'Ich denke oft an meine Familie.', 'Heute regnet es.', 'Wofür interessierst du dich?'],
+      helpKo: ['무엇을 기대합니까?', '저는 휴가를 기대합니다.', '저는 음악에 관심이 있습니다.', '저는 가족을 자주 생각합니다.', '오늘은 비가 옵니다.', '당신은 무엇에 관심이 있습니까?'],
       leit: ['Worauf freust du dich?', 'Wofür interessierst du dich?', 'Wie ist das Wetter heute?', 'Auf wen wartest du?', 'An wen denkst du oft?'],
       cards: ['sich freuen auf', 'sich interessieren für', 'es regnet', 'warten auf', 'denken an', 'sprechen über', 'Ich freue mich auf den Urlaub.', 'Ich interessiere mich für Musik.'],
       say: ['Worauf freust du dich?', 'Ich freue mich auf den Urlaub.', 'Ich interessiere mich für Musik.', 'Heute regnet es.', 'Ich warte auf den Bus.'],
@@ -2946,6 +2970,8 @@ const EXAMS = [
       leitKo: ['왜 독일어를 배웁니까?', '독일어에서 무엇이 어렵습니까?', '시간이 있으면 무엇을 합니까?', '독일어가 중요하다고 생각합니까?', '다음 시험은 언제인지 압니까?'],
       cardsKo: ['~때문에(이유)', '~라는 것', '~하면', '~인지 아닌지', '시험', '일(직장)', '저는 …해서 독일어를 배웁니다.', '시간이 있으면 저는 책을 읽습니다.'],
       sayKo: ['왜 독일어를 배웁니까?', '저는 독일에서 일하기 때문에 독일어를 배웁니다.', '저는 독일어가 중요하다고 생각합니다.', '시간이 있으면 저는 책을 읽습니다.', '시험이 언제인지 압니까?'],
+      help: ['Warum lernst du Deutsch?', 'Ich lerne Deutsch, weil ich gern reise.', 'Ich denke, dass Deutsch wichtig ist.', 'Wenn ich Zeit habe, lese ich.', 'Ich weiß nicht, wann die Prüfung ist.', 'Weißt du, wann die Prüfung ist?'],
+      helpKo: ['왜 독일어를 배웁니까?', '저는 여행을 좋아하기 때문에 독일어를 배웁니다.', '저는 독일어가 중요하다고 생각합니다.', '시간이 있으면 저는 책을 읽습니다.', '저는 시험이 언제인지 모릅니다.', '시험이 언제인지 압니까?'],
       leit: ['Warum lernst du Deutsch?', 'Was ist schwer, wenn du Deutsch sprichst?', 'Was machst du, wenn du Zeit hast?', 'Denkst du, dass Deutsch wichtig ist?', 'Weißt du, wann die Prüfung ist?'],
       cards: ['weil', 'dass', 'wenn', 'ob', 'die Prüfung', 'die Arbeit', 'Ich lerne Deutsch, weil ich hier arbeite.', 'Wenn ich Zeit habe, lese ich.'],
       say: ['Warum lernst du Deutsch?', 'Ich lerne Deutsch, weil ich hier arbeite.', 'Ich denke, dass Deutsch wichtig ist.', 'Wenn ich Zeit habe, lese ich.', 'Weißt du, wann die Prüfung ist?'],
@@ -2966,6 +2992,8 @@ const EXAMS = [
       leitKo: ['어떤 친구를 좋아합니까?', '근처에 어떤 가게가 있습니까?', '어떤 도시에 살고 싶습니까?', '어떤 영화가 마음에 듭니까?', '어떤 음식을 좋아합니까?'],
       cardsKo: ['이웃', '가게', '영화', '요리된', '열린', '이야기하다', '이분은 베를린에 사는 친구입니다.', '저는 사람들이 친절한 도시를 좋아합니다.'],
       sayKo: ['어떤 친구입니까?', '이분은 베를린에 사는 친구입니다.', '저는 모두가 아는 영화를 좋아합니다.', '저는 가까이 있는 가게에서 장을 봅니다.', '당신은 어떤 도시를 좋아합니까?'],
+      help: ['Wer ist das?', 'Das ist die Freundin, die in Berlin wohnt.', 'Ich habe einen Freund, der gut kocht.', 'Ich mag Filme, die lustig sind.', 'Das ist das Geschäft, das ich mag.', 'Welche Stadt magst du?'],
+      helpKo: ['이 사람은 누구입니까?', '이분은 베를린에 사는 친구입니다.', '저는 요리를 잘하는 친구가 있습니다.', '저는 재미있는 영화를 좋아합니다.', '여기는 제가 좋아하는 가게입니다.', '당신은 어떤 도시를 좋아합니까?'],
       leit: ['Welche Freunde magst du?', 'Welches Geschäft gibt es in der Nähe?', 'In welcher Stadt möchtest du wohnen?', 'Welchen Film magst du?', 'Welches Essen magst du gern?'],
       cards: ['der Nachbar', 'das Geschäft', 'der Film', 'gekocht', 'geöffnet', 'erzählen', 'Das ist die Freundin, die in Berlin wohnt.', 'Ich mag Filme, die lustig sind.'],
       say: ['Wer ist das?', 'Das ist die Freundin, die in Berlin wohnt.', 'Ich mag Filme, die lustig sind.', 'Das ist das Geschäft, das ich mag.', 'Welche Stadt magst du?'],
@@ -2986,6 +3014,8 @@ const EXAMS = [
       leitKo: ['약국에서는 무엇을 팝니까?', '가게는 몇 시에 열립니까?', '독일에서는 어떻게 쓰레기를 분리합니까?', '당신의 집은 언제 지어졌습니까?', '독일어는 어디에서 말해집니까?'],
       cardsKo: ['약', '쓰레기', '열리다', '팔리다', '짓다', '분리하다', '약국에서는 약이 팔립니다.', '가게는 아침 아홉 시에 열립니다.'],
       sayKo: ['약국에서는 무엇이 팔립니까?', '약국에서는 약이 팔립니다.', '가게는 아침 아홉 시에 열립니다.', '독일에서는 쓰레기가 분리됩니다.', '당신의 나라에서는 어떻습니까?'],
+      help: ['Was wird in der Apotheke verkauft?', 'In der Apotheke wird Medizin verkauft.', 'Das Geschäft wird um neun Uhr geöffnet.', 'In Deutschland wird der Müll getrennt.', 'In Korea wird viel Reis gegessen.', 'Wie ist das in deinem Land?'],
+      helpKo: ['약국에서는 무엇이 팔립니까?', '약국에서는 약이 팔립니다.', '가게는 아홉 시에 열립니다.', '독일에서는 쓰레기가 분리됩니다.', '한국에서는 쌀을 많이 먹습니다.', '당신의 나라에서는 어떻습니까?'],
       leit: ['Was wird in der Apotheke verkauft?', 'Wann wird das Geschäft geöffnet?', 'Wie wird der Müll in Deutschland getrennt?', 'Wann wurde das Haus gebaut?', 'Wo wird Deutsch gesprochen?'],
       cards: ['die Medizin', 'der Müll', 'öffnen', 'verkaufen', 'bauen', 'trennen', 'Hier wird Medizin verkauft.', 'Das Geschäft wird um neun geöffnet.'],
       say: ['Was wird verkauft?', 'In der Apotheke wird Medizin verkauft.', 'Das Geschäft wird um neun Uhr geöffnet.', 'In Deutschland wird der Müll getrennt.', 'Wie ist das in deinem Land?'],
@@ -3006,6 +3036,8 @@ const EXAMS = [
       leitKo: ['돈이 많다면 무엇을 하겠습니까?', '시간이 더 있다면 무엇을 하겠습니까?', '어디에서 살고 싶습니까?', '무엇이 되고 싶습니까?', '친구에게 무엇을 선물하겠습니까?'],
       cardsKo: ['여행', '집', '자동차', '꿈', '~하겠습니다', '~가 있다면', '돈이 많다면 저는 여행을 하겠습니다.', '저는 바다 옆에 살고 싶습니다.'],
       sayKo: ['돈이 많다면 무엇을 하겠습니까?', '돈이 많다면 저는 큰 여행을 하겠습니다.', '저는 바다 옆에 집을 사겠습니다.', '시간이 더 있다면 저는 더 자주 운동하겠습니다.', '당신은 무엇을 하겠습니까?'],
+      help: ['Was würdest du machen?', 'Wenn ich viel Geld hätte, würde ich reisen.', 'Ich würde ein Haus am Meer kaufen.', 'Wenn ich mehr Zeit hätte, würde ich mehr Sport machen.', 'Ich wäre gern Lehrerin / Lehrer.', 'Und du, was würdest du machen?'],
+      helpKo: ['당신은 무엇을 하겠습니까?', '돈이 많다면 저는 여행을 하겠습니다.', '저는 바다 옆에 집을 사겠습니다.', '시간이 더 있다면 저는 운동을 더 하겠습니다.', '저는 선생님이 되고 싶습니다.', '그럼 당신은 무엇을 하겠습니까?'],
       leit: ['Was würdest du machen, wenn du viel Geld hättest?', 'Was würdest du machen, wenn du mehr Zeit hättest?', 'Wo würdest du gern wohnen?', 'Was wärst du gern?', 'Was würdest du deinen Freunden schenken?'],
       cards: ['die Reise', 'das Haus', 'das Auto', 'der Traum', 'ich würde', 'ich hätte', 'Wenn ich Geld hätte, würde ich reisen.', 'Ich wäre gern Ärztin.'],
       say: ['Was würdest du machen?', 'Wenn ich viel Geld hätte, würde ich reisen.', 'Ich würde ein Haus am Meer kaufen.', 'Ich wäre gern Ärztin.', 'Und du, was würdest du machen?'],
@@ -3909,7 +3941,10 @@ const PARTNERS = {
   m: { name: 'Ben', gender: 'm', voice: 'MMwckqU477oQxnAk1SgA', ko: '남성' }
 };
 /* 초급(A1) 연습은 말이 더 느리게 나오도록 속도를 낮춥니다. */
-const examinerSpeed = ex => ex.level === 'A1' ? 0.75 : 0.85;
+const examinerSpeed = ex => ex.level === 'A1' ? 0.7 : 0.85;
+/* 연습(Übung)은 속도 설정이 실제로 적용되는 음성 모델과, 천천히 또렷하게 말하는 목소리를 씁니다. */
+const SLOW_MODEL = 'eleven_flash_v2_5';
+const SLOW_VOICE = { examiner: 'x9tGbxYQaoX72Y8bvqBh', f: 'le3O97c6UClnRdpxkDTb', m: 'MJ0RnG71ty4LH3dvNfSd' };
 const speedOf = (ex, skill) => ex.level === 'A1' ? { low: 0.7, mid: 0.7, high: 0.75 }[skill] : SKILLS[skill].speed;
 const SKILLS = {
   low: { ko: '하', speed: 0.8, rule: ' Innerhalb dieses Niveaus sprichst du im unteren Bereich: besonders einfache, kurze Sätze, nur sehr häufige Wörter, kaum Nebensätze, wenn möglich nur ein Satz pro Beitrag, deutlich und langsam. Du suchst manchmal nach einem Wort.' },
@@ -4186,8 +4221,7 @@ const A1_HELP = [
   ['Ja. / Nein.', '네. / 아니요.'], ['Und du?', '너는요?']
 ];
 const A1_START = [
-  ['Ich heiße … / Ich bin …', '저는 …입니다.'], ['Ich habe …', '저는 …이(가) 있습니다.'], ['Das ist …', '이것은 …입니다.'],
-  ['Ich mag …', '저는 …을(를) 좋아합니다.'], ['Ich komme aus …', '저는 …에서 왔습니다.'], ['Es gibt …', '…이(가) 있습니다.']
+  ['Ich habe …', '저는 …이(가) 있습니다.'], ['Das ist …', '이것은 …입니다.'], ['Ich mag …', '저는 …을(를) 좋아합니다.']
 ];
 /* A1: 말하는 동안 볼 수 있도록 도움이 되는 표현을 과제지 위의 따로 된 카드로 보여 줍니다. */
 function helpHtml(ex, T) {
@@ -4195,7 +4229,8 @@ function helpHtml(ex, T) {
   const rd = T.sheet.find(b => b.t === 'redemittel');
   let h = '';
   if (rd && rd.ko) h += '<p class="kb">이 Lektion에서 쓰기 좋은 문장</p>' + lst(rd.items.map((x, i) => [x, rd.ko[i] || '']));
-  h += '<p class="kb">문장이 바로 떠오르지 않을 때</p>' + lst(A1_START) + '<p class="kb">못 알아들었을 때</p>' + lst(A1_HELP);
+  if (parseInt(String(ex.id).slice(-2), 10) <= 8) h += '<p class="kb">문장이 바로 떠오르지 않을 때</p>' + lst(A1_START);
+  h += '<p class="kb">못 알아들었을 때</p>' + lst(A1_HELP);
   return h;
 }
 function sheetHtml(ex, T, chosenId) {
@@ -4485,7 +4520,7 @@ async function runExaminer(phase, o) {
     partner_name: A.partner.name, question2: o.question2 || '', procedure: A.T.procedure
   };
   const label = phase === 'announce' ? 'intro' : phase;
-  const s = new Session('examiner', vars, { ticket: A.ticket }, A.ex.hidden ? { tts: { speed: examinerSpeed(A.ex) } } : undefined);
+  const s = new Session('examiner', vars, { ticket: A.ticket }, A.ex.hidden ? { tts: { model_id: SLOW_MODEL, voice_id: SLOW_VOICE.examiner, speed: examinerSpeed(A.ex) } } : undefined);
   S.session = s; wireSession(s, 'examiner', label);
   const tk = uiTick();
   try {
@@ -4544,7 +4579,7 @@ function longHint(A) {
 function runDialog() {
   const A = S.A, T = A.T, tm = A.timing, mono = T.kind === 'monolog';
   return new Promise(async (resolve, reject) => {
-    const s = new Session('partner', partnerVars(A), { ticket: A.ticket }, { tts: { voice_id: A.partner.voice, speed: speedOf(A.ex, A.skill) } });
+    const s = new Session('partner', partnerVars(A), { ticket: A.ticket }, (A.ex.hidden ? { tts: { model_id: SLOW_MODEL, voice_id: SLOW_VOICE[A.partner.gender], speed: speedOf(A.ex, A.skill) } } : { tts: { voice_id: A.partner.voice, speed: speedOf(A.ex, A.skill) } }));
     S.session = s; wireSession(s, 'partner', 'dialog');
     try { await s.open(); } catch (e) { return reject(e); }
     A.dialogStart = performance.now(); A.started = new Date().toISOString(); A.heard = false;
