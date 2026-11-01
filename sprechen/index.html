@@ -238,7 +238,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .sheet li.sel{border-color:var(--acc);background:var(--acc-w)}
 .sheet .hint{display:block;color:var(--muted);font-family:var(--font);font-size:14px;line-height:1.55;margin-top:2px}
 .sheet .kb{font-size:14px;line-height:1.65;color:var(--muted);font-family:var(--font)}
-.cards4{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.cards4{display:grid;grid-template-columns:repeat(auto-fit,minmax(100%,1fr));gap:8px}
 .cards4 div{border:1px solid var(--acc-line);background:var(--acc-w);border-radius:8px;padding:14px 10px;font-size:17px;text-align:center;font-family:var(--serif);font-weight:700}
 table.sched{width:100%;border-collapse:collapse;font-size:15px}
 table.sched td,table.sched th{border:1px solid var(--line);padding:9px 12px;text-align:left}
@@ -382,6 +382,9 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 
 .sheet ul.helpgrid{list-style:none;margin:6px 0 12px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
 .sheet ul.helpgrid li{padding:8px 12px;border:1px solid var(--line);border-radius:10px;margin:0}
+
+.cards4 div{overflow-wrap:normal;word-break:normal;hyphens:none}
+.cards4 div,.cards4 div.wide{grid-column:1/-1;text-align:left;font-size:16px;line-height:1.5;padding:10px 16px}
 
 </style>
 </head>
@@ -4632,7 +4635,7 @@ function sheetHtml(ex, T, chosenId) {
     else if (b.t === 'i') h += '<p class="sub">' + pair(b.s, b.ko, 'gl') + '</p>';
     else if (b.t === 'p') h += hasKo(b.s) ? '<p class="kb">' + esc(b.s) + '</p>' : '<p class="de' + (b.s.length > 160 ? ' read' : '') + '">' + esc(b.s) + '</p>';
     else if (b.t === 'ul') h += '<ul>' + b.items.map((x, n) => '<li class="' + (hasKo(x) ? 'kb' : 'de') + '">' + pair(x, b.ko && b.ko[n], 'gl') + '</li>').join('') + '</ul>';
-    else if (b.t === 'cards') h += '<div class="cards4">' + b.items.map((x, n) => '<div>' + esc(x) + (b.ko && b.ko[n] ? '<small>' + esc(b.ko[n]) + '</small>' : '') + '</div>').join('') + '</div>';
+    else if (b.t === 'cards') h += '<div class="cards4">' + b.items.map((x, n) => '<div' + (x.length > 26 ? ' class="wide"' : '') + '>' + esc(x) + (b.ko && b.ko[n] ? '<small>' + esc(b.ko[n]) + '</small>' : '') + '</div>').join('') + '</div>';
     else if (b.t === 'sched') h += '<p class="tt">' + esc(b.title) + '</p><table class="sched"><tr><th>Uhrzeit</th><th>Termin</th></tr>' + b.rows.map(r => '<tr><td>' + esc(r[0]) + '</td><td>' + esc(r[1]) + '</td></tr>').join('') + '</table>' + (b.note ? '<p class="kb">' + esc(b.note) + '</p>' : '');
     else if (b.t === 'redemittel' && a1) continue;
     else if (b.t === 'redemittel' && b.ko) h += '<p class="kb">참고 표현</p><ul>' + b.items.map((x, n) => '<li class="de">' + esc(x) + (b.ko[n] ? '<span class="gl">' + esc(b.ko[n]) + '</span>' : '') + '</li>').join('') + '</ul>';
