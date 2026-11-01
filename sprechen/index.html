@@ -2682,7 +2682,7 @@ const EXAMS = [
       procedure: 'Sie und die Partnerin sprechen frei über das Thema der Lektion. Man fragt sich gegenseitig und antwortet in ganzen Sätzen. Ich sage Bescheid, wenn die Zeit um ist.',
       flow: {
         student: head + '\n1. A beginnt und sagt etwas zum Thema oder stellt dir eine Frage. Reagiere kurz darauf und antworte, wenn A fragt, mit einem kleinen Detail. Dann stellst du die erste Frage aus deiner Liste.\n2. Führe das Gespräch mit den Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules,
-        partner: head + '\n1. Auf „Bitte beginnen Sie.“ sage kurz „Hallo! Heute sprechen wir über ' + c.topicDe + '.“ und stelle sofort die erste Frage: „' + c.pqs[0] + '“\n2. Höre die Antwort, reagiere kurz und führe das Gespräch mit den weiteren Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules
+        partner: head + '\n1. Auf „Bitte beginnen Sie.“ sage kurz „Hallo! Ich bin {n}. Heute sprechen wir über ' + c.topicDe + '.“ und stelle sofort die erste Frage: „' + c.pqs[0] + '“\n2. Höre die Antwort, reagiere kurz und führe das Gespräch mit den weiteren Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules
       },
       redemittel: 'Fragen und Antworten: ' + say.join(' · ') + ' · „Und du?“ · „Ich mag …“ · „Das ist gut.“',
       phrases: c.phrases.concat([
@@ -3091,6 +3091,7 @@ const EXAMS = [
     const rules = RULES.map((r, i) => (i + 3) + '. ' + r).join('\n');
     const say = c.say.map(s => '„' + s + '“');
     return Object.assign({}, BASE, {
+      askStarter: false, starterFixed: 'partner',
       n: 1, no: 'Teil 1', name: 'Gespräch zum Kapitel', ko: '챕터 주제 대화',
       summary_ko: c.summary_ko,
       timing: { official: 180, extra: 60, prep: 30 }, minFinish: 40, prepLabel: '카드 읽기(약 30초)',
@@ -3105,11 +3106,11 @@ const EXAMS = [
         { t: 'redemittel', items: c.say, ko: c.sayKo }
       ],
       choice: null,
-      intro: 'Wir machen eine Übung zum ' + label + ': „' + c.title + '“. Sie sprechen etwa drei Minuten mit {dat} über das Thema ' + c.topicDe + '. Wer möchte anfangen?',
+      intro: 'Wir machen eine Übung zum ' + label + ': „' + c.title + '“. Sie sprechen etwa drei Minuten mit {dat} über das Thema ' + c.topicDe + '.',
       procedure: 'Sie und die Partnerin sprechen frei über das Thema des Kapitels. Man fragt sich gegenseitig, antwortet und nennt die eigene Meinung mit einem Grund. Ich sage Bescheid, wenn die Zeit um ist.',
       flow: {
         student: head + '\n1. A beginnt und sagt etwas zum Thema oder stellt dir eine Frage. Reagiere kurz darauf und antworte, wenn A fragt, mit einem kleinen Detail. Dann stellst du die erste Frage aus deiner Liste.\n2. Führe das Gespräch mit den Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules,
-        partner: head + '\n1. Auf „Bitte beginnen Sie.“ sage kurz „Hallo! Heute sprechen wir über ' + c.topicDe + '.“ und stelle sofort die erste Frage: „' + c.pqs[0] + '“\n2. Höre die Antwort, reagiere kurz und führe das Gespräch mit den weiteren Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules
+        partner: head + '\n1. Auf „Bitte beginnen Sie.“ sage kurz „Hallo! Ich bin {n}. Heute sprechen wir über ' + c.topicDe + '.“ und stelle sofort die erste Frage: „' + c.pqs[0] + '“\n2. Höre die Antwort, reagiere kurz und führe das Gespräch mit den weiteren Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules
       },
       redemittel: 'Fragen und Antworten: ' + say.join(' · ') + ' · „Und du?“ · „Warum?“ · „Das finde ich auch.“',
       phrases: c.phrases.concat([
@@ -3468,6 +3469,7 @@ const EXAMS = [
     const rules = RULES.map((r, i) => (i + 3) + '. ' + r).join('\n');
     const say = c.say.map(s => '„' + s + '“');
     return Object.assign({}, BASE, {
+      askStarter: false, starterFixed: 'partner',
       n: 1, no: 'Teil 1', name: 'Gespräch zum Kapitel', ko: '챕터 주제 대화',
       summary_ko: c.summary_ko,
       timing: { official: 240, extra: 60, prep: 30 }, minFinish: 60, prepLabel: '카드 읽기(약 30초)',
@@ -3482,11 +3484,11 @@ const EXAMS = [
         { t: 'redemittel', items: c.say, ko: c.sayKo }
       ],
       choice: null,
-      intro: 'Wir machen eine Übung zum ' + label + ': „' + c.title + '“. Sie sprechen etwa vier Minuten mit {dat} über das Thema ' + c.topicDe + '. Wer möchte anfangen?',
+      intro: 'Wir machen eine Übung zum ' + label + ': „' + c.title + '“. Sie sprechen etwa vier Minuten mit {dat} über das Thema ' + c.topicDe + '.',
       procedure: 'Sie und die Partnerin sprechen frei über das Thema des Kapitels. Man fragt sich gegenseitig, antwortet und nennt die eigene Meinung mit einem Grund und einem Beispiel. Ich sage Bescheid, wenn die Zeit um ist.',
       flow: {
         student: head + '\n1. A beginnt und sagt etwas zum Thema oder stellt dir eine Frage. Reagiere kurz darauf und antworte, wenn A fragt, mit einem kleinen Detail. Dann stellst du die erste Frage aus deiner Liste.\n2. Führe das Gespräch mit den Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules,
-        partner: head + '\n1. Auf „Bitte beginnen Sie.“ sage kurz „Hallo! Heute sprechen wir über ' + c.topicDe + '.“ und stelle sofort die erste Frage: „' + c.pqs[0] + '“\n2. Höre die Antwort, reagiere kurz und führe das Gespräch mit den weiteren Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules
+        partner: head + '\n1. Auf „Bitte beginnen Sie.“ sage kurz „Hallo! Ich bin {n}. Heute sprechen wir über ' + c.topicDe + '.“ und stelle sofort die erste Frage: „' + c.pqs[0] + '“\n2. Höre die Antwort, reagiere kurz und führe das Gespräch mit den weiteren Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules
       },
       redemittel: 'Fragen und Antworten: ' + say.join(' · ') + ' · „Und du?“ · „Warum?“ · „Meiner Meinung nach …“',
       phrases: c.phrases.concat([
@@ -3926,6 +3928,7 @@ const EXAMS = [
     const rules = RULES.map((r, i) => (i + 3) + '. ' + r).join('\n');
     const say = c.say.map(s => '„' + s + '“');
     return Object.assign({}, BASE, {
+      askStarter: false, starterFixed: 'partner',
       n: 1, no: 'Teil 1', name: 'Diskussion zum Kapitel', ko: '챕터 주제 토론',
       summary_ko: c.ko1,
       timing: { official: 300, extra: 60, prep: 60 }, minFinish: 90, prepLabel: '카드 읽기(약 1분)',
@@ -3941,11 +3944,11 @@ const EXAMS = [
         { t: 'redemittel', items: c.say, ko: c.sayKo }
       ],
       choice: null,
-      intro: 'Wir machen eine Übung zum ' + label + ': „' + c.title + '“. Sie diskutieren etwa fünf Minuten mit {dat} über die Frage: ' + c.question + ' Äußern Sie Ihre Meinung, begründen Sie sie und sprechen Sie auch über eine mögliche Lösung. Wer möchte anfangen?',
+      intro: 'Wir machen eine Übung zum ' + label + ': „' + c.title + '“. Sie diskutieren etwa fünf Minuten mit {dat} über die Frage: ' + c.question + ' Äußern Sie Ihre Meinung, begründen Sie sie und sprechen Sie auch über eine mögliche Lösung.',
       procedure: 'Sie und die Partnerin diskutieren frei über die Frage des Kapitels. Man nennt die eigene Meinung mit einem Grund und einem Beispiel, reagiert auf die Argumente der anderen Person und spricht am Ende über eine Lösung. Ich sage Bescheid, wenn die Zeit um ist.',
       flow: {
         student: head + '\n1. A beginnt und sagt etwas zum Thema oder stellt dir eine Frage. Reagiere kurz darauf, nenne deine Haltung mit einem Grund und stelle dann die erste Frage aus deiner Liste.\n2. Führe das Gespräch mit den Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules,
-        partner: head + '\n1. Auf „Bitte beginnen Sie.“ sage kurz „Hallo! Heute sprechen wir über ' + c.topicDe + '.“ und stelle sofort die erste Frage: „' + pqs[0] + '“\n2. Höre die Antwort, reagiere kurz, nenne deine Haltung mit einem Grund und führe das Gespräch mit den weiteren Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules
+        partner: head + '\n1. Auf „Bitte beginnen Sie.“ sage kurz „Hallo! Ich bin {n}. Heute sprechen wir über ' + c.topicDe + '.“ und stelle sofort die erste Frage: „' + pqs[0] + '“\n2. Höre die Antwort, reagiere kurz, nenne deine Haltung mit einem Grund und führe das Gespräch mit den weiteren Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules
       },
       redemittel: 'Meinung und Argumente: ' + say.join(' · ') + ' · „Wie siehst du das?“ · „Da hast du zwar recht, aber …“ · „Ein Beispiel dafür ist …“ · „Eine Lösung könnte sein, …“',
       phrases: c.phrases.concat([
@@ -4337,6 +4340,9 @@ const PARTNERS = {
 /* 말하기 속도: 학생이 막대로 정합니다(0.7~1.2). 연습(Übung)은 항상 이 값을 쓰고, 모의고사는 학생이 막대를 움직인 뒤부터 씁니다. */
 /* 연습(Übung)은 속도 설정이 실제로 적용되는 음성 모델과, 천천히 또렷하게 말하는 목소리를 씁니다. */
 const SLOW_MODEL = 'eleven_v3_conversational';
+/* 연습(Übung): 학생이 독일어로 "더 천천히" 하고 말하면 파트너가 문장을 짧게 끊어 천천히 다시 말합니다. */
+const SLOW_RULE = ' Sprich von Anfang an ruhig und deutlich, in kurzen Sätzen. Sagt A „Langsamer, bitte“, „Bitte langsamer“, „Noch langsamer“, „Sehr langsam, bitte“ oder „Ich verstehe nicht“, dann wiederhole sofort deinen letzten Satz langsamer: nur kurze Hauptsätze, einfache Wörter, nach jeder kleinen Wortgruppe eine Pause (Komma oder „…“). Bei „Noch langsamer“ oder „Sehr langsam“ sprichst du fast Wort für Wort mit deutlichen Pausen. Bleibe danach bei diesem langsameren Stil, bis A sagt, dass du normal sprechen kannst. Erkläre dabei nichts und entschuldige dich nicht lange.';
+const SLOW_HINT = "상대의 말이 너무 빠르면 독일어로 'Langsamer, bitte.'(더 천천히), 'Noch langsamer, bitte.'(더더 천천히), 'Sehr langsam, bitte.'(아주 천천히)라고 말하십시오. 상대가 문장을 짧게 끊어 천천히 다시 말해 줍니다.";
 const SLOW_VOICE = { examiner: 'x9tGbxYQaoX72Y8bvqBh', f: 'Z7EQwZlWLHEUmVlc3zrw', m: 'NbcmfEb55Wznc9QUicaX' };
 const SKILLS = {
   low: { ko: '하', speed: 0.8, rule: ' Innerhalb dieses Niveaus sprichst du im unteren Bereich: besonders einfache, kurze Sätze, nur sehr häufige Wörter, kaum Nebensätze, wenn möglich nur ein Satz pro Beitrag, deutlich und langsam. Du suchst manchmal nach einem Wort.' },
@@ -4848,8 +4854,8 @@ function startPrep(ex, tn) {
   $('#prepClock').textContent = '';
   $('#prepTimerNote').textContent = (T.prepLabel || '준비 시간') + ': ' + fmt(tm.prep) + (ex.hidden ? '. 카드를 읽고 먼저 생각해 보는 시간입니다.' : '. 실제 시험의 준비 시간을 따릅니다.');
   clearInterval(S.prepTimer); $('#btnPrepTimer').disabled = false;
-  const who = T.askStarter ? '시작하면 시험관이 먼저 누가 시작할지 묻습니다.' : (T.kind === 'monolog' ? '시작하면 시험관의 안내 뒤에 바로 이야기를 시작합니다.' : '시작하면 시험관의 안내 뒤에 파트너가 먼저 발표합니다.');
-  $('#timeInfo').innerHTML = '시험 시간 <b>' + fmt(tm.official) + '</b>에 연장 시간 <b>' + fmt(tm.extra) + '</b>이 더해져 최대 <b>' + fmt(tm.official + tm.extra) + '</b>입니다. 시간이 되면 시험관이 안내합니다. ' + who;
+  const who = ex.hidden ? '시작하면 파트너가 먼저 인사하며 대화를 이끌어 갑니다. 진행자는 없습니다. ' + SLOW_HINT : T.askStarter ? '시작하면 시험관이 먼저 누가 시작할지 묻습니다.' : (T.kind === 'monolog' ? '시작하면 시험관의 안내 뒤에 바로 이야기를 시작합니다.' : '시작하면 시험관의 안내 뒤에 파트너가 먼저 발표합니다.');
+  $('#timeInfo').innerHTML = '시험 시간 <b>' + fmt(tm.official) + '</b>에 연장 시간 <b>' + fmt(tm.extra) + '</b>이 더해져 최대 <b>' + fmt(tm.official + tm.extra) + '</b>입니다. ' + (ex.hidden ? '시간이 되면 대화가 끝납니다. ' : '시간이 되면 시험관이 안내합니다. ') + who;
   $('#startErr').textContent = '';
   show('v-prep');
 }
@@ -4875,7 +4881,7 @@ function fill(str, A) {
 function partnerVars(A) {
   const T = A.T;
   return {
-    partner_name: A.partner.name, exam_label: A.ex.label, level: A.ex.level, level_rules: APP.levels[A.ex.level] + SKILLS[A.skill].rule + (A.partner.gender === 'm' ? ' Du bist männlich: Teilnehmer B, nicht Teilnehmerin.' : ''),
+    partner_name: A.partner.name, exam_label: A.ex.label, level: A.ex.level, level_rules: APP.levels[A.ex.level] + SKILLS[A.skill].rule + (A.partner.gender === 'm' ? ' Du bist männlich: Teilnehmer B, nicht Teilnehmerin.' : '') + (A.ex.hidden ? SLOW_RULE : ''),
     teil_label: T.no + ' · ' + T.name, task_text: taskTextDe(A.ex, T, A.studentItem && A.studentItem.id),
     flow: fill(A.starter === 'student' ? T.flow.student : T.flow.partner, A), redemittel: T.redemittel
   };
@@ -4994,7 +5000,7 @@ function runDialog() {
     };
     s.onClose = () => { if (!finished) finish(S.abort ? 'abort' : 'disconnect'); };
     if (mono) setStage('혼자 이야기하기', '파트너는 듣기만 합니다. 이야기가 끝나면 "여기서 끝내기"를 누르십시오. 시간이 되면 시험관이 알려 줍니다.');
-    else setStage('대화 중', A.starter === 'partner' ? A.partner.name + '가 먼저 말합니다. 끝까지 듣고 질문이나 반응으로 이어 가십시오.' : '먼저 말씀하십시오. 2초 안에 시작하지 않으면 ' + A.partner.name + '가 먼저 시작합니다. 파트너는 끝까지 듣습니다.');
+    else setStage('대화 중', A.ex.hidden ? A.partner.name + '가 인사하며 대화를 시작합니다. 끝까지 듣고 질문이나 반응으로 이어 가십시오. ' + SLOW_HINT : A.starter === 'partner' ? A.partner.name + '가 먼저 말합니다. 끝까지 듣고 질문이나 반응으로 이어 가십시오.' : '먼저 말씀하십시오. 2초 안에 시작하지 않으면 ' + A.partner.name + '가 먼저 시작합니다. 파트너는 끝까지 듣습니다.');
     if (A.starter === 'partner' && !mono) s.sendText('Bitte beginnen Sie.');
     const h = longHint(A);
     S.tick = setInterval(() => {
@@ -5093,9 +5099,11 @@ async function startExam() {
   setStage('연결 중입니다', '');
   show('v-exam');
   try {
-    // 1) 시험관 안내
+    // 1) 시험관 안내 (챕터 연습은 진행자 없이 파트너가 인사하며 먼저 시작합니다)
     const first = fill(T.intro, A);
-    if (T.askStarter) {
+    if (ex.hidden) {
+      // 진행자 없음
+    } else if (T.askStarter) {
       setStage('시험관 안내', "시험관의 질문에 대답하십시오. 먼저 시작하려면 'Ich möchte anfangen.'이라고 말합니다.");
       await runExaminer('intro', { first });
     } else {
@@ -5103,12 +5111,12 @@ async function startExam() {
       await runExaminer('announce', { first });
     }
     if (S.abort) throw new Error('abort');
-    A.starter = detectStarter(A);
+    A.starter = ex.hidden ? 'partner' : detectStarter(A);
     // 2) 파트너 대화(또는 혼자 말하기)
     setStage('파트너 연결 중', '');
     const res = await runDialog();
     // 3) 추가 질문 또는 마무리
-    if (res === 'time' || res === 'user') {
+    if (!ex.hidden && (res === 'time' || res === 'user')) {
       try {
         if (T.followup) {
           const f = followupLines(A, res);
@@ -5277,7 +5285,7 @@ function analyze(T, a, studentItem) {
 }
 
 /* ------------------------------------------------------------------ 시도 종료 화면 */
-const REASON = { reload: '시험 도중 새로고침하거나 창을 닫아 중단되었습니다. 1회로 계산됩니다.', time: '시간이 되어 시험관이 마무리했습니다.', user: '내가 끝냈습니다.', abort: '중단했습니다.', disconnect: '연결이 끊어졌습니다.' };
+const REASON = { reload: '시험 도중 새로고침하거나 창을 닫아 중단되었습니다. 1회로 계산됩니다.', time: '시간이 되어 대화가 끝났습니다.', user: '내가 끝냈습니다.', abort: '중단했습니다.', disconnect: '연결이 끊어졌습니다.' };
 const WHO_KO = { examiner: '시험관', partner: '파트너', student: '나' };
 function transcriptHtml(turns, whoStudent) {
   const bl = [];
@@ -5687,7 +5695,7 @@ mountSens(); mountPrefs();
 $('#btnPrepBack').onclick = () => { clearInterval(S.prepTimer); renderToc(); };
 $('#btnPrepTimer').onclick = prepTimer;
 $('#btnStart').onclick = () => { $('#btnStart').disabled = true; clearInterval(S.prepTimer); startExam().finally(() => { $('#btnStart').disabled = false; }); };
-$('#btnFinish').onclick = () => { if (confirm('여기서 끝내면 시험관이 이어서 안내합니다. 끝낼까요?')) S.finishReq = true; };
+$('#btnFinish').onclick = () => { if (confirm(isUebCtx() || (S.A && S.A.ex.hidden) ? '여기서 대화를 끝낼까요?' : '여기서 끝내면 시험관이 이어서 안내합니다. 끝낼까요?')) S.finishReq = true; };
 $('#btnAbort').onclick = () => { if (confirm('중단하면 이번 시도 1회가 사용됩니다. 중단할까요?')) S.abort = true; };
 $('#btnResultAll').onclick = () => makeResultFile(myExams().map(e => e.id));
 $('#exNotes').addEventListener('input', () => { if (S.cur) S.notes[ckey(S.cur.ex, S.cur.t)] = $('#exNotes').value; });
