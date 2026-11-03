@@ -31,7 +31,7 @@
     },
     {
       "de": "Manche fragen mich, ob nachts überhaupt was los ist. Da muss ich echt lachen. Nachts ist man ziemlich auf sich gestellt: Die Ärztin vom Dienst ist für mehrere Stationen zuständig, und man muss abwägen, wann man sie ruft. Lieber einmal zu oft als einmal zu wenig, sag ich mir, weil – ein Anruf zu viel ist bloß lästig, einen zu wenig kann man nicht wiedergutmachen. Das hab ich gelernt in all den Jahren, nicht aus dem Lehrbuch.",
-      "ko": "밤에 할 일이 있기는 하냐고 묻는 사람들도 있어요. 그럴 때는 정말 웃음이 나요. 밤에는 꽤 많은 것을 혼자 감당해야 해요. 당직 의사는 여러 병동을 맡고 있어서, 언제 부를지 따져 봐야 하거든요. 저는 '한 번 덜 부르는 것보다 한 번 더 부르는 게 낫다'고 스스로에게 말해요. 왜냐하면, 괜히 한 번 더 건 전화는 귀찮을 뿐이지만, 걸어야 할 전화를 한 번 안 걸면 되돌릴 수 없으니까요. 이건 교과서에서가 아니라 그 오랜 세월 동안 배운 거예요."
+      "ko": "밤에 할 일이 있기는 하냐고 묻는 사람들도 있어요. 그럴 때는 정말 웃음이 나요. 밤에는 꽤 많은 것을 혼자 감당해야 해요. 당직 의사는 여러 병동을 맡고 있어서, 언제 부를지 따져 봐야 하거든요. 저는 한 번 덜 부르는 것보다 한 번 더 부르는 게 낫다고 스스로에게 말해요. 왜냐하면, 괜히 한 번 더 건 전화는 귀찮을 뿐이지만, 걸어야 할 전화를 한 번 안 걸면 되돌릴 수 없으니까요. 이건 교과서에서가 아니라 그 오랜 세월 동안 배운 거예요."
     },
     {
       "de": "Um sechs fängt der Frühdienst an, und um Viertel nach sechs gebe ich die Station ab. Dann radle ich nach Hause, über die Weser, und im Frühjahr wird es dabei gerade hell. Die ganze Stadt fährt zur Arbeit, nur ich fahre in die andere Richtung. Diesen Moment mag ich ziemlich gern, obwohl – eigentlich will ich dann nur noch ins Bett. Wenn mich jemand fragt, ob ich zurück in den Tagdienst möchte: nee. Noch nicht.",
@@ -52,7 +52,7 @@
       "answer": 1,
       "evidence": "Wir haben ihre Schilderung behutsam gekürzt, ihre Sprechweise aber bewusst beibehalten.",
       "pairs": [["ihre Schilderung behutsam gekürzt", "Tjadens Bericht etwas verkürzt"], ["ihre Sprechweise aber bewusst beibehalten", "ihren Sprechstil aber bewahrt"]],
-      "explain": "기자는 탸덴 씨의 이야기를 조심스럽게 줄였지만(behutsam gekürzt) 말투는 일부러 그대로 두었다고(beibehalten) 해요. 정답은 이것을 '조금 줄이고 말하는 방식은 지켰다'로 바꿔 말했어요. 문어로 옮겼다거나 줄이지 않았다는 말은 본문과 반대이고, 이 글은 탸덴 씨가 직접 쓴 것이 아니라 기자가 기록한 거예요."
+      "explain": "기자는 탸덴 씨의 이야기를 조심스럽게 줄였지만(behutsam gekürzt) 말투는 일부러 그대로 두었다고(beibehalten) 해요. 정답은 이것을 조금 줄이되 말하는 방식은 지켰다는 내용으로 바꿔 말했어요. 문어로 옮겼다거나 줄이지 않았다는 말은 본문과 반대이고, 이 글은 탸덴 씨가 직접 쓴 것이 아니라 기자가 기록한 거예요."
     },
     {
       "type": "rfn",
@@ -61,7 +61,7 @@
       "answer": 1,
       "evidence": "Gemeldet hab ich mich damals freiwillig",
       "pairs": [["freiwillig", "keine andere Wahl gelassen"]],
-      "explain": "탸덴 씨는 고정 야간 근무에 스스로 자원했다고(freiwillig gemeldet) 말해요. 그래서 '병원이 다른 선택지를 주지 않았다'는 문장은 본문과 맞지 않아요."
+      "explain": "탸덴 씨는 고정 야간 근무에 스스로 자원했다고(freiwillig gemeldet) 말해요. 그래서 병원이 다른 선택지를 주지 않았다는 문장은 본문과 맞지 않아요."
     },
     {
       "type": "mc",
@@ -77,11 +77,11 @@
       "type": "mc",
       "kind": "meaning",
       "q": "Was drückt „eine geschlagene halbe Stunde lang“ im Text aus?",
-      "options": ["Die Erzählerin empfindet die Dauer des Gesprächs als bemerkenswert lang.", "Die Pflegerin beendet das Gespräch nach exakt dreißig Minuten selbst.", "Für beide Frauen vergeht die Zeit im Gespräch so schnell wie im Flug.", "Die Dame beginnt erst nach dreißig Minuten Wartezeit mit dem Erzählen."],
+      "options": ["Die Erzählerin empfindet die Dauer des Gesprächs als bemerkenswert lang.", "Die Dame hat sich im Streit um die Hecke längst geschlagen gegeben.", "Für beide Frauen vergeht die Zeit im Gespräch so schnell wie im Flug.", "Die Dame beginnt erst nach dreißig Minuten Wartezeit mit dem Erzählen."],
       "answer": 0,
       "evidence": "eine geschlagene halbe Stunde lang",
       "pairs": [["eine geschlagene halbe Stunde lang", "als bemerkenswert lang"]],
-      "explain": "geschlagen은 시간 표현 앞에서 '꼬박, 무려'라는 뜻이에요. 말하는 사람이 그 시간을 꽤 길게 느낀다는 것을 보여 줘요. 정확히 30분에 끊었다거나 시간이 빨리 지나갔다는 뜻은 없어요."
+      "explain": "geschlagen은 시간 표현 앞에서 '꼬박, 무려'라는 뜻이에요. 말하는 사람이 그 시간을 꽤 길게 느낀다는 것을 보여 줘요. 시간이 빨리 지나갔다거나 30분을 기다렸다는 뜻은 없어요. geschlagen을 '(싸움에서) 진'으로 읽는 것은 함정이고, 그분은 지금도 이웃과 다투고 있어요(streitet)."
     },
     {
       "type": "mc",
@@ -91,7 +91,7 @@
       "answer": 2,
       "evidence": "Für so was muss Zeit sein.",
       "pairs": [["Zeit hab ich dafür eigentlich keine", "streng eingehaltener Ablauf"], ["Für so was muss Zeit sein.", "Zuwendung ist ihr wichtiger"]],
-      "explain": "탸덴 씨는 사실 그럴 시간이 없지만 시간을 낸다고 하고, 이런 일에는 시간이 있어야 한다고 말해요. 그래서 정해진 순서보다 사람을 돌보는 일을 더 중요하게 여긴다고 추론할 수 있어요. 꼬박 30분을 들었으니 잠깐만 들었다는 말은 틀리고, 근무표에 그런 시간이 있다는 말도 '시간이 없다'는 말과 맞지 않아요."
+      "explain": "탸덴 씨는 사실 그럴 시간이 없지만 시간을 낸다고 하고, 이런 일에는 시간이 있어야 한다고 말해요. 그래서 정해진 순서보다 사람을 돌보는 일을 더 중요하게 여긴다고 추론할 수 있어요. 꼬박 30분을 들었으니 잠깐만 들었다는 말은 틀리고, 근무표에 그런 시간이 있다는 말도 사실 그럴 시간이 없다는 본문 내용과 맞지 않아요."
     },
     {
       "type": "rfn",
@@ -110,7 +110,7 @@
       "answer": 1,
       "evidence": "Was mir anfangs zu schaffen gemacht hat, war gar nicht die Müdigkeit, sondern das Leben drumherum.",
       "pairs": [["das Leben drumherum", "ihr Alltag zeitlich nicht mehr zu dem ihres Umfelds passte"], ["zu schaffen gemacht", "belastet"]],
-      "explain": "처음에 힘들었던 것은 피로가 아니라 '그 주변의 생활'이었어요. 친구들이 영화 보러 갈 때 출근하고, 생일도 뒤늦게 축하해요. 정답은 이것을 '생활 시간이 주변 사람들과 맞지 않았다'로 정리했어요. 생일은 아예 못 챙긴 것이 아니라 뒤늦게 축하하고, 밤에는 혼자가 아니라 둘이서 일해요."
+      "explain": "처음에 힘들었던 것은 피로가 아니라 '그 주변의 생활'이었어요. 친구들이 영화 보러 갈 때 출근하고, 생일도 뒤늦게 축하해요. 정답은 이것을 생활 시간이 주변 사람들과 맞지 않았다는 내용으로 정리했어요. 생일은 아예 못 챙긴 것이 아니라 뒤늦게 축하하고, 밤에는 혼자가 아니라 둘이서 일해요."
     },
     {
       "type": "rfn",
@@ -125,11 +125,11 @@
       "type": "mc",
       "kind": "detail",
       "q": "Warum ruft Tjaden die Ärztin im Zweifel lieber einmal mehr an?",
-      "options": ["Weil im Lehrbuch steht, dass man nachts jede Frage der Ärztin melden muss.", "Weil die Ärztin nur für eine Station zuständig ist und daher meist Zeit hat.", "Weil sie sich nach so vielen Dienstjahren kein eigenes Urteil mehr zutraut.", "Weil ein unnötiger Anruf nur stört, ein versäumter aber nicht zu beheben ist."],
+      "options": ["Weil im Lehrbuch steht, dass man nachts jede Frage der Ärztin melden muss.", "Weil die Ärztin nur für eine Station zuständig ist und daher meist Zeit hat.", "Weil sie meint, dass zusätzliche Anrufe die Ärztin überhaupt nicht stören.", "Weil ein unnötiger Anruf nur stört, ein versäumter aber nicht zu beheben ist."],
       "answer": 3,
       "evidence": "ein Anruf zu viel ist bloß lästig, einen zu wenig kann man nicht wiedergutmachen",
       "pairs": [["bloß lästig", "nur stört"], ["einen zu wenig kann man nicht wiedergutmachen", "ein versäumter aber nicht zu beheben ist"]],
-      "explain": "탸덴 씨는 괜히 한 번 더 건 전화는 귀찮을 뿐이지만, 걸어야 할 전화를 안 걸면 되돌릴 수 없다고 말해요. 정답은 lästig를 stört로, nicht wiedergutmachen을 nicht zu beheben으로 바꿨어요. 당직 의사는 여러 병동을 맡고 있고, 이 판단은 교과서가 아니라 경험으로 배운 거예요."
+      "explain": "탸덴 씨는 괜히 한 번 더 건 전화는 귀찮을 뿐이지만, 걸어야 할 전화를 안 걸면 되돌릴 수 없다고 말해요. 정답은 lästig를 stört로, nicht wiedergutmachen을 nicht zu beheben으로 바꿨어요. 쓸데없는 전화도 귀찮게 하기는 한다고(lästig) 했으니 전혀 방해가 되지 않는다는 말은 틀려요. 당직 의사는 여러 병동을 맡고 있고, 이 판단은 교과서가 아니라 경험으로 배운 거예요."
     },
     {
       "type": "mc",

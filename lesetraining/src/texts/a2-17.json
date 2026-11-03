@@ -82,7 +82,7 @@
       "answer": 2,
       "evidence": "Kinder unter 6 Jahren fahren kostenlos und brauchen keine Fahrkarte.",
       "pairs": [["fahren kostenlos", "fährt umsonst mit"], ["keine Fahrkarte", "kein Ticket"]],
-      "explain": "6세 미만 어린이는 무료로(kostenlos) 타고 승차권이 필요 없어요. 네 살 어린이도 여기에 해당해요. ‘할인’은 6세부터 14세까지의 어린이가 누르는 버튼이라서 함정이에요."
+      "explain": "6세 미만 어린이는 무료로(kostenlos) 타고 승차권이 필요 없어요. 네 살 어린이도 여기에 해당해요. ‘할인’은 6세부터 14세까지의 어린이에게 쓰는 버튼이라서 함정이에요."
     },
     {
       "type": "mc",
@@ -138,7 +138,7 @@
     {
       "title": "분리동사와 비분리동사",
       "term": "Trennbare und untrennbare Verben",
-      "explain": "ein|geben, aus|wählen, ein|stecken처럼 분리동사는 현재형 주문장에서 앞부분(전철)이 떨어져 문장 끝으로 가요. 명령형에서도 마찬가지예요(Geben Sie … ein). be-, ent-, er-, ver- 같은 비분리 전철이 붙은 동사(bestätigen, bezahlen, entwerten, entnehmen)는 절대 떨어지지 않아요. 화법조동사와 함께 쓰면 분리동사도 동사원형 그대로 문장 끝에 와요(umsteigen).",
+      "explain": "ein|geben, aus|wählen, ein|stecken처럼 분리동사는 현재형 주절에서 앞부분(전철)이 떨어져 문장 끝으로 가요. 명령형에서도 마찬가지예요(Geben Sie … ein). be-, ent-, er-, ver- 같은 비분리 전철이 붙은 동사(bestätigen, bezahlen, entwerten, entnehmen)는 절대 떨어지지 않아요. 화법조동사와 함께 쓰면 분리동사도 동사원형 그대로 문장 끝에 와요(umsteigen).",
       "pattern": "Geben Sie … ein. / Sie bestätigen … / dürfen … umsteigen",
       "examples": [
         {

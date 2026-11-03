@@ -43,7 +43,7 @@
       "answer": 2,
       "evidence": "Der Kahlwitzer See ist kein Werk der Natur, sondern ein gefluteter Tagebau",
       "pairs": [["kein Werk der Natur", "künstlich angelegt"], ["ein gefluteter Tagebau", "eine frühere Grube flutete"]],
-      "explain": "본문은 이 호수가 자연이 만든 것이 아니라 물을 채운 노천 탄광이라고 해요. 정답은 이것을 '예전 구덩이에 물을 채워 인공으로 만들었다'로 바꿔 말했어요. 이런 호수는 이곳만이 아니고(längst nicht der einzige), 굴착기가 밤낮없이 일한 것은 30년 전 이야기예요."
+      "explain": "본문은 이 호수가 자연이 만든 것이 아니라 물을 채운 노천 탄광이라고 해요. 정답은 이것을 예전 구덩이에 물을 채워 인공으로 만들었다는 내용으로 바꿔 말했어요. 이런 호수는 이곳만이 아니고(längst nicht der einzige), 굴착기가 밤낮없이 일한 것은 30년 전 이야기예요."
     },
     {
       "type": "rfn",
@@ -52,7 +52,7 @@
       "answer": 0,
       "evidence": "Bereut habe er den Wechsel nie.",
       "pairs": [["Bereut habe er", "bedauert"], ["den Wechsel", "seinen beruflichen Neuanfang"]],
-      "explain": "Bereut habe er den Wechsel nie는 '직업을 바꾼 것을 한 번도 후회하지 않았다'는 쿠비츠키 씨의 말을 접속법 1식으로 전한 문장이에요. bereuen을 bedauern으로, Wechsel을 beruflicher Neuanfang으로 바꿔 말했어요."
+      "explain": "Bereut habe er den Wechsel nie는 직업을 바꾼 것을 한 번도 후회하지 않았다는 쿠비츠키 씨의 말을 접속법 1식으로 전한 문장이에요. bereuen을 bedauern으로, Wechsel을 beruflicher Neuanfang으로 바꿔 말했어요."
     },
     {
       "type": "mc",
@@ -62,7 +62,7 @@
       "answer": 0,
       "evidence": "Ein See, so Kubitzki, ersetze eben keinen Tarifvertrag.",
       "pairs": [["Ein See", "Freizeit am Wasser"], ["ersetze eben keinen Tarifvertrag", "kein sicheres, geregeltes Einkommen"]],
-      "explain": "Tarifvertrag(단체 협약)는 안정된 임금과 근로 조건을 뜻해요. 호수가 주는 여가와 관광으로는 그런 안정된 일자리를 대신할 수 없다는 말이에요. 글자 그대로 '계약이 없으면 보트를 빌려줄 수 없다'로 읽는 것은 함정이고, 쿠비츠키 씨는 직업을 바꾼 것을 후회하지 않아요."
+      "explain": "Tarifvertrag(단체 협약)는 임금과 근로 조건을 정해 주는 계약이에요. 호수가 주는 여가와 관광으로는 그런 안정된 일자리를 대신할 수 없다는 말이에요. 글자 그대로 계약이 없으면 보트를 빌려줄 수 없다는 뜻으로 읽는 것은 함정이고, 쿠비츠키 씨는 직업을 바꾼 것을 후회하지 않아요."
     },
     {
       "type": "mc",
@@ -72,7 +72,7 @@
       "answer": 3,
       "evidence": "Spätestens 2038 soll auch dort Schluss sein",
       "pairs": [["drehen sich wenige Kilometer weiter östlich noch die Schaufelräder", "Dort wird noch Kohle abgebaut"], ["Spätestens 2038 soll auch dort Schluss sein", "setzt dem eine feste Frist"]],
-      "explain": "동쪽 탄광에서는 아직 버킷휠이 돌아가지만, 법에 따라 늦어도 2038년에는 멈춰야 해요. 정답은 이것을 '아직 채굴하지만 법이 정한 기한이 있다'로 바꿨어요. 요트가 다니는 곳은 칼비츠 호수이고, 2038년 이후에도 채굴할 수 있다는 것은 본문과 반대예요."
+      "explain": "동쪽 탄광에서는 아직 버킷휠이 돌아가지만, 법에 따라 늦어도 2038년에는 멈춰야 해요. 정답은 이것을 아직 채굴은 하지만 법이 정한 기한이 있다는 내용으로 바꿨어요. 요트가 다니는 곳은 칼비츠 호수이고, 2038년 이후에도 채굴할 수 있다는 것은 본문과 반대예요."
     },
     {
       "type": "mc",

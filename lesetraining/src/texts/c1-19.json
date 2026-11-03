@@ -40,8 +40,8 @@
     },
     {
       "style": "meta",
-      "de": "Maren Morawetz lehrt Neuere deutsche Literatur an der Universität Eichenau.",
-      "ko": "마렌 모라베츠는 아이헤나우 대학교에서 근대 이후 독일 문학을 가르칩니다."
+      "de": "Maren Morawetz lehrt Neuere deutsche Literatur an der Universität Velbrück.",
+      "ko": "마렌 모라베츠는 펠브뤼크 대학교에서 근대 이후 독일 문학을 가르칩니다."
     }
   ],
   "questions": [
@@ -49,11 +49,11 @@
       "type": "mc",
       "kind": "detail",
       "q": "Was behauptet Hellwig laut der Autorin?",
-      "options": ["Drei Viertel der Jugendlichen lesen in ihrer Freizeit regelmäßig Bücher.", "Die Jugend schreibt heute weit mehr als alle früheren Generationen.", "In absehbarer Zeit wird die Jugend an längerer Lektüre scheitern.", "Tablets werden bei Jugendlichen nach und nach durch Bücher ersetzt."],
+      "options": ["Drei Viertel der Jugendlichen lesen in ihrer Freizeit regelmäßig Bücher.", "Über den Tag verteilt lesen Jugendliche inzwischen mehr als je zuvor.", "In absehbarer Zeit wird die Jugend an längerer Lektüre scheitern.", "Tablets werden bei Jugendlichen nach und nach durch Bücher ersetzt."],
       "answer": 2,
       "evidence": "eine Generation, die mit dem Smartphone aufgewachsen sei, werde längere Texte bald nicht mehr bewältigen",
       "pairs": [["werde längere Texte bald nicht mehr bewältigen", "In absehbarer Zeit wird die Jugend an längerer Lektüre scheitern"]],
-      "explain": "헬비히는 스마트폰과 함께 자란 세대가 머지않아 긴 글을 소화하지 못할 것이라고 해요. 정답은 이것을 '가까운 시일 안에 긴 읽을거리 앞에서 실패할 것'으로 바꿔 말했어요. 설문에 따르면 꾸준히 책을 읽는 청소년은 네 명 중 한 명뿐이라 '4분의 3'은 비율이 뒤바뀌었고, 더 많이 쓴다는 말은 헬비히가 아니라 필자의 말이에요."
+      "explain": "헬비히는 스마트폰과 함께 자란 세대가 머지않아 긴 글을 소화하지 못할 것이라고 해요. 정답은 이것을 '가까운 시일 안에 긴 읽을거리 앞에서 실패할 것'으로 바꿔 말했어요. 설문에 따르면 꾸준히 책을 읽는 청소년은 네 명 중 한 명뿐이라 '4분의 3'은 비율이 뒤바뀌었어요. 헬비히는 독일 사람들이 이제 거의 읽지 않는다고 하므로, 청소년이 그 어느 때보다 많이 읽는다는 선택지는 그의 주장과 반대예요."
     },
     {
       "type": "rfn",
@@ -72,7 +72,7 @@
       "answer": 0,
       "evidence": "Die Frage, wie oft jemand ein Buch in die Hand nimmt, sagt nämlich wenig darüber aus, wie viel er liest.",
       "pairs": [["wie oft jemand ein Buch in die Hand nimmt", "Seltenes Bücherlesen"], ["wie viel er liest", "insgesamt sehr viel liest"]],
-      "explain": "책을 얼마나 자주 손에 드는지로는 얼마나 많이 읽는지 알 수 없다는 뜻이에요. 정답은 '책을 드물게 읽어도 전체적으로는 많이 읽을 수 있다'로 바꿔 말했어요. 나머지는 모두 책의 양이 읽기의 양을 보여 준다고 해서 이 문장과 반대예요."
+      "explain": "책을 얼마나 자주 손에 드는지로는 얼마나 많이 읽는지 알 수 없다는 뜻이에요. 정답은 이것을 책을 드물게 읽어도 전체적으로는 많이 읽을 수 있다는 내용으로 바꿔 말했어요. 나머지는 모두 책의 양이 읽기의 양을 보여 준다고 해서 이 문장과 반대예요."
     },
     {
       "type": "rfn",
@@ -219,7 +219,7 @@
           "mark": ["nicht etwa", "sondern"]
         }
       ],
-      "tip": "keineswegs와 mitnichten은 그 자체로 부정어라서 nicht을 함께 쓰지 않아요."
+      "tip": "keineswegs와 mitnichten은 그 자체로 부정어라서 nicht를 함께 쓰지 않아요."
     },
     {
       "title": "더해지는 이유와 비례 – umso …, als · je …, desto",
