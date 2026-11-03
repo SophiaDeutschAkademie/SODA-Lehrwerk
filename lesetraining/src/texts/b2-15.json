@@ -115,11 +115,11 @@
       "type": "mc",
       "kind": "detail",
       "q": "Was bedauert die Verfasserin?",
-      "options": ["dass ihre Großmutter so selten von früher erzählt hat", "dass sie an den Wochenenden zu wenig ausgegangen ist", "dass sie sich zu wenig Zeit für die Großmutter nahm"],
+      "options": ["dass ihre Großmutter so selten von früher erzählt hat", "dass sie an den Wochenenden zu wenig ausgegangen ist", "dass sie sich zu selten bei der Großmutter gemeldet hat"],
       "answer": 2,
       "evidence": "Wenn ich in meinen Studienjahren öfter bei Oma angerufen hätte, statt jedes Wochenende auf Partys zu gehen, wüsste ich heute mehr über ihr Leben.",
-      "pairs": [["öfter bei Oma angerufen hätte", "zu wenig Zeit für die Großmutter"]],
-      "explain": "할머니께 더 자주 전화했더라면 좋았을 거라고 하니, 할머니와 보낸 시간이 부족했던 것을 아쉬워해요. 할머니는 옛날이야기를 무척 좋아하셨고, 필자는 주말마다 파티에 갔으니 다른 두 문장은 본문과 반대예요."
+      "pairs": [["öfter bei Oma angerufen hätte", "zu selten bei der Großmutter gemeldet"]],
+      "explain": "할머니께 더 자주 전화를 드렸더라면 좋았을 거라고 하니, 할머니께 연락을 너무 드물게 드린 것을 아쉬워해요. 할머니는 옛날이야기를 무척 좋아하셨고, 필자는 주말마다 파티에 갔으니 다른 두 문장은 본문과 반대예요."
     },
     {
       "type": "mc",
