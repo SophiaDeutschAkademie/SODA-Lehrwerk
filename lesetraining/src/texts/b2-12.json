@@ -43,7 +43,7 @@
       "answer": 1,
       "evidence": "Das Pfand ist kein Allheilmittel. Es zeigt aber, dass Anreize wirken, wenn man sie klug gestaltet.",
       "pairs": [["Das Pfand ist kein Allheilmittel", "Nutzen und Schwächen"]],
-      "explain": "기사는 보증금 제도가 잘 작동하는 이유와 아직 남은 문제를 함께 다뤄요. 판매자의 수익(Händler)이나 제조사 간 분쟁은 중심 주제가 아니에요."
+      "explain": "기사는 보증금 제도가 잘 작동하는 이유와 아직 남은 문제를 함께 다뤄요. 판매자의 수익(Händler)이나 판매업자 간 다툼은 중심 주제가 아니에요."
     },
     {
       "type": "rfn",
@@ -132,7 +132,7 @@
       "examples": [
         {
           "de": "Der Betrag sei bewusst so hoch angesetzt worden, damit sich die Rückgabe auch für Gelegenheitskäufer lohne, erklärt sie.",
-          "ko": "보증금을 일부러 그만큼 높게 책정했다고 그는 설명해요.",
+          "ko": "보증금을 일부러 그만큼 높게 책정했다고 파버 박사는 설명해요.",
           "mark": ["sei", "angesetzt worden", "lohne"],
           "parts": [["Der Betrag", "주어"], ["sei", "동사"], ["bewusst", "부사어(방법)"], ["so hoch", "부사어(방법)"], ["angesetzt worden,", "동사(끝)"], ["damit sich die Rückgabe auch für Gelegenheitskäufer lohne,", "종속절"], ["erklärt", "동사"], ["sie.", "주어"]]
         },
@@ -147,12 +147,12 @@
           "mark": ["könnten"]
         }
       ],
-      "tip": "3인칭 단수에서 접속법 1식은 er habe, sie sei, es gebe처럼 어간 + -e예요. 복수 könnten, würden은 직설법과 같아서 접속법 2식 모양을 대신 써요."
+      "tip": "3인칭 단수의 접속법 1식은 er habe, es gebe처럼 어간 + -e예요(sein은 er sei). 복수의 können, werden은 직설법과 모양이 같아서, 접속법 2식 könnten, würden으로 대신해요."
     },
     {
       "title": "목적·결과를 나타내는 접속사",
       "term": "finale und konsekutive Konnektoren",
-      "explain": "damit과 um … zu는 목적을 나타내요. 주어가 같고 앞의 주절과 이어질 때는 um … zu를 쓰고, 주어가 다르면 damit을 써요. sodass는 결과, je … desto는 비례 관계를 나타내요. damit과 sodass는 종속절이라 동사가 문장 끝에 와요.",
+      "explain": "damit과 um … zu는 목적을 나타내요. 부문장의 주어가 주절의 주어와 같을 때는 um … zu를 쓰고, 주어가 다르면 damit을 써요. sodass는 결과, je … desto는 비례 관계를 나타내요. damit과 sodass는 종속절이라 동사가 문장 끝에 와요.",
       "pattern": "damit / sodass + … + 동사(문장 끝) · um + … + zu + 동사원형 · je + 비교급, desto + 비교급 + 동사",
       "examples": [
         {
@@ -173,7 +173,7 @@
           "mark": ["damit", "bleiben", "muss"]
         }
       ],
-      "tip": "um … zu는 주어가 하나일 때만 써요. 위 예문의 damit 문장처럼 두 문장의 주체가 다르면 damit을 써야 해요."
+      "tip": "um … zu는 주절과 주어가 같을 때만 써요. 병이 잘 보이게 하는 주체(die Flaschen)가 도시와 다른 damit 문장처럼 주어가 다르면 damit을 써야 해요."
     },
     {
       "title": "기능동사 구문",
@@ -242,7 +242,7 @@
     { "de": "die Kennzeichnung, -en", "ko": "표시, 표기" },
     { "de": "der Verdienst, -e", "ko": "수입, 벌이" },
     { "de": "unverzichtbar", "ko": "없어서는 안 되는" },
-    { "de": "an|bringen (brachte an, hat angebracht)", "ko": "설치하다, 달다" },
+    { "de": "an|bringen (bringt an, brachte an, hat angebracht)", "ko": "설치하다, 달다" },
     { "de": "der Passant, -en", "ko": "행인" },
     { "de": "sinken (sinkt, sank, ist gesunken)", "ko": "줄어들다, 내려가다" }
   ],
