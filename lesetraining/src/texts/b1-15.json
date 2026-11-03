@@ -55,12 +55,12 @@
       "ko": "5번 지점 · 벽돌로 지은 세계유산"
     },
     {
-      "de": "Zum Schluss führt Sie unser Rundgang ins nahe Kontorhausviertel. Dort ließen Reedereien und Handelsfirmen im frühen 20. Jahrhundert große Bürohäuser bauen. Am bekanntesten ist das Chilehaus, dessen spitze Ecke an den Bug eines Schiffes erinnert. Seit 2015 gehören die beiden Viertel, deren Geschichte eng mit dem Hafen verbunden ist, gemeinsam zum UNESCO-Welterbe.",
-      "ko": "마지막으로 이번 투어는 가까운 콘토어하우스 지구로 이어져요. 그곳에는 20세기 초에 해운 회사와 무역 회사들이 큰 사무용 건물을 지었어요. 가장 유명한 건물은 칠레하우스로, 뾰족한 모서리가 배의 뱃머리를 떠올리게 해요. 역사가 항구와 깊이 연결된 이 두 지구는 2015년부터 함께 유네스코 세계유산에 올라 있어요."
+      "de": "Zum Schluss führt Sie unser Rundgang ins nahe Kontorhausviertel. Dort ließen Reedereien und Handelsfirmen ab den 1920er-Jahren große Bürohäuser bauen. Am bekanntesten ist das Chilehaus, dessen spitze Ecke an den Bug eines Schiffes erinnert. Seit 2015 gehören die beiden Viertel, deren Geschichte eng mit dem Hafen verbunden ist, gemeinsam zum UNESCO-Welterbe.",
+      "ko": "마지막으로 이번 투어는 가까운 콘토어하우스 지구로 이어져요. 그곳에는 1920년대부터 해운 회사와 무역 회사들이 큰 사무용 건물을 세웠어요. 가장 유명한 건물은 칠레하우스로, 뾰족한 모서리가 배의 뱃머리를 떠올리게 해요. 역사가 항구와 깊이 연결된 이 두 지구는 2015년부터 함께 유네스코 세계유산에 올라 있어요."
     },
     {
-      "de": "Nehmen Sie sich ruhig noch Zeit für einen Spaziergang durch das Viertel, wo früher schwere Säcke geschleppt wurden. Vielen Dank, dass Sie mit uns unterwegs waren!",
-      "ko": "시간을 내어 예전에 무거운 자루를 나르던 이 동네를 천천히 산책해 보세요. 저희와 함께해 주셔서 고마워요!"
+      "de": "Nehmen Sie sich ruhig noch Zeit für einen Spaziergang durch die Speicherstadt, wo früher schwere Säcke geschleppt wurden. Vielen Dank, dass Sie mit uns unterwegs waren!",
+      "ko": "시간을 내어 예전에 무거운 자루를 나르던 슈파이허슈타트를 천천히 산책해 보세요. 저희와 함께해 주셔서 고마워요!"
     }
   ],
   "questions": [
@@ -241,9 +241,9 @@
           "parts": [["Die Antwort", "4격 목적어"], ["finden", "동사"], ["Sie", "주어"], ["dort,", "부사어(장소)"], ["wo niemand hinschaut:", "관계절"], ["tief unter Ihren Füßen.", "부사어(장소)"]]
         },
         {
-          "de": "Nehmen Sie sich ruhig noch Zeit für einen Spaziergang durch das Viertel, wo früher schwere Säcke geschleppt wurden.",
-          "ko": "시간을 내어 예전에 무거운 자루를 나르던 이 동네를 천천히 산책해 보세요.",
-          "mark": ["das Viertel, wo", "geschleppt wurden"]
+          "de": "Nehmen Sie sich ruhig noch Zeit für einen Spaziergang durch die Speicherstadt, wo früher schwere Säcke geschleppt wurden.",
+          "ko": "시간을 내어 예전에 무거운 자루를 나르던 슈파이허슈타트를 천천히 산책해 보세요.",
+          "mark": ["die Speicherstadt, wo", "geschleppt wurden"]
         }
       ],
       "tip": "wo 대신 전치사 + 관계대명사를 써도 돼요(ein Gebiet, in dem …). 시간을 나타내는 명사 뒤에서는 wo보다 an dem이나 als를 쓰는 것이 표준 문어예요(an dem Tag, als …)."
@@ -269,7 +269,7 @@
   ],
   "phrases": [
     {
-      "de": "Teil von etwas (Dat.) werden",
+      "de": "Teil einer Sache (Gen.) werden",
       "ko": "~의 일부가 되다",
       "ex": "Hamburg hatte zugestimmt, Teil des deutschen Zollgebiets zu werden.",
       "exko": "함부르크는 독일 관세 구역의 일부가 되기로 동의했어요."
@@ -295,8 +295,8 @@
     {
       "de": "sich (Dat.) Zeit nehmen für + Akk.",
       "ko": "~할 시간을 내다",
-      "ex": "Nehmen Sie sich ruhig noch Zeit für einen Spaziergang durch das Viertel, wo früher schwere Säcke geschleppt wurden.",
-      "exko": "시간을 내어 예전에 무거운 자루를 나르던 이 동네를 천천히 산책해 보세요."
+      "ex": "Nehmen Sie sich ruhig noch Zeit für einen Spaziergang durch die Speicherstadt, wo früher schwere Säcke geschleppt wurden.",
+      "exko": "시간을 내어 예전에 무거운 자루를 나르던 슈파이허슈타트를 천천히 산책해 보세요."
     }
   ]
 }
