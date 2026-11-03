@@ -1,0 +1,268 @@
+{
+  "id": "a2-14",
+  "level": "A2",
+  "no": 14,
+  "title": "Ruhe bitte!",
+  "titleKo": "조용히 해 주세요!",
+  "type": "Aushang und Antwort",
+  "typeKo": "게시판 공지와 답글",
+  "intro": "관리사무소가 소음 문제로 붙인 공지와 그 아래에 한 세입자가 남긴 답글이에요.",
+  "focus": ["화법조동사 dürfen · müssen · sollen", "wenn 종속절", "시간 표현 (zwischen, von … bis, an)"],
+  "paragraphs": [
+    {
+      "style": "meta",
+      "label": "Aushang im Treppenhaus",
+      "de": "An alle Mieterinnen und Mieter",
+      "ko": "모든 세입자분들께"
+    },
+    {
+      "style": "h",
+      "de": "Ruhe bitte!",
+      "ko": "조용히 해 주세요!"
+    },
+    {
+      "de": "Leider haben sich in letzter Zeit mehrere Mieter über Lärm beschwert. Deshalb erinnern wir Sie an die wichtigsten Regeln unserer Hausordnung.",
+      "ko": "최근 여러 세입자분이 소음 때문에 불만을 제기했어요. 그래서 저희 공동생활 규칙 가운데 가장 중요한 내용을 다시 알려 드려요."
+    },
+    {
+      "de": "1. Zwischen 22 und 6 Uhr gilt die Nachtruhe. In dieser Zeit dürfen Sie keine laute Musik hören, und auch die Waschmaschine darf nicht laufen.",
+      "ko": "1. 밤 10시부터 아침 6시까지는 야간 정숙 시간이에요. 이 시간에는 음악을 크게 들으면 안 되고, 세탁기도 돌리면 안 돼요."
+    },
+    {
+      "de": "2. In der Mittagszeit von 13 bis 15 Uhr sollen alle Bewohner Rücksicht nehmen. Dann schlafen viele Kinder und ältere Menschen.",
+      "ko": "2. 점심시간인 13시부터 15시까지도 모든 주민이 이웃을 배려해야 해요. 그 시간에는 낮잠을 자는 아이와 어르신이 많아요."
+    },
+    {
+      "de": "3. An Sonn- und Feiertagen darf niemand bohren oder hämmern. Renovieren Sie bitte nur von Montag bis Samstag.",
+      "ko": "3. 일요일과 공휴일에는 누구도 드릴질이나 망치질을 하면 안 돼요. 집수리는 월요일부터 토요일까지만 해 주세요."
+    },
+    {
+      "de": "4. Wenn Sie eine Party feiern, müssen Sie Ihre Nachbarn eine Woche vorher informieren. Ein Zettel im Treppenhaus genügt. Auch dann sollen Ihre Gäste ab 22 Uhr leise sein.",
+      "ko": "4. 파티를 하시면 일주일 전에 이웃에게 알려야 해요. 계단실에 쪽지 한 장을 붙이면 충분해요. 그때도 밤 10시부터는 손님들이 조용히 해야 해요."
+    },
+    {
+      "de": "Wenn es weitere Beschwerden gibt, müssen wir den betroffenen Mietern einen offiziellen Brief schicken. Vielen Dank für Ihr Verständnis!",
+      "ko": "앞으로도 불만이 들어오면 해당 세입자분께 정식으로 서면 통지를 보낼 수밖에 없어요. 양해해 주셔서 감사해요."
+    },
+    {
+      "style": "meta",
+      "de": "Ihre Hausverwaltung Lindner, 4. März",
+      "ko": "린트너 주택관리 드림, 3월 4일"
+    },
+    {
+      "style": "meta",
+      "label": "Antwort auf dem Aushang",
+      "de": "Liebe Hausverwaltung,",
+      "ko": "관리사무소 담당자님께"
+    },
+    {
+      "de": "natürlich sind Ruhezeiten wichtig, aber ich habe ein Problem. Wenn ich im Krankenhaus Spätdienst habe, komme ich erst um halb elf nach Hause. Wann soll ich denn waschen, wenn die Maschine nachts nicht laufen darf? Muss ich das jetzt immer am Wochenende machen?",
+      "ko": "물론 정숙 시간은 중요해요. 하지만 저에게는 문제가 하나 있어요. 병원에서 저녁 근무를 하는 날에는 밤 10시 반이 되어서야 집에 와요. 밤에 세탁기를 돌리면 안 된다면 저는 대체 언제 빨래를 해야 하나요? 이제 빨래는 늘 주말에 해야 하나요?"
+    },
+    {
+      "de": "Und noch etwas: Letzten Sonntag hat Ihr Hausmeister schon um acht Uhr morgens im Hof den Rasen gemäht. Gilt die Hausordnung eigentlich nicht für ihn? Ich konnte danach jedenfalls nicht mehr einschlafen.",
+      "ko": "그리고 하나 더 있어요. 지난 일요일에 관리사무소 관리인분이 아침 8시부터 벌써 마당에서 잔디를 깎았어요. 공동생활 규칙은 그분에게는 해당되지 않나요? 어쨌든 저는 그 뒤로 다시 잠들 수 없었어요."
+    },
+    {
+      "de": "Darüber möchte ich gern bei der nächsten Mieterversammlung sprechen.",
+      "ko": "이 문제들은 다음 세입자 회의에서 꼭 이야기하고 싶어요."
+    },
+    {
+      "style": "meta",
+      "de": "Viele Grüße, Nina Brandt",
+      "ko": "니나 브란트 드림"
+    }
+  ],
+  "questions": [
+    {
+      "type": "mc",
+      "kind": "gist",
+      "q": "Warum hat die Hausverwaltung den Aushang gemacht?",
+      "options": ["Weil das Haus ab März eine neue, strengere Hausordnung hat.", "Weil Nina Brandt sich über den Rasenmäher beschwert hat.", "Weil Bewohner gesagt haben, dass es im Haus zu laut ist."],
+      "answer": 2,
+      "evidence": "Leider haben sich in letzter Zeit mehrere Mieter über Lärm beschwert.",
+      "pairs": [["mehrere Mieter über Lärm beschwert", "Bewohner gesagt haben, dass es im Haus zu laut ist"]],
+      "explain": "관리사무소는 최근 여러 세입자가 소음 때문에 불만을 말해서(über Lärm beschwert) 공지를 붙였어요. 새 규칙이 아니라 이미 있는 규칙을 다시 알려 주는 것이고(erinnern … an), 니나 브란트의 글은 공지가 붙은 뒤에 쓴 답글이에요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Um 23 Uhr darf man waschen, wenn man es den Nachbarn vorher sagt.",
+      "answer": 1,
+      "evidence": "In dieser Zeit dürfen Sie keine laute Musik hören, und auch die Waschmaschine darf nicht laufen.",
+      "pairs": [["Zwischen 22 und 6 Uhr", "Um 23 Uhr"], ["die Waschmaschine darf nicht laufen", "darf man waschen"]],
+      "explain": "23시는 야간 정숙 시간(밤 10시~아침 6시)에 들어가고, 이 시간에는 세탁기를 돌리면 안 돼요(darf nicht laufen). 이웃에게 미리 알리는 것은 파티 규칙이고, 세탁과는 관계가 없어요."
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "q": "Was bedeutet „Rücksicht nehmen“ im Text?",
+      "options": ["den Nachbarn mit einem Zettel vorher Bescheid sagen", "an die anderen Leute denken und darum leise sein", "mittags selbst ein bis zwei Stunden schlafen gehen"],
+      "answer": 1,
+      "evidence": "In der Mittagszeit von 13 bis 15 Uhr sollen alle Bewohner Rücksicht nehmen.",
+      "pairs": [["Rücksicht nehmen", "an die anderen Leute denken und darum leise sein"]],
+      "explain": "Rücksicht nehmen은 '다른 사람을 배려하다'라는 뜻이에요. 이 시간에 아이와 어르신이 자기 때문에 조용히 하라는 말이에요. 쪽지로 알리는 것은 파티 규칙이고, 낮잠을 자는 사람은 주민 자신이 아니라 아이와 어르신이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was gilt laut Hausordnung an Sonn- und Feiertagen?",
+      "options": ["Laute Arbeiten mit Bohrer oder Hammer sind verboten.", "Bis zum Mittag darf man in der Wohnung laut arbeiten.", "Man darf renovieren, wenn die Nachbarn Bescheid wissen."],
+      "answer": 0,
+      "evidence": "An Sonn- und Feiertagen darf niemand bohren oder hämmern.",
+      "pairs": [["darf niemand bohren oder hämmern", "Arbeiten mit Bohrer oder Hammer sind verboten"]],
+      "explain": "일요일과 공휴일에는 누구도 드릴이나 망치로 작업하면 안 돼요(darf niemand bohren oder hämmern). 동사 bohren·hämmern을 명사 Bohrer·Hammer로 바꾸고, 'darf niemand'를 verboten으로 표현했어요. 집수리는 월요일부터 토요일까지만 할 수 있고, 이웃에게 알려도 일요일에는 안 돼요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Über eine Party kann man die Nachbarn mit einer Notiz im Hausflur informieren.",
+      "answer": 0,
+      "evidence": "Ein Zettel im Treppenhaus genügt.",
+      "pairs": [["Ein Zettel im Treppenhaus", "einer Notiz im Hausflur"]],
+      "explain": "파티를 할 때는 계단실에 쪽지 한 장을 붙이면 충분해요(genügt). Zettel(쪽지)을 Notiz(메모)로, Treppenhaus(계단실)를 Hausflur(건물 복도)로 바꿔 말했으므로 맞는 내용이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "q": "Warum hat Nina Brandt ein Problem mit der Nachtruhe?",
+      "options": ["An Tagen mit Spätdienst kann sie abends nicht mehr waschen.", "Sie kommt nach dem Spätdienst erst gegen 6 Uhr morgens heim.", "Sie hält die Ruhezeiten in einem Mietshaus für unwichtig."],
+      "answer": 0,
+      "evidence": "Wenn ich im Krankenhaus Spätdienst habe, komme ich erst um halb elf nach Hause.",
+      "pairs": [["erst um halb elf", "abends nicht mehr waschen"]],
+      "explain": "니나는 저녁 근무가 있는 날 밤 10시 반에야 집에 와요(erst um halb elf). 밤 10시부터는 세탁기를 돌리면 안 되니까 그런 날에는 빨래를 할 수 없다고 추론할 수 있어요. 6시는 정숙 시간이 끝나는 시각이에요. 또 니나는 정숙 시간이 중요하다고 분명히 말해요(natürlich sind Ruhezeiten wichtig)."
+    },
+    {
+      "type": "mc",
+      "kind": "paraphrase",
+      "q": "Was will Nina Brandt mit der Frage „Gilt die Hausordnung eigentlich nicht für ihn?“ sagen?",
+      "options": ["Sie findet es gut, dass der Hausmeister so früh arbeitet.", "Sie meint, dass der Hausmeister selbst die Sonntagsruhe stört.", "Sie will wissen, ob sie sonntags auch den Rasen mähen darf."],
+      "answer": 1,
+      "evidence": "Gilt die Hausordnung eigentlich nicht für ihn?",
+      "pairs": [["Gilt die Hausordnung eigentlich nicht für ihn?", "der Hausmeister selbst die Sonntagsruhe stört"]],
+      "explain": "니나는 질문의 형식으로 관리인이 스스로 일요일의 정숙을 깨뜨렸다고 비판해요. 관리인은 일요일 아침 8시에 잔디를 깎았고, 니나는 그 뒤로 잠을 잘 수 없었어요. 니나가 그 일을 좋게 보거나 자기도 잔디를 깎고 싶어 하는 것이 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "dürfen · müssen · sollen – 금지, 의무, 요구",
+      "term": "Modalverben dürfen, müssen, sollen",
+      "explain": "dürfen은 '해도 된다', nicht dürfen은 '하면 안 된다'(금지)예요. müssen은 꼭 해야 하는 일(의무)을 말해요. sollen은 다른 사람이 정한 규칙이나 요구를 말할 때 써요. 여기서는 관리사무소가 주민에게 요구하는 내용이에요. 화법조동사는 2번 자리에 오고, 본동사는 동사원형으로 문장 끝에 가요.",
+      "pattern": "주어 + dürfen/müssen/sollen + … + 동사원형(문장 끝)",
+      "examples": [
+        {
+          "de": "In dieser Zeit dürfen Sie keine laute Musik hören, und auch die Waschmaschine darf nicht laufen.",
+          "ko": "이 시간에는 음악을 크게 들으면 안 되고, 세탁기도 돌리면 안 돼요.",
+          "mark": ["dürfen", "hören", "darf nicht laufen"],
+          "parts": [["In dieser Zeit", "부사어(시간)"], ["dürfen", "동사"], ["Sie", "주어"], ["keine laute Musik", "4격 목적어"], ["hören,", "동사(끝)"], ["und", "접속사"], ["auch die Waschmaschine", "주어"], ["darf", "동사"], ["nicht", "부정어"], ["laufen.", "동사(끝)"]]
+        },
+        {
+          "de": "In der Mittagszeit von 13 bis 15 Uhr sollen alle Bewohner Rücksicht nehmen.",
+          "ko": "점심시간인 13시부터 15시까지도 모든 주민이 이웃을 배려해야 해요.",
+          "mark": ["sollen", "Rücksicht nehmen"],
+          "parts": [["In der Mittagszeit von 13 bis 15 Uhr", "부사어(시간)"], ["sollen", "동사"], ["alle Bewohner", "주어"], ["Rücksicht", "4격 목적어"], ["nehmen.", "동사(끝)"]]
+        },
+        {
+          "de": "Muss ich das jetzt immer am Wochenende machen?",
+          "ko": "이제 빨래는 늘 주말에 해야 하나요?",
+          "mark": ["Muss", "machen"]
+        }
+      ],
+      "tip": "nicht müssen은 '하면 안 된다'가 아니라 '할 필요가 없다'라는 뜻이에요. 금지는 nicht dürfen이나 niemand darf로 말해요."
+    },
+    {
+      "title": "wenn – 조건을 말하는 종속절",
+      "term": "Konditionalsätze mit wenn",
+      "explain": "wenn은 '~하면'이라는 뜻의 종속접속사예요. wenn절에서는 변화하는 동사가 문장 끝으로 가요. wenn절이 문장 앞에 오면 1번 자리를 차지하므로, 쉼표 뒤 주절은 동사로 바로 시작하고 주어는 그 뒤에 와요. wenn절은 주절 뒤에 올 수도 있어요.",
+      "pattern": "Wenn + 주어 + … + 동사(끝), 동사 + 주어 …",
+      "examples": [
+        {
+          "de": "Wenn es weitere Beschwerden gibt, müssen wir den betroffenen Mietern einen offiziellen Brief schicken.",
+          "ko": "앞으로도 불만이 들어오면 해당 세입자분께 정식으로 서면 통지를 보낼 수밖에 없어요.",
+          "mark": ["Wenn", "gibt", "müssen wir"],
+          "parts": [["Wenn es weitere Beschwerden gibt,", "종속절"], ["müssen", "동사"], ["wir", "주어"], ["den betroffenen Mietern", "3격 목적어"], ["einen offiziellen Brief", "4격 목적어"], ["schicken.", "동사(끝)"]]
+        },
+        {
+          "de": "Wenn Sie eine Party feiern, müssen Sie Ihre Nachbarn eine Woche vorher informieren.",
+          "ko": "파티를 하시면 일주일 전에 이웃에게 알려야 해요.",
+          "mark": ["Wenn", "feiern", "müssen Sie"]
+        },
+        {
+          "de": "Wann soll ich denn waschen, wenn die Maschine nachts nicht laufen darf?",
+          "ko": "밤에 세탁기를 돌리면 안 된다면 저는 대체 언제 빨래를 해야 하나요?",
+          "mark": ["wenn", "darf"]
+        }
+      ],
+      "tip": "wenn과 wann을 헷갈리지 마세요. wann은 '언제'를 묻는 의문사이고, wenn은 '~하면'이라는 조건을 나타내요. 마지막 예문에는 두 단어가 함께 나와요."
+    },
+    {
+      "title": "시간을 나타내는 표현",
+      "term": "Temporalangaben",
+      "explain": "시간대는 zwischen … und나 von … bis로 말해요(zwischen 22 und 6 Uhr, von 13 bis 15 Uhr). 날과 요일 앞에는 an + 3격을 써요(an Sonn- und Feiertagen, am Wochenende). ab 22 Uhr는 '밤 10시부터'라는 뜻이에요. letzten Sonntag, eine Woche vorher처럼 전치사 없이 4격으로 시간을 말할 수도 있어요.",
+      "pattern": "zwischen … und … / von … bis … / an + 3격 / ab + 시각 / 4격 시간 표현",
+      "examples": [
+        {
+          "de": "Zwischen 22 und 6 Uhr gilt die Nachtruhe.",
+          "ko": "밤 10시부터 아침 6시까지는 야간 정숙 시간이에요.",
+          "mark": ["Zwischen 22 und 6 Uhr"],
+          "parts": [["Zwischen 22 und 6 Uhr", "부사어(시간)"], ["gilt", "동사"], ["die Nachtruhe.", "주어"]]
+        },
+        {
+          "de": "An Sonn- und Feiertagen darf niemand bohren oder hämmern.",
+          "ko": "일요일과 공휴일에는 누구도 드릴질이나 망치질을 하면 안 돼요.",
+          "mark": ["An Sonn- und Feiertagen"],
+          "parts": [["An Sonn- und Feiertagen", "부사어(시간)"], ["darf", "동사"], ["niemand", "주어"], ["bohren oder hämmern.", "동사(끝)"]]
+        },
+        {
+          "de": "Letzten Sonntag hat Ihr Hausmeister schon um acht Uhr morgens im Hof den Rasen gemäht.",
+          "ko": "지난 일요일에 관리사무소 관리인분이 아침 8시부터 벌써 마당에서 잔디를 깎았어요.",
+          "mark": ["Letzten Sonntag", "um acht Uhr morgens"],
+          "parts": [["Letzten Sonntag", "부사어(시간)"], ["hat", "동사"], ["Ihr Hausmeister", "주어"], ["schon um acht Uhr morgens", "부사어(시간)"], ["im Hof", "부사어(장소)"], ["den Rasen", "4격 목적어"], ["gemäht.", "동사(끝)"]]
+        }
+      ],
+      "tip": "Sonn- und Feiertagen의 줄표(-)는 Sonntagen의 -tagen을 두 번 쓰지 않으려고 붙인 표시예요. 시간 표현이 1번 자리에 오면 동사가 바로 뒤에 오고, 주어는 동사 다음에 와요."
+    }
+  ],
+  "vocab": [
+    { "de": "die Hausverwaltung, -en", "ko": "(건물) 관리 회사, 관리사무소" },
+    { "de": "die Hausordnung, -en", "ko": "(공동 주택의) 생활 규칙" },
+    { "de": "der Mieter, -", "ko": "세입자" },
+    { "de": "der Lärm (Sg.)", "ko": "소음" },
+    { "de": "sich beschweren über + Akk.", "ko": "~에 대해 불평하다, 항의하다" },
+    { "de": "die Beschwerde, -n", "ko": "불만, 항의" },
+    { "de": "die Nachtruhe (Sg.)", "ko": "야간 정숙 (시간)" },
+    { "de": "der Feiertag, -e", "ko": "공휴일" },
+    { "de": "bohren", "ko": "(드릴로) 구멍을 뚫다" },
+    { "de": "das Treppenhaus, -¨er", "ko": "계단실, 건물 계단" },
+    { "de": "genügen", "ko": "충분하다" },
+    { "de": "der Spätdienst, -e", "ko": "늦은 근무, 저녁 근무" },
+    { "de": "der Hausmeister, -", "ko": "(건물) 관리인" },
+    { "de": "der Rasen, -", "ko": "잔디" }
+  ],
+  "phrases": [
+    {
+      "de": "jemanden an etwas (Akk.) erinnern",
+      "ko": "~에게 ~을 상기시키다, 다시 알려 주다",
+      "ex": "Deshalb erinnern wir Sie an die wichtigsten Regeln unserer Hausordnung.",
+      "exko": "그래서 저희 공동생활 규칙 가운데 가장 중요한 내용을 다시 알려 드려요."
+    },
+    {
+      "de": "Rücksicht nehmen (auf + Akk.)",
+      "ko": "(~을) 배려하다",
+      "ex": "In der Mittagszeit von 13 bis 15 Uhr sollen alle Bewohner Rücksicht nehmen.",
+      "exko": "점심시간인 13시부터 15시까지도 모든 주민이 이웃을 배려해야 해요."
+    },
+    {
+      "de": "den Rasen mähen",
+      "ko": "잔디를 깎다",
+      "ex": "Letzten Sonntag hat Ihr Hausmeister schon um acht Uhr morgens im Hof den Rasen gemäht.",
+      "exko": "지난 일요일에 관리사무소 관리인분이 아침 8시부터 벌써 마당에서 잔디를 깎았어요."
+    },
+    {
+      "de": "Vielen Dank für Ihr Verständnis!",
+      "ko": "양해해 주셔서 감사합니다.",
+      "ex": "Vielen Dank für Ihr Verständnis!",
+      "exko": "양해해 주셔서 감사해요."
+    }
+  ]
+}

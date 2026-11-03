@@ -1,0 +1,229 @@
+{
+  "id": "a1-13",
+  "level": "A1",
+  "no": 13,
+  "title": "Kurse im Frühling",
+  "titleKo": "봄 강좌 안내",
+  "type": "Programmheft der Volkshochschule",
+  "typeKo": "시민대학 강좌 안내 책자",
+  "intro": "독일 시민대학(VHS)의 봄 강좌 네 가지를 소개하는 안내문이에요.",
+  "focus": ["분리동사", "시간 표현 um · von … bis · am", "können/müssen + 동사원형"],
+  "paragraphs": [
+    {
+      "de": "Haben Sie Lust auf ein neues Hobby?",
+      "ko": "새로운 취미를 시작해 보고 싶으세요?"
+    },
+    {
+      "style": "h",
+      "de": "Gitarre für Anfänger",
+      "ko": "초보자를 위한 기타"
+    },
+    {
+      "de": "Am 1. März fängt der Kurs an. Wir üben jeden Montag von 18 bis 19.30 Uhr. Eine Gitarre müssen Sie mitbringen.",
+      "ko": "강좌는 3월 1일에 시작해요. 매주 월요일 18시부터 19시 30분까지 연습해요. 기타는 직접 가져오셔야 해요."
+    },
+    {
+      "style": "h",
+      "de": "Yoga am Morgen",
+      "ko": "아침 요가"
+    },
+    {
+      "de": "Fangen Sie den Tag in Ruhe an! Am Dienstag und am Donnerstag machen wir von 7 bis 8 Uhr Yoga. Danach können Sie direkt zur Arbeit gehen.",
+      "ko": "하루를 여유 있게 시작하세요! 화요일과 목요일에 7시부터 8시까지 요가를 해요. 수업이 끝나면 바로 출근하실 수 있어요."
+    },
+    {
+      "style": "h",
+      "de": "Schnelle Küche",
+      "ko": "간편 요리"
+    },
+    {
+      "de": "Sie kochen gern, haben aber wenig Zeit? Hier lernen Sie einfache Rezepte. Wir fangen immer am Freitag um 17 Uhr an und hören um 20 Uhr auf.",
+      "ko": "요리를 좋아하지만 시간이 별로 없으세요? 이 강좌에서는 간단한 요리법을 배워요. 수업은 매주 금요일 17시에 시작해서 20시에 끝나요."
+    },
+    {
+      "style": "h",
+      "de": "Erste Schritte am Computer",
+      "ko": "컴퓨터 첫걸음"
+    },
+    {
+      "de": "Der Kurs ist für Menschen ab 60. Hier lernen Sie E-Mails schreiben und im Internet einkaufen. Sie müssen keinen Laptop mitbringen, denn im Kursraum gibt es Computer.",
+      "ko": "60세 이상인 분들을 위한 강좌예요. 여기에서 이메일 쓰기와 인터넷 쇼핑을 배워요. 강의실에 컴퓨터가 있으니까 노트북은 가져오지 않으셔도 돼요."
+    },
+    {
+      "style": "h",
+      "de": "Anmeldung",
+      "ko": "수강 신청"
+    },
+    {
+      "de": "Melden Sie sich bitte bis zum 19. Februar an – online oder im Büro.",
+      "ko": "2월 19일까지 온라인이나 사무실에서 신청해 주세요."
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Im Gitarrenkurs bekommt jeder ein Instrument.",
+      "answer": 1,
+      "evidence": "Eine Gitarre müssen Sie mitbringen.",
+      "pairs": [["Eine Gitarre müssen Sie mitbringen", "bekommt jeder ein Instrument"]],
+      "explain": "본문에서는 기타를 직접 가져와야 한다고 해요. 강좌에서 악기를 받는다는 문장은 내용이 반대예요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wie lange dauert der Gitarrenkurs an einem Montag?",
+      "options": ["sechzig Minuten", "dreißig Minuten", "neunzig Minuten"],
+      "answer": 2,
+      "evidence": "Wir üben jeden Montag von 18 bis 19.30 Uhr.",
+      "pairs": [["von 18 bis 19.30 Uhr", "neunzig Minuten"]],
+      "explain": "18시부터 19시 30분까지는 1시간 30분, 곧 90분이에요. 19.30의 30만 보고 30분이라고 생각하면 안 돼요."
+    },
+    {
+      "type": "mc",
+      "kind": "paraphrase",
+      "q": "Was bedeutet der Satz „Fangen Sie den Tag in Ruhe an!“?",
+      "options": ["Beginnen Sie den Morgen ohne Stress.", "Schlafen Sie am Morgen etwas länger.", "Machen Sie am Morgen keinen Lärm."],
+      "answer": 0,
+      "evidence": "Fangen Sie den Tag in Ruhe an!",
+      "pairs": [["Fangen Sie den Tag", "Beginnen Sie den Morgen"], ["in Ruhe", "ohne Stress"]],
+      "explain": "in Ruhe는 '서두르지 않고 여유 있게'라는 뜻이라서 ohne Stress(스트레스 없이)와 같아요. 수업이 7시에 시작하니까 늦잠을 자라는 뜻은 아니에요. Ruhe를 '조용함'으로만 읽고 소음 이야기로 생각하면 안 돼요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Im Kochkurs ist man jeden Freitag drei Stunden zusammen.",
+      "answer": 0,
+      "evidence": "Wir fangen immer am Freitag um 17 Uhr an und hören um 20 Uhr auf.",
+      "pairs": [["immer am Freitag", "jeden Freitag"], ["um 17 Uhr an und hören um 20 Uhr auf", "drei Stunden"]],
+      "explain": "요리 강좌는 매주 금요일 17시에 시작해서 20시에 끝나요. 17시부터 20시까지는 3시간이니까 맞는 문장이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Für wen ist der Computerkurs?",
+      "options": ["Tim Weber, 16 Jahre alt", "Frau Lorenz, 67 Jahre alt", "Herr Kaya, 45 Jahre alt"],
+      "answer": 1,
+      "evidence": "Der Kurs ist für Menschen ab 60.",
+      "pairs": [["ab 60", "67 Jahre alt"]],
+      "explain": "컴퓨터 강좌는 60세 이상인 사람을 위한 강좌예요. 67세인 로렌츠 씨는 여기에 맞지만, 16세인 팀과 45세인 카야 씨는 나이가 맞지 않아요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Man kann sich noch im März für einen Kurs anmelden.",
+      "answer": 1,
+      "evidence": "Melden Sie sich bitte bis zum 19. Februar an",
+      "pairs": [["bis zum 19. Februar", "noch im März"]],
+      "explain": "신청은 2월 19일까지 해야 해요. 그래서 3월에도 신청할 수 있다는 문장은 틀려요. 기타 강좌가 3월에 시작한다는 내용과 헷갈리지 마세요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "분리동사 – 앞부분은 문장 끝으로",
+      "term": "trennbare Verben",
+      "explain": "anfangen, aufhören, mitbringen, anmelden은 분리동사예요. 현재형 문장에서는 동사 부분(fängt, hören)이 2번 자리에 오고, 앞부분(an, auf, mit)은 문장 끝으로 가요. Sie 명령형에서도 앞부분은 문장 끝에 와요. 화법조동사와 함께 쓰면 분리되지 않고 한 단어로 문장 끝에 와요(mitbringen).",
+      "pattern": "동사 부분(2번 자리) … 앞부분(문장 끝)",
+      "examples": [
+        {
+          "de": "Am 1. März fängt der Kurs an.",
+          "ko": "강좌는 3월 1일에 시작해요.",
+          "mark": ["fängt", "an."],
+          "parts": [["Am 1. März", "부사어(시간)"], ["fängt", "동사"], ["der Kurs", "주어"], ["an.", "동사(끝)"]]
+        },
+        {
+          "de": "Wir fangen immer am Freitag um 17 Uhr an und hören um 20 Uhr auf.",
+          "ko": "수업은 매주 금요일 17시에 시작해서 20시에 끝나요.",
+          "mark": ["fangen", "Uhr an", "hören", "auf."]
+        },
+        {
+          "de": "Melden Sie sich bitte bis zum 19. Februar an – online oder im Büro.",
+          "ko": "2월 19일까지 온라인이나 사무실에서 신청해 주세요.",
+          "mark": ["Melden", "Februar an"]
+        }
+      ],
+      "tip": "문장 끝의 an을 빼면 안 돼요. fangen만 쓰면 '잡다'라는 다른 뜻이 돼요."
+    },
+    {
+      "title": "시간 표현 – um · von … bis · am",
+      "term": "Uhrzeit und Datum",
+      "explain": "시각은 um으로 말해요(um 17 Uhr). 시작과 끝은 von … bis로 말해요(von 7 bis 8 Uhr). 요일과 날짜 앞에는 am을 써요(am Freitag, am 1. März). 19.30 Uhr는 neunzehn Uhr dreißig로 읽어요. 시간 표현이 1번 자리에 오면 동사는 2번 자리에 오고 주어는 동사 뒤로 가요.",
+      "pattern": "um + 시각 · von + 시각 + bis + 시각 · am + 요일/날짜",
+      "examples": [
+        {
+          "de": "Wir üben jeden Montag von 18 bis 19.30 Uhr.",
+          "ko": "매주 월요일 18시부터 19시 30분까지 연습해요.",
+          "mark": ["jeden Montag", "von 18 bis 19.30 Uhr"],
+          "parts": [["Wir", "주어"], ["üben", "동사"], ["jeden Montag", "부사어(시간)"], ["von 18 bis 19.30 Uhr.", "부사어(시간)"]]
+        },
+        {
+          "de": "Am Dienstag und am Donnerstag machen wir von 7 bis 8 Uhr Yoga.",
+          "ko": "화요일과 목요일에 7시부터 8시까지 요가를 해요.",
+          "mark": ["Am Dienstag", "am Donnerstag", "von 7 bis 8 Uhr"],
+          "parts": [["Am Dienstag und am Donnerstag", "부사어(시간)"], ["machen", "동사"], ["wir", "주어"], ["von 7 bis 8 Uhr", "부사어(시간)"], ["Yoga.", "4격 목적어"]]
+        }
+      ],
+      "tip": "날짜는 숫자 뒤에 점을 찍고 서수로 읽어요(am 1. März = am ersten März). bis zum 19. Februar는 '2월 19일까지'라는 마감 날짜예요."
+    },
+    {
+      "title": "können/müssen + 동사원형(문장 끝)",
+      "term": "Modalverben können und müssen",
+      "explain": "können(~할 수 있다)과 müssen(~해야 한다)은 화법조동사예요. 화법조동사는 2번 자리에 오고 주어에 맞게 변해요. 본동사는 동사원형으로 문장 끝에 와요. müssen을 부정하면(nicht müssen, kein … müssen) '~하지 않아도 된다'는 뜻이에요.",
+      "pattern": "화법조동사(2번 자리) … 동사원형(문장 끝)",
+      "examples": [
+        {
+          "de": "Eine Gitarre müssen Sie mitbringen.",
+          "ko": "기타는 직접 가져오셔야 해요.",
+          "mark": ["müssen", "mitbringen."],
+          "parts": [["Eine Gitarre", "4격 목적어"], ["müssen", "동사"], ["Sie", "주어"], ["mitbringen.", "동사(끝)"]]
+        },
+        {
+          "de": "Danach können Sie direkt zur Arbeit gehen.",
+          "ko": "수업이 끝나면 바로 출근하실 수 있어요.",
+          "mark": ["können", "gehen."],
+          "parts": [["Danach", "부사어(시간)"], ["können", "동사"], ["Sie", "주어"], ["direkt", "부사어(방법)"], ["zur Arbeit", "부사어(장소)"], ["gehen.", "동사(끝)"]]
+        },
+        {
+          "de": "Sie müssen keinen Laptop mitbringen, denn im Kursraum gibt es Computer.",
+          "ko": "강의실에 컴퓨터가 있으니까 노트북은 가져오지 않으셔도 돼요.",
+          "mark": ["müssen keinen Laptop mitbringen"]
+        }
+      ],
+      "tip": "Sie müssen keinen Laptop mitbringen은 '가져오면 안 된다'가 아니라 '가져올 필요가 없다'는 뜻이에요."
+    }
+  ],
+  "vocab": [
+    { "de": "der Kurs, -e", "ko": "강좌, 수업" },
+    { "de": "der Anfänger, -", "ko": "초보자" },
+    { "de": "an|fangen (fängt an, fing an, hat angefangen)", "ko": "시작되다, 시작하다" },
+    { "de": "auf|hören", "ko": "끝나다, 그만하다" },
+    { "de": "mit|bringen (bringt mit, brachte mit, hat mitgebracht)", "ko": "가져오다" },
+    { "de": "sich an|melden", "ko": "신청하다, 등록하다" },
+    { "de": "üben", "ko": "연습하다" },
+    { "de": "die Lust (Sg.)", "ko": "하고 싶은 마음" },
+    { "de": "das Hobby, -s", "ko": "취미" },
+    { "de": "die Ruhe (Sg.)", "ko": "여유, 평온" },
+    { "de": "das Rezept, -e", "ko": "요리법, 레시피" },
+    { "de": "ein|kaufen", "ko": "장을 보다, 물건을 사다" }
+  ],
+  "phrases": [
+    {
+      "de": "Lust haben auf + Akk.",
+      "ko": "~하고 싶다, ~할 마음이 있다",
+      "ex": "Haben Sie Lust auf ein neues Hobby?",
+      "exko": "새로운 취미를 시작해 보고 싶으세요?"
+    },
+    {
+      "de": "in Ruhe",
+      "ko": "여유 있게, 서두르지 않고",
+      "ex": "Fangen Sie den Tag in Ruhe an!",
+      "exko": "하루를 여유 있게 시작하세요!"
+    },
+    {
+      "de": "wenig Zeit haben",
+      "ko": "시간이 별로 없다",
+      "ex": "Sie kochen gern, haben aber wenig Zeit?",
+      "exko": "요리를 좋아하지만 시간이 별로 없으세요?"
+    }
+  ]
+}

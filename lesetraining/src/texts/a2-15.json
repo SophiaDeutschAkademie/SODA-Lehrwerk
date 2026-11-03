@@ -1,0 +1,233 @@
+{
+  "id": "a2-15",
+  "level": "A2",
+  "no": 15,
+  "title": "Vom Hobby zum Beruf",
+  "titleKo": "취미가 직업이 되기까지",
+  "type": "Mitarbeiterporträt",
+  "typeKo": "사내 신문 인물 소개",
+  "intro": "사무실을 떠나 제빵사가 된 직원을 소개하는 사내 신문 글이에요.",
+  "focus": ["현재완료 (haben/sein + 과거분사)", "시간 종속절 als · wenn · seit", "sein · haben · 화법조동사의 과거형"],
+  "paragraphs": [
+    {
+      "style": "meta",
+      "de": "Menschen bei Lindner: Miriam Kowalski",
+      "ko": "린트너 사람들: 미리암 코발스키"
+    },
+    {
+      "de": "Wenn um sechs Uhr die ersten Kunden kommen, hat Miriam Kowalski (34) die Brötchen schon gebacken. Lange war das Backen für sie nur ein Hobby.",
+      "ko": "6시에 첫 손님들이 올 때면, 작은 빵들은 이미 미리암 코발스키(34) 씨가 다 구워 놓은 뒤입니다. 오랫동안 빵 굽기는 그녀에게 취미일 뿐이었습니다."
+    },
+    {
+      "de": "Als sie ein Kind war, hat sie jeden Sonntag mit ihrer Oma Kuchen gebacken. „Am schönsten war es, wenn ich den Teig probieren durfte“, erzählt sie. Nach der Schule wollte sie aber einen „sicheren“ Beruf und ist Bürokauffrau geworden.",
+      "ko": "어릴 때 그녀는 일요일마다 할머니와 함께 케이크를 구웠습니다. “반죽을 맛봐도 될 때가 제일 좋았어요.”라고 그녀는 이야기합니다. 하지만 학교를 마친 뒤에는 ‘안정적인’ 직업을 원했고, 사무직 직원이 되었습니다."
+    },
+    {
+      "de": "Glücklich war sie im Büro nicht. „Ich musste den ganzen Tag am Computer sitzen. Immer wenn ich abends nach Hause gekommen bin, habe ich noch Brot gebacken.“",
+      "ko": "사무실에서 그녀는 행복하지 않았습니다. “하루 종일 컴퓨터 앞에 앉아 있어야 했어요. 저녁에 집에 돌아오면 언제나 빵을 또 구웠어요.”"
+    },
+    {
+      "de": "Vor vier Jahren hat ihr Mann ein Foto von ihrem Sauerteigbrot ins Internet gestellt. Unsere Bäckermeisterin Petra Lindner hat es gesehen und ihr geschrieben: „Wollen Sie nicht bei uns eine Ausbildung machen?“ Als Miriam die Nachricht bekam, konnte sie die ganze Nacht nicht schlafen. Mit 30 noch einmal von vorn anfangen? Eine Woche später hat sie ihre Stelle gekündigt.",
+      "ko": "4년 전, 남편이 그녀가 구운 사워도우 빵 사진을 인터넷에 올렸습니다. 우리 회사의 제빵 마이스터 페트라 린트너 씨가 그 사진을 보고 그녀에게 글을 보냈습니다. “우리 회사에서 직업 교육을 받아 보지 않으실래요?” 미리암 씨는 그 메시지를 받고 밤새 잠을 이루지 못했습니다. 서른 살에 다시 처음부터 시작한다고요? 일주일 뒤 그녀는 회사에 사표를 냈습니다."
+    },
+    {
+      "de": "In der Ausbildung hatte Miriam wenig Geld und ist jeden Morgen um halb drei aufgestanden. Als sie in die Berufsschule kam, waren die anderen fast alle erst 17. „Aber seit ich in der Backstube stehe, bin ich glücklich“, sagt sie.",
+      "ko": "직업 교육을 받는 동안 미리암 씨는 돈이 넉넉하지 않았고, 매일 새벽 2시 반에 일어났습니다. 직업학교에 들어갔을 때 다른 학생들은 거의 모두 겨우 열일곱 살이었습니다. “그래도 제빵실에서 일하게 된 뒤로 저는 행복해요.”라고 그녀는 말합니다."
+    },
+    {
+      "de": "Seit sie letztes Jahr die Prüfung bestanden hat, darf sie eigene Rezepte ausprobieren. Ihr Sauerteigbrot gibt es jetzt in allen 14 Filialen – als „Miriams Kruste“. Ihr Tipp für alle im Team? „Mit 30 ist man nicht zu alt für einen neuen Anfang.“",
+      "ko": "작년에 시험에 합격한 뒤로 그녀는 자기만의 레시피를 직접 시도해 봐도 됩니다. 그녀의 사워도우 빵은 이제 14개 지점 모두에서 ‘미리암의 크루스테’라는 이름으로 팔립니다. 회사 동료 모두에게 주는 그녀의 조언은요? “서른 살은 새로 시작하기에 늦은 나이가 아니에요.”"
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Miriam ist gleich nach ihrem Schulabschluss Bäckerin geworden.",
+      "answer": 1,
+      "evidence": "Nach der Schule wollte sie aber einen „sicheren“ Beruf und ist Bürokauffrau geworden.",
+      "pairs": [["Nach der Schule", "gleich nach ihrem Schulabschluss"], ["Bürokauffrau", "Bäckerin"]],
+      "explain": "학교를 마친 뒤 미리암 씨는 안정적인 직업을 원해서 사무직 직원(Bürokauffrau)이 되었어요. 제빵사가 된 것은 훨씬 나중의 일이므로 이 문장은 틀려요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was hat Miriam als Kind beim Backen mit der Oma am besten gefallen?",
+      "options": ["Sie durfte am Sonntag ganz allein in der Küche stehen.", "Sie durfte sonntags mit der Oma frisches Brot kaufen.", "Sie durfte schon vor dem Backen ein bisschen kosten."],
+      "answer": 2,
+      "evidence": "„Am schönsten war es, wenn ich den Teig probieren durfte“",
+      "pairs": [["den Teig probieren", "schon vor dem Backen ein bisschen kosten"], ["Am schönsten", "am besten gefallen"]],
+      "explain": "미리암 씨에게 가장 좋았던 것(Am schönsten)은 반죽을 맛보는 일(den Teig probieren)이었어요. 이것을 '굽기 전에 조금 맛보다'로 바꿔 말했어요. 할머니와 함께 구웠으므로 혼자 부엌에 있었다는 말은 틀리고, 할머니와 함께한 일은 빵을 사는 것이 아니라 케이크를 굽는 것이었어요."
+    },
+    {
+      "type": "mc",
+      "kind": "paraphrase",
+      "q": "Was bedeutet der Satz „Immer wenn ich abends nach Hause gekommen bin, habe ich noch Brot gebacken“?",
+      "options": ["Nach Feierabend hat sie regelmäßig in ihrer Küche gebacken.", "Am Abend hat sie manchmal im Büro Brot für Kollegen gebacken.", "Nur an den Wochenenden hatte sie Zeit, ein Brot zu backen."],
+      "answer": 0,
+      "evidence": "Immer wenn ich abends nach Hause gekommen bin, habe ich noch Brot gebacken",
+      "pairs": [["Immer wenn", "regelmäßig"], ["abends nach Hause gekommen", "Nach Feierabend"]],
+      "explain": "immer wenn은 과거에 여러 번 반복된 일을 말해요. 그래서 '퇴근 후에 규칙적으로 집 부엌에서 빵을 구웠다'는 뜻이에요. 빵을 구운 곳은 사무실(Büro)이 아니라 집이고, 주말에만 구웠다는 말도 '저녁마다'와 맞지 않아요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Petra Lindner hat im Netz ein Bild von Miriams Brot entdeckt und ihr eine Ausbildung angeboten.",
+      "answer": 0,
+      "evidence": "Unsere Bäckermeisterin Petra Lindner hat es gesehen und ihr geschrieben: „Wollen Sie nicht bei uns eine Ausbildung machen?“",
+      "pairs": [["ins Internet gestellt", "im Netz"], ["Foto", "Bild"], ["Wollen Sie nicht bei uns eine Ausbildung machen?", "eine Ausbildung angeboten"]],
+      "explain": "남편이 인터넷에 올린 빵 사진을 페트라 린트너 씨가 보고, 자기 회사에서 직업 교육을 받아 보라고 제안했어요. Internet은 Netz로, Foto는 Bild로 바꿔 말했으므로 맞는 내용이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was hat Miriam nach der Nachricht von Petra Lindner gemacht?",
+      "options": ["Gleich am nächsten Morgen hat sie den Bürojob beendet.", "Nach sieben Tagen hat sie ihren Job im Büro aufgegeben.", "Nach einer Woche hat sie der Bäckermeisterin abgesagt."],
+      "answer": 1,
+      "evidence": "Eine Woche später hat sie ihre Stelle gekündigt.",
+      "pairs": [["Eine Woche später", "Nach sieben Tagen"], ["ihre Stelle gekündigt", "ihren Job im Büro aufgegeben"]],
+      "explain": "미리암 씨는 일주일 뒤(Eine Woche später) 회사를 그만두었어요(Stelle gekündigt). 일주일을 '7일'로, 사직을 '일을 그만두다'로 바꿔 말했어요. 바로 다음 날 아침에 그만둔 것이 아니고, 제안을 거절한 것도 아니에요. 그녀는 지금 린트너에서 일하고 있어요."
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "q": "Was erfährt man über Miriam und die anderen in der Berufsschule?",
+      "options": ["Sie war mit 17 die Jüngste von allen in ihrer Klasse.", "Fast alle in ihrer Klasse waren ungefähr in ihrem Alter.", "Sie war viel älter als die meisten in ihrer Klasse."],
+      "answer": 2,
+      "evidence": "Als sie in die Berufsschule kam, waren die anderen fast alle erst 17.",
+      "pairs": [["waren die anderen fast alle erst 17", "viel älter als die meisten in ihrer Klasse"]],
+      "explain": "미리암 씨는 서른 살에 교육을 시작했는데, 직업학교의 다른 학생들은 거의 모두 열일곱 살이었어요. 그래서 그녀가 반의 대부분보다 훨씬 나이가 많았다고 추론할 수 있어요. 17은 다른 학생들의 나이이고, 거의 모두(fast alle)는 그녀와 비슷한 나이가 아니라 훨씬 어렸어요."
+    },
+    {
+      "type": "mc",
+      "kind": "intent",
+      "q": "Was möchte Miriam ihren Kolleginnen und Kollegen am Ende sagen?",
+      "options": ["Eine sichere Stelle sollte man auch mit 30 nie aufgeben.", "Für einen Neuanfang im Job ist es mit 30 nicht zu spät.", "Mit 30 bleibt man besser bei seinem alten, sicheren Beruf."],
+      "answer": 1,
+      "evidence": "Mit 30 ist man nicht zu alt für einen neuen Anfang.",
+      "pairs": [["nicht zu alt", "nicht zu spät"], ["einen neuen Anfang", "Neuanfang"]],
+      "explain": "미리암 씨는 서른 살도 새로 시작하기에 늦지 않다고 말하며 동료들에게 용기를 줘요. 나이를 '너무 많지 않다(nicht zu alt)'에서 '늦지 않다(nicht zu spät)'로 바꿔 말했어요. 그녀는 바로 '안정적인' 사무직을 그만두었으므로, 그런 직업을 지키라는 다른 두 선택지는 그녀의 뜻과 반대예요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "현재완료 – haben과 sein",
+      "term": "Perfekt mit haben und sein",
+      "explain": "현재완료는 haben/sein + 과거분사로 만들어요. haben이나 sein은 동사 2번 자리에, 과거분사는 문장 끝에 와서 틀 구조를 이뤄요. 대부분의 동사는 haben을 써요(hat gebacken, hat gekündigt). 움직임이나 위치 변화를 나타내는 동사(kommen, aufstehen)와 상태 변화를 나타내는 동사(werden)는 sein을 써요.",
+      "pattern": "haben/sein (2번 자리) + … + 과거분사 (문장 끝)",
+      "examples": [
+        {
+          "de": "Eine Woche später hat sie ihre Stelle gekündigt.",
+          "ko": "일주일 뒤 그녀는 회사에 사표를 냈습니다.",
+          "mark": ["hat", "gekündigt"],
+          "parts": [["Eine Woche später", "부사어(시간)"], ["hat", "동사"], ["sie", "주어"], ["ihre Stelle", "4격 목적어"], ["gekündigt.", "동사(끝)"]]
+        },
+        {
+          "de": "Nach der Schule wollte sie aber einen „sicheren“ Beruf und ist Bürokauffrau geworden.",
+          "ko": "하지만 학교를 마친 뒤에는 ‘안정적인’ 직업을 원했고, 사무직 직원이 되었습니다.",
+          "mark": ["ist", "geworden"]
+        },
+        {
+          "de": "In der Ausbildung hatte Miriam wenig Geld und ist jeden Morgen um halb drei aufgestanden.",
+          "ko": "직업 교육을 받는 동안 미리암 씨는 돈이 넉넉하지 않았고, 매일 새벽 2시 반에 일어났습니다.",
+          "mark": ["ist", "aufgestanden"]
+        }
+      ],
+      "tip": "aufstehen은 분리동사라서 과거분사가 aufgestanden이 돼요(auf + ge + standen). 누워 있다가 일어나는 위치 변화라서 sein과 함께 써요."
+    },
+    {
+      "title": "시간을 나타내는 als · wenn · seit",
+      "term": "Temporalsätze mit als, wenn und seit",
+      "explain": "als는 과거에 한 번 있었던 일이나 과거의 한 시기에 써요(Als sie ein Kind war). wenn은 현재나 미래의 일에 쓰고, 과거에 여러 번 되풀이된 일에도 써요(Immer wenn ich abends …). seit는 '~한 뒤로 지금까지'라는 뜻이고, 주절은 보통 현재형이에요. 세 단어 모두 종속접속사라서 동사가 종속절 끝에 와요.",
+      "pattern": "Als/Wenn/Seit + 주어 + … + 동사(끝), 동사 + 주어 …",
+      "examples": [
+        {
+          "de": "Als Miriam die Nachricht bekam, konnte sie die ganze Nacht nicht schlafen.",
+          "ko": "미리암 씨는 그 메시지를 받고 밤새 잠을 이루지 못했습니다.",
+          "mark": ["Als", "bekam"],
+          "parts": [["Als Miriam die Nachricht bekam,", "종속절"], ["konnte", "동사"], ["sie", "주어"], ["die ganze Nacht", "부사어(시간)"], ["nicht", "부정어"], ["schlafen.", "동사(끝)"]]
+        },
+        {
+          "de": "Immer wenn ich abends nach Hause gekommen bin, habe ich noch Brot gebacken.",
+          "ko": "저녁에 집에 돌아오면 언제나 빵을 또 구웠어요.",
+          "mark": ["Immer wenn", "gekommen bin"]
+        },
+        {
+          "de": "Seit sie letztes Jahr die Prüfung bestanden hat, darf sie eigene Rezepte ausprobieren.",
+          "ko": "작년에 시험에 합격한 뒤로 그녀는 자기만의 레시피를 직접 시도해 봐도 됩니다.",
+          "mark": ["Seit", "bestanden hat", "darf"],
+          "parts": [["Seit sie letztes Jahr die Prüfung bestanden hat,", "종속절"], ["darf", "동사"], ["sie", "주어"], ["eigene Rezepte", "4격 목적어"], ["ausprobieren.", "동사(끝)"]]
+        }
+      ],
+      "tip": "종속절이 문장 앞에 오면 쉼표 바로 뒤에 주절의 동사가 와요(…, konnte sie …). seit vier Jahren처럼 seit 뒤에 명사만 오면 전치사이고, 이때는 3격을 써요."
+    },
+    {
+      "title": "sein · haben · 화법조동사의 과거형",
+      "term": "Präteritum von sein, haben und Modalverben",
+      "explain": "sein, haben, 화법조동사는 과거의 일을 말할 때 현재완료보다 과거형을 주로 써요(war, hatte, musste, durfte, wollte, konnte). 화법조동사의 과거형에는 움라우트가 없어요(dürfen → durfte, müssen → musste, können → konnte). ich와 er/sie의 형태가 같아요(ich durfte, sie durfte).",
+      "pattern": "war · hatte · musste · durfte · wollte · konnte + (동사원형, 문장 끝)",
+      "examples": [
+        {
+          "de": "Am schönsten war es, wenn ich den Teig probieren durfte",
+          "ko": "반죽을 맛봐도 될 때가 제일 좋았어요.",
+          "mark": ["war", "durfte"],
+          "parts": [["Am schönsten", "보어"], ["war", "동사"], ["es,", "주어"], ["wenn ich den Teig probieren durfte", "종속절"]]
+        },
+        {
+          "de": "Glücklich war sie im Büro nicht.",
+          "ko": "사무실에서 그녀는 행복하지 않았습니다.",
+          "mark": ["war"],
+          "parts": [["Glücklich", "보어"], ["war", "동사"], ["sie", "주어"], ["im Büro", "부사어(장소)"], ["nicht.", "부정어"]]
+        },
+        {
+          "de": "Ich musste den ganzen Tag am Computer sitzen.",
+          "ko": "하루 종일 컴퓨터 앞에 앉아 있어야 했어요.",
+          "mark": ["musste", "sitzen"]
+        }
+      ],
+      "tip": "'Ich habe gemusst'보다 'Ich musste'가 훨씬 자연스러워요. 종속절에서는 과거형 화법조동사도 맨 끝에 와요(wenn ich den Teig probieren durfte)."
+    }
+  ],
+  "vocab": [
+    { "de": "das Brötchen, -", "ko": "작은 빵, 브뢰트헨" },
+    { "de": "backen (backt, backte, hat gebacken)", "ko": "(빵·케이크를) 굽다" },
+    { "de": "der Teig, -e", "ko": "반죽" },
+    { "de": "probieren", "ko": "맛보다" },
+    { "de": "die Ausbildung, -en", "ko": "직업 교육" },
+    { "de": "die Bäckermeisterin, -nen", "ko": "제빵 마이스터 (여성)" },
+    { "de": "die Stelle, -n", "ko": "일자리, 직장" },
+    { "de": "kündigen", "ko": "(직장을) 그만두다, 사직하다" },
+    { "de": "auf|stehen (steht auf, stand auf, ist aufgestanden)", "ko": "일어나다" },
+    { "de": "die Berufsschule, -n", "ko": "직업학교" },
+    { "de": "die Backstube, -n", "ko": "제빵실" },
+    { "de": "die Prüfung, -en", "ko": "시험" },
+    { "de": "aus|probieren", "ko": "(새로운 것을) 시험 삼아 해 보다" },
+    { "de": "die Filiale, -n", "ko": "지점" }
+  ],
+  "phrases": [
+    {
+      "de": "etwas ins Internet stellen",
+      "ko": "~을 인터넷에 올리다",
+      "ex": "Vor vier Jahren hat ihr Mann ein Foto von ihrem Sauerteigbrot ins Internet gestellt.",
+      "exko": "4년 전, 남편이 그녀가 구운 사워도우 빵 사진을 인터넷에 올렸습니다."
+    },
+    {
+      "de": "eine Ausbildung machen",
+      "ko": "직업 교육을 받다",
+      "ex": "Wollen Sie nicht bei uns eine Ausbildung machen?",
+      "exko": "우리 회사에서 직업 교육을 받아 보지 않으실래요?"
+    },
+    {
+      "de": "(noch einmal) von vorn anfangen",
+      "ko": "(다시) 처음부터 시작하다",
+      "ex": "Mit 30 noch einmal von vorn anfangen?",
+      "exko": "서른 살에 다시 처음부터 시작한다고요?"
+    },
+    {
+      "de": "eine Prüfung bestehen",
+      "ko": "시험에 합격하다",
+      "ex": "Seit sie letztes Jahr die Prüfung bestanden hat, darf sie eigene Rezepte ausprobieren.",
+      "exko": "작년에 시험에 합격한 뒤로 그녀는 자기만의 레시피를 직접 시도해 봐도 됩니다."
+    }
+  ]
+}

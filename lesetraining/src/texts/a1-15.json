@@ -1,0 +1,229 @@
+{
+  "id": "a1-15",
+  "level": "A1",
+  "no": 15,
+  "title": "Liebe Mitbewohner!",
+  "titleKo": "룸메이트 여러분께!",
+  "type": "Notizzettel am Kühlschrank",
+  "typeKo": "냉장고 메모",
+  "intro": "셰어하우스 냉장고에 붙은 메모 세 장이에요. 룸메이트들이 서로 부탁하고 답해요.",
+  "focus": ["du · ihr 명령형", "nicht와 kein", "müssen · dürfen"],
+  "paragraphs": [
+    {
+      "label": "Paula",
+      "style": "meta",
+      "de": "Liebe Mitbewohner!",
+      "ko": "룸메이트 여러분께!"
+    },
+    {
+      "de": "Wo ist mein Joghurt? Am Montag war er noch im Kühlschrank, und heute ist er weg! Das finde ich nicht lustig. Bitte esst meine Sachen nicht!",
+      "ko": "제 요거트 어디 있어요? 월요일에는 아직 냉장고에 있었는데, 오늘은 없어요! 이건 웃을 일이 아니에요. 제 음식은 먹지 마세요!"
+    },
+    {
+      "de": "Am Samstag kommen meine Eltern zu Besuch. Wir müssen die Küche unbedingt putzen! Spült bitte bis Freitag eure Teller und Tassen.",
+      "ko": "토요일에 저희 부모님이 집에 오세요. 우리는 부엌을 꼭 청소해야 해요! 금요일까지 각자 접시와 컵을 설거지해 주세요."
+    },
+    {
+      "style": "meta",
+      "de": "Eure Paula",
+      "ko": "파울라가"
+    },
+    {
+      "label": "Malte",
+      "de": "Achtung: Die Waschmaschine ist kaputt! Ihr dürft sie nicht benutzen. Am Mittwoch um 10 Uhr kommt ein Techniker. Ich habe dann keine Zeit, denn ich muss arbeiten. Kann jemand zu Hause sein?",
+      "ko": "주의하세요. 세탁기가 고장 났어요! 세탁기를 쓰면 안 돼요. 수요일 10시에 수리 기사님이 와요. 저는 그때 시간이 없어요. 일을 해야 하거든요. 혹시 집에 있을 수 있는 사람 있어요?"
+    },
+    {
+      "style": "meta",
+      "de": "Malte",
+      "ko": "말테"
+    },
+    {
+      "label": "Jonas",
+      "de": "Malte, mach dir keine Sorgen: Am Mittwoch bin ich zu Hause. Und Paula, sei bitte nicht böse! Ich hatte Hunger und habe deinen Joghurt gegessen. Morgen kaufe ich dir zwei neue.",
+      "ko": "말테, 걱정하지 마세요. 수요일에는 제가 집에 있어요. 그리고 파울라, 화내지 마세요! 제가 배가 고파서 파울라 요거트를 먹었어요. 내일 새 요거트 두 개를 사 줄게요."
+    },
+    {
+      "de": "Die Küche putzen wir zusammen. Aber deine Eltern müssen einen Kuchen mitbringen – und ich darf ein Stück essen, oder?",
+      "ko": "부엌 청소는 같이 해요. 그런데 부모님이 케이크를 가져오셔야 해요. 그리고 저도 한 조각 먹어도 되죠?"
+    },
+    {
+      "style": "meta",
+      "de": "Jonas (immer hungrig)",
+      "ko": "늘 배고픈 요나스"
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Paulas Eltern besuchen sie am Wochenende.",
+      "answer": 0,
+      "evidence": "Am Samstag kommen meine Eltern zu Besuch.",
+      "pairs": [["Am Samstag", "am Wochenende"], ["kommen meine Eltern zu Besuch", "Paulas Eltern besuchen sie"]],
+      "explain": "파울라는 토요일에 부모님이 온다고 써요. 토요일(Samstag)을 주말(Wochenende)로, zu Besuch kommen을 동사 besuchen으로 바꿔 말했어요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Die anderen sollen ihr Geschirr vor Samstag sauber machen.",
+      "answer": 0,
+      "evidence": "Spült bitte bis Freitag eure Teller und Tassen.",
+      "pairs": [["Spült", "sauber machen"], ["eure Teller und Tassen", "ihr Geschirr"], ["bis Freitag", "vor Samstag"]],
+      "explain": "파울라는 금요일까지 접시와 컵을 설거지해 달라고 부탁해요. '금요일까지'는 '토요일 전에'와 같은 뜻이고, 접시와 컵(Teller und Tassen)을 합쳐서 Geschirr(식기)라고 했어요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was möchte Malte?",
+      "options": ["Jemand soll am Mittwoch für den Techniker da sein.", "Jemand soll am Mittwoch die Waschmaschine benutzen.", "Jemand soll die kaputte Maschine selbst reparieren."],
+      "answer": 0,
+      "evidence": "Kann jemand zu Hause sein?",
+      "pairs": [["zu Hause sein", "für den Techniker da sein"]],
+      "explain": "말테는 수요일에 기사님이 올 때 집에 있어 줄 사람이 있는지 물어요. 세탁기는 쓰면 안 된다고 했고(Ihr dürft sie nicht benutzen.), 기사님이 오니까 직접 고칠 필요도 없어요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Malte kann am Mittwochvormittag zu Hause bleiben.",
+      "answer": 1,
+      "evidence": "Ich habe dann keine Zeit, denn ich muss arbeiten.",
+      "pairs": [["habe dann keine Zeit", "kann"], ["muss arbeiten", "zu Hause bleiben"]],
+      "explain": "기사님은 수요일 10시, 즉 오전에 와요. 말테는 그때 일을 해야 해서 시간이 없다고 해요. 집에 있겠다고 한 사람은 요나스예요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was ist mit Paulas Joghurt passiert?",
+      "options": ["Paula hat ihn am Montag selbst gegessen.", "Malte hat ihn mit zur Arbeit genommen.", "Jonas war hungrig und hat ihn gegessen."],
+      "answer": 2,
+      "evidence": "Ich hatte Hunger und habe deinen Joghurt gegessen.",
+      "pairs": [["Ich hatte Hunger", "Jonas war hungrig"], ["deinen Joghurt", "ihn"]],
+      "explain": "요나스가 배가 고파서 요거트를 먹었다고 털어놓아요. Hunger haben을 hungrig sein으로 바꿔 말했어요. 월요일에는 요거트가 아직 냉장고에 있었고, 말테는 요거트를 가져가지 않았어요."
+    },
+    {
+      "type": "mc",
+      "kind": "intent",
+      "q": "Was meint Jonas mit dem Satz über den Kuchen?",
+      "options": ["Er möchte für Paulas Eltern etwas backen.", "Er hilft beim Putzen, will aber etwas Süßes.", "Er hilft nicht beim Putzen, er isst lieber."],
+      "answer": 1,
+      "evidence": "Aber deine Eltern müssen einen Kuchen mitbringen – und ich darf ein Stück essen, oder?",
+      "pairs": [["ich darf ein Stück essen", "will aber etwas Süßes"], ["Die Küche putzen wir zusammen.", "Er hilft beim Putzen"]],
+      "explain": "요나스는 부엌 청소를 같이 하겠다고 하면서, 대신 부모님이 가져올 케이크를 한 조각 먹고 싶다고 농담해요. 케이크는 부모님이 가져오는 것이고 요나스가 굽는 것이 아니에요. 청소도 같이 한다고 했어요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "명령형 – du와 ihr에게 부탁하기",
+      "term": "Imperativ (du / ihr)",
+      "explain": "친한 사람 한 명(du)에게는 du 형태에서 -st를 빼고 du도 빼요(du machst → mach). sein은 불규칙해서 sei가 돼요. 여러 사람(ihr)에게는 ihr 형태를 그대로 쓰고 ihr만 빼요(ihr esst → esst). 명령형 동사는 문장 맨 앞에 오고, bitte를 넣으면 더 공손해져요.",
+      "pattern": "du: 동사 어간 (mach, sei) · ihr: ihr 형태 (esst, spült, schreibt)",
+      "examples": [
+        {
+          "de": "Bitte esst meine Sachen nicht!",
+          "ko": "제 음식은 먹지 마세요!",
+          "mark": ["esst"],
+          "parts": [["Bitte", "기타"], ["esst", "동사"], ["meine Sachen", "4격 목적어"], ["nicht!", "부정어"]]
+        },
+        {
+          "de": "Spült bitte bis Freitag eure Teller und Tassen.",
+          "ko": "금요일까지 각자 접시와 컵을 설거지해 주세요.",
+          "mark": ["Spült"],
+          "parts": [["Spült", "동사"], ["bitte", "기타"], ["bis Freitag", "부사어(시간)"], ["eure Teller und Tassen.", "4격 목적어"]]
+        },
+        {
+          "de": "Und Paula, sei bitte nicht böse!",
+          "ko": "그리고 파울라, 화내지 마세요!",
+          "mark": ["sei"]
+        }
+      ],
+      "tip": "essen처럼 du 형태에서 e가 i로 바뀌는 동사는 du 명령형에서도 i를 써요(du isst → iss). 반대로 fahren처럼 a가 ä로 바뀌는 동사는 명령형에서 다시 a로 써요(fahr)."
+    },
+    {
+      "title": "nicht와 kein – 부정하기",
+      "term": "Negation mit nicht und kein",
+      "explain": "kein은 부정관사(ein)가 붙는 명사나 관사 없는 명사를 부정해요. kein은 관사처럼 어미가 바뀌어요(keine Zeit, keine Sorgen). nicht는 동사와 형용사를 부정해요(nicht lustig). 정관사나 소유관사가 붙은 목적어가 있으면 nicht는 보통 그 목적어 뒤에 와요(meine Sachen nicht).",
+      "pattern": "kein + 명사 · nicht + 형용사 · 소유관사 + 명사 + nicht",
+      "examples": [
+        {
+          "de": "Ich habe dann keine Zeit, denn ich muss arbeiten.",
+          "ko": "저는 그때 시간이 없어요. 일을 해야 하거든요.",
+          "mark": ["keine Zeit"],
+          "parts": [["Ich", "주어"], ["habe", "동사"], ["dann", "부사어(시간)"], ["keine Zeit,", "4격 목적어"], ["denn", "접속사"], ["ich", "주어"], ["muss", "동사"], ["arbeiten.", "동사(끝)"]]
+        },
+        {
+          "de": "Das finde ich nicht lustig.",
+          "ko": "이건 웃을 일이 아니에요.",
+          "mark": ["nicht lustig"],
+          "parts": [["Das", "4격 목적어"], ["finde", "동사"], ["ich", "주어"], ["nicht", "부정어"], ["lustig.", "보어"]]
+        },
+        {
+          "de": "Malte, mach dir keine Sorgen",
+          "ko": "말테, 걱정하지 마세요",
+          "mark": ["keine Sorgen"]
+        }
+      ],
+      "tip": "Das ist nicht okay.처럼 형용사 앞에는 kein을 쓰지 않아요. Ich habe kein Zeit.도 틀린 표현이에요. Zeit는 여성 명사라서 keine Zeit라고 해요."
+    },
+    {
+      "title": "müssen과 dürfen – 해야 하는 일, 하면 안 되는 일",
+      "term": "Modalverben müssen und dürfen",
+      "explain": "müssen은 '~해야 해요', dürfen은 '~해도 돼요'라는 뜻이에요. dürfen에 nicht를 붙이면 '~하면 안 돼요'라는 금지가 돼요. 화법조동사는 2번 자리에 오고, 본동사는 동사원형으로 문장 끝에 와요(틀 구조).",
+      "pattern": "주어 + müssen/dürfen + … + 동사원형(문장 끝)",
+      "examples": [
+        {
+          "de": "Ihr dürft sie nicht benutzen.",
+          "ko": "세탁기를 쓰면 안 돼요.",
+          "mark": ["dürft", "benutzen"],
+          "parts": [["Ihr", "주어"], ["dürft", "동사"], ["sie", "4격 목적어"], ["nicht", "부정어"], ["benutzen.", "동사(끝)"]]
+        },
+        {
+          "de": "Wir müssen die Küche unbedingt putzen!",
+          "ko": "우리는 부엌을 꼭 청소해야 해요!",
+          "mark": ["müssen", "putzen"],
+          "parts": [["Wir", "주어"], ["müssen", "동사"], ["die Küche", "4격 목적어"], ["unbedingt", "부사어"], ["putzen!", "동사(끝)"]]
+        },
+        {
+          "de": "Aber deine Eltern müssen einen Kuchen mitbringen",
+          "ko": "그런데 부모님이 케이크를 가져오셔야 해요",
+          "mark": ["müssen", "mitbringen"]
+        }
+      ],
+      "tip": "nicht müssen과 nicht dürfen은 뜻이 달라요. Du musst nicht putzen.은 '청소 안 해도 돼요'이고, Du darfst nicht putzen.은 '청소하면 안 돼요'예요."
+    }
+  ],
+  "vocab": [
+    { "de": "der Mitbewohner, -", "ko": "룸메이트, 같이 사는 사람" },
+    { "de": "der Kühlschrank, -¨e", "ko": "냉장고" },
+    { "de": "der Teller, -", "ko": "접시" },
+    { "de": "der Besuch, -e", "ko": "방문, 손님" },
+    { "de": "böse", "ko": "화가 난" },
+    { "de": "putzen", "ko": "청소하다" },
+    { "de": "spülen", "ko": "설거지하다, (그릇을) 씻다" },
+    { "de": "die Waschmaschine, -n", "ko": "세탁기" },
+    { "de": "kaputt", "ko": "고장 난" },
+    { "de": "benutzen", "ko": "사용하다, 쓰다" },
+    { "de": "der Techniker, -", "ko": "기술자, 수리 기사" },
+    { "de": "mit|bringen (bringt mit, brachte mit, hat mitgebracht)", "ko": "가져오다, 가지고 오다" }
+  ],
+  "phrases": [
+    {
+      "de": "zu Besuch kommen",
+      "ko": "방문하러 오다, 놀러 오다",
+      "ex": "Am Samstag kommen meine Eltern zu Besuch.",
+      "exko": "토요일에 저희 부모님이 집에 오세요."
+    },
+    {
+      "de": "sich (Dat.) keine Sorgen machen",
+      "ko": "걱정하지 않다",
+      "ex": "Malte, mach dir keine Sorgen",
+      "exko": "말테, 걱정하지 마세요"
+    },
+    {
+      "de": "Hunger haben",
+      "ko": "배가 고프다",
+      "ex": "Ich hatte Hunger und habe deinen Joghurt gegessen.",
+      "exko": "제가 배가 고파서 파울라 요거트를 먹었어요."
+    }
+  ]
+}

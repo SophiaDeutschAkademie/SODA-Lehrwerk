@@ -1,0 +1,218 @@
+{
+  "id": "a1-14",
+  "level": "A1",
+  "no": 14,
+  "title": "Das sind wir!",
+  "titleKo": "우리 가족이에요!",
+  "type": "Blogbeitrag",
+  "typeKo": "학급 교류 블로그 글",
+  "intro": "라이프치히에 사는 학생이 부산의 교류 학급에 가족사진을 소개하는 글이에요.",
+  "focus": ["소유관사 (1격·4격)", "명사의 복수형", "haben + 4격 · es gibt"],
+  "paragraphs": [
+    {
+      "style": "meta",
+      "de": "Hallo, liebe Klasse 8a in Busan!",
+      "ko": "부산 8a반 친구들, 안녕하세요!"
+    },
+    {
+      "de": "Ich bin Mia (13) aus Leipzig. Meine Schule kennt ihr schon. Heute zeige ich euch meine Familie.",
+      "ko": "저는 라이프치히에 사는 미아(13살)예요. 우리 학교는 여러분이 벌써 알고 있지요. 오늘은 우리 가족을 보여 줄게요."
+    },
+    {
+      "de": "Links auf dem Foto steht meine Mutter. Sie ist Ärztin und arbeitet oft am Wochenende. Daneben steht mein Vater. Er kocht jeden Tag, und sein Essen ist super!",
+      "ko": "사진 왼쪽에 서 있는 사람은 우리 엄마예요. 엄마는 의사이고 주말에 자주 일해요. 그 옆에는 아빠가 서 있어요. 아빠는 매일 요리를 하는데, 아빠 음식은 정말 최고예요!"
+    },
+    {
+      "de": "Der Mann in der Mitte ist mein Opa. Er wohnt auch bei uns. Vorne liegt Bruno. Opa liebt seinen Hund sehr.",
+      "ko": "가운데 있는 남자분이 우리 할아버지예요. 할아버지도 우리 집에서 같이 사세요. 앞쪽에는 브루노가 누워 있어요. 할아버지는 자기 개를 무척 사랑하세요."
+    },
+    {
+      "de": "Rechts sitzen meine Brüder Ben und Leo. Sie sind Zwillinge und erst acht. Ihr Zimmer ist klein, aber sie haben zehn Bälle!",
+      "ko": "오른쪽에는 남동생 벤과 레오가 앉아 있어요. 둘은 쌍둥이이고 이제 겨우 여덟 살이에요. 동생들 방은 작은데 공은 열 개나 있어요!"
+    },
+    {
+      "de": "Ich bin groß und stehe ganz hinten.",
+      "ko": "저는 키가 커서 맨 뒤에 서 있어요."
+    },
+    {
+      "de": "Unsere Wohnung hat vier Zimmer, aber es gibt nur ein Bad. Am Morgen ist das ein Problem! Wir haben auch einen Balkon.",
+      "ko": "우리 집은 방이 네 개인데 욕실은 하나뿐이에요. 아침에는 이게 문제예요! 우리 집에는 발코니도 있어요."
+    },
+    {
+      "de": "Und ihr? Habt ihr Geschwister oder Haustiere? Wie ist eure Wohnung? Schreibt mir!",
+      "ko": "여러분은요? 형제자매나 반려동물이 있나요? 여러분의 집은 어때요? 저에게 글을 남겨 주세요!"
+    },
+    {
+      "style": "meta",
+      "de": "Viele Grüße, eure Mia",
+      "ko": "안부를 전해요. 여러분의 미아가"
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Mias Mutter hat am Samstag und am Sonntag meistens frei.",
+      "answer": 1,
+      "evidence": "Sie ist Ärztin und arbeitet oft am Wochenende.",
+      "pairs": [["arbeitet oft am Wochenende", "hat am Samstag und am Sonntag meistens frei"]],
+      "explain": "본문에서 엄마는 의사이고 주말에 자주 일한다고 해요. Wochenende를 Samstag und Sonntag로 바꿔 말했지만, '주말에는 대부분 쉰다'는 내용은 본문과 반대예요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Mias Opa lebt mit Mias Familie zusammen.",
+      "answer": 0,
+      "evidence": "Er wohnt auch bei uns.",
+      "pairs": [["wohnt auch bei uns", "lebt mit Mias Familie zusammen"]],
+      "explain": "미아는 할아버지도 우리 집에서 같이 산다고(wohnt auch bei uns) 말해요. bei uns wohnen을 mit … zusammen leben으로 바꿔 말했으니 맞는 문장이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "q": "Was bedeutet „Zwillinge“ im Text?",
+      "options": ["Ben und Leo sind älter als ihre Schwester Mia.", "Ben und Leo haben am gleichen Tag Geburtstag.", "Ben und Leo sind Freunde aus Mias Schulklasse."],
+      "answer": 1,
+      "evidence": "Sie sind Zwillinge und erst acht.",
+      "pairs": [["Zwillinge", "am gleichen Tag Geburtstag"]],
+      "explain": "Zwillinge는 쌍둥이예요. 쌍둥이는 같은 날 태어나서 생일이 같아요. 벤과 레오는 여덟 살이라 열세 살인 미아보다 어리고, 반 친구가 아니라 미아의 남동생(meine Brüder)이에요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Mia ist auf dem Foto ganz vorne.",
+      "answer": 1,
+      "evidence": "stehe ganz hinten",
+      "pairs": [["ganz hinten", "ganz vorne"]],
+      "explain": "미아는 키가 커서 맨 뒤에 서 있다고(stehe ganz hinten) 말해요. 앞쪽(vorne)에 있는 것은 할아버지의 개 브루노예요."
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "q": "Warum ist der Morgen bei Mia zu Hause ein Problem?",
+      "options": ["Für die sechs Personen gibt es nur zwei Zimmer.", "Für die sechs Personen gibt es keinen Balkon.", "Für die sechs Personen gibt es nur ein Badezimmer."],
+      "answer": 2,
+      "evidence": "aber es gibt nur ein Bad",
+      "pairs": [["nur ein Bad", "nur ein Badezimmer"]],
+      "explain": "엄마, 아빠, 할아버지, 벤, 레오, 미아까지 여섯 명이 함께 사는데 욕실(Bad)은 하나뿐이에요. 그래서 아침에 모두 욕실을 쓰려고 하면 문제가 생겨요. 방은 네 개이고 발코니도 있어요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was möchte Mia von der Klasse in Busan wissen?",
+      "options": ["Habt ihr Brüder, Schwestern oder Tiere?", "Wisst ihr schon etwas über meine Schule?", "Wie heißt der Hund vorne auf meinem Foto?"],
+      "answer": 0,
+      "evidence": "Habt ihr Geschwister oder Haustiere?",
+      "pairs": [["Geschwister", "Brüder, Schwestern"], ["Haustiere", "Tiere"]],
+      "explain": "미아는 형제자매나 반려동물이 있는지 물어요. Geschwister를 Brüder, Schwestern으로, Haustiere를 Tiere로 바꿔 말했어요. 학교는 친구들이 이미 안다고 했고, 개 이름(브루노)은 미아가 직접 알려 줬어요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "소유관사 – mein, sein, ihr, unser, euer",
+      "term": "Possessivartikel im Nominativ und Akkusativ",
+      "explain": "소유관사는 '누구의' 것인지 말해 줘요. ich → mein, du → dein, er/es → sein, sie(그녀·그들) → ihr, wir → unser, ihr(너희) → euer예요. 어미는 부정관사 ein처럼 바뀌어요. 1격에서는 남성·중성은 어미가 없고(mein Vater, sein Essen), 여성과 복수에는 -e가 붙어요(meine Mutter, meine Brüder). 4격에서는 남성만 -en이 붙어요(seinen Hund).",
+      "pattern": "1격: mein Vater · meine Mutter · mein Foto · meine Brüder / 4격: meinen · meine · mein · meine",
+      "examples": [
+        {
+          "de": "Links auf dem Foto steht meine Mutter.",
+          "ko": "사진 왼쪽에 서 있는 사람은 우리 엄마예요.",
+          "mark": ["meine Mutter"],
+          "parts": [["Links auf dem Foto", "부사어(장소)"], ["steht", "동사"], ["meine Mutter.", "주어"]]
+        },
+        {
+          "de": "Opa liebt seinen Hund sehr.",
+          "ko": "할아버지는 자기 개를 무척 사랑하세요.",
+          "mark": ["seinen Hund"],
+          "parts": [["Opa", "주어"], ["liebt", "동사"], ["seinen Hund", "4격 목적어"], ["sehr.", "부사어(방법)"]]
+        },
+        {
+          "de": "Heute zeige ich euch meine Familie.",
+          "ko": "오늘은 우리 가족을 보여 줄게요.",
+          "mark": ["meine Familie"]
+        }
+      ],
+      "tip": "euer에 어미가 붙으면 가운데 e가 빠져요: eure Wohnung, eure Mia. 또 Ihr Zimmer처럼 문장 첫머리의 Ihr는 여기서 '그들의'라는 뜻이에요. 벤과 레오의 방이에요."
+    },
+    {
+      "title": "명사의 복수형",
+      "term": "Pluralbildung der Nomen",
+      "explain": "독일어 명사는 복수형을 만드는 방법이 여러 가지예요. 어미 -e가 붙거나(Zwilling → Zwillinge, Haustier → Haustiere), 모음에 움라우트가 생기거나(Bruder → Brüder), 둘 다 바뀌기도 해요(Ball → Bälle). Zimmer처럼 모양이 그대로인 명사도 있어요(ein Zimmer → vier Zimmer). 그래서 명사는 복수형과 함께 외워야 해요.",
+      "pattern": "-e · -¨ · -¨e · 변화 없음 (-)",
+      "examples": [
+        {
+          "de": "Rechts sitzen meine Brüder Ben und Leo.",
+          "ko": "오른쪽에는 남동생 벤과 레오가 앉아 있어요.",
+          "mark": ["sitzen", "Brüder"],
+          "parts": [["Rechts", "부사어(장소)"], ["sitzen", "동사"], ["meine Brüder Ben und Leo.", "주어"]]
+        },
+        {
+          "de": "Ihr Zimmer ist klein, aber sie haben zehn Bälle!",
+          "ko": "동생들 방은 작은데 공은 열 개나 있어요!",
+          "mark": ["Bälle"]
+        },
+        {
+          "de": "Habt ihr Geschwister oder Haustiere?",
+          "ko": "형제자매나 반려동물이 있나요?",
+          "mark": ["Geschwister", "Haustiere"]
+        }
+      ],
+      "tip": "주어가 복수이면 동사도 복수형이 돼요: meine Brüder sitzen. Geschwister는 보통 복수로만 써요."
+    },
+    {
+      "title": "haben + 4격 · es gibt + 4격",
+      "term": "haben + Akkusativ, es gibt + Akkusativ",
+      "explain": "'~이 있어요'는 haben이나 es gibt로 말해요. haben은 누가 무엇을 가지고 있는지 말하고, 가진 것은 4격이에요. es gibt는 어떤 것이 어디에 있는지 말할 때 써요. es gibt 뒤의 명사도 4격이에요. 남성 명사는 4격에서 einen이 돼요(einen Balkon).",
+      "pattern": "주어 + haben + 4격 · es gibt + 4격",
+      "examples": [
+        {
+          "de": "Unsere Wohnung hat vier Zimmer, aber es gibt nur ein Bad.",
+          "ko": "우리 집은 방이 네 개인데 욕실은 하나뿐이에요.",
+          "mark": ["hat vier Zimmer", "es gibt nur ein Bad"],
+          "parts": [["Unsere Wohnung", "주어"], ["hat", "동사"], ["vier Zimmer,", "4격 목적어"], ["aber", "접속사"], ["es", "주어"], ["gibt", "동사"], ["nur ein Bad.", "4격 목적어"]]
+        },
+        {
+          "de": "Wir haben auch einen Balkon.",
+          "ko": "우리 집에는 발코니도 있어요.",
+          "mark": ["haben", "einen Balkon"],
+          "parts": [["Wir", "주어"], ["haben", "동사"], ["auch", "기타"], ["einen Balkon.", "4격 목적어"]]
+        }
+      ],
+      "tip": "es gibt는 뒤에 복수 명사가 와도 항상 gibt예요. 이때 es는 바뀌지 않는 형식상의 주어예요."
+    }
+  ],
+  "vocab": [
+    { "de": "die Ärztin, -nen", "ko": "(여자) 의사" },
+    { "de": "das Wochenende, -n", "ko": "주말" },
+    { "de": "der Hund, -e", "ko": "개" },
+    { "de": "der Bruder, -¨", "ko": "남자 형제, 형·오빠·남동생" },
+    { "de": "der Zwilling, -e", "ko": "쌍둥이" },
+    { "de": "der Ball, -¨e", "ko": "공" },
+    { "de": "die Wohnung, -en", "ko": "집, 아파트" },
+    { "de": "das Bad, -¨er", "ko": "욕실" },
+    { "de": "der Balkon, -e", "ko": "발코니" },
+    { "de": "die Geschwister (Pl.)", "ko": "형제자매" },
+    { "de": "das Haustier, -e", "ko": "반려동물" },
+    { "de": "hinten", "ko": "뒤에, 뒤쪽에" }
+  ],
+  "phrases": [
+    {
+      "de": "in der Mitte",
+      "ko": "가운데에",
+      "ex": "Der Mann in der Mitte ist mein Opa.",
+      "exko": "가운데 있는 남자분이 우리 할아버지예요."
+    },
+    {
+      "de": "bei jemandem wohnen",
+      "ko": "~의 집에서 (함께) 살다",
+      "ex": "Er wohnt auch bei uns.",
+      "exko": "할아버지도 우리 집에서 같이 사세요."
+    },
+    {
+      "de": "Viele Grüße",
+      "ko": "안부를 전해요 (편지·글의 끝인사)",
+      "ex": "Viele Grüße, eure Mia",
+      "exko": "안부를 전해요. 여러분의 미아가"
+    }
+  ]
+}
