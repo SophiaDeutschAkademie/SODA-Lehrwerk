@@ -77,11 +77,11 @@
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Die Eltern von Frau Duval kommen beide aus Frankreich.",
+      "q": "Die Eltern von Frau Duval sind beide Franzosen.",
       "answer": 1,
       "evidence": "Meine Mutter ist Französin, mein Vater ist Deutscher.",
-      "pairs": [["Meine Mutter ist Französin", "Die Eltern"], ["mein Vater ist Deutscher", "beide aus Frankreich"]],
-      "explain": "어머니는 프랑스 사람(Französin)이지만 아버지는 독일 사람(Deutscher)이에요. 그래서 '부모님이 두 분 다 프랑스 출신'이라는 문장은 틀려요."
+      "pairs": [["mein Vater ist Deutscher", "beide Franzosen"]],
+      "explain": "어머니는 프랑스 사람(Französin)이지만 아버지는 독일 사람(Deutscher)이에요. 그래서 '부모님이 두 분 다 프랑스 사람'이라는 문장은 틀려요."
     },
     {
       "type": "mc",

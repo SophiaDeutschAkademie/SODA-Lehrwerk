@@ -103,11 +103,11 @@
       "type": "mc",
       "kind": "detail",
       "q": "Wann möchte Lennart das Zimmer sehen?",
-      "options": ["Am Freitag, denn da hat er keine Arbeit.", "Im Oktober, denn dann ist das Zimmer frei.", "Am Wochenende, denn am Freitag arbeitet er."],
+      "options": ["Am Freitag, denn da hat er keine Arbeit.", "Am Montag, denn am Samstag kann er nicht.", "Am Wochenende, denn am Freitag arbeitet er."],
       "answer": 2,
       "evidence": "Habt ihr am Samstag Zeit?",
       "pairs": [["am Samstag", "Am Wochenende"], ["muss ich leider arbeiten", "am Freitag arbeitet er"]],
-      "explain": "레나르트는 토요일(Samstag)에 시간이 있는지 묻고, 금요일에는 일을 해야 한다고 해요. 토요일을 주말(Wochenende)로 바꿔 말했어요. 10월은 방이 비는 때이고, 방을 보러 가는 날이 아니에요."
+      "explain": "레나르트는 토요일(Samstag)에 시간이 있는지 묻고, 금요일에는 일을 해야 한다고 해요. 토요일을 주말(Wochenende)로 바꿔 말했어요. 금요일에는 일이 있어서 안 되고, 토요일에 시간이 있는지 묻고 있으니 토요일에 안 된다는 말도 틀려요."
     }
   ],
   "grammar": [

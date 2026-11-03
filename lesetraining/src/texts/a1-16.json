@@ -65,7 +65,7 @@
     {
       "type": "mc",
       "kind": "detail",
-      "q": "Was möchte die Mutter von Torsten wissen?",
+      "q": "Was fragt die Mutter Torsten?",
       "options": ["wann das Fußballspiel am 12. Mai beginnt", "wann er am 12. Mai wieder zu Hause ist", "wann ihre Arbeit am 12. Mai zu Ende ist"],
       "answer": 1,
       "evidence": "Torsten, wann kommst du am 12. Mai aus Hamburg zurück?",
@@ -104,11 +104,11 @@
     {
       "type": "rf",
       "kind": "inference",
-      "q": "Die Familie hat schon einen Plan für die Reise zu Tante Bettina.",
+      "q": "Die Reise zu Tante Bettina ist schon fertig geplant.",
       "answer": 1,
       "evidence": "Das planen wir heute Abend!",
-      "pairs": [["Das planen wir heute Abend", "hat schon einen Plan"]],
-      "explain": "엄마는 언제 이모 댁에 갈지, 얼마나 머물지 물어요. 그리고 그건 오늘 저녁에 계획하자고 해요. 그러니까 여행 계획은 아직 정해지지 않았어요."
+      "pairs": [["Das planen wir heute Abend", "ist schon fertig geplant"]],
+      "explain": "엄마는 언제 이모 댁에 갈지, 얼마나 머물지 물어요. 그리고 그건 오늘 저녁에 계획하자고 해요. 그러니까 여행 계획은 아직 다 정해지지 않았어요."
     }
   ],
   "grammar": [
