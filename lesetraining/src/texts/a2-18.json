@@ -1,0 +1,246 @@
+{
+  "id": "a2-18",
+  "level": "A2",
+  "no": 18,
+  "title": "Frag Frau Wiegand!",
+  "titleKo": "비간트 선생님께 물어보세요",
+  "type": "Ratgeberkolumne",
+  "typeKo": "잡지 상담 칼럼",
+  "intro": "새 동료가 인사를 하지 않아 고민하는 독자의 편지와 칼럼니스트의 답장이에요.",
+  "focus": ["würde + 동사원형 (조언)", "재귀대명사 3격 · 4격 (mir / mich)", "deshalb · darum"],
+  "paragraphs": [
+    {
+      "style": "meta",
+      "de": "Liebe Frau Wiegand,",
+      "ko": "비간트 선생님께"
+    },
+    {
+      "de": "seit März arbeite ich in einem kleinen Reisebüro. Vor sechs Wochen ist ein neuer Kollege zu uns gekommen, Herr Falk. Sein Schreibtisch steht neben meinem, aber er grüßt mich nie. Wenn ich morgens „Guten Morgen!“ sage, schaut er nur kurz auf und tippt weiter. Mittags sitzt er immer allein.",
+      "ko": "저는 3월부터 작은 여행사에서 일하고 있어요. 6주 전에 새 동료 팔크 씨가 들어왔어요. 그분 책상은 제 책상 옆에 있는데, 저에게 한 번도 인사를 하지 않아요. 아침에 제가 “좋은 아침이에요!” 하고 인사하면 잠깐 고개를 들었다가 다시 자판만 두드려요. 점심때는 늘 혼자 앉아 있어요."
+    },
+    {
+      "de": "Am Anfang habe ich mich darüber geärgert. Inzwischen mache ich mir eher Sorgen. Mag er mich nicht? Habe ich etwas Falsches gesagt? Ständig denke ich darüber nach, deshalb gehe ich nicht mehr gern zur Arbeit. Ich habe mir schon überlegt, ob ich ihn einfach anspreche. Aber dann traue ich mich doch nicht. Was soll ich tun?",
+      "ko": "처음에는 그 일 때문에 화가 났어요. 지금은 오히려 걱정이 돼요. 그분이 저를 싫어하는 걸까요? 제가 무슨 말을 잘못한 걸까요? 계속 그 생각만 하다 보니 회사에 가는 게 더는 즐겁지 않아요. 그냥 제가 먼저 말을 걸어 볼까 하는 생각도 해 봤어요. 그런데 막상 그럴 용기가 나지 않아요. 어떻게 하면 좋을까요?"
+    },
+    {
+      "style": "meta",
+      "de": "Svenja K., 26, Hannover",
+      "ko": "스벤야 K.(26세, 하노버)"
+    },
+    {
+      "style": "meta",
+      "de": "Liebe Frau K.,",
+      "ko": "K. 씨께"
+    },
+    {
+      "de": "machen Sie sich nicht zu viele Gedanken! Für viele Menschen sind die ersten Wochen in einer neuen Firma anstrengend. Vielleicht ist Herr Falk schüchtern oder hat private Probleme. Darum würde ich sein Verhalten nicht persönlich nehmen.",
+      "ko": "너무 많이 고민하지 마세요! 새 회사에서 보내는 처음 몇 주는 많은 사람에게 힘든 시간이에요. 팔크 씨는 수줍음이 많거나 개인적인 문제가 있을지도 몰라요. 그래서 저라면 그분의 행동을 저 개인을 향한 것으로 받아들이지 않겠어요."
+    },
+    {
+      "de": "An Ihrer Stelle würde ich den ersten Schritt machen. Fragen Sie ihn doch einmal, ob er mit Ihnen einen Kaffee trinken möchte. Zu zweit fällt das Reden oft leichter als in einer großen Gruppe. Vorher würde ich mir ein paar einfache Themen überlegen.",
+      "ko": "제가 K. 씨 입장이라면 먼저 다가가겠어요. 팔크 씨에게 같이 커피 한잔하겠냐고 한번 물어보세요. 여럿이 함께 있을 때보다 둘이서 이야기하는 게 더 쉬울 때가 많아요. 저라면 그 전에 간단한 이야깃거리를 몇 가지 생각해 두겠어요."
+    },
+    {
+      "de": "Und wenn er danach immer noch unfreundlich ist? Dann würde ich mit Ihrer Chefin sprechen, denn sie kennt das Team gut. Eins ist aber sicher: Sie haben nichts falsch gemacht. Deshalb müssen Sie sich auch nicht schuldig fühlen.",
+      "ko": "그런데 그 뒤에도 여전히 쌀쌀맞다면요? 그때는 상사와 이야기해 보겠어요. 상사가 팀을 잘 아니까요. 하지만 한 가지는 분명해요. K. 씨는 아무것도 잘못하지 않았어요. 그러니 죄책감을 느낄 필요도 없어요."
+    },
+    {
+      "style": "meta",
+      "de": "Ihre Ute Wiegand",
+      "ko": "우테 비간트 드림"
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Herr Falk hat später als Svenja in dem Reisebüro angefangen.",
+      "answer": 0,
+      "evidence": "Vor sechs Wochen ist ein neuer Kollege zu uns gekommen, Herr Falk.",
+      "pairs": [["ist ein neuer Kollege zu uns gekommen", "hat später als Svenja in dem Reisebüro angefangen"]],
+      "explain": "스벤야는 3월부터 여행사에서 일하고, 팔크 씨는 6주 전에 새 동료로 들어왔어요(ist ein neuer Kollege zu uns gekommen). 그래서 팔크 씨가 스벤야보다 늦게 일을 시작했다는 문장은 맞아요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was macht Herr Falk, wenn Svenja ihm am Morgen „Guten Morgen!“ sagt?",
+      "options": ["Er grüßt freundlich zurück und lädt sie zum Kaffee ein.", "Er hebt einen Moment den Kopf und arbeitet dann weiter.", "Er steht auf und setzt sich an einen anderen Schreibtisch."],
+      "answer": 1,
+      "evidence": "schaut er nur kurz auf und tippt weiter",
+      "pairs": [["schaut er nur kurz auf", "hebt einen Moment den Kopf"], ["tippt weiter", "arbeitet dann weiter"]],
+      "explain": "팔크 씨는 잠깐 고개를 들었다가(schaut kurz auf) 계속 자판을 두드려요(tippt weiter). 이것을 '잠깐 고개를 들고 다시 일한다'로 바꿔 말했어요. 그는 인사를 한 번도 하지 않고, 책상도 스벤야 옆에 있어요."
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "q": "Wie geht es Svenja im Moment mit der Situation?",
+      "options": ["Sie ist vor allem wütend auf den neuen Kollegen.", "Sie ist froh, weil sie nun ruhig arbeiten kann.", "Sie hat Angst, dass sie einen Fehler gemacht hat."],
+      "answer": 2,
+      "evidence": "Inzwischen mache ich mir eher Sorgen.",
+      "pairs": [["mache ich mir eher Sorgen", "hat Angst"], ["etwas Falsches gesagt", "einen Fehler gemacht"]],
+      "explain": "스벤야는 처음에는 화가 났지만(geärgert) 지금은 오히려 걱정이 된다고 해요(mache mir eher Sorgen). 혹시 자기가 말을 잘못했는지 묻는 것을 보면 실수했을까 봐 불안한 거예요. 화가 난 것은 처음 이야기이고, 회사에 가는 것도 즐겁지 않다고 했어요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Svenja hat Herrn Falk schon gefragt, warum er sie nicht grüßt.",
+      "answer": 1,
+      "evidence": "Aber dann traue ich mich doch nicht.",
+      "pairs": [["Ich habe mir schon überlegt, ob ich ihn einfach anspreche", "hat Herrn Falk schon gefragt"], ["traue ich mich doch nicht", "schon gefragt"]],
+      "explain": "스벤야는 먼저 말을 걸어 볼까 생각만 했고(habe mir überlegt), 막상 용기가 나지 않는다고 해요(traue mich nicht). 그래서 이미 물어봤다는 문장은 틀려요. schon이라는 단어가 함정이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "paraphrase",
+      "q": "Was meint Frau Wiegand mit dem Satz „Darum würde ich sein Verhalten nicht persönlich nehmen.“?",
+      "options": ["Svenja soll nicht glauben, dass Herr Falk etwas gegen sie hat.", "Svenja soll ihrem neuen Kollegen persönlich sagen, was sie stört.", "Svenja soll sein Verhalten gleich am nächsten Tag der Chefin melden."],
+      "answer": 0,
+      "evidence": "Darum würde ich sein Verhalten nicht persönlich nehmen.",
+      "pairs": [["nicht persönlich nehmen", "nicht glauben, dass Herr Falk etwas gegen sie hat"]],
+      "explain": "etwas persönlich nehmen은 '어떤 일을 나를 향한 것으로 받아들이다'라는 뜻이에요. 팔크 씨가 스벤야를 싫어해서 그러는 게 아니라고 생각하라는 말이에요. 같은 단어 persönlich가 들어간 선택지는 뜻이 달라요. 상사와 이야기하는 것은 나중에, 상황이 나아지지 않을 때의 조언이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was soll Svenja nach Frau Wiegands Rat zuerst tun?",
+      "options": ["Sie soll mittags mit dem ganzen Team zusammen essen.", "Sie soll ihre Chefin fragen, was mit Herrn Falk los ist.", "Sie soll Herrn Falk auf eine Tasse Kaffee einladen."],
+      "answer": 2,
+      "evidence": "Fragen Sie ihn doch einmal, ob er mit Ihnen einen Kaffee trinken möchte.",
+      "pairs": [["Fragen Sie ihn doch einmal, ob er mit Ihnen einen Kaffee trinken möchte", "Herrn Falk auf eine Tasse Kaffee einladen"]],
+      "explain": "비간트 씨는 팔크 씨에게 같이 커피를 마시겠냐고 물어보라고 해요. 이것을 '커피 한 잔에 초대하다'로 바꿔 말했어요. 여럿이 있을 때보다 둘이서 이야기하는 게 쉽다고 했고, 상사와 이야기하는 것은 그 뒤에도 쌀쌀맞을 때의 일이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was ist für Frau Wiegand am Ende ganz sicher?",
+      "options": ["Herr Falk hat bestimmt Probleme in seinem Privatleben.", "Svenja ist an dem Problem mit Herrn Falk nicht schuld.", "Svenja hat ihren Kollegen wohl mit zu vielen Fragen gestört."],
+      "answer": 1,
+      "evidence": "Sie haben nichts falsch gemacht.",
+      "pairs": [["Sie haben nichts falsch gemacht", "nicht schuld"], ["nicht schuldig fühlen", "nicht schuld"]],
+      "explain": "비간트 씨는 스벤야가 아무것도 잘못하지 않았다(nichts falsch gemacht)는 것이 분명하다고 해요. 이것을 '그 문제는 스벤야 탓이 아니다(nicht schuld)'로 바꿔 말했어요. 팔크 씨의 개인적인 문제는 vielleicht(어쩌면)라고 했으므로 확실한 것이 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "würde + 동사원형으로 조언하기",
+      "term": "Ratschläge mit würde + Infinitiv",
+      "explain": "würde는 werden의 접속법 2식 형태예요. würde + 동사원형으로 '저라면 ~하겠어요'라는 부드러운 조언을 할 수 있어요. würde는 동사 자리에 오고, 동사원형은 문장 끝으로 가요. An Ihrer Stelle(제가 당신 입장이라면)와 함께 자주 써요.",
+      "pattern": "(An Ihrer Stelle) würde + 주어 + … + 동사원형(문장 끝)",
+      "examples": [
+        {
+          "de": "An Ihrer Stelle würde ich den ersten Schritt machen.",
+          "ko": "제가 K. 씨 입장이라면 먼저 다가가겠어요.",
+          "mark": ["An Ihrer Stelle", "würde", "machen"],
+          "parts": [["An Ihrer Stelle", "부사어"], ["würde", "동사"], ["ich", "주어"], ["den ersten Schritt", "4격 목적어"], ["machen.", "동사(끝)"]]
+        },
+        {
+          "de": "Vorher würde ich mir ein paar einfache Themen überlegen.",
+          "ko": "저라면 그 전에 간단한 이야깃거리를 몇 가지 생각해 두겠어요.",
+          "mark": ["würde", "überlegen"],
+          "parts": [["Vorher", "부사어(시간)"], ["würde", "동사"], ["ich", "주어"], ["mir", "재귀대명사"], ["ein paar einfache Themen", "4격 목적어"], ["überlegen.", "동사(끝)"]]
+        },
+        {
+          "de": "Dann würde ich mit Ihrer Chefin sprechen, denn sie kennt das Team gut.",
+          "ko": "그때는 상사와 이야기해 보겠어요. 상사가 팀을 잘 아니까요.",
+          "mark": ["würde", "sprechen"]
+        }
+      ],
+      "tip": "명령형(Fragen Sie ihn doch einmal …)은 직접적인 부탁이고, würde ich …는 '제 생각에는 이렇게 하는 게 좋겠어요'라는 조심스러운 조언이에요. Sie가 주어이면 würden을 써요."
+    },
+    {
+      "title": "재귀대명사의 3격과 4격",
+      "term": "Reflexivpronomen im Dativ und Akkusativ",
+      "explain": "재귀대명사는 주어와 같은 사람을 가리켜요. 문장에 다른 4격 목적어가 없으면 재귀대명사는 4격이에요(ich ärgere mich). 다른 4격 목적어가 있으면 재귀대명사는 3격이 돼요(ich mache mir Sorgen). ob 종속절처럼 문장이 4격 목적어 역할을 할 때도 3격을 써요. 3격과 4격의 형태가 다른 것은 ich(mir/mich)와 du(dir/dich)뿐이에요.",
+      "pattern": "sich(4격) ärgern / sich(3격) + 4격 목적어 + machen · überlegen",
+      "examples": [
+        {
+          "de": "Am Anfang habe ich mich darüber geärgert.",
+          "ko": "처음에는 그 일 때문에 화가 났어요.",
+          "mark": ["mich"],
+          "parts": [["Am Anfang", "부사어(시간)"], ["habe", "동사"], ["ich", "주어"], ["mich", "재귀대명사"], ["darüber", "전치사 목적어"], ["geärgert.", "동사(끝)"]]
+        },
+        {
+          "de": "Inzwischen mache ich mir eher Sorgen.",
+          "ko": "지금은 오히려 걱정이 돼요.",
+          "mark": ["mir", "Sorgen"],
+          "parts": [["Inzwischen", "부사어(시간)"], ["mache", "동사"], ["ich", "주어"], ["mir", "재귀대명사"], ["eher", "기타"], ["Sorgen.", "4격 목적어"]]
+        },
+        {
+          "de": "Ich habe mir schon überlegt, ob ich ihn einfach anspreche.",
+          "ko": "그냥 제가 먼저 말을 걸어 볼까 하는 생각도 해 봤어요.",
+          "mark": ["mir", "überlegt"],
+          "parts": [["Ich", "주어"], ["habe", "동사"], ["mir", "재귀대명사"], ["schon", "부사어(시간)"], ["überlegt,", "동사(끝)"], ["ob ich ihn einfach anspreche.", "종속절"]]
+        }
+      ],
+      "tip": "Sie와 er/sie에서는 3격도 4격도 sich라서 형태로는 구별되지 않아요(Machen Sie sich nicht zu viele Gedanken!). 주어를 ich로 바꿔 보면 알 수 있어요: Ich mache mir Gedanken / Ich traue mich nicht."
+    },
+    {
+      "title": "deshalb · darum – 결과 말하기",
+      "term": "Konjunktionaladverbien deshalb und darum",
+      "explain": "deshalb와 darum은 '그래서, 그러니까'라는 뜻으로, 두 단어의 의미는 같아요. 앞 문장이 이유이고 deshalb/darum이 있는 문장이 결과예요. 문장 맨 앞(1번 자리)에 오면 바로 뒤에 동사가 오고, 주어는 동사 뒤로 가요.",
+      "pattern": "이유 문장. / 이유 문장, deshalb · darum + 동사 + 주어 …",
+      "examples": [
+        {
+          "de": "Ständig denke ich darüber nach, deshalb gehe ich nicht mehr gern zur Arbeit.",
+          "ko": "계속 그 생각만 하다 보니 회사에 가는 게 더는 즐겁지 않아요.",
+          "mark": ["deshalb gehe ich"],
+          "parts": [["Ständig", "부사어(빈도)"], ["denke", "동사"], ["ich", "주어"], ["darüber", "전치사 목적어"], ["nach,", "동사(끝)"], ["deshalb", "접속부사"], ["gehe", "동사"], ["ich", "주어"], ["nicht mehr", "부정어"], ["gern", "부사어(방법)"], ["zur Arbeit.", "부사어(장소)"]]
+        },
+        {
+          "de": "Darum würde ich sein Verhalten nicht persönlich nehmen.",
+          "ko": "그래서 저라면 그분의 행동을 저 개인을 향한 것으로 받아들이지 않겠어요.",
+          "mark": ["Darum würde ich"],
+          "parts": [["Darum", "접속부사"], ["würde", "동사"], ["ich", "주어"], ["sein Verhalten", "4격 목적어"], ["nicht", "부정어"], ["persönlich", "부사어(방법)"], ["nehmen.", "동사(끝)"]]
+        },
+        {
+          "de": "Deshalb müssen Sie sich auch nicht schuldig fühlen.",
+          "ko": "그러니 죄책감을 느낄 필요도 없어요.",
+          "mark": ["Deshalb müssen Sie"]
+        }
+      ],
+      "tip": "weil은 종속접속사라서 동사가 문장 끝으로 가요(…, weil ich mir Sorgen mache). deshalb·darum 뒤에서는 동사가 바로 와요(…, deshalb gehe ich …)."
+    }
+  ],
+  "vocab": [
+    { "de": "der Kollege, -n", "ko": "(직장) 동료" },
+    { "de": "das Reisebüro, -s", "ko": "여행사" },
+    { "de": "der Schreibtisch, -e", "ko": "책상" },
+    { "de": "grüßen", "ko": "인사하다" },
+    { "de": "auf|schauen", "ko": "(잠깐) 고개를 들다, 올려다보다" },
+    { "de": "sich ärgern über + Akk.", "ko": "~ 때문에 화가 나다" },
+    { "de": "sich (Dat.) etwas überlegen", "ko": "~을 곰곰이 생각해 보다" },
+    { "de": "an|sprechen (spricht an, sprach an, hat angesprochen)", "ko": "(누구에게) 말을 걸다" },
+    { "de": "sich trauen", "ko": "용기를 내다, 감히 ~하다" },
+    { "de": "anstrengend", "ko": "힘든, 고된" },
+    { "de": "schüchtern", "ko": "수줍음이 많은" },
+    { "de": "das Verhalten (Sg.)", "ko": "행동, 태도" },
+    { "de": "unfreundlich", "ko": "불친절한, 쌀쌀맞은" },
+    { "de": "die Chefin, -nen", "ko": "(여성) 상사" }
+  ],
+  "phrases": [
+    {
+      "de": "sich (Dat.) Sorgen machen",
+      "ko": "걱정하다",
+      "ex": "Inzwischen mache ich mir eher Sorgen.",
+      "exko": "지금은 오히려 걱정이 돼요."
+    },
+    {
+      "de": "etwas persönlich nehmen",
+      "ko": "(어떤 일을) 자기 개인을 향한 것으로 받아들이다",
+      "ex": "Darum würde ich sein Verhalten nicht persönlich nehmen.",
+      "exko": "그래서 저라면 그분의 행동을 저 개인을 향한 것으로 받아들이지 않겠어요."
+    },
+    {
+      "de": "den ersten Schritt machen",
+      "ko": "먼저 다가가다, 먼저 행동하다",
+      "ex": "An Ihrer Stelle würde ich den ersten Schritt machen.",
+      "exko": "제가 K. 씨 입장이라면 먼저 다가가겠어요."
+    },
+    {
+      "de": "sich schuldig fühlen",
+      "ko": "죄책감을 느끼다",
+      "ex": "Deshalb müssen Sie sich auch nicht schuldig fühlen.",
+      "exko": "그러니 죄책감을 느낄 필요도 없어요."
+    }
+  ]
+}

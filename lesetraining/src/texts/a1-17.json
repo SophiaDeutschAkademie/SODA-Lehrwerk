@@ -1,0 +1,226 @@
+{
+  "id": "a1-17",
+  "level": "A1",
+  "no": 17,
+  "title": "Zimmer frei!",
+  "titleKo": "빈방 있어요!",
+  "type": "WG-Anzeige und E-Mail",
+  "typeKo": "셰어하우스 방 광고와 이메일",
+  "intro": "셰어하우스 빈방 광고와 그 방에 관심이 있는 학생의 이메일이에요.",
+  "focus": ["sein + 형용사 (sehr · zu · nicht so)", "in · mit + 3격", "möchte + 동사원형"],
+  "paragraphs": [
+    {
+      "label": "Anzeige",
+      "style": "h",
+      "de": "Zimmer frei!",
+      "ko": "빈방 있어요!"
+    },
+    {
+      "de": "Wir sind Merle und Tarek und wohnen in Münster, nicht weit von der Uni. In unserer WG ist ab Oktober ein Zimmer frei.",
+      "ko": "저희는 메를레와 타레크이고, 뮌스터에서 대학교와 멀지 않은 곳에 살아요. 저희 셰어하우스에 10월부터 빈방이 하나 생겨요."
+    },
+    {
+      "de": "Das Zimmer hat 14 Quadratmeter und einen Balkon. Es ist nicht so groß, aber sehr hell. Im Zimmer stehen ein Bett und ein Schreibtisch.",
+      "ko": "방은 14제곱미터이고 발코니가 있어요. 그렇게 크지는 않지만 아주 밝아요. 방에는 침대와 책상이 있어요."
+    },
+    {
+      "de": "Miete: 380 Euro im Monat, mit Internet. Möchtest du bei uns wohnen? Dann schreib uns!",
+      "ko": "월세: 한 달에 380유로, 인터넷 포함. 저희 집에서 살고 싶으세요? 그럼 메일 보내 주세요!"
+    },
+    {
+      "label": "E-Mail",
+      "style": "meta",
+      "de": "Hallo Merle, hallo Tarek,",
+      "ko": "메를레, 타레크, 안녕하세요?"
+    },
+    {
+      "de": "ich heiße Lennart und studiere ab Oktober in Münster. Jetzt wohne ich noch bei meinen Eltern. Mein Zimmer dort ist sehr klein und dunkel.",
+      "ko": "제 이름은 레나르트이고, 10월부터 뮌스터에서 대학 공부를 해요. 지금은 아직 부모님 집에 살아요. 그곳의 제 방은 아주 작고 어두워요."
+    },
+    {
+      "de": "Euer Zimmer mit Balkon gefällt mir sehr! Andere Zimmer sind zu teuer für mich. Allein wohnen möchte ich nicht, denn ich esse nicht gern allein.",
+      "ko": "발코니가 있는 두 분의 방이 정말 마음에 들어요! 다른 방들은 저한테 너무 비싸요. 혼자 살고 싶지는 않아요. 혼자 밥 먹는 걸 좋아하지 않거든요."
+    },
+    {
+      "de": "Ich möchte das Zimmer gern sehen. Habt ihr am Samstag Zeit? Am Freitag muss ich leider arbeiten.",
+      "ko": "방을 꼭 한번 보고 싶어요. 토요일에 시간 있으세요? 금요일에는 아쉽게도 일을 해야 해요."
+    },
+    {
+      "style": "meta",
+      "de": "Viele Grüße, Lennart",
+      "ko": "레나르트 드림"
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Von der WG ist man schnell an der Uni.",
+      "answer": 0,
+      "evidence": "nicht weit von der Uni",
+      "pairs": [["nicht weit von der Uni", "schnell an der Uni"]],
+      "explain": "광고에서 셰어하우스는 대학교에서 멀지 않다(nicht weit von der Uni)고 해요. 문제는 이것을 '셰어하우스에서 대학교까지 금방 간다'로 바꿔 말했어요. 그래서 맞는 문장이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wie ist das freie Zimmer?",
+      "options": ["Es ist sehr groß, aber leider etwas dunkel.", "Es ist klein, aber es hat sehr viel Licht.", "Es ist klein, und es gibt noch keine Möbel."],
+      "answer": 1,
+      "evidence": "Es ist nicht so groß, aber sehr hell.",
+      "pairs": [["nicht so groß", "klein"], ["sehr hell", "sehr viel Licht"]],
+      "explain": "방은 그렇게 크지 않지만(nicht so groß) 아주 밝다(sehr hell)고 해요. '작지만 빛이 많이 들어온다'는 같은 뜻이에요. 어두운 방은 레나르트가 지금 쓰는 방이고, 방에는 침대와 책상이 있으니 가구가 없다는 말도 틀려요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Das Internet muss man extra bezahlen.",
+      "answer": 1,
+      "evidence": "Miete: 380 Euro im Monat, mit Internet.",
+      "pairs": [["mit Internet", "extra bezahlen"]],
+      "explain": "광고에 mit Internet이라고 쓰여 있어요. 월세 380유로에 인터넷 요금이 들어 있다는 뜻이에요. 그래서 인터넷 요금을 따로 낸다는 문장은 틀려요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Lennart ist schon Student in Münster.",
+      "answer": 1,
+      "evidence": "ich heiße Lennart und studiere ab Oktober in Münster.",
+      "pairs": [["studiere ab Oktober", "schon Student"]],
+      "explain": "레나르트는 10월부터(ab Oktober) 뮌스터에서 공부한다고 해요. 지금은 아직 뮌스터에서 공부하고 있지 않아요. 그래서 schon(이미)이 들어간 문장은 틀려요."
+    },
+    {
+      "type": "mc",
+      "kind": "paraphrase",
+      "q": "Was meint Lennart mit dem Satz „Allein wohnen möchte ich nicht, denn ich esse nicht gern allein.“?",
+      "options": ["Er isst lieber zusammen mit anderen Leuten.", "Er möchte allein essen, aber nicht allein leben.", "Er kocht gern, aber er wohnt lieber allein."],
+      "answer": 0,
+      "evidence": "Allein wohnen möchte ich nicht, denn ich esse nicht gern allein.",
+      "pairs": [["esse nicht gern allein", "isst lieber zusammen mit anderen Leuten"]],
+      "explain": "레나르트는 혼자 밥 먹는 것을 좋아하지 않아서 혼자 살고 싶지 않다고 해요. 즉 다른 사람들과 같이 먹는 것을 더 좋아해요. 다른 보기도 allein을 쓰지만 '혼자 먹고 싶다', '혼자 사는 게 더 좋다'는 뜻이라서 본문과 반대예요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wann möchte Lennart das Zimmer sehen?",
+      "options": ["Am Freitag, denn da hat er keine Arbeit.", "Im Oktober, denn dann ist das Zimmer frei.", "Am Wochenende, denn am Freitag arbeitet er."],
+      "answer": 2,
+      "evidence": "Habt ihr am Samstag Zeit?",
+      "pairs": [["am Samstag", "Am Wochenende"], ["muss ich leider arbeiten", "am Freitag arbeitet er"]],
+      "explain": "레나르트는 토요일(Samstag)에 시간이 있는지 묻고, 금요일에는 일을 해야 한다고 해요. 토요일을 주말(Wochenende)로 바꿔 말했어요. 10월은 방이 비는 때이고, 방을 보러 가는 날이 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "sein + 형용사 – sehr · zu · nicht so",
+      "term": "Adjektiv nach sein (sehr, zu, nicht so)",
+      "explain": "sein 뒤에 오는 형용사는 어미가 붙지 않고 원래 모양 그대로 써요(groß, hell, teuer). sehr는 '아주', nicht so는 '그렇게 ~하지 않은'이라는 뜻이에요. zu는 '너무 ~해서 문제가 있다'는 뜻이에요. 그래서 zu teuer는 '너무 비싸서 낼 수 없다'는 말이에요.",
+      "pattern": "주어 + sein + (sehr / zu / nicht so) + 형용사",
+      "examples": [
+        {
+          "de": "Es ist nicht so groß, aber sehr hell.",
+          "ko": "그렇게 크지는 않지만 아주 밝아요.",
+          "mark": ["ist nicht so groß", "sehr hell"],
+          "parts": [["Es", "주어"], ["ist", "동사"], ["nicht so groß,", "보어"], ["aber", "접속사"], ["sehr hell.", "보어"]]
+        },
+        {
+          "de": "Andere Zimmer sind zu teuer für mich.",
+          "ko": "다른 방들은 저한테 너무 비싸요.",
+          "mark": ["sind zu teuer"],
+          "parts": [["Andere Zimmer", "주어"], ["sind", "동사"], ["zu teuer", "보어"], ["für mich.", "부사어"]]
+        },
+        {
+          "de": "Mein Zimmer dort ist sehr klein und dunkel.",
+          "ko": "그곳의 제 방은 아주 작고 어두워요.",
+          "mark": ["ist sehr klein und dunkel"]
+        }
+      ],
+      "tip": "sehr teuer와 zu teuer는 달라요. sehr teuer는 '아주 비싸요'이고, zu teuer는 '너무 비싸서 안 돼요'라는 뜻이에요."
+    },
+    {
+      "title": "in · mit + 3격 – 방과 집을 말할 때",
+      "term": "in/mit + Dativ",
+      "explain": "어디에 있는지(Wo?) 말할 때 in 뒤에는 3격이 와요. in dem은 줄여서 im으로 써요(im Zimmer). WG는 여성 명사라서 3격은 in unserer WG예요. mit 뒤에는 언제나 3격이 와요. mit Balkon, mit Internet처럼 관사 없이 쓰면 '~이 딸린, ~이 포함된'이라는 뜻이에요.",
+      "pattern": "in + 3격 (im = in dem) · mit + 3격",
+      "examples": [
+        {
+          "de": "Im Zimmer stehen ein Bett und ein Schreibtisch.",
+          "ko": "방에는 침대와 책상이 있어요.",
+          "mark": ["Im Zimmer"],
+          "parts": [["Im Zimmer", "부사어(장소)"], ["stehen", "동사"], ["ein Bett und ein Schreibtisch.", "주어"]]
+        },
+        {
+          "de": "In unserer WG ist ab Oktober ein Zimmer frei.",
+          "ko": "저희 셰어하우스에 10월부터 빈방이 하나 생겨요.",
+          "mark": ["In unserer WG"]
+        },
+        {
+          "de": "Euer Zimmer mit Balkon gefällt mir sehr!",
+          "ko": "발코니가 있는 두 분의 방이 정말 마음에 들어요!",
+          "mark": ["mit Balkon"]
+        }
+      ],
+      "tip": "bei도 언제나 3격과 함께 써요. 그래서 bei meinen Eltern에서 meinen은 3격 복수 형태예요."
+    },
+    {
+      "title": "möchte + 동사원형 – 하고 싶은 일 말하기",
+      "term": "möchte + Infinitiv",
+      "explain": "möchte는 '~하고 싶어요'라는 뜻이고 화법조동사처럼 써요. möchte는 2번 자리에 오고, 하고 싶은 일을 나타내는 동사는 원형으로 문장 끝에 와요. 이렇게 두 동사가 문장을 감싸는 것을 틀 구조라고 해요. 형태는 ich möchte, du möchtest, wir möchten, ihr möchtet예요.",
+      "pattern": "möchte (2번 자리) … + 동사원형 (문장 끝)",
+      "examples": [
+        {
+          "de": "Ich möchte das Zimmer gern sehen.",
+          "ko": "방을 꼭 한번 보고 싶어요.",
+          "mark": ["möchte", "sehen"],
+          "parts": [["Ich", "주어"], ["möchte", "동사"], ["das Zimmer", "4격 목적어"], ["gern", "부사어(방법)"], ["sehen.", "동사(끝)"]]
+        },
+        {
+          "de": "Möchtest du bei uns wohnen?",
+          "ko": "저희 집에서 살고 싶으세요?",
+          "mark": ["Möchtest", "wohnen"],
+          "parts": [["Möchtest", "동사"], ["du", "주어"], ["bei uns", "부사어(장소)"], ["wohnen?", "동사(끝)"]]
+        },
+        {
+          "de": "Allein wohnen möchte ich nicht, denn ich esse nicht gern allein.",
+          "ko": "혼자 살고 싶지는 않아요. 혼자 밥 먹는 걸 좋아하지 않거든요.",
+          "mark": ["Allein wohnen möchte"]
+        }
+      ],
+      "tip": "동사원형이 문장 맨 앞으로 갈 수도 있어요. Allein wohnen möchte ich nicht.에서는 allein wohnen이 1번 자리에 와서 강조되고, möchte는 그대로 2번 자리에 있어요."
+    }
+  ],
+  "vocab": [
+    { "de": "die WG, -s (Wohngemeinschaft)", "ko": "셰어하우스, 공동 주거" },
+    { "de": "das Zimmer, -", "ko": "방" },
+    { "de": "frei", "ko": "비어 있는" },
+    { "de": "der Quadratmeter, -", "ko": "제곱미터" },
+    { "de": "der Balkon, -e", "ko": "발코니" },
+    { "de": "hell", "ko": "밝은" },
+    { "de": "dunkel", "ko": "어두운" },
+    { "de": "der Schreibtisch, -e", "ko": "책상" },
+    { "de": "die Miete, -n", "ko": "월세, 집세" },
+    { "de": "teuer", "ko": "비싼" },
+    { "de": "gefallen (gefällt, gefiel, hat gefallen) + Dat.", "ko": "~의 마음에 들다" },
+    { "de": "allein", "ko": "혼자" }
+  ],
+  "phrases": [
+    {
+      "de": "nicht weit von + Dat.",
+      "ko": "~에서 멀지 않은 곳에",
+      "ex": "Wir sind Merle und Tarek und wohnen in Münster, nicht weit von der Uni.",
+      "exko": "저희는 메를레와 타레크이고, 뮌스터에서 대학교와 멀지 않은 곳에 살아요."
+    },
+    {
+      "de": "… gefällt mir (sehr).",
+      "ko": "~이 (아주) 마음에 들다",
+      "ex": "Euer Zimmer mit Balkon gefällt mir sehr!",
+      "exko": "발코니가 있는 두 분의 방이 정말 마음에 들어요!"
+    },
+    {
+      "de": "Zeit haben",
+      "ko": "시간이 있다",
+      "ex": "Habt ihr am Samstag Zeit?",
+      "exko": "토요일에 시간 있으세요?"
+    }
+  ]
+}

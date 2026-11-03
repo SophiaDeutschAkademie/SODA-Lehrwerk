@@ -1,0 +1,239 @@
+{
+  "id": "a1-19",
+  "level": "A1",
+  "no": 19,
+  "title": "Unsere neue Lehrerin",
+  "titleKo": "우리 학교 새 선생님",
+  "type": "Interview in der Schülerzeitung",
+  "typeKo": "학교 신문 인터뷰",
+  "intro": "학교 신문 기자인 학생이 새로 오신 선생님과 나눈 짧은 인터뷰예요.",
+  "focus": ["Sie · du 동사 현재형", "woher · wo · wohin + aus · in · nach", "언어와 국적"],
+  "paragraphs": [
+    {
+      "de": "Frau Duval ist neu an unserer Schule. Sie unterrichtet Französisch und Musik. Malik (6b) hat mit ihr gesprochen.",
+      "ko": "뒤발 선생님이 우리 학교에 새로 오셨어요. 선생님은 프랑스어와 음악을 가르치세요. 6b반 말리크가 선생님과 이야기를 나눴어요."
+    },
+    {
+      "style": "q",
+      "de": "Frau Duval, woher kommen Sie?",
+      "ko": "뒤발 선생님, 어디 출신이세요?"
+    },
+    {
+      "de": "Ich komme aus Frankreich, aus Lyon. Meine Mutter ist Französin, mein Vater ist Deutscher.",
+      "ko": "저는 프랑스 리옹 출신이에요. 어머니는 프랑스 사람이고, 아버지는 독일 사람이에요."
+    },
+    {
+      "style": "q",
+      "de": "Wo wohnen Sie jetzt?",
+      "ko": "지금은 어디에 사세요?"
+    },
+    {
+      "de": "Hier in Freiburg. Vorher war ich drei Jahre in der Schweiz. Dort spricht man auch Französisch.",
+      "ko": "여기 프라이부르크에 살아요. 그전에는 3년 동안 스위스에 있었어요. 스위스에서도 프랑스어를 써요."
+    },
+    {
+      "style": "q",
+      "de": "Sprechen Sie noch andere Sprachen?",
+      "ko": "다른 언어도 하세요?"
+    },
+    {
+      "de": "Englisch und ein bisschen Spanisch. Im Moment lerne ich Türkisch. Das ist schwer, aber es macht Spaß!",
+      "ko": "영어를 하고, 스페인어도 조금 해요. 요즘은 튀르키예어를 배우고 있어요. 어렵지만 재미있어요!"
+    },
+    {
+      "style": "q",
+      "de": "Wohin fahren Sie in den Sommerferien?",
+      "ko": "여름 방학에는 어디로 가세요?"
+    },
+    {
+      "de": "Nach Spanien. Meine Schwester wohnt in Valencia. Jetzt frage ich: Woher kommst du, Malik?",
+      "ko": "스페인으로 가요. 언니가 발렌시아에 살아요. 이번에는 제가 물어볼게요. 말리크는 어디 출신이에요?"
+    },
+    {
+      "style": "q",
+      "de": "Aus der Türkei. Ich bin Türke, aber ich lebe schon acht Jahre hier.",
+      "ko": "튀르키예에서 왔어요. 저는 튀르키예 사람이지만 여기에서 산 지 벌써 8년이 됐어요."
+    },
+    {
+      "de": "Super! Sprichst du zu Hause Türkisch? Dann bist du ab heute mein Lehrer!",
+      "ko": "잘됐네요! 집에서 튀르키예어를 써요? 그럼 오늘부터 말리크가 제 선생님이에요!"
+    },
+    {
+      "style": "q",
+      "de": "Ja, mit meinen Eltern. Aber dann helfen Sie mir bitte in Französisch!",
+      "ko": "네, 부모님하고요. 그 대신 선생님도 제 프랑스어 공부를 도와주세요!"
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Frau Duval unterrichtet an der Schule zwei Fächer.",
+      "answer": 0,
+      "evidence": "Sie unterrichtet Französisch und Musik.",
+      "pairs": [["Französisch und Musik", "zwei Fächer"]],
+      "explain": "뒤발 선생님은 프랑스어와 음악을 가르쳐요. 과목이 두 개(zwei Fächer)이니까 맞는 문장이에요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Die Eltern von Frau Duval kommen beide aus Frankreich.",
+      "answer": 1,
+      "evidence": "Meine Mutter ist Französin, mein Vater ist Deutscher.",
+      "pairs": [["Meine Mutter ist Französin", "Die Eltern"], ["mein Vater ist Deutscher", "beide aus Frankreich"]],
+      "explain": "어머니는 프랑스 사람(Französin)이지만 아버지는 독일 사람(Deutscher)이에요. 그래서 '부모님이 두 분 다 프랑스 출신'이라는 문장은 틀려요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was sagt Frau Duval über die Schweiz?",
+      "options": ["Ihre Schwester hat dort eine Wohnung.", "Die Leute dort sprechen nur Deutsch.", "Sie hat dort drei Jahre lang gelebt."],
+      "answer": 2,
+      "evidence": "Vorher war ich drei Jahre in der Schweiz.",
+      "pairs": [["war ich drei Jahre in der Schweiz", "hat dort drei Jahre lang gelebt"]],
+      "explain": "선생님은 그전에 3년 동안 스위스에 있었다고 해요. war ich … in der Schweiz를 '그곳에서 살았다(gelebt)'로 바꿔 말했어요. 언니는 스페인 발렌시아에 살고, 스위스에서는 프랑스어도 써요."
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "q": "Was macht Frau Duval wahrscheinlich im Sommer?",
+      "options": ["Sie besucht ihre Schwester in Spanien.", "Sie fährt zu ihrer Mutter nach Lyon.", "Sie bleibt hier und lernt Türkisch."],
+      "answer": 0,
+      "evidence": "Meine Schwester wohnt in Valencia.",
+      "pairs": [["Nach Spanien", "in Spanien"], ["Meine Schwester wohnt in Valencia", "besucht ihre Schwester"]],
+      "explain": "선생님은 여름 방학에 스페인으로 가고, 언니가 발렌시아에 살아요. 그래서 언니를 찾아갈 거라고 짐작할 수 있어요. 리옹은 선생님의 고향이고, 튀르키예어는 요즘 배우는 언어예요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Malik ist vor acht Jahren nach Deutschland gekommen.",
+      "answer": 0,
+      "evidence": "aber ich lebe schon acht Jahre hier",
+      "pairs": [["schon acht Jahre hier", "vor acht Jahren nach Deutschland gekommen"]],
+      "explain": "말리크는 여기에서 산 지 벌써 8년이 됐다고 해요. 그러니까 8년 전에 독일에 온 거예요. 그래서 맞는 문장이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "paraphrase",
+      "q": "Was meint Frau Duval mit dem Satz „Dann bist du ab heute mein Lehrer!“?",
+      "options": ["Sie gibt Malik ab jetzt Türkischunterricht.", "Malik kann ihr beim Türkischlernen helfen.", "Malik hilft ihr ab jetzt in Französisch."],
+      "answer": 1,
+      "evidence": "Dann bist du ab heute mein Lehrer!",
+      "pairs": [["mein Lehrer", "kann ihr beim Türkischlernen helfen"]],
+      "explain": "선생님은 요즘 튀르키예어를 배우고, 말리크는 집에서 튀르키예어를 써요. 그래서 '오늘부터 말리크가 제 선생님'이라는 말은 말리크가 선생님의 튀르키예어 공부를 도울 수 있다는 뜻이에요. 선생님이 말리크에게 튀르키예어를 가르치는 것이 아니고, 프랑스어는 말리크가 도움을 받고 싶은 과목이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Sie와 du – 동사 현재형",
+      "term": "Konjugation mit Sie und du",
+      "explain": "Sie(존칭)와 함께 쓰는 동사는 동사원형과 모양이 같아요(kommen Sie, wohnen Sie). sein만 예외로 Sie sind예요. du와 함께 쓰는 동사는 어간에 -st를 붙여요(kommst du). sprechen은 du에서 모음이 바뀌어 sprichst가 되고, sein은 du bist예요. 의문문에서는 동사가 주어 앞에 와요.",
+      "pattern": "Sie + 동사원형 형태 (-en) · du + 어간-st",
+      "examples": [
+        {
+          "de": "Frau Duval, woher kommen Sie?",
+          "ko": "뒤발 선생님, 어디 출신이세요?",
+          "mark": ["kommen Sie"],
+          "parts": [["Frau Duval,", "기타"], ["woher", "의문사"], ["kommen", "동사"], ["Sie?", "주어"]]
+        },
+        {
+          "de": "Woher kommst du, Malik?",
+          "ko": "말리크는 어디 출신이에요?",
+          "mark": ["kommst du"],
+          "parts": [["Woher", "의문사"], ["kommst", "동사"], ["du,", "주어"], ["Malik?", "기타"]]
+        },
+        {
+          "de": "Sprichst du zu Hause Türkisch?",
+          "ko": "집에서 튀르키예어를 써요?",
+          "mark": ["Sprichst du"]
+        }
+      ],
+      "tip": "Sie는 항상 대문자 S로 써요. 이 인터뷰에서 학생은 선생님에게 Sie를 쓰고, 선생님은 학생에게 du를 써요."
+    },
+    {
+      "title": "woher · wo · wohin – aus · in · nach",
+      "term": "woher/wo/wohin mit aus, in, nach",
+      "explain": "어디에서 왔는지(woher)는 aus로, 어디에 있는지(wo)는 in으로, 어디로 가는지(wohin)는 nach로 대답해요. 도시와 대부분의 나라 이름에는 관사가 없어요(aus Lyon, in Freiburg, nach Spanien). die Schweiz, die Türkei처럼 관사가 있는 나라는 관사도 함께 써요(in der Schweiz, aus der Türkei).",
+      "pattern": "Woher? → aus … · Wo? → in … · Wohin? → nach …",
+      "examples": [
+        {
+          "de": "Ich komme aus Frankreich, aus Lyon.",
+          "ko": "저는 프랑스 리옹 출신이에요.",
+          "mark": ["aus Frankreich", "aus Lyon"],
+          "parts": [["Ich", "주어"], ["komme", "동사"], ["aus Frankreich,", "부사어(장소)"], ["aus Lyon.", "부사어(장소)"]]
+        },
+        {
+          "de": "Vorher war ich drei Jahre in der Schweiz.",
+          "ko": "그전에는 3년 동안 스위스에 있었어요.",
+          "mark": ["in der Schweiz"],
+          "parts": [["Vorher", "부사어(시간)"], ["war", "동사"], ["ich", "주어"], ["drei Jahre", "부사어(시간)"], ["in der Schweiz.", "부사어(장소)"]]
+        },
+        {
+          "de": "Wohin fahren Sie in den Sommerferien?",
+          "ko": "여름 방학에는 어디로 가세요?",
+          "mark": ["Wohin"]
+        }
+      ],
+      "tip": "관사가 있는 나라로 갈 때는 nach가 아니라 in + 4격을 써요(in die Schweiz, in die Türkei)."
+    },
+    {
+      "title": "언어와 국적",
+      "term": "Sprachen und Nationalitäten",
+      "explain": "언어 이름은 관사 없이 대문자로 써요(Französisch, Spanisch, Türkisch). 사람의 국적은 남자와 여자가 달라요. 여자는 대개 -in으로 끝나요(Französin, Türkin). 국적을 말할 때 sein 뒤에 관사 없이 써요(Ich bin Türke).",
+      "pattern": "sprechen/lernen + 언어 · sein + 국적 (관사 없음)",
+      "examples": [
+        {
+          "de": "Meine Mutter ist Französin, mein Vater ist Deutscher.",
+          "ko": "어머니는 프랑스 사람이고, 아버지는 독일 사람이에요.",
+          "mark": ["Französin", "Deutscher"],
+          "parts": [["Meine Mutter", "주어"], ["ist", "동사"], ["Französin,", "보어"], ["mein Vater", "주어"], ["ist", "동사"], ["Deutscher.", "보어"]]
+        },
+        {
+          "de": "Ich bin Türke, aber ich lebe schon acht Jahre hier.",
+          "ko": "저는 튀르키예 사람이지만 여기에서 산 지 벌써 8년이 됐어요.",
+          "mark": ["Türke"]
+        },
+        {
+          "de": "Im Moment lerne ich Türkisch.",
+          "ko": "요즘은 튀르키예어를 배우고 있어요.",
+          "mark": ["Türkisch"]
+        }
+      ],
+      "tip": "Türkisch는 언어, Türke는 사람이에요. Deutscher(남자)와 Deutsche(여자)는 형용사처럼 어미가 바뀌어요."
+    }
+  ],
+  "vocab": [
+    { "de": "die Lehrerin, -nen", "ko": "여자 선생님, 교사" },
+    { "de": "unterrichten", "ko": "가르치다" },
+    { "de": "die Sprache, -n", "ko": "언어" },
+    { "de": "sprechen (spricht, sprach, hat gesprochen)", "ko": "말하다, (언어를) 하다" },
+    { "de": "die Französin, -nen", "ko": "프랑스 사람(여자)" },
+    { "de": "der Deutsche, -n (ein Deutscher)", "ko": "독일 사람(남자)" },
+    { "de": "der Türke, -n", "ko": "튀르키예 사람(남자)" },
+    { "de": "die Schweiz (Sg.)", "ko": "스위스" },
+    { "de": "die Türkei (Sg.)", "ko": "튀르키예" },
+    { "de": "die Sommerferien (Pl.)", "ko": "여름 방학" },
+    { "de": "die Schwester, -n", "ko": "언니, 누나, 여동생" },
+    { "de": "vorher", "ko": "그전에" }
+  ],
+  "phrases": [
+    {
+      "de": "Woher kommen Sie? / Woher kommst du?",
+      "ko": "어디 출신이세요? / 어디 출신이에요?",
+      "ex": "Frau Duval, woher kommen Sie?",
+      "exko": "뒤발 선생님, 어디 출신이세요?"
+    },
+    {
+      "de": "Spaß machen",
+      "ko": "재미있다",
+      "ex": "Das ist schwer, aber es macht Spaß!",
+      "exko": "어렵지만 재미있어요!"
+    },
+    {
+      "de": "zu Hause",
+      "ko": "집에서",
+      "ex": "Sprichst du zu Hause Türkisch?",
+      "exko": "집에서 튀르키예어를 써요?"
+    }
+  ]
+}
