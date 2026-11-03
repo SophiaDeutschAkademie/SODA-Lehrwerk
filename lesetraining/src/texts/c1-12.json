@@ -54,7 +54,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "Womit begründet Hanna Wiebe, dass die Bilder kaum erläutert werden?",
-      "options": ["Die Hintergründe der abgebildeten Gebäude seien den Veranstaltern unbekannt.", "Ausführliche Wandtexte würden die Säle optisch überladen und die Bilder stören.", "Die Betrachtenden sollen sich ohne Vorgaben einen eigenen Zugang erschließen.", "Der Katalog liefere die nötigen Erklärungen bereits zu sämtlichen Bildern."],
+      "options": ["Die Hintergründe der abgebildeten Gebäude seien den Veranstaltern unbekannt.", "Ausführliche Wandtexte würden die Säle optisch überladen und die Bilder stören.", "Die Betrachtenden sollten sich ohne Vorgaben einen eigenen Zugang erschließen.", "Der Katalog liefere die nötigen Erklärungen bereits zu sämtlichen Bildern."],
       "answer": 2,
       "evidence": "Man wolle dem Publikum nichts vorschreiben, es solle selbst hineinhören.",
       "pairs": [["dem Publikum nichts vorschreiben", "ohne Vorgaben"], ["selbst hineinhören", "einen eigenen Zugang erschließen"]],
@@ -83,7 +83,7 @@
       "type": "mc",
       "kind": "meaning",
       "q": "Was bedeutet „tut ein Übriges“ im Text?",
-      "options": ["Es verstärkt den beschriebenen Eindruck noch zusätzlich.", "Es räumt weg, was von der Ausstellung übrig geblieben ist.", "Es ersetzt die Erläuterungen, die dem Katalog zu knapp sind.", "Es kostet den Besucher am Eingang einen kleinen Aufpreis."],
+      "options": ["Es verstärkt den beschriebenen Eindruck noch zusätzlich.", "Es räumt weg, was von der Ausstellung übrig geblieben ist.", "Es ersetzt Erläuterungen, die im Katalog zu knapp ausfallen.", "Es kostet den Besucher am Eingang einen kleinen Aufpreis."],
       "answer": 0,
       "evidence": "Der Audioguide, den man für drei Euro leihen kann, tut ein Übriges",
       "pairs": [["tut ein Übriges", "verstärkt den beschriebenen Eindruck noch zusätzlich"]],
@@ -159,7 +159,7 @@
     {
       "title": "짝을 이루는 접속어 – 이중 접속사",
       "term": "Zweiteilige Konnektoren (nicht nur … sondern auch, zwar … aber, weder … noch, je … desto)",
-      "explain": "nicht nur … sondern auch는 '~뿐 아니라 ~도', zwar … aber는 '물론 ~이지만', weder … noch는 '~도 ~도 아니다', je … desto는 '~할수록 더 ~하다'예요. je 문장은 동사가 문장 끝에 오고, desto 뒤의 주절은 동사가 2번 자리에 와요. weder … noch는 동사 자체를 부정하므로 nicht을 따로 쓰지 않아요.",
+      "explain": "nicht nur … sondern auch는 '~뿐 아니라 ~도', zwar … aber는 '물론 ~이지만', weder … noch는 '~도 ~도 아니다', je … desto는 '~할수록 더 ~하다'예요. je 문장은 동사가 문장 끝에 오고, desto 뒤의 주절은 동사가 2번 자리에 와요. weder … noch 자체가 부정이라서 nicht이나 kein을 따로 쓰지 않아요.",
       "pattern": "je + 비교급 + … + 동사(끝), desto + 비교급 + 동사 + 주어 …",
       "examples": [
         {
@@ -189,7 +189,7 @@
     {
       "title": "문장 전체를 받는 관계절 – was · wo · weshalb",
       "term": "Weiterführende Relativsätze",
-      "explain": "weiterführender Relativsatz는 앞 문장 전체나 어느 장면을 받아 내용을 덧붙여요. was는 앞 문장 전체의 내용을, weshalb는 그 결과나 이유를 이어 가요. wo는 장소를 나타내는 관계부사로, 앞에 나온 장소(여기서는 in einer Ecke)를 받아요. was와 weshalb는 선행사가 명사가 아니라서 der/die/das를 쓰지 않아요. 관계절은 쉼표로 구분하고 동사는 문장 끝에 와요.",
+      "explain": "weiterführender Relativsatz는 앞 문장 전체나 어느 장면을 받아 내용을 덧붙여요. was는 앞 문장 전체의 내용을, weshalb는 그 결과를 이어 가요. wo는 장소를 나타내는 관계부사로, 앞에 나온 장소(여기서는 in einer Ecke)를 받아요. was와 weshalb는 선행사가 명사가 아니라서 der/die/das를 쓰지 않아요. 관계절은 쉼표로 구분하고 동사는 문장 끝에 와요.",
       "pattern": "…, was/weshalb/wo + … + 동사(끝).",
       "examples": [
         {
@@ -205,7 +205,7 @@
           "parts": [["Doch wer nichts mitteilt,", "종속절"], ["muss", "동사"], ["auch", "기타"], ["nichts", "4격 목적어"], ["verantworten,", "동사(끝)"], ["weshalb sich hinter der vornehmen Zurückhaltung ebenso gut Bequemlichkeit vermuten lässt.", "관계절"]]
         }
       ],
-      "tip": "Sie hält, was der Titel verspricht.의 was는 다른 종류예요. 이 was는 앞 문장을 받지 않고 '~하는 것'이라는 뜻으로 hält의 목적어 역할을 해요."
+      "tip": "Sie hält, was der Titel verspricht.의 was는 다른 종류예요. 이 was절은 앞 문장을 받지 않고 '~하는 것'이라는 뜻으로 hält의 목적어 역할을 해요."
     },
     {
       "title": "접속법 1식·2식 – 남의 말 전달과 평가",
