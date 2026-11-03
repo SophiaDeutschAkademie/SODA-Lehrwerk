@@ -1802,8 +1802,8 @@ const EXAMS = [
   EXAMS.sort((a, b) => ORDER[fam(a)] - ORDER[fam(b)] || a.mdt - b.mdt);
 })();
 
-/* 시험 데이터 확장: Goethe A2 · Modelltest 3, 4, 5, 6
-   - 과제지 원문은 SODA-Goethe 저장소의 Goethe A2 Modelltest 3·4·5·6 PDF(Sprechen Kandidatenblätter, Teil 1~3)에서 옮겼습니다.
+/* 시험 데이터 확장: Goethe A2 · Modelltest 3, 4, 5, 6, 7, 8, 9, 10
+   - 과제지 원문은 SODA-Goethe 저장소의 Goethe A2 Modelltest 3·4·5·6·7·8·9·10 PDF(Sprechen Kandidatenblätter, Teil 1~3)에서 옮겼습니다.
    - Teil 3 일정표의 시간은 PDF 그림에서 읽은 값입니다(눈금 7.00~21.00, 1시간 = 32px로 환산). 각 PDF의 모범 대화 예시와 맞춰 확인했습니다.
    - 구조는 exams2.js의 Goethe A2 Modelltest 2와 같습니다. exams.js(Modelltest 1)의 Teil 중 주제와 무관한 부분(진행 방식, 규칙 기반 점검, 평가 기준)은 그대로 가져와 씁니다. */
 (function () {
@@ -2280,6 +2280,394 @@ const EXAMS = [
           durationRe: /(drei stunden|3 stunden|fertig|dauert|bis \d|dann sind wir)/,
           agreeKo: '13.30~14.30 시작',
           agreeRe: /(13\.30|13:30|halb zwei|halb 2|14 uhr|14\.00|14:00|um zwei|ab zwei|zwei uhr|14\.30|14:30|halb drei|um 14|ab 14|vierzehn uhr|dreizehn uhr dreißig)/
+        })
+      ]
+    }    ,
+    /* ====================================================================== Goethe A2 · Modelltest 7 */
+    {
+      id: 'goethe-a2-7', org: 'Goethe', level: 'A2', mdt: 7,
+      name: 'Goethe-Zertifikat A2', short: 'Goethe A2', label: 'Goethe-Zertifikat A2, Modelltest 7',
+      ko: 'Goethe A2 · Sprechen', lead_ko: '카드를 보고 질문하고, 내 이야기를 하고, 사라의 생일 선물을 살 토요일 2시간을 맞춥니다.',
+      teile: [
+        teil1({
+          cardsA: ['Urlaub?', 'Frühstück?', 'Geschwister?', 'Handy?'],
+          cardsB: ['Sport?', 'Wohnung?', 'Fernsehen?', 'Kaffee?'],
+          example: 'Urlaub? → Fahren Sie gern in den Urlaub?',
+          persona: 'Urlaub: Letzten Sommer warst du eine Woche in Italien am Meer und bist jeden Tag geschwommen. Frühstück: Du isst meistens Brot mit Käse und trinkst einen Kaffee; am Wochenende machst du Rührei. Geschwister: Du hast eine ältere Schwester, sie wohnt in Hamburg, und ihr telefoniert jeden Sonntag. Handy: Du benutzt dein Handy ziemlich oft, vor allem zum Telefonieren und für Nachrichten; Computerspiele magst du nicht.',
+          kw: 'Handy?', meinst: 'Meinst du, wie oft ich mein Handy benutze?',
+          aiQs: ['Machst du gern Sport?', 'Wie groß ist deine Wohnung?', 'Siehst du oft fern?', 'Trinkst du gern Kaffee?'],
+          redemittel: 'Fragen: „Fahren Sie gern in den Urlaub?“ · „Was essen Sie zum Frühstück?“ · „Haben Sie Geschwister?“ · „Wie oft benutzen Sie Ihr Handy?“ · „Machst du gern Sport?“ · „Wie groß ist deine Wohnung?“ · „Siehst du oft fern?“ · „Trinkst du gern Kaffee?“ · „Und du?“ · „Warum?“\nAntworten: „Ja, sehr gern. Letzten Sommer war ich …“ · „Meistens esse ich …“ · „Ich habe eine ältere Schwester.“ · „Ich benutze mein Handy oft, vor allem zum …“ · „Am liebsten …“',
+          phrases: [
+            ['Fahren Sie / Fährst du gern in den Urlaub?', /\b(fahren sie|fährst du) .{0,12}urlaub\b|\burlaub\b/],
+            ['Was essen Sie / Was isst du zum Frühstück?', /\bwas (essen sie|isst du) .{0,15}frühstück\b|\bfrühstück\b/],
+            ['Haben Sie / Hast du Geschwister?', /\b(haben sie|hast du) .{0,10}geschwister\b/],
+            ['Wie oft benutzen Sie / benutzt du dein Handy?', /\b(benutzen sie|benutzt du|nutzen sie|nutzt du) .{0,15}handy\b/],
+            ['Und Sie? / Und du?', /\bund (sie|du)\b/],
+            ['Warum? / Wieso?', /\b(warum|wieso)\b/],
+            ['Ich fahre … / Ich habe … / Ich esse …', /\bich (habe|fahre|bin|esse|trinke|benutze|nutze|mache)\b/],
+            ['Am liebsten … / Ich mag …', /\b(am liebsten|ich mag)\b/]
+          ],
+          fullQ: /\b(fahren sie|fährst du|was (essen|isst)|haben sie|hast du|wie oft|benutzen sie|benutzt du|machen sie|machst du|wie groß|sehen sie|siehst du|trinken sie|trinkst du|sind sie|bist du)\b/,
+          fullQExample: 'Haben Sie Geschwister?'
+        }),
+        teil2({
+          items: [
+            {
+              id: 'A', de: 'Was machen Sie in Ihrer Mittagspause?', hint: '1 Wo? · 2 Mit wem? · 3 Essen? · 4 Wie lange?', ko: '카드 A · 점심시간', keys: [
+                ['Wo?', /(kantine|büro|park|café|restaurant|zu hause|draußen|im garten|arbeitsplatz|schule|in der nähe|in der stadt|bäckerei|auf der bank)/],
+                ['Mit wem?', /(kollegen|kolleginnen|mit meiner|mit meinem|mit meinen|allein|alleine|freund|freundin|familie|zusammen)/],
+                ['Essen?', /(essen|brot|salat|suppe|sandwich|mittagessen|kochen|pizza|nudeln|reis|obst|trinke|belegtes)/],
+                ['Wie lange?', /(eine stunde|halbe stunde|minuten|dreißig|vierzig|\bstunde\b|dauert|lang)/]
+              ]
+            },
+            {
+              id: 'B', de: 'Wie kommen Sie zur Arbeit oder zur Schule?', hint: '1 Verkehrsmittel? · 2 Wie lange? · 3 Probleme? · 4 Wetter?', ko: '카드 B · 출퇴근·통학', keys: [
+                ['Verkehrsmittel?', /(bus|bahn|u-bahn|s-bahn|zug|auto|fahrrad|\brad\b|zu fuß|straßenbahn|taxi|roller|fahre|laufe)/],
+                ['Wie lange?', /(minuten|stunde|lang|dauert)/],
+                ['Probleme?', /(problem|verspätung|stau|zu spät|voll|verpasse|anschluss|ärger|schwierig|nervig)/],
+                ['Wetter?', /(wetter|regen|schnee|kalt|warm|sonne|winter|sommer|heiß|wind)/]
+              ]
+            }
+          ],
+          pool: {
+            A: ['Was haben Sie gestern in der Mittagspause gemacht?', 'Essen Sie lieber zu Hause oder unterwegs?'],
+            B: ['Was machen Sie unterwegs?', 'Fahren Sie lieber allein oder mit anderen?']
+          },
+          phrases: [
+            ['In der Mittagspause gehe ich … / esse ich …', /\b(in der mittagspause|mittags|ich gehe|ich esse)\b/],
+            ['Ich esse mit meinen Kollegen / allein', /\b(mit (meinen|meiner|meinem)|allein|kollegen)\b/],
+            ['Ich fahre mit der U-Bahn / dem Bus / dem Rad', /\b(ich fahre|mit der|mit dem|zu fuß)\b/],
+            ['Das dauert ungefähr … Minuten', /\b(dauert|ungefähr|minuten|stunde)\b/],
+            ['Bei Regen … / Im Winter …', /\b(bei regen|im winter|im sommer|wenn)\b/],
+            ['weil … / denn …', /\b(weil|denn)\b/]
+          ]
+        }),
+        teil3({
+          summary_ko: '두 사람의 토요일 일정표를 보고, 친구 사라의 생일 선물을 함께 사는 데 필요한 2시간을 함께 낼 수 있는 시간을 정합니다.',
+          instruction: 'Eine gemeinsame Freundin, Sara, hat nächste Woche Geburtstag. Sie und Ihre Partnerin/Ihr Partner möchten ihr zusammen ein Geschenk kaufen. Das dauert etwa zwei Stunden. Finden Sie einen Termin am Samstag.',
+          question: 'Wann haben Sie beide am Samstag zwei Stunden Zeit, um Saras Geschenk zu kaufen?',
+          schedTitle: 'Mein Kalender · Teilnehmende/-r A · Samstag, 21. November',
+          rows: [['8.00–9.00', 'Wochenmarkt'], ['10.00–12.00', 'Spanischkurs'], ['15.00–16.00', 'Kaffee mit Oma'], ['ab 19.30', 'Kino mit Freunden']],
+          sheetRedemittel: ['Wann hast du am Samstag Zeit?', 'Am Vormittag kann ich leider nicht, ich …', 'Wie wäre es um …?', 'Zwei Stunden – dann sind wir um … fertig.', 'Gut, dann treffen wir uns um … vor dem Geschäft.'],
+          intro: 'Wir kommen zu Teil 3: Gemeinsam etwas planen. Eine gemeinsame Freundin, Sara, hat nächste Woche Geburtstag. Sie und {n} möchten ihr zusammen ein Geschenk kaufen. Das dauert etwa zwei Stunden. Finden Sie einen Termin am Samstag. Wer möchte anfangen?',
+          procedure: 'Beide suchen am Samstag einen Termin von zwei Stunden, um für Sara ein Geburtstagsgeschenk zu kaufen. Man macht einen Vorschlag, reagiert darauf und einigt sich am Ende auf eine Uhrzeit. Ich sage Bescheid, wenn die Zeit um ist.',
+          scene: 'Eure gemeinsame Freundin Sara hat nächste Woche Geburtstag. Ihr möchtet ihr zusammen ein Geschenk kaufen. Das dauert etwa zwei Stunden. Ihr sucht einen Termin am Samstag, dem einundzwanzigsten November.',
+          dayShort: 'am Samstag',
+          cal: ['7.30 bis 8.30 Uhr: Schwimmen', '9.00 bis 10.30 Uhr: Wohnung putzen', '12.00 bis 13.30 Uhr: Mittagessen bei Tante Rosa', '14.00 bis 16.00 Uhr: Fußballtraining', '18.00 bis 20.00 Uhr: Chorprobe'],
+          free: 'Frei bist du von 8.30 bis 9.00 Uhr, von 10.30 bis 12.00 Uhr, von 13.30 bis 14.00 Uhr, von 16.00 bis 18.00 Uhr und ab 20.00 Uhr. Zwei volle Stunden hast du nur am späten Nachmittag zwischen 16.00 und 18.00 Uhr. Nach 20.00 Uhr willst du nichts mehr unternehmen.',
+          refuse: '„Am Vormittag kann ich leider nicht: Um halb acht gehe ich schwimmen, um neun putze ich die Wohnung, und mittags esse ich bei meiner Tante.“',
+          tooShort: 'Das ist zu kurz, wir brauchen zwei Stunden.',
+          answerFree: 'Nach dem Mittagessen bin ich nur kurz frei, denn um zwei habe ich Fußballtraining, und das dauert bis vier. Ab vier habe ich Zeit, bis sechs, dann habe ich Chorprobe.',
+          okExamples: 'A schlägt zum Beispiel vier bis sechs Uhr vor',
+          accept: 'Gut, dann treffen wir uns um vier vor dem Geschäft. (Nenne die vereinbarte Uhrzeit.)',
+          opener: 'Wann hast du am Samstag Zeit?',
+          openerNote: 'dass dein Vormittag voll ist (Schwimmen, Wohnung putzen) und du mittags bei deiner Tante isst, und frage, wann A am Nachmittag Zeit hat.',
+          redemittel: '„Wann hast du am Samstag Zeit?“ · „Am Vormittag kann ich leider nicht, ich …“ · „Wie wäre es um …?“ · „Zwei Stunden – dann sind wir um … fertig.“ · „Das passt gut.“ · „Gut, dann treffen wir uns um … vor dem Geschäft.“',
+          phrases: [
+            ['Wann hast du am Samstag Zeit?', /wann (hast du|passt)/],
+            ['Am Vormittag kann ich leider nicht, ich …', /(kann ich (leider )?nicht|habe ich leider|leider nicht|leider)/],
+            ['Wie wäre es um …?', /wie wäre es|wollen wir|können wir/],
+            ['Zwei Stunden – dann sind wir um … fertig', /(zwei stunden|fertig|dauert)/],
+            ['Gut, dann treffen wir uns um … vor dem Geschäft', /treffen wir uns|vor dem geschäft/],
+            ['Um … Uhr / halb … / Viertel …', /(\bum \d|uhr|halb \w+|viertel)/]
+          ],
+          proposeKo: 'Wann hast du Zeit? Wie wäre es um …?',
+          proposeRe: /(wann hast|wann passt|passt es|wie wäre es|können wir|um \d+ uhr|um halb|ab \d+)/,
+          hoursKo: '2시간',
+          durationRe: /(zwei stunden|2 stunden|fertig|dauert|bis \d|dann sind wir)/,
+          agreeKo: '16.00 시작',
+          agreeRe: /(16 uhr|16\.00|16:00|um vier|ab vier|vier uhr|sechzehn uhr|um 16|ab 16)/
+        })
+      ]
+    },
+    /* ====================================================================== Goethe A2 · Modelltest 8 */
+    {
+      id: 'goethe-a2-8', org: 'Goethe', level: 'A2', mdt: 8,
+      name: 'Goethe-Zertifikat A2', short: 'Goethe A2', label: 'Goethe-Zertifikat A2, Modelltest 8',
+      ko: 'Goethe A2 · Sprechen', lead_ko: '카드를 보고 질문하고, 내 이야기를 하고, 일요일에 자전거로 호수에 갈 3시간을 맞춥니다.',
+      teile: [
+        teil1({
+          cardsA: ['Musik?', 'Feiertage?', 'Nachbarn?', 'Haushalt?'],
+          cardsB: ['Sprachen?', 'Wohnort?', 'Abend?', 'Bücher?'],
+          example: 'Musik? → Hören Sie gern Musik?',
+          persona: 'Musik: Du hörst jeden Tag Musik, beim Kochen am liebsten Pop und im Bus mit Kopfhörern. Feiertage: Dein Lieblingsfeiertag ist Ostern; dann fährst du nach Krakau zu deiner Familie. Nachbarn: Du kennst deine Nachbarn ein bisschen; die ältere Frau neben dir bringt dir manchmal Kuchen. Haushalt: Du machst den Haushalt allein; am Samstag putzt du die Wohnung, und kochen magst du sehr.',
+          kw: 'Haushalt?', meinst: 'Meinst du, wer bei mir den Haushalt macht?',
+          aiQs: ['Welche Sprachen sprichst du?', 'Wo wohnst du?', 'Was machst du am Abend?', 'Liest du gern Bücher?'],
+          redemittel: 'Fragen: „Hören Sie gern Musik?“ · „Welchen Feiertag mögen Sie am liebsten?“ · „Kennen Sie Ihre Nachbarn?“ · „Wer macht bei Ihnen den Haushalt?“ · „Welche Sprachen sprichst du?“ · „Wo wohnst du?“ · „Was machst du am Abend?“ · „Liest du gern Bücher?“ · „Und du?“ · „Warum?“\nAntworten: „Ja, jeden Tag. Am liebsten höre ich …“ · „Mein Lieblingsfeiertag ist …, weil …“ · „Ja, einige.“ · „Ich mache den Haushalt allein.“ · „Am liebsten …“',
+          phrases: [
+            ['Hören Sie / Hörst du gern Musik?', /\b(hören sie|hörst du) .{0,10}musik\b|\bmusik\b/],
+            ['Welchen Feiertag mögen Sie / magst du am liebsten?', /\bfeiertag/],
+            ['Kennen Sie / Kennst du Ihre/deine Nachbarn?', /\b(kennen sie|kennst du) .{0,15}nachbarn\b/],
+            ['Wer macht bei Ihnen / bei dir den Haushalt?', /\bwer macht .{0,20}haushalt\b|\bhaushalt\b/],
+            ['Und Sie? / Und du?', /\bund (sie|du)\b/],
+            ['Warum? / Wieso?', /\b(warum|wieso)\b/],
+            ['Ich höre … / Ich koche … / Ich mache …', /\bich (höre|koche|mache|putze|bin|habe|mag|kenne)\b/],
+            ['Am liebsten … / Ich mag …', /\b(am liebsten|ich mag)\b/]
+          ],
+          fullQ: /\b(hören sie|hörst du|welchen feiertag|kennen sie|kennst du|wer macht|haben sie|hast du|welche sprachen|wo wohnen|wo wohnst|was machen sie|was machst|lesen sie|liest du|sind sie|bist du)\b/,
+          fullQExample: 'Hören Sie gern Musik?'
+        }),
+        teil2({
+          items: [
+            {
+              id: 'A', de: 'Was essen Sie gern?', hint: '1 Frühstück? · 2 Kochen? · 3 Restaurant? · 4 Süßes?', ko: '카드 A · 좋아하는 음식', keys: [
+                ['Frühstück?', /(frühstück|brot|brötchen|müsli|kaffee|\bei\b|eier|käse|marmelade|toast|joghurt)/],
+                ['Kochen?', /(koche|kochen|backe|selbst|küche|suppe|pasta|gericht|rezept)/],
+                ['Restaurant?', /(restaurant|italienisch|asiatisch|vietnames|indisch|essen gehen|gehe .{0,12}essen|pizzeria|imbiss|türkisch|polnisch|griechisch)/],
+                ['Süßes?', /(süß|kuchen|schokolade|\beis\b|torte|kekse|bonbon|nachtisch|dessert|gummibär)/]
+              ]
+            },
+            {
+              id: 'B', de: 'Was machen Sie am Wochenende?', hint: '1 Samstag? · 2 Sonntag? · 3 Mit wem? · 4 Ausflüge?', ko: '카드 B · 주말에 하는 일', keys: [
+                ['Samstag?', /(samstag)/],
+                ['Sonntag?', /(sonntag)/],
+                ['Mit wem?', /(mit meiner|mit meinem|mit meinen|allein|alleine|familie|freunde|freundin|freund|mann|frau|kinder|zusammen)/],
+                ['Ausflüge?', /(ausflug|ausflüge|\bsee\b|wald|berg|museum|wandern|zug|fahre|fahren|spazier|park|kino|stadt)/]
+              ]
+            }
+          ],
+          pool: {
+            A: ['Was haben Sie gestern gegessen?', 'Kochen Sie lieber allein oder mit anderen?'],
+            B: ['Was haben Sie letztes Wochenende gemacht?', 'Bleiben Sie lieber zu Hause, oder fahren Sie weg?']
+          },
+          phrases: [
+            ['Zum Frühstück esse ich … / Ich koche gern …', /\b(zum frühstück|ich esse|ich koche|ich backe)\b/],
+            ['Im Restaurant esse ich am liebsten …', /\b(im restaurant|am liebsten)\b/],
+            ['Süßes mag ich … / Ich esse gern Kuchen', /\b(süß|kuchen|schokolade|ich mag)\b/],
+            ['Am Samstag … / Am Sonntag …', /\b(am samstag|am sonntag|samstags|sonntags)\b/],
+            ['Wir fahren mit dem Zug an einen See', /\b(wir fahren|ich fahre|ausflug|zug|see)\b/],
+            ['weil … / denn …', /\b(weil|denn)\b/]
+          ]
+        }),
+        teil3({
+          summary_ko: '두 사람의 일요일 일정표를 보고, 자전거로 호수에 가서 수영하는 데 필요한 3시간을 함께 낼 수 있는 시간을 정합니다.',
+          instruction: 'Sie und Ihre Partnerin/Ihr Partner möchten am Sonntag zusammen mit dem Fahrrad zum Badesee fahren. Mit der Fahrt hin und zurück und dem Baden dauert das etwa drei Stunden. Finden Sie einen Termin.',
+          question: 'Wann haben Sie beide am Sonntag drei Stunden Zeit für die Radtour zum See?',
+          schedTitle: 'Mein Kalender · Teilnehmende/-r A · Sonntag, 5. Juli',
+          rows: [['7.30–9.00', 'Joggen'], ['10.00–12.00', 'Brunch bei Tante Inge'], ['ab 18.30', 'Grillen bei den Nachbarn']],
+          sheetRedemittel: ['Wann hast du am Sonntag Zeit?', 'Am Vormittag kann ich leider nicht, ich …', 'Wie wäre es um …?', 'Drei Stunden – dann sind wir um … zurück.', 'Gut, dann treffen wir uns um … bei mir.'],
+          intro: 'Wir kommen zu Teil 3: Gemeinsam etwas planen. Sie und {n} möchten am Sonntag zusammen mit dem Fahrrad zum Badesee fahren. Mit der Fahrt hin und zurück und dem Baden dauert das etwa drei Stunden. Finden Sie einen Termin. Wer möchte anfangen?',
+          procedure: 'Beide suchen am Sonntag einen Termin von drei Stunden für die Radtour zum Badesee. Man macht einen Vorschlag, reagiert darauf und einigt sich am Ende auf eine Uhrzeit. Ich sage Bescheid, wenn die Zeit um ist.',
+          scene: 'Ihr möchtet am Sonntag, dem fünften Juli, zusammen mit dem Fahrrad zum Badesee fahren. Mit der Fahrt hin und zurück und dem Baden dauert das etwa drei Stunden.',
+          dayShort: 'am Sonntag',
+          cal: ['8.00 bis 12.30 Uhr: Arbeit im Café', '13.00 bis 15.00 Uhr: Mittagessen bei den Eltern', 'ab 19.30 Uhr: Konzert im Park'],
+          free: 'Frei bist du bis 8.00 Uhr, von 12.30 bis 13.00 Uhr und von 15.00 bis 19.30 Uhr. Drei volle Stunden hast du nur am Nachmittag und frühen Abend zwischen 15.00 und 19.30 Uhr.',
+          refuse: '„Am Vormittag kann ich leider nicht, ich arbeite bis halb eins im Café, und um eins muss ich bei meinen Eltern sein.“',
+          tooShort: 'Das ist zu kurz, wir brauchen drei Stunden.',
+          answerFree: 'Zwischen halb eins und eins bin ich kurz frei, aber das ist zu kurz. Erst um drei bin ich wieder zu Hause, und dann habe ich bis halb acht Zeit, denn dann ist das Konzert im Park.',
+          okExamples: 'A schlägt zum Beispiel drei bis sechs, halb vier bis halb sieben oder vier bis sieben Uhr vor',
+          accept: 'Prima, dann treffen wir uns um drei bei mir. (Nenne die vereinbarte Uhrzeit.)',
+          opener: 'Wann hast du am Sonntag Zeit?',
+          openerNote: 'dass du am Vormittag im Café arbeitest und mittags bei deinen Eltern isst, und frage, wann A am Nachmittag Zeit hat.',
+          redemittel: '„Wann hast du am Sonntag Zeit?“ · „Am Vormittag kann ich leider nicht, ich …“ · „Wie wäre es um …?“ · „Drei Stunden – dann sind wir um … zurück.“ · „Das passt gut.“ · „Gut, dann treffen wir uns um … bei mir.“',
+          phrases: [
+            ['Wann hast du am Sonntag Zeit?', /wann (hast du|passt)/],
+            ['Am Vormittag kann ich leider nicht, ich …', /(kann ich (leider )?nicht|habe ich leider|leider nicht|leider)/],
+            ['Wie wäre es um …?', /wie wäre es|wollen wir|können wir/],
+            ['Drei Stunden – dann sind wir um … zurück', /(drei stunden|zurück|dauert)/],
+            ['Gut, dann treffen wir uns um … bei mir', /treffen wir uns|bei mir/],
+            ['Um … Uhr / halb … / Viertel …', /(\bum \d|uhr|halb \w+|viertel)/]
+          ],
+          proposeKo: 'Wann hast du Zeit? Wie wäre es um …?',
+          proposeRe: /(wann hast|wann passt|passt es|wie wäre es|können wir|um \d+ uhr|um halb|ab \d+)/,
+          hoursKo: '3시간',
+          durationRe: /(drei stunden|3 stunden|zurück|dauert|bis \d|dann sind wir)/,
+          agreeKo: '15.00~15.30 시작',
+          agreeRe: /(15 uhr|15\.00|15:00|um drei|ab drei|drei uhr|15\.30|15:30|halb vier|fünfzehn uhr|um 15|ab 15)/
+        })
+      ]
+    },
+    /* ====================================================================== Goethe A2 · Modelltest 9 */
+    {
+      id: 'goethe-a2-9', org: 'Goethe', level: 'A2', mdt: 9,
+      name: 'Goethe-Zertifikat A2', short: 'Goethe A2', label: 'Goethe-Zertifikat A2, Modelltest 9',
+      ko: 'Goethe A2 · Sprechen', lead_ko: '카드를 보고 질문하고, 내 이야기를 하고, 크리스마스 쿠키를 구울 금요일 2시간을 맞춥니다.',
+      teile: [
+        teil1({
+          cardsA: ['Geburtstag?', 'Kino?', 'Schule?', 'Kleidung?'],
+          cardsB: ['Reisen?', 'Kochen?', 'Haustier?', 'Morgen?'],
+          example: 'Geburtstag? → Wann haben Sie Geburtstag?',
+          persona: 'Geburtstag: Du hast im März Geburtstag und feierst meistens mit Freunden in einem Café. Kino: Du gehst ungefähr einmal im Monat mit einer Freundin ins Kino, am liebsten in Komödien. Schule: Du bist in Krakau zur Schule gegangen, zwölf Jahre lang; die Schule war nicht weit von eurem Haus. Kleidung: Du ziehst am liebsten Jeans und einen Pullover an; nur bei der Arbeit trägst du ein Hemd.',
+          kw: 'Kino?', meinst: 'Meinst du, wie oft ich ins Kino gehe?',
+          aiQs: ['Reist du gern?', 'Kochst du gern?', 'Hast du ein Haustier?', 'Was machst du am Morgen?'],
+          redemittel: 'Fragen: „Wann haben Sie Geburtstag?“ · „Wie oft gehen Sie ins Kino?“ · „Wo sind Sie zur Schule gegangen?“ · „Was ziehen Sie am liebsten an?“ · „Reist du gern?“ · „Kochst du gern?“ · „Hast du ein Haustier?“ · „Was machst du am Morgen?“ · „Und du?“ · „Warum?“\nAntworten: „Ich habe im … Geburtstag.“ · „Ich gehe ungefähr einmal im Monat ins Kino.“ · „Ich bin in … zur Schule gegangen.“ · „Am liebsten ziehe ich … an.“ · „Am liebsten …“',
+          phrases: [
+            ['Wann haben Sie / Wann hast du Geburtstag?', /\bwann (haben sie|hast du) geburtstag\b|\bgeburtstag\b/],
+            ['Wie oft gehen Sie / gehst du ins Kino?', /\b(gehen sie|gehst du) .{0,12}kino\b|\bkino\b/],
+            ['Wo sind Sie / bist du zur Schule gegangen?', /\bzur schule\b|\bschule\b/],
+            ['Was ziehen Sie / ziehst du am liebsten an?', /\b(ziehen sie|ziehst du|tragen sie|trägst du) .{0,20}(an|kleidung)\b|\bkleidung\b/],
+            ['Und Sie? / Und du?', /\bund (sie|du)\b/],
+            ['Warum? / Wieso?', /\b(warum|wieso)\b/],
+            ['Ich habe … / Ich gehe … / Ich bin …', /\bich (habe|gehe|bin|ziehe|trage|mag|feiere)\b/],
+            ['Am liebsten … / Ich mag …', /\b(am liebsten|ich mag)\b/]
+          ],
+          fullQ: /\b(wann haben sie|wann hast du|wie oft|wo sind sie|wo bist du|was ziehen|was ziehst|gehen sie|gehst du|haben sie|hast du|reisen sie|reist du|kochen sie|kochst du|was machen sie|was machst|sind sie|bist du)\b/,
+          fullQExample: 'Wann haben Sie Geburtstag?'
+        }),
+        teil2({
+          items: [
+            {
+              id: 'A', de: 'Wie lernen Sie Deutsch?', hint: '1 Wann? · 2 Wo? · 3 Was ist schwer? · 4 Warum?', ko: '카드 A · 독일어 공부 방법', keys: [
+                ['Wann?', /(morgens|abends|am abend|am morgen|jeden tag|nach der arbeit|am wochenende|zweimal|dreimal|mal in der woche|nachmittag|vormittag|montag|dienstag|mittwoch|donnerstag|freitag|\buhr\b)/],
+                ['Wo?', /(zu hause|kurs|sprachschule|schule|akademie|bibliothek|café|online|im internet|app|im zug|im bus|büro|in der)/],
+                ['Was ist schwer?', /(schwer|schwierig|artikel|grammatik|aussprache|der,? die,? das|kasus|dativ|akkusativ|wortstellung|verben|nicht leicht|problem)/],
+                ['Warum?', /(weil|denn|arbeit|beruf|studium|studieren|zukunft|später|job|familie|freunde|prüfung|leben in deutschland|brauche)/]
+              ]
+            },
+            {
+              id: 'B', de: 'Wo und wie kaufen Sie ein?', hint: '1 Supermarkt? · 2 Markt? · 3 Internet? · 4 Wann?', ko: '카드 B · 장보는 곳과 방법', keys: [
+                ['Supermarkt?', /(supermarkt|aldi|lidl|rewe|edeka|discounter|geschäft|laden)/],
+                ['Markt?', /(markt|wochenmarkt|obst|gemüse|frisch)/],
+                ['Internet?', /(online|internet|bestelle|bestellen|amazon|im netz|per app|website)/],
+                ['Wann?', /(am abend|abends|morgens|am samstag|samstags|nach der arbeit|am wochenende|jede woche|einmal|zweimal|mittags|nachmittags|\buhr\b)/]
+              ]
+            }
+          ],
+          pool: {
+            A: ['Mit wem sprechen Sie Deutsch?', 'Was möchten Sie später mit Deutsch machen?'],
+            B: ['Was haben Sie zuletzt gekauft?', 'Kaufen Sie lieber allein oder mit anderen ein?']
+          },
+          phrases: [
+            ['Ich lerne Deutsch am Abend / im Kurs', /\b(ich lerne|im kurs|am abend|abends|morgens)\b/],
+            ['Schwer finde ich die Artikel / die Grammatik', /\b(schwer|schwierig|artikel|grammatik|aussprache)\b/],
+            ['Ich kaufe im Supermarkt ein', /\b(ich kaufe|im supermarkt|supermarkt)\b/],
+            ['Obst und Gemüse kaufe ich auf dem Markt', /\b(auf dem markt|markt|obst|gemüse)\b/],
+            ['Ich bestelle im Internet / online', /\b(online|im internet|bestelle)\b/],
+            ['weil … / denn …', /\b(weil|denn)\b/]
+          ]
+        }),
+        teil3({
+          summary_ko: '두 사람의 금요일 일정표를 보고, 학교 크리스마스 시장에 낼 쿠키를 함께 굽는 데 필요한 2시간을 함께 낼 수 있는 시간을 정합니다.',
+          instruction: 'Die Schule Ihrer Kinder veranstaltet am Samstag einen Weihnachtsmarkt. Sie und Ihre Partnerin/Ihr Partner möchten dafür zusammen Plätzchen backen. Das dauert etwa zwei Stunden. Finden Sie einen Termin am Freitag.',
+          question: 'Wann haben Sie beide am Freitag zwei Stunden Zeit, um Plätzchen zu backen?',
+          schedTitle: 'Mein Kalender · Teilnehmende/-r A · Freitag, 11. Dezember',
+          rows: [['8.00–16.00', 'Arbeit'], ['17.00–19.00', 'Deutschkurs']],
+          sheetRedemittel: ['Wann hast du am Freitag Zeit?', 'Am Nachmittag kann ich leider nicht, ich …', 'Wie wäre es um …?', 'Zwei Stunden – dann sind wir um … fertig.', 'Gut, dann backen wir um … bei mir.'],
+          intro: 'Wir kommen zu Teil 3: Gemeinsam etwas planen. Die Schule Ihrer Kinder veranstaltet am Samstag einen Weihnachtsmarkt. Sie und {n} möchten dafür zusammen Plätzchen backen. Das dauert etwa zwei Stunden. Finden Sie einen Termin am Freitag. Wer möchte anfangen?',
+          procedure: 'Beide suchen am Freitag einen Termin von zwei Stunden, um Plätzchen für den Weihnachtsmarkt zu backen. Man macht einen Vorschlag, reagiert darauf und einigt sich am Ende auf eine Uhrzeit. Ich sage Bescheid, wenn die Zeit um ist.',
+          scene: 'Die Schule eurer Kinder veranstaltet am Samstag einen Weihnachtsmarkt. Ihr möchtet dafür zusammen Plätzchen backen. Das dauert etwa zwei Stunden. Ihr sucht einen Termin am Freitag, dem elften Dezember.',
+          dayShort: 'am Freitag',
+          cal: ['7.00 bis 13.00 Uhr: Frühdienst im Krankenhaus', '15.30 bis 16.30 Uhr: Tochter vom Turnen abholen', '17.00 bis 18.30 Uhr: Einkaufen'],
+          free: 'Frei bist du von 13.00 bis 15.30 Uhr, von 16.30 bis 17.00 Uhr und ab 18.30 Uhr. Zwei volle Stunden hast du am frühen Nachmittag (13.00 bis 15.30 Uhr) und am Abend (ab 18.30 Uhr).',
+          refuse: '„Am Vormittag habe ich leider Frühdienst im Krankenhaus bis eins. Und um halb vier hole ich meine Tochter vom Turnen ab, um fünf gehe ich einkaufen.“',
+          tooShort: 'Das ist zu kurz, wir brauchen zwei Stunden.',
+          answerFree: 'Am Nachmittag bin ich nur von eins bis halb vier frei, danach hole ich meine Tochter ab und gehe einkaufen. Aber am Abend habe ich Zeit.',
+          okExamples: 'A schlägt zum Beispiel eins bis drei, sieben bis neun oder halb acht bis halb zehn vor',
+          accept: 'Gut, dann backen wir um sieben bei mir. (Nenne die vereinbarte Uhrzeit.)',
+          opener: 'Wann hast du am Freitag Zeit?',
+          openerNote: 'dass du Frühdienst im Krankenhaus hast, aber um eins fertig bist, und frage, wann A Zeit hat.',
+          redemittel: '„Wann hast du am Freitag Zeit?“ · „Am Nachmittag kann ich leider nicht, ich …“ · „Wie wäre es um …?“ · „Zwei Stunden – dann sind wir um … fertig.“ · „Das passt gut.“ · „Gut, dann backen wir um … bei mir.“',
+          phrases: [
+            ['Wann hast du am Freitag Zeit?', /wann (hast du|passt)/],
+            ['Am Nachmittag kann ich leider nicht, ich …', /(kann ich (leider )?nicht|habe ich leider|leider nicht|leider)/],
+            ['Wie wäre es um …?', /wie wäre es|wollen wir|können wir/],
+            ['Zwei Stunden – dann sind wir um … fertig', /(zwei stunden|fertig|dauert)/],
+            ['Gut, dann backen wir um … bei mir', /backen wir|bei mir/],
+            ['Um … Uhr / halb … / Viertel …', /(\bum \d|uhr|halb \w+|viertel)/]
+          ],
+          proposeKo: 'Wann hast du Zeit? Wie wäre es um …?',
+          proposeRe: /(wann hast|wann passt|passt es|wie wäre es|können wir|um \d+ uhr|um halb|ab \d+)/,
+          hoursKo: '2시간',
+          durationRe: /(zwei stunden|2 stunden|fertig|dauert|bis \d|dann sind wir)/,
+          agreeKo: '19.00~19.30 시작',
+          agreeRe: /(19 uhr|19\.00|19:00|um sieben|ab sieben|sieben uhr|19\.30|19:30|halb acht|um 19|ab 19|neunzehn uhr|20 uhr|20\.00|um acht|ab acht)/
+        })
+      ]
+    },
+    /* ====================================================================== Goethe A2 · Modelltest 10 */
+    {
+      id: 'goethe-a2-10', org: 'Goethe', level: 'A2', mdt: 10,
+      name: 'Goethe-Zertifikat A2', short: 'Goethe A2', label: 'Goethe-Zertifikat A2, Modelltest 10',
+      ko: 'Goethe A2 · Sprechen', lead_ko: '카드를 보고 질문하고, 내 이야기를 하고, 냉장고를 살 토요일 3시간을 맞춥니다.',
+      teile: [
+        teil1({
+          cardsA: ['Arbeit?', 'Kochen?', 'Freunde?', 'Wetter?'],
+          cardsB: ['Fotos?', 'Spiele?', 'Stadt?', 'Briefe?'],
+          example: 'Arbeit? → Wo arbeiten Sie?',
+          persona: 'Arbeit: Du arbeitest in einem Büro und fängst um acht Uhr an; die Arbeit macht dir Spaß, weil die Kollegen nett sind. Kochen: Du kochst gern; am Wochenende probierst du etwas Neues aus, zum Beispiel eine polnische Suppe. Freunde: Du triffst deine Freunde meistens in einem Café in der Stadt; manchmal spielt ihr bei dir Karten. Wetter: Du magst es, wenn die Sonne scheint und es nicht zu heiß ist, zum Beispiel im Herbst.',
+          kw: 'Wetter?', meinst: 'Meinst du, welches Wetter ich mag?',
+          aiQs: ['Machst du gern Fotos?', 'Spielst du gern Spiele?', 'Wohnst du gern in der Stadt?', 'Schreibst du manchmal Briefe?'],
+          redemittel: 'Fragen: „Wo arbeiten Sie?“ · „Kochen Sie gern?“ · „Wo treffen Sie Ihre Freunde?“ · „Welches Wetter mögen Sie am liebsten?“ · „Machst du gern Fotos?“ · „Spielst du gern Spiele?“ · „Wohnst du gern in der Stadt?“ · „Schreibst du manchmal Briefe?“ · „Und du?“ · „Warum?“\nAntworten: „Ich arbeite in …“ · „Ja, am Wochenende koche ich gern …“ · „Ich treffe sie meistens in einem Café.“ · „Ich mag es, wenn die Sonne scheint.“ · „Am liebsten …“',
+          phrases: [
+            ['Wo arbeiten Sie / Wo arbeitest du?', /\b(arbeiten sie|arbeitest du)\b|\barbeit\b/],
+            ['Kochen Sie / Kochst du gern?', /\b(kochen sie|kochst du)\b/],
+            ['Wo treffen Sie / triffst du deine Freunde?', /\b(treffen sie|triffst du) .{0,15}freunde\b|\bfreunde\b/],
+            ['Welches Wetter mögen Sie / magst du am liebsten?', /\bwelches wetter\b|\bwetter\b/],
+            ['Und Sie? / Und du?', /\bund (sie|du)\b/],
+            ['Warum? / Wieso?', /\b(warum|wieso)\b/],
+            ['Ich arbeite … / Ich koche … / Ich treffe …', /\bich (arbeite|koche|treffe|mag|bin|habe|fange)\b/],
+            ['Am liebsten … / Ich mag …', /\b(am liebsten|ich mag)\b/]
+          ],
+          fullQ: /\b(wo arbeiten|wo arbeitest|kochen sie|kochst du|wo treffen|wo triffst|welches wetter|haben sie|hast du|machen sie|machst du|spielen sie|spielst du|wohnen sie|wohnst du|schreiben sie|schreibst du|sind sie|bist du)\b/,
+          fullQExample: 'Wo arbeiten Sie?'
+        }),
+        teil2({
+          items: [
+            {
+              id: 'A', de: 'Was machen Sie in Ihrer Freizeit?', hint: '1 Sport? · 2 Hobbys? · 3 Mit wem? · 4 Wie oft?', ko: '카드 A · 여가 시간', keys: [
+                ['Sport?', /(sport|joggen|schwimmen|fußball|fahrrad|\brad\b|yoga|fitness|tennis|tanzen|laufen|volleyball|wandern)/],
+                ['Hobbys?', /(hobby|hobbys|lesen|kochen|malen|musik|fotografi|fotos|gitarre|klavier|garten|spiele|film|singen|stricken|basteln|zeichnen|serie)/],
+                ['Mit wem?', /(mit meiner|mit meinem|mit meinen|allein|alleine|familie|freunde|freundin|freund|mann|frau|kinder|zusammen|kollegen)/],
+                ['Wie oft?', /(einmal|zweimal|dreimal|mal in der|mal im|jede woche|jeden tag|täglich|am wochenende|oft|selten|manchmal|jeden sonntag|monat)/]
+              ]
+            },
+            {
+              id: 'B', de: 'Wie war Ihr letzter Urlaub?', hint: '1 Wo? · 2 Mit wem? · 3 Wetter? · 4 Essen?', ko: '카드 B · 지난 휴가', keys: [
+                ['Wo?', /(meer|strand|berg|\bsee\b|land|stadt|hotel|insel|kroatien|italien|spanien|griechenland|türkei|polen|österreich|frankreich|deutschland|ferienwohnung|campingplatz|dorf)/],
+                ['Mit wem?', /(mit meiner|mit meinem|mit meinen|allein|alleine|familie|freunde|freundin|freund|mann|frau|kinder|zusammen)/],
+                ['Wetter?', /(wetter|sonne|regen|schön|warm|heiß|kalt|wind|schnee|geregnet|wolken)/],
+                ['Essen?', /(essen|fisch|restaurant|pizza|pasta|gegessen|frühstück|abendessen|lecker|obst|eis|gericht|brot|salat|fleisch|meeresfrüchte)/]
+              ]
+            }
+          ],
+          pool: {
+            A: ['Was haben Sie letzten Sonntag gemacht?', 'Möchten Sie gern ein neues Hobby anfangen?'],
+            B: ['Was hat Ihnen am besten gefallen?', 'Wohin möchten Sie als Nächstes fahren?']
+          },
+          phrases: [
+            ['In meiner Freizeit mache ich Sport / gehe ich …', /\b(in meiner freizeit|ich mache|ich gehe|ich spiele)\b/],
+            ['Mein Hobby ist … / Ich lese gern …', /\b(mein hobby|hobby|ich lese|ich male|ich koche)\b/],
+            ['Ich treffe mich einmal in der Woche mit …', /\b(einmal|zweimal|mal in der|jede woche|ich treffe)\b/],
+            ['Ich war im August in … / am Meer', /\b(ich war|wir waren|im august|am meer|im urlaub)\b/],
+            ['Das Wetter war sehr schön / Wir haben … gegessen', /\b(das wetter|wir haben|ich habe|gegessen)\b/],
+            ['weil … / denn …', /\b(weil|denn)\b/]
+          ]
+        }),
+        teil3({
+          summary_ko: '두 사람의 토요일 일정표를 보고, 고장 난 냉장고를 새로 사러 가는 데 필요한 3시간을 함께 낼 수 있는 시간을 정합니다.',
+          instruction: 'Sie wohnen mit Ihrer Partnerin/Ihrem Partner zusammen in einer Wohnung. Ihr Kühlschrank ist kaputt, und Sie möchten gemeinsam einen neuen kaufen. Mit der Fahrt und dem Aussuchen dauert das etwa drei Stunden. Finden Sie einen Termin am Samstag.',
+          question: 'Wann haben Sie beide am Samstag drei Stunden Zeit, um einen Kühlschrank zu kaufen?',
+          schedTitle: 'Mein Kalender · Teilnehmende/-r A · Samstag, 13. März',
+          rows: [['8.00–10.00', 'Schwimmen'], ['12.30–15.00', 'Mittagessen bei Oma'], ['ab 19.30', 'Theater']],
+          sheetRedemittel: ['Wann hast du am Samstag Zeit?', 'Am Vormittag kann ich leider nicht, ich …', 'Wie wäre es um …?', 'Drei Stunden – dann sind wir um … fertig.', 'Gut, dann fahren wir um … zusammen los.'],
+          intro: 'Wir kommen zu Teil 3: Gemeinsam etwas planen. Sie wohnen mit {n} zusammen in einer Wohnung. Ihr Kühlschrank ist kaputt, und Sie möchten gemeinsam einen neuen kaufen. Mit der Fahrt und dem Aussuchen dauert das etwa drei Stunden. Finden Sie einen Termin am Samstag. Wer möchte anfangen?',
+          procedure: 'Beide suchen am Samstag einen Termin von drei Stunden, um einen neuen Kühlschrank zu kaufen. Man macht einen Vorschlag, reagiert darauf und einigt sich am Ende auf eine Uhrzeit. Ich sage Bescheid, wenn die Zeit um ist.',
+          scene: 'Ihr wohnt zusammen in einer Wohnung. Euer Kühlschrank ist kaputt, und ihr möchtet gemeinsam einen neuen kaufen. Mit der Fahrt und dem Aussuchen dauert das etwa drei Stunden. Ihr sucht einen Termin am Samstag, dem dreizehnten März.',
+          dayShort: 'am Samstag',
+          cal: ['7.00 bis 9.30 Uhr: Arbeit in der Bäckerei', '10.30 bis 11.30 Uhr: Friseur', '13.00 bis 14.30 Uhr: Kinderfest im Kindergarten', 'ab 19.00 Uhr: Abendessen mit Freunden'],
+          free: 'Frei bist du von 9.30 bis 10.30 Uhr, von 11.30 bis 13.00 Uhr und von 14.30 bis 19.00 Uhr. Drei volle Stunden hast du nur am Nachmittag zwischen 14.30 und 19.00 Uhr.',
+          refuse: '„Am Vormittag kann ich leider nicht: Ich arbeite bis halb zehn in der Bäckerei, um halb elf gehe ich zum Friseur, und von eins bis halb drei bin ich beim Kinderfest im Kindergarten.“',
+          tooShort: 'Das ist zu kurz, wir brauchen drei Stunden.',
+          answerFree: 'Ab halb drei habe ich Zeit, bis sieben, dann esse ich mit Freunden zu Abend.',
+          okExamples: 'A schlägt zum Beispiel drei bis sechs, halb vier bis halb sieben oder vier bis sieben Uhr vor',
+          accept: 'Prima, dann fahren wir um drei zusammen los. (Nenne die vereinbarte Uhrzeit.)',
+          opener: 'Wann hast du am Samstag Zeit?',
+          openerNote: 'dass du bis halb zehn in der Bäckerei arbeitest und um halb elf zum Friseur gehst, und frage, wann A Zeit hat.',
+          redemittel: '„Wann hast du am Samstag Zeit?“ · „Am Vormittag kann ich leider nicht, ich …“ · „Wie wäre es um …?“ · „Drei Stunden – dann sind wir um … fertig.“ · „Das passt gut.“ · „Gut, dann fahren wir um … zusammen los.“',
+          phrases: [
+            ['Wann hast du am Samstag Zeit?', /wann (hast du|passt)/],
+            ['Am Vormittag kann ich leider nicht, ich …', /(kann ich (leider )?nicht|habe ich leider|leider nicht|leider)/],
+            ['Wie wäre es um …?', /wie wäre es|wollen wir|können wir/],
+            ['Drei Stunden – dann sind wir um … fertig', /(drei stunden|fertig|dauert)/],
+            ['Gut, dann fahren wir um … zusammen los', /fahren wir|zusammen los/],
+            ['Um … Uhr / halb … / Viertel …', /(\bum \d|uhr|halb \w+|viertel)/]
+          ],
+          proposeKo: 'Wann hast du Zeit? Wie wäre es um …?',
+          proposeRe: /(wann hast|wann passt|passt es|wie wäre es|können wir|um \d+ uhr|um halb|ab \d+)/,
+          hoursKo: '3시간',
+          durationRe: /(drei stunden|3 stunden|fertig|dauert|bis \d|dann sind wir)/,
+          agreeKo: '15.00~16.00 시작',
+          agreeRe: /(15 uhr|15\.00|15:00|um drei|ab drei|drei uhr|15\.30|15:30|halb vier|16 uhr|16\.00|16:00|um vier|ab vier|vier uhr|fünfzehn uhr|sechzehn uhr|um 15|ab 15|um 16|ab 16)/
         })
       ]
     }
