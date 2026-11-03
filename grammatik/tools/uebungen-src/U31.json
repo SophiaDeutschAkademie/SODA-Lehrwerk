@@ -57,8 +57,8 @@
     {
       "lv": 1,
       "t": "fill",
-      "q": "Das erste Fahrrad ___ 1817 in Mannheim erfunden.",
-      "ko": "최초의 자전거는 1817년에 만하임에서 발명됐어요.",
+      "q": "Das Laufrad ___ 1817 in Mannheim erfunden.",
+      "ko": "발로 땅을 차며 타는 초기 자전거(Laufrad)는 1817년에 만하임에서 발명됐어요.",
       "h": "werden",
       "a": [
         "wurde"
@@ -257,17 +257,17 @@
     {
       "lv": 2,
       "t": "fill",
-      "q": "Gerade ___ die Tische für das Abendessen gedeckt. In zehn Minuten ___ alles gedeckt, dann können wir essen.",
-      "ko": "지금 저녁 식사를 위해 식탁을 차리는 중이에요. 10분 뒤면 다 차려져 있을 테니 그때 먹을 수 있어요.",
+      "q": "Gerade ___ die Tische im Saal gedeckt. Die Tische im Garten ___ schon seit einer Stunde gedeckt, dort können wir gleich essen.",
+      "ko": "지금 홀의 식탁을 차리는 중이에요. 정원의 식탁은 한 시간 전부터 차려져 있어서 거기서 바로 먹을 수 있어요.",
       "h": [
         "werden 또는 sein",
         "werden 또는 sein"
       ],
       "a": [
         "werden",
-        "ist"
+        "sind"
       ],
-      "e": "gerade(지금 하는 중)는 과정 → werden 수동, 주어가 복수라 werden.<br>10분 뒤에 다 끝나 있는 모습은 상태 → sein 수동, alles는 단수라 ist."
+      "e": "gerade(지금 하는 중)는 과정 → werden 수동, 주어가 복수라 werden.<br>seit einer Stunde 차려져 있는 모습은 상태 → sein 수동, 복수 주어라 sind."
     },
     {
       "lv": 2,

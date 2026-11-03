@@ -69,7 +69,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Wo ___ ihr am Wochenende?",
-      "ko": "너희 주말에 어디 있었어?",
+      "ko": "너희 주말에 어디에 있었어요?",
       "h": "sein",
       "a": [
         "wart"
@@ -125,15 +125,15 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "Wir ___ um sieben Uhr nach Hause. (gehen)",
+      "q": "동사의 세 형태(원형 – 과거형 – 과거분사)가 모두 맞는 줄은?",
       "o": [
-        "gingen",
-        "gangen",
-        "gehten",
-        "gingt"
+        "trinken – trank – getrunken",
+        "trinken – trinkte – getrinkt",
+        "trinken – trunk – getrunken",
+        "trinken – trank – getrinken"
       ],
       "a": 0,
-      "e": "gehen의 과거 어간은 ging, wir에는 -en을 붙여요 — gingen."
+      "e": "trinken은 i – a – u로 바뀌는 불규칙 동사예요 — trinken – trank – getrunken.<br>-te와 -t를 붙인 줄은 규칙 동사의 모양이에요."
     },
     {
       "lv": 1,
@@ -184,7 +184,8 @@
         "Meine Oma las jeden Morgen die Zeitung.",
         "Jeden Morgen las meine Oma die Zeitung.",
         "Die Zeitung las meine Oma jeden Morgen",
-        "Meine Oma las die Zeitung jeden Morgen"
+        "Meine Oma las die Zeitung jeden Morgen",
+        "Die Zeitung las jeden Morgen meine Oma"
       ],
       "e": "과거형은 동사 하나라서 그대로 두 번째 자리에 와요.<br>lesen → las."
     },
@@ -194,7 +195,9 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "그 영화는 정말 지루했어요.",
       "a": [
-        "Der Film war wirklich langweilig."
+        "Der Film war wirklich langweilig.",
+        "Wirklich langweilig war der Film.",
+        "Langweilig war der Film wirklich."
       ],
       "e": "sein → war, 두 번째 자리에 와요."
     },
@@ -286,7 +289,7 @@
       "lv": 2,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "나는 어제 너한테 전화하고 싶었어.",
+      "ko": "나는 어제 너에게 전화하고 싶었어요.",
       "a": [
         "Ich wollte dich gestern anrufen.",
         "Gestern wollte ich dich anrufen.",
@@ -301,7 +304,8 @@
       "ko": "우리는 어제 오래 기다려야 했어요. (현재완료로)",
       "a": [
         "Wir haben gestern lange warten müssen.",
-        "Gestern haben wir lange warten müssen."
+        "Gestern haben wir lange warten müssen.",
+        "Lange haben wir gestern warten müssen."
       ],
       "e": "화법조동사의 현재완료는 끝에 원형이 두 개 와요 — warten müssen.<br>본동사 원형이 먼저, 화법조동사 원형이 맨 끝이에요."
     },

@@ -25,7 +25,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Die Blumen sind für ___ Oma.",
-      "ko": "이 꽃은 우리 할머니 드릴 거예요.",
+      "ko": "이 꽃은 우리 할머니를 위한 거예요.",
       "h": "mein- · Oma · 여성",
       "a": [
         "meine"
@@ -82,12 +82,16 @@
       "lv": 1,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "콘서트가 끝나면 우리는 뭘 좀 먹으러 가요.",
+      "ko": "콘서트가 끝난 뒤 우리는 택시를 타고 집에 가요.",
       "a": [
-        "Nach dem Konzert gehen wir noch etwas essen.",
-        "Wir gehen nach dem Konzert noch etwas essen."
+        "Nach dem Konzert fahren wir mit dem Taxi nach Hause.",
+        "Wir fahren nach dem Konzert mit dem Taxi nach Hause.",
+        "Mit dem Taxi fahren wir nach dem Konzert nach Hause.",
+        "Nach dem Konzert fahren wir nach Hause mit dem Taxi.",
+        "Wir fahren nach dem Konzert nach Hause mit dem Taxi.",
+        "Wir fahren mit dem Taxi nach dem Konzert nach Hause."
       ],
-      "e": "nach dem Konzert(3격)가 맨 앞에 오면 동사 gehen이 두 번째, 주어 wir가 그 뒤에 와요.<br>essen은 gehen과 함께 끝에 놓아요."
+      "e": "nach dem Konzert와 mit dem Taxi는 모두 3격이에요. 앞에 오는 말 뒤에 동사 fahren이 두 번째로, 주어 wir가 그 뒤에 와요.<br>집으로 가는 방향은 nach Hause예요."
     },
     {
       "lv": 1,
@@ -120,7 +124,7 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "Holst du mich ___ Bahnhof ab? (역으로 나를 데리러 와 줄래?)",
+      "q": "Holst du mich ___ Bahnhof ab? (나를 역에서 데리러 와 줄래?)",
       "o": [
         "vom",
         "von der",
@@ -145,7 +149,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Ich war gestern ___ Zahnarzt.",
-      "ko": "나는 어제 치과에 갔었어요.",
+      "ko": "나는 어제 치과에 있었어요.",
       "h": "bei · 진료받는 곳 · Zahnarzt · 남성 · 축약형",
       "a": [
         "beim"
@@ -200,7 +204,9 @@
         "Heute gehe ich ohne meinen Schirm aus dem Haus.",
         "Ohne meinen Schirm gehe ich heute aus dem Haus.",
         "Aus dem Haus gehe ich heute ohne meinen Schirm",
-        "Ich gehe ohne meinen Schirm heute aus dem Haus"
+        "Ich gehe ohne meinen Schirm heute aus dem Haus",
+        "Ich gehe heute aus dem Haus ohne meinen Schirm",
+        "Heute gehe ich aus dem Haus ohne meinen Schirm"
       ],
       "e": "ohne + 4격(meinen Schirm), aus + 3격(dem Haus)이에요.<br>동사 gehe는 두 번째 자리예요."
     },
@@ -222,15 +228,15 @@
     {
       "lv": 2,
       "t": "mc",
-      "q": "Ich fahre am Samstag ___ Leipzig, ___ meiner Tante.",
+      "q": "Ich fahre am Samstag ___ Leipzig, ___ meiner Tante. (라이프치히의 이모에게 가요)",
       "o": [
         "nach … zu",
         "zu … nach",
-        "nach … bei",
+        "nach … von",
         "zu … zu"
       ],
       "a": 0,
-      "e": "도시로 가는 방향은 nach Leipzig, 사람에게 가는 방향은 zu meiner Tante예요.<br>bei는 이미 그 사람 집에 있을 때 써요."
+      "e": "도시로 가는 방향은 nach Leipzig, 사람에게 가는 방향은 zu meiner Tante예요.<br>zu Leipzig처럼 도시 앞에 zu를 쓰지 않아요."
     },
     {
       "lv": 2,
@@ -351,7 +357,7 @@
       "lv": 3,
       "t": "fill",
       "q": "___ hast du die Konzertkarten bekommen? — Von meinem Onkel.\n___ hast du die Fahrkarte bezahlt? — Mit meiner Kreditkarte.",
-      "ko": "콘서트 표는 누구한테서 받았어? — 삼촌한테서. / 기차표는 뭘로 계산했어? — 신용카드로.",
+      "ko": "콘서트 표는 누구에게서 받았어요? — 삼촌에게서요. / 기차표는 무엇으로 계산했어요? — 신용카드로요.",
       "h": [
         "",
         ""

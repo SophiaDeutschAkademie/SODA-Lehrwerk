@@ -11,19 +11,19 @@
     {
       "lv": 1,
       "t": "fill",
-      "q": "Wir haben gestern lange ___.",
-      "ko": "우리는 어제 오래 춤을 췄어요.",
-      "h": "tanzen",
+      "q": "Meine Schwester hat uns Kuchen ___.",
+      "ko": "내 여동생이 우리에게 케이크를 가져다줬어요.",
+      "h": "bringen",
       "a": [
-        "getanzt"
+        "gebracht"
       ],
-      "e": "규칙 동사의 과거분사는 ge + 어간 + t예요 — getanzt."
+      "e": "bringen은 혼합 동사예요. 모음이 바뀌고(i → a) 어미는 -t예요 — gebracht."
     },
     {
       "lv": 1,
       "t": "fill",
       "q": "Hast du die Rechnung schon ___?",
-      "ko": "계산서 벌써 냈어?",
+      "ko": "청구서를 벌써 결제했어요?",
       "h": "bezahlen",
       "a": [
         "bezahlt"
@@ -173,11 +173,12 @@
       "lv": 1,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "나는 어제 할머니께 전화했어요.",
+      "ko": "나는 어제 삼촌께 전화했어요.",
       "a": [
-        "Ich habe gestern meine Oma angerufen.",
-        "Gestern habe ich meine Oma angerufen.",
-        "Meine Oma habe ich gestern angerufen"
+        "Ich habe gestern meinen Onkel angerufen.",
+        "Gestern habe ich meinen Onkel angerufen.",
+        "Ich habe meinen Onkel gestern angerufen.",
+        "Meinen Onkel habe ich gestern angerufen"
       ],
       "e": "보조 동사 habe가 두 번째 자리, 과거분사 angerufen이 맨 끝이에요."
     },
@@ -185,7 +186,7 @@
       "lv": 1,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "너 어제 뭐 먹었어?",
+      "ko": "너는 어제 뭐 먹었어요?",
       "a": [
         "Was hast du gestern gegessen?"
       ],
@@ -236,7 +237,7 @@
       "lv": 2,
       "t": "fill",
       "q": "„Hast du gestern ___?“ – „Nein, ich habe ein Buch ___.“",
-      "ko": "\"어제 TV 봤어?\" – \"아니, 책을 읽었어.\"",
+      "ko": "\"어제 TV 봤어요?\" – \"아니요, 책을 읽었어요.\"",
       "h": [
         "fernsehen",
         "lesen"
@@ -251,7 +252,7 @@
       "lv": 2,
       "t": "fill",
       "q": "Wann ___ du deine Frau ___?",
-      "ko": "너는 아내를 언제 처음 알게 됐어?",
+      "ko": "너는 아내를 언제 처음 알게 됐어요?",
       "h": [
         "haben · sein",
         "kennenlernen"
@@ -266,7 +267,7 @@
       "lv": 2,
       "t": "fill",
       "q": "___ dir etwas ___?",
-      "ko": "너 무슨 일 있었던 거야? (다친 데 없어?)",
+      "ko": "너 무슨 일 있었어요? (다친 데 없어요?)",
       "h": [
         "haben · sein",
         "passieren"
@@ -314,7 +315,7 @@
       "lv": 2,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "너희 그 선물 벌써 포장했어?",
+      "ko": "너희 그 선물 벌써 포장했어요?",
       "a": [
         "Habt ihr das Geschenk schon eingepackt?",
         "Habt ihr schon das Geschenk eingepackt"
@@ -378,7 +379,7 @@
       "lv": 3,
       "t": "fill",
       "q": "„___ du das schon ___?“ – „Nein, das habe ich erst heute ___.“",
-      "ko": "\"그거 벌써 알고 있었어?\" – \"아니, 오늘에야 알게 됐어.\"",
+      "ko": "\"그거 벌써 알고 있었어요?\" – \"아니요, 오늘에야 알게 됐어요.\"",
       "h": [
         "haben · sein",
         "wissen",

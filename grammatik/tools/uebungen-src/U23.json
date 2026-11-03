@@ -216,7 +216,7 @@
     {
       "lv": 2,
       "t": "fill",
-      "q": "Mit dem ___ Auto fährt mein Vater nur sonntags.",
+      "q": "Mit dem ___ Auto fährt mein Vater nur am Sonntag.",
       "ko": "아버지는 그 비싼 차를 일요일에만 몰아요.",
       "h": "teuer",
       "a": [
@@ -228,7 +228,7 @@
       "lv": 2,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "내일 너희는 어느 오래된 성당을 구경해?",
+      "ko": "내일 너희는 어느 오래된 교회를 구경해요?",
       "a": [
         "Welche alte Kirche besichtigt ihr morgen?"
       ],
@@ -365,7 +365,7 @@
       "o": [
         "der rosa Rock",
         "das hoche Gebäude",
-        "in dem dunkeln Zimmer",
+        "in dem dunkelen Zimmer",
         "den hohe Turm"
       ],
       "a": 0,
@@ -374,8 +374,8 @@
     {
       "lv": 3,
       "t": "fill",
-      "q": "A: Welchen ___ Mantel meinst du?\nB: Den ___ dort, neben der ___ Jacke.",
-      "ko": "A: 어느 긴 코트 말이야?\nB: 저기 분홍색 재킷 옆에 있는 검은 거.",
+      "q": "A: Welchen ___ Mantel meinst du?\nB: Den ___ Mantel dort, neben der ___ Jacke.",
+      "ko": "A: 어느 긴 코트 말이에요?\nB: 저기 분홍색 재킷 옆에 있는 검은 코트요.",
       "h": [
         "lang",
         "schwarz",
@@ -386,7 +386,7 @@
         "schwarzen",
         "rosa"
       ],
-      "e": "welchen(남성 4격) 뒤 → -en. 명사 Mantel을 빼도 어미는 그대로 -en이에요.<br>rosa는 어미가 없어요."
+      "e": "welchen(남성 4격) 뒤 → -en, den(남성 4격) 뒤 → -en이에요.<br>rosa는 어미가 없어요."
     }
   ]
 }

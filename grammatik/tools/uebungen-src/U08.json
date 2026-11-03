@@ -11,7 +11,7 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "Das ist Jan und ___ Hund.",
+      "q": "Das ist Jan und ___ Hund. (얀과 얀의 개)",
       "o": [
         "sein",
         "seine",
@@ -24,7 +24,7 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "Das ist Mia und ___ Katze.",
+      "q": "Das ist Mia und ___ Katze. (미아와 미아의 고양이)",
       "o": [
         "ihre",
         "seine",
@@ -92,7 +92,7 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "Kennst du ___ Onkel? (너희 삼촌)",
+      "q": "Wir kennen ___ Onkel. (너희 삼촌)",
       "o": [
         "euren",
         "eure",
@@ -116,7 +116,7 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "Das Kind spielt mit ___ Ball.",
+      "q": "Das Kind spielt mit ___ Ball. (그 아이 자기 공)",
       "o": [
         "seinem",
         "sein",
@@ -140,7 +140,7 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "Wie alt ist ___ Tochter, Herr Park?",
+      "q": "Wie alt ist ___ Tochter, Herr Park? (당신의 딸)",
       "o": [
         "Ihre",
         "ihre",
@@ -300,7 +300,7 @@
     {
       "lv": 3,
       "t": "mc",
-      "q": "틀린 문장은?",
+      "q": "주어 자신의 것을 말하는 문장 가운데 틀린 것은?",
       "o": [
         "Herr Kaya liebt seine Frau.",
         "Frau Kaya liebt ihren Mann.",

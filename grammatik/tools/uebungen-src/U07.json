@@ -372,22 +372,21 @@
     {
       "lv": 3,
       "t": "fill",
-      "q": "1.200 Gäste → ___ Gäste · im Jahr 1200 → im Jahr ___",
-      "ko": "손님 1,200명 · 1200년에",
+      "q": "2.400 Gäste → ___ Gäste · im Jahr 1400 → im Jahr ___",
+      "ko": "손님 2,400명 · 1400년에",
       "h": [
         "수량",
         "연도"
       ],
       "a": [
         [
-          "tausendzweihundert",
-          "eintausendzweihundert"
+          "zweitausendvierhundert"
         ],
         [
-          "zwölfhundert"
+          "vierzehnhundert"
         ]
       ],
-      "e": "수량은 천 단위로 (ein)tausendzweihundert, 1100–1999년은 백 단위로 zwölfhundert라고 읽어요."
+      "e": "수량은 천 단위로 zweitausendvierhundert, 1100–1999년은 백 단위로 vierzehnhundert라고 읽어요."
     },
     {
       "lv": 3,
@@ -404,7 +403,10 @@
         "Es gibt am Sonntag ein Konzert um elf Uhr",
         "Um elf Uhr am Sonntag gibt es ein Konzert",
         "Ein Konzert gibt es am Sonntag um elf Uhr",
-        "Ein Konzert gibt es um elf Uhr am Sonntag"
+        "Ein Konzert gibt es um elf Uhr am Sonntag",
+        "Um elf Uhr gibt es ein Konzert am Sonntag",
+        "Es gibt ein Konzert am Sonntag um elf Uhr",
+        "Es gibt ein Konzert um elf Uhr am Sonntag"
       ],
       "e": "es gibt 뒤의 ein Konzert는 4격이에요. 시간 표현이 첫 자리에 오면 동사 gibt 뒤에 es가 와요.<br>요일은 am, 시각은 um이에요."
     },

@@ -76,7 +76,7 @@
       "lv": 1,
       "t": "fill",
       "q": "___ ihr die Aufgaben schon gelöst, als der Lehrer zurückkam?",
-      "ko": "선생님이 돌아왔을 때 너희는 문제를 이미 다 풀었었니?",
+      "ko": "선생님이 돌아왔을 때 너희는 문제를 이미 다 풀었어요?",
       "h": "haben",
       "a": [
         "Hattet"
@@ -133,7 +133,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Keine Sorge, ich ___ dir am Samstag beim Umzug helfen.",
-      "ko": "걱정 마, 토요일에 이사할 때 도와줄게.",
+      "ko": "걱정 마세요, 토요일에 이사할 때 도와줄게요.",
       "h": "werden",
       "a": [
         "werde"
@@ -144,7 +144,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Du ___ die Prüfung bestimmt bestehen, du hast ja so viel gelernt.",
-      "ko": "넌 분명 시험에 합격할 거야, 그렇게 많이 공부했잖아.",
+      "ko": "분명 시험에 합격할 거예요. 그렇게 많이 공부했잖아요.",
       "h": "werden",
       "a": [
         "wirst"
@@ -155,7 +155,7 @@
       "lv": 1,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "너희 내년 여름에 또 스페인에 갈 거야?",
+      "ko": "너희 내년 여름에 또 스페인에 갈 거예요?",
       "a": [
         "Werdet ihr nächsten Sommer wieder nach Spanien fahren?",
         "Werdet ihr wieder nächsten Sommer nach Spanien fahren?"
@@ -223,7 +223,7 @@
       "lv": 1,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "로마에서 너한테 엽서 보낼게.",
+      "ko": "로마에서 너한테 엽서를 보낼게요.",
       "a": [
         "Aus Rom werde ich dir eine Postkarte schicken.",
         "Ich werde dir aus Rom eine Postkarte schicken.",
@@ -278,15 +278,15 @@
     {
       "lv": 2,
       "t": "mc",
-      "q": "Als der Arzt endlich kam, ___ das Fieber schon ___.",
+      "q": "Als ich nach Hause kam, ___ die Kinder schon ___.",
       "o": [
-        "war … gesunken",
-        "hatte … gesunken",
-        "ist … gesunken",
-        "hatte … gesinkt"
+        "waren … eingeschlafen",
+        "hatten … eingeschlafen",
+        "sind … eingeschlafen",
+        "hatten … eingeschlaft"
       ],
       "a": 0,
-      "e": "sinken(내려가다)은 상태가 바뀌는 동사라서 sein과 써요.<br>과거 이야기 속 더 앞선 일이니 war … gesunken이에요."
+      "e": "einschlafen은 상태가 바뀌는 동사라서 sein과 써요.<br>과거 이야기 속 더 앞선 일이니 waren … eingeschlafen이에요."
     },
     {
       "lv": 2,
@@ -338,7 +338,7 @@
       "lv": 2,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "벌써 자정이에요. 손님들은 분명 이미 집으로 갔을 거예요.",
+      "ko": "손님들은 분명 이미 집에 갔을 거예요.",
       "a": [
         "Die Gäste werden sicher schon nach Hause gefahren sein.",
         "Sicher werden die Gäste schon nach Hause gefahren sein.",
@@ -353,12 +353,12 @@
       "q": "'나는 수의사가 되고 싶어요.' (의지)",
       "o": [
         "Ich will Tierärztin werden.",
-        "Ich werde Tierärztin.",
+        "Ich will werden Tierärztin.",
         "Ich wurde Tierärztin.",
         "Ich bin Tierärztin geworden."
       ],
       "a": 0,
-      "e": "하고 싶은 의지는 wollen이에요. werden은 '되다'라는 본동사로 끝에 와요.<br>Ich werde Tierärztin.은 '수의사가 돼요(될 거예요)'라는 사실·예정이에요."
+      "e": "하고 싶은 의지는 wollen이에요. 원형 werden은 문장 끝에 와요.<br>Ich wurde …와 Ich bin … geworden은 '되었다'는 과거 이야기예요."
     },
     {
       "lv": 3,

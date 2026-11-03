@@ -49,7 +49,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Gehen wir zu Fuß, ___ nehmen wir ein Taxi?",
-      "ko": "걸어갈까, 아니면 택시 탈까?",
+      "ko": "걸어갈까요, 아니면 택시를 탈까요?",
       "h": "",
       "a": [
         "oder"
@@ -105,7 +105,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Zieh eine Jacke an, ___ erkältest du dich.",
-      "ko": "재킷 입어, 안 그러면 감기 걸려.",
+      "ko": "재킷 입어요, 안 그러면 감기 걸려요.",
       "h": "",
       "a": [
         "sonst"
@@ -243,8 +243,10 @@
       "ko": "추운데도 아이들이 밖에서 놀아요.",
       "a": [
         "Es ist kalt, trotzdem spielen die Kinder draußen.",
+        "Es ist kalt, trotzdem spielen draußen die Kinder.",
         "Es ist kalt, die Kinder spielen trotzdem draußen.",
-        "Es ist kalt, draußen spielen die Kinder trotzdem"
+        "Es ist kalt, die Kinder spielen draußen trotzdem.",
+        "Es ist kalt, draußen spielen die Kinder trotzdem."
       ],
       "e": "trotzdem이 첫 자리면 동사 spielen이 바로 와요.<br>trotzdem을 가운데 자리에 두면 도치가 없어요.",
       "ok": "쉼표 뒤 die는 관사, 관계문 아님"
@@ -252,7 +254,7 @@
     {
       "lv": 2,
       "t": "mc",
-      "q": "Das Training beginnt nicht im März, ___ im April.",
+      "q": "Das Training beginnt nicht im März, ___ im April. (3월이 아니라 4월에)",
       "o": [
         "sondern",
         "aber",
@@ -362,9 +364,11 @@
       "lv": 2,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "돈 가져가, 안 그러면 표값을 낼 수 없어.",
+      "ko": "돈 가져가요, 안 그러면 표값을 낼 수 없어요.",
       "a": [
-        "Nimm das Geld mit, sonst kannst du das Ticket nicht bezahlen."
+        "Nimm das Geld mit, sonst kannst du das Ticket nicht bezahlen.",
+        "Nimm das Geld mit, du kannst sonst das Ticket nicht bezahlen.",
+        "Nimm das Geld mit, du kannst das Ticket sonst nicht bezahlen."
       ],
       "e": "sonst가 첫 자리라 화법조동사 kannst가 바로 오고, 원형 bezahlen은 끝에 가요."
     },
@@ -428,10 +432,12 @@
       "lv": 3,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "네가 사과하든지, 아니면 나 너랑 더는 말 안 해.",
+      "ko": "네가 사과하거나, 아니면 나는 너와 더는 이야기하지 않을 거예요.",
       "a": [
         "Entweder du entschuldigst dich, oder ich rede nicht mehr mit dir.",
-        "Entweder entschuldigst du dich, oder ich rede nicht mehr mit dir."
+        "Entweder entschuldigst du dich, oder ich rede nicht mehr mit dir.",
+        "Entweder du entschuldigst dich, oder mit dir rede ich nicht mehr.",
+        "Entweder entschuldigst du dich, oder mit dir rede ich nicht mehr."
       ],
       "e": "entweder로 시작하면 도치해도 되고 안 해도 돼요.<br>oder 뒤는 어순 그대로예요."
     },

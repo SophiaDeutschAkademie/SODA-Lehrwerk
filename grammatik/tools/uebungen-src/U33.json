@@ -95,7 +95,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Die Ärztin sagte, ich ___ mich ein paar Tage schonen.",
-      "ko": "의사 선생님은 내가 며칠 몸을 아껴야 한다고 했어요.",
+      "ko": "의사 선생님은 내가 며칠 무리하지 말고 쉬어야 한다고 했어요.",
       "h": "sollen · 접속법",
       "a": [
         "solle"
@@ -228,7 +228,10 @@
       "a": [
         "fliege",
         "am",
-        "nächsten"
+        [
+          "nächsten",
+          "folgenden"
+        ]
       ],
       "e": "나중에 전할 때는 시간 표현도 바꿔요 → morgen → am nächsten Tag.<br>동사는 3인칭 단수 접속법 I fliege예요.",
       "ok": "am nächsten Tag은 이 과에서 익힐 시간 표현 바꾸기 자체라 피할 수 없음"
@@ -356,7 +359,7 @@
       "lv": 3,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "경찰관은 누가 그 사고를 목격했는지 물었어요.",
+      "ko": "경찰관은 그 사고를 목격한 사람이 있는지 물었어요.",
       "a": [
         "Die Polizistin fragte, ob jemand den Unfall beobachtet habe.",
         "Die Polizistin fragte, ob den Unfall jemand beobachtet habe."

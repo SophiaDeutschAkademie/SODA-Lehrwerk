@@ -154,12 +154,13 @@
       "lv": 1,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "짖는 개들 때문에 나는 밤새 잠을 못 잤어요.",
+      "ko": "짖는 개들 때문에 나는 밤새 깨어 있었어요.",
       "a": [
         "Die bellenden Hunde haben mich die ganze Nacht wach gehalten.",
         "Die ganze Nacht haben mich die bellenden Hunde wach gehalten.",
         "Mich haben die bellenden Hunde die ganze Nacht wach gehalten.",
-        "Die ganze Nacht haben die bellenden Hunde mich wach gehalten."
+        "Die ganze Nacht haben die bellenden Hunde mich wach gehalten.",
+        "Mich haben die ganze Nacht die bellenden Hunde wach gehalten."
       ],
       "e": "현재분사 bellend는 관사와 명사 사이에 오고 어미가 붙어요 → die bellenden Hunde.<br>haben이 두 번째 자리, 과거분사 gehalten이 끝이에요."
     },
@@ -246,7 +247,9 @@
       "ko": "몇 시간째 승강장에서 기다리고 있는 남자가 제 삼촌이에요.",
       "a": [
         "Der seit Stunden am Gleis wartende Mann ist mein Onkel.",
-        "Der am Gleis seit Stunden wartende Mann ist mein Onkel."
+        "Der am Gleis seit Stunden wartende Mann ist mein Onkel.",
+        "Mein Onkel ist der seit Stunden am Gleis wartende Mann.",
+        "Mein Onkel ist der am Gleis seit Stunden wartende Mann."
       ],
       "e": "관사 der와 명사 Mann 사이에 설명(seit Stunden am Gleis)이 들어가고, 명사 바로 앞에 현재분사 wartende가 와요."
     },
@@ -295,7 +298,7 @@
       "lv": 2,
       "t": "fill",
       "q": "Den von dir ___ Brief habe ich leider nie bekommen.",
-      "ko": "네가 보낸 편지를 나는 결국 받지 못했어요.",
+      "ko": "네가 보낸 편지를 나는 안타깝게도 한 번도 받지 못했어요.",
       "h": "schicken",
       "a": [
         "geschickten"

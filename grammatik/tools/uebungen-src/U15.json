@@ -35,13 +35,13 @@
     {
       "lv": 1,
       "t": "fill",
-      "q": "Ein Vogel sitzt auf ___ Dach.",
-      "ko": "새 한 마리가 지붕 위에 앉아 있어요.",
-      "h": "Dach · 중성",
+      "q": "Das Taxi wartet vor ___ Hotel.",
+      "ko": "택시가 호텔 앞에서 기다려요.",
+      "h": "Hotel · 중성",
       "a": [
         "dem"
       ],
-      "e": "sitzen(앉아 있다)은 위치(Wo?)라서 3격이에요 — auf dem Dach."
+      "e": "wartet은 한곳에 머무는 상태(Wo?)라서 3격이에요.<br>vor는 '~ 앞에'이고, 중성 3격은 dem이에요 — vor dem Hotel."
     },
     {
       "lv": 1,
@@ -234,7 +234,7 @@
       "lv": 2,
       "t": "fill",
       "q": "Wohin hast du den Schlüssel gelegt? — Neben ___ Telefon. — Da ___ er nicht!",
-      "ko": "열쇠를 어디에 놓았어? — 전화기 옆에. — 거기 없는데!",
+      "ko": "열쇠를 어디에 놓았어요? — 전화기 옆에요. — 거기 없는데요!",
       "h": [
         "Telefon · 중성",
         "liegen / legen"
@@ -249,7 +249,7 @@
       "lv": 2,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "우유를 냉장고에 넣어 줘!",
+      "ko": "우유를 냉장고에 넣어 주세요.",
       "a": [
         "Stell die Milch bitte in den Kühlschrank!",
         "Stell bitte die Milch in den Kühlschrank!",
@@ -269,7 +269,7 @@
         "zum Wochenmarkt"
       ],
       "a": 0,
-      "e": "시장은 auf로 가고(auf den Markt) auf에 있고(auf dem Markt) von으로 와요.<br>von + dem → vom Wochenmarkt."
+      "e": "시장은 가는 곳이 auf den Markt, 있는 곳이 auf dem Markt, 온 곳이 vom Markt예요.<br>von + dem → vom Wochenmarkt."
     },
     {
       "lv": 2,
@@ -376,7 +376,7 @@
       "lv": 3,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "주말에 어디 가?",
+      "ko": "주말에 어디로 가요?",
       "a": [
         "Wo fährst du am Wochenende hin?"
       ],
@@ -393,7 +393,7 @@
         "hinauf"
       ],
       "a": 0,
-      "e": "손전등이 아래에 있는 나(말하는 사람) 쪽으로 오니까 her-예요.<br>위에서 아래로 오니까 herunter예요."
+      "e": "나는 지하실(아래)에 있고, 손전등이 나 쪽으로 와야 하니까 her-예요.<br>위에서 아래로 오니까 herunter예요."
     }
   ]
 }

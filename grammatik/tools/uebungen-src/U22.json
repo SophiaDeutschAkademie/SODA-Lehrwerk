@@ -25,7 +25,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Kennst du ___ Restaurant am Marktplatz?",
-      "ko": "시장 광장에 있는 이 식당 알아?",
+      "ko": "시장 광장에 있는 이 식당 알아요?",
       "h": "dies- · Restaurant · 중성",
       "a": [
         "dieses"
@@ -73,7 +73,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Was für ___ Hund habt ihr? — Einen Dackel.",
-      "ko": "너희는 어떤 개를 키워? — 닥스훈트.",
+      "ko": "너희는 어떤 개를 키워요? — 닥스훈트요.",
       "h": "Hund · 남성",
       "a": [
         "einen"
@@ -146,7 +146,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Ich brauche ein Ladekabel. Hast du ___?",
-      "ko": "충전 케이블이 필요해. 하나 있어?",
+      "ko": "충전 케이블이 필요해요. 하나 있어요?",
       "h": "Ladekabel · 중성",
       "a": [
         [
@@ -160,7 +160,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Brauchen wir noch Servietten? — Ja, wir haben ___ mehr.",
-      "ko": "냅킨이 더 필요해? — 응, 이제 하나도 없어.",
+      "ko": "냅킨이 더 필요해요? — 네, 이제 하나도 없어요.",
       "h": "",
       "a": [
         "keine"
@@ -171,7 +171,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Hast du Briefmarken? Ich brauche ___ für die Postkarten.",
-      "ko": "우표 있어? 엽서에 붙일 게 몇 장 필요해.",
+      "ko": "우표 있어요? 엽서에 붙일 게 몇 장 필요해요.",
       "h": "",
       "a": [
         "welche"
@@ -194,7 +194,7 @@
       "lv": 1,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "너희 아버지는 어떤 영화를 즐겨 보셔?",
+      "ko": "너희 아버지는 어떤 영화를 즐겨 보세요?",
       "a": [
         "Was für Filme sieht dein Vater gern?"
       ],
@@ -203,7 +203,7 @@
     {
       "lv": 2,
       "t": "mc",
-      "q": "In ___ Haus wohnt ihr? — In einem Altbau.",
+      "q": "In ___ Haus wohnt ihr? (어떤 종류의 집?) — In einem Altbau.",
       "o": [
         "was für einem",
         "was für eines",
@@ -240,7 +240,7 @@
       "lv": 2,
       "t": "fill",
       "q": "Wie findest du den Kuchen? — ___ hat meine Oma gebacken.",
-      "ko": "그 케이크 어때? — 그거 우리 할머니가 구우셨어.",
+      "ko": "그 케이크 어때요? — 그건 우리 할머니가 구우셨어요.",
       "h": "지시대명사",
       "a": [
         "Den"
@@ -250,8 +250,8 @@
     {
       "lv": 2,
       "t": "fill",
-      "q": "In was für ___ Firma arbeitet deine Schwester? — In einem Start-up.",
-      "ko": "너희 언니는 어떤 회사에서 일해? — 스타트업에서.",
+      "q": "In was für ___ Firma arbeitet deine Kollegin? — In einem Start-up.",
+      "ko": "네 동료는 어떤 회사에서 일해요? — 스타트업에서요.",
       "h": "Firma · 여성",
       "a": [
         "einer"
@@ -312,7 +312,7 @@
       "lv": 3,
       "t": "fill",
       "q": "A: Ich brauche einen Regenschirm. Hast du ___?\nB: Leider nicht, ich habe selbst ___. Aber frag Jonas. ___ hat bestimmt ___.",
-      "ko": "A: 우산이 필요해. 하나 있어?\nB: 아니, 나도 없어. 그런데 요나스한테 물어봐. 걔는 분명 하나 있을 거야.",
+      "ko": "A: 우산이 필요해요. 하나 있어요?\nB: 아니요, 저도 없어요. 그런데 요나스한테 물어봐요. 그 애는 분명 하나 있을 거예요.",
       "h": [
         "Regenschirm · 남성",
         "",
@@ -367,6 +367,7 @@
       "a": [
         "Von diesen Leuten kenne ich niemanden.",
         "Ich kenne von diesen Leuten niemanden.",
+        "Ich kenne niemanden von diesen Leuten",
         "Niemanden kenne ich von diesen Leuten"
       ],
       "e": "von은 3격 전치사라서 diesen Leuten(복수 3격 -en, 명사 -n)이에요.<br>kennen의 목적어는 4격이라 niemanden이에요."

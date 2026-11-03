@@ -259,7 +259,7 @@
     {
       "lv": 2,
       "t": "mc",
-      "q": "Ich habe ___ Lehrerin. ___ Lehrerin ist nett.",
+      "q": "'저에게 선생님이 한 분 계세요. 그 선생님은 친절해요.'\nIch habe ___ Lehrerin. ___ Lehrerin ist nett.",
       "o": [
         "eine … Die",
         "eine … Eine",
@@ -424,13 +424,12 @@
       "lv": 2,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "저기 시계가 하나 있어요. 그 시계는 오래됐어요.",
+      "ko": "그 의사는 한국인이고 프랑스어를 배워요.",
       "a": [
-        "Da ist eine Uhr. Die Uhr ist alt.",
-        "Eine Uhr ist da. Die Uhr ist alt."
+        "Die Ärztin ist Koreanerin und lernt Französisch.",
+        "Die Ärztin lernt Französisch und ist Koreanerin"
       ],
-      "e": "처음 말하는 시계는 부정관사 eine, 다시 가리키는 시계는 정관사 die를 써요.",
-      "ok": "Uhr는 물건 '시계'(명사), 시각 표현 아님"
+      "e": "국적 Koreanerin과 언어 Französisch는 관사 없이 써요.<br>명사는 문장 가운데서도 대문자로 써요."
     }
   ]
 }

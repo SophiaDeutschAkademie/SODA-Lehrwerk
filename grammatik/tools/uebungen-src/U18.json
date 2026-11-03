@@ -107,7 +107,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Hast du Angst ___ ___ Prüfung?",
-      "ko": "너 그 시험이 무서워?",
+      "ko": "그 시험이 무서워요?",
       "h": [
         "",
         "Prüfung · 여성"
@@ -163,7 +163,7 @@
       "lv": 1,
       "t": "fill",
       "q": "___ sprecht ihr? — Über das Konzert.",
-      "ko": "너희 무엇에 대해 이야기해? — 그 콘서트에 대해서.",
+      "ko": "너희는 무엇에 대해 이야기해요? — 그 콘서트에 대해서요.",
       "h": "über · 사물을 묻는 말",
       "a": [
         "Worüber"
@@ -223,7 +223,7 @@
       "lv": 2,
       "t": "fill",
       "q": "Gibst du mir den Schlüssel? — Ja, ich gebe ___ ___ gleich.",
-      "ko": "열쇠 줄래? — 응, 바로 줄게.",
+      "ko": "열쇠 좀 줄래요? — 네, 바로 줄게요.",
       "h": [
         "den Schlüssel",
         "mir"
@@ -242,13 +242,13 @@
       "lv": 2,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "웨이터가 손님들에게 생선을 추천해요.",
+      "ko": "의사가 환자들에게 산책을 권해요.",
       "a": [
-        "Der Kellner empfiehlt den Gästen den Fisch.",
-        "Den Gästen empfiehlt der Kellner den Fisch.",
-        "Den Fisch empfiehlt der Kellner den Gästen"
+        "Die Ärztin empfiehlt den Patienten einen Spaziergang.",
+        "Den Patienten empfiehlt die Ärztin einen Spaziergang.",
+        "Einen Spaziergang empfiehlt die Ärztin den Patienten."
       ],
-      "e": "명사 목적어가 둘이면 3격(den Gästen) → 4격(den Fisch) 순서예요.<br>empfehlen은 er에서 empfiehlt가 돼요."
+      "e": "명사 목적어가 둘이면 3격(den Patienten) → 4격(einen Spaziergang) 순서예요.<br>empfehlen은 er·sie에서 empfiehlt가 돼요."
     },
     {
       "lv": 2,
@@ -298,7 +298,7 @@
       "lv": 2,
       "t": "fill",
       "q": "Mit ___ telefonierst du so lange? — Mit meiner Oma.",
-      "ko": "누구랑 그렇게 오래 통화해? — 할머니랑.",
+      "ko": "누구랑 그렇게 오래 통화해요? — 할머니랑요.",
       "h": "사람을 묻는 말",
       "a": [
         "wem"
@@ -362,7 +362,7 @@
       "lv": 3,
       "t": "fill",
       "q": "Hallo Jonas,\nvielen Dank ___ die Postkarte! Sie gefällt ___ sehr. Ich denke jeden Tag ___ unsere Zeit in Wien. ___ dir gut?",
-      "ko": "요나스, 엽서 정말 고마워! 아주 마음에 들어. 빈에서 보낸 우리 시간을 매일 생각해. 잘 지내?",
+      "ko": "요나스, 엽서 정말 고마워요! 아주 마음에 들어요. 빈에서 보낸 우리 시간을 매일 생각해요. 잘 지내요?",
       "h": [
         "",
         "ich",
@@ -380,7 +380,8 @@
           "an"
         ],
         [
-          "Geht es"
+          "Geht es",
+          "Geht's"
         ]
       ],
       "e": "Dank für + 4격 · gefallen + 3격 mir · denken an + 4격이에요.<br>안부는 es geht + 3격 — Geht es dir gut?"
@@ -389,7 +390,7 @@
       "lv": 3,
       "t": "fill",
       "q": "Hast du schon mit Frau Weber über den Plan gesprochen? — Ja, ich habe gestern ___ ___ gesprochen.",
-      "ko": "베버 씨와 그 계획에 대해 벌써 이야기했어? — 응, 어제 그녀와 그것에 대해 이야기했어.",
+      "ko": "베버 씨와 그 계획에 대해 벌써 이야기했어요? — 네, 어제 그분과 그것에 대해 이야기했어요.",
       "h": [
         "Frau Weber",
         "den Plan"
@@ -433,8 +434,8 @@
     {
       "lv": 3,
       "t": "fill",
-      "q": "Ich habe ___ Nachbarin ___ Hilfe gebeten.",
-      "ko": "나는 옆집 여자분께 도움을 부탁했어요.",
+      "q": "Ich bitte ___ Nachbarin ___ Hilfe.",
+      "ko": "나는 옆집 여자분께 도움을 부탁해요.",
       "h": [
         "die Nachbarin · 여성",
         ""

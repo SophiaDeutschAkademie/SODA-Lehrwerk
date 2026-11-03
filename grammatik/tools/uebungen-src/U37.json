@@ -15,7 +15,7 @@
       "o": [
         "wohingegen",
         "dagegen",
-        "zumal",
+        "bevor",
         "folglich"
       ],
       "a": 0,
@@ -168,7 +168,7 @@
       "q": "'전문가들에 따르면 월세가 계속 오를 거예요.'",
       "o": [
         "Den Experten zufolge werden die Mieten weiter steigen.",
-        "Zufolge den Experten werden die Mieten weiter steigen.",
+        "Den Experten zufolge die Mieten weiter steigen werden.",
         "Zufolge der Experten werden die Mieten weiter steigen.",
         "Den Experten zufolge die Mieten werden weiter steigen."
       ],
@@ -184,7 +184,8 @@
       "a": [
         [
           "das",
-          "am"
+          "am",
+          "an dem"
         ]
       ],
       "e": "entlang이 명사 뒤에 오면 4격이에요 → das Ufer entlang.<br>an + 3격과 함께 쓴 am Ufer entlang도 자주 써요."
@@ -210,7 +211,8 @@
       "a": [
         "Ich dagegen wohne mitten in der Stadt.",
         "Dagegen wohne ich mitten in der Stadt.",
-        "Ich wohne dagegen mitten in der Stadt."
+        "Ich wohne dagegen mitten in der Stadt.",
+        "Mitten in der Stadt wohne ich dagegen."
       ],
       "e": "dagegen이 첫 자리면 바로 뒤에 동사가 와요. 주어 바로 뒤(Ich dagegen)나 동사 뒤에도 놓을 수 있어요."
     },
@@ -225,7 +227,10 @@
       ],
       "a": [
         "Während",
-        "seiner"
+        [
+          "seiner",
+          "der"
+        ]
       ],
       "e": "접속사 während를 전치사 während + 2격으로 바꿔요 → während seiner Zeit."
     },
@@ -277,7 +282,8 @@
       "ko": "우리는 택시를 탈 거예요, 게다가 벌써 늦었으니까요.",
       "a": [
         "Wir nehmen ein Taxi, zumal es schon spät ist.",
-        "Ein Taxi nehmen wir, zumal es schon spät ist"
+        "Ein Taxi nehmen wir, zumal es schon spät ist",
+        "Wir nehmen, zumal es schon spät ist, ein Taxi."
       ],
       "e": "zumal은 종속접속사라서 동사 ist가 맨 끝에 와요."
     },
@@ -411,8 +417,13 @@
       "ko": "여기는 겨울에는 조용한 반면 여름에는 관광객이 많이 와요.",
       "a": [
         "Im Winter ist es hier ruhig, wohingegen im Sommer viele Touristen kommen.",
+        "Im Winter ist es hier ruhig, wohingegen viele Touristen im Sommer kommen.",
         "Hier ist es im Winter ruhig, wohingegen im Sommer viele Touristen kommen.",
-        "Es ist hier im Winter ruhig, wohingegen im Sommer viele Touristen kommen."
+        "Hier ist es im Winter ruhig, wohingegen viele Touristen im Sommer kommen.",
+        "Es ist hier im Winter ruhig, wohingegen im Sommer viele Touristen kommen.",
+        "Es ist hier im Winter ruhig, wohingegen viele Touristen im Sommer kommen.",
+        "Es ist im Winter hier ruhig, wohingegen im Sommer viele Touristen kommen.",
+        "Es ist im Winter hier ruhig, wohingegen viele Touristen im Sommer kommen."
       ],
       "e": "주문장은 동사가 두 번째, wohingegen 뒤는 동사 kommen이 맨 끝이에요."
     },

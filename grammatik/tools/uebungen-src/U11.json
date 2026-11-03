@@ -53,7 +53,7 @@
       "lv": 1,
       "t": "fill",
       "q": "___ du bitte den Kühlschrank ___?",
-      "ko": "냉장고 좀 열어 줄래?",
+      "ko": "냉장고 좀 열어 줄래요?",
       "h": [
         "aufmachen",
         ""
@@ -157,7 +157,7 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "(친구에게) '라디오 좀 꺼 줘!' (ausmachen)",
+      "q": "(친구에게) '라디오 좀 꺼 줘요!' (ausmachen)",
       "o": [
         "Mach bitte das Radio aus!",
         "Ausmach bitte das Radio!",
@@ -207,7 +207,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Was ___ du heute Abend ___?",
-      "ko": "오늘 저녁에 뭐 할 계획이야?",
+      "ko": "오늘 저녁에 뭐 할 계획이에요?",
       "h": [
         "vorhaben",
         ""
@@ -221,7 +221,7 @@
     {
       "lv": 2,
       "t": "mc",
-      "q": "'내일 여동생을 데려올 수 있어?' (mitbringen)",
+      "q": "'내일 여동생을 데려올 수 있어요?' (mitbringen)",
       "o": [
         "Kannst du morgen deine Schwester mitbringen?",
         "Kannst du morgen deine Schwester bringen mit?",
@@ -235,7 +235,7 @@
       "lv": 2,
       "t": "fill",
       "q": "___ jetzt das Licht ___! Es ist schon spät.",
-      "ko": "(아이들에게) 너희 이제 불 꺼! 벌써 늦었어.",
+      "ko": "(아이들에게) 이제 불을 꺼요! 벌써 늦었어요.",
       "h": [
         "ausmachen · ihr에게 명령",
         ""
@@ -253,7 +253,7 @@
       "o": [
         "Ich komme morgen wieder.",
         "Ich wiederkomme morgen.",
-        "Ich komme wieder morgen.",
+        "Ich komme morgen wiederkommen.",
         "Ich wiederhole morgen."
       ],
       "a": 0,
@@ -306,7 +306,7 @@
       "lv": 2,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "너는 오늘 네 방을 정리해야 해.",
+      "ko": "너는 오늘 네 방을 정리해야 해요.",
       "a": [
         "Du musst heute dein Zimmer aufräumen.",
         "Heute musst du dein Zimmer aufräumen.",
@@ -319,7 +319,7 @@
       "lv": 2,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "너 오늘 저녁에 같이 갈래?",
+      "ko": "너 오늘 저녁에 같이 갈래요?",
       "a": [
         "Kommst du heute Abend mit?"
       ],
@@ -383,7 +383,7 @@
     {
       "lv": 3,
       "t": "mc",
-      "q": "(친구에게) '이 편지를 끝까지 읽어 봐!' (durchlesen)",
+      "q": "(친구 한 명에게) '이 편지를 끝까지 읽어 봐요!' (durchlesen)",
       "o": [
         "Lies den Brief durch!",
         "Durchlies den Brief!",
@@ -397,7 +397,7 @@
       "lv": 3,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "너는 왜 오늘 아버지께 전화하지 않아?",
+      "ko": "너는 왜 오늘 아버지께 전화하지 않아요?",
       "a": [
         "Warum rufst du deinen Vater heute nicht an?",
         "Warum rufst du heute deinen Vater nicht an?"
@@ -408,7 +408,7 @@
       "lv": 3,
       "t": "fill",
       "q": "„___ ihr morgen ___?“ – „Nein, wir ___ leider nicht ___. Wir besuchen unsere Großeltern.“",
-      "ko": "\"너희 내일 같이 갈래?\" – \"아니, 아쉽지만 같이 못 가. 우리는 조부모님 댁을 방문해.\"",
+      "ko": "\"너희 내일 같이 갈래요?\" – \"아니요, 아쉽지만 같이 못 가요. 우리는 조부모님 댁을 방문해요.\"",
       "h": [
         "mitkommen",
         "",

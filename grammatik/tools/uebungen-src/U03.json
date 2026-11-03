@@ -194,7 +194,8 @@
       "a": [
         "Ich bringe der Oma einen Kuchen.",
         "Einen Kuchen bringe ich der Oma",
-        "Der Oma bringe ich einen Kuchen"
+        "Der Oma bringe ich einen Kuchen",
+        "Ich bringe einen Kuchen der Oma"
       ],
       "e": "명사 목적어가 둘이면 3격(der Oma) → 4격(einen Kuchen) 순서예요."
     },
@@ -387,7 +388,12 @@
       ],
       "a": [
         "den",
-        "die",
+        [
+          "die",
+          "-",
+          "–",
+          "—"
+        ],
         "der"
       ],
       "e": "받는 사람은 복수 3격 den Kindern, 보여 주는 것은 복수 4격 die Bilder예요.<br>'화가의'는 여성 2격 der Künstlerin이에요. 같은 복수라도 격에 따라 den과 die로 갈려요."

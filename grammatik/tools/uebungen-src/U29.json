@@ -188,7 +188,7 @@
       "lv": 1,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "역 옆에 문을 연 빵집 알아?",
+      "ko": "역 옆에 새로 문을 연 빵집을 알아요?",
       "a": [
         "Kennst du die Bäckerei, die neben dem Bahnhof aufgemacht hat?"
       ],
@@ -266,12 +266,12 @@
       "q": "Sie hat endlich eine Wohnung gefunden, ___ uns alle sehr freut.",
       "o": [
         "was",
-        "das",
-        "die",
-        "dass"
+        "dass",
+        "wo",
+        "der"
       ],
       "a": 0,
-      "e": "앞 문장 전체(집을 구한 일)를 받을 때는 was예요.<br>die라면 Wohnung이 우리를 기쁘게 한다는 뜻이 돼요."
+      "e": "앞 문장 전체(집을 구한 일)를 받을 때는 was예요.<br>dass는 관계사가 아니라 접속사라서 이 자리에 맞지 않아요."
     },
     {
       "lv": 2,
@@ -295,7 +295,12 @@
         "Ich habe den Mann gestern gesehen, der früher hier gewohnt hat",
         "Den Mann, der früher hier gewohnt hat, habe ich gestern gesehen",
         "Ich habe gestern den Mann gesehen, der hier früher gewohnt hat",
-        "Gestern habe ich den Mann gesehen, der hier früher gewohnt hat"
+        "Gestern habe ich den Mann gesehen, der hier früher gewohnt hat",
+        "Ich habe den Mann, der früher hier gewohnt hat, gestern gesehen",
+        "Gestern habe ich den Mann, der früher hier gewohnt hat, gesehen",
+        "Ich habe gestern den Mann, der früher hier gewohnt hat, gesehen",
+        "Den Mann, der hier früher gewohnt hat, habe ich gestern gesehen",
+        "Ich habe den Mann gestern gesehen, der hier früher gewohnt hat"
       ],
       "e": "주문장 끝에 gesehen만 남으면 관계문을 그 뒤로 빼는 게 자연스러워요."
     },

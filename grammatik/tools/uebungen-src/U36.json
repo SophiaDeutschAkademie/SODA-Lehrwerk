@@ -60,7 +60,7 @@
       "lv": 1,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "수리비는 아마 많이 들지 않을 거예요.",
+      "ko": "그 수리는 아마 비용이 많이 들지 않을 거예요.",
       "a": [
         "Die Reparatur dürfte nicht viel kosten."
       ],
@@ -137,7 +137,7 @@
       "q": "Sie dürfte schon zu Hause sein. = Sie ist ___ schon zu Hause.",
       "o": [
         "wahrscheinlich",
-        "bestimmt",
+        "vielleicht",
         "sicher nicht",
         "kaum"
       ],
@@ -338,7 +338,7 @@
       "h": [
         "",
         "",
-        "",
+        "가능성",
         ""
       ],
       "a": [

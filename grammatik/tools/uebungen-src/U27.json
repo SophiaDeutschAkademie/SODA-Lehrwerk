@@ -43,10 +43,11 @@
       "a": [
         [
           "Während",
-          "Solange"
+          "Solange",
+          "Als"
         ]
       ],
-      "e": "휴가 기간과 같은 때에 일어난 일이라서 während예요.<br>'그동안 내내'라는 뜻으로 solange도 돼요."
+      "e": "휴가 기간과 같은 때에 일어난 일이라서 während예요.<br>'그동안 내내'라는 뜻으로 solange도, 과거의 한 시기를 말하는 als도 돼요."
     },
     {
       "lv": 1,
@@ -77,7 +78,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Bleib bitte im Auto, ___ ich zurück bin.",
-      "ko": "내가 돌아올 때까지 차에 있어.",
+      "ko": "내가 돌아올 때까지 차에 있어 주세요.",
       "h": "~할 때까지",
       "a": [
         "bis"
@@ -202,7 +203,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Ruf mich bitte an, ___ dein Zug in Köln ankommt.",
-      "ko": "기차가 쾰른에 도착하면 전화해 줘.",
+      "ko": "기차가 쾰른에 도착하면 전화해 주세요.",
       "h": "",
       "a": [
         [
@@ -270,7 +271,7 @@
     {
       "lv": 2,
       "t": "mc",
-      "q": "'일이 끝나자마자 너한테 갈게.'",
+      "q": "'일이 끝나자마자 너한테 갈게요.'",
       "o": [
         "Sobald ich mit der Arbeit fertig bin, komme ich zu dir.",
         "Sobald ich mit der Arbeit fertig bin, ich komme zu dir.",
@@ -428,7 +429,7 @@
       "lv": 3,
       "t": "fill",
       "q": "___ hast du Zeit? – ___ ich morgen früher Feierabend habe, rufe ich dich an. Letzte Woche, ___ du angerufen hast, war ich leider beim Sport.",
-      "ko": "언제 시간 있어? – 내일 일찍 퇴근하면 전화할게. 지난주에 네가 전화했을 때는 아쉽게도 운동 중이었어.",
+      "ko": "언제 시간 있어요? – 내일 일찍 퇴근하면 전화할게요. 지난주에 네가 전화했을 때는 아쉽게도 운동 중이었어요.",
       "h": [
         "",
         "",
@@ -439,13 +440,14 @@
           "Wann"
         ],
         [
-          "Wenn"
+          "Wenn",
+          "Sobald"
         ],
         [
           "als"
         ]
       ],
-      "e": "질문 '언제'는 wann, 미래의 조건·때는 wenn, 과거의 한 번은 als예요."
+      "e": "질문 '언제'는 wann, 미래의 조건·때는 wenn(sobald도 돼요), 과거의 한 번은 als예요."
     }
   ]
 }

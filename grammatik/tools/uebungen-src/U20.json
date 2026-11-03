@@ -34,7 +34,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Ich bin froh, dass du die Stelle bekommen ___.",
-      "ko": "네가 그 일자리를 얻게 돼서 기뻐.",
+      "ko": "네가 그 일자리를 얻어서 기뻐요.",
       "h": "haben",
       "a": [
         "hast"
@@ -71,7 +71,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Weißt du, ___ der Laden am Sonntag offen ist?",
-      "ko": "그 가게가 일요일에 여는지 알아?",
+      "ko": "그 가게가 일요일에 여는지 알아요?",
       "h": "",
       "a": [
         "ob"
@@ -111,6 +111,7 @@
         "Weil der Drucker kaputt ist, drucke ich die Fotos im Büro.",
         "Ich drucke die Fotos im Büro, weil der Drucker kaputt ist",
         "Die Fotos drucke ich im Büro, weil der Drucker kaputt ist",
+        "Ich drucke im Büro die Fotos, weil der Drucker kaputt ist",
         "Im Büro drucke ich die Fotos, weil der Drucker kaputt ist",
         "Weil der Drucker kaputt ist, drucke ich im Büro die Fotos"
       ],
@@ -120,7 +121,7 @@
       "lv": 1,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "열쇠가 어디 있는지 알아?",
+      "ko": "열쇠가 어디 있는지 알아요?",
       "a": [
         "Weißt du, wo der Schlüssel liegt?"
       ],
@@ -130,7 +131,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Kannst du mir sagen, wann die Fähre ___?",
-      "ko": "배가 언제 출발하는지 말해 줄 수 있어?",
+      "ko": "배가 언제 출발하는지 말해 줄 수 있어요?",
       "h": "abfahren",
       "a": [
         "abfährt"
@@ -205,7 +206,7 @@
       "lv": 1,
       "t": "fill",
       "q": "___ du den Bus verpasst, ruf mich an!",
-      "ko": "혹시 버스를 놓치면 전화해!",
+      "ko": "혹시 버스를 놓치면 전화해요!",
       "h": "",
       "a": [
         [
@@ -336,7 +337,10 @@
       "ko": "내가 아는 한 그녀는 지금 라이프치히에 살아요.",
       "h": "",
       "a": [
-        "Soweit"
+        [
+          "Soweit",
+          "Soviel"
+        ]
       ],
       "e": "'내가 아는 한'은 soweit ich weiß예요.<br>종속절이 앞이라 주문장은 동사 wohnt부터예요.",
       "ok": "soweit ich weiß는 연습 대상인 고정 표현, 문장 전체는 새것"
@@ -345,7 +349,7 @@
       "lv": 3,
       "t": "fill",
       "q": "Hallo Tom,\nich weiß nicht, ___ ich am Samstag kommen kann. Ich muss vielleicht arbeiten, ___ meine Kollegin krank ist. ___ sie wieder gesund ist, ___ ich natürlich! Sag mir bitte, ___ die Party beginnt.",
-      "ko": "톰, 토요일에 갈 수 있을지 모르겠어. 동료가 아파서 일해야 할지도 몰라. 동료가 다시 건강해지면 당연히 갈게! 파티가 언제 시작하는지 알려 줘.",
+      "ko": "톰, 토요일에 갈 수 있을지 모르겠어요. 동료가 아파서 일해야 할지도 몰라요. 동료가 다시 건강해지면 당연히 갈게요! 파티가 언제 시작하는지 알려 줘요.",
       "h": [
         "",
         "",
@@ -397,7 +401,8 @@
       "a": [
         "Ich frage mich, warum er sich nicht bei mir entschuldigt hat.",
         "Ich frage mich, warum er sich bei mir nicht entschuldigt hat.",
-        "Warum er sich nicht bei mir entschuldigt hat, frage ich mich"
+        "Warum er sich nicht bei mir entschuldigt hat, frage ich mich",
+        "Warum er sich bei mir nicht entschuldigt hat, frage ich mich"
       ],
       "e": "간접의문문: 의문사 + 주어 + 재귀대명사 … 과거분사 + 보조 동사(맨 끝).<br>sich entschuldigen bei는 18과의 전치사 동사예요."
     },
@@ -418,7 +423,7 @@
       "lv": 3,
       "t": "fill",
       "q": "Hat das Spiel schon angefangen? → Weißt du, ___ das Spiel schon ___ ___?",
-      "ko": "경기가 벌써 시작했는지 알아?",
+      "ko": "경기가 벌써 시작했는지 알아요?",
       "h": [
         "",
         "anfangen",

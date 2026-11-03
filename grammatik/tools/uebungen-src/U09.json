@@ -82,7 +82,7 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "Hast du kein Handy? — (아니, 있어) ___, hier ist es.",
+      "q": "Hast du kein Handy? — (아니요, 있어요) ___, hier ist es.",
       "o": [
         "Doch",
         "Ja",
@@ -155,13 +155,13 @@
     {
       "lv": 1,
       "t": "fill",
-      "q": "Er kauft heute ___.",
-      "ko": "그는 오늘 아무것도 안 사요.",
+      "q": "Mia isst ___ Fisch.",
+      "ko": "미아는 생선을 한 번도 안 먹어요.",
       "h": "",
       "a": [
-        "nichts"
+        "nie"
       ],
-      "e": "'아무것도 ~ 않다'는 nichts예요. etwas의 반대말이에요."
+      "e": "'한 번도 ~ 않다'는 nie예요. nie에 이미 부정의 뜻이 있어서 nicht를 더 붙이지 않아요."
     },
     {
       "lv": 1,
@@ -201,7 +201,7 @@
     {
       "lv": 2,
       "t": "mc",
-      "q": "Gehst du heute nicht ins Kino? — (응, 안 가) ___, ich bleibe zu Hause.",
+      "q": "Arbeitest du heute nicht? — (네, 안 해요) ___, ich bleibe zu Hause.",
       "o": [
         "Nein",
         "Ja",
@@ -209,7 +209,7 @@
         "Kein"
       ],
       "a": 0,
-      "e": "독일어 Ja/Nein은 문장의 내용에 맞춰요. 안 가는 게 맞으니까 Nein이에요.<br>한국어 '응'에 끌려 Ja를 쓰지 않아요."
+      "e": "독일어 Ja/Nein은 문장의 내용에 맞춰요. 일하지 않는 게 맞으니까 Nein이에요.<br>한국어 말버릇에 끌려 Ja를 쓰지 않아요."
     },
     {
       "lv": 2,
@@ -229,7 +229,7 @@
       "q": "Ich finde ___ Schlüssel ___.",
       "ko": "내 열쇠를 못 찾겠어요.",
       "h": [
-        "ich · Schlüssel 남성",
+        "ich의 소유관사 · Schlüssel 남성",
         ""
       ],
       "a": [
@@ -254,17 +254,17 @@
     {
       "lv": 2,
       "t": "fill",
-      "q": "Das ist ___ Tee, ___ Kaffee.",
-      "ko": "이건 차가 아니라 커피예요.",
+      "q": "Das ist ___ Tasse, ___ ein Glas.",
+      "ko": "이건 컵이 아니라 유리잔이에요.",
       "h": [
-        "Tee · 남성",
+        "Tasse · 여성",
         ""
       ],
       "a": [
-        "kein",
+        "keine",
         "sondern"
       ],
-      "e": "관사 없는 명사 Tee는 kein으로 부정해요. 남성 1격이라 끝이 없어요.<br>앞의 부정을 바로잡을 때는 sondern이에요."
+      "e": "관사 없이 쓰는 말이 아니라 ein이 붙는 명사 eine Tasse를 부정하니까 kein이에요. 여성 1격이라 keine예요.<br>앞의 부정을 바로잡을 때는 sondern이에요."
     },
     {
       "lv": 2,
@@ -322,7 +322,7 @@
       "lv": 3,
       "t": "fill",
       "q": "A: Ist Tom nicht zu Hause? — B: ___, er ist im Garten.\nA: Und Sara? Ist sie da? — B: ___, sie ist ___ da.\nA: Hat Tom ___ Zeit? — B: ___, er hat Zeit.",
-      "ko": "톰 집에 없어? — 아니, 정원에 있어. / 그럼 사라는? 사라는 있어? — 아니, 사라는 없어. / 톰 시간 없어? — 아니, 시간 있어.",
+      "ko": "톰은 집에 없어요? — 아니요, 정원에 있어요. / 그럼 사라는요? 사라는 있어요? — 아니요, 사라는 없어요. / 톰은 시간이 없어요? — 아니요, 시간 있어요.",
       "h": [
         "",
         "",
@@ -337,7 +337,7 @@
         "keine",
         "Doch"
       ],
-      "e": "부정 질문을 뒤집어 '있다'고 답할 때는 Doch예요.<br>긍정 질문에 '없다'고 답하면 Nein + nicht, 관사 없는 Zeit는 keine로 부정해요."
+      "e": "부정 질문을 뒤집어 '있다'고 답할 때는 Doch예요.<br>긍정 질문에 '없다'고 답하면 Nein이고, 이어서 nicht로 부정해요. 관사 없는 Zeit를 부정하면 keine예요."
     },
     {
       "lv": 3,

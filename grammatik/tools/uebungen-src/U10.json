@@ -23,7 +23,7 @@
       "lv": 1,
       "t": "fill",
       "q": "___ ihr heute Abend kochen?",
-      "ko": "너희 오늘 저녁에 요리해야 해?",
+      "ko": "너희 오늘 저녁에 요리해야 해요?",
       "h": "müssen",
       "a": [
         "Müsst"
@@ -34,7 +34,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Du ___ hier nicht schwimmen. Das Wasser ist sehr tief.",
-      "ko": "여기서 수영하면 안 돼. 물이 아주 깊어.",
+      "ko": "여기서 수영하면 안 돼요. 물이 아주 깊어요.",
       "h": "dürfen",
       "a": [
         "darfst"
@@ -56,7 +56,7 @@
       "lv": 1,
       "t": "fill",
       "q": "___ Sie noch etwas Wasser?",
-      "ko": "물을 좀 더 드릴까요?",
+      "ko": "물을 좀 더 드시겠어요?",
       "h": "möchten",
       "a": [
         "Möchten"
@@ -179,7 +179,7 @@
       "lv": 1,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "오늘 내 아들 좀 도와줄 수 있어?",
+      "ko": "오늘 내 아들 좀 도와줄 수 있어요?",
       "a": [
         "Kannst du heute meinem Sohn helfen?",
         "Kannst du meinem Sohn heute helfen?"
@@ -200,7 +200,7 @@
       "lv": 2,
       "t": "fill",
       "q": "„___ du am Samstag mit mir kommen?“ – „Nein, ich ___ leider arbeiten.“",
-      "ko": "\"토요일에 나랑 같이 갈 수 있어?\" – \"아니, 아쉽지만 일해야 해.\"",
+      "ko": "\"토요일에 나랑 같이 갈 수 있어요?\" – \"아니요, 아쉽지만 일해야 해요.\"",
       "h": [
         "können",
         "müssen"
@@ -228,7 +228,7 @@
       "lv": 2,
       "t": "fill",
       "q": "Es ist schon elf Uhr. Du ___ nach Hause.",
-      "ko": "벌써 11시야. 너는 집에 가야 해.",
+      "ko": "벌써 11시예요. 너는 집에 가야 해요.",
       "h": "müssen",
       "a": [
         "musst"
@@ -252,7 +252,7 @@
       "lv": 2,
       "t": "fill",
       "q": "Oma schläft. Ihr ___ jetzt nicht laut spielen.",
-      "ko": "할머니가 주무셔. 너희 지금 시끄럽게 놀면 안 돼.",
+      "ko": "할머니가 주무세요. 너희 지금 시끄럽게 놀면 안 돼요.",
       "h": "dürfen",
       "a": [
         "dürft"
@@ -263,7 +263,7 @@
       "lv": 2,
       "t": "order",
       "q": "단어를 알맞은 순서로 놓으세요.",
-      "ko": "너희는 언제 집에 가야 해?",
+      "ko": "너희는 언제 집에 가야 해요?",
       "a": [
         "Wann müsst ihr nach Hause gehen?"
       ],
@@ -283,7 +283,7 @@
     {
       "lv": 2,
       "t": "mc",
-      "q": "(아이가 떼를 쓰며) '나 지금 초콜릿 먹을래!'",
+      "q": "(아이가 떼를 쓰며) '나 지금 초콜릿 먹을래요!'",
       "o": [
         "Ich will jetzt Schokolade!",
         "Ich möchte jetzt Schokolade, bitte.",
@@ -311,7 +311,7 @@
       "lv": 3,
       "t": "fill",
       "q": "Am Samstag ___ ich leider nicht kommen. Ich habe Fieber. Meine Ärztin sagt, ich ___ zwei Tage zu Hause bleiben. ___ du am Sonntag kommen? Ich ___ dir mein Fotoalbum zeigen.",
-      "ko": "토요일에는 아쉽지만 못 가. 나 열이 나. 의사 선생님이 이틀 동안 집에 있으래. 일요일에 올 수 있어? 너한테 내 사진첩을 보여 주고 싶어.",
+      "ko": "토요일에는 아쉽지만 못 가요. 나 열이 나요. 의사 선생님이 이틀 동안 집에 있으래요. 일요일에 올 수 있어요? 너한테 내 사진첩을 보여 주고 싶어요.",
       "h": [
         "können",
         "sollen",
@@ -346,7 +346,7 @@
       "lv": 3,
       "t": "fill",
       "q": "„Darfst du heute nicht kommen?“ – „___, ich ___ kommen!“",
-      "ko": "\"너 오늘 오면 안 돼?\" – \"아니, 가도 돼!\"",
+      "ko": "\"너 오늘 오면 안 돼요?\" – \"아니요, 가도 돼요!\"",
       "h": [
         "Ja · Nein · Doch",
         "dürfen"

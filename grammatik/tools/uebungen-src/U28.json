@@ -49,7 +49,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Vergiss bitte nicht, den Herd ___!",
-      "ko": "가스레인지 끄는 거 잊지 마!",
+      "ko": "가스레인지 끄는 걸 잊지 마요!",
       "h": "ausschalten",
       "a": [
         "auszuschalten"
@@ -107,7 +107,7 @@
       "lv": 1,
       "t": "fill",
       "q": "___ uns heute Abend Pizza bestellen!",
-      "ko": "오늘 저녁엔 피자 시키자!",
+      "ko": "오늘 저녁엔 피자 시켜요!",
       "h": "lassen",
       "a": [
         [
@@ -161,7 +161,7 @@
     {
       "lv": 1,
       "t": "fill",
-      "q": "Ich kann heute nicht ausgehen, ich habe noch einen Bericht ___.",
+      "q": "Ich kann heute nicht ausgehen, denn ich habe noch einen Bericht ___.",
       "ko": "오늘은 외출할 수 없어요, 아직 보고서를 써야 하거든요.",
       "h": "schreiben",
       "a": [
@@ -188,8 +188,7 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "집 전체를 치울 시간이 없어요.",
       "a": [
-        "Ich habe keine Zeit, die ganze Wohnung aufzuräumen.",
-        "Die ganze Wohnung aufzuräumen habe ich keine Zeit"
+        "Ich habe keine Zeit, die ganze Wohnung aufzuräumen."
       ],
       "e": "Zeit haben 뒤에 zu 부정형이 와요. 목적어 die ganze Wohnung이 앞, aufzuräumen이 끝이에요.",
       "ok": "쉼표 뒤 관사는 zu 부정형의 목적어, 관계문 아님"
@@ -260,7 +259,7 @@
       "lv": 2,
       "t": "fill",
       "q": "Hast du den Schlüssel schon wieder im Auto ___?",
-      "ko": "열쇠를 또 차에 두고 온 거야?",
+      "ko": "열쇠를 또 차에 두고 온 거예요?",
       "h": "lassen",
       "a": [
         "gelassen"
@@ -275,7 +274,7 @@
       "a": [
         "Er steht jeden Tag um fünf auf, um vor der Arbeit zu joggen.",
         "Jeden Tag steht er um fünf auf, um vor der Arbeit zu joggen.",
-        "Er steht um fünf jeden Tag auf, um vor der Arbeit zu joggen",
+        "Um fünf steht er jeden Tag auf, um vor der Arbeit zu joggen",
         "Um vor der Arbeit zu joggen, steht er jeden Tag um fünf auf"
       ],
       "e": "주문장은 분리동사 auf가 끝, 쉼표 뒤에 um … zu joggen이 와요.<br>um fünf(시각)와 um … zu(목적)를 구별해요.",
@@ -387,7 +386,9 @@
         "Statt sich zu beeilen, trinkt er noch in aller Ruhe einen Kaffee.",
         "Statt sich zu beeilen, trinkt er noch einen Kaffee in aller Ruhe",
         "Er trinkt, statt sich zu beeilen, in aller Ruhe noch einen Kaffee",
-        "Er trinkt in aller Ruhe noch einen Kaffee, statt sich zu beeilen"
+        "Er trinkt in aller Ruhe noch einen Kaffee, statt sich zu beeilen",
+        "Er trinkt, statt sich zu beeilen, noch in aller Ruhe einen Kaffee.",
+        "Er trinkt noch in aller Ruhe einen Kaffee, statt sich zu beeilen."
       ],
       "e": "statt … zu 부분이 첫 자리라서 주문장은 동사 trinkt로 시작해요.<br>재귀동사는 sich zu beeilen이에요."
     },
