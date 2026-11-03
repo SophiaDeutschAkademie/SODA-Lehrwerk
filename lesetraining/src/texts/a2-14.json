@@ -101,7 +101,7 @@
       "answer": 1,
       "evidence": "In der Mittagszeit von 13 bis 15 Uhr sollen alle Bewohner Rücksicht nehmen.",
       "pairs": [["Rücksicht nehmen", "an die anderen Leute denken und darum leise sein"]],
-      "explain": "Rücksicht nehmen은 '다른 사람을 배려하다'라는 뜻이에요. 이 시간에 아이와 어르신이 자기 때문에 조용히 하라는 말이에요. 쪽지로 알리는 것은 파티 규칙이고, 낮잠을 자는 사람은 주민 자신이 아니라 아이와 어르신이에요."
+      "explain": "Rücksicht nehmen은 '다른 사람을 배려하다'라는 뜻이에요. 이 시간에는 아이와 어르신이 낮잠을 자니까 조용히 하라는 말이에요. 쪽지로 알리는 것은 파티 규칙이고, 낮잠을 자는 사람은 주민 자신이 아니라 아이와 어르신이에요."
     },
     {
       "type": "mc",
@@ -140,15 +140,15 @@
       "answer": 1,
       "evidence": "Gilt die Hausordnung eigentlich nicht für ihn?",
       "pairs": [["Gilt die Hausordnung eigentlich nicht für ihn?", "der Hausmeister selbst die Sonntagsruhe stört"]],
-      "explain": "니나는 질문의 형식으로 관리인이 스스로 일요일의 정숙을 깨뜨렸다고 비판해요. 관리인은 일요일 아침 8시에 잔디를 깎았고, 니나는 그 뒤로 잠을 잘 수 없었어요. 니나가 그 일을 좋게 보거나 자기도 잔디를 깎고 싶어 하는 것이 아니에요."
+      "explain": "니나는 이 질문으로, 관리인 자신이 일요일의 휴식을 방해했다고 비판해요. 관리인은 일요일 아침 8시에 잔디를 깎았고, 니나는 그 뒤로 잠을 잘 수 없었어요. 니나가 그 일을 좋게 보거나 자기도 잔디를 깎고 싶어 하는 것이 아니에요."
     }
   ],
   "grammar": [
     {
       "title": "dürfen · müssen · sollen – 금지, 의무, 요구",
       "term": "Modalverben dürfen, müssen, sollen",
-      "explain": "dürfen은 '해도 된다', nicht dürfen은 '하면 안 된다'(금지)예요. müssen은 꼭 해야 하는 일(의무)을 말해요. sollen은 다른 사람이 정한 규칙이나 요구를 말할 때 써요. 여기서는 관리사무소가 주민에게 요구하는 내용이에요. 화법조동사는 2번 자리에 오고, 본동사는 동사원형으로 문장 끝에 가요.",
-      "pattern": "주어 + dürfen/müssen/sollen + … + 동사원형(문장 끝)",
+      "explain": "dürfen은 '해도 된다', nicht dürfen은 '하면 안 된다'(금지)예요. müssen은 꼭 해야 하는 일(의무)을 말해요. sollen은 다른 사람이 정한 규칙이나 요구를 말할 때 써요. 여기서는 관리사무소가 주민에게 요구하는 내용이에요. 평서문에서 화법조동사는 2번 자리에 오고, 본동사는 동사원형으로 문장 끝에 가요. 예/아니요 의문문에서는 화법조동사가 맨 앞에 와요(Muss ich …?).",
+      "pattern": "1번 자리 + dürfen/müssen/sollen + … + 동사원형(문장 끝)",
       "examples": [
         {
           "de": "In dieser Zeit dürfen Sie keine laute Musik hören, und auch die Waschmaschine darf nicht laufen.",
@@ -198,7 +198,7 @@
     {
       "title": "시간을 나타내는 표현",
       "term": "Temporalangaben",
-      "explain": "시간대는 zwischen … und나 von … bis로 말해요(zwischen 22 und 6 Uhr, von 13 bis 15 Uhr). 날과 요일 앞에는 an + 3격을 써요(an Sonn- und Feiertagen, am Wochenende). ab 22 Uhr는 '밤 10시부터'라는 뜻이에요. letzten Sonntag, eine Woche vorher처럼 전치사 없이 4격으로 시간을 말할 수도 있어요.",
+      "explain": "시간대는 zwischen … und나 von … bis로 말해요(zwischen 22 und 6 Uhr, von 13 bis 15 Uhr). 날, 요일, 주말 앞에는 an + 3격을 써요(an Sonn- und Feiertagen, am Wochenende). ab 22 Uhr는 '밤 10시부터'라는 뜻이에요. letzten Sonntag, eine Woche vorher처럼 전치사 없이 4격으로 시간을 말할 수도 있어요.",
       "pattern": "zwischen … und … / von … bis … / an + 3격 / ab + 시각 / 4격 시간 표현",
       "examples": [
         {

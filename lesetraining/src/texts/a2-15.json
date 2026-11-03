@@ -67,7 +67,7 @@
       "answer": 0,
       "evidence": "Immer wenn ich abends nach Hause gekommen bin, habe ich noch Brot gebacken",
       "pairs": [["Immer wenn", "regelmäßig"], ["abends nach Hause gekommen", "Nach Feierabend"]],
-      "explain": "immer wenn은 과거에 여러 번 반복된 일을 말해요. 그래서 '퇴근 후에 규칙적으로 집 부엌에서 빵을 구웠다'는 뜻이에요. 빵을 구운 곳은 사무실(Büro)이 아니라 집이고, 주말에만 구웠다는 말도 '저녁마다'와 맞지 않아요."
+      "explain": "여기서 immer wenn은 과거에 여러 번 반복된 일을 말해요. 그래서 '퇴근 후에 규칙적으로 집 부엌에서 빵을 구웠다'는 뜻이에요. 빵을 구운 곳은 사무실(Büro)이 아니라 집이고, 주말에만 구웠다는 말도 '저녁마다'와 맞지 않아요."
     },
     {
       "type": "rf",
@@ -165,7 +165,7 @@
       "title": "sein · haben · 화법조동사의 과거형",
       "term": "Präteritum von sein, haben und Modalverben",
       "explain": "sein, haben, 화법조동사는 과거의 일을 말할 때 현재완료보다 과거형을 주로 써요(war, hatte, musste, durfte, wollte, konnte). 화법조동사의 과거형에는 움라우트가 없어요(dürfen → durfte, müssen → musste, können → konnte). ich와 er/sie의 형태가 같아요(ich durfte, sie durfte).",
-      "pattern": "war · hatte · musste · durfte · wollte · konnte + (동사원형, 문장 끝)",
+      "pattern": "war · hatte … / musste · durfte · wollte · konnte + … + 동사원형(문장 끝)",
       "examples": [
         {
           "de": "Am schönsten war es, wenn ich den Teig probieren durfte",
