@@ -19,7 +19,7 @@
       "ko": "1. 목적지와 승차권 고르기"
     },
     {
-      "de": "Geben Sie zuerst Ihr Ziel ein, zum Beispiel „Hauptbahnhof“. Danach wählen Sie die Fahrkarte aus: Einzelfahrschein, Tageskarte oder Wochenkarte. Für Kinder von 6 bis 14 Jahren drücken Sie auf „Ermäßigt“. Kinder unter 6 Jahren fahren gratis und brauchen keine Fahrkarte.",
+      "de": "Geben Sie zuerst Ihr Ziel ein, zum Beispiel „Hauptbahnhof“. Danach wählen Sie die Fahrkarte aus: Einzelfahrschein, Tageskarte oder Wochenkarte. Für Kinder von 6 bis 14 Jahren drücken Sie auf „Ermäßigt“. Kinder unter 6 Jahren fahren kostenlos und brauchen keine Fahrkarte.",
       "ko": "먼저 목적지를 입력하세요. 예를 들면 ‘중앙역’처럼요. 그다음 승차권을 고르세요. 1회권, 1일권, 1주일권이 있어요. 6세부터 14세까지의 어린이는 ‘할인’을 누르세요. 6세 미만 어린이는 무료로 타고 승차권이 필요 없어요."
     },
     {
@@ -80,19 +80,19 @@
       "q": "Was gilt für ein Kind, das vier Jahre alt ist?",
       "options": ["Es braucht eine eigene Karte zum halben Preis.", "Man drückt für das Kind die Taste „Ermäßigt“.", "Es fährt umsonst mit und braucht kein Ticket."],
       "answer": 2,
-      "evidence": "Kinder unter 6 Jahren fahren gratis und brauchen keine Fahrkarte.",
-      "pairs": [["fahren gratis", "fährt umsonst mit"], ["keine Fahrkarte", "kein Ticket"]],
-      "explain": "6세 미만 어린이는 무료로(gratis) 타고 승차권이 필요 없어요. 네 살 어린이도 여기에 해당해요. ‘할인’은 6세부터 14세까지의 어린이가 누르는 버튼이라서 함정이에요."
+      "evidence": "Kinder unter 6 Jahren fahren kostenlos und brauchen keine Fahrkarte.",
+      "pairs": [["fahren kostenlos", "fährt umsonst mit"], ["keine Fahrkarte", "kein Ticket"]],
+      "explain": "6세 미만 어린이는 무료로(kostenlos) 타고 승차권이 필요 없어요. 네 살 어린이도 여기에 해당해요. ‘할인’은 6세부터 14세까지의 어린이가 누르는 버튼이라서 함정이에요."
     },
     {
       "type": "mc",
       "kind": "detail",
       "q": "Was stimmt über das Bezahlen am Automaten?",
-      "options": ["Einen 50-Euro-Schein akzeptiert das Gerät nicht.", "Wechselgeld gibt es nur, wenn man mit Karte zahlt.", "Auch wer bar bezahlt, muss die PIN noch eingeben."],
+      "options": ["Einen 50-Euro-Schein akzeptiert das Gerät nicht.", "Wechselgeld gibt es nur, wenn man mit Karte zahlt.", "Die Bankkarte muss man immer in das Gerät stecken."],
       "answer": 0,
       "evidence": "nimmt aber keine Scheine über 20 Euro an",
       "pairs": [["keine Scheine über 20 Euro", "Einen 50-Euro-Schein akzeptiert das Gerät nicht"]],
-      "explain": "자동판매기는 20유로보다 큰 지폐를 받지 않아요. 그래서 50유로 지폐는 쓸 수 없어요. 거스름돈은 현금으로 낼 때 나오고, PIN 번호는 카드로 결제할 때만 입력해요."
+      "explain": "자동판매기는 20유로보다 큰 지폐를 받지 않아요. 그래서 50유로 지폐는 쓸 수 없어요. 거스름돈은 현금으로 낼 때 나오고, 은행 카드는 꽂지 않고 단말기에 대기만 해도 돼요."
     },
     {
       "type": "rf",

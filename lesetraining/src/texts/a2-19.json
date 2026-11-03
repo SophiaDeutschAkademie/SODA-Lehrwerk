@@ -16,7 +16,7 @@
     },
     {
       "de": "Achtung an Gleis 3: Der Regionalexpress nach Jena, Abfahrt 14:32 Uhr, fährt heute wegen einer technischen Störung nicht von Gleis 3, sondern von Gleis 5 ab.",
-      "ko": "3번 승강장에서 안내 말씀 드립니다. 14시 32분에 출발하는 예나행 지역 급행열차는 오늘 기술적인 장애로 3번이 아닌 5번 승강장에서 출발합니다."
+      "ko": "3번 승강장 승객 여러분께 안내 말씀 드립니다. 14시 32분에 출발하는 예나행 지역 급행열차는 오늘 기술적인 장애로 3번이 아닌 5번 승강장에서 출발합니다."
     },
     {
       "style": "h",
@@ -25,7 +25,7 @@
     },
     {
       "de": "Information zum Intercity nach Frankfurt, Abfahrt 15:16 Uhr: Die Züge auf dieser Strecke fahren heute wegen des schlechten Wetters langsamer. Der Intercity hat deshalb etwa 25 Minuten Verspätung. Wir bitten um Entschuldigung.",
-      "ko": "15시 16분에 출발하는 프랑크푸르트행 인터시티 열차에 대해 안내 말씀 드립니다. 오늘은 궂은 날씨 때문에 이 노선의 열차들이 느리게 운행하고 있습니다. 그래서 인터시티 열차는 약 25분 늦어집니다. 이용에 불편을 드려 죄송합니다."
+      "ko": "15시 16분에 출발하는 프랑크푸르트행 인터시티 열차에 대해 안내 말씀 드립니다. 오늘은 궂은 날씨 때문에 이 노선의 열차들이 평소보다 천천히 운행하고 있습니다. 그래서 인터시티 열차는 약 25분 늦어집니다. 이용에 불편을 드려 죄송합니다."
     },
     {
       "style": "h",
@@ -134,7 +134,7 @@
       "examples": [
         {
           "de": "Die Züge auf dieser Strecke fahren heute wegen des schlechten Wetters langsamer.",
-          "ko": "오늘은 궂은 날씨 때문에 이 노선의 열차들이 느리게 운행하고 있습니다.",
+          "ko": "오늘은 궂은 날씨 때문에 이 노선의 열차들이 평소보다 천천히 운행하고 있습니다.",
           "mark": ["wegen des schlechten Wetters"],
           "parts": [["Die Züge auf dieser Strecke", "주어"], ["fahren", "동사"], ["heute", "부사어(시간)"], ["wegen des schlechten Wetters", "부사어(이유)"], ["langsamer.", "부사어(방법)"]]
         },
@@ -219,7 +219,7 @@
     { "de": "das Getränk, -e", "ko": "음료" },
     { "de": "stattdessen", "ko": "그 대신" },
     { "de": "teilen", "ko": "나누다" },
-    { "de": "aus|steigen (stieg aus, ist ausgestiegen)", "ko": "(차에서) 내리다" }
+    { "de": "aus|steigen (steigt aus, stieg aus, ist ausgestiegen)", "ko": "(차에서) 내리다" }
   ],
   "phrases": [
     {

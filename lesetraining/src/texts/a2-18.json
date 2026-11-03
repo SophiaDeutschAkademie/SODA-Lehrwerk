@@ -24,8 +24,8 @@
     },
     {
       "style": "meta",
-      "de": "Svenja K., 26, Hannover",
-      "ko": "스벤야 K.(26세, 하노버)"
+      "de": "Larissa K., 26, Hannover",
+      "ko": "라리사 K.(26세, 하노버)"
     },
     {
       "style": "meta",
@@ -34,7 +34,7 @@
     },
     {
       "de": "machen Sie sich nicht zu viele Gedanken! Für viele Menschen sind die ersten Wochen in einer neuen Firma anstrengend. Vielleicht ist Herr Falk schüchtern oder hat private Probleme. Darum würde ich sein Verhalten nicht persönlich nehmen.",
-      "ko": "너무 많이 고민하지 마세요! 새 회사에서 보내는 처음 몇 주는 많은 사람에게 힘든 시간이에요. 팔크 씨는 수줍음이 많거나 개인적인 문제가 있을지도 몰라요. 그래서 저라면 그분의 행동을 저 개인을 향한 것으로 받아들이지 않겠어요."
+      "ko": "너무 많이 고민하지 마세요! 새 회사에서 보내는 처음 몇 주는 많은 사람에게 힘든 시간이에요. 팔크 씨는 수줍음이 많거나 개인적인 문제가 있을지도 몰라요. 그래서 저라면 그분의 행동이 저를 향한 것이라고 생각하지 않겠어요."
     },
     {
       "de": "An Ihrer Stelle würde ich den ersten Schritt machen. Fragen Sie ihn doch einmal, ob er mit Ihnen einen Kaffee trinken möchte. Zu zweit fällt das Reden oft leichter als in einer großen Gruppe. Vorher würde ich mir ein paar einfache Themen überlegen.",
@@ -54,55 +54,55 @@
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Herr Falk hat später als Svenja in dem Reisebüro angefangen.",
+      "q": "Herr Falk hat später als Larissa in dem Reisebüro angefangen.",
       "answer": 0,
       "evidence": "Vor sechs Wochen ist ein neuer Kollege zu uns gekommen, Herr Falk.",
-      "pairs": [["ist ein neuer Kollege zu uns gekommen", "hat später als Svenja in dem Reisebüro angefangen"]],
-      "explain": "스벤야는 3월부터 여행사에서 일하고, 팔크 씨는 6주 전에 새 동료로 들어왔어요(ist ein neuer Kollege zu uns gekommen). 그래서 팔크 씨가 스벤야보다 늦게 일을 시작했다는 문장은 맞아요."
+      "pairs": [["ist ein neuer Kollege zu uns gekommen", "hat später als Larissa in dem Reisebüro angefangen"]],
+      "explain": "라리사는 3월부터 여행사에서 일하고, 팔크 씨는 6주 전에 새 동료로 들어왔어요(ist ein neuer Kollege zu uns gekommen). 그래서 팔크 씨가 라리사보다 늦게 일을 시작했다는 문장은 맞아요."
     },
     {
       "type": "mc",
       "kind": "detail",
-      "q": "Was macht Herr Falk, wenn Svenja ihm am Morgen „Guten Morgen!“ sagt?",
+      "q": "Was macht Herr Falk, wenn Larissa ihm am Morgen „Guten Morgen!“ sagt?",
       "options": ["Er grüßt freundlich zurück und lädt sie zum Kaffee ein.", "Er hebt einen Moment den Kopf und arbeitet dann weiter.", "Er steht auf und setzt sich an einen anderen Schreibtisch."],
       "answer": 1,
       "evidence": "schaut er nur kurz auf und tippt weiter",
       "pairs": [["schaut er nur kurz auf", "hebt einen Moment den Kopf"], ["tippt weiter", "arbeitet dann weiter"]],
-      "explain": "팔크 씨는 잠깐 고개를 들었다가(schaut kurz auf) 계속 자판을 두드려요(tippt weiter). 이것을 '잠깐 고개를 들고 다시 일한다'로 바꿔 말했어요. 그는 인사를 한 번도 하지 않고, 책상도 스벤야 옆에 있어요."
+      "explain": "팔크 씨는 잠깐 고개를 들었다가(schaut kurz auf) 계속 자판을 두드려요(tippt weiter). 이것을 '잠깐 고개를 들고 다시 일한다'로 바꿔 말했어요. 그는 인사를 한 번도 하지 않고, 책상도 라리사 옆에 있어요."
     },
     {
       "type": "mc",
       "kind": "inference",
-      "q": "Wie geht es Svenja im Moment mit der Situation?",
+      "q": "Wie geht es Larissa im Moment mit der Situation?",
       "options": ["Sie ist vor allem wütend auf den neuen Kollegen.", "Sie ist froh, weil sie nun ruhig arbeiten kann.", "Sie hat Angst, dass sie einen Fehler gemacht hat."],
       "answer": 2,
       "evidence": "Inzwischen mache ich mir eher Sorgen.",
       "pairs": [["mache ich mir eher Sorgen", "hat Angst"], ["etwas Falsches gesagt", "einen Fehler gemacht"]],
-      "explain": "스벤야는 처음에는 화가 났지만(geärgert) 지금은 오히려 걱정이 된다고 해요(mache mir eher Sorgen). 혹시 자기가 말을 잘못했는지 묻는 것을 보면 실수했을까 봐 불안한 거예요. 화가 난 것은 처음 이야기이고, 회사에 가는 것도 즐겁지 않다고 했어요."
+      "explain": "라리사는 처음에는 화가 났지만(geärgert) 지금은 오히려 걱정이 된다고 해요(mache mir eher Sorgen). 혹시 자기가 말을 잘못했는지 묻는 것을 보면 실수했을까 봐 불안한 거예요. 화가 난 것은 처음 이야기이고, 회사에 가는 것도 즐겁지 않다고 했어요."
     },
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Svenja hat Herrn Falk schon gefragt, warum er sie nicht grüßt.",
+      "q": "Larissa hat Herrn Falk schon gefragt, warum er sie nicht grüßt.",
       "answer": 1,
       "evidence": "Aber dann traue ich mich doch nicht.",
       "pairs": [["Ich habe mir schon überlegt, ob ich ihn einfach anspreche", "hat Herrn Falk schon gefragt"], ["traue ich mich doch nicht", "schon gefragt"]],
-      "explain": "스벤야는 먼저 말을 걸어 볼까 생각만 했고(habe mir überlegt), 막상 용기가 나지 않는다고 해요(traue mich nicht). 그래서 이미 물어봤다는 문장은 틀려요. schon이라는 단어가 함정이에요."
+      "explain": "라리사는 먼저 말을 걸어 볼까 생각만 했고(habe mir überlegt), 막상 용기가 나지 않는다고 해요(traue mich nicht). 그래서 이미 물어봤다는 문장은 틀려요. schon이라는 단어가 함정이에요."
     },
     {
       "type": "mc",
       "kind": "paraphrase",
       "q": "Was meint Frau Wiegand mit dem Satz „Darum würde ich sein Verhalten nicht persönlich nehmen.“?",
-      "options": ["Svenja soll nicht glauben, dass Herr Falk etwas gegen sie hat.", "Svenja soll ihrem neuen Kollegen persönlich sagen, was sie stört.", "Svenja soll sein Verhalten gleich am nächsten Tag der Chefin melden."],
+      "options": ["Larissa soll nicht glauben, dass Herr Falk etwas gegen sie hat.", "Larissa soll ihrem neuen Kollegen persönlich sagen, was sie stört.", "Larissa soll sein Verhalten gleich am nächsten Tag der Chefin melden."],
       "answer": 0,
       "evidence": "Darum würde ich sein Verhalten nicht persönlich nehmen.",
       "pairs": [["nicht persönlich nehmen", "nicht glauben, dass Herr Falk etwas gegen sie hat"]],
-      "explain": "etwas persönlich nehmen은 '어떤 일을 나를 향한 것으로 받아들이다'라는 뜻이에요. 팔크 씨가 스벤야를 싫어해서 그러는 게 아니라고 생각하라는 말이에요. 같은 단어 persönlich가 들어간 선택지는 뜻이 달라요. 상사와 이야기하는 것은 나중에, 상황이 나아지지 않을 때의 조언이에요."
+      "explain": "etwas persönlich nehmen은 '어떤 일을 나를 향한 것으로 받아들이다'라는 뜻이에요. 팔크 씨가 라리사를 싫어해서 그러는 게 아니라고 생각하라는 말이에요. 같은 단어 persönlich가 들어간 선택지는 뜻이 달라요. 상사와 이야기하는 것은 나중에, 상황이 나아지지 않을 때의 조언이에요."
     },
     {
       "type": "mc",
       "kind": "detail",
-      "q": "Was soll Svenja nach Frau Wiegands Rat zuerst tun?",
+      "q": "Was soll Larissa nach Frau Wiegands Rat zuerst tun?",
       "options": ["Sie soll mittags mit dem ganzen Team zusammen essen.", "Sie soll ihre Chefin fragen, was mit Herrn Falk los ist.", "Sie soll Herrn Falk auf eine Tasse Kaffee einladen."],
       "answer": 2,
       "evidence": "Fragen Sie ihn doch einmal, ob er mit Ihnen einen Kaffee trinken möchte.",
@@ -113,11 +113,11 @@
       "type": "mc",
       "kind": "detail",
       "q": "Was ist für Frau Wiegand am Ende ganz sicher?",
-      "options": ["Herr Falk hat bestimmt Probleme in seinem Privatleben.", "Svenja ist an dem Problem mit Herrn Falk nicht schuld.", "Svenja hat ihren Kollegen wohl mit zu vielen Fragen gestört."],
+      "options": ["Herr Falk hat bestimmt Probleme in seinem Privatleben.", "Larissa ist an dem Problem mit Herrn Falk nicht schuld.", "Larissa hat ihren Kollegen wohl mit zu vielen Fragen gestört."],
       "answer": 1,
       "evidence": "Sie haben nichts falsch gemacht.",
       "pairs": [["Sie haben nichts falsch gemacht", "nicht schuld"], ["nicht schuldig fühlen", "nicht schuld"]],
-      "explain": "비간트 씨는 스벤야가 아무것도 잘못하지 않았다(nichts falsch gemacht)는 것이 분명하다고 해요. 이것을 '그 문제는 스벤야 탓이 아니다(nicht schuld)'로 바꿔 말했어요. 팔크 씨의 개인적인 문제는 vielleicht(어쩌면)라고 했으므로 확실한 것이 아니에요."
+      "explain": "비간트 씨는 라리사가 아무것도 잘못하지 않았다(nichts falsch gemacht)는 것이 분명하다고 해요. 이것을 '그 문제는 라리사 탓이 아니다(nicht schuld)'로 바꿔 말했어요. 팔크 씨의 개인적인 문제는 vielleicht(어쩌면)라고 했으므로 확실한 것이 아니에요."
     }
   ],
   "grammar": [
@@ -188,7 +188,7 @@
         },
         {
           "de": "Darum würde ich sein Verhalten nicht persönlich nehmen.",
-          "ko": "그래서 저라면 그분의 행동을 저 개인을 향한 것으로 받아들이지 않겠어요.",
+          "ko": "그래서 저라면 그분의 행동이 저를 향한 것이라고 생각하지 않겠어요.",
           "mark": ["Darum würde ich"],
           "parts": [["Darum", "접속부사"], ["würde", "동사"], ["ich", "주어"], ["sein Verhalten", "4격 목적어"], ["nicht", "부정어"], ["persönlich", "부사어(방법)"], ["nehmen.", "동사(끝)"]]
         },
@@ -228,7 +228,7 @@
       "de": "etwas persönlich nehmen",
       "ko": "(어떤 일을) 자기 개인을 향한 것으로 받아들이다",
       "ex": "Darum würde ich sein Verhalten nicht persönlich nehmen.",
-      "exko": "그래서 저라면 그분의 행동을 저 개인을 향한 것으로 받아들이지 않겠어요."
+      "exko": "그래서 저라면 그분의 행동이 저를 향한 것이라고 생각하지 않겠어요."
     },
     {
       "de": "den ersten Schritt machen",

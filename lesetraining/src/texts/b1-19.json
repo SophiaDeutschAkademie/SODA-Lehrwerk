@@ -25,7 +25,7 @@
     },
     {
       "de": "Weimar ist eine kleine Stadt mit großer Geschichte: Goethe und Schiller haben hier gelebt und gearbeitet, und 1919 wurde in Weimar das Bauhaus gegründet. Am Dienstag besichtigen wir Goethes Wohnhaus, und am Mittwoch steht das Bauhaus-Museum auf dem Programm. Dort wird die Klasse in einem Workshop eigene Entwürfe anfertigen, an denen wir nach der Fahrt im Kunstunterricht weiterarbeiten. Den Donnerstag werden die Schülerinnen und Schüler mit einer Stadtrallye in kleinen Gruppen verbringen.",
-      "ko": "바이마르는 작지만 역사가 깊은 도시입니다. 괴테와 실러가 이곳에서 살며 활동했고, 1919년에는 바이마르에서 바우하우스가 세워졌습니다. 화요일에는 괴테가 살던 집을 둘러보고, 수요일에는 바우하우스 박물관 방문이 일정에 있습니다. 그곳에서 학생들은 워크숍에 참여해 직접 디자인 시안을 만들 예정이며, 여행이 끝난 뒤 미술 시간에 이 시안을 이어서 작업할 것입니다. 목요일에는 학생들이 작은 모둠으로 나뉘어 시내 탐방 미션을 하며 하루를 보낼 것입니다."
+      "ko": "바이마르는 작지만 역사가 깊은 도시입니다. 괴테와 실러가 이곳에서 살며 활동했고, 1919년에는 바이마르에서 바우하우스가 세워졌습니다. 화요일에는 괴테가 살던 집을 둘러보고, 수요일에는 바우하우스 박물관 방문이 일정에 있습니다. 그곳에서 학생들은 워크숍에 참여해 직접 디자인 시안을 만들 예정이며, 여행이 끝난 뒤에는 미술 시간에 이 시안으로 작업을 이어 갈 것입니다. 목요일에는 학생들이 작은 모둠으로 나뉘어 시내 탐방 미션을 하며 하루를 보낼 것입니다."
     },
     {
       "de": "Übernachten werden wir in einer Jugendherberge, die etwas außerhalb des Stadtzentrums liegt; bis zur Altstadt sind es zu Fuß etwa 15 Minuten. Pro Person kostet die Fahrt 265 Euro. Darin sind die Bahnfahrt, die Vollpension und alle Eintrittsgelder enthalten, nicht aber das Taschengeld. Bitte überweisen Sie den Betrag innerhalb der nächsten vier Wochen auf das Konto der Schule.",
@@ -49,8 +49,8 @@
     },
     {
       "style": "meta",
-      "de": "Mit freundlichen Grüßen\nJudith Haberland\n(Klassenlehrerin der 8c)",
-      "ko": "안부를 전하며\n유디트 하버란트\n(8c반 담임 교사)"
+      "de": "Mit freundlichen Grüßen\nKerstin Haberland\n(Klassenlehrerin der 8c)",
+      "ko": "안부를 전하며\n케르스틴 하버란트 드림\n(8c반 담임 교사)"
     }
   ],
   "questions": [
@@ -86,7 +86,7 @@
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Mit den 265 Euro ist auch das Geld für eigene Einkäufe in Weimar bezahlt.",
+      "q": "Die 265 Euro decken auch das Geld für eigene Einkäufe in Weimar ab.",
       "answer": 1,
       "evidence": "Darin sind die Bahnfahrt, die Vollpension und alle Eintrittsgelder enthalten, nicht aber das Taschengeld.",
       "pairs": [["nicht aber das Taschengeld", "auch das Geld für eigene Einkäufe"]],
@@ -126,7 +126,7 @@
       "type": "mc",
       "kind": "gist",
       "q": "Was ist das Hauptziel dieses Briefes?",
-      "options": ["Die Eltern sollen wählen, ob die Klasse nach Weimar oder woandershin fährt.", "Die Familien sollen alles Wichtige über Ablauf, Kosten und Regeln erfahren.", "Die Eltern sollen sich melden, wenn sie die Klasse als Begleiter unterstützen."],
+      "options": ["Die Eltern sollen wählen, ob die Klasse nach Weimar oder woandershin fährt.", "Die Familien sollen alles Wichtige über Ablauf, Kosten und Regeln erfahren.", "Die Eltern sollen sich melden, wenn sie als Begleitung mitfahren möchten."],
       "answer": 1,
       "evidence": "wie beim Elternabend im September angekündigt, wird unsere Klasse im Frühjahr eine Klassenfahrt nach Weimar machen.",
       "pairs": [["wird unsere Klasse im Frühjahr eine Klassenfahrt nach Weimar machen", "alles Wichtige über Ablauf, Kosten und Regeln"]],
