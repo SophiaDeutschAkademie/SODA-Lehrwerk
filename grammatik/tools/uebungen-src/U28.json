@@ -148,7 +148,7 @@
       "lv": 1,
       "t": "fill",
       "q": "___ das Fahrrad selbst zu reparieren, hat er es in die Werkstatt gebracht.",
-      "ko": "자전거를 직접 고치는 대신 그는 그것을 정비소에 맡겼어요.",
+      "ko": "그는 자전거를 직접 고치는 대신 정비소에 맡겼어요.",
       "h": "~하는 대신",
       "a": [
         [
@@ -275,7 +275,8 @@
         "Er steht jeden Tag um fünf auf, um vor der Arbeit zu joggen.",
         "Jeden Tag steht er um fünf auf, um vor der Arbeit zu joggen.",
         "Um fünf steht er jeden Tag auf, um vor der Arbeit zu joggen",
-        "Um vor der Arbeit zu joggen, steht er jeden Tag um fünf auf"
+        "Um vor der Arbeit zu joggen, steht er jeden Tag um fünf auf",
+        "Jeden Tag um fünf steht er auf, um vor der Arbeit zu joggen."
       ],
       "e": "주문장은 분리동사 auf가 끝, 쉼표 뒤에 um … zu joggen이 와요.<br>um fünf(시각)와 um … zu(목적)를 구별해요.",
       "ok": "jeden Tag um은 흔한 시간 표현일 뿐 교재 문장과 다름"
@@ -388,7 +389,10 @@
         "Er trinkt, statt sich zu beeilen, in aller Ruhe noch einen Kaffee",
         "Er trinkt in aller Ruhe noch einen Kaffee, statt sich zu beeilen",
         "Er trinkt, statt sich zu beeilen, noch in aller Ruhe einen Kaffee.",
-        "Er trinkt noch in aller Ruhe einen Kaffee, statt sich zu beeilen."
+        "Er trinkt noch in aller Ruhe einen Kaffee, statt sich zu beeilen.",
+        "In aller Ruhe trinkt er noch einen Kaffee, statt sich zu beeilen.",
+        "Er trinkt noch einen Kaffee in aller Ruhe, statt sich zu beeilen.",
+        "Er trinkt, statt sich zu beeilen, noch einen Kaffee in aller Ruhe."
       ],
       "e": "statt … zu 부분이 첫 자리라서 주문장은 동사 trinkt로 시작해요.<br>재귀동사는 sich zu beeilen이에요."
     },

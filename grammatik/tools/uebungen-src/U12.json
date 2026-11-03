@@ -259,7 +259,10 @@
       ],
       "a": [
         "hast",
-        "kennengelernt"
+        [
+          "kennengelernt",
+          "kennen gelernt"
+        ]
       ],
       "e": "kennenlernen은 kennen이 접두어처럼 움직여서 ge가 그 뒤에 들어가요 — kennengelernt.<br>4격 목적어가 있어서 haben이에요."
     },
@@ -305,9 +308,7 @@
       "a": [
         "Sie ist letzten Sommer allein nach Japan gereist.",
         "Letzten Sommer ist sie allein nach Japan gereist.",
-        "Allein ist sie letzten Sommer nach Japan gereist",
-        "Nach Japan ist sie letzten Sommer allein gereist",
-        "Sie ist allein letzten Sommer nach Japan gereist"
+        "Nach Japan ist sie letzten Sommer allein gereist"
       ],
       "e": "reisen은 이동이라서 sein이에요.<br>과거분사 gereist가 맨 끝에 와요."
     },

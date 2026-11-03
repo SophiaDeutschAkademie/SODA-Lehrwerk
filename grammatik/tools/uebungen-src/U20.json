@@ -4,7 +4,7 @@
   "goals": [
     "종속절에서 활용된 동사를 맨 끝에 놓아요",
     "종속절이 앞에 오면 주문장을 동사부터 시작해요",
-    "dass·weil·ob·wenn·obwohl·damit·indem의 뜻을 구별해요",
+    "dass·weil·ob·wenn·obwohl·damit·sodass·indem의 뜻을 구별해요",
     "의문사와 ob로 간접의문문을 만들어요"
   ],
   "items": [
@@ -57,15 +57,16 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "___ du Fragen hast, schreib mir eine Nachricht.",
+      "q": "Der Zug hatte Verspätung, ___ ich zu spät zur Arbeit gekommen bin. (그 결과 회사에 늦었어요)",
       "o": [
-        "Wenn",
-        "Ob",
-        "Obwohl",
-        "Dass"
+        "sodass",
+        "damit",
+        "obwohl",
+        "ob"
       ],
       "a": 0,
-      "e": "'~하면'은 조건의 wenn이에요.<br>ob은 '~인지', obwohl은 '~인데도'예요."
+      "e": "앞 문장의 결과를 말할 때는 sodass예요.<br>damit은 목적, obwohl은 양보예요. sodass 문장에서도 보조 동사 bin이 맨 끝이에요.",
+      "ok": "sodass는 20과 D에서 배움(시간 종속절 아님)"
     },
     {
       "lv": 1,

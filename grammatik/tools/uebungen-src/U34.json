@@ -37,7 +37,7 @@
       "t": "fill",
       "q": "Bist du endlich fertig mit ___ Hausaufgaben?",
       "ko": "드디어 숙제 다 했어요?",
-      "h": "Hausaufgaben · 복수",
+      "h": "Hausaufgaben · 복수 · 정관사",
       "a": [
         "den"
       ],
@@ -196,16 +196,19 @@
       "ko": "우리 개는 안타깝게도 낯선 사람들에게 그다지 친절하지 않아요.",
       "h": "",
       "a": [
-        "zu"
+        [
+          "zu",
+          "gegenüber"
+        ]
       ],
-      "e": "freundlich zu + 3격 — 사람에게 친절하다는 뜻이에요."
+      "e": "freundlich zu + 3격 — 사람에게 친절하다는 뜻이에요.<br>gegenüber Fremden(3격)도 같은 뜻으로 쓸 수 있어요."
     },
     {
       "lv": 2,
       "t": "fill",
       "q": "Nach drei Monaten in Hamburg bin ich endlich an ___ Regen gewöhnt.",
       "ko": "함부르크에서 석 달을 보낸 뒤 드디어 비에 익숙해졌어요.",
-      "h": "Regen · 남성",
+      "h": "Regen · 남성 · 정관사",
       "a": [
         "den"
       ],
@@ -270,7 +273,7 @@
       "ko": "그녀는 일찍 일어나는 데 익숙해요.",
       "a": [
         "Sie ist daran gewöhnt, früh aufzustehen.",
-        "Daran ist sie gewöhnt, früh aufzustehen"
+        "Sie ist gewöhnt daran, früh aufzustehen."
       ],
       "e": "gewöhnt an + 문장 → daran, + zu 부정형이에요.<br>분리동사는 zu가 가운데 들어가요 → aufzustehen."
     },
@@ -318,7 +321,7 @@
       "ko": "라이프치히로 이사한 뒤로 집에 아주 만족해요. 거리의 소음에만 아직 익숙하지 않아요. 이웃들은 저에게 아주 친절하고, 여름 거리 축제가 벌써 기대돼요.",
       "h": [
         "",
-        "Lärm · 남성",
+        "Lärm · 남성 · 정관사",
         "",
         ""
       ],

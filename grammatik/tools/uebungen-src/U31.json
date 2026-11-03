@@ -168,13 +168,13 @@
     {
       "lv": 1,
       "t": "fill",
-      "q": "Die Schrift auf dem Zettel ist so klein, sie ist kaum ___.",
-      "ko": "쪽지의 글씨가 너무 작아서 거의 읽을 수가 없어요.",
-      "h": "lesen",
+      "q": "Sein Nachname ist so lang, er ist kaum ___.",
+      "ko": "그의 성은 너무 길어서 거의 발음할 수가 없어요.",
+      "h": "aussprechen",
       "a": [
-        "zu lesen"
+        "auszusprechen"
       ],
-      "e": "sein + zu 부정형은 '~될 수 있다'라는 수동의 뜻이에요.<br>kaum zu lesen은 '거의 읽을 수 없어요'라는 뜻이에요."
+      "e": "sein + zu 부정형은 '~될 수 있다'라는 수동의 뜻이에요.<br>aussprechen은 분리동사라서 aus + zu + sprechen을 붙여 써요."
     },
     {
       "lv": 1,
@@ -196,7 +196,8 @@
       "ko": "창문은 일 년에 한 번 닦아야 해요.",
       "a": [
         "Die Fenster müssen einmal im Jahr geputzt werden.",
-        "Einmal im Jahr müssen die Fenster geputzt werden."
+        "Einmal im Jahr müssen die Fenster geputzt werden.",
+        "Die Fenster müssen im Jahr einmal geputzt werden."
       ],
       "e": "müssen이 두 번째 자리, 끝에는 geputzt werden이 와요.<br>주어 die Fenster가 복수라서 müssen이에요."
     },
@@ -346,8 +347,7 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "소포가 벌써 발송됐는지 확인해 줄 수 있어요?",
       "a": [
-        "Kannst du nachsehen, ob das Paket schon abgeschickt worden ist?",
-        "Kannst du nachsehen, ob schon das Paket abgeschickt worden ist"
+        "Kannst du nachsehen, ob das Paket schon abgeschickt worden ist?"
       ],
       "e": "ob 절에서는 활용된 동사 ist가 맨 끝에 와요.<br>수동 현재완료의 순서는 과거분사 → worden → ist예요."
     },

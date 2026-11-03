@@ -190,9 +190,9 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "역 옆에 새로 문을 연 빵집을 알아요?",
       "a": [
-        "Kennst du die Bäckerei, die neben dem Bahnhof aufgemacht hat?"
+        "Kennst du die neue Bäckerei, die neben dem Bahnhof aufgemacht hat?"
       ],
-      "e": "관계대명사 die가 주어예요. 현재완료의 보조 동사 hat이 맨 끝이에요."
+      "e": "관계대명사 die가 관계문의 주어예요. 현재완료의 보조 동사 hat이 맨 끝이에요."
     },
     {
       "lv": 2,
@@ -300,7 +300,10 @@
         "Gestern habe ich den Mann, der früher hier gewohnt hat, gesehen",
         "Ich habe gestern den Mann, der früher hier gewohnt hat, gesehen",
         "Den Mann, der hier früher gewohnt hat, habe ich gestern gesehen",
-        "Ich habe den Mann gestern gesehen, der hier früher gewohnt hat"
+        "Ich habe den Mann gestern gesehen, der hier früher gewohnt hat",
+        "Gestern habe ich den Mann, der hier früher gewohnt hat, gesehen.",
+        "Ich habe den Mann, der hier früher gewohnt hat, gestern gesehen.",
+        "Ich habe gestern den Mann, der hier früher gewohnt hat, gesehen."
       ],
       "e": "주문장 끝에 gesehen만 남으면 관계문을 그 뒤로 빼는 게 자연스러워요."
     },

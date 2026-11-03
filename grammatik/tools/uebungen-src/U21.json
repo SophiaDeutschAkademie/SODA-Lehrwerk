@@ -81,8 +81,7 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "그런데 독일어는 어디서 배웠어요?",
       "a": [
-        "Wo hast du eigentlich Deutsch gelernt?",
-        "Wo hast du Deutsch eigentlich gelernt?"
+        "Wo hast du eigentlich Deutsch gelernt?"
       ],
       "e": "이야기하다 문득 묻는 '그런데'는 eigentlich예요.<br>불변화사는 동사·대명사 뒤, 명사 목적어 앞에 와요."
     },
@@ -356,7 +355,7 @@
       "lv": 3,
       "t": "fill",
       "q": "A: Warum kommst du ___ so spät? Ich warte seit einer Stunde!\nB: Entschuldige! Der Bus ist nicht gekommen. Das passiert ___ manchmal.\nA: Schon gut. Komm, setz dich ___! Nimm dir ___ noch einen Kaffee.",
-      "ko": "A: 도대체 왜 이렇게 늦게 와요? 한 시간째 기다리고 있어요!\nB: 미안해요, 버스가 안 왔어요. 그런 일은 가끔 있는 거잖아요.\nA: 괜찮아요. 자, 어서 앉아요! 커피도 편하게 한 잔 더 마셔요.",
+      "ko": "A: 도대체 왜 이렇게 늦게 와요? 한 시간째 기다리고 있어요!\nB: 미안해요, 버스가 안 왔어요. 그런 일은 원래 가끔 있어요.\nA: 괜찮아요. 자, 어서 앉아요! 커피도 편하게 한 잔 더 마셔요.",
       "h": [
         "답답함이 담긴 질문",
         "어쩔 수 없음",
@@ -400,9 +399,11 @@
       "ko": "강좌가 오늘 휴강이라고 내가 말했잖아요.",
       "a": [
         "Ich habe dir doch gesagt, dass der Kurs heute ausfällt.",
-        "Ich habe dir doch gesagt, dass heute der Kurs ausfällt."
+        "Ich habe dir doch gesagt, dass heute der Kurs ausfällt.",
+        "Dass der Kurs heute ausfällt, habe ich dir doch gesagt",
+        "Dass heute der Kurs ausfällt, habe ich dir doch gesagt"
       ],
-      "e": "doch는 대명사 dir 뒤에 와요.<br>dass 문장에서는 분리동사 ausfallen이 붙어서 맨 끝에 와요."
+      "e": "doch는 대명사 dir 뒤에 와요.<br>dass 문장에서는 분리동사 ausfallen이 붙어서 맨 끝에 와요. dass 문장이 앞에 오면 주문장은 동사 habe부터 시작해요."
     },
     {
       "lv": 3,

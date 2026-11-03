@@ -26,7 +26,7 @@
       "t": "fill",
       "q": "Der Kollege behauptet, er ___ den Schlüssel nicht.",
       "ko": "그 동료는 자기가 열쇠를 갖고 있지 않다고 주장해요.",
-      "h": "haben · 접속법",
+      "h": "haben · 기사체 접속법",
       "a": [
         "habe"
       ],
@@ -37,7 +37,7 @@
       "t": "fill",
       "q": "Der Wetterdienst meldet, es ___ morgen im Norden stark regnen.",
       "ko": "기상청은 내일 북부에 비가 많이 올 거라고 발표해요.",
-      "h": "werden · 접속법",
+      "h": "werden · 기사체 접속법",
       "a": [
         "werde"
       ],
@@ -61,7 +61,7 @@
       "t": "fill",
       "q": "Mein Nachbar erzählte, er ___ letzte Woche in Wien gewesen.",
       "ko": "이웃은 지난주에 빈에 다녀왔다고 이야기했어요.",
-      "h": "sein · 접속법",
+      "h": "sein · 기사체 접속법",
       "a": [
         "sei"
       ],
@@ -72,7 +72,7 @@
       "t": "fill",
       "q": "Der Händler versichert, er ___ die Ware bis Montag liefern.",
       "ko": "그 판매자는 월요일까지 상품을 배송할 수 있다고 장담해요.",
-      "h": "können · 접속법",
+      "h": "können · 기사체 접속법",
       "a": [
         "könne"
       ],
@@ -86,7 +86,7 @@
         "ob",
         "dass",
         "wenn",
-        "was"
+        "als"
       ],
       "a": 0,
       "e": "예/아니요 질문(„Haben Sie schon gewählt?“)을 전할 때는 ob(~인지)을 써요."
@@ -96,7 +96,7 @@
       "t": "fill",
       "q": "Die Ärztin sagte, ich ___ mich ein paar Tage schonen.",
       "ko": "의사 선생님은 내가 며칠 무리하지 말고 쉬어야 한다고 했어요.",
-      "h": "sollen · 접속법",
+      "h": "sollen · 기사체 접속법",
       "a": [
         "solle"
       ],
@@ -120,7 +120,7 @@
       "t": "fill",
       "q": "Sie fragte den Taxifahrer: „Wie lange dauert die Fahrt?“\n→ Sie fragte den Taxifahrer, wie lange die Fahrt ___.",
       "ko": "그녀는 택시 기사에게 가는 데 얼마나 걸리는지 물었어요.",
-      "h": "dauern · 접속법",
+      "h": "dauern · 기사체 접속법",
       "a": [
         "dauere"
       ],
@@ -144,7 +144,7 @@
       "t": "fill",
       "q": "Die Feuerwehr meldete, alle Bewohner ___ rechtzeitig gerettet worden.",
       "ko": "소방서는 주민 모두가 제때 구조됐다고 발표했어요.",
-      "h": "sein · 접속법",
+      "h": "sein · 기사체 접속법",
       "a": [
         "seien"
       ],
@@ -181,7 +181,7 @@
       "t": "fill",
       "q": "Die Gäste sagen: „Wir kommen etwas später.“\n→ Die Gäste sagen, sie ___ etwas später.",
       "ko": "손님들은 조금 늦게 온다고 해요.",
-      "h": "kommen · 접속법",
+      "h": "kommen · 기사체 접속법",
       "a": [
         "kämen"
       ],
@@ -206,7 +206,7 @@
       "q": "Die Zeugin sagte: „Ich habe den Mann nicht gesehen.“\n→ Die Zeugin sagte, sie ___ den Mann nicht ___.",
       "ko": "그 증인은 그 남자를 보지 못했다고 말했어요.",
       "h": [
-        "접속법",
+        "기사체 접속법",
         "sehen"
       ],
       "a": [
@@ -221,7 +221,7 @@
       "q": "Am Montag sagte Jonas: „Ich fliege morgen nach Lissabon.“\n→ Am Montag sagte Jonas, er ___ ___ ___ Tag nach Lissabon.",
       "ko": "월요일에 요나스는 다음 날 리스본에 간다고 했어요.",
       "h": [
-        "fliegen · 접속법",
+        "fliegen · 기사체 접속법",
         "",
         ""
       ],
@@ -254,7 +254,7 @@
       "t": "fill",
       "q": "Die Chefin fragte: „Hat Felix die Rechnung schon bezahlt?“\n→ Die Chefin fragte, ob Felix die Rechnung schon bezahlt ___.",
       "ko": "사장님은 펠릭스가 벌써 계산서를 냈는지 물었어요.",
-      "h": "haben · 접속법",
+      "h": "haben · 기사체 접속법",
       "a": [
         "habe"
       ],
@@ -280,7 +280,7 @@
       "ko": "손님은 가게가 언제 다시 문을 여는지 알고 싶어 했어요.",
       "a": [
         "Der Kunde wollte wissen, wann das Geschäft wieder öffne.",
-        "Der Kunde wollte wissen, wann wieder das Geschäft öffne"
+        "Wann das Geschäft wieder öffne, wollte der Kunde wissen."
       ],
       "e": "간접의문문은 의문사 wann으로 시작하고 동사가 맨 끝에 와요.<br>3인칭 단수 접속법 I → öffne."
     },
@@ -290,7 +290,7 @@
       "q": "Meine Schwester sagt zu mir: „Ich werde dich am Bahnhof abholen.“\n→ Meine Schwester sagt, sie ___ ___ am Bahnhof abholen.",
       "ko": "언니는 나를 역에서 데리러 오겠다고 해요.",
       "h": [
-        "werden · 접속법",
+        "werden · 기사체 접속법",
         "dich → ?"
       ],
       "a": [
@@ -318,9 +318,9 @@
       "q": "Der Bahnsprecher: „Der Zug ist wegen eines Unwetters liegen geblieben. Die Fahrgäste haben drei Stunden lang gewartet. Morgen wird der Verkehr wieder normal laufen.“\n→ Der Bahnsprecher erklärte, der Zug ___ wegen eines Unwetters liegen geblieben. Die Fahrgäste ___ drei Stunden lang gewartet. Am nächsten Tag ___ der Verkehr wieder normal laufen.",
       "ko": "철도 대변인은 열차가 악천후 때문에 멈춰 섰다고 밝혔어요. 승객들은 세 시간 동안 기다렸다고 해요. 다음 날에는 운행이 다시 정상으로 돌아올 거라고 해요.",
       "h": [
-        "접속법",
-        "접속법",
-        "접속법"
+        "기사체 접속법",
+        "기사체 접속법",
+        "기사체 접속법"
       ],
       "a": [
         "sei",
@@ -348,7 +348,7 @@
       "t": "fill",
       "q": "Die Bibliothekarin bat, man ___ die Bücher bis Freitag zurückgeben.",
       "ko": "사서는 금요일까지 책을 반납해 달라고 부탁했어요.",
-      "h": "mögen · 접속법",
+      "h": "mögen · 기사체 접속법",
       "a": [
         "möge"
       ],
@@ -362,7 +362,9 @@
       "ko": "경찰관은 그 사고를 목격한 사람이 있는지 물었어요.",
       "a": [
         "Die Polizistin fragte, ob jemand den Unfall beobachtet habe.",
-        "Die Polizistin fragte, ob den Unfall jemand beobachtet habe."
+        "Die Polizistin fragte, ob den Unfall jemand beobachtet habe.",
+        "Ob jemand den Unfall beobachtet habe, fragte die Polizistin.",
+        "Ob den Unfall jemand beobachtet habe, fragte die Polizistin."
       ],
       "e": "„Hat jemand den Unfall beobachtet?“를 ob로 전해요.<br>동사 habe는 맨 끝, 과거분사 beobachtet는 그 앞이에요."
     },
@@ -372,10 +374,10 @@
       "q": "Ben schrieb mir: „Ich habe deine Nachricht heute erst gelesen, weil mein Handy kaputt war.“\n→ Ben schrieb mir, er ___ ___ Nachricht an dem Tag erst gelesen, weil ___ Handy kaputt gewesen ___.",
       "ko": "벤은 휴대폰이 고장 나서 그날에야 내 메시지를 읽었다고 썼어요.",
       "h": [
-        "haben · 접속법",
+        "haben · 기사체 접속법",
         "deine → ?",
         "mein → ?",
-        "sein · 접속법"
+        "sein · 기사체 접속법"
       ],
       "a": [
         "habe",

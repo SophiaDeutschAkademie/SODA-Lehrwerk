@@ -30,10 +30,11 @@
       "a": [
         [
           "dagegen",
-          "hingegen"
+          "hingegen",
+          "jedoch"
         ]
       ],
-      "e": "dagegen·hingegen은 접속부사예요. 이 문장처럼 첫 자리의 말(Auf dem Land) 바로 뒤에도 놓을 수 있어요."
+      "e": "dagegen·hingegen은 접속부사예요. 이 문장처럼 첫 자리의 말(Auf dem Land) 바로 뒤에도 놓을 수 있어요. 19과의 jedoch도 같은 자리에 올 수 있어요."
     },
     {
       "lv": 1,
@@ -45,10 +46,13 @@
         ""
       ],
       "a": [
-        "Gegensatz",
+        [
+          "Gegensatz",
+          "Unterschied"
+        ],
         "zu"
       ],
-      "e": "명사 앞에서 대조를 말할 때는 전치사 im Gegensatz zu + 3격을 써요 → zu ihrer älteren Schwester."
+      "e": "명사 앞에서 대조를 말할 때는 전치사 im Gegensatz zu + 3격을 써요 → zu ihrer älteren Schwester. im Unterschied zu도 같은 뜻이에요."
     },
     {
       "lv": 1,
@@ -169,11 +173,11 @@
       "o": [
         "Den Experten zufolge werden die Mieten weiter steigen.",
         "Den Experten zufolge die Mieten weiter steigen werden.",
-        "Zufolge der Experten werden die Mieten weiter steigen.",
+        "Der Experten zufolge werden die Mieten weiter steigen.",
         "Den Experten zufolge die Mieten werden weiter steigen."
       ],
       "a": 0,
-      "e": "zufolge는 3격이고 명사 뒤에 와요 → den Experten zufolge.<br>이 덩어리가 첫 자리라서 동사 werden이 바로 뒤에 와요."
+      "e": "zufolge는 명사 뒤에 오고 3격이에요 → den Experten zufolge(der Experten은 2격).<br>이 덩어리가 첫 자리라서 동사 werden이 바로 뒤에 와요."
     },
     {
       "lv": 1,
@@ -198,8 +202,7 @@
       "a": [
         "Trotz seiner Verletzung hat er bis zum Ende weitergespielt.",
         "Er hat trotz seiner Verletzung bis zum Ende weitergespielt.",
-        "Bis zum Ende hat er trotz seiner Verletzung weitergespielt.",
-        "Er hat bis zum Ende trotz seiner Verletzung weitergespielt"
+        "Bis zum Ende hat er trotz seiner Verletzung weitergespielt."
       ],
       "e": "obwohl er verletzt war를 전치사구로 줄이면 trotz + 2격 → trotz seiner Verletzung이에요."
     },
@@ -222,7 +225,7 @@
       "q": "Während er in Wien wohnte, lernte er seine Frau kennen.\n→ ___ ___ Zeit in Wien lernte er seine Frau kennen.",
       "ko": "빈에 사는 동안 그는 아내를 알게 됐어요.",
       "h": [
-        "",
+        "2격 전치사",
         "Zeit · 여성"
       ],
       "a": [
@@ -269,6 +272,7 @@
       "a": [
         [
           "Anstelle",
+          "An Stelle",
           "Statt",
           "Anstatt"
         ]
@@ -281,9 +285,7 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "우리는 택시를 탈 거예요, 게다가 벌써 늦었으니까요.",
       "a": [
-        "Wir nehmen ein Taxi, zumal es schon spät ist.",
-        "Ein Taxi nehmen wir, zumal es schon spät ist",
-        "Wir nehmen, zumal es schon spät ist, ein Taxi."
+        "Wir nehmen ein Taxi, zumal es schon spät ist."
       ],
       "e": "zumal은 종속접속사라서 동사 ist가 맨 끝에 와요."
     },
@@ -321,7 +323,7 @@
       "t": "fill",
       "q": "___ Ihrer Frage nach den Öffnungszeiten teilen wir Ihnen mit, dass das Büro ab nächster Woche länger geöffnet ist.",
       "ko": "영업시간에 관한 문의와 관련해 다음 주부터 사무실이 더 오래 문을 연다는 것을 알려 드려요.",
-      "h": "~⁠에 관해",
+      "h": "~⁠에 관해 · 2격",
       "a": [
         [
           "Bezüglich",
@@ -346,8 +348,8 @@
     {
       "lv": 3,
       "t": "fill",
-      "q": "Sehr geehrte Kundinnen und Kunden,\n___ eines technischen Problems war unsere Website gestern nicht erreichbar. ___ konnten viele von Ihnen keine Bestellungen aufgeben. ___ Ihrer Geduld konnten wir das Problem schnell lösen. ___ unseren Geschäftsbedingungen erhalten alle betroffenen Kunden einen Gutschein.",
-      "ko": "고객 여러분, 기술적인 문제로 어제 저희 웹사이트에 접속할 수 없었어요. 그 결과 많은 분이 주문을 하지 못하셨어요. 여러분이 기다려 주신 덕분에 문제를 빠르게 해결할 수 있었어요. 저희 거래 약관에 따라 피해를 입은 모든 고객께 상품권을 드려요.",
+      "q": "Sehr geehrte Kundinnen und Kunden,\n___ eines technischen Problems war unsere Website gestern nicht erreichbar. ___ konnten viele von Ihnen keine Bestellungen aufgeben. ___ des schnellen Einsatzes unseres Technikteams konnten wir das Problem innerhalb weniger Stunden lösen. ___ unseren Geschäftsbedingungen erhalten alle betroffenen Kunden einen Gutschein.",
+      "ko": "고객 여러분, 기술적인 문제로 어제 저희 웹사이트에 접속할 수 없었어요. 그 결과 많은 분이 주문을 하지 못하셨어요. 기술팀이 신속하게 대응한 덕분에 몇 시간 안에 문제를 해결할 수 있었어요. 저희 거래 약관에 따라 피해를 입은 모든 고객께 상품권을 드려요.",
       "h": [
         "원인 · 2격",
         "결과 · 접속부사",
@@ -367,7 +369,8 @@
           "Daher",
           "Deswegen",
           "Darum",
-          "Dadurch"
+          "Dadurch",
+          "Somit"
         ],
         "Dank",
         [
@@ -377,7 +380,7 @@
           "Nach"
         ]
       ],
-      "e": "원인 → aufgrund·infolge + 2격 · 결과 → infolgedessen·folglich(도치) · 덕분 → dank + 2격 · 기준 → gemäß·entsprechend + 3격(unseren Geschäftsbedingungen). laut·nach + 3격도 같은 뜻이에요."
+      "e": "원인 → aufgrund·infolge + 2격 · 결과 → infolgedessen·folglich(도치) · 덕분 → dank + 2격(des schnellen Einsatzes) · 기준 → gemäß·entsprechend + 3격(unseren Geschäftsbedingungen). laut·nach + 3격도 같은 뜻이에요."
     },
     {
       "lv": 3,
@@ -391,11 +394,15 @@
       "a": [
         [
           "Wenn",
-          "Falls"
+          "Falls",
+          "Sofern"
         ],
-        "ist"
+        [
+          "ist",
+          "wird"
+        ]
       ],
-      "e": "전치사구 bei + 명사를 조건 문장으로 되돌리면 wenn(falls) …이에요. 종속절이라서 동사 ist가 맨 끝, 주문장은 동사 findet로 시작해요."
+      "e": "전치사구 bei + 명사를 조건 문장으로 되돌리면 wenn(falls·sofern) …이에요. 종속절이라서 동사 ist가 맨 끝, 주문장은 동사 findet로 시작해요."
     },
     {
       "lv": 3,
@@ -423,9 +430,13 @@
         "Es ist hier im Winter ruhig, wohingegen im Sommer viele Touristen kommen.",
         "Es ist hier im Winter ruhig, wohingegen viele Touristen im Sommer kommen.",
         "Es ist im Winter hier ruhig, wohingegen im Sommer viele Touristen kommen.",
-        "Es ist im Winter hier ruhig, wohingegen viele Touristen im Sommer kommen."
+        "Es ist im Winter hier ruhig, wohingegen viele Touristen im Sommer kommen.",
+        "Im Sommer kommen viele Touristen, wohingegen es hier im Winter ruhig ist.",
+        "Im Sommer kommen viele Touristen, wohingegen es im Winter hier ruhig ist.",
+        "Viele Touristen kommen im Sommer, wohingegen es hier im Winter ruhig ist.",
+        "Viele Touristen kommen im Sommer, wohingegen es im Winter hier ruhig ist."
       ],
-      "e": "주문장은 동사가 두 번째, wohingegen 뒤는 동사 kommen이 맨 끝이에요."
+      "e": "주문장은 동사가 두 번째, wohingegen 뒤는 동사가 맨 끝이에요. wohingegen은 두 쪽을 맞세우므로 어느 쪽을 주문장으로 써도 돼요."
     },
     {
       "lv": 3,

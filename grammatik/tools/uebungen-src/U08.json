@@ -116,7 +116,7 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "Das Kind spielt mit ___ Ball. (그 아이 자기 공)",
+      "q": "Das Kind spielt mit ___ Ball. (그 아이의 공)",
       "o": [
         "seinem",
         "sein",
@@ -257,8 +257,7 @@
       "a": [
         "Am Sonntag kocht Anna für ihre Gäste.",
         "Anna kocht am Sonntag für ihre Gäste.",
-        "Für ihre Gäste kocht Anna am Sonntag",
-        "Anna kocht für ihre Gäste am Sonntag"
+        "Für ihre Gäste kocht Anna am Sonntag"
       ],
       "e": "주인 Anna가 여성이라 ihr-, für 뒤는 4격이고 복수라서 ihre예요.<br>Am Sonntag가 앞에 오면 동사 뒤에 주어가 와요."
     },
@@ -340,7 +339,6 @@
         "Morgen zeige ich ihr unsere Wohnung.",
         "Ich zeige ihr morgen unsere Wohnung.",
         "Unsere Wohnung zeige ich ihr morgen",
-        "Ihr zeige ich morgen unsere Wohnung",
         "Ich zeige ihr unsere Wohnung morgen"
       ],
       "e": "대명사 ihr(3격)가 명사 목적어보다 앞에 와요.<br>Wohnung은 여성 4격이라 unsere예요."

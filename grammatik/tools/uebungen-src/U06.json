@@ -148,14 +148,8 @@
         ""
       ],
       "a": [
-        [
-          "Wie viel",
-          "Wieviel"
-        ],
-        [
-          "Wie viele",
-          "Wieviele"
-        ]
+        "Wie viel",
+        "Wie viele"
       ],
       "e": "셀 수 없는 Zucker는 wie viel, 셀 수 있는 복수 Eier는 wie viele로 물어요."
     },
@@ -228,8 +222,6 @@
       "a": [
         "Tim geht morgens allein ins Fitnessstudio.",
         "Morgens geht Tim allein ins Fitnessstudio.",
-        "Allein geht Tim morgens ins Fitnessstudio.",
-        "Tim geht allein morgens ins Fitnessstudio",
         "Ins Fitnessstudio geht Tim morgens allein"
       ],
       "e": "가운데 자리는 시간(morgens) → 방법(allein) → 장소(ins Fitnessstudio) 순서예요."
@@ -304,8 +296,7 @@
       "q": "단어를 알맞은 순서로 놓으세요.",
       "ko": "수프 맛이 어때?",
       "a": [
-        "Wie schmeckt dir die Suppe?",
-        "Wie schmeckt die Suppe dir"
+        "Wie schmeckt dir die Suppe?"
       ],
       "e": "의문사 wie 바로 뒤에 동사가 와요.<br>대명사 dir가 명사 주어 die Suppe보다 앞에 와요."
     },
@@ -325,8 +316,8 @@
     {
       "lv": 3,
       "t": "fill",
-      "q": "A: ___ fahrt ihr heute? — B: Zu Jana.\nA: ___ wohnt Jana? — B: In Bonn.\nA: ___ schenkt ihr das Buch? — B: Jana!\nA: Und ___ Buch ist das? — B: Ein Krimi.",
-      "ko": "너희 오늘 어디 가? — 야나한테. / 야나는 어디 살아? — 본에. / 그 책은 누구한테 선물해? — 야나한테! / 그런데 그건 어떤 책이야? — 추리 소설.",
+      "q": "A: ___ wohnt Jana? — B: In Bonn.\nA: Und ___ fahrt ihr heute? — B: Nach Bonn.\nA: ___ schenkt ihr das Buch? — B: Jana!\nA: ___ Buch ist das? — B: Ein Krimi.",
+      "ko": "야나는 어디 살아? — 본에. / 그럼 너희는 오늘 어디 가? — 본으로. / 그 책은 누구한테 선물해? — 야나한테! / 그건 어떤 책이야? — 추리 소설.",
       "h": [
         "",
         "",
@@ -334,14 +325,14 @@
         "종류를 물어요"
       ],
       "a": [
-        "Wohin",
         "Wo",
+        "wohin",
         "Wem",
         [
           "Was für ein"
         ]
       ],
-      "e": "가는 곳은 wohin, 사는 곳은 wo예요.<br>schenken의 받는 사람은 3격이라서 wem, 책의 종류는 was für ein으로 물어요."
+      "e": "사는 곳은 wo, 가는 곳은 wohin이에요.<br>schenken의 받는 사람은 3격이라서 wem, 책의 종류는 was für ein으로 물어요."
     },
     {
       "lv": 3,

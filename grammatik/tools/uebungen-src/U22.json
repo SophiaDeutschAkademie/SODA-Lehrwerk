@@ -330,19 +330,19 @@
     {
       "lv": 3,
       "t": "fill",
-      "q": "Wenn ___ in Deutschland eine Wohnung sucht, braucht ___ viel Geduld. Die Suche kostet ___ viel Zeit.",
-      "ko": "독일에서 집을 구하면 인내가 많이 필요해요. 집 찾기는 시간이 많이 들어요.",
+      "q": "Wenn man in Deutschland eine Wohnung sucht, braucht ___ viel Geduld. Die Suche kostet ___ viel Zeit, und oft hilft ___ niemand.",
+      "ko": "독일에서 집을 구하려면 인내심이 많이 필요해요. 집 찾기는 시간이 많이 들고, 도와주는 사람이 아무도 없을 때도 많아요.",
       "h": [
         "",
-        "",
+        "man",
         "man"
       ],
       "a": [
         "man",
-        "man",
-        "einen"
+        "einen",
+        "einem"
       ],
-      "e": "man은 man으로 이어 받아요. kosten은 사람을 4격으로 받아서 man의 4격 einen을 써요."
+      "e": "man은 er로 바꾸지 않고 man으로 이어 받아요.<br>kosten은 사람을 4격으로 받아서 einen, helfen은 3격을 받아서 einem이에요."
     },
     {
       "lv": 3,
@@ -367,8 +367,7 @@
       "a": [
         "Von diesen Leuten kenne ich niemanden.",
         "Ich kenne von diesen Leuten niemanden.",
-        "Ich kenne niemanden von diesen Leuten",
-        "Niemanden kenne ich von diesen Leuten"
+        "Ich kenne niemanden von diesen Leuten"
       ],
       "e": "von은 3격 전치사라서 diesen Leuten(복수 3격 -en, 명사 -n)이에요.<br>kennen의 목적어는 4격이라 niemanden이에요."
     },

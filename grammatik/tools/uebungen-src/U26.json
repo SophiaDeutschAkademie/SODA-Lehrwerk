@@ -49,7 +49,7 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "Ich kannte das Ende schon, denn ich ___ das Buch schon einmal gelesen.",
+      "q": "Ich kannte das Ende, denn ich ___ das Buch schon einmal gelesen.",
       "o": [
         "hatte",
         "war",
@@ -149,7 +149,7 @@
       "a": [
         "wirst"
       ],
-      "e": "du에 맞는 werden은 wirst예요. werdest나 wirdst는 없는 형태예요."
+      "e": "du에 맞는 werden의 현재형은 불규칙형 wirst예요. werdest·wirdst처럼 규칙 어미를 붙이면 틀려요."
     },
     {
       "lv": 1,
@@ -228,8 +228,7 @@
         "Aus Rom werde ich dir eine Postkarte schicken.",
         "Ich werde dir aus Rom eine Postkarte schicken.",
         "Ich werde dir eine Postkarte aus Rom schicken.",
-        "Eine Postkarte werde ich dir aus Rom schicken",
-        "Dir werde ich aus Rom eine Postkarte schicken"
+        "Eine Postkarte werde ich dir aus Rom schicken"
       ],
       "e": "werde는 두 번째 자리, 원형 schicken은 맨 끝이에요."
     },
@@ -341,8 +340,7 @@
       "ko": "손님들은 분명 이미 집에 갔을 거예요.",
       "a": [
         "Die Gäste werden sicher schon nach Hause gefahren sein.",
-        "Sicher werden die Gäste schon nach Hause gefahren sein.",
-        "Die Gäste werden schon sicher nach Hause gefahren sein"
+        "Sicher werden die Gäste schon nach Hause gefahren sein."
       ],
       "e": "지난 일의 추측은 미래완료예요. fahren은 sein과 써서 끝에 gefahren sein이 와요.",
       "ok": "미래완료 werden + 과거분사 + haben/sein, 26과에서 배움(수동태 아님)"

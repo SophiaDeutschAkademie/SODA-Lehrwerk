@@ -87,11 +87,9 @@
         "Nach dem Konzert fahren wir mit dem Taxi nach Hause.",
         "Wir fahren nach dem Konzert mit dem Taxi nach Hause.",
         "Mit dem Taxi fahren wir nach dem Konzert nach Hause.",
-        "Nach dem Konzert fahren wir nach Hause mit dem Taxi.",
-        "Wir fahren nach dem Konzert nach Hause mit dem Taxi.",
-        "Wir fahren mit dem Taxi nach dem Konzert nach Hause."
+        "Nach Hause fahren wir nach dem Konzert mit dem Taxi."
       ],
-      "e": "nach dem Konzert와 mit dem Taxi는 모두 3격이에요. 앞에 오는 말 뒤에 동사 fahren이 두 번째로, 주어 wir가 그 뒤에 와요.<br>집으로 가는 방향은 nach Hause예요."
+      "e": "nach dem Konzert와 mit dem Taxi는 모두 3격이에요. 앞에 오는 말 뒤에 동사 fahren이 두 번째로, 주어 wir가 그 뒤에 와요.<br>가운데 자리는 시간 → 방법 → 장소 순서예요(6과). 집으로 가는 방향은 nach Hause예요."
     },
     {
       "lv": 1,
@@ -124,7 +122,7 @@
     {
       "lv": 1,
       "t": "mc",
-      "q": "Holst du mich ___ Bahnhof ab? (나를 역에서 데리러 와 줄래?)",
+      "q": "Holst du mich ___ Bahnhof ab? (나를 역에서 데리러 와 줄래요?)",
       "o": [
         "vom",
         "von der",
@@ -203,12 +201,9 @@
         "Ich gehe heute ohne meinen Schirm aus dem Haus.",
         "Heute gehe ich ohne meinen Schirm aus dem Haus.",
         "Ohne meinen Schirm gehe ich heute aus dem Haus.",
-        "Aus dem Haus gehe ich heute ohne meinen Schirm",
-        "Ich gehe ohne meinen Schirm heute aus dem Haus",
-        "Ich gehe heute aus dem Haus ohne meinen Schirm",
-        "Heute gehe ich aus dem Haus ohne meinen Schirm"
+        "Aus dem Haus gehe ich heute ohne meinen Schirm"
       ],
-      "e": "ohne + 4격(meinen Schirm), aus + 3격(dem Haus)이에요.<br>동사 gehe는 두 번째 자리예요."
+      "e": "ohne + 4격(meinen Schirm), aus + 3격(dem Haus)이에요.<br>동사 gehe는 두 번째 자리이고, 가운데 자리는 시간(heute) → 방법(ohne meinen Schirm) → 장소(aus dem Haus) 순서예요."
     },
     {
       "lv": 2,

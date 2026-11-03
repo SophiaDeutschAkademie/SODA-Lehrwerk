@@ -186,7 +186,8 @@
       "ko": "그녀는 피아노 치는 것을 좋아해요.",
       "a": [
         "Sie spielt gern Klavier.",
-        "Gern spielt sie Klavier."
+        "Gern spielt sie Klavier.",
+        "Klavier spielt sie gern."
       ],
       "e": "활용된 동사 spielt는 주어 바로 뒤, 두 번째 자리에 와요. gern은 동사 뒤에 놓아요."
     },
@@ -197,7 +198,8 @@
       "ko": "우리는 7주째 본에서 일해요.",
       "a": [
         "Wir arbeiten seit sieben Wochen in Bonn.",
-        "Seit sieben Wochen arbeiten wir in Bonn."
+        "Seit sieben Wochen arbeiten wir in Bonn.",
+        "In Bonn arbeiten wir seit sieben Wochen."
       ],
       "e": "과거에 시작해 지금도 계속되는 일은 현재형에 seit를 붙여 말해요.<br>활용된 동사 arbeiten은 두 번째 자리에 와요."
     },
@@ -317,7 +319,7 @@
         "weiß … kennen"
       ],
       "a": 0,
-      "e": "답(정보)은 wissen, 사람은 kennen이에요.<br>wissen은 er·sie에서 어미가 없어서 sie weiß, kennen은 규칙대로 sie kennt예요."
+      "e": "사람(den Lehrer)은 kennen으로 말해서 sie kennt예요. 답 같은 정보는 wissen으로 말하고, wissen은 er·sie에서 어미가 없어서 sie weiß예요."
     },
     {
       "lv": 3,
@@ -335,8 +337,8 @@
     {
       "lv": 3,
       "t": "fill",
-      "q": "Mia ___ in Köln. Sie ___ Ärztin, ___ viel und ___ abends Krimis.",
-      "ko": "미아는 쾰른에 살아요. 그녀는 의사이고, 일을 많이 하고, 저녁에는 추리 소설을 읽어요.",
+      "q": "Mia ___ in Köln. Sie ___ Ärztin, ___ viel und ___ gern Krimis.",
+      "ko": "미아는 쾰른에 살아요. 그녀는 의사이고, 일을 많이 하고, 추리 소설을 즐겨 읽어요.",
       "h": [
         "wohnen",
         "sein",

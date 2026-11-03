@@ -49,7 +49,7 @@
       "lv": 1,
       "t": "fill",
       "q": "Im Winter müsst ihr ___ warm anziehen.",
-      "ko": "겨울에는 너희 옷을 따뜻하게 입어야 해요.",
+      "ko": "겨울에는 다들 옷을 따뜻하게 입어야 해요.",
       "h": "ihr",
       "a": [
         "euch"
@@ -99,8 +99,7 @@
       "a": [
         "Jeden Morgen rasiert er sich im Bad.",
         "Er rasiert sich jeden Morgen im Bad.",
-        "Im Bad rasiert er sich jeden Morgen",
-        "Er rasiert sich im Bad jeden Morgen"
+        "Im Bad rasiert er sich jeden Morgen"
       ],
       "e": "주어가 대명사(er)면 재귀대명사 sich는 주어 바로 뒤에 와요."
     },
@@ -148,9 +147,12 @@
       "ko": "안나와 톰은 학창 시절부터 서로 알아요.",
       "h": "",
       "a": [
-        "sich"
+        [
+          "sich",
+          "einander"
+        ]
       ],
-      "e": "주어가 여럿이면 sich가 '서로'라는 뜻이 돼요."
+      "e": "주어가 여럿이면 sich가 '서로'라는 뜻이 돼요.<br>einander를 써도 '서로'예요."
     },
     {
       "lv": 1,
@@ -195,8 +197,7 @@
       "a": [
         "Heute treffe ich mich mit meiner Cousine.",
         "Ich treffe mich heute mit meiner Cousine.",
-        "Mit meiner Cousine treffe ich mich heute",
-        "Ich treffe mich mit meiner Cousine heute"
+        "Mit meiner Cousine treffe ich mich heute"
       ],
       "e": "sich treffen mit + 3격이에요.<br>heute가 앞에 오면 동사 → 주어 ich → 재귀대명사 mich 순서예요."
     },
@@ -250,9 +251,7 @@
       "ko": "우리는 휴가 때 잘 쉬었어요.",
       "a": [
         "Wir haben uns im Urlaub gut erholt.",
-        "Im Urlaub haben wir uns gut erholt.",
-        "Wir haben uns gut im Urlaub erholt",
-        "Gut haben wir uns im Urlaub erholt"
+        "Im Urlaub haben wir uns gut erholt."
       ],
       "e": "재귀동사의 현재완료는 haben이에요.<br>재귀대명사 uns는 주어 대명사 바로 뒤, 과거분사 erholt는 끝이에요."
     },
@@ -289,7 +288,7 @@
     {
       "lv": 2,
       "t": "mc",
-      "q": "Das Auto kostet 50.000 Euro. Kannst du ___ das Auto wirklich leisten?",
+      "q": "Das Auto kostet 50.000 Euro. Kannst du ___ das wirklich leisten?",
       "o": [
         "dir",
         "dich",
@@ -297,7 +296,7 @@
         "dein"
       ],
       "a": 0,
-      "e": "sich etwas leisten은 3격 재귀대명사와 써요.<br>4격 목적어(das Auto)가 따로 있어서 du → dir예요."
+      "e": "sich etwas leisten은 3격 재귀대명사와 써요.<br>4격 목적어(das)가 따로 있어서 du → dir예요."
     },
     {
       "lv": 2,
@@ -367,16 +366,15 @@
       "a": [
         "Am Montag muss ich mich um die Kinder meiner Schwester kümmern.",
         "Ich muss mich am Montag um die Kinder meiner Schwester kümmern.",
-        "Um die Kinder meiner Schwester muss ich mich am Montag kümmern.",
-        "Ich muss mich um die Kinder meiner Schwester am Montag kümmern"
+        "Um die Kinder meiner Schwester muss ich mich am Montag kümmern."
       ],
       "e": "화법조동사 muss는 두 번째, kümmern은 끝이에요.<br>mich는 주어 ich 바로 뒤, um + 4격 die Kinder 뒤에 2격 meiner Schwester가 와요."
     },
     {
       "lv": 3,
       "t": "fill",
-      "q": "Heute Abend sehe ich ___ das Fußballspiel an. Danach lege ich ___ sofort ins Bett.",
-      "ko": "오늘 저녁에 축구 경기를 볼 거예요. 그다음에는 바로 침대에 누울 거예요.",
+      "q": "Heute Abend sehe ich ___ das Fußballspiel an. Nach dem Spiel lege ich ___ sofort ins Bett.",
+      "ko": "오늘 저녁에 축구 경기를 볼 거예요. 경기가 끝나면 바로 침대에 누울 거예요.",
       "h": [
         "",
         ""

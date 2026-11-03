@@ -36,8 +36,8 @@
       "lv": 1,
       "t": "fill",
       "q": "___ du mir kurz deinen Kugelschreiber leihen?",
-      "ko": "볼펜 좀 잠깐 빌려줄 수 있어요?",
-      "h": "können",
+      "ko": "볼펜 좀 잠깐 빌려줄 수 있을까요?",
+      "h": "können · 정중하게",
       "a": [
         "Könntest"
       ],
@@ -132,7 +132,10 @@
       "ko": "제 형은 마치 정비사인 것처럼 자동차 이야기를 해요.",
       "h": "sein",
       "a": [
-        "wäre"
+        [
+          "wäre",
+          "sei"
+        ]
       ],
       "e": "사실이 아닌 비교는 als ob + 접속법 II예요. 동사는 맨 끝에 와요.<br>er → wäre."
     },
@@ -194,7 +197,6 @@
         "Wir könnten am Sonntag eine Radtour machen.",
         "Am Sonntag könnten wir eine Radtour machen.",
         "Eine Radtour könnten wir am Sonntag machen.",
-        "Wir könnten eine Radtour am Sonntag machen",
         "Könnten wir am Sonntag eine Radtour machen"
       ],
       "e": "'~하면 어때요'라는 제안은 könnte예요.<br>könnten은 두 번째 자리, 원형 machen은 끝에 와요."
@@ -249,13 +251,13 @@
       "ko": "이제는 너무 늦었어요! 나한테 미리 전화했어야죠.",
       "h": [
         "haben",
-        ""
+        "sollen"
       ],
       "a": [
         "hättest",
         "sollen"
       ],
-      "e": "'~했어야 했는데'는 hätte + 원형 + sollen이에요.<br>화법조동사가 있으면 과거분사 대신 원형이 두 개 와요."
+      "e": "'~했어야 했는데'는 hätte + 원형 + sollen이에요.<br>화법조동사가 있으면 과거분사(gesollt) 대신 원형 sollen을 써서 끝에 원형이 두 개 와요."
     },
     {
       "lv": 2,
@@ -264,7 +266,10 @@
       "ko": "그녀는 제 메시지를 읽지 않은 척해요.",
       "h": "haben",
       "a": [
-        "hätte"
+        [
+          "hätte",
+          "habe"
+        ]
       ],
       "e": "지난 일을 두고 '마치 ~하지 않은 것처럼'이라고 하면 als ob + 과거분사 + hätte/wäre예요.<br>lesen은 haben → gelesen hätte.",
       "ok": "so tun, als ob는 이 과의 핵심 문형이라 피할 수 없음, 문장 내용은 새로 만듦"

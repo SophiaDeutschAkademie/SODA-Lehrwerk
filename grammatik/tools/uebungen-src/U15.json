@@ -149,10 +149,9 @@
       "a": [
         "Am Abend sitzen wir auf dem Balkon.",
         "Wir sitzen am Abend auf dem Balkon.",
-        "Auf dem Balkon sitzen wir am Abend",
-        "Wir sitzen auf dem Balkon am Abend"
+        "Auf dem Balkon sitzen wir am Abend"
       ],
-      "e": "sitzen은 위치(Wo?)라서 auf dem Balkon(3격)이에요.<br>am Abend가 앞에 오면 동사 sitzen 다음에 주어 wir가 와요."
+      "e": "sitzen은 위치(Wo?)라서 auf dem Balkon(3격)이에요.<br>가운데 자리는 시간(am Abend) → 장소(auf dem Balkon) 순서예요. am Abend가 앞에 오면 동사 sitzen 다음에 주어 wir가 와요."
     },
     {
       "lv": 1,
@@ -282,7 +281,10 @@
       ],
       "a": [
         "in die",
-        "auf die"
+        [
+          "auf die",
+          "zur"
+        ]
       ],
       "e": "관사 있는 나라로 가면 in + 4격 → in die USA예요.<br>섬으로 가면 auf + 4격 → auf die Insel이에요."
     },
