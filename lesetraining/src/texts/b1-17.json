@@ -126,7 +126,7 @@
       "type": "mc",
       "kind": "intent",
       "q": "Was will der letzte Abschnitt bei den Leserinnen und Lesern erreichen?",
-      "options": ["Sie sollen alte Hefte lieber direkt bei der Fabrik abgeben.", "Sie sollen Papierabfall sorgfältig vom anderen Müll trennen.", "Sie sollen auch Backpapier oder Kassenzettel zum Papier tun."],
+      "options": ["Sie sollen alte Hefte lieber direkt bei der Fabrik abgeben.", "Sie sollen Papierabfall sorgfältig vom anderen Müll trennen.", "Sie sollen auch Backpapier oder Kassenzettel ins Altpapier geben."],
       "answer": 1,
       "evidence": "Benutzte Taschentücher, Backpapier und Kassenzettel werfen Sie bitte in den Restmüll.",
       "pairs": [["werfen Sie bitte in den Restmüll", "vom anderen Müll trennen"]],

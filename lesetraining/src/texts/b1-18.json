@@ -15,8 +15,8 @@
       "ko": "폴커 임호프의 토요 칼럼"
     },
     {
-      "de": "„In 300 Metern rechts abbiegen.“ Diesen Satz höre ich öfter als „Guten Morgen“. Seit drei Jahren fahre ich nämlich keinen Meter mehr ohne mein Navi, und ich muss zugeben: Ich bin ziemlich abhängig davon geworden. Meine Frau hat einen Stadtplan im Kopf. Ich habe offenbar keinen.",
-      "ko": "“300미터 앞에서 우회전하세요.” 저는 이 말을 ‘안녕하세요’보다 더 자주 들어요. 3년 전부터 내비게이션 없이는 1미터도 운전하지 않거든요. 솔직히 인정할 수밖에 없어요. 저는 내비게이션에 꽤 의존하게 되었어요. 제 아내의 머릿속에는 시내 지도가 들어 있어요. 제 머릿속에는 아무래도 그런 지도가 없나 봐요."
+      "de": "„In 300 Metern rechts abbiegen.“ Diesen Satz höre ich öfter als „Guten Morgen“. Seit drei Jahren fahre ich nämlich kaum noch einen Meter ohne mein Navi, und ich muss zugeben: Ich bin ziemlich abhängig davon geworden. Meine Frau hat einen Stadtplan im Kopf. Ich habe offenbar keinen.",
+      "ko": "“300미터 앞에서 우회전하세요.” 저는 이 말을 ‘안녕하세요’보다 더 자주 들어요. 3년 전부터 내비게이션 없이는 1미터도 거의 운전하지 않거든요. 솔직히 인정할 수밖에 없어요. 저는 내비게이션에 꽤 의존하게 되었어요. 제 아내의 머릿속에는 시내 지도가 들어 있어요. 제 머릿속에는 아무래도 그런 지도가 없나 봐요."
     },
     {
       "de": "Dabei war das früher ganz anders. Mit 19 bin ich mit einer alten Straßenkarte quer durch Frankreich gefahren, und darauf bin ich bis heute stolz. Inzwischen finde ich ohne die freundliche Frauenstimme nicht einmal den Baumarkt im Nachbarort. Woran liegt das? Meine Theorie: Wer nie selbst den Weg suchen muss, verlernt irgendwann, wie das geht.",
@@ -45,9 +45,9 @@
       "kind": "detail",
       "q": "Der Kolumnist schaltet sein Navi nur für weite Fahrten in fremde Städte ein.",
       "answer": 1,
-      "evidence": "Seit drei Jahren fahre ich nämlich keinen Meter mehr ohne mein Navi",
-      "pairs": [["keinen Meter mehr ohne mein Navi", "nur für weite Fahrten"]],
-      "explain": "본문에서는 3년 전부터 내비게이션 없이는 1미터도 운전하지 않는다고 해요. 가까운 옆 동네 철물점도 내비게이션 없이는 못 찾는다고 하니까 '먼 길에만 켠다'는 말은 틀려요."
+      "evidence": "Seit drei Jahren fahre ich nämlich kaum noch einen Meter ohne mein Navi",
+      "pairs": [["kaum noch einen Meter ohne mein Navi", "nur für weite Fahrten"]],
+      "explain": "본문에서는 3년 전부터 내비게이션 없이는 1미터도 거의 운전하지 않는다고 해요. 가까운 옆 동네 철물점도 내비게이션 없이는 못 찾는다고 하니까 '먼 길에만 켠다'는 말은 틀려요."
     },
     {
       "type": "mc",
@@ -63,7 +63,7 @@
       "type": "mc",
       "kind": "meaning",
       "q": "Was bedeutet „verlernt“ im Text?",
-      "options": ["kann etwas nicht mehr, das man früher gut konnte", "lernt etwas erst spät, weil es niemand zeigt", "will etwas nicht lernen, obwohl es leicht ist"],
+      "options": ["kann etwas nicht mehr, das man früher gut konnte", "lernt etwas erst spät, weil es einem niemand zeigt", "will etwas nicht lernen, obwohl es leicht ist"],
       "answer": 0,
       "evidence": "Wer nie selbst den Weg suchen muss, verlernt irgendwann, wie das geht.",
       "pairs": [["verlernt irgendwann, wie das geht", "kann etwas nicht mehr, das man früher gut konnte"]],
