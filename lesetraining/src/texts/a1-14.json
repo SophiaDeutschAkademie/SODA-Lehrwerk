@@ -61,10 +61,10 @@
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Mias Opa lebt mit Mias Familie zusammen.",
+      "q": "Mias Opa lebt mit der Familie zusammen.",
       "answer": 0,
       "evidence": "Er wohnt auch bei uns.",
-      "pairs": [["wohnt auch bei uns", "lebt mit Mias Familie zusammen"]],
+      "pairs": [["wohnt auch bei uns", "lebt mit der Familie zusammen"]],
       "explain": "미아는 할아버지도 우리 집에서 같이 산다고(wohnt auch bei uns) 말해요. bei uns wohnen을 mit … zusammen leben으로 바꿔 말했으니 맞는 문장이에요."
     },
     {

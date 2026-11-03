@@ -72,7 +72,7 @@
       "answer": 1,
       "evidence": "„Das Einzige, worüber wir hier ungern reden, sind Rekorde“, sagt er.",
       "pairs": [["ungern reden", "passt nicht zu dieser Firma"], ["Rekorde", "Bestleistungen"]],
-      "explain": "휘징은 기록(Rekorde)을 자랑하는 일을 꺼린다고 말해요. 정답은 이를 '최고 성과를 내세우는 것은 이 회사답지 않다'로 바꿨어요. 오히려 허용 오차 같은 기술 이야기는 즐겨 하므로 첫 번째 보기는 틀려요."
+      "explain": "휘징은 기록(Rekorde)을 자랑하는 일을 꺼린다고 말해요. 정답은 이를 '최고 성과를 내세우는 것은 이 회사답지 않다'로 바꿨어요. 오히려 허용 오차 같은 기술 이야기는 즐겨 하므로 '기술적인 세부 사항은 말하기 싫어한다'는 보기는 틀려요."
     },
     {
       "type": "rfn",
@@ -87,7 +87,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "Was nimmt Hüsing über manche Bewerber an?",
-      "options": ["Sie zogen wegen der Busverbindung einen städtischen Arbeitgeber vor.", "Sie sagten ab, weil sie sich im Dorf kein eigenes Haus leisten können.", "Sie bleiben nach ihrer Lehre meist bis zum Ende ihres Berufslebens."],
+      "options": ["Sie zogen wegen der Busverbindung einen städtischen Arbeitgeber vor.", "Sie sagten ab, weil sie sich im Dorf kein eigenes Haus leisten konnten.", "Sie bleiben nach ihrer Lehre meist bis zum Ende ihres Berufslebens."],
       "answer": 0,
       "evidence": "„Manche Bewerber werden sich nach einem Blick auf den Busfahrplan für einen Betrieb in der Stadt entschieden haben“, sagt Hüsing.",
       "pairs": [["für einen Betrieb in der Stadt entschieden", "einen städtischen Arbeitgeber vor"], ["Busfahrplan", "Busverbindung"]],
@@ -96,12 +96,12 @@
     {
       "type": "mc",
       "kind": "intent",
-      "q": "Warum erinnert Kemper an die Zeit vor sechs Jahren?",
-      "options": ["Sie kritisiert, dass damals viele Beschäftigte ihre Stellen verloren.", "Sie will zeigen, dass die Medizintechnik damals schon geholfen hat.", "Sie macht deutlich, wie anfällig ein Werk mit nur einem Produkt ist."],
+      "q": "Wozu dient der Hinweis auf die Kurzarbeit vor sechs Jahren?",
+      "options": ["Er belegt, dass damals viele Beschäftigte ihre Stellen verloren.", "Er soll zeigen, dass die Medizintechnik damals schon geholfen hat.", "Er macht deutlich, wie anfällig ein Werk mit nur einem Produkt ist."],
       "answer": 2,
       "evidence": "Als vor sechs Jahren ein Großkunde absprang, musste in der Fertigung ein halbes Jahr lang Kurzarbeit eingeführt werden.",
-      "pairs": [["Abhängigkeit von einem einzigen Produkt", "wie anfällig ein Werk mit nur einem Produkt ist"]],
-      "explain": "켐퍼는 대형 고객 하나가 떠나자 반년 동안 단축 근무를 해야 했던 일을 예로 들어, 제품 하나에 의존하는 위험을 보여 줘요. 당시에는 해고가 아니라 단축 근무였고, 의료 기술은 그녀가 지금 요구하는 새 분야예요."
+      "pairs": [["Abhängigkeit von einem einzigen Produkt", "wie anfällig ein Werk mit nur einem Produkt ist"], ["Kurzarbeit", "ihre Stellen verloren"]],
+      "explain": "대형 고객 하나가 떠나자 반년 동안 단축 근무를 해야 했던 일은 켐퍼가 말하는 위험, 곧 제품 하나에만 의존하는 위험을 보여 주는 예예요. 당시에는 해고가 아니라 단축 근무(Kurzarbeit)였고, 의료 기술은 켐퍼가 지금 요구하는 새 분야예요."
     },
     {
       "type": "rfn",
