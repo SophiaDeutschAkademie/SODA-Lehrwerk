@@ -97,7 +97,7 @@
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Mit einem Einzelfahrschein darf man anderthalb Stunden lang die Linie wechseln.",
+      "q": "Mit einem Einzelfahrschein darf man innerhalb von anderthalb Stunden die Linie wechseln.",
       "answer": 0,
       "evidence": "Ein Einzelfahrschein gilt 90 Minuten. In dieser Zeit dürfen Sie umsteigen",
       "pairs": [["90 Minuten", "anderthalb Stunden"], ["umsteigen", "die Linie wechseln"]],

@@ -72,7 +72,7 @@
       "answer": 1,
       "evidence": "war ich sehr müde und habe kaum ein Wort verstanden. Trotzdem war der Abend schön",
       "pairs": [["kaum ein Wort verstanden", "verstand wenig"], ["Trotzdem war der Abend schön", "aber es gefiel ihr"]],
-      "explain": "민지는 첫날 말을 거의 알아듣지 못했지만(kaum ein Wort verstanden) 그래도 즐거운 저녁이었다고 해요. 이것을 '조금밖에 못 알아들었지만 마음에 들었다'로 바꿔 말했어요. 거의 다 알아들었다거나 저녁이 즐겁지 않았다는 내용은 본문과 반대예요."
+      "explain": "민지는 첫날 말을 거의 알아듣지 못했지만(kaum ein Wort verstanden) 그래도 즐거운 저녁이었다고 해요. 이것을 '조금밖에 못 알아들었지만 마음에 들었어요'로 바꿔 말했어요. 거의 다 알아들었다거나 저녁이 즐겁지 않았다는 내용은 본문과 반대예요."
     },
     {
       "type": "mc",
@@ -91,7 +91,7 @@
       "answer": 0,
       "evidence": "Bei Ihrer Tochter Lotta, die in Hamburg studiert, durfte ich in den Herbstferien ein Wochenende verbringen.",
       "pairs": [["in den Herbstferien", "In den Ferien im Herbst"], ["Bei Ihrer Tochter Lotta", "Lottas Gast"], ["ein Wochenende verbringen", "ein Wochenende lang"]],
-      "explain": "민지는 가을 방학(Herbstferien)에 함부르크에서 대학에 다니는 로타의 집에서 주말을 보냈어요. 이것을 '주말 동안 로타의 손님이었다'로 바꿔 말했으므로 맞는 내용이에요."
+      "explain": "민지는 가을 방학(Herbstferien)에 함부르크에서 대학에 다니는 로타의 집에서 주말을 보냈어요. 이것을 '주말 동안 로타의 손님이었어요'로 바꿔 말했으므로 맞는 내용이에요."
     },
     {
       "type": "mc",
@@ -101,17 +101,17 @@
       "answer": 0,
       "evidence": "Seitdem interessiert sich meine Mutter sogar für die deutsche Küche.",
       "pairs": [["interessiert sich meine Mutter sogar für die deutsche Küche", "Ihre Mutter will jetzt mehr über deutsches Essen wissen"]],
-      "explain": "어머니가 독일 요리에 관심을 갖게 되셨다고 해요(interessiert sich für die deutsche Küche). 이것을 '독일 음식에 대해 더 알고 싶어 한다'로 바꿔 말했어요. 부모님은 사진을 이미 다 보셨고, 어린이 책은 민지가 여동생에게 준 것이에요."
+      "explain": "어머니가 독일 요리에 관심을 갖게 되셨다고 해요(interessiert sich für die deutsche Küche). 이것을 '독일 음식에 대해 더 알고 싶어 해요'로 바꿔 말했어요. 부모님은 사진을 이미 다 보셨고, 어린이 책은 민지가 여동생에게 준 것이에요."
     },
     {
       "type": "mc",
       "kind": "paraphrase",
-      "q": "Was meint Minji mit dem Satz „Bei uns ist immer ein Zimmer für ihn frei.“?",
+      "q": "Was meint Minji mit dem Satz „Bei uns ist immer ein Zimmer für ihn frei“?",
       "options": ["Finn muss für die Reise ein Hotel in Korea suchen.", "Minji darf in Lüneburg immer bei Familie Krüger wohnen.", "Finn kann jederzeit bei Minjis Familie übernachten."],
       "answer": 2,
       "evidence": "Bei uns ist immer ein Zimmer für ihn frei.",
       "pairs": [["Bei uns", "bei Minjis Familie"], ["immer", "jederzeit"], ["ein Zimmer für ihn frei", "übernachten"]],
-      "explain": "'우리 집에는 언제든 핀을 위한 방이 비어 있다'는 말은 핀이 언제 와도 민지네 집에서 묵을 수 있다는 뜻이에요. bei uns는 크뤼거 가족이 아니라 부산에 있는 민지네 가족을 가리켜요. 호텔을 찾아야 한다는 말은 반대 내용이에요."
+      "explain": "'우리 집에는 언제든 핀을 위한 방이 비어 있어요'라는 말은 핀이 언제 와도 민지네 집에서 묵을 수 있다는 뜻이에요. bei uns는 크뤼거 가족이 아니라 부산에 있는 민지네 가족을 가리켜요. 호텔을 찾아야 한다는 말은 반대 내용이에요."
     },
     {
       "type": "mc",

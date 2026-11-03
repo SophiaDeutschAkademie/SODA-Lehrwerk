@@ -15,8 +15,8 @@
       "ko": "비간트 선생님께"
     },
     {
-      "de": "seit März arbeite ich in einem kleinen Reisebüro. Vor sechs Wochen ist ein neuer Kollege zu uns gekommen, Herr Falk. Sein Schreibtisch steht neben meinem, aber er grüßt mich nie. Wenn ich morgens „Guten Morgen!“ sage, schaut er nur kurz auf und tippt weiter. Mittags sitzt er immer allein.",
-      "ko": "저는 3월부터 작은 여행사에서 일하고 있어요. 6주 전에 새 동료 팔크 씨가 들어왔어요. 그분 책상은 제 책상 옆에 있는데, 저에게 한 번도 인사를 하지 않아요. 아침에 제가 “좋은 아침이에요!” 하고 인사하면 잠깐 고개를 들었다가 다시 자판만 두드려요. 점심때는 늘 혼자 앉아 있어요."
+      "de": "seit März arbeite ich in einem kleinen Reisebüro. Vor sechs Wochen ist ein neuer Kollege zu uns gekommen, Herr Falk. Sein Schreibtisch steht neben meinem, aber er grüßt mich nie. Wenn ich morgens „Guten Morgen!“ sage, schaut er nur kurz auf und tippt weiter. Mittags isst er immer allein.",
+      "ko": "저는 3월부터 작은 여행사에서 일하고 있어요. 6주 전에 새 동료 팔크 씨가 들어왔어요. 그분 책상은 제 책상 옆에 있는데, 저에게 한 번도 인사를 하지 않아요. 아침에 제가 “좋은 아침이에요!” 하고 인사하면 잠깐 고개를 들었다가 다시 자판만 두드려요. 점심도 늘 혼자 먹어요."
     },
     {
       "de": "Am Anfang habe ich mich darüber geärgert. Inzwischen mache ich mir eher Sorgen. Mag er mich nicht? Habe ich etwas Falsches gesagt? Ständig denke ich darüber nach, deshalb gehe ich nicht mehr gern zur Arbeit. Ich habe mir schon überlegt, ob ich ihn einfach anspreche. Aber dann traue ich mich doch nicht. Was soll ich tun?",
@@ -68,7 +68,7 @@
       "answer": 1,
       "evidence": "schaut er nur kurz auf und tippt weiter",
       "pairs": [["schaut er nur kurz auf", "hebt einen Moment den Kopf"], ["tippt weiter", "arbeitet dann weiter"]],
-      "explain": "팔크 씨는 잠깐 고개를 들었다가(schaut kurz auf) 계속 자판을 두드려요(tippt weiter). 이것을 '잠깐 고개를 들고 다시 일한다'로 바꿔 말했어요. 그는 인사를 한 번도 하지 않고, 책상도 라리사 옆에 있어요."
+      "explain": "팔크 씨는 잠깐 고개를 들었다가(schaut kurz auf) 계속 자판을 두드려요(tippt weiter). 이것을 '잠깐 고개를 들고 다시 일해요'로 바꿔 말했어요. 그는 인사를 한 번도 하지 않고, 책상도 라리사 옆에 있어요."
     },
     {
       "type": "mc",
@@ -92,7 +92,7 @@
     {
       "type": "mc",
       "kind": "paraphrase",
-      "q": "Was meint Frau Wiegand mit dem Satz „Darum würde ich sein Verhalten nicht persönlich nehmen.“?",
+      "q": "Was meint Frau Wiegand mit dem Satz „Darum würde ich sein Verhalten nicht persönlich nehmen“?",
       "options": ["Larissa soll nicht glauben, dass Herr Falk etwas gegen sie hat.", "Larissa soll ihrem neuen Kollegen persönlich sagen, was sie stört.", "Larissa soll sein Verhalten gleich am nächsten Tag der Chefin melden."],
       "answer": 0,
       "evidence": "Darum würde ich sein Verhalten nicht persönlich nehmen.",
@@ -102,12 +102,12 @@
     {
       "type": "mc",
       "kind": "detail",
-      "q": "Was soll Larissa nach Frau Wiegands Rat zuerst tun?",
+      "q": "Wie soll Larissa laut Frau Wiegand den ersten Schritt machen?",
       "options": ["Sie soll mittags mit dem ganzen Team zusammen essen.", "Sie soll ihre Chefin fragen, was mit Herrn Falk los ist.", "Sie soll Herrn Falk auf eine Tasse Kaffee einladen."],
       "answer": 2,
       "evidence": "Fragen Sie ihn doch einmal, ob er mit Ihnen einen Kaffee trinken möchte.",
       "pairs": [["Fragen Sie ihn doch einmal, ob er mit Ihnen einen Kaffee trinken möchte", "Herrn Falk auf eine Tasse Kaffee einladen"]],
-      "explain": "비간트 씨는 팔크 씨에게 같이 커피를 마시겠냐고 물어보라고 해요. 이것을 '커피 한 잔에 초대하다'로 바꿔 말했어요. 여럿이 있을 때보다 둘이서 이야기하는 게 쉽다고 했고, 상사와 이야기하는 것은 그 뒤에도 쌀쌀맞을 때의 일이에요."
+      "explain": "비간트 씨는 먼저 다가가는 방법(den ersten Schritt machen)으로 팔크 씨에게 같이 커피를 마시겠냐고 물어보라고 해요. 이것을 '커피 한 잔에 초대하다'로 바꿔 말했어요. 여럿이 있을 때보다 둘이서 이야기하는 게 쉽다고 했고, 상사와 이야기하는 것은 그 뒤에도 쌀쌀맞을 때의 일이에요."
     },
     {
       "type": "mc",
@@ -117,7 +117,7 @@
       "answer": 1,
       "evidence": "Sie haben nichts falsch gemacht.",
       "pairs": [["Sie haben nichts falsch gemacht", "nicht schuld"], ["nicht schuldig fühlen", "nicht schuld"]],
-      "explain": "비간트 씨는 라리사가 아무것도 잘못하지 않았다(nichts falsch gemacht)는 것이 분명하다고 해요. 이것을 '그 문제는 라리사 탓이 아니다(nicht schuld)'로 바꿔 말했어요. 팔크 씨의 개인적인 문제는 vielleicht(어쩌면)라고 했으므로 확실한 것이 아니에요."
+      "explain": "비간트 씨는 라리사가 아무것도 잘못하지 않았다(nichts falsch gemacht)는 것이 분명하다고 해요. 이것을 '그 문제는 라리사 탓이 아니에요(nicht schuld)'로 바꿔 말했어요. 팔크 씨의 개인적인 문제는 vielleicht(어쩌면)라고 했으므로 확실한 것이 아니에요."
     }
   ],
   "grammar": [
