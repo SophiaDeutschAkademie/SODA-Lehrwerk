@@ -62,7 +62,7 @@
       "answer": 2,
       "evidence": "Je höher das Pfand, desto seltener lande eine Flasche im Müll.",
       "pairs": [["Je höher das Pfand", "Bei höherem Betrag"], ["desto seltener lande eine Flasche im Müll", "weniger Flaschen weggeworfen"]],
-      "explain": "je 높을수록 desto 드물게 병이 쓰레기로 간다는 뜻이에요. 정답은 이를 '금액이 크면 버려지는 병이 줄어든다'로 바꿔 말했어요. 나머지는 원인과 결과를 뒤집었어요."
+      "explain": "'Je höher …, desto seltener …'는 '보증금이 높을수록 병이 쓰레기로 가는 일이 더 드물다'는 뜻이에요. 정답은 이를 '금액이 크면 버려지는 병이 줄어든다'로 바꿔 말했어요. 나머지는 본문에 없는 내용이거나 원인과 결과를 뒤집은 문장이에요."
     },
     {
       "type": "mc",
@@ -152,14 +152,14 @@
     {
       "title": "목적·결과를 나타내는 접속사",
       "term": "finale und konsekutive Konnektoren",
-      "explain": "damit과 um … zu는 목적을 나타내요. 부문장의 주어가 주절의 주어와 같을 때는 um … zu를 쓰고, 주어가 다르면 damit을 써요. sodass는 결과, je … desto는 비례 관계를 나타내요. damit과 sodass는 종속절이라 동사가 문장 끝에 와요.",
+      "explain": "damit과 um … zu는 목적을 나타내요. 종속절의 주어가 주절의 주어와 같을 때는 um … zu를 쓰고, 주어가 다르면 damit을 써요. sodass는 결과, je … desto는 비례 관계를 나타내요. damit과 sodass는 종속절이라 동사가 문장 끝에 와요.",
       "pattern": "damit / sodass + … + 동사(문장 끝) · um + … + zu + 동사원형 · je + 비교급, desto + 비교급 + 동사",
       "examples": [
         {
           "de": "Je höher das Pfand, desto seltener lande eine Flasche im Müll.",
           "ko": "보증금이 높을수록 병이 쓰레기로 버려지는 일이 줄어든다고 해요.",
           "mark": ["Je höher", "desto seltener"],
-          "parts": [["Je höher das Pfand,", "접속사"], ["desto seltener", "접속사"], ["lande", "동사"], ["eine Flasche", "주어"], ["im Müll.", "부사어(장소)"]]
+          "parts": [["Je höher das Pfand,", "종속절"], ["desto seltener", "부사어"], ["lande", "동사"], ["eine Flasche", "주어"], ["im Müll.", "부사어(장소)"]]
         },
         {
           "de": "Um die Wartezeit zu verkürzen, ziehen wir einen zweiten Automaten in Betracht.",
@@ -173,7 +173,7 @@
           "mark": ["damit", "bleiben", "muss"]
         }
       ],
-      "tip": "um … zu는 주절과 주어가 같을 때만 써요. 병이 잘 보이게 하는 주체(die Flaschen)가 도시와 다른 damit 문장처럼 주어가 다르면 damit을 써야 해요."
+      "tip": "um … zu는 주절과 주어가 같을 때만 써요. 위의 damit 문장은 종속절의 주어(die Flaschen, niemand)가 주절의 주어(Mehrere Städte)와 달라서 damit을 써야 해요."
     },
     {
       "title": "기능동사 구문",
@@ -185,7 +185,7 @@
           "de": "Im Getränkemarkt von Thomas Reichert in Kassel steht der Rückgabeautomat den ganzen Tag über zur Verfügung, und trotzdem bilden sich samstags Schlangen.",
           "ko": "카셀에 있는 토마스 라이헤르트의 음료 매장에서는 반환 기계를 하루 종일 쓸 수 있는데도 토요일이면 줄이 생깁니다.",
           "mark": ["steht", "zur Verfügung"],
-          "parts": [["Im Getränkemarkt von Thomas Reichert in Kassel", "부사어(장소)"], ["steht", "동사"], ["der Rückgabeautomat", "주어"], ["den ganzen Tag über", "부사어(시간)"], ["zur Verfügung,", "동사(끝)"], ["und", "접속사"], ["trotzdem", "접속부사"], ["bilden", "동사"], ["sich", "재귀대명사"], ["samstags", "부사어(시간)"], ["Schlangen.", "주어"]]
+          "parts": [["Im Getränkemarkt von Thomas Reichert in Kassel", "부사어(장소)"], ["steht", "동사"], ["der Rückgabeautomat", "주어"], ["den ganzen Tag über", "부사어(시간)"], ["zur Verfügung,", "기타"], ["und", "접속사"], ["trotzdem", "접속부사"], ["bilden", "동사"], ["sich", "재귀대명사"], ["samstags", "부사어(시간)"], ["Schlangen.", "주어"]]
         },
         {
           "de": "Eine deutlichere Kennzeichnung komme daher durchaus in Frage.",
@@ -203,7 +203,7 @@
     {
       "title": "분사 수식어",
       "term": "Partizipialattribute",
-      "explain": "분사를 명사 앞에서 형용사처럼 쓸 수 있어요. 현재분사(sinkend)는 '~하고 있는', 과거분사(zurückgegeben)는 '~된'이라는 뜻이고, 형용사 어미변화를 해요. 분사 앞에 부사어를 붙이면 관계절 하나를 짧게 줄인 것과 같아요.",
+      "explain": "분사를 명사 앞에서 형용사처럼 쓸 수 있어요. 현재분사(sinkend)는 '~하고 있는', 과거분사(zurückgegeben)는 '~된'이라는 뜻이고, 형용사 어미변화를 해요. 분사 앞에 부사어나 전치사구를 붙여 길게 확장할 수 있고, 이런 표현은 관계절을 짧게 줄인 것과 같아요.",
       "pattern": "관사 + (부사어) + 분사 + 어미 + 명사",
       "examples": [
         {

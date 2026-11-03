@@ -79,11 +79,11 @@
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Die Kita gehört seit ihrer Gründung zu einer Vereinigung von Eltern.",
+      "q": "Die Kita wird seit ihrer Gründung von einem Zusammenschluss von Eltern geführt.",
       "answer": 0,
       "evidence": "Die Kita „Sonnenhof“ wurde 2009 von einem Elternverein gegründet und wird bis heute von ihm getragen.",
-      "pairs": [["von einem Elternverein gegründet", "zu einer Vereinigung von Eltern"], ["bis heute", "seit ihrer Gründung"]],
-      "explain": "어린이집은 2009년에 학부모회(Elternverein)가 세웠고 지금도 학부모회가 운영해요. 문제는 Elternverein을 '학부모들의 단체(Vereinigung von Eltern)'로, 'bis heute'를 '설립 이후 계속'으로 바꿔 말했어요."
+      "pairs": [["von einem Elternverein gegründet", "von einem Zusammenschluss von Eltern"], ["bis heute", "seit ihrer Gründung"]],
+      "explain": "어린이집은 2009년에 학부모회(Elternverein)가 세웠고 지금도 학부모회가 운영해요. 문제는 Elternverein을 '학부모들의 모임(Zusammenschluss von Eltern)'으로, 'bis heute'를 '설립 이후 계속(seit ihrer Gründung)'으로 바꿔 말했어요."
     },
     {
       "type": "mc",
@@ -118,10 +118,10 @@
       "type": "mc",
       "kind": "intent",
       "q": "Was will der Bewerber mit dem Beispiel vom Beet zeigen?",
-      "options": ["Er hat sich schon lange auf Gartenarbeit mit Kindern spezialisiert.", "Er will erklären, warum er seine bisherige Stelle verlassen möchte.", "Er will zeigen, wie er im Alltag auf die Wünsche der Kinder eingeht."],
+      "options": ["Er hat sich schon lange auf Gartenarbeit mit Kindern spezialisiert.", "Er will erklären, warum er seine bisherige Stelle verlassen möchte.", "Er will belegen, dass er Anregungen der Kinder im Alltag umsetzt."],
       "answer": 2,
       "evidence": "Im Sommer haben wir zum Beispiel auf Wunsch der Kinder ein Beet angelegt, auf dem sie selbst Tomaten und Kräuter gepflanzt haben.",
-      "pairs": [["auf Wunsch der Kinder", "auf die Wünsche der Kinder eingeht"], ["zum Beispiel", "Beispiel"]],
+      "pairs": [["auf Wunsch der Kinder", "Anregungen der Kinder"], ["ein Beet angelegt", "im Alltag umsetzt"]],
       "explain": "'zum Beispiel' 뒤의 화단 이야기는 바로 앞 문장의 '아이들의 생각을 받아들인다'를 보여 주는 사례예요. 아이들이 원해서 화단을 만들었다는 점이 핵심이에요. 정원 일을 전문으로 한다거나 이직 이유를 설명하는 내용은 아니에요."
     },
     {
@@ -148,10 +148,10 @@
       "type": "mc",
       "kind": "inference",
       "q": "Warum bittet der Bewerber wahrscheinlich um ein Gespräch über flexible Arbeitszeiten?",
-      "options": ["Er hält die 30 Wochenstunden der Stelle für zu wenig und möchte deutlich mehr arbeiten.", "Wechselnde Dienstzeiten, wie die Kita sie verlangt, wären mit seiner Tochter schwer vereinbar.", "Er will vor dem Probearbeitstag klären, ob er im Herbst Urlaub für die Einschulung bekommt."],
+      "options": ["Er hält die 30 Wochenstunden der Stelle für zu wenig und möchte deutlich mehr arbeiten.", "Wechselnde Dienstzeiten, wie sie die Kita verlangt, passen nicht zu seinem Familienalltag.", "Er will vor dem Probearbeitstag klären, ob er im Herbst Urlaub für die Einschulung bekommt."],
       "answer": 1,
       "evidence": "Könnten wir über flexible Arbeitszeiten sprechen?",
-      "pairs": [["im Schichtdienst", "Wechselnde Dienstzeiten"], ["Wegen meiner Tochter", "mit seiner Tochter schwer vereinbar"]],
+      "pairs": [["im Schichtdienst", "Wechselnde Dienstzeiten"], ["Wegen meiner Tochter", "zu seinem Familienalltag"]],
       "explain": "광고는 교대 근무(Schichtdienst)를 할 수 있는 사람을 찾고, 지원자는 딸 때문에 유연한 근무 시간을 부탁해요. 그래서 교대 근무가 딸을 돌보는 일과 맞지 않을 수 있다고 추론할 수 있어요. 근무 시간을 늘리고 싶다거나 휴가를 묻는 내용은 없어요."
     }
   ],
@@ -159,7 +159,7 @@
     {
       "title": "전치사가 붙는 관계절",
       "term": "Relativsatz mit Präposition",
-      "explain": "관계절이 전치사와 함께 쓰이면 전치사가 관계대명사 바로 앞에 와요. 관계대명사의 성과 수는 앞의 명사(선행사)에 맞추고, 격은 전치사가 정해요. 예를 들어 über는 4격을 지배하고, mit는 항상 3격을 지배해요. 관계절은 쉼표로 구분하고 동사는 관계절 끝에 가요.",
+      "explain": "관계절이 전치사와 함께 쓰이면 전치사가 관계대명사 바로 앞에 와요. 관계대명사의 성과 수는 앞의 명사(선행사)에 맞추고, 격은 전치사가 정해요. 예를 들어 hören über는 4격(über die), mit는 항상 3격(mit denen)과 함께 써요. 관계절은 쉼표로 구분하고 동사는 관계절 끝에 가요.",
       "pattern": "선행사, + 전치사 + 관계대명사 + … + 동사(끝),",
       "examples": [
         {

@@ -66,7 +66,7 @@
       "q": "Was stimmt über die Preise bei Frau Demir?",
       "options": ["Die Birnen kosten pro Kilo weniger als die Äpfel.", "Die Äpfel sind pro Kilo billiger als die Birnen.", "Alle Sorten kosten bei ihr gleich viel pro Kilo."],
       "answer": 0,
-      "evidence": "die kleinen Birnen sind mit zwei Euro am billigsten",
+      "evidence": "Die roten Äpfel kosten zwei Euro fünfzig das Kilo, die kleinen Birnen sind mit zwei Euro am billigsten",
       "pairs": [["am billigsten", "kosten pro Kilo weniger als"]],
       "explain": "작은 배(Birnen)가 2유로로 가장 싸고, 사과는 2유로 50센트예요. 그래서 배가 사과보다 킬로그램당 싸요. 사과가 더 싸다는 선택지는 두 과일을 서로 바꿔 놓은 함정이에요."
     },
@@ -93,7 +93,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "Wann packen die Händler ihre Waren wieder ein?",
-      "options": ["Schon am späten Vormittag, wenn Jana über den Platz geht.", "Erst am Abend, wenn der Käsestand leer verkauft ist.", "Am frühen Nachmittag, wenn nur noch Reste übrig sind."],
+      "options": ["Schon am späten Vormittag, wenn Jana über den Platz geht.", "Erst am Abend, wenn alle Käsesorten ausverkauft sind.", "Am frühen Nachmittag, wenn der Markttag zu Ende geht."],
       "answer": 2,
       "evidence": "Gegen zwei Uhr packen alle ihre Reste ein",
       "pairs": [["Gegen zwei Uhr", "Am frühen Nachmittag"]],
@@ -148,7 +148,7 @@
         {
           "de": "Ich lasse jeden probieren, weil ich will, dass man genau weiß, was man kauft",
           "ko": "저는 누구에게나 맛을 보게 해 드려요. 무엇을 사는지 정확히 알았으면 해서요.",
-          "mark": ["weil ich will", "dass man genau weiß", "was man kauft"]
+          "mark": ["weil ich will", "dass man genau weiß"]
         }
       ],
       "tip": "weil 뒤에서는 동사가 끝으로 가요(weil sie schläft). 같은 뜻의 denn 뒤에서는 동사가 두 번째 자리에 그대로 있어요(denn sie schläft)."
