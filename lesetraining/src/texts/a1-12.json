@@ -1,0 +1,240 @@
+{
+  "id": "a1-12",
+  "level": "A1",
+  "no": 12,
+  "title": "Im Café Sonnenschein",
+  "titleKo": "카페 존넨샤인에서",
+  "type": "Dialog",
+  "typeKo": "카페 대화문",
+  "intro": "카페에서 두 손님이 음료와 빵을 주문하고 계산하는 대화예요.",
+  "focus": ["möchten + 4격", "가격 · kosten · Euro", "W-의문문 · 예/아니오 의문문"],
+  "paragraphs": [
+    {
+      "label": "Herr Bauer",
+      "de": "Guten Tag! Was möchten Sie trinken?",
+      "ko": "안녕하세요! 무엇을 마시고 싶으세요?"
+    },
+    {
+      "label": "Lena",
+      "de": "Ich möchte einen Kaffee, bitte. Und du, Tom? Was möchtest du?",
+      "ko": "저는 커피 한 잔 주세요. 톰, 너는 뭘 마시고 싶어요?"
+    },
+    {
+      "label": "Tom",
+      "de": "Ich möchte eine Cola. Haben Sie auch Brötchen?",
+      "ko": "저는 콜라로 할게요. 롤빵도 있나요?"
+    },
+    {
+      "label": "Herr Bauer",
+      "de": "Ja, wir haben Brötchen mit Käse oder mit Schinken. Ein Brötchen kostet 2 Euro.",
+      "ko": "네, 치즈 롤빵이나 햄 롤빵이 있어요. 롤빵은 하나에 2유로예요."
+    },
+    {
+      "label": "Tom",
+      "de": "Dann möchte ich ein Brötchen mit Käse, bitte.",
+      "ko": "그럼 치즈 롤빵 하나 주세요."
+    },
+    {
+      "label": "Lena",
+      "de": "Und ich möchte ein Stück Apfelkuchen. Kostet der Kuchen auch 2 Euro?",
+      "ko": "그리고 저는 사과 케이크 한 조각 주세요. 케이크도 2유로인가요?"
+    },
+    {
+      "label": "Herr Bauer",
+      "de": "Nein, der Kuchen kostet 3,50 Euro. Der Kaffee kostet 2,80 Euro, die Cola 3 Euro.",
+      "ko": "아니요, 케이크는 3,50유로예요. 커피는 2,80유로이고, 콜라는 3유로예요."
+    },
+    {
+      "label": "Lena",
+      "de": "Oh, dann möchte ich keinen Kuchen. Ich nehme lieber auch ein Brötchen, mit Schinken.",
+      "ko": "아, 그럼 케이크는 먹지 않을래요. 저도 롤빵으로 할게요, 햄을 넣은 걸로요."
+    },
+    {
+      "label": "Herr Bauer",
+      "de": "Gern. Einen Kaffee, eine Cola und zwei Brötchen. Zahlen Sie zusammen oder getrennt?",
+      "ko": "좋아요. 커피 한 잔, 콜라 한 잔, 롤빵 두 개네요. 같이 계산하시겠어요, 따로 계산하시겠어요?"
+    },
+    {
+      "label": "Tom",
+      "de": "Zusammen, bitte. Wie viel macht das?",
+      "ko": "같이 할게요. 얼마예요?"
+    },
+    {
+      "label": "Herr Bauer",
+      "de": "Das macht 9,80 Euro.",
+      "ko": "9,80유로예요."
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Es gibt im Café nur eine Sorte Brötchen.",
+      "answer": 1,
+      "evidence": "Ja, wir haben Brötchen mit Käse oder mit Schinken.",
+      "pairs": [["mit Käse oder mit Schinken", "nur eine Sorte"]],
+      "explain": "바우어 씨는 치즈 롤빵과 햄 롤빵, 두 종류가 있다고 말해요. 그래서 '한 종류뿐'이라는 문장은 틀려요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was bestellt Tom?",
+      "options": ["Ein kaltes Getränk und ein Stück Kuchen", "Ein warmes Getränk und ein Käsebrötchen", "Ein kaltes Getränk und ein Käsebrötchen"],
+      "answer": 2,
+      "evidence": "Dann möchte ich ein Brötchen mit Käse, bitte.",
+      "pairs": [["eine Cola", "kaltes Getränk"], ["ein Brötchen mit Käse", "ein Käsebrötchen"]],
+      "explain": "톰은 콜라(Cola)와 치즈 롤빵을 주문해요. Cola를 '차가운 음료'로, Brötchen mit Käse를 합성어 Käsebrötchen으로 바꿔 말했어요. 따뜻한 음료(커피)는 레나가 주문했고, 케이크는 레나가 원했다가 취소해요."
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "q": "Warum nimmt Lena keinen Kuchen mehr?",
+      "options": ["Er kostet mehr, als sie vorher gedacht hat.", "Er kostet weniger als das Käsebrötchen.", "Der Kellner hat leider keinen Kuchen mehr."],
+      "answer": 0,
+      "evidence": "Nein, der Kuchen kostet 3,50 Euro.",
+      "pairs": [["3,50 Euro", "mehr, als sie vorher gedacht hat"]],
+      "explain": "레나는 케이크도 2유로인지 물었는데, 실제로는 3,50유로예요. 생각보다 비싸서 마음을 바꾼 거예요. 케이크는 롤빵(2유로)보다 비싸고, 케이크가 다 떨어졌다는 말도 없어요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Der Kaffee kostet weniger als die Cola.",
+      "answer": 0,
+      "evidence": "Der Kaffee kostet 2,80 Euro, die Cola 3 Euro.",
+      "pairs": [["2,80 Euro", "weniger"], ["3 Euro", "die Cola"]],
+      "explain": "커피는 2,80유로, 콜라는 3유로예요. 2,80유로가 더 싸니까 맞는 문장이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "paraphrase",
+      "q": "Was bedeutet der Satz „Zahlen Sie zusammen oder getrennt?“",
+      "options": ["Der Kellner fragt, ob die beiden am selben Tisch sitzen.", "Der Kellner fragt, ob es eine oder zwei Rechnungen gibt.", "Der Kellner fragt, ob die Gäste noch etwas bestellen."],
+      "answer": 1,
+      "evidence": "Zahlen Sie zusammen oder getrennt?",
+      "pairs": [["zusammen oder getrennt", "eine oder zwei Rechnungen"]],
+      "explain": "zusammen은 한 번에 같이 계산한다는 뜻이고, getrennt는 따로 계산한다는 뜻이에요. 그래서 계산서가 한 장인지 두 장인지 묻는 문장이에요. 자리나 추가 주문을 묻는 말이 아니에요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Die Rechnung ist höher als zehn Euro.",
+      "answer": 1,
+      "evidence": "Das macht 9,80 Euro.",
+      "pairs": [["9,80 Euro", "höher als zehn Euro"]],
+      "explain": "합계는 9,80유로예요. 이것은 10유로보다 적어요. 그래서 '10유로보다 많다'는 문장은 틀려요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "möchten + 4격 – 원하는 것 말하기",
+      "term": "möchten + Akkusativ",
+      "explain": "möchten은 '~을 원해요, ~을 주세요'라는 정중한 표현이에요. 원하는 것은 4격으로 써요. 4격에서는 남성 명사만 부정관사가 einen으로 바뀌고, 여성(eine)과 중성(ein)은 그대로예요. 변화형은 ich möchte, du möchtest, Sie möchten이에요.",
+      "pattern": "möchten + 4격 (einen + 남성 · eine + 여성 · ein + 중성)",
+      "examples": [
+        {
+          "de": "Ich möchte einen Kaffee, bitte.",
+          "ko": "저는 커피 한 잔 주세요.",
+          "mark": ["möchte einen Kaffee"],
+          "parts": [["Ich", "주어"], ["möchte", "동사"], ["einen Kaffee,", "4격 목적어"], ["bitte.", "기타"]]
+        },
+        {
+          "de": "Und ich möchte ein Stück Apfelkuchen.",
+          "ko": "그리고 저는 사과 케이크 한 조각 주세요.",
+          "mark": ["möchte ein Stück Apfelkuchen"],
+          "parts": [["Und", "접속사"], ["ich", "주어"], ["möchte", "동사"], ["ein Stück Apfelkuchen.", "4격 목적어"]]
+        },
+        {
+          "de": "Ich möchte eine Cola.",
+          "ko": "저는 콜라로 할게요.",
+          "mark": ["eine Cola"]
+        }
+      ],
+      "tip": "부정은 kein으로 해요. 남성 4격은 keinen이에요(Ich möchte keinen Kuchen). 시간 표현이나 Dann이 앞에 오면 동사가 2번 자리에 오고 주어는 동사 뒤로 가요(Dann möchte ich …)."
+    },
+    {
+      "title": "가격 말하기 – kosten · Euro",
+      "term": "kosten und Preisangaben",
+      "explain": "가격은 kosten으로 말해요. 주어는 물건이고, 가격이 그 뒤에 와요. 금액 뒤의 Euro는 복수여도 모양이 바뀌지 않아요(2 Euro, 3 Euro). 소수점 자리는 쉼표로 써요. 3,50 Euro는 drei Euro fünfzig로 읽어요. 합계를 말할 때는 Das macht … Euro.를 써요.",
+      "pattern": "물건 + kostet + 금액 · Das macht + 금액",
+      "examples": [
+        {
+          "de": "Ein Brötchen kostet 2 Euro.",
+          "ko": "롤빵은 하나에 2유로예요.",
+          "mark": ["kostet 2 Euro"],
+          "parts": [["Ein Brötchen", "주어"], ["kostet", "동사"], ["2 Euro.", "기타"]]
+        },
+        {
+          "de": "Nein, der Kuchen kostet 3,50 Euro.",
+          "ko": "아니요, 케이크는 3,50유로예요.",
+          "mark": ["kostet 3,50 Euro"]
+        },
+        {
+          "de": "Das macht 9,80 Euro.",
+          "ko": "9,80유로예요.",
+          "mark": ["macht 9,80 Euro"]
+        }
+      ],
+      "tip": "Der Kaffee kostet 2,80 Euro, die Cola 3 Euro.처럼 같은 동사를 반복하지 않고 생략할 수 있어요. 이때 die Cola 뒤에는 kostet가 생략된 거예요."
+    },
+    {
+      "title": "의문문 – W-의문문과 예/아니오 의문문",
+      "term": "W-Frage und Ja/Nein-Frage",
+      "explain": "W-의문문은 의문사(Was, Wie viel)로 시작하고, 동사가 2번 자리에 와요. 예/아니오로 답하는 의문문은 동사로 시작해요. 이 경우 동사가 1번 자리에 오고 주어가 그 뒤에 와요. 두 의문문 모두 문장 끝에 물음표를 써요.",
+      "pattern": "의문사 + 동사 + 주어 … ? · 동사 + 주어 … ?",
+      "examples": [
+        {
+          "de": "Was möchten Sie trinken?",
+          "ko": "무엇을 마시고 싶으세요?",
+          "mark": ["Was möchten"],
+          "parts": [["Was", "의문사"], ["möchten", "동사"], ["Sie", "주어"], ["trinken?", "동사(끝)"]]
+        },
+        {
+          "de": "Haben Sie auch Brötchen?",
+          "ko": "롤빵도 있나요?",
+          "mark": ["Haben Sie"],
+          "parts": [["Haben", "동사"], ["Sie", "주어"], ["auch", "기타"], ["Brötchen?", "4격 목적어"]]
+        },
+        {
+          "de": "Kostet der Kuchen auch 2 Euro?",
+          "ko": "케이크도 2유로인가요?",
+          "mark": ["Kostet der Kuchen"]
+        }
+      ],
+      "tip": "예/아니오 의문문에는 Ja나 Nein으로 대답해요. Wie viel macht das?처럼 의문사가 둘 이상의 단어일 때도 동사는 그 바로 뒤에 와요."
+    }
+  ],
+  "vocab": [
+    { "de": "die Cola, -s", "ko": "콜라" },
+    { "de": "das Brötchen, -", "ko": "롤빵, 작은 빵" },
+    { "de": "der Käse (Sg.)", "ko": "치즈" },
+    { "de": "der Schinken, -", "ko": "햄" },
+    { "de": "das Stück, -e", "ko": "조각, 한 개" },
+    { "de": "der Apfelkuchen, -", "ko": "사과 케이크" },
+    { "de": "kosten (kostet, kostete, hat gekostet)", "ko": "값이 ~이다" },
+    { "de": "zahlen", "ko": "지불하다, 계산하다" },
+    { "de": "zusammen", "ko": "함께, 합쳐서" },
+    { "de": "getrennt", "ko": "따로, 분리해서" },
+    { "de": "lieber", "ko": "차라리, 오히려 (gern의 비교급)" },
+    { "de": "trinken (trinkt, trank, hat getrunken)", "ko": "마시다" }
+  ],
+  "phrases": [
+    {
+      "de": "Ich möchte …, bitte.",
+      "ko": "저는 …을/를 주세요",
+      "ex": "Ich möchte einen Kaffee, bitte.",
+      "exko": "저는 커피 한 잔 주세요."
+    },
+    {
+      "de": "Das macht … Euro.",
+      "ko": "합계 …유로예요",
+      "ex": "Das macht 9,80 Euro.",
+      "exko": "9,80유로예요."
+    },
+    {
+      "de": "zusammen oder getrennt zahlen",
+      "ko": "같이 계산하다, 따로 계산하다",
+      "ex": "Zahlen Sie zusammen oder getrennt?",
+      "exko": "같이 계산하시겠어요, 따로 계산하시겠어요?"
+    }
+  ]
+}
