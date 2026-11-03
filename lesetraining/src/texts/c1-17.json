@@ -19,7 +19,7 @@
     },
     {
       "de": "Zur selben Zeit setzte jedoch eine Entwicklung ein, in deren Verlauf sich das Wort emotional auflud. Die Industrialisierung trieb Hunderttausende vom Land in die wachsenden Städte, viele wanderten nach Übersee aus. Je weiter die Menschen fortzogen, desto sehnsüchtiger sprachen sie von dem, was sie zurückgelassen hatten. Lieder und Gedichte, in deren Mittelpunkt das verlassene Dorf stand, machten aus einem Rechtsbegriff einen Sehnsuchtsort. Fortan war Heimat vor allem das, was fehlte. Um 1900 formierte sich schließlich eine Heimatschutzbewegung, die Landschaften, Bauweisen und Bräuche vor den Folgen der Moderne bewahren wollte.",
-      "ko": "그런데 같은 시기에, 이 단어에 감정이 실리게 되는 변화가 시작되었습니다. 산업화로 수십만 명이 시골을 떠나 커져 가는 도시로 몰려들었고, 많은 사람이 바다 건너로 이주했습니다. 사람들은 멀리 떠날수록 두고 온 것을 더 애틋하게 이야기했습니다. 버려진 마을을 중심에 둔 노래와 시들은 법률 용어를 그리움의 장소로 바꾸어 놓았습니다. 그때부터 Heimat는 무엇보다 곁에 없는 것이 되었습니다. 1900년 무렵에는 마침내 풍경과 건축 양식과 풍습을 근대화의 영향으로부터 지키려는 향토 보호 운동이 생겨났습니다."
+      "ko": "그런데 같은 시기에, 이 단어에 감정이 실리게 되는 변화가 시작되었습니다. 산업화로 수십만 명이 시골을 떠나 커져 가는 도시로 몰려들었고, 많은 사람이 바다 건너로 이주했습니다. 사람들은 멀리 떠날수록 두고 온 것을 더 애틋하게 이야기했습니다. 떠나온 마을을 중심에 둔 노래와 시들은 법률 용어를 그리움의 장소로 바꾸어 놓았습니다. 그때부터 Heimat는 무엇보다 곁에 없는 것이 되었습니다. 1900년 무렵에는 마침내 풍경과 건축 양식과 풍습을 근대화의 영향으로부터 지키려는 향토 보호 운동이 생겨났습니다."
     },
     {
       "de": "Wie anfällig ein solches Wort für Missbrauch ist, zeigte sich wenige Jahrzehnte später. Die Nationalsozialisten vereinnahmten den Begriff und verengten ihn auf ihre Ideologie von „Blut und Boden“, aus deren Logik folgte, dass manchen Menschen eine Heimat zugestanden, anderen dagegen abgesprochen wurde. Nach 1945 hätte man erwarten können, dass das Wort aus dem Wortschatz verschwinden würde. Stattdessen erlebte es im Kino eine Blütezeit: Die Heimatfilme der Fünfzigerjahre, an deren Schauplätzen die Welt noch in Ordnung schien, lockten ein Millionenpublikum an. Gerade vielen Vertriebenen, so heißt es oft, boten sie eine Art Ersatzheimat. Entschärft wurde der Begriff, wenn man so will, durch Kitsch.",
@@ -72,7 +72,7 @@
       "answer": 0,
       "evidence": "Fortan war Heimat vor allem das, was fehlte.",
       "pairs": [["Fortan", "Von da an"], ["das, was fehlte", "einen Verlust"]],
-      "explain": "사람들이 고향을 떠나면서 Heimat는 그때부터 무엇보다 '곁에 없는 것', 곧 잃어버린 것을 뜻하게 되었어요. 노래는 오히려 버려진 마을을 중심에 두었고, 건조한 행정 용어였던 것은 그 이전의 일이에요."
+      "explain": "사람들이 고향을 떠나면서 Heimat는 그때부터 무엇보다 '곁에 없는 것', 곧 잃어버린 것을 뜻하게 되었어요. 노래는 오히려 떠나온 마을을 중심에 두었고, 건조한 행정 용어였던 것은 그 이전의 일이에요."
     },
     {
       "type": "rfn",
@@ -142,7 +142,7 @@
       "examples": [
         {
           "de": "Lieder und Gedichte, in deren Mittelpunkt das verlassene Dorf stand, machten aus einem Rechtsbegriff einen Sehnsuchtsort.",
-          "ko": "버려진 마을을 중심에 둔 노래와 시들은 법률 용어를 그리움의 장소로 바꾸어 놓았습니다.",
+          "ko": "떠나온 마을을 중심에 둔 노래와 시들은 법률 용어를 그리움의 장소로 바꾸어 놓았습니다.",
           "mark": ["in deren Mittelpunkt", "stand"],
           "parts": [["Lieder und Gedichte,", "주어"], ["in deren Mittelpunkt das verlassene Dorf stand,", "관계절"], ["machten", "동사"], ["aus einem Rechtsbegriff", "전치사 목적어"], ["einen Sehnsuchtsort.", "4격 목적어"]]
         },
@@ -205,11 +205,11 @@
         },
         {
           "de": "In mehreren deutschen Staaten legte das sogenannte Heimatrecht fest, in welcher Gemeinde jemand bleiben durfte und welche ihn im Fall der Armut zu versorgen hatte.",
-          "ko": "여러 독일 국가에서는 이른바 ‘고향권’이 누가 어느 지방 공동체에 머물 수 있는지, 그리고 가난해졌을 때 어느 공동체가 그 사람을 부양해야 하는지를 정했습니다.",
+          "ko": "여러 독일 국가에서는 이른바 ‘고향권(Heimatrecht)’이 누가 어느 지방 공동체에 머물 수 있는지, 그리고 가난해졌을 때 어느 공동체가 그 사람을 부양해야 하는지를 정했습니다.",
           "mark": ["sogenannte"]
         }
       ],
-      "tip": "im Sinne von는 '~이라는 뜻으로'예요. Heimat im Sinne von Herkunft처럼 한 낱말의 여러 뜻 가운데 하나를 골라 말할 때 써요."
+      "tip": "im Sinne von은 '~이라는 뜻으로'예요. Heimat im Sinne von Herkunft처럼 한 낱말의 여러 뜻 가운데 하나를 골라 말할 때 써요."
     },
     {
       "title": "의미 변화를 말하는 동사",

@@ -19,8 +19,8 @@
       "ko": "베른트 헬비히는 자신의 기고문에 「마지막 장」이라는 제목을 붙였고, 분명함에서는 더할 나위가 없습니다. 그의 주장에 따르면 독일 사람들은 이제 책을 거의 읽지 않고, 책은 사라져 가는 물건이며, 스마트폰과 함께 자란 세대는 머지않아 긴 글을 소화하지 못하게 된다고 합니다. 그 근거로 그는 여가 시간에 꾸준히 책을 손에 드는 청소년이 이제 네 명 중 한 명뿐이라는 설문 조사를 듭니다. 자녀를 사랑한다면 태블릿을 빼앗아야 하고, 학교는 이제라도 정해진 고전 목록으로 돌아가야 한다고 헬비히는 조언합니다. 저는 이 진단이 틀렸다고 봅니다. 수치를 의심해서가 아니라, 그 수치가 헬비히의 생각과는 다른 것을 재고 있기 때문입니다."
     },
     {
-      "de": "Die Frage, wie oft jemand ein Buch in die Hand nimmt, sagt nämlich wenig darüber aus, wie viel er liest. Den ganzen Tag über bewegen sich Jugendliche in geschriebener Sprache: Sie lesen Nachrichten und Erklärtexte, Untertitel und Kommentare, Liedtexte und selbst verfasste Fortsetzungen ihrer Lieblingsromane, und sie schreiben dabei vermutlich mehr als jede Generation vor ihnen. Auch wer morgens im Bus über sein Handy gebeugt sitzt, liest in aller Regel, nur eben keinen Roman. Über die Qualität dieser Texte lässt sich streiten. Von einer Jugend, die der Schrift den Rücken kehrt, kann jedoch mitnichten die Rede sein.",
-      "ko": "누군가가 얼마나 자주 책을 손에 드는지 물어서는 그 사람이 얼마나 많이 읽는지 거의 알 수 없기 때문입니다. 청소년들은 하루 종일 글 속에서 지냅니다. 메시지와 설명 글, 자막과 댓글, 노래 가사, 좋아하는 소설의 뒷이야기를 직접 지어 쓴 글까지 읽고, 그러면서 아마 이전의 어떤 세대보다 많이 쓰고 있을 것입니다. 아침 버스에서 휴대전화를 들여다보는 사람도 대개는 무언가를 읽고 있습니다. 다만 그것이 소설이 아닐 뿐입니다. 이런 글의 수준에 대해서는 의견이 갈릴 수 있습니다. 그러나 글에 등을 돌린 청소년 세대라는 말은 결코 맞지 않습니다."
+      "de": "Wie oft jemand ein Buch in die Hand nimmt, sagt nämlich wenig darüber aus, wie viel er liest. Den ganzen Tag über bewegen sich Jugendliche in geschriebener Sprache: Sie lesen Nachrichten und Erklärtexte, Untertitel und Kommentare, Liedtexte und selbst verfasste Fortsetzungen ihrer Lieblingsromane, und sie schreiben dabei vermutlich mehr als jede Generation vor ihnen. Auch wer morgens im Bus über sein Handy gebeugt sitzt, liest in aller Regel, nur eben keinen Roman. Über die Qualität dieser Texte lässt sich streiten. Von einer Jugend, die der Schrift den Rücken kehrt, kann jedoch mitnichten die Rede sein.",
+      "ko": "누군가가 얼마나 자주 책을 손에 드는지로는 그 사람이 얼마나 많이 읽는지 거의 알 수 없기 때문입니다. 청소년들은 하루 종일 글 속에서 지냅니다. 메시지와 설명 글, 자막과 댓글, 노래 가사, 좋아하는 소설의 뒷이야기를 직접 지어 쓴 글까지 읽고, 그러면서 아마 이전의 어떤 세대보다 많이 쓰고 있을 것입니다. 아침 버스에서 휴대전화를 들여다보는 사람도 대개는 무언가를 읽고 있습니다. 다만 그것이 소설이 아닐 뿐입니다. 이런 글의 수준에 대해서는 의견이 갈릴 수 있습니다. 그러나 글에 등을 돌린 청소년 세대라는 말은 결코 맞지 않습니다."
     },
     {
       "de": "Entgegen seiner Annahme schrecken viele junge Leute auch vor langen Texten nicht zurück. In meinen Seminaren sitzen Studierende, die neben dem Studium mehrbändige Fantasyreihen verschlingen und darüber in Online-Foren seitenlange Besprechungen verfassen. Manche von ihnen haben in einem einzigen Sommer mehr Seiten bewältigt als ich in meinem ersten Studienjahr. Ungeachtet aller Klagen über schwindende Konzentration lesen sie diese Bücher nicht etwa nebenbei, sondern mit einer Ausdauer, die ich mir bei der Pflichtlektüre manchmal wünschen würde.",
@@ -67,11 +67,11 @@
     {
       "type": "mc",
       "kind": "paraphrase",
-      "q": "Was will die Autorin mit dem Satz „Die Frage, wie oft jemand ein Buch in die Hand nimmt, sagt nämlich wenig darüber aus, wie viel er liest.“ sagen?",
+      "q": "Was will die Autorin mit dem Satz „Wie oft jemand ein Buch in die Hand nimmt, sagt nämlich wenig darüber aus, wie viel er liest.“ sagen?",
       "options": ["Seltenes Bücherlesen schließt nicht aus, dass man insgesamt sehr viel liest.", "Wer oft zu Büchern greift, liest damit automatisch auch am allermeisten.", "Wer kaum Bücher liest, liest auch im Alltag nur wenige andere Texte.", "Die Zahl der Bücher verrät über das Leseverhalten mehr, als man glaubt."],
       "answer": 0,
-      "evidence": "Die Frage, wie oft jemand ein Buch in die Hand nimmt, sagt nämlich wenig darüber aus, wie viel er liest.",
-      "pairs": [["wie oft jemand ein Buch in die Hand nimmt", "Seltenes Bücherlesen"], ["wie viel er liest", "insgesamt sehr viel liest"]],
+      "evidence": "Wie oft jemand ein Buch in die Hand nimmt, sagt nämlich wenig darüber aus, wie viel er liest.",
+      "pairs": [["Wie oft jemand ein Buch in die Hand nimmt", "Seltenes Bücherlesen"], ["wie viel er liest", "insgesamt sehr viel liest"]],
       "explain": "책을 얼마나 자주 손에 드는지로는 얼마나 많이 읽는지 알 수 없다는 뜻이에요. 정답은 이것을 책을 드물게 읽어도 전체적으로는 많이 읽을 수 있다는 내용으로 바꿔 말했어요. 나머지는 모두 책의 양이 읽기의 양을 보여 준다고 해서 이 문장과 반대예요."
     },
     {
