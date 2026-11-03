@@ -110,7 +110,7 @@
       "options": ["Finn muss für die Reise ein Hotel in Korea suchen.", "Minji darf in Lüneburg immer bei Familie Krüger wohnen.", "Finn kann jederzeit bei Minjis Familie übernachten."],
       "answer": 2,
       "evidence": "Bei uns ist immer ein Zimmer für ihn frei.",
-      "pairs": [["Bei uns ist immer ein Zimmer für ihn frei.", "Finn kann jederzeit bei Minjis Familie übernachten."]],
+      "pairs": [["Bei uns", "bei Minjis Familie"], ["immer", "jederzeit"], ["ein Zimmer für ihn frei", "übernachten"]],
       "explain": "'우리 집에는 언제든 핀을 위한 방이 비어 있다'는 말은 핀이 언제 와도 민지네 집에서 묵을 수 있다는 뜻이에요. bei uns는 크뤼거 가족이 아니라 부산에 있는 민지네 가족을 가리켜요. 호텔을 찾아야 한다는 말은 반대 내용이에요."
     },
     {
