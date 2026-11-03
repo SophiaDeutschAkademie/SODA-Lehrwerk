@@ -115,7 +115,7 @@
       "answer": 1,
       "evidence": "Aber das wäre gelogen.",
       "pairs": [["Aber das wäre gelogen.", "etwas unsicher"], ["Ich freue mich auf meine Ausbildung", "voller Vorfreude"]],
-      "explain": "로냐는 두렵지 않다고 말하면 거짓말이 될 거라고 해요. 동시에 목수 직업 교육을 기대한다고 하니까 설레면서도 조금 불안하다고 추론할 수 있어요. 확실히 아는 것은 하나뿐이라고 했으니 무엇을 원하는지 정확히 안다는 말은 틀려요."
+      "explain": "로냐는 두렵지 않다고 말하면 거짓말이 될 거라고 해요. 동시에 목수 직업 교육을 기대한다고 하니까 설레면서도 조금 불안하다고 추론할 수 있어요. 두렵지 않다고 하면 거짓말이라고 했으니 두려움이 없다는 보기는 틀리고, 직업 교육을 기대한다고 했으니 직업 선택을 후회한다는 보기도 틀려요."
     },
     {
       "type": "mc",
