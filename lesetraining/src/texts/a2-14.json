@@ -30,7 +30,7 @@
     },
     {
       "de": "2. In der Mittagszeit von 13 bis 15 Uhr sollen alle Bewohner Rücksicht nehmen. Dann schlafen viele Kinder und ältere Menschen.",
-      "ko": "2. 점심시간인 13시부터 15시까지도 모든 주민이 이웃을 배려해야 해요. 그 시간에는 낮잠을 자는 아이와 어르신이 많아요."
+      "ko": "2. 점심시간인 13시부터 15시까지는 모든 주민이 이웃을 배려해야 해요. 그 시간에는 낮잠을 자는 아이와 어르신이 많아요."
     },
     {
       "de": "3. An Sonn- und Feiertagen darf niemand bohren oder hämmern. Renovieren Sie bitte nur von Montag bis Samstag.",
@@ -41,13 +41,13 @@
       "ko": "4. 파티를 하시면 일주일 전에 이웃에게 알려야 해요. 계단실에 쪽지 한 장을 붙이면 충분해요. 그때도 밤 10시부터는 손님들이 조용히 해야 해요."
     },
     {
-      "de": "Wenn es weitere Beschwerden gibt, müssen wir den betroffenen Mietern einen offiziellen Brief schicken. Vielen Dank für Ihr Verständnis!",
+      "de": "Wenn es weitere Beschwerden gibt, müssen wir den betreffenden Mietern einen offiziellen Brief schicken. Vielen Dank für Ihr Verständnis!",
       "ko": "앞으로도 불만이 들어오면 해당 세입자분께 정식으로 서면 통지를 보낼 수밖에 없어요. 양해해 주셔서 감사해요."
     },
     {
       "style": "meta",
-      "de": "Ihre Hausverwaltung Lindner, 4. März",
-      "ko": "린트너 주택관리 드림, 3월 4일"
+      "de": "Ihre Hausverwaltung Wagner, 4. März",
+      "ko": "바그너 주택관리 드림, 3월 4일"
     },
     {
       "style": "meta",
@@ -158,7 +158,7 @@
         },
         {
           "de": "In der Mittagszeit von 13 bis 15 Uhr sollen alle Bewohner Rücksicht nehmen.",
-          "ko": "점심시간인 13시부터 15시까지도 모든 주민이 이웃을 배려해야 해요.",
+          "ko": "점심시간인 13시부터 15시까지는 모든 주민이 이웃을 배려해야 해요.",
           "mark": ["sollen", "Rücksicht nehmen"],
           "parts": [["In der Mittagszeit von 13 bis 15 Uhr", "부사어(시간)"], ["sollen", "동사"], ["alle Bewohner", "주어"], ["Rücksicht", "4격 목적어"], ["nehmen.", "동사(끝)"]]
         },
@@ -177,10 +177,10 @@
       "pattern": "Wenn + 주어 + … + 동사(끝), 동사 + 주어 …",
       "examples": [
         {
-          "de": "Wenn es weitere Beschwerden gibt, müssen wir den betroffenen Mietern einen offiziellen Brief schicken.",
+          "de": "Wenn es weitere Beschwerden gibt, müssen wir den betreffenden Mietern einen offiziellen Brief schicken.",
           "ko": "앞으로도 불만이 들어오면 해당 세입자분께 정식으로 서면 통지를 보낼 수밖에 없어요.",
           "mark": ["Wenn", "gibt", "müssen wir"],
-          "parts": [["Wenn es weitere Beschwerden gibt,", "종속절"], ["müssen", "동사"], ["wir", "주어"], ["den betroffenen Mietern", "3격 목적어"], ["einen offiziellen Brief", "4격 목적어"], ["schicken.", "동사(끝)"]]
+          "parts": [["Wenn es weitere Beschwerden gibt,", "종속절"], ["müssen", "동사"], ["wir", "주어"], ["den betreffenden Mietern", "3격 목적어"], ["einen offiziellen Brief", "4격 목적어"], ["schicken.", "동사(끝)"]]
         },
         {
           "de": "Wenn Sie eine Party feiern, müssen Sie Ihre Nachbarn eine Woche vorher informieren.",
@@ -220,7 +220,7 @@
           "parts": [["Letzten Sonntag", "부사어(시간)"], ["hat", "동사"], ["Ihr Hausmeister", "주어"], ["schon um acht Uhr morgens", "부사어(시간)"], ["im Hof", "부사어(장소)"], ["den Rasen", "4격 목적어"], ["gemäht.", "동사(끝)"]]
         }
       ],
-      "tip": "Sonn- und Feiertagen의 줄표(-)는 Sonntagen의 -tagen을 두 번 쓰지 않으려고 붙인 표시예요. 시간 표현이 1번 자리에 오면 동사가 바로 뒤에 오고, 주어는 동사 다음에 와요."
+      "tip": "Sonn- und Feiertagen에서 Sonn- 뒤의 붙임표(-)는 Sonntagen의 -tagen을 두 번 쓰지 않으려고 붙인 표시예요. 시간 표현이 1번 자리에 오면 동사가 바로 뒤에 오고, 주어는 동사 다음에 와요."
     }
   ],
   "vocab": [
@@ -250,7 +250,7 @@
       "de": "Rücksicht nehmen (auf + Akk.)",
       "ko": "(~을) 배려하다",
       "ex": "In der Mittagszeit von 13 bis 15 Uhr sollen alle Bewohner Rücksicht nehmen.",
-      "exko": "점심시간인 13시부터 15시까지도 모든 주민이 이웃을 배려해야 해요."
+      "exko": "점심시간인 13시부터 15시까지는 모든 주민이 이웃을 배려해야 해요."
     },
     {
       "de": "den Rasen mähen",

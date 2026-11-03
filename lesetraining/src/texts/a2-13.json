@@ -11,7 +11,7 @@
   "paragraphs": [
     {
       "de": "Wenn es kalt und grau ist, denke ich oft an meine Oma Hilde. Bei ihr stand jeden Samstag ein großer Topf Linsensuppe auf dem Herd. Als ich zwölf war, hat sie mir das Rezept in ein kleines Heft geschrieben. Das Heft liegt heute noch in meiner Küche – voller Flecken.",
-      "ko": "날이 춥고 흐리면 저는 힐데 할머니 생각이 자주 나요. 할머니 댁에서는 토요일마다 레인지 위에 렌틸콩 수프가 든 큰 냄비가 올라가 있었어요. 제가 열두 살 때 할머니가 이 레시피를 작은 공책에 적어 주셨어요. 그 공책은 얼룩투성이가 된 채로 지금도 제 부엌에 있어요."
+      "ko": "날이 춥고 흐리면 저는 힐데 할머니 생각이 자주 나요. 할머니 댁에서는 토요일마다 불 위에 렌틸콩 수프가 든 큰 냄비가 올라가 있었어요. 제가 열두 살 때 할머니가 이 레시피를 작은 공책에 적어 주셨어요. 그 공책은 얼룩투성이가 된 채로 지금도 제 부엌에 있어요."
     },
     {
       "style": "h",
@@ -45,29 +45,29 @@
     },
     {
       "style": "meta",
-      "de": "Ihre Miriam",
-      "ko": "미리암 드림"
+      "de": "Ihre Annika",
+      "ko": "아니카 드림"
     }
   ],
   "questions": [
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Miriam hat das Rezept schon als Kind von ihrer Oma bekommen.",
+      "q": "Annika hat das Rezept schon als Kind von ihrer Oma bekommen.",
       "answer": 0,
       "evidence": "Als ich zwölf war, hat sie mir das Rezept in ein kleines Heft geschrieben.",
       "pairs": [["Als ich zwölf war", "als Kind"], ["hat sie mir das Rezept in ein kleines Heft geschrieben", "von ihrer Oma bekommen"]],
-      "explain": "할머니는 미리암이 열두 살 때 레시피를 공책에 적어 주셨어요. Als ich zwölf war를 als Kind(어릴 때)로, '할머니가 적어 주셨다'를 '할머니에게 받았다(bekommen)'로 바꿔 말했으므로 맞는 내용이에요."
+      "explain": "할머니는 아니카가 열두 살 때 레시피를 공책에 적어 주셨어요. Als ich zwölf war를 als Kind(어릴 때)로, '할머니가 적어 주셨다'를 '할머니에게 받았다(bekommen)'로 바꿔 말했으므로 맞는 내용이에요."
     },
     {
       "type": "mc",
       "kind": "detail",
       "q": "Was erfährt man über das Heft mit dem Rezept?",
-      "options": ["Es sieht noch wie neu aus, weil Miriam es selten benutzt.", "Es ist nicht mehr sauber, aber Miriam hat es noch immer.", "Es liegt heute in Oma Hildes Küche, direkt neben dem Herd."],
+      "options": ["Es sieht noch wie neu aus, weil Annika es selten benutzt.", "Es ist nicht mehr sauber, aber Annika hat es noch immer.", "Es liegt heute in Oma Hildes Küche, direkt neben dem Herd."],
       "answer": 1,
       "evidence": "Das Heft liegt heute noch in meiner Küche – voller Flecken.",
       "pairs": [["voller Flecken", "nicht mehr sauber"], ["liegt heute noch in meiner Küche", "hat es noch immer"]],
-      "explain": "공책은 얼룩투성이(voller Flecken)인 채로 지금도 미리암의 부엌에 있어요. 이것을 '더는 깨끗하지 않지만 아직 가지고 있다'로 바꿔 말했어요. 얼룩이 많으니 새것 같지 않고, 공책이 있는 곳은 할머니 부엌이 아니라 미리암의 부엌이에요."
+      "explain": "공책은 얼룩투성이(voller Flecken)인 채로 지금도 아니카의 부엌에 있어요. 이것을 '더는 깨끗하지 않지만 아직 가지고 있다'로 바꿔 말했어요. 얼룩이 많으니 새것 같지 않고, 공책이 있는 곳은 할머니 부엌이 아니라 아니카의 부엌이에요."
     },
     {
       "type": "mc",
@@ -93,11 +93,11 @@
       "type": "mc",
       "kind": "detail",
       "q": "Wie kommt die Suppe auf die Teller?",
-      "options": ["Jeder holt sich seine Portion selbst aus dem Topf.", "Miriam füllt in der Küche für jeden einen Teller.", "Alle bekommen genau gleich viel Suppe auf den Teller."],
+      "options": ["Jeder holt sich seine Portion selbst aus dem Topf.", "Annika füllt in der Küche für jeden einen Teller.", "Alle bekommen genau gleich viel Suppe auf den Teller."],
       "answer": 0,
       "evidence": "Stellen Sie den Topf auf den Tisch, dann nimmt sich jeder, so viel er möchte.",
       "pairs": [["nimmt sich jeder", "Jeder holt sich seine Portion selbst"], ["so viel er möchte", "genau gleich viel"]],
-      "explain": "냄비를 식탁에 올려 두면 각자 먹고 싶은 만큼 덜어 먹어요(nimmt sich jeder). 미리암이 부엌에서 접시에 담아 주는 것이 아니고, 모두 같은 양을 받는 것도 아니에요(so viel er möchte)."
+      "explain": "냄비를 식탁에 올려 두면 각자 먹고 싶은 만큼 덜어 먹어요(nimmt sich jeder). 아니카가 부엌에서 접시에 담아 주는 것이 아니고, 모두 같은 양을 받는 것도 아니에요(so viel er möchte)."
     },
     {
       "type": "rf",
@@ -106,17 +106,17 @@
       "answer": 1,
       "evidence": "Am nächsten Tag schmeckt die Suppe noch besser.",
       "pairs": [["Am nächsten Tag", "einen Tag später"], ["noch besser", "nicht mehr so lecker"]],
-      "explain": "미리암의 팁은 수프가 다음 날 더 맛있다(noch besser)는 거예요. 문제는 다음 날 맛이 떨어진다고 하므로 본문과 반대예요."
+      "explain": "아니카의 팁은 수프가 다음 날 더 맛있다(noch besser)는 거예요. 문제는 다음 날 맛이 떨어진다고 하므로 본문과 반대예요."
     },
     {
       "type": "mc",
       "kind": "intent",
-      "q": "Worum bittet Miriam ihre Leser am Ende?",
+      "q": "Worum bittet Annika ihre Leser am Ende?",
       "options": ["Sie sollen ihr die Rezepte ihrer Oma per E-Mail schicken.", "Sie sollen online erzählen, was ihre Großmutter gekocht hat.", "Sie sollen schreiben, wie oft sie selbst für ihre Oma kochen."],
       "answer": 1,
       "evidence": "Was hat Ihre Oma früher gekocht?",
       "pairs": [["Was hat Ihre Oma früher gekocht?", "was ihre Großmutter gekocht hat"], ["in die Kommentare", "online"]],
-      "explain": "미리암은 독자들의 할머니가 예전에 어떤 음식을 만드셨는지 댓글로 알려 달라고 해요. 이메일로 보내라는 것이 아니라 댓글(Kommentare)에 쓰라고 했고, 요리하는 사람은 독자가 아니라 할머니예요."
+      "explain": "아니카는 독자들의 할머니가 예전에 어떤 음식을 만드셨는지 댓글로 알려 달라고 해요. 이메일로 보내라는 것이 아니라 댓글(Kommentare)에 쓰라고 했고, 요리하는 사람은 독자가 아니라 할머니예요."
     }
   ],
   "grammar": [
@@ -134,7 +134,7 @@
         },
         {
           "de": "Bei ihr stand jeden Samstag ein großer Topf Linsensuppe auf dem Herd.",
-          "ko": "할머니 댁에서는 토요일마다 레인지 위에 렌틸콩 수프가 든 큰 냄비가 올라가 있었어요.",
+          "ko": "할머니 댁에서는 토요일마다 불 위에 렌틸콩 수프가 든 큰 냄비가 올라가 있었어요.",
           "mark": ["auf dem Herd"],
           "parts": [["Bei ihr", "부사어(장소)"], ["stand", "동사"], ["jeden Samstag", "부사어(시간)"], ["ein großer Topf Linsensuppe", "주어"], ["auf dem Herd.", "부사어(장소)"]]
         },
@@ -202,7 +202,7 @@
     { "de": "die Linse, -n", "ko": "렌틸콩" },
     { "de": "die Zutat, -en", "ko": "재료" },
     { "de": "der Topf, -¨e", "ko": "냄비" },
-    { "de": "der Herd, -e", "ko": "레인지, 화덕" },
+    { "de": "der Herd, -e", "ko": "가스레인지, 전기레인지" },
     { "de": "der Fleck, -en", "ko": "얼룩" },
     { "de": "die Brühe, -n", "ko": "육수" },
     { "de": "die Prise, -n", "ko": "한 꼬집" },

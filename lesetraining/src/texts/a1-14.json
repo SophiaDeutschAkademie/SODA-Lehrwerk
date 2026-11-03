@@ -56,7 +56,7 @@
       "answer": 1,
       "evidence": "Sie ist Ärztin und arbeitet oft am Wochenende.",
       "pairs": [["arbeitet oft am Wochenende", "hat am Samstag und am Sonntag meistens frei"]],
-      "explain": "본문에서 엄마는 의사이고 주말에 자주 일한다고 해요. Wochenende를 Samstag und Sonntag로 바꿔 말했지만, '주말에는 대부분 쉰다'는 내용은 본문과 반대예요."
+      "explain": "본문에서 엄마는 의사이고 주말에 자주 일한다고 해요. Wochenende를 Samstag und Sonntag으로 바꿔 말했지만, '주말에는 대부분 쉰다'는 내용은 본문과 반대예요."
     },
     {
       "type": "rf",
@@ -90,11 +90,11 @@
       "type": "mc",
       "kind": "inference",
       "q": "Warum ist der Morgen bei Mia zu Hause ein Problem?",
-      "options": ["Für die sechs Personen gibt es nur zwei Zimmer.", "Für die sechs Personen gibt es keinen Balkon.", "Für die sechs Personen gibt es nur ein Badezimmer."],
+      "options": ["Alle sechs Personen haben nur zwei Zimmer.", "Alle sechs Personen haben keinen Balkon.", "Alle sechs Personen benutzen dasselbe Bad."],
       "answer": 2,
       "evidence": "aber es gibt nur ein Bad",
-      "pairs": [["nur ein Bad", "nur ein Badezimmer"]],
-      "explain": "엄마, 아빠, 할아버지, 벤, 레오, 미아까지 여섯 명이 함께 사는데 욕실(Bad)은 하나뿐이에요. 그래서 아침에 모두 욕실을 쓰려고 하면 문제가 생겨요. 방은 네 개이고 발코니도 있어요."
+      "pairs": [["es gibt nur ein Bad", "benutzen dasselbe Bad"]],
+      "explain": "엄마, 아빠, 할아버지, 벤, 레오, 미아까지 여섯 명이 사는데 욕실은 하나뿐이에요(nur ein Bad). 그래서 아침에 모두 같은 욕실(dasselbe Bad)을 쓰려고 하면 문제가 생겨요. 방은 네 개이고 발코니도 있으니 다른 보기는 틀려요."
     },
     {
       "type": "mc",
@@ -124,7 +124,7 @@
           "de": "Opa liebt seinen Hund sehr.",
           "ko": "할아버지는 자기 개를 무척 사랑하세요.",
           "mark": ["seinen Hund"],
-          "parts": [["Opa", "주어"], ["liebt", "동사"], ["seinen Hund", "4격 목적어"], ["sehr.", "부사어(방법)"]]
+          "parts": [["Opa", "주어"], ["liebt", "동사"], ["seinen Hund", "4격 목적어"], ["sehr.", "부사어"]]
         },
         {
           "de": "Heute zeige ich euch meine Familie.",
@@ -162,7 +162,7 @@
     {
       "title": "haben + 4격 · es gibt + 4격",
       "term": "haben + Akkusativ, es gibt + Akkusativ",
-      "explain": "'~이 있어요'는 haben이나 es gibt로 말해요. haben은 누가 무엇을 가지고 있는지 말하고, 가진 것은 4격이에요. es gibt는 어떤 것이 어디에 있는지 말할 때 써요. es gibt 뒤의 명사도 4격이에요. 남성 명사는 4격에서 einen이 돼요(einen Balkon).",
+      "explain": "'~이 있어요'는 haben이나 es gibt로 말해요. haben은 누가 무엇을 가지고 있는지 말하고, 가진 것은 4격이에요. es gibt는 어떤 것이 어디에 있는지 말할 때 써요. es gibt 뒤의 명사도 4격이에요. 남성 명사 앞의 부정관사 ein은 4격에서 einen이 돼요(einen Balkon).",
       "pattern": "주어 + haben + 4격 · es gibt + 4격",
       "examples": [
         {

@@ -27,7 +27,7 @@
     {
       "label": "★★★★☆ Sabine M.",
       "de": "Wir waren mit unseren Kindern hier. Positiv: Es gibt sowohl Kinderräder in verschiedenen Größen als auch Anhänger für kleinere Geschwister. Die Preise sind fair, Helme kosten nichts extra. Wer im Juli oder August kommt, sollte entweder online oder am Vortag telefonisch reservieren. Ein kleiner Nachteil: Die Räder muss man bis 18 Uhr zurückbringen. Für längere Touren ist das etwas knapp. Insgesamt ein solider Verleih für Familien.",
-      "ko": "저희는 아이들과 함께 왔어요. 좋았던 점은 여러 크기의 어린이 자전거도 있고, 더 어린 동생들을 태울 트레일러도 있다는 거예요. 가격은 적당하고, 헬멧은 따로 돈을 내지 않아도 돼요. 7월이나 8월에 오는 분은 온라인으로든 전날 전화로든 예약하는 게 좋아요. 작은 단점이 하나 있는데, 자전거를 오후 6시까지 반납해야 해요. 좀 긴 투어를 하기에는 시간이 조금 빠듯해요. 전체적으로 가족에게 무난한 대여점이에요."
+      "ko": "저희는 아이들과 함께 왔어요. 좋았던 점은 여러 크기의 어린이 자전거도 있고, 더 어린 동생들을 태울 트레일러도 있다는 거예요. 가격은 적당하고, 헬멧은 따로 돈을 내지 않아도 돼요. 7월이나 8월에 오는 분은 온라인으로든 전날 전화로든 예약하는 게 좋아요. 작은 단점이 하나 있는데, 자전거를 오후 6시까지 반납해야 해요. 긴 투어를 하기에는 시간이 좀 빠듯해요. 전체적으로 가족에게 무난한 대여점이에요."
     },
     {
       "label": "Antwort von Markus Brenner, Inhaber",
@@ -86,10 +86,10 @@
       "type": "mc",
       "kind": "detail",
       "q": "Was empfiehlt Sabine M. Gästen, die im Hochsommer kommen?",
-      "options": ["Sie sollen nur über das Internet buchen, weil am Telefon keiner abnimmt.", "Sie sollen vorher buchen, entweder im Netz oder einen Tag vorher per Anruf.", "Sie sollen eigene Helme mitbringen, weil man dafür extra bezahlen muss."],
+      "options": ["Sie sollen nur über das Internet buchen, weil am Telefon keiner abnimmt.", "Sie sollen im Voraus buchen, entweder im Netz oder am Tag davor per Anruf.", "Sie sollen eigene Helme mitbringen, weil man dafür extra bezahlen muss."],
       "answer": 1,
       "evidence": "Wer im Juli oder August kommt, sollte entweder online oder am Vortag telefonisch reservieren.",
-      "pairs": [["im Juli oder August", "im Hochsommer"], ["am Vortag telefonisch reservieren", "einen Tag vorher per Anruf"]],
+      "pairs": [["im Juli oder August", "im Hochsommer"], ["am Vortag telefonisch reservieren", "am Tag davor per Anruf"]],
       "explain": "자비네는 7월이나 8월에 오는 사람은 온라인으로든 전날 전화로든 예약하라고 해요. 전화 예약도 된다고 했으니 인터넷으로만 예약하라는 말은 틀려요. 헬멧은 따로 돈을 내지 않아요(kosten nichts extra)."
     },
     {
