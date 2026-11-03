@@ -83,10 +83,10 @@
       "type": "mc",
       "kind": "meaning",
       "q": "Was drückt „ausgerechnet in dem Alter“ im Text aus?",
-      "options": ["Der Verzicht träfe die Kinder genau dann, wenn sie am besten lernen.", "Die Kinder sind in diesem Alter für solche Übungen noch zu jung.", "Das passende Alter wurde für den Lehrplan vorher exakt berechnet.", "Die Kinder sollten mit dieser Schrift erst etwas später beginnen."],
+      "options": ["Der Verzicht träfe Kinder genau dann, wenn ihre Hand am besten lernt.", "Die Kinder sind in diesem Alter für solche Übungen noch zu jung.", "Das passende Alter wurde für den Lehrplan vorher exakt berechnet.", "Die Kinder sollten mit dieser Schrift erst etwas später beginnen."],
       "answer": 0,
       "evidence": "ausgerechnet in dem Alter, in dem sich die Feinmotorik am leichtesten schulen lässt",
-      "pairs": [["ausgerechnet in dem Alter", "genau dann"], ["am leichtesten schulen lässt", "am besten lernen"]],
+      "pairs": [["ausgerechnet in dem Alter", "genau dann"], ["am leichtesten schulen lässt", "ihre Hand am besten lernt"]],
       "explain": "ausgerechnet는 '하필이면'이라는 뜻이에요. 소근육을 가장 쉽게 기를 수 있는 바로 그 나이에 연습을 빼는 것은 이치에 맞지 않다는 불만을 담고 있어요. 동사 ausrechnen(계산하다)과 모양이 같지만 여기서는 계산과 관계가 없어요."
     },
     {
@@ -106,7 +106,7 @@
       "answer": 3,
       "evidence": "Man denkt eben anders, wenn man nicht jeden Satz mit einem Tastendruck löschen kann.",
       "pairs": [["nicht jeden Satz mit einem Tastendruck löschen kann", "Fehler nicht einfach tilgen kann"], ["denkt eben anders", "wählt seine Worte bedachter"]],
-      "explain": "문장을 키 하나로 지울 수 없으면 쓰기 전에 더 생각하게 된다는 뜻이에요. 앞 문장의 '연필을 대기 전에 먼저 생각한다'와 같은 내용이에요. 자판으로 쓰는 사람이 더 깊이 생각한다는 선택지는 관계를 뒤집었어요."
+      "explain": "문장을 키 하나로 지울 수 없으면 쓰기 전에 더 생각하게 된다는 뜻이에요. 손으로 쓰는 사람은 연필을 대기 전에 먼저 생각한다는 교사의 말과 같은 내용이에요. 자판으로 쓰는 사람이 더 깊이 생각한다는 선택지는 관계를 뒤집었어요."
     },
     {
       "type": "rfn",
@@ -125,7 +125,7 @@
       "answer": 1,
       "evidence": "Kinder müssen lernen, flüssig und ohne Anstrengung zu schreiben.",
       "pairs": [["flüssig und ohne Anstrengung", "mühelos und ohne Stocken"]],
-      "explain": "연구자는 아이들이 막힘없이, 힘들이지 않고 쓰는 법을 배워야 한다는 점만 인정해요. 정답은 flüssig und ohne Anstrengung을 mühelos und ohne Stocken으로 바꿨어요. 이어 쓰는 글씨가 꼭 필요하다는 생각은 바로 다음 문장에서 부정하고, 어른들의 혼합형 글씨도 잘 읽힌다고 해요."
+      "explain": "연구자는 아이들이 막힘없이, 힘들이지 않고 쓰는 법을 배워야 한다는 점만 인정해요. 정답은 flüssig und ohne Anstrengung을 mühelos und ohne Stocken으로 바꿨어요. 이어 쓰는 글씨가 꼭 필요하다는 생각은 연구자가 곧바로 부정하고, 어른들의 혼합형 글씨도 잘 읽힌다고 해요."
     },
     {
       "type": "mc",
@@ -154,7 +154,7 @@
       "options": ["Sie lehnt Tablets im Unterricht ab, er will die Handschrift abschaffen.", "Sie stützt sich auf Studien, er dagegen vor allem auf seine Praxis.", "Beide wollen die Schreibschrift behalten, streiten aber über Stunden.", "Sie hält verbundene Schrift für nötig, ihm genügt jede lesbare Schrift."],
       "answer": 3,
       "evidence": "Entscheidend ist doch nicht, wie eine Schrift aussieht, sondern ob man sie mühelos lesen kann.",
-      "pairs": [["Entscheidend ist doch nicht, wie eine Schrift aussieht", "ihm genügt jede lesbare Schrift"], ["Genau das erspart ihm die Schreibschrift", "hält verbundene Schrift für nötig"]],
+      "pairs": [["Entscheidend ist doch nicht, wie eine Schrift aussieht", "ihm genügt jede lesbare Schrift"], ["sollten wir sie vereinfachen und ihr die Zeit geben, die sie braucht", "hält verbundene Schrift für nötig"]],
       "explain": "교사는 이어 쓰는 필기체를 따로 가르쳐야 한다고 하고, 연구자는 글씨 모양보다 쉽게 읽히는지가 중요하다고 해요. 연구자는 손글씨를 없애자는 것이 아니라 인쇄체에서 출발한 읽기 쉬운 손글씨를 키우자고 해요. 연구 결과를 근거로 드는 쪽도 교사가 아니라 연구자예요."
     }
   ],
@@ -234,7 +234,7 @@
           "parts": [["Anstatt dass Kinder nacheinander zwei Schriften lernen,", "종속절"], ["genügt", "동사"], ["eine,", "주어"], ["die mit ihnen wächst.", "관계절"]]
         }
       ],
-      "tip": "본문의 „anstatt sie wörtlich festzuhalten“은 주절과 주어(man)가 같아서 dass 대신 zu 부정사를 썼어요. 반대로 „ohne dass die Hand verkrampft“는 주어가 die Hand로 달라서 dass가 필요해요."
+      "tip": "본문의 „anstatt sie wörtlich festzuhalten“은 앞의 weil 절과 주어(man)가 같아서 dass 대신 zu 부정사를 썼어요. 반대로 „ohne dass die Hand verkrampft“는 주어가 die Hand로 달라서 dass가 필요해요."
     },
     {
       "title": "수사 의문문과 양보 – 인정한 뒤 반박하기",

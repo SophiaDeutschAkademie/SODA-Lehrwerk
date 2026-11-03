@@ -136,11 +136,11 @@
       "type": "mc",
       "kind": "paraphrase",
       "q": "Was will Nina Brandt mit der Frage „Gilt die Hausordnung eigentlich nicht für ihn?“ sagen?",
-      "options": ["Sie findet es gut, dass der Hausmeister so früh arbeitet.", "Sie meint, dass der Hausmeister selbst die Sonntagsruhe stört.", "Sie will wissen, ob sie sonntags auch den Rasen mähen darf."],
+      "options": ["Sie findet es gut, dass der Hausmeister so früh arbeitet.", "Sie meint, dass auch der Hausmeister die Regeln beachten muss.", "Sie will wissen, ob sie sonntags auch den Rasen mähen darf."],
       "answer": 1,
       "evidence": "Gilt die Hausordnung eigentlich nicht für ihn?",
-      "pairs": [["Gilt die Hausordnung eigentlich nicht für ihn?", "der Hausmeister selbst die Sonntagsruhe stört"]],
-      "explain": "니나는 이 질문으로, 관리인 자신이 일요일의 휴식을 방해했다고 비판해요. 관리인은 일요일 아침 8시에 잔디를 깎았고, 니나는 그 뒤로 잠을 잘 수 없었어요. 니나가 그 일을 좋게 보거나 자기도 잔디를 깎고 싶어 하는 것이 아니에요."
+      "pairs": [["Gilt die Hausordnung eigentlich nicht für ihn?", "auch der Hausmeister die Regeln beachten muss"]],
+      "explain": "'공동생활 규칙은 그분에게는 해당되지 않나요?'라는 질문은 관리인도 규칙을 지켜야 한다는 비판이에요. 관리인은 일요일 아침 8시에 잔디를 깎았고, 니나는 그 뒤로 다시 잠들 수 없었어요. 니나가 그 일을 좋게 보거나 자기도 잔디를 깎고 싶어 하는 것이 아니에요."
     }
   ],
   "grammar": [

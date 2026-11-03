@@ -102,11 +102,11 @@
       "type": "mc",
       "kind": "intent",
       "q": "Was möchte Miriam ihren Kolleginnen und Kollegen am Ende sagen?",
-      "options": ["Eine sichere Stelle sollte man auch mit 30 nie aufgeben.", "Für einen Neuanfang im Job ist es mit 30 nicht zu spät.", "Mit 30 bleibt man besser bei seinem alten, sicheren Beruf."],
+      "options": ["Eine sichere Stelle sollte man auch mit 30 nie aufgeben.", "Für einen Neuanfang im Job ist es mit 30 nicht zu spät.", "Eine Ausbildung sollte man lieber schon mit 17 beginnen."],
       "answer": 1,
       "evidence": "Mit 30 ist man nicht zu alt für einen neuen Anfang.",
       "pairs": [["nicht zu alt", "nicht zu spät"], ["einen neuen Anfang", "Neuanfang"]],
-      "explain": "미리암 씨는 서른 살도 새로 시작하기에 늦지 않다고 말하며 동료들에게 용기를 줘요. 나이를 '너무 많지 않다(nicht zu alt)'에서 '늦지 않다(nicht zu spät)'로 바꿔 말했어요. 그녀 자신이 '안정적인' 사무직을 그만두었으므로, 그런 직업을 지키라는 다른 두 선택지는 그녀의 뜻과 반대예요."
+      "explain": "미리암 씨는 서른 살도 새로 시작하기에 늦지 않다고 말하며 동료들에게 용기를 줘요. 나이를 '너무 많지 않다(nicht zu alt)'에서 '늦지 않다(nicht zu spät)'로 바꿔 말했어요. 그녀는 '안정적인' 사무직을 그만두고 서른 살에 직업 교육을 시작했으므로, 안정적인 직장을 지키라는 말도, 열일곱 살에 시작하는 편이 낫다는 말도 그녀의 뜻과 반대예요."
     }
   ],
   "grammar": [

@@ -121,10 +121,10 @@
       "type": "mc",
       "kind": "detail",
       "q": "Was gilt bis zur Untersuchung für den Keller?",
-      "options": ["Vorerst darf man dort keine Sachen lagern, und es wird täglich gelüftet.", "Jeder Mieter muss sein Kellerabteil ab sofort selbst an jedem Tag lüften.", "Der Hausmeister darf den Keller bis zur Prüfung überhaupt nicht betreten."],
+      "options": ["Vorerst darf man dort keine Sachen lagern, und es wird täglich gelüftet.", "Jeder Mieter muss ab sofort jeden Tag selbst sein Kellerabteil lüften.", "Der Hausmeister darf den Keller bis zur Prüfung überhaupt nicht betreten."],
       "answer": 0,
       "evidence": "Bis zur Untersuchung dürfen im Keller keine Kartons, Bücher oder Kleidungsstücke gelagert werden. Außerdem muss jeden Tag gelüftet werden; das übernimmt der Hausmeister.",
-      "pairs": [["keine Kartons, Bücher oder Kleidungsstücke", "keine Sachen"], ["das übernimmt der Hausmeister", "selbst an jedem Tag lüften"]],
+      "pairs": [["keine Kartons, Bücher oder Kleidungsstücke", "keine Sachen"], ["das übernimmt der Hausmeister", "selbst sein Kellerabteil lüften"]],
       "explain": "조사 전까지 지하실에 상자, 책, 옷가지를 보관하면 안 되고 날마다 환기를 해야 해요. 정답은 이를 '물건을 보관할 수 없고 매일 환기한다'로 묶어 말했어요. 환기는 세입자가 아니라 관리인이 맡고, 관리인은 오히려 날마다 지하실에 들어가야 해요."
     },
     {

@@ -52,11 +52,11 @@
       "type": "mc",
       "kind": "paraphrase",
       "q": "Was meint der Reporter mit dem Satz „Der Sachverhalt ist schnell erzählt, seine Vorgeschichte dagegen nicht.“?",
-      "options": ["Die Vorgeschichte ist rasch berichtet, die heutige Rechtslage aber verworren.", "Worum es geht, lässt sich knapp sagen, wie es dazu kam, braucht mehr Zeit.", "Der Streit ist erst vor Kurzem entstanden und lässt sich daher knapp schildern.", "Der Anlass wirkt klein, doch für beide Seiten steht sehr viel Geld auf dem Spiel."],
+      "options": ["Die Vorgeschichte ist rasch berichtet, die heutige Rechtslage aber verworren.", "Worum es geht, lässt sich knapp sagen; wie es dazu kam, braucht mehr Zeit.", "Der Streit ist erst vor Kurzem entstanden und lässt sich daher knapp schildern.", "Der Anlass wirkt klein, doch für beide Seiten steht sehr viel Geld auf dem Spiel."],
       "answer": 1,
       "evidence": "Der Sachverhalt ist schnell erzählt, seine Vorgeschichte dagegen nicht.",
       "pairs": [["schnell erzählt", "lässt sich knapp sagen"], ["seine Vorgeschichte dagegen nicht", "wie es dazu kam, braucht mehr Zeit"]],
-      "explain": "사실관계(Sachverhalt)는 짧게 말할 수 있지만 그렇게 되기까지의 사연(Vorgeschichte)은 길다는 뜻이에요. 정답은 이것을 '무엇이 문제인지는 짧게 말할 수 있지만 어떻게 그렇게 되었는지는 시간이 더 걸린다'로 바꿨어요. 사연과 현재 상황을 뒤바꾼 선택지, 최근에 생긴 다툼이라는 선택지(80여 년 된 나무, 작년의 편지), 큰돈이 걸렸다는 선택지(소송가액 몇천 유로)는 본문과 맞지 않아요."
+      "explain": "사실관계(Sachverhalt)는 짧게 말할 수 있지만 그렇게 되기까지의 사연(Vorgeschichte)은 길다는 뜻이에요. 정답은 이것을 '무엇이 문제인지는 짧게 말할 수 있지만 어떻게 그렇게 되었는지는 시간이 더 걸린다'로 바꿨어요. 사연과 현재 상황을 뒤바꾼 선택지, 최근에 생겨서 짧게 말할 수 있다는 선택지(사연이 길다는 본문 내용과 반대), 큰돈이 걸렸다는 선택지(소송가액 몇천 유로)는 본문과 맞지 않아요."
     },
     {
       "type": "mc",
@@ -120,10 +120,10 @@
       "type": "mc",
       "kind": "detail",
       "q": "Worauf einigen sich die Parteien?",
-      "options": ["Nach behördlicher Erlaubnis stutzt eine Firma die Krone, beide zahlen je die Hälfte.", "Albrecht darf die Äste im Februar selbst kürzen, die Nachbarin zahlt ihm 400 Euro.", "Die Stadt kürzt die Linde im Februar, und Albrecht verzichtet auf jede Zahlung.", "Die Linde wird gefällt, und beide teilen sich die Kosten für einen jungen Baum."],
+      "options": ["Mit Erlaubnis der Stadt stutzt eine Firma die Krone, beide teilen sich die Rechnung.", "Albrecht darf die Äste im Februar selbst kürzen, die Nachbarin zahlt ihm 400 Euro.", "Die Stadt kürzt die Linde im Februar, und Albrecht verzichtet auf jede Zahlung.", "Die Linde wird gefällt, und beide teilen sich die Kosten für einen jungen Baum."],
       "answer": 0,
       "evidence": "Frau Sommer beantragt bei der Stadt die Genehmigung für einen Rückschnitt, im Februar kürzt ein Fachbetrieb die Äste, die Kosten werden geteilt.",
-      "pairs": [["die Genehmigung", "behördlicher Erlaubnis"], ["kürzt ein Fachbetrieb die Äste", "stutzt eine Firma die Krone"], ["die Kosten werden geteilt", "beide zahlen je die Hälfte"]],
+      "pairs": [["bei der Stadt die Genehmigung", "Erlaubnis der Stadt"], ["kürzt ein Fachbetrieb die Äste", "stutzt eine Firma die Krone"], ["die Kosten werden geteilt", "beide teilen sich die Rechnung"]],
       "explain": "합의에 따르면 조머 씨가 시에 허가를 신청하고, 2월에 전문 업체가 가지를 자르며, 비용은 나누어 내요. 400유로는 알브레히트가 이웃에게 내는 돈이라서 돈의 방향을 바꾼 선택지는 틀려요. 시가 직접 자르거나 나무를 베어 낸다는 말도 없어요."
     },
     {
@@ -162,7 +162,7 @@
           "mark": ["mag"]
         }
       ],
-      "tip": "여기서 will을 '~하고 싶다'로, soll을 '~해야 한다'로 읽으면 뜻이 완전히 달라져요. 뒤에 완료 부정사(erhalten haben, gepflanzt worden sein)가 오면 대부분 주관적 의미예요. 마지막 문단의 Sie dürfte es verkraften에서 dürfte도 '아마 ~일 것이다'라는 추측을 나타내요."
+      "tip": "여기서 will을 '~하고 싶다'로, soll을 '~해야 한다'로 읽으면 뜻이 완전히 달라져요. 뒤에 완료 부정사(erhalten haben, gepflanzt worden sein)가 오면 대부분 주관적 의미예요. 본문의 Sie dürfte es verkraften에서 dürfte도 '아마 ~일 것이다'라는 추측을 나타내요."
     },
     {
       "title": "werden 수동과 상태수동 – 과정과 결과",
@@ -188,7 +188,7 @@
           "mark": ["sind", "geschützt"]
         }
       ],
-      "tip": "Eine solche sei weder beantragt noch erteilt worden에서 worden은 werden 수동의 완료형이에요. 수동태의 현재완료에서는 geworden이 아니라 worden을 써요."
+      "tip": "Eine solche sei weder beantragt noch erteilt worden은 werden 수동의 완료형(접속법 1식)이에요. 수동태의 완료형에서는 werden의 과거분사로 geworden이 아니라 worden을 써요."
     },
     {
       "title": "격식체 전치사 – gemäß · laut · zufolge · hinsichtlich",
