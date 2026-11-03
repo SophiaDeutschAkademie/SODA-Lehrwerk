@@ -80,7 +80,7 @@
       "answer": 0,
       "evidence": "Zwar war der Mann an der Theke höflich, aber ein anderes Rad konnte er mir nicht geben, weil angeblich alle vermietet waren.",
       "pairs": [["höflich", "blieb freundlich"], ["weil angeblich alle vermietet waren", "nach seinen Worten war kein Ersatz frei"]],
-      "explain": "zwar … aber는 '~하긴 하지만'이라는 뜻이에요. 직원은 친절했지만, 그의 말로는 자전거가 모두 대여 중이라서 다른 자전거를 줄 수 없었어요. angeblich는 '~라고들 하지만 정말인지는 모른다'는 뜻이라서 nach seinen Worten(그의 말로는)로 바꿔 말했어요."
+      "explain": "zwar … aber는 '~하긴 하지만'이라는 뜻이에요. 직원은 친절했지만, 그의 말로는 자전거가 모두 대여 중이라서 다른 자전거를 줄 수 없었어요. angeblich는 '그렇다고 하지만 사실인지는 알 수 없다'는 뜻이라서 nach seinen Worten(그의 말로는)로 바꿔 말했어요."
     },
     {
       "type": "mc",
@@ -100,7 +100,7 @@
       "answer": 2,
       "evidence": "Für längere Touren ist das etwas knapp.",
       "pairs": [["Die Räder muss man bis 18 Uhr zurückbringen", "reicht die Zeit kaum aus"], ["längere Touren", "lange Ausflüge"]],
-      "explain": "das는 바로 앞 문장의 '오후 6시까지 반납해야 한다'를 가리켜요. 그래서 etwas knapp은 긴 투어를 하기에는 시간이 조금 부족하다는 뜻이에요. 자전거 크기는 여러 가지가 있고, 가격은 적당하다고 했어요."
+      "explain": "das는 자전거를 '오후 6시까지 반납해야 한다'는 점을 가리켜요. 그래서 etwas knapp은 긴 투어를 하기에는 시간이 조금 부족하다는 뜻이에요. 자전거 크기는 여러 가지가 있고, 가격은 적당하다고 했어요."
     },
     {
       "type": "mc",
@@ -198,7 +198,7 @@
     {
       "title": "명사 앞에 쓰는 비교급과 최상급",
       "term": "Komparativ und Superlativ als Attribut",
-      "explain": "비교급과 최상급도 명사 앞에 오면 보통 형용사처럼 어미가 붙어요. 비교급은 형용사 + er + 어미(ein besseres Fahrrad, schnellere Hilfe), 최상급은 보통 정관사와 함께 형용사 + st + 어미(die schönste Route, der beste Verleih)예요. gut → besser → best, nah → näher → nächst처럼 불규칙한 형태도 있어요. 비교 대상 없이 쓴 비교급은 '비교적 ~한'이라는 뜻이에요. ein älteres Modell은 '좀 오래된 모델', längere Touren은 '좀 긴 투어'예요.",
+      "explain": "비교급과 최상급도 명사 앞에 오면 보통 형용사처럼 어미가 붙어요. 비교급은 형용사 + er + 어미(ein besseres Fahrrad, schnellere Hilfe), 최상급은 보통 정관사와 함께 형용사 + st + 어미(die schönste Route, der beste Verleih)예요. gut → besser → best, nah → näher → nächst처럼 불규칙한 형태도 있어요. 비교 대상 없이 쓴 비교급은 '비교적 ~한'이라는 뜻일 때도 있어요. ein älteres Modell은 '좀 오래된 모델', längere Touren은 '좀 긴 투어'예요.",
       "pattern": "형용사 + er + 어미 + 명사 / der·die·das + 형용사 + st + 어미 + 명사",
       "examples": [
         {
