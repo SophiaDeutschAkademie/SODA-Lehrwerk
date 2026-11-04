@@ -57,6 +57,46 @@
     } catch (e) { return null; }
     return null;
   }
+  /* ───────── 진행률 (완료 = 채점한 텍스트) ───────── */
+  var DONE_KEY = 'soda-lese-done';
+  function doneMap() {
+    try { return JSON.parse(store(DONE_KEY) || '{}') || {}; } catch (e) { return {}; }
+  }
+  function markDone(t, right, total) {
+    var m = doneMap(), old = m[t.id];
+    if (!old || right >= old.r) m[t.id] = { r: right, n: total };
+    store(DONE_KEY, JSON.stringify(m));
+  }
+  function progressFor(lv) {
+    var m = doneMap(), total = 0, done = 0;
+    (lv ? [lv] : LEVELS.map(function (l) { return l.code; })).forEach(function (code) {
+      (INDEX[code] || []).forEach(function (x) { total++; if (m[x.id]) done++; });
+    });
+    return { done: done, total: total, pct: total ? Math.round(done * 100 / total) : 0 };
+  }
+  function updateProgress() {
+    var bar = document.getElementById('lprog');
+    if (!bar) {
+      bar = document.createElement('div');
+      bar.id = 'lprog';
+      bar.className = 'lprog';
+      bar.setAttribute('role', 'region');
+      bar.setAttribute('aria-label', '나의 진행률');
+      bar.innerHTML = '<div class="lprog-in"><span class="lprog-l"></span>' +
+        '<span class="lprog-track" role="progressbar" aria-valuemin="0" aria-valuemax="100"><i></i></span>' +
+        '<span class="lprog-n"></span></div>';
+      document.body.insertBefore(bar, document.body.firstChild);
+    }
+    var r = state.route || { v: 'cover' };
+    document.documentElement.classList.toggle('has-prog', r.v !== 'cover');
+    var lv = r.lv || null, p = progressFor(lv);
+    bar.querySelector('.lprog-l').innerHTML = '나의 진행률' + (lv ? ' <b>' + lv + '</b>' : ' <b>전체</b>');
+    var tr = bar.querySelector('.lprog-track');
+    tr.setAttribute('aria-valuenow', String(p.pct));
+    tr.querySelector('i').style.width = p.pct + '%';
+    bar.querySelector('.lprog-n').innerHTML = '<b>' + p.done + '</b> / ' + p.total + ' · ' + p.pct + '%';
+  }
+
   function markText(text, needles, cls) {
     var ranges = [];
     (needles || []).forEach(function (n) {
@@ -140,6 +180,7 @@
       return;
     }
     state.route = r;
+    updateProgress();
     if (r.v === 'cover') renderCover();
     else if (r.v === 'levels') renderLevels();
     else if (r.v === 'list') renderList(r.lv);
@@ -184,7 +225,7 @@
         '<div><div class="lv-de" lang="de">' + esc(l.de) + '</div><div class="lv-ko">' + esc(l.ko) + '</div>' +
         '<p class="lv-desc">' + esc(l.desc) + '</p></div>' +
         '<div class="lv-side"><span class="steps" aria-hidden="true">' + steps + '</span>' +
-        '<span>텍스트 ' + n + '개 · ' + l.words + '단어</span>' +
+        '<span>텍스트 ' + n + '개 · 완료 ' + progressFor(l.code).done + '개</span>' +
         '<span class="arrow">' + ICON.arrowR + '</span></div></a></li>';
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/', '표지') +
@@ -199,13 +240,14 @@
     var L = LEVEL_BY[lv];
     var items = INDEX[lv] || [];
     document.title = lv + ' · SODA LESETRAINING';
+    var dm = doneMap();
     var cards = items.map(function (t, i) {
       var tags = (t.focus || []).slice(0, 3).map(function (f) { return '<span class="tag">' + esc(f) + '</span>'; }).join('');
       return '<li><a class="card" href="#/' + lv.toLowerCase() + '/' + pad(t.no) + '" style="--i:' + i + '">' +
         '<div class="card-top"><span class="num">' + pad(t.no) + '</span><span class="chip" title="' + esc(t.type) + '">' + esc(t.typeKo) + '</span></div>' +
         '<h2 class="card-de de" lang="de">' + esc(t.title) + '</h2>' +
         '<p class="card-ko">' + esc(t.titleKo) + '</p>' +
-        '<div class="card-foot">' + tags + '<span class="meta">' + t.words + '단어 · ' + t.questions + '문항</span></div></a></li>';
+        '<div class="card-foot">' + tags + (dm[t.id] ? '<span class="meta done">' + ICON.ok + '완료 · ' + dm[t.id].r + '/' + dm[t.id].n + '</span>' : '<span class="meta">' + t.words + '단어 · ' + t.questions + '문항</span>') + '</div></a></li>';
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/levels', '레벨') +
       '<div class="sec-h"><div class="lvhead"><span class="lv-code">' + lv + '</span>' +
@@ -432,6 +474,8 @@
       fb.hidden = false;
     });
     var total = t.questions.length;
+    markDone(t, right, total);
+    updateProgress();
     var sc = document.getElementById('score');
     if (sc) {
       sc.innerHTML = '<div><b>' + right + ' / ' + total + '</b></div><span>' + total + '문항 중 ' + right + '문항을 맞혔어요. 틀린 문제는 근거 문장과 바꿔 말한 표현을 비교해 보세요.</span>';

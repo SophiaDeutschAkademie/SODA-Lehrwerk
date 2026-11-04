@@ -333,10 +333,58 @@ mark.ev{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px;box-s
   .tools{gap:4px;margin-left:auto;width:max-content}
   .ibtn[data-act="print"]{display:none}
   .ibtn{width:32px;height:32px;border-radius:9px}
-  .top .brand-t{display:none}
+  .top .top-brand > div{display:none}
 }
 /* 텍스트 목록 카드: 소개 문구는 본문 앞에서 보여 줌 */
 .card-foot{padding-top:14px}
 .intro{margin:0 0 14px;padding:12px 16px;border-radius:12px;background:var(--accent-l);border:1px solid var(--accent-bg);font-size:calc(15px * var(--scale));line-height:1.65;color:var(--text-s);word-break:keep-all;text-align:justify}
 .intro b{display:block;font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--accent-d);margin-bottom:3px}
 @media print{.intro{background:none;border:1px solid #ccc}}
+/* ───────── 나의 진행률: 화면 맨 위에 늘 고정 ───────── */
+:root{--pg-h:58px}
+.lprog{display:none}
+html.has-prog .lprog{display:block;position:fixed;top:0;left:0;right:0;z-index:40;height:var(--pg-h);background:var(--bg);border-bottom:1px solid var(--bd-l)}
+html.has-prog body{padding-top:var(--pg-h)}
+html.has-prog{scroll-padding-top:calc(140px + var(--pg-h))}
+html.has-prog .rd-top{top:var(--pg-h)}
+html.has-prog .tabs{top:calc(var(--pg-h) + var(--top-h) + 1px)}
+.lprog-in{max-width:1100px;height:100%;margin:0 auto;padding:0 clamp(16px,4vw,32px);display:flex;align-items:center;gap:12px}
+.lprog-l{flex:none;font-size:13px;font-weight:700;color:var(--text-s);white-space:nowrap}
+.lprog-l b{color:var(--accent);font-weight:800}
+.lprog-track{flex:1;min-width:40px;height:8px;border-radius:99px;background:var(--bg-s);overflow:hidden}
+.lprog-track i{display:block;height:100%;width:0;border-radius:99px;background:var(--accent);transition:width .4s var(--ease)}
+.lprog-n{flex:none;font-size:13px;font-weight:600;color:var(--text-m);white-space:nowrap;font-variant-numeric:tabular-nums}
+.lprog-n b{color:var(--text);font-weight:800}
+.lprog-in{padding-right:calc(150px + env(safe-area-inset-right))}
+@media (max-width:620px){
+  :root{--pg-h:76px}
+  .lprog-in{flex-wrap:wrap;align-content:flex-end;column-gap:10px;row-gap:16px;padding-right:16px;padding-bottom:12px}
+  .lprog-l,.lprog-n{font-size:12.5px;line-height:1}
+  .lprog-l{padding-top:4px}
+  .lprog-n{padding-top:4px}
+  .lprog-track{order:3;flex:0 0 100%;height:7px}
+}
+@media print{.lprog{display:none!important} html.has-prog body{padding-top:0}}
+.meta.done{display:inline-flex;align-items:center;gap:4px;color:var(--accent);font-weight:700}
+.meta.done svg{width:14px;height:14px}
+
+/* ───────── 핸드폰: 카드 크기 줄이기 ───────── */
+@media (max-width:620px){
+  .grid{gap:10px}
+  .card{padding:13px 15px 12px;border-radius:14px}
+  .card:hover{transform:none}
+  .card-top{margin-bottom:6px}
+  .num{font-size:24px}
+  .card .chip{font-size:11px;padding:3px 8px}
+  .card-de{font-size:16px;line-height:1.3}
+  .card-ko{font-size:12.5px;margin-top:2px}
+  .card-foot{padding-top:9px;gap:4px}
+  .card-foot .tag{font-size:11px;padding:2px 7px;border-radius:5px}
+  .card-foot .meta{font-size:11px;padding:2px 8px}
+  .levels{gap:10px}
+  .lv{padding:13px 15px;gap:12px;border-radius:14px}
+  .lv-code{font-size:32px}
+  .lv-ko{font-size:15.5px}
+  .lv-desc{font-size:12.5px;margin-top:3px}
+  .lv-side{padding-top:9px}
+}
