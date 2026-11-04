@@ -368,7 +368,7 @@
       return '<li><a class="card" href="#/' + lv.toLowerCase() + '/' + pad(t.no) + '" style="--i:' + i + '">' +
         '<div class="card-top"><span class="num">' + pad(t.no) + '</span><span class="chip" title="' + esc(t.type) + '">' + esc(t.typeKo) + '</span></div>' +
         '<h2 class="card-de de" lang="de">' + esc(t.title) + '</h2>' +
-        '<p class="card-desc">' + esc(t.intro) + '</p></a></li>';
+        '<p class="card-ko">' + esc(t.titleKo) + '</p></a></li>';
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/levels', '레벨') +
       '<div class="sec-h"><div class="lvhead"><span class="lv-code">' + lv + '</span>' +
