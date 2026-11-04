@@ -64,12 +64,12 @@ h1,h2,h3,p{margin:0}
 .note{font-size:12.5px;color:var(--mut);margin-top:10px;text-align:center}
 .pick{font-size:14px;font-weight:700;margin:18px 2px 10px}
 .secgrid{display:grid;grid-template-columns:1fr 1fr;grid-gap:10px;margin-bottom:16px}
-.secbtn{background:#fff;border:2px solid var(--line);border-radius:14px;padding:18px 12px;text-align:center}
+.secbtn{position:relative;background:#fff;border:2px solid var(--line);border-radius:14px;padding:11px 10px 12px;text-align:center}
 .secbtn:hover,.secbtn:active{border-color:var(--c)}
 .secbtn.wide{grid-column:1/-1}
-.secbtn .l{font-size:22px;font-weight:800;color:var(--c);margin-bottom:2px}
-.secbtn .d{font-size:12px;color:#6b675f}
-.secbtn .m{font-size:11px;color:#77736b;margin-top:4px}
+.secbtn .l{font-size:19px;font-weight:800;color:var(--c);margin-bottom:1px}
+.secbtn .d{font-size:12px;line-height:1.35;color:#6b675f;word-break:keep-all}
+.secbtn.done{border-color:color-mix(in srgb,var(--ok) 45%,var(--line))}
 .ghost{display:block;width:100%;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:13px;font-weight:600;margin-top:8px}
 .primary{display:block;width:100%;background:var(--accent);color:#fff;border:0;border-radius:12px;padding:15px;font-weight:700;margin-top:16px}
 .primary[disabled]{background:#d8d4cb;color:#fff;cursor:not-allowed}
@@ -88,6 +88,10 @@ h1,h2,h3,p{margin:0}
 .topic .de{font-size:18px;font-weight:800;color:var(--deep)}
 .topic .ko{font-size:14px;color:var(--ink);margin-top:2px}
 .topic .si{font-size:12.5px;color:var(--mut);margin-top:8px}
+.tinfo{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tinfo span{font-size:12px;font-weight:600;line-height:1.4;color:var(--ink);background:color-mix(in srgb,var(--c) 10%,transparent);border:1px solid color-mix(in srgb,var(--c) 35%,var(--line));border-radius:999px;padding:3px 10px}
+.tinfo.set{margin:-2px 2px 12px}
+.tcard .tm{font-size:12px;color:var(--mut)}
 .kv{display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid #f0ede7;font-size:15px}
 .kv:first-of-type{border-top:0}
 .kv b{font-weight:700;margin-right:12px}
@@ -201,7 +205,7 @@ textarea{min-height:72px;resize:vertical}
 @media (max-width:380px){.opts{grid-template-columns:1fr}.opts.many{grid-template-columns:repeat(auto-fill,minmax(52px,1fr))}.ln .tx{font-size:16.5px}}
 @media (prefers-reduced-motion:no-preference){.opt,.secbtn,.chk,.rt,.chip{transition:border-color .12s,background-color .12s}}
 /* SODA 통합판 */
-.lvtabs{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;grid-gap:6px;margin:0 0 12px}.lvt{background:#fff;border:2px solid var(--line);border-radius:12px;padding:8px 2px 7px;text-align:center;line-height:1.2}.lvt b{display:block;font-size:17px;font-weight:800;color:var(--c)}.lvt span{display:block;font-size:11px;color:#999;margin-top:3px}.lvt.on{background:var(--c);border-color:var(--c)}.lvt.on b,.lvt.on span{color:#fff}.secbtn[hidden]{display:none}.secbtn .l{font-size:19px}.secbtn .d,.secbtn .m{word-break:keep-all}.secbtn .dn{display:inline-block;margin-top:7px;font-size:11px;font-weight:700;color:var(--ok);border:1px solid currentColor;border-radius:9px;padding:1px 8px}.opts.many{grid-template-columns:repeat(3,minmax(0,1fr))}.opts.many .opt{padding:10px 2px;font-size:13.5px;letter-spacing:-.1px;overflow-wrap:anywhere}@media (max-width:380px){.opts.many{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.lvtabs{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;grid-gap:6px;margin:0 0 12px}.lvt{background:#fff;border:2px solid var(--line);border-radius:12px;padding:8px 2px 7px;text-align:center;line-height:1.2}.lvt b{display:block;font-size:17px;font-weight:800;color:var(--c)}.lvt span{display:block;font-size:11px;color:#999;margin-top:3px}.lvt.on{background:var(--c);border-color:var(--c)}.lvt.on b,.lvt.on span{color:#fff}.secbtn[hidden]{display:none}.secbtn .l{font-size:19px}.secbtn .d{word-break:keep-all}.secbtn .dn{position:absolute;top:6px;right:6px;display:flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 5px;border-radius:10px;font-size:11px;font-weight:800;line-height:1;color:#fff;background:var(--ok)}.opts.many{grid-template-columns:repeat(3,minmax(0,1fr))}.opts.many .opt{padding:10px 2px;font-size:13.5px;letter-spacing:-.1px;overflow-wrap:anywhere}@media (max-width:380px){.opts.many{grid-template-columns:repeat(2,minmax(0,1fr))}}
 /* SODA 웹앱판: 첫 페이지·세트 목록·설치 안내·새 버전 알림 */
 #app:not([data-screen="home"]):not([data-screen="cover"]):not([data-screen="levels"])+.sx-web{display:none}
 #app[data-screen="cover"]{max-width:none;padding:0}
@@ -227,7 +231,8 @@ html.can-install .sx-install{display:inline-block}
 .cv-start{animation:cvRise .8s ease .8s both}
 .cv .sx-install{animation:cvRise .8s ease .95s both}
 @media (prefers-reduced-motion:reduce){.cv-logo path,.cv-academy,.cv-title,.cv-start,.cv .sx-install{animation:none}}
-.tb{display:flex;align-items:center;justify-content:space-between;padding:2px 2px 14px;border-bottom:1px solid var(--line)}
+.tb{position:-webkit-sticky;position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;margin:-20px -16px 0;padding:max(10px,env(safe-area-inset-top)) 18px 10px;background:var(--bg);border-bottom:1px solid var(--line)}
+.tb-brand{min-height:38px}
 .tb-brand{display:flex;align-items:center;min-width:0;font-size:15px;font-weight:700;color:var(--ink);white-space:nowrap;overflow:hidden}
 .tb-brand svg{height:22px;width:auto;flex:none;margin-right:9px}
 .tb-name{overflow:hidden;text-overflow:ellipsis}
@@ -263,7 +268,6 @@ html.can-install .sx-install{display:inline-block}
 .lvrow .lc{flex:none;width:58px;font-size:27px;font-weight:800;color:var(--c);letter-spacing:-.02em}
 .lvrow .li{flex:1;min-width:0}
 .lvrow .lvn{display:block;font-size:15.5px;font-weight:700;color:var(--ink)}
-.lvrow .dn{display:inline-block;margin-top:7px;font-size:11px;font-weight:700;color:var(--ok);border:1px solid currentColor;border-radius:9px;padding:1px 8px}
 .lvrow .go{flex:none;margin-left:10px;font-size:24px;line-height:1;color:#8f8b82}
 .tb .bk{flex:none;margin:0 10px 0 0}
 .tb .bk+.tb-brand{flex:1}
@@ -326,7 +330,7 @@ html[data-theme="dark"] .uc{--uc-bg:#14181E;--uc-ink:#ECEAE4;--uc-mut:#A9B0BA;--
 html[data-theme="dark"] .stats span{color:#8A929C}
 html[data-theme="dark"] .secbtn{background:#1B2028}
 html[data-theme="dark"] .secbtn .d{color:#8A929C}
-html[data-theme="dark"] .secbtn .m{color:#8A929C}
+html[data-theme="dark"] .secbtn .dn{color:#14181E}
 html[data-theme="dark"] .ghost{background:#1B2028}
 html[data-theme="dark"] .bk{background:#1B2028}
 html[data-theme="dark"] .kv{border-top:1px solid #2A313B}
@@ -374,7 +378,9 @@ html[data-theme="dark"] .cv-start{color:#14181E}
 html[data-theme="dark"] .sx-update button{color:#14181E}
 html[data-theme="dark"] .sx-sheet-c li:before{color:#14181E}
 html[data-theme="dark"] .sx-btn{color:#14181E}
-@media (max-width:700px){.tb-count,.stepno{margin-right:46px}}
+@media (max-width:800px){.tb-count,.bar>.stepno:last-child{margin-right:calc(84px + env(safe-area-inset-right))}}
+@media (max-width:440px){.tb-pre{display:none}.tb-count{margin-left:8px}}
+@media (max-width:380px){.tb .bk+.tb-brand svg{display:none}}
 </style>
 <script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -556,9 +562,9 @@ function vCover(){var t=M.title||'',i=t.indexOf(' '),b=i>0?t.slice(i+1):t,b2=b.r
 function statLine(){return(M.stats||[]).map(function(x){var v=String(x.value),l=String(x.label);return/분$/.test(v)?l+' '+v:v+l;}).join(' · ');}
 function flowCard(){return'<div class="card flowcard"><div class="ct">듣기 훈련 루틴</div><ol class="flow">'+[['예측','단어·문장·문항을 미리 읽는다'],['듣기','지문 없이 듣고 1차로 푼다'],['지문 확인','모르는 단어와 문장을 찾는다'],['다시 듣기','확인한 것이 들리는지 본다'],['이해도','다시 풀고 근거를 확인한다'],['성찰','어려웠던 이유를 고른다'],['복습 카드','체크한 단어·문장을 소리와 함께 본다']].map(function(x){return'<li><b>'+x[0]+'</b><span>'+x[1]+'</span></li>';}).join('')+'</ol></div>';}
 function vLevels(){var dm=doneMap(),nd=0;ITEMS.forEach(function(it){if(dm[it.id])nd++;});
-var h='<div class="tb"><span class="tb-brand">'+LOGO_SVG+'<span class="tb-name">'+esc(M.title)+'</span></span><span class="tb-count">완료 <b>'+nd+'</b> / '+ITEMS.length+'</span></div>';
+var tt=String(M.title||''),tk=tt.lastIndexOf(' '),h='<div class="tb"><span class="tb-brand">'+LOGO_SVG+'<span class="tb-name">'+(tk>0?'<span class="tb-pre">'+esc(tt.slice(0,tk+1))+'</span>'+esc(tt.slice(tk+1)):esc(tt))+'</span></span><span class="tb-count">완료 <b>'+nd+'</b> / '+ITEMS.length+'</span></div>';
 var sl=statLine();h+='<h1 class="lh">레벨 선택</h1><div class="lsub">'+esc(M.subtitle||'')+(sl?' · '+esc(sl):'')+'</div><div class="lvlist">';
-LVS.forEach(function(l){var st=lvStat(l);h+='<button class="lvrow" style="--c:'+esc(LVC[l])+'" data-act="pick" data-arg="'+esc(l)+'" aria-label="'+esc(l+' '+(LVNAME[l]||''))+'"><span class="lc">'+esc(l)+'</span><span class="li"><span class="lvn">'+esc(LVNAME[l]||'')+'</span>'+(st.nd?'<span class="dn">'+(st.nd>=st.ni?'✓ 완료':st.nd+'/'+st.ni+' 완료')+'</span>':'')+'</span><span class="go" aria-hidden="true">›</span></button>';});
+LVS.forEach(function(l){h+='<button class="lvrow" style="--c:'+esc(LVC[l])+'" data-act="pick" data-arg="'+esc(l)+'" aria-label="'+esc(l+' '+(LVNAME[l]||''))+'"><span class="lc">'+esc(l)+'</span><span class="li"><span class="lvn">'+esc(LVNAME[l]||'')+'</span></span><span class="go" aria-hidden="true">›</span></button>';});
 return h+'</div><button class="ghost" data-act="hist">학습 기록 보기</button>'+flowCard();}
 function vHome(){var lv=curLv(),dm=doneMap(),vis=SECS.filter(function(s){return!lv||lvOf(s)===lv;}),ni=0,nd0=0,h,sl;vis.forEach(function(s){s.items.forEach(function(ix){ni++;if(dm[ITEMS[ix].id])nd0++;});});
 if(lv){var st=lvStat(lv),tw=String(M.title||'').split(' ').pop();
@@ -567,12 +573,12 @@ h+='<h1 class="lh" style="--c:'+esc(LVC[lv])+'"><em>'+esc(lv)+'</em> 세트 목�
 else{h='<div class="tb"><span class="tb-brand">'+LOGO_SVG+'<span class="tb-name">'+esc(M.title)+'</span></span><span class="tb-count">완료 <b>'+nd0+'</b> / '+ni+'</span></div>';sl=statLine();h+='<h1 class="lh">세트 목록</h1><div class="lsub">'+esc(M.subtitle||'')+(sl?' · '+esc(sl):'')+'</div>';}
 h+='<div class="secgrid">';
 vis.forEach(function(s,vi){var wide=vis.length%2===1&&vi===vis.length-1,nd=0;s.items.forEach(function(ix){if(dm[ITEMS[ix].id])nd++;});
-h+='<button class="secbtn'+(wide?' wide':'')+'" style="--c:'+esc(s.color)+'" data-act="sec" data-arg="'+esc(s.id)+'"><div class="l">'+esc(shortLabel(s))+'</div><div class="d">'+esc(s.description||'')+'</div><div class="m">'+esc(s.meta||'')+'</div>'+(nd?'<div class="dn">'+(nd>=s.items.length?'✓ 완료':nd+'/'+s.items.length+' 완료')+'</div>':'')+'</button>';});
+h+='<button class="secbtn'+(wide?' wide':'')+(nd&&nd>=s.items.length?' done':'')+'" style="--c:'+esc(s.color)+'" data-act="sec" data-arg="'+esc(s.id)+'"><div class="l">'+esc(shortLabel(s))+'</div><div class="d">'+esc(s.description||'')+'</div>'+(nd?'<div class="dn" title="'+(nd>=s.items.length?'완료':nd+'/'+s.items.length+' 완료')+'">'+(nd>=s.items.length?'✓':nd+'/'+s.items.length)+'</div>':'')+'</button>';});
 return h+'</div><button class="ghost" data-act="hist">학습 기록 보기</button>'+flowCard();}
 
 function bar(){var s=sec();return'<div class="bar"><button class="bk" data-act="back" aria-label="뒤로">←</button><span class="badge">'+esc(s.label)+'</span><span class="stepno">'+(S.screen==='loop'?'STEP '+S.step+' / 7':'')+'</span></div>';}
-function vTexts(){var s=sec(),done={};hist().forEach(function(r){if(r&&r.itemId)done[r.itemId]=1;});var h=bar()+'<div class="pick">학습할 지문을 선택하세요</div>';
-s.items.forEach(function(ix,n){var it=ITEMS[ix];h+='<button class="tcard" data-act="item" data-arg="'+ix+'"><span class="n">'+(n<9?'0':'')+(n+1)+'</span><span class="b"><span class="de">'+esc(it.topic)+'</span><br><span class="ko">'+esc(it.topicKo)+'</span></span>'+(done[it.id]?'<span class="dn">완료</span>':'')+'</button>';});return h;}
+function vTexts(){var s=sec(),done={};hist().forEach(function(r){if(r&&r.itemId)done[r.itemId]=1;});var h=bar()+'<div class="pick">학습할 지문을 선택하세요</div>'+chips(String(s.meta||'').split(' · '),'set');
+s.items.forEach(function(ix,n){var it=ITEMS[ix];h+='<button class="tcard" data-act="item" data-arg="'+ix+'"><span class="n">'+(n<9?'0':'')+(n+1)+'</span><span class="b"><span class="de">'+esc(it.topic)+'</span><br><span class="ko">'+esc(it.topicKo)+'</span><br><span class="tm">'+nqOf(it)+'문항 · '+durKo(it.dur)+'</span></span>'+(done[it.id]?'<span class="dn">완료</span>':'')+'</button>';});return h;}
 
 function sth(title,desc){return'<div class="prog">'+STEPS.map(function(_,i){return'<i'+(i<S.step?' class="on"':'')+'></i>';}).join('')+'</div><div class="sth"><div class="k">STEP '+S.step+' · '+STEPS[S.step-1]+'</div><h2>'+esc(title)+'</h2>'+(desc?'<p>'+desc+'</p>':'')+'</div>';}
 function chk(key,on,label,act){return'<button class="chk'+(on?' on':'')+'" data-act="'+act+'" data-arg="'+key+'" role="checkbox" aria-checked="'+(on?'true':'false')+'"><span class="bx">'+(on?'✓':'')+'</span><span>'+esc(label)+'</span></button>';}
@@ -609,8 +615,12 @@ function firstDone(){var it=item(),L=S.L;return it.questions.every(function(q,qi
 function finalDone(){var it=item(),L=S.L;return it.questions.every(function(q,qi){return!gradable(q)||L.fin[qi]!=null;});}
 function tally(ans){var it=item(),c=0,t=0;it.questions.forEach(function(q,qi){if(!scorable(q))return;t++;if(ans[qi]===q.answer)c++;});return{c:c,t:t};}
 
+function nqOf(it){return it.questions.filter(function(q){return!q.isExample;}).length;}
+function durKo(t){t=Math.round(t||0);var m=Math.floor(t/60),x=t%60;return m?m+'분 '+(x<10?'0':'')+x+'초':x+'초';}
+function chips(p,c){p=p.filter(function(x){return!!x;});return p.length?'<div class="tinfo'+(c?' '+c:'')+'">'+p.map(function(x){return'<span>'+esc(x)+'</span>';}).join('')+'</div>':'';}
+function itemInfo(it){var s=null;SECS.forEach(function(x){if(x.id===it.sec)s=x;});return chips(s&&s.items.length===1?String(s.meta||'').split(' · '):[nqOf(it)+'문항',durKo(it.dur)]);}
 function vStep1(){var it=item(),L=S.L,h=sth('듣기 전에 내용을 예상합니다');
-h+='<div class="card topic"><div class="ct">오늘의 주제</div><div class="de">'+esc(it.topic)+'</div><div class="ko">'+esc(it.topicKo)+'</div><div class="si">'+esc(it.situation)+'</div></div>';
+h+='<div class="card topic"><div class="ct">오늘의 주제</div><div class="de">'+esc(it.topic)+'</div><div class="ko">'+esc(it.topicKo)+'</div>'+itemInfo(it)+'<div class="si">'+esc(it.situation)+'</div></div>';
 h+='<div class="card"><div class="ct">중요 단어</div>'+it.keyVocab.map(function(v){return'<div class="kv"><b>'+esc(v.w)+'</b><span>'+esc(v.m)+'</span></div>';}).join('')+'</div>';
 h+='<div class="card"><div class="ct">문장 틀</div>'+it.keySentences.map(function(v){return'<div class="ks"><div class="de">'+esc(v.de)+'</div><div class="ko">'+esc(v.ko)+'</div></div>';}).join('')+'</div>';
 var q=it.questions.length>0&&M.firstPass!=='off';
