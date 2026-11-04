@@ -179,7 +179,9 @@ html[data-theme="dark"] .cta{color:#14181E}
 .a-note{margin-top:36px;font-size:12.5px;color:var(--text-l);text-align:center;line-height:1.7}
 /* 양쪽 정렬: 본문·요약·설명 글. 제목과 표 머리줄은 왼쪽 정렬 유지 */
 .sub,.lead,.cat-h .note,.row .rs,.a-sum,.body,.lk-d,.refs li{text-align:justify}
-.body h2,.body h3,.tbl th{text-align:left}
+.body h2,.body h3,.tbl th,.tbl td{text-align:left}
+.de-i{white-space:nowrap}
+.tbl td>:not(:first-child).de-i{display:block;margin-top:3px}
 .de{-webkit-hyphens:auto;hyphens:auto}
 
 @media (max-width:900px){
@@ -597,11 +599,12 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
 <p class="tagp"><span class="tg">다른 학습자 연구</span> 세 번째 언어에는 두 번째 언어의 어순이 먼저 들어옵니다.</p>
 <p>Bardel과 Falk(2007)는 모국어와 두 번째 언어가 서로 다른 두 학습자 집단이 스웨덴어나 네덜란드어를 세 번째 언어로 배울 때 부정어를 어디에 두는지 비교했습니다. 학습 초기에는 모국어보다 두 번째 언어의 구조가 더 쉽게 옮겨 왔습니다. 독일어를 세 번째 언어로 배우는 노르웨이 고등학생 64명을 조사한 Kvifte(2026)도 동사 위치에서 두 번째 언어인 영어의 영향을 확인했습니다. 노르웨이어는 독일어처럼 동사가 두 번째 자리에 오는 언어인데도 그랬습니다.</p>
 <p>영어는 동사를 주어 바로 뒤에 두고, 도치를 하지 않습니다. 그래서 영어는 독일어 어순의 세 지점에서 모두 같은 방향으로 끌어당깁니다.</p>
-<div class="tbl c3"><table><thead><tr><th>영어식으로 쓴 문장</th><th>독일어</th><th>무엇이 다른가</th></tr></thead><tbody><tr><td>Heute ich gehe ins Kino. (X)</td><td>Heute gehe ich ins Kino.</td><td>부사가 앞에 와도 영어는 도치하지 않음</td></tr><tr><td>Ich habe gekauft ein Buch. (X)</td><td>Ich habe ein Buch gekauft.</td><td>영어는 동사 두 개를 붙여 둠</td></tr><tr><td>…, weil ich bin müde. (X)</td><td>…, weil ich müde bin.</td><td>영어는 부문장에서도 어순이 같음</td></tr></tbody></table></div>
+<div class="tbl c3"><table><thead><tr><th>영어식으로 쓴 문장</th><th>독일어</th><th>무엇이 다른가</th></tr></thead><tbody><tr><td><span class="de-i" lang="de">Heute ich gehe ins Kino. (X)</span></td><td><span class="de-i" lang="de">Heute gehe ich ins Kino.</span></td><td>부사가 앞에 와도 영어는 도치하지 않음</td></tr><tr><td><span class="de-i" lang="de">Ich habe gekauft ein Buch. (X)</span></td><td><span class="de-i" lang="de">Ich habe ein Buch gekauft.</span></td><td>영어는 동사 두 개를 붙여 둠</td></tr><tr><td><span class="de-i" lang="de">…, weil ich bin müde. (X)</span></td><td><span class="de-i" lang="de">…, weil ich müde bin.</span></td><td>영어는 부문장에서도 어순이 같음</td></tr></tbody></table></div>
 <p>두 번째와 세 번째 지점에서는 한국어가 맞는 방향으로 당기고 영어가 틀린 방향으로 당깁니다. 그런데 첫 번째 지점, 도치에서는 한국어가 돕지 않습니다. 영어의 영향을 가장 크게 받는 곳이 도치인 이유입니다.</p>
 <h2 id="grammatik-3-한국어-화자의-예상-순서">한국어 화자의 예상 순서</h2>
 <p>지금까지의 연구를 합치면 한국어를 모국어로 하고 영어를 배운 학습자의 어순 습득은 다음처럼 예상할 수 있습니다. 한국 학습자를 직접 추적한 연구가 아니라 여러 연구를 합친 추론이라는 점을 밝혀 둡니다.</p>
-<div class="tbl c5"><table><thead><tr><th>구조</th><th>예문</th><th>한국어</th><th>영어</th><th>예상 난이도</th></tr></thead><tbody><tr><td>문장틀 (화법조동사, 완료, 분리동사)</td><td>Ich will heute ins Kino gehen.</td><td>도움</td><td>방해</td><td>낮음</td></tr><tr><td>부문장 동사 후치</td><td>…, weil ich heute müde bin.</td><td>도움</td><td>방해</td><td>낮음. 동사 형태는 따로 점검</td></tr><tr><td>도치</td><td>Heute gehe ich ins Kino.</td><td>도움 없음</td><td>방해</td><td>높음</td></tr><tr><td>부문장 뒤 주절 도치</td><td>Wenn ich Zeit habe, gehe ich ins Kino.</td><td>도움 없음</td><td>방해</td><td>가장 높음</td></tr></tbody></table></div>
+<div class="tbl c4"><table><thead><tr><th>구조와 예문</th><th>한국어</th><th>영어</th><th>예상 난이도</th></tr></thead><tbody><tr><td><strong>문장틀</strong> (화법조동사, 완료, 분리동사) <span class="de-i" lang="de">Ich will heute ins Kino gehen.</span></td><td>도움</td><td>방해</td><td>낮음</td></tr><tr><td><strong>부문장 동사 후치</strong> <span class="de-i" lang="de">…, weil ich heute müde bin.</span></td><td>도움</td><td>방해</td><td>낮음</td></tr><tr><td><strong>도치</strong> <span class="de-i" lang="de">Heute gehe ich ins Kino.</span></td><td>도움 없음</td><td>방해</td><td>높음</td></tr><tr><td><strong>부문장 뒤 주절 도치</strong> <span class="de-i" lang="de">Wenn ich Zeit habe, gehe ich ins Kino.</span></td><td>도움 없음</td><td>방해</td><td>가장 높음</td></tr></tbody></table></div>
+<p>부문장은 동사를 끝에 두는 자리 자체는 쉽지만, 끝에 온 동사의 인칭 어미는 따로 점검해야 합니다.</p>
 <p>가장 늦게 자리 잡는 도치가 실제로는 가장 자주 필요한 구조라는 점도 기억해 두세요. <a class="xref" href="#a/schreiben-4">쓰기 공부법 4편</a>에서 소개했듯 독일어 문장의 절반가량은 주어가 아닌 성분으로 시작합니다. 그 모든 문장에서 도치가 일어납니다.</p>
 <blockquote class="call"><p>한국어 화자에게 독일어 어순의 핵심 과제는 동사를 끝에 두는 일이 아니라 동사를 두 번째 자리에 지키는 일입니다.</p></blockquote>
 <h2 id="grammatik-3-공부법-1-내-단계를-자유-산출로-진단하세요">공부법 1. 내 단계를 자유 산출로 진단하세요</h2>

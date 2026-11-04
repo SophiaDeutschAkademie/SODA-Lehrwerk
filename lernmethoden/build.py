@@ -10,6 +10,7 @@ src/*.txt(글 원고)를 읽어 한 장짜리 오프라인 페이지 lernmethode
           - 목록, 1. 번호 목록, > 강조 상자, de| 독일어 예문, |표|머리줄이 첫 줄
           ref| 참고문헌, link| 이름 | 설명 | 주소, tag| 근거 표시 | 문단
           **굵게**, *기울임*, [[글id|글 이름]] 다른 글로 가는 링크
+          {{독일어}} 표 안의 독일어 예문: 한 줄로 유지, 앞에 글이 있으면 다음 줄에 표시
 """
 import html
 import os
@@ -46,6 +47,7 @@ def esc(s):
 def inline(s):
     s = esc(s)
     s = re.sub(r'\[\[([a-z0-9-]+)\|([^\]]+)\]\]', r'<a class="xref" href="#a/\1">\2</a>', s)
+    s = re.sub(r'\{\{(.+?)\}\}', r'<span class="de-i" lang="de">\1</span>', s)
     s = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
     s = re.sub(r'(?<![*\w])\*([^*\s][^*]*?)\*(?![*\w])', r'<em>\1</em>', s)
     return s
@@ -296,7 +298,9 @@ html[data-theme="dark"] .cta{color:#14181E}
 .a-note{margin-top:36px;font-size:12.5px;color:var(--text-l);text-align:center;line-height:1.7}
 /* 양쪽 정렬: 본문·요약·설명 글. 제목과 표 머리줄은 왼쪽 정렬 유지 */
 .sub,.lead,.cat-h .note,.row .rs,.a-sum,.body,.lk-d,.refs li{text-align:justify}
-.body h2,.body h3,.tbl th{text-align:left}
+.body h2,.body h3,.tbl th,.tbl td{text-align:left}
+.de-i{white-space:nowrap}
+.tbl td>:not(:first-child).de-i{display:block;margin-top:3px}
 .de{-webkit-hyphens:auto;hyphens:auto}
 
 @media (max-width:900px){
