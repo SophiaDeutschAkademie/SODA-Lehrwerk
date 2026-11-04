@@ -335,3 +335,8 @@ mark.ev{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px;box-s
   .ibtn{width:32px;height:32px;border-radius:9px}
   .top .brand-t{display:none}
 }
+/* 텍스트 목록 카드: 소개 문구는 본문 앞에서 보여 줌 */
+.card-foot{padding-top:14px}
+.intro{margin:0 0 14px;padding:12px 16px;border-radius:12px;background:var(--accent-l);border:1px solid var(--accent-bg);font-size:calc(15px * var(--scale));line-height:1.65;color:var(--text-s);word-break:keep-all;text-align:justify}
+.intro b{display:block;font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--accent-d);margin-bottom:3px}
+@media print{.intro{background:none;border:1px solid #ccc}}

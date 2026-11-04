@@ -205,7 +205,6 @@
         '<div class="card-top"><span class="num">' + pad(t.no) + '</span><span class="chip" title="' + esc(t.type) + '">' + esc(t.typeKo) + '</span></div>' +
         '<h2 class="card-de de" lang="de">' + esc(t.title) + '</h2>' +
         '<p class="card-ko">' + esc(t.titleKo) + '</p>' +
-        '<p class="card-desc">' + esc(t.intro) + '</p>' +
         '<div class="card-foot">' + tags + '<span class="meta">' + t.words + '단어 · ' + t.questions + '문항</span></div></a></li>';
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/levels', '레벨') +
@@ -317,6 +316,7 @@
     }).join('');
     var on = !!state.showKo[t.id];
     return '<h2 class="print-h">TEXT · 본문</h2>' +
+      (t.intro ? '<p class="intro"><b>글 소개</b>' + esc(t.intro) + '</p>' : '') +
       '<div class="bar"><p class="hint">단락 아래 ‘해석’을 누르면 한국어 해석이 보여요.</p>' +
       '<button class="toggle" data-act="allko" aria-pressed="' + on + '"><span class="dot"></span>해석 모두 보기</button></div>' +
       '<article class="text' + (isChat(t) ? ' chat' : '') + (on ? ' show-ko' : '') + '" lang="de" id="textbox">' + body + '</article>';
