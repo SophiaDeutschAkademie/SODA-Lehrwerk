@@ -294,6 +294,10 @@ html[data-theme="dark"] .cta{color:#14181E}
 .pn .pv:only-child{grid-column:1}
 .a-end{margin-top:28px;text-align:center}
 .a-note{margin-top:36px;font-size:12.5px;color:var(--text-l);text-align:center;line-height:1.7}
+/* 양쪽 정렬: 본문·요약·설명 글. 제목과 표 머리줄은 왼쪽 정렬 유지 */
+.sub,.lead,.cat-h .note,.row .rs,.a-sum,.body,.lk-d,.refs li{text-align:justify}
+.body h2,.body h3,.tbl th{text-align:left}
+.de{-webkit-hyphens:auto;hyphens:auto}
 
 @media (max-width:900px){
   .split{grid-template-columns:1fr;gap:20px;padding-top:68px}
