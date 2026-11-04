@@ -569,7 +569,7 @@
       case 'smaller':
       case 'bigger':
         scale = Math.round((scale + (act === 'bigger' ? 0.1 : -0.1)) * 10) / 10;
-        scale = Math.min(1.6, Math.max(0.9, scale));
+        scale = Math.min(1.6, Math.max(0.7, scale));
         applyScale(scale);
         store('soda-lese-scale', String(scale));
         break;
