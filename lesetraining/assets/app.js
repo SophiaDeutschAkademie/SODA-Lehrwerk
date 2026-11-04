@@ -218,13 +218,11 @@
     document.title = '레벨 선택 · SODA LESETRAINING';
     var cards = LEVELS.map(function (l, i) {
       var n = (INDEX[l.code] || []).length;
-      var steps = '';
-      for (var k = 1; k <= 5; k++) steps += '<i class="' + (k <= l.step ? 'on' : '') + '"></i>';
       return '<li><a class="lv" href="#/' + l.code.toLowerCase() + '" style="--i:' + i + '">' +
         '<span class="lv-code">' + l.code + '</span>' +
         '<div><div class="lv-de" lang="de">' + esc(l.de) + '</div><div class="lv-ko">' + esc(l.ko) + '</div>' +
         '<p class="lv-desc">' + esc(l.desc) + '</p></div>' +
-        '<div class="lv-side"><span class="steps" aria-hidden="true">' + steps + '</span>' +
+        '<div class="lv-side">' +
         (progressFor(l.code).done ? '<span class="lv-done">완료 ' + progressFor(l.code).done + '개</span>' : '') +
         '<span class="arrow">' + ICON.arrowR + '</span></div></a></li>';
     }).join('');

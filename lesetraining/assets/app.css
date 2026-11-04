@@ -423,3 +423,8 @@ html.has-prog .pill,html.has-prog .rd-top .ibtn:last-child{margin-right:0}
 /* 홈 버튼이 동그라미 하나로 줄었으므로 진행률 바 오른쪽 여백도 줄임 */
 .lprog-in{padding-right:calc(108px + env(safe-area-inset-right))}
 @media (max-width:620px){.lprog-in{padding-right:16px}}
+/* 레벨 표시 바 제거 후: 핸드폰에서 빈 아래 줄이 생기지 않게 */
+@media(max-width:640px){
+  .lv-side{border-top:0;padding-top:0;justify-content:flex-start}
+  .lv-side:not(:has(.lv-done)){display:none}
+}
