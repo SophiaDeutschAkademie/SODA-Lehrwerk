@@ -396,3 +396,7 @@ html.has-prog .top{padding-right:0}
   html.has-prog .ibtn[data-act="print"]{display:inline-flex}
 }
 html.has-prog .pill,html.has-prog .rd-top .ibtn:last-child{margin-right:0}
+/* 핸드폰: 레벨 머리글은 모든 레벨에서 같은 모양(레벨 코드 아래에 독일어 이름·제목) */
+@media (max-width:620px){
+  .lvhead{flex-direction:column;align-items:flex-start;gap:10px}
+}
