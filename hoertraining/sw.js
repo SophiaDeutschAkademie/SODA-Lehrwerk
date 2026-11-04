@@ -4,11 +4,11 @@
    (the page plays it from memory), so no range requests reach this worker.
    Audio is downloaded per level: when a student picks a level on Wi-Fi,
    the page asks for that level's files only. */
-const VERSION = '89848fe072';
+const VERSION = '3f7fe236a4';
 const PREFIX = 'soda-hoertraining-web-';
 const CACHE = PREFIX + VERSION;
 const CORE = [
-  "manifest.webmanifest?v=251007e5ba",
+  "manifest.webmanifest?v=2d7c394d0d",
   "icons/icon-192.png?v=6741d0ebce",
   "icons/icon-512.png?v=48d5b62eb0",
   "icons/icon-maskable-512.png?v=823493397b",
@@ -31,6 +31,10 @@ const AUDIO = [
   "audio/a1-21-a.mp3?v=1de950120d",
   "audio/a1-22-a.mp3?v=7ffa475f74",
   "audio/a1-23-a.mp3?v=899c3f1532",
+  "audio/a1-24-a.mp3?v=8a62a3e8bd",
+  "audio/a1-25-a.mp3?v=8a5394a00b",
+  "audio/a1-26-a.mp3?v=ae4b2a39b4",
+  "audio/a1-27-a.mp3?v=d61dac749f",
   "audio/a2-01-a1.mp3?v=ef32ffb2eb",
   "audio/a2-01-a2.mp3?v=5c962a89b0",
   "audio/a2-01-b.mp3?v=6cc4d300f8",
@@ -107,7 +111,11 @@ const AUDIO = [
   "audio/c1-13-a.mp3?v=8c21648723",
   "audio/c1-14-a.mp3?v=cce9bd8ab1",
   "audio/c1-15-a.mp3?v=cef6d1d7ac",
-  "audio/c1-16-a.mp3?v=9cdb06094c"
+  "audio/c1-16-a.mp3?v=9cdb06094c",
+  "audio/c1-17-a.mp3?v=a10d1227cc",
+  "audio/c1-18-a.mp3?v=e45ffb818b",
+  "audio/c1-19-a.mp3?v=d2e2b1c3af",
+  "audio/c1-20-a.mp3?v=f71d8411d2"
 ];
 
 self.addEventListener('install', (event) => {
