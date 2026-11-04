@@ -247,7 +247,7 @@
         '<div class="card-top"><span class="num">' + pad(t.no) + '</span><span class="chip" title="' + esc(t.type) + '">' + esc(t.typeKo) + '</span></div>' +
         '<h2 class="card-de de" lang="de">' + esc(t.title) + '</h2>' +
         '<p class="card-ko">' + esc(t.titleKo) + '</p>' +
-        '<div class="card-foot">' + tags + (dm[t.id] ? '<span class="meta done">' + ICON.ok + '완료 · ' + dm[t.id].r + '/' + dm[t.id].n + '</span>' : '<span class="meta">' + t.words + '단어 · ' + t.questions + '문항</span>') + '</div></a></li>';
+        '<div class="card-foot">' + tags + (dm[t.id] ? '<span class="meta done">' + ICON.ok + '완료 · ' + dm[t.id].r + '/' + dm[t.id].n + '</span>' : '') + '</div></a></li>';
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/levels', '레벨') +
       '<div class="sec-h"><div class="lvhead"><span class="lv-code">' + lv + '</span>' +
@@ -290,8 +290,7 @@
       '<span class="tag">' + esc(t.typeKo) + '</span></div>' +
       '<h1 class="rd-title" lang="de">' + esc(t.title) + '</h1>' +
       '<p class="rd-title-ko">' + esc(t.titleKo) + '</p>' +
-      '<div class="rd-meta"><span>' + ICON.doc + t.words + '단어</span><span>' + ICON.q + '문제 ' + t.questions.length +
-      '</span><span>' + ICON.book + '문법 ' + t.grammar.length + ' · 단어 ' + t.vocab.length + ' · 표현 ' + t.phrases.length + '</span></div></div>' +
+      '</div>' +
       '<nav class="tabs" aria-label="학습 메뉴"><div class="tablist" role="tablist">' +
       TABS.map(function (x) {
         return '<button class="tab" role="tab" id="tab-' + x.id + '" aria-controls="panel-' + x.id + '" data-act="tab" data-tab="' + x.id + '">' +
