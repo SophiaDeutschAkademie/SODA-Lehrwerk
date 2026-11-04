@@ -4,7 +4,7 @@
    (the page plays it from memory), so no range requests reach this worker.
    Audio is downloaded per level: when a student picks a level on Wi-Fi,
    the page asks for that level's files only. */
-const VERSION = '3f7fe236a4';
+const VERSION = '86874e30fd';
 const PREFIX = 'soda-hoertraining-web-';
 const CACHE = PREFIX + VERSION;
 const CORE = [

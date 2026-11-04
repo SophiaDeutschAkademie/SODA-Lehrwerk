@@ -263,7 +263,6 @@ html.can-install .sx-install{display:inline-block}
 .lvrow .lc{flex:none;width:58px;font-size:27px;font-weight:800;color:var(--c);letter-spacing:-.02em}
 .lvrow .li{flex:1;min-width:0}
 .lvrow .lvn{display:block;font-size:15.5px;font-weight:700;color:var(--ink)}
-.lvrow .lm{display:block;margin-top:3px;font-size:12px;color:#77736b;word-break:keep-all}
 .lvrow .dn{display:inline-block;margin-top:7px;font-size:11px;font-weight:700;color:var(--ok);border:1px solid currentColor;border-radius:9px;padding:1px 8px}
 .lvrow .go{flex:none;margin-left:10px;font-size:24px;line-height:1;color:#8f8b82}
 .tb .bk{flex:none;margin:0 10px 0 0}
@@ -362,7 +361,6 @@ html[data-theme="dark"] .warnbox{background:#2D2416;border:1px solid #5A4A2C}
 html[data-theme="dark"] .lvt{background:#1B2028}
 html[data-theme="dark"] .lvt span{color:#8A929C}
 html[data-theme="dark"] .lvrow{background:#1B2028}
-html[data-theme="dark"] .lvrow .lm{color:#8A929C}
 html[data-theme="dark"] .primary{color:#14181E}
 /* 가독성 보정: 레벨 색(--c) 위의 흰 글씨는 배경을 깊게, 배경 위의 레벨 색 글씨는 테마별로 명도 조정 */
 .badge,.pp,.q .qn,.ib.on,.chk.on .bx{background:color-mix(in srgb,var(--c) 66%,#000)}
@@ -560,7 +558,7 @@ function flowCard(){return'<div class="card flowcard"><div class="ct">듣기 훈
 function vLevels(){var dm=doneMap(),nd=0;ITEMS.forEach(function(it){if(dm[it.id])nd++;});
 var h='<div class="tb"><span class="tb-brand">'+LOGO_SVG+'<span class="tb-name">'+esc(M.title)+'</span></span><span class="tb-count">완료 <b>'+nd+'</b> / '+ITEMS.length+'</span></div>';
 var sl=statLine();h+='<h1 class="lh">레벨 선택</h1><div class="lsub">'+esc(M.subtitle||'')+(sl?' · '+esc(sl):'')+'</div><div class="lvlist">';
-LVS.forEach(function(l){var st=lvStat(l);h+='<button class="lvrow" style="--c:'+esc(LVC[l])+'" data-act="pick" data-arg="'+esc(l)+'" aria-label="'+esc(l+' '+(LVNAME[l]||''))+'"><span class="lc">'+esc(l)+'</span><span class="li"><span class="lvn">'+esc(LVNAME[l]||'')+'</span><span class="lm">'+esc(st.range+' · '+st.ni+'지문 · '+st.nq+'문항 · '+st.min+'분')+'</span>'+(st.nd?'<span class="dn">'+(st.nd>=st.ni?'✓ 완료':st.nd+'/'+st.ni+' 완료')+'</span>':'')+'</span><span class="go" aria-hidden="true">›</span></button>';});
+LVS.forEach(function(l){var st=lvStat(l);h+='<button class="lvrow" style="--c:'+esc(LVC[l])+'" data-act="pick" data-arg="'+esc(l)+'" aria-label="'+esc(l+' '+(LVNAME[l]||''))+'"><span class="lc">'+esc(l)+'</span><span class="li"><span class="lvn">'+esc(LVNAME[l]||'')+'</span>'+(st.nd?'<span class="dn">'+(st.nd>=st.ni?'✓ 완료':st.nd+'/'+st.ni+' 완료')+'</span>':'')+'</span><span class="go" aria-hidden="true">›</span></button>';});
 return h+'</div><button class="ghost" data-act="hist">학습 기록 보기</button>'+flowCard();}
 function vHome(){var lv=curLv(),dm=doneMap(),vis=SECS.filter(function(s){return!lv||lvOf(s)===lv;}),ni=0,nd0=0,h,sl;vis.forEach(function(s){s.items.forEach(function(ix){ni++;if(dm[ITEMS[ix].id])nd0++;});});
 if(lv){var st=lvStat(lv),tw=String(M.title||'').split(' ').pop();
