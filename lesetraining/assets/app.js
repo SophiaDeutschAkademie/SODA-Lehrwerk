@@ -189,7 +189,7 @@
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/', '표지') +
       '<div class="sec-h"><span class="kicker">STUFE</span><h1>레벨 선택</h1>' +
-      '<p>레벨마다 텍스트 10개가 있어요. 텍스트마다 독해 문제, 주요 문법, 단어와 숙어를 함께 공부해요.</p></div>' +
+      '<p>레벨마다 텍스트 ' + Math.min.apply(null, LEVELS.map(function (l) { return (INDEX[l.code] || []).length; })) + '개가 있어요. 텍스트마다 독해 문제, 주요 문법, 단어와 숙어를 함께 공부해요.</p></div>' +
       '<ul class="levels">' + cards + '</ul></main>';
     settle(state.route);
   }

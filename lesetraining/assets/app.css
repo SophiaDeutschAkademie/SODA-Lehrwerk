@@ -316,3 +316,21 @@ mark.ev{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px;box-s
   .hide-ko .vko,.hide-ko .phko{color:var(--text-s)!important;background:none!important}
   .card,.lv{animation:none}
 }
+
+/* 양쪽 정렬: 본문 · 번역 · 문제 · 선택지 · 해설 · 문법 · 단어 설명 */
+.sec-h p,.lv-desc,.card-desc,.hint,
+.pde,.pko,.q-t,.fb p,.fb-ev,
+.g-ex p,.ex-de,.ex-ko,.pattern,.tip,.vko,.ph-ex p,.ph-ex .ko{text-align:justify}
+.opts:not(.row) .opt > span:last-child{flex:1;min-width:0;text-align:justify}
+.pde,.q-t,.ex-de,.fb-ev,.opt [lang="de"]{hyphens:auto;-webkit-hyphens:auto}
+.tip > div{flex:1;min-width:0}
+/* 오른쪽 위 고정 버튼(목차·다크 모드)과 상단 도구가 겹치지 않게 */
+@media (max-width:1120px){.rd-top-in,.top{padding-right:calc(140px + env(safe-area-inset-right))}}
+@media (max-width:620px){
+  .rd-top-in{gap:8px}
+  .rd-where{display:none}
+  .tools{gap:4px;margin-left:auto;width:max-content}
+  .ibtn[data-act="print"]{display:none}
+  .ibtn{width:32px;height:32px;border-radius:9px}
+  .top .brand-t{display:none}
+}
