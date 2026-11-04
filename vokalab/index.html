@@ -19,7 +19,7 @@
     function paint(){ var dk=d.getAttribute('data-theme')==='dark'; b.innerHTML=dk?SUN:MOON; b.setAttribute('aria-pressed',dk?'true':'false'); b.setAttribute('aria-label','다크 모드 '+(dk?'끄기':'켜기')); b.title='다크 모드 '+(dk?'켜짐':'꺼짐')+' · 누르면 '+(dk?'라이트':'다크')+'로 바뀌어요'; }
     b.addEventListener('click',function(){ var n=d.getAttribute('data-theme')==='dark'?'light':'dark'; apply(n); try{localStorage.setItem(KEY,n);}catch(e){} paint(); });
     paint(); document.body.appendChild(b);
-    if(!document.getElementById('soda-toc-btn')){ var a=document.createElement('a'); a.id='soda-toc-btn'; a.className='soda-toc-btn'; a.href='../#inhalt'; a.setAttribute('aria-label','목차로 돌아가기'); a.innerHTML='<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg>목차'; document.body.appendChild(a); }
+    if(!document.getElementById('soda-toc-btn')){ var a=document.createElement('a'); a.id='soda-toc-btn'; a.className='soda-toc-btn'; a.href='../#inhalt'; a.setAttribute('aria-label','홈(목차)으로 돌아가기'); a.title='홈 · 목차로'; a.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>'; document.body.appendChild(a); }
   }
   if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
 })();
@@ -337,7 +337,7 @@ body{font-family:'SODA Latin','Pretendard Variable','Pretendard',-apple-system,B
 .hint-chip-der{color:#4A5A86;border-color:#C9D8EE}
 .hint-chip-die{color:#C0392B;border-color:#EFC9C3}
 .hint-chip-das{color:#4f7a6a;border-color:#BFE0CB}
-.hint-img{display:block;max-height:220px;max-width:100%;width:auto;height:auto;border-radius:10px;border:1px solid #e9e1cf;background:#fff}
+.hint-img{display:block;flex:none;object-fit:contain;max-height:220px;max-width:100%;width:auto;height:auto;border-radius:10px;border:1px solid #e9e1cf;background:#fff}
 .hint-emoji{font-size:40px;line-height:1.2;letter-spacing:6px;font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif}
 .hint-ex{font-size:14px;color:#444;line-height:1.7;overflow-wrap:break-word;word-break:break-word;min-width:0}
 .hint-mask{color:#7d714f;letter-spacing:.08em;font-weight:700}
@@ -399,8 +399,8 @@ html[data-theme="dark"] .hint-more.pri{background:#AEB9DD;border-color:#AEB9DD;c
 .soda-theme-btn svg{width:20px;height:20px}
 html[data-theme="dark"] .soda-theme-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
 .soda-theme-btn:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
-.soda-toc-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:calc(max(10px,env(safe-area-inset-right)) + 46px);z-index:2147482000;height:38px;padding:0 14px 0 10px;border-radius:999px;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:inline-flex;align-items:center;gap:4px;font:600 13px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;text-decoration:none;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
-.soda-toc-btn svg{width:16px;height:16px;flex:none}
+.soda-toc-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:calc(max(10px,env(safe-area-inset-right)) + 46px);z-index:2147482000;width:38px;height:38px;padding:0;border-radius:50%;justify-content:center;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:inline-flex;align-items:center;gap:4px;font:600 13px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;text-decoration:none;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
+.soda-toc-btn svg{width:20px;height:20px;flex:none}
 html[data-theme="dark"] .soda-toc-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
 .soda-toc-btn:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
 @media print{.soda-toc-btn{display:none!important}}
@@ -574,7 +574,6 @@ html[data-theme="dark"] #soda-notice .sn-b{background:#AEB9DD;color:#1d2333}
 #hub{background:var(--bg,#f6f3ec);font-family:'SODA Latin','Pretendard Variable','Pretendard','Noto Sans KR',system-ui,-apple-system,'Apple SD Gothic Neo',sans-serif;-webkit-font-smoothing:antialiased}
 html[data-theme="dark"] #hub{background:#14181E;color:#ECEAE4}
 #hub .uc{position:absolute;inset:0;overflow:auto}
-body.voka-engine .soda-toc-btn{display:none}
 html[data-theme="dark"] #root{filter:invert(.9) hue-rotate(180deg)}
 html[data-theme="dark"] .side,html[data-theme="dark"] .prog-hd{filter:hue-rotate(180deg) invert(1) contrast(1.25)}
 html[data-theme="dark"] .side img{filter:none}
