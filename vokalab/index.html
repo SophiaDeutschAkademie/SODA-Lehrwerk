@@ -322,19 +322,51 @@ body{font-family:'SODA Latin','Pretendard Variable','Pretendard',-apple-system,B
 .hint-btn:hover{background:#384568;color:#fff;border-color:#384568}
 .hint-btn.on{background:#384568;color:#fff;border-color:#384568}
 .hint-btn svg{width:12px;height:12px;display:block}
-.hint-box{margin-top:11px;background:#f6f3ec;border:1px solid #e9e1cf;border-radius:10px;padding:10px 13px;display:flex;flex-direction:column;gap:8px}
-.hint-row{display:flex;align-items:center;gap:5px 6px;flex-wrap:wrap;min-width:0}
-.hint-lab{font-size:10px;font-weight:700;color:#756a4d;letter-spacing:.06em;flex-shrink:0;width:34px}
-.hint-chip{font-size:11px;font-weight:700;padding:3px 9px;border-radius:6px;background:#fff;border:1px solid #E7DCC2;color:#384568;white-space:nowrap}
+.hint-ov{position:fixed;inset:0;z-index:10050;background:rgba(20,20,20,.5);display:flex;align-items:center;justify-content:center;padding:16px;animation:hintFade .15s ease}
+.hint-pop{background:#fff;color:#1f2f4a;border-radius:16px;width:100%;max-width:440px;max-height:min(86vh,86dvh);overflow:auto;box-shadow:0 20px 60px rgba(0,0,0,.28);display:flex;flex-direction:column;animation:hintUp .18s ease}
+.hint-head{display:flex;align-items:center;gap:10px;padding:14px 16px 12px;border-bottom:1px solid #e9e1cf;position:sticky;top:0;background:inherit;z-index:1}
+.hint-head-t{flex:1;min-width:0;font-size:16px;font-weight:800;color:#384568;overflow-wrap:anywhere}
+.hint-head-s{font-size:11px;font-weight:700;color:#756a4d;letter-spacing:.06em;flex-shrink:0}
+.hint-x{width:30px;height:30px;border-radius:50%;border:none;background:#f1ede2;color:#384568;font-size:18px;line-height:1;cursor:pointer;flex-shrink:0;font-family:inherit}
+.hint-x:hover{background:#384568;color:#fff}
+.hint-body{display:flex;flex-direction:column;gap:14px;padding:14px 16px}
+.hint-row{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0}
+.hint-chips{display:flex;flex-wrap:wrap;gap:6px}
+.hint-lab{font-size:10px;font-weight:700;color:#756a4d;letter-spacing:.06em}
+.hint-chip{font-size:12px;font-weight:700;padding:4px 10px;border-radius:6px;background:#f6f3ec;border:1px solid #E7DCC2;color:#384568;white-space:nowrap}
 .hint-chip-der{color:#4A5A86;border-color:#C9D8EE}
 .hint-chip-die{color:#C0392B;border-color:#EFC9C3}
 .hint-chip-das{color:#4f7a6a;border-color:#BFE0CB}
-.hint-img{display:block;height:120px;width:auto;max-width:calc(100% - 44px);border-radius:8px;border:1px solid #e9e1cf;background:#fff}
-.hint-emoji{font-size:29px;line-height:1.15;letter-spacing:5px;font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif}
-.hint-ex{font-size:12.5px;color:#555;line-height:1.65;overflow-wrap:break-word;word-break:break-word;min-width:0}
+.hint-img{display:block;max-height:220px;max-width:100%;width:auto;height:auto;border-radius:10px;border:1px solid #e9e1cf;background:#fff}
+.hint-emoji{font-size:40px;line-height:1.2;letter-spacing:6px;font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif}
+.hint-ex{font-size:14px;color:#444;line-height:1.7;overflow-wrap:break-word;word-break:break-word;min-width:0}
 .hint-mask{color:#7d714f;letter-spacing:.08em;font-weight:700}
-.hint-more{margin-left:auto;font-size:11px;font-weight:700;color:#384568;background:none;border:none;cursor:pointer;font-family:inherit;padding:2px 0;text-decoration:underline;text-underline-offset:3px;white-space:nowrap;flex-shrink:0}
-.hint-more:hover{color:#384568
+.hint-foot{display:flex;gap:8px;justify-content:flex-end;padding:12px 16px 16px;border-top:1px solid #e9e1cf}
+.hint-more{font-size:13px;font-weight:700;border-radius:9px;padding:9px 14px;cursor:pointer;font-family:inherit;border:1px solid #ddd5c4;background:#fff;color:#384568}
+.hint-more:hover{background:#f6f3ec}
+.hint-more.pri{background:#384568;border-color:#384568;color:#fff}
+.hint-more.pri:hover{background:#2C3754}
+@keyframes hintFade{from{opacity:0}to{opacity:1}}
+@keyframes hintUp{from{transform:translateY(10px);opacity:0}to{transform:none;opacity:1}}
+@media(max-width:640px){.hint-ov{align-items:flex-end;padding:0}.hint-pop{max-width:none;border-radius:18px 18px 0 0;max-height:82vh;max-height:82dvh;padding-bottom:env(safe-area-inset-bottom)}}
+html[data-theme="dark"] .hint-btn{background:#242B35;border-color:#3A4350;color:#AEB9DD}
+html[data-theme="dark"] .hint-btn:hover,html[data-theme="dark"] .hint-btn.on{background:#AEB9DD;border-color:#AEB9DD;color:#14181E}
+html[data-theme="dark"] .hint-ov{background:rgba(0,0,0,.65)}
+html[data-theme="dark"] .hint-pop{background:#1B2028;color:#ECEAE4;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+html[data-theme="dark"] .hint-head,html[data-theme="dark"] .hint-foot{border-color:#2A313B}
+html[data-theme="dark"] .hint-head-t{color:#AEB9DD}
+html[data-theme="dark"] .hint-head-s,html[data-theme="dark"] .hint-lab,html[data-theme="dark"] .hint-mask{color:#A9B0BA}
+html[data-theme="dark"] .hint-x{background:#242B35;color:#AEB9DD}
+html[data-theme="dark"] .hint-x:hover{background:#AEB9DD;color:#14181E}
+html[data-theme="dark"] .hint-chip{background:#242B35;border-color:#3A4350;color:#C8D0EA}
+html[data-theme="dark"] .hint-chip-der{color:#8FB0E0;border-color:#33416A}
+html[data-theme="dark"] .hint-chip-die{color:#E88A7E;border-color:#5A3330}
+html[data-theme="dark"] .hint-chip-das{color:#7FC4AA;border-color:#2F5446}
+html[data-theme="dark"] .hint-img{border-color:#2A313B}
+html[data-theme="dark"] .hint-ex{color:#D5D8DE}
+html[data-theme="dark"] .hint-more{background:#242B35;border-color:#3A4350;color:#C8D0EA}
+html[data-theme="dark"] .hint-more:hover{background:#2C3542}
+html[data-theme="dark"] .hint-more.pri{background:#AEB9DD;border-color:#AEB9DD;color:#14181E}
 </style>
 <style>
 /* ===== SODA 공통 표지 (모든 학습 자료 동일) ===== */
@@ -1204,33 +1236,46 @@ function hintData(word) {
   const parts = best ? ex.split(best) : null;
   return { chips, emoji: HINT_EMOJI[de] || '', img: HINT_IMG[de] || '', maskParts: parts, maskLen: best.length, hasEx: !!parts };
 }
-function HintBox({ word, level, onMore, onReveal }) {
+function HintPopup({ word, level, onMore, onReveal, onClose }) {
   const h = hintData(word);
   const max = h.hasEx ? 2 : 1;
   const lv = Math.min(level, max);
-  return (
-    React.createElement("div", { className: "hint-box" },
+  React.useEffect(() => {
+    const k = (e) => { if (e.key === 'Escape') onClose(); };
+    document.addEventListener('keydown', k);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.removeEventListener('keydown', k); document.body.style.overflow = prev; };
+  }, []);
+  return ReactDOM.createPortal(
+    React.createElement("div", { className: "hint-ov", onClick: (e) => { if (e.target === e.currentTarget) onClose(); } },
+    React.createElement("div", { className: "hint-pop", role: "dialog", "aria-modal": "true", "aria-label": "뜻 힌트" },
+    React.createElement("div", { className: "hint-head" },
+    React.createElement("span", { className: "hint-head-t" }, word.de),
+    React.createElement("span", { className: "hint-head-s" }, "힌트"),
+    React.createElement("button", { className: "hint-x", onClick: onClose, "aria-label": "닫기" }, "×")),
+    React.createElement("div", { className: "hint-body" },
     (h.img || h.emoji) &&
     React.createElement("div", { className: "hint-row" },
     React.createElement("span", { className: "hint-lab" }, "그림"),
-    h.img ? React.createElement("img", { className: "hint-img", src: h.img, alt: "" }) : React.createElement("span", { className: "hint-emoji" }, h.emoji)
-    ),
+    h.img ? React.createElement("img", { className: "hint-img", src: h.img, alt: "" }) : React.createElement("span", { className: "hint-emoji" }, h.emoji)),
+    h.chips.length > 0 &&
     React.createElement("div", { className: "hint-row" },
     React.createElement("span", { className: "hint-lab" }, "구조"),
-    h.chips.map((c, i) => React.createElement("span", { key: i, className: 'hint-chip' + (c.k ? ' hint-chip-' + c.k : '') }, c.t)),
-    React.createElement("button", { className: "hint-more", onClick: lv < max ? onMore : onReveal },
-    lv < max ? '힌트 더 보기' : '뜻 보기')
-    ),
+    React.createElement("div", { className: "hint-chips" },
+    h.chips.map((c, i) => React.createElement("span", { key: i, className: 'hint-chip' + (c.k ? ' hint-chip-' + c.k : '') }, c.t)))),
     lv >= 2 && h.maskParts &&
     React.createElement("div", { className: "hint-row" },
     React.createElement("span", { className: "hint-lab" }, "문맥"),
     React.createElement("div", { className: "hint-ex" },
     h.maskParts.map((p, i) => React.createElement(React.Fragment, { key: i },
     i > 0 && React.createElement("span", { className: "hint-mask" }, '○'.repeat(h.maskLen)),
-    p))
-    )
-    )));
-
+    p))))),
+    React.createElement("div", { className: "hint-foot" },
+    React.createElement("button", { className: "hint-more" + (lv < max ? "" : " pri"), onClick: lv < max ? onMore : onReveal },
+    lv < max ? '힌트 더 보기' : '뜻 보기'),
+    lv < max && React.createElement("button", { className: "hint-more pri", onClick: onReveal }, '뜻 보기')))),
+    document.body);
 }
 function WordCard({ globalIndex, word, isRevealed, onToggle, mastery, onRate, showAllKO, hideAllDE, playing }) {
   const [hintLv, setHintLv] = useState(0);
@@ -1266,9 +1311,10 @@ function WordCard({ globalIndex, word, isRevealed, onToggle, mastery, onRate, sh
     React.createElement("span", { className: "wcard-badge", style: { color: st.color, background: st.bg } }, st.label)
     ),
     hintLv > 0 && !showKO &&
-    React.createElement(HintBox, { word: word, level: hintLv,
+    React.createElement(HintPopup, { word: word, level: hintLv,
       onMore: () => setHintLv(hintLv + 1),
-      onReveal: () => {setHintLv(0);onToggle();} }),
+      onReveal: () => {setHintLv(0);onToggle();},
+      onClose: () => setHintLv(0) }),
     (word.ex || word.exKo) &&
     React.createElement("div", { className: "wcard-ex" },
     React.createElement("div", { className: "wcard-ex-row" },
