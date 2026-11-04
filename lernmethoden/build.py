@@ -135,7 +135,8 @@ def render_body(body, pfx):
             n = max(len(r) for r in rows)
             th = ''.join('<th>%s</th>' % inline(c) for c in rows[0])
             tb = ''.join('<tr>%s</tr>' % ''.join('<td>%s</td>' % inline(c) for c in r) for r in rows[1:])
-            out.append('<div class="tbl c%d"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (n, th, tb))
+            fit = ' fit' if max(len(c) for r in rows for c in r) <= 18 else ''
+            out.append('<div class="tbl c%d%s"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (n, fit, th, tb))
         elif ln.startswith('> '):
             rows = run('> ')
             out.append('<blockquote class="call">%s</blockquote>' % ''.join('<p>%s</p>' % inline(r) for r in rows))
@@ -277,6 +278,7 @@ html[data-theme="dark"] .cta{color:#14181E}
 .tbl th,.tbl td{padding:10px 14px;border-bottom:1px solid var(--bd-l);vertical-align:top;word-break:keep-all;overflow-wrap:anywhere}
 .tbl tr:last-child td{border-bottom:0}
 .tbl.c3 table,.tbl.c4 table,.tbl.c5 table{min-width:520px}
+.tbl.fit table{min-width:0}
 .links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
 .lk{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid var(--bd);border-radius:14px;background:var(--bg-c);transition:border-color .2s,transform .25s var(--ease)}
 .lk:hover{border-color:var(--accent);transform:translateY(-2px)}
