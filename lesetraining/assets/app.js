@@ -4,7 +4,7 @@
 
   var LEVELS = [
     { code: 'A1', de: 'Anfänger', ko: '처음 읽는 독일어', step: 1, words: '90–140',
-      desc: '채팅, 광고, 안내문, 초대장처럼 일상에서 만나는 짧은 글을 읽어요.' },
+      desc: '일상에서 만나는 짧은 글을 읽어요.' },
     { code: 'A2', de: 'Grundlegende Kenntnisse', ko: '생활 속 독일어', step: 2, words: '160–240',
       desc: '이메일, 일기, 인터뷰, 포럼 글처럼 익숙한 주제를 다룬 글을 읽어요.' },
     { code: 'B1', de: 'Fortgeschrittene Sprachverwendung', ko: '정보와 의견 읽기', step: 3, words: '260–360',
