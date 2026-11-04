@@ -358,7 +358,7 @@
       return '<li><b>' + esc(x[0]) + '</b><p>' + esc(x[1]) + '</p></li>';
     }).join('');
     var mist = GUIDE_MISTAKES.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('');
-    app.innerHTML = '<main id="main" class="page view guide" tabindex="-1">' + brandTop('#/levels', '레벨 선택') +
+    app.innerHTML = '<main id="main" class="page view guide" tabindex="-1">' + brandTop('#/levels', '레벨') +
       '<div class="sec-h"><span class="kicker">LERNWEG</span><h1>이렇게 공부하세요</h1>' +
       '<p>대화 하나를 6단계로 연습하는 방법이에요. 대화 1개에 약 30분이 걸리고, 앞의 3단계만 해도 15분이면 돼요. 듣기, 따라 말하기, 기억해서 말하기, 녹음 비교의 순서로 말하는 힘을 키워요.</p></div>' +
       '<ol class="g-steps">' + steps + '</ol>' +
