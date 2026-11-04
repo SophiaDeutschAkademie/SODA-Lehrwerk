@@ -370,7 +370,7 @@
         '<h2 class="card-de de" lang="de">' + esc(t.title) + '</h2>' +
         '<p class="card-desc">' + esc(t.intro) + '</p>' +
         '<div class="card-foot">' + (t.focus || []).slice(0, 3).map(function (f) { return '<span class="tag">' + esc(f) + '</span>'; }).join('') +
-        '<span class="meta">발화 ' + t.turns.length + '개 · 표현 ' + phraseCount(t) + '개</span></div></a></li>';
+        '</div></a></li>';
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/levels', '레벨') +
       '<div class="sec-h"><div class="lvhead"><span class="lv-code">' + lv + '</span>' +
