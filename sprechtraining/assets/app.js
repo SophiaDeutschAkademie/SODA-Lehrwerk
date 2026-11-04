@@ -365,17 +365,20 @@
     var items = DATA[lv] || [];
     document.title = lv + ' · SODA SPRECHTRAINING';
     var cards = items.map(function (t, i) {
-      return '<li><a class="drow" href="#/' + lv.toLowerCase() + '/' + pad(t.no) + '">' +
-        '<span class="drow-no">' + pad(t.no) + '</span>' +
-        '<span class="drow-de de" lang="de">' + esc(t.title) + '</span>' +
-        '<span class="drow-go">' + ICON.arrowR + '</span></a></li>';
+      return '<li><a class="card" href="#/' + lv.toLowerCase() + '/' + pad(t.no) + '" style="--i:' + i + '">' +
+        '<div class="card-top"><span class="num">' + pad(t.no) + '</span><span class="chip" title="' + esc(t.type) + '">' + esc(t.typeKo) + '</span></div>' +
+        '<h2 class="card-de de" lang="de">' + esc(t.title) + '</h2>' +
+        '<p class="card-ko">' + esc(t.titleKo) + '</p>' +
+        '<p class="card-desc">' + esc(t.intro) + '</p>' +
+        '<div class="card-foot">' + (t.focus || []).slice(0, 3).map(function (f) { return '<span class="tag">' + esc(f) + '</span>'; }).join('') +
+        '<span class="meta">발화 ' + t.turns.length + '개 · 표현 ' + phraseCount(t) + '개</span></div></a></li>';
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/levels', '레벨') +
       '<div class="sec-h"><div class="lvhead"><span class="lv-code">' + lv + '</span>' +
       '<div><span class="kicker" lang="de">' + esc(L.de.toUpperCase()) + '</span><h1>' + esc(L.ko) + '</h1></div></div>' +
       '<p>' + esc(L.desc) + '</p></div>' +
       (L.special ? '<aside class="mznote"><b>사용하기 전에</b><p>이 챕터의 표현은 말할 때 쓰는 구어체예요. 일상 대화에서는 자연스럽지만 시험의 쓰기 과제나 공식 문서에서는 ‘표준 독일어’로 바꿔 써요. 대화마다 있는 ‘표준 독일어’ 풀이로 바꿔 말하는 연습도 함께 해요.</p></aside>' : '') +
-      (items.length ? '<ul class="dlist">' + cards + '</ul>' : '<p class="empty">아직 대화가 없어요.</p>') + '</main>';
+      (items.length ? '<ul class="grid">' + cards + '</ul>' : '<p class="empty">아직 대화가 없어요.</p>') + '</main>';
   }
 
   /* ───────── 대화 화면 ───────── */

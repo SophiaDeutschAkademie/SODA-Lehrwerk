@@ -355,13 +355,3 @@ mark.ev{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px;box-s
 /* 본문 양쪽 정렬 */
 .page p,.g-step ul li,.g-mist li,.turn .de-line,.turn .ko-line,.lv-desc,.guide-link small{text-align:justify;text-justify:inter-word;text-align-last:left}
 .turn .de-line{hyphens:auto;-webkit-hyphens:auto}
-
-/* 대화 목록: 카드 없이 제목만 */
-.dlist{list-style:none;border-top:1px solid var(--bd)}
-.drow{display:flex;align-items:center;gap:18px;padding:20px 4px;border-bottom:1px solid var(--bd);color:var(--text);transition:background .15s,padding .2s var(--ease)}
-.drow:hover{background:var(--accent-l);padding-left:12px;padding-right:12px}
-.drow-no{flex:none;width:2em;font-size:15px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
-.drow-de{flex:1;min-width:0;font-size:19px;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
-.drow-go{flex:none;color:var(--text-l);display:flex}
-.drow-go svg{width:16px;height:16px}
-.drow:hover .drow-go{color:var(--accent)}
