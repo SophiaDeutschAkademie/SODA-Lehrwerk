@@ -404,3 +404,22 @@ html.has-prog .pill,html.has-prog .rd-top .ibtn:last-child{margin-right:0}
 .para{padding-left:0}
 .pno{position:static;display:inline-block;vertical-align:.18em;min-width:1.7em;margin-right:.5em;padding:0 .35em;border-radius:6px;background:var(--bg-s);color:var(--text-m);text-align:center;font-size:calc(11.5px * var(--scale));line-height:1.65;top:auto}
 .para.q{background:none;border:0;border-radius:0;padding:0}
+/* 레벨 선택 카드: 더 작게 */
+.levels{gap:10px}
+.lv{padding:14px clamp(16px,2.5vw,24px);gap:clamp(12px,2.5vw,24px);border-radius:16px}
+.lv-code{font-size:clamp(30px,4.5vw,42px)}
+.lv-de{font-size:12px}
+.lv-ko{font-size:clamp(15.5px,1.8vw,17px);margin-top:1px}
+.lv-desc{font-size:13px;margin-top:3px;line-height:1.5}
+.lv-side{gap:8px;font-size:12.5px}
+.arrow{width:30px;height:30px}
+.arrow svg{width:14px;height:14px}
+.lv-done{color:var(--accent);font-weight:700}
+@media(max-width:640px){
+  .lv{padding:12px 14px;gap:10px 12px}
+  .lv-code{font-size:28px;min-width:1.9em}
+  .lv-side{padding-top:8px}
+}
+/* 홈 버튼이 동그라미 하나로 줄었으므로 진행률 바 오른쪽 여백도 줄임 */
+.lprog-in{padding-right:calc(108px + env(safe-area-inset-right))}
+@media (max-width:620px){.lprog-in{padding-right:16px}}
