@@ -343,9 +343,8 @@
     var cls = 'para' + (p.style ? ' ' + p.style : '') + (open ? ' open' : '');
     var de = evText ? markText(p.de, [evText], 'ev') : esc(p.de);
     return '<div class="' + cls + '" data-i="' + i + '" id="p-' + i + '">' +
-      (num ? '<span class="pno" aria-hidden="true">' + num + '</span>' : '') +
       (p.label ? '<span class="plabel">' + esc(p.label) + '</span>' : '') +
-      '<p class="pde">' + de + '</p>' +
+      '<p class="pde">' + (num ? '<span class="pno" aria-hidden="true">' + num + '</span>' : '') + de + '</p>' +
       '<button class="pbtn" data-act="ko" data-i="' + i + '" aria-expanded="' + (open ? 'true' : 'false') + '">해석</button>' +
       '<p class="pko" lang="ko">' + esc(p.ko) + '</p></div>';
   }
@@ -377,7 +376,8 @@
       if (!el) return;
       var has = ev && p.de.indexOf(ev) >= 0 && !target;
       var pde = el.querySelector('.pde');
-      pde.innerHTML = has ? markText(p.de, [ev], 'ev') : esc(p.de);
+      var pn = pde.querySelector('.pno');
+      pde.innerHTML = (pn ? pn.outerHTML : '') + (has ? markText(p.de, [ev], 'ev') : esc(p.de));
       if (has) target = el;
     });
     if (target) {

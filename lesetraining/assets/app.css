@@ -400,3 +400,7 @@ html.has-prog .pill,html.has-prog .rd-top .ibtn:last-child{margin-right:0}
 @media (max-width:620px){
   .lvhead{flex-direction:column;align-items:flex-start;gap:10px}
 }
+/* 문단 번호: 왼쪽 칸을 비우지 않고 첫 줄 앞에 작은 번호로 */
+.para{padding-left:0}
+.pno{position:static;display:inline-block;vertical-align:.18em;min-width:1.7em;margin-right:.5em;padding:0 .35em;border-radius:6px;background:var(--bg-s);color:var(--text-m);text-align:center;font-size:calc(11.5px * var(--scale));line-height:1.65;top:auto}
+.para.q{background:none;border:0;border-radius:0;padding:0}
