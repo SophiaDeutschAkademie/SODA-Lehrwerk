@@ -145,6 +145,7 @@ main:focus{outline:none}
 .para.h:first-child{margin-top:0}
 .para.q .pde{font-weight:700;color:var(--accent-d)}
 .para.meta .pde{font-size:calc(16.5px * var(--scale));color:var(--text-s)}
+.para.meta{white-space:normal;margin-left:0;font-size:inherit;font-weight:inherit;color:inherit}
 .para.meta .pbtn,.para.h .pbtn{display:none}
 .para.h .pko{margin-top:4px;padding:4px 12px;font-weight:600}
 .pko{display:none;margin-top:8px;padding:10px 14px;border-radius:10px;background:var(--accent-l);color:var(--text-s);font-size:calc(15px * var(--scale));line-height:1.7;word-break:keep-all}
