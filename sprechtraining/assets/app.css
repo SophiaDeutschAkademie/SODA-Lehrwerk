@@ -355,3 +355,4 @@ mark.ev{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px;box-s
 /* 본문 양쪽 정렬 */
 .page p,.g-step ul li,.g-mist li,.turn .de-line,.turn .ko-line,.lv-desc,.guide-link small{text-align:justify;text-justify:inter-word;text-align-last:left}
 .turn .de-line{hyphens:auto;-webkit-hyphens:auto}
+.card-desc{margin-bottom:0}
