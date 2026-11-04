@@ -388,3 +388,11 @@ html.has-prog .tabs{top:calc(var(--pg-h) + var(--top-h) + 1px)}
   .lv-desc{font-size:12.5px;margin-top:3px}
   .lv-side{padding-top:9px}
 }
+/* 진행률 바가 있으면 고정 버튼은 진행률 바 안에 있으므로 아래 상단 줄은 오른쪽 끝까지 씀 */
+html.has-prog .rd-top-in{padding-right:clamp(16px,4vw,32px)}
+html.has-prog .top{padding-right:0}
+@media (max-width:620px){
+  html.has-prog .top .top-brand > div{display:block}
+  html.has-prog .ibtn[data-act="print"]{display:inline-flex}
+}
+html.has-prog .pill,html.has-prog .rd-top .ibtn:last-child{margin-right:0}
