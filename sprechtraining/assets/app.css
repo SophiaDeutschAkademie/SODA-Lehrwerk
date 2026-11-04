@@ -351,3 +351,7 @@ mark.ev{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px;box-s
 .page .top{flex-wrap:wrap;justify-content:flex-start;row-gap:14px;padding:10px 100px 8px 0}
 .page .top .pill{order:2}
 @media(max-width:520px){.page .top-brand b{font-size:12.5px;letter-spacing:.1em}.page .top-brand img{height:30px}.page .top-brand{gap:9px}}
+
+/* 본문 양쪽 정렬 */
+.page p,.g-step ul li,.g-mist li,.turn .de-line,.turn .ko-line,.lv-desc,.guide-link small{text-align:justify;text-justify:inter-word;text-align-last:left}
+.turn .de-line{hyphens:auto;-webkit-hyphens:auto}
