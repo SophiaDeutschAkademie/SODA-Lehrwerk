@@ -540,7 +540,10 @@ html[data-theme="dark"] .f-gn{fill:#5CBF85}
 html[data-theme="dark"] .f-not{fill:var(--no)}
 html[data-theme="dark"] .f-wt{fill:var(--warn)}
 
-@media (max-width:700px){.sx-count{margin-right:46px}}
+/* 오른쪽 위 고정 버튼 두 개(다크 모드 + 집 모양 목차, 합계 약 94px)와 상단 바 글씨가 겹치지 않게 자리 확보 */
+@media (max-width:900px){.sx-bar-in{padding-right:calc(max(10px,env(safe-area-inset-right)) + 96px)}}
+.sx-brand span{overflow:hidden;text-overflow:ellipsis}
+@media (max-width:400px){.sx-bar-in{gap:8px}.sx-brand{font-size:14px;gap:7px}.sx-brand svg{height:20px}.sx-count{font-size:13px}.sx-count b{font-size:14.5px}}
 /* 부록 (암기 노트) */
 .sx-list .sx-li-ax{margin-top:32px;border-top:1px solid var(--sx-line)}
 .sx-row-ax .sx-num{font-size:13px;letter-spacing:-.04em;white-space:nowrap;color:var(--sx-navy)}
