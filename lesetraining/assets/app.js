@@ -68,7 +68,9 @@
     store(DONE_KEY, JSON.stringify(m));
   }
   /* ───────── 학습 기록 (채점할 때마다 쌓임) · 결과 내보내기 ───────── */
-  var LOG_KEY = 'soda-lese-log', NAME_KEY = 'soda-lese-name', memLog = null;
+  var LOG_KEY = 'soda-lese-log', NAME_KEY = 'soda-lese-name', SENT_KEY = 'soda-lese-sent', memLog = null;
+  /* 제출 주소: Modelltest 「선생님께 제출하기」와 같은 Google Apps Script 웹 앱 (SODA-Goethe tools/제출 받기) */
+  var SUBMIT_URL = 'https://script.google.com/macros/s/AKfycbxMAWjrhVgLqgKBYa3tZBIxbfnQ7Y1DYzmKO9fOonJbSdHE6_g1TDEXeykziZo1ujTt7g/exec';
   function readLog() {
     if (memLog) return memLog.slice();
     try { var a = JSON.parse(store(LOG_KEY) || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; }
@@ -109,6 +111,68 @@
       results: sm.results, records: readLog()
     });
   }
+  function dstr(t) {
+    var d = new Date(t);
+    return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()) + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+  }
+  function mailBody(nm, now) {
+    var sm = exportSummary(), log = readLog(), last = +(store(SENT_KEY) || 0), nw = 0;
+    log.forEach(function (r) { if (Date.parse(r.ts) > last) nw++; });
+    var o = [
+      '학생: ' + nm,
+      '앱: SODA-Lehrwerk Lesetraining (독해 훈련)',
+      '보낸 시각: ' + dstr(now),
+      '완료한 텍스트: ' + sm.done + ' / ' + sm.total + ' · 채점 ' + log.length + '회' + (last ? ' · 지난번(' + dstr(last) + ') 이후 새 채점 ' + nw + '회' : ''),
+      '최고 점수 기준 정답률: ' + sm.rate + '%',
+      '레벨별 완료: ' + LEVELS.map(function (l) { var c = sm.byLevel[l.code]; return l.code + ' ' + c.done + '/' + c.total; }).join(' · '),
+      '', '==== 채점 기록 (최근 순) ===='
+    ];
+    if (!log.length) o.push('', '(문항별 채점 기록 없음 — 아래 텍스트별 최고 점수만 있습니다)');
+    log.forEach(function (r, i) {
+      var t = Date.parse(r.ts);
+      o.push('', (i + 1) + '. ' + (last && t > last ? '[새 기록] ' : '') + (t ? dstr(t) : '') + ' · ' + r.level + ' ' + pad(+r.no || 0) + ' ' + r.title + ' — ' + r.right + '/' + r.total);
+      (r.wrong || []).forEach(function (w) {
+        o.push('   ' + w.n + '번 (' + w.kind + ') ' + (w.picked == null ? '답 안 고름' : '고른 답: ' + w.picked) + ' → 정답: ' + w.answer);
+      });
+    });
+    o.push('', '==== 텍스트별 최고 점수 ====');
+    if (!sm.results.length) o.push('(없음)');
+    sm.results.forEach(function (x) { o.push(x.level + ' ' + pad(+x.no || 0) + ' ' + x.title + ' — ' + x.best); });
+    var b = o.join('\n');
+    return b.length > 140000 ? b.slice(0, 140000) + '\n…(이하 생략)' : b;
+  }
+  function sendMail() {
+    var nm = String(store(NAME_KEY) || '').replace(/\s+/g, ' ').trim(), bt = document.querySelector('#xp [data-act="xpmail"]');
+    if (!nm) {
+      xpMsg('이름을 입력하세요.', 'no');
+      var f = document.querySelector('#xp [data-xp-name]');
+      if (f) f.focus();
+      return;
+    }
+    var done = false, now = Date.now();
+    var tm = setTimeout(function () { fail('응답이 없어요. 인터넷 연결을 확인하고 다시 눌러 주세요.'); }, 60000);
+    function fail(m) {
+      if (done) return;
+      done = true; clearTimeout(tm);
+      if (bt) bt.disabled = false;
+      xpMsg(m + ' 계속 안 되면 「파일로 저장」으로 받은 파일을 선생님께 보내 주세요.', 'no');
+    }
+    if (bt) bt.disabled = true;
+    xpMsg('보내고 있어요…', '');
+    var pl = { v: 1, kind: 'modelltest', app: 'lehrwerk', appName: 'Lesetraining', exam: 'Lehrwerk Lesetraining', mt: '기록',
+      module: '학습 결과', name: nm, finished: dstr(now), used: '-', byTime: false, body: mailBody(nm, now), speaking: null,
+      count: readLog().length, data: exportText(), page: location.href.split('#')[0] };
+    try {
+      fetch(SUBMIT_URL, { method: 'POST', body: JSON.stringify(pl) }).then(function (r) { return r.json(); }).then(function (j) {
+        if (done) return;
+        if (!j || !j.ok) { fail((j && j.message) || '보내지 못했어요.'); return; }
+        done = true; clearTimeout(tm);
+        if (bt) bt.disabled = false;
+        store(SENT_KEY, String(now));
+        xpMsg(dstr(now) + ' 선생님께 메일로 보냈어요.', 'ok');
+      }, function () { fail('서버에 연결하지 못했어요.'); });
+    } catch (e) { fail('이 브라우저에서는 보낼 수 없어요.'); }
+  }
   function today() { var d = new Date(); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
   function openExport() {
     closeExport();
@@ -126,11 +190,12 @@
         '<ul class="xp-lv">' + lv + '</ul>' :
         '<p class="xp-sum">아직 채점한 텍스트가 없어요. 문제를 풀고 채점하면 결과가 쌓여요.</p>') +
       '<label class="xp-name"><span>이름</span><input type="text" data-xp-name placeholder="이름" autocomplete="name" value="' + esc(store(NAME_KEY) || '') + '"></label>' +
-      '<div class="xp-b"><button class="btn pri" data-act="xpcopy"' + (has ? '' : ' disabled') + '>결과 복사</button>' +
+      '<button class="btn pri xp-mail" data-act="xpmail"' + (has ? '' : ' disabled') + '>' + ICON.mail + '메일로 보내기</button>' +
+      '<p class="xp-msg" aria-live="polite">' + (store(SENT_KEY) ? '마지막으로 보낸 시각: ' + dstr(+store(SENT_KEY)) : '메일 보내기는 소피아 독일어학원 수강생 전용이에요.') + '</p>' +
+      '<div class="xp-b"><button class="btn sec" data-act="xpcopy"' + (has ? '' : ' disabled') + '>결과 복사</button>' +
       '<button class="btn sec" data-act="xpfile"' + (has ? '' : ' disabled') + '>파일로 저장</button></div>' +
-      '<p class="xp-msg" aria-live="polite"></p>' +
       '<textarea class="xp-ta" data-xp-text readonly hidden aria-label="결과 내용"></textarea>' +
-      '<p class="xp-note">복사한 결과는 메신저에 붙여 넣어 보내고, 저장한 파일은 그대로 첨부해 보내세요. 결과는 이 기기의 브라우저에 저장돼 있어요.</p>' +
+      '<p class="xp-note">「메일로 보내기」를 누르면 이 기기에 쌓인 결과 전체가 선생님 메일로 바로 가요. 메일이 안 될 때는 결과를 복사해 메신저로 보내거나 저장한 파일을 보내세요.</p>' +
       '<button class="xp-x" data-act="xpclose" aria-label="닫기">닫기</button></div>';
     document.body.appendChild(box);
     xpFrom = document.activeElement;
@@ -145,14 +210,19 @@
     if (xpFrom && xpFrom.focus && document.body.contains(xpFrom)) xpFrom.focus();
     xpFrom = null;
   }
-  function xpMsg(t) { var m = document.querySelector('#xp .xp-msg'); if (m) m.textContent = t; }
+  function xpMsg(t, c) {
+    var m = document.querySelector('#xp .xp-msg');
+    if (!m) return;
+    m.textContent = t;
+    m.className = 'xp-msg' + (c ? ' ' + c : '');
+  }
   function xpShow(txt) {
     var ta = document.querySelector('#xp [data-xp-text]');
     if (!ta) return;
     ta.hidden = false; ta.value = txt; ta.focus(); ta.select();
   }
   function exportCopy() {
-    var txt = exportText(), done = function () { xpMsg('결과를 복사했어요. 메신저에 붙여 넣어 보내세요.'); };
+    var txt = exportText(), done = function () { xpMsg('결과를 복사했어요. 메신저에 붙여 넣어 보내세요.', 'ok'); };
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(txt).then(done, function () { xpShow(txt); xpMsg('아래 내용을 길게 눌러 복사하세요.'); });
     } else {
@@ -170,7 +240,7 @@
       a.download = (store(NAME_KEY) || 'student').replace(/[\\/:*?"<>|_]+/g, ' ').trim() + ' Lesetraining ' + today() + '.json';
       document.body.appendChild(a); a.click(); document.body.removeChild(a);
       setTimeout(function () { URL.revokeObjectURL(u); }, 4000);
-      xpMsg('파일을 저장했어요. 이 파일을 선생님께 보내세요.');
+      xpMsg('파일을 저장했어요. 이 파일을 선생님께 보내세요.', 'ok');
     } catch (e) { xpShow(txt); xpMsg('파일 저장이 막혀 있어요. 아래 내용을 복사하세요.'); }
   }
   function exportBtn(label) {
@@ -240,6 +310,7 @@
     q: '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="M7.8 7.8a2.3 2.3 0 1 1 3.2 2.1c-.6.3-1 .8-1 1.4v.5M10 14.3v.2"/></svg>',
     book: '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 5C8.3 4 6.2 3.7 4 4v11c2.2-.3 4.3 0 6 1 1.7-1 3.8-1.3 6-1V4c-2.2-.3-4.3 0-6 1zM10 5v11"/></svg>',
     arrowR: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>',
+    mail: '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="11" rx="2"/><path d="m3 5.5 7 5.5 7-5.5"/></svg>',
     out: '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 12.5V3M6.5 6.5 10 3l3.5 3.5"/><path d="M4 11v4.5c0 .8.7 1.5 1.5 1.5h9c.8 0 1.5-.7 1.5-1.5V11"/></svg>'
   };
   function brandTop(backHref, backLabel) {
@@ -748,6 +819,9 @@
         break;
       case 'xpclose':
         closeExport();
+        break;
+      case 'xpmail':
+        sendMail();
         break;
       case 'xpcopy':
         exportCopy();

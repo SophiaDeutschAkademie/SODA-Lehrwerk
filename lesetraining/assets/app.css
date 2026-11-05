@@ -453,3 +453,7 @@ html.has-prog .pill,html.has-prog .rd-top .ibtn:last-child{margin-right:0}
 .xp-x:hover{border-color:var(--accent);color:var(--accent)}
 @media (max-width:420px){.xp{padding:12px;align-items:flex-end}.xp-in{padding:22px 18px 18px}.xp-lv{gap:4px}}
 @media print{.xp,.xp-open,[data-act="export"]{display:none!important}}
+.xp-mail{width:100%;margin-top:14px}
+.xp-msg{color:var(--text-m)}
+.xp-msg.ok{color:var(--ok)}
+.xp-msg.no{color:var(--no)}

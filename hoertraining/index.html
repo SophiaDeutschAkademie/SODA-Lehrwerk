@@ -682,7 +682,7 @@ h+='<div class="card"><div class="chips">'+CAUSES.map(function(c){return'<button
 h+='<div class="card"><div class="ct">메모 (선택)</div><textarea data-memo placeholder="안 들린 부분, 질문할 것">'+esc(L.memo)+'</textarea></div>';
 return h+'<button class="primary" data-act="save"'+(Object.keys(L.causes).length?'':' disabled')+'>✓ 학습 완료</button>';}
 
-function exportBox(H){return'<div class="ct">선생님께 기록 보내기</div><input type="text" data-name placeholder="이름" value="'+esc(lsGet(NK)||'')+'" aria-label="이름"><button class="ghost" data-act="copy"'+(H.length?'':' disabled')+'>기록 복사</button><button class="ghost" data-act="file"'+(H.length?'':' disabled')+'>파일로 저장</button><textarea data-export readonly style="display:none;margin-top:8px" aria-label="기록 내용"></textarea>';}
+function exportBox(H){var ls=+(lsGet(SENT_K)||0);return'<div class="ct">선생님께 기록 보내기</div><input type="text" data-name placeholder="이름" value="'+esc(lsGet(NK)||'')+'" aria-label="이름"><button class="primary" data-act="mail" style="margin-top:10px"'+(H.length?'':' disabled')+'>✉ 메일로 보내기</button><div class="small mailst" data-mailst aria-live="polite" style="margin-top:6px">'+(ls?'마지막으로 보낸 시각: '+dstr(ls):'메일 보내기는 소피아 독일어학원 수강생 전용입니다.')+'</div><button class="ghost" data-act="copy"'+(H.length?'':' disabled')+'>기록 복사</button><button class="ghost" data-act="file"'+(H.length?'':' disabled')+'>파일로 저장</button><textarea data-export readonly style="display:none;margin-top:8px" aria-label="기록 내용"></textarea>';}
 function vStep7(){var it=item(),L=S.L,h=sth('학습 완료!','체크한 단어와 문장을 소리와 함께 한 번 더 확인하세요.');
 h+=scoreCard()+vWordCards(it,L)+vSentCards(it,L,'r');
 if(!Object.keys(L.words).length&&!Object.keys(L.sents).length)h+='<div class="card small">체크한 단어와 문장이 없습니다.</div>';
@@ -726,6 +726,30 @@ first:{correct:f.c,total:f.t,answers:toArr(L.first.ans),locked:L.first.locked,ra
 final:{correct:g.c,total:g.t,answers:toArr(L.fin)},rate2:L.rate2,rate4:L.rate4,causes:Object.keys(L.causes),memo:L.memo,
 words:Object.keys(L.words),sentences:Object.keys(L.sents).map(Number),missing:Object.keys(L.missing),wrongTraps:wt,clozeOpened:Object.keys(L.open).length,seconds:Math.round((Date.now()-L.t0)/1000)};
 var H=hist();H.unshift(rec);var ok=lsSet(HK,JSON.stringify(H));L.saved=true;L.stored=ok;if(!ok)toast('이 브라우저에서는 기록이 저장되지 않습니다. 창을 닫기 전에 기록을 복사하세요.');}
+var SUBMIT_URL='https://script.google.com/macros/s/AKfycbxMAWjrhVgLqgKBYa3tZBIxbfnQ7Y1DYzmKO9fOonJbSdHE6_g1TDEXeykziZo1ujTt7g/exec',SENT_K=HK+'-sent';
+function p2(n){return(n<10?'0':'')+n;}
+function dstr(t){var d=new Date(t);return d.getFullYear()+'-'+p2(d.getMonth()+1)+'-'+p2(d.getDate())+' '+p2(d.getHours())+':'+p2(d.getMinutes());}
+function mailBody(nm,now){var H=hist(),last=+(lsGet(SENT_K)||0),fc=0,ft=0,gc=0,gt=0,nw=0,ck={};CAUSES.forEach(function(c){ck[c[0]]=c[1];});
+H.forEach(function(r){if(!r)return;if(r.first&&r.first.total){fc+=r.first.correct;ft+=r.first.total;}if(r.final&&r.final.total){gc+=r.final.correct;gt+=r.final.total;}if((r.ts||0)>last)nw++;});
+var o=['학생: '+nm,'앱: SODA-Lehrwerk Hörtraining (듣기 훈련)','보낸 시각: '+dstr(now),'학습 기록: '+H.length+'건'+(last?' · 지난번('+dstr(last)+') 이후 새 기록 '+nw+'건':''),'1차 정답률(지문 보기 전): '+(ft?pct(fc,ft)+'% ('+fc+'/'+ft+')':'–')+' · 최종 정답률: '+(gt?pct(gc,gt)+'% ('+gc+'/'+gt+')':'–'),'','==== 학습 기록 (최근 순) ===='];
+H.forEach(function(r,i){if(!r)return;var x=[];
+if(r.first&&r.first.total)x.push('1차 '+r.first.correct+'/'+r.first.total);if(r.final&&r.final.total)x.push('최종 '+r.final.correct+'/'+r.final.total);if(r.rate2)x.push('첫 듣기 '+r.rate2);if(r.rate4)x.push('다시 듣기 '+r.rate4);if(r.seconds)x.push('학습 '+Math.max(1,Math.round(r.seconds/60))+'분');
+o.push('',(i+1)+'. '+(last&&(r.ts||0)>last?'[새 기록] ':'')+(r.ts?dstr(r.ts):'')+' · '+(r.sectionLabel||r.level||'')+' · '+(r.topic||''),'   '+x.join(' · '));
+if(r.causes&&r.causes.length)o.push('   어려웠던 이유: '+r.causes.map(function(c){return ck[c]||c;}).join(', '));
+if(r.wrongTraps&&r.wrongTraps.length)o.push('   1차에서 걸린 함정: '+r.wrongTraps.map(function(c){return TRAPS[c]||c;}).join(', '));
+if(r.words&&r.words.length)o.push('   체크한 단어: '+r.words.join(', '));
+if(r.missing&&r.missing.length)o.push('   뜻이 등록되지 않은 단어: '+r.missing.join(', '));
+if(r.memo)o.push('   메모: '+String(r.memo).replace(/\s+/g,' '));});
+var b=o.join('\n');return b.length>140000?b.slice(0,140000)+'\n…(이하 생략)':b;}
+function sendMail(){var nm=String(lsGet(NK)||'').replace(/\s+/g,' ').trim(),bt=app.querySelector('[data-act="mail"]');
+var say=function(c,t){var st=app.querySelector('[data-mailst]');if(st){st.style.color=c?'var(--'+c+')':'';st.textContent=t;}};
+if(!nm){toast('이름을 입력하세요.');var f=app.querySelector('[data-name]');if(f)f.focus();return;}
+if(!hist().length)return;
+var done=false,now=Date.now(),tm=setTimeout(function(){fail('응답이 없습니다. 인터넷 연결을 확인하고 다시 눌러 주세요.');},60000);
+function fail(m){if(done)return;done=true;clearTimeout(tm);if(bt)bt.disabled=false;say('no',m+' 계속 안 되면 「파일로 저장」으로 받은 파일을 선생님께 보내 주세요.');}
+if(bt)bt.disabled=true;say('','보내고 있습니다…');
+var H=hist(),pl={v:1,kind:'modelltest',app:'lehrwerk',appName:'Hörtraining',exam:'Lehrwerk Hörtraining',mt:'기록',module:'학습 기록',name:nm,finished:dstr(now),used:'-',byTime:false,body:mailBody(nm,now),speaking:null,count:H.length,data:exportText(),page:location.href.split('#')[0]};
+try{fetch(SUBMIT_URL,{method:'POST',body:JSON.stringify(pl)}).then(function(r){return r.json();}).then(function(j){if(done)return;if(!j||!j.ok){fail((j&&j.message)||'보내지 못했습니다.');return;}done=true;clearTimeout(tm);if(bt)bt.disabled=false;lsSet(SENT_K,String(now));say('ok',dstr(now)+' 선생님께 메일로 보냈습니다.');toast('선생님께 메일로 보냈습니다.');},function(){fail('서버에 연결하지 못했습니다.');});}catch(e){fail('이 브라우저에서는 보낼 수 없습니다.');}}
 function exportText(){return JSON.stringify({app:'listening-routine',format:2,set:HK,title:M.title,student:lsGet(NK)||'',exportedAt:new Date().toISOString(),records:hist()});}
 function showExport(txt){var ta=app.querySelector('[data-export]');if(!ta)return;ta.style.display='block';ta.value=txt;ta.focus();ta.select();}
 
@@ -760,6 +784,7 @@ save:function(){if(!Object.keys(S.L.causes).length)return;var m=app.querySelecto
 pp:function(){stopSeg();if(!au.getAttribute('src')){toast('음원을 불러오는 중입니다. 잠시 뒤 다시 누르세요.');return;}if(au.paused){var p=au.play();if(p&&p.catch)p.catch(function(){});}else au.pause();},
 back3:function(){stopSeg();try{au.currentTime=Math.max(0,au.currentTime-3);}catch(e){}},
 speed:function(a){au.playbackRate=parseFloat(a);syncPlayer();},
+mail:function(){sendMail();},
 copy:function(){var txt=exportText(),done=function(){toast('기록을 복사했습니다. 메신저에 붙여 넣어 보내세요.');};
 if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,function(){showExport(txt);toast('아래 내용을 길게 눌러 복사하세요.');});}
 else{showExport(txt);var ok=false;try{ok=document.execCommand('copy');}catch(e){}if(ok)done();else toast('아래 내용을 길게 눌러 복사하세요.');}},
