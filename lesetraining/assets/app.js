@@ -67,6 +67,116 @@
     if (!old || right >= old.r) m[t.id] = { r: right, n: total };
     store(DONE_KEY, JSON.stringify(m));
   }
+  /* ───────── 학습 기록 (채점할 때마다 쌓임) · 결과 내보내기 ───────── */
+  var LOG_KEY = 'soda-lese-log', NAME_KEY = 'soda-lese-name', memLog = null;
+  function readLog() {
+    if (memLog) return memLog.slice();
+    try { var a = JSON.parse(store(LOG_KEY) || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; }
+  }
+  function addLog(rec) {
+    var a = readLog();
+    a.unshift(rec);
+    if (a.length > 1000) a.length = 1000;
+    try { localStorage.setItem(LOG_KEY, JSON.stringify(a)); memLog = null; } catch (e) { memLog = a; }
+  }
+  function metaById() {
+    var m = {};
+    LEVELS.forEach(function (l) {
+      (INDEX[l.code] || []).forEach(function (x) { m[x.id] = { level: l.code, no: x.no, title: x.title, titleKo: x.titleKo }; });
+    });
+    return m;
+  }
+  function exportSummary() {
+    var dm = doneMap(), meta = metaById(), byLevel = {}, r = 0, n = 0, done = 0, total = 0;
+    LEVELS.forEach(function (l) {
+      var c = { done: 0, total: (INDEX[l.code] || []).length };
+      (INDEX[l.code] || []).forEach(function (x) { if (dm[x.id]) c.done++; });
+      byLevel[l.code] = c; done += c.done; total += c.total;
+    });
+    var results = Object.keys(dm).map(function (id) {
+      var x = meta[id] || {}, d = dm[id];
+      r += d.r; n += d.n;
+      return { id: id, level: x.level || '', no: x.no || '', title: x.title || '', best: d.r + '/' + d.n };
+    }).sort(function (a, b) { return (a.level + pad(+a.no || 0)).localeCompare(b.level + pad(+b.no || 0)); });
+    return { done: done, total: total, byLevel: byLevel, rate: n ? Math.round(r * 100 / n) : 0, results: results };
+  }
+  function exportText() {
+    var sm = exportSummary();
+    return JSON.stringify({
+      app: 'lesetraining', format: 1, title: 'SODA LESETRAINING',
+      student: store(NAME_KEY) || '', exportedAt: new Date().toISOString(),
+      summary: { done: sm.done, total: sm.total, bestRate: sm.rate, byLevel: sm.byLevel },
+      results: sm.results, records: readLog()
+    });
+  }
+  function today() { var d = new Date(); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function openExport() {
+    closeExport();
+    var sm = exportSummary(), log = readLog(), has = sm.done > 0 || log.length > 0;
+    var lv = LEVELS.map(function (l) {
+      var c = sm.byLevel[l.code];
+      return '<li><b>' + l.code + '</b><span>' + c.done + ' / ' + c.total + '</span></li>';
+    }).join('');
+    var box = document.createElement('div');
+    box.className = 'xp';
+    box.id = 'xp';
+    box.innerHTML = '<div class="xp-in" role="dialog" aria-modal="true" aria-labelledby="xp-t">' +
+      '<h2 id="xp-t">선생님께 결과 보내기</h2>' +
+      (has ? '<p class="xp-sum">완료한 텍스트 <b>' + sm.done + '</b>개 · 채점 <b>' + log.length + '</b>회 · 최고 점수 기준 정답률 <b>' + sm.rate + '%</b></p>' +
+        '<ul class="xp-lv">' + lv + '</ul>' :
+        '<p class="xp-sum">아직 채점한 텍스트가 없어요. 문제를 풀고 채점하면 결과가 쌓여요.</p>') +
+      '<label class="xp-name"><span>이름</span><input type="text" data-xp-name placeholder="이름" autocomplete="name" value="' + esc(store(NAME_KEY) || '') + '"></label>' +
+      '<div class="xp-b"><button class="btn pri" data-act="xpcopy"' + (has ? '' : ' disabled') + '>결과 복사</button>' +
+      '<button class="btn sec" data-act="xpfile"' + (has ? '' : ' disabled') + '>파일로 저장</button></div>' +
+      '<p class="xp-msg" aria-live="polite"></p>' +
+      '<textarea class="xp-ta" data-xp-text readonly hidden aria-label="결과 내용"></textarea>' +
+      '<p class="xp-note">복사한 결과는 메신저에 붙여 넣어 보내고, 저장한 파일은 그대로 첨부해 보내세요. 결과는 이 기기의 브라우저에 저장돼 있어요.</p>' +
+      '<button class="xp-x" data-act="xpclose" aria-label="닫기">닫기</button></div>';
+    document.body.appendChild(box);
+    xpFrom = document.activeElement;
+    var f = box.querySelector('[data-xp-name]');
+    if (f) try { f.focus({ preventScroll: true }); } catch (e) { f.focus(); }
+  }
+  var xpFrom = null;
+  function closeExport() {
+    var b = document.getElementById('xp');
+    if (!b) return;
+    b.parentNode.removeChild(b);
+    if (xpFrom && xpFrom.focus && document.body.contains(xpFrom)) xpFrom.focus();
+    xpFrom = null;
+  }
+  function xpMsg(t) { var m = document.querySelector('#xp .xp-msg'); if (m) m.textContent = t; }
+  function xpShow(txt) {
+    var ta = document.querySelector('#xp [data-xp-text]');
+    if (!ta) return;
+    ta.hidden = false; ta.value = txt; ta.focus(); ta.select();
+  }
+  function exportCopy() {
+    var txt = exportText(), done = function () { xpMsg('결과를 복사했어요. 메신저에 붙여 넣어 보내세요.'); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).then(done, function () { xpShow(txt); xpMsg('아래 내용을 길게 눌러 복사하세요.'); });
+    } else {
+      xpShow(txt);
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) {}
+      if (ok) done(); else xpMsg('아래 내용을 길게 눌러 복사하세요.');
+    }
+  }
+  function exportFile() {
+    var txt = exportText();
+    try {
+      var b = new Blob([txt], { type: 'application/json' }), u = URL.createObjectURL(b), a = document.createElement('a');
+      a.href = u;
+      a.download = (store(NAME_KEY) || 'student').replace(/[\\/:*?"<>|_]+/g, ' ').trim() + ' Lesetraining ' + today() + '.json';
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      setTimeout(function () { URL.revokeObjectURL(u); }, 4000);
+      xpMsg('파일을 저장했어요. 이 파일을 선생님께 보내세요.');
+    } catch (e) { xpShow(txt); xpMsg('파일 저장이 막혀 있어요. 아래 내용을 복사하세요.'); }
+  }
+  function exportBtn(label) {
+    return '<div class="actions xp-open"><button class="btn sec" data-act="export">' + ICON.out + esc(label) + '</button></div>';
+  }
+
   function progressFor(lv) {
     var m = doneMap(), total = 0, done = 0;
     (lv ? [lv] : LEVELS.map(function (l) { return l.code; })).forEach(function (code) {
@@ -129,7 +239,8 @@
     doc: '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 2.5h7l3.5 3.5v11.5H5z"/><path d="M12 2.5V6h3.5M7.5 10h5M7.5 13h5"/></svg>',
     q: '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="M7.8 7.8a2.3 2.3 0 1 1 3.2 2.1c-.6.3-1 .8-1 1.4v.5M10 14.3v.2"/></svg>',
     book: '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 5C8.3 4 6.2 3.7 4 4v11c2.2-.3 4.3 0 6 1 1.7-1 3.8-1.3 6-1V4c-2.2-.3-4.3 0-6 1zM10 5v11"/></svg>',
-    arrowR: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>'
+    arrowR: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>',
+    out: '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 12.5V3M6.5 6.5 10 3l3.5 3.5"/><path d="M4 11v4.5c0 .8.7 1.5 1.5 1.5h9c.8 0 1.5-.7 1.5-1.5V11"/></svg>'
   };
   function brandTop(backHref, backLabel) {
     return '<div class="top"><a class="top-brand" href="#/levels" aria-label="레벨 선택으로">' +
@@ -229,7 +340,7 @@
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/', '표지') +
       '<div class="sec-h"><span class="kicker">STUFE</span><h1>레벨 선택</h1>' +
       '<p>텍스트마다 독해 문제, 주요 문법, 단어와 숙어를 함께 공부해요.</p></div>' +
-      '<ul class="levels">' + cards + '</ul></main>';
+      '<ul class="levels">' + cards + '</ul>' + exportBtn('학습 결과 내보내기') + '</main>';
     settle(state.route);
   }
 
@@ -251,7 +362,7 @@
       '<div class="sec-h"><div class="lvhead"><span class="lv-code">' + lv + '</span>' +
       '<div><span class="kicker" lang="de">' + esc(L.de.toUpperCase()) + '</span><h1>' + esc(L.ko) + '</h1></div></div>' +
       '<p>' + esc(L.desc) + '</p></div>' +
-      (items.length ? '<ul class="grid">' + cards + '</ul>' : '<p class="empty">아직 텍스트가 없어요.</p>') + '</main>';
+      (items.length ? '<ul class="grid">' + cards + '</ul>' : '<p class="empty">아직 텍스트가 없어요.</p>') + exportBtn('학습 결과 내보내기') + '</main>';
     settle(state.route);
   }
 
@@ -415,7 +526,8 @@
       '<ol class="qs" style="list-style:none">' + qs + '</ol>' +
       '<p class="notice" id="notice" hidden></p>' +
       '<div class="actions"><button class="btn pri" data-act="grade">채점하기</button>' +
-      '<button class="btn sec" data-act="reset" hidden>다시 풀기</button></div>';
+      '<button class="btn sec" data-act="reset" hidden>다시 풀기</button>' +
+      '<button class="btn sec" data-act="export" hidden>' + ICON.out + '결과 내보내기</button></div>';
   }
   function quizState(t) {
     if (!state.quiz[t.id]) state.quiz[t.id] = { answers: {}, graded: false };
@@ -472,6 +584,16 @@
     });
     var total = t.questions.length;
     markDone(t, right, total);
+    if (scrollTo) {
+      var rt = state.route || {}, wrong = [];
+      t.questions.forEach(function (q, i) {
+        var a = st.answers[i];
+        if (a !== q.answer) wrong.push({ n: i + 1, kind: KIND[q.kind] || KIND.detail,
+          picked: a === undefined ? null : answerLabel(q, a), answer: answerLabel(q, q.answer) });
+      });
+      addLog({ id: t.id, level: rt.lv || '', no: t.no || rt.no || '', title: t.title, ts: new Date().toISOString(),
+        right: right, total: total, wrong: wrong });
+    }
     updateProgress();
     var sc = document.getElementById('score');
     if (sc) {
@@ -481,6 +603,8 @@
     var grade = document.querySelector('[data-act="grade"]'), reset = document.querySelector('[data-act="reset"]');
     if (grade) grade.hidden = true;
     if (reset) reset.hidden = false;
+    var xb = document.querySelector('#panel-aufgaben [data-act="export"]');
+    if (xb) xb.hidden = false;
     var notice = document.getElementById('notice');
     if (notice) notice.hidden = true;
     if (scrollTo && sc) sc.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
@@ -619,6 +743,18 @@
       case 'reset':
         resetQuiz(t);
         break;
+      case 'export':
+        openExport();
+        break;
+      case 'xpclose':
+        closeExport();
+        break;
+      case 'xpcopy':
+        exportCopy();
+        break;
+      case 'xpfile':
+        exportFile();
+        break;
       case 'goto': {
         var q = t.questions[+el.getAttribute('data-q')];
         setTab('text');
@@ -638,8 +774,17 @@
         break;
     }
   });
+  document.addEventListener('click', function (e) {
+    if (e.target && e.target.id === 'xp') closeExport();
+  });
+  document.addEventListener('input', function (e) {
+    var el = e.target;
+    if (el && el.hasAttribute && el.hasAttribute('data-xp-name')) store(NAME_KEY, el.value);
+  });
+  window.addEventListener('hashchange', closeExport);
   document.addEventListener('keydown', function (e) {
     var el = e.target;
+    if (e.key === 'Escape' && document.getElementById('xp')) { closeExport(); return; }
     if ((e.key === 'Enter' || e.key === ' ') && el.classList && el.classList.contains('ph')) {
       e.preventDefault();
       el.click();

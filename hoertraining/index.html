@@ -682,9 +682,11 @@ h+='<div class="card"><div class="chips">'+CAUSES.map(function(c){return'<button
 h+='<div class="card"><div class="ct">메모 (선택)</div><textarea data-memo placeholder="안 들린 부분, 질문할 것">'+esc(L.memo)+'</textarea></div>';
 return h+'<button class="primary" data-act="save"'+(Object.keys(L.causes).length?'':' disabled')+'>✓ 학습 완료</button>';}
 
+function exportBox(H){return'<div class="ct">선생님께 기록 보내기</div><input type="text" data-name placeholder="이름" value="'+esc(lsGet(NK)||'')+'" aria-label="이름"><button class="ghost" data-act="copy"'+(H.length?'':' disabled')+'>기록 복사</button><button class="ghost" data-act="file"'+(H.length?'':' disabled')+'>파일로 저장</button><textarea data-export readonly style="display:none;margin-top:8px" aria-label="기록 내용"></textarea>';}
 function vStep7(){var it=item(),L=S.L,h=sth('학습 완료!','체크한 단어와 문장을 소리와 함께 한 번 더 확인하세요.');
 h+=scoreCard()+vWordCards(it,L)+vSentCards(it,L,'r');
 if(!Object.keys(L.words).length&&!Object.keys(L.sents).length)h+='<div class="card small">체크한 단어와 문장이 없습니다.</div>';
+var H=hist();h+='<div class="card">'+exportBox(H)+'<div class="small" style="margin-top:8px">'+(L.stored!==false?'방금 학습한 지문을 포함해 이 기기에 쌓인 기록 '+H.length+'건을 내보냅니다.':'이 브라우저에 기록이 저장되지 않았습니다. 창을 닫기 전에 기록을 복사하세요.')+'</div></div>';
 return h+'<button class="primary" data-act="again">다른 지문 학습하기</button><button class="ghost" data-act="hist">학습 기록 보기</button>';}
 
 function pct(c,t){return t?Math.round(c/t*100):0;}
@@ -701,7 +703,7 @@ h+=bars('어려웠던 이유',causes,function(k){return ck[k]||k;})+bars('1차 �
 var sk=Object.keys(secPct);if(sk.length>1)h+='<div class="ct" style="margin-top:16px">구간별 1차 정답률</div><div class="bars">'+sk.map(function(k){return'<div class="r"><span>'+esc(k)+'</span><i style="width:'+Math.max(4,Math.round(secPct[k]*0.4))+'%"></i><em>'+secPct[k]+'%</em></div>';}).join('')+'</div>';}
 h+='</div>';
 if(H.length){h+='<div class="card"><div class="ct">기록</div>'+H.map(function(r){if(!r)return'';var s=secById[r.section]||{};var d=r.ts?new Date(r.ts):null;return'<div class="hr"><div class="top"><span><span class="badge" style="--c:'+esc(s.color||'#8A8378')+'">'+esc(r.sectionLabel||r.level||'')+'</span> '+esc(r.topic||'')+'</span><span class="d">'+(d?(d.getMonth()+1)+'/'+d.getDate():'')+'</span></div><div class="small">'+(r.first&&r.first.total?'1차 '+r.first.correct+'/'+r.first.total+' → ':'')+(r.final&&r.final.total?'최종 '+r.final.correct+'/'+r.final.total:'')+(r.rate2?' · 첫 듣기 '+esc(r.rate2):'')+(r.rate4?' · 다시 듣기 '+esc(r.rate4):'')+'</div></div>';}).join('')+'</div>';}
-h+='<div class="card"><div class="ct">선생님께 기록 보내기</div><input type="text" data-name placeholder="이름" value="'+esc(lsGet(NK)||'')+'" aria-label="이름"><button class="ghost" data-act="copy"'+(H.length?'':' disabled')+'>기록 복사</button><button class="ghost" data-act="file"'+(H.length?'':' disabled')+'>파일로 저장</button><textarea data-export readonly style="display:none;margin-top:8px" aria-label="기록 내용"></textarea>';
+h+='<div class="card">'+exportBox(H);
 h+=S.confirmClear?'<button class="ghost" data-act="clearyes" style="color:var(--no)">정말 지웁니다. 되돌릴 수 없습니다</button>':'<button class="ghost" data-act="clear"'+(H.length?'':' disabled')+'>이 기기의 기록 지우기</button>';
 return h+'</div>';}
 
@@ -723,7 +725,7 @@ var rec={v:2,id:String(L.t0),ts:Date.now(),itemId:it.id,section:s.id,sectionLabe
 first:{correct:f.c,total:f.t,answers:toArr(L.first.ans),locked:L.first.locked,rate:L.first.rate,minRate:L.first.minRate,plays:L.first.ended},
 final:{correct:g.c,total:g.t,answers:toArr(L.fin)},rate2:L.rate2,rate4:L.rate4,causes:Object.keys(L.causes),memo:L.memo,
 words:Object.keys(L.words),sentences:Object.keys(L.sents).map(Number),missing:Object.keys(L.missing),wrongTraps:wt,clozeOpened:Object.keys(L.open).length,seconds:Math.round((Date.now()-L.t0)/1000)};
-var H=hist();H.unshift(rec);var ok=lsSet(HK,JSON.stringify(H));L.saved=true;if(!ok)toast('이 브라우저에서는 기록이 저장되지 않습니다. 창을 닫기 전에 기록을 복사하세요.');}
+var H=hist();H.unshift(rec);var ok=lsSet(HK,JSON.stringify(H));L.saved=true;L.stored=ok;if(!ok)toast('이 브라우저에서는 기록이 저장되지 않습니다. 창을 닫기 전에 기록을 복사하세요.');}
 function exportText(){return JSON.stringify({app:'listening-routine',format:2,set:HK,title:M.title,student:lsGet(NK)||'',exportedAt:new Date().toISOString(),records:hist()});}
 function showExport(txt){var ta=app.querySelector('[data-export]');if(!ta)return;ta.style.display='block';ta.value=txt;ta.focus();ta.select();}
 
