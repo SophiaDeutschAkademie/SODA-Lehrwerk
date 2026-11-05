@@ -159,6 +159,25 @@ header p{margin:0; color:var(--sub); font-size:14px}
   .de{font-size:16.5px}
   header h1{font-size:22px}
 }
+/* 휴대폰: 카드 학습 화면이 화면 높이를 꽉 채우도록 */
+@media (max-width:700px){
+  #v-app:not([hidden]){min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+  #v-app>.wrap{flex:1 0 auto;display:flex;flex-direction:column;width:100%;padding:14px 16px max(14px,env(safe-area-inset-bottom))}
+  #v-app header{margin-bottom:12px;padding-right:96px}
+  #v-app header .eyebrow,#v-app header p{display:none}
+  #v-app header h1{font-size:20px;margin:2px 0 0}
+  #v-app .picker{padding:8px 12px;margin-bottom:8px}
+  #v-app .tools{margin:8px 0 10px}
+  #v-app .bar{margin-bottom:12px}
+  #stage{flex:1 0 auto;display:flex;flex-direction:column}
+  #stage .scene{flex:1 0 auto;display:flex;flex-direction:column}
+  #stage .card{flex:1 0 auto;display:flex;flex-direction:column}
+  #stage .inner{flex:1 0 auto;grid-template-rows:1fr}
+  #stage .face{min-height:300px}
+  #stage .nav{margin-top:12px}
+  #stage .pos{margin-top:8px}
+  #v-app .keys{display:none}
+}
 /* ===== SODA 공통 표지 (모든 학습 자료 동일) ===== */
 .uc{--uc-accent:#384568;--uc-accent-d:#2C3754;--uc-ink:#1E1E1E;--uc-mut:#666;--uc-bd:#E0E0DB;--uc-bg:#FAFAF8;--uc-btn-ink:#fff;box-sizing:border-box;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;padding:clamp(24px,4vw,48px) clamp(24px,7vw,112px);padding-bottom:max(clamp(24px,3vw,36px),env(safe-area-inset-bottom));background:var(--uc-bg);color:var(--uc-ink);text-align:left;line-height:1.6;font-family:'SODA Latin','Pretendard Variable','Pretendard','Noto Sans KR',system-ui,-apple-system,'Apple SD Gothic Neo',sans-serif;-webkit-font-smoothing:antialiased}
 .uc[hidden]{display:none!important}

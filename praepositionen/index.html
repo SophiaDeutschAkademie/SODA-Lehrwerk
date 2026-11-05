@@ -150,6 +150,7 @@ h1.title .t2{font-weight:300;color:var(--ink);letter-spacing:-.04em}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 /* 앱 상단 */
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:960px;margin:0 auto;padding:22px 16px}
+@media (max-width:1140px){.top{padding-right:clamp(16px,calc(104px - (100vw - 960px) / 2),104px)}}
 .top-brand{display:flex;align-items:center;gap:12px;min-width:0}
 .top-brand img{height:34px;width:auto}
 .top-brand b{font-size:15px;font-weight:800;letter-spacing:.14em;white-space:nowrap;color:var(--ink)}
