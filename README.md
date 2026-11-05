@@ -16,7 +16,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `nomen-verb-verbindungen/` | Nomen-Verb-Verbindungen | 명사와 동사 연어 플래시카드, A1–C2, 317장 |
 | `redemittel/` | SODA Alltagsredemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
 | `kuerze-wuerze/` | In der Kürze liegt die Würze | 독일 일상을 위한 MSG, 짧은 표현 플래시카드, A2–C1, 256장과 헷갈리는 짝 |
-| `lernmethoden/` | SODA Lernmethoden | 독일어 공부법, 어휘·문법·읽기·듣기·말하기·쓰기·특별 주제 글 26편 |
+| `lernmethoden/` | SODA Lernmethoden | 독일어 공부법, 어휘·문법·읽기·듣기·말하기·쓰기·특별 주제 글 27편 |
 | `sprechen/` | SODA Sprechen | 말하기 실전 연습(시험관·파트너와 Teil별 연습, 평가, 결과 파일). Modelltest 연습 기록은 같은 브라우저(localStorage `soda-sprechen:mdt:<시험 id>`)에도 저장되어, Modelltest 디지털 시험의 「선생님께 제출하기」가 필기 결과와 함께 보냅니다. 소피아 독일어학원 수강생 전용이라 아이디와 비밀번호로 로그인해야 합니다. 목차의 「SODA Modelltest」 묶음 맨 아래 전체 너비 타일과, Goethe A2·B1·B2, telc B1·B2 Modelltest 1·2의 「말하기 실전 연습」 줄에서 열립니다 |
 | 별도 저장소 `SODA-Goethe` | Goethe A2·B1·B2 모의고사 | Modelltest 10·10·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면, A2·B1·B2·C1 Hochschule에는 쓰기·말하기 시험 대비 가이드 |
 | 별도 저장소 `SODA-TELC` | telc B1·B2·C1 Hochschule 모의고사 | Modelltest 5·7·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면, B1·B2·C1 Hochschule에는 쓰기·말하기 시험 대비 가이드 |
@@ -48,7 +48,7 @@ nomen-verb-verbindungen/     SODA-NVV 저장소의 내용
 sprechen/                    말하기 실전 연습(단일 HTML). 서버(Cloudflare Worker)가 로그인, 연습 횟수, 음성 연결을 맡습니다. 주소 끝의 #goethe-b1-2 같은 시험 id로 시험을 지정해 엽니다
 redemittel/                  회화 패턴과 상황별 반응 표현 플래시카드(단일 HTML)
 kuerze-wuerze/               독일 일상을 위한 MSG, 짧은 표현 플래시카드(단일 HTML)
-lernmethoden/                독일어 공부법 글 26편(단일 HTML, 원고와 빌드 스크립트 포함)
+lernmethoden/                독일어 공부법 글 27편(단일 HTML, 원고와 빌드 스크립트 포함)
 zertifikat/                  옛 모의고사 주소를 새 주소로 넘기는 안내 페이지만 있음 (zertifikat/README.md)
 ```
 
@@ -78,6 +78,6 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 
 - 글 원고는 `lernmethoden/src/<글id>.txt`입니다. 맨 위에 `id`, `cat`, `no`, `date`, `title`, `sum`을 적고 `---` 아래에 본문을 씁니다. 문법은 `lernmethoden/build.py` 맨 위 설명에 있어요.
 - 원고를 고치거나 새 글을 넣은 뒤 `python3 lernmethoden/build.py`를 실행하면 `lernmethoden/index.html`이 다시 만들어집니다. 분류 목록은 `build.py`의 `CATS`에 있습니다.
-- 목차 타일의 「글 26편」과 `README`의 편수는 글을 더하거나 뺄 때 직접 고칩니다.
+- 목차 타일의 「글 27편」과 `README`의 편수는 글을 더하거나 뺄 때 직접 고칩니다.
 
 페이퍼 시험의 풀이 PDF 제출은 SODA-Goethe·SODA-TELC의 `index.html`에서 이루어지며, 같은 제출 주소(Apps Script)를 씁니다.
