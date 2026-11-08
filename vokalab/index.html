@@ -304,6 +304,9 @@ body{font-family:'SODA Latin','Pretendard Variable','Pretendard',-apple-system,B
 .wcard-de.tts-click:hover{color:#384568}
 .wcard-ex-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:5px}
 .wcard-ex-row .wcard-ex-de{margin-bottom:0;flex:1}
+.rev-list .wcard{background:#F2F6FC;border-color:#BCD0EC}
+.rev-list .wcard-ex,.rev-list .wcard-rate{border-top-color:#C9D8EE}
+.rev-list .wcard-num{color:#4F6F9C}
 .wcard.wcard-playing{box-shadow:0 0 0 3px rgba(23,62,125,.25);border-color:#384568}
 .tentry-head .tts-btn{margin-left:auto}
 .tts-panel{background:#fff;border:1px solid #ddd5c4;border-radius:12px;padding:0 16px;margin-bottom:14px}
@@ -1428,7 +1431,7 @@ function StudyView({ dayIndex, dayWords, globalStart, revealed, onToggleReveal, 
     React.createElement("span", { className: "sec-bar-tg", style: { color: '#1C4C99' } }, revOpen ? '접기 ▾' : '펼치기 ▸'))
     ),
     revOpen &&
-    React.createElement("div", { className: "wcard-list" },
+    React.createElement("div", { className: "wcard-list rev-list" },
     revList.map(({ w: word, i }) =>
     React.createElement(WordCard, {
       key: 'r' + i + '-' + word.de,
