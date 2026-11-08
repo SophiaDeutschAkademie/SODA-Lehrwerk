@@ -41,9 +41,10 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html,body,#root{height:100%;overflow:hidden}
+@supports(height:100dvh){html,body,#root{height:100dvh}}
 body{font-family:'SODA Latin','Pretendard Variable','Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','Segoe UI',Roboto,'Noto Sans KR',sans-serif;color:#1f2f4a;background:#f6f3ec}
 
-.app{display:flex;height:100vh}
+.app{display:flex;height:100vh;height:100dvh}
 
 .side{width:230px;background:#384568;color:#fff;display:flex;flex-direction:column;flex-shrink:0}
 .side-hd{padding:18px 16px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
@@ -270,7 +271,7 @@ body{font-family:'SODA Latin','Pretendard Variable','Pretendard',-apple-system,B
 @media(max-width:860px){
   .side{display:none}
   .mnav{display:flex}
-  .mcontent{padding:16px 14px 40px}
+  .mcontent{padding:16px 14px calc(96px + env(safe-area-inset-bottom))}
   .mhd{padding:14px 16px}
   .mhd-day{font-size:22px}
   .tgrid{grid-template-columns:1fr}
@@ -495,7 +496,7 @@ html[data-theme="dark"] .uc{--uc-bg:#14181E;--uc-ink:#ECEAE4;--uc-mut:#A9B0BA;--
  #hub .cards{grid-template-columns:1fr 1fr}
  #hub .two{grid-template-columns:1fr}
  #hub .wk{grid-template-columns:1fr}
- #hub-fab{left:auto;right:12px;bottom:12px;width:auto;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+ #hub-fab{left:auto;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));width:auto;box-shadow:0 2px 8px rgba(0,0,0,.3)}
  #hub .hd{flex-wrap:wrap}
 }
 #hub .cover{min-height:100%;display:flex;align-items:center;justify-content:center;padding:32px 20px;background:#f6f3ec}
