@@ -169,12 +169,19 @@ body{font-family:'SODA Latin','Pretendard Variable','Pretendard',-apple-system,B
 
 .btn-primary{padding:9px 20px;border:none;border-radius:8px;background:#384568;color:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
 .btn-primary:hover{background:#2C3754}
+.sec-bar{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;padding:12px 16px}
+.sec-bar-txt{flex:1 1 220px;min-width:0;display:flex;flex-direction:column;gap:2px;word-break:keep-all;overflow-wrap:break-word}
+.sec-bar-txt b{font-size:14px;line-height:1.35}
+.sec-bar-txt span{font-size:12px;line-height:1.4}
+.sec-bar-act{display:flex;align-items:center;gap:12px;margin-left:auto;flex-shrink:0}
+.sec-bar-act .btn-outline{padding:5px 10px;font-size:11.5px;white-space:nowrap}
+.sec-bar-tg{font-size:13px;font-weight:700;white-space:nowrap}
 .btn-outline{padding:9px 18px;border:1.5px solid #384568;border-radius:8px;background:#fff;color:#384568;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;transition:.15s}
 .btn-outline:hover{background:#E6E9F3}
 
 .tsec-label{font-size:14px;font-weight:600;color:#2C3754;margin-bottom:12px;display:flex;align-items:center;gap:8px}
 .badge-new{font-size:10px;font-weight:700;color:#fff;background:#4A5A86;padding:3px 10px;border-radius:10px}
-.badge-rev{font-size:10px;font-weight:700;color:#fff;background:#4F6F9C;padding:3px 10px;border-radius:10px}
+.badge-rev{font-size:10px;font-weight:700;color:#fff;background:#4F6F9C;padding:3px 10px;border-radius:10px;white-space:nowrap;flex-shrink:0}
 .tsec-toggle{font-size:11px;color:#666;margin-left:4px}
 
 .tgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px}@media(max-width:640px){.tgrid{grid-template-columns:1fr}}
@@ -1409,14 +1416,16 @@ function StudyView({ dayIndex, dayWords, globalStart, revealed, onToggleReveal, 
     reviewWords && reviewWords.length > 0 &&
     React.createElement(React.Fragment, null,
     React.createElement("div", { style: {
-        display: 'flex', alignItems: 'center', gap: '10px', margin: '32px 0 16px', padding: '12px 16px',
+        margin: '32px 0 16px',
         background: '#E6EFFB', border: '1px solid #AEC6E8', borderLeft: '5px solid #1C4C99', borderRadius: '10px', cursor: 'pointer'
-      }, onClick: () => setRevOpen(!revOpen) },
+      }, className: "sec-bar", onClick: () => setRevOpen(!revOpen) },
     React.createElement("span", { className: "badge-rev" }, "REVIEW"),
-    React.createElement("span", { style: { fontWeight: 700, color: '#102A57', fontSize: '14px' } }, "여기부터 누적 복습"),
-    React.createElement("span", { style: { color: '#2E5896', fontSize: '12px' } }, "이전에 배운 ", reviewWords.length, "개 중 ", revAll ? '전체' : `학습됨 제외 ${revList.length}개`),
-    React.createElement("button", { className: "btn-outline", style: { marginLeft: 'auto', padding: '5px 10px', fontSize: '11.5px' }, onClick: (e) => {e.stopPropagation();setRevAll(!revAll);} }, revAll ? '학습됨 숨기기' : '학습됨 포함'),
-    React.createElement("span", { style: { color: '#1C4C99', fontSize: '13px', fontWeight: 700 } }, revOpen ? '접기 ▾' : '펼치기 ▸')
+    React.createElement("div", { className: "sec-bar-txt" },
+    React.createElement("b", { style: { color: '#102A57' } }, "여기부터 누적 복습"),
+    React.createElement("span", { style: { color: '#2E5896' } }, "이전에 배운 ", reviewWords.length, "개 중 ", revAll ? '전체' : `학습됨 제외 ${revList.length}개`)),
+    React.createElement("div", { className: "sec-bar-act" },
+    React.createElement("button", { className: "btn-outline", onClick: (e) => {e.stopPropagation();setRevAll(!revAll);} }, revAll ? '학습됨 숨기기' : '학습됨 포함'),
+    React.createElement("span", { className: "sec-bar-tg", style: { color: '#1C4C99' } }, revOpen ? '접기 ▾' : '펼치기 ▸'))
     ),
     revOpen &&
     React.createElement("div", { className: "wcard-list" },
@@ -1438,14 +1447,16 @@ function StudyView({ dayIndex, dayWords, globalStart, revealed, onToggleReveal, 
     carryWords && carryWords.length > 0 &&
     React.createElement(React.Fragment, null,
     React.createElement("div", { style: {
-        display: 'flex', alignItems: 'center', gap: '10px', margin: '32px 0 16px', padding: '12px 16px',
+        margin: '32px 0 16px',
         background: '#EAF4EF', border: '1px solid #BFE0CB', borderLeft: '5px solid #175E54', borderRadius: '10px', cursor: 'pointer'
-      }, onClick: () => setCarOpen(!carOpen) },
+      }, className: "sec-bar", onClick: () => setCarOpen(!carOpen) },
     React.createElement("span", { className: "badge-carry" }, "이월"),
-    React.createElement("span", { style: { fontWeight: 700, color: '#0F3D36', fontSize: '14px' } }, "지난 주차에서 넘어온 단어"),
-    React.createElement("span", { style: { color: '#175E54', fontSize: '12px' } }, "미해결 ", carryWords.length, "개 중 ", carAll ? '전체' : `학습됨 제외 ${carList.length}개`),
-    React.createElement("button", { className: "btn-outline", style: { marginLeft: 'auto', padding: '5px 10px', fontSize: '11.5px' }, onClick: (e) => {e.stopPropagation();setCarAll(!carAll);} }, carAll ? '학습됨 숨기기' : '학습됨 포함'),
-    React.createElement("span", { style: { color: '#175E54', fontSize: '13px', fontWeight: 700 } }, carOpen ? '접기 ▾' : '펼치기 ▸')
+    React.createElement("div", { className: "sec-bar-txt" },
+    React.createElement("b", { style: { color: '#0F3D36' } }, "지난 주차에서 넘어온 단어"),
+    React.createElement("span", { style: { color: '#175E54' } }, "미해결 ", carryWords.length, "개 중 ", carAll ? '전체' : `학습됨 제외 ${carList.length}개`)),
+    React.createElement("div", { className: "sec-bar-act" },
+    React.createElement("button", { className: "btn-outline", onClick: (e) => {e.stopPropagation();setCarAll(!carAll);} }, carAll ? '학습됨 숨기기' : '학습됨 포함'),
+    React.createElement("span", { className: "sec-bar-tg", style: { color: '#175E54' } }, carOpen ? '접기 ▾' : '펼치기 ▸'))
     ),
     carOpen &&
     React.createElement("div", { className: "wcard-list" },
