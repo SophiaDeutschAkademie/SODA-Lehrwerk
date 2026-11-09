@@ -9,6 +9,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `grammatik/` | Syntalab | 문법 교재, Lektion 37개와 부록「암기 노트」, 과마다 연습문제 37개 |
 | `lesetraining/` | SODA Lesetraining | 독해 훈련, A1–C1, 텍스트 100개 |
 | `hoertraining/` | Lehrwerk Hörtraining | 듣기 훈련, A1–C1, 88세트 |
+| `schreibtraining/` | SODA Schreibtraining | 쓰기 훈련, A1–C1 레벨별 2챕터(총 10개), 챕터마다 구성·표현·연습·쓰기·모범답안, 「선생님께 제출하기」(소피아 독일어학원 수강생 전용 안내 팝업) |
 | `sprechtraining/` | SODA Sprechtraining | 말하기 훈련, A1–C1과 MZ 구어체, 대화 36개, 독일어 음성 433줄 |
 | `vokalab/` | SODA Vokalab | 독일어 단어장, A1–C1, 12,724단어, 주차별 목표와 테스트 |
 | `praepositionen/` | SODA Präpositionen | 독일어 전치사의 모든 것, 전치사 80개, 비교, 퀴즈 |
@@ -41,6 +42,7 @@ grammatik/        SODA-Lehrwerk-Grammatik 저장소의 내용
 lesetraining/     SODA-Lehrwerk-Lesetraining 저장소의 내용
 hoertraining/     SODA-Lehrwerk-Hoertraining 저장소의 내용
 sprechtraining/   SODA-SPRECHTRAINING 저장소의 내용 (대화 앱, 음성 mp3 포함)
+schreibtraining/  쓰기 훈련 (챕터 데이터는 data/chapters.js, 화면은 assets/app.js)
 vokalab/          VOKALAB 단어장 (A1–C1, 단일 HTML)
 praepositionen/   이 저장소(SODA-PRP)에 있던 전치사 앱
 verben-mit-praepositionen/   SODA-VP 저장소의 내용
@@ -65,6 +67,13 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 - `grammatik/`의 연습문제(목차 아래 「연습문제 · Übungen」)는 과마다 하나, 37개예요. 원본은 `grammatik/tools/uebungen-src/U01.json` … `U37.json`이고, 쓰는 법과 규칙은 같은 폴더의 `README.md`에 있어요. 원본을 고친 뒤 `python3 grammatik/tools/uebungen-check.py`로 검사하고 `python3 grammatik/tools/uebungen-build.py`를 실행하면 `grammatik/uebungen/`의 앱용 파일, `index.html`의 연습 주소, `sw.js`의 캐시 목록과 버전이 함께 바뀌어요.
 - 목차에 자료를 추가하려면 루트 `index.html`의 해당 묶음의 `<ul class="grid">` 안에 `<li>` 항목을 같은 형식으로 추가합니다.
 - 모의고사 여섯 앱은 `SODA-Goethe`, `SODA-TELC` 저장소의 각 앱 폴더에 있고, 다시 만드는 방법은 앱 폴더의 `digital-src/README.md`에 있어요. 파일을 고치면 그 저장소의 `tools/soda-theme.py`로 다크 모드 스위치를 다시 넣습니다(빌드 스크립트는 자동으로 실행).
+
+## 쓰기 훈련(`schreibtraining/`) 고치기
+
+- 챕터 내용은 `schreibtraining/data/chapters.js` 하나에 있습니다. 맨 위 설명에 챕터 구조(구성, 표현, 연습, 과제, 점검, 모범답안)가 적혀 있어요. 새 챕터는 같은 형식의 객체를 배열에 더하면 레벨 목록에 바로 나옵니다.
+- 고친 뒤에는 `schreibtraining/index.html`의 `chapters.js?v=` 값을 바꿔야 학생 기기에 새 내용이 나와요.
+- 「선생님께 제출하기」는 Lesetraining·Hörtraining과 같은 Apps Script 주소로 보냅니다. 메일 제목은 「[SODA 학습 기록] Schreibtraining B1-01 · 학생 이름」으로 오고, 학생 글 전체가 본문과 txt 첨부에 들어 있습니다.
+- 학생이 쓴 글은 학생 기기의 브라우저(localStorage `soda-schreib-draft:<챕터 id>`)에 입력할 때마다 자동 저장됩니다.
 
 ## 다크 모드
 
