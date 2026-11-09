@@ -31,7 +31,7 @@ CATS = [
     ('hoeren', 'Hören', '듣기', '듣기 루틴과 듣기가 늘지 않는 이유'),
     ('sprechen', 'Sprechen', '말하기', '독일에 가지 않고 말하기 실력을 키우는 훈련'),
     ('schreiben', 'Schreiben', '쓰기', '연어, 연결어, 다시 쓰기, 문장의 첫머리'),
-    ('sonder', 'Sonderthemen', '특별 주제', 'ADHD 학습자, 시험 직전 한 달, 나이와 외국어 학습, AI로 공부하기'),
+    ('sonder', 'Sonderthemen', '특별 주제', 'ADHD 학습자, 시험 직전 한 달, 나이와 외국어 학습, AI로 공부하기, 절대음감'),
 ]
 
 
@@ -134,7 +134,7 @@ def render_body(body, pfx):
                 i += 1
             n = max(len(r) for r in rows)
             th = ''.join('<th>%s</th>' % inline(c) for c in rows[0])
-            tb = ''.join('<tr>%s</tr>' % ''.join('<td>%s</td>' % inline(c) for c in r) for r in rows[1:])
+            tb = ''.join('<tr>%s</tr>' % ''.join(('<td class="nw">%s</td>' if 0 < len(c) <= 3 else '<td>%s</td>') % inline(c) for c in r) for r in rows[1:])
             fit = ' fit' if max(len(c) for r in rows for c in r) <= 18 else ''
             out.append('<div class="tbl c%d%s"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (n, fit, th, tb))
         elif ln.startswith('> '):
@@ -279,6 +279,7 @@ html[data-theme="dark"] .cta{color:#14181E}
 .tbl tr:last-child td{border-bottom:0}
 .tbl.c3 table,.tbl.c4 table,.tbl.c5 table{min-width:520px}
 .tbl.fit table{min-width:0}
+.tbl td.nw{white-space:nowrap}
 .links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
 .lk{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid var(--bd);border-radius:14px;background:var(--bg-c);transition:border-color .2s,transform .25s var(--ease)}
 .lk:hover{border-color:var(--accent);transform:translateY(-2px)}
