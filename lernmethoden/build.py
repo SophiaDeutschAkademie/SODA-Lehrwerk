@@ -11,6 +11,8 @@ src/*.txt(글 원고)를 읽어 한 장짜리 오프라인 페이지 lernmethode
           ref| 참고문헌, link| 이름 | 설명 | 주소, tag| 근거 표시 | 문단
           **굵게**, *기울임*, [[글id|글 이름]] 다른 글로 가는 링크
           {{독일어}} 표 안의 독일어 예문: 한 줄로 유지, 앞에 글이 있으면 다음 줄에 표시
+          {♪폴더/파일} 소리 버튼(audio/폴더/파일.mp3), {♪폴더/파일|이름} 이름이 붙은 소리 버튼
+          snd| 소리 버튼만 모은 줄
 """
 import html
 import os
@@ -40,6 +42,9 @@ def read(path):
         return f.read()
 
 
+SND_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>'
+
+
 def esc(s):
     return html.escape(s, quote=True)
 
@@ -48,6 +53,8 @@ def inline(s):
     s = esc(s)
     s = re.sub(r'\[\[([a-z0-9-]+)\|([^\]]+)\]\]', r'<a class="xref" href="#a/\1">\2</a>', s)
     s = re.sub(r'\{\{(.+?)\}\}', r'<span class="de-i" lang="de">\1</span>', s)
+    s = re.sub(r'\{♪([a-z0-9/-]+)\|([^}]+)\}', lambda m: '<button type="button" class="snd lbl" data-snd="audio/%s.mp3">%s<span>%s</span></button>' % (m.group(1), SND_ICON, m.group(2)), s)
+    s = re.sub(r'\{♪([a-z0-9/-]+)\}', lambda m: '<button type="button" class="snd" data-snd="audio/%s.mp3" aria-label="듣기">%s</button>' % (m.group(1), SND_ICON), s)
     s = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
     s = re.sub(r'(?<![*\w])\*([^*\s][^*]*?)\*(?![*\w])', r'<em>\1</em>', s)
     return s
@@ -134,9 +141,13 @@ def render_body(body, pfx):
                 i += 1
             n = max(len(r) for r in rows)
             th = ''.join('<th>%s</th>' % inline(c) for c in rows[0])
-            tb = ''.join('<tr>%s</tr>' % ''.join(('<td class="nw">%s</td>' if 0 < len(c) <= 3 else '<td>%s</td>') % inline(c) for c in r) for r in rows[1:])
-            fit = ' fit' if max(len(c) for r in rows for c in r) <= 18 else ''
+            vis = lambda c: re.sub(r'\s*\{♪[^}]*\}', '', c).strip()
+            tb = ''.join('<tr>%s</tr>' % ''.join(('<td class="nw">%s</td>' if 0 < len(vis(c)) <= 3 else '<td>%s</td>') % inline(c) for c in r) for r in rows[1:])
+            fit = ' fit' if max(len(vis(c)) + (2 if '{♪' in c else 0) for r in rows for c in r) <= 18 else ''
             out.append('<div class="tbl c%d%s"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (n, fit, th, tb))
+        elif ln.startswith('snd|'):
+            out.append('<p class="snd-row">%s</p>' % inline(ln[4:].strip()))
+            i += 1
         elif ln.startswith('> '):
             rows = run('> ')
             out.append('<blockquote class="call">%s</blockquote>' % ''.join('<p>%s</p>' % inline(r) for r in rows))
@@ -305,6 +316,14 @@ html[data-theme="dark"] .cta{color:#14181E}
 .de-i{white-space:nowrap}
 .tbl td>:not(:first-child).de-i{display:block;margin-top:3px}
 .de{-webkit-hyphens:auto;hyphens:auto}
+.snd{display:inline-flex;align-items:center;justify-content:center;gap:6px;width:28px;height:28px;margin:0 0 0 6px;padding:0;border:1px solid var(--bd);border-radius:999px;background:var(--accent-bg);color:var(--accent);vertical-align:-7px;cursor:pointer;font:inherit;-webkit-tap-highlight-color:transparent}
+.snd svg{width:13px;height:13px;fill:currentColor;margin-left:2px}
+.snd:hover{border-color:var(--accent)}
+.snd.on{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.snd.lbl{width:auto;height:34px;padding:0 14px 0 11px;margin:0;font-size:14px;font-weight:700;vertical-align:middle}
+.snd-row{display:flex;flex-wrap:wrap;gap:8px;text-align:left!important}
+.tbl td .snd{vertical-align:middle;margin-top:-4px}
+.de .snd{vertical-align:middle;margin-top:-4px}
 
 @media (max-width:900px){
   .split{grid-template-columns:1fr;gap:20px;padding-top:68px}
@@ -345,6 +364,16 @@ JS = r"""
     window.scrollTo(0,0);
     if(moved){var f=el.querySelector('h1'); if(f){try{f.focus({preventScroll:true});}catch(e){f.focus();}}}
   }
+  var au=null, cur=null;
+  function stop(){if(au){au.pause();au=null;} if(cur){cur.classList.remove('on');cur=null;}}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.snd'); if(!b)return;
+    var same=b===cur; stop(); if(same)return;
+    au=new Audio(b.getAttribute('data-snd')); cur=b; b.classList.add('on');
+    au.addEventListener('ended',stop); au.addEventListener('error',stop);
+    var pr=au.play(); if(pr&&pr.catch)pr.catch(stop);
+  });
+  window.addEventListener('hashchange',stop);
   window.addEventListener('hashchange',function(){route(true);});
   route(false);
 })();

@@ -54,11 +54,13 @@ tag| 학원 설계 | 연구 결과를 바탕으로 저희 학원이 만든 방�
 
 남성, 여성, 중성, 복수에 음 하나씩을 정합니다. 저희 학원은 아래처럼 정해서 씁니다.
 
+표와 예문 옆의 ▶ 버튼을 누르면 예시를 들을 수 있습니다. 기준음이 먼저 울리고, 이어서 관사와 명사를 그 음 높이로 읽은 소리가 나옵니다. 남성 목소리 음역에 맞추려고 솔과 라는 도와 미보다 한 옥타브 낮게 녹음했습니다.
+
 |성|음|관사와 명사
-|남성|도(C)|{{der Stuhl}}
-|여성|미(E)|{{die Lampe}}
-|중성|솔(G)|{{das Bett}}
-|복수|라(A)|{{die Stühle}}
+|남성|도(C)|{{der Stuhl}} {♪sonder-5/m1-stuhl}
+|여성|미(E)|{{die Lampe}} {♪sonder-5/m1-lampe}
+|중성|솔(G)|{{das Bett}} {♪sonder-5/m1-bett}
+|복수|라(A)|{{die Stühle}} {♪sonder-5/m1-stuehle}
 
 외우는 방법은 이렇습니다.
 
@@ -68,6 +70,8 @@ tag| 학원 설계 | 연구 결과를 바탕으로 저희 학원이 만든 방�
 
 복수에 따로 음을 두는 이유가 있습니다. 복수 관사 die는 여성 관사 die와 모양이 같습니다. 음을 나누면 두 die가 다른 소리가 됩니다. der Löffel과 die Löffel처럼 단수와 복수의 명사 모양이 같은 단어에서 특히 도움이 됩니다. 앞은 도, 뒤는 라입니다.
 
+snd| {♪sonder-5/m1-loeffel-sg|der Löffel · 도} {♪sonder-5/m1-loeffel-pl|die Löffel · 라}
+
 음 배정은 바꿔도 됩니다. 도·미·솔·라는 예시입니다. 다만 한 번 정하면 끝까지 바꾸지 않습니다. 그리고 절대음감 보유자 가운데에는 음을 들으면 색이 함께 느껴지는 분이 있습니다. 절대음감 보유자 768명을 조사한 그레거슨(Gregersen) 연구팀의 2013년 연구에서 20.1%가 이런 공감각을 보고했고, 대부분 색이었습니다. 이런 분은 교재의 관사 색과 자기가 느끼는 음의 색이 맞도록 음을 고르는 편이 좋습니다. 이 부분은 연구가 아니라 제 해석입니다.
 
 ## 방법 2. 정관사, 부정관사, 소유관사는 같은 음
@@ -75,15 +79,15 @@ tag| 학원 설계 | 연구 결과를 바탕으로 저희 학원이 만든 방�
 이 방법의 가장 큰 장점은 여기에 있습니다. 정관사, 부정관사, 소유관사는 모양이 다르지만 담고 있는 성 정보는 같습니다. Stuhl은 der Stuhl이든 ein Stuhl이든 mein Stuhl이든 남성입니다. 그러니 음도 같습니다.
 
 |성|음|정관사|부정관사|소유관사|부정관사 kein
-|남성|도|{{der Stuhl}}|{{ein Stuhl}}|{{mein Stuhl}}|{{kein Stuhl}}
-|여성|미|{{die Lampe}}|{{eine Lampe}}|{{meine Lampe}}|{{keine Lampe}}
-|중성|솔|{{das Bett}}|{{ein Bett}}|{{mein Bett}}|{{kein Bett}}
-|복수|라|{{die Stühle}}|{{Stühle}}|{{meine Stühle}}|{{keine Stühle}}
+|남성|도 {♪sonder-5/m2-mask}|{{der Stuhl}}|{{ein Stuhl}}|{{mein Stuhl}}|{{kein Stuhl}}
+|여성|미 {♪sonder-5/m2-fem}|{{die Lampe}}|{{eine Lampe}}|{{meine Lampe}}|{{keine Lampe}}
+|중성|솔 {♪sonder-5/m2-neut}|{{das Bett}}|{{ein Bett}}|{{mein Bett}}|{{kein Bett}}
+|복수|라 {♪sonder-5/m2-pl}|{{die Stühle}}|{{Stühle}}|{{meine Stühle}}|{{keine Stühle}}
 
 학생들은 보통 정관사를 외운 뒤 부정관사를 새로 외우고, 소유관사를 또 새로 외웁니다. 이 방법에서는 그럴 필요가 없습니다. Stuhl을 도로 외웠다면 ein Stuhl도, mein Stuhl도, kein Stuhl도, dein Stuhl과 unser Stuhl도 도입니다. 명사 하나에 음 하나를 외우면 관사가 무엇으로 바뀌어도 성은 그대로 따라옵니다. 바뀌는 것은 관사의 끝, 즉 어미뿐입니다.
 
-de| Das ist mein Stuhl. Wo ist dein Stuhl?
-de| Das ist meine Lampe. Wo ist deine Lampe?
+de| Das ist mein Stuhl. Wo ist dein Stuhl? {♪sonder-5/m2-satz-stuhl}
+de| Das ist meine Lampe. Wo ist deine Lampe? {♪sonder-5/m2-satz-lampe}
 
 위 두 문장에서 mein·dein Stuhl은 도, meine·deine Lampe는 미로 말합니다. 소리로 들으면 meine의 -e가 여성 표시라는 것이 die의 -e와 같은 음에 실려 함께 기억됩니다.
 
@@ -97,13 +101,15 @@ de| Das ist meine Lampe. Wo ist deine Lampe?
 |3격|{{dem / einem / meinem}}|{{der / einer / meiner}}|{{dem / einem / meinem}}|{{den / – / meinen}}
 |2격|{{des / eines / meines}}|{{der / einer / meiner}}|{{des / eines / meines}}|{{der / – / meiner}}
 
+snd| {♪sonder-5/m3-mask|남성 · 도} {♪sonder-5/m3-fem|여성 · 미} {♪sonder-5/m3-neut|중성 · 솔} {♪sonder-5/m3-pl|복수 · 라}
+
 이 표를 한 칸씩 끊어 말하지 않고 세로로 읽습니다. 남성 칸은 der, den, dem, des를 모두 도로, 이어서 ein, einen, einem, eines를 도로, mein, meinen, meinem, meines를 도로 말합니다. 같은 음 위에서 어미만 -r, -n, -m, -s로 바뀌는 것이 들립니다. einem과 meinem의 -m이 dem의 -m과 같은 어미라는 것도 같은 음 위에서 확인됩니다.
 
 ### 같은 der, 다른 음
 
 한국 학생들이 가장 자주 하는 질문이 있습니다. "der는 남성 아닌가요? 왜 der Frau라고 해요?" 표를 보면 der는 세 군데에 나옵니다. 남성 1격, 여성 3격과 2격, 복수 2격입니다. 눈으로 보면 같은 단어지만, 이 방법에서는 소리가 다릅니다.
 
-de| Der Mann gibt der Frau das Buch.
+de| Der Mann gibt der Frau das Buch. {♪sonder-5/m3-satz}
 
 이 문장에서 앞의 der는 도, 뒤의 der는 미로 말합니다. das Buch는 솔입니다. 음이 성을 알려 주므로 학생은 뒤의 der가 여성 명사 앞의 der라는 것을 바로 압니다. 여성 명사 앞에서 der가 나왔으니 3격이나 2격이고, 이 문장에서는 받는 사람이므로 3격입니다. die(여성 미, 복수 라), den(남성 4격 도, 복수 3격 라), dem(남성 도, 중성 솔)도 같은 방식으로 구별됩니다.
 
