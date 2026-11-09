@@ -1,0 +1,281 @@
+{
+  "id": "a2-20",
+  "level": "A2",
+  "no": 20,
+  "title": "Mach mit beim Frühjahrsputz!",
+  "titleKo": "봄맞이 대청소에 함께해요!",
+  "type": "Aufruf (Bürgerverein)",
+  "typeKo": "동네 모임 참여 안내문",
+  "intro": "동네 주민 모임이 공원 대청소에 함께할 사람을 찾는 안내문이에요.",
+  "focus": ["dies- · welch-", "4격 시간 표현", "hätte · wäre · könnte"],
+  "paragraphs": [
+    {
+      "style": "meta",
+      "de": "Liebe Nachbarinnen und Nachbarn,",
+      "ko": "이웃 여러분께"
+    },
+    {
+      "de": "jeden Frühling das gleiche Bild: Im Stadtpark liegen Flaschen, Tüten und alte Zeitungen. Letztes Jahr haben 35 Leute zusammen über 60 Säcke Müll gesammelt. Das war ein toller Erfolg! Dieses Jahr möchten wir noch mehr schaffen.",
+      "ko": "봄마다 같은 모습이에요. 시립 공원에 병, 비닐봉지, 헌 신문이 널려 있어요. 작년에는 35명이 함께 쓰레기를 60자루 넘게 모았어요. 정말 큰 성과였어요! 올해는 더 많이 해내고 싶어요."
+    },
+    {
+      "de": "Der Frühjahrsputz ist nächsten Samstag, am 12. April. Wir treffen uns um 9 Uhr am Spielplatz und arbeiten den ganzen Vormittag. Um 13 Uhr gibt es für alle Suppe und Kuchen im Gemeinschaftsgarten.",
+      "ko": "봄맞이 대청소는 다음 주 토요일, 4월 12일이에요. 9시에 놀이터에서 만나 오전 내내 일해요. 13시에는 공동 텃밭에서 모두에게 수프와 케이크를 드려요."
+    },
+    {
+      "style": "h",
+      "de": "Welche Aufgabe passt zu Ihnen?",
+      "ko": "어떤 일이 나에게 맞을까요?"
+    },
+    {
+      "de": "Sie arbeiten gern draußen? Dann sammeln Sie in einer Gruppe Müll. Diese Gruppe braucht die meisten Helfer. Sie sind nicht so fit? Kein Problem! Dann könnten Sie am Infostand Kaffee kochen oder die Kinder betreuen.",
+      "ko": "밖에서 일하는 것을 좋아하세요? 그러면 한 모둠에 들어가 쓰레기를 주워요. 이 모둠에 일손이 가장 많이 필요해요. 몸이 그다지 튼튼하지 않으세요? 괜찮아요! 그러면 안내 부스에서 커피를 끓이거나 아이들을 돌봐 주셔도 돼요."
+    },
+    {
+      "style": "h",
+      "de": "Was brauchen Sie?",
+      "ko": "무엇이 필요할까요?"
+    },
+    {
+      "de": "Handschuhe und Säcke bekommen Sie von uns. Es wäre aber schön, wenn Sie Ihre eigene Tasse mitbringen könnten. Dann brauchen wir keine Plastikbecher.",
+      "ko": "장갑과 자루는 저희가 드려요. 하지만 각자 컵을 가져와 주시면 좋겠어요. 그러면 플라스틱 컵이 필요 없어요."
+    },
+    {
+      "de": "Hätten Sie Lust? Dann melden Sie sich bitte bis Mittwoch bei Ute Krämer an, Telefon 0761 48 22 30. So wissen wir, wie viel Suppe wir kochen müssen.",
+      "ko": "함께하고 싶으세요? 그러면 수요일까지 우테 크레머 씨에게 신청해 주세요. 전화번호는 0761 48 22 30이에요. 그래야 수프를 얼마나 끓여야 할지 알 수 있어요."
+    },
+    {
+      "de": "Übrigens: Bei Regen findet der Frühjahrsputz eine Woche später statt.",
+      "ko": "참고로 비가 오면 봄맞이 대청소는 일주일 뒤에 열려요."
+    },
+    {
+      "style": "meta",
+      "de": "Viele Grüße, Ihr Bürgerverein Südstadt",
+      "ko": "쥐트슈타트 주민 모임 드림"
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Beim letzten Frühjahrsputz haben mehr als 30 Personen mitgemacht.",
+      "answer": 0,
+      "evidence": "Letztes Jahr haben 35 Leute zusammen über 60 Säcke Müll gesammelt.",
+      "pairs": [["Letztes Jahr", "Beim letzten Frühjahrsputz"], ["35 Leute", "mehr als 30 Personen"]],
+      "explain": "작년 대청소에는 35명이 함께했어요. 35명은 30명보다 많으니까 맞는 문장이에요. mit|machen은 '함께하다, 참여하다'라는 뜻이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was passiert nach der Arbeit im Park?",
+      "options": [
+        "Alle Helfer bekommen etwas zu essen.",
+        "Die Helfer pflanzen etwas im Garten.",
+        "Der Verein verkauft Kuchen im Garten."
+      ],
+      "answer": 0,
+      "evidence": "Um 13 Uhr gibt es für alle Suppe und Kuchen im Gemeinschaftsgarten.",
+      "pairs": [["gibt es für alle Suppe und Kuchen", "Alle Helfer bekommen etwas zu essen"]],
+      "explain": "오전 내내 일한 뒤 13시에 모두에게(für alle) 수프와 케이크가 나와요. 그래서 '모든 도우미가 먹을 것을 받는다'가 정답이에요. 케이크를 판다는 말은 없고, 텃밭은 음식을 먹는 장소일 뿐이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "q": "Für wen ist die Arbeit am Infostand gedacht?",
+      "options": [
+        "Für Leute, die erst am Nachmittag kommen.",
+        "Für Leute, die nicht schwer arbeiten können.",
+        "Für Leute, die schon letztes Jahr dabei waren."
+      ],
+      "answer": 1,
+      "evidence": "Sie sind nicht so fit? Kein Problem!",
+      "pairs": [["nicht so fit", "nicht schwer arbeiten können"]],
+      "explain": "몸이 그다지 튼튼하지 않은(nicht so fit) 사람은 쓰레기를 줍는 대신 안내 부스에서 커피를 끓이거나 아이들을 돌볼 수 있어요. 힘든 일을 하기 어려운 사람을 위한 일이에요. 대청소는 오전에 하고, 작년에 참여했는지는 상관없어요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Die Helfer müssen eigene Handschuhe mitbringen.",
+      "answer": 1,
+      "evidence": "Handschuhe und Säcke bekommen Sie von uns.",
+      "pairs": [["bekommen Sie von uns", "müssen eigene Handschuhe mitbringen"]],
+      "explain": "장갑과 자루는 모임에서 나눠 줘요(bekommen Sie von uns). 직접 가져올 것은 장갑이 아니라 컵이라서 틀린 문장이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "q": "Was bedeutet „Diese Gruppe braucht die meisten Helfer“?",
+      "options": [
+        "In dieser Gruppe arbeiten schon sehr viele Leute.",
+        "Diese Gruppe hilft den anderen Gruppen am meisten.",
+        "Für das Müllsammeln sucht man die meisten Leute."
+      ],
+      "answer": 2,
+      "evidence": "Diese Gruppe braucht die meisten Helfer.",
+      "pairs": [["Diese Gruppe", "Für das Müllsammeln"], ["braucht die meisten Helfer", "sucht man die meisten Leute"]],
+      "explain": "diese Gruppe는 바로 앞 문장의 쓰레기 줍는 모둠이에요. 이 모둠에 일손이 가장 많이 필요하다는 말은 쓰레기 줍기에 가장 많은 사람을 찾는다는 뜻이에요. 이미 사람이 많다는 뜻이 아니에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Warum soll man eine eigene Tasse mitbringen?",
+      "options": [
+        "So gibt es am Infostand billigeren Kaffee.",
+        "So braucht man keine Becher aus Plastik.",
+        "So kann man Suppe mit nach Hause nehmen."
+      ],
+      "answer": 1,
+      "evidence": "Dann brauchen wir keine Plastikbecher.",
+      "pairs": [["keine Plastikbecher", "keine Becher aus Plastik"]],
+      "explain": "각자 컵을 가져오면 플라스틱 컵(Plastikbecher)이 필요 없어요. Becher aus Plastik은 Plastikbecher를 풀어서 말한 표현이에요. 커피값이나 수프를 집에 가져간다는 말은 없어요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Wenn es am 12. April regnet, fällt der Frühjahrsputz dieses Jahr aus.",
+      "answer": 1,
+      "evidence": "Bei Regen findet der Frühjahrsputz eine Woche später statt.",
+      "pairs": [["findet der Frühjahrsputz eine Woche später statt", "fällt der Frühjahrsputz dieses Jahr aus"]],
+      "explain": "비가 오면 대청소를 취소하지(aus|fallen) 않고 일주일 뒤로 미뤄요(eine Woche später stattfinden). 그래서 틀린 문장이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "dies- · welch- – 정관사처럼 변해요",
+      "term": "Demonstrativartikel dieser · Frageartikel welcher",
+      "explain": "dieser(이 ~)와 welcher(어느 ~?)는 정관사 der, die, das와 같은 어미로 변해요. 남성 1격은 dieser · welcher, 여성은 diese · welche, 중성은 dieses · welches, 남성 4격은 diesen · welchen이에요. 뒤에 오는 명사의 성과 격을 보고 어미를 골라요.",
+      "pattern": "dies- / welch- + 정관사 어미 (-er · -e · -es · -en)",
+      "examples": [
+        {
+          "de": "Welche Aufgabe passt zu Ihnen?",
+          "ko": "어떤 일이 나에게 맞을까요?",
+          "mark": ["Welche Aufgabe"],
+          "parts": [
+            ["Welche Aufgabe", "주어"],
+            ["passt", "동사"],
+            ["zu Ihnen?", "전치사 목적어"]
+          ]
+        },
+        {
+          "de": "Diese Gruppe braucht die meisten Helfer.",
+          "ko": "이 모둠에 일손이 가장 많이 필요해요.",
+          "mark": ["Diese Gruppe"],
+          "parts": [
+            ["Diese Gruppe", "주어"],
+            ["braucht", "동사"],
+            ["die meisten Helfer.", "4격 목적어"]
+          ]
+        },
+        {
+          "de": "Dieses Jahr möchten wir noch mehr schaffen.",
+          "ko": "올해는 더 많이 해내고 싶어요.",
+          "mark": ["Dieses Jahr"]
+        }
+      ],
+      "tip": "welch-는 정해진 것 가운데 하나를 고를 때 써요. 종류를 물을 때는 was für ein-을 써요(Was für eine Aufgabe? 어떤 종류의 일?)."
+    },
+    {
+      "title": "전치사 없이 쓰는 시간 표현 – 4격",
+      "term": "Temporalangaben im Akkusativ",
+      "explain": "jed-(~마다), letzt-(지난), nächst-(다음), dies-(이번), ganz-(내내)와 함께 쓰는 시간 표현은 전치사 없이 4격으로 써요. 그래서 남성 명사 앞에서는 -en이 붙어요(jeden Frühling, nächsten Samstag, den ganzen Vormittag). 중성은 letztes Jahr, 여성은 diese Woche처럼 1격과 모양이 같아요.",
+      "pattern": "jeden · letzten · nächsten + 남성 / letztes · dieses + 중성 / letzte · diese + 여성",
+      "examples": [
+        {
+          "de": "Letztes Jahr haben 35 Leute zusammen über 60 Säcke Müll gesammelt.",
+          "ko": "작년에는 35명이 함께 쓰레기를 60자루 넘게 모았어요.",
+          "mark": ["Letztes Jahr"],
+          "parts": [
+            ["Letztes Jahr", "부사어(시간)"],
+            ["haben", "동사"],
+            ["35 Leute", "주어"],
+            ["zusammen", "부사어(방법)"],
+            ["über 60 Säcke Müll", "4격 목적어"],
+            ["gesammelt.", "동사(끝)"]
+          ]
+        },
+        {
+          "de": "Der Frühjahrsputz ist nächsten Samstag, am 12. April.",
+          "ko": "봄맞이 대청소는 다음 주 토요일, 4월 12일이에요.",
+          "mark": ["nächsten Samstag"]
+        },
+        {
+          "de": "Wir treffen uns um 9 Uhr am Spielplatz und arbeiten den ganzen Vormittag.",
+          "ko": "9시에 놀이터에서 만나 오전 내내 일해요.",
+          "mark": ["den ganzen Vormittag"]
+        }
+      ],
+      "tip": "am nächsten Samstag처럼 am을 붙여도 맞아요. 이때는 3격이지만 어미는 똑같이 -en이에요."
+    },
+    {
+      "title": "부드럽게 말하기 – hätte · wäre · könnte",
+      "term": "Konjunktiv II der Höflichkeit",
+      "explain": "hätte, wäre, könnte는 haben, sein, können의 접속법 2식이에요. 사실을 단정하지 않고 한 걸음 물러서서 말하기 때문에 묻거나 부탁하거나 권할 때 더 부드럽고 공손하게 들려요. Hätten Sie Lust?는 Haben Sie Lust?보다 정중하고, Es wäre schön, wenn …은 바라는 일을 조심스럽게 말해요.",
+      "pattern": "Hätten Sie …? · Es wäre schön, wenn … · Sie könnten + 동사원형",
+      "examples": [
+        {
+          "de": "Hätten Sie Lust?",
+          "ko": "함께하고 싶으세요?",
+          "mark": ["Hätten"],
+          "parts": [
+            ["Hätten", "동사"],
+            ["Sie", "주어"],
+            ["Lust?", "4격 목적어"]
+          ]
+        },
+        {
+          "de": "Dann könnten Sie am Infostand Kaffee kochen oder die Kinder betreuen.",
+          "ko": "그러면 안내 부스에서 커피를 끓이거나 아이들을 돌봐 주셔도 돼요.",
+          "mark": ["könnten"]
+        },
+        {
+          "de": "Es wäre aber schön, wenn Sie Ihre eigene Tasse mitbringen könnten.",
+          "ko": "하지만 각자 컵을 가져와 주시면 좋겠어요.",
+          "mark": ["wäre", "könnten"]
+        }
+      ],
+      "tip": "가게에서 주문할 때도 Ich hätte gern einen Kaffee.(커피 한 잔 주세요)처럼 hätte를 써요."
+    }
+  ],
+  "vocab": [
+    { "de": "der Frühjahrsputz (Sg.)", "ko": "봄맞이 대청소" },
+    { "de": "der Verein, -e", "ko": "협회, 모임, 클럽" },
+    { "de": "die Nachbarin, -nen", "ko": "이웃(여성)" },
+    { "de": "der Müll (Sg.)", "ko": "쓰레기" },
+    { "de": "der Sack, -¨e", "ko": "자루, 포대" },
+    { "de": "sammeln", "ko": "모으다, 줍다" },
+    { "de": "der Erfolg, -e", "ko": "성공, 성과" },
+    { "de": "schaffen", "ko": "해내다" },
+    { "de": "der Gemeinschaftsgarten, -¨", "ko": "공동 텃밭" },
+    { "de": "die Aufgabe, -n", "ko": "할 일, 과제" },
+    { "de": "betreuen", "ko": "돌보다" },
+    { "de": "der Handschuh, -e", "ko": "장갑" },
+    { "de": "der Becher, -", "ko": "(손잡이 없는) 컵" },
+    { "de": "fit", "ko": "몸 상태가 좋은, 튼튼한" }
+  ],
+  "phrases": [
+    {
+      "de": "Lust haben (auf + 4격 / zu + 부정사)",
+      "ko": "~하고 싶다, ~할 마음이 있다",
+      "ex": "Hätten Sie Lust?",
+      "exko": "함께하고 싶으세요?"
+    },
+    {
+      "de": "sich bei jemandem an|melden",
+      "ko": "~에게 신청하다",
+      "ex": "Dann melden Sie sich bitte bis Mittwoch bei Ute Krämer an, Telefon 0761 48 22 30.",
+      "exko": "그러면 수요일까지 우테 크레머 씨에게 신청해 주세요. 전화번호는 0761 48 22 30이에요."
+    },
+    {
+      "de": "Kein Problem!",
+      "ko": "괜찮아요! 문제없어요!",
+      "ex": "Sie sind nicht so fit? Kein Problem!",
+      "exko": "몸이 그다지 튼튼하지 않으세요? 괜찮아요!"
+    },
+    {
+      "de": "bei Regen",
+      "ko": "비가 오면",
+      "ex": "Bei Regen findet der Frühjahrsputz eine Woche später statt.",
+      "exko": "비가 오면 봄맞이 대청소는 일주일 뒤에 열려요."
+    }
+  ]
+}
