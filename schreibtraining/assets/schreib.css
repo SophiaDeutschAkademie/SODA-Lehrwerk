@@ -202,3 +202,6 @@ html[data-theme="dark"] .st-chart .s0{background:#5B6584}
 html[data-theme="dark"] .st-n,html[data-theme="dark"] .st-only-i,html[data-theme="dark"] .st-timer .pill.on{color:#14181E}
 html[data-theme="dark"] .st-wcn.high,html[data-theme="dark"] .st-wcn.high b,html[data-theme="dark"] .st-warn{color:#E0B060}
 html[data-theme="dark"] .st-wrong span{background:#2E1B19}
+
+/* 연습: 한국어 문제 문장은 다른 한국어 글과 같은 글씨체(Pretendard) */
+.q-t.q-ko{font-family:var(--f-sans);font-size:calc(16.5px * var(--scale));font-weight:700;line-height:1.6;letter-spacing:-.005em;word-break:keep-all}

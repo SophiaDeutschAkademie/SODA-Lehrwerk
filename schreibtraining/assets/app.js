@@ -349,7 +349,7 @@
     var qs = c.uebung.map(function (q, i) {
       var body = '';
       if (q.t === 'mc') {
-        body = '<p class="q-t">' + esc(q.q) + '</p><div class="opts">' +
+        body = '<p class="q-t q-ko">' + esc(q.q) + '</p><div class="opts">' +
           q.o.map(function (o, j) {
             return '<button class="opt" data-act="pick" data-q="' + i + '" data-j="' + j + '" aria-pressed="false"><span class="k">' + LETTERS[j] + '</span><span lang="de">' + esc(o) + '</span></button>';
           }).join('') + '</div>';
