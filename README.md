@@ -9,7 +9,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `grammatik/` | Syntalab | 문법 교재, Lektion 37개와 부록「암기 노트」, 과마다 연습문제 37개(보강 포함)와 통합 복습 4세트 |
 | `lesetraining/` | SODA Lesetraining | 독해 훈련, A1–C1, 텍스트 100개 |
 | `hoertraining/` | Lehrwerk Hörtraining | 듣기 훈련, A1–C1, 88세트 |
-| `schreibtraining/` | SODA Schreibtraining | 쓰기 훈련, A1–C1 레벨별 2챕터(총 10개), 챕터마다 구성·표현·연습·쓰기·모범답안, 「선생님께 제출하기」(소피아 독일어학원 수강생 전용 안내 팝업) |
+| `schreibtraining/` | SODA Schreibtraining | 쓰기 훈련, A1–C1 레벨별 5챕터(총 25개), 챕터마다 구성·표현·연습·쓰기·모범답안, 「선생님께 제출하기」(소피아 독일어학원 수강생 전용 안내 팝업) |
 | `sprechtraining/` | SODA Sprechtraining | 말하기 훈련, A1–C1과 MZ 구어체, 대화 36개, 독일어 음성 433줄 |
 | `vokalab/` | SODA Vokalab | 독일어 단어장, A1–C1, 12,724단어, 주차별 목표와 테스트 |
 | `praepositionen/` | SODA Präpositionen | 독일어 전치사의 모든 것, 전치사 80개, 비교, 퀴즈 |
@@ -73,7 +73,9 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 - 챕터 내용은 `schreibtraining/data/chapters.js` 하나에 있습니다. 맨 위 설명에 챕터 구조(구성, 표현, 연습, 과제, 점검, 모범답안)가 적혀 있어요. 새 챕터는 같은 형식의 객체를 배열에 더하면 레벨 목록에 바로 나옵니다.
 - 고친 뒤에는 `schreibtraining/index.html`의 `chapters.js?v=` 값을 바꿔야 학생 기기에 새 내용이 나와요.
 - 「선생님께 제출하기」는 Lesetraining·Hörtraining과 같은 Apps Script 주소로 보냅니다. 메일 제목은 「[SODA 학습 기록] Schreibtraining B1-01 · 학생 이름」으로 오고, 학생 글 전체가 본문과 txt 첨부에 들어 있습니다.
-- 학생이 쓴 글은 학생 기기의 브라우저(localStorage `soda-schreib-draft:<챕터 id>`)에 입력할 때마다 자동 저장됩니다.
+- 학생이 쓴 글은 학생 기기의 브라우저(localStorage `soda-schreib-draft:<챕터 id>`)에 입력할 때마다 자동 저장됩니다. 저장 이름에 챕터 `id`가 들어가므로, 이미 올린 챕터의 `id`(예: `b1-01`)는 바꾸지 않습니다. 새 챕터는 새 `id`로 더합니다.
+- 한국어 설명과 해석은 해요체로 씁니다. B1 이상 격식 편지의 해석만 합니다체로 씁니다.
+- 레벨 화면의 제목과 소개 문장은 `schreibtraining/assets/app.js` 맨 위 `LEVELS`에 있습니다. 챕터 구성이 바뀌면 함께 고칩니다.
 
 ## 다크 모드
 

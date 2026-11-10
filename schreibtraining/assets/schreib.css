@@ -1,5 +1,8 @@
 /* SODA SCHREIBTRAINING · 쓰기 훈련 전용 스타일 (base.css 다음에 읽음) */
 
+/* 줄 끝에서 낱말을 나눌 때 본문 글꼴의 붙임표를 쓴다 (다른 글꼴의 붙임표가 끼어들어 낱말과 떨어져 보이는 것을 막음) */
+html{-webkit-hyphenate-character:"-";hyphenate-character:"-"}
+
 /* 표지: 긴 제목 */
 .title .t2.long{font-size:.74em;letter-spacing:-.035em}
 
@@ -72,7 +75,7 @@
 .st-task{display:grid;gap:12px}
 .st-lead,.st-close{font-size:calc(17px * var(--scale));line-height:1.7;color:var(--text);text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 .st-close{font-size:calc(15.5px * var(--scale));color:var(--text-s)}
-.st-brief{margin:0;padding:14px 18px;border-left:3px solid var(--accent-bd);border-radius:0 12px 12px 0;background:var(--bg-s);font-size:calc(16.5px * var(--scale));line-height:1.7;color:var(--text)}
+.st-brief{margin:0;padding:14px 18px;border-left:3px solid var(--accent-bd);border-radius:0 12px 12px 0;background:var(--bg-s);font-size:calc(16.5px * var(--scale));line-height:1.7;color:var(--text);text-align:justify;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
 .st-punkte{list-style:none;display:grid;gap:6px}
 .st-punkte li{position:relative;padding:8px 12px 8px 32px;border-radius:10px;background:var(--accent-l);font-size:calc(16.5px * var(--scale));line-height:1.55;color:var(--text);text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 .st-punkte li::before{content:"";position:absolute;left:13px;top:calc(.5em + 8px);width:8px;height:8px;border-radius:50%;background:var(--accent)}
@@ -81,7 +84,6 @@
 .st-task-ko blockquote{margin:0;padding-left:12px;border-left:2px solid var(--bd)}
 .st-task-ko ul{padding-left:18px}
 
-@media(max-width:620px){.st-lead,.st-close,.st-punkte li,.st-goals li,.st-check span,.st-e{text-align:left}}
 .st-letter .para.st-short .pko{display:none}
 
 /* 그래프 */
@@ -173,9 +175,14 @@
 .st-mine-n{margin-top:8px;font-size:13px;font-weight:600;color:var(--text-m)}
 .st-empty{font-size:14.5px;color:var(--text-m)}
 
+/* 휴대폰: 양쪽 정렬을 풀어 낱말 사이가 벌어지지 않게 (위의 규칙보다 뒤에 있어야 적용됨) */
+@media(max-width:620px){.st-lead,.st-close,.st-brief,.st-punkte li,.st-goals li,.st-check span,.st-e,.st-task-ko{text-align:left}}
+
 /* 인쇄: 과제지 */
 .st-print{display:none}
 @media print{
+  /* 다크 모드로 보고 있어도 인쇄물은 밝은 색으로 (글자가 흰 종이에서 안 보이는 것을 막음) */
+  html:root[data-theme="dark"]{--accent:#384568;--accent-d:#2C3754;--accent-bg:#ECEDF3;--accent-l:#F5F5F9;--accent-bd:#C9CDDB;--text:#1E1E1E;--text-s:#444;--text-m:#666;--text-l:#6F6F6B;--bg:#FAFAF8;--bg-c:#FFFFFF;--bg-s:#F2F0EB;--bd:#E0E0DB;--bd-l:#ECEAE4;--ok:#2D7A56;--ok-bg:#E8F5EE;--ok-bd:#A9D3BD;--no:#C44B3A;--no-bg:#FBE8E5;--no-bd:#EDB5AC;--hl:#FFE58A;--hl-soft:#FFF3C4;color-scheme:light!important;background:#fff}
   html.printing body > *:not(#st-print){display:none!important}
   html.printing body{padding-top:0!important}
   html.printing .st-print{display:block;color:#111;font-family:var(--f-sans)}
