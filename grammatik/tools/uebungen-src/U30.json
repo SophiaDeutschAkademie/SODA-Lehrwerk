@@ -392,5 +392,61 @@
       "a": 0,
       "e": "화법조동사가 있는 과거의 비현실은 hätte + 원형 + 화법조동사 원형이에요.<br>과거분사 mitgenommen은 쓰지 않고, 화법조동사는 늘 haben이에요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "이루어지지 않은 바람으로 바꿔 쓰세요(Wenn … doch …!).",
+      "s": "Ich kann nicht schwimmen.",
+      "a": [
+        "Wenn ich doch schwimmen könnte!",
+        "Wenn ich nur schwimmen könnte!"
+      ],
+      "e": "소망은 접속법 II로 말해요. können → könnte, 동사는 끝에 와요."
+    },
+    {
+      "t": "tr",
+      "q": "Könnten Sie …?로 시작하는 정중한 부탁으로 바꿔 쓰세요.",
+      "s": "Bringen Sie mir bitte die Rechnung!",
+      "a": [
+        "Könnten Sie mir bitte die Rechnung bringen?"
+      ],
+      "e": "könnte는 정중한 부탁에 써요. 본동사는 원형으로 끝에 와요.",
+      "ok": "Könnten Sie mir bitte …는 정중한 부탁의 고정 표현"
+    },
+    {
+      "t": "tr",
+      "q": "사실과 반대되는 조건문으로 바꿔 쓰세요.",
+      "s": "Ich habe kein Auto, deshalb fahre ich nicht ans Meer.",
+      "a": [
+        "Wenn ich ein Auto hätte, würde ich ans Meer fahren.",
+        "Hätte ich ein Auto, würde ich ans Meer fahren."
+      ],
+      "e": "사실과 반대이면 Wenn + 접속법 II, 주문장은 würde + 원형이에요. 부정이 긍정으로 바뀌어요."
+    },
+    {
+      "t": "err",
+      "q": "Wenn ich mehr Geld hatte, würde ich reisen.",
+      "x": 4,
+      "r": "Wenn ich mehr Geld hätte, würde ich reisen.",
+      "ko": "돈이 더 있다면 여행할 텐데.",
+      "e": "사실과 반대되는 조건에는 과거형 hatte가 아니라 접속법 II hätte를 써요."
+    },
+    {
+      "t": "err",
+      "q": "Könnst du das Fenster schließen?",
+      "x": 0,
+      "r": "Könntest du das Fenster schließen?",
+      "ko": "창문 좀 닫아 줄 수 있어?",
+      "e": "können의 접속법 II는 könnte, du에서는 könntest예요."
+    },
+    {
+      "t": "err",
+      "q": "Wenn ich früher losgegangen hätte, hätte ich die Bahn bekommen.",
+      "x": 4,
+      "r": "Wenn ich früher losgegangen wäre, hätte ich die Bahn bekommen.",
+      "ko": "더 일찍 나섰다면 전철을 탔을 텐데.",
+      "e": "losgehen은 sein과 쓰는 동사라 과거의 접속법 II도 wäre + 과거분사예요."
+    }
   ]
 }

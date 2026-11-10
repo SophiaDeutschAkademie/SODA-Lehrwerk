@@ -381,5 +381,58 @@
       "a": 0,
       "e": "Heute Abend가 첫 자리라서 화법조동사가 두 번째, 주어는 그 뒤예요.<br>금지는 nicht dürfen, du → darfst. musst du nicht는 '안 해도 돼'예요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "können을 넣어 바꿔 쓰세요.",
+      "s": "Er spielt Gitarre.",
+      "a": [
+        "Er kann Gitarre spielen."
+      ],
+      "e": "화법조동사는 두 번째 자리, 본동사 원형은 문장 끝이에요."
+    },
+    {
+      "t": "tr",
+      "q": "müssen을 넣어 바꿔 쓰세요.",
+      "s": "Ich arbeite heute lange.",
+      "a": [
+        "Ich muss heute lange arbeiten."
+      ],
+      "e": "ich에서 müssen은 muss예요. 본동사는 원형으로 끝에 가요."
+    },
+    {
+      "t": "tr",
+      "q": "möchte를 넣어 바꿔 쓰세요.",
+      "s": "Sie trinkt einen Tee.",
+      "a": [
+        "Sie möchte einen Tee trinken."
+      ],
+      "e": "sie(그녀)에서도 möchte예요. ich와 er·sie의 형태가 같아요."
+    },
+    {
+      "t": "err",
+      "q": "Er kannt gut schwimmen.",
+      "x": 1,
+      "r": "Er kann gut schwimmen.",
+      "ko": "그는 수영을 잘해요.",
+      "e": "화법조동사는 er에서 어미가 없어요. kann."
+    },
+    {
+      "t": "err",
+      "q": "Ich möchten eine Pizza bestellen.",
+      "x": 1,
+      "r": "Ich möchte eine Pizza bestellen.",
+      "ko": "피자 하나 주문하고 싶어요.",
+      "e": "ich의 형태는 möchte예요. möchten은 wir·sie·Sie 형태예요."
+    },
+    {
+      "t": "err",
+      "q": "Wollst du heute Tennis spielen?",
+      "x": 0,
+      "r": "Willst du heute Tennis spielen?",
+      "ko": "오늘 테니스 칠래?",
+      "e": "wollen은 단수에서 모음이 i로 바뀌어요. du → willst."
+    }
   ]
 }

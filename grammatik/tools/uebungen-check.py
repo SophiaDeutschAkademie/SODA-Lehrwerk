@@ -121,23 +121,47 @@ def de_strings(it):
         out.append(q)
     elif t == 'order':
         out += it['a']
+    elif t == 'tr':
+        out.append(it['s'])
+        out += it['a']
+    elif t == 'err':
+        out.append(it['r'])
     return out
+
+
+def nzs(x):
+    """바꿔 쓰기 채점과 같은 기준: 대소문자·움라우트 표기·문장부호를 무시해요."""
+    x = x.lower().replace('ä', 'ae').replace('ö', 'oe').replace('ü', 'ue').replace('ß', 'ss')
+    return ' '.join(re.sub(r'[.,!?;:"„“”\'‚‘’«»]', ' ', x).split())
 
 
 def norm_key(s):
     return ' '.join(t for toks in runs_of(s) for t in toks)
 
 
-def check_chapter(n, strict_counts=True):
+def check_review(n):
+    """통합 복습(W1.json …): Lektion range[0]~range[1]의 문법을 섞은 세트."""
+    return check_chapter(n, review=True)
+
+
+def check_chapter(n, strict_counts=True, review=False):
     errs, warns = [], []
-    path = SRC + 'U%s.json' % n
+    path = SRC + ('%s.json' % n if review else 'U%s.json' % n)
     if not os.path.exists(path):
         return ['파일이 없어요: ' + path], [], None
     try:
         d = json.load(open(path, encoding='utf8'))
     except Exception as e:
         return ['JSON 오류: %s' % e], [], None
-    lesson = int(n)
+    if review:
+        rg = d.get('range')
+        if not (isinstance(rg, list) and len(rg) == 2 and 1 <= rg[0] < rg[1] <= 37):
+            return ['range는 [첫 과, 마지막 과]'], [], None
+        if not d.get('ko') or not d.get('de'):
+            errs.append('ko·de(제목)가 없어요')
+        lesson = rg[1]
+    else:
+        lesson = int(n)
     if d.get('n') != n:
         errs.append('n이 파일 번호와 달라요')
     if d.get('level') not in ('A1', 'A2', 'B1', 'B2'):
@@ -146,8 +170,17 @@ def check_chapter(n, strict_counts=True):
     if not (3 <= len(goals) <= 4):
         errs.append('goals는 3~4개')
     items = d.get('items') or []
+    plus = d.get('plus') or []
     cnt = collections.Counter(i.get('lv') for i in items)
     typ = collections.Counter(i.get('t') for i in items)
+    if plus:
+        pt = collections.Counter(i.get('t') for i in plus)
+        if not (4 <= len(plus) <= 8): errs.append('보강(plus) %d문항 (4~8)' % len(plus))
+        if pt['tr'] < 2 or pt['err'] < 2: errs.append('보강은 바꿔 쓰기(tr)와 오류 찾기(err)를 2개 이상씩')
+    if review:
+        strict_counts = False
+        if not (16 <= len(items) <= 30): errs.append('복습 문항 수 %d (16~30)' % len(items))
+        if not (cnt[1] and cnt[2] and cnt[3]): errs.append('복습에는 기본·중간·도전이 모두 있어야 해요')
     if strict_counts:
         if not (28 <= len(items) <= 34):
             errs.append('문항 수 %d (28~34)' % len(items))
@@ -159,11 +192,15 @@ def check_chapter(n, strict_counts=True):
         if typ['order'] < 2: warns.append('[배열] order가 %d문항뿐이에요 (어순이 중요한 과면 2개 이상)' % typ['order'])
     full, grams, stop = corpus()
     seen = {}
-    for idx, it in enumerate(items, 1):
-        tag = 'U%s #%d' % (n, idx)
+    allowed = ('mc', 'fill', 'order', 'tr', 'err') if review else ('mc', 'fill', 'order')
+    for idx, it in enumerate(items + [dict(p, _plus=1) for p in plus], 1):
+        tag = '%s #%d' % (n if review else 'U' + n, idx)
         ok = it.get('ok')
-        if it.get('lv') not in (1, 2, 3): errs.append(tag + ' lv는 1·2·3'); continue
-        if it.get('t') not in ('mc', 'fill', 'order'): errs.append(tag + ' t는 mc·fill·order'); continue
+        if it.get('_plus'):
+            if it.get('t') not in ('tr', 'err'): errs.append(tag + ' 보강의 t는 tr·err'); continue
+        else:
+            if it.get('lv') not in (1, 2, 3): errs.append(tag + ' lv는 1·2·3'); continue
+            if it.get('t') not in allowed: errs.append(tag + ' t는 ' + '·'.join(allowed)); continue
         if not it.get('e'): errs.append(tag + ' 해설(e)이 없어요')
         if not it.get('q'): errs.append(tag + ' 질문(q)이 없어요')
         t = it['t']
@@ -196,6 +233,23 @@ def check_chapter(n, strict_counts=True):
                 aseen.add(key)
             if len(base) < 4: errs.append(tag + ' 배열 문장은 4단어 이상')
             if len(base) > 14: warns.append(tag + ' 배열 문장이 너무 길어요 (%d단어)' % len(base))
+        elif t == 'tr':
+            a = it.get('a')
+            if not it.get('s'): errs.append(tag + ' 바꿀 문장(s)이 없어요'); continue
+            if not isinstance(a, list) or not a or not all(isinstance(x, str) and x.strip() for x in a): errs.append(tag + ' a는 정답 문장 목록'); continue
+            keys = [nzs(x) for x in a]
+            if len(set(keys)) != len(keys): errs.append(tag + ' 같은 정답이 중복돼요(문장부호·대소문자 무시)')
+            if nzs(it['s']) in keys: errs.append(tag + ' 정답이 바꿀 문장과 같아요')
+            if re.search(r'[A-Za-zÄÖÜäöüß]{3}', re.sub(r'\*\*.*?\*\*', '', it['q'])) and not re.search(r'[가-힣]', it['q']):
+                errs.append(tag + ' q는 한국어 지시문이에요')
+        elif t == 'err':
+            if not it.get('ko'): errs.append(tag + ' 한국어 뜻(ko)이 없어요')
+            q, rr, x = it['q'].split(), (it.get('r') or '').split(), it.get('x')
+            if not isinstance(x, int) or not (0 <= x < len(q)): errs.append(tag + ' x는 틀린 단어의 번호(0부터)'); continue
+            if len(q) != len(rr): errs.append(tag + ' 고친 문장(r)은 단어 수가 같아야 해요 (틀린 단어 하나만 바꿔요)'); continue
+            diff = [k for k in range(len(q)) if q[k] != rr[k]]
+            if diff != [x]: errs.append(tag + ' 틀린 문장과 고친 문장은 x번째 단어 하나만 달라야 해요 (다른 곳: %s)' % diff)
+            if len(q) < 4: errs.append(tag + ' 오류 찾기 문장은 4단어 이상')
         # 한국어 말투
         for k in ('e', 'ko', 'q'):
             v = it.get(k)
@@ -256,12 +310,15 @@ def main():
             print('=' * 20, 'Lektion', n)
             print(re.sub(r'\n{2,}', '\n', lesson_text(n)))
         return
-    ns = ['%02d' % int(a) for a in args] if args else ['%02d' % i for i in range(1, 38)]
+    ws = [a.upper() for a in args if a.upper().startswith('W')]
+    ns = ['%02d' % int(a) for a in args if not a.upper().startswith('W')] if args else ['%02d' % i for i in range(1, 38)]
+    if not args:
+        ws = ['W%d' % i for i in range(1, 10) if os.path.exists(SRC + 'W%d.json' % i)]
     bad = 0
-    for n in ns:
-        e, w, d = check_chapter(n)
-        n_items = len(d['items']) if d else 0
-        print('U%s  문항 %d  오류 %d  경고 %d' % (n, n_items, len(e), len(w)))
+    for n in ns + ws:
+        e, w, d = check_review(n) if n.startswith('W') else check_chapter(n)
+        n_items = (len(d['items']) + len(d.get('plus') or [])) if d else 0
+        print('%s  문항 %d  오류 %d  경고 %d' % (n if n.startswith('W') else 'U' + n, n_items, len(e), len(w)))
         for x in e: print('   오류  ' + x)
         for x in w: print('   경고  ' + x)
         bad += len(e)

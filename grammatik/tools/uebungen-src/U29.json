@@ -394,5 +394,58 @@
       "a": 0,
       "e": "앞으로 있을 일을 기다리며 기뻐하는 것은 sich freuen auf + 4격이에요. 중성 → auf das.<br>über는 이미 일어난 일에 대한 기쁨이라서, 취소된 콘서트와 맞지 않아요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "관계문으로 한 문장으로 바꿔 쓰세요.",
+      "s": "Das ist der Mann. Er wohnt neben uns.",
+      "a": [
+        "Das ist der Mann, der neben uns wohnt."
+      ],
+      "e": "관계대명사는 관계문 속 역할(주어 → 1격)과 앞 명사의 성(남성)으로 정해요."
+    },
+    {
+      "t": "tr",
+      "q": "관계문으로 한 문장으로 바꿔 쓰세요.",
+      "s": "Kennst du die Frau? Ich habe ihr geholfen.",
+      "a": [
+        "Kennst du die Frau, der ich geholfen habe?"
+      ],
+      "e": "helfen은 3격을 받아요. 여성 3격 관계대명사는 der예요."
+    },
+    {
+      "t": "tr",
+      "q": "전치사 + 관계대명사로 한 문장으로 바꿔 쓰세요.",
+      "s": "Das ist das Hotel. Wir haben in dem Hotel gewohnt.",
+      "a": [
+        "Das ist das Hotel, in dem wir gewohnt haben."
+      ],
+      "e": "전치사는 관계대명사 앞에 와요. in dem."
+    },
+    {
+      "t": "err",
+      "q": "Das ist die Lehrerin, die ich gestern geholfen habe.",
+      "x": 4,
+      "r": "Das ist die Lehrerin, der ich gestern geholfen habe.",
+      "ko": "이분이 내가 어제 도와드린 선생님이에요.",
+      "e": "helfen은 3격 동사예요. 여성 3격 관계대명사는 der예요."
+    },
+    {
+      "t": "err",
+      "q": "Das ist das Schönste, das wir im Urlaub gesehen haben.",
+      "x": 4,
+      "r": "Das ist das Schönste, was wir im Urlaub gesehen haben.",
+      "ko": "이게 우리가 휴가 때 본 것 중 가장 아름다운 거예요.",
+      "e": "명사로 쓴 최상급(das Schönste) 뒤의 관계대명사는 was예요."
+    },
+    {
+      "t": "err",
+      "q": "Der Mann, deren Hund bellt, ist mein Nachbar.",
+      "x": 2,
+      "r": "Der Mann, dessen Hund bellt, ist mein Nachbar.",
+      "ko": "개가 짖고 있는 그 남자는 내 이웃이에요.",
+      "e": "소유를 나타내는 관계대명사는 앞 명사의 성을 따라요. 남성 → dessen."
+    }
   ]
 }

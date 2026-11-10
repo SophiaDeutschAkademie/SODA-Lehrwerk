@@ -449,5 +449,61 @@
       ],
       "e": "질문 '언제'는 wann, 미래의 조건·때는 wenn(sobald도 돼요), 과거의 한 번은 als예요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "als로 한 문장으로 바꿔 쓰세요.",
+      "s": "Ich war noch Studentin. Ich habe in Leipzig gewohnt.",
+      "a": [
+        "Als ich noch Studentin war, habe ich in Leipzig gewohnt.",
+        "Ich habe in Leipzig gewohnt, als ich noch Studentin war."
+      ],
+      "e": "과거의 한 시기는 als예요. als 문장의 동사는 끝으로 가요."
+    },
+    {
+      "t": "tr",
+      "q": "nachdem으로 한 문장으로 바꿔 쓰세요.",
+      "s": "Sie hatte geduscht. Dann frühstückte sie.",
+      "a": [
+        "Nachdem sie geduscht hatte, frühstückte sie.",
+        "Sie frühstückte, nachdem sie geduscht hatte."
+      ],
+      "e": "nachdem 문장은 먼저 일어난 일이라 과거완료, 주문장은 과거형이에요."
+    },
+    {
+      "t": "tr",
+      "q": "bevor로 한 문장으로 바꿔 쓰세요.",
+      "s": "Ich mache das Licht aus. Dann verlasse ich das Büro.",
+      "a": [
+        "Bevor ich das Büro verlasse, mache ich das Licht aus.",
+        "Ich mache das Licht aus, bevor ich das Büro verlasse."
+      ],
+      "e": "bevor 뒤에는 나중에 일어나는 일이 와요."
+    },
+    {
+      "t": "err",
+      "q": "Wenn ich gestern im Supermarkt war, traf ich Herrn Kim.",
+      "x": 0,
+      "r": "Als ich gestern im Supermarkt war, traf ich Herrn Kim.",
+      "ko": "어제 슈퍼마켓에 있었을 때 김 씨를 만났어요.",
+      "e": "과거에 한 번 있었던 일은 als예요."
+    },
+    {
+      "t": "err",
+      "q": "Als ich im Urlaub bin, lese ich viel.",
+      "x": 0,
+      "r": "Wenn ich im Urlaub bin, lese ich viel.",
+      "ko": "휴가 중이면 나는 책을 많이 읽어요.",
+      "e": "현재나 반복되는 때는 wenn이에요."
+    },
+    {
+      "t": "err",
+      "q": "Während er kochte, deckt sie den Tisch.",
+      "x": 3,
+      "r": "Während er kochte, deckte sie den Tisch.",
+      "ko": "그가 요리하는 동안 그녀는 상을 차렸어요.",
+      "e": "두 일이 같은 때라 시제도 같아야 해요. 과거형 deckte."
+    }
   ]
 }

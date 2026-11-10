@@ -604,6 +604,21 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
 .qscore-t b{font-size:1.2em;color:var(--accent)}
 .qscore-bar{order:3;flex:1 1 100%;height:6px;border-radius:3px;background:var(--bd);overflow:hidden}
 .qscore-bar i{display:block;width:0;height:100%;background:var(--ok);transition:width .3s ease}
+.qsrc{margin:-4px 0 12px;padding:10px 14px;border-left:3px solid var(--bd);border-radius:0 8px 8px 0;background:var(--bg-s);font-size:1em;line-height:1.6;color:var(--text)}
+.qtr{display:block;box-sizing:border-box;width:100%;min-height:62px;padding:10px 12px;border:0;border-bottom:2px solid var(--accent);border-radius:8px 8px 0 0;background:var(--bg-s);color:var(--text);font:inherit;font-size:.98em;line-height:1.55;resize:vertical}
+.qtr:focus{outline:none;background:var(--accent-bg)}
+.qtr.right{border-color:var(--ok);background:var(--ok-bg)}
+.qtr.wrong{border-color:var(--no);background:var(--no-bg)}
+.qtok{display:flex;flex-wrap:wrap;gap:6px 6px;margin:2px 0 4px}
+.qw{padding:7px 11px;border:2px solid transparent;border-radius:8px;background:var(--bg-s);color:var(--text);font:inherit;font-size:.98em;line-height:1.4;cursor:pointer}
+.qw:hover{background:var(--accent-bg)}
+.qw.right{border-color:var(--ok);background:var(--ok-bg)}
+.qw.wrong{border-color:var(--no);background:var(--no-bg)}
+.qi.done .qw{cursor:default}
+.qi.qx .qa{margin-top:10px}
+.plus-badge{background:#4E7A6B}
+html[data-theme="dark"] .plus-badge{background:#7FB0A0;color:#11161C}
+@media print{.qtr{border:0;border-bottom:1px solid #000;background:none;min-height:48px}}
 .sx-end-ex{padding:22px 28px;border-bottom:1px solid var(--sx-line)}
 @media (max-width:640px){.sx-end-ex{padding:18px}.qi{padding:18px 16px}.qb{height:42px}}
 @media print{.qa,.qscore{display:none!important}.qin{border-bottom:1px solid #000;background:none}.qpool{display:none}}
@@ -632,7 +647,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     <a class="uc-cta" href="#/uebungen/liste">시작하기 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
     <a class="uc-sub" href="#/inhalt">문법 교재로 가기</a>
   </div>
-  <footer class="uc-foot"><span>Innovative Learning Beyond the Traditional</span><span>37 Übungen</span></footer>
+  <footer class="uc-foot"><span>Innovative Learning Beyond the Traditional</span><span>37 Übungen · 4 Wiederholungen</span></footer>
 </div>
 
 <div id="toc" class="sx-view sx-toc" hidden data-no-print>
@@ -668,8 +683,11 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
   </header>
   <div class="sx-page">
     <h1 class="sx-h" id="sx-uh">연습 목차</h1>
-    <p class="sx-sub" id="sx-usub">과마다 기본, 중간, 도전 순서로 풀면서 문법을 익혀요.</p>
+    <p class="sx-sub" id="sx-usub">과마다 기본, 중간, 도전, 보강 순서로 풀면서 문법을 익혀요. 푼 답은 이 기기에 저장돼요.</p>
     <ol class="sx-list" id="sx-ulist"></ol>
+    <h2 class="sx-h sx-h2" id="sx-wh" hidden>통합 복습<em>Wiederholung</em></h2>
+    <p class="sx-sub" id="sx-wsub" hidden>여러 과의 문법을 섞어서 풀어요. 앞 과를 다 공부한 뒤에 풀면 좋아요.</p>
+    <ol class="sx-list" id="sx-wlist" hidden></ol>
   </div>
 </div>
 
@@ -699,7 +717,8 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
 <script type="application/json" id="sx-meta">[{"n":"01","ko":"명사의 성과 관사","de":"Genus und Artikel","title":"Lektion 01 · 명사의 성과 관사","src":"lessons/L01.json?v=bba6256956"},{"n":"02","ko":"명사의 복수","de":"Der Plural der Nomen","title":"Lektion 02 · 명사의 복수","src":"lessons/L02.json?v=da8b6d4d19"},{"n":"03","ko":"격과 관사 변화","de":"Die Kasus und die Deklination der Artikel","title":"Lektion 03 · 격과 관사 변화","src":"lessons/L03.json?v=c87526baf4"},{"n":"04","ko":"인칭대명사","de":"Personalpronomen","title":"Lektion 04 · 인칭대명사","src":"lessons/L04.json?v=77bbaad68c"},{"n":"05","ko":"현재형 동사변화와 명령형","de":"Präsens und Imperativ","title":"Lektion 05 · 현재형 동사변화와 명령형","src":"lessons/L05.json?v=dd15336942"},{"n":"06","ko":"어순과 의문문","de":"Wortstellung und Fragesätze","title":"Lektion 06 · 어순과 의문문","src":"lessons/L06.json?v=9996f8b200"},{"n":"07","ko":"수와 시간","de":"Zahlen, Datum und Uhrzeit","title":"Lektion 07 · 수와 시간","src":"lessons/L07.json?v=3bb813cf0e"},{"n":"08","ko":"소유관사","de":"Possessivartikel","title":"Lektion 08 · 소유관사","src":"lessons/L08.json?v=f5fc4c8b1a"},{"n":"09","ko":"부정 — kein과 nicht","de":"Negation: kein und nicht","title":"Lektion 09 · 부정 — kein과 nicht","src":"lessons/L09.json?v=68e9a47874"},{"n":"10","ko":"화법조동사","de":"Modalverben","title":"Lektion 10 · 화법조동사","src":"lessons/L10.json?v=1704021d27"},{"n":"11","ko":"분리동사와 비분리동사","de":"Trennbare und untrennbare Verben","title":"Lektion 11 · 분리동사와 비분리동사","src":"lessons/L11.json?v=ca70363759"},{"n":"12","ko":"현재완료","de":"Das Perfekt","title":"Lektion 12 · 현재완료","src":"lessons/L12.json?v=78375556ff"},{"n":"13","ko":"과거형","de":"Das Präteritum","title":"Lektion 13 · 과거형","src":"lessons/L13.json?v=31674a6a81"},{"n":"14","ko":"전치사 1 — 4격 지배와 3격 지배","de":"Präpositionen mit Akkusativ und Dativ","title":"Lektion 14 · 전치사 1 — 4격 지배와 3격 지배","src":"lessons/L14.json?v=42660ac764"},{"n":"15","ko":"전치사 2 — 3·4격 지배와 장소 표현","de":"Wechselpräpositionen und Ortsangaben","title":"Lektion 15 · 전치사 2 — 3·4격 지배와 장소 표현","src":"lessons/L15.json?v=733720004d"},{"n":"16","ko":"2격과 n-변화 명사","de":"Der Genitiv und die n-Deklination","title":"Lektion 16 · 2격과 n-변화 명사","src":"lessons/L16.json?v=4bfa4103d0"},{"n":"17","ko":"재귀동사","de":"Reflexive Verben","title":"Lektion 17 · 재귀동사","src":"lessons/L17.json?v=ad26343760"},{"n":"18","ko":"동사의 목적어 — 3격 동사·전치사 동사·비인칭 es","de":"Verben mit Dativ, Verben mit Präpositionen, das unpersönliche „es“","title":"Lektion 18 · 동사의 목적어 — 3격 동사·전치사 동사·비인칭 es","src":"lessons/L18.json?v=84e2aeb6d1"},{"n":"19","ko":"등위접속사와 접속부사","de":"Konjunktionen und Konnektoren","title":"Lektion 19 · 등위접속사와 접속부사","src":"lessons/L19.json?v=f2b341af2a"},{"n":"20","ko":"종속절","de":"Nebensätze mit dass, weil, ob, wenn, obwohl, damit","title":"Lektion 20 · 종속절","src":"lessons/L20.json?v=2da990342f"},{"n":"21","ko":"화법 불변화사","de":"Modalpartikeln","title":"Lektion 21 · 화법 불변화사","src":"lessons/L21.json?v=6ea7e352c8"},{"n":"22","ko":"dieser·welcher와 부정대명사","de":"Demonstrativ-, Frage- und Indefinitwörter","title":"Lektion 22 · dieser·welcher와 부정대명사","src":"lessons/L22.json?v=33f962b774"},{"n":"23","ko":"형용사 어미 1 — 약변화","de":"Adjektivdeklination I: nach dem bestimmten Artikel","title":"Lektion 23 · 형용사 어미 1 — 약변화","src":"lessons/L23.json?v=0123655bc7"},{"n":"24","ko":"형용사 어미 2 — 혼합변화·강변화","de":"Adjektivdeklination II: nach ein-Wörtern und ohne Artikel","title":"Lektion 24 · 형용사 어미 2 — 혼합변화·강변화","src":"lessons/L24.json?v=66f1ae5c4b"},{"n":"25","ko":"비교급과 최상급","de":"Komparativ und Superlativ","title":"Lektion 25 · 비교급과 최상급","src":"lessons/L25.json?v=fe815e890d"},{"n":"26","ko":"과거완료와 미래","de":"Plusquamperfekt und Futur","title":"Lektion 26 · 과거완료와 미래","src":"lessons/L26.json?v=d903f765af"},{"n":"27","ko":"시간의 종속절","de":"Temporale Nebensätze","title":"Lektion 27 · 시간의 종속절","src":"lessons/L27.json?v=5c12ebb4c0"},{"n":"28","ko":"zu 부정형","de":"Der Infinitiv mit zu","title":"Lektion 28 · zu 부정형","src":"lessons/L28.json?v=138742342c"},{"n":"29","ko":"관계문","de":"Relativsätze","title":"Lektion 29 · 관계문","src":"lessons/L29.json?v=ae4062b530"},{"n":"30","ko":"접속법 II","de":"Der Konjunktiv II","title":"Lektion 30 · 접속법 II","src":"lessons/L30.json?v=96b6cf816c"},{"n":"31","ko":"수동태","de":"Das Passiv","title":"Lektion 31 · 수동태","src":"lessons/L31.json?v=199a53fab8"},{"n":"32","ko":"분사","de":"Partizip I und Partizip II","title":"Lektion 32 · 분사","src":"lessons/L32.json?v=3eedcffc65"},{"n":"33","ko":"접속법 I과 간접화법","de":"Konjunktiv I und indirekte Rede","title":"Lektion 33 · 접속법 I과 간접화법","src":"lessons/L33.json?v=48ece6cc35"},{"n":"34","ko":"형용사·명사와 전치사","de":"Adjektive und Nomen mit Präpositionen","title":"Lektion 34 · 형용사·명사와 전치사","src":"lessons/L34.json?v=43c12211fa"},{"n":"35","ko":"단어 만들기","de":"Wortbildung","title":"Lektion 35 · 단어 만들기","src":"lessons/L35.json?v=e76544c338"},{"n":"36","ko":"화법조동사의 추측 용법","de":"Modalverben zur Vermutung","title":"Lektion 36 · 화법조동사의 추측 용법","src":"lessons/L36.json?v=e8db682554"},{"n":"37","ko":"고급 연결어와 2격 전치사","de":"Weitere Konnektoren und Präpositionen mit Genitiv","title":"Lektion 37 · 고급 연결어와 2격 전치사","src":"lessons/L37.json?v=8f11bd9420"}]</script>
 <script type="application/json" id="sx-assets">{"%%A0%%":"assets/logo.png?v=d92b73352b","%%A1%%":"assets/image-1.webp?v=f15d5b8096"}</script>
 <script type="application/json" id="sx-ax">{"ko":"암기 노트","de":"Anhang · Das Wichtigste zum Auswendiglernen","title":"부록 · 암기 노트","src":"lessons/anhang.json?v=7baa5408b1"}</script>
-<script type="application/json" id="sx-ux">[{"n":"01","q":32,"lv":[17,9,6],"level":"A1","src":"uebungen/U01.json?v=b0220cf093"},{"n":"02","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U02.json?v=86b5fccfd2"},{"n":"03","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U03.json?v=1d57b1d2c9"},{"n":"04","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U04.json?v=73a3da1ea9"},{"n":"05","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U05.json?v=362de2f81a"},{"n":"06","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U06.json?v=b7f90553e0"},{"n":"07","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U07.json?v=d2baad9115"},{"n":"08","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U08.json?v=98c5dabb2f"},{"n":"09","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U09.json?v=46e9853e53"},{"n":"10","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U10.json?v=b402398fe1"},{"n":"11","q":30,"lv":[16,8,6],"level":"A1","src":"uebungen/U11.json?v=133db57d94"},{"n":"12","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U12.json?v=7b55918a5b"},{"n":"13","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U13.json?v=b0d1a56e64"},{"n":"14","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U14.json?v=3e8f09f164"},{"n":"15","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U15.json?v=491e5a7031"},{"n":"16","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U16.json?v=c3d444fbab"},{"n":"17","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U17.json?v=30daa1d8c8"},{"n":"18","q":32,"lv":[17,9,6],"level":"A2","src":"uebungen/U18.json?v=455b450e0d"},{"n":"19","q":31,"lv":[17,8,6],"level":"A2","src":"uebungen/U19.json?v=8b287804c9"},{"n":"20","q":32,"lv":[17,9,6],"level":"A2","src":"uebungen/U20.json?v=4254a003d7"},{"n":"21","q":31,"lv":[17,8,6],"level":"B1","src":"uebungen/U21.json?v=fc6f76863a"},{"n":"22","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U22.json?v=73c6934611"},{"n":"23","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U23.json?v=584775bdf6"},{"n":"24","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U24.json?v=f6426025fa"},{"n":"25","q":30,"lv":[16,8,6],"level":"A2","src":"uebungen/U25.json?v=d689d42439"},{"n":"26","q":31,"lv":[16,9,6],"level":"B1","src":"uebungen/U26.json?v=aa27efae52"},{"n":"27","q":31,"lv":[16,9,6],"level":"B1","src":"uebungen/U27.json?v=faaa2b9983"},{"n":"28","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U28.json?v=99e1845e37"},{"n":"29","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U29.json?v=f221798337"},{"n":"30","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U30.json?v=87cadeb706"},{"n":"31","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U31.json?v=89509fb250"},{"n":"32","q":30,"lv":[16,8,6],"level":"B2","src":"uebungen/U32.json?v=2b5f3c71bb"},{"n":"33","q":30,"lv":[16,8,6],"level":"B2","src":"uebungen/U33.json?v=7235ffffbd"},{"n":"34","q":30,"lv":[16,8,6],"level":"B1","src":"uebungen/U34.json?v=ecf540fa30"},{"n":"35","q":31,"lv":[16,9,6],"level":"B2","src":"uebungen/U35.json?v=a39c28f7d1"},{"n":"36","q":30,"lv":[16,8,6],"level":"B2","src":"uebungen/U36.json?v=4a6816b38e"},{"n":"37","q":30,"lv":[16,8,6],"level":"B2","src":"uebungen/U37.json?v=c301f81d75"}]</script>
+<script type="application/json" id="sx-ux">[{"n":"01","q":38,"lv":[17,9,6],"level":"A1","src":"uebungen/U01.json?v=3d2a210575","p":6},{"n":"02","q":36,"lv":[16,8,6],"level":"A1","src":"uebungen/U02.json?v=26643833dc","p":6},{"n":"03","q":36,"lv":[16,8,6],"level":"A1","src":"uebungen/U03.json?v=f2072ca0ac","p":6},{"n":"04","q":36,"lv":[16,8,6],"level":"A1","src":"uebungen/U04.json?v=7ab8f87daf","p":6},{"n":"05","q":36,"lv":[16,8,6],"level":"A1","src":"uebungen/U05.json?v=1cf6cfd9ab","p":6},{"n":"06","q":36,"lv":[16,8,6],"level":"A1","src":"uebungen/U06.json?v=bd15de4d12","p":6},{"n":"07","q":36,"lv":[16,8,6],"level":"A1","src":"uebungen/U07.json?v=04038dd82a","p":6},{"n":"08","q":36,"lv":[16,8,6],"level":"A1","src":"uebungen/U08.json?v=756cd0697a","p":6},{"n":"09","q":36,"lv":[16,8,6],"level":"A1","src":"uebungen/U09.json?v=cd88d4c8c5","p":6},{"n":"10","q":36,"lv":[16,8,6],"level":"A1","src":"uebungen/U10.json?v=7ffceb04b0","p":6},{"n":"11","q":36,"lv":[16,8,6],"level":"A1","src":"uebungen/U11.json?v=bde3529143","p":6},{"n":"12","q":36,"lv":[16,8,6],"level":"A2","src":"uebungen/U12.json?v=8ac387f23d","p":6},{"n":"13","q":36,"lv":[16,8,6],"level":"A2","src":"uebungen/U13.json?v=a18b865778","p":6},{"n":"14","q":36,"lv":[16,8,6],"level":"A2","src":"uebungen/U14.json?v=8c39957e2b","p":6},{"n":"15","q":36,"lv":[16,8,6],"level":"A2","src":"uebungen/U15.json?v=5db892263c","p":6},{"n":"16","q":36,"lv":[16,8,6],"level":"B1","src":"uebungen/U16.json?v=0c4f6aed46","p":6},{"n":"17","q":36,"lv":[16,8,6],"level":"A2","src":"uebungen/U17.json?v=d73db09d93","p":6},{"n":"18","q":38,"lv":[17,9,6],"level":"A2","src":"uebungen/U18.json?v=73c8e94f19","p":6},{"n":"19","q":37,"lv":[17,8,6],"level":"A2","src":"uebungen/U19.json?v=f06464f1fb","p":6},{"n":"20","q":38,"lv":[17,9,6],"level":"A2","src":"uebungen/U20.json?v=e06f9a3175","p":6},{"n":"21","q":37,"lv":[17,8,6],"level":"B1","src":"uebungen/U21.json?v=02e03a92fb","p":6},{"n":"22","q":36,"lv":[16,8,6],"level":"A2","src":"uebungen/U22.json?v=952598f045","p":6},{"n":"23","q":36,"lv":[16,8,6],"level":"A2","src":"uebungen/U23.json?v=46f265fe1d","p":6},{"n":"24","q":36,"lv":[16,8,6],"level":"B1","src":"uebungen/U24.json?v=0e41fc6dab","p":6},{"n":"25","q":36,"lv":[16,8,6],"level":"A2","src":"uebungen/U25.json?v=14b1f1c65a","p":6},{"n":"26","q":37,"lv":[16,9,6],"level":"B1","src":"uebungen/U26.json?v=12a09fdffe","p":6},{"n":"27","q":37,"lv":[16,9,6],"level":"B1","src":"uebungen/U27.json?v=372646324c","p":6},{"n":"28","q":36,"lv":[16,8,6],"level":"B1","src":"uebungen/U28.json?v=ae99bfab85","p":6},{"n":"29","q":36,"lv":[16,8,6],"level":"B1","src":"uebungen/U29.json?v=194ee86e5b","p":6},{"n":"30","q":36,"lv":[16,8,6],"level":"B1","src":"uebungen/U30.json?v=aee16172dc","p":6},{"n":"31","q":36,"lv":[16,8,6],"level":"B1","src":"uebungen/U31.json?v=d3d74bc4e5","p":6},{"n":"32","q":36,"lv":[16,8,6],"level":"B2","src":"uebungen/U32.json?v=137b1bb42f","p":6},{"n":"33","q":36,"lv":[16,8,6],"level":"B2","src":"uebungen/U33.json?v=082c3b5482","p":6},{"n":"34","q":36,"lv":[16,8,6],"level":"B1","src":"uebungen/U34.json?v=5a9d2306fc","p":6},{"n":"35","q":37,"lv":[16,9,6],"level":"B2","src":"uebungen/U35.json?v=44a778f7d6","p":6},{"n":"36","q":36,"lv":[16,8,6],"level":"B2","src":"uebungen/U36.json?v=a1484954cf","p":6},{"n":"37","q":36,"lv":[16,8,6],"level":"B2","src":"uebungen/U37.json?v=347a786210","p":6}]</script>
+<script type="application/json" id="sx-wx">[{"n":"W1","q":16,"lv":[7,5,4],"level":"A1","range":[1,11],"ko":"통합 복습 1","de":"Wiederholung 1 · Lektion 01–11","w":1,"src":"uebungen/W1.json?v=3d3df737e0"},{"n":"W2","q":16,"lv":[7,5,4],"level":"A2","range":[12,20],"ko":"통합 복습 2","de":"Wiederholung 2 · Lektion 12–20","w":1,"src":"uebungen/W2.json?v=553871c5de"},{"n":"W3","q":16,"lv":[7,5,4],"level":"B1","range":[21,29],"ko":"통합 복습 3","de":"Wiederholung 3 · Lektion 21–29","w":1,"src":"uebungen/W3.json?v=6dbf119f13"},{"n":"W4","q":16,"lv":[7,5,4],"level":"B2","range":[30,37],"ko":"통합 복습 4","de":"Wiederholung 4 · Lektion 30–37","w":1,"src":"uebungen/W4.json?v=ca89762aa5"}]</script>
 
 <script>(function () {
   'use strict';
@@ -712,8 +731,11 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
   var ASSETS = JSON.parse($('sx-assets').textContent);
   var AX = JSON.parse($('sx-ax').textContent); /* the appendix: read like a lesson, not counted as one */
   var UX = JSON.parse($('sx-ux').textContent); /* exercises, one per lesson */
+  var WX = [];
+  try { WX = JSON.parse(($('sx-wx') || {}).textContent || '[]'); } catch (e) { WX = []; } /* review sets W1 … over several lessons */
   var UBY = {};
   UX.forEach(function (u) { UBY[u.n] = u; });
+  WX.forEach(function (u) { UBY[u.n] = u; });
   var N = META.length;
   var BY = {};
   META.forEach(function (m, i) { m.i = i; BY[m.n] = m; });
@@ -799,6 +821,17 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     });
     $('sx-ulist').innerHTML = ul;
     $('sx-uh').hidden = $('sx-usub').hidden = $('sx-ulist').hidden = !UX.length;
+    var wl = '';
+    WX.forEach(function (u) {
+      wl += '<li><a class="sx-row sx-row-ax" href="#/' + u.n + '" aria-label="' + esc(u.ko) + ', ' + u.q + '문제">' +
+        '<span class="sx-num">복습 ' + u.n.slice(1) + '</span>' +
+        '<span class="sx-tt"><span class="sx-ko">' + esc(u.ko) + '</span><span class="sx-de">' + esc(u.de) + '</span></span>' +
+        '<span class="sx-st"><span class="sx-st-lv">' + u.level + '</span><span class="sx-st-q">' + u.q + '문제</span></span></a></li>';
+    });
+    if ($('sx-wlist')) {
+      $('sx-wlist').innerHTML = wl;
+      $('sx-wh').hidden = $('sx-wsub').hidden = $('sx-wlist').hidden = !WX.length;
+    }
   })();
 
   function nextTarget() {
@@ -1019,6 +1052,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
   }
 
   function injectExEnd(n) {
+    if (UBY[n] && UBY[n].w) return injectWEnd(n);
     var m = BY[n], prev = UBY[META[m.i - 1] && META[m.i - 1].n], next = UBY[META[m.i + 1] && META[m.i + 1].n];
     var box = document.createElement('div');
     box.className = 'sx-end';
@@ -1029,6 +1063,25 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
       '<nav class="sx-end-nav" aria-label="연습 이동">' +
         (prev ? exLink(BY[prev.n], '이전 연습') : '<a href="#/uebungen/liste"><small>처음</small><span>연습 목차로 돌아가기</span></a>') +
         (next ? exLink(BY[next.n], '다음 연습').replace('<a ', '<a class="is-go" ') : '<a class="is-go" href="#/uebungen/liste"><small>마지막 연습</small><span>연습 목차로 돌아가기</span></a>') +
+      '</nav>';
+    var foot = main.querySelector('.brand-foot');
+    if (foot) main.insertBefore(box, foot); else main.appendChild(box);
+  }
+
+  function injectWEnd(n) {
+    var k = WX.indexOf(UBY[n]), prev = WX[k - 1], next = WX[k + 1];
+    var wl = function (u, label, cls) {
+      return '<a' + (cls ? ' class="' + cls + '"' : '') + ' href="#/' + u.n + '"><small>' + label + '</small><span>' + esc(u.ko) + '</span></a>';
+    };
+    var box = document.createElement('div');
+    box.className = 'sx-end';
+    box.setAttribute('data-no-print', '');
+    box.innerHTML =
+      '<div class="sx-end-ex"><div class="sx-end-t">틀린 문제는 해설에 적힌 과의 교재와 연습으로 돌아가요</div>' +
+      '<div class="sx-end-act"><a class="sx-btn is-ghost" href="#/uebungen/liste">연습 목차 보기</a></div></div>' +
+      '<nav class="sx-end-nav" aria-label="복습 이동">' +
+        (prev ? wl(prev, '이전 복습') : '<a href="#/uebungen/liste"><small>처음</small><span>연습 목차로 돌아가기</span></a>') +
+        (next ? wl(next, '다음 복습', 'is-go') : '<a class="is-go" href="#/uebungen/liste"><small>마지막 복습</small><span>연습 목차로 돌아가기</span></a>') +
       '</nav>';
     var foot = main.querySelector('.brand-foot');
     if (foot) main.insertBefore(box, foot); else main.appendChild(box);
@@ -1048,11 +1101,12 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
   }
 
   function openExercise(n) {
-    var m = BY[n], seq = ++openSeq;
+    var w = UBY[n] && UBY[n].w, m = w ? UBY[n] : BY[n], seq = ++openSeq;
     chrome(true);
+    ansFlush();
     curN = null; axOpen = false; curU = n; mounted = false;
-    document.title = 'Übung ' + n + ' · ' + m.ko;
-    $('sx-now-n').textContent = '연습 ' + n;
+    document.title = (w ? 'Wiederholung ' + n.slice(1) : 'Übung ' + n) + ' · ' + m.ko;
+    $('sx-now-n').textContent = w ? '복습 ' + n.slice(1) : '연습 ' + n;
     $('sx-now-t').textContent = m.ko;
     paintCounts();
     hideToast();
@@ -1070,6 +1124,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
       main.innerHTML = html;
       mounted = true;
       injectExEnd(n);
+      ansRestore(n);
       jump(0);
     }, function () {
       if (seq !== openSeq) return;
@@ -1084,6 +1139,114 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
   function nz(s) {
     return String(s).toLowerCase().replace(/[’‘`´]/g, "'").replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
       .replace(/^[\s.,!?;:]+|[\s.,!?;:]+$/g, '').replace(/\s+/g, ' ');
+  }
+  /* whole sentences (바꿔 쓰기): punctuation anywhere is ignored, like the checker's nzs() */
+  function nzs(s) {
+    return String(s).toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+      .replace(/[.,!?;:"„“”'’‘‚«»`´]/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+
+  /* ── saved exercise answers (this browser only) ──────────────────
+     A refresh, the in-app browser of Teams or KakaoTalk, or an app update reloads the page.
+     Answers are kept under their own key, so the reading progress (KEY) is never touched,
+     and each answer is filed under the question's fixed data-id, so new or reordered
+     questions never pick up an answer that belongs to another question. */
+  var AKEY = 'sda-lehrwerk-grammatik-ueb-v1';
+  function ansLoad() {
+    try {
+      var a = JSON.parse(localStorage.getItem(AKEY));
+      if (a && a.v === 1 && a.u && typeof a.u === 'object') return a;
+    } catch (e) { /* storage unavailable */ }
+    return { v: 1, u: {} };
+  }
+  var ans = ansLoad(), ansTimer = 0, restoring = false;
+  function ansFlush() {
+    if (!ansTimer) return;
+    clearTimeout(ansTimer); ansTimer = 0;
+    try { localStorage.setItem(AKEY, JSON.stringify(ans)); } catch (e) { /* storage full or blocked: answers stay on the page */ }
+  }
+  function ansSoon() { if (!ansTimer) ansTimer = setTimeout(function () { ansTimer = 1; ansFlush(); }, 350); }
+  function snap(it) {
+    var t = it.getAttribute('data-t') || 'mc', o = {}, any = false;
+    if (it.classList.contains('peek')) { o.p = 1; return o; }
+    if (t === 'mc') {
+      var b = it.querySelector('.qo.wrong') || (it.classList.contains('ok') && it.querySelector('.qo.right'));
+      if (b) { o.k = +b.getAttribute('data-k'); any = true; }
+    } else if (t === 'fill') {
+      o.v = Array.prototype.map.call(it.querySelectorAll('.qin'), function (i) { if (i.value) any = true; return i.value; });
+      if (it.querySelector('.qin.right, .qin.wrong')) o.c = 1;
+    } else if (t === 'order') {
+      var bd = it.querySelector('.qbuild');
+      o.b = Array.prototype.map.call(bd.children, function (c) { return +c.getAttribute('data-i'); });
+      any = o.b.length > 0;
+      if (/right|wrong/.test(bd.className)) o.c = 1;
+    } else if (t === 'tr') {
+      var ta = it.querySelector('.qtr');
+      o.v = ta.value; any = !!ta.value;
+      if (/right|wrong/.test(ta.className)) o.c = 1;
+    } else if (t === 'err') {
+      var w = it.querySelector('.qw.picked');
+      if (w) { o.w = +w.getAttribute('data-w'); any = true; }
+    }
+    return any ? o : null;
+  }
+  function persist(it) {
+    if (restoring || !curU || !it) return;
+    var id = it.getAttribute('data-id');
+    if (!id) return;
+    var rec = snap(it), bag = ans.u[curU] || {};
+    if (rec) bag[id] = rec; else delete bag[id];
+    if (Object.keys(bag).length) ans.u[curU] = bag; else delete ans.u[curU];
+    ansSoon();
+  }
+  function ansRestore(n) {
+    var bag = ans.u[n];
+    if (!bag) return;
+    restoring = true;
+    try {
+      main.querySelectorAll('.qi[data-id]').forEach(function (it) {
+        var o = bag[it.getAttribute('data-id')];
+        if (!o) return;
+        var t = it.getAttribute('data-t') || 'mc';
+        if (o.p) { if (t === 'mc' || t === 'err') return; checkItem(it, true); return; }
+        if (t === 'mc') {
+          var b = it.querySelector('.qo[data-k="' + o.k + '"]');
+          if (b) pickMc(it, b);
+        } else if (t === 'fill') {
+          it.querySelectorAll('.qin').forEach(function (i, k) { i.value = (o.v && o.v[k]) || ''; });
+          if (o.c) checkItem(it, false);
+        } else if (t === 'order') {
+          var pool = it.querySelector('.qpool'), bd = it.querySelector('.qbuild');
+          if (it._pool == null) it._pool = pool.innerHTML;
+          (o.b || []).forEach(function (i) { var c = pool.querySelector('.qc[data-i="' + i + '"]'); if (c) bd.appendChild(c); });
+          if (o.c) checkItem(it, false);
+        } else if (t === 'tr') {
+          it.querySelector('.qtr').value = o.v || '';
+          if (o.c) checkItem(it, false);
+        } else if (t === 'err') {
+          var w = it.querySelector('.qw[data-w="' + o.w + '"]');
+          if (w) pickErr(it, w);
+        }
+      });
+    } catch (e) { /* a saved answer that no longer fits is skipped */ }
+    restoring = false;
+    scoreUpdate();
+  }
+  /* another tab saved answers: take them over before this tab writes */
+  window.addEventListener('storage', function (e) { if (e.key === AKEY) ans = ansLoad(); });
+  window.addEventListener('pagehide', ansFlush);
+  document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') ansFlush(); });
+
+  function pickErr(it, w) {
+    if (it.classList.contains('done')) return;
+    var x = it.getAttribute('data-x'), good = w.getAttribute('data-w') === x;
+    it.classList.add('done');
+    if (good) it.classList.add('ok');
+    w.classList.add('picked', good ? 'right' : 'wrong');
+    var c = it.querySelector('.qw[data-w="' + x + '"]'); if (c) c.classList.add('right');
+    showSol(it);
+    scoreUpdate();
+    persist(it);
   }
   function scoreUpdate() {
     var box = main.querySelector('.qscore');
@@ -1101,11 +1264,16 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
       it.querySelectorAll('.qo').forEach(function (x) { x.className = 'qo'; });
     } else if (t === 'fill') {
       it.querySelectorAll('.qin').forEach(function (i) { i.value = ''; i.readOnly = false; i.className = 'qin'; });
+    } else if (t === 'tr') {
+      var ta = it.querySelector('.qtr'); ta.value = ''; ta.readOnly = false; ta.className = 'qtr';
+    } else if (t === 'err') {
+      it.querySelectorAll('.qw').forEach(function (x) { x.className = 'qw'; });
     } else {
       var pool = it.querySelector('.qpool'), bd = it.querySelector('.qbuild');
       if (it._pool != null) pool.innerHTML = it._pool;
       bd.innerHTML = ''; bd.className = 'qbuild';
     }
+    persist(it);
   }
   function checkItem(it, peek) {
     var t = it.getAttribute('data-t'), A = JSON.parse(it.getAttribute('data-a')), good = false;
@@ -1119,6 +1287,15 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
         if (!hit) good = false;
       });
       if (!peek && good) ins.forEach(function (i) { i.readOnly = true; });
+    } else if (t === 'tr') {
+      var ta = it.querySelector('.qtr');
+      if (peek) { ta.value = A[0]; ta.className = 'qtr'; ta.readOnly = true; }
+      else {
+        var v2 = nzs(ta.value);
+        good = !!v2 && A.some(function (x) { return nzs(x) === v2; });
+        ta.className = 'qtr ' + (v2 ? (good ? 'right' : 'wrong') : '');
+        if (good) ta.readOnly = true;
+      }
     } else {
       var bd = it.querySelector('.qbuild');
       if (peek) {
@@ -1135,6 +1312,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     if (peek) { it.classList.add('done', 'peek'); showSol(it); }
     else if (good) { it.classList.add('done', 'ok'); showSol(it); }
     scoreUpdate();
+    persist(it);
   }
   main.addEventListener('click', function (e) {
     var c = e.target.closest('.qc');
@@ -1150,13 +1328,18 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
         Array.prototype.some.call(pool.children, function (x) { if (+x.getAttribute('data-i') > i) { before = x; return true; } return false; });
         pool.insertBefore(c, before);
       }
+      persist(it);
       return;
     }
+    var wbt = e.target.closest('.qw');
+    if (wbt) { var wit = wbt.closest('.qi'); if (wit) pickErr(wit, wbt); return; }
     var b = e.target.closest('.qb');
     if (!b) return;
     var q = b.getAttribute('data-q');
     if (q === 'all') {
+      if (main.querySelector('.qi.done, .qi .qin.right, .qi .qin.wrong') && !window.confirm('이 연습에서 푼 답을 모두 지우고 처음부터 풀까요?')) return;
       main.querySelectorAll('.qi').forEach(resetItem);
+      if (curU) { delete ans.u[curU]; ansSoon(); }
       scoreUpdate();
       jump(0);
       return;
@@ -1170,7 +1353,14 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
       var p2 = it2.querySelector('.qpool'), b2 = it2.querySelector('.qbuild');
       if (it2._pool != null) p2.innerHTML = it2._pool;
       b2.innerHTML = ''; b2.className = 'qbuild';
+      persist(it2);
     }
+  });
+  main.addEventListener('input', function (e) {
+    var el = e.target;
+    if (!el.classList || !(el.classList.contains('qin') || el.classList.contains('qtr'))) return;
+    var it = el.closest('.qi');
+    if (it && !it.classList.contains('done')) persist(it);
   });
   main.addEventListener('keydown', function (e) {
     if (e.key !== 'Enter' || !e.target.classList || !e.target.classList.contains('qin')) return;
@@ -1257,6 +1447,7 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
 
   function leaveLesson() {
     if (curN || axOpen) save();
+    ansFlush();
     openSeq++;
     curN = null; curU = null; axOpen = false; mounted = false;
     hideToast();
@@ -1285,11 +1476,15 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
   document.addEventListener('click', function (e) {
     var b = e.target.closest('.qo'); if (!b) return;
     var it = b.closest('.qi'); if (!it) return;
+    pickMc(it, b);
+  });
+  function pickMc(it, b) {
     if (it.classList.contains('done')) {
       it.classList.remove('done', 'ok');
       scoreUpdate();
       it.querySelectorAll('.qo').forEach(function (x) { x.className = 'qo'; });
       var ex0 = it.querySelector('.qe'); if (ex0) ex0.style.display = 'none';
+      persist(it);
       return;
     }
     it.classList.add('done');
@@ -1299,7 +1494,8 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     it.querySelectorAll('.qo[data-c="1"]').forEach(function (x) { x.classList.add('right'); });
     it.querySelectorAll('.qo:not(.right):not(.wrong)').forEach(function (x) { x.classList.add('dim'); });
     var ex = it.querySelector('.qe'); if (ex) ex.style.display = 'block';
-  });
+    persist(it);
+  }
 
   /* text size and print */
   function setFs(v) {
@@ -1335,6 +1531,8 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
     if (m && BY[m[1]]) return { v: 'lesson', n: m[1], key: 'L' + m[1] };
     var u = /^#\/U(\d{2})$/.exec(h);
     if (u && UBY[u[1]]) return { v: 'lesson', u: true, n: u[1], key: 'U' + u[1] };
+    var wv = /^#\/(W\d)$/.exec(h);
+    if (wv && UBY[wv[1]]) return { v: 'lesson', u: true, n: wv[1], key: 'U' + wv[1] };
     if (h === '#/anhang') return { v: 'lesson', ax: true, key: 'AX' };
     if (h === '#/inhalt') return { v: 'toc', key: 'toc' };
     if (h === '#/uebungen') return { v: 'ucover', key: 'ucover' };
@@ -1476,12 +1674,14 @@ html[data-theme="dark"] .ax-src:hover{color:#14181E}
       if (reloading) return;
       reloading = true;
       save();
+      ansFlush();
       location.reload();
     });
     function offerUpdate(reg) {
       var box = $('sx-update');
       box.hidden = false;
       $('sx-update-go').onclick = function () {
+        save(); ansFlush();
         if (reg.waiting) reg.waiting.postMessage('skip-waiting');
         else location.reload();
       };

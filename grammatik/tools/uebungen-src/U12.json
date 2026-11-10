@@ -421,5 +421,58 @@
       "ok": "werden은 본동사(되다), 12과 E절의 sein 동사 목록",
       "e": "schlafen은 자는 상태가 계속되는 것이라서 haben이에요.<br>einschlafen·aufwachen·werden은 상태가 바뀌어서 sein이에요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "현재완료로 바꿔 쓰세요.",
+      "s": "Ich kaufe ein Fahrrad.",
+      "a": [
+        "Ich habe ein Fahrrad gekauft."
+      ],
+      "e": "kaufen은 haben과 함께 쓰고, 과거분사는 gekauft예요."
+    },
+    {
+      "t": "tr",
+      "q": "현재완료로 바꿔 쓰세요.",
+      "s": "Wir fahren nach Incheon.",
+      "a": [
+        "Wir sind nach Incheon gefahren."
+      ],
+      "e": "장소가 바뀌는 동사 fahren은 sein과 함께 써요. 과거분사는 gefahren이에요."
+    },
+    {
+      "t": "tr",
+      "q": "현재완료로 바꿔 쓰세요.",
+      "s": "Er steht um sechs Uhr auf.",
+      "a": [
+        "Er ist um sechs Uhr aufgestanden."
+      ],
+      "e": "aufstehen은 상태가 바뀌는 동사라 sein과 써요. 분리동사는 ge-가 접두어와 동사 사이에 들어가요."
+    },
+    {
+      "t": "err",
+      "q": "Ich habe nach Berlin geflogen.",
+      "x": 1,
+      "r": "Ich bin nach Berlin geflogen.",
+      "ko": "나는 베를린으로 비행기를 타고 갔어요.",
+      "e": "fliegen은 장소가 바뀌는 동사라 sein과 써요."
+    },
+    {
+      "t": "err",
+      "q": "Wir haben das Spiel gesieht.",
+      "x": 4,
+      "r": "Wir haben das Spiel gesehen.",
+      "ko": "우리는 그 경기를 봤어요.",
+      "e": "sehen은 불규칙 동사예요. 과거분사는 gesehen이에요."
+    },
+    {
+      "t": "err",
+      "q": "Hast du das Paket gebekommen?",
+      "x": 4,
+      "r": "Hast du das Paket bekommen?",
+      "ko": "소포 받았어?",
+      "e": "be-로 시작하는 비분리동사는 과거분사에 ge-를 붙이지 않아요."
+    }
   ]
 }

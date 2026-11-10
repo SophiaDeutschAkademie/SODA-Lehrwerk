@@ -400,5 +400,60 @@
       "a": 0,
       "e": "habe + 과거분사는 지난 일이에요 → hat … informiert. 앞으로의 일이었다면 werde … informieren이에요.<br>간접화법의 ihn은 말한 트레이너 자신이라 원래 말에서는 mich예요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "간접화법으로 바꿔 쓰세요.",
+      "s": "Er sagt: „Ich bin erkältet.“",
+      "a": [
+        "Er sagt, er sei erkältet.",
+        "Er sagt, dass er erkältet sei."
+      ],
+      "e": "sein의 접속법 I은 sei예요. 인칭도 er로 바뀌어요."
+    },
+    {
+      "t": "tr",
+      "q": "간접화법으로 바꿔 쓰세요.",
+      "s": "Sie sagt: „Ich habe heute Dienst.“",
+      "a": [
+        "Sie sagt, sie habe heute Dienst.",
+        "Sie sagt, dass sie heute Dienst habe."
+      ],
+      "e": "haben의 접속법 I은 er·sie에서 habe예요."
+    },
+    {
+      "t": "tr",
+      "q": "간접화법으로 바꿔 쓰세요.",
+      "s": "Der Arzt fragt den Patienten: „Haben Sie Schmerzen?“",
+      "a": [
+        "Der Arzt fragt den Patienten, ob er Schmerzen habe."
+      ],
+      "e": "Ja/Nein 질문은 ob으로 전하고, Sie는 er로 바뀌어요."
+    },
+    {
+      "t": "err",
+      "q": "Sie sagt, sie seie krank.",
+      "x": 3,
+      "r": "Sie sagt, sie sei krank.",
+      "ko": "그녀는 아프다고 해요.",
+      "e": "sein의 접속법 I은 sei예요. seie라는 형태는 없어요."
+    },
+    {
+      "t": "err",
+      "q": "Meine Eltern meinen, sie haben recht.",
+      "x": 4,
+      "r": "Meine Eltern meinen, sie hätten recht.",
+      "ko": "부모님은 자기들이 옳다고 해요.",
+      "e": "접속법 I haben이 직설법과 같아서 접속법 II hätten으로 바꿔요."
+    },
+    {
+      "t": "err",
+      "q": "Sie sagte, sie wird morgen anrufen.",
+      "x": 3,
+      "r": "Sie sagte, sie werde morgen anrufen.",
+      "ko": "그녀는 내일 전화하겠다고 했어요.",
+      "e": "간접화법에서 werden의 접속법 I은 werde예요."
+    }
   ]
 }

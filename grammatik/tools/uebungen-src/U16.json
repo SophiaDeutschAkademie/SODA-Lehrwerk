@@ -393,5 +393,61 @@
       ],
       "e": "der Name는 n-변화처럼 -n이 붙으면서 2격에는 -s까지 붙어요 — des Namens · meines Namens."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "von + 3격을 2격으로 바꿔 쓰세요.",
+      "s": "Das ist das Fahrrad von meinem Onkel.",
+      "a": [
+        "Das ist das Fahrrad meines Onkels."
+      ],
+      "e": "남성 2격은 관사가 -es, 명사에 -s가 붙어요. meines Onkels."
+    },
+    {
+      "t": "tr",
+      "q": "von + 3격을 2격으로 바꿔 쓰세요.",
+      "s": "Die Farbe von der Jacke ist hell.",
+      "a": [
+        "Die Farbe der Jacke ist hell."
+      ],
+      "e": "여성 2격의 정관사는 der예요. 명사는 바뀌지 않아요."
+    },
+    {
+      "t": "tr",
+      "q": "wegen을 써서 한 문장으로 바꿔 쓰세요.",
+      "s": "Der Flug fällt aus. Der Grund ist der Sturm.",
+      "a": [
+        "Der Flug fällt wegen des Sturms aus.",
+        "Der Flug fällt wegen des Sturmes aus.",
+        "Wegen des Sturms fällt der Flug aus.",
+        "Wegen des Sturmes fällt der Flug aus."
+      ],
+      "e": "wegen은 2격 전치사예요. der Sturm → des Sturms."
+    },
+    {
+      "t": "err",
+      "q": "Ich spreche mit dem Student.",
+      "x": 4,
+      "r": "Ich spreche mit dem Studenten.",
+      "ko": "나는 그 대학생과 이야기해요.",
+      "e": "Student는 n-변화 명사라 1격 말고는 모두 -en이 붙어요."
+    },
+    {
+      "t": "err",
+      "q": "Das ist die Tasche meiner Bruders.",
+      "x": 4,
+      "r": "Das ist die Tasche meines Bruders.",
+      "ko": "이건 우리 형의 가방이에요.",
+      "e": "Bruder는 남성이라 2격은 meines Bruders예요."
+    },
+    {
+      "t": "err",
+      "q": "Wir fragen den Kunde.",
+      "x": 3,
+      "r": "Wir fragen den Kunden.",
+      "ko": "우리는 그 고객에게 물어봐요.",
+      "e": "Kunde는 n-변화 명사라 4격에서 -n이 붙어요."
+    }
   ]
 }

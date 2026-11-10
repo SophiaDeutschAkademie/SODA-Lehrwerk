@@ -415,5 +415,58 @@
       ],
       "e": "sein + zu 부정형은 '~될 수 있다', scheinen + zu 부정형은 '~인 것 같다'예요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "zu 부정형으로 바꿔 쓰세요.",
+      "s": "Ich habe vor: Ich lerne Spanisch.",
+      "a": [
+        "Ich habe vor, Spanisch zu lernen."
+      ],
+      "e": "vorhaben 뒤에 zu 부정형이 와요. zu + 원형은 끝에 놓여요."
+    },
+    {
+      "t": "tr",
+      "q": "um … zu로 바꿔 쓰세요.",
+      "s": "Er spart Geld, damit er ein Auto kaufen kann.",
+      "a": [
+        "Er spart Geld, um ein Auto zu kaufen."
+      ],
+      "e": "두 문장의 주어가 같으면 damit 대신 um … zu를 써요."
+    },
+    {
+      "t": "tr",
+      "q": "ohne … zu로 한 문장으로 바꿔 쓰세요.",
+      "s": "Er fuhr los. Er tankte nicht.",
+      "a": [
+        "Er fuhr los, ohne zu tanken."
+      ],
+      "e": "ohne … zu에 이미 부정의 뜻이 있어서 nicht는 빠져요."
+    },
+    {
+      "t": "err",
+      "q": "Ich versuche, mehr Wasser zu trinke.",
+      "x": 5,
+      "r": "Ich versuche, mehr Wasser zu trinken.",
+      "ko": "나는 물을 더 많이 마시려고 해요.",
+      "e": "zu 뒤에는 원형이 와요. trinken."
+    },
+    {
+      "t": "err",
+      "q": "Sie lasst ihre Haare schneiden.",
+      "x": 1,
+      "r": "Sie lässt ihre Haare schneiden.",
+      "ko": "그녀는 머리를 잘라요(미용실에서).",
+      "e": "lassen은 er·sie에서 a → ä로 바뀌어요."
+    },
+    {
+      "t": "err",
+      "q": "Ich habe vergessen, meine Mutter anzurufe.",
+      "x": 5,
+      "r": "Ich habe vergessen, meine Mutter anzurufen.",
+      "ko": "엄마에게 전화하는 걸 잊었어요.",
+      "e": "분리동사는 접두어와 동사 사이에 zu가 들어가고 동사는 원형이에요. anzurufen."
+    }
   ]
 }

@@ -457,5 +457,59 @@
       "e": "'어떻게'에 대한 대답은 방법이에요 — dadurch, dass.<br>damit은 목적, sodass는 결과예요. dass 뒤에서는 동사가 끝이에요.",
       "ok": "sodass는 20과 D에서 배움"
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "weil로 두 문장을 이어 쓰세요.",
+      "s": "Ich esse heute nichts. Ich habe Bauchschmerzen.",
+      "a": [
+        "Ich esse heute nichts, weil ich Bauchschmerzen habe.",
+        "Weil ich Bauchschmerzen habe, esse ich heute nichts."
+      ],
+      "e": "weil 문장에서는 동사가 맨 끝으로 가요."
+    },
+    {
+      "t": "tr",
+      "q": "dass 문장으로 바꿔 쓰세요.",
+      "s": "Ich glaube: Er kommt heute.",
+      "a": [
+        "Ich glaube, dass er heute kommt."
+      ],
+      "e": "dass 문장에서 동사 kommt는 맨 끝이에요."
+    },
+    {
+      "t": "tr",
+      "q": "간접의문문으로 바꿔 쓰세요.",
+      "s": "Wo ist die Apotheke? Kannst du mir das sagen?",
+      "a": [
+        "Kannst du mir sagen, wo die Apotheke ist?"
+      ],
+      "e": "간접의문문은 의문사로 시작하고 동사는 맨 끝이에요."
+    },
+    {
+      "t": "err",
+      "q": "Ich bin nicht sicher, wenn er heute kommt.",
+      "x": 4,
+      "r": "Ich bin nicht sicher, ob er heute kommt.",
+      "ko": "그가 오늘 오는지 확실하지 않아요.",
+      "e": "'~인지 아닌지'는 ob이에요. wenn은 조건이나 반복되는 때예요."
+    },
+    {
+      "t": "err",
+      "q": "Mia schreibt, das sie später kommt.",
+      "x": 2,
+      "r": "Mia schreibt, dass sie später kommt.",
+      "ko": "미아는 늦게 온다고 써요.",
+      "e": "접속사는 ss로 쓴 dass예요. das는 관사나 대명사예요."
+    },
+    {
+      "t": "err",
+      "q": "Weil ich müde bin, schlafe ich nicht.",
+      "x": 0,
+      "r": "Obwohl ich müde bin, schlafe ich nicht.",
+      "ko": "피곤한데도 나는 자지 않아요.",
+      "e": "뜻이 반대로 이어지면 obwohl이에요. weil은 이유예요."
+    }
   ]
 }

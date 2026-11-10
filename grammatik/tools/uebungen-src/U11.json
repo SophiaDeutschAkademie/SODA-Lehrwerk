@@ -424,5 +424,59 @@
       ],
       "e": "현재형에서는 mit이 떨어져 끝으로 가요 — Kommt ihr … mit?<br>화법조동사와 함께면 원형이 붙어서 끝에 와요 — können … mitkommen."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "können을 넣어 바꿔 쓰세요.",
+      "s": "Er holt seinen Freund ab.",
+      "a": [
+        "Er kann seinen Freund abholen."
+      ],
+      "e": "화법조동사가 있으면 분리동사는 원형 그대로 붙여서 끝에 와요."
+    },
+    {
+      "t": "tr",
+      "q": "Ja/Nein 의문문으로 바꿔 쓰세요.",
+      "s": "Du kaufst heute ein.",
+      "a": [
+        "Kaufst du heute ein?"
+      ],
+      "e": "동사 kaufst가 맨 앞으로 가고 분리 접두어 ein은 끝에 남아요."
+    },
+    {
+      "t": "tr",
+      "q": "du에게 하는 명령문으로 바꿔 쓰세요.",
+      "s": "Du machst das Fenster zu.",
+      "a": [
+        "Mach das Fenster zu!",
+        "Mache das Fenster zu!"
+      ],
+      "e": "명령문에서도 분리 접두어 zu는 문장 끝으로 가요."
+    },
+    {
+      "t": "err",
+      "q": "Er will heute einkauft.",
+      "x": 3,
+      "r": "Er will heute einkaufen.",
+      "ko": "그는 오늘 장을 보려고 해요.",
+      "e": "화법조동사 뒤에는 원형이 와요. einkaufen."
+    },
+    {
+      "t": "err",
+      "q": "Sie fangt um neun Uhr an.",
+      "x": 1,
+      "r": "Sie fängt um neun Uhr an.",
+      "ko": "그녀는 9시에 시작해요.",
+      "e": "anfangen의 fangen은 er·sie에서 a → ä로 바뀌어요."
+    },
+    {
+      "t": "err",
+      "q": "Ladest du Mia ein?",
+      "x": 0,
+      "r": "Lädst du Mia ein?",
+      "ko": "미아를 초대할 거야?",
+      "e": "einladen의 laden은 du·er에서 a → ä로 바뀌어요. du lädst."
+    }
   ]
 }

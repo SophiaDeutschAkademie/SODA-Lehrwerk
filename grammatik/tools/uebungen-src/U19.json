@@ -461,5 +461,58 @@
       "a": 0,
       "e": "aber는 자리를 차지하지 않아서 도치하지 않아요 — aber ich hatte keine Zeit.<br>deshalb 뒤의 도치는 맞아요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "deshalb로 두 문장을 이어 쓰세요.",
+      "s": "Der Laden ist zu. Wir kaufen morgen ein.",
+      "a": [
+        "Der Laden ist zu, deshalb kaufen wir morgen ein."
+      ],
+      "e": "deshalb는 첫 자리를 차지하는 접속부사라 바로 뒤에 동사가 와요."
+    },
+    {
+      "t": "tr",
+      "q": "denn으로 두 문장을 이어 쓰세요.",
+      "s": "Ich nehme ein Taxi. Ich bin spät dran.",
+      "a": [
+        "Ich nehme ein Taxi, denn ich bin spät dran."
+      ],
+      "e": "denn은 등위접속사라 어순을 바꾸지 않아요."
+    },
+    {
+      "t": "tr",
+      "q": "trotzdem으로 두 문장을 이어 쓰세요.",
+      "s": "Die Wohnung ist klein. Wir mieten sie.",
+      "a": [
+        "Die Wohnung ist klein, trotzdem mieten wir sie."
+      ],
+      "e": "trotzdem은 접속부사라 첫 자리를 차지해요. 그 뒤에 동사, 주어 순서예요."
+    },
+    {
+      "t": "err",
+      "q": "Ich mag Tee, sondern ich trinke keinen Kaffee.",
+      "x": 3,
+      "r": "Ich mag Tee, aber ich trinke keinen Kaffee.",
+      "ko": "나는 차는 좋아하지만 커피는 안 마셔요.",
+      "e": "sondern은 앞 문장이 부정일 때만 써요. 여기서는 aber예요."
+    },
+    {
+      "t": "err",
+      "q": "Sie spricht nicht Englisch, aber Deutsch.",
+      "x": 4,
+      "r": "Sie spricht nicht Englisch, sondern Deutsch.",
+      "ko": "그녀는 영어가 아니라 독일어를 해요.",
+      "e": "nicht A, sondern B: 'A가 아니라 B'예요."
+    },
+    {
+      "t": "err",
+      "q": "Weder Mia oder Ben hat Zeit.",
+      "x": 2,
+      "r": "Weder Mia noch Ben hat Zeit.",
+      "ko": "미아도 벤도 시간이 없어요.",
+      "e": "weder는 늘 noch와 짝이에요."
+    }
   ]
 }

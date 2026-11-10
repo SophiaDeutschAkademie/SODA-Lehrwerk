@@ -394,5 +394,58 @@
       ],
       "e": "대답 dem Opa가 3격이라서 wem, den Trainer가 4격이라서 wen이에요.<br>의문사 바로 뒤에 동사가 오고, geben·treffen은 du에서 e → i로 바뀌어요 — gibst · triffst."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "heute를 문장 맨 앞에 놓아 바꿔 쓰세요.",
+      "s": "Wir spielen heute Tennis.",
+      "a": [
+        "Heute spielen wir Tennis."
+      ],
+      "e": "동사는 늘 두 번째 자리예요. heute가 첫 자리를 차지하면 주어는 동사 뒤로 가요."
+    },
+    {
+      "t": "tr",
+      "q": "Ja/Nein 의문문으로 바꿔 쓰세요.",
+      "s": "Sie arbeitet in Busan.",
+      "a": [
+        "Arbeitet sie in Busan?"
+      ],
+      "e": "Ja/Nein 의문문은 동사가 맨 앞이에요."
+    },
+    {
+      "t": "tr",
+      "q": "굵은 글씨 부분을 묻는 W-의문문으로 바꿔 쓰세요.",
+      "s": "Das Konzert endet **spät**.",
+      "a": [
+        "Wann endet das Konzert?"
+      ],
+      "e": "시간을 묻는 의문사는 wann이에요. 의문사 바로 뒤에 동사가 와요."
+    },
+    {
+      "t": "err",
+      "q": "Wo wohnst ihr jetzt?",
+      "x": 1,
+      "r": "Wo wohnt ihr jetzt?",
+      "ko": "너희는 지금 어디 살아?",
+      "e": "ihr에 붙는 어미는 -t예요."
+    },
+    {
+      "t": "err",
+      "q": "Was trinkst ihr am Morgen?",
+      "x": 1,
+      "r": "Was trinkt ihr am Morgen?",
+      "ko": "너희는 아침에 뭘 마셔?",
+      "e": "의문사 뒤에 동사가 와요. ihr의 어미는 -t라서 trinkt예요."
+    },
+    {
+      "t": "err",
+      "q": "Wohin arbeitet Lea jetzt?",
+      "x": 0,
+      "r": "Wo arbeitet Lea jetzt?",
+      "ko": "레아는 지금 어디서 일해요?",
+      "e": "있는 곳은 wo, 가는 곳은 wohin으로 물어요. arbeiten은 있는 곳이에요."
+    }
   ]
 }

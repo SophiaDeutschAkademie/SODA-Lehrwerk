@@ -394,5 +394,58 @@
       "a": 0,
       "e": "morgen만 부정하니까 nicht를 morgen 바로 앞에 놓고 sondern으로 바로잡아요.<br>소유관사가 붙은 meine Oma는 kein으로 부정하지 않아요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "kein으로 부정하는 문장으로 바꿔 쓰세요.",
+      "s": "Ich habe einen Regenschirm.",
+      "a": [
+        "Ich habe keinen Regenschirm."
+      ],
+      "e": "부정관사가 붙은 명사는 kein으로 부정해요. 남성 4격 → keinen."
+    },
+    {
+      "t": "tr",
+      "q": "nicht로 부정하는 문장으로 바꿔 쓰세요.",
+      "s": "Der Laden ist heute offen.",
+      "a": [
+        "Der Laden ist heute nicht offen."
+      ],
+      "e": "형용사를 부정할 때 nicht는 형용사 바로 앞에 와요."
+    },
+    {
+      "t": "tr",
+      "q": "nicht로 부정하는 문장으로 바꿔 쓰세요.",
+      "s": "Wir kaufen das Auto.",
+      "a": [
+        "Wir kaufen das Auto nicht."
+      ],
+      "e": "정관사가 붙은 명사는 kein이 아니라 nicht로 부정해요. 문장 전체를 부정하는 nicht는 끝으로 가요."
+    },
+    {
+      "t": "err",
+      "q": "Wir haben heute nicht Geld.",
+      "x": 3,
+      "r": "Wir haben heute kein Geld.",
+      "ko": "우리는 오늘 돈이 없어요.",
+      "e": "관사 없는 명사는 kein으로 부정해요. Geld는 중성이라 kein이에요."
+    },
+    {
+      "t": "err",
+      "q": "Sie hat keine Bruder.",
+      "x": 2,
+      "r": "Sie hat keinen Bruder.",
+      "ko": "그녀는 남자 형제가 없어요.",
+      "e": "Bruder는 남성 4격이라 keinen이에요."
+    },
+    {
+      "t": "err",
+      "q": "Trinkst du nicht gern Tee? – Ja, sehr gern.",
+      "x": 6,
+      "r": "Trinkst du nicht gern Tee? – Doch, sehr gern.",
+      "ko": "차 안 좋아해? – 아니, 아주 좋아해.",
+      "e": "부정 의문문에 긍정으로 대답할 때는 Doch예요."
+    }
   ]
 }

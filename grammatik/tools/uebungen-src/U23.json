@@ -388,5 +388,58 @@
       ],
       "e": "welchen(남성 4격) 뒤 → -en, den(남성 4격) 뒤 → -en이에요.<br>rosa는 어미가 없어요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "형용사를 명사 앞에 넣어 한 문장으로 바꿔 쓰세요.",
+      "s": "Der Tee ist grün. Ich trinke den Tee.",
+      "a": [
+        "Ich trinke den grünen Tee."
+      ],
+      "e": "정관사 뒤 남성 4격은 -en이에요."
+    },
+    {
+      "t": "tr",
+      "q": "형용사를 명사 앞에 넣어 한 문장으로 바꿔 쓰세요.",
+      "s": "Die Brücke ist alt. Wir gehen über die Brücke.",
+      "a": [
+        "Wir gehen über die alte Brücke."
+      ],
+      "e": "정관사 뒤 여성 4격은 -e예요."
+    },
+    {
+      "t": "tr",
+      "q": "형용사를 명사 앞에 넣어 한 문장으로 바꿔 쓰세요.",
+      "s": "Der Gast ist neu. Wir geben dem Gast den Schlüssel.",
+      "a": [
+        "Wir geben dem neuen Gast den Schlüssel."
+      ],
+      "e": "3격은 성에 상관없이 -en이에요."
+    },
+    {
+      "t": "err",
+      "q": "Ich kaufe den blaue Schal.",
+      "x": 3,
+      "r": "Ich kaufe den blauen Schal.",
+      "ko": "나는 그 파란 목도리를 사요.",
+      "e": "남성 4격(den) 뒤에는 -en이에요."
+    },
+    {
+      "t": "err",
+      "q": "Das neuen Sofa ist bequem.",
+      "x": 1,
+      "r": "Das neue Sofa ist bequem.",
+      "ko": "그 새 소파는 편해요.",
+      "e": "중성 1격(das) 뒤에는 -e예요."
+    },
+    {
+      "t": "err",
+      "q": "Wir sprechen mit der nette Nachbarin.",
+      "x": 4,
+      "r": "Wir sprechen mit der netten Nachbarin.",
+      "ko": "우리는 그 친절한 이웃과 이야기해요.",
+      "e": "3격 뒤 약변화 어미는 늘 -en이에요."
+    }
   ]
 }

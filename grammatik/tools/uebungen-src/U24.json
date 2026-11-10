@@ -391,5 +391,58 @@
       ],
       "e": "nichts 뒤는 강변화 -es → nichts Wichtiges.<br>alles 뒤는 약변화 -e → Alles Gute."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "정관사를 부정관사로 바꾸고 형용사 어미도 맞춰 쓰세요.",
+      "s": "Das neue Auto steht vor der Tür.",
+      "a": [
+        "Ein neues Auto steht vor der Tür."
+      ],
+      "e": "ein은 성을 보여 주지 않아서 형용사가 -es로 중성을 보여 줘요."
+    },
+    {
+      "t": "tr",
+      "q": "관사를 빼고 바꿔 쓰세요.",
+      "s": "Wir kochen mit dem frischen Gemüse.",
+      "a": [
+        "Wir kochen mit frischem Gemüse."
+      ],
+      "e": "관사가 없으면 형용사가 관사 역할을 해요. 중성 3격 → -em."
+    },
+    {
+      "t": "tr",
+      "q": "형용사를 명사로 바꿔 한 문장으로 쓰세요.",
+      "s": "Der Mann ist fremd. Ich frage den Mann.",
+      "a": [
+        "Ich frage den Fremden."
+      ],
+      "e": "형용사를 명사로 쓰면 대문자로 쓰고 형용사 어미를 그대로 붙여요. 남성 4격 → den Fremden."
+    },
+    {
+      "t": "err",
+      "q": "Ich habe einen neue Job.",
+      "x": 3,
+      "r": "Ich habe einen neuen Job.",
+      "ko": "나는 새 일자리를 구했어요.",
+      "e": "einen 뒤 남성 4격은 -en이에요."
+    },
+    {
+      "t": "err",
+      "q": "Wir trinken gern heißer Kakao.",
+      "x": 3,
+      "r": "Wir trinken gern heißen Kakao.",
+      "ko": "우리는 뜨거운 코코아를 즐겨 마셔요.",
+      "e": "관사가 없는 남성 4격은 강변화 -en이에요."
+    },
+    {
+      "t": "err",
+      "q": "Mein alter Auto ist kaputt.",
+      "x": 1,
+      "r": "Mein altes Auto ist kaputt.",
+      "ko": "내 오래된 차가 고장 났어요.",
+      "e": "mein은 중성 1격에서 끝이 없어요. 그래서 형용사가 -es를 받아요."
+    }
   ]
 }

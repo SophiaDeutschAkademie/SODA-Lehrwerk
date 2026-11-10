@@ -390,5 +390,58 @@
       "ok": "Ja, das …의 쉼표 뒤 das는 관계대명사가 아님",
       "e": "주인 Lisa가 여성이라 ihr-예요.<br>명사 없이 남성 der Rucksack을 가리키니까 1격 끝 -er을 붙여 ihrer예요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "주어를 wir로 바꾸고 소유관사도 맞춰 쓰세요.",
+      "s": "Ich besuche meine Oma.",
+      "a": [
+        "Wir besuchen unsere Oma."
+      ],
+      "e": "wir의 소유관사는 unser예요. Oma가 여성 4격이라 unsere예요."
+    },
+    {
+      "t": "tr",
+      "q": "주어를 sie(그녀)로 바꾸고 소유관사도 맞춰 쓰세요.",
+      "s": "Er sucht seinen Schlüssel.",
+      "a": [
+        "Sie sucht ihren Schlüssel."
+      ],
+      "e": "그녀의 소유관사는 ihr예요. 끝은 Schlüssel(남성 4격)에 맞춰 -en이에요."
+    },
+    {
+      "t": "tr",
+      "q": "명사 없이 소유대명사로 바꿔 쓰세요.",
+      "s": "Das ist mein Stift.",
+      "a": [
+        "Das ist meiner."
+      ],
+      "e": "명사가 빠지면 소유대명사가 성을 보여 줘요. 남성 1격 → meiner."
+    },
+    {
+      "t": "err",
+      "q": "Wir besuchen unser Eltern.",
+      "x": 2,
+      "r": "Wir besuchen unsere Eltern.",
+      "ko": "우리는 부모님을 찾아뵈어요.",
+      "e": "복수 4격의 끝은 -e예요. unsere Eltern."
+    },
+    {
+      "t": "err",
+      "q": "Kennst du meinen Schwester?",
+      "x": 2,
+      "r": "Kennst du meine Schwester?",
+      "ko": "너 우리 언니 알아?",
+      "e": "Schwester는 여성이라 4격도 meine예요."
+    },
+    {
+      "t": "err",
+      "q": "Habt ihr euere Tickets?",
+      "x": 2,
+      "r": "Habt ihr eure Tickets?",
+      "ko": "너희 표 가지고 있어?",
+      "e": "euer에 끝이 붙으면 가운데 e가 빠져 eure가 돼요."
+    }
   ]
 }

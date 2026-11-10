@@ -408,5 +408,58 @@
       "e": "받는 사람 den Kindern(3격)이 먼저, 보여 주는 것 ein Foto(4격)가 뒤에 와요.<br>'할아버지의'는 2격이라서 꾸미는 명사 뒤에 des Großvaters로 붙어요(2음절 이상 → -s).",
       "ok": "2격 정관사 des와 명사 -es는 3과 정관사 변화표와 '명사 쪽 변화'에서 배움"
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "목적어를 der Tisch로 바꿔 쓰세요.",
+      "s": "Wir kaufen die Lampe.",
+      "a": [
+        "Wir kaufen den Tisch."
+      ],
+      "e": "kaufen의 목적어는 4격이에요. 남성 정관사의 4격은 den이에요."
+    },
+    {
+      "t": "tr",
+      "q": "정관사를 부정관사로 바꿔 쓰세요.",
+      "s": "Ich suche den Schlüssel.",
+      "a": [
+        "Ich suche einen Schlüssel."
+      ],
+      "e": "남성 4격의 부정관사는 einen이에요."
+    },
+    {
+      "t": "tr",
+      "q": "주어를 der Junge 대신 die Frau로 바꿔 쓰세요.",
+      "s": "Der Junge fragt den Mann.",
+      "a": [
+        "Die Frau fragt den Mann."
+      ],
+      "e": "주어는 1격이에요. 여성 1격 정관사는 die예요. 목적어 den Mann은 그대로예요."
+    },
+    {
+      "t": "err",
+      "q": "Ich kaufe ein Computer.",
+      "x": 2,
+      "r": "Ich kaufe einen Computer.",
+      "ko": "나는 컴퓨터를 하나 사요.",
+      "e": "Computer는 남성이고 kaufen의 4격 목적어라서 einen이에요."
+    },
+    {
+      "t": "err",
+      "q": "Wir besuchen der Onkel.",
+      "x": 2,
+      "r": "Wir besuchen den Onkel.",
+      "ko": "우리는 그 삼촌을 방문해요.",
+      "e": "besuchen은 4격 목적어를 받아요. 남성 4격은 den이에요."
+    },
+    {
+      "t": "err",
+      "q": "Die Kinder suchen den Katze.",
+      "x": 3,
+      "r": "Die Kinder suchen die Katze.",
+      "ko": "아이들이 그 고양이를 찾아요.",
+      "e": "Katze는 여성이라 4격도 die예요. den은 남성 4격이에요."
+    }
   ]
 }

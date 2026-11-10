@@ -1,0 +1,217 @@
+{
+  "n": "W1",
+  "range": [
+    1,
+    11
+  ],
+  "level": "A1",
+  "ko": "통합 복습 1",
+  "de": "Wiederholung 1 · Lektion 01–11",
+  "goals": [
+    "관사와 격, 인칭대명사를 문장 속에서 함께 골라요",
+    "동사 활용과 화법조동사·분리동사의 문장 괄호를 확인해요",
+    "kein과 nicht, 시간 표현을 섞어서 써요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich habe ___ Bruder und zwei Schwestern.",
+      "o": [
+        "einen",
+        "ein",
+        "einem",
+        "eine"
+      ],
+      "a": 0,
+      "e": "Bruder는 남성이고 haben의 4격 목적어예요 → einen (3과)."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir ___ heute leider nicht kommen.",
+      "ko": "우리는 오늘 아쉽게도 못 와요.",
+      "h": [
+        "können"
+      ],
+      "a": [
+        "können"
+      ],
+      "e": "wir와 함께 쓰는 können이에요. 본동사 kommen은 끝에 와요 (10과)."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ arbeitet ihr? – In Ulsan.",
+      "o": [
+        "Wo",
+        "Woher",
+        "Wohin",
+        "Wer"
+      ],
+      "a": 0,
+      "e": "있는 곳은 wo로 물어요 (6과)."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das sind ___ Fahrräder.",
+      "ko": "이것들이 우리 자전거예요.",
+      "h": [
+        "wir · 소유관사"
+      ],
+      "a": [
+        "unsere"
+      ],
+      "e": "wir의 소유관사 unser, 복수 1격이라 unsere예요 (8과)."
+    },
+    {
+      "lv": 1,
+      "t": "err",
+      "q": "Er sprecht sehr gut Deutsch.",
+      "x": 1,
+      "r": "Er spricht sehr gut Deutsch.",
+      "ko": "그는 독일어를 아주 잘해요.",
+      "e": "sprechen은 er에서 e → i로 바뀌어요 (5과)."
+    },
+    {
+      "lv": 1,
+      "t": "tr",
+      "q": "kein으로 부정하는 문장으로 바꿔 쓰세요.",
+      "s": "Wir haben einen Garten.",
+      "a": [
+        "Wir haben keinen Garten."
+      ],
+      "e": "부정관사가 붙은 명사는 kein으로 부정해요. 남성 4격 → keinen (9과)."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Führung beginnt ___ halb acht.",
+      "o": [
+        "um",
+        "am",
+        "im",
+        "an"
+      ],
+      "a": 0,
+      "e": "시각 앞에는 um이에요 (7과)."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Kommst du heute mit? – Leider ___.",
+      "o": [
+        "kann ich nicht",
+        "ich kann nicht",
+        "kann nicht ich",
+        "nicht kann ich"
+      ],
+      "a": 0,
+      "e": "Leider가 첫 자리를 차지하면 동사 kann이 두 번째, 주어 ich가 그 뒤예요. nicht는 맨 끝이에요 (6·9·10과)."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Bitte ___ das Fenster ___!",
+      "ko": "창문 좀 닫아 줘! (du에게)",
+      "h": [
+        "zumachen",
+        ""
+      ],
+      "a": [
+        [
+          "mach",
+          "mache"
+        ],
+        [
+          "zu"
+        ]
+      ],
+      "e": "du 명령형은 어간만 써요. 분리 접두어 zu는 문장 끝으로 가요 (5·11과)."
+    },
+    {
+      "lv": 2,
+      "t": "err",
+      "q": "Hast du keine Lust? – Ja, ich habe Lust.",
+      "x": 5,
+      "r": "Hast du keine Lust? – Doch, ich habe Lust.",
+      "ko": "하기 싫어? – 아니, 하고 싶어.",
+      "e": "부정 의문문에 긍정으로 대답할 때는 Doch예요 (9과)."
+    },
+    {
+      "lv": 2,
+      "t": "tr",
+      "q": "주어를 du로 바꿔 쓰세요.",
+      "s": "Ich nehme den Aufzug.",
+      "a": [
+        "Du nimmst den Aufzug."
+      ],
+      "e": "nehmen은 du에서 nimmst로 바뀌어요 (5과)."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그녀는 내일 남동생을 데려오지 않아요.",
+      "a": [
+        "Sie bringt morgen ihren Bruder nicht mit.",
+        "Morgen bringt sie ihren Bruder nicht mit.",
+        "Ihren Bruder bringt sie morgen nicht mit.",
+        "Sie bringt ihren Bruder morgen nicht mit."
+      ],
+      "e": "동사 bringt는 두 번째 자리, 분리 접두어 mit는 끝, nicht는 mit 바로 앞이에요 (6·9·11과)."
+    },
+    {
+      "lv": 3,
+      "t": "err",
+      "q": "Morgen schicke ich ihn die Karte.",
+      "x": 3,
+      "r": "Morgen schicke ich ihm die Karte.",
+      "ko": "내일 나는 그에게 그 카드를 보내요.",
+      "e": "'그에게'는 3격 ihm이에요. ihn은 4격이에요 (4과)."
+    },
+    {
+      "lv": 3,
+      "t": "tr",
+      "q": "können을 넣고 주어를 sie(그녀)로 바꿔 쓰세요.",
+      "s": "Ich räume die Küche auf.",
+      "a": [
+        "Sie kann die Küche aufräumen."
+      ],
+      "e": "화법조동사 kann이 두 번째 자리, 분리동사 aufräumen은 원형 그대로 끝에 와요 (10·11과)."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "Welcher Satz ist richtig?",
+      "o": [
+        "Ihr dürft hier nicht essen.",
+        "Ihr dürft hier essen nicht.",
+        "Ihr nicht dürft hier essen.",
+        "Hier ihr dürft nicht essen."
+      ],
+      "a": 0,
+      "e": "화법조동사는 두 번째, 원형은 끝, nicht는 원형 바로 앞이에요 (6·9·10과)."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Kennst du ___ Lehrerin? – Ja, ich kenne ___ gut.",
+      "ko": "너 우리 선생님 알아? – 응, 그분 잘 알아.",
+      "h": [
+        "wir · 소유관사",
+        "sie · 인칭대명사"
+      ],
+      "a": [
+        [
+          "unsere"
+        ],
+        [
+          "sie"
+        ]
+      ],
+      "e": "Lehrerin은 여성 4격 → unsere. 여성 4격 인칭대명사는 sie예요 (4·8과)."
+    }
+  ]
+}

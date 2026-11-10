@@ -376,5 +376,58 @@
       ],
       "e": "das Museum은 -um이 -en으로 바뀌어 die Museen, -er로 끝나는 das Theater는 복수도 die Theater예요.<br>주어가 복수라서 동사는 sind예요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "복수로 바꿔 쓰세요.",
+      "s": "Das ist das Buch.",
+      "a": [
+        "Das sind die Bücher."
+      ],
+      "e": "Buch의 복수는 Bücher(움라우트 + -er)예요. 복수의 정관사는 die, 동사는 sind예요."
+    },
+    {
+      "t": "tr",
+      "q": "복수로 바꿔 쓰세요.",
+      "s": "Da ist eine Katze.",
+      "a": [
+        "Da sind Katzen."
+      ],
+      "e": "부정관사 ein·eine는 복수형이 없어서 사라져요. Katze의 복수는 Katzen이에요."
+    },
+    {
+      "t": "tr",
+      "q": "복수로 바꿔 쓰세요.",
+      "s": "Das ist der Stuhl.",
+      "a": [
+        "Das sind die Stühle."
+      ],
+      "e": "Stuhl의 복수는 Stühle(움라우트 + -e)예요."
+    },
+    {
+      "t": "err",
+      "q": "Das sind die Autoen.",
+      "x": 3,
+      "r": "Das sind die Autos.",
+      "ko": "이것들은 그 자동차들이에요.",
+      "e": "외래어 Auto의 복수는 -s를 붙여 Autos예요."
+    },
+    {
+      "t": "err",
+      "q": "Da sind drei Apfel.",
+      "x": 3,
+      "r": "Da sind drei Äpfel.",
+      "ko": "저기 사과가 세 개 있어요.",
+      "e": "Apfel의 복수는 움라우트만 붙어 Äpfel이에요."
+    },
+    {
+      "t": "err",
+      "q": "Das sind die Lehrerinen.",
+      "x": 3,
+      "r": "Das sind die Lehrerinnen.",
+      "ko": "이분들은 그 여자 선생님들이에요.",
+      "e": "-in으로 끝나는 여성 명사의 복수는 n을 하나 더 써서 -innen이에요."
+    }
   ]
 }

@@ -404,5 +404,59 @@
       ],
       "e": "entlang은 명사 뒤에 와요 — das Ufer entlang(4격).<br>관사가 필요한 '~까지'는 bis zu + 3격 → bis zur Brücke예요. laufen은 sein과 현재완료를 만들어요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "사람을 인칭대명사로 바꿔 쓰세요.",
+      "s": "Ich fahre mit meinem Bruder.",
+      "a": [
+        "Ich fahre mit ihm."
+      ],
+      "e": "mit는 3격 지배예요. meinem Bruder → ihm."
+    },
+    {
+      "t": "tr",
+      "q": "사물을 da(r)-로 바꿔 쓰세요.",
+      "s": "Ich schreibe mit dem Kuli.",
+      "a": [
+        "Ich schreibe damit."
+      ],
+      "e": "사물은 전치사 + 대명사가 아니라 da + 전치사로 받아요. mit dem Kuli → damit.",
+      "ok": "damit은 da-복합어(14과), 접속사가 아님"
+    },
+    {
+      "t": "tr",
+      "q": "전치사와 관사를 축약형으로 바꿔 쓰세요.",
+      "s": "Wir gehen zu dem Bäcker.",
+      "a": [
+        "Wir gehen zum Bäcker."
+      ],
+      "e": "zu + dem은 zum으로 줄여요."
+    },
+    {
+      "t": "err",
+      "q": "Wir essen heute bei meine Cousine.",
+      "x": 4,
+      "r": "Wir essen heute bei meiner Cousine.",
+      "ko": "우리는 오늘 사촌 언니 집에서 밥을 먹어요.",
+      "e": "bei는 3격 지배예요. 여성 3격 → meiner."
+    },
+    {
+      "t": "err",
+      "q": "Das Geschenk ist für dir.",
+      "x": 4,
+      "r": "Das Geschenk ist für dich.",
+      "ko": "이 선물은 너를 위한 거야.",
+      "e": "für는 4격 지배예요. du의 4격은 dich예요."
+    },
+    {
+      "t": "err",
+      "q": "Er geht ohne seinem Hund spazieren.",
+      "x": 3,
+      "r": "Er geht ohne seinen Hund spazieren.",
+      "ko": "그는 개 없이 산책해요.",
+      "e": "ohne는 4격 지배예요. 남성 4격 → seinen."
+    }
   ]
 }

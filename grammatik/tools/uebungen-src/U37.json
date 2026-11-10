@@ -453,5 +453,60 @@
       ],
       "e": "aufgrund + 2격 복수 → der Kosten. 동사는 분사가 되어 명사 앞에서 어미를 받아요 → der stark gestiegenen Kosten(32과)."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "접속사 문장을 전치사구로 바꿔 쓰세요.",
+      "s": "Weil der Verkehr dicht war, kamen wir zu spät.",
+      "a": [
+        "Wegen des dichten Verkehrs kamen wir zu spät.",
+        "Aufgrund des dichten Verkehrs kamen wir zu spät."
+      ],
+      "e": "weil 문장은 wegen(aufgrund) + 2격으로 바꿀 수 있어요. 형용사도 2격 어미 -en을 받아요."
+    },
+    {
+      "t": "tr",
+      "q": "접속사 문장을 전치사구로 바꿔 쓰세요.",
+      "s": "Obwohl sie müde war, arbeitete sie weiter.",
+      "a": [
+        "Trotz ihrer Müdigkeit arbeitete sie weiter."
+      ],
+      "e": "obwohl은 trotz + 2격으로 바꿔요. müde → die Müdigkeit."
+    },
+    {
+      "t": "tr",
+      "q": "접속사 문장을 전치사구로 바꿔 쓰세요.",
+      "s": "Während er telefonierte, kochte das Wasser über.",
+      "a": [
+        "Während des Telefonats kochte das Wasser über.",
+        "Während des Telefonierens kochte das Wasser über."
+      ],
+      "e": "접속사 während를 전치사 während + 2격으로 바꿔요. telefonieren → das Telefonat."
+    },
+    {
+      "t": "err",
+      "q": "Aufgrund des heftigen Wind wurde die Fähre gestrichen.",
+      "x": 3,
+      "r": "Aufgrund des heftigen Windes wurde die Fähre gestrichen.",
+      "ko": "바람이 세서 페리 운항이 취소됐어요.",
+      "e": "남성 2격 명사에는 -es(-s)가 붙어요. des Windes."
+    },
+    {
+      "t": "err",
+      "q": "Zwar ist das Hotel teuer, sondern der Service ist gut.",
+      "x": 5,
+      "r": "Zwar ist das Hotel teuer, aber der Service ist gut.",
+      "ko": "그 호텔은 비싸긴 하지만 서비스는 좋아요.",
+      "e": "zwar는 aber와 짝이에요."
+    },
+    {
+      "t": "err",
+      "q": "Innerhalb die nächsten Tage melden wir uns.",
+      "x": 1,
+      "r": "Innerhalb der nächsten Tage melden wir uns.",
+      "ko": "며칠 안에 연락드릴게요.",
+      "e": "innerhalb는 2격 전치사예요. 복수 2격 → der nächsten Tage."
+    }
   ]
 }

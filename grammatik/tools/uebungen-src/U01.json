@@ -431,5 +431,58 @@
       ],
       "e": "국적 Koreanerin과 언어 Französisch는 관사 없이 써요.<br>명사는 문장 가운데서도 대문자로 써요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "정관사를 부정관사로 바꿔 쓰세요.",
+      "s": "Das ist die Lampe.",
+      "a": [
+        "Das ist eine Lampe."
+      ],
+      "e": "die Lampe는 여성이라 부정관사는 eine예요."
+    },
+    {
+      "t": "tr",
+      "q": "부정관사를 정관사로 바꿔 쓰세요.",
+      "s": "Das ist ein Fahrrad.",
+      "a": [
+        "Das ist das Fahrrad."
+      ],
+      "e": "Fahrrad는 중성이에요. ein → das."
+    },
+    {
+      "t": "tr",
+      "q": "두 명사를 합성명사 하나로 합쳐 다시 쓰세요.",
+      "s": "Das ist die Küche. Das ist der Tisch.",
+      "a": [
+        "Das ist der Küchentisch."
+      ],
+      "e": "합성명사의 성은 맨 뒤 명사가 정해요. Tisch가 남성이라 der Küchentisch예요. Küche와 Tisch 사이에 -n-이 들어가요."
+    },
+    {
+      "t": "err",
+      "q": "Das ist der Mädchen.",
+      "x": 2,
+      "r": "Das ist das Mädchen.",
+      "ko": "이 사람은 그 소녀예요.",
+      "e": "-chen으로 끝나는 명사는 모두 중성이에요. das Mädchen."
+    },
+    {
+      "t": "err",
+      "q": "Das ist eine Haus.",
+      "x": 2,
+      "r": "Das ist ein Haus.",
+      "ko": "이것은 집이에요.",
+      "e": "Haus는 중성이에요. 중성의 부정관사는 ein이에요."
+    },
+    {
+      "t": "err",
+      "q": "Das ist die Kinderzimmer.",
+      "x": 2,
+      "r": "Das ist das Kinderzimmer.",
+      "ko": "이곳은 아이 방이에요.",
+      "e": "합성명사는 맨 뒤 명사 Zimmer(중성)를 따라 das예요."
+    }
   ]
 }

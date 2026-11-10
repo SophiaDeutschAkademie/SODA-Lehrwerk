@@ -1,0 +1,212 @@
+{
+  "n": "W4",
+  "range": [
+    30,
+    37
+  ],
+  "level": "B2",
+  "ko": "통합 복습 4",
+  "de": "Wiederholung 4 · Lektion 30–37",
+  "goals": [
+    "접속법 II와 접속법 I을 쓰임에 맞게 골라요",
+    "수동태와 분사로 문장을 바꿔요",
+    "추측의 화법조동사와 2격 전치사를 섞어서 써요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wenn ich mehr Zeit ___, würde ich öfter lesen.",
+      "o": [
+        "hätte",
+        "habe",
+        "hatte",
+        "hat"
+      ],
+      "a": 0,
+      "e": "사실과 반대되는 조건은 접속법 II hätte예요 (30과)."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das Haus wird gerade ___.",
+      "ko": "그 집은 지금 수리 중이에요.",
+      "h": [
+        "renovieren"
+      ],
+      "a": [
+        "renoviert"
+      ],
+      "e": "수동태는 werden + 과거분사예요. -ieren 동사는 ge-가 없어요 (31과)."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Sie sagt, sie ___ morgen keinen Dienst.",
+      "o": [
+        "habe",
+        "habt",
+        "haben",
+        "gehabt"
+      ],
+      "a": 0,
+      "e": "간접화법에서 sie(그녀)의 접속법 I은 habe예요 (33과)."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Er ___ krank sein, er hustet schon den ganzen Tag.",
+      "ko": "그는 아픈 게 틀림없어요. 하루 종일 기침을 해요.",
+      "h": [
+        "müssen"
+      ],
+      "a": [
+        "muss"
+      ],
+      "e": "확신하는 추측은 müssen이에요 (36과)."
+    },
+    {
+      "lv": 1,
+      "t": "err",
+      "q": "Das ist eine überzeugte Idee.",
+      "x": 3,
+      "r": "Das ist eine überzeugende Idee.",
+      "ko": "그건 설득력 있는 아이디어예요.",
+      "e": "아이디어가 남을 설득하니까 현재분사 überzeugend예요 (32과)."
+    },
+    {
+      "lv": 1,
+      "t": "tr",
+      "q": "수동태로 바꿔 쓰세요.",
+      "s": "Man öffnet das Geschäft um neun Uhr.",
+      "a": [
+        "Das Geschäft wird um neun Uhr geöffnet."
+      ],
+      "e": "man은 빠지고 목적어 das Geschäft가 주어가 돼요 (31과)."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich bin schon sehr ___ das Ergebnis gespannt.",
+      "o": [
+        "auf",
+        "über",
+        "für",
+        "an"
+      ],
+      "a": 0,
+      "e": "gespannt는 auf + 4격이에요 (34과)."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Es sieht so aus, als ob es gleich ___ ___.",
+      "ko": "곧 비가 올 것처럼 보여요.",
+      "h": [
+        "regnen",
+        ""
+      ],
+      "a": [
+        [
+          "regnen"
+        ],
+        [
+          "würde"
+        ]
+      ],
+      "e": "als ob 뒤에는 접속법 II가 와요. würde + 원형에서 würde가 끝이에요 (30과)."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그 도시의 아름다움은 많은 관광객을 끌어들여요.",
+      "a": [
+        "Die Schönheit der Stadt zieht viele Touristen an.",
+        "Viele Touristen zieht die Schönheit der Stadt an."
+      ],
+      "e": "schön → die Schönheit, 2격 der Stadt가 뒤에 붙어요. 분리 접두어 an은 끝이에요 (16·35과)."
+    },
+    {
+      "lv": 2,
+      "t": "err",
+      "q": "Sie soll gestern im Krankenhaus gewesen haben.",
+      "x": 6,
+      "r": "Sie soll gestern im Krankenhaus gewesen sein.",
+      "ko": "그녀가 어제 병원에 있었다고 해요.",
+      "e": "gewesen은 sein과 함께 써요 (36과)."
+    },
+    {
+      "lv": 2,
+      "t": "tr",
+      "q": "간접화법으로 바꿔 쓰세요.",
+      "s": "Die Lehrerin sagte: „Der Test findet morgen statt.“",
+      "a": [
+        "Die Lehrerin sagte, der Test finde morgen statt.",
+        "Die Lehrerin sagte, dass der Test morgen stattfinde."
+      ],
+      "e": "stattfinden의 접속법 I은 finde … statt예요 (33과)."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "___ des hohen Preises kauften viele Leute das neue Handy.",
+      "o": [
+        "Trotz",
+        "Wegen",
+        "Statt",
+        "Obwohl"
+      ],
+      "a": 0,
+      "e": "값이 비싼데도 샀으니 trotz + 2격이에요. obwohl은 접속사예요 (37과)."
+    },
+    {
+      "lv": 3,
+      "t": "tr",
+      "q": "접속사 문장을 전치사구로 바꿔 쓰세요.",
+      "s": "Nachdem er das Studium abgeschlossen hatte, zog er nach Hamburg.",
+      "a": [
+        "Nach dem Abschluss des Studiums zog er nach Hamburg.",
+        "Nach Abschluss des Studiums zog er nach Hamburg.",
+        "Nach dem Abschluss seines Studiums zog er nach Hamburg.",
+        "Nach Abschluss seines Studiums zog er nach Hamburg."
+      ],
+      "e": "nachdem → nach + 3격, abschließen → der Abschluss, 목적어는 2격으로 붙어요 (35·37과)."
+    },
+    {
+      "lv": 3,
+      "t": "err",
+      "q": "Wenn du mich angerufen hättest, hätte ich sofort gekommen.",
+      "x": 5,
+      "r": "Wenn du mich angerufen hättest, wäre ich sofort gekommen.",
+      "ko": "네가 전화했더라면 나는 바로 왔을 거야.",
+      "e": "kommen은 sein과 쓰는 동사라 과거의 접속법 II는 wäre + 과거분사예요 (30과)."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Die ___ Unterlagen liegen auf Ihrem Schreibtisch.",
+      "ko": "서명된 서류는 당신 책상 위에 있어요.",
+      "h": [
+        "unterschreiben · 과거분사"
+      ],
+      "a": [
+        "unterschriebenen"
+      ],
+      "e": "과거분사 unterschrieben에 정관사 뒤 복수 어미 -en이 붙어요 (32과)."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "Welcher Satz ist richtig?",
+      "o": [
+        "Der Antrag muss bis Ende Mai eingereicht werden.",
+        "Der Antrag muss bis Ende Mai eingereicht worden.",
+        "Der Antrag muss bis Ende Mai einreichen werden.",
+        "Der Antrag muss bis Ende Mai eingereicht sein werden."
+      ],
+      "a": 0,
+      "e": "화법조동사가 있는 수동태는 과거분사 + werden이에요 (31과)."
+    }
+  ]
+}

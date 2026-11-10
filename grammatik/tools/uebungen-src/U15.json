@@ -397,5 +397,61 @@
       "a": 0,
       "e": "나는 지하실(아래)에 있고, 손전등이 나 쪽으로 와야 하니까 her-예요.<br>위에서 아래로 오니까 herunter예요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "놓는 동작을 놓여 있는 상태로 바꿔 쓰세요.",
+      "s": "Ich lege die Brille auf das Regal.",
+      "a": [
+        "Die Brille liegt auf dem Regal."
+      ],
+      "e": "legen(놓다, Wohin? 4격) → liegen(놓여 있다, Wo? 3격)."
+    },
+    {
+      "t": "tr",
+      "q": "거는 동작을 걸려 있는 상태로 바꿔 쓰세요.",
+      "s": "Er hängt den Mantel an den Haken.",
+      "a": [
+        "Der Mantel hängt am Haken.",
+        "Der Mantel hängt an dem Haken."
+      ],
+      "e": "동작(Wohin?)은 4격 an den Haken, 상태(Wo?)는 3격 am Haken이에요."
+    },
+    {
+      "t": "tr",
+      "q": "넣는 동작을 들어 있는 상태로 바꿔 쓰세요.",
+      "s": "Sie stellt die Milch in den Kühlschrank.",
+      "a": [
+        "Die Milch steht im Kühlschrank.",
+        "Die Milch steht in dem Kühlschrank."
+      ],
+      "e": "stellen(세우다) → stehen(서 있다). in den Kühlschrank → im Kühlschrank."
+    },
+    {
+      "t": "err",
+      "q": "Ich fahre morgen in der Stadt.",
+      "x": 4,
+      "r": "Ich fahre morgen in die Stadt.",
+      "ko": "나는 내일 시내에 가요.",
+      "e": "가는 곳(Wohin?)은 4격이에요. in die Stadt."
+    },
+    {
+      "t": "err",
+      "q": "Die Tasche liegt unter das Bett.",
+      "x": 4,
+      "r": "Die Tasche liegt unter dem Bett.",
+      "ko": "가방이 침대 밑에 있어요.",
+      "e": "있는 곳(Wo?)은 3격이에요. unter dem Bett.",
+      "ok": "liegt unter dem …는 위치를 말하는 기본 틀"
+    },
+    {
+      "t": "err",
+      "q": "Er legt den Schlüssel auf dem Tisch.",
+      "x": 5,
+      "r": "Er legt den Schlüssel auf den Tisch.",
+      "ko": "그는 열쇠를 탁자 위에 놓아요.",
+      "e": "legen은 방향(Wohin?)이라 4격이에요. auf den Tisch."
+    }
   ]
 }

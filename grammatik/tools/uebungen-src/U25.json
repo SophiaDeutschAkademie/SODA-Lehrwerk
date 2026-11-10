@@ -399,5 +399,59 @@
       ],
       "e": "lieber는 gern의 비교급이에요. 비교 대상 in die Berge는 als 뒤, 문장 맨 끝에 와요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "비교급과 als를 써서 한 문장으로 바꿔 쓰세요.",
+      "s": "Mein Koffer ist schwer. Dein Koffer ist nicht so schwer.",
+      "a": [
+        "Mein Koffer ist schwerer als dein Koffer."
+      ],
+      "e": "비교급은 -er, 비교 대상 앞에는 als를 써요."
+    },
+    {
+      "t": "tr",
+      "q": "so … wie를 써서 한 문장으로 바꿔 쓰세요.",
+      "s": "Lena ist fleißig. Ihr Bruder ist genauso fleißig.",
+      "a": [
+        "Ihr Bruder ist so fleißig wie Lena.",
+        "Lena ist so fleißig wie ihr Bruder."
+      ],
+      "e": "같은 정도는 so + 원급 + wie로 말해요."
+    },
+    {
+      "t": "tr",
+      "q": "gern의 최상급으로 바꿔 쓰세요.",
+      "s": "Wir trinken gern Saft.",
+      "a": [
+        "Wir trinken am liebsten Saft."
+      ],
+      "e": "gern의 비교급은 lieber, 최상급은 am liebsten이에요."
+    },
+    {
+      "t": "err",
+      "q": "Berlin ist größer wie Hamburg.",
+      "x": 3,
+      "r": "Berlin ist größer als Hamburg.",
+      "ko": "베를린은 함부르크보다 커요.",
+      "e": "비교급 뒤에는 als를 써요. wie는 so … wie에 써요."
+    },
+    {
+      "t": "err",
+      "q": "Unser Garten ist großer als euer Garten.",
+      "x": 3,
+      "r": "Unser Garten ist größer als euer Garten.",
+      "ko": "우리 정원이 너희 정원보다 커요.",
+      "e": "groß의 비교급은 움라우트가 붙어 größer예요."
+    },
+    {
+      "t": "err",
+      "q": "Er ist so alt als ich.",
+      "x": 4,
+      "r": "Er ist so alt wie ich.",
+      "ko": "그는 나와 나이가 같아요.",
+      "e": "so + 원급 뒤에는 wie를 써요."
+    }
   ]
 }

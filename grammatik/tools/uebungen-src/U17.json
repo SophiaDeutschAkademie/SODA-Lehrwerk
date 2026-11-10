@@ -398,5 +398,58 @@
       "a": 0,
       "e": "sich만 쓰면 '각자 자기 몸을'인지 '서로'인지 분명하지 않아요.<br>gegenseitig를 sich와 함께 쓰면 '서로'가 분명해요. einander는 sich 없이 써요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "주어를 du로 바꿔 쓰세요.",
+      "s": "Ich freue mich auf den Ausflug.",
+      "a": [
+        "Du freust dich auf den Ausflug."
+      ],
+      "e": "재귀대명사도 주어를 따라 mich → dich로 바뀌어요."
+    },
+    {
+      "t": "tr",
+      "q": "현재완료로 바꿔 쓰세요.",
+      "s": "Er erholt sich gut.",
+      "a": [
+        "Er hat sich gut erholt."
+      ],
+      "e": "재귀동사는 haben과 함께 현재완료를 만들어요. erholen은 비분리라 ge-가 없어요."
+    },
+    {
+      "t": "tr",
+      "q": "die Haare를 넣어 바꿔 쓰세요.",
+      "s": "Du föhnst dich.",
+      "a": [
+        "Du föhnst dir die Haare."
+      ],
+      "e": "4격 목적어(die Haare)가 따로 있으면 재귀대명사는 3격이 돼요. dich → dir."
+    },
+    {
+      "t": "err",
+      "q": "Wir verabreden sich für Samstag.",
+      "x": 2,
+      "r": "Wir verabreden uns für Samstag.",
+      "ko": "우리는 토요일에 만나기로 약속해요.",
+      "e": "wir의 재귀대명사는 uns예요. sich는 3인칭과 Sie에만 써요."
+    },
+    {
+      "t": "err",
+      "q": "Du ziehst dich die Schuhe aus.",
+      "x": 2,
+      "r": "Du ziehst dir die Schuhe aus.",
+      "ko": "너는 신발을 벗어.",
+      "e": "4격 목적어 die Schuhe가 있으니 재귀대명사는 3격 dir예요."
+    },
+    {
+      "t": "err",
+      "q": "Interessierst du sich für Musik?",
+      "x": 2,
+      "r": "Interessierst du dich für Musik?",
+      "ko": "너는 음악에 관심 있어?",
+      "e": "du의 재귀대명사는 dich예요."
+    }
   ]
 }

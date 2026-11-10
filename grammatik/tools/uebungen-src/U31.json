@@ -396,5 +396,59 @@
       "a": 0,
       "e": "Vater werden(아버지가 되다)는 본동사 werden이라 현재완료가 geworden이에요.<br>나머지는 과거분사가 있는 수동이라 worden이에요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "행위자를 넣어 수동태로 바꿔 쓰세요.",
+      "s": "Der Koch bereitet das Essen vor.",
+      "a": [
+        "Das Essen wird vom Koch vorbereitet.",
+        "Das Essen wird von dem Koch vorbereitet."
+      ],
+      "e": "능동문의 4격 목적어가 수동문의 주어가 되고, 행위자는 von + 3격이에요."
+    },
+    {
+      "t": "tr",
+      "q": "수동태 과거형으로 바꿔 쓰세요.",
+      "s": "Man baute die Brücke 1990.",
+      "a": [
+        "Die Brücke wurde 1990 gebaut."
+      ],
+      "e": "수동태 과거형은 wurde + 과거분사예요. man은 수동문에서 빠져요."
+    },
+    {
+      "t": "tr",
+      "q": "화법조동사를 그대로 두고 수동태로 바꿔 쓰세요.",
+      "s": "Man muss das Formular bis Montag ausfüllen.",
+      "a": [
+        "Das Formular muss bis Montag ausgefüllt werden."
+      ],
+      "e": "화법조동사 + 과거분사 + werden이에요."
+    },
+    {
+      "t": "err",
+      "q": "Das Paket ist gestern geliefert geworden.",
+      "x": 5,
+      "r": "Das Paket ist gestern geliefert worden.",
+      "ko": "소포는 어제 배달됐어요.",
+      "e": "수동태 현재완료에서 werden의 과거분사는 ge- 없이 worden이에요."
+    },
+    {
+      "t": "err",
+      "q": "Die Fenster wird jeden Tag geputzt.",
+      "x": 2,
+      "r": "Die Fenster werden jeden Tag geputzt.",
+      "ko": "창문은 매일 닦여요.",
+      "e": "주어 die Fenster가 복수라 werden이에요."
+    },
+    {
+      "t": "err",
+      "q": "Die Tür lässt sich nicht geöffnet.",
+      "x": 5,
+      "r": "Die Tür lässt sich nicht öffnen.",
+      "ko": "문이 열리지 않아요.",
+      "e": "sich lassen 뒤에는 원형이 와요."
+    }
   ]
 }

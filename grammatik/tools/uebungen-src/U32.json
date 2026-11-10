@@ -392,5 +392,58 @@
       ],
       "e": "① 소리치고 있는 → schreiende(der + 남성 1격 -e).<br>② 주문된 → bestellte(das + 중성 4격 -e).<br>③ 놀란 → erschrocken(자동사 erschrecken의 불규칙 과거분사), 여성 1격 -e.<br>④ 더듬으며 → 부사 stotternd, 어미 없음."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "관계문을 분사 수식으로 바꿔 쓰세요.",
+      "s": "Das Kind, das schläft, ist mein Neffe.",
+      "a": [
+        "Das schlafende Kind ist mein Neffe."
+      ],
+      "e": "진행 중인 일은 현재분사(원형 + d)예요. 형용사처럼 어미를 붙여요."
+    },
+    {
+      "t": "tr",
+      "q": "관계문을 분사 수식으로 바꿔 쓰세요.",
+      "s": "Die Briefe, die gestern geschrieben wurden, liegen auf dem Tisch.",
+      "a": [
+        "Die gestern geschriebenen Briefe liegen auf dem Tisch."
+      ],
+      "e": "수동의 뜻은 과거분사예요. 부사 gestern은 분사 앞에 와요."
+    },
+    {
+      "t": "tr",
+      "q": "분사구를 관계문으로 바꿔 쓰세요.",
+      "s": "Der im Garten spielende Hund gehört uns.",
+      "a": [
+        "Der Hund, der im Garten spielt, gehört uns."
+      ],
+      "e": "현재분사는 관계문의 현재형으로 풀어요."
+    },
+    {
+      "t": "err",
+      "q": "Das ist ein gespanntes Buch.",
+      "x": 3,
+      "r": "Das ist ein spannendes Buch.",
+      "ko": "이건 흥미진진한 책이에요.",
+      "e": "책이 긴장감을 주니까 현재분사 spannend예요. gespannt는 사람이 기대하는 상태예요."
+    },
+    {
+      "t": "err",
+      "q": "Die reparierende Uhr funktioniert wieder.",
+      "x": 1,
+      "r": "Die reparierte Uhr funktioniert wieder.",
+      "ko": "수리된 시계가 다시 작동해요.",
+      "e": "시계는 수리를 받은 것이라 과거분사예요."
+    },
+    {
+      "t": "err",
+      "q": "Wir sahen die lachende Kinder.",
+      "x": 3,
+      "r": "Wir sahen die lachenden Kinder.",
+      "ko": "우리는 웃고 있는 아이들을 봤어요.",
+      "e": "분사도 형용사 어미를 받아요. 복수 4격 정관사 뒤 → -en."
+    }
   ]
 }

@@ -386,5 +386,60 @@
       "a": 0,
       "e": "be- 동사는 전치사 없이 4격을 받아요 → Sie bewohnen ein altes Bauernhaus. (in einem Bauernhaus wohnen과 섞은 실수)"
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "형용사 sauber를 명사로 바꿔 한 문장으로 쓰세요.",
+      "s": "Der Strand ist sauber. Das überrascht uns.",
+      "a": [
+        "Die Sauberkeit des Strandes überrascht uns.",
+        "Die Sauberkeit des Strands überrascht uns."
+      ],
+      "e": "-er로 끝나는 형용사는 -keit를 붙여 여성 명사를 만들어요. 뒤의 명사는 2격(des Strandes)으로 이어요."
+    },
+    {
+      "t": "tr",
+      "q": "un-을 붙여 반대말로 바꿔 쓰세요.",
+      "s": "Der Kollege ist freundlich.",
+      "a": [
+        "Der Kollege ist unfreundlich."
+      ],
+      "e": "un-은 형용사 앞에 붙어 반대 뜻을 만들어요."
+    },
+    {
+      "t": "tr",
+      "q": "동사 ankommen을 명사로 바꿔 쓰세요.",
+      "s": "Wir warten, bis der Zug ankommt.",
+      "a": [
+        "Wir warten auf die Ankunft des Zuges.",
+        "Wir warten auf die Ankunft des Zugs."
+      ],
+      "e": "ankommen의 명사는 die Ankunft예요. 주어였던 der Zug는 2격 des Zuges로 붙고, warten은 auf + 4격과 써요."
+    },
+    {
+      "t": "err",
+      "q": "Die Freundheit ist mir wichtig.",
+      "x": 1,
+      "r": "Die Freundschaft ist mir wichtig.",
+      "ko": "우정은 나에게 중요해요.",
+      "e": "사람 명사에서 관계를 나타내는 명사는 -schaft로 만들어요. der Freund → die Freundschaft."
+    },
+    {
+      "t": "err",
+      "q": "Ich habe ein Problem mit der Erklärenung.",
+      "x": 6,
+      "r": "Ich habe ein Problem mit der Erklärung.",
+      "ko": "그 설명에 문제가 있어요.",
+      "e": "동사 어간에 -ung을 붙여요. erklären → die Erklärung."
+    },
+    {
+      "t": "err",
+      "q": "Das Wasser ist hier trinklich.",
+      "x": 4,
+      "r": "Das Wasser ist hier trinkbar.",
+      "ko": "여기 물은 마실 수 있어요.",
+      "e": "'~할 수 있는'은 동사 어간 + -bar예요. trinkbar."
+    }
   ]
 }

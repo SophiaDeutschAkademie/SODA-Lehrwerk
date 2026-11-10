@@ -382,5 +382,58 @@
       ],
       "e": "der Kaffee는 남성 4격 ihn, '우리에게'는 3격 uns예요.<br>대명사 둘은 4격 → 3격 순서라서 ihn uns예요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "목적어를 인칭대명사로 바꿔 쓰세요.",
+      "s": "Ich besuche den Opa.",
+      "a": [
+        "Ich besuche ihn."
+      ],
+      "e": "den Opa는 남성 4격이라 ihn이에요."
+    },
+    {
+      "t": "tr",
+      "q": "주어를 인칭대명사로 바꿔 쓰세요.",
+      "s": "Die Lampe ist neu.",
+      "a": [
+        "Sie ist neu."
+      ],
+      "e": "사물도 명사의 성을 따라요. die Lampe → sie."
+    },
+    {
+      "t": "tr",
+      "q": "두 목적어를 모두 인칭대명사로 바꿔 쓰세요.",
+      "s": "Wir schenken der Oma den Kalender.",
+      "a": [
+        "Wir schenken ihn ihr."
+      ],
+      "e": "der Oma → ihr(3격), den Kalender → ihn(4격). 둘 다 대명사이면 4격이 3격보다 앞에 와요."
+    },
+    {
+      "t": "err",
+      "q": "Wir helfen dich gern.",
+      "x": 2,
+      "r": "Wir helfen dir gern.",
+      "ko": "우리가 기꺼이 너를 도와줄게.",
+      "e": "helfen은 3격을 받아요. du의 3격은 dir예요."
+    },
+    {
+      "t": "err",
+      "q": "Der Stuhl ist neu. Es ist bequem.",
+      "x": 4,
+      "r": "Der Stuhl ist neu. Er ist bequem.",
+      "ko": "그 의자는 새것이에요. 편해요.",
+      "e": "der Stuhl은 남성이라 대명사도 er예요."
+    },
+    {
+      "t": "err",
+      "q": "Ich frage er sofort.",
+      "x": 2,
+      "r": "Ich frage ihn sofort.",
+      "ko": "내가 그에게 바로 물어볼게요.",
+      "e": "fragen은 4격 목적어를 받아요. er의 4격은 ihn이에요."
+    }
   ]
 }

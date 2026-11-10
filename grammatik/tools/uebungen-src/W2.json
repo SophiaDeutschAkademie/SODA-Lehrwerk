@@ -1,0 +1,203 @@
+{
+  "n": "W2",
+  "range": [
+    12,
+    20
+  ],
+  "level": "A2",
+  "ko": "통합 복습 2",
+  "de": "Wiederholung 2 · Lektion 12–20",
+  "goals": [
+    "현재완료와 과거형을 골라 써요",
+    "전치사의 격과 장소 표현을 함께 확인해요",
+    "재귀동사와 전치사 동사, 접속사의 어순을 섞어서 써요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Gestern ___ wir mit dem Zug nach Gangneung gefahren.",
+      "o": [
+        "sind",
+        "haben",
+        "hatten",
+        "seid"
+      ],
+      "a": 0,
+      "e": "fahren은 sein과 함께 현재완료를 만들어요 (12과)."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir warten schon lange ___ die Antwort.",
+      "ko": "우리는 벌써 오래 답을 기다리고 있어요.",
+      "h": [
+        ""
+      ],
+      "a": [
+        "auf"
+      ],
+      "e": "warten은 auf + 4격과 써요 (18과)."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Der Laptop steht ___ Schreibtisch.",
+      "o": [
+        "auf dem",
+        "auf den",
+        "auf der",
+        "in den"
+      ],
+      "a": 0,
+      "e": "있는 곳(Wo?)은 3격이에요. der Schreibtisch → auf dem (15과)."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Er ___ sich jeden Morgen.",
+      "ko": "그는 매일 아침 면도해요.",
+      "h": [
+        "rasieren"
+      ],
+      "a": [
+        "rasiert"
+      ],
+      "e": "sich rasieren의 er 형태예요 (17과)."
+    },
+    {
+      "lv": 1,
+      "t": "err",
+      "q": "Ich bin gestern lange geschlafen.",
+      "x": 1,
+      "r": "Ich habe gestern lange geschlafen.",
+      "ko": "나는 어제 오래 잤어요.",
+      "e": "schlafen은 장소나 상태가 바뀌지 않아서 haben과 써요 (12과)."
+    },
+    {
+      "lv": 1,
+      "t": "tr",
+      "q": "현재완료로 바꿔 쓰세요.",
+      "s": "Sie holt ihre Schwester ab.",
+      "a": [
+        "Sie hat ihre Schwester abgeholt."
+      ],
+      "e": "분리동사의 과거분사는 ab + ge + holt예요 (12과)."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich trinke noch einen Kaffee, ___ ich sehr müde bin.",
+      "o": [
+        "weil",
+        "denn",
+        "deshalb",
+        "aber"
+      ],
+      "a": 0,
+      "e": "동사 bin이 끝에 있으니 종속접속사 weil이에요 (19·20과)."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Kannst du mir sagen, wann das Spiel ___?",
+      "ko": "경기가 언제 시작하는지 말해 줄 수 있어?",
+      "h": [
+        "anfangen"
+      ],
+      "a": [
+        "anfängt"
+      ],
+      "e": "간접의문문에서는 동사가 끝에 오고, 분리동사는 다시 붙어요 (11·20과)."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "나는 피곤해서 일찍 잠자리에 들었어요.",
+      "a": [
+        "Ich war müde, deshalb bin ich früh ins Bett gegangen.",
+        "Müde war ich, deshalb bin ich früh ins Bett gegangen."
+      ],
+      "e": "deshalb 뒤에 동사 bin, 그다음 주어 ich, 과거분사는 끝이에요 (12·13·19과)."
+    },
+    {
+      "lv": 2,
+      "t": "err",
+      "q": "Ich interessiere mich nicht an Politik.",
+      "x": 4,
+      "r": "Ich interessiere mich nicht für Politik.",
+      "ko": "나는 정치에 관심이 없어요.",
+      "e": "sich interessieren은 für와 함께 써요 (17·18과)."
+    },
+    {
+      "lv": 2,
+      "t": "tr",
+      "q": "weil로 한 문장으로 바꿔 쓰세요.",
+      "s": "Wir sind im Hotel geblieben. Es hat gestürmt.",
+      "a": [
+        "Wir sind im Hotel geblieben, weil es gestürmt hat.",
+        "Weil es gestürmt hat, sind wir im Hotel geblieben."
+      ],
+      "e": "weil 문장에서는 보조 동사 hat이 맨 끝으로 가요 (12·20과)."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Wohin hast du den Schlüssel gelegt? – ___ Schublade.",
+      "o": [
+        "In die",
+        "In der",
+        "Im",
+        "In den"
+      ],
+      "a": 0,
+      "e": "Wohin?은 4격이에요. die Schublade → in die (15과)."
+    },
+    {
+      "lv": 3,
+      "t": "tr",
+      "q": "과거형으로 바꿔 쓰세요.",
+      "s": "Wir müssen lange warten.",
+      "a": [
+        "Wir mussten lange warten."
+      ],
+      "e": "müssen의 과거형은 움라우트 없이 musste, wir에서 mussten이에요 (13과)."
+    },
+    {
+      "lv": 3,
+      "t": "err",
+      "q": "Ich erinnere mich gut auf den Urlaub.",
+      "x": 4,
+      "r": "Ich erinnere mich gut an den Urlaub.",
+      "ko": "나는 그 휴가를 잘 기억해요.",
+      "e": "sich erinnern은 an + 4격과 함께 써요 (17·18과)."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Sie fragt, ___ wir morgen Zeit haben.",
+      "ko": "그녀는 우리가 내일 시간이 있는지 물어요.",
+      "h": [
+        ""
+      ],
+      "a": [
+        "ob"
+      ],
+      "e": "Ja/Nein 질문을 문장 속에 넣을 때는 ob이에요 (20과)."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "Welcher Satz ist richtig?",
+      "o": [
+        "Ich habe ihm das Buch gegeben, denn er brauchte es.",
+        "Ich habe ihm das Buch gegeben, denn brauchte er es.",
+        "Ich habe das Buch ihm gegeben, weil brauchte er es.",
+        "Ich habe ihm gegeben das Buch, denn er brauchte es."
+      ],
+      "a": 0,
+      "e": "denn은 어순을 바꾸지 않아요. 과거분사 gegeben은 끝이에요 (4·12·19과)."
+    }
+  ]
+}

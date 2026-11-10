@@ -1,0 +1,204 @@
+{
+  "n": "W3",
+  "range": [
+    21,
+    29
+  ],
+  "level": "B1",
+  "ko": "통합 복습 3",
+  "de": "Wiederholung 3 · Lektion 21–29",
+  "goals": [
+    "형용사 어미와 비교급을 문장 속에서 골라요",
+    "시간 접속사와 zu 부정형으로 문장을 이어요",
+    "관계대명사를 역할과 성으로 정해요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich nehme ___ Rucksack hier.",
+      "o": [
+        "diesen",
+        "dieser",
+        "dieses",
+        "diesem"
+      ],
+      "a": 0,
+      "e": "Rucksack은 남성 4격이에요 → diesen (22과)."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Er trägt heute einen ___ Mantel.",
+      "ko": "그는 오늘 검은 외투를 입었어요.",
+      "h": [
+        "schwarz"
+      ],
+      "a": [
+        "schwarzen"
+      ],
+      "e": "einen 뒤 남성 4격은 -en이에요 (24과)."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Mein Bruder ist zwei Jahre ___ als ich.",
+      "o": [
+        "älter",
+        "alter",
+        "mehr alt",
+        "am ältesten"
+      ],
+      "a": 0,
+      "e": "alt의 비교급은 움라우트가 붙어 älter예요 (25과)."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das ist die Frau, ___ ich gestern im Park gesehen habe.",
+      "ko": "이분이 내가 어제 공원에서 본 여자예요.",
+      "h": [
+        ""
+      ],
+      "a": [
+        "die"
+      ],
+      "e": "관계문 속 4격 목적어, 여성 → die (29과)."
+    },
+    {
+      "lv": 1,
+      "t": "err",
+      "q": "Wenn wir letztes Jahr in Rom waren, haben wir viele Museen besucht.",
+      "x": 0,
+      "r": "Als wir letztes Jahr in Rom waren, haben wir viele Museen besucht.",
+      "ko": "우리가 작년에 로마에 있었을 때 박물관을 많이 갔어요.",
+      "e": "과거에 한 번 있었던 때는 als예요 (27과)."
+    },
+    {
+      "lv": 1,
+      "t": "tr",
+      "q": "um … zu로 바꿔 쓰세요.",
+      "s": "Ich lerne Deutsch, damit ich in Wien studieren kann.",
+      "a": [
+        "Ich lerne Deutsch, um in Wien zu studieren."
+      ],
+      "e": "주어가 같으면 damit 대신 um … zu를 써요 (28과)."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir haben vor, morgen sehr früh ___.",
+      "o": [
+        "aufzubrechen",
+        "zu aufbrechen",
+        "aufbrechen",
+        "aufgebrochen"
+      ],
+      "a": 0,
+      "e": "분리동사는 접두어와 동사 사이에 zu가 들어가요 (28과)."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich trinke Tee mit ___ Milch.",
+      "ko": "나는 따뜻한 우유를 넣은 차를 마셔요.",
+      "h": [
+        "warm"
+      ],
+      "a": [
+        "warmer"
+      ],
+      "e": "관사 없는 여성 3격은 강변화 -er이에요 (24과)."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그는 작별 인사도 하지 않고 집을 나갔어요.",
+      "a": [
+        "Er verließ das Haus, ohne sich zu verabschieden.",
+        "Ohne sich zu verabschieden, verließ er das Haus.",
+        "Das Haus verließ er, ohne sich zu verabschieden."
+      ],
+      "e": "ohne … zu 구문이에요. 재귀대명사 sich는 zu 앞에 와요 (17·28과)."
+    },
+    {
+      "lv": 2,
+      "t": "err",
+      "q": "Das ist der Kollege, mit den ich zusammenarbeite.",
+      "x": 5,
+      "r": "Das ist der Kollege, mit dem ich zusammenarbeite.",
+      "ko": "이 사람이 내가 함께 일하는 동료예요.",
+      "e": "mit는 3격 지배예요. 남성 3격 관계대명사는 dem이에요 (29과)."
+    },
+    {
+      "lv": 2,
+      "t": "tr",
+      "q": "nachdem으로 한 문장으로 바꿔 쓰세요.",
+      "s": "Wir hatten gegessen. Danach spülten wir ab.",
+      "a": [
+        "Nachdem wir gegessen hatten, spülten wir ab.",
+        "Wir spülten ab, nachdem wir gegessen hatten."
+      ],
+      "e": "먼저 끝난 일은 과거완료로 nachdem 문장에 넣어요 (26·27과)."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Je länger ich warte, ___ nervöser werde ich.",
+      "o": [
+        "desto",
+        "als",
+        "so",
+        "wie"
+      ],
+      "a": 0,
+      "e": "je + 비교급, desto + 비교급이에요 (25과)."
+    },
+    {
+      "lv": 3,
+      "t": "tr",
+      "q": "관계문으로 한 문장으로 바꿔 쓰세요.",
+      "s": "Ich habe einen Freund. Sein Vater ist Pilot.",
+      "a": [
+        "Ich habe einen Freund, dessen Vater Pilot ist."
+      ],
+      "e": "소유는 dessen(남성·중성) · deren(여성·복수)이에요 (29과)."
+    },
+    {
+      "lv": 3,
+      "t": "err",
+      "q": "Der Mann, der ich geholfen habe, war sehr dankbar.",
+      "x": 2,
+      "r": "Der Mann, dem ich geholfen habe, war sehr dankbar.",
+      "ko": "내가 도와준 그 남자는 아주 고마워했어요.",
+      "e": "helfen은 3격 동사예요. 남성 3격 관계대명사는 dem이에요 (18·29과)."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Das ist das ___ Buch, das ich je gelesen habe.",
+      "ko": "이건 내가 지금까지 읽은 책 중 가장 흥미진진한 책이에요.",
+      "h": [
+        "spannend · 최상급"
+      ],
+      "a": [
+        "spannendste"
+      ],
+      "e": "최상급도 형용사 어미를 받아요. 정관사 뒤 중성 1격 → -e (23·25과)."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "Welcher Satz ist richtig?",
+      "o": [
+        "Es ist wichtig, regelmäßig Sport zu treiben.",
+        "Es ist wichtig, regelmäßig zu Sport treiben.",
+        "Es ist wichtig, zu regelmäßig Sport treiben.",
+        "Es ist wichtig, regelmäßig Sport treiben zu."
+      ],
+      "a": 0,
+      "e": "zu는 원형 바로 앞에 붙고, zu 부정형은 끝에 와요 (28과)."
+    }
+  ]
+}

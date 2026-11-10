@@ -394,5 +394,59 @@
       ],
       "e": "interessiert an + 3격 → an einer Zusammenarbeit.<br>nicht는 형용사 바로 앞, 전치사구는 보통 형용사 앞에 놓아요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "da(r)-를 써서 한 문장으로 바꿔 쓰세요.",
+      "s": "Sie ist froh. Sie hat einen Studienplatz bekommen.",
+      "a": [
+        "Sie ist froh darüber, dass sie einen Studienplatz bekommen hat.",
+        "Sie ist froh darüber, einen Studienplatz bekommen zu haben."
+      ],
+      "e": "froh über에서 über가 문장을 받을 때는 darüber + dass 문장(또는 zu 부정형)이에요."
+    },
+    {
+      "t": "tr",
+      "q": "굵은 글씨 부분을 대명사로 바꿔 쓰세요.",
+      "s": "Er ist an **dem Projekt** beteiligt.",
+      "a": [
+        "Er ist daran beteiligt."
+      ],
+      "e": "사물은 da(r) + 전치사로 받아요. an → daran."
+    },
+    {
+      "t": "tr",
+      "q": "명사 Interesse를 써서 바꿔 쓰세요.",
+      "s": "Ich interessiere mich für Kunst.",
+      "a": [
+        "Ich habe Interesse an Kunst."
+      ],
+      "e": "동사는 für, 명사 Interesse는 an과 함께 써요."
+    },
+    {
+      "t": "err",
+      "q": "Die Kinder sind stolz über ihr Bild.",
+      "x": 4,
+      "r": "Die Kinder sind stolz auf ihr Bild.",
+      "ko": "아이들은 자기들이 그린 그림을 자랑스러워해요.",
+      "e": "stolz는 auf + 4격과 함께 써요."
+    },
+    {
+      "t": "err",
+      "q": "Wir sind sehr gespannt über das Ergebnis.",
+      "x": 4,
+      "r": "Wir sind sehr gespannt auf das Ergebnis.",
+      "ko": "우리는 결과가 정말 궁금해요.",
+      "e": "gespannt는 auf + 4격과 함께 써요."
+    },
+    {
+      "t": "err",
+      "q": "Ich habe keine Lust an Sport.",
+      "x": 4,
+      "r": "Ich habe keine Lust auf Sport.",
+      "ko": "나는 운동할 마음이 없어요.",
+      "e": "Lust는 auf + 4격과 함께 써요."
+    }
   ]
 }

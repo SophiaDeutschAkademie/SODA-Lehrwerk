@@ -417,5 +417,63 @@
       "ok": "서수의 어미 -en은 7과에서 배움",
       "e": "Wir haben … 뒤는 4격이라서 den + 서수 -en이에요.<br>20 이상은 -ste라서 einunddreißigsten이에요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "공식 시각을 일상 시각으로 바꿔 쓰세요.",
+      "s": "Das Training startet um 16:30 Uhr.",
+      "a": [
+        "Das Training startet um halb fünf.",
+        "Das Training startet um halb 5."
+      ],
+      "e": "일상 시각에서 halb fünf는 '다섯 시 반 전', 곧 4시 30분이에요."
+    },
+    {
+      "t": "tr",
+      "q": "공식 시각을 일상 시각으로 바꿔 쓰세요.",
+      "s": "Der Zug kommt um 8:45 Uhr.",
+      "a": [
+        "Der Zug kommt um Viertel vor neun.",
+        "Der Zug kommt um Viertel vor 9."
+      ],
+      "e": "45분은 다음 시각의 15분 전이에요. Viertel vor neun."
+    },
+    {
+      "t": "tr",
+      "q": "가격을 숫자 없이 글자로 바꿔 쓰세요.",
+      "s": "Der Saft kostet 2,80 Euro.",
+      "a": [
+        "Der Saft kostet zwei Euro achtzig.",
+        "Der Saft kostet zwei Euro achtzig Cent."
+      ],
+      "e": "가격은 '유로 + 센트 숫자' 순서로 읽어요. 2,80 → zwei Euro achtzig.",
+      "ok": "kostet … Euro는 가격을 말하는 기본 틀"
+    },
+    {
+      "t": "err",
+      "q": "Die Party beginnt im Freitag.",
+      "x": 3,
+      "r": "Die Party beginnt am Freitag.",
+      "ko": "파티는 금요일에 시작해요.",
+      "e": "요일 앞에는 am을 써요."
+    },
+    {
+      "t": "err",
+      "q": "Wir fahren am August nach Busan.",
+      "x": 2,
+      "r": "Wir fahren im August nach Busan.",
+      "ko": "우리는 8월에 부산에 가요.",
+      "e": "달 앞에는 im을 써요."
+    },
+    {
+      "t": "err",
+      "q": "Heute ist der zweiter März.",
+      "x": 3,
+      "r": "Heute ist der zweite März.",
+      "ko": "오늘은 3월 2일이에요.",
+      "e": "정관사 der 뒤의 서수는 -e로 끝나요. der zweite März.",
+      "ok": "서수 der zweite는 7과(날짜)에서 배움"
+    }
   ]
 }

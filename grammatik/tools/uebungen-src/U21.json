@@ -418,5 +418,58 @@
       "a": 0,
       "e": "불변화사는 약하게 말해요. doch에 강세가 오면 불변화사가 아니라 '그래도·결국'이라는 뜻이에요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "mal을 넣어 부드러운 부탁으로 바꿔 쓰세요.",
+      "s": "Komm her!",
+      "a": [
+        "Komm mal her!"
+      ],
+      "e": "mal은 명령을 가볍고 부드럽게 만들어요. 동사 바로 뒤에 와요."
+    },
+    {
+      "t": "tr",
+      "q": "denn을 넣어 궁금한 마음이 드러나는 질문으로 바꿔 쓰세요.",
+      "s": "Warum lachst du?",
+      "a": [
+        "Warum lachst du denn?"
+      ],
+      "e": "질문의 denn은 관심과 놀라움을 더해요. 주어 뒤에 와요."
+    },
+    {
+      "t": "tr",
+      "q": "doch를 넣어 권하는 말로 바꿔 쓰세요.",
+      "s": "Nimm dir einen Keks!",
+      "a": [
+        "Nimm dir doch einen Keks!"
+      ],
+      "e": "명령문의 doch는 '어서 ~해요'처럼 권하는 느낌을 줘요."
+    },
+    {
+      "t": "err",
+      "q": "Komm denn kurz her!",
+      "x": 1,
+      "r": "Komm mal kurz her!",
+      "ko": "잠깐 이리 좀 와.",
+      "e": "denn은 질문에 쓰는 불변화사예요. 부탁하는 명령에는 mal을 써요."
+    },
+    {
+      "t": "err",
+      "q": "Wie spät ist es ruhig?",
+      "x": 4,
+      "r": "Wie spät ist es denn?",
+      "ko": "지금 몇 시예요?",
+      "e": "ruhig는 '마음 놓고 ~해도 돼요'라는 명령에 써요. 질문에는 denn이에요."
+    },
+    {
+      "t": "err",
+      "q": "Nimm dir bloß noch etwas Suppe!",
+      "x": 2,
+      "r": "Nimm dir ruhig noch etwas Suppe!",
+      "ko": "수프 좀 더 편하게 드세요.",
+      "e": "bloß는 경고나 강한 요구예요. 편하게 권할 때는 ruhig예요."
+    }
   ]
 }

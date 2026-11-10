@@ -386,5 +386,59 @@
       ],
       "e": "Sie 명령형은 동사 + Sie가 맨 앞이에요.<br>das Formular는 4격 es, '그녀에게'는 3격 ihr이고, 대명사 둘은 4격 → 3격 순서예요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "주어를 er로 바꿔 쓰세요.",
+      "s": "Ich lese jeden Abend Krimis.",
+      "a": [
+        "Er liest jeden Abend Krimis."
+      ],
+      "e": "lesen은 er에서 모음이 ie로 바뀌어 liest예요.",
+      "ok": "ich lese jeden … 는 흔한 낱말 연결, 교재 문장과 다름"
+    },
+    {
+      "t": "tr",
+      "q": "du에게 하는 명령문으로 바꿔 쓰세요.",
+      "s": "Du sprichst langsam.",
+      "a": [
+        "Sprich langsam!"
+      ],
+      "e": "e → i로 바뀌는 동사는 du 명령형에서도 바뀐 모음을 써요. sprechen → sprich."
+    },
+    {
+      "t": "tr",
+      "q": "Sie에게 하는 명령문으로 바꿔 쓰세요.",
+      "s": "Sie nehmen den Bus.",
+      "a": [
+        "Nehmen Sie den Bus!"
+      ],
+      "e": "Sie 명령문은 동사 + Sie 순서예요."
+    },
+    {
+      "t": "err",
+      "q": "Er fahrt sehr schnell.",
+      "x": 1,
+      "r": "Er fährt sehr schnell.",
+      "ko": "그는 아주 빨리 운전해요.",
+      "e": "fahren은 er에서 a → ä로 바뀌어요."
+    },
+    {
+      "t": "err",
+      "q": "Du esst zu viel Schokolade.",
+      "x": 1,
+      "r": "Du isst zu viel Schokolade.",
+      "ko": "너는 초콜릿을 너무 많이 먹어.",
+      "e": "essen은 du·er에서 e → i로 바뀌어 isst예요."
+    },
+    {
+      "t": "err",
+      "q": "Nimmst bitte das Brot!",
+      "x": 0,
+      "r": "Nimm bitte das Brot!",
+      "ko": "빵 좀 가져가!",
+      "e": "du 명령형은 -st를 빼요. nehmen → nimm."
+    }
   ]
 }

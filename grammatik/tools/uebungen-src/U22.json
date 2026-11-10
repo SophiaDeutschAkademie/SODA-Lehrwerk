@@ -384,5 +384,59 @@
       "a": 0,
       "e": "hat은 단수 동사예요. alle는 '모든 사람'이라 복수라서 Alle haben angerufen이 돼요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "정관사를 dieser로 바꿔 쓰세요.",
+      "s": "Ich nehme den Mantel.",
+      "a": [
+        "Ich nehme diesen Mantel."
+      ],
+      "e": "dieser는 정관사처럼 변해요. 남성 4격 → diesen."
+    },
+    {
+      "t": "tr",
+      "q": "굵은 글씨 부분을 묻는 질문으로 바꿔 쓰세요(상대는 du).",
+      "s": "Ich nehme **diesen** Rucksack.",
+      "a": [
+        "Welchen Rucksack nimmst du?"
+      ],
+      "e": "정해진 것들 중에서 고를 때는 welcher예요. 남성 4격 → welchen."
+    },
+    {
+      "t": "tr",
+      "q": "명사를 빼고 대명사로 바꿔 쓰세요.",
+      "s": "Ich habe kein Fahrrad.",
+      "a": [
+        "Ich habe keins.",
+        "Ich habe keines."
+      ],
+      "e": "명사 없이 쓰는 kein은 성을 보여 줘요. 중성 4격 → keins(keines)."
+    },
+    {
+      "t": "err",
+      "q": "Jeder Kind bekommt ein Eis.",
+      "x": 0,
+      "r": "Jedes Kind bekommt ein Eis.",
+      "ko": "아이마다 아이스크림을 하나씩 받아요.",
+      "e": "Kind는 중성이라 jedes예요."
+    },
+    {
+      "t": "err",
+      "q": "Welcher Buch liest du gerade?",
+      "x": 0,
+      "r": "Welches Buch liest du gerade?",
+      "ko": "너 지금 어떤 책 읽어?",
+      "e": "Buch는 중성 4격이라 welches예요."
+    },
+    {
+      "t": "err",
+      "q": "Gibt es hier eine Bank? – Ja, dort ist einer.",
+      "x": 9,
+      "r": "Gibt es hier eine Bank? – Ja, dort ist eine.",
+      "ko": "여기 은행 있어요? – 네, 저기 하나 있어요.",
+      "e": "명사 없이 쓰는 ein도 성을 따라요. Bank는 여성이라 eine예요."
+    }
   ]
 }

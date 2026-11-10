@@ -407,5 +407,59 @@
       "a": 0,
       "e": "추측의 dürfen은 늘 dürfte예요. 지난 일 → gewesen sein(과거분사 → sein 순서).<br>durfte는 과거의 허가, darf는 추측에 쓰지 않아요."
     }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "müssen으로 확신하는 추측을 말하는 문장으로 바꿔 쓰세요.",
+      "s": "Ich bin sicher, dass er zu Hause ist.",
+      "a": [
+        "Er muss zu Hause sein."
+      ],
+      "e": "확신이 강한 추측은 müssen + 원형이에요."
+    },
+    {
+      "t": "tr",
+      "q": "können으로 약한 추측을 말하는 문장으로 바꿔 쓰세요.",
+      "s": "Vielleicht ist sie krank.",
+      "a": [
+        "Sie kann krank sein.",
+        "Sie könnte krank sein."
+      ],
+      "e": "가능성이 있는 정도의 추측은 können(könnte) + 원형이에요."
+    },
+    {
+      "t": "tr",
+      "q": "müssen으로 지난 일을 추측하는 문장으로 바꿔 쓰세요.",
+      "s": "Ich bin sicher, dass sie ihren Ausweis vergessen hat.",
+      "a": [
+        "Sie muss ihren Ausweis vergessen haben."
+      ],
+      "e": "지난 일의 추측은 화법조동사 + 과거분사 + haben/sein이에요."
+    },
+    {
+      "t": "err",
+      "q": "Er muss seine Brieftasche verloren sein.",
+      "x": 5,
+      "r": "Er muss seine Brieftasche verloren haben.",
+      "ko": "그가 지갑을 잃어버린 게 틀림없어요.",
+      "e": "verlieren은 haben과 쓰는 동사라 verloren haben이에요."
+    },
+    {
+      "t": "err",
+      "q": "Sie dürfte inzwischen eingeschlafen haben.",
+      "x": 4,
+      "r": "Sie dürfte inzwischen eingeschlafen sein.",
+      "ko": "그녀는 아마 지금쯤 잠들었을 거예요.",
+      "e": "einschlafen은 sein과 쓰는 동사라 eingeschlafen sein이에요."
+    },
+    {
+      "t": "err",
+      "q": "Er muss gestern sehr müde gewesen haben.",
+      "x": 6,
+      "r": "Er muss gestern sehr müde gewesen sein.",
+      "ko": "그는 어제 아주 피곤했던 게 틀림없어요.",
+      "e": "sein의 과거분사 gewesen은 sein과 함께 써요."
+    }
   ]
 }
