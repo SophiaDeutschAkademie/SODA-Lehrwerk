@@ -327,7 +327,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
   .top,.row,button{display:none!important}
 }
 
-.adm{margin-bottom:12px}.adm-h{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px}.adm-line{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line-2);padding:8px 0;font-size:14px;font-variant-numeric:tabular-nums}
+.adm{margin-bottom:8px;padding:0;overflow:hidden}.adm-t{display:flex;align-items:center;gap:10px;width:100%;padding:14px 18px;border:0;border-radius:0;background:transparent;color:var(--ink);text-align:left;font:inherit;cursor:pointer}.adm-t:hover{background:var(--panel-2)}.adm-t .nm{flex:1;min-width:0;display:flex;align-items:center;gap:8px;flex-wrap:wrap}.adm-t .sum{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}.adm-t .chev{flex:none;width:18px;height:18px;color:var(--muted);transition:transform .15s}.adm.open .adm-t .chev{transform:rotate(180deg)}.adm-b{padding:4px 18px 12px;border-top:1px solid var(--line)}.adm-h{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0 8px}.adm-line{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line-2);padding:8px 0;font-size:14px;font-variant-numeric:tabular-nums}
 
 .members{margin:14px 0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--panel);font-size:14px;line-height:1.6;color:var(--ink-2);max-width:34em}
 .members b{color:var(--ink)}
@@ -6113,22 +6113,38 @@ $('#btnTheme').onclick = () => setTheme(document.documentElement.getAttribute('d
 /* ------------------------------------------------------------------ 관리자: 사용 현황 */
 async function showAdmin() {
   show('v-admin');
+  S.admOpen = new Set();
   $('#admBody').innerHTML = '<div class="card"><p class="muted"><span class="spin"></span>불러오는 중입니다.</p></div>';
   try { renderAdmin(await api('/admin/usage', cred())); }
   catch (e) { $('#admBody').innerHTML = '<div class="card"><p class="err">' + esc(e.message) + '</p></div>'; }
 }
 function renderAdmin(d) {
   const box = $('#admBody'); box.innerHTML = '';
+  S.admOpen = S.admOpen || new Set();
   d.accounts.forEach(a => {
     const card = document.createElement('div'); card.className = 'card adm';
     const exs = EXAMS.filter(e => a.levels.includes(e.access || e.level));
-    let html = '<div class="adm-h"><div><b>' + esc(a.name) + '</b>' + (a.admin ? ' <span class="tag">관리자</span>' : '') + '<div class="muted small">열린 시험 키: ' + esc(a.levels.join(', ')) + ' · ' + (a.max >= 999 ? '횟수 제한 없음' : 'Teil당 ' + a.max + '회') + '</div></div>' +
+    let total = 0;
+    exs.forEach(e => e.teile.forEach(T => { total += (a.usage[e.id + '|' + T.n] || {}).n || 0; }));
+    const open = S.admOpen.has(a.name);
+    if (open) card.classList.add('open');
+    let html = '<button class="adm-t" type="button" aria-expanded="' + open + '"><span class="nm"><b>' + esc(a.name) + '</b>' + (a.admin ? '<span class="tag">관리자</span>' : '') + '</span>' +
+      '<span class="sum">연습 ' + total + '회</span>' +
+      '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>' +
+      '<div class="adm-b"' + (open ? '' : ' hidden') + '><div class="adm-h"><div class="muted small">열린 시험 키: ' + esc(a.levels.join(', ')) + ' · ' + (a.max >= 999 ? '횟수 제한 없음' : 'Teil당 ' + a.max + '회') + '</div>' +
       '<button class="ghost" type="button" data-all>전체 초기화</button></div>';
     exs.forEach(e => {
       const cells = e.teile.map(T => { const u = (a.usage[e.id + '|' + T.n] || {}).n || 0; return 'T' + T.n + ' ' + u + (a.admin || a.max >= 999 ? '' : '/' + a.max); }).join(' · ');
       html += '<div class="adm-line"><span><b>' + esc(exTag(e)) + '</b> ' + esc(cells) + '</span><button class="ghost" type="button" data-ex="' + esc(e.id) + '">초기화</button></div>';
     });
+    html += '</div>';
     card.innerHTML = html;
+    const head = $('.adm-t', card), body = $('.adm-b', card);
+    head.onclick = () => {
+      const on = body.hidden;
+      body.hidden = !on; card.classList.toggle('open', on); head.setAttribute('aria-expanded', on);
+      on ? S.admOpen.add(a.name) : S.admOpen.delete(a.name);
+    };
     const doReset = async (exam, label) => {
       if (!confirm(a.name + ' · ' + label + '의 연습 횟수를 0으로 되돌립니다. 계속할까요?')) return;
       try { await api('/admin/reset', { ...cred(), target: a.name, exam }); renderAdmin(await api('/admin/usage', cred())); }
