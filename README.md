@@ -18,7 +18,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `redemittel/` | SODA Alltagsredemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
 | `kuerze-wuerze/` | In der Kürze liegt die Würze | 일상을 위한 MSG, 짧은 표현 플래시카드, A2–C1, 256장과 헷갈리는 짝 |
 | `lernmethoden/` | SODA Lernmethoden | 독일어 공부법, 학습 계획·어휘·문법·읽기·듣기·말하기·쓰기·특별 주제 글 35편 |
-| `sprechen/` | SODA Sprechen | 말하기 실전 연습(시험관·파트너와 Teil별 연습, 평가, 결과 파일). Modelltest 연습 기록은 같은 브라우저(localStorage `soda-sprechen:mdt:<시험 id>`)에도 저장되어, Modelltest 디지털 시험의 「선생님께 제출하기」가 필기 결과와 함께 보냅니다. 소피아 독일어학원 수강생 전용이라 아이디와 비밀번호로 로그인해야 합니다. 목차의 「SODA Modelltest」 묶음 맨 아래 전체 너비 타일과, Goethe A2·B1·B2, telc B1·B2 Modelltest 1·2의 「말하기 실전 연습」 줄에서 열립니다 |
+| `sprechen/` | SODA Sprechen | 말하기 실전 연습(시험관·파트너와 Teil별 연습, 평가, 결과 파일). Modelltest 연습 기록은 같은 브라우저(localStorage `soda-sprechen:mdt:<시험 id>`)에도 저장되어, Modelltest 디지털 시험의 「선생님께 제출하기」가 필기 결과와 함께 보냅니다. 소피아 독일어학원 수강생 전용이라 아이디와 비밀번호로 로그인해야 합니다. 학습 포탈(`HA-REPORT` 저장소)에 로그인한 브라우저에서는 그 로그인으로 바로 들어가서 로그인 화면이 나오지 않습니다(같은 브라우저의 localStorage `soda-portal:session`에 들어 있는 말하기 계정을 씁니다. 자세한 내용은 `HA-REPORT`의 README 「학습 포탈」). 목차의 「SODA Modelltest」 묶음 맨 아래 전체 너비 타일과, Goethe A2·B1·B2, telc B1·B2 Modelltest 1·2의 「말하기 실전 연습」 줄에서 열립니다 |
 | 별도 저장소 `SODA-Goethe` | Goethe A2·B1·B2 모의고사 | Modelltest 10·10·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면, A2·B1·B2·C1 Hochschule에는 쓰기·말하기 시험 대비 가이드 |
 | 별도 저장소 `SODA-TELC` | telc B1·B2·C1 Hochschule 모의고사 | Modelltest 5·7·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면, B1·B2·C1 Hochschule에는 쓰기·말하기 시험 대비 가이드 |
 

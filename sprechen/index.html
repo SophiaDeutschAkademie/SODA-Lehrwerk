@@ -189,6 +189,9 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .login .mark.small{height:54px;width:auto;display:block}
 .login .org{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
 .login button.primary{width:100%;padding:12px}
+/* 학습 포탈 로그인으로 들어가는 동안에는 입력 칸을 보이지 않고 진행 상태만 보여 줍니다 */
+.login.auto .field,.login.auto button.primary,.login.auto .members,.login.auto p.muted{display:none}
+.login.auto .mailnote{margin:14px 0 4px;font-size:14px}
 .cover .go{align-self:flex-start;font-size:17px;padding:14px 28px}
 .cover .fine{font-size:12px;color:var(--muted)}
 
@@ -422,9 +425,9 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
       </ul>
       <div class="cta">
         <button class="primary go" id="btnGo" type="button">시작하기<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        <span class="lockhint"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>수강생 전용 · 로그인 필요</span>
+        <span class="lockhint"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span id="lockText">수강생 전용 · 로그인 필요</span></span>
       </div>
-      <p class="members"><b>소피아 독일어학원 수강생을 위한 페이지입니다.</b> 학원에서 받은 아이디와 비밀번호로 로그인해야 이용할 수 있습니다.</p>
+      <p class="members"><b>소피아 독일어학원 수강생을 위한 페이지입니다.</b> 학원에서 받은 아이디와 비밀번호로 로그인해야 이용할 수 있습니다. 학습 포탈에 로그인한 상태라면 여기서 다시 로그인하지 않습니다.</p>
     </div>
     <aside class="demo" aria-hidden="true">
       <div class="dh"><span class="live"><i></i>연습 화면 예시</span><span class="clk">03:00</span></div>
@@ -449,6 +452,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     <div class="org">Sophia Deutsch Akademie</div>
     <h1>말하기 연습 로그인</h1>
     <p class="members"><b>소피아 독일어학원 수강생을 위한 페이지입니다.</b> 학원에서 받은 아이디와 비밀번호를 입력해야 넘어갈 수 있습니다. 아이디와 비밀번호는 선생님께 문의해 주십시오.</p>
+    <p class="mailnote" id="loginPortal" role="status"></p>
     <label class="field"><span>아이디</span><input id="inId" name="username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" maxlength="30" required></label>
     <label class="field"><span>비밀번호</span><input id="inPw" name="password" type="password" autocomplete="current-password" maxlength="60" required></label>
     <button class="primary" id="btnLogin" type="submit">로그인</button>
@@ -6157,6 +6161,58 @@ function renderAdmin(d) {
 }
 $('#btnAdmin').onclick = showAdmin;
 
+/* ------------------------------------------------------------------ 학습 포탈 로그인 연동 */
+/* 학습 포탈(HA-REPORT)에 로그인하면 같은 주소(github.io)의 localStorage 'soda-portal:session'에 로그인 정보가 남습니다.
+   그 안에 말하기 계정(sp: 아이디와 비밀번호)이 있으면 로그인 화면을 거치지 않고 그 계정으로 바로 로그인합니다.
+   포탈에서 로그아웃하거나 유효 시간(exp)이 지나면 이 정보가 없어지고, 그때는 예전처럼 로그인 화면이 나옵니다. */
+const PORTAL_KEY = 'soda-portal:session';
+function portalSession() {
+  try { const s = JSON.parse(localStorage.getItem(PORTAL_KEY) || 'null'); return s && s.v === 1 && s.exp > Date.now() ? s : null; } catch (e) { return null; }
+}
+function portalCreds() { const s = portalSession(); return s && s.sp && s.sp.id && s.sp.pw ? { id: String(s.sp.id), pw: String(s.sp.pw) } : null; }
+/* 포탈에 로그인한 학생이 여기서 직접 로그인하면 그 계정을 포탈 로그인에 적어 둡니다. 포탈에서 로그아웃할 때까지 다시 묻지 않습니다. */
+function portalRemember(id, pw) {
+  try { const s = portalSession(); if (!s) return; s.sp = { id, pw, src: 'manual' }; localStorage.setItem(PORTAL_KEY, JSON.stringify(s)); } catch (e) { }
+}
+/* 여기서 직접 로그인해 적어 둔 계정은 여기서 로그아웃하면 지웁니다(지웠으면 true). 포탈에 연결된 계정은 포탈에서 로그아웃해야 없어집니다. */
+function portalForget() {
+  try { const s = portalSession(); if (!s || !s.sp || s.sp.src !== 'manual') return false; s.sp = null; localStorage.setItem(PORTAL_KEY, JSON.stringify(s)); return true; } catch (e) { return false; }
+}
+function portalNote(state, text) {
+  const el = $('#loginPortal'); if (!el) return;
+  el.className = 'mailnote' + (state === 'fail' ? ' fail' : '');
+  el.textContent = '';
+  if (state === 'busy') { const sp = document.createElement('span'); sp.className = 'spin'; el.appendChild(sp); }
+  el.appendChild(document.createTextNode(text || ''));
+}
+function loginBusy(on) { ['#inId', '#inPw', '#btnLogin'].forEach(q => { $(q).disabled = on; }); $('#loginForm').classList.toggle('auto', on); }
+function applyLogin(u, pw) {
+  S.pw = pw; S.user = u; S.name = u.id; S.rec = Store.load(u.id);
+  $('#inPw').value = '';
+  S.openEx = myExams().some(e => e.id === S.target) ? S.target : null;
+}
+async function portalLogin() {
+  const c = portalCreds();
+  if (!c) {
+    if (portalSession()) portalNote('', '학습 포탈에 로그인되어 있지만 말하기 계정이 아직 연결되어 있지 않습니다. 여기서 한 번 로그인하면 학습 포탈에서 로그아웃할 때까지 다시 묻지 않습니다.');
+    return;
+  }
+  if (!Store.ok()) return;
+  loginBusy(true);
+  portalNote('busy', '학습 포탈 로그인으로 들어가는 중입니다.');
+  try {
+    const u = await api('/login', { id: c.id, pw: c.pw });
+    if (S.user) return;
+    applyLogin(u, c.pw);
+    portalNote('', '');
+    $('#lockText').textContent = '학습 포탈 로그인됨 · ' + u.id;
+    if (!$('#v-login').hidden) renderToc();
+    flushUnsent();
+  } catch (e) {
+    portalNote('fail', (e.code === 'network' ? '학습 포탈 로그인으로 들어가지 못했습니다. ' + e.message : '학습 포탈에 연결된 말하기 계정으로 로그인하지 못했습니다. 선생님께 알려 주십시오.') + ' 아이디와 비밀번호를 직접 입력해도 됩니다.');
+  } finally { loginBusy(false); }
+}
+
 /* ------------------------------------------------------------------ 로그인 */
 const BAD_LOGIN = '아이디 또는 비밀번호가 맞지 않습니다.';
 async function onLogin(ev) {
@@ -6166,11 +6222,11 @@ async function onLogin(ev) {
   if (!Store.ok()) { err.textContent = '이 브라우저는 연습 기록을 저장할 수 없어 로그인할 수 없습니다. 사생활 보호 모드를 끄고 다시 시도해 주십시오.'; return; }
   btn.disabled = true; btn.textContent = '확인하는 중입니다';
   try {
-    const pw = $('#inPw').value;
-    const u = await api('/login', { id: $('#inId').value, pw });
-    S.pw = pw; S.user = u; S.name = u.id; S.rec = Store.load(u.id);
-    $('#inPw').value = '';
-    S.openEx = myExams().some(e => e.id === S.target) ? S.target : null;
+    const idv = $('#inId').value, pw = $('#inPw').value;
+    const u = await api('/login', { id: idv, pw });
+    applyLogin(u, pw);
+    portalRemember(idv, pw);
+    portalNote('', '');
     renderToc();
     flushUnsent();
   } catch (e) {
@@ -6182,6 +6238,8 @@ function logout() {
   clearInterval(S.prepTimer);
   S.user = null; S.pw = ''; S.rec = null; S.name = ''; S.cur = null; S.openEx = null;
   $('#inPw').value = '';
+  $('#lockText').textContent = '수강생 전용 · 로그인 필요';
+  portalNote('', portalForget() ? '' : (portalCreds() ? '로그아웃했습니다. 학습 포탈에는 계속 로그인되어 있어서, 이 페이지를 새로 열면 말하기 연습에 다시 자동으로 로그인됩니다. 완전히 로그아웃하려면 학습 포탈에서 로그아웃하십시오.' : ''));
   show('v-login');
 }
 
@@ -6203,6 +6261,8 @@ $('#exNotes').addEventListener('input', () => { if (S.cur) S.notes[ckey(S.cur.ex
 /* 모의고사 페이지의 「말하기 실전 연습」 링크로 들어오면(주소 끝 #goethe-b1-2 등) 로그인부터 보여 주고, 로그인 뒤 그 시험을 맨 위에 둡니다. */
 S.target = (() => { const h = decodeURIComponent((location.hash || '').replace(/^#(exam=)?/, '')); return EXAMS.some(e => e.id === h) ? h : null; })();
 show(S.target ? 'v-login' : 'v-cover');
+/* 학습 포탈에 로그인되어 있으면 로그인 화면을 거치지 않습니다. */
+portalLogin();
 
 </script>
 </body>
