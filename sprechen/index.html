@@ -6162,7 +6162,7 @@ function renderAdmin(d) {
 $('#btnAdmin').onclick = showAdmin;
 
 /* ------------------------------------------------------------------ 학습 포탈 로그인 연동 */
-/* 학습 포탈(HA-REPORT)에 로그인하면 같은 주소(github.io)의 localStorage 'soda-portal:session'에 로그인 정보가 남습니다.
+/* 학습 포탈(SODA-LERNPORTAL 저장소)에 로그인하면 같은 주소(github.io)의 localStorage 'soda-portal:session'에 로그인 정보가 남습니다.
    그 안에 말하기 계정(sp: 아이디와 비밀번호)이 있으면 로그인 화면을 거치지 않고 그 계정으로 바로 로그인합니다.
    포탈에서 로그아웃하거나 유효 시간(exp)이 지나면 이 정보가 없어지고, 그때는 예전처럼 로그인 화면이 나옵니다. */
 const PORTAL_KEY = 'soda-portal:session';
