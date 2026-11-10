@@ -176,6 +176,8 @@ ARROW = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
          'stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>')
 BACK = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" '
         'stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>')
+CHEV = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" '
+        'stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>')
 
 CSS = r"""
 :root{
@@ -240,12 +242,22 @@ html[data-theme="dark"] .cta{color:#14181E}
 .eyebrow{margin-top:clamp(24px,5vh,44px);font-size:12px;font-weight:800;letter-spacing:.22em;color:var(--text-m)}
 .side-main>h2{font-size:clamp(22px,2.6vw,28px);font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-top:4px}
 .lead{margin-top:6px;color:var(--text-s);font-size:15.5px;word-break:keep-all}
-.side-r{display:flex;flex-direction:column;gap:clamp(32px,4vw,48px)}
-.cat-h{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px;margin-bottom:6px;padding-bottom:12px;border-bottom:1px solid var(--bd)}
-.cat-h h2{font-size:clamp(20px,2.2vw,26px);font-weight:800;letter-spacing:-.025em;color:var(--accent)}
+/* 분류는 닫힌 상태로 두고, 누르면 글 목록이 아래에 열린다 */
+.side-r{display:flex;flex-direction:column}
+.cat{border-bottom:1px solid var(--bd)}
+.cat-hd{font:inherit}
+.cat-h{position:relative;display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 14px;width:100%;padding:18px 52px 18px 4px;border:0;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .15s}
+.cat-h .cat-n{font-size:clamp(20px,2.2vw,26px);line-height:1.3;font-weight:800;letter-spacing:-.025em;color:var(--accent)}
 .cat-h .ko{font-size:14px;font-weight:700;color:var(--text-s)}
-.cat-h .note{font-size:13.5px;color:var(--text-m);width:100%;word-break:keep-all}
+.cat-h .cnt{font-size:12.5px;font-weight:700;color:var(--text-l);letter-spacing:.02em}
+.cat-h .note{font-size:13.5px;line-height:1.55;color:var(--text-m);width:100%;word-break:keep-all}
+.cat-h .chev{position:absolute;right:6px;top:50%;width:30px;height:30px;margin-top:-15px;display:grid;place-items:center;color:var(--text-l);transition:transform .3s var(--ease),color .2s}
+.cat-h .chev svg{width:16px;height:16px}
+.cat.open .chev{color:var(--accent);transform:rotate(180deg)}
+@media (hover:hover){.cat-h:hover{background:var(--bg-s)}.cat-h:hover .chev{color:var(--accent)}}
 .rows{list-style:none}
+.cat.open .rows{padding-bottom:12px;border-top:1px solid var(--bd-l);animation:viewIn .35s var(--ease) both}
+.rows li:last-child .row{border-bottom:0}
 .row{display:flex;gap:16px;align-items:flex-start;padding:16px 4px;border-bottom:1px solid var(--bd-l);transition:background .15s}
 .row:hover{background:var(--bg-s)}
 .row .n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--accent-bg);color:var(--accent);display:grid;place-items:center;font-size:13px;font-weight:800;margin-top:2px}
@@ -256,7 +268,7 @@ html[data-theme="dark"] .cta{color:#14181E}
 .row .go{flex:none;align-self:center;width:30px;height:30px;color:var(--text-l);display:grid;place-items:center;transition:color .2s,transform .25s var(--ease)}
 .row .go svg{width:16px;height:16px}
 .row:hover .go{color:var(--accent);transform:translateX(3px)}
-.foot{margin-top:8px;font-size:12.5px;letter-spacing:.04em;color:var(--text-m);line-height:1.7}
+.foot{margin-top:28px;font-size:12.5px;letter-spacing:.04em;color:var(--text-m);line-height:1.7}
 
 /* 글 */
 .reader{max-width:760px;margin:0 auto;padding:68px clamp(18px,5vw,32px) 96px}
@@ -365,6 +377,16 @@ JS = r"""
     window.scrollTo(0,0);
     if(moved){var f=el.querySelector('h1'); if(f){try{f.focus({preventScroll:true});}catch(e){f.focus();}}}
   }
+  // 목차의 분류: 누르면 글 목록을 열고, 다시 누르면 닫는다
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.cat-h'); if(!b)return;
+    var on=b.getAttribute('aria-expanded')!=='true';
+    var ul=document.getElementById(b.getAttribute('aria-controls'));
+    var sec=b.closest('.cat');
+    b.setAttribute('aria-expanded',on?'true':'false');
+    if(ul)ul.hidden=!on;
+    if(sec){if(on)sec.classList.add('open');else sec.classList.remove('open');}
+  });
   var au=null, cur=null;
   function stop(){if(au){au.pause();au=null;} if(cur){cur.classList.remove('on');cur=null;}}
   document.addEventListener('click',function(e){
@@ -417,9 +439,12 @@ def build():
                 '<span class="go" aria-hidden="true">%s</span></a></li>'
                 % (a['id'], a['no'], esc(a['title']), esc(a['sum']), ARROW))
         toc.append(
-            '<section class="cat" aria-labelledby="cat-%s"><header class="cat-h"><h2 id="cat-%s">%s</h2>'
-            '<span class="ko">%s</span><span class="note">%s</span></header><ul class="rows">%s</ul></section>'
-            % (cid, cid, de, ko, esc(note), ''.join(rows)))
+            '<section class="cat" aria-labelledby="cat-%s"><h2 class="cat-hd"><button type="button" class="cat-h" '
+            'aria-expanded="false" aria-controls="rows-%s"><span class="cat-n" id="cat-%s">%s</span>'
+            '<span class="ko">%s</span><span class="cnt">글 %d편</span><span class="note">%s</span>'
+            '<span class="chev" aria-hidden="true">%s</span></button></h2>'
+            '<ul class="rows" id="rows-%s" hidden>%s</ul></section>'
+            % (cid, cid, cid, de, ko, len(series[cid]), esc(note), CHEV, cid, ''.join(rows)))
 
     # 글
     pages = []
@@ -507,7 +532,7 @@ def build():
         <h1 class="big" tabindex="-1"><span class="t1">SODA</span><span class="t2">Lernmethoden</span></h1>
         <p class="eyebrow">INHALT</p>
         <h2>독일어 공부법</h2>
-        <p class="lead">읽고 싶은 글을 고르세요. 분류마다 글이 번호 순서로 이어집니다.</p>
+        <p class="lead">분류를 누르면 글 목록이 아래에 열립니다. 분류마다 글이 번호 순서로 이어집니다.</p>
       </div>
     </aside>
     <div class="side-r">
