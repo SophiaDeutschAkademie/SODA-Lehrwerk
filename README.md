@@ -1,6 +1,6 @@
 # SODA Lehrwerk
 
-Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 열일곱 가지 학습 자료를 골라 열 수 있어요.
+Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 스물한 가지 학습 자료를 골라 열 수 있어요.
 
 ## 학습 자료
 
@@ -11,6 +11,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `hoertraining/` | Lehrwerk Hörtraining | 듣기 훈련, A1–C1, 88세트 |
 | `schreibtraining/` | SODA Schreibtraining | 쓰기 훈련, A1–C1 레벨별 5챕터(총 25개), 챕터마다 구성·표현·연습·쓰기·모범답안, 「선생님께 제출하기」(소피아 독일어학원 수강생 전용 안내 팝업) |
 | `sprechtraining/` | SODA Sprechtraining | 말하기 훈련, A1–C1과 MZ 구어체, 대화 36개, 독일어 음성 433줄 |
+| `diktattraining/` | SODA Diktattraining | 받아쓰기 훈련, A1–C1, 문장 646개(64세트), 문장마다 음성, 틀린 곳을 종류별로 표시(어미·관사·철자·빠진 단어 등), 다시 쓸 문장, 나의 기록, 「선생님께 기록 보내기」(소피아 독일어학원 수강생 전용 안내 팝업) |
 | `vokalab/` | SODA Vokalab | 독일어 단어장, A1–C1, 12,724단어, 주차별 목표와 테스트 |
 | `praepositionen/` | SODA Präpositionen | 독일어 전치사의 모든 것, 전치사 80개, 비교, 퀴즈 |
 | `verben-mit-praepositionen/` | Verben mit Präpositionen | 동사와 전치사 결합 플래시카드, A1–C2, 324장 |
@@ -46,6 +47,7 @@ lesetraining/     SODA-Lehrwerk-Lesetraining 저장소의 내용
 hoertraining/     SODA-Lehrwerk-Hoertraining 저장소의 내용
 sprechtraining/   SODA-SPRECHTRAINING 저장소의 내용 (대화 앱, 음성 mp3 포함)
 schreibtraining/  쓰기 훈련 (챕터 데이터는 data/chapters.js, 화면은 assets/app.js)
+diktattraining/   받아쓰기 훈련 (문장은 data/saetze.js, 문장별 음성은 audio/, 채점은 assets/grade.js, 만드는 스크립트는 tools/build.py)
 vokalab/          VOKALAB 단어장 (A1–C1, 단일 HTML)
 praepositionen/   이 저장소(SODA-PRP)에 있던 전치사 앱
 verben-mit-praepositionen/   SODA-VP 저장소의 내용
@@ -80,6 +82,19 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 - 한국어 설명과 해석은 해요체로 씁니다. B1 이상 격식 편지의 해석만 합니다체로 씁니다.
 - 레벨 화면의 제목과 소개 문장은 `schreibtraining/assets/app.js` 맨 위 `LEVELS`에 있습니다. 챕터 구성이 바뀌면 함께 고칩니다.
 
+## 받아쓰기 훈련(`diktattraining/`) 고치기
+
+- 문장은 새로 쓴 것이 아니라 `hoertraining/`(줄 단위 시작·끝 시각이 있는 지문)과 `sprechtraining/`(줄마다 음성이 있는 대화, MZ 챕터 제외)에서 3–12단어 줄을 골라 온 것입니다. `python3 diktattraining/tools/build.py`가 줄을 고르고, 문장마다 음성 파일 `audio/<레벨>/<문장 id>.mp3`를 만들고, 앱이 읽는 `data/saetze.js`를 씁니다(ffmpeg, node, numpy 필요). 이미 있는 음성은 다시 만들지 않고, `--audio`를 붙이면 모두 다시 만듭니다.
+- 받아쓰기에 맞지 않는 줄은 빠집니다. 규칙(말줄임, 줄임말, 낱글자와 철자 부르기, 대문자 약어, 숫자 나열 등)은 `tools/build.py`의 `reason()`에 있고, 한 줄씩 따로 뺀 것은 이유와 함께 `tools/ausschluss.json`에 있습니다. 음성 인식 두 가지로 받아 적어 원문과 다르게 들린 줄(구어 축약, 음성이 불분명한 낱말)도 이 목록으로 뺐습니다.
+- 이름 힌트(입력란 위에 미리 보여 주는 사람 이름·지명·상호)는 `tools/build.py`의 `NAMES`에 있습니다. `Herr`·`Frau` 뒤의 성은 목록에 없어도 힌트가 됩니다.
+- 세트 구성은 `tools/sets.json`에 적혀 있고 한 번 정해지면 바뀌지 않습니다. 학생의 기록이 세트 id(`a1-01`)와 문장 id(`h-a1-08-a-kino-01`, `s-a1-02-08`)로 저장되기 때문입니다. 새로 생긴 문장은 그 레벨의 새 세트로 뒤에 붙고, 재료에서 없어진 문장은 세트에서 빠집니다. `sets.json`을 지우고 다시 만들면 세트가 처음부터 다시 나뉘어 학생의 진행 기록과 어긋나니 지우지 않습니다.
+- `hoertraining/`의 줄 원문·시각이나 `sprechtraining/`의 대화 줄·음성을 고쳤다면 `build.py`를 다시 실행합니다. 원문이 바뀐 문장은 그 문장의 음성 파일을 지운 뒤 실행해야 음성도 새로 만들어집니다.
+- 다시 만든 뒤에는 `diktattraining/index.html`의 `saetze.js?v=` 값을 바꿔야 학생 기기에 새 내용이 나와요. 음성 파일을 바꿨다면 `assets/app.js`의 `AUDIO_V`도 올립니다.
+- 채점 규칙은 `assets/grade.js` 맨 위 설명에 있습니다. 문장부호와 문장 첫 글자의 대소문자는 보지 않고, 숫자는 글자와 숫자를 모두 받고, 둘 다 쓰는 표기(Tschüs·Tschüss, geht's·gehts, zu Hause·zuhause)는 모두 맞게 처리합니다. 틀린 곳은 어미, 관사·대명사, 대소문자, 움라우트·ß, 철자, 띄어쓰기, 빠진 단어, 더 쓴 단어, 다른 단어로 나눕니다.
+- 학생의 기록은 학생 기기의 브라우저(localStorage `soda-diktat-v1`)에 저장됩니다. 끝낸 세트, 하던 연습, 다시 쓸 문장(1차에서 틀린 문장), 연습 기록이 들어 있어요.
+- 「선생님께 기록 보내기」는 Lesetraining·Hörtraining·Schreibtraining과 같은 Apps Script 주소로 보냅니다. 앱 이름은 `Diktattraining`으로 가고, 본문에 끝낸 세트, 1차·최종 정확도, 틀린 종류, 1차에서 틀린 문장(정답과 학생이 쓴 문장)이 들어 있습니다.
+- 한국어 설명은 해요체로 씁니다.
+
 ## 다크 모드
 
 모든 앱과 목차에 다크 모드 버튼(해·달 아이콘)이 있습니다. 처음 열면 다크 모드로 시작하고, 버튼을 누르면 라이트 모드로 바뀝니다. 선택은 브라우저에 저장되며 `soda-theme` 하나를 모든 앱이 함께 씁니다. 그래서 한 앱에서 바꾸면 다른 앱에도 같은 모드가 적용돼요. 각 `index.html`에 `soda-theme-js`(버튼과 저장)와 `soda-dark`(다크 색) 블록이 들어 있습니다. 모의고사 여섯 앱(`SODA-Goethe`, `SODA-TELC` 저장소)은 `index.html`과 `digital.html` 모두에 같은 블록이 들어 있어요.
@@ -104,7 +119,7 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 - **페이지마다 검색용 태그**: 목차와 각 앱의 `<title>`, 설명, canonical 주소, 카카오톡 미리보기(og 태그)를 `tools/seo.py`가 `<!-- seo:begin -->` … `<!-- seo:end -->` 사이에 넣습니다. 제목과 설명을 고치려면 `tools/seo.py`의 `PAGES`를 고친 뒤 `python3 tools/seo.py`를 실행합니다. 여러 번 실행해도 태그는 한 번만 들어갑니다. 앱의 index.html을 통째로 새로 만드는 빌드를 돌렸다면 이 스크립트를 다시 실행합니다.
 - **검색에서 빼는 페이지**: 수강생 전용 `sprechen/`과 옛 모의고사 주소 안내 `zertifikat/`에는 noindex 태그가 들어갑니다(`NOINDEX`).
 - **공부법 글 페이지**: `lernmethoden/build.py`가 앱(`lernmethoden/index.html`)과 함께 글마다 본문이 HTML에 그대로 들어 있는 페이지 `lernmethoden/a/<글 id>.html`을 만듭니다. 앱 안의 글은 주소가 `#a/…`라서 검색엔진이 글 하나하나를 따로 찾지 못하기 때문입니다. 원고를 고치면 `python3 lernmethoden/build.py`만 실행하면 되고, 끝날 때 `tools/seo.py`도 자동으로 실행됩니다.
-- **sitemap.xml**: 목차, 앱 12개, 공부법 글 35편의 주소입니다. 네이버 서치어드바이저와 구글 서치 콘솔에 `https://sophiadeutschakademie.github.io/SODA-Lehrwerk/sitemap.xml`로 제출합니다.
+- **sitemap.xml**: 목차, 앱 13개, 공부법 글 35편의 주소입니다. 네이버 서치어드바이저와 구글 서치 콘솔에 `https://sophiadeutschakademie.github.io/SODA-Lehrwerk/sitemap.xml`로 제출합니다.
 
 사이트 소유 확인 코드는 `tools/seo.py`의 `VERIFY`에 적고 스크립트를 실행하면 목차(`index.html`) 머리에 들어갑니다.
 

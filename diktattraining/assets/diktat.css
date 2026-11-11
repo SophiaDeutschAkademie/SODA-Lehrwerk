@@ -1,0 +1,230 @@
+/* SODA DIKTATTRAINING · 받아쓰기 훈련 전용 스타일 (base.css 다음에 읽음) */
+
+html{-webkit-hyphenate-character:"-";hyphenate-character:"-"}
+
+/* 표지: 긴 제목 */
+.title .t2.long{font-size:.74em;letter-spacing:-.035em}
+
+/* 레벨 카드: 다시 쓸 문장 */
+.lv-done.dk-rv{color:var(--text-m)}
+
+/* 아래쪽 이동 단추 */
+.dk-links{margin-top:26px}
+.dk-links .btn{height:44px;font-size:14px}
+.dk-links + .dk-links{margin-top:10px}
+.dk-del{color:var(--text-m)}
+
+/* 세트 목록 */
+.dk-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr))}
+.dk-grid .card{padding:16px 18px 14px}
+.dk-grid .card-top{margin-bottom:10px}
+.dk-grid .num{font-size:32px}
+.dk-grid .card-de{font-size:17px}
+.dk-grid .card-ko{font-family:var(--f-serif);font-size:14.5px;font-weight:500;color:var(--text-s);overflow-wrap:anywhere}
+.dk-grid .card-foot{min-height:24px;padding-top:10px}
+.dk-grid .card-foot .meta{margin-left:0;padding-left:0}
+.dk-rev{display:flex;align-items:center;gap:14px;margin:0 0 16px;padding:14px 18px;border:1px solid var(--accent-bd);border-radius:16px;background:var(--accent-l);color:var(--accent-d);transition:border-color .2s}
+.dk-rev:hover{border-color:var(--accent)}
+.dk-rev > svg{flex:none;width:22px;height:22px}
+.dk-rev > span:nth-child(2){flex:1;min-width:0;display:flex;flex-direction:column;gap:1px}
+.dk-rev b{font-size:15.5px;font-weight:800}
+.dk-rev small{font-size:13px;color:var(--text-s);word-break:keep-all}
+
+/* ───────── 받아쓰기 화면 ───────── */
+.dk{max-width:720px}
+.dk-count{display:inline-flex;align-items:baseline;gap:3px;height:36px;padding:0 12px;border:1px solid var(--bd);border-radius:10px;background:var(--bg-c);font-size:13px;font-weight:600;color:var(--text-m);line-height:34px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.dk-count b{font-size:15px;font-weight:800;color:var(--accent)}
+.dk-steps{display:flex;gap:5px;margin:18px 0 14px}
+.dk-steps i{flex:1;height:6px;border-radius:3px;background:var(--bd)}
+.dk-steps i.on{background:var(--accent)}
+.dk-steps i.ok{background:var(--ok)}
+.dk-steps i.mid{background:#D9A93C}
+.dk-steps i.no{background:var(--no)}
+.dk-card{background:var(--bg-c);border:1px solid var(--bd);border-radius:20px;padding:clamp(16px,3.5vw,26px)}
+.dk-ctx{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin-bottom:16px;font-size:14px;line-height:1.4}
+.dk-ctx .chip{align-self:center}
+.dk-ctx-de{font-family:var(--f-serif);font-size:16px;font-weight:600;color:var(--text)}
+.dk-ctx-ko{font-size:13px;color:var(--text-m);font-weight:500}
+.dk-play{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.dk-pbtn{flex:none;width:64px;height:64px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;transition:background .2s,transform .15s}
+.dk-pbtn:hover{background:var(--accent-d)}
+.dk-pbtn:active{transform:scale(.96)}
+.dk-pbtn svg{width:30px;height:30px}
+.dk-pbtn.on{animation:dkPulse 1.4s ease-in-out infinite}
+@keyframes dkPulse{0%,100%{box-shadow:0 0 0 0 rgba(56,69,104,.35)}50%{box-shadow:0 0 0 10px rgba(56,69,104,0)}}
+.dk-pinfo{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.35}
+.dk-pinfo b{font-size:16px;font-weight:800}
+.dk-pinfo span{font-size:13px;color:var(--text-m);word-break:keep-all}
+.dk-play .toggle{flex:none}
+.dk-names{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:10px}
+.dk-names > span{font-size:12.5px;font-weight:700;color:var(--text-m);margin-right:2px}
+.dk-names button{height:32px;padding:0 12px;border:1px dashed var(--accent-bd);border-radius:999px;background:var(--accent-l);font:600 15px/1 var(--f-serif);color:var(--accent-d)}
+.dk-names button:hover{border-style:solid;border-color:var(--accent)}
+.dk-ta{display:block;width:100%;min-height:96px;padding:14px 16px;border:1.5px solid var(--bd);border-radius:14px;background:var(--bg);color:var(--text);font-size:calc(19px * var(--scale));line-height:1.6;resize:vertical;transition:border-color .15s}
+.dk-ta:focus{outline:none;border-color:var(--accent)}
+.dk-ta[readonly]{background:var(--bg-s);color:var(--text-s)}
+.dk-ta::placeholder{color:var(--text-l);font-family:var(--f-sans);font-size:15px}
+.dk-kb{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.dk-kb button{min-width:40px;height:38px;padding:0 8px;border:1px solid var(--bd);border-radius:9px;background:var(--bg-c);font:600 17px/1 var(--f-serif);color:var(--text-s)}
+.dk-kb button:hover{border-color:var(--accent);color:var(--accent)}
+.dk-actions{display:flex;gap:10px;margin-top:16px}
+.dk-actions .btn{flex:1;min-width:0;padding:0 14px}
+.dk-actions .btn.sec{flex:0 1 auto}
+.dk-tip{margin-top:12px;font-size:12.5px;color:var(--text-l);text-align:center;word-break:keep-all}
+
+/* 채점 결과 */
+.dk-fb:empty{display:none}
+.dk-fb{margin-top:16px;padding-top:16px;border-top:1px dashed var(--bd)}
+.dk-msg{display:flex;align-items:flex-start;gap:9px;padding:11px 14px;border-radius:12px;font-size:14.5px;line-height:1.55;word-break:keep-all}
+.dk-msg svg{flex:none;width:19px;height:19px;margin-top:2px}
+.dk-msg span{flex:1;min-width:0}
+.dk-msg.ok{background:var(--ok-bg);color:var(--ok);border:1px solid var(--ok-bd)}
+.dk-msg.no{background:var(--no-bg);color:var(--no);border:1px solid var(--no-bd)}
+.dk-msg.mid{background:var(--accent-l);color:var(--accent-d);border:1px solid var(--accent-bd)}
+.dk-line{margin-top:14px}
+.dk-l{display:block;font-size:12px;font-weight:800;color:var(--text-m);letter-spacing:.06em;margin-bottom:4px}
+.dk-s{font-size:calc(19px * var(--scale));line-height:1.75;color:var(--text);overflow-wrap:break-word}
+.dk-ans{font-weight:600}
+.w.no{text-decoration:underline wavy var(--no);text-decoration-thickness:1.5px;text-underline-offset:4px;color:var(--no)}
+.w.xt{text-decoration:line-through;text-decoration-color:var(--no);color:var(--text-m)}
+.w.gap{display:inline-block;width:2.2em;height:1.1em;vertical-align:-.18em;border:1.5px dashed var(--no);border-radius:5px;background:var(--no-bg)}
+.w.hl{background:var(--hl);border-radius:4px;padding:0 2px;box-shadow:0 0 0 1px var(--hl)}
+.dk-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.dk-chip{display:inline-flex;align-items:center;height:24px;padding:0 9px;border-radius:999px;background:var(--bg-s);color:var(--text-s);font:700 12px/1 var(--f-sans);white-space:nowrap}
+.dk-legend{margin-top:10px;font-size:12.5px;color:var(--text-m);line-height:1.9;word-break:keep-all}
+.dk-legend .w{font-size:12.5px;margin-left:8px}
+.dk-legend .w:first-child{margin-left:0}
+.dk-legend .w.gap{width:1.6em;height:.95em}
+.dk-errs{list-style:none;display:grid;gap:6px;margin-top:10px}
+.dk-errs li{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-family:var(--f-serif);font-size:calc(16.5px * var(--scale));line-height:1.5}
+.dk-errs s{color:var(--no);text-decoration-thickness:1.5px}
+.dk-errs b{font-weight:700;color:var(--ok)}
+.dk-errs i{font-style:normal;color:var(--text-l);font-family:var(--f-sans)}
+.dk-ko{margin-top:14px;padding:10px 14px;border-radius:10px;background:var(--accent-l);color:var(--text-s);font-size:calc(15px * var(--scale));line-height:1.65;word-break:keep-all}
+.dk-none{font-family:var(--f-sans);font-size:14px;color:var(--text-m)}
+
+/* ───────── 결과 · 기록 ───────── */
+.dk-h1{font-size:clamp(24px,4vw,30px);font-weight:800;letter-spacing:-.01em;line-height:1.3}
+.dk-score{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.dk-score li{display:flex;flex-direction:column;gap:2px;padding:16px 16px 14px;border:1px solid var(--bd);border-radius:16px;background:var(--bg-c)}
+.dk-score li:first-child{background:var(--accent);border-color:var(--accent);color:#fff}
+.dk-score span{font-size:12.5px;font-weight:700;opacity:.85}
+.dk-score b{font-size:clamp(28px,6vw,38px);font-weight:800;letter-spacing:-.03em;line-height:1.1;font-variant-numeric:tabular-nums}
+.dk-score b small{font-size:.5em;font-weight:700;letter-spacing:0;opacity:.8}
+.dk-score em{font-style:normal;font-size:12px;opacity:.75;word-break:keep-all}
+.dk-box{background:var(--bg-c);border:1px solid var(--bd);border-radius:18px;padding:20px clamp(16px,3.5vw,26px);margin-top:14px}
+.dk-h{font-size:17px;font-weight:800;margin-bottom:12px}
+.dk-note{margin-top:12px;font-size:13.5px;line-height:1.6;color:var(--text-m);word-break:keep-all;text-align:justify}
+.dk-bars{list-style:none;display:grid;gap:8px}
+.dk-bars li{display:grid;grid-template-columns:7.2em 1fr 2.2em;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--text-s)}
+.dk-bars i{display:block;height:10px;border-radius:99px;background:var(--bg-s);overflow:hidden}
+.dk-bars i b{display:block;height:100%;border-radius:99px;background:var(--accent)}
+.dk-bars em{font-style:normal;font-weight:800;color:var(--text);text-align:right;font-variant-numeric:tabular-nums}
+.dk-list{list-style:none;display:grid;gap:10px}
+.dk-list li{display:flex;gap:12px;padding:12px 14px;border:1px solid var(--bd-l);border-left:4px solid var(--bd);border-radius:12px;background:var(--bg)}
+.dk-list li.ok{border-left-color:var(--ok)}
+.dk-list li.mid{border-left-color:#D9A93C}
+.dk-list li.no{border-left-color:var(--no)}
+.dk-list li > div{flex:1;min-width:0}
+.dk-rn{flex:none;width:1.6em;font-size:14px;font-weight:800;color:var(--text-m);font-variant-numeric:tabular-nums;padding-top:5px}
+.dk-list .dk-s{font-size:calc(17.5px * var(--scale));line-height:1.6}
+.dk-mine{margin-top:4px;font-size:calc(16px * var(--scale));line-height:1.6;color:var(--text-s);overflow-wrap:break-word}
+.dk-mine .dk-l{display:inline-block;margin:0 8px 0 0;font-family:var(--f-sans);vertical-align:.08em}
+.dk-rm{margin-top:4px;font-size:12.5px;font-weight:600;color:var(--text-m)}
+.dk-res-act{margin-top:20px}
+.dk-page{max-width:820px}
+.dk-tw{overflow-x:auto}
+.dk-table{width:100%;border-collapse:collapse;font-size:14.5px;font-variant-numeric:tabular-nums}
+.dk-table th,.dk-table td{padding:9px 8px;text-align:center;border-bottom:1px solid var(--bd-l);white-space:nowrap}
+.dk-table thead th{font-size:12.5px;font-weight:700;color:var(--text-m)}
+.dk-table tbody th{font-weight:800;color:var(--accent)}
+.dk-table tbody tr:last-child th,.dk-table tbody tr:last-child td{border-bottom:0}
+.dk-recent{list-style:none;display:grid;gap:0}
+.dk-recent li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;padding:9px 0;border-bottom:1px solid var(--bd-l);font-size:14px;color:var(--text-s)}
+.dk-recent li:last-child{border-bottom:0}
+.dk-recent b{font-weight:800;color:var(--text)}
+.dk-d{font-size:12.5px;color:var(--text-m);font-variant-numeric:tabular-nums}
+.dk-recent li span:last-child{margin-left:auto;font-weight:600}
+
+/* ───────── 이렇게 공부하세요 ───────── */
+.dk-how{list-style:none;display:grid;gap:14px}
+.dk-how li{display:flex;gap:14px}
+.dk-n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+.dk-how li > div{flex:1;min-width:0;padding-top:3px}
+.dk-how b{font-size:15.5px;font-weight:800}
+.dk-how p{margin-top:3px;font-size:14.5px;line-height:1.65;color:var(--text-s);word-break:keep-all;text-align:justify}
+.dk-rules{list-style:none;display:grid;gap:8px}
+.dk-rules li{position:relative;padding-left:18px;font-size:14.5px;line-height:1.65;color:var(--text-s);word-break:keep-all;text-align:justify}
+.dk-rules li::before{content:"";position:absolute;left:3px;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.dk-types{display:grid;gap:10px}
+.dk-types > div{display:grid;grid-template-columns:7.2em 1fr;gap:12px;align-items:baseline}
+.dk-types dt{font-size:14px;font-weight:800;color:var(--accent-d)}
+.dk-types dd{font-size:14.5px;line-height:1.65;color:var(--text-s);word-break:keep-all;text-align:justify}
+
+/* ───────── 보내기 팝업 ───────── */
+.dk-only{display:flex;gap:12px;align-items:flex-start;margin:4px 0 16px;padding:14px 16px;border-radius:14px;background:var(--accent-l);border:1px solid var(--accent-bd)}
+.dk-only-i{flex:none;display:flex;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;align-items:center;justify-content:center}
+.dk-only-i svg{width:18px;height:18px}
+.dk-only b{display:block;font-size:15px;font-weight:800;color:var(--accent-d);line-height:1.45;word-break:keep-all}
+.dk-only p{margin-top:6px;font-size:13.5px;line-height:1.6;color:var(--text-s);word-break:keep-all;text-align:justify}
+.dk-sum{border:1px solid var(--bd-l);border-radius:14px;padding:12px 14px;background:var(--bg)}
+.dk-sum ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.dk-sum li{display:flex;flex-direction:column;align-items:center;gap:1px;padding:8px 4px;border-radius:10px;background:var(--bg-s)}
+.dk-sum li span{font-size:11.5px;font-weight:700;color:var(--text-m)}
+.dk-sum li b{font-size:17px;font-weight:800;color:var(--text);font-variant-numeric:tabular-nums}
+.dk-sum li small{font-size:11px;color:var(--text-l)}
+.dk-warn{margin-top:10px;font-size:13px;font-weight:600;color:#B07A12;text-align:center;word-break:keep-all}
+.xp-in h2[tabindex]:focus{outline:none}
+
+/* ───────── 핸드폰 ───────── */
+@media(max-width:620px){
+  .dk-steps{margin:12px 0 10px;gap:4px}
+  .dk-card{border-radius:16px;padding:14px}
+  .dk-ctx{margin-bottom:12px}
+  .dk-ctx-de{font-size:15px}
+  .dk-play{gap:12px;margin-bottom:12px}
+  .dk-pbtn{width:56px;height:56px}
+  .dk-pbtn svg{width:26px;height:26px}
+  .dk-pinfo b{font-size:15px}
+  .dk-pinfo span{font-size:12.5px}
+  .dk-ta{min-height:84px;padding:12px 13px;font-size:18px}
+  .dk-kb button{min-width:0;flex:1;height:40px}
+  .dk-actions .btn{height:48px;font-size:15px}
+  .dk-s{font-size:18px}
+  .dk-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .dk-grid .card{padding:11px 12px 10px}
+  .dk-grid .num{font-size:22px}
+  .dk-grid .card-de{font-size:14.5px}
+  .dk-grid .card-ko{font-size:12.5px}
+  .dk-grid .card .chip{font-size:10.5px;height:22px;padding:0 7px}
+  .dk-grid .card-foot{min-height:0;padding-top:6px}
+  .dk-grid .card-foot:empty{display:none}
+  .dk-grid .card-foot .meta{font-size:10.5px;white-space:normal}
+  .dk-score{gap:6px}
+  .dk-score li{padding:12px 10px 10px;border-radius:13px}
+  .dk-score span{font-size:11.5px}
+  .dk-score em{font-size:11px}
+  .dk-box{padding:16px 14px;border-radius:15px}
+  .dk-bars li{grid-template-columns:6.4em 1fr 2em;font-size:13px}
+  .dk-types > div{grid-template-columns:1fr;gap:1px}
+  .dk-how p,.dk-rules li,.dk-types dd,.dk-note,.dk-only p{text-align:left}
+  .dk-res-act .btn,.dk-links .btn{flex:1 1 100%}
+  .dk-rev{padding:12px 14px}
+  .dk-rev small{font-size:12px}
+  .dk-rev .arrow{display:none}
+}
+@media(max-width:360px){
+  .dk-play .toggle{padding:0 10px;font-size:12px}
+  .dk-pinfo span{display:none}
+}
+
+/* ───────── 다크 모드 ───────── */
+html[data-theme="dark"] .dk-pbtn,html[data-theme="dark"] .dk-n,html[data-theme="dark"] .dk-only-i,html[data-theme="dark"] .dk-score li:first-child{color:#14181E}
+html[data-theme="dark"] .dk-warn{color:#E0B060}
+html[data-theme="dark"] .dk-steps i.mid,html[data-theme="dark"] .dk-list li.mid{background-color:transparent}
+html[data-theme="dark"] .dk-steps i.mid{background:#C79A3A}
+html[data-theme="dark"] .w.hl{color:#FFF3C4}
+@keyframes dkPulseD{0%,100%{box-shadow:0 0 0 0 rgba(174,185,221,.4)}50%{box-shadow:0 0 0 10px rgba(174,185,221,0)}}
+html[data-theme="dark"] .dk-pbtn.on{animation-name:dkPulseD}
+
+@media print{.dk-play,.dk-kb,.dk-actions,.dk-links,.dk-res-act,.dk-tip{display:none!important}}
