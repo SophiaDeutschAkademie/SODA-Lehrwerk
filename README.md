@@ -68,7 +68,9 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 - 자료의 내용은 해당 폴더 안의 파일을 고칩니다.
 - `lesetraining/`의 텍스트 원본과 데이터 파일을 다시 만드는 방법은 `lesetraining/README.md`에 있어요.
 - `hoertraining/`과 `grammatik/`은 오프라인 캐시(서비스워커)를 씁니다. 이 두 폴더의 내용을 고친 뒤에는 같은 폴더의 `sw.js`도 함께 갱신해야 학생 기기에 새 내용이 나와요. 갱신하지 않으면 이전 내용이 계속 보일 수 있습니다.
-- `grammatik/`의 부록「암기 노트」(`lessons/anhang.json`)는 각 과의 변화표와 목록을 그대로 옮겨 만든 것입니다. 과의 표를 고친 뒤 `python3 grammatik/tools/anhang-build.py`를 실행하면 부록도 같은 내용으로 다시 만들어지고, `index.html`과 `sw.js`의 버전 값도 함께 바뀌어요. 부록에 넣을 표와 순서는 이 스크립트의 `PARTS`에 적혀 있습니다.
+- `grammatik/`의 부록「암기 노트」(`lessons/anhang.json`)는 각 과의 변화표와 목록을 그대로 옮겨 만든 것입니다. 과의 표를 고친 뒤 `python3 grammatik/tools/anhang-build.py`를 실행하면 부록도 같은 내용으로 다시 만들어지고, `index.html`과 `sw.js`의 버전 값도 함께 바뀌어요. 부록에 넣을 표와 순서는 이 스크립트의 `PARTS`에 적혀 있습니다. `PARTS`는 표를 과 안의 순서 번호로 가리키므로(`L03-t1` = 3과의 첫 번째 표), 과에 표를 새로 넣거나 빼면 그 뒤 표의 번호를 `PARTS`에서도 고쳐야 합니다. 행을 더하거나 글자를 고치는 것은 번호와 상관없어요.
+- 내용 교정은 부록이 아니라 과(`lessons/L01.json` …)에서 합니다. 과의 글만 고친 경우에도 `anhang-build.py`를 실행해야 `index.html`과 `sw.js`의 버전 값이 바뀌어 학생 기기에 새 내용이 나와요. 스크립트의 `FIXES`에는 '이 과'처럼 과 안에서만 통하는 말을 부록용으로 바꾸는 항목만 둡니다.
+- 과의 용어에 점선 밑줄로 걸린 낱말 풀이(`span.gt`)는 과마다 같은 글이 되풀이되어 들어 있습니다. 풀이를 고칠 때는 모든 과에서 같은 글을 한꺼번에 바꿉니다.
 - `grammatik/`의 연습문제(목차 아래 「연습문제 · Übungen」)는 과마다 하나, 37개예요. 과마다 기본·중간·도전 뒤에 보강(바꿔 쓰기·오류 찾기)이 있고, 목차 맨 아래에 여러 과를 섞은 통합 복습 4세트(`W1.json` … `W4.json`)가 있어요. 학생이 푼 답은 기기에 저장되며, 지키는 규칙은 `grammatik/tools/uebungen-src/README.md` 끝에 있어요. 원본은 `grammatik/tools/uebungen-src/U01.json` … `U37.json`이고, 쓰는 법과 규칙은 같은 폴더의 `README.md`에 있어요. 원본을 고친 뒤 `python3 grammatik/tools/uebungen-check.py`로 검사하고 `python3 grammatik/tools/uebungen-build.py`를 실행하면 `grammatik/uebungen/`의 앱용 파일, `index.html`의 연습 주소, `sw.js`의 캐시 목록과 버전이 함께 바뀌어요.
 - 목차에 자료를 추가하려면 루트 `index.html`의 해당 묶음의 `<ul class="grid">` 안에 `<li>` 항목을 같은 형식으로 추가합니다.
 - 모의고사 여섯 앱은 `SODA-Goethe`, `SODA-TELC` 저장소의 각 앱 폴더에 있고, 다시 만드는 방법은 앱 폴더의 `digital-src/README.md`에 있어요. 파일을 고치면 그 저장소의 `tools/soda-theme.py`로 다크 모드 스위치를 다시 넣습니다(빌드 스크립트는 자동으로 실행).
