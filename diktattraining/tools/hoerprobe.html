@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Diktattraining 음성 점검</title>
+<style>
+:root{--bg:#14171f;--card:#1c2030;--line:#2c3247;--ink:#e8eaf2;--mute:#9aa1b8;--acc:#aab4e6;--warn:#e6a35a}
+@media (prefers-color-scheme: light){:root{--bg:#f4f5f8;--card:#fff;--line:#dfe2ea;--ink:#1d2233;--mute:#667089;--acc:#384568;--warn:#b8660f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Pretendard Variable","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 16px}
+h1{margin:0 0 4px;font-size:17px}
+p{margin:0;color:var(--mute);font-size:13px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+select,button,input{font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+button{cursor:pointer}
+button.on{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+main{max-width:860px;margin:0 auto;padding:12px 16px 80px}
+h2{font-size:14px;color:var(--mute);margin:18px 0 6px;font-weight:600}
+.row{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px;margin-bottom:6px}
+.row.now{border-color:var(--acc)}
+.row.bad{border-color:var(--warn)}
+.play{width:44px;height:44px;border-radius:50%;padding:0;font-size:15px}
+.de{font-family:Georgia,"Noto Serif",serif;font-size:16px}
+.meta{color:var(--mute);font-size:12px}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-right:6px}
+.mark{display:flex;flex-direction:column;gap:4px;align-items:flex-end}
+.mark label{font-size:13px;white-space:nowrap}
+.mark input[type=text]{width:150px;padding:4px 8px;font-size:13px}
+textarea{width:100%;min-height:120px;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px}
+@media (max-width:620px){.row{grid-template-columns:40px 1fr}.mark{grid-column:1 / -1;flex-direction:row;align-items:center;justify-content:flex-end}.play{width:40px;height:40px}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Diktattraining 음성 점검</h1>
+  <p>문장을 들어 보고 이상한 음성에 표시해요. 표시는 이 브라우저에 저장되고, 아래 「표시한 문장 목록」을 복사해 전달하면 그 문장을 빼거나 고칠 수 있어요.</p>
+  <div class="bar">
+    <select id="lv" aria-label="레벨"><option value="">모든 레벨</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option></select>
+    <select id="kind" aria-label="음성 종류">
+      <option value="">모든 음성</option>
+      <option value="n">듣기 훈련 · 배경음 줄임</option>
+      <option value="h">듣기 훈련 · 그대로</option>
+      <option value="s">말하기 훈련 줄</option>
+      <option value="bad">표시한 것만</option>
+    </select>
+    <button id="auto" type="button">이어 듣기</button>
+    <span class="meta" id="count"></span>
+  </div>
+</header>
+<main>
+  <div id="list"></div>
+  <h2>표시한 문장 목록</h2>
+  <textarea id="out" readonly></textarea>
+  <div class="bar"><button id="copy" type="button">목록 복사</button><button id="clear" type="button">표시 모두 지우기</button><span class="meta" id="msg"></span></div>
+</main>
+<script src="../data/saetze.js"></script>
+<script>
+(function () {
+  'use strict';
+  var KEY = 'soda-diktat-hoerprobe';
+  var marks = {};
+  try { marks = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) {}
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(marks)); } catch (e) {} }
+  var D = window.DIKTAT_DATA, items = [], kinds = {};
+  D.sets.forEach(function (s) { s.items.forEach(function (it, i) { items.push({ id: it.id, de: it.de, lv: s.lv, set: s.id, no: i + 1 }); }); });
+  var KIND = { n: '듣기 훈련 · 배경음 줄임', h: '듣기 훈련 · 그대로', s: '말하기 훈련 줄' };
+  var au = new Audio(), cur = null, auto = false, timer = null;
+  var list = document.getElementById('list'), out = document.getElementById('out');
+  function kindOf(it) { return it.id.charAt(0) === 's' ? 's' : (kinds[it.id] ? 'n' : 'h'); }
+  function shown() {
+    var lv = document.getElementById('lv').value, k = document.getElementById('kind').value;
+    return items.filter(function (it) { return (!lv || it.lv === lv) && (!k || (k === 'bad' ? !!marks[it.id] : kindOf(it) === k)); });
+  }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function render() {
+    var arr = shown(), html = '', last = '';
+    arr.forEach(function (it) {
+      if (it.set !== last) { html += '<h2>' + it.set.toUpperCase().replace('-', ' ') + '</h2>'; last = it.set; }
+      var m = marks[it.id];
+      html += '<div class="row' + (m ? ' bad' : '') + '" data-id="' + it.id + '"><button class="play" type="button" aria-label="듣기">▶</button>' +
+        '<div><div class="de">' + esc(it.de) + '</div><div class="meta"><span class="tag">' + KIND[kindOf(it)] + '</span>' + it.id + '</div></div>' +
+        '<div class="mark"><label><input type="checkbox"' + (m ? ' checked' : '') + '> 이상함</label>' +
+        '<input type="text" placeholder="메모(선택)" value="' + esc(m && m.note || '') + '"></div></div>';
+    });
+    list.innerHTML = html || '<p>해당하는 문장이 없어요.</p>';
+    document.getElementById('count').textContent = arr.length + '문장 · 표시 ' + Object.keys(marks).length + '개';
+    report();
+  }
+  function report() {
+    out.value = items.filter(function (it) { return marks[it.id]; }).map(function (it) { return it.id + (marks[it.id].note ? ' | ' + marks[it.id].note : ''); }).join('\n');
+  }
+  function play(id) {
+    clearTimeout(timer);
+    var it = items.filter(function (x) { return x.id === id; })[0];
+    if (!it) return;
+    Array.prototype.forEach.call(list.querySelectorAll('.row.now'), function (r) { r.classList.remove('now'); });
+    var row = list.querySelector('[data-id="' + id + '"]');
+    if (row) { row.classList.add('now'); if (auto) row.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
+    cur = id;
+    au.src = '../audio/' + it.lv.toLowerCase() + '/' + id + '.mp3?p=' + Date.now();
+    au.play().catch(function () {});
+  }
+  au.addEventListener('ended', function () {
+    if (!auto) return;
+    var arr = shown(), i = arr.map(function (x) { return x.id; }).indexOf(cur);
+    if (i >= 0 && i < arr.length - 1) timer = setTimeout(function () { play(arr[i + 1].id); }, 700);
+    else setAuto(false);
+  });
+  function setAuto(on) { auto = on; document.getElementById('auto').classList.toggle('on', on); document.getElementById('auto').textContent = on ? '이어 듣기 멈춤' : '이어 듣기'; if (!on) clearTimeout(timer); }
+  list.addEventListener('click', function (e) {
+    var row = e.target.closest('.row');
+    if (!row) return;
+    if (e.target.classList.contains('play')) play(row.getAttribute('data-id'));
+  });
+  list.addEventListener('change', function (e) {
+    var row = e.target.closest('.row');
+    if (!row) return;
+    var id = row.getAttribute('data-id'), cb = row.querySelector('input[type=checkbox]'), tx = row.querySelector('input[type=text]');
+    if (e.target === tx && tx.value.trim()) cb.checked = true;
+    if (cb.checked) marks[id] = { note: tx.value.trim() }; else delete marks[id];
+    row.classList.toggle('bad', cb.checked);
+    save();
+    document.getElementById('count').textContent = shown().length + '문장 · 표시 ' + Object.keys(marks).length + '개';
+    report();
+  });
+  document.getElementById('lv').addEventListener('change', render);
+  document.getElementById('kind').addEventListener('change', render);
+  document.getElementById('auto').addEventListener('click', function () {
+    setAuto(!auto);
+    if (auto) { var arr = shown(); if (arr.length) play(cur && arr.some(function (x) { return x.id === cur; }) ? cur : arr[0].id); } else au.pause();
+  });
+  document.getElementById('copy').addEventListener('click', function () {
+    var msg = document.getElementById('msg');
+    function done(ok) { msg.textContent = ok ? '복사했어요.' : '목록을 길게 눌러 복사하세요.'; }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(out.value).then(function () { done(true); }, function () { done(false); });
+    else { out.select(); try { done(document.execCommand('copy')); } catch (e) { done(false); } }
+  });
+  document.getElementById('clear').addEventListener('click', function () {
+    if (!Object.keys(marks).length || !confirm('표시를 모두 지울까요?')) return;
+    marks = {}; save(); render();
+  });
+  // 배경음을 줄인 지문에서 온 문장인지는 schnitt.json 에서 읽어요(없어도 페이지는 동작해요).
+  fetch('schnitt.json').then(function (r) { return r.json(); }).then(function (S) {
+    Object.keys(S).forEach(function (k) {
+      var v = S[k];
+      if (!v.lines || !v.noisy) return;
+      var name = k.split('/').pop().replace('.mp3', '');
+      items.forEach(function (it) { if (it.id.indexOf('h-' + name + '-') === 0) kinds[it.id] = true; });
+    });
+    render();
+  }).catch(function () { render(); });
+  render();
+})();
+</script>
+</body>
+</html>

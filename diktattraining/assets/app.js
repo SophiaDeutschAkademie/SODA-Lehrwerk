@@ -15,7 +15,7 @@
 
   var G = window.DiktatGrade;
   var DATA = window.DIKTAT_DATA || { topics: [], sets: [] };
-  var AUDIO_V = '1';
+  var AUDIO_V = '2';
   var LEVELS = [
     { code: 'A1', de: 'Anfänger', ko: '짧은 생활 문장', desc: '인사, 주문, 약속, 길 묻기, 예약에 나오는 짧은 문장을 듣고 써요.' },
     { code: 'A2', de: 'Grundlegende Kenntnisse', ko: '생활 속 대화', desc: '집 구하기, 운동 등록, 인터뷰, 이웃과의 대화에 나오는 문장을 듣고 써요.' },
