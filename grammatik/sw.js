@@ -1,7 +1,7 @@
 /* Lehrwerk Grammatik — offline cache.
    Every file name below carries ?v=<content hash>, so a new upload only
    re-downloads the files that actually changed. */
-const VERSION = '6085c254c5';
+const VERSION = 'ed74a88d88';
 const PREFIX = 'lehrwerk-grammatik-';
 const CACHE = PREFIX + VERSION;
 const CORE = [
@@ -16,11 +16,11 @@ const CORE = [
 ];
 const LESSONS = [
   "lessons/L01.json?v=22e4d8b51c",
-  "lessons/L02.json?v=9c1ef693e2",
+  "lessons/L02.json?v=b16d33a5bf",
   "lessons/L03.json?v=10662defb6",
   "lessons/L04.json?v=cdfcd2ce79",
   "lessons/L05.json?v=4065d29f51",
-  "lessons/L06.json?v=50aaff706d",
+  "lessons/L06.json?v=4a73716504",
   "lessons/L07.json?v=dd4a77790e",
   "lessons/L08.json?v=cf5a3f2867",
   "lessons/L09.json?v=6acda5703b",
@@ -52,7 +52,7 @@ const LESSONS = [
   "lessons/L35.json?v=052b922f6e",
   "lessons/L36.json?v=5cd6e7e7bd",
   "lessons/L37.json?v=5552409712",
-  "lessons/anhang.json?v=0c12686295"
+  "lessons/anhang.json?v=1fad947102"
 ];
 
 const UEBUNGEN = [
