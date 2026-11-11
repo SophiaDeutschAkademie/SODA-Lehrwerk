@@ -5,7 +5,7 @@
  *
  * 저장(localStorage 'soda-diktat-v1', 이 기기에만 저장)
  *   sets  { 'a1-03': { n 끝낸 횟수, ts 마지막으로 끝낸 때, a1 1차 정확도, a2 최종 정확도, best 가장 높은 1차 정확도 } }
- *   prog  { 'a1-03': 하던 연습 { ids, idx, res, secs, draft } }      세트를 끝내면 지워요
+ *   prog  { 'a1-03': 하던 연습 { ids, idx, res, secs, draft } }      세트를 끝내면 지워요. res 의 문장마다 { id, a1, a2, plays, errs, in1 1차에 쓴 글, tx 마지막에 쓴 글, rv 정답 보기를 눌렀으면 1 }
  *   rev   { 문장 id: { lv, ts } }                                    1차에서 틀린 문장. 한 번에 맞히면 빠져요
  *   hist  [ { ts, key, lv, n, a1, a2, hit, plays, secs, errs, wrong } ]   끝낸 연습 기록(최대 300개)
  * 세트 id와 문장 id는 바꾸지 않아요. 바꾸면 학생의 기록이 끊겨요.
@@ -17,11 +17,11 @@
   var DATA = window.DIKTAT_DATA || { topics: [], sets: [] };
   var AUDIO_V = '2';
   var LEVELS = [
-    { code: 'A1', de: 'Anfänger', ko: '짧은 생활 문장', desc: '인사, 주문, 약속, 길 묻기, 예약에 나오는 짧은 문장을 듣고 써요.' },
-    { code: 'A2', de: 'Grundlegende Kenntnisse', ko: '생활 속 대화', desc: '집 구하기, 운동 등록, 인터뷰, 이웃과의 대화에 나오는 문장을 듣고 써요.' },
-    { code: 'B1', de: 'Fortgeschrittene Sprachverwendung', ko: '이유와 의견이 들어간 문장', desc: '항의, 계획, 면접, 토론에 나오는 문장을 듣고 써요. 종속절과 긴 단어가 나와요.' },
-    { code: 'B2', de: 'Selbständige Sprachverwendung', ko: '토론과 인터뷰의 문장', desc: '토론, 강연, 직장 대화에 나오는 문장을 듣고 써요. 말이 빠르고 단어가 길어요.' },
-    { code: 'C1', de: 'Fachkundige Sprachkenntnisse', ko: '대담과 강연의 문장', desc: '대담, 강연, 고객 상담에 나오는 문장을 듣고 써요. 추상 명사와 격식 표현이 나와요.' }
+    { code: 'A1', de: 'Anfänger', ko: '짧은 생활 문장', desc: '약속, 장보기, 길 묻기, 예약' },
+    { code: 'A2', de: 'Grundlegende Kenntnisse', ko: '생활 속 대화', desc: '집 보기, 운동 등록, 이웃과의 대화' },
+    { code: 'B1', de: 'Fortgeschrittene Sprachverwendung', ko: '이유와 의견이 들어간 문장', desc: '분실물 신고, 면접, 토론' },
+    { code: 'B2', de: 'Selbständige Sprachverwendung', ko: '토론과 인터뷰의 문장', desc: '토론, 인터뷰, 직장 대화' },
+    { code: 'C1', de: 'Fachkundige Sprachkenntnisse', ko: '대담과 강연의 문장', desc: '대담, 공개 토론, 고객 상담' }
   ];
   var LEVEL_BY = {}, BY_LEVEL = {}, BY_SET = {}, BY_SENT = {}, TOTAL = 0;
   LEVELS.forEach(function (l) { LEVEL_BY[l.code] = l; BY_LEVEL[l.code] = []; });
@@ -211,16 +211,18 @@
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/', '표지') +
       '<div class="sec-h"><span class="kicker">STUFE</span><h1>레벨 선택</h1>' +
-      '<p>독일어 문장을 듣고 그대로 써요. 틀린 자리를 먼저 보고 다시 들어 고친 뒤에 정답과 비교해요. 세트 하나는 문장 10개쯤이고 10분 안팎이 걸려요.</p></div>' +
+      '<p>문장을 듣고 그대로 써요. 세트 하나는 10분 안팎이에요.</p></div>' +
       '<ul class="levels">' + cards + '</ul>' + links() + '</main>';
     settle(state.route);
   }
 
   /* ───────── 세트 목록 ───────── */
-  function topicsOf(s) {
-    var seen = [], out = [];
-    s.items.forEach(function (it) { if (seen.indexOf(it.tp) < 0) { seen.push(it.tp); out.push(DATA.topics[it.tp]); } });
-    return out;
+  function titleOf(s) {             // 세트의 제목: 문장이 가장 많이 나온 지문의 제목
+    var cnt = {}, order = [], best;
+    s.items.forEach(function (it) { if (!cnt[it.tp]) { cnt[it.tp] = 0; order.push(it.tp); } cnt[it.tp]++; });
+    best = order[0];
+    order.forEach(function (t) { if (cnt[t] > cnt[best]) best = t; });
+    return DATA.topics[best].de;
   }
   function statusMeta(s) {
     var st = S.sets[s.id], pg = S.prog[s.id];
@@ -232,11 +234,9 @@
     var L = LEVEL_BY[lv], items = BY_LEVEL[lv] || [], rv = revCount(lv);
     document.title = lv + ' · SODA DIKTATTRAINING';
     var cards = items.map(function (s, i) {
-      var tp = topicsOf(s);
       return '<li><a class="card" href="#/' + lv.toLowerCase() + '/' + pad(s.no) + '" style="--i:' + Math.min(i, 12) + '">' +
         '<div class="card-top"><span class="num">' + pad(s.no) + '</span><span class="chip">문장 ' + s.items.length + '개</span></div>' +
-        '<h2 class="card-de de" lang="de">' + esc(tp[0].de) + '</h2>' +
-        '<p class="card-ko">' + (tp.length > 1 ? esc(tp[1].de) + (tp.length > 2 ? ' 외 ' + (tp.length - 2) : '') : esc(tp[0].ko)) + '</p>' +
+        '<h2 class="card-de de" lang="de">' + esc(titleOf(s)) + '</h2>' +
         '<div class="card-foot">' + statusMeta(s) + '</div></a></li>';
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/levels', '레벨') +
@@ -250,9 +250,15 @@
   }
 
   /* ───────── 연습 ───────── */
+  function draftNow() {             // 지금 쓰던 문장에 적어 둔 글 (앞 문장을 다시 보는 동안에는 sess.draft 에 둬요)
+    if (sess.back != null) return sess.draft || '';
+    if (sess.phase === 'done') return '';
+    var ta = document.getElementById('dk-ta');
+    return ta ? ta.value : (sess.draft || '');
+  }
   function persist() {
     if (!sess || sess.phase === 'result') return;
-    var ta = document.getElementById('dk-ta'), draft = sess.phase === 'done' ? '' : (ta ? ta.value : '');
+    var draft = draftNow();
     if (!sess.res.length && !draft.trim()) delete S.prog[sess.key];      // 아무것도 쓰지 않은 연습은 남기지 않아요
     else S.prog[sess.key] = { ids: sess.items.map(function (it) { return it.id; }), idx: sess.idx, res: sess.res, secs: Math.round(sess.secs), draft: draft, ts: Date.now() };
     save();
@@ -278,7 +284,8 @@
       key: r.key, kind: r.kind, set: r.set || null, lv: r.lv, items: items,
       idx: resume ? Math.min(resume.res.length, items.length - 1) : 0,
       res: resume ? resume.res.slice(0, items.length) : [], secs: resume ? (resume.secs || 0) : 0,
-      phase: 'w1', plays: 0, g1: null, in1: '', shown: Date.now(), draft: resume ? (resume.draft || '') : ''
+      phase: 'w1', plays: 0, g1: null, in1: '', shown: Date.now(), draft: resume ? (resume.draft || '') : '',
+      back: null, rplays: 0, away: 0          // back: 다시 보고 있는 앞 문장의 번호(없으면 null)
     };
     renderRun();
     settle(state.route);
@@ -288,21 +295,24 @@
     if (sess.kind === 'retry') return setCode(BY_SET[sess.set]) + ' 틀린 문장';
     return setCode(BY_SET[sess.set]);
   }
-  function cur() { return sess ? sess.items[sess.idx] : null; }
+  function viewIdx() { return sess.back != null ? sess.back : sess.idx; }
+  function cur() { return sess ? sess.items[viewIdx()] : null; }
   function audioSrc(it) { return 'audio/' + it.lv.toLowerCase() + '/' + it.id + '.mp3?v=' + AUDIO_V; }
 
   function renderRun() {
-    var it = cur(), tp = DATA.topics[it.tp], lc = sess.lv.toLowerCase(), n = sess.items.length;
+    var v = viewIdx(), it = sess.items[v], tp = DATA.topics[it.tp], lc = sess.lv.toLowerCase(), n = sess.items.length;
+    var seen = sess.back != null, r0 = sess.res[v];
     document.title = runTitle() + ' · SODA DIKTATTRAINING';
     var dots = sess.items.map(function (x, i) {
       var r = sess.res[i], c = r ? (r.a1 === 100 ? 'ok' : r.a2 === 100 ? 'mid' : 'no') : (i === sess.idx ? 'on' : '');
-      return '<i class="' + c + '"></i>';
+      return '<i class="' + c + (seen && i === v ? ' see' : '') + '"></i>';
     }).join('');
+    var text = r0 ? (r0.tx != null ? r0.tx : (r0.in1 || (r0.a1 === 100 ? it.de : ''))) : (sess.draft || '');
     app.innerHTML =
       '<header class="rd-top"><div class="rd-top-in">' +
       '<a class="pill" href="#/' + lc + '">' + ICON.left + sess.lv + ' 목록</a>' +
       '<div class="rd-where">' + esc(runTitle()) + '</div>' +
-      '<div class="tools"><span class="dk-count" aria-label="문장 ' + (sess.idx + 1) + ' / ' + n + '"><b>' + (sess.idx + 1) + '</b> / ' + n + '</span></div>' +
+      '<div class="tools"><span class="dk-count" aria-label="문장 ' + (v + 1) + ' / ' + n + '"><b>' + (v + 1) + '</b> / ' + n + '</span></div>' +
       '</div></header>' +
       '<main id="main" class="rd dk view" tabindex="-1">' +
       '<div class="dk-steps" aria-hidden="true">' + dots + '</div>' +
@@ -314,40 +324,49 @@
       '<div class="dk-pinfo"><b id="dk-pl">문장 듣기</b><span id="dk-pc">몇 번이든 다시 들을 수 있어요</span></div>' +
       '<button type="button" class="toggle" data-act="slow" aria-pressed="' + !!S.slow + '"><span class="dot"></span>느리게</button>' +
       '</div>' +
-      (it.nm && it.nm.length ? '<div class="dk-names"><span>이름</span>' + it.nm.map(function (x) {
+      (!r0 && it.nm && it.nm.length ? '<div class="dk-names"><span>이름</span>' + it.nm.map(function (x) {
         return '<button type="button" data-act="ins" data-k="' + esc(x) + ' " lang="de" aria-label="' + esc(x) + ' 넣기">' + esc(x) + '</button>';
       }).join('') + '</div>' : '') +
       '<textarea class="dk-ta de" id="dk-ta" lang="de" rows="3" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" ' +
-      'placeholder="들은 문장을 여기에 쓰세요" aria-label="받아쓴 문장">' + esc(sess.draft || '') + '</textarea>' +
-      '<div class="dk-kb" aria-label="특수 문자 넣기">' + ['ä', 'ö', 'ü', 'ß', 'Ä', 'Ö', 'Ü'].map(function (k) {
-        return '<button type="button" data-act="ins" data-k="' + k + '" aria-label="' + k + ' 넣기">' + k + '</button>';
-      }).join('') + '</div>' +
+      (r0 ? 'readonly ' : '') + 'placeholder="들은 문장을 여기에 쓰세요" aria-label="받아쓴 문장">' + esc(text) + '</textarea>' +
       '<div class="dk-fb" id="dk-fb" aria-live="polite"></div>' +
       '<div class="dk-actions" id="dk-actions"></div>' +
       '</section>' +
       '<p class="dk-tip">문장부호는 채점하지 않아요. 문장의 첫 글자는 소문자로 써도 돼요.</p>' +
       '</main>';
-    sess.phase = 'w1'; sess.plays = 0; sess.g1 = null; sess.in1 = ''; sess.shown = Date.now(); sess.draft = '';
+    if (r0) showStored(v);                                        // 이미 끝낸 문장: 정답과 내가 쓴 글
+    else if (sess.phase === 'w2' && sess.g1) showFirst(sess.g1, sess.in1);   // 1차 확인을 한 문장으로 돌아온 경우
+    paintPlay(false);
     paintActions();
     preloadNext();
+  }
+  /* 끝낸 문장의 결과를 저장된 기록으로 다시 보여 줘요 */
+  function showStored(v) {
+    var it = sess.items[v], r = sess.res[v];
+    var g1 = G.grade(it.de, r.a1 === 100 ? it.de : (r.in1 || ''));
+    var g2 = r.a1 === 100 ? g1 : (r.tx != null ? G.grade(it.de, r.tx) : (r.a2 === 100 ? G.grade(it.de, it.de) : g1));
+    showFinal(it, g1, g2, !!r.rv);
   }
   function paintActions() {
     var box = document.getElementById('dk-actions');
     if (!box) return;
-    var last = sess.idx === sess.items.length - 1;
-    if (sess.phase === 'w1') box.innerHTML = '<button type="button" class="btn pri" data-act="check">확인</button>';
-    else if (sess.phase === 'w2') box.innerHTML = '<button type="button" class="btn sec" data-act="reveal">정답 보기</button>' +
+    var v = viewIdx(), last = sess.idx === sess.items.length - 1;
+    var prevBtn = v > 0 ? '<button type="button" class="btn sec dk-prev" data-act="prev" aria-label="이전 문장">' + ICON.left + '이전<span class="dk-full">&nbsp;문장</span></button>' : '';
+    var again = '<button type="button" class="btn sec" data-act="play">' + ICON.play + '<span class="dk-full">다시&nbsp;</span>듣기</button>';
+    if (sess.back != null) box.innerHTML = prevBtn + again + '<button type="button" class="btn pri" data-act="next">다음 문장' + ICON.arrowR + '</button>';
+    else if (sess.phase === 'w1') box.innerHTML = prevBtn + '<button type="button" class="btn pri" data-act="check">확인</button>';
+    else if (sess.phase === 'w2') box.innerHTML = prevBtn + '<button type="button" class="btn sec" data-act="reveal">정답 보기</button>' +
       '<button type="button" class="btn pri" data-act="check">다시 확인</button>';
-    else box.innerHTML = '<button type="button" class="btn sec" data-act="play">' + ICON.play + '다시 듣기</button>' +
-      '<button type="button" class="btn pri" data-act="next">' + (last ? '결과 보기' : '다음 문장') + ICON.arrowR + '</button>';
+    else box.innerHTML = prevBtn + again + '<button type="button" class="btn pri" data-act="next">' + (last ? '결과 보기' : '다음 문장') + ICON.arrowR + '</button>';
   }
 
   /* 음성 */
   function paintPlay(on) {
     var b = document.getElementById('dk-pbtn'), l = document.getElementById('dk-pl'), c = document.getElementById('dk-pc');
     if (b) { b.innerHTML = on ? ICON.stop : ICON.play; b.classList.toggle('on', !!on); b.setAttribute('aria-label', on ? '멈추기' : '문장 듣기'); }
-    if (l) l.textContent = on ? '듣는 중' : (sess && sess.plays ? '다시 듣기' : '문장 듣기');
-    if (c && sess && sess.plays) c.textContent = '들은 횟수 ' + sess.plays;
+    var n = sess ? (sess.back != null ? sess.rplays : sess.plays) : 0;
+    if (l) l.textContent = on ? '듣는 중' : (n ? '다시 듣기' : '문장 듣기');
+    if (c && n) c.textContent = '들은 횟수 ' + n;
   }
   function stopAudio() {
     try { au.pause(); } catch (e) {}
@@ -361,7 +380,7 @@
     if (au.getAttribute('data-src') !== src) { au.src = src; au.setAttribute('data-src', src); }
     try { au.currentTime = 0; } catch (e) {}
     au.playbackRate = S.slow ? 0.8 : 1;
-    sess.plays++;
+    if (sess.back != null) sess.rplays++; else sess.plays++;
     paintPlay(true);
     var p = au.play();
     if (p && p.catch) p.catch(function () { audioFail(); });
@@ -441,7 +460,7 @@
 
   function check() {
     var it = cur(), ta = document.getElementById('dk-ta');
-    if (!it || !ta || sess.phase === 'done') return;
+    if (!it || !ta || sess.phase === 'done' || sess.back != null) return;
     var text = ta.value;
     if (!text.trim()) {
       var fb = document.getElementById('dk-fb');
@@ -464,7 +483,7 @@
   }
   function reveal() {
     var it = cur(), ta = document.getElementById('dk-ta');
-    if (!it || sess.phase !== 'w2') return;
+    if (!it || sess.phase !== 'w2' || sess.back != null) return;
     var g = G.grade(it.de, ta ? ta.value : '');
     finish(sess.g1, g, true);
   }
@@ -475,6 +494,8 @@
     sess.secs += Math.min(240, (Date.now() - sess.shown) / 1000);
     var r = { id: it.id, a1: g1.pct, a2: Math.max(g1.pct, g2.pct), plays: sess.plays, errs: g1.errs.map(function (e) { return e.type; }) };
     if (!g1.perfect) r.in1 = String(sess.in1).replace(/\s+/g, ' ').trim().slice(0, 240);
+    r.tx = String(ta ? ta.value : '').replace(/\s+/g, ' ').trim().slice(0, 240);      // 마지막으로 쓴 글 (이 문장을 다시 볼 때 보여 줘요)
+    if (revealed) r.rv = 1;
     sess.res[sess.idx] = r;
     if (g1.perfect) delete S.rev[it.id]; else S.rev[it.id] = { lv: it.lv, ts: Date.now() };
     if (ta) ta.readOnly = true;
@@ -496,17 +517,51 @@
       try { el.scrollIntoView({ behavior: 'smooth', block: id === 'dk-actions' ? 'end' : 'start' }); } catch (e) { el.scrollIntoView(); }
     }
   }
+  function focusTa() {
+    var ta = document.getElementById('dk-ta');
+    if (ta && !ta.readOnly && window.matchMedia && matchMedia('(hover:hover) and (pointer:fine)').matches) ta.focus();
+  }
   function next() {
-    if (!sess || sess.phase !== 'done') return;
+    if (!sess || sess.phase === 'result') return;
+    if (sess.back != null) {                    // 앞 문장을 다시 보던 중: 한 문장 앞으로, 끝이면 쓰던 문장으로
+      stopAudio();
+      sess.rplays = 0;
+      if (sess.back + 1 < sess.idx) sess.back++;
+      else {
+        sess.back = null;
+        if (sess.away) { sess.shown += Date.now() - sess.away; sess.away = 0; }      // 다시 보던 시간은 걸린 시간에서 빼요
+      }
+      renderRun();
+      window.scrollTo(0, 0);
+      focusTa();
+      return;
+    }
+    if (sess.phase !== 'done') return;
     if (sess.idx >= sess.items.length - 1) { complete(); return; }
     sess.idx++;
     stopAudio();
+    sess.phase = 'w1'; sess.plays = 0; sess.g1 = null; sess.in1 = ''; sess.shown = Date.now(); sess.draft = '';
     renderRun();
     window.scrollTo(0, 0);
     play();
-    var ta = document.getElementById('dk-ta');
-    if (ta && window.matchMedia && matchMedia('(hover:hover) and (pointer:fine)').matches) ta.focus();
+    focusTa();
     persist();
+  }
+  /* 앞 문장으로 돌아가 결과를 다시 봐요. 쓰던 문장의 글과 1차 확인 결과는 그대로 둬요. */
+  function prev() {
+    if (!sess || sess.phase === 'result') return;
+    var v = viewIdx();
+    if (v <= 0) return;
+    if (sess.back == null) {
+      sess.draft = draftNow();
+      sess.away = Date.now();
+      persist();
+    }
+    stopAudio();
+    sess.back = v - 1;
+    sess.rplays = 0;
+    renderRun();
+    window.scrollTo(0, 0);
   }
 
   /* ───────── 세트 결과 ───────── */
@@ -637,7 +692,7 @@
     var rules = [
       '문장부호(쉼표, 마침표, 물음표)는 채점하지 않아요.',
       '문장의 첫 글자는 소문자로 써도 맞아요. 문장 안의 대문자(명사, Sie)는 채점해요.',
-      'ä, ö, ü, ß는 입력란 아래 단추로 넣을 수 있어요. ae, oe, ue, ss로 쓰면 「움라우트·ß」로 표시돼요.',
+      'ä, ö, ü, ß는 독일어 자판으로 써요. ae, oe, ue, ss로 쓰면 「움라우트·ß」로 표시돼요.',
       '숫자는 글자(zwanzig)로 써도, 숫자(20)로 써도 맞아요. zwei Euro achtzig는 2,80 Euro로, neun Uhr zwanzig는 9:20 Uhr로 써도 돼요.',
       '사람 이름과 지명은 입력란 위에 미리 보여 줘요. 누르면 입력란에 들어가요.',
       'Ah, Oh 같은 감탄사는 빠뜨려도 틀린 것으로 세지 않아요.',
@@ -663,6 +718,7 @@
       '<section class="dk-box"><h2 class="dk-h">틀린 종류와 다시 볼 곳</h2><dl class="dk-types">' +
       types.map(function (t) { return '<div><dt>' + t[0] + '</dt><dd>' + t[1] + '</dd></div>'; }).join('') + '</dl></section>' +
       '<section class="dk-box"><h2 class="dk-h">알아 둘 것</h2><ul class="dk-rules">' +
+      '<li>「이전」을 누르면 앞 문장의 정답과 내가 쓴 글을 다시 볼 수 있어요. 쓰던 문장은 그대로 남아 있어요.</li>' +
       '<li>컴퓨터에서는 Enter가 「확인」과 「다음 문장」이고, Shift + Enter가 「다시 듣기」예요.</li>' +
       '<li>1차 정확도는 처음 쓴 문장의 점수이고, 최종 정확도는 다시 듣고 고친 뒤의 점수예요. 실력은 1차 정확도로 보세요.</li>' +
       '<li>기록은 이 기기의 이 브라우저에만 저장돼요. 홈 화면에 추가한 앱과 브라우저의 기록은 따로예요.</li>' +
@@ -840,6 +896,7 @@
     else if (act === 'check') check();
     else if (act === 'reveal') reveal();
     else if (act === 'next') next();
+    else if (act === 'prev') prev();
     else if (act === 'again') { sess = null; startRun(state.route); window.scrollTo(0, 0); }
     else if (act === 'submit') openSubmit();
     else if (act === 'send') sendMail();
@@ -863,7 +920,7 @@
     if (!inTa && t && t.closest && t.closest('button, a, input, textarea')) return;
     e.preventDefault();
     if (e.shiftKey) { play(); return; }
-    if (sess.phase === 'done') next(); else check();
+    if (sess.phase === 'done' || sess.back != null) next(); else check();
   });
   window.addEventListener('pagehide', persist);
   document.addEventListener('visibilitychange', function () { if (document.hidden) { persist(); stopAudio(); } });

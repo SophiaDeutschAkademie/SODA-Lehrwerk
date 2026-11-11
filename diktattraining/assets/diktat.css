@@ -20,7 +20,6 @@ html{-webkit-hyphenate-character:"-";hyphenate-character:"-"}
 .dk-grid .card-top{margin-bottom:10px}
 .dk-grid .num{font-size:32px}
 .dk-grid .card-de{font-size:17px}
-.dk-grid .card-ko{font-family:var(--f-serif);font-size:14.5px;font-weight:500;color:var(--text-s);overflow-wrap:anywhere}
 .dk-grid .card-foot{min-height:24px;padding-top:10px}
 .dk-grid .card-foot .meta{margin-left:0;padding-left:0}
 .dk-rev{display:flex;align-items:center;gap:14px;margin:0 0 16px;padding:14px 18px;border:1px solid var(--accent-bd);border-radius:16px;background:var(--accent-l);color:var(--accent-d);transition:border-color .2s}
@@ -40,6 +39,7 @@ html{-webkit-hyphenate-character:"-";hyphenate-character:"-"}
 .dk-steps i.ok{background:var(--ok)}
 .dk-steps i.mid{background:#D9A93C}
 .dk-steps i.no{background:var(--no)}
+.dk-steps i.see{outline:2px solid var(--accent);outline-offset:2px}
 .dk-card{background:var(--bg-c);border:1px solid var(--bd);border-radius:20px;padding:clamp(16px,3.5vw,26px)}
 .dk-ctx{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin-bottom:16px;font-size:14px;line-height:1.4}
 .dk-ctx .chip{align-self:center}
@@ -64,12 +64,10 @@ html{-webkit-hyphenate-character:"-";hyphenate-character:"-"}
 .dk-ta:focus{outline:none;border-color:var(--accent)}
 .dk-ta[readonly]{background:var(--bg-s);color:var(--text-s)}
 .dk-ta::placeholder{color:var(--text-l);font-family:var(--f-sans);font-size:15px}
-.dk-kb{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
-.dk-kb button{min-width:40px;height:38px;padding:0 8px;border:1px solid var(--bd);border-radius:9px;background:var(--bg-c);font:600 17px/1 var(--f-serif);color:var(--text-s)}
-.dk-kb button:hover{border-color:var(--accent);color:var(--accent)}
 .dk-actions{display:flex;gap:10px;margin-top:16px}
 .dk-actions .btn{flex:1;min-width:0;padding:0 14px}
 .dk-actions .btn.sec{flex:0 1 auto}
+.dk-actions .btn svg{flex:none}
 .dk-tip{margin-top:12px;font-size:12.5px;color:var(--text-l);text-align:center;word-break:keep-all}
 
 /* 채점 결과 */
@@ -188,14 +186,14 @@ html{-webkit-hyphenate-character:"-";hyphenate-character:"-"}
   .dk-pinfo b{font-size:15px}
   .dk-pinfo span{font-size:12.5px}
   .dk-ta{min-height:84px;padding:12px 13px;font-size:18px}
-  .dk-kb button{min-width:0;flex:1;height:40px}
   .dk-actions .btn{height:48px;font-size:15px}
+  .dk-actions .btn.sec{padding:0 12px}
+  .dk-full{display:none}
   .dk-s{font-size:18px}
   .dk-grid{grid-template-columns:repeat(2,1fr);gap:8px}
   .dk-grid .card{padding:11px 12px 10px}
   .dk-grid .num{font-size:22px}
   .dk-grid .card-de{font-size:14.5px}
-  .dk-grid .card-ko{font-size:12.5px}
   .dk-grid .card .chip{font-size:10.5px;height:22px;padding:0 7px}
   .dk-grid .card-foot{min-height:0;padding-top:6px}
   .dk-grid .card-foot:empty{display:none}
@@ -227,4 +225,4 @@ html[data-theme="dark"] .w.hl{color:#FFF3C4}
 @keyframes dkPulseD{0%,100%{box-shadow:0 0 0 0 rgba(174,185,221,.4)}50%{box-shadow:0 0 0 10px rgba(174,185,221,0)}}
 html[data-theme="dark"] .dk-pbtn.on{animation-name:dkPulseD}
 
-@media print{.dk-play,.dk-kb,.dk-actions,.dk-links,.dk-res-act,.dk-tip{display:none!important}}
+@media print{.dk-play,.dk-actions,.dk-links,.dk-res-act,.dk-tip{display:none!important}}
