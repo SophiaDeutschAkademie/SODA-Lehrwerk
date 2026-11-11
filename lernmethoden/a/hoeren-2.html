@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script id="soda-theme-js">
+(function(){
+  var KEY='soda-theme', d=document.documentElement, t='dark';
+  try{var s=localStorage.getItem(KEY); if(s==='light'||s==='dark') t=s;}catch(e){}
+  function apply(v){
+    d.setAttribute('data-theme',v); d.style.colorScheme=v;
+    var m=document.querySelector('meta[name="color-scheme"]'); if(m) m.setAttribute('content',v);
+    var c=document.querySelector('meta[name="theme-color"]'); if(c) c.setAttribute('content',v==='dark'?'#14181E':'#FAFAF8');
+  }
+  apply(t);
+  var SUN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var MOON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+  function mount(){
+    if(document.getElementById('soda-theme-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-theme-btn'; b.className='soda-theme-btn';
+    function paint(){ var dk=d.getAttribute('data-theme')==='dark'; b.innerHTML=dk?SUN:MOON; b.setAttribute('aria-pressed',dk?'true':'false'); b.setAttribute('aria-label','다크 모드 '+(dk?'끄기':'켜기')); b.title='다크 모드 '+(dk?'켜짐':'꺼짐')+' · 누르면 '+(dk?'라이트':'다크')+'로 바뀌어요'; }
+    b.addEventListener('click',function(){ var n=d.getAttribute('data-theme')==='dark'?'light':'dark'; apply(n); try{localStorage.setItem(KEY,n);}catch(e){} paint(); });
+    paint(); document.body.appendChild(b);
+    if(!document.getElementById('soda-toc-btn')){ var a=document.createElement('a'); a.id='soda-toc-btn'; a.className='soda-toc-btn'; a.href='../../#inhalt'; a.setAttribute('aria-label','홈(목차)으로 돌아가기'); a.title='홈 · 목차로'; a.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>'; document.body.appendChild(a); }
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>B1까지는 읽으며 듣고, B2부터는 읽기만 · 독일어 공부법 | 소피아 독일어학원</title>
+<meta name="description" content="레벨에 따라 읽기와 듣기를 함께 할지 나눌지 정하는 근거">
+<link rel="canonical" href="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/hoeren-2.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SODA Lehrwerk · 소피아 독일어학원">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="B1까지는 읽으며 듣고, B2부터는 읽기만">
+<meta property="og:description" content="레벨에 따라 읽기와 듣기를 함께 할지 나눌지 정하는 근거">
+<meta property="og:url" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/hoeren-2.html">
+<meta property="og:image" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png">
+<meta property="article:published_time" content="2024-09-28">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14181E">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/png" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/pretendard.css">
+<link rel="stylesheet" href="article.css?v=aaa837f8c1">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "B1까지는 읽으며 듣고, B2부터는 읽기만", "description": "레벨에 따라 읽기와 듣기를 함께 할지 나눌지 정하는 근거", "inLanguage": "ko", "datePublished": "2024-09-28", "mainEntityOfPage": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/hoeren-2.html", "image": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png", "articleSection": "듣기 (Hören)", "author": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/"}, "publisher": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "logo": {"@type": "ImageObject", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/assets/icons/icon-512.png"}}}</script>
+<script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<article class="reader">
+<nav class="crumbs" aria-label="위치"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></nav>
+<p class="a-eb">Hören<i>·</i>듣기 2/3</p>
+<h1>B1까지는 읽으며 듣고, B2부터는 읽기만</h1>
+<p class="a-sum">레벨에 따라 읽기와 듣기를 함께 할지 나눌지 정하는 근거</p>
+<p class="a-meta">약 3분 · 소피아 독일어학원</p>
+<div class="body">
+<p>내용이 조금 학술적이어서 결론부터 말씀드립니다.</p>
+<ol><li>B1 이하를 공부하는 분은 읽기와 듣기를 하나의 텍스트로 함께 공부하시면 좋습니다.</li><li>B2 이상을 공부하는 분은 읽기만 공부하시기를 권합니다.</li></ol>
+<p>듣기가 안 돼서 힘든데 읽기를 하라니 황당하실 겁니다. 그 이유를 차근차근 설명하겠습니다. 요즘은 독일에서 오래 살았거나 살고 있는 분들이 다양한 공부법을 소개하는 경우가 많아졌습니다. 하나하나 소중한 경험이지만, 실력을 올리는 데에는 연구를 바탕으로 한 공부법이 더 믿을 만합니다.</p>
+<h2 id="hoeren-2-듣기가-가장-어렵다">듣기가 가장 어렵다</h2>
+<p>B1을 준비하는 학습자들이 읽기, 듣기, 쓰기, 말하기 중 가장 어렵다고 느낀 영역이 듣기입니다. 듣기 영역의 성취도도 실제로 낮았습니다. 조사에 참여한 학습자 대부분은 어휘력 부족 때문에 듣기 시험에서 어려움을 겪었고, 그래서 B1 시험에서도 내용의 일부만 이해한 채 문제를 풀었습니다(김유리 2018). 부족한 어휘력이 듣기를 어렵게 하는 결정적인 요인으로 보입니다.</p>
+<p>그런데 아는 단어도 들리지 않는 경우가 있습니다. 발음이 문제인 경우가 많습니다. 그래서 단어를 외우는 단계에서 직접 소리 내어 말해 보고 올바른 발음을 들어야 합니다. 읽기 따로 듣기 따로 나누는 방식은 초급 학습자에게 아직 큰 도움이 되지 않습니다.</p>
+<h2 id="hoeren-2-초급-읽기와-듣기를-함께">초급: 읽기와 듣기를 함께</h2>
+<p>수강생들이 자주 묻습니다. 팟캐스트나 유튜브, 넷플릭스의 독일 드라마가 듣기에 도움이 되느냐고요. B1 이하 학습자에게는 보통 교재에 있는 텍스트와 오디오로 충분하다고 답합니다. 이 단계에서는 자료의 양보다 공부법이 중요하기 때문입니다.</p>
+<p>듣기가 아직 익숙하지 않은 학습자가 텍스트와 함께 공부하면 정보를 눈으로 계속 볼 수 있습니다. 소리는 지나가면 사라지지만 글자는 남기 때문입니다. 또 단어의 발음과 의미를 연결하는 과정을 반복하면 실제로 들을 때 소리를 더 빨리 알아채고 이해합니다. 암기에도 큰 도움이 됩니다. 여기까지는 이미 잘 알려진 사실입니다.</p>
+<h2 id="hoeren-2-숙련자-읽기만">숙련자: 읽기만</h2>
+<p>새로운 점은 그다음입니다. 읽기와 듣기를 병행하는 방법이 초급에게 유효하다면, 그 이상의 학습자에게도 유효할까요?</p>
+<p>「The Curious Case of Improving Foreign Language Listening Skills by Reading Rather than Listening」이라는 논문은 초급 학습자를 IELTS 3.5–5.0등급, 즉 GER 기준 A2–B1로 보고, 숙련 학습자를 IELTS 6.0등급, 즉 B2부터로 봅니다. 그리고 숙련 학습자에게는 앞서 말한 병행 학습이 효과가 없을 뿐 아니라 오히려 효과를 떨어뜨린다는 사실을 밝혀냈습니다. 이를 전문성 역전 효과(Expertise Reversal Effect)라고 합니다. 초보에게 효과적인 교수법이 숙련자에게는 비효과적이거나 역효과를 낼 수 있다는 뜻입니다.</p>
+<p>논문의 저자는 성인 초급 학습자에게 프랑스어 듣기를 가르치는 여러 접근법의 효과를 비교했습니다. 읽기와 듣기를 병행하는 접근법이 듣기 능력, 인지 부하, 어휘와 문장 학습에서 가장 효과적이었습니다. 반면 숙련 학습자는 읽기만 한 집단에서 듣기 능력이 더 좋았고 인지 부하가 더 낮았습니다. 숙련 학습자에게는 소리 입력을 더하는 것이 인지 과부하를 일으켜 학습을 방해할 수 있다는 뜻입니다.</p>
+<p>글을 읽으면 소리처럼 정보가 금방 사라지지 않고, 복잡한 문장 구조와 어휘를 자기 속도로 천천히 다룰 수 있습니다(Jiang 2017). 그러면 들어야 할 내용에 더 익숙해집니다. 듣기가 안 된다고 &#x27;듣는 일&#x27;에만 매달리면 인지 부하만 심해집니다.</p>
+<h2 id="hoeren-2-정리">정리</h2>
+<p>두 연구가 독일어 학습자에게 알려 주는 것은 이렇습니다.</p>
+<ul><li>초급(A1–B1): 단어 암기, 독해, 듣기를 함께 하는 편이 듣기 실력 향상에 도움이 됩니다.</li><li>숙련(B2–C2): 학습 영역을 분리해 인지 부하를 낮추고 읽기에 집중하는 편이 듣기 실력 향상에 더 도움이 됩니다.</li></ul>
+<p>초급자는 읽기와 듣기 두 마리 토끼를 잡아야 하지만 부담 갖지 마세요. 드라마도 보고 팟캐스트도 들으며 읽다 보면 어느새 귀가 열리는 날이 옵니다. B2 이상의 숙련자에게는 듣기가 어려울 때 &#x27;읽기&#x27;라는 열쇠가 있습니다.</p>
+<p>어떤 방식이든 중요한 것은 꾸준함과 즐거움입니다. 오늘도 독일어와의 씨름을 즐겨 보시기 바랍니다.</p>
+</div>
+<nav class="pn" aria-label="같은 분류의 글"><a class="pv" href="hoeren-1.html"><small>← 이전 글</small><b>잘 듣기 위한 두 가지 조건과 듣기 루틴</b></a><a class="nx" href="hoeren-3.html"><small>다음 글 →</small><b>듣기, 연습하는데 왜 안 늘까</b></a></nav>
+<aside class="more" aria-label="다른 학습 자료"><b>SODA Lehrwerk</b><p>소피아 독일어학원은 독일어 공부법 글 35편과 함께 문법 교재, 독해·듣기·쓰기·말하기 훈련, 단어장, Goethe·telc 모의고사를 무료로 공개합니다.</p><ul><li><a href="../../grammatik/">문법 교재</a></li><li><a href="../../lesetraining/">독해 훈련</a></li><li><a href="../../hoertraining/">듣기 훈련</a></li><li><a href="../../schreibtraining/">쓰기 훈련</a></li><li><a href="../../sprechtraining/">말하기 훈련</a></li><li><a href="../../vokalab/">단어장 A1–C1</a></li><li><a href="../../#inhalt">전체 목차</a></li></ul></aside>
+<p class="a-end"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></p>
+<p class="a-note">소피아 독일어학원 · 독일어 공부법</p>
+</article>
+<script>
+(function(){
+  var au=null, cur=null;
+  function stop(){if(au){au.pause();au=null;} if(cur){cur.classList.remove('on');cur=null;}}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.snd'); if(!b)return;
+    var same=b===cur; stop(); if(same)return;
+    au=new Audio(b.getAttribute('data-snd')); cur=b; b.classList.add('on');
+    au.addEventListener('ended',stop); au.addEventListener('error',stop);
+    var pr=au.play(); if(pr&&pr.catch)pr.catch(stop);
+  });
+})();
+</script>
+</body>
+</html>

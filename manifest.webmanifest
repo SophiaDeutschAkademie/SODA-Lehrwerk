@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "SODA Lehrwerk · 소피아 독일어학원",
+  "short_name": "SODA Lehrwerk",
+  "description": "Sophia Deutsch Akademie 독일어 학습 자료 모음 · 문법, 독해, 듣기, 쓰기, 말하기, 단어장, 공부법, 모의고사",
+  "lang": "ko",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14181E",
+  "theme_color": "#14181E",
+  "icons": [
+    {"src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script id="soda-theme-js">
+(function(){
+  var KEY='soda-theme', d=document.documentElement, t='dark';
+  try{var s=localStorage.getItem(KEY); if(s==='light'||s==='dark') t=s;}catch(e){}
+  function apply(v){
+    d.setAttribute('data-theme',v); d.style.colorScheme=v;
+    var m=document.querySelector('meta[name="color-scheme"]'); if(m) m.setAttribute('content',v);
+    var c=document.querySelector('meta[name="theme-color"]'); if(c) c.setAttribute('content',v==='dark'?'#14181E':'#FAFAF8');
+  }
+  apply(t);
+  var SUN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var MOON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+  function mount(){
+    if(document.getElementById('soda-theme-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-theme-btn'; b.className='soda-theme-btn';
+    function paint(){ var dk=d.getAttribute('data-theme')==='dark'; b.innerHTML=dk?SUN:MOON; b.setAttribute('aria-pressed',dk?'true':'false'); b.setAttribute('aria-label','다크 모드 '+(dk?'끄기':'켜기')); b.title='다크 모드 '+(dk?'켜짐':'꺼짐')+' · 누르면 '+(dk?'라이트':'다크')+'로 바뀌어요'; }
+    b.addEventListener('click',function(){ var n=d.getAttribute('data-theme')==='dark'?'light':'dark'; apply(n); try{localStorage.setItem(KEY,n);}catch(e){} paint(); });
+    paint(); document.body.appendChild(b);
+    if(!document.getElementById('soda-toc-btn')){ var a=document.createElement('a'); a.id='soda-toc-btn'; a.className='soda-toc-btn'; a.href='../../#inhalt'; a.setAttribute('aria-label','홈(목차)으로 돌아가기'); a.title='홈 · 목차로'; a.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>'; document.body.appendChild(a); }
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>단어는 외우는 것이 아니라 공부하는 것 · 독일어 공부법 | 소피아 독일어학원</title>
+<meta name="description" content="helfen = 돕다 등식이 만드는 오류와, 문형으로 단어를 공부하는 방법">
+<link rel="canonical" href="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/wortschatz-2.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SODA Lehrwerk · 소피아 독일어학원">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="단어는 외우는 것이 아니라 공부하는 것">
+<meta property="og:description" content="helfen = 돕다 등식이 만드는 오류와, 문형으로 단어를 공부하는 방법">
+<meta property="og:url" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/wortschatz-2.html">
+<meta property="og:image" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png">
+<meta property="article:published_time" content="2026-07-07">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14181E">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/png" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/pretendard.css">
+<link rel="stylesheet" href="article.css?v=aaa837f8c1">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "단어는 외우는 것이 아니라 공부하는 것", "description": "helfen = 돕다 등식이 만드는 오류와, 문형으로 단어를 공부하는 방법", "inLanguage": "ko", "datePublished": "2026-07-07", "mainEntityOfPage": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/wortschatz-2.html", "image": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png", "articleSection": "어휘 (Wortschatz)", "author": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/"}, "publisher": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "logo": {"@type": "ImageObject", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/assets/icons/icon-512.png"}}}</script>
+<script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<article class="reader">
+<nav class="crumbs" aria-label="위치"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></nav>
+<p class="a-eb">Wortschatz<i>·</i>어휘 2/5</p>
+<h1>단어는 외우는 것이 아니라 공부하는 것</h1>
+<p class="a-sum">helfen = 돕다 등식이 만드는 오류와, 문형으로 단어를 공부하는 방법</p>
+<p class="a-meta">약 7분 · 소피아 독일어학원</p>
+<div class="body">
+<p>단어를 열심히 외우는데 문장이 만들어지지 않나요? 분명 아는 단어인데 쓰기만 하면 틀리나요? 단어장을 세 번 돌렸는데 제자리인 것 같나요?</p>
+<p>지난 글에서는 단어를 &#x27;얼마나&#x27; 외울지 다뤘습니다. 이 글에서는 &#x27;어떻게&#x27;를 다룹니다. 결론부터 말씀드립니다.</p>
+<blockquote class="call"><p>단어는 암기하는 것이 아니라 공부하는 것입니다.</p></blockquote>
+<h2 id="wortschatz-2-helfen-돕다의-함정">helfen = 돕다의 함정</h2>
+<p>대부분 단어를 이렇게 외웁니다.</p>
+<div class="de" lang="de"><p>helfen = 돕다</p></div>
+<p>깔끔하고 빠릅니다. 이 등식으로 문장을 만들어 보겠습니다. &quot;저는 아버지를 도와요.&quot;</p>
+<div class="de" lang="de"><p>Ich helfe meinen Vater. (X)</p></div>
+<p>한국어 &#x27;돕다&#x27;는 조사 &#x27;를&#x27;과 결합합니다. 그래서 우리 머리는 자동으로 4격을 꺼냅니다. 그런데 helfen은 3격을 요구합니다.</p>
+<div class="de" lang="de"><p>Ich helfe meinem Vater. (O)</p></div>
+<p>helfen = 돕다라는 등식에는 이 정보가 없습니다. 등식은 단어의 뜻만 알려 주고, 단어를 쓰는 법은 알려 주지 않습니다. 그래서 사전은 이렇게 적습니다.</p>
+<div class="de" lang="de"><p>i. jm helfen</p></div>
+<p>i.는 자동사(intransitiv), jm은 jemandem, 즉 3격 &#x27;누구에게&#x27;입니다. 한국어로는 &#x27;누구를 돕다&#x27;라고 옮기지만, 독일어 문형은 &#x27;누구에게(3격) 도움을 주다&#x27;입니다. 이렇게 뜻만 떼어 외우지 않고, 단어가 문장 안에 자리 잡는 방식인 문형을 통째로 공부합니다.</p>
+<h2 id="wortschatz-2-단어는-혼자-쓸-수-없습니다">단어는 혼자 쓸 수 없습니다</h2>
+<p>언어학자 테니에르(Lucien Tesnière)는 동사가 문장 안에서 특정한 성분을 요구한다는 사실을 체계화했습니다. 이를 결합가(Valenz)라고 합니다. helfen은 3격 하나를 요구하고, geben은 3격과 4격을 요구합니다(jm etw geben). 단어마다 어떤 성분과 결합해야 하는지가 정해져 있고, 그 결합 방식을 아는 것이 곧 그 단어를 아는 것입니다. 독일에서는 동사의 문형만 모은 사전(VALBU)을 따로 펴낼 정도입니다.</p>
+<h2 id="wortschatz-2-문형으로-공부하면-좋은-점">문형으로 공부하면 좋은 점</h2>
+<h3 id="wortschatz-2-첫째-오류를-미리-막습니다">첫째, 오류를 미리 막습니다</h3>
+<p>한국어 조사와 독일어 격은 자주 어긋납니다. 이번에는 반대 방향의 예입니다. &#x27;묻다&#x27;는 &#x27;누구에게 묻다&#x27;이니 3격일까요?</p>
+<div class="de" lang="de"><p>Ich frage dir. (X)</p><p>Ich frage dich. (O)</p></div>
+<p>fragen의 문형은 t. jn fragen, 즉 4격입니다. helfen에서는 &#x27;를&#x27;이 우리를 속였고, fragen에서는 &#x27;에게&#x27;가 우리를 속입니다. 두 언어의 대응은 믿을 수 없습니다. 단어마다 문형을 확인하는 습관만이 우리를 지켜 줍니다. 하나 더 보겠습니다.</p>
+<div class="de" lang="de"><p>Ich warte den Bus. (X)</p><p>Ich warte auf den Bus. (O)</p></div>
+<p>&#x27;버스를 기다리다&#x27;의 &#x27;를&#x27;도 함정입니다. warten의 문형은 i. auf jn/etw(4격) warten입니다.</p>
+<h3 id="wortschatz-2-둘째-단어가-곧-문장이-됩니다">둘째, 단어가 곧 문장이 됩니다</h3>
+<p>문형을 알면 문장을 바로 만들 수 있습니다. i. jm (bei etw) helfen을 아는 학생은 단어를 배우는 순간 문장을 만듭니다.</p>
+<div class="de" lang="de"><p>Kannst du mir helfen?</p><p>Ich helfe dir beim Umzug.</p></div>
+<p>helfen = 돕다만 아는 학생은 뜻은 알지만 문장을 만들지 못합니다. 시험을 위한 지식과 사용을 위한 지식의 차이입니다.</p>
+<h3 id="wortschatz-2-셋째-독해가-빨라집니다">셋째, 독해가 빨라집니다</h3>
+<p>문형을 아는 사람은 동사를 보는 순간 문장의 나머지를 예측하며 읽습니다. hilft가 보이면 3격을 찾습니다. 지난 독해 글에서 구조를 깊이 보는 습관이 독해 속도를 높이는 가장 중요한 열쇠라고 말씀드렸습니다. 문형 지식이 바로 그 습관의 재료입니다. 독일어에서는 동사가 문장의 두 번째 자리와 끝자리를 차지하며 괄호를 만듭니다. 동사의 문형을 안다는 것은 문장의 나머지 구조를 미리 안다는 뜻입니다.</p>
+<h3 id="wortschatz-2-넷째-역설적으로-더-오래-기억됩니다">넷째, 역설적으로 더 오래 기억됩니다</h3>
+<p>외울 것이 세 배로 늘어난 것 같지요? 그러나 기억은 정보의 양이 아니라 처리의 깊이를 따라갑니다. helfen = 돕다는 단순한 대응이라 금방 잊힙니다. 반면 i. jm helfen이라는 문형과 내가 직접 만든 예문은 격 정보, 문장 구조, 의미가 함께 저장됩니다. 여러 정보가 연결되어 있으면 하나만 떠올려도 나머지가 따라오기 때문에 쉽게 사라지지 않습니다. 어휘 습득 연구도 단어를 &#x27;안다&#x27;는 것의 정의에 형태와 뜻뿐 아니라 문법적 결합 방식까지 포함시킵니다.</p>
+<h3 id="wortschatz-2-다섯째-고급-레벨까지-그대로-확장됩니다">다섯째, 고급 레벨까지 그대로 확장됩니다</h3>
+<p>전치사 지배 동사가 나와도 같은 방식으로 공부하면 됩니다.</p>
+<div class="de" lang="de"><p>refl. sich auf etw(4격) freuen — 앞으로 올 일을 기대하다</p><p>Ich freue mich auf das Wochenende.</p><p>refl. sich über etw(4격) freuen — 이미 있는 일을 기뻐하다</p><p>Ich freue mich über dein Geschenk.</p></div>
+<p>freuen = 기뻐하다라는 등식으로는 이 구분을 끝내 할 수 없습니다. 형용사(stolz auf + 4격, zufrieden mit + 3격), 명사(die Angst vor + 3격), B2–C1의 기능동사구(eine Entscheidung treffen이지 machen이 아닙니다)까지, A1에서 만든 이 습관 하나가 C1까지 갑니다.</p>
+<p>덧붙이면, i.라는 글자 하나의 정보량도 만만치 않습니다. helfen이 자동사라는 것은 4격 목적어가 없다는 뜻이고, 그래서 주어를 세운 수동태가 불가능합니다.</p>
+<div class="de" lang="de"><p>Er wird geholfen. (X)</p><p>Ihm wird geholfen. (O)</p></div>
+<p>기호 하나가 수동태의 문장 구조까지 알려 줍니다.</p>
+<h2 id="wortschatz-2-단점-그리고-극복">단점, 그리고 극복</h2>
+<p>솔직하게 말씀드립니다. 이 방식에는 대가가 있습니다. 다행히 감당하지 못할 대가는 아닙니다.</p>
+<h3 id="wortschatz-2-단점-하나-느립니다">단점 하나, 느립니다</h3>
+<p>단어 하나에 드는 시간이 두세 배입니다. 하루에 등식 20개는 가능해도 문형 20개는 무리입니다.</p>
+<p>개수를 줄이세요. 지난 글에서 단어 공부의 진짜 적은 개수가 아니라 지속성이라고 말씀드렸습니다. 등식 10개보다 문형 5개입니다. 얕게 외운 20개는 다음 달에 다시 외워야 할 20개이고, 깊게 공부한 5개는 이미 내 문장이 된 5개입니다. 장기적으로 어느 쪽이 빠를까요?</p>
+<h3 id="wortschatz-2-단점-둘-모든-단어에-문형이-필요하지는-않습니다">단점 둘, 모든 단어에 문형이 필요하지는 않습니다</h3>
+<p>Tisch에 문형을 붙이려는 순간 이 방식은 고문이 됩니다. 품사마다 공부할 정보가 다릅니다.</p>
+<ul><li>동사는 문형이 최우선입니다. 격, 전치사, 재귀 여부, 불규칙이라면 3단 변화(hilft – half – hat geholfen)까지가 동사의 문형입니다.</li><li>명사의 문형은 성과 복수형입니다. der Tisch, -e면 충분합니다. 다만 전치사와 굳게 결합하는 명사(die Angst vor)는 예외로 챙깁니다.</li><li>형용사는 지배가 있는 것만 문형으로 공부합니다.</li></ul>
+<p>필요한 만큼만 깊게, 나머지는 가볍게 가져가면 됩니다.</p>
+<h3 id="wortschatz-2-단점-셋-기호가-낯섭니다">단점 셋, 기호가 낯섭니다</h3>
+<p>i., t., refl., jm, jn... 처음 보면 암호입니다. 이 암호는 평생 딱 한 번만 해독하면 됩니다.</p>
+<div class="tbl c3 fit"><table><thead><tr><th>기호</th><th>뜻</th><th>격</th></tr></thead><tbody><tr><td>jd = jemand</td><td class="nw">누가</td><td class="nw">1격</td></tr><tr><td>jds = jemandes</td><td class="nw">누구의</td><td class="nw">2격</td></tr><tr><td>jm = jemandem</td><td>누구에게</td><td class="nw">3격</td></tr><tr><td>jn = jemanden</td><td class="nw">누구를</td><td class="nw">4격</td></tr><tr><td>etw = etwas</td><td class="nw">무엇</td><td></td></tr><tr><td class="nw">i.</td><td>자동사 (intransitiv)</td><td></td></tr><tr><td class="nw">t.</td><td>타동사 (transitiv)</td><td></td></tr><tr><td>refl.</td><td>재귀동사 (reflexiv)</td><td></td></tr></tbody></table></div>
+<p>10분이면 익힙니다. 그리고 그날부터 세상의 모든 독일어 사전이 읽힙니다. 사전 읽는 법을 배우는 것 자체가 독일어 실력입니다. 직접 만드는 단어장 첫 페이지에 이 표를 붙여 두세요.</p>
+<h3 id="wortschatz-2-단점-넷-문형이-여러-개인-단어-앞에서-얼어붙습니다">단점 넷, 문형이 여러 개인 단어 앞에서 얼어붙습니다</h3>
+<p>denken만 해도 an jn/etw(4격) denken(누구를/무엇을 생각하다), über etw(4격) nachdenken(무엇에 대해 곰곰이 생각하다)처럼 문형이 여럿입니다. 사전 한 항목이 한 페이지입니다.</p>
+<p>사전을 통째로 외우려 하지 마세요. 가장 자주 쓰는 핵심 문형 하나만 먼저 가져갑니다. 나머지는 텍스트에서 그 단어를 다시 만날 때마다 하나씩 추가합니다. 단어장은 한 번에 완성하는 것이 아니라 계속 돌아와서 보충하는 것입니다.</p>
+<h3 id="wortschatz-2-단점-다섯-문형마저-기계적으로-외울-수-있습니다">단점 다섯, 문형마저 기계적으로 외울 수 있습니다</h3>
+<p>&quot;i. jm helfen, i. jm helfen...&quot; 주문처럼 외우면 등식 암기와 다를 바 없습니다. 문형마다 예문 하나를 반드시 짝지으세요. 가능하면 남의 예문이 아니라 자기 문장으로 만듭니다.</p>
+<div class="de" lang="de"><p>Ich helfe meiner Mutter beim Kochen.</p></div>
+<p>틀려도 괜찮습니다. 써 보고 말해 봐야 문형이 몸에 붙습니다. 문형만 외우면 규칙은 아는데 쓸 줄은 모르는 상태에 머뭅니다. 예문까지 짝지어야 비로소 내가 쓸 수 있는 문장이 됩니다.</p>
+<h2 id="wortschatz-2-단어장-한-줄-쓰는-법">단어장 한 줄 쓰는 법</h2>
+<p>단어장 한 줄은 이렇게 씁니다.</p>
+<div class="de" lang="de"><p>helfen (hilft – half – hat geholfen)</p><p>i. jm (bei etw) helfen</p><p>Kannst du mir beim Umzug helfen?</p></div>
+<p>뜻이 안 보인다고요? 맞습니다. 뜻은 예문이 이미 알려 주고 있습니다. 등식 대신 문형과 예문을 적는 겁니다. 이것이 암기와 공부의 차이입니다.</p>
+<h2 id="wortschatz-2-마치며">마치며</h2>
+<p>단어 공부의 목표를 다시 묻겠습니다. 단어 시험 통과인가요, 문장 생산인가요?</p>
+<p>helfen = 돕다를 아는 학생과 i. jm helfen으로 자기 문장을 만들어 본 학생은 같은 단어를 아는 것이 아닙니다. 단어를 공부하세요. 진심으로 응원합니다.</p>
+</div>
+<nav class="pn" aria-label="같은 분류의 글"><a class="pv" href="wortschatz-1.html"><small>← 이전 글</small><b>단어는 몇 개를 외워야 할까</b></a><a class="nx" href="wortschatz-3.html"><small>다음 글 →</small><b>새 단어는 자고 나야 자리 잡습니다</b></a></nav>
+<aside class="more" aria-label="다른 학습 자료"><b>SODA Lehrwerk</b><p>소피아 독일어학원은 독일어 공부법 글 35편과 함께 문법 교재, 독해·듣기·쓰기·말하기 훈련, 단어장, Goethe·telc 모의고사를 무료로 공개합니다.</p><ul><li><a href="../../grammatik/">문법 교재</a></li><li><a href="../../lesetraining/">독해 훈련</a></li><li><a href="../../hoertraining/">듣기 훈련</a></li><li><a href="../../schreibtraining/">쓰기 훈련</a></li><li><a href="../../sprechtraining/">말하기 훈련</a></li><li><a href="../../vokalab/">단어장 A1–C1</a></li><li><a href="../../#inhalt">전체 목차</a></li></ul></aside>
+<p class="a-end"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></p>
+<p class="a-note">소피아 독일어학원 · 독일어 공부법</p>
+</article>
+<script>
+(function(){
+  var au=null, cur=null;
+  function stop(){if(au){au.pause();au=null;} if(cur){cur.classList.remove('on');cur=null;}}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.snd'); if(!b)return;
+    var same=b===cur; stop(); if(same)return;
+    au=new Audio(b.getAttribute('data-snd')); cur=b; b.classList.add('on');
+    au.addEventListener('ended',stop); au.addEventListener('error',stop);
+    var pr=au.play(); if(pr&&pr.catch)pr.catch(stop);
+  });
+})();
+</script>
+</body>
+</html>

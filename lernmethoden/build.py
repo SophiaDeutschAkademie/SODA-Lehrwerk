@@ -3,6 +3,8 @@
 
 src/*.txt(글 원고)를 읽어 한 장짜리 오프라인 페이지 lernmethoden/index.html 을 만든다.
 실행: python3 lernmethoden/build.py   (저장소 어디에서 실행해도 됩니다)
+만드는 것: lernmethoden/index.html(앱), lernmethoden/a/<id>.html(글마다 검색용 페이지)와 a/article.css.
+끝나면 tools/seo.py 를 불러 페이지 머리의 검색용 태그와 sitemap.xml 을 다시 맞춥니다.
 
 원고 형식(src/<id>.txt)
   머리말: id / cat / no / date / title / sum  (줄마다 `키: 값`), 그 뒤 `---` 한 줄
@@ -23,6 +25,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, 'src')
 SHARED = os.path.join(SRC, 'shared')
 OUT = os.path.join(HERE, 'index.html')
+# 글마다 따로 만드는 검색용 페이지(lernmethoden/a/<id>.html)와 그 공통 스타일
+ADIR = os.path.join(HERE, 'a')
+SITE = 'https://sophiadeutschakademie.github.io/SODA-Lehrwerk/'
 
 # (id, 독일어 이름, 한국어 이름, 설명)
 CATS = [
@@ -361,7 +366,7 @@ JS = r"""
 (function(){
   var views={cover:document.getElementById('cover'),toc:document.getElementById('inhalt')};
   var arts=Array.prototype.slice.call(document.querySelectorAll('.article'));
-  var T0='SODA Lernmethoden · Sophia Deutsch Akademie';
+  var T0='독일어 공부법 · SODA Lernmethoden | 소피아 독일어학원';
   function show(el){
     views.cover.hidden=el!==views.cover; views.toc.hidden=el!==views.toc;
     arts.forEach(function(a){a.hidden=a!==el;});
@@ -401,6 +406,139 @@ JS = r"""
   route(false);
 })();
 """
+
+
+STATIC_JS = r"""
+(function(){
+  var au=null, cur=null;
+  function stop(){if(au){au.pause();au=null;} if(cur){cur.classList.remove('on');cur=null;}}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.snd'); if(!b)return;
+    var same=b===cur; stop(); if(same)return;
+    au=new Audio(b.getAttribute('data-snd')); cur=b; b.classList.add('on');
+    au.addEventListener('ended',stop); au.addEventListener('error',stop);
+    var pr=au.play(); if(pr&&pr.catch)pr.catch(stop);
+  });
+})();
+"""
+
+STATIC_CSS = r"""
+/* 글 페이지(lernmethoden/a/*.html) 전용 */
+.reader .crumbs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.reader .crumbs .pill{margin-bottom:0}
+.more{margin-top:48px;padding:22px 22px 20px;border:1px solid var(--bd);border-radius:16px;background:var(--bg-c)}
+.more b{display:block;font-size:12px;font-weight:800;letter-spacing:.2em;color:var(--text-m);text-transform:uppercase}
+.more p{margin-top:8px;font-size:15.5px;line-height:1.7;color:var(--text-s);word-break:keep-all;text-align:justify}
+.more ul{list-style:none;margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+.more a{display:inline-flex;align-items:center;height:36px;padding:0 14px;border:1px solid var(--bd);border-radius:999px;font-size:13.5px;font-weight:700;color:var(--accent);transition:border-color .15s}
+.more a:hover{border-color:var(--accent)}
+"""
+
+# 글 페이지 아래 「다른 무료 학습 자료」에 보여 줄 앱 (폴더, 이름)
+MORE_APPS = [
+    ('grammatik/', '문법 교재'), ('lesetraining/', '독해 훈련'), ('hoertraining/', '듣기 훈련'),
+    ('schreibtraining/', '쓰기 훈련'), ('sprechtraining/', '말하기 훈련'), ('vokalab/', '단어장 A1–C1'),
+]
+
+
+def static_pages(series, catname, theme, chrome, fonts):
+    """글마다 본문이 HTML에 그대로 들어 있는 페이지를 만든다. 검색엔진이 글 하나하나를 따로 찾게 하려는 것."""
+    os.makedirs(ADIR, exist_ok=True)
+    css = fonts + CSS + STATIC_CSS + chrome
+    with open(os.path.join(ADIR, 'article.css'), 'w', encoding='utf-8') as f:
+        f.write(css)
+    import hashlib
+    cv = hashlib.md5(css.encode('utf-8')).hexdigest()[:10]
+    # 글 페이지는 lernmethoden/a/ 안에 있으므로 집 버튼은 두 단계 위 목차로 간다
+    th = theme.replace("a.href='../#inhalt'", "a.href='../../#inhalt'")
+    keep = set()
+    for cid, lst in series.items():
+        de, ko = catname[cid][1], catname[cid][2]
+        for idx, a in enumerate(lst):
+            body = render_body(a['body'], a['id'])
+            body = re.sub(r'href="#a/([a-z0-9-]+)"', r'href="\1.html"', body)
+            body = body.replace('data-snd="audio/', 'data-snd="../audio/')
+            chars = len(re.sub(r'\s+', '', a['body']))
+            mins = max(1, round(chars / 500))
+            pn = []
+            if idx > 0:
+                p = lst[idx - 1]
+                pn.append('<a class="pv" href="%s.html"><small>← 이전 글</small><b>%s</b></a>' % (p['id'], esc(p['title'])))
+            if idx < len(lst) - 1:
+                n = lst[idx + 1]
+                pn.append('<a class="nx" href="%s.html"><small>다음 글 →</small><b>%s</b></a>' % (n['id'], esc(n['title'])))
+            pn_html = '<nav class="pn" aria-label="같은 분류의 글">%s</nav>' % ''.join(pn) if pn else ''
+            url = SITE + 'lernmethoden/a/%s.html' % a['id']
+            title = '%s · 독일어 공부법 | 소피아 독일어학원' % a['title']
+            ld = {
+                '@context': 'https://schema.org', '@type': 'Article',
+                'headline': a['title'], 'description': a['sum'], 'inLanguage': 'ko',
+                'datePublished': a['date'], 'mainEntityOfPage': url,
+                'image': SITE + 'lernmethoden/icons/icon-512.png',
+                'articleSection': '%s (%s)' % (ko, de),
+                'author': {'@type': 'Organization', 'name': 'Sophia Deutsch Akademie (소피아 독일어학원)', 'url': SITE},
+                'publisher': {'@type': 'Organization', 'name': 'Sophia Deutsch Akademie (소피아 독일어학원)',
+                              'logo': {'@type': 'ImageObject', 'url': SITE + 'assets/icons/icon-512.png'}},
+            }
+            import json
+            ld_txt = json.dumps(ld, ensure_ascii=False).replace('</', '<\\/')
+            more = ''.join('<li><a href="../../%s">%s</a></li>' % (path, esc(name)) for path, name in MORE_APPS)
+            doc = """<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+%(theme)s<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>%(title)s</title>
+<meta name="description" content="%(sum)s">
+<link rel="canonical" href="%(url)s">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SODA Lehrwerk · 소피아 독일어학원">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="%(h)s">
+<meta property="og:description" content="%(sum)s">
+<meta property="og:url" content="%(url)s">
+<meta property="og:image" content="%(site)slernmethoden/icons/icon-512.png">
+<meta property="article:published_time" content="%(date)s">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14181E">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/png" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/pretendard.css">
+<link rel="stylesheet" href="article.css?v=%(cv)s">
+<script type="application/ld+json">%(ld)s</script>
+<script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<article class="reader">
+<nav class="crumbs" aria-label="위치"><a class="pill" href="../#inhalt">%(back)s독일어 공부법 목록</a></nav>
+<p class="a-eb">%(de)s<i>·</i>%(ko)s %(i)d/%(n)d</p>
+<h1>%(h)s</h1>
+<p class="a-sum">%(sum)s</p>
+<p class="a-meta">약 %(mins)d분 · 소피아 독일어학원</p>
+<div class="body">
+%(body)s
+</div>
+%(pn)s
+<aside class="more" aria-label="다른 학습 자료"><b>SODA Lehrwerk</b><p>소피아 독일어학원은 독일어 공부법 글 %(total)d편과 함께 문법 교재, 독해·듣기·쓰기·말하기 훈련, 단어장, Goethe·telc 모의고사를 무료로 공개합니다.</p><ul>%(more)s<li><a href="../../#inhalt">전체 목차</a></li></ul></aside>
+<p class="a-end"><a class="pill" href="../#inhalt">%(back)s독일어 공부법 목록</a></p>
+<p class="a-note">소피아 독일어학원 · 독일어 공부법</p>
+</article>
+<script>%(js)s</script>
+</body>
+</html>
+""" % dict(theme=th, title=esc(title), h=esc(a['title']), sum=esc(a['sum']), url=url, site=SITE, date=a['date'],
+                cv=cv, ld=ld_txt, back=BACK, de=de, ko=ko, i=idx + 1, n=len(lst), mins=mins, body=body, pn=pn_html,
+                total=sum(len(v) for v in series.values()), more=more, js=STATIC_JS)
+            fn = '%s.html' % a['id']
+            keep.add(fn)
+            with open(os.path.join(ADIR, fn), 'w', encoding='utf-8') as f:
+                f.write(doc)
+    # 원고가 없어진 글의 페이지는 지운다
+    for fn in os.listdir(ADIR):
+        if fn.endswith('.html') and fn not in keep:
+            os.remove(os.path.join(ADIR, fn))
+    print('wrote %d article pages in %s' % (len(keep), ADIR))
 
 
 def build():
@@ -552,6 +690,12 @@ def build():
     with open(OUT, 'w', encoding='utf-8') as f:
         f.write(doc)
     print('wrote %s (%d bytes, %d articles)' % (OUT, len(doc.encode('utf-8')), total))
+    static_pages(series, catname, theme, chrome, fonts)
+    # 페이지 머리의 검색용 태그와 sitemap.xml 을 다시 맞춘다
+    seo = os.path.join(os.path.dirname(HERE), 'tools', 'seo.py')
+    if os.path.exists(seo):
+        import subprocess
+        subprocess.run([sys.executable, seo], check=True)
 
 
 if __name__ == '__main__':

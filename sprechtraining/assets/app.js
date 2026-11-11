@@ -270,7 +270,7 @@
   function renderCover() {
     var total = 0;
     LEVELS.forEach(function (l) { total += (DATA[l.code] || []).length; });
-    document.title = 'SODA SPRECHTRAINING · Sophia Deutsch Akademie';
+    document.title = '독일어 말하기 훈련 · 레벨별 대화문과 원어민 음성 | SODA Sprechtraining';
     app.innerHTML =
       '<main id="main" class="cover view" tabindex="-1" aria-labelledby="cover-title">' +
       '<header class="brand"><img src="assets/logo.png" alt="Sophia Deutsch Akademie 로고">' +

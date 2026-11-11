@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script id="soda-theme-js">
+(function(){
+  var KEY='soda-theme', d=document.documentElement, t='dark';
+  try{var s=localStorage.getItem(KEY); if(s==='light'||s==='dark') t=s;}catch(e){}
+  function apply(v){
+    d.setAttribute('data-theme',v); d.style.colorScheme=v;
+    var m=document.querySelector('meta[name="color-scheme"]'); if(m) m.setAttribute('content',v);
+    var c=document.querySelector('meta[name="theme-color"]'); if(c) c.setAttribute('content',v==='dark'?'#14181E':'#FAFAF8');
+  }
+  apply(t);
+  var SUN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var MOON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+  function mount(){
+    if(document.getElementById('soda-theme-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-theme-btn'; b.className='soda-theme-btn';
+    function paint(){ var dk=d.getAttribute('data-theme')==='dark'; b.innerHTML=dk?SUN:MOON; b.setAttribute('aria-pressed',dk?'true':'false'); b.setAttribute('aria-label','다크 모드 '+(dk?'끄기':'켜기')); b.title='다크 모드 '+(dk?'켜짐':'꺼짐')+' · 누르면 '+(dk?'라이트':'다크')+'로 바뀌어요'; }
+    b.addEventListener('click',function(){ var n=d.getAttribute('data-theme')==='dark'?'light':'dark'; apply(n); try{localStorage.setItem(KEY,n);}catch(e){} paint(); });
+    paint(); document.body.appendChild(b);
+    if(!document.getElementById('soda-toc-btn')){ var a=document.createElement('a'); a.id='soda-toc-btn'; a.className='soda-toc-btn'; a.href='../../#inhalt'; a.setAttribute('aria-label','홈(목차)으로 돌아가기'); a.title='홈 · 목차로'; a.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>'; document.body.appendChild(a); }
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>잘 듣기 위한 두 가지 조건과 듣기 루틴 · 독일어 공부법 | 소피아 독일어학원</title>
+<meta name="description" content="발음과 독해력, 받아쓰기, 문법 듣기와 내용 듣기 루틴">
+<link rel="canonical" href="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/hoeren-1.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SODA Lehrwerk · 소피아 독일어학원">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="잘 듣기 위한 두 가지 조건과 듣기 루틴">
+<meta property="og:description" content="발음과 독해력, 받아쓰기, 문법 듣기와 내용 듣기 루틴">
+<meta property="og:url" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/hoeren-1.html">
+<meta property="og:image" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png">
+<meta property="article:published_time" content="2024-04-12">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14181E">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/png" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/pretendard.css">
+<link rel="stylesheet" href="article.css?v=aaa837f8c1">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "잘 듣기 위한 두 가지 조건과 듣기 루틴", "description": "발음과 독해력, 받아쓰기, 문법 듣기와 내용 듣기 루틴", "inLanguage": "ko", "datePublished": "2024-04-12", "mainEntityOfPage": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/hoeren-1.html", "image": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png", "articleSection": "듣기 (Hören)", "author": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/"}, "publisher": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "logo": {"@type": "ImageObject", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/assets/icons/icon-512.png"}}}</script>
+<script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<article class="reader">
+<nav class="crumbs" aria-label="위치"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></nav>
+<p class="a-eb">Hören<i>·</i>듣기 1/3</p>
+<h1>잘 듣기 위한 두 가지 조건과 듣기 루틴</h1>
+<p class="a-sum">발음과 독해력, 받아쓰기, 문법 듣기와 내용 듣기 루틴</p>
+<p class="a-meta">약 3분 · 소피아 독일어학원</p>
+<div class="body">
+<p>독일어 듣기를 어떻게 공부해야 할지 모르겠다, 내 귀는 독일어와 맞지 않는 것 같다, 듣기 시험만 계속 떨어진다. 이런 분들을 위한 글입니다.</p>
+<p>먼저 잘 듣기 위해 필요한 조건 두 가지를 말씀드립니다.</p>
+<h2 id="hoeren-1-1-발음과-억양">1. 발음과 억양</h2>
+<p>단어의 뜻에는 신경을 쓰지만 발음에는 크게 주의를 기울이지 않는 경우가 많습니다. 이미 아는 간단한 단어라도 정확한 발음을 모르면 듣기가 어렵습니다.</p>
+<p>발음을 들을 수 있는 독일어 사전이나 여러 TTS 서비스를 이용해 보세요. 원어민과 구분하기 어려울 만큼 정확하게 읽어 줍니다. 따라 읽다 보면 정확한 발음을 낼 수 있게 됩니다.</p>
+<p>단어 하나하나의 발음에서 나아가 억양도 익혀야 합니다. 독일어 문장을 듣고 소리 내어 따라 읽는 방법이 좋습니다. 독일어 유튜브 영상도 좋지만, 아래 사이트에서 원하는 영상을 자막과 함께 보며 따라 읽어 보세요. 재생 속도를 조절할 수 있어서 좋습니다.</p>
+<div class="links"><a class="lk" href="https://www.ardmediathek.de" target="_blank" rel="noopener noreferrer"><span class="lk-t">ARD Mediathek</span><span class="lk-d">Filme, Serien, Dokus, Reportagen, Nachrichten, Geschichte, Wissenschaft 등 ARD의 모든 분야</span><span class="lk-u">ardmediathek.de</span></a></div>
+<h2 id="hoeren-1-2-독해력">2. 독해력</h2>
+<p>독일어를 듣고 바로 이해한다는 것은 내용을 즉각 파악한다는 뜻이고, 이를 직청직해 능력이라고 합니다. 소리를 정확히 구별하는 것, 즉 발음만으로는 잘 듣기에 충분하지 않습니다.</p>
+<p>들리는 말을 바로 이해하는 것은 읽는 글을 바로 이해하는 것과 비슷합니다. 간단한 회화가 아니라 뉴스처럼 긴 문장을 듣고 이해하려면 충분한 독해력이 바탕이 되어야 합니다. 독일어 듣기 연습과 독해 연습은 분리할 수 없습니다. 듣기 연습을 하면 독해 연습도 함께 되고, 반대도 마찬가지입니다.</p>
+<p>소피아 독일어학원의 수업이 읽기, 듣기, 쓰기, 말하기로 나뉘어 있지 않고 하나의 통합 과정인 이유도 이 조건 때문입니다.</p>
+<p>듣기 실력을 올리려면 독해 연습을 병행하면서 가능한 한 많이 들어야 합니다. 독해 속도를 올리는 연습이 필요하듯 청해 속도도 올려야 합니다.</p>
+<h3 id="hoeren-1-받아쓰기">받아쓰기</h3>
+<p>듣기 속도를 올리고 싶다면 받아쓰기를 연습해 보세요. 받아쓰기는 듣기 속도뿐 아니라 쓰기 실력에도 큰 도움이 됩니다. 독일 중학생들도 학교에서 받아쓰기를 연습합니다. 독일어가 얼마나 까다로운 언어인지 알 수 있죠. 아래 사이트에서 연습해 보세요.</p>
+<div class="links"><a class="lk" href="https://www.dazaf.de" target="_blank" rel="noopener noreferrer"><span class="lk-t">Diktate (dazaf.de)</span><span class="lk-d">A1/A2와 B1/B2 단계의 받아쓰기, 음성은 dazaf YouTube 채널에서 들을 수 있습니다</span><span class="lk-u">dazaf.de</span></a></div>
+<h2 id="hoeren-1-듣기-루틴-만들기">듣기 루틴 만들기</h2>
+<p>기본 조건을 갖췄다면 이제 듣기 공부 루틴을 만들 차례입니다. 자신에게 맞는 루틴을 직접 만들어 보세요. 아래는 소피아 독일어학원 수강생들이 하는 루틴입니다. Modelltest를 기반으로 공부해도 좋습니다.</p>
+<p>문법 듣기와 내용 듣기를 나누어 연습합니다.</p>
+<h3 id="hoeren-1-문법-듣기">문법 듣기</h3>
+<ol><li>책 뒤에 있는 지문에서 모르는 단어를 찾습니다.</li><li>문장의 모든 문법을 이해합니다.</li><li>지문을 보면서 오디오를 듣고 문법 구조를 확인합니다.</li><li>지문 없이 오디오를 들어 봅니다.</li></ol>
+<h3 id="hoeren-1-내용-듣기">내용 듣기</h3>
+<ol><li>오디오를 들으면서 지문을 소리 내어 따라 읽습니다.</li><li>문장의 뜻이 들릴 때까지 반복해서 들어 봅니다.</li><li>지문 없이 오디오를 들어 봅니다.</li><li>들리지 않는 문장을 다시 소리 내어 읽은 뒤 오디오만 들어 봅니다.</li><li>오디오 전체를 지문을 보면서 다시 들어 봅니다.</li><li>오디오 전체를 지문 없이 다시 들어 봅니다.</li><li>문제를 풀어 봅니다.</li><li>틀린 문제의 지문을 다시 듣고 문제를 풀어 봅니다.</li></ol>
+<p>많은 텍스트를 이 루틴으로 공부하면 시간이 오래 걸리고 지루해질 수 있습니다. 그렇다고 짧고 쉬운 텍스트로 공부하지는 마세요. 다양한 종류의 텍스트로 루틴을 유지하고 습관으로 만드는 편이 좋습니다. 꾸준함이 가장 중요합니다. 아래 두 사이트를 추천합니다.</p>
+<div class="links"><a class="lk" href="https://www.deutsch-perfekt.com" target="_blank" rel="noopener noreferrer"><span class="lk-t">Deutsch hören: Audio-Texte für Deutschlerner</span><span class="lk-d">Deutsch perfekt의 오디오 텍스트와 연습 문제, 세 가지 언어 수준</span><span class="lk-u">deutsch-perfekt.com</span></a><a class="lk" href="https://www.deutsch-to-go.de" target="_blank" rel="noopener noreferrer"><span class="lk-t">deutsch-to-go.de</span><span class="lk-d">매주 새로 올라오는 짧은 듣기 자료, 쉬움·중간·어려움 세 단계</span><span class="lk-u">deutsch-to-go.de</span></a></div>
+<p>듣기 실력은 꾸준히 해야 원하는 목표에 닿습니다. 절망하지 말고 오늘도 해내시기를 바랍니다.</p>
+</div>
+<nav class="pn" aria-label="같은 분류의 글"><a class="nx" href="hoeren-2.html"><small>다음 글 →</small><b>B1까지는 읽으며 듣고, B2부터는 읽기만</b></a></nav>
+<aside class="more" aria-label="다른 학습 자료"><b>SODA Lehrwerk</b><p>소피아 독일어학원은 독일어 공부법 글 35편과 함께 문법 교재, 독해·듣기·쓰기·말하기 훈련, 단어장, Goethe·telc 모의고사를 무료로 공개합니다.</p><ul><li><a href="../../grammatik/">문법 교재</a></li><li><a href="../../lesetraining/">독해 훈련</a></li><li><a href="../../hoertraining/">듣기 훈련</a></li><li><a href="../../schreibtraining/">쓰기 훈련</a></li><li><a href="../../sprechtraining/">말하기 훈련</a></li><li><a href="../../vokalab/">단어장 A1–C1</a></li><li><a href="../../#inhalt">전체 목차</a></li></ul></aside>
+<p class="a-end"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></p>
+<p class="a-note">소피아 독일어학원 · 독일어 공부법</p>
+</article>
+<script>
+(function(){
+  var au=null, cur=null;
+  function stop(){if(au){au.pause();au=null;} if(cur){cur.classList.remove('on');cur=null;}}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.snd'); if(!b)return;
+    var same=b===cur; stop(); if(same)return;
+    au=new Audio(b.getAttribute('data-snd')); cur=b; b.classList.add('on');
+    au.addEventListener('ended',stop); au.addEventListener('error',stop);
+    var pr=au.play(); if(pr&&pr.catch)pr.catch(stop);
+  });
+})();
+</script>
+</body>
+</html>

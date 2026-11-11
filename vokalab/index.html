@@ -33,7 +33,19 @@
 <link rel="icon" type="image/png" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/pretendard.css">
-<title>SODA VOKALAB</title>
+<title>독일어 단어장 A1–C1 · 12,724단어 | SODA Vokalab</title>
+<!-- seo:begin (tools/seo.py에서 만듦, 직접 고치지 마세요) -->
+<meta name="description" content="A1부터 C1까지 독일어 단어 12,724개를 주차별 목표와 테스트로 공부하는 무료 단어장. 예문과 한국어 뜻, 시험용 필수 단어 학습. 소피아 독일어학원.">
+<link rel="canonical" href="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/vokalab/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SODA Lehrwerk · 소피아 독일어학원">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="독일어 단어장 A1–C1 · 12,724단어 | SODA Vokalab">
+<meta property="og:description" content="A1부터 C1까지 독일어 단어 12,724개를 주차별 목표와 테스트로 공부하는 무료 단어장. 예문과 한국어 뜻, 시험용 필수 단어 학습. 소피아 독일어학원.">
+<meta property="og:url" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/vokalab/">
+<meta property="og:image" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/vokalab/icons/icon-512.png">
+<meta name="twitter:card" content="summary">
+<!-- seo:end -->
 <style>
 
 </style>
@@ -3649,7 +3661,7 @@ function makeLevel(L, shell) {
   /* ---------- 표지 ---------- */
   function showCover() {
     screen = 'cover'; current = null; closeModal(); hub.classList.remove('xmode');
-    document.title = 'SODA VOKALAB';
+    document.title = '독일어 단어장 A1–C1 · 12,724단어 | SODA Vokalab';
     hub.innerHTML =
       '<section class="uc" id="v-cover"><header class="uc-brand"><svg class="uc-logo" viewBox="0 0 1157 1333" aria-hidden="true" focusable="false"><path fill="#57585A" d="M0 348.6 686 0v678.2L0 1026.8z"/><path fill="#ED1C24" d="M235.4 501.5 921.4 153v678.2l-686 348.6z"/><path fill="#F3C811" d="M470.8 654.3 1156.8 305.7v678.2l-686 348.6z"/></svg><div class="uc-brand-t"><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div></header>' +
       '<div class="uc-hero"><h1 class="uc-title"><span class="t1">SODA</span><span class="t2">VOKALAB</span></h1>' +
@@ -3670,7 +3682,7 @@ function makeLevel(L, shell) {
   function showLevels() {
     hub.classList.remove('xmode');
     screen = 'levels'; current = null; closeModal();
-    document.title = 'SODA VOKALAB';
+    document.title = '독일어 단어장 A1–C1 · 12,724단어 | SODA Vokalab';
     var cards = LEVELS.map(function (L, i) {
       var sm = apis[i].summary(), pct = sm ? Math.round(sm.learned / L.words.length * 100) : 0;
       var state = sm ? '<div class="lv-st"><b>' + sm.cur + '주차</b> 진행 중 · 주 ' + sm.target + '개 목표 · 총 ' + sm.weeks + '주</div><div class="bar"><i style="width:' + pct + '%"></i></div><div class="lv-p">학습됨 ' + fmtN(sm.learned) + ' / ' + fmtN(L.words.length) + ' (' + pct + '%)</div>'

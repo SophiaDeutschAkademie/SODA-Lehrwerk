@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script id="soda-theme-js">
+(function(){
+  var KEY='soda-theme', d=document.documentElement, t='dark';
+  try{var s=localStorage.getItem(KEY); if(s==='light'||s==='dark') t=s;}catch(e){}
+  function apply(v){
+    d.setAttribute('data-theme',v); d.style.colorScheme=v;
+    var m=document.querySelector('meta[name="color-scheme"]'); if(m) m.setAttribute('content',v);
+    var c=document.querySelector('meta[name="theme-color"]'); if(c) c.setAttribute('content',v==='dark'?'#14181E':'#FAFAF8');
+  }
+  apply(t);
+  var SUN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var MOON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+  function mount(){
+    if(document.getElementById('soda-theme-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-theme-btn'; b.className='soda-theme-btn';
+    function paint(){ var dk=d.getAttribute('data-theme')==='dark'; b.innerHTML=dk?SUN:MOON; b.setAttribute('aria-pressed',dk?'true':'false'); b.setAttribute('aria-label','다크 모드 '+(dk?'끄기':'켜기')); b.title='다크 모드 '+(dk?'켜짐':'꺼짐')+' · 누르면 '+(dk?'라이트':'다크')+'로 바뀌어요'; }
+    b.addEventListener('click',function(){ var n=d.getAttribute('data-theme')==='dark'?'light':'dark'; apply(n); try{localStorage.setItem(KEY,n);}catch(e){} paint(); });
+    paint(); document.body.appendChild(b);
+    if(!document.getElementById('soda-toc-btn')){ var a=document.createElement('a'); a.id='soda-toc-btn'; a.className='soda-toc-btn'; a.href='../../#inhalt'; a.setAttribute('aria-label','홈(목차)으로 돌아가기'); a.title='홈 · 목차로'; a.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>'; document.body.appendChild(a); }
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>일주일을 네 갈래로 나누기: 문법과 단어에 치우친 계획 고치기 · 독일어 공부법 | 소피아 독일어학원</title>
+<meta name="description" content="읽고 듣기, 말하고 쓰기, 문법·단어 공부, 유창성 연습에 시간을 나누는 원칙과 한 주 계획표">
+<link rel="canonical" href="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/lernplanung-3.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SODA Lehrwerk · 소피아 독일어학원">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="일주일을 네 갈래로 나누기: 문법과 단어에 치우친 계획 고치기">
+<meta property="og:description" content="읽고 듣기, 말하고 쓰기, 문법·단어 공부, 유창성 연습에 시간을 나누는 원칙과 한 주 계획표">
+<meta property="og:url" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/lernplanung-3.html">
+<meta property="og:image" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png">
+<meta property="article:published_time" content="2026-11-10">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14181E">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/png" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/pretendard.css">
+<link rel="stylesheet" href="article.css?v=aaa837f8c1">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "일주일을 네 갈래로 나누기: 문법과 단어에 치우친 계획 고치기", "description": "읽고 듣기, 말하고 쓰기, 문법·단어 공부, 유창성 연습에 시간을 나누는 원칙과 한 주 계획표", "inLanguage": "ko", "datePublished": "2026-11-10", "mainEntityOfPage": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/lernplanung-3.html", "image": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png", "articleSection": "학습 계획 (Lernplanung)", "author": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/"}, "publisher": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "logo": {"@type": "ImageObject", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/assets/icons/icon-512.png"}}}</script>
+<script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<article class="reader">
+<nav class="crumbs" aria-label="위치"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></nav>
+<p class="a-eb">Lernplanung<i>·</i>학습 계획 3/3</p>
+<h1>일주일을 네 갈래로 나누기: 문법과 단어에 치우친 계획 고치기</h1>
+<p class="a-sum">읽고 듣기, 말하고 쓰기, 문법·단어 공부, 유창성 연습에 시간을 나누는 원칙과 한 주 계획표</p>
+<p class="a-meta">약 9분 · 소피아 독일어학원</p>
+<div class="body">
+<p>지난 한 주에 한 독일어 공부를 적어 보세요. 문법책 몇 쪽, 단어 몇 개, 문제 몇 장이 대부분이라면 이 글이 필요합니다.</p>
+<p>문법과 단어는 꼭 공부해야 합니다. 그런데 독일어를 읽고 듣고 말하고 쓸 수 있게 되려면 다른 종류의 시간도 있어야 합니다. 뉴질랜드의 응용언어학자 네이션(Nation)은 2007년에 학습 시간을 네 갈래로 나누는 원칙을 제안했습니다. 이 글은 그 원칙을 소개하고, 한국에서 독일어를 배우는 사람이 한 주 계획에 어떻게 옮기면 되는지 정리합니다.</p>
+<h2 id="lernplanung-3-네-갈래">네 갈래</h2>
+<div class="tbl c2"><table><thead><tr><th>갈래</th><th>하는 일</th></tr></thead><tbody><tr><td>읽고 듣기</td><td>내용을 알려고 읽고 듣습니다.</td></tr><tr><td>말하고 쓰기</td><td>내용을 전하려고 말하고 씁니다.</td></tr><tr><td>문법·단어 공부</td><td>발음, 철자, 단어, 문법을 일부러 공부합니다.</td></tr><tr><td>유창성 연습</td><td>이미 아는 것만으로 평소보다 빠르게 읽고 듣고 말하고 씁니다.</td></tr></tbody></table></div>
+<p>네이션은 갈래마다 조건을 붙였습니다.</p>
+<ul><li><strong>읽고 듣기.</strong> 글이나 음원에 나오는 단어의 95–98%를 이미 알아야 합니다. 100단어 가운데 모르는 단어가 두 개에서 다섯 개를 넘지 않는 수준입니다. 양도 많아야 합니다.</li><li><strong>말하고 쓰기.</strong> 익숙한 주제에 대해 말하고 씁니다. 목표는 내용을 전하는 것입니다.</li><li><strong>문법·단어 공부.</strong> 간격을 두고 반복합니다. 공부한 것은 나머지 세 갈래에서 다시 만나야 합니다.</li><li><strong>유창성 연습.</strong> 모르는 단어가 없는 자료로 하고, 일부러 평소보다 빠르게 합니다. 네이션은 모르는 단어가 들어 있으면 유창성 연습이 아니라고 적었습니다.</li></ul>
+<p>시간은 네 갈래에 비슷하게 나눕니다. 한 갈래에 약 4분의 1입니다. 문법·단어 공부는 전체의 4분의 1을 넘지 않게 하고, 나머지 4분의 3은 내용을 주고받는 데 씁니다. 하루 단위로 맞출 필요는 없고 2주나 한 달 단위로 확인합니다. 네이션은 레벨이 올라가도 이 균형을 바꾸지 말라고 합니다. 초급에서도 이미 아는 표현으로 유창성 연습을 할 수 있기 때문입니다.</p>
+<h2 id="lernplanung-3-왜-넷으로-나누는가">왜 넷으로 나누는가</h2>
+<h3 id="lernplanung-3-문법과-단어-공부는-효과가-큽니다">문법과 단어 공부는 효과가 큽니다</h3>
+<p>이 원칙은 문법과 단어 공부를 줄이라는 말이 아닙니다. 노리스(Norris)와 오르테가(Ortega)는 2000년에 외국어 지도 연구 49편을 종합했습니다. 규칙을 설명하고 연습하는 지도는 효과가 컸고, 그 효과는 시간이 지나도 남았습니다(<a class="xref" href="grammatik-2.html">문법 공부법 2편</a>). 네이션도 단어 카드로 외우는 것이 읽다가 우연히 익히는 것보다 네 배 이상 빠르다고 적었습니다.</p>
+<h3 id="lernplanung-3-그것만으로는-쓸-수-없습니다">그것만으로는 쓸 수 없습니다</h3>
+<ul><li>읽고 듣기만 해서는 말하고 쓰는 능력이 따라오지 않습니다. 캐나다의 몰입교육 연구가 이것을 보여 줍니다(<a class="xref" href="lesen-3.html">읽기 공부법 3편</a>).</li><li>문법과 단어를 공부만 해서는 쓸 때 나오지 않습니다. 독→한으로만 외운 단어가 쓰기에서 나오지 않는 것이 그 예입니다(<a class="xref" href="wortschatz-5.html">어휘 공부법 5편</a>).</li></ul>
+<h3 id="lernplanung-3-쉬운-글을-많이-읽으면-읽기-실력이-오릅니다">쉬운 글을 많이 읽으면 읽기 실력이 오릅니다</h3>
+<p>전(Jeon)과 데이(Day)는 2015년에 쉬운 글을 많이 읽게 한 프로그램의 연구 32편을 종합했습니다. 많이 읽은 집단의 평균은 비교 집단에서 상위 28%에 해당하는 위치였습니다. 효과는 성인 학습자, 그리고 그 언어를 쓰지 않는 나라에서 배우는 학습자에게서 더 크게 나왔습니다.</p>
+<h3 id="lernplanung-3-같은-내용을-빠르게-다시-말하면-유창성이-남습니다">같은 내용을 빠르게 다시 말하면 유창성이 남습니다</h3>
+<p>더 용(de Jong)과 퍼페티(Perfetti)는 2011년에 미국 대학의 영어 학습자에게 4분, 3분, 2분으로 시간을 줄여 가며 세 번 말하게 했습니다. 한 집단은 같은 주제를 세 번 말했고, 다른 집단은 매번 다른 주제를 말했습니다. 훈련 뒤 새 주제로 말하게 하자 같은 주제를 반복한 집단만 말이 끊기는 시간이 줄었습니다. 이 변화는 한 주 뒤와 네 주 뒤에도 남아 있었습니다. 참가자가 24명으로 적은 연구입니다.</p>
+<h3 id="lernplanung-3-4분의-1이라는-비율은-실험-결과가-아닙니다">4분의 1이라는 비율은 실험 결과가 아닙니다</h3>
+<p>네이션은 네 갈래에 시간을 똑같이 나누는 것이 임의로 정한 것이라고 스스로 밝혔습니다. 이 원칙에서 가져올 것은 정확한 25%가 아닙니다. 어느 갈래도 0이 되지 않게 하고, 문법·단어 공부가 전부가 되지 않게 하는 것입니다.</p>
+<h2 id="lernplanung-3-한국에서-독일어를-배울-때-치우치는-이유">한국에서 독일어를 배울 때 치우치는 이유</h2>
+<p>아래는 연구 결과가 아니라 제 해석입니다.</p>
+<ol><li><strong>저절로 채워지는 갈래가 없습니다.</strong> 독일에 사는 학습자는 장을 보고 관청에 가면서 읽고 듣고 말합니다. 한국에서는 그런 시간이 없습니다. 계획에 넣지 않은 갈래는 한 주 동안 한 번도 일어나지 않습니다.</li><li><strong>공부로 여기는 활동이 대부분 한 갈래에 들어갑니다.</strong> 문법책, 단어장, 문제집은 양을 세기 쉽고 답을 혼자 확인할 수 있습니다. 그래서 계획이 이쪽으로 기웁니다.</li><li><strong>어려운 글을 해석하는 것을 읽기로 셉니다.</strong> 사전을 찾아 가며 한 문장씩 해석하는 것은 네이션의 분류에서 읽고 듣기가 아니라 문법·단어 공부입니다. 한국어 화자는 독일어 단어를 짐작하기 어려워서(<a class="xref" href="lernplanung-1.html">학습 계획 1편</a>), 자기 레벨의 글에서도 모르는 단어가 5%를 넘기 쉽습니다.</li><li><strong>쉬운 자료는 공부가 아니라고 생각합니다.</strong> 이미 읽은 글과 이미 아는 표현을 다시 하는 시간을 낭비로 여기면 유창성 연습은 0이 됩니다.</li></ol>
+<p>시험을 준비하는 사람에게도 같은 문제가 생깁니다. Goethe 시험은 읽기, 듣기, 쓰기, 말하기를 각각 합격해야 하고 telc 시험은 말하기를 따로 합격해야 합니다(<a class="xref" href="sonder-2.html">특별 주제 2편</a>). 한 갈래가 0인 계획으로는 그 영역의 점수를 올리기 어렵습니다.</p>
+<h2 id="lernplanung-3-내-일주일을-진단하는-법">내 일주일을 진단하는 법</h2>
+<p>네이션과 야마모토(Yamamoto)는 2012년에 이 원칙을 선생님 없이 혼자 공부하는 사람에게 적용했습니다. 야마모토는 일본어가 모국어이고 스페인어를 혼자 배웠습니다. 읽고 듣기에는 단계별 읽기 책과 팟캐스트를 썼고, 말하고 쓰기에는 일기와 언어 교환 메일을 썼습니다. 유창성 연습으로는 쉬운 책을 읽고 이미 본 영화를 다시 봤습니다. 두 사람이 권하는 진단 순서는 이렇습니다.</p>
+<ol><li>한두 주 동안 독일어로 한 일을 모두 적습니다. 수업과 과제도 넣습니다.</li><li>한 일마다 네 갈래 가운데 하나를 붙입니다.</li><li>갈래별로 시간을 더합니다.</li></ol>
+<p>갈래를 붙일 때 헷갈리기 쉬운 것을 표로 정리했습니다.</p>
+<div class="tbl c2"><table><thead><tr><th>한 일</th><th>갈래</th></tr></thead><tbody><tr><td>문법책 읽기, 문법 문제 풀기</td><td>문법·단어 공부</td></tr><tr><td>단어 카드, 단어 시험</td><td>문법·단어 공부</td></tr><tr><td>사전을 찾아 가며 글 해석하기</td><td>문법·단어 공부</td></tr><tr><td>한국어 문장을 독일어로 옮기기</td><td>문법·단어 공부</td></tr><tr><td>받아쓰기, 발음 연습</td><td>문법·단어 공부</td></tr><tr><td>수준에 맞는 글을 내용 위주로 읽기</td><td>읽고 듣기</td></tr><tr><td>내용을 알려고 음원이나 영상 듣기</td><td>읽고 듣기</td></tr><tr><td>내 생각을 전하려고 쓴 글과 메시지</td><td>말하고 쓰기</td></tr><tr><td>스터디에서 내 이야기 말하기</td><td>말하고 쓰기</td></tr><tr><td>읽은 글을 시간을 재며 다시 읽기</td><td>유창성 연습</td></tr><tr><td>같은 내용을 시간을 줄여 다시 말하기</td><td>유창성 연습</td></tr></tbody></table></div>
+<p>수업에서 한 일도 같은 기준으로 나눕니다. 설명을 듣고 문제를 푼 시간은 문법·단어 공부이고, 자기 생각을 말하고 쓴 시간은 말하고 쓰기입니다.</p>
+<h2 id="lernplanung-3-한-주-계획-세우기">한 주 계획 세우기</h2>
+<h3 id="lernplanung-3-1-0인-갈래부터-채웁니다">1. 0인 갈래부터 채웁니다</h3>
+<p>처음부터 네 갈래를 똑같이 맞추려고 하지 않습니다. 진단에서 0이 나온 갈래에 주 30분을 먼저 넣습니다. 30분이라는 숫자는 제 제안입니다.</p>
+<h3 id="lernplanung-3-2-수업과-과제를-먼저-계산합니다">2. 수업과 과제를 먼저 계산합니다</h3>
+<p>수업과 과제로 문법·단어 공부의 몫이 이미 찼다면, 혼자 공부하는 시간은 나머지 세 갈래에 먼저 씁니다. 수업을 줄이라는 뜻이 아닙니다. 수업 밖의 시간을 어디에 쓸지 정하는 기준입니다.</p>
+<h3 id="lernplanung-3-3-갈래마다-쓸-자료를-정해-둡니다">3. 갈래마다 쓸 자료를 정해 둡니다</h3>
+<ul><li><strong>읽고 듣기.</strong> Lesetraining에서 지금 레벨보다 한 단계 쉬운 글을 해석을 열지 않고 끝까지 읽습니다. Hörtraining의 음원을 멈추지 않고 끝까지 듣습니다. 모르는 단어가 100단어에 다섯 개를 넘으면 더 쉬운 것으로 바꿉니다.</li><li><strong>말하고 쓰기.</strong> Schreibtraining의 쓰기 과제를 씁니다. Sprechtraining의 「내 말로 바꾸기」와 말하기 스터디에서 자기 이야기를 합니다.</li><li><strong>문법·단어 공부.</strong> Syntalab, Grammatikübungen, Vokalab과 플래시카드 앱이 여기에 들어갑니다. Lesetraining의 문제·문법·어휘 탭과 Schreibtraining의 표현·연습도 이 갈래입니다.</li><li><strong>유창성 연습.</strong> 이미 공부한 Lesetraining 본문을 시간을 재며 다시 읽습니다(<a class="xref" href="lesen-1.html">읽기 공부법 1편</a>). 끝낸 Hörtraining 세트를 다시 듣습니다. Sprechtraining의 「가리고 말하기」로 익힌 대화를 보지 않고 말합니다. 같은 내용을 4분, 3분, 2분으로 줄여 가며 세 번 말합니다.</li></ul>
+<div class="links"><a class="lk" href="../lesetraining/" target="_blank" rel="noopener noreferrer"><span class="lk-t">Lesetraining</span><span class="lk-d">독해 훈련, A1–C1 텍스트 100개</span><span class="lk-u">../lesetraining</span></a><a class="lk" href="../hoertraining/" target="_blank" rel="noopener noreferrer"><span class="lk-t">Hörtraining</span><span class="lk-d">듣기 훈련, A1–C1 88세트</span><span class="lk-u">../hoertraining</span></a><a class="lk" href="../schreibtraining/" target="_blank" rel="noopener noreferrer"><span class="lk-t">Schreibtraining</span><span class="lk-d">쓰기 훈련, A1–C1 챕터 25개</span><span class="lk-u">../schreibtraining</span></a><a class="lk" href="../sprechtraining/" target="_blank" rel="noopener noreferrer"><span class="lk-t">Sprechtraining</span><span class="lk-d">말하기 훈련, A1–C1 대화 36개</span><span class="lk-u">../sprechtraining</span></a></div>
+<h3 id="lernplanung-3-4-시간을-나눠-적습니다">4. 시간을 나눠 적습니다</h3>
+<p>주 5시간을 공부하는 사람의 예입니다.</p>
+<div class="tbl c2"><table><thead><tr><th>갈래와 시간</th><th>할 일의 예</th></tr></thead><tbody><tr><td>읽고 듣기 75분</td><td>한 단계 쉬운 글 세 편 읽기, 음원 두 세트 끝까지 듣기</td></tr><tr><td>말하고 쓰기 75분</td><td>쓰기 과제 한 편, 스터디나 혼자 말하기 두 번</td></tr><tr><td>문법·단어 공부 75분</td><td>수업 복습, 문법 연습, 단어 시험</td></tr><tr><td>유창성 연습 75분</td><td>읽은 글 다시 읽기, 같은 내용 줄여 말하기 두 번</td></tr></tbody></table></div>
+<p>주 10시간이면 갈래마다 두 배로 잡습니다. 주당 시간과 도달 시점의 관계는 <a class="xref" href="lernplanung-1.html">학습 계획 1편</a>에 있습니다.</p>
+<h3 id="lernplanung-3-5-한-항목을-네-갈래에서-만나게-합니다">5. 한 항목을 네 갈래에서 만나게 합니다</h3>
+<p>der Vorschlag을 예로 들면 이렇습니다. 단어 카드로 관사까지 외웁니다(문법·단어 공부). 읽는 글에서 다시 봅니다(읽고 듣기). 내 글에 써 봅니다(말하고 쓰기). 그 글의 내용을 빠르게 다시 말해 봅니다(유창성 연습). 네이션이 문법·단어 공부에 붙인 조건이 이것입니다. 한국어 화자에게 먼 곳인 관사와 어휘일수록 네 갈래에서 다시 만나도록 계획합니다.</p>
+<h3 id="lernplanung-3-6-한-달에-한-번-다시-잽니다">6. 한 달에 한 번 다시 잽니다</h3>
+<p>한 달에 한 주를 골라 다시 기록하고 갈래별 시간을 더합니다. 0인 갈래가 없어졌는지, 문법·단어 공부의 몫이 지난달보다 줄었는지 봅니다.</p>
+<h2 id="lernplanung-3-근거의-수준">근거의 수준</h2>
+<ul><li>네 갈래는 네이션이 여러 연구를 종합해 제안한 원칙입니다. 시간을 똑같이 나누는 것은 임의로 정한 것이라고 본인이 밝혔습니다.</li><li>갈래마다 필요하다는 근거는 따로 있습니다. 외국어 지도 연구의 종합(Norris &amp; Ortega 2000), 다독 연구의 종합(Jeon &amp; Day 2015), 몰입교육 연구, 4분·3분·2분 말하기 실험(de Jong &amp; Perfetti 2011)입니다. 마지막 실험은 참가자가 적습니다.</li><li>네 갈래로 나눈 계획과 그렇지 않은 계획을 직접 비교한 실험은 찾지 못했습니다.</li><li>한국인 독일어 학습자의 시간 배분을 조사한 연구도 찾지 못했습니다. 치우치는 이유와 계획 세우는 순서는 이 원칙을 한국의 학습 상황에 옮긴 제 해석입니다.</li></ul>
+<h2 id="lernplanung-3-정리">정리</h2>
+<ol><li>학습 시간은 읽고 듣기, 말하고 쓰기, 문법·단어 공부, 유창성 연습의 네 갈래로 나눌 수 있습니다.</li><li>네이션은 네 갈래에 시간을 비슷하게 나누고, 문법·단어 공부가 4분의 1을 넘지 않게 하라고 권합니다. 이 비율은 실험 결과가 아니라 원칙입니다.</li><li>읽고 듣기는 단어의 95–98%를 아는 자료로, 유창성 연습은 모르는 단어가 없는 자료로 합니다.</li><li>사전을 찾아 가며 글을 해석하는 것과 한국어 문장을 독일어로 옮기는 것은 문법·단어 공부입니다.</li><li>한국에서는 저절로 채워지는 갈래가 없습니다. 한두 주 동안 한 일을 적고 갈래별 시간을 더해 0인 갈래부터 채웁니다.</li><li>외운 것은 읽기, 쓰기, 빠르게 말하기에서 다시 만나게 계획합니다.</li></ol>
+</div>
+<nav class="pn" aria-label="같은 분류의 글"><a class="pv" href="lernplanung-2.html"><small>← 이전 글</small><b>쉬었다가 다시 시작할 때: 잊은 독일어는 지워지지 않았습니다</b></a></nav>
+<aside class="more" aria-label="다른 학습 자료"><b>SODA Lehrwerk</b><p>소피아 독일어학원은 독일어 공부법 글 35편과 함께 문법 교재, 독해·듣기·쓰기·말하기 훈련, 단어장, Goethe·telc 모의고사를 무료로 공개합니다.</p><ul><li><a href="../../grammatik/">문법 교재</a></li><li><a href="../../lesetraining/">독해 훈련</a></li><li><a href="../../hoertraining/">듣기 훈련</a></li><li><a href="../../schreibtraining/">쓰기 훈련</a></li><li><a href="../../sprechtraining/">말하기 훈련</a></li><li><a href="../../vokalab/">단어장 A1–C1</a></li><li><a href="../../#inhalt">전체 목차</a></li></ul></aside>
+<p class="a-end"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></p>
+<p class="a-note">소피아 독일어학원 · 독일어 공부법</p>
+</article>
+<script>
+(function(){
+  var au=null, cur=null;
+  function stop(){if(au){au.pause();au=null;} if(cur){cur.classList.remove('on');cur=null;}}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.snd'); if(!b)return;
+    var same=b===cur; stop(); if(same)return;
+    au=new Audio(b.getAttribute('data-snd')); cur=b; b.classList.add('on');
+    au.addEventListener('ended',stop); au.addEventListener('error',stop);
+    var pr=au.play(); if(pr&&pr.catch)pr.catch(stop);
+  });
+})();
+</script>
+</body>
+</html>

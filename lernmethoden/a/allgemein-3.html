@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script id="soda-theme-js">
+(function(){
+  var KEY='soda-theme', d=document.documentElement, t='dark';
+  try{var s=localStorage.getItem(KEY); if(s==='light'||s==='dark') t=s;}catch(e){}
+  function apply(v){
+    d.setAttribute('data-theme',v); d.style.colorScheme=v;
+    var m=document.querySelector('meta[name="color-scheme"]'); if(m) m.setAttribute('content',v);
+    var c=document.querySelector('meta[name="theme-color"]'); if(c) c.setAttribute('content',v==='dark'?'#14181E':'#FAFAF8');
+  }
+  apply(t);
+  var SUN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var MOON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+  function mount(){
+    if(document.getElementById('soda-theme-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-theme-btn'; b.className='soda-theme-btn';
+    function paint(){ var dk=d.getAttribute('data-theme')==='dark'; b.innerHTML=dk?SUN:MOON; b.setAttribute('aria-pressed',dk?'true':'false'); b.setAttribute('aria-label','다크 모드 '+(dk?'끄기':'켜기')); b.title='다크 모드 '+(dk?'켜짐':'꺼짐')+' · 누르면 '+(dk?'라이트':'다크')+'로 바뀌어요'; }
+    b.addEventListener('click',function(){ var n=d.getAttribute('data-theme')==='dark'?'light':'dark'; apply(n); try{localStorage.setItem(KEY,n);}catch(e){} paint(); });
+    paint(); document.body.appendChild(b);
+    if(!document.getElementById('soda-toc-btn')){ var a=document.createElement('a'); a.id='soda-toc-btn'; a.className='soda-toc-btn'; a.href='../../#inhalt'; a.setAttribute('aria-label','홈(목차)으로 돌아가기'); a.title='홈 · 목차로'; a.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>'; document.body.appendChild(a); }
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>하루 15분, 정말 의미 있을까 · 독일어 공부법 | 소피아 독일어학원</title>
+<meta name="description" content="짧은 학습이 남는 조건: 접촉 횟수, 꺼내기, 어제와 오늘의 연결">
+<link rel="canonical" href="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/allgemein-3.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SODA Lehrwerk · 소피아 독일어학원">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="하루 15분, 정말 의미 있을까">
+<meta property="og:description" content="짧은 학습이 남는 조건: 접촉 횟수, 꺼내기, 어제와 오늘의 연결">
+<meta property="og:url" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/allgemein-3.html">
+<meta property="og:image" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png">
+<meta property="article:published_time" content="2026-08-11">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14181E">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/png" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/pretendard.css">
+<link rel="stylesheet" href="article.css?v=aaa837f8c1">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "하루 15분, 정말 의미 있을까", "description": "짧은 학습이 남는 조건: 접촉 횟수, 꺼내기, 어제와 오늘의 연결", "inLanguage": "ko", "datePublished": "2026-08-11", "mainEntityOfPage": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/allgemein-3.html", "image": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png", "articleSection": "일반 (Allgemeines)", "author": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/"}, "publisher": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "logo": {"@type": "ImageObject", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/assets/icons/icon-512.png"}}}</script>
+<script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<article class="reader">
+<nav class="crumbs" aria-label="위치"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></nav>
+<p class="a-eb">Allgemeines<i>·</i>일반 3/4</p>
+<h1>하루 15분, 정말 의미 있을까</h1>
+<p class="a-sum">짧은 학습이 남는 조건: 접촉 횟수, 꺼내기, 어제와 오늘의 연결</p>
+<p class="a-meta">약 5분 · 소피아 독일어학원</p>
+<div class="body">
+<p>하루 15분은 의미가 있습니다. 다만 조건이 있고, 그 조건을 모르면 한 시간을 앉아 있어도 똑같이 남지 않습니다.</p>
+<p>시간이 없어 15분밖에 못 낸다는 분들은 대개 미안해하며 이 질문을 꺼냅니다. 제대로 하려면 최소 한 시간은 앉아야 하고, 그럴 바에는 주말에 몰아서 하는 게 낫다는 생각 때문입니다. 그래서 평일에는 아예 손을 놓고 주말에 세 시간을 몰아치다가, 그 부담 때문에 결국 그만둡니다.</p>
+<p>그런데 문제는 15분이 짧다는 데 있지 않습니다. 어떤 15분은 실력이 되고 어떤 15분은 그대로 사라지는데, 둘을 가르는 것은 시간의 길이가 아닙니다. 네 개의 질문으로 나누어 답하겠습니다.</p>
+<h2 id="allgemein-3-질문-1-학습에는-최소-시간이-있을까">질문 1. 학습에는 최소 시간이 있을까?</h2>
+<p>없습니다. 이것부터 짚고 시작해야 합니다.</p>
+<p>많은 학습자가 학습에 최소 임계량이 있다고 믿습니다. 일정 시간을 넘겨야 비로소 효과가 생기고 그 아래는 0이라는 생각입니다. 그러나 기억의 단위는 &#x27;시간&#x27;이 아니라 &#x27;접촉 횟수&#x27;와 &#x27;처리의 깊이&#x27;입니다. 30분짜리 한 번보다 10분짜리 세 번이 더 많이 남는 경우가 흔한 이유가 여기에 있습니다.</p>
+<p>앞선 글에서 다룬 간격 효과가 바로 이것입니다. 시간을 짧게 나누면 그 사이에 간격이 생기고, 간격이 생기면 다시 만날 때마다 기억이 한 번씩 새로 새겨집니다. 시간을 쪼개는 것은 손해가 아니라 오히려 유리한 조건입니다. 15분이 부족해서 효과가 없는 것은 아닙니다. 문제는 다른 데 있습니다.</p>
+<h2 id="allgemein-3-질문-2-그런데-왜-내-15분은-남지-않을까">질문 2. 그런데 왜 내 15분은 남지 않을까?</h2>
+<p>시간이 짧아서가 아니라 그 15분에 무엇을 했는지가 문제입니다. 남지 않는 15분에는 세 가지 공통점이 있습니다.</p>
+<ul><li><strong>준비에 시간을 빼앗깁니다.</strong> 책상에 앉아 교재를 펴고, 지난번에 어디까지 했는지 찾고, 오늘 뭘 할지 정하다 보면 7분이 지나갑니다. 남은 8분에 뭔가를 시작하기는 애매하니 그냥 훑어보다 끝냅니다.</li><li><strong>눈으로만 처리합니다.</strong> 단어장을 위에서 아래로 읽어 내립니다. 15분 동안 200개 단어를 봤지만 스스로 꺼낸 것은 하나도 없습니다.</li><li><strong>매번 새것만 다룹니다.</strong> 어제 배운 것은 건너뛰고 오늘도 새 단원, 새 단어입니다. 접촉이 한 번뿐이니 어떤 항목도 두 번째 만남에 도달하지 못합니다.</li></ul>
+<p>이 세 가지는 시간을 한 시간으로 늘려도 똑같이 일어납니다. 준비에 15분을 쓰고 45분간 눈으로 훑으면 결과는 같습니다. 이것은 15분의 문제가 아니라 학습 방식의 문제이고, 반대로 말하면 이것만 피하면 15분은 제 몫을 합니다.</p>
+<h2 id="allgemein-3-질문-3-그렇다면-15분에는-무엇을-넣어야-할까">질문 3. 그렇다면 15분에는 무엇을 넣어야 할까?</h2>
+<p>세 가지 조건을 채우면 됩니다. 위의 세 가지 문제와 하나씩 대응합니다.</p>
+<ol><li><strong>앉자마자 시작할 수 있어야 합니다.</strong> 15분짜리 학습에서 준비에 5분을 쓰면 실질 학습은 10분, 3분의 1을 잃습니다. 짧은 학습일수록 &#x27;무엇을 할지 정하는 일&#x27;이 이미 끝나 있어야 합니다.</li><li><strong>배우기가 아니라 꺼내기를 넣어야 합니다.</strong> 15분은 새 문법을 이해하고 예문을 분석하기에는 짧습니다. 하지만 이미 배운 것을 꺼내기에는 충분합니다. 새 단원 학습은 시간이 확보되는 날로 미루고, 짧은 날에는 어제 것을 꺼내는 데 씁니다.</li><li><strong>어제와 오늘이 이어져야 합니다.</strong> 매일 15분씩 서로 다른 것을 하면 접촉은 매번 1회에서 끝납니다. 오늘 15분의 절반을 어제 것에 쓰면 모든 항목이 최소 두 번의 접촉을 얻습니다.</li></ol>
+<h2 id="allgemein-3-질문-4-실제로-어떻게-하면-될까">질문 4. 실제로 어떻게 하면 될까?</h2>
+<p>앞의 세 조건을 구체적인 루틴으로 옮긴 네 가지 방법을 제안합니다.</p>
+<h3 id="allgemein-3-하나-15분을-셋으로-나눕니다-5-5-5">하나. 15분을 셋으로 나눕니다 (5-5-5)</h3>
+<p>15분을 통으로 쓰지 말고 각 5분에 역할을 정해 둡니다.</p>
+<div class="tbl c2"><table><thead><tr><th>구간</th><th>역할</th></tr></thead><tbody><tr><td>처음 5분</td><td>어제 것 꺼내기: 어제 배운 단어나 문장을 책을 덮고 소리 내어 꺼냅니다.</td></tr><tr><td>다음 5분</td><td>오늘 것 익히기: 새 항목을 소화합니다. 분량은 욕심내지 않습니다.</td></tr><tr><td>마지막 5분</td><td>오늘 것 꺼내기: 방금 익힌 것을 다시 덮고 꺼냅니다.</td></tr></tbody></table></div>
+<p>이 구조에서는 모든 항목이 배운 당일에 한 번, 다음 날에 또 한 번, 최소 두 번의 인출을 거칩니다.</p>
+<h3 id="allgemein-3-둘-전날-밤에-세-줄을-적어-둡니다">둘. 전날 밤에 세 줄을 적어 둡니다</h3>
+<p>&#x27;뭘 하지?&#x27;라는 고민을 전날 밤으로 옮기는 방법입니다. 자기 전 30초만 써서 내일 할 일을 세 줄로 적습니다. &quot;① Lektion 7 단어 15개 꺼내기 ② 접속법 II 예문 5개 만들기 ③ 어제 틀린 3개 다시&quot;. 교재는 해당 페이지를 펴서 엎어 둡니다. 다음 날 앉자마자 시작되므로 실질 학습 시간이 10분에서 15분으로 늘어납니다. 하루 5분을 확보하는 셈입니다.</p>
+<h3 id="allgemein-3-셋-이동-중에-꺼냅니다">셋. 이동 중에 꺼냅니다</h3>
+<p>책상 앞이 아니라 지하철이나 대기 시간에 하는 훈련입니다. 자료를 볼 수 없다는 제약 때문에 인출만 가능한데, 그 제약이 오히려 도움이 됩니다.</p>
+<ul><li><strong>지하철에서:</strong> 오늘 배운 동사 5개를 머릿속으로 활용해 봅니다. &quot;sich bewerben – bewirbt sich – bewarb sich – hat sich beworben, 전치사는 um + 4격&quot;</li><li><strong>걸으면서:</strong> 눈에 보이는 것을 독일어 문장으로 만듭니다. &quot;Der Bus kommt gleich.&quot; &quot;Es ist heute ziemlich schwül.&quot;</li><li><strong>엘리베이터에서:</strong> 어제 외운 단어 3개를 떠올려 봅니다. 떠오르지 않으면 그것이 오늘 저녁의 목록입니다.</li></ul>
+<h3 id="allgemein-3-넷-도저히-안-되는-날의-하한선을-정합니다">넷. 도저히 안 되는 날의 하한선을 정합니다</h3>
+<p>시간이 전혀 나지 않는 날을 위한 규칙입니다. &quot;아무리 바빠도 어제 단어 10개는 꺼낸다&quot;처럼 5분짜리 최소 버전을 미리 정해 둡니다. 하루를 건너뛰면 다음 날 다시 시작하기 어려워지고, 이틀이 사흘이 되면서 학습이 끊깁니다. 이 5분은 진도를 위한 것이 아니라 연결을 지키기 위한 것입니다.</p>
+<h2 id="allgemein-3-다시-처음의-질문으로">다시, 처음의 질문으로</h2>
+<p>처음에 말씀드린 &#x27;조건&#x27;이 이것입니다. 앉자마자 시작할 수 있고, 눈이 아니라 입으로 꺼내고, 어제와 오늘이 이어져 있다면 15분은 충분히 실력이 됩니다. 이 조건들이 빠지면 한 시간을 앉아 있어도 마찬가지로 남지 않습니다. 늘려야 할 것은 시간의 길이가 아니라 그 시간의 밀도입니다.</p>
+<p>한 가지 덧붙이면, 매일 15분에는 주말 세 시간에 없는 장점이 있습니다. 매일 하면 간격이 저절로 생긴다는 것입니다.</p>
+<p>오늘 저녁 15분이 있다면 새 단원을 펴는 대신 어제 것을 책을 덮고 꺼내 보세요. 그것으로 충분합니다.</p>
+</div>
+<nav class="pn" aria-label="같은 분류의 글"><a class="pv" href="allgemein-2.html"><small>← 이전 글</small><b>공부한 만큼 남지 않는 이유: &#x27;편안한 복습&#x27;</b></a><a class="nx" href="allgemein-4.html"><small>다음 글 →</small><b>실력이 안 느는 것 같아 답답할 때, 심리학이 말해 주는 여섯 가지</b></a></nav>
+<aside class="more" aria-label="다른 학습 자료"><b>SODA Lehrwerk</b><p>소피아 독일어학원은 독일어 공부법 글 35편과 함께 문법 교재, 독해·듣기·쓰기·말하기 훈련, 단어장, Goethe·telc 모의고사를 무료로 공개합니다.</p><ul><li><a href="../../grammatik/">문법 교재</a></li><li><a href="../../lesetraining/">독해 훈련</a></li><li><a href="../../hoertraining/">듣기 훈련</a></li><li><a href="../../schreibtraining/">쓰기 훈련</a></li><li><a href="../../sprechtraining/">말하기 훈련</a></li><li><a href="../../vokalab/">단어장 A1–C1</a></li><li><a href="../../#inhalt">전체 목차</a></li></ul></aside>
+<p class="a-end"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></p>
+<p class="a-note">소피아 독일어학원 · 독일어 공부법</p>
+</article>
+<script>
+(function(){
+  var au=null, cur=null;
+  function stop(){if(au){au.pause();au=null;} if(cur){cur.classList.remove('on');cur=null;}}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.snd'); if(!b)return;
+    var same=b===cur; stop(); if(same)return;
+    au=new Audio(b.getAttribute('data-snd')); cur=b; b.classList.add('on');
+    au.addEventListener('ended',stop); au.addEventListener('error',stop);
+    var pr=au.play(); if(pr&&pr.catch)pr.catch(stop);
+  });
+})();
+</script>
+</body>
+</html>

@@ -178,7 +178,7 @@
 
   /* ───────── 표지 ───────── */
   function renderCover() {
-    document.title = 'SODA SCHREIBTRAINING · Sophia Deutsch Akademie';
+    document.title = '독일어 쓰기 훈련 · A1–C1 구성·표현·모범답안 | SODA Schreibtraining';
     app.innerHTML =
       '<main id="main" class="cover view" tabindex="-1" aria-labelledby="cover-title">' +
       '<header class="brand"><img src="assets/logo.png" alt="Sophia Deutsch Akademie 로고">' +

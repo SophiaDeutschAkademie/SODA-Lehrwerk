@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script id="soda-theme-js">
+(function(){
+  var KEY='soda-theme', d=document.documentElement, t='dark';
+  try{var s=localStorage.getItem(KEY); if(s==='light'||s==='dark') t=s;}catch(e){}
+  function apply(v){
+    d.setAttribute('data-theme',v); d.style.colorScheme=v;
+    var m=document.querySelector('meta[name="color-scheme"]'); if(m) m.setAttribute('content',v);
+    var c=document.querySelector('meta[name="theme-color"]'); if(c) c.setAttribute('content',v==='dark'?'#14181E':'#FAFAF8');
+  }
+  apply(t);
+  var SUN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var MOON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+  function mount(){
+    if(document.getElementById('soda-theme-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-theme-btn'; b.className='soda-theme-btn';
+    function paint(){ var dk=d.getAttribute('data-theme')==='dark'; b.innerHTML=dk?SUN:MOON; b.setAttribute('aria-pressed',dk?'true':'false'); b.setAttribute('aria-label','다크 모드 '+(dk?'끄기':'켜기')); b.title='다크 모드 '+(dk?'켜짐':'꺼짐')+' · 누르면 '+(dk?'라이트':'다크')+'로 바뀌어요'; }
+    b.addEventListener('click',function(){ var n=d.getAttribute('data-theme')==='dark'?'light':'dark'; apply(n); try{localStorage.setItem(KEY,n);}catch(e){} paint(); });
+    paint(); document.body.appendChild(b);
+    if(!document.getElementById('soda-toc-btn')){ var a=document.createElement('a'); a.id='soda-toc-btn'; a.className='soda-toc-btn'; a.href='../../#inhalt'; a.setAttribute('aria-label','홈(목차)으로 돌아가기'); a.title='홈 · 목차로'; a.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>'; document.body.appendChild(a); }
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>논증하는 글의 연결어(Überleitung) · 독일어 공부법 | 소피아 독일어학원</title>
+<meta name="description" content="나열, 대조, 강조 세 유형의 연결어와 쓸 때의 요령">
+<link rel="canonical" href="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/schreiben-2.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SODA Lehrwerk · 소피아 독일어학원">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="논증하는 글의 연결어(Überleitung)">
+<meta property="og:description" content="나열, 대조, 강조 세 유형의 연결어와 쓸 때의 요령">
+<meta property="og:url" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/schreiben-2.html">
+<meta property="og:image" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png">
+<meta property="article:published_time" content="2025-04-04">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14181E">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/png" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/pretendard.css">
+<link rel="stylesheet" href="article.css?v=aaa837f8c1">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "논증하는 글의 연결어(Überleitung)", "description": "나열, 대조, 강조 세 유형의 연결어와 쓸 때의 요령", "inLanguage": "ko", "datePublished": "2025-04-04", "mainEntityOfPage": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/schreiben-2.html", "image": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png", "articleSection": "쓰기 (Schreiben)", "author": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/"}, "publisher": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "logo": {"@type": "ImageObject", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/assets/icons/icon-512.png"}}}</script>
+<script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<article class="reader">
+<nav class="crumbs" aria-label="위치"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></nav>
+<p class="a-eb">Schreiben<i>·</i>쓰기 2/4</p>
+<h1>논증하는 글의 연결어(Überleitung)</h1>
+<p class="a-sum">나열, 대조, 강조 세 유형의 연결어와 쓸 때의 요령</p>
+<p class="a-meta">약 8분 · 소피아 독일어학원</p>
+<div class="body">
+<p>독일 대학 과제나 높은 레벨의 시험에서 요구하는 논증하는 글에 쓰는 연결어(Überleitungen)를 소개합니다.</p>
+<p>독일어로 논증하는 글을 쓸 때는 논리적 흐름을 만드는 것이 중요하고, 그 흐름을 만드는 핵심 도구가 연결어입니다. 무엇부터 말할지, 서로 다른 입장을 어떻게 보여 줄지, 가장 중요한 논점을 어디에 둘지는 모두 글의 설득력과 이어집니다. 연결어는 문장과 문장, 단락과 단락 사이를 의미 있게 이어 주어 독자가 글을 따라가기 쉽게 합니다.</p>
+<p>연결어는 단순한 접속사가 아니라 글 전체의 구조를 짜고 설득력을 높이는 전략적 장치입니다. 그래서 글쓰기를 연습할 때 연결어를 함께 익혀야 합니다. 짧은 글이라도 자연스러운 흐름을 만들고 싶다면 연결어부터 점검해 보세요.</p>
+<p>논증하는 글에서 연결어는 맥락과 의도에 따라 세 가지 유형으로 나눌 수 있습니다.</p>
+<ol><li>나열(Reihung)</li><li>대조(Gegensatz)</li><li>강조·심화(Steigerung)</li></ol>
+<p>아래에서 유형별 특징, 자주 쓰는 표현, 예문, 활용 요령을 차례로 봅니다.</p>
+<h2 id="schreiben-2-나열-reihung-gedanken-aneinanderreihen">나열 (Reihung): Gedanken aneinanderreihen</h2>
+<h3 id="schreiben-2-개념과-특징">개념과 특징</h3>
+<ul><li>논거 사이에 위계가 없어 같은 무게로 나란히 제시할 때 씁니다.</li><li>주장을 나란히 놓아 논점의 폭을 넓히고 여러 관점을 함께 보여 줍니다.</li><li>여러 측면을 균형 있게, 빠짐없이 다루려 할 때 효과적입니다.</li></ul>
+<h3 id="schreiben-2-자주-쓰는-표현">자주 쓰는 표현</h3>
+<div class="tbl c2"><table><thead><tr><th>표현</th><th>뜻</th></tr></thead><tbody><tr><td>zunächst einmal</td><td class="nw">먼저</td></tr><tr><td>an erster Stelle wäre zu nennen</td><td>가장 먼저 언급해야 할 것은</td></tr><tr><td>vor allem sollte man</td><td>무엇보다 강조해야 할 점은</td></tr><tr><td>dann aber auch</td><td>그다음으로는</td></tr><tr><td>ferner / weiterhin / und auch</td><td>또한, 게다가</td></tr><tr><td>nicht weniger wichtig ist</td><td>못지않게 중요한 점은</td></tr><tr><td>darüber hinaus</td><td>그 외에도, 나아가</td></tr><tr><td>ein ähnlicher Punkt ist</td><td>비슷한 맥락으로는</td></tr><tr><td>ein weiterer Gesichtspunkt</td><td>추가로 고려할 관점은</td></tr><tr><td>ebenso / außerdem / hinzu kommt</td><td>마찬가지로, 또한</td></tr><tr><td>eng damit verknüpft ist</td><td>~와 밀접히 관련된 것은</td></tr><tr><td>nicht zu vergessen</td><td>간과해서는 안 되는 것은</td></tr><tr><td>schließlich / zu guter Letzt / zum Schluss</td><td>마지막으로</td></tr></tbody></table></div>
+<h3 id="schreiben-2-예문">예문</h3>
+<div class="de" lang="de"><p>Zunächst einmal ist die historische Entwicklung des Begriffs zu skizzieren.</p><p>Ferner gilt es, den gesellschaftlichen Kontext mit einzubeziehen.</p><p>Nicht zu vergessen ist hierbei der Einfluss medialer Diskurse.</p></div>
+<h3 id="schreiben-2-쓸-때의-요령">쓸 때의 요령</h3>
+<ul><li><strong>다양한 표현을 섞어 씁니다.</strong> zunächst einmal, ferner, darüber hinaus 등을 상황에 맞게 번갈아 써서 중복을 피하고 글을 자연스럽게 전개합니다.</li><li><strong>위계가 없는 동등한 논점에만 씁니다.</strong> 각 항목이 정말 같은 수준으로 제시되는지 점검하세요.</li><li><strong>평행구조(Parallelität)를 살립니다.</strong> 동사 형태나 문장 구조를 맞추면 글이 깔끔해집니다.</li></ul>
+<div class="de" lang="de"><p>Zunächst einmal ist A zu nennen. Ferner gilt es, B zu betrachten. Nicht zu vergessen ist zudem C.</p></div>
+<ul><li><strong>부연 설명을 곁들입니다.</strong> 단순 나열로만 느껴지지 않도록 짧은 맥락이나 이유를 덧붙입니다.</li></ul>
+<div class="de" lang="de"><p>Eng damit verknüpft ist auch die gesellschaftliche Komponente, da …</p><p>Zunächst einmal ist … wichtig, weil …</p><p>Darüber hinaus muss berücksichtigt werden, dass …</p></div>
+<h2 id="schreiben-2-대조-gegensatz-widerspr-che-betonen">대조 (Gegensatz): Widersprüche betonen</h2>
+<h3 id="schreiben-2-개념과-특징-2">개념과 특징</h3>
+<ul><li>상반된 관점을 나란히 제시해 독자가 비판적으로 생각하고 균형 있게 보도록 할 때 씁니다.</li><li>대립하는 입장을 분명히 드러내 논거를 입체적으로 보여 줍니다.</li></ul>
+<h3 id="schreiben-2-자주-쓰는-표현-2">자주 쓰는 표현</h3>
+<div class="tbl c2"><table><thead><tr><th>표현</th><th>뜻</th></tr></thead><tbody><tr><td>nicht nur …, man muss auch</td><td>~뿐만 아니라 …도 고려해야 한다</td></tr><tr><td>einerseits …, andererseits</td><td>한편으로는 …, 다른 한편으로는</td></tr><tr><td>dem gegenüber aber</td><td>이에 반해</td></tr><tr><td>aber auch</td><td>그렇지만 또한</td></tr><tr><td>dem steht entgegen</td><td>이에 상반되는 것은</td></tr><tr><td>man darf dabei jedoch nicht vergessen</td><td>동시에 주목해야 할 점은</td></tr><tr><td>trotz all dieser Gründe</td><td>이 모든 이유에도 불구하고</td></tr><tr><td>zwar …, aber</td><td>~이긴 하지만 …</td></tr><tr><td>wie aber verhält es sich dagegen mit …?</td><td>그러나 …의 경우는 어떠한가?</td></tr></tbody></table></div>
+<h3 id="schreiben-2-예문-2">예문</h3>
+<div class="de" lang="de"><p>Einerseits erlaubt die Digitalisierung neue Lernformen, andererseits entstehen dadurch auch soziale Ungleichheiten.</p><p>Zwar wurden Fortschritte erzielt, aber grundlegende Probleme bestehen weiterhin.</p><p>Trotz all dieser Gründe bleibt der ökologische Aspekt entscheidend.</p></div>
+<h3 id="schreiben-2-쓸-때의-요령-2">쓸 때의 요령</h3>
+<ul><li><strong>대조가 실제로 성립하는 주제인지 확인합니다.</strong> 비슷한 개념을 억지로 반대 의견처럼 꾸미지 마세요.</li><li><strong>흔한 표현의 반복을 줄입니다.</strong> Einerseits – andererseits만 쓰지 말고 trotz all dieser Gründe, dem steht entgegen 같은 대안 표현을 활용하세요.</li><li><strong>문장 구조와 어순에 유의합니다.</strong> jedoch 같은 부사는 문장 안의 위치에 따라 강조점이 달라집니다.</li></ul>
+<div class="de" lang="de"><p>Man darf jedoch nicht vergessen, dass …</p><p>Man darf nicht vergessen, dass jedoch …</p></div>
+<ul><li><strong>어조가 비난으로 흐르지 않게 합니다.</strong> 사실적 근거나 설명을 곁들여 균형을 유지하세요.</li></ul>
+<h2 id="schreiben-2-강조-steigerung-wichtigkeit-hervorheben">강조 (Steigerung): Wichtigkeit hervorheben</h2>
+<h3 id="schreiben-2-개념과-특징-3">개념과 특징</h3>
+<ul><li>논거의 중요도를 구분해 점점 강하게 강조할 때 씁니다.</li><li>핵심 논점을 부각하거나 설득력을 단계적으로 끌어올릴 때 효과적입니다.</li></ul>
+<h3 id="schreiben-2-자주-쓰는-표현-3">자주 쓰는 표현</h3>
+<div class="tbl c2"><table><thead><tr><th>표현</th><th>뜻</th></tr></thead><tbody><tr><td>beginnen wir mit dem, was auf der Hand liegt</td><td>분명한 것부터 시작하자</td></tr><tr><td>schwieriger wird es schon mit</td><td>더 복잡한 문제는</td></tr><tr><td>gewichtiger ist da schon</td><td>보다 무게 있는 쟁점은</td></tr><tr><td>eine Verschärfung ergibt sich bei</td><td>~에서 문제가 더 심각해진다</td></tr><tr><td>noch bedeutsamer ist</td><td>더욱 중대한 것은</td></tr><tr><td>besonders wichtig erscheint mir</td><td>특히 중요하게 여겨지는 것은</td></tr><tr><td>von außerordentlicher Wichtigkeit ist</td><td>지극히 중요한 것은</td></tr><tr><td>schließlich aber</td><td>결론적으로 가장 중요한 것은</td></tr><tr><td>am deutlichsten wird die Problematik</td><td>문제가 가장 두드러지는 경우는</td></tr></tbody></table></div>
+<h3 id="schreiben-2-예문-3">예문</h3>
+<div class="de" lang="de"><p>Gewichtiger ist da schon die Frage nach intergenerationeller Gerechtigkeit.</p><p>Besonders wichtig erscheint mir in diesem Zusammenhang die politische Verantwortung.</p><p>Am deutlichsten wird die Problematik im Bereich der globalen Ressourcenverteilung.</p></div>
+<h3 id="schreiben-2-쓸-때의-요령-3">쓸 때의 요령</h3>
+<ul><li><strong>논증 순서를 계획해 구성합니다.</strong> 기본적이고 분명한 요소에서 시작해 점차 복잡하고 핵심적인 이슈로, 마지막에 결론으로 이어지는 흐름입니다.</li><li><strong>단계적으로 강조합니다.</strong> Schwieriger wird es schon mit … / Noch bedeutsamer ist … / Am deutlichsten wird die Problematik … 순으로 올리면 독자가 이해하기 쉽고 설득력도 높아집니다.</li><li><strong>강조 표현을 남용하지 않습니다.</strong> &#x27;특히 중요하다&#x27;를 너무 자주 쓰면 오히려 핵심이 흐려집니다.</li><li><strong>감정적 어조 대신 분석적 어조를 유지합니다.</strong> 학술 글쓰기에서는 von außerordentlicher Wichtigkeit ist …처럼 격조 있는 표현을 고릅니다.</li><li><strong>강조 구간 사이에 전환부(Transition)를 둡니다.</strong></li></ul>
+<div class="de" lang="de"><p>Nachdem nun die grundlegenden Argumente aufgezeigt wurden, soll im Folgenden auf die zentrale Herausforderung eingegangen werden.</p></div>
+<h2 id="schreiben-2-추가-요령">추가 요령</h2>
+<ul><li><strong>맥락에 맞게 고릅니다.</strong> 연결어를 고를 때는 글의 주제와 논리 흐름을 먼저 파악한 뒤, 실제 의도(나열·대조·강조)에 가장 맞는 표현을 쓰세요. 연결어는 논리적 응집력(Kohärenz)을 높이고 독자가 글의 구조를 따라가기 쉽게 합니다.</li><li><strong>같은 표현을 되풀이하지 않습니다.</strong> 같은 표현을 연달아 쓰면 글이 단조로워집니다. 어휘와 문장 구조를 바꿔 가며 쓰세요.</li><li><strong>문장의 호흡을 조절합니다.</strong> 한 문장에 연결어가 너무 많으면 읽기 어려워집니다. 문장을 적절히 나누어 명료하게 유지하세요.</li><li><strong>장르의 관습을 따릅니다.</strong> 학술 글쓰기, 보고서, 신문 사설 등 장르마다 선호하는 표현과 어조가 다릅니다. 학술 글에서는 구어체나 과도한 수사를 피하는 편이 좋습니다.</li></ul>
+</div>
+<nav class="pn" aria-label="같은 분류의 글"><a class="pv" href="schreiben-1.html"><small>← 이전 글</small><b>연어(Kollokation)로 쓰기 실력 키우기</b></a><a class="nx" href="schreiben-3.html"><small>다음 글 →</small><b>쓰기, 비교, 다시 쓰기: 글 한 편을 완성하는 4단계 사이클</b></a></nav>
+<aside class="more" aria-label="다른 학습 자료"><b>SODA Lehrwerk</b><p>소피아 독일어학원은 독일어 공부법 글 35편과 함께 문법 교재, 독해·듣기·쓰기·말하기 훈련, 단어장, Goethe·telc 모의고사를 무료로 공개합니다.</p><ul><li><a href="../../grammatik/">문법 교재</a></li><li><a href="../../lesetraining/">독해 훈련</a></li><li><a href="../../hoertraining/">듣기 훈련</a></li><li><a href="../../schreibtraining/">쓰기 훈련</a></li><li><a href="../../sprechtraining/">말하기 훈련</a></li><li><a href="../../vokalab/">단어장 A1–C1</a></li><li><a href="../../#inhalt">전체 목차</a></li></ul></aside>
+<p class="a-end"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></p>
+<p class="a-note">소피아 독일어학원 · 독일어 공부법</p>
+</article>
+<script>
+(function(){
+  var au=null, cur=null;
+  function stop(){if(au){au.pause();au=null;} if(cur){cur.classList.remove('on');cur=null;}}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.snd'); if(!b)return;
+    var same=b===cur; stop(); if(same)return;
+    au=new Audio(b.getAttribute('data-snd')); cur=b; b.classList.add('on');
+    au.addEventListener('ended',stop); au.addEventListener('error',stop);
+    var pr=au.play(); if(pr&&pr.catch)pr.catch(stop);
+  });
+})();
+</script>
+</body>
+</html>
