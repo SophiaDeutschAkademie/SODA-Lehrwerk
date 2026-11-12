@@ -43,7 +43,7 @@ CATS = [
     ('hoeren', 'Hören', '듣기', '듣기 루틴과 듣기가 늘지 않는 이유'),
     ('sprechen', 'Sprechen', '말하기', '독일에 가지 않고 말하기 실력을 키우는 훈련'),
     ('schreiben', 'Schreiben', '쓰기', '연어, 연결어, 다시 쓰기, 문장의 첫머리'),
-    ('pruefungen', 'Prüfungen', '시험', '시험 직전 한 달, 말하기 시험의 파트너, telc와 Goethe 고르기'),
+    ('pruefungen', 'Prüfungen', '시험', '시험 직전 한 달, 말하기 시험의 파트너, telc와 Goethe 고르기, 종이 시험과 디지털 시험'),
     ('sonder', 'Sonderthemen', '특별 주제', 'ADHD 학습자, 나이와 외국어 학습, AI로 공부하기, 절대음감, 과제 미루기'),
 ]
 

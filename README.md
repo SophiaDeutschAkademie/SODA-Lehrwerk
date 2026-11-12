@@ -18,7 +18,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `nomen-verb-verbindungen/` | Nomen-Verb-Verbindungen | 명사와 동사 연어 플래시카드, A1–C2, 317장 |
 | `redemittel/` | SODA Alltagsredemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
 | `kuerze-wuerze/` | In der Kürze liegt die Würze | 일상을 위한 MSG, 짧은 표현 플래시카드, A2–C1, 256장과 헷갈리는 짝 |
-| `lernmethoden/` | SODA Lernmethoden | 독일어 공부법, 학습 계획·어휘·문법·읽기·듣기·말하기·쓰기·시험·특별 주제 글 37편 |
+| `lernmethoden/` | SODA Lernmethoden | 독일어 공부법, 학습 계획·어휘·문법·읽기·듣기·말하기·쓰기·시험·특별 주제 글 38편 |
 | `sprechen/` | SODA Sprechen | 말하기 실전 연습(시험관·파트너와 Teil별 연습, 평가, 결과 파일). Modelltest 연습 기록은 같은 브라우저(localStorage `soda-sprechen:mdt:<시험 id>`)에도 저장되어, Modelltest 디지털 시험의 「선생님께 제출하기」가 필기 결과와 함께 보냅니다. 소피아 독일어학원 수강생 전용이라 아이디와 비밀번호로 로그인해야 합니다. 학습 포탈(`SODA-LERNPORTAL` 저장소)에 로그인한 브라우저에서는 그 로그인으로 바로 들어가서 로그인 화면이 나오지 않습니다(같은 브라우저의 localStorage `soda-portal:session`에 들어 있는 말하기 계정을 씁니다. 자세한 내용은 `SODA-LERNPORTAL`의 README 「학습 포탈」). 목차의 「SODA Modelltest」 묶음 맨 아래 전체 너비 타일과, Goethe A2·B1·B2, telc B1·B2 Modelltest 1·2의 「말하기 실전 연습」 줄에서 열립니다 |
 | 별도 저장소 `SODA-Goethe` | Goethe A2·B1·B2 모의고사 | Modelltest 10·10·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면, A2·B1·B2·C1 Hochschule에는 쓰기·말하기 시험 대비 가이드 |
 | 별도 저장소 `SODA-TELC` | telc B1·B2·C1 Hochschule 모의고사 | Modelltest 5·7·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면, B1·B2·C1 Hochschule에는 쓰기·말하기 시험 대비 가이드 |
@@ -55,7 +55,7 @@ nomen-verb-verbindungen/     SODA-NVV 저장소의 내용
 sprechen/                    말하기 실전 연습(단일 HTML). 서버(Cloudflare Worker)가 로그인, 연습 횟수, 음성 연결을 맡습니다. 주소 끝의 #goethe-b1-2 같은 시험 id로 시험을 지정해 엽니다
 redemittel/                  회화 패턴과 상황별 반응 표현 플래시카드(단일 HTML)
 kuerze-wuerze/               일상을 위한 MSG, 짧은 표현 플래시카드(단일 HTML)
-lernmethoden/                독일어 공부법 글 37편(단일 HTML, 원고와 빌드 스크립트 포함). lernmethoden/a/<글 id>.html은 글마다 따로 만든 검색용 페이지
+lernmethoden/                독일어 공부법 글 38편(단일 HTML, 원고와 빌드 스크립트 포함). lernmethoden/a/<글 id>.html은 글마다 따로 만든 검색용 페이지
 zertifikat/                  옛 모의고사 주소를 새 주소로 넘기는 안내 페이지만 있음 (zertifikat/README.md)
 ```
 
@@ -115,7 +115,7 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 - 글 원고는 `lernmethoden/src/<글id>.txt`입니다. 맨 위에 `id`, `cat`, `no`, `date`, `title`, `sum`을 적고 `---` 아래에 본문을 씁니다. 문법은 `lernmethoden/build.py` 맨 위 설명에 있어요.
 - 원고를 고치거나 새 글을 넣은 뒤 `python3 lernmethoden/build.py`를 실행하면 `lernmethoden/index.html`이 다시 만들어집니다. 분류 목록은 `build.py`의 `CATS`에 있습니다.
 - 분류는 열 개입니다(일반, 학습 계획, 어휘, 문법, 읽기, 듣기, 말하기, 쓰기, 시험, 특별 주제). 글의 `id`는 글 주소(`#a/<id>`, `lernmethoden/a/<id>.html`)여서 한번 정하면 바꾸지 않습니다. 글을 다른 분류로 옮길 때는 `cat`과 `no`만 고치고, 두 분류의 `no`를 1부터 빠짐없이 이어지게 다시 매깁니다(어긋나면 빌드가 멈춥니다). 다른 글에서 「특별 주제 2편」처럼 번호로 가리키는 링크 글자도 함께 고칩니다.
-- 시험(Prüfungen) 분류의 세 글은 특별 주제에서 옮긴 글이라 `id`가 `sonder-2`, `sonder-7`, `sonder-8`입니다. 새 글의 `id`는 `<분류>-<번호>`로 짓되 이미 있는 파일 이름을 피합니다(시험의 다음 글은 `pruefungen-4`, 특별 주제의 다음 글은 `sonder-9`).
+- 시험(Prüfungen) 분류의 1~3편은 특별 주제에서 옮긴 글이라 `id`가 `sonder-2`, `sonder-7`, `sonder-8`이고, 4편부터는 `pruefungen-4`처럼 짓습니다. 새 글의 `id`는 `<분류>-<번호>`로 짓되 이미 있는 파일 이름을 피합니다(시험의 다음 글은 `pruefungen-5`, 특별 주제의 다음 글은 `sonder-9`).
 - 목차 타일의 「글 27편」과 `README`의 편수는 글을 더하거나 뺄 때 직접 고칩니다.
 - 목차의 분류는 닫힌 상태로 보이고, 분류를 누르면 그 분류의 글 목록이 아래에 열립니다. 다시 누르면 닫힙니다.
 - 본문에서 다른 앱으로 가는 링크 카드(`link|`)의 주소는 `../sprechtraining/`처럼 `lernmethoden/` 기준으로 적습니다. 글 페이지(`lernmethoden/a/`)에서는 빌드할 때 한 단계 위(`../../sprechtraining/`)로 바뀝니다.
@@ -129,7 +129,7 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 - **페이지마다 검색용 태그**: 목차와 각 앱의 `<title>`, 설명, canonical 주소, 카카오톡 미리보기(og 태그)를 `tools/seo.py`가 `<!-- seo:begin -->` … `<!-- seo:end -->` 사이에 넣습니다. 제목과 설명을 고치려면 `tools/seo.py`의 `PAGES`를 고친 뒤 `python3 tools/seo.py`를 실행합니다. 여러 번 실행해도 태그는 한 번만 들어갑니다. 앱의 index.html을 통째로 새로 만드는 빌드를 돌렸다면 이 스크립트를 다시 실행합니다.
 - **검색에서 빼는 페이지**: 수강생 전용 `sprechen/`과 옛 모의고사 주소 안내 `zertifikat/`에는 noindex 태그가 들어갑니다(`NOINDEX`).
 - **공부법 글 페이지**: `lernmethoden/build.py`가 앱(`lernmethoden/index.html`)과 함께 글마다 본문이 HTML에 그대로 들어 있는 페이지 `lernmethoden/a/<글 id>.html`을 만듭니다. 앱 안의 글은 주소가 `#a/…`라서 검색엔진이 글 하나하나를 따로 찾지 못하기 때문입니다. 원고를 고치면 `python3 lernmethoden/build.py`만 실행하면 되고, 끝날 때 `tools/seo.py`도 자동으로 실행됩니다.
-- **sitemap.xml**: 목차, 앱 13개, 공부법 글 37편의 주소입니다. 네이버 서치어드바이저와 구글 서치 콘솔에 `https://sophiadeutschakademie.github.io/SODA-Lehrwerk/sitemap.xml`로 제출합니다. 날짜(lastmod)는 고친 파일만 오늘 날짜로 바뀝니다. 얕은 복제(`git clone --depth 1`)에서는 git 기록으로 파일별 날짜를 알 수 없어서, 바뀌지 않은 페이지는 이미 올라가 있는 sitemap.xml의 날짜를 그대로 둡니다.
+- **sitemap.xml**: 목차, 앱 13개, 공부법 글 38편의 주소입니다. 네이버 서치어드바이저와 구글 서치 콘솔에 `https://sophiadeutschakademie.github.io/SODA-Lehrwerk/sitemap.xml`로 제출합니다. 날짜(lastmod)는 고친 파일만 오늘 날짜로 바뀝니다. 얕은 복제(`git clone --depth 1`)에서는 git 기록으로 파일별 날짜를 알 수 없어서, 바뀌지 않은 페이지는 이미 올라가 있는 sitemap.xml의 날짜를 그대로 둡니다.
 
 사이트 소유 확인 코드는 `tools/seo.py`의 `VERIFY`에 적고 스크립트를 실행하면 목차(`index.html`) 머리에 들어갑니다.
 
