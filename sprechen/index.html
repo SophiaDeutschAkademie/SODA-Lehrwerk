@@ -197,6 +197,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .login.auto .mailnote{margin:14px 0 4px;font-size:14px}
 .login #loginVia{margin:0 0 12px;line-height:1.6}
 .login #loginVia a{color:var(--acc);font-weight:600}
+.login #loginState{margin:14px 0 0;padding-top:10px;border-top:1px solid var(--line);font-size:12px;line-height:1.6}
 .cover .go{align-self:flex-start;font-size:17px;padding:14px 28px}
 .cover .fine{font-size:12px;color:var(--muted)}
 
@@ -464,6 +465,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     <p class="err" id="loginErr" role="alert"></p>
     <p class="muted small" id="loginVia" hidden>학습 포탈 아이디로 들어가려면 <a id="lnkPortal" href="/SODA-LERNPORTAL/">학습 포탈에서 로그인</a>을 누르십시오. 로그인하면 이 화면으로 돌아와 바로 열리고, 12시간 동안 다시 묻지 않습니다.</p>
     <p class="muted small">로그인하면 내 레벨의 시험이 열립니다. 연습 횟수는 아이디별로 Teil마다 최대 2회이고, 서버에 기록되어 새로고침, 창 닫기, 다른 기기에서도 다시 얻을 수 없습니다. 추가 연습이 필요하면 선생님께 말씀해 주십시오.</p>
+    <p class="muted small" id="loginState"></p>
   </form>
 </section>
 
@@ -6174,8 +6176,9 @@ $('#btnAdmin').onclick = showAdmin;
    - 포탈은 로그인 직후 말하기 계정을 확인해 sp를 적습니다. 그 확인이 끝나기 전에 이 페이지가 열리면(spc가 'wait') 입력 칸을 보이지 않고 잠시 기다립니다.
    - 로그인 정보는 이 페이지가 열린 뒤에 생기거나 바뀔 수 있습니다(포탈의 계정 확인이 끝남, 다른 탭에서 포탈에 로그인). 바뀌면 그때 바로 로그인합니다.
    - 서버가 받지 않은 계정은 다시 보내지 않습니다. 포탈이 확인해 적은 계정(src 'same')이나 여기서 직접 로그인해 적은 계정(src 'manual')이면 로그인 정보에서도 지웁니다.
-   - 이 브라우저에 포탈 로그인이 없으면 로그인 화면에 「학습 포탈에서 로그인」 링크를 보입니다. 포탈에서 로그인하면 이 페이지로 돌아와 바로 열립니다. */
-const PORTAL_KEY = 'soda-portal:session', PORTAL_URL = '/SODA-LERNPORTAL/', PORTAL_WAIT = 10000;
+   - 이 브라우저에 학생의 포탈 로그인이 없으면 로그인 화면에 「학습 포탈에서 로그인」 링크를 보입니다. 포탈에서 로그인하면 이 페이지로 돌아와 바로 열립니다.
+   - 로그인 화면 맨 아래의 상태 줄(portalState)은 이 창에서 보이는 포탈 로그인을 그대로 적습니다. 이 부분을 고치면 PORTAL_BUILD도 올립니다. */
+const PORTAL_KEY = 'soda-portal:session', PORTAL_URL = '/SODA-LERNPORTAL/', PORTAL_WAIT = 10000, PORTAL_BUILD = '11-12 b';
 /* busy: 로그인 요청 중, done: 이미 시도한 계정(성공했거나 서버가 받지 않음), last: 마지막 요청 시각, from: 기다리기 시작한 시각, key: 마지막으로 살핀 로그인 정보 */
 const PT = { busy: false, done: '', last: 0, timer: 0, from: 0, key: null };
 function portalSession() {
@@ -6217,11 +6220,25 @@ function portalNote(state, text) {
   if (state === 'busy') { const sp = document.createElement('span'); sp.className = 'spin'; el.appendChild(sp); }
   el.appendChild(document.createTextNode(text || ''));
 }
-/* 이 브라우저에 포탈 로그인이 없을 때만 「학습 포탈에서 로그인」 링크를 보입니다. 포탈에서 로그인하면 이 주소(#시험 id 포함)로 돌아옵니다. */
+/* 이 브라우저에 학생의 포탈 로그인이 없을 때(로그인 없음, 선생님 통과 로그인) 「학습 포탈에서 로그인」 링크를 보입니다. 포탈에서 로그인하면 이 주소(#시험 id 포함)로 돌아옵니다. */
 function portalHint() {
   const el = $('#loginVia'); if (!el) return;
-  el.hidden = !!portalSession();
+  const ps = portalSession();
+  el.hidden = !!ps && !ps.t;
   $('#lnkPortal').href = PORTAL_URL + '?next=' + encodeURIComponent(location.pathname + location.hash);
+  portalState();
+}
+/* 로그인 화면 맨 아래의 상태 줄: 이 브라우저(이 창)에서 보이는 학습 포탈 로그인을 그대로 적습니다.
+   로그인 화면이 왜 나왔는지 가릴 때 씁니다: 포탈 로그인이 없는지, 학생인지 선생님 통과 로그인인지, 말하기 계정이 연결되어 있는지, 화면이 최신인지 */
+function portalState() {
+  const el = $('#loginState'); if (!el) return;
+  const s = portalSession(), c = portalCreds();
+  let t = '이 브라우저의 학습 포탈 로그인: ';
+  if (!s) t += '없음';
+  else if (s.t) t += '선생님(관리자 화면에서 남긴 로그인)' + (c ? ' · 말하기 계정 있음' : ' · 말하기 계정 없음');
+  else t += String(s.name || s.id || '학생') + (c ? ' · 말하기 계정 연결됨' : ' · 말하기 계정 연결 안 됨');
+  if (!Store.ok()) t += ' · 저장 공간을 쓸 수 없음';
+  el.textContent = t + ' · 화면 ' + PORTAL_BUILD;
 }
 function loginBusy(on) { ['#inId', '#inPw', '#btnLogin'].forEach(q => { $(q).disabled = on; }); $('#loginForm').classList.toggle('auto', on); }
 const PORTAL_NO = '학습 포탈 아이디와 비밀번호로는 말하기 연습에 로그인되지 않았습니다. 말하기 연습 아이디와 비밀번호를 입력해 주십시오. 한 번 로그인하면 학습 포탈에서 로그아웃할 때까지 다시 묻지 않습니다. 이 안내가 계속 나오면 선생님께 알려 주십시오.';
@@ -6232,7 +6249,8 @@ function portalIdle() {
   const tail = ' 여기서 한 번 로그인하면 학습 포탈에서 로그아웃할 때까지 다시 묻지 않습니다.';
   /* 포탈에 로그인한 학생이면 아이디 칸에 포탈 아이디를 미리 넣어 둡니다(말하기 아이디가 다르면 고쳐 씁니다) */
   if (s && !s.t && s.id && !$('#inId').value) $('#inId').value = String(s.id).trim();
-  if (!s || s.t) portalNote('', '');
+  if (!s) portalNote('', '');
+  else if (s.t) portalNote('', '이 브라우저에는 학생 로그인이 아니라 관리자 화면에서 남긴 선생님 로그인이 있습니다. 말하기 연습은 선생님의 말하기 계정으로 로그인해 주십시오. 학생 계정으로 확인하려면 아래의 「학습 포탈에서 로그인」을 눌러 학생 아이디로 로그인하십시오.');
   else if (s.spc === 'no') portalNote('', PORTAL_NO);
   else if (s.spc) portalNote('', '학습 포탈에 로그인되어 있지만 말하기 계정을 확인하지 못했습니다.' + tail);
   else portalNote('', '학습 포탈에 로그인되어 있지만 말하기 계정이 연결되어 있지 않습니다.' + tail);
@@ -6264,7 +6282,12 @@ async function portalLogin(force) {
     return;
   }
   const sig = portalSig(c);
-  if (sig === PT.done || !Store.ok()) { loginBusy(false); return; }
+  if (sig === PT.done) { loginBusy(false); return; }
+  if (!Store.ok()) {   // 저장 공간을 쓸 수 없으면 연습 기록을 남길 수 없어 들어가지 않습니다. 이유를 알립니다
+    loginBusy(false);
+    portalNote('fail', '이 브라우저에 연습 기록을 저장할 수 없어 바로 들어가지 못했습니다. 사생활 보호 모드를 끄고 다시 열어 주십시오.');
+    return;
+  }
   const gap = 5000 - (Date.now() - PT.last);   // 방금 실패한 직후에는 바로 다시 보내지 않습니다
   if (gap > 0) { PT.timer = setTimeout(() => portalLogin(true), gap + 30); return; }
   PT.busy = true; PT.last = Date.now();
