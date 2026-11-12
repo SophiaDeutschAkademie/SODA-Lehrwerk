@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script id="soda-theme-js">
+(function(){
+  var KEY='soda-theme', d=document.documentElement, t='dark';
+  try{var s=localStorage.getItem(KEY); if(s==='light'||s==='dark') t=s;}catch(e){}
+  function apply(v){
+    d.setAttribute('data-theme',v); d.style.colorScheme=v;
+    var m=document.querySelector('meta[name="color-scheme"]'); if(m) m.setAttribute('content',v);
+    var c=document.querySelector('meta[name="theme-color"]'); if(c) c.setAttribute('content',v==='dark'?'#14181E':'#FAFAF8');
+  }
+  apply(t);
+  var SUN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var MOON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+  function mount(){
+    if(document.getElementById('soda-theme-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-theme-btn'; b.className='soda-theme-btn';
+    function paint(){ var dk=d.getAttribute('data-theme')==='dark'; b.innerHTML=dk?SUN:MOON; b.setAttribute('aria-pressed',dk?'true':'false'); b.setAttribute('aria-label','다크 모드 '+(dk?'끄기':'켜기')); b.title='다크 모드 '+(dk?'켜짐':'꺼짐')+' · 누르면 '+(dk?'라이트':'다크')+'로 바뀌어요'; }
+    b.addEventListener('click',function(){ var n=d.getAttribute('data-theme')==='dark'?'light':'dark'; apply(n); try{localStorage.setItem(KEY,n);}catch(e){} paint(); });
+    paint(); document.body.appendChild(b);
+    if(!document.getElementById('soda-toc-btn')){ var a=document.createElement('a'); a.id='soda-toc-btn'; a.className='soda-toc-btn'; a.href='../../#inhalt'; a.setAttribute('aria-label','홈(목차)으로 돌아가기'); a.title='홈 · 목차로'; a.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>'; document.body.appendChild(a); }
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>독일에 살아도 문법은 저절로 늘지 않습니다: 한국어를 독일어로 옮기는 연습 · 독일어 공부법 | 소피아 독일어학원</title>
+<meta name="description" content="살면서 멈추는 문법, 한국어 문장을 독일어로 옮기는 연습">
+<link rel="canonical" href="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/grammatik-4.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SODA Lehrwerk · 소피아 독일어학원">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="독일에 살아도 문법은 저절로 늘지 않습니다: 한국어를 독일어로 옮기는 연습">
+<meta property="og:description" content="살면서 멈추는 문법, 한국어 문장을 독일어로 옮기는 연습">
+<meta property="og:url" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/grammatik-4.html">
+<meta property="og:image" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png">
+<meta property="article:published_time" content="2026-11-12">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14181E">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/png" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/pretendard.css">
+<link rel="stylesheet" href="article.css?v=aaa837f8c1">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "독일에 살아도 문법은 저절로 늘지 않습니다: 한국어를 독일어로 옮기는 연습", "description": "살면서 멈추는 문법, 한국어 문장을 독일어로 옮기는 연습", "inLanguage": "ko", "datePublished": "2026-11-12", "mainEntityOfPage": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/grammatik-4.html", "image": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png", "articleSection": "문법 (Grammatik)", "author": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/"}, "publisher": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "logo": {"@type": "ImageObject", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/assets/icons/icon-512.png"}}}</script>
+<script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<article class="reader">
+<nav class="crumbs" aria-label="위치"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></nav>
+<p class="a-eb">Grammatik<i>·</i>문법 4/4</p>
+<h1>독일에 살아도 문법은 저절로 늘지 않습니다: 한국어를 독일어로 옮기는 연습</h1>
+<p class="a-sum">살면서 멈추는 문법, 한국어 문장을 독일어로 옮기는 연습</p>
+<p class="a-meta">약 12분 · 소피아 독일어학원</p>
+<div class="body">
+<p>독일어를 배우는 분들 사이에서 자주 오가는 말이 두 가지 있습니다. 하나는 &quot;문법은 독일에 가서 살면 저절로 는다&quot;는 말이고, 다른 하나는 &quot;한국어 문장을 독일어로 옮기는 연습은 낡은 방법이다&quot;라는 말입니다. 두 말은 이어져 있습니다. 문법이 생활 속에서 저절로 는다면 문장을 옮기는 연습은 필요가 없기 때문입니다.</p>
+<p>결론부터 말씀드립니다. 수업 없이 살면서 언어를 배운 성인을 여러 해 관찰한 연구들에서, 대화 능력은 크게 늘었지만 문법은 말이 통하는 수준에서 멈춘 경우가 많았습니다. 그리고 모국어 문장을 외국어로 옮기는 연습을 넣은 수업은 그렇지 않은 수업보다 문법 정확성을 더 높였습니다.</p>
+<p>이 글은 문법의 정확성만 다룹니다. 현지에서 살면 듣고 이해하는 능력과 대화 능력이 는다는 점은 아래 연구들도 확인합니다.</p>
+<h2 id="grammatik-4-살면서-배운-사람들의-문법">살면서 배운 사람들의 문법</h2>
+<h3 id="grammatik-4-5년-동안-영어로-생활한-화가">5년 동안 영어로 생활한 화가</h3>
+<p>하와이 대학교의 Schmidt(1983)는 W라는 일본인 화가의 영어를 5년 동안 관찰했습니다. W는 성인이 되어 호놀룰루로 이주했고 영어 수업을 한 번도 듣지 않았습니다. 가게와 식당에서, 화랑 주인과 수집가를 상대로, 친구들과 영어로 이야기하며 지냈습니다.</p>
+<p>Schmidt는 꼭 써야 하는 자리에서 W가 문법 형태를 맞게 쓴 비율을 셌습니다.</p>
+<div class="tbl c3 fit"><table><thead><tr><th>문법 형태</th><th>1978년 7월</th><th>1983년 6월</th></tr></thead><tbody><tr><td>복수 -s</td><td class="nw">5%</td><td class="nw">21%</td></tr><tr><td>3인칭 단수 -s</td><td class="nw">0%</td><td class="nw">24%</td></tr><tr><td class="nw">관사</td><td class="nw">0%</td><td class="nw">2%</td></tr><tr><td>규칙 과거형</td><td class="nw">0%</td><td class="nw">0%</td></tr><tr><td>불규칙 과거형</td><td>2~5%</td><td class="nw">51%</td></tr><tr><td>소유격 -s</td><td class="nw">0%</td><td class="nw">10%</td></tr></tbody></table></div>
+<p>be 동사와 진행형 -ing는 처음부터 90% 안팎이었고 5년 뒤에도 비슷했습니다. 90%를 익힌 기준으로 삼으면, 5년 동안 익히지 못한 상태에서 익힌 상태로 바뀐 형태는 하나도 없었습니다.</p>
+<p>같은 기간에 W의 대화 능력은 크게 늘었습니다. 하고 싶은 말을 전하고, 이야기를 이어 가고, 식당에서 주문하는 것 같은 일상의 일을 영어로 해냈습니다. Schmidt는 W의 유창한 대화에 문법의 정확성이 따라오지 못했다고 적었습니다.</p>
+<h3 id="grammatik-4-독일에서-일하며-독일어를-배운-이민자들">독일에서 일하며 독일어를 배운 이민자들</h3>
+<p>W는 한 사람의 사례입니다. 독일어에는 여러 사람을 조사한 연구가 있습니다.</p>
+<ul><li><strong>하이델베르크 연구.</strong> 하이델베르크 대학교의 연구 프로젝트(1978)는 수업 없이 독일어를 익힌 이탈리아와 스페인 출신 노동자 48명을 면담하고, 그들이 쓰는 문장 구조가 얼마나 발달했는지를 점수로 매겼습니다. 여섯 가지 요인 가운데 문법 수준과 가장 관련이 컸던 것은 여가 시간에 독일인과 만나는 정도였고(0.64), 가장 관련이 작았던 것은 체류 기간이었습니다(0.28). 체류 기간은 처음 2년 동안에만 의미가 있었습니다. 연구팀은 대부분의 경우 목표 수준에 이르지 못한다고 적었습니다.</li><li><strong>유럽 다섯 나라의 이민자 연구.</strong> Klein과 Perdue(1997)는 독일어, 영어, 프랑스어, 네덜란드어, 스웨덴어를 수업 없이 배우는 성인 이민자 40명을 약 30개월 동안 관찰한 결과를 정리했습니다. 학습자들은 모두 비슷한 형태의 단순한 말에 먼저 이르렀습니다. 이 단계의 말에는 격, 수, 성, 시제를 나타내는 어미 변화가 없고 부문장이 없습니다. 약 3분의 1은 이 단계에서 문법 발달이 끝났습니다. 그 뒤로는 어휘가 늘고 말이 더 유창해졌을 뿐입니다.</li></ul>
+<p>독일어를 배우던 한 이탈리아인은 &quot;mädchen nehme brot&quot;라고 말했습니다. 뜻은 통합니다. 맞는 문장은 다음과 같습니다.</p>
+<div class="de" lang="de"><p>Das Mädchen nimmt das Brot.</p></div>
+<h3 id="grammatik-4-유학생과-몰입-수업의-학생들">유학생과 몰입 수업의 학생들</h3>
+<p>수업을 듣는 학습자에게서도 같은 방향의 결과가 나왔습니다.</p>
+<ul><li><strong>한 학기 유학.</strong> Collentine(2004)은 스페인어 학습자 46명을 스페인에서 한 학기를 보낸 집단과 미국의 대학 교실에서 배운 집단으로 나누어 비교했습니다. 개별 문법 항목은 교실에서 배운 집단이 더 발달했습니다. 스페인에서 지낸 집단은 이야기를 풀어 가는 능력이 더 좋았고, 같은 분량의 말에 더 많은 정보를 담았습니다.</li><li><strong>캐나다의 프랑스어 몰입 수업.</strong> 학교 과목을 프랑스어로 배우는 학생들에 관한 연구를 Lyster(2004)가 정리했습니다. 학생들은 듣고 이해하는 능력이 높았습니다. 문법의 정확성은 여러 해가 지나도 부족했습니다. 명사의 성이 그런 예입니다.</li><li><strong>유학 연구의 개관.</strong> DeKeyser(2007)는 유학에서 돌아온 학생들이 스스로는 늘었다고 느껴도 객관적인 측정에서는 크게 늘지 않았고, 정확성에서 특히 그랬다고 정리했습니다.</li></ul>
+<blockquote class="call"><p>살면서 느는 것은 듣고 이해하는 능력과 대화 능력입니다. 문법의 정확성은 말이 통하는 수준에서 멈추는 경우가 많았습니다.</p></blockquote>
+<h2 id="grammatik-4-뜻이-통하면-형태는-고쳐지지-않습니다">뜻이 통하면 형태는 고쳐지지 않습니다</h2>
+<p>Klein과 Perdue는 학습자가 단순한 말의 단계를 넘어서는 계기를 이렇게 설명합니다. 지금 가진 말로는 전하려는 뜻을 전하기 어려울 때 일부 학습자가 새 형태를 익히기 시작합니다. 뜻이 전해지는 동안에는 그럴 계기가 생기지 않습니다.</p>
+<p>Lyster도 몰입 수업을 같은 방식으로 설명합니다. 내용에 집중하는 환경에서 학습자는 쉽게 꺼낼 수 있는 형태로 뜻을 전하는 데 익숙해집니다. 형태에 주의를 돌리는 지도가 없으면 그 형태가 자동으로 나오게 되어 바꾸기 어려워집니다.</p>
+<p>예를 들면 다음과 같습니다.</p>
+<div class="de" lang="de"><p>Ich gestern Kino gehen. (X)</p><p>Ich bin gestern ins Kino gegangen.</p></div>
+<p>첫 문장으로도 어제 영화관에 갔다는 뜻은 전해집니다. 상대는 내용에 대답하고 대화는 이어집니다.</p>
+<p class="tagp"><span class="tg">제 해석</span> <a class="xref" href="grammatik-2.html">문법 공부법 2편</a>에서 문법이 남는 조건으로 규칙 설명, 스스로 문장을 만드는 연습, 교정을 들었습니다. 생활 속의 대화에는 이 세 가지가 빠져 있습니다. 규칙을 설명해 주는 사람이 없고, 자신 없는 구조는 피해서 말할 수 있고, 상대는 대개 틀린 형태가 아니라 내용에 반응합니다.</p>
+<h2 id="grammatik-4-한국어를-독일어로-옮기는-연습은-낡은-방법인가">한국어를 독일어로 옮기는 연습은 낡은 방법인가</h2>
+<p>번역 연습은 오랫동안 낡은 방법으로 여겨졌습니다. &quot;독일어로 생각하라&quot;는 조언도 같은 생각에서 나옵니다. 최근 연구는 번역을 수업 방식 전체가 아니라 연습의 한 종류로 놓고 효과를 측정했습니다.</p>
+<h3 id="grammatik-4-번역을-넣은-수업에서-문법이-더-정확해졌습니다">번역을 넣은 수업에서 문법이 더 정확해졌습니다</h3>
+<ul><li><strong>독일 대학의 영어 수업.</strong> Ebbert-Hübner와 Maas(2017)는 트리어 대학교에서 영어를 전공하는 독일어 화자 학생 235명을 대상으로 세 종류의 수업을 비교했습니다. 독일어와 영어의 문법을 대조하고 독일어 문장과 짧은 글을 영어로 옮기는 수업, 번역 없이 문법을 다루는 수업, 글을 쓰고 피드백을 받는 작문 수업입니다. 학기 첫 주와 마지막 주의 문법 시험을 비교했더니 번역을 넣은 수업에서 문법 정확성이 가장 많이 올랐습니다.</li><li><strong>단어와 연어.</strong> Laufer와 Girsai(2008)는 고등학생 세 집단에게 새 단어 10개와 연어 10개를 같은 시간 동안 가르쳤습니다. 내용에 집중하는 과제를 한 집단, 형태에 주의하는 과제를 한 집단, 모국어와 대조하면서 양방향으로 번역한 집단입니다. 직후 시험과 1주 뒤 시험 모두에서 번역한 집단의 점수가 가장 높았습니다.</li><li><strong>모국어와 대조한 설명.</strong> McManus와 Marsden(2017)은 영어 화자인 프랑스어 학습자 50명에게 프랑스어 과거 시제 하나를 가르쳤습니다. 프랑스어에 관한 설명과 연습만 받은 집단보다, 같은 뜻을 영어에서 어떻게 나타내는지에 관한 설명과 연습을 함께 받은 집단이 정확도와 읽는 속도에서 더 향상했습니다.</li></ul>
+<h3 id="grammatik-4-옮길-때는-언어-사용에-더-주의합니다">옮길 때는 언어 사용에 더 주의합니다</h3>
+<p>Uzawa(1996)는 캐나다의 대학에 다니는 일본인 학생 22명에게 세 가지 과제를 주었습니다. 일본어로 글쓰기, 영어로 글쓰기, 일본어로 된 짧은 글을 영어로 옮기기입니다. 학생들은 옮기는 과제에서 언어 사용에 가장 많이 주의했습니다. 언어 사용 점수도 영어로 쓴 글보다 옮긴 글에서 더 높았습니다. Uzawa는 수준이 낮은 학생에게 옮기는 과제가 가장 도움이 될 것이라고 보았습니다.</p>
+<p class="tagp"><span class="tg">제 해석</span> 자유롭게 쓸 때는 자신 없는 구조를 피할 수 있습니다. Schachter(1974)는 중국어와 일본어 화자가 영어 관계절을 피한다는 것, 그래서 오류만 세면 이 어려움이 드러나지 않는다는 것을 보였습니다. 주어진 문장을 옮길 때는 피할 수 없습니다. 옮기는 과제에서 언어 사용에 더 주의하게 되는 이유가 여기에 있다고 봅니다.</p>
+<h3 id="grammatik-4-글-전체를-한국어로-쓰고-옮기는-것은-다른-일입니다">글 전체를 한국어로 쓰고 옮기는 것은 다른 일입니다</h3>
+<p>Kobayashi와 Rinnert(1992)는 일본 대학생 48명에게 일본어로 쓰고 영어로 옮기는 방식과 처음부터 영어로 쓰는 방식으로 글을 쓰게 했습니다. 수준이 낮은 학생은 옮긴 글이 내용, 구성, 문체 평가에서 더 높았습니다. 수준이 높은 학생은 처음부터 영어로 쓴 글에 오류가 더 적었습니다.</p>
+<p><a class="xref" href="schreiben-3.html">쓰기 공부법 3편</a>에서는 글을 쓸 때 한국어 문장을 완성한 뒤 옮기지 말라고 권했습니다. 내가 지은 한국어 문장은 독일어로 옮겨지지 않는 경우가 있고, 옮긴 뒤에 비교할 독일어 문장이 없기 때문입니다. 이 글에서 권하는 것은 그와 다른 연습입니다.</p>
+<div class="tbl c3 fit"><table><thead><tr><th>구분</th><th>문장 옮기기 연습</th><th>한국어로 쓰고 옮기기</th></tr></thead><tbody><tr><td class="nw">목적</td><td>문법과 표현 연습</td><td>글 한 편 쓰기</td></tr><tr><td>한국어 문장</td><td>독일어 예문의 뜻</td><td>내가 지은 문장</td></tr><tr><td>확인 방법</td><td>원래 문장과 비교</td><td>비교할 문장 없음</td></tr></tbody></table></div>
+<h2 id="grammatik-4-연습하는-순서">연습하는 순서</h2>
+<p class="tagp"><span class="tg">제안</span> 아래 순서는 위 연구와 문법 공부법 2편의 원리를 묶은 제 제안입니다.</p>
+<ol><li><strong>한국어 문장은 독일어 예문에서 가져옵니다.</strong> 문법책의 예문에는 독일어 문장과 한국어 뜻이 함께 있습니다. 독일어 쪽을 가리고 한국어 뜻만 보면서 독일어 문장을 씁니다. 이렇게 하면 독일어로 옮겨지는 문장만 다루게 되고, 비교할 원래 문장이 있습니다.</li><li><strong>한 번에 문법 하나, 다섯 문장을 옮깁니다.</strong> 오늘 공부한 단원의 예문에서 고릅니다.</li><li><strong>쓰기 전에 주어, 동사, 격을 정합니다.</strong> 한국어 문장에는 주어가 없는 경우가 많고, 조사가 독일어의 격과 맞지 않는 동사가 있습니다.</li><li><strong>원래 문장과 비교해 다른 곳에 표시합니다.</strong> 다른 곳은 세 종류입니다. 문법이 틀린 곳, 뜻이 달라진 곳, 틀리지 않았지만 표현이 다른 곳입니다. 앞의 두 종류를 오답 노트에 적습니다.</li><li><strong>사나흘 뒤에 틀린 문장을 다시 옮깁니다.</strong> 간격을 두는 이유는 문법 공부법 2편에 있습니다.</li><li><strong>말로도 옮깁니다.</strong> 쓰지 않고 한국어 뜻을 보면서 독일어로 말합니다.</li></ol>
+<h3 id="grammatik-4-한국어-화자가-걸리는-곳">한국어 화자가 걸리는 곳</h3>
+<div class="tbl c2"><table><thead><tr><th>한국어 문장</th><th>독일어 문장</th></tr></thead><tbody><tr><td>배고파요.</td><td>Ich habe Hunger.</td></tr><tr><td>추워요.</td><td>Mir ist kalt.</td></tr><tr><td>시간이 없어요.</td><td>Ich habe keine Zeit.</td></tr><tr><td>선생님을 도와드렸어요.</td><td>Ich habe der Lehrerin geholfen.</td></tr><tr><td>3년째 독일어를 배우고 있어요.</td><td>Ich lerne seit drei Jahren Deutsch.</td></tr></tbody></table></div>
+<ul><li><strong>주어.</strong> &quot;배고파요.&quot;에는 주어가 없습니다. 독일어 문장에는 주어 ich를 씁니다.</li><li><strong>주어가 아닌 사람.</strong> &quot;추워요.&quot;를 Ich bin kalt.로 옮기면 성격이 차갑다는 뜻이 됩니다. 추위를 느끼는 사람은 3격 mir로 씁니다.</li><li><strong>있다와 없다.</strong> &quot;시간이 없어요.&quot;에서 주어는 시간입니다. 독일어에서는 사람이 주어이고 시간은 4격 목적어입니다.</li><li><strong>조사와 격.</strong> &#x27;선생님을&#x27;의 &#x27;을&#x27;을 따라 4격을 쓰면 틀립니다. helfen은 3격을 씁니다.</li><li><strong>시제.</strong> 지금도 이어지는 일은 독일어에서 현재형과 seit로 씁니다.</li></ul>
+<h3 id="grammatik-4-비교하는-예">비교하는 예</h3>
+<p>&quot;어제 친구한테 책을 빌려줬어요.&quot;를 옮긴 예입니다. 첫 줄이 내가 옮긴 문장이고 둘째 줄이 원래 문장입니다.</p>
+<div class="de" lang="de"><p>Ich habe gestern mein Freund ein Buch gegeben. (X)</p><p>Ich habe gestern einem Freund ein Buch geliehen.</p></div>
+<ul><li><strong>문법이 틀린 곳.</strong> &#x27;친구한테&#x27;는 3격이어서 mein Freund가 아니라 meinem Freund입니다.</li><li><strong>뜻이 달라진 곳.</strong> geben은 &#x27;주다&#x27;입니다. &#x27;빌려주다&#x27;는 leihen입니다.</li><li><strong>표현이 다른 곳.</strong> 원래 문장은 &#x27;친구 한 명&#x27;(einem Freund)이고 내 문장은 &#x27;내 친구&#x27;입니다. 격을 고쳐 meinem Freund로 쓰면 틀린 문장이 아닙니다.</li></ul>
+<p>글로 옮기는 연습에는 Syntalab의 예문을 씁니다. 말로 옮기는 연습에는 Verben mit Präpositionen과 Nomen-Verb-Verbindungen의 &#x27;한국어 → 독일어&#x27; 방식을 씁니다. 한국어 뜻을 보고 독일어로 말한 뒤 카드를 뒤집어 확인하는 방식입니다.</p>
+<div class="links"><a class="lk" href="../../grammatik/" target="_blank" rel="noopener noreferrer"><span class="lk-t">Syntalab</span><span class="lk-d">문법 교재, Lektion 37개</span><span class="lk-u">../grammatik</span></a><a class="lk" href="../../verben-mit-praepositionen/" target="_blank" rel="noopener noreferrer"><span class="lk-t">Verben mit Präpositionen</span><span class="lk-d">동사와 전치사 결합, A1–C2 324장</span><span class="lk-u">../verben-mit-praepositionen</span></a><a class="lk" href="../../nomen-verb-verbindungen/" target="_blank" rel="noopener noreferrer"><span class="lk-t">Nomen-Verb-Verbindungen</span><span class="lk-d">명사와 동사 연어, A1–C2 317장</span><span class="lk-u">../nomen-verb-verbindungen</span></a></div>
+<h2 id="grammatik-4-독일에-가기-전과-간-뒤">독일에 가기 전과 간 뒤</h2>
+<p class="tagp"><span class="tg">제안</span> 아래는 위 연구에서 끌어낸 제 제안입니다.</p>
+<ul><li><strong>가기 전.</strong> 규칙을 설명으로 배우고 문장을 만들어 보는 단계를 한국에서 마칩니다. DeKeyser(2007)는 유학의 효과를 높이려면 교실 수업에서 출국 전 준비까지 연습이 이어지도록 계획해야 한다고 적었습니다.</li><li><strong>간 뒤.</strong> 말이 통하기 시작한 뒤에도 형태를 점검하는 시간을 따로 둡니다. 일주일에 한 번 문장을 옮기고, 쓴 글을 교정받고(<a class="xref" href="schreiben-3.html">쓰기 공부법 3편</a>), 내가 한 말을 녹음해 받아 적습니다(<a class="xref" href="sprechen-3.html">말하기 공부법 3편</a>).</li><li><strong>독일인과 보내는 시간.</strong> 하이델베르크 연구에서 문법 수준과 가장 관련이 컸던 것은 체류 기간이 아니라 여가 시간에 독일인과 만나는 정도였습니다. 이 수치는 둘이 관련되어 있다는 것만 보여 주고, 어느 쪽이 원인인지는 보여 주지 않습니다.</li></ul>
+<h2 id="grammatik-4-알아-둘-점">알아 둘 점</h2>
+<ul><li><strong>현지 생활의 이익은 따로 있습니다.</strong> 이야기를 풀어 가는 능력과 대화 능력은 현지에서 더 늘었습니다. 이 글의 결론은 문법의 정확성에 한정됩니다.</li><li><strong>정답은 하나가 아닙니다.</strong> 원래 문장과 다르다고 틀린 것은 아닙니다. 판단이 서지 않는 문장은 선생님이나 스터디에서 확인합니다.</li><li><strong>옮기기는 연습의 한 종류입니다.</strong> 읽고 듣는 시간, 자유롭게 말하고 쓰는 시간을 대신하지 않습니다. 시간을 나누는 방법은 <a class="xref" href="lernplanung-3.html">학습 계획 3편</a>에 있습니다.</li></ul>
+<h2 id="grammatik-4-정리">정리</h2>
+<ol><li>수업 없이 5년 동안 영어로 생활한 W는 대화 능력이 크게 늘었지만 관사와 규칙 과거형 같은 문법 형태는 거의 늘지 않았습니다.</li><li>독일의 이민자 연구에서 체류 기간은 처음 2년 동안에만 문법 수준과 관련이 있었습니다. 수업 없이 배운 이민자의 약 3분의 1은 어미 변화가 없는 단계에서 멈췄습니다.</li><li>뜻이 통하는 동안에는 형태를 고칠 계기가 생기지 않습니다.</li><li>번역과 대조를 넣은 수업은 문법 수업과 작문 수업보다 문법 정확성을 더 높였고, 옮기는 과제에서 학습자는 언어 사용에 더 주의했습니다.</li><li>글 전체를 한국어로 쓰고 옮기는 것은 권하지 않습니다. 독일어 예문의 한국어 뜻을 보고 문장을 옮긴 뒤 원래 문장과 비교합니다.</li><li>독일에 가기 전에 규칙과 문장 만들기를 익히고, 간 뒤에도 형태를 점검하는 시간을 따로 둡니다.</li></ol>
+<blockquote class="call"><p>오늘 공부한 단원의 예문 다섯 개를 골라, 독일어를 가리고 한국어 뜻만 보면서 써 보시기 바랍니다.</p></blockquote>
+</div>
+<nav class="pn" aria-label="같은 분류의 글"><a class="pv" href="grammatik-3.html"><small>← 이전 글</small><b>문법에는 습득 순서가 있습니다: 한국어 화자의 경우</b></a></nav>
+<aside class="more" aria-label="다른 학습 자료"><b>SODA Lehrwerk</b><p>소피아 독일어학원은 독일어 공부법 글 39편과 함께 문법 교재, 독해·듣기·쓰기·말하기 훈련, 단어장, Goethe·telc 모의고사를 무료로 공개합니다.</p><ul><li><a href="../../grammatik/">문법 교재</a></li><li><a href="../../lesetraining/">독해 훈련</a></li><li><a href="../../hoertraining/">듣기 훈련</a></li><li><a href="../../schreibtraining/">쓰기 훈련</a></li><li><a href="../../sprechtraining/">말하기 훈련</a></li><li><a href="../../vokalab/">단어장 A1–C1</a></li><li><a href="../../#inhalt">전체 목차</a></li></ul></aside>
+<p class="a-end"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></p>
+<p class="a-note">소피아 독일어학원 · 독일어 공부법</p>
+</article>
+<script>
+(function(){
+  var au=null, cur=null;
+  function stop(){if(au){au.pause();au=null;} if(cur){cur.classList.remove('on');cur=null;}}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.snd'); if(!b)return;
+    var same=b===cur; stop(); if(same)return;
+    au=new Audio(b.getAttribute('data-snd')); cur=b; b.classList.add('on');
+    au.addEventListener('ended',stop); au.addEventListener('error',stop);
+    var pr=au.play(); if(pr&&pr.catch)pr.catch(stop);
+  });
+})();
+</script>
+</body>
+</html>
