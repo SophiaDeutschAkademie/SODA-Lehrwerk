@@ -8,6 +8,10 @@ src/*.txt(글 원고)를 읽어 한 장짜리 오프라인 페이지 lernmethode
 
 원고 형식(src/<id>.txt)
   머리말: id / cat / no / date / title / sum  (줄마다 `키: 값`), 그 뒤 `---` 한 줄
+          id  = 글의 주소(#a/<id>, a/<id>.html)이자 파일 이름. 한번 정하면 바꾸지 않는다.
+          cat = 글이 들어갈 분류(CATS 의 id), no = 그 분류 안의 번호(1부터 빠짐없이).
+          글을 다른 분류로 옮길 때는 cat 과 no 만 고친다. 그래서 id 앞부분이 분류와 다를 수 있다
+          (시험 분류의 sonder-2, sonder-7, sonder-8 은 특별 주제에서 옮긴 글).
   본문:   ## 큰 제목, ### 작은 제목, 일반 줄 = 문단 하나
           - 목록, 1. 번호 목록, > 강조 상자, de| 독일어 예문, |표|머리줄이 첫 줄
           ref| 참고문헌, link| 이름 | 설명 | 주소, tag| 근거 표시 | 문단
@@ -39,7 +43,8 @@ CATS = [
     ('hoeren', 'Hören', '듣기', '듣기 루틴과 듣기가 늘지 않는 이유'),
     ('sprechen', 'Sprechen', '말하기', '독일에 가지 않고 말하기 실력을 키우는 훈련'),
     ('schreiben', 'Schreiben', '쓰기', '연어, 연결어, 다시 쓰기, 문장의 첫머리'),
-    ('sonder', 'Sonderthemen', '특별 주제', 'ADHD 학습자, 시험 직전 한 달, 나이와 외국어 학습, AI로 공부하기, 절대음감, 과제 미루기, 말하기 시험의 파트너, telc와 Goethe 고르기'),
+    ('pruefungen', 'Prüfungen', '시험', '시험 직전 한 달, 말하기 시험의 파트너, telc와 Goethe 고르기'),
+    ('sonder', 'Sonderthemen', '특별 주제', 'ADHD 학습자, 나이와 외국어 학습, AI로 공부하기, 절대음감, 과제 미루기'),
 ]
 
 
@@ -559,6 +564,11 @@ def build():
     for c, lst in series.items():
         if not lst:
             sys.exit('분류 %s 에 글이 없습니다' % c)
+        # 목차의 번호(no)와 글 머리의 순번(i/n)이 어긋나지 않게, 번호는 1부터 빠짐없이 이어져야 한다
+        nos = [a['no'] for a in lst]
+        if nos != list(range(1, len(lst) + 1)):
+            sys.exit('분류 %s 의 no 가 1부터 차례로 이어지지 않습니다: %s (글: %s)'
+                     % (c, nos, ', '.join(a['id'] for a in lst)))
     # 링크 검사
     for m in arts.values():
         for ref in re.findall(r'\[\[([a-z0-9-]+)\|', m['body']):
