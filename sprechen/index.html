@@ -6178,13 +6178,22 @@ $('#btnAdmin').onclick = showAdmin;
    - 서버가 받지 않은 계정은 다시 보내지 않습니다. 포탈이 확인해 적은 계정(src 'same')이나 여기서 직접 로그인해 적은 계정(src 'manual')이면 로그인 정보에서도 지웁니다.
    - 이 브라우저에 학생의 포탈 로그인이 없으면 로그인 화면에 「학습 포탈에서 로그인」 링크를 보입니다. 포탈에서 로그인하면 이 페이지로 돌아와 바로 열립니다.
    - 로그인 화면 맨 아래의 상태 줄(portalState)은 이 창에서 보이는 포탈 로그인을 그대로 적습니다. 이 부분을 고치면 PORTAL_BUILD도 올립니다. */
-const PORTAL_KEY = 'soda-portal:session', PORTAL_URL = '/SODA-LERNPORTAL/', PORTAL_WAIT = 10000, PORTAL_BUILD = '11-12 b';
+const PORTAL_KEY = 'soda-portal:session', PORTAL_URL = '/SODA-LERNPORTAL/', PORTAL_WAIT = 10000, PORTAL_BUILD = '11-12 c';
 /* busy: 로그인 요청 중, done: 이미 시도한 계정(성공했거나 서버가 받지 않음), last: 마지막 요청 시각, from: 기다리기 시작한 시각, key: 마지막으로 살핀 로그인 정보 */
 const PT = { busy: false, done: '', last: 0, timer: 0, from: 0, key: null };
 function portalSession() {
   try { const s = JSON.parse(localStorage.getItem(PORTAL_KEY) || 'null'); return s && s.v === 1 && s.exp > Date.now() ? s : null; } catch (e) { return null; }
 }
 function portalCreds() { const s = portalSession(); return s && s.sp && s.sp.id && s.sp.pw ? { id: String(s.sp.id), pw: String(s.sp.pw) } : null; }
+/* 포탈 로그인 확인값(학생 로그인일 때만): 학생 파일 id와 그 파일을 여는 키. 로그인 요청에 함께 보냅니다.
+   말하기 서버는 아이디·비밀번호가 맞지 않을 때 이 값으로 포탈 학생 파일이 실제로 열리는지 확인하고,
+   그 학생(파일에 적힌 이름과 같은 아이디)의 말하기 계정이 없으면 만들고 비밀번호가 다르면 방금 보낸 것으로 맞춥니다.
+   로그인하려는 아이디가 이 브라우저의 포탈 아이디와 같을 때만 보냅니다(띄어쓰기·대소문자는 가리지 않음). 다른 아이디로 로그인할 때는 보내지 않습니다 */
+const flatId = v => String(v == null ? '' : v).normalize('NFKC').toLowerCase().replace(/\s+/g, '');
+function portalProof(id) {
+  const s = portalSession();
+  return s && !s.t && s.sid && s.k && flatId(id) && flatId(id) === flatId(s.id) ? { sid: String(s.sid), k: String(s.k) } : {};
+}
 const portalSig = c => c.id + '\u0001' + c.pw;
 /* 포탈에 로그인한 학생이 여기서 직접 로그인하면 그 계정을 포탈 로그인에 적어 둡니다. 포탈에서 로그아웃할 때까지 다시 묻지 않습니다.
    포탈이 남긴 "서버가 받지 않음" 기록(soda-portal:spn)도 지워, 다음 포탈 로그인 때 계정을 다시 확인하게 합니다. */
@@ -6241,7 +6250,7 @@ function portalState() {
   el.textContent = t + ' · 화면 ' + PORTAL_BUILD;
 }
 function loginBusy(on) { ['#inId', '#inPw', '#btnLogin'].forEach(q => { $(q).disabled = on; }); $('#loginForm').classList.toggle('auto', on); }
-const PORTAL_NO = '학습 포탈 아이디와 비밀번호로는 말하기 연습에 로그인되지 않았습니다. 말하기 연습 아이디와 비밀번호를 입력해 주십시오. 한 번 로그인하면 학습 포탈에서 로그아웃할 때까지 다시 묻지 않습니다. 이 안내가 계속 나오면 선생님께 알려 주십시오.';
+const PORTAL_NO = '학습 포탈 로그인으로 말하기 연습에 바로 들어가지 못했습니다. 아래에 비밀번호를 넣어 로그인해 주십시오. 로그인이 되지 않으면 학습 포탈에서 로그아웃한 뒤 다시 로그인해 보고, 그래도 안 되면 선생님께 알려 주십시오.';
 /* 바로 들어갈 계정이 없을 때: 입력 칸을 보이고, 포탈 로그인 상태에 맞는 안내를 붙입니다 */
 function portalIdle() {
   const s = portalSession();
@@ -6294,7 +6303,7 @@ async function portalLogin(force) {
   loginBusy(true);
   portalNote('busy', '학습 포탈 로그인으로 들어가는 중입니다.');
   try {
-    const u = await api('/login', { id: c.id, pw: c.pw });
+    const u = await api('/login', { id: c.id, pw: c.pw, ...portalProof(c.id) });
     PT.done = sig;
     if (S.user) return;
     applyLogin(u, c.pw);
@@ -6330,9 +6339,10 @@ async function onLogin(ev) {
   PT.busy = true;   // 직접 로그인하는 동안에는 포탈 로그인으로 들어가는 처리를 하지 않습니다
   try {
     const idv = $('#inId').value.trim(), pw = $('#inPw').value.trim();   // 붙여 넣을 때 딸려 온 앞뒤 공백은 뺍니다
-    const u = await api('/login', { id: idv, pw });
+    const u = await api('/login', { id: idv, pw, ...portalProof(idv) });
     applyLogin(u, pw);
-    portalRemember(idv, pw);
+    /* 서버가 돌려준 이름이 입력한 아이디와 띄어쓰기·대소문자만 다르면 서버의 표기로 적어 둡니다(다음에 그대로 통하는 표기) */
+    portalRemember(u && u.id && flatId(u.id) === flatId(idv) ? String(u.id) : idv, pw);
     portalNote('', '');
     renderToc();
     flushUnsent();
