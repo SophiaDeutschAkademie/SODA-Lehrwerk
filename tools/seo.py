@@ -88,7 +88,7 @@ PAGES = [
      'kuerze-wuerze/icons/icon-512.png'),
     ('lernmethoden/index.html',
      '독일어 공부법 · SODA Lernmethoden | 소피아 독일어학원',
-     '독일어를 효과적으로 공부하는 방법을 연구를 근거로 정리한 글 35편. 학습 계획, 어휘, 문법, 읽기, 듣기, 말하기, 쓰기와 시험 직전 한 달까지 다룹니다.',
+     '독일어를 효과적으로 공부하는 방법을 연구를 근거로 정리한 글 37편. 학습 계획, 어휘, 문법, 읽기, 듣기, 말하기, 쓰기와 시험 직전 한 달까지 다룹니다.',
      'lernmethoden/icons/icon-512.png'),
 ]
 
@@ -136,17 +136,36 @@ def put(path, lines, title=None):
     open(full, 'w', encoding='utf-8').write(s)
 
 
-def lastmod(path):
+_GIT = {}
+
+
+def _git(*args):
     try:
-        out = subprocess.run(['git', '-C', ROOT, 'log', '-1', '--format=%cs', '--', path],
-                             capture_output=True, text=True).stdout.strip()
+        return subprocess.run(['git', '-C', ROOT] + list(args), capture_output=True, text=True).stdout
     except OSError:
-        out = ''
-    dirty = subprocess.run(['git', '-C', ROOT, 'status', '--porcelain', '--', path],
-                           capture_output=True, text=True).stdout.strip()
-    if out and not dirty:
-        return out
-    return datetime.date.today().isoformat()
+        return ''
+
+
+def _published_lastmod():
+    """이미 올라가 있는 sitemap.xml(HEAD)의 주소별 날짜."""
+    if 'old' not in _GIT:
+        _GIT['old'] = dict(re.findall(r'<loc>([^<]+)</loc><lastmod>([^<]+)</lastmod>', _git('show', 'HEAD:sitemap.xml')))
+    return _GIT['old']
+
+
+def lastmod(path):
+    # 고친 뒤 아직 커밋하지 않은 파일(새 파일 포함)은 오늘 날짜
+    if _git('status', '--porcelain', '--', path).strip():
+        return datetime.date.today().isoformat()
+    # 얕은 복제(git clone --depth 1)에서는 git log 가 모든 파일의 날짜를 마지막 커밋 날짜로 알려 준다.
+    # 그대로 쓰면 바뀌지 않은 페이지의 날짜까지 바뀌므로, 올라가 있는 sitemap.xml 의 날짜를 그대로 둔다.
+    if 'shallow' not in _GIT:
+        _GIT['shallow'] = _git('rev-parse', '--is-shallow-repository').strip() == 'true'
+    if _GIT['shallow']:
+        kept = _published_lastmod().get(url_of(path))
+        if kept:
+            return kept
+    return _git('log', '-1', '--format=%cs', '--', path).strip() or datetime.date.today().isoformat()
 
 
 def main():
