@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script id="soda-theme-js">
+(function(){
+  var KEY='soda-theme', d=document.documentElement, t='dark';
+  try{var s=localStorage.getItem(KEY); if(s==='light'||s==='dark') t=s;}catch(e){}
+  function apply(v){
+    d.setAttribute('data-theme',v); d.style.colorScheme=v;
+    var m=document.querySelector('meta[name="color-scheme"]'); if(m) m.setAttribute('content',v);
+    var c=document.querySelector('meta[name="theme-color"]'); if(c) c.setAttribute('content',v==='dark'?'#14181E':'#FAFAF8');
+  }
+  apply(t);
+  var SUN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var MOON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+  function mount(){
+    if(document.getElementById('soda-theme-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-theme-btn'; b.className='soda-theme-btn';
+    function paint(){ var dk=d.getAttribute('data-theme')==='dark'; b.innerHTML=dk?SUN:MOON; b.setAttribute('aria-pressed',dk?'true':'false'); b.setAttribute('aria-label','다크 모드 '+(dk?'끄기':'켜기')); b.title='다크 모드 '+(dk?'켜짐':'꺼짐')+' · 누르면 '+(dk?'라이트':'다크')+'로 바뀌어요'; }
+    b.addEventListener('click',function(){ var n=d.getAttribute('data-theme')==='dark'?'light':'dark'; apply(n); try{localStorage.setItem(KEY,n);}catch(e){} paint(); });
+    paint(); document.body.appendChild(b);
+    if(!document.getElementById('soda-toc-btn')){ var a=document.createElement('a'); a.id='soda-toc-btn'; a.className='soda-toc-btn'; a.href='../../#inhalt'; a.setAttribute('aria-label','홈(목차)으로 돌아가기'); a.title='홈 · 목차로'; a.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>'; document.body.appendChild(a); }
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>쓰면서 외우면 더 잘 외워질까: 깜지와 예문 짓기 · 독일어 공부법 | 소피아 독일어학원</title>
+<meta name="description" content="보고 베껴 쓰기와 가리고 쓰기의 차이, 예문을 짓는 시점">
+<link rel="canonical" href="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/wortschatz-6.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SODA Lehrwerk · 소피아 독일어학원">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="쓰면서 외우면 더 잘 외워질까: 깜지와 예문 짓기">
+<meta property="og:description" content="보고 베껴 쓰기와 가리고 쓰기의 차이, 예문을 짓는 시점">
+<meta property="og:url" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/wortschatz-6.html">
+<meta property="og:image" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png">
+<meta property="article:published_time" content="2026-11-13">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14181E">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/png" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/pretendard.css">
+<link rel="stylesheet" href="article.css?v=aaa837f8c1">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "쓰면서 외우면 더 잘 외워질까: 깜지와 예문 짓기", "description": "보고 베껴 쓰기와 가리고 쓰기의 차이, 예문을 짓는 시점", "inLanguage": "ko", "datePublished": "2026-11-13", "mainEntityOfPage": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/a/wortschatz-6.html", "image": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/lernmethoden/icons/icon-512.png", "articleSection": "어휘 (Wortschatz)", "author": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/"}, "publisher": {"@type": "Organization", "name": "Sophia Deutsch Akademie (소피아 독일어학원)", "logo": {"@type": "ImageObject", "url": "https://sophiadeutschakademie.github.io/SODA-Lehrwerk/assets/icons/icon-512.png"}}}</script>
+<script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<article class="reader">
+<nav class="crumbs" aria-label="위치"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></nav>
+<p class="a-eb">Wortschatz<i>·</i>어휘 6/6</p>
+<h1>쓰면서 외우면 더 잘 외워질까: 깜지와 예문 짓기</h1>
+<p class="a-sum">보고 베껴 쓰기와 가리고 쓰기의 차이, 예문을 짓는 시점</p>
+<p class="a-meta">약 12분 · 소피아 독일어학원</p>
+<div class="body">
+<p>단어 스무 개를 열 번씩 써서 종이 두 장을 채운 학생이 있습니다. 다음 날 한국어 뜻을 보고 독일어로 써 보라고 하면 떠오르지 않는 단어가 많습니다. 쓴 단어도 관사가 빠져 있거나 철자가 한두 글자 틀립니다.</p>
+<p>종이를 같은 단어로 빽빽하게 채우는 이 방법을 흔히 깜지나 빽빽이라고 부릅니다. 한국에서 학교를 다닌 사람에게는 익숙한 방법입니다. 새 단어마다 예문을 지어 보라는 조언도 자주 듣습니다. 두 방법은 손으로 써야 외워진다는 같은 생각에서 나옵니다.</p>
+<p>쓰기는 단어 공부에 필요합니다. 이 글은 무엇을 보고, 언제, 몇 번 쓸지를 연구 결과에 따라 정합니다. 결론을 먼저 적습니다.</p>
+<ul><li>보면서 베껴 쓰는 연습은 시간이 넉넉할 때 직후의 철자 기억을 높였습니다. 1주 뒤에는 그 차이가 남지 않았습니다.</li><li>답을 가리고 한 번 쓴 단어가 보면서 여러 번 쓴 단어보다 오래 기억되었습니다.</li><li>예문은 단어를 스스로 꺼낼 수 있게 된 뒤에 짓고, 지은 예문은 가리고 다시 씁니다.</li></ul>
+<h2 id="wortschatz-6-깜지는-어떤-연습인가">깜지는 어떤 연습인가</h2>
+<p>깜지에는 세 가지 특징이 있습니다.</p>
+<ul><li><strong>보면서 씁니다.</strong> 단어장이나 바로 윗줄에 답이 보이는 상태에서 씁니다.</li><li><strong>같은 단어를 연달아 씁니다.</strong> 한 단어를 열 번 쓴 뒤에 다음 단어로 넘어갑니다.</li><li><strong>형태만 씁니다.</strong> 쓰는 동안 뜻을 다시 확인하지 않습니다.</li></ul>
+<p>아래 연구들은 보면서 쓰는 연습을 여러 조건에서 실험했습니다.</p>
+<h2 id="wortschatz-6-보면서-따라-쓰기를-실험한-연구">보면서 따라 쓰기를 실험한 연구</h2>
+<h3 id="wortschatz-6-시간이-짧으면-쓰기가-방해가-됩니다">시간이 짧으면 쓰기가 방해가 됩니다</h3>
+<p>미국의 바크로프트(Barcroft)는 2006년에 스페인어를 배우는 대학생 20명에게 처음 보는 명사 24개를 그림과 함께 보여 주었습니다. 단어 하나를 6초씩 두 번 보여 주면서, 절반은 그 시간에 종이에 따라 쓰게 하고 절반은 보기만 하게 했습니다. 그림을 보고 단어를 쓰는 시험을 직후와 이틀 뒤에 보았습니다. 두 번 모두 보기만 한 단어의 점수가 더 높았습니다. 앞서 쓴 단어를 가리게 한 둘째 실험에서도 결과가 같았습니다.</p>
+<p>바크로프트는 2007년에 스페인어를 처음 배우는 학습자를 대상으로 단어 전체를 따라 쓰는 조건, 단어의 일부만 쓰는 조건, 쓰지 않는 조건을 비교했습니다. 쓰지 않은 단어의 점수가 가장 높았습니다.</p>
+<p>바크로프트는 이 결과를 주의의 양으로 설명했습니다. 새 단어를 처음 볼 때 학습자는 낯선 철자를 기억에 넣어야 합니다. 뜻을 떠올리지 않고 글자를 옮겨 적는 일이 끼어들면, 철자를 기억에 넣는 데 쓸 주의가 그만큼 줄어든다는 것입니다.</p>
+<h3 id="wortschatz-6-시간이-넉넉하면-철자-기억에-도움이-됩니다">시간이 넉넉하면 철자 기억에 도움이 됩니다</h3>
+<p>웹(Webb)과 피아세츠키(Piasecki)는 2018년에 조건을 하나 더해 이 실험을 다시 했습니다. 뉴질랜드의 대학 영어 과정에 다니는 학습자 38명이 참가했고, 그 가운데 8명이 한국어 화자였습니다. 그림과 짝지은 가짜 단어 24개를 8개씩 세 조건으로 외웠습니다. 6초 동안 보기만 하는 조건, 6초 동안 따라 쓰는 조건, 시간 제한 없이 따라 쓰는 조건입니다. 셋째 조건에서 학습자는 단어 하나에 평균 19.7초를 썼습니다. 6초의 세 배가 넘습니다.</p>
+<p>아래는 직후 시험의 평균 점수이고, 만점은 8점입니다.</p>
+<div class="tbl c3 fit"><table><thead><tr><th>조건</th><th>철자 고르기</th><th>그림 보고 쓰기</th></tr></thead><tbody><tr><td>6초 동안 보기만</td><td class="nw">4.3</td><td class="nw">1.4</td></tr><tr><td>6초 동안 따라 쓰기</td><td class="nw">4.0</td><td class="nw">1.0</td></tr><tr><td>시간 제한 없이 쓰기</td><td class="nw">6.1</td><td class="nw">2.7</td></tr></tbody></table></div>
+<p>6초 조건에서는 따라 쓴 단어와 보기만 한 단어의 차이가 통계적으로 의미가 없었습니다. 시간 제한 없이 쓴 단어는 두 시험 모두에서 점수가 가장 높았고, 이틀 뒤 시험에서도 그랬습니다. 다만 이 조건에서는 쓰기와 함께 시간도 늘었습니다. 연구진도 이 결과를 쓰기만의 효과라고 할 수는 없다고 적었습니다.</p>
+<h3 id="wortschatz-6-독일어-단어-실험에서-효과는-1주-뒤에-사라졌습니다">독일어 단어 실험에서 효과는 1주 뒤에 사라졌습니다</h3>
+<p>벨기에의 칸드리(Candry) 연구진은 2018년에 독일어를 배우는 대학생 67명에게 독일어 단어 24개를 외우게 했습니다. 학생들의 모국어는 네덜란드어였고 독일어는 A2에서 B1 수준이었습니다. 학생들은 단어와 번역, 예문을 본 뒤 20초 동안 세 가지 가운데 하나를 했습니다. 단어를 손으로 여러 번 쓰기, 소리 내어 여러 번 말하기, 보기만 하기입니다. 번역을 보고 독일어 단어를 떠올리는 시험에서 형태를 정확히 맞힌 비율은 다음과 같습니다.</p>
+<div class="tbl c3 fit"><table><thead><tr><th>연습 방식</th><th>직후</th><th>1주 뒤</th></tr></thead><tbody><tr><td>보기만 하기</td><td class="nw">50%</td><td class="nw">42%</td></tr><tr><td>소리 내어 말하기</td><td class="nw">52%</td><td class="nw">43%</td></tr><tr><td>여러 번 쓰기</td><td class="nw">63%</td><td class="nw">41%</td></tr></tbody></table></div>
+<p>직후에는 쓴 단어가 앞섰고, 1주 뒤에는 세 조건의 차이가 없었습니다. 1주 뒤 시험은 67명 가운데 52명이 보았습니다. 뜻을 기억하는 정도는 직후에도 차이가 없었습니다. 학생들은 20초 동안 단어를 평균 4.8번 썼습니다. 더 여러 번 쓴 학생의 점수가 더 높지는 않았습니다.</p>
+<h2 id="wortschatz-6-베껴-쓰기와-가리고-쓰기는-다른-연습입니다">베껴 쓰기와 가리고 쓰기는 다른 연습입니다</h2>
+<p>칸드리 연구진은 2020년에 베껴 쓰기를 가리고 쓰기와 비교했습니다. 벨기에의 고등학생 179명이 영어 단어 15개를 세 방식으로 5개씩 외웠습니다. 어느 방식에서나 먼저 단어와 번역을 10초 동안 보았고, 이어서 15초 동안 다음 가운데 하나를 했습니다.</p>
+<ul><li><strong>보기만 하기.</strong> 단어와 번역을 계속 봅니다.</li><li><strong>베껴 쓰기.</strong> 영어 단어를 보면서 여러 번 씁니다.</li><li><strong>가리고 쓰기.</strong> 번역만 보고 영어 단어를 한 번 씁니다.</li></ul>
+<p>이 과정을 한 번 더 되풀이한 뒤 시험을 보았습니다. 번역을 보고 영어 단어를 쓰는 시험에서 철자까지 맞힌 비율은 다음과 같습니다.</p>
+<div class="tbl c3 fit"><table><thead><tr><th>연습 방식</th><th>직후</th><th>1주 뒤</th></tr></thead><tbody><tr><td>보기만 하기</td><td class="nw">53%</td><td class="nw">37%</td></tr><tr><td>베껴 쓰기</td><td class="nw">62%</td><td class="nw">27%</td></tr><tr><td>가리고 쓰기</td><td class="nw">78%</td><td class="nw">43%</td></tr></tbody></table></div>
+<p>가리고 쓴 단어가 두 시험 모두에서 가장 잘 기억되었습니다. 베껴 쓴 단어는 직후에는 보기만 한 단어보다 높았고, 1주 뒤에는 보기만 한 단어보다 낮았습니다. 단어를 보고 뜻을 쓰는 시험에서도 베껴 쓴 단어의 점수가 보기만 한 단어보다 낮았습니다.</p>
+<p>가리고 쓰기 조건의 학생들도 손으로 썼습니다. 두 조건의 차이는 쓰기 전에 답이 보였는지입니다. 답을 보면서 쓰면 철자를 스스로 떠올릴 필요가 없습니다. 답을 가리고 쓰면 뜻에서 출발해 철자를 기억에서 꺼내야 합니다. 가리고 쓰기는 <a class="xref" href="allgemein-2.html">일반 공부법 2편</a>에서 다룬 인출 연습이고, <a class="xref" href="wortschatz-5.html">어휘 공부법 5편</a>에서 다룬 한→독 방향입니다.</p>
+<p>쓰는 동안 학습자가 하는 일을 비교하면 이렇습니다.</p>
+<div class="tbl c3 fit"><table><thead><tr><th>묻는 것</th><th>베껴 쓰기</th><th>가리고 쓰기</th></tr></thead><tbody><tr><td>철자를 스스로 떠올리는가</td><td class="nw">아니요</td><td class="nw">예</td></tr><tr><td>관사와 복수형을 떠올리는가</td><td class="nw">아니요</td><td class="nw">예</td></tr><tr><td>뜻에서 출발하는가</td><td class="nw">아니요</td><td class="nw">예</td></tr><tr><td>모르는 곳이 드러나는가</td><td class="nw">아니요</td><td class="nw">예</td></tr></tbody></table></div>
+<p>깜지는 베껴 쓰기를 한 단어에 열 번씩 되풀이하는 방식입니다. 둘째 줄부터는 방금 쓴 윗줄이 보이므로 철자를 떠올릴 일이 더 줄어듭니다. 종이가 채워지면 공부한 양이 눈에 보이지만, 채워진 종이는 쓴 횟수를 보여 줄 뿐입니다. 단어를 꺼낼 수 있는지는 가리고 써 봐야 알 수 있습니다.</p>
+<h2 id="wortschatz-6-새-단어로-예문을-지을-때">새 단어로 예문을 지을 때</h2>
+<h3 id="wortschatz-6-처음-외우는-단계에서는-방해가-될-수-있습니다">처음 외우는 단계에서는 방해가 될 수 있습니다</h3>
+<p>바크로프트는 2004년에 예문 짓기를 실험했습니다. 스페인어 학습자가 새 단어의 절반은 그림과 함께 6초씩 네 번 보았고, 나머지 절반은 단어마다 48초 동안 그 단어를 넣은 문장을 썼습니다. 새 단어를 쓰는 시험에서 문장을 지은 단어의 점수가 더 낮았습니다. 두 조건 모두 단어마다 24초를 한 번에 준 둘째 실험에서는, 철자가 일부만 맞아도 점수를 주는 채점에서만 보기만 한 단어가 앞섰습니다.</p>
+<p>웹은 2005년에 일본인 영어 학습자에게 새 단어를 두 방식으로 익히게 했습니다. 뜻풀이가 달린 예문 세 개를 읽는 방식과 그 단어로 문장 하나를 짓는 방식입니다. 두 방식에 같은 시간을 준 실험에서는 예문을 읽은 쪽의 점수가 높았습니다. 방식마다 필요한 만큼 시간을 준 실험에서는 문장을 지은 쪽의 점수가 높았습니다. 문장 짓기에는 읽기의 두 배쯤 되는 시간이 들었습니다.</p>
+<h3 id="wortschatz-6-시간을-들이면-읽기보다-낫지만-차이는-줄어듭니다">시간을 들이면 읽기보다 낫지만 차이는 줄어듭니다</h3>
+<p>캐나다의 피셰트(Pichette) 연구진은 2012년에 영어를 배우는 프랑스어 화자 203명에게 새 단어 16개를 주었습니다. 8개는 단어마다 문장 세 개를 짓고, 8개는 그 단어가 든 문장 세 개를 읽었습니다. 뜻풀이를 보고 단어를 쓰는 시험에서 문장을 지은 단어의 점수는 직후에 3점 만점에 0.76점, 읽은 단어는 0.47점이었습니다. 1주 뒤에는 0.32점과 0.24점으로 차이가 줄었습니다. 문장을 짓는 데에는 읽기의 세 배쯤 되는 시간이 들었습니다.</p>
+<h3 id="wortschatz-6-예문-한-번보다-여러-번-연습한-단어가-더-남았습니다">예문 한 번보다 여러 번 연습한 단어가 더 남았습니다</h3>
+<p>미국의 폴스(Folse)는 2006년에 대학 영어 과정 학습자 154명에게 새 단어를 세 가지 연습으로 익히게 했습니다. 빈칸 채우기 한 번, 빈칸 채우기 세 번, 그 단어로 문장 짓기 한 번입니다. 예고 없이 본 시험에서 빈칸 채우기를 세 번 한 단어가 나머지 두 조건의 단어보다 훨씬 잘 기억되었습니다. 폴스는 연습에서 단어를 꺼낸 횟수가 중요하다고 결론지었습니다.</p>
+<p>한국 대학생을 대상으로 한 실험도 있습니다. 2007년에 발표된 연구(Son)에서 대학생 98명이 영어 단어 10개를 10분 동안 네 가지 연습 가운데 하나로 익혔습니다. 단어와 뜻 짝 맞추기를 세 번 한 집단과 단어마다 문장을 하나씩 지은 집단의 직후 점수는 30점 만점에 23.9점과 24.5점으로 비슷했습니다. 2주 뒤에는 14.9점과 11.4점이었고, 이 차이는 통계적으로 의미가 없었습니다.</p>
+<p>이 연구들에서 세 가지를 알 수 있습니다. 예문 짓기는 시간을 충분히 들이면 예문을 읽기만 하는 것보다 낫고, 그 대신 시간이 두세 배 듭니다. 단어를 여러 번 다루는 쉬운 연습과 비교하면 결과가 비슷하거나 낮았습니다. 철자를 아직 기억하지 못하는 단어로 곧바로 문장을 지으면 점수가 낮아진 실험이 있습니다.</p>
+<p><a class="xref" href="wortschatz-2.html">어휘 공부법 2편</a>은 단어마다 문형을 적고 자기 예문을 하나 짝지으라고 권했습니다. 문형대로 문장을 만드는 연습은 예문을 지을 때 하게 되므로 그 권고는 그대로입니다. 위 결과는 거기에 순서와 횟수를 더합니다. 예문은 단어의 형태와 뜻을 꺼낼 수 있게 된 뒤에 짓습니다. 지은 예문은 한 번 쓰고 끝내지 않고 가리고 다시 씁니다.</p>
+<h2 id="wortschatz-6-연구가-확인한-것과-확인하지-못한-것">연구가 확인한 것과 확인하지 못한 것</h2>
+<ul><li><strong>확인된 것.</strong> 답을 가리고 쓴 단어가 보면서 여러 번 쓴 단어보다 직후와 1주 뒤 모두 잘 기억되었습니다.</li><li><strong>확인된 것.</strong> 보면서 쓰는 연습은 시간이 넉넉할 때 직후의 철자 기억을 높였습니다. 1주 뒤까지 본 두 실험에서는 그 차이가 남지 않았습니다.</li><li><strong>조건에 따라 달랐던 것.</strong> 6초 안에 따라 쓰게 한 실험에서 쓰기는 점수를 낮추거나 차이를 만들지 못했습니다. 예문 짓기는 같은 시간을 준 실험에서 읽기보다 낮았고, 시간을 더 준 실험에서는 높았습니다.</li><li><strong>확인하지 못한 것.</strong> 같은 단어를 열 번 넘게 쓰는 깜지를 그대로 실험한 연구는 찾지 못했습니다. 실험에서 학습자가 단어 하나를 쓴 시간은 한 번에 6초에서 20초 안팎이었습니다.</li><li><strong>확인하지 못한 것.</strong> 한국어 화자가 독일어 단어를 외우는 실험도 찾지 못했습니다. 독일어 단어 실험의 참가자는 네덜란드어 화자였습니다. 네덜란드어는 독일어와 가까운 언어여서, 한국어 화자에게는 독일어 철자가 이 참가자들보다 더 낯섭니다.</li></ul>
+<h2 id="wortschatz-6-쓰기를-넣은-단어-공부-순서">쓰기를 넣은 단어 공부 순서</h2>
+<p>위 결과에 맞춰 하루 단어 공부의 순서를 짜면 다음과 같습니다.</p>
+<h3 id="wortschatz-6-1-처음-볼-때는-쓰지-않습니다">1. 처음 볼 때는 쓰지 않습니다</h3>
+<p>새 단어를 처음 볼 때는 단어와 예문을 읽고, 관사와 함께 소리 내어 말하고, 뜻을 확인합니다. 이때 서둘러 따라 쓰지 않습니다. 짧은 시간에 쓰기를 넣은 실험에서 쓰기는 도움이 되지 않았습니다.</p>
+<h3 id="wortschatz-6-2-단어장에는-한-번-천천히-적습니다">2. 단어장에는 한 번, 천천히 적습니다</h3>
+<p><a class="xref" href="wortschatz-2.html">어휘 공부법 2편</a>의 방식대로 관사와 복수형, 문형, 예문을 단어장에 적습니다. 시간을 재지 않고 철자를 한 글자씩 확인하며 씁니다. 시간 제한 없이 쓴 단어가 철자 시험에서 점수가 높았던 결과에 해당하는 단계입니다. 같은 단어를 여러 줄 되풀이해 쓰지 않습니다.</p>
+<p>틀리기 쉬운 자리에는 적으면서 밑줄을 긋습니다.</p>
+<div class="tbl c2"><table><thead><tr><th>단어</th><th>확인할 자리</th></tr></thead><tbody><tr><td><span class="de-i" lang="de">vielleicht</span></td><td>엘(l)이 두 개, 그 뒤가 ei</td></tr><tr><td><span class="de-i" lang="de">die Entschuldigung</span></td><td>Ent의 t, 그 뒤에 sch</td></tr><tr><td><span class="de-i" lang="de">das Frühstück</span></td><td>ü가 두 번, 첫 ü 뒤에 h</td></tr><tr><td><span class="de-i" lang="de">nämlich</span></td><td>ä 뒤에 h가 없음</td></tr><tr><td><span class="de-i" lang="de">der Schlüssel</span></td><td>ü, 그리고 s가 두 개</td></tr></tbody></table></div>
+<h3 id="wortschatz-6-3-독일어를-가리고-한-번-씁니다">3. 독일어를 가리고 한 번 씁니다</h3>
+<p>독일어 쪽을 가리고 한국어 뜻만 보면서 씁니다. 명사는 관사와 복수형까지, 동사는 문형까지 씁니다. 떠오르지 않는 단어는 비워 두고 넘어갑니다. 한 단어를 한 번만 씁니다.</p>
+<h3 id="wortschatz-6-4-단어장과-대조하고-틀린-단어만-다시-가리고-씁니다">4. 단어장과 대조하고, 틀린 단어만 다시 가리고 씁니다</h3>
+<p>다 쓴 뒤에 단어장과 대조합니다. 틀린 글자와 빠진 관사에 표시하고 바른 형태를 한 번 봅니다. 틀린 단어는 다른 단어 몇 개를 쓴 뒤에 다시 가리고 씁니다. 모두 맞힐 때까지 이 과정을 되풀이합니다.</p>
+<p>틀린 단어를 보면서 열 번 쓰지 않습니다. 철자가 두 번 넘게 틀리는 단어만 보면서 천천히 두세 번 쓰고, 틀리는 자리를 확인한 다음 다시 가리고 씁니다.</p>
+<h3 id="wortschatz-6-5-예문은-가리고-쓸-수-있게-된-단어로-짓습니다">5. 예문은 가리고 쓸 수 있게 된 단어로 짓습니다</h3>
+<p>가리고 쓸 수 있게 된 단어 가운데 말하고 쓸 때 쓸 단어를 골라, 문형에 맞춰 자기 문장을 하나 짓습니다.</p>
+<div class="de" lang="de"><p>sich um jn/etw kümmern</p><p>Ich kümmere mich am Wochenende um meine Großmutter.</p></div>
+<p>처음 보는 단어 스무 개로 곧바로 문장 스무 개를 짓지 않습니다. 예문 짓기에는 시간이 많이 들므로 하루에 몇 단어로 줄입니다.</p>
+<h3 id="wortschatz-6-6-다음-날-한국어-뜻만-보고-단어와-예문을-다시-씁니다">6. 다음 날 한국어 뜻만 보고 단어와 예문을 다시 씁니다</h3>
+<p>지은 예문 옆에 한국어 뜻을 적어 둡니다. 다음 날 한국어만 보고 단어와 예문을 다시 씁니다. 예문을 한 번 지은 단어보다 여러 번 연습한 단어가 더 잘 기억된 결과를 따른 순서입니다. 다음 날 아침에 꺼내는 이유는 <a class="xref" href="wortschatz-3.html">어휘 공부법 3편</a>에, 문장을 옮겨 쓰고 원래 문장과 비교하는 방법은 <a class="xref" href="grammatik-4.html">문법 공부법 4편</a>에 있습니다.</p>
+<h2 id="wortschatz-6-vokalab과-diktattraining에서는-이렇게-씁니다">Vokalab과 Diktattraining에서는 이렇게 씁니다</h2>
+<p>Vokalab의 주관식 한→독 테스트는 한국어 뜻을 보고 독일어 단어를 입력하는 가리고 쓰기입니다. 명사는 관사까지 입력해야 정답입니다. 위 순서의 3번과 4번을 이 테스트로 할 수 있습니다. 손으로 쓸 때와 자판으로 칠 때의 차이는 위 연구들이 다루지 않았습니다.</p>
+<p>Diktattraining은 문장을 듣고 받아쓰는 훈련입니다. 답을 보지 않고 소리에서 철자를 떠올려 씁니다. 틀린 곳을 어미, 관사, 철자, 빠진 단어로 나눠 확인하고 틀린 문장을 다시 씁니다.</p>
+<div class="links"><a class="lk" href="../../vokalab/" target="_blank" rel="noopener noreferrer"><span class="lk-t">Vokalab</span><span class="lk-d">A1~C1 단어장, 카드와 네 가지 테스트</span><span class="lk-u">../vokalab</span></a><a class="lk" href="../../diktattraining/" target="_blank" rel="noopener noreferrer"><span class="lk-t">Diktattraining</span><span class="lk-d">받아쓰기 훈련, A1–C1 문장 563개</span><span class="lk-u">../diktattraining</span></a></div>
+<h2 id="wortschatz-6-정리">정리</h2>
+<ol><li>6초 안에 따라 쓰게 한 실험에서 쓴 단어는 보기만 한 단어보다 덜 기억되거나 차이가 없었습니다.</li><li>시간이 넉넉할 때 보면서 쓰는 연습은 직후의 철자 기억을 높였고, 1주 뒤에는 그 차이가 남지 않았습니다.</li><li>번역만 보고 한 번 쓴 단어가 보면서 여러 번 쓴 단어보다 직후와 1주 뒤 모두 잘 기억되었습니다.</li><li>예문 짓기는 시간을 들이면 읽기보다 낫지만 시간이 두세 배 들고, 처음 외우는 단계에서는 방해가 될 수 있습니다.</li><li>단어장에는 한 번 천천히 적고, 그 뒤에는 독일어를 가리고 씁니다. 틀린 단어만 다시 가리고 씁니다.</li><li>예문은 가리고 쓸 수 있게 된 단어로 짓고, 다음 날 한국어 뜻만 보고 다시 씁니다.</li></ol>
+</div>
+<nav class="pn" aria-label="같은 분류의 글"><a class="pv" href="wortschatz-5.html"><small>← 이전 글</small><b>독→한 카드와 한→독 카드는 다른 실력을 만듭니다</b></a></nav>
+<aside class="more" aria-label="다른 학습 자료"><b>SODA Lehrwerk</b><p>소피아 독일어학원은 독일어 공부법 글 40편과 함께 문법 교재, 독해·듣기·쓰기·말하기 훈련, 단어장, Goethe·telc 모의고사를 무료로 공개합니다.</p><ul><li><a href="../../grammatik/">문법 교재</a></li><li><a href="../../lesetraining/">독해 훈련</a></li><li><a href="../../hoertraining/">듣기 훈련</a></li><li><a href="../../schreibtraining/">쓰기 훈련</a></li><li><a href="../../sprechtraining/">말하기 훈련</a></li><li><a href="../../vokalab/">단어장 A1–C1</a></li><li><a href="../../#inhalt">전체 목차</a></li></ul></aside>
+<p class="a-end"><a class="pill" href="../#inhalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>독일어 공부법 목록</a></p>
+<p class="a-note">소피아 독일어학원 · 독일어 공부법</p>
+</article>
+<script>
+(function(){
+  var au=null, cur=null;
+  function stop(){if(au){au.pause();au=null;} if(cur){cur.classList.remove('on');cur=null;}}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.snd'); if(!b)return;
+    var same=b===cur; stop(); if(same)return;
+    au=new Audio(b.getAttribute('data-snd')); cur=b; b.classList.add('on');
+    au.addEventListener('ended',stop); au.addEventListener('error',stop);
+    var pr=au.play(); if(pr&&pr.catch)pr.catch(stop);
+  });
+})();
+</script>
+</body>
+</html>

@@ -88,7 +88,7 @@ PAGES = [
      'kuerze-wuerze/icons/icon-512.png'),
     ('lernmethoden/index.html',
      '독일어 공부법 · SODA Lernmethoden | 소피아 독일어학원',
-     '독일어를 효과적으로 공부하는 방법을 연구를 근거로 정리한 글 39편. 학습 계획, 어휘, 문법, 읽기, 듣기, 말하기, 쓰기와 시험 직전 한 달까지 다룹니다.',
+     '독일어를 효과적으로 공부하는 방법을 연구를 근거로 정리한 글 40편. 학습 계획, 어휘, 문법, 읽기, 듣기, 말하기, 쓰기와 시험 직전 한 달까지 다룹니다.',
      'lernmethoden/icons/icon-512.png'),
 ]
 
