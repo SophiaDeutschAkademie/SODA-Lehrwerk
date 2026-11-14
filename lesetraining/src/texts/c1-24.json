@@ -44,11 +44,11 @@
       "type": "mc",
       "kind": "gist",
       "q": "Worum geht es in dem Sammelband?",
-      "options": ["um Erfahrungen Erwachsener beim Lernen des Deutschen", "um Übungen zu Grammatik und Wortschatz für Erwachsene", "um die Geschichte einer Volkshochschule in fünf Jahren", "um Reiseberichte aus den Herkunftsländern der Autoren"],
+      "options": ["um den Moment, in dem eine neue Sprache vertraut wird", "um Übungen zu Grammatik und Wortschatz für Erwachsene", "um die Geschichte einer Volkshochschule in fünf Jahren", "um Reiseberichte aus den Herkunftsländern der Autoren"],
       "answer": 0,
-      "evidence": "Es versammelt Texte von vierundzwanzig Frauen und Männern, die als Erwachsene Deutsch gelernt haben",
-      "pairs": [["die als Erwachsene Deutsch gelernt haben", "Erfahrungen Erwachsener beim Lernen des Deutschen"]],
-      "explain": "이 책은 어른이 되어 독일어를 배운 스물네 사람의 글을 모았고, 낯선 언어가 처음으로 자기 것이 된 순간을 다뤄요. 문법과 어휘 연습은 엮은이가 처음에 준비했다가 내려놓은 것이에요. 시민대학은 모임이 열린 장소일 뿐이에요."
+      "evidence": "fragt sie nach dem Augenblick, in dem die fremde Sprache zum ersten Mal ihnen gehörte",
+      "pairs": [["in dem die fremde Sprache zum ersten Mal ihnen gehörte", "in dem eine neue Sprache vertraut wird"]],
+      "explain": "이 책은 어른이 되어 독일어를 배운 스물네 사람의 글을 모았고, 낯선 언어가 처음으로 자기 것이 된 순간을 다뤄요. '자기 것이 되다'를 '친숙해지다'로 바꿔 말했어요. 문법과 어휘 연습은 엮은이가 처음에 준비했다가 내려놓은 것이에요. 시민대학은 모임이 열린 장소일 뿐이에요."
     },
     {
       "type": "rfn",

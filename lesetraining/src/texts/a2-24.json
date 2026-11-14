@@ -64,7 +64,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "Wer hatte die Idee für den Bären?",
-      "options": ["ein Händler aus Amerika", "Margarete Steiff selbst", "ein Verwandter von ihr"],
+      "options": ["ein Käufer aus Amerika", "Margarete Steiff selbst", "ein Verwandter von ihr"],
       "answer": 2,
       "evidence": "1902 zeichnete ihr Neffe Richard einen Bären mit beweglichen Armen und Beinen.",
       "pairs": [["ihr Neffe Richard", "ein Verwandter von ihr"]],
@@ -114,10 +114,10 @@
           "parts": [["Trotzdem", "접속부사"], ["ging", "동사"], ["sie", "주어"], ["zur Schule", "부사어(장소)"]]
         },
         {
-          "de": "Zuerst wollte ihn niemand haben.",
-          "ko": "처음에는 아무도 이 곰을 사려고 하지 않았어요.",
-          "mark": ["wollte"],
-          "parts": [["Zuerst", "부사어(시간)"], ["wollte", "동사"], ["ihn", "4격 목적어"], ["niemand", "주어"], ["haben.", "동사(끝)"]]
+          "de": "Dort kam Margarete Steiff 1847 zur Welt.",
+          "ko": "마르가레테 슈타이프는 1847년에 그곳에서 태어났어요.",
+          "mark": ["kam"],
+          "parts": [["Dort", "부사어(장소)"], ["kam", "동사"], ["Margarete Steiff", "주어"], ["1847", "부사어(시간)"], ["zur Welt.", "기타"]]
         },
         {
           "de": "Margarete Steiff starb 1909.",

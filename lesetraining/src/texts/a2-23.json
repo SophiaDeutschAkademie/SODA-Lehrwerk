@@ -83,7 +83,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "Wann bekommt man die meisten Punkte für ein Wort?",
-      "options": ["Zwei Spieler schreiben das Gleiche.", "Die Spalte ist bei den anderen leer.", "Kein anderer Spieler hat dieses Wort."],
+      "options": ["Zwei Spieler schreiben das Gleiche.", "Die Spalte ist bei den anderen leer.", "Die anderen haben dort andere Wörter."],
       "answer": 1,
       "evidence": "Steht in einer Spalte nur bei dir ein Wort?",
       "pairs": [["nur bei dir ein Wort", "bei den anderen leer"]],
@@ -114,7 +114,7 @@
     {
       "title": "du 명령형",
       "term": "Imperativ (du-Form)",
-      "explain": "du에게 말하는 명령형은 현재형 du 형태에서 du와 어미 -st를 빼서 만들어요. du schreibst → Schreib! 현재형에서 e가 i나 ie로 바뀌는 동사는 명령형에서도 바뀌어요: du gibst → Gib!, du liest → Lies!, du nimmst → Nimm! sein의 명령형은 Sei!예요.",
+      "explain": "du에게 말하는 명령형은 현재형 du 형태에서 du와 어미 -st를 빼서 만들어요. du schreibst → Schreib! 현재형에서 e가 i나 ie로 바뀌는 동사는 명령형에서도 바뀌어요: du gibst → Gib!, du nimmst → Nimm! 어간이 s로 끝나는 lesen은 du liest에서 -t만 떼어 Lies!가 돼요. sein의 명령형은 Sei!예요.",
       "pattern": "동사 어간 + … ! · 분리동사: Lies … vor!",
       "examples": [
         {

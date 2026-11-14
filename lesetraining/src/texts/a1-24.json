@@ -124,7 +124,7 @@
     {
       "title": "분량 표현",
       "term": "Mengenangaben (Maß + Nomen ohne Artikel)",
-      "explain": "분량은 숫자 + 단위 + 명사 순서로 말해요. 단위 뒤에 오는 명사에는 관사를 붙이지 않아요. Gramm, Liter, Kilo는 숫자가 2 이상이어도 복수형으로 바꾸지 않아요.",
+      "explain": "분량은 숫자 + 단위 + 명사 순서로 말해요. 단위 뒤에 오는 명사에는 관사를 붙이지 않아요. Gramm, Liter, Kilo는 숫자가 2 이상이어도 복수형으로 바꾸지 않아요. ein wenig, etwas처럼 '조금'을 뜻하는 말 뒤에도 관사 없이 명사가 와요.",
       "pattern": "숫자 + Gramm/Liter/Prise + 명사",
       "examples": [
         {
