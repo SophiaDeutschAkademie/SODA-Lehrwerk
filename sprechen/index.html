@@ -357,6 +357,15 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 @media (max-width:520px){.exam-card.pick .mrow{padding:12px 14px}.card.prep>summary{padding:12px 14px}.card.prep>.check-list,.card.prep>.row{padding:0 14px 14px}}
 
 .mailnote{margin:10px 0 0;font-size:13px;color:var(--muted)}
+.recbox{border-top:1px solid var(--line);padding-top:14px}
+.recbox:empty{display:none}
+.recbox h2{margin:0 0 6px;font-size:16px}
+.recbox audio{display:block;width:100%;margin:8px 0 10px}
+.recbox a.primary{display:inline-block;border-radius:9px;padding:10px 16px;border:1px solid var(--acc);font-weight:600;background:var(--acc);color:var(--on-acc);text-decoration:none}
+.recdot{display:inline-flex;align-items:center;gap:6px;margin-left:10px;font-size:12px;font-weight:700;color:var(--bad);letter-spacing:0}
+.recdot::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--bad);animation:recblink 1.2s ease-in-out infinite}
+.recdot[hidden]{display:none}
+@keyframes recblink{50%{opacity:.25}}
 .mailnote:empty{display:none}
 .mailnote.ok{color:var(--ok)}
 .mailnote.fail{color:var(--bad)}
@@ -580,7 +589,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 <section id="v-exam" class="view" hidden>
   <div class="statusbar">
     <div>
-      <div class="eyebrow" id="exTeil"></div>
+      <div class="eyebrow"><span id="exTeil"></span><span class="recdot" id="exRec" hidden>녹음 중</span></div>
       <div class="stage" id="exStage">연결 중</div>
     </div>
     <div class="timer-box">
@@ -629,6 +638,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     <div id="afMetrics"></div>
     <div class="row" id="afButtons"></div>
     <p id="afMail" class="mailnote" role="status"></p>
+    <div id="afRec" class="recbox"></div>
   </div>
   <div class="card">
     <h2>자동 점검</h2>
@@ -4953,6 +4963,168 @@ const AudioIO = {
   get speaking() { return !!this.ctx && this.nextTime > this.ctx.currentTime + 0.03; }
 };
 
+/* ------------------------------------------------------------------ 대화 녹음
+   - 대화를 녹음하는 연습: REC_ON(ex)가 참인 연습(SODA GRAMMATIK KURS 과제의 말하기 연습, ueb-a1-NN).
+   - 마이크 소리와 상대(파트너) 목소리를 한 파일로 녹음합니다. 녹음은 서버로 보내지 않고 이 기기(IndexedDB 'soda-sprechen-rec')에만 저장합니다.
+   - 연습이 끝난 화면(v-after)에서 다시 듣고 파일로 내려받습니다. 같은 연습의 기록 보기에서도 다시 열립니다.
+   - 저장 기간은 REC_KEEP_DAYS일입니다. 지난 녹음은 다음 녹음을 저장할 때 지웁니다. */
+const REC_ON = ex => !!ex && /^ueb-a1-\d\d$/.test(ex.id);
+const REC_KEEP_DAYS = 60;
+const Rec = {
+  mr: null, dest: null, chunks: [], type: '', t0: 0, pending: null,
+  supported() { return !!(window.MediaRecorder && AudioIO.ctx && AudioIO.ctx.createMediaStreamDestination); },
+  start() {
+    this.cancel();
+    if (!this.supported() || !AudioIO.src || !AudioIO.out) return false;
+    try {
+      const dest = AudioIO.ctx.createMediaStreamDestination();
+      AudioIO.src.connect(dest); AudioIO.out.connect(dest);
+      this.dest = dest;
+      const ok = t => { try { return MediaRecorder.isTypeSupported(t); } catch (e) { return false; } };
+      const type = ['audio/webm;codecs=opus', 'audio/mp4', 'audio/webm', 'audio/ogg;codecs=opus'].find(ok) || '';
+      const opt = { audioBitsPerSecond: 48000 }; if (type) opt.mimeType = type;
+      let mr; try { mr = new MediaRecorder(dest.stream, opt); } catch (e) { mr = new MediaRecorder(dest.stream); }
+      this.chunks = [];
+      mr.ondataavailable = e => { if (e.data && e.data.size) this.chunks.push(e.data); };
+      mr.start(1000);
+      this.mr = mr; this.type = mr.mimeType || type || 'audio/webm'; this.t0 = performance.now();
+      return true;
+    } catch (e) { this.cancel(); return false; }
+  },
+  _unwire() {
+    const d = this.dest; this.dest = null; if (!d) return;
+    try { AudioIO.src.disconnect(d); } catch (e) { }
+    try { AudioIO.out.disconnect(d); } catch (e) { }
+  },
+  stop() {
+    const mr = this.mr; this.mr = null;
+    if (!mr) return Promise.resolve(null);
+    const ms = performance.now() - this.t0;
+    return new Promise(res => {
+      let fin = false;
+      const done = () => {
+        if (fin) return; fin = true;
+        this._unwire();
+        const b = this.chunks.length ? new Blob(this.chunks, { type: this.type.split(';')[0] }) : null;
+        this.chunks = [];
+        if (!b || b.size <= 2000) return res(null);
+        recToWav(b).then(w => res(w || { blob: b, type: b.type, ms: Math.round(ms) }));
+      };
+      if (mr.state === 'inactive') return done();
+      mr.onstop = () => setTimeout(done, 0);
+      try { mr.stop(); } catch (e) { done(); }
+      setTimeout(done, 4000);
+    });
+  },
+  cancel() {
+    const mr = this.mr; this.mr = null;
+    if (mr) { mr.ondataavailable = null; mr.onstop = null; if (mr.state !== 'inactive') { try { mr.stop(); } catch (e) { } } }
+    this.chunks = []; this._unwire();
+  }
+};
+/* 브라우저가 만든 녹음(webm·mp4)은 길이 정보가 없어 재생 막대가 움직이지 않는 경우가 있어, WAV(16 kHz·모노)로 바꿔 저장합니다. 바꾸지 못하면 원래 파일을 씁니다. */
+async function recToWav(blob) {
+  try {
+    const OAC = window.OfflineAudioContext || window.webkitOfflineAudioContext; if (!OAC) return null;
+    const rate = 16000, dc = new OAC(1, rate, rate);
+    const raw = await blob.arrayBuffer();
+    const buf = await new Promise((ok, no) => { const p = dc.decodeAudioData(raw, ok, no); if (p && p.then) p.then(ok, no); });
+    const n = buf.length, chs = buf.numberOfChannels, ch = [];
+    for (let c = 0; c < chs; c++) ch.push(buf.getChannelData(c));
+    const out = new DataView(new ArrayBuffer(44 + n * 2));
+    const w = (o, str) => { for (let i = 0; i < str.length; i++) out.setUint8(o + i, str.charCodeAt(i)); };
+    w(0, 'RIFF'); out.setUint32(4, 36 + n * 2, true); w(8, 'WAVE'); w(12, 'fmt ');
+    out.setUint32(16, 16, true); out.setUint16(20, 1, true); out.setUint16(22, 1, true);
+    out.setUint32(24, buf.sampleRate, true); out.setUint32(28, buf.sampleRate * 2, true); out.setUint16(32, 2, true); out.setUint16(34, 16, true);
+    w(36, 'data'); out.setUint32(40, n * 2, true);
+    for (let i = 0, o = 44; i < n; i++, o += 2) {
+      let v = 0; for (let c = 0; c < chs; c++) v += ch[c][i]; v = Math.max(-1, Math.min(1, v / chs));
+      out.setInt16(o, v < 0 ? v * 0x8000 : v * 0x7fff, true);
+    }
+    return { blob: new Blob([out.buffer], { type: 'audio/wav' }), type: 'audio/wav', ms: Math.round(n / buf.sampleRate * 1000) };
+  } catch (e) { return null; }
+}
+const RecStore = {
+  db: null, mem: new Map(),
+  key: (id, exId, t, no) => [id, exId, t, no].join('|'),
+  open() {
+    if (!this.db) this.db = new Promise(res => {
+      try {
+        if (!window.indexedDB) return res(null);
+        const q = indexedDB.open('soda-sprechen-rec', 1);
+        q.onupgradeneeded = () => { try { q.result.createObjectStore('rec'); } catch (e) { } };
+        q.onsuccess = () => res(q.result);
+        q.onerror = () => res(null);
+        q.onblocked = () => res(null);
+      } catch (e) { res(null); }
+    });
+    return this.db;
+  },
+  async _tx(mode, fn) {
+    const db = await this.open(); if (!db) return null;
+    return new Promise(res => {
+      try {
+        const tx = db.transaction('rec', mode), st = tx.objectStore('rec');
+        const out = fn(st);
+        tx.oncomplete = () => res(out && 'result' in out ? out.result : true);
+        tx.onerror = tx.onabort = () => res(null);
+      } catch (e) { res(null); }
+    });
+  },
+  async put(k, v) {
+    this.mem.set(k, v);
+    const ok = await this._tx('readwrite', st => st.put(v, k));
+    this.prune();
+    return !!ok;
+  },
+  async get(k) {
+    if (this.mem.has(k)) return this.mem.get(k);
+    const v = await this._tx('readonly', st => st.get(k));
+    return v || null;
+  },
+  async prune() {
+    const old = Date.now() - REC_KEEP_DAYS * 864e5;
+    await this._tx('readwrite', st => {
+      const c = st.openCursor();
+      c.onsuccess = () => { const cur = c.result; if (!cur) return; if (!cur.value || !(cur.value.at > old)) cur.delete(); cur.continue(); };
+      return null;
+    });
+  }
+};
+const recExt = type => /wav/.test(type) ? 'wav' : /mp4|m4a|aac/.test(type) ? 'm4a' : /ogg/.test(type) ? 'ogg' : 'webm';
+function recFileName(ex, a, type) {
+  const d = new Date(a.startedAt || Date.now()), p = n => String(n).padStart(2, '0');
+  const day = d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + ' ' + p(d.getHours()) + p(d.getMinutes());
+  const who = String((S.user && S.user.id) || '').replace(/[\\/:*?"<>|_]+/g, ' ').trim();
+  const base = 'SODA GRAMMATIK ' + (ex.rowLabel || ex.name) + ' 말하기 연습 ' + a.no + '회' + (who ? ' ' + who : '') + ' ' + day;
+  return base.replace(/[\\/:*?"<>|_]+/g, ' ').replace(/\s+/g, ' ').trim() + '.' + recExt(type);
+}
+let recUrl = null;
+async function recPaint(ex, t, a) {
+  const box = $('#afRec'); if (!box) return;
+  const my = recPaint.n = (recPaint.n || 0) + 1;
+  if (recUrl) { URL.revokeObjectURL(recUrl); recUrl = null; }
+  box.innerHTML = '';
+  if (!REC_ON(ex) || !a || !a.recorded) {
+    if (REC_ON(ex) && a && a.recorded === false) box.innerHTML = '<h2>대화 녹음</h2><p class="muted small">이 브라우저에서는 녹음 기능을 쓸 수 없어 이번 연습은 녹음되지 않았습니다. 최신 Chrome 또는 Safari에서 연습하면 녹음됩니다.</p>';
+    return;
+  }
+  const k = RecStore.key(S.user.id, ex.id, t, a.no);
+  box.innerHTML = '<h2>대화 녹음</h2><p class="muted small">녹음 파일을 준비하고 있습니다.</p>';
+  if (Rec.pending && Rec.pending.k === k) { try { await Rec.pending.p; } catch (e) { } }
+  const v = await RecStore.get(k);
+  if (my !== recPaint.n || !S.cur || S.cur.ex !== ex || S.cur.t !== t || $('#v-after').hidden) return;
+  if (!v || !v.blob) { box.innerHTML = '<h2>대화 녹음</h2><p class="muted small">이 기기에 이 연습의 녹음 파일이 없습니다. 녹음은 연습한 기기에만 ' + REC_KEEP_DAYS + '일 동안 남습니다.</p>'; return; }
+  recUrl = URL.createObjectURL(v.blob);
+  const name = recFileName(ex, a, v.type || v.blob.type);
+  box.innerHTML = '<h2>대화 녹음</h2>' +
+    '<p class="muted small">나와 ' + esc(a.partnerName || '파트너') + '의 대화가 녹음된 파일입니다' + (v.ms ? ' (' + fmt(v.ms / 1000) + ')' : '') + '. 녹음은 이 기기에만 ' + REC_KEEP_DAYS + '일 동안 남고 자동으로 제출되지 않습니다. 필요하면 내려받아 보관하십시오.</p>' +
+    '<audio controls preload="metadata"></audio>' +
+    '<a class="primary" download></a>';
+  $('audio', box).src = recUrl;
+  const dl = $('a', box); dl.href = recUrl; dl.download = name; dl.textContent = '녹음 파일 내려받기';
+}
+
 function i16ToB64(i16) {
   const u = new Uint8Array(i16.buffer, i16.byteOffset, i16.byteLength);
   let s = ''; for (let i = 0; i < u.length; i += 0x8000) s += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000));
@@ -5353,6 +5525,7 @@ function startPrep(ex, tn) {
   clearInterval(S.prepTimer); $('#btnPrepTimer').disabled = false;
   const who = ex.hidden ? '시작하면 파트너가 먼저 인사하며 대화를 이끌어 갑니다. 진행자는 없습니다. ' + SLOW_HINT : T.askStarter ? '시작하면 시험관이 먼저 누가 시작할지 묻습니다.' : (T.kind === 'monolog' ? '시작하면 시험관의 안내 뒤에 바로 이야기를 시작합니다.' : '시작하면 시험관의 안내 뒤에 파트너가 먼저 발표합니다.');
   $('#timeInfo').innerHTML = '시험 시간 <b>' + fmt(tm.official) + '</b>에 연장 시간 <b>' + fmt(tm.extra) + '</b>이 더해져 최대 <b>' + fmt(tm.official + tm.extra) + '</b>입니다. ' + (ex.hidden ? '시간이 되면 대화가 끝납니다. ' : '시간이 되면 시험관이 안내합니다. ') + who;
+  if (REC_ON(ex)) $('#prepSendNote').textContent += ' 연습하는 동안 나와 파트너의 대화가 녹음됩니다. 녹음은 이 기기에만 저장되며, 연습이 끝난 화면에서 다시 듣고 파일로 내려받을 수 있습니다.';
   $('#startErr').textContent = '';
   show('v-prep');
 }
@@ -5595,6 +5768,8 @@ async function startExam() {
   $('#btnFinish').disabled = true;
   setStage('연결 중입니다', '');
   show('v-exam');
+  A.recorded = REC_ON(ex) ? Rec.start() : undefined;
+  $('#exRec').hidden = !A.recorded;
   try {
     // 1) 시험관 안내 (챕터 연습은 진행자 없이 파트너가 인사하며 먼저 시작합니다)
     const first = fill(T.intro, A);
@@ -5634,8 +5809,9 @@ async function startExam() {
       // 대화가 시작된 뒤 끊긴 경우: 60초 이상 진행했으면 한 번 사용한 것으로 칩니다.
       const dur = ((A.dialogEnd || performance.now()) - A.dialogStart) / 1000;
       if (dur >= 60 || e.message === 'abort') finalizeAttempt(e.message === 'abort' ? 'abort' : 'disconnect');
-      else { const back = await refund(ex, t); renderToc(); alert('연결이 끊어졌습니다. ' + (back ? '이번 시도는 횟수에 넣지 않았습니다.' : '횟수를 돌려받지 못했습니다. 선생님께 알려 주십시오.')); }
+      else { Rec.cancel(); $('#exRec').hidden = true; const back = await refund(ex, t); renderToc(); alert('연결이 끊어졌습니다. ' + (back ? '이번 시도는 횟수에 넣지 않았습니다.' : '횟수를 돌려받지 못했습니다. 선생님께 알려 주십시오.')); }
     } else {
+      Rec.cancel(); $('#exRec').hidden = true;
       const msg = e.message === 'abort' ? '시험을 시작하지 않았습니다.' : e.message;
       const back = await refund(ex, t);
       renderToc();
@@ -5663,6 +5839,14 @@ function finalizeAttempt(reason) {
     followQs: A.followQs, startedAt: A.started, durationSec: Math.round(dur), endReason: reason, turns: A.turns,
     official: A.timing.official, extra: A.timing.extra
   };
+  if (A.recorded !== undefined) {
+    rec.recorded = !!A.recorded;
+    $('#exRec').hidden = true;
+    if (A.recorded) {
+      const k = RecStore.key(S.user.id, ex.id, t, A.no);
+      Rec.pending = { k, p: Rec.stop().then(r => r ? RecStore.put(k, { blob: r.blob, type: r.type, ms: r.ms, at: Date.now() }) : null) };
+    }
+  }
   rec.metrics = analyze(A.T, rec, A.studentItem);
   const tr = recOf(ex, t); delete tr.pending; tr.attempts.push(rec);
   Store.save(S.rec);
@@ -5815,6 +5999,7 @@ function showAfter(ex, t, idx) {
   mk('Teil 목록으로', 'ghost', renderToc);
   $('#afChecks').innerHTML = checksHtml(m.checks);
   $('#afTranscript').innerHTML = transcriptHtml(a.turns, '나');
+  recPaint(ex, t, a);
   const mm = $('#afMail'); mm.className = 'mailnote'; mm.textContent = '';
   if (ex.hidden) { if (hasSpeech(a)) { saveUeb(ex); setUebNote('#afMail'); } }
   else if (a.sent === 'legacy' || !hasSpeech(a)) { /* 보낼 기록이 아님 */ }
