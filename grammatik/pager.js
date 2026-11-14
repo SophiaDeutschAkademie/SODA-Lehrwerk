@@ -49,7 +49,7 @@
   if (TRIAL && !INFO && getView() === null) return;
 
   /* 확인 화면에 보여 줄 스크립트 번호(올릴 때마다 바꿉니다)와 실패 기록 */
-  var BUILD = '2026-11-14.L2', KEY_ERR = 'sda-lehrwerk-grammatik-pg-err', lastErr = null;
+  var BUILD = '2026-11-15.L4', KEY_ERR = 'sda-lehrwerk-grammatik-pg-err', lastErr = null;
   function note(where, err) {
     try {
       var m = err && (err.message || err.name) ? (err.name || 'Error') + ': ' + (err.message || '') : String(err);
@@ -113,8 +113,9 @@
     /* 페이지를 넘긴 뒤에는, 손가락이나 마우스를 다시 움직일 때까지 용어 풀이를 띄우지 않습니다(터치 화면은 마지막에 누른 낱말을 계속 '올려 둔' 것으로 봅니다). */
     + '.pg-stage.pg-notip .gt .gt-tip{display:none!important}'
     + '.pg-leaf.pg-m .qe,.pg-body .qi.pg-x .qe{display:block!important}'
+    + '@media(max-width:640px){html:not(.pg-on) .qg[data-sq="2"]{grid-template-columns:repeat(2,minmax(0,1fr))}html:not(.pg-on) .qg[data-sq="1"]{grid-template-columns:minmax(0,1fr)}}'
     /* 문제(바로 확인·복습): 한 페이지에 여러 문제가 들어가도록 촘촘하게. 선지는 길이에 따라 한 줄에 4개·2개·1개로 놓습니다(quizFit이 정함). */
-    + '.pg-body .quiz-block{gap:8px;margin-bottom:16px}'
+    + '.pg-body .quiz-block{gap:16px;margin-bottom:18px}'
     + '.pg-body .qi{padding:9px 12px}'
     + '.pg-body .qq{font-size:1em;line-height:1.5;margin-bottom:6px}'
     + '.pg-body .qg{gap:6px;grid-template-columns:minmax(0,1fr)}'
@@ -1653,6 +1654,56 @@
   }
   /* how — 없음: 앱이 과를 막 열었을 때(pos: 읽던 비율), 'user': 책 버튼을 눌렀을 때, 'auto': 화면을 돌리거나 창 크기가 바뀌었을 때.
      스크롤로 보던 중이었다면 화면에 보이던 자리에서 시작합니다. */
+  /* ───────────── 스크롤 보기의 문제 선지 ─────────────
+     핸드폰 폭(640px 이하)의 스크롤 보기에서도 선지를 2×2로 놓습니다. 다만 선지 하나라도 반 폭에서 세 줄 이상이 되면
+     (문장처럼 긴 선지) 그 문제는 전처럼 한 줄에 하나씩 놓습니다. 넓은 화면은 교재의 원래 배치 그대로입니다.
+     페이지 보기에 들어갈 때는 표시(data-sq)를 지우고, 나올 때 다시 정합니다. */
+  var SQ = { key: '', t: 0, ro: null };
+  function clearSQ() {
+    if (!S.main) return;
+    var l = S.main.querySelectorAll('.qg[data-sq]');
+    for (var i = 0; i < l.length; i++) l[i].removeAttribute('data-sq');
+    SQ.key = '';
+  }
+  function scrollQuiz(force) {
+    if (S.on || !S.main || !S.mounted) return;           /* 교재의 과에서만(연습문제·부록은 그대로) */
+    var list = S.main.querySelectorAll('.qg'), i, j;
+    if (!list.length) { SQ.key = ''; return; }
+    var q0 = list[0].children[0], narrow = (window.innerWidth || root.clientWidth) <= 640;
+    var key = S.main.clientWidth + '|' + (q0 ? cs(q0).fontSize : '') + '|' + narrow + '|' + list.length;
+    if (!force && key === SQ.key) return;
+    SQ.key = key;
+    for (i = 0; i < list.length; i++) {
+      var g = list[i], bs = g.children, n = bs.length, ok = narrow && n >= 2 && !g.classList.contains('qg1');
+      if (!ok) { g.removeAttribute('data-sq'); continue; }
+      /* 답을 고른 뒤의 모양(굵은 글자·테두리)과 상관없이 같은 배치가 나오도록, 답하기 전 모양으로 잽니다. */
+      var qi = g.parentNode, qc = qi.className, bc = [];
+      qi.className = qc.replace(/\bdone\b/g, '');
+      for (j = 0; j < n; j++) { bc.push(bs[j].className); bs[j].className = 'qo'; }
+      g.setAttribute('data-sq', '2');
+      for (j = 0; j < n && ok; j++) {
+        var b = bs[j], st = cs(b);
+        var lim = lineH(st) * 2 + px(st.paddingTop) + px(st.paddingBottom) + px(st.borderTopWidth) + px(st.borderBottomWidth) + 2;
+        if (b.getBoundingClientRect().height > lim || b.scrollWidth > b.clientWidth + 1) ok = false;
+      }
+      if (!ok) g.setAttribute('data-sq', '1');
+      qi.className = qc;
+      for (j = 0; j < n; j++) bs[j].className = bc[j];
+    }
+  }
+  /* 지금 재고, 글꼴이 아직 오는 중이면 다 온 뒤에 한 번 더 잽니다(글꼴마다 글자 폭이 다름). */
+  function scrollQuizNow() {
+    try { scrollQuiz(true); } catch (e) {}
+    if (doc.fonts && doc.fonts.ready && doc.fonts.ready.then) doc.fonts.ready.then(function () { try { scrollQuiz(true); } catch (e) {} });
+  }
+  function scrollQuizSoon() { clearTimeout(SQ.t); SQ.t = setTimeout(function () { scrollQuiz(false); }, 120); }
+  function watchSQ() {
+    window.addEventListener('resize', scrollQuizSoon);
+    if (doc.fonts && doc.fonts.addEventListener) doc.fonts.addEventListener('loadingdone', function () { clearTimeout(SQ.t); SQ.t = setTimeout(function () { scrollQuiz(true); }, 120); });
+    /* 글자 크기를 바꾸면 본문 높이가 달라지므로, 그때 다시 잽니다(같은 폭·글자 크기면 아무것도 하지 않음). */
+    if (window.ResizeObserver && S.main) { SQ.ro = new ResizeObserver(scrollQuizSoon); SQ.ro.observe(S.main); }
+  }
+
   function enterPage(how, pos) {
     if (S.on || !S.main || !S.mounted || S.failed) return;
     var main = S.main, i;
@@ -1661,6 +1712,7 @@
       SP.el = null;
       measureGeo();
       setTopVar();
+      clearSQ();
       root.classList.add('pg-on');
       S.orig = [];
       for (var c = main.firstChild; c; c = c.nextSibling) S.orig.push(c);
@@ -1717,6 +1769,7 @@
     }
     P = null;
     S.stage = null; S.orig = null; S.leaves = []; S.on = false; S.ready = false; S.done = false;
+    scrollQuizNow();
     root.classList.remove('pg-on');
     root.style.removeProperty('--pg-top');
     try {                                            /* 보던 자리를 화면 위쪽에 맞춥니다(앱의 머리줄 아래) */
@@ -1765,6 +1818,7 @@
     S.main = doc.getElementById('lx-main');
     if (!S.main) return;
     buildChrome();
+    watchSQ();
     doc.addEventListener('keydown', onKey);
     window.addEventListener('resize', function () { SP.hold = now() + 700; onResize(); });
     window.addEventListener('orientationchange', function () { SP.hold = now() + 700; onResize(); });
@@ -1789,6 +1843,7 @@
     S.keep = pos > 0 ? pos : 0;
     if (UI.pb) UI.pb.hidden = false;
     if (wantPage()) enterPage(undefined, pos);
+    scrollQuizNow();
     if (INFO) setTimeout(showInfo, 400);
   }
   function unmount() {
