@@ -1,0 +1,224 @@
+{
+  "id": "a2-23",
+  "level": "A2",
+  "no": 23,
+  "title": "Stadt, Land, Fluss",
+  "titleKo": "도시, 나라, 강",
+  "type": "Spielanleitung",
+  "typeKo": "놀이 설명서",
+  "intro": "종이와 펜만 있으면 할 수 있는 독일의 낱말 놀이 방법을 알려 주는 글이에요.",
+  "focus": ["du 명령형", "jed- · all-", "so … wie möglich"],
+  "paragraphs": [
+    {
+      "de": "Kennst du „Stadt, Land, Fluss“? Das Spiel ist sehr alt, aber es macht immer noch Spaß. Du brauchst nur Papier, Stifte und mindestens einen Mitspieler.",
+      "ko": "“도시, 나라, 강” 놀이를 아세요? 아주 오래된 놀이지만 지금도 여전히 재미있어요. 종이와 펜, 그리고 같이 할 사람이 적어도 한 명만 있으면 돼요."
+    },
+    {
+      "style": "h",
+      "de": "So geht es",
+      "ko": "놀이 방법"
+    },
+    {
+      "de": "Gib jedem Spieler ein Blatt und einen Stift. Zeichne eine Tabelle mit sechs Spalten: Stadt, Land, Fluss, Name, Tier und Beruf. Jetzt sagt ein Spieler in Gedanken das Alphabet auf. Ein anderer ruft „Stopp!“ – und so habt ihr einen Buchstaben.",
+      "ko": "놀이하는 사람 모두에게 종이 한 장과 펜 하나를 주세요. 도시, 나라, 강, 이름, 동물, 직업 여섯 칸으로 된 표를 그리세요. 이제 한 사람이 속으로 알파벳을 외워요. 다른 사람이 “그만!” 하고 외치면 글자 하나가 정해져요."
+    },
+    {
+      "de": "Nun schreiben alle Spieler so schnell wie möglich Wörter mit diesem Buchstaben am Anfang, in jede Spalte ein Wort. Sei schnell, aber schreib so deutlich wie möglich! Bist du zuerst fertig? Dann ruf laut „Stopp!“. Jetzt legen alle sofort den Stift weg.",
+      "ko": "이제 모두 이 글자로 시작하는 단어를 최대한 빨리 써요. 칸마다 한 단어씩 써요. 빨리 쓰되 최대한 또박또박 쓰세요! 가장 먼저 다 썼나요? 그러면 큰 소리로 “그만!” 하고 외치세요. 이제 모두 바로 펜을 내려놓아요."
+    },
+    {
+      "style": "h",
+      "de": "Punkte",
+      "ko": "점수"
+    },
+    {
+      "de": "Lies deine Wörter laut vor. Für jedes richtige Wort bekommst du Punkte: Hat ein anderer Spieler das gleiche Wort? Dann gibt es nur 5 Punkte. Hast nur du dieses Wort? Dann nimm dir 10 Punkte. Steht in einer Spalte nur bei dir ein Wort? Dann bekommst du sogar 20 Punkte.",
+      "ko": "자기가 쓴 단어를 소리 내어 읽으세요. 맞는 단어마다 점수를 받아요. 다른 사람이 같은 단어를 썼나요? 그러면 5점만 받아요. 이 단어를 혼자만 썼나요? 그러면 10점을 가져가세요. 어떤 칸에 혼자만 단어를 썼나요? 그러면 20점이나 받아요."
+    },
+    {
+      "de": "Ein Beispiel: Der Buchstabe ist B. Pia schreibt „Berlin“, Carla auch. Jede bekommt 5 Punkte. Luka schreibt „Bremen“ und bekommt 10 Punkte. Spielt so viele Runden wie möglich – am Ende gewinnt der Spieler mit den meisten Punkten.",
+      "ko": "예를 들어 볼게요. 글자는 B예요. 피아는 “Berlin”을 쓰고 카를라도 그렇게 써요. 두 사람은 5점씩 받아요. 루카는 “Bremen”을 써서 10점을 받아요. 최대한 여러 판을 해 보세요. 마지막에는 점수가 가장 많은 사람이 이겨요."
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Das Spiel gibt es schon lange.",
+      "answer": 0,
+      "evidence": "Das Spiel ist sehr alt",
+      "pairs": [["sehr alt", "schon lange"]],
+      "explain": "이 놀이는 아주 오래되었다고 해요. sehr alt(아주 오래된)를 '이미 오래전부터 있다'로 바꿔 말했어요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wie viele Personen können spielen?",
+      "options": ["immer nur sechs Spieler", "höchstens zwei Spieler", "zwei oder mehr Spieler"],
+      "answer": 2,
+      "evidence": "Du brauchst nur Papier, Stifte und mindestens einen Mitspieler.",
+      "pairs": [["mindestens einen Mitspieler", "zwei oder mehr Spieler"]],
+      "explain": "같이 할 사람이 적어도 한 명 있어야 해요. 나와 그 사람을 합치면 두 명이고, 더 많아도 돼요. 여섯은 사람 수가 아니라 표의 칸 수예요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Schnell schreiben ist wichtig, aber sauber schreiben auch.",
+      "answer": 0,
+      "evidence": "Sei schnell, aber schreib so deutlich wie möglich!",
+      "pairs": [["so deutlich wie möglich", "sauber schreiben"]],
+      "explain": "빨리 쓰되 최대한 또박또박 쓰라고 해요. deutlich(또렷하게)를 sauber(깔끔하게)로 바꿔 말했어요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Ein Spieler ist fertig und ruft „Stopp!“. Was passiert dann?",
+      "options": ["Die anderen hören mit dem Schreiben auf.", "Die anderen bekommen noch eine Minute.", "Die anderen fangen eine neue Runde an."],
+      "answer": 0,
+      "evidence": "Jetzt legen alle sofort den Stift weg.",
+      "pairs": [["legen alle sofort den Stift weg", "hören mit dem Schreiben auf"]],
+      "explain": "누군가 “그만!” 하고 외치면 모두 바로 펜을 내려놓아요. 펜을 내려놓는다는 것은 쓰기를 멈춘다는 뜻이에요. sofort(바로)라고 했으니까 시간을 더 주지 않아요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wann bekommt man die meisten Punkte für ein Wort?",
+      "options": ["Zwei Spieler schreiben das Gleiche.", "Die Spalte ist bei den anderen leer.", "Kein anderer Spieler hat dieses Wort."],
+      "answer": 1,
+      "evidence": "Steht in einer Spalte nur bei dir ein Wort?",
+      "pairs": [["nur bei dir ein Wort", "bei den anderen leer"]],
+      "explain": "한 칸에 나만 단어를 썼을 때 20점으로 가장 많이 받아요. 다른 사람들의 그 칸은 비어 있다는 뜻이에요. 같은 단어를 쓰면 5점, 나만 그 단어를 썼으면 10점이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "q": "Warum bekommt Luka mehr Punkte als Pia?",
+      "options": ["Er war früher fertig als Pia.", "Sein Wort ist länger als ihres.", "Sein Wort hat sonst niemand."],
+      "answer": 2,
+      "evidence": "Luka schreibt „Bremen“ und bekommt 10 Punkte.",
+      "pairs": [["Hast nur du dieses Wort?", "Sein Wort hat sonst niemand."]],
+      "explain": "피아와 카를라는 같은 단어를 써서 5점씩 받아요. 루카의 단어는 아무도 쓰지 않아서 10점이에요. Berlin과 Bremen은 글자 수가 같으니까 단어의 길이 때문이 아니에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wer gewinnt das Spiel?",
+      "options": ["wer zum Schluss am meisten Punkte hat", "wer in jeder Runde zuerst „Stopp!“ ruft", "wer die meisten Runden gespielt hat"],
+      "answer": 0,
+      "evidence": "am Ende gewinnt der Spieler mit den meisten Punkten",
+      "pairs": [["am Ende", "zum Schluss"], ["mit den meisten Punkten", "am meisten Punkte hat"]],
+      "explain": "마지막에 점수가 가장 많은 사람이 이겨요. am Ende를 zum Schluss로 바꿔 말했어요. 먼저 “그만!”을 외친다고 이기는 것은 아니에요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "du 명령형",
+      "term": "Imperativ (du-Form)",
+      "explain": "du에게 말하는 명령형은 현재형 du 형태에서 du와 어미 -st를 빼서 만들어요. du schreibst → Schreib! 현재형에서 e가 i나 ie로 바뀌는 동사는 명령형에서도 바뀌어요: du gibst → Gib!, du liest → Lies!, du nimmst → Nimm! sein의 명령형은 Sei!예요.",
+      "pattern": "동사 어간 + … ! · 분리동사: Lies … vor!",
+      "examples": [
+        {
+          "de": "Gib jedem Spieler ein Blatt und einen Stift.",
+          "ko": "놀이하는 사람 모두에게 종이 한 장과 펜 하나를 주세요.",
+          "mark": ["Gib"],
+          "parts": [["Gib", "동사"], ["jedem Spieler", "3격 목적어"], ["ein Blatt und einen Stift.", "4격 목적어"]]
+        },
+        {
+          "de": "Lies deine Wörter laut vor.",
+          "ko": "자기가 쓴 단어를 소리 내어 읽으세요.",
+          "mark": ["Lies", "vor"],
+          "parts": [["Lies", "동사"], ["deine Wörter", "4격 목적어"], ["laut", "부사어(방법)"], ["vor.", "동사(끝)"]]
+        },
+        {
+          "de": "Dann nimm dir 10 Punkte.",
+          "ko": "그러면 10점을 가져가세요.",
+          "mark": ["nimm"]
+        }
+      ],
+      "tip": "fahren, schlafen처럼 a가 ä로 바뀌는 동사는 명령형에서 모음이 바뀌지 않아요. du fährst → Fahr!"
+    },
+    {
+      "title": "jed- · all-",
+      "term": "jeder / jede / jedes und alle",
+      "explain": "jed-는 '각각의, ~마다'라는 뜻이고 뒤에 단수 명사가 와요. 어미는 정관사처럼 변해요: jeder Spieler, jede Spalte, jedes Wort. alle는 '모든'이라는 뜻이고 뒤에 복수 명사가 와요.",
+      "pattern": "jeder/jede/jedes + 단수 명사 · alle + 복수 명사",
+      "examples": [
+        {
+          "de": "Jetzt legen alle sofort den Stift weg.",
+          "ko": "이제 모두 바로 펜을 내려놓아요.",
+          "mark": ["alle"],
+          "parts": [["Jetzt", "부사어(시간)"], ["legen", "동사"], ["alle", "주어"], ["sofort", "부사어(시간)"], ["den Stift", "4격 목적어"], ["weg.", "동사(끝)"]]
+        },
+        {
+          "de": "Für jedes richtige Wort bekommst du Punkte",
+          "ko": "맞는 단어마다 점수를 받아요.",
+          "mark": ["jedes richtige Wort"],
+          "parts": [["Für jedes richtige Wort", "부사어"], ["bekommst", "동사"], ["du", "주어"], ["Punkte", "4격 목적어"]]
+        }
+      ],
+      "tip": "jeder 뒤의 동사는 단수예요. Jeder Spieler schreibt. alle 뒤의 동사는 복수예요. Alle Spieler schreiben."
+    },
+    {
+      "title": "so … wie möglich: 최대한 ~하게",
+      "term": "so + Adjektiv/Adverb + wie möglich",
+      "explain": "so와 wie möglich 사이에 형용사나 부사를 넣으면 '최대한 ~하게, 될 수 있는 대로 ~'라는 뜻이 돼요. 수를 말할 때는 so viele + 복수 명사 + wie möglich라고 해요.",
+      "pattern": "so + 형용사/부사 + wie möglich · so viele + 명사 + wie möglich",
+      "examples": [
+        {
+          "de": "Sei schnell, aber schreib so deutlich wie möglich!",
+          "ko": "빨리 쓰되 최대한 또박또박 쓰세요!",
+          "mark": ["so deutlich wie möglich"],
+          "parts": [["Sei", "동사"], ["schnell,", "보어"], ["aber", "접속사"], ["schreib", "동사"], ["so deutlich wie möglich!", "부사어(방법)"]]
+        },
+        {
+          "de": "Spielt so viele Runden wie möglich",
+          "ko": "최대한 여러 판을 해 보세요.",
+          "mark": ["so viele Runden wie möglich"]
+        }
+      ],
+      "tip": "같은 뜻으로 möglichst + 형용사도 써요. möglichst schnell = so schnell wie möglich."
+    }
+  ],
+  "vocab": [
+    { "de": "das Spiel, -e", "ko": "놀이, 게임" },
+    { "de": "der Mitspieler, -", "ko": "함께 놀이하는 사람" },
+    { "de": "das Blatt, -¨er", "ko": "(종이) 장" },
+    { "de": "der Stift, -e", "ko": "펜, 연필" },
+    { "de": "zeichnen", "ko": "그리다" },
+    { "de": "die Tabelle, -n", "ko": "표" },
+    { "de": "die Spalte, -n", "ko": "(표의) 세로 칸" },
+    { "de": "auf|sagen", "ko": "(외운 것을) 차례로 말하다, 외다" },
+    { "de": "der Buchstabe, -n", "ko": "글자, 철자" },
+    { "de": "deutlich", "ko": "또렷한, 알아보기 쉬운" },
+    { "de": "weg|legen", "ko": "내려놓다, 치우다" },
+    { "de": "vor|lesen (liest vor, las vor, hat vorgelesen)", "ko": "소리 내어 읽다" },
+    { "de": "die Runde, -n", "ko": "(놀이의) 판" },
+    { "de": "gewinnen (gewinnt, gewann, hat gewonnen)", "ko": "이기다" }
+  ],
+  "phrases": [
+    {
+      "de": "Spaß machen",
+      "ko": "재미있다",
+      "ex": "Das Spiel ist sehr alt, aber es macht immer noch Spaß.",
+      "exko": "아주 오래된 놀이지만 지금도 여전히 재미있어요."
+    },
+    {
+      "de": "fertig sein",
+      "ko": "다 끝내다",
+      "ex": "Bist du zuerst fertig?",
+      "exko": "가장 먼저 다 썼나요?"
+    },
+    {
+      "de": "es gibt + Akk.",
+      "ko": "~이 있다, ~이 주어지다",
+      "ex": "Dann gibt es nur 5 Punkte.",
+      "exko": "그러면 5점만 받아요."
+    },
+    {
+      "de": "am Ende",
+      "ko": "마지막에",
+      "ex": "am Ende gewinnt der Spieler mit den meisten Punkten",
+      "exko": "마지막에는 점수가 가장 많은 사람이 이겨요."
+    }
+  ]
+}

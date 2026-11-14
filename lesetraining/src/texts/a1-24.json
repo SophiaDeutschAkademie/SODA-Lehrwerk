@@ -1,0 +1,226 @@
+{
+  "id": "a1-24",
+  "level": "A1",
+  "no": 24,
+  "title": "Pfannkuchen für vier",
+  "titleKo": "4인분 팬케이크",
+  "type": "Rezept",
+  "typeKo": "레시피",
+  "intro": "게르다 할머니의 팬케이크를 만드는 재료와 순서를 알려 주는 레시피예요.",
+  "focus": ["분량 표현", "동사원형 지시문", "wie viel · wie viele"],
+  "paragraphs": [
+    {
+      "de": "Heute machen wir Pfannkuchen – nach dem Rezept von Oma Gerda. Wie viel Mehl brauchst du? Wie viele Eier? Hier steht alles.",
+      "ko": "오늘은 게르다 할머니의 레시피대로 팬케이크를 만들어요. 밀가루는 얼마나 필요할까요? 달걀은 몇 개 필요할까요? 여기에 다 적혀 있어요."
+    },
+    {
+      "style": "h",
+      "de": "Zutaten für vier Personen",
+      "ko": "4인분 재료"
+    },
+    {
+      "style": "meta",
+      "de": "250 Gramm Mehl",
+      "ko": "밀가루 250그램"
+    },
+    {
+      "style": "meta",
+      "de": "ein halber Liter Milch",
+      "ko": "우유 반 리터"
+    },
+    {
+      "style": "meta",
+      "de": "drei Eier",
+      "ko": "달걀 세 개"
+    },
+    {
+      "style": "meta",
+      "de": "eine Prise Salz",
+      "ko": "소금 한 꼬집"
+    },
+    {
+      "style": "meta",
+      "de": "etwas Butter für die Pfanne",
+      "ko": "팬에 두를 버터 조금"
+    },
+    {
+      "style": "h",
+      "de": "So geht es",
+      "ko": "만드는 방법"
+    },
+    {
+      "de": "Mehl und Salz in eine Schüssel geben. Die Milch langsam dazugeben und alles gut mischen. Dann die Eier dazugeben und noch einmal mischen. Den Teig 20 Minuten stehen lassen.",
+      "ko": "밀가루와 소금을 그릇에 넣어요. 우유를 천천히 붓고 모두 잘 섞어요. 그다음 달걀을 넣고 한 번 더 섞어요. 반죽을 20분 동안 그대로 두어요."
+    },
+    {
+      "de": "Etwas Butter in der Pfanne heiß machen. Ein wenig Teig in die Pfanne geben. Den Pfannkuchen zwei Minuten backen, dann wenden und noch einmal zwei Minuten backen.",
+      "ko": "팬에 버터를 조금 넣고 달궈요. 반죽을 조금 팬에 부어요. 팬케이크를 2분 동안 굽고, 뒤집어서 다시 2분 동안 구워요."
+    },
+    {
+      "de": "Wie viele Pfannkuchen bekommst du? Ungefähr acht. Dazu passt Apfelmus oder Marmelade. Guten Appetit!",
+      "ko": "팬케이크는 몇 장 나올까요? 여덟 장쯤 나와요. 사과 퓌레나 잼을 곁들이면 잘 어울려요. 맛있게 드세요!"
+    }
+  ],
+  "questions": [
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wie viel Milch braucht man?",
+      "options": ["500 Milliliter", "250 Milliliter", "750 Milliliter"],
+      "answer": 0,
+      "evidence": "ein halber Liter Milch",
+      "pairs": [["ein halber Liter", "500 Milliliter"]],
+      "explain": "우유는 반 리터가 필요해요. 반 리터는 500밀리리터예요. 250은 밀가루의 양(그램)이에요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Zuerst kommen die Eier in die Schüssel.",
+      "answer": 1,
+      "evidence": "Mehl und Salz in eine Schüssel geben.",
+      "pairs": [["Mehl und Salz", "die Eier"]],
+      "explain": "그릇에 가장 먼저 넣는 것은 밀가루와 소금이에요. 달걀은 우유를 넣고 섞은 다음에 넣어요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Man backt den Teig nicht sofort.",
+      "answer": 0,
+      "evidence": "Den Teig 20 Minuten stehen lassen.",
+      "pairs": [["20 Minuten stehen lassen", "nicht sofort"]],
+      "explain": "반죽은 20분 동안 그대로 두어야 해요. 그래서 반죽을 만들자마자 바로 굽지 않는다는 말이 맞아요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wie lange ist ein Pfannkuchen in der Pfanne?",
+      "options": ["nur zwei Minuten", "etwa vier Minuten", "ganze 20 Minuten"],
+      "answer": 1,
+      "evidence": "Den Pfannkuchen zwei Minuten backen, dann wenden und noch einmal zwei Minuten backen.",
+      "pairs": [["noch einmal zwei Minuten backen", "etwa vier Minuten"]],
+      "explain": "한쪽을 2분 굽고, 뒤집어서 다시 2분 구워요. 합치면 4분쯤이에요. 20분은 반죽을 그대로 두는 시간이에요."
+    },
+    {
+      "type": "rf",
+      "kind": "inference",
+      "q": "Jede Person bekommt ungefähr zwei Pfannkuchen.",
+      "answer": 0,
+      "evidence": "Ungefähr acht.",
+      "pairs": [["Ungefähr acht", "ungefähr zwei Pfannkuchen"]],
+      "explain": "이 레시피는 네 사람 분량이고 팬케이크는 여덟 장쯤 나와요. 여덟 장을 네 사람이 나누면 한 사람에 두 장쯤이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was isst man zu den Pfannkuchen?",
+      "options": ["Butter und Salz", "Eier mit Milch", "Süßes aus Obst"],
+      "answer": 2,
+      "evidence": "Dazu passt Apfelmus oder Marmelade.",
+      "pairs": [["Apfelmus oder Marmelade", "Süßes aus Obst"]],
+      "explain": "팬케이크에는 사과 퓌레나 잼이 잘 어울린다고 해요. 둘 다 과일로 만든 단 음식이에요. 버터, 소금, 달걀, 우유는 반죽과 굽는 데 쓰는 재료예요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "분량 표현",
+      "term": "Mengenangaben (Maß + Nomen ohne Artikel)",
+      "explain": "분량은 숫자 + 단위 + 명사 순서로 말해요. 단위 뒤에 오는 명사에는 관사를 붙이지 않아요. Gramm, Liter, Kilo는 숫자가 2 이상이어도 복수형으로 바꾸지 않아요.",
+      "pattern": "숫자 + Gramm/Liter/Prise + 명사",
+      "examples": [
+        {
+          "de": "Ein wenig Teig in die Pfanne geben.",
+          "ko": "반죽을 조금 팬에 부어요.",
+          "mark": ["Ein wenig Teig"],
+          "parts": [["Ein wenig Teig", "4격 목적어"], ["in die Pfanne", "부사어(장소)"], ["geben.", "동사(끝)"]]
+        },
+        {
+          "de": "250 Gramm Mehl",
+          "ko": "밀가루 250그램",
+          "mark": ["250 Gramm"]
+        },
+        {
+          "de": "eine Prise Salz",
+          "ko": "소금 한 꼬집",
+          "mark": ["eine Prise"]
+        }
+      ],
+      "tip": "한국어는 '밀가루 250그램'처럼 재료를 먼저 말하지만, 독일어는 250 Gramm Mehl처럼 분량을 먼저 말해요."
+    },
+    {
+      "title": "동사원형으로 쓰는 지시문",
+      "term": "Infinitiv als Aufforderung (Rezepte, Anleitungen)",
+      "explain": "레시피나 설명서에서는 명령형 대신 동사원형을 자주 써요. 이때 동사원형은 문장 맨 끝에 와요. 주어는 쓰지 않아요.",
+      "pattern": "(목적어 · 부사어) + 동사원형.",
+      "examples": [
+        {
+          "de": "Mehl und Salz in eine Schüssel geben.",
+          "ko": "밀가루와 소금을 그릇에 넣어요.",
+          "mark": ["geben"],
+          "parts": [["Mehl und Salz", "4격 목적어"], ["in eine Schüssel", "부사어(장소)"], ["geben.", "동사(끝)"]]
+        },
+        {
+          "de": "Den Teig 20 Minuten stehen lassen.",
+          "ko": "반죽을 20분 동안 그대로 두어요.",
+          "mark": ["stehen lassen"],
+          "parts": [["Den Teig", "4격 목적어"], ["20 Minuten", "부사어(시간)"], ["stehen lassen.", "동사(끝)"]]
+        }
+      ],
+      "tip": "분리동사도 떼지 않고 붙여서 써요. 예: Die Eier dazugeben. 상대에게 직접 말할 때는 명령형을 써요. Gib die Eier dazu!"
+    },
+    {
+      "title": "wie viel · wie viele",
+      "term": "Fragen nach der Menge: wie viel? / wie viele?",
+      "explain": "셀 수 없는 것의 양을 물을 때는 wie viel을 써요. 셀 수 있는 것의 개수를 물을 때는 wie viele + 복수 명사를 써요.",
+      "pattern": "Wie viel + 단수 명사 (Mehl, Milch) · Wie viele + 복수 명사 (Eier, Pfannkuchen)",
+      "examples": [
+        {
+          "de": "Wie viel Mehl brauchst du?",
+          "ko": "밀가루는 얼마나 필요할까요?",
+          "mark": ["Wie viel Mehl"],
+          "parts": [["Wie viel Mehl", "4격 목적어"], ["brauchst", "동사"], ["du?", "주어"]]
+        },
+        {
+          "de": "Wie viele Pfannkuchen bekommst du?",
+          "ko": "팬케이크는 몇 장 나올까요?",
+          "mark": ["Wie viele Pfannkuchen"],
+          "parts": [["Wie viele Pfannkuchen", "4격 목적어"], ["bekommst", "동사"], ["du?", "주어"]]
+        }
+      ],
+      "tip": "값을 물을 때도 wie viel을 써요. Wie viel kostet das?"
+    }
+  ],
+  "vocab": [
+    { "de": "der Pfannkuchen, -", "ko": "팬케이크" },
+    { "de": "das Rezept, -e", "ko": "레시피, 조리법" },
+    { "de": "die Zutat, -en", "ko": "재료" },
+    { "de": "das Mehl (Sg.)", "ko": "밀가루" },
+    { "de": "das Ei, -er", "ko": "달걀" },
+    { "de": "die Prise, -n", "ko": "한 꼬집" },
+    { "de": "die Schüssel, -n", "ko": "(움푹한) 그릇, 볼" },
+    { "de": "mischen", "ko": "섞다" },
+    { "de": "dazu|geben (gibt dazu, gab dazu, hat dazugegeben)", "ko": "더 넣다" },
+    { "de": "der Teig, -e", "ko": "반죽" },
+    { "de": "die Pfanne, -n", "ko": "프라이팬" },
+    { "de": "wenden", "ko": "뒤집다" }
+  ],
+  "phrases": [
+    {
+      "de": "ein halber Liter",
+      "ko": "반 리터",
+      "ex": "ein halber Liter Milch",
+      "exko": "우유 반 리터"
+    },
+    {
+      "de": "stehen lassen",
+      "ko": "그대로 두다",
+      "ex": "Den Teig 20 Minuten stehen lassen.",
+      "exko": "반죽을 20분 동안 그대로 두어요."
+    },
+    {
+      "de": "Guten Appetit!",
+      "ko": "맛있게 드세요",
+      "ex": "Guten Appetit!",
+      "exko": "맛있게 드세요!"
+    }
+  ]
+}

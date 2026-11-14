@@ -1,0 +1,193 @@
+{
+  "id": "a1-25",
+  "level": "A1",
+  "no": 25,
+  "title": "Was für ein Tag!",
+  "titleKo": "정말 대단한 하루!",
+  "type": "Tagebucheintrag",
+  "typeKo": "일기",
+  "intro": "늦잠으로 시작해서 일이 계속 꼬인 하루를 적은 일기예요.",
+  "focus": ["sein과 쓰는 현재완료", "ge- 없는 과거분사", "schon · noch nicht · erst"],
+  "paragraphs": [
+    {
+      "style": "meta",
+      "de": "Dienstag, 4. März",
+      "ko": "3월 4일 화요일"
+    },
+    {
+      "de": "Was für ein Tag! Heute Morgen habe ich verschlafen. Erst um acht Uhr bin ich aufgestanden. Ich habe nicht gefrühstückt und bin schnell zur Haltestelle gelaufen. Aber der Bus war schon weg. Ich habe ihn verpasst!",
+      "ko": "정말 대단한 하루였어요! 오늘 아침에 늦잠을 잤어요. 여덟 시가 되어서야 일어났어요. 아침을 먹지 않고 정류장까지 빨리 뛰어갔어요. 하지만 버스는 이미 떠나고 없었어요. 버스를 놓쳤어요!"
+    },
+    {
+      "de": "Also bin ich zu Fuß ins Büro gegangen. Dort habe ich bis sechs Uhr gearbeitet. Am Abend bin ich nach Hause gekommen – und der Schlüssel war nicht in meiner Tasche. Ich habe ihn im Büro vergessen!",
+      "ko": "그래서 걸어서 사무실에 갔어요. 거기에서 여섯 시까지 일했어요. 저녁에 집에 왔는데 열쇠가 가방에 없었어요. 열쇠를 사무실에 두고 왔어요!"
+    },
+    {
+      "de": "Zum Glück war meine Nachbarin Frau Kruse zu Hause. Bei ihr habe ich meine Kollegin Tilda angerufen. Ich bin eine Stunde geblieben, und Frau Kruse hat Tee gekocht. Dann ist Tilda gekommen und hat den Schlüssel gebracht. Jetzt ist es schon elf Uhr, aber ich habe noch nicht gegessen. Gute Nacht!",
+      "ko": "다행히 이웃 크루제 씨가 집에 계셨어요. 그 집에서 동료 틸다에게 전화했어요. 한 시간 동안 거기 있었고, 크루제 씨가 차를 끓여 주셨어요. 그다음에 틸다가 와서 열쇠를 가져다줬어요. 지금 벌써 열한 시인데 아직 아무것도 못 먹었어요. 잘 자요!"
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Die Person ist heute zu spät aufgestanden.",
+      "answer": 0,
+      "evidence": "Heute Morgen habe ich verschlafen.",
+      "pairs": [["habe ich verschlafen", "zu spät aufgestanden"]],
+      "explain": "글쓴이는 오늘 아침에 늦잠을 잤어요. verschlafen(늦잠을 자다)을 '너무 늦게 일어났다'로 바꿔 말했어요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wie ist die Person ins Büro gekommen?",
+      "options": ["Sie ist den Weg gelaufen.", "Sie hat den Bus genommen.", "Sie hat ein Taxi genommen."],
+      "answer": 0,
+      "evidence": "Also bin ich zu Fuß ins Büro gegangen.",
+      "pairs": [["zu Fuß ins Büro gegangen", "den Weg gelaufen"]],
+      "explain": "버스를 놓쳐서 걸어서 사무실에 갔어요. zu Fuß gehen(걸어서 가다)을 laufen으로 바꿔 말했어요. 버스는 이미 떠나고 없었어요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Die Person hat den Schlüssel im Bus vergessen.",
+      "answer": 1,
+      "evidence": "Ich habe ihn im Büro vergessen!",
+      "pairs": [["im Büro", "im Bus"]],
+      "explain": "열쇠는 사무실에 두고 왔어요. 버스는 아침에 놓쳐서 타지도 못했어요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was hat Frau Kruse gemacht?",
+      "options": ["Sie hat den Schlüssel geholt.", "Sie hat ein Getränk gemacht.", "Sie hat bei Tilda angerufen."],
+      "answer": 1,
+      "evidence": "Ich bin eine Stunde geblieben, und Frau Kruse hat Tee gekocht.",
+      "pairs": [["hat Tee gekocht", "hat ein Getränk gemacht"]],
+      "explain": "크루제 씨는 차를 끓여 주었어요. Tee(차)를 Getränk(마실 것)으로 바꿔 말했어요. 틸다에게 전화한 사람은 글쓴이이고, 열쇠를 가져온 사람은 틸다예요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Die Person hat am Abend schon gegessen.",
+      "answer": 1,
+      "evidence": "aber ich habe noch nicht gegessen",
+      "pairs": [["noch nicht gegessen", "schon gegessen"]],
+      "explain": "밤 열한 시인데 아직 아무것도 먹지 못했다고 해요. noch nicht(아직 ~ 않다)와 schon(이미)은 뜻이 반대예요."
+    },
+    {
+      "type": "mc",
+      "kind": "gist",
+      "q": "Wie war der Tag?",
+      "options": ["Die Person hatte viele Probleme.", "Die Person war heute nicht im Büro.", "Der Tag war ruhig und sehr schön."],
+      "answer": 0,
+      "evidence": "Was für ein Tag!",
+      "pairs": [],
+      "explain": "늦잠을 자고, 버스를 놓치고, 열쇠까지 두고 와서 하루 종일 일이 꼬였어요. 글쓴이는 사무실에서 여섯 시까지 일했으니까 사무실에 가지 않았다는 말은 틀려요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "sein과 쓰는 현재완료",
+      "term": "Perfekt mit sein",
+      "explain": "현재완료는 보통 haben + 과거분사로 만들어요. 하지만 장소를 옮기는 동사(gehen, kommen, laufen, fahren)와 상태가 바뀌는 동사(aufstehen, einschlafen)는 sein + 과거분사로 만들어요. bleiben과 sein도 sein과 함께 써요. 과거분사는 문장 끝에 와요.",
+      "pattern": "sein(변화형) + … + 과거분사(문장 끝)",
+      "examples": [
+        {
+          "de": "Also bin ich zu Fuß ins Büro gegangen.",
+          "ko": "그래서 걸어서 사무실에 갔어요.",
+          "mark": ["bin", "gegangen"],
+          "parts": [["Also", "접속부사"], ["bin", "동사"], ["ich", "주어"], ["zu Fuß", "부사어(방법)"], ["ins Büro", "부사어(장소)"], ["gegangen.", "동사(끝)"]]
+        },
+        {
+          "de": "Ich bin eine Stunde geblieben",
+          "ko": "한 시간 동안 거기 있었어요.",
+          "mark": ["bin", "geblieben"],
+          "parts": [["Ich", "주어"], ["bin", "동사"], ["eine Stunde", "부사어(시간)"], ["geblieben", "동사(끝)"]]
+        }
+      ],
+      "tip": "arbeiten, kochen, essen처럼 장소를 옮기지 않는 동사는 haben과 써요. Dort habe ich bis sechs Uhr gearbeitet."
+    },
+    {
+      "title": "ge- 없는 과거분사",
+      "term": "Partizip II ohne ge- (untrennbare Verben)",
+      "explain": "ver-, be-, er-, ent-로 시작하는 동사는 과거분사에 ge-를 붙이지 않아요. verpassen은 verpasst, vergessen은 vergessen, verschlafen은 verschlafen이 돼요. 분리동사는 ge-가 가운데에 들어가요: aufstehen → aufgestanden, anrufen → angerufen.",
+      "pattern": "ver-/be-/er- + 어간 + -t/-en (ge- 없음)",
+      "examples": [
+        {
+          "de": "Ich habe ihn verpasst!",
+          "ko": "버스를 놓쳤어요!",
+          "mark": ["verpasst"],
+          "parts": [["Ich", "주어"], ["habe", "동사"], ["ihn", "4격 목적어"], ["verpasst!", "동사(끝)"]]
+        },
+        {
+          "de": "Ich habe ihn im Büro vergessen!",
+          "ko": "열쇠를 사무실에 두고 왔어요!",
+          "mark": ["vergessen"],
+          "parts": [["Ich", "주어"], ["habe", "동사"], ["ihn", "4격 목적어"], ["im Büro", "부사어(장소)"], ["vergessen!", "동사(끝)"]]
+        }
+      ],
+      "tip": "-ieren으로 끝나는 동사도 ge-가 없어요. telefonieren → telefoniert, studieren → studiert."
+    },
+    {
+      "title": "schon · noch nicht · erst",
+      "term": "schon, noch nicht, erst",
+      "explain": "schon은 '벌써, 이미'라는 뜻이에요. 그 반대가 noch nicht(아직 ~하지 않았다)예요. erst는 시간 앞에서 '~이 되어서야'라는 뜻으로, 생각보다 늦다는 느낌을 줘요.",
+      "pattern": "schon ↔ noch nicht · erst + 시간",
+      "examples": [
+        {
+          "de": "Aber der Bus war schon weg.",
+          "ko": "하지만 버스는 이미 떠나고 없었어요.",
+          "mark": ["schon"],
+          "parts": [["Aber", "접속사"], ["der Bus", "주어"], ["war", "동사"], ["schon", "부사어(시간)"], ["weg.", "보어"]]
+        },
+        {
+          "de": "Erst um acht Uhr bin ich aufgestanden.",
+          "ko": "여덟 시가 되어서야 일어났어요.",
+          "mark": ["Erst"],
+          "parts": [["Erst um acht Uhr", "부사어(시간)"], ["bin", "동사"], ["ich", "주어"], ["aufgestanden.", "동사(끝)"]]
+        },
+        {
+          "de": "aber ich habe noch nicht gegessen",
+          "ko": "아직 아무것도 못 먹었어요.",
+          "mark": ["noch nicht"]
+        }
+      ],
+      "tip": "erst와 nur를 헷갈리지 마세요. 시간이 늦다는 뜻일 때는 erst를 써요. Ich bin erst um acht aufgestanden."
+    }
+  ],
+  "vocab": [
+    { "de": "verschlafen (verschläft, verschlief, hat verschlafen)", "ko": "늦잠을 자다" },
+    { "de": "auf|stehen (steht auf, stand auf, ist aufgestanden)", "ko": "일어나다" },
+    { "de": "frühstücken", "ko": "아침을 먹다" },
+    { "de": "laufen (läuft, lief, ist gelaufen)", "ko": "달리다, 걸어가다" },
+    { "de": "verpassen", "ko": "(버스·기차를) 놓치다" },
+    { "de": "das Büro, -s", "ko": "사무실" },
+    { "de": "der Schlüssel, -", "ko": "열쇠" },
+    { "de": "die Tasche, -n", "ko": "가방" },
+    { "de": "vergessen (vergisst, vergaß, hat vergessen)", "ko": "잊다, 두고 오다" },
+    { "de": "bleiben (bleibt, blieb, ist geblieben)", "ko": "머무르다" },
+    { "de": "die Kollegin, -nen", "ko": "(여자) 동료" },
+    { "de": "bringen (bringt, brachte, hat gebracht)", "ko": "가져오다, 가져다주다" }
+  ],
+  "phrases": [
+    {
+      "de": "Was für ein Tag!",
+      "ko": "정말 대단한 하루예요!",
+      "ex": "Was für ein Tag!",
+      "exko": "정말 대단한 하루였어요!"
+    },
+    {
+      "de": "zum Glück",
+      "ko": "다행히",
+      "ex": "Zum Glück war meine Nachbarin Frau Kruse zu Hause.",
+      "exko": "다행히 이웃 크루제 씨가 집에 계셨어요."
+    },
+    {
+      "de": "nach Hause kommen",
+      "ko": "집에 오다",
+      "ex": "Am Abend bin ich nach Hause gekommen",
+      "exko": "저녁에 집에 왔어요."
+    }
+  ]
+}

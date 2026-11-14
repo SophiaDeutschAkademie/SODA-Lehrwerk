@@ -1,0 +1,190 @@
+{
+  "id": "a1-21",
+  "level": "A1",
+  "no": 21,
+  "title": "Drei neue Nachrichten",
+  "titleKo": "새 메시지 세 개",
+  "type": "Mailbox-Nachrichten",
+  "typeKo": "음성 사서함 메시지",
+  "intro": "넬레의 휴대폰 음성 사서함에 세 사람이 남긴 메시지예요.",
+  "focus": ["예/아니요 의문문", "heute · morgen · übermorgen", "für + 4격"],
+  "paragraphs": [
+    {
+      "de": "Nele Lorenzen war heute im Kurs. Jetzt hat sie drei neue Nachrichten auf der Mailbox.",
+      "ko": "넬레 로렌첸은 오늘 수업에 가 있었어요. 지금 음성 사서함에 새 메시지가 세 개 와 있어요."
+    },
+    {
+      "label": "Nachricht 1 · 9.15 Uhr",
+      "de": "Hallo Nele, hier ist Oskar. Hast du am Samstag Zeit? Ich habe zwei Karten für das Konzert im Stadtpark. Eine Karte ist für dich. Kommst du mit? Ruf mich bitte heute Abend an. Tschüs!",
+      "ko": "안녕하세요, 넬레. 오스카예요. 토요일에 시간 있어요? 시립 공원에서 하는 콘서트 표가 두 장 있어요. 한 장은 넬레 거예요. 같이 갈래요? 오늘 저녁에 전화해 주세요. 그럼 또 봐요!"
+    },
+    {
+      "label": "Nachricht 2 · 11.40 Uhr",
+      "de": "Guten Tag, Frau Lorenzen, hier ist die Zahnarztpraxis Dr. Winkler. Ihr Termin morgen um 10 Uhr fällt leider aus. Wir haben einen neuen Termin für Sie: übermorgen um 8.30 Uhr. Passt das? Bitte rufen Sie uns heute bis 17 Uhr an. Vielen Dank!",
+      "ko": "안녕하세요, 로렌첸 씨. 빙클러 치과예요. 내일 10시 예약은 아쉽게도 취소됐어요. 로렌첸 씨를 위해 새 예약 시간을 잡아 두었어요. 모레 8시 30분이에요. 괜찮으세요? 오늘 17시까지 저희에게 전화해 주세요. 감사합니다!"
+    },
+    {
+      "label": "Nachricht 3 · 15.05 Uhr",
+      "de": "Guten Tag, Frau Lorenzen, hier ist Ihre Nachbarin, Frau Gerdes. Ich habe ein Paket für Sie. Sind Sie heute Abend zu Hause? Ich bin bis 20 Uhr da. Morgen fahre ich für drei Tage nach Bremen. Bis später!",
+      "ko": "안녕하세요, 로렌첸 씨. 이웃에 사는 게르데스예요. 로렌첸 씨 앞으로 온 소포를 제가 가지고 있어요. 오늘 저녁에 집에 계세요? 저는 20시까지 집에 있어요. 내일은 사흘 동안 브레멘에 가요. 이따 봬요!"
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Oskar möchte mit Nele zu einem Konzert gehen.",
+      "answer": 0,
+      "evidence": "Eine Karte ist für dich.",
+      "pairs": [["Eine Karte ist für dich", "mit Nele zu einem Konzert gehen"]],
+      "explain": "오스카는 콘서트 표가 두 장 있고 그중 한 장이 넬레 것이라고 해요. 그리고 “같이 갈래요?” 하고 물어요. 그래서 넬레와 함께 콘서트에 가고 싶다는 말이 맞아요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wann möchte Oskar mit Nele sprechen?",
+      "options": ["noch an diesem Abend", "erst am Samstagabend", "morgen vor dem Kurs"],
+      "answer": 0,
+      "evidence": "Ruf mich bitte heute Abend an.",
+      "pairs": [["heute Abend", "noch an diesem Abend"]],
+      "explain": "오스카는 오늘 저녁에 전화해 달라고 해요. heute Abend를 '바로 이날 저녁에'로 바꿔 말한 것이 정답이에요. 토요일은 콘서트가 있는 날이에요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Nele geht morgen um 10 Uhr zum Zahnarzt.",
+      "answer": 1,
+      "evidence": "Ihr Termin morgen um 10 Uhr fällt leider aus.",
+      "pairs": [["fällt leider aus", "geht morgen um 10 Uhr zum Zahnarzt"]],
+      "explain": "내일 10시 예약은 취소됐어요. 새 예약은 모레 8시 30분이에요. 그래서 내일 10시에 치과에 간다는 말은 틀려요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was möchte die Praxis?",
+      "options": ["Nele kommt um 17 Uhr in die Praxis.", "Nele schreibt heute noch eine E-Mail.", "Nele telefoniert heute mit der Praxis."],
+      "answer": 2,
+      "evidence": "Bitte rufen Sie uns heute bis 17 Uhr an.",
+      "pairs": [["Bitte rufen Sie uns", "telefoniert heute mit der Praxis"]],
+      "explain": "치과에서는 오늘 17시까지 전화해 달라고 해요. anrufen(전화하다)을 telefonieren으로 바꿔 말했어요. 17시는 병원에 가는 시간이 아니라 전화해야 하는 마감 시간이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Warum ruft Frau Gerdes an?",
+      "options": ["Sie fährt mit Nele nach Bremen.", "Sie hat Post für Nele zu Hause.", "Sie sucht ein Paket von Nele."],
+      "answer": 1,
+      "evidence": "Ich habe ein Paket für Sie.",
+      "pairs": [["ein Paket für Sie", "Post für Nele"]],
+      "explain": "게르데스 씨는 넬레 앞으로 온 소포를 가지고 있어서 전화했어요. Paket(소포)을 Post(우편물)로 바꿔 말했어요. 브레멘에는 게르데스 씨 혼자 가고, 소포는 찾는 것이 아니라 이미 가지고 있어요."
+    },
+    {
+      "type": "rf",
+      "kind": "inference",
+      "q": "Frau Gerdes ist am nächsten Tag nicht zu Hause.",
+      "answer": 0,
+      "evidence": "Morgen fahre ich für drei Tage nach Bremen.",
+      "pairs": [["Morgen", "am nächsten Tag"]],
+      "explain": "게르데스 씨는 내일 사흘 동안 브레멘에 간다고 해요. 그러니까 다음 날에는 집에 없어요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "예/아니요 의문문 – 동사가 맨 앞",
+      "term": "Ja/Nein-Frage (Entscheidungsfrage)",
+      "explain": "의문사 없이 '예'나 '아니요'로 답하는 질문은 동사로 시작해요. 동사 바로 뒤에 주어가 와요. 말할 때는 문장 끝을 올려요.",
+      "pattern": "동사 + 주어 + … ?",
+      "examples": [
+        {
+          "de": "Hast du am Samstag Zeit?",
+          "ko": "토요일에 시간 있어요?",
+          "mark": ["Hast du"],
+          "parts": [["Hast", "동사"], ["du", "주어"], ["am Samstag", "부사어(시간)"], ["Zeit?", "4격 목적어"]]
+        },
+        {
+          "de": "Sind Sie heute Abend zu Hause?",
+          "ko": "오늘 저녁에 집에 계세요?",
+          "mark": ["Sind Sie"],
+          "parts": [["Sind", "동사"], ["Sie", "주어"], ["heute Abend", "부사어(시간)"], ["zu Hause?", "부사어(장소)"]]
+        }
+      ],
+      "tip": "평서문에서는 동사가 2번 자리에 와요. Du hast am Samstag Zeit. 질문으로 바꾸면 동사가 맨 앞으로 가요. Hast du am Samstag Zeit?"
+    },
+    {
+      "title": "heute · morgen · übermorgen",
+      "term": "Zeitadverbien heute, morgen, übermorgen",
+      "explain": "heute는 '오늘', morgen은 '내일', übermorgen은 '모레'예요. 뒤에 Abend, Vormittag 같은 말을 붙이면 '오늘 저녁', '내일 오전'이 돼요. heute, morgen은 소문자로 쓰고 뒤에 붙는 Abend는 대문자로 써요.",
+      "pattern": "heute / morgen / übermorgen (+ Vormittag · Nachmittag · Abend)",
+      "examples": [
+        {
+          "de": "Ruf mich bitte heute Abend an.",
+          "ko": "오늘 저녁에 전화해 주세요.",
+          "mark": ["heute Abend"],
+          "parts": [["Ruf", "동사"], ["mich", "4격 목적어"], ["bitte", "기타"], ["heute Abend", "부사어(시간)"], ["an.", "동사(끝)"]]
+        },
+        {
+          "de": "Morgen fahre ich für drei Tage nach Bremen.",
+          "ko": "내일은 사흘 동안 브레멘에 가요.",
+          "mark": ["Morgen"],
+          "parts": [["Morgen", "부사어(시간)"], ["fahre", "동사"], ["ich", "주어"], ["für drei Tage", "부사어(시간)"], ["nach Bremen.", "부사어(장소)"]]
+        }
+      ],
+      "tip": "문장 맨 앞의 Morgen은 문장의 첫 글자라서 대문자예요. 명사 der Morgen(아침)과 헷갈리지 마세요. '내일 아침'은 morgen früh라고 해요."
+    },
+    {
+      "title": "für + 4격",
+      "term": "Präposition für + Akkusativ",
+      "explain": "für는 '~을 위한, ~에게 줄'이라는 뜻이에요. für 뒤에는 항상 4격이 와요. 인칭대명사는 für mich, für dich, für Sie처럼 써요. für drei Tage처럼 기간을 말할 때도 써요.",
+      "pattern": "für + 4격 (für dich · für Sie · für das Konzert)",
+      "examples": [
+        {
+          "de": "Eine Karte ist für dich.",
+          "ko": "한 장은 넬레 거예요.",
+          "mark": ["für dich"],
+          "parts": [["Eine Karte", "주어"], ["ist", "동사"], ["für dich.", "보어"]]
+        },
+        {
+          "de": "Wir haben einen neuen Termin für Sie",
+          "ko": "로렌첸 씨를 위해 새 예약 시간을 잡아 두었어요.",
+          "mark": ["für Sie"],
+          "parts": [["Wir", "주어"], ["haben", "동사"], ["einen neuen Termin für Sie", "4격 목적어"]]
+        }
+      ],
+      "tip": "für 뒤에서 남성 명사의 관사는 den, einen으로 바뀌어요. 예: für den Termin, für einen Freund."
+    }
+  ],
+  "vocab": [
+    { "de": "die Nachricht, -en", "ko": "메시지, 소식" },
+    { "de": "die Mailbox, -en", "ko": "음성 사서함" },
+    { "de": "die Karte, -n", "ko": "표, 입장권" },
+    { "de": "das Konzert, -e", "ko": "콘서트, 음악회" },
+    { "de": "an|rufen (ruft an, rief an, hat angerufen) + Akk.", "ko": "~에게 전화하다" },
+    { "de": "mit|kommen (kommt mit, kam mit, ist mitgekommen)", "ko": "함께 가다, 함께 오다" },
+    { "de": "der Termin, -e", "ko": "예약, 약속 시간" },
+    { "de": "aus|fallen (fällt aus, fiel aus, ist ausgefallen)", "ko": "(예정된 일이) 취소되다" },
+    { "de": "übermorgen", "ko": "모레" },
+    { "de": "passen", "ko": "(시간이나 조건이) 맞다, 괜찮다" },
+    { "de": "die Nachbarin, -nen", "ko": "이웃 (여자)" },
+    { "de": "das Paket, -e", "ko": "소포" }
+  ],
+  "phrases": [
+    {
+      "de": "Zeit haben",
+      "ko": "시간이 있다",
+      "ex": "Hast du am Samstag Zeit?",
+      "exko": "토요일에 시간 있어요?"
+    },
+    {
+      "de": "zu Hause sein",
+      "ko": "집에 있다",
+      "ex": "Sind Sie heute Abend zu Hause?",
+      "exko": "오늘 저녁에 집에 계세요?"
+    },
+    {
+      "de": "Bis später!",
+      "ko": "이따 봐요, 나중에 봐요",
+      "ex": "Bis später!",
+      "exko": "이따 봬요!"
+    }
+  ]
+}

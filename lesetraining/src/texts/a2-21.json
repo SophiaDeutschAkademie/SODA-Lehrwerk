@@ -1,0 +1,224 @@
+{
+  "id": "a2-21",
+  "level": "A2",
+  "no": 21,
+  "title": "Was kommt in welche Tonne?",
+  "titleKo": "어느 통에 무엇을 버릴까요?",
+  "type": "Infoblatt der Hausverwaltung",
+  "typeKo": "관리사무소 안내문",
+  "intro": "새로 이사 온 세입자에게 쓰레기 분리배출 방법을 알려 주는 안내문이에요.",
+  "focus": ["수동태 현재형", "nicht …, sondern", "합성명사"],
+  "paragraphs": [
+    {
+      "style": "meta",
+      "de": "Hausverwaltung Tannert · Information für neue Mieterinnen und Mieter",
+      "ko": "탄네르트 관리사무소 · 새로 입주하신 분들을 위한 안내"
+    },
+    {
+      "de": "Herzlich willkommen in unserem Haus! In Deutschland wird der Müll getrennt. Das ist am Anfang nicht leicht, deshalb erklären wir hier die wichtigsten Regeln.",
+      "ko": "저희 건물에 오신 것을 환영해요! 독일에서는 쓰레기를 분리해서 버려요. 처음에는 쉽지 않아서, 여기에 가장 중요한 규칙을 설명해 드려요."
+    },
+    {
+      "style": "h",
+      "de": "Die Tonnen im Hof",
+      "ko": "마당에 있는 쓰레기통"
+    },
+    {
+      "de": "Im Hof stehen vier Tonnen. In die blaue Tonne kommen Papier und Kartons. Bitte machen Sie große Kartons klein! Verpackungen aus Plastik und Metall werden in der gelben Tonne gesammelt. Obst- und Gemüsereste, Kaffeefilter und Teebeutel gehören in die braune Biotonne. Alles andere ist Restmüll und kommt in die schwarze Tonne.",
+      "ko": "마당에는 쓰레기통이 네 개 있어요. 파란 통에는 종이와 상자를 넣어요. 큰 상자는 작게 만들어 주세요! 플라스틱과 금속으로 된 포장재는 노란 통에 모아요. 과일과 채소 찌꺼기, 커피 필터, 티백은 갈색 음식물 통에 넣어요. 그 밖의 것은 모두 일반 쓰레기이고 검은 통에 넣어요."
+    },
+    {
+      "style": "h",
+      "de": "Glas, Pfand und Batterien",
+      "ko": "유리, 보증금 병, 건전지"
+    },
+    {
+      "de": "Glas kommt nicht in die gelbe Tonne, sondern in die Glascontainer an der Ecke Gartenstraße. Dort wird es nach Farben sortiert: weiß, braun und grün. Bitte benutzen Sie die Container nur montags bis samstags von 7 bis 19 Uhr. Pfandflaschen werfen Sie nicht weg, sondern bringen sie in den Supermarkt zurück. Auch alte Batterien sind kein Restmüll. Sie werden im Supermarkt in einer Sammelbox gesammelt.",
+      "ko": "유리는 노란 통이 아니라 가르텐슈트라세 모퉁이에 있는 유리 수거함에 넣어요. 그곳에서는 유리를 흰색, 갈색, 초록색으로 색깔별로 나누어 넣어요. 수거함은 월요일부터 토요일까지 7시부터 19시 사이에만 이용해 주세요. 보증금이 붙은 병은 버리지 말고 슈퍼마켓에 다시 가져다주세요. 다 쓴 건전지도 일반 쓰레기가 아니에요. 건전지는 슈퍼마켓에 있는 수거함에 모아요."
+    },
+    {
+      "style": "h",
+      "de": "Abholtermine",
+      "ko": "수거 일정"
+    },
+    {
+      "de": "Die schwarze und die braune Tonne werden jede Woche geleert, die gelbe alle zwei Wochen und die blaue nur einmal im Monat. Die Termine hängen im Treppenhaus. Haben Sie Fragen? Dann rufen Sie uns an.",
+      "ko": "검은 통과 갈색 통은 매주 비우고, 노란 통은 2주마다, 파란 통은 한 달에 한 번만 비워요. 수거 날짜는 계단실에 붙어 있어요. 궁금한 점이 있으세요? 그러면 저희에게 전화해 주세요."
+    }
+  ],
+  "questions": [
+    {
+      "type": "mc",
+      "kind": "gist",
+      "q": "Warum bekommen neue Mieter dieses Blatt?",
+      "options": ["Sie sollen wissen, wohin ihr Abfall kommt.", "Sie sollen jede Woche den Hof sauber machen.", "Sie sollen weniger Verpackungen einkaufen."],
+      "answer": 0,
+      "evidence": "deshalb erklären wir hier die wichtigsten Regeln",
+      "pairs": [["Müll", "Abfall"]],
+      "explain": "이 안내문은 쓰레기를 어떻게 나누어 버리는지 그 규칙을 설명해요. Müll(쓰레기)을 Abfall로 바꿔 말한 것이 정답이에요. 마당 청소나 포장재를 덜 사라는 말은 글에 없어요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Für alte Zeitungen ist die blaue Tonne da.",
+      "answer": 0,
+      "evidence": "In die blaue Tonne kommen Papier und Kartons.",
+      "pairs": [["Papier", "alte Zeitungen"]],
+      "explain": "파란 통에는 종이와 상자를 넣어요. 신문도 종이니까 파란 통에 넣는 것이 맞아요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was gehört in die Biotonne?",
+      "options": ["leere Dosen und Deckel aus Metall", "alte Weinflaschen aus grünem Glas", "Schalen von Äpfeln und Kartoffeln"],
+      "answer": 2,
+      "evidence": "Obst- und Gemüsereste, Kaffeefilter und Teebeutel gehören in die braune Biotonne.",
+      "pairs": [["Obst- und Gemüsereste", "Schalen von Äpfeln und Kartoffeln"]],
+      "explain": "갈색 음식물 통에는 과일과 채소 찌꺼기를 넣어요. 사과 껍질과 감자 껍질이 바로 그런 것이에요. 금속 캔과 뚜껑은 노란 통에, 유리병은 유리 수거함에 넣어요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Glasflaschen ohne Pfand wirft man in die gelbe Tonne.",
+      "answer": 1,
+      "evidence": "Glas kommt nicht in die gelbe Tonne, sondern in die Glascontainer an der Ecke Gartenstraße.",
+      "pairs": [["sondern in die Glascontainer", "in die gelbe Tonne"]],
+      "explain": "유리는 노란 통이 아니라 길모퉁이에 있는 유리 수거함에 넣어요. 노란 통은 플라스틱과 금속 포장재를 넣는 통이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wann darf man die Glascontainer nicht benutzen?",
+      "options": ["am Samstagvormittag", "am Sonntagnachmittag", "am Montag um 18 Uhr"],
+      "answer": 1,
+      "evidence": "Bitte benutzen Sie die Container nur montags bis samstags von 7 bis 19 Uhr.",
+      "pairs": [["nur montags bis samstags", "am Sonntagnachmittag"]],
+      "explain": "수거함은 월요일부터 토요일까지 7시부터 19시 사이에만 쓸 수 있어요. 일요일은 여기에 들어가지 않아요. 토요일 오전과 월요일 18시는 이용할 수 있는 시간이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was macht man mit Pfandflaschen?",
+      "options": ["Man gibt sie im Geschäft wieder ab.", "Man wirft sie in den Glascontainer.", "Man stellt sie neben die Biotonne."],
+      "answer": 0,
+      "evidence": "Pfandflaschen werfen Sie nicht weg, sondern bringen sie in den Supermarkt zurück.",
+      "pairs": [["bringen sie in den Supermarkt zurück", "gibt sie im Geschäft wieder ab"]],
+      "explain": "보증금이 붙은 병은 버리지 않고 슈퍼마켓에 다시 가져다줘요. Supermarkt를 Geschäft(가게)로, zurückbringen을 wieder abgeben으로 바꿔 말했어요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Welche Tonne wird am seltensten geleert?",
+      "options": ["die Tonne für Verpackungen", "die Tonne für den Restmüll", "die Tonne für altes Papier"],
+      "answer": 2,
+      "evidence": "die gelbe alle zwei Wochen und die blaue nur einmal im Monat",
+      "pairs": [["die blaue nur einmal im Monat", "die Tonne für altes Papier"]],
+      "explain": "파란 통은 한 달에 한 번만 비워서 가장 드물게 비우는 통이에요. 파란 통은 종이를 넣는 통이에요. 일반 쓰레기 통은 매주, 포장재 통은 2주마다 비워요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "수동태 현재형",
+      "term": "Passiv Präsens (werden + Partizip II)",
+      "explain": "누가 하는지보다 무슨 일이 일어나는지가 중요할 때 수동태를 써요. werden을 주어에 맞게 바꾸고, 과거분사를 문장 끝에 놓아요. 능동문의 4격 목적어가 수동문의 주어가 돼요.",
+      "pattern": "werden(변화형) + … + 과거분사(문장 끝)",
+      "examples": [
+        {
+          "de": "In Deutschland wird der Müll getrennt.",
+          "ko": "독일에서는 쓰레기를 분리해서 버려요.",
+          "mark": ["wird", "getrennt"],
+          "parts": [["In Deutschland", "부사어(장소)"], ["wird", "동사"], ["der Müll", "주어"], ["getrennt.", "동사(끝)"]]
+        },
+        {
+          "de": "Verpackungen aus Plastik und Metall werden in der gelben Tonne gesammelt.",
+          "ko": "플라스틱과 금속으로 된 포장재는 노란 통에 모아요.",
+          "mark": ["werden", "gesammelt"],
+          "parts": [["Verpackungen aus Plastik und Metall", "주어"], ["werden", "동사"], ["in der gelben Tonne", "부사어(장소)"], ["gesammelt.", "동사(끝)"]]
+        }
+      ],
+      "tip": "주어가 단수이면 wird, 복수이면 werden이에요. 같은 내용을 man으로도 말할 수 있어요. Man trennt den Müll."
+    },
+    {
+      "title": "nicht …, sondern – ~이 아니라 ~",
+      "term": "nicht/kein …, sondern",
+      "explain": "앞의 내용을 부정하고 맞는 내용을 바로 이어서 말할 때 sondern을 써요. 앞부분에는 반드시 nicht나 kein이 있어야 해요. sondern 앞에는 쉼표를 찍어요.",
+      "pattern": "nicht/kein A, sondern B",
+      "examples": [
+        {
+          "de": "Glas kommt nicht in die gelbe Tonne, sondern in die Glascontainer an der Ecke Gartenstraße.",
+          "ko": "유리는 노란 통이 아니라 가르텐슈트라세 모퉁이에 있는 유리 수거함에 넣어요.",
+          "mark": ["nicht", "sondern"],
+          "parts": [["Glas", "주어"], ["kommt", "동사"], ["nicht", "부정어"], ["in die gelbe Tonne,", "부사어(장소)"], ["sondern", "접속사"], ["in die Glascontainer an der Ecke Gartenstraße.", "부사어(장소)"]]
+        },
+        {
+          "de": "Pfandflaschen werfen Sie nicht weg, sondern bringen sie in den Supermarkt zurück.",
+          "ko": "보증금이 붙은 병은 버리지 말고 슈퍼마켓에 다시 가져다주세요.",
+          "mark": ["nicht", "sondern"]
+        }
+      ],
+      "tip": "aber는 앞의 내용을 부정하지 않을 때 써요. Die Tonne ist klein, aber sie reicht. 앞에 nicht가 있고 내용을 바로잡을 때는 sondern이에요."
+    },
+    {
+      "title": "합성명사",
+      "term": "Komposita (zusammengesetzte Nomen)",
+      "explain": "독일어는 명사 두 개를 붙여서 새 명사를 만들어요. 뜻의 중심은 마지막 단어이고, 관사도 마지막 단어를 따라요. der Rest + der Müll = der Restmüll, das Glas + der Container = der Glascontainer예요.",
+      "pattern": "앞 단어(꾸미는 말) + 뒤 단어(중심, 관사 결정)",
+      "examples": [
+        {
+          "de": "Alles andere ist Restmüll und kommt in die schwarze Tonne.",
+          "ko": "그 밖의 것은 모두 일반 쓰레기이고 검은 통에 넣어요.",
+          "mark": ["Restmüll"],
+          "parts": [["Alles andere", "주어"], ["ist", "동사"], ["Restmüll", "보어"], ["und", "접속사"], ["kommt", "동사"], ["in die schwarze Tonne.", "부사어(장소)"]]
+        },
+        {
+          "de": "Die Termine hängen im Treppenhaus.",
+          "ko": "수거 날짜는 계단실에 붙어 있어요.",
+          "mark": ["Treppenhaus"]
+        }
+      ],
+      "tip": "두 단어 사이에 -n-이나 -s-가 들어가기도 해요. 예: die Treppe + das Haus = das Treppenhaus. 처음 보는 긴 단어는 뒤에서부터 나누어 읽으면 이해하기 쉬워요."
+    }
+  ],
+  "vocab": [
+    { "de": "der Müll (Sg.)", "ko": "쓰레기" },
+    { "de": "trennen", "ko": "분리하다, 나누다" },
+    { "de": "die Tonne, -n", "ko": "(큰) 쓰레기통" },
+    { "de": "der Hof, -¨e", "ko": "마당, 안뜰" },
+    { "de": "der Karton, -s", "ko": "(종이) 상자" },
+    { "de": "die Verpackung, -en", "ko": "포장재" },
+    { "de": "sammeln", "ko": "모으다" },
+    { "de": "der Restmüll (Sg.)", "ko": "일반 쓰레기" },
+    { "de": "die Ecke, -n", "ko": "모퉁이" },
+    { "de": "sortieren", "ko": "분류하다" },
+    { "de": "die Pfandflasche, -n", "ko": "보증금이 붙은 병" },
+    { "de": "weg|werfen (wirft weg, warf weg, hat weggeworfen)", "ko": "버리다" },
+    { "de": "leeren", "ko": "비우다" },
+    { "de": "das Treppenhaus, -¨er", "ko": "계단실" }
+  ],
+  "phrases": [
+    {
+      "de": "Herzlich willkommen!",
+      "ko": "환영합니다",
+      "ex": "Herzlich willkommen in unserem Haus!",
+      "exko": "저희 건물에 오신 것을 환영해요!"
+    },
+    {
+      "de": "am Anfang",
+      "ko": "처음에",
+      "ex": "Das ist am Anfang nicht leicht",
+      "exko": "처음에는 쉽지 않아요."
+    },
+    {
+      "de": "gehören in + Akk.",
+      "ko": "~에 넣어야 하다, ~에 속하다",
+      "ex": "Obst- und Gemüsereste, Kaffeefilter und Teebeutel gehören in die braune Biotonne.",
+      "exko": "과일과 채소 찌꺼기, 커피 필터, 티백은 갈색 음식물 통에 넣어요."
+    },
+    {
+      "de": "alle zwei Wochen",
+      "ko": "2주마다",
+      "ex": "die gelbe alle zwei Wochen und die blaue nur einmal im Monat",
+      "exko": "노란 통은 2주마다, 파란 통은 한 달에 한 번만 비워요."
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "id": "a1-23",
+  "level": "A1",
+  "no": 23,
+  "title": "Mit dem Bus zum Schwimmbad",
+  "titleKo": "버스를 타고 수영장으로",
+  "type": "Fahrplan und Nachricht",
+  "typeKo": "버스 시간표와 메시지",
+  "intro": "율레가 토요일에 놀러 오는 에마에게 수영장까지 오는 방법을 알려 줘요.",
+  "focus": ["mit + 교통수단", "공식 시각", "zu + 3격"],
+  "paragraphs": [
+    {
+      "style": "meta",
+      "de": "Hallo Emma,",
+      "ko": "에마에게"
+    },
+    {
+      "de": "am Samstag gehen wir schwimmen! Du kommst mit dem Zug, richtig? Dann nimmst du am Bahnhof den Bus. Die Linie 4 fährt direkt zum Schwimmbad. Hier ist der Fahrplan:",
+      "ko": "토요일에 우리 수영하러 가요! 기차로 오는 거 맞죠? 그러면 역에서 버스를 타세요. 4번 버스가 수영장까지 바로 가요. 여기 시간표가 있어요."
+    },
+    {
+      "style": "h",
+      "de": "Linie 4 · Samstag",
+      "ko": "4번 버스 · 토요일"
+    },
+    {
+      "style": "meta",
+      "de": "Bahnhof ab 14.05 Uhr",
+      "ko": "역 출발 14시 05분"
+    },
+    {
+      "style": "meta",
+      "de": "Rathaus 14.12 Uhr",
+      "ko": "시청 14시 12분"
+    },
+    {
+      "style": "meta",
+      "de": "Marktplatz 14.18 Uhr",
+      "ko": "시장 광장 14시 18분"
+    },
+    {
+      "style": "meta",
+      "de": "Schwimmbad an 14.27 Uhr",
+      "ko": "수영장 도착 14시 27분"
+    },
+    {
+      "de": "Die Busse fahren alle 30 Minuten. Mit dem Bus brauchst du 22 Minuten.",
+      "ko": "버스는 30분마다 다녀요. 버스로 22분 걸려요."
+    },
+    {
+      "de": "Dein Zug kommt um 13.50 Uhr an. Du hast also 15 Minuten Zeit. Vom Gleis gehst du zu Fuß zur Haltestelle – sie ist direkt vor dem Bahnhof. Die Busfahrkarte kostet 2,40 Euro. Ich wohne nicht weit vom Schwimmbad und komme mit dem Fahrrad. Um halb drei warte ich am Eingang!",
+      "ko": "에마가 탄 기차는 13시 50분에 도착해요. 그러니까 15분 여유가 있어요. 승강장에서 정류장까지는 걸어서 가요. 정류장은 역 바로 앞에 있어요. 버스 승차권은 2유로 40센트예요. 저는 수영장에서 멀지 않은 곳에 살아서 자전거로 가요. 두 시 반에 입구에서 기다릴게요!"
+    },
+    {
+      "style": "meta",
+      "de": "Bis Samstag!",
+      "ko": "토요일에 봐요!"
+    },
+    {
+      "style": "meta",
+      "de": "Jule",
+      "ko": "율레"
+    }
+  ],
+  "questions": [
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Emma fährt zuerst mit der Bahn und nimmt dann die Linie 4.",
+      "answer": 0,
+      "evidence": "Dann nimmst du am Bahnhof den Bus.",
+      "pairs": [["mit dem Zug", "mit der Bahn"], ["den Bus", "die Linie 4"]],
+      "explain": "에마는 기차로 와서 역에서 버스를 타요. Zug(기차)를 Bahn으로, Bus를 Linie 4(4번 노선)로 바꿔 말했어요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wann fährt Emmas Bus am Bahnhof ab?",
+      "options": ["um zehn vor zwei", "erst um halb drei", "um fünf nach zwei"],
+      "answer": 2,
+      "evidence": "Bahnhof ab 14.05 Uhr",
+      "pairs": [["14.05 Uhr", "um fünf nach zwei"]],
+      "explain": "버스는 역에서 14시 05분에 출발해요. 이 공식 시각을 일상적인 말로 바꾸면 fünf nach zwei(2시 5분)예요. 2시 10분 전(13시 50분)은 기차가 도착하는 시각이고, 2시 반은 율레가 입구에서 기다리는 시각이에요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Die Linie 4 fährt am Samstag jede Stunde.",
+      "answer": 1,
+      "evidence": "Die Busse fahren alle 30 Minuten.",
+      "pairs": [["alle 30 Minuten", "jede Stunde"]],
+      "explain": "버스는 30분마다 다녀요. 한 시간에 두 번 다니는 것이니까 '한 시간마다'는 틀려요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was kostet 2,40 Euro?",
+      "options": ["der Eintritt ins Bad", "ein Ticket für den Bus", "die Fahrt mit der Bahn"],
+      "answer": 1,
+      "evidence": "Die Busfahrkarte kostet 2,40 Euro.",
+      "pairs": [["Die Busfahrkarte", "ein Ticket für den Bus"]],
+      "explain": "2유로 40센트는 버스 승차권 값이에요. Busfahrkarte를 Ticket für den Bus로 바꿔 말했어요. 수영장 입장료와 기차 요금은 글에 나오지 않아요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Jule kommt auch mit dem Bus zum Schwimmbad.",
+      "answer": 1,
+      "evidence": "Ich wohne nicht weit vom Schwimmbad und komme mit dem Fahrrad.",
+      "pairs": [["mit dem Fahrrad", "mit dem Bus"]],
+      "explain": "율레는 수영장 가까이에 살아서 자전거로 가요. 버스를 타는 사람은 에마예요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wo wartet Jule um halb drei?",
+      "options": ["vor dem Schwimmbad", "an der Haltestelle", "am Gleis im Bahnhof"],
+      "answer": 0,
+      "evidence": "Um halb drei warte ich am Eingang!",
+      "pairs": [["am Eingang", "vor dem Schwimmbad"]],
+      "explain": "율레는 2시 반에 입구에서 기다린다고 해요. 여기서 입구는 수영장 입구라서 '수영장 앞'이 정답이에요. 정류장과 승강장은 에마가 버스를 타기 전에 지나는 곳이에요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "mit + 교통수단",
+      "term": "mit + Dativ (Verkehrsmittel)",
+      "explain": "무엇을 타고 가는지는 mit + 3격으로 말해요. 남성 명사와 중성 명사 앞에서는 mit dem, 여성 명사 앞에서는 mit der예요. '걸어서'만 예외로 zu Fuß라고 해요.",
+      "pattern": "mit dem Bus · mit dem Zug · mit dem Fahrrad · mit der Straßenbahn · zu Fuß",
+      "examples": [
+        {
+          "de": "Du kommst mit dem Zug, richtig?",
+          "ko": "기차로 오는 거 맞죠?",
+          "mark": ["mit dem Zug"],
+          "parts": [["Du", "주어"], ["kommst", "동사"], ["mit dem Zug,", "부사어(방법)"], ["richtig?", "기타"]]
+        },
+        {
+          "de": "Mit dem Bus brauchst du 22 Minuten.",
+          "ko": "버스로 22분 걸려요.",
+          "mark": ["Mit dem Bus"],
+          "parts": [["Mit dem Bus", "부사어(방법)"], ["brauchst", "동사"], ["du", "주어"], ["22 Minuten.", "4격 목적어"]]
+        }
+      ],
+      "tip": "교통수단 앞에는 in이나 auf가 아니라 mit을 써요. 그리고 mit dem Fuß가 아니라 zu Fuß예요."
+    },
+    {
+      "title": "공식 시각",
+      "term": "Offizielle Uhrzeit (24-Stunden-Zählung)",
+      "explain": "시간표, 안내 방송, 예약에서는 0시부터 24시까지 세는 공식 시각을 써요. 14.05 Uhr는 vierzehn Uhr fünf라고 읽어요. 친구끼리 말할 때는 fünf nach zwei, halb drei처럼 말해요.",
+      "pattern": "시 + Uhr + 분 (14.27 Uhr = vierzehn Uhr siebenundzwanzig)",
+      "examples": [
+        {
+          "de": "Dein Zug kommt um 13.50 Uhr an.",
+          "ko": "에마가 탄 기차는 13시 50분에 도착해요.",
+          "mark": ["um 13.50 Uhr"],
+          "parts": [["Dein Zug", "주어"], ["kommt", "동사"], ["um 13.50 Uhr", "부사어(시간)"], ["an.", "동사(끝)"]]
+        },
+        {
+          "de": "Um halb drei warte ich am Eingang!",
+          "ko": "두 시 반에 입구에서 기다릴게요!",
+          "mark": ["Um halb drei"],
+          "parts": [["Um halb drei", "부사어(시간)"], ["warte", "동사"], ["ich", "주어"], ["am Eingang!", "부사어(장소)"]]
+        }
+      ],
+      "tip": "halb drei는 3시 반이 아니라 2시 반이에요. '3시가 되기까지 반 시간 남았다'고 생각하면 돼요."
+    },
+    {
+      "title": "zu + 3격 – 어디로?",
+      "term": "zu + Dativ (zum, zur)",
+      "explain": "어떤 건물이나 장소, 사람에게 갈 때 zu + 3격을 써요. zu dem은 zum으로, zu der는 zur로 줄여요. 반대로 '~에서부터'는 von + 3격이고 von dem은 vom이 돼요.",
+      "pattern": "zum + 남성·중성 명사 · zur + 여성 명사",
+      "examples": [
+        {
+          "de": "Die Linie 4 fährt direkt zum Schwimmbad.",
+          "ko": "4번 버스가 수영장까지 바로 가요.",
+          "mark": ["zum Schwimmbad"],
+          "parts": [["Die Linie 4", "주어"], ["fährt", "동사"], ["direkt", "부사어(방법)"], ["zum Schwimmbad.", "부사어(장소)"]]
+        },
+        {
+          "de": "Vom Gleis gehst du zu Fuß zur Haltestelle",
+          "ko": "승강장에서 정류장까지는 걸어서 가요.",
+          "mark": ["Vom Gleis", "zur Haltestelle"],
+          "parts": [["Vom Gleis", "부사어(장소)"], ["gehst", "동사"], ["du", "주어"], ["zu Fuß", "부사어(방법)"], ["zur Haltestelle", "부사어(장소)"]]
+        }
+      ],
+      "tip": "도시나 나라로 갈 때는 zu가 아니라 nach를 써요. 예: nach Berlin, nach Korea."
+    }
+  ],
+  "vocab": [
+    { "de": "der Fahrplan, -¨e", "ko": "시간표, 운행표" },
+    { "de": "die Linie, -n", "ko": "(버스·전철의) 노선" },
+    { "de": "das Schwimmbad, -¨er", "ko": "수영장" },
+    { "de": "der Bahnhof, -¨e", "ko": "역" },
+    { "de": "die Haltestelle, -n", "ko": "정류장" },
+    { "de": "das Gleis, -e", "ko": "승강장, 선로" },
+    { "de": "die Busfahrkarte, -n", "ko": "버스 승차권" },
+    { "de": "an|kommen (kommt an, kam an, ist angekommen)", "ko": "도착하다" },
+    { "de": "nehmen (nimmt, nahm, hat genommen)", "ko": "(교통수단을) 타다" },
+    { "de": "direkt", "ko": "바로, 곧장" },
+    { "de": "das Fahrrad, -¨er", "ko": "자전거" },
+    { "de": "der Eingang, -¨e", "ko": "입구" }
+  ],
+  "phrases": [
+    {
+      "de": "den Bus nehmen",
+      "ko": "버스를 타다",
+      "ex": "Dann nimmst du am Bahnhof den Bus.",
+      "exko": "그러면 역에서 버스를 타세요."
+    },
+    {
+      "de": "zu Fuß gehen",
+      "ko": "걸어서 가다",
+      "ex": "Vom Gleis gehst du zu Fuß zur Haltestelle",
+      "exko": "승강장에서 정류장까지는 걸어서 가요."
+    },
+    {
+      "de": "alle 30 Minuten",
+      "ko": "30분마다",
+      "ex": "Die Busse fahren alle 30 Minuten.",
+      "exko": "버스는 30분마다 다녀요."
+    }
+  ]
+}

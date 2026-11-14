@@ -1,0 +1,230 @@
+{
+  "id": "a2-22",
+  "level": "A2",
+  "no": 22,
+  "title": "Wie schlafen Igel im Winter?",
+  "titleKo": "고슴도치는 겨울에 어떻게 잘까요?",
+  "type": "Kindersachtext",
+  "typeKo": "어린이 지식 글",
+  "intro": "고슴도치가 겨울잠을 어떻게 자는지 어린이의 질문에 답하는 글이에요.",
+  "focus": ["werden + 형용사", "nicht mehr · nur noch", "관사 없는 복수"],
+  "paragraphs": [
+    {
+      "style": "meta",
+      "de": "Frag doch mal! · Die Wissensseite für Kinder",
+      "ko": "궁금하면 물어봐요! · 어린이 지식 코너"
+    },
+    {
+      "style": "q",
+      "de": "Milan (9) fragt: Wo sind die Igel im Winter? Schlafen sie wirklich so lange?",
+      "ko": "밀란(9세)이 물어요. 겨울에 고슴도치는 어디에 있나요? 정말 그렇게 오래 자나요?"
+    },
+    {
+      "de": "Lieber Milan, im Sommer und im Herbst kannst du Igel abends im Garten sehen. Sie fressen Insekten, Würmer und Schnecken. Im Herbst fressen sie besonders viel und werden richtig dick. Das Fett brauchen sie später.",
+      "ko": "밀란, 여름과 가을에는 저녁에 정원에서 고슴도치를 볼 수 있어요. 고슴도치는 곤충, 지렁이, 달팽이를 먹어요. 가을에는 특히 많이 먹어서 아주 통통해져요. 이 지방은 나중에 필요해요."
+    },
+    {
+      "de": "Im November wird es kalt, und die Tage werden immer kürzer. Jetzt finden Igel fast kein Futter mehr. Deshalb suchen sie einen ruhigen Platz, zum Beispiel unter einem Haufen Laub, und bauen dort ein Nest. Dann beginnt der Winterschlaf.",
+      "ko": "11월이 되면 날씨가 추워지고 낮이 점점 짧아져요. 이제 고슴도치는 먹이를 거의 찾지 못해요. 그래서 낙엽 더미 아래 같은 조용한 곳을 찾아서 거기에 둥지를 지어요. 그러고 나서 겨울잠이 시작돼요."
+    },
+    {
+      "de": "Der Winterschlaf ist kein normaler Schlaf. Der Igel wird ganz kalt: Sein Körper ist nur noch etwa fünf Grad warm. Das Herz schlägt nur noch wenige Male pro Minute. Der Igel bewegt sich nicht mehr und atmet sehr langsam. So braucht er fast keine Energie. Er frisst monatelang nichts und lebt nur von seinem Fett.",
+      "ko": "겨울잠은 보통 잠과 달라요. 고슴도치는 몸이 아주 차가워져요. 체온이 5도쯤밖에 되지 않아요. 심장은 1분에 몇 번밖에 뛰지 않아요. 고슴도치는 더 이상 움직이지 않고 아주 천천히 숨을 쉬어요. 그래서 에너지가 거의 필요하지 않아요. 몇 달 동안 아무것도 먹지 않고 몸에 있는 지방만으로 살아요."
+    },
+    {
+      "de": "Im März oder April wird es wieder wärmer. Dann werden die Igel wach. Sie sind jetzt dünn und haben großen Hunger.",
+      "ko": "3월이나 4월이 되면 다시 따뜻해져요. 그러면 고슴도치가 잠에서 깨어나요. 이때 고슴도치는 말랐고 몹시 배가 고파요."
+    },
+    {
+      "de": "Möchtet ihr Igeln helfen? Dann lasst im Herbst einen Laubhaufen im Garten liegen. Stellt im Frühling eine Schale Wasser hin. Aber gebt Igeln bitte keine Milch – davon werden sie krank.",
+      "ko": "고슴도치를 돕고 싶나요? 그러면 가을에 정원에 낙엽 더미를 그대로 두세요. 봄에는 물그릇을 놓아 주세요. 하지만 고슴도치에게 우유는 주지 마세요. 우유를 먹으면 병이 나요."
+    }
+  ],
+  "questions": [
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Warum fressen Igel im Herbst so viel?",
+      "options": ["Sie bauen aus dem Futter ihr Nest.", "Sie sammeln Fett für den Winter.", "Im Winter fressen sie noch mehr."],
+      "answer": 1,
+      "evidence": "Das Fett brauchen sie später.",
+      "pairs": [["werden richtig dick", "sammeln Fett"], ["später", "für den Winter"]],
+      "explain": "고슴도치는 가을에 많이 먹어서 통통해지고, 이 지방을 나중에 써요. 겨울잠을 자는 동안에는 몸에 있는 지방으로 살아요. 둥지는 먹이가 아니라 낙엽으로 짓고, 겨울에는 아무것도 먹지 않아요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Im November gibt es für Igel noch genug Futter.",
+      "answer": 1,
+      "evidence": "Jetzt finden Igel fast kein Futter mehr.",
+      "pairs": [["fast kein Futter mehr", "noch genug Futter"]],
+      "explain": "11월이 되면 고슴도치는 먹이를 거의 찾지 못해요. '아직 충분하다'는 말은 글의 내용과 반대예요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wo schlafen Igel im Winter?",
+      "options": ["in einem Nest unter Blättern", "in einer großen Wasserschale", "an einem Platz ganz ohne Laub"],
+      "answer": 0,
+      "evidence": "zum Beispiel unter einem Haufen Laub, und bauen dort ein Nest",
+      "pairs": [["unter einem Haufen Laub", "unter Blättern"]],
+      "explain": "고슴도치는 낙엽 더미 아래 같은 곳에 둥지를 지어요. Laub(낙엽)을 Blätter(잎)로 바꿔 말했어요. 물그릇은 사람이 물을 주려고 놓는 것이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "paraphrase",
+      "q": "Was bedeutet der Satz „Der Winterschlaf ist kein normaler Schlaf“?",
+      "options": ["Igel schlafen im Winter nur in der Nacht.", "Igel werden im Winter jeden Tag wach.", "Der Körper arbeitet dann viel weniger."],
+      "answer": 2,
+      "evidence": "So braucht er fast keine Energie.",
+      "pairs": [["braucht er fast keine Energie", "arbeitet dann viel weniger"]],
+      "explain": "겨울잠을 자는 동안에는 체온이 떨어지고 심장도 숨도 아주 느려져요. 몸이 평소보다 훨씬 적게 일한다는 뜻이에요. 고슴도치는 몇 달 동안 계속 자기 때문에 밤에만 자거나 매일 깨는 것이 아니에요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Im Winterschlaf ist der Igel viel kälter als sonst.",
+      "answer": 0,
+      "evidence": "Sein Körper ist nur noch etwa fünf Grad warm.",
+      "pairs": [["nur noch etwa fünf Grad warm", "viel kälter als sonst"]],
+      "explain": "겨울잠을 잘 때 고슴도치의 체온은 5도쯤밖에 되지 않아요. nur noch(이제 ~밖에)는 평소보다 훨씬 낮아졌다는 뜻이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wie sind Igel nach dem Winterschlaf?",
+      "options": ["nicht mehr dick und hungrig", "immer noch dick und sehr müde", "wieder krank und sehr kalt"],
+      "answer": 0,
+      "evidence": "Sie sind jetzt dünn und haben großen Hunger.",
+      "pairs": [["dünn", "nicht mehr dick"], ["haben großen Hunger", "hungrig"]],
+      "explain": "잠에서 깬 고슴도치는 말랐고 몹시 배가 고파요. dünn(마른)을 nicht mehr dick(더는 통통하지 않은)으로 바꿔 말했어요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was soll man für Igel tun?",
+      "options": ["im Herbst das ganze Laub wegräumen", "im Frühling etwas zu trinken geben", "im Winter warme Milch hinstellen"],
+      "answer": 1,
+      "evidence": "Stellt im Frühling eine Schale Wasser hin.",
+      "pairs": [["eine Schale Wasser", "etwas zu trinken"]],
+      "explain": "봄에 물그릇을 놓아 주라고 해요. Wasser(물)를 etwas zu trinken(마실 것)으로 바꿔 말했어요. 낙엽은 치우지 말고 그대로 두어야 하고, 우유는 주면 안 돼요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "werden + 형용사: 상태의 변화",
+      "term": "werden + Adjektiv (Veränderung)",
+      "explain": "werden 뒤에 형용사가 오면 '~해지다, ~하게 되다'라는 뜻이에요. 상태가 바뀌는 것을 나타내요. 비교급과 함께 쓰면 '더 ~해지다'가 돼요. werden은 du wirst, er/sie/es wird처럼 불규칙하게 변해요.",
+      "pattern": "werden + 형용사 / 비교급",
+      "examples": [
+        {
+          "de": "Im März oder April wird es wieder wärmer.",
+          "ko": "3월이나 4월이 되면 다시 따뜻해져요.",
+          "mark": ["wird", "wärmer"],
+          "parts": [["Im März oder April", "부사어(시간)"], ["wird", "동사"], ["es", "주어"], ["wieder", "부사어"], ["wärmer.", "보어"]]
+        },
+        {
+          "de": "Dann werden die Igel wach.",
+          "ko": "그러면 고슴도치가 잠에서 깨어나요.",
+          "mark": ["werden", "wach"],
+          "parts": [["Dann", "부사어(시간)"], ["werden", "동사"], ["die Igel", "주어"], ["wach.", "보어"]]
+        },
+        {
+          "de": "Im Herbst fressen sie besonders viel und werden richtig dick.",
+          "ko": "가을에는 특히 많이 먹어서 아주 통통해져요.",
+          "mark": ["werden richtig dick"]
+        }
+      ],
+      "tip": "sein은 지금의 상태를, werden은 변화를 말해요. Es ist kalt.(추워요.) Es wird kalt.(추워져요.)"
+    },
+    {
+      "title": "nicht mehr · kein … mehr · nur noch",
+      "term": "nicht mehr, kein … mehr, nur noch",
+      "explain": "nicht mehr는 '더 이상 ~하지 않다'라는 뜻이에요. 명사를 부정할 때는 kein + 명사 + mehr를 써요. nur noch는 '이제 ~밖에 남지 않았다'라는 뜻으로, 전보다 줄었다는 것을 나타내요.",
+      "pattern": "동사 + nicht mehr · kein + 명사 + mehr · nur noch + 양",
+      "examples": [
+        {
+          "de": "Jetzt finden Igel fast kein Futter mehr.",
+          "ko": "이제 고슴도치는 먹이를 거의 찾지 못해요.",
+          "mark": ["kein Futter mehr"],
+          "parts": [["Jetzt", "부사어(시간)"], ["finden", "동사"], ["Igel", "주어"], ["fast kein Futter mehr.", "4격 목적어"]]
+        },
+        {
+          "de": "Das Herz schlägt nur noch wenige Male pro Minute.",
+          "ko": "심장은 1분에 몇 번밖에 뛰지 않아요.",
+          "mark": ["nur noch"],
+          "parts": [["Das Herz", "주어"], ["schlägt", "동사"], ["nur noch wenige Male pro Minute.", "부사어(빈도)"]]
+        },
+        {
+          "de": "Der Igel bewegt sich nicht mehr und atmet sehr langsam.",
+          "ko": "고슴도치는 더 이상 움직이지 않고 아주 천천히 숨을 쉬어요.",
+          "mark": ["nicht mehr"]
+        }
+      ],
+      "tip": "어순에 주의하세요. mehr nicht가 아니라 nicht mehr이고, mehr는 kein + 명사 뒤에 와요: kein Futter mehr."
+    },
+    {
+      "title": "관사 없는 복수 – 일반적인 사실",
+      "term": "Nullartikel im Plural (allgemeine Aussagen)",
+      "explain": "어떤 동물이나 사물 전체에 대해 일반적인 사실을 말할 때는 복수형을 관사 없이 써요. 부정관사 ein에는 복수형이 없기 때문이에요. Igel fressen Insekten.은 '고슴도치는 곤충을 먹는다'는 일반적인 사실을 말해요.",
+      "pattern": "복수 명사(관사 없음) + 동사 …",
+      "examples": [
+        {
+          "de": "Sie fressen Insekten, Würmer und Schnecken.",
+          "ko": "고슴도치는 곤충, 지렁이, 달팽이를 먹어요.",
+          "mark": ["Insekten, Würmer und Schnecken"],
+          "parts": [["Sie", "주어"], ["fressen", "동사"], ["Insekten, Würmer und Schnecken.", "4격 목적어"]]
+        },
+        {
+          "de": "Aber gebt Igeln bitte keine Milch",
+          "ko": "하지만 고슴도치에게 우유는 주지 마세요.",
+          "mark": ["Igeln"],
+          "parts": [["Aber", "접속사"], ["gebt", "동사"], ["Igeln", "3격 목적어"], ["bitte", "기타"], ["keine Milch", "4격 목적어"]]
+        }
+      ],
+      "tip": "3격 복수에서는 명사 끝에 -n이 붙어요. 그래서 Igel이 Igeln이 돼요. 앞에서 이미 말한 동물들을 가리킬 때는 die Igel처럼 정관사를 써요."
+    }
+  ],
+  "vocab": [
+    { "de": "der Igel, -", "ko": "고슴도치" },
+    { "de": "fressen (frisst, fraß, hat gefressen)", "ko": "(동물이) 먹다" },
+    { "de": "das Insekt, -en", "ko": "곤충" },
+    { "de": "die Schnecke, -n", "ko": "달팽이" },
+    { "de": "das Fett (Sg.)", "ko": "지방" },
+    { "de": "das Futter (Sg.)", "ko": "먹이" },
+    { "de": "das Laub (Sg.)", "ko": "낙엽" },
+    { "de": "das Nest, -er", "ko": "둥지" },
+    { "de": "der Winterschlaf (Sg.)", "ko": "겨울잠" },
+    { "de": "der Körper, -", "ko": "몸" },
+    { "de": "das Herz, -en", "ko": "심장" },
+    { "de": "atmen", "ko": "숨 쉬다" },
+    { "de": "dünn", "ko": "마른, 얇은" },
+    { "de": "die Schale, -n", "ko": "(얕은) 그릇" }
+  ],
+  "phrases": [
+    {
+      "de": "zum Beispiel",
+      "ko": "예를 들어",
+      "ex": "Deshalb suchen sie einen ruhigen Platz, zum Beispiel unter einem Haufen Laub, und bauen dort ein Nest.",
+      "exko": "그래서 낙엽 더미 아래 같은 조용한 곳을 찾아서 거기에 둥지를 지어요."
+    },
+    {
+      "de": "leben von + Dat.",
+      "ko": "~으로 살다",
+      "ex": "Er frisst monatelang nichts und lebt nur von seinem Fett.",
+      "exko": "몇 달 동안 아무것도 먹지 않고 몸에 있는 지방만으로 살아요."
+    },
+    {
+      "de": "wach werden",
+      "ko": "잠에서 깨다",
+      "ex": "Dann werden die Igel wach.",
+      "exko": "그러면 고슴도치가 잠에서 깨어나요."
+    },
+    {
+      "de": "Hunger haben",
+      "ko": "배가 고프다",
+      "ex": "Sie sind jetzt dünn und haben großen Hunger.",
+      "exko": "이때 고슴도치는 말랐고 몹시 배가 고파요."
+    }
+  ]
+}

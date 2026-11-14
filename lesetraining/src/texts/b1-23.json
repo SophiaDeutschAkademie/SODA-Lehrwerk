@@ -1,0 +1,254 @@
+{
+  "id": "b1-23",
+  "level": "B1",
+  "no": 23,
+  "title": "Wer kocht heute noch selbst?",
+  "titleKo": "요즘 누가 직접 요리할까요?",
+  "type": "Text zu einer Infografik",
+  "typeKo": "설문 그래프 설명글",
+  "intro": "한 도시 주민 1,000명에게 집에서 얼마나 자주 요리하는지 물은 설문 결과를 정리한 글이에요.",
+  "focus": ["비율 표현", "대조 표현", "형용사의 명사화", "steigen · sinken"],
+  "paragraphs": [
+    {
+      "de": "Wie oft steht in Marlenburg noch jemand am Herd? Das wollte unser Magazin wissen und hat im Frühjahr 1.000 Einwohnerinnen und Einwohner befragt. Die Grafik auf dieser Seite zeigt die wichtigsten Ergebnisse.",
+      "ko": "마를렌부르크에서는 아직 얼마나 자주 직접 요리를 할까요? 본지는 이것이 궁금해서 올봄에 주민 1,000명에게 물었습니다. 이 면의 그래프는 가장 중요한 결과를 보여 줍니다."
+    },
+    {
+      "de": "Nur noch 38 Prozent der Befragten kochen jeden Tag selbst. Vor zehn Jahren war es noch gut die Hälfte, nämlich 51 Prozent. Der Anteil ist also um 13 Prozentpunkte gesunken. Rund ein Drittel kocht mehrmals pro Woche, und 28 Prozent stehen selten oder nie in der Küche. Zusammen sind das fast zwei Drittel, die nicht mehr täglich kochen.",
+      "ko": "응답자 가운데 매일 직접 요리하는 사람은 이제 38퍼센트뿐입니다. 10년 전에는 절반이 조금 넘는 51퍼센트였습니다. 그러니까 이 비율은 13퍼센트포인트 줄었습니다. 약 3분의 1은 일주일에 여러 번 요리하고, 28퍼센트는 부엌에 서는 일이 드물거나 전혀 없습니다. 둘을 합치면 이제 매일 요리하지는 않는 사람이 거의 3분의 2입니다."
+    },
+    {
+      "de": "Besonders groß ist der Unterschied zwischen den Generationen. Bei den über 60-Jährigen bereitet mehr als die Hälfte täglich eine warme Mahlzeit zu. Bei den 18- bis 29-Jährigen ist es dagegen nur jeder Fünfte. Während die Älteren Kochen meist als Teil ihres Alltags sehen, fehlt den Jüngeren dafür oft die Zeit.",
+      "ko": "세대 사이의 차이가 특히 큽니다. 60세가 넘은 사람들은 절반 이상이 매일 따뜻한 식사를 준비합니다. 반면 18세에서 29세 사이에서는 다섯 명 중 한 명뿐입니다. 나이 든 사람들은 요리를 대개 일상의 일부로 여기지만, 젊은 사람들은 요리할 시간이 없는 경우가 많습니다."
+    },
+    {
+      "de": "Warum bleibt die Küche kalt? Zwei Drittel der Berufstätigen sagen, dass sie nach der Arbeit zu müde sind. Jeder dritte Alleinlebende findet, dass sich der Aufwand für eine Person nicht lohnt. Gleichzeitig wird immer häufiger bestellt: Der Anteil der Menschen, die mindestens einmal pro Woche Essen liefern lassen, ist von 9 auf 27 Prozent gestiegen.",
+      "ko": "왜 부엌에서 요리를 하지 않을까요? 직장인의 3분의 2는 일을 마치면 너무 피곤하다고 말합니다. 혼자 사는 사람 세 명 중 한 명은 한 사람을 위해 그런 수고를 들일 만하지 않다고 생각합니다. 동시에 음식을 주문하는 일은 점점 잦아지고 있습니다. 일주일에 한 번 이상 음식을 배달시키는 사람의 비율은 9퍼센트에서 27퍼센트로 늘었습니다."
+    },
+    {
+      "de": "Eine Zahl hat die Redaktion überrascht: Im Vergleich zu den Älteren kochen die Jüngeren zwar seltener, aber häufiger gemeinsam. 45 Prozent der unter 30-Jährigen treffen sich am Wochenende mit Freunden zum Kochen – bei den über 60-Jährigen sind es nur 12 Prozent.",
+      "ko": "편집부를 놀라게 한 숫자가 하나 있습니다. 젊은 사람들은 나이 든 사람들에 비해 요리를 덜 하지만, 여럿이 함께 요리하는 일은 더 많습니다. 30세 미만의 45퍼센트는 주말에 친구들과 만나 요리합니다. 60세가 넘은 사람들 가운데서는 12퍼센트뿐입니다."
+    },
+    {
+      "de": "Die Ernährungsberaterin Carmen Ebert wundert das nicht. „Für viele Jüngere ist Kochen keine Pflicht mehr, sondern ein Erlebnis“, sagt sie. „Wer unter der Woche keine Zeit hat, sollte am Sonntag vorkochen. Das spart Geld und ist gesünder als die meisten Fertiggerichte.“",
+      "ko": "영양 상담사 카르멘 에베르트는 이 결과가 놀랍지 않다고 합니다. “많은 젊은이에게 요리는 이제 의무가 아니라 하나의 즐거운 경험이에요.” 에베르트는 이렇게 말합니다. “평일에 시간이 없는 사람은 일요일에 미리 만들어 두는 것이 좋아요. 돈도 아끼고, 대부분의 즉석식품보다 건강에도 좋아요.”"
+    }
+  ],
+  "questions": [
+    {
+      "type": "mc",
+      "kind": "gist",
+      "q": "Was zeigt die Umfrage insgesamt?",
+      "options": ["Heute wird häufiger gekocht als vor zehn Jahren.", "Junge Leute kochen öfter als die ältere Generation.", "Immer weniger Menschen stehen täglich am Herd."],
+      "answer": 2,
+      "evidence": "Nur noch 38 Prozent der Befragten kochen jeden Tag selbst.",
+      "pairs": [["Nur noch 38 Prozent", "Immer weniger Menschen"]],
+      "explain": "매일 직접 요리하는 사람은 10년 전 51퍼센트에서 지금 38퍼센트로 줄었어요. 그래서 '매일 요리하는 사람이 점점 줄고 있다'가 전체 내용을 가장 잘 나타내요. 젊은 사람들은 나이 든 사람들보다 요리를 덜 해요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Vor zehn Jahren kochte noch etwas mehr als jeder Zweite täglich.",
+      "answer": 0,
+      "evidence": "Vor zehn Jahren war es noch gut die Hälfte, nämlich 51 Prozent.",
+      "pairs": [["gut die Hälfte", "etwas mehr als jeder Zweite"]],
+      "explain": "10년 전에는 51퍼센트가 매일 요리했어요. gut die Hälfte는 '절반이 조금 넘는다'는 뜻이고, 이것을 '두 명 중 한 명보다 조금 많다'로 바꿔 말했어요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Wie viele der Befragten kochen selten oder nie?",
+      "options": ["ungefähr jeder Zweite", "mehr als ein Viertel", "höchstens ein Fünftel"],
+      "answer": 1,
+      "evidence": "28 Prozent stehen selten oder nie in der Küche",
+      "pairs": [["28 Prozent", "mehr als ein Viertel"]],
+      "explain": "요리를 거의 하지 않거나 전혀 하지 않는 사람은 28퍼센트예요. 4분의 1은 25퍼센트니까 28퍼센트는 4분의 1보다 조금 많아요. 5분의 1은 20퍼센트, 두 명 중 한 명은 50퍼센트예요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was unterscheidet die über 60-Jährigen von den 18- bis 29-Jährigen?",
+      "options": ["Bei ihnen kocht die Mehrheit jeden Tag.", "Bei ihnen kocht nur einer von fünf täglich.", "Bei ihnen fehlt meistens die Zeit dafür."],
+      "answer": 0,
+      "evidence": "Bei den über 60-Jährigen bereitet mehr als die Hälfte täglich eine warme Mahlzeit zu.",
+      "pairs": [["mehr als die Hälfte", "die Mehrheit"]],
+      "explain": "60세가 넘은 사람들은 절반 이상이 매일 요리해요. mehr als die Hälfte(절반 이상)를 die Mehrheit(다수)로 바꿔 말했어요. 다섯 명 중 한 명만 요리하고 시간이 부족한 쪽은 젊은 사람들이에요."
+    },
+    {
+      "type": "rf",
+      "kind": "detail",
+      "q": "Viele Berufstätige haben abends keine Energie mehr zum Kochen.",
+      "answer": 0,
+      "evidence": "Zwei Drittel der Berufstätigen sagen, dass sie nach der Arbeit zu müde sind.",
+      "pairs": [["nach der Arbeit zu müde", "abends keine Energie mehr"]],
+      "explain": "직장인의 3분의 2는 일을 마치면 너무 피곤하다고 말해요. 이것을 '저녁에 요리할 기운이 없다'로 바꿔 말했어요."
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "q": "Was bedeutet die Frage „Warum bleibt die Küche kalt?“ im Text?",
+      "options": ["Warum heizen so viele Leute ihre Küche nicht?", "Warum essen so viele Leute lieber kalte Speisen?", "Warum wird in vielen Haushalten nicht gekocht?"],
+      "answer": 2,
+      "evidence": "Warum bleibt die Küche kalt?",
+      "pairs": [["die Küche kalt", "nicht gekocht"]],
+      "explain": "불을 쓰지 않으면 부엌이 차가워요. 그래서 die Küche bleibt kalt는 '집에서 요리를 하지 않는다'는 뜻으로 쓰는 표현이에요. 난방이나 찬 음식을 말하는 것이 아니에요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was hat sich beim Bestellen von Essen verändert?",
+      "options": ["Dreimal so viele Menschen wie früher bestellen jede Woche.", "Etwa neun Prozent bestellen heute seltener als früher.", "Jeder Zweite lässt sich heute regelmäßig Essen bringen."],
+      "answer": 0,
+      "evidence": "ist von 9 auf 27 Prozent gestiegen",
+      "pairs": [["von 9 auf 27 Prozent gestiegen", "Dreimal so viele Menschen wie früher"]],
+      "explain": "일주일에 한 번 이상 음식을 배달시키는 사람의 비율이 9퍼센트에서 27퍼센트로 늘었어요. 27은 9의 세 배예요. 두 명 중 한 명은 50퍼센트라서 맞지 않아요."
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "q": "Was rät Carmen Ebert Menschen mit wenig Zeit?",
+      "options": ["Sie sollen öfter gesunde Fertiggerichte kaufen.", "Sie sollen an einem freien Tag auf Vorrat kochen.", "Sie sollen sich jeden Sonntag Essen bringen lassen."],
+      "answer": 1,
+      "evidence": "Wer unter der Woche keine Zeit hat, sollte am Sonntag vorkochen.",
+      "pairs": [["am Sonntag vorkochen", "an einem freien Tag auf Vorrat kochen"]],
+      "explain": "에베르트는 평일에 시간이 없으면 일요일에 미리 요리해 두라고 권해요. vorkochen(미리 요리하다)을 auf Vorrat kochen(넉넉히 만들어 두다)으로 바꿔 말했어요. 에베르트는 즉석식품보다 직접 만든 음식이 건강에 좋다고 해요."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "비율 표현",
+      "term": "Anteile angeben (die Hälfte, ein Drittel, jeder Fünfte)",
+      "explain": "비율은 퍼센트 말고도 분수나 jeder + 서수로 말할 수 있어요. die Hälfte는 절반, ein Drittel은 3분의 1, zwei Drittel은 3분의 2, jeder Fünfte는 다섯 명 중 한 명이에요. 앞에 gut(조금 넘게), knapp(조금 못 되게), rund(약)을 붙여 어림수를 말해요. 뒤에는 2격이 와요: zwei Drittel der Berufstätigen.",
+      "pattern": "(gut / knapp / rund) + die Hälfte / ein Drittel + 2격 · jeder + 서수",
+      "examples": [
+        {
+          "de": "Rund ein Drittel kocht mehrmals pro Woche",
+          "ko": "약 3분의 1은 일주일에 여러 번 요리합니다.",
+          "mark": ["Rund ein Drittel"],
+          "parts": [["Rund ein Drittel", "주어"], ["kocht", "동사"], ["mehrmals pro Woche", "부사어(빈도)"]]
+        },
+        {
+          "de": "Bei den 18- bis 29-Jährigen ist es dagegen nur jeder Fünfte.",
+          "ko": "반면 18세에서 29세 사이에서는 다섯 명 중 한 명뿐입니다.",
+          "mark": ["jeder Fünfte"]
+        },
+        {
+          "de": "Zwei Drittel der Berufstätigen sagen, dass sie nach der Arbeit zu müde sind.",
+          "ko": "직장인의 3분의 2는 일을 마치면 너무 피곤하다고 말합니다.",
+          "mark": ["Zwei Drittel der Berufstätigen"]
+        }
+      ],
+      "tip": "ein Drittel처럼 분수가 하나이면 동사는 단수(kocht), zwei Drittel처럼 여럿이면 복수(sagen)예요."
+    },
+    {
+      "title": "대조 표현",
+      "term": "Gegensätze ausdrücken: während, dagegen, im Vergleich zu",
+      "explain": "두 집단의 차이를 말할 때 쓰는 표현이에요. während는 종속접속사라서 동사가 절의 끝에 와요. dagegen(반면에)은 부사이고 보통 동사 뒤에 놓아요. im Vergleich zu + 3격은 '~과 비교하면'이라는 뜻이에요.",
+      "pattern": "Während + 주어 … 동사(끝), 동사 + 주어 … · … dagegen … · Im Vergleich zu + 3격",
+      "examples": [
+        {
+          "de": "Während die Älteren Kochen meist als Teil ihres Alltags sehen, fehlt den Jüngeren dafür oft die Zeit.",
+          "ko": "나이 든 사람들은 요리를 대개 일상의 일부로 여기지만, 젊은 사람들은 요리할 시간이 없는 경우가 많습니다.",
+          "mark": ["Während", "sehen"],
+          "parts": [["Während die Älteren Kochen meist als Teil ihres Alltags sehen,", "종속절"], ["fehlt", "동사"], ["den Jüngeren", "3격 목적어"], ["dafür", "부사어"], ["oft", "부사어(빈도)"], ["die Zeit.", "주어"]]
+        },
+        {
+          "de": "Im Vergleich zu den Älteren kochen die Jüngeren zwar seltener, aber häufiger gemeinsam.",
+          "ko": "젊은 사람들은 나이 든 사람들에 비해 요리를 덜 하지만, 여럿이 함께 요리하는 일은 더 많습니다.",
+          "mark": ["Im Vergleich zu den Älteren"]
+        }
+      ],
+      "tip": "während는 '~하는 동안'이라는 시간의 뜻으로도 써요. 여기서는 두 가지를 맞세우는 '~인 반면에'라는 뜻이에요."
+    },
+    {
+      "title": "형용사의 명사화",
+      "term": "Nominalisierte Adjektive und Partizipien (die Befragten, die Jüngeren)",
+      "explain": "형용사나 분사를 대문자로 쓰면 '~한 사람'이라는 명사가 돼요. 하지만 어미는 형용사처럼 변해요. die Befragten(응답자들), die Berufstätigen(직장인들), die Jüngeren(더 젊은 사람들)이 그 예예요. 관사가 없거나 부정관사가 오면 어미가 달라져요: ein Alleinlebender, jeder dritte Alleinlebende.",
+      "pattern": "der/die + 형용사·분사(대문자) + 형용사 어미",
+      "examples": [
+        {
+          "de": "Nur noch 38 Prozent der Befragten kochen jeden Tag selbst.",
+          "ko": "응답자 가운데 매일 직접 요리하는 사람은 이제 38퍼센트뿐입니다.",
+          "mark": ["der Befragten"],
+          "parts": [["Nur noch 38 Prozent der Befragten", "주어"], ["kochen", "동사"], ["jeden Tag", "부사어(빈도)"], ["selbst.", "부사어(방법)"]]
+        },
+        {
+          "de": "Jeder dritte Alleinlebende findet, dass sich der Aufwand für eine Person nicht lohnt.",
+          "ko": "혼자 사는 사람 세 명 중 한 명은 한 사람을 위해 그런 수고를 들일 만하지 않다고 생각합니다.",
+          "mark": ["Alleinlebende"]
+        }
+      ],
+      "tip": "복수 1격은 die Befragten이지만 관사가 없으면 Befragte가 돼요. 예: Viele Befragte kochen selten."
+    },
+    {
+      "title": "steigen · sinken: 변화를 나타내는 동사",
+      "term": "Veränderungen beschreiben: steigen / sinken + um / von … auf",
+      "explain": "수치가 늘면 steigen, 줄면 sinken을 써요. 둘 다 현재완료를 sein과 만들어요. um은 변한 폭을, von … auf …는 처음 값과 나중 값을 나타내요. 퍼센트끼리의 차이는 Prozentpunkte(퍼센트포인트)로 말해요.",
+      "pattern": "steigen/sinken + um + 변화 폭 · von + 처음 값 + auf + 나중 값",
+      "examples": [
+        {
+          "de": "Der Anteil ist also um 13 Prozentpunkte gesunken.",
+          "ko": "그러니까 이 비율은 13퍼센트포인트 줄었습니다.",
+          "mark": ["um 13 Prozentpunkte gesunken"],
+          "parts": [["Der Anteil", "주어"], ["ist", "동사"], ["also", "접속부사"], ["um 13 Prozentpunkte", "부사어"], ["gesunken.", "동사(끝)"]]
+        },
+        {
+          "de": "ist von 9 auf 27 Prozent gestiegen",
+          "ko": "9퍼센트에서 27퍼센트로 늘었습니다.",
+          "mark": ["von 9 auf 27 Prozent gestiegen"]
+        }
+      ],
+      "tip": "um과 auf를 헷갈리면 뜻이 달라져요. um 10 Prozent gestiegen은 10퍼센트만큼 늘었다는 뜻이고, auf 10 Prozent gestiegen은 10퍼센트가 되었다는 뜻이에요."
+    }
+  ],
+  "vocab": [
+    { "de": "der Herd, -e", "ko": "가스레인지, 조리용 화덕" },
+    { "de": "befragen", "ko": "(설문으로) 묻다" },
+    { "de": "das Ergebnis, -se", "ko": "결과" },
+    { "de": "der Anteil, -e", "ko": "비율, 몫" },
+    { "de": "sinken (sinkt, sank, ist gesunken)", "ko": "줄다, 내려가다" },
+    { "de": "steigen (steigt, stieg, ist gestiegen)", "ko": "늘다, 오르다" },
+    { "de": "der Unterschied, -e", "ko": "차이" },
+    { "de": "die Generation, -en", "ko": "세대" },
+    { "de": "zu|bereiten", "ko": "(음식을) 준비하다, 만들다" },
+    { "de": "die Mahlzeit, -en", "ko": "식사" },
+    { "de": "berufstätig", "ko": "직업이 있는, 일하는" },
+    { "de": "der Aufwand (Sg.)", "ko": "수고, 들이는 노력" },
+    { "de": "liefern", "ko": "배달하다" },
+    { "de": "die Redaktion, -en", "ko": "편집부" },
+    { "de": "die Pflicht, -en", "ko": "의무" },
+    { "de": "das Fertiggericht, -e", "ko": "즉석식품" }
+  ],
+  "phrases": [
+    {
+      "de": "am Herd stehen",
+      "ko": "요리하다",
+      "ex": "Wie oft steht in Marlenburg noch jemand am Herd?",
+      "exko": "마를렌부르크에서는 아직 얼마나 자주 직접 요리를 할까요?"
+    },
+    {
+      "de": "sich lohnen",
+      "ko": "할 만한 가치가 있다",
+      "ex": "Jeder dritte Alleinlebende findet, dass sich der Aufwand für eine Person nicht lohnt.",
+      "exko": "혼자 사는 사람 세 명 중 한 명은 한 사람을 위해 그런 수고를 들일 만하지 않다고 생각합니다."
+    },
+    {
+      "de": "im Vergleich zu + Dat.",
+      "ko": "~과 비교하면",
+      "ex": "Im Vergleich zu den Älteren kochen die Jüngeren zwar seltener, aber häufiger gemeinsam.",
+      "exko": "젊은 사람들은 나이 든 사람들에 비해 요리를 덜 하지만, 여럿이 함께 요리하는 일은 더 많습니다."
+    },
+    {
+      "de": "unter der Woche",
+      "ko": "평일에",
+      "ex": "Wer unter der Woche keine Zeit hat, sollte am Sonntag vorkochen.",
+      "exko": "평일에 시간이 없는 사람은 일요일에 미리 만들어 두는 것이 좋아요."
+    },
+    {
+      "de": "Geld sparen",
+      "ko": "돈을 아끼다",
+      "ex": "Das spart Geld und ist gesünder als die meisten Fertiggerichte.",
+      "exko": "돈도 아끼고, 대부분의 즉석식품보다 건강에도 좋아요."
+    }
+  ]
+}
