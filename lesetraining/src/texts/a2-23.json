@@ -83,7 +83,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "Wann bekommt man die meisten Punkte für ein Wort?",
-      "options": ["Zwei Spieler schreiben das Gleiche.", "Die Spalte ist bei den anderen leer.", "Die anderen haben dort andere Wörter."],
+      "options": ["Zwei Spieler schreiben das Gleiche.", "Die Spalte ist bei den anderen leer.", "Andere haben dort ein anderes Wort."],
       "answer": 1,
       "evidence": "Steht in einer Spalte nur bei dir ein Wort?",
       "pairs": [["nur bei dir ein Wort", "bei den anderen leer"]],

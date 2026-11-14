@@ -23,7 +23,7 @@
     },
     {
       "de": "Ein Wort zur Bearbeitung, bevor im Folgenden die Texte selbst sprechen. Allen Texten liegt die Fassung zugrunde, die in der Werkstatt vorgelesen wurde. Fehler, die das Verständnis stören, haben wir berichtigt; Eigenheiten, an denen man eine Stimme erkennt, haben wir belassen. Man denke an Thaos Satz, sie habe „den Mut in beide Hände genommen“ – kein Wörterbuch kennt diese Wendung, und doch versteht sie jeder. Wir haben geglättet, nicht gebügelt. Ein Vorwort, das sich für jeden ungewöhnlichen Satz entschuldigt, wäre das falsche gewesen. Wie dem auch sei: Die Entscheidung darüber, was ein Fehler ist und was ein Fund, kam am Ende den Schreibenden selbst zu.",
-      "ko": "이어지는 글들이 직접 말하기 전에 글을 손질한 방식에 대해 한마디 하겠습니다. 모든 글은 작업 모임에서 낭독한 원고를 바탕으로 합니다. 이해를 방해하는 오류는 바로잡았고, 글쓴이의 목소리가 드러나는 특색은 그대로 두었습니다. 타오가 “용기를 두 손에 쥐었다”고 쓴 문장을 생각해 보십시오. 이런 표현은 어떤 사전에도 없지만 누구나 이해합니다. 우리는 매끄럽게 다듬었을 뿐 다림질하듯 눌러 펴지는 않았습니다. 평범하지 않은 문장 하나하나에 대해 양해를 구하는 머리말이었다면 잘못된 머리말이었을 것입니다. 어쨌든 무엇이 오류이고 무엇이 뜻밖의 발견인지는 마지막에 글쓴이들 스스로 결정했습니다."
+      "ko": "이어지는 글들이 직접 말하기 전에 글을 손질한 방식에 대해 한마디 하겠습니다. 모든 글은 작업 모임에서 낭독한 원고를 바탕으로 합니다. 이해를 방해하는 오류는 바로잡았고, 글쓴이의 목소리가 드러나는 특색은 그대로 두었습니다. 타오가 쓴 “용기를 두 손에 쥐었어요”라는 문장을 생각해 보십시오. 이런 표현은 어떤 사전에도 없지만 누구나 이해합니다. 우리는 매끄럽게 다듬었을 뿐 다림질하듯 눌러 펴지는 않았습니다. 평범하지 않은 문장 하나하나에 대해 양해를 구하는 머리말이었다면 잘못된 머리말이었을 것입니다. 어쨌든 무엇이 오류이고 무엇이 뜻밖의 발견인지는 마지막에 글쓴이들 스스로 결정했습니다."
     },
     {
       "de": "Dank gebührt vielen. Der Volkshochschule, die uns fünf Jahre lang einen Raum und heißen Tee überließ. Der Bürgerstiftung, ohne deren Zuschuss der Druck nicht möglich gewesen wäre. Dem Lektorat, das mit Geduld jedes Komma verteidigt und manches geopfert hat. Vor allem aber sei den vierundzwanzig gedankt, die den Mut hatten, in einer Sprache zu schreiben, in der sie sich noch nicht sicher fühlten. Ihrer Erfahrung entspringt alles, was auf den folgenden Seiten steht.",
@@ -44,10 +44,10 @@
       "type": "mc",
       "kind": "gist",
       "q": "Worum geht es in dem Sammelband?",
-      "options": ["um den Moment, in dem eine neue Sprache vertraut wird", "um Übungen zu Grammatik und Wortschatz für Erwachsene", "um die Geschichte einer Volkshochschule in fünf Jahren", "um Reiseberichte aus den Herkunftsländern der Autoren"],
+      "options": ["um den Moment, in dem eine fremde Sprache vertraut wird", "um Übungen zu Grammatik und Wortschatz für Erwachsene", "um die Geschichte einer Volkshochschule in fünf Jahren", "um Reiseberichte aus den Herkunftsländern der Autoren"],
       "answer": 0,
       "evidence": "fragt sie nach dem Augenblick, in dem die fremde Sprache zum ersten Mal ihnen gehörte",
-      "pairs": [["in dem die fremde Sprache zum ersten Mal ihnen gehörte", "in dem eine neue Sprache vertraut wird"]],
+      "pairs": [["in dem die fremde Sprache zum ersten Mal ihnen gehörte", "in dem eine fremde Sprache vertraut wird"]],
       "explain": "이 책은 어른이 되어 독일어를 배운 스물네 사람의 글을 모았고, 낯선 언어가 처음으로 자기 것이 된 순간을 다뤄요. '자기 것이 되다'를 '친숙해지다'로 바꿔 말했어요. 문법과 어휘 연습은 엮은이가 처음에 준비했다가 내려놓은 것이에요. 시민대학은 모임이 열린 장소일 뿐이에요."
     },
     {
@@ -121,11 +121,11 @@
       "type": "mc",
       "kind": "detail",
       "q": "Wer entschied in Zweifelsfällen über die endgültige Gestalt eines Textes?",
-      "options": ["das Lektorat des Hauses", "die Leiterin der Gruppe", "die Verfasser der Texte", "die Stiftung der Stadt"],
+      "options": ["das Lektorat des Hauses", "die Leiterin der Gruppe", "die Autoren der Beiträge", "die Stiftung der Stadt"],
       "answer": 2,
       "evidence": "kam am Ende den Schreibenden selbst zu",
-      "pairs": [["den Schreibenden selbst", "die Verfasser der Texte"]],
-      "explain": "무엇이 오류이고 무엇이 발견인지는 마지막에 글쓴이들 스스로 결정했어요. jemandem zukommen은 '~의 몫이다'라는 뜻이에요. Schreibende(글 쓰는 사람들)를 Verfasser(글쓴이)로 바꿔 말했어요."
+      "pairs": [["den Schreibenden selbst", "die Autoren der Beiträge"]],
+      "explain": "무엇이 오류이고 무엇이 발견인지는 마지막에 글쓴이들 스스로 결정했어요. jemandem zukommen은 '~의 몫이다'라는 뜻이에요. Schreibende(글 쓰는 사람들)를 Autoren(저자들)으로 바꿔 말했어요."
     },
     {
       "type": "mc",

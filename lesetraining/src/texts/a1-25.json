@@ -60,11 +60,11 @@
       "type": "mc",
       "kind": "detail",
       "q": "Was hat Frau Kruse gemacht?",
-      "options": ["Sie hat den Schlüssel geholt.", "Sie hat ein Getränk gemacht.", "Sie hat bei Tilda angerufen."],
+      "options": ["Sie ist ins Büro gefahren.", "Sie hat ein Getränk gemacht.", "Sie hat bei Tilda angerufen."],
       "answer": 1,
       "evidence": "Ich bin eine Stunde geblieben, und Frau Kruse hat Tee gekocht.",
       "pairs": [["hat Tee gekocht", "hat ein Getränk gemacht"]],
-      "explain": "크루제 씨는 차를 끓여 주었어요. Tee(차)를 Getränk(마실 것)으로 바꿔 말했어요. 틸다에게 전화한 사람은 글쓴이이고, 열쇠를 가져온 사람은 틸다예요."
+      "explain": "크루제 씨는 차를 끓여 주었어요. Tee(차)를 Getränk(마실 것)으로 바꿔 말했어요. 틸다에게 전화한 사람은 글쓴이이고, 사무실에 있던 열쇠는 틸다가 가져왔어요."
     },
     {
       "type": "rf",

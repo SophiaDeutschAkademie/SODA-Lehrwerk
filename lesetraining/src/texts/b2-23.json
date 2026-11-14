@@ -69,7 +69,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "In welchem Zustand war die Parzelle?",
-      "options": ["Sie war seit Langem vernachlässigt.", "Sie war frisch für sie vorbereitet.", "Sie war mit Obstbäumen bepflanzt."],
+      "options": ["Sie war seit Langem vernachlässigt.", "Sie war gut für sie vorbereitet.", "Sie war mit Obstbäumen bepflanzt."],
       "answer": 0,
       "evidence": "Die Parzelle war jahrelang nicht gepflegt worden.",
       "pairs": [["jahrelang nicht gepflegt worden", "seit Langem vernachlässigt"]],

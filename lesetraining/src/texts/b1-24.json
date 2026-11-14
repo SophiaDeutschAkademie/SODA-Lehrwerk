@@ -64,7 +64,7 @@
       "type": "mc",
       "kind": "inference",
       "q": "Warum kommt Herr Paulsen vor allem zum Bus?",
-      "options": ["Er sammelt seit Jahren Krimis.", "Er hilft bei den Bestellungen.", "Er möchte unter Menschen sein."],
+      "options": ["Er sammelt seit Jahren Krimis.", "Er hilft bei den Bestellungen.", "Er will gern unter Menschen sein."],
       "answer": 2,
       "evidence": "aber eigentlich kommt er wegen der Gesellschaft",
       "pairs": [["wegen der Gesellschaft", "unter Menschen sein"]],

@@ -47,7 +47,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "Was passt zu Fiete?",
-      "options": ["eine Wohnung mit zwei Katzen", "ein Haus mit Garten und Kindern", "eine kleine Wohnung ohne Garten"],
+      "options": ["eine Wohnung mit zwei Katzen", "ein Haus mit Garten und Kindern", "eine Wohnung ganz ohne Garten"],
       "answer": 1,
       "evidence": "Er braucht einen Garten.",
       "pairs": [["braucht einen Garten", "ein Haus mit Garten"], ["Fiete mag Kinder", "Kindern"]],

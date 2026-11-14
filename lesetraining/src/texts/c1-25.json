@@ -126,7 +126,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "Woher weiß Lindemann von Heddas Plänen?",
-      "options": ["Hauke hat ihn am Vorabend angerufen.", "Der Verlag hat sich bei ihm erkundigt.", "Hedda hat es ihm vorher geschrieben.", "Er hat ihre Bewerbung zufällig gesehen."],
+      "options": ["Hauke hat ihn am Vorabend angerufen.", "Der Verlag hat sich bei ihm erkundigt.", "Hedda hat es ihm vorher geschrieben.", "Er hat ihre Bewerbung selbst gesehen."],
       "answer": 1,
       "evidence": "Der Verleger hat mich vor zwei Wochen angerufen.",
       "pairs": [["Der Verleger hat mich vor zwei Wochen angerufen", "Der Verlag hat sich bei ihm erkundigt"]],
@@ -136,10 +136,10 @@
       "type": "mc",
       "kind": "paraphrase",
       "q": "Was meint Lindemann mit dem Satz „Sie schreiben für Leser, Frau Brandis“?",
-      "options": ["Ihr Stil ist eher verständlich als gelehrt.", "Ihre Texte haben zu viele Leser enttäuscht.", "Ihr Kapitel ist für Fachleute gut geeignet.", "Ihre Arbeit wird nie veröffentlicht werden."],
+      "options": ["Ihr Stil ist eher verständlich als akademisch.", "Ihre Texte haben zu viele Leser enttäuscht.", "Ihr Kapitel ist für Fachleute gut geeignet.", "Ihre Arbeit wird nie veröffentlicht werden."],
       "answer": 0,
       "evidence": "Das konnte ich Ihnen in vier Jahren nicht abgewöhnen.",
-      "pairs": [["Sie schreiben für Leser", "eher verständlich als gelehrt"]],
+      "pairs": [["Sie schreiben für Leser", "eher verständlich als akademisch"]],
       "explain": "린데만은 헤다가 전문가만 읽는 학술 문체가 아니라 독자가 읽기 좋은 글을 쓴다고 말해요. 그는 그 버릇을 고쳐 주지 못했다고 하지만, 출판사에 헤다를 추천했으니 이 말은 칭찬이에요."
     },
     {

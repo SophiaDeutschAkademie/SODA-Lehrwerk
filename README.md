@@ -7,7 +7,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | 폴더 | 자료 | 내용 |
 |---|---|---|
 | `grammatik/` | Syntalab | 문법 교재, Lektion 37개와 부록「암기 노트」, 과마다 연습문제 37개(보강 포함)와 통합 복습 4세트 |
-| `lesetraining/` | SODA Lesetraining | 독해 훈련, A1–C1, 텍스트 100개 |
+| `lesetraining/` | SODA Lesetraining | 독해 훈련, A1–C1, 텍스트 125개 |
 | `hoertraining/` | Lehrwerk Hörtraining | 듣기 훈련, A1–C1, 88세트 |
 | `schreibtraining/` | SODA Schreibtraining | 쓰기 훈련, A1–C1 레벨별 5챕터(총 25개), 챕터마다 구성·표현·연습·쓰기·모범답안, 「선생님께 제출하기」(소피아 독일어학원 수강생 전용 안내 팝업) |
 | `sprechtraining/` | SODA Sprechtraining | 말하기 훈련, A1–C1과 MZ 구어체, 대화 36개, 독일어 음성 433줄 |

@@ -27,7 +27,7 @@
     },
     {
       "de": "Margarete Steiff starb 1909. Ihre Firma gibt es bis heute, und jedes Tier trägt einen Knopf im Ohr. Ihr Motto war: „Für Kinder ist nur das Beste gut genug.“",
-      "ko": "마르가레테 슈타이프는 1909년에 세상을 떠났어요. 회사는 지금까지 남아 있고, 모든 동물 인형의 귀에는 단추가 달려 있어요. 마르가레테의 좌우명은 “아이들에게는 가장 좋은 것만이 충분히 좋다”였어요."
+      "ko": "마르가레테 슈타이프는 1909년에 세상을 떠났어요. 회사는 지금까지 남아 있고, 모든 동물 인형의 귀에는 단추가 달려 있어요. 마르가레테의 좌우명은 “아이들에게는 가장 좋은 것만이 충분히 좋아요”였어요."
     }
   ],
   "questions": [
@@ -64,11 +64,11 @@
       "type": "mc",
       "kind": "detail",
       "q": "Wer hatte die Idee für den Bären?",
-      "options": ["ein Käufer aus Amerika", "Margarete Steiff selbst", "ein Verwandter von ihr"],
+      "options": ["ein Käufer aus Amerika", "Margarete Steiff selbst", "jemand aus ihrer Familie"],
       "answer": 2,
       "evidence": "1902 zeichnete ihr Neffe Richard einen Bären mit beweglichen Armen und Beinen.",
-      "pairs": [["ihr Neffe Richard", "ein Verwandter von ihr"]],
-      "explain": "곰을 그린 사람은 조카 리하르트예요. Neffe(조카)를 Verwandter(친척)로 바꿔 말했어요. 미국 상인은 곰을 주문한 사람이에요."
+      "pairs": [["ihr Neffe Richard", "jemand aus ihrer Familie"]],
+      "explain": "곰을 그린 사람은 조카 리하르트예요. Neffe(조카)를 '가족 가운데 한 사람'으로 바꿔 말했어요. 미국 상인은 곰을 주문한 사람이에요."
     },
     {
       "type": "rf",

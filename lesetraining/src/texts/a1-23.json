@@ -95,7 +95,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "Was kostet 2,40 Euro?",
-      "options": ["der Eintritt ins Bad", "ein Ticket für den Bus", "die Fahrt mit der Bahn"],
+      "options": ["der Eintritt ins Bad", "ein Ticket für den Bus", "die Fahrt mit dem Zug"],
       "answer": 1,
       "evidence": "Die Busfahrkarte kostet 2,40 Euro.",
       "pairs": [["Die Busfahrkarte", "ein Ticket für den Bus"]],

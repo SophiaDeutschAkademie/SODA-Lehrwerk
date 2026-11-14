@@ -383,7 +383,7 @@
   function renderCover() {
     var total = 0;
     LEVELS.forEach(function (l) { total += (INDEX[l.code] || []).length; });
-    document.title = '독일어 독해 훈련 · A1–C1 텍스트 100개 | SODA Lesetraining';
+    document.title = '독일어 독해 훈련 · A1–C1 텍스트 125개 | SODA Lesetraining';
     app.innerHTML =
       '<main id="main" class="cover view" tabindex="-1" aria-labelledby="cover-title">' +
       '<header class="brand"><img src="assets/logo.png" alt="Sophia Deutsch Akademie 로고">' +

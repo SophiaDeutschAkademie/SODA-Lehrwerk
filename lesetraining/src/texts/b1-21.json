@@ -42,7 +42,7 @@
     },
     {
       "de": "Ich habe den Kurs gebucht, weil ich im April eine neue Stelle antrete. Dort brauche ich nämlich täglich Englisch. Mein Ziel, sicherer Englisch zu sprechen, habe ich in diesen zwei Wochen nicht erreicht.",
-      "ko": "제가 이 강좌를 신청한 것은 4월에 새 직장에서 일을 시작하기 때문입니다. 그곳에서는 매일 영어를 써야 하기 때문입니다. 영어를 더 자신 있게 말하겠다는 목표를 저는 이 2주 동안 이루지 못했습니다."
+      "ko": "제가 이 강좌를 신청한 것은 4월에 새 직장에서 일을 시작하게 되어서입니다. 그곳에서는 매일 영어를 써야 하기 때문입니다. 영어를 더 자신 있게 말하겠다는 목표를 저는 이 2주 동안 이루지 못했습니다."
     },
     {
       "de": "Ich erwarte deshalb, dass Sie mir ein Drittel der Kursgebühr, also 160 Euro, sowie die 29 Euro für das Lehrbuch erstatten. Ich bitte Sie, den Betrag bis zum 4. April auf mein Konto zu überweisen. Bitte teilen Sie mir mit, ob Sie mit dieser Lösung einverstanden sind. Andernfalls werde ich mich an die Verbraucherzentrale wenden.",
@@ -93,7 +93,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "Welches Problem gab es mit der neuen Lehrkraft?",
-      "options": ["Sie behandelte zu viele neue Themen.", "Sie kannte den Stand der Gruppe nicht.", "Sie kam erst in der zweiten Kurswoche."],
+      "options": ["Sie behandelte zu viele neue Themen.", "Sie kannte den Stand der Gruppe nicht.", "Sie kam erst in der zweiten Woche."],
       "answer": 1,
       "evidence": "wusste nicht einmal, welche Themen wir schon behandelt hatten",
       "pairs": [["welche Themen wir schon behandelt hatten", "den Stand der Gruppe"]],

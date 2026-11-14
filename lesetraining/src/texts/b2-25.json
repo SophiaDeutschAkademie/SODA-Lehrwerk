@@ -61,7 +61,7 @@
     },
     {
       "de": "Wir sind dennoch bereit, den 22. März zu akzeptieren, allerdings unter drei Bedingungen. Erstens erwarten wir bis Ende dieser Woche eine schriftliche Bestätigung des Termins durch Ihre Geschäftsführung. Zweitens möchten wir jeden Montag einen kurzen Statusbericht erhalten. Drittens gilt bei einer erneuten Verzögerung der vertraglich vereinbarte Preisnachlass von fünf Prozent pro Woche.",
-      "ko": "그래도 저희는 3월 22일을 받아들일 뜻이 있습니다. 다만 세 가지 조건이 있습니다. 첫째, 이번 주말까지 귀사 경영진이 이 날짜를 서면으로 확인해 주시기 바랍니다. 둘째, 매주 월요일에 짧은 진행 상황 보고를 받고 싶습니다. 셋째, 다시 늦어지면 계약서에서 합의한 대로 한 주에 5퍼센트씩 가격을 깎습니다."
+      "ko": "그래도 저희는 3월 22일을 받아들일 뜻이 있습니다. 다만 세 가지 조건이 있습니다. 첫째, 이번 주 안에 귀사 경영진이 이 날짜를 서면으로 확인해 주시기 바랍니다. 둘째, 매주 월요일에 짧은 진행 상황 보고를 받고 싶습니다. 셋째, 다시 늦어지면 계약서에서 합의한 대로 한 주에 5퍼센트씩 가격을 깎습니다."
     },
     {
       "de": "Die Schulung kann am 18. und 19. März in unserem Lager stattfinden. Folglich wird das Personal das System schon kennen, wenn es in Betrieb geht. Bis dahin werden Sie hoffentlich auch die Handscanner eingerichtet haben. Über Herrn Mohrs Unterstützung freuen wir uns. Um die Einzelheiten zu klären, schlage ich ein Telefonat am Donnerstagvormittag vor. Bitte nennen Sie mir dafür eine Uhrzeit, zu der auch Herr Mohr erreichbar ist.",
@@ -78,7 +78,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "Warum konnten die Tests erst Mitte Februar beginnen?",
-      "options": ["Der Kunde hatte seine Daten zu spät geschickt.", "Der Zulieferer hatte falsche Scanner geliefert.", "Ein nötiges Bauteil war verspätet eingetroffen."],
+      "options": ["Der Kunde hatte seine Daten zu spät geschickt.", "Der Zulieferer hatte falsche Teile geliefert.", "Ein nötiges Bauteil war verspätet eingetroffen."],
       "answer": 2,
       "evidence": "Hinzu kommt, dass uns ein Zulieferer das Modul für die Handscanner drei Wochen später als zugesagt geliefert hat.",
       "pairs": [["drei Wochen später als zugesagt geliefert", "verspätet eingetroffen"]],

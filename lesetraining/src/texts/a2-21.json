@@ -34,7 +34,7 @@
     },
     {
       "de": "Glas kommt nicht in die gelbe Tonne, sondern in die Glascontainer an der Ecke Gartenstraße. Dort wird es nach Farben sortiert: weiß, braun und grün. Bitte benutzen Sie die Container nur montags bis samstags von 7 bis 19 Uhr. Pfandflaschen werfen Sie nicht weg, sondern bringen sie in den Supermarkt zurück. Auch alte Batterien sind kein Restmüll. Sie werden im Supermarkt in einer Sammelbox gesammelt.",
-      "ko": "유리는 노란 통이 아니라 가르텐슈트라세 모퉁이에 있는 유리 수거함에 넣어요. 그곳에서는 유리를 흰색, 갈색, 초록색으로 색깔별로 나누어 넣어요. 수거함은 월요일부터 토요일까지 7시부터 19시 사이에만 이용해 주세요. 보증금이 붙은 병은 버리지 말고 슈퍼마켓에 다시 가져다주세요. 다 쓴 건전지도 일반 쓰레기가 아니에요. 건전지는 슈퍼마켓에 있는 수거함에 모아요."
+      "ko": "유리는 노란 통이 아니라 가르텐슈트라세 모퉁이에 있는 유리 수거함에 넣어요. 그곳에서는 유리를 흰색(투명), 갈색, 초록색으로 색깔별로 나누어 넣어요. 수거함은 월요일부터 토요일까지 7시부터 19시 사이에만 이용해 주세요. 보증금이 붙은 병은 버리지 말고 슈퍼마켓에 다시 가져다주세요. 다 쓴 건전지도 일반 쓰레기가 아니에요. 건전지는 슈퍼마켓에 있는 수거함에 모아요."
     },
     {
       "style": "h",
@@ -70,10 +70,10 @@
       "type": "mc",
       "kind": "detail",
       "q": "Was gehört in die Biotonne?",
-      "options": ["leere Dosen und Deckel aus Metall", "alte Weinflaschen aus grünem Glas", "Schalen von Äpfeln und Kartoffeln"],
+      "options": ["leere Dosen und Deckel aus Metall", "alte Weinflaschen aus grünem Glas", "Schalen von Äpfeln oder Kartoffeln"],
       "answer": 2,
       "evidence": "Obst- und Gemüsereste, Kaffeefilter und Teebeutel gehören in die braune Biotonne.",
-      "pairs": [["Obst- und Gemüsereste", "Schalen von Äpfeln und Kartoffeln"]],
+      "pairs": [["Obst- und Gemüsereste", "Schalen von Äpfeln oder Kartoffeln"]],
       "explain": "갈색 음식물 통에는 과일과 채소 찌꺼기를 넣어요. 사과 껍질과 감자 껍질이 바로 그런 것이에요. 금속 캔과 뚜껑은 노란 통에, 유리병은 유리 수거함에 넣어요."
     },
     {

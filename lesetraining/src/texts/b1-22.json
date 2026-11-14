@@ -138,7 +138,7 @@
       "type": "mc",
       "kind": "detail",
       "q": "Was macht der Verkäufer am Schluss?",
-      "options": ["Er verkauft ihr das Gerät vom Tisch.", "Er bestellt das Modell im Internet.", "Er bringt ein unbenutztes Exemplar."],
+      "options": ["Er verkauft ihr das Gerät vom Tisch.", "Er bestellt das Modell im Internet.", "Er bringt ihr ein unbenutztes Exemplar."],
       "answer": 2,
       "evidence": "Dann hole ich Ihnen mal dasselbe Modell originalverpackt aus dem Lager.",
       "pairs": [["dasselbe Modell originalverpackt", "ein unbenutztes Exemplar"]],
