@@ -5526,8 +5526,8 @@ function startPrep(ex, tn) {
   clearInterval(S.prepTimer); $('#btnPrepTimer').disabled = false;
   const who = ex.hidden ? '시작하면 파트너가 먼저 인사하며 대화를 이끌어 갑니다. 진행자는 없습니다. ' + SLOW_HINT : T.askStarter ? '시작하면 시험관이 먼저 누가 시작할지 묻습니다.' : (T.kind === 'monolog' ? '시작하면 시험관의 안내 뒤에 바로 이야기를 시작합니다.' : '시작하면 시험관의 안내 뒤에 파트너가 먼저 발표합니다.');
   $('#timeInfo').innerHTML = '시험 시간 <b>' + fmt(tm.official) + '</b>에 연장 시간 <b>' + fmt(tm.extra) + '</b>이 더해져 최대 <b>' + fmt(tm.official + tm.extra) + '</b>입니다. ' + (ex.hidden ? '시간이 되면 대화가 끝납니다. ' : '시간이 되면 시험관이 안내합니다. ') + who;
-  /* SODA GRAMMATIK KURS 과제(ueb-a1-NN)의 준비 화면에는 말하기 속도 막대를 두지 않습니다. 속도는 이 브라우저에 저장된 값(처음에는 0.8배)을 씁니다. */
-  $$('#v-prep [data-speedbox]').forEach(b => { b.hidden = /^ueb-a1-/.test(ex.id); });
+  /* 준비 화면에는 말하기 속도 막대를 두지 않습니다(모든 연습). 속도는 이 브라우저에 저장된 값을 씁니다. */
+  $$('#v-prep [data-speedbox]').forEach(b => { b.hidden = true; });
   if (REC_ON(ex)) $('#prepSendNote').textContent += ' 연습하는 동안 나와 파트너의 대화가 녹음됩니다. 녹음은 이 기기에만 저장되며, 연습이 끝난 화면에서 다시 듣고 파일로 내려받을 수 있습니다.';
   $('#startErr').textContent = '';
   show('v-prep');
