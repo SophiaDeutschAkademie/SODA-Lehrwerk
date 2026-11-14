@@ -361,6 +361,8 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 .recbox:empty{display:none}
 .recbox h2{margin:0 0 6px;font-size:16px}
 .recbox audio{display:block;width:100%;margin:8px 0 10px}
+.recbox .recwarn{margin:8px 0 0;padding:8px 10px;border-radius:8px;background:var(--acc-w);font-size:13px;line-height:1.55;color:var(--ink-2)}
+.recbox .recwarn b{color:var(--bad)}
 .recbox a.primary{display:inline-block;border-radius:9px;padding:10px 16px;border:1px solid var(--acc);font-weight:600;background:var(--acc);color:var(--on-acc);text-decoration:none}
 .recdot{display:inline-flex;align-items:center;gap:6px;margin-left:10px;font-size:12px;font-weight:700;color:var(--bad);letter-spacing:0}
 .recdot::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--bad);animation:recblink 1.2s ease-in-out infinite}
@@ -5051,11 +5053,12 @@ const AudioIO = {
 
 /* ------------------------------------------------------------------ 대화 녹음
    - 대화를 녹음하는 연습: REC_ON(ex)가 참인 연습(SODA GRAMMATIK KURS 과제의 말하기 연습 ueb-a1-NN, SODA A2·B1·B2 챕터 연습 ueb-a2-NN·ueb-b1-NN·ueb-b2-NN).
-   - 마이크 소리와 상대(파트너) 목소리를 한 파일로 녹음합니다. 녹음은 서버로 보내지 않고 이 기기(IndexedDB 'soda-sprechen-rec')에만 저장합니다.
-   - 연습이 끝난 화면(v-after)에서 다시 듣고 파일로 내려받습니다. 같은 연습의 기록 보기에서도 다시 열립니다.
-   - 저장 기간은 REC_KEEP_DAYS일입니다. 지난 녹음은 다음 녹음을 저장할 때 지웁니다. */
+   - 마이크 소리와 상대(파트너) 목소리를 한 파일로 녹음합니다. 녹음은 서버로 보내지 않고, 어디에도 저장하지 않고 메모리에만 둡니다.
+   - 연습이 끝난 화면(v-after)에서 다시 듣고 파일로 내려받습니다. 이 화면을 나가거나(다른 화면으로 이동) 창을 닫으면 녹음은 지워집니다.
+     내려받지 않은 녹음이 있을 때 창을 닫으려 하면 브라우저가 한 번 묻습니다.
+   - 예전 판(IndexedDB 'soda-sprechen-rec'에 저장하던 판)이 남긴 녹음은 페이지를 열 때 지웁니다. */
 const REC_ON = ex => !!ex && /^ueb-(a1|a2|b1|b2)-\d\d$/.test(ex.id);
-const REC_KEEP_DAYS = 60;
+try { if (window.indexedDB) indexedDB.deleteDatabase('soda-sprechen-rec'); } catch (e) { }
 const Rec = {
   mr: null, dest: null, chunks: [], type: '', t0: 0, pending: null,
   supported() { return !!(window.MediaRecorder && AudioIO.ctx && AudioIO.ctx.createMediaStreamDestination); },
@@ -5131,52 +5134,14 @@ async function recToWav(blob) {
   } catch (e) { return null; }
 }
 const RecStore = {
-  db: null, mem: new Map(),
+  mem: new Map(),
   key: (id, exId, t, no) => [id, exId, t, no].join('|'),
-  open() {
-    if (!this.db) this.db = new Promise(res => {
-      try {
-        if (!window.indexedDB) return res(null);
-        const q = indexedDB.open('soda-sprechen-rec', 1);
-        q.onupgradeneeded = () => { try { q.result.createObjectStore('rec'); } catch (e) { } };
-        q.onsuccess = () => res(q.result);
-        q.onerror = () => res(null);
-        q.onblocked = () => res(null);
-      } catch (e) { res(null); }
-    });
-    return this.db;
-  },
-  async _tx(mode, fn) {
-    const db = await this.open(); if (!db) return null;
-    return new Promise(res => {
-      try {
-        const tx = db.transaction('rec', mode), st = tx.objectStore('rec');
-        const out = fn(st);
-        tx.oncomplete = () => res(out && 'result' in out ? out.result : true);
-        tx.onerror = tx.onabort = () => res(null);
-      } catch (e) { res(null); }
-    });
-  },
-  async put(k, v) {
-    this.mem.set(k, v);
-    const ok = await this._tx('readwrite', st => st.put(v, k));
-    this.prune();
-    return !!ok;
-  },
-  async get(k) {
-    if (this.mem.has(k)) return this.mem.get(k);
-    const v = await this._tx('readonly', st => st.get(k));
-    return v || null;
-  },
-  async prune() {
-    const old = Date.now() - REC_KEEP_DAYS * 864e5;
-    await this._tx('readwrite', st => {
-      const c = st.openCursor();
-      c.onsuccess = () => { const cur = c.result; if (!cur) return; if (!cur.value || !(cur.value.at > old)) cur.delete(); cur.continue(); };
-      return null;
-    });
-  }
+  async put(k, v) { this.mem.set(k, v); return true; },
+  async get(k) { return this.mem.get(k) || null; },
+  unsaved() { for (const v of this.mem.values()) if (v && v.blob && !v.dl) return true; return false; },
+  clear() { this.mem.clear(); if (recUrl) { URL.revokeObjectURL(recUrl); recUrl = null; } }
 };
+window.addEventListener('beforeunload', e => { if (RecStore.unsaved()) { e.preventDefault(); e.returnValue = ''; return ''; } });
 const recExt = type => /wav/.test(type) ? 'wav' : /mp4|m4a|aac/.test(type) ? 'm4a' : /ogg/.test(type) ? 'ogg' : 'webm';
 function recFileName(ex, a, type) {
   const d = new Date(a.startedAt || Date.now()), p = n => String(n).padStart(2, '0');
@@ -5201,15 +5166,17 @@ async function recPaint(ex, t, a) {
   if (Rec.pending && Rec.pending.k === k) { try { await Rec.pending.p; } catch (e) { } }
   const v = await RecStore.get(k);
   if (my !== recPaint.n || !S.cur || S.cur.ex !== ex || S.cur.t !== t || $('#v-after').hidden) return;
-  if (!v || !v.blob) { box.innerHTML = '<h2>대화 녹음</h2><p class="muted small">이 기기에 이 연습의 녹음 파일이 없습니다. 녹음은 연습한 기기에만 ' + REC_KEEP_DAYS + '일 동안 남습니다.</p>'; return; }
+  if (!v || !v.blob) { box.innerHTML = '<h2>대화 녹음</h2><p class="muted small">이 연습의 녹음은 지워졌습니다. 녹음은 연습이 끝난 화면에서만 내려받을 수 있고, 그 화면을 나가면 자동으로 지워집니다.</p>'; return; }
   recUrl = URL.createObjectURL(v.blob);
   const name = recFileName(ex, a, v.type || v.blob.type);
   box.innerHTML = '<h2>대화 녹음</h2>' +
-    '<p class="muted small">나와 ' + esc(a.partnerName || '파트너') + '의 대화가 녹음된 파일입니다' + (v.ms ? ' (' + fmt(v.ms / 1000) + ')' : '') + '. 녹음은 이 기기에만 ' + REC_KEEP_DAYS + '일 동안 남고 자동으로 제출되지 않습니다. 필요하면 내려받아 보관하십시오.</p>' +
+    '<p class="muted small">나와 ' + esc(a.partnerName || '파트너') + '의 대화가 녹음된 파일입니다' + (v.ms ? ' (' + fmt(v.ms / 1000) + ')' : '') + '. 녹음은 서버에 저장되지 않고 선생님께 제출되지도 않습니다.</p>' +
+    '<p class="recwarn"><b>내려받지 않으면 이 화면을 나가거나 창을 닫을 때 녹음이 자동으로 지워집니다.</b> 보관하려면 지금 내려받으십시오.</p>' +
     '<audio controls preload="metadata"></audio>' +
     '<a class="primary" download></a>';
   $('audio', box).src = recUrl;
   const dl = $('a', box); dl.href = recUrl; dl.download = name; dl.textContent = '녹음 파일 내려받기';
+  dl.addEventListener('click', () => { v.dl = true; const w = $('.recwarn', box); if (w) w.innerHTML = '녹음 파일을 내려받았습니다. 이 화면을 나가면 이 기기의 녹음은 지워집니다. 내려받은 파일은 그대로 남습니다.'; });
 }
 
 function i16ToB64(i16) {
@@ -5354,6 +5321,8 @@ function uebRewrite() {
 new MutationObserver(() => { if (!uebRewrite.busy) { uebRewrite.busy = true; Promise.resolve().then(() => { uebRewrite(); uebRewrite.busy = false; }); } })
   .observe(document.body, { childList: true, subtree: true, characterData: true });
 function show(id) {
+  /* 연습이 끝난 화면을 나가면 녹음을 지웁니다(내려받았든 아니든). */
+  if (id !== 'v-after' && !$('#v-after').hidden) RecStore.clear();
   document.documentElement.classList.toggle('ueb', !['v-cover', 'v-login', 'v-toc', 'v-admin'].includes(id) && isUebCtx());
   $$('.view').forEach(v => v.hidden = v.id !== id);
   $('#btnToc').hidden = ['v-cover', 'v-login', 'v-toc', 'v-exam'].includes(id);
@@ -5615,7 +5584,7 @@ function startPrep(ex, tn) {
   $('#timeInfo').innerHTML = '시험 시간 <b>' + fmt(tm.official) + '</b>에 연장 시간 <b>' + fmt(tm.extra) + '</b>이 더해져 최대 <b>' + fmt(tm.official + tm.extra) + '</b>입니다. ' + (ex.hidden ? '시간이 되면 대화가 끝납니다. ' : '시간이 되면 시험관이 안내합니다. ') + who;
   /* 준비 화면에는 말하기 속도 막대를 두지 않습니다(모든 연습). 속도는 이 브라우저에 저장된 값을 씁니다. */
   $$('#v-prep [data-speedbox]').forEach(b => { b.hidden = true; });
-  if (REC_ON(ex)) $('#prepSendNote').textContent += ' 연습하는 동안 나와 파트너의 대화가 녹음됩니다. 녹음은 이 기기에만 저장되며, 연습이 끝난 화면에서 다시 듣고 파일로 내려받을 수 있습니다.';
+  if (REC_ON(ex)) $('#prepSendNote').textContent += ' 연습하는 동안 나와 파트너의 대화가 녹음됩니다. 녹음은 연습이 끝난 화면에서 다시 듣고 파일로 내려받을 수 있으며, 내려받지 않으면 그 화면을 나갈 때 자동으로 지워집니다.';
   $('#startErr').textContent = '';
   show('v-prep');
 }
