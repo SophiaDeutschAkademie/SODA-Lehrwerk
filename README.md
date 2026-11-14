@@ -72,6 +72,13 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 - 내용 교정은 부록이 아니라 과(`lessons/L01.json` …)에서 합니다. 과의 글만 고친 경우에도 `anhang-build.py`를 실행해야 `index.html`과 `sw.js`의 버전 값이 바뀌어 학생 기기에 새 내용이 나와요. 스크립트의 `FIXES`에는 '이 과'처럼 과 안에서만 통하는 말을 부록용으로 바꾸는 항목만 둡니다.
 - 과의 용어에 점선 밑줄로 걸린 낱말 풀이(`span.gt`)는 과마다 같은 글이 되풀이되어 들어 있습니다. 풀이를 고칠 때는 모든 과에서 같은 글을 한꺼번에 바꿉니다.
 - `grammatik/`의 연습문제(목차 아래 「연습문제 · Übungen」)는 과마다 하나, 37개예요. 과마다 기본·중간·도전 뒤에 보강(바꿔 쓰기·오류 찾기)이 있고, 목차 맨 아래에 여러 과를 섞은 통합 복습 4세트(`W1.json` … `W4.json`)가 있어요. 학생이 푼 답은 기기에 저장되며, 지키는 규칙은 `grammatik/tools/uebungen-src/README.md` 끝에 있어요. 원본은 `grammatik/tools/uebungen-src/U01.json` … `U37.json`이고, 쓰는 법과 규칙은 같은 폴더의 `README.md`에 있어요. 원본을 고친 뒤 `python3 grammatik/tools/uebungen-check.py`로 검사하고 `python3 grammatik/tools/uebungen-build.py`를 실행하면 `grammatik/uebungen/`의 앱용 파일, `index.html`의 연습 주소, `sw.js`의 캐시 목록과 버전이 함께 바뀌어요.
+- `grammatik/`의 교재(과, `#/L01` …)는 핸드폰과 작은 태블릿(화면 폭 820px 이하, 세워 든 상태)에서 책처럼 한 페이지씩 넘겨 보는 「페이지 보기」로 열립니다. 옆으로 밀면 종이가 손가락을 따라 접히며 넘어가고, 화면 좌우 가장자리를 누르거나 아래 띠의 화살표를 눌러도 넘어가요. 넓은 화면과 옆으로 눕힌 핸드폰은 전처럼 스크롤로 열리고, 오른쪽 아래 글자 크기 단추 옆의 책 단추로 페이지 보기를 켤 수 있습니다. 목차·연습문제·부록은 늘 스크롤이에요. 이 기능은 `grammatik/pager.js` 한 파일에 들어 있습니다.
+  - 과의 내용(`lessons/L01.json` …)은 그대로 두고 화면에서만 페이지로 나눕니다. 스크롤 보기로 바꾸거나 인쇄하면 원래 모양으로 돌아가요. 읽던 자리와 진도는 전처럼 앱(`index.html`)이 저장하고, `pager.js`는 지금 페이지가 과 전체에서 어디쯤인지를 스크롤 보기의 '읽은 비율'과 같은 값으로 알려 줍니다. 앱과 이어지는 곳은 `index.html`에서 `SodaPager`를 찾으면 나와요(과를 연 직후 `mount`, 과에서 나갈 때 `unmount`, 글자 크기를 바꾼 뒤 `refresh`).
+  - 학생은 아래 띠의 `Aa`에서 페이지/스크롤을 고를 수 있고, 고른 방식은 그 기기에 저장됩니다. 주소의 `#/` 앞에 `?view=page`, `?view=scroll`, `?view=auto`를 붙여 열어도 그 기기의 방식이 바뀌어요(예: `…/grammatik/?view=scroll#/L01`).
+  - 어떤 기기에서 페이지 보기가 안 열린다고 하면 `…/grammatik/?view=info#/L01`을 열어 보게 합니다. 페이지 보기가 켜졌는지, 꺼졌다면 까닭이 무엇인지(고른 방식, 화면 크기, 나누다가 난 오류)가 화면에 나오고 `내용 복사`로 그대로 받을 수 있어요.
+  - 모든 기기에서 한꺼번에 끄려면 `pager.js` 위쪽의 `TRIAL`을 `true`로 바꿉니다. 그러면 `?view=page`를 붙여 연 기기에서만 페이지로 열리고 나머지는 예전 화면 그대로예요.
+  - `pager.js`를 고친 뒤에는 `python3 grammatik/tools/pager-build.py`를 실행합니다. `index.html`의 `pager.js?v=…`와 `sw.js`의 캐시 목록·버전 값이 함께 바뀌어 학생 기기에 새 파일이 나와요. `anhang-build.py`, `uebungen-build.py`는 이 항목을 건드리지 않고 그대로 둡니다.
+  - 페이지를 나눌 때 덩어리를 다루는 규칙은 `pager.js`의 `SEL_HEAD`(다음 덩어리와 같은 페이지에 두는 제목), `SEL_AVOID`·`SEL_STRICT`(나누지 않는 덩어리), `SEL_FIT`(자리가 조금 모자라면 살짝 줄여 통째로 넣는 그림·표)에 클래스 이름으로 적혀 있습니다. 과에 새 종류의 상자를 만들면 여기에 더해 주세요. 과의 HTML에 `data-pg-keep`, `data-pg-avoid`, `data-pg-head`, `data-pg-break`, `data-pg-fit`을 직접 줄 수도 있습니다(뜻은 `pager.js` 맨 위 설명에 있어요).
 - 목차에 자료를 추가하려면 루트 `index.html`의 해당 묶음의 `<ul class="grid">` 안에 `<li>` 항목을 같은 형식으로 추가합니다.
 - 모의고사 여섯 앱은 `SODA-Goethe`, `SODA-TELC` 저장소의 각 앱 폴더에 있고, 다시 만드는 방법은 앱 폴더의 `digital-src/README.md`에 있어요. 파일을 고치면 그 저장소의 `tools/soda-theme.py`로 다크 모드 스위치를 다시 넣습니다(빌드 스크립트는 자동으로 실행).
 
