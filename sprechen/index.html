@@ -4964,11 +4964,11 @@ const AudioIO = {
 };
 
 /* ------------------------------------------------------------------ 대화 녹음
-   - 대화를 녹음하는 연습: REC_ON(ex)가 참인 연습(SODA GRAMMATIK KURS 과제의 말하기 연습, ueb-a1-NN).
+   - 대화를 녹음하는 연습: REC_ON(ex)가 참인 연습(SODA GRAMMATIK KURS 과제의 말하기 연습 ueb-a1-NN, SODA A2·B1·B2 챕터 연습 ueb-a2-NN·ueb-b1-NN·ueb-b2-NN).
    - 마이크 소리와 상대(파트너) 목소리를 한 파일로 녹음합니다. 녹음은 서버로 보내지 않고 이 기기(IndexedDB 'soda-sprechen-rec')에만 저장합니다.
    - 연습이 끝난 화면(v-after)에서 다시 듣고 파일로 내려받습니다. 같은 연습의 기록 보기에서도 다시 열립니다.
    - 저장 기간은 REC_KEEP_DAYS일입니다. 지난 녹음은 다음 녹음을 저장할 때 지웁니다. */
-const REC_ON = ex => !!ex && /^ueb-a1-\d\d$/.test(ex.id);
+const REC_ON = ex => !!ex && /^ueb-(a1|a2|b1|b2)-\d\d$/.test(ex.id);
 const REC_KEEP_DAYS = 60;
 const Rec = {
   mr: null, dest: null, chunks: [], type: '', t0: 0, pending: null,
@@ -5096,7 +5096,8 @@ function recFileName(ex, a, type) {
   const d = new Date(a.startedAt || Date.now()), p = n => String(n).padStart(2, '0');
   const day = d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + ' ' + p(d.getHours()) + p(d.getMinutes());
   const who = String((S.user && S.user.id) || '').replace(/[\\/:*?"<>|_]+/g, ' ').trim();
-  const base = 'SODA GRAMMATIK ' + (ex.rowLabel || ex.name) + ' 말하기 연습 ' + a.no + '회' + (who ? ' ' + who : '') + ' ' + day;
+  const course = /^ueb-a1-/.test(ex.id) ? 'SODA GRAMMATIK' : 'SODA ' + ex.level;
+  const base = course + ' ' + (ex.rowLabel || ex.name) + ' 말하기 연습 ' + a.no + '회' + (who ? ' ' + who : '') + ' ' + day;
   return base.replace(/[\\/:*?"<>|_]+/g, ' ').replace(/\s+/g, ' ').trim() + '.' + recExt(type);
 }
 let recUrl = null;
