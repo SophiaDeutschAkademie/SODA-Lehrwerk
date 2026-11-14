@@ -31,8 +31,8 @@
     },
     {
       "label": "Verkäufer",
-      "de": "Es wiegt nur 1,2 Kilo, und der Akku hält zwölf Stunden. Das große wiegt fast ein Kilo mehr und muss nach sechs Stunden an die Steckdose. Innen steckt übrigens derselbe Prozessor – beide Geräte sind also gleich schnell.",
-      "ko": "무게가 1.2킬로그램밖에 안 되고, 배터리가 열두 시간 가요. 큰 것은 거의 1킬로그램 더 무겁고 여섯 시간이 지나면 충전해야 해요. 참고로 안에는 같은 프로세서가 들어 있어요. 그러니까 두 기기는 속도가 같아요."
+      "de": "Es wiegt nur 1,2 Kilo, und der Akku hält zwölf Stunden. Das große wiegt fast ein Kilo mehr und muss nach sechs Stunden an die Steckdose. In beiden steckt übrigens derselbe Prozessor – die Geräte sind also gleich schnell.",
+      "ko": "무게가 1.2킬로그램밖에 안 되고, 배터리가 열두 시간 가요. 큰 것은 거의 1킬로그램 더 무겁고 여섯 시간이 지나면 충전해야 해요. 참고로 둘 다 같은 프로세서가 들어 있어요. 그러니까 두 기기는 속도가 같아요."
     },
     {
       "label": "Kundin",
@@ -41,13 +41,13 @@
     },
     {
       "label": "Verkäufer",
-      "de": "Sind Sie eigentlich noch Studentin? Mit Studierendenausweis bekommen Sie zehn Prozent Rabatt. Dann kostet das Gerät rund 674 Euro.",
-      "ko": "혹시 아직 학생이세요? 학생증이 있으면 10퍼센트 할인을 받아요. 그러면 이 기기는 674유로쯤이에요."
+      "de": "Haben Sie eigentlich einen Studierendenausweis? Damit bekommen Sie zehn Prozent Rabatt. Dann kostet das Gerät rund 674 Euro.",
+      "ko": "혹시 학생증 있으세요? 학생증이 있으면 10퍼센트 할인을 받아요. 그러면 이 기기는 674유로쯤이에요."
     },
     {
       "label": "Kundin",
-      "de": "Das ist ja nicht so teuer, wie ich befürchtet habe! Gibt es sonst noch etwas, was ich wissen sollte?",
-      "ko": "걱정했던 것만큼 비싸지는 않네요! 그 밖에 제가 알아야 할 것이 더 있나요?"
+      "de": "Ja, den habe ich dabei. Das ist ja nicht so teuer, wie ich befürchtet habe! Gibt es sonst noch etwas, was ich wissen sollte?",
+      "ko": "네, 가지고 있어요. 걱정했던 것만큼 비싸지는 않네요! 그 밖에 제가 알아야 할 것이 더 있나요?"
     },
     {
       "label": "Verkäufer",
@@ -79,21 +79,21 @@
       "type": "mc",
       "kind": "detail",
       "q": "Was ist bei beiden Laptops gleich?",
-      "options": ["Ihre Bildschirme sind gleich groß.", "Sie arbeiten mit gleichem Tempo.", "Ihre Akkus halten gleich lange."],
+      "options": ["Ihre Bildschirme sind gleich groß.", "Sie arbeiten im gleichen Tempo.", "Ihre Akkus halten gleich lange."],
       "answer": 1,
-      "evidence": "beide Geräte sind also gleich schnell",
-      "pairs": [["gleich schnell", "mit gleichem Tempo"]],
+      "evidence": "die Geräte sind also gleich schnell",
+      "pairs": [["gleich schnell", "im gleichen Tempo"]],
       "explain": "두 기기에는 같은 프로세서가 들어 있어서 속도가 같아요. schnell(빠른)을 Tempo(속도)로 바꿔 말했어요. 화면 크기는 다르고, 배터리는 작은 것이 두 배 오래가요."
     },
     {
       "type": "mc",
       "kind": "detail",
       "q": "Warum ist das kleinere Modell teurer?",
-      "options": ["Es ist leichter und läuft länger ohne Strom.", "Es hat einen schnelleren Prozessor eingebaut.", "Es hat eine bessere Tastatur als das große."],
+      "options": ["Es ist leichter und läuft länger ohne Steckdose.", "Es hat einen schnelleren Prozessor eingebaut.", "Es hat eine bessere Tastatur als das große."],
       "answer": 0,
       "evidence": "Es wiegt nur 1,2 Kilo, und der Akku hält zwölf Stunden.",
-      "pairs": [["wiegt nur 1,2 Kilo", "leichter"], ["der Akku hält zwölf Stunden", "läuft länger ohne Strom"]],
-      "explain": "작은 모델은 무게가 1.2킬로그램밖에 안 되고 배터리가 열두 시간 가요. 더 가볍고 전원 없이 더 오래 쓸 수 있다는 뜻이에요. 프로세서와 자판은 두 모델이 똑같아요."
+      "pairs": [["wiegt nur 1,2 Kilo", "leichter"], ["der Akku hält zwölf Stunden", "läuft länger ohne Steckdose"]],
+      "explain": "작은 모델은 무게가 1.2킬로그램밖에 안 되고 배터리가 열두 시간 가요. 더 가볍고 콘센트에 꽂지 않고도 더 오래 쓸 수 있다는 뜻이에요. 프로세서와 자판은 두 모델이 똑같아요."
     },
     {
       "type": "rf",
@@ -165,8 +165,8 @@
           "parts": [["Dann", "접속부사"], ["schauen", "동사"], ["Sie", "주어"], ["sich", "재귀대명사"], ["doch mal", "기타"], ["diese beiden Modelle", "4격 목적어"], ["an.", "동사(끝)"]]
         },
         {
-          "de": "Sind Sie eigentlich noch Studentin?",
-          "ko": "혹시 아직 학생이세요?",
+          "de": "Haben Sie eigentlich einen Studierendenausweis?",
+          "ko": "혹시 학생증 있으세요?",
           "mark": ["eigentlich"]
         }
       ],
@@ -210,13 +210,13 @@
           "parts": [["Beide", "주어"], ["haben", "동사"], ["dieselbe Tastatur und dieselben Anschlüsse.", "4격 목적어"]]
         },
         {
-          "de": "Innen steckt übrigens derselbe Prozessor",
-          "ko": "참고로 안에는 같은 프로세서가 들어 있어요.",
+          "de": "In beiden steckt übrigens derselbe Prozessor",
+          "ko": "참고로 둘 다 같은 프로세서가 들어 있어요.",
           "mark": ["derselbe Prozessor"],
-          "parts": [["Innen", "부사어(장소)"], ["steckt", "동사"], ["übrigens", "부사어"], ["derselbe Prozessor", "주어"]]
+          "parts": [["In beiden", "부사어(장소)"], ["steckt", "동사"], ["übrigens", "부사어"], ["derselbe Prozessor", "주어"]]
         }
       ],
-      "tip": "전치사와 관사가 합쳐질 때는 띄어 써요. im selben Laden, am selben Tag."
+      "tip": "전치사와 관사가 합쳐질 때는 띄어 써요. im selben Laden, am selben Tag. 종류만 같은 다른 물건에는 der gleiche도 쓰는데, 둘을 엄격히 나눌 때는 하나뿐인 바로 그것에 derselbe를 써요."
     },
     {
       "title": "alles, was · etwas, was",
@@ -284,8 +284,8 @@
     {
       "de": "Rabatt bekommen",
       "ko": "할인을 받다",
-      "ex": "Mit Studierendenausweis bekommen Sie zehn Prozent Rabatt.",
-      "exko": "학생증이 있으면 10퍼센트 할인을 받아요."
+      "ex": "Damit bekommen Sie zehn Prozent Rabatt.",
+      "exko": "그게 있으면 10퍼센트 할인을 받아요."
     },
     {
       "de": "Nein, danke.",

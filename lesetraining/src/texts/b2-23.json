@@ -10,7 +10,7 @@
   "focus": ["scheinen · drohen · pflegen + zu", "zu …, als dass", "-los · -frei · -arm · -reich", "초점 불변화사"],
   "paragraphs": [
     {
-      "de": "Zwei Jahre stand ich auf der Warteliste, dann kam im Februar der Anruf: Parzelle 47 sei frei. Ich sah mich schon im Liegestuhl, ein Buch in der Hand, um mich herum Tomaten, die mühelos reif werden. Wer je einen Garten übernommen hat, ahnt, wie diese Geschichte weitergeht.",
+      "de": "Zwei Jahre stand ich auf der Warteliste, dann kam im Februar der Anruf: Parzelle 47 sei frei. Ich sah mich schon im Liegestuhl, ein Buch in der Hand, um mich herum Tomaten, die mühelos reif wurden. Wer je einen Garten übernommen hat, ahnt, wie diese Geschichte weitergeht.",
       "ko": "저는 2년 동안 대기 명단에 있었고, 2월에 47번 구획이 비었다는 전화를 받았어요. 저는 벌써 접이식 의자에 누워 책을 손에 든 제 모습을 그렸어요. 둘레에는 힘들이지 않아도 익어 가는 토마토가 있었어요. 정원을 넘겨받아 본 사람이라면 이 이야기가 어떻게 이어질지 짐작할 거예요."
     },
     {
@@ -32,7 +32,7 @@
       "ko": "달팽이와 그 밖의 선생님들"
     },
     {
-      "de": "Im Mai setzte ich zwanzig Salatpflanzen. Aus Büchern hatte ich gelernt, wann man pflanzt, aber nicht, wie man verliert. Ausgerechnet in der Nacht darauf regnete es, und am Morgen waren lediglich drei übrig – den Rest hatten die Schnecken geholt. Der Sommer wiederum war zu trocken, als dass die Bohnen ohne tägliches Gießen überlebt hätten. Jeden Abend schleppte ich Kannen durch den Garten, sogar an meinem Geburtstag. Meine Schwester Marit, die das Ganze für eine Laune hielt, kam erst im August zu Besuch. Sie blieb den ganzen Tag.",
+      "de": "Im Mai setzte ich zwanzig Salatpflanzen. Aus Büchern hatte ich gelernt, wann man pflanzt, aber nicht, wie man verliert. Ausgerechnet in der Nacht darauf regnete es, und am Morgen waren lediglich drei übrig – den Rest hatten die Schnecken geholt. Der Sommer wiederum war zu trocken, als dass die Bohnen ohne tägliches Gießen überlebt hätten. Jeden Abend schleppte ich Gießkannen durch den Garten, sogar an meinem Geburtstag. Meine Schwester Marit, die das Ganze für eine Laune hielt, kam erst im August zu Besuch. Sie blieb den ganzen Tag.",
       "ko": "5월에 저는 상추 모종 스무 포기를 심었어요. 책에서는 언제 심는지는 배웠지만 어떻게 잃는지는 배우지 못했어요. 하필 그날 밤에 비가 왔고, 아침에는 고작 세 포기만 남아 있었어요. 나머지는 달팽이가 가져갔어요. 여름은 또 너무 가물어서 콩이 매일 물을 주지 않고는 살아남을 수 없었어요. 저는 저녁마다 물뿌리개를 들고 정원을 돌아다녔고, 제 생일에도 그랬어요. 이 모든 것을 한때의 변덕이라고 여기던 언니 마리트는 8월이 되어서야 찾아왔어요. 언니는 하루 종일 머물렀어요."
     },
     {
@@ -52,7 +52,7 @@
       "q": "Welche Erwartung hatte die Autorin, als sie den Garten bekam?",
       "options": ["Sie rechnete mit strengen Regeln und viel Kontrolle.", "Sie stellte sich Erholung ohne große Anstrengung vor.", "Sie wollte vor allem Gemüse für ihre Familie anbauen."],
       "answer": 1,
-      "evidence": "Ich sah mich schon im Liegestuhl, ein Buch in der Hand, um mich herum Tomaten, die mühelos reif werden.",
+      "evidence": "Ich sah mich schon im Liegestuhl, ein Buch in der Hand, um mich herum Tomaten, die mühelos reif wurden.",
       "pairs": [["im Liegestuhl", "Erholung"], ["mühelos", "ohne große Anstrengung"]],
       "explain": "글쓴이는 의자에 누워 책을 읽고, 토마토는 힘들이지 않아도 익는 모습을 그렸어요. 쉬면서 별로 애쓰지 않아도 되는 정원을 기대한 거예요. 규칙과 감시는 나중에 알게 된 현실이에요."
     },
@@ -223,7 +223,7 @@
           "mark": ["lediglich"]
         },
         {
-          "de": "Jeden Abend schleppte ich Kannen durch den Garten, sogar an meinem Geburtstag.",
+          "de": "Jeden Abend schleppte ich Gießkannen durch den Garten, sogar an meinem Geburtstag.",
           "ko": "저는 저녁마다 물뿌리개를 들고 정원을 돌아다녔고, 제 생일에도 그랬어요.",
           "mark": ["sogar"]
         }

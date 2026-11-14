@@ -18,11 +18,11 @@
       "ko": "응답자 가운데 매일 직접 요리하는 사람은 이제 38퍼센트뿐입니다. 10년 전에는 절반이 조금 넘는 51퍼센트였습니다. 그러니까 이 비율은 13퍼센트포인트 줄었습니다. 약 3분의 1은 일주일에 여러 번 요리하고, 28퍼센트는 부엌에 서는 일이 드물거나 전혀 없습니다. 둘을 합치면 이제 매일 요리하지는 않는 사람이 거의 3분의 2입니다."
     },
     {
-      "de": "Besonders groß ist der Unterschied zwischen den Generationen. Bei den über 60-Jährigen bereitet mehr als die Hälfte täglich eine warme Mahlzeit zu. Bei den 18- bis 29-Jährigen ist es dagegen nur jeder Fünfte. Während die Älteren Kochen meist als Teil ihres Alltags sehen, fehlt den Jüngeren dafür oft die Zeit.",
+      "de": "Besonders groß ist der Unterschied zwischen den Generationen. Bei den über 60-Jährigen bereitet mehr als die Hälfte täglich eine warme Mahlzeit zu. Bei den 18- bis 29-Jährigen ist es dagegen nur jeder Fünfte. Während die Älteren das Kochen meist als Teil ihres Alltags sehen, fehlt den Jüngeren dafür oft die Zeit.",
       "ko": "세대 사이의 차이가 특히 큽니다. 60세가 넘은 사람들은 절반 이상이 매일 따뜻한 식사를 준비합니다. 반면 18세에서 29세 사이에서는 다섯 명 중 한 명뿐입니다. 나이 든 사람들은 요리를 대개 일상의 일부로 여기지만, 젊은 사람들은 요리할 시간이 없는 경우가 많습니다."
     },
     {
-      "de": "Warum bleibt die Küche kalt? Zwei Drittel der Berufstätigen sagen, dass sie nach der Arbeit zu müde sind. Jeder dritte Alleinlebende findet, dass sich der Aufwand für eine Person nicht lohnt. Gleichzeitig wird immer häufiger bestellt: Der Anteil der Menschen, die mindestens einmal pro Woche Essen liefern lassen, ist von 9 auf 27 Prozent gestiegen.",
+      "de": "Warum bleibt die Küche kalt? Zwei Drittel der Berufstätigen sagen, dass sie nach der Arbeit zu müde sind. Jeder dritte Alleinlebende findet, dass sich der Aufwand für eine Person nicht lohnt. Gleichzeitig wird immer häufiger bestellt: Der Anteil der Menschen, die sich mindestens einmal pro Woche Essen liefern lassen, ist von 9 auf 27 Prozent gestiegen.",
       "ko": "왜 부엌에서 요리를 하지 않을까요? 직장인의 3분의 2는 일을 마치면 너무 피곤하다고 말합니다. 혼자 사는 사람 세 명 중 한 명은 한 사람을 위해 그런 수고를 들일 만하지 않다고 생각합니다. 동시에 음식을 주문하는 일은 점점 잦아지고 있습니다. 일주일에 한 번 이상 음식을 배달시키는 사람의 비율은 9퍼센트에서 27퍼센트로 늘었습니다."
     },
     {
@@ -147,10 +147,10 @@
       "pattern": "Während + 주어 … 동사(끝), 동사 + 주어 … · … dagegen … · Im Vergleich zu + 3격",
       "examples": [
         {
-          "de": "Während die Älteren Kochen meist als Teil ihres Alltags sehen, fehlt den Jüngeren dafür oft die Zeit.",
+          "de": "Während die Älteren das Kochen meist als Teil ihres Alltags sehen, fehlt den Jüngeren dafür oft die Zeit.",
           "ko": "나이 든 사람들은 요리를 대개 일상의 일부로 여기지만, 젊은 사람들은 요리할 시간이 없는 경우가 많습니다.",
           "mark": ["Während", "sehen"],
-          "parts": [["Während die Älteren Kochen meist als Teil ihres Alltags sehen,", "종속절"], ["fehlt", "동사"], ["den Jüngeren", "3격 목적어"], ["dafür", "부사어"], ["oft", "부사어(빈도)"], ["die Zeit.", "주어"]]
+          "parts": [["Während die Älteren das Kochen meist als Teil ihres Alltags sehen,", "종속절"], ["fehlt", "동사"], ["den Jüngeren", "3격 목적어"], ["dafür", "부사어"], ["oft", "부사어(빈도)"], ["die Zeit.", "주어"]]
         },
         {
           "de": "Im Vergleich zu den Älteren kochen die Jüngeren zwar seltener, aber häufiger gemeinsam.",

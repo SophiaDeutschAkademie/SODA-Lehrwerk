@@ -37,12 +37,12 @@
       "ko": "게다가 사흘 뒤에 강사가 바뀌었습니다. 대신 온 강사는 준비가 되어 있지 않았고, 우리가 어떤 주제를 이미 다루었는지조차 몰랐습니다. 이런 이유로 우리는 이틀 동안 같은 내용을 되풀이했습니다. 수강생 모두에게 버린 시간이었습니다."
     },
     {
-      "de": "Auch das Lehrbuch war ein Problem. Es ist laut Anmeldebestätigung im Preis enthalten, ich musste es aber für 29 Euro selbst kaufen. Das Sprachlabor, das wir täglich eine Stunde nutzen sollten, war in der ganzen ersten Woche geschlossen. Niemand konnte uns sagen, wann es wieder geöffnet wird.",
+      "de": "Auch das Lehrbuch war ein Problem. Es ist laut Anmeldebestätigung im Preis enthalten, ich musste es aber für 29 Euro selbst kaufen. Das Sprachlabor, das wir täglich eine Stunde nutzen sollten, war die ganze erste Woche geschlossen. Niemand konnte uns sagen, wann es wieder geöffnet wird.",
       "ko": "교재도 문제였습니다. 등록 확인서에 따르면 교재는 수강료에 포함되어 있는데, 저는 29유로를 내고 직접 사야 했습니다. 매일 한 시간씩 이용하기로 되어 있던 어학 실습실은 첫 주 내내 닫혀 있었습니다. 언제 다시 여는지 아무도 알려 주지 못했습니다."
     },
     {
-      "de": "Ich habe den Kurs gebucht, weil ich im April eine neue Stelle antrete. Dort brauche ich nämlich täglich Englisch. Mein Ziel habe ich in diesen zwei Wochen nicht erreicht.",
-      "ko": "제가 이 강좌를 신청한 것은 4월에 새 직장에서 일을 시작하기 때문입니다. 그곳에서는 매일 영어를 써야 하기 때문입니다. 이 2주 동안 저는 목표를 이루지 못했습니다."
+      "de": "Ich habe den Kurs gebucht, weil ich im April eine neue Stelle antrete. Dort brauche ich nämlich täglich Englisch. Mein Ziel, sicherer Englisch zu sprechen, habe ich in diesen zwei Wochen nicht erreicht.",
+      "ko": "제가 이 강좌를 신청한 것은 4월에 새 직장에서 일을 시작하기 때문입니다. 그곳에서는 매일 영어를 써야 하기 때문입니다. 영어를 더 자신 있게 말하겠다는 목표를 저는 이 2주 동안 이루지 못했습니다."
     },
     {
       "de": "Ich erwarte deshalb, dass Sie mir ein Drittel der Kursgebühr, also 160 Euro, sowie die 29 Euro für das Lehrbuch erstatten. Ich bitte Sie, den Betrag bis zum 4. April auf mein Konto zu überweisen. Bitte teilen Sie mir mit, ob Sie mit dieser Lösung einverstanden sind. Andernfalls werde ich mich an die Verbraucherzentrale wenden.",
@@ -131,12 +131,12 @@
     {
       "type": "mc",
       "kind": "detail",
-      "q": "Was will Frau Stoll tun, wenn die Schule nicht bis zum 4. April zahlt?",
+      "q": "Was will Frau Stoll tun, wenn die Schule ihre Forderung ablehnt?",
       "options": ["Sie bucht den Kurs bei einer anderen Schule.", "Sie sucht Hilfe bei einer Beratungsstelle.", "Sie überweist die Kursgebühr nicht mehr."],
       "answer": 1,
       "evidence": "Andernfalls werde ich mich an die Verbraucherzentrale wenden.",
       "pairs": [["an die Verbraucherzentrale wenden", "sucht Hilfe bei einer Beratungsstelle"]],
-      "explain": "학원이 돈을 돌려주지 않으면 슈톨 씨는 소비자 센터에 도움을 청하겠다고 해요. 소비자 센터는 소비자를 돕는 상담 기관이에요. 수강료는 이미 냈어요."
+      "explain": "학원이 이 해결책에 동의하지 않으면 슈톨 씨는 소비자 센터에 도움을 청하겠다고 해요. 소비자 센터는 소비자를 돕는 상담 기관이에요. 수강료는 이미 냈어요."
     }
   ],
   "grammar": [
@@ -179,7 +179,7 @@
           "parts": [["Laut Ihrer Internetseite", "부사어"], ["ist", "동사"], ["die Gruppengröße", "주어"], ["auf acht Personen", "전치사 목적어"], ["begrenzt.", "동사(끝)"]]
         },
         {
-          "de": "Das Sprachlabor, das wir täglich eine Stunde nutzen sollten, war in der ganzen ersten Woche geschlossen.",
+          "de": "Das Sprachlabor, das wir täglich eine Stunde nutzen sollten, war die ganze erste Woche geschlossen.",
           "ko": "매일 한 시간씩 이용하기로 되어 있던 어학 실습실은 첫 주 내내 닫혀 있었습니다.",
           "mark": ["war", "geschlossen"]
         }
@@ -261,8 +261,8 @@
     {
       "de": "ein Ziel erreichen",
       "ko": "목표를 이루다",
-      "ex": "Mein Ziel habe ich in diesen zwei Wochen nicht erreicht.",
-      "exko": "이 2주 동안 저는 목표를 이루지 못했습니다."
+      "ex": "Mein Ziel, sicherer Englisch zu sprechen, habe ich in diesen zwei Wochen nicht erreicht.",
+      "exko": "영어를 더 자신 있게 말하겠다는 목표를 저는 이 2주 동안 이루지 못했습니다."
     },
     {
       "de": "einverstanden sein mit + Dat.",
