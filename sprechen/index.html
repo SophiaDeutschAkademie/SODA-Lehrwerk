@@ -388,6 +388,85 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
 .seg button.on{background:var(--acc);color:#fff}
 .seg button:focus-visible{outline:2px solid var(--acc);outline-offset:-2px}
 
+/* ---------- 챕터·과제 연습(Übung: GRAMMATIK 과제, SODA A2·B1·B2 챕터) 화면 · html.ueb ----------
+   진행자가 없는 연습이라 안내자 칸을 감춥니다. 핸드폰(640px 이하)에서는 아래 배치를 씁니다. */
+.exhead{display:contents}
+.exhead>.speakers{margin-top:14px}
+.mstart{display:none}
+html.ueb #spkExaminer{display:none}
+html.ueb .speakers{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){
+  html.ueb main{padding:10px 10px 40px}
+  html.ueb .view>*+*{margin-top:10px}
+  html.ueb .card{padding:14px;border-radius:12px}
+  html.ueb .card>*+*{margin-top:8px}
+  html.ueb .card h1{font-size:20px;line-height:1.35}
+  html.ueb .card h2{font-size:16px}
+  /* 머리 막대: 로고와 버튼만, 버튼은 작게 */
+  html.ueb .top{height:52px;gap:6px;padding:0 10px}
+  html.ueb .top .id{display:none}
+  html.ueb .top .sp{display:block;flex:1}
+  html.ueb .top button.ghost,html.ueb .top a.ghost{height:36px;padding:0 10px;font-size:13px;border-radius:8px}
+  html.ueb .top .theme{width:36px;height:36px}
+  /* 과제지: 왼쪽 정렬(좁은 화면에서 양쪽 정렬은 글자 사이가 벌어집니다), 안쪽 여백 줄임 */
+  html.ueb .sheet{padding:12px;border-radius:10px;font-size:15px}
+  html.ueb .sheet>*+*{margin-top:10px}
+  html.ueb .sheet .instr,html.ueb .sheet p.de,html.ueb .sheet p.kb,html.ueb .sheet .sub,html.ueb .sheet li,html.ueb .folie{text-align:left;letter-spacing:0}
+  html.ueb .sheet .instr{padding:9px 11px;font-size:13.5px}
+  html.ueb .sheet .de{font-size:16px;line-height:1.6}
+  html.ueb .sheet .tt{font-size:18px;margin-top:14px}
+  html.ueb .sheet .sub{font-size:15px;padding-bottom:8px}
+  html.ueb .sheet li{padding:2px 8px 2px 10px}
+  html.ueb .sheet li+li{margin-top:8px}
+  html.ueb .sheet .gl{font-size:13px}
+  html.ueb .cards4{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+  html.ueb .cards4 div{padding:9px 11px;font-size:15px;line-height:1.4}
+  html.ueb .cards4 div:not(.wide){grid-column:auto}
+  html.ueb .cards4 div small{font-size:12px}
+  html.ueb .sheet ul.helpgrid{grid-template-columns:1fr;gap:6px;margin:4px 0 10px}
+  html.ueb .sheet ul.helpgrid li{padding:7px 10px}
+  /* 준비 화면 선택 칸 */
+  html.ueb .opt{gap:6px;margin-top:10px}
+  html.ueb .optl{min-width:0;width:100%;font-size:14px}
+  html.ueb .seg{display:flex;width:100%}
+  html.ueb .seg button{flex:1;padding:9px 6px}
+  html.ueb .partner-box{gap:10px}
+  html.ueb textarea{font-size:16px}
+  /* 막대(감도·속도): 이름 한 줄, 그 아래 낮음—막대—높음 */
+  html.ueb .sensrow{display:grid;grid-template-columns:auto 1fr auto;gap:4px 8px;align-items:center}
+  html.ueb .sensrow label{grid-column:1/-1;min-width:0;font-size:14px}
+  html.ueb .sensrow input[type=range]{min-width:0;max-width:none;width:100%}
+  html.ueb .sensrow+p.muted{margin:2px 0 10px}
+  /* 연습 화면: 시간·단계·말하는 사람을 위에 고정, 끝내기 버튼을 아래에 고정 */
+  html.ueb .exhead{display:block;position:sticky;top:52px;z-index:4;margin:-10px -10px 0;padding:8px 10px;background:var(--bg);border-bottom:1px solid var(--line)}
+  html.ueb .statusbar{display:grid;grid-template-columns:1fr auto;align-items:center;gap:2px 10px;padding:10px 12px}
+  html.ueb .statusbar .eyebrow{font-size:11px;line-height:1.35}
+  html.ueb .stage{font-size:16px}
+  html.ueb .timer-box{min-width:0;width:auto;text-align:right}
+  html.ueb .clock{font-size:24px}
+  html.ueb .timer-box .bar{width:96px;margin-left:auto}
+  html.ueb .timer-box .small{font-size:11px;white-space:nowrap}
+  html.ueb .exhead>.speakers{margin-top:6px;gap:6px}
+  html.ueb .spk{padding:6px 8px;display:flex;justify-content:center;align-items:baseline;gap:6px;border-width:2px}
+  html.ueb .spk b{display:inline;font-size:14px}
+  html.ueb .spk span{display:inline;min-height:0;font-size:12px}
+  html.ueb #exNotice{font-size:13.5px}
+  html.ueb #exActions{position:sticky;bottom:0;z-index:4;margin:10px -10px 0;padding:10px 10px calc(10px + env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--line);display:flex;gap:8px}
+  html.ueb #exActions button{flex:1}
+  /* 준비 화면: 아래에 「연습 시작」 고정(원래 버튼이 보이면 감춤) */
+  html.ueb .mstart:not([hidden]){display:flex;position:sticky;bottom:0;z-index:4;margin:10px -10px 0;padding:10px 10px calc(10px + env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--line)}
+  html.ueb .mstart button{flex:1;padding:12px}
+  /* 연습 기록 화면 */
+  html.ueb .metrics{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  html.ueb .metric{padding:9px 10px}
+  html.ueb .metric b{font-size:18px}
+  html.ueb .metric span{font-size:11.5px;line-height:1.35}
+  html.ueb #afButtons{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  html.ueb #afButtons button{width:100%;padding:10px 8px}
+  html.ueb #afButtons button.ghost{grid-column:1/-1}
+  html.ueb .recbox a.primary{display:block;text-align:center}
+}
+
 /* 과제지 양쪽 정렬 */
 .sheet .instr,.sheet p.de,.sheet p.kb,.sheet .sub,.sheet li,.folie{text-align:justify;text-justify:inter-character;word-break:keep-all;overflow-wrap:break-word}
 .sheet p.de{hyphens:auto}
@@ -583,10 +662,12 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     </div>
     <p class="err" id="startErr" role="alert"></p>
   </div>
+  <div class="mstart" id="mStart"><button class="primary" type="button">시험 시작</button></div>
 </section>
 
 <!-- ========== 시험 ========== -->
 <section id="v-exam" class="view" hidden>
+  <div class="exhead">
   <div class="statusbar">
     <div>
       <div class="eyebrow"><span id="exTeil"></span><span class="recdot" id="exRec" hidden>녹음 중</span></div>
@@ -603,6 +684,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     <div class="spk" id="spkExaminer"><b>시험관</b><span>Frau Weber</span></div>
     <div class="spk" id="spkPartner"><b>파트너</b><span id="spkPartnerName"></span></div>
     <div class="spk" id="spkStudent"><b>나</b><span id="spkStudentName"></span></div>
+  </div>
   </div>
   <div class="level"><i id="exLevel"></i><u class="thr"></u></div>
   <div class="sens" data-sens></div>
@@ -622,7 +704,7 @@ table.sc th{font-weight:600;color:var(--ink-2);border-top:0;background:var(--pan
     <textarea id="exNotes" rows="3"></textarea>
   </div>
 
-  <div class="row">
+  <div class="row" id="exActions">
     <button class="secondary" id="btnFinish" type="button" disabled>여기서 끝내기</button>
     <button class="ghost" id="btnAbort" type="button">중단</button>
   </div>
@@ -5268,6 +5350,7 @@ function uebRewrite() {
 new MutationObserver(() => { if (!uebRewrite.busy) { uebRewrite.busy = true; Promise.resolve().then(() => { uebRewrite(); uebRewrite.busy = false; }); } })
   .observe(document.body, { childList: true, subtree: true, characterData: true });
 function show(id) {
+  document.documentElement.classList.toggle('ueb', !['v-cover', 'v-login', 'v-toc', 'v-admin'].includes(id) && isUebCtx());
   $$('.view').forEach(v => v.hidden = v.id !== id);
   $('#btnToc').hidden = ['v-cover', 'v-login', 'v-toc', 'v-exam'].includes(id);
   $('#btnLogout').hidden = ['v-cover', 'v-login', 'v-exam'].includes(id) || !S.user;
@@ -6560,6 +6643,8 @@ mountSens(); mountPrefs();
 $('#btnPrepBack').onclick = () => { clearInterval(S.prepTimer); renderToc(); };
 $('#btnPrepTimer').onclick = prepTimer;
 $('#btnStart').onclick = () => { $('#btnStart').disabled = true; clearInterval(S.prepTimer); startExam().finally(() => { $('#btnStart').disabled = false; }); };
+$('#mStart button').onclick = () => $('#btnStart').click();
+if (window.IntersectionObserver) new IntersectionObserver(es => es.forEach(e => { $('#mStart').hidden = e.isIntersecting; })).observe($('#btnStart'));
 $('#btnFinish').onclick = () => { if (confirm(isUebCtx() || (S.A && S.A.ex.hidden) ? '여기서 대화를 끝낼까요?' : '여기서 끝내면 시험관이 이어서 안내합니다. 끝낼까요?')) S.finishReq = true; };
 $('#btnAbort').onclick = () => { if (confirm('중단하면 이번 시도 1회가 사용됩니다. 중단할까요?')) S.abort = true; };
 $('#btnResultAll').onclick = () => makeResultFile(myExams().map(e => e.id));
