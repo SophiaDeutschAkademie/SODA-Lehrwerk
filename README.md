@@ -115,6 +115,16 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 - 「선생님께 기록 보내기」는 Lesetraining·Hörtraining·Schreibtraining과 같은 Apps Script 주소로 보냅니다. 앱 이름은 `Diktattraining`으로 가고, 본문에 끝낸 세트, 1차·최종 정확도, 틀린 종류, 1차에서 틀린 문장(정답과 학생이 쓴 문장)이 들어 있습니다.
 - 한국어 설명은 해요체로 씁니다.
 
+## 학습 저장(다른 기기에서 이어 풀기)
+
+학습 포탈에 로그인한 학생이 푼 내용은 서버에 저장되어, 다른 기기에서 포탈에 로그인하면 그대로 이어집니다. 답을 저장하는 앱 페이지(목차, Grammatik, Hörtraining, Diktattraining, Lesetraining, Schreibtraining, Redemittel, Kürze-Würze, Nomen-Verb-Verbindungen, Verben mit Präpositionen, 말하기 연습)는 `<meta charset>` 바로 뒤에서 `<script id="soda-sync" src="/SODA-LERNPORTAL/sync.js"></script>`를 불러옵니다. 앱은 지금처럼 localStorage에 저장하고, 그 스크립트가 바뀐 값을 서버와 주고받습니다.
+
+- 새 앱을 만들거나 답을 저장하게 바꾸면 같은 줄을 넣습니다. 기기마다 달라야 하는 화면 설정(글씨 크기, 보기 방식 등)의 저장 이름은 SODA-LERNPORTAL의 `sync.js` `SKIP_EXACT`에 더합니다.
+- `grammatik/`과 `hoertraining/`은 서비스워커가 `index.html`을 저장해 두므로, 이 줄을 넣은 뒤 `sw.js`의 VERSION을 바꿨습니다(Grammatik은 `python3 grammatik/tools/pager-build.py`). `sync.js`는 `?v=` 없이 불러와 서비스워커가 저장하지 않으므로 늘 새 파일이 옵니다.
+- Grammatik 교재(`#/L01` …)의 확인 문제도 이제 고른 선지를 저장합니다. 연습문제와 같은 저장 이름(`sda-lehrwerk-grammatik-ueb-v1`)의 `l` 안에, 문제 글로 정한 이름 아래에 들어갑니다.
+- VOKALAB은 이 스크립트를 쓰지 않고 아래 「VOKALAB 학습 기록 자동 저장」의 코드로 따로 주고받습니다(`sync.js`는 `voka-`로 시작하는 키를 올리지 않습니다).
+- 자세한 동작과 서버는 SODA-LERNPORTAL README의 「학습 기록 자동 저장」에 있습니다.
+
 ## VOKALAB 학습 기록 자동 저장(`vokalab/`)
 
 - 학습 포탈(`SODA-LERNPORTAL`)에 학생으로 로그인한 브라우저에서는 VOKALAB 기록을 저장 서버(Cloudflare Worker `soda-sync`)에 자동으로 저장하고, 같은 학생이 다른 기기에서 로그인해 열면 그 기록을 받아 이어서 학습합니다. 로그인이 없는 브라우저는 예전처럼 그 브라우저에만 저장합니다. 서버 코드, Cloudflare 설정, 학생 확인(저장 토큰 `soda-portal:sync`)은 `SODA-LERNPORTAL` README 「학습 기록 자동 저장」에 있습니다.
