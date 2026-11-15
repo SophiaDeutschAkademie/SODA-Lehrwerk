@@ -4925,7 +4925,8 @@ async function api(path, body, ms) {
   if (!res.ok) { const er = new Error((data && data.message) || '서버 응답을 처리하지 못했습니다.'); er.code = (data && data.error) || 'server'; er.status = res.status; throw er; }
   return data;
 }
-const VOICE_RMS = 0.015;   // 감도 5(기본)에서 소리로 인정하는 기준 크기
+const VOICE_RMS = 0.024;   // 감도 5(기본)에서 소리로 인정하는 기준 크기 (2026-11: 0.015 → 0.024, 감도를 낮춤)
+const ECHO_TAIL = 0.6;      // 상대 목소리가 끝난 뒤에도 이 시간(초) 동안은 마이크 소리를 보내지 않습니다(스피커 울림 차단).
 /* 파트너 목소리(여성·남성)와 상대의 독일어 실력(하·중·상). 시험 수준은 그대로이고, 같은 수준 안에서 말의 길이·어휘·속도만 조절합니다. */
 const PARTNERS = {
   f: { name: 'Mila', gender: 'f', voice: 'ZoxS77tXeRuNRJNif3rR', ko: '여성' },
@@ -4958,7 +4959,7 @@ const AudioIO = {
   ctx: null, stream: null, src: null, analyser: null, out: null,
   nextTime: 0, sources: new Set(), sink: null, ready: false,
   pending: [], pendingLen: 0, rsBuf: new Float32Array(0), rsPos: 0,
-  thr: VOICE_RMS, hang: 0, prev: null, wasOpen: false,
+  thr: VOICE_RMS, hang: 0, prev: null, wasOpen: false, above: 0,
   async init() {
     if (this.ready) { if (this.ctx.state === 'suspended') await this.ctx.resume(); return; }
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) throw new Error('이 브라우저는 마이크를 지원하지 않습니다. 최신 Chrome 또는 Safari를 사용해 주십시오.');
@@ -5020,14 +5021,19 @@ const AudioIO = {
       i16[i] = v < 0 ? v * 0x8000 : v * 0x7fff;
     }
     const rms = Math.sqrt(s / all.length);
-    /* 소음 문턱: 기준보다 작은 소리는 무음으로 바꿔 보냅니다(감도 설정). 말이 시작되는 부분이 잘리지 않도록 직전 조각을 함께 보내고, 끝난 뒤 0.6초는 열어 둡니다. */
-    const thr = this.thr * (this.speaking ? 1.6 : 1);
-    if (rms > thr) this.hang = 6; else if (this.hang > 0) this.hang--;
-    const open = rms > thr || this.hang > 0;
+    /* 소음 문턱: 기준보다 작은 소리는 무음으로 바꿔 보냅니다(감도 설정).
+       - 상대(시험관·파트너)가 말하는 동안과 끝난 뒤 ECHO_TAIL초는 마이크 소리를 보내지 않습니다. 스피커 소리가 마이크로 다시 들어가 상대의 말이 끊기는 것을 막습니다(서로 겹쳐 말하지 않음).
+       - 기준을 넘는 소리가 0.2초 이상 이어져야 말로 인정합니다(기침·책상 소리 무시). 말이 시작되는 부분이 잘리지 않도록 직전 조각을 함께 보내고, 끝난 뒤 0.6초는 열어 둡니다. */
+    const busy = this.busy;
+    const loud = !busy && rms > this.thr;
+    this.above = loud ? this.above + 1 : 0;
+    if (busy) this.hang = 0;
+    else if (this.above >= 2) this.hang = 6; else if (this.hang > 0 && !loud) this.hang--;
+    const open = !busy && (this.above >= 2 || this.hang > 0);
     let out = i16;
     if (!open) out = new Int16Array(i16.length);
     else if (!this.wasOpen && this.prev) { out = new Int16Array(this.prev.length + i16.length); out.set(this.prev); out.set(i16, this.prev.length); }
-    this.wasOpen = open; this.prev = i16;
+    this.wasOpen = open; this.prev = busy ? null : i16;
     if (this.sink) this.sink(out, rms, all.length / 16);
   },
   level() {
@@ -5048,7 +5054,8 @@ const AudioIO = {
     this.sources.add(s); s.onended = () => this.sources.delete(s);
   },
   stopPlayback() { this.sources.forEach(s => { try { s.stop(); } catch (e) { } }); this.sources.clear(); this.nextTime = 0; },
-  get speaking() { return !!this.ctx && this.nextTime > this.ctx.currentTime + 0.03; }
+  get speaking() { return !!this.ctx && this.nextTime > this.ctx.currentTime + 0.03; },
+  get busy() { return !!this.ctx && this.nextTime > 0 && this.ctx.currentTime < this.nextTime + ECHO_TAIL; }
 };
 
 /* ------------------------------------------------------------------ 대화 녹음
@@ -5528,7 +5535,8 @@ function mountSens() {
     box.innerHTML = '<div data-speedbox><div class="sensrow"><label>말하기 속도 <b data-speedval></b></label><span class="muted small">느리게</span><input type="range" min="0.7" max="1.2" step="0.05" data-speedrange aria-label="말하기 속도"><span class="muted small">빠르게</span></div>' +
       '<p class="muted small">안내자와 파트너의 말 속도입니다. 바꾼 속도는 다음에 연결되는 안내자·파트너부터 적용됩니다.</p></div>' +
       '<div class="sensrow"><label>마이크 감도 <b data-sensval></b></label><span class="muted small">낮음</span><input type="range" min="1" max="9" step="1" data-sensrange aria-label="마이크 감도"><span class="muted small">높음</span></div>' +
-      '<p class="muted small">조용한데도 "나"가 말하는 중으로 표시되면 감도를 낮추십시오. 말해도 인식되지 않으면 높이십시오.</p>';
+      '<p class="muted small">조용한데도 "나"가 말하는 중으로 표시되면 감도를 낮추십시오. 말해도 인식되지 않으면 높이십시오.</p>' +
+      '<p class="muted small"><b>이어폰 사용을 권장합니다.</b> 상대가 말하는 동안에는 내 마이크 소리를 보내지 않으므로, 상대의 말이 끝난 뒤에 말하십시오.</p>';
     $('[data-sensrange]', box).oninput = e => setSens(+e.target.value, true);
     $('[data-speedrange]', box).oninput = e => setSpeed(+e.target.value, true);
   });
@@ -5634,7 +5642,7 @@ function wireSession(s, role, phase) {
   };
   AudioIO.sink = (i16, rms, ms) => {
     const V = S.V, now = performance.now();
-    V.voice = rms > AudioIO.thr * (AudioIO.speaking ? 1.6 : 1);
+    V.voice = !AudioIO.busy && rms > AudioIO.thr;
     if (V.voice) { V.lastVoiceAt = now; if (!AudioIO.speaking) { V.voicedMs += ms; if (S.A) S.A.heard = true; } }
     s.sendAudio(i16);
   };
