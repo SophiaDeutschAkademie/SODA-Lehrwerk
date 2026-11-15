@@ -49,7 +49,7 @@
   if (TRIAL && !INFO && getView() === null) return;
 
   /* 확인 화면에 보여 줄 스크립트 번호(올릴 때마다 바꿉니다)와 실패 기록 */
-  var BUILD = '2026-11-15.L4', KEY_ERR = 'sda-lehrwerk-grammatik-pg-err', lastErr = null;
+  var BUILD = '2026-11-15.L5', KEY_ERR = 'sda-lehrwerk-grammatik-pg-err', lastErr = null;
   function note(where, err) {
     try {
       var m = err && (err.message || err.name) ? (err.name || 'Error') + ': ' + (err.message || '') : String(err);
@@ -113,6 +113,12 @@
     /* 페이지를 넘긴 뒤에는, 손가락이나 마우스를 다시 움직일 때까지 용어 풀이를 띄우지 않습니다(터치 화면은 마지막에 누른 낱말을 계속 '올려 둔' 것으로 봅니다). */
     + '.pg-stage.pg-notip .gt .gt-tip{display:none!important}'
     + '.pg-leaf.pg-m .qe,.pg-body .qi.pg-x .qe{display:block!important}'
+    /* 표 맞추기(tableFit) */
+    + 'html table[data-tf]{min-width:0!important}'
+    + 'html table[data-tf] th,html table[data-tf] td{white-space:normal!important;padding:6px 4px!important;overflow-wrap:normal;word-break:keep-all}'
+    + 'html table[data-tf="2"]{font-size:.76em!important}html table[data-tf="3"]{font-size:.71em!important}html table[data-tf="4"]{font-size:.66em!important}'
+    + 'html table[data-tf="5"]{font-size:.62em!important}html table[data-tf="6"]{font-size:.58em!important}'
+    + 'html table[data-tf="5"] th,html table[data-tf="5"] td,html table[data-tf="6"] th,html table[data-tf="6"] td{padding:5px 2px!important}'
     + '@media(max-width:640px){html:not(.pg-on) .qg[data-sq="2"]{grid-template-columns:repeat(2,minmax(0,1fr))}html:not(.pg-on) .qg[data-sq="1"]{grid-template-columns:minmax(0,1fr)}}'
     /* 문제(바로 확인·복습): 한 페이지에 여러 문제가 들어가도록 촘촘하게. 선지는 길이에 따라 한 줄에 4개·2개·1개로 놓습니다(quizFit이 정함). */
     + '.pg-body .quiz-block{gap:16px;margin-bottom:18px}'
@@ -744,6 +750,7 @@
     while (el && guard++ < 600) {
       if (!S.lsnap[P.cur.leaf.__pgn]) snapLeaf(el);
       P.top.appendChild(el);
+      tableFit(el, S.qfit);
       if (P.wide) fxFit(el);
       quizFit(el);
       var lim = P.LIMIT, r = el.getBoundingClientRect(), rem = null;
@@ -1085,7 +1092,7 @@
   function gather(holder) {
     resetTips();
     undoAll();
-    if (S.qfit) { for (var q = 0; q < S.qfit.length; q++) { S.qfit[q].removeAttribute('data-pg-q'); S.qfit[q].removeAttribute('data-pg-qm'); } S.qfit = []; }
+    if (S.qfit) { for (var q = 0; q < S.qfit.length; q++) { S.qfit[q].removeAttribute('data-pg-q'); S.qfit[q].removeAttribute('data-pg-qm'); S.qfit[q].removeAttribute('data-tf'); } S.qfit = []; }
     for (var i = 0; i < S.orig.length; i++) holder.appendChild(S.orig[i]);
     for (i = 0; i < S.leaves.length; i++) if (S.leaves[i].leaf.parentNode) S.leaves[i].leaf.parentNode.removeChild(S.leaves[i].leaf);
     S.leaves = [];
@@ -1654,6 +1661,34 @@
   }
   /* how — 없음: 앱이 과를 막 열었을 때(pos: 읽던 비율), 'user': 책 버튼을 눌렀을 때, 'auto': 화면을 돌리거나 창 크기가 바뀌었을 때.
      스크롤로 보던 중이었다면 화면에 보이던 자리에서 시작합니다. */
+  /* ───────────── 표를 화면 폭에 맞추기 ─────────────
+     옆으로 넘치는 표만 고칩니다(스크롤 보기·페이지 보기 모두). data-tf="1": 최소 폭과 줄바꿈 금지를 풀고 칸 여백을 줄임.
+     그래도 넘치면 2~6단계로 글자를 조금씩 줄입니다. 6단계에서도 넘치면 전처럼 표 안에서 옆으로 밉니다.
+     낱말 중간에서 줄을 바꾸지는 않습니다. */
+  var TF_MAX = 6;
+  function tblOver(t) {
+    var p = t.parentNode;
+    if (!p || p.nodeType !== 1) return false;
+    var st = cs(p), avail = p.clientWidth - px(st.paddingLeft) - px(st.paddingRight);
+    return avail > 0 && t.getBoundingClientRect().width > avail + 1;
+  }
+  function tableFit(scope, rec) {
+    if (!scope || !scope.querySelectorAll) return;
+    var ts = scope.tagName === 'TABLE' ? [scope] : scope.querySelectorAll('table'), i, k, t;
+    for (i = 0; i < ts.length; i++) {
+      t = ts[i];
+      if (t.hasAttribute('data-tf') || !tblOver(t)) continue;
+      k = 1; t.setAttribute('data-tf', '1');
+      while (k < TF_MAX && tblOver(t)) { k++; t.setAttribute('data-tf', String(k)); }
+      if (rec) rec.push(t);
+    }
+  }
+  function clearTF() {
+    if (!S.main) return;
+    var l = S.main.querySelectorAll('table[data-tf]');
+    for (var i = 0; i < l.length; i++) l[i].removeAttribute('data-tf');
+  }
+
   /* ───────────── 스크롤 보기의 문제 선지 ─────────────
      핸드폰 폭(640px 이하)의 스크롤 보기에서도 선지를 2×2로 놓습니다. 다만 선지 하나라도 반 폭에서 세 줄 이상이 되면
      (문장처럼 긴 선지) 그 문제는 전처럼 한 줄에 하나씩 놓습니다. 넓은 화면은 교재의 원래 배치 그대로입니다.
@@ -1663,16 +1698,17 @@
     if (!S.main) return;
     var l = S.main.querySelectorAll('.qg[data-sq]');
     for (var i = 0; i < l.length; i++) l[i].removeAttribute('data-sq');
+    clearTF();
     SQ.key = '';
   }
   function scrollQuiz(force) {
-    if (S.on || !S.main || !S.mounted) return;           /* 교재의 과에서만(연습문제·부록은 그대로) */
-    var list = S.main.querySelectorAll('.qg'), i, j;
-    if (!list.length) { SQ.key = ''; return; }
-    var q0 = list[0].children[0], narrow = (window.innerWidth || root.clientWidth) <= 640;
-    var key = S.main.clientWidth + '|' + (q0 ? cs(q0).fontSize : '') + '|' + narrow + '|' + list.length;
+    if (S.on || !S.main) return;
+    var list = S.mounted ? S.main.querySelectorAll('.qg') : [], i, j;          /* 선지 배치는 교재의 과에서만(연습문제·부록은 그대로), 표는 어디서나 */
+    var narrow = (window.innerWidth || root.clientWidth) <= 640, tn = S.main.getElementsByTagName('table').length;
+    var key = S.main.clientWidth + '|' + cs(S.main).fontSize + '|' + narrow + '|' + list.length + '|' + tn + '|' + location.hash;
     if (!force && key === SQ.key) return;
     SQ.key = key;
+    if (tn) { clearTF(); tableFit(S.main, null); }
     for (i = 0; i < list.length; i++) {
       var g = list[i], bs = g.children, n = bs.length, ok = narrow && n >= 2 && !g.classList.contains('qg1');
       if (!ok) { g.removeAttribute('data-sq'); continue; }
