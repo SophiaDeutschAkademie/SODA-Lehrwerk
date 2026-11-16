@@ -36,7 +36,7 @@ PAGES = [
     ('index.html',
      'SODA Lehrwerk · 무료 독일어 학습 자료 | 소피아 독일어학원',
      '소피아 독일어학원이 무료로 공개하는 독일어 학습 자료. A1–C1 문법 교재, 독해·듣기·받아쓰기·쓰기·말하기 훈련, '
-     '단어장 12,000여 단어, 전치사와 연어 플래시카드, 독일어 공부법, Goethe·telc 모의고사를 한곳에서 엽니다.',
+     '단어장 12,000여 단어, 전치사·연어·비즈니스 표현 플래시카드, 독일어 공부법, Goethe·telc 모의고사를 한곳에서 엽니다.',
      'assets/icons/icon-512.png'),
     ('grammatik/index.html',
      '독일어 문법 교재 Syntalab · Lektion 37개와 연습문제 | SODA Lehrwerk',
@@ -86,6 +86,10 @@ PAGES = [
      '짧은 독일어 일상 표현 256개 · 일상을 위한 MSG | In der Kürze liegt die Würze',
      '독일 사람들이 일상에서 자주 쓰는 짧은 독일어 표현 256개와 헷갈리는 짝을 A2부터 C1까지 플래시카드로 익힙니다. 소피아 독일어학원.',
      'kuerze-wuerze/icons/icon-512.png'),
+    ('business-deutsch/index.html',
+     '비즈니스 독일어 표현 270개 · 메일·전화·회의 플래시카드 A2–C1 | SODA Business-Deutsch',
+     '독일어 이메일, 전화, 회의, 발표, 협상, 면접에서 쓰는 비즈니스 표현 270개를 A2부터 C1까지 플래시카드로 익힙니다. 상황별 예문과 격식 차이, 헷갈리는 비즈니스 어휘. 소피아 독일어학원.',
+     'business-deutsch/icons/icon-512.png'),
     ('lernmethoden/index.html',
      '독일어 공부법 · SODA Lernmethoden | 소피아 독일어학원',
      '독일어를 효과적으로 공부하는 방법을 연구를 근거로 정리한 글 40편. 학습 계획, 어휘, 문법, 읽기, 듣기, 말하기, 쓰기와 시험 직전 한 달까지 다룹니다.',
@@ -129,7 +133,9 @@ def put(path, lines, title=None):
         s = re.sub(r'\n?<meta name="description"[^>]*>', '', s)
         anchor = re.search(r'<title>[^<]*</title>', s)
     else:
-        anchor = re.search(r'<meta charset="?[^>]*>', s, re.I) or re.search(r'<head[^>]*>', s, re.I)
+        # <meta charset> 바로 뒤의 학습 저장 스크립트(soda-sync)는 그 자리에 두고 그 뒤에 넣는다
+        anchor = (re.search(r'<meta charset="?[^>]*>(?:<script id="soda-sync"[^>]*></script>)?', s, re.I)
+                  or re.search(r'<head[^>]*>', s, re.I))
     if not anchor:
         raise SystemExit('%s: 태그를 넣을 자리를 찾지 못했습니다' % path)
     s = s[:anchor.end()] + block(lines) + s[anchor.end():]
