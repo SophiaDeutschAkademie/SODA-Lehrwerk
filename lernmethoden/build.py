@@ -39,7 +39,7 @@ CATS = [
     ('lernplanung', 'Lernplanung', '학습 계획', '필요한 시간을 계산하고, 쉬었다가 다시 시작하는 법'),
     ('wortschatz', 'Wortschatz', '어휘', '단어를 얼마나, 어떻게 공부할 것인가'),
     ('grammatik', 'Grammatik', '문법', '문법책을 읽고 몸에 붙이는 방법'),
-    ('lesen', 'Lesen', '읽기', '독해 습관과 수집하며 읽기'),
+    ('lesen', 'Lesen', '읽기', '독해 습관, 수집하며 읽기, 모르는 단어 찾기'),
     ('hoeren', 'Hören', '듣기', '듣기 루틴과 듣기가 늘지 않는 이유'),
     ('sprechen', 'Sprechen', '말하기', '독일에 가지 않고 말하기 실력을 키우는 훈련'),
     ('schreiben', 'Schreiben', '쓰기', '연어, 연결어, 다시 쓰기, 문장의 첫머리'),
