@@ -1,0 +1,91 @@
+{
+ "v": 1,
+ "notices": [
+  {
+   "id": "2026-11-16-business-deutsch",
+   "date": "2026-11-16",
+   "title": "비즈니스 독일어 표현 플래시카드를 열었습니다",
+   "body": "Wortschatz에 Business-Deutsch를 새로 올렸습니다. 첫 만남과 스몰토크부터 메일, 전화, 회의, 발표, 협상, 고객 응대, 면접까지 14개 상황의 표현 270장(A2–C1)이 있고, 부록에 헷갈리는 비즈니스 어휘를 정리했습니다.",
+   "href": "business-deutsch/",
+   "go": "Business-Deutsch 열기"
+  },
+  {
+   "id": "2026-11-15-lernportal-speichern",
+   "date": "2026-11-15",
+   "tag": "수강생 전용",
+   "title": "학습 포탈에 로그인하면 푼 내용이 자동으로 저장됩니다",
+   "body": "학습 포탈에 로그인한 브라우저에서 Vokalab, Grammatik, Lesetraining, Hörtraining, Diktattraining, Schreibtraining, Wortschatz 플래시카드를 열면 푼 내용이 서버에 저장됩니다. 다른 기기에서 같은 아이디로 로그인하면 이어서 공부할 수 있습니다. 로그인하지 않으면 지금처럼 그 기기에만 저장됩니다.",
+   "href": "https://sophiadeutschakademie.github.io/SODA-LERNPORTAL/",
+   "go": "학습 포탈 열기"
+  },
+  {
+   "id": "2026-11-15-grammatik-seitenansicht",
+   "date": "2026-11-15",
+   "title": "문법 교재를 핸드폰에서 책처럼 넘겨 볼 수 있습니다",
+   "body": "핸드폰에서 문법 교재(Syntalab)의 과를 열면 한 페이지씩 넘겨 보는 페이지 보기로 열립니다. 문제는 한 페이지에 여러 개가 들어가고, 격변화표는 표 한 장으로 보입니다. 아래 띠의 Aa에서 스크롤 보기로 바꿀 수 있습니다.\n교재의 확인 문제에서 고른 답도 이제 저장됩니다. 교재 전체를 다시 검토해 어색한 설명과 오류를 고쳤습니다.",
+   "href": "grammatik/",
+   "go": "문법 교재 열기"
+  },
+  {
+   "id": "2026-11-14-lesetraining-125",
+   "date": "2026-11-14",
+   "title": "독해 훈련 텍스트가 125개가 되었습니다",
+   "body": "Lesetraining의 레벨마다 21–25번 텍스트를 더했습니다. A1부터 C1까지 레벨마다 텍스트가 25개씩 있습니다.",
+   "href": "lesetraining/",
+   "go": "독해 훈련 열기"
+  },
+  {
+   "id": "2026-11-14-sprechen-aufnahme",
+   "date": "2026-11-14",
+   "tag": "수강생 전용",
+   "title": "말하기 연습 대화를 녹음해 내려받을 수 있습니다",
+   "body": "SODA Sprechen에서 SODA GRAMMATIK 과제의 말하기 연습과 SODA A2·B1·B2 챕터 연습을 하면 대화가 녹음됩니다. 연습을 마친 화면의 「대화 녹음」 칸에서 다시 듣고 내려받을 수 있습니다. 녹음은 서버로 보내지 않으며, 그 화면을 나가면 지워집니다."
+  },
+  {
+   "id": "2026-11-13-lernmethoden-40",
+   "date": "2026-11-13",
+   "title": "독일어 공부법 글이 40편이 되었습니다",
+   "body": "분류 「학습 계획」과 「시험」을 새로 만들고 글을 더했습니다.\n- 어휘 6편 「쓰면서 외우면 더 잘 외워질까」\n- 시험 4편 「종이 시험과 디지털 시험, 어느 쪽으로 볼까」\n- 문법 4편 「독일에 살아도 문법은 저절로 늘지 않습니다」\n- 학습 계획 3편 「일주일을 네 갈래로 나누기」",
+   "href": "lernmethoden/",
+   "go": "독일어 공부법 열기"
+  },
+  {
+   "id": "2026-11-11-diktattraining",
+   "date": "2026-11-11",
+   "title": "받아쓰기 훈련을 열었습니다",
+   "body": "Training에 Diktattraining을 새로 올렸습니다. A1–C1 문장 563개를 듣고 받아쓰면 어미, 관사, 철자, 빠진 단어 등 틀린 곳을 종류별로 표시합니다. 처음에 틀린 문장은 「다시 쓸 문장」에 모여 다시 연습할 수 있습니다.",
+   "href": "diktattraining/",
+   "go": "받아쓰기 훈련 열기"
+  },
+  {
+   "id": "2026-11-11-goethe-b1-erklaerung",
+   "date": "2026-11-11",
+   "title": "Goethe-Zertifikat B1 모의고사에 해설을 더했습니다",
+   "body": "Goethe-Zertifikat B1 Modelltest 1–10마다 「해설」 버튼이 있습니다. Lesen·Hören은 문항마다 정답의 근거와 함정을 설명하고, Schreiben 모범 답안과 Sprechen 진행 요령도 담았습니다.",
+   "href": "https://sophiadeutschakademie.github.io/SODA-Goethe/goethe-b1/",
+   "go": "Goethe B1 열기"
+  },
+  {
+   "id": "2026-11-11-homescreen",
+   "date": "2026-11-11",
+   "title": "핸드폰 홈 화면에 SODA Lehrwerk를 추가할 수 있습니다",
+   "body": "핸드폰에서 표지의 「홈 화면에 앱 추가」를 누르면 홈 화면에 아이콘을 만들 수 있습니다. 아이콘을 누르면 앱처럼 바로 열립니다."
+  },
+  {
+   "id": "2026-11-10-grammatikuebungen",
+   "date": "2026-11-10",
+   "title": "문법 연습에 보강 문제와 통합 복습을 더했습니다",
+   "body": "Grammatikübungen의 과마다 바꿔 쓰기·오류 찾기 6문항을 더했고, 목차 맨 아래에 여러 과를 섞은 통합 복습 4세트를 만들었습니다. 푼 답은 기기에 자동으로 저장됩니다.",
+   "href": "grammatik/#/uebungen",
+   "go": "문법 연습 열기"
+  },
+  {
+   "id": "2026-11-09-schreibtraining",
+   "date": "2026-11-09",
+   "title": "쓰기 훈련을 열었습니다",
+   "body": "Training에 Schreibtraining을 새로 올렸습니다. A1–C1 레벨마다 5챕터, 모두 25챕터이며 챕터마다 구성, 표현, 연습, 쓰기, 모범답안이 있습니다. 소피아 독일어학원 수강생은 쓴 글을 「선생님께 제출하기」로 보낼 수 있습니다.",
+   "href": "schreibtraining/",
+   "go": "쓰기 훈련 열기"
+  }
+ ]
+}

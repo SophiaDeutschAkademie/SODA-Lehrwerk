@@ -176,7 +176,10 @@ h1:focus{outline:none}
 /* ───────── 목차 레이아웃: 상단 제목 + 세 묶음 패널 ───────── */
 #inhalt .split{display:block;max-width:1320px;padding:clamp(20px,3.5vw,44px) clamp(16px,5vw,64px) 72px}
 #inhalt .side-l{position:relative;min-height:0;display:block;padding:0}
-#inhalt .side-l .pill{position:absolute;top:0;right:0;align-self:auto;z-index:2}
+#inhalt .toc-tools{position:absolute;top:0;right:0;z-index:2;display:flex;align-items:center;gap:8px}
+#inhalt .toc-tools .pill{align-self:auto}
+/* 오른쪽 위에 고정된 다크 모드 버튼(오른쪽 끝에서 10–48px)과 겹치지 않게, 화면 오른쪽 끝에서 58px 안쪽에 둡니다 */
+@media (min-width:701px){#inhalt .toc-tools{right:max(0px,calc(58px - clamp(16px,5vw,64px)))}}
 #inhalt .side-main{display:grid;grid-template-columns:1fr auto;grid-template-areas:"brand brand" "title info";align-items:end;column-gap:40px;row-gap:0;padding:0 0 clamp(28px,5vw,56px);justify-content:stretch}
 #inhalt .top-brand{grid-area:brand;margin:0 0 clamp(28px,6vw,72px);height:36px}
 #inhalt .big{grid-area:title;font-size:clamp(52px,9.4vw,136px);line-height:.98}
@@ -256,7 +259,7 @@ html[data-theme="dark"] .tile.soon{background:transparent}
 html[data-theme="dark"] .tile:hover,html[data-theme="dark"] .tile:focus-visible{border-color:#44506A;box-shadow:0 12px 30px rgba(0,0,0,.45)}
 html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visible .go{color:#14181E}
 
-@media (max-width:700px){#inhalt .side-l .pill{right:46px}}
+@media (max-width:700px){#inhalt .toc-tools{right:46px}}
 @media (max-width:620px){
 #inhalt .cat{padding:14px 12px 12px;border-radius:20px}
 #inhalt .cat .grid,#inhalt .cat .grid.three,#inhalt .cat .grid.one{flex:0 0 auto}
@@ -303,9 +306,14 @@ html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visi
 <section id="inhalt" class="view" aria-label="목차" hidden>
   <div class="split">
     <aside class="side-l">
-      <a class="pill" href="#">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>표지
-      </a>
+      <div class="toc-tools">
+        <button type="button" class="pill ntc" data-ntc aria-haspopup="dialog" aria-label="공지사항">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>공지사항
+        </button>
+        <a class="pill" href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>표지
+        </a>
+      </div>
       <div class="side-main">
         <div class="top-brand">
           <img src="assets/logo.png" alt="">
@@ -321,13 +329,13 @@ html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visi
       <section class="cat" aria-labelledby="cat-grammatik">
         <header class="cat-h"><h2 id="cat-grammatik">Grammatik</h2></header>
         <ul class="grid one">
-        <li><a class="tile" href="grammatik/" style="--i:0"><span class="upd"><span>업데이트</span><span>2026.11.12</span></span>
+        <li><a class="tile" href="grammatik/" style="--i:0"><span class="upd"><span>업데이트</span><span>2026.11.15</span></span>
           <span class="lab">Syntalab</span><b class="ttl">문법 교재</b><span class="dsc">구조가 보이면 쉬워지는 독일어</span>
           <span class="tile-foot"><span class="metas"><span class="meta">Lektion 37개</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
-        <li><a class="tile" href="grammatik/#/uebungen" style="--i:1"><span class="upd"><span>업데이트</span><span>2026.11.03</span></span>
+        <li><a class="tile" href="grammatik/#/uebungen" style="--i:1"><span class="upd"><span>업데이트</span><span>2026.11.10</span></span>
           <span class="lab">Grammatikübungen</span><b class="ttl">문법 연습</b><span class="dsc">풀면서 익히는 독일어 문법</span>
-          <span class="tile-foot"><span class="metas"><span class="meta">Lektion별 연습 37개 · 1,121문항</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+          <span class="tile-foot"><span class="metas"><span class="meta">Lektion별 연습 37개 · 1,343문항</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
         </ul>
       </section>
@@ -456,6 +464,239 @@ html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visi
   route(false);
 })();
 </script>
+<!-- ===== 목차 공지사항 (공지는 notices.json, README 「공지사항」) ===== -->
+<style id="ntc-css">
+.ntc{font-family:inherit;line-height:1.6;cursor:pointer;-webkit-appearance:none;appearance:none;-webkit-tap-highlight-color:transparent}
+.ntc.on{color:var(--accent)}
+.ntc .nb{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;margin:0 -6px 0 2px;padding:0 6px;border-radius:999px;background:var(--accent);color:#fff;font-size:11.5px;font-weight:800;line-height:1;letter-spacing:0;font-variant-numeric:tabular-nums}
+html.nt-lock,html.nt-lock body{overflow:hidden}
+.nt-sheet{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:flex-end;justify-content:center;font-family:var(--f-sans);color:var(--text)}
+.nt-bg{position:absolute;inset:0;background:rgba(20,24,36,.45)}
+.nt-box{position:relative;display:flex;flex-direction:column;width:100%;max-width:560px;max-height:88vh;max-height:88dvh;background:var(--bg);border-radius:20px 20px 0 0;box-shadow:0 -10px 40px rgba(0,0,0,.18);outline:none;overflow:hidden;animation:ntIn .22s var(--ease) both}
+@keyframes ntIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.nt-hd{display:flex;align-items:center;gap:10px;padding:14px 12px 12px 20px;background:var(--bg-c);border-bottom:1px solid var(--bd)}
+.nt-hd h2{flex:1;min-width:0;font-size:18px;font-weight:800;line-height:1.4;letter-spacing:-.01em}
+.nt-x{display:flex;align-items:center;justify-content:center;width:38px;height:38px;flex:none;border:0;border-radius:50%;background:transparent;color:var(--text-m);cursor:pointer}
+.nt-x:hover,.nt-x:focus-visible{background:var(--bg-s);color:var(--text);outline:none}
+.nt-x svg{width:20px;height:20px}
+.nt-bd{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:14px 14px calc(16px + env(safe-area-inset-bottom))}
+.nt-it{background:var(--bg-c);border:1px solid var(--bd);border-radius:14px;margin:0 0 8px}
+.nt-it.new{border-color:#B9C0CF}
+.nt-it>summary{display:flex;align-items:flex-start;gap:10px;padding:13px 12px 13px 16px;cursor:pointer;list-style:none;border-radius:14px}
+.nt-it>summary::-webkit-details-marker{display:none}
+.nt-it>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.nt-h{flex:1;min-width:0}
+.nt-tags{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 4px}
+.nt-tag{display:inline-block;border-radius:999px;padding:0 8px;font-size:11.5px;font-weight:700;line-height:1.75;white-space:nowrap}
+.nt-tag.new{background:var(--accent);color:#fff}
+.nt-tag.pin{background:var(--accent-bg);color:var(--accent)}
+.nt-tag.tg{background:var(--bg-s);color:var(--text-m);font-weight:600}
+.nt-t{display:block;font-size:15.5px;font-weight:700;line-height:1.5;word-break:keep-all}
+.nt-d{display:block;margin-top:2px;color:var(--text-m);font-size:12.5px;line-height:1.4;font-variant-numeric:tabular-nums}
+.nt-cv{display:flex;flex:none;margin-top:3px;color:var(--text-m);transition:transform .15s}
+.nt-cv svg{width:18px;height:18px}
+.nt-it[open] .nt-cv{transform:rotate(180deg)}
+.nt-b{margin:0 16px;padding:12px 0 14px;border-top:1px solid var(--bd-l);font-size:14.5px;line-height:1.8;color:var(--text-s);white-space:pre-wrap;word-break:keep-all;text-align:justify}
+.nt-b a{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.nt-go{display:inline-flex;align-items:center;gap:6px;height:34px;margin:0 16px 16px;padding:0 14px;border-radius:999px;background:var(--accent-bg);color:var(--accent);font-size:13.5px;font-weight:700;transition:background .15s,color .15s}
+.nt-go svg{width:14px;height:14px;flex:none}
+.nt-go:hover{background:var(--accent);color:#fff}
+.nt-it>summary+.nt-go{margin-top:2px}
+.nt-empty{color:var(--text-m);background:var(--bg-c);border:1px dashed var(--bd);border-radius:14px;padding:22px 16px;text-align:center;font-size:14px;line-height:1.7}
+.nt-rt{margin-top:10px;height:36px;padding:0 16px;border:1px solid var(--bd);border-radius:999px;background:var(--bg-c);color:var(--accent);font:inherit;font-size:13.5px;font-weight:700;cursor:pointer}
+.nt-cl{display:block;width:100%;margin:6px 0 0;padding:11px;border:1.5px solid var(--bd);border-radius:12px;background:var(--bg-c);color:var(--accent);font:inherit;font-weight:700;font-size:15px;cursor:pointer}
+.nt-cl:hover,.nt-cl:focus-visible{border-color:var(--accent);outline:none}
+@media (min-width:641px){.nt-sheet{align-items:center;padding:24px}.nt-box{border-radius:18px;max-height:min(82vh,780px);box-shadow:0 24px 60px rgba(0,0,0,.22)}.nt-bd{padding:16px 18px 20px}}
+@media (max-width:480px){.nt-hd{padding:12px 8px 10px 16px}.nt-hd h2{font-size:17px}.nt-bd{padding:12px 10px calc(14px + env(safe-area-inset-bottom))}.nt-t{font-size:15px}.nt-b{margin:0 14px;font-size:14px}.nt-go{margin:0 14px 14px}.nt-it>summary{padding:11px 10px 11px 14px}}
+html[data-theme="dark"] .nt-bg{background:rgba(0,0,0,.55)}
+html[data-theme="dark"] .nt-box{box-shadow:0 24px 60px rgba(0,0,0,.6)}
+html[data-theme="dark"] .nt-it.new{border-color:#44506A}
+html[data-theme="dark"] .ntc .nb,html[data-theme="dark"] .nt-tag.new,html[data-theme="dark"] .nt-go:hover{color:#14181E}
+@media print{.nt-sheet{display:none!important}}
+</style>
+<script id="ntc-js">
+/* 목차 공지사항: 목차 오른쪽 위 「공지사항」 버튼(읽지 않은 공지 수)과 공지 목록 창.
+   - 공지는 저장소 루트의 notices.json에 씁니다. 형식과 규칙은 README 「공지사항」에 있습니다.
+   - 새 공지: 이 기기에서 아직 열어 보지 않았고 올린 지 30일이 안 된 공지(중요 공지는 기간 없이). 버튼에 그 수가 나옵니다.
+   - 읽음 표시는 이 기기의 localStorage 'soda-lehrwerk:notice'(읽은 공지 id 목록)에만 남깁니다.
+     학습 포탈 sync.js의 SKIP_EXACT에 들어 있어 서버로 올라가지 않습니다(학습 포탈 공지와 같은 방식).
+   - 창은 휴대폰에서 아래에서 올라오고 컴퓨터에서 가운데에 열립니다. 닫기, 창 바깥, Esc, 휴대폰의 뒤로 가기로 닫힙니다. */
+(function(){
+  var KEY='soda-lehrwerk:notice', NEW_DAYS=30, OPEN_MAX=3, TTL=5*60*1000;
+  var NT={list:null,raw:'',state:'idle',at:0,p:null,seen:{},seenN:0};
+  var IC_X='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+  var IC_CHEV='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+  var IC_GO='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function day(s){s=String(s||'');return /^\d{4}-\d{2}-\d{2}$/.test(s)?s:'';}
+  /* 링크는 자료 폴더 같은 상대 주소와 http(s) 주소만 받습니다 */
+  function okHref(h){h=String(h||'').trim(); if(!h||(/^[a-z][a-z0-9+.\-]*:/i.test(h)&&!/^https?:\/\//i.test(h))) return ''; return h;}
+  /* 중요 공지(pin)가 먼저, 그다음 날짜가 늦은 순서, 같은 날짜는 파일에 적힌 순서입니다 */
+  function norm(j){
+    var a=(j&&Array.isArray(j.notices))?j.notices:Array.isArray(j)?j:[];
+    return a.map(function(n,i){
+      if(!n||n.id==null||String(n.id)===''||!(n.title||n.body)) return null;
+      return {id:String(n.id),date:day(n.date),upd:day(n.upd),title:String(n.title||'').trim(),body:String(n.body||'').replace(/\r\n?/g,'\n').trim(),
+        tag:String(n.tag||'').trim(),href:okHref(n.href),go:String(n.go||'').trim(),pin:!!n.pin,i:i};
+    }).filter(Boolean).sort(function(p,q){return ((+q.pin)-(+p.pin))||(q.date<p.date?-1:q.date>p.date?1:0)||(p.i-q.i);});
+  }
+  function setList(j){
+    var list=norm(j), raw=JSON.stringify(list), ch=raw!==NT.raw;
+    NT.list=list; NT.raw=raw; NT.state='ok'; NT.at=Date.now();
+    badge(); if(ch) render();
+  }
+  /* GitHub Pages는 파일을 몇 분 동안 캐시하므로 1분마다 바뀌는 값을 주소에 붙여 받습니다. 파일이 없으면(404) 공지가 없는 것으로 봅니다 */
+  function load(force){
+    if(NT.p) return;
+    if(!window.fetch||location.protocol==='file:'){if(NT.state!=='ok'){NT.state='err'; render();} return;}
+    if(!force&&NT.state==='ok'&&Date.now()-NT.at<TTL) return;
+    NT.p=fetch('notices.json?t='+Math.floor(Date.now()/60000),{cache:'no-store'}).then(function(r){
+      if(r.status===404) return {notices:[]};
+      if(!r.ok) throw new Error('http '+r.status);
+      return r.json();
+    }).then(function(j){NT.p=null; setList(j);},function(){NT.p=null; if(NT.state!=='ok'){NT.state='err'; render();}});
+  }
+  function readIds(){try{var a=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(a)?a.map(String):[];}catch(e){return [];}}
+  function markRead(ids){
+    if(!ids.length) return;
+    var a=readIds(), ch=false;
+    ids.forEach(function(id){if(a.indexOf(id)<0){a.push(id); ch=true;}});
+    if(!ch) return;
+    try{localStorage.setItem(KEY,JSON.stringify(a.slice(-300)));}catch(e){} /* 오래된 기록부터 지워 300개까지만 둡니다 */
+  }
+  function age(n){
+    var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(n.date||''); if(!m) return 0;
+    var t=new Date(); return Math.round((new Date(t.getFullYear(),t.getMonth(),t.getDate())-new Date(+m[1],+m[2]-1,+m[3]))/86400000);
+  }
+  function isNew(n,read){return read.indexOf(n.id)<0&&(n.pin||age(n)<NEW_DAYS);}
+  function count(){if(!NT.list) return 0; var r=readIds(); return NT.list.filter(function(n){return isNew(n,r);}).length;}
+  function badge(){
+    var n=count();
+    Array.prototype.forEach.call(document.querySelectorAll('[data-ntc]'),function(b){
+      var s=b.querySelector('.nb');
+      b.classList.toggle('on',n>0);
+      b.setAttribute('aria-label',n?'공지사항, 읽지 않은 공지 '+n+'개':'공지사항');
+      if(!n){if(s) s.parentNode.removeChild(s); return;}
+      if(!s){s=document.createElement('span'); s.className='nb'; s.setAttribute('aria-hidden','true'); b.appendChild(s);}
+      s.textContent=n>99?'99+':String(n);
+    });
+  }
+  function fmt(s){var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s||'');return m?m[1]+'.'+m[2]+'.'+m[3]:'';}
+  function when(n){var s=fmt(n.date); if(n.upd&&n.upd!==n.date) s+=(s?' · ':'')+'수정 '+fmt(n.upd); return s;}
+  /* 본문: 글자 그대로(줄바꿈 유지) 보이고, http(s) 주소는 새 창 링크가 됩니다 */
+  function bodyHtml(t){
+    var s=String(t||''), out='', re=/https?:\/\/[^\s<>"']+/g, m, last=0, u, c;
+    while((m=re.exec(s))){
+      u=m[0];
+      while(/[.,!?;:)\]}」』]$/.test(u)){
+        c=u.slice(-1);
+        if(c===')'&&u.split('(').length>=u.split(')').length) break;
+        u=u.slice(0,-1);
+      }
+      out+=esc(s.slice(last,m.index))+'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(u)+'</a>';
+      last=m.index+u.length; re.lastIndex=last;
+    }
+    return out+esc(s.slice(last));
+  }
+  function item(n,nw,open){
+    var tg=(nw?'<span class="nt-tag new">새 공지</span>':'')+(n.pin?'<span class="nt-tag pin">중요</span>':'')+(n.tag?'<span class="nt-tag tg">'+esc(n.tag)+'</span>':'');
+    return '<details class="nt-it'+(nw?' new':'')+'" data-id="'+esc(n.id)+'"'+(open?' open':'')+'><summary><span class="nt-h">'+(tg?'<span class="nt-tags">'+tg+'</span>':'')
+      +'<span class="nt-t">'+esc(n.title||'공지')+'</span><span class="nt-d">'+when(n)+'</span></span><span class="nt-cv" aria-hidden="true">'+IC_CHEV+'</span></summary>'
+      +(n.body?'<div class="nt-b">'+bodyHtml(n.body)+'</div>':'')
+      +(n.href?'<a class="nt-go" href="'+esc(n.href)+'">'+esc(n.go||'바로 가기')+IC_GO+'</a>':'')
+      +'</details>';
+  }
+  var sh=null, last=null, pushed=false, skip=false;
+  function sheet(){
+    if(sh) return sh;
+    sh=document.createElement('div'); sh.className='nt-sheet'; sh.hidden=true;
+    sh.setAttribute('role','dialog'); sh.setAttribute('aria-modal','true'); sh.setAttribute('aria-labelledby','nt-t');
+    sh.innerHTML='<div class="nt-bg" data-ntx></div><div class="nt-box" tabindex="-1"><div class="nt-hd"><h2 id="nt-t">공지사항</h2><button type="button" class="nt-x" data-ntx aria-label="닫기">'+IC_X+'</button></div><div class="nt-bd"></div></div>';
+    sh.addEventListener('click',function(e){
+      if(e.target.closest('[data-ntx]')){close(); return;}
+      var a=e.target.closest('a.nt-go');
+      if(a&&pushed&&e.button===0&&!(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)){
+        /* 창을 열 때 남긴 기록 자리를 자료 주소로 바꿔, 자료에서 뒤로 가면 목차로 돌아오게 합니다 */
+        e.preventDefault(); var href=a.href; close(true); location.replace(href);
+      }
+    });
+    document.body.appendChild(sh);
+    return sh;
+  }
+  function render(){
+    if(!sh||sh.hidden) return;
+    var bd=sh.querySelector('.nt-bd'), keep={}, foot='<button type="button" class="nt-cl" data-ntx>닫기</button>';
+    var had=!!bd.querySelector('.nt-it');
+    Array.prototype.forEach.call(bd.querySelectorAll('.nt-it[open]'),function(x){keep[x.getAttribute('data-id')]=1;});
+    if(!NT.list){
+      if(NT.state==='err'){
+        bd.innerHTML='<div class="nt-empty">공지를 불러오지 못했습니다. 인터넷 연결을 확인해 주십시오.<br><button type="button" class="nt-rt">다시 불러오기</button></div>'+foot;
+        bd.querySelector('.nt-rt').addEventListener('click',function(){NT.state='idle'; render(); load(true);});
+      } else bd.innerHTML='<div class="nt-empty" role="status">공지를 불러오고 있습니다.</div>'+foot;
+      return;
+    }
+    var r=readIds(), mark=[], h='';
+    if(!NT.list.length) h='<div class="nt-empty">등록된 공지가 없습니다.</div>';
+    NT.list.forEach(function(n){
+      var nw=!!NT.seen[n.id]||isNew(n,r);
+      if(nw){if(!NT.seen[n.id]) NT.seen[n.id]=++NT.seenN; mark.push(n.id);}
+      /* 처음 그릴 때는 새 공지 가운데 위의 세 개만 펼칩니다. 다시 그릴 때는 펼쳐 둔 그대로 둡니다 */
+      h+=item(n,nw,had?!!keep[n.id]:(nw&&NT.seen[n.id]<=OPEN_MAX));
+    });
+    bd.innerHTML=h+foot;
+    markRead(mark);
+    badge();
+  }
+  function show(){
+    var s=sheet(), first=s.hidden;
+    if(first){
+      last=document.activeElement; s.hidden=false; document.documentElement.classList.add('nt-lock');
+      try{history.pushState({ntc:1},'',location.href); pushed=true;}catch(e){pushed=false;}
+    }
+    render();
+    if(first){s.querySelector('.nt-bd').scrollTop=0; s.querySelector('.nt-box').focus();}
+  }
+  /* fromPop=true: 뒤로 가기로 닫았거나 자료로 넘어갈 때. 이때는 기록을 되돌리지 않습니다 */
+  function close(fromPop){
+    if(!sh||sh.hidden) return;
+    sh.hidden=true; document.documentElement.classList.remove('nt-lock');
+    sh.querySelector('.nt-bd').innerHTML='';
+    if(pushed&&!fromPop){skip=true; setTimeout(function(){skip=false;},1500); try{history.back();}catch(e){skip=false;}}
+    pushed=false;
+    var l=last; last=null;
+    if(!(l&&l.focus&&document.contains(l))) l=document.querySelector('[data-ntc]');
+    if(l) try{l.focus({preventScroll:true});}catch(e){}
+  }
+  function open(){
+    NT.seen={}; NT.seenN=0;
+    show();
+    if(NT.state!=='ok'||Date.now()-NT.at>60000) load(true);
+  }
+  document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-ntc]'); if(!b) return; e.preventDefault(); open();});
+  document.addEventListener('keydown',function(e){
+    if(!sh||sh.hidden) return;
+    if(e.key==='Escape'||e.key==='Esc'){e.preventDefault(); close(); return;}
+    if(e.key!=='Tab') return;
+    /* 창이 열려 있는 동안 Tab은 창 안에서만 돕니다 */
+    var f=Array.prototype.filter.call(sh.querySelectorAll('button,a[href],summary'),function(x){return x.getClientRects().length>0;});
+    if(!f.length){e.preventDefault(); return;}
+    var i=f.indexOf(document.activeElement);
+    if(e.shiftKey){if(i<=0){e.preventDefault(); f[f.length-1].focus();}}
+    else if(i<0||i===f.length-1){e.preventDefault(); f[0].focus();}
+  });
+  window.addEventListener('popstate',function(){
+    if(skip){skip=false; return;}
+    if(sh&&!sh.hidden){pushed=false; close(true);}
+  });
+  /* 다른 앱에서 뒤로 와서 저장된 화면이 다시 보일 때 */
+  window.addEventListener('pageshow',function(e){if(!e.persisted) return; if(sh&&!sh.hidden){pushed=false; close(true);} badge(); load(false);});
+  window.addEventListener('storage',function(e){if(e.key===KEY) badge();});
+  document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible') load(false);});
+  setInterval(function(){if(document.visibilityState!=='hidden') load(false);},TTL);
+  load(false);
+})();
+</script>
+<!-- ===== /목차 공지사항 ===== -->
 <!-- ===== SODA 공통 홈 화면에 앱 추가 ===== -->
 <style id="a2hs-css">
 .a2hs-btn{display:block;width:-webkit-max-content;width:max-content;align-self:flex-start;margin:14px 0 0;padding:6px 2px;border:0;background:none;font:inherit;font-size:14px;font-weight:600;line-height:1.4;color:#6B6B66;cursor:pointer;border-radius:8px;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#CFCEC8;-webkit-tap-highlight-color:transparent}
