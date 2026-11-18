@@ -64,7 +64,7 @@ PAGES = [
      'diktattraining/assets/icon-512.png'),
     ('vokalab/index.html',
      '독일어 단어장 A1–C1 · 12,724단어 | SODA Vokalab',
-     'A1부터 C1까지 독일어 단어 12,724개를 주차별 목표와 테스트로 공부하는 무료 단어장. 예문과 한국어 뜻, 시험용 필수 단어 학습. 소피아 독일어학원.',
+     'A1부터 C1까지 독일어 단어 12,724개를 주차별 목표와 테스트로 공부하는 무료 단어장. 예문과 한국어 뜻, 시험용 필수 단어 학습, 명사의 관사·복수 훈련. 소피아 독일어학원.',
      'vokalab/icons/icon-512.png'),
     ('praepositionen/index.html',
      '독일어 전치사의 모든 것 · 전치사 80개 비교와 퀴즈 | SODA Präpositionen',
