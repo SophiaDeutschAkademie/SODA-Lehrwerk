@@ -706,17 +706,25 @@ body.voka-exam #hub-fab:hover{background:#235A47}
 </style>
 <style id="voka-art-css">
 /* ===== 관사·복수 훈련 ===== */
+/* 레벨 선택 목록의 「관사·복수」 칸 (전체·시험용 칸과 같은 모양, 회청색) */
+#hub .lv-art{background:#EEF1F5;border:1.5px solid #C3CCD8;color:#1f2f4a}
+#hub .lv-art:hover{border-color:#4A5A70;box-shadow:0 4px 14px rgba(40,60,90,.14)}
+#hub .lv-art .lv-k,#hub .lv-art .lv-n{color:#3F5068}
+#hub .lv-art .lv-row{flex-wrap:wrap;column-gap:5px;row-gap:0}
+#hub .lv-art .lv-k{letter-spacing:-.2px}
+#hub .lv-art .lv-n{margin-left:auto}
+#hub .lv-art .lv-s{color:#56667A}
+#hub .lv-art .bar{background:#D5DCE6}
+#hub .lv-art .bar i{background:#4A5A70}
+#hub .lv-art:focus-visible{outline-color:#4A5A70}
+html[data-theme="dark"] #hub .lv-art{background:#181D25;border-color:#344052;color:#ECEAE4}
+html[data-theme="dark"] #hub .lv-art:hover{border-color:#9FB2C8;box-shadow:none}
+html[data-theme="dark"] #hub .lv-art .lv-k,html[data-theme="dark"] #hub .lv-art .lv-n{color:#B4C2D3}
+html[data-theme="dark"] #hub .lv-art .lv-s{color:#A3ADBA}
+html[data-theme="dark"] #hub .lv-art .bar{background:#263040}
+html[data-theme="dark"] #hub .lv-art .bar i{background:#8EA3BC}
+html[data-theme="dark"] #hub .lv-art:focus-visible{outline-color:#9FB2C8}
 #hub .nw{white-space:nowrap}
-#hub .art-tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-#hub .art-tile{display:flex;flex-direction:column;gap:4px;min-width:0;text-align:left;font:inherit;cursor:pointer;border:1px solid #ddd5c4;background:#fff;border-radius:12px;padding:12px 14px 13px;color:#1f2f4a;transition:border-color .15s,box-shadow .15s}
-#hub .art-tile:hover{border-color:#384568;box-shadow:0 4px 14px rgba(23,62,125,.12)}
-#hub .art-tile:focus-visible{outline:2px solid #384568;outline-offset:2px}
-#hub .art-tk{font-size:17px;font-weight:800;color:#384568;line-height:1.25}
-#hub .art-tx{font-size:12px;color:#4c6078;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-#hub .art-tn{font-size:13px;margin-top:6px}
-#hub .art-tn b{color:#384568;font-size:15px}
-#hub .art-tile .bar{height:5px}
-#hub .art-ts{font-size:12px;color:#4c6078;line-height:1.4}
 #hub .art-tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:#e9e1cf;border-radius:12px;padding:4px;margin-bottom:16px}
 #hub .art-tab{border:0;border-radius:9px;padding:10px 6px;font:inherit;font-size:15px;font-weight:700;color:#4c6078;background:transparent;cursor:pointer;line-height:1.3}
 #hub .art-tab small{font-weight:500;font-size:12px;margin-left:3px}
@@ -818,13 +826,11 @@ body.voka-exam #hub-fab:hover{background:#235A47}
 #hub .art-keys button[data-k="sg"],#hub .art-keys button[data-k="uml"]{flex:1.6;max-width:96px;font-size:13px}
 #hub .art-row2{display:grid;grid-template-columns:1fr 2fr;gap:8px}
 #hub .art-row2 .btn{padding:13px 8px;font-size:16px}
-#hub.xmode .art-tab.on,#hub.xmode .art-tk,#hub.xmode .art-tn b,#hub.xmode .art-rt,#hub.xmode .art-nums b,#hub.xmode .art-ak,#hub.xmode .art-sum .art-big{color:#22594A}
-#hub.xmode .art-chip{background:#EAF4EF;color:#22594A}
 /* 다크 모드 */
-html[data-theme="dark"] #hub .art-tile,html[data-theme="dark"] #hub .art-rule,html[data-theme="dark"] #hub .art-quit,html[data-theme="dark"] #hub .art-snd,html[data-theme="dark"] #hub .art-keys button{background:#161B22;border-color:#2F3744;color:#ECEAE4}
-html[data-theme="dark"] #hub .art-tile:hover,html[data-theme="dark"] #hub .art-rule:hover:not(:disabled){border-color:#8FB0E0;box-shadow:none}
-html[data-theme="dark"] #hub .art-tk,html[data-theme="dark"] #hub .art-tn b,html[data-theme="dark"] #hub .art-rt,html[data-theme="dark"] #hub .art-nums b,html[data-theme="dark"] #hub .art-ak,html[data-theme="dark"] #hub .art-sum .art-big,html[data-theme="dark"] #hub .art-art,html[data-theme="dark"] #hub .art-quit,html[data-theme="dark"] #hub .art-snd,html[data-theme="dark"] #hub .art-keys button{color:#AEB9DD}
-html[data-theme="dark"] #hub .art-tx,html[data-theme="dark"] #hub .art-ts,html[data-theme="dark"] #hub .art-nums span,html[data-theme="dark"] #hub .art-cap,html[data-theme="dark"] #hub .art-rx,html[data-theme="dark"] #hub .art-rc,html[data-theme="dark"] #hub .art-ak small,html[data-theme="dark"] #hub .art-av small,html[data-theme="dark"] #hub .art-list li span,html[data-theme="dark"] #hub .art-sum .art-big small,html[data-theme="dark"] #hub .art-prog span,html[data-theme="dark"] #hub .art-ask,html[data-theme="dark"] #hub .art-ko,html[data-theme="dark"] #hub .art-idk,html[data-theme="dark"] #hub .art-in span{color:#A9B0BA}
+html[data-theme="dark"] #hub .art-rule,html[data-theme="dark"] #hub .art-quit,html[data-theme="dark"] #hub .art-snd,html[data-theme="dark"] #hub .art-keys button{background:#161B22;border-color:#2F3744;color:#ECEAE4}
+html[data-theme="dark"] #hub .art-rule:hover:not(:disabled){border-color:#8FB0E0;box-shadow:none}
+html[data-theme="dark"] #hub .art-rt,html[data-theme="dark"] #hub .art-nums b,html[data-theme="dark"] #hub .art-ak,html[data-theme="dark"] #hub .art-sum .art-big,html[data-theme="dark"] #hub .art-art,html[data-theme="dark"] #hub .art-quit,html[data-theme="dark"] #hub .art-snd,html[data-theme="dark"] #hub .art-keys button{color:#AEB9DD}
+html[data-theme="dark"] #hub .art-nums span,html[data-theme="dark"] #hub .art-cap,html[data-theme="dark"] #hub .art-rx,html[data-theme="dark"] #hub .art-rc,html[data-theme="dark"] #hub .art-ak small,html[data-theme="dark"] #hub .art-av small,html[data-theme="dark"] #hub .art-list li span,html[data-theme="dark"] #hub .art-sum .art-big small,html[data-theme="dark"] #hub .art-prog span,html[data-theme="dark"] #hub .art-ask,html[data-theme="dark"] #hub .art-ko,html[data-theme="dark"] #hub .art-idk,html[data-theme="dark"] #hub .art-in span{color:#A9B0BA}
 html[data-theme="dark"] #hub .art-tabs{background:#1B2028;border:1px solid #2A313B}
 html[data-theme="dark"] #hub .art-tab{color:#A9B0BA}
 html[data-theme="dark"] #hub .art-tab.on{background:#2A313B;color:#ECEAE4;box-shadow:none}
@@ -848,8 +854,6 @@ html[data-theme="dark"] #hub .art-a.ok,html[data-theme="dark"] #hub .art-in.ok{b
 html[data-theme="dark"] #hub .art-a.no,html[data-theme="dark"] #hub .art-in.no{background:#3A2419;border-color:#B8714F;color:#E9A587}
 html[data-theme="dark"] #hub .art-in.no input{color:#C99A84;text-decoration-color:#E9A587}
 html[data-theme="dark"] #hub .art-in input::placeholder{color:#6E7684}
-html[data-theme="dark"] #hub.xmode .art-tab.on,html[data-theme="dark"] #hub.xmode .art-tk,html[data-theme="dark"] #hub.xmode .art-tn b,html[data-theme="dark"] #hub.xmode .art-rt,html[data-theme="dark"] #hub.xmode .art-nums b,html[data-theme="dark"] #hub.xmode .art-ak,html[data-theme="dark"] #hub.xmode .art-sum .art-big{color:#8FD6B6}
-html[data-theme="dark"] #hub.xmode .art-chip{background:#13241E;color:#8FD6B6}
 </style>
 </head>
 <body>
@@ -4551,8 +4555,8 @@ window.__okKO=__okKO;window.__okDE=__okDE;
   if (typeof module !== 'undefined' && module.exports) module.exports = API;
 })(typeof window !== 'undefined' ? window : this);
 /* ===== VOKALAB 관사·복수 훈련 화면 =====
-   레벨 목표·기록 허브 → 「관사·복수 훈련」 → 훈련 홈(오늘 훈련 · 규칙 묶음 · 기록) → 문제 화면.
-   기록은 레벨마다 localStorage '<레벨 접두어>art' 하나에 둡니다(전체 학습과 시험용 학습이 함께 씀). 학습 포탈 자동 저장(voka-sync-js)이 함께 올립니다.
+   레벨 선택 목록의 「관사·복수」 칸 → 훈련 홈(오늘 훈련 · 규칙 묶음 · 기록) → 문제 화면. 문항은 그 레벨의 모든 명사입니다.
+   기록은 레벨마다 localStorage '<레벨 접두어>art' 하나에 둡니다. 학습 포탈 자동 저장(voka-sync-js)이 함께 올립니다.
    { v:1, a:{명사:[단계,다음 날,마지막 날,틀린 수,처음 답한 수,처음에 맞힌 수]}, p:{…}, s:{na,np}, t:{d,a,p}, h:{날:[관사 맞음,관사 수,복수 맞음,복수 수]},
      sa:{der:[맞음,수]}, ca:{'der>die':수}, sp:{유형:[맞음,수]}, u:시각 } */
 (function () {
@@ -4670,41 +4674,41 @@ window.__okKO=__okKO;window.__okDE=__okDE;
   function badge() { return window.VokaSync ? window.VokaSync.badge() : ''; }
   function header(ctx, sub) {
     return '<header class="hd"><img class="logo" src="' + window.__LOGO + '" alt=""><div><h1>관사·복수 훈련</h1><p class="sub">' + esc(sub) + '</p>' + badge() + '</div>' +
-      '<div class="hd-a"><button class="btn" id="art-back" type="button">' + (ctx.L.exam ? '← 시험용 목표·기록' : '← 목표·기록 허브') + '</button></div></header>';
+      '<div class="hd-a"><button class="btn" id="art-back" type="button">' + esc(ctx.backLabel || '← 레벨 선택') + '</button></div></header>';
   }
   function bar(p, cls) { return '<div class="bar"><i class="' + (cls || '') + '" style="width:' + Math.max(0, Math.min(100, p)) + '%"></i></div>'; }
   function top() { window.scrollTo(0, 0); hub.scrollTop = 0; }
 
-  /* ---------- 목표·기록 허브의 카드 ---------- */
-  function card(ctx) {
-    if (!cache[ctx.L.id]) {
-      prepare(ctx.L, function () {
-        var el = hub.querySelector('.art-card[data-l="' + ctx.L.id + '"]');
-        if (!el) return;
-        var h = cardHtml(ctx); if (!h) { el.remove(); return; }
-        var box = document.createElement('div'); box.innerHTML = h;
-        var nu = box.firstChild; el.parentNode.replaceChild(nu, el); bindCard(nu, ctx);
+  /* ---------- 레벨 선택 목록의 「관사·복수」 칸 ---------- */
+  function lvInner(L) {
+    var s = null;
+    if (cache[L.id]) { var ctx = { L: L, base: L }, d = load(ctx); s = { A: counts(ctx, 'a', d), P: counts(ctx, 'p', d) }; }
+    var st = '불러오는 중', p = 0;
+    if (s) {
+      var due = s.A.due + s.P.due, done = s.A.done + s.P.done, learn = s.A.learn + s.P.learn, tot = s.A.total + s.P.total;
+      p = pct(done, tot);
+      st = due ? '오늘 복습 ' + fmtN(due) + '개' : (done || learn) ? '익힘 ' + fmtN(done) + ' · 연습 ' + fmtN(learn) : '시작 전';
+    }
+    return '<span class="lv-row"><span class="lv-k">관사·복수</span><span class="lv-n">' + (s ? fmtN(s.A.total) + '<small>명사</small>' : '') + '</span></span>' +
+      '<span class="lv-s">' + st + '</span><span class="bar"><i style="width:' + p + '%"></i></span>';
+  }
+  function levelTile(i) {
+    var L = window.LEVELS[i];
+    if (!L) return '';
+    return '<button type="button" class="lv-opt lv-art" data-art-l="' + i + '" title="관사·복수 훈련: 명사의 관사(der·die·das)와 복수형 연습">' + lvInner(L) + '</button>';
+  }
+  /* 목록이 뜬 뒤 레벨마다 차례로 명사 목록을 준비해 칸을 채웁니다 */
+  function fillLevels(root) {
+    var todo = window.LEVELS.map(function (L, i) { return i; }).filter(function (i) { return !cache[window.LEVELS[i].id]; });
+    (function step() {
+      if (!todo.length || !root.querySelector('.lv-art')) return;
+      var i = todo.shift(), L = window.LEVELS[i];
+      prepare(L, function () {
+        var el = root.querySelector('.lv-art[data-art-l="' + i + '"]');
+        if (el) el.innerHTML = lvInner(L);
+        step();
       });
-      return '<section class="card art-card" data-l="' + esc(ctx.L.id) + '"><h2>관사·복수 훈련</h2><p class="muted">명사 목록을 준비하고 있습니다…</p></section>';
-    }
-    return cardHtml(ctx);
-  }
-  function cardHtml(ctx) {
-    var d = load(ctx), A = counts(ctx, 'a', d), P = counts(ctx, 'p', d);
-    if (!A.total) return '';
-    function tile(mode, c, label, sample) {
-      var nl = Math.min(c.fresh, newLeft(d, mode)), parts = [];
-      if (c.due) parts.push('복습 ' + fmtN(c.due));
-      if (nl) parts.push('새 명사 ' + fmtN(nl));
-      return '<button type="button" class="art-tile" data-art="' + mode + '"><span class="art-tk">' + label + '</span><span class="art-tx" lang="de">' + sample + '</span>' +
-        '<span class="art-tn">익힘 <b>' + fmtN(c.done) + '</b> / ' + fmtN(c.total) + '</span>' + bar(pct(c.done, c.total)) +
-        '<span class="art-ts">' + (parts.length ? '오늘 ' + parts.join(' · ') : '오늘 할 명사를 모두 마쳤습니다') + '</span></button>';
-    }
-    return '<section class="card art-card" data-l="' + esc(ctx.L.id) + '"><h2>관사·복수 훈련</h2><p class="muted">이 레벨 명사의 관사(der·die·das)와 복수형을 떠올리는 연습입니다. 주차 학습에서 공부한 명사부터 나옵니다.</p>' +
-      '<div class="art-tiles">' + tile('a', A, '관사', 'der · die · das') + tile('p', P, '복수형', 'Kind → Kinder') + '</div></section>';
-  }
-  function bindCard(root, ctx) {
-    root.querySelectorAll('[data-art]').forEach(function (b) { b.onclick = function () { open(ctx, b.getAttribute('data-art')); }; });
+    })();
   }
 
   /* ---------- 훈련 홈 ---------- */
@@ -4726,7 +4730,7 @@ window.__okKO=__okKO;window.__okDE=__okDE;
       '<button type="button" role="tab" class="art-tab' + (mode === 'p' ? ' on' : '') + '" data-m="p" aria-selected="' + (mode === 'p') + '">복수형 <small>Plural</small></button></div>' +
       '<section class="card"><h2>오늘 훈련</h2><div class="art-nums"><div><b>' + fmtN(c.due) + '</b><span>복습할 명사</span></div><div><b>' + fmtN(nl) + '</b><span>새 명사</span></div><div><b>' + fmtN(c.done) + '</b><span>익힌 명사</span></div></div>' +
       (n ? '<button type="button" class="btn primary big" id="art-start">훈련 시작 · ' + n + '개</button>' : '<div class="art-done">오늘 할 ' + (mode === 'a' ? '관사' : '복수형') + ' 훈련을 모두 마쳤습니다. 내일 복습할 명사가 다시 나옵니다.</div>') +
-      '<p class="muted art-note">복습할 명사가 먼저 나오고, 한 번에 20개씩 섞어서 나옵니다. 틀린 명사는 몇 문제 뒤에 다시 나오고, 맞히면 그날 목록에서 빠집니다.</p>' +
+      '<p class="muted art-note">복습할 명사가 먼저 나오고, 새 명사는 주차 학습에서 공부한 명사와 시험용 필수 명사부터 나옵니다. 한 번에 20개씩 섞어서 나오며, 틀린 명사는 몇 문제 뒤에 다시 나오고 맞히면 그날 목록에서 빠집니다.</p>' +
       '<div class="art-cap"><span>하루 새 명사</span><div class="presets">' + chips + '</div></div></section>' +
       '<section class="card"><h2>규칙으로 먼저 익히기</h2><p class="muted">' + (mode === 'a' ? '명사의 끝 모양으로 관사를 짐작할 수 있는 묶음입니다.' : '성과 끝 모양으로 복수형을 짐작할 수 있는 묶음입니다.') + ' 처음에는 묶음 하나를 골라 연습하고, 그다음 오늘 훈련에서 섞어서 떠올리세요. 묶음에서 연습한 명사도 같은 일정으로 다시 나옵니다.</p>' +
       '<div class="art-rules">' + rows + '</div></section>' +
@@ -4797,7 +4801,9 @@ window.__okKO=__okKO;window.__okDE=__okDE;
   /* ---------- 문제 화면 ---------- */
   var S = null;   // { ctx, mode, rid, queue:[{it, tries}], done:[], total, ans }
   function start(rid) {
-    var ctx = cur.ctx, mode = cur.mode, d = load(ctx), T = today(), R = d[mode], seen = seenSet(ctx), due = [], fresh = [];
+    var ctx = cur.ctx, mode = cur.mode, d = load(ctx), T = today(), R = d[mode], seen = seenSet(ctx), due = [], fresh = [], ex = null;
+    if (ctx.twin && ctx.twin.words && ctx.twin !== ctx.L) { ex = {}; ctx.twin.words.forEach(function (w) { ex[w.de] = 1; }); }
+    function rank(it) { return seen[it.de] ? 0 : (ex && ex[it.de]) ? 1 : 2; }
     pool(ctx, mode).forEach(function (it) {
       if (rid && grp(it, mode) !== rid) return;
       var r = R[it.id];
@@ -4805,7 +4811,7 @@ window.__okKO=__okKO;window.__okDE=__okDE;
       else if (r[1] <= T && r[2] !== T) due.push(it);
     });
     due.sort(function (a, b) { return R[a.id][1] - R[b.id][1]; });
-    fresh.sort(function (a, b) { return ((seen[b.de] ? 1 : 0) - (seen[a.de] ? 1 : 0)) || (a.wi - b.wi); });
+    fresh.sort(function (a, b) { return (rank(a) - rank(b)) || (a.wi - b.wi); });
     var list = due.slice(0, ROUND), room = ROUND - list.length;
     if (room > 0) list = list.concat(fresh.slice(0, Math.min(room, rid ? room : newLeft(d, mode))));
     if (!list.length) { renderHome(); return; }
@@ -4980,7 +4986,7 @@ window.__okKO=__okKO;window.__okDE=__okDE;
   });
 
   window.VokaArt = {
-    card: card, bind: bindCard, open: open,
+    levelTile: levelTile, fillLevels: fillLevels, open: open,
     isOpen: function () { return !!hub.querySelector('.art-root, .art-run'); },
     /* 다른 기기의 기록을 받았을 때: 훈련 홈이면 다시 그리고, 문제를 푸는 중이면 그대로 둡니다(답할 때마다 저장된 기록을 새로 읽어 고칩니다) */
     refresh: function () { if (cur && !S && hub.querySelector('.art-root')) renderHome(); },
@@ -5295,9 +5301,6 @@ function makeLevel(L, shell) {
     return '<b>' + base + wk + '주</b> · 하루 ' + perDay[0] + (perDay[0] !== perDay[6] ? '~' + perDay[6] : '') + '개<br>꾸준히 하면 ' + dateFull(end.getTime()) + ' 무렵 완료 예상';
   }
 
-  /* 관사·복수 훈련(voka-art-js) 연결: 전체 학습과 시험용 학습이 같은 기록(<레벨 접두어>art)을 씁니다 */
-  function artCtx() { var tw = shell.twin(L); return { L: L, base: L.exam ? tw : L, twin: tw, back: function () { render(); window.scrollTo(0, 0); hub.scrollTop = 0; } }; }
-  function artCard() { try { return window.VokaArt ? window.VokaArt.card(artCtx()) : ''; } catch (e) { return ''; } }
   function renderDash() {
     var S = computeStats(), acc = accuracyAll();
     var learnedPct = Math.round(S.learnedNow / N * 100), testPct = Math.round(S.testNow / N * 100);
@@ -5331,7 +5334,6 @@ function makeLevel(L, shell) {
       '<div class="m"><span>학습됨 ' + cs.learned + '/' + cw.size + '</span>' + bar(Math.round(cs.learned / cw.size * 100)) + '</div>' +
       '<div class="m"><span>테스트 통과 ' + cs.test + '/' + cw.size + '</span>' + bar(Math.round(cs.test / cw.size * 100), 'b2') + '</div>' +
       '<button class="btn primary big" data-open="' + plan.cur + '">' + (plan.cur + 1) + '주차 학습하기</button></section>' +
-      artCard() +
       '<section class="card"><h2>학습 기록 그래프</h2>' +
       '<h3>누적 학습 단어 <small><i class="lg l1"></i>실제 <i class="lg l2"></i>목표 계획</small></h3>' + line +
       '<div class="two"><div><h3>일별 학습 시간 (분)</h3>' + barChart({ label: '일별 학습 시간', pts: minPts, color: '#2E6FD0', tfmt: function (v) { return v + '분'; } }) + '</div>' +
@@ -5348,7 +5350,6 @@ function makeLevel(L, shell) {
   function bindDash() {
     hub.querySelectorAll('[data-open]').forEach(function (b) { b.onclick = function () { launch(parseInt(b.dataset.open)); }; });
     bindMode();
-    if (window.VokaArt) window.VokaArt.bind(hub, artCtx());
     hub.querySelectorAll('[data-cur]').forEach(function (b) { b.onclick = function () { plan.cur = parseInt(b.dataset.cur); ls.set(PK, plan); render(); }; });
     document.getElementById('btn-goal').onclick = openGoalModal;
     document.getElementById('btn-levels').onclick = function () { shell.levels(); };
@@ -5565,7 +5566,8 @@ function makeLevel(L, shell) {
       var X = XLEVELS[i];
       return '<div class="lv"><span class="lv-big">' + esc(L.label) + '</span><span class="lv-nm">' + esc(L.name.replace(/^[A-C][0-9](-[A-C][0-9])?\s*/, '')) + '</span><div class="lv-opts">' +
         optTile(false, i, L.words.length, L.short + ' 어휘 전체', sm) +
-        (X ? optTile(true, i, X.words.length, X.examName + ' 필수', xapis[i].summary()) : '') + '</div></div>';
+        (X ? optTile(true, i, X.words.length, X.examName + ' 필수', xapis[i].summary()) : '') +
+        (window.VokaArt ? window.VokaArt.levelTile(i) : '') + '</div></div>';
     }).join('');
     hub.innerHTML =
       '<div class="wrap narrow"><header class="hd"><img class="logo" src="' + window.__LOGO + '" alt=""><div><h1>VOKALAB</h1><p class="sub">학습할 레벨을 선택하세요</p>' + syncBadge() + '</div><div class="hd-a"><button class="btn" id="btn-cover">표지</button></div></header>' +
@@ -5575,12 +5577,16 @@ function makeLevel(L, shell) {
       '<footer class="ft">Sophia Deutsch Akademie</footer></div>';
     hub.querySelectorAll('.lv-main').forEach(function (b) { b.onclick = function () { enter(parseInt(b.dataset.i)); }; });
     hub.querySelectorAll('.lv-x').forEach(function (b) { b.onclick = function () { enterX(parseInt(b.dataset.x)); }; });
+    hub.querySelectorAll('.lv-art').forEach(function (b) { b.onclick = function () { artOpen(parseInt(b.dataset.artL)); }; });
+    if (window.VokaArt) window.VokaArt.fillLevels(hub);
     document.getElementById('btn-cover').onclick = showCover;
     document.getElementById('btn-bk').onclick = backupAll;
     document.getElementById('file-bk').onchange = function (e) { restoreAll(e.target.files[0]); };
     window.scrollTo(0, 0); hub.scrollTop = 0;
   }
   function enter(i) { gate(function () { screen = 'level'; current = apis[i]; document.title = LEVELS[i].title; apis[i].render(); hub.scrollTop = 0; }); }
+  /* 관사·복수 훈련(voka-art-js): 레벨의 모든 명사로 엽니다. 기록은 <레벨 접두어>art */
+  function artOpen(i) { gate(function () { var L = LEVELS[i]; window.VokaArt.open({ L: L, base: L, twin: XLEVELS[i] || null, back: showLevels, backLabel: '← 레벨 선택' }, 'a'); hub.scrollTop = 0; }); }
   function enterX(i) { gate(function () { screen = 'level'; current = xapis[i]; document.title = XLEVELS[i].title; xapis[i].render(); hub.scrollTop = 0; }); }
   function rerender() { if (screen === 'level' && current) current.render(); else if (screen === 'levels') showLevels(); else showCover(); }
 
