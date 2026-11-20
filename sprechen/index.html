@@ -5305,6 +5305,28 @@ const S = {
   A: null, session: null, V: { lastVoiceAt: 0, voicedMs: 0, voice: false }, abort: false, finishReq: false,
   tick: null, prepTimer: null, lastStance: {}, openEx: null
 };
+/* 학습 저장(sync.js)에게 "지금 연습 중"이라고 알립니다. 연습 중에는 다른 기기의 새 내용이 있어도 페이지를 새로 불러오지 않습니다(새로 불러오면 연결이 끊기고 횟수가 사라짐, 2026-11-20). */
+window.SODA_SYNC_BUSY = () => !!(S.A || (S.session && !S.session.isClosed) || (S.starting && Date.now() - S.starting < 30000));
+/* 연습 도중 페이지가 새로 불러와지거나 닫히면, 이 탭의 sessionStorage에 그 시도를 적어 둡니다. 다시 로그인했을 때 대화가 60초 미만이었으면 횟수를 돌려받습니다(refundCut). */
+const CUT_KEY = 'soda-sprechen:cut';
+window.addEventListener('pagehide', () => {
+  const A = S.A; if (!A || !A.ticket || !S.user) return;
+  try { sessionStorage.setItem(CUT_KEY, JSON.stringify({ u: S.user.id, ex: A.ex.id, t: A.t, no: A.no, tk: A.ticket, dur: A.dialogStart ? ((A.dialogEnd || performance.now()) - A.dialogStart) / 1000 : 0, at: Date.now() })); } catch (e) { }
+});
+async function refundCut() {
+  let c = null;
+  try { c = JSON.parse(sessionStorage.getItem(CUT_KEY) || 'null'); sessionStorage.removeItem(CUT_KEY); } catch (e) { c = null; }
+  if (!c || !S.user || c.u !== S.user.id || !c.tk || Date.now() - c.at > 30 * 60000 || !(c.dur < 60)) return;
+  const ex = exOf(c.ex); if (!ex) return;
+  try {
+    const d = await api('/refund', { ...cred(), ticket: c.tk });
+    S.user.used[c.ex + '|' + c.t] = d.used;
+    const r = S.rec && S.rec.ex[c.ex] && S.rec.ex[c.ex][c.t];
+    if (r) { r.attempts = r.attempts.filter(a => !(a.no === c.no && a.endReason === 'reload')); Store.save(S.rec); }
+    try { renderToc(); } catch (e) { }
+    alert('지난 연습은 대화 도중 페이지가 새로 열려 끊어졌습니다. 이 시도는 횟수에 넣지 않았습니다. 다시 연습할 수 있습니다.');
+  } catch (e) { }
+}
 const exOf = id => EXAMS.find(e => e.id === id);
 const recOf = (ex, t) => S.rec.ex[ex.id][t];
 const ckey = (ex, t) => ex.id + ':' + t;
@@ -5799,6 +5821,7 @@ async function startExam() {
   S.notes[ckey(ex, t)] = $('#notes').value;
   try { await AudioIO.init(); } catch (e) { $('#startErr').textContent = e.message; return; }
   // 횟수는 시작하는 순간 저장합니다. 최신 저장값을 다시 읽어 두 창에서 동시에 시작하는 것도 막습니다.
+  S.starting = Date.now();
   if (!Store.ok()) { $('#startErr').textContent = '이 브라우저는 연습 기록을 저장할 수 없어 시작할 수 없습니다. 사생활 보호 모드를 끄고 다시 시도해 주십시오.'; return; }
   let fresh = Store.read(S.user.id), fr = fresh.ex[ex.id][t];
   if ((fr.locked && !unlimited()) || usedOf(fr, ex, t) >= maxA()) { S.rec = Store.load(S.user.id); renderToc(); alert('이 Teil의 연습 횟수를 모두 사용했습니다. 추가 연습이 필요하면 선생님께 말씀해 주십시오.'); return; }
@@ -6519,6 +6542,7 @@ function portalIdle() {
 function applyLogin(u, pw) {
   S.pw = pw; S.user = u; S.name = u.id; S.rec = Store.load(u.id);
   $('#inPw').value = '';
+  setTimeout(refundCut, 800);
   S.openEx = myExams().some(e => e.id === S.target) ? S.target : null;
 }
 /* force: 로그인 정보가 그대로여도 다시 살핍니다(처음 열 때, 기다리는 시간이 끝났을 때, 이 탭으로 돌아왔을 때) */
