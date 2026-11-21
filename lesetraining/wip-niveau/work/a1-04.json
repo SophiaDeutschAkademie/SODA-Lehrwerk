@@ -1,0 +1,443 @@
+{
+ "id": "a1-04",
+ "level": "A1",
+ "no": 4,
+ "title": "Um drei Uhr beginnt ihr Tag",
+ "titleKo": "새벽 3시에 하루가 시작돼요",
+ "type": "Kurzporträt in einer Stadtzeitschrift",
+ "typeKo": "도시 잡지의 짧은 인물 소개",
+ "intro": "프라이부르크에서 빵집을 하는 자비네 크라우스 씨의 하루를 소개하는 글이에요.",
+ "focus": [
+  "4격 시간 표현",
+  "직업 이름의 여성형",
+  "nach Hause · zu Hause"
+ ],
+ "paragraphs": [
+  {
+   "de": "Sabine Kraus (52) ist Bäckerin in Freiburg. Jeden Morgen steht sie schon um halb drei auf. Um drei Uhr beginnt ihr Arbeitstag in der Backstube. Dort backt sie Brot, Brötchen und Apfelkuchen.",
+   "ko": "자비네 크라우스 씨(52)는 프라이부르크의 제빵사예요. 매일 아침 벌써 새벽 2시 반에 일어나요. 3시에 빵 작업실에서 하루 일을 시작해요. 거기서 빵과 브뢰첸, 사과 케이크를 구워요."
+  },
+  {
+   "de": "Um sechs Uhr macht sie die Bäckerei auf, und draußen warten schon die ersten Kunden. Bis 13 Uhr verkauft sie zusammen mit einer Verkäuferin Brötchen und Kaffee. Dann hat Sabine Feierabend und geht nach Hause.",
+   "ko": "6시에 빵집 문을 여는데, 밖에는 벌써 첫 손님들이 기다리고 있어요. 오후 1시까지 판매원 한 명과 함께 브뢰첸과 커피를 팔아요. 그러면 자비네 씨는 일을 마치고 집에 가요."
+  },
+  {
+   "de": "Zu Hause kocht sie, und nachmittags kauft sie ein. Um vier Uhr holt sie ihre Enkelin Lea vom Kindergarten ab. Die beiden spielen eine Stunde zusammen.",
+   "ko": "집에서 요리를 하고, 오후에는 장을 봐요. 4시에는 손녀 레아를 유치원에서 데려와요. 두 사람은 한 시간 동안 같이 놀아요."
+  },
+  {
+   "de": "Abends geht sie schon um 20 Uhr schlafen, denn ihr Wecker klingelt sehr früh.",
+   "ko": "저녁에는 벌써 8시에 자러 가요. 알람이 아주 일찍 울리거든요."
+  },
+  {
+   "de": "Ist der Beruf nicht anstrengend? „Doch, aber ich liebe meinen Beruf“, erzählt Sabine. „Morgens ist die Stadt noch ganz ruhig. Und viele Kunden kenne ich seit Jahren.“",
+   "ko": "이 직업은 힘들지 않을까요? 자비네 씨는 이렇게 말해요. “힘들어요. 그래도 저는 제 직업을 사랑해요. 아침에는 도시가 아직 아주 조용해요. 그리고 많은 손님을 몇 년 전부터 알고 지내요.”"
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Sabine backt in der Backstube nur Brot.",
+   "answer": 1,
+   "evidence": "Dort backt sie Brot, Brötchen und Apfelkuchen.",
+   "pairs": [
+    [
+     "Brot, Brötchen und Apfelkuchen",
+     "nur Brot"
+    ]
+   ],
+   "explain": "본문에 'Dort backt sie Brot, Brötchen und Apfelkuchen.(거기서 빵과 브뢰첸, 사과 케이크를 구워요.)'라고 나와요. 자비네 씨는 빵만 굽는 것이 아니라 브뢰첸과 사과 케이크도 구워요. 'nur(~만)'가 들어가서 틀린 내용이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Wie viele Stunden arbeitet Sabine bis zum Feierabend?",
+   "options": [
+    "sieben Stunden",
+    "zehn Stunden",
+    "drei Stunden"
+   ],
+   "answer": 1,
+   "evidence": "Um drei Uhr beginnt ihr Arbeitstag in der Backstube.",
+   "pairs": [
+    [
+     "Um drei Uhr beginnt ihr Arbeitstag",
+     "arbeitet Sabine"
+    ],
+    [
+     "Bis 13 Uhr",
+     "bis zum Feierabend"
+    ]
+   ],
+   "explain": "자비네 씨의 하루 일은 3시에 빵 작업실에서 시작되고(Um drei Uhr beginnt ihr Arbeitstag), 13시까지 가게에서 팔아요(Bis 13 Uhr verkauft sie …). 그다음에 일을 마쳐요(Feierabend). 3시부터 13시까지는 10시간이에요. 7시간은 가게 문을 여는 6시부터 13시까지이고, 3시간은 빵을 굽는 3시부터 6시까지라서 함정이에요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Sabine spielt am Nachmittag mit einem Kind aus ihrer Familie.",
+   "answer": 0,
+   "evidence": "Um vier Uhr holt sie ihre Enkelin Lea vom Kindergarten ab.",
+   "pairs": [
+    [
+     "ihre Enkelin Lea",
+     "einem Kind aus ihrer Familie"
+    ],
+    [
+     "Die beiden spielen eine Stunde zusammen",
+     "spielt am Nachmittag"
+    ]
+   ],
+   "explain": "자비네 씨는 4시에 손녀 레아를 유치원에서 데려오고, 두 사람은 한 시간 동안 같이 놀아요(Die beiden spielen eine Stunde zusammen). 손녀(Enkelin)는 가족 중의 아이(ein Kind aus ihrer Familie)이고, 4시는 오후니까 맞는 내용이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Was passiert um sechs Uhr?",
+   "options": [
+    "Sabine steht auf und backt Brötchen.",
+    "Die ersten Leute kaufen schon ein.",
+    "Sabine fängt in der Backstube an."
+   ],
+   "answer": 1,
+   "evidence": "Um sechs Uhr macht sie die Bäckerei auf, und draußen warten schon die ersten Kunden.",
+   "pairs": [
+    [
+     "warten schon die ersten Kunden",
+     "Die ersten Leute kaufen schon ein"
+    ]
+   ],
+   "explain": "6시에 자비네 씨가 빵집 문을 열고(macht sie die Bäckerei auf), 밖에는 벌써 첫 손님들(die ersten Kunden)이 기다리고 있어요. 문을 열면 기다리던 손님들이 빵을 사니까 두 번째가 정답이에요. Kunden을 Leute로 바꿔 말했어요. 자비네 씨가 일어나는 시간은 2시 반이고, 빵 작업실에서 일을 시작하는 시간은 3시예요."
+  },
+  {
+   "type": "mc",
+   "kind": "paraphrase",
+   "q": "Was meint Sabine mit „Morgens ist die Stadt noch ganz ruhig“?",
+   "options": [
+    "Früh am Tag ist alles noch leise.",
+    "Morgens schläft Sabine noch lange.",
+    "Am Morgen gibt es keine Kunden."
+   ],
+   "answer": 0,
+   "evidence": "Morgens ist die Stadt noch ganz ruhig",
+   "pairs": [
+    [
+     "Morgens",
+     "Früh am Tag"
+    ],
+    [
+     "ganz ruhig",
+     "leise"
+    ]
+   ],
+   "explain": "'Morgens ist die Stadt noch ganz ruhig'는 아침에는 도시가 아직 아주 조용하다는 뜻이에요. Morgens를 'Früh am Tag(하루 중 이른 때)'로, ruhig를 leise(조용한)로 바꿔 말했어요. 자비네 씨는 새벽 2시 반에 일어나니까 늦잠을 자지 않고, 6시에는 벌써 손님들이 기다리고 있어요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Sabine findet ihren Beruf nicht anstrengend.",
+   "answer": 1,
+   "evidence": "„Doch, aber ich liebe meinen Beruf“, erzählt Sabine.",
+   "pairs": [
+    [
+     "Ist der Beruf nicht anstrengend?",
+     "findet ihren Beruf nicht anstrengend"
+    ],
+    [
+     "Doch",
+     "nicht anstrengend"
+    ]
+   ],
+   "explain": "'Ist der Beruf nicht anstrengend?(이 직업은 힘들지 않을까요?)'라는 부정 질문에 자비네 씨는 'Doch'라고 대답해요. 부정 질문에 Doch라고 하면 '아니요, 힘들어요'라는 뜻이에요. 자기 직업을 사랑하지만 힘들지 않다는 말은 아니니까 틀린 내용이에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "4격으로 쓰는 시간 표현",
+   "term": "Akkusativ der Zeit (jeden Morgen, eine Stunde)",
+   "explain": "전치사 없이 시간을 말할 때는 4격을 써요. 'jeden Morgen(매일 아침)'처럼 jed-를 쓰면 같은 일이 되풀이된다는 뜻이고, 'eine Stunde(한 시간 동안)'처럼 얼마 동안인지도 4격으로 말해요. 남성 명사는 jeden/einen(jeden Morgen, jeden Tag), 여성 명사는 jede/eine(jede Woche, eine Stunde), 중성 명사는 jedes/ein(jedes Jahr)이에요.",
+   "pattern": "jeden Morgen · jeden Tag · jede Woche · jedes Jahr / eine Stunde · einen Tag",
+   "examples": [
+    {
+     "de": "Jeden Morgen steht sie schon um halb drei auf.",
+     "ko": "매일 아침 벌써 새벽 2시 반에 일어나요.",
+     "mark": [
+      "Jeden Morgen"
+     ],
+     "parts": [
+      [
+       "Jeden Morgen",
+       "부사어(빈도)"
+      ],
+      [
+       "steht",
+       "동사"
+      ],
+      [
+       "sie",
+       "주어"
+      ],
+      [
+       "schon",
+       "부사어(시간)"
+      ],
+      [
+       "um halb drei",
+       "부사어(시간)"
+      ],
+      [
+       "auf.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Die beiden spielen eine Stunde zusammen.",
+     "ko": "두 사람은 한 시간 동안 같이 놀아요.",
+     "mark": [
+      "eine Stunde"
+     ],
+     "parts": [
+      [
+       "Die beiden",
+       "주어"
+      ],
+      [
+       "spielen",
+       "동사"
+      ],
+      [
+       "eine Stunde",
+       "부사어(시간)"
+      ],
+      [
+       "zusammen.",
+       "부사어(방법)"
+      ]
+     ]
+    }
+   ],
+   "tip": "jeden Morgen의 -en은 4격 남성 어미예요. 1격이라면 jeder Morgen이지만, 시간 표현으로 쓸 때는 4격 jeden Morgen이에요. -s가 붙은 morgens, abends, nachmittags도 '아침마다, 저녁마다, 오후마다'라는 비슷한 뜻이에요."
+  },
+  {
+   "title": "직업 이름의 여성형 -in",
+   "term": "Berufe: Bäcker – Bäckerin",
+   "explain": "사람을 나타내는 남성 명사에 -in을 붙이면 여성형이 돼요: der Bäcker → die Bäckerin, der Verkäufer → die Verkäuferin. der Kunde처럼 -e로 끝나는 말은 -e를 빼고 -in을 붙여요(die Kundin). -in으로 끝나는 여성형 명사의 관사는 die이고, 복수형은 -innen이에요(die Bäckerinnen).",
+   "pattern": "der Bäcker → die Bäckerin, -nen · der Verkäufer → die Verkäuferin, -nen · der Kunde → die Kundin, -nen",
+   "examples": [
+    {
+     "de": "Sabine Kraus (52) ist Bäckerin in Freiburg.",
+     "ko": "자비네 크라우스 씨(52)는 프라이부르크의 제빵사예요.",
+     "mark": [
+      "Bäckerin"
+     ],
+     "parts": [
+      [
+       "Sabine Kraus (52)",
+       "주어"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "Bäckerin",
+       "보어"
+      ],
+      [
+       "in Freiburg.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Bis 13 Uhr verkauft sie zusammen mit einer Verkäuferin Brötchen und Kaffee.",
+     "ko": "오후 1시까지 판매원 한 명과 함께 브뢰첸과 커피를 팔아요.",
+     "mark": [
+      "Verkäuferin"
+     ],
+     "parts": [
+      [
+       "Bis 13 Uhr",
+       "부사어(시간)"
+      ],
+      [
+       "verkauft",
+       "동사"
+      ],
+      [
+       "sie",
+       "주어"
+      ],
+      [
+       "zusammen mit einer Verkäuferin",
+       "부사어"
+      ],
+      [
+       "Brötchen und Kaffee.",
+       "4격 목적어"
+      ]
+     ]
+    }
+   ],
+   "tip": "직업을 말할 때는 보통 관사 없이 써요: Sie ist Bäckerin. 남자라면 Er ist Bäcker.예요. 여자와 남자를 함께 말할 때는 두 형태를 모두 쓰기도 해요: Kundinnen und Kunden."
+  },
+  {
+   "title": "nach Hause · zu Hause",
+   "term": "nach Hause (Wohin?) · zu Hause (Wo?)",
+   "explain": "'집으로' 가거나 올 때(Wohin?)는 nach Hause, '집에서' 무엇을 하거나 집에 있을 때(Wo?)는 zu Hause라고 해요. gehen, kommen, fahren처럼 움직이는 동사와는 nach Hause를 쓰고, kochen, wohnen, sein처럼 그 자리에서 하는 일에는 zu Hause를 써요. 두 표현 모두 관사 없이 써요.",
+   "pattern": "Wohin? → nach Hause gehen/kommen · Wo? → zu Hause sein/kochen/wohnen",
+   "examples": [
+    {
+     "de": "Dann hat Sabine Feierabend und geht nach Hause.",
+     "ko": "그러면 자비네 씨는 일을 마치고 집에 가요.",
+     "mark": [
+      "nach Hause"
+     ],
+     "parts": [
+      [
+       "Dann",
+       "부사어(시간)"
+      ],
+      [
+       "hat",
+       "동사"
+      ],
+      [
+       "Sabine",
+       "주어"
+      ],
+      [
+       "Feierabend",
+       "4격 목적어"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "geht",
+       "동사"
+      ],
+      [
+       "nach Hause.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Zu Hause kocht sie, und nachmittags kauft sie ein.",
+     "ko": "집에서 요리를 하고, 오후에는 장을 봐요.",
+     "mark": [
+      "Zu Hause"
+     ],
+     "parts": [
+      [
+       "Zu Hause",
+       "부사어(장소)"
+      ],
+      [
+       "kocht",
+       "동사"
+      ],
+      [
+       "sie,",
+       "주어"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "nachmittags",
+       "부사어(시간)"
+      ],
+      [
+       "kauft",
+       "동사"
+      ],
+      [
+       "sie",
+       "주어"
+      ],
+      [
+       "ein.",
+       "동사(끝)"
+      ]
+     ]
+    }
+   ],
+   "tip": "Hause는 이 두 표현에서 쓰는 모양이고, 그냥 '집'이라는 명사는 das Haus예요. 'Sie geht nach Hause.(집에 가요)'와 'Sie ist zu Hause.(집에 있어요)'를 짝으로 외워 두면 좋아요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "die Bäckerin, -nen",
+   "ko": "(여성) 제빵사"
+  },
+  {
+   "de": "aufstehen (steht auf, ist aufgestanden)",
+   "ko": "일어나다"
+  },
+  {
+   "de": "die Backstube, -n",
+   "ko": "빵 작업실, 제빵실"
+  },
+  {
+   "de": "backen (backt, hat gebacken)",
+   "ko": "(빵을) 굽다"
+  },
+  {
+   "de": "die Bäckerei, -en",
+   "ko": "빵집"
+  },
+  {
+   "de": "der Kunde, -n",
+   "ko": "손님, 고객 (여성: die Kundin)"
+  },
+  {
+   "de": "die Verkäuferin, -nen",
+   "ko": "(여성) 판매원"
+  },
+  {
+   "de": "einkaufen (kauft ein)",
+   "ko": "장을 보다"
+  },
+  {
+   "de": "die Enkelin, -nen",
+   "ko": "손녀"
+  },
+  {
+   "de": "abholen (holt ab)",
+   "ko": "데리러 가다, 데려오다"
+  },
+  {
+   "de": "der Wecker, -",
+   "ko": "알람 시계, 자명종"
+  },
+  {
+   "de": "anstrengend",
+   "ko": "힘든, 고된"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "Feierabend haben",
+   "ko": "일을 마치다, 퇴근하다",
+   "ex": "Dann hat Sabine Feierabend und geht nach Hause.",
+   "exko": "그러면 자비네 씨는 일을 마치고 집에 가요."
+  },
+  {
+   "de": "schlafen gehen",
+   "ko": "자러 가다, 잠자리에 들다",
+   "ex": "Abends geht sie schon um 20 Uhr schlafen, denn ihr Wecker klingelt sehr früh.",
+   "exko": "저녁에는 벌써 8시에 자러 가요. 알람이 아주 일찍 울리거든요."
+  },
+  {
+   "de": "seit Jahren",
+   "ko": "몇 년 전부터, 오래전부터",
+   "ex": "Und viele Kunden kenne ich seit Jahren.",
+   "exko": "그리고 많은 손님을 몇 년 전부터 알고 지내요."
+  }
+ ]
+}

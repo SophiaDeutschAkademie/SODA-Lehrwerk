@@ -1,0 +1,398 @@
+{
+ "id": "a1-14",
+ "level": "A1",
+ "no": 14,
+ "title": "Das sind wir!",
+ "titleKo": "우리 가족이에요!",
+ "type": "Blogbeitrag",
+ "typeKo": "학급 교류 블로그 글",
+ "intro": "라이프치히에 사는 학생이 부산의 교류 학급에 가족사진을 소개하는 글이에요.",
+ "focus": [
+  "위치 부사",
+  "직업 말하기",
+  "haben · es gibt + 4격"
+ ],
+ "paragraphs": [
+  {
+   "style": "meta",
+   "de": "Hallo, liebe Klasse 8a in Busan!",
+   "ko": "부산 8a반 친구들, 안녕하세요!"
+  },
+  {
+   "de": "Ich bin Mia (13) aus Leipzig, und heute zeige ich euch ein Foto von meiner Familie.",
+   "ko": "저는 라이프치히에 사는 미아(13살)예요. 오늘은 여러분에게 우리 가족사진을 보여 줄게요."
+  },
+  {
+   "de": "Links auf dem Foto steht meine Mutter. Sie ist Ärztin und arbeitet oft am Wochenende. Daneben steht mein Vater, er ist Mathelehrer, und am Wochenende kocht er für die Familie.",
+   "ko": "사진 왼쪽에 서 있는 사람은 우리 엄마예요. 엄마는 의사이고 주말에 자주 일해요. 그 옆에는 아빠가 서 있어요. 아빠는 수학 선생님이고, 주말에는 아빠가 가족을 위해 요리를 해요."
+  },
+  {
+   "de": "In der Mitte sitzt mein Opa, er wohnt auch bei uns. Vorne liegt sein Hund Bruno.",
+   "ko": "가운데에는 우리 할아버지가 앉아 계세요. 할아버지도 우리 집에서 같이 사세요. 앞쪽에는 할아버지의 개 브루노가 누워 있어요."
+  },
+  {
+   "de": "Rechts sitzen meine Geschwister Ben und Leo, sie sind Zwillinge und erst acht. Die Zwillinge haben zusammen ein Zimmer, es ist klein, aber sie haben zehn Fußbälle!",
+   "ko": "오른쪽에는 제 동생 벤과 레오가 앉아 있어요. 둘은 쌍둥이이고 이제 겨우 여덟 살이에요. 쌍둥이는 방을 같이 쓰는데, 방은 작지만 축구공이 열 개나 있어요!"
+  },
+  {
+   "de": "Ich bin groß und stehe ganz hinten auf dem Foto.",
+   "ko": "저는 키가 커서 사진 맨 뒤에 서 있어요."
+  },
+  {
+   "de": "Unsere Wohnung hat vier Zimmer, aber es gibt nur ein Badezimmer. Morgens ist das ein Problem!",
+   "ko": "우리 집은 방이 네 개인데 욕실은 하나뿐이에요. 아침에는 이게 문제예요!"
+  },
+  {
+   "de": "Habt ihr auch Geschwister oder Haustiere? Schreibt mir bitte!",
+   "ko": "여러분도 형제자매나 반려동물이 있나요? 저에게 글을 남겨 주세요!"
+  },
+  {
+   "style": "meta",
+   "de": "Viele Grüße, eure Mia",
+   "ko": "안부를 전해요. 여러분의 미아가"
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Am Wochenende hat die Mutter von Mia oft frei.",
+   "answer": 1,
+   "evidence": "Sie ist Ärztin und arbeitet oft am Wochenende.",
+   "pairs": [
+    [
+     "arbeitet oft am Wochenende",
+     "hat die Mutter von Mia oft frei"
+    ]
+   ],
+   "explain": "엄마는 의사이고 'arbeitet oft am Wochenende(주말에 자주 일해요)'라고 나와요. 문제는 주말에 자주 쉰다고(frei haben) 했으니 본문과 반대예요. Wochenende와 oft는 본문에 있는 낱말이지만 뜻이 달라요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Der Opa von Mia wohnt nicht allein.",
+   "answer": 0,
+   "evidence": "er wohnt auch bei uns",
+   "pairs": [
+    [
+     "wohnt auch bei uns",
+     "wohnt nicht allein"
+    ]
+   ],
+   "explain": "미아는 할아버지에 대해 'er wohnt auch bei uns(할아버지도 우리 집에서 같이 사세요)'라고 해요. 가족과 함께 사니까 혼자(allein) 사는 것이 아니에요. 맞는 문장이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "meaning",
+   "q": "Was bedeutet „Zwillinge“ im Text?",
+   "options": [
+    "Ben und Leo sind zwei Freunde von Mia.",
+    "Ben und Leo sind am selben Tag geboren.",
+    "Ben und Leo sind zwei Nachbarn von Mia."
+   ],
+   "answer": 1,
+   "evidence": "sie sind Zwillinge und erst acht",
+   "pairs": [
+    [
+     "Zwillinge",
+     "am selben Tag geboren"
+    ]
+   ],
+   "explain": "Zwillinge는 쌍둥이예요. 쌍둥이는 같은 날 태어나요(am selben Tag geboren). 벤과 레오는 미아의 친구나 이웃이 아니라 동생이에요. 본문에서 meine Geschwister Ben und Leo라고 했어요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Mia steht auf dem Foto ganz vorne.",
+   "answer": 1,
+   "evidence": "stehe ganz hinten auf dem Foto",
+   "pairs": [
+    [
+     "ganz hinten",
+     "ganz vorne"
+    ]
+   ],
+   "explain": "미아는 키가 커서 사진 맨 뒤에 서 있다고(stehe ganz hinten) 말해요. 앞쪽(vorne)에 있는 것은 할아버지의 개 브루노예요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Warum ist der Morgen bei Mia zu Hause ein Problem?",
+   "options": [
+    "Sechs Personen haben nur zwei Zimmer.",
+    "Der Vater kocht morgens für alle sechs.",
+    "Alle sechs Personen haben nur ein Bad."
+   ],
+   "answer": 2,
+   "evidence": "aber es gibt nur ein Badezimmer",
+   "pairs": [
+    [
+     "es gibt nur ein Badezimmer",
+     "haben nur ein Bad"
+    ]
+   ],
+   "explain": "엄마, 아빠, 할아버지, 벤, 레오, 미아까지 여섯 명이 함께 사는데 욕실은 하나뿐이에요(nur ein Badezimmer). 그래서 아침에 모두 욕실을 쓰려고 하면 문제가 생겨요. 방은 두 개가 아니라 네 개이고, 아빠는 아침이 아니라 주말에 요리해요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was möchte Mia von der Klasse in Busan wissen?",
+   "options": [
+    "Habt ihr Brüder, Schwestern oder Tiere?",
+    "Kennt ihr schon das Foto von meiner Familie?",
+    "Wie viele Zimmer hat eure Wohnung in Busan?"
+   ],
+   "answer": 0,
+   "evidence": "Habt ihr auch Geschwister oder Haustiere?",
+   "pairs": [
+    [
+     "Geschwister",
+     "Brüder, Schwestern"
+    ],
+    [
+     "Haustiere",
+     "Tiere"
+    ]
+   ],
+   "explain": "미아는 형제자매나 반려동물이 있는지 물어요. Geschwister를 Brüder, Schwestern으로, Haustiere를 Tiere로 바꿔 말했어요. 가족사진은 미아가 지금 보여 주는 것이고, 미아는 친구들의 집에 방이 몇 개인지 묻지 않아요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "위치를 말하는 부사 – links, rechts, vorne, hinten",
+   "term": "Lokaladverbien (links, rechts, vorne, hinten, daneben)",
+   "explain": "사진 속 위치는 links(왼쪽에), rechts(오른쪽에), vorne(앞에), hinten(뒤에)으로 말해요. 이 부사들은 모양이 바뀌지 않아요. daneben은 '그 옆에'라는 뜻으로, 바로 앞에서 말한 사람의 옆을 가리켜요. ganz를 붙이면 '맨 ~'이 돼요(ganz hinten, 맨 뒤에). 위치 부사가 1번 자리에 오면 동사는 2번 자리에 오고, 주어는 동사 뒤로 가요.",
+   "pattern": "위치 부사(1번 자리) + steht / sitzt / liegt + 주어",
+   "examples": [
+    {
+     "de": "Links auf dem Foto steht meine Mutter.",
+     "ko": "사진 왼쪽에 서 있는 사람은 우리 엄마예요.",
+     "mark": [
+      "Links"
+     ],
+     "parts": [
+      [
+       "Links auf dem Foto",
+       "부사어(장소)"
+      ],
+      [
+       "steht",
+       "동사"
+      ],
+      [
+       "meine Mutter.",
+       "주어"
+      ]
+     ]
+    },
+    {
+     "de": "Vorne liegt sein Hund Bruno.",
+     "ko": "앞쪽에는 할아버지의 개 브루노가 누워 있어요.",
+     "mark": [
+      "Vorne"
+     ],
+     "parts": [
+      [
+       "Vorne",
+       "부사어(장소)"
+      ],
+      [
+       "liegt",
+       "동사"
+      ],
+      [
+       "sein Hund Bruno.",
+       "주어"
+      ]
+     ]
+    },
+    {
+     "de": "Ich bin groß und stehe ganz hinten auf dem Foto.",
+     "ko": "저는 키가 커서 사진 맨 뒤에 서 있어요.",
+     "mark": [
+      "ganz hinten"
+     ]
+    }
+   ],
+   "tip": "in der Mitte(가운데에)는 전치사 in과 3격으로 만든 표현이에요. daneben은 neben + 앞에서 말한 사람이라는 뜻이라서, 여기서는 neben meiner Mutter(엄마 옆에)와 같아요."
+  },
+  {
+   "title": "직업 말하기 – 관사 없이",
+   "term": "Berufe ohne Artikel",
+   "explain": "직업을 말할 때는 sein + 직업 이름을 쓰고, 직업 앞에 관사를 붙이지 않아요(Sie ist Ärztin. Er ist Mathelehrer.). 여자의 직업은 남자 직업 이름에 -in을 붙여 만들어요(Lehrer → Lehrerin). Arzt → Ärztin처럼 모음에 움라우트가 생기기도 해요.",
+   "pattern": "주어 + sein + 직업 (관사 없음) · 남성형 + -in = 여성형",
+   "examples": [
+    {
+     "de": "Sie ist Ärztin und arbeitet oft am Wochenende.",
+     "ko": "엄마는 의사이고 주말에 자주 일해요.",
+     "mark": [
+      "ist Ärztin"
+     ],
+     "parts": [
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "Ärztin",
+       "보어"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "arbeitet",
+       "동사"
+      ],
+      [
+       "oft",
+       "부사어(빈도)"
+      ],
+      [
+       "am Wochenende.",
+       "부사어(시간)"
+      ]
+     ]
+    },
+    {
+     "de": "Daneben steht mein Vater, er ist Mathelehrer, und am Wochenende kocht er für die Familie.",
+     "ko": "그 옆에는 아빠가 서 있어요. 아빠는 수학 선생님이고, 주말에는 아빠가 가족을 위해 요리를 해요.",
+     "mark": [
+      "ist Mathelehrer"
+     ]
+    }
+   ],
+   "tip": "가족을 말할 때는 소유관사를 쓰지만(meine Mutter, mein Vater), 직업 앞에는 관사를 쓰지 않아요. Er ist ein Mathelehrer.라고 하지 않고 Er ist Mathelehrer.라고 해요."
+  },
+  {
+   "title": "haben + 4격 · es gibt + 4격",
+   "term": "haben + Akkusativ, es gibt + Akkusativ",
+   "explain": "'~이 있어요'는 haben이나 es gibt로 말해요. haben은 누가 또는 무엇이 무엇을 가지고 있는지 말하고, 가진 것은 4격이에요(Unsere Wohnung hat vier Zimmer). es gibt는 어떤 것이 있다는 사실만 말할 때 써요. es gibt 뒤의 명사도 4격이라서 남성 명사는 einen이 돼요(es gibt einen Balkon).",
+   "pattern": "주어 + haben + 4격 · es gibt + 4격",
+   "examples": [
+    {
+     "de": "Unsere Wohnung hat vier Zimmer, aber es gibt nur ein Badezimmer.",
+     "ko": "우리 집은 방이 네 개인데 욕실은 하나뿐이에요.",
+     "mark": [
+      "hat vier Zimmer",
+      "es gibt nur ein Badezimmer"
+     ],
+     "parts": [
+      [
+       "Unsere Wohnung",
+       "주어"
+      ],
+      [
+       "hat",
+       "동사"
+      ],
+      [
+       "vier Zimmer,",
+       "4격 목적어"
+      ],
+      [
+       "aber",
+       "접속사"
+      ],
+      [
+       "es",
+       "주어"
+      ],
+      [
+       "gibt",
+       "동사"
+      ],
+      [
+       "nur ein Badezimmer.",
+       "4격 목적어"
+      ]
+     ]
+    },
+    {
+     "de": "Die Zwillinge haben zusammen ein Zimmer, es ist klein, aber sie haben zehn Fußbälle!",
+     "ko": "쌍둥이는 방을 같이 쓰는데, 방은 작지만 축구공이 열 개나 있어요!",
+     "mark": [
+      "haben zusammen ein Zimmer",
+      "haben zehn Fußbälle"
+     ]
+    }
+   ],
+   "tip": "es gibt는 뒤에 복수 명사가 와도 gibt예요(es gibt vier Zimmer). 이때 es는 바뀌지 않는 형식상의 주어예요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "die Familie, -n",
+   "ko": "가족"
+  },
+  {
+   "de": "die Ärztin, -nen",
+   "ko": "(여자) 의사"
+  },
+  {
+   "de": "der Mathelehrer, -",
+   "ko": "수학 선생님"
+  },
+  {
+   "de": "das Wochenende, -n",
+   "ko": "주말"
+  },
+  {
+   "de": "daneben",
+   "ko": "그 옆에"
+  },
+  {
+   "de": "hinten",
+   "ko": "뒤에, 뒤쪽에"
+  },
+  {
+   "de": "die Geschwister (Pl.)",
+   "ko": "형제자매"
+  },
+  {
+   "de": "der Zwilling, -e",
+   "ko": "쌍둥이"
+  },
+  {
+   "de": "der Fußball, -¨e",
+   "ko": "축구공, 축구"
+  },
+  {
+   "de": "die Wohnung, -en",
+   "ko": "집, 아파트"
+  },
+  {
+   "de": "das Badezimmer, -",
+   "ko": "욕실"
+  },
+  {
+   "de": "das Haustier, -e",
+   "ko": "반려동물"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "ganz hinten",
+   "ko": "맨 뒤에",
+   "ex": "Ich bin groß und stehe ganz hinten auf dem Foto.",
+   "exko": "저는 키가 커서 사진 맨 뒤에 서 있어요."
+  },
+  {
+   "de": "bei jemandem wohnen",
+   "ko": "~의 집에서 (함께) 살다",
+   "ex": "In der Mitte sitzt mein Opa, er wohnt auch bei uns.",
+   "exko": "가운데에는 우리 할아버지가 앉아 계세요. 할아버지도 우리 집에서 같이 사세요."
+  },
+  {
+   "de": "Viele Grüße",
+   "ko": "안부를 전해요 (편지·글의 끝인사)",
+   "ex": "Viele Grüße, eure Mia",
+   "exko": "안부를 전해요. 여러분의 미아가"
+  }
+ ]
+}

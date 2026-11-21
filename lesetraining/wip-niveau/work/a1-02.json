@@ -1,0 +1,456 @@
+{
+ "id": "a1-02",
+ "level": "A1",
+ "no": 2,
+ "title": "Endlich alle zusammen!",
+ "titleKo": "드디어 다 모였어요!",
+ "type": "Social-Media-Post",
+ "typeKo": "소셜 미디어 게시글",
+ "intro": "레나가 할머니 생신 때 찍은 가족사진을 소개하는 글이에요.",
+ "focus": [
+  "소유관사의 3격",
+  "stehen · sitzen",
+  "nicht …, sondern …"
+ ],
+ "paragraphs": [
+  {
+   "style": "meta",
+   "de": "lena_k · vor 2 Stunden",
+   "ko": "lena_k · 2시간 전"
+  },
+  {
+   "de": "Endlich sind wir alle zusammen, denn meine Oma hat heute Geburtstag und wird achtzig! Hier seht ihr unser Familienfoto von heute Nachmittag im Garten.",
+   "ko": "드디어 우리가 다 모였어요. 오늘이 할머니 생신이고, 할머니가 여든이 되시거든요! 여기 보이는 사진은 오늘 오후에 정원에서 찍은 우리 가족사진이에요."
+  },
+  {
+   "de": "In der Mitte sitzt Oma mit einem Blumenstrauß und einem Luftballon. Links neben ihr stehen meine Eltern, und meine Mutter hält den Geburtstagskuchen.",
+   "ko": "가운데에는 할머니가 꽃다발과 풍선을 들고 앉아 계세요. 할머니 왼쪽 옆에는 부모님이 서 계시고, 어머니가 생일 케이크를 들고 계세요."
+  },
+  {
+   "de": "Hinter unserer Oma steht mein Bruder Max. Er ist Koch in Wien und hat nur zwei Tage frei, aber zum Geburtstag von Oma ist er natürlich hier. Neben Max steht unser Onkel aus Kanada. Seine Kinder sind nicht hier, sondern dort in der Schule.",
+   "ko": "할머니 뒤에는 남동생 막스가 서 있어요. 막스는 빈에서 요리사로 일하고 쉬는 날이 이틀뿐이지만, 할머니 생신에는 당연히 여기 와 있어요. 막스 옆에는 캐나다에서 온 삼촌이 서 계세요. 삼촌의 아이들은 여기가 아니라 그곳 학교에 있어요."
+  },
+  {
+   "de": "Rechts sitzt meine Schwester Paula mit ihrem Mann. Ihr Baby Emil ist erst drei Monate alt und schläft im Kinderwagen. Vorne sitzen zwei Hunde und eine Katze, und sie feiern natürlich auch mit!",
+   "ko": "오른쪽에는 언니 파울라가 남편과 함께 앉아 있어요. 언니의 아기 에밀은 이제 겨우 3개월이고, 유모차에서 자고 있어요. 앞에는 개 두 마리와 고양이 한 마리가 앉아 있는데, 이 동물들도 당연히 함께 축하하고 있어요!"
+  },
+  {
+   "de": "Und ich? Ich mache das Familienfoto!",
+   "ko": "그러면 저는요? 제가 가족사진을 찍고 있어요!"
+  },
+  {
+   "style": "meta",
+   "de": "#familienfoto #oma80 #geburtstag",
+   "ko": "#가족사진 #할머니80세 #생일"
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "gist",
+   "q": "Im Post zeigt Lena ihre Familie bei einer Feier.",
+   "answer": 0,
+   "evidence": "Endlich sind wir alle zusammen, denn meine Oma hat heute Geburtstag und wird achtzig!",
+   "pairs": [
+    [
+     "meine Oma hat heute Geburtstag",
+     "bei einer Feier"
+    ],
+    [
+     "unser Familienfoto",
+     "zeigt Lena ihre Familie"
+    ]
+   ],
+   "explain": "레나는 'Endlich sind wir alle zusammen, denn meine Oma hat heute Geburtstag und wird achtzig!(오늘 할머니 생신이라서 드디어 다 모였어요!)'라고 쓰고, 'unser Familienfoto(우리 가족사진)'를 보여 줘요. 할머니의 여든 번째 생신 파티(Feier)에서 찍은 가족사진을 소개하는 글이니까 맞는 내용이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was hat Oma in der Hand?",
+   "options": [
+    "einen Ballon und einen Strauß",
+    "den Kuchen mit achtzig Kerzen",
+    "ein Foto von ihrer Familie"
+   ],
+   "answer": 0,
+   "evidence": "In der Mitte sitzt Oma mit einem Blumenstrauß und einem Luftballon.",
+   "pairs": [
+    [
+     "Luftballon",
+     "Ballon"
+    ],
+    [
+     "Blumenstrauß",
+     "Strauß"
+    ]
+   ],
+   "explain": "본문에 'In der Mitte sitzt Oma mit einem Blumenstrauß und einem Luftballon.(가운데에는 할머니가 꽃다발과 풍선을 들고 앉아 계세요.)'라고 나와요. Luftballon(풍선)을 Ballon으로, Blumenstrauß(꽃다발)를 Strauß로 줄여 말했어요. 생일 케이크는 어머니가 들고 있고(meine Mutter hält den Geburtstagskuchen), 레나가 찍는 가족사진(Familienfoto)은 할머니가 들고 있는 물건이 아니에요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Max kann nicht lange bei der Familie bleiben.",
+   "answer": 0,
+   "evidence": "Er ist Koch in Wien und hat nur zwei Tage frei",
+   "pairs": [
+    [
+     "hat nur zwei Tage frei",
+     "kann nicht lange bei der Familie bleiben"
+    ]
+   ],
+   "explain": "막스는 'Er ist Koch in Wien und hat nur zwei Tage frei(빈에서 요리사로 일하고 쉬는 날이 이틀뿐이에요)'라고 소개돼요. 쉬는 날이 이틀밖에 없으니 가족 곁에 오래 있을 수 없어요. 본문에 그대로 나오지는 않지만 'nur zwei Tage frei'에서 알 수 있으니까 맞는 내용이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Wo sind die Kinder vom Onkel?",
+   "options": [
+    "Sie sind mit Max zusammen in Wien.",
+    "Sie haben in Kanada Unterricht.",
+    "Sie sitzen hier vorne bei den Hunden."
+   ],
+   "answer": 1,
+   "evidence": "Seine Kinder sind nicht hier, sondern dort in der Schule.",
+   "pairs": [
+    [
+     "dort in der Schule",
+     "in Kanada Unterricht"
+    ],
+    [
+     "unser Onkel aus Kanada",
+     "in Kanada"
+    ]
+   ],
+   "explain": "본문에 'Seine Kinder sind nicht hier, sondern dort in der Schule.(삼촌의 아이들은 여기가 아니라 그곳 학교에 있어요.)'라고 나와요. 바로 앞 문장에서 삼촌이 캐나다에서 왔다고(aus Kanada) 했으니까 dort(그곳)는 캐나다예요. 'in der Schule'를 'Unterricht haben(수업이 있다)'으로 바꿔 말했어요. 빈(Wien)은 막스가 일하는 곳이고, 앞에 앉아 있는 것은 개와 고양이예요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was macht Emil auf dem Foto?",
+   "options": [
+    "Er feiert vorne mit den Hunden.",
+    "Er sitzt bei Oma in der Mitte.",
+    "Er liegt im Wagen und schläft."
+   ],
+   "answer": 2,
+   "evidence": "Ihr Baby Emil ist erst drei Monate alt und schläft im Kinderwagen.",
+   "pairs": [
+    [
+     "schläft im Kinderwagen",
+     "liegt im Wagen und schläft"
+    ]
+   ],
+   "explain": "본문에 'Ihr Baby Emil ist erst drei Monate alt und schläft im Kinderwagen.(언니의 아기 에밀은 이제 겨우 3개월이고, 유모차에서 자고 있어요.)'라고 나와요. Kinderwagen(유모차)을 Wagen으로 줄여 말했어요. 앞에서 함께 축하하는 것은 개와 고양이이고, 가운데에 앉아 있는 사람은 할머니예요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Lena steht auf dem Foto hinter ihrer Oma.",
+   "answer": 1,
+   "evidence": "Ich mache das Familienfoto!",
+   "pairs": [
+    [
+     "Ich mache das Familienfoto!",
+     "Lena steht auf dem Foto"
+    ],
+    [
+     "Hinter unserer Oma steht mein Bruder Max.",
+     "hinter ihrer Oma"
+    ]
+   ],
+   "explain": "레나는 마지막에 'Ich mache das Familienfoto!(제가 가족사진을 찍고 있어요!)'라고 해요. 사진을 찍는 사람은 사진 속에 없어요. 또 할머니 뒤에 서 있는 사람은 레나가 아니라 남동생 막스예요(Hinter unserer Oma steht mein Bruder Max). 그래서 틀린 내용이에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "소유관사의 3격",
+   "term": "Possessivartikel im Dativ",
+   "explain": "mein, sein, ihr, unser 같은 소유관사는 3격에서 어미가 붙어요. 남성·중성 명사 앞에서는 -em(mit ihrem Mann), 여성 명사 앞에서는 -er(hinter unserer Oma), 복수 명사 앞에서는 -en이 붙고, 명사 끝에도 보통 -n이 붙어요(mit meinen Kindern). 3격은 mit, von, zu 같은 3격 전치사 뒤에 오고, hinter, neben, in이 위치(Wo?)를 말할 때도 와요.",
+   "pattern": "남성·중성: meinem/ihrem/unserem + 명사 · 여성: meiner/ihrer/unserer + 명사 · 복수: meinen/ihren/unseren + 명사-n",
+   "examples": [
+    {
+     "de": "Hinter unserer Oma steht mein Bruder Max.",
+     "ko": "할머니 뒤에는 남동생 막스가 서 있어요.",
+     "mark": [
+      "unserer"
+     ],
+     "parts": [
+      [
+       "Hinter unserer Oma",
+       "부사어(장소)"
+      ],
+      [
+       "steht",
+       "동사"
+      ],
+      [
+       "mein Bruder Max.",
+       "주어"
+      ]
+     ]
+    },
+    {
+     "de": "Rechts sitzt meine Schwester Paula mit ihrem Mann.",
+     "ko": "오른쪽에는 언니 파울라가 남편과 함께 앉아 있어요.",
+     "mark": [
+      "ihrem"
+     ],
+     "parts": [
+      [
+       "Rechts",
+       "부사어(장소)"
+      ],
+      [
+       "sitzt",
+       "동사"
+      ],
+      [
+       "meine Schwester Paula",
+       "주어"
+      ],
+      [
+       "mit ihrem Mann.",
+       "부사어"
+      ]
+     ]
+    }
+   ],
+   "tip": "unser의 -er는 어미가 아니라 단어의 일부예요. 그래서 3격 여성은 unser에 어미 -er를 붙인 unserer가 돼요. 1격 주어 mein Bruder Max에는 어미가 없지만, 3격 mit ihrem Mann에는 -em이 붙어요."
+  },
+  {
+   "title": "stehen · sitzen – 사진 속 위치 말하기",
+   "term": "Positionsverben stehen und sitzen",
+   "explain": "stehen은 '서 있다', sitzen은 '앉아 있다'라는 뜻이에요. 사진을 설명할 때는 in der Mitte, links, rechts, vorne, hinter …, neben … 같은 장소 표현을 1번 자리에 두는 일이 많아요. 그러면 동사가 2번 자리에 오고 주어는 동사 뒤로 가요. 주어가 복수이면 동사도 복수형이에요(Links neben ihr stehen meine Eltern, Vorne sitzen zwei Hunde …).",
+   "pattern": "장소 표현 + steht/sitzt + 주어(단수) / 장소 표현 + stehen/sitzen + 주어(복수)",
+   "examples": [
+    {
+     "de": "In der Mitte sitzt Oma mit einem Blumenstrauß und einem Luftballon.",
+     "ko": "가운데에는 할머니가 꽃다발과 풍선을 들고 앉아 계세요.",
+     "mark": [
+      "In der Mitte",
+      "sitzt"
+     ],
+     "parts": [
+      [
+       "In der Mitte",
+       "부사어(장소)"
+      ],
+      [
+       "sitzt",
+       "동사"
+      ],
+      [
+       "Oma",
+       "주어"
+      ],
+      [
+       "mit einem Blumenstrauß und einem Luftballon.",
+       "부사어"
+      ]
+     ]
+    },
+    {
+     "de": "Neben Max steht unser Onkel aus Kanada.",
+     "ko": "막스 옆에는 캐나다에서 온 삼촌이 서 계세요.",
+     "mark": [
+      "Neben Max",
+      "steht"
+     ],
+     "parts": [
+      [
+       "Neben Max",
+       "부사어(장소)"
+      ],
+      [
+       "steht",
+       "동사"
+      ],
+      [
+       "unser Onkel aus Kanada.",
+       "주어"
+      ]
+     ]
+    }
+   ],
+   "tip": "누워 있거나 바닥에 놓여 있을 때는 liegen을 써요: Das Baby liegt im Kinderwagen. links, rechts, vorne는 부사라서 모양이 바뀌지 않아요. 위치를 말할 때 hinter, neben, in 뒤의 명사는 3격이에요(hinter unserer Oma, in der Mitte)."
+  },
+  {
+   "title": "nicht …, sondern … – 바로잡아 말하기",
+   "term": "nicht …, sondern …",
+   "explain": "'nicht A, sondern B'는 'A가 아니라 B'라는 뜻이에요. 앞부분에서 nicht나 kein으로 부정하고, 쉼표 뒤 sondern 다음에 맞는 내용을 말해요. aber는 '그렇지만'이라는 뜻이에요. aber는 앞 내용을 고치지 않고, 앞 내용과 다른 점이나 뜻밖의 일을 덧붙여요(Er hat nur zwei Tage frei, aber … ist er natürlich hier).",
+   "pattern": "… nicht A, sondern B. / … A, aber B.",
+   "examples": [
+    {
+     "de": "Seine Kinder sind nicht hier, sondern dort in der Schule.",
+     "ko": "삼촌의 아이들은 여기가 아니라 그곳 학교에 있어요.",
+     "mark": [
+      "nicht hier",
+      "sondern"
+     ],
+     "parts": [
+      [
+       "Seine Kinder",
+       "주어"
+      ],
+      [
+       "sind",
+       "동사"
+      ],
+      [
+       "nicht",
+       "부정어"
+      ],
+      [
+       "hier,",
+       "부사어(장소)"
+      ],
+      [
+       "sondern",
+       "접속사"
+      ],
+      [
+       "dort in der Schule.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Er ist Koch in Wien und hat nur zwei Tage frei, aber zum Geburtstag von Oma ist er natürlich hier.",
+     "ko": "막스는 빈에서 요리사로 일하고 쉬는 날이 이틀뿐이지만, 할머니 생신에는 당연히 여기 와 있어요.",
+     "mark": [
+      "aber"
+     ],
+     "parts": [
+      [
+       "Er",
+       "주어"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "Koch",
+       "보어"
+      ],
+      [
+       "in Wien",
+       "부사어(장소)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "hat",
+       "동사"
+      ],
+      [
+       "nur zwei Tage",
+       "부사어(시간)"
+      ],
+      [
+       "frei,",
+       "동사(끝)"
+      ],
+      [
+       "aber",
+       "접속사"
+      ],
+      [
+       "zum Geburtstag von Oma",
+       "부사어(이유)"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "er",
+       "주어"
+      ],
+      [
+       "natürlich",
+       "부사어(방법)"
+      ],
+      [
+       "hier.",
+       "부사어(장소)"
+      ]
+     ]
+    }
+   ],
+   "tip": "sondern 앞에는 쉼표를 써요. 사람이나 물건에도 쓸 수 있어요: Das ist nicht mein Bruder, sondern mein Onkel. aber와 sondern 뒤에서도 동사는 2번 자리예요(aber zum Geburtstag von Oma ist er …)."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "die Eltern (Pl.)",
+   "ko": "부모님"
+  },
+  {
+   "de": "der Onkel, -",
+   "ko": "삼촌, 외삼촌, 고모부, 이모부"
+  },
+  {
+   "de": "der Koch, -¨e",
+   "ko": "요리사"
+  },
+  {
+   "de": "der Blumenstrauß, -¨e",
+   "ko": "꽃다발"
+  },
+  {
+   "de": "der Luftballon, -s",
+   "ko": "풍선"
+  },
+  {
+   "de": "der Geburtstagskuchen, -",
+   "ko": "생일 케이크"
+  },
+  {
+   "de": "der Kinderwagen, -",
+   "ko": "유모차"
+  },
+  {
+   "de": "sitzen (sitzt, hat gesessen)",
+   "ko": "앉아 있다"
+  },
+  {
+   "de": "stehen (steht, hat gestanden)",
+   "ko": "서 있다"
+  },
+  {
+   "de": "halten (hält, hat gehalten)",
+   "ko": "들고 있다, 잡고 있다"
+  },
+  {
+   "de": "schlafen (schläft, hat geschlafen)",
+   "ko": "자다"
+  },
+  {
+   "de": "mitfeiern (feiert mit)",
+   "ko": "함께 축하하다, 파티에 함께하다"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "in der Mitte",
+   "ko": "가운데에",
+   "ex": "In der Mitte sitzt Oma mit einem Blumenstrauß und einem Luftballon.",
+   "exko": "가운데에는 할머니가 꽃다발과 풍선을 들고 앉아 계세요."
+  },
+  {
+   "de": "freihaben (hat frei)",
+   "ko": "쉬다, 일을 쉬는 날이다",
+   "ex": "Er ist Koch in Wien und hat nur zwei Tage frei, aber zum Geburtstag von Oma ist er natürlich hier.",
+   "exko": "막스는 빈에서 요리사로 일하고 쉬는 날이 이틀뿐이지만, 할머니 생신에는 당연히 여기 와 있어요."
+  },
+  {
+   "de": "ein Foto machen",
+   "ko": "사진을 찍다",
+   "ex": "Ich mache das Familienfoto!",
+   "exko": "제가 가족사진을 찍고 있어요!"
+  }
+ ]
+}

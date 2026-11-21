@@ -1,0 +1,490 @@
+{
+ "id": "a1-10",
+ "level": "A1",
+ "no": 10,
+ "title": "Mein Wochenende",
+ "titleKo": "나의 주말",
+ "type": "Drei Kurztexte (Stadtzeitschrift)",
+ "typeKo": "짧은 글 세 편 (지역 잡지)",
+ "intro": "나이가 다른 세 사람이 각자 주말을 어떻게 보내는지 이야기해요.",
+ "focus": [
+  "모음이 바뀌는 동사",
+  "gern – lieber – am liebsten",
+  "빈도 부사"
+ ],
+ "paragraphs": [
+  {
+   "style": "meta",
+   "de": "Drei Leserinnen und Leser erzählen von ihrem Wochenende.",
+   "ko": "독자 세 분이 자신의 주말 이야기를 들려줘요."
+  },
+  {
+   "label": "A · Jonas, 17",
+   "de": "Am Samstag bleibe ich immer lange im Bett. Nachmittags fahre ich mit meinem Freund Tim Skateboard, aber Tim fährt super, und ich übe noch. Abends lese ich gern Comics, am liebsten Mangas. Mein kleiner Bruder liest lieber Bücher. Hausaufgaben mache ich am Wochenende nie.",
+   "ko": "토요일에는 항상 늦게까지 침대에 있어요. 오후에는 친구 팀과 스케이트보드를 타는데, 팀은 아주 잘 타고 저는 아직 연습 중이에요. 저녁에는 만화책을 즐겨 읽는데, 그중에서도 일본 만화를 제일 좋아해요. 남동생은 책을 더 즐겨 읽어요. 주말에는 숙제를 절대 안 해요."
+  },
+  {
+   "label": "B · Ana Petrović, 45",
+   "de": "Manchmal arbeite ich am Samstag, aber am Sonntag habe ich frei. Morgens laufe ich dann oft im Park, und danach treffe ich meine große Schwester. Sie läuft nie, sie schläft lieber lange. Kuchen esse ich gern, am liebsten Käsekuchen. Meine Schwester isst lieber Apfelkuchen.",
+   "ko": "가끔 토요일에 일하지만, 일요일에는 쉬어요. 그날 아침에는 자주 공원에서 달리고, 그다음에 언니를 만나요. 언니는 절대 달리지 않고, 늦잠 자는 것을 더 좋아해요. 저는 케이크를 즐겨 먹는데, 치즈케이크를 제일 좋아해요. 언니는 사과 케이크를 더 좋아해요."
+  },
+  {
+   "label": "C · Herr Brandt, 70",
+   "de": "Am Samstag spiele ich immer mit drei Freunden Karten, aber ich gewinne fast nie. Am liebsten fahre ich sonntags mit meinem Enkel Leo Rad. Er fährt schnell, ich fahre langsam! Abends sehe ich gern einen Krimi. Meine Frau sieht lieber Komödien.",
+   "ko": "토요일에는 항상 친구 세 명과 카드놀이를 하는데, 거의 이기지 못해요. 제가 제일 좋아하는 것은 일요일마다 손자 레오와 자전거를 타는 거예요. 그 아이는 빠르고 저는 느려요! 저녁에는 추리물을 즐겨 봐요. 아내는 코미디를 더 좋아해요."
+  }
+ ],
+ "questions": [
+  {
+   "type": "mc",
+   "kind": "match",
+   "q": "Wer steht am Samstag spät auf?",
+   "options": [
+    "Jonas",
+    "Ana Petrović",
+    "Herr Brandt"
+   ],
+   "answer": 0,
+   "evidence": "Am Samstag bleibe ich immer lange im Bett.",
+   "pairs": [
+    [
+     "bleibe ich immer lange im Bett",
+     "steht am Samstag spät auf"
+    ]
+   ],
+   "explain": "요나스는 토요일에 항상 늦게까지 침대에 있어요(bleibe ich immer lange im Bett). 그러니까 늦게 일어나는 사람은 요나스예요. 아나의 글에도 schläft lieber lange가 나오지만, 늦잠을 좋아하는 사람은 아나가 아니라 아나의 언니예요."
+  },
+  {
+   "type": "mc",
+   "kind": "match",
+   "q": "Wer hat nicht jedes Wochenende frei?",
+   "options": [
+    "Jonas",
+    "Ana Petrović",
+    "Herr Brandt"
+   ],
+   "answer": 1,
+   "evidence": "Manchmal arbeite ich am Samstag",
+   "pairs": [
+    [
+     "Manchmal arbeite ich am Samstag",
+     "nicht jedes Wochenende frei"
+    ]
+   ],
+   "explain": "아나는 가끔 토요일에 일해요. 그러니까 주말마다 쉬는 것은 아니에요. am Sonntag habe ich frei(일요일은 쉬어요)만 보고 답하면 안 돼요. 요나스와 브란트 씨는 일 이야기를 하지 않아요."
+  },
+  {
+   "type": "mc",
+   "kind": "match",
+   "q": "Wer verliert beim Spielen fast immer?",
+   "options": [
+    "Jonas",
+    "Ana Petrović",
+    "Herr Brandt"
+   ],
+   "answer": 2,
+   "evidence": "aber ich gewinne fast nie",
+   "pairs": [
+    [
+     "gewinne fast nie",
+     "verliert beim Spielen fast immer"
+    ]
+   ],
+   "explain": "브란트 씨는 토요일마다 친구들과 카드놀이를 하는데 거의 이기지 못해요(gewinne fast nie). 거의 이기지 못한다는 말은 거의 항상 진다(verliert fast immer)는 뜻이에요. 요나스는 스케이트보드를 아직 연습한다고만 하고, 이기고 지는 이야기는 하지 않아요."
+  },
+  {
+   "type": "mc",
+   "kind": "match",
+   "q": "Wer macht am Sonntag mit jemandem aus der Familie Sport?",
+   "options": [
+    "Jonas",
+    "Ana Petrović",
+    "Herr Brandt"
+   ],
+   "answer": 2,
+   "evidence": "Am liebsten fahre ich sonntags mit meinem Enkel Leo Rad.",
+   "pairs": [
+    [
+     "sonntags",
+     "am Sonntag"
+    ],
+    [
+     "mit meinem Enkel Leo",
+     "mit jemandem aus der Familie"
+    ]
+   ],
+   "explain": "브란트 씨는 일요일마다 손자 레오와 자전거를 타요. 손자는 가족이고, 자전거 타기는 운동이에요. 아나도 일요일 아침에 달리고 언니를 만나지만, 혼자 달리고 언니는 절대 달리지 않아요(Sie läuft nie). 요나스는 가족이 아니라 친구 팀과 스케이트보드를 타요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Der Bruder von Jonas mag Comics lieber als Bücher.",
+   "answer": 1,
+   "evidence": "Mein kleiner Bruder liest lieber Bücher.",
+   "pairs": [
+    [
+     "liest lieber Bücher",
+     "mag Comics lieber als Bücher"
+    ]
+   ],
+   "explain": "요나스의 남동생은 책을 더 즐겨 읽어요(liest lieber Bücher). 문제는 반대로 만화책을 책보다 더 좋아한다고 했어요. 만화책을 좋아하는 사람은 동생이 아니라 요나스예요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Herr Brandt und Leo fahren nicht gleich schnell.",
+   "answer": 0,
+   "evidence": "Er fährt schnell, ich fahre langsam!",
+   "pairs": [
+    [
+     "Er fährt schnell, ich fahre langsam",
+     "fahren nicht gleich schnell"
+    ]
+   ],
+   "explain": "브란트 씨는 손자는 빠르고 자기는 느리다고 해요(Er fährt schnell, ich fahre langsam). 한 사람은 빠르고 한 사람은 느리니까 두 사람의 속도는 같지 않아요(nicht gleich schnell). 그래서 맞는 문장이에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "모음이 바뀌는 동사 (du, er/sie/es)",
+   "term": "Verben mit Vokalwechsel",
+   "explain": "몇몇 불규칙 동사는 현재형에서 du와 er/sie/es일 때 어간의 모음이 바뀌어요. a → ä (fahren → fährt, schlafen → schläft), au → äu (laufen → läuft), e → i (essen → isst, treffen → trifft), e → ie (lesen → liest, sehen → sieht)예요. ich, wir, ihr, sie(복수)에서는 모음이 바뀌지 않아요. 그래서 본문에서는 er fährt와 ich fahre가 한 문장에 함께 나와요.",
+   "pattern": "ich fahre – du fährst – er/sie/es fährt · ich lese – du liest – er/sie/es liest · wir fahren – ihr fahrt – sie fahren",
+   "examples": [
+    {
+     "de": "Er fährt schnell, ich fahre langsam!",
+     "ko": "그 아이는 빠르고 저는 느려요!",
+     "mark": [
+      "fährt",
+      "fahre"
+     ],
+     "parts": [
+      [
+       "Er",
+       "주어"
+      ],
+      [
+       "fährt",
+       "동사"
+      ],
+      [
+       "schnell,",
+       "부사어(방법)"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "fahre",
+       "동사"
+      ],
+      [
+       "langsam!",
+       "부사어(방법)"
+      ]
+     ]
+    },
+    {
+     "de": "Sie läuft nie, sie schläft lieber lange.",
+     "ko": "언니는 절대 달리지 않고, 늦잠 자는 것을 더 좋아해요.",
+     "mark": [
+      "läuft",
+      "schläft"
+     ],
+     "parts": [
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "läuft",
+       "동사"
+      ],
+      [
+       "nie,",
+       "부사어(빈도)"
+      ],
+      [
+       "sie",
+       "주어"
+      ],
+      [
+       "schläft",
+       "동사"
+      ],
+      [
+       "lieber",
+       "부사어"
+      ],
+      [
+       "lange.",
+       "부사어(시간)"
+      ]
+     ]
+    },
+    {
+     "de": "Meine Schwester isst lieber Apfelkuchen.",
+     "ko": "언니는 사과 케이크를 더 좋아해요.",
+     "mark": [
+      "isst"
+     ]
+    }
+   ],
+   "tip": "essen과 lesen은 어간이 s 소리로 끝나서 du 형태와 er 형태가 같아요: du isst = er isst, du liest = er liest. 이런 동사는 사전에서 3인칭 단수 형태를 함께 외워 두면 좋아요."
+  },
+  {
+   "title": "gern – lieber – am liebsten",
+   "term": "gern – lieber – am liebsten (Steigerung)",
+   "explain": "gern은 동사와 함께 써서 '~하기를 좋아해요'라는 뜻을 나타내는 부사예요(Ich lese gern). 비교급은 lieber(더 좋아해요), 최상급은 am liebsten(제일 좋아해요)이에요. 모양이 완전히 달라지니까 세 개를 한 묶음으로 외워요. 보통 동사와 주어 뒤에 오지만, 강조하려고 am liebsten을 1번 자리에 둘 수도 있어요. 그러면 동사가 바로 뒤에 오고 주어는 그다음에 와요(Am liebsten fahre ich …).",
+   "pattern": "gern (좋아해요) → lieber (더 좋아해요) → am liebsten (제일 좋아해요)",
+   "examples": [
+    {
+     "de": "Abends lese ich gern Comics, am liebsten Mangas.",
+     "ko": "저녁에는 만화책을 즐겨 읽는데, 그중에서도 일본 만화를 제일 좋아해요.",
+     "mark": [
+      "gern",
+      "am liebsten"
+     ],
+     "parts": [
+      [
+       "Abends",
+       "부사어(시간)"
+      ],
+      [
+       "lese",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "gern",
+       "부사어"
+      ],
+      [
+       "Comics,",
+       "4격 목적어"
+      ],
+      [
+       "am liebsten",
+       "부사어"
+      ],
+      [
+       "Mangas.",
+       "4격 목적어"
+      ]
+     ]
+    },
+    {
+     "de": "Am liebsten fahre ich sonntags mit meinem Enkel Leo Rad.",
+     "ko": "제가 제일 좋아하는 것은 일요일마다 손자 레오와 자전거를 타는 거예요.",
+     "mark": [
+      "Am liebsten",
+      "fahre ich"
+     ],
+     "parts": [
+      [
+       "Am liebsten",
+       "부사어"
+      ],
+      [
+       "fahre",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "sonntags",
+       "부사어(빈도)"
+      ],
+      [
+       "mit meinem Enkel Leo",
+       "부사어"
+      ],
+      [
+       "Rad.",
+       "기타"
+      ]
+     ]
+    },
+    {
+     "de": "Meine Frau sieht lieber Komödien.",
+     "ko": "아내는 코미디를 더 좋아해요.",
+     "mark": [
+      "lieber"
+     ]
+    }
+   ],
+   "tip": "Ich esse gern Kuchen은 Ich mag Kuchen과 뜻이 거의 같아요. '~하기'를 좋아한다고 말할 때는 동사 + gern을 써요: Ich lese gern(읽기를 좋아해요). gern 대신 gerne라고 써도 뜻은 같아요."
+  },
+  {
+   "title": "빈도 부사: immer, oft, manchmal, nie",
+   "term": "Häufigkeitsadverbien",
+   "explain": "얼마나 자주 하는지 말하는 부사예요. immer(항상) – oft(자주) – manchmal(가끔) – nie(한 번도 … 않다) 순서로 빈도가 낮아져요. 앞에 fast를 붙이면 정도를 조절할 수 있어요. fast nie는 '거의 … 않아요'라는 뜻이에요. 보통 동사와 주어 뒤에 와요(Am Samstag bleibe ich immer …). 1번 자리에 오면 동사가 2번 자리에 오고 주어는 그 뒤로 가요(Manchmal arbeite ich …). nie는 그 자체가 부정이라서 nicht를 또 쓰지 않아요(Sie läuft nie).",
+   "pattern": "주어 + 동사 + immer / oft / manchmal / nie … · Manchmal + 동사 + 주어 …",
+   "examples": [
+    {
+     "de": "Am Samstag bleibe ich immer lange im Bett.",
+     "ko": "토요일에는 항상 늦게까지 침대에 있어요.",
+     "mark": [
+      "immer"
+     ],
+     "parts": [
+      [
+       "Am Samstag",
+       "부사어(시간)"
+      ],
+      [
+       "bleibe",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "immer",
+       "부사어(빈도)"
+      ],
+      [
+       "lange",
+       "부사어(시간)"
+      ],
+      [
+       "im Bett.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Manchmal arbeite ich am Samstag, aber am Sonntag habe ich frei.",
+     "ko": "가끔 토요일에 일하지만, 일요일에는 쉬어요.",
+     "mark": [
+      "Manchmal"
+     ],
+     "parts": [
+      [
+       "Manchmal",
+       "부사어(빈도)"
+      ],
+      [
+       "arbeite",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "am Samstag,",
+       "부사어(시간)"
+      ],
+      [
+       "aber",
+       "접속사"
+      ],
+      [
+       "am Sonntag",
+       "부사어(시간)"
+      ],
+      [
+       "habe",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "frei.",
+       "기타"
+      ]
+     ]
+    },
+    {
+     "de": "Am Samstag spiele ich immer mit drei Freunden Karten, aber ich gewinne fast nie.",
+     "ko": "토요일에는 항상 친구 세 명과 카드놀이를 하는데, 거의 이기지 못해요.",
+     "mark": [
+      "immer",
+      "fast nie"
+     ]
+    }
+   ],
+   "tip": "-s가 붙은 요일과 하루의 때는 '~마다'라는 뜻이에요. sonntags는 jeden Sonntag(일요일마다), abends는 jeden Abend(저녁마다)와 뜻이 같아요. 그래서 sonntags, abends도 얼마나 자주 하는지 말해 줘요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "fahren (fährt, fuhr, ist gefahren)",
+   "ko": "(스케이트보드·자전거 등을) 타다"
+  },
+  {
+   "de": "üben",
+   "ko": "연습하다"
+  },
+  {
+   "de": "der Comic, -s",
+   "ko": "만화책"
+  },
+  {
+   "de": "lesen (liest, las, hat gelesen)",
+   "ko": "읽다"
+  },
+  {
+   "de": "die Hausaufgabe, -n",
+   "ko": "숙제"
+  },
+  {
+   "de": "laufen (läuft, lief, ist gelaufen)",
+   "ko": "달리다, 조깅하다"
+  },
+  {
+   "de": "treffen (trifft, traf, hat getroffen)",
+   "ko": "만나다"
+  },
+  {
+   "de": "schlafen (schläft, schlief, hat geschlafen)",
+   "ko": "자다 (lange schlafen: 늦잠 자다)"
+  },
+  {
+   "de": "der Enkel, -",
+   "ko": "손자"
+  },
+  {
+   "de": "gewinnen (gewann, hat gewonnen)",
+   "ko": "이기다"
+  },
+  {
+   "de": "der Krimi, -s",
+   "ko": "추리물 (범죄·추리 영화, 드라마, 소설)"
+  },
+  {
+   "de": "die Komödie, -n",
+   "ko": "코미디 (영화·연극)"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "lange im Bett bleiben",
+   "ko": "늦게까지 침대에 있다, 늦잠을 자다",
+   "ex": "Am Samstag bleibe ich immer lange im Bett.",
+   "exko": "토요일에는 항상 늦게까지 침대에 있어요."
+  },
+  {
+   "de": "frei|haben",
+   "ko": "쉬다, 일이 없다",
+   "ex": "Manchmal arbeite ich am Samstag, aber am Sonntag habe ich frei.",
+   "exko": "가끔 토요일에 일하지만, 일요일에는 쉬어요."
+  },
+  {
+   "de": "Rad fahren",
+   "ko": "자전거를 타다",
+   "ex": "Am liebsten fahre ich sonntags mit meinem Enkel Leo Rad.",
+   "exko": "제가 제일 좋아하는 것은 일요일마다 손자 레오와 자전거를 타는 거예요."
+  }
+ ]
+}

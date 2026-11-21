@@ -1,0 +1,470 @@
+{
+ "id": "a1-07",
+ "level": "A1",
+ "no": 7,
+ "title": "Ich werde 30 – kommt ihr?",
+ "titleKo": "저 서른 살이 돼요 – 오실 거죠?",
+ "type": "Einladungs-E-Mail",
+ "typeKo": "초대 이메일",
+ "intro": "노라가 친구들에게 보내는 서른 살 생일 파티 초대 이메일이에요.",
+ "focus": [
+  "인칭대명사 3·4격",
+  "ihr 명령형",
+  "nicht/kein … sondern"
+ ],
+ "paragraphs": [
+  {
+   "style": "meta",
+   "de": "Hallo ihr Lieben,",
+   "ko": "여러분, 안녕하세요!"
+  },
+  {
+   "de": "am Samstag, dem 14. Juni, werde ich 30 – das möchte ich mit euch feiern! Die Geburtstagsparty beginnt um 19 Uhr bei mir zu Hause.",
+   "ko": "6월 14일 토요일에 저는 서른 살이 돼요. 이날을 여러분과 함께 축하하고 싶어요! 생일 파티는 19시에 저희 집에서 시작해요."
+  },
+  {
+   "de": "Ihr kommt am besten mit dem Bus, denn in meiner Straße gibt es keine Parkplätze. Nehmt die Buslinie 12 bis zur Haltestelle „Rosenplatz“, von dort sind es nur fünf Minuten zu Fuß.",
+   "ko": "버스를 타고 오는 게 제일 좋아요. 저희 집이 있는 길에는 주차할 곳이 없거든요. 12번 버스를 타고 ‘로젠플라츠’ 정류장까지 오세요. 거기서 걸어서 5분밖에 안 걸려요."
+  },
+  {
+   "de": "Wir feiern nicht in der Wohnung, sondern im Garten. Abends wird es dort kühl – bringt bitte eine Jacke mit. Eure Kinder sind natürlich auch willkommen, für sie gibt es Gartenspiele und Limonade.",
+   "ko": "파티는 집 안이 아니라 정원에서 해요. 저녁에는 그곳이 쌀쌀해지니까 겉옷을 챙겨 오세요. 여러분의 아이들도 물론 환영이에요. 아이들을 위한 정원 놀이와 레모네이드도 있어요."
+  },
+  {
+   "de": "Bitte bringt keine Geschenke mit, sondern lieber eure Lieblingsmusik oder einen Nudelsalat. Mein Vater kommt extra aus Hamburg und grillt für uns, und nach dem Essen tanzen wir im Garten.",
+   "ko": "선물은 가져오지 마시고, 그 대신 좋아하는 음악이나 파스타 샐러드를 가져오세요. 저희 아버지가 일부러 함부르크에서 오셔서 우리를 위해 바비큐를 해 주실 거예요. 식사 후에는 정원에서 춤을 춰요."
+  },
+  {
+   "de": "Schreibt mir bitte bis Mittwoch: Kommt ihr? Ihr könnt mich auch anrufen.",
+   "ko": "수요일까지 저에게 답장을 주세요. 오실 거예요? 전화하셔도 돼요."
+  },
+  {
+   "style": "meta",
+   "de": "Liebe Grüße",
+   "ko": "안부를 전하며"
+  },
+  {
+   "style": "meta",
+   "de": "Eure Nora",
+   "ko": "노라 드림"
+  }
+ ],
+ "questions": [
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Wann beginnt die Party?",
+   "options": [
+    "am Samstagabend um sieben",
+    "am Mittwochabend um sieben",
+    "am Samstagmittag um zwölf"
+   ],
+   "answer": 0,
+   "evidence": "Die Geburtstagsparty beginnt um 19 Uhr bei mir zu Hause.",
+   "pairs": [
+    [
+     "um 19 Uhr",
+     "um sieben"
+    ],
+    [
+     "am Samstag",
+     "am Samstagabend"
+    ]
+   ],
+   "explain": "파티는 6월 14일 토요일 19시에 시작해요. 19시는 저녁 7시라서 '토요일 저녁 7시'(am Samstagabend um sieben)가 맞아요. 수요일은 답장을 보내야 하는 날이고, 12는 버스 노선 번호예요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Nora wohnt direkt an der Haltestelle „Rosenplatz“.",
+   "answer": 1,
+   "evidence": "von dort sind es nur fünf Minuten zu Fuß",
+   "pairs": [
+    [
+     "von dort sind es nur fünf Minuten zu Fuß",
+     "direkt an der Haltestelle"
+    ]
+   ],
+   "explain": "로젠플라츠 정류장에서 노라의 집까지는 걸어서 5분이 걸려요(von dort sind es nur fünf Minuten zu Fuß). 가깝기는 하지만 노라가 정류장 바로 옆(direkt an der Haltestelle)에 사는 것은 아니에요. Haltestelle와 Rosenplatz는 본문에 나오는 낱말이지만 문장의 뜻은 본문과 달라요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Die Kinder von den Gästen sind auf der Party nicht willkommen.",
+   "answer": 1,
+   "evidence": "Eure Kinder sind natürlich auch willkommen",
+   "pairs": [
+    [
+     "Eure Kinder sind natürlich auch willkommen",
+     "Die Kinder von den Gästen sind auf der Party nicht willkommen"
+    ]
+   ],
+   "explain": "본문에서 노라는 손님들의 아이들도 물론 환영한다고 해요(Eure Kinder sind natürlich auch willkommen). 아이들을 위해 정원 놀이와 레모네이드도 준비해요. 문제는 nicht를 넣어서 본문과 반대로 말했어요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Nora möchte keine Geschenke. Was sollen die Gäste lieber mitbringen?",
+   "options": [
+    "Limonade und Spiele für Kinder",
+    "etwas zum Essen oder Musik",
+    "eine Jacke und ein Geschenk"
+   ],
+   "answer": 1,
+   "evidence": "sondern lieber eure Lieblingsmusik oder einen Nudelsalat",
+   "pairs": [
+    [
+     "einen Nudelsalat",
+     "etwas zum Essen"
+    ],
+    [
+     "Lieblingsmusik",
+     "Musik"
+    ],
+    [
+     "Bitte bringt keine Geschenke mit",
+     "Nora möchte keine Geschenke"
+    ]
+   ],
+   "explain": "노라는 선물 대신 좋아하는 음악이나 파스타 샐러드(Nudelsalat)를 가져오라고 해요. 샐러드를 '먹을 것'(etwas zum Essen)으로 바꿔 말했어요. 놀이와 레모네이드는 노라가 아이들을 위해 준비하는 것이에요. 겉옷은 가져와야 하지만 선물은 가져오면 안 돼요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Wer grillt auf der Party?",
+   "options": [
+    "ein Mann aus Noras Familie",
+    "ein alter Freund aus Hamburg",
+    "Nora und alle ihre Gäste"
+   ],
+   "answer": 0,
+   "evidence": "Mein Vater kommt extra aus Hamburg und grillt für uns",
+   "pairs": [
+    [
+     "Mein Vater",
+     "ein Mann aus Noras Familie"
+    ],
+    [
+     "aus Hamburg",
+     "ein alter Freund aus Hamburg"
+    ]
+   ],
+   "explain": "본문의 '제 아버지'(Mein Vater)는 노라의 아버지예요. 아버지는 노라의 가족이니까 '노라 가족 중 한 남자'(ein Mann aus Noras Familie)가 맞아요. 함부르크에서 오는 사람은 친구가 아니라 아버지예요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Die Freunde können Nora auch am Telefon antworten.",
+   "answer": 0,
+   "evidence": "Ihr könnt mich auch anrufen.",
+   "pairs": [
+    [
+     "anrufen",
+     "am Telefon antworten"
+    ],
+    [
+     "Ihr könnt mich",
+     "Die Freunde können Nora"
+    ]
+   ],
+   "explain": "노라는 수요일까지 답장을 써 달라고 하면서, 전화를 해도 된다고 해요(Ihr könnt mich auch anrufen). 본문의 anrufen(전화하다)을 am Telefon antworten(전화로 대답하다)으로, ihr/mich를 die Freunde/Nora로 바꿔 말했어요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "인칭대명사의 3격과 4격",
+   "term": "Personalpronomen im Dativ und Akkusativ",
+   "explain": "인칭대명사는 문장에서 하는 역할에 따라 모양이 바뀌어요. ich → mich(4격) / mir(3격), du → dich / dir, wir → uns / uns, ihr → euch / euch, sie(복수) → sie / ihnen이에요. 4격은 4격 목적어 자리나 für 같은 4격 전치사 뒤에 써요(anrufen + mich, für uns). 3격은 '~에게'에 해당하는 3격 목적어 자리나 mit, bei 같은 3격 전치사 뒤에 써요(Schreibt mir, mit euch, bei mir).",
+   "pattern": "ich → mich / mir · du → dich / dir · wir → uns / uns · ihr → euch / euch",
+   "examples": [
+    {
+     "de": "Schreibt mir bitte bis Mittwoch: Kommt ihr?",
+     "ko": "수요일까지 저에게 답장을 주세요. 오실 거예요?",
+     "mark": [
+      "mir"
+     ],
+     "parts": [
+      [
+       "Schreibt",
+       "동사"
+      ],
+      [
+       "mir",
+       "3격 목적어"
+      ],
+      [
+       "bitte",
+       "기타"
+      ],
+      [
+       "bis Mittwoch:",
+       "부사어(시간)"
+      ],
+      [
+       "Kommt",
+       "동사"
+      ],
+      [
+       "ihr?",
+       "주어"
+      ]
+     ]
+    },
+    {
+     "de": "Ihr könnt mich auch anrufen.",
+     "ko": "전화하셔도 돼요.",
+     "mark": [
+      "mich"
+     ],
+     "parts": [
+      [
+       "Ihr",
+       "주어"
+      ],
+      [
+       "könnt",
+       "동사"
+      ],
+      [
+       "mich",
+       "4격 목적어"
+      ],
+      [
+       "auch",
+       "부사어"
+      ],
+      [
+       "anrufen.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Mein Vater kommt extra aus Hamburg und grillt für uns, und nach dem Essen tanzen wir im Garten.",
+     "ko": "저희 아버지가 일부러 함부르크에서 오셔서 우리를 위해 바비큐를 해 주실 거예요. 식사 후에는 정원에서 춤을 춰요.",
+     "mark": [
+      "für uns"
+     ]
+    }
+   ],
+   "tip": "uns와 euch는 3격과 4격의 모양이 같아요(mit euch, für euch). mir와 mich는 앞의 전치사나 동사를 보고 골라요: bei mir(3격), für mich(4격), Schreibt mir(schreiben + 3격), Ruft mich an(anrufen + 4격)."
+  },
+  {
+   "title": "ihr에게 쓰는 명령형",
+   "term": "Imperativ (ihr-Form)",
+   "explain": "친한 사람 여러 명에게 부탁하거나 안내할 때 쓰는 명령형이에요. 현재형 ihr 형태(ihr nehmt, ihr bringt, ihr schreibt)에서 ihr만 빼면 돼요. 동사가 1번 자리에 오고 주어 ihr는 쓰지 않아요. 분리동사의 앞부분은 문장 끝으로 가요(bringt … mit). bitte는 동사 바로 뒤에 와도 되고 문장 맨 앞에 와도 돼요(bringt bitte …, Bitte bringt …).",
+   "pattern": "동사(ihr 형태, ihr 생략) + … (+ 분리 전철)",
+   "examples": [
+    {
+     "de": "Abends wird es dort kühl – bringt bitte eine Jacke mit.",
+     "ko": "저녁에는 그곳이 쌀쌀해지니까 겉옷을 챙겨 오세요.",
+     "mark": [
+      "bringt",
+      "mit"
+     ],
+     "parts": [
+      [
+       "Abends",
+       "부사어(시간)"
+      ],
+      [
+       "wird",
+       "동사"
+      ],
+      [
+       "es",
+       "주어"
+      ],
+      [
+       "dort",
+       "부사어(장소)"
+      ],
+      [
+       "kühl",
+       "보어"
+      ],
+      [
+       "–",
+       "기타"
+      ],
+      [
+       "bringt",
+       "동사"
+      ],
+      [
+       "bitte",
+       "기타"
+      ],
+      [
+       "eine Jacke",
+       "4격 목적어"
+      ],
+      [
+       "mit.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Nehmt die Buslinie 12 bis zur Haltestelle „Rosenplatz“, von dort sind es nur fünf Minuten zu Fuß.",
+     "ko": "12번 버스를 타고 ‘로젠플라츠’ 정류장까지 오세요. 거기서 걸어서 5분밖에 안 걸려요.",
+     "mark": [
+      "Nehmt"
+     ]
+    }
+   ],
+   "tip": "Kommt ihr?(의문문)와 Kommt!(명령형)는 ihr가 있고 없고로 구별해요. 같은 내용을 du에게는 Bring … mit!, Sie에게는 Bringen Sie … mit!이라고 해요."
+  },
+  {
+   "title": "nicht · kein …, sondern …",
+   "term": "Negation mit sondern",
+   "explain": "앞에서 부정한 내용을 바로잡을 때 sondern('…이 아니라 ~')을 써요. 앞부분에는 nicht나 kein이 있어요. 부정관사가 붙거나 관사 없이 쓰는 명사는 kein으로 부정하고(keine Geschenke), 다른 말은 nicht로 부정해요(nicht in der Wohnung). sondern 뒤에는 바른 내용이 오고, 앞과 같은 동사는 보통 다시 쓰지 않아요(sondern im Garten = wir feiern im Garten).",
+   "pattern": "nicht / kein … , sondern + 바른 내용",
+   "examples": [
+    {
+     "de": "Wir feiern nicht in der Wohnung, sondern im Garten.",
+     "ko": "파티는 집 안이 아니라 정원에서 해요.",
+     "mark": [
+      "nicht",
+      "sondern"
+     ],
+     "parts": [
+      [
+       "Wir",
+       "주어"
+      ],
+      [
+       "feiern",
+       "동사"
+      ],
+      [
+       "nicht",
+       "부정어"
+      ],
+      [
+       "in der Wohnung,",
+       "부사어(장소)"
+      ],
+      [
+       "sondern",
+       "접속사"
+      ],
+      [
+       "im Garten.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Bitte bringt keine Geschenke mit, sondern lieber eure Lieblingsmusik oder einen Nudelsalat.",
+     "ko": "선물은 가져오지 마시고, 그 대신 좋아하는 음악이나 파스타 샐러드를 가져오세요.",
+     "mark": [
+      "keine Geschenke",
+      "sondern"
+     ],
+     "parts": [
+      [
+       "Bitte",
+       "기타"
+      ],
+      [
+       "bringt",
+       "동사"
+      ],
+      [
+       "keine Geschenke",
+       "4격 목적어"
+      ],
+      [
+       "mit,",
+       "동사(끝)"
+      ],
+      [
+       "sondern",
+       "접속사"
+      ],
+      [
+       "lieber",
+       "부사어"
+      ],
+      [
+       "eure Lieblingsmusik oder einen Nudelsalat.",
+       "4격 목적어"
+      ]
+     ]
+    }
+   ],
+   "tip": "앞의 부정을 바로잡는 이 뜻으로는 aber를 쓰지 않아요. Wir feiern nicht in der Wohnung, aber im Garten은 틀린 문장이에요. sondern 앞에는 쉼표를 찍어요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "werden (wird, wurde, ist geworden)",
+   "ko": "되다, ~해지다 (30 werden: 서른 살이 되다)"
+  },
+  {
+   "de": "feiern",
+   "ko": "축하하다, 파티를 하다"
+  },
+  {
+   "de": "die Geburtstagsparty, -s",
+   "ko": "생일 파티"
+  },
+  {
+   "de": "der Parkplatz, -¨e",
+   "ko": "주차할 곳, 주차장"
+  },
+  {
+   "de": "die Haltestelle, -n",
+   "ko": "(버스·전차) 정류장"
+  },
+  {
+   "de": "die Buslinie, -n",
+   "ko": "버스 노선, ~번 버스"
+  },
+  {
+   "de": "kühl",
+   "ko": "서늘한, 쌀쌀한"
+  },
+  {
+   "de": "willkommen",
+   "ko": "환영받는 (willkommen sein: 환영이다)"
+  },
+  {
+   "de": "das Geschenk, -e",
+   "ko": "선물"
+  },
+  {
+   "de": "die Lieblingsmusik (Sg.)",
+   "ko": "가장 좋아하는 음악"
+  },
+  {
+   "de": "grillen",
+   "ko": "(고기 등을) 그릴에 굽다, 바비큐를 하다"
+  },
+  {
+   "de": "an|rufen + Akk. (ruft an, rief an, hat angerufen)",
+   "ko": "~에게 전화하다"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "am besten",
+   "ko": "~하는 게 제일 좋다",
+   "ex": "Ihr kommt am besten mit dem Bus, denn in meiner Straße gibt es keine Parkplätze.",
+   "exko": "저희 집이 있는 길에는 주차할 곳이 없으니까 버스를 타고 오는 게 제일 좋아요."
+  },
+  {
+   "de": "zu Fuß",
+   "ko": "걸어서, 도보로",
+   "ex": "Nehmt die Buslinie 12 bis zur Haltestelle „Rosenplatz“, von dort sind es nur fünf Minuten zu Fuß.",
+   "exko": "12번 버스를 타고 ‘로젠플라츠’ 정류장까지 오세요. 거기서 걸어서 5분밖에 안 걸려요."
+  },
+  {
+   "de": "bei mir zu Hause",
+   "ko": "우리 집에서, 내 집에서",
+   "ex": "Die Geburtstagsparty beginnt um 19 Uhr bei mir zu Hause.",
+   "exko": "생일 파티는 19시에 저희 집에서 시작해요."
+  }
+ ]
+}

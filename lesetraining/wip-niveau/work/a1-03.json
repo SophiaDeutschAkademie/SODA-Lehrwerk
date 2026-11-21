@@ -1,0 +1,473 @@
+{
+ "id": "a1-03",
+ "level": "A1",
+ "no": 3,
+ "title": "Kino oder Freibad?",
+ "titleKo": "영화관 아니면 야외 수영장?",
+ "type": "Gruppenchat",
+ "typeKo": "단체 채팅",
+ "intro": "톰, 아일린, 벤이 단체 채팅으로 토요일 계획을 세우는 대화예요.",
+ "focus": [
+  "현재형으로 미래 말하기",
+  "doch로 대답하기",
+  "in + 4격"
+ ],
+ "paragraphs": [
+  {
+   "label": "Tom · 09:02",
+   "de": "Hallo zusammen, was machen wir am Samstag? Ich will endlich wieder schwimmen gehen – kommt ihr nicht mit ins Freibad?",
+   "ko": "다들 안녕하세요, 토요일에 우리 뭐 할까요? 저는 드디어 다시 수영하러 가고 싶어요. 야외 수영장에 같이 안 갈래요?"
+  },
+  {
+   "label": "Aylin · 09:05",
+   "de": "Doch, aber am Samstag muss ich vormittags arbeiten. Ab 13 Uhr habe ich Zeit.",
+   "ko": "아니요, 갈래요. 그런데 토요일 오전에는 일해야 해요. 오후 1시부터는 시간이 있어요."
+  },
+  {
+   "label": "Ben · 09:12",
+   "de": "Ins Freibad? Ich möchte lieber ins Kino, denn am Samstag regnet es den ganzen Tag.",
+   "ko": "야외 수영장이요? 저는 영화관에 가는 게 더 좋아요. 토요일에는 하루 종일 비가 오거든요."
+  },
+  {
+   "label": "Tom · 09:14",
+   "de": "Schade, aber Kino ist natürlich auch gut – wann beginnt der Film?",
+   "ko": "아쉽네요. 그래도 영화관도 물론 좋아요. 영화는 언제 시작해요?"
+  },
+  {
+   "label": "Ben · 09:15",
+   "de": "Um halb sechs und um Viertel nach acht.",
+   "ko": "5시 반하고 8시 15분이요."
+  },
+  {
+   "label": "Aylin · 09:16",
+   "de": "Halb sechs ist gut, dann können wir vorher noch zusammen Pizza essen, denn nach der Arbeit habe ich immer Hunger!",
+   "ko": "5시 반이 좋아요. 그러면 그 전에 같이 피자를 먹을 수 있어요. 저는 일이 끝나면 늘 배가 고프거든요!"
+  },
+  {
+   "label": "Tom · 09:18",
+   "de": "Super, aber in welcher Pizzeria?",
+   "ko": "좋아요. 그런데 어느 피자 가게에서요?"
+  },
+  {
+   "label": "Ben · 09:20",
+   "de": "Bei „Pizza Roma“ neben dem Kino, um Viertel nach vier? Dann haben wir genug Zeit.",
+   "ko": "영화관 옆에 있는 '피자 로마'에서요. 4시 15분 어때요? 그러면 시간이 충분해요."
+  },
+  {
+   "label": "Aylin · 09:21",
+   "de": "Perfekt, aber wer kauft die Kinokarten?",
+   "ko": "완벽해요. 그런데 영화표는 누가 사요?"
+  },
+  {
+   "label": "Ben · 09:22",
+   "de": "Das mache ich online, und das Geld gebt ihr mir dann am Samstag.",
+   "ko": "그건 제가 온라인으로 할게요. 돈은 토요일에 저한테 주세요."
+  },
+  {
+   "label": "Tom · 09:23",
+   "de": "Danke, Ben, und ich bringe Schokolade für alle mit!",
+   "ko": "고마워요, 벤! 그리고 저는 모두에게 줄 초콜릿을 가져갈게요!"
+  },
+  {
+   "label": "Aylin · 09:24",
+   "de": "Okay, dann bis Samstag!",
+   "ko": "좋아요, 그럼 토요일에 봐요!"
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "gist",
+   "q": "Im Chat planen die drei Freunde zusammen den Samstag.",
+   "answer": 0,
+   "evidence": "Hallo zusammen, was machen wir am Samstag?",
+   "pairs": [
+    [
+     "was machen wir am Samstag?",
+     "planen die drei Freunde zusammen den Samstag"
+    ]
+   ],
+   "explain": "톰이 처음에 'Hallo zusammen, was machen wir am Samstag?(다들 안녕하세요, 토요일에 우리 뭐 할까요?)'라고 물어요. 그다음 세 사람은 무엇을 할지, 몇 시에 어디서 만날지, 표는 누가 살지 함께 정해요. 채팅 전체가 토요일 계획을 세우는 내용이니까 맞는 내용이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Warum möchte Ben nicht ins Freibad?",
+   "options": [
+    "Er muss am Samstag vormittags arbeiten.",
+    "Er hat am Samstag erst ab eins Zeit.",
+    "Er möchte bei Regen nicht ins Wasser."
+   ],
+   "answer": 2,
+   "evidence": "Ich möchte lieber ins Kino, denn am Samstag regnet es den ganzen Tag.",
+   "pairs": [
+    [
+     "am Samstag regnet es den ganzen Tag",
+     "bei Regen"
+    ],
+    [
+     "Ich möchte lieber ins Kino",
+     "möchte bei Regen nicht ins Wasser"
+    ]
+   ],
+   "explain": "벤은 'Ich möchte lieber ins Kino, denn am Samstag regnet es den ganzen Tag.(저는 영화관에 가는 게 더 좋아요. 토요일에는 하루 종일 비가 오거든요.)'라고 해요. 비가 오는 날에는 야외 수영장 물에 들어가고 싶지 않은 거예요. 'regnet es'를 'bei Regen(비가 올 때)'으로, 수영하는 것을 'ins Wasser(물에 들어가다)'로 바꿔 말했어요. 오전에 일하는 사람과 1시(eins)부터 시간이 있는 사람은 벤이 아니라 아일린이에요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Der Film beginnt um halb neun.",
+   "answer": 1,
+   "evidence": "Um halb sechs und um Viertel nach acht.",
+   "pairs": [
+    [
+     "Um halb sechs und um Viertel nach acht",
+     "um halb neun"
+    ]
+   ],
+   "explain": "벤은 영화가 'Um halb sechs und um Viertel nach acht(5시 반과 8시 15분)'에 시작한다고 해요. halb neun은 8시 반이라서 두 시간 모두와 맞지 않아요. halb sechs의 halb와 Viertel nach acht의 8시를 섞은 함정이에요. 그래서 틀린 내용이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Wie viel Zeit haben die drei vor dem Film für die Pizza?",
+   "options": [
+    "etwas mehr als zwei Stunden",
+    "etwas mehr als eine Stunde",
+    "mehr als vier Stunden"
+   ],
+   "answer": 1,
+   "evidence": "Bei „Pizza Roma“ neben dem Kino, um Viertel nach vier?",
+   "pairs": [
+    [
+     "um Viertel nach vier",
+     "etwas mehr als eine Stunde"
+    ],
+    [
+     "Halb sechs ist gut",
+     "vor dem Film"
+    ]
+   ],
+   "explain": "세 사람은 'um Viertel nach vier(4시 15분)'에 피자 가게에서 만나고, 영화는 'Halb sechs ist gut'이라고 정한 5시 반에 봐요. 4시 15분부터 5시 반까지는 1시간 15분, 곧 한 시간 조금 넘는 시간이에요. halb sechs를 6시 반으로 잘못 읽으면 두 시간이 넘고, 아일린이 시간이 나는 13시부터 세면 네 시간이 넘어요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Wer bezahlt die Kinokarten?",
+   "options": [
+    "Ben bezahlt die Kinokarten allein.",
+    "Tom bezahlt sie und Ben die Pizza.",
+    "Am Ende bezahlt jeder seine Karte."
+   ],
+   "answer": 2,
+   "evidence": "Das mache ich online, und das Geld gebt ihr mir dann am Samstag.",
+   "pairs": [
+    [
+     "das Geld gebt ihr mir dann am Samstag",
+     "Am Ende bezahlt jeder seine Karte"
+    ]
+   ],
+   "explain": "벤은 'Das mache ich online, und das Geld gebt ihr mir dann am Samstag.(그건 제가 온라인으로 할게요. 돈은 토요일에 저한테 주세요.)'라고 해요. 벤이 표를 먼저 사지만 친구들이 토요일에 돈을 주니까, 결국 각자 자기 표 값을 내요. 벤이 혼자 내는 것이 아니에요. 피자 값을 누가 내는지는 본문에 나오지 않아요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Tom bringt für alle Pizza mit.",
+   "answer": 1,
+   "evidence": "Danke, Ben, und ich bringe Schokolade für alle mit!",
+   "pairs": [
+    [
+     "ich bringe Schokolade für alle mit",
+     "Tom bringt für alle Pizza mit"
+    ]
+   ],
+   "explain": "톰은 'Danke, Ben, und ich bringe Schokolade für alle mit!(고마워요, 벤! 그리고 저는 모두에게 줄 초콜릿을 가져갈게요!)'라고 해요. 톰이 가져가는 것은 피자가 아니라 초콜릿이에요. 피자는 '피자 로마'에서 같이 먹어요. 그래서 틀린 내용이에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "현재형으로 앞으로의 계획 말하기",
+   "term": "Präsens für die Zukunft",
+   "explain": "독일어에서는 앞으로 할 일도 현재형으로 많이 말해요. 이때 am Samstag, dann, um halb sechs 같은 시간 표현이 미래의 일이라는 것을 알려 줘요. 'Das Geld gebt ihr mir dann am Samstag.'는 지금 돈을 준다는 뜻이 아니라 토요일에 줄 거라는 뜻이에요. 'Ich bringe Schokolade für alle mit.'도 토요일에 가져가겠다는 약속이에요.",
+   "pattern": "시간 표현 + 현재형 동사 (… gebt ihr mir dann am Samstag)",
+   "examples": [
+    {
+     "de": "Das mache ich online, und das Geld gebt ihr mir dann am Samstag.",
+     "ko": "그건 제가 온라인으로 할게요. 돈은 토요일에 저한테 주세요.",
+     "mark": [
+      "gebt",
+      "am Samstag"
+     ],
+     "parts": [
+      [
+       "Das",
+       "4격 목적어"
+      ],
+      [
+       "mache",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "online,",
+       "부사어(방법)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "das Geld",
+       "4격 목적어"
+      ],
+      [
+       "gebt",
+       "동사"
+      ],
+      [
+       "ihr",
+       "주어"
+      ],
+      [
+       "mir",
+       "3격 목적어"
+      ],
+      [
+       "dann",
+       "부사어(시간)"
+      ],
+      [
+       "am Samstag.",
+       "부사어(시간)"
+      ]
+     ]
+    },
+    {
+     "de": "Danke, Ben, und ich bringe Schokolade für alle mit!",
+     "ko": "고마워요, 벤! 그리고 저는 모두에게 줄 초콜릿을 가져갈게요!",
+     "mark": [
+      "bringe",
+      "mit"
+     ],
+     "parts": [
+      [
+       "Danke, Ben,",
+       "기타"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "bringe",
+       "동사"
+      ],
+      [
+       "Schokolade",
+       "4격 목적어"
+      ],
+      [
+       "für alle",
+       "부사어"
+      ],
+      [
+       "mit!",
+       "동사(끝)"
+      ]
+     ]
+    }
+   ],
+   "tip": "미래를 말하는 werden + 동사원형도 있지만, 가까운 계획이나 약속은 현재형과 시간 표현으로 말하는 것이 더 자연스러워요. 'Was machen wir am Samstag?'처럼 질문도 현재형으로 해요."
+  },
+  {
+   "title": "doch – 부정 의문문에 긍정으로 대답하기",
+   "term": "Antwort mit doch",
+   "explain": "nicht나 kein이 들어간 질문을 부정 의문문이라고 해요. 부정 의문문에 '아니요, …해요'라고 긍정으로 대답할 때는 ja가 아니라 doch를 써요. 톰이 'kommt ihr nicht mit ins Freibad?(같이 안 갈래요?)'라고 묻자 아일린은 'Doch'라고 대답해요. '아니요, 같이 갈래요'라는 뜻이에요. 질문처럼 정말 안 간다면 nein을 써요(Nein, ich komme nicht mit).",
+   "pattern": "부정 의문문? → Doch, … (긍정) / Nein, … nicht … (부정)",
+   "examples": [
+    {
+     "de": "Ich will endlich wieder schwimmen gehen – kommt ihr nicht mit ins Freibad?",
+     "ko": "저는 드디어 다시 수영하러 가고 싶어요. 야외 수영장에 같이 안 갈래요?",
+     "mark": [
+      "kommt ihr nicht mit"
+     ]
+    },
+    {
+     "de": "Doch, aber am Samstag muss ich vormittags arbeiten.",
+     "ko": "아니요, 갈래요. 그런데 토요일 오전에는 일해야 해요.",
+     "mark": [
+      "Doch"
+     ],
+     "parts": [
+      [
+       "Doch,",
+       "기타"
+      ],
+      [
+       "aber",
+       "접속사"
+      ],
+      [
+       "am Samstag",
+       "부사어(시간)"
+      ],
+      [
+       "muss",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "vormittags",
+       "부사어(시간)"
+      ],
+      [
+       "arbeiten.",
+       "동사(끝)"
+      ]
+     ]
+    }
+   ],
+   "tip": "긍정 의문문(Kommt ihr mit?)에는 ja나 nein으로 대답해요. doch는 부정 의문문이나 부정하는 말에 반대할 때 써요. 한국어의 '아니요, 가요'와 비슷해요."
+  },
+  {
+   "title": "in + 4격 – 어디로 가는지 말하기",
+   "term": "Wohin? in + Akkusativ",
+   "explain": "가는 방향(Wohin?)을 말할 때 in 뒤에는 4격이 와요. 중성 명사 das Kino, das Freibad 앞에서는 in das를 줄여서 ins라고 해요(ins Kino, ins Freibad). 여성 명사는 in die(in die Stadt), 남성 명사는 in den(in den Park)이에요. 이미 그곳에 있을 때(Wo?)는 in 뒤에 3격을 써요(im Kino = in dem Kino).",
+   "pattern": "Wohin? ins Kino · ins Freibad · in die Stadt · in den Park / Wo? im Kino · in der Stadt",
+   "examples": [
+    {
+     "de": "Ich möchte lieber ins Kino, denn am Samstag regnet es den ganzen Tag.",
+     "ko": "저는 영화관에 가는 게 더 좋아요. 토요일에는 하루 종일 비가 오거든요.",
+     "mark": [
+      "ins Kino"
+     ],
+     "parts": [
+      [
+       "Ich",
+       "주어"
+      ],
+      [
+       "möchte",
+       "동사"
+      ],
+      [
+       "lieber",
+       "부사어(방법)"
+      ],
+      [
+       "ins Kino,",
+       "부사어(장소)"
+      ],
+      [
+       "denn",
+       "접속사"
+      ],
+      [
+       "am Samstag",
+       "부사어(시간)"
+      ],
+      [
+       "regnet",
+       "동사"
+      ],
+      [
+       "es",
+       "주어"
+      ],
+      [
+       "den ganzen Tag.",
+       "부사어(시간)"
+      ]
+     ]
+    },
+    {
+     "de": "Ins Freibad?",
+     "ko": "야외 수영장이요?",
+     "mark": [
+      "Ins Freibad"
+     ]
+    }
+   ],
+   "tip": "가는 곳이 분명하면 gehen 없이 말하기도 해요: Ich möchte lieber ins Kino (gehen). mitkommen과 함께 쓸 때는 방향을 문장 끝에 붙이는 일이 많아요: Kommt ihr mit ins Freibad?"
+  }
+ ],
+ "vocab": [
+  {
+   "de": "das Freibad, -¨er",
+   "ko": "야외 수영장"
+  },
+  {
+   "de": "schwimmen (ist/hat geschwommen)",
+   "ko": "수영하다"
+  },
+  {
+   "de": "vormittags",
+   "ko": "오전에"
+  },
+  {
+   "de": "regnen (es regnet)",
+   "ko": "비가 오다"
+  },
+  {
+   "de": "lieber",
+   "ko": "차라리, 더 (gern의 비교급)"
+  },
+  {
+   "de": "beginnen (beginnt, hat begonnen)",
+   "ko": "시작하다"
+  },
+  {
+   "de": "vorher",
+   "ko": "그 전에, 먼저"
+  },
+  {
+   "de": "die Pizzeria, -s",
+   "ko": "피자 가게"
+  },
+  {
+   "de": "die Kinokarte, -n",
+   "ko": "영화표"
+  },
+  {
+   "de": "online",
+   "ko": "온라인으로, 인터넷으로"
+  },
+  {
+   "de": "das Geld (Sg.)",
+   "ko": "돈"
+  },
+  {
+   "de": "mitbringen (bringt mit, hat mitgebracht)",
+   "ko": "가져오다, 가져가다"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "schwimmen gehen",
+   "ko": "수영하러 가다",
+   "ex": "Ich will endlich wieder schwimmen gehen – kommt ihr nicht mit ins Freibad?",
+   "exko": "저는 드디어 다시 수영하러 가고 싶어요. 야외 수영장에 같이 안 갈래요?"
+  },
+  {
+   "de": "Hunger haben",
+   "ko": "배가 고프다",
+   "ex": "Halb sechs ist gut, dann können wir vorher noch zusammen Pizza essen, denn nach der Arbeit habe ich immer Hunger!",
+   "exko": "5시 반이 좋아요. 그러면 그 전에 같이 피자를 먹을 수 있어요. 저는 일이 끝나면 늘 배가 고프거든요!"
+  },
+  {
+   "de": "genug Zeit haben",
+   "ko": "시간이 충분하다",
+   "ex": "Dann haben wir genug Zeit.",
+   "exko": "그러면 시간이 충분해요."
+  }
+ ]
+}

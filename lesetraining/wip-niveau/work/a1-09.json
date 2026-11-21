@@ -1,0 +1,487 @@
+{
+ "id": "a1-09",
+ "level": "A1",
+ "no": 9,
+ "title": "Viele Grüße von Rügen!",
+ "titleKo": "뤼겐섬에서 안부를 전해요!",
+ "type": "Postkarte",
+ "typeKo": "엽서",
+ "intro": "뤼겐섬으로 휴가를 간 가족이 친구에게 보내는 엽서예요.",
+ "focus": [
+  "현재완료",
+  "war · hatte",
+  "denn과 dann"
+ ],
+ "paragraphs": [
+  {
+   "style": "meta",
+   "de": "Liebe Karin,",
+   "ko": "카린에게"
+  },
+  {
+   "de": "viele Grüße von Rügen! Wir wohnen seit Montag in einer Ferienwohnung direkt am Strand. Die Fahrt war lang, aber die Kinder hatten gute Laune, denn im Zug haben sie Eis bekommen.",
+   "ko": "뤼겐섬에서 안부를 전해요! 우리는 월요일부터 해변 바로 앞에 있는 휴가용 숙소에서 지내고 있어요. 오는 길은 길었지만 아이들은 기분이 좋았어요. 기차에서 아이스크림을 받았거든요."
+  },
+  {
+   "de": "Am Dienstag haben wir eine Radtour an die Kreideküste gemacht. Die Felsen dort sind wirklich schneeweiß! Danach haben wir am Hafen Fischbrötchen gegessen.",
+   "ko": "화요일에는 백악 해안으로 자전거 여행을 했어요. 그곳 절벽은 정말 새하얘요! 그다음에 항구에서 생선 샌드위치(피슈브뢰트헨)를 먹었어요."
+  },
+  {
+   "de": "Gestern hatten wir Pech: Es hat den ganzen Tag geregnet, und wir hatten keinen Regenschirm dabei. Wir waren alle nass, dann sind wir ins Museum gegangen, denn dort war es trocken.",
+   "ko": "어제는 운이 없었어요. 하루 종일 비가 왔는데 우리는 우산을 가지고 있지 않았어요. 우리는 모두 젖었고, 그다음에 박물관에 갔어요. 거기는 비를 맞지 않았거든요."
+  },
+  {
+   "de": "Heute scheint die Sonne wieder, und wir sind alle am Strand. Die Kinder baden im Meer, Paul liest oder schläft, und ich sitze im Strandkorb und schreibe dir diese Karte.",
+   "ko": "오늘은 다시 해가 나서 우리 모두 해변에 있어요. 아이들은 바다에서 물놀이를 하고, 파울은 책을 읽거나 자요. 저는 바닷가 의자에 앉아서 이 엽서를 쓰고 있어요."
+  },
+  {
+   "de": "Am Samstag fahren wir zurück, und dann erzähle ich dir mehr.",
+   "ko": "토요일에 돌아가요. 그때 더 이야기해 줄게요."
+  },
+  {
+   "style": "meta",
+   "de": "Liebe Grüße, auch von Paul und den Kindern",
+   "ko": "파울과 아이들도 안부를 전해요"
+  },
+  {
+   "style": "meta",
+   "de": "deine Jutta",
+   "ko": "유타 드림"
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Die Familie ist mit dem Auto nach Rügen gefahren.",
+   "answer": 1,
+   "evidence": "denn im Zug haben sie Eis bekommen",
+   "pairs": [
+    [
+     "im Zug",
+     "mit dem Auto"
+    ]
+   ],
+   "explain": "아이들이 기차에서 아이스크림을 받았다고 해요(im Zug haben sie Eis bekommen). 그러니까 가족은 자동차가 아니라 기차를 타고 왔어요. 본문에 Fahrt와 fahren이 나오지만 자동차 이야기는 없어요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was hat die Familie am Dienstag gemacht?",
+   "options": [
+    "Sie hat eine lange Zugfahrt gemacht.",
+    "Sie hat am Strand im Meer gebadet.",
+    "Sie war mit dem Fahrrad unterwegs."
+   ],
+   "answer": 2,
+   "evidence": "Am Dienstag haben wir eine Radtour an die Kreideküste gemacht.",
+   "pairs": [
+    [
+     "eine Radtour",
+     "mit dem Fahrrad unterwegs"
+    ]
+   ],
+   "explain": "화요일에 가족은 자전거 여행(Radtour)을 했어요. 이것을 '자전거를 타고 다녔다'(mit dem Fahrrad unterwegs)로 바꿔 말했어요. 기차는 뤼겐섬에 올 때 탔고, 바다에서 물놀이는 오늘 아이들이 하는 일이에요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Nach der Radtour hat die Familie etwas gegessen.",
+   "answer": 0,
+   "evidence": "Danach haben wir am Hafen Fischbrötchen gegessen.",
+   "pairs": [
+    [
+     "Danach",
+     "Nach der Radtour"
+    ],
+    [
+     "Fischbrötchen",
+     "etwas"
+    ]
+   ],
+   "explain": "자전거 여행 다음에(Danach) 가족은 항구에서 생선 샌드위치(Fischbrötchen)를 먹었어요. 문제에서는 Danach를 '자전거 여행 뒤에'(Nach der Radtour)로, Fischbrötchen을 '무언가'(etwas)로 바꿔 말했어요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Warum war die Familie gestern nass?",
+   "options": [
+    "Die Kinder haben im Meer gebadet.",
+    "Im Museum war es kalt und nass.",
+    "Sie war bei Regen ohne Schirm."
+   ],
+   "answer": 2,
+   "evidence": "Es hat den ganzen Tag geregnet, und wir hatten keinen Regenschirm dabei.",
+   "pairs": [
+    [
+     "geregnet",
+     "bei Regen"
+    ],
+    [
+     "hatten keinen Regenschirm dabei",
+     "ohne Schirm"
+    ]
+   ],
+   "explain": "어제는 하루 종일 비가 왔는데 우산이 없었어요. '비가 왔다'(geregnet)를 '비가 올 때'(bei Regen)로, '우산을 가지고 있지 않았다'(keinen Regenschirm dabei)를 '우산 없이'(ohne Schirm)로 바꿔 말했어요. 바다 물놀이는 오늘 하는 일이고, 박물관 안은 젖지 않는 곳이었어요(dort war es trocken)."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Wie ist das Wetter heute?",
+   "options": [
+    "Es regnet wieder den ganzen Tag.",
+    "Es ist ein schöner, sonniger Tag.",
+    "Es ist trocken, aber nicht sonnig."
+   ],
+   "answer": 1,
+   "evidence": "Heute scheint die Sonne wieder",
+   "pairs": [
+    [
+     "scheint die Sonne",
+     "sonniger Tag"
+    ],
+    [
+     "scheint die Sonne wieder",
+     "nicht sonnig"
+    ]
+   ],
+   "explain": "오늘은 다시 해가 나요(Heute scheint die Sonne wieder). 그래서 가족이 모두 해변에 있어요. 하루 종일 비가 온 것은 어제의 날씨예요. trocken은 본문에서 어제 박물관을 말할 때 나온 낱말이고, '해가 나지 않는다'(nicht sonnig)는 본문과 반대예요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Die Familie fährt am Wochenende wieder nach Hause.",
+   "answer": 0,
+   "evidence": "Am Samstag fahren wir zurück",
+   "pairs": [
+    [
+     "Am Samstag",
+     "am Wochenende"
+    ],
+    [
+     "fahren wir zurück",
+     "wieder nach Hause"
+    ]
+   ],
+   "explain": "가족은 토요일에 돌아가요(Am Samstag fahren wir zurück). 토요일은 주말이고, 휴가지에서 돌아간다는 것은 집으로 간다는 뜻이에요. 그래서 맞는 문장이에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "현재완료: haben/sein + 과거분사",
+   "term": "Perfekt mit haben und sein",
+   "explain": "지난 일을 말할 때 회화와 편지에서는 현재완료를 많이 써요. haben이나 sein을 2번 자리에 두고, 과거분사는 문장 끝에 와요(틀 구조). 대부분의 동사는 haben과 함께 써요(haben … gemacht, gegessen, geregnet). 장소를 옮기는 동사(gehen, fahren, kommen)는 sein과 함께 써요(sind … gegangen).",
+   "pattern": "haben / sein (2번 자리) + … + 과거분사(문장 끝)",
+   "examples": [
+    {
+     "de": "Am Dienstag haben wir eine Radtour an die Kreideküste gemacht.",
+     "ko": "화요일에는 백악 해안으로 자전거 여행을 했어요.",
+     "mark": [
+      "haben",
+      "gemacht"
+     ],
+     "parts": [
+      [
+       "Am Dienstag",
+       "부사어(시간)"
+      ],
+      [
+       "haben",
+       "동사"
+      ],
+      [
+       "wir",
+       "주어"
+      ],
+      [
+       "eine Radtour",
+       "4격 목적어"
+      ],
+      [
+       "an die Kreideküste",
+       "부사어(장소)"
+      ],
+      [
+       "gemacht.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Danach haben wir am Hafen Fischbrötchen gegessen.",
+     "ko": "그다음에 항구에서 생선 샌드위치(피슈브뢰트헨)를 먹었어요.",
+     "mark": [
+      "haben",
+      "gegessen"
+     ],
+     "parts": [
+      [
+       "Danach",
+       "부사어(시간)"
+      ],
+      [
+       "haben",
+       "동사"
+      ],
+      [
+       "wir",
+       "주어"
+      ],
+      [
+       "am Hafen",
+       "부사어(장소)"
+      ],
+      [
+       "Fischbrötchen",
+       "4격 목적어"
+      ],
+      [
+       "gegessen.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Wir waren alle nass, dann sind wir ins Museum gegangen, denn dort war es trocken.",
+     "ko": "우리는 모두 젖었고, 그다음에 박물관에 갔어요. 거기는 비를 맞지 않았거든요.",
+     "mark": [
+      "sind",
+      "gegangen"
+     ]
+    }
+   ],
+   "tip": "규칙 동사의 과거분사는 ge- + 어간 + -t예요(gemacht, geregnet). 불규칙 동사는 ge- + … + -en이고 모음이 바뀌기도 해요(gegessen, gegangen). be-로 시작하는 동사는 ge-를 붙이지 않아요(bekommen → haben … bekommen)."
+  },
+  {
+   "title": "sein과 haben의 과거형: war, hatte",
+   "term": "Präteritum von sein und haben",
+   "explain": "sein과 haben은 지난 일을 말할 때 현재완료보다 과거형을 훨씬 자주 써요. sein은 ich/er war, du warst, wir/sie waren이고, haben은 ich/er hatte, du hattest, wir/sie hatten이에요. 과거형에서는 ich와 er/sie/es의 모양이 같아요. 그래서 한 편지 안에서 war·hatte(과거형)와 haben … gemacht(현재완료)가 함께 나와요.",
+   "pattern": "ich / er / sie / es war · wir / sie waren · ich / er / sie / es hatte · wir / sie hatten",
+   "examples": [
+    {
+     "de": "Die Fahrt war lang, aber die Kinder hatten gute Laune, denn im Zug haben sie Eis bekommen.",
+     "ko": "오는 길은 길었지만 아이들은 기분이 좋았어요. 기차에서 아이스크림을 받았거든요.",
+     "mark": [
+      "war",
+      "hatten"
+     ],
+     "parts": [
+      [
+       "Die Fahrt",
+       "주어"
+      ],
+      [
+       "war",
+       "동사"
+      ],
+      [
+       "lang,",
+       "보어"
+      ],
+      [
+       "aber",
+       "접속사"
+      ],
+      [
+       "die Kinder",
+       "주어"
+      ],
+      [
+       "hatten",
+       "동사"
+      ],
+      [
+       "gute Laune,",
+       "4격 목적어"
+      ],
+      [
+       "denn",
+       "접속사"
+      ],
+      [
+       "im Zug",
+       "부사어(장소)"
+      ],
+      [
+       "haben",
+       "동사"
+      ],
+      [
+       "sie",
+       "주어"
+      ],
+      [
+       "Eis",
+       "4격 목적어"
+      ],
+      [
+       "bekommen.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Gestern hatten wir Pech: Es hat den ganzen Tag geregnet, und wir hatten keinen Regenschirm dabei.",
+     "ko": "어제는 운이 없었어요. 하루 종일 비가 왔는데 우리는 우산을 가지고 있지 않았어요.",
+     "mark": [
+      "hatten wir Pech",
+      "wir hatten keinen Regenschirm"
+     ]
+    }
+   ],
+   "tip": "es gibt(~가 있다)의 과거는 보통 es gab이라고 해요. A1에서는 war와 hatte를 먼저 확실히 익혀요."
+  },
+  {
+   "title": "denn(이유)과 dann(그다음에)",
+   "term": "denn (Position 0) und dann (Position 1)",
+   "explain": "denn은 '왜냐하면'이라는 뜻으로 앞 문장의 이유를 말해요. denn은 0번 자리에 있어서 뒤 문장의 어순이 바뀌지 않아요(denn dort war es trocken: dort가 1번, war가 2번 자리). dann은 '그다음에, 그러고 나서'라는 뜻의 부사예요. dann은 1번 자리에 오기 때문에 바로 뒤에 동사가 와요(dann sind wir …). 두 낱말은 모양이 비슷하지만 뜻과 어순이 달라요.",
+   "pattern": "…, denn + 1번 자리 + 동사 … (이유) · …, dann + 동사 + 주어 … (순서)",
+   "examples": [
+    {
+     "de": "Wir waren alle nass, dann sind wir ins Museum gegangen, denn dort war es trocken.",
+     "ko": "우리는 모두 젖었고, 그다음에 박물관에 갔어요. 거기는 비를 맞지 않았거든요.",
+     "mark": [
+      "dann sind wir",
+      "denn dort war es"
+     ],
+     "parts": [
+      [
+       "Wir",
+       "주어"
+      ],
+      [
+       "waren",
+       "동사"
+      ],
+      [
+       "alle",
+       "기타"
+      ],
+      [
+       "nass,",
+       "보어"
+      ],
+      [
+       "dann",
+       "접속부사"
+      ],
+      [
+       "sind",
+       "동사"
+      ],
+      [
+       "wir",
+       "주어"
+      ],
+      [
+       "ins Museum",
+       "부사어(장소)"
+      ],
+      [
+       "gegangen,",
+       "동사(끝)"
+      ],
+      [
+       "denn",
+       "접속사"
+      ],
+      [
+       "dort",
+       "부사어(장소)"
+      ],
+      [
+       "war",
+       "동사"
+      ],
+      [
+       "es",
+       "주어"
+      ],
+      [
+       "trocken.",
+       "보어"
+      ]
+     ]
+    },
+    {
+     "de": "Am Samstag fahren wir zurück, und dann erzähle ich dir mehr.",
+     "ko": "토요일에 돌아가요. 그때 더 이야기해 줄게요.",
+     "mark": [
+      "und dann erzähle ich"
+     ]
+    }
+   ],
+   "tip": "und dann처럼 und 뒤에 dann이 오면 und는 0번 자리, dann은 1번 자리예요. 그래서 동사가 dann 바로 뒤에 와요(und dann erzähle ich …)."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "die Ferienwohnung, -en",
+   "ko": "휴가용 숙소 (휴가 때 빌려 쓰는 집)"
+  },
+  {
+   "de": "die Radtour, -en",
+   "ko": "자전거 여행"
+  },
+  {
+   "de": "die Küste, -n",
+   "ko": "해안 (die Kreideküste: 백악 해안)"
+  },
+  {
+   "de": "der Felsen, -",
+   "ko": "바위, 절벽"
+  },
+  {
+   "de": "der Hafen, -¨",
+   "ko": "항구"
+  },
+  {
+   "de": "das Fischbrötchen, -",
+   "ko": "생선 샌드위치 (작은 빵에 생선을 끼운 북독일 음식)"
+  },
+  {
+   "de": "der Regenschirm, -e",
+   "ko": "우산"
+  },
+  {
+   "de": "dabei|haben (hat dabei, hatte dabei, hat dabeigehabt)",
+   "ko": "(몸에) 지니고 있다, 가지고 있다"
+  },
+  {
+   "de": "nass",
+   "ko": "젖은"
+  },
+  {
+   "de": "trocken",
+   "ko": "마른, 젖지 않은"
+  },
+  {
+   "de": "baden",
+   "ko": "(바다·호수에서) 물놀이하다, 수영하다"
+  },
+  {
+   "de": "der Strandkorb, -¨e",
+   "ko": "바닷가 의자 (바구니처럼 엮어 만든, 지붕 달린 의자)"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "gute Laune haben",
+   "ko": "기분이 좋다",
+   "ex": "Die Fahrt war lang, aber die Kinder hatten gute Laune, denn im Zug haben sie Eis bekommen.",
+   "exko": "오는 길은 길었지만 아이들은 기분이 좋았어요. 기차에서 아이스크림을 받았거든요."
+  },
+  {
+   "de": "Pech haben",
+   "ko": "운이 없다, 운이 나쁘다",
+   "ex": "Gestern hatten wir Pech: Es hat den ganzen Tag geregnet, und wir hatten keinen Regenschirm dabei.",
+   "exko": "어제는 운이 없었어요. 하루 종일 비가 왔는데 우리는 우산을 가지고 있지 않았어요."
+  },
+  {
+   "de": "eine Radtour machen",
+   "ko": "자전거 여행을 하다",
+   "ex": "Am Dienstag haben wir eine Radtour an die Kreideküste gemacht.",
+   "exko": "화요일에는 백악 해안으로 자전거 여행을 했어요."
+  }
+ ]
+}

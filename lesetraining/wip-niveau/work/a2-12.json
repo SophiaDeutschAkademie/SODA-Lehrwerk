@@ -1,0 +1,464 @@
+{
+ "id": "a2-12",
+ "level": "A2",
+ "no": 12,
+ "title": "Samstag auf dem Wochenmarkt",
+ "titleKo": "토요일 장터에서",
+ "type": "Reportage",
+ "typeKo": "르포 기사",
+ "intro": "작은 도시의 토요일 장터에서 상인과 손님들이 어떻게 하루를 보내는지 보여 주는 글이에요.",
+ "focus": [
+  "관사 없는 형용사 어미",
+  "부사어의 순서",
+  "동사로 만든 명사"
+ ],
+ "paragraphs": [
+  {
+   "de": "Jeden Samstag bauen die Händler kurz nach 7 Uhr auf dem Marktplatz von Lindenau ihre Stände auf. Als Erster kommt der Bäcker mit seinem Lieferwagen. Danach kommen die anderen Händler aus der Umgebung von Lindenau.",
+   "ko": "토요일마다 상인들은 아침 7시가 조금 넘으면 린덴아우 시장 광장에 가판대를 세웁니다. 가장 먼저 빵집 주인이 배달 트럭을 몰고 옵니다. 그다음에는 린덴아우 주변 지역에서 다른 상인들이 옵니다."
+  },
+  {
+   "de": "Am Käsestand verkauft Herr Weber seit 12 Jahren würzigen Bergkäse. Sein Käse ist etwas teurer als der Käse im Supermarkt, trotzdem stehen die Kunden Schlange. „Zum Probieren bekommt bei mir jeder Kunde ein Stück Käse, denn die Qualität soll man schmecken“, erklärt er.",
+   "ko": "치즈 가판대에서는 베버 씨가 12년째 향이 진한 산악 치즈를 팝니다. 그의 치즈는 슈퍼마켓 치즈보다 조금 비싸지만, 그래도 손님들은 줄을 섭니다. “제 가게에서는 손님 누구나 맛보기로 치즈 한 조각을 받아요. 품질은 맛으로 알아야 하거든요.”라고 그는 설명합니다."
+  },
+  {
+   "de": "Gleich nebenan verkauft Frau Demir Obst aus eigenem Anbau. Die Äpfel kosten 2,50 Euro pro Kilo, die kleinen Birnen kosten nur 2 Euro. Viele Kunden sind der Meinung, dass ihr Obst besser schmeckt als das Obst im Supermarkt.",
+   "ko": "바로 옆에서는 데미르 씨가 직접 기른 과일을 팝니다. 사과는 1킬로그램에 2유로 50센트이고, 작은 배는 2유로밖에 하지 않습니다. 많은 손님은 그녀의 과일이 슈퍼마켓 과일보다 더 맛있다고 생각합니다."
+  },
+  {
+   "de": "Frau Krause, eine Rentnerin mit großem Einkaufskorb, kommt jeden Samstag schon um 8 Uhr mit dem Bus zum Wochenmarkt. „Hier ist das Gemüse frischer, und beim Einkaufen kann ich mit den Händlern reden“, sagt sie. Ihr Gemüse kauft sie am liebsten bei einem Bauern aus ihrem Heimatdorf, den sie seit der Schulzeit kennt.",
+   "ko": "큰 장바구니를 든 연금 생활자 크라우제 부인은 토요일마다 아침 8시면 벌써 버스를 타고 장터에 옵니다. “여기는 채소가 더 신선하고, 장을 보면서 상인들과 이야기도 나눌 수 있어요.”라고 그녀는 말합니다. 채소는 고향 마을에서 온 농부에게 사는 것을 가장 좋아하는데, 그 농부와는 학창 시절부터 아는 사이입니다."
+  },
+  {
+   "de": "Die Studentin Jana kommt dagegen erst gegen 11 Uhr, weil ihr am Wochenende das Ausschlafen wichtig ist. Dann ist die Auswahl natürlich kleiner, aber die Händler machen ihr oft einen besseren Preis. Kurz vor Schluss möchte nämlich kein Händler volle Kisten zurück ins Auto tragen. Gegen 14 Uhr packen alle Händler ihre Reste ein. Bald ist der Marktplatz wieder leer – bis zum nächsten Samstag.",
+   "ko": "반면 대학생 야나는 11시쯤에야 옵니다. 주말에는 늦잠을 자는 것이 중요하기 때문입니다. 그때는 물론 상품 종류가 적지만, 상인들이 그녀에게 값을 더 싸게 해 주는 일이 많습니다. 장이 끝날 무렵에는 어느 상인도 가득 찬 상자를 다시 차에 싣고 가고 싶어 하지 않기 때문입니다. 오후 2시쯤이면 상인들이 모두 남은 물건을 챙깁니다. 곧 시장 광장은 다시 텅 빕니다. 다음 토요일까지 말입니다."
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Herr Weber ist jeden Samstag vor dem Bäcker auf dem Marktplatz.",
+   "answer": 1,
+   "evidence": "Als Erster kommt der Bäcker mit seinem Lieferwagen.",
+   "pairs": [
+    [
+     "Als Erster kommt der Bäcker",
+     "vor dem Bäcker"
+    ]
+   ],
+   "explain": "본문에서는 빵집 주인(der Bäcker)이 가장 먼저(Als Erster) 오고, 다른 상인들은 그다음에(Danach) 와요. 치즈 상인 베버 씨도 빵집 주인보다 늦게 오므로 틀린 내용이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was erfährt man über den Preis von Herrn Webers Käse?",
+   "options": [
+    "Im Supermarkt kostet würziger Bergkäse etwas mehr.",
+    "Bei Herrn Weber bezahlt man für Käse ein wenig mehr.",
+    "Der Käse kostet gleich viel, aber man darf probieren."
+   ],
+   "answer": 1,
+   "evidence": "Sein Käse ist etwas teurer als der Käse im Supermarkt",
+   "pairs": [
+    [
+     "etwas teurer",
+     "ein wenig mehr"
+    ]
+   ],
+   "explain": "베버 씨의 치즈는 슈퍼마켓 치즈보다 조금 비싸요(etwas teurer). 이것을 '조금 더 많은 돈을 낸다(ein wenig mehr bezahlen)'로 바꿔 말했어요. 슈퍼마켓이 더 비싸다는 선택지는 비교를 거꾸로 바꾼 함정이고, 값이 같다는 말도 본문과 맞지 않아요."
+  },
+  {
+   "type": "mc",
+   "kind": "paraphrase",
+   "q": "Was meint Herr Weber mit „denn die Qualität soll man schmecken“?",
+   "options": [
+    "Nur seine Stammkunden bekommen bei ihm ein Stück Käse.",
+    "Die Kunden sollen den Käse erst zu Hause probieren.",
+    "Jeder soll vor dem Kauf merken, wie gut der Käse ist."
+   ],
+   "answer": 2,
+   "evidence": "denn die Qualität soll man schmecken",
+   "pairs": [
+    [
+     "die Qualität soll man schmecken",
+     "merken, wie gut der Käse ist"
+    ]
+   ],
+   "explain": "베버 씨는 손님 누구에게나 맛보기 치즈를 한 조각씩 줘요. 품질은 맛으로 알아야 한다는 말은 사기 전에 치즈가 얼마나 좋은지 직접 알아보게 하겠다는 뜻이에요. 맛보기는 단골에게만 주는 것이 아니라 모든 손님(jeder Kunde)에게 주고, 집에서 먹어 보라는 말도 없어요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was stimmt über die Preise bei Frau Demir?",
+   "options": [
+    "Für Birnen zahlt man bei ihr 50 Cent weniger pro Kilo.",
+    "Ein Kilo Äpfel kostet 2 Euro, ein Kilo Birnen 2,50 Euro.",
+    "Bei Frau Demir kosten alle Obstsorten gleich viel."
+   ],
+   "answer": 0,
+   "evidence": "Die Äpfel kosten 2,50 Euro pro Kilo, die kleinen Birnen kosten nur 2 Euro.",
+   "pairs": [
+    [
+     "kosten nur 2 Euro",
+     "50 Cent weniger pro Kilo"
+    ]
+   ],
+   "explain": "사과는 1킬로그램에 2유로 50센트이고, 작은 배는 2유로예요. 그래서 배를 사면 1킬로그램에 50센트를 덜 내요. 두 번째 선택지는 사과와 배의 값을 서로 바꾼 함정이고, 모든 과일의 값이 같다는 말도 틀려요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Frau Krause mag es, dass sie auf dem Markt mit den Verkäufern sprechen kann.",
+   "answer": 0,
+   "evidence": "beim Einkaufen kann ich mit den Händlern reden",
+   "pairs": [
+    [
+     "mit den Händlern reden",
+     "mit den Verkäufern sprechen"
+    ]
+   ],
+   "explain": "크라우제 부인은 장을 보면서 상인들과 이야기할 수 있다고 말해요(mit den Händlern reden). Händler를 Verkäufer(판매자)로, reden을 sprechen으로 바꿔 말했으므로 맞는 내용이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Warum machen die Händler Jana oft einen besseren Preis?",
+   "options": [
+    "Als Studentin bekommt Jana bei allen Händlern Rabatt.",
+    "Sie wollen am Ende möglichst wenig Ware wieder mitnehmen.",
+    "Kurz vor Schluss ist das Obst oft nicht mehr richtig frisch."
+   ],
+   "answer": 1,
+   "evidence": "Kurz vor Schluss möchte nämlich kein Händler volle Kisten zurück ins Auto tragen.",
+   "pairs": [
+    [
+     "kein Händler volle Kisten zurück ins Auto tragen",
+     "möglichst wenig Ware wieder mitnehmen"
+    ]
+   ],
+   "explain": "본문은 nämlich로 이유를 알려 줘요. 장이 끝날 무렵에는 어느 상인도 가득 찬 상자를 다시 차에 싣고 가고 싶어 하지 않아요. 팔리지 않은 물건을 다시 가져가지 않으려고 값을 깎아 주는 거예요. 학생 할인이나 과일이 덜 신선하다는 이야기는 본문에 없어요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Wie lange sind die Händler ungefähr auf dem Marktplatz?",
+   "options": [
+    "Etwa vier Stunden, nur bis Jana gegen 11 Uhr kommt.",
+    "Etwa zwölf Stunden, bis der Marktplatz abends leer ist.",
+    "Etwa sieben Stunden, vom Morgen bis zum Nachmittag."
+   ],
+   "answer": 2,
+   "evidence": "Gegen 14 Uhr packen alle Händler ihre Reste ein.",
+   "pairs": [
+    [
+     "kurz nach 7 Uhr",
+     "vom Morgen"
+    ],
+    [
+     "Gegen 14 Uhr",
+     "bis zum Nachmittag"
+    ]
+   ],
+   "explain": "상인들은 아침 7시가 조금 넘어서 가판대를 세우고(kurz nach 7 Uhr), 오후 2시쯤 남은 물건을 챙겨요(Gegen 14 Uhr). 그러니까 약 7시간 동안 광장에 있어요. 11시는 야나가 오는 시각일 뿐이에요. 또 광장은 오후 2시가 지나면 곧 비므로(Bald ist der Marktplatz wieder leer) 저녁까지 장이 서는 것도 아니에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "관사 없는 형용사 어미",
+   "term": "Adjektivdeklination ohne Artikel",
+   "explain": "형용사 앞에 관사가 없으면 형용사 어미가 관사 대신 성과 격을 보여 줘요. 어미는 대부분 정관사의 끝 글자와 같아요. 남성 4격은 -en(den → würzigen Bergkäse), 남성·중성 3격은 -em(dem → aus eigenem Anbau, mit großem Einkaufskorb), 복수 1·4격은 -e(die → volle Kisten)예요. 상품이나 재료를 관사 없이 말할 때 자주 나와요.",
+   "pattern": "(관사 없음) 형용사 + 정관사 끝 글자 + 명사: würzig-en Bergkäse / eigen-em Anbau / voll-e Kisten",
+   "examples": [
+    {
+     "de": "Am Käsestand verkauft Herr Weber seit 12 Jahren würzigen Bergkäse.",
+     "ko": "치즈 가판대에서는 베버 씨가 12년째 향이 진한 산악 치즈를 팝니다.",
+     "mark": [
+      "würzigen Bergkäse"
+     ],
+     "parts": [
+      [
+       "Am Käsestand",
+       "부사어(장소)"
+      ],
+      [
+       "verkauft",
+       "동사"
+      ],
+      [
+       "Herr Weber",
+       "주어"
+      ],
+      [
+       "seit 12 Jahren",
+       "부사어(시간)"
+      ],
+      [
+       "würzigen Bergkäse.",
+       "4격 목적어"
+      ]
+     ]
+    },
+    {
+     "de": "Gleich nebenan verkauft Frau Demir Obst aus eigenem Anbau.",
+     "ko": "바로 옆에서는 데미르 씨가 직접 기른 과일을 팝니다.",
+     "mark": [
+      "aus eigenem Anbau"
+     ],
+     "parts": [
+      [
+       "Gleich nebenan",
+       "부사어(장소)"
+      ],
+      [
+       "verkauft",
+       "동사"
+      ],
+      [
+       "Frau Demir",
+       "주어"
+      ],
+      [
+       "Obst aus eigenem Anbau.",
+       "4격 목적어"
+      ]
+     ]
+    },
+    {
+     "de": "Kurz vor Schluss möchte nämlich kein Händler volle Kisten zurück ins Auto tragen.",
+     "ko": "장이 끝날 무렵에는 어느 상인도 가득 찬 상자를 다시 차에 싣고 가고 싶어 하지 않기 때문입니다.",
+     "mark": [
+      "volle Kisten"
+     ]
+    }
+   ],
+   "tip": "관사가 있으면 어미가 달라져요. den würzigen Bergkäse, einen würzigen Bergkäse처럼 관사가 이미 격을 보여 주면 형용사는 -en이 돼요."
+  },
+  {
+   "title": "부사어의 순서 – 시간 · 방법 · 장소",
+   "term": "Angaben im Mittelfeld: temporal – modal – lokal",
+   "explain": "한 문장에 '언제', '어떻게', '어디로·어디에서'가 함께 나오면 보통 시간 → 방법 → 장소 순서로 써요(jeden Samstag schon um 8 Uhr – mit dem Bus – zum Wochenmarkt). 이유를 말하는 부사어가 있으면 시간 다음에 와요. 시간 표현은 문장 맨 앞 1번 자리에 둘 수도 있어요. 그러면 동사가 바로 뒤에 오고, 주어는 동사 다음에 와요(Jeden Samstag bauen die Händler …).",
+   "pattern": "주어 + 동사 + 시간 + (이유) + 방법 + 장소",
+   "examples": [
+    {
+     "de": "Frau Krause, eine Rentnerin mit großem Einkaufskorb, kommt jeden Samstag schon um 8 Uhr mit dem Bus zum Wochenmarkt.",
+     "ko": "큰 장바구니를 든 연금 생활자 크라우제 부인은 토요일마다 아침 8시면 벌써 버스를 타고 장터에 옵니다.",
+     "mark": [
+      "jeden Samstag schon um 8 Uhr",
+      "mit dem Bus",
+      "zum Wochenmarkt"
+     ],
+     "parts": [
+      [
+       "Frau Krause,",
+       "주어"
+      ],
+      [
+       "eine Rentnerin mit großem Einkaufskorb,",
+       "기타"
+      ],
+      [
+       "kommt",
+       "동사"
+      ],
+      [
+       "jeden Samstag schon um 8 Uhr",
+       "부사어(시간)"
+      ],
+      [
+       "mit dem Bus",
+       "부사어(방법)"
+      ],
+      [
+       "zum Wochenmarkt.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Jeden Samstag bauen die Händler kurz nach 7 Uhr auf dem Marktplatz von Lindenau ihre Stände auf.",
+     "ko": "토요일마다 상인들은 아침 7시가 조금 넘으면 린덴아우 시장 광장에 가판대를 세웁니다.",
+     "mark": [
+      "Jeden Samstag",
+      "kurz nach 7 Uhr",
+      "auf dem Marktplatz von Lindenau"
+     ],
+     "parts": [
+      [
+       "Jeden Samstag",
+       "부사어(시간)"
+      ],
+      [
+       "bauen",
+       "동사"
+      ],
+      [
+       "die Händler",
+       "주어"
+      ],
+      [
+       "kurz nach 7 Uhr",
+       "부사어(시간)"
+      ],
+      [
+       "auf dem Marktplatz von Lindenau",
+       "부사어(장소)"
+      ],
+      [
+       "ihre Stände",
+       "4격 목적어"
+      ],
+      [
+       "auf.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Gegen 14 Uhr packen alle Händler ihre Reste ein.",
+     "ko": "오후 2시쯤이면 상인들이 모두 남은 물건을 챙깁니다.",
+     "mark": [
+      "Gegen 14 Uhr"
+     ]
+    }
+   ],
+   "tip": "시간 표현이 여러 개면 보통 큰 단위가 먼저 와요(jeden Samstag → schon um 8 Uhr)."
+  },
+  {
+   "title": "동사로 만든 명사 – das · beim · zum + 동사원형",
+   "term": "Nominalisierter Infinitiv",
+   "explain": "동사원형의 첫 글자를 대문자로 쓰면 '~하는 것'이라는 뜻의 중성 명사가 돼요(ausschlafen → das Ausschlafen). bei + dem이 합쳐진 beim은 '~할 때, ~하면서'(beim Einkaufen), zu + dem이 합쳐진 zum은 '~하려고, ~용으로'(zum Probieren)라는 뜻으로 자주 써요.",
+   "pattern": "das + 동사원형(대문자) / beim + 동사원형 / zum + 동사원형",
+   "examples": [
+    {
+     "de": "Die Studentin Jana kommt dagegen erst gegen 11 Uhr, weil ihr am Wochenende das Ausschlafen wichtig ist.",
+     "ko": "반면 대학생 야나는 11시쯤에야 옵니다. 주말에는 늦잠을 자는 것이 중요하기 때문입니다.",
+     "mark": [
+      "das Ausschlafen"
+     ],
+     "parts": [
+      [
+       "Die Studentin Jana",
+       "주어"
+      ],
+      [
+       "kommt",
+       "동사"
+      ],
+      [
+       "dagegen",
+       "접속부사"
+      ],
+      [
+       "erst gegen 11 Uhr,",
+       "부사어(시간)"
+      ],
+      [
+       "weil ihr am Wochenende das Ausschlafen wichtig ist.",
+       "종속절"
+      ]
+     ]
+    },
+    {
+     "de": "„Hier ist das Gemüse frischer, und beim Einkaufen kann ich mit den Händlern reden“, sagt sie.",
+     "ko": "“여기는 채소가 더 신선하고, 장을 보면서 상인들과 이야기도 나눌 수 있어요.”라고 그녀는 말합니다.",
+     "mark": [
+      "beim Einkaufen"
+     ]
+    },
+    {
+     "de": "„Zum Probieren bekommt bei mir jeder Kunde ein Stück Käse, denn die Qualität soll man schmecken“, erklärt er.",
+     "ko": "“제 가게에서는 손님 누구나 맛보기로 치즈 한 조각을 받아요. 품질은 맛으로 알아야 하거든요.”라고 그는 설명합니다.",
+     "mark": [
+      "Zum Probieren"
+     ]
+    }
+   ],
+   "tip": "동사원형으로 만든 명사는 중성이에요(das Einkaufen, das Probieren). 그래서 bei와 zu 뒤에서 dem과 합쳐져 beim, zum이 돼요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "der Händler, -",
+   "ko": "상인"
+  },
+  {
+   "de": "der Stand, -¨e",
+   "ko": "가판대, 노점"
+  },
+  {
+   "de": "der Lieferwagen, -",
+   "ko": "배달 트럭, 소형 화물차"
+  },
+  {
+   "de": "die Umgebung, -en",
+   "ko": "주변 지역"
+  },
+  {
+   "de": "würzig",
+   "ko": "향이 진한, 풍미가 강한"
+  },
+  {
+   "de": "der Bergkäse, -",
+   "ko": "산악 치즈 (알프스 지역의 단단한 치즈)"
+  },
+  {
+   "de": "die Qualität, -en",
+   "ko": "품질"
+  },
+  {
+   "de": "der Anbau (Sg.)",
+   "ko": "재배 (aus eigenem Anbau: 직접 재배한)"
+  },
+  {
+   "de": "die Birne, -n",
+   "ko": "배"
+  },
+  {
+   "de": "die Meinung, -en",
+   "ko": "의견, 생각"
+  },
+  {
+   "de": "die Rentnerin, -nen",
+   "ko": "(여성) 연금 생활자, 은퇴한 사람"
+  },
+  {
+   "de": "der Einkaufskorb, -¨e",
+   "ko": "장바구니"
+  },
+  {
+   "de": "die Auswahl (Sg.)",
+   "ko": "선택의 폭, 구색"
+  },
+  {
+   "de": "aus|schlafen (schläft aus, schlief aus, hat ausgeschlafen)",
+   "ko": "늦잠을 자다, 실컷 자다"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "Schlange stehen",
+   "ko": "줄을 서다",
+   "ex": "Sein Käse ist etwas teurer als der Käse im Supermarkt, trotzdem stehen die Kunden Schlange.",
+   "exko": "그의 치즈는 슈퍼마켓 치즈보다 조금 비싸지만, 그래도 손님들은 줄을 서요."
+  },
+  {
+   "de": "der Meinung sein, dass …",
+   "ko": "~라고 생각하다, ~라는 의견이다",
+   "ex": "Viele Kunden sind der Meinung, dass ihr Obst besser schmeckt als das Obst im Supermarkt.",
+   "exko": "많은 손님은 그녀의 과일이 슈퍼마켓 과일보다 더 맛있다고 생각해요."
+  },
+  {
+   "de": "aus eigenem Anbau",
+   "ko": "직접 재배한",
+   "ex": "Gleich nebenan verkauft Frau Demir Obst aus eigenem Anbau.",
+   "exko": "바로 옆에서는 데미르 씨가 직접 기른 과일을 팔아요."
+  },
+  {
+   "de": "jemandem einen besseren Preis machen",
+   "ko": "~에게 값을 더 싸게 해 주다",
+   "ex": "Dann ist die Auswahl natürlich kleiner, aber die Händler machen ihr oft einen besseren Preis.",
+   "exko": "그때는 물론 상품 종류가 적지만, 상인들이 그녀에게 값을 더 싸게 해 주는 일이 많아요."
+  }
+ ]
+}

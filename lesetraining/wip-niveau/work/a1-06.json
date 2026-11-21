@@ -1,0 +1,487 @@
+{
+ "id": "a1-06",
+ "level": "A1",
+ "no": 6,
+ "title": "Willkommen in der Stadtbibliothek!",
+ "titleKo": "시립 도서관에 오신 것을 환영합니다!",
+ "type": "Infoblatt",
+ "typeKo": "안내문",
+ "intro": "새 회원에게 도서관 이용 시간과 대출 규칙을 알려 주는 안내문이에요.",
+ "focus": [
+  "Sie 명령형",
+  "man + 화법조동사",
+  "1번 자리의 4격 목적어"
+ ],
+ "paragraphs": [
+  {
+   "style": "h",
+   "de": "Öffnungszeiten",
+   "ko": "이용 시간"
+  },
+  {
+   "de": "Von Dienstag bis Freitag ist die Bibliothek von 10 bis 19 Uhr geöffnet, am Samstag nur bis 14 Uhr. Am Sonntag und am Montag ist sie geschlossen.",
+   "ko": "도서관은 화요일부터 금요일까지 10시부터 19시까지 문을 열고, 토요일에는 14시까지만 엽니다. 일요일과 월요일에는 휴관합니다."
+  },
+  {
+   "style": "h",
+   "de": "Der Bibliotheksausweis",
+   "ko": "도서관 회원증"
+  },
+  {
+   "de": "Der Ausweis kostet 15 Euro pro Jahr, aber Kinder und Schüler zahlen nichts. Bringen Sie bitte Ihren Pass mit, dann ist Ihr Ausweis sofort fertig.",
+   "ko": "회원증은 1년에 15유로이지만, 어린이와 초·중·고등학생은 돈을 내지 않습니다. 여권을 가져오시기 바랍니다. 그러면 회원증이 바로 준비됩니다."
+  },
+  {
+   "style": "h",
+   "de": "Ausleihe",
+   "ko": "대출"
+  },
+  {
+   "de": "Bücher kann man vier Wochen behalten, DVDs nur eine Woche, und verlängern kann man alles online. Man muss aber alles pünktlich zurückgeben, sonst kostet jedes Buch und jede DVD einen Euro pro Woche.",
+   "ko": "책은 4주 동안, DVD는 1주일 동안만 가지고 있을 수 있으며, 연장은 모두 온라인으로 할 수 있습니다. 하지만 모두 제때 반납해야 합니다. 그렇지 않으면 책과 DVD 한 개마다 1주일에 1유로를 내야 합니다."
+  },
+  {
+   "style": "h",
+   "de": "Regeln",
+   "ko": "규칙"
+  },
+  {
+   "de": "Essen darf man in der Bibliothek nicht, trinken nur am Eingang. Stellen Sie Ihr Handy leise und telefonieren Sie bitte vor der Tür.",
+   "ko": "도서관 안에서는 음식을 먹으면 안 되고, 음료는 입구에서만 마실 수 있습니다. 휴대전화는 소리를 줄여 주시고, 통화는 문밖에서 해 주시기 바랍니다."
+  },
+  {
+   "style": "h",
+   "de": "Rückgabe",
+   "ko": "반납"
+  },
+  {
+   "de": "Den Rückgabeautomaten finden Sie rechts neben dem Eingang. Er ist 24 Stunden am Tag und sieben Tage pro Woche für Sie da.",
+   "ko": "반납기는 입구 오른쪽 옆에 있습니다. 반납기는 하루 24시간, 일주일 내내 이용하실 수 있습니다."
+  }
+ ],
+ "questions": [
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Frau Roth arbeitet von Dienstag bis Samstag jeden Tag bis 18 Uhr. Wann kann sie in die Bibliothek gehen?",
+   "options": [
+    "am Montag, denn sie hat frei",
+    "am Freitag nach der Arbeit",
+    "am Samstag nach der Arbeit"
+   ],
+   "answer": 1,
+   "evidence": "Von Dienstag bis Freitag ist die Bibliothek von 10 bis 19 Uhr geöffnet, am Samstag nur bis 14 Uhr.",
+   "pairs": [
+    [
+     "Von Dienstag bis Freitag ist die Bibliothek von 10 bis 19 Uhr geöffnet",
+     "am Freitag nach der Arbeit"
+    ],
+    [
+     "am Samstag nur bis 14 Uhr",
+     "am Samstag nach der Arbeit"
+    ],
+    [
+     "Am Sonntag und am Montag ist sie geschlossen",
+     "am Montag, denn sie hat frei"
+    ]
+   ],
+   "explain": "도서관은 화요일부터 금요일까지는 19시까지, 토요일에는 14시까지만 열어요. 로트 씨는 매일 18시까지 일해요. 그러니까 금요일에는 일이 끝난 뒤에도 한 시간 동안 도서관에 갈 수 있어요. 토요일 18시에는 도서관이 이미 닫혀 있어요. 월요일은 로트 씨가 쉬는 날이지만 도서관도 문을 닫아요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Lena ist 20 Jahre alt und Studentin. Was kostet der Ausweis für sie?",
+   "options": [
+    "Sie zahlt nichts, wie alle Schüler.",
+    "Sie zahlt einen Euro pro Woche.",
+    "Sie zahlt 15 Euro für zwölf Monate."
+   ],
+   "answer": 2,
+   "evidence": "Der Ausweis kostet 15 Euro pro Jahr, aber Kinder und Schüler zahlen nichts.",
+   "pairs": [
+    [
+     "15 Euro pro Jahr",
+     "15 Euro für zwölf Monate"
+    ],
+    [
+     "Kinder und Schüler zahlen nichts",
+     "Sie zahlt nichts, wie alle Schüler."
+    ]
+   ],
+   "explain": "본문에서 돈을 내지 않는 사람은 어린이(Kinder)와 Schüler예요. Schüler는 초·중·고등학교에 다니는 학생이고, 대학생은 Student/Studentin이에요. 레나는 스무 살 대학생이라서 1년(zwölf Monate)에 15유로를 내요. 1주일에 1유로는 반납이 늦을 때 내는 돈이에요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Mehr Zeit für ein Buch bekommt man auch zu Hause am Computer.",
+   "answer": 0,
+   "evidence": "verlängern kann man alles online",
+   "pairs": [
+    [
+     "verlängern kann man alles online",
+     "Mehr Zeit für ein Buch bekommt man"
+    ],
+    [
+     "online",
+     "zu Hause am Computer"
+    ]
+   ],
+   "explain": "본문에서 대출은 모두 온라인으로 연장할 수 있다고 해요(verlängern kann man alles online). 문제는 verlängern을 '책을 가지고 있을 시간을 더 받는다'(Mehr Zeit für ein Buch bekommt man)로, online을 '집에서 컴퓨터로'(zu Hause am Computer)로 바꿔 말했어요. 그래서 맞는 문장이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Tom nimmt am Dienstag, dem 3. März, eine DVD mit und verlängert sie nicht. Wann muss er sie zurückgeben?",
+   "options": [
+    "am 31. März",
+    "am 4. März",
+    "am 10. März"
+   ],
+   "answer": 2,
+   "evidence": "DVDs nur eine Woche",
+   "pairs": [
+    [
+     "DVDs nur eine Woche",
+     "am 10. März"
+    ],
+    [
+     "Bücher kann man vier Wochen behalten",
+     "am 31. März"
+    ]
+   ],
+   "explain": "DVD는 1주일만 가지고 있을 수 있어요(DVDs nur eine Woche). 톰은 3월 3일 화요일에 DVD를 가져가고 연장하지 않아요. 그러니까 1주일 뒤인 3월 10일에 반납해야 해요. 3월 31일은 책을 가지고 있을 수 있는 4주 뒤이고, 3월 4일은 하루 뒤예요. 24시간은 반납기를 쓸 수 있는 시간이지 대출 기간이 아니에요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "In der Bibliothek darf man telefonieren, aber nur leise.",
+   "answer": 1,
+   "evidence": "telefonieren Sie bitte vor der Tür",
+   "pairs": [
+    [
+     "telefonieren Sie bitte vor der Tür",
+     "In der Bibliothek darf man telefonieren"
+    ],
+    [
+     "Stellen Sie Ihr Handy leise",
+     "aber nur leise"
+    ]
+   ],
+   "explain": "본문은 휴대전화 소리를 줄이고 통화는 문밖에서(vor der Tür) 하라고 해요. 그러니까 조용히 하더라도 도서관 안에서는 통화하면 안 돼요. leise와 telefonieren은 본문에 나오는 낱말이지만 문장의 뜻은 본문과 달라요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Am Montag kann man keine Bücher zurückgeben, denn dann ist die Bibliothek geschlossen.",
+   "answer": 1,
+   "evidence": "Er ist 24 Stunden am Tag und sieben Tage pro Woche für Sie da.",
+   "pairs": [
+    [
+     "sieben Tage pro Woche",
+     "Am Montag"
+    ],
+    [
+     "Den Rückgabeautomaten",
+     "Bücher zurückgeben"
+    ],
+    [
+     "Am Sonntag und am Montag ist sie geschlossen",
+     "dann ist die Bibliothek geschlossen"
+    ]
+   ],
+   "explain": "월요일에 도서관이 문을 닫는 것은 맞아요. 하지만 입구 옆의 반납기(Rückgabeautomat)는 하루 24시간, 일주일에 7일 쓸 수 있어요. 그러니까 월요일에도 반납기에 책을 반납할 수 있어요. Rückgabe(반납)는 zurückgeben(반납하다)에서 나온 명사예요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "Sie에게 쓰는 명령형",
+   "term": "Imperativ (Sie-Form)",
+   "explain": "손님이나 잘 모르는 사람에게 부탁하거나 안내할 때 쓰는 명령형이에요. 동사원형을 1번 자리에 두고 바로 뒤에 Sie를 써요. 분리동사는 앞부분(mit, zurück)이 문장 끝으로 가요(Bringen Sie … mit). bitte를 넣으면 더 정중하게 들려요. 명령문 두 개를 und로 이을 때는 두 번째 동사 뒤에도 Sie를 다시 써요(Stellen Sie … und telefonieren Sie …).",
+   "pattern": "동사원형 + Sie (+ bitte) + … (+ 분리 전철)",
+   "examples": [
+    {
+     "de": "Bringen Sie bitte Ihren Pass mit, dann ist Ihr Ausweis sofort fertig.",
+     "ko": "여권을 가져오시기 바랍니다. 그러면 회원증이 바로 준비됩니다.",
+     "mark": [
+      "Bringen Sie",
+      "mit"
+     ],
+     "parts": [
+      [
+       "Bringen",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "bitte",
+       "기타"
+      ],
+      [
+       "Ihren Pass",
+       "4격 목적어"
+      ],
+      [
+       "mit,",
+       "동사(끝)"
+      ],
+      [
+       "dann",
+       "접속부사"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "Ihr Ausweis",
+       "주어"
+      ],
+      [
+       "sofort",
+       "부사어(시간)"
+      ],
+      [
+       "fertig.",
+       "보어"
+      ]
+     ]
+    },
+    {
+     "de": "Stellen Sie Ihr Handy leise und telefonieren Sie bitte vor der Tür.",
+     "ko": "휴대전화는 소리를 줄여 주시고, 통화는 문밖에서 해 주시기 바랍니다.",
+     "mark": [
+      "Stellen Sie",
+      "telefonieren Sie"
+     ],
+     "parts": [
+      [
+       "Stellen",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "Ihr Handy",
+       "4격 목적어"
+      ],
+      [
+       "leise",
+       "보어"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "telefonieren",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "bitte",
+       "기타"
+      ],
+      [
+       "vor der Tür.",
+       "부사어(장소)"
+      ]
+     ]
+    }
+   ],
+   "tip": "Sie 명령형에서는 Sie를 빼면 틀린 문장이 돼요. 금지할 때는 nicht를 써요(Essen Sie hier bitte nicht). sein만 모양이 달라요: Seien Sie bitte leise."
+  },
+  {
+   "title": "man + 화법조동사 – 규칙 말하기",
+   "term": "man + Modalverb (können, dürfen, müssen)",
+   "explain": "man은 '사람들, 누구나'라는 뜻의 주어예요. 안내문에서 모든 사람에게 해당하는 규칙을 말할 때 자주 써요. 동사는 er/sie/es와 같은 형태예요(man kann, man darf, man muss). 화법조동사는 2번 자리에, 동사원형은 문장 끝에 와요. kann은 '할 수 있어요', darf는 '해도 돼요', muss는 '해야 해요'라는 뜻이고, darf … nicht는 '하면 안 돼요'라는 금지예요. 동사원형을 강조할 때는 1번 자리에 둘 수도 있어요(Essen darf man …).",
+   "pattern": "man + kann / darf / muss + … + 동사원형(문장 끝)",
+   "examples": [
+    {
+     "de": "Man muss aber alles pünktlich zurückgeben, sonst kostet jedes Buch und jede DVD einen Euro pro Woche.",
+     "ko": "하지만 모두 제때 반납해야 합니다. 그렇지 않으면 책과 DVD 한 개마다 1주일에 1유로를 내야 합니다.",
+     "mark": [
+      "Man muss",
+      "zurückgeben"
+     ],
+     "parts": [
+      [
+       "Man",
+       "주어"
+      ],
+      [
+       "muss",
+       "동사"
+      ],
+      [
+       "aber",
+       "접속부사"
+      ],
+      [
+       "alles",
+       "4격 목적어"
+      ],
+      [
+       "pünktlich",
+       "부사어(방법)"
+      ],
+      [
+       "zurückgeben,",
+       "동사(끝)"
+      ],
+      [
+       "sonst",
+       "접속부사"
+      ],
+      [
+       "kostet",
+       "동사"
+      ],
+      [
+       "jedes Buch und jede DVD",
+       "주어"
+      ],
+      [
+       "einen Euro",
+       "4격 목적어"
+      ],
+      [
+       "pro Woche.",
+       "부사어(빈도)"
+      ]
+     ]
+    },
+    {
+     "de": "Essen darf man in der Bibliothek nicht, trinken nur am Eingang.",
+     "ko": "도서관 안에서는 음식을 먹으면 안 되고, 음료는 입구에서만 마실 수 있습니다.",
+     "mark": [
+      "Essen darf man",
+      "nicht",
+      "trinken"
+     ]
+    }
+   ],
+   "tip": "man darf nicht는 '하면 안 돼요'(금지)이고, man muss nicht는 '할 필요가 없어요'라는 뜻이에요. man(사람들)과 Mann(남자)은 다른 낱말이에요."
+  },
+  {
+   "title": "1번 자리의 4격 목적어",
+   "term": "Akkusativobjekt auf Position 1",
+   "explain": "독일어 평서문에서 동사는 2번 자리에 와요. 그런데 1번 자리에 주어만 오는 것은 아니에요. 4격 목적어가 1번 자리에 오면 주어는 동사 바로 뒤로 가요(Den Rückgabeautomaten finden Sie …). 이때 주어는 관사(den = 4격)와 동사 형태(finden – Sie)를 보고 찾아요. 안내문에서는 중요한 낱말을 앞에 두려고 이런 어순을 자주 써요.",
+   "pattern": "4격 목적어 + 동사 + 주어 + …",
+   "examples": [
+    {
+     "de": "Den Rückgabeautomaten finden Sie rechts neben dem Eingang.",
+     "ko": "반납기는 입구 오른쪽 옆에 있습니다.",
+     "mark": [
+      "Den Rückgabeautomaten",
+      "finden Sie"
+     ],
+     "parts": [
+      [
+       "Den Rückgabeautomaten",
+       "4격 목적어"
+      ],
+      [
+       "finden",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "rechts neben dem Eingang.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Bücher kann man vier Wochen behalten, DVDs nur eine Woche, und verlängern kann man alles online.",
+     "ko": "책은 4주 동안, DVD는 1주일 동안만 가지고 있을 수 있으며, 연장은 모두 온라인으로 할 수 있습니다.",
+     "mark": [
+      "Bücher kann man",
+      "DVDs"
+     ]
+    }
+   ],
+   "tip": "1번 자리의 명사를 바로 주어라고 생각하면 안 돼요. 남성 명사는 4격 관사 den, einen으로 알 수 있어요. 여성·중성·복수 명사는 1격과 4격 모양이 같아서 동사 형태와 뜻을 함께 봐요(Bücher kann man …: kann에 맞는 주어는 man이에요). DVDs nur eine Woche는 DVDs kann man nur eine Woche behalten을 줄인 말이에요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "die Öffnungszeiten (Pl.)",
+   "ko": "이용 시간, 개관 시간"
+  },
+  {
+   "de": "geöffnet",
+   "ko": "(문을) 연, 열려 있는"
+  },
+  {
+   "de": "der Ausweis, -e",
+   "ko": "(도서관) 회원증; 신분증"
+  },
+  {
+   "de": "der Schüler, -",
+   "ko": "(초·중·고등학교) 학생 (여성: die Schülerin)"
+  },
+  {
+   "de": "mit|bringen (bringt mit, brachte mit, hat mitgebracht)",
+   "ko": "가져오다, 지참하다"
+  },
+  {
+   "de": "fertig",
+   "ko": "다 된, 준비된"
+  },
+  {
+   "de": "behalten (behält, behielt, hat behalten)",
+   "ko": "(계속) 가지고 있다"
+  },
+  {
+   "de": "verlängern",
+   "ko": "(기간을) 연장하다"
+  },
+  {
+   "de": "pünktlich",
+   "ko": "제때, 기한을 지켜"
+  },
+  {
+   "de": "zurück|geben (gibt zurück, gab zurück, hat zurückgegeben)",
+   "ko": "돌려주다, 반납하다"
+  },
+  {
+   "de": "der Eingang, -¨e",
+   "ko": "입구"
+  },
+  {
+   "de": "der Rückgabeautomat, -en",
+   "ko": "(무인) 반납기"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "geschlossen sein",
+   "ko": "문을 닫다, 휴관이다",
+   "ex": "Am Sonntag und am Montag ist sie geschlossen.",
+   "exko": "일요일과 월요일에는 휴관합니다."
+  },
+  {
+   "de": "das Handy leise stellen",
+   "ko": "휴대전화 소리를 줄이다",
+   "ex": "Stellen Sie Ihr Handy leise und telefonieren Sie bitte vor der Tür.",
+   "exko": "휴대전화는 소리를 줄여 주시고, 통화는 문밖에서 해 주시기 바랍니다."
+  },
+  {
+   "de": "für jemanden da sein",
+   "ko": "(누구를 위해) 늘 있다, 언제든 이용할 수 있다",
+   "ex": "Er ist 24 Stunden am Tag und sieben Tage pro Woche für Sie da.",
+   "exko": "반납기는 하루 24시간, 일주일 내내 이용하실 수 있습니다."
+  }
+ ]
+}

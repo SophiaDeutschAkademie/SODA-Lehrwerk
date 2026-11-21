@@ -1,0 +1,514 @@
+{
+ "id": "a1-01",
+ "level": "A1",
+ "no": 1,
+ "title": "Suche Tandempartner in Köln",
+ "titleKo": "쾰른에서 탄뎀 파트너를 찾아요",
+ "type": "Profiltext in einer Tandem-App",
+ "typeKo": "탄뎀 앱 프로필 글",
+ "intro": "쾰른에 사는 한국 유학생이 언어 교환 파트너를 찾는 글이에요.",
+ "focus": [
+  "같은 주어로 동사 잇기",
+  "4격 목적어를 맨 앞에",
+  "시간 – 장소 순서"
+ ],
+ "paragraphs": [
+  {
+   "style": "meta",
+   "de": "Jiwoo, 24 · Köln",
+   "ko": "지우, 24세 · 쾰른"
+  },
+  {
+   "de": "Hallo, ich heiße Jiwoo Han, bin 24 Jahre alt und komme aus Busan. Seit sechs Monaten wohne ich in Köln und studiere hier Architektur.",
+   "ko": "안녕하세요, 제 이름은 한지우예요. 스물네 살이고 부산에서 왔어요. 쾰른에서 산 지 6개월 됐고, 여기서 건축을 공부하고 있어요."
+  },
+  {
+   "de": "Meine Muttersprache ist Koreanisch, und Englisch spreche ich auch gut. Deutsch lerne ich seit einem Jahr, aber mein Deutsch ist noch nicht so gut. An der Uni höre und spreche ich fast nur Englisch.",
+   "ko": "제 모국어는 한국어이고, 영어도 잘해요. 독일어는 1년째 배우고 있지만, 독일어 실력은 아직 그렇게 좋지 않아요. 대학에서는 거의 영어만 듣고 말해요."
+  },
+  {
+   "de": "Kochen und Sport machen mir Spaß. Ich koche gern koreanisch und spiele am Wochenende im Park Fußball.",
+   "ko": "요리와 운동이 즐거워요. 한국 음식을 즐겨 만들고, 주말에는 공원에서 축구를 해요."
+  },
+  {
+   "de": "Jetzt suche ich eine Tandempartnerin oder einen Tandempartner. Wir machen zuerst eine Stunde Koreanisch und dann eine Stunde Deutsch. Ich möchte dich einmal pro Woche in einem Café treffen. Am Nachmittag habe ich oft Zeit, nur am Montag nicht.",
+   "ko": "지금 여성 또는 남성 탄뎀 파트너를 찾고 있어요. 먼저 한 시간은 한국어를 하고, 그다음 한 시간은 독일어를 해요. 일주일에 한 번 카페에서 만나고 싶어요. 월요일만 빼고 오후에는 시간이 있을 때가 많아요."
+  },
+  {
+   "de": "Lernst du Koreanisch und wohnst du auch hier? Hast du Lust auf ein Tandem? Dann schreib mir!",
+   "ko": "한국어를 배우시고, 이곳 쾰른에 사세요? 탄뎀을 하고 싶으세요? 그러면 저에게 메시지를 보내 주세요!"
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Jiwoo ist Studentin und kommt aus Korea.",
+   "answer": 0,
+   "evidence": "komme aus Busan. Seit sechs Monaten wohne ich in Köln und studiere hier Architektur.",
+   "pairs": [
+    [
+     "studiere hier Architektur",
+     "Studentin"
+    ],
+    [
+     "komme aus Busan",
+     "kommt aus Korea"
+    ]
+   ],
+   "explain": "지우 씨는 'komme aus Busan(부산에서 왔어요)'이라고 하고, 'studiere hier Architektur(여기서 건축을 공부해요)'라고 해요. 부산은 한국의 도시이고, 대학에서 공부하는 여자는 Studentin이에요. 본문의 두 부분을 다른 말로 바꿔 한 문장으로 묶었으니까 맞는 내용이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Warum spricht Jiwoo noch nicht so gut Deutsch?",
+   "options": [
+    "Im Studium spricht sie meistens Englisch.",
+    "Sie lernt erst seit sechs Monaten Deutsch.",
+    "Sie hat am Nachmittag keine Zeit für Deutsch."
+   ],
+   "answer": 0,
+   "evidence": "An der Uni höre und spreche ich fast nur Englisch.",
+   "pairs": [
+    [
+     "An der Uni",
+     "Im Studium"
+    ],
+    [
+     "fast nur Englisch",
+     "meistens Englisch"
+    ]
+   ],
+   "explain": "지우 씨는 독일어 실력이 아직 좋지 않다고 말한 다음 'An der Uni höre und spreche ich fast nur Englisch.(대학에서는 거의 영어만 듣고 말해요.)'라고 해요. 두 문장을 이어 읽으면 대학에서 영어를 주로 쓰는 것이 이유예요. 'An der Uni'를 'Im Studium'으로, 'fast nur'를 'meistens'로 바꿔 말했어요. 6개월(sechs Monate)은 쾰른에 산 기간이고 독일어는 1년째 배우고 있어요. 오후(Nachmittag)에는 오히려 시간이 있을 때가 많아요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Jiwoo möchte das Tandem im Park machen.",
+   "answer": 1,
+   "evidence": "Ich möchte dich einmal pro Woche in einem Café treffen.",
+   "pairs": [
+    [
+     "in einem Café treffen",
+     "im Park machen"
+    ]
+   ],
+   "explain": "지우 씨는 'Ich möchte dich einmal pro Woche in einem Café treffen.(일주일에 한 번 카페에서 만나고 싶어요.)'라고 해요. 탄뎀은 카페에서 하고 싶은 거예요. 공원(Park)은 주말에 축구를 하는 곳이라서 본문 낱말을 쓴 함정이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Wie möchte Jiwoo das Tandem machen?",
+   "options": [
+    "zwei Stunden nur Deutsch",
+    "erst Deutsch, dann Koreanisch",
+    "für jede Sprache 60 Minuten"
+   ],
+   "answer": 2,
+   "evidence": "Wir machen zuerst eine Stunde Koreanisch und dann eine Stunde Deutsch.",
+   "pairs": [
+    [
+     "eine Stunde",
+     "60 Minuten"
+    ],
+    [
+     "eine Stunde Koreanisch und dann eine Stunde Deutsch",
+     "für jede Sprache"
+    ]
+   ],
+   "explain": "본문에 'Wir machen zuerst eine Stunde Koreanisch und dann eine Stunde Deutsch.(먼저 한 시간은 한국어를 하고, 그다음 한 시간은 독일어를 해요.)'라고 나와요. 두 언어를 한 시간(60 Minuten)씩 하니까 세 번째가 정답이에요. 첫 번째는 독일어만 두 시간이라서 틀리고, 두 번째는 순서가 반대예요. 먼저 하는 언어는 한국어예요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Am Montagnachmittag hat Jiwoo Zeit für ein Tandem.",
+   "answer": 1,
+   "evidence": "Am Nachmittag habe ich oft Zeit, nur am Montag nicht.",
+   "pairs": [
+    [
+     "nur am Montag nicht",
+     "Am Montagnachmittag"
+    ]
+   ],
+   "explain": "지우 씨는 'Am Nachmittag habe ich oft Zeit, nur am Montag nicht.(월요일만 빼고 오후에는 시간이 있을 때가 많아요.)'라고 해요. 'nur am Montag nicht'는 월요일에는 시간이 없다는 뜻이에요. 그래서 월요일 오후(Montagnachmittag)에는 탄뎀을 할 수 없어요. Nachmittag, Zeit, Montag는 본문에 나오는 낱말이지만 문장의 뜻은 반대예요."
+  },
+  {
+   "type": "rf",
+   "kind": "intent",
+   "q": "Jiwoo schreibt den Text, denn sie möchte mit einer Person Deutsch üben.",
+   "answer": 0,
+   "evidence": "Jetzt suche ich eine Tandempartnerin oder einen Tandempartner.",
+   "pairs": [
+    [
+     "Jetzt suche ich eine Tandempartnerin oder einen Tandempartner.",
+     "möchte mit einer Person Deutsch üben"
+    ]
+   ],
+   "explain": "지우 씨는 독일어 실력이 아직 좋지 않다고 하고, 'Jetzt suche ich eine Tandempartnerin oder einen Tandempartner.(지금 탄뎀 파트너를 찾고 있어요.)'라고 해요. 탄뎀에서는 한 시간 동안 독일어를 하니까, 이 글을 쓴 목적은 다른 사람과 독일어를 연습하는 거예요. 그래서 맞는 내용이에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "같은 주어로 동사 여러 개 잇기",
+   "term": "Verben reihen mit gleichem Subjekt",
+   "explain": "같은 사람이 하는 일을 여러 개 말할 때는 동사를 쉼표와 und로 이어요. 이때 주어는 처음에 한 번만 써도 돼요. 'ich heiße …, bin … und komme …'에서는 bin과 komme 앞에 ich를 다시 쓰지 않아요. 그래도 동사 어미는 주어 ich에 맞춰요(heiße, bin, komme). 시간 표현이 1번 자리에 와서 주어가 동사 뒤에 있을 때도, und 바로 뒤에 동사가 오면 주어를 뺄 수 있어요.",
+   "pattern": "주어 + 동사1 …, 동사2 … und 동사3 … / 1번 자리 + 동사1 + 주어 … und 동사2 …",
+   "examples": [
+    {
+     "de": "Hallo, ich heiße Jiwoo Han, bin 24 Jahre alt und komme aus Busan.",
+     "ko": "안녕하세요, 제 이름은 한지우이고, 스물네 살이며 부산에서 왔어요.",
+     "mark": [
+      "heiße",
+      "bin",
+      "komme"
+     ],
+     "parts": [
+      [
+       "Hallo,",
+       "기타"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "heiße",
+       "동사"
+      ],
+      [
+       "Jiwoo Han,",
+       "보어"
+      ],
+      [
+       "bin",
+       "동사"
+      ],
+      [
+       "24 Jahre alt",
+       "보어"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "komme",
+       "동사"
+      ],
+      [
+       "aus Busan.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Seit sechs Monaten wohne ich in Köln und studiere hier Architektur.",
+     "ko": "쾰른에서 산 지 6개월 됐고, 여기서 건축을 공부하고 있어요.",
+     "mark": [
+      "wohne ich",
+      "und studiere"
+     ],
+     "parts": [
+      [
+       "Seit sechs Monaten",
+       "부사어(시간)"
+      ],
+      [
+       "wohne",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "in Köln",
+       "부사어(장소)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "studiere",
+       "동사"
+      ],
+      [
+       "hier",
+       "부사어(장소)"
+      ],
+      [
+       "Architektur.",
+       "4격 목적어"
+      ]
+     ]
+    }
+   ],
+   "tip": "und 뒤 문장이 동사가 아닌 다른 말로 시작하면 주어를 다시 써야 해요. Ich koche gern koreanisch und spiele am Wochenende Fußball.에서는 주어를 빼지만, Ich koche gern koreanisch, und am Wochenende spiele ich Fußball.에서는 am Wochenende가 1번 자리에 오니까 ich를 다시 써요."
+  },
+  {
+   "title": "4격 목적어를 맨 앞에 두기",
+   "term": "Akkusativobjekt auf Position 1",
+   "explain": "독일어 평서문에서 동사는 2번 자리에 와요. 1번 자리에는 주어가 아닌 4격 목적어도 올 수 있어요. 그러면 주어는 동사 바로 뒤로 가요(Deutsch lerne ich …). 맨 앞에 둔 말은 문장의 주제가 돼요. 그래서 언어를 하나씩 비교하면서 말할 때 이 어순을 자주 써요(Englisch spreche ich …, Deutsch lerne ich …).",
+   "pattern": "4격 목적어 + 동사 + 주어 + … (Englisch spreche ich …)",
+   "examples": [
+    {
+     "de": "Deutsch lerne ich seit einem Jahr, aber mein Deutsch ist noch nicht so gut.",
+     "ko": "독일어는 1년째 배우고 있지만, 독일어 실력은 아직 그렇게 좋지 않아요.",
+     "mark": [
+      "Deutsch lerne ich"
+     ],
+     "parts": [
+      [
+       "Deutsch",
+       "4격 목적어"
+      ],
+      [
+       "lerne",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "seit einem Jahr,",
+       "부사어(시간)"
+      ],
+      [
+       "aber",
+       "접속사"
+      ],
+      [
+       "mein Deutsch",
+       "주어"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "noch",
+       "부사어(시간)"
+      ],
+      [
+       "nicht",
+       "부정어"
+      ],
+      [
+       "so gut.",
+       "보어"
+      ]
+     ]
+    },
+    {
+     "de": "Meine Muttersprache ist Koreanisch, und Englisch spreche ich auch gut.",
+     "ko": "제 모국어는 한국어이고, 영어도 잘해요.",
+     "mark": [
+      "Englisch spreche ich"
+     ],
+     "parts": [
+      [
+       "Meine Muttersprache",
+       "주어"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "Koreanisch,",
+       "보어"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "Englisch",
+       "4격 목적어"
+      ],
+      [
+       "spreche",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "auch",
+       "부사어"
+      ],
+      [
+       "gut.",
+       "부사어(방법)"
+      ]
+     ]
+    }
+   ],
+   "tip": "목적어를 앞으로 옮겨도 내용은 같아요. Ich lerne seit einem Jahr Deutsch.와 Deutsch lerne ich seit einem Jahr.는 같은 뜻이에요. 다만 주어를 동사 앞에 그대로 두면 틀려요: Deutsch ich lerne seit einem Jahr. (×)"
+  },
+  {
+   "title": "시간은 장소보다 앞에",
+   "term": "Wortstellung im Mittelfeld: Zeit vor Ort",
+   "explain": "동사 뒤에 시간 표현과 장소 표현이 함께 오면 보통 시간이 먼저, 장소가 나중에 와요(am Wochenende im Park). Fußball spielen처럼 동사와 한 덩어리로 쓰는 말은 그 뒤, 문장 끝 쪽에 와요. 화법조동사 문장에서는 동사원형이 맨 끝에 오고, 시간과 장소는 그 앞에 같은 순서로 와요(einmal pro Woche in einem Café treffen).",
+   "pattern": "동사 + 시간 + 장소 + 동사와 붙는 말 / möchte + … + 시간 + 장소 + 동사원형",
+   "examples": [
+    {
+     "de": "Ich koche gern koreanisch und spiele am Wochenende im Park Fußball.",
+     "ko": "한국 음식을 즐겨 만들고, 주말에는 공원에서 축구를 해요.",
+     "mark": [
+      "am Wochenende",
+      "im Park",
+      "Fußball"
+     ],
+     "parts": [
+      [
+       "Ich",
+       "주어"
+      ],
+      [
+       "koche",
+       "동사"
+      ],
+      [
+       "gern",
+       "부사어(방법)"
+      ],
+      [
+       "koreanisch",
+       "부사어(방법)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "spiele",
+       "동사"
+      ],
+      [
+       "am Wochenende",
+       "부사어(시간)"
+      ],
+      [
+       "im Park",
+       "부사어(장소)"
+      ],
+      [
+       "Fußball.",
+       "4격 목적어"
+      ]
+     ]
+    },
+    {
+     "de": "Ich möchte dich einmal pro Woche in einem Café treffen.",
+     "ko": "일주일에 한 번 카페에서 만나고 싶어요.",
+     "mark": [
+      "einmal pro Woche",
+      "in einem Café",
+      "treffen"
+     ],
+     "parts": [
+      [
+       "Ich",
+       "주어"
+      ],
+      [
+       "möchte",
+       "동사"
+      ],
+      [
+       "dich",
+       "4격 목적어"
+      ],
+      [
+       "einmal pro Woche",
+       "부사어(시간)"
+      ],
+      [
+       "in einem Café",
+       "부사어(장소)"
+      ],
+      [
+       "treffen.",
+       "동사(끝)"
+      ]
+     ]
+    }
+   ],
+   "tip": "dich, mir 같은 대명사 목적어는 시간 표현보다 앞에 와요(möchte dich einmal pro Woche …). 시간 표현을 1번 자리로 옮길 수도 있어요: Am Wochenende spiele ich im Park Fußball."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "die Muttersprache, -n",
+   "ko": "모국어"
+  },
+  {
+   "de": "studieren",
+   "ko": "(대학에서) 공부하다, 전공하다"
+  },
+  {
+   "de": "die Architektur (Sg.)",
+   "ko": "건축, 건축학"
+  },
+  {
+   "de": "die Uni, -s",
+   "ko": "대학 (Universität의 짧은 말)"
+  },
+  {
+   "de": "sprechen (spricht, hat gesprochen)",
+   "ko": "(언어를) 말하다, 하다"
+  },
+  {
+   "de": "hören",
+   "ko": "듣다"
+  },
+  {
+   "de": "kochen",
+   "ko": "요리하다 (koreanisch kochen: 한국 음식을 만들다)"
+  },
+  {
+   "de": "das Wochenende, -n",
+   "ko": "주말"
+  },
+  {
+   "de": "der Tandempartner, -",
+   "ko": "탄뎀 파트너, 서로 자기 언어를 가르쳐 주는 상대 (여성: die Tandempartnerin)"
+  },
+  {
+   "de": "die Stunde, -n",
+   "ko": "한 시간, 60분"
+  },
+  {
+   "de": "treffen (trifft, hat getroffen) + Akk.",
+   "ko": "(사람을) 만나다"
+  },
+  {
+   "de": "der Nachmittag, -e",
+   "ko": "오후"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "Lust haben auf + Akk.",
+   "ko": "~을 하고 싶다, ~할 마음이 있다",
+   "ex": "Hast du Lust auf ein Tandem?",
+   "exko": "탄뎀을 하고 싶으세요?"
+  },
+  {
+   "de": "Spaß machen + Dat.",
+   "ko": "(누구에게) 재미있다, 즐겁다",
+   "ex": "Kochen und Sport machen mir Spaß.",
+   "exko": "요리와 운동이 즐거워요."
+  },
+  {
+   "de": "einmal pro Woche",
+   "ko": "일주일에 한 번",
+   "ex": "Ich möchte dich einmal pro Woche in einem Café treffen.",
+   "exko": "일주일에 한 번 카페에서 만나고 싶어요."
+  }
+ ]
+}

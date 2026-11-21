@@ -1,0 +1,596 @@
+{
+ "id": "a2-11",
+ "level": "A2",
+ "no": 11,
+ "title": "Das gehört mir!",
+ "titleKo": "그건 제 거예요!",
+ "type": "Dialog am Flohmarktstand",
+ "typeKo": "벼룩시장 가판대 대화",
+ "intro": "벼룩시장에서 아빠와 딸이 물건을 사다가 뜻밖의 물건을 발견해요.",
+ "focus": [
+  "3격 지배 동사",
+  "지시대명사",
+  "소유 표현"
+ ],
+ "paragraphs": [
+  {
+   "label": "Frau Kern",
+   "de": "Guten Morgen, suchen Sie etwas Bestimmtes?",
+   "ko": "안녕하세요, 특별히 찾으시는 물건이 있으세요?"
+  },
+  {
+   "label": "Murat",
+   "de": "Ich suche eine Schreibtischlampe, und die dunkelgrüne gefällt mir – was kostet sie?",
+   "ko": "책상 스탠드를 찾고 있는데, 저 짙은 초록색 스탠드가 마음에 들어요. 얼마예요?"
+  },
+  {
+   "label": "Frau Kern",
+   "de": "Fünfzehn Euro – das war nämlich die Lampe von meiner Mutter, und sie funktioniert noch einwandfrei.",
+   "ko": "15유로예요. 제 어머니가 쓰시던 스탠드거든요. 그리고 아직도 아무 문제 없이 잘 켜져요."
+  },
+  {
+   "label": "Murat",
+   "de": "Hm, dem Lampenschirm fehlt ein kleines Stück. Würden Sie sie mir für zehn verkaufen?",
+   "ko": "음, 갓에서 작은 조각이 하나 떨어져 나갔네요. 10유로에 파시겠어요?"
+  },
+  {
+   "label": "Frau Kern",
+   "de": "Zwölf Euro ist mein letztes Angebot, billiger gebe ich sie Ihnen nicht.",
+   "ko": "12유로가 제가 드릴 수 있는 마지막 가격이에요. 그보다 싸게는 못 드려요."
+  },
+  {
+   "label": "Murat",
+   "de": "In Ordnung, außerdem suche ich ein Fahrradlicht für meine Tochter.",
+   "ko": "좋아요. 그리고 딸아이에게 줄 자전거 라이트도 찾고 있어요."
+  },
+  {
+   "label": "Frau Kern",
+   "de": "Hier ist eins mit Halterung, das ich Ihnen für drei Euro verkaufe.",
+   "ko": "여기 거치대가 달린 라이트가 하나 있는데, 3유로에 드릴게요."
+  },
+  {
+   "label": "Lina",
+   "de": "Papa, schau mal, die Puppe neben der Kaffeemaschine – die gehört mir!",
+   "ko": "아빠, 저기 좀 보세요. 커피 머신 옆에 있는 인형이요. 저거 제 거예요!"
+  },
+  {
+   "label": "Murat",
+   "de": "Quatsch, Lina, deine Puppen sitzen doch alle zu Hause im Kinderzimmer.",
+   "ko": "말도 안 돼요, 리나. 리나 인형은 전부 집에, 아이 방에 앉아 있잖아요."
+  },
+  {
+   "label": "Lina",
+   "de": "Die hier nicht, die habe ich im Frühling auf dem Schulflohmarkt verkauft. Sie war Mamas Geschenk zu meinem Geburtstag, und am Fuß steht noch mein Anfangsbuchstabe.",
+   "ko": "이건 아니에요. 이건 제가 봄에 학교 벼룩시장에서 팔았어요. 엄마가 제 생일에 주신 선물이었고, 발에 아직 제 이름 첫 글자가 쓰여 있어요."
+  },
+  {
+   "label": "Frau Kern",
+   "de": "Moment mal, gehört die Puppe etwa dir? Gestohlen habe ich sie aber nicht, denn meine Enkelin Mia hat sie auf einem Schulflohmarkt gekauft.",
+   "ko": "잠깐만요, 이 인형이 혹시 리나 거예요? 그래도 제가 훔친 건 아니에요. 제 손녀 미아가 학교 벼룩시장에서 산 거예요."
+  },
+  {
+   "label": "Murat",
+   "de": "Das denkt doch niemand! Dann hat Ihre Enkelin sie wahrscheinlich von Lina gekauft – was für eine Überraschung!",
+   "ko": "아무도 그렇게 생각하지 않아요! 그럼 손녀분이 아마 리나한테서 이 인형을 샀나 봐요. 정말 뜻밖이네요!"
+  },
+  {
+   "label": "Frau Kern",
+   "de": "Normalerweise kostet Mias Puppe vier Euro, aber für dich nur die Hälfte.",
+   "ko": "미아 인형은 원래 4유로인데, 리나한테는 반값만 받을게요."
+  },
+  {
+   "label": "Lina",
+   "de": "Danke schön, aber ich habe nur einen Euro – Papa, kaufst du sie mir?",
+   "ko": "고맙습니다. 그런데 저는 1유로밖에 없어요. 아빠, 이 인형 사 주실래요?"
+  },
+  {
+   "label": "Murat",
+   "de": "Das macht zusammen siebzehn Euro – können Sie mir auf zwanzig herausgeben?",
+   "ko": "그럼 전부 17유로네요. 20유로 내면 거슬러 주실 수 있어요?"
+  },
+  {
+   "label": "Frau Kern",
+   "de": "Drei Euro zurück, und die Stofftasche schenke ich Ihnen, denn die steht Ihrer Tochter wirklich gut!",
+   "ko": "거스름돈 3유로예요. 그리고 이 천 가방은 그냥 드릴게요. 따님한테 정말 잘 어울리거든요!"
+  },
+  {
+   "label": "Lina",
+   "de": "Mir gefällt sie auch! Und meiner Puppe gefällt es bestimmt, dass sie endlich wieder nach Hause kommt.",
+   "ko": "저도 마음에 들어요! 그리고 제 인형도 드디어 다시 집에 오게 돼서 분명히 좋아할 거예요."
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Murat entdeckt an der Lampe einen kleinen Schaden.",
+   "answer": 0,
+   "evidence": "dem Lampenschirm fehlt ein kleines Stück",
+   "pairs": [
+    [
+     "dem Lampenschirm fehlt ein kleines Stück",
+     "einen kleinen Schaden"
+    ]
+   ],
+   "explain": "무라트는 스탠드 갓에서 작은 조각이 떨어져 나갔다고 말해요(dem Lampenschirm fehlt ein kleines Stück). 조각이 빠져 있다는 말을 '작은 손상(einen kleinen Schaden)'으로 바꿔 말했으므로 맞는 내용이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Für wie viel Geld kauft Murat die Lampe am Ende?",
+   "options": [
+    "Für drei Euro weniger, als Frau Kern zuerst verlangt.",
+    "Für zehn Euro, weil an ihrem Schirm ein Stück fehlt.",
+    "Für fünfzehn Euro, weil sie einwandfrei funktioniert."
+   ],
+   "answer": 0,
+   "evidence": "Zwölf Euro ist mein letztes Angebot",
+   "pairs": [
+    [
+     "Fünfzehn Euro",
+     "zuerst verlangt"
+    ],
+    [
+     "Zwölf Euro ist mein letztes Angebot",
+     "drei Euro weniger"
+    ]
+   ],
+   "explain": "케른 씨는 처음에 15유로를 부르고, 흥정 끝에 12유로가 마지막 가격(mein letztes Angebot)이라고 해요. 무라트가 In Ordnung이라고 받아들이니까 처음 가격보다 3유로 싸게 사는 거예요. 10유로는 무라트가 제안한 값이고, 15유로는 처음 가격일 뿐이에요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Das Fahrradlicht mit Halterung ist für Murats eigenes Rad.",
+   "answer": 1,
+   "evidence": "außerdem suche ich ein Fahrradlicht für meine Tochter",
+   "pairs": [
+    [
+     "für meine Tochter",
+     "für Murats eigenes Rad"
+    ]
+   ],
+   "explain": "무라트는 딸에게 줄 자전거 라이트를 찾는다고 해요(ein Fahrradlicht für meine Tochter). 거치대가 달린 라이트는 무라트 자신의 자전거에 달 것이 아니므로 틀린 내용이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "paraphrase",
+   "q": "Was meint Murat mit dem Satz „Quatsch, Lina, deine Puppen sitzen doch alle zu Hause im Kinderzimmer.“?",
+   "options": [
+    "Er will, dass Lina die Puppe ins Kinderzimmer setzt.",
+    "Er glaubt, dass Lina keine Puppe weggegeben hat.",
+    "Er findet, dass Lina zu Hause zu viele Puppen hat."
+   ],
+   "answer": 1,
+   "evidence": "Quatsch, Lina, deine Puppen sitzen doch alle zu Hause im Kinderzimmer.",
+   "pairs": [
+    [
+     "deine Puppen sitzen doch alle zu Hause",
+     "keine Puppe weggegeben hat"
+    ]
+   ],
+   "explain": "리나가 '저 인형은 제 거예요'라고 하자 아빠는 리나의 인형이 전부 집에 있다고 말해요. 리나가 인형을 하나도 내놓지 않았다고 생각하는 거예요. 아빠는 리나가 봄에 인형을 판 일을 몰라요. 인형을 방에 두라는 말이나 인형이 너무 많다는 말은 하지 않아요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Woher hat Mia die Puppe?",
+   "options": [
+    "Linas Mama hat sie ihr zu ihrem Geburtstag geschenkt.",
+    "Ihre Oma hat sie ihr im Frühling auf dem Flohmarkt gekauft.",
+    "Sie hat sie bei einem Verkauf an einer Schule gekauft."
+   ],
+   "answer": 2,
+   "evidence": "meine Enkelin Mia hat sie auf einem Schulflohmarkt gekauft",
+   "pairs": [
+    [
+     "auf einem Schulflohmarkt",
+     "bei einem Verkauf an einer Schule"
+    ]
+   ],
+   "explain": "케른 씨는 손녀 미아가 학교 벼룩시장에서 인형을 샀다고 해요. Schulflohmarkt를 '학교에서 열린 판매 행사(ein Verkauf an einer Schule)'로 바꿔 말했어요. 생일 선물은 엄마가 리나에게 준 것이고, 인형을 산 사람은 할머니가 아니라 미아 자신이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Warum sagt Frau Kern „Gestohlen habe ich sie aber nicht“?",
+   "options": [
+    "Sie denkt, dass Mia die Puppe in der Schule gestohlen hat.",
+    "Sie fürchtet, dass die beiden sie für eine Diebin halten.",
+    "Sie möchte, dass Murat für die Puppe den vollen Preis zahlt."
+   ],
+   "answer": 1,
+   "evidence": "Moment mal, gehört die Puppe etwa dir?",
+   "pairs": [
+    [
+     "Gestohlen habe ich sie aber nicht",
+     "sie für eine Diebin halten"
+    ]
+   ],
+   "explain": "리나가 인형이 자기 것이라고 하자 케른 씨는 놀라서 묻고, 곧바로 자기가 훔친 게 아니라고 말해요. 무라트와 리나가 자기를 도둑(Diebin)으로 생각할까 봐 걱정하는 거예요. 케른 씨는 미아가 인형을 샀다고 말하고, 인형 값은 오히려 절반으로 깎아 줘요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Wer bezahlt am Ende Linas Puppe?",
+   "options": [
+    "Lina bezahlt sie selbst mit ihrem letzten Euro.",
+    "Frau Kern schenkt sie Lina zusammen mit der Tasche.",
+    "Murat bezahlt sie zusammen mit Lampe und Licht."
+   ],
+   "answer": 2,
+   "evidence": "Das macht zusammen siebzehn Euro",
+   "pairs": [
+    [
+     "kaufst du sie mir?",
+     "Murat bezahlt sie"
+    ],
+    [
+     "Das macht zusammen siebzehn Euro",
+     "zusammen mit Lampe und Licht"
+    ]
+   ],
+   "explain": "리나는 1유로밖에 없다며 아빠에게 인형을 사 달라고 해요(kaufst du sie mir?). 무라트가 말한 합계 17유로는 스탠드 12유로, 라이트 3유로, 인형 2유로(4유로의 절반)를 더한 값이에요. 그러니까 인형값도 무라트가 함께 내요. 리나의 1유로로는 인형값이 모자라고, 케른 씨가 그냥 주는 것은 인형이 아니라 천 가방이에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "3격을 쓰는 동사",
+   "term": "Verben mit Dativ",
+   "explain": "gefallen(마음에 들다), gehören(~의 것이다), fehlen(빠져 있다), stehen(어울리다)은 사람이나 물건을 3격으로 써요. 이때 주어는 대개 물건이에요(die dunkelgrüne gefällt mir). 이런 동사는 3격이 1번 자리에 오는 경우가 많은데, 그러면 동사가 바로 뒤에 오고 주어는 동사 다음에 와요(dem Lampenschirm fehlt ein kleines Stück). gefallen의 주어가 dass절일 때는 주절에 es를 함께 쓰는 경우가 많아요(meiner Puppe gefällt es, dass …).",
+   "pattern": "주어(물건) + gefallen/gehören/fehlen/stehen + 3격(사람·물건)",
+   "examples": [
+    {
+     "de": "Hm, dem Lampenschirm fehlt ein kleines Stück.",
+     "ko": "음, 갓에서 작은 조각이 하나 떨어져 나갔네요.",
+     "mark": [
+      "dem Lampenschirm",
+      "fehlt"
+     ],
+     "parts": [
+      [
+       "Hm,",
+       "기타"
+      ],
+      [
+       "dem Lampenschirm",
+       "3격 목적어"
+      ],
+      [
+       "fehlt",
+       "동사"
+      ],
+      [
+       "ein kleines Stück.",
+       "주어"
+      ]
+     ]
+    },
+    {
+     "de": "Moment mal, gehört die Puppe etwa dir?",
+     "ko": "잠깐만요, 이 인형이 혹시 리나 거예요?",
+     "mark": [
+      "gehört",
+      "dir"
+     ],
+     "parts": [
+      [
+       "Moment mal,",
+       "기타"
+      ],
+      [
+       "gehört",
+       "동사"
+      ],
+      [
+       "die Puppe",
+       "주어"
+      ],
+      [
+       "etwa",
+       "부사어"
+      ],
+      [
+       "dir?",
+       "3격 목적어"
+      ]
+     ]
+    },
+    {
+     "de": "Und meiner Puppe gefällt es bestimmt, dass sie endlich wieder nach Hause kommt.",
+     "ko": "그리고 제 인형도 드디어 다시 집에 오게 돼서 분명히 좋아할 거예요.",
+     "mark": [
+      "meiner Puppe gefällt es"
+     ]
+    }
+   ],
+   "tip": "gefallen은 마음에 들어 하는 사람이 3격이에요. Ich gefalle die Lampe.가 아니라 Die Lampe gefällt mir.라고 해요. 물건이 누구에게 어울린다고 할 때는 stehen + 3격 + gut을 써요(die steht Ihrer Tochter wirklich gut)."
+  },
+  {
+   "title": "지시대명사 der · die · das",
+   "term": "Demonstrativpronomen der, die, das",
+   "explain": "der, die, das를 명사 없이 혼자 쓰면 '그것, 이것'처럼 앞에 나온 것이나 눈앞의 것을 가리키는 지시대명사가 돼요. 말할 때는 er, sie, es보다 자주 쓰고, 강조하려고 문장 맨 앞에 두는 경우가 많아요(die gehört mir!). 형태는 대부분 정관사와 같고, 가리키는 명사의 성과 문장 속 격에 맞춰요. das는 앞에서 한 말 전체를 가리킬 수도 있어요(Das denkt doch niemand!).",
+   "pattern": "지시대명사(der/die/das) + 동사 + …",
+   "examples": [
+    {
+     "de": "Papa, schau mal, die Puppe neben der Kaffeemaschine – die gehört mir!",
+     "ko": "아빠, 저기 좀 보세요. 커피 머신 옆에 있는 인형이요. 저거 제 거예요!",
+     "mark": [
+      "die gehört mir"
+     ],
+     "parts": [
+      [
+       "Papa,",
+       "기타"
+      ],
+      [
+       "schau",
+       "동사"
+      ],
+      [
+       "mal,",
+       "기타"
+      ],
+      [
+       "die Puppe neben der Kaffeemaschine –",
+       "기타"
+      ],
+      [
+       "die",
+       "주어"
+      ],
+      [
+       "gehört",
+       "동사"
+      ],
+      [
+       "mir!",
+       "3격 목적어"
+      ]
+     ]
+    },
+    {
+     "de": "Die hier nicht, die habe ich im Frühling auf dem Schulflohmarkt verkauft.",
+     "ko": "이건 아니에요. 이건 제가 봄에 학교 벼룩시장에서 팔았어요.",
+     "mark": [
+      "Die hier",
+      "die habe ich"
+     ],
+     "parts": [
+      [
+       "Die hier nicht,",
+       "기타"
+      ],
+      [
+       "die",
+       "4격 목적어"
+      ],
+      [
+       "habe",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "im Frühling",
+       "부사어(시간)"
+      ],
+      [
+       "auf dem Schulflohmarkt",
+       "부사어(장소)"
+      ],
+      [
+       "verkauft.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Das denkt doch niemand!",
+     "ko": "아무도 그렇게 생각하지 않아요!",
+     "mark": [
+      "Das"
+     ],
+     "parts": [
+      [
+       "Das",
+       "4격 목적어"
+      ],
+      [
+       "denkt",
+       "동사"
+      ],
+      [
+       "doch",
+       "기타"
+      ],
+      [
+       "niemand!",
+       "주어"
+      ]
+     ]
+    }
+   ],
+   "tip": "die Puppe의 die는 뒤에 명사가 오는 정관사이고, die gehört mir의 die는 혼자 쓰인 지시대명사예요. 지시대명사는 말할 때 강하게 읽어요."
+  },
+  {
+   "title": "소유 표현 – 이름 + s와 von + 3격",
+   "term": "Genitiv bei Namen und von + Dativ",
+   "explain": "사람 이름이나 Mama, Papa 같은 호칭 뒤에 -s를 붙이면 '~의'라는 뜻이 돼요(Mias Puppe, Mamas Geschenk). 이 말은 명사 앞에 오고, 그 명사에는 관사를 쓰지 않아요. 주인이 관사가 붙는 명사일 때는 말할 때 명사 뒤에 von + 3격을 써요(die Lampe von meiner Mutter).",
+   "pattern": "이름 + s + 명사 (관사 없음) / 명사 + von + 3격",
+   "examples": [
+    {
+     "de": "Normalerweise kostet Mias Puppe vier Euro, aber für dich nur die Hälfte.",
+     "ko": "미아 인형은 원래 4유로인데, 리나한테는 반값만 받을게요.",
+     "mark": [
+      "Mias Puppe"
+     ],
+     "parts": [
+      [
+       "Normalerweise",
+       "부사어"
+      ],
+      [
+       "kostet",
+       "동사"
+      ],
+      [
+       "Mias Puppe",
+       "주어"
+      ],
+      [
+       "vier Euro,",
+       "4격 목적어"
+      ],
+      [
+       "aber",
+       "접속사"
+      ],
+      [
+       "für dich",
+       "부사어"
+      ],
+      [
+       "nur die Hälfte.",
+       "기타"
+      ]
+     ]
+    },
+    {
+     "de": "Sie war Mamas Geschenk zu meinem Geburtstag, und am Fuß steht noch mein Anfangsbuchstabe.",
+     "ko": "엄마가 제 생일에 주신 선물이었고, 발에 아직 제 이름 첫 글자가 쓰여 있어요.",
+     "mark": [
+      "Mamas Geschenk"
+     ],
+     "parts": [
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "war",
+       "동사"
+      ],
+      [
+       "Mamas Geschenk zu meinem Geburtstag,",
+       "보어"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "am Fuß",
+       "부사어(장소)"
+      ],
+      [
+       "steht",
+       "동사"
+      ],
+      [
+       "noch",
+       "부사어(시간)"
+      ],
+      [
+       "mein Anfangsbuchstabe.",
+       "주어"
+      ]
+     ]
+    },
+    {
+     "de": "Fünfzehn Euro – das war nämlich die Lampe von meiner Mutter, und sie funktioniert noch einwandfrei.",
+     "ko": "15유로예요. 제 어머니가 쓰시던 스탠드거든요. 그리고 아직도 아무 문제 없이 잘 켜져요.",
+     "mark": [
+      "die Lampe von meiner Mutter"
+     ]
+    }
+   ],
+   "tip": "영어처럼 아포스트로피를 쓰지 않아요. Mia's Puppe가 아니라 Mias Puppe라고 써요. 글에서는 von + 3격 대신 2격을 쓰기도 해요(die Lampe meiner Mutter)."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "der Flohmarkt, -¨e",
+   "ko": "벼룩시장"
+  },
+  {
+   "de": "die Schreibtischlampe, -n",
+   "ko": "책상 스탠드"
+  },
+  {
+   "de": "der Lampenschirm, -e",
+   "ko": "전등갓"
+  },
+  {
+   "de": "einwandfrei",
+   "ko": "흠잡을 데 없이, 아무 문제 없이"
+  },
+  {
+   "de": "das Angebot, -e",
+   "ko": "(판매자가 부르는) 가격, 제안"
+  },
+  {
+   "de": "das Fahrradlicht, -er",
+   "ko": "자전거 라이트"
+  },
+  {
+   "de": "die Halterung, -en",
+   "ko": "거치대, 고정대"
+  },
+  {
+   "de": "der Quatsch (Sg.)",
+   "ko": "허튼소리 (Quatsch! 말도 안 돼요!)"
+  },
+  {
+   "de": "der Anfangsbuchstabe, -n",
+   "ko": "(이름의) 첫 글자"
+  },
+  {
+   "de": "die Enkelin, -nen",
+   "ko": "손녀"
+  },
+  {
+   "de": "die Hälfte, -n",
+   "ko": "절반, 반"
+  },
+  {
+   "de": "die Stofftasche, -n",
+   "ko": "천 가방"
+  },
+  {
+   "de": "stehlen (stiehlt, stahl, hat gestohlen)",
+   "ko": "훔치다"
+  },
+  {
+   "de": "schenken + Dat. + Akk.",
+   "ko": "~에게 ~을 선물하다, 그냥 주다"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "etwas Bestimmtes suchen",
+   "ko": "특별히 찾는 것이 있다",
+   "ex": "Guten Morgen, suchen Sie etwas Bestimmtes?",
+   "exko": "안녕하세요, 특별히 찾으시는 물건이 있으세요?"
+  },
+  {
+   "de": "mein letztes Angebot",
+   "ko": "(흥정에서) 제가 부를 수 있는 마지막 가격",
+   "ex": "Zwölf Euro ist mein letztes Angebot, billiger gebe ich sie Ihnen nicht.",
+   "exko": "12유로가 제가 드릴 수 있는 마지막 가격이에요. 그보다 싸게는 못 드려요."
+  },
+  {
+   "de": "jemandem auf (+ Betrag) herausgeben",
+   "ko": "(큰돈을 받고) ~에게 거스름돈을 내주다",
+   "ex": "Das macht zusammen siebzehn Euro – können Sie mir auf zwanzig herausgeben?",
+   "exko": "그럼 전부 17유로네요. 20유로 내면 거슬러 주실 수 있어요?"
+  },
+  {
+   "de": "jemandem gut stehen",
+   "ko": "~에게 잘 어울리다",
+   "ex": "Drei Euro zurück, und die Stofftasche schenke ich Ihnen, denn die steht Ihrer Tochter wirklich gut!",
+   "exko": "거스름돈 3유로예요. 그리고 이 천 가방은 그냥 드릴게요. 따님한테 정말 잘 어울리거든요!"
+  }
+ ]
+}

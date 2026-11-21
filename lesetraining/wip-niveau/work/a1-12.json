@@ -1,0 +1,473 @@
+{
+ "id": "a1-12",
+ "level": "A1",
+ "no": 12,
+ "title": "Im Café Sonnenschein",
+ "titleKo": "카페 존넨샤인에서",
+ "type": "Dialog",
+ "typeKo": "카페 대화문",
+ "intro": "카페에서 두 손님이 음료와 빵을 주문하고 계산하는 대화예요.",
+ "focus": [
+  "주문할 때의 4격",
+  "kein …, sondern …",
+  "목적어가 1번 자리에 올 때"
+ ],
+ "paragraphs": [
+  {
+   "label": "Herr Bauer",
+   "de": "Willkommen im Café Sonnenschein! Was möchten Sie trinken?",
+   "ko": "카페 존넨샤인에 어서 오세요! 무엇을 드시겠어요?"
+  },
+  {
+   "label": "Lena",
+   "de": "Für mich einen Kaffee mit Milch, bitte. Und was möchtest du, Tom?",
+   "ko": "저는 우유 넣은 커피 주세요. 톰은 뭐 마실래요?"
+  },
+  {
+   "label": "Tom",
+   "de": "Nachmittags trinke ich keinen Kaffee, ich nehme lieber eine Cola. Haben Sie auch Brötchen?",
+   "ko": "저는 오후에는 커피를 안 마셔요. 콜라로 할게요. 롤빵도 있나요?"
+  },
+  {
+   "label": "Herr Bauer",
+   "de": "Ja, wir haben Brötchen mit Käse oder mit Schinken, und jedes Brötchen kostet 2 Euro.",
+   "ko": "네, 치즈 롤빵이나 햄 롤빵이 있어요. 어느 롤빵이든 하나에 2유로예요."
+  },
+  {
+   "label": "Tom",
+   "de": "Dann möchte ich bitte ein Brötchen mit Käse, denn Schinken esse ich nicht.",
+   "ko": "그럼 치즈 롤빵 하나 주세요. 저는 햄을 안 먹거든요."
+  },
+  {
+   "label": "Lena",
+   "de": "Und ich möchte ein Stück Apfelkuchen – kostet der Kuchen auch nur 2 Euro?",
+   "ko": "그리고 저는 사과 케이크 한 조각 주세요. 케이크도 2유로밖에 안 하나요?"
+  },
+  {
+   "label": "Herr Bauer",
+   "de": "Nein, leider nicht – ein Stück kostet 3,50 Euro.",
+   "ko": "아니요, 아쉽지만 아니에요. 한 조각에 3,50유로예요."
+  },
+  {
+   "label": "Lena",
+   "de": "Oh, dann nehme ich doch keinen Kuchen, sondern auch ein Brötchen, aber mit Schinken.",
+   "ko": "아, 그럼 케이크 말고 저도 롤빵으로 할게요. 햄을 넣은 걸로요."
+  },
+  {
+   "label": "Herr Bauer",
+   "de": "Gern – einen Kaffee, eine Cola und zwei Brötchen. Zahlen Sie zusammen oder getrennt?",
+   "ko": "네, 커피 한 잔, 콜라 한 잔, 롤빵 두 개요. 같이 계산하시겠어요, 따로 계산하시겠어요?"
+  },
+  {
+   "label": "Tom",
+   "de": "Zusammen, bitte – heute lade ich dich ein, Lena! Wie viel macht das?",
+   "ko": "같이 계산할게요. 오늘은 제가 살게요, 레나! 얼마예요?"
+  },
+  {
+   "label": "Herr Bauer",
+   "de": "Das macht zusammen 9,80 Euro, und die Getränke bringe ich gleich.",
+   "ko": "모두 9,80유로예요. 음료는 바로 가져다 드릴게요."
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Tom möchte am Nachmittag einen Kaffee trinken.",
+   "answer": 1,
+   "evidence": "Nachmittags trinke ich keinen Kaffee",
+   "pairs": [
+    [
+     "Nachmittags trinke ich keinen Kaffee",
+     "Tom möchte am Nachmittag einen Kaffee trinken"
+    ]
+   ],
+   "explain": "톰은 'Nachmittags trinke ich keinen Kaffee(저는 오후에는 커피를 안 마셔요)'라고 말하고 콜라를 주문해요. 문제의 Nachmittag, Kaffee, trinken은 본문에 나오는 낱말이지만 뜻은 반대예요. 커피를 주문한 사람은 레나예요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was bestellt Tom?",
+   "options": [
+    "Ein Käsebrötchen und einen Kaffee",
+    "Ein Schinkenbrötchen und eine Cola",
+    "Ein Käsebrötchen und eine Cola"
+   ],
+   "answer": 2,
+   "evidence": "Dann möchte ich bitte ein Brötchen mit Käse",
+   "pairs": [
+    [
+     "ein Brötchen mit Käse",
+     "Ein Käsebrötchen"
+    ],
+    [
+     "ich nehme lieber eine Cola",
+     "eine Cola"
+    ]
+   ],
+   "explain": "톰은 콜라를 마시겠다고 하고(ich nehme lieber eine Cola), 치즈 롤빵을 주문해요(ein Brötchen mit Käse). Brötchen mit Käse를 합성명사 Käsebrötchen으로 바꿔 말했어요. 커피는 레나가 주문했고, 햄 롤빵(Schinkenbrötchen)도 레나가 골라요. 톰은 햄을 먹지 않아요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Warum nimmt Lena keinen Kuchen?",
+   "options": [
+    "Sie findet den Kuchen zu teuer.",
+    "Es gibt heute keinen Kuchen mehr.",
+    "Sie isst lieber etwas mit Käse."
+   ],
+   "answer": 0,
+   "evidence": "Oh, dann nehme ich doch keinen Kuchen",
+   "pairs": [
+    [
+     "kostet der Kuchen auch nur 2 Euro?",
+     "zu teuer"
+    ],
+    [
+     "ein Stück kostet 3,50 Euro",
+     "Sie findet den Kuchen zu teuer"
+    ]
+   ],
+   "explain": "레나는 케이크도 2유로밖에 안 하는지 물어요(auch nur 2 Euro?). 그런데 한 조각에 3,50유로라는 말을 듣고 바로 마음을 바꿔요(dann nehme ich doch keinen Kuchen). 생각보다 비싸서 그만둔 거예요. 바우어 씨가 케이크 값을 말하니까 케이크가 없는 것은 아니고, 레나가 고른 롤빵은 치즈가 아니라 햄 롤빵이에요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Das Käsebrötchen und das Schinkenbrötchen kosten gleich viel.",
+   "answer": 0,
+   "evidence": "und jedes Brötchen kostet 2 Euro",
+   "pairs": [
+    [
+     "jedes Brötchen kostet 2 Euro",
+     "kosten gleich viel"
+    ],
+    [
+     "Brötchen mit Käse oder mit Schinken",
+     "Das Käsebrötchen und das Schinkenbrötchen"
+    ]
+   ],
+   "explain": "바우어 씨는 치즈 롤빵과 햄 롤빵이 있다고 하면서 'jedes Brötchen kostet 2 Euro(어느 롤빵이든 하나에 2유로예요)'라고 해요. 그러니까 두 롤빵의 값은 같아요(gleich viel). 맞는 문장이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "paraphrase",
+   "q": "Was bedeutet die Frage „Zahlen Sie zusammen oder getrennt?“",
+   "options": [
+    "Sitzen Sie gern zusammen an einem Tisch?",
+    "Brauchen Sie eine Rechnung oder zwei?",
+    "Bestellen Sie zusammen noch etwas?"
+   ],
+   "answer": 1,
+   "evidence": "Zahlen Sie zusammen oder getrennt?",
+   "pairs": [
+    [
+     "zusammen oder getrennt",
+     "eine Rechnung oder zwei"
+    ]
+   ],
+   "explain": "zusammen zahlen은 한 번에 같이 계산하는 것이고, getrennt zahlen은 사람마다 따로 계산하는 거예요. 그래서 이 질문은 계산서가 한 장인지 두 장인지 묻는 말이에요. zusammen이 들어 있어도 자리(Tisch)나 추가 주문(bestellen)을 묻는 말이 아니에요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Lena bezahlt heute für Tom.",
+   "answer": 1,
+   "evidence": "heute lade ich dich ein, Lena!",
+   "pairs": [
+    [
+     "heute lade ich dich ein, Lena",
+     "Lena bezahlt heute für Tom"
+    ]
+   ],
+   "explain": "톰이 'Zusammen, bitte – heute lade ich dich ein, Lena!(같이 계산할게요. 오늘은 제가 살게요, 레나!)'라고 말해요. jemanden einladen은 여기서 다른 사람 몫까지 돈을 낸다는 뜻이에요. 그러니까 돈을 내는 사람은 레나가 아니라 톰이에요. 틀린 문장이에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "주문할 때의 4격 – 동사 없이도",
+   "term": "Akkusativ beim Bestellen",
+   "explain": "주문할 때 원하는 것은 4격으로 말해요. 남성 명사는 einen(einen Kaffee), 여성 명사는 eine(eine Cola), 중성 명사는 ein(ein Brötchen, ein Stück)이에요. 대화에서는 möchte나 nehme 같은 동사를 빼고 4격만 말하기도 해요. Für mich einen Kaffee …에서 동사가 없어도 einen을 보면 4격이라는 것을 알 수 있어요.",
+   "pattern": "Für mich + 4격, bitte. · Ich möchte / nehme + 4격",
+   "examples": [
+    {
+     "de": "Für mich einen Kaffee mit Milch, bitte.",
+     "ko": "저는 우유 넣은 커피 주세요.",
+     "mark": [
+      "einen Kaffee"
+     ],
+     "parts": [
+      [
+       "Für mich",
+       "기타"
+      ],
+      [
+       "einen Kaffee mit Milch,",
+       "4격 목적어"
+      ],
+      [
+       "bitte.",
+       "기타"
+      ]
+     ]
+    },
+    {
+     "de": "Gern – einen Kaffee, eine Cola und zwei Brötchen.",
+     "ko": "네, 커피 한 잔, 콜라 한 잔, 롤빵 두 개요.",
+     "mark": [
+      "einen Kaffee",
+      "eine Cola",
+      "zwei Brötchen"
+     ]
+    },
+    {
+     "de": "Und ich möchte ein Stück Apfelkuchen – kostet der Kuchen auch nur 2 Euro?",
+     "ko": "그리고 저는 사과 케이크 한 조각 주세요. 케이크도 2유로밖에 안 하나요?",
+     "mark": [
+      "möchte ein Stück Apfelkuchen"
+     ]
+    }
+   ],
+   "tip": "중성 명사는 1격과 4격의 모양이 같아요(ein Stück). 남성 명사만 4격에서 ein이 einen으로 바뀌어요. 부정할 때도 남성 4격은 keinen이에요(keinen Kaffee, keinen Kuchen)."
+  },
+  {
+   "title": "kein …, sondern … – 다른 것으로 바꿔 말하기",
+   "term": "kein …, sondern …",
+   "explain": "sondern은 앞의 것을 부정하고 '그 대신 ~'을 말할 때 써요. 그래서 sondern 앞에는 kein이나 nicht가 있어요. sondern은 und, aber처럼 문장 성분의 자리를 차지하지 않는 접속사예요. 레나는 케이크를 부정하고(keinen Kuchen) 그 대신 롤빵을 골라요(sondern auch ein Brötchen).",
+   "pattern": "kein + 명사 …, sondern + 다른 명사",
+   "examples": [
+    {
+     "de": "Oh, dann nehme ich doch keinen Kuchen, sondern auch ein Brötchen, aber mit Schinken.",
+     "ko": "아, 그럼 케이크 말고 저도 롤빵으로 할게요. 햄을 넣은 걸로요.",
+     "mark": [
+      "keinen Kuchen",
+      "sondern"
+     ],
+     "parts": [
+      [
+       "Oh,",
+       "기타"
+      ],
+      [
+       "dann",
+       "부사어(시간)"
+      ],
+      [
+       "nehme",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "doch",
+       "기타"
+      ],
+      [
+       "keinen Kuchen,",
+       "4격 목적어"
+      ],
+      [
+       "sondern",
+       "접속사"
+      ],
+      [
+       "auch ein Brötchen,",
+       "4격 목적어"
+      ],
+      [
+       "aber",
+       "접속사"
+      ],
+      [
+       "mit Schinken.",
+       "기타"
+      ]
+     ]
+    },
+    {
+     "de": "Nachmittags trinke ich keinen Kaffee, ich nehme lieber eine Cola.",
+     "ko": "저는 오후에는 커피를 안 마셔요. 콜라로 할게요.",
+     "mark": [
+      "keinen Kaffee",
+      "lieber eine Cola"
+     ]
+    }
+   ],
+   "tip": "aber와 sondern은 둘 다 '그러나'로 옮길 수 있지만 쓰임이 달라요. 앞의 것을 버리고 다른 것을 고를 때는 sondern을 써요(keinen Kuchen, sondern ein Brötchen). 앞의 말은 그대로 두고 조건을 덧붙일 때는 aber를 써요(ein Brötchen, aber mit Schinken)."
+  },
+  {
+   "title": "목적어가 1번 자리에 올 때",
+   "term": "Akkusativobjekt auf Position 1",
+   "explain": "독일어에서는 강조하고 싶은 말을 문장 맨 앞, 곧 1번 자리에 둘 수 있어요. 4격 목적어가 1번 자리에 와도 동사는 2번 자리에 있고, 주어는 동사 바로 뒤로 가요. Schinken esse ich nicht는 '햄은 안 먹어요'처럼 Schinken을 강조하는 말이에요.",
+   "pattern": "4격 목적어(1번 자리) + 동사(2번 자리) + 주어 + …",
+   "examples": [
+    {
+     "de": "Dann möchte ich bitte ein Brötchen mit Käse, denn Schinken esse ich nicht.",
+     "ko": "그럼 치즈 롤빵 하나 주세요. 저는 햄을 안 먹거든요.",
+     "mark": [
+      "Schinken esse ich"
+     ],
+     "parts": [
+      [
+       "Dann",
+       "부사어(시간)"
+      ],
+      [
+       "möchte",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "bitte",
+       "기타"
+      ],
+      [
+       "ein Brötchen mit Käse,",
+       "4격 목적어"
+      ],
+      [
+       "denn",
+       "접속사"
+      ],
+      [
+       "Schinken",
+       "4격 목적어"
+      ],
+      [
+       "esse",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "nicht.",
+       "부정어"
+      ]
+     ]
+    },
+    {
+     "de": "Das macht zusammen 9,80 Euro, und die Getränke bringe ich gleich.",
+     "ko": "모두 9,80유로예요. 음료는 바로 가져다 드릴게요.",
+     "mark": [
+      "die Getränke bringe ich"
+     ],
+     "parts": [
+      [
+       "Das",
+       "주어"
+      ],
+      [
+       "macht",
+       "동사"
+      ],
+      [
+       "zusammen",
+       "부사어(방법)"
+      ],
+      [
+       "9,80 Euro,",
+       "4격 목적어"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "die Getränke",
+       "4격 목적어"
+      ],
+      [
+       "bringe",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "gleich.",
+       "부사어(시간)"
+      ]
+     ]
+    }
+   ],
+   "tip": "1번 자리에는 한 성분만 와요. Nachmittags trinke ich keinen Kaffee처럼 시간 표현이 1번 자리에 올 때도 동사는 2번 자리예요. denn은 1번 자리를 차지하지 않아서 denn 뒤의 Schinken이 1번 자리예요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "das Brötchen, -",
+   "ko": "롤빵, 작은 빵"
+  },
+  {
+   "de": "der Schinken, -",
+   "ko": "햄"
+  },
+  {
+   "de": "das Stück, -e",
+   "ko": "조각, 한 개"
+  },
+  {
+   "de": "der Apfelkuchen, -",
+   "ko": "사과 케이크"
+  },
+  {
+   "de": "das Getränk, -e",
+   "ko": "음료"
+  },
+  {
+   "de": "nachmittags",
+   "ko": "오후에"
+  },
+  {
+   "de": "kosten (kostet, hat gekostet)",
+   "ko": "값이 ~이다"
+  },
+  {
+   "de": "zahlen",
+   "ko": "계산하다, 돈을 내다"
+  },
+  {
+   "de": "getrennt",
+   "ko": "따로, 나누어서"
+  },
+  {
+   "de": "ein|laden (lädt ein, hat eingeladen)",
+   "ko": "(돈을 내며) 대접하다, 초대하다"
+  },
+  {
+   "de": "leider",
+   "ko": "아쉽지만, 유감스럽게도"
+  },
+  {
+   "de": "gleich",
+   "ko": "곧, 바로"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "Für mich …, bitte.",
+   "ko": "저는 …(으)로 주세요",
+   "ex": "Für mich einen Kaffee mit Milch, bitte.",
+   "exko": "저는 우유 넣은 커피 주세요."
+  },
+  {
+   "de": "zusammen oder getrennt zahlen",
+   "ko": "같이 계산하다 / 따로 계산하다",
+   "ex": "Zahlen Sie zusammen oder getrennt?",
+   "exko": "같이 계산하시겠어요, 따로 계산하시겠어요?"
+  },
+  {
+   "de": "Das macht … Euro.",
+   "ko": "모두 …유로예요",
+   "ex": "Das macht zusammen 9,80 Euro, und die Getränke bringe ich gleich.",
+   "exko": "모두 9,80유로예요. 음료는 바로 가져다 드릴게요."
+  }
+ ]
+}

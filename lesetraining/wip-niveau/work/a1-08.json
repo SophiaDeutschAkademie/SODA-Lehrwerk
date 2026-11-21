@@ -1,0 +1,451 @@
+{
+ "id": "a1-08",
+ "level": "A1",
+ "no": 8,
+ "title": "So findest du meinen Stand",
+ "titleKo": "제 가판대는 이렇게 찾아오세요",
+ "type": "Nachricht (Wegbeschreibung)",
+ "typeKo": "메시지 (길 안내)",
+ "intro": "루카스가 벼룩시장에 오는 친구 다나에게 가는 길을 알려 주는 메시지예요.",
+ "focus": [
+  "Wo? 3격 · Wohin? 4격",
+  "du 명령형",
+  "질문 + Dann (조건)"
+ ],
+ "paragraphs": [
+  {
+   "style": "meta",
+   "de": "Hallo Dana,",
+   "ko": "다나, 안녕하세요!"
+  },
+  {
+   "de": "am Sonntag verkaufe ich auf dem Flohmarkt im Stadtpark alte Bücher und Kleidung. Du hast Zeit? Dann komm doch vorbei!",
+   "ko": "일요일에 저는 슈타트파르크 공원 벼룩시장에서 헌책과 헌 옷을 팔아요. 시간 있어요? 그럼 꼭 들러 주세요!"
+  },
+  {
+   "de": "Nimm die U-Bahn-Linie 3 und steig an der Haltestelle „Stadtpark“ aus. Zuerst gehst du fünf Minuten geradeaus, dann siehst du eine große Kirche, und dort gehst du nach links. Geh danach über die Holzbrücke, und hinter der Brücke bist du schon auf dem Flohmarkt.",
+   "ko": "지하철 3호선을 타고 ‘슈타트파르크’ 역에서 내리세요. 먼저 5분 동안 쭉 직진하세요. 그러면 큰 교회가 보이는데, 거기서 왼쪽으로 가세요. 그다음에 나무다리를 건너세요. 다리를 건너면 바로 벼룩시장이에요."
+  },
+  {
+   "de": "Zum Schluss siehst du rechts ein kleines Eiscafé, und mein Stand ist direkt neben dem Eiscafé, gegenüber dem Spielplatz. Links neben mir steht ein Lampenstand.",
+   "ko": "마지막으로 오른쪽에 작은 아이스크림 가게가 보여요. 제 가판대는 아이스크림 가게 바로 옆, 놀이터 맞은편에 있어요. 제 왼쪽 옆에는 램프 가판대가 있어요."
+  },
+  {
+   "de": "Über meinem Verkaufstisch hängt ein rotes Tuch gegen die Sonne, und hinter dem Tisch warte ich auf dich. Bring mir bitte einen Milchkaffee mit, denn ich bin schon ab 7 Uhr da! Du findest den Stand nicht? Dann ruf mich einfach an.",
+   "ko": "제 판매 테이블 위에는 햇빛을 가리는 빨간 천이 걸려 있고, 저는 테이블 뒤에서 기다리고 있을게요. 밀크커피 한 잔 좀 가져다주세요. 저는 7시부터 거기 있거든요! 가판대를 못 찾겠어요? 그럼 그냥 전화하세요."
+  },
+  {
+   "style": "meta",
+   "de": "Bis Sonntag!",
+   "ko": "일요일에 봐요!"
+  },
+  {
+   "style": "meta",
+   "de": "Lukas",
+   "ko": "루카스"
+  }
+ ],
+ "questions": [
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was verkauft Lukas auf dem Flohmarkt?",
+   "options": [
+    "Sachen zum Anziehen und Lesen",
+    "alte Bücher und alte Lampen",
+    "Kaffee und Eis aus dem Eiscafé"
+   ],
+   "answer": 0,
+   "evidence": "am Sonntag verkaufe ich auf dem Flohmarkt im Stadtpark alte Bücher und Kleidung.",
+   "pairs": [
+    [
+     "Kleidung",
+     "Sachen zum Anziehen"
+    ],
+    [
+     "Bücher",
+     "Lesen"
+    ]
+   ],
+   "explain": "루카스는 헌책과 헌 옷을 팔아요. 옷(Kleidung)과 책(Bücher)을 '입을 것과 읽을 것'(Sachen zum Anziehen und Lesen)으로 바꿔 말했어요. 램프는 옆 가판대에서 파는 것이고, 커피와 아이스크림은 루카스가 파는 물건이 아니에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Wo steigt Dana aus der U-Bahn aus?",
+   "options": [
+    "an der Kirche vor der Brücke",
+    "am Flohmarkt im Stadtpark",
+    "an der Station „Stadtpark“"
+   ],
+   "answer": 2,
+   "evidence": "steig an der Haltestelle „Stadtpark“ aus",
+   "pairs": [
+    [
+     "an der Haltestelle „Stadtpark“",
+     "an der Station „Stadtpark“"
+    ]
+   ],
+   "explain": "루카스는 ‘슈타트파르크’ 역(Haltestelle)에서 내리라고 해요. 문제에서는 Haltestelle 대신 같은 뜻의 Station을 썼어요. 벼룩시장도 슈타트파르크 공원에 있지만, 역에서 내린 뒤 교회와 다리를 지나 더 걸어가야 해요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Dana geht zuerst über die Brücke, und danach sieht sie die Kirche.",
+   "answer": 1,
+   "evidence": "dann siehst du eine große Kirche, und dort gehst du nach links",
+   "pairs": [
+    [
+     "Geh danach über die Holzbrücke",
+     "Dana geht zuerst über die Brücke"
+    ],
+    [
+     "dann siehst du eine große Kirche",
+     "danach sieht sie die Kirche"
+    ]
+   ],
+   "explain": "길 순서는 직진 → 큰 교회에서 왼쪽 → 나무다리예요. 교회가 먼저 나오고, 다리는 그다음이에요(Geh danach über die Holzbrücke). 문제는 zuerst와 danach를 써서 순서를 거꾸로 말했어요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Wo genau ist der Stand von Lukas?",
+   "options": [
+    "zwischen dem Eiscafé und einem Lampenstand",
+    "zwischen dem Spielplatz und einem Lampenstand",
+    "gegenüber dem Eiscafé, neben dem Spielplatz"
+   ],
+   "answer": 0,
+   "evidence": "Links neben mir steht ein Lampenstand.",
+   "pairs": [
+    [
+     "mein Stand ist direkt neben dem Eiscafé",
+     "zwischen dem Eiscafé und einem Lampenstand"
+    ],
+    [
+     "gegenüber dem Spielplatz",
+     "neben dem Spielplatz"
+    ]
+   ],
+   "explain": "루카스의 가판대는 아이스크림 가게 바로 옆에 있고(direkt neben dem Eiscafé), 왼쪽 옆에는 램프 가판대가 있어요(Links neben mir steht ein Lampenstand). 그러니까 가판대는 아이스크림 가게와 램프 가판대 사이에 있어요. 놀이터는 옆이 아니라 맞은편(gegenüber)에 있어요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was soll Dana mitbringen?",
+   "options": [
+    "ein rotes Tuch für den Tisch",
+    "ein Eis vom Eiscafé nebenan",
+    "etwas zum Trinken für Lukas"
+   ],
+   "answer": 2,
+   "evidence": "Bring mir bitte einen Milchkaffee mit",
+   "pairs": [
+    [
+     "einen Milchkaffee",
+     "etwas zum Trinken"
+    ],
+    [
+     "mir",
+     "für Lukas"
+    ]
+   ],
+   "explain": "루카스는 밀크커피 한 잔을 가져다 달라고 해요(Bring mir bitte einen Milchkaffee mit). 커피를 '마실 것'(etwas zum Trinken)으로 바꿔 말했어요. 빨간 천은 이미 테이블 위에 걸려 있고, 아이스크림 가게는 위치를 설명할 때만 나와요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Lukas ist schon früh am Morgen auf dem Flohmarkt.",
+   "answer": 0,
+   "evidence": "denn ich bin schon ab 7 Uhr da!",
+   "pairs": [
+    [
+     "ab 7 Uhr",
+     "früh am Morgen"
+    ]
+   ],
+   "explain": "루카스는 7시부터 거기 있다고 해요(ich bin schon ab 7 Uhr da). 일요일 아침 7시는 이른 아침이에요. 그래서 루카스는 다나에게 커피를 부탁해요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "위치는 3격, 방향은 4격 (Wo? / Wohin?)",
+   "term": "Wechselpräpositionen: Wo? + Dativ / Wohin? + Akkusativ",
+   "explain": "an, auf, in, neben, hinter, über, unter, vor, zwischen은 뜻에 따라 3격과도 쓰고 4격과도 써요. 어디에 있는지(Wo?) 말하면 3격이에요(hinter der Brücke, über meinem Verkaufstisch). 어디로 움직이는지(Wohin?) 말하면 4격이에요(über die Holzbrücke gehen). 3격에서는 der/das → dem, die → der로 바뀌고, in + dem은 im, an + dem은 am으로 줄여 써요(im Stadtpark). gegenüber는 이 구별 없이 3격과 함께 써요(gegenüber dem Spielplatz).",
+   "pattern": "Wo? → 전치사 + 3격 (dem / der / dem) · Wohin? → 전치사 + 4격 (den / die / das)",
+   "examples": [
+    {
+     "de": "Geh danach über die Holzbrücke, und hinter der Brücke bist du schon auf dem Flohmarkt.",
+     "ko": "그다음에 나무다리를 건너세요. 다리를 건너면 바로 벼룩시장이에요.",
+     "mark": [
+      "über die Holzbrücke",
+      "hinter der Brücke",
+      "auf dem Flohmarkt"
+     ],
+     "parts": [
+      [
+       "Geh",
+       "동사"
+      ],
+      [
+       "danach",
+       "부사어(시간)"
+      ],
+      [
+       "über die Holzbrücke,",
+       "부사어(장소)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "hinter der Brücke",
+       "부사어(장소)"
+      ],
+      [
+       "bist",
+       "동사"
+      ],
+      [
+       "du",
+       "주어"
+      ],
+      [
+       "schon",
+       "기타"
+      ],
+      [
+       "auf dem Flohmarkt.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Über meinem Verkaufstisch hängt ein rotes Tuch gegen die Sonne, und hinter dem Tisch warte ich auf dich.",
+     "ko": "제 판매 테이블 위에는 햇빛을 가리는 빨간 천이 걸려 있고, 저는 테이블 뒤에서 기다리고 있을게요.",
+     "mark": [
+      "Über meinem Verkaufstisch",
+      "hinter dem Tisch"
+     ]
+    }
+   ],
+   "tip": "같은 über라도 격이 달라요. Geh über die Brücke(다리를 건너가세요)는 움직임이라서 4격, Über meinem Verkaufstisch hängt …(테이블 위에 걸려 있어요)는 위치라서 3격이에요. 동사가 움직임(gehen, fahren)을 말하는지, 위치(sein, hängen, stehen, warten)를 말하는지 보고 골라요."
+  },
+  {
+   "title": "du에게 쓰는 명령형",
+   "term": "Imperativ (du-Form)",
+   "explain": "친한 사람 한 명에게 부탁하거나 길을 안내할 때 써요. 현재형 du 형태에서 du와 어미 -st를 빼면 돼요(du gehst → Geh!, du kommst → Komm!). 동사는 1번 자리에 오고 주어 du는 쓰지 않아요. e → i로 모음이 바뀌는 동사는 바뀐 모양을 그대로 써요(du nimmst → Nimm!). 하지만 a → ä는 원래 모음으로 돌아가요(du fährst → Fahr!). 분리동사의 앞부분은 문장 끝으로 가요(steig … aus, Bring … mit, ruf … an).",
+   "pattern": "동사(du 형태에서 -st를 뺀 모양) + … (+ 분리 전철)",
+   "examples": [
+    {
+     "de": "Nimm die U-Bahn-Linie 3 und steig an der Haltestelle „Stadtpark“ aus.",
+     "ko": "지하철 3호선을 타고 ‘슈타트파르크’ 역에서 내리세요.",
+     "mark": [
+      "Nimm",
+      "steig",
+      "aus"
+     ],
+     "parts": [
+      [
+       "Nimm",
+       "동사"
+      ],
+      [
+       "die U-Bahn-Linie 3",
+       "4격 목적어"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "steig",
+       "동사"
+      ],
+      [
+       "an der Haltestelle „Stadtpark“",
+       "부사어(장소)"
+      ],
+      [
+       "aus.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Bring mir bitte einen Milchkaffee mit, denn ich bin schon ab 7 Uhr da!",
+     "ko": "밀크커피 한 잔 좀 가져다주세요. 저는 7시부터 거기 있거든요!",
+     "mark": [
+      "Bring",
+      "mit"
+     ]
+    }
+   ],
+   "tip": "회화에서는 du 명령형에 보통 -e를 붙이지 않아요(Geh!, Komm!, Bring!). 같은 내용을 Sie에게는 Nehmen Sie …!, 여러 명에게는 Nehmt …!라고 해요."
+  },
+  {
+   "title": "질문 + Dann … – 조건 말하기",
+   "term": "Bedingung mit Frage + dann",
+   "explain": "평서문 어순 그대로 끝에 물음표를 붙여 묻고, 다음 문장을 Dann으로 시작하면 '~하면 …'이라는 조건의 뜻이 돼요(Du hast Zeit? Dann komm doch vorbei! = 시간이 있으면 들러 주세요). 앞 문장이 조건이고, Dann 뒤에 결과나 부탁이 와요. Dann 바로 뒤에는 동사가 와요(Dann komm …, Dann ruf …). 메시지와 편지에서 자주 써요.",
+   "pattern": "주어 + 동사 + …? → Dann + 동사(명령형) + …",
+   "examples": [
+    {
+     "de": "Du hast Zeit? Dann komm doch vorbei!",
+     "ko": "시간 있어요? 그럼 꼭 들러 주세요!",
+     "mark": [
+      "Du hast Zeit?",
+      "Dann komm"
+     ],
+     "parts": [
+      [
+       "Du",
+       "주어"
+      ],
+      [
+       "hast",
+       "동사"
+      ],
+      [
+       "Zeit?",
+       "4격 목적어"
+      ],
+      [
+       "Dann",
+       "접속부사"
+      ],
+      [
+       "komm",
+       "동사"
+      ],
+      [
+       "doch",
+       "기타"
+      ],
+      [
+       "vorbei!",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Du findest den Stand nicht? Dann ruf mich einfach an.",
+     "ko": "가판대를 못 찾겠어요? 그럼 그냥 전화하세요.",
+     "mark": [
+      "Du findest den Stand nicht?",
+      "Dann ruf"
+     ],
+     "parts": [
+      [
+       "Du",
+       "주어"
+      ],
+      [
+       "findest",
+       "동사"
+      ],
+      [
+       "den Stand",
+       "4격 목적어"
+      ],
+      [
+       "nicht?",
+       "부정어"
+      ],
+      [
+       "Dann",
+       "접속부사"
+      ],
+      [
+       "ruf",
+       "동사"
+      ],
+      [
+       "mich",
+       "4격 목적어"
+      ],
+      [
+       "einfach",
+       "기타"
+      ],
+      [
+       "an.",
+       "동사(끝)"
+      ]
+     ]
+    }
+   ],
+   "tip": "A2에서는 같은 뜻을 wenn으로 말해요: Wenn du Zeit hast, komm doch vorbei. 이때 dann은 '그러면'이라는 뜻이고, 순서를 말하는 dann(그다음에)과 모양이 같아요. Zuerst gehst du …, dann siehst du …의 dann은 순서예요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "der Flohmarkt, -¨e",
+   "ko": "벼룩시장"
+  },
+  {
+   "de": "der Stand, -¨e",
+   "ko": "(시장의) 가판대, 매대"
+  },
+  {
+   "de": "die Kleidung (Sg.)",
+   "ko": "옷, 의류"
+  },
+  {
+   "de": "vorbei|kommen (kommt vorbei, kam vorbei, ist vorbeigekommen)",
+   "ko": "(잠깐) 들르다"
+  },
+  {
+   "de": "aus|steigen (steigt aus, stieg aus, ist ausgestiegen)",
+   "ko": "(지하철·버스 등에서) 내리다"
+  },
+  {
+   "de": "geradeaus",
+   "ko": "곧장, 직진으로"
+  },
+  {
+   "de": "die Kirche, -n",
+   "ko": "교회, 성당"
+  },
+  {
+   "de": "die Brücke, -n",
+   "ko": "다리 (die Holzbrücke: 나무다리)"
+  },
+  {
+   "de": "das Eiscafé, -s",
+   "ko": "아이스크림 가게"
+  },
+  {
+   "de": "der Spielplatz, -¨e",
+   "ko": "놀이터"
+  },
+  {
+   "de": "gegenüber + Dat.",
+   "ko": "~의 맞은편에"
+  },
+  {
+   "de": "hängen (hängt, hing, hat gehangen)",
+   "ko": "걸려 있다"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "nach links / nach rechts gehen",
+   "ko": "왼쪽으로 / 오른쪽으로 가다",
+   "ex": "Zuerst gehst du fünf Minuten geradeaus, dann siehst du eine große Kirche, und dort gehst du nach links.",
+   "exko": "먼저 5분 동안 쭉 직진하세요. 그러면 큰 교회가 보이는데, 거기서 왼쪽으로 가세요."
+  },
+  {
+   "de": "warten auf + Akk.",
+   "ko": "~를 기다리다",
+   "ex": "Über meinem Verkaufstisch hängt ein rotes Tuch gegen die Sonne, und hinter dem Tisch warte ich auf dich.",
+   "exko": "제 판매 테이블 위에는 햇빛을 가리는 빨간 천이 걸려 있고, 저는 테이블 뒤에서 기다리고 있을게요."
+  },
+  {
+   "de": "da sein",
+   "ko": "와 있다, 그 자리에 있다",
+   "ex": "Bring mir bitte einen Milchkaffee mit, denn ich bin schon ab 7 Uhr da!",
+   "exko": "밀크커피 한 잔 좀 가져다주세요. 저는 7시부터 거기 있거든요!"
+  }
+ ]
+}
