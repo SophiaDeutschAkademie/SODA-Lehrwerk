@@ -1,0 +1,394 @@
+{
+ "id": "a1-20",
+ "level": "A1",
+ "no": 20,
+ "title": "Was finde ich wo?",
+ "titleKo": "어디에서 무엇을 찾을까요?",
+ "type": "Wegweiser im Kaufhaus",
+ "typeKo": "백화점 층별 안내",
+ "intro": "백화점 입구에 걸린 층별 안내와 이번 주 소식을 읽어요.",
+ "focus": [
+  "für + 4격",
+  "합성명사",
+  "층 표현"
+ ],
+ "paragraphs": [
+  {
+   "de": "Herzlich willkommen im Kaufhaus Lindner! Unser Haus hat fünf Etagen, und Aufzug und Rolltreppe sind in der Mitte.",
+   "ko": "린트너 백화점에 오신 것을 환영해요! 저희 백화점은 다섯 개 층이 있고, 엘리베이터와 에스컬레이터는 가운데에 있어요."
+  },
+  {
+   "label": "3. Stock",
+   "de": "Alles für Küche und Haushalt. Im Café Panorama trinken Sie Kaffee mit Blick über die Stadt.",
+   "ko": "부엌과 살림에 필요한 모든 것이 있어요. 카페 파노라마에서는 도시를 내려다보며 커피를 마실 수 있어요."
+  },
+  {
+   "label": "2. Stock",
+   "de": "Alles für Kinder und für die Schule – Hefte und Stifte sind diese Woche billiger.",
+   "ko": "어린이와 학교에 필요한 모든 것이 있어요. 공책과 펜은 이번 주에 더 싸요."
+  },
+  {
+   "label": "1. Stock",
+   "de": "Mode für Damen und Herren. Die Umkleidekabinen sind hinten links.",
+   "ko": "여성복과 남성복이 있어요. 탈의실은 안쪽 왼편에 있어요."
+  },
+  {
+   "label": "Erdgeschoss",
+   "de": "Taschen, Schmuck und Kosmetik – die Information ist gleich am Eingang.",
+   "ko": "가방, 장신구, 화장품이 있어요. 안내 데스크는 입구 바로 옆에 있어요."
+  },
+  {
+   "label": "Untergeschoss",
+   "de": "Brot, Obst und Getränke – und hier sind auch die Toiletten.",
+   "ko": "빵, 과일, 음료가 있어요. 화장실도 이 층에 있어요."
+  },
+  {
+   "style": "h",
+   "de": "Diese Woche bei uns",
+   "ko": "이번 주 소식"
+  },
+  {
+   "de": "Sie brauchen einen Regenschirm? Dann gehen Sie ins Erdgeschoss, denn dort kostet diese Woche jeder Schirm nur 12 Euro.",
+   "ko": "우산이 필요하세요? 그러면 1층으로 가세요. 이번 주에는 그곳의 우산이 어느 것이든 12유로밖에 안 하거든요."
+  },
+  {
+   "de": "Kennen Sie das Café Panorama schon? Am Samstag gibt es dort ein Stück Apfelkuchen für nur 2 Euro.",
+   "ko": "카페 파노라마에 가 보셨어요? 토요일에는 그곳에서 사과 케이크 한 조각을 단 2유로에 드실 수 있어요."
+  },
+  {
+   "de": "Am Samstag um 11 Uhr singt ein Kinderchor im zweiten Stock. Kommen Sie mit Ihrer Familie!",
+   "ko": "토요일 11시에는 어린이 합창단이 3층에서 노래해요. 가족과 함께 오세요!"
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Im Kaufhaus kann man auch etwas essen.",
+   "answer": 0,
+   "evidence": "ein Stück Apfelkuchen für nur 2 Euro",
+   "pairs": [
+    [
+     "ein Stück Apfelkuchen",
+     "etwas essen"
+    ]
+   ],
+   "explain": "카페 파노라마에서는 커피를 마실 수 있고, 토요일에는 사과 케이크 한 조각을 2유로에 팔아요(ein Stück Apfelkuchen für nur 2 Euro). 그러니까 백화점 안에서 무언가를 먹을 수도 있어요. 그래서 맞는 문장이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Frau Weber sucht eine Hose für ihren Mann. Wohin geht sie?",
+   "options": [
+    "ins Erdgeschoss",
+    "in den ersten Stock",
+    "in den zweiten Stock"
+   ],
+   "answer": 1,
+   "evidence": "Mode für Damen und Herren.",
+   "pairs": [
+    [
+     "Mode für Damen und Herren",
+     "eine Hose für ihren Mann"
+    ]
+   ],
+   "explain": "바지(Hose)는 옷이고, 남편의 옷은 남성복이에요. 남성복(Mode für … Herren)은 1. Stock(한국의 2층)에 있어요. Erdgeschoss에는 가방, 장신구, 화장품이 있고, 2. Stock에는 어린이와 학교에 필요한 물건이 있어요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Die Toiletten findet man gleich am Eingang.",
+   "answer": 1,
+   "evidence": "und hier sind auch die Toiletten",
+   "pairs": [
+    [
+     "die Information ist gleich am Eingang",
+     "gleich am Eingang"
+    ],
+    [
+     "und hier sind auch die Toiletten",
+     "Die Toiletten findet man"
+    ]
+   ],
+   "explain": "화장실은 빵, 과일, 음료가 있는 Untergeschoss(지하층)에 있어요(und hier sind auch die Toiletten). 입구 바로 옆에 있는 것은 안내 데스크(Information)예요. 그래서 틀린 문장이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "paraphrase",
+   "q": "Was bedeutet „dort kostet diese Woche jeder Schirm nur 12 Euro“?",
+   "options": [
+    "Diese Woche hat das Kaufhaus nur einen Schirm.",
+    "Ein Schirm kostet dort jede Woche 12 Euro.",
+    "Im Moment kosten dort alle Schirme 12 Euro."
+   ],
+   "answer": 2,
+   "evidence": "dort kostet diese Woche jeder Schirm nur 12 Euro",
+   "pairs": [
+    [
+     "diese Woche",
+     "Im Moment"
+    ],
+    [
+     "jeder Schirm",
+     "alle Schirme"
+    ]
+   ],
+   "explain": "jeder Schirm은 '우산 하나하나 모두'라는 뜻이에요. 그러니까 이번 주에는 그곳의 우산이 모두 12유로예요. diese Woche(이번 주)를 im Moment(지금)로, jeder Schirm을 alle Schirme로 바꿔 말했어요. 우산이 하나만 있다는 뜻이 아니고, 매주(jede Woche) 12유로라는 말도 없어요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Familie Berger hört am Samstag den Kinderchor. Danach möchte sie Kuchen essen. Wohin geht sie?",
+   "options": [
+    "eine Etage nach oben ins Café",
+    "ins Erdgeschoss zur Information",
+    "ins Untergeschoss zu Brot und Obst"
+   ],
+   "answer": 0,
+   "evidence": "Am Samstag um 11 Uhr singt ein Kinderchor im zweiten Stock.",
+   "pairs": [
+    [
+     "im zweiten Stock",
+     "eine Etage nach oben"
+    ],
+    [
+     "ein Stück Apfelkuchen",
+     "Kuchen essen"
+    ]
+   ],
+   "explain": "어린이 합창단은 2. Stock에서 노래해요(im zweiten Stock). 토요일에 사과 케이크를 싸게 파는 곳은 카페 파노라마이고, 카페는 3. Stock에 있어요. 그러니까 합창을 들은 뒤 한 층 위로(eine Etage nach oben) 가면 돼요. Erdgeschoss에는 안내 데스크가 있고, Untergeschoss에는 빵과 과일은 있지만 케이크 이야기는 없어요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Diese Woche sind Sachen für die Schule nicht so teuer.",
+   "answer": 0,
+   "evidence": "Hefte und Stifte sind diese Woche billiger.",
+   "pairs": [
+    [
+     "Hefte und Stifte",
+     "Sachen für die Schule"
+    ],
+    [
+     "billiger",
+     "nicht so teuer"
+    ]
+   ],
+   "explain": "본문에서 공책과 펜이 이번 주에 더 싸다고 해요(Hefte und Stifte sind diese Woche billiger). 공책과 펜은 학교에서 쓰는 물건(Sachen für die Schule)이고, billiger를 nicht so teuer(그렇게 비싸지 않은)로 바꿔 말했어요. 그래서 맞는 문장이에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "für + 4격 – 누구를 위해, 무엇에, 얼마에",
+   "term": "Präposition für + Akkusativ",
+   "explain": "für 뒤에는 4격이 와요. 누구를 위한 것인지(Mode für Damen und Herren, für Kinder), 무엇에 쓰는 것인지(alles für die Schule), 얼마에 사는지(für nur 2 Euro)를 말해요. 관사가 있으면 4격 형태를 써요. 남성은 den, 여성은 die, 중성은 das, 복수는 die예요(für die Schule).",
+   "pattern": "für + 4격 (사람 · 쓰임 · 값)",
+   "examples": [
+    {
+     "de": "Am Samstag gibt es dort ein Stück Apfelkuchen für nur 2 Euro.",
+     "ko": "토요일에는 그곳에서 사과 케이크 한 조각을 단 2유로에 드실 수 있어요.",
+     "mark": [
+      "für nur 2 Euro"
+     ],
+     "parts": [
+      [
+       "Am Samstag",
+       "부사어(시간)"
+      ],
+      [
+       "gibt",
+       "동사"
+      ],
+      [
+       "es",
+       "주어"
+      ],
+      [
+       "dort",
+       "부사어(장소)"
+      ],
+      [
+       "ein Stück Apfelkuchen",
+       "4격 목적어"
+      ],
+      [
+       "für nur 2 Euro.",
+       "부사어"
+      ]
+     ]
+    },
+    {
+     "de": "Mode für Damen und Herren.",
+     "ko": "여성복과 남성복이 있어요.",
+     "mark": [
+      "für Damen und Herren"
+     ]
+    },
+    {
+     "de": "Alles für Kinder und für die Schule – Hefte und Stifte sind diese Woche billiger.",
+     "ko": "어린이와 학교에 필요한 모든 것이 있어요. 공책과 펜은 이번 주에 더 싸요.",
+     "mark": [
+      "für Kinder",
+      "für die Schule"
+     ]
+    }
+   ],
+   "tip": "für와 같이 ohne, durch, gegen, um도 4격과 함께 써요. 대명사도 4격으로 써요(für mich, für Sie)."
+  },
+  {
+   "title": "합성명사 – 마지막 단어가 성을 정해요",
+   "term": "Komposita",
+   "explain": "독일어는 단어 두 개 이상을 붙여 새 명사를 만들어요. 뜻의 중심은 마지막 명사이고, 관사도 마지막 명사를 따라요. der Regen(비) + der Schirm(가리개) → der Regenschirm(우산), der Apfel + der Kuchen → der Apfelkuchen, die Kinder + der Chor → der Kinderchor예요. 앞의 단어는 어떤 종류인지 알려 줘요.",
+   "pattern": "앞 단어(종류) + 마지막 명사(중심, 성 결정)",
+   "examples": [
+    {
+     "de": "Sie brauchen einen Regenschirm?",
+     "ko": "우산이 필요하세요?",
+     "mark": [
+      "Regenschirm"
+     ],
+     "parts": [
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "brauchen",
+       "동사"
+      ],
+      [
+       "einen Regenschirm?",
+       "4격 목적어"
+      ]
+     ]
+    },
+    {
+     "de": "Am Samstag gibt es dort ein Stück Apfelkuchen für nur 2 Euro.",
+     "ko": "토요일에는 그곳에서 사과 케이크 한 조각을 단 2유로에 드실 수 있어요.",
+     "mark": [
+      "Apfelkuchen"
+     ]
+    },
+    {
+     "de": "Die Umkleidekabinen sind hinten links.",
+     "ko": "탈의실은 안쪽 왼편에 있어요.",
+     "mark": [
+      "Umkleidekabinen"
+     ]
+    }
+   ],
+   "tip": "합성명사는 한 단어라서 붙여 쓰고 첫 글자만 대문자로 써요. 복수 어미도 마지막 단어에 붙어요(die Umkleidekabine → die Umkleidekabinen). 같은 말을 다시 쓸 때는 마지막 단어만 짧게 쓰기도 해요(Regenschirm → jeder Schirm)."
+  },
+  {
+   "title": "층 말하기 – im zweiten Stock",
+   "term": "Etagen: im Erdgeschoss, im … Stock",
+   "explain": "독일의 Erdgeschoss는 땅과 같은 높이의 층으로, 한국의 1층이에요. 그 위층이 der erste Stock(한국의 2층)이에요. '몇 층에 있다'는 im + 서수 + Stock으로 말하고, 서수에 -en을 붙여요(im ersten, im zweiten, im dritten Stock). 안내판에는 숫자 뒤에 점을 찍어 1. Stock, 2. Stock처럼 써요.",
+   "pattern": "어디에? im Erdgeschoss · im + 서수-en + Stock / 어디로? ins Erdgeschoss",
+   "examples": [
+    {
+     "de": "Am Samstag um 11 Uhr singt ein Kinderchor im zweiten Stock.",
+     "ko": "토요일 11시에는 어린이 합창단이 3층에서 노래해요.",
+     "mark": [
+      "im zweiten Stock"
+     ],
+     "parts": [
+      [
+       "Am Samstag um 11 Uhr",
+       "부사어(시간)"
+      ],
+      [
+       "singt",
+       "동사"
+      ],
+      [
+       "ein Kinderchor",
+       "주어"
+      ],
+      [
+       "im zweiten Stock.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Dann gehen Sie ins Erdgeschoss, denn dort kostet diese Woche jeder Schirm nur 12 Euro.",
+     "ko": "그러면 1층으로 가세요. 이번 주에는 그곳의 우산이 어느 것이든 12유로밖에 안 하거든요.",
+     "mark": [
+      "ins Erdgeschoss"
+     ]
+    }
+   ],
+   "tip": "어디에 있는지 말할 때는 im(in + dem), 어디로 가는지 말할 때는 ins(in + das)를 써요. 땅 밑의 층은 das Untergeschoss예요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "das Kaufhaus, -¨er",
+   "ko": "백화점"
+  },
+  {
+   "de": "die Etage, -n",
+   "ko": "층"
+  },
+  {
+   "de": "der Stock, -",
+   "ko": "층 (1. Stock = 한국의 2층)"
+  },
+  {
+   "de": "das Erdgeschoss, -e",
+   "ko": "(땅과 같은 높이의) 1층"
+  },
+  {
+   "de": "das Untergeschoss, -e",
+   "ko": "지하층"
+  },
+  {
+   "de": "der Aufzug, -¨e",
+   "ko": "엘리베이터"
+  },
+  {
+   "de": "die Rolltreppe, -n",
+   "ko": "에스컬레이터"
+  },
+  {
+   "de": "die Umkleidekabine, -n",
+   "ko": "탈의실"
+  },
+  {
+   "de": "der Schmuck (Sg.)",
+   "ko": "장신구, 액세서리"
+  },
+  {
+   "de": "der Regenschirm, -e",
+   "ko": "우산"
+  },
+  {
+   "de": "das Heft, -e",
+   "ko": "공책"
+  },
+  {
+   "de": "billig",
+   "ko": "(값이) 싼"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "Herzlich willkommen in/im …!",
+   "ko": "~에 오신 것을 환영합니다!",
+   "ex": "Herzlich willkommen im Kaufhaus Lindner!",
+   "exko": "린트너 백화점에 오신 것을 환영해요!"
+  },
+  {
+   "de": "mit Blick über …",
+   "ko": "~이 내려다보이는",
+   "ex": "Im Café Panorama trinken Sie Kaffee mit Blick über die Stadt.",
+   "exko": "카페 파노라마에서는 도시를 내려다보며 커피를 마실 수 있어요."
+  },
+  {
+   "de": "nur … Euro kosten",
+   "ko": "~유로밖에 안 하다",
+   "ex": "Dann gehen Sie ins Erdgeschoss, denn dort kostet diese Woche jeder Schirm nur 12 Euro.",
+   "exko": "그러면 1층으로 가세요. 이번 주에는 그곳의 우산이 어느 것이든 12유로밖에 안 하거든요."
+  }
+ ]
+}

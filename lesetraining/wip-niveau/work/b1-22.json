@@ -1,0 +1,559 @@
+{
+ "id": "b1-22",
+ "level": "B1",
+ "no": 22,
+ "title": "Welcher Laptop passt zu mir?",
+ "titleKo": "어떤 노트북이 저한테 맞을까요?",
+ "type": "Beratungsgespräch",
+ "typeKo": "구매 상담 대화",
+ "intro": "대학생이 전자 제품 매장에서 점원과 상담하며 노트북을 고르는 대화예요.",
+ "focus": [
+  "화법 불변화사",
+  "als · wie 비교절",
+  "derselbe · dieselbe · dasselbe",
+  "alles, was · das, was"
+ ],
+ "paragraphs": [
+  {
+   "label": "Verkäufer",
+   "de": "Guten Tag! Kann ich Ihnen weiterhelfen? Was für ein Gerät suchen Sie denn?",
+   "ko": "안녕하세요! 도와드릴까요? 어떤 기기를 찾으세요?"
+  },
+  {
+   "label": "Kundin",
+   "de": "Ich brauche einen Laptop für mein Studium, denn der alte Rechner meines Bruders, den ich bisher benutzt habe, ist inzwischen viel zu langsam und stürzt ständig ab. Ich arbeite vor allem an Hausarbeiten und Präsentationen und nehme regelmäßig an Videokonferenzen teil. Mein Budget liegt eigentlich bei höchstens 700 Euro.",
+   "ko": "대학 공부에 쓸 노트북이 필요해요. 지금까지는 오빠가 쓰던 낡은 컴퓨터를 썼는데, 이제 너무 느리고 자꾸 멈춰 버리거든요. 저는 주로 과제 리포트와 발표 자료를 만들고, 화상 회의에도 자주 참여해요. 사실 예산은 많아야 700유로예요."
+  },
+  {
+   "label": "Verkäufer",
+   "de": "Dann schauen Sie sich doch mal diese beiden Modelle an. Das linke ist mit 599 Euro günstiger und hat einen großen Bildschirm mit hoher Auflösung, das rechte ist kompakter, kostet aber 749 Euro. Beide haben übrigens dieselbe Tastatur, denselben Arbeitsspeicher und dieselben Anschlüsse.",
+   "ko": "그럼 이 두 모델을 한번 보세요. 왼쪽 것은 599유로로 더 싸고 화면이 크고 해상도도 높아요. 오른쪽 것은 더 작지만 749유로예요. 참고로 둘 다 자판, 메모리, 연결 단자가 똑같아요."
+  },
+  {
+   "label": "Kundin",
+   "de": "Oh, das kleinere ist ja viel leichter, als ich dachte! Aber warum ist es denn trotz des kleineren Bildschirms so viel teurer?",
+   "ko": "어, 작은 것이 생각했던 것보다 훨씬 가볍네요! 그런데 화면이 더 작은데도 왜 이렇게 훨씬 비싼가요?"
+  },
+  {
+   "label": "Verkäufer",
+   "de": "Das kleinere wiegt nur 1,2 Kilogramm, und seine Akkulaufzeit beträgt ungefähr zwölf Stunden. Das größere ist dagegen fast ein Kilogramm schwerer und muss schon nach sechs Stunden an die Steckdose. Die Rechenleistung ist allerdings identisch, denn in beiden steckt derselbe Prozessor.",
+   "ko": "작은 것은 무게가 1.2킬로그램밖에 안 되고, 배터리 사용 시간이 열두 시간쯤 돼요. 반면에 큰 것은 거의 1킬로그램 더 무겁고, 여섯 시간만 지나면 콘센트에 꽂아야 해요. 그래도 성능은 똑같아요. 둘 다 같은 프로세서가 들어 있거든요."
+  },
+  {
+   "label": "Kundin",
+   "de": "Ich bin täglich mit dem Fahrrad unterwegs und arbeite oft stundenlang in der Universitätsbibliothek, wo es kaum freie Steckdosen gibt. Deshalb ist mir das Gewicht wichtiger als die Bildschirmgröße. Darf ich mal tippen? Die Tastatur fühlt sich angenehmer an, als sie aussieht. Aber 749 Euro sind deutlich mehr, als ich eingeplant habe.",
+   "ko": "저는 매일 자전거로 다니고, 대학 도서관에서 몇 시간씩 작업할 때가 많은데 그곳에는 빈 콘센트가 거의 없어요. 그래서 저한테는 화면 크기보다 무게가 더 중요해요. 한번 쳐 봐도 될까요? 자판이 보기보다 느낌이 좋네요. 하지만 749유로는 제가 잡아 둔 예산보다 꽤 많아요."
+  },
+  {
+   "label": "Verkäufer",
+   "de": "Haben Sie eigentlich einen Studierendenausweis dabei? Damit bekommen Sie zehn Prozent Ermäßigung, und das Notebook kostet dann nur noch ungefähr 674 Euro.",
+   "ko": "혹시 학생증 가지고 계세요? 학생증이 있으면 10퍼센트 할인을 받을 수 있어서 이 노트북은 674유로쯤밖에 안 해요."
+  },
+  {
+   "label": "Kundin",
+   "de": "Ja, den habe ich glücklicherweise dabei, und dann ist es ja nicht so teuer, wie ich befürchtet habe! Gibt es sonst noch etwas, was ich vor dem Kauf unbedingt beachten sollte?",
+   "ko": "네, 다행히 가지고 있어요. 그러면 걱정했던 것만큼 비싸지는 않네요! 사기 전에 꼭 알아 두어야 할 것이 또 있나요?"
+  },
+  {
+   "label": "Verkäufer",
+   "de": "Sie bekommen zwei Jahre Herstellergarantie. Für 89 Euro können Sie außerdem eine Zusatzversicherung abschließen, die auch dann zahlt, wenn Ihnen das Notebook herunterfällt. Das ist alles, was ich Ihnen noch empfehlen würde.",
+   "ko": "제조사 보증 기간은 2년이에요. 그리고 89유로를 내면 추가 보험에 들 수 있는데, 이 보험은 노트북을 떨어뜨렸을 때도 보상해 줘요. 제가 더 권해 드릴 것은 이게 전부예요."
+  },
+  {
+   "label": "Kundin",
+   "de": "Nein, danke, auf die Zusatzversicherung verzichte ich lieber, aber das, was Sie über die Akkulaufzeit erzählt haben, hat mich überzeugt. Ich nehme das kleinere – vielen Dank für die ausführliche Beratung!",
+   "ko": "아니요, 괜찮아요. 추가 보험은 들지 않을게요. 하지만 배터리 사용 시간에 대해 말씀해 주신 것을 듣고 마음을 정했어요. 작은 것으로 할게요. 자세히 설명해 주셔서 감사해요!"
+  },
+  {
+   "label": "Verkäufer",
+   "de": "Gern, dann hole ich Ihnen mal dasselbe Modell originalverpackt aus unserem Lager.",
+   "ko": "네, 그럼 창고에서 같은 모델로 포장을 뜯지 않은 새 상품을 가져다 드릴게요."
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Bisher hat die Kundin den Computer eines Familienmitglieds benutzt.",
+   "answer": 0,
+   "evidence": "der alte Rechner meines Bruders, den ich bisher benutzt habe",
+   "pairs": [
+    [
+     "Rechner meines Bruders",
+     "Computer eines Familienmitglieds"
+    ]
+   ],
+   "explain": "손님은 지금까지 오빠가 쓰던 낡은 컴퓨터를 썼어요. Rechner meines Bruders(오빠의 컴퓨터)를 Computer eines Familienmitglieds(가족 한 사람의 컴퓨터)로 바꿔 말했으니 맞는 말이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was haben die beiden Laptops gemeinsam?",
+   "options": [
+    "Ihre Bildschirme sind genau gleich groß.",
+    "Ihr Tempo ist bei allen Aufgaben gleich.",
+    "Sie laufen gleich lange ohne Steckdose."
+   ],
+   "answer": 1,
+   "evidence": "Die Rechenleistung ist allerdings identisch, denn in beiden steckt derselbe Prozessor.",
+   "pairs": [
+    [
+     "Die Rechenleistung ist allerdings identisch",
+     "Ihr Tempo ist bei allen Aufgaben gleich"
+    ]
+   ],
+   "explain": "두 노트북에는 같은 프로세서가 들어 있어서 성능(Rechenleistung)이 똑같아요(identisch). 이것을 '어떤 작업이든 속도가 같다'로 바꿔 말했어요. 화면은 왼쪽 것이 더 크고, 배터리는 작은 것이 열두 시간, 큰 것이 여섯 시간쯤으로 달라요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Warum kostet das kleinere Modell mehr?",
+   "options": [
+    "Es ist leichter, und sein Akku hält länger.",
+    "Es hat einen schnelleren Prozessor als das linke.",
+    "Es hat eine angenehmere Tastatur als das große."
+   ],
+   "answer": 0,
+   "evidence": "Das kleinere wiegt nur 1,2 Kilogramm, und seine Akkulaufzeit beträgt ungefähr zwölf Stunden.",
+   "pairs": [
+    [
+     "wiegt nur 1,2 Kilogramm",
+     "leichter"
+    ],
+    [
+     "seine Akkulaufzeit beträgt ungefähr zwölf Stunden",
+     "sein Akku hält länger"
+    ]
+   ],
+   "explain": "손님이 왜 더 비싼지 묻자 점원은 작은 모델이 1.2킬로그램밖에 안 되고 배터리가 열두 시간쯤 간다고 대답해요. 더 가볍고 배터리가 더 오래간다는 뜻이에요. 프로세서와 자판은 두 모델이 똑같아요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Ein großer Bildschirm ist der Kundin wichtiger als ein geringes Gewicht.",
+   "answer": 1,
+   "evidence": "Deshalb ist mir das Gewicht wichtiger als die Bildschirmgröße.",
+   "pairs": [
+    [
+     "das Gewicht wichtiger als die Bildschirmgröße",
+     "Ein großer Bildschirm ist der Kundin wichtiger"
+    ]
+   ],
+   "explain": "손님은 화면 크기보다 무게가 더 중요하다고 해요. 문제의 문장은 둘의 순서를 뒤바꿨어요."
+  },
+  {
+   "type": "mc",
+   "kind": "paraphrase",
+   "q": "Was meint die Kundin mit dem Satz „dann ist es ja nicht so teuer, wie ich befürchtet habe“?",
+   "options": [
+    "Sie hatte mit einem niedrigeren Preis gerechnet.",
+    "Sie findet das Notebook immer noch zu teuer.",
+    "Sie hatte mit einem höheren Preis gerechnet."
+   ],
+   "answer": 2,
+   "evidence": "dann ist es ja nicht so teuer, wie ich befürchtet habe",
+   "pairs": [
+    [
+     "nicht so teuer, wie ich befürchtet habe",
+     "mit einem höheren Preis gerechnet"
+    ]
+   ],
+   "explain": "nicht so teuer, wie ich befürchtet habe는 '걱정했던 것만큼 비싸지 않다'는 뜻이에요. 손님은 더 비쌀 거라고 걱정했는데, 학생 할인을 받으면 674유로쯤이 되는 거예요. 그래서 더 높은 가격을 예상했다는 말이 맞아요. 지금도 너무 비싸다고 생각한다는 말은 반대예요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Wie viel bezahlt die Kundin am Ende ungefähr?",
+   "options": [
+    "674 €",
+    "749 €",
+    "763 €"
+   ],
+   "answer": 0,
+   "evidence": "Nein, danke, auf die Zusatzversicherung verzichte ich lieber",
+   "pairs": [
+    [
+     "nur noch ungefähr 674 Euro",
+     "674 €"
+    ]
+   ],
+   "explain": "학생 할인을 받으면 작은 노트북은 674유로쯤이에요. 손님은 89유로짜리 추가 보험을 들지 않기로 했으니까(verzichte) 값이 더 올라가지 않아요. 749유로는 할인 전 가격이고, 763유로는 보험까지 더한 가격이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Warum ist eine lange Akkulaufzeit für die Kundin besonders wichtig?",
+   "options": [
+    "Bei ihr zu Hause gibt es keine freie Steckdose.",
+    "Sie kann in der Bibliothek selten Strom laden.",
+    "In der Bibliothek ist das Laden verboten."
+   ],
+   "answer": 1,
+   "evidence": "wo es kaum freie Steckdosen gibt",
+   "pairs": [
+    [
+     "kaum freie Steckdosen",
+     "selten Strom laden"
+    ]
+   ],
+   "explain": "손님은 대학 도서관에서 몇 시간씩 작업하는데 그곳에는 빈 콘센트가 거의 없다고 해요. 그래서 충전하지 않고 오래 쓸 수 있는 배터리가 중요해요. 콘센트가 부족한 곳은 집이 아니라 도서관이고, 충전이 금지되어 있다는 말은 없어요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was macht der Verkäufer am Schluss?",
+   "options": [
+    "Er verpackt das Gerät, das sie getestet hat.",
+    "Er bestellt dasselbe Modell beim Hersteller.",
+    "Er bringt ihr ein unbenutztes Exemplar."
+   ],
+   "answer": 2,
+   "evidence": "dann hole ich Ihnen mal dasselbe Modell originalverpackt aus unserem Lager",
+   "pairs": [
+    [
+     "dasselbe Modell originalverpackt",
+     "ein unbenutztes Exemplar"
+    ]
+   ],
+   "explain": "점원은 창고에서 같은 모델을 원래 포장 그대로(originalverpackt) 가져오겠다고 해요. 아직 아무도 쓰지 않은 새 상품이라는 뜻이에요. 손님이 쳐 본 기기를 포장해 주는 것이 아니고, 제조사에 주문하는 것도 아니에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "화법 불변화사 doch · mal · ja · denn · eigentlich",
+   "term": "Modalpartikeln",
+   "explain": "화법 불변화사는 말하는 사람의 태도를 담는 짧은 말이에요. 문장의 내용은 거의 바꾸지 않고 말투를 부드럽게 하거나 느낌을 더해요. 질문의 denn은 관심을 담고, 권유의 doch mal은 제안을 부드럽게 해요. 평서문의 ja는 놀람을 나타내고, 질문의 eigentlich는 '그런데 혹시'처럼 화제를 살짝 바꿀 때 써요. 강세 없이 문장 가운데에 와요.",
+   "pattern": "동사 + (주어) + 불변화사 + …",
+   "examples": [
+    {
+     "de": "Was für ein Gerät suchen Sie denn?",
+     "ko": "어떤 기기를 찾으세요?",
+     "mark": [
+      "denn"
+     ],
+     "parts": [
+      [
+       "Was für ein Gerät",
+       "4격 목적어"
+      ],
+      [
+       "suchen",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "denn?",
+       "기타"
+      ]
+     ]
+    },
+    {
+     "de": "Dann schauen Sie sich doch mal diese beiden Modelle an.",
+     "ko": "그럼 이 두 모델을 한번 보세요.",
+     "mark": [
+      "doch mal"
+     ],
+     "parts": [
+      [
+       "Dann",
+       "부사어"
+      ],
+      [
+       "schauen",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "sich",
+       "재귀대명사"
+      ],
+      [
+       "doch mal",
+       "기타"
+      ],
+      [
+       "diese beiden Modelle",
+       "4격 목적어"
+      ],
+      [
+       "an.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Oh, das kleinere ist ja viel leichter, als ich dachte!",
+     "ko": "어, 작은 것이 생각했던 것보다 훨씬 가볍네요!",
+     "mark": [
+      "ja"
+     ]
+    },
+    {
+     "de": "Haben Sie eigentlich einen Studierendenausweis dabei?",
+     "ko": "혹시 학생증 가지고 계세요?",
+     "mark": [
+      "eigentlich"
+     ]
+    }
+   ],
+   "tip": "화법 불변화사로 쓸 때는 문장 맨 앞(1번 자리)에 오지 않아요. Doch schauen Sie …가 아니라 Schauen Sie doch …라고 해요."
+  },
+  {
+   "title": "als · wie가 이끄는 비교절",
+   "term": "Vergleichssätze mit als / wie + Nebensatz",
+   "explain": "비교급 뒤에서는 als를, (nicht) so + 형용사 뒤에서는 wie를 써요. 비교하는 대상이 문장일 때 als나 wie 뒤는 종속절이 되어 동사가 끝에 와요. 종속절 앞에는 쉼표를 찍어요. 비교 대상이 명사 하나일 때는 종속절이 아니라서 쉼표 없이 써요(wichtiger als die Bildschirmgröße).",
+   "pattern": "비교급 + , als + 주어 … 동사(끝) · (nicht) so + 형용사 + , wie + 주어 … 동사(끝)",
+   "examples": [
+    {
+     "de": "Aber 749 Euro sind deutlich mehr, als ich eingeplant habe.",
+     "ko": "하지만 749유로는 제가 잡아 둔 예산보다 꽤 많아요.",
+     "mark": [
+      "mehr, als",
+      "eingeplant habe"
+     ],
+     "parts": [
+      [
+       "Aber",
+       "접속사"
+      ],
+      [
+       "749 Euro",
+       "주어"
+      ],
+      [
+       "sind",
+       "동사"
+      ],
+      [
+       "deutlich mehr,",
+       "보어"
+      ],
+      [
+       "als ich eingeplant habe.",
+       "종속절"
+      ]
+     ]
+    },
+    {
+     "de": "Die Tastatur fühlt sich angenehmer an, als sie aussieht.",
+     "ko": "자판이 보기보다 느낌이 좋네요.",
+     "mark": [
+      "angenehmer",
+      "als sie aussieht"
+     ]
+    },
+    {
+     "de": "Ja, den habe ich glücklicherweise dabei, und dann ist es ja nicht so teuer, wie ich befürchtet habe!",
+     "ko": "네, 다행히 가지고 있어요. 그러면 걱정했던 것만큼 비싸지는 않네요!",
+     "mark": [
+      "nicht so teuer, wie",
+      "befürchtet habe"
+     ]
+    }
+   ],
+   "tip": "nicht so … wie는 '~만큼 ~하지 않다'라는 뜻이에요. nicht so teuer, wie ich befürchtet habe는 걱정했던 것보다 덜 비싸다는 뜻이에요."
+  },
+  {
+   "title": "derselbe · dieselbe · dasselbe: 똑같은 그것",
+   "term": "Demonstrativpronomen derselbe, dieselbe, dasselbe",
+   "explain": "derselbe는 '바로 그 같은'이라는 뜻이에요. 앞부분 der-/die-/das-는 정관사처럼, 뒷부분 -selbe는 정관사 뒤의 형용사처럼 변하고, 한 단어로 붙여 써요. 남성 4격은 denselben(denselben Arbeitsspeicher), 복수는 dieselben(dieselben Anschlüsse)이에요.",
+   "pattern": "derselbe Prozessor · dieselbe Tastatur · dasselbe Modell · denselben Arbeitsspeicher(4격) · dieselben Anschlüsse(복수)",
+   "examples": [
+    {
+     "de": "Beide haben übrigens dieselbe Tastatur, denselben Arbeitsspeicher und dieselben Anschlüsse.",
+     "ko": "참고로 둘 다 자판, 메모리, 연결 단자가 똑같아요.",
+     "mark": [
+      "dieselbe",
+      "denselben",
+      "dieselben"
+     ],
+     "parts": [
+      [
+       "Beide",
+       "주어"
+      ],
+      [
+       "haben",
+       "동사"
+      ],
+      [
+       "übrigens",
+       "부사어"
+      ],
+      [
+       "dieselbe Tastatur, denselben Arbeitsspeicher und dieselben Anschlüsse.",
+       "4격 목적어"
+      ]
+     ]
+    },
+    {
+     "de": "Die Rechenleistung ist allerdings identisch, denn in beiden steckt derselbe Prozessor.",
+     "ko": "그래도 성능은 똑같아요. 둘 다 같은 프로세서가 들어 있거든요.",
+     "mark": [
+      "derselbe"
+     ]
+    },
+    {
+     "de": "Gern, dann hole ich Ihnen mal dasselbe Modell originalverpackt aus unserem Lager.",
+     "ko": "네, 그럼 창고에서 같은 모델로 포장을 뜯지 않은 새 상품을 가져다 드릴게요.",
+     "mark": [
+      "dasselbe"
+     ]
+    }
+   ],
+   "tip": "derselbe는 바로 그 하나가 같다는 뜻이고, der gleiche는 종류가 같은 다른 물건을 말할 때도 써요. 일상 대화에서는 둘을 섞어 쓰기도 해요."
+  },
+  {
+   "title": "alles, was · etwas, was · das, was",
+   "term": "Relativsätze mit was (nach alles, etwas, nichts, das)",
+   "explain": "alles, etwas, nichts, das처럼 정해지지 않은 것이나 어떤 내용 전체를 가리키는 말 뒤에서는 관계대명사로 was를 써요. was가 이끄는 관계절에서도 동사는 끝에 와요. das, was …는 '~한 것'이라는 뜻이고, 이 덩어리가 주절의 주어나 목적어가 돼요.",
+   "pattern": "alles / etwas / nichts / das + , was + … 동사(끝)",
+   "examples": [
+    {
+     "de": "Das ist alles, was ich Ihnen noch empfehlen würde.",
+     "ko": "제가 더 권해 드릴 것은 이게 전부예요.",
+     "mark": [
+      "alles, was"
+     ],
+     "parts": [
+      [
+       "Das",
+       "주어"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "alles,",
+       "보어"
+      ],
+      [
+       "was ich Ihnen noch empfehlen würde.",
+       "관계절"
+      ]
+     ]
+    },
+    {
+     "de": "Gibt es sonst noch etwas, was ich vor dem Kauf unbedingt beachten sollte?",
+     "ko": "사기 전에 꼭 알아 두어야 할 것이 또 있나요?",
+     "mark": [
+      "etwas, was"
+     ]
+    },
+    {
+     "de": "Nein, danke, auf die Zusatzversicherung verzichte ich lieber, aber das, was Sie über die Akkulaufzeit erzählt haben, hat mich überzeugt.",
+     "ko": "아니요, 괜찮아요. 추가 보험은 들지 않을게요. 하지만 배터리 사용 시간에 대해 말씀해 주신 것을 듣고 마음을 정했어요.",
+     "mark": [
+      "das, was"
+     ]
+    }
+   ],
+   "tip": "명사 뒤에서는 was가 아니라 der·die·das를 써요. das Modell, das ich nehme가 맞고, das Modell, was ich nehme는 표준어에서 틀린 형태예요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "der Rechner, -",
+   "ko": "컴퓨터"
+  },
+  {
+   "de": "ab|stürzen (ist abgestürzt)",
+   "ko": "(컴퓨터가) 멈추다, 다운되다"
+  },
+  {
+   "de": "die Hausarbeit, -en",
+   "ko": "(대학의) 과제 리포트"
+  },
+  {
+   "de": "das Budget, -s",
+   "ko": "예산"
+  },
+  {
+   "de": "die Auflösung, -en",
+   "ko": "(화면의) 해상도"
+  },
+  {
+   "de": "kompakt",
+   "ko": "작고 간편한"
+  },
+  {
+   "de": "der Arbeitsspeicher, -",
+   "ko": "(컴퓨터의) 메모리"
+  },
+  {
+   "de": "der Anschluss, -¨e",
+   "ko": "연결 단자"
+  },
+  {
+   "de": "wiegen (wiegt, wog, hat gewogen)",
+   "ko": "무게가 ~이다"
+  },
+  {
+   "de": "die Akkulaufzeit, -en",
+   "ko": "배터리 사용 시간"
+  },
+  {
+   "de": "die Rechenleistung, -en",
+   "ko": "(컴퓨터의) 성능"
+  },
+  {
+   "de": "identisch",
+   "ko": "똑같은"
+  },
+  {
+   "de": "ein|planen",
+   "ko": "(예산·계획에) 넣어 두다"
+  },
+  {
+   "de": "die Ermäßigung, -en",
+   "ko": "할인"
+  },
+  {
+   "de": "befürchten",
+   "ko": "걱정하다, 염려하다"
+  },
+  {
+   "de": "verzichten auf + Akk.",
+   "ko": "~을 하지 않기로 하다, ~ 없이 지내다"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "vor allem",
+   "ko": "주로, 무엇보다",
+   "ex": "Ich arbeite vor allem an Hausarbeiten und Präsentationen und nehme regelmäßig an Videokonferenzen teil.",
+   "exko": "저는 주로 과제 리포트와 발표 자료를 만들고, 화상 회의에도 자주 참여해요."
+  },
+  {
+   "de": "sich etwas an|schauen",
+   "ko": "~을 살펴보다",
+   "ex": "Dann schauen Sie sich doch mal diese beiden Modelle an.",
+   "exko": "그럼 이 두 모델을 한번 보세요."
+  },
+  {
+   "de": "an die Steckdose müssen",
+   "ko": "(기기를) 충전해야 하다",
+   "ex": "Das größere ist dagegen fast ein Kilogramm schwerer und muss schon nach sechs Stunden an die Steckdose.",
+   "exko": "반면에 큰 것은 거의 1킬로그램 더 무겁고, 여섯 시간만 지나면 콘센트에 꽂아야 해요."
+  },
+  {
+   "de": "unterwegs sein",
+   "ko": "이동 중이다, 돌아다니다",
+   "ex": "Ich bin täglich mit dem Fahrrad unterwegs und arbeite oft stundenlang in der Universitätsbibliothek, wo es kaum freie Steckdosen gibt.",
+   "exko": "저는 매일 자전거로 다니고, 대학 도서관에서 몇 시간씩 작업할 때가 많은데 그곳에는 빈 콘센트가 거의 없어요."
+  },
+  {
+   "de": "eine Versicherung ab|schließen",
+   "ko": "보험에 들다",
+   "ex": "Für 89 Euro können Sie außerdem eine Zusatzversicherung abschließen, die auch dann zahlt, wenn Ihnen das Notebook herunterfällt.",
+   "exko": "그리고 89유로를 내면 추가 보험에 들 수 있는데, 이 보험은 노트북을 떨어뜨렸을 때도 보상해 줘요."
+  }
+ ]
+}

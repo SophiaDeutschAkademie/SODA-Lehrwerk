@@ -1,0 +1,430 @@
+{
+ "id": "a1-24",
+ "level": "A1",
+ "no": 24,
+ "title": "Pfannkuchen für vier",
+ "titleKo": "4인분 팬케이크",
+ "type": "Rezept",
+ "typeKo": "레시피",
+ "intro": "게르다 할머니의 팬케이크를 만드는 재료와 순서를 알려 주는 레시피예요.",
+ "focus": [
+  "동사원형 지시문",
+  "순서 말하기",
+  "분량 표현"
+ ],
+ "paragraphs": [
+  {
+   "de": "Am Sonntag macht Oma Gerda manchmal Pfannkuchen für die ganze Familie, und die Kinder essen dann immer viel. Hier ist ihr Rezept – du brauchst nur fünf Zutaten.",
+   "ko": "게르다 할머니는 일요일에 가끔 온 가족을 위해 팬케이크를 만들어요. 그러면 아이들은 늘 많이 먹어요. 여기 할머니의 레시피가 있어요. 재료는 다섯 가지만 있으면 돼요."
+  },
+  {
+   "style": "h",
+   "de": "Zutaten für vier Personen",
+   "ko": "4인분 재료"
+  },
+  {
+   "style": "meta",
+   "de": "250 Gramm Mehl",
+   "ko": "밀가루 250그램"
+  },
+  {
+   "style": "meta",
+   "de": "ein halber Liter frische Milch",
+   "ko": "신선한 우유 반 리터"
+  },
+  {
+   "style": "meta",
+   "de": "drei Eier",
+   "ko": "달걀 세 개"
+  },
+  {
+   "style": "meta",
+   "de": "eine Prise Salz",
+   "ko": "소금 한 꼬집"
+  },
+  {
+   "style": "meta",
+   "de": "etwas Butter für die Pfanne",
+   "ko": "팬에 두를 버터 조금"
+  },
+  {
+   "style": "h",
+   "de": "So geht es",
+   "ko": "만드는 방법"
+  },
+  {
+   "de": "Zuerst Mehl und Salz in eine Schüssel geben und dann langsam die Milch dazugeben. Danach die Eier in die Schüssel geben und alles gut mischen. Den Teig dann 20 Minuten stehen lassen, denn so schmecken die Pfannkuchen später sehr gut.",
+   "ko": "먼저 밀가루와 소금을 그릇에 넣고, 그다음 우유를 천천히 부어요. 그 뒤에 달걀을 그릇에 넣고 모두 잘 섞어요. 그다음 반죽을 20분 동안 그대로 두어요. 그렇게 해야 나중에 팬케이크가 아주 맛있거든요."
+  },
+  {
+   "de": "Etwas Butter in der Pfanne heiß machen und für jeden Pfannkuchen ein wenig Teig nehmen. Den Pfannkuchen zwei Minuten backen, dann wenden, und nach zwei Minuten ist er fertig.",
+   "ko": "팬에 버터를 조금 넣고 달군 다음, 팬케이크 한 장마다 반죽을 조금씩 써요. 팬케이크를 2분 동안 굽고 뒤집어요. 다시 2분이 지나면 다 돼요."
+  },
+  {
+   "de": "Mit diesem Rezept bekommst du ungefähr acht Stück, und dazu passt Apfelmus oder Marmelade. Guten Appetit!",
+   "ko": "이 레시피로 만들면 팬케이크가 여덟 장쯤 나와요. 사과 퓌레나 잼을 곁들이면 잘 어울려요. 맛있게 드세요!"
+  }
+ ],
+ "questions": [
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Wann macht Oma Gerda Pfannkuchen?",
+   "options": [
+    "manchmal am Wochenende",
+    "jeden Sonntag für alle",
+    "jeden Tag für die Kinder"
+   ],
+   "answer": 0,
+   "evidence": "Am Sonntag macht Oma Gerda manchmal Pfannkuchen für die ganze Familie",
+   "pairs": [
+    [
+     "Am Sonntag",
+     "am Wochenende"
+    ],
+    [
+     "manchmal",
+     "manchmal am Wochenende"
+    ]
+   ],
+   "explain": "게르다 할머니는 일요일에 가끔 팬케이크를 만들어요(Am Sonntag … manchmal). 일요일은 주말이니까 '가끔 주말에'(manchmal am Wochenende)가 맞아요. 할머니는 일요일마다(jeden Sonntag) 만드는 것이 아니에요. 아이들은 팬케이크를 많이 먹지만, 할머니가 날마다(jeden Tag) 만드는 것도 아니에요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Der Teig muss vor dem Backen zwei Minuten stehen.",
+   "answer": 1,
+   "evidence": "Den Teig dann 20 Minuten stehen lassen",
+   "pairs": [
+    [
+     "20 Minuten stehen lassen",
+     "zwei Minuten stehen"
+    ]
+   ],
+   "explain": "반죽은 굽기 전에 20분 동안 그대로 두어야 해요(20 Minuten stehen lassen). 2분은 팬케이크 한쪽을 굽는 시간이에요. 숫자를 바꾼 문장이라서 틀려요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "In den Teig kommt kein Zucker.",
+   "answer": 0,
+   "evidence": "du brauchst nur fünf Zutaten",
+   "pairs": [
+    [
+     "nur fünf Zutaten",
+     "kein Zucker"
+    ]
+   ],
+   "explain": "재료는 다섯 가지뿐이에요(nur fünf Zutaten). 재료 목록에는 밀가루, 우유, 달걀, 소금, 버터만 있고 설탕(Zucker)은 없어요. 그래서 반죽에 설탕이 들어가지 않는다는 말이 맞아요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was macht man nach den ersten zwei Minuten mit dem Pfannkuchen?",
+   "options": [
+    "Man legt ihn gleich auf einen Teller.",
+    "Man legt die andere Seite nach unten.",
+    "Man lässt ihn noch 20 Minuten stehen."
+   ],
+   "answer": 1,
+   "evidence": "Den Pfannkuchen zwei Minuten backen, dann wenden",
+   "pairs": [
+    [
+     "wenden",
+     "Man legt die andere Seite nach unten"
+    ]
+   ],
+   "explain": "팬케이크를 2분 동안 구운 다음 뒤집어요(dann wenden). 뒤집으면 아직 굽지 않은 다른 쪽이 아래로 가요. 그래서 wenden(뒤집다)을 '다른 쪽을 아래로 놓아요'(Man legt die andere Seite nach unten)로 바꿔 말했어요. 처음 2분이 지나도 아직 다 익지 않아서 바로 접시에 놓지 않아요. 20분 동안 두는 것은 팬에 굽기 전의 반죽이에요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Die Pfannkuchen kommen nicht in den Ofen.",
+   "answer": 0,
+   "evidence": "Etwas Butter in der Pfanne heiß machen und für jeden Pfannkuchen ein wenig Teig nehmen.",
+   "pairs": [
+    [
+     "in der Pfanne",
+     "nicht in den Ofen"
+    ]
+   ],
+   "explain": "레시피에는 backen(굽다)이라는 말이 나오지만, 팬케이크는 오븐이 아니라 프라이팬에서 구워요(in der Pfanne). 그래서 팬케이크를 오븐(Ofen)에 넣지 않는다는 말이 맞아요."
+  },
+  {
+   "type": "mc",
+   "kind": "meaning",
+   "q": "Am Ende steht: „dazu passt Apfelmus oder Marmelade“. Was heißt das?",
+   "options": [
+    "Das gibt man auch in den Teig.",
+    "Das braucht man noch für die Pfanne.",
+    "Das isst man gern zu diesem Essen."
+   ],
+   "answer": 2,
+   "evidence": "dazu passt Apfelmus oder Marmelade",
+   "pairs": [
+    [
+     "dazu passt",
+     "isst man gern zu diesem Essen"
+    ]
+   ],
+   "explain": "dazu passt …는 '거기에 ~이 잘 어울려요'라는 뜻이에요. 팬케이크를 먹을 때 사과 퓌레나 잼을 곁들이면 좋다는 말이에요. 그래서 '이 음식과 함께 즐겨 먹어요'(isst man gern zu diesem Essen)가 맞아요. 사과 퓌레와 잼은 반죽 재료가 아니고, 팬에 두르는 것은 버터예요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "동사원형으로 쓰는 지시문",
+   "term": "Infinitiv als Aufforderung (Rezepte, Anleitungen)",
+   "explain": "레시피나 설명서에서는 명령형 대신 동사원형을 자주 써요. 동사원형은 문장 맨 끝에 오고, 주어는 쓰지 않아요. 분리동사도 끝에서 붙여서 써요(dazugeben). 이유를 덧붙일 때는 denn 뒤에 보통 문장이 와서 동사가 2번 자리에 와요(denn so schmecken …).",
+   "pattern": "(목적어 · 부사어) + 동사원형.",
+   "examples": [
+    {
+     "de": "Zuerst Mehl und Salz in eine Schüssel geben und dann langsam die Milch dazugeben.",
+     "ko": "먼저 밀가루와 소금을 그릇에 넣고, 그다음 우유를 천천히 부어요.",
+     "mark": [
+      "geben",
+      "dazugeben"
+     ],
+     "parts": [
+      [
+       "Zuerst",
+       "부사어(시간)"
+      ],
+      [
+       "Mehl und Salz",
+       "4격 목적어"
+      ],
+      [
+       "in eine Schüssel",
+       "부사어(장소)"
+      ],
+      [
+       "geben",
+       "동사(끝)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "dann",
+       "부사어(시간)"
+      ],
+      [
+       "langsam",
+       "부사어(방법)"
+      ],
+      [
+       "die Milch",
+       "4격 목적어"
+      ],
+      [
+       "dazugeben.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Den Teig dann 20 Minuten stehen lassen, denn so schmecken die Pfannkuchen später sehr gut.",
+     "ko": "그다음 반죽을 20분 동안 그대로 두어요. 그렇게 해야 나중에 팬케이크가 아주 맛있거든요.",
+     "mark": [
+      "stehen lassen"
+     ]
+    }
+   ],
+   "tip": "상대에게 직접 말할 때는 명령형을 써요. 레시피의 Die Eier dazugeben.을 친구에게 말하면 Gib die Eier dazu!가 돼요."
+  },
+  {
+   "title": "순서 말하기 – zuerst · dann · danach",
+   "term": "Reihenfolge: zuerst, dann, danach",
+   "explain": "일의 순서는 zuerst(먼저), dann(그다음에), danach(그 뒤에)로 말해요. 레시피에서는 이 말을 문장 맨 앞이나 중간에 써요(Zuerst Mehl und Salz …, Den Teig dann …). 보통 문장에서 시간 표현이 1번 자리에 오면 동사가 바로 뒤에 와요(nach zwei Minuten ist er fertig).",
+   "pattern": "zuerst → dann → danach",
+   "examples": [
+    {
+     "de": "Danach die Eier in die Schüssel geben und alles gut mischen.",
+     "ko": "그 뒤에 달걀을 그릇에 넣고 모두 잘 섞어요.",
+     "mark": [
+      "Danach"
+     ],
+     "parts": [
+      [
+       "Danach",
+       "부사어(시간)"
+      ],
+      [
+       "die Eier",
+       "4격 목적어"
+      ],
+      [
+       "in die Schüssel",
+       "부사어(장소)"
+      ],
+      [
+       "geben",
+       "동사(끝)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "alles",
+       "4격 목적어"
+      ],
+      [
+       "gut",
+       "부사어(방법)"
+      ],
+      [
+       "mischen.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Den Pfannkuchen zwei Minuten backen, dann wenden, und nach zwei Minuten ist er fertig.",
+     "ko": "팬케이크를 2분 동안 굽고 뒤집어요. 다시 2분이 지나면 다 돼요.",
+     "mark": [
+      "dann",
+      "nach zwei Minuten ist er"
+     ]
+    }
+   ],
+   "tip": "dann과 denn을 헷갈리지 마세요. dann은 '그다음에'이고, denn은 '왜냐하면'이에요(denn so schmecken die Pfannkuchen später sehr gut)."
+  },
+  {
+   "title": "분량 표현 – 단위 + 명사",
+   "term": "Mengenangaben (Maß + Nomen ohne Artikel)",
+   "explain": "분량은 숫자 + 단위 + 명사 순서로 말해요. 단위 뒤의 명사에는 관사를 붙이지 않아요(250 Gramm Mehl, eine Prise Salz). Gramm과 Liter는 숫자가 2 이상이어도 복수형으로 바꾸지 않아요. etwas, ein wenig(조금) 뒤에도 관사 없이 명사가 와요(etwas Butter, ein wenig Teig).",
+   "pattern": "숫자 + Gramm · Liter · Prise + 명사 / etwas · ein wenig + 명사",
+   "examples": [
+    {
+     "de": "Etwas Butter in der Pfanne heiß machen und für jeden Pfannkuchen ein wenig Teig nehmen.",
+     "ko": "팬에 버터를 조금 넣고 달군 다음, 팬케이크 한 장마다 반죽을 조금씩 써요.",
+     "mark": [
+      "Etwas Butter",
+      "ein wenig Teig"
+     ],
+     "parts": [
+      [
+       "Etwas Butter",
+       "4격 목적어"
+      ],
+      [
+       "in der Pfanne",
+       "부사어(장소)"
+      ],
+      [
+       "heiß",
+       "보어"
+      ],
+      [
+       "machen",
+       "동사(끝)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "für jeden Pfannkuchen",
+       "부사어"
+      ],
+      [
+       "ein wenig Teig",
+       "4격 목적어"
+      ],
+      [
+       "nehmen.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "250 Gramm Mehl",
+     "ko": "밀가루 250그램",
+     "mark": [
+      "250 Gramm"
+     ]
+    },
+    {
+     "de": "ein halber Liter frische Milch",
+     "ko": "신선한 우유 반 리터",
+     "mark": [
+      "ein halber Liter"
+     ]
+    }
+   ],
+   "tip": "한국어는 '밀가루 250그램'처럼 재료를 먼저 말하지만, 독일어는 250 Gramm Mehl처럼 분량을 먼저 말해요. ein halber Liter의 halber는 Liter가 남성 명사(der Liter)라서 -er로 끝나요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "der Pfannkuchen, -",
+   "ko": "팬케이크"
+  },
+  {
+   "de": "das Rezept, -e",
+   "ko": "레시피, 조리법"
+  },
+  {
+   "de": "die Zutat, -en",
+   "ko": "재료"
+  },
+  {
+   "de": "das Mehl (Sg.)",
+   "ko": "밀가루"
+  },
+  {
+   "de": "die Prise, -n",
+   "ko": "한 꼬집"
+  },
+  {
+   "de": "die Schüssel, -n",
+   "ko": "(움푹한) 그릇, 볼"
+  },
+  {
+   "de": "dazu|geben (gibt dazu, hat dazugegeben)",
+   "ko": "더 넣다"
+  },
+  {
+   "de": "mischen",
+   "ko": "섞다"
+  },
+  {
+   "de": "der Teig, -e",
+   "ko": "반죽"
+  },
+  {
+   "de": "die Pfanne, -n",
+   "ko": "프라이팬"
+  },
+  {
+   "de": "wenden",
+   "ko": "뒤집다"
+  },
+  {
+   "de": "fertig",
+   "ko": "다 된, 완성된"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "ein halber Liter",
+   "ko": "반 리터",
+   "ex": "ein halber Liter frische Milch",
+   "exko": "신선한 우유 반 리터"
+  },
+  {
+   "de": "stehen lassen",
+   "ko": "그대로 두다",
+   "ex": "Den Teig dann 20 Minuten stehen lassen, denn so schmecken die Pfannkuchen später sehr gut.",
+   "exko": "그다음 반죽을 20분 동안 그대로 두어요. 그렇게 해야 나중에 팬케이크가 아주 맛있거든요."
+  },
+  {
+   "de": "Guten Appetit!",
+   "ko": "맛있게 드세요",
+   "ex": "Guten Appetit!",
+   "exko": "맛있게 드세요!"
+  }
+ ]
+}

@@ -1,0 +1,505 @@
+{
+ "id": "a2-25",
+ "level": "A2",
+ "no": 25,
+ "title": "Wer bringt was mit?",
+ "titleKo": "누가 무엇을 가져올까요?",
+ "type": "Gruppenchat",
+ "typeKo": "단체 채팅",
+ "intro": "친구 넷이 호숫가 캠핑에 누가 무엇을 가져올지 단체 채팅으로 정해요.",
+ "focus": [
+  "was für ein-",
+  "einer · eins · welche",
+  "meins · deins"
+ ],
+ "paragraphs": [
+  {
+   "label": "Mats · 18.02",
+   "de": "Hallo zusammen, am Freitag fahren wir zum Zelten an den Waldsee, aber wer bringt eigentlich was mit? Mein Zelt ist allerdings nur für zwei Personen.",
+   "ko": "모두 안녕하세요, 금요일에 발트제 호수로 캠핑하러 가는데, 누가 뭘 가져올까요? 그런데 제 텐트는 2인용이에요."
+  },
+  {
+   "label": "Frieda · 18.05",
+   "de": "Wir haben auch eins, unseres ist groß genug für vier Personen, aber ziemlich schwer und passt nicht in jeden Kofferraum. Was für ein Auto fährt dein Vater, Deniz?",
+   "ko": "우리 집에도 하나 있어요. 우리 것은 네 명이 쓰기에 충분히 크지만 꽤 무겁고, 아무 차 트렁크에나 들어가지는 않아요. 데니스, 아버지는 어떤 차를 타세요?"
+  },
+  {
+   "label": "Deniz · 18.09",
+   "de": "Einen Kombi mit riesigem Kofferraum, da passt euer Zelt bestimmt rein, und am Wochenende darf ich das Auto benutzen. Hat irgendjemand einen Gaskocher?",
+   "ko": "왜건이에요. 트렁크가 아주 커서 프리다네 텐트도 분명히 들어갈 거예요. 그리고 주말에는 제가 그 차를 써도 돼요. 가스버너 있는 사람 누구 없어요?"
+  },
+  {
+   "label": "Mats · 18.11",
+   "de": "Ja, ich habe einen und bringe außerdem Töpfe, Teller und Besteck mit. Braucht ihr Luftmatratzen? Im Keller liegen welche.",
+   "ko": "네, 저한테 하나 있어요. 냄비랑 접시, 수저도 가져갈게요. 에어 매트리스도 필요해요? 지하실에 몇 개 있어요."
+  },
+  {
+   "label": "Juna · 18.15",
+   "de": "Ich komme mit, habe aber keine Erfahrung mit Zelten und besitze keinen Schlafsack. Was für einen brauche ich denn?",
+   "ko": "저도 같이 갈게요. 그런데 캠핑을 해 본 적이 없고 침낭도 없어요. 어떤 침낭이 필요해요?"
+  },
+  {
+   "label": "Frieda · 18.17",
+   "de": "Einen warmen, weil es nachts am See ziemlich kalt werden kann, aber kauf keinen, ich habe nämlich zwei. Du kannst problemlos meinen alten ausleihen.",
+   "ko": "따뜻한 거요. 호숫가는 밤에 꽤 추워질 수 있거든요. 그런데 사지는 마세요. 저한테 두 개 있으니까요. 제가 예전에 쓰던 걸 얼마든지 빌려 가도 돼요."
+  },
+  {
+   "label": "Juna · 18.18",
+   "de": "Super, danke, ich übernehme den Einkauf und besorge Lebensmittel und Getränke für alle. Was für Würstchen mögt ihr?",
+   "ko": "좋아요, 고마워요. 장보기는 제가 맡아서 모두가 먹고 마실 것을 사 올게요. 어떤 소시지를 좋아해요?"
+  },
+  {
+   "label": "Deniz · 18.21",
+   "de": "Ist mir egal, aber bitte keine scharfen, die schmecken mir nicht.",
+   "ko": "저는 아무거나 괜찮아요. 그런데 매운 건 빼 주세요. 제 입에 안 맞아요."
+  },
+  {
+   "label": "Mats · 18.24",
+   "de": "Perfekt, bei mir steht übrigens die rote Kühlbox vom letzten Campingausflug. Wem gehört die, Frieda, ist das deine?",
+   "ko": "좋아요. 그런데 우리 집에 지난번 캠핑 때 쓴 빨간 아이스박스가 있어요. 프리다, 이거 누구 거예요? 프리다 거예요?"
+  },
+  {
+   "label": "Frieda · 18.25",
+   "de": "Nein, meine ist blau und deutlich kleiner, vermutlich ist das eure, Deniz!",
+   "ko": "아니요, 제 건 파란색이고 훨씬 작아요. 아마 데니스네 거일 거예요!"
+  },
+  {
+   "label": "Deniz · 18.30",
+   "de": "Stimmt, das ist unsere, bring sie bitte mit, Mats! Am Freitag hole ich euch um 16 Uhr ab, zuerst Juna, weil ihre Wohnung am nächsten liegt, und anschließend die anderen.",
+   "ko": "맞아요, 우리 거예요. 마츠, 그거 좀 가져와 주세요! 금요일 16시에 제가 데리러 갈게요. 유나 집이 제일 가까우니까 유나를 먼저 태우고, 그다음에 다른 사람들을 태울게요."
+  }
+ ],
+ "questions": [
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Welches Zelt nehmen die Freunde wahrscheinlich mit?",
+   "options": [
+    "das kleine Zelt von Mats",
+    "das Zelt von Friedas Familie",
+    "ein neues Zelt aus dem Laden"
+   ],
+   "answer": 1,
+   "evidence": "da passt euer Zelt bestimmt rein",
+   "pairs": [
+    [
+     "Wir haben auch eins, unseres ist groß genug für vier Personen",
+     "das Zelt von Friedas Familie"
+    ]
+   ],
+   "explain": "마츠의 텐트는 2인용이라 네 명이 쓰기에는 작아요. 프리다네 텐트(unseres)는 네 명이 쓸 수 있지만 무거워서 아무 차에나 들어가지 않아요. 그런데 데니스가 트렁크가 큰 왜건이라 그 텐트가 분명히 들어간다고 해요. 그래서 프리다네 텐트를 가져갈 가능성이 커요. 새 텐트를 산다는 말은 없어요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Deniz darf für den Ausflug das Familienauto nehmen.",
+   "answer": 0,
+   "evidence": "und am Wochenende darf ich das Auto benutzen",
+   "pairs": [
+    [
+     "am Wochenende darf ich das Auto benutzen",
+     "darf für den Ausflug das Familienauto nehmen"
+    ],
+    [
+     "Was für ein Auto fährt dein Vater",
+     "Familienauto"
+    ]
+   ],
+   "explain": "프리다가 데니스에게 아버지가 어떤 차를 타는지 묻고, 데니스는 주말에 그 차를 써도 된다고 해요. 아버지의 차를 Familienauto(집안 차)로, benutzen을 nehmen으로 바꿔 말했으니까 맞아요."
+  },
+  {
+   "type": "mc",
+   "kind": "meaning",
+   "q": "Was bedeutet „welche“ in „Im Keller liegen welche“?",
+   "options": [
+    "ein paar Matratzen zum Aufpumpen",
+    "ein paar Töpfe und flache Teller",
+    "ein paar alte, warme Schlafsäcke"
+   ],
+   "answer": 0,
+   "evidence": "Braucht ihr Luftmatratzen?",
+   "pairs": [
+    [
+     "Luftmatratzen",
+     "Matratzen zum Aufpumpen"
+    ]
+   ],
+   "explain": "welche는 바로 앞 문장에 나온 복수 명사 Luftmatratzen(에어 매트리스)을 가리켜요. 복수 명사를 되풀이하지 않고 '몇 개'라고 말할 때 welche를 써요. Luftmatratzen을 Matratzen zum Aufpumpen(바람을 넣는 매트리스)으로 바꿔 말했어요. 냄비와 접시는 마츠가 이미 가져온다고 말한 것이고, 침낭은 프리다가 가지고 있어요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Juna muss für den Ausflug noch einen Schlafsack kaufen.",
+   "answer": 1,
+   "evidence": "Du kannst problemlos meinen alten ausleihen.",
+   "pairs": [
+    [
+     "kauf keinen",
+     "einen Schlafsack kaufen"
+    ]
+   ],
+   "explain": "프리다는 침낭을 사지 말라고 하면서(kauf keinen) 자기가 예전에 쓰던 것을 빌려 가도 된다고 해요. 그래서 유나는 침낭을 살 필요가 없어요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was macht Juna für die Gruppe?",
+   "options": [
+    "Sie kümmert sich um Essen und Trinken.",
+    "Sie bringt Töpfe und den Gaskocher mit.",
+    "Sie leiht Frieda ihren Schlafsack."
+   ],
+   "answer": 0,
+   "evidence": "ich übernehme den Einkauf und besorge Lebensmittel und Getränke für alle",
+   "pairs": [
+    [
+     "besorge Lebensmittel und Getränke",
+     "kümmert sich um Essen und Trinken"
+    ]
+   ],
+   "explain": "유나는 장보기를 맡아서 모두가 먹고 마실 것을 사 오겠다고 해요. Lebensmittel und Getränke를 Essen und Trinken으로 바꿔 말했어요. 냄비와 가스버너는 마츠가 가져오고, 침낭은 프리다가 유나에게 빌려주는 거예요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Wem gehört die rote Kühlbox?",
+   "options": [
+    "Mats und seiner Familie",
+    "Frieda und ihrer Familie",
+    "Deniz und seiner Familie"
+   ],
+   "answer": 2,
+   "evidence": "Stimmt, das ist unsere, bring sie bitte mit, Mats!",
+   "pairs": [
+    [
+     "das ist unsere",
+     "Deniz und seiner Familie"
+    ]
+   ],
+   "explain": "프리다가 아마 데니스네 것(eure)일 거라고 하고, 데니스도 “맞아요, 우리 거예요(unsere)”라고 답해요. 아이스박스는 마츠의 집에 있지만 마츠의 것은 아니에요. 프리다의 것은 파란색이고 더 작아요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was passiert am Freitag um 16 Uhr?",
+   "options": [
+    "Alle treffen sich bei Mats im Keller.",
+    "Juna steigt als Erste ins Auto ein.",
+    "Die Freunde sind schon am Waldsee."
+   ],
+   "answer": 1,
+   "evidence": "Am Freitag hole ich euch um 16 Uhr ab, zuerst Juna",
+   "pairs": [
+    [
+     "zuerst Juna",
+     "Juna steigt als Erste ins Auto ein"
+    ]
+   ],
+   "explain": "데니스는 금요일 16시에 친구들을 데리러 가는데, 집이 가장 가까운 유나를 먼저 태워요(zuerst Juna). 그래서 유나가 가장 먼저 차에 타요. 마츠의 집 지하실에서 모이는 것도 아니고, 16시에는 아직 호수에 도착하지 않았어요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "was für ein-: 어떤 종류의",
+   "term": "Fragewort was für ein-?",
+   "explain": "사물의 종류나 특징을 물을 때 was für ein-을 써요. ein-은 뒤에 오는 명사의 성과 격에 맞게 변해요. 여기서 für는 4격을 요구하지 않아요. 명사를 다시 말하지 않을 때는 was für einen?처럼 ein-만 남겨요. 복수 명사 앞에서는 ein 없이 was für만 써요.",
+   "pattern": "Was für ein/eine/einen + 명사? · Was für einen? · Was für + 복수 명사?",
+   "examples": [
+    {
+     "de": "Was für ein Auto fährt dein Vater, Deniz?",
+     "ko": "데니스, 아버지는 어떤 차를 타세요?",
+     "mark": [
+      "Was für ein Auto"
+     ],
+     "parts": [
+      [
+       "Was für ein Auto",
+       "4격 목적어"
+      ],
+      [
+       "fährt",
+       "동사"
+      ],
+      [
+       "dein Vater,",
+       "주어"
+      ],
+      [
+       "Deniz?",
+       "기타"
+      ]
+     ]
+    },
+    {
+     "de": "Was für einen brauche ich denn?",
+     "ko": "어떤 침낭이 필요해요?",
+     "mark": [
+      "Was für einen"
+     ],
+     "parts": [
+      [
+       "Was für einen",
+       "4격 목적어"
+      ],
+      [
+       "brauche",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "denn?",
+       "기타"
+      ]
+     ]
+    },
+    {
+     "de": "Was für Würstchen mögt ihr?",
+     "ko": "어떤 소시지를 좋아해요?",
+     "mark": [
+      "Was für Würstchen"
+     ]
+    }
+   ],
+   "tip": "welch-는 정해진 것들 가운데 하나를 고를 때 써요. Welches Zelt nehmen wir, meins oder deins? 종류를 물을 때는 was für ein-이에요."
+  },
+  {
+   "title": "einer · eins · welche – 명사 대신 쓰는 ein-",
+   "term": "ein- und kein- als Pronomen: einer, eins, eine, welche, keiner",
+   "explain": "앞에서 말한 명사를 되풀이하지 않을 때 ein-을 대명사로 써요. 남성 1격은 einer, 4격은 einen이고, 중성 1·4격은 eins, 여성은 eine예요. 복수에는 ein-이 없어서 welche를 써요. '하나도 없다'고 할 때는 keiner, keins, keine, keinen을 써요.",
+   "pattern": "(남성) einer / einen · (중성) eins · (여성) eine · (복수) welche · 부정: keiner / keinen / keins / keine",
+   "examples": [
+    {
+     "de": "Im Keller liegen welche.",
+     "ko": "지하실에 몇 개 있어요.",
+     "mark": [
+      "welche"
+     ],
+     "parts": [
+      [
+       "Im Keller",
+       "부사어(장소)"
+      ],
+      [
+       "liegen",
+       "동사"
+      ],
+      [
+       "welche.",
+       "주어"
+      ]
+     ]
+    },
+    {
+     "de": "Ja, ich habe einen und bringe außerdem Töpfe, Teller und Besteck mit.",
+     "ko": "네, 저한테 하나 있어요. 냄비랑 접시, 수저도 가져갈게요.",
+     "mark": [
+      "einen"
+     ],
+     "parts": [
+      [
+       "Ja,",
+       "기타"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "habe",
+       "동사"
+      ],
+      [
+       "einen",
+       "4격 목적어"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "bringe",
+       "동사"
+      ],
+      [
+       "außerdem",
+       "부사어"
+      ],
+      [
+       "Töpfe, Teller und Besteck",
+       "4격 목적어"
+      ],
+      [
+       "mit.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Einen warmen, weil es nachts am See ziemlich kalt werden kann, aber kauf keinen, ich habe nämlich zwei.",
+     "ko": "따뜻한 거요. 호숫가는 밤에 꽤 추워질 수 있거든요. 그런데 사지는 마세요. 저한테 두 개 있으니까요.",
+     "mark": [
+      "Einen warmen",
+      "keinen"
+     ]
+    }
+   ],
+   "tip": "관사 ein 뒤에는 명사가 와요(ein Zelt). 대명사 eins는 명사 없이 혼자 써요(Wir haben auch eins). Einen warmen처럼 형용사가 남으면 형용사가 명사 대신 남성 4격 어미 -en을 받아요."
+  },
+  {
+   "title": "소유대명사 meins · deins",
+   "term": "Possessivpronomen (meiner, meins, meine …)",
+   "explain": "소유관사 뒤의 명사를 생략하면 소유대명사가 돼요. 어미는 정관사와 비슷해요. 남성 1격은 meiner, 4격은 meinen이고, 여성과 복수는 meine, deine, eure예요. 중성 1·4격은 meins, deins, unseres예요.",
+   "pattern": "(남성) meiner / meinen · (여성·복수) meine · deine · eure · unsere · (중성) meins · deins · unseres",
+   "examples": [
+    {
+     "de": "Nein, meine ist blau und deutlich kleiner, vermutlich ist das eure, Deniz!",
+     "ko": "아니요, 제 건 파란색이고 훨씬 작아요. 아마 데니스네 거일 거예요!",
+     "mark": [
+      "meine",
+      "eure"
+     ],
+     "parts": [
+      [
+       "Nein,",
+       "기타"
+      ],
+      [
+       "meine",
+       "주어"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "blau und deutlich kleiner,",
+       "보어"
+      ],
+      [
+       "vermutlich",
+       "부사어"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "das",
+       "주어"
+      ],
+      [
+       "eure,",
+       "보어"
+      ],
+      [
+       "Deniz!",
+       "기타"
+      ]
+     ]
+    },
+    {
+     "de": "Wir haben auch eins, unseres ist groß genug für vier Personen, aber ziemlich schwer und passt nicht in jeden Kofferraum.",
+     "ko": "우리 집에도 하나 있어요. 우리 것은 네 명이 쓰기에 충분히 크지만 꽤 무겁고, 아무 차 트렁크에나 들어가지는 않아요.",
+     "mark": [
+      "unseres"
+     ]
+    },
+    {
+     "de": "Stimmt, das ist unsere, bring sie bitte mit, Mats!",
+     "ko": "맞아요, 우리 거예요. 마츠, 그거 좀 가져와 주세요!",
+     "mark": [
+      "unsere"
+     ]
+    }
+   ],
+   "tip": "명사가 있으면 소유관사(Mein Zelt ist …), 명사가 없으면 소유대명사(meins)예요. Das ist mein Zelt. → Das ist meins."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "zelten",
+   "ko": "캠핑하다, 텐트에서 자다"
+  },
+  {
+   "de": "das Zelt, -e",
+   "ko": "텐트"
+  },
+  {
+   "de": "mit|bringen (brachte mit, hat mitgebracht)",
+   "ko": "가져오다"
+  },
+  {
+   "de": "der Kofferraum, -¨e",
+   "ko": "(자동차) 트렁크"
+  },
+  {
+   "de": "der Kombi, -s",
+   "ko": "왜건 (짐칸이 넓은 승용차)"
+  },
+  {
+   "de": "der Gaskocher, -",
+   "ko": "가스버너"
+  },
+  {
+   "de": "die Luftmatratze, -n",
+   "ko": "에어 매트리스"
+  },
+  {
+   "de": "die Erfahrung, -en",
+   "ko": "경험"
+  },
+  {
+   "de": "besitzen (besaß, hat besessen)",
+   "ko": "가지고 있다"
+  },
+  {
+   "de": "der Schlafsack, -¨e",
+   "ko": "침낭"
+  },
+  {
+   "de": "aus|leihen (lieh aus, hat ausgeliehen)",
+   "ko": "빌리다, 빌려주다"
+  },
+  {
+   "de": "der Einkauf, -¨e",
+   "ko": "장보기"
+  },
+  {
+   "de": "die Kühlbox, -en",
+   "ko": "아이스박스"
+  },
+  {
+   "de": "ab|holen",
+   "ko": "데리러 가다, 가지러 가다"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "groß genug für + Akk.",
+   "ko": "~에 충분히 큰",
+   "ex": "Wir haben auch eins, unseres ist groß genug für vier Personen, aber ziemlich schwer und passt nicht in jeden Kofferraum.",
+   "exko": "우리 집에도 하나 있어요. 우리 것은 네 명이 쓰기에 충분히 크지만 꽤 무겁고, 아무 차 트렁크에나 들어가지는 않아요."
+  },
+  {
+   "de": "Erfahrung mit + Dat. haben",
+   "ko": "~을 해 본 경험이 있다",
+   "ex": "Ich komme mit, habe aber keine Erfahrung mit Zelten und besitze keinen Schlafsack.",
+   "exko": "저도 같이 갈게요. 그런데 캠핑을 해 본 적이 없고 침낭도 없어요."
+  },
+  {
+   "de": "den Einkauf übernehmen",
+   "ko": "장보기를 맡다",
+   "ex": "Super, danke, ich übernehme den Einkauf und besorge Lebensmittel und Getränke für alle.",
+   "exko": "좋아요, 고마워요. 장보기는 제가 맡아서 모두가 먹고 마실 것을 사 올게요."
+  },
+  {
+   "de": "Ist mir egal.",
+   "ko": "저는 아무래도 괜찮아요",
+   "ex": "Ist mir egal, aber bitte keine scharfen, die schmecken mir nicht.",
+   "exko": "저는 아무거나 괜찮아요. 그런데 매운 건 빼 주세요. 제 입에 안 맞아요."
+  }
+ ]
+}

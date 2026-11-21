@@ -8,8 +8,8 @@
  "typeKo": "공개 서한",
  "intro": "도서관 폐관 계획에 반대하는 시민 모임이 시의회에 보낸 공개 서한이에요.",
  "focus": [
-  "상관어 es",
-  "이중 부정사",
+  "1번 자리 활용",
+  "sich + 과거분사 + sehen",
   "형용사 + 전치사",
   "요구와 제안 표현"
  ],
@@ -33,8 +33,8 @@
    "ko": "도서관은 책이 가득한 공간 그 이상입니다. 비가 오면 지붕에서 물이 새는데도 우리 도서관의 지난해 방문 건수는 약 38,000건으로, 그 어느 때보다 많았습니다. 화요일과 목요일에는 자원봉사자들이 그곳에서 아이들의 숙제를 도와주고, 한 달에 한 번은 이주민을 위한 언어 카페가 열립니다. 많은 관청이 더 이상 종이 서류를 보내지 않게 된 뒤로, 어르신들은 온라인으로 신청서를 내는 방법을 이곳에서 배웁니다. 또 많은 가정에게 도서관은 아이들이 방과 후에 무언가를 사야 한다는 부담 없이 머물 수 있는 유일한 장소입니다."
   },
   {
-   "de": "Es ist für uns nicht nachvollziehbar, dass eine so weitreichende Entscheidung ohne jede öffentliche Diskussion vorbereitet wurde. Viele Nutzer haben erst aus der Zeitung davon erfahren und sehen sich nun vor vollendete Tatsachen gestellt, obwohl man sie vorher hätte anhören müssen. Hätte die Stadt frühzeitig über die Finanzlage informiert, hätten wir gemeinsam nach Lösungen suchen können. Dass das Dach schon vor Jahren hätte repariert werden müssen, ist unbestritten. Weil man die Sanierung immer wieder verschoben hat, sind die Kosten inzwischen auf geschätzte 480.000 Euro gestiegen. Genau dieser Betrag dient nun als wichtigstes Argument für die Schließung.",
-   "ko": "이처럼 영향이 큰 결정이 아무런 공개 논의 없이 준비되었다는 것을 우리는 납득할 수 없습니다. 많은 이용자가 신문을 보고서야 이 계획을 알았고, 이제 이미 정해진 결과를 통보받은 처지가 되었습니다. 그 전에 이용자들의 의견을 들었어야 했는데도 말입니다. 시가 재정 상황을 일찍 알렸더라면 우리는 함께 해결책을 찾을 수 있었을 것입니다. 지붕을 이미 몇 년 전에 수리했어야 했다는 점에는 이론의 여지가 없습니다. 보수 공사를 계속 미룬 탓에 비용은 그사이 추산 480,000유로까지 늘어났습니다. 그리고 바로 이 금액이 지금 폐관의 가장 중요한 근거로 쓰이고 있습니다."
+   "de": "Zu diesem offenen Brief sehen wir uns gezwungen, weil eine so weitreichende Entscheidung ohne jede öffentliche Diskussion vorbereitet wurde. Viele Nutzer haben erst aus der Zeitung davon erfahren und sehen sich nun vor vollendete Tatsachen gestellt, obwohl man sie vorher hätte anhören müssen. Hätte die Stadt frühzeitig über die Finanzlage informiert, hätten wir gemeinsam nach Lösungen suchen können. Dass das Dach schon vor Jahren hätte repariert werden müssen, ist unbestritten. Weil man die Sanierung immer wieder verschoben hat, sind die Kosten inzwischen auf geschätzte 480.000 Euro gestiegen. Genau dieser Betrag dient nun als wichtigstes Argument für die Schließung.",
+   "ko": "우리가 이 공개 서한을 쓸 수밖에 없는 것은 이처럼 영향이 큰 결정이 아무런 공개 논의 없이 준비되었기 때문입니다. 많은 이용자가 신문을 보고서야 이 계획을 알았고, 이제 이미 정해진 결과를 통보받은 처지가 되었습니다. 그 전에 이용자들의 의견을 들었어야 했는데도 말입니다. 시가 재정 상황을 일찍 알렸더라면 우리는 함께 해결책을 찾을 수 있었을 것입니다. 지붕을 이미 몇 년 전에 수리했어야 했다는 점에는 이론의 여지가 없습니다. 보수 공사를 계속 미룬 탓에 비용은 그사이 추산 480,000유로까지 늘어났습니다. 그리고 바로 이 금액이 지금 폐관의 가장 중요한 근거로 쓰이고 있습니다."
   },
   {
    "de": "Die Verwaltung verweist darauf, dass Bücher, Zeitschriften und Hörbücher künftig über die digitale Ausleihe zur Verfügung stünden. Wir begrüßen dieses Angebot, solange es die Bibliothek ergänzt und nicht ersetzt. Gerade die eifrigsten Nutzer haben aber oft kein Tablet oder kommen ohne Hilfe nicht damit zurecht. Eine Verlagerung ins Netz würde also ausgerechnet die Menschen ausschließen, die am stärksten auf die Bibliothek angewiesen sind. Auch der Vorschlag, auf die Bücherei der Nachbarstadt auszuweichen, überzeugt uns nicht: Ohne Auto ist man mit dem Bus 40 Minuten dorthin unterwegs.",
@@ -66,7 +66,7 @@
    "q": "Was ist das zentrale Anliegen des Briefes?",
    "options": [
     "Der Förderverein soll die Kosten für das Dach mit Spenden decken.",
-    "Der Beschluss soll warten, bis alle Betroffenen mitreden konnten.",
+    "Der Beschluss soll warten, bis alle Betroffenen mitreden können.",
     "Die Bibliothek soll ganz in die Räume der Volkshochschule umziehen."
    ],
    "answer": 1,
@@ -78,7 +78,7 @@
     ],
     [
      "in einer öffentlichen Anhörung gemeinsam beraten",
-     "bis alle Betroffenen mitreden konnten"
+     "bis alle Betroffenen mitreden können"
     ]
    ],
    "explain": "편지의 핵심 요구는 12월 2일 표결을 보류하고 결정을 반년 미룬 뒤, 공청회에서 시민·학교·행정부가 함께 논의하자는 것이에요. 정답은 이를 '관련된 사람들이 모두 의견을 말할 수 있을 때까지 결정을 기다려야 한다'로 바꿔 말했어요. 후원회는 기부금을 모으지만 지붕 비용을 대겠다는 말은 없고, 시민대학과는 공간을 함께 쓰자고 했을 뿐 도서관을 옮기자는 말은 없어요."
@@ -169,7 +169,7 @@
   {
    "type": "rfn",
    "kind": "detail",
-   "q": "Gegen die Möglichkeit, Medien online zu leihen, hat die Initiative im Grunde nichts einzuwenden.",
+   "q": "Gegen die Möglichkeit, Medien online auszuleihen, hat die Initiative im Grunde nichts einzuwenden.",
    "answer": 0,
    "evidence": "Wir begrüßen dieses Angebot, solange es die Bibliothek ergänzt und nicht ersetzt.",
    "pairs": [
@@ -179,7 +179,7 @@
     ],
     [
      "über die digitale Ausleihe",
-     "Medien online zu leihen"
+     "Medien online auszuleihen"
     ]
    ],
    "explain": "시민 모임은 전자 대출 서비스를 환영한다고(begrüßen) 해요. 다만 도서관을 대신하지 않고 보완할 때만이라는 조건을 달았어요. 온라인 대출이라는 가능성 자체에는 반대하지 않으므로 문장은 맞아요."
@@ -243,84 +243,17 @@
  ],
  "grammar": [
   {
-   "title": "상관어 es: dass 문장과 zu 부정사구를 미리 가리키기",
-   "term": "Korrelat es bei Subjekt- und Objektsätzen",
-   "explain": "dass 문장이나 zu 부정사구가 주어나 목적어 역할을 하면서 뒤에 오면, 앞자리에 es를 두어 그 문장을 미리 가리켜요. Es ist nicht nachvollziehbar, dass …에서 es는 뒤의 dass 문장을 대신해 주어 자리를 채워요. halten … für처럼 4격 목적어가 필요한 동사에서도 Wir halten es für einen Fehler, … zu …처럼 es가 목적어 자리를 먼저 채워요. dass 문장이 1번 자리에 오면 es는 쓰지 않아요.",
-   "pattern": "Es ist + 형용사, dass … · 주어 + halten + es + für + 4격, … zu + 동사원형 · Dass …, + 동사 + 주어 …",
+   "title": "1번 자리에 오는 문장과 연결어",
+   "term": "Vorfeldbesetzung: Nebensatz und Verweiswort im Vorfeld",
+   "explain": "독일어 평서문에서 동사는 두 번째 자리에 와요. 그 앞의 1번 자리(Vorfeld)에는 주어 말고도 여러 성분이 올 수 있어요. dass 문장이나 bevor 문장처럼 종속절 전체가 1번 자리에 오면, 바로 뒤에 동사가 오고 그다음에 주어가 와요. 1번 자리에는 강조하고 싶은 내용이나 앞 문장과 이어 주는 말(genau dieser Betrag)을 두는 경우가 많아요. 그래서 1번 자리를 보면 글이 어떻게 이어지는지 알 수 있어요.",
+   "pattern": "[종속절 / 지시어가 있는 명사구] + 동사(2번 자리) + 주어 + …",
    "examples": [
-    {
-     "de": "Es ist für uns nicht nachvollziehbar, dass eine so weitreichende Entscheidung ohne jede öffentliche Diskussion vorbereitet wurde.",
-     "ko": "이처럼 영향이 큰 결정이 아무런 공개 논의 없이 준비되었다는 것을 우리는 납득할 수 없습니다.",
-     "mark": [
-      "Es ist",
-      "dass"
-     ],
-     "parts": [
-      [
-       "Es",
-       "주어"
-      ],
-      [
-       "ist",
-       "동사"
-      ],
-      [
-       "für uns",
-       "부사어"
-      ],
-      [
-       "nicht",
-       "부정어"
-      ],
-      [
-       "nachvollziehbar,",
-       "보어"
-      ],
-      [
-       "dass eine so weitreichende Entscheidung ohne jede öffentliche Diskussion vorbereitet wurde.",
-       "종속절"
-      ]
-     ]
-    },
-    {
-     "de": "Wir halten es aber für einen schweren Fehler, den Rotstift ausgerechnet bei der einzigen öffentlichen Bibliothek der Stadt anzusetzen.",
-     "ko": "그러나 하필이면 우리 시의 유일한 공공 도서관에서 예산을 깎는 것은 심각한 잘못이라고 생각합니다.",
-     "mark": [
-      "halten es",
-      "anzusetzen"
-     ],
-     "parts": [
-      [
-       "Wir",
-       "주어"
-      ],
-      [
-       "halten",
-       "동사"
-      ],
-      [
-       "es",
-       "4격 목적어"
-      ],
-      [
-       "aber",
-       "접속부사"
-      ],
-      [
-       "für einen schweren Fehler,",
-       "보어"
-      ],
-      [
-       "den Rotstift ausgerechnet bei der einzigen öffentlichen Bibliothek der Stadt anzusetzen.",
-       "zu 부정사구"
-      ]
-     ]
-    },
     {
      "de": "Dass die Stadt sparen muss, bestreiten wir nicht.",
      "ko": "시가 예산을 아껴야 한다는 점은 부정하지 않습니다.",
      "mark": [
-      "Dass die Stadt sparen muss"
+      "Dass die Stadt sparen muss",
+      "bestreiten wir"
      ],
      "parts": [
       [
@@ -340,37 +273,21 @@
        "부정어"
       ]
      ]
-    }
-   ],
-   "tip": "es는 뜻을 더하는 말이 아니라 자리를 채우는 말이에요. 그래서 dass 문장이 앞으로 나오면 사라져요: Es ist unbestritten, dass … → Dass …, ist unbestritten. 다만 halten … für 같은 동사는 zu 부정사구가 뒤에 올 때 es를 빼면 어색해요."
-  },
-  {
-   "title": "이중 부정사: hätte … anhören müssen",
-   "term": "Doppelinfinitiv im Konjunktiv II der Vergangenheit",
-   "explain": "화법조동사가 있는 문장을 접속법 2식 과거로 쓰면 과거분사 gemusst 대신 동사원형 müssen을 써서, 문장 끝에 동사원형 두 개가 나란히 와요(anhören müssen). 이것을 이중 부정사라고 해요. 주문장에서 hätte는 2번 자리에 와요. obwohl, dass 같은 종속절에서는 hätte가 맨 끝으로 가지 않고 두 동사원형 바로 앞에 와요. 수동태가 더해지면 repariert werden müssen처럼 과거분사 + werden + müssen이 돼요.",
-   "pattern": "주문장: hätte + … + 동사원형 + 화법조동사 원형 · 종속절: …, obwohl/dass … hätte + 동사원형 + 화법조동사 원형",
-   "examples": [
-    {
-     "de": "Viele Nutzer haben erst aus der Zeitung davon erfahren und sehen sich nun vor vollendete Tatsachen gestellt, obwohl man sie vorher hätte anhören müssen.",
-     "ko": "많은 이용자가 신문을 보고서야 이 계획을 알았고, 이제 이미 정해진 결과를 통보받은 처지가 되었습니다. 그 전에 이용자들의 의견을 들었어야 했는데도 말입니다.",
-     "mark": [
-      "hätte anhören müssen"
-     ]
     },
     {
-     "de": "Hätte die Stadt frühzeitig über die Finanzlage informiert, hätten wir gemeinsam nach Lösungen suchen können.",
-     "ko": "시가 재정 상황을 일찍 알렸더라면 우리는 함께 해결책을 찾을 수 있었을 것입니다.",
+     "de": "Bevor Sie entscheiden, laden wir Sie deshalb ein, an einem Nachmittag vorbeizukommen und mit denen zu sprechen, die das Haus Woche für Woche nutzen.",
+     "ko": "그래서 결정을 내리시기 전에 어느 오후에 한번 들르셔서, 매주 이곳을 이용하는 사람들과 이야기를 나눠 보시도록 초대합니다.",
      "mark": [
-      "hätten",
-      "suchen können"
+      "Bevor Sie entscheiden",
+      "laden wir"
      ],
      "parts": [
       [
-       "Hätte die Stadt frühzeitig über die Finanzlage informiert,",
+       "Bevor Sie entscheiden,",
        "종속절"
       ],
       [
-       "hätten",
+       "laden",
        "동사"
       ],
       [
@@ -378,28 +295,83 @@
        "주어"
       ],
       [
-       "gemeinsam",
-       "부사어(방법)"
+       "Sie",
+       "4격 목적어"
       ],
       [
-       "nach Lösungen",
-       "전치사 목적어"
+       "deshalb",
+       "접속부사"
       ],
       [
-       "suchen können.",
+       "ein,",
        "동사(끝)"
+      ],
+      [
+       "an einem Nachmittag vorbeizukommen und mit denen zu sprechen, die das Haus Woche für Woche nutzen.",
+       "zu 부정사구"
       ]
      ]
     },
     {
-     "de": "Dass das Dach schon vor Jahren hätte repariert werden müssen, ist unbestritten.",
-     "ko": "지붕을 이미 몇 년 전에 수리했어야 했다는 점에는 이론의 여지가 없습니다.",
+     "de": "Genau dieser Betrag dient nun als wichtigstes Argument für die Schließung.",
+     "ko": "그리고 바로 이 금액이 지금 폐관의 가장 중요한 근거로 쓰이고 있습니다.",
      "mark": [
-      "hätte repariert werden müssen"
+      "Genau dieser Betrag"
      ]
     }
    ],
-   "tip": "obwohl man sie vorher anhören müssen hätte처럼 hätte를 맨 끝에 두면 틀려요. 이중 부정사가 있으면 종속절에서도 hätte가 그 앞에 와요."
+   "tip": "1번 자리에는 성분이 하나만 와요. 종속절이 1번 자리를 차지하면 주어는 동사 뒤로 가요. Dass die Stadt sparen muss, wir bestreiten nicht.처럼 주어를 동사 앞에 두면 틀려요."
+  },
+  {
+   "title": "sich + 과거분사 + sehen: 처한 상황 말하기",
+   "term": "sich gezwungen sehen · sich vor vollendete Tatsachen gestellt sehen",
+   "explain": "sich + 과거분사 + sehen은 '자신이 ~된 처지라고 보다'라는 뜻이에요. 과거분사에는 수동의 뜻이 있어요. sich gezwungen sehen은 '~할 수밖에 없다고 여기다', sich vor vollendete Tatsachen gestellt sehen은 '이미 정해진 결과를 통보받은 처지가 되다'예요. 공식적인 글에서 자기 처지를 말할 때 자주 써요. sich gezwungen sehen 뒤에는 zu + 3격이나 zu 부정사구가 와요.",
+   "pattern": "주어 + sehen + sich + (zu + 3격) + 과거분사 · sich gezwungen sehen, … zu + 동사원형",
+   "examples": [
+    {
+     "de": "Zu diesem offenen Brief sehen wir uns gezwungen, weil eine so weitreichende Entscheidung ohne jede öffentliche Diskussion vorbereitet wurde.",
+     "ko": "우리가 이 공개 서한을 쓸 수밖에 없는 것은 이처럼 영향이 큰 결정이 아무런 공개 논의 없이 준비되었기 때문입니다.",
+     "mark": [
+      "Zu diesem offenen Brief",
+      "sehen wir uns gezwungen"
+     ],
+     "parts": [
+      [
+       "Zu diesem offenen Brief",
+       "전치사 목적어"
+      ],
+      [
+       "sehen",
+       "동사"
+      ],
+      [
+       "wir",
+       "주어"
+      ],
+      [
+       "uns",
+       "재귀대명사"
+      ],
+      [
+       "gezwungen,",
+       "보어"
+      ],
+      [
+       "weil eine so weitreichende Entscheidung ohne jede öffentliche Diskussion vorbereitet wurde.",
+       "종속절"
+      ]
+     ]
+    },
+    {
+     "de": "Viele Nutzer haben erst aus der Zeitung davon erfahren und sehen sich nun vor vollendete Tatsachen gestellt, obwohl man sie vorher hätte anhören müssen.",
+     "ko": "많은 이용자가 신문을 보고서야 이 계획을 알았고, 이제 이미 정해진 결과를 통보받은 처지가 되었습니다. 그 전에 이용자들의 의견을 들었어야 했는데도 말입니다.",
+     "mark": [
+      "sehen sich",
+      "vor vollendete Tatsachen gestellt"
+     ]
+    }
+   ],
+   "tip": "Wir werden gezwungen(수동태)은 누군가가 강요한다는 뜻이고, Wir sehen uns gezwungen은 '그렇게 할 수밖에 없다고 판단한다'는 뜻이에요. 같은 틀로 sich bestätigt sehen(자기 생각이 옳았다고 여기다)도 써요."
   },
   {
    "title": "전치사와 함께 쓰는 형용사",
@@ -560,8 +532,8 @@
    "ko": "무언가를 사야 한다는 압박"
   },
   {
-   "de": "nachvollziehbar",
-   "ko": "납득할 수 있는, 이해할 수 있는"
+   "de": "der Förderverein, -e",
+   "ko": "후원회"
   },
   {
    "de": "weitreichend",

@@ -56,11 +56,11 @@
    "ko": "친절하게 문의해 주셔서 감사해요. 운이 좋으시네요. 숙소는 8월 9일부터 비어 있고, 금요일까지 기꺼이 예약해 둘게요. 그때까지 숙소를 쓰시기로 결정하시면 임대 계약서를 이메일로 보내 드릴게요. 계약금을 보내 주시면 예약이 확정돼요."
   },
   {
-   "de": "Ihren Hund dürfen Sie gern mitbringen, solange er nicht aufs Sofa und in die Betten darf. Im eingezäunten Garten können Sie ihn sogar frei laufen lassen. Vor jeder Ankunft lassen wir die Wohnung von einer Reinigungsfirma gründlich putzen, damit sich auch Allergiker wohlfühlen. Die Brötchen können Sie sich weiterhin bringen lassen – hängen Sie einfach abends den Bestellzettel an die Tür, dann hängt die Bäckerei die Tüte bis acht Uhr daran.",
-   "ko": "개는 소파와 침대에 올라가지만 않으면 얼마든지 데려오셔도 돼요. 울타리가 쳐진 정원에서는 자유롭게 뛰어다니게 두셔도 돼요. 알레르기가 있는 분들도 편안하게 지내실 수 있도록, 손님이 도착하기 전에는 매번 청소 업체에 맡겨 숙소를 꼼꼼히 청소해요. 빵은 지금도 배달시키실 수 있어요. 저녁에 주문 쪽지를 문에 걸어 두시기만 하면 빵집에서 8시까지 거기에 빵 봉지를 걸어 놓아요."
+   "de": "Ihren Hund dürfen Sie gern mitbringen, solange er nicht aufs Sofa und in die Betten darf. Im eingezäunten Garten können Sie ihn sogar frei laufen lassen. Vor jeder Ankunft lassen wir die Wohnung von einer Reinigungsfirma gründlich putzen, damit sich auch Allergiker wohlfühlen. Die Brötchen können Sie sich weiterhin bringen lassen – hängen Sie einfach abends den Bestellzettel an die Tür, dann hängt die Bäckerei die Tüte am nächsten Morgen bis acht Uhr daran.",
+   "ko": "개는 소파와 침대에 올라가지만 않으면 얼마든지 데려오셔도 돼요. 울타리가 쳐진 정원에서는 자유롭게 뛰어다니게 두셔도 돼요. 알레르기가 있는 분들도 편안하게 지내실 수 있도록, 손님이 도착하기 전에는 매번 청소 업체에 맡겨 숙소를 꼼꼼히 청소해요. 빵은 지금도 배달시키실 수 있어요. 저녁에 주문 쪽지를 문에 걸어 두시기만 하면 빵집에서 다음 날 아침 8시까지 거기에 빵 봉지를 걸어 놓아요."
   },
   {
-   "de": "Für unsere Gäste stehen zwei Fahrräder kostenlos im Schuppen, und Kinderräder bekommen Sie beim Verleih im Ort, der nur fünf Minuten entfernt ist. Einen Parkplatz direkt am Haus haben Sie natürlich auch. Die Schlüssel übergebe ich Ihnen am Anreisetag persönlich, oder ich lasse sie bei meiner Nachbarin, falls ich nicht zu Hause bin.",
+   "de": "Für unsere Gäste stehen zwei Fahrräder kostenlos im Schuppen bereit, und Kinderräder bekommen Sie beim Verleih im Ort, der nur fünf Minuten entfernt ist. Einen Parkplatz direkt am Haus haben Sie natürlich auch. Die Schlüssel übergebe ich Ihnen am Anreisetag persönlich, oder ich lasse sie bei meiner Nachbarin, falls ich nicht zu Hause bin.",
    "ko": "손님용 자전거 두 대는 창고에 있고 무료로 쓰실 수 있어요. 아이들 자전거는 5분 거리에 있는 마을 대여점에서 빌리실 수 있어요. 물론 집 바로 옆에 주차 자리도 있어요. 열쇠는 도착하시는 날에 제가 직접 드릴게요. 혹시 제가 집에 없으면 이웃집 여자분에게 맡겨 둘게요."
   },
   {
@@ -91,7 +91,7 @@
   {
    "type": "mc",
    "kind": "inference",
-   "q": "Warum fragt Frau Schuster nach einem Parkplatz?",
+   "q": "Was kann man aus Frau Schusters Frage nach einem Parkplatz schließen?",
    "options": [
     "Es steht noch nicht fest, ob die Familie mit dem Wagen fährt.",
     "Sie will die eigenen Fahrräder im Auto an den See mitbringen.",
@@ -203,7 +203,7 @@
    "kind": "detail",
    "q": "Im Schuppen stehen Fahrräder für alle vier Familienmitglieder bereit.",
    "answer": 1,
-   "evidence": "Für unsere Gäste stehen zwei Fahrräder kostenlos im Schuppen, und Kinderräder bekommen Sie beim Verleih im Ort, der nur fünf Minuten entfernt ist.",
+   "evidence": "Für unsere Gäste stehen zwei Fahrräder kostenlos im Schuppen bereit, und Kinderräder bekommen Sie beim Verleih im Ort, der nur fünf Minuten entfernt ist.",
    "pairs": [
     [
      "zwei Fahrräder",
@@ -221,16 +221,16 @@
    "kind": "detail",
    "q": "Wo bekommt die Familie die Schlüssel, wenn Frau Mertens bei der Ankunft nicht da ist?",
    "options": [
-    "bei der Frau, die gleich nebenan im Haus wohnt",
+    "bei der Frau, die gleich im Haus nebenan wohnt",
     "vorher zusammen mit dem Mietvertrag per Post",
-    "im Schuppen, wo auch die beiden Fahrräder stehen"
+    "im Schuppen, wo auch die Fahrräder für Gäste stehen"
    ],
    "answer": 0,
    "evidence": "oder ich lasse sie bei meiner Nachbarin, falls ich nicht zu Hause bin",
    "pairs": [
     [
      "bei meiner Nachbarin",
-     "bei der Frau, die gleich nebenan im Haus wohnt"
+     "bei der Frau, die gleich im Haus nebenan wohnt"
     ],
     [
      "falls ich nicht zu Hause bin",
@@ -336,8 +336,8 @@
    "pattern": "주어 + 화법조동사 + sich(3격) + 4격 목적어 … 동사원형 + lassen(끝)",
    "examples": [
     {
-     "de": "Die Brötchen können Sie sich weiterhin bringen lassen – hängen Sie einfach abends den Bestellzettel an die Tür, dann hängt die Bäckerei die Tüte bis acht Uhr daran.",
-     "ko": "빵은 지금도 배달시키실 수 있어요. 저녁에 주문 쪽지를 문에 걸어 두시기만 하면 빵집에서 8시까지 거기에 빵 봉지를 걸어 놓아요.",
+     "de": "Die Brötchen können Sie sich weiterhin bringen lassen – hängen Sie einfach abends den Bestellzettel an die Tür, dann hängt die Bäckerei die Tüte am nächsten Morgen bis acht Uhr daran.",
+     "ko": "빵은 지금도 배달시키실 수 있어요. 저녁에 주문 쪽지를 문에 걸어 두시기만 하면 빵집에서 다음 날 아침 8시까지 거기에 빵 봉지를 걸어 놓아요.",
      "mark": [
       "sich",
       "bringen lassen"
@@ -368,7 +368,7 @@
        "동사(끝)"
       ],
       [
-       "– hängen Sie einfach abends den Bestellzettel an die Tür, dann hängt die Bäckerei die Tüte bis acht Uhr daran.",
+       "– hängen Sie einfach abends den Bestellzettel an die Tür, dann hängt die Bäckerei die Tüte am nächsten Morgen bis acht Uhr daran.",
        "기타"
       ]
      ]

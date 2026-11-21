@@ -11,7 +11,7 @@
   "확장된 분사 수식어",
   "상태수동과 수동태",
   "명사화된 동사원형",
-  "접속법 2식 고유형"
+  "과거형과 현재형의 교체"
  ],
  "paragraphs": [
   {
@@ -78,7 +78,7 @@
    "kind": "inference",
    "q": "Was lässt sich aus der Vergessenskurve schließen?",
    "options": [
-    "Was die ersten Tage übersteht, geht danach nur noch langsam verloren.",
+    "Was den ersten Tag übersteht, geht danach nur noch langsam verloren.",
     "Nach einem ganzen Tag ist noch mehr als die Hälfte der Silben abrufbar.",
     "Wer nach einer Stunde wiederholt, vergisst die Silben nie mehr."
    ],
@@ -94,7 +94,7 @@
      "Nach einem ganzen Tag ist noch mehr als die Hälfte der Silben abrufbar"
     ]
    ],
-   "explain": "망각 곡선에 따르면 한 시간 뒤에 절반 이상, 하루 뒤에 약 3분의 2가 잊히고, 그 뒤로는 곡선이 눈에 띄게 완만해져요(flachte … merklich ab). 곡선이 완만해진다는 것은 처음 며칠을 견뎌 낸 것은 그 뒤로 천천히만 잊힌다는 뜻이에요. 하루 뒤에는 3분의 1 정도만 남으므로 ‘하루가 지나도 절반 이상을 떠올릴 수 있다’는 틀렸고, 한 시간 뒤에 반복하면 영영 잊지 않는다는 말은 본문에 없어요."
+   "explain": "망각 곡선에 따르면 한 시간 뒤에 절반 이상, 하루 뒤에 약 3분의 2가 잊히고, 그 뒤로는 곡선이 눈에 띄게 완만해져요(flachte … merklich ab). 곡선이 완만해진다는 것은 첫날을 견뎌 낸 것은 그 뒤로 천천히만 잊힌다는 뜻이에요. 하루 뒤에는 3분의 1 정도만 남으므로 ‘하루가 지나도 절반 이상을 떠올릴 수 있다’는 틀렸고, 한 시간 뒤에 반복하면 영영 잊지 않는다는 말은 본문에 없어요."
   },
   {
    "type": "mc",
@@ -118,20 +118,20 @@
   {
    "type": "rfn",
    "kind": "detail",
-   "q": "Ebbinghaus behielt die Silben besser, wenn er seine Lernzeit auf mehrere Tage aufteilte.",
+   "q": "Ebbinghaus fiel das Auswendiglernen leichter, wenn er die Übungseinheiten nicht alle auf einen Tag legte.",
    "answer": 0,
    "evidence": "Ebbinghaus konnte sich die Silbenreihen deutlich leichter einprägen, wenn er die Wiederholungen über mehrere Tage verteilte, statt sie an einem einzigen Tag zu bündeln.",
    "pairs": [
     [
-     "die Wiederholungen über mehrere Tage verteilte",
-     "seine Lernzeit auf mehrere Tage aufteilte"
+     "statt sie an einem einzigen Tag zu bündeln",
+     "die Übungseinheiten nicht alle auf einen Tag legte"
     ],
     [
      "deutlich leichter einprägen",
-     "behielt die Silben besser"
+     "fiel das Auswendiglernen leichter"
     ]
    ],
-   "explain": "에빙하우스는 반복 학습을 하루에 몰아서 하지 않고 여러 날에 나누어 했을 때 음절 목록을 훨씬 쉽게 외웠어요. ‘반복을 여러 날에 나누다’를 ‘공부 시간을 여러 날로 나누다(seine Lernzeit auf mehrere Tage aufteilte)’로, ‘더 쉽게 외웠다’를 ‘더 잘 기억했다(behielt … besser)’로 바꿔 말했어요."
+   "explain": "에빙하우스는 반복 학습을 하루에 몰아서 하지 않고 여러 날에 나누어 했을 때 음절 목록을 훨씬 쉽게 외웠어요. ‘하루에 몰아서 하는 대신(statt … an einem einzigen Tag zu bündeln)’을 ‘연습을 하루에 다 몰아넣지 않을 때(nicht alle auf einen Tag legte)’로, ‘훨씬 쉽게 외울 수 있었다(deutlich leichter einprägen)’를 ‘외우기가 더 쉬웠다(fiel das Auswendiglernen leichter)’로 바꿔 말했어요."
   },
   {
    "type": "rfn",
@@ -175,7 +175,7 @@
    "kind": "paraphrase",
    "q": "Was meint der Autor mit dem Satz „Wer sich an jede Einzelheit erinnern könnte, fände im eigenen Gedächtnis vermutlich nichts mehr wieder“?",
    "options": [
-    "Ohne diese Auswahl ginge das Bedeutsame in der Masse der Eindrücke unter.",
+    "Ohne eine Auswahl ginge das Bedeutsame in der Masse der Eindrücke unter.",
     "Wer viele Einzelheiten behält, erinnert sich besonders leicht an Wichtiges.",
     "Ein sehr gutes Gedächtnis findet Erinnerungen besonders schnell wieder."
    ],
@@ -188,7 +188,7 @@
     ],
     [
      "Das Gehirn sortiert aus",
-     "Ohne diese Auswahl"
+     "Ohne eine Auswahl"
     ]
    ],
    "explain": "모든 세부 사항을 기억하는 사람은 자기 기억 속에서 아무것도 다시 찾지 못할 거라는 말은, 뇌가 골라내지 않으면 중요한 것이 수많은 인상 속에 묻혀 버린다는 뜻이에요. 바로 앞 문장도 뇌가 필요 없는 것을 골라내어 중요한 것에 접근할 길을 열어 둔다고 해요. 세부 사항을 많이 기억할수록 중요한 것을 쉽게 떠올린다거나, 기억력이 아주 좋으면 기억을 빨리 찾는다는 것은 이 문장과 반대예요."
@@ -226,7 +226,7 @@
    "examples": [
     {
      "de": "Die in einer einzigen Nacht eingepaukten Vokabeln sind zwar für die Klausur am nächsten Morgen noch verfügbar, danach aber rasch wieder vergessen.",
-     "ko": "하룻밤에 벼락치기로 외운 단어들은 다음 날 아침 시험까지는 아직 쓸 수 있지만, 그 뒤에는 금세 다시 잊혀요.",
+     "ko": "하룻밤에 벼락치기로 외운 단어들은 다음 날 아침 시험까지는 아직 쓸 수 있지만, 그 뒤에는 금세 다시 잊힙니다.",
      "mark": [
       "Die in einer einzigen Nacht eingepaukten Vokabeln"
      ],
@@ -275,14 +275,14 @@
     },
     {
      "de": "Für seine 1885 veröffentlichte Studie „Über das Gedächtnis“ machte er sich selbst zur Versuchsperson und lernte lange Reihen sinnloser Silben wie „dax“ oder „zuk“ auswendig, damit bereits bekannte Wörter die Messergebnisse nicht verfälschten.",
-     "ko": "1885년에 발표한 연구 「기억에 관하여」를 위해 에빙하우스는 자기 자신을 피험자로 삼았고, 이미 알고 있는 단어들이 측정 결과를 왜곡하지 않도록 ‘dax’나 ‘zuk’ 같은 무의미한 음절을 길게 나열한 목록을 외웠어요.",
+     "ko": "1885년에 발표한 연구 「기억에 관하여」를 위해 에빙하우스는 자기 자신을 피험자로 삼았고, 이미 알고 있는 단어들이 측정 결과를 왜곡하지 않도록 ‘dax’나 ‘zuk’ 같은 무의미한 음절을 길게 나열한 목록을 외웠습니다.",
      "mark": [
       "seine 1885 veröffentlichte Studie"
      ]
     },
     {
      "de": "Über Wochen verteilte Wiederholungen und ausreichend Schlaf bewirken mehr als jede durchgearbeitete Nacht.",
-     "ko": "몇 주에 걸쳐 나누어 한 반복과 충분한 잠은 그 어떤 밤샘 공부보다 더 큰 효과를 내요.",
+     "ko": "몇 주에 걸쳐 나누어 한 반복과 충분한 잠은 그 어떤 밤샘 공부보다 더 큰 효과를 냅니다.",
      "mark": [
       "Über Wochen verteilte Wiederholungen",
       "jede durchgearbeitete Nacht"
@@ -312,12 +312,12 @@
   {
    "title": "상태수동(sein 수동)과 수동태(werden 수동)",
    "term": "Zustandspassiv vs. Vorgangspassiv",
-   "explain": "werden + 과거분사는 어떤 일이 일어나는 과정을 말해요(수동태). sein + 과거분사는 그 과정이 끝난 뒤에 남아 있는 상태를 말해요(상태수동). wird gespeichert는 ‘저장된다’, ist gespeichert는 ‘저장되어 있다’예요. 이 글은 기억이 처리되는 과정(abgespielt, verknüpft)은 werden으로, 그 결과로 남는 상태(gespeichert, verankert, abgelegt)는 sein으로 나타내요. 상태수동은 우리말로 ‘~되어 있다’로 옮기면 자연스러워요.",
+   "explain": "werden + 과거분사는 어떤 일이 일어나는 과정을 말해요(수동태). sein + 과거분사는 그 과정이 끝난 뒤에 남아 있는 상태를 말해요(상태수동). wird gespeichert는 ‘저장된다’, ist gespeichert는 ‘저장되어 있다’예요. 이 글은 깊은 잠을 자는 동안 일어나는 처리 과정(wird … abgespielt und … verknüpft)은 werden으로, 그 결과로 남는 상태(ist … gespeichert, verankert ist, abgelegt ist)는 sein으로 나타내요. 같은 gespeichert도 werden과 쓰면 과정, sein과 쓰면 상태를 말해요. 상태수동은 우리말로 ‘~되어 있다’로 옮기면 자연스러워요.",
    "pattern": "werden + 과거분사 = ~된다 (과정) · sein + 과거분사 = ~되어 있다 (상태)",
    "examples": [
     {
      "de": "Was wir tagsüber lernen, ist zunächst nur vorläufig im Hippocampus gespeichert, einer kleinen Hirnregion, die als eine Art Zwischenlager dient.",
-     "ko": "우리가 낮 동안 배운 것은 처음에는 일종의 임시 보관소 구실을 하는 작은 뇌 부위인 해마에 임시로만 저장되어 있어요.",
+     "ko": "우리가 낮 동안 배운 것은 처음에는 일종의 임시 보관소 구실을 하는 작은 뇌 부위인 해마에 임시로만 저장되어 있습니다.",
      "mark": [
       "ist",
       "gespeichert"
@@ -355,7 +355,7 @@
     },
     {
      "de": "Im Tiefschlaf wird das Gelernte nach heutigem Kenntnisstand erneut abgespielt und mit vorhandenem Wissen verknüpft, sodass es am Morgen fester im Langzeitgedächtnis verankert ist als am Abend zuvor.",
-     "ko": "오늘날의 지식에 따르면 깊은 잠을 자는 동안 배운 내용이 다시 재생되고 이미 있던 지식과 연결되어, 아침에는 전날 저녁보다 장기 기억에 더 단단히 자리 잡혀 있어요.",
+     "ko": "오늘날의 지식에 따르면 깊은 잠을 자는 동안 배운 내용이 다시 재생되고 이미 있던 지식과 연결되어, 아침에는 전날 저녁보다 장기 기억에 더 단단히 자리 잡혀 있습니다.",
      "mark": [
       "wird",
       "abgespielt",
@@ -365,7 +365,7 @@
     },
     {
      "de": "Die meisten Reize, die ständig auf uns einströmen, etwa Gesichter in der U-Bahn oder Werbeslogans, werden gar nicht erst dauerhaft gespeichert.",
-     "ko": "끊임없이 우리에게 밀려드는 자극의 대부분, 예컨대 지하철에서 본 얼굴이나 광고 문구는 애초에 오래 저장되지 않아요.",
+     "ko": "끊임없이 우리에게 밀려드는 자극의 대부분, 예컨대 지하철에서 본 얼굴이나 광고 문구는 애초에 오래 저장되지 않습니다.",
      "mark": [
       "werden",
       "gespeichert"
@@ -377,26 +377,26 @@
   {
    "title": "명사화된 동사원형",
    "term": "Substantivierter Infinitiv (das Vergessen, das Lernen)",
-   "explain": "동사원형을 대문자로 쓰고 중성 관사를 붙이면 ‘~하는 것, ~하기’라는 뜻의 명사가 돼요. 이 명사는 중성이고 복수형이 없으며, 2격에는 -s가 붙어요(des Vergessens). 앞에 형용사가 오면 형용사 어미가 붙어요(zum erneuten Lernen). 설명하는 글에서는 행위나 과정 자체를 주어나 목적어로 다룰 때 자주 써요.",
+   "explain": "동사원형을 대문자로 쓰고 중성 관사를 붙이면 ‘~하는 것, ~하기’라는 뜻의 명사가 돼요. 이 명사는 중성이고 대개 복수형이 없으며, 2격에는 -s가 붙어요(des Vergessens). 앞에 형용사가 오면 형용사 어미가 붙어요(zum erneuten Lernen). 설명하는 글에서는 행위나 과정 자체를 주어나 목적어로 다룰 때 자주 써요.",
    "pattern": "das + 동사원형(대문자) → 중성 명사 · 2격: des …s · zum (= zu dem) + 동사원형",
    "examples": [
     {
      "de": "Darin liegt die eigentliche Funktion des Vergessens: Das Gehirn sortiert aus, was voraussichtlich nicht mehr gebraucht wird, und hält so den Zugriff auf das Wichtige frei.",
-     "ko": "바로 여기에 망각의 본래 기능이 있어요. 뇌는 앞으로 더 이상 필요 없을 것으로 보이는 것을 골라내어 버리고, 그렇게 해서 중요한 것에 접근할 길을 열어 둬요.",
+     "ko": "바로 여기에 망각의 본래 기능이 있습니다. 뇌는 앞으로 더 이상 필요 없을 것으로 보이는 것을 골라내어 버리고, 그렇게 해서 중요한 것에 접근할 길을 열어 둡니다.",
      "mark": [
       "des Vergessens"
      ]
     },
     {
      "de": "Gemessen hat Ebbinghaus dabei nicht, wie viele Silben ihm spontan einfielen, sondern wie viel Zeit er zum erneuten Lernen einer Silbenreihe benötigte.",
-     "ko": "이때 에빙하우스가 측정한 것은 음절이 몇 개나 바로 떠오르는지가 아니라, 음절 목록 하나를 다시 외우는 데 시간이 얼마나 걸리는지였어요.",
+     "ko": "이때 에빙하우스가 측정한 것은 음절이 몇 개나 바로 떠오르는지가 아니라, 음절 목록 하나를 다시 외우는 데 시간이 얼마나 걸리는지였습니다.",
      "mark": [
       "zum erneuten Lernen"
      ]
     },
     {
      "de": "Das Vergessen lässt sich nicht abschaffen, aber man kann lernen, es zu nutzen.",
-     "ko": "망각은 없앨 수 없지만, 망각을 활용하는 법은 배울 수 있어요.",
+     "ko": "망각은 없앨 수 없지만, 망각을 활용하는 법은 배울 수 있습니다.",
      "mark": [
       "Das Vergessen"
      ],
@@ -447,113 +447,83 @@
    "tip": "과거분사와 형용사도 같은 방식으로 명사가 돼요. das Gelernte(배운 것), das Wichtige(중요한 것)는 형용사 어미변화를 따르므로 2격은 des Gelernten, des Wichtigen이에요."
   },
   {
-   "title": "접속법 2식 – 고유형과 würde형",
-   "term": "Konjunktiv II: starke Formen (kämen, fände) und würde-Form",
-   "explain": "사실이 아닌 일을 가정할 때 접속법 2식을 써요. 강변화 동사는 과거형 어간에 -e를 붙이고 a, o, u에 움라우트를 해서 고유형을 만들어요(kamen → kämen, fand → fände). 글말에서는 이런 고유형을 자주 써요. 고유형이 낯설거나 과거형과 모양이 같을 때는 würde + 동사원형을 써요(abstellen würde). 화법조동사는 고유형을 그대로 써요(könnte). 가정의 조건은 wenn절뿐 아니라 ohne + 명사나 wer절로도 나타낼 수 있어요.",
-   "pattern": "kommen → kämen · finden → fände · können → könnte · 그 밖의 동사 → würde + 동사원형",
+   "title": "과거형과 현재형의 교체",
+   "term": "Tempuswechsel: Präteritum und Präsens im Sachtext",
+   "explain": "2단락은 에빙하우스가 19세기에 한 실험을 전하므로 과거형을 써요(wies nach, machte, lernte, benötigte, flachte ab). 글말에서 지나간 일을 차례로 서술할 때는 보통 현재완료보다 과거형을 써요. 반면 지금도 통하는 사실이나 일반적인 법칙은 현재형으로 말해요(folgt, ist bekannt, festigt). 한 문장 안에서도 시제가 바뀔 수 있어요. 망각이 법칙을 따른다는 것은 지금도 맞으므로 현재형(folgt)이고, 에빙하우스가 그것을 입증한 일은 과거형(wies nach)이에요. 지난 일의 결과가 지금까지 이어질 때는 현재완료를 쓰기도 해요(hat … bestätigt).",
+   "pattern": "지나간 일(실험 과정) → 과거형 · 지금도 맞는 사실·법칙 → 현재형 · 지금까지 이어지는 결과 → 현재완료",
    "examples": [
     {
-     "de": "Es ist kein Konstruktionsfehler, sondern Teil des Bauplans, und ohne das Vergessen kämen wir im Alltag kaum zurecht.",
-     "ko": "망각은 설계상의 결함이 아니라 설계도의 일부이며, 망각이 없다면 우리는 일상생활을 거의 꾸려 나갈 수 없을 거예요.",
+     "de": "Dass das Vergessen festen Gesetzmäßigkeiten folgt, wies der Psychologe Hermann Ebbinghaus bereits im 19. Jahrhundert nach.",
+     "ko": "망각이 일정한 법칙을 따른다는 사실은 심리학자 헤르만 에빙하우스가 이미 19세기에 입증했습니다.",
      "mark": [
-      "ohne das Vergessen",
-      "kämen"
+      "folgt",
+      "wies",
+      "nach."
      ],
      "parts": [
       [
-       "Es",
-       "주어"
-      ],
-      [
-       "ist",
-       "동사"
-      ],
-      [
-       "kein Konstruktionsfehler,",
-       "보어"
-      ],
-      [
-       "sondern",
-       "접속사"
-      ],
-      [
-       "Teil des Bauplans,",
-       "보어"
-      ],
-      [
-       "und",
-       "접속사"
-      ],
-      [
-       "ohne das Vergessen",
-       "부사어"
-      ],
-      [
-       "kämen",
-       "동사"
-      ],
-      [
-       "wir",
-       "주어"
-      ],
-      [
-       "im Alltag",
-       "부사어(장소)"
-      ],
-      [
-       "kaum",
-       "부사어"
-      ],
-      [
-       "zurecht.",
-       "동사(끝)"
-      ]
-     ]
-    },
-    {
-     "de": "Wer sich an jede Einzelheit erinnern könnte, fände im eigenen Gedächtnis vermutlich nichts mehr wieder.",
-     "ko": "모든 세부 사항을 기억할 수 있는 사람은 아마 자기 기억 속에서 아무것도 다시 찾아내지 못할 거예요.",
-     "mark": [
-      "könnte",
-      "fände",
-      "wieder"
-     ],
-     "parts": [
-      [
-       "Wer sich an jede Einzelheit erinnern könnte,",
+       "Dass das Vergessen festen Gesetzmäßigkeiten folgt,",
        "종속절"
       ],
       [
-       "fände",
+       "wies",
        "동사"
       ],
       [
-       "im eigenen Gedächtnis",
-       "부사어(장소)"
+       "der Psychologe Hermann Ebbinghaus",
+       "주어"
       ],
       [
-       "vermutlich",
-       "부사어"
+       "bereits im 19. Jahrhundert",
+       "부사어(시간)"
       ],
       [
-       "nichts mehr",
-       "4격 목적어"
-      ],
-      [
-       "wieder.",
+       "nach.",
        "동사(끝)"
       ]
      ]
     },
     {
-     "de": "Das Vergessen gilt deshalb als Schwachstelle des Gedächtnisses, als eine Panne, die man am liebsten abstellen würde.",
-     "ko": "그래서 망각은 기억력의 약점, 가능하면 없애 버리고 싶은 고장으로 여겨져요.",
+     "de": "Das Ergebnis ist heute als Vergessenskurve bekannt: Schon nach einer Stunde war mehr als die Hälfte der Silben vergessen, nach einem Tag rund zwei Drittel, danach flachte die Vergessenskurve merklich ab.",
+     "ko": "그 결과는 오늘날 망각 곡선으로 알려져 있습니다. 한 시간만 지나도 음절의 절반 이상이 잊혔고, 하루가 지나면 약 3분의 2가 잊혔으며, 그 뒤로는 망각 곡선이 눈에 띄게 완만해졌습니다.",
      "mark": [
-      "abstellen würde"
+      "ist heute",
+      "war",
+      "flachte"
+     ]
+    },
+    {
+     "de": "Die moderne Gedächtnisforschung hat diesen Befund vielfach bestätigt.",
+     "ko": "현대 기억 연구도 이 결과를 여러 차례 확인했습니다.",
+     "mark": [
+      "hat",
+      "bestätigt"
+     ],
+     "parts": [
+      [
+       "Die moderne Gedächtnisforschung",
+       "주어"
+      ],
+      [
+       "hat",
+       "동사"
+      ],
+      [
+       "diesen Befund",
+       "4격 목적어"
+      ],
+      [
+       "vielfach",
+       "부사어(빈도)"
+      ],
+      [
+       "bestätigt.",
+       "동사(끝)"
+      ]
      ]
     }
    ],
-   "tip": "zurechtkommen과 wiederfinden은 분리동사라서 kämen … zurecht, fände … wieder로 갈라져요. 접속법 2식 fände와 과거형 fand는 움라우트로 구별해요."
+   "tip": "같은 단락 안에서도 시제가 바뀌어요. 3단락은 현재형(Aus derselben Studie stammt)으로 시작해서, 에빙하우스가 한 일은 과거형(konnte sich … einprägen, verteilte)으로 전하고, 오늘날의 연구 결과는 현재완료와 현재형(hat … bestätigt, verankert)으로 말해요."
   }
  ],
  "vocab": [
@@ -635,37 +605,37 @@
    "de": "wie vom Erdboden verschluckt sein",
    "ko": "감쪽같이 사라지다, 흔적도 없이 없어지다",
    "ex": "Vokabeln, die man gestern noch im Schlaf beherrschte, sind heute wie vom Erdboden verschluckt.",
-   "exko": "어제만 해도 눈 감고도 알던 단어들이 오늘은 감쪽같이 사라져 버려요."
+   "exko": "어제만 해도 눈 감고도 알던 단어들이 오늘은 감쪽같이 사라져 버립니다."
   },
   {
    "de": "(im Alltag) zurecht|kommen",
    "ko": "(일상을) 꾸려 나가다, 그럭저럭 해내다",
    "ex": "Es ist kein Konstruktionsfehler, sondern Teil des Bauplans, und ohne das Vergessen kämen wir im Alltag kaum zurecht.",
-   "exko": "망각은 설계상의 결함이 아니라 설계도의 일부이며, 망각이 없다면 우리는 일상생활을 거의 꾸려 나갈 수 없을 거예요."
+   "exko": "망각은 설계상의 결함이 아니라 설계도의 일부이며, 망각이 없다면 우리는 일상생활을 거의 꾸려 나갈 수 없을 것입니다."
   },
   {
    "de": "etwas auswendig lernen",
    "ko": "~을 암기하다, 외우다",
    "ex": "Für seine 1885 veröffentlichte Studie „Über das Gedächtnis“ machte er sich selbst zur Versuchsperson und lernte lange Reihen sinnloser Silben wie „dax“ oder „zuk“ auswendig, damit bereits bekannte Wörter die Messergebnisse nicht verfälschten.",
-   "exko": "1885년에 발표한 연구 「기억에 관하여」를 위해 에빙하우스는 자기 자신을 피험자로 삼았고, 이미 알고 있는 단어들이 측정 결과를 왜곡하지 않도록 ‘dax’나 ‘zuk’ 같은 무의미한 음절을 길게 나열한 목록을 외웠어요."
+   "exko": "1885년에 발표한 연구 「기억에 관하여」를 위해 에빙하우스는 자기 자신을 피험자로 삼았고, 이미 알고 있는 단어들이 측정 결과를 왜곡하지 않도록 ‘dax’나 ‘zuk’ 같은 무의미한 음절을 길게 나열한 목록을 외웠습니다."
   },
   {
    "de": "eine entscheidende Rolle spielen",
    "ko": "결정적인 역할을 하다",
    "ex": "Eine entscheidende Rolle spielt außerdem der Schlaf.",
-   "exko": "그 밖에 잠도 결정적인 역할을 해요."
+   "exko": "그 밖에 잠도 결정적인 역할을 합니다."
   },
   {
    "de": "nach heutigem Kenntnisstand",
    "ko": "오늘날의 지식에 따르면, 현재 알려진 바로는",
    "ex": "Im Tiefschlaf wird das Gelernte nach heutigem Kenntnisstand erneut abgespielt und mit vorhandenem Wissen verknüpft, sodass es am Morgen fester im Langzeitgedächtnis verankert ist als am Abend zuvor.",
-   "exko": "오늘날의 지식에 따르면 깊은 잠을 자는 동안 배운 내용이 다시 재생되고 이미 있던 지식과 연결되어, 아침에는 전날 저녁보다 장기 기억에 더 단단히 자리 잡혀 있어요."
+   "exko": "오늘날의 지식에 따르면 깊은 잠을 자는 동안 배운 내용이 다시 재생되고 이미 있던 지식과 연결되어, 아침에는 전날 저녁보다 장기 기억에 더 단단히 자리 잡혀 있습니다."
   },
   {
    "de": "gar nicht erst",
    "ko": "애초에 ~조차 하지 않다",
    "ex": "Die meisten Reize, die ständig auf uns einströmen, etwa Gesichter in der U-Bahn oder Werbeslogans, werden gar nicht erst dauerhaft gespeichert.",
-   "exko": "끊임없이 우리에게 밀려드는 자극의 대부분, 예컨대 지하철에서 본 얼굴이나 광고 문구는 애초에 오래 저장되지 않아요."
+   "exko": "끊임없이 우리에게 밀려드는 자극의 대부분, 예컨대 지하철에서 본 얼굴이나 광고 문구는 애초에 오래 저장되지 않습니다."
   }
  ]
 }

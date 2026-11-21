@@ -1,0 +1,590 @@
+{
+ "id": "a2-18",
+ "level": "A2",
+ "no": 18,
+ "title": "Frag Frau Wiegand!",
+ "titleKo": "비간트 선생님께 물어보세요",
+ "type": "Ratgeberkolumne",
+ "typeKo": "잡지 상담 칼럼",
+ "intro": "새 동료가 인사를 하지 않아 고민하는 독자의 편지와 칼럼니스트의 답장이에요.",
+ "focus": [
+  "würde + 동사원형",
+  "재귀대명사 3격 · 4격",
+  "doch · einmal 명령문"
+ ],
+ "paragraphs": [
+  {
+   "style": "meta",
+   "de": "Liebe Frau Wiegand,",
+   "ko": "비간트 선생님께"
+  },
+  {
+   "de": "seit März arbeite ich in einem kleinen Reisebüro, und vor sechs Wochen ist Herr Falk als neuer Arbeitskollege zu uns gekommen. Sein Arbeitsplatz ist direkt neben meinem, trotzdem hat er mich noch nie gegrüßt. Bei meiner Begrüßung am Morgen schaut er nur kurz vom Bildschirm auf, und auch in der Mittagspause trägt er Kopfhörer.",
+   "ko": "저는 3월부터 작은 여행사에서 일하고 있는데, 6주 전에 팔크 씨가 새 동료로 들어왔어요. 그분 자리는 바로 제 옆인데도 저에게 한 번도 인사를 한 적이 없어요. 아침에 제가 인사하면 화면에서 잠깐 고개를 들 뿐이고, 점심시간에도 헤드폰을 끼고 있어요."
+  },
+  {
+   "de": "Anfangs habe ich mich über sein Verhalten geärgert, inzwischen mache ich mir eher Sorgen. Ständig überlege ich, ob er mich nicht mag oder ob ich etwas Falsches gesagt habe. Eigentlich wollte ich ihn schon mehrmals ansprechen, aber im letzten Augenblick traue ich mich nicht. Was würden Sie mir empfehlen?",
+   "ko": "처음에는 그분의 행동 때문에 화가 났지만, 지금은 오히려 걱정이 돼요. 그분이 저를 싫어하는 건지, 아니면 제가 무슨 말을 잘못한 건지 계속 생각하게 돼요. 사실 몇 번이나 먼저 말을 걸려고 했지만, 마지막 순간에 용기가 나지 않아요. 저에게 어떻게 하라고 권하시겠어요?"
+  },
+  {
+   "style": "meta",
+   "de": "Larissa K., 26, Hannover",
+   "ko": "라리사 K.(26세, 하노버)"
+  },
+  {
+   "style": "meta",
+   "de": "Liebe Frau K.,",
+   "ko": "K. 씨께"
+  },
+  {
+   "de": "machen Sie sich doch nicht zu viele Gedanken, denn aus Erfahrung weiß ich, dass die ersten Wochen an einer neuen Arbeitsstelle für viele Neulinge anstrengend sind. Vielleicht ist Herr Falk einfach schüchtern oder braucht die Kopfhörer für seine Konzentration, deshalb würde ich sein Verhalten nicht persönlich nehmen.",
+   "ko": "너무 많이 고민하지 마세요. 경험상 새 직장에서 보내는 처음 몇 주는 많은 신입에게 힘든 시간이거든요. 팔크 씨는 그냥 수줍음이 많거나, 집중하려면 헤드폰이 필요한 걸지도 몰라요. 그래서 저라면 그분의 행동을 저를 향한 것으로 받아들이지 않겠어요."
+  },
+  {
+   "de": "An Ihrer Stelle würde ich den ersten Schritt machen. Fragen Sie Herrn Falk doch einmal, ob er mit Ihnen eine Kaffeepause machen möchte, denn zu zweit fällt ein Gespräch oft leichter. Vorher würde ich mir ein paar einfache Gesprächsthemen überlegen.",
+   "ko": "제가 K. 씨 입장이라면 먼저 다가가겠어요. 팔크 씨에게 같이 커피 마시며 잠깐 쉬지 않겠냐고 한번 물어보세요. 둘이서 이야기하면 대화가 더 쉬울 때가 많거든요. 저라면 그 전에 간단한 이야깃거리를 몇 가지 생각해 두겠어요."
+  },
+  {
+   "de": "Wenn er auch danach noch unfreundlich ist, würde ich mit Ihrer Chefin sprechen, weil sie ihre Angestellten am besten kennt. Sicher ist aber, dass Sie nichts falsch gemacht haben und sich nicht schuldig fühlen müssen.",
+   "ko": "그 뒤에도 여전히 쌀쌀맞다면 저라면 상사와 이야기하겠어요. 상사가 직원들을 가장 잘 아니까요. 하지만 분명한 것은 K. 씨는 아무것도 잘못하지 않았고, 죄책감을 느낄 필요도 없다는 거예요."
+  },
+  {
+   "style": "meta",
+   "de": "Ihre Ute Wiegand",
+   "ko": "우테 비간트 드림"
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Die Leserin arbeitet schon länger in der Firma als der neue Kollege.",
+   "answer": 0,
+   "evidence": "vor sechs Wochen ist Herr Falk als neuer Arbeitskollege zu uns gekommen",
+   "pairs": [
+    [
+     "seit März arbeite ich in einem kleinen Reisebüro",
+     "Die Leserin arbeitet schon länger in der Firma"
+    ],
+    [
+     "als neuer Arbeitskollege zu uns gekommen",
+     "der neue Kollege"
+    ]
+   ],
+   "explain": "라리사는 3월부터 여행사에서 일하고 있고, 팔크 씨는 6주 전에 새 동료로 ‘우리에게’ 들어왔어요(als neuer Arbeitskollege zu uns gekommen). 라리사가 이미 일하던 곳에 팔크 씨가 나중에 온 거예요. 그래서 맞는 문장이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was macht Herr Falk, wenn Larissa ihn am Morgen begrüßt?",
+   "options": [
+    "Er nimmt kurz die Kopfhörer ab und grüßt zurück.",
+    "Er hebt nur für einen kurzen Moment den Kopf.",
+    "Er grüßt nicht, weil er gerade Mittagspause hat."
+   ],
+   "answer": 1,
+   "evidence": "schaut er nur kurz vom Bildschirm auf",
+   "pairs": [
+    [
+     "schaut er nur kurz vom Bildschirm auf",
+     "Er hebt nur für einen kurzen Moment den Kopf"
+    ]
+   ],
+   "explain": "아침에 라리사가 인사하면 팔크 씨는 화면에서 잠깐 고개를 들 뿐이에요(schaut nur kurz vom Bildschirm auf). 정답은 이것을 ‘잠깐 고개를 들어요’로 바꿔 말했어요. 팔크 씨는 한 번도 인사한 적이 없고(noch nie gegrüßt), 인사는 점심시간이 아니라 아침 일이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Wie geht es Larissa im Moment mit der Situation?",
+   "options": [
+    "Sie ärgert sich immer noch vor allem über sein Verhalten.",
+    "Sie macht sich keine Gedanken mehr über Herrn Falk.",
+    "Sie hat Angst, dass sie selbst einen Fehler gemacht hat."
+   ],
+   "answer": 2,
+   "evidence": "Ständig überlege ich, ob er mich nicht mag oder ob ich etwas Falsches gesagt habe.",
+   "pairs": [
+    [
+     "inzwischen mache ich mir eher Sorgen",
+     "Sie hat Angst"
+    ],
+    [
+     "ob ich etwas Falsches gesagt habe",
+     "dass sie selbst einen Fehler gemacht hat"
+    ]
+   ],
+   "explain": "라리사는 처음에는 화가 났지만(Anfangs … geärgert) 지금은 오히려 걱정이 된다고 해요(inzwischen mache ich mir eher Sorgen). 또 자기가 무슨 말을 잘못했는지 계속 생각해요. 그래서 자기가 실수했을까 봐 불안하다고 추론할 수 있어요. 화가 난 것은 처음 이야기이고, 계속 생각한다고 했으니 더는 고민하지 않는다는 말도 틀려요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Larissa hat Herrn Falk schon mehrmals angesprochen.",
+   "answer": 1,
+   "evidence": "Eigentlich wollte ich ihn schon mehrmals ansprechen, aber im letzten Augenblick traue ich mich nicht.",
+   "pairs": [
+    [
+     "wollte ich ihn schon mehrmals ansprechen",
+     "hat Herrn Falk schon mehrmals angesprochen"
+    ]
+   ],
+   "explain": "라리사는 몇 번이나 말을 걸려고 했지만(wollte … ansprechen) 마지막 순간에 용기가 나지 않았다고 해요(traue ich mich nicht). 그래서 이미 여러 번 말을 걸었다는 문장은 틀려요. schon mehrmals와 ansprechen은 본문에 나오지만, wollte가 ‘하려고 했다’는 뜻이라는 점이 중요해요."
+  },
+  {
+   "type": "mc",
+   "kind": "paraphrase",
+   "q": "Was meint Frau Wiegand mit dem Satz „deshalb würde ich sein Verhalten nicht persönlich nehmen“?",
+   "options": [
+    "Larissa ist wahrscheinlich nicht der Grund für sein Verhalten.",
+    "Larissa soll Herrn Falk ganz persönlich sagen, was sie stört.",
+    "Larissa soll sofort mit der Chefin über sein Verhalten sprechen."
+   ],
+   "answer": 0,
+   "evidence": "deshalb würde ich sein Verhalten nicht persönlich nehmen",
+   "pairs": [
+    [
+     "nicht persönlich nehmen",
+     "nicht der Grund für sein Verhalten"
+    ]
+   ],
+   "explain": "etwas persönlich nehmen은 ‘어떤 일을 나를 향한 것으로 받아들이다’라는 뜻이에요. 비간트 씨는 팔크 씨가 수줍거나 집중하려고 그럴 수 있으니, 라리사 때문에 그러는 것이 아니라고 생각하라는 거예요. 같은 낱말 persönlich가 들어간 선지는 뜻이 다르고, 상사와 이야기하는 것은 대화 뒤에도 나아지지 않을 때 하라는 조언이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Wie soll Larissa laut Frau Wiegand den ersten Schritt machen?",
+   "options": [
+    "Sie soll in der Mittagspause mit dem ganzen Team essen.",
+    "Sie soll ihre Chefin fragen, was mit Herrn Falk los ist.",
+    "Sie soll ihn einladen, mit ihr einen Kaffee zu trinken."
+   ],
+   "answer": 2,
+   "evidence": "ob er mit Ihnen eine Kaffeepause machen möchte",
+   "pairs": [
+    [
+     "Fragen Sie Herrn Falk doch einmal",
+     "Sie soll ihn einladen"
+    ],
+    [
+     "eine Kaffeepause machen",
+     "einen Kaffee zu trinken"
+    ]
+   ],
+   "explain": "비간트 씨는 먼저 다가가는 방법(den ersten Schritt)으로 팔크 씨에게 같이 커피 마시며 쉬자고 물어보라고 해요(ob er mit Ihnen eine Kaffeepause machen möchte). 정답은 이것을 ‘커피를 마시자고 초대하다’로 바꿔 말했어요. 둘이서 이야기하는 게 쉽다고 했으니 팀 전체와 먹으라는 말은 틀리고, 상사와 이야기하는 것은 그 뒤에도 쌀쌀맞을 때의 일이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was ist für Frau Wiegand am Ende ganz sicher?",
+   "options": [
+    "Herr Falk braucht die Kopfhörer bestimmt für seine Arbeit.",
+    "Larissa hat an dem Problem mit dem Kollegen keine Schuld.",
+    "Herr Falk wird nach dem Gespräch bestimmt freundlicher."
+   ],
+   "answer": 1,
+   "evidence": "Sicher ist aber, dass Sie nichts falsch gemacht haben",
+   "pairs": [
+    [
+     "nichts falsch gemacht",
+     "keine Schuld"
+    ],
+    [
+     "Sicher ist aber",
+     "ganz sicher"
+    ]
+   ],
+   "explain": "비간트 씨는 마지막에 K. 씨가 아무것도 잘못하지 않았다는 것은 분명하다고 해요(Sicher ist aber, dass Sie nichts falsch gemacht haben). 정답은 이것을 ‘그 문제에 라리사의 잘못은 없어요(keine Schuld)’로 바꿔 말했어요. 헤드폰 이야기는 vielleicht(어쩌면)라고 했고, 대화 뒤에도 쌀쌀맞을 수 있다고 했으니 둘 다 확실한 것이 아니에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "würde + 동사원형으로 조언하기",
+   "term": "Ratschläge mit würde + Infinitiv",
+   "explain": "würde는 werden의 접속법 2식 형태예요. würde + 동사원형으로 ‘저라면 ~하겠어요’라는 부드러운 조언을 해요. 주문장에서 würde는 둘째 자리에 오고, 동사원형은 문장 맨 끝에 와요. An Ihrer Stelle(제가 당신 입장이라면)와 자주 함께 쓰고, 조언을 구할 때도 Was würden Sie mir empfehlen?처럼 물어요.",
+   "pattern": "(An Ihrer Stelle) würde + 주어 + … + 동사원형(문장 끝)",
+   "examples": [
+    {
+     "de": "An Ihrer Stelle würde ich den ersten Schritt machen.",
+     "ko": "제가 K. 씨 입장이라면 먼저 다가가겠어요.",
+     "mark": [
+      "An Ihrer Stelle",
+      "würde",
+      "machen"
+     ],
+     "parts": [
+      [
+       "An Ihrer Stelle",
+       "부사어"
+      ],
+      [
+       "würde",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "den ersten Schritt",
+       "4격 목적어"
+      ],
+      [
+       "machen.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Wenn er auch danach noch unfreundlich ist, würde ich mit Ihrer Chefin sprechen, weil sie ihre Angestellten am besten kennt.",
+     "ko": "그 뒤에도 여전히 쌀쌀맞다면 저라면 상사와 이야기하겠어요. 상사가 직원들을 가장 잘 아니까요.",
+     "mark": [
+      "würde ich",
+      "sprechen"
+     ],
+     "parts": [
+      [
+       "Wenn er auch danach noch unfreundlich ist,",
+       "종속절"
+      ],
+      [
+       "würde",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "mit Ihrer Chefin",
+       "전치사 목적어"
+      ],
+      [
+       "sprechen,",
+       "동사(끝)"
+      ],
+      [
+       "weil sie ihre Angestellten am besten kennt.",
+       "종속절"
+      ]
+     ]
+    },
+    {
+     "de": "Was würden Sie mir empfehlen?",
+     "ko": "저에게 어떻게 하라고 권하시겠어요?",
+     "mark": [
+      "würden",
+      "empfehlen"
+     ]
+    }
+   ],
+   "tip": "wenn절이 앞에 오면 주문장은 würde로 시작해요(Wenn er …, würde ich …). 명령문(Fragen Sie Herrn Falk doch einmal …)은 상대에게 바로 권하는 말이고, würde ich …는 ‘나라면’이라고 자기 생각으로 말하는 조심스러운 조언이에요."
+  },
+  {
+   "title": "재귀대명사의 3격과 4격",
+   "term": "Reflexivpronomen im Dativ und Akkusativ",
+   "explain": "재귀대명사는 주어와 같은 사람을 가리켜요. 문장에 다른 4격 목적어가 없으면 재귀대명사는 대개 4격이에요(ich ärgere mich, ich traue mich). 다른 4격 목적어가 있으면 재귀대명사는 3격이 돼요(ich mache mir Sorgen, ich überlege mir Themen). 3격과 4격의 모양이 다른 것은 ich(mir/mich)와 du(dir/dich)뿐이에요.",
+   "pattern": "sich(4격) ärgern · trauen / sich(3격) + 4격 목적어 + machen · überlegen",
+   "examples": [
+    {
+     "de": "Anfangs habe ich mich über sein Verhalten geärgert, inzwischen mache ich mir eher Sorgen.",
+     "ko": "처음에는 그분의 행동 때문에 화가 났지만, 지금은 오히려 걱정이 돼요.",
+     "mark": [
+      "mich",
+      "mir"
+     ],
+     "parts": [
+      [
+       "Anfangs",
+       "부사어(시간)"
+      ],
+      [
+       "habe",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "mich",
+       "재귀대명사"
+      ],
+      [
+       "über sein Verhalten",
+       "전치사 목적어"
+      ],
+      [
+       "geärgert,",
+       "동사(끝)"
+      ],
+      [
+       "inzwischen",
+       "부사어(시간)"
+      ],
+      [
+       "mache",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "mir",
+       "재귀대명사"
+      ],
+      [
+       "eher",
+       "기타"
+      ],
+      [
+       "Sorgen.",
+       "4격 목적어"
+      ]
+     ]
+    },
+    {
+     "de": "Vorher würde ich mir ein paar einfache Gesprächsthemen überlegen.",
+     "ko": "저라면 그 전에 간단한 이야깃거리를 몇 가지 생각해 두겠어요.",
+     "mark": [
+      "mir",
+      "überlegen"
+     ],
+     "parts": [
+      [
+       "Vorher",
+       "부사어(시간)"
+      ],
+      [
+       "würde",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "mir",
+       "재귀대명사"
+      ],
+      [
+       "ein paar einfache Gesprächsthemen",
+       "4격 목적어"
+      ],
+      [
+       "überlegen.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Eigentlich wollte ich ihn schon mehrmals ansprechen, aber im letzten Augenblick traue ich mich nicht.",
+     "ko": "사실 몇 번이나 먼저 말을 걸려고 했지만, 마지막 순간에 용기가 나지 않아요.",
+     "mark": [
+      "traue ich mich"
+     ]
+    }
+   ],
+   "tip": "Sie와 er/sie에서는 3격도 4격도 sich라서 모양으로는 구별되지 않아요(machen Sie sich doch nicht zu viele Gedanken). 주어를 ich로 바꿔 보면 알 수 있어요: Ich mache mir Gedanken / Ich traue mich nicht."
+  },
+  {
+   "title": "부드러운 명령문 – doch · einmal",
+   "term": "Imperativ mit den Modalpartikeln doch und mal",
+   "explain": "Sie에게 하는 명령문은 동사 + Sie 순서로 시작해요(Fragen Sie …). 명령문에 doch나 einmal(mal)을 넣으면 명령이 부드러운 권유가 돼요. doch는 ‘그렇게 해 보세요’라고 상대를 설득하는 느낌을 주고, einmal은 ‘한번’이라는 뜻으로 부담을 줄여요. 이런 낱말은 Sie와 대명사·목적어 뒤에 자주 와요. 하지 말라고 권할 때는 doch nicht를 써요(machen Sie sich doch nicht …).",
+   "pattern": "동사 + Sie + (목적어) + doch (einmal) + … / 동사 + Sie + doch nicht …",
+   "examples": [
+    {
+     "de": "Fragen Sie Herrn Falk doch einmal, ob er mit Ihnen eine Kaffeepause machen möchte, denn zu zweit fällt ein Gespräch oft leichter.",
+     "ko": "팔크 씨에게 같이 커피 마시며 잠깐 쉬지 않겠냐고 한번 물어보세요. 둘이서 이야기하면 대화가 더 쉬울 때가 많거든요.",
+     "mark": [
+      "Fragen Sie",
+      "doch einmal"
+     ],
+     "parts": [
+      [
+       "Fragen",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "Herrn Falk",
+       "4격 목적어"
+      ],
+      [
+       "doch einmal,",
+       "기타"
+      ],
+      [
+       "ob er mit Ihnen eine Kaffeepause machen möchte,",
+       "종속절"
+      ],
+      [
+       "denn",
+       "접속사"
+      ],
+      [
+       "zu zweit",
+       "부사어(방법)"
+      ],
+      [
+       "fällt",
+       "동사"
+      ],
+      [
+       "ein Gespräch",
+       "주어"
+      ],
+      [
+       "oft",
+       "부사어(빈도)"
+      ],
+      [
+       "leichter.",
+       "보어"
+      ]
+     ]
+    },
+    {
+     "de": "machen Sie sich doch nicht zu viele Gedanken, denn aus Erfahrung weiß ich, dass die ersten Wochen an einer neuen Arbeitsstelle für viele Neulinge anstrengend sind.",
+     "ko": "너무 많이 고민하지 마세요. 경험상 새 직장에서 보내는 처음 몇 주는 많은 신입에게 힘든 시간이거든요.",
+     "mark": [
+      "machen Sie sich doch nicht"
+     ],
+     "parts": [
+      [
+       "machen",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "sich",
+       "재귀대명사"
+      ],
+      [
+       "doch",
+       "기타"
+      ],
+      [
+       "nicht",
+       "부정어"
+      ],
+      [
+       "zu viele Gedanken,",
+       "4격 목적어"
+      ],
+      [
+       "denn",
+       "접속사"
+      ],
+      [
+       "aus Erfahrung",
+       "부사어(방법)"
+      ],
+      [
+       "weiß",
+       "동사"
+      ],
+      [
+       "ich,",
+       "주어"
+      ],
+      [
+       "dass die ersten Wochen an einer neuen Arbeitsstelle für viele Neulinge anstrengend sind.",
+       "종속절"
+      ]
+     ]
+    }
+   ],
+   "tip": "칼럼에서는 명령문과 würde ich …를 번갈아 써요. Fragen Sie Herrn Falk doch einmal …은 상대에게 바로 권하는 말이고, An Ihrer Stelle würde ich …는 ‘나라면’이라는 조심스러운 말이에요. 말할 때는 einmal을 줄여 mal이라고 할 때가 많아요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "der Arbeitskollege, -n",
+   "ko": "직장 동료"
+  },
+  {
+   "de": "das Reisebüro, -s",
+   "ko": "여행사"
+  },
+  {
+   "de": "der Arbeitsplatz, -¨e",
+   "ko": "일하는 자리, 일자리"
+  },
+  {
+   "de": "der Bildschirm, -e",
+   "ko": "화면, 모니터"
+  },
+  {
+   "de": "der Kopfhörer, -",
+   "ko": "헤드폰, 이어폰"
+  },
+  {
+   "de": "sich ärgern über + Akk.",
+   "ko": "~ 때문에 화가 나다"
+  },
+  {
+   "de": "an|sprechen (spricht an, hat angesprochen)",
+   "ko": "(누구에게) 말을 걸다"
+  },
+  {
+   "de": "sich trauen",
+   "ko": "용기를 내다, 감히 ~하다"
+  },
+  {
+   "de": "der Neuling, -e",
+   "ko": "새로 온 사람, 신입"
+  },
+  {
+   "de": "anstrengend",
+   "ko": "힘든, 고된"
+  },
+  {
+   "de": "schüchtern",
+   "ko": "수줍음이 많은"
+  },
+  {
+   "de": "die Konzentration (Sg.)",
+   "ko": "집중"
+  },
+  {
+   "de": "das Verhalten (Sg.)",
+   "ko": "행동, 태도"
+  },
+  {
+   "de": "unfreundlich",
+   "ko": "불친절한, 쌀쌀맞은"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "sich (Dat.) Sorgen machen",
+   "ko": "걱정하다",
+   "ex": "Anfangs habe ich mich über sein Verhalten geärgert, inzwischen mache ich mir eher Sorgen.",
+   "exko": "처음에는 그분의 행동 때문에 화가 났지만, 지금은 오히려 걱정이 돼요."
+  },
+  {
+   "de": "im letzten Augenblick",
+   "ko": "마지막 순간에",
+   "ex": "Eigentlich wollte ich ihn schon mehrmals ansprechen, aber im letzten Augenblick traue ich mich nicht.",
+   "exko": "사실 몇 번이나 먼저 말을 걸려고 했지만, 마지막 순간에 용기가 나지 않아요."
+  },
+  {
+   "de": "etwas persönlich nehmen",
+   "ko": "(어떤 일을) 자기 개인을 향한 것으로 받아들이다",
+   "ex": "Vielleicht ist Herr Falk einfach schüchtern oder braucht die Kopfhörer für seine Konzentration, deshalb würde ich sein Verhalten nicht persönlich nehmen.",
+   "exko": "팔크 씨는 그냥 수줍음이 많거나, 집중하려면 헤드폰이 필요한 걸지도 몰라요. 그래서 저라면 그분의 행동을 저를 향한 것으로 받아들이지 않겠어요."
+  },
+  {
+   "de": "den ersten Schritt machen",
+   "ko": "먼저 다가가다, 먼저 행동하다",
+   "ex": "An Ihrer Stelle würde ich den ersten Schritt machen.",
+   "exko": "제가 K. 씨 입장이라면 먼저 다가가겠어요."
+  }
+ ]
+}

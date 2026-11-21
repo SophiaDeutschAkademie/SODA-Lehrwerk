@@ -34,7 +34,7 @@
   },
   {
    "de": "Dann kommt die Retusche ins Spiel, bei der wir Fehlstellen nach einer eisernen Regel schließen: Alles, was wir hinzufügen, muss jederzeit rückgängig zu machen sein. Wir arbeiten deshalb ausschließlich mit Retuschierfarben, die sich auch in fünfzig Jahren noch mit einem milden Lösungsmittel entfernen lassen, ohne dass das Original Schaden nimmt. Die nächste Generation wird bessere Methoden zur Verfügung haben, und sie soll unsere Entscheidungen korrigieren können. Außerdem wird jeder Arbeitsschritt mit Fotos, Skizzen und einem Bericht dokumentiert, aus dem nachvollziehbar hervorgeht, welches Material an welcher Stelle eingesetzt wurde.",
-   "ko": "그러면 보채가 등장해요. 결손 부위를 메우는데, 여기에는 철칙이 있어요. 우리가 덧붙이는 것은 모두 언제든지 되돌릴 수 있어야 해요. 그래서 우리는 50년 뒤에도 순한 용제로 지울 수 있는 보채용 물감만 써요. 원작이 손상되지 않도록요. 다음 세대는 더 나은 방법을 쓸 수 있게 될 테고, 우리의 결정을 바로잡을 수 있어야 해요. 또한 모든 작업 단계를 사진과 스케치, 보고서로 기록해요. 그 보고서를 보면 어느 자리에 어떤 재료를 썼는지 추적할 수 있어요."
+   "ko": "그러면 보채가 등장해요. 결손 부위를 메우는데, 여기에는 철칙이 있어요. 우리가 덧붙이는 것은 모두 언제든지 되돌릴 수 있어야 해요. 그래서 우리는 50년 뒤에도 원작이 손상되는 일 없이 순한 용제로 지울 수 있는 보채용 물감만 써요. 다음 세대는 더 나은 방법을 쓸 수 있게 될 테고, 우리의 결정을 바로잡을 수 있어야 해요. 또한 모든 작업 단계를 사진과 스케치, 보고서로 기록해요. 그 보고서를 보면 어느 자리에 어떤 재료를 썼는지 추적할 수 있어요."
   },
   {
    "style": "q",
@@ -68,16 +68,20 @@
   {
    "type": "rfn",
    "kind": "detail",
-   "q": "Die Farben des Porträts sind im Lauf der Zeit verblasst, weil die Malschicht beschädigt wurde.",
+   "q": "Die Farben des Porträts wirken heute anders, weil die Malschicht beschädigt wurde.",
    "answer": 1,
    "evidence": "Der Firnis, also die durchsichtige Schutzschicht über der Malschicht, ist im Lauf der Jahrhunderte vergilbt, sodass das Weiß des Spitzenkragens heute beige und der blaue Himmel grünlich wirkt.",
    "pairs": [
     [
      "Der Firnis, also die durchsichtige Schutzschicht über der Malschicht, ist im Lauf der Jahrhunderte vergilbt",
      "weil die Malschicht beschädigt wurde"
+    ],
+    [
+     "sodass das Weiß des Spitzenkragens heute beige und der blaue Himmel grünlich wirkt",
+     "Die Farben des Porträts wirken heute anders"
     ]
    ],
-   "explain": "옷깃의 흰색이 베이지색으로, 하늘이 초록빛으로 보이는 것은 물감층 위의 보호층인 바니시가 수백 년 동안 누렇게 변했기 때문이에요(sodass). 물감층이 손상되었다는 말은 이 대목에 없어요. 진술은 본문 낱말(Malschicht, beschädigt)을 써서 원인을 바꾼 함정이에요."
+   "explain": "옷깃의 흰색이 베이지색으로, 하늘이 초록빛으로 보이는 것은 물감층 위의 보호층인 바니시가 수백 년 동안 누렇게 변했기 때문이에요(sodass). 색이 달라 보인다는 앞부분은 맞지만, 물감층이 손상되었다는 말은 이 대목에 없어요. 진술은 본문 낱말(Malschicht, beschädigt)을 써서 원인을 바꾼 함정이에요."
   },
   {
    "type": "mc",
@@ -289,7 +293,7 @@
     },
     {
      "de": "Wir arbeiten deshalb ausschließlich mit Retuschierfarben, die sich auch in fünfzig Jahren noch mit einem milden Lösungsmittel entfernen lassen, ohne dass das Original Schaden nimmt.",
-     "ko": "그래서 우리는 50년 뒤에도 순한 용제로 지울 수 있는 보채용 물감만 써요. 원작이 손상되지 않도록요.",
+     "ko": "그래서 우리는 50년 뒤에도 원작이 손상되는 일 없이 순한 용제로 지울 수 있는 보채용 물감만 써요.",
      "mark": [
       "sich",
       "entfernen lassen"
@@ -425,7 +429,7 @@
      ]
     }
    ],
-   "tip": "세 가지 대체형은 서로 바꿔 쓸 수 있어요. Der Firnis ist entfernbar = Der Firnis lässt sich entfernen = Der Firnis ist zu entfernen = Der Firnis kann entfernt werden. 두 번째 예문에는 erlernbar와 sich … erlernen lässt가 나란히 나와요."
+   "tip": "가능의 뜻이라면 세 가지 대체형을 서로 바꿔 쓸 수 있어요. Der Firnis ist entfernbar = Der Firnis lässt sich entfernen = Der Firnis kann entfernt werden. Der Firnis ist zu entfernen도 같은 뜻이 될 수 있지만, 문맥에 따라 ‘제거되어야 한다’로도 읽혀요. 두 번째 예문에는 erlernbar와 sich … erlernen lässt가 나란히 나와요."
   },
   {
    "title": "기능동사 구문",
@@ -481,7 +485,7 @@
      ]
     }
    ],
-   "tip": "기능동사 구문은 관사 쓰임이 정해져 있어요. in Frage kommen(관사 없음), zur Verfügung haben(zu der → zur), eine Rolle spielen(부정관사). 명사만 바꾸면 틀린 표현이 되므로 덩어리째 외우는 것이 좋아요."
+   "tip": "기능동사 구문은 관사 쓰임이 정해져 있어요. in Frage kommen(관사 없음), zur Verfügung haben(zu der → zur), eine Rolle spielen(부정관사). 관사나 전치사를 바꾸면 틀린 표현이 되므로 덩어리째 외우는 것이 좋아요."
   }
  ],
  "vocab": [
@@ -575,7 +579,7 @@
    "de": "Schaden nehmen",
    "ko": "손상되다, 피해를 입다",
    "ex": "Wir arbeiten deshalb ausschließlich mit Retuschierfarben, die sich auch in fünfzig Jahren noch mit einem milden Lösungsmittel entfernen lassen, ohne dass das Original Schaden nimmt.",
-   "exko": "그래서 우리는 50년 뒤에도 순한 용제로 지울 수 있는 보채용 물감만 써요. 원작이 손상되지 않도록요."
+   "exko": "그래서 우리는 50년 뒤에도 원작이 손상되는 일 없이 순한 용제로 지울 수 있는 보채용 물감만 써요."
   },
   {
    "de": "mit bloßem Auge",

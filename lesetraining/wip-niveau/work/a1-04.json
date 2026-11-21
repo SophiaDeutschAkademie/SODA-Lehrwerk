@@ -19,7 +19,7 @@
   },
   {
    "de": "Um sechs Uhr macht sie die Bäckerei auf, und draußen warten schon die ersten Kunden. Bis 13 Uhr verkauft sie zusammen mit einer Verkäuferin Brötchen und Kaffee. Dann hat Sabine Feierabend und geht nach Hause.",
-   "ko": "6시에 빵집 문을 여는데, 밖에는 벌써 첫 손님들이 기다리고 있어요. 오후 1시까지 판매원 한 명과 함께 브뢰첸과 커피를 팔아요. 그러면 자비네 씨는 일을 마치고 집에 가요."
+   "ko": "6시에 빵집 문을 여는데, 밖에는 벌써 첫 손님들이 기다리고 있어요. 오후 1시까지 판매원 한 명과 함께 브뢰첸과 커피를 팔아요. 그다음에 자비네 씨는 일을 마치고 집에 가요."
   },
   {
    "de": "Zu Hause kocht sie, und nachmittags kauft sie ein. Um vier Uhr holt sie ihre Enkelin Lea vom Kindergarten ab. Die beiden spielen eine Stunde zusammen.",
@@ -107,7 +107,7 @@
      "Die ersten Leute kaufen schon ein"
     ]
    ],
-   "explain": "6시에 자비네 씨가 빵집 문을 열고(macht sie die Bäckerei auf), 밖에는 벌써 첫 손님들(die ersten Kunden)이 기다리고 있어요. 문을 열면 기다리던 손님들이 빵을 사니까 두 번째가 정답이에요. Kunden을 Leute로 바꿔 말했어요. 자비네 씨가 일어나는 시간은 2시 반이고, 빵 작업실에서 일을 시작하는 시간은 3시예요."
+   "explain": "6시에 자비네 씨가 빵집 문을 열고(macht sie die Bäckerei auf), 밖에는 벌써 첫 손님들(die ersten Kunden)이 기다리고 있어요. 문을 열면 기다리던 손님들이 빵을 사니까 'Die ersten Leute kaufen schon ein.'이 정답이에요. Kunden을 Leute로 바꿔 말했어요. 자비네 씨가 일어나는 시간은 2시 반이고, 빵 작업실에서 일을 시작하는 시간은 3시예요."
   },
   {
    "type": "mc",
@@ -155,7 +155,7 @@
   {
    "title": "4격으로 쓰는 시간 표현",
    "term": "Akkusativ der Zeit (jeden Morgen, eine Stunde)",
-   "explain": "전치사 없이 시간을 말할 때는 4격을 써요. 'jeden Morgen(매일 아침)'처럼 jed-를 쓰면 같은 일이 되풀이된다는 뜻이고, 'eine Stunde(한 시간 동안)'처럼 얼마 동안인지도 4격으로 말해요. 남성 명사는 jeden/einen(jeden Morgen, jeden Tag), 여성 명사는 jede/eine(jede Woche, eine Stunde), 중성 명사는 jedes/ein(jedes Jahr)이에요.",
+   "explain": "전치사 없이 명사로 시간을 말할 때는 4격을 써요. 'jeden Morgen(매일 아침)'처럼 jed-를 쓰면 같은 일이 되풀이된다는 뜻이고, 'eine Stunde(한 시간 동안)'처럼 얼마 동안인지도 4격으로 말해요. 남성 명사는 jeden/einen(jeden Morgen, jeden Tag), 여성 명사는 jede/eine(jede Woche, eine Stunde), 중성 명사는 jedes/ein(jedes Jahr)이에요.",
    "pattern": "jeden Morgen · jeden Tag · jede Woche · jedes Jahr / eine Stunde · einen Tag",
    "examples": [
     {
@@ -290,7 +290,7 @@
    "examples": [
     {
      "de": "Dann hat Sabine Feierabend und geht nach Hause.",
-     "ko": "그러면 자비네 씨는 일을 마치고 집에 가요.",
+     "ko": "그다음에 자비네 씨는 일을 마치고 집에 가요.",
      "mark": [
       "nach Hause"
      ],
@@ -425,7 +425,7 @@
    "de": "Feierabend haben",
    "ko": "일을 마치다, 퇴근하다",
    "ex": "Dann hat Sabine Feierabend und geht nach Hause.",
-   "exko": "그러면 자비네 씨는 일을 마치고 집에 가요."
+   "exko": "그다음에 자비네 씨는 일을 마치고 집에 가요."
   },
   {
    "de": "schlafen gehen",

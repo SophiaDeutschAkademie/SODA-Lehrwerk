@@ -8,7 +8,7 @@
  "typeKo": "학생 신문의 조언 기사",
  "intro": "시험을 앞둔 학생들에게 학생 신문이 전하는 다섯 가지 조언이에요.",
  "focus": [
-  "종속절 속 화법조동사",
+  "문장 앞의 wenn절",
   "조언의 sollte",
   "zu 부정사구"
  ],
@@ -96,7 +96,7 @@
    "kind": "inference",
    "q": "Warum soll man in der Pause das Smartphone liegen lassen?",
    "options": [
-    "Weil man nach einer Lernstunde zu müde dafür ist.",
+    "Weil die Augen nach einer Lernstunde schon müde sind.",
     "Weil die Pause sonst viel länger dauert als geplant.",
     "Weil man ohne Smartphone konzentrierter lernen kann."
    ],
@@ -112,7 +112,7 @@
      "in der Pause das Smartphone liegen lassen"
     ]
    ],
-   "explain": "본문은 쉬는 동안 스마트폰을 그대로 두라고 하고, 그러지 않으면 10분이 금방 한 시간이 된다고 해요(sonst wird aus zehn Minuten schnell eine Stunde). 쉬는 시간이 계획보다 훨씬 길어진다는 뜻이에요. 'ohne Smartphone konzentrierter lernen'은 본문 낱말을 쓰지만 본문이 말하는 이유가 아니에요. 공부한 뒤에 너무 피곤하다는 말도 본문에 없어요."
+   "explain": "본문은 쉬는 동안 스마트폰을 그대로 두라고 하고, 그러지 않으면 10분이 금방 한 시간이 된다고 해요(sonst wird aus zehn Minuten schnell eine Stunde). 쉬는 시간이 계획보다 훨씬 길어진다는 뜻이에요. 'ohne Smartphone konzentrierter lernen'은 본문 낱말을 쓰지만 본문이 말하는 이유가 아니에요. 한 시간 공부하면 눈이 피곤하다는 말도 본문에 없어요."
   },
   {
    "type": "mc",
@@ -226,49 +226,16 @@
  ],
  "grammar": [
   {
-   "title": "종속절 속 화법조동사 – 맨 끝 자리",
-   "term": "Modalverben im Nebensatz",
-   "explain": "wenn절이나 간접의문문(welche …) 같은 종속절에서는 인칭변화한 동사가 절의 맨 끝에 와요. 종속절에 화법조동사가 있으면 동사원형이 먼저 오고, 인칭변화한 화법조동사(musst, willst, kannst)가 맨 끝에 와요. 그래서 종속절 끝에는 '동사원형 + 화법조동사'가 나란히 서요. 종속절이 문장 맨 앞에 오면 그 절 전체가 1번 자리를 차지해서, 쉼표 바로 뒤에 주절의 동사가 와요(… lernen willst, bist du …).",
-   "pattern": "주절, + welche/wenn + 주어 + … + 동사원형 + 화법조동사(끝)",
+   "title": "문장 앞의 wenn절 – 동사, 동사",
+   "term": "Konditionalsatz mit wenn im Vorfeld",
+   "explain": "wenn은 '~하면, ~할 때'라는 뜻의 종속접속사예요. wenn절에서는 인칭변화한 동사가 절의 맨 끝에 와요. 화법조동사가 있으면 인칭변화한 화법조동사가 동사원형 뒤, 절의 맨 끝에 와요(lernen willst, erklären kannst). wenn절이 문장 맨 앞에 오면 그 절 전체가 1번 자리를 차지해요. 그래서 쉼표 바로 뒤에 주절의 동사가 오고, 주어는 그 동사 뒤로 가요. 결국 쉼표를 사이에 두고 동사 두 개가 나란히 서게 돼요. aber는 자리를 차지하지 않기 때문에 aber 뒤에 wenn절이 와도 어순은 같아요(aber wenn du … kannst, solltest du …).",
+   "pattern": "Wenn + 주어 + … + 동사(끝), + 동사 + 주어 + …",
    "examples": [
-    {
-     "de": "Mit einem Lernplan weißt du jeden Tag genau, welche Vokabeln und Formeln du lernen musst.",
-     "ko": "학습 계획이 있으면 매일 어떤 단어와 공식을 공부해야 하는지 정확히 알아요.",
-     "mark": [
-      "lernen musst"
-     ],
-     "parts": [
-      [
-       "Mit einem Lernplan",
-       "부사어"
-      ],
-      [
-       "weißt",
-       "동사"
-      ],
-      [
-       "du",
-       "주어"
-      ],
-      [
-       "jeden Tag",
-       "부사어(시간)"
-      ],
-      [
-       "genau,",
-       "부사어(방법)"
-      ],
-      [
-       "welche Vokabeln und Formeln du lernen musst.",
-       "종속절"
-      ]
-     ]
-    },
     {
      "de": "Wenn du erst in der Nacht vor dem Prüfungstag alles lernen willst, bist du am Morgen müde und unkonzentriert.",
      "ko": "시험 전날 밤에야 모든 걸 공부하려고 하면 아침에 피곤하고 집중이 안 돼요.",
      "mark": [
-      "lernen willst, bist"
+      "willst, bist"
      ],
      "parts": [
       [
@@ -294,19 +261,64 @@
      ]
     },
     {
+     "de": "Erklär den anderen eine Matheaufgabe – wenn du etwas erklären kannst, hast du es wirklich verstanden.",
+     "ko": "다른 친구들에게 수학 문제 하나를 설명해 보세요. 무언가를 설명할 수 있다면 그것을 정말로 이해한 거예요.",
+     "mark": [
+      "kannst, hast"
+     ],
+     "parts": [
+      [
+       "Erklär",
+       "동사"
+      ],
+      [
+       "den anderen",
+       "3격 목적어"
+      ],
+      [
+       "eine Matheaufgabe –",
+       "4격 목적어"
+      ],
+      [
+       "wenn du etwas erklären kannst,",
+       "종속절"
+      ],
+      [
+       "hast",
+       "동사"
+      ],
+      [
+       "du",
+       "주어"
+      ],
+      [
+       "es",
+       "4격 목적어"
+      ],
+      [
+       "wirklich",
+       "부사어"
+      ],
+      [
+       "verstanden.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
      "de": "Etwas Nervosität ist normal, aber wenn du vor jeder Prüfung nicht schlafen kannst, solltest du mit deinen Eltern oder einer Vertrauenslehrerin sprechen.",
      "ko": "조금 긴장하는 건 정상이에요. 하지만 시험 때마다 잠을 못 잔다면 부모님이나 상담 선생님과 이야기하는 게 좋아요.",
      "mark": [
-      "schlafen kannst"
+      "kannst, solltest"
      ]
     }
    ],
-   "tip": "주절에서는 화법조동사가 2번 자리에 와요: Du kannst nicht schlafen. 같은 내용이 종속절이 되면 kannst가 맨 끝으로 가요: wenn du nicht schlafen kannst. 현재완료도 마찬가지로 인칭변화한 haben이 맨 끝에 와요: was du gelernt hast."
+   "tip": "주절이 앞에 오면 평소 어순 그대로예요: Viele von uns bekommen schon Bauchschmerzen, wenn sie an den ersten Prüfungstag denken. wenn절이 앞에 올 때만 '…동사, 동사…' 모양이 돼요."
   },
   {
    "title": "sollte(st) – 부드러운 조언",
    "term": "sollte (Konjunktiv II von sollen) für Ratschläge",
-   "explain": "sollte는 화법조동사 sollen의 접속법 2식 형태예요. '~하는 게 좋아요'라는 부드러운 조언을 할 때 써요. 현재형 du sollst는 다른 사람이 시킨 일이나 정해진 규칙을 전할 때 써서 sollte보다 훨씬 강하게 들려요. 다른 화법조동사처럼 sollte가 2번 자리에 오고 동사원형이 문장 끝에 와요. deshalb 같은 접속부사가 1번 자리에 오면 solltest가 바로 뒤에 오고, 주어는 그다음에 와요. 형태는 ich sollte, du solltest, er/sie sollte, wir sollten, ihr solltet, sie sollten이에요.",
+   "explain": "sollte는 화법조동사 sollen의 접속법 2식 형태예요. '~하는 게 좋아요'라는 부드러운 조언을 할 때 써요. 현재형 du sollst는 다른 사람이 시킨 일이나 정해진 규칙을 전할 때 써서 sollte보다 더 강하게 들려요. 다른 화법조동사처럼 sollte가 2번 자리에 오고 동사원형이 문장 끝에 와요. deshalb 같은 접속부사가 1번 자리에 오면 solltest가 바로 뒤에 오고, 주어는 그다음에 와요. 형태는 ich sollte, du solltest, er/sie sollte, wir sollten, ihr solltet, sie sollten이에요.",
    "pattern": "1번 자리(주어 · 의문사 · deshalb · wenn절 …) + sollte(st) + … + 동사원형(문장 끝)",
    "examples": [
     {

@@ -1,0 +1,599 @@
+{
+ "id": "a2-17",
+ "level": "A2",
+ "no": 17,
+ "title": "So kaufen Sie Ihr Ticket",
+ "titleKo": "승차권, 이렇게 사세요",
+ "type": "Bedienungsanleitung",
+ "typeKo": "승차권 자동판매기 사용 안내",
+ "intro": "버스와 트램 승차권 자동판매기를 쓰는 방법과 자주 생기는 문제를 알려 주는 안내문이에요.",
+ "focus": [
+  "분리동사",
+  "sonst · also",
+  "-ung 명사"
+ ],
+ "paragraphs": [
+  {
+   "de": "Fahrkarten für Bus und Straßenbahn bekommen Sie an allen Automaten – rund um die Uhr und ohne Wartezeit.",
+   "ko": "버스와 트램 승차권은 모든 자동판매기에서 24시간 언제든 기다리지 않고 살 수 있어요."
+  },
+  {
+   "style": "h",
+   "de": "1. Ziel und Fahrkarte auswählen",
+   "ko": "1. 목적지와 승차권 고르기"
+  },
+  {
+   "de": "Geben Sie zuerst Ihr Ziel ein, zum Beispiel „Hauptbahnhof“. Danach wählen Sie aus, ob Sie einen Einzelfahrschein, eine Tageskarte oder eine Wochenkarte brauchen. Für Kinder von 6 bis 14 Jahren drücken Sie auf „Ermäßigt“, jüngere Kinder fahren kostenlos mit.",
+   "ko": "먼저 목적지를 입력하세요. 예를 들면 ‘중앙역’처럼요. 그다음 1회권, 1일권, 1주일권 가운데 어떤 승차권이 필요한지 고르세요. 6세부터 14세까지의 어린이는 ‘할인’을 누르고, 그보다 어린 아이는 무료로 함께 탈 수 있어요."
+  },
+  {
+   "style": "h",
+   "de": "2. Bezahlen",
+   "ko": "2. 결제하기"
+  },
+  {
+   "de": "Bezahlen können Sie bar oder mit Karte. Stecken Sie Ihre Bankkarte ein oder halten Sie sie ruhig an das Lesegerät, sonst kann der Automat sie nicht lesen. Bei Kartenzahlung bestätigen Sie den Betrag mit Ihrer PIN. Der Automat gibt auch Wechselgeld zurück, nimmt aber keine Scheine über 20 Euro an.",
+   "ko": "결제는 현금이나 카드로 할 수 있어요. 은행 카드를 꽂거나 카드 단말기에 움직이지 말고 대세요. 그렇지 않으면 자동판매기가 카드를 읽지 못해요. 카드로 결제할 때는 PIN 번호로 금액을 확인하세요. 자동판매기는 거스름돈도 내주지만, 20유로보다 큰 지폐는 받지 않아요."
+  },
+  {
+   "style": "h",
+   "de": "3. Fahrkarte entnehmen",
+   "ko": "3. 승차권 꺼내기"
+  },
+  {
+   "de": "Fahrkarte und Wechselgeld finden Sie danach im Ausgabefach unten links. Das Ticket ist sofort gültig, Sie müssen es also nicht entwerten. Ein Einzelfahrschein gilt 90 Minuten in eine Richtung, das heißt, Sie dürfen umsteigen, aber nicht zurückfahren.",
+   "ko": "그다음 승차권과 거스름돈은 왼쪽 아래 배출구에 나와요. 승차권은 바로 유효하니까 따로 개찰기에 찍을 필요가 없어요. 1회권은 한 방향으로 90분 동안 유효해요. 즉 갈아탈 수는 있지만 되돌아올 수는 없어요."
+  },
+  {
+   "style": "h",
+   "de": "Häufige Probleme",
+   "ko": "자주 생기는 문제"
+  },
+  {
+   "style": "q",
+   "de": "Ich habe die falsche Fahrkarte ausgewählt.",
+   "ko": "승차권을 잘못 골랐어요."
+  },
+  {
+   "de": "Wenn Sie noch nicht bezahlt haben, drücken Sie einfach auf „Abbrechen“ und fangen Sie noch einmal von vorn an. Nach der Zahlung kann man eine Fahrkarte am Automaten leider nicht mehr umtauschen.",
+   "ko": "아직 결제하지 않았다면 ‘취소’를 누르고 처음부터 다시 시작하면 돼요. 아쉽지만 결제한 뒤에는 자동판매기에서 승차권을 바꿀 수 없어요."
+  },
+  {
+   "style": "q",
+   "de": "Der Automat ist kaputt.",
+   "ko": "자동판매기가 고장 났어요."
+  },
+  {
+   "de": "Rufen Sie bitte unsere Servicenummer an, die auf dem gelben Aufkleber neben dem Bildschirm steht. Auch bei einer Störung dürfen Sie nicht ohne Fahrkarte einsteigen, gehen Sie deshalb bitte durch die Unterführung zum Automaten auf dem anderen Bahnsteig.",
+   "ko": "화면 옆 노란 스티커에 적힌 고객 센터 번호로 전화해 주세요. 고장이 났더라도 승차권 없이 타시면 안 돼요. 그러니 지하도를 지나 다른 승강장에 있는 자동판매기로 가 주세요."
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Nachts bekommt man an den Automaten keine Fahrkarten.",
+   "answer": 1,
+   "evidence": "rund um die Uhr und ohne Wartezeit",
+   "pairs": [
+    [
+     "rund um die Uhr",
+     "Nachts"
+    ]
+   ],
+   "explain": "자동판매기에서는 24시간 내내(rund um die Uhr) 승차권을 살 수 있어요. 그러니 밤에도 살 수 있어서 틀린 문장이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Was gilt für ein Kind, das vier Jahre alt ist?",
+   "options": [
+    "Man drückt für das Kind auf „Ermäßigt“.",
+    "Das Kind braucht eine eigene Tageskarte.",
+    "Für das Kind muss man nichts bezahlen."
+   ],
+   "answer": 2,
+   "evidence": "jüngere Kinder fahren kostenlos mit",
+   "pairs": [
+    [
+     "jüngere Kinder",
+     "ein Kind, das vier Jahre alt ist"
+    ],
+    [
+     "fahren kostenlos mit",
+     "muss man nichts bezahlen"
+    ]
+   ],
+   "explain": "‘할인’은 6세부터 14세까지의 어린이용이고, 그보다 어린 아이(jüngere Kinder)는 무료로 함께 타요(kostenlos mit). 네 살은 6세보다 어리므로 돈을 낼 필요가 없어요. 그래서 ‘할인’을 누른다는 말도, 따로 1일권이 필요하다는 말도 틀려요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Welche Aussage über das Bezahlen am Automaten stimmt?",
+   "options": [
+    "Mit einem 50-Euro-Schein kann man hier nicht zahlen.",
+    "Wechselgeld gibt es nur, wenn man mit der Karte zahlt.",
+    "Die Bankkarte muss man immer in das Gerät stecken."
+   ],
+   "answer": 0,
+   "evidence": "nimmt aber keine Scheine über 20 Euro an",
+   "pairs": [
+    [
+     "keine Scheine über 20 Euro",
+     "Mit einem 50-Euro-Schein kann man hier nicht zahlen"
+    ]
+   ],
+   "explain": "자동판매기는 20유로보다 큰 지폐를 받지 않아요(keine Scheine über 20 Euro). 그래서 50유로 지폐로는 낼 수 없어요. 카드로 내면 거스름돈이 생기지 않으니 카드 결제 때만 거스름돈이 나온다는 말은 틀려요. 은행 카드는 꽂지 않고 단말기에 대기만 해도 돼요(oder halten Sie sie … an das Lesegerät)."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Eine Stunde nach dem Kauf darf man mit dem Einzelfahrschein noch die Linie wechseln.",
+   "answer": 0,
+   "evidence": "Ein Einzelfahrschein gilt 90 Minuten in eine Richtung",
+   "pairs": [
+    [
+     "gilt 90 Minuten",
+     "Eine Stunde nach dem Kauf"
+    ],
+    [
+     "umsteigen",
+     "die Linie wechseln"
+    ]
+   ],
+   "explain": "1회권은 바로 유효하고 90분 동안 쓸 수 있으며(gilt 90 Minuten), 그동안 갈아탈 수 있어요(umsteigen). 한 시간은 90분 안이므로 사고 나서 한 시간 뒤에도 다른 노선으로 갈아탈 수 있어요. 그래서 맞는 문장이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was gilt, wenn man die falsche Fahrkarte schon bezahlt hat?",
+   "options": [
+    "Man drückt auf „Abbrechen“ und bekommt dann sein Geld zurück.",
+    "Ein Umtausch ist dann am Gerät selbst nicht mehr möglich.",
+    "Man fängt am Automaten einfach noch einmal von vorn an."
+   ],
+   "answer": 1,
+   "evidence": "Nach der Zahlung kann man eine Fahrkarte am Automaten leider nicht mehr umtauschen.",
+   "pairs": [
+    [
+     "nicht mehr umtauschen",
+     "Ein Umtausch ist dann am Gerät selbst nicht mehr möglich"
+    ]
+   ],
+   "explain": "‘취소’를 누르고 처음부터 다시 하는 것은 아직 결제하지 않았을 때만 할 수 있어요(Wenn Sie noch nicht bezahlt haben). 결제한 뒤에는 자동판매기에서 승차권을 바꿀 수 없어요(nicht mehr umtauschen). 정답은 동사 umtauschen을 명사 Umtausch로 바꿔 말했어요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Wo findet man die Telefonnummer, wenn man Hilfe braucht?",
+   "options": [
+    "Im Ausgabefach unten links, wo das Wechselgeld liegt.",
+    "In der Unterführung, die zum anderen Bahnsteig führt.",
+    "Auf einem gelben Zettel, der neben dem Display klebt."
+   ],
+   "answer": 2,
+   "evidence": "die auf dem gelben Aufkleber neben dem Bildschirm steht",
+   "pairs": [
+    [
+     "auf dem gelben Aufkleber",
+     "Auf einem gelben Zettel"
+    ],
+    [
+     "Aufkleber",
+     "der neben dem Display klebt"
+    ],
+    [
+     "neben dem Bildschirm",
+     "neben dem Display"
+    ]
+   ],
+   "explain": "고객 센터 번호는 화면 옆에 붙은 노란 스티커에 있어요(auf dem gelben Aufkleber neben dem Bildschirm). 정답은 Aufkleber를 ‘붙어 있는 쪽지(Zettel, der klebt)’로, Bildschirm을 Display로 바꿔 말했어요. 배출구와 지하도도 본문에 나오지만 번호가 있는 곳은 아니에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Warum sollen die Fahrgäste bei einer Störung durch die Unterführung gehen?",
+   "options": [
+    "Weil man nur mit einem Fahrschein einsteigen darf.",
+    "Weil man dort auch ohne Fahrkarte einsteigen darf.",
+    "Weil man dort falsche Fahrkarten umtauschen kann."
+   ],
+   "answer": 0,
+   "evidence": "Auch bei einer Störung dürfen Sie nicht ohne Fahrkarte einsteigen",
+   "pairs": [
+    [
+     "nicht ohne Fahrkarte einsteigen",
+     "nur mit einem Fahrschein einsteigen"
+    ]
+   ],
+   "explain": "자동판매기가 고장 나도 승차권 없이는 탈 수 없어요(dürfen Sie nicht ohne Fahrkarte einsteigen). 그래서(deshalb) 지하도를 지나 다른 승강장의 자동판매기에서 승차권을 사라는 거예요. 승차권 없이 탈 수 있다는 말은 반대이고, 승차권 교환은 결제한 뒤에는 자동판매기에서 할 수 없다고 했어요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "분리동사 – 명령문 · 화법조동사 · 현재완료에서의 자리",
+   "term": "Trennbare Verben im Imperativ, mit Modalverb und im Perfekt",
+   "explain": "ein|geben, aus|wählen, an|rufen 같은 분리동사는 현재형 주문장과 명령문에서 앞부분(분리 전철)이 떨어져 문장 맨 끝으로 가요(Geben Sie … ein). 화법조동사와 함께 쓰면 분리동사는 붙은 모양 그대로 문장 끝에 와요(dürfen … umsteigen). 현재완료에서는 ge-가 전철과 동사 사이에 들어가요(aus-ge-wählt). be-, ver-, ent- 같은 비분리 전철이 붙은 동사(bestätigen, bezahlen, entwerten)는 떨어지지 않아요.",
+   "pattern": "Geben Sie … ein. / Sie dürfen … umsteigen. / Ich habe … ausgewählt.",
+   "examples": [
+    {
+     "de": "Geben Sie zuerst Ihr Ziel ein, zum Beispiel „Hauptbahnhof“.",
+     "ko": "먼저 목적지를 입력하세요. 예를 들면 ‘중앙역’처럼요.",
+     "mark": [
+      "Geben",
+      "ein,"
+     ],
+     "parts": [
+      [
+       "Geben",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "zuerst",
+       "부사어(시간)"
+      ],
+      [
+       "Ihr Ziel",
+       "4격 목적어"
+      ],
+      [
+       "ein,",
+       "동사(끝)"
+      ],
+      [
+       "zum Beispiel „Hauptbahnhof“.",
+       "기타"
+      ]
+     ]
+    },
+    {
+     "de": "Ein Einzelfahrschein gilt 90 Minuten in eine Richtung, das heißt, Sie dürfen umsteigen, aber nicht zurückfahren.",
+     "ko": "1회권은 한 방향으로 90분 동안 유효해요. 즉 갈아탈 수는 있지만 되돌아올 수는 없어요.",
+     "mark": [
+      "dürfen umsteigen",
+      "zurückfahren"
+     ]
+    },
+    {
+     "de": "Ich habe die falsche Fahrkarte ausgewählt.",
+     "ko": "승차권을 잘못 골랐어요.",
+     "mark": [
+      "habe",
+      "ausgewählt"
+     ],
+     "parts": [
+      [
+       "Ich",
+       "주어"
+      ],
+      [
+       "habe",
+       "동사"
+      ],
+      [
+       "die falsche Fahrkarte",
+       "4격 목적어"
+      ],
+      [
+       "ausgewählt.",
+       "동사(끝)"
+      ]
+     ]
+    }
+   ],
+   "tip": "명령문에서는 Rufen Sie … an처럼 전철이 끝에 와요. 그 뒤에 관계절이 이어지면 전철 다음에 쉼표와 관계절이 와요(Rufen Sie bitte unsere Servicenummer an, die …). 사전에서는 분리동사를 an|rufen처럼 표시해요."
+  },
+  {
+   "title": "sonst와 also – ‘그렇지 않으면’과 ‘그러니까’",
+   "term": "Konjunktionaladverbien sonst und also",
+   "explain": "sonst는 ‘그렇게 하지 않으면’이라는 뜻으로, 앞의 지시를 지키지 않을 때 생기는 결과를 말해요. also는 ‘그러니까, 따라서’라는 뜻으로, 앞의 사실에서 나오는 결론을 말해요. 두 낱말은 und, aber, oder 같은 접속사와 달리 문장 성분으로 쳐요. 그래서 sonst가 첫자리에 오면 동사가 바로 뒤에 오고(sonst kann der Automat …), also는 동사 뒤 가운데 자리에 자주 와요(Sie müssen es also nicht entwerten).",
+   "pattern": "…, sonst + 동사 + 주어 … / 주어 + 동사 + … also … ",
+   "examples": [
+    {
+     "de": "Stecken Sie Ihre Bankkarte ein oder halten Sie sie ruhig an das Lesegerät, sonst kann der Automat sie nicht lesen.",
+     "ko": "은행 카드를 꽂거나 카드 단말기에 움직이지 말고 대세요. 그렇지 않으면 자동판매기가 카드를 읽지 못해요.",
+     "mark": [
+      "sonst kann der Automat"
+     ],
+     "parts": [
+      [
+       "Stecken",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "Ihre Bankkarte",
+       "4격 목적어"
+      ],
+      [
+       "ein",
+       "동사(끝)"
+      ],
+      [
+       "oder",
+       "접속사"
+      ],
+      [
+       "halten",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "sie",
+       "4격 목적어"
+      ],
+      [
+       "ruhig",
+       "부사어(방법)"
+      ],
+      [
+       "an das Lesegerät,",
+       "부사어(장소)"
+      ],
+      [
+       "sonst",
+       "접속부사"
+      ],
+      [
+       "kann",
+       "동사"
+      ],
+      [
+       "der Automat",
+       "주어"
+      ],
+      [
+       "sie",
+       "4격 목적어"
+      ],
+      [
+       "nicht",
+       "부정어"
+      ],
+      [
+       "lesen.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Das Ticket ist sofort gültig, Sie müssen es also nicht entwerten.",
+     "ko": "승차권은 바로 유효하니까 따로 개찰기에 찍을 필요가 없어요.",
+     "mark": [
+      "also"
+     ],
+     "parts": [
+      [
+       "Das Ticket",
+       "주어"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "sofort",
+       "부사어(시간)"
+      ],
+      [
+       "gültig,",
+       "보어"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "müssen",
+       "동사"
+      ],
+      [
+       "es",
+       "4격 목적어"
+      ],
+      [
+       "also",
+       "접속부사"
+      ],
+      [
+       "nicht",
+       "부정어"
+      ],
+      [
+       "entwerten.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Auch bei einer Störung dürfen Sie nicht ohne Fahrkarte einsteigen, gehen Sie deshalb bitte durch die Unterführung zum Automaten auf dem anderen Bahnsteig.",
+     "ko": "고장이 났더라도 승차권 없이 타시면 안 돼요. 그러니 지하도를 지나 다른 승강장에 있는 자동판매기로 가 주세요.",
+     "mark": [
+      "deshalb"
+     ]
+    }
+   ],
+   "tip": "deshalb도 결과를 말해요. deshalb는 앞 문장이 이유라는 점을 분명히 하고, also는 앞의 사실에서 결론을 끌어낼 때 자주 써요(Das Ticket ist sofort gültig, Sie müssen es also nicht entwerten)."
+  },
+  {
+   "title": "동사에서 나온 명사 -ung",
+   "term": "Nomen auf -ung",
+   "explain": "동사 어간에 -ung을 붙이면 그 행동을 가리키는 명사가 돼요(zahlen → die Zahlung, stören → die Störung). 이렇게 동사에 -ung을 붙여 만든 명사는 모두 여성 명사이고, 복수형은 -en이에요. 안내문에서는 이런 명사를 bei나 nach와 함께 써서 문장을 짧게 만들어요. bei Kartenzahlung은 ‘카드로 결제할 때’, nach der Zahlung은 ‘결제한 뒤에’라는 뜻이에요.",
+   "pattern": "동사 어간 + -ung → die …ung, -en / bei · nach + 3격",
+   "examples": [
+    {
+     "de": "Bei Kartenzahlung bestätigen Sie den Betrag mit Ihrer PIN.",
+     "ko": "카드로 결제할 때는 PIN 번호로 금액을 확인하세요.",
+     "mark": [
+      "Bei Kartenzahlung"
+     ],
+     "parts": [
+      [
+       "Bei Kartenzahlung",
+       "부사어(시간)"
+      ],
+      [
+       "bestätigen",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "den Betrag",
+       "4격 목적어"
+      ],
+      [
+       "mit Ihrer PIN.",
+       "부사어(방법)"
+      ]
+     ]
+    },
+    {
+     "de": "Nach der Zahlung kann man eine Fahrkarte am Automaten leider nicht mehr umtauschen.",
+     "ko": "아쉽지만 결제한 뒤에는 자동판매기에서 승차권을 바꿀 수 없어요.",
+     "mark": [
+      "Nach der Zahlung"
+     ],
+     "parts": [
+      [
+       "Nach der Zahlung",
+       "부사어(시간)"
+      ],
+      [
+       "kann",
+       "동사"
+      ],
+      [
+       "man",
+       "주어"
+      ],
+      [
+       "eine Fahrkarte",
+       "4격 목적어"
+      ],
+      [
+       "am Automaten",
+       "부사어(장소)"
+      ],
+      [
+       "leider",
+       "기타"
+      ],
+      [
+       "nicht mehr",
+       "부정어"
+      ],
+      [
+       "umtauschen.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Auch bei einer Störung dürfen Sie nicht ohne Fahrkarte einsteigen, gehen Sie deshalb bitte durch die Unterführung zum Automaten auf dem anderen Bahnsteig.",
+     "ko": "고장이 났더라도 승차권 없이 타시면 안 돼요. 그러니 지하도를 지나 다른 승강장에 있는 자동판매기로 가 주세요.",
+     "mark": [
+      "bei einer Störung"
+     ]
+    }
+   ],
+   "tip": "-ung 명사는 여성 명사라서 3격 관사는 der · einer예요(nach der Zahlung, bei einer Störung). Kartenzahlung처럼 다른 명사와 합쳐도 마지막 낱말이 성을 정해요(die Karte + die Zahlung → die Kartenzahlung)."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "die Fahrkarte, -n",
+   "ko": "승차권, 차표"
+  },
+  {
+   "de": "der Einzelfahrschein, -e",
+   "ko": "1회권"
+  },
+  {
+   "de": "ein|geben (gibt ein, hat eingegeben)",
+   "ko": "입력하다"
+  },
+  {
+   "de": "aus|wählen",
+   "ko": "고르다, 선택하다"
+  },
+  {
+   "de": "ermäßigt",
+   "ko": "할인된"
+  },
+  {
+   "de": "das Lesegerät, -e",
+   "ko": "(카드) 단말기, 판독기"
+  },
+  {
+   "de": "der Betrag, -¨e",
+   "ko": "금액"
+  },
+  {
+   "de": "das Wechselgeld (Sg.)",
+   "ko": "거스름돈"
+  },
+  {
+   "de": "das Ausgabefach, -¨er",
+   "ko": "(자동판매기의) 배출구"
+  },
+  {
+   "de": "gültig",
+   "ko": "유효한"
+  },
+  {
+   "de": "entwerten",
+   "ko": "(승차권을) 개찰기에 찍다"
+  },
+  {
+   "de": "um|steigen (ist umgestiegen)",
+   "ko": "갈아타다, 환승하다"
+  },
+  {
+   "de": "um|tauschen",
+   "ko": "교환하다, 바꾸다"
+  },
+  {
+   "de": "die Störung, -en",
+   "ko": "고장, 장애"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "rund um die Uhr",
+   "ko": "24시간 내내, 밤낮없이",
+   "ex": "Fahrkarten für Bus und Straßenbahn bekommen Sie an allen Automaten – rund um die Uhr und ohne Wartezeit.",
+   "exko": "버스와 트램 승차권은 모든 자동판매기에서 24시간 언제든 기다리지 않고 살 수 있어요."
+  },
+  {
+   "de": "bar / mit Karte bezahlen",
+   "ko": "현금으로 / 카드로 결제하다",
+   "ex": "Bezahlen können Sie bar oder mit Karte.",
+   "exko": "결제는 현금이나 카드로 할 수 있어요."
+  },
+  {
+   "de": "drücken auf + Akk.",
+   "ko": "(버튼을) 누르다",
+   "ex": "Für Kinder von 6 bis 14 Jahren drücken Sie auf „Ermäßigt“, jüngere Kinder fahren kostenlos mit.",
+   "exko": "6세부터 14세까지의 어린이는 ‘할인’을 누르고, 그보다 어린 아이는 무료로 함께 탈 수 있어요."
+  },
+  {
+   "de": "noch einmal von vorn anfangen",
+   "ko": "처음부터 다시 시작하다",
+   "ex": "Wenn Sie noch nicht bezahlt haben, drücken Sie einfach auf „Abbrechen“ und fangen Sie noch einmal von vorn an.",
+   "exko": "아직 결제하지 않았다면 ‘취소’를 누르고 처음부터 다시 시작하면 돼요."
+  }
+ ]
+}

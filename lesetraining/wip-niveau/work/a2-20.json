@@ -1,0 +1,502 @@
+{
+ "id": "a2-20",
+ "level": "A2",
+ "no": 20,
+ "title": "Mach mit beim Frühjahrsputz!",
+ "titleKo": "봄맞이 대청소에 함께해요!",
+ "type": "Aufruf (Bürgerverein)",
+ "typeKo": "동네 모임 참여 안내문",
+ "intro": "동네 주민 모임이 공원 대청소에 함께할 사람을 찾는 안내문이에요.",
+ "focus": [
+  "4격 시간 표현",
+  "형용사 + 전치사",
+  "bei + 명사"
+ ],
+ "paragraphs": [
+  {
+   "style": "meta",
+   "de": "Liebe Nachbarinnen und Nachbarn,",
+   "ko": "이웃 여러분께"
+  },
+  {
+   "de": "jeden Frühling liegen auf den Wiesen im Stadtpark wieder Flaschen, Plastiktüten und Zigarettenkippen. Letztes Jahr haben 35 Freiwillige über 60 Müllsäcke gefüllt, und darauf sind wir sehr stolz. Dieses Jahr möchten wir noch mehr schaffen.",
+   "ko": "봄마다 시립 공원 풀밭에는 또 병과 비닐봉지, 담배꽁초가 널려 있어요. 작년에는 자원봉사자 35명이 쓰레기 자루를 60개 넘게 채웠고, 저희는 그 일이 정말 자랑스러워요. 올해는 더 많이 해내고 싶어요."
+  },
+  {
+   "de": "Der Frühjahrsputz findet nächsten Samstag, am 12. April, statt. Wir treffen uns um 9 Uhr am Spielplatz und arbeiten den ganzen Vormittag. Zur Belohnung gibt es um 13 Uhr für alle Helfer Gemüsesuppe und Kuchen im Gemeinschaftsgarten.",
+   "ko": "봄맞이 대청소는 다음 주 토요일, 4월 12일에 열려요. 9시에 놀이터에서 만나 오전 내내 일해요. 보상으로 13시에는 공동 텃밭에서 모든 도우미에게 채소 수프와 케이크를 드려요."
+  },
+  {
+   "style": "h",
+   "de": "Welche Aufgabe passt zu Ihnen?",
+   "ko": "어떤 일이 나에게 맞을까요?"
+  },
+  {
+   "de": "Wenn Sie gern draußen arbeiten, sammeln Sie in einer Gruppe Abfall, denn dafür brauchen wir die meisten Freiwilligen. Für Nachbarn, die nicht so fit sind, haben wir leichtere Aufgaben, zum Beispiel am Infostand oder bei der Kinderbetreuung. Viele Eltern sind froh über dieses Angebot, weil sie dann selbst mitmachen können.",
+   "ko": "밖에서 일하는 것을 좋아하시면 모둠으로 쓰레기를 주우시면 돼요. 이 일에 자원봉사자가 가장 많이 필요하거든요. 몸이 그다지 튼튼하지 않은 이웃을 위해서는 안내 부스나 아이 돌보기 같은 더 가벼운 일이 있어요. 많은 부모님이 이런 도움을 반가워하세요. 그러면 부모님도 직접 함께할 수 있으니까요."
+  },
+  {
+   "style": "h",
+   "de": "Was brauchen Sie?",
+   "ko": "무엇이 필요할까요?"
+  },
+  {
+   "de": "Handschuhe, Zangen und Säcke bekommen Sie von uns. Bitte bringen Sie aber Ihre eigene Tasse mit, denn bei einer Aktion für eine saubere Stadt möchten wir keine Plastikbecher benutzen.",
+   "ko": "장갑과 집게, 자루는 저희가 드려요. 하지만 각자 컵은 가져와 주세요. 깨끗한 도시를 위한 행사에서 플라스틱 컵을 쓰고 싶지 않거든요."
+  },
+  {
+   "de": "Wenn Sie mitmachen möchten, melden Sie sich bitte bis Mittwoch bei Ute Krämer an, Telefon 0761 48 22 30. Wir müssen nämlich wissen, wie viel Suppe wir kochen sollen.",
+   "ko": "함께하고 싶으시면 수요일까지 우테 크레머 씨에게 신청해 주세요. 전화번호는 0761 48 22 30이에요. 수프를 얼마나 끓여야 할지 알아야 하거든요."
+  },
+  {
+   "de": "Bei Regen findet der Frühjahrsputz übrigens eine Woche später statt.",
+   "ko": "참고로 비가 오면 봄맞이 대청소는 일주일 뒤에 열려요."
+  },
+  {
+   "style": "meta",
+   "de": "Viele Grüße, Ihr Bürgerverein Südstadt",
+   "ko": "쥐트슈타트 주민 모임 드림"
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Beim letzten Frühjahrsputz haben mehr als 30 Personen mitgemacht.",
+   "answer": 0,
+   "evidence": "Letztes Jahr haben 35 Freiwillige über 60 Müllsäcke gefüllt",
+   "pairs": [
+    [
+     "Letztes Jahr",
+     "Beim letzten Frühjahrsputz"
+    ],
+    [
+     "35 Freiwillige",
+     "mehr als 30 Personen"
+    ]
+   ],
+   "explain": "작년에는 자원봉사자(Freiwillige) 35명이 함께했어요. 35명은 30명보다 많으니까 맞는 문장이에요. mit|machen은 ‘함께하다, 참여하다’라는 뜻이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was passiert nach der Arbeit im Park?",
+   "options": [
+    "Alle Helfer werden zum Essen eingeladen.",
+    "Die Helfer pflanzen im Garten Gemüse an.",
+    "Der Verein verkauft dort Suppe und Kuchen."
+   ],
+   "answer": 0,
+   "evidence": "Zur Belohnung gibt es um 13 Uhr für alle Helfer Gemüsesuppe und Kuchen im Gemeinschaftsgarten.",
+   "pairs": [
+    [
+     "Zur Belohnung gibt es um 13 Uhr für alle Helfer Gemüsesuppe und Kuchen",
+     "Alle Helfer werden zum Essen eingeladen"
+    ]
+   ],
+   "explain": "오전 내내 일한 뒤 13시에 모든 도우미에게 보상으로(Zur Belohnung) 채소 수프와 케이크가 나와요. 정답은 이것을 ‘도우미들이 식사에 초대돼요’로 바꿔 말했어요. 텃밭은 음식을 먹는 장소일 뿐이고, 보상으로 주는 음식이니 판다는 말도 틀려요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Für wen sind die Aufgaben am Infostand gedacht?",
+   "options": [
+    "Für Leute, die erst am Nachmittag kommen.",
+    "Für Leute, die nicht schwer arbeiten können.",
+    "Für Leute, die schon letztes Jahr dabei waren."
+   ],
+   "answer": 1,
+   "evidence": "Für Nachbarn, die nicht so fit sind, haben wir leichtere Aufgaben",
+   "pairs": [
+    [
+     "nicht so fit",
+     "nicht schwer arbeiten können"
+    ],
+    [
+     "leichtere Aufgaben",
+     "die Aufgaben am Infostand"
+    ]
+   ],
+   "explain": "몸이 그다지 튼튼하지 않은(nicht so fit) 이웃에게는 안내 부스나 아이 돌보기 같은 더 가벼운 일(leichtere Aufgaben)이 있다고 해요. 그래서 힘든 일을 하기 어려운 사람을 위한 일이라고 추론할 수 있어요. 대청소는 오전에 하고, 작년에 참여했는지는 상관없어요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Die Helfer müssen eigene Handschuhe mitbringen.",
+   "answer": 1,
+   "evidence": "Handschuhe, Zangen und Säcke bekommen Sie von uns.",
+   "pairs": [
+    [
+     "bekommen Sie von uns",
+     "müssen eigene Handschuhe mitbringen"
+    ]
+   ],
+   "explain": "장갑과 집게, 자루는 모임에서 나눠 줘요(bekommen Sie von uns). 직접 가져올 것은 장갑이 아니라 자기 컵(eigene Tasse)이라서 틀린 문장이에요. eigene라는 낱말이 함정이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "meaning",
+   "q": "Was bedeutet „dafür brauchen wir die meisten Freiwilligen“?",
+   "options": [
+    "In der Gruppe arbeiten schon sehr viele Leute.",
+    "Diese Gruppe hilft den anderen Gruppen am meisten.",
+    "Für das Müllsammeln sucht man die meisten Leute."
+   ],
+   "answer": 2,
+   "evidence": "denn dafür brauchen wir die meisten Freiwilligen",
+   "pairs": [
+    [
+     "dafür",
+     "Für das Müllsammeln"
+    ],
+    [
+     "brauchen wir die meisten Freiwilligen",
+     "sucht man die meisten Leute"
+    ]
+   ],
+   "explain": "dafür는 바로 앞의 ‘모둠으로 쓰레기 줍기’를 가리켜요(sammeln Sie in einer Gruppe Abfall). 이 일에 자원봉사자가 가장 많이 필요하다는 말은 쓰레기 줍기에 가장 많은 사람을 찾는다는 뜻이에요. 이미 사람이 많다는 뜻도, 다른 모둠을 돕는다는 뜻도 아니에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Warum soll man eine eigene Tasse mitbringen?",
+   "options": [
+    "Weil es am Infostand dann einen billigeren Kaffee gibt.",
+    "Weil Einwegbecher wieder neuen Müll machen würden.",
+    "Weil man darin Suppe mit nach Hause nehmen kann."
+   ],
+   "answer": 1,
+   "evidence": "denn bei einer Aktion für eine saubere Stadt möchten wir keine Plastikbecher benutzen",
+   "pairs": [
+    [
+     "keine Plastikbecher",
+     "Einwegbecher"
+    ],
+    [
+     "eine saubere Stadt",
+     "neuen Müll"
+    ]
+   ],
+   "explain": "깨끗한 도시를 위한 행사에서 플라스틱 컵을 쓰고 싶지 않다고 해요(bei einer Aktion für eine saubere Stadt … keine Plastikbecher). 한 번 쓰고 버리는 컵(Einwegbecher)은 다시 쓰레기가 되니까 행사의 목적과 맞지 않는다고 추론할 수 있어요. 커피값이나 수프를 집에 가져간다는 말은 본문에 없어요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Wenn es am 12. April regnet, fällt der Frühjahrsputz dieses Jahr ganz aus.",
+   "answer": 1,
+   "evidence": "Bei Regen findet der Frühjahrsputz übrigens eine Woche später statt.",
+   "pairs": [
+    [
+     "findet der Frühjahrsputz übrigens eine Woche später statt",
+     "fällt der Frühjahrsputz dieses Jahr ganz aus"
+    ]
+   ],
+   "explain": "비가 오면 대청소를 취소하지(aus|fallen) 않고 일주일 뒤로 미뤄요(eine Woche später statt). 그래서 틀린 문장이에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "전치사 없이 쓰는 시간 표현 – 4격",
+   "term": "Temporalangaben im Akkusativ",
+   "explain": "letzt-(지난), nächst-(다음), dies-(이번), ganz-(내내)와 함께 쓰는 시간 표현은 전치사 없이 4격으로 써요. 그래서 남성 명사 앞에서는 -en이 붙어요(nächsten Samstag, den ganzen Vormittag). 중성 명사는 letztes Jahr, dieses Jahr처럼 1격과 모양이 같아요. 날짜에는 am(am 12. April), 시각에는 um(um 9 Uhr), 기한에는 bis(bis Mittwoch)를 써요.",
+   "pattern": "letzten · nächsten + 남성 / letztes · dieses + 중성 / den ganzen + 남성",
+   "examples": [
+    {
+     "de": "Dieses Jahr möchten wir noch mehr schaffen.",
+     "ko": "올해는 더 많이 해내고 싶어요.",
+     "mark": [
+      "Dieses Jahr"
+     ],
+     "parts": [
+      [
+       "Dieses Jahr",
+       "부사어(시간)"
+      ],
+      [
+       "möchten",
+       "동사"
+      ],
+      [
+       "wir",
+       "주어"
+      ],
+      [
+       "noch mehr",
+       "4격 목적어"
+      ],
+      [
+       "schaffen.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Der Frühjahrsputz findet nächsten Samstag, am 12. April, statt.",
+     "ko": "봄맞이 대청소는 다음 주 토요일, 4월 12일에 열려요.",
+     "mark": [
+      "nächsten Samstag",
+      "am 12. April"
+     ],
+     "parts": [
+      [
+       "Der Frühjahrsputz",
+       "주어"
+      ],
+      [
+       "findet",
+       "동사"
+      ],
+      [
+       "nächsten Samstag,",
+       "부사어(시간)"
+      ],
+      [
+       "am 12. April,",
+       "부사어(시간)"
+      ],
+      [
+       "statt.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Wir treffen uns um 9 Uhr am Spielplatz und arbeiten den ganzen Vormittag.",
+     "ko": "9시에 놀이터에서 만나 오전 내내 일해요.",
+     "mark": [
+      "um 9 Uhr",
+      "den ganzen Vormittag"
+     ]
+    }
+   ],
+   "tip": "am nächsten Samstag처럼 am을 붙여도 맞아요. 이때는 3격이지만 어미는 똑같이 -en이에요. bis Mittwoch는 ‘수요일까지’라는 기한이에요."
+  },
+  {
+   "title": "형용사 + 전치사 – stolz auf · froh über",
+   "term": "Adjektive mit Präposition",
+   "explain": "어떤 형용사는 정해진 전치사와 함께 써요. stolz auf + 4격은 ‘~이 자랑스럽다’, froh über + 4격은 ‘~이 기쁘다, 반갑다’라는 뜻이에요. 그래서 형용사와 전치사를 한 덩어리로 외워요. 전치사 뒤의 내용이 앞 문장에 있으면 darauf, darüber처럼 da(r)- + 전치사로 받아요(darauf sind wir stolz = 작년의 성과가 자랑스러워요).",
+   "pattern": "sein + stolz auf / froh über + 4격",
+   "examples": [
+    {
+     "de": "Letztes Jahr haben 35 Freiwillige über 60 Müllsäcke gefüllt, und darauf sind wir sehr stolz.",
+     "ko": "작년에는 자원봉사자 35명이 쓰레기 자루를 60개 넘게 채웠고, 저희는 그 일이 정말 자랑스러워요.",
+     "mark": [
+      "darauf sind wir sehr stolz"
+     ],
+     "parts": [
+      [
+       "Letztes Jahr",
+       "부사어(시간)"
+      ],
+      [
+       "haben",
+       "동사"
+      ],
+      [
+       "35 Freiwillige",
+       "주어"
+      ],
+      [
+       "über 60 Müllsäcke",
+       "4격 목적어"
+      ],
+      [
+       "gefüllt,",
+       "동사(끝)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "darauf",
+       "전치사 목적어"
+      ],
+      [
+       "sind",
+       "동사"
+      ],
+      [
+       "wir",
+       "주어"
+      ],
+      [
+       "sehr stolz.",
+       "보어"
+      ]
+     ]
+    },
+    {
+     "de": "Viele Eltern sind froh über dieses Angebot, weil sie dann selbst mitmachen können.",
+     "ko": "많은 부모님이 이런 도움을 반가워하세요. 그러면 부모님도 직접 함께할 수 있으니까요.",
+     "mark": [
+      "froh über dieses Angebot"
+     ],
+     "parts": [
+      [
+       "Viele Eltern",
+       "주어"
+      ],
+      [
+       "sind",
+       "동사"
+      ],
+      [
+       "froh",
+       "보어"
+      ],
+      [
+       "über dieses Angebot,",
+       "전치사 목적어"
+      ],
+      [
+       "weil sie dann selbst mitmachen können.",
+       "종속절"
+      ]
+     ]
+    }
+   ],
+   "tip": "전치사는 형용사마다 달라서 함께 외워야 해요: stolz auf, froh über, zufrieden mit. 전치사 뒤의 격도 함께 기억하세요(auf · über + 4격, mit + 3격)."
+  },
+  {
+   "title": "bei + 명사 – ‘~할 때, ~하면’",
+   "term": "Die Präposition bei: Situation und Bedingung",
+   "explain": "bei는 3격과 함께 쓰는 전치사예요. 장소나 사람 말고도 ‘어떤 상황에서, ~할 때’라는 뜻으로 자주 써요. bei Regen은 ‘비가 오면(wenn es regnet)’, bei einer Aktion은 ‘행사를 할 때’라는 뜻이에요. bei der Kinderbetreuung처럼 일이나 활동 앞에 쓰면 ‘그 일에서, 그 일을 맡아서’라는 뜻이 돼요. bei + 명사는 wenn 문장보다 짧아서 공고문과 안내문에 많이 나와요.",
+   "pattern": "bei + (관사) + 명사(3격) = wenn … / bei der Arbeit",
+   "examples": [
+    {
+     "de": "Bei Regen findet der Frühjahrsputz übrigens eine Woche später statt.",
+     "ko": "참고로 비가 오면 봄맞이 대청소는 일주일 뒤에 열려요.",
+     "mark": [
+      "Bei Regen"
+     ],
+     "parts": [
+      [
+       "Bei Regen",
+       "부사어"
+      ],
+      [
+       "findet",
+       "동사"
+      ],
+      [
+       "der Frühjahrsputz",
+       "주어"
+      ],
+      [
+       "übrigens",
+       "접속부사"
+      ],
+      [
+       "eine Woche später",
+       "부사어(시간)"
+      ],
+      [
+       "statt.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Bitte bringen Sie aber Ihre eigene Tasse mit, denn bei einer Aktion für eine saubere Stadt möchten wir keine Plastikbecher benutzen.",
+     "ko": "하지만 각자 컵은 가져와 주세요. 깨끗한 도시를 위한 행사에서 플라스틱 컵을 쓰고 싶지 않거든요.",
+     "mark": [
+      "bei einer Aktion für eine saubere Stadt"
+     ]
+    },
+    {
+     "de": "Für Nachbarn, die nicht so fit sind, haben wir leichtere Aufgaben, zum Beispiel am Infostand oder bei der Kinderbetreuung.",
+     "ko": "몸이 그다지 튼튼하지 않은 이웃을 위해서는 안내 부스나 아이 돌보기 같은 더 가벼운 일이 있어요.",
+     "mark": [
+      "bei der Kinderbetreuung"
+     ]
+    }
+   ],
+   "tip": "bei Regen, bei Fragen처럼 관사 없이 쓰는 경우가 많아요. bei + dem은 beim으로 줄여 써요(beim Frühjahrsputz)."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "der Frühjahrsputz (Sg.)",
+   "ko": "봄맞이 대청소"
+  },
+  {
+   "de": "der Bürgerverein, -e",
+   "ko": "주민 모임, 주민 협회"
+  },
+  {
+   "de": "die Wiese, -n",
+   "ko": "풀밭, 잔디밭"
+  },
+  {
+   "de": "die Plastiktüte, -n",
+   "ko": "비닐봉지"
+  },
+  {
+   "de": "die Zigarettenkippe, -n",
+   "ko": "담배꽁초"
+  },
+  {
+   "de": "der/die Freiwillige, -n",
+   "ko": "자원봉사자"
+  },
+  {
+   "de": "der Müllsack, -¨e",
+   "ko": "쓰레기 자루, 쓰레기봉투"
+  },
+  {
+   "de": "stolz auf + Akk.",
+   "ko": "~이 자랑스러운"
+  },
+  {
+   "de": "froh über + Akk.",
+   "ko": "~이 기쁜, 반가운"
+  },
+  {
+   "de": "die Belohnung, -en",
+   "ko": "보상, 상"
+  },
+  {
+   "de": "der Gemeinschaftsgarten, -¨",
+   "ko": "공동 텃밭"
+  },
+  {
+   "de": "die Kinderbetreuung (Sg.)",
+   "ko": "아이 돌봄"
+  },
+  {
+   "de": "die Zange, -n",
+   "ko": "집게"
+  },
+  {
+   "de": "der Plastikbecher, -",
+   "ko": "플라스틱 컵"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "zur Belohnung",
+   "ko": "보상으로, 수고한 대가로",
+   "ex": "Zur Belohnung gibt es um 13 Uhr für alle Helfer Gemüsesuppe und Kuchen im Gemeinschaftsgarten.",
+   "exko": "보상으로 13시에는 공동 텃밭에서 모든 도우미에게 채소 수프와 케이크를 드려요."
+  },
+  {
+   "de": "nicht so fit sein",
+   "ko": "몸 상태가 그다지 좋지 않다",
+   "ex": "Für Nachbarn, die nicht so fit sind, haben wir leichtere Aufgaben, zum Beispiel am Infostand oder bei der Kinderbetreuung.",
+   "exko": "몸이 그다지 튼튼하지 않은 이웃을 위해서는 안내 부스나 아이 돌보기 같은 더 가벼운 일이 있어요."
+  },
+  {
+   "de": "sich bei jemandem an|melden",
+   "ko": "~에게 신청하다",
+   "ex": "Wenn Sie mitmachen möchten, melden Sie sich bitte bis Mittwoch bei Ute Krämer an, Telefon 0761 48 22 30.",
+   "exko": "함께하고 싶으시면 수요일까지 우테 크레머 씨에게 신청해 주세요. 전화번호는 0761 48 22 30이에요."
+  },
+  {
+   "de": "bei Regen",
+   "ko": "비가 오면",
+   "ex": "Bei Regen findet der Frühjahrsputz übrigens eine Woche später statt.",
+   "exko": "참고로 비가 오면 봄맞이 대청소는 일주일 뒤에 열려요."
+  }
+ ]
+}

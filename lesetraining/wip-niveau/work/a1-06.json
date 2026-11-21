@@ -10,7 +10,7 @@
  "focus": [
   "Sie 명령형",
   "man + 화법조동사",
-  "1번 자리의 4격 목적어"
+  "‘~마다’ jeder · pro"
  ],
  "paragraphs": [
   {
@@ -29,7 +29,7 @@
   },
   {
    "de": "Der Ausweis kostet 15 Euro pro Jahr, aber Kinder und Schüler zahlen nichts. Bringen Sie bitte Ihren Pass mit, dann ist Ihr Ausweis sofort fertig.",
-   "ko": "회원증은 1년에 15유로이지만, 어린이와 초·중·고등학생은 돈을 내지 않습니다. 여권을 가져오시기 바랍니다. 그러면 회원증이 바로 준비됩니다."
+   "ko": "회원증은 1년에 15유로이지만, 어린이와 초·중·고등학생은 돈을 내지 않습니다. 여권을 가져오시기 바랍니다. 그러면 회원증이 바로 발급됩니다."
   },
   {
    "style": "h",
@@ -65,7 +65,7 @@
    "kind": "inference",
    "q": "Frau Roth arbeitet von Dienstag bis Samstag jeden Tag bis 18 Uhr. Wann kann sie in die Bibliothek gehen?",
    "options": [
-    "am Montag, denn sie hat frei",
+    "am Sonntag, denn sie hat frei",
     "am Freitag nach der Arbeit",
     "am Samstag nach der Arbeit"
    ],
@@ -82,10 +82,10 @@
     ],
     [
      "Am Sonntag und am Montag ist sie geschlossen",
-     "am Montag, denn sie hat frei"
+     "am Sonntag, denn sie hat frei"
     ]
    ],
-   "explain": "도서관은 화요일부터 금요일까지는 19시까지, 토요일에는 14시까지만 열어요. 로트 씨는 매일 18시까지 일해요. 그러니까 금요일에는 일이 끝난 뒤에도 한 시간 동안 도서관에 갈 수 있어요. 토요일 18시에는 도서관이 이미 닫혀 있어요. 월요일은 로트 씨가 쉬는 날이지만 도서관도 문을 닫아요."
+   "explain": "도서관은 화요일부터 금요일까지는 19시까지, 토요일에는 14시까지만 열어요. 로트 씨는 화요일부터 토요일까지 매일 18시까지 일해요. 그러니까 금요일에는 일이 끝난 뒤에도 19시까지 한 시간 동안 도서관에 갈 수 있어요. 토요일 18시에는 도서관이 이미 닫혀 있어요. 일요일은 로트 씨가 쉬는 날이지만 도서관도 문을 닫아요."
   },
   {
    "type": "mc",
@@ -126,7 +126,7 @@
      "zu Hause am Computer"
     ]
    ],
-   "explain": "본문에서 대출은 모두 온라인으로 연장할 수 있다고 해요(verlängern kann man alles online). 문제는 verlängern을 '책을 가지고 있을 시간을 더 받는다'(Mehr Zeit für ein Buch bekommt man)로, online을 '집에서 컴퓨터로'(zu Hause am Computer)로 바꿔 말했어요. 그래서 맞는 문장이에요."
+   "explain": "본문에서 대출은 모두 온라인으로 연장할 수 있다고 해요(verlängern kann man alles online). 문제는 verlängern을 Mehr Zeit für ein Buch bekommt man(책을 가지고 있을 시간을 더 받아요)으로, online을 zu Hause am Computer(집에서 컴퓨터로)로 바꿔 말했어요. 그래서 맞는 문장이에요."
   },
   {
    "type": "mc",
@@ -201,7 +201,7 @@
    "examples": [
     {
      "de": "Bringen Sie bitte Ihren Pass mit, dann ist Ihr Ausweis sofort fertig.",
-     "ko": "여권을 가져오시기 바랍니다. 그러면 회원증이 바로 준비됩니다.",
+     "ko": "여권을 가져오시기 바랍니다. 그러면 회원증이 바로 발급됩니다.",
      "mark": [
       "Bringen Sie",
       "mit"
@@ -301,7 +301,7 @@
   {
    "title": "man + 화법조동사 – 규칙 말하기",
    "term": "man + Modalverb (können, dürfen, müssen)",
-   "explain": "man은 '사람들, 누구나'라는 뜻의 주어예요. 안내문에서 모든 사람에게 해당하는 규칙을 말할 때 자주 써요. 동사는 er/sie/es와 같은 형태예요(man kann, man darf, man muss). 화법조동사는 2번 자리에, 동사원형은 문장 끝에 와요. kann은 '할 수 있어요', darf는 '해도 돼요', muss는 '해야 해요'라는 뜻이고, darf … nicht는 '하면 안 돼요'라는 금지예요. 동사원형을 강조할 때는 1번 자리에 둘 수도 있어요(Essen darf man …).",
+   "explain": "man은 '사람들, 누구나'라는 뜻의 주어예요. 안내문에서 모든 사람에게 해당하는 규칙을 말할 때 자주 써요. 동사는 er/sie/es와 같은 형태예요(man kann, man darf, man muss). 화법조동사는 2번 자리에, 동사원형은 문장 끝에 와요. kann은 '할 수 있어요', darf는 '해도 돼요', muss는 '해야 해요'라는 뜻이고, darf … nicht는 '하면 안 돼요'라는 금지예요. 1번 자리에 다른 말이 오면 man은 화법조동사 바로 뒤에 와요(Bücher kann man …). 강조하고 싶으면 동사원형을 1번 자리에 둘 수도 있어요(Essen darf man …).",
    "pattern": "man + kann / darf / muss + … + 동사원형(문장 끝)",
    "examples": [
     {
@@ -366,52 +366,85 @@
       "nicht",
       "trinken"
      ]
-    }
-   ],
-   "tip": "man darf nicht는 '하면 안 돼요'(금지)이고, man muss nicht는 '할 필요가 없어요'라는 뜻이에요. man(사람들)과 Mann(남자)은 다른 낱말이에요."
-  },
-  {
-   "title": "1번 자리의 4격 목적어",
-   "term": "Akkusativobjekt auf Position 1",
-   "explain": "독일어 평서문에서 동사는 2번 자리에 와요. 그런데 1번 자리에 주어만 오는 것은 아니에요. 4격 목적어가 1번 자리에 오면 주어는 동사 바로 뒤로 가요(Den Rückgabeautomaten finden Sie …). 이때 주어는 관사(den = 4격)와 동사 형태(finden – Sie)를 보고 찾아요. 안내문에서는 중요한 낱말을 앞에 두려고 이런 어순을 자주 써요.",
-   "pattern": "4격 목적어 + 동사 + 주어 + …",
-   "examples": [
-    {
-     "de": "Den Rückgabeautomaten finden Sie rechts neben dem Eingang.",
-     "ko": "반납기는 입구 오른쪽 옆에 있습니다.",
-     "mark": [
-      "Den Rückgabeautomaten",
-      "finden Sie"
-     ],
-     "parts": [
-      [
-       "Den Rückgabeautomaten",
-       "4격 목적어"
-      ],
-      [
-       "finden",
-       "동사"
-      ],
-      [
-       "Sie",
-       "주어"
-      ],
-      [
-       "rechts neben dem Eingang.",
-       "부사어(장소)"
-      ]
-     ]
     },
     {
      "de": "Bücher kann man vier Wochen behalten, DVDs nur eine Woche, und verlängern kann man alles online.",
      "ko": "책은 4주 동안, DVD는 1주일 동안만 가지고 있을 수 있으며, 연장은 모두 온라인으로 할 수 있습니다.",
      "mark": [
       "Bücher kann man",
-      "DVDs"
+      "behalten",
+      "verlängern kann man"
      ]
     }
    ],
-   "tip": "1번 자리의 명사를 바로 주어라고 생각하면 안 돼요. 남성 명사는 4격 관사 den, einen으로 알 수 있어요. 여성·중성·복수 명사는 1격과 4격 모양이 같아서 동사 형태와 뜻을 함께 봐요(Bücher kann man …: kann에 맞는 주어는 man이에요). DVDs nur eine Woche는 DVDs kann man nur eine Woche behalten을 줄인 말이에요."
+   "tip": "man darf nicht는 '하면 안 돼요'(금지)이고, man muss nicht는 '할 필요가 없어요'라는 뜻이에요. man(사람들)과 Mann(남자)은 다른 낱말이에요."
+  },
+  {
+   "title": "jeder · pro – ‘~마다, ~당’ 말하기",
+   "term": "jeder, jede, jedes und pro",
+   "explain": "jeder는 '모든 ~, ~마다'라는 뜻이고, 정관사처럼 명사의 성에 따라 끝이 바뀌어요: der Tag → jeder Tag, die DVD → jede DVD, das Buch → jedes Buch. jeder는 단수 명사와 함께 써요. 그래서 동사도 단수형이 돼요(jedes Buch … kostet). jeder가 붙은 명사 두 개를 und로 이어도 보통 단수 동사를 써요(jedes Buch und jede DVD kostet …). pro는 '~당, ~마다'라는 뜻이고, 뒤에 관사 없이 명사를 바로 써요(15 Euro pro Jahr, einen Euro pro Woche). '하루에'는 am Tag로도 말해요(24 Stunden am Tag).",
+   "pattern": "jeder / jede / jedes + 단수 명사 · 숫자 + 단위 + pro + 명사(관사 없음)",
+   "examples": [
+    {
+     "de": "Der Ausweis kostet 15 Euro pro Jahr, aber Kinder und Schüler zahlen nichts.",
+     "ko": "회원증은 1년에 15유로이지만, 어린이와 초·중·고등학생은 돈을 내지 않습니다.",
+     "mark": [
+      "15 Euro pro Jahr"
+     ],
+     "parts": [
+      [
+       "Der Ausweis",
+       "주어"
+      ],
+      [
+       "kostet",
+       "동사"
+      ],
+      [
+       "15 Euro",
+       "4격 목적어"
+      ],
+      [
+       "pro Jahr,",
+       "부사어(빈도)"
+      ],
+      [
+       "aber",
+       "접속사"
+      ],
+      [
+       "Kinder und Schüler",
+       "주어"
+      ],
+      [
+       "zahlen",
+       "동사"
+      ],
+      [
+       "nichts.",
+       "4격 목적어"
+      ]
+     ]
+    },
+    {
+     "de": "Man muss aber alles pünktlich zurückgeben, sonst kostet jedes Buch und jede DVD einen Euro pro Woche.",
+     "ko": "하지만 모두 제때 반납해야 합니다. 그렇지 않으면 책과 DVD 한 개마다 1주일에 1유로를 내야 합니다.",
+     "mark": [
+      "jedes Buch",
+      "jede DVD",
+      "pro Woche"
+     ]
+    },
+    {
+     "de": "Er ist 24 Stunden am Tag und sieben Tage pro Woche für Sie da.",
+     "ko": "반납기는 하루 24시간, 일주일 내내 이용하실 수 있습니다.",
+     "mark": [
+      "am Tag",
+      "pro Woche"
+     ]
+    }
+   ],
+   "tip": "jeder의 끝은 der · die · das의 끝과 같아요. 남성 4격은 den처럼 jeden이에요(jeden Tag). 복수 명사에는 jeder를 쓰지 않고 alle를 써요(alle Bücher). pro Jahr는 im Jahr로, pro Woche는 in der Woche로도 말할 수 있어요."
   }
  ],
  "vocab": [

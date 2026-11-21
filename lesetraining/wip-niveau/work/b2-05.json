@@ -29,7 +29,7 @@
   },
   {
    "de": "Die größte Stärke des Romans liegt in der Genauigkeit seiner Sprache. Reling schreibt knapp und präzise, kein Satz ist überflüssig, kein Adjektiv zufällig gewählt. Während viele Autorinnen und Autoren ihre Figuren in ausufernden inneren Monologen erklären, lässt Reling die Dinge sprechen. Eine verrostete Fahrradklingel, das Pfeifen des Windes in den Dachrinnen, das von der Meeresluft auf der Fensterbank hinterlassene Salz – solche Beobachtungen verraten mehr über Hannas Verfassung als jede Erklärung. So entsteht eine Atmosphäre von seltener Intensität, die den Leser nicht mehr loslässt; man riecht dieses Dorf, man hört es.",
-   "ko": "이 소설의 가장 큰 강점은 언어의 정확성에 있습니다. 렐링은 간결하고 정밀하게 씁니다. 불필요한 문장이 하나도 없고, 아무렇게나 고른 형용사도 없습니다. 많은 작가가 장황한 내면 독백으로 인물을 설명하는 반면에, 렐링은 사물이 말하게 합니다. 녹슨 자전거 벨, 빗물받이에서 휘파람처럼 우는 바람 소리, 바닷바람이 창턱에 남긴 소금 – 이런 관찰이 어떤 설명보다 한나의 마음 상태를 더 많이 드러냅니다. 그렇게 보기 드물게 강렬한 분위기가 생겨나고, 이 분위기는 독자를 놓아주지 않습니다. 이 마을의 냄새가 나고 소리가 들리는 것 같습니다."
+   "ko": "이 소설의 가장 큰 강점은 언어의 정확성에 있습니다. 렐링은 간결하고 정밀하게 씁니다. 불필요한 문장이 하나도 없고, 아무렇게나 고른 형용사도 없습니다. 많은 작가가 장황한 내면 독백으로 인물을 설명하는 반면에, 렐링은 사물이 말하게 합니다. 녹슨 자전거 벨, 빗물받이에서 바람이 내는 휘파람 소리, 바닷바람이 창턱에 남긴 소금 – 이런 관찰이 어떤 설명보다 한나의 마음 상태를 더 많이 드러냅니다. 그렇게 보기 드물게 강렬한 분위기가 생겨나고, 이 분위기는 독자를 놓아주지 않습니다. 이 마을의 냄새가 나고 소리가 들리는 것 같습니다."
   },
   {
    "de": "Trotz dieser Qualitäten leidet der Roman unter einem spürbaren Durchhänger. Zwar ist das Erzähltempo im ersten Drittel genau richtig bemessen, im Mittelteil jedoch zieht sich die Handlung – Hanna sortiert Briefe, Hanna geht am Strand spazieren, Hanna sortiert wieder Briefe. Diese Wiederholung ist vermutlich beabsichtigt, weil der Leser den Stillstand der Figur spüren soll, doch sie verlangt ihm einiges an Geduld ab. Hinzu kommt, dass die Nebenfiguren auffallend blass bleiben. Die Hauptfigur ist in jeder Szene greifbar, wohingegen Rieke und Ole eher Stichwortgeber als eigenständige Figuren sind. Was die beiden Nebenfiguren jenseits ihrer Begegnungen mit Hanna bewegt, erfährt der Leser nicht. Eine Straffung des Mittelteils durch ein strengeres Lektorat hätte dem Roman gutgetan.",
@@ -93,20 +93,20 @@
   {
    "type": "rfn",
    "kind": "detail",
-   "q": "Am Ende des Romans entschließt sich Hanna, nach Hamburg zurückzukehren.",
+   "q": "Am Ende des Romans erfährt der Leser, dass Hanna nach Hamburg zurückkehrt.",
    "answer": 1,
    "evidence": "Die Entscheidung, ob die Übersetzerin im Dorf bleibt oder nach Hamburg zurückkehrt, lässt der Roman bewusst offen.",
    "pairs": [
     [
-     "ob die Übersetzerin im Dorf bleibt oder nach Hamburg zurückkehrt",
-     "nach Hamburg zurückzukehren"
+     "lässt der Roman bewusst offen",
+     "erfährt der Leser"
     ],
     [
-     "lässt der Roman bewusst offen",
-     "entschließt sich Hanna"
+     "ob die Übersetzerin im Dorf bleibt oder nach Hamburg zurückkehrt",
+     "dass Hanna nach Hamburg zurückkehrt"
     ]
    ],
-   "explain": "소설은 한나가 마을에 남을지 함부르크로 돌아갈지에 대한 결정을 ‘의도적으로 열어 둔다(lässt … bewusst offen)’고 해요. 결말에서 결정이 내려지지 않는다는 정보가 본문에 있으므로, 돌아가기로 마음먹는다는 진술은 ‘언급 없음’이 아니라 ‘아니요’예요."
+   "explain": "소설은 한나가 마을에 남을지 함부르크로 돌아갈지에 대한 결정을 ‘의도적으로 열어 둔다(lässt … bewusst offen)’고 해요. 그러니 결말에서 독자는 한나가 어느 쪽을 택하는지 알 수 없어요. 결말이 열려 있다는 정보가 본문에 있으므로, 독자가 한나의 귀향을 알게 된다는 진술은 ‘언급 없음’이 아니라 ‘아니요’예요."
   },
   {
    "type": "mc",
@@ -156,7 +156,7 @@
      "wirkt dadurch langatmig"
     ]
    ],
-   "explain": "재귀동사 sich ziehen은 ‘(지루하게) 늘어지다’라는 뜻이에요. 바로 뒤에 편지 정리와 산책이 되풀이되는 장면이 나오는 것도 이야기가 앞으로 나아가지 않는다는 근거예요. 독자를 사로잡는다는 뜻이나 장소가 바뀐다는 뜻이 아니에요."
+   "explain": "여기서 재귀동사 sich ziehen은 ‘(지루하게) 늘어지다’라는 뜻이에요. 바로 뒤에 편지 정리와 산책이 되풀이되는 장면이 나오는 것도 이야기가 앞으로 나아가지 않는다는 근거예요. 독자를 사로잡는다는 뜻이나 장소가 바뀐다는 뜻이 아니에요."
   },
   {
    "type": "mc",
@@ -212,7 +212,7 @@
      "mit den besten deutschsprachigen Büchern des Jahres mithalten"
     ]
    ],
-   "explain": "마지막 3분의 1은 올해 독일어권 문학이 내놓은 작품 가운데 최고 수준에 속한다고 해요. 이것을 ‘올해 최고의 독일어 책들과 어깨를 나란히 한다(mithalten)’로 바꿔 말했어요. 리케와 올레는 희미하게 남는다(blass bleiben)고 했으니 나중에 독자적인 인물이 된다는 말은 맞지 않아요. 마지막 부분이 처음 3분의 1보다 못하다는 말도 ‘최고 수준’이라는 평가와 반대예요."
+   "explain": "마지막 3분의 1은 올해 독일어권 문학이 내놓은 작품 가운데 최고 수준에 속한다고 해요. 이것을 ‘올해 최고의 독일어 책들과 어깨를 나란히 한다(mithalten)’로 바꿔 말했어요. 주변 인물은 흐릿하게 남고(blass bleiben), 리케와 올레가 한나와의 만남 밖에서 무엇을 마음에 품고 사는지 독자는 알 수 없다고 했으니 마지막 부분에서 독자적인 인물이 된다는 말은 맞지 않아요. 마지막 부분이 처음 3분의 1보다 못하다는 말도 ‘최고 수준’이라는 평가와 반대예요."
   },
   {
    "type": "mc",
@@ -242,7 +242,7 @@
   {
    "title": "양보 접속어 – 기대와 반대되는 결과",
    "term": "Konzessive Konnektoren (obgleich, zwar … jedoch, trotz, dennoch)",
-   "explain": "양보는 앞의 내용에서 기대되는 결과와 반대되는 일이 일어나는 관계예요. 독일어에서는 네 가지 방식으로 표현해요. 종속접속사 obwohl과 obgleich는 동사를 종속절 끝으로 보내요. obgleich는 obwohl과 뜻이 같고 주로 글말에서 써요. 접속부사 dennoch와 trotzdem이 1번 자리에 오면 바로 뒤에 동사가 와요. zwar는 앞 절에서 어떤 사실을 일단 인정하고, 뒤 절의 aber, jedoch, doch가 그와 반대되는 내용을 이끌어요. 전치사 trotz는 2격 명사와 함께 쓰여 양보의 내용을 명사구로 줄여요.",
+   "explain": "양보는 앞의 내용에서 기대되는 결과와 반대되는 일이 일어나는 관계예요. 이 글에는 양보를 나타내는 방식이 네 가지 나와요. 종속접속사 obwohl과 obgleich는 동사를 종속절 끝으로 보내요. obgleich는 obwohl과 뜻이 같고 주로 글말에서 써요. 접속부사 dennoch와 trotzdem이 1번 자리에 오면 바로 뒤에 동사가 와요. zwar는 앞 절에서 어떤 사실을 일단 인정하고, 뒤 절의 aber, jedoch, doch가 그와 반대되는 내용을 이끌어요. 전치사 trotz는 2격 명사와 함께 쓰여 양보의 내용을 명사구로 줄여요.",
    "pattern": "…, obgleich + … + 동사(끝) · Dennoch + 동사 + … · Zwar + 동사 …, … jedoch … · trotz + 2격",
    "examples": [
     {
@@ -395,7 +395,7 @@
     },
     {
      "de": "Eine verrostete Fahrradklingel, das Pfeifen des Windes in den Dachrinnen, das von der Meeresluft auf der Fensterbank hinterlassene Salz – solche Beobachtungen verraten mehr über Hannas Verfassung als jede Erklärung.",
-     "ko": "녹슨 자전거 벨, 빗물받이에서 휘파람처럼 우는 바람 소리, 바닷바람이 창턱에 남긴 소금 – 이런 관찰이 어떤 설명보다 한나의 마음 상태를 더 많이 드러냅니다.",
+     "ko": "녹슨 자전거 벨, 빗물받이에서 바람이 내는 휘파람 소리, 바닷바람이 창턱에 남긴 소금 – 이런 관찰이 어떤 설명보다 한나의 마음 상태를 더 많이 드러냅니다.",
      "mark": [
       "mehr über Hannas Verfassung als jede Erklärung"
      ],
@@ -456,12 +456,8 @@
        "주어"
       ],
       [
-       "deren Haus",
+       "deren Haus in einem abgelegenen Fischerdorf an der Ostsee,",
        "4격 목적어"
-      ],
-      [
-       "in einem abgelegenen Fischerdorf an der Ostsee,",
-       "부사어(장소)"
       ],
       [
        "jenem Dorf,",

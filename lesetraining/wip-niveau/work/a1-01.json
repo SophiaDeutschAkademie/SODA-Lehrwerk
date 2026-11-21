@@ -56,7 +56,7 @@
      "kommt aus Korea"
     ]
    ],
-   "explain": "지우 씨는 'komme aus Busan(부산에서 왔어요)'이라고 하고, 'studiere hier Architektur(여기서 건축을 공부해요)'라고 해요. 부산은 한국의 도시이고, 대학에서 공부하는 여자는 Studentin이에요. 본문의 두 부분을 다른 말로 바꿔 한 문장으로 묶었으니까 맞는 내용이에요."
+   "explain": "지우 씨는 'komme aus Busan(부산에서 왔어요)'이라고 하고, 모국어도 한국어(Koreanisch)라고 해요. 또 'studiere hier Architektur(여기서 건축을 공부해요)'라고 해요. 부산은 한국의 도시이고, 대학에서 공부하는 사람은 Student(여자는 Studentin)예요. 본문의 두 부분을 다른 말로 바꿔 한 문장으로 묶었으니까 맞는 내용이에요."
   },
   {
    "type": "mc",
@@ -116,7 +116,7 @@
      "für jede Sprache"
     ]
    ],
-   "explain": "본문에 'Wir machen zuerst eine Stunde Koreanisch und dann eine Stunde Deutsch.(먼저 한 시간은 한국어를 하고, 그다음 한 시간은 독일어를 해요.)'라고 나와요. 두 언어를 한 시간(60 Minuten)씩 하니까 세 번째가 정답이에요. 첫 번째는 독일어만 두 시간이라서 틀리고, 두 번째는 순서가 반대예요. 먼저 하는 언어는 한국어예요."
+   "explain": "본문에 'Wir machen zuerst eine Stunde Koreanisch und dann eine Stunde Deutsch.(먼저 한 시간은 한국어를 하고, 그다음 한 시간은 독일어를 해요.)'라고 나와요. 두 언어를 한 시간(60 Minuten)씩 하니까 'für jede Sprache 60 Minuten'이 정답이에요. 'zwei Stunden nur Deutsch'는 독일어만 두 시간이라서 틀리고, 'erst Deutsch, dann Koreanisch'는 순서가 반대예요. 먼저 하는 언어는 한국어예요."
   },
   {
    "type": "rf",
@@ -135,16 +135,16 @@
   {
    "type": "rf",
    "kind": "intent",
-   "q": "Jiwoo schreibt den Text, denn sie möchte mit einer Person Deutsch üben.",
+   "q": "Jiwoo schreibt den Text, denn sie möchte mit jemandem Deutsch üben.",
    "answer": 0,
    "evidence": "Jetzt suche ich eine Tandempartnerin oder einen Tandempartner.",
    "pairs": [
     [
      "Jetzt suche ich eine Tandempartnerin oder einen Tandempartner.",
-     "möchte mit einer Person Deutsch üben"
+     "möchte mit jemandem Deutsch üben"
     ]
    ],
-   "explain": "지우 씨는 독일어 실력이 아직 좋지 않다고 하고, 'Jetzt suche ich eine Tandempartnerin oder einen Tandempartner.(지금 탄뎀 파트너를 찾고 있어요.)'라고 해요. 탄뎀에서는 한 시간 동안 독일어를 하니까, 이 글을 쓴 목적은 다른 사람과 독일어를 연습하는 거예요. 그래서 맞는 내용이에요."
+   "explain": "지우 씨는 독일어 실력이 아직 좋지 않다고 하고, 'Jetzt suche ich eine Tandempartnerin oder einen Tandempartner.(지금 탄뎀 파트너를 찾고 있어요.)'라고 해요. 탄뎀에서는 한 시간 동안 독일어를 하니까, 이 글을 쓴 목적은 누군가와 함께 독일어를 연습하는 거예요. 그래서 맞는 내용이에요."
   }
  ],
  "grammar": [
@@ -438,7 +438,7 @@
      ]
     }
    ],
-   "tip": "dich, mir 같은 대명사 목적어는 시간 표현보다 앞에 와요(möchte dich einmal pro Woche …). 시간 표현을 1번 자리로 옮길 수도 있어요: Am Wochenende spiele ich im Park Fußball."
+   "tip": "dich, mir 같은 대명사 목적어는 보통 시간 표현보다 앞에 와요(möchte dich einmal pro Woche …). 시간 표현을 1번 자리로 옮길 수도 있어요: Am Wochenende spiele ich im Park Fußball."
   }
  ],
  "vocab": [

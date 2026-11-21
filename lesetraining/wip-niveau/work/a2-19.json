@@ -1,0 +1,582 @@
+{
+ "id": "a2-19",
+ "level": "A2",
+ "no": 19,
+ "title": "Achtung, eine Durchsage!",
+ "titleKo": "안내 말씀 드립니다",
+ "type": "Durchsagen",
+ "typeKo": "안내 방송",
+ "intro": "기차역과 열차 안에서 나오는 짧은 안내 방송 다섯 개를 읽어요.",
+ "focus": [
+  "현재형 미래",
+  "의문문 + dann",
+  "aus … Gründen"
+ ],
+ "paragraphs": [
+  {
+   "style": "h",
+   "de": "Erfurt Hauptbahnhof, Gleis 3 · 14:20",
+   "ko": "에르푸르트 중앙역 3번 승강장 · 14:20"
+  },
+  {
+   "de": "Achtung an Gleis 3: Aus technischen Gründen fährt der Regionalexpress nach Jena, Abfahrt 14:32 Uhr, heute nicht von Gleis 3, sondern von Gleis 5 ab. Bitte beachten Sie diese Gleisänderung.",
+   "ko": "3번 승강장 승객 여러분께 안내 말씀 드립니다. 14시 32분에 출발하는 예나행 지역 급행열차는 오늘 기술적인 이유로 3번이 아닌 5번 승강장에서 출발합니다. 승강장 변경에 유의해 주십시오."
+  },
+  {
+   "style": "h",
+   "de": "Gotha, Gleis 1 · 15:05",
+   "ko": "고타역 1번 승강장 · 15:05"
+  },
+  {
+   "de": "Der Intercity nach Frankfurt, Abfahrt 15:16 Uhr, hat heute etwa 25 Minuten Verspätung. Grund dafür ist ein Unwetter, denn bei starkem Sturm dürfen alle Züge auf dieser Strecke nur langsam fahren. Wir bitten um Ihr Verständnis.",
+   "ko": "15시 16분에 출발하는 프랑크푸르트행 인터시티 열차는 오늘 약 25분 늦어집니다. 악천후 때문입니다. 폭풍이 강할 때는 이 노선의 모든 열차가 천천히 달려야 합니다. 양해 부탁드립니다."
+  },
+  {
+   "style": "h",
+   "de": "Im Zug nach Gera · 16:05",
+   "ko": "게라행 열차 안 · 16:05"
+  },
+  {
+   "de": "Sehr geehrte Fahrgäste, in wenigen Minuten erreichen wir Weimar, und dort wird der Zug geteilt. Nur die drei vorderen Wagen fahren weiter nach Gera. Fahren Sie nach Gera und sitzen Sie im vierten oder fünften Wagen? Dann steigen Sie bitte in Weimar aus und wechseln Sie in die vorderen Wagen.",
+   "ko": "승객 여러분, 우리 열차는 잠시 후 바이마르역에 도착하며, 그곳에서 열차를 나누어 운행합니다. 앞쪽 세 칸만 게라까지 계속 갑니다. 게라로 가시는데 4호차나 5호차에 앉아 계십니까? 그러면 바이마르에서 내리셔서 앞쪽 객차로 옮겨 타 주십시오."
+  },
+  {
+   "style": "h",
+   "de": "Im Intercity nach Leipzig · 17:40",
+   "ko": "라이프치히행 인터시티 열차 안 · 17:40"
+  },
+  {
+   "de": "Liebe Fahrgäste, hier spricht Ihr Team aus dem Bordbistro im zweiten Wagen. Weil unsere Kaffeemaschine nicht funktioniert, gibt es heute leider keine heißen Getränke, aber kalte Getränke, Brötchen und Kuchen bekommen Sie wie gewohnt. In etwa zehn Minuten kommt außerdem eine Kollegin an Ihren Sitzplatz.",
+   "ko": "승객 여러분, 2호차 열차 카페 직원들이 안내 말씀 드립니다. 커피 머신이 작동하지 않아 오늘은 아쉽게도 따뜻한 음료를 드릴 수 없습니다. 하지만 차가운 음료와 빵, 케이크는 평소처럼 구입하실 수 있습니다. 또한 약 10분 후에 직원 한 명이 여러분의 좌석으로 찾아갑니다."
+  },
+  {
+   "style": "h",
+   "de": "Erfurt Hauptbahnhof, Bahnhofshalle · 20:30",
+   "ko": "에르푸르트 중앙역 대합실 · 20:30"
+  },
+  {
+   "de": "Liebe Fahrgäste nach Arnstadt, weil auf der Strecke Gleisarbeiten stattfinden, fahren heute ab 21 Uhr keine Züge. Stattdessen fahren Ersatzbusse vor dem Haupteingang ab, der erste um 21:05 Uhr, der letzte um 23:50 Uhr. Ab morgen früh fahren alle Züge wieder nach Fahrplan.",
+   "ko": "아른슈타트로 가시는 승객 여러분, 이 노선에서 선로 공사가 있어 오늘 21시부터는 열차가 다니지 않습니다. 대신 정문 앞에서 대체 버스가 출발합니다. 첫 버스는 21시 5분, 마지막 버스는 23시 50분에 출발합니다. 내일 아침부터는 모든 열차가 다시 시간표대로 운행합니다."
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Reisende nach Jena müssen heute an einem anderen Gleis einsteigen.",
+   "answer": 0,
+   "evidence": "heute nicht von Gleis 3, sondern von Gleis 5 ab",
+   "pairs": [
+    [
+     "nicht von Gleis 3, sondern von Gleis 5",
+     "an einem anderen Gleis"
+    ]
+   ],
+   "explain": "예나행 지역 급행열차는 오늘 기술적인 이유로 3번이 아니라 5번 승강장에서 출발해요(nicht von Gleis 3, sondern von Gleis 5). 그래서 평소와 다른 승강장에서 타야 한다는 문장은 맞아요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was erfahren die Fahrgäste in Gotha über den Intercity?",
+   "options": [
+    "Bei diesem Sturm fährt er heute überhaupt nicht.",
+    "Er kommt pünktlich, fährt aber langsamer als sonst.",
+    "Er fährt heute fast eine halbe Stunde später ab."
+   ],
+   "answer": 2,
+   "evidence": "hat heute etwa 25 Minuten Verspätung",
+   "pairs": [
+    [
+     "etwa 25 Minuten Verspätung",
+     "fast eine halbe Stunde später"
+    ]
+   ],
+   "explain": "인터시티 열차는 오늘 약 25분 늦어진다고 해요(etwa 25 Minuten Verspätung). 정답은 25분을 ‘거의 30분 늦게’로 바꿔 말했어요. 폭풍 때문에 천천히 달리기는 하지만 운행이 취소된 것은 아니고, 늦어지므로 제시간에 온다는 말도 틀려요."
+  },
+  {
+   "type": "mc",
+   "kind": "meaning",
+   "q": "Was bedeutet „dort wird der Zug geteilt“ im Text?",
+   "options": [
+    "Nicht alle Wagen fahren bis zum Ziel.",
+    "Alle Fahrgäste wechseln in einen neuen Zug.",
+    "In Weimar kommen drei neue Wagen dazu."
+   ],
+   "answer": 0,
+   "evidence": "Nur die drei vorderen Wagen fahren weiter nach Gera.",
+   "pairs": [
+    [
+     "Nur die drei vorderen Wagen fahren weiter nach Gera",
+     "Nicht alle Wagen fahren bis zum Ziel"
+    ]
+   ],
+   "explain": "teilen은 ‘나누다’라는 뜻이에요. 바이마르에서 열차를 나누고, 앞쪽 세 칸만 목적지인 게라까지 계속 가요(Nur die drei vorderen Wagen fahren weiter nach Gera). 그러니 모든 객차가 목적지까지 가는 것은 아니라는 뜻이에요. 모두 새 열차로 갈아탄다거나 객차가 더 붙는다는 말은 틀려요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Eine Frau sitzt im fünften Wagen und möchte nach Gera. Was soll sie tun?",
+   "options": [
+    "Bis Gera sitzen bleiben, weil ihr Wagen dorthin fährt.",
+    "In Weimar aussteigen und weiter vorne wieder einsteigen.",
+    "In Weimar aussteigen und dort auf einen Ersatzbus warten."
+   ],
+   "answer": 1,
+   "evidence": "Dann steigen Sie bitte in Weimar aus und wechseln Sie in die vorderen Wagen.",
+   "pairs": [
+    [
+     "wechseln Sie in die vorderen Wagen",
+     "weiter vorne wieder einsteigen"
+    ]
+   ],
+   "explain": "게라까지 가는 것은 앞쪽 세 칸뿐이에요(Nur die drei vorderen Wagen fahren weiter nach Gera). 그래서 5호차에 앉은 승객은 바이마르에서 내려 앞쪽 객차로 옮겨 타야 해요(steigen Sie … aus und wechseln Sie in die vorderen Wagen). 대체 버스는 아른슈타트행 안내 방송에 나오는 내용이에요."
+  },
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Weil die Kaffeemaschine nicht funktioniert, gibt es heute im Bordbistro keine Getränke.",
+   "answer": 1,
+   "evidence": "aber kalte Getränke, Brötchen und Kuchen bekommen Sie wie gewohnt",
+   "pairs": [
+    [
+     "keine heißen Getränke",
+     "keine Getränke"
+    ],
+    [
+     "kalte Getränke",
+     "keine Getränke"
+    ]
+   ],
+   "explain": "커피 머신이 고장 나서 없는 것은 따뜻한 음료뿐이에요(keine heißen Getränke). 차가운 음료와 빵, 케이크는 평소처럼 살 수 있다고 했어요(kalte Getränke … wie gewohnt). 그래서 음료가 전혀 없다는 문장은 틀려요. heißen이라는 낱말이 빠진 것이 함정이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was hören die Fahrgäste im Intercity über das Bistro?",
+   "options": [
+    "Eine Kollegin bringt den Fahrgästen heißen Tee an den Platz.",
+    "Das Bistro befindet sich heute hinten im vierten Wagen.",
+    "Bald besucht eine Mitarbeiterin die Fahrgäste am Platz."
+   ],
+   "answer": 2,
+   "evidence": "In etwa zehn Minuten kommt außerdem eine Kollegin an Ihren Sitzplatz.",
+   "pairs": [
+    [
+     "In etwa zehn Minuten",
+     "Bald"
+    ],
+    [
+     "eine Kollegin an Ihren Sitzplatz",
+     "eine Mitarbeiterin die Fahrgäste am Platz"
+    ]
+   ],
+   "explain": "약 10분 뒤에 직원이 승객의 자리로 온다고 해요(In etwa zehn Minuten kommt … eine Kollegin an Ihren Sitzplatz). 정답은 Kollegin을 Mitarbeiterin으로, ‘약 10분 뒤’를 bald(곧)로 바꿔 말했어요. 오늘은 따뜻한 음료가 없으니 뜨거운 차는 틀리고, 열차 카페는 2호차에 있어요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Ein Mann möchte heute um 22 Uhr von Erfurt nach Arnstadt fahren. Was soll er tun?",
+   "options": [
+    "Er nimmt den Bus vor dem Bahnhofsgebäude.",
+    "Er wartet an Gleis 3 auf den letzten Zug.",
+    "Er fährt erst morgen früh mit dem Zug."
+   ],
+   "answer": 0,
+   "evidence": "Stattdessen fahren Ersatzbusse vor dem Haupteingang ab",
+   "pairs": [
+    [
+     "ab 21 Uhr keine Züge",
+     "um 22 Uhr"
+    ],
+    [
+     "Ersatzbusse vor dem Haupteingang",
+     "den Bus vor dem Bahnhofsgebäude"
+    ]
+   ],
+   "explain": "선로 공사 때문에 오늘 21시부터는 이 노선에 열차가 없고, 대신 대체 버스가 정문 앞에서 출발해요(Stattdessen fahren Ersatzbusse vor dem Haupteingang ab). 마지막 버스가 23시 50분이니까 22시에 오는 사람은 역 건물 앞에서 버스를 타면 돼요. 오늘 밤에는 열차가 없으니 승강장에서 기차를 기다릴 수 없고, 내일 아침까지 기다릴 필요도 없어요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "현재형으로 말하는 미래",
+   "term": "Präsens mit Zukunftsbedeutung",
+   "explain": "독일어에서는 앞으로 일어날 일도 현재형으로 자주 말해요. in wenigen Minuten(몇 분 뒤에), in etwa zehn Minuten(약 10분 뒤에), ab morgen früh(내일 아침부터)처럼 미래를 나타내는 시간 표현이 있으면 werden + 동사원형이 없어도 미래의 뜻이 분명해요. 안내 방송과 시간표에는 이런 현재형 문장이 많아요.",
+   "pattern": "미래의 시간 표현 + 동사(현재형) + 주어 …",
+   "examples": [
+    {
+     "de": "Sehr geehrte Fahrgäste, in wenigen Minuten erreichen wir Weimar, und dort wird der Zug geteilt.",
+     "ko": "승객 여러분, 우리 열차는 잠시 후 바이마르역에 도착하며, 그곳에서 열차를 나누어 운행합니다.",
+     "mark": [
+      "in wenigen Minuten erreichen wir"
+     ],
+     "parts": [
+      [
+       "Sehr geehrte Fahrgäste,",
+       "기타"
+      ],
+      [
+       "in wenigen Minuten",
+       "부사어(시간)"
+      ],
+      [
+       "erreichen",
+       "동사"
+      ],
+      [
+       "wir",
+       "주어"
+      ],
+      [
+       "Weimar,",
+       "4격 목적어"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "dort",
+       "부사어(장소)"
+      ],
+      [
+       "wird",
+       "동사"
+      ],
+      [
+       "der Zug",
+       "주어"
+      ],
+      [
+       "geteilt.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "In etwa zehn Minuten kommt außerdem eine Kollegin an Ihren Sitzplatz.",
+     "ko": "또한 약 10분 후에 직원 한 명이 여러분의 좌석으로 찾아갑니다.",
+     "mark": [
+      "In etwa zehn Minuten kommt"
+     ],
+     "parts": [
+      [
+       "In etwa zehn Minuten",
+       "부사어(시간)"
+      ],
+      [
+       "kommt",
+       "동사"
+      ],
+      [
+       "außerdem",
+       "접속부사"
+      ],
+      [
+       "eine Kollegin",
+       "주어"
+      ],
+      [
+       "an Ihren Sitzplatz.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Ab morgen früh fahren alle Züge wieder nach Fahrplan.",
+     "ko": "내일 아침부터는 모든 열차가 다시 시간표대로 운행합니다.",
+     "mark": [
+      "Ab morgen früh fahren"
+     ]
+    }
+   ],
+   "tip": "시간 표현이 첫자리에 오면 동사가 바로 뒤에 오고 주어는 동사 뒤로 가요(in wenigen Minuten erreichen wir …). 미래라는 것을 특히 강조하거나 앞일을 예측할 때는 werden + 동사원형을 써요."
+  },
+  {
+   "title": "의문문으로 말하는 조건 – …? Dann …",
+   "term": "Bedingung mit Fragesatz und dann",
+   "explain": "안내 방송에서는 조건을 wenn 대신 예/아니요 의문문으로 먼저 묻고, 다음 문장을 dann으로 시작할 때가 많아요. 의문문은 동사가 맨 앞에 와요(Fahren Sie …? Sitzen Sie …?). 듣는 사람의 대답이 ‘예’이면 dann 문장의 부탁을 따르면 돼요. 뜻은 wenn 문장과 같아요: Wenn Sie nach Gera fahren und im vierten oder fünften Wagen sitzen, steigen Sie bitte in Weimar aus.",
+   "pattern": "동사 + Sie + …? Dann + 동사 + Sie + …",
+   "examples": [
+    {
+     "de": "Fahren Sie nach Gera und sitzen Sie im vierten oder fünften Wagen?",
+     "ko": "게라로 가시는데 4호차나 5호차에 앉아 계십니까?",
+     "mark": [
+      "Fahren Sie",
+      "sitzen Sie"
+     ],
+     "parts": [
+      [
+       "Fahren",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "nach Gera",
+       "부사어(장소)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "sitzen",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "im vierten oder fünften Wagen?",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Dann steigen Sie bitte in Weimar aus und wechseln Sie in die vorderen Wagen.",
+     "ko": "그러면 바이마르에서 내리셔서 앞쪽 객차로 옮겨 타 주십시오.",
+     "mark": [
+      "Dann steigen Sie",
+      "aus"
+     ],
+     "parts": [
+      [
+       "Dann",
+       "접속부사"
+      ],
+      [
+       "steigen",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "bitte",
+       "기타"
+      ],
+      [
+       "in Weimar",
+       "부사어(장소)"
+      ],
+      [
+       "aus",
+       "동사(끝)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "wechseln",
+       "동사"
+      ],
+      [
+       "Sie",
+       "주어"
+      ],
+      [
+       "in die vorderen Wagen.",
+       "부사어(장소)"
+      ]
+     ]
+    }
+   ],
+   "tip": "dann은 첫자리에 오는 접속부사라서 바로 뒤에 동사가 와요(Dann steigen Sie … aus). bitte가 있어서 이 문장은 부탁의 뜻이 돼요. wenn 문장으로 바꾸면 동사가 wenn절의 맨 끝으로 가요(Wenn Sie im fünften Wagen sitzen, …)."
+  },
+  {
+   "title": "이유 말하기 – aus … Gründen · Grund dafür ist …",
+   "term": "Gründe nennen: aus … Gründen, Grund dafür ist …",
+   "explain": "안내 방송에서는 이유를 짧은 명사 표현으로 자주 말해요. aus technischen Gründen은 ‘기술적인 이유로’라는 뜻으로, aus 뒤에 3격 복수(Gründen)가 와요. Grund dafür ist …는 ‘그 이유는 ~이에요’라는 뜻이고, dafür는 앞 문장의 내용(열차 지연)을 가리켜요. 이유를 문장으로 말할 때는 weil을 쓰고 동사를 맨 끝에 둬요(Weil unsere Kaffeemaschine nicht funktioniert, …).",
+   "pattern": "Aus + 형용사(-en) + Gründen + 동사 … / Grund dafür ist + 1격 명사",
+   "examples": [
+    {
+     "de": "Aus technischen Gründen fährt der Regionalexpress nach Jena, Abfahrt 14:32 Uhr, heute nicht von Gleis 3, sondern von Gleis 5 ab.",
+     "ko": "14시 32분에 출발하는 예나행 지역 급행열차는 오늘 기술적인 이유로 3번이 아닌 5번 승강장에서 출발합니다.",
+     "mark": [
+      "Aus technischen Gründen"
+     ],
+     "parts": [
+      [
+       "Aus technischen Gründen",
+       "부사어(이유)"
+      ],
+      [
+       "fährt",
+       "동사"
+      ],
+      [
+       "der Regionalexpress nach Jena,",
+       "주어"
+      ],
+      [
+       "Abfahrt 14:32 Uhr,",
+       "기타"
+      ],
+      [
+       "heute",
+       "부사어(시간)"
+      ],
+      [
+       "nicht von Gleis 3,",
+       "부사어(장소)"
+      ],
+      [
+       "sondern von Gleis 5",
+       "부사어(장소)"
+      ],
+      [
+       "ab.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Grund dafür ist ein Unwetter, denn bei starkem Sturm dürfen alle Züge auf dieser Strecke nur langsam fahren.",
+     "ko": "악천후 때문입니다. 폭풍이 강할 때는 이 노선의 모든 열차가 천천히 달려야 합니다.",
+     "mark": [
+      "Grund dafür ist"
+     ],
+     "parts": [
+      [
+       "Grund dafür",
+       "보어"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "ein Unwetter,",
+       "주어"
+      ],
+      [
+       "denn",
+       "접속사"
+      ],
+      [
+       "bei starkem Sturm",
+       "부사어"
+      ],
+      [
+       "dürfen",
+       "동사"
+      ],
+      [
+       "alle Züge",
+       "주어"
+      ],
+      [
+       "auf dieser Strecke",
+       "부사어(장소)"
+      ],
+      [
+       "nur langsam",
+       "부사어(방법)"
+      ],
+      [
+       "fahren.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Weil unsere Kaffeemaschine nicht funktioniert, gibt es heute leider keine heißen Getränke, aber kalte Getränke, Brötchen und Kuchen bekommen Sie wie gewohnt.",
+     "ko": "커피 머신이 작동하지 않아 오늘은 아쉽게도 따뜻한 음료를 드릴 수 없습니다. 하지만 차가운 음료와 빵, 케이크는 평소처럼 구입하실 수 있습니다.",
+     "mark": [
+      "Weil unsere Kaffeemaschine nicht funktioniert"
+     ]
+    }
+   ],
+   "tip": "실제 안내 방송에서는 wegen(~ 때문에)도 자주 들려요. wegen은 2격과 함께 쓰는 전치사라서 B1에서 배워요. A2에서는 aus … Gründen, Grund dafür ist …, weil 문장으로 이유를 말할 수 있어요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "die Durchsage, -n",
+   "ko": "안내 방송"
+  },
+  {
+   "de": "das Gleis, -e",
+   "ko": "선로, (번호가 붙은) 승강장"
+  },
+  {
+   "de": "die Abfahrt, -en",
+   "ko": "출발"
+  },
+  {
+   "de": "die Gleisänderung, -en",
+   "ko": "승강장 변경"
+  },
+  {
+   "de": "die Verspätung, -en",
+   "ko": "지연, 연착"
+  },
+  {
+   "de": "das Unwetter, -",
+   "ko": "악천후, 폭풍우"
+  },
+  {
+   "de": "die Strecke, -n",
+   "ko": "노선, 구간"
+  },
+  {
+   "de": "der Wagen, -",
+   "ko": "(열차의) 객차, 칸"
+  },
+  {
+   "de": "der Fahrgast, -¨e",
+   "ko": "승객"
+  },
+  {
+   "de": "der Sitzplatz, -¨e",
+   "ko": "좌석"
+  },
+  {
+   "de": "die Gleisarbeiten (Pl.)",
+   "ko": "선로 공사"
+  },
+  {
+   "de": "statt|finden (findet statt, hat stattgefunden)",
+   "ko": "열리다, (일이) 있다"
+  },
+  {
+   "de": "der Ersatzbus, -se",
+   "ko": "대체 버스"
+  },
+  {
+   "de": "stattdessen",
+   "ko": "그 대신"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "Verspätung haben",
+   "ko": "(열차 등이) 늦어지다, 연착하다",
+   "ex": "Der Intercity nach Frankfurt, Abfahrt 15:16 Uhr, hat heute etwa 25 Minuten Verspätung.",
+   "exko": "15시 16분에 출발하는 프랑크푸르트행 인터시티 열차는 오늘 약 25분 늦어집니다."
+  },
+  {
+   "de": "um Verständnis bitten",
+   "ko": "양해를 구하다",
+   "ex": "Wir bitten um Ihr Verständnis.",
+   "exko": "양해 부탁드립니다."
+  },
+  {
+   "de": "wie gewohnt",
+   "ko": "평소처럼, 늘 하던 대로",
+   "ex": "Weil unsere Kaffeemaschine nicht funktioniert, gibt es heute leider keine heißen Getränke, aber kalte Getränke, Brötchen und Kuchen bekommen Sie wie gewohnt.",
+   "exko": "커피 머신이 작동하지 않아 오늘은 아쉽게도 따뜻한 음료를 드릴 수 없습니다. 하지만 차가운 음료와 빵, 케이크는 평소처럼 구입하실 수 있습니다."
+  },
+  {
+   "de": "nach Fahrplan fahren",
+   "ko": "시간표대로 운행하다",
+   "ex": "Ab morgen früh fahren alle Züge wieder nach Fahrplan.",
+   "exko": "내일 아침부터는 모든 열차가 다시 시간표대로 운행합니다."
+  }
+ ]
+}

@@ -25,8 +25,8 @@
   },
   {
    "label": "C",
-   "de": "Verschenke ein Sofa, blau, zwei Meter lang, nicht neu, aber sehr bequem. Ich habe leider kein Auto – Sie müssen es selbst abholen. Am besten am Wochenende, dritter Stock, kein Aufzug, Handynummer 0176 23456789!",
-   "ko": "소파를 무료로 드려요. 파란색이고 길이는 2미터예요. 새것은 아니지만 아주 편안해요. 저는 아쉽게도 차가 없어요. 직접 가져가셔야 해요. 주말이 제일 좋아요. 3층이고 엘리베이터는 없어요! 휴대전화 번호는 0176 23456789예요!"
+   "de": "Verschenke ein Sofa, blau, zwei Meter lang, nicht neu, aber sehr bequem. Ich habe leider kein Auto – Sie müssen es selbst abholen. Am besten am Wochenende, dritter Stock, kein Aufzug! Handynummer 0176 23456789.",
+   "ko": "소파를 무료로 드려요. 파란색이고 길이는 2미터예요. 새것은 아니지만 아주 편안해요. 저는 아쉽게도 차가 없어요. 직접 가져가셔야 해요. 주말이 제일 좋아요. 3층이고 엘리베이터는 없어요! 휴대전화 번호는 0176 23456789예요."
   },
   {
    "label": "D",
@@ -38,7 +38,7 @@
   {
    "type": "mc",
    "kind": "match",
-   "q": "Familie Yilmaz sucht ein Fahrrad für ihren Sohn. Er wird bald sechs. Die Familie möchte nicht mehr als 70 Euro bezahlen. Welche Anzeige passt?",
+   "q": "Familie Yilmaz sucht ein Fahrrad für ihren Sohn. Er ist fünf Jahre alt. Die Familie möchte nicht mehr als 70 Euro bezahlen. Welche Anzeige passt?",
    "options": [
     "Anzeige A",
     "Anzeige B",
@@ -55,14 +55,14 @@
     ],
     [
      "von 4 bis 7 Jahren",
-     "Er wird bald sechs"
+     "Er ist fünf Jahre alt"
     ],
     [
      "kostet 60 Euro",
      "nicht mehr als 70 Euro"
     ]
    ],
-   "explain": "광고 A는 4세부터 7세 어린이용 자전거(Kinderfahrrad)를 60유로에 팔아요. 일마즈 씨 가족의 아들은 곧 여섯 살이 되니까 나이가 맞고, 가족은 70유로까지 낼 수 있으니까 가격도 맞아요. 그래서 광고 A가 정답이에요."
+   "explain": "광고 A는 4세부터 7세 어린이용 자전거(Kinderfahrrad)를 60유로에 팔아요. 일마즈 씨 가족의 아들은 다섯 살이니까 나이가 맞고, 가족은 70유로까지 낼 수 있으니까 가격도 맞아요. 그래서 광고 A가 정답이에요."
   },
   {
    "type": "mc",
@@ -469,8 +469,8 @@
   {
    "de": "am besten",
    "ko": "~하는 것이 가장 좋다, 가장 좋기로는",
-   "ex": "Am besten am Wochenende, dritter Stock, kein Aufzug, Handynummer 0176 23456789!",
-   "exko": "주말이 제일 좋아요. 3층이고 엘리베이터는 없어요! 휴대전화 번호는 0176 23456789예요!"
+   "ex": "Am besten am Wochenende, dritter Stock, kein Aufzug!",
+   "exko": "주말이 제일 좋아요. 3층이고 엘리베이터는 없어요!"
   }
  ]
 }

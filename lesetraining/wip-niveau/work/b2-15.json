@@ -1,0 +1,608 @@
+{
+ "id": "b2-15",
+ "level": "B2",
+ "no": 15,
+ "title": "Brief an mein zwanzigjähriges Ich",
+ "titleKo": "스무 살의 나에게 보내는 편지",
+ "type": "Kolumne (Brief an das jüngere Ich)",
+ "typeKo": "잡지 칼럼 (젊은 시절의 나에게 쓰는 편지)",
+ "intro": "마흔여섯 살의 목공 마이스터가 스무 살의 자신에게 쓴 잡지 칼럼 편지예요.",
+ "focus": [
+  "lassen의 쓰임",
+  "추측의 화법조동사",
+  "수사 의문문",
+  "과거에서 본 미래"
+ ],
+ "paragraphs": [
+  {
+   "style": "meta",
+   "de": "In unserer Sommerreihe schreiben Leserinnen und Leser einen Brief an ihr jüngeres Ich, heute die Tischlermeisterin Katrin Hollmann, 46.",
+   "ko": "저희 여름 연재에서는 독자들이 젊은 시절의 자신에게 편지를 써요. 오늘은 46세 목공 마이스터 카트린 홀만의 편지예요."
+  },
+  {
+   "style": "meta",
+   "de": "Liebe Katrin,",
+   "ko": "카트린에게"
+  },
+  {
+   "de": "du bist zwanzig, und es ist ein verregneter Sonntagabend. Um diese Uhrzeit dürftest du auf der Fensterbank deines Zimmers in der Wohngemeinschaft sitzen, neben dir eine längst kalt gewordene Tasse Tee und auf den Knien das Skript für die Statistikklausur. Woher ich das weiß? Ich bin du, nur sechsundzwanzig Jahre älter, inzwischen mit Lesebrille, grauen Strähnen und einer eigenen Tischlerwerkstatt, in der es nach Holz und Leim riecht.",
+   "ko": "지금 스무 살이고, 비 내리는 일요일 저녁이에요. 이 시간이면 아마 셰어하우스 방의 창턱에 앉아 있을 거예요. 옆에는 벌써 식어 버린 차 한 잔이 있고, 무릎 위에는 통계학 시험 준비용 강의 자료가 놓여 있겠지요. 제가 그걸 어떻게 아느냐고요? 제가 바로 당신이기 때문이에요. 스물여섯 살 더 많고, 이제는 돋보기안경을 쓰고 머리도 희끗희끗하고, 나무와 아교 냄새가 나는 제 목공 작업장이 있다는 것만 달라요."
+  },
+  {
+   "de": "Das dürfte dich überraschen, denn du studierst Betriebswirtschaft, weil Papa der festen Überzeugung ist, mit diesem Studium könne man nichts falsch machen. In den Vorlesungen saß ich meistens in der letzten Reihe und kritzelte Stühle an den Rand meiner Mitschriften, während vorne jemand die Grundlagen der Kostenrechnung erläuterte. Diese Angewohnheit hielt ich damals für harmlos, und niemand ahnte, dass aus der Zeichnerin in der letzten Reihe einmal eine Tischlermeisterin werden würde. Inzwischen baue ich genau solche Stühle, für die manche Kunden ein halbes Jahr Wartezeit in Kauf nehmen.",
+   "ko": "아마 놀랄 거예요. 지금 경영학을 공부하고 있으니까요. 아빠가 이 공부를 하면 잘못될 일이 없다고 굳게 믿으시거든요. 강의 시간에 저는 대개 맨 뒷줄에 앉아서, 앞에서 누군가 원가 계산의 기초를 설명하는 동안 필기 노트 가장자리에 의자 그림을 끄적거렸어요. 그때는 그게 대수롭지 않은 버릇이라고 생각했고, 맨 뒷줄에서 그림을 그리던 그 학생이 언젠가 목공 마이스터가 되리라고는 아무도 짐작하지 못했어요. 지금 저는 바로 그런 의자를 만들고, 어떤 손님들은 그 의자를 받으려고 반년을 기다리는 것도 마다하지 않아요."
+  },
+  {
+   "de": "Hätte ich damals gewusst, wohin diese Kritzeleien führen würden, wäre mir manche Klausur erspart geblieben. Aber hättest du meine Warnungen überhaupt beachtet? Vermutlich hättest du diesen Brief gelesen, kurz aufgelacht und ihn zwischen deine Skripte geschoben, als stammte er von einer wunderlichen Tante. Wer lässt sich mit zwanzig schon von jemandem über vierzig erklären, worauf es im Leben ankommt?",
+   "ko": "그 낙서가 어디로 이어질지 그때 알았더라면 시험 몇 개는 치르지 않아도 됐을 거예요. 하지만 과연 제 경고에 귀를 기울였을까요? 아마 이 편지를 읽고 잠깐 웃은 다음, 좀 별난 이모가 보낸 편지라도 되는 것처럼 강의 자료 사이에 끼워 넣었겠지요. 스무 살에 마흔이 넘은 사람에게서 인생에서 무엇이 중요한지 설명을 들으려는 사람이 어디 있겠어요?"
+  },
+  {
+   "de": "Im Augenblick tust du so, als hinge deine gesamte Zukunft von dieser einen Statistikklausur ab. Du wirst die Klausur knapp bestehen, und zwei Jahre später wird sich niemand mehr für deine Klausurnote interessieren. Im übernächsten Sommer brichst du das Studium ab, beginnst eine Tischlerlehre und musst dir von halb Göttingen anhören, du würdest dich unter Wert verkaufen. Lass sie reden. Rückblickend war es die beste Entscheidung meines Lebens, auch wenn sie sich damals wie eine Niederlage anfühlte.",
+   "ko": "지금은 마치 이 통계학 시험 하나에 앞날 전체가 걸린 것처럼 굴고 있지요. 그 시험은 아슬아슬하게 통과할 거예요. 그리고 2년 뒤에는 아무도 그 점수에 관심을 두지 않을 거예요. 내후년 여름에는 학업을 그만두고 목공 직업 교육을 시작해요. 그리고 괴팅겐 사람 절반에게서 능력을 썩힌다는 말을 듣게 돼요. 남들이 뭐라 하든 내버려 두세요. 돌아보면 그건 제 인생에서 가장 잘한 결정이었어요. 그때는 실패처럼 느껴졌지만요."
+  },
+  {
+   "de": "Bereuen würde ich höchstens, dass ich in meinen Studienjahren selten bei unserer Großmutter angerufen habe, weil mir die Wochenendpartys wichtiger erschienen. Sie erzählte mit großer Leidenschaft von ihrer Kindheit auf dem Bauernhof, doch ich hörte nur mit halbem Ohr zu, weil ich glaubte, für solche Erinnerungen bleibe später genügend Zeit. Ruf sie an; sie müsste um diese Uhrzeit noch wach sein, denn sonntags verpasst sie niemals den Fernsehkrimi.",
+   "ko": "굳이 후회하는 일을 꼽자면, 대학 시절에 우리 할머니께 전화를 자주 드리지 않은 거예요. 주말 파티가 더 중요해 보였거든요. 할머니는 농장에서 보낸 어린 시절 이야기를 무척 열정적으로 들려주셨는데, 저는 건성으로 들었어요. 그런 이야기를 들을 시간은 나중에도 충분하다고 생각했으니까요. 할머니께 전화하세요. 이 시간이면 틀림없이 아직 깨어 계실 거예요. 일요일마다 텔레비전 범죄 드라마를 한 번도 빼놓지 않고 보시니까요."
+  },
+  {
+   "de": "Ach ja, und die Frisur, die du dir vergangene Woche eigenhändig geschnitten hast, ist keine mutige Stilentscheidung. Sie sieht aus, als hätte ein Hamster daran genagt; Mamas Einschätzung ist also berechtigt, auch wenn du ihr das niemals zugestehen wirst. Lass die Schere in der Schublade und lass dir die Haare künftig von jemandem schneiden, der das Handwerk gelernt hat.",
+   "ko": "아, 그리고 지난주에 직접 자른 그 머리는 용감한 스타일 선택이 아니에요. 햄스터가 갉아 먹은 것처럼 보여요. 그러니 엄마의 평가가 옳아요. 엄마한테는 끝까지 인정하지 않겠지만요. 가위는 서랍에 넣어 두고, 앞으로는 그 일을 제대로 배운 사람에게 머리를 자르게 하세요."
+  },
+  {
+   "de": "Mehr verrate ich dir nicht – wüsstest du alles im Voraus, würdest du vielleicht allen Umwegen ausweichen, auch denen, auf die es ankommt. Ohne den Umweg über die vermeintlich verlorenen Semester hätte ich nie herausgefunden, was ich eigentlich will. Also mach deine Fehler, aber mach sie mit offenen Augen. Das könnte der wichtigste Satz dieses Briefes sein.",
+   "ko": "더는 알려 주지 않을게요. 모든 걸 미리 안다면 어쩌면 돌아가는 길을 모두 피하려고 할지도 몰라요. 꼭 거쳐야 하는 길까지도요. 허비한 것처럼 보였던 학기들이라는 우회로가 없었다면 제가 정말 원하는 게 무엇인지 끝내 알아내지 못했을 거예요. 그러니 실수를 하세요. 다만 눈을 크게 뜨고 하세요. 이게 이 편지에서 가장 중요한 문장일지도 몰라요."
+  },
+  {
+   "style": "meta",
+   "de": "Deine Katrin",
+   "ko": "카트린이"
+  }
+ ],
+ "questions": [
+  {
+   "type": "rfn",
+   "kind": "detail",
+   "q": "Über zu wenig Nachfrage nach ihren Stühlen muss sich die Verfasserin heute nicht beklagen.",
+   "answer": 0,
+   "evidence": "für die manche Kunden ein halbes Jahr Wartezeit in Kauf nehmen",
+   "pairs": [
+    [
+     "für die manche Kunden ein halbes Jahr Wartezeit in Kauf nehmen",
+     "Über zu wenig Nachfrage nach ihren Stühlen"
+    ]
+   ],
+   "explain": "어떤 손님들은 의자를 받으려고 반년을 기다리는 것도 마다하지 않는다고 해요. 주문이 많다는 뜻이니, 수요가 적다고 불평할 일은 없다는 문장은 맞아요."
+  },
+  {
+   "type": "rfn",
+   "kind": "detail",
+   "q": "Die Großmutter lebte auch im Alter noch auf dem Bauernhof ihrer Kindheit.",
+   "answer": 2,
+   "evidence": null,
+   "pairs": [
+    [
+     "von ihrer Kindheit auf dem Bauernhof",
+     "auf dem Bauernhof ihrer Kindheit"
+    ]
+   ],
+   "explain": "할머니가 농장에서 보낸 어린 시절 이야기를 즐겨 하셨다는 말만 나와요. 할머니가 나이 들어서도 그 농장에 사셨는지는 본문에 없어서 알 수 없어요."
+  },
+  {
+   "type": "mc",
+   "kind": "paraphrase",
+   "q": "Was bedeutet der Satz „Rückblickend war es die beste Entscheidung meines Lebens, auch wenn sie sich damals wie eine Niederlage anfühlte.“?",
+   "options": [
+    "Damals war sie sicher, die beste Entscheidung ihres Lebens zu treffen.",
+    "Was damals wie ein Scheitern wirkte, erwies sich später als richtig.",
+    "Die Entscheidung war richtig, obwohl sie danach eine Niederlage erlitt."
+   ],
+   "answer": 1,
+   "evidence": "Rückblickend war es die beste Entscheidung meines Lebens, auch wenn sie sich damals wie eine Niederlage anfühlte.",
+   "pairs": [
+    [
+     "auch wenn sie sich damals wie eine Niederlage anfühlte",
+     "Was damals wie ein Scheitern wirkte"
+    ],
+    [
+     "Rückblickend war es die beste Entscheidung meines Lebens",
+     "erwies sich später als richtig"
+    ]
+   ],
+   "explain": "학업을 그만둔 결정은 그때는 실패처럼 느껴졌지만, 돌아보니 인생 최고의 결정이었다는 말이에요. 정답은 Niederlage를 Scheitern으로, rückblickend를 '나중에 보니(später)'로 바꿔 말했어요. 그때부터 확신했다는 보기는 '실패처럼 느껴졌다'와 맞지 않고, 결정 뒤에 실패를 겪었다는 보기는 시점을 바꾼 것이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "inference",
+   "q": "Was lässt sich über die Großmutter und die Verfasserin heute vermuten?",
+   "options": [
+    "Die Großmutter erzählt ihr bis heute jeden Sonntag von ihrer Kindheit.",
+    "Die Großmutter hat ihr damals die Partys am Wochenende verboten.",
+    "Die Verfasserin kann sie heute nicht mehr nach ihrem Leben fragen."
+   ],
+   "answer": 2,
+   "evidence": "weil ich glaubte, für solche Erinnerungen bleibe später genügend Zeit",
+   "pairs": [
+    [
+     "für solche Erinnerungen bleibe später genügend Zeit",
+     "kann sie heute nicht mehr nach ihrem Leben fragen"
+    ],
+    [
+     "Bereuen würde ich höchstens",
+     "heute vermuten"
+    ]
+   ],
+   "explain": "필자는 그런 이야기를 들을 시간은 나중에도 충분하다고 생각했다고 하고, 지금 그 일을 후회해요. 이제는 할머니께 옛날이야기를 물을 수 없다는 뜻으로 읽을 수 있어요. 할머니가 지금도 일요일마다 이야기를 들려준다는 말은 없고, 파티를 막은 사람도 할머니가 아니라 필자 자신의 선택이었어요."
+  },
+  {
+   "type": "rfn",
+   "kind": "detail",
+   "q": "Bei der Statistikklausur wird die junge Katrin am Ende knapp durchfallen.",
+   "answer": 1,
+   "evidence": "Du wirst die Klausur knapp bestehen",
+   "pairs": [
+    [
+     "Du wirst die Klausur knapp bestehen",
+     "knapp durchfallen"
+    ]
+   ],
+   "explain": "필자는 스무 살의 자신에게 그 시험을 아슬아슬하게 통과할 거라고(knapp bestehen) 말해요. knapp이라는 낱말은 같지만 떨어진다는 문장은 본문과 반대예요."
+  },
+  {
+   "type": "mc",
+   "kind": "meaning",
+   "q": "Was bedeutet „ich hörte nur mit halbem Ohr zu“ im Text?",
+   "options": [
+    "Ich war beim Zuhören nicht richtig bei der Sache.",
+    "Ich konnte auf einem Ohr damals nur schlecht hören.",
+    "Ich hörte mir nur die Hälfte der Geschichten an."
+   ],
+   "answer": 0,
+   "evidence": "doch ich hörte nur mit halbem Ohr zu",
+   "pairs": [
+    [
+     "nur mit halbem Ohr zu",
+     "nicht richtig bei der Sache"
+    ]
+   ],
+   "explain": "mit halbem Ohr zuhören은 '건성으로 듣다', 곧 다른 데 정신이 팔린 채 듣는다는 뜻이에요. 한쪽 귀가 잘 안 들린다거나 이야기의 절반만 들었다는 뜻이 아니에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Was rät die Verfasserin ihrem jüngeren Ich wegen der Frisur?",
+   "options": [
+    "Sie soll die Haare künftig wieder selbst schneiden.",
+    "Sie soll Mama ihre Meinung über die Frisur sagen.",
+    "Sie soll das Schneiden einer Fachkraft überlassen."
+   ],
+   "answer": 2,
+   "evidence": "lass dir die Haare künftig von jemandem schneiden, der das Handwerk gelernt hat",
+   "pairs": [
+    [
+     "von jemandem schneiden, der das Handwerk gelernt hat",
+     "einer Fachkraft überlassen"
+    ]
+   ],
+   "explain": "필자는 가위는 서랍에 넣어 두고, 앞으로는 그 일을 제대로 배운 사람에게 머리를 자르게 하라고 해요. 정답은 이를 '전문가에게 맡기라'로 바꿔 말했어요. 다시 직접 자르라는 말은 반대이고, 엄마에게 의견을 말하라는 조언도 없어요."
+  },
+  {
+   "type": "mc",
+   "kind": "intent",
+   "q": "Wozu dient die genaue Beschreibung des Sonntagabends am Anfang des Briefes?",
+   "options": [
+    "Sie zeigt, dass die Verfasserin diese Lage aus eigenem Erleben kennt.",
+    "Sie soll erklären, warum die junge Katrin die Klausur nicht besteht.",
+    "Sie soll zeigen, dass die Wohngemeinschaft zum Lernen viel zu laut ist."
+   ],
+   "answer": 0,
+   "evidence": "Woher ich das weiß? Ich bin du, nur sechsundzwanzig Jahre älter",
+   "pairs": [
+    [
+     "Ich bin du",
+     "aus eigenem Erleben"
+    ],
+    [
+     "Um diese Uhrzeit dürftest du auf der Fensterbank",
+     "die genaue Beschreibung des Sonntagabends"
+    ]
+   ],
+   "explain": "필자는 스무 살의 자신이 지금 어디에 앉아 무엇을 하고 있을지 자세히 그린 다음, '내가 어떻게 아느냐고? 내가 바로 당신이니까'라고 말해요. 그 장면을 직접 겪었기 때문에 안다는 것을 보여 주려는 거예요. 시험에 떨어지는 것도 아니고, 셰어하우스가 시끄럽다는 말도 없어요."
+  },
+  {
+   "type": "mc",
+   "kind": "gist",
+   "q": "Welche Botschaft steht im Mittelpunkt des Briefes?",
+   "options": [
+    "Wer alles im Voraus weiß, vermeidet Umwege und erreicht sein Ziel schneller.",
+    "Man sollte Fehler nicht fürchten, sondern bewusst aus ihnen lernen.",
+    "Ein Studium der Betriebswirtschaft ist die sicherste Wahl im Leben."
+   ],
+   "answer": 1,
+   "evidence": "Also mach deine Fehler, aber mach sie mit offenen Augen.",
+   "pairs": [
+    [
+     "Also mach deine Fehler, aber mach sie mit offenen Augen",
+     "Fehler nicht fürchten, sondern bewusst aus ihnen lernen"
+    ],
+    [
+     "Ohne den Umweg über die vermeintlich verlorenen Semester",
+     "bewusst aus ihnen lernen"
+    ]
+   ],
+   "explain": "필자는 모든 것을 미리 알면 꼭 필요한 우회로까지 피하게 된다고 하면서, 실수를 하되 눈을 크게 뜨고 하라고 말해요. 정답은 이를 '실수를 두려워하지 말고 의식적으로 배우라'로 바꿔 말했어요. 미리 알아서 우회로를 피하는 것은 필자가 경계하는 일이고, 경영학이 가장 안전하다는 것은 아빠의 생각이에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "lassen의 여러 쓰임",
+   "term": "lassen: zulassen, veranlassen, an einem Ort lassen",
+   "explain": "lassen은 뜻이 여러 가지예요. 'jdn. etw. tun lassen'은 누가 무엇을 하게 내버려 두다, 곧 허락하거나 말리지 않는다는 뜻이에요(Lass sie reden). 'sich (3격) etw. tun lassen'은 남에게 시켜서 하게 한다는 뜻이에요. lass dir die Haare schneiden은 '머리를 남에게 자르게 하라'는 말이에요. 동사원형 없이 'etw. irgendwo lassen'은 어디에 그대로 둔다는 뜻이에요(Lass die Schere in der Schublade). lassen과 함께 쓰는 동사원형은 문장 끝에 와요.",
+   "pattern": "lassen + 4격 + 동사원형 (허락·방임) · lassen + sich(3격) + 4격 + 동사원형 (사역) · lassen + 4격 + 장소 (그대로 두다)",
+   "examples": [
+    {
+     "de": "Lass sie reden.",
+     "ko": "남들이 뭐라 하든 내버려 두세요.",
+     "mark": [
+      "Lass",
+      "reden"
+     ],
+     "parts": [
+      [
+       "Lass",
+       "동사"
+      ],
+      [
+       "sie",
+       "4격 목적어"
+      ],
+      [
+       "reden.",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Lass die Schere in der Schublade und lass dir die Haare künftig von jemandem schneiden, der das Handwerk gelernt hat.",
+     "ko": "가위는 서랍에 넣어 두고, 앞으로는 그 일을 제대로 배운 사람에게 머리를 자르게 하세요.",
+     "mark": [
+      "Lass die Schere in der Schublade",
+      "lass dir die Haare",
+      "schneiden"
+     ],
+     "parts": [
+      [
+       "Lass",
+       "동사"
+      ],
+      [
+       "die Schere",
+       "4격 목적어"
+      ],
+      [
+       "in der Schublade",
+       "부사어(장소)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "lass",
+       "동사"
+      ],
+      [
+       "dir",
+       "3격 목적어"
+      ],
+      [
+       "die Haare",
+       "4격 목적어"
+      ],
+      [
+       "künftig",
+       "부사어(시간)"
+      ],
+      [
+       "von jemandem",
+       "기타"
+      ],
+      [
+       "schneiden,",
+       "동사(끝)"
+      ],
+      [
+       "der das Handwerk gelernt hat.",
+       "관계절"
+      ]
+     ]
+    }
+   ],
+   "tip": "sich lassen이 언제나 사역은 아니에요. Das lässt sich erklären(설명할 수 있다)은 수동의 뜻이에요. 반면 Wer lässt sich mit zwanzig schon … erklären, …?는 '누가 남의 설명을 듣고 있겠느냐', 곧 남의 설명을 받아들이지 않는다는 뜻이에요."
+  },
+  {
+   "title": "추측을 나타내는 화법조동사",
+   "term": "subjektiver Gebrauch der Modalverben: dürfte, müsste, könnte",
+   "explain": "dürfte, müsste, könnte는 허락·의무·능력이 아니라 말하는 사람의 추측을 나타낼 수 있어요. müsste는 '틀림없이 ~일 것이다'처럼 꽤 확실한 추측, dürfte는 '아마 ~일 것이다', könnte는 '~일 수도 있다'는 약한 추측이에요. 화법조동사는 2번 자리에, 동사원형은 문장 끝에 와요.",
+   "pattern": "주어 + dürfte/müsste/könnte + … + 동사원형(문장 끝)",
+   "examples": [
+    {
+     "de": "Um diese Uhrzeit dürftest du auf der Fensterbank deines Zimmers in der Wohngemeinschaft sitzen, neben dir eine längst kalt gewordene Tasse Tee und auf den Knien das Skript für die Statistikklausur.",
+     "ko": "이 시간이면 아마 셰어하우스 방의 창턱에 앉아 있을 거예요. 옆에는 벌써 식어 버린 차 한 잔이 있고, 무릎 위에는 통계학 시험 준비용 강의 자료가 놓여 있겠지요.",
+     "mark": [
+      "dürftest",
+      "sitzen"
+     ],
+     "parts": [
+      [
+       "Um diese Uhrzeit",
+       "부사어(시간)"
+      ],
+      [
+       "dürftest",
+       "동사"
+      ],
+      [
+       "du",
+       "주어"
+      ],
+      [
+       "auf der Fensterbank deines Zimmers in der Wohngemeinschaft",
+       "부사어(장소)"
+      ],
+      [
+       "sitzen,",
+       "동사(끝)"
+      ],
+      [
+       "neben dir eine längst kalt gewordene Tasse Tee und auf den Knien das Skript für die Statistikklausur.",
+       "기타"
+      ]
+     ]
+    },
+    {
+     "de": "Ruf sie an; sie müsste um diese Uhrzeit noch wach sein, denn sonntags verpasst sie niemals den Fernsehkrimi.",
+     "ko": "할머니께 전화하세요. 이 시간이면 틀림없이 아직 깨어 계실 거예요. 일요일마다 텔레비전 범죄 드라마를 한 번도 빼놓지 않고 보시니까요.",
+     "mark": [
+      "müsste",
+      "wach sein"
+     ]
+    },
+    {
+     "de": "Das könnte der wichtigste Satz dieses Briefes sein.",
+     "ko": "이게 이 편지에서 가장 중요한 문장일지도 몰라요.",
+     "mark": [
+      "könnte",
+      "sein"
+     ]
+    }
+   ],
+   "tip": "Das dürfte dich überraschen의 dürfte도 추측이에요. '놀라도 된다'가 아니라 '아마 놀랄 것이다'라는 뜻이에요."
+  },
+  {
+   "title": "수사 의문문",
+   "term": "Rhetorische Fragen",
+   "explain": "수사 의문문은 대답을 기대하지 않고 자기 생각을 강하게 전하는 질문이에요. 'Wer lässt sich … schon …?'은 '그런 사람은 거의 없다'는 뜻이고, schon이 그 느낌을 더해요. 'Woher ich das weiß?'처럼 의문사로 시작하면서 동사가 끝에 오는 질문은 상대가 물을 법한 질문을 대신 던지고 곧바로 답할 때 써요. 접속법 2식 질문(Hättest du … beachtet?)은 일어나지 않은 일을 두고 의심을 나타내요.",
+   "pattern": "Wer + 동사 + … schon …? · 의문사 + 주어 + … + 동사(끝)? · Hättest du … + 과거분사?",
+   "examples": [
+    {
+     "de": "Woher ich das weiß?",
+     "ko": "제가 그걸 어떻게 아느냐고요?",
+     "mark": [
+      "Woher",
+      "weiß"
+     ],
+     "parts": [
+      [
+       "Woher",
+       "의문사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "das",
+       "4격 목적어"
+      ],
+      [
+       "weiß?",
+       "동사(끝)"
+      ]
+     ]
+    },
+    {
+     "de": "Aber hättest du meine Warnungen überhaupt beachtet?",
+     "ko": "하지만 과연 제 경고에 귀를 기울였을까요?",
+     "mark": [
+      "hättest",
+      "überhaupt",
+      "beachtet"
+     ]
+    },
+    {
+     "de": "Wer lässt sich mit zwanzig schon von jemandem über vierzig erklären, worauf es im Leben ankommt?",
+     "ko": "스무 살에 마흔이 넘은 사람에게서 인생에서 무엇이 중요한지 설명을 들으려는 사람이 어디 있겠어요?",
+     "mark": [
+      "Wer",
+      "schon"
+     ]
+    }
+   ],
+   "tip": "Woher ich das weiß?는 Du fragst, woher ich das weiß?를 줄인 말이에요. 그래서 종속절처럼 동사가 끝에 와요."
+  },
+  {
+   "title": "과거에서 본 미래: würde + 동사원형",
+   "term": "Zukunft in der Vergangenheit (würde + Infinitiv)",
+   "explain": "과거의 어느 시점에서 그 뒤에 일어날 일을 말할 때 würde + 동사원형을 써요. niemand ahnte, dass … werden würde는 '그때는 아무도 … 되리라고 짐작하지 못했다'는 뜻이에요. 형태는 접속법 2식의 würde와 같지만, 여기서는 가정이 아니라 과거에서 바라본 미래예요. 그래서 실제로 일어난 일에도 써요.",
+   "pattern": "과거형 주문장 + dass / wohin … + 동사원형 + würde (문장 끝)",
+   "examples": [
+    {
+     "de": "Diese Angewohnheit hielt ich damals für harmlos, und niemand ahnte, dass aus der Zeichnerin in der letzten Reihe einmal eine Tischlermeisterin werden würde.",
+     "ko": "그때는 그게 대수롭지 않은 버릇이라고 생각했고, 맨 뒷줄에서 그림을 그리던 그 학생이 언젠가 목공 마이스터가 되리라고는 아무도 짐작하지 못했어요.",
+     "mark": [
+      "ahnte",
+      "werden würde"
+     ],
+     "parts": [
+      [
+       "Diese Angewohnheit",
+       "4격 목적어"
+      ],
+      [
+       "hielt",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "damals",
+       "부사어(시간)"
+      ],
+      [
+       "für harmlos,",
+       "보어"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "niemand",
+       "주어"
+      ],
+      [
+       "ahnte,",
+       "동사"
+      ],
+      [
+       "dass aus der Zeichnerin in der letzten Reihe einmal eine Tischlermeisterin werden würde.",
+       "종속절"
+      ]
+     ]
+    },
+    {
+     "de": "Hätte ich damals gewusst, wohin diese Kritzeleien führen würden, wäre mir manche Klausur erspart geblieben.",
+     "ko": "그 낙서가 어디로 이어질지 그때 알았더라면 시험 몇 개는 치르지 않아도 됐을 거예요.",
+     "mark": [
+      "führen würden"
+     ]
+    }
+   ],
+   "tip": "같은 würde라도 Wüsstest du alles im Voraus, würdest du vielleicht allen Umwegen ausweichen의 würdest는 가정(접속법 2식)이에요. 과거의 사실에서 앞일을 말하는지, 일어나지 않은 일을 가정하는지 문맥을 보고 구별해요."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "die Fensterbank, -¨e",
+   "ko": "창턱"
+  },
+  {
+   "de": "die Wohngemeinschaft, -en",
+   "ko": "셰어하우스, 공동 주거"
+  },
+  {
+   "de": "das Skript, -e",
+   "ko": "강의 자료, 강의 노트"
+  },
+  {
+   "de": "die Mitschrift, -en",
+   "ko": "필기 노트"
+  },
+  {
+   "de": "kritzeln",
+   "ko": "끄적거리다, 낙서하다"
+  },
+  {
+   "de": "die Angewohnheit, -en",
+   "ko": "버릇, 습관"
+  },
+  {
+   "de": "die Kostenrechnung (Sg.)",
+   "ko": "원가 계산"
+  },
+  {
+   "de": "erläutern",
+   "ko": "설명하다"
+  },
+  {
+   "de": "wunderlich",
+   "ko": "별난, 괴짜 같은"
+  },
+  {
+   "de": "ab|hängen von + Dat. (hängt ab, hing ab, hat abgehangen)",
+   "ko": "~에 달려 있다"
+  },
+  {
+   "de": "ab|brechen (bricht ab, brach ab, hat abgebrochen)",
+   "ko": "중단하다, 그만두다"
+  },
+  {
+   "de": "die Niederlage, -n",
+   "ko": "패배, 실패"
+  },
+  {
+   "de": "bereuen",
+   "ko": "후회하다"
+  },
+  {
+   "de": "nagen an + Dat.",
+   "ko": "갉아 먹다"
+  },
+  {
+   "de": "zu|gestehen + Dat. (gesteht zu, gestand zu, hat zugestanden)",
+   "ko": "(마지못해) 인정하다"
+  },
+  {
+   "de": "der Umweg, -e",
+   "ko": "돌아가는 길, 우회로"
+  },
+  {
+   "de": "aus|weichen + Dat. (weicht aus, wich aus, ist ausgewichen)",
+   "ko": "피하다"
+  },
+  {
+   "de": "vermeintlich",
+   "ko": "~인 줄로 여겨진, 겉보기에"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "etw. in Kauf nehmen",
+   "ko": "(불편이나 손해를) 감수하다",
+   "ex": "Inzwischen baue ich genau solche Stühle, für die manche Kunden ein halbes Jahr Wartezeit in Kauf nehmen.",
+   "exko": "지금 저는 바로 그런 의자를 만들고, 어떤 손님들은 그 의자를 받으려고 반년을 기다리는 것도 마다하지 않아요."
+  },
+  {
+   "de": "jdm. erspart bleiben",
+   "ko": "(어떤 일을) 겪지 않아도 되다",
+   "ex": "Hätte ich damals gewusst, wohin diese Kritzeleien führen würden, wäre mir manche Klausur erspart geblieben.",
+   "exko": "그 낙서가 어디로 이어질지 그때 알았더라면 시험 몇 개는 치르지 않아도 됐을 거예요."
+  },
+  {
+   "de": "so tun, als …",
+   "ko": "마치 ~인 것처럼 굴다",
+   "ex": "Im Augenblick tust du so, als hinge deine gesamte Zukunft von dieser einen Statistikklausur ab.",
+   "exko": "지금은 마치 이 통계학 시험 하나에 앞날 전체가 걸린 것처럼 굴고 있지요."
+  },
+  {
+   "de": "sich unter Wert verkaufen",
+   "ko": "자기 능력보다 낮게 평가받다, 능력을 썩히다",
+   "ex": "Im übernächsten Sommer brichst du das Studium ab, beginnst eine Tischlerlehre und musst dir von halb Göttingen anhören, du würdest dich unter Wert verkaufen.",
+   "exko": "내후년 여름에는 학업을 그만두고 목공 직업 교육을 시작해요. 그리고 괴팅겐 사람 절반에게서 능력을 썩힌다는 말을 듣게 돼요."
+  },
+  {
+   "de": "es kommt auf etw. (Akk.) an",
+   "ko": "~이 중요하다",
+   "ex": "Wer lässt sich mit zwanzig schon von jemandem über vierzig erklären, worauf es im Leben ankommt?",
+   "exko": "스무 살에 마흔이 넘은 사람에게서 인생에서 무엇이 중요한지 설명을 들으려는 사람이 어디 있겠어요?"
+  },
+  {
+   "de": "mit offenen Augen",
+   "ko": "제대로 알고, 깨어 있는 눈으로",
+   "ex": "Also mach deine Fehler, aber mach sie mit offenen Augen.",
+   "exko": "그러니 실수를 하세요. 다만 눈을 크게 뜨고 하세요."
+  }
+ ]
+}

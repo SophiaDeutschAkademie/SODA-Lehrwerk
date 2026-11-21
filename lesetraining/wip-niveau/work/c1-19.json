@@ -9,9 +9,9 @@
  "intro": "청소년이 책을 읽지 않는다는 신문 기고에 한 문학 연구자가 반론을 쓴 글이에요.",
  "focus": [
   "접속법 1식과 대체형",
-  "hätte … müssen",
+  "entgegen · ungeachtet · bei aller",
   "강한 부정",
-  "umso … als · zu … als dass"
+  "umso … als · je … desto"
  ],
  "paragraphs": [
   {
@@ -359,72 +359,82 @@
    "tip": "fordert Hellwig, versichert Hellwig처럼 '누가 말했는지'를 문장 중간이나 뒤에 끼워 넣을 수 있어요. 이 삽입 부분에서는 동사가 주어 앞에 와요. 필자 자신의 생각은 직설법으로 써서(Ich halte …, ich sehe …) 헬비히의 주장과 구별해요."
   },
   {
-   "title": "놓친 일 비판하기 – hätte + 동사원형 + 화법조동사",
-   "term": "Konjunktiv II der Vergangenheit mit Modalverb (Ersatzinfinitiv)",
-   "explain": "hätte … erwähnen müssen은 '언급했어야 했다(그런데 하지 않았다)'라는 뜻이에요. 과거에 하지 않은 일을 비판하거나 아쉬워할 때 써요. 화법조동사가 다른 동사와 함께 완료형이 되면 과거분사 gemusst, gekonnt 대신 동사원형 müssen, können을 써요. 이것을 대체 부정사(Ersatzinfinitiv)라고 해요. 주문장에서는 hätte가 2번 자리에 오고 두 동사원형은 문장 끝에 와요. 종속절에서는 hätte가 맨 끝으로 가지 않고 두 동사원형 앞에 와요.",
-   "pattern": "주문장: 주어 + hätte + … + 동사원형 + 화법조동사 원형 / 종속절: … + hätte + 동사원형 + 화법조동사 원형",
+   "title": "기대와 반대되는 내용 – entgegen · ungeachtet · bei aller",
+   "term": "Präpositionen entgegen (+ Dat.), ungeachtet (+ Gen.) · konzessives bei aller/allem (+ Dat.)",
+   "explain": "세 표현 모두 어떤 주장이나 사정을 앞에 두고, 그와 반대되거나 그것과 상관없이 성립하는 내용을 이어 가요. entgegen은 3격을 지배하고 '~와 달리, ~에 어긋나게'라는 뜻이에요(entgegen seiner Annahme). ungeachtet는 2격을 지배하고 '~에도 불구하고'라는 뜻으로, trotz보다 격식 있는 글말이에요. bei aller/allem + 3격은 '~을 아무리 인정하더라도'라는 양보의 뜻이에요. 이때 bei는 장소가 아니라 양보를 나타내요.",
+   "pattern": "entgegen + 3격 / ungeachtet + 2격 / bei aller(여성 명사)·allem(남성·중성 명사) + 3격",
    "examples": [
     {
-     "de": "Hellwig hätte zumindest erwähnen müssen, dass die Leseförderung in vielen Kommunen seit Jahren dem Rotstift zum Opfer fällt.",
-     "ko": "헬비히는 적어도 많은 지방자치단체에서 독서 진흥 예산이 몇 년째 삭감되고 있다는 사실은 언급했어야 합니다.",
+     "de": "Entgegen Hellwigs Behauptung bewältigen viele Jugendliche längere Texte durchaus.",
+     "ko": "헬비히의 주장과 달리 많은 청소년은 긴 글도 충분히 소화합니다.",
      "mark": [
-      "hätte",
-      "erwähnen müssen"
+      "Entgegen Hellwigs Behauptung"
      ],
      "parts": [
       [
-       "Hellwig",
-       "주어"
+       "Entgegen Hellwigs Behauptung",
+       "부사어"
       ],
       [
-       "hätte",
+       "bewältigen",
        "동사"
       ],
       [
-       "zumindest",
+       "viele Jugendliche",
+       "주어"
+      ],
+      [
+       "längere Texte",
+       "4격 목적어"
+      ],
+      [
+       "durchaus.",
        "기타"
-      ],
-      [
-       "erwähnen müssen,",
-       "동사(끝)"
-      ],
-      [
-       "dass die Leseförderung in vielen Kommunen seit Jahren dem Rotstift zum Opfer fällt.",
-       "종속절"
       ]
      ]
     },
     {
-     "de": "genau diese Form des Lesens erfasst die Befragung nicht, was Hellwig bei genauerer Betrachtung hätte bemerken können",
-     "ko": "바로 이런 형태의 읽기를 그 설문 조사는 담아내지 못하며, 헬비히가 조금만 더 자세히 살펴보았다면 이 점을 알아챌 수 있었을 것입니다",
+     "de": "Ungeachtet aller Klagen über die schwindende Konzentrationsfähigkeit lesen sie diese Bücher nicht etwa nebenbei",
+     "ko": "집중력이 떨어지고 있다는 온갖 한탄에도 이들은 이 책들을 다른 일을 하며 대충 읽는 것이 아닙니다",
      "mark": [
-      "hätte bemerken können"
+      "Ungeachtet aller Klagen"
      ],
      "parts": [
       [
-       "genau diese Form des Lesens",
-       "4격 목적어"
+       "Ungeachtet aller Klagen über die schwindende Konzentrationsfähigkeit",
+       "부사어"
       ],
       [
-       "erfasst",
+       "lesen",
        "동사"
       ],
       [
-       "die Befragung",
+       "sie",
        "주어"
       ],
       [
-       "nicht,",
+       "diese Bücher",
+       "4격 목적어"
+      ],
+      [
+       "nicht etwa",
        "부정어"
       ],
       [
-       "was Hellwig bei genauerer Betrachtung hätte bemerken können",
-       "관계절"
+       "nebenbei",
+       "부사어(방법)"
       ]
+     ]
+    },
+    {
+     "de": "Bei aller Wertschätzung für Fontane halte ich es daher für klüger",
+     "ko": "그래서 저는 폰타네를 아무리 높이 평가하더라도 … 편이 더 현명하다고 생각합니다",
+     "mark": [
+      "Bei aller Wertschätzung"
      ]
     }
    ],
-   "tip": "hätte … können은 '할 수 있었을 텐데', hätte … sollen은 '했어야 했는데'라는 뜻이에요. 반론 글에서는 상대가 놓친 점을 짚을 때 자주 보여요."
+   "tip": "entgegen은 명사 뒤에 둘 수도 있어요(seiner Annahme entgegen). Bei allem Respekt, …처럼 bei aller/allem은 상대를 존중하면서 반대 의견을 꺼낼 때도 자주 써요."
   },
   {
    "title": "강한 부정과 바로잡는 부정 – keineswegs · mitnichten · nicht etwa",
@@ -506,10 +516,10 @@
    "tip": "keineswegs와 mitnichten은 그 자체로 부정어라서 nicht를 함께 쓰지 않아요. dass alles in Ordnung wäre처럼 부정된 내용을 접속법 2식으로 써서 사실이 아니라는 뜻을 더 분명히 할 수도 있어요."
   },
   {
-   "title": "비교가 아닌 als – umso …, als · zu …, als dass",
-   "term": "umso + Komparativ, als … / zu …, als dass … (Konjunktiv II)",
-   "explain": "umso + 비교급, als …는 '~이기 때문에 더욱 ~하다'라는 뜻이에요. als 절이 그 이유를 말하고, 동사는 als 절 끝에 와요. zu + 형용사·부사, als dass …는 '너무 ~해서 …할 수 없다'라는 뜻이에요. 정도가 지나치거나 모자라서 어떤 결과가 나올 수 없다는 말이라, als dass 절에는 대개 접속법 2식(könnte, wäre)을 써요. 두 구문 모두 als를 '~보다'로 옮기면 뜻이 통하지 않아요.",
-   "pattern": "… umso + 비교급, als + … + 동사(끝) / … zu + 형용사·부사, als dass + … + 접속법 2식(끝)",
+   "title": "더해지는 이유와 비례 – umso …, als · je …, desto",
+   "term": "umso + Komparativ, als … / je + Komparativ …, desto + Komparativ …",
+   "explain": "umso + 비교급, als …는 '~이기 때문에 더욱 ~하다'라는 뜻이에요. als 절이 그 이유를 말하고, 동사는 als 절 끝에 와요. 이 als는 '~보다'라는 비교의 뜻이 아니에요. je + 비교급 …, desto + 비교급 …은 '~할수록 더 ~하다'예요. je 절은 종속절이라 동사가 끝에 오고, desto 절에서는 desto + 비교급이 1번 자리를 차지해서 바로 뒤에 동사가 와요.",
+   "pattern": "… umso + 비교급, als + … + 동사(끝) / Je + 비교급 … 동사(끝), desto + 비교급 + 동사 + 주어 …",
    "examples": [
     {
      "de": "Das ist umso bedauerlicher, als gerade hier Kitas, Schulen und Stadtbibliotheken viel bewirken könnten",
@@ -538,42 +548,45 @@
      ]
     },
     {
-     "de": "doch geben die Zahlen der Befragung viel zu wenig her, als dass man daraus den Niedergang des Lesens ableiten könnte",
-     "ko": "그러나 그 설문 조사의 수치는 읽기가 쇠퇴하고 있다는 결론을 끌어내기에는 턱없이 부족합니다",
+     "de": "Je früher sie den Anschluss an längere Texte verlieren, desto weniger trauen sie sich später zu.",
+     "ko": "긴 글을 따라가지 못하게 되는 시기가 이를수록 아이들은 나중에 스스로를 그만큼 덜 믿게 됩니다.",
      "mark": [
-      "viel zu wenig",
-      "als dass",
-      "könnte"
+      "Je früher",
+      "desto weniger"
      ],
      "parts": [
       [
-       "doch",
-       "접속부사"
+       "Je früher sie den Anschluss an längere Texte verlieren,",
+       "종속절"
       ],
       [
-       "geben",
-       "동사"
-      ],
-      [
-       "die Zahlen der Befragung",
-       "주어"
-      ],
-      [
-       "viel zu wenig",
+       "desto weniger",
        "4격 목적어"
       ],
       [
-       "her,",
-       "동사(끝)"
+       "trauen",
+       "동사"
       ],
       [
-       "als dass man daraus den Niedergang des Lesens ableiten könnte",
-       "종속절"
+       "sie",
+       "주어"
+      ],
+      [
+       "sich",
+       "재귀대명사"
+      ],
+      [
+       "später",
+       "부사어(시간)"
+      ],
+      [
+       "zu.",
+       "동사(끝)"
       ]
      ]
     }
    ],
-   "tip": "zu …, als dass는 zu …, um … zu로 바꿔 쓸 수도 있어요(Die Zahlen geben zu wenig her, um daraus den Niedergang des Lesens abzuleiten). umso …, als의 als 절은 앞 문장의 평가를 더 강하게 만드는 이유를 덧붙여요."
+   "tip": "je …, desto 대신 je …, umso도 같은 뜻으로 써요. sich etwas zutrauen(스스로 ~을 해낼 수 있다고 믿다)에서는 weniger가 목적어 자리를 채워서 desto weniger 전체가 1번 자리에 와요."
   }
  ],
  "vocab": [
@@ -663,49 +676,49 @@
    "de": "nichts zu wünschen übrig lassen",
    "ko": "부족한 점이 없다, 나무랄 데 없다",
    "ex": "„Das letzte Kapitel“ hat Bernd Hellwig seinen Beitrag überschrieben, und an Deutlichkeit lässt er nichts zu wünschen übrig.",
-   "exko": "베른트 헬비히는 자신의 기고문에 「마지막 장」이라는 제목을 붙였고, 분명함에서는 더할 나위가 없어요."
+   "exko": "베른트 헬비히는 자신의 기고문에 「마지막 장」이라는 제목을 붙였고, 분명함에서는 더할 나위가 없습니다."
   },
   {
    "de": "einer Sache den Rücken kehren",
    "ko": "~에 등을 돌리다, ~을 외면하다",
    "ex": "Von einer Jugend, die dem Lesen den Rücken kehrt, kann jedoch mitnichten die Rede sein.",
-   "exko": "그러나 읽기에 등을 돌린 청소년 세대라는 말은 결코 맞지 않아요."
+   "exko": "그러나 읽기에 등을 돌린 청소년 세대라는 말은 결코 맞지 않습니다."
   },
   {
    "de": "den Anschluss an etwas verlieren",
    "ko": "~을 따라가지 못하게 되다, ~에서 뒤처지다",
    "ex": "Je früher sie den Anschluss an längere Texte verlieren, desto weniger trauen sie sich später zu.",
-   "exko": "긴 글을 따라가지 못하게 되는 시기가 이를수록 아이들은 나중에 스스로를 그만큼 덜 믿게 돼요."
+   "exko": "긴 글을 따라가지 못하게 되는 시기가 이를수록 아이들은 나중에 스스로를 그만큼 덜 믿게 됩니다."
   },
   {
    "de": "kein Wort über etwas verlieren",
    "ko": "~에 대해 한마디도 하지 않다",
    "ex": "Diese Kluft verläuft nicht zwischen Smartphone und Buch, sondern zwischen Familien, und über diese Ungleichheit verliert Hellwig kein Wort.",
-   "exko": "이 격차는 스마트폰과 책 사이가 아니라 가정과 가정 사이에 있는데, 헬비히는 이 불평등에 대해 한마디도 하지 않아요."
+   "exko": "이 격차는 스마트폰과 책 사이가 아니라 가정과 가정 사이에 있는데, 헬비히는 이 불평등에 대해 한마디도 하지 않습니다."
   },
   {
    "de": "dem Rotstift zum Opfer fallen",
    "ko": "예산 삭감으로 없어지거나 줄어들다",
    "ex": "Hellwig hätte zumindest erwähnen müssen, dass die Leseförderung in vielen Kommunen seit Jahren dem Rotstift zum Opfer fällt.",
-   "exko": "헬비히는 적어도 많은 지방자치단체에서 독서 진흥 예산이 몇 년째 삭감되고 있다는 사실은 언급했어야 해요."
+   "exko": "헬비히는 적어도 많은 지방자치단체에서 독서 진흥 예산이 몇 년째 삭감되고 있다는 사실은 언급했어야 합니다."
   },
   {
    "de": "jemandem den Spaß verderben",
    "ko": "~의 재미를 망치다",
    "ex": "Er wolle niemandem den Spaß verderben, versichert Hellwig; zugleich fordert er Verbote, als ließe sich die Lust am Lesen erzwingen.",
-   "exko": "헬비히는 누구의 재미도 망칠 생각이 없다고 힘주어 말하면서도, 마치 읽는 즐거움을 억지로 만들어 낼 수 있다는 듯 금지를 요구해요."
+   "exko": "헬비히는 누구의 재미도 망칠 생각이 없다고 힘주어 말하면서도, 마치 읽는 즐거움을 억지로 만들어 낼 수 있다는 듯 금지를 요구합니다."
   },
   {
    "de": "nicht von der Hand zu weisen sein",
    "ko": "부정할 수 없다, 일리가 있다",
    "ex": "Eine Verschiebung der Lesegewohnheiten ist nicht von der Hand zu weisen",
-   "exko": "읽는 습관이 바뀌고 있다는 점은 부정할 수 없어요"
+   "exko": "읽는 습관이 바뀌고 있다는 점은 부정할 수 없습니다"
   },
   {
    "de": "sich nicht wundern dürfen",
    "ko": "이상하게 여길 수 없다, 당연한 결과로 받아들여야 하다",
    "ex": "Wer Jugendliche stattdessen für verloren erklärt, darf sich nicht wundern, wenn sie ihm nicht mehr zuhören",
-   "exko": "그러지 않고 청소년들을 가망 없다고 단정하는 사람이라면, 그들이 더는 자기 말에 귀 기울이지 않더라도 이상하게 여겨서는 안 돼요"
+   "exko": "그러지 않고 청소년들을 가망 없다고 단정하는 사람이라면, 그들이 더는 자기 말에 귀 기울이지 않더라도 이상하게 여겨서는 안 됩니다"
   }
  ]
 }

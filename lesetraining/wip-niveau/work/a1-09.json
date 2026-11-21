@@ -28,7 +28,7 @@
   },
   {
    "de": "Gestern hatten wir Pech: Es hat den ganzen Tag geregnet, und wir hatten keinen Regenschirm dabei. Wir waren alle nass, dann sind wir ins Museum gegangen, denn dort war es trocken.",
-   "ko": "어제는 운이 없었어요. 하루 종일 비가 왔는데 우리는 우산을 가지고 있지 않았어요. 우리는 모두 젖었고, 그다음에 박물관에 갔어요. 거기는 비를 맞지 않았거든요."
+   "ko": "어제는 운이 없었어요. 하루 종일 비가 왔는데 우리는 우산을 가지고 있지 않았어요. 우리는 모두 젖었고, 그다음에 박물관에 갔어요. 거기는 비를 피할 수 있었거든요."
   },
   {
    "de": "Heute scheint die Sonne wieder, und wir sind alle am Strand. Die Kinder baden im Meer, Paul liest oder schläft, und ich sitze im Strandkorb und schreibe dir diese Karte.",
@@ -45,7 +45,7 @@
   },
   {
    "style": "meta",
-   "de": "deine Jutta",
+   "de": "Deine Jutta",
    "ko": "유타 드림"
   }
  ],
@@ -69,7 +69,7 @@
    "kind": "detail",
    "q": "Was hat die Familie am Dienstag gemacht?",
    "options": [
-    "Sie hat eine lange Zugfahrt gemacht.",
+    "Sie war den ganzen Tag im Museum.",
     "Sie hat am Strand im Meer gebadet.",
     "Sie war mit dem Fahrrad unterwegs."
    ],
@@ -79,27 +79,35 @@
     [
      "eine Radtour",
      "mit dem Fahrrad unterwegs"
+    ],
+    [
+     "dann sind wir ins Museum gegangen",
+     "Sie war den ganzen Tag im Museum."
     ]
    ],
-   "explain": "화요일에 가족은 자전거 여행(Radtour)을 했어요. 이것을 '자전거를 타고 다녔다'(mit dem Fahrrad unterwegs)로 바꿔 말했어요. 기차는 뤼겐섬에 올 때 탔고, 바다에서 물놀이는 오늘 아이들이 하는 일이에요."
+   "explain": "화요일에 가족은 자전거 여행(Radtour)을 했어요. 이것을 '자전거를 타고 다녔어요'(mit dem Fahrrad unterwegs)로 바꿔 말했어요. 박물관에는 하루 종일 비가 온 어제 갔고, 바다에서 물놀이는 오늘 아이들이 하는 일이에요."
   },
   {
    "type": "rf",
    "kind": "detail",
-   "q": "Nach der Radtour hat die Familie etwas gegessen.",
+   "q": "Nach dem Ausflug an die Küste hat die Familie etwas gegessen.",
    "answer": 0,
    "evidence": "Danach haben wir am Hafen Fischbrötchen gegessen.",
    "pairs": [
     [
      "Danach",
-     "Nach der Radtour"
+     "Nach dem Ausflug an die Küste"
+    ],
+    [
+     "eine Radtour an die Kreideküste",
+     "dem Ausflug an die Küste"
     ],
     [
      "Fischbrötchen",
      "etwas"
     ]
    ],
-   "explain": "자전거 여행 다음에(Danach) 가족은 항구에서 생선 샌드위치(Fischbrötchen)를 먹었어요. 문제에서는 Danach를 '자전거 여행 뒤에'(Nach der Radtour)로, Fischbrötchen을 '무언가'(etwas)로 바꿔 말했어요."
+   "explain": "가족은 화요일에 백악 해안(Kreideküste)으로 자전거 여행을 했고, 그다음에(Danach) 항구에서 생선 샌드위치(Fischbrötchen)를 먹었어요. 문제에서는 이 여행을 '해안 나들이'(der Ausflug an die Küste)로, Danach를 '나들이 뒤에'(Nach dem Ausflug)로, Fischbrötchen을 '무언가'(etwas)로 바꿔 말했어요."
   },
   {
    "type": "mc",
@@ -108,21 +116,21 @@
    "options": [
     "Die Kinder haben im Meer gebadet.",
     "Im Museum war es kalt und nass.",
-    "Sie war bei Regen ohne Schirm."
+    "Sie war ohne Schirm im Regen."
    ],
    "answer": 2,
    "evidence": "Es hat den ganzen Tag geregnet, und wir hatten keinen Regenschirm dabei.",
    "pairs": [
     [
      "geregnet",
-     "bei Regen"
+     "im Regen"
     ],
     [
      "hatten keinen Regenschirm dabei",
      "ohne Schirm"
     ]
    ],
-   "explain": "어제는 하루 종일 비가 왔는데 우산이 없었어요. '비가 왔다'(geregnet)를 '비가 올 때'(bei Regen)로, '우산을 가지고 있지 않았다'(keinen Regenschirm dabei)를 '우산 없이'(ohne Schirm)로 바꿔 말했어요. 바다 물놀이는 오늘 하는 일이고, 박물관 안은 젖지 않는 곳이었어요(dort war es trocken)."
+   "explain": "어제는 하루 종일 비가 왔는데 우산이 없었어요. 비가 온 것(geregnet)을 '비를 맞으며'(im Regen)로, 우산을 가지고 있지 않은 것(keinen Regenschirm dabei)을 '우산 없이'(ohne Schirm)로 바꿔 말했어요. 바다 물놀이는 오늘 하는 일이고, 박물관 안은 젖지 않는 곳이었어요(dort war es trocken)."
   },
   {
    "type": "mc",
@@ -243,7 +251,7 @@
     },
     {
      "de": "Wir waren alle nass, dann sind wir ins Museum gegangen, denn dort war es trocken.",
-     "ko": "우리는 모두 젖었고, 그다음에 박물관에 갔어요. 거기는 비를 맞지 않았거든요.",
+     "ko": "우리는 모두 젖었고, 그다음에 박물관에 갔어요. 거기는 비를 피할 수 있었거든요.",
      "mark": [
       "sind",
       "gegangen"
@@ -255,7 +263,7 @@
   {
    "title": "sein과 haben의 과거형: war, hatte",
    "term": "Präteritum von sein und haben",
-   "explain": "sein과 haben은 지난 일을 말할 때 현재완료보다 과거형을 훨씬 자주 써요. sein은 ich/er war, du warst, wir/sie waren이고, haben은 ich/er hatte, du hattest, wir/sie hatten이에요. 과거형에서는 ich와 er/sie/es의 모양이 같아요. 그래서 한 편지 안에서 war·hatte(과거형)와 haben … gemacht(현재완료)가 함께 나와요.",
+   "explain": "sein과 haben은 지난 일을 말할 때 현재완료보다 과거형을 훨씬 자주 써요. 그래서 한 편지 안에서 war·hatte(과거형)와 haben … gemacht(현재완료)가 함께 나와요. sein의 과거형은 ich/er/sie/es war, wir/sie/Sie waren이고, haben의 과거형은 ich/er/sie/es hatte, wir/sie/Sie hatten이에요. 과거형에서는 ich와 er/sie/es의 모양이 같아요.",
    "pattern": "ich / er / sie / es war · wir / sie waren · ich / er / sie / es hatte · wir / sie hatten",
    "examples": [
     {
@@ -329,7 +337,7 @@
      ]
     }
    ],
-   "tip": "es gibt(~가 있다)의 과거는 보통 es gab이라고 해요. A1에서는 war와 hatte를 먼저 확실히 익혀요."
+   "tip": "du와 ihr의 모양도 알아 두세요: du warst, ihr wart, du hattest, ihr hattet. sein과 haben도 현재완료(ist … gewesen, hat … gehabt)로 말할 수 있지만, war와 hatte보다 덜 써요."
   },
   {
    "title": "denn(이유)과 dann(그다음에)",
@@ -339,7 +347,7 @@
    "examples": [
     {
      "de": "Wir waren alle nass, dann sind wir ins Museum gegangen, denn dort war es trocken.",
-     "ko": "우리는 모두 젖었고, 그다음에 박물관에 갔어요. 거기는 비를 맞지 않았거든요.",
+     "ko": "우리는 모두 젖었고, 그다음에 박물관에 갔어요. 거기는 비를 피할 수 있었거든요.",
      "mark": [
       "dann sind wir",
       "denn dort war es"

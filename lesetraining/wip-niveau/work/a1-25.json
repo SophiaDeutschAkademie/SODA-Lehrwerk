@@ -1,0 +1,493 @@
+{
+ "id": "a1-25",
+ "level": "A1",
+ "no": 25,
+ "title": "Was für ein Tag!",
+ "titleKo": "정말 대단한 하루!",
+ "type": "Tagebucheintrag",
+ "typeKo": "일기",
+ "intro": "늦잠으로 시작해서 일이 계속 꼬인 하루를 적은 일기예요.",
+ "focus": [
+  "bei + 3격",
+  "schon · noch nicht · erst",
+  "zum Glück · leider"
+ ],
+ "paragraphs": [
+  {
+   "style": "meta",
+   "de": "Dienstag, 4. März",
+   "ko": "3월 4일 화요일"
+  },
+  {
+   "de": "Was für ein Tag! Heute Morgen habe ich verschlafen, denn ich habe mein Telefon nicht gehört. Erst um acht Uhr bin ich aufgestanden und hatte keine Zeit fürs Frühstück. Ich bin schnell zur Haltestelle gelaufen, aber leider ist der Bus ohne mich abgefahren. Ich habe ihn verpasst!",
+   "ko": "정말 대단한 하루였어요! 오늘 아침에 늦잠을 잤어요. 휴대폰 알람 소리를 못 들었거든요. 여덟 시가 되어서야 일어났고, 아침을 먹을 시간이 없었어요. 정류장까지 빨리 뛰어갔지만, 아쉽게도 버스는 저를 두고 떠나 버렸어요. 버스를 놓쳤어요!"
+  },
+  {
+   "de": "Also bin ich zu Fuß ins Büro gegangen. Dort habe ich bis sechs Uhr gearbeitet, und am Abend bin ich müde nach Hause gekommen. Aber ich hatte meinen Schlüssel nicht bei mir. Ich habe ihn im Büro vergessen!",
+   "ko": "그래서 걸어서 사무실에 갔어요. 거기에서 여섯 시까지 일했고, 저녁에 피곤한 몸으로 집에 왔어요. 그런데 열쇠를 가지고 있지 않았어요. 열쇠를 사무실에 두고 왔어요!"
+  },
+  {
+   "de": "Zum Glück war meine Nachbarin Frau Kruse zu Hause. Bei ihr habe ich meine Kollegin Tilda angerufen, und Frau Kruse hat Tee für uns gekocht. Nach einer Stunde ist Tilda gekommen und hat mir den Schlüssel gebracht. Jetzt ist es schon elf Uhr, aber ich habe noch nicht gegessen. Gute Nacht!",
+   "ko": "다행히 이웃 크루제 씨가 집에 계셨어요. 그 집에서 동료 틸다에게 전화했고, 크루제 씨는 우리가 마실 차를 끓여 주셨어요. 한 시간 뒤에 틸다가 와서 열쇠를 가져다줬어요. 지금 벌써 열한 시인데 아직 밥을 못 먹었어요. 잘 자요!"
+  }
+ ],
+ "questions": [
+  {
+   "type": "rf",
+   "kind": "detail",
+   "q": "Die Person hat heute nicht gefrühstückt.",
+   "answer": 0,
+   "evidence": "Erst um acht Uhr bin ich aufgestanden und hatte keine Zeit fürs Frühstück.",
+   "pairs": [
+    [
+     "hatte keine Zeit fürs Frühstück",
+     "hat heute nicht gefrühstückt"
+    ]
+   ],
+   "explain": "글쓴이는 여덟 시에야 일어나서 아침을 먹을 시간이 없었다고 해요(hatte keine Zeit fürs Frühstück). 명사 Frühstück(아침 식사)을 동사 frühstücken(아침을 먹다)으로 바꿔 말했어요. 그래서 맞는 말이에요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Warum ist die Person zu Fuß ins Büro gegangen?",
+   "options": [
+    "Sie hat den Bus nicht mehr bekommen.",
+    "Sie hatte am Morgen noch viel Zeit.",
+    "Der Bus ist am Morgen nicht gefahren."
+   ],
+   "answer": 0,
+   "evidence": "Ich habe ihn verpasst!",
+   "pairs": [
+    [
+     "Ich habe ihn verpasst",
+     "hat den Bus nicht mehr bekommen"
+    ],
+    [
+     "der Bus ohne mich abgefahren",
+     "Der Bus ist am Morgen nicht gefahren"
+    ]
+   ],
+   "explain": "글쓴이가 정류장에 갔을 때 버스는 글쓴이를 두고 떠났어요(leider ist der Bus ohne mich abgefahren). 버스를 놓친 거예요(Ich habe ihn verpasst). verpassen(놓치다)을 den Bus nicht mehr bekommen(버스를 못 탔다)으로 바꿔 말했어요. 버스는 다녔지만 글쓴이 없이 떠났어요. 그리고 글쓴이는 아침에 시간이 없었어요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Die Person war um acht Uhr schon im Büro.",
+   "answer": 1,
+   "evidence": "Erst um acht Uhr bin ich aufgestanden",
+   "pairs": [
+    [
+     "Erst um acht Uhr bin ich aufgestanden",
+     "war um acht Uhr schon im Büro"
+    ]
+   ],
+   "explain": "글쓴이는 여덟 시가 되어서야 일어났어요(Erst um acht Uhr bin ich aufgestanden). 여덟 시에 막 일어났으니까 그때 사무실에 있을 수 없어요. 그래서 틀려요."
+  },
+  {
+   "type": "mc",
+   "kind": "detail",
+   "q": "Wer hat am Abend den Schlüssel gebracht?",
+   "options": [
+    "ihre Nachbarin Frau Kruse",
+    "eine Frau von ihrer Arbeit",
+    "Tilda und Frau Kruse zusammen"
+   ],
+   "answer": 1,
+   "evidence": "Nach einer Stunde ist Tilda gekommen und hat mir den Schlüssel gebracht.",
+   "pairs": [
+    [
+     "meine Kollegin Tilda",
+     "eine Frau von ihrer Arbeit"
+    ]
+   ],
+   "explain": "열쇠를 가져온 사람은 틸다예요(Tilda … hat mir den Schlüssel gebracht). 틸다는 글쓴이의 동료(Kollegin)예요. 그래서 '직장에서 같이 일하는 여자'(eine Frau von ihrer Arbeit)가 맞아요. 크루제 씨는 이웃이고 집에서 차를 끓였어요. 열쇠는 틸다 혼자 가져왔어요."
+  },
+  {
+   "type": "rf",
+   "kind": "inference",
+   "q": "Bei Frau Kruse hat die Person zu Abend gegessen.",
+   "answer": 1,
+   "evidence": "aber ich habe noch nicht gegessen",
+   "pairs": [
+    [
+     "hat Tee für uns gekocht",
+     "hat die Person zu Abend gegessen"
+    ],
+    [
+     "noch nicht gegessen",
+     "zu Abend gegessen"
+    ]
+   ],
+   "explain": "크루제 씨는 차만 끓여 주었어요(Frau Kruse hat Tee für uns gekocht). 그리고 밤 열한 시에도 글쓴이는 아직 밥을 못 먹었다고 해요(ich habe noch nicht gegessen). 그래서 크루제 씨 집에서 저녁을 먹었다는 말은 틀려요."
+  },
+  {
+   "type": "mc",
+   "kind": "gist",
+   "q": "Welcher Satz passt am besten zu diesem Tag?",
+   "options": [
+    "Sie hatte Probleme, aber auch Hilfe.",
+    "Sie hatte einen ruhigen Tag im Büro.",
+    "Sie hatte keine Probleme, nur wenig Zeit."
+   ],
+   "answer": 0,
+   "evidence": "Was für ein Tag!",
+   "pairs": [
+    [
+     "Zum Glück war meine Nachbarin Frau Kruse zu Hause",
+     "aber auch Hilfe"
+    ]
+   ],
+   "explain": "글쓴이는 늦잠을 자고, 버스를 놓치고, 열쇠도 사무실에 두고 왔어요. 문제가 많았지만 이웃 크루제 씨와 동료 틸다가 도와주었어요(Zum Glück …). 그래서 '문제도 있었지만 도움도 받았어요'가 맞아요. 하루가 조용하지 않았고, 문제가 없었던 것도 아니에요."
+  }
+ ],
+ "grammar": [
+  {
+   "title": "bei + 3격 – 누구의 집에서, 몸에 지니고",
+   "term": "bei + Dativ (bei ihr, bei mir)",
+   "explain": "bei는 3격과 함께 써요. 사람 앞에 bei를 쓰면 '그 사람의 집에서, 그 사람 곁에서'라는 뜻이에요(Bei ihr = 크루제 씨 집에서). 물건과 함께 bei mir haben이라고 하면 '내가 가지고 있다'라는 뜻이에요. 그래서 nicht bei mir는 열쇠를 가지고 있지 않았다는 말이에요. 대명사는 3격 모양으로 써요(mir, dir, ihm, ihr, uns, Ihnen).",
+   "pattern": "bei + 3격 (bei mir · bei ihr · bei Frau Kruse)",
+   "examples": [
+    {
+     "de": "Aber ich hatte meinen Schlüssel nicht bei mir.",
+     "ko": "그런데 열쇠를 가지고 있지 않았어요.",
+     "mark": [
+      "bei mir"
+     ],
+     "parts": [
+      [
+       "Aber",
+       "접속사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "hatte",
+       "동사"
+      ],
+      [
+       "meinen Schlüssel",
+       "4격 목적어"
+      ],
+      [
+       "nicht",
+       "부정어"
+      ],
+      [
+       "bei mir.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Bei ihr habe ich meine Kollegin Tilda angerufen, und Frau Kruse hat Tee für uns gekocht.",
+     "ko": "그 집에서 동료 틸다에게 전화했고, 크루제 씨는 우리가 마실 차를 끓여 주셨어요.",
+     "mark": [
+      "Bei ihr"
+     ],
+     "parts": [
+      [
+       "Bei ihr",
+       "부사어(장소)"
+      ],
+      [
+       "habe",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "meine Kollegin Tilda",
+       "4격 목적어"
+      ],
+      [
+       "angerufen,",
+       "동사(끝)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "Frau Kruse",
+       "주어"
+      ],
+      [
+       "hat",
+       "동사"
+      ],
+      [
+       "Tee",
+       "4격 목적어"
+      ],
+      [
+       "für uns",
+       "부사어"
+      ],
+      [
+       "gekocht.",
+       "동사(끝)"
+      ]
+     ]
+    }
+   ],
+   "tip": "bei와 zu를 헷갈리지 마세요. bei Frau Kruse는 '크루제 씨 집에(서)', zu Frau Kruse는 '크루제 씨 집으로'예요(bei Frau Kruse sein, zu Frau Kruse gehen)."
+  },
+  {
+   "title": "schon · noch nicht · erst",
+   "term": "schon, noch nicht, erst",
+   "explain": "schon은 '벌써, 이미'라는 뜻이에요. 그 반대는 noch nicht(아직 ~하지 않았다)예요. erst는 시간 앞에서 '~이 되어서야'라는 뜻이에요. 생각보다 늦다는 느낌을 줘요.",
+   "pattern": "schon ↔ noch nicht · erst + 시간",
+   "examples": [
+    {
+     "de": "Erst um acht Uhr bin ich aufgestanden und hatte keine Zeit fürs Frühstück.",
+     "ko": "여덟 시가 되어서야 일어났고, 아침을 먹을 시간이 없었어요.",
+     "mark": [
+      "Erst um acht Uhr"
+     ],
+     "parts": [
+      [
+       "Erst um acht Uhr",
+       "부사어(시간)"
+      ],
+      [
+       "bin",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "aufgestanden",
+       "동사(끝)"
+      ],
+      [
+       "und",
+       "접속사"
+      ],
+      [
+       "hatte",
+       "동사"
+      ],
+      [
+       "keine Zeit fürs Frühstück.",
+       "4격 목적어"
+      ]
+     ]
+    },
+    {
+     "de": "Jetzt ist es schon elf Uhr, aber ich habe noch nicht gegessen.",
+     "ko": "지금 벌써 열한 시인데 아직 밥을 못 먹었어요.",
+     "mark": [
+      "schon",
+      "noch nicht"
+     ],
+     "parts": [
+      [
+       "Jetzt",
+       "부사어(시간)"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "es",
+       "주어"
+      ],
+      [
+       "schon",
+       "부사어(시간)"
+      ],
+      [
+       "elf Uhr,",
+       "보어"
+      ],
+      [
+       "aber",
+       "접속사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "habe",
+       "동사"
+      ],
+      [
+       "noch nicht",
+       "부정어"
+      ],
+      [
+       "gegessen.",
+       "동사(끝)"
+      ]
+     ]
+    }
+   ],
+   "tip": "erst와 nur를 헷갈리지 마세요. 시간이 생각보다 늦을 때는 erst를 써요(erst um acht Uhr). 양이나 수가 적을 때는 nur를 써요."
+  },
+  {
+   "title": "zum Glück · leider – 다행인 일과 아쉬운 일",
+   "term": "zum Glück und leider",
+   "explain": "zum Glück은 '다행히', leider는 '아쉽게도, 안타깝게도'라는 뜻이에요. 글쓴이가 그 일을 어떻게 느끼는지 보여 줘요. 이 말은 문장 맨 앞에도 오고 동사 뒤에도 와요. 맨 앞에 오면 동사가 바로 뒤에 오고 주어는 동사 다음에 와요(Zum Glück war meine Nachbarin …, leider ist der Bus …). aber 바로 뒤에 와도 leider가 1번 자리예요.",
+   "pattern": "Zum Glück + 동사 + 주어 … / 주어 + 동사 + leider …",
+   "examples": [
+    {
+     "de": "Zum Glück war meine Nachbarin Frau Kruse zu Hause.",
+     "ko": "다행히 이웃 크루제 씨가 집에 계셨어요.",
+     "mark": [
+      "Zum Glück"
+     ],
+     "parts": [
+      [
+       "Zum Glück",
+       "부사어"
+      ],
+      [
+       "war",
+       "동사"
+      ],
+      [
+       "meine Nachbarin Frau Kruse",
+       "주어"
+      ],
+      [
+       "zu Hause.",
+       "부사어(장소)"
+      ]
+     ]
+    },
+    {
+     "de": "Ich bin schnell zur Haltestelle gelaufen, aber leider ist der Bus ohne mich abgefahren.",
+     "ko": "정류장까지 빨리 뛰어갔지만, 아쉽게도 버스는 저를 두고 떠나 버렸어요.",
+     "mark": [
+      "leider ist der Bus"
+     ],
+     "parts": [
+      [
+       "Ich",
+       "주어"
+      ],
+      [
+       "bin",
+       "동사"
+      ],
+      [
+       "schnell",
+       "부사어(방법)"
+      ],
+      [
+       "zur Haltestelle",
+       "부사어(장소)"
+      ],
+      [
+       "gelaufen,",
+       "동사(끝)"
+      ],
+      [
+       "aber",
+       "접속사"
+      ],
+      [
+       "leider",
+       "부사어"
+      ],
+      [
+       "ist",
+       "동사"
+      ],
+      [
+       "der Bus",
+       "주어"
+      ],
+      [
+       "ohne mich",
+       "부사어(방법)"
+      ],
+      [
+       "abgefahren.",
+       "동사(끝)"
+      ]
+     ]
+    }
+   ],
+   "tip": "메시지에서 거절할 때도 leider를 자주 써요. 예: Leider habe ich am Samstag keine Zeit."
+  }
+ ],
+ "vocab": [
+  {
+   "de": "verschlafen (verschläft, hat verschlafen)",
+   "ko": "늦잠을 자다"
+  },
+  {
+   "de": "müde",
+   "ko": "피곤한"
+  },
+  {
+   "de": "auf|stehen (steht auf, ist aufgestanden)",
+   "ko": "일어나다"
+  },
+  {
+   "de": "das Frühstück, -e",
+   "ko": "아침 식사"
+  },
+  {
+   "de": "ab|fahren (fährt ab, ist abgefahren)",
+   "ko": "출발하다, 떠나다"
+  },
+  {
+   "de": "verpassen (verpasst, hat verpasst)",
+   "ko": "(버스·기차를) 놓치다"
+  },
+  {
+   "de": "das Büro, -s",
+   "ko": "사무실"
+  },
+  {
+   "de": "der Schlüssel, -",
+   "ko": "열쇠"
+  },
+  {
+   "de": "vergessen (vergisst, hat vergessen)",
+   "ko": "잊다, 두고 오다"
+  },
+  {
+   "de": "die Nachbarin, -nen",
+   "ko": "이웃 (여자)"
+  },
+  {
+   "de": "die Kollegin, -nen",
+   "ko": "(여자) 동료"
+  },
+  {
+   "de": "bringen (bringt, hat gebracht)",
+   "ko": "가져오다, 가져다주다"
+  }
+ ],
+ "phrases": [
+  {
+   "de": "Was für ein Tag!",
+   "ko": "정말 대단한 하루예요!",
+   "ex": "Was für ein Tag!",
+   "exko": "정말 대단한 하루였어요!"
+  },
+  {
+   "de": "zum Glück",
+   "ko": "다행히",
+   "ex": "Zum Glück war meine Nachbarin Frau Kruse zu Hause.",
+   "exko": "다행히 이웃 크루제 씨가 집에 계셨어요."
+  },
+  {
+   "de": "zu Fuß gehen",
+   "ko": "걸어서 가다",
+   "ex": "Also bin ich zu Fuß ins Büro gegangen.",
+   "exko": "그래서 걸어서 사무실에 갔어요."
+  }
+ ]
+}

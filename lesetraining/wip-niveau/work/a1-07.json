@@ -10,7 +10,7 @@
  "focus": [
   "인칭대명사 3·4격",
   "ihr 명령형",
-  "nicht/kein … sondern"
+  "werden으로 변화 말하기"
  ],
  "paragraphs": [
   {
@@ -106,7 +106,7 @@
    "kind": "detail",
    "q": "Nora möchte keine Geschenke. Was sollen die Gäste lieber mitbringen?",
    "options": [
-    "Limonade und Spiele für Kinder",
+    "Limonade und ein Gartenspiel",
     "etwas zum Essen oder Musik",
     "eine Jacke und ein Geschenk"
    ],
@@ -124,9 +124,13 @@
     [
      "Bitte bringt keine Geschenke mit",
      "Nora möchte keine Geschenke"
+    ],
+    [
+     "Gartenspiele und Limonade",
+     "Limonade und ein Gartenspiel"
     ]
    ],
-   "explain": "노라는 선물 대신 좋아하는 음악이나 파스타 샐러드(Nudelsalat)를 가져오라고 해요. 샐러드를 '먹을 것'(etwas zum Essen)으로 바꿔 말했어요. 놀이와 레모네이드는 노라가 아이들을 위해 준비하는 것이에요. 겉옷은 가져와야 하지만 선물은 가져오면 안 돼요."
+   "explain": "노라는 선물 대신 좋아하는 음악이나 파스타 샐러드(Nudelsalat)를 가져오라고 해요. 샐러드를 '먹을 것'(etwas zum Essen)으로 바꿔 말했어요. 레모네이드와 정원 놀이(Gartenspiele)는 노라가 아이들을 위해 준비하는 것이에요. 겉옷은 가져와야 하지만 선물은 가져오면 안 돼요."
   },
   {
    "type": "mc",
@@ -149,7 +153,7 @@
      "ein alter Freund aus Hamburg"
     ]
    ],
-   "explain": "본문의 '제 아버지'(Mein Vater)는 노라의 아버지예요. 아버지는 노라의 가족이니까 '노라 가족 중 한 남자'(ein Mann aus Noras Familie)가 맞아요. 함부르크에서 오는 사람은 친구가 아니라 아버지예요."
+   "explain": "본문의 '제 아버지'(Mein Vater)는 노라의 아버지예요. 아버지는 노라의 가족이니까 '노라 가족 중 한 남자'(ein Mann aus Noras Familie)가 맞아요. 함부르크에서 오는 사람은 친구가 아니라 아버지예요. 아버지가 '우리를 위해'(für uns) 굽기 때문에 노라와 손님들이 모두 굽는 것도 아니에요."
   },
   {
    "type": "rf",
@@ -316,85 +320,70 @@
    "tip": "Kommt ihr?(의문문)와 Kommt!(명령형)는 ihr가 있고 없고로 구별해요. 같은 내용을 du에게는 Bring … mit!, Sie에게는 Bringen Sie … mit!이라고 해요."
   },
   {
-   "title": "nicht · kein …, sondern …",
-   "term": "Negation mit sondern",
-   "explain": "앞에서 부정한 내용을 바로잡을 때 sondern('…이 아니라 ~')을 써요. 앞부분에는 nicht나 kein이 있어요. 부정관사가 붙거나 관사 없이 쓰는 명사는 kein으로 부정하고(keine Geschenke), 다른 말은 nicht로 부정해요(nicht in der Wohnung). sondern 뒤에는 바른 내용이 오고, 앞과 같은 동사는 보통 다시 쓰지 않아요(sondern im Garten = wir feiern im Garten).",
-   "pattern": "nicht / kein … , sondern + 바른 내용",
+   "title": "werden – 나이와 변화 말하기",
+   "term": "werden + Zahl / Adjektiv",
+   "explain": "werden은 '~이 되다, ~해지다'라는 뜻이고, 무엇이 바뀌는 것을 말해요. 나이를 말할 때는 werden 뒤에 숫자를 써요(ich werde 30 = 서른 살이 돼요). 날씨나 상태가 바뀔 때는 werden 뒤에 형용사를 써요(es wird kühl = 쌀쌀해져요). 현재형은 ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden이에요. du wirst와 er/sie/es wird는 모양이 많이 달라서 따로 외워요.",
+   "pattern": "werden + 숫자(나이) / 형용사",
    "examples": [
     {
-     "de": "Wir feiern nicht in der Wohnung, sondern im Garten.",
-     "ko": "파티는 집 안이 아니라 정원에서 해요.",
+     "de": "am Samstag, dem 14. Juni, werde ich 30 – das möchte ich mit euch feiern!",
+     "ko": "6월 14일 토요일에 저는 서른 살이 돼요. 이날을 여러분과 함께 축하하고 싶어요!",
      "mark": [
-      "nicht",
-      "sondern"
+      "werde ich 30"
      ],
      "parts": [
       [
-       "Wir",
-       "주어"
+       "am Samstag, dem 14. Juni,",
+       "부사어(시간)"
       ],
       [
-       "feiern",
+       "werde",
        "동사"
       ],
       [
-       "nicht",
-       "부정어"
+       "ich",
+       "주어"
       ],
       [
-       "in der Wohnung,",
-       "부사어(장소)"
+       "30",
+       "보어"
       ],
       [
-       "sondern",
-       "접속사"
+       "–",
+       "기타"
       ],
       [
-       "im Garten.",
-       "부사어(장소)"
+       "das",
+       "4격 목적어"
+      ],
+      [
+       "möchte",
+       "동사"
+      ],
+      [
+       "ich",
+       "주어"
+      ],
+      [
+       "mit euch",
+       "부사어"
+      ],
+      [
+       "feiern!",
+       "동사(끝)"
       ]
      ]
     },
     {
-     "de": "Bitte bringt keine Geschenke mit, sondern lieber eure Lieblingsmusik oder einen Nudelsalat.",
-     "ko": "선물은 가져오지 마시고, 그 대신 좋아하는 음악이나 파스타 샐러드를 가져오세요.",
+     "de": "Abends wird es dort kühl – bringt bitte eine Jacke mit.",
+     "ko": "저녁에는 그곳이 쌀쌀해지니까 겉옷을 챙겨 오세요.",
      "mark": [
-      "keine Geschenke",
-      "sondern"
-     ],
-     "parts": [
-      [
-       "Bitte",
-       "기타"
-      ],
-      [
-       "bringt",
-       "동사"
-      ],
-      [
-       "keine Geschenke",
-       "4격 목적어"
-      ],
-      [
-       "mit,",
-       "동사(끝)"
-      ],
-      [
-       "sondern",
-       "접속사"
-      ],
-      [
-       "lieber",
-       "부사어"
-      ],
-      [
-       "eure Lieblingsmusik oder einen Nudelsalat.",
-       "4격 목적어"
-      ]
+      "wird",
+      "kühl"
      ]
     }
    ],
-   "tip": "앞의 부정을 바로잡는 이 뜻으로는 aber를 쓰지 않아요. Wir feiern nicht in der Wohnung, aber im Garten은 틀린 문장이에요. sondern 앞에는 쉼표를 찍어요."
+   "tip": "sein은 지금의 상태를, werden은 바뀌는 것을 말해요: Ich bin 29(지금 스물아홉 살이에요) – Ich werde 30(서른 살이 돼요), Es ist kühl(쌀쌀해요) – Es wird kühl(쌀쌀해져요)."
   }
  ],
  "vocab": [

@@ -15,7 +15,7 @@
  "paragraphs": [
   {
    "de": "Kassel. Jeden Tag lässt jemand im Zug etwas liegen, und vieles davon landet im Fundbüro am Hauptbahnhof. Dort arbeitet Ilse Brück seit zwölf Jahren und kennt viele Geschichten, die hinter den Sachen stecken.",
-   "ko": "카셀. 매일 누군가가 기차에 무언가를 두고 내리고, 그중 많은 물건이 중앙역 분실물 보관소로 들어와요. 그곳에서 일제 브뤼크 씨가 12년째 일하고 있는데, 그녀는 물건들 뒤에 숨은 많은 사연을 알고 있어요."
+   "ko": "카셀. 매일 누군가가 기차에 무언가를 두고 내리고, 그중 많은 물건이 중앙역 분실물 보관소로 들어와요. 그곳에서 12년째 일하고 있는 일제 브뤼크 씨는 물건들 뒤에 숨은 많은 사연을 알고 있어요."
   },
   {
    "de": "„Am meisten bekommen wir Regenschirme, danach kommen Handys und Brillen“, sagt Brück. In den Regalen liegen Jacken, Kinderbücher und ein roter Koffer, den seit Wochen niemand abholt. Manche Fundstücke sind ungewöhnlich – vor einem Monat brachte ein Zugbegleiter eine Gitarre, und einmal saß sogar ein Hamster im Käfig auf dem Tisch. „Dem Hamster habe ich erst mal frisches Wasser gegeben“, erzählt sie und lacht.",
@@ -40,9 +40,9 @@
    "kind": "gist",
    "q": "Was erzählt der Bericht vor allem?",
    "options": [
-    "Ein junger Mann verliert kurz vor seiner Hochzeit den Ring.",
+    "Die Leute verlieren im Zug heute mehr Sachen als früher.",
     "Eine Frau berichtet von ihrer Arbeit mit vergessenen Dingen.",
-    "Ein Mädchen vergisst beim Lesen im Zug seinen kleinen Hamster."
+    "Ein Zugbegleiter erzählt von ungewöhnlichen Fundstücken im Zug."
    ],
    "answer": 1,
    "evidence": "Dort arbeitet Ilse Brück seit zwölf Jahren und kennt viele Geschichten, die hinter den Sachen stecken.",
@@ -56,7 +56,7 @@
      "vergessenen Dingen"
     ]
    ],
-   "explain": "기사는 분실물 보관소에서 일하는 브뤼크 씨가 어떤 물건이 들어오는지, 물건을 어떻게 찾아 주는지, 기억에 남는 일은 무엇인지 이야기하는 글이에요. 결혼반지와 햄스터 이야기는 그 안에 나오는 예일 뿐이에요. 그래서 전체 내용은 '한 여성이 잊어버린 물건들을 다루는 자기 일에 대해 이야기한다'예요."
+   "explain": "기사는 분실물 보관소에서 일하는 브뤼크 씨가 어떤 물건이 들어오는지, 물건을 어떻게 찾아 주는지, 기억에 남는 일은 무엇인지 이야기하는 글이에요. 그래서 전체 내용은 '한 여성이 잊어버린 물건들을 다루는 자기 일에 대해 이야기한다'예요. 이야기하는 사람은 열차 승무원(Zugbegleiter)이 아니라 분실물 보관소 직원이에요. 승무원은 기타를 가져왔을 뿐이에요. 사람들이 예전보다 물건을 더 많이 잃어버린다는 말은 본문에 없어요."
   },
   {
    "type": "rf",
@@ -184,10 +184,10 @@
  ],
  "grammar": [
   {
-   "title": "부정대명사 – jemand, niemand, etwas, alle, manche, man",
+   "title": "부정대명사 – jemand, niemand, etwas, alle, manche",
    "term": "Indefinitpronomen",
-   "explain": "누구인지, 무엇인지 정확히 말하지 않을 때 부정대명사를 써요. 사람에는 jemand(누군가)와 niemand(아무도 ~않다), 사물에는 etwas(무언가)와 nichts(아무것도 ~않다)를 써요. etwas와 nichts는 형태가 변하지 않고, jemand와 niemand는 4격·3격에서 jemanden, jemandem처럼 어미가 붙기도 해요. alle(모두), viele(많은 사람), manche(몇몇, 어떤)는 복수이고, 혼자 쓰기도 하고(Nicht alle haben so viel Glück) 명사 앞에 쓰기도 해요(manche Sachen). vieles(많은 것)는 단수 형태로 '여러 가지 물건·일'을 뜻해요. man(사람들, 누구나)은 주어로만 쓰고, 동사는 3인칭 단수예요.",
-   "pattern": "jemand / niemand (사람) · etwas / nichts (사물) · alle / viele / manche (복수) · vieles (많은 것) · man (주어)",
+   "explain": "누구인지, 무엇인지 정확히 말하지 않을 때 부정대명사를 써요. 사람에는 jemand(누군가)와 niemand(아무도 ~않다), 사물에는 etwas(무언가)와 nichts(아무것도 ~않다)를 써요. etwas와 nichts는 형태가 변하지 않고, jemand와 niemand는 4격·3격에서 jemanden, jemandem처럼 어미가 붙기도 해요. alle(모두), viele(많은 사람), manche(몇몇, 어떤)는 복수이고, 혼자 쓰기도 하고(Nicht alle haben so viel Glück) 명사 앞에 쓰기도 해요(manche Sachen). vieles(많은 것)는 단수 형태로 '여러 가지 물건·일'을 뜻해요.",
+   "pattern": "jemand / niemand (사람) · etwas / nichts (사물) · alle / viele / manche (복수) · vieles (많은 것)",
    "examples": [
     {
      "de": "Jeden Tag lässt jemand im Zug etwas liegen, und vieles davon landet im Fundbüro am Hauptbahnhof.",
@@ -291,7 +291,7 @@
      ]
     }
    ],
-   "tip": "niemand와 nichts에는 이미 부정의 뜻이 있어서 nicht를 또 쓰지 않아요: manche Sachen holt niemand ab. 이 문장의 주어는 niemand이고(동사 holt가 단수예요), manche Sachen은 앞에 나온 4격 목적어예요. Wenn man etwas verloren hat, …처럼 man과 etwas를 한 문장에서 함께 쓸 수도 있어요."
+   "tip": "niemand와 nichts에는 이미 부정의 뜻이 있어서 nicht를 또 쓰지 않아요: manche Sachen holt niemand ab. 이 문장의 주어는 niemand이고(동사 holt가 단수예요), manche Sachen은 앞에 나온 4격 목적어예요. jemand와 niemand는 단수라서 동사도 단수예요: Jeden Tag lässt jemand im Zug etwas liegen."
   },
   {
    "title": "3격 목적어와 4격 목적어가 함께 올 때",
@@ -413,7 +413,7 @@
   {
    "title": "목적어가 대명사일 때의 어순",
    "term": "Objekte als Pronomen: Wortstellung",
-   "explain": "앞에서 이미 말한 명사는 다시 말할 때 인칭대명사로 바꿔요: den Ehering → ihn, den Gegenstand → ihn, die Sachen → sie. 대명사 목적어는 보통 명사 목적어나 시간 표현보다 앞에 와요: Der Mann hat ihn noch am selben Abend abgeholt. 목적어가 두 개이면, 둘 다 명사일 때는 3격 + 4격(Sie gibt dem Mann den Ring), 하나만 대명사일 때는 대명사가 먼저(Sie gibt ihm den Ring. / Sie gibt ihn dem Mann.), 둘 다 대명사일 때는 4격 + 3격(Sie gibt ihn ihm)이에요. 앞 문장의 명사를 강조해서 가리킬 때는 지시대명사 den, die, das를 1번 자리에 둘 수 있어요: Und der Hamster? Den hat … ein Mädchen abgeholt.",
+   "explain": "앞에서 이미 말한 명사는 다시 말할 때 인칭대명사로 바꿔요: den Ehering → ihn, den Gegenstand → ihn, die Sachen → sie. 대명사 목적어는 보통 명사 목적어나 시간 표현보다 앞에 와요: Der Mann hat ihn noch am selben Abend abgeholt. 목적어가 두 개이면, 둘 다 명사일 때는 3격 + 4격(Sie gibt dem Mann den Ring), 하나만 대명사일 때는 대명사가 먼저(Sie gibt ihm den Ring. / Sie gibt ihn dem Mann.), 둘 다 대명사일 때는 4격 + 3격(Sie gibt ihn ihm)이에요.",
    "pattern": "명사 + 명사: 3격 + 4격 · 대명사 + 명사: 대명사 먼저 · 대명사 + 대명사: 4격 + 3격 (ihn ihm)",
    "examples": [
     {
@@ -463,36 +463,37 @@
      ]
     },
     {
-     "de": "Den hat am nächsten Tag ein Mädchen abgeholt.",
-     "ko": "햄스터는 다음 날 한 여자아이가 찾아갔어요.",
+     "de": "Wenn sie ihn finden, kann der Besitzer ihn abholen.",
+     "ko": "물건을 찾으면 주인이 가져갈 수 있어요.",
      "mark": [
-      "Den"
+      "sie ihn finden",
+      "der Besitzer ihn abholen"
      ],
      "parts": [
       [
-       "Den",
-       "4격 목적어"
+       "Wenn sie ihn finden,",
+       "종속절"
       ],
       [
-       "hat",
+       "kann",
        "동사"
       ],
       [
-       "am nächsten Tag",
-       "부사어(시간)"
-      ],
-      [
-       "ein Mädchen",
+       "der Besitzer",
        "주어"
       ],
       [
-       "abgeholt.",
+       "ihn",
+       "4격 목적어"
+      ],
+      [
+       "abholen.",
        "동사(끝)"
       ]
      ]
     }
    ],
-   "tip": "'Wenn sie ihn finden, kann der Besitzer ihn abholen.'에서 sie는 직원들(die Mitarbeiterinnen)이고, ihn은 두 번 다 den Gegenstand(그 물건)를 가리켜요. 대명사가 무엇을 가리키는지 앞 문장에서 확인해 보세요."
+   "tip": "Wenn sie ihn finden, …의 sie는 직원들(die Mitarbeiterinnen)이고, ihn은 앞 문장의 den Gegenstand(그 물건)를 가리켜요. 대명사는 앞에 나온 명사의 성과 수에 맞춰요: der Ehering → ihn, die Sachen → sie."
   }
  ],
  "vocab": [
@@ -564,7 +565,7 @@
    "de": "hinter etwas (Dat.) stecken",
    "ko": "~ 뒤에 (숨어) 있다",
    "ex": "Dort arbeitet Ilse Brück seit zwölf Jahren und kennt viele Geschichten, die hinter den Sachen stecken.",
-   "exko": "그곳에서 일제 브뤼크 씨가 12년째 일하고 있는데, 그녀는 물건들 뒤에 숨은 많은 사연을 알고 있어요."
+   "exko": "그곳에서 12년째 일하고 있는 일제 브뤼크 씨는 물건들 뒤에 숨은 많은 사연을 알고 있어요."
   },
   {
    "de": "sich erinnern an + Akk.",

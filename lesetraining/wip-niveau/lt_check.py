@@ -56,9 +56,10 @@ CEIL = {
         (r"\b(lässt|lassen|ließ)\s+sich\b|\b(ist|sind)\s+(?:\w+\s+){0,3}zu\s+[a-zäöüß]+en\b", "Passiversatz (ab B2)"),
     ],
     "b1": [
+        (r"\b(ohne|anstatt|statt) dass\b|\bwohingegen\b|\bindem\b", "Konnektor ab B2 (ohne dass, anstatt dass, wohingegen, indem)"),
         (r"\b(sei|seien|könne|müsse|solle|wolle|dürfe|werde)\b", "Konjunktiv I? (ab B2)"),
-        (r"\b(?:er|sie|es|man|[A-ZÄÖÜ][a-zäöüß]+)\s+habe\b", "Konjunktiv I habe? (ab B2)"),
-        (r"\b(der|die|das|den|dem|des|ein|eine|einen|einem|einer|eines)\s+(?:[a-zäöüß]+\s+){1,4}(ge[a-zäöüß]+(ten|tene[nmrs]?|enen|ene[mrs]?)|[a-zäöüß]+(ende|enden|ender|endes|endem)|[a-zäöüß]+ierte[nmrs]?)\s+[A-ZÄÖÜ]", "erweitertes Partizipialattribut? (ab B2)"),
+        (r"\b(?:er|sie|es|man)\s+habe\b|\bhabe\s+(?:er|sie|es|man)\b", "Konjunktiv I habe? (ab B2)"),
+        (r"\b(der|die|das|den|dem|des|ein|eine|einen|einem|einer|eines)\s+(?:[a-zäöüß]+\s+){1,4}(ge[a-zäöüß]+(ten|tene[nmrs]?|enen|ene[mrs]?)|[a-zäöüß]+(ende|enden|ender|endes|endem)|[a-zäöüß]{3,}ierte[nmrs]?)\s+[A-ZÄÖÜ]", "erweitertes Partizipialattribut? (ab B2)"),
         (r"\b(lässt|lassen|ließ|ließen)\s+sich\b|\b(ist|sind|war|waren)\s+(?:\w+\s+){0,3}zu\s+[a-zäöüß]+en\b", "Passiversatz (ab B2)"),
         (r"\bwerden?\b[^.!?]{0,40}\bge[a-zäöüß]+(t|en)\s+(haben|sein)\b", "Futur II (ab B2)"),
         (r"\bzu\s+[a-zäöüß]+end(e|en|er|es|em)?\b|\bals dass\b|\bgeschweige denn\b|\bes bedarf\b|\bbedarf es\b", "C1-Struktur"),
@@ -83,6 +84,11 @@ def register(d):
     ko = " ".join(x["ko"] for x in d["paragraphs"] if x.get("style") not in ("h", "meta"))
     a = len(re.findall(r"(니다|니까)[.!?…\"”’)]*(\s|$)", ko)); b = len(re.findall(r"요[.!?…\"”’)]*(\s|$)", ko))
     return "합니다체" if a > b else "해요체"
+
+
+def register_text(t):
+    a = len(re.findall(r"(니다|니까)[.!?…\"”’)]*(\s|$)", t)); b = len(re.findall(r"요[.!?…\"”’)]*(\s|$)", t))
+    return "합니다체" if a > b else ("해요체" if b > a else None)
 
 
 def text_of(d):
@@ -151,6 +157,14 @@ def check(tid, blind=False, quiet=False):
         warns.append(f"Wortzahl {wc} weicht stark vom Original ({ow}) ab")
     if d != o and register(d) != register(o):
         errs.append(f"Übersetzungsstil der Absätze geändert: Original {register(o)}, jetzt {register(d)} – wie im Original halten (paragraphs.ko, examples.ko, exko)")
+    if d != o:
+        pr = register(d)
+        ex_r = register_text(" ".join(e.get("ko", "") for g in d["grammar"] for e in g.get("examples", [])))
+        ph_r = register_text(" ".join(x.get("exko", "") for x in d["phrases"]))
+        if ex_r and ex_r != pr:
+            errs.append(f"Übersetzungen der Grammatikbeispiele (examples.ko) im {ex_r}, Absätze im {pr} – angleichen")
+        if ph_r and ph_r != pr:
+            errs.append(f"Übersetzungen der Ausdrucksbeispiele (exko) im {ph_r}, Absätze im {pr} – angleichen")
     for pat, label in FORBIDDEN:
         blob = json.dumps(d, ensure_ascii=False)
         if re.search(pat, blob):

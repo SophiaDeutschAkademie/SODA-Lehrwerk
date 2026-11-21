@@ -63,7 +63,7 @@
   {
    "type": "mc",
    "kind": "match",
-   "q": "Wer hat jeden Tag einen anderen Arbeitsort?",
+   "q": "Wer arbeitet nicht immer am selben Ort?",
    "options": [
     "Nurten Aksoy",
     "Markus Feld",
@@ -75,15 +75,15 @@
    "pairs": [
     [
      "jeden Tag bei anderen Kunden",
-     "jeden Tag einen anderen Arbeitsort"
+     "nicht immer am selben Ort"
     ]
    ],
-   "explain": "마르쿠스 펠트는 매일 다른 고객에게 가서 일해요(jeden Tag bei anderen Kunden). 즉 일하는 곳(Arbeitsort)이 날마다 달라요. 누르텐 악소이는 병원, 다니엘 김은 대학처럼 매일 같은 곳으로 가요."
+   "explain": "마르쿠스 펠트는 매일 다른 고객에게 가서 일해요(jeden Tag bei anderen Kunden). 그래서 일하는 곳이 늘 같지 않아요(nicht immer am selben Ort). 누르텐 악소이는 병원, 다니엘 김은 대학처럼 매일 같은 곳으로 가요."
   },
   {
    "type": "mc",
    "kind": "match",
-   "q": "Wer ist heute am Morgen ruhiger als früher?",
+   "q": "Wer ist jetzt morgens ruhiger als damals mit dem Auto?",
    "options": [
     "Nurten Aksoy",
     "Markus Feld",
@@ -95,10 +95,14 @@
    "pairs": [
     [
      "viel nervöser als heute",
-     "ruhiger als früher"
+     "ruhiger als damals"
+    ],
+    [
+     "beim Autofahren",
+     "mit dem Auto"
     ]
    ],
-   "explain": "'예전에는 지금보다 훨씬 더 예민했다'(früher viel nervöser als heute)를 거꾸로 말하면 '지금은 예전보다 더 차분하다'(heute … ruhiger als früher)예요. 비교하는 방향을 바꾼 표현이에요."
+   "explain": "클라우디아 로트베버는 예전에 차를 운전할 때(beim Autofahren) 아침마다 지금보다 훨씬 더 예민했다(viel nervöser als heute)고 해요. 이것을 거꾸로 말하면 '지금은 차를 타던 때보다 아침에 더 차분하다'(jetzt morgens ruhiger als damals mit dem Auto)예요. 마르쿠스 펠트는 지금도 차로 다니고, 예전과 비교하는 말은 하지 않아요."
   },
   {
    "type": "mc",
@@ -177,7 +181,7 @@
   {
    "title": "이유와 결과 – weil · denn · deshalb",
    "term": "Kausale Konnektoren: weil, denn, deshalb",
-   "explain": "weil과 denn 뒤에는 이유가 오고, deshalb 뒤에는 결과가 와요. 세 낱말은 어순이 달라요. weil은 종속접속사라서 동사가 종속절 맨 끝에 와요. denn은 문장 성분 자리를 차지하지 않아서(0번 자리) denn 뒤의 어순이 보통 평서문과 같아요. deshalb는 1번 자리를 차지하는 접속부사라서 바로 뒤에 동사가 오고 그다음에 주어가 와요. weil절을 문장 앞에 두면 weil절 전체가 1번 자리가 되기 때문에 주문장은 동사로 시작해요.",
+   "explain": "weil과 denn 뒤에는 이유가 오고, deshalb 뒤에는 결과가 와요. 세 낱말은 어순이 달라요. weil은 종속접속사라서 동사가 종속절 맨 끝에 와요. denn은 문장 성분 자리를 차지하지 않아서(0번 자리) denn 뒤의 어순이 보통 평서문과 같아요. deshalb는 접속부사예요. 문장 맨 앞(1번 자리)에 오면 바로 뒤에 동사가 오고 그다음에 주어가 와요. weil절을 문장 앞에 두면 weil절 전체가 1번 자리가 되기 때문에 주문장은 동사로 시작해요.",
    "pattern": "…, weil + 주어 + … + 동사(끝) / …, denn + 주어 + 동사 + … / …, deshalb + 동사 + 주어 + … / Weil + … + 동사(끝), + 동사 + 주어 + …",
    "examples": [
     {
@@ -323,7 +327,7 @@
   {
    "title": "동사원형을 명사로 – das Laufen, beim Radfahren",
    "term": "Nominalisierter Infinitiv",
-   "explain": "동사원형의 첫 글자를 대문자로 쓰면 '~하기'라는 뜻의 중성 명사가 돼요: laufen → das Laufen(걷기). 교통수단과 함께 쓰는 동사는 한 낱말로 붙여 써요: Rad fahren → das Radfahren, Bus fahren → das Busfahren, Auto fahren → das Autofahren. beim(bei dem) + 동사 명사는 '~하는 동안, ~할 때'라는 뜻이에요: beim Radfahren(자전거를 탈 때). 활동을 일반적으로 말할 때는 관사 없이 쓰는 일이 많아요: Laufen ist gesünder als Busfahren.",
+   "explain": "동사원형의 첫 글자를 대문자로 쓰면 '~하기'라는 뜻의 중성 명사가 돼요: laufen → das Laufen(걷기). 교통수단과 함께 쓰는 동사는 명사로 만들 때 한 낱말로 붙여 써요: Rad fahren → das Radfahren, Bus fahren → das Busfahren, Auto fahren → das Autofahren. beim(bei dem) + 동사 명사는 '~하는 동안, ~할 때'라는 뜻이에요: beim Radfahren(자전거를 탈 때). 활동을 일반적으로 말할 때는 관사 없이 쓰는 일이 많아요: Laufen ist gesünder als Busfahren.",
    "pattern": "das + 동사원형(대문자) = ~하기 / beim + 동사원형(대문자) = ~할 때",
    "examples": [
     {

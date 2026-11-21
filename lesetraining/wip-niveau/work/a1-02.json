@@ -19,8 +19,8 @@
    "ko": "lena_k · 2시간 전"
   },
   {
-   "de": "Endlich sind wir alle zusammen, denn meine Oma hat heute Geburtstag und wird achtzig! Hier seht ihr unser Familienfoto von heute Nachmittag im Garten.",
-   "ko": "드디어 우리가 다 모였어요. 오늘이 할머니 생신이고, 할머니가 여든이 되시거든요! 여기 보이는 사진은 오늘 오후에 정원에서 찍은 우리 가족사진이에요."
+   "de": "Endlich sind wir alle zusammen, denn meine Oma hat heute Geburtstag und ist jetzt achtzig! Hier seht ihr unser Familienfoto von heute Nachmittag im Garten.",
+   "ko": "드디어 우리가 다 모였어요. 오늘이 할머니 생신이고, 할머니가 이제 여든이시거든요! 여기 보이는 사진은 오늘 오후에 정원에서 찍은 우리 가족사진이에요."
   },
   {
    "de": "In der Mitte sitzt Oma mit einem Blumenstrauß und einem Luftballon. Links neben ihr stehen meine Eltern, und meine Mutter hält den Geburtstagskuchen.",
@@ -50,7 +50,7 @@
    "kind": "gist",
    "q": "Im Post zeigt Lena ihre Familie bei einer Feier.",
    "answer": 0,
-   "evidence": "Endlich sind wir alle zusammen, denn meine Oma hat heute Geburtstag und wird achtzig!",
+   "evidence": "Endlich sind wir alle zusammen, denn meine Oma hat heute Geburtstag und ist jetzt achtzig!",
    "pairs": [
     [
      "meine Oma hat heute Geburtstag",
@@ -61,7 +61,7 @@
      "zeigt Lena ihre Familie"
     ]
    ],
-   "explain": "레나는 'Endlich sind wir alle zusammen, denn meine Oma hat heute Geburtstag und wird achtzig!(오늘 할머니 생신이라서 드디어 다 모였어요!)'라고 쓰고, 'unser Familienfoto(우리 가족사진)'를 보여 줘요. 할머니의 여든 번째 생신 파티(Feier)에서 찍은 가족사진을 소개하는 글이니까 맞는 내용이에요."
+   "explain": "레나는 'Endlich sind wir alle zusammen, denn meine Oma hat heute Geburtstag und ist jetzt achtzig!(오늘 할머니 생신이라서 드디어 다 모였어요!)'라고 쓰고, 'unser Familienfoto(우리 가족사진)'를 보여 줘요. 할머니의 여든 번째 생신 파티(Feier)에서 찍은 가족사진을 소개하는 글이니까 맞는 내용이에요."
   },
   {
    "type": "mc",
@@ -69,7 +69,7 @@
    "q": "Was hat Oma in der Hand?",
    "options": [
     "einen Ballon und einen Strauß",
-    "den Kuchen mit achtzig Kerzen",
+    "einen Kuchen und einen Strauß",
     "ein Foto von ihrer Familie"
    ],
    "answer": 0,
@@ -84,7 +84,7 @@
      "Strauß"
     ]
    ],
-   "explain": "본문에 'In der Mitte sitzt Oma mit einem Blumenstrauß und einem Luftballon.(가운데에는 할머니가 꽃다발과 풍선을 들고 앉아 계세요.)'라고 나와요. Luftballon(풍선)을 Ballon으로, Blumenstrauß(꽃다발)를 Strauß로 줄여 말했어요. 생일 케이크는 어머니가 들고 있고(meine Mutter hält den Geburtstagskuchen), 레나가 찍는 가족사진(Familienfoto)은 할머니가 들고 있는 물건이 아니에요."
+   "explain": "본문에 'In der Mitte sitzt Oma mit einem Blumenstrauß und einem Luftballon.(가운데에는 할머니가 꽃다발과 풍선을 들고 앉아 계세요.)'라고 나와요. Luftballon(풍선)을 Ballon으로, Blumenstrauß(꽃다발)를 Strauß로 줄여 말했어요. 'einen Kuchen und einen Strauß'는 꽃다발만 맞아요. 생일 케이크는 어머니가 들고 있어요(meine Mutter hält den Geburtstagskuchen). 레나가 찍는 가족사진(Familienfoto)도 할머니가 들고 있는 물건이 아니에요."
   },
   {
    "type": "rf",
@@ -371,7 +371,7 @@
       ],
       [
        "natürlich",
-       "부사어(방법)"
+       "부사어"
       ],
       [
        "hier.",
