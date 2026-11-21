@@ -7,301 +7,306 @@
   "type": "Wissenschaftsjournalismus",
   "typeKo": "과학 저널리즘 기사",
   "intro": "독일에 다시 정착한 늑대를 둘러싼 생태적 역할과 갈등을 다루는 기사예요.",
-  "focus": ["명사 문체", "기능동사 구문", "2격 지배 전치사", "확장 분사 수식어"],
+  "focus": ["기능동사 구문", "주어 2격과 목적어 2격", "수동태의 von · durch", "종 전체를 가리키는 관사"],
   "paragraphs": [
     {
-      "de": "Rund 150 Jahre lang galt der Wolf in Deutschland als ausgerottet. Seine Rückkehr begann im Jahr 2000, als in der sächsischen Lausitz erstmals wieder Welpen auf deutschem Boden geboren wurden – Nachkommen von Tieren, die aus Polen eingewandert waren. Was zunächst als Einzelfall erschien, entwickelte sich innerhalb weniger Jahre zu einer dauerhaften Wiederbesiedlung. Heute lebt die Mehrzahl der Rudel im Norden und Osten der Republik, von der Lausitz über Brandenburg bis nach Niedersachsen; infolge der Abwanderung junger Tiere auf der Suche nach eigenen Revieren tauchen Wölfe jedoch inzwischen in nahezu allen Bundesländern auf.",
-      "ko": "약 150년 동안 늑대는 독일에서 멸종된 것으로 여겨졌습니다. 늑대의 귀환은 2000년에 시작되었습니다. 그해 작센주의 라우지츠 지역에서 처음으로 다시 독일 땅에서 새끼 늑대가 태어난 것입니다. 폴란드에서 넘어온 늑대들의 후손이었습니다. 처음에는 단발적인 사례로 보였던 일이 몇 년 만에 지속적인 재정착으로 발전했습니다. 오늘날 무리의 대다수는 라우지츠에서 브란덴부르크를 거쳐 니더작센에 이르는 독일의 북부와 동부에 살고 있습니다. 그러나 자기 영역을 찾아 나서는 젊은 늑대들의 이동으로 인해 이제는 거의 모든 연방주에서 늑대가 나타나고 있습니다."
+      "de": "Rund 150 Jahre lang galt der Wolf in Deutschland als ausgerottet. Seine Rückkehr begann im Jahr 2000, als in der sächsischen Lausitz erstmals wieder Welpen zur Welt kamen, deren Eltern aus Polen stammten. Was zunächst als Einzelfall erschien, entwickelte sich innerhalb weniger Jahre zu einer dauerhaften Wiederbesiedlung. Die meisten Rudel leben heute im Norden und Osten, von der Lausitz über Brandenburg bis nach Niedersachsen. Da junge Wölfe ihr Elternrudel verlassen und auf der Suche nach einem eigenen Revier weite Wege zurücklegen, wird der Wolf inzwischen jedoch in fast allen Bundesländern nachgewiesen.",
+      "ko": "약 150년 동안 독일에서 늑대는 멸종된 것으로 여겨졌습니다. 늑대의 귀환은 2000년에 시작되었습니다. 그해 작센주 라우지츠 지역에서 처음으로 다시 새끼 늑대들이 태어났는데, 그 부모는 폴란드에서 온 늑대였습니다. 처음에는 단발적인 사례로 보였던 일이 몇 년 만에 지속적인 재정착으로 발전했습니다. 오늘날 무리의 대부분은 라우지츠에서 브란덴부르크를 거쳐 니더작센에 이르는 북부와 동부에 살고 있습니다. 하지만 젊은 늑대들이 태어난 무리를 떠나 자기 영역을 찾아 먼 거리를 이동하기 때문에, 이제는 거의 모든 연방주에서 늑대가 확인되고 있습니다."
     },
     {
-      "de": "Aus ökologischer Sicht ist die Wiederkehr des großen Beutegreifers ein Gewinn. Wölfe ernähren sich überwiegend von Rehen, Rothirschen und Wildschweinen, wobei sie bevorzugt kranke, alte oder unerfahrene Tiere erbeuten. Der dadurch entstehende Druck auf die Wildbestände kann der Verjüngung der Wälder zugutekommen, weil weniger junge Bäume verbissen werden. Forscherinnen und Forscher warnen allerdings vor überzogenen Erwartungen: Die in Nordamerika beobachteten Veränderungen ganzer Landschaften lassen sich nicht ohne Weiteres auf die dicht besiedelte, intensiv genutzte Kulturlandschaft Mitteleuropas übertragen.",
-      "ko": "생태학적 관점에서 이 대형 포식자의 귀환은 이득입니다. 늑대는 주로 노루, 붉은사슴, 멧돼지를 먹이로 삼으며, 그중에서도 병들었거나 늙었거나 경험이 부족한 개체를 우선적으로 사냥합니다. 이로 인해 야생동물 개체군에 생기는 압력은 어린 나무가 덜 뜯어 먹히기 때문에 숲의 재생에 도움이 될 수 있습니다. 그러나 연구자들은 지나친 기대를 경계합니다. 북미에서 관찰된 경관 전체의 변화는 인구가 조밀하고 집약적으로 이용되는 중부 유럽의 문화 경관에 그대로 옮겨 적용할 수 없습니다."
+      "de": "Aus ökologischer Sicht ist diese Rückkehr ein Gewinn. Der Wolf ernährt sich überwiegend von Rehen, Hirschen und Wildschweinen, wobei er bevorzugt kranke, alte oder unerfahrene Tiere erbeutet. Der Druck, den er auf diese Wildbestände ausübt, kann der Verjüngung der Wälder zugutekommen, weil Rehe und Hirsche dann weniger junge Bäume verbeißen. Wildbiologen warnen allerdings vor überzogenen Erwartungen, denn die in Nordamerika beobachteten Veränderungen ganzer Landschaften lassen sich nicht ohne Weiteres auf Mitteleuropa übertragen, wo die Landschaft dicht besiedelt ist und die Wildbestände ohnehin durch die Jagd reguliert werden.",
+      "ko": "생태학적 관점에서 이 귀환은 이득입니다. 늑대는 주로 노루, 사슴, 멧돼지를 먹고 사는데, 그중에서도 병들었거나 늙었거나 경험이 부족한 동물을 우선 사냥합니다. 늑대가 이 야생동물 개체군에 가하는 압력은 숲의 재생에 도움이 될 수 있습니다. 노루와 사슴이 어린 나무를 덜 뜯어 먹게 되기 때문입니다. 하지만 야생생물학자들은 지나친 기대를 경계합니다. 북미에서 관찰된 경관 전체의 변화를 중부 유럽에 그렇게 쉽게 옮겨 적용할 수는 없기 때문입니다. 중부 유럽은 인구가 조밀하고, 야생동물 개체군도 어차피 사냥으로 조절되고 있습니다."
     },
     {
-      "de": "Die Kehrseite der Rückkehr zeigt sich auf den Weiden. Ungeachtet des reichen Wildangebots reißen Wölfe immer wieder Schafe, Ziegen und gelegentlich auch Kälber oder Fohlen, denn ungeschützte Nutztiere sind leichter zu erbeuten als ein flüchtendes Reh. Für die betroffenen Betriebe bedeutet jeder Riss nicht nur einen finanziellen Verlust, sondern auch eine erhebliche emotionale Belastung, zumal infolge eines einzigen Angriffs oft mehrere Tiere sterben. Besonders Schäfereien, deren wirtschaftliche Lage ohnehin angespannt ist, geraten dadurch in Gefahr, ihren Betrieb aufgeben zu müssen. Wer heute eine Herde auf einer offenen Weide hält, muss die Möglichkeit eines Angriffs in Kauf nehmen – oder umfangreiche Vorkehrungen treffen.",
-      "ko": "귀환의 이면은 목초지에서 드러납니다. 야생 먹잇감이 풍부함에도 불구하고 늑대는 양과 염소, 때로는 송아지나 망아지까지 거듭 물어 죽입니다. 보호받지 못하는 가축은 달아나는 노루보다 사냥하기 쉽기 때문입니다. 피해를 입은 농가에게 늑대의 공격은 매번 금전적 손실일 뿐 아니라 상당한 정신적 부담이기도 합니다. 더구나 공격 한 번으로 여러 마리가 죽는 일도 흔합니다. 특히 경영 상황이 안 그래도 어려운 양 목장은 이 때문에 사업을 접어야 할 위기에 처하기도 합니다. 오늘날 탁 트인 목초지에서 가축을 기르는 사람은 공격당할 가능성을 감수하거나, 아니면 광범위한 예방 조치를 취해야 합니다."
+      "de": "Die Kehrseite der Rückkehr offenbart sich auf den Weiden. Ungeachtet des reichen Wildangebots tötet der Wolf wiederholt Weidetiere, vor allem Schafe, denn ein ungeschütztes Schaf ist leichter zu erbeuten als ein flüchtendes Reh. Für die betroffenen Tierhalter bedeutet jeder Angriff nicht nur einen finanziellen Verlust, sondern auch eine erhebliche seelische Belastung, zumal bei einem einzigen Angriff häufig mehrere Tiere sterben. Insbesondere Schäfereien, deren wirtschaftliche Situation ohnehin angespannt ist, geraten dadurch in Gefahr, ihren Betrieb aufgeben zu müssen. Wer Weidetiere hält, muss daher entweder Angriffe in Kauf nehmen oder aufwendige Vorkehrungen treffen.",
+      "ko": "귀환의 이면은 목초지에서 드러납니다. 야생 먹잇감이 풍부한데도 늑대는 거듭 방목 가축을, 특히 양을 죽입니다. 보호받지 못하는 양은 달아나는 노루보다 잡기 쉽기 때문입니다. 피해를 입은 사육자에게 공격은 매번 금전적 손실일 뿐 아니라 상당한 정신적 부담이기도 합니다. 더구나 한 번의 공격으로 여러 마리가 죽는 일이 흔합니다. 특히 경영 상황이 안 그래도 어려운 양 목장은 이 때문에 사업을 접어야 할 위기에 처합니다. 그래서 방목 가축을 기르는 사람은 공격을 감수하거나, 아니면 품이 많이 드는 예방 조치를 취해야 합니다."
     },
     {
-      "de": "Genau hier setzt der Herdenschutz an. Als wirksamste Maßnahmen gelten ausreichend hohe, bis dicht über den Boden gespannte Elektrozäune sowie der Einsatz speziell ausgebildeter Herdenschutzhunde, die bei der Herde leben und Eindringlinge vertreiben. Die Anschaffung solcher Zäune und Hunde wird von den Bundesländern finanziell gefördert; auch für nachweislich vom Wolf gerissene Tiere erhalten die Halter in der Regel eine Entschädigung. Dennoch bleibt die Umsetzung aufwendig: Zäune müssen täglich kontrolliert, Hunde jahrelang betreut und gefüttert werden – ungeachtet aller Zuschüsse eine Aufgabe, die Zeit und Nerven kostet. Viele Tierhalter kritisieren deshalb, dass der zusätzliche Arbeitsaufwand in der Debatte um die Förderung bislang kaum zur Sprache kommt.",
-      "ko": "바로 이 지점에서 가축 보호 대책이 시작됩니다. 가장 효과적인 조치로는 충분히 높고 지면 바로 위까지 촘촘히 친 전기 울타리, 그리고 무리와 함께 살면서 침입자를 쫓아내는 전문 훈련을 받은 가축 보호견의 투입이 꼽힙니다. 이런 울타리와 보호견을 마련하는 비용은 각 연방주가 재정적으로 지원하며, 늑대에게 물려 죽은 것으로 입증된 가축에 대해서도 사육자는 보통 보상을 받습니다. 그럼에도 실행에는 많은 품이 듭니다. 울타리는 매일 점검해야 하고, 개는 여러 해 동안 돌보고 먹여야 합니다. 보조금이 아무리 나와도 시간과 신경이 많이 드는 일입니다. 그래서 많은 사육자는 지원을 둘러싼 논의에서 이 추가적인 노동 부담이 지금까지 거의 거론되지 않는다고 비판합니다."
+      "de": "Genau hier setzt der Herdenschutz an. Als wirksamste Maßnahmen des Herdenschutzes gelten ausreichend hohe, bis dicht über den Boden gespannte Elektrozäune sowie speziell ausgebildete Herdenschutzhunde, die ständig bei der Herde leben und den Wolf vertreiben. Die Anschaffung der Zäune und Hunde wird von den Bundesländern gefördert, und für Weidetiere, die nachweislich vom Wolf getötet wurden, erhalten die Tierhalter in der Regel eine Entschädigung. Dennoch bleibt die Umsetzung des Herdenschutzes aufwendig, denn die Zäune müssen täglich kontrolliert, die Hunde jahrelang betreut und gefüttert werden. Viele Tierhalter kritisieren deshalb, dass dieser zusätzliche Aufwand in der Diskussion um die Förderung bisher kaum zur Sprache kommt.",
+      "ko": "바로 이 지점에서 가축 보호 대책이 시작됩니다. 가장 효과적인 가축 보호 조치로는 충분히 높고 지면 바로 위까지 친 전기 울타리, 그리고 늘 무리와 함께 지내며 늑대를 쫓아내는 특수 훈련을 받은 가축 보호견이 꼽힙니다. 울타리와 보호견을 마련하는 비용은 각 연방주가 지원하고, 늑대에게 죽은 것으로 입증된 방목 가축에 대해서는 사육자가 보통 보상을 받습니다. 그래도 가축 보호 대책을 실행하는 일은 여전히 품이 많이 듭니다. 울타리는 매일 점검해야 하고, 개는 여러 해 동안 돌보고 먹여야 하기 때문입니다. 그래서 많은 사육자는 지원을 둘러싼 논의에서 이 추가적인 부담이 지금까지 거의 거론되지 않는다고 비판합니다."
     },
     {
-      "de": "Angesichts steigender Wolfszahlen wird der Ruf nach Abschüssen lauter. Befürworter einer stärkeren Regulierung argumentieren, einzelne Tiere, die gelernt hätten, Zäune zu überwinden, ließen sich anders nicht stoppen; zudem müsse der Wolf wieder lernen, den Menschen zu meiden. Naturschutzverbände halten dagegen, dass die Entnahme einzelner Wölfe das Problem nur verlagere: Wird ein Rudel auseinandergerissen, streifen die verbliebenen Tiere umher und nähern sich eher den Siedlungen. Zugunsten eines dauerhaften Nebeneinanders fordern sie daher, zunächst den Herdenschutz flächendeckend auszubauen, bevor überhaupt über Abschüsse entschieden wird. Beide Seiten berufen sich auf wissenschaftliche Studien – und beide können auf Beispiele verweisen, die ihre Position zu stützen scheinen.",
-      "ko": "늑대 수가 늘어나는 상황에서 사살을 요구하는 목소리가 커지고 있습니다. 더 강한 개체 수 조절을 지지하는 쪽은 울타리를 넘는 법을 익힌 개별 늑대는 다른 방법으로는 막을 수 없으며, 늑대가 사람을 피하는 법을 다시 배워야 한다고 주장합니다. 반면 자연보호단체들은 개별 늑대를 제거하는 것은 문제를 옮길 뿐이라고 반박합니다. 무리가 흩어지면 남은 늑대들이 떠돌아다니다가 오히려 주거지에 더 접근하게 된다는 것입니다. 그래서 이들은 지속적인 공존을 위해 사살 여부를 논하기 전에 먼저 가축 보호 대책을 전국적으로 확대할 것을 요구합니다. 양쪽 모두 과학적 연구를 근거로 내세우고, 양쪽 모두 자기 입장을 뒷받침하는 듯한 사례를 제시할 수 있습니다."
+      "de": "Angesichts der wachsenden Wolfspopulation wird der Ruf nach Abschüssen lauter. Befürworter einer stärkeren Regulierung argumentieren, einzelne Wölfe, die gelernt hätten, Zäune zu überwinden, ließen sich anders nicht stoppen; außerdem müsse der Wolf wieder lernen, den Menschen zu meiden. Naturschutzverbände halten dagegen, dass der Abschuss einzelner Wölfe das Problem nur verlagere. Werde ein Rudel durch Abschüsse auseinandergerissen, zögen die übrigen Wölfe umher und näherten sich eher den Dörfern. Sie sehen die Lösung daher zunächst im flächendeckenden Ausbau des Herdenschutzes und fordern, erst danach über Abschüsse zu entscheiden. Beide Seiten berufen sich auf wissenschaftliche Studien, und beide können auf Fälle verweisen, die ihre Position zu stützen scheinen.",
+      "ko": "늑대 개체군이 늘어나면서 사살을 요구하는 목소리가 커지고 있습니다. 더 강한 개체 수 조절을 지지하는 사람들은 울타리를 넘는 법을 익힌 개별 늑대는 다른 방법으로는 막을 수 없고, 늑대가 다시 사람을 피하는 법을 배워야 한다고 주장합니다. 반면 자연보호단체들은 개별 늑대를 사살해도 문제가 다른 곳으로 옮겨 갈 뿐이라고 반박합니다. 사살로 무리가 흩어지면 남은 늑대들이 떠돌아다니다가 오히려 마을에 더 가까이 온다는 것입니다. 그래서 이들은 먼저 가축 보호 대책을 전 지역으로 확대하는 데서 해법을 찾고, 사살 여부는 그다음에 결정하자고 요구합니다. 양쪽 모두 과학적 연구를 근거로 내세우고, 양쪽 모두 자기 입장을 뒷받침하는 듯한 사례를 들 수 있습니다."
     },
     {
-      "de": "Dass der Wolf bleibt, bezweifelt heute kaum noch jemand. Die eigentliche Frage lautet, wie viel Wildnis eine Gesellschaft zu tragen bereit ist, die Natur gern als Kulisse, aber ungern als Risiko erlebt. Eine Politik, die dieser Spannung Rechnung tragen will, muss gleichzeitig den Schutz der Weidetiere ernst nehmen, die Sorgen der ländlichen Bevölkerung anerkennen und die ökologische Bedeutung des Wolfes im Blick behalten. Ob und wie das gelingt, entscheidet sich nicht in Berlin, sondern an den Zäunen der Lausitz, auf den Deichen Niedersachsens und in den Dörfern dazwischen.",
-      "ko": "늑대가 머물 것이라는 사실을 오늘날 의심하는 사람은 거의 없습니다. 진짜 질문은, 자연을 배경으로서는 즐겨 체험하지만 위험으로서는 꺼리는 사회가 얼마만큼의 야생을 감당할 준비가 되어 있느냐 하는 것입니다. 이 긴장 관계를 고려하려는 정책은 가축 보호를 진지하게 받아들이고, 농촌 주민의 걱정을 인정하며, 늑대의 생태적 의미를 놓치지 않는 일을 동시에 해내야 합니다. 그것이 성공할지, 그리고 어떻게 성공할지는 베를린이 아니라 라우지츠의 울타리에서, 니더작센의 제방 위에서, 그리고 그 사이의 마을들에서 결정됩니다."
+      "de": "Während heute kaum noch jemand bezweifelt, dass der Wolf bleibt, lautet die eigentliche Frage, wie viel Wildnis eine Gesellschaft zu tragen bereit ist, die Natur gern als Kulisse, aber ungern als Risiko erlebt. Eine Politik, die dieser Spannung Rechnung tragen will, muss den Schutz der Weidetiere ernst nehmen, die Sorgen der ländlichen Bevölkerung anerkennen und die ökologische Bedeutung der Wölfe im Blick behalten. Ob und wie das gelingt, entscheidet sich nicht in Berlin, sondern an den Zäunen der Lausitz, auf den Deichen Niedersachsens und in den Dörfern dazwischen.",
+      "ko": "늑대가 계속 머물 것이라는 데 의문을 품는 사람은 오늘날 거의 없는 반면, 진짜 질문은 자연을 배경으로서는 즐겨 체험하지만 위험으로서는 꺼리는 사회가 얼마만큼의 야생을 감당할 준비가 되어 있느냐 하는 것입니다. 이 긴장 관계를 고려하려는 정책은 방목 가축의 보호를 진지하게 받아들이고, 농촌 주민의 걱정을 인정하며, 늑대의 생태적 의미를 놓치지 않아야 합니다. 그것이 성공할지, 그리고 어떻게 성공할지는 베를린이 아니라 라우지츠의 울타리에서, 니더작센의 제방 위에서, 그리고 그 사이의 마을들에서 결정됩니다."
     }
   ],
   "questions": [
     {
       "type": "mc",
-      "kind": "detail",
-      "q": "Woher stammten die Wölfe, deren Nachwuchs im Jahr 2000 in der Lausitz zur Welt kam?",
-      "options": ["Sie waren von Naturschützern aus Nordamerika angesiedelt worden.", "Sie stammten aus einem Zuchtprogramm im Norden Niedersachsens.", "Sie waren aus dem Nachbarland im Osten über die Grenze zugewandert.", "Sie waren die letzten Überlebenden der deutschen Wolfspopulation."],
+      "kind": "inference",
+      "q": "Was lässt sich aus dem ersten Absatz über die heutige Verbreitung des Wolfes schließen?",
+      "options": ["Die meisten Rudel leben inzwischen gleichmäßig über alle Bundesländer verteilt.", "Junge Wölfe bleiben meist in der Lausitz, wo auch ihr Elternrudel lebt.", "Auch weit entfernt von den Hauptgebieten der Rudel werden Wölfe gesichtet.", "Die Wiederbesiedlung ist bis heute ein Einzelfall im Norden und Osten geblieben."],
       "answer": 2,
-      "evidence": "Nachkommen von Tieren, die aus Polen eingewandert waren",
-      "pairs": [["aus Polen eingewandert", "aus dem Nachbarland im Osten über die Grenze zugewandert"], ["Welpen", "Nachwuchs"]],
-      "explain": "본문은 2000년에 태어난 새끼들이 폴란드에서 넘어온 늑대들의 후손이라고 해요. Polen을 '동쪽 이웃 나라(Nachbarland im Osten)'로, eingewandert(이주해 왔다)를 '국경을 넘어왔다'로 바꿔 말했어요. 북미는 생태적 변화를 관찰한 곳으로만, 니더작센은 현재 서식지로만 언급돼요."
+      "evidence": "wird der Wolf inzwischen jedoch in fast allen Bundesländern nachgewiesen",
+      "pairs": [["Die meisten Rudel leben heute im Norden und Osten", "den Hauptgebieten der Rudel"], ["in fast allen Bundesländern nachgewiesen", "werden Wölfe gesichtet"], ["weite Wege zurücklegen", "weit entfernt"]],
+      "explain": "본문은 무리 대부분이 북부와 동부에 산다고 하면서도, 젊은 늑대들이 자기 영역을 찾아 먼 거리를 이동하기 때문에 거의 모든 연방주에서 늑대가 확인된다고 해요. 그러니 무리가 주로 사는 지역에서 멀리 떨어진 곳에서도 늑대가 나타난다고 추론할 수 있어요. 무리가 모든 연방주에 고르게 퍼져 있다는 말은 없고, 젊은 늑대는 오히려 태어난 무리를 떠나요. 재정착도 단발적인 사례에서 지속적인 현상으로 발전했어요."
     },
     {
       "type": "rfn",
       "kind": "detail",
-      "q": "Dass Wölfe mittlerweile fast überall in Deutschland gesichtet werden, liegt daran, dass junge Tiere ihre Herkunftsrudel verlassen und eigene Gebiete suchen.",
+      "q": "Unter den Beutetieren des Wolfes finden sich überdurchschnittlich viele geschwächte oder wenig erfahrene Tiere.",
       "answer": 0,
-      "evidence": "infolge der Abwanderung junger Tiere auf der Suche nach eigenen Revieren tauchen Wölfe jedoch inzwischen in nahezu allen Bundesländern auf",
-      "pairs": [["infolge der Abwanderung junger Tiere", "liegt daran, dass junge Tiere ihre Herkunftsrudel verlassen"], ["auf der Suche nach eigenen Revieren", "eigene Gebiete suchen"], ["in nahezu allen Bundesländern", "fast überall in Deutschland"]],
-      "explain": "본문은 '젊은 늑대들의 이동으로 인해(infolge)' 거의 모든 연방주에 늑대가 나타난다고 해요. 명사구 Abwanderung junger Tiere를 '젊은 개체가 무리를 떠난다'는 절로 풀어 썼고, in nahezu allen Bundesländern을 '독일 거의 어디서나'로 바꿨어요."
+      "evidence": "wobei er bevorzugt kranke, alte oder unerfahrene Tiere erbeutet",
+      "pairs": [["bevorzugt", "überdurchschnittlich viele"], ["kranke, alte", "geschwächte"], ["unerfahrene", "wenig erfahrene"]],
+      "explain": "본문은 늑대가 병들었거나 늙었거나 경험이 부족한 동물을 우선(bevorzugt) 사냥한다고 해요. 우선 사냥한다는 것은 그런 동물이 먹잇감 가운데 평균보다 많다는 뜻이에요. kranke, alte를 geschwächte(약해진)로, unerfahrene를 wenig erfahrene로 바꿔 말했어요. 그래서 Ja예요."
     },
     {
       "type": "mc",
       "kind": "paraphrase",
-      "q": "Was ist mit dem Satz „Der dadurch entstehende Druck auf die Wildbestände kann der Verjüngung der Wälder zugutekommen, weil weniger junge Bäume verbissen werden.“ gemeint?",
-      "options": ["Weil der Wald sich verjüngt, finden Wölfe dort mehr Deckung und junge Beutetiere.", "Wölfe dezimieren Rehe und Hirsche, sodass junge Bäume besser nachwachsen können.", "Der Druck durch die Jagd lässt die Wildbestände in andere, jüngere Wälder abwandern.", "Wölfe schützen junge Bäume, indem sie sich vor allem von Rinde und Trieben ernähren."],
+      "q": "Was ist mit dem Satz „Der Druck, den er auf diese Wildbestände ausübt, kann der Verjüngung der Wälder zugutekommen“ gemeint?",
+      "options": ["Weil sich die Wälder verjüngen, finden Wölfe dort mehr Beutetiere und Verstecke.", "Indem Wölfe das Wild in Schach halten, haben junge Bäume bessere Chancen zu wachsen.", "Die Jagd durch den Menschen verjüngt die Wälder deutlich stärker als der Druck durch Wölfe.", "Der Wolf treibt Rehe und Hirsche in die Wälder, wo sie mehr junge Bäume verbeißen."],
       "answer": 1,
-      "evidence": "Der dadurch entstehende Druck auf die Wildbestände kann der Verjüngung der Wälder zugutekommen, weil weniger junge Bäume verbissen werden.",
-      "pairs": [["Druck auf die Wildbestände", "Wölfe dezimieren Rehe und Hirsche"], ["kann der Verjüngung der Wälder zugutekommen", "junge Bäume besser nachwachsen können"]],
-      "explain": "늑대가 노루와 사슴을 사냥해 야생동물 개체 수에 압력을 주면, 어린 나무가 덜 뜯어 먹혀 숲의 재생에 도움이 될 수 있다(kann)는 인과 관계예요. Druck auf die Wildbestände를 '노루와 사슴을 줄인다(dezimieren)'로, der Verjüngung der Wälder zugutekommen을 '어린 나무가 더 잘 다시 자랄 수 있다(besser nachwachsen können)'로 바꿔 말했어요. 원인과 결과를 뒤집은 선택지와 늑대가 나무껍질과 새순을 먹는다는 선택지는 함정이에요."
+      "evidence": "kann der Verjüngung der Wälder zugutekommen, weil Rehe und Hirsche dann weniger junge Bäume verbeißen",
+      "pairs": [["Der Druck, den er auf diese Wildbestände ausübt", "Indem Wölfe das Wild in Schach halten"], ["kann der Verjüngung der Wälder zugutekommen", "haben junge Bäume bessere Chancen zu wachsen"]],
+      "explain": "늑대가 노루와 사슴 같은 야생동물에 압력을 가하면 이 동물들이 어린 나무를 덜 뜯어 먹어서 숲이 다시 젊어질 수 있다는 인과 관계예요. Druck ausüben을 in Schach halten(견제하다)으로, der Verjüngung der Wälder zugutekommen을 ‘어린 나무가 자랄 가능성이 커진다’로 바꿔 말했어요. 원인과 결과를 뒤집은 선지, 사람의 사냥과 비교하는 선지, 늑대가 노루를 숲으로 몰아서 나무가 더 뜯긴다는 선지는 본문과 맞지 않아요."
     },
     {
       "type": "rfn",
       "kind": "detail",
-      "q": "Die Fachleute erwarten, dass sich die Landschaft in Mitteleuropa durch den Wolf ähnlich stark verändern wird wie in Nordamerika.",
+      "q": "Nach Ansicht der Wildbiologen lassen sich die in Nordamerika beobachteten Veränderungen ohne Einschränkung auf Mitteleuropa übertragen.",
       "answer": 1,
-      "evidence": "Die in Nordamerika beobachteten Veränderungen ganzer Landschaften lassen sich nicht ohne Weiteres auf die dicht besiedelte, intensiv genutzte Kulturlandschaft Mitteleuropas übertragen.",
-      "pairs": [["Forscherinnen und Forscher warnen allerdings vor überzogenen Erwartungen", "Die Fachleute erwarten"], ["lassen sich nicht ohne Weiteres auf die dicht besiedelte, intensiv genutzte Kulturlandschaft Mitteleuropas übertragen", "ähnlich stark verändern wird wie in Nordamerika"]],
-      "explain": "연구자들은 오히려 지나친 기대를 경계하며, 북미에서 관찰된 변화를 중부 유럽에 그대로 옮겨 적용할 수 없다고 해요. 이 문장은 Nordamerika, Landschaft 같은 본문 단어를 쓰면서 내용은 반대로 말해요."
+      "evidence": "lassen sich nicht ohne Weiteres auf Mitteleuropa übertragen",
+      "pairs": [["Wildbiologen warnen allerdings vor überzogenen Erwartungen", "Nach Ansicht der Wildbiologen"], ["nicht ohne Weiteres", "ohne Einschränkung"]],
+      "explain": "야생생물학자들은 오히려 지나친 기대를 경계해요. 북미에서 관찰된 변화를 중부 유럽에 그렇게 쉽게(ohne Weiteres) 옮겨 적용할 수 없다고 하고, 그 이유로 인구가 조밀한 경관과 사람의 사냥을 들어요. 이 문장은 본문 표현을 그대로 쓰면서 nicht ohne Weiteres를 ohne Einschränkung(제한 없이)으로 바꿔 뜻을 뒤집었어요. 그래서 Nein이에요."
     },
     {
       "type": "mc",
       "kind": "detail",
-      "q": "Warum greifen Wölfe laut Text Nutztiere an, obwohl es genug Wild gibt?",
-      "options": ["weil das Wild in den intensiv genutzten Wäldern immer seltener zu finden ist", "weil Herdenschutzhunde die Wölfe von ihren natürlichen Beutetieren fernhalten", "weil Wölfe erst lernen müssen, Schafe und Ziegen von Rehen zu unterscheiden", "weil Weidetiere ohne Schutz bequemere Beute sind als Wild, das wegläuft"],
+      "q": "Warum greift der Wolf laut Text Weidetiere an, obwohl genug Wild vorhanden ist?",
+      "options": ["weil das Wild in der dicht besiedelten Landschaft immer seltener wird", "weil Herdenschutzhunde ihn von Rehen und Hirschen fernhalten", "weil er erst lernen muss, Schafe von Rehen zu unterscheiden", "weil ungesicherte Schafe weniger Mühe machen als flüchtendes Wild"],
       "answer": 3,
-      "evidence": "denn ungeschützte Nutztiere sind leichter zu erbeuten als ein flüchtendes Reh",
-      "pairs": [["ungeschützte Nutztiere", "Weidetiere ohne Schutz"], ["leichter zu erbeuten als ein flüchtendes Reh", "bequemere Beute sind als Wild, das wegläuft"]],
-      "explain": "본문은 보호받지 못하는 가축이 달아나는 노루보다 사냥하기 쉽기 때문이라고 해요. Nutztiere를 Weidetiere로, ungeschützt를 ohne Schutz로, leichter zu erbeuten을 bequemere Beute로, flüchtend를 관계절 das wegläuft로 바꿨어요. 야생 먹잇감은 오히려 풍부하다(reiches Wildangebot)고 되어 있어요."
+      "evidence": "denn ein ungeschütztes Schaf ist leichter zu erbeuten als ein flüchtendes Reh",
+      "pairs": [["ein ungeschütztes Schaf", "ungesicherte Schafe"], ["leichter zu erbeuten", "weniger Mühe machen"], ["ein flüchtendes Reh", "flüchtendes Wild"]],
+      "explain": "본문은 야생 먹잇감이 풍부한데도(ungeachtet des reichen Wildangebots) 늑대가 가축을 공격하는 이유로, 보호받지 못하는 양이 달아나는 노루보다 잡기 쉽다는 점을 들어요. leichter zu erbeuten을 weniger Mühe machen으로, ungeschützt를 ungesichert로 바꿔 말했어요. 야생동물이 줄어든다거나, 보호견이 늑대를 노루에게서 떼어 놓는다거나, 늑대가 양과 노루를 구별하지 못한다는 말은 본문에 없어요."
     },
     {
       "type": "mc",
       "kind": "meaning",
-      "q": "Was bedeutet „in Kauf nehmen“ im Text?",
-      "options": ["sich gegen einen möglichen Schaden versichern", "etwas zu einem günstigen Preis im Laden kaufen", "einen finanziellen Verlust erstattet bekommen", "ein Risiko oder einen Nachteil bewusst hinnehmen"],
+      "q": "Was bedeutet „kaum zur Sprache kommt“ im Text?",
+      "options": ["in der Fachsprache der Behörden kaum verständlich formuliert ist", "von den Tierhaltern selbst kaum offen kritisiert werden darf", "in den Anträgen auf Förderung ausdrücklich ausgeschlossen ist", "in der öffentlichen Debatte so gut wie nicht erwähnt wird"],
       "answer": 3,
-      "evidence": "muss die Möglichkeit eines Angriffs in Kauf nehmen",
-      "pairs": [["in Kauf nehmen", "ein Risiko oder einen Nachteil bewusst hinnehmen"]],
-      "explain": "etwas in Kauf nehmen은 원하지 않는 위험이나 불이익을 알면서도 감수한다는 뜻의 기능동사 구문이에요. 본문에서는 공격당할 가능성을 감수하거나, 아니면 예방 조치를 취해야 한다고 해요. Kauf라는 단어 때문에 '사다'나 '보상받다'로 오해하기 쉽지만, 돈이나 구매와는 관계가 없어요."
+      "evidence": "dass dieser zusätzliche Aufwand in der Diskussion um die Förderung bisher kaum zur Sprache kommt",
+      "pairs": [["kaum zur Sprache kommt", "so gut wie nicht erwähnt wird"], ["in der Diskussion um die Förderung", "in der öffentlichen Debatte"]],
+      "explain": "zur Sprache kommen은 ‘거론되다, 화제에 오르다’라는 뜻의 기능동사 구문이에요. kaum이 붙어 ‘거의 거론되지 않는다’가 돼요. 사육자들은 지원을 둘러싼 논의에서 추가 부담 이야기가 거의 나오지 않는다고 비판하는 거예요. Sprache라는 낱말 때문에 ‘언어, 전문 용어’로 읽으면 함정에 빠져요. 비판이 금지되어 있다거나 신청서에서 제외된다는 말도 본문에 없어요."
     },
     {
       "type": "rfn",
       "kind": "detail",
-      "q": "Die Tierhalter bemängeln, dass die Fördergelder für Zäune und Hunde zu spät ausgezahlt werden.",
+      "q": "Die Anschaffung von Herdenschutzhunden kostet die Tierhalter mehr als der Bau von Elektrozäunen.",
       "answer": 2,
       "evidence": null,
-      "pairs": [["der zusätzliche Arbeitsaufwand in der Debatte um die Förderung bislang kaum zur Sprache kommt", "zu spät ausgezahlt werden"]],
-      "explain": "사육자들이 비판하는 것은 추가적인 노동 부담이 지원을 둘러싼 논의에서 거의 거론되지 않는다는 점이에요. 지원금 지급 시기에 대해서는 본문에 아무 정보가 없어요. Förderung이라는 단어가 나오고 비판도 나오기 때문에 그럴듯해 보이지만 확인할 수 없는 주장이에요."
+      "pairs": [["Die Anschaffung der Zäune und Hunde wird von den Bundesländern gefördert", "kostet die Tierhalter mehr als der Bau von Elektrozäunen"]],
+      "explain": "본문은 울타리와 보호견을 마련하는 비용을 연방주가 지원한다고만 하고, 둘 중 어느 쪽이 더 비싼지는 말하지 않아요. 보호견을 여러 해 돌보고 먹여야 한다는 말 때문에 더 비쌀 것 같지만, 그것은 노동 부담에 대한 이야기예요. 그래서 Text sagt dazu nichts예요."
     },
     {
       "type": "mc",
       "kind": "detail",
-      "q": "Mit welchem Argument wenden sich die Naturschutzverbände gegen das Töten einzelner Wölfe?",
-      "options": ["Die betroffenen Wölfe hätten das Überwinden von Zäunen längst wieder verlernt und seien deshalb ungefährlich.", "Ohne vollständiges Rudel zögen die übrigen Tiere ziellos umher und kämen eher bis an bewohnte Gebiete heran.", "Die Zahl der Wölfe sei noch immer zu gering, um Abschüsse in einem Land wie Deutschland zu rechtfertigen.", "Wissenschaftliche Studien aus mehreren Ländern hätten die Wirksamkeit von Abschüssen eindeutig widerlegt."],
+      "q": "Mit welchem Argument wenden sich die Naturschutzverbände gegen Abschüsse?",
+      "options": ["Die betroffenen Wölfe hätten das Überwinden von Zäunen längst wieder verlernt.", "Ohne intakten Familienverband streiften die restlichen Tiere ziellos bis in Ortsnähe.", "Die Zahl der Wölfe sei noch zu gering, um Abschüsse in Deutschland zu rechtfertigen.", "Wissenschaftliche Studien hätten die Wirkung von Abschüssen bereits eindeutig widerlegt."],
       "answer": 1,
-      "evidence": "Wird ein Rudel auseinandergerissen, streifen die verbliebenen Tiere umher und nähern sich eher den Siedlungen.",
-      "pairs": [["Wird ein Rudel auseinandergerissen", "Ohne vollständiges Rudel"], ["streifen die verbliebenen Tiere umher", "zögen die übrigen Tiere ziellos umher"], ["nähern sich eher den Siedlungen", "kämen eher bis an bewohnte Gebiete heran"]],
-      "explain": "자연보호단체는 무리가 흩어지면 남은 늑대들이 떠돌다가 오히려 주거지에 더 가까이 온다고 주장해요. umherstreifen(떠돌아다니다)을 ziellos umherziehen으로, sich den Siedlungen nähern(주거지에 다가가다)을 bis an bewohnte Gebiete herankommen(사람이 사는 곳 가까이까지 오다)으로 바꿨어요. 연구가 사살의 효과를 '명백히 반박했다'는 말은 없고, 양쪽 다 연구를 근거로 든다고 되어 있어요."
+      "evidence": "Werde ein Rudel durch Abschüsse auseinandergerissen, zögen die übrigen Wölfe umher und näherten sich eher den Dörfern.",
+      "pairs": [["Werde ein Rudel durch Abschüsse auseinandergerissen", "Ohne intakten Familienverband"], ["zögen die übrigen Wölfe umher", "streiften die restlichen Tiere ziellos"], ["näherten sich eher den Dörfern", "bis in Ortsnähe"]],
+      "explain": "자연보호단체는 사살로 무리가 흩어지면 남은 늑대들이 떠돌아다니다가 오히려 마을에 더 가까이 온다고 주장해요. Rudel을 Familienverband(가족 단위의 무리)로, umherziehen을 ziellos umherstreifen으로, sich den Dörfern nähern을 bis in Ortsnähe(마을 가까이까지)로 바꿔 말했어요. 늑대가 울타리 넘는 법을 잊는다거나, 늑대 수가 너무 적다거나, 연구가 사살의 효과를 반박했다는 말은 본문에 없어요. 본문은 양쪽 모두 연구를 근거로 든다고 해요."
     },
     {
       "type": "mc",
       "kind": "paraphrase",
-      "q": "Was bedeutet der Satz „Dass der Wolf bleibt, bezweifelt heute kaum noch jemand.“?",
-      "options": ["Fast niemand glaubt mehr daran, dass der Wolf in Deutschland noch eine Zukunft hat.", "Nur wenige Menschen wissen überhaupt, dass der Wolf nach Deutschland zurückgekehrt ist.", "Die meisten Menschen in Deutschland wünschen sich, dass der Wolf im Land bleibt.", "Es gilt inzwischen als nahezu sicher, dass der Wolf dauerhaft in Deutschland lebt."],
+      "q": "Was ist mit einer Gesellschaft gemeint, „die Natur gern als Kulisse, aber ungern als Risiko erlebt“?",
+      "options": ["Die Menschen interessieren sich mehr für Naturfilme als für echte Wildnis vor der Haustür.", "Die Gesellschaft hält die Natur grundsätzlich für riskant und meidet deshalb die Wildnis.", "Die Bevölkerung auf dem Land erlebt die Natur gern, die Menschen in der Stadt dagegen ungern.", "Man genießt die Natur als schönen Hintergrund, will aber keine Gefahren durch sie hinnehmen."],
       "answer": 3,
-      "evidence": "Dass der Wolf bleibt, bezweifelt heute kaum noch jemand.",
-      "pairs": [["bezweifelt heute kaum noch jemand", "gilt inzwischen als nahezu sicher"], ["Dass der Wolf bleibt", "dauerhaft in Deutschland lebt"]],
-      "explain": "'의심하는 사람이 거의 없다'는 것은 곧 '거의 모두가 확실하다고 여긴다'는 뜻이에요. kaum noch jemand(거의 아무도 ~않다)와 bezweifeln(의심하다)이 합쳐져 강한 확신을 나타내므로, 'Fast niemand glaubt mehr daran …'처럼 '거의 아무도 믿지 않는다'로 읽으면 정반대가 돼요. 사람들이 늑대가 머물기를 바라는지는 이 문장이 말하지 않아요."
+      "evidence": "die Natur gern als Kulisse, aber ungern als Risiko erlebt",
+      "pairs": [["gern als Kulisse", "als schönen Hintergrund"], ["ungern als Risiko erlebt", "will aber keine Gefahren durch sie hinnehmen"]],
+      "explain": "Kulisse는 무대 배경이에요. 자연을 보기 좋은 배경으로는 즐기지만, 늑대처럼 위험이 따르는 자연은 받아들이려 하지 않는 사회라는 뜻이에요. 영화 이야기가 아니고, 자연 전체를 위험하다고 피하는 것도 아니에요. 도시와 농촌을 비교하는 말도 이 문장에는 없어요."
     },
     {
       "type": "mc",
       "kind": "gist",
       "q": "Welche Aussage gibt die Grundhaltung des Textes am besten wieder?",
-      "options": ["Der Wolf ist für die Landwirtschaft eine so große Gefahr, dass seine Zahl rasch verringert werden muss.", "Die Rückkehr des Wolfes ist ökologisch wünschenswert, erfordert aber einen Ausgleich mit den Tierhaltern.", "Die Konflikte um den Wolf sind übertrieben, weil ausreichender Herdenschutz alle Probleme zuverlässig löst.", "Die Entscheidung über den Umgang mit dem Wolf sollte der Wissenschaft und nicht der Politik überlassen werden."],
+      "options": ["Der Wolf gefährdet die Weidetierhaltung so stark, dass sein Bestand rasch verringert werden muss.", "Die Wiederkehr des Raubtiers bereichert die Natur, verlangt aber einen Ausgleich mit Tierhaltern.", "Die Konflikte um den Wolf sind übertrieben, weil flächendeckender Herdenschutz alle Probleme löst.", "Über den Umgang mit dem Wolf sollten Wissenschaftler und nicht Politiker in Berlin entscheiden."],
       "answer": 1,
-      "evidence": "Eine Politik, die dieser Spannung Rechnung tragen will, muss gleichzeitig den Schutz der Weidetiere ernst nehmen, die Sorgen der ländlichen Bevölkerung anerkennen und die ökologische Bedeutung des Wolfes im Blick behalten.",
-      "pairs": [["dieser Spannung Rechnung tragen", "einen Ausgleich"], ["die ökologische Bedeutung des Wolfes im Blick behalten", "ökologisch wünschenswert"]],
-      "explain": "글은 늑대의 귀환을 생태적 이득으로 평가하면서도 가축 사육자의 피해와 걱정을 진지하게 다루고, 마지막에 양쪽을 동시에 고려하는 정책을 요구해요. 어느 한쪽 편을 들거나 가축 보호 대책만으로 모든 문제가 풀린다고 하지는 않아요."
+      "evidence": "Eine Politik, die dieser Spannung Rechnung tragen will, muss den Schutz der Weidetiere ernst nehmen, die Sorgen der ländlichen Bevölkerung anerkennen und die ökologische Bedeutung der Wölfe im Blick behalten.",
+      "pairs": [["Aus ökologischer Sicht ist diese Rückkehr ein Gewinn", "bereichert die Natur"], ["dieser Spannung Rechnung tragen", "einen Ausgleich"]],
+      "explain": "글은 늑대의 귀환을 생태적 이득으로 평가하면서도 사육자의 피해와 부담을 자세히 다루고, 마지막에 가축 보호와 농촌 주민의 걱정과 늑대의 생태적 의미를 함께 고려하는 정책을 요구해요. 그래서 ‘자연에는 이득이지만 사육자와의 조정이 필요하다’가 중심 생각이에요. 늑대 수를 빨리 줄여야 한다거나, 가축 보호만으로 모든 문제가 풀린다거나, 결정을 과학자에게 맡기자는 주장은 글에 없어요."
     }
   ],
   "grammar": [
     {
-      "title": "명사 문체 – 동사 대신 명사로 압축하기",
-      "term": "Nominalstil (Nominalisierung, Genitivattribut)",
-      "explain": "학술적·저널리즘적 글은 동사로 쓸 내용을 명사로 압축해요. 'Junge Tiere wandern ab'은 die Abwanderung junger Tiere가 되고, 'Der Wolf kehrt wieder'는 die Wiederkehr des Wolfes가 돼요. 이때 원래 주어나 목적어는 2격 수식어(Genitivattribut)로 명사 뒤에 붙어요. 명사 문체는 전치사와 잘 결합해서(infolge der Abwanderung) 종속절 없이 긴 정보를 한 문장에 담을 수 있어요. 읽을 때는 명사를 다시 동사로 풀어 보면 뜻이 분명해져요.",
-      "pattern": "전치사 + 명사화된 동사 + 2격 수식어 (+ 전치사구)",
-      "examples": [
-        {
-          "de": "Die Anschaffung solcher Zäune und Hunde wird von den Bundesländern finanziell gefördert; auch für nachweislich vom Wolf gerissene Tiere erhalten die Halter in der Regel eine Entschädigung.",
-          "ko": "이런 울타리와 보호견을 마련하는 비용은 각 연방주가 재정적으로 지원하며, 늑대에게 물려 죽은 것으로 입증된 가축에 대해서도 사육자는 보통 보상을 받습니다.",
-          "mark": ["Die Anschaffung solcher Zäune und Hunde", "eine Entschädigung"],
-          "parts": [["Die Anschaffung solcher Zäune und Hunde", "주어"], ["wird", "동사"], ["von den Bundesländern", "부사어"], ["finanziell", "부사어(방법)"], ["gefördert;", "동사(끝)"], ["auch", "기타"], ["für nachweislich vom Wolf gerissene Tiere", "부사어"], ["erhalten", "동사"], ["die Halter", "주어"], ["in der Regel", "부사어(빈도)"], ["eine Entschädigung.", "4격 목적어"]]
-        },
-        {
-          "de": "Aus ökologischer Sicht ist die Wiederkehr des großen Beutegreifers ein Gewinn.",
-          "ko": "생태학적 관점에서 이 대형 포식자의 귀환은 이득입니다.",
-          "mark": ["die Wiederkehr des großen Beutegreifers"],
-          "parts": [["Aus ökologischer Sicht", "부사어"], ["ist", "동사"], ["die Wiederkehr des großen Beutegreifers", "주어"], ["ein Gewinn.", "보어"]]
-        },
-        {
-          "de": "infolge der Abwanderung junger Tiere auf der Suche nach eigenen Revieren tauchen Wölfe jedoch inzwischen in nahezu allen Bundesländern auf.",
-          "ko": "그러나 자기 영역을 찾아 나서는 젊은 늑대들의 이동으로 인해 이제는 거의 모든 연방주에서 늑대가 나타나고 있습니다.",
-          "mark": ["infolge der Abwanderung junger Tiere"],
-          "parts": [["infolge der Abwanderung junger Tiere auf der Suche nach eigenen Revieren", "부사어(이유)"], ["tauchen", "동사"], ["Wölfe", "주어"], ["jedoch", "접속부사"], ["inzwischen", "부사어(시간)"], ["in nahezu allen Bundesländern", "부사어(장소)"], ["auf.", "동사(끝)"]]
-        }
-      ],
-      "tip": "명사 문체는 글을 짧고 객관적으로 만들지만 너무 많이 쓰면 읽기 어려워요. 작문에서는 한 문장에 명사화를 두 개 이상 겹치지 않는 것이 좋아요."
-    },
-    {
       "title": "기능동사 구문",
       "term": "Funktionsverbgefüge",
-      "explain": "기능동사 구문은 '명사 + 의미가 약해진 동사'가 함께 하나의 동사 뜻을 내는 표현이에요. in Kauf nehmen(감수하다), zur Sprache kommen(거론되다), Vorkehrungen treffen(예방 조치를 취하다), in Gefahr geraten(위험에 처하다), einer Sache Rechnung tragen(~을 고려하다)이 이 글에 나와요. 동사 자체(nehmen, kommen, treffen)의 원래 뜻으로 해석하면 안 되고, 명사와 묶어서 하나의 단위로 외워야 해요. 격과 전치사도 고정되어 있어요. Rechnung tragen은 3격을 취해요.",
-      "pattern": "(전치사 +) 명사 + 기능동사  →  하나의 동사 뜻",
+      "explain": "기능동사 구문은 뜻의 중심이 명사에 있고, 동사(nehmen, treffen, kommen, geraten, tragen)는 주로 문법적인 역할을 하는 굳은 결합이에요. in Kauf nehmen(감수하다), Vorkehrungen treffen(대비하다), zur Sprache kommen(거론되다), in Gefahr geraten(위험에 처하다), einer Sache Rechnung tragen(~을 고려하다)이 이 글에 나와요. 동사의 원래 뜻으로 옮기면 어색해지는 경우가 많으니 명사와 묶어 하나의 단위로 익혀요. zur Sprache kommen(≈ besprochen werden)처럼 수동의 뜻을 내거나, in Gefahr geraten처럼 상태가 시작되는 과정을 나타내기도 해요.",
+      "pattern": "(전치사 +) 명사 + 기능동사: in Kauf nehmen · Vorkehrungen treffen · zur Sprache kommen · in Gefahr geraten · einer Sache Rechnung tragen",
       "examples": [
         {
-          "de": "Wer heute eine Herde auf einer offenen Weide hält, muss die Möglichkeit eines Angriffs in Kauf nehmen – oder umfangreiche Vorkehrungen treffen.",
-          "ko": "오늘날 탁 트인 목초지에서 가축을 기르는 사람은 공격당할 가능성을 감수하거나, 아니면 광범위한 예방 조치를 취해야 합니다.",
+          "de": "Wer Weidetiere hält, muss daher entweder Angriffe in Kauf nehmen oder aufwendige Vorkehrungen treffen.",
+          "ko": "그래서 방목 가축을 기르는 사람은 공격을 감수하거나, 아니면 품이 많이 드는 예방 조치를 취해야 합니다.",
           "mark": ["in Kauf nehmen", "Vorkehrungen treffen"],
-          "parts": [["Wer heute eine Herde auf einer offenen Weide hält,", "주어"], ["muss", "동사"], ["die Möglichkeit eines Angriffs", "4격 목적어"], ["in Kauf", "기타"], ["nehmen", "동사(끝)"], ["–", "기타"], ["oder", "접속사"], ["umfangreiche Vorkehrungen", "4격 목적어"], ["treffen.", "동사(끝)"]]
+          "parts": [["Wer Weidetiere hält,", "주어"], ["muss", "동사"], ["daher", "접속부사"], ["entweder", "접속사"], ["Angriffe", "4격 목적어"], ["in Kauf nehmen", "동사(끝)"], ["oder", "접속사"], ["aufwendige Vorkehrungen", "4격 목적어"], ["treffen.", "동사(끝)"]]
         },
         {
-          "de": "Viele Tierhalter kritisieren deshalb, dass der zusätzliche Arbeitsaufwand in der Debatte um die Förderung bislang kaum zur Sprache kommt.",
-          "ko": "그래서 많은 사육자는 지원을 둘러싼 논의에서 이 추가적인 노동 부담이 지금까지 거의 거론되지 않는다고 비판합니다.",
+          "de": "Viele Tierhalter kritisieren deshalb, dass dieser zusätzliche Aufwand in der Diskussion um die Förderung bisher kaum zur Sprache kommt.",
+          "ko": "그래서 많은 사육자는 지원을 둘러싼 논의에서 이 추가적인 부담이 지금까지 거의 거론되지 않는다고 비판합니다.",
           "mark": ["zur Sprache kommt"]
         },
         {
-          "de": "Eine Politik, die dieser Spannung Rechnung tragen will, muss gleichzeitig den Schutz der Weidetiere ernst nehmen, die Sorgen der ländlichen Bevölkerung anerkennen und die ökologische Bedeutung des Wolfes im Blick behalten.",
-          "ko": "이 긴장 관계를 고려하려는 정책은 가축 보호를 진지하게 받아들이고, 농촌 주민의 걱정을 인정하며, 늑대의 생태적 의미를 놓치지 않는 일을 동시에 해내야 합니다.",
-          "mark": ["dieser Spannung Rechnung tragen", "im Blick behalten"]
+          "de": "Eine Politik, die dieser Spannung Rechnung tragen will, muss den Schutz der Weidetiere ernst nehmen, die Sorgen der ländlichen Bevölkerung anerkennen und die ökologische Bedeutung der Wölfe im Blick behalten.",
+          "ko": "이 긴장 관계를 고려하려는 정책은 방목 가축의 보호를 진지하게 받아들이고, 농촌 주민의 걱정을 인정하며, 늑대의 생태적 의미를 놓치지 않아야 합니다.",
+          "mark": ["Rechnung tragen", "im Blick behalten"]
         }
       ],
-      "tip": "zur Sprache kommen(거론되다)과 zur Sprache bringen(거론하다)처럼 kommen 계열은 자동사, bringen 계열은 타동사 뜻을 내요. 수동태 대신 쓸 수 있어서 명사 문체와 잘 어울려요."
+      "tip": "in Kauf nehmen, zur Sprache kommen처럼 명사에 관사나 형용사를 마음대로 붙일 수 없는 결합이 많아요(*in den Kauf nehmen). 부정할 때는 nicht를 써요(nicht in Kauf nehmen). Vorkehrungen treffen처럼 명사가 비교적 독립적인 결합은 형용사를 붙일 수 있어요(aufwendige Vorkehrungen treffen)."
     },
     {
-      "title": "2격 지배 전치사 ungeachtet · zugunsten · infolge · angesichts",
-      "term": "Präpositionen mit Genitiv",
-      "explain": "이 네 전치사는 모두 2격을 지배하고, 격식 있는 글에서 종속절의 내용을 명사구로 압축해요. ungeachtet(~에도 불구하고)는 obwohl 절을, infolge(~의 결과로)는 weil 절을 대신해요(infolge der Abwanderung junger Tiere = weil junge Tiere abwandern). angesichts(~을 고려하여, ~을 앞에 두고)는 눈앞의 상황을 근거로 들 때, zugunsten(~을 위하여, ~에 유리하게)은 누구나 무엇에 이익이 되는지 말할 때 써요. 관사 없는 복수 명사는 그 자체로 2격이 드러나지 않으므로 angesichts steigender Wolfszahlen처럼 형용사의 2격 어미 -er가 격을 보여 줘요. 형용사도 없으면 von + 3격을 써요(infolge von Angriffen).",
-      "pattern": "ungeachtet / zugunsten / infolge / angesichts + 2격 명사구",
+      "title": "명사 뒤의 2격 – 행위자일까, 대상일까",
+      "term": "Genitivattribut: Genitivus subiectivus und obiectivus",
+      "explain": "동사에서 나온 명사 뒤에 2격이 오면, 그 2격은 원래 문장의 주어일 수도 있고 4격 목적어일 수도 있어요. die Verjüngung der Wälder는 die Wälder verjüngen sich에서 나왔으니 2격이 주어예요(주어 2격). die Umsetzung des Herdenschutzes는 man setzt den Herdenschutz um에서 나왔으니 2격이 목적어예요(목적어 2격). Befürworter einer stärkeren Regulierung처럼 사람을 가리키는 명사 뒤의 2격도 목적어일 수 있어요(sie befürworten eine stärkere Regulierung). 기사에서는 행위자를 빼고 대상만 2격으로 남기는 일이 많아서(der Abschuss einzelner Wölfe), 누가 하는 일인지는 문맥에서 찾아야 해요.",
+      "pattern": "동사에서 나온 명사 + 2격 → 주어 2격: die Verjüngung der Wälder (die Wälder verjüngen sich) · 목적어 2격: die Umsetzung des Herdenschutzes (man setzt den Herdenschutz um)",
       "examples": [
         {
-          "de": "Ungeachtet des reichen Wildangebots reißen Wölfe immer wieder Schafe, Ziegen und gelegentlich auch Kälber oder Fohlen, denn ungeschützte Nutztiere sind leichter zu erbeuten als ein flüchtendes Reh.",
-          "ko": "야생 먹잇감이 풍부함에도 불구하고 늑대는 양과 염소, 때로는 송아지나 망아지까지 거듭 물어 죽입니다. 보호받지 못하는 가축은 달아나는 노루보다 사냥하기 쉽기 때문입니다.",
-          "mark": ["Ungeachtet des reichen Wildangebots"]
+          "de": "Dennoch bleibt die Umsetzung des Herdenschutzes aufwendig, denn die Zäune müssen täglich kontrolliert, die Hunde jahrelang betreut und gefüttert werden.",
+          "ko": "그래도 가축 보호 대책을 실행하는 일은 여전히 품이 많이 듭니다. 울타리는 매일 점검해야 하고, 개는 여러 해 동안 돌보고 먹여야 하기 때문입니다.",
+          "mark": ["die Umsetzung des Herdenschutzes"],
+          "parts": [["Dennoch", "접속부사"], ["bleibt", "동사"], ["die Umsetzung des Herdenschutzes", "주어"], ["aufwendig,", "보어"], ["denn", "접속사"], ["die Zäune", "주어"], ["müssen", "동사"], ["täglich", "부사어(빈도)"], ["kontrolliert,", "동사(끝)"], ["die Hunde", "주어"], ["jahrelang", "부사어(시간)"], ["betreut und gefüttert werden.", "동사(끝)"]]
         },
         {
-          "de": "Angesichts steigender Wolfszahlen wird der Ruf nach Abschüssen lauter.",
-          "ko": "늑대 수가 늘어나는 상황에서 사살을 요구하는 목소리가 커지고 있습니다.",
-          "mark": ["Angesichts steigender Wolfszahlen"],
-          "parts": [["Angesichts steigender Wolfszahlen", "부사어(이유)"], ["wird", "동사"], ["der Ruf nach Abschüssen", "주어"], ["lauter.", "보어"]]
+          "de": "Der Druck, den er auf diese Wildbestände ausübt, kann der Verjüngung der Wälder zugutekommen, weil Rehe und Hirsche dann weniger junge Bäume verbeißen.",
+          "ko": "늑대가 이 야생동물 개체군에 가하는 압력은 숲의 재생에 도움이 될 수 있습니다. 노루와 사슴이 어린 나무를 덜 뜯어 먹게 되기 때문입니다.",
+          "mark": ["der Verjüngung der Wälder"]
         },
         {
-          "de": "Zugunsten eines dauerhaften Nebeneinanders fordern sie daher, zunächst den Herdenschutz flächendeckend auszubauen, bevor überhaupt über Abschüsse entschieden wird.",
-          "ko": "그래서 이들은 지속적인 공존을 위해 사살 여부를 논하기 전에 먼저 가축 보호 대책을 전국적으로 확대할 것을 요구합니다.",
-          "mark": ["Zugunsten eines dauerhaften Nebeneinanders"]
+          "de": "Naturschutzverbände halten dagegen, dass der Abschuss einzelner Wölfe das Problem nur verlagere.",
+          "ko": "반면 자연보호단체들은 개별 늑대를 사살해도 문제가 다른 곳으로 옮겨 갈 뿐이라고 반박합니다.",
+          "mark": ["der Abschuss einzelner Wölfe"]
         }
       ],
-      "tip": "ungeachtet은 trotz보다 격식이 높고, 명사 뒤에 올 수도 있어요(dessen ungeachtet). zugunsten의 반대말은 zulasten(~의 부담으로)이에요."
+      "tip": "어느 쪽인지는 원래 동사를 보면 알 수 있어요. 4격 목적어를 갖는 동사(umsetzen, abschießen, befürworten)에서 나온 명사의 2격은 대개 목적어이고, 4격 목적어가 없는 동사(sich verjüngen, sich verändern, zurückkehren)에서 나온 명사의 2격은 주어예요. 행위자까지 말하려면 durch를 붙여요(der Abschuss einzelner Wölfe durch Jäger). 우리말로는 ‘~의’로 옮기기보다 ‘숲이 다시 젊어지는 것’, ‘개별 늑대를 사살하는 것’처럼 동사로 풀어 옮기면 자연스러워요."
     },
     {
-      "title": "확장 분사 수식어",
-      "term": "Erweitertes Partizipialattribut",
-      "explain": "관사와 명사 사이(관사가 없으면 명사 바로 앞)에 분사와 그 보충어가 길게 들어가는 구조예요. 'die Veränderungen, die in Nordamerika beobachtet wurden'이라는 관계절을 die in Nordamerika beobachteten Veränderungen으로 압축한 거예요. 과거분사(beobachtet, gerissen, ausgebildet)는 수동·완료의 뜻을, 현재분사(entstehend, flüchtend)는 능동·진행의 뜻을 가져요. 읽을 때는 관사나 전치사 뒤에 명사가 바로 안 나오면 분사가 나올 때까지 기다렸다가 거꾸로 해석하세요.",
-      "pattern": "관사 + (부사어·전치사구) + 분사 + 형용사 어미 + 명사",
+      "title": "수동태의 행위자와 수단 – von · durch",
+      "term": "Agens und Mittel im Passiv (von + Dat. / durch + Akk.)",
+      "explain": "수동문에서 행위를 하는 사람이나 기관, 동물(행위자)은 보통 von + 3격으로 나타내요(von den Bundesländern gefördert, vom Wolf getötet). 일이 일어나는 수단이나 원인은 durch + 4격으로 나타내요(durch die Jagd reguliert, durch Abschüsse auseinandergerissen). 기사에서는 행위자를 아예 빼는 일도 많아요(wird der Wolf … nachgewiesen). 누가 했는지보다 무슨 일이 일어났는지가 중요할 때 그래요. 독해에서는 von과 durch를 보고 ‘누가’와 ‘무엇으로’를 구별해요.",
+      "pattern": "주어 + werden + … + von + 3격(행위자) / durch + 4격(수단·원인) + … + 과거분사",
       "examples": [
         {
-          "de": "Die in Nordamerika beobachteten Veränderungen ganzer Landschaften lassen sich nicht ohne Weiteres auf die dicht besiedelte, intensiv genutzte Kulturlandschaft Mitteleuropas übertragen.",
-          "ko": "북미에서 관찰된 경관 전체의 변화는 인구가 조밀하고 집약적으로 이용되는 중부 유럽의 문화 경관에 그대로 옮겨 적용할 수 없습니다.",
-          "mark": ["Die in Nordamerika beobachteten Veränderungen", "die dicht besiedelte, intensiv genutzte Kulturlandschaft"],
-          "parts": [["Die in Nordamerika beobachteten Veränderungen ganzer Landschaften", "주어"], ["lassen", "동사"], ["sich", "재귀대명사"], ["nicht", "부정어"], ["ohne Weiteres", "부사어(방법)"], ["auf die dicht besiedelte, intensiv genutzte Kulturlandschaft Mitteleuropas", "전치사 목적어"], ["übertragen.", "동사(끝)"]]
+          "de": "Die Anschaffung der Zäune und Hunde wird von den Bundesländern gefördert, und für Weidetiere, die nachweislich vom Wolf getötet wurden, erhalten die Tierhalter in der Regel eine Entschädigung.",
+          "ko": "울타리와 보호견을 마련하는 비용은 각 연방주가 지원하고, 늑대에게 죽은 것으로 입증된 방목 가축에 대해서는 사육자가 보통 보상을 받습니다.",
+          "mark": ["von den Bundesländern gefördert", "vom Wolf getötet"],
+          "parts": [["Die Anschaffung der Zäune und Hunde", "주어"], ["wird", "동사"], ["von den Bundesländern", "부사어"], ["gefördert,", "동사(끝)"], ["und", "접속사"], ["für Weidetiere, die nachweislich vom Wolf getötet wurden,", "부사어"], ["erhalten", "동사"], ["die Tierhalter", "주어"], ["in der Regel", "부사어(빈도)"], ["eine Entschädigung.", "4격 목적어"]]
         },
         {
-          "de": "Der dadurch entstehende Druck auf die Wildbestände kann der Verjüngung der Wälder zugutekommen, weil weniger junge Bäume verbissen werden.",
-          "ko": "이로 인해 야생동물 개체군에 생기는 압력은 어린 나무가 덜 뜯어 먹히기 때문에 숲의 재생에 도움이 될 수 있습니다.",
-          "mark": ["Der dadurch entstehende Druck"]
+          "de": "Werde ein Rudel durch Abschüsse auseinandergerissen, zögen die übrigen Wölfe umher und näherten sich eher den Dörfern.",
+          "ko": "사살로 무리가 흩어지면 남은 늑대들이 떠돌아다니다가 오히려 마을에 더 가까이 온다는 것입니다.",
+          "mark": ["durch Abschüsse auseinandergerissen"],
+          "parts": [["Werde", "동사"], ["ein Rudel", "주어"], ["durch Abschüsse", "부사어(방법)"], ["auseinandergerissen,", "동사(끝)"], ["zögen", "동사"], ["die übrigen Wölfe", "주어"], ["umher", "동사(끝)"], ["und", "접속사"], ["näherten", "동사"], ["sich", "재귀대명사"], ["eher", "부사어(방법)"], ["den Dörfern.", "3격 목적어"]]
+        },
+        {
+          "de": "Wildbiologen warnen allerdings vor überzogenen Erwartungen, denn die in Nordamerika beobachteten Veränderungen ganzer Landschaften lassen sich nicht ohne Weiteres auf Mitteleuropa übertragen, wo die Landschaft dicht besiedelt ist und die Wildbestände ohnehin durch die Jagd reguliert werden.",
+          "ko": "하지만 야생생물학자들은 지나친 기대를 경계합니다. 북미에서 관찰된 경관 전체의 변화를 중부 유럽에 그렇게 쉽게 옮겨 적용할 수는 없기 때문입니다. 중부 유럽은 인구가 조밀하고, 야생동물 개체군도 어차피 사냥으로 조절되고 있습니다.",
+          "mark": ["durch die Jagd reguliert werden"]
         }
       ],
-      "tip": "분사 수식어의 어미는 형용사와 똑같이 변해요. 'die … beobachteten Veränderungen'에서 -en은 정관사 뒤 복수 어미예요."
+      "tip": "두 번째 예문의 Werde … auseinandergerissen은 접속법 1식 수동으로, 자연보호단체의 주장을 전하는 간접 화법이에요. 동사가 맨 앞에 있어서 wenn 없는 조건절이 돼요. 사람이나 기관이 직접 한 일이면 von이 자연스럽고, 사건이나 수단이 원인이면 durch를 써요."
+    },
+    {
+      "title": "종 전체를 가리키는 관사 – der Wolf, ein Schaf",
+      "term": "Generischer Artikel",
+      "explain": "der Wolf는 특정한 늑대 한 마리가 아니라 늑대라는 종 전체를 가리킬 수 있어요. 이것을 총칭 용법이라고 해요. 과학 기사와 사전의 정의에서는 정관사 단수를 많이 써요(Der Wolf ernährt sich …). 부정관사 단수는 전형적인 한 예를 들어 일반화해요(ein ungeschütztes Schaf = 보호받지 못하는 양이라면 어떤 양이든). 관사 없는 복수(junge Wölfe)도 일반적인 사실을 말해요. 총칭의 der Wolf를 대명사로 받을 때는 er를 써요.",
+      "pattern": "정관사 단수 der Wolf · 부정관사 단수 ein Schaf · 무관사 복수 Wölfe → 종 전체에 대한 일반적 진술",
+      "examples": [
+        {
+          "de": "Der Wolf ernährt sich überwiegend von Rehen, Hirschen und Wildschweinen, wobei er bevorzugt kranke, alte oder unerfahrene Tiere erbeutet.",
+          "ko": "늑대는 주로 노루, 사슴, 멧돼지를 먹고 사는데, 그중에서도 병들었거나 늙었거나 경험이 부족한 동물을 우선 사냥합니다.",
+          "mark": ["Der Wolf"],
+          "parts": [["Der Wolf", "주어"], ["ernährt", "동사"], ["sich", "재귀대명사"], ["überwiegend", "부사어(빈도)"], ["von Rehen, Hirschen und Wildschweinen,", "전치사 목적어"], ["wobei er bevorzugt kranke, alte oder unerfahrene Tiere erbeutet.", "종속절"]]
+        },
+        {
+          "de": "Ungeachtet des reichen Wildangebots tötet der Wolf wiederholt Weidetiere, vor allem Schafe, denn ein ungeschütztes Schaf ist leichter zu erbeuten als ein flüchtendes Reh.",
+          "ko": "야생 먹잇감이 풍부한데도 늑대는 거듭 방목 가축을, 특히 양을 죽입니다. 보호받지 못하는 양은 달아나는 노루보다 잡기 쉽기 때문입니다.",
+          "mark": ["der Wolf", "ein ungeschütztes Schaf", "ein flüchtendes Reh"]
+        },
+        {
+          "de": "Rund 150 Jahre lang galt der Wolf in Deutschland als ausgerottet.",
+          "ko": "약 150년 동안 독일에서 늑대는 멸종된 것으로 여겨졌습니다.",
+          "mark": ["der Wolf"],
+          "parts": [["Rund 150 Jahre lang", "부사어(시간)"], ["galt", "동사"], ["der Wolf", "주어"], ["in Deutschland", "부사어(장소)"], ["als ausgerottet.", "보어"]]
+        }
+      ],
+      "tip": "총칭의 der Wolf는 우리말로 ‘늑대는’으로 옮기면 자연스러워요. Die meisten Rudel leben heute im Norden처럼 수와 장소를 말하는 문장은 종 전체가 아니라 실제 무리를 가리켜요. 독해에서는 der Wolf가 한 마리인지 종 전체인지 문맥으로 확인해요."
     }
   ],
   "vocab": [
     { "de": "ausgerottet", "ko": "멸종된, 근절된" },
-    { "de": "der Welpe, -n", "ko": "(개·늑대의) 새끼" },
-    { "de": "der Nachkomme, -n", "ko": "후손" },
-    { "de": "die Wiederbesiedlung, -en", "ko": "재정착" },
+    { "de": "die Wiederbesiedlung, -en", "ko": "(동물의) 재정착" },
     { "de": "das Rudel, -", "ko": "(늑대 등의) 무리" },
-    { "de": "das Revier, -e", "ko": "(동물의) 영역, 구역" },
-    { "de": "der Beutegreifer, -", "ko": "포식 동물" },
-    { "de": "erbeuten + Akk.", "ko": "사냥하여 잡다, 노획하다" },
+    { "de": "das Revier, -e", "ko": "(동물의) 영역" },
+    { "de": "nach|weisen (wies nach, hat nachgewiesen) + Akk.", "ko": "입증하다, (존재를) 확인하다" },
+    { "de": "erbeuten + Akk.", "ko": "사냥해 잡다" },
     { "de": "der Wildbestand, -¨e", "ko": "야생동물 개체군" },
-    { "de": "verbeißen (verbeißt, verbiss, hat verbissen)", "ko": "(어린 나무를) 뜯어 먹다" },
-    { "de": "die Kehrseite, -n", "ko": "이면, 부정적인 측면" },
-    { "de": "reißen (reißt, riss, hat gerissen)", "ko": "(맹수가 먹잇감을) 물어 죽이다" },
-    { "de": "das Nutztier, -e", "ko": "가축" },
-    { "de": "die Schäferei, -en", "ko": "양 목장, 양 사육업" },
-    { "de": "der Herdenschutz (Sg.)", "ko": "가축 무리 보호 (대책)" },
-    { "de": "der Eindringling, -e", "ko": "침입자" },
-    { "de": "die Entschädigung, -en", "ko": "보상, 배상" },
+    { "de": "verbeißen (verbiss, hat verbissen) + Akk.", "ko": "(어린 나무의 싹·껍질을) 뜯어 먹다" },
+    { "de": "die Verjüngung, -en", "ko": "(숲의) 재생, 젊어짐" },
+    { "de": "die Kehrseite, -n", "ko": "이면, 나쁜 면" },
+    { "de": "das Weidetier, -e", "ko": "방목 가축" },
+    { "de": "die Schäferei, -en", "ko": "양 목장" },
+    { "de": "die Vorkehrung, -en", "ko": "예방 조치, 대비책" },
+    { "de": "der Herdenschutz (Sg.)", "ko": "가축 보호 (대책)" },
+    { "de": "die Entschädigung, -en", "ko": "보상(금)" },
     { "de": "der Abschuss, -¨e", "ko": "사살" },
-    { "de": "die Entnahme, -n", "ko": "(개체의) 제거, 포획" },
-    { "de": "die Kulisse, -n", "ko": "배경, 무대 장치" }
+    { "de": "der Befürworter, -", "ko": "지지자, 찬성하는 사람" },
+    { "de": "verlagern + Akk.", "ko": "(다른 곳으로) 옮기다" },
+    { "de": "flächendeckend", "ko": "전 지역에 걸친, 빠짐없는" },
+    { "de": "die Kulisse, -n", "ko": "(무대) 배경" }
   ],
   "phrases": [
     {
       "de": "als ausgerottet gelten",
       "ko": "멸종된 것으로 여겨지다",
       "ex": "Rund 150 Jahre lang galt der Wolf in Deutschland als ausgerottet.",
-      "exko": "약 150년 동안 늑대는 독일에서 멸종된 것으로 여겨졌습니다."
+      "exko": "약 150년 동안 독일에서 늑대는 멸종된 것으로 여겨졌습니다."
     },
     {
-      "de": "einer Sache zugutekommen",
-      "ko": "~에 도움이 되다, ~에 이롭다",
-      "ex": "kann der Verjüngung der Wälder zugutekommen",
-      "exko": "숲의 재생에 도움이 될 수 있습니다"
+      "de": "Druck ausüben auf + Akk.",
+      "ko": "~에 압력을 가하다",
+      "ex": "Der Druck, den er auf diese Wildbestände ausübt, kann der Verjüngung der Wälder zugutekommen, weil Rehe und Hirsche dann weniger junge Bäume verbeißen.",
+      "exko": "늑대가 이 야생동물 개체군에 가하는 압력은 숲의 재생에 도움이 될 수 있습니다. 노루와 사슴이 어린 나무를 덜 뜯어 먹게 되기 때문입니다."
     },
     {
       "de": "nicht ohne Weiteres",
-      "ko": "그대로는 (~할 수 없다), 간단히는 (안 되다)",
-      "ex": "lassen sich nicht ohne Weiteres auf die dicht besiedelte, intensiv genutzte Kulturlandschaft Mitteleuropas übertragen",
-      "exko": "인구가 조밀하고 집약적으로 이용되는 중부 유럽의 문화 경관에 그대로 옮겨 적용할 수 없습니다"
+      "ko": "그렇게 쉽게는 (~할 수 없다)",
+      "ex": "Wildbiologen warnen allerdings vor überzogenen Erwartungen, denn die in Nordamerika beobachteten Veränderungen ganzer Landschaften lassen sich nicht ohne Weiteres auf Mitteleuropa übertragen, wo die Landschaft dicht besiedelt ist und die Wildbestände ohnehin durch die Jagd reguliert werden.",
+      "exko": "하지만 야생생물학자들은 지나친 기대를 경계합니다. 북미에서 관찰된 경관 전체의 변화를 중부 유럽에 그렇게 쉽게 옮겨 적용할 수는 없기 때문입니다. 중부 유럽은 인구가 조밀하고, 야생동물 개체군도 어차피 사냥으로 조절되고 있습니다."
     },
     {
       "de": "in Gefahr geraten, … zu + Inf.",
       "ko": "~할 위기에 처하다",
-      "ex": "geraten dadurch in Gefahr, ihren Betrieb aufgeben zu müssen",
-      "exko": "이 때문에 사업을 접어야 할 위기에 처하기도 합니다"
+      "ex": "Insbesondere Schäfereien, deren wirtschaftliche Situation ohnehin angespannt ist, geraten dadurch in Gefahr, ihren Betrieb aufgeben zu müssen.",
+      "exko": "특히 경영 상황이 안 그래도 어려운 양 목장은 이 때문에 사업을 접어야 할 위기에 처합니다."
     },
     {
       "de": "etwas in Kauf nehmen",
       "ko": "~을 감수하다",
-      "ex": "muss die Möglichkeit eines Angriffs in Kauf nehmen",
-      "exko": "공격당할 가능성을 감수해야 합니다"
+      "ex": "Wer Weidetiere hält, muss daher entweder Angriffe in Kauf nehmen oder aufwendige Vorkehrungen treffen.",
+      "exko": "그래서 방목 가축을 기르는 사람은 공격을 감수하거나, 아니면 품이 많이 드는 예방 조치를 취해야 합니다."
     },
     {
       "de": "zur Sprache kommen",
       "ko": "거론되다, 화제에 오르다",
-      "ex": "dass der zusätzliche Arbeitsaufwand in der Debatte um die Förderung bislang kaum zur Sprache kommt",
-      "exko": "지원을 둘러싼 논의에서 이 추가적인 노동 부담이 지금까지 거의 거론되지 않는다는 것"
+      "ex": "Viele Tierhalter kritisieren deshalb, dass dieser zusätzliche Aufwand in der Diskussion um die Förderung bisher kaum zur Sprache kommt.",
+      "exko": "그래서 많은 사육자는 지원을 둘러싼 논의에서 이 추가적인 부담이 지금까지 거의 거론되지 않는다고 비판합니다."
     },
     {
       "de": "sich berufen auf + Akk.",
-      "ko": "~을 근거로 내세우다, ~을 원용하다",
-      "ex": "Beide Seiten berufen sich auf wissenschaftliche Studien",
-      "exko": "양쪽 모두 과학적 연구를 근거로 내세웁니다"
+      "ko": "~을 근거로 내세우다",
+      "ex": "Beide Seiten berufen sich auf wissenschaftliche Studien, und beide können auf Fälle verweisen, die ihre Position zu stützen scheinen.",
+      "exko": "양쪽 모두 과학적 연구를 근거로 내세우고, 양쪽 모두 자기 입장을 뒷받침하는 듯한 사례를 들 수 있습니다."
     },
     {
       "de": "einer Sache Rechnung tragen",
-      "ko": "~을 고려하다, ~을 감안하다",
-      "ex": "Eine Politik, die dieser Spannung Rechnung tragen will",
-      "exko": "이 긴장 관계를 고려하려는 정책은"
+      "ko": "~을 고려하다, 감안하다",
+      "ex": "Eine Politik, die dieser Spannung Rechnung tragen will, muss den Schutz der Weidetiere ernst nehmen, die Sorgen der ländlichen Bevölkerung anerkennen und die ökologische Bedeutung der Wölfe im Blick behalten.",
+      "exko": "이 긴장 관계를 고려하려는 정책은 방목 가축의 보호를 진지하게 받아들이고, 농촌 주민의 걱정을 인정하며, 늑대의 생태적 의미를 놓치지 않아야 합니다."
     }
   ]
 }

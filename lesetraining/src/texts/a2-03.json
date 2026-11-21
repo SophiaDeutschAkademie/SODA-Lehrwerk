@@ -7,7 +7,7 @@
   "type": "Tagebucheintrag",
   "typeKo": "일기",
   "intro": "열여섯 살 엘리프가 동물병원에서 학교 실습을 한 첫날을 일기에 적었어요.",
-  "focus": ["화법조동사의 과거형", "war · hatte와 현재완료", "재귀동사"],
+  "focus": ["화법조동사의 과거형", "schon · erst · noch", "재귀동사 + 전치사"],
   "paragraphs": [
     {
       "style": "meta",
@@ -15,153 +15,162 @@
       "ko": "3월 3일 월요일"
     },
     {
-      "de": "Liebes Tagebuch, ich bin total müde, aber ich muss den Tag noch aufschreiben. Heute war mein erster Tag in der Tierarztpraxis Dr. Sommer. Schon um 7 Uhr musste ich da sein, deshalb hatte ich kaum Zeit zum Frühstücken. An das frühe Aufstehen muss ich mich erst noch gewöhnen!",
-      "ko": "사랑하는 일기장에게, 저는 완전히 지쳤지만 그래도 오늘 하루를 꼭 적어 두어야겠어요. 오늘은 조머 동물병원에서 보낸 첫날이었어요. 벌써 7시에 와 있어야 해서 아침 먹을 시간이 거의 없었어요. 일찍 일어나는 데는 아직 익숙해져야 해요!"
+      "de": "Liebes Tagebuch, ich bin furchtbar müde, aber diesen Tag muss ich unbedingt aufschreiben. Heute war mein erster Praktikumstag in der Tierarztpraxis Dr. Sommer. Weil ich schon um sieben Uhr anfangen musste, hatte ich kaum Zeit zum Frühstücken. An das frühe Aufstehen muss ich mich erst noch gewöhnen!",
+      "ko": "사랑하는 일기장에게, 저는 너무너무 피곤하지만 오늘 하루는 꼭 적어 두어야겠어요. 오늘은 조머 동물병원에서 실습한 첫날이었어요. 벌써 7시에 일을 시작해야 해서 아침 먹을 시간이 거의 없었어요. 일찍 일어나는 데는 아직 더 익숙해져야 해요!"
     },
     {
-      "de": "Am Anfang hatte ich ein bisschen Angst. Die Praxis war voll, und ich kannte niemanden. Frau Dr. Sommer war aber sehr nett. Natürlich durfte ich noch keine Tiere behandeln. Ich sollte die Hunde im Wartezimmer beruhigen und dort sauber machen. Ein großer Hund hat die ganze Zeit gezittert. Ich habe mich neben ihn gesetzt und leise mit ihm gesprochen – nach zehn Minuten war er ruhig. Darüber habe ich mich richtig gefreut!",
-      "ko": "처음에는 조금 무서웠어요. 병원은 붐볐고, 아는 사람은 아무도 없었어요. 하지만 조머 박사님은 아주 친절하셨어요. 당연히 저는 아직 동물을 치료하면 안 됐어요. 대기실에 있는 개들을 진정시키고 그곳을 깨끗이 치우는 일을 맡았어요. 큰 개 한 마리가 내내 떨고 있었어요. 저는 그 개 옆에 앉아서 조용히 말을 걸었어요. 10분 뒤에는 개가 진정됐어요. 그 일이 정말 기뻤어요!"
+      "de": "Am Anfang hatte ich ein bisschen Angst, denn ich kannte niemanden. Frau Dr. Sommer war aber wirklich freundlich. Natürlich durfte ich noch keine Tiere behandeln, sondern sollte die Hunde im Wartezimmer beruhigen und den Fußboden putzen. Ein großer Schäferhund hat die ganze Zeit gezittert, denn er hatte Angst vor der Impfung. Ich habe mich neben ihn gesetzt und leise mit ihm gesprochen. Erst nach zehn Minuten war er ruhig, und darüber habe ich mich richtig gefreut!",
+      "ko": "처음에는 조금 무서웠어요. 아는 사람이 아무도 없었거든요. 하지만 조머 박사님은 정말 친절하셨어요. 당연히 저는 아직 동물을 치료하면 안 됐고, 대신 대기실에 있는 개들을 진정시키고 바닥을 청소하는 일을 맡았어요. 큰 셰퍼드 한 마리가 내내 떨고 있었어요. 예방접종이 무서웠거든요. 저는 그 개 옆에 앉아서 조용히 말을 걸었어요. 10분이 지나서야 개가 진정됐고, 저는 그게 정말 기뻤어요!"
     },
     {
-      "de": "Nach der Mittagspause konnte ich sogar bei einer Operation zusehen. Eine Katze hat etwas Spitzes gefressen. Frau Dr. Sommer hat mir alles genau erklärt, und ich wollte jeden Schritt sehen. Nur kurz musste ich wegschauen.",
-      "ko": "점심시간 뒤에는 수술을 참관할 수도 있었어요. 고양이 한 마리가 뭔가 뾰족한 것을 먹었거든요. 조머 박사님이 저에게 모든 과정을 자세히 설명해 주셨고, 저는 모든 단계를 다 보고 싶었어요. 딱 잠깐만 눈을 돌려야 했어요."
+      "de": "Nach der Mittagspause durfte ich sogar bei einer Operation an einer Katze zusehen, die etwas Spitzes gefressen hat. Frau Dr. Sommer hat mir jeden Schritt genau erklärt, und ich wollte alles sehen. Nur einmal musste ich kurz wegschauen.",
+      "ko": "점심시간 뒤에는 뭔가 뾰족한 것을 먹은 고양이의 수술까지 참관할 수 있었어요. 조머 박사님이 모든 단계를 자세히 설명해 주셨고, 저는 전부 보고 싶었어요. 딱 한 번 잠깐 눈을 돌려야 했어요."
     },
     {
-      "de": "Einen Fehler habe ich leider auch gemacht: Ich habe die Tür zum Hof offen gelassen, und ein Kaninchen ist fast weggelaufen. Zum Glück hat ein Mitarbeiter es schnell gefangen. Darüber habe ich mich den ganzen Nachmittag geärgert, aber Frau Dr. Sommer hat nur gelacht und gesagt: „So etwas passiert jedem einmal.“",
-      "ko": "아쉽게도 실수도 하나 했어요. 뒷마당으로 나가는 문을 열어 둬서 토끼 한 마리가 하마터면 도망갈 뻔했어요. 다행히 직원 한 분이 재빨리 잡았어요. 그 일 때문에 오후 내내 속이 상했는데, 조머 박사님은 그냥 웃으면서 “그런 일은 누구나 한 번쯤 겪어요.” 하고 말씀하셨어요."
+      "de": "Leider habe ich auch einen Fehler gemacht und die Hintertür offen gelassen. Ein Kaninchen ist fast weggelaufen, aber zum Glück hat ein Mitarbeiter es schnell gefangen. Darüber habe ich mich den ganzen Nachmittag geärgert, aber Frau Dr. Sommer hat nur gelacht und gesagt, dass so etwas jedem Anfänger einmal passiert.",
+      "ko": "아쉽게도 실수도 하나 했어요. 뒷문을 열어 둔 거예요. 토끼 한 마리가 하마터면 도망갈 뻔했지만, 다행히 직원 한 분이 재빨리 잡았어요. 그 일 때문에 오후 내내 속이 상했는데, 조머 박사님은 그냥 웃으면서 그런 일은 초보자라면 누구나 한 번쯤 겪는다고 말씀하셨어요."
     },
     {
-      "de": "Jetzt freue ich mich trotzdem auf morgen. Vielleicht darf ich dann einen Hund wiegen oder bei den Impfungen helfen. Ob ich wirklich Tierärztin werden will? Heute Abend sage ich: Ja!",
-      "ko": "그래도 지금은 내일이 기다려져요. 내일은 개 몸무게를 재거나 예방접종을 도와도 될지도 몰라요. 제가 정말 수의사가 되고 싶은 걸까요? 오늘 저녁의 대답은 '네'예요!"
+      "de": "Jetzt freue ich mich trotzdem auf morgen. Vielleicht darf ich dann bei den Impfungen mithelfen. Ob ich wirklich Tierärztin werden will? Heute Abend sage ich: Ja!",
+      "ko": "그래도 지금은 내일이 기다려져요. 내일은 예방접종을 도와도 될지도 몰라요. 제가 정말 수의사가 되고 싶은 걸까요? 오늘 저녁의 대답은 '네'예요!"
     }
   ],
   "questions": [
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Elif hat am Morgen in Ruhe gefrühstückt.",
+      "q": "Elif hatte am Morgen genug Zeit zum Frühstücken.",
       "answer": 1,
-      "evidence": "deshalb hatte ich kaum Zeit zum Frühstücken",
-      "pairs": [["kaum Zeit zum Frühstücken", "in Ruhe gefrühstückt"]],
-      "explain": "엘리프는 7시까지 가야 해서 아침 먹을 시간이 거의 없었어요(kaum Zeit). '여유 있게 아침을 먹었다'(in Ruhe gefrühstückt)는 말은 본문과 반대예요."
+      "evidence": "hatte ich kaum Zeit zum Frühstücken",
+      "pairs": [["kaum Zeit zum Frühstücken", "genug Zeit zum Frühstücken"]],
+      "explain": "엘리프는 벌써 7시에 일을 시작해야 해서 아침 먹을 시간이 거의 없었어요(kaum Zeit). '여유 있게 아침을 먹을 시간이 충분했다'(genug Zeit)는 말은 본문과 반대예요."
     },
     {
       "type": "mc",
       "kind": "detail",
-      "q": "Welche Aufgabe hatte Elif am Vormittag?",
-      "options": ["Sie sollte die kranken Tiere im Wartezimmer untersuchen.", "Sie sollte sich um wartende Tiere kümmern und putzen.", "Sie sollte die Praxis für die ersten Patienten öffnen."],
+      "q": "Was sollte Elif am Vormittag machen?",
+      "options": ["Sie sollte im Wartezimmer die kranken Tiere behandeln.", "Sie sollte sich um die Tiere kümmern und sauber machen.", "Sie sollte bei einer Operation an einer Katze mithelfen."],
       "answer": 1,
-      "evidence": "Ich sollte die Hunde im Wartezimmer beruhigen und dort sauber machen.",
-      "pairs": [["die Hunde im Wartezimmer beruhigen", "sich um wartende Tiere kümmern"], ["dort sauber machen", "putzen"]],
-      "explain": "엘리프는 대기실의 개들을 진정시키고 그곳을 청소해야 했어요. 정답은 이것을 '기다리는 동물들을 돌보고 청소한다'로 바꿔 말했어요. 동물을 치료하거나 검사하는 일은 아직 하면 안 됐어요."
+      "evidence": "sollte die Hunde im Wartezimmer beruhigen und den Fußboden putzen",
+      "pairs": [["die Hunde im Wartezimmer beruhigen", "sich um die Tiere kümmern"], ["den Fußboden putzen", "sauber machen"]],
+      "explain": "엘리프는 대기실의 개들을 진정시키고(beruhigen) 바닥을 청소해야(putzen) 했어요. 정답은 이것을 '동물들을 돌보고(sich kümmern um) 청소한다(sauber machen)'로 바꿔 말했어요. 동물을 치료하는 일은 아직 하면 안 됐고(durfte noch keine Tiere behandeln), 수술은 점심시간 뒤에 지켜보기만 했어요."
     },
     {
       "type": "mc",
       "kind": "detail",
       "q": "Warum hat sich Elif am Vormittag gefreut?",
-      "options": ["Frau Dr. Sommer hat sie vor allen Mitarbeitern gelobt.", "Ein nervöses Tier ist durch sie ruhig geworden.", "Sie durfte zum ersten Mal einen Hund behandeln."],
+      "options": ["Frau Dr. Sommer hat ihre Arbeit vor allen gelobt.", "Ein ängstlicher Hund ist bei ihr ruhig geworden.", "Sie durfte dem Schäferhund selbst die Impfung geben."],
       "answer": 1,
-      "evidence": "nach zehn Minuten war er ruhig. Darüber habe ich mich richtig gefreut!",
-      "pairs": [["hat die ganze Zeit gezittert", "nervöses Tier"], ["war er ruhig", "ruhig geworden"]],
-      "explain": "내내 떨던 큰 개가 엘리프가 옆에 앉아 말을 걸자 10분 뒤에 조용해졌고, 엘리프는 그 일(darüber)이 기뻤어요. '떨었다'(gezittert)를 '불안한'(nervös)으로 바꿔 표현했어요. 칭찬을 받았다거나 개를 치료했다는 내용은 본문에 없어요."
+      "evidence": "Erst nach zehn Minuten war er ruhig, und darüber habe ich mich richtig gefreut!",
+      "pairs": [["denn er hatte Angst vor der Impfung", "ängstlicher Hund"], ["war er ruhig", "ruhig geworden"]],
+      "explain": "예방접종이 무서워 떨던 셰퍼드가 엘리프가 옆에 앉아 말을 건 뒤에 조용해졌고, 엘리프는 그 일(darüber)이 기뻤어요. 정답은 '겁을 내던 개가 엘리프 곁에서 조용해졌다'로 바꿔 말했어요. 칭찬을 받았다는 말은 없고, 엘리프는 아직 동물을 치료하면 안 됐으니 직접 예방접종을 했을 수도 없어요."
     },
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Elif hat sich die Operation von Anfang bis Ende ohne Pause angesehen.",
+      "q": "Elif wollte alles sehen und hat bei der Operation kein einziges Mal weggeschaut.",
       "answer": 1,
-      "evidence": "Nur kurz musste ich wegschauen.",
-      "pairs": [["Nur kurz musste ich wegschauen", "von Anfang bis Ende ohne Pause angesehen"]],
-      "explain": "엘리프는 모든 단계를 보고 싶어 했지만, 잠깐은 눈을 돌려야 했어요(wegschauen). 그러니 '처음부터 끝까지 쉬지 않고 봤다'는 말은 틀려요. wollte(원했다)와 실제로 한 일을 구별해야 해요."
+      "evidence": "Nur einmal musste ich kurz wegschauen.",
+      "pairs": [["Nur einmal musste ich kurz wegschauen", "kein einziges Mal weggeschaut"]],
+      "explain": "엘리프는 모든 것을 보고 싶어 했지만(wollte alles sehen), 한 번은 잠깐 눈을 돌려야 했어요(Nur einmal musste ich kurz wegschauen). 그러니 '한 번도 눈을 돌리지 않았다'는 말은 틀려요. 원했던 일(wollte)과 실제로 한 일을 구별해야 해요."
     },
     {
       "type": "mc",
       "kind": "detail",
       "q": "Was ist mit dem Kaninchen passiert?",
-      "options": ["Es ist durch die offene Tür in den Hof gelaufen und war weg.", "Es wollte nach draußen laufen, aber jemand hat es gefangen.", "Ein Mitarbeiter hat es in den Hof gebracht und die Tür zugemacht."],
+      "options": ["Es ist durch die offene Hintertür weggelaufen und war dann verschwunden.", "Es ist nicht weit gekommen, weil ein Kollege es eingefangen hat.", "Ein Mitarbeiter hat es durch die Hintertür nach draußen gelassen."],
       "answer": 1,
-      "evidence": "ein Kaninchen ist fast weggelaufen. Zum Glück hat ein Mitarbeiter es schnell gefangen.",
-      "pairs": [["ist fast weggelaufen", "wollte nach draußen laufen"], ["hat ein Mitarbeiter es schnell gefangen", "jemand hat es gefangen"]],
-      "explain": "토끼는 '거의 도망갈 뻔했어요'(fast weggelaufen). fast가 중요해요. 실제로 사라진 것이 아니라 직원이 재빨리 잡았어요. 'Es ist durch die offene Tür … gelaufen und war weg.'는 fast를 빼고 토끼가 사라졌다고 해서 틀려요."
+      "evidence": "Ein Kaninchen ist fast weggelaufen, aber zum Glück hat ein Mitarbeiter es schnell gefangen.",
+      "pairs": [["ist fast weggelaufen", "ist nicht weit gekommen"], ["hat ein Mitarbeiter es schnell gefangen", "ein Kollege es eingefangen hat"]],
+      "explain": "토끼는 '하마터면 도망갈 뻔했어요'(fast weggelaufen). fast(거의)가 중요해요. 실제로 사라진 것이 아니라 직원이 재빨리 잡았어요. 정답은 이것을 '멀리 가지 못했다'(nicht weit gekommen)로 바꿔 말했어요. 뒷문을 열어 둔 사람은 직원이 아니라 엘리프예요."
     },
     {
       "type": "rf",
-      "kind": "detail",
-      "q": "Frau Dr. Sommer hat Elif wegen des Fehlers nicht kritisiert.",
+      "kind": "inference",
+      "q": "Elifs Chefin war nach dem Fehler nicht böse auf sie.",
       "answer": 0,
-      "evidence": "aber Frau Dr. Sommer hat nur gelacht und gesagt: „So etwas passiert jedem einmal.“",
-      "pairs": [["hat nur gelacht", "nicht kritisiert"], ["Einen Fehler habe ich leider auch gemacht", "wegen des Fehlers"]],
-      "explain": "조머 박사님은 웃기만 하고 '그런 일은 누구나 한 번쯤 겪는다'고 했어요. 즉 엘리프를 꾸짖지 않았어요(nicht kritisiert). 본문의 긍정적인 반응을 부정문으로 바꿔 표현했어요. 엘리프가 스스로 속상해한 것(geärgert)과 박사님의 반응을 구별해야 해요."
+      "evidence": "aber Frau Dr. Sommer hat nur gelacht und gesagt, dass so etwas jedem Anfänger einmal passiert",
+      "pairs": [["hat nur gelacht", "nicht böse auf sie"], ["Frau Dr. Sommer", "Elifs Chefin"], ["einen Fehler gemacht", "nach dem Fehler"]],
+      "explain": "엘리프의 상사(Chefin)는 동물병원 원장인 조머 박사님이에요. 박사님은 웃기만 하고(nur gelacht) 그런 일은 초보자라면 누구나 한 번쯤 겪는다고 말했어요. 이 반응을 보면 박사님이 엘리프에게 화가 나지 않았다(nicht böse)는 것을 알 수 있어요. 속이 상한 사람(geärgert)은 박사님이 아니라 엘리프 자신이에요."
     },
     {
       "type": "mc",
       "kind": "gist",
-      "q": "Wie fühlt sich Elif am Ende des Tages?",
-      "options": ["Sie ist enttäuscht und möchte das Praktikum früher beenden.", "Sie ist unsicher und möchte lieber einen anderen Beruf.", "Sie ist müde, aber voller Vorfreude und will weitermachen."],
+      "q": "Wie fühlt sich Elif am Abend?",
+      "options": ["Sie ärgert sich immer noch über ihren Fehler mit dem Kaninchen.", "Sie ist unsicher, ob sie wirklich Tierärztin werden will.", "Sie ist müde, aber zufrieden und möchte gern weitermachen."],
       "answer": 2,
       "evidence": "Jetzt freue ich mich trotzdem auf morgen.",
-      "pairs": [["freue ich mich trotzdem auf morgen", "voller Vorfreude"], ["Heute Abend sage ich: Ja!", "will weitermachen"]],
-      "explain": "엘리프는 지쳤고 실수도 했지만 '그래도 내일이 기다려진다'(freue mich trotzdem auf morgen)고 하고, 마지막에 수의사가 되고 싶은지 스스로 묻고는 '네!'라고 답해요. 'Ob ich wirklich …?'라는 질문 형식 때문에 '확신이 없다'는 선택지가 헷갈릴 수 있지만, 바로 뒤의 Ja!가 답이에요. 실망했거나 다른 직업을 원한다는 내용은 없어요."
+      "pairs": [["freue ich mich trotzdem auf morgen", "möchte gern weitermachen"], ["furchtbar müde", "müde"]],
+      "explain": "엘리프는 너무 피곤하고 실수도 했지만 '그래도 내일이 기다려진다'(freue mich trotzdem auf morgen)고 하고, 수의사가 되고 싶은지 스스로 묻고는 '네!'라고 답해요. 'Ob ich wirklich …?'라는 질문 때문에 확신이 없다는 선지가 헷갈릴 수 있지만, 바로 뒤의 Ja!가 답이에요. 실수 때문에 속상했던 것은 오후의 일이에요."
     }
   ],
   "grammar": [
     {
-      "title": "화법조동사의 과거형",
+      "title": "화법조동사의 과거형 – musste · durfte · sollte · wollte",
       "term": "Präteritum der Modalverben",
-      "explain": "지난 일을 이야기할 때 화법조동사는 현재완료보다 과거형을 훨씬 많이 써요. müssen → musste, dürfen → durfte, sollen → sollte, können → konnte, wollen → wollte예요. 과거형에서는 움라우트가 사라져요(müssen → musste, dürfen → durfte, können → konnte). ich와 er/sie/es의 형태가 같고, 본동사는 현재와 똑같이 동사원형으로 문장 끝에 와요.",
-      "pattern": "musste/durfte/sollte/konnte/wollte (2번 자리) + … + 동사원형(문장 끝)",
+      "explain": "지난 일을 말할 때 화법조동사는 보통 현재완료보다 과거형을 써요: müssen → musste, dürfen → durfte, sollen → sollte, können → konnte, wollen → wollte. 과거형에는 움라우트가 없고, ich와 er/sie/es의 형태가 같아요(ich musste, sie musste). 주문장에서는 화법조동사가 둘째 자리에, 본동사 원형이 문장 끝에 와요. weil 같은 종속절에서는 화법조동사가 맨 끝으로 가서 본동사 원형 뒤에 와요: Weil ich schon um sieben Uhr anfangen musste, …",
+      "pattern": "주문장: … + musste/durfte/sollte/wollte(둘째 자리) + … + 동사원형 / 종속절: weil + 주어 + … + 동사원형 + musste/durfte …",
       "examples": [
         {
-          "de": "Natürlich durfte ich noch keine Tiere behandeln.",
-          "ko": "당연히 저는 아직 동물을 치료하면 안 됐어요.",
-          "mark": ["durfte", "behandeln"],
-          "parts": [["Natürlich", "부사어"], ["durfte", "동사"], ["ich", "주어"], ["noch", "부사어(시간)"], ["keine Tiere", "4격 목적어"], ["behandeln.", "동사(끝)"]]
+          "de": "Natürlich durfte ich noch keine Tiere behandeln, sondern sollte die Hunde im Wartezimmer beruhigen und den Fußboden putzen.",
+          "ko": "당연히 저는 아직 동물을 치료하면 안 됐고, 대신 대기실에 있는 개들을 진정시키고 바닥을 청소하는 일을 맡았어요.",
+          "mark": ["durfte", "behandeln", "sollte", "beruhigen", "putzen"],
+          "parts": [["Natürlich", "부사어"], ["durfte", "동사"], ["ich", "주어"], ["noch", "부사어(시간)"], ["keine Tiere", "4격 목적어"], ["behandeln,", "동사(끝)"], ["sondern", "접속사"], ["sollte", "동사"], ["die Hunde", "4격 목적어"], ["im Wartezimmer", "부사어(장소)"], ["beruhigen", "동사(끝)"], ["und", "접속사"], ["den Fußboden", "4격 목적어"], ["putzen.", "동사(끝)"]]
         },
         {
-          "de": "Ich sollte die Hunde im Wartezimmer beruhigen und dort sauber machen.",
-          "ko": "대기실에 있는 개들을 진정시키고 그곳을 깨끗이 치우는 일을 맡았어요.",
-          "mark": ["sollte", "beruhigen", "machen"]
+          "de": "Weil ich schon um sieben Uhr anfangen musste, hatte ich kaum Zeit zum Frühstücken.",
+          "ko": "벌써 7시에 일을 시작해야 해서 아침 먹을 시간이 거의 없었어요.",
+          "mark": ["anfangen musste", "hatte ich"],
+          "parts": [["Weil", "접속사"], ["ich", "주어"], ["schon um sieben Uhr", "부사어(시간)"], ["anfangen musste,", "동사(끝)"], ["hatte", "동사"], ["ich", "주어"], ["kaum Zeit zum Frühstücken.", "4격 목적어"]]
         },
         {
-          "de": "Nach der Mittagspause konnte ich sogar bei einer Operation zusehen.",
-          "ko": "점심시간 뒤에는 수술을 참관할 수도 있었어요.",
-          "mark": ["konnte", "zusehen"],
-          "parts": [["Nach der Mittagspause", "부사어(시간)"], ["konnte", "동사"], ["ich", "주어"], ["sogar", "부사어"], ["bei einer Operation", "전치사 목적어"], ["zusehen.", "동사(끝)"]]
+          "de": "Frau Dr. Sommer hat mir jeden Schritt genau erklärt, und ich wollte alles sehen.",
+          "ko": "조머 박사님이 모든 단계를 자세히 설명해 주셨고, 저는 전부 보고 싶었어요.",
+          "mark": ["wollte", "sehen"]
+        },
+        {
+          "de": "Nur einmal musste ich kurz wegschauen.",
+          "ko": "딱 한 번 잠깐 눈을 돌려야 했어요.",
+          "mark": ["musste", "wegschauen"]
         }
       ],
-      "tip": "sollte는 '~하기로 되어 있었다, ~하라는 지시를 받았다'는 뜻이에요. 본문에서 엘리프가 sollte를 쓴 것은 박사님이 그 일을 맡겼기 때문이에요. 다른 동사와 함께 쓴 화법조동사를 현재완료로 만들면 과거분사 gemusst 대신 동사원형 müssen을 써요. 그래서 문장 끝에 동사원형이 두 개 와요: Ich habe früh aufstehen müssen. 형태가 이렇게 복잡해서 말할 때도 보통 과거형을 써요: Ich musste früh aufstehen."
+      "tip": "sollte는 '~하기로 되어 있었다, ~하라는 말을 들었다'는 뜻으로 자주 써요. 본문에서 엘리프는 박사님이 맡긴 일을 sollte로 말해요. wollte는 자기가 하고 싶었던 일이에요: ich wollte alles sehen. 종속절이 문장 앞에 오면 주문장은 동사로 시작해요: …, hatte ich kaum Zeit."
     },
     {
-      "title": "war / hatte와 현재완료로 지난 일 이야기하기",
-      "term": "Präteritum von sein/haben und Perfekt",
-      "explain": "일상에서 지난 일을 말할 때 대부분의 동사는 현재완료(haben/sein + 과거분사)를 써요: hat gezittert, habe gemacht, ist weggelaufen. 하지만 sein과 haben은 현재완료 대신 과거형 war와 hatte를 쓰는 것이 훨씬 자연스러워요: Heute war mein erster Tag, Am Anfang hatte ich Angst. 그래서 하나의 이야기 안에 war/hatte와 현재완료가 섞여 나와요. 이것이 독일어 일상 이야기의 기본 형태예요.",
-      "pattern": "sein, haben → 과거형 war, hatte / 다른 동사 → 현재완료 (haben/sein + 과거분사)",
+      "title": "schon · erst · noch – 시간을 나타내는 작은 낱말",
+      "term": "Temporaladverbien schon, erst, noch",
+      "explain": "schon은 생각보다 '이르다, 벌써'라는 느낌을 줘요: schon um sieben Uhr(벌써 7시에). erst는 반대로 '늦다, 그제야'라는 느낌이에요: Erst nach zehn Minuten war er ruhig(10분이 지나서야 조용해졌어요). noch는 어떤 상태가 '아직' 이어진다는 뜻이고, 부정어와 함께 쓰면 '아직 ~않다'가 돼요: noch keine Tiere(아직 동물은 안 됨). erst noch는 '앞으로 시간이 더 걸린다'는 뜻이에요: An das frühe Aufstehen muss ich mich erst noch gewöhnen.",
+      "pattern": "schon + 시간 = 벌써(이르게) / erst + 시간 = ~이 되어서야(늦게) / noch nicht · noch kein = 아직 ~않다",
       "examples": [
         {
-          "de": "Am Anfang hatte ich ein bisschen Angst.",
-          "ko": "처음에는 조금 무서웠어요.",
-          "mark": ["hatte"],
-          "parts": [["Am Anfang", "부사어(시간)"], ["hatte", "동사"], ["ich", "주어"], ["ein bisschen Angst.", "4격 목적어"]]
+          "de": "Erst nach zehn Minuten war er ruhig, und darüber habe ich mich richtig gefreut!",
+          "ko": "10분이 지나서야 개가 진정됐고, 저는 그게 정말 기뻤어요!",
+          "mark": ["Erst nach zehn Minuten"],
+          "parts": [["Erst nach zehn Minuten", "부사어(시간)"], ["war", "동사"], ["er", "주어"], ["ruhig,", "보어"], ["und", "접속사"], ["darüber", "전치사 목적어"], ["habe", "동사"], ["ich", "주어"], ["mich", "재귀대명사"], ["richtig", "부사어"], ["gefreut!", "동사(끝)"]]
         },
         {
-          "de": "Ein großer Hund hat die ganze Zeit gezittert.",
-          "ko": "큰 개 한 마리가 내내 떨고 있었어요.",
-          "mark": ["hat", "gezittert"],
-          "parts": [["Ein großer Hund", "주어"], ["hat", "동사"], ["die ganze Zeit", "부사어(시간)"], ["gezittert.", "동사(끝)"]]
+          "de": "Weil ich schon um sieben Uhr anfangen musste, hatte ich kaum Zeit zum Frühstücken.",
+          "ko": "벌써 7시에 일을 시작해야 해서 아침 먹을 시간이 거의 없었어요.",
+          "mark": ["schon um sieben Uhr"]
         },
         {
-          "de": "Die Praxis war voll, und ich kannte niemanden.",
-          "ko": "병원은 붐볐고, 아는 사람은 아무도 없었어요.",
-          "mark": ["war", "kannte"]
+          "de": "Natürlich durfte ich noch keine Tiere behandeln, sondern sollte die Hunde im Wartezimmer beruhigen und den Fußboden putzen.",
+          "ko": "당연히 저는 아직 동물을 치료하면 안 됐고, 대신 대기실에 있는 개들을 진정시키고 바닥을 청소하는 일을 맡았어요.",
+          "mark": ["noch keine"]
+        },
+        {
+          "de": "An das frühe Aufstehen muss ich mich erst noch gewöhnen!",
+          "ko": "일찍 일어나는 데는 아직 더 익숙해져야 해요!",
+          "mark": ["erst noch"]
         }
       ],
-      "tip": "'Ich bin müde gewesen', 'Ich habe Angst gehabt'도 틀린 문장은 아니지만, 보통은 war, hatte가 더 자연스러워요. kennen도 kannte처럼 과거형을 자주 써요. 주의할 점: war/hatte를 과거분사와 함께 쓰면(hatte gemacht, war gegangen) 과거완료라는 다른 시제가 돼요."
+      "tip": "같은 시각도 schon과 erst에 따라 느낌이 달라져요: Er kommt schon um acht.(8시면 벌써 와요) / Er kommt erst um acht.(8시나 돼야 와요). noch kein의 반대는 schon이에요: Heute durfte ich noch keine Tiere behandeln. → Morgen darf ich vielleicht schon helfen."
     },
     {
-      "title": "재귀동사와 전치사: sich freuen auf/über, sich ärgern über, sich gewöhnen an",
+      "title": "재귀동사와 전치사 – sich freuen auf/über, sich ärgern über, sich gewöhnen an",
       "term": "Reflexive Verben mit Präposition",
-      "explain": "재귀동사는 주어와 같은 사람을 가리키는 재귀대명사(mich, dich, sich, uns, euch, sich)와 함께 써요. 이 동사들은 정해진 전치사와 함께 쓰여요. sich freuen auf + 4격은 앞으로 올 일이 '기다려지다', sich freuen über + 4격은 이미 있는 일이 '기쁘다'예요. sich ärgern über + 4격은 '~때문에 화가 나다', sich gewöhnen an + 4격은 '~에 익숙해지다'예요. 앞 문장의 내용을 가리킬 때는 전치사 앞에 da(r)-를 붙여요: Darüber habe ich mich gefreut.",
-      "pattern": "주어 + 동사 + 재귀대명사 + auf/über/an + 4격",
+      "explain": "재귀동사는 주어와 같은 사람을 가리키는 재귀대명사(mich, dich, sich, uns, euch, sich)와 함께 써요. 많은 재귀동사는 정해진 전치사와 함께 써요. sich freuen auf + 4격은 앞으로 올 일이 '기다려지다', sich freuen über + 4격은 이미 일어난 일이 '기쁘다'예요. sich ärgern über + 4격은 '~ 때문에 화가 나다', sich gewöhnen an + 4격은 '~에 익숙해지다'예요. 앞 문장의 일을 가리킬 때는 darüber(그 일에 대해)처럼 da(r)- + 전치사를 써요.",
+      "pattern": "주어 + 동사 + 재귀대명사 + auf/über/an + 4격 / 앞 문장의 일 → darüber, darauf, daran",
       "examples": [
         {
           "de": "Jetzt freue ich mich trotzdem auf morgen.",
@@ -170,17 +179,17 @@
           "parts": [["Jetzt", "부사어(시간)"], ["freue", "동사"], ["ich", "주어"], ["mich", "재귀대명사"], ["trotzdem", "접속부사"], ["auf morgen.", "전치사 목적어"]]
         },
         {
-          "de": "Darüber habe ich mich den ganzen Nachmittag geärgert, aber Frau Dr. Sommer hat nur gelacht und gesagt: „So etwas passiert jedem einmal.“",
-          "ko": "그 일 때문에 오후 내내 속이 상했는데, 조머 박사님은 그냥 웃으면서 “그런 일은 누구나 한 번쯤 겪어요.” 하고 말씀하셨어요.",
+          "de": "Darüber habe ich mich den ganzen Nachmittag geärgert, aber Frau Dr. Sommer hat nur gelacht und gesagt, dass so etwas jedem Anfänger einmal passiert.",
+          "ko": "그 일 때문에 오후 내내 속이 상했는데, 조머 박사님은 그냥 웃으면서 그런 일은 초보자라면 누구나 한 번쯤 겪는다고 말씀하셨어요.",
           "mark": ["Darüber", "mich", "geärgert"]
         },
         {
           "de": "An das frühe Aufstehen muss ich mich erst noch gewöhnen!",
-          "ko": "일찍 일어나는 데는 아직 익숙해져야 해요!",
+          "ko": "일찍 일어나는 데는 아직 더 익숙해져야 해요!",
           "mark": ["An das frühe Aufstehen", "mich", "gewöhnen"]
         }
       ],
-      "tip": "sich freuen auf(앞으로의 일)와 sich freuen über(지금의 일, 이미 일어난 일)를 꼭 구별하세요. 'Ich freue mich auf das Wochenende.'(주말이 기다려져요) / 'Ich freue mich über das Geschenk.'(선물이 기뻐요)"
+      "tip": "sich freuen auf(앞으로의 일)와 sich freuen über(이미 일어난 일)를 구별하세요: Ich freue mich auf morgen.(내일이 기다려져요) / Ich habe mich darüber gefreut.(그 일이 기뻤어요). sich setzen처럼 전치사가 정해져 있지 않은 재귀동사도 있어요: Ich habe mich neben ihn gesetzt."
     }
   ],
   "vocab": [
@@ -188,41 +197,41 @@
     { "de": "die Tierarztpraxis, -praxen", "ko": "동물병원" },
     { "de": "auf|schreiben (schrieb auf, hat aufgeschrieben)", "ko": "적어 두다, 기록하다" },
     { "de": "sich gewöhnen an + Akk.", "ko": "~에 익숙해지다" },
-    { "de": "behandeln", "ko": "치료하다, 다루다" },
+    { "de": "behandeln", "ko": "치료하다" },
     { "de": "beruhigen", "ko": "진정시키다" },
     { "de": "das Wartezimmer, -", "ko": "대기실" },
+    { "de": "der Schäferhund, -e", "ko": "셰퍼드(개)" },
     { "de": "zittern", "ko": "떨다" },
     { "de": "die Operation, -en", "ko": "수술" },
-    { "de": "zu|sehen (sieht zu, sah zu, hat zugesehen)", "ko": "지켜보다, 구경하다" },
+    { "de": "zu|sehen (sieht zu, sah zu, hat zugesehen) + bei + Dat.", "ko": "(~을) 지켜보다, 참관하다" },
     { "de": "weg|schauen", "ko": "눈을 돌리다, 시선을 피하다" },
     { "de": "das Kaninchen, -", "ko": "토끼" },
-    { "de": "fangen (fängt, fing, hat gefangen)", "ko": "잡다, 붙잡다" },
     { "de": "die Impfung, -en", "ko": "예방접종" }
   ],
   "phrases": [
     {
-      "de": "Angst haben",
-      "ko": "무서워하다, 겁이 나다",
-      "ex": "Am Anfang hatte ich ein bisschen Angst.",
-      "exko": "처음에는 조금 무서웠어요."
+      "de": "Angst haben vor + Dat.",
+      "ko": "~을 무서워하다",
+      "ex": "Ein großer Schäferhund hat die ganze Zeit gezittert, denn er hatte Angst vor der Impfung.",
+      "exko": "큰 셰퍼드 한 마리가 내내 떨고 있었어요. 예방접종이 무서웠거든요."
     },
     {
       "de": "einen Fehler machen",
       "ko": "실수하다",
-      "ex": "Einen Fehler habe ich leider auch gemacht",
-      "exko": "아쉽게도 실수도 하나 했어요"
+      "ex": "Leider habe ich auch einen Fehler gemacht und die Hintertür offen gelassen.",
+      "exko": "아쉽게도 실수도 하나 했어요. 뒷문을 열어 둔 거예요."
     },
     {
       "de": "zum Glück",
       "ko": "다행히",
-      "ex": "Zum Glück hat ein Mitarbeiter es schnell gefangen.",
-      "exko": "다행히 직원 한 분이 재빨리 잡았어요."
+      "ex": "Ein Kaninchen ist fast weggelaufen, aber zum Glück hat ein Mitarbeiter es schnell gefangen.",
+      "exko": "토끼 한 마리가 하마터면 도망갈 뻔했지만, 다행히 직원 한 분이 재빨리 잡았어요."
     },
     {
-      "de": "So etwas passiert jedem einmal.",
-      "ko": "그런 일은 누구나 한 번쯤 겪어요.",
-      "ex": "„So etwas passiert jedem einmal.“",
-      "exko": "“그런 일은 누구나 한 번쯤 겪어요.”"
+      "de": "jemandem passieren (ist passiert)",
+      "ko": "(일이) ~에게 일어나다, ~가 겪다",
+      "ex": "Darüber habe ich mich den ganzen Nachmittag geärgert, aber Frau Dr. Sommer hat nur gelacht und gesagt, dass so etwas jedem Anfänger einmal passiert.",
+      "exko": "그 일 때문에 오후 내내 속이 상했는데, 조머 박사님은 그냥 웃으면서 그런 일은 초보자라면 누구나 한 번쯤 겪는다고 말씀하셨어요."
     }
   ]
 }

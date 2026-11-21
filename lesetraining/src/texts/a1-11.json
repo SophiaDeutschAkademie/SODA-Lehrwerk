@@ -7,31 +7,31 @@
   "type": "Wettervorhersage (Radio)",
   "typeKo": "라디오 일기 예보",
   "intro": "함부르크와 킬의 월요일부터 일요일까지 날씨를 알려 주는 라디오 예보예요.",
-  "focus": ["비인칭 주어 es", "am + 요일", "sein + 형용사"],
+  "focus": ["비인칭 주어 es", "주어와 동사의 일치", "-s로 끝나는 때 부사"],
   "paragraphs": [
     {
-      "de": "Guten Morgen! Hier ist das Wetter für Hamburg und Kiel. Im Norden gibt es diese Woche fast alles: Regen, Wind, Nebel, Sonne und Gewitter.",
-      "ko": "안녕하세요! 함부르크와 킬의 날씨예요. 이번 주 북부 지역에는 비, 바람, 안개, 햇빛, 뇌우까지 거의 모든 날씨가 있어요."
+      "de": "Guten Morgen, hier ist das Wetter für Hamburg und Kiel. Diese Woche bringt im Norden alles – Regen, Sturm, Nebel, Sonnenschein und Gewitter.",
+      "ko": "안녕하세요, 함부르크와 킬의 날씨예요. 이번 주 북부 지역에는 비, 폭풍, 안개, 햇살, 뇌우까지 모든 날씨가 다 찾아와요."
     },
     {
-      "de": "Am Montag und am Dienstag regnet es viel. Es ist kalt: Am Tag sind es nur 6 Grad, in der Nacht minus 1 Grad. Nehmen Sie eine Regenjacke mit!",
-      "ko": "월요일과 화요일에는 비가 많이 와요. 날씨가 추워요. 낮에는 6도밖에 안 되고, 밤에는 영하 1도예요. 우비를 챙기세요!"
+      "de": "Montag und Dienstag bringen von morgens bis abends Regen und Sturm. Am Tag sind es nur 6 Grad, nachts minus 1 Grad. Nehmen Sie eine Regenjacke mit, denn bei Sturm hilft kein Regenschirm!",
+      "ko": "월요일과 화요일에는 아침부터 저녁까지 비가 내리고 폭풍이 불어요. 낮 기온은 6도밖에 안 되고, 밤에는 영하 1도예요. 우비를 챙기세요. 폭풍이 불 때는 우산이 소용없거든요!"
     },
     {
-      "de": "Am Mittwoch regnet es nicht, aber es ist windig. Morgens gibt es in Kiel Nebel. Am Nachmittag kommt die Sonne.",
-      "ko": "수요일에는 비가 오지 않지만 바람이 많이 불어요. 아침에는 킬에 안개가 껴요. 오후에는 해가 나와요."
+      "de": "Am Mittwoch regnet es nicht mehr, aber morgens gibt es in Kiel Nebel. Autofahrer sehen dann nicht viel – fahren Sie bitte langsam! Am Nachmittag scheint die Sonne.",
+      "ko": "수요일에는 더 이상 비가 오지 않지만, 아침에 킬에 안개가 껴요. 그러면 운전자는 앞이 잘 보이지 않아요. 천천히 운전하세요! 오후에는 해가 나요."
     },
     {
-      "de": "Am Donnerstag und am Freitag ist es sonnig und warm, bis 19 Grad. Die Sonne ist schon stark. Vergessen Sie die Sonnencreme nicht!",
-      "ko": "목요일과 금요일에는 날씨가 맑고 따뜻해요. 기온이 19도까지 올라가요. 햇빛이 벌써 강해요. 자외선 차단제를 잊지 마세요!"
+      "de": "Donnerstag und Freitag sind sonnig und warm, bis 19 Grad. Die Sonne ist schon stark – vergessen Sie die Sonnencreme nicht!",
+      "ko": "목요일과 금요일에는 맑고 따뜻해요. 기온이 19도까지 올라가요. 햇볕이 벌써 강해요. 자외선 차단제를 잊지 마세요!"
     },
     {
-      "de": "Am Samstag ist es noch warm, aber am Abend gibt es Gewitter. Möchten Sie grillen? Dann grillen Sie lieber am Mittag! Am Sonntag ist es wieder kühl, nur 12 Grad, und es regnet.",
-      "ko": "토요일에도 아직 따뜻하지만 저녁에는 천둥 번개가 쳐요. 바비큐를 하고 싶으세요? 그러면 점심때 하는 게 좋아요! 일요일에는 다시 쌀쌀해요. 기온이 12도밖에 안 되고 비가 와요."
+      "de": "Das Wochenende beginnt warm, aber am Samstagabend kommen Gewitter. Grillen Sie lieber mittags! Am Sonntag regnet es wieder, und es sind nur 12 Grad.",
+      "ko": "주말은 따뜻하게 시작하지만, 토요일 저녁에는 뇌우가 와요. 바비큐는 차라리 점심때 하세요! 일요일에는 다시 비가 오고, 기온은 12도밖에 안 돼요."
     },
     {
       "style": "meta",
-      "de": "Das war das Wetter mit Lena Brodersen. Schöne Woche!",
+      "de": "Das war das Wetter mit Lena Brodersen. Ich wünsche Ihnen eine schöne Woche!",
       "ko": "지금까지 레나 브로더젠이 전해 드린 날씨였어요. 즐거운 한 주 보내세요!"
     }
   ],
@@ -39,158 +39,157 @@
     {
       "type": "mc",
       "kind": "detail",
-      "q": "Wie ist das Wetter am Anfang der Woche?",
-      "options": ["Es gibt viel Regen und niedrige Temperaturen.", "Es gibt keinen Regen, aber sehr viel Wind.", "Es gibt viel Regen, aber hohe Temperaturen."],
+      "q": "Wie ist das Wetter am Montag und am Dienstag?",
+      "options": ["Es regnet viel, es ist kalt und sehr windig.", "Es regnet nicht, aber es gibt Nebel und Sturm.", "Es gibt Regen und Sturm, aber es ist warm."],
       "answer": 0,
-      "evidence": "Am Montag und am Dienstag regnet es viel. Es ist kalt",
-      "pairs": [["Am Montag und am Dienstag", "am Anfang der Woche"], ["regnet es viel", "viel Regen"], ["Es ist kalt", "niedrige Temperaturen"]],
-      "explain": "월요일과 화요일, 즉 한 주의 시작에는 비가 많이 오고 추워요(낮 6도, 밤 영하 1도). '비는 없고 바람이 많다'는 수요일 날씨이고, '기온이 높다'는 목요일과 금요일 날씨예요."
+      "evidence": "Montag und Dienstag bringen von morgens bis abends Regen und Sturm.",
+      "pairs": [["von morgens bis abends Regen", "Es regnet viel"], ["nur 6 Grad", "es ist kalt"], ["Sturm", "sehr windig"]],
+      "explain": "월요일과 화요일에는 아침부터 저녁까지 비가 오고(von morgens bis abends Regen) 폭풍(Sturm)이 불어요. 낮에도 6도밖에 안 되니까 추워요. 그래서 비가 많이 오고, 춥고, 바람이 아주 세다는 보기가 정답이에요. 비가 그치고 안개가 끼는 날은 수요일이고, 따뜻한 날은 목요일부터예요."
     },
     {
       "type": "rf",
-      "kind": "detail",
-      "q": "Am Montag ist es nachts unter null Grad.",
+      "kind": "inference",
+      "q": "Für Montag und Dienstag ist ein Regenschirm keine gute Idee.",
       "answer": 0,
-      "evidence": "in der Nacht minus 1 Grad",
-      "pairs": [["in der Nacht", "nachts"], ["minus 1 Grad", "unter null Grad"]],
-      "explain": "월요일과 화요일 밤에는 영하 1도예요. 영하 1도는 0도보다 낮은 온도라서 맞는 문장이에요. in der Nacht가 문제에서는 nachts로 바뀌었어요."
+      "evidence": "denn bei Sturm hilft kein Regenschirm",
+      "pairs": [["hilft kein Regenschirm", "ist ein Regenschirm keine gute Idee"], ["Montag und Dienstag bringen", "Für Montag und Dienstag"]],
+      "explain": "월요일과 화요일에는 폭풍이 불어요. 예보는 우비를 챙기라고 하면서 그 이유로 'bei Sturm hilft kein Regenschirm(폭풍이 불 때는 우산이 소용없어요)'이라고 말해요. 그러니까 이 이틀 동안 우산은 좋은 생각이 아니에요. 맞는 문장이에요."
     },
     {
       "type": "mc",
       "kind": "detail",
       "q": "Wie ist das Wetter am Mittwochmorgen in Kiel?",
-      "options": ["Es ist sonnig, und es ist schon hell.", "Es ist nass, und der Regen ist stark.", "Es ist neblig, und man sieht wenig."],
+      "options": ["Es regnet nicht, und die Sonne scheint.", "Es regnet noch, und es gibt Sturm.", "Es ist neblig, und man sieht wenig."],
       "answer": 2,
-      "evidence": "Morgens gibt es in Kiel Nebel.",
-      "pairs": [["Morgens", "Mittwochmorgen"], ["gibt es in Kiel Nebel", "Es ist neblig"]],
-      "explain": "수요일 아침 킬에는 안개(Nebel)가 껴요. 명사 Nebel이 형용사 neblig로 바뀌었어요. 해는 오후에야 나오고, 수요일에는 비가 오지 않아요."
+      "evidence": "morgens gibt es in Kiel Nebel",
+      "pairs": [["gibt es in Kiel Nebel", "Es ist neblig"], ["sehen dann nicht viel", "man sieht wenig"]],
+      "explain": "수요일 아침 킬에는 안개(Nebel)가 껴서 운전자가 앞을 잘 못 봐요(sehen dann nicht viel). 명사 Nebel이 형용사 neblig로, nicht viel이 wenig로 바뀌었어요. 수요일에 비가 그친 것은 맞지만 해는 오후에야 나요. 비와 폭풍은 월요일과 화요일 날씨예요."
     },
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Am Freitag sind es fast 20 Grad.",
+      "q": "Am Freitag ist es fast zwanzig Grad warm.",
       "answer": 0,
-      "evidence": "Am Donnerstag und am Freitag ist es sonnig und warm, bis 19 Grad.",
-      "pairs": [["bis 19 Grad", "fast 20 Grad"]],
-      "explain": "목요일과 금요일에는 기온이 19도까지 올라가요. 19도는 거의 20도라서 맞는 문장이에요."
+      "evidence": "Donnerstag und Freitag sind sonnig und warm, bis 19 Grad.",
+      "pairs": [["bis 19 Grad", "fast zwanzig Grad"]],
+      "explain": "목요일과 금요일에는 맑고 따뜻하고, 기온이 19도까지 올라가요(bis 19 Grad). 19도는 거의 20도라서 맞는 문장이에요."
     },
     {
       "type": "mc",
       "kind": "inference",
-      "q": "Wann soll man am Samstag grillen, und warum?",
-      "options": ["Um 12 Uhr, denn abends kommt ein Gewitter.", "Um 19 Uhr, denn dann ist die Luft noch warm.", "Um 8 Uhr, denn dann scheint schon die Sonne."],
+      "q": "Warum soll man am Samstag mittags grillen?",
+      "options": ["Am Abend ist das Wetter nicht gut.", "Am Mittag kommen Gewitter und Sturm.", "Abends sind es nur noch 12 Grad."],
       "answer": 0,
-      "evidence": "Dann grillen Sie lieber am Mittag!",
-      "pairs": [["am Mittag", "Um 12 Uhr"], ["am Abend gibt es Gewitter", "abends kommt ein Gewitter"]],
-      "explain": "예보는 바비큐를 점심때(12시쯤) 하라고 해요. 토요일 저녁에 뇌우(Gewitter)가 있기 때문이에요. 토요일이 따뜻하다는 말은 맞지만, 저녁 7시는 뇌우가 있는 시간이에요."
+      "evidence": "aber am Samstagabend kommen Gewitter",
+      "pairs": [["am Samstagabend kommen Gewitter", "Am Abend ist das Wetter nicht gut"]],
+      "explain": "예보는 'Grillen Sie lieber mittags!(바비큐는 차라리 점심때 하세요!)'라고 해요. 바로 앞에서 토요일 저녁에 뇌우가 온다고(am Samstagabend kommen Gewitter) 말했어요. 저녁 날씨가 나쁘니까 점심때 하라는 거예요. 뇌우는 점심이 아니라 저녁에 오고, 12도는 일요일 기온이에요."
     },
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Am Sonntag ist das Wetter schön und warm.",
+      "q": "Am Sonntag scheint wieder die Sonne, und es ist warm.",
       "answer": 1,
-      "evidence": "Am Sonntag ist es wieder kühl, nur 12 Grad, und es regnet.",
-      "pairs": [["wieder kühl", "schön und warm"], ["es regnet", "schön"]],
-      "explain": "본문에서 일요일은 다시 서늘하고(wieder kühl) 12도이며 비가 와요(es regnet). 문제는 '날씨가 좋고 따뜻하다'고 했으니 틀린 내용이에요. 따뜻한 날은 토요일까지예요."
+      "evidence": "Am Sonntag regnet es wieder, und es sind nur 12 Grad.",
+      "pairs": [["regnet es wieder", "scheint wieder die Sonne"], ["nur 12 Grad", "es ist warm"]],
+      "explain": "일요일에는 다시 비가 오고(regnet es wieder) 기온은 12도밖에 안 돼요. 문제는 다시 해가 나고 따뜻하다고 했으니 틀린 내용이에요. wieder는 본문에도 있지만, 다시 오는 것은 해가 아니라 비예요."
     }
   ],
   "grammar": [
     {
-      "title": "비인칭 주어 es",
+      "title": "비인칭 주어 es – 날씨 말하기",
       "term": "unpersönliches es",
-      "explain": "날씨를 말할 때는 주어로 es를 써요. 이 es는 특정한 물건을 가리키지 않아요. es regnet(비가 와요), es ist kalt(추워요), es gibt Nebel(안개가 껴요)처럼 써요. 시간 표현이 1번 자리에 오면 동사가 2번 자리에 오고, es는 동사 바로 뒤로 가요.",
-      "pattern": "(시간 표현) + regnet / ist / gibt + es + …",
+      "explain": "날씨를 말할 때는 주어 자리에 es를 써요. 이 es는 특정한 사물을 가리키지 않아요. es regnet(비가 와요), es gibt Nebel(안개가 껴요), es sind 12 Grad(기온이 12도예요)처럼 써요. 시간 표현이 1번 자리에 오면 동사가 2번 자리에 오고, es는 동사 바로 뒤로 가요.",
+      "pattern": "(시간 표현) + regnet / gibt / sind + es + …",
       "examples": [
         {
-          "de": "Am Montag und am Dienstag regnet es viel.",
-          "ko": "월요일과 화요일에는 비가 많이 와요.",
-          "mark": ["regnet es"],
-          "parts": [["Am Montag und am Dienstag", "부사어(시간)"], ["regnet", "동사"], ["es", "주어"], ["viel.", "부사어"]]
+          "de": "Am Mittwoch regnet es nicht mehr, aber morgens gibt es in Kiel Nebel.",
+          "ko": "수요일에는 더 이상 비가 오지 않지만, 아침에 킬에 안개가 껴요.",
+          "mark": ["regnet es", "gibt es"],
+          "parts": [["Am Mittwoch", "부사어(시간)"], ["regnet", "동사"], ["es", "주어"], ["nicht mehr,", "부정어"], ["aber", "접속사"], ["morgens", "부사어(시간)"], ["gibt", "동사"], ["es", "주어"], ["in Kiel", "부사어(장소)"], ["Nebel.", "4격 목적어"]]
         },
         {
-          "de": "Morgens gibt es in Kiel Nebel.",
-          "ko": "아침에는 킬에 안개가 껴요.",
-          "mark": ["gibt es"],
-          "parts": [["Morgens", "부사어(시간)"], ["gibt", "동사"], ["es", "주어"], ["in Kiel", "부사어(장소)"], ["Nebel.", "4격 목적어"]]
+          "de": "Am Sonntag regnet es wieder, und es sind nur 12 Grad.",
+          "ko": "일요일에는 다시 비가 오고, 기온은 12도밖에 안 돼요.",
+          "mark": ["regnet es", "es sind"]
         }
       ],
-      "tip": "es를 빼면 안 돼요. Am Montag regnet viel은 틀린 문장이에요. es gibt 뒤에는 4격이 와요(es gibt einen Regenbogen)."
+      "tip": "es를 빼면 안 돼요. ‘Am Mittwoch regnet nicht.’는 틀린 문장이에요. es gibt 뒤의 명사는 4격이에요(es gibt einen Sturm)."
     },
     {
-      "title": "am + 요일 · 하루의 때",
-      "term": "Zeitangaben: am Montag, am Abend, morgens, in der Nacht",
-      "explain": "요일 앞에는 am을 써요(am Montag, am Samstag). 하루의 때도 대부분 am과 함께 써요(am Mittag, am Nachmittag, am Abend). 밤만 in der Nacht예요. morgens는 '아침에, 아침마다'라는 뜻의 부사라서 전치사 없이 써요. 이 글에서는 시간 표현이 거의 늘 1번 자리에 와요.",
-      "pattern": "am + 요일 / am + Mittag · Nachmittag · Abend / in der Nacht / morgens",
+      "title": "주어와 동사의 일치 – 복수 주어",
+      "term": "Subjekt-Verb-Kongruenz",
+      "explain": "동사는 주어의 수에 맞춰 바뀌어요. 주어가 und로 이어진 두 명사이면(Montag und Dienstag) 동사도 복수형(bringen)이에요. 독일어에서는 주어가 동사 뒤에 오기도 해요. am Samstagabend kommen Gewitter에서 주어는 동사 뒤의 Gewitter(복수)라서 동사가 kommen이에요. 단수 주어 das Wochenende에는 beginnt를 써요.",
+      "pattern": "단수 주어 + beginnt · bringt / 복수 주어 + beginnen · bringen · kommen",
       "examples": [
         {
-          "de": "Am Samstag ist es noch warm, aber am Abend gibt es Gewitter.",
-          "ko": "토요일에도 아직 따뜻하지만 저녁에는 천둥 번개가 쳐요.",
-          "mark": ["Am Samstag", "am Abend"],
-          "parts": [["Am Samstag", "부사어(시간)"], ["ist", "동사"], ["es", "주어"], ["noch", "부사어(시간)"], ["warm,", "보어"], ["aber", "접속사"], ["am Abend", "부사어(시간)"], ["gibt", "동사"], ["es", "주어"], ["Gewitter.", "4격 목적어"]]
+          "de": "Montag und Dienstag bringen von morgens bis abends Regen und Sturm.",
+          "ko": "월요일과 화요일에는 아침부터 저녁까지 비가 내리고 폭풍이 불어요.",
+          "mark": ["Montag und Dienstag bringen"],
+          "parts": [["Montag und Dienstag", "주어"], ["bringen", "동사"], ["von morgens bis abends", "부사어(시간)"], ["Regen und Sturm.", "4격 목적어"]]
         },
         {
-          "de": "Am Nachmittag kommt die Sonne.",
-          "ko": "오후에는 해가 나와요.",
-          "mark": ["Am Nachmittag"],
-          "parts": [["Am Nachmittag", "부사어(시간)"], ["kommt", "동사"], ["die Sonne.", "주어"]]
+          "de": "Das Wochenende beginnt warm, aber am Samstagabend kommen Gewitter.",
+          "ko": "주말은 따뜻하게 시작하지만, 토요일 저녁에는 뇌우가 와요.",
+          "mark": ["Das Wochenende beginnt", "kommen Gewitter"],
+          "parts": [["Das Wochenende", "주어"], ["beginnt", "동사"], ["warm,", "부사어(방법)"], ["aber", "접속사"], ["am Samstagabend", "부사어(시간)"], ["kommen", "동사"], ["Gewitter.", "주어"]]
         }
       ],
-      "tip": "am은 an + dem이에요. 시각 앞에는 am이 아니라 um을 써요(um 12 Uhr). aber는 1번 자리를 차지하지 않아요. 그래서 aber 뒤의 am Abend가 1번 자리이고, 동사 gibt가 2번 자리예요."
+      "tip": "Gewitter는 단수와 복수의 모양이 같아요(das Gewitter → die Gewitter). 그래서 동사 kommen을 보고 복수라는 것을 알 수 있어요. es sind 12 Grad에서는 주어가 es이지만, 동사는 뒤에 오는 12 Grad(복수)에 맞춰 sind가 돼요."
     },
     {
-      "title": "sein + 형용사 · 기온 말하기",
-      "term": "sein + Adjektiv, Temperaturangaben",
-      "explain": "날씨가 어떤지는 es ist + 형용사로 말해요(es ist kalt, warm, sonnig, windig, kühl). 이때 형용사는 어미가 붙지 않고 기본형 그대로예요. 기온은 숫자 + Grad로 말해요. 영하는 숫자 앞에 minus를 붙여요(minus 1 Grad). 기온을 말할 때는 es sind + 숫자 + Grad를 써요. 동사가 es가 아니라 뒤의 '6 Grad'(여러 도, 복수)에 맞추기 때문에 ist가 아니라 sind가 돼요.",
-      "pattern": "es ist + 형용사 · es sind + 숫자 + Grad",
+      "title": "-s로 끝나는 때 부사 – morgens · mittags · nachts",
+      "term": "Temporaladverbien auf -s",
+      "explain": "하루의 때를 말하는 명사에 -s를 붙이면 부사가 돼요. der Morgen → morgens, der Mittag → mittags, der Abend → abends, die Nacht → nachts예요. 이 부사는 소문자로 쓰고, 보통 전치사 없이 써요. von morgens bis abends처럼 von … bis와 함께 쓰기도 해요. 같은 뜻을 am + 명사로도 말할 수 있어요(am Nachmittag, am Tag). 요일과 때를 합쳐서 Samstagabend(토요일 저녁)처럼 한 낱말로 쓰기도 해요.",
+      "pattern": "morgens · mittags · abends · nachts = am Morgen · am Mittag · am Abend · in der Nacht",
       "examples": [
         {
-          "de": "Am Donnerstag und am Freitag ist es sonnig und warm, bis 19 Grad.",
-          "ko": "목요일과 금요일에는 날씨가 맑고 따뜻해요. 기온이 19도까지 올라가요.",
-          "mark": ["ist es sonnig und warm", "19 Grad"],
-          "parts": [["Am Donnerstag und am Freitag", "부사어(시간)"], ["ist", "동사"], ["es", "주어"], ["sonnig und warm,", "보어"], ["bis 19 Grad.", "기타"]]
+          "de": "Grillen Sie lieber mittags!",
+          "ko": "바비큐는 차라리 점심때 하세요!",
+          "mark": ["mittags"],
+          "parts": [["Grillen", "동사"], ["Sie", "주어"], ["lieber", "부사어(방법)"], ["mittags!", "부사어(시간)"]]
         },
         {
-          "de": "Am Tag sind es nur 6 Grad, in der Nacht minus 1 Grad.",
-          "ko": "낮에는 6도밖에 안 되고, 밤에는 영하 1도예요.",
-          "mark": ["sind es", "6 Grad", "minus 1 Grad"],
-          "parts": [["Am Tag", "부사어(시간)"], ["sind", "동사"], ["es", "주어"], ["nur 6 Grad,", "보어"], ["in der Nacht", "부사어(시간)"], ["minus 1 Grad.", "보어"]]
+          "de": "Am Tag sind es nur 6 Grad, nachts minus 1 Grad.",
+          "ko": "낮 기온은 6도밖에 안 되고, 밤에는 영하 1도예요.",
+          "mark": ["Am Tag", "nachts"],
+          "parts": [["Am Tag", "부사어(시간)"], ["sind", "동사"], ["es", "주어"], ["nur 6 Grad,", "보어"], ["nachts", "부사어(시간)"], ["minus 1 Grad.", "보어"]]
         }
       ],
-      "tip": "숫자 뒤에서 Grad는 복수라도 모양이 바뀌지 않아요(6 Grad, 19 Grad, Grade가 아님). 형용사가 명사 앞에 오면 어미가 붙지만(ein kalter Tag), sein 뒤에서는 어미가 붙지 않아요(es ist kalt)."
+      "tip": "von morgens bis abends는 '아침부터 저녁까지', 곧 하루 종일이라는 뜻이에요. 대문자로 쓰는 Morgen은 명사이고(Guten Morgen), 소문자로 쓰는 morgens는 부사예요."
     }
   ],
   "vocab": [
-    { "de": "das Wetter (Sg.)", "ko": "날씨" },
-    { "de": "der Regen (Sg.)", "ko": "비" },
-    { "de": "regnen (es regnet)", "ko": "비가 오다" },
-    { "de": "windig", "ko": "바람이 부는" },
-    { "de": "der Nebel, -", "ko": "안개" },
     { "de": "das Gewitter, -", "ko": "뇌우, 천둥 번개" },
-    { "de": "sonnig", "ko": "해가 나는, 맑은" },
-    { "de": "kühl", "ko": "쌀쌀한, 서늘한" },
-    { "de": "der Grad, -e", "ko": "(온도의) 도 (숫자 뒤에서는 형태 그대로: 6 Grad)" },
+    { "de": "der Sturm, -¨e", "ko": "폭풍, 강풍" },
+    { "de": "der Nebel, -", "ko": "안개" },
     { "de": "die Regenjacke, -n", "ko": "우비, 방수 재킷" },
+    { "de": "der Regenschirm, -e", "ko": "우산" },
     { "de": "die Sonnencreme, -s", "ko": "자외선 차단제, 선크림" },
-    { "de": "mit|nehmen (nimmt mit, nahm mit, hat mitgenommen)", "ko": "가지고 가다, 챙기다" }
+    { "de": "der Autofahrer, -", "ko": "(자동차) 운전자" },
+    { "de": "der Grad, -e", "ko": "(온도의) 도 (숫자 뒤에서는 형태 그대로: 6 Grad)" },
+    { "de": "scheinen (scheint, hat geschienen)", "ko": "(해가) 비치다, 나다" },
+    { "de": "helfen (hilft, hat geholfen) + Dat.", "ko": "돕다, 도움이 되다" },
+    { "de": "mit|nehmen (nimmt mit, hat mitgenommen)", "ko": "가지고 가다, 챙기다" },
+    { "de": "vergessen (vergisst, hat vergessen)", "ko": "잊다, 깜빡하다" }
   ],
   "phrases": [
     {
-      "de": "im Norden",
-      "ko": "북부에서, 북쪽 지방에서",
-      "ex": "Im Norden gibt es diese Woche fast alles: Regen, Wind, Nebel, Sonne und Gewitter.",
-      "exko": "이번 주 북부 지역에는 비, 바람, 안개, 햇빛, 뇌우까지 거의 모든 날씨가 있어요."
-    },
-    {
-      "de": "Es sind … Grad.",
-      "ko": "기온이 …도이다",
-      "ex": "Am Tag sind es nur 6 Grad, in der Nacht minus 1 Grad.",
-      "exko": "낮에는 6도밖에 안 되고, 밤에는 영하 1도예요."
+      "de": "von morgens bis abends",
+      "ko": "아침부터 저녁까지, 하루 종일",
+      "ex": "Montag und Dienstag bringen von morgens bis abends Regen und Sturm.",
+      "exko": "월요일과 화요일에는 아침부터 저녁까지 비가 내리고 폭풍이 불어요."
     },
     {
       "de": "Vergessen Sie … nicht!",
       "ko": "…을/를 잊지 마세요",
-      "ex": "Vergessen Sie die Sonnencreme nicht!",
-      "exko": "자외선 차단제를 잊지 마세요!"
+      "ex": "Die Sonne ist schon stark – vergessen Sie die Sonnencreme nicht!",
+      "exko": "햇볕이 벌써 강해요. 자외선 차단제를 잊지 마세요!"
+    },
+    {
+      "de": "Ich wünsche Ihnen …",
+      "ko": "…을/를 바랍니다 (인사 표현)",
+      "ex": "Ich wünsche Ihnen eine schöne Woche!",
+      "exko": "즐거운 한 주 보내세요!"
     }
   ]
 }

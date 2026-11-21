@@ -7,181 +7,186 @@
   "type": "Steckbriefe im Tierheim",
   "typeKo": "동물 보호소의 동물 소개글",
   "intro": "동물 보호소가 새 가족을 기다리는 동물 세 마리를 소개하는 글이에요.",
-  "focus": ["er · sie · es", "나이 말하기", "mögen"],
+  "focus": ["대명사와 소유관사의 성", "mit + 3격 · ohne + 4격", "mögen과 möchten"],
   "paragraphs": [
     {
-      "de": "Im Tierheim Lindenhof warten viele Tiere auf eine neue Familie. Hier sind drei Tiere. Wie alt sind sie? Was mögen sie?",
-      "ko": "린덴호프 동물 보호소에서는 많은 동물이 새 가족을 기다리고 있어요. 여기 동물 세 마리가 있어요. 이 동물들은 몇 살일까요? 무엇을 좋아할까요?"
+      "de": "Im Tierheim Lindenhof warten im Moment vierzig Hunde, Katzen und Kaninchen auf eine neue Familie. Heute stellen wir Ihnen drei Tiere vor.",
+      "ko": "린덴호프 동물 보호소에서는 지금 개, 고양이, 토끼 마흔 마리가 새 가족을 기다리고 있어요. 오늘은 그중 세 마리를 소개해 드릴게요."
     },
     {
       "label": "Fiete",
-      "de": "Fiete ist ein Hund. Er ist drei Jahre alt. Er ist groß und sehr freundlich. Fiete mag Kinder und lange Spaziergänge. Katzen mag er nicht. Er braucht einen Garten.",
-      "ko": "피테는 개예요. 세 살이에요. 몸집이 크고 아주 상냥해요. 피테는 아이들과 긴 산책을 좋아해요. 고양이는 좋아하지 않아요. 피테에게는 마당이 필요해요."
+      "de": "Unser Hund Fiete ist drei Jahre alt und sehr freundlich. Er spielt gern mit Kindern und braucht jeden Tag lange Spaziergänge. Katzen mag er aber nicht, und ohne Garten geht es ihm schlecht.",
+      "ko": "저희 개 피테는 세 살이고 아주 상냥해요. 아이들과 노는 것을 좋아하고, 날마다 오래 산책을 해야 해요. 하지만 고양이는 좋아하지 않아요. 그리고 마당이 없으면 피테는 잘 지내지 못해요."
     },
     {
       "label": "Mimi",
-      "de": "Mimi ist eine Katze. Sie ist schon zwölf Jahre alt und sehr ruhig. Sie schläft gern auf dem Sofa. Laute Musik mag sie nicht. Mimi sucht ein Zuhause ohne Hunde.",
-      "ko": "미미는 고양이예요. 벌써 열두 살이고 아주 얌전해요. 소파에서 자는 것을 좋아해요. 시끄러운 음악은 좋아하지 않아요. 미미는 개가 없는 집을 찾고 있어요."
+      "de": "Unsere Katze Mimi ist schon zwölf Jahre alt. Sie ist sehr ruhig, und ihr Lieblingsplatz ist das Sofa am Fenster. Laute Musik und Hunde mag sie nicht. Mimi möchte ein ruhiges Zuhause ohne Hunde.",
+      "ko": "저희 고양이 미미는 벌써 열두 살이에요. 아주 얌전하고, 가장 좋아하는 자리는 창가의 소파예요. 시끄러운 음악과 개는 좋아하지 않아요. 미미는 개가 없는 조용한 집을 원해요."
     },
     {
       "label": "Flocke",
-      "de": "Flocke ist ein Kaninchen. Es ist erst acht Monate alt. Es ist weiß und hat noch ein bisschen Angst. Flocke mag Karotten und Salat. Es lebt nicht gern allein.",
-      "ko": "플로케는 토끼예요. 이제 겨우 8개월이에요. 털이 하얗고 아직 겁이 조금 있어요. 플로케는 당근과 상추를 좋아해요. 혼자 사는 것을 좋아하지 않아요."
+      "de": "Unser Kaninchen Flocke ist erst acht Monate alt. Es ist weiß und hat noch ein bisschen Angst. Sein Lieblingsessen sind Karotten und Salat. Flocke lebt nicht gern allein, sondern lieber zusammen mit anderen Kaninchen.",
+      "ko": "저희 토끼 플로케는 이제 겨우 8개월이에요. 털이 하얗고 아직 겁이 조금 있어요. 가장 좋아하는 음식은 당근과 상추예요. 플로케는 혼자 사는 것을 좋아하지 않고, 다른 토끼들과 함께 사는 것을 더 좋아해요."
     },
     {
-      "de": "Mögen Sie Tiere? Dann besuchen Sie uns! Wir haben von Dienstag bis Samstag von 14 bis 17 Uhr geöffnet.",
-      "ko": "동물을 좋아하세요? 그럼 저희를 찾아와 주세요! 화요일부터 토요일까지 14시부터 17시까지 문을 열어요."
+      "de": "Mögen Sie Tiere? Dann besuchen Sie uns von Dienstag bis Samstag zwischen 14 und 17 Uhr!",
+      "ko": "동물을 좋아하세요? 그럼 화요일부터 토요일까지 14시에서 17시 사이에 저희를 찾아와 주세요!"
     }
   ],
   "questions": [
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Fiete ist erst acht Monate alt.",
+      "q": "Im Tierheim Lindenhof gibt es nur drei Tiere.",
       "answer": 1,
-      "evidence": "Er ist drei Jahre alt.",
-      "pairs": [["drei Jahre alt", "acht Monate alt"]],
-      "explain": "피테는 세 살이에요. 8개월인 동물은 토끼 플로케예요. 두 동물의 나이를 섞은 문장이라서 틀려요."
+      "evidence": "Im Tierheim Lindenhof warten im Moment vierzig Hunde, Katzen und Kaninchen auf eine neue Familie.",
+      "pairs": [["vierzig Hunde, Katzen und Kaninchen", "nur drei Tiere"], ["Heute stellen wir Ihnen drei Tiere vor", "gibt es nur drei Tiere"]],
+      "explain": "보호소에는 지금 동물 마흔 마리가 새 가족을 기다리고 있어요(vierzig Hunde, Katzen und Kaninchen). 세 마리는 이 글에서 소개하는 동물의 수예요(Heute stellen wir Ihnen drei Tiere vor). 그래서 보호소에 동물이 세 마리뿐이라는 말은 틀려요."
     },
     {
       "type": "mc",
-      "kind": "detail",
-      "q": "Was passt zu Fiete?",
-      "options": ["eine Wohnung mit zwei Katzen", "ein Haus mit Garten und Kindern", "eine Wohnung ganz ohne Garten"],
+      "kind": "inference",
+      "q": "Welche Familie passt gut zu Fiete?",
+      "options": ["eine Familie mit zwei Katzen und Garten", "eine Familie mit Sohn, Tochter und Garten", "eine Familie mit Kindern, aber ohne Garten"],
       "answer": 1,
-      "evidence": "Er braucht einen Garten.",
-      "pairs": [["braucht einen Garten", "ein Haus mit Garten"], ["Fiete mag Kinder", "Kindern"]],
-      "explain": "피테는 아이들을 좋아하고 마당이 필요해요. 그래서 마당이 있고 아이들이 있는 집이 잘 맞아요. 고양이는 좋아하지 않고, 마당이 없는 집은 맞지 않아요."
+      "evidence": "Katzen mag er aber nicht, und ohne Garten geht es ihm schlecht.",
+      "pairs": [["spielt gern mit Kindern", "mit Sohn, Tochter"], ["ohne Garten geht es ihm schlecht", "und Garten"], ["Katzen mag er aber nicht", "mit zwei Katzen"]],
+      "explain": "피테는 아이들과 놀기를 좋아하고(spielt gern mit Kindern), 고양이는 좋아하지 않아요(Katzen mag er aber nicht). 마당이 없으면 잘 지내지 못해요(ohne Garten geht es ihm schlecht). 이 세 가지에 모두 맞는 집은 아들과 딸이 있고 마당도 있는 가족이에요. Kinder(아이들)를 Sohn, Tochter(아들, 딸)로 바꿔 말했어요. 고양이가 있는 집과 마당이 없는 집은 피테에게 맞지 않아요."
     },
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Mimi ist nicht mehr jung.",
+      "q": "Die alte Katze möchte nicht mit Hunden leben.",
       "answer": 0,
-      "evidence": "Sie ist schon zwölf Jahre alt und sehr ruhig.",
-      "pairs": [["schon zwölf Jahre alt", "nicht mehr jung"]],
-      "explain": "미미는 벌써 열두 살이에요. schon(벌써)이라는 말에서 나이가 많다는 것을 알 수 있어요. 이것을 '이제 어리지 않다'로 바꿔 말했어요."
+      "evidence": "Mimi möchte ein ruhiges Zuhause ohne Hunde.",
+      "pairs": [["schon zwölf Jahre alt", "Die alte Katze"], ["ein ruhiges Zuhause ohne Hunde", "nicht mit Hunden leben"]],
+      "explain": "고양이 미미는 벌써 열두 살이라서(schon zwölf Jahre alt) 문제에서는 '나이 든 고양이'(die alte Katze)라고 불렀어요. 미미는 개가 없는 집을 원해요(ein Zuhause ohne Hunde). 그래서 개와 함께 살고 싶어 하지 않는다는 말이 맞아요."
     },
     {
       "type": "mc",
-      "kind": "detail",
-      "q": "Was mag Mimi nicht?",
-      "options": ["ein lautes Zuhause", "viele Stunden Schlaf", "das Sofa im Zimmer"],
+      "kind": "meaning",
+      "q": "Was bedeutet „ihr Lieblingsplatz ist das Sofa am Fenster“?",
+      "options": ["Dort ist Mimi am liebsten.", "Dort darf Mimi nicht liegen.", "Dort ist Mimi nicht so gern."],
       "answer": 0,
-      "evidence": "Laute Musik mag sie nicht.",
-      "pairs": [["Laute Musik", "ein lautes Zuhause"]],
-      "explain": "미미는 시끄러운 음악을 좋아하지 않아요. 그래서 시끄러운 집은 미미에게 맞지 않아요. 소파에서 자는 것은 미미가 좋아하는 일이에요."
+      "evidence": "ihr Lieblingsplatz ist das Sofa am Fenster",
+      "pairs": [["Lieblingsplatz", "am liebsten"]],
+      "explain": "Lieblingsplatz는 Lieblings-(가장 좋아하는)와 Platz(자리)를 합친 말이에요. 그러니까 창가의 소파는 미미가 가장 좋아하는 자리예요. 이것을 '미미는 거기에 있는 것을 가장 좋아해요'(Dort ist Mimi am liebsten)로 바꿔 말했어요. '거기를 별로 좋아하지 않아요'(nicht so gern)는 뜻이 반대예요. '거기에 누우면 안 돼요'(darf … nicht liegen)는 Lieblingsplatz와 관계없는 뜻이에요."
     },
     {
       "type": "rf",
-      "kind": "detail",
-      "q": "Flocke möchte nicht allein wohnen.",
+      "kind": "inference",
+      "q": "Flocke ist noch kein Jahr alt.",
       "answer": 0,
-      "evidence": "Es lebt nicht gern allein.",
-      "pairs": [["lebt nicht gern allein", "möchte nicht allein wohnen"]],
-      "explain": "플로케는 혼자 사는 것을 좋아하지 않아요. leben(살다)을 wohnen으로, nicht gern을 möchte nicht로 바꿔 말했어요."
+      "evidence": "Unser Kaninchen Flocke ist erst acht Monate alt.",
+      "pairs": [["erst acht Monate alt", "noch kein Jahr alt"]],
+      "explain": "플로케는 이제 겨우 8개월이에요(erst acht Monate alt). 1년은 12개월이니까 플로케는 아직 한 살이 안 됐어요. 그래서 맞는 말이에요."
     },
     {
       "type": "mc",
       "kind": "detail",
-      "q": "Wann kann man das Tierheim besuchen?",
-      "options": ["jeden Tag ab 14 Uhr", "am Sonntag bis 17 Uhr", "am Freitagnachmittag"],
+      "q": "Wann kann man die Tiere im Tierheim kennenlernen?",
+      "options": ["am Sonntag zwischen 14 und 17 Uhr", "am Dienstagabend um halb sechs", "am Freitagnachmittag um halb vier"],
       "answer": 2,
-      "evidence": "Wir haben von Dienstag bis Samstag von 14 bis 17 Uhr geöffnet.",
-      "pairs": [["von Dienstag bis Samstag von 14 bis 17 Uhr", "am Freitagnachmittag"]],
-      "explain": "보호소는 화요일부터 토요일까지 14시부터 17시까지 열어요. 금요일 오후는 이 시간 안에 들어가요. 일요일과 월요일에는 열지 않아서 '매일'과 '일요일'은 틀려요."
+      "evidence": "Dann besuchen Sie uns von Dienstag bis Samstag zwischen 14 und 17 Uhr!",
+      "pairs": [["von Dienstag bis Samstag zwischen 14 und 17 Uhr", "am Freitagnachmittag um halb vier"]],
+      "explain": "보호소는 화요일부터 토요일까지 14시에서 17시 사이에 찾아갈 수 있어요. 금요일은 이 요일 안에 있고, halb vier(3시 30분)는 15시 30분이라서 시간 안에 들어가요. 일요일은 찾아갈 수 없는 날이에요. halb sechs(5시 30분)는 17시 30분이라서 너무 늦어요."
     }
   ],
   "grammar": [
     {
-      "title": "er · sie · es – 명사를 대신하는 말",
-      "term": "Personalpronomen er, sie, es (Nominativ)",
-      "explain": "앞에 나온 명사를 다시 말할 때 인칭대명사를 써요. 남성 명사(der Hund)는 er, 여성 명사(die Katze)는 sie, 중성 명사(das Kaninchen)는 es로 받아요. 사람뿐 아니라 동물과 물건에도 똑같이 써요.",
-      "pattern": "der → er · die → sie · das → es · 복수 → sie",
+      "title": "인칭대명사와 소유관사 – 명사의 성에 따라",
+      "term": "Personalpronomen und Possessivartikel nach dem Genus (er/sein, sie/ihr, es/sein)",
+      "explain": "앞에 나온 명사는 성에 따라 er, sie, es로 받아요. 동물도 똑같아서 der Hund는 er, die Katze는 sie, das Kaninchen은 es예요. '그의, 그녀의'라는 소유관사도 성을 따라가요. er와 es는 sein을, sie는 ihr를 써요. 그래서 das Kaninchen인 Flocke에게는 sein Lieblingsessen이라고 해요.",
+      "pattern": "der → er · sein / die → sie · ihr / das → es · sein",
       "examples": [
         {
-          "de": "Er ist drei Jahre alt.",
-          "ko": "세 살이에요.",
-          "mark": ["Er"],
-          "parts": [["Er", "주어"], ["ist", "동사"], ["drei Jahre alt.", "보어"]]
+          "de": "Sie ist sehr ruhig, und ihr Lieblingsplatz ist das Sofa am Fenster.",
+          "ko": "아주 얌전하고, 가장 좋아하는 자리는 창가의 소파예요.",
+          "mark": ["Sie", "ihr Lieblingsplatz"],
+          "parts": [["Sie", "주어"], ["ist", "동사"], ["sehr ruhig,", "보어"], ["und", "접속사"], ["ihr Lieblingsplatz", "주어"], ["ist", "동사"], ["das Sofa am Fenster.", "보어"]]
         },
         {
-          "de": "Es ist erst acht Monate alt.",
-          "ko": "이제 겨우 8개월이에요.",
-          "mark": ["Es"],
-          "parts": [["Es", "주어"], ["ist", "동사"], ["erst acht Monate alt.", "보어"]]
+          "de": "Sein Lieblingsessen sind Karotten und Salat.",
+          "ko": "가장 좋아하는 음식은 당근과 상추예요.",
+          "mark": ["Sein"],
+          "parts": [["Sein Lieblingsessen", "주어"], ["sind", "동사"], ["Karotten und Salat.", "보어"]]
         },
         {
-          "de": "Laute Musik mag sie nicht.",
-          "ko": "시끄러운 음악은 좋아하지 않아요.",
-          "mark": ["sie"],
-          "parts": [["Laute Musik", "4격 목적어"], ["mag", "동사"], ["sie", "주어"], ["nicht.", "부정어"]]
+          "de": "Es ist weiß und hat noch ein bisschen Angst.",
+          "ko": "털이 하얗고 아직 겁이 조금 있어요.",
+          "mark": ["Es"]
         }
       ],
-      "tip": "독일어에서는 뜻이 아니라 명사의 성에 따라 대명사를 골라요. das Kaninchen은 중성이라서 수컷이든 암컷이든 es로 받아요."
+      "tip": "대명사는 이름이 아니라 명사의 성을 보고 골라요. Flocke는 das Kaninchen이라서 es와 sein으로 받아요. 소유관사의 어미는 뒤에 오는 명사의 성과 격에 맞춰요(ihr Lieblingsplatz – der Platz, sein Lieblingsessen – das Essen)."
     },
     {
-      "title": "나이 말하기",
-      "term": "Altersangabe: … Jahre / Monate alt sein",
-      "explain": "나이는 sein + 숫자 + Jahre alt로 말해요. 한 살이 안 되면 Monate(개월)를 써요. 나이를 물을 때는 Wie alt …?라고 해요. schon은 '벌써', erst는 '이제 겨우'라는 느낌을 더해요.",
-      "pattern": "sein + 숫자 + Jahre/Monate + alt",
+      "title": "mit + 3격 · ohne + 4격",
+      "term": "Präpositionen mit (Dativ) und ohne (Akkusativ)",
+      "explain": "mit(~와 함께, ~이 있는)는 3격과 함께 쓰고, ohne(~ 없이)는 4격과 함께 써요. 복수 명사는 3격에서 보통 끝에 -n이 붙어요(die Kinder → mit Kindern). 복수형이 이미 -n이나 -s로 끝나면 그대로예요(mit anderen Kaninchen, mit Autos). ohne 뒤에서는 관사를 자주 빼요(ohne Garten, ohne Hunde).",
+      "pattern": "mit + 3격 · ohne + 4격",
       "examples": [
         {
-          "de": "Wie alt sind sie?",
-          "ko": "이 동물들은 몇 살일까요?",
-          "mark": ["Wie alt"],
-          "parts": [["Wie alt", "의문사"], ["sind", "동사"], ["sie?", "주어"]]
+          "de": "Er spielt gern mit Kindern und braucht jeden Tag lange Spaziergänge.",
+          "ko": "아이들과 노는 것을 좋아하고, 날마다 오래 산책을 해야 해요.",
+          "mark": ["mit Kindern"],
+          "parts": [["Er", "주어"], ["spielt", "동사"], ["gern", "부사어(방법)"], ["mit Kindern", "전치사 목적어"], ["und", "접속사"], ["braucht", "동사"], ["jeden Tag", "부사어(시간)"], ["lange Spaziergänge.", "4격 목적어"]]
         },
         {
-          "de": "Sie ist schon zwölf Jahre alt und sehr ruhig.",
-          "ko": "벌써 열두 살이고 아주 얌전해요.",
-          "mark": ["schon zwölf Jahre alt"]
+          "de": "Katzen mag er aber nicht, und ohne Garten geht es ihm schlecht.",
+          "ko": "하지만 고양이는 좋아하지 않아요. 그리고 마당이 없으면 피테는 잘 지내지 못해요.",
+          "mark": ["ohne Garten"],
+          "parts": [["Katzen", "4격 목적어"], ["mag", "동사"], ["er", "주어"], ["aber", "접속부사"], ["nicht,", "부정어"], ["und", "접속사"], ["ohne Garten", "부사어"], ["geht", "동사"], ["es", "주어"], ["ihm", "3격 목적어"], ["schlecht.", "부사어(방법)"]]
         }
       ],
-      "tip": "한국어의 '살'에 해당하는 말이 Jahre alt예요. Er ist drei Jahre.처럼 alt를 빼면 틀려요. 짧게 Er ist drei.라고는 말할 수 있어요."
+      "tip": "ohne Garten처럼 전치사구가 1번 자리에 오면 동사가 바로 뒤에 와요(und ohne Garten geht es ihm …). 앞의 und는 자리 수에 들어가지 않아요."
     },
     {
-      "title": "mögen으로 좋아하는 것 말하기",
-      "term": "mögen + Akkusativ",
-      "explain": "mögen은 '좋아하다'라는 뜻이고 뒤에 4격 목적어가 와요. 단수에서는 모음이 바뀌어요: ich mag, du magst, er/sie/es mag. 복수는 wir mögen, ihr mögt, sie/Sie mögen이에요. 좋아하지 않는 것은 nicht나 kein으로 말해요.",
-      "pattern": "mögen + 4격 (+ nicht)",
+      "title": "mögen과 möchten – 좋아하는 것과 원하는 것",
+      "term": "mögen und möchten",
+      "explain": "mögen은 '좋아하다'라는 뜻이에요(ich mag, er/sie/es mag, Sie mögen). möchten은 '원하다, ~하고 싶다'라는 뜻이에요(ich möchte, er/sie/es möchte). 둘 다 뒤에 4격 명사가 올 수 있어요. 좋아하지 않는 것은 nicht를 붙여서 말해요(mag sie nicht).",
+      "pattern": "mögen + 4격 (좋아하다) · möchten + 4격 (원하다)",
       "examples": [
         {
-          "de": "Fiete mag Kinder und lange Spaziergänge.",
-          "ko": "피테는 아이들과 긴 산책을 좋아해요.",
+          "de": "Laute Musik und Hunde mag sie nicht.",
+          "ko": "시끄러운 음악과 개는 좋아하지 않아요.",
           "mark": ["mag"],
-          "parts": [["Fiete", "주어"], ["mag", "동사"], ["Kinder und lange Spaziergänge.", "4격 목적어"]]
+          "parts": [["Laute Musik und Hunde", "4격 목적어"], ["mag", "동사"], ["sie", "주어"], ["nicht.", "부정어"]]
+        },
+        {
+          "de": "Mimi möchte ein ruhiges Zuhause ohne Hunde.",
+          "ko": "미미는 개가 없는 조용한 집을 원해요.",
+          "mark": ["möchte"],
+          "parts": [["Mimi", "주어"], ["möchte", "동사"], ["ein ruhiges Zuhause ohne Hunde.", "4격 목적어"]]
         },
         {
           "de": "Mögen Sie Tiere?",
           "ko": "동물을 좋아하세요?",
-          "mark": ["Mögen"],
-          "parts": [["Mögen", "동사"], ["Sie", "주어"], ["Tiere?", "4격 목적어"]]
+          "mark": ["Mögen"]
         }
       ],
-      "tip": "er/sie/es 뒤에서 -t를 붙이지 않아요. er magt가 아니라 er mag예요."
+      "tip": "möchte는 mögen에서 나온 형태지만 뜻이 달라요. Ich mag Katzen.은 '고양이를 좋아해요', Ich möchte eine Katze.는 '고양이 한 마리를 갖고 싶어요'예요. er/sie/es mag에는 -t를 붙이지 않아요."
     }
   ],
   "vocab": [
     { "de": "das Tierheim, -e", "ko": "동물 보호소" },
-    { "de": "das Tier, -e", "ko": "동물" },
-    { "de": "der Hund, -e", "ko": "개" },
-    { "de": "die Katze, -n", "ko": "고양이" },
+    { "de": "vor|stellen (stellt vor, hat vorgestellt) + Dat. + Akk.", "ko": "(누구에게 무엇을) 소개하다" },
     { "de": "das Kaninchen, -", "ko": "토끼" },
     { "de": "freundlich", "ko": "상냥한, 사람을 잘 따르는" },
-    { "de": "ruhig", "ko": "조용한, 얌전한" },
     { "de": "der Spaziergang, -¨e", "ko": "산책" },
     { "de": "der Garten, -¨", "ko": "마당, 정원" },
+    { "de": "ruhig", "ko": "조용한, 얌전한" },
+    { "de": "der Lieblingsplatz, -¨e", "ko": "가장 좋아하는 자리" },
     { "de": "das Zuhause (Sg.)", "ko": "집, 보금자리" },
-    { "de": "allein", "ko": "혼자" },
-    { "de": "besuchen", "ko": "방문하다, 찾아가다" }
+    { "de": "das Lieblingsessen, -", "ko": "가장 좋아하는 음식" },
+    { "de": "die Karotte, -n", "ko": "당근" },
+    { "de": "allein", "ko": "혼자" }
   ],
   "phrases": [
     {
       "de": "warten auf + Akk.",
       "ko": "~을 기다리다",
-      "ex": "Im Tierheim Lindenhof warten viele Tiere auf eine neue Familie.",
-      "exko": "린덴호프 동물 보호소에서는 많은 동물이 새 가족을 기다리고 있어요."
+      "ex": "Im Tierheim Lindenhof warten im Moment vierzig Hunde, Katzen und Kaninchen auf eine neue Familie.",
+      "exko": "린덴호프 동물 보호소에서는 지금 개, 고양이, 토끼 마흔 마리가 새 가족을 기다리고 있어요."
     },
     {
       "de": "Angst haben",
@@ -190,10 +195,10 @@
       "exko": "털이 하얗고 아직 겁이 조금 있어요."
     },
     {
-      "de": "geöffnet haben",
-      "ko": "문을 열다, 영업하다",
-      "ex": "Wir haben von Dienstag bis Samstag von 14 bis 17 Uhr geöffnet.",
-      "exko": "화요일부터 토요일까지 14시부터 17시까지 문을 열어요."
+      "de": "nicht gern …, sondern lieber …",
+      "ko": "~하는 것은 좋아하지 않고, ~하는 것을 더 좋아하다",
+      "ex": "Flocke lebt nicht gern allein, sondern lieber zusammen mit anderen Kaninchen.",
+      "exko": "플로케는 혼자 사는 것을 좋아하지 않고, 다른 토끼들과 함께 사는 것을 더 좋아해요."
     }
   ]
 }

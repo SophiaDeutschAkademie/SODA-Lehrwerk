@@ -7,7 +7,7 @@
   "type": "Amtlicher Bescheid",
   "typeKo": "관청 처분서",
   "intro": "주민 모임이 신청한 거리 축제에 대해 시청이 조건을 붙여 허가한다고 알리는 공문이에요.",
-  "focus": ["관공서 지시어", "sein · haben + zu", "조건의 전치사구", "행정 문체 표현"],
+  "focus": ["관공서 지시어", "haben + zu 의무 표현", "공문서의 조건 표현", "행정 문체 표현"],
   "paragraphs": [
     {
       "style": "meta",
@@ -16,8 +16,8 @@
     },
     {
       "style": "meta",
-      "de": "Nachbarschaftsverein Mühlenviertel e. V., z. Hd. Frau Swantje Hinrichs · Tannhagen, 6. Mai",
-      "ko": "뮐렌피어텔 주민 협회, 스반체 힌리히스 님 앞 · 탄하겐, 5월 6일"
+      "de": "Nachbarschaftsverein Mühlenviertel e. V. · zu Händen Frau Swantje Hinrichs · Tannhagen, 6. Mai",
+      "ko": "뮐렌피어텔 주민 협회 · 스반체 힌리히스 님 앞 · 탄하겐, 5월 6일"
     },
     {
       "style": "h",
@@ -30,8 +30,8 @@
       "ko": "힌리히스 님께"
     },
     {
-      "de": "auf Ihren Antrag vom 14. April ergeht folgender Bescheid: Dem Nachbarschaftsverein Mühlenviertel e. V. wird hiermit die Erlaubnis erteilt, die Mühlenstraße am Samstag, dem 14. Juni, für ein Straßenfest zu nutzen. Gegenstand des Antrags war die Sperrung der Straße für ein Fest mit einer Bühne, rund 20 Ständen und etwa 800 erwarteten Besuchern. Die Erlaubnis weicht in zwei Punkten von Ihrem Antrag ab. Die o. g. Straße wird lediglich zwischen den Hausnummern 1 und 27 gesperrt. Zudem gilt die Erlaubnis nicht wie beantragt von 10 bis 24 Uhr, sondern von 11 bis 22 Uhr. Die Erlaubnis ist nicht übertragbar.",
-      "ko": "4월 14일에 내신 신청에 대해 다음과 같이 처분합니다. 뮐렌피어텔 주민 협회가 6월 14일 토요일에 거리 축제를 위해 뮐렌슈트라세를 사용하는 것을 이 문서로 허가합니다. 신청 내용은 무대 하나와 가판대 약 20개를 두고 방문객 약 800명을 예상하는 축제를 위해 도로를 막는 것이었습니다. 이 허가는 두 가지 점에서 신청과 다릅니다. 위에 적은 도로는 1번지부터 27번지 사이만 통행을 막습니다. 또한 허가는 신청하신 10시부터 24시까지가 아니라 11시부터 22시까지 유효합니다. 이 허가는 다른 사람에게 넘길 수 없습니다."
+      "de": "auf Ihren Antrag vom 14. April hin wird dem Nachbarschaftsverein Mühlenviertel hiermit die Erlaubnis erteilt, die Mühlenstraße am Samstag, dem 14. Juni, für ein Straßenfest zu nutzen, für das Sie eine Bühne und rund 20 Verkaufsstände angemeldet haben und mit etwa 800 Besucherinnen und Besuchern rechnen. Abweichend von Ihrem Antrag wird die oben genannte Straße jedoch lediglich zwischen den Hausnummern 1 und 27 gesperrt, und die Veranstaltung darf nicht, wie beantragt, von 10 bis 24 Uhr, sondern nur von 11 bis 22 Uhr stattfinden; die Erlaubnis ist außerdem nicht auf Dritte übertragbar.",
+      "ko": "4월 14일에 내신 신청에 따라 뮐렌피어텔 주민 협회가 6월 14일 토요일에 거리 축제를 위해 뮐렌슈트라세를 사용하는 것을 이 문서로 허가합니다. 이 축제를 위해 무대 하나와 판매 가판대 약 20개를 신고하셨고, 방문객은 약 800명으로 예상하고 계십니다. 다만 신청과 달리 위에 적은 도로는 1번지부터 27번지 사이만 통행을 막으며, 행사는 신청하신 10시부터 24시까지가 아니라 11시부터 22시까지만 열 수 있습니다. 또한 이 허가는 제3자에게 넘길 수 없습니다."
     },
     {
       "style": "h",
@@ -39,40 +39,40 @@
       "ko": "조건"
     },
     {
-      "de": "Die Erlaubnis ist an die nachstehenden Auflagen gebunden:",
-      "ko": "이 허가에는 아래의 조건이 붙습니다."
+      "de": "Die Erlaubnis ist an die nachstehenden Auflagen gebunden, die Sie einzuhalten haben:",
+      "ko": "이 허가에는 아래의 조건이 붙으며, 신청인은 이를 지켜야 합니다."
     },
     {
-      "de": "1. Während der gesamten Veranstaltung ist eine Rettungsgasse von mindestens 3,50 Metern Breite freizuhalten. Die Bühne darf aus diesem Grund nur vor dem Grundstück Mühlenstraße 9 errichtet werden.",
+      "de": "1. Während der gesamten Veranstaltung ist eine mindestens 3,50 Meter breite Rettungsgasse freizuhalten, weshalb die Bühne nur vor dem Grundstück Mühlenstraße 9 aufgebaut werden darf.",
       "ko": "1. 행사 내내 폭 3.50미터 이상의 구조 차량 통로를 비워 두어야 합니다. 이 때문에 무대는 뮐렌슈트라세 9번지 앞에만 세울 수 있습니다."
     },
     {
-      "de": "2. Die Anwohnerinnen und Anwohner sind spätestens eine Woche vor dem Fest schriftlich über die Sperrung zu informieren.",
-      "ko": "2. 주민들에게는 늦어도 축제 일주일 전까지 통행 제한을 서면으로 알려야 합니다."
+      "de": "2. Die Anwohnerinnen und Anwohner sind rechtzeitig, spätestens jedoch eine Woche vor dem Fest, schriftlich darüber zu informieren, wann und in welchem Abschnitt die Straße gesperrt wird.",
+      "ko": "2. 주민들에게는 미리, 늦어도 축제 일주일 전까지 언제, 어느 구간의 통행을 막는지 서면으로 알려야 합니다."
     },
     {
-      "de": "3. Die erforderlichen Halteverbotsschilder hat der Verein auf eigene Kosten zu beschaffen und mindestens 72 Stunden vor Beginn der Sperrung aufzustellen.",
-      "ko": "3. 필요한 주차 금지 표지판은 협회가 자기 비용으로 마련하여 통행 제한이 시작되기 72시간 전까지 세워야 합니다."
+      "de": "3. Die erforderlichen Halteverbotsschilder hat der Verein auf eigene Kosten zu beschaffen und mindestens 72 Stunden vor Beginn der Sperrung so aufzustellen, dass sie für alle gut zu sehen sind.",
+      "ko": "3. 필요한 주정차 금지 표지판은 협회가 자기 비용으로 마련하여, 통행 제한이 시작되기 72시간 전까지 모두가 잘 볼 수 있도록 세워야 합니다."
     },
     {
-      "de": "4. Musikdarbietungen sind um 21.30 Uhr zu beenden; der Abbau hat bis 23 Uhr zu erfolgen.",
-      "ko": "4. 음악 공연은 21시 30분에 끝내야 하고, 철거는 23시까지 마쳐야 합니다."
+      "de": "4. Die Musik ist um 21.30 Uhr zu beenden; der Abbau der Bühne und der Stände hat bis 23 Uhr zu erfolgen.",
+      "ko": "4. 음악은 21시 30분에 끝내야 하고, 무대와 가판대 철거는 23시까지 마쳐야 합니다."
     },
     {
-      "de": "5. Die Straße ist bis Sonntag, 10 Uhr, vollständig zu reinigen. Bei Nichterfüllung wird die Reinigung auf Kosten des Vereins von der Stadt veranlasst.",
-      "ko": "5. 도로는 일요일 10시까지 완전히 청소해야 합니다. 이를 이행하지 않으면 시가 협회의 비용으로 청소를 맡깁니다."
+      "de": "5. Die Straße ist bis Sonntag, 10 Uhr, vollständig zu reinigen; bei Nichterfüllung wird die Reinigung von der Stadt veranlasst, wobei der Verein die hierdurch entstehenden Kosten zu tragen hat.",
+      "ko": "5. 도로는 일요일 10시까지 완전히 청소해야 합니다. 이를 이행하지 않으면 시가 청소를 맡기며, 이때 생기는 비용은 협회가 부담해야 합니다."
     },
     {
-      "de": "6. Bis zum 30. Mai ist dem Ordnungsamt der Nachweis einer Veranstalterhaftpflichtversicherung vorzulegen. Außerdem ist eine verantwortliche Person zu benennen, die während des Festes jederzeit telefonisch erreichbar ist.",
-      "ko": "6. 5월 30일까지 주최자 배상 책임 보험 가입 증빙을 질서청에 제출해야 합니다. 그리고 축제 동안 언제든지 전화로 연락이 닿는 책임자를 지정해야 합니다."
+      "de": "6. Dem Ordnungsamt ist bis zum 30. Mai der Nachweis einer Veranstalterhaftpflichtversicherung vorzulegen; außerdem ist eine verantwortliche Person zu benennen, die während der gesamten Veranstaltung jederzeit telefonisch erreichbar ist.",
+      "ko": "6. 5월 30일까지 주최자 배상 책임 보험 가입 증빙을 질서청에 제출해야 합니다. 그리고 행사 내내 언제든지 전화로 연락이 닿는 책임자를 지정해야 합니다."
     },
     {
-      "de": "7. Stände und Verkaufswagen sind so aufzustellen, dass die Hauseingänge und die Einfahrten der Anlieger zugänglich bleiben.",
-      "ko": "7. 가판대와 판매 차량은 건물 입구와 주민 차량 진입로를 막지 않도록 세워야 합니다."
+      "de": "7. Stände und Verkaufswagen sind so aufzustellen, dass Hauseingänge und Einfahrten jederzeit frei bleiben.",
+      "ko": "7. 가판대와 판매 차량은 건물 입구와 차량 진입로가 언제나 비어 있도록 세워야 합니다."
     },
     {
-      "de": "Der Ausschank alkoholischer Getränke ist nicht Gegenstand dieses Bescheids; er bedarf einer gesonderten Gestattung. Ein diesbezüglicher Antrag ist spätestens vier Wochen vor der Veranstaltung zu stellen. Hierzu erhalten Sie in der Anlage ein Formblatt.",
-      "ko": "주류 판매는 이 처분의 대상이 아니며, 따로 허가를 받아야 합니다. 이에 관한 신청은 늦어도 행사 4주 전까지 해야 합니다. 이를 위한 서식을 첨부합니다."
+      "de": "Der Ausschank alkoholischer Getränke ist nicht Gegenstand dieses Bescheids, sondern bedarf einer gesonderten Gestattung; ein diesbezüglicher Antrag ist spätestens vier Wochen vor der Veranstaltung zu stellen, wofür Sie in der Anlage ein Formular erhalten.",
+      "ko": "주류 판매는 이 처분의 대상이 아니며, 따로 허가를 받아야 합니다. 이에 관한 신청은 늦어도 행사 4주 전까지 해야 하며, 이를 위한 서식을 첨부합니다."
     },
     {
       "style": "h",
@@ -80,12 +80,12 @@
       "ko": "이유"
     },
     {
-      "de": "Gemäß § 4 der Sondernutzungssatzung der Stadt Tannhagen bedarf die Nutzung öffentlicher Straßen über den Gemeingebrauch hinaus der Erlaubnis. Diese kann erteilt werden, sofern Belange der Sicherheit und des Verkehrs nicht entgegenstehen. Eine Sperrung bis zur Kreuzung Lindenallee, wie von Ihnen beantragt, kam nicht in Betracht, da über diese Kreuzung die Umleitung der Buslinie 6 geführt wird und die Zufahrt zur Feuerwache freizuhalten ist. Die Auflagen dienen dem Schutz der Besucher und sollen sicherstellen, dass Rettungsfahrzeuge den gesperrten Abschnitt jederzeit befahren können. Die zeitliche Beschränkung ist mit Rücksicht auf die Nachtruhe der Anwohner erforderlich. Da der Verein in den vergangenen drei Jahren vergleichbare Feste ohne Beanstandungen durchgeführt hat, wurde von einer weitergehenden Kürzung abgesehen.",
-      "ko": "탄하겐시 특별 사용 조례 제4조에 따라, 일반적인 이용을 넘어서 공공 도로를 사용하려면 허가가 필요합니다. 허가는 안전과 교통에 관한 사항에 어긋나지 않는 한 내줄 수 있습니다. 신청하신 대로 린덴알레 교차로까지 막는 것은 고려할 수 없었습니다. 이 교차로로 6번 버스의 우회 노선이 지나가고 소방서 진입로를 비워 두어야 하기 때문입니다. 이 조건들은 방문객을 보호하기 위한 것이며, 구조 차량이 통행을 막은 구간에 언제든지 들어올 수 있게 하려는 것입니다. 시간 제한은 주민의 야간 휴식을 고려할 때 필요합니다. 협회가 지난 3년 동안 비슷한 축제를 지적 사항 없이 치렀으므로 시간을 더 줄이지는 않았습니다."
+      "de": "Gemäß § 4 der Sondernutzungssatzung der Stadt Tannhagen bedarf die Nutzung öffentlicher Straßen über den Gemeingebrauch hinaus einer Erlaubnis, die erteilt werden kann, sofern Belange der Sicherheit und des Verkehrs nicht entgegenstehen. Eine Sperrung bis zur Kreuzung Lindenallee, wie von Ihnen beantragt, kam nicht in Betracht, da über diese Kreuzung die Umleitung der Buslinie 6 geführt wird und die Zufahrt zur Feuerwache jederzeit freizuhalten ist. Die Auflagen dienen dem Schutz der Besucherinnen und Besucher und sollen sicherstellen, dass Rettungsfahrzeuge jeden Punkt des gesperrten Abschnitts jederzeit erreichen können, während die zeitliche Beschränkung mit Rücksicht auf die Nachtruhe der Anwohnerinnen und Anwohner erforderlich ist. Da der Verein in den letzten drei Jahren ähnliche Straßenfeste ohne Beanstandungen durchgeführt hat, wurde von einer weitergehenden Kürzung der beantragten Zeiten abgesehen.",
+      "ko": "탄하겐시 특별 사용 조례 제4조에 따라, 일반적인 이용을 넘어서 공공 도로를 사용하려면 허가가 필요하며, 허가는 안전과 교통에 관한 사항에 어긋나지 않는 한 내줄 수 있습니다. 신청하신 대로 린덴알레 교차로까지 막는 것은 고려할 수 없었습니다. 이 교차로로 6번 버스의 우회 노선이 지나가고, 소방서 진입로를 언제나 비워 두어야 하기 때문입니다. 이 조건들은 방문객을 보호하고, 구조 차량이 통행을 막은 구간의 어느 지점에든 언제든지 닿을 수 있게 하려는 것입니다. 한편 시간 제한은 주민의 야간 휴식을 고려할 때 필요합니다. 협회가 지난 3년 동안 비슷한 거리 축제를 지적 사항 없이 치렀으므로, 신청하신 시간을 더 줄이지는 않았습니다."
     },
     {
-      "de": "Für diesen Bescheid wird eine Verwaltungsgebühr in Höhe von 85 Euro erhoben. Die Erlaubnis kann im Falle eines Verstoßes gegen die Auflagen jederzeit widerrufen werden. Bei Zuwiderhandlungen kann darüber hinaus ein Bußgeld festgesetzt werden. Die Erlaubnis ergeht vorbehaltlich der Zustimmung der Verkehrsbetriebe zur Umleitung der Linie 6, die das Ordnungsamt von Amts wegen einholt.",
-      "ko": "이 처분에 대해 행정 수수료 85유로를 부과합니다. 조건을 위반하는 경우에는 허가를 언제든지 취소할 수 있습니다. 위반이 있으면 그 밖에 과태료를 부과할 수도 있습니다. 이 허가는 교통 공사가 6번 노선의 우회에 동의하는 것을 전제로 하며, 그 동의는 질서청이 직권으로 받습니다."
+      "de": "Für diesen Bescheid wird eine Verwaltungsgebühr in Höhe von 85 Euro erhoben, die bis zum 30. Mai unter Angabe des Aktenzeichens zu entrichten ist. Im Falle eines Verstoßes gegen die Auflagen kann die Erlaubnis jederzeit widerrufen und darüber hinaus ein Bußgeld festgesetzt werden. Die Erlaubnis ergeht vorbehaltlich der Zustimmung der Verkehrsbetriebe zur Umleitung der Linie 6, die das Ordnungsamt von Amts wegen einholt.",
+      "ko": "이 처분에 대해 행정 수수료 85유로를 부과하며, 이 수수료는 5월 30일까지 문서 번호를 적어 납부해야 합니다. 조건을 위반하는 경우에는 허가를 언제든지 취소할 수 있고, 그 밖에 과태료를 부과할 수도 있습니다. 이 허가는 교통 공사가 6번 노선의 우회에 동의하는 것을 전제로 하며, 그 동의는 질서청이 직권으로 받습니다."
     },
     {
       "style": "h",
@@ -93,8 +93,8 @@
       "ko": "불복 방법 안내"
     },
     {
-      "de": "Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Widerspruch eingelegt werden. Der Widerspruch ist schriftlich oder zur Niederschrift bei der Stadt Tannhagen, Ordnungsamt, einzulegen. Für Rückfragen steht Ihnen Herr Voigt vormittags telefonisch zur Verfügung.",
-      "ko": "이 처분에 대해서는 통지를 받은 날부터 한 달 안에 이의를 제기할 수 있습니다. 이의는 서면으로 내거나 탄하겐시 질서청에 와서 구술로 기록하게 해야 합니다. 문의 사항이 있으면 오전에 포크트 담당자에게 전화하시기 바랍니다."
+      "de": "Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Widerspruch eingelegt werden, der schriftlich oder zur Niederschrift bei der Stadt Tannhagen, Ordnungsamt, einzulegen ist. Für Fragen zu diesem Bescheid steht Ihnen Herr Voigt vormittags telefonisch zur Verfügung.",
+      "ko": "이 처분에 대해서는 통지를 받은 날부터 한 달 안에 이의를 제기할 수 있으며, 이의는 서면으로 내거나 탄하겐시 질서청에 와서 구술로 기록하게 해야 합니다. 이 처분에 관해 궁금한 점이 있으시면 오전에 포크트 담당자가 전화로 안내해 드립니다."
     },
     {
       "style": "meta",
@@ -106,187 +106,204 @@
     {
       "type": "mc",
       "kind": "gist",
-      "q": "Wie entscheidet das Ordnungsamt über den Antrag?",
-      "options": ["Es lehnt ihn mit Verweis auf die Buslinie ab.", "Es genehmigt ihn unverändert wie beantragt.", "Es verschiebt die Entscheidung auf Ende Mai.", "Es gibt ihm nur mit Einschränkungen statt."],
+      "q": "Wie entscheidet das Ordnungsamt über den Antrag des Vereins?",
+      "options": ["Es lehnt den Antrag wegen der 800 erwarteten Besucher vollständig ab.", "Es genehmigt das Straßenfest genau so, wie es beantragt wurde.", "Es stellt die Entscheidung bis zur Zustimmung der Feuerwehr zurück.", "Es gibt dem Antrag statt, jedoch mit Abstrichen und Bedingungen."],
       "answer": 3,
-      "evidence": "Die Erlaubnis weicht in zwei Punkten von Ihrem Antrag ab.",
-      "pairs": [["weicht in zwei Punkten von Ihrem Antrag ab", "nur mit Einschränkungen"]],
-      "explain": "시청은 축제를 허가하지만, 그 허가는 두 가지 점에서 신청과 달라요. 막는 구간과 시간이 줄었고 여러 조건도 붙었어요. 그러니까 제한을 두고 신청을 받아들인 거예요. 5월 30일은 보험 증빙을 내야 하는 날짜예요."
+      "evidence": "Abweichend von Ihrem Antrag wird die oben genannte Straße jedoch lediglich zwischen den Hausnummern 1 und 27 gesperrt",
+      "pairs": [["Abweichend von Ihrem Antrag", "mit Abstrichen"], ["Die Erlaubnis ist an die nachstehenden Auflagen gebunden", "Bedingungen"]],
+      "explain": "시청은 축제를 허가하지만(die Erlaubnis erteilt), 신청과 달리 막는 구간과 시간을 줄이고 여러 조건(Auflagen)을 붙였어요. 일부를 줄이고 조건을 달아 신청을 받아들인 거예요. 800명은 협회가 예상한 방문객 수일 뿐 거절의 이유가 아니고, 신청한 그대로 허가한 것도 아니에요. 동의를 받아야 하는 곳은 소방서가 아니라 교통 공사이고, 그 때문에 결정을 미루지도 않았어요."
     },
     {
       "type": "rfn",
       "kind": "detail",
-      "q": "Der Verein muss für die Halteverbotsschilder mehr als 85 Euro ausgeben.",
+      "q": "Die Halteverbotsschilder kann der Verein gegen eine Gebühr bei der Stadt ausleihen.",
       "answer": 2,
       "evidence": null,
-      "pairs": [["auf eigene Kosten zu beschaffen", "für die Halteverbotsschilder"]],
-      "explain": "글에는 협회가 표지판을 자기 비용으로 마련해야 한다는 것만 나와요. 그 비용이 얼마인지는 나오지 않아요. 85유로는 이 처분에 대한 행정 수수료예요."
+      "pairs": [["auf eigene Kosten zu beschaffen", "gegen eine Gebühr bei der Stadt ausleihen"]],
+      "explain": "협회가 주정차 금지 표지판을 자기 비용으로 마련해야 한다는 것만 나와요. 표지판을 시에서 빌릴 수 있는지, 어디에서 구하는지는 본문에 나오지 않아요. 85유로는 이 처분에 대한 행정 수수료예요."
     },
     {
       "type": "mc",
-      "kind": "detail",
-      "q": "In welchen Punkten weicht die Erlaubnis vom Antrag ab?",
-      "options": ["beim gesperrten Abschnitt und bei der Dauer", "beim Datum und bei der Anzahl der Stände", "bei der Gebühr und bei der Versicherung", "beim Standort der Bühne und beim Ausschank"],
+      "kind": "inference",
+      "q": "Was muss der Verein gegenüber seiner ursprünglichen Planung ändern?",
+      "options": ["Das Fest endet früher und darf nur einen Teil der Straße belegen.", "Das Fest muss auf einen anderen Samstag im Juni verschoben werden.", "Die Bühne darf nur vor der Kreuzung Lindenallee aufgebaut werden.", "Statt 20 Ständen sind nur noch halb so viele Stände erlaubt."],
       "answer": 0,
-      "evidence": "Zudem gilt die Erlaubnis nicht wie beantragt von 10 bis 24 Uhr, sondern von 11 bis 22 Uhr.",
-      "pairs": [["lediglich zwischen den Hausnummern 1 und 27", "beim gesperrten Abschnitt"], ["von 11 bis 22 Uhr", "bei der Dauer"]],
-      "explain": "신청과 다른 점은 두 가지예요. 도로를 1번지부터 27번지 사이만 막는다는 것과, 시간이 10시부터 24시까지가 아니라 11시부터 22시까지라는 것이에요. 날짜는 신청대로 6월 14일이에요."
-    },
-    {
-      "type": "mc",
-      "kind": "detail",
-      "q": "Wer muss sich um die Halteverbotsschilder kümmern?",
-      "options": ["das Ordnungsamt auf Kosten der Stadt", "die Verkehrsbetriebe drei Tage vorher", "der Verein auf seine eigene Rechnung", "die Anwohner sieben Tage im Voraus"],
-      "answer": 2,
-      "evidence": "Die erforderlichen Halteverbotsschilder hat der Verein auf eigene Kosten zu beschaffen",
-      "pairs": [["auf eigene Kosten", "auf seine eigene Rechnung"]],
-      "explain": "hat der Verein … zu beschaffen은 '협회가 마련해야 한다'는 뜻이에요. 비용도 협회가 내요. auf eigene Kosten을 auf eigene Rechnung으로 바꿔 말했어요. 일주일 전은 주민들에게 알려야 하는 기한이에요."
-    },
-    {
-      "type": "rfn",
-      "kind": "detail",
-      "q": "Auf dem Fest darf bis zum Ende der Veranstaltung Musik gespielt werden.",
-      "answer": 1,
-      "evidence": "Musikdarbietungen sind um 21.30 Uhr zu beenden",
-      "pairs": [["um 21.30 Uhr zu beenden", "bis zum Ende der Veranstaltung"]],
-      "explain": "허가는 22시까지 유효하지만 음악 공연은 21시 30분에 끝내야 해요. 행사가 끝날 때까지 음악을 틀 수 있는 것이 아니에요."
+      "evidence": "die Veranstaltung darf nicht, wie beantragt, von 10 bis 24 Uhr, sondern nur von 11 bis 22 Uhr stattfinden",
+      "pairs": [["nur von 11 bis 22 Uhr", "Das Fest endet früher"], ["lediglich zwischen den Hausnummern 1 und 27", "nur einen Teil der Straße belegen"]],
+      "explain": "신청과 다른 점은 두 가지예요. 도로를 1번지부터 27번지 사이만 막고, 시간도 10시부터 24시까지가 아니라 11시부터 22시까지예요. 그러니 협회는 축제를 더 일찍 끝내고 도로의 일부만 써야 해요. 날짜와 가판대 수는 바뀌지 않았고, 무대는 린덴알레 교차로가 아니라 9번지 앞에만 세울 수 있어요."
     },
     {
       "type": "mc",
       "kind": "meaning",
-      "q": "Was bedeutet „er bedarf einer gesonderten Gestattung“?",
-      "options": ["Der Ausschank ist bei diesem Fest ganz untersagt.", "Für den Ausschank ist eine eigene Genehmigung nötig.", "Der Ausschank wird mit diesem Bescheid genehmigt.", "Für den Ausschank fällt eine zusätzliche Gebühr an."],
+      "q": "Was bedeutet „hat der Verein auf eigene Kosten zu beschaffen“?",
+      "options": ["Der Verein darf die Schilder kostenlos beim Ordnungsamt abholen.", "Die Stadt stellt die Schilder auf und schickt dem Verein die Rechnung.", "Der Verein muss die Schilder selbst besorgen und auch finanzieren.", "Der Verein kann die Schilder besorgen, ist dazu aber nicht verpflichtet."],
+      "answer": 2,
+      "evidence": "Die erforderlichen Halteverbotsschilder hat der Verein auf eigene Kosten zu beschaffen",
+      "pairs": [["hat der Verein auf eigene Kosten zu beschaffen", "Der Verein muss die Schilder selbst besorgen und auch finanzieren"]],
+      "explain": "haben + zu + 동사원형은 '~해야 한다'는 의무를 나타내요. auf eigene Kosten은 '자기 비용으로'라는 뜻이라, 협회가 표지판을 직접 마련하고 돈도 내야 한다는 말이에요. 시가 대신하고 비용을 청구하는 것은 청소를 하지 않았을 때의 이야기이고, 해도 되고 안 해도 되는 선택이라는 뜻도 아니에요."
+    },
+    {
+      "type": "rfn",
+      "kind": "detail",
+      "q": "Musik darf auf dem Fest bis zum Ende der Veranstaltung gespielt werden.",
       "answer": 1,
-      "evidence": "Der Ausschank alkoholischer Getränke ist nicht Gegenstand dieses Bescheids",
-      "pairs": [["bedarf einer gesonderten Gestattung", "ist eine eigene Genehmigung nötig"]],
-      "explain": "bedürfen + 2격은 '~이 필요하다'는 뜻이에요. gesondert는 '따로'라는 뜻이에요. 주류 판매는 금지된 것이 아니라 이 처분과 별도로 허가를 받아야 한다는 말이에요."
+      "evidence": "Die Musik ist um 21.30 Uhr zu beenden",
+      "pairs": [["Die Musik ist um 21.30 Uhr zu beenden", "bis zum Ende der Veranstaltung"]],
+      "explain": "행사는 22시까지 열 수 있지만 음악은 21시 30분에 끝내야 해요(ist … zu beenden). 행사가 끝날 때까지 음악을 틀 수 있는 것이 아니라서 Nein이에요."
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "q": "Was bedeutet „sondern bedarf einer gesonderten Gestattung“?",
+      "options": ["Der Ausschank ist auf diesem Fest grundsätzlich untersagt.", "Dafür braucht man noch eine weitere, separate Genehmigung.", "Der Ausschank ist mit diesem Bescheid bereits mitgenehmigt.", "Für den Ausschank fällt eine gesonderte Gebühr von 85 Euro an."],
+      "answer": 1,
+      "evidence": "Der Ausschank alkoholischer Getränke ist nicht Gegenstand dieses Bescheids, sondern bedarf einer gesonderten Gestattung",
+      "pairs": [["bedarf einer gesonderten Gestattung", "braucht man noch eine weitere, separate Genehmigung"]],
+      "explain": "bedürfen + 2격은 '~이 필요하다'는 뜻이고, gesondert는 '따로'라는 뜻이에요. 주류 판매는 금지된 것이 아니라 이 처분과 별도로 허가를 받아야 한다는 말이에요. 85유로는 이 처분에 대한 행정 수수료예요."
     },
     {
       "type": "mc",
       "kind": "detail",
       "q": "Warum wird die Straße nicht bis zur Kreuzung Lindenallee gesperrt?",
-      "options": ["weil dort zu viele Anwohner Einspruch erhoben haben", "weil die Bühne dort die Fahrbahn versperren würde", "weil der Verein dort schon Auflagen verletzt hat", "weil Busse und Feuerwehr dort durchkommen müssen"],
+      "options": ["Weil dort viele Anwohnerinnen und Anwohner Einspruch erhoben haben.", "Weil die Bühne dort sonst die Rettungsgasse versperren würde.", "Weil der Verein dort bei früheren Festen Auflagen verletzt hat.", "Weil Busse umgeleitet werden und die Feuerwehr freie Fahrt braucht."],
       "answer": 3,
-      "evidence": "da über diese Kreuzung die Umleitung der Buslinie 6 geführt wird und die Zufahrt zur Feuerwache freizuhalten ist",
-      "pairs": [["die Zufahrt zur Feuerwache freizuhalten", "Feuerwehr dort durchkommen"]],
-      "explain": "이 교차로로 6번 버스의 우회 노선이 지나가고 소방서 진입로도 비워 두어야 해요. 그래서 버스와 소방차가 지나갈 수 있도록 교차로까지는 막지 않아요. 협회는 지난 3년 동안 지적 사항 없이 축제를 치렀어요."
+      "evidence": "da über diese Kreuzung die Umleitung der Buslinie 6 geführt wird und die Zufahrt zur Feuerwache jederzeit freizuhalten ist",
+      "pairs": [["die Umleitung der Buslinie 6 geführt wird", "Busse umgeleitet werden"], ["die Zufahrt zur Feuerwache jederzeit freizuhalten ist", "die Feuerwehr freie Fahrt braucht"]],
+      "explain": "이 교차로로 6번 버스의 우회 노선이 지나가고, 소방서 진입로도 언제나 비워 두어야 해요. 그래서 버스와 소방차가 지나갈 수 있도록 교차로까지는 막지 않아요. 주민의 이의 제기는 나오지 않고, 협회는 지난 3년 동안 지적 사항 없이 축제를 치렀어요."
     },
     {
       "type": "rfn",
       "kind": "detail",
-      "q": "Die guten Erfahrungen mit früheren Festen des Vereins haben sich auf die Entscheidung ausgewirkt.",
+      "q": "Dass frühere Feste des Vereins reibungslos verliefen, hat ihm bei der Entscheidung genützt.",
       "answer": 0,
-      "evidence": "Da der Verein in den vergangenen drei Jahren vergleichbare Feste ohne Beanstandungen durchgeführt hat, wurde von einer weitergehenden Kürzung abgesehen.",
-      "pairs": [["ohne Beanstandungen durchgeführt", "Die guten Erfahrungen mit früheren Festen"]],
-      "explain": "협회가 지난 3년 동안 비슷한 축제를 문제없이 치렀기 때문에 시청은 시간을 더 줄이지 않았어요. 이전 축제의 좋은 경험이 결정에 영향을 준 거예요."
+      "evidence": "Da der Verein in den letzten drei Jahren ähnliche Straßenfeste ohne Beanstandungen durchgeführt hat, wurde von einer weitergehenden Kürzung der beantragten Zeiten abgesehen.",
+      "pairs": [["ohne Beanstandungen durchgeführt", "reibungslos verliefen"], ["wurde von einer weitergehenden Kürzung der beantragten Zeiten abgesehen", "hat ihm bei der Entscheidung genützt"]],
+      "explain": "협회가 지난 3년 동안 비슷한 축제를 지적 사항 없이 치렀기 때문에 시는 시간을 더 줄이지 않았어요. 이전 축제가 문제없이 끝난 것이 협회에 유리하게 작용했으므로 Ja예요."
     },
     {
       "type": "mc",
-      "kind": "detail",
-      "q": "Unter welchem Vorbehalt steht die Erlaubnis?",
-      "options": ["Der Verein muss die Gebühr im Voraus überweisen.", "Die Anwohner müssen schriftlich einverstanden sein.", "Die Verkehrsbetriebe müssen die Umleitung billigen.", "Die Feuerwehr muss die Rettungsgasse vorher prüfen."],
+      "kind": "paraphrase",
+      "q": "Was bedeutet der Satz „Die Erlaubnis ergeht vorbehaltlich der Zustimmung der Verkehrsbetriebe zur Umleitung der Linie 6“?",
+      "options": ["Der Verein muss die Verkehrsbetriebe selbst um ihre Zustimmung bitten.", "Die Buslinie 6 wird während des Festes überhaupt nicht umgeleitet.", "Die Genehmigung wird erst wirksam, wenn der Busbetrieb die Route billigt.", "Die Verkehrsbetriebe haben der Umleitung bereits ausdrücklich zugestimmt."],
       "answer": 2,
-      "evidence": "Die Erlaubnis ergeht vorbehaltlich der Zustimmung der Verkehrsbetriebe zur Umleitung der Linie 6",
-      "pairs": [["vorbehaltlich der Zustimmung der Verkehrsbetriebe", "Die Verkehrsbetriebe müssen die Umleitung billigen"]],
-      "explain": "vorbehaltlich + 2격은 '~을 전제로'라는 뜻이에요. 교통 공사가 6번 노선의 우회에 동의해야 허가가 유효해요. 주민들에게는 알리기만 하면 되고 동의를 받을 필요는 없어요."
+      "evidence": "Die Erlaubnis ergeht vorbehaltlich der Zustimmung der Verkehrsbetriebe zur Umleitung der Linie 6, die das Ordnungsamt von Amts wegen einholt.",
+      "pairs": [["vorbehaltlich der Zustimmung der Verkehrsbetriebe", "wird erst wirksam, wenn der Busbetrieb die Route billigt"]],
+      "explain": "vorbehaltlich + 2격은 '~을 전제로'라는 뜻이에요. 교통 공사가 6번 노선의 우회에 동의해야 허가가 유효해요. 그 동의는 협회가 아니라 질서청이 직권으로(von Amts wegen) 받고, 아직 받은 상태도 아니에요. 우회 자체가 없다는 진술도 본문과 맞지 않아요."
     },
     {
       "type": "mc",
-      "kind": "detail",
-      "q": "Was kann der Verein tun, wenn er mit dem Bescheid nicht einverstanden ist?",
-      "options": ["binnen einer Woche den Antrag neu stellen", "binnen eines Monats schriftlich widersprechen", "sich telefonisch bei Herrn Voigt beschweren", "die Gebühr bis zur Klärung nicht bezahlen"],
+      "kind": "intent",
+      "q": "Welchen Zweck hat der Abschnitt „Rechtsbehelfsbelehrung“?",
+      "options": ["Er erklärt, wie man die Verwaltungsgebühr rechtzeitig bezahlt.", "Er erläutert, wie und binnen welcher Frist man sich wehren kann.", "Er nennt die Strafen, die bei einem Verstoß gegen die Auflagen drohen.", "Er begründet, warum die Kreuzung Lindenallee frei bleiben muss."],
       "answer": 1,
-      "evidence": "Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Widerspruch eingelegt werden.",
-      "pairs": [["innerhalb eines Monats", "binnen eines Monats"], ["Widerspruch eingelegt werden", "schriftlich widersprechen"]],
-      "explain": "처분에 동의하지 않으면 통지를 받은 날부터 한 달 안에 이의를 제기할 수 있어요. Widerspruch einlegen을 동사 widersprechen으로 바꿔 말했어요. 전화는 문의할 때 쓰는 방법이고, 이의는 서면이나 구술 기록으로 내야 해요."
+      "evidence": "Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Widerspruch eingelegt werden",
+      "pairs": [["innerhalb eines Monats nach Bekanntgabe", "binnen welcher Frist"], ["Widerspruch eingelegt werden", "wie und binnen welcher Frist man sich wehren kann"]],
+      "explain": "Rechtsbehelfsbelehrung은 처분에 동의하지 않을 때 어떻게 불복하는지 알려 주는 부분이에요. 이 글에서는 통지를 받은 날부터 한 달 안에 서면이나 구술 기록으로 이의를 제기할 수 있다고 안내해요. 수수료 납부, 위반 시 제재, 교차로를 막지 않는 이유는 다른 부분에 나와요."
     }
   ],
   "grammar": [
     {
       "title": "관공서 문서의 지시어",
-      "term": "Verweiswörter der Amtssprache (hiermit, hierzu, diesbezüglich, nachstehend, o. g.)",
-      "explain": "공문서는 같은 말을 되풀이하지 않으려고 문서 안의 다른 부분을 가리키는 말을 많이 써요. hiermit은 '이 문서로써', hierzu는 '이와 관련하여', diesbezüglich는 '이 일에 관한', nachstehend는 '아래에 나오는', o. g.(oben genannt)는 '위에서 말한'이라는 뜻이에요.",
-      "pattern": "hiermit · hierzu · diesbezüglich + 명사 · nachstehend + 명사 · o. g. + 명사",
+      "term": "Verweiswörter der Amtssprache (hiermit, hierdurch, diesbezüglich, nachstehend, oben genannt)",
+      "explain": "공문서는 같은 말을 되풀이하지 않으려고 문서 안의 다른 부분이나 앞에서 말한 일을 가리키는 말을 많이 써요. hiermit은 '이 문서로써', hierdurch는 '이로 인해', diesbezüglich는 '이 일에 관한', nachstehend는 '아래에 나오는', oben genannt(줄여서 o. g.)는 '위에서 말한'이라는 뜻이에요. diesbezüglich, nachstehend, oben genannt가 명사 앞에 오면 형용사처럼 어미가 붙어요.",
+      "pattern": "hiermit · hierdurch + 동사 · diesbezüglich / nachstehend / oben genannt + 형용사 어미 + 명사",
       "examples": [
         {
-          "de": "Dem Nachbarschaftsverein Mühlenviertel e. V. wird hiermit die Erlaubnis erteilt, die Mühlenstraße am Samstag, dem 14. Juni, für ein Straßenfest zu nutzen.",
-          "ko": "뮐렌피어텔 주민 협회가 6월 14일 토요일에 거리 축제를 위해 뮐렌슈트라세를 사용하는 것을 이 문서로 허가합니다.",
+          "de": "auf Ihren Antrag vom 14. April hin wird dem Nachbarschaftsverein Mühlenviertel hiermit die Erlaubnis erteilt, die Mühlenstraße am Samstag, dem 14. Juni, für ein Straßenfest zu nutzen",
+          "ko": "4월 14일에 내신 신청에 따라 뮐렌피어텔 주민 협회가 6월 14일 토요일에 거리 축제를 위해 뮐렌슈트라세를 사용하는 것을 이 문서로 허가합니다",
           "mark": ["hiermit"],
-          "parts": [["Dem Nachbarschaftsverein Mühlenviertel e. V.", "3격 목적어"], ["wird", "동사"], ["hiermit", "부사어"], ["die Erlaubnis", "주어"], ["erteilt,", "동사(끝)"], ["die Mühlenstraße am Samstag, dem 14. Juni, für ein Straßenfest zu nutzen.", "zu 부정사구"]]
+          "parts": [["auf Ihren Antrag vom 14. April hin", "부사어"], ["wird", "동사"], ["dem Nachbarschaftsverein Mühlenviertel", "3격 목적어"], ["hiermit", "부사어"], ["die Erlaubnis", "주어"], ["erteilt,", "동사(끝)"], ["die Mühlenstraße am Samstag, dem 14. Juni, für ein Straßenfest zu nutzen", "zu 부정사구"]]
         },
         {
-          "de": "Ein diesbezüglicher Antrag ist spätestens vier Wochen vor der Veranstaltung zu stellen.",
-          "ko": "이에 관한 신청은 늦어도 행사 4주 전까지 해야 합니다.",
+          "de": "Abweichend von Ihrem Antrag wird die oben genannte Straße jedoch lediglich zwischen den Hausnummern 1 und 27 gesperrt",
+          "ko": "다만 신청과 달리 위에 적은 도로는 1번지부터 27번지 사이만 통행을 막습니다",
+          "mark": ["oben genannte"]
+        },
+        {
+          "de": "ein diesbezüglicher Antrag ist spätestens vier Wochen vor der Veranstaltung zu stellen",
+          "ko": "이에 관한 신청은 늦어도 행사 4주 전까지 해야 합니다",
           "mark": ["diesbezüglicher"]
         },
         {
-          "de": "Die Erlaubnis ist an die nachstehenden Auflagen gebunden:",
-          "ko": "이 허가에는 아래의 조건이 붙습니다.",
-          "mark": ["nachstehenden"]
+          "de": "wobei der Verein die hierdurch entstehenden Kosten zu tragen hat",
+          "ko": "이때 생기는 비용은 협회가 부담해야 합니다",
+          "mark": ["hierdurch"]
         }
       ],
-      "tip": "일상적인 글에서는 damit, dazu, dafür를 써요. hiermit, hierzu는 격식 있는 문서에서 쓰는 형태예요."
+      "tip": "dadurch, dazu도 앞의 내용을 가리키지만, hier-가 붙은 형태는 바로 이 문서나 방금 말한 일을 더 분명히 가리켜서 공문서에서 자주 써요. hiermit은 Hiermit kündige ich …처럼 문서 자체로 어떤 행위를 할 때도 써요. die nachstehenden Auflagen처럼 nachstehend는 목록 앞에 자주 와요."
     },
     {
-      "title": "sein · haben + zu + 동사원형: 의무",
-      "term": "sein + zu + Infinitiv / haben + zu + Infinitiv (Auflagen)",
-      "explain": "공문서에서는 müssen 대신 이 구문으로 의무를 나타내요. sein + zu + 동사원형은 수동의 뜻이에요. Die Straße ist zu reinigen.은 Die Straße muss gereinigt werden.과 같아요. haben + zu + 동사원형은 능동의 뜻이고, 누가 해야 하는지가 주어로 나와요. Der Verein hat die Schilder aufzustellen.은 Der Verein muss die Schilder aufstellen.과 같아요. 분리동사는 zu가 가운데에 들어가요.",
-      "pattern": "주어(대상) + ist/sind + … + zu + 동사원형 · 주어(행위자) + hat + … + zu + 동사원형",
+      "title": "haben + zu + 동사원형 – 누가 의무를 지는지 밝히기",
+      "term": "haben + zu + Infinitiv als Pflichtformel (einzuhalten haben, zu beschaffen haben, zu erfolgen haben)",
+      "explain": "haben + zu + 동사원형은 '~해야 한다'는 뜻으로, müssen과 같은 의무를 나타내요. 공문서는 이 구문으로 누가 무엇을 해야 하는지 정하고, 의무를 지는 쪽이 주어가 돼요(der Verein hat … zu beschaffen). 분리동사는 zu가 가운데에 들어가요(einzuhalten, aufzustellen). 관계절이나 종속절에서는 haben이 절 끝에 와요(die Sie einzuhalten haben). zu erfolgen haben은 사람 대신 행위를 나타내는 명사가 주어가 되는 행정 문체의 표현이에요. der Abbau … hat bis 23 Uhr zu erfolgen은 '철거는 23시까지 이루어져야 한다'는 뜻이에요.",
+      "pattern": "주어(의무를 지는 쪽) + hat/haben + … + zu + 동사원형 / 관계절·종속절: … + zu + 동사원형 + hat/haben",
       "examples": [
         {
-          "de": "Die Straße ist bis Sonntag, 10 Uhr, vollständig zu reinigen.",
-          "ko": "도로는 일요일 10시까지 완전히 청소해야 합니다.",
-          "mark": ["ist", "zu reinigen"],
-          "parts": [["Die Straße", "주어"], ["ist", "동사"], ["bis Sonntag, 10 Uhr,", "부사어(시간)"], ["vollständig", "부사어(방법)"], ["zu reinigen.", "동사(끝)"]]
+          "de": "Die erforderlichen Halteverbotsschilder hat der Verein auf eigene Kosten zu beschaffen und mindestens 72 Stunden vor Beginn der Sperrung so aufzustellen, dass sie für alle gut zu sehen sind.",
+          "ko": "필요한 주정차 금지 표지판은 협회가 자기 비용으로 마련하여, 통행 제한이 시작되기 72시간 전까지 모두가 잘 볼 수 있도록 세워야 합니다.",
+          "mark": ["hat", "zu beschaffen", "aufzustellen"],
+          "parts": [["Die erforderlichen Halteverbotsschilder", "4격 목적어"], ["hat", "동사"], ["der Verein", "주어"], ["auf eigene Kosten", "부사어(방법)"], ["zu beschaffen", "동사(끝)"], ["und", "접속사"], ["mindestens 72 Stunden vor Beginn der Sperrung", "부사어(시간)"], ["so", "부사어(방법)"], ["aufzustellen,", "동사(끝)"], ["dass sie für alle gut zu sehen sind.", "종속절"]]
         },
         {
-          "de": "Die erforderlichen Halteverbotsschilder hat der Verein auf eigene Kosten zu beschaffen und mindestens 72 Stunden vor Beginn der Sperrung aufzustellen.",
-          "ko": "필요한 주차 금지 표지판은 협회가 자기 비용으로 마련하여 통행 제한이 시작되기 72시간 전까지 세워야 합니다.",
-          "mark": ["hat", "zu beschaffen", "aufzustellen"],
-          "parts": [["Die erforderlichen Halteverbotsschilder", "4격 목적어"], ["hat", "동사"], ["der Verein", "주어"], ["auf eigene Kosten", "부사어(방법)"], ["zu beschaffen und mindestens 72 Stunden vor Beginn der Sperrung aufzustellen.", "동사(끝)"]]
+          "de": "Die Erlaubnis ist an die nachstehenden Auflagen gebunden, die Sie einzuhalten haben:",
+          "ko": "이 허가에는 아래의 조건이 붙으며, 신청인은 이를 지켜야 합니다.",
+          "mark": ["einzuhalten haben"],
+          "parts": [["Die Erlaubnis", "주어"], ["ist", "동사"], ["an die nachstehenden Auflagen", "전치사 목적어"], ["gebunden,", "동사(끝)"], ["die Sie einzuhalten haben:", "관계절"]]
+        },
+        {
+          "de": "der Abbau der Bühne und der Stände hat bis 23 Uhr zu erfolgen",
+          "ko": "무대와 가판대 철거는 23시까지 마쳐야 합니다",
+          "mark": ["hat", "zu erfolgen"],
+          "parts": [["der Abbau der Bühne und der Stände", "주어"], ["hat", "동사"], ["bis 23 Uhr", "부사어(시간)"], ["zu erfolgen", "동사(끝)"]]
         }
       ],
-      "tip": "sein + zu는 문맥에 따라 '할 수 있다'는 뜻이 되기도 해요. 공문서의 조건과 지시에서는 거의 언제나 '해야 한다'는 뜻이에요."
+      "tip": "haben + zu는 단호한 지시로 들려서 공문서나 규정에서 주로 써요. 일상 대화에서는 보통 müssen을 써요. wobei der Verein die hierdurch entstehenden Kosten zu tragen hat처럼 비용이나 책임을 누가 지는지 밝힐 때도 자주 나와요."
     },
     {
-      "title": "조건을 나타내는 전치사구",
-      "term": "Bedingungen als Präpositionalgruppe (bei, im Falle, vorbehaltlich)",
+      "title": "공문서의 조건 표현 – bei · im Falle · vorbehaltlich + 명사",
+      "term": "Konditionale Präpositionen der Amtssprache (bei, im Falle, vorbehaltlich + Nominalisierung)",
       "explain": "공문서는 wenn절 대신 전치사 + 명사로 조건을 짧게 말해요. bei + 3격과 im Falle + 2격은 '~하는 경우에'라는 뜻이에요. vorbehaltlich + 2격은 '~이 이루어진다는 전제에서'라는 뜻이에요. 이때 동사를 명사로 바꾼 말이 뒤에 와요. wenn die Auflagen nicht erfüllt werden이 bei Nichterfüllung이 되는 식이에요.",
       "pattern": "bei + 3격 · im Falle + 2격 · vorbehaltlich + 2격",
       "examples": [
         {
-          "de": "Die Erlaubnis kann im Falle eines Verstoßes gegen die Auflagen jederzeit widerrufen werden.",
-          "ko": "조건을 위반하는 경우에는 허가를 언제든지 취소할 수 있습니다.",
-          "mark": ["im Falle eines Verstoßes"]
+          "de": "bei Nichterfüllung wird die Reinigung von der Stadt veranlasst",
+          "ko": "이를 이행하지 않으면 시가 청소를 맡깁니다",
+          "mark": ["bei Nichterfüllung"],
+          "parts": [["bei Nichterfüllung", "부사어"], ["wird", "동사"], ["die Reinigung", "주어"], ["von der Stadt", "기타"], ["veranlasst", "동사(끝)"]]
+        },
+        {
+          "de": "Im Falle eines Verstoßes gegen die Auflagen kann die Erlaubnis jederzeit widerrufen und darüber hinaus ein Bußgeld festgesetzt werden.",
+          "ko": "조건을 위반하는 경우에는 허가를 언제든지 취소할 수 있고, 그 밖에 과태료를 부과할 수도 있습니다.",
+          "mark": ["Im Falle eines Verstoßes"]
         },
         {
           "de": "Die Erlaubnis ergeht vorbehaltlich der Zustimmung der Verkehrsbetriebe zur Umleitung der Linie 6",
-          "ko": "이 허가는 교통 공사가 6번 노선의 우회에 동의하는 것을 전제로 합니다.",
+          "ko": "이 허가는 교통 공사가 6번 노선의 우회에 동의하는 것을 전제로 합니다",
           "mark": ["vorbehaltlich der Zustimmung"]
-        },
-        {
-          "de": "Bei Nichterfüllung wird die Reinigung auf Kosten des Vereins von der Stadt veranlasst.",
-          "ko": "이를 이행하지 않으면 시가 협회의 비용으로 청소를 맡깁니다.",
-          "mark": ["Bei Nichterfüllung"]
         }
       ],
-      "tip": "풀어서 말하면 이해하기 쉬워요. im Falle eines Verstoßes는 falls der Verein gegen die Auflagen verstößt와 같은 뜻이에요."
+      "tip": "풀어서 말하면 이해하기 쉬워요. im Falle eines Verstoßes는 falls gegen die Auflagen verstoßen wird와, vorbehaltlich der Zustimmung der Verkehrsbetriebe는 wenn die Verkehrsbetriebe zustimmen과 같은 뜻이에요."
     },
     {
       "title": "행정 문체의 굳은 표현",
       "term": "Feste Wendungen der Verwaltungssprache",
-      "explain": "행정 문서에는 명사와 동사가 짝을 이루는 굳은 표현이 많아요. einen Antrag stellen(신청하다), eine Erlaubnis erteilen(허가를 내주다), Widerspruch einlegen(이의를 제기하다), eine Gebühr erheben(수수료를 부과하다), in Betracht kommen(고려 대상이 되다), von etwas absehen(~을 하지 않기로 하다)이 그 예예요. bedürfen은 2격 목적어를 취해요.",
-      "pattern": "einen Antrag stellen · eine Erlaubnis erteilen · Widerspruch einlegen · einer Sache (2격) bedürfen",
+      "explain": "행정 문서에는 명사와 동사가 짝을 이루는 굳은 표현이 많아요. einen Antrag stellen(신청하다), eine Erlaubnis erteilen(허가를 내주다), Widerspruch einlegen(이의를 제기하다), eine Gebühr erheben(수수료를 부과하다), in Betracht kommen(고려 대상이 되다), von etwas absehen(~을 하지 않기로 하다), von Amts wegen(직권으로)이 그 예예요.",
+      "pattern": "einen Antrag stellen · eine Erlaubnis erteilen · Widerspruch einlegen · eine Gebühr erheben · in Betracht kommen · von etwas absehen",
       "examples": [
         {
-          "de": "Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Widerspruch eingelegt werden.",
-          "ko": "이 처분에 대해서는 통지를 받은 날부터 한 달 안에 이의를 제기할 수 있습니다.",
+          "de": "Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Widerspruch eingelegt werden",
+          "ko": "이 처분에 대해서는 통지를 받은 날부터 한 달 안에 이의를 제기할 수 있습니다",
           "mark": ["Widerspruch eingelegt"]
         },
         {
-          "de": "er bedarf einer gesonderten Gestattung",
-          "ko": "따로 허가를 받아야 합니다.",
-          "mark": ["bedarf einer gesonderten Gestattung"]
+          "de": "Eine Sperrung bis zur Kreuzung Lindenallee, wie von Ihnen beantragt, kam nicht in Betracht",
+          "ko": "신청하신 대로 린덴알레 교차로까지 막는 것은 고려할 수 없었습니다",
+          "mark": ["kam nicht in Betracht"]
+        },
+        {
+          "de": "wurde von einer weitergehenden Kürzung der beantragten Zeiten abgesehen",
+          "ko": "신청하신 시간을 더 줄이지는 않았습니다",
+          "mark": ["von einer weitergehenden Kürzung", "abgesehen"]
         }
       ],
       "tip": "이런 표현은 동사 하나로 바꿀 수 있는 경우가 많아요. einen Antrag stellen은 beantragen, Widerspruch einlegen은 widersprechen과 같아요."
@@ -297,59 +314,59 @@
     { "de": "die Sondernutzung, -en", "ko": "(도로 등의) 특별 사용" },
     { "de": "die Erlaubnis, -se", "ko": "허가" },
     { "de": "ab|weichen (weicht ab, wich ab, ist abgewichen) von + Dat.", "ko": "~과 다르다, ~에서 벗어나다" },
-    { "de": "sperren", "ko": "통행을 막다" },
+    { "de": "übertragbar", "ko": "(제3자에게) 넘길 수 있는, 양도할 수 있는" },
     { "de": "die Auflage, -n", "ko": "(허가에 붙는) 조건, 의무 사항" },
     { "de": "die Rettungsgasse, -n", "ko": "구조 차량 통로" },
     { "de": "der Anwohner, -", "ko": "(그 길에 사는) 주민" },
     { "de": "beschaffen", "ko": "마련하다, 구하다" },
     { "de": "der Abbau (Sg.)", "ko": "철거, 해체" },
-    { "de": "veranlassen", "ko": "(하도록) 조치하다" },
+    { "de": "veranlassen", "ko": "(하도록) 조치하다, 맡기다" },
     { "de": "der Nachweis, -e", "ko": "증빙, 증명" },
     { "de": "der Ausschank (Sg.)", "ko": "음료·주류 판매" },
     { "de": "die Gestattung, -en", "ko": "(특정 행위에 대한) 허가" },
-    { "de": "die Begründung, -en", "ko": "이유 설명" },
     { "de": "der Belang, -e", "ko": "(고려해야 할) 이익, 사안" },
     { "de": "die Beschränkung, -en", "ko": "제한" },
+    { "de": "die Beanstandung, -en", "ko": "지적 사항, 문제 제기" },
     { "de": "erheben (erhebt, erhob, hat erhoben)", "ko": "(수수료를) 부과하다" },
     { "de": "widerrufen (widerruft, widerrief, hat widerrufen)", "ko": "취소하다, 철회하다" },
     { "de": "der Widerspruch, -¨e", "ko": "이의 신청" }
   ],
   "phrases": [
     {
-      "de": "ein Bescheid ergeht",
-      "ko": "처분이 내려지다",
-      "ex": "auf Ihren Antrag vom 14. April ergeht folgender Bescheid",
-      "exko": "4월 14일에 내신 신청에 대해 다음과 같이 처분합니다."
+      "de": "eine Erlaubnis erteilen",
+      "ko": "허가를 내주다",
+      "ex": "auf Ihren Antrag vom 14. April hin wird dem Nachbarschaftsverein Mühlenviertel hiermit die Erlaubnis erteilt, die Mühlenstraße am Samstag, dem 14. Juni, für ein Straßenfest zu nutzen",
+      "exko": "4월 14일에 내신 신청에 따라 뮐렌피어텔 주민 협회가 6월 14일 토요일에 거리 축제를 위해 뮐렌슈트라세를 사용하는 것을 이 문서로 허가합니다."
     },
     {
       "de": "an Auflagen gebunden sein",
       "ko": "조건이 붙어 있다",
-      "ex": "Die Erlaubnis ist an die nachstehenden Auflagen gebunden:",
-      "exko": "이 허가에는 아래의 조건이 붙습니다."
+      "ex": "Die Erlaubnis ist an die nachstehenden Auflagen gebunden, die Sie einzuhalten haben:",
+      "exko": "이 허가에는 아래의 조건이 붙으며, 신청인은 이를 지켜야 합니다."
     },
     {
       "de": "auf eigene Kosten",
       "ko": "자기 비용으로",
       "ex": "Die erforderlichen Halteverbotsschilder hat der Verein auf eigene Kosten zu beschaffen",
-      "exko": "필요한 주차 금지 표지판은 협회가 자기 비용으로 마련해야 합니다."
+      "exko": "필요한 주정차 금지 표지판은 협회가 자기 비용으로 마련해야 합니다."
     },
     {
       "de": "einen Antrag stellen",
       "ko": "신청하다",
-      "ex": "Ein diesbezüglicher Antrag ist spätestens vier Wochen vor der Veranstaltung zu stellen.",
+      "ex": "ein diesbezüglicher Antrag ist spätestens vier Wochen vor der Veranstaltung zu stellen",
       "exko": "이에 관한 신청은 늦어도 행사 4주 전까지 해야 합니다."
     },
     {
       "de": "in Betracht kommen",
       "ko": "고려 대상이 되다",
-      "ex": "kam nicht in Betracht",
-      "exko": "고려할 수 없었습니다."
+      "ex": "Eine Sperrung bis zur Kreuzung Lindenallee, wie von Ihnen beantragt, kam nicht in Betracht",
+      "exko": "신청하신 대로 린덴알레 교차로까지 막는 것은 고려할 수 없었습니다."
     },
     {
       "de": "von etwas absehen",
       "ko": "~을 하지 않기로 하다",
-      "ex": "wurde von einer weitergehenden Kürzung abgesehen",
-      "exko": "시간을 더 줄이지는 않았습니다."
+      "ex": "wurde von einer weitergehenden Kürzung der beantragten Zeiten abgesehen",
+      "exko": "신청하신 시간을 더 줄이지는 않았습니다."
     },
     {
       "de": "von Amts wegen",
@@ -360,8 +377,8 @@
     {
       "de": "Widerspruch einlegen",
       "ko": "이의를 제기하다",
-      "ex": "Der Widerspruch ist schriftlich oder zur Niederschrift bei der Stadt Tannhagen, Ordnungsamt, einzulegen.",
-      "exko": "이의는 서면으로 내거나 탄하겐시 질서청에 와서 구술로 기록하게 해야 합니다."
+      "ex": "Gegen diesen Bescheid kann innerhalb eines Monats nach Bekanntgabe Widerspruch eingelegt werden, der schriftlich oder zur Niederschrift bei der Stadt Tannhagen, Ordnungsamt, einzulegen ist.",
+      "exko": "이 처분에 대해서는 통지를 받은 날부터 한 달 안에 이의를 제기할 수 있으며, 이의는 서면으로 내거나 탄하겐시 질서청에 와서 구술로 기록하게 해야 합니다."
     }
   ]
 }

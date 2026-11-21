@@ -7,7 +7,7 @@
   "type": "Geschäftliche E-Mails",
   "typeKo": "업무 이메일",
   "intro": "소프트웨어 회사가 고객사에 도입 일정이 늦어진다고 알리는 메일과 고객의 답장이에요.",
-  "focus": ["결과 접속부사", "미래완료", "비인칭 표현", "bezüglich · hinsichtlich · zwecks"],
+  "focus": ["결과 접속부사", "미래완료", "비인칭 표현", "주제를 밝히는 표현"],
   "paragraphs": [
     {
       "style": "meta",
@@ -25,20 +25,20 @@
       "ko": "탈만 님께"
     },
     {
-      "de": "leider muss ich Ihnen mitteilen, dass wir den vereinbarten Starttermin am 1. März nicht halten können. Bei den abschließenden Tests ist es zu Fehlern bei der Übernahme Ihrer Bestandsdaten gekommen. Hinzu kommt, dass uns ein Zulieferer das Modul für die Handscanner drei Wochen später als zugesagt geliefert hat. Infolgedessen konnten wir mit den Tests erst Mitte Februar beginnen.",
-      "ko": "안타깝게도 약속한 3월 1일 가동 일정을 지킬 수 없게 되었음을 알려 드립니다. 마지막 시험 단계에서 귀사의 재고 자료를 옮기는 과정에 오류가 생겼습니다. 여기에 더해 부품 공급 업체가 휴대용 스캐너에 쓰는 모듈을 약속보다 3주 늦게 납품했습니다. 그 결과 저희는 2월 중순이 되어서야 시험을 시작할 수 있었습니다."
+      "de": "leider muss ich Ihnen mitteilen, dass wir den vereinbarten Starttermin am 1. März nicht halten können, weil es während der abschließenden Tests zu Fehlern bei der Übertragung Ihrer Bestandsdaten gekommen ist. Hinzu kommt, dass uns ein Zulieferer das Modul für die Handscanner drei Wochen später als zugesagt geliefert hat. Infolgedessen konnten wir mit den Tests erst Mitte Februar beginnen, sodass uns kaum noch Zeit für Korrekturen blieb.",
+      "ko": "안타깝게도 약속한 3월 1일 가동 일정을 지킬 수 없게 되었음을 알려 드립니다. 마지막 시험 단계에서 귀사의 재고 자료를 옮기는 과정에 오류가 생겼기 때문입니다. 여기에 더해 부품 공급 업체가 휴대용 스캐너에 쓰는 모듈을 약속보다 3주 늦게 납품했습니다. 그 결과 저희는 2월 중순이 되어서야 시험을 시작할 수 있었고, 오류를 바로잡을 시간이 거의 남지 않았습니다."
     },
     {
-      "de": "Es hat sich herausgestellt, dass rund vier Prozent der Artikelnummern falsch übertragen wurden. Uns ist dabei ein Fehler unterlaufen, den wir inzwischen gefunden und behoben haben. Unsere Entwickler haben die Schnittstelle zu Ihrem bisherigen System daraufhin vollständig überarbeitet. Bis zum 15. März werden wir sämtliche Tests wiederholt und abgeschlossen haben. Somit können wir Ihnen als neuen Starttermin Montag, den 22. März, verbindlich anbieten.",
-      "ko": "품목 번호의 약 4퍼센트가 잘못 옮겨진 것으로 드러났습니다. 이 과정에서 저희 쪽에 실수가 있었고, 그 실수는 이제 찾아서 바로잡았습니다. 그 뒤에 저희 개발자들이 귀사의 기존 시스템과 연결되는 부분을 전부 손보았습니다. 3월 15일까지는 모든 시험을 다시 하고 끝내 놓겠습니다. 따라서 새 가동일로 3월 22일 월요일을 확실하게 제안드릴 수 있습니다."
+      "de": "Es hat sich herausgestellt, dass rund vier Prozent der Artikelnummern falsch übertragen wurden. Dabei ist uns ein Fehler unterlaufen, den wir inzwischen gefunden und behoben haben; unsere Entwickler haben die Schnittstelle zu Ihrem bisherigen System vollständig überarbeitet. Bis zum 15. März werden wir sämtliche Tests wiederholt und abgeschlossen haben; somit können wir Ihnen als neuen Starttermin Montag, den 22. März, verbindlich zusagen.",
+      "ko": "품목 번호의 약 4퍼센트가 잘못 옮겨진 것으로 드러났습니다. 이 과정에서 저희 쪽에 실수가 있었고, 그 실수는 이제 찾아서 바로잡았습니다. 저희 개발자들은 귀사의 기존 시스템과 연결되는 부분을 전부 손보았습니다. 3월 15일까지는 모든 시험을 다시 하고 끝내 놓겠습니다. 따라서 새 가동일로 3월 22일 월요일을 확실하게 약속드릴 수 있습니다."
     },
     {
-      "de": "Hinsichtlich der entstandenen Unannehmlichkeiten möchten wir Ihnen entgegenkommen: Die für Ihr Lagerpersonal geplante Schulung verlängern wir ohne Berechnung um einen Tag. Zudem wird unser Techniker Herr Mohr in der ersten Woche nach dem Start vor Ort sein. Zwecks Abstimmung der Schulungstermine bitte ich Sie um eine kurze Rückmeldung bis Freitag.",
-      "ko": "이번에 생긴 불편과 관련하여 저희가 성의를 보이고자 합니다. 귀사 창고 직원들을 위해 계획한 교육을 비용을 받지 않고 하루 늘리겠습니다. 또한 저희 기술자 모어 씨가 가동 뒤 첫 주 동안 현장에 머물겠습니다. 교육 날짜를 맞추기 위해 금요일까지 짧게 회신해 주시기를 부탁드립니다."
+      "de": "Als Ausgleich für die entstandenen Unannehmlichkeiten möchten wir Ihnen entgegenkommen, indem wir die für Ihr Lagerpersonal geplante Schulung ohne Berechnung um einen Tag verlängern. Zudem wird unser Techniker Herr Mohr in der ersten Woche nach dem Start vor Ort sein. Hinsichtlich der Schulungstermine bitte ich Sie um eine kurze Rückmeldung bis Freitag.",
+      "ko": "이번에 생긴 불편을 보상하는 뜻에서 저희가 성의를 보이고자 합니다. 귀사 창고 직원들을 위해 계획한 교육을 비용을 받지 않고 하루 늘리겠습니다. 또한 저희 기술자 모어 씨가 가동 뒤 첫 주 동안 현장에 머물겠습니다. 교육 날짜와 관련해서는 금요일까지 짧게 회신해 주시기를 부탁드립니다."
     },
     {
-      "de": "Ich bedaure die Verzögerung sehr und bitte Sie um Ihr Verständnis.",
-      "ko": "일정이 늦어진 점을 매우 유감스럽게 생각하며 양해를 부탁드립니다."
+      "de": "Ich bedaure die Verzögerung sehr und bitte Sie, auch im Namen unserer Geschäftsführung, um Ihr Verständnis.",
+      "ko": "일정이 늦어진 점을 매우 유감스럽게 생각하며, 저희 경영진을 대신해서도 양해를 부탁드립니다."
     },
     {
       "style": "meta",
@@ -56,16 +56,16 @@
       "ko": "베첼 님께"
     },
     {
-      "de": "vielen Dank für Ihre offene Nachricht – begeistert sind wir verständlicherweise nicht. Wir hatten die Umstellung bewusst auf Anfang März gelegt, weil am 31. März unsere Jahresinventur stattfindet. Bezüglich des neuen Termins bleibt uns nun wenig Spielraum: Zwischen Start und Inventur liegen nur noch neun Tage. Während der Inventur darf am System nichts mehr geändert werden. Ein weiterer Aufschub wäre demnach nicht mehr zu verkraften.",
-      "ko": "솔직하게 알려 주셔서 감사합니다. 다만 저희가 반가워하지 않는다는 점은 이해하실 것입니다. 저희는 3월 31일에 연간 재고 조사가 있어서 일부러 전환 시기를 3월 초로 잡았습니다. 새 일정에 관해서는 이제 여유가 거의 없습니다. 가동과 재고 조사 사이가 9일밖에 되지 않습니다. 재고 조사를 하는 동안에는 시스템을 더는 바꾸면 안 됩니다. 그러므로 일정이 한 번 더 미뤄지면 더는 감당할 수 없습니다."
+      "de": "vielen Dank für Ihre offene Nachricht, auch wenn wir über die Verzögerung verständlicherweise nicht begeistert sind. Wir hatten den Starttermin bewusst auf Anfang März gelegt, weil am 31. März unsere Jahresinventur stattfindet; während der Inventur darf am System nichts mehr geändert werden. Bezüglich des neuen Starttermins bleibt uns daher wenig Spielraum, denn zwischen dem Start und der Inventur liegen nur noch neun Tage; eine weitere Verzögerung wäre demnach nicht mehr zu verkraften.",
+      "ko": "솔직하게 알려 주셔서 감사합니다. 다만 일정이 늦어진 것을 저희가 반가워하지 않는다는 점은 이해하실 것입니다. 저희는 3월 31일에 연간 재고 조사가 있어서 일부러 가동일을 3월 초로 잡았습니다. 재고 조사를 하는 동안에는 시스템을 더는 바꾸면 안 됩니다. 그래서 새 가동일에 관해서는 여유가 거의 없습니다. 가동과 재고 조사 사이가 9일밖에 되지 않기 때문입니다. 그러므로 일정이 한 번 더 늦어진다면 더는 감당할 수 없을 것입니다."
     },
     {
-      "de": "Wir sind dennoch bereit, den 22. März zu akzeptieren, allerdings unter drei Bedingungen. Erstens erwarten wir bis Ende dieser Woche eine schriftliche Bestätigung des Termins durch Ihre Geschäftsführung. Zweitens möchten wir jeden Montag einen kurzen Statusbericht erhalten. Drittens gilt bei einer erneuten Verzögerung der vertraglich vereinbarte Preisnachlass von fünf Prozent pro Woche.",
-      "ko": "그래도 저희는 3월 22일을 받아들일 뜻이 있습니다. 다만 세 가지 조건이 있습니다. 첫째, 이번 주 안에 귀사 경영진이 이 날짜를 서면으로 확인해 주시기 바랍니다. 둘째, 매주 월요일에 짧은 진행 상황 보고를 받고 싶습니다. 셋째, 다시 늦어지면 계약서에서 합의한 대로 한 주에 5퍼센트씩 가격을 깎습니다."
+      "de": "Wir sind dennoch bereit, den 22. März als neuen Starttermin zu akzeptieren, allerdings unter drei Bedingungen. Erstens erwarten wir bis Ende dieser Woche eine schriftliche Bestätigung des neuen Starttermins durch Ihre Geschäftsführung. Zweitens möchten wir bis zum Start jeden Montag einen kurzen Zwischenbericht über den Stand der Tests erhalten. Drittens gilt bei einer erneuten Verzögerung der vertraglich vereinbarte Preisnachlass von fünf Prozent pro Woche.",
+      "ko": "그래도 저희는 3월 22일을 새 가동일로 받아들일 뜻이 있습니다. 다만 세 가지 조건이 있습니다. 첫째, 이번 주 안에 귀사 경영진이 새 가동일을 서면으로 확인해 주시기 바랍니다. 둘째, 가동 전까지 매주 월요일에 시험이 어디까지 진행되었는지 짧은 중간 보고를 받고 싶습니다. 셋째, 다시 늦어지면 계약에서 합의한 대로 한 주에 5퍼센트씩 가격 할인이 적용됩니다."
     },
     {
-      "de": "Die Schulung kann am 18. und 19. März in unserem Lager stattfinden. Folglich wird das Personal das System schon kennen, wenn es in Betrieb geht. Bis dahin werden Sie hoffentlich auch die Handscanner eingerichtet haben. Über Herrn Mohrs Unterstützung freuen wir uns. Um die Einzelheiten zu klären, schlage ich ein Telefonat am Donnerstagvormittag vor. Bitte nennen Sie mir dafür eine Uhrzeit, zu der auch Herr Mohr erreichbar ist.",
-      "ko": "교육은 3월 18일과 19일에 저희 창고에서 할 수 있습니다. 따라서 시스템이 가동될 때 직원들은 이미 시스템을 알고 있을 것입니다. 그때까지는 휴대용 스캐너 설정도 끝내 놓으셨기를 바랍니다. 모어 씨가 도와주신다니 반갑습니다. 자세한 내용은 목요일 오전에 전화로 이야기하면 좋겠습니다. 모어 씨도 통화할 수 있는 시간을 알려 주시기 바랍니다."
+      "de": "Wenn Sie, wie angekündigt, bis zum 15. März sämtliche Tests abgeschlossen haben, kann die Schulung für unser Lagerpersonal am 18. und 19. März in unserem Lager stattfinden. Folglich wird das Personal das System bereits kennen, wenn es in Betrieb geht. Bis dahin werden Sie hoffentlich auch die Handscanner eingerichtet haben, die wir für die Inventur brauchen. Was Herrn Mohr betrifft, freuen wir uns über seine Unterstützung in der ersten Woche nach dem Start. Um die Einzelheiten zu klären, schlage ich ein Telefonat am Donnerstagvormittag vor; bitte nennen Sie mir dafür eine Uhrzeit, zu der auch Herr Mohr erreichbar ist.",
+      "ko": "말씀하신 대로 3월 15일까지 모든 시험을 끝내 주신다면, 창고 직원 교육은 3월 18일과 19일에 저희 창고에서 할 수 있습니다. 따라서 시스템이 가동될 때 직원들은 이미 시스템을 알고 있을 것입니다. 그때까지는 재고 조사에 필요한 휴대용 스캐너 설정도 끝내 놓으셨기를 바랍니다. 모어 씨에 관해서는, 가동 뒤 첫 주에 도와주신다니 반갑습니다. 자세한 내용은 목요일 오전에 전화로 이야기하면 좋겠습니다. 모어 씨도 통화할 수 있는 시간을 알려 주시기 바랍니다."
     },
     {
       "style": "meta",
@@ -78,130 +78,140 @@
       "type": "mc",
       "kind": "detail",
       "q": "Warum konnten die Tests erst Mitte Februar beginnen?",
-      "options": ["Der Kunde hatte seine Daten zu spät geschickt.", "Der Zulieferer hatte falsche Teile geliefert.", "Ein nötiges Bauteil war verspätet eingetroffen."],
+      "options": ["Der Kunde hatte seine Bestandsdaten zu spät geschickt.", "Der Zulieferer hatte die falschen Handscanner geliefert.", "Ein benötigtes Bauteil war mit Verspätung eingetroffen."],
       "answer": 2,
       "evidence": "Hinzu kommt, dass uns ein Zulieferer das Modul für die Handscanner drei Wochen später als zugesagt geliefert hat.",
-      "pairs": [["drei Wochen später als zugesagt geliefert", "verspätet eingetroffen"]],
-      "explain": "부품 공급 업체가 스캐너용 모듈을 약속보다 3주 늦게 납품했어요. 그래서 시험을 늦게 시작했어요. 모듈이 잘못된 것이 아니라 늦게 온 것이고, 고객이 자료를 늦게 보냈다는 말은 없어요."
+      "pairs": [["drei Wochen später als zugesagt geliefert", "mit Verspätung eingetroffen"], ["das Modul für die Handscanner", "Ein benötigtes Bauteil"]],
+      "explain": "부품 공급 업체가 스캐너용 모듈을 약속보다 3주 늦게 납품했고, 그 결과(Infolgedessen) 시험을 2월 중순에야 시작했어요. 정답은 Modul을 Bauteil(부품)로, später als zugesagt geliefert를 mit Verspätung eingetroffen(늦게 도착했다)으로 바꿔 말했어요. 공급 업체가 잘못된 스캐너를 보낸 것이 아니라 모듈이 늦게 온 것이고, 고객이 자료를 늦게 보냈다는 말은 없어요."
     },
     {
       "type": "rfn",
-      "kind": "detail",
-      "q": "Frau Wetzel sieht die Schuld für die Verzögerung allein beim Zulieferer.",
+      "kind": "inference",
+      "q": "Frau Wetzel sieht die Verantwortung für die Verzögerung allein beim Zulieferer.",
       "answer": 1,
-      "evidence": "Uns ist dabei ein Fehler unterlaufen, den wir inzwischen gefunden und behoben haben.",
-      "pairs": [["Uns ist dabei ein Fehler unterlaufen", "allein beim Zulieferer"]],
-      "explain": "베첼 씨는 공급 업체의 늦은 납품을 말하지만, 자료를 옮기는 과정에서 자기 회사에도 실수가 있었다고 인정해요. 그러니까 책임이 공급 업체에만 있다고 보지 않아요."
+      "evidence": "Dabei ist uns ein Fehler unterlaufen, den wir inzwischen gefunden und behoben haben",
+      "pairs": [["Dabei ist uns ein Fehler unterlaufen", "allein beim Zulieferer"]],
+      "explain": "베첼 씨는 공급 업체의 늦은 납품을 말하지만, 자료를 옮기는 과정에서 자기 회사에도 실수가 있었다고 인정해요(uns ist ein Fehler unterlaufen). 그러니까 책임이 공급 업체에만 있다고 보지 않아요."
     },
     {
       "type": "mc",
       "kind": "paraphrase",
       "q": "Was bedeutet der Satz „Bis zum 15. März werden wir sämtliche Tests wiederholt und abgeschlossen haben“?",
-      "options": ["Erst am 15. März fangen die neuen Tests an.", "Spätestens am 15. März sind die Tests fertig.", "Nach dem 15. März folgen noch weitere Tests."],
+      "options": ["Erst am 15. März beginnen die Tests noch einmal von vorn.", "Spätestens am 15. März ist die gesamte Prüfung beendet.", "Nach dem 15. März folgen noch weitere Tests im Lager."],
       "answer": 1,
-      "evidence": "Bis zum 15. März werden wir sämtliche Tests wiederholt und abgeschlossen haben.",
-      "pairs": [["Bis zum 15. März", "Spätestens am 15. März"], ["abgeschlossen haben", "sind die Tests fertig"]],
-      "explain": "werden … abgeschlossen haben은 미래완료로, 그 시점까지 이미 끝나 있을 일을 나타내요. 늦어도 3월 15일에는 시험이 모두 끝나 있다는 뜻이에요."
+      "evidence": "Bis zum 15. März werden wir sämtliche Tests wiederholt und abgeschlossen haben",
+      "pairs": [["Bis zum 15. März", "Spätestens am 15. März"], ["sämtliche Tests wiederholt und abgeschlossen haben", "die gesamte Prüfung beendet"]],
+      "explain": "werden … abgeschlossen haben은 미래완료로, 그 시점까지 이미 끝나 있을 일을 나타내요. 늦어도 3월 15일에는 다시 하는 시험까지 모두 끝나 있다는 뜻이에요. 그날 시험을 처음부터 시작하는 것도, 그 뒤에 시험이 더 이어지는 것도 아니에요."
     },
     {
       "type": "mc",
       "kind": "detail",
-      "q": "Womit will die Firma den Kunden entschädigen?",
-      "options": ["mit längerer Schulung und einem Techniker im Haus", "mit einem wöchentlichen Nachlass auf den Kaufpreis", "mit kostenlosen neuen Scannern für das ganze Lager"],
+      "q": "Womit will Nordlicht den Kunden für die Verzögerung entschädigen?",
+      "options": ["mit einem zusätzlichen Kurstag und Hilfe im Lager", "mit einem Preisnachlass von fünf Prozent pro Woche", "mit kostenlosen Handscannern für das ganze Lager"],
       "answer": 0,
-      "evidence": "Die für Ihr Lagerpersonal geplante Schulung verlängern wir ohne Berechnung um einen Tag.",
-      "pairs": [["verlängern wir ohne Berechnung um einen Tag", "mit längerer Schulung"], ["vor Ort", "im Haus"]],
-      "explain": "회사는 교육을 무료로 하루 늘리고, 기술자가 첫 주 동안 현장에 머물게 하겠다고 해요. 한 주에 5퍼센트씩 깎는다는 것은 고객이 답장에서 말한 계약 조건이지 회사가 제안한 보상이 아니에요."
+      "evidence": "indem wir die für Ihr Lagerpersonal geplante Schulung ohne Berechnung um einen Tag verlängern",
+      "pairs": [["die für Ihr Lagerpersonal geplante Schulung ohne Berechnung um einen Tag verlängern", "mit einem zusätzlichen Kurstag"], ["in der ersten Woche nach dem Start vor Ort sein", "Hilfe im Lager"]],
+      "explain": "베첼 씨의 회사는 창고 직원 교육을 무료로 하루 늘리고, 기술자 모어 씨가 가동 뒤 첫 주 동안 현장에 머물게 하겠다고 해요. 정답은 이를 '추가 교육일 하루와 창고 현장 지원'으로 바꿔 말했어요. 한 주에 5퍼센트씩 깎는 것은 탈만 씨가 답장에서 말한 계약 조건이지 회사가 제안한 보상이 아니고, 스캐너를 무료로 준다는 말은 없어요."
     },
     {
       "type": "rfn",
       "kind": "detail",
       "q": "Der ursprüngliche Termin war mit Rücksicht auf die Inventur gewählt worden.",
       "answer": 0,
-      "evidence": "Wir hatten die Umstellung bewusst auf Anfang März gelegt, weil am 31. März unsere Jahresinventur stattfindet.",
-      "pairs": [["bewusst auf Anfang März gelegt, weil", "mit Rücksicht auf die Inventur gewählt"]],
-      "explain": "탈만 씨는 3월 31일에 재고 조사가 있어서 일부러 전환 시기를 3월 초로 잡았다고 해요. 재고 조사를 생각해서 날짜를 골랐다는 뜻이에요."
+      "evidence": "Wir hatten den Starttermin bewusst auf Anfang März gelegt, weil am 31. März unsere Jahresinventur stattfindet",
+      "pairs": [["bewusst auf Anfang März gelegt, weil am 31. März unsere Jahresinventur stattfindet", "mit Rücksicht auf die Inventur gewählt"]],
+      "explain": "탈만 씨는 3월 31일에 연간 재고 조사가 있어서 일부러 가동일을 3월 초로 잡았다고 해요. 재고 조사를 생각해서 날짜를 골랐다는 뜻이에요."
     },
     {
       "type": "mc",
       "kind": "meaning",
       "q": "Was meint Herr Thalmann mit „wenig Spielraum“?",
-      "options": ["Im Lager ist zu wenig Platz für die Schulung.", "Der Zeitplan lässt kaum noch Reserven zu.", "Das Budget für das Projekt ist aufgebraucht."],
+      "options": ["Im Lager ist zu wenig Platz für die Schulung.", "Der Zeitplan lässt kaum noch Reserven übrig.", "Das Budget für das Projekt ist aufgebraucht."],
       "answer": 1,
-      "evidence": "Zwischen Start und Inventur liegen nur noch neun Tage.",
-      "pairs": [["wenig Spielraum", "kaum noch Reserven"]],
-      "explain": "Spielraum은 '움직일 수 있는 여유'라는 뜻이에요. 여기서는 가동일과 재고 조사 사이가 9일밖에 되지 않아 시간 여유가 거의 없다는 말이에요. 공간이나 예산 이야기가 아니에요."
+      "evidence": "denn zwischen dem Start und der Inventur liegen nur noch neun Tage",
+      "pairs": [["wenig Spielraum", "kaum noch Reserven"], ["zwischen dem Start und der Inventur liegen nur noch neun Tage", "Der Zeitplan"]],
+      "explain": "Spielraum은 '움직일 수 있는 여유'라는 뜻이에요. 여기서는 가동일과 재고 조사 사이가 9일밖에 되지 않아 시간 여유가 거의 없다는 말이에요. 창고의 공간이나 예산 이야기가 아니에요."
     },
     {
       "type": "mc",
       "kind": "detail",
       "q": "Welche Bedingung stellt Herr Thalmann?",
-      "options": ["eine tägliche Meldung über den Stand der Tests", "eine mündliche Zusage des Technikers am Telefon", "eine Zusage der Firmenleitung in Schriftform"],
+      "options": ["einen täglichen Bericht über den Stand der Tests", "eine mündliche Zusage des Technikers in einem Telefonat", "eine Zusage der Firmenleitung in schriftlicher Form"],
       "answer": 2,
-      "evidence": "Erstens erwarten wir bis Ende dieser Woche eine schriftliche Bestätigung des Termins durch Ihre Geschäftsführung.",
-      "pairs": [["eine schriftliche Bestätigung des Termins durch Ihre Geschäftsführung", "eine Zusage der Firmenleitung in Schriftform"]],
-      "explain": "탈만 씨는 경영진이 날짜를 서면으로 확인해 주기를 요구해요. Geschäftsführung을 Firmenleitung으로, schriftliche Bestätigung을 Zusage in Schriftform으로 바꿔 말했어요. 진행 상황 보고는 매일이 아니라 매주 월요일이에요."
+      "evidence": "Erstens erwarten wir bis Ende dieser Woche eine schriftliche Bestätigung des neuen Starttermins durch Ihre Geschäftsführung.",
+      "pairs": [["eine schriftliche Bestätigung des neuen Starttermins durch Ihre Geschäftsführung", "eine Zusage der Firmenleitung in schriftlicher Form"]],
+      "explain": "탈만 씨는 경영진이 새 가동일을 서면으로 확인해 주기를 요구해요. Geschäftsführung을 Firmenleitung으로, schriftliche Bestätigung을 Zusage in schriftlicher Form(서면으로 된 약속)으로 바꿔 말했어요. 시험 진행 보고는 매일이 아니라 매주 월요일이고, 기술자와의 통화는 조건이 아니라 자세한 내용을 정하려는 제안이에요."
     },
     {
       "type": "rfn",
       "kind": "detail",
-      "q": "Die Firma Nordlicht hat schon früher einen Preisnachlass an Thalmann Logistik gezahlt.",
+      "q": "Nordlicht hat Thalmann Logistik bei einem früheren Projekt schon einmal einen Preisnachlass gewährt.",
       "answer": 2,
       "evidence": null,
-      "pairs": [["der vertraglich vereinbarte Preisnachlass", "einen Preisnachlass"]],
-      "explain": "글에는 다시 늦어지면 계약대로 가격을 깎는다는 조건만 나와요. 전에 실제로 가격을 깎아 준 적이 있는지는 알 수 없어요."
+      "pairs": [["der vertraglich vereinbarte Preisnachlass", "einen Preisnachlass gewährt"]],
+      "explain": "글에는 다시 늦어지면 계약대로 가격을 깎는다는 조건만 나와요. 두 회사가 전에 다른 프로젝트를 함께 했는지, 그때 가격을 깎아 준 적이 있는지는 알 수 없어요."
     },
     {
       "type": "mc",
       "kind": "intent",
       "q": "Wie lässt sich der Ton von Herrn Thalmanns Antwort beschreiben?",
-      "options": ["sachlich, aber mit klaren Forderungen", "verärgert und ohne jedes Entgegenkommen", "gleichgültig gegenüber dem neuen Termin"],
+      "options": ["sachlich, aber mit deutlichen Forderungen", "verärgert und ohne jedes Entgegenkommen", "gleichgültig gegenüber dem neuen Starttermin"],
       "answer": 0,
-      "evidence": "Wir sind dennoch bereit, den 22. März zu akzeptieren, allerdings unter drei Bedingungen.",
-      "pairs": [["unter drei Bedingungen", "mit klaren Forderungen"]],
-      "explain": "탈만 씨는 반갑지 않다고 하면서도 새 날짜를 받아들이고 교육 날짜와 통화까지 제안해요. 동시에 세 가지 조건을 분명하게 내걸어요. 그래서 차분하지만 요구가 분명한 글이에요."
+      "evidence": "Wir sind dennoch bereit, den 22. März als neuen Starttermin zu akzeptieren, allerdings unter drei Bedingungen.",
+      "pairs": [["allerdings unter drei Bedingungen", "mit deutlichen Forderungen"]],
+      "explain": "탈만 씨는 반갑지 않다고 하면서도 새 날짜를 받아들이고, 교육 날짜와 통화까지 제안해요. 동시에 세 가지 조건을 분명하게 내걸어요. 그래서 차분하지만 요구가 분명한 글이에요. 화가 나서 아무것도 양보하지 않는 것도 아니고, 재고 조사 때문에 날짜가 아주 중요하니 새 가동일에 무관심한 것도 아니에요."
     }
   ],
   "grammar": [
     {
       "title": "결과 접속부사",
       "term": "Konsekutive Konnektoren: infolgedessen, somit, folglich, demnach",
-      "explain": "앞 문장에서 나오는 결과나 결론을 이끄는 부사예요. infolgedessen은 '그 결과로', somit과 folglich는 '따라서', demnach는 '그러므로, 그렇다면'이라는 뜻이에요. deshalb보다 격식 있는 말이라서 업무 편지나 보고서에 자주 써요. 문장 맨 앞에 오면 동사가 바로 뒤따라요.",
+      "explain": "앞 문장에서 나오는 결과나 결론을 이끄는 부사예요. infolgedessen은 '그 결과로', somit과 folglich는 '따라서', demnach는 '그러므로, 그렇다면'이라는 뜻이에요. deshalb보다 격식 있는 말이라서 업무 편지나 보고서에 자주 써요. 문장 맨 앞에 오면 동사가 바로 뒤따르고, demnach처럼 동사 뒤 가운데 자리에 올 수도 있어요.",
       "pattern": "Infolgedessen / Somit / Folglich + 동사 + 주어 … · 주어 + 동사 + demnach …",
       "examples": [
         {
-          "de": "Infolgedessen konnten wir mit den Tests erst Mitte Februar beginnen.",
-          "ko": "그 결과 저희는 2월 중순이 되어서야 시험을 시작할 수 있었습니다.",
+          "de": "Infolgedessen konnten wir mit den Tests erst Mitte Februar beginnen, sodass uns kaum noch Zeit für Korrekturen blieb.",
+          "ko": "그 결과 저희는 2월 중순이 되어서야 시험을 시작할 수 있었고, 오류를 바로잡을 시간이 거의 남지 않았습니다.",
           "mark": ["Infolgedessen"],
-          "parts": [["Infolgedessen", "접속부사"], ["konnten", "동사"], ["wir", "주어"], ["mit den Tests", "전치사 목적어"], ["erst Mitte Februar", "부사어(시간)"], ["beginnen.", "동사(끝)"]]
+          "parts": [["Infolgedessen", "접속부사"], ["konnten", "동사"], ["wir", "주어"], ["mit den Tests", "전치사 목적어"], ["erst Mitte Februar", "부사어(시간)"], ["beginnen,", "동사(끝)"], ["sodass uns kaum noch Zeit für Korrekturen blieb.", "종속절"]]
         },
         {
-          "de": "Ein weiterer Aufschub wäre demnach nicht mehr zu verkraften.",
-          "ko": "그러므로 일정이 한 번 더 미뤄지면 더는 감당할 수 없습니다.",
+          "de": "eine weitere Verzögerung wäre demnach nicht mehr zu verkraften",
+          "ko": "그러므로 일정이 한 번 더 늦어진다면 더는 감당할 수 없을 것입니다.",
           "mark": ["demnach"]
+        },
+        {
+          "de": "somit können wir Ihnen als neuen Starttermin Montag, den 22. März, verbindlich zusagen",
+          "ko": "따라서 새 가동일로 3월 22일 월요일을 확실하게 약속드릴 수 있습니다.",
+          "mark": ["somit"]
+        },
+        {
+          "de": "Folglich wird das Personal das System bereits kennen, wenn es in Betrieb geht.",
+          "ko": "따라서 시스템이 가동될 때 직원들은 이미 시스템을 알고 있을 것입니다.",
+          "mark": ["Folglich"]
         }
       ],
-      "tip": "also와 deshalb는 일상어에 가깝고, folglich, somit, infolgedessen은 글에서 쓰는 말이에요."
+      "tip": "also와 deshalb는 일상어에 가깝고, folglich, somit, infolgedessen은 주로 글에서 쓰는 말이에요. sodass는 부사가 아니라 접속사라서 동사가 끝에 와요: …, sodass uns kaum noch Zeit für Korrekturen blieb."
     },
     {
       "title": "미래완료: 기한까지 끝나 있을 일",
       "term": "Futur II für Fristen (werden + Partizip II + haben/sein)",
-      "explain": "미래의 어느 시점까지 이미 끝나 있을 일은 미래완료로 말해요. werden + 과거분사 + haben 또는 sein 형태예요. 보통 bis + 날짜와 함께 써요. 약속이나 계획을 분명하게 밝히는 느낌을 줘요.",
+      "explain": "미래의 어느 시점까지 이미 끝나 있을 일은 미래완료로 나타낼 수 있어요. werden + 과거분사 + haben 또는 sein 형태예요. 보통 bis + 시점과 함께 써요. 업무 편지에서는 약속이나 계획을 분명하게 밝힐 때 자주 써요.",
       "pattern": "Bis + 시점 + werden + 주어 … + 과거분사 + haben/sein",
       "examples": [
         {
-          "de": "Bis zum 15. März werden wir sämtliche Tests wiederholt und abgeschlossen haben.",
+          "de": "Bis zum 15. März werden wir sämtliche Tests wiederholt und abgeschlossen haben",
           "ko": "3월 15일까지는 모든 시험을 다시 하고 끝내 놓겠습니다.",
           "mark": ["werden", "wiederholt und abgeschlossen haben"],
-          "parts": [["Bis zum 15. März", "부사어(시간)"], ["werden", "동사"], ["wir", "주어"], ["sämtliche Tests", "4격 목적어"], ["wiederholt und abgeschlossen haben.", "동사(끝)"]]
+          "parts": [["Bis zum 15. März", "부사어(시간)"], ["werden", "동사"], ["wir", "주어"], ["sämtliche Tests", "4격 목적어"], ["wiederholt und abgeschlossen haben", "동사(끝)"]]
         },
         {
-          "de": "Bis dahin werden Sie hoffentlich auch die Handscanner eingerichtet haben.",
+          "de": "Bis dahin werden Sie hoffentlich auch die Handscanner eingerichtet haben",
           "ko": "그때까지는 휴대용 스캐너 설정도 끝내 놓으셨기를 바랍니다.",
           "mark": ["werden", "eingerichtet haben"]
         }
       ],
-      "tip": "일상에서는 같은 뜻으로 현재완료도 써요. Bis zum 15. März haben wir die Tests abgeschlossen."
+      "tip": "같은 뜻을 현재완료로 나타내기도 해요. 답장의 Wenn Sie, wie angekündigt, bis zum 15. März sämtliche Tests abgeschlossen haben, …이 그 예예요. 미래완료는 지난 일을 추측할 때도 써요: Er wird den Zug verpasst haben.(그는 기차를 놓쳤을 거예요.)"
     },
     {
       "title": "비인칭 표현: 행위자를 내세우지 않는 말",
@@ -210,71 +220,84 @@
       "pattern": "es kommt zu + 3격 · es stellt sich heraus, dass … · 3격 + unterläuft + 1격",
       "examples": [
         {
-          "de": "Uns ist dabei ein Fehler unterlaufen",
+          "de": "Dabei ist uns ein Fehler unterlaufen",
           "ko": "이 과정에서 저희 쪽에 실수가 있었습니다.",
-          "mark": ["Uns ist", "ein Fehler unterlaufen"],
-          "parts": [["Uns", "3격 목적어"], ["ist", "동사"], ["dabei", "부사어"], ["ein Fehler", "주어"], ["unterlaufen", "동사(끝)"]]
+          "mark": ["uns", "ein Fehler unterlaufen"],
+          "parts": [["Dabei", "부사어"], ["ist", "동사"], ["uns", "3격 목적어"], ["ein Fehler", "주어"], ["unterlaufen", "동사(끝)"]]
         },
         {
-          "de": "Bei den abschließenden Tests ist es zu Fehlern bei der Übernahme Ihrer Bestandsdaten gekommen.",
-          "ko": "마지막 시험 단계에서 귀사의 재고 자료를 옮기는 과정에 오류가 생겼습니다.",
-          "mark": ["ist es zu Fehlern", "gekommen"]
+          "de": "weil es während der abschließenden Tests zu Fehlern bei der Übertragung Ihrer Bestandsdaten gekommen ist",
+          "ko": "마지막 시험 단계에서 귀사의 재고 자료를 옮기는 과정에 오류가 생겼기 때문입니다.",
+          "mark": ["es", "zu Fehlern", "gekommen ist"]
+        },
+        {
+          "de": "Es hat sich herausgestellt, dass rund vier Prozent der Artikelnummern falsch übertragen wurden.",
+          "ko": "품목 번호의 약 4퍼센트가 잘못 옮겨진 것으로 드러났습니다.",
+          "mark": ["Es hat sich herausgestellt"]
         }
       ],
-      "tip": "Wir haben einen Fehler gemacht.라고 하면 책임이 분명해요. Uns ist ein Fehler unterlaufen.은 같은 내용을 더 조심스럽게 말하는 표현이에요."
+      "tip": "Wir haben einen Fehler gemacht.라고 하면 책임이 분명하게 드러나요. Uns ist ein Fehler unterlaufen.은 같은 내용을 더 조심스럽게 말하는 표현이에요. 실수를 인정하는 것은 같아요."
     },
     {
-      "title": "업무 문체의 전치사 bezüglich · hinsichtlich · zwecks",
-      "term": "Präpositionen der Geschäftssprache (+ Genitiv)",
-      "explain": "업무 편지에서 쓰는 2격 지배 전치사예요. bezüglich와 hinsichtlich는 '~에 관하여', zwecks는 '~을 위하여, ~할 목적으로'라는 뜻이에요. 일상어에서는 wegen, zu, für나 종속절로 바꿔 말해요. zwecks 뒤의 명사는 보통 관사 없이 써요.",
-      "pattern": "bezüglich / hinsichtlich + 2격 · zwecks + (관사 없는) 명사",
+      "title": "~에 관해서: bezüglich · hinsichtlich · was … betrifft",
+      "term": "Themenangabe: bezüglich, hinsichtlich (+ Genitiv) und was … betrifft",
+      "explain": "업무 메일에서는 무엇에 관한 이야기인지를 문장 맨 앞에서 먼저 밝히는 경우가 많아요. bezüglich와 hinsichtlich는 2격과 함께 쓰는 전치사로, '~에 관해서, ~와 관련해서'라는 뜻이에요. 같은 뜻을 부문장 was … betrifft로도 나타낼 수 있어요. 이때 주제가 되는 명사는 betreffen의 목적어라서 4격으로 써요: Was Herrn Mohr betrifft. 이 부문장이 1번 자리에 오면 주문장의 동사가 바로 뒤에 와요.",
+      "pattern": "Bezüglich / Hinsichtlich + 2격 + 동사 + 주어 … · Was + 4격 + betrifft, + 동사 + 주어 …",
       "examples": [
         {
-          "de": "Bezüglich des neuen Termins bleibt uns nun wenig Spielraum",
-          "ko": "새 일정에 관해서는 이제 여유가 거의 없습니다.",
-          "mark": ["Bezüglich des neuen Termins"]
+          "de": "Bezüglich des neuen Starttermins bleibt uns daher wenig Spielraum",
+          "ko": "그래서 새 가동일에 관해서는 여유가 거의 없습니다.",
+          "mark": ["Bezüglich des neuen Starttermins"],
+          "parts": [["Bezüglich des neuen Starttermins", "부사어"], ["bleibt", "동사"], ["uns", "3격 목적어"], ["daher", "접속부사"], ["wenig Spielraum", "주어"]]
         },
         {
-          "de": "Zwecks Abstimmung der Schulungstermine bitte ich Sie um eine kurze Rückmeldung bis Freitag.",
-          "ko": "교육 날짜를 맞추기 위해 금요일까지 짧게 회신해 주시기를 부탁드립니다.",
-          "mark": ["Zwecks Abstimmung"]
+          "de": "Hinsichtlich der Schulungstermine bitte ich Sie um eine kurze Rückmeldung bis Freitag.",
+          "ko": "교육 날짜와 관련해서는 금요일까지 짧게 회신해 주시기를 부탁드립니다.",
+          "mark": ["Hinsichtlich der Schulungstermine"],
+          "parts": [["Hinsichtlich der Schulungstermine", "부사어"], ["bitte", "동사"], ["ich", "주어"], ["Sie", "4격 목적어"], ["um eine kurze Rückmeldung", "전치사 목적어"], ["bis Freitag.", "부사어(시간)"]]
+        },
+        {
+          "de": "Was Herrn Mohr betrifft, freuen wir uns über seine Unterstützung in der ersten Woche nach dem Start.",
+          "ko": "모어 씨에 관해서는, 가동 뒤 첫 주에 도와주신다니 반갑습니다.",
+          "mark": ["Was Herrn Mohr betrifft"],
+          "parts": [["Was Herrn Mohr betrifft,", "종속절"], ["freuen", "동사"], ["wir", "주어"], ["uns", "재귀대명사"], ["über seine Unterstützung in der ersten Woche nach dem Start.", "전치사 목적어"]]
         }
       ],
-      "tip": "이런 전치사는 문장을 짧게 만들지만 딱딱하게 들려요. 말할 때는 Um die Termine abzustimmen, …처럼 풀어서 말하는 것이 자연스러워요."
+      "tip": "bezüglich와 hinsichtlich는 주로 업무 글에서 쓰는 딱딱한 말이에요. 말할 때나 덜 격식 있는 메일에서는 was … betrifft나 in Bezug auf + 4격을 더 자주 써요: In Bezug auf die Schulungstermine bitte ich Sie …"
     }
   ],
   "vocab": [
     { "de": "die Verzögerung, -en", "ko": "지연" },
     { "de": "mit|teilen", "ko": "알리다" },
     { "de": "vereinbaren", "ko": "합의하다, 약속하다" },
-    { "de": "die Übernahme, -n", "ko": "넘겨받기, 이전" },
+    { "de": "die Übertragung, -en", "ko": "(자료의) 이전, 옮기기" },
     { "de": "der Zulieferer, -", "ko": "부품 공급 업체" },
     { "de": "beheben (behebt, behob, hat behoben)", "ko": "(문제를) 바로잡다, 없애다" },
+    { "de": "die Schnittstelle, -n", "ko": "(시스템의) 연결 부분, 인터페이스" },
     { "de": "sämtlich", "ko": "모든, 전부의" },
     { "de": "verbindlich", "ko": "확실히 약속하는, 구속력 있는" },
     { "de": "die Unannehmlichkeit, -en", "ko": "불편" },
     { "de": "entgegen|kommen (kommt entgegen, kam entgegen, ist entgegengekommen) + Dat.", "ko": "~의 사정을 봐주다, 성의를 보이다" },
     { "de": "die Schulung, -en", "ko": "교육, 연수" },
-    { "de": "die Abstimmung, -en", "ko": "조율, 맞추기" },
+    { "de": "der Ausgleich (Sg.)", "ko": "보상, (손해를) 메워 줌" },
     { "de": "die Rückmeldung, -en", "ko": "회신" },
     { "de": "die Inventur, -en", "ko": "재고 조사" },
     { "de": "der Spielraum, -¨e", "ko": "여유, 움직일 틈" },
-    { "de": "der Aufschub, -¨e", "ko": "연기, 미룸" },
     { "de": "verkraften", "ko": "감당하다, 견뎌 내다" },
     { "de": "der Preisnachlass, -¨e", "ko": "가격 할인" }
   ],
   "phrases": [
     {
       "de": "einen Termin halten",
-      "ko": "기한을 지키다",
+      "ko": "약속한 날짜를 지키다",
       "ex": "dass wir den vereinbarten Starttermin am 1. März nicht halten können",
       "exko": "약속한 3월 1일 가동 일정을 지킬 수 없게 되었습니다."
     },
     {
       "de": "es kommt zu + Dat.",
       "ko": "~이 일어나다",
-      "ex": "Bei den abschließenden Tests ist es zu Fehlern bei der Übernahme Ihrer Bestandsdaten gekommen.",
-      "exko": "마지막 시험 단계에서 귀사의 재고 자료를 옮기는 과정에 오류가 생겼습니다."
+      "ex": "weil es während der abschließenden Tests zu Fehlern bei der Übertragung Ihrer Bestandsdaten gekommen ist",
+      "exko": "마지막 시험 단계에서 귀사의 재고 자료를 옮기는 과정에 오류가 생겼기 때문입니다."
     },
     {
       "de": "vor Ort sein",
@@ -283,21 +306,21 @@
       "exko": "또한 저희 기술자 모어 씨가 가동 뒤 첫 주 동안 현장에 머물겠습니다."
     },
     {
-      "de": "um Verständnis bitten",
-      "ko": "양해를 구하다",
-      "ex": "Ich bedaure die Verzögerung sehr und bitte Sie um Ihr Verständnis.",
-      "exko": "일정이 늦어진 점을 매우 유감스럽게 생각하며 양해를 부탁드립니다."
+      "de": "jdn. um Verständnis bitten",
+      "ko": "~에게 양해를 구하다",
+      "ex": "Ich bedaure die Verzögerung sehr und bitte Sie, auch im Namen unserer Geschäftsführung, um Ihr Verständnis.",
+      "exko": "일정이 늦어진 점을 매우 유감스럽게 생각하며, 저희 경영진을 대신해서도 양해를 부탁드립니다."
     },
     {
       "de": "unter einer Bedingung",
       "ko": "조건을 달고",
-      "ex": "Wir sind dennoch bereit, den 22. März zu akzeptieren, allerdings unter drei Bedingungen.",
-      "exko": "그래도 저희는 3월 22일을 받아들일 뜻이 있습니다. 다만 세 가지 조건이 있습니다."
+      "ex": "Wir sind dennoch bereit, den 22. März als neuen Starttermin zu akzeptieren, allerdings unter drei Bedingungen.",
+      "exko": "그래도 저희는 3월 22일을 새 가동일로 받아들일 뜻이 있습니다. 다만 세 가지 조건이 있습니다."
     },
     {
       "de": "in Betrieb gehen",
       "ko": "가동을 시작하다",
-      "ex": "Folglich wird das Personal das System schon kennen, wenn es in Betrieb geht.",
+      "ex": "Folglich wird das Personal das System bereits kennen, wenn es in Betrieb geht.",
       "exko": "따라서 시스템이 가동될 때 직원들은 이미 시스템을 알고 있을 것입니다."
     }
   ]

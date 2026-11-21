@@ -11,33 +11,33 @@
   "paragraphs": [
     {
       "label": "Arzthelferin",
-      "de": "Guten Morgen! Was kann ich für Sie tun?",
-      "ko": "안녕하세요! 무엇을 도와드릴까요?"
+      "de": "Guten Morgen, was kann ich für Sie tun?",
+      "ko": "안녕하세요, 무엇을 도와드릴까요?"
     },
     {
       "label": "Frau Dahlke",
-      "de": "Guten Morgen, mein Name ist Greta Dahlke. Ich habe leider keinen Termin, aber ich bin krank. Mir tut der Kopf sehr weh.",
-      "ko": "안녕하세요, 제 이름은 그레타 달케예요. 예약은 못 했지만 몸이 아파요. 머리가 많이 아파요."
+      "de": "Guten Morgen, mein Name ist Greta Dahlke. Ich habe leider keinen Termin, aber mir tut der Kopf sehr weh.",
+      "ko": "안녕하세요, 제 이름은 그레타 달케예요. 아쉽게도 예약은 없지만 머리가 많이 아파요."
     },
     {
       "label": "Arzthelferin",
-      "de": "Oh, das tut mir leid. Seit wann haben Sie Kopfschmerzen?",
+      "de": "Oh, das tut mir leid. Seit wann haben Sie denn Kopfschmerzen?",
       "ko": "아, 안됐네요. 언제부터 두통이 있으셨어요?"
     },
     {
       "label": "Frau Dahlke",
-      "de": "Seit zwei Tagen. Und seit gestern Abend habe ich auch Fieber und Schnupfen.",
-      "ko": "이틀 전부터요. 그리고 어제 저녁부터는 열도 나고 콧물도 나요."
+      "de": "Seit zwei Tagen, und seit gestern Nachmittag habe ich auch Fieber und Schnupfen. Die Medikamente aus der Apotheke helfen leider nicht.",
+      "ko": "이틀 전부터요. 그리고 어제 오후부터는 열도 나고 콧물도 나요. 약국에서 산 약은 아쉽게도 듣지 않아요."
     },
     {
       "label": "Arzthelferin",
-      "de": "Haben Sie auch Husten? Tut Ihnen der Hals weh?",
-      "ko": "기침도 하세요? 목은 아프세요?"
+      "de": "Haben Sie auch Husten, oder tut Ihnen der Hals weh?",
+      "ko": "기침도 하세요, 아니면 목이 아프세요?"
     },
     {
       "label": "Frau Dahlke",
-      "de": "Nein, Husten habe ich nicht. Aber der Hals tut mir ein bisschen weh.",
-      "ko": "아니요, 기침은 안 해요. 그런데 목이 조금 아파요."
+      "de": "Husten habe ich nicht, aber ein bisschen Halsschmerzen.",
+      "ko": "기침은 안 하지만 목이 조금 아파요."
     },
     {
       "label": "Arzthelferin",
@@ -46,82 +46,82 @@
     },
     {
       "label": "Frau Dahlke",
-      "de": "Nein, ich bin seit drei Jahren Patientin bei Dr. Rieger. Hier ist meine Versichertenkarte.",
+      "de": "Nein, ich bin seit drei Jahren Patientin bei Dr. Rieger, und hier ist meine Versichertenkarte.",
       "ko": "아니요, 3년 전부터 리거 선생님께 진료를 받고 있어요. 여기 제 건강보험 카드예요."
     },
     {
       "label": "Arzthelferin",
-      "de": "Danke. Dr. Rieger hat heute sehr viele Patienten. Sie müssen ungefähr eine Stunde warten.",
-      "ko": "감사합니다. 리거 선생님은 오늘 환자가 아주 많아요. 한 시간쯤 기다리셔야 해요."
+      "de": "Danke! Dr. Rieger hat heute Vormittag sehr viele Patienten, und ohne Termin müssen Sie ungefähr eine Stunde warten.",
+      "ko": "감사합니다! 리거 선생님은 오늘 오전에 환자가 아주 많아서, 예약이 없으시면 한 시간쯤 기다리셔야 해요."
     },
     {
       "label": "Frau Dahlke",
-      "de": "Eine Stunde? Na gut, dann warte ich. Darf ich ein Glas Wasser haben?",
-      "ko": "한 시간이요? 음, 알겠어요. 그럼 기다릴게요. 물 한 잔 마셔도 될까요?"
+      "de": "Kein Problem, dann warte ich – darf ich bitte ein Glas Wasser trinken?",
+      "ko": "괜찮아요, 그럼 기다릴게요. 물 한 잔 마셔도 될까요?"
     },
     {
       "label": "Arzthelferin",
-      "de": "Natürlich. Wasser und Gläser stehen im Wartezimmer, hier links. Gute Besserung!",
-      "ko": "물론이죠. 물과 컵은 여기 왼쪽 대기실에 있어요. 빨리 나으세요!"
+      "de": "Natürlich, Wasser und Gläser stehen im Wartezimmer links neben dem Eingang. Gute Besserung!",
+      "ko": "물론이죠. 물과 컵은 대기실 안 입구 왼쪽 옆에 있어요. 빨리 나으세요!"
     }
   ],
   "questions": [
     {
       "type": "rf",
-      "kind": "detail",
-      "q": "Frau Dahlke kommt ohne Termin in die Praxis.",
+      "kind": "inference",
+      "q": "Das Fieber ist erst nach den Kopfschmerzen gekommen.",
       "answer": 0,
-      "evidence": "Ich habe leider keinen Termin, aber ich bin krank.",
-      "pairs": [["keinen Termin", "ohne Termin"]],
-      "explain": "달케 씨는 예약이 없다고(keinen Termin) 말해요. 문제 문장에서는 이것을 ohne Termin(예약 없이)으로 바꿔 말했어요. 그래서 맞는 문장이에요."
+      "evidence": "Seit zwei Tagen, und seit gestern Nachmittag habe ich auch Fieber",
+      "pairs": [["Seit zwei Tagen", "nach den Kopfschmerzen"], ["seit gestern Nachmittag habe ich auch Fieber", "Das Fieber ist erst"]],
+      "explain": "언제부터 두통이 있었는지 묻자 달케 씨는 Seit zwei Tagen(이틀 전부터)이라고 대답해요. 열은 어제 오후부터 난다고 해요(seit gestern Nachmittag habe ich auch Fieber). 두통이 이틀 전에 먼저 시작되었고, 열은 그 뒤에 났어요. 그래서 맞는 문장이에요."
     },
     {
       "type": "mc",
-      "kind": "detail",
-      "q": "Was ist richtig?",
-      "options": ["Zuerst hatte sie Kopfschmerzen, dann Fieber.", "Zuerst hatte sie Fieber, dann Kopfschmerzen.", "Zuerst hatte sie Schnupfen, dann Kopfschmerzen."],
+      "kind": "inference",
+      "q": "Was hat Frau Dahlke schon vor dem Gespräch gemacht?",
+      "options": ["Sie hat schon etwas gegen die Schmerzen genommen.", "Sie hat schon einen Termin für heute gemacht.", "Sie hat im Wartezimmer ein Glas Wasser getrunken."],
       "answer": 0,
-      "evidence": "Seit zwei Tagen. Und seit gestern Abend habe ich auch Fieber und Schnupfen.",
-      "pairs": [["Seit zwei Tagen.", "Zuerst hatte sie Kopfschmerzen"], ["seit gestern Abend habe ich auch Fieber", "dann Fieber"]],
-      "explain": "두통은 이틀 전부터(seit zwei Tagen), 열과 콧물은 어제 저녁부터(seit gestern Abend) 있어요. 그러니까 두통이 먼저 시작됐고 열은 나중에 났어요. 콧물(Schnupfen)도 어제 저녁에 시작돼서 두통보다 늦어요."
+      "evidence": "Die Medikamente aus der Apotheke helfen leider nicht.",
+      "pairs": [["Die Medikamente aus der Apotheke", "etwas gegen die Schmerzen"], ["helfen leider nicht", "schon etwas gegen die Schmerzen genommen"]],
+      "explain": "달케 씨는 약국에서 산 약이 듣지 않는다고 해요(Die Medikamente aus der Apotheke helfen leider nicht). 약이 듣지 않는다는 것을 알려면 먼저 약을 먹어 봐야 해요. 그러니까 달케 씨는 병원에 오기 전에 이미 아픈 데 먹는 약(etwas gegen die Schmerzen)을 먹었어요. 예약은 하지 않았고, 물은 이 대화가 끝난 뒤에 마셔요."
     },
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Frau Dahlke hat keine Schmerzen im Hals.",
+      "q": "Frau Dahlke hat Husten, aber keine Halsschmerzen.",
       "answer": 1,
-      "evidence": "Aber der Hals tut mir ein bisschen weh.",
-      "pairs": [["der Hals tut mir ein bisschen weh", "keine Schmerzen im Hals"]],
-      "explain": "달케 씨는 기침은 안 하지만 목은 조금 아프다고 해요(der Hals tut mir ein bisschen weh). Husten habe ich nicht만 보고 목도 안 아프다고 생각하면 틀려요."
+      "evidence": "Husten habe ich nicht, aber ein bisschen Halsschmerzen.",
+      "pairs": [["Husten habe ich nicht", "hat Husten"], ["aber ein bisschen Halsschmerzen", "aber keine Halsschmerzen"]],
+      "explain": "달케 씨는 기침은 안 하지만 목은 조금 아프다고 해요(Husten habe ich nicht, aber ein bisschen Halsschmerzen). 문제 문장은 기침과 목 통증을 반대로 말했어요. 그래서 틀린 문장이에요."
     },
     {
       "type": "rf",
       "kind": "detail",
-      "q": "Frau Dahlke ist heute zum ersten Mal in dieser Praxis.",
+      "q": "Frau Dahlke kennt Dr. Rieger noch nicht.",
       "answer": 1,
-      "evidence": "Nein, ich bin seit drei Jahren Patientin bei Dr. Rieger.",
-      "pairs": [["seit drei Jahren", "zum ersten Mal"]],
-      "explain": "달케 씨는 3년 전부터(seit drei Jahren) 리거 선생님의 환자예요. 그래서 Sind Sie neu bei uns?(처음 오셨어요?)라는 질문에 Nein이라고 대답해요. 처음 온 것이 아니에요."
+      "evidence": "ich bin seit drei Jahren Patientin bei Dr. Rieger",
+      "pairs": [["seit drei Jahren Patientin bei Dr. Rieger", "kennt Dr. Rieger noch nicht"]],
+      "explain": "직원이 처음 왔는지 묻자(Sind Sie neu bei uns?) 달케 씨는 3년 전부터 리거 선생님의 환자라고 대답해요(seit drei Jahren Patientin bei Dr. Rieger). 그러니까 달케 씨는 리거 선생님을 이미 알아요. 그래서 틀린 문장이에요."
     },
     {
       "type": "mc",
       "kind": "meaning",
-      "q": "Was bedeutet „Gute Besserung!“ im Text?",
-      "options": ["Ich hoffe, Sie warten nicht zu lange.", "Ich hoffe, das Wasser schmeckt Ihnen.", "Ich hoffe, Sie sind bald wieder gesund."],
+      "q": "Was meint Frau Dahlke mit „Kein Problem“?",
+      "options": ["Sie hat jetzt keine Kopfschmerzen mehr.", "Sie möchte nicht so lange warten.", "Das Warten ist für sie in Ordnung."],
       "answer": 2,
-      "evidence": "Gute Besserung!",
-      "pairs": [["Gute Besserung!", "Sie sind bald wieder gesund"]],
-      "explain": "Gute Besserung!은 아픈 사람에게 '빨리 나으세요'라고 하는 인사예요. bald wieder gesund(곧 다시 건강한)가 같은 뜻이에요. 기다리는 시간과 물은 본문에 나오지만 이 인사의 뜻과는 관계가 없어요."
+      "evidence": "Kein Problem, dann warte ich",
+      "pairs": [["Kein Problem, dann warte ich", "Das Warten ist für sie in Ordnung"]],
+      "explain": "직원이 한 시간쯤 기다려야 한다고 하자 달케 씨는 Kein Problem이라고 하고 기다리겠다고 해요(dann warte ich). Kein Problem은 '괜찮아요, 문제없어요'라는 뜻이에요. 그러니까 기다리는 것은 달케 씨에게 괜찮아요. 아픈 곳이 다 나았다는 뜻도 아니고, 오래 기다리기 싫다는 뜻도 아니에요."
     },
     {
       "type": "mc",
       "kind": "gist",
       "q": "Worum geht es in dem Gespräch?",
-      "options": ["Eine Frau macht am Telefon einen Termin für morgen.", "Eine kranke Frau meldet sich an und wartet dann.", "Eine Arzthelferin hat Fieber und möchte nach Hause."],
+      "options": ["Eine Patientin holt Medikamente in der Apotheke.", "Eine kranke Frau kommt ohne Termin und wartet.", "Dr. Rieger ist krank, und viele Patienten warten."],
       "answer": 1,
-      "evidence": "Ich habe leider keinen Termin, aber ich bin krank.",
-      "pairs": [["ich bin krank", "Eine kranke Frau"], ["dann warte ich", "wartet dann"]],
-      "explain": "아픈 달케 씨가 예약 없이 병원에 와서 접수하고 기다리는 대화예요. 두 사람은 전화가 아니라 접수처에서 직접 이야기하고, 열이 나는 사람은 직원이 아니라 달케 씨예요."
+      "evidence": "Ich habe leider keinen Termin, aber mir tut der Kopf sehr weh.",
+      "pairs": [["Ich habe leider keinen Termin", "kommt ohne Termin"], ["dann warte ich", "und wartet"]],
+      "explain": "몸이 아픈 달케 씨가 예약 없이 병원에 와서 접수하고, 한 시간쯤 기다리기로 하는 대화예요. 약국 이야기는 달케 씨가 전에 산 약에 대한 말이고, 아픈 사람은 리거 선생님이 아니라 달케 씨예요."
     }
   ],
   "grammar": [
@@ -129,96 +129,89 @@
       "title": "wehtun – 어디가 아픈지 말하기",
       "term": "wehtun + Dativ",
       "explain": "아픈 곳을 말할 때 wehtun을 써요. 아픈 신체 부위가 주어이고, 아픈 사람은 3격(mir, Ihnen)으로 나타내요. 그래서 '저는 머리가 아파요'는 Mir tut der Kopf weh.예요. wehtun은 분리동사라서 tut는 2번 자리에, weh는 문장 끝에 와요. 예/아니요 의문문에서는 tut가 맨 앞에 와요(Tut Ihnen der Hals weh?).",
-      "pattern": "Mir/Ihnen + tut + 신체 부위(주어) + weh",
+      "pattern": "mir / Ihnen + tut + 신체 부위(주어) + weh",
       "examples": [
         {
-          "de": "Mir tut der Kopf sehr weh.",
-          "ko": "머리가 많이 아파요.",
-          "mark": ["Mir tut", "weh"],
-          "parts": [["Mir", "3격 목적어"], ["tut", "동사"], ["der Kopf", "주어"], ["sehr", "부사어"], ["weh.", "동사(끝)"]]
+          "de": "Ich habe leider keinen Termin, aber mir tut der Kopf sehr weh.",
+          "ko": "아쉽게도 예약은 없지만 머리가 많이 아파요.",
+          "mark": ["mir tut", "weh"],
+          "parts": [["Ich", "주어"], ["habe", "동사"], ["leider", "부사어"], ["keinen Termin,", "4격 목적어"], ["aber", "접속사"], ["mir", "3격 목적어"], ["tut", "동사"], ["der Kopf", "주어"], ["sehr", "부사어(방법)"], ["weh.", "동사(끝)"]]
         },
         {
-          "de": "Tut Ihnen der Hals weh?",
-          "ko": "목은 아프세요?",
-          "mark": ["Tut Ihnen", "weh"],
-          "parts": [["Tut", "동사"], ["Ihnen", "3격 목적어"], ["der Hals", "주어"], ["weh?", "동사(끝)"]]
-        },
-        {
-          "de": "Aber der Hals tut mir ein bisschen weh.",
-          "ko": "그런데 목이 조금 아파요.",
-          "mark": ["tut mir", "weh"]
+          "de": "Haben Sie auch Husten, oder tut Ihnen der Hals weh?",
+          "ko": "기침도 하세요, 아니면 목이 아프세요?",
+          "mark": ["tut Ihnen", "weh"],
+          "parts": [["Haben", "동사"], ["Sie", "주어"], ["auch", "기타"], ["Husten,", "4격 목적어"], ["oder", "접속사"], ["tut", "동사"], ["Ihnen", "3격 목적어"], ["der Hals", "주어"], ["weh?", "동사(끝)"]]
         }
       ],
-      "tip": "Ich tue Kopf weh처럼 사람을 주어로 쓰면 틀려요. 신체 부위가 복수이면 동사도 복수형이에요(Mir tun die Füße weh). Das tut mir leid.(안됐네요)도 tun과 3격을 쓰지만 아픔이 아니라 유감을 말하는 표현이에요."
+      "tip": "Ich tue Kopf weh처럼 사람을 주어로 쓰면 틀려요. 신체 부위가 복수이면 동사도 복수형이에요(Mir tun die Füße weh). Kopfschmerzen, Halsschmerzen처럼 -schmerzen으로 끝나는 명사를 haben과 함께 써도 같은 뜻이 돼요(Ich habe Kopfschmerzen)."
     },
     {
       "title": "seit – 언제부터인지 말하기",
       "term": "seit + Zeitangabe",
-      "explain": "seit는 '~부터, ~ 전부터'라는 뜻이에요. 과거에 시작해서 지금도 계속되는 일을 말해요. 이때 독일어에서는 현재형을 써요. seit 뒤의 명사는 3격이라서 복수 명사에 -n이 붙어요(zwei Tage → seit zwei Tagen). 시작한 때를 물을 때는 Seit wann …?이라고 해요.",
+      "explain": "seit는 '~부터, ~ 전부터'라는 뜻이에요. 과거에 시작해서 지금도 계속되는 일을 말해요. 이때 독일어에서는 현재형을 써요. seit 뒤의 명사는 3격이라서 복수 명사에 -n이 붙어요(zwei Tage → seit zwei Tagen, drei Jahre → seit drei Jahren). 시작한 때를 물을 때는 Seit wann …?이라고 해요.",
       "pattern": "seit + 3격 시간 표현 · 동사는 현재형",
       "examples": [
         {
-          "de": "Seit wann haben Sie Kopfschmerzen?",
+          "de": "Seit wann haben Sie denn Kopfschmerzen?",
           "ko": "언제부터 두통이 있으셨어요?",
           "mark": ["Seit wann"],
-          "parts": [["Seit wann", "의문사"], ["haben", "동사"], ["Sie", "주어"], ["Kopfschmerzen?", "4격 목적어"]]
+          "parts": [["Seit wann", "의문사"], ["haben", "동사"], ["Sie", "주어"], ["denn", "기타"], ["Kopfschmerzen?", "4격 목적어"]]
         },
         {
-          "de": "Und seit gestern Abend habe ich auch Fieber und Schnupfen.",
-          "ko": "그리고 어제 저녁부터는 열도 나고 콧물도 나요.",
-          "mark": ["seit gestern Abend"],
-          "parts": [["Und", "접속사"], ["seit gestern Abend", "부사어(시간)"], ["habe", "동사"], ["ich", "주어"], ["auch", "기타"], ["Fieber und Schnupfen.", "4격 목적어"]]
+          "de": "Seit zwei Tagen, und seit gestern Nachmittag habe ich auch Fieber und Schnupfen.",
+          "ko": "이틀 전부터요. 그리고 어제 오후부터는 열도 나고 콧물도 나요.",
+          "mark": ["Seit zwei Tagen", "seit gestern Nachmittag"]
         },
         {
-          "de": "Nein, ich bin seit drei Jahren Patientin bei Dr. Rieger.",
-          "ko": "아니요, 3년 전부터 리거 선생님께 진료를 받고 있어요.",
+          "de": "Nein, ich bin seit drei Jahren Patientin bei Dr. Rieger, und hier ist meine Versichertenkarte.",
+          "ko": "아니요, 3년 전부터 리거 선생님께 진료를 받고 있어요. 여기 제 건강보험 카드예요.",
           "mark": ["bin seit drei Jahren"]
         }
       ],
-      "tip": "seit drei Jahren은 지금까지 계속되는 일이라서 독일어에서는 과거형이나 현재완료가 아니라 현재형을 써요(Ich bin seit drei Jahren Patientin). seit 뒤에 gestern Abend 같은 부사가 오면 형태가 바뀌지 않아요."
+      "tip": "seit drei Jahren은 지금까지 계속되는 일이라서 과거형이나 현재완료가 아니라 현재형을 써요(Ich bin seit drei Jahren Patientin). seit 뒤에 gestern Nachmittag 같은 부사가 오면 형태가 바뀌지 않아요. 질문에는 Seit zwei Tagen.처럼 시간 표현만으로 짧게 대답할 수도 있어요."
     },
     {
       "title": "증상 명사 – 관사 없이 쓰기",
       "term": "Nomen ohne Artikel bei Krankheiten",
-      "explain": "Fieber, Husten, Schnupfen, Kopfschmerzen 같은 증상은 haben과 함께 쓸 때 보통 관사를 붙이지 않아요. Ich habe Fieber.처럼 말하고, ein Fieber나 einen Husten이라고 하지 않아요. Kopfschmerzen은 보통 복수형으로 써요.",
-      "pattern": "haben + 증상 명사 (관사 없음)",
+      "explain": "Fieber, Husten, Schnupfen, Kopfschmerzen 같은 증상은 haben과 함께 쓸 때 보통 관사 없이 써요(Ich habe Fieber). Schnupfen은 einen Schnupfen haben처럼 관사를 붙여 말하기도 해요. Kopfschmerzen과 Halsschmerzen은 보통 복수형으로 써요. ohne Termin처럼 ohne 뒤에서도 관사 없이 쓰는 명사가 많아요.",
+      "pattern": "haben + 증상 명사 (관사 없음) · ohne + 명사",
       "examples": [
         {
-          "de": "Haben Sie auch Husten?",
-          "ko": "기침도 하세요?",
-          "mark": ["Husten"],
-          "parts": [["Haben", "동사"], ["Sie", "주어"], ["auch", "기타"], ["Husten?", "4격 목적어"]]
+          "de": "Husten habe ich nicht, aber ein bisschen Halsschmerzen.",
+          "ko": "기침은 안 하지만 목이 조금 아파요.",
+          "mark": ["Husten habe ich nicht", "ein bisschen Halsschmerzen"],
+          "parts": [["Husten", "4격 목적어"], ["habe", "동사"], ["ich", "주어"], ["nicht,", "부정어"], ["aber", "접속사"], ["ein bisschen Halsschmerzen.", "4격 목적어"]]
         },
         {
-          "de": "Nein, Husten habe ich nicht.",
-          "ko": "아니요, 기침은 안 해요.",
-          "mark": ["Husten habe ich nicht"],
-          "parts": [["Nein,", "기타"], ["Husten", "4격 목적어"], ["habe", "동사"], ["ich", "주어"], ["nicht.", "부정어"]]
+          "de": "Dr. Rieger hat heute Vormittag sehr viele Patienten, und ohne Termin müssen Sie ungefähr eine Stunde warten.",
+          "ko": "리거 선생님은 오늘 오전에 환자가 아주 많아서, 예약이 없으시면 한 시간쯤 기다리셔야 해요.",
+          "mark": ["ohne Termin"]
         }
       ],
-      "tip": "부정할 때는 보통 kein을 써요(Ich habe kein Fieber, Ich habe keinen Husten). 본문의 Husten habe ich nicht.는 Husten을 1번 자리에 두어 '기침은'이라고 강조한 문장이에요. 형용사가 붙으면 관사를 쓸 수 있어요(einen starken Husten)."
+      "tip": "부정할 때는 보통 kein을 써요(Ich habe kein Fieber, Ich habe keinen Husten). 본문의 Husten habe ich nicht.는 Husten을 1번 자리에 두어 '기침은'이라고 강조한 문장이에요. ein bisschen은 '조금'이라는 뜻이고 관사가 아니에요."
     }
   ],
   "vocab": [
-    { "de": "der Kopf, -¨e", "ko": "머리" },
     { "de": "der Hals, -¨e", "ko": "목" },
-    { "de": "weh|tun (tut weh, tat weh, hat wehgetan)", "ko": "(신체 부위가) 아프다" },
+    { "de": "weh|tun (tut weh, tat weh, hat wehgetan) + Dat.", "ko": "(신체 부위가) 아프다" },
     { "de": "die Kopfschmerzen (Pl.)", "ko": "두통" },
-    { "de": "das Fieber (Sg.)", "ko": "열" },
+    { "de": "die Halsschmerzen (Pl.)", "ko": "목 통증, 인후통" },
     { "de": "der Husten (Sg.)", "ko": "기침" },
     { "de": "der Schnupfen (Sg.)", "ko": "코감기, 콧물" },
+    { "de": "das Fieber (Sg.)", "ko": "열" },
+    { "de": "das Medikament, -e", "ko": "약" },
+    { "de": "die Apotheke, -n", "ko": "약국" },
     { "de": "der Termin, -e", "ko": "(진료) 예약, 약속" },
-    { "de": "die Patientin, -nen", "ko": "(여자) 환자" },
     { "de": "die Versichertenkarte, -n", "ko": "건강보험 카드" },
-    { "de": "das Wartezimmer, -", "ko": "대기실" },
-    { "de": "ungefähr", "ko": "대략, 약" }
+    { "de": "das Wartezimmer, -", "ko": "대기실" }
   ],
   "phrases": [
     {
       "de": "Was kann ich für Sie tun?",
       "ko": "무엇을 도와드릴까요?",
-      "ex": "Guten Morgen! Was kann ich für Sie tun?",
-      "exko": "안녕하세요! 무엇을 도와드릴까요?"
+      "ex": "Guten Morgen, was kann ich für Sie tun?",
+      "exko": "안녕하세요, 무엇을 도와드릴까요?"
     },
     {
       "de": "Das tut mir leid.",
@@ -229,8 +222,8 @@
     {
       "de": "Gute Besserung!",
       "ko": "빨리 나으세요, 쾌차하세요",
-      "ex": "Natürlich. Wasser und Gläser stehen im Wartezimmer, hier links. Gute Besserung!",
-      "exko": "물론이죠. 물과 컵은 여기 왼쪽 대기실에 있어요. 빨리 나으세요!"
+      "ex": "Gute Besserung!",
+      "exko": "빨리 나으세요!"
     }
   ]
 }
