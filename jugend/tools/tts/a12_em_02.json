@@ -1,0 +1,81 @@
+{
+ "job": "a12_em_02",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "Emma",
+   "parts": [
+    "Der Bahnhof? Gehen Sie hier geradeaus."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Emma",
+   "parts": [
+    "Nein, es ist nicht weit. Zu Fuß sind es zehn Minuten."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Emma",
+   "parts": [
+    "Gern! Auf Wiedersehen!"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Emma",
+   "parts": [
+    "Ich gehe zu Fuß."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Emma",
+   "parts": [
+    "Es ist nicht weit."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Emma",
+   "parts": [
+    "Am Samstag kann ich leider nicht. Ich muss meine Oma besuchen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Emma",
+   "parts": [
+    "Ja, am Sonntag habe ich frei."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Emma",
+   "parts": [
+    "Morgen kann ich leider nicht. Ich habe einen Termin."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Emma",
+   "parts": [
+    "Am Freitag muss ich lernen. Aber am Samstag habe ich frei."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Emma",
+   "parts": [
+    "Ja, gern! Bis Samstag!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Der Bahnhof? Gehen Sie hier geradeaus. [pause] Nein, es ist nicht weit. Zu Fuß sind es zehn Minuten. [pause] Gern! Auf Wiedersehen! [pause] Ich gehe zu Fuß. [pause] Es ist nicht weit. [pause] Am Samstag kann ich leider nicht. Ich muss meine Oma besuchen. [pause] Ja, am Sonntag habe ich frei. [pause] Morgen kann ich leider nicht. Ich habe einen Termin. [pause] Am Freitag muss ich lernen. Aber am Samstag habe ich frei. [pause] Ja, gern! Bis Samstag! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

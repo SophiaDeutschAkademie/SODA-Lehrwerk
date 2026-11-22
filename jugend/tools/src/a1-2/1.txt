@@ -1,0 +1,244 @@
+@id a1-2/1
+
+== einstieg
+bild: A cozy small bedroom. YUNA stands in the middle and shows the room with one open arm. ELIF stands at the open door and looks around with a smile. In the room there is a bed, a desk with a lamp, a bookshelf with books and a wardrobe. A small light brown dog peeks out from under the bed.
+alt: Yuna가 방 한가운데에서 방을 보여 주고, Elif가 문 앞에서 둘러봐요. 침대, 책상, 책장, 옷장이 있고 침대 밑에서 작은 개가 내다봐요.
+lead: 토요일 오후예요. Elif가 처음으로 Yuna의 방에 놀러 왔어요.
+mission: 이 과를 마치면 내 방에 무엇이 있고 그것이 어디에 있는지 독일어로 말할 수 있어요.
+wort: Das ist mein Zimmer. | 여기가 내 방이야.
+wort: das Bett | 침대
+wort: der Schreibtisch | 책상
+wort: Wo ist mein Handy? | 내 휴대폰 어디 있지?
+mc: 그림에서 개 Milo는 어디에 있나요? | 침대 밑에* | 책상 위에 | 옷장 안에 => 독일어로는 unter dem Bett라고 해요. 이 과에서 배워요.
+
+== hoeren
+-- dialog A | Yunas Zimmer | 토요일 오후, Elif가 Yuna의 방에 처음 들어와요.
+vor: 들으면서 찾아보세요. Yuna의 방에는 어떤 가구가 있나요?
+Yuna: Komm rein, Elif! Das ist mein Zimmer. | 들어와, Elif! 여기가 내 방이야.
+Elif: Oh, schön! Dein Zimmer ist sehr hell. | 와, 예쁘다! 네 방 아주 밝다.
+Yuna: Ja. Es ist klein, aber gemütlich. | 응. 작지만 아늑해.
+Elif: Was gibt es hier? Ein Bett, einen Schrank … | 여기 뭐가 있지? 침대, 옷장 …
+Yuna: Und es gibt einen Schreibtisch und ein Regal. | 그리고 책상이랑 선반도 있어.
+Elif: Wo sind deine Bücher? | 네 책은 어디 있어?
+Yuna: Die Bücher sind im Regal. Und mein Handy ist auf dem Schreibtisch. | 책은 선반에 있어. 그리고 내 휴대폰은 책상 위에 있어.
+Elif: Und wer ist das? Unter dem Bett! | 그런데 저건 누구야? 침대 밑에!
+Yuna: Das ist Milo! Er schläft gern unter dem Bett. | Milo야! 침대 밑에서 자는 걸 좋아해.
+
+-- dialog B | Wo ist mein Handy? | 월요일 아침이에요. Emma가 학교에 가기 전에 휴대폰을 찾아요.
+vor: 들으면서 찾아보세요. Emma의 휴대폰은 어디에 있었나요?
+Emma: Mama, ich suche mein Handy! Wo ist es? | 엄마, 휴대폰을 찾고 있어요! 어디 있어요?
+Sabine: Ist es in der Tasche? | 가방 안에 있니?
+Emma: Nein, in der Tasche ist es nicht. | 아니요, 가방 안에는 없어요.
+Sabine: Auf dem Schreibtisch? Neben der Lampe? | 책상 위에는? 램프 옆에는?
+Emma: Nein, auch nicht. | 아니요, 거기도 없어요.
+Yuna: Emma, schau mal! Im Wohnzimmer, auf dem Sofa! | Emma, 이것 봐! 거실 소파 위에 있어!
+Emma: Oh, danke, Yuna! Aber wo ist mein Mathebuch? | 아, 고마워, Yuna! 그런데 내 수학책은 어디 있지?
+Sabine: Emma! Dein Zimmer ist ein Chaos. Heute räumst du dein Zimmer auf! | Emma! 네 방은 엉망이야. 오늘은 방을 치우렴!
+Emma: Ja, Mama. | 네, 엄마.
+
+-- fragen 두 대화를 듣고 답하세요.
+rf: Yunas Zimmer ist groß. | f => 작지만 아늑해요. Es ist klein, aber gemütlich.
+rf: Die Bücher sind im Regal. | r
+mc: Milo는 어디에 있나요? | unter dem Bett* | auf dem Bett | neben dem Bett
+mc: Emma의 휴대폰은 어디에 있었나요? | auf dem Sofa* | in der Tasche | auf dem Schreibtisch
+mc: Emma는 오늘 무엇을 해야 하나요? | 방을 치워야 해요* | 장을 봐야 해요 | 수학책을 사야 해요
+
+-- kultur 방의 수로 집 크기를 말해요
+p: 독일에서는 집 크기를 방의 수로 말해요. 집 광고에 3-Zimmer-Wohnung이라고 쓰여 있으면 방이 세 개라는 뜻이에요.
+p: 이때 부엌(Küche)과 욕실(Bad)은 세지 않고, 거실은 방 하나로 세요. 그래서 3-Zimmer-Wohnung은 보통 거실 하나와 침실 두 개가 있는 집이에요.
+p: 아이가 쓰는 방은 Kinderzimmer라고 불러요.
+mc: 2-Zimmer-Wohnung은 보통 어떤 집일까요? | 거실 하나와 침실 하나가 있고, 부엌과 욕실은 따로 있어요* | 방이 두 개뿐이고 부엌은 없어요 | 부엌 하나와 욕실 하나만 있어요
+
+== wortschatz
+-- gruppe Wohnen | 집
+die Wohnung, die Wohnungen | 집 (아파트처럼 한 층에 있는 집) | Die Wohnung ist groß. | 그 집은 커요.
+das Haus, die Häuser | 집, 주택 | Das Haus ist alt, aber schön. | 그 집은 오래됐지만 예뻐요.
+die Küche, die Küchen | 부엌 | Thomas kocht in der Küche. | Thomas는 부엌에서 요리해요.
+das Bad, die Bäder | 욕실 | Das Bad ist klein. | 욕실은 작아요.
+das Wohnzimmer, die Wohnzimmer | 거실 | Im Wohnzimmer gibt es ein Sofa. | 거실에는 소파가 있어요.
+der Garten, die Gärten | 정원 | Milo spielt im Garten. | Milo는 정원에서 놀아요.
+
+-- gruppe Möbel und Dinge | 가구와 물건
+das Bett, die Betten | 침대 | Das Bett ist neu. | 그 침대는 새것이에요.
+der Schrank, die Schränke | 옷장, 장 | Die Tasche ist im Schrank. | 가방은 옷장 안에 있어요.
+der Schreibtisch, die Schreibtische | 책상 | Das Heft ist auf dem Schreibtisch. | 공책은 책상 위에 있어요.
+das Regal, die Regale | 선반, 책장 | Die Bücher sind im Regal. | 책은 책장에 있어요.
+die Lampe, die Lampen | 등, 램프 | Die Lampe ist neben dem Bett. | 램프는 침대 옆에 있어요.
+das Sofa, die Sofas | 소파 | Milo schläft auf dem Sofa. | Milo는 소파 위에서 자요.
+das Handy, die Handys | 휴대폰 | Wo ist mein Handy? | 내 휴대폰 어디 있지?
+
+-- gruppe Wie ist das Zimmer? | 방이 어때요?
+groß | 큰 | Das Wohnzimmer ist groß. | 거실은 커요.
+klein | 작은 | Mein Zimmer ist klein. | 내 방은 작아요.
+hell | 밝은 | Die Küche ist hell. | 부엌은 밝아요.
+dunkel | 어두운 | Das Bad ist dunkel. | 욕실은 어두워요.
+gemütlich | 아늑한, 편안한 | Das Sofa ist gemütlich. | 그 소파는 편안해요.
+schön | 예쁜, 좋은 | Dein Zimmer ist schön. | 네 방 예쁘다.
+
+-- gruppe Wo ist es? | 어디에 있어요?
+es gibt | ~이 있다 | Im Zimmer gibt es einen Schrank. | 방에는 옷장이 있어요.
+suchen | 찾다 | Ich suche mein Handy. | 나는 휴대폰을 찾고 있어요.
+in | ~ 안에 | Das Heft ist in der Tasche. | 공책은 가방 안에 있어요.
+auf | ~ 위에 | Das Handy ist auf dem Tisch. | 휴대폰은 탁자 위에 있어요.
+unter | ~ 아래에 | Der Hund ist unter dem Bett. | 개는 침대 밑에 있어요.
+neben | ~ 옆에 | Der Stuhl ist neben dem Schrank. | 의자는 옷장 옆에 있어요.
+
+-- bilder
+das Haus, die Häuser: a single small house with a pitched roof and a tree next to it
+die Küche, die Küchen: a kitchen corner with a stove, a pot and a cupboard
+das Bad, die Bäder: a bathroom corner with a bathtub and a small sink
+das Wohnzimmer, die Wohnzimmer: a living room corner with a sofa, a small table and a floor lamp
+der Garten, die Gärten: a small garden with a lawn, two bushes and a wooden fence
+das Bett, die Betten: a single bed with a pillow and a blanket
+der Schrank, die Schränke: a single tall wardrobe with two doors
+der Schreibtisch, die Schreibtische: a single desk with a drawer and a chair in front of it
+das Regal, die Regale: a single bookshelf with books
+die Lampe, die Lampen: a single table lamp with a shade
+das Sofa, die Sofas: a single sofa with two cushions
+das Handy, die Handys: a single smartphone with a blank screen
+
+-- aussprache ü 소리 | 혀는 [이], 입술은 [우]
+p: ü는 한국어 '위'를 입술을 움직이지 않고 한 번에 내는 소리예요. 먼저 [이]라고 말하고, 혀는 그대로 둔 채 입술만 [우]처럼 둥글게 내밀어 보세요.
+p: Küche(부엌)와 Kuchen(케이크)은 ü와 u만 달라요. 소리가 달라지면 뜻도 달라져요.
+hör: Küche, Tür, Stühle, Bücher | ü
+hör: Kuchen, Uhr, Stuhl, Buch | u
+hör: Die Bücher sind in der Küche. | 연습 문장
+
+== grammatik
+-- punkt es gibt | ~이 있다
+bsp: Es gibt *einen* Schreibtisch und *ein* Regal. | 책상이랑 선반이 있어.
+bsp: Im Wohnzimmer gibt es *ein* Sofa. | 거실에는 소파가 있어.
+bsp: Hier gibt es *keinen* Garten. | 여기에는 정원이 없어.
+finde: es gibt 뒤에 der Schreibtisch가 오면 ein은 어떻게 되나요? | einen* | ein | eine
+regel: es gibt는 '~이 있다'는 뜻이에요. haben처럼 뒤에 4격(Akkusativ)이 와요. der 명사 앞에서는 einen, keinen이 되고, die와 das 명사 앞에서는 그대로예요. 물건이 여러 개여도 es gibt는 바뀌지 않아요.
+| | der Schrank | das Bett | die Lampe
+| Es gibt … | ein*en* Schrank | ein Bett | eine Lampe
+| Es gibt … (없음) | kein*en* Schrank | kein Bett | keine Lampe
+merke: 장소를 문장 맨 앞에 두면 동사 gibt가 둘째 자리에 오고 es는 그 뒤로 가요. Im Zimmer gibt es ein Bett.
+
+-- punkt Wo? in, auf, unter, neben | 어디에 있는지 말할 때
+bsp: Das Handy ist *auf dem* Schreibtisch. | 휴대폰은 책상 위에 있어.
+bsp: Milo schläft *unter dem* Bett. | Milo는 침대 밑에서 자.
+bsp: Ist es *in der* Tasche? | 가방 안에 있니?
+bsp: Die Bücher sind *im* Regal. | 책은 선반에 있어.
+finde: die Tasche 앞에서 die는 무엇으로 바뀌었나요? | der* | dem | den
+regel: 어디에 있는지(Wo?) 말할 때는 in, auf, unter, neben 뒤의 관사가 바뀌어요. 이 모양을 3격(Dativ)이라고 해요. der와 das는 dem이 되고, die는 der가 돼요. in dem은 줄여서 im이라고 해요.
+| | der Schrank | das Regal | die Tasche
+| in 안에 | *im* Schrank | *im* Regal | in *der* Tasche
+| auf 위에 | auf *dem* Schrank | auf *dem* Regal | auf *der* Tasche
+| unter 아래에 | unter *dem* Schrank | unter *dem* Regal | unter *der* Tasche
+| neben 옆에 | neben *dem* Schrank | neben *dem* Regal | neben *der* Tasche
+merke: die가 der로 바뀌는 것이 낯설어요. in der Küche, in der Tasche, neben der Tür처럼 자주 쓰는 말을 덩어리로 외워 두세요.
+
+-- punkt Adjektive nach sein | sein 뒤의 형용사
+bsp: Mein Zimmer ist *klein*, aber *gemütlich*. | 내 방은 작지만 아늑해.
+bsp: Dein Zimmer ist sehr *hell*. | 네 방은 아주 밝다.
+bsp: Die Küche ist nicht *dunkel*. | 부엌은 어둡지 않아.
+finde: sein 뒤에 오는 형용사는 명사에 따라 모양이 바뀌나요? | 바뀌지 않아요* | der, die, das에 따라 바뀌어요
+regel: sein 뒤에 오는 형용사는 명사가 der, die, das 가운데 무엇이든 모양이 바뀌지 않아요. 앞에 sehr, nicht, zu를 붙여 정도를 말해요.
+| 낱말 | 뜻 | 예문
+| sehr | 아주 | Das Zimmer ist *sehr* hell.
+| nicht | ~지 않은 | Das Bad ist *nicht* groß.
+| zu | 너무 | Der Schrank ist *zu* klein.
+merke: 물건을 다시 가리킬 때도 der 명사는 er, die 명사는 sie, das 명사는 es로 받아요. Wo ist das Handy? – Es ist auf dem Sofa.
+
+== training
+-- ex Hören | Lukas가 자기 방을 소개해요. 듣고 답하세요.
+audio | Mein Zimmer
+> Lukas: Das ist mein Zimmer. Es ist nicht groß, aber es ist hell.
+> Lukas: Es gibt ein Bett, einen Schreibtisch und einen Schrank.
+> Lukas: Auf dem Schreibtisch ist mein Computer.
+> Lukas: Mein Fußball ist unter dem Bett. Und neben dem Bett schläft die Katze.
+mc: Lukas의 방은 어떤가요? | 크지 않지만 밝아요* | 크고 어두워요 | 작고 어두워요
+mc: Was gibt es im Zimmer? | ein Bett, einen Schreibtisch und einen Schrank* | ein Bett, ein Sofa und ein Regal | einen Schreibtisch, ein Regal und ein Sofa
+mc: Wo ist der Fußball? | unter dem Bett* | auf dem Bett | im Schrank
+mc: 고양이는 어디에서 자나요? | 침대 옆에서* | 침대 위에서 | 책상 밑에서
+
+-- ex Hören | 듣고 물건이 어디에 있는지 고르세요.
+hör: Emma: Das Handy ist in der Tasche.
+mc: 휴대폰은 어디에 있나요? | 가방 안에* | 가방 위에 | 가방 옆에
+hör: Emma: Milo ist auf dem Sofa.
+mc: Milo는 어디에 있나요? | 소파 위에* | 소파 밑에 | 소파 옆에
+hör: Emma: Die Lampe ist neben dem Bett.
+mc: 램프는 어디에 있나요? | 침대 옆에* | 침대 위에 | 침대 밑에
+hör: Emma: Der Ball ist unter dem Tisch.
+mc: 공은 어디에 있나요? | 탁자 밑에* | 탁자 위에 | 탁자 옆에
+
+-- ex Lesen | 집 광고를 읽고 답하세요.
+text notiz | Wohnung in Köln
+> 3 Zimmer, Küche, Bad. Die Wohnung ist groß und hell.
+> Das Wohnzimmer ist sehr schön. Die Küche ist klein, aber neu.
+> Im Bad gibt es ein Fenster.
+> Es gibt keinen Garten. Aber der Park ist neben dem Haus!
+rf: Die Wohnung ist dunkel. | f => Die Wohnung ist groß und hell.
+rf: Die Küche ist neu. | r
+mc: Was gibt es nicht? | einen Garten* | ein Bad | eine Küche
+mc: Wo ist der Park? | neben dem Haus* | im Haus | unter dem Haus
+
+-- ex Grammatik | es gibt 뒤에 알맞은 말을 고르세요.
+gap: Im Zimmer gibt es [einen|ein|eine] Schrank.
+gap: Es gibt [ein|einen|eine] Bett.
+gap: In der Küche gibt es [eine|einen|ein] Lampe.
+gap: Hier gibt es [keinen|kein|keine] Garten.
+gap: Im Wohnzimmer gibt es [ein|einen|eine] Sofa.
+gap: Es gibt [einen|ein|eine] Schreibtisch.
+
+-- ex Grammatik | dem과 der 가운데 알맞은 말을 고르세요.
+gap: Das Handy ist auf [dem|der] Tisch.
+gap: Die Bücher sind in [der|dem] Tasche.
+gap: Milo schläft unter [dem|der] Bett.
+gap: Die Lampe ist neben [dem|der] Sofa.
+gap: Thomas ist in [der|dem] Küche.
+gap: Der Stift ist unter [dem|der] Stuhl.
+
+-- ex Grammatik | 한국어 뜻에 맞는 말을 고르세요.
+gap: Die Bücher sind [im|auf dem|unter dem] Regal. | 책은 책장에 있어요.
+gap: Der Hund schläft [unter|in|auf] dem Bett. | 개가 침대 밑에서 자요.
+gap: Das Heft ist [in|auf|unter] der Tasche. | 공책은 가방 안에 있어요.
+gap: Die Lampe ist [auf|in|unter] dem Schreibtisch. | 램프는 책상 위에 있어요.
+gap: Der Stuhl ist [neben|in|unter] dem Schrank. | 의자는 옷장 옆에 있어요.
+
+-- ex Wortschatz | 뜻이 반대인 낱말끼리 짝지으세요.
+paar: groß = klein ; hell = dunkel ; neu = alt ; leicht = schwer ; interessant = langweilig ; früh = spät
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: mein Zimmer / ist / klein. | 내 방은 작아.
+ord: im Zimmer / gibt / es / einen Schrank. ~ es / gibt / im Zimmer / einen Schrank. | 방에는 옷장이 있어.
+ord: das Handy / ist / auf dem Sofa. | 휴대폰은 소파 위에 있어.
+ord: wo / ist / mein Handy? | 내 휴대폰 어디 있어?
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Yuna: Das ist mein Zimmer. | 여기가 내 방이야.
+dik: Yuna: Die Bücher sind im Regal. | 책은 선반에 있어.
+dik: Emma: Wo ist mein Handy? | 내 휴대폰 어디 있지?
+
+== sprechen
+-- redemittel
+방 소개하기: Das ist mein Zimmer. | 여기가 내 방이야. ; Es gibt ein Bett und einen Schrank. | 침대와 옷장이 있어. ; Mein Zimmer ist klein, aber gemütlich. | 내 방은 작지만 아늑해.
+어디에 있는지 묻고 답하기: Wo ist …? | …은 어디 있어? ; Auf dem Tisch. / Im Regal. | 탁자 위에. / 선반에. ; Unter dem Bett. / Neben der Lampe. | 침대 밑에. / 램프 옆에.
+느낌 말하기: Dein Zimmer ist sehr hell. | 네 방은 아주 밝다. ; Das Wohnzimmer ist zu klein. | 거실이 너무 작아.
+
+-- rolle B | Emma, Sabine
+
+-- ich 내 방을 소개해요 | 내 방이 어떤지, 방에 무엇이 있는지, 휴대폰이 어디에 있는지 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 내 방은 어떤가요 | klein, aber hell
+feld: b | 방에 있는 것 (einen, ein, eine와 함께) | einen Schreibtisch
+feld: c | 내 휴대폰이 있는 곳 | auf dem Schreibtisch
+satz: Das ist mein Zimmer. Es ist {a}.
+satz: Es gibt ein Bett und {b}.
+satz: Mein Handy ist {c}.
+
+-- schreiben Mein Zimmer | 내 방을 소개하는 글을 써 보세요. 다섯 문장쯤이면 충분해요.
+punkt: 방이 어떤지 (크기, 밝기) ; 방에 있는 가구 ; 물건이 어디에 있는지 두 가지 ; 내 방에 대한 느낌
+start: Mein Zimmer ist …
+muster: Mein Zimmer ist klein, aber hell. Es gibt ein Bett, einen Schreibtisch und ein Regal. Die Bücher sind im Regal. Mein Handy ist auf dem Schreibtisch. Die Lampe ist neben dem Bett. Ich finde mein Zimmer gemütlich.
+check: es gibt 뒤의 der 명사 앞에 einen을 썼나요? ; in, auf, unter, neben 뒤에 dem이나 der를 썼나요? ; sein 뒤의 형용사를 그대로 썼나요? ; 명사를 대문자로 시작했나요?
+
+-- kann
+Ich kann mein Zimmer beschreiben. | 내 방을 묘사할 수 있어요.
+Ich kann sagen, wo etwas ist. | 물건이 어디에 있는지 말할 수 있어요.
+Ich kann sagen, wie ich ein Zimmer finde. | 방에 대한 느낌을 말할 수 있어요.
+
+-- tipp 방에 있는 물건에 이름표를 붙여요
+p: 방에 있는 가구와 물건에 독일어 이름을 쓴 쪽지를 붙여 보세요. der는 파란색, die는 빨간색, das는 초록색 펜으로 쓰면 관사도 함께 기억돼요.
+p: 물건을 볼 때마다 Der Schrank ist neben dem Bett.처럼 어디에 있는지 한 문장으로 말해 보세요.

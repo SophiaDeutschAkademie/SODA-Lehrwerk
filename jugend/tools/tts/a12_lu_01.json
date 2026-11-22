@@ -1,0 +1,81 @@
+{
+ "job": "a12_lu_01",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Das ist mein Zimmer. Es ist nicht groß, aber es ist hell."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Es gibt ein Bett, einen Schreibtisch und einen Schrank."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Auf dem Schreibtisch ist mein Computer."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Mein Fußball ist unter dem Bett. Und neben dem Bett schläft die Katze."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Fährst du mit dem Fahrrad?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Okay. Geh zur Haltestelle neben der Schule. Nimm die Linie zwölf."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Steig am Stadtpark aus. Das Schwimmbad ist neben dem Park."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Toll! Dann kommt bitte um zwei. Und kauft ein Ticket!"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Ich fahre mit dem Fahrrad zur Schule."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Geh zur Haltestelle."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist mein Zimmer. Es ist nicht groß, aber es ist hell. [pause] Es gibt ein Bett, einen Schreibtisch und einen Schrank. [pause] Auf dem Schreibtisch ist mein Computer. [pause] Mein Fußball ist unter dem Bett. Und neben dem Bett schläft die Katze. [pause] Fährst du mit dem Fahrrad? [pause] Okay. Geh zur Haltestelle neben der Schule. Nimm die Linie zwölf. [pause] Steig am Stadtpark aus. Das Schwimmbad ist neben dem Park. [pause] Toll! Dann kommt bitte um zwei. Und kauft ein Ticket! [pause] Ich fahre mit dem Fahrrad zur Schule. [pause] Geh zur Haltestelle. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

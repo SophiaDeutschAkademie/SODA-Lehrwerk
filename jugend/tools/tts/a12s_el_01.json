@@ -1,0 +1,39 @@
+{
+ "job": "a12s_el_01",
+ "who": "Elif",
+ "voice": "Emily",
+ "voice_id": "OO0WT3lY2gVNwzZMAjAI",
+ "items": [
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Letzte Woche war ich krank. Ich hatte Fieber und Halsschmerzen."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Ich bin drei Tage zu Hause geblieben. Ich habe viel geschlafen und Tee getrunken."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Am Donnerstag hat Yuna mich besucht. Sie hat mir ein Buch geschenkt."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Am Samstag war ich wieder gesund. Ich bin mit Emma ins Schwimmbad gegangen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Letzte Woche war ich krank. Ich hatte Fieber und Halsschmerzen. [pause] Ich bin drei Tage zu Hause geblieben. Ich habe viel geschlafen und Tee getrunken. [pause] Am Donnerstag hat Yuna mich besucht. Sie hat mir ein Buch geschenkt. [pause] Am Samstag war ich wieder gesund. Ich bin mit Emma ins Schwimmbad gegangen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

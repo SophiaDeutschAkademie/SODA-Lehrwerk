@@ -1,0 +1,87 @@
+{
+ "job": "a12_n_17",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "bleiben.",
+    "Ich bleibe im Bett."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "zu Hause.",
+    "Sie soll zu Hause bleiben."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "sollen, du sollst, er soll.",
+    "Du sollst im Bett bleiben."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "dürfen, du darfst, er darf.",
+    "Darf ich Fußball spielen?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "helfen, du hilfst, er hilft.",
+    "Wollen wir ihr helfen?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Was ist los?",
+    "Was ist los? Bist du krank?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Du bist krank? Gute Besserung!"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Zahn, Tee, Fuß, Fieber"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Mann, Bett, muss, Rücken"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Ich muss zum Arzt. Mein Fuß tut weh."
+   ]
+  }
+ ],
+ "script": "Also. [pause] bleiben. Ich bleibe im Bett. [pause] zu Hause. Sie soll zu Hause bleiben. [pause] sollen, du sollst, er soll. Du sollst im Bett bleiben. [pause] dürfen, du darfst, er darf. Darf ich Fußball spielen? [pause] helfen, du hilfst, er hilft. Wollen wir ihr helfen? [pause] Was ist los? Was ist los? Bist du krank? [pause] Du bist krank? Gute Besserung! [pause] Zahn, Tee, Fuß, Fieber [pause] Mann, Bett, muss, Rücken [pause] Ich muss zum Arzt. Mein Fuß tut weh. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

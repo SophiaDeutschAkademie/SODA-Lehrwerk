@@ -1,0 +1,81 @@
+{
+ "job": "a12_el_01",
+ "who": "Elif",
+ "voice": "Emily",
+ "voice_id": "OO0WT3lY2gVNwzZMAjAI",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "Elif",
+   "parts": [
+    "Oh, schön! Dein Zimmer ist sehr hell."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Elif",
+   "parts": [
+    "Was gibt es hier? Ein Bett, einen Schrank …"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Elif",
+   "parts": [
+    "Wo sind deine Bücher?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Elif",
+   "parts": [
+    "Und wer ist das? Unter dem Bett!"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Elif",
+   "parts": [
+    "Entschuldigung, wie komme ich zum Kino?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Elif",
+   "parts": [
+    "Ist es weit?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Elif",
+   "parts": [
+    "Wir fahren mit der Bahn zum Dom."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Elif",
+   "parts": [
+    "Was macht ihr am Wochenende? Wollen wir ins Schokoladenmuseum gehen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Elif",
+   "parts": [
+    "Schade. Und am Sonntag? Hast du am Sonntag Zeit?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Elif",
+   "parts": [
+    "Super! Dann treffen wir uns am Sonntag um zwei am Museum."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Oh, schön! Dein Zimmer ist sehr hell. [pause] Was gibt es hier? Ein Bett, einen Schrank … [pause] Wo sind deine Bücher? [pause] Und wer ist das? Unter dem Bett! [pause] Entschuldigung, wie komme ich zum Kino? [pause] Ist es weit? [pause] Wir fahren mit der Bahn zum Dom. [pause] Was macht ihr am Wochenende? Wollen wir ins Schokoladenmuseum gehen? [pause] Schade. Und am Sonntag? Hast du am Sonntag Zeit? [pause] Super! Dann treffen wir uns am Sonntag um zwei am Museum. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

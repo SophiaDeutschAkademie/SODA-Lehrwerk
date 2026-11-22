@@ -1,0 +1,90 @@
+{
+ "job": "a12_n_08",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "besuchen.",
+    "Ich besuche meine Oma."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "vielleicht.",
+    "Vielleicht kann ich am Nachmittag kommen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "leider."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "schade.",
+    "Das ist schade."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "die Idee, die Ideen.",
+    "Gute Idee!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "frei.",
+    "Am Sonntag habe ich frei."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "genau.",
+    "Ja, genau."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Wo treffen wir uns?",
+    "Wo treffen wir uns? Am Bahnhof?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Bis Samstag!",
+    "Tschüss! Bis Samstag!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "morgen.",
+    "Hast du morgen Zeit?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] besuchen. Ich besuche meine Oma. [pause] vielleicht. Vielleicht kann ich am Nachmittag kommen. [pause] leider. [pause] schade. Das ist schade. [pause] die Idee, die Ideen. Gute Idee! [pause] frei. Am Sonntag habe ich frei. [pause] genau. Ja, genau. [pause] Wo treffen wir uns? Wo treffen wir uns? Am Bahnhof? [pause] Bis Samstag! Tschüss! Bis Samstag! [pause] morgen. Hast du morgen Zeit? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,259 @@
+@id a1-2/3
+
+== einstieg
+bild: Four teenagers stand in a school corridor and talk. ELIF holds up a smartphone that shows a simple calendar grid. YUNA and LUKAS look at it with interest. EMMA shrugs with both hands open.
+alt: Elif가 달력이 보이는 휴대폰을 들어 보이고, Yuna와 Lukas가 들여다봐요. Emma는 두 손을 펴 보이며 어깨를 으쓱해요.
+lead: 쉬는 시간이에요. Elif가 주말에 같이 놀러 가자고 해요. 그런데 친구들마다 되는 날이 달라요.
+mission: 이 과를 마치면 친구와 약속을 잡고, 안 될 때는 이유를 말할 수 있어요.
+wort: Hast du Zeit? | 시간 있어?
+wort: Ich kann kommen. | 나는 갈 수 있어.
+wort: Ich kann leider nicht. | 아쉽지만 안 돼.
+wort: Ich muss lernen. | 나는 공부해야 해.
+mc: Ich kann am Samstag kommen. 이 문장에서 kommen은 어디에 있나요? | 문장 맨 끝* | 둘째 자리 | 문장 맨 앞 => kann이 둘째 자리에 오고 kommen은 맨 끝으로 가요. 이 과에서 배워요.
+
+== hoeren
+-- dialog A | Wollen wir ins Museum gehen? | 쉬는 시간, Elif가 주말 계획을 꺼내요.
+vor: 들으면서 찾아보세요. 친구들은 무슨 요일에 박물관에 가나요?
+Elif: Was macht ihr am Wochenende? Wollen wir ins Schokoladenmuseum gehen? | 너희 주말에 뭐 해? 우리 초콜릿 박물관에 갈까?
+Yuna: Gute Idee! Ich will das Museum sehen. | 좋은 생각이야! 나 그 박물관 보고 싶어.
+Lukas: Ich auch! Ich kann am Samstag kommen. | 나도! 나는 토요일에 갈 수 있어.
+Emma: Am Samstag kann ich leider nicht. Ich muss meine Oma besuchen. | 나는 토요일에는 아쉽지만 안 돼. 할머니를 뵈러 가야 해.
+Elif: Schade. Und am Sonntag? Hast du am Sonntag Zeit? | 아쉽다. 그럼 일요일은? 일요일에 시간 있어?
+Emma: Ja, am Sonntag habe ich frei. | 응, 일요일에는 시간 있어.
+Lukas: Am Sonntag muss ich für den Test lernen. Aber vielleicht kann ich am Nachmittag kommen. | 일요일에는 시험공부를 해야 해. 그래도 오후에는 갈 수 있을지도 몰라.
+Elif: Super! Dann treffen wir uns am Sonntag um zwei am Museum. | 좋아! 그럼 일요일 두 시에 박물관 앞에서 만나자.
+Yuna: Ja, klar! Bis Sonntag! | 응, 그래! 일요일에 봐!
+
+-- dialog B | Wann hast du Geburtstag? | 일요일, 박물관 앞이에요. 친구들을 기다리며 Elif와 Yuna가 이야기해요.
+vor: 들으면서 찾아보세요. Yuna의 생일은 언제인가요?
+Elif: Yuna, wann hast du Geburtstag? | Yuna, 생일이 언제야?
+Yuna: Am zwölften März. Und du? | 3월 12일이야. 너는?
+Elif: Am dritten August. | 8월 3일이야.
+Yuna: Und Emma hat am ersten Februar Geburtstag, oder? | 그리고 Emma는 2월 1일이 생일이지?
+Elif: Ja, genau. Sie will eine Party machen. | 응, 맞아. Emma는 파티를 하고 싶어 해.
+Yuna: Toll! Und heute? Ist heute der neunte November? | 좋다! 그런데 오늘은? 오늘이 11월 9일인가?
+Elif: Nein, heute ist der zehnte November. | 아니, 오늘은 11월 10일이야.
+Yuna: Oh! Dann ist morgen der elfte November. Mein Bruder hat Geburtstag! | 아! 그럼 내일이 11월 11일이네. 내 동생 생일이야!
+Elif: Dann musst du Jun morgen anrufen! | 그럼 내일 Jun에게 전화해야겠네!
+Yuna: Ja, das will ich machen. | 응, 그러려고.
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: 친구들은 언제 박물관에 가나요? | 일요일 2시* | 토요일 2시 | 일요일 12시
+rf: Emma kann am Samstag kommen. | f => Am Samstag kann ich leider nicht. 할머니를 뵈러 가야 해요.
+rf: Lukas muss am Sonntag für den Test lernen. | r
+mc: Yuna의 생일은 언제인가요? | 3월 12일* | 3월 2일 | 5월 12일
+mc: Emma의 생일은 언제인가요? | 2월 1일* | 2월 3일 | 8월 1일
+mc: Yuna는 내일 무엇을 해야 하나요? | 동생에게 전화해야 해요* | 박물관에 가야 해요 | 시험공부를 해야 해요
+
+-- kultur 쾰른 둘러보기
+p: 쾰른은 라인강(Rhein) 옆에 있는 큰 도시예요. 가장 유명한 건물은 대성당(Kölner Dom)이에요. 탑의 높이가 약 157미터이고, 다 짓는 데 600년이 넘게 걸렸어요.
+p: 라인강 옆에는 초콜릿 박물관(Schokoladenmuseum)이 있어요. 초콜릿을 만드는 과정을 보고, 초콜릿 분수에서 맛도 볼 수 있어요.
+p: 대성당 옆의 다리 Hohenzollernbrücke에는 사람들이 걸어 둔 자물쇠가 가득해요.
+mc: 쾰른 대성당의 탑은 얼마나 높을까요? | 약 157미터* | 약 57미터 | 약 357미터
+
+== wortschatz
+-- gruppe Sich verabreden | 약속 잡기
+können (du kannst, er kann) | ~할 수 있다 | Ich kann am Samstag kommen. | 나는 토요일에 갈 수 있어요.
+müssen (du musst, er muss) | ~해야 한다 | Ich muss für den Test lernen. | 나는 시험공부를 해야 해요.
+wollen (du willst, er will) | ~하고 싶다, ~하려고 하다 | Wir wollen ins Museum gehen. | 우리는 박물관에 가려고 해요.
+besuchen | 찾아가다, 방문하다 | Ich besuche meine Oma. | 나는 할머니를 뵈러 가요.
+vielleicht | 아마, 어쩌면 | Vielleicht kann ich am Nachmittag kommen. | 어쩌면 오후에는 갈 수 있어요.
+leider | 아쉽게도 | Ich kann leider nicht. | 아쉽지만 안 돼요.
+schade | 아쉬운, 안타까운 | Das ist schade. | 그것참 아쉬워요.
+die Idee, die Ideen | 생각, 아이디어 | Gute Idee! | 좋은 생각이야!
+frei | 시간이 비어 있는, 자유로운 | Am Sonntag habe ich frei. | 일요일에는 시간이 있어요.
+genau | 맞아, 정확히 | Ja, genau. | 응, 맞아.
+Wo treffen wir uns? | 어디에서 만날까? | Wo treffen wir uns? Am Bahnhof? | 어디에서 만날까? 역에서?
+Bis Samstag! | 토요일에 봐! | Tschüss! Bis Samstag! | 안녕! 토요일에 봐!
+
+-- gruppe Wann und wo? | 언제, 어디에서
+morgen | 내일 | Hast du morgen Zeit? | 내일 시간 있어?
+das Wochenende, die Wochenenden | 주말 | Was macht ihr am Wochenende? | 너희 주말에 뭐 해?
+der Geburtstag, die Geburtstage | 생일 | Wann hast du Geburtstag? | 생일이 언제야?
+der Monat, die Monate | 달, 월 | Der Monat hat dreißig Tage. | 그 달은 30일이에요.
+der Termin, die Termine | 예약, 일정 | Ich habe einen Termin. | 나는 일정이 있어요.
+der Test, die Tests | 시험, 평가 | Der Test ist am Montag. | 시험은 월요일이에요.
+das Museum, die Museen | 박물관 | Das Museum ist sehr interessant. | 그 박물관은 아주 재미있어요.
+die Party, die Partys | 파티 | Emma will eine Party machen. | Emma는 파티를 하고 싶어 해요.
+die Schokolade, die Schokoladen | 초콜릿 | Ich esse gern Schokolade. | 나는 초콜릿을 즐겨 먹어요.
+
+-- bilder
+die Idee, die Ideen: a single glowing light bulb
+der Geburtstag, die Geburtstage: a birthday cake with three candles
+der Termin, die Termine: a wall calendar page with one day marked by a circle
+der Test, die Tests: a sheet of paper with blank lines and a pencil next to it
+das Museum, die Museen: a small museum building with columns and steps
+die Schokolade, die Schokoladen: a chocolate bar with one piece broken off
+
+-- tafel Die Monate | 열두 달
+p: 달 이름은 모두 der 명사예요. 줄을 누르면 소리가 나요.
+r: 1 Januar ; 2 Februar ; 3 März | say=Januar, Februar, März.
+r: 4 April ; 5 Mai ; 6 Juni | say=April, Mai, Juni.
+r: 7 Juli ; 8 August ; 9 September | say=Juli, August, September.
+r: 10 Oktober ; 11 November ; 12 Dezember | say=Oktober, November, Dezember.
+
+-- tafel Das Datum | 날짜 읽기
+p: 날짜는 '몇 번째 날'로 말해요. 숫자에 -te를 붙이고, 20부터는 -ste를 붙여요. '~일에'는 am …ten이라고 해요.
+r: 1. = der erste ; 2. = der zweite ; 3. = der dritte | say=der erste, der zweite, der dritte.
+r: 4. = der vierte ; 7. = der siebte ; 10. = der zehnte | say=der vierte, der siebte, der zehnte.
+r: 20. = der zwanzigste ; 31. = der einunddreißigste | say=der zwanzigste, der einunddreißigste.
+r: am 1. Mai = am ersten Mai ; am 12. März = am zwölften März | say=am ersten Mai, am zwölften März.
+
+-- aussprache 낱말 끝의 b, d, g | 끝에서는 [p], [t], [k]
+p: b, d, g가 낱말 끝에 오면 센 소리 [p], [t], [k]로 바뀌어요. Tag은 [탁], und는 [운트], halb는 [할프]에 가까워요.
+p: 뒤에 모음이 붙으면 다시 부드러운 소리가 돼요. Tag은 [탁]이지만 Tage는 [타게]예요.
+hör: Tag, Montag, Geburtstag, Zug | g는 [k]
+hör: und, Rad, Hund, Freund | d는 [t]
+hör: Tage, Hunde, Freunde | 모음이 붙으면 부드럽게
+hör: Am Montag hat mein Freund Geburtstag. | 연습 문장
+
+== grammatik
+-- punkt können, müssen, wollen | 할 수 있다, 해야 한다, 하고 싶다
+bsp: Ich *kann* am Samstag kommen. | 나는 토요일에 갈 수 있어.
+bsp: Ich *muss* meine Oma besuchen. | 나는 할머니를 뵈러 가야 해.
+bsp: Sie *will* eine Party machen. | Emma는 파티를 하고 싶어 해.
+finde: ich kann, er kann. 두 형태는 어떤 점이 같나요? | 끝에 -e나 -t가 붙지 않고 모양이 같아요* | 둘 다 -t로 끝나요 | 둘 다 -e로 끝나요
+regel: können, müssen, wollen은 ich와 er, sie, es의 형태가 같고 끝에 아무것도 붙지 않아요. 단수에서는 모음도 바뀌어요.
+| | können | müssen | wollen
+| ich | k*a*nn | m*u*ss | w*i*ll
+| du | k*a*nnst | m*u*sst | w*i*llst
+| er, sie, es | k*a*nn | m*u*ss | w*i*ll
+| wir | können | müssen | wollen
+| ihr | könnt | müsst | wollt
+| sie, Sie | können | müssen | wollen
+merke: wollen은 강하게 들릴 수 있어요. 가게에서 주문할 때는 Ich will … 대신 Ich möchte …라고 해요.
+
+-- punkt Satzklammer | 두 동사의 자리
+bsp: Ich *kann* am Samstag *kommen*. | 나는 토요일에 갈 수 있어.
+bsp: Am Sonntag *muss* ich für den Test *lernen*. | 일요일에는 시험공부를 해야 해.
+bsp: *Wollen* wir ins Schokoladenmuseum *gehen*? | 우리 초콜릿 박물관에 갈까?
+bsp: Dann *musst* du Jun morgen *anrufen*! | 그럼 내일 Jun에게 전화해야겠네!
+finde: Ich kann am Samstag kommen. 두 동사 kann과 kommen은 어디에 있나요? | kann은 둘째 자리, kommen은 맨 끝* | 둘 다 둘째 자리 | kann은 맨 끝, kommen은 둘째 자리
+regel: können, müssen, wollen은 주어에 맞게 바꿔서 둘째 자리에 두고, 무엇을 하는지 나타내는 동사는 원형 그대로 문장 맨 끝에 둬요. 두 동사가 나머지 말을 감싸는 모양이에요. 나뉘는 동사도 맨 끝에서는 붙여 써요.
+| 1 | 2 | … | 맨 끝
+| Ich | *kann* | am Samstag | *kommen*.
+| Am Sonntag | *muss* | ich für den Test | *lernen*.
+| Du | *musst* | Jun morgen | *anrufen*.
+| (질문) | *Wollen* | wir ins Museum | *gehen*?
+merke: nicht은 보통 맨 끝의 동사 앞에 와요. Ich kann am Samstag nicht kommen.
+
+-- punkt Das Datum | 날짜
+bsp: Heute ist *der zehnte* November. | 오늘은 11월 10일이야.
+bsp: Ich habe *am zwölften* März Geburtstag. | 나는 3월 12일이 생일이야.
+bsp: Emma hat *am ersten* Februar Geburtstag. | Emma는 2월 1일이 생일이야.
+finde: '3월 12일에'라고 말할 때 zwölf 뒤에 무엇이 붙었나요? | -ten* | -te | -t
+regel: 날짜는 '몇 번째'로 말해요. 19까지는 숫자에 -te, 20부터는 -ste를 붙여요. '오늘은 ~일이다'는 der …te, '~일에'는 am …ten이라고 해요. 숫자로 쓸 때는 뒤에 점을 찍어요.
+| 쓰기 | Heute ist … | Wann? Am …
+| 1. Mai | der erst*e* Mai | am erst*en* Mai
+| 3. August | der dritt*e* August | am dritt*en* August
+| 7. Juli | der siebt*e* Juli | am siebt*en* Juli
+| 12. März | der zwölft*e* März | am zwölft*en* März
+| 20. Juni | der zwanzigst*e* Juni | am zwanzigst*en* Juni
+merke: erste(1), dritte(3), siebte(7), achte(8)는 모양이 조금 달라요. 독일에서는 날짜를 일, 월, 연도 순서로 써요. 2026년 3월 12일은 12.3.2026이에요.
+
+== training
+-- ex Hören | Lukas가 Emma에게 전화해요. 듣고 답하세요.
+audio | Am Telefon
+> Lukas: Hallo, Emma! Hast du morgen Zeit? Wollen wir Fußball spielen?
+> Emma: Morgen kann ich leider nicht. Ich habe einen Termin.
+> Lukas: Schade. Und am Freitag?
+> Emma: Am Freitag muss ich lernen. Aber am Samstag habe ich frei.
+> Lukas: Super! Dann treffen wir uns am Samstag um drei im Park.
+> Emma: Ja, gern! Bis Samstag!
+mc: Lukas는 무엇을 하고 싶어 하나요? | 축구* | 영화 보기 | 수영
+rf: Emma hat morgen Zeit. | f => Morgen kann ich leider nicht. Ich habe einen Termin.
+mc: Was muss Emma am Freitag machen? | lernen* | einkaufen | ihre Oma besuchen
+mc: 두 사람은 언제 만나나요? | 토요일 3시* | 금요일 3시 | 토요일 2시
+
+-- ex Hören | 날짜를 듣고 고르세요.
+hör: N: Heute ist der dritte Mai.
+mc: 오늘은 며칠인가요? | 5월 3일* | 5월 13일 | 3월 5일
+hör: N: Ich habe am siebten Juli Geburtstag.
+mc: 생일은 언제인가요? | 7월 7일* | 6월 7일 | 7월 17일
+hör: N: Der Test ist am zwanzigsten Juni.
+mc: 시험은 언제인가요? | 6월 20일* | 6월 12일 | 7월 20일
+hör: N: Wir treffen uns am ersten Dezember.
+mc: 언제 만나나요? | 12월 1일* | 12월 11일 | 11월 1일
+
+-- ex Lesen | Elif와 Yuna의 메시지를 읽고 답하세요.
+text chat | Freitag, 17 Uhr
+> Elif: Hallo Yuna! Wir wollen morgen ins Kino gehen. Kommst du mit?
+> Yuna: Morgen? Am Nachmittag muss ich mit Emma einkaufen.
+> Elif: Und am Abend? Der Film fängt um sieben an.
+> Yuna: Am Abend habe ich Zeit. Aber ich muss um zehn zu Hause sein.
+> Elif: Kein Problem. Der Film ist um neun aus.
+> Yuna: Super! Wo treffen wir uns?
+> Elif: Um halb sieben am Kino. Lukas kommt auch.
+rf: Yuna kann am Nachmittag ins Kino gehen. | f => Am Nachmittag muss ich mit Emma einkaufen.
+mc: Wann fängt der Film an? | um sieben* | um neun | um halb sieben
+mc: Yuna는 몇 시까지 집에 가야 하나요? | 10시* | 9시 | 7시 => Ich muss um zehn zu Hause sein. zu Hause는 '집에'라는 뜻이에요.
+mc: 친구들은 어디에서 만나나요? | am Kino* | am Bahnhof | im Park
+
+-- ex Grammatik | 주어에 맞는 형태를 고르세요.
+gap: Ich [kann|kannst|können] am Samstag kommen.
+gap: [Kannst|Kann|Könnt] du morgen kommen?
+gap: Lukas [muss|musst|müssen] für den Test lernen.
+gap: Wir [wollen|will|wollt] ins Museum gehen.
+gap: Emma [will|willst|wollen] eine Party machen.
+gap: Ihr [müsst|muss|müssen] ein Ticket kaufen.
+
+-- ex Grammatik | 한국어 뜻에 맞는 동사를 고르세요.
+gap: Ich habe keine Zeit. Ich [muss|kann|will] Hausaufgaben machen. | 시간이 없어요. 숙제를 해야 해요.
+gap: Yuna [kann|muss|will] sehr gut tanzen. | Yuna는 춤을 아주 잘 출 수 있어요.
+gap: Ich habe Hunger. Ich [will|muss|kann] eine Brezel essen. | 배고파요. 브레첼을 먹고 싶어요.
+gap: Am Sonntag [kann|muss|will] ich leider nicht kommen. | 일요일에는 아쉽지만 갈 수 없어요.
+gap: Der Bus kommt! Wir [müssen|können|wollen] jetzt gehen. | 버스가 와요! 우리는 지금 가야 해요.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / kann / am Samstag / kommen. ~ am Samstag / kann / ich / kommen. | 나는 토요일에 갈 수 있어.
+ord: wir / wollen / ins Kino / gehen. | 우리는 영화관에 가려고 해.
+ord: ich / muss / meine Oma / besuchen. | 나는 할머니를 뵈러 가야 해.
+ord: kannst / du / morgen / kommen? | 너 내일 올 수 있어?
+ord: du / musst / Jun / anrufen. | 너는 Jun에게 전화해야 해.
+
+-- ex Wortschatz | 날짜를 독일어로 쓰세요.
+gap: 1. Mai = am [=ersten] Mai
+gap: 3. August = am [=dritten] August
+gap: 7. Juli = am [=siebten] Juli
+gap: 12. März = am [=zwölften] März
+gap: 20. Juni = am [=zwanzigsten] Juni
+
+-- ex Wortschatz | 질문과 대답을 짝지으세요.
+paar: Hast du morgen Zeit? = Ja, morgen habe ich frei. ; Wollen wir ins Kino gehen? = Gute Idee! ; Kannst du am Samstag? = Nein, leider nicht. ; Wann hast du Geburtstag? = Am dritten August. ; Wo treffen wir uns? = Am Bahnhof.
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Elif: Hast du am Sonntag Zeit? | 일요일에 시간 있어?
+dik: Emma: Am Samstag kann ich leider nicht. | 토요일에는 아쉽지만 안 돼.
+dik: Lukas: Ich muss für den Test lernen. | 나는 시험공부를 해야 해.
+
+== sprechen
+-- redemittel
+약속 제안하기: Hast du am Samstag Zeit? | 토요일에 시간 있어? ; Wollen wir ins Kino gehen? | 우리 영화관에 갈까? ; Kommst du mit? | 같이 갈래?
+좋다고 하기: Ja, gern! | 응, 좋아! ; Gute Idee! | 좋은 생각이야! ; Ja, ich kann kommen. | 응, 갈 수 있어.
+안 된다고 하기: Ich kann leider nicht. | 아쉽지만 안 돼. ; Ich muss lernen. | 공부해야 해. ; Vielleicht am Sonntag? | 일요일은 어때?
+시간과 장소 정하기: Wann treffen wir uns? / Wo treffen wir uns? | 언제 만날까? / 어디에서 만날까? ; Um drei am Kino. | 세 시에 영화관 앞에서. ; Bis Samstag! | 토요일에 봐!
+
+-- rolle A | Elif, Emma, Lukas
+
+-- ich 내 생일과 주말 | 내 생일, 주말에 하고 싶은 일, 해야 하는 일을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 내 생일 (am …ten + 달) | am zwölften März
+feld: b | 주말에 하고 싶은 일 | ins Kino gehen
+feld: c | 주말에 해야 하는 일 | Hausaufgaben machen
+satz: Ich habe {a} Geburtstag.
+satz: Am Wochenende will ich {b}.
+satz: Aber ich muss {c}.
+
+-- schreiben Eine Nachricht | 친구가 토요일에 영화를 보러 가자고 했어요. 토요일에 안 되는 이유를 말하고 다른 날을 제안하는 답장을 써 보세요.
+punkt: 고맙다는 말 ; 토요일에 안 되는 이유 ; 다른 날과 시각 ; 만날 곳
+start: Hallo …! Danke! …
+muster: Hallo Elif! Danke! Am Samstag kann ich leider nicht kommen. Ich muss meine Oma besuchen. Hast du am Sonntag Zeit? Wollen wir um drei ins Kino gehen? Wir treffen uns am Bahnhof. Bis Sonntag!
+check: kann, muss, will을 둘째 자리에 썼나요? ; 다른 동사를 원형으로 문장 맨 끝에 썼나요? ; 요일 앞에 am, 시각 앞에 um을 썼나요? ; 인사말로 시작하고 끝냈나요?
+
+-- kann
+Ich kann einen Vorschlag machen. | 같이 하자고 제안할 수 있어요.
+Ich kann zusagen und absagen. | 좋다고 하거나 안 된다고 말할 수 있어요.
+Ich kann das Datum sagen. | 날짜를 말할 수 있어요.
+
+-- tipp 달력을 독일어로 써요
+p: 휴대폰이나 다이어리의 달력에 일정을 독일어로 적어 보세요. Mathetest, Geburtstag von Mina, Kino mit Jisu처럼 짧게 쓰면 돼요.
+p: 아침마다 오늘 날짜를 소리 내어 말해 보세요. Heute ist der zehnte November. 한 달이면 날짜 말하기가 익숙해져요.

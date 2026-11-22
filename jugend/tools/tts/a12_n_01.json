@@ -1,0 +1,87 @@
+{
+ "job": "a12_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Das ist mein Zimmer."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "das Bett"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Schreibtisch"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Wo ist mein Handy?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Wohnung, die Wohnungen.",
+    "Die Wohnung ist groß."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "das Haus, die Häuser.",
+    "Das Haus ist alt, aber schön."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Küche, die Küchen.",
+    "Thomas kocht in der Küche."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "das Bad, die Bäder.",
+    "Das Bad ist klein."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "das Wohnzimmer, die Wohnzimmer.",
+    "Im Wohnzimmer gibt es ein Sofa."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Garten, die Gärten.",
+    "Milo spielt im Garten."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist mein Zimmer. [pause] das Bett [pause] der Schreibtisch [pause] Wo ist mein Handy? [pause] die Wohnung, die Wohnungen. Die Wohnung ist groß. [pause] das Haus, die Häuser. Das Haus ist alt, aber schön. [pause] die Küche, die Küchen. Thomas kocht in der Küche. [pause] das Bad, die Bäder. Das Bad ist klein. [pause] das Wohnzimmer, die Wohnzimmer. Im Wohnzimmer gibt es ein Sofa. [pause] der Garten, die Gärten. Milo spielt im Garten. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,91 @@
+{
+ "job": "a12_n_12",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "das T-Shirt, die T-Shirts.",
+    "Das T-Shirt ist neu."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "die Hose, die Hosen.",
+    "Die Hose passt mir nicht."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "der Rock, die Röcke.",
+    "Der Rock ist zu klein."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "das Kleid, die Kleider.",
+    "Das Kleid ist schön."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "der Schuh, die Schuhe.",
+    "Die Schuhe sind neu."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "die Mütze, die Mützen.",
+    "Die Mütze ist warm."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "die Farbe, die Farben.",
+    "Welche Farbe gefällt dir?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "rot.",
+    "Die Jacke ist rot."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "blau.",
+    "Blau gefällt mir."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "grün.",
+    "Dieser Pullover ist grün."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das T-Shirt, die T-Shirts. Das T-Shirt ist neu. [pause] die Hose, die Hosen. Die Hose passt mir nicht. [pause] der Rock, die Röcke. Der Rock ist zu klein. [pause] das Kleid, die Kleider. Das Kleid ist schön. [pause] der Schuh, die Schuhe. Die Schuhe sind neu. [pause] die Mütze, die Mützen. Die Mütze ist warm. [pause] die Farbe, die Farben. Welche Farbe gefällt dir? [pause] rot. Die Jacke ist rot. [pause] blau. Blau gefällt mir. [pause] grün. Dieser Pullover ist grün. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

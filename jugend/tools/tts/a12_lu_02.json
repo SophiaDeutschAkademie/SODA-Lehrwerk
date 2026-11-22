@@ -1,0 +1,81 @@
+{
+ "job": "a12_lu_02",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Ich auch! Ich kann am Samstag kommen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Am Sonntag muss ich für den Test lernen. Aber vielleicht kann ich am Nachmittag kommen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Hallo, Emma! Hast du morgen Zeit? Wollen wir Fußball spielen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Schade. Und am Freitag?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Super! Dann treffen wir uns am Samstag um drei im Park."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Ich muss für den Test lernen."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lukas",
+   "parts": [
+    "Entschuldigung, ich suche einen Pullover."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lukas",
+   "parts": [
+    "Größe Emm."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lukas",
+   "parts": [
+    "Schwarz gefällt mir. Kann ich ihn anprobieren?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lukas",
+   "parts": [
+    "Nein, er ist zu klein. Haben Sie ihn auch in Ell?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich auch! Ich kann am Samstag kommen. [pause] Am Sonntag muss ich für den Test lernen. Aber vielleicht kann ich am Nachmittag kommen. [pause] Hallo, Emma! Hast du morgen Zeit? Wollen wir Fußball spielen? [pause] Schade. Und am Freitag? [pause] Super! Dann treffen wir uns am Samstag um drei im Park. [pause] Ich muss für den Test lernen. [pause] Entschuldigung, ich suche einen Pullover. [pause] Größe Emm. [pause] Schwarz gefällt mir. Kann ich ihn anprobieren? [pause] Nein, er ist zu klein. Haben Sie ihn auch in Ell? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

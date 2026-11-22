@@ -1,0 +1,249 @@
+@id a1-2/4
+
+== einstieg
+bild: A clothing store. YUNA stands in front of a tall mirror and tries on a navy winter jacket over her hoodie. EMMA stands next to her and gives a thumbs up. Behind them a clothes rack with jackets and sweaters.
+alt: 옷 가게에서 Yuna가 거울 앞에서 재킷을 입어 보고, Emma가 엄지를 들어 보여요. 뒤에는 옷걸이에 재킷과 스웨터가 걸려 있어요.
+lead: 쾰른은 점점 추워져요. Yuna는 겨울 재킷을 사러 Emma와 시내에 나왔어요.
+mission: 이 과를 마치면 옷을 고르고, 마음에 드는지, 어울리는지 독일어로 말할 수 있어요.
+wort: die Jacke | 재킷
+wort: Die Jacke gefällt mir. | 그 재킷 마음에 들어.
+wort: Das steht dir! | 너한테 어울려!
+wort: Was kostet die Jacke? | 그 재킷 얼마예요?
+mc: Die Jacke gefällt mir. 이 문장에서 mir는 무슨 뜻일까요? | 나에게* | 너에게 | 그녀에게 => gefallen은 '~에게 마음에 들다'라는 뜻이에요. mir는 '나에게', dir는 '너에게'예요.
+
+== hoeren
+-- dialog A | Im Kaufhaus | 토요일 오후, 백화점의 옷 매장이에요.
+vor: 들으면서 찾아보세요. Yuna는 어떤 색 재킷을 고르나요?
+Emma: Schau mal, Yuna! Die Jacke hier ist schön. | 이것 봐, Yuna! 여기 이 재킷 예쁘다.
+Yuna: Welche Jacke? Diese hier? | 어떤 재킷? 여기 이거?
+Emma: Ja, diese. Sie ist rot. | 응, 이거. 빨간색이야.
+Yuna: Hm, Rot gefällt mir nicht. Aber die Jacke da ist blau. Blau gefällt mir! | 음, 빨간색은 마음에 안 들어. 그런데 저기 저 재킷은 파란색이네. 파란색은 마음에 들어!
+Emma: Dann probier sie an! | 그럼 입어 봐!
+Yuna: Okay. Und? Wie findest du sie? | 알았어. 어때? 어떻게 생각해?
+Emma: Super! Die Jacke steht dir. Und sie ist warm. | 좋아! 그 재킷 너한테 어울려. 그리고 따뜻해.
+Yuna: Ja, sie gefällt mir. Aber was kostet sie? | 응, 마음에 들어. 그런데 얼마지?
+Emma: Neunundfünfzig Euro. | 59유로.
+Yuna: Das ist nicht zu teuer. Ich nehme sie! | 너무 비싸지는 않네. 이걸로 할래!
+
+-- dialog B | Der Pullover ist zu klein | 같은 백화점이에요. Lukas가 점원에게 스웨터를 물어봐요. | Frau=Verkäuferin
+vor: 들으면서 찾아보세요. Lukas는 어떤 스웨터를 사나요?
+Lukas: Entschuldigung, ich suche einen Pullover. | 실례합니다, 스웨터를 찾고 있어요.
+Frau: Gern. Welche Größe hast du? | 네. 치수가 어떻게 되나요?
+Lukas: Größe M. | M이요. | say=Größe Emm.
+Frau: Hier, dieser Pullover ist grün und dieser ist schwarz. | 여기, 이 스웨터는 초록색이고 이건 검은색이에요.
+Lukas: Schwarz gefällt mir. Kann ich ihn anprobieren? | 검은색이 마음에 들어요. 입어 봐도 돼요?
+Frau: Ja, klar. Und? Passt er? | 그럼요. 어때요? 맞아요?
+Lukas: Nein, er ist zu klein. Haben Sie ihn auch in L? | 아니요, 너무 작아요. L 사이즈도 있어요? | say=Nein, er ist zu klein. Haben Sie ihn auch in Ell?
+Frau: Ja, hier bitte. | 네, 여기 있어요.
+Lukas: Danke. Er passt! Ich nehme ihn. | 고맙습니다. 맞아요! 이걸로 할게요.
+Elif: Lukas, der Pullover steht dir sehr gut! | Lukas, 그 스웨터 너한테 아주 잘 어울린다!
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Yuna는 어떤 색 재킷을 고르나요? | 파란색* | 빨간색 | 검은색
+rf: Rot gefällt Yuna. | f => Rot gefällt mir nicht.
+mc: Was kostet die Jacke? | 59 Euro* | 95 Euro | 49 Euro
+rf: Yuna findet die Jacke zu teuer. | f => Das ist nicht zu teuer. Ich nehme sie!
+mc: Lukas가 처음 입어 본 스웨터는 어땠나요? | 너무 작았어요* | 너무 컸어요 | 너무 비쌌어요
+mc: Lukas는 무엇을 사나요? | 검은색 스웨터 L 사이즈* | 초록색 스웨터 M 사이즈 | 검은색 스웨터 M 사이즈
+
+-- kultur 일요일에는 가게가 문을 닫아요
+p: 독일에서는 일요일에 거의 모든 가게가 문을 닫아요. 슈퍼마켓도, 옷 가게도 쉬어요. 그래서 장은 토요일까지 봐 둬요.
+p: 일요일에도 여는 곳은 오전의 빵집, 기차역 안의 가게, 주유소, 식당과 카페 정도예요.
+p: 평일에도 옷 가게는 보통 저녁 8시쯤 닫아요. 밤늦게까지 여는 가게는 드물어요.
+mc: 독일에서 일요일에 재킷을 사러 가면 어떻게 될까요? | 옷 가게가 문을 닫아서 살 수 없어요* | 일요일에는 값이 더 싸요 | 오전에만 살 수 있어요
+
+== wortschatz
+-- gruppe Kleidung | 옷
+die Jacke, die Jacken | 재킷, 점퍼 | Die Jacke ist warm. | 그 재킷은 따뜻해요.
+der Pullover, die Pullover | 스웨터 | Ich suche einen Pullover. | 스웨터를 찾고 있어요.
+das T-Shirt, die T-Shirts | 티셔츠 | Das T-Shirt ist neu. | 그 티셔츠는 새것이에요.
+die Hose, die Hosen | 바지 | Die Hose passt mir nicht. | 그 바지는 나한테 안 맞아요.
+der Rock, die Röcke | 치마 | Der Rock ist zu klein. | 그 치마는 너무 작아요.
+das Kleid, die Kleider | 원피스 | Das Kleid ist schön. | 그 원피스는 예뻐요.
+der Schuh, die Schuhe | 신발 | Die Schuhe sind neu. | 그 신발은 새것이에요.
+die Mütze, die Mützen | 털모자, 비니 | Die Mütze ist warm. | 그 모자는 따뜻해요.
+
+-- gruppe Farben | 색
+die Farbe, die Farben | 색 | Welche Farbe gefällt dir? | 어떤 색이 마음에 들어?
+rot | 빨간 | Die Jacke ist rot. | 그 재킷은 빨간색이에요.
+blau | 파란 | Blau gefällt mir. | 파란색이 마음에 들어요.
+grün | 초록의 | Dieser Pullover ist grün. | 이 스웨터는 초록색이에요.
+gelb | 노란 | Die Mütze ist gelb. | 그 모자는 노란색이에요.
+schwarz | 검은 | Die Hose ist schwarz. | 그 바지는 검은색이에요.
+weiß | 흰 | Das T-Shirt ist weiß. | 그 티셔츠는 흰색이에요.
+
+-- gruppe Einkaufen | 옷 사기
+das Kaufhaus, die Kaufhäuser | 백화점 | Wir gehen ins Kaufhaus. | 우리는 백화점에 가요.
+kaufen | 사다 | Ich kaufe das T-Shirt. | 나는 그 티셔츠를 사요.
+anprobieren | 입어 보다, 신어 보다 | Ich probiere die Jacke an. | 나는 재킷을 입어 봐요.
+gefallen (du gefällst, er gefällt) | 마음에 들다 | Die Jacke gefällt mir. | 그 재킷은 내 마음에 들어요.
+Das steht dir! | 너한테 어울려! | Der Pullover ist toll. Das steht dir! | 그 스웨터 멋지다. 너한테 어울려!
+passen | (크기가) 맞다 | Der Pullover passt. | 스웨터가 맞아요.
+die Größe, die Größen | 크기, 치수 | Welche Größe hast du? | 치수가 어떻게 돼?
+teuer | 비싼 | Das ist zu teuer. | 그건 너무 비싸요.
+günstig | 값이 싼 | Die Schuhe sind günstig. | 그 신발은 값이 싸요.
+warm | 따뜻한 | Die Jacke ist sehr warm. | 그 재킷은 아주 따뜻해요.
+
+-- bilder
+die Jacke, die Jacken: a single winter jacket with a zipper
+der Pullover, die Pullover: a single knitted sweater
+das T-Shirt, die T-Shirts: a single plain T-shirt
+die Hose, die Hosen: a single pair of trousers
+der Rock, die Röcke: a single knee-length skirt
+das Kleid, die Kleider: a single simple dress on a hanger
+der Schuh, die Schuhe: a single pair of sneakers
+die Mütze, die Mützen: a single knitted winter hat with a pompom
+das Kaufhaus, die Kaufhäuser: a department store front with two large shop windows that show mannequins
+kaufen: a hand that holds two shopping bags
+anprobieren: a teenager who stands in front of a tall mirror and tries on a jacket
+die Größe, die Größen: three T-shirts of different sizes side by side, small, medium and large
+
+-- aussprache eu와 äu | 둘 다 [오이]
+p: eu와 äu는 글자는 다르지만 소리는 같아요. 둘 다 [오이]라고 읽어요. neu는 [노이], teuer는 [토이어], Häuser는 [호이저]예요.
+p: 영어처럼 [유]로 읽지 않도록 조심하세요. Euro는 [오이로], Deutsch는 [도이치]예요.
+hör: neu, teuer, heute, Freund | eu
+hör: Häuser, Kaufhäuser | äu
+hör: Deutsch, Euro, neun | 자주 쓰는 낱말
+hör: Die Schuhe sind neu und nicht teuer. | 연습 문장
+
+== grammatik
+-- punkt ihn, sie, es | 그것을
+bsp: Die Jacke ist blau. Ich nehme *sie*! | 재킷이 파란색이야. 이걸로 할래!
+bsp: Schwarz gefällt mir. Kann ich *ihn* anprobieren? | 검은색이 마음에 들어요. 입어 봐도 돼요?
+bsp: Das T-Shirt ist toll. Ich kaufe *es*. | 티셔츠가 멋져. 살래.
+finde: der Pullover를 '그것을'이라고 다시 말할 때 쓴 말은 무엇인가요? | ihn* | er | es
+regel: 앞에서 말한 물건을 '그것을'이라고 다시 말할 때 der 명사는 ihn, die 명사는 sie, das 명사는 es, 복수는 sie로 받아요. der 명사만 er에서 ihn으로 모양이 바뀌어요.
+| | der Pullover | das T-Shirt | die Jacke | die Schuhe
+| 그것은 | *Er* ist schön. | *Es* ist schön. | *Sie* ist schön. | *Sie* sind schön.
+| 그것을 | Ich nehme *ihn*. | Ich nehme *es*. | Ich nehme *sie*. | Ich nehme *sie*.
+merke: einen, den, keinen처럼 der 명사는 4격에서 n으로 끝났죠. ihn도 n으로 끝나요.
+
+-- punkt gefallen, stehen, passen | 마음에 들다, 어울리다, 맞다
+bsp: Die Jacke gefällt *mir*. | 그 재킷은 내 마음에 들어.
+bsp: Rot gefällt *mir* nicht. | 빨간색은 내 마음에 안 들어.
+bsp: Die Jacke steht *dir*. | 그 재킷은 너한테 어울려.
+finde: Die Jacke gefällt mir. 이 문장의 주어는 무엇인가요? | die Jacke* | mir | ich
+regel: gefallen, stehen, passen은 물건이 주어예요. 누구에게 그런지는 mir(나에게), dir(너에게)로 말해요. 물건이 여러 개면 동사가 gefallen, stehen, passen이 돼요.
+| | 하나일 때 | 여러 개일 때
+| 마음에 들다 | Die Jacke gefäll*t* mir. | Die Schuhe gefall*en* mir.
+| 어울리다 | Der Pullover steh*t* dir. | Die Schuhe steh*en* dir.
+| 맞다 | Die Hose pass*t* mir. | Die Schuhe pass*en* mir.
+merke: '나는 그 재킷이 마음에 들어'를 Ich로 시작하면 안 돼요. 마음에 드는 물건으로 문장을 시작해요. Die Jacke gefällt mir.
+
+-- punkt welcher? – dieser | 어떤? – 이
+bsp: *Welche* Jacke? *Diese* hier? | 어떤 재킷? 여기 이거?
+bsp: *Dieser* Pullover ist grün. | 이 스웨터는 초록색이에요.
+bsp: *Welche* Größe hast du? | 치수가 어떻게 되나요?
+finde: die Jacke 앞에서 welch-와 dies-는 어떤 글자로 끝나나요? | -e* | -er | -es
+regel: welch-(어떤, 어느)와 dies-(이)는 der, die, das의 마지막 글자를 따라가요. der 명사 앞에서는 -er, das 명사 앞에서는 -es, die 명사와 복수 앞에서는 -e예요.
+| | der Pullover | das T-Shirt | die Jacke | die Schuhe
+| 어떤? | welch*er* Pullover? | welch*es* T-Shirt? | welch*e* Jacke? | welch*e* Schuhe?
+| 이 | dies*er* Pullover | dies*es* T-Shirt | dies*e* Jacke | dies*e* Schuhe
+merke: 색을 물을 때는 Welche Farbe?라고 해요. 대답은 Rot. Blau. 처럼 색 이름만 말해도 돼요.
+
+== training
+-- ex Hören | Elif가 신발을 사요. 듣고 답하세요.
+audio | Neue Schuhe
+> Elif: Entschuldigung, ich suche Schuhe.
+> Frau: Gern. Welche Größe hast du?
+> Elif: Größe achtunddreißig.
+> Frau: Diese Schuhe hier sind weiß und diese sind schwarz.
+> Elif: Weiß gefällt mir. Was kosten die Schuhe?
+> Frau: Fünfundvierzig Euro.
+> Elif: Das ist günstig. Ich nehme sie!
+mc: Elif는 무엇을 사려고 하나요? | 신발* | 바지 | 모자
+mc: Welche Größe hat Elif? | 38* | 83 | 36
+mc: Elif는 어떤 색이 마음에 드나요? | 흰색* | 검은색 | 빨간색
+mc: Was kosten die Schuhe? | 45 Euro* | 54 Euro | 35 Euro
+
+-- ex Hören | 듣고 옷의 색을 고르세요.
+hör: Yuna: Die Hose ist schwarz.
+mc: 바지는 무슨 색인가요? | 검은색* | 흰색 | 파란색
+hör: Lukas: Mein T-Shirt ist grün.
+mc: 티셔츠는 무슨 색인가요? | 초록색* | 노란색 | 빨간색
+hör: Emma: Die Mütze ist gelb.
+mc: 모자는 무슨 색인가요? | 노란색* | 초록색 | 흰색
+hör: Elif: Das Kleid ist rot.
+mc: 원피스는 무슨 색인가요? | 빨간색* | 파란색 | 검은색
+
+-- ex Lesen | 백화점 광고를 읽고 답하세요.
+text notiz | Winter im Kaufhaus
+> Diese Woche im Kaufhaus: Jacken, Pullover und Mützen!
+> Jacken: 59 Euro. Die Jacken sind warm. Es gibt sie in Blau, Rot und Schwarz.
+> Pullover: 25 Euro. Mützen: nur 9 Euro!
+> Am Samstag kosten T-Shirts nur 5 Euro.
+> Am Sonntag ist das Kaufhaus nicht offen.
+rf: Die Jacken gibt es in Grün. | f => Es gibt sie in Blau, Rot und Schwarz.
+mc: Was kostet eine Mütze? | 9 Euro* | 5 Euro | 25 Euro
+mc: Wann kosten T-Shirts nur 5 Euro? | am Samstag* | am Sonntag | am Montag
+mc: 일요일에 이 백화점에서 옷을 살 수 있나요? | 아니요, 문을 열지 않아요* | 네, 5유로에 살 수 있어요 | 네, 오전에만 열어요 => Am Sonntag ist das Kaufhaus nicht offen. offen은 '열려 있는'이라는 뜻이에요.
+
+-- ex Grammatik | ihn, sie, es 가운데 알맞은 말을 고르세요.
+gap: Der Pullover ist schön. Ich nehme [ihn|sie|es].
+gap: Die Jacke ist warm. Ich kaufe [sie|ihn|es].
+gap: Das T-Shirt ist toll. Ich probiere [es|ihn|sie] an.
+gap: Die Schuhe sind neu. Wie findest du [sie|ihn|es]?
+gap: Der Rock ist zu klein. Ich nehme [ihn|sie|es] nicht.
+gap: Das Kleid ist rot. Emma findet [es|ihn|sie] schön.
+
+-- ex Grammatik | 주어에 맞는 동사 형태를 고르세요.
+gap: Die Jacke [gefällt|gefallen] mir.
+gap: Die Schuhe [gefallen|gefällt] mir nicht.
+gap: Der Pullover [steht|stehen] dir gut.
+gap: Die Hose [passt|passen] mir nicht.
+gap: Wie [gefällt|gefallen] dir das Kleid?
+gap: Die Mützen [gefallen|gefällt] mir sehr.
+
+-- ex Grammatik | welch-와 dies-의 알맞은 형태를 고르세요.
+gap: [Welche|Welcher|Welches] Jacke gefällt dir?
+gap: [Dieser|Diese|Dieses] Pullover ist zu teuer.
+gap: [Welches|Welcher|Welche] T-Shirt nimmst du?
+gap: [Diese|Dieser|Dieses] Schuhe sind neu.
+gap: [Welcher|Welche|Welches] Rock steht mir?
+gap: [Dieses|Dieser|Diese] Kleid ist rot.
+
+-- ex Wortschatz | 색 이름과 뜻을 짝지으세요.
+paar: rot = 빨간색 ; blau = 파란색 ; grün = 초록색 ; gelb = 노란색 ; schwarz = 검은색 ; weiß = 흰색
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: die Jacke / gefällt / mir. | 그 재킷은 내 마음에 들어.
+ord: der Pullover / steht / dir / gut. | 그 스웨터는 너한테 잘 어울려.
+ord: kann / ich / ihn / anprobieren? | 입어 봐도 돼요?
+ord: welche / Größe / hast / du? | 치수가 어떻게 돼?
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Emma: Die Jacke steht dir. | 그 재킷 너한테 어울려.
+dik: Yuna: Blau gefällt mir. | 파란색이 마음에 들어.
+dik: Lukas: Ich suche einen Pullover. | 스웨터를 찾고 있어요.
+
+== sprechen
+-- redemittel
+가게에서 묻기: Ich suche einen Pullover. | 스웨터를 찾고 있어요. ; Kann ich die Jacke anprobieren? | 이 재킷 입어 봐도 돼요? ; Haben Sie die Hose auch in M? | 이 바지 M 사이즈도 있어요? ; Was kostet das? | 얼마예요?
+마음에 드는지 말하기: Die Jacke gefällt mir. | 그 재킷 마음에 들어. ; Die Schuhe gefallen mir nicht. | 그 신발은 마음에 안 들어. ; Das steht dir! | 너한테 어울려!
+크기와 값 말하기: Der Pullover ist zu klein. / Er ist zu groß. | 스웨터가 너무 작아요. / 너무 커요. ; Das ist zu teuer. | 너무 비싸요. ; Ich nehme ihn. / Ich nehme sie. / Ich nehme es. | 이걸로 할게요.
+
+-- rolle B | Lukas, Frau
+
+-- ich 내 옷 이야기 | 오늘 입은 옷과 그 색, 마음에 드는 색, 사고 싶은 옷을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 오늘 입은 옷 (Mein, Meine와 함께) | Mein Pullover
+feld: b | 그 옷의 색 | blau
+feld: c | 마음에 드는 색 | Schwarz
+feld: d | 사고 싶은 옷 (einen, ein, eine와 함께) | eine Jacke
+satz: {a} ist {b}.
+satz: {c} gefällt mir.
+satz: Ich möchte {d} kaufen.
+
+-- schreiben Schau mal! | 가게나 온라인에서 본 옷 하나를 친구에게 메시지로 알려 주세요. 무슨 옷인지, 색과 값, 마음에 드는지 써요.
+punkt: 무슨 옷인지 ; 색 ; 값 ; 마음에 드는지, 살 것인지
+start: Schau mal! …
+muster: Schau mal! Diese Jacke ist blau und sehr warm. Sie kostet 59 Euro. Das ist nicht zu teuer. Die Jacke gefällt mir. Ich probiere sie an. Vielleicht kaufe ich sie!
+check: 옷을 다시 말할 때 ihn, sie, es를 알맞게 썼나요? ; gefällt 뒤에 mir를 썼나요? ; 색 이름을 sein 뒤에 그대로 썼나요? ; 값을 숫자와 Euro로 썼나요?
+
+-- kann
+Ich kann im Geschäft nach Kleidung fragen. | 가게에서 옷에 대해 물을 수 있어요.
+Ich kann sagen, was mir gefällt. | 무엇이 마음에 드는지 말할 수 있어요.
+Ich kann über Farbe, Größe und Preis sprechen. | 색, 크기, 값을 말할 수 있어요.
+
+-- tipp 옷을 고를 때 30초
+p: 아침에 옷을 입으면서 입은 옷을 독일어로 말해 보세요. Meine Hose ist schwarz. Mein Pullover ist grün. Die Jacke ist warm.
+p: 온라인 쇼핑몰에서 옷을 볼 때도 속으로 말해 보세요. Das T-Shirt gefällt mir. Es ist zu teuer. 같은 문장을 되풀이하게 돼서 금방 입에 붙어요.

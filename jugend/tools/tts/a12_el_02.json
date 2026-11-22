@@ -1,0 +1,81 @@
+{
+ "job": "a12_el_02",
+ "who": "Elif",
+ "voice": "Emily",
+ "voice_id": "OO0WT3lY2gVNwzZMAjAI",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "Elif",
+   "parts": [
+    "Yuna, wann hast du Geburtstag?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Elif",
+   "parts": [
+    "Am dritten August."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Elif",
+   "parts": [
+    "Ja, genau. Sie will eine Party machen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Elif",
+   "parts": [
+    "Nein, heute ist der zehnte November."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Elif",
+   "parts": [
+    "Dann musst du Jun morgen anrufen!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Elif",
+   "parts": [
+    "Hast du am Sonntag Zeit?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Elif",
+   "parts": [
+    "Lukas, der Pullover steht dir sehr gut!"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Elif",
+   "parts": [
+    "Entschuldigung, ich suche Schuhe."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Elif",
+   "parts": [
+    "Größe achtunddreißig."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Elif",
+   "parts": [
+    "Weiß gefällt mir. Was kosten die Schuhe?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Yuna, wann hast du Geburtstag? [pause] Am dritten August. [pause] Ja, genau. Sie will eine Party machen. [pause] Nein, heute ist der zehnte November. [pause] Dann musst du Jun morgen anrufen! [pause] Hast du am Sonntag Zeit? [pause] Lukas, der Pullover steht dir sehr gut! [pause] Entschuldigung, ich suche Schuhe. [pause] Größe achtunddreißig. [pause] Weiß gefällt mir. Was kosten die Schuhe? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

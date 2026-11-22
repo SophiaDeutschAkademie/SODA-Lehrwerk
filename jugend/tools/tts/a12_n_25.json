@@ -1,0 +1,85 @@
+{
+ "job": "a12_n_25",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "Gestern hat es geschneit."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "Im Winter ist es kalt."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "N",
+   "parts": [
+    "Alles Gute zum Geburtstag!"
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "N",
+   "parts": [
+    "das Geschenk"
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "N",
+   "parts": [
+    "Das ist für dich."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "N",
+   "parts": [
+    "Ich schenke ihr ein Buch."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "N",
+   "parts": [
+    "feiern, hat gefeiert.",
+    "Wir feiern am Sonntag."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "N",
+   "parts": [
+    "einladen, du lädst ein, er lädt ein.",
+    "Ich lade dich ein."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "N",
+   "parts": [
+    "die Einladung, die Einladungen.",
+    "Danke für die Einladung!"
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "N",
+   "parts": [
+    "der Gast, die Gäste.",
+    "Die Gäste kommen um drei."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gestern hat es geschneit. [pause] Im Winter ist es kalt. [pause] Alles Gute zum Geburtstag! [pause] das Geschenk [pause] Das ist für dich. [pause] Ich schenke ihr ein Buch. [pause] feiern, hat gefeiert. Wir feiern am Sonntag. [pause] einladen, du lädst ein, er lädt ein. Ich lade dich ein. [pause] die Einladung, die Einladungen. Danke für die Einladung! [pause] der Gast, die Gäste. Die Gäste kommen um drei. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

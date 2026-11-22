@@ -1,0 +1,53 @@
+{
+ "job": "a12_lu_05",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a1-2/7",
+   "who": "Lukas",
+   "parts": [
+    "Wie war es?"
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "Lukas",
+   "parts": [
+    "Sommer, Meer … Und jetzt haben wir Mathe."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Lukas",
+   "parts": [
+    "Und ich? Ich habe kein Geld. Ich habe meiner Schwester gestern ein Spiel geschenkt."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Lukas",
+   "parts": [
+    "Einen Kuchen? Okay! Meine Mutter hilft mir."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Lukas",
+   "parts": [
+    "Und ich habe einen Kuchen gemacht. Für dich und für uns!"
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Lukas",
+   "parts": [
+    "Ich schenke meiner Mutter Blumen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wie war es? [pause] Sommer, Meer … Und jetzt haben wir Mathe. [pause] Und ich? Ich habe kein Geld. Ich habe meiner Schwester gestern ein Spiel geschenkt. [pause] Einen Kuchen? Okay! Meine Mutter hilft mir. [pause] Und ich habe einen Kuchen gemacht. Für dich und für uns! [pause] Ich schenke meiner Mutter Blumen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

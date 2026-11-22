@@ -1,0 +1,86 @@
+{
+ "job": "a12_n_18",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Wie war dein Wochenende?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Ich habe Fußball gespielt."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Es war super."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "gestern"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "machen, hat gemacht.",
+    "Was hast du gemacht?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "spielen, hat gespielt."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "lernen, hat gelernt.",
+    "Ich habe für den Test gelernt."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "kochen, hat gekocht.",
+    "Ich habe mit Thomas gekocht."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "kaufen, hat gekauft.",
+    "Emma hat eine Jacke gekauft."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "hören, hat gehört.",
+    "Ich habe Musik gehört."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wie war dein Wochenende? [pause] Ich habe Fußball gespielt. [pause] Es war super. [pause] gestern [pause] machen, hat gemacht. Was hast du gemacht? [pause] spielen, hat gespielt. [pause] lernen, hat gelernt. Ich habe für den Test gelernt. [pause] kochen, hat gekocht. Ich habe mit Thomas gekocht. [pause] kaufen, hat gekauft. Emma hat eine Jacke gekauft. [pause] hören, hat gehört. Ich habe Musik gehört. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

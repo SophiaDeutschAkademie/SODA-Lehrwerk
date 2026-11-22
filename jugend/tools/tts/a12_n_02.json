@@ -1,0 +1,90 @@
+{
+ "job": "a12_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "das Bett, die Betten.",
+    "Das Bett ist neu."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Schrank, die Schränke.",
+    "Die Tasche ist im Schrank."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Schreibtisch, die Schreibtische.",
+    "Das Heft ist auf dem Schreibtisch."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "das Regal, die Regale.",
+    "Die Bücher sind im Regal."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Lampe, die Lampen.",
+    "Die Lampe ist neben dem Bett."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "das Sofa, die Sofas.",
+    "Milo schläft auf dem Sofa."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "das Handy, die Handys."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "groß.",
+    "Das Wohnzimmer ist groß."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "klein.",
+    "Mein Zimmer ist klein."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "hell.",
+    "Die Küche ist hell."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Bett, die Betten. Das Bett ist neu. [pause] der Schrank, die Schränke. Die Tasche ist im Schrank. [pause] der Schreibtisch, die Schreibtische. Das Heft ist auf dem Schreibtisch. [pause] das Regal, die Regale. Die Bücher sind im Regal. [pause] die Lampe, die Lampen. Die Lampe ist neben dem Bett. [pause] das Sofa, die Sofas. Milo schläft auf dem Sofa. [pause] das Handy, die Handys. [pause] groß. Das Wohnzimmer ist groß. [pause] klein. Mein Zimmer ist klein. [pause] hell. Die Küche ist hell. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "a12_sa_01",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "Sabine",
+   "parts": [
+    "Ist es in der Tasche?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Sabine",
+   "parts": [
+    "Auf dem Schreibtisch? Neben der Lampe?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Sabine",
+   "parts": [
+    "Emma! Dein Zimmer ist ein Chaos. Heute räumst du dein Zimmer auf!"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Sabine",
+   "parts": [
+    "Ich fahre mit dem Auto."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Sabine",
+   "parts": [
+    "Guten Morgen, Yuna! Was ist los? Bist du krank?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Sabine",
+   "parts": [
+    "Oh. Hast du auch Fieber?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Sabine",
+   "parts": [
+    "Ja, du hast Fieber. Heute darfst du nicht in die Schule gehen."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Sabine",
+   "parts": [
+    "Kein Problem. Du sollst im Bett bleiben und viel Tee trinken."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Sabine",
+   "parts": [
+    "Gute Besserung! Ich rufe Frau Schneider an."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Sabine",
+   "parts": [
+    "Du sollst im Bett bleiben."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ist es in der Tasche? [pause] Auf dem Schreibtisch? Neben der Lampe? [pause] Emma! Dein Zimmer ist ein Chaos. Heute räumst du dein Zimmer auf! [pause] Ich fahre mit dem Auto. [pause] Guten Morgen, Yuna! Was ist los? Bist du krank? [pause] Oh. Hast du auch Fieber? [pause] Ja, du hast Fieber. Heute darfst du nicht in die Schule gehen. [pause] Kein Problem. Du sollst im Bett bleiben und viel Tee trinken. [pause] Gute Besserung! Ich rufe Frau Schneider an. [pause] Du sollst im Bett bleiben. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

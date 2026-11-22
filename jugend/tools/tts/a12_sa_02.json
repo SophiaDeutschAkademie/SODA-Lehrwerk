@@ -1,0 +1,53 @@
+{
+ "job": "a12_sa_02",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a1-2/7",
+   "who": "Sabine",
+   "parts": [
+    "In den Ferien sind wir nach Berlin gefahren. Wir sind vier Tage geblieben."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "Sabine",
+   "parts": [
+    "Das Hotel war klein, aber gemütlich."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "Sabine",
+   "parts": [
+    "Am Montag sind wir ins Museum gegangen. Am Dienstag haben wir eingekauft."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "Sabine",
+   "parts": [
+    "Es war sehr kalt und am Mittwoch hat es geschneit."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "Sabine",
+   "parts": [
+    "Am Donnerstag sind wir zurückgekommen."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Sabine",
+   "parts": [
+    "Kommt alle! Zuerst singen wir, dann essen wir den Kuchen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] In den Ferien sind wir nach Berlin gefahren. Wir sind vier Tage geblieben. [pause] Das Hotel war klein, aber gemütlich. [pause] Am Montag sind wir ins Museum gegangen. Am Dienstag haben wir eingekauft. [pause] Es war sehr kalt und am Mittwoch hat es geschneit. [pause] Am Donnerstag sind wir zurückgekommen. [pause] Kommt alle! Zuerst singen wir, dann essen wir den Kuchen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

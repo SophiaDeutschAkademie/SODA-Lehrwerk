@@ -1,0 +1,82 @@
+{
+ "job": "a12_n_21",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "das Ei, die Eier.",
+    "Ich esse ein Ei."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "gemacht, gespielt, gelernt, gekocht"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "gesehen, gegessen, getrunken"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "aufgeräumt, eingekauft"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Ich habe gekocht und gegessen."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "Wie waren die Ferien?"
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "Wir sind nach Berlin gefahren."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "Es war kalt."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "das Meer"
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "fahren, ist gefahren."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Ei, die Eier. Ich esse ein Ei. [pause] gemacht, gespielt, gelernt, gekocht [pause] gesehen, gegessen, getrunken [pause] aufgeräumt, eingekauft [pause] Ich habe gekocht und gegessen. [pause] Wie waren die Ferien? [pause] Wir sind nach Berlin gefahren. [pause] Es war kalt. [pause] das Meer [pause] fahren, ist gefahren. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

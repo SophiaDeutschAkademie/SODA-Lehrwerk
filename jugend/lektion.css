@@ -406,6 +406,7 @@ body[data-typ="test"] .schritte{grid-template-columns:repeat(5,minmax(0,1fr));ma
 .bilder li{border-radius:14px;overflow:hidden;background:var(--soft)}
 .bilder figure{background:#fff}
 .bilder img{display:block;width:100%}
+.bilder .karte-bild img{width:46%;max-width:220px;margin:0 auto}
 .b-text{padding:10px 12px 12px}
 .b-n{font-size:12.5px;font-weight:700;color:var(--accent-ink)}
 .bz{display:block;width:100%;margin-top:6px;padding:8px 10px;border-radius:10px;background:var(--surface);text-align:left}

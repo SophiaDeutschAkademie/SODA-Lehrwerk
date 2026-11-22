@@ -1,0 +1,89 @@
+{
+ "job": "a12_n_09",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "das Wochenende, die Wochenenden.",
+    "Was macht ihr am Wochenende?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Geburtstag, die Geburtstage.",
+    "Wann hast du Geburtstag?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Monat, die Monate.",
+    "Der Monat hat dreißig Tage."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Termin, die Termine.",
+    "Ich habe einen Termin."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Test, die Tests.",
+    "Der Test ist am Montag."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "das Museum, die Museen.",
+    "Das Museum ist sehr interessant."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "die Party, die Partys.",
+    "Emma will eine Party machen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "die Schokolade, die Schokoladen.",
+    "Ich esse gern Schokolade."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Januar, Februar, März."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "April, Mai, Juni."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Wochenende, die Wochenenden. Was macht ihr am Wochenende? [pause] der Geburtstag, die Geburtstage. Wann hast du Geburtstag? [pause] der Monat, die Monate. Der Monat hat dreißig Tage. [pause] der Termin, die Termine. Ich habe einen Termin. [pause] der Test, die Tests. Der Test ist am Montag. [pause] das Museum, die Museen. Das Museum ist sehr interessant. [pause] die Party, die Partys. Emma will eine Party machen. [pause] die Schokolade, die Schokoladen. Ich esse gern Schokolade. [pause] Januar, Februar, März. [pause] April, Mai, Juni. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

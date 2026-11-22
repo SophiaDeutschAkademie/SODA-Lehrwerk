@@ -1,0 +1,46 @@
+{
+ "job": "a12s_em_01",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Emma",
+   "parts": [
+    "Yuna, hast du morgen Zeit? Ich will in die Stadt fahren."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Emma",
+   "parts": [
+    "Ich muss ein Geschenk kaufen. Lukas hat am Montag Geburtstag."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Emma",
+   "parts": [
+    "Vielleicht ein T-Shirt. Blau gefällt ihm."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Emma",
+   "parts": [
+    "Um zehn. Wir nehmen den Bus."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Emma",
+   "parts": [
+    "Wann hast du Geburtstag?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Yuna, hast du morgen Zeit? Ich will in die Stadt fahren. [pause] Ich muss ein Geschenk kaufen. Lukas hat am Montag Geburtstag. [pause] Vielleicht ein T-Shirt. Blau gefällt ihm. [pause] Um zehn. Wir nehmen den Bus. [pause] Wann hast du Geburtstag? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

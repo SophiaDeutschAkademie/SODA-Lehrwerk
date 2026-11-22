@@ -1,0 +1,74 @@
+{
+ "job": "a12_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Zum Kino? Geh hier geradeaus und dann rechts."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Das Kino ist neben dem Supermarkt."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Nein. Zu Fuß sind es fünf Minuten."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Gern. Welche Größe hast du?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Hier, dieser Pullover ist grün und dieser ist schwarz."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Ja, klar. Und? Passt er?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Ja, hier bitte."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Diese Schuhe hier sind weiß und diese sind schwarz."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Fünfundvierzig Euro."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Zum Kino? Geh hier geradeaus und dann rechts. [pause] Das Kino ist neben dem Supermarkt. [pause] Nein. Zu Fuß sind es fünf Minuten. [pause] Gern. Welche Größe hast du? [pause] Hier, dieser Pullover ist grün und dieser ist schwarz. [pause] Ja, klar. Und? Passt er? [pause] Ja, hier bitte. [pause] Diese Schuhe hier sind weiß und diese sind schwarz. [pause] Fünfundvierzig Euro. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

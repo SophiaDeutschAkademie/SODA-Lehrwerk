@@ -1,0 +1,53 @@
+{
+ "job": "a12s_lu_01",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a1-2/station-2",
+   "who": "Lukas",
+   "parts": [
+    "In den Ferien bin ich nach Österreich gefahren. Wir sind eine Woche geblieben."
+   ]
+  },
+  {
+   "pid": "a1-2/station-2",
+   "who": "Lukas",
+   "parts": [
+    "Am Morgen bin ich früh aufgestanden. Dann bin ich Ski gefahren."
+   ]
+  },
+  {
+   "pid": "a1-2/station-2",
+   "who": "Lukas",
+   "parts": [
+    "Am Mittwoch hatte ich Kopfschmerzen. Am Nachmittag bin ich im Hotel geblieben und habe viel geschlafen."
+   ]
+  },
+  {
+   "pid": "a1-2/station-2",
+   "who": "Lukas",
+   "parts": [
+    "Am Freitag habe ich meiner Oma eine Postkarte geschrieben."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Gestern hat es geregnet. Wir sind ins Kino gegangen."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Wie kommst du zur Schule?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] In den Ferien bin ich nach Österreich gefahren. Wir sind eine Woche geblieben. [pause] Am Morgen bin ich früh aufgestanden. Dann bin ich Ski gefahren. [pause] Am Mittwoch hatte ich Kopfschmerzen. Am Nachmittag bin ich im Hotel geblieben und habe viel geschlafen. [pause] Am Freitag habe ich meiner Oma eine Postkarte geschrieben. [pause] Gestern hat es geregnet. Wir sind ins Kino gegangen. [pause] Wie kommst du zur Schule? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

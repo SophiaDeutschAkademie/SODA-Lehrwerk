@@ -1,0 +1,91 @@
+{
+ "job": "a12_n_06",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Minute, die Minuten.",
+    "Zu Fuß sind es zehn Minuten."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Bus, die Busse.",
+    "Ich fahre mit dem Bus."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Bahn, die Bahnen.",
+    "Elif kommt mit der Bahn."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Fahrrad, die Fahrräder.",
+    "Ich habe kein Fahrrad."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Auto, die Autos.",
+    "Sabine fährt mit dem Auto."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Zug, die Züge.",
+    "Der Zug kommt um zehn Uhr."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Linie, die Linien.",
+    "Nimm die Linie zwölf."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Ticket, die Tickets.",
+    "Kauft ein Ticket!"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "einsteigen.",
+    "Wir steigen am Bahnhof ein."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "aussteigen.",
+    "Steig am Stadtpark aus."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Minute, die Minuten. Zu Fuß sind es zehn Minuten. [pause] der Bus, die Busse. Ich fahre mit dem Bus. [pause] die Bahn, die Bahnen. Elif kommt mit der Bahn. [pause] das Fahrrad, die Fahrräder. Ich habe kein Fahrrad. [pause] das Auto, die Autos. Sabine fährt mit dem Auto. [pause] der Zug, die Züge. Der Zug kommt um zehn Uhr. [pause] die Linie, die Linien. Nimm die Linie zwölf. [pause] das Ticket, die Tickets. Kauft ein Ticket! [pause] einsteigen. Wir steigen am Bahnhof ein. [pause] aussteigen. Steig am Stadtpark aus. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,74 @@
+{
+ "job": "a12_em_05",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a1-2/7",
+   "who": "Emma",
+   "parts": [
+    "Es war sehr kalt. Und es hat geschneit!"
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "Emma",
+   "parts": [
+    "Es war sehr kalt."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Danke, Yuna! Oh, ein Buch! Das gefällt mir sehr."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Wie schön! Mama, kannst du mir eine Vase geben?"
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Danke, Lukas! Schaut mal, meine Oma hat mir eine Kamera geschenkt!"
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Papa, Oma hat am Samstag Geburtstag. Was schenken wir ihr?"
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Und ich? Ich kaufe ihr Blumen."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Und Yuna?"
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Meine Freunde haben mir ein Buch geschenkt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Es war sehr kalt. Und es hat geschneit! [pause] Es war sehr kalt. [pause] Danke, Yuna! Oh, ein Buch! Das gefällt mir sehr. [pause] Wie schön! Mama, kannst du mir eine Vase geben? [pause] Danke, Lukas! Schaut mal, meine Oma hat mir eine Kamera geschenkt! [pause] Papa, Oma hat am Samstag Geburtstag. Was schenken wir ihr? [pause] Und ich? Ich kaufe ihr Blumen. [pause] Und Yuna? [pause] Meine Freunde haben mir ein Buch geschenkt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

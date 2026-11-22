@@ -1,0 +1,32 @@
+{
+ "job": "a12s_yu_03",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Ja, gern! Was willst du machen?"
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Was schenkst du ihm?"
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Gute Idee! Wann fahren wir?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ja, gern! Was willst du machen? [pause] Was schenkst du ihm? [pause] Gute Idee! Wann fahren wir? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

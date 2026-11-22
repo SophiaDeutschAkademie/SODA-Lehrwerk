@@ -1,0 +1,90 @@
+{
+ "job": "a12_n_03",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "dunkel.",
+    "Das Bad ist dunkel."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "gemütlich.",
+    "Das Sofa ist gemütlich."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "schön.",
+    "Dein Zimmer ist schön."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "es gibt.",
+    "Im Zimmer gibt es einen Schrank."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "suchen.",
+    "Ich suche mein Handy."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "in.",
+    "Das Heft ist in der Tasche."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "auf.",
+    "Das Handy ist auf dem Tisch."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "unter.",
+    "Der Hund ist unter dem Bett."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "neben.",
+    "Der Stuhl ist neben dem Schrank."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Küche, Tür, Stühle, Bücher"
+   ]
+  }
+ ],
+ "script": "Also. [pause] dunkel. Das Bad ist dunkel. [pause] gemütlich. Das Sofa ist gemütlich. [pause] schön. Dein Zimmer ist schön. [pause] es gibt. Im Zimmer gibt es einen Schrank. [pause] suchen. Ich suche mein Handy. [pause] in. Das Heft ist in der Tasche. [pause] auf. Das Handy ist auf dem Tisch. [pause] unter. Der Hund ist unter dem Bett. [pause] neben. Der Stuhl ist neben dem Schrank. [pause] Küche, Tür, Stühle, Bücher [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,148 @@
+@id a1-2/stufentest
+@typ test
+
+== hoeren
+-- info A1.2를 돌아보는 평가예요
+p: 듣기, 읽기, 쓰기, 말하기 네 부분으로 되어 있어요. 시간 제한은 없어요. 문제를 풀면 바로 맞았는지 알려 주고, 마지막 Ergebnis에서 부분마다 몇 문제를 맞혔는지 보여 줘요.
+p: 음성은 여러 번 들을 수 있어요. 먼저 한 번만 듣고 풀어 보면 내 듣기 실력을 더 정확히 알 수 있어요.
+
+-- ex Hören 1 | 짧은 말을 듣고 알맞은 것을 고르세요.
+hör: Mann: Gehen Sie geradeaus und dann links. Das Museum ist neben dem Supermarkt.
+mc: 박물관은 어디에 있나요? | 슈퍼마켓 옆* | 영화관 옆 | 수영장 옆 => Das Museum ist neben dem Supermarkt.
+hör: Frau: Die Jacke kostet neunundvierzig Euro.
+mc: 재킷은 얼마인가요? | 49 €* | 94 € | 59 € => neunundvierzig는 49예요. 일의 자리 9를 먼저 말해요.
+hör: Thomas: Ich habe am dreizehnten Juni Geburtstag.
+mc: Thomas의 생일은 언제인가요? | 6월 13일* | 6월 3일 | 7월 13일 => am dreizehnten Juni
+hör: Sabine: Du hast Fieber. Du sollst heute zu Hause bleiben.
+mc: Sabine는 무엇을 하라고 하나요? | 집에 있으라고 해요* | 학교에 가라고 해요 | 병원에 가라고 해요 => Du sollst heute zu Hause bleiben.
+hör: Lukas: Gestern hat es geregnet. Wir sind ins Kino gegangen.
+mc: Lukas는 어제 무엇을 했나요? | 영화관에 갔어요* | 축구를 했어요 | 수영장에 갔어요 => Wir sind ins Kino gegangen.
+
+-- ex Hören 2 | Emma와 Yuna가 금요일 저녁에 이야기해요. 듣고 답하세요.
+audio | Am Freitagabend
+> Emma: Yuna, hast du morgen Zeit? Ich will in die Stadt fahren.
+> Yuna: Ja, gern! Was willst du machen?
+> Emma: Ich muss ein Geschenk kaufen. Lukas hat am Montag Geburtstag.
+> Yuna: Was schenkst du ihm?
+> Emma: Vielleicht ein T-Shirt. Blau gefällt ihm.
+> Yuna: Gute Idee! Wann fahren wir?
+> Emma: Um zehn. Wir nehmen den Bus.
+rf: Emma will morgen in die Stadt fahren. | r => Ich will in die Stadt fahren.
+mc: Wer hat am Montag Geburtstag? | Lukas* | Emma | Yuna => Lukas hat am Montag Geburtstag.
+mc: Was will Emma kaufen? | ein T-Shirt* | ein Buch | Schuhe => Vielleicht ein T-Shirt.
+mc: 두 사람은 무엇을 타고 가나요? | 버스* | 전철 | 자전거 => Wir nehmen den Bus.
+
+-- ex Hören 3 | Elif가 지난주 이야기를 해요. 듣고 답하세요.
+audio | Meine Woche
+> Elif: Letzte Woche war ich krank. Ich hatte Fieber und Halsschmerzen.
+> Elif: Ich bin drei Tage zu Hause geblieben. Ich habe viel geschlafen und Tee getrunken.
+> Elif: Am Donnerstag hat Yuna mich besucht. Sie hat mir ein Buch geschenkt.
+> Elif: Am Samstag war ich wieder gesund. Ich bin mit Emma ins Schwimmbad gegangen.
+mc: Elif는 어디가 아팠나요? | 열이 나고 목이 아팠어요* | 배가 아팠어요 | 머리가 아팠어요 => Ich hatte Fieber und Halsschmerzen.
+mc: Elif는 며칠 동안 집에 있었나요? | 사흘* | 이틀 | 일주일 => Ich bin drei Tage zu Hause geblieben.
+mc: Was hat Yuna Elif geschenkt? | ein Buch* | Blumen | Tee => Sie hat mir ein Buch geschenkt.
+rf: Am Samstag ist Elif ins Kino gegangen. | f => Ich bin mit Emma ins Schwimmbad gegangen.
+
+== lesen
+-- ex Lesen 1 | Elif가 자기 방을 쓴 글이에요. 읽고 답하세요.
+text notiz | Mein Zimmer
+> Mein Zimmer ist klein, aber hell. Es gibt ein Bett, einen Schreibtisch und ein Regal.
+> Der Schreibtisch ist neben dem Fenster. Auf dem Schreibtisch ist mein Computer.
+> Meine Bücher sind im Regal. Mein Fußball ist unter dem Bett.
+> Es gibt keinen Schrank. Meine Jacken sind im Zimmer von Emre!
+rf: Das Zimmer ist dunkel. | f => Mein Zimmer ist klein, aber hell.
+mc: Wo ist der Schreibtisch? | neben dem Fenster* | neben dem Bett | neben dem Regal => Der Schreibtisch ist neben dem Fenster.
+mc: Was gibt es nicht? | einen Schrank* | ein Regal | ein Bett => Es gibt keinen Schrank.
+mc: 축구공은 어디에 있나요? | 침대 밑에* | 책상 위에 | 책장 안에 => Mein Fußball ist unter dem Bett.
+
+-- ex Lesen 2 | Lukas가 보낸 초대장이에요. 읽고 답하세요.
+text notiz | Einladung
+> Hallo Yuna,
+> ich habe am neunten März Geburtstag und ich mache eine Party!
+> Die Party ist am Samstag um fünf Uhr bei mir zu Hause.
+> Nimm die Linie 5 und steig am Stadtpark aus. Mein Haus ist neben dem Schwimmbad.
+> Kannst du kommen? Schreib mir bitte!
+> Dein Lukas
+mc: Wann hat Lukas Geburtstag? | am 9. März* | am 19. März | am 9. Mai => am neunten März
+rf: Die Party ist am Sonntag. | f => Die Party ist am Samstag um fünf Uhr.
+mc: Wo steigt Yuna aus? | am Stadtpark* | am Schwimmbad | am Bahnhof => Steig am Stadtpark aus.
+mc: Lukas는 Yuna에게 무엇을 부탁하나요? | 답장을 써 달라고 해요* | 선물을 사 오라고 해요 | 다섯 시 전에 오라고 해요 => Schreib mir bitte!
+
+-- ex Lesen 3 | Tim이 Lukas에게 보낸 엽서예요. 읽고 답하세요.
+text notiz | Postkarte
+> Lieber Lukas,
+> viele Grüße aus der Schweiz! Wir sind am Samstag in die Berge gefahren.
+> Es ist sehr kalt und gestern hat es geschneit. Ich bin viel Ski gefahren.
+> Heute bin ich im Hotel geblieben. Mein Bein tut weh!
+> Am Sonntag kommen wir zurück.
+> Dein Tim
+mc: Wo ist Tim? | in der Schweiz* | in Österreich | in Berlin => Viele Grüße aus der Schweiz!
+mc: Wie ist das Wetter? | Es ist kalt und es hat geschneit.* | Es ist sonnig und heiß. | Es regnet.
+rf: Tim ist heute Ski gefahren. | f => Heute bin ich im Hotel geblieben.
+mc: Tim은 오늘 왜 호텔에 있나요? | 다리가 아파서* | 눈이 와서 | 피곤해서 => Mein Bein tut weh!
+
+== schreiben
+-- ex Schreiben 1 | 낱말을 순서대로 놓아 문장을 만드세요.
+ord: das Handy / ist / auf dem Tisch. | 휴대폰은 탁자 위에 있어.
+ord: ich / fahre / mit dem Bus / zur Schule. | 나는 버스를 타고 학교에 가.
+ord: wir / wollen / ins Kino / gehen. | 우리는 영화관에 가려고 해.
+ord: die Jacke / gefällt / mir. | 그 재킷은 내 마음에 들어.
+ord: ich / habe / einen Film / gesehen. | 나는 영화를 봤어.
+ord: wir / sind / nach Berlin / gefahren. | 우리는 베를린에 갔어.
+
+-- ex Schreiben 2 | 괄호 안의 낱말을 알맞은 형태로 바꿔 빈칸에 쓰세요.
+gap: Das Buch ist auf [=dem] Tisch. (der Tisch) | 책은 탁자 위에 있어요. => auf dem Tisch
+gap: Ich fahre mit [=der] Bahn. (die Bahn) | 나는 전철을 타고 가요. => mit der Bahn
+gap: [=Kannst] du morgen kommen? (können) | 너 내일 올 수 있어? => du kannst
+gap: Der Pullover ist schön. Ich nehme [=ihn]. (er) | 스웨터가 예뻐요. 그것을 살래요. => der Pullover는 ihn으로 받아요.
+gap: Mein Kopf [=tut] weh. (wehtun) | 머리가 아파요. => Mein Kopf tut weh.
+gap: Ich habe Pizza [=gegessen]. (essen) | 나는 피자를 먹었어요. => essen, hat gegessen
+gap: Wir [=sind] ans Meer gefahren. (sein) | 우리는 바다에 갔어요. => fahren은 sein과 함께 써요.
+
+-- ex Schreiben 3 | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Ich suche mein Handy. | 나는 휴대폰을 찾고 있어요.
+dik: N: Ist es weit? | 먼가요?
+dik: N: Das ist zu teuer. | 그건 너무 비싸요.
+dik: N: Es hat geschneit! | 눈이 왔어요!
+
+-- schreiben Mein Text | 지난 주말이나 방학에 한 일을 써요. 아래 내용을 넣어서 여섯 문장 넘게 써 보세요. 이 글은 자동으로 채점하지 않아요. 다 쓴 뒤에 예시 글과 비교하고 아래 항목을 스스로 확인해요.
+punkt: 언제, 어디에 갔는지 ; 무엇을 타고 갔는지 ; 날씨 ; 한 일 두 가지 ; 어땠는지
+start: Am Wochenende …
+muster: Am Wochenende bin ich mit Mina in die Stadt gefahren. Wir sind mit dem Bus gefahren. Das Wetter war schön. Zuerst sind wir ins Kaufhaus gegangen. Ich habe eine Mütze gekauft. Dann haben wir Pizza gegessen. Am Abend haben wir einen Film gesehen. Das Wochenende war super!
+check: 여섯 문장 넘게 썼어요 ; 움직이는 동사를 sein과 함께 썼어요 ; 과거분사를 문장 맨 끝에 썼어요 ; mit dem Bus처럼 mit 뒤에 dem이나 der를 썼어요 ; 명사와 문장 첫 글자를 대문자로 썼어요
+
+== sprechen
+-- info 소리 내어 말해요
+p: 말하기는 자동으로 채점하지 않아요. 질문을 듣고 바로 소리 내어 답한 다음, 예시 답과 비교해 보세요.
+p: 녹음 단추를 누르면 내 목소리를 다시 들을 수 있어요. 녹음은 저장되지 않아요.
+
+-- sprich Fragen und Antworten | 질문을 듣고 소리 내어 답하세요. 한두 문장으로 답하면 돼요. | Frau=Verkäuferin
+f: Emma: Wie war dein Wochenende? | 주말 어땠어? => Es war super. Ich habe Fußball gespielt.
+f: Lukas: Was hast du gemacht? | 뭐 했어? => Ich habe einen Film gesehen.
+f: Elif: Wie waren die Ferien? | 방학 어땠어? => Toll! Ich bin nach Busan gefahren.
+f: Elif: Hast du am Sonntag Zeit? | 일요일에 시간 있어? => Ja, am Sonntag habe ich frei. / Nein, leider nicht. Ich muss lernen.
+f: Sabine: Was tut dir weh? | 어디가 아프니? => Mein Kopf tut weh.
+f: Frau: Welche Größe hast du? | 치수가 어떻게 되나요? => Größe M.
+f: Lukas: Wie kommst du zur Schule? | 학교에 어떻게 가? => Ich fahre mit dem Bus. / Ich gehe zu Fuß.
+f: Emma: Wann hast du Geburtstag? | 생일이 언제야? => Am zwölften März.
+
+-- sprich Meine Ferien | 아래 낱말을 보면서 30초쯤 방학이나 여행 이야기를 하세요. 먼저 혼자 말해 보고, 그다음에 예시를 확인해요.
+thema: Wohin? ; Wann? ; Wetter ; Essen ; Wie war es?
+muster: Im Sommer bin ich nach Busan gefahren. Ich bin mit dem Zug gefahren. Das Wetter war sonnig und heiß. Ich bin im Meer geschwommen und ich habe viel Fisch gegessen. Die Reise war super!
+
+== ergebnis
+-- bilanz
+hoch: A1.2에서 배운 내용을 잘 익혔어요. 이것으로 A1 과정을 마쳤어요.
+mittel: 대부분 익혔어요. 틀린 문제의 설명을 다시 읽고, 점수가 낮은 부분은 Station 1과 Station 2의 복습 문제로 한 번 더 연습해 보세요.
+tief: 아직 헷갈리는 내용이 많아요. Station 1과 Station 2의 복습 문제를 다시 풀고, 어려웠던 과의 Grammatik과 Training을 본 다음 평가를 한 번 더 해 보세요.
+
+-- info 쓰기와 말하기는 스스로 확인해요
+p: 글쓰기 과제와 말하기는 점수에 들어가지 않아요. 아래 세 가지를 얼마나 할 수 있는지 스스로 표시해 보세요.
+
+-- kann
+Ich kann über das Wochenende und die Ferien schreiben. | 주말과 방학에 한 일을 글로 쓸 수 있어요.
+Ich kann einfache Fragen beantworten. | 쉬운 질문에 답할 수 있어요.
+Ich kann von einer Reise erzählen. | 여행 이야기를 말할 수 있어요.
+
+-- info 다음 단계는 A2.1 Dazugehören
+p: A2.1에서는 새 학기가 시작돼요. 친구, 미디어, 집안일, 동아리 이야기를 배워요. A2.1 본문은 준비 중이고, 올라오면 목차에서 열 수 있어요.

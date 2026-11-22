@@ -1,0 +1,25 @@
+{
+ "job": "a12s_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Die Jacke kostet neunundvierzig Euro."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Welche Größe hast du?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Die Jacke kostet neunundvierzig Euro. [pause] Welche Größe hast du? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

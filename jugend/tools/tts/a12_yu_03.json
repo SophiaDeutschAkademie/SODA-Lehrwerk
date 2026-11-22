@@ -1,0 +1,81 @@
+{
+ "job": "a12_yu_03",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Toll! Und heute? Ist heute der neunte November?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Oh! Dann ist morgen der elfte November. Mein Bruder hat Geburtstag!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Ja, das will ich machen."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Yuna",
+   "parts": [
+    "Welche Jacke? Diese hier?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Yuna",
+   "parts": [
+    "Hm, Rot gefällt mir nicht. Aber die Jacke da ist blau. Blau gefällt mir!"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Yuna",
+   "parts": [
+    "Okay. Und? Wie findest du sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Yuna",
+   "parts": [
+    "Ja, sie gefällt mir. Aber was kostet sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Yuna",
+   "parts": [
+    "Das ist nicht zu teuer. Ich nehme sie!"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Yuna",
+   "parts": [
+    "Die Hose ist schwarz."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Yuna",
+   "parts": [
+    "Blau gefällt mir."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Toll! Und heute? Ist heute der neunte November? [pause] Oh! Dann ist morgen der elfte November. Mein Bruder hat Geburtstag! [pause] Ja, das will ich machen. [pause] Welche Jacke? Diese hier? [pause] Hm, Rot gefällt mir nicht. Aber die Jacke da ist blau. Blau gefällt mir! [pause] Okay. Und? Wie findest du sie? [pause] Ja, sie gefällt mir. Aber was kostet sie? [pause] Das ist nicht zu teuer. Ich nehme sie! [pause] Die Hose ist schwarz. [pause] Blau gefällt mir. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

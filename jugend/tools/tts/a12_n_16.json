@@ -1,0 +1,91 @@
+{
+ "job": "a12_n_16",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "krank.",
+    "Yuna ist krank."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "gesund.",
+    "Wir sind gesund."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "müde.",
+    "Ich bin so müde."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "wehtun.",
+    "Was tut dir weh?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Schmerzen.",
+    "Ich habe Halsschmerzen."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "das Fieber.",
+    "Hast du Fieber?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "der Arzt, die Ärzte.",
+    "Ich muss zum Arzt gehen."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Tablette, die Tabletten.",
+    "Ich nehme eine Tablette."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "der Tee, die Tees.",
+    "Ich trinke Tee."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "viel.",
+    "Du sollst viel Tee trinken."
+   ]
+  }
+ ],
+ "script": "Also. [pause] krank. Yuna ist krank. [pause] gesund. Wir sind gesund. [pause] müde. Ich bin so müde. [pause] wehtun. Was tut dir weh? [pause] die Schmerzen. Ich habe Halsschmerzen. [pause] das Fieber. Hast du Fieber? [pause] der Arzt, die Ärzte. Ich muss zum Arzt gehen. [pause] die Tablette, die Tabletten. Ich nehme eine Tablette. [pause] der Tee, die Tees. Ich trinke Tee. [pause] viel. Du sollst viel Tee trinken. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "a12_em_03",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "Emma",
+   "parts": [
+    "Am Samstag kann ich leider nicht."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Emma",
+   "parts": [
+    "Schau mal, Yuna! Die Jacke hier ist schön."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Emma",
+   "parts": [
+    "Ja, diese. Sie ist rot."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Emma",
+   "parts": [
+    "Dann probier sie an!"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Emma",
+   "parts": [
+    "Super! Die Jacke steht dir. Und sie ist warm."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Emma",
+   "parts": [
+    "Neunundfünfzig Euro."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Emma",
+   "parts": [
+    "Die Mütze ist gelb."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Emma",
+   "parts": [
+    "Die Jacke steht dir."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Emma",
+   "parts": [
+    "Yuna ist krank. Es geht ihr nicht gut. Sie hat Fieber."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Emma",
+   "parts": [
+    "Der Kopf und der Hals."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Am Samstag kann ich leider nicht. [pause] Schau mal, Yuna! Die Jacke hier ist schön. [pause] Ja, diese. Sie ist rot. [pause] Dann probier sie an! [pause] Super! Die Jacke steht dir. Und sie ist warm. [pause] Neunundfünfzig Euro. [pause] Die Mütze ist gelb. [pause] Die Jacke steht dir. [pause] Yuna ist krank. Es geht ihr nicht gut. Sie hat Fieber. [pause] Der Kopf und der Hals. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

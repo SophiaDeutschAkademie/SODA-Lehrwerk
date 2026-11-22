@@ -1,0 +1,81 @@
+{
+ "job": "a12_lu_03",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "Lukas",
+   "parts": [
+    "Danke. Er passt! Ich nehme ihn."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lukas",
+   "parts": [
+    "Mein T-Shirt ist grün."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lukas",
+   "parts": [
+    "Ich suche einen Pullover."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lukas",
+   "parts": [
+    "Was tut ihr weh?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lukas",
+   "parts": [
+    "Gute Idee! Und Tim? Ist er auch krank?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lukas",
+   "parts": [
+    "Guten Tag. Mein Bauch tut weh. Und ich bin sehr müde."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lukas",
+   "parts": [
+    "Nein, Kopfschmerzen habe ich nicht."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lukas",
+   "parts": [
+    "Okay. Darf ich Fußball spielen?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lukas",
+   "parts": [
+    "Ich habe Bauchschmerzen."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Lukas",
+   "parts": [
+    "Super! Am Samstag habe ich Fußball gespielt. Das Spiel war spannend."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Danke. Er passt! Ich nehme ihn. [pause] Mein T-Shirt ist grün. [pause] Ich suche einen Pullover. [pause] Was tut ihr weh? [pause] Gute Idee! Und Tim? Ist er auch krank? [pause] Guten Tag. Mein Bauch tut weh. Und ich bin sehr müde. [pause] Nein, Kopfschmerzen habe ich nicht. [pause] Okay. Darf ich Fußball spielen? [pause] Ich habe Bauchschmerzen. [pause] Super! Am Samstag habe ich Fußball gespielt. Das Spiel war spannend. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

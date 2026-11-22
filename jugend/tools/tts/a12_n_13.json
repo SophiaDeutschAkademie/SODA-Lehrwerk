@@ -1,0 +1,89 @@
+{
+ "job": "a12_n_13",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "gelb.",
+    "Die Mütze ist gelb."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "schwarz.",
+    "Die Hose ist schwarz."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "weiß.",
+    "Das T-Shirt ist weiß."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "das Kaufhaus, die Kaufhäuser.",
+    "Wir gehen ins Kaufhaus."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "kaufen.",
+    "Ich kaufe das T-Shirt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "anprobieren.",
+    "Ich probiere die Jacke an."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "gefallen, du gefällst, er gefällt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Der Pullover ist toll. Das steht dir!"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "passen.",
+    "Der Pullover passt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "die Größe, die Größen.",
+    "Welche Größe hast du?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] gelb. Die Mütze ist gelb. [pause] schwarz. Die Hose ist schwarz. [pause] weiß. Das T-Shirt ist weiß. [pause] das Kaufhaus, die Kaufhäuser. Wir gehen ins Kaufhaus. [pause] kaufen. Ich kaufe das T-Shirt. [pause] anprobieren. Ich probiere die Jacke an. [pause] gefallen, du gefällst, er gefällt. [pause] Der Pullover ist toll. Das steht dir! [pause] passen. Der Pullover passt. [pause] die Größe, die Größen. Welche Größe hast du? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

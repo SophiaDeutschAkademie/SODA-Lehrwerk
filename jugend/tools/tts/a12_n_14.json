@@ -1,0 +1,84 @@
+{
+ "job": "a12_n_14",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "teuer.",
+    "Das ist zu teuer."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "günstig.",
+    "Die Schuhe sind günstig."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "warm.",
+    "Die Jacke ist sehr warm."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "neu, teuer, heute, Freund"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Häuser, Kaufhäuser"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Deutsch, Euro, neun"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Die Schuhe sind neu und nicht teuer."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Ich bin krank."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Mein Kopf tut weh."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Ich habe Fieber."
+   ]
+  }
+ ],
+ "script": "Also. [pause] teuer. Das ist zu teuer. [pause] günstig. Die Schuhe sind günstig. [pause] warm. Die Jacke ist sehr warm. [pause] neu, teuer, heute, Freund [pause] Häuser, Kaufhäuser [pause] Deutsch, Euro, neun [pause] Die Schuhe sind neu und nicht teuer. [pause] Ich bin krank. [pause] Mein Kopf tut weh. [pause] Ich habe Fieber. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

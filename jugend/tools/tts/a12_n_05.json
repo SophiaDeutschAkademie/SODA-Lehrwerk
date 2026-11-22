@@ -1,0 +1,91 @@
+{
+ "job": "a12_n_05",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Supermarkt, die Supermärkte.",
+    "Der Supermarkt ist neben dem Kino."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Kino, die Kinos.",
+    "Wir gehen zum Kino."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Schwimmbad, die Schwimmbäder.",
+    "Wie komme ich zum Schwimmbad?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Dom, die Dome.",
+    "Der Dom ist sehr groß."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "geradeaus.",
+    "Gehen Sie geradeaus."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "links.",
+    "Dann gehen Sie links."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "rechts.",
+    "Das Kino ist rechts."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "gehen.",
+    "Wir gehen zum Bahnhof."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "zu Fuß.",
+    "Ich gehe zu Fuß."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "weit.",
+    "Ist es weit?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Supermarkt, die Supermärkte. Der Supermarkt ist neben dem Kino. [pause] das Kino, die Kinos. Wir gehen zum Kino. [pause] das Schwimmbad, die Schwimmbäder. Wie komme ich zum Schwimmbad? [pause] der Dom, die Dome. Der Dom ist sehr groß. [pause] geradeaus. Gehen Sie geradeaus. [pause] links. Dann gehen Sie links. [pause] rechts. Das Kino ist rechts. [pause] gehen. Wir gehen zum Bahnhof. [pause] zu Fuß. Ich gehe zu Fuß. [pause] weit. Ist es weit? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

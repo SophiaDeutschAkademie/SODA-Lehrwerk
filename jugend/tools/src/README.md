@@ -90,8 +90,9 @@ Station 의 구역은 rueckblick, training, projekt 이고, 평가의 구역은 
 -- info 제목                     설명 글 (p: 문단)
 -- fortschritt                   @lektionen 에 적은 과를 어디까지 공부했는지 보여 줍니다
 -- quiz 제목 | 설명              @lektionen 에 적은 과의 낱말로 내는 문제
--- story 제목 | 설명             그림 네 장과 문장
+-- story 제목 | 설명             그림과 문장. 그림은 장면마다 한 장씩 따로 그립니다 (b1.webp, b2.webp …)
 bild: 그림 설명(영어)
+bild: = a1-2/2 c1                같은 단계 과의 단어 그림을 빌려 쓸 때 (과 id와 그림 이름)
 alt: 그림을 설명하는 한국어 한 줄
 Yuna: 독일어 | 한국어
 -- projekt 제목 | 설명 | 카드 제목

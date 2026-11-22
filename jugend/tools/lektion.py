@@ -334,9 +334,9 @@ def parse(path):
                     it['hoer'] = pend; pend = None
                 tgt.append(it)
             elif t == 'gruppe':
-                f = fields(s)
+                f, say = take_say(fields(s))
                 assert len(f) >= 4, '단어 줄: 낱말 | 뜻 | 예문 | 예문 뜻'
-                blk['items'].append({'lemma': f[0], 'ko': f[1], 'bsp': f[2], 'bspko': f[3]})
+                blk['items'].append({'lemma': f[0], 'ko': f[1], 'bsp': f[2], 'bspko': f[3], 'bsay': say or plain(f[2])})
             elif t == 'bilder':
                 assert sep, '그림 줄: 낱말: 그림 설명'
                 blk['map'].append((key, rest))
@@ -522,7 +522,7 @@ def audio_items(L):
                 items(b['parts'])
             elif t == 'gruppe':
                 for w in b['items']:
-                    add('N', lemma_info(w['lemma'])[3], plain(w['bsp']))
+                    add('N', lemma_info(w['lemma'])[3], w['bsay'])
             elif t == 'aussprache':
                 for h in b['hoer']:
                     add('N', h['say'])
@@ -730,7 +730,16 @@ def card_sheets(L):
 
 
 def story_pics(L):
-    return [bd['bild'] for bl in L['secs'].values() for b in bl if b['t'] == 'story' for bd in b['bilder']]
+    """[(번호, 그림 설명)] 새로 그릴 이야기 그림. 'bild: = a1-2/2 c1' 처럼 다른 과의 그림을 빌려 쓰는 줄은 뺀다."""
+    out = []; k = 0
+    for bl in L['secs'].values():
+        for b in bl:
+            if b['t'] == 'story':
+                for bd in b['bilder']:
+                    k += 1
+                    if not bd['bild'].startswith('='):
+                        out.append((k, bd['bild']))
+    return out
 
 
 def cmd_prompts(name, args):
@@ -747,14 +756,11 @@ def cmd_prompts(name, args):
             out.append({'name': '%s_karten%d' % (base, i + 1), 'ratio': '3:2', 'prompt':
                         'Six separate small illustrations arranged in a neat grid of two rows and three columns, all the same size. Top row from left to right: %s; %s; %s. '
                         'Bottom row from left to right: %s; %s; %s. %s %s' % (k[0], k[1], k[2], k[3], k[4], k[5], MANY, STYLE)})
-        st = story_pics(L)
-        if st and not all(os.path.exists(os.path.join(d, 'b%d.webp' % (k + 1))) for k in range(len(st))):
-            assert len(st) == 4, 'story 그림은 네 장이어야 합니다'
-            k = [who_text(x) for x in st]
-            out.append({'name': base + '_story', 'ratio': '4:3', 'prompt':
-                        'Four separate small scenes arranged in a neat grid of two rows and two columns, all the same size. Top row from left to right: %s; %s. '
-                        'Bottom row from left to right: %s; %s. Every scene is complete, separated from the others by wide empty white space, and does not touch the edges of the image. %s'
-                        % (k[0], k[1], k[2], k[3], STYLE)})
+        for k, bild in story_pics(L):
+            if not os.path.exists(os.path.join(d, 'b%d.webp' % k)):
+                t = who_text(bild).strip()
+                t = t[0].upper() + t[1:] + ('' if t.endswith('.') else '.')
+                out.append({'name': '%s_b%d' % (base, k), 'ratio': '4:3', 'prompt': '%s %s %s' % (t, ONE, STYLE)})
     json.dump(out, open(os.path.join(T, 'tts', name + '.prompts.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     for o in out:
         print(o['name'], o['ratio'])
@@ -1047,17 +1053,17 @@ def cmd_img(raw):
                 if os.path.exists(f1):
                     im = _white(Image.open(f1)); ink = np.asarray(im).min(axis=2) < 236
                     _tile(im.crop(_bbox(ink)), os.path.join(d, 'c%d.webp' % (i * 6 + k + 1))); print(p['id'], 'single card', i * 6 + k + 1)
-        f = os.path.join(raw, base + '_story.webp')
-        if os.path.exists(f):
-            im = _white(Image.open(f)); ink = np.asarray(im).min(axis=2) < 236
-            for k, (x0, y0, x1, y1) in enumerate(_cells(ink, 2, 2)):
-                bb = _bbox(ink[y0:y1, x0:x1]); crop = im.crop((x0 + bb[0], y0 + bb[1], x0 + bb[2], y0 + bb[3]))
-                w_, h_ = crop.size; side_w = int(max(w_, h_ * 4 / 3) * 1.08); side_h = int(side_w * 3 / 4)
-                cv = Image.new('RGB', (side_w, max(side_h, int(h_ * 1.08))), (255, 255, 255)); cv.paste(crop, ((cv.width - w_) // 2, (cv.height - h_) // 2))
-                cv = cv.resize((640, round(cv.height * 640 / cv.width)), Image.LANCZOS); os.makedirs(d, exist_ok=True)
-                cv.save(os.path.join(d, 'b%d.webp' % (k + 1)), 'WEBP', quality=82, method=6)
-                json.dump({'w': cv.width, 'h': cv.height}, open(os.path.join(d, 'b%d.json' % (k + 1)), 'w'))
-            print(p['id'], 'story')
+        for k in range(1, 13):                                  # 이야기 그림: 한 장씩
+            f = os.path.join(raw, '%s_b%d.webp' % (base, k))
+            if not os.path.exists(f):
+                continue
+            im = _white(Image.open(f)); ink = np.asarray(im).min(axis=2) < 236; crop = im.crop(_bbox(ink))
+            w_, h_ = crop.size; asp = min(max(w_ / h_, 4 / 3), 2.0)
+            cw = int(max(w_, h_ * asp) * 1.08); ch = int(max(h_ * 1.08, cw / asp))
+            cv = Image.new('RGB', (cw, ch), (255, 255, 255)); cv.paste(crop, ((cw - w_) // 2, (ch - h_) // 2))
+            cv = cv.resize((640, round(ch * 640 / cw)), Image.LANCZOS); os.makedirs(d, exist_ok=True)
+            cv.save(os.path.join(d, 'b%d.webp' % k), 'WEBP', quality=82, method=6)
+            json.dump({'w': cv.width, 'h': cv.height}, open(os.path.join(d, 'b%d.json' % k), 'w')); print(p['id'], 'story picture', k)
     for n, names in (('cast_1', ['yuna', 'emma', 'lukas', 'elif']), ('cast_2', ['schneider', 'sabine', 'thomas'])):
         f = os.path.join(raw, n + '.webp')
         if os.path.exists(f):
@@ -1290,7 +1296,7 @@ class Page:
             if b['t'] == 'gruppe':
                 rows = ''
                 for w in b['items']:
-                    art, head, pl, spoken = lemma_info(w['lemma']); a1 = self.a('N', spoken); a2 = self.a('N', plain(w['bsp']))
+                    art, head, pl, spoken = lemma_info(w['lemma']); a1 = self.a('N', spoken); a2 = self.a('N', w['bsay'])
                     if art in ('der', 'die', 'das'):
                         hd = '<span class="a-%s">%s</span> %s' % (art, art, E(head[4:]))
                     else:
@@ -1365,7 +1371,8 @@ class Page:
                     rows += '<div class="rm"><dt>%s</dt><dd>%s</dd></div>' % (ko(label), ''.join('<p><span lang="de">%s</span>%s</p>' % (hl(x[0]), (' <span class="ko">%s</span>' % ko(x[1])) if len(x) > 1 else '') for x in pairs))
                 h += '<section class="teilb"><h3><span lang="de">Redemittel</span><small>이 과의 표현</small></h3><dl class="rml">%s</dl></section>' % rows
             elif t == 'rolle':
-                chips = ''.join('<button type="button" class="chip" data-rolle="%s" aria-pressed="false">%s</button>' % (E(r), E(CAST[r]['name'])) for r in b['roles'])
+                nm = next((d_['names'] for d_ in self.L['secs'].get('hoeren', []) if d_['t'] == 'dialog' and d_['key'] == b['dialog']), {})
+                chips = ''.join('<button type="button" class="chip" data-rolle="%s" aria-pressed="false">%s</button>' % (E(r), E(nm.get(r) or CAST[r]['name'])) for r in b['roles'])
                 self.data['rolle'] = {'dlg': b['dialog'], 'roles': b['roles']}
                 h += ('<section class="teilb rolle" data-dlg="%s"><h3><span lang="de">Rollenspiel</span><small>역할을 맡아 말해요</small></h3>'
                       '<p>대화 %s에서 역할을 하나 고르세요. 상대의 말은 음성으로 나오고, 내 차례에는 직접 말해요.</p><div class="rolle-wahl">%s</div><div class="rolle-feld" hidden></div></section>'
@@ -1459,12 +1466,16 @@ class Page:
             elif t == 'story':
                 rows = ''
                 for k, bd in enumerate(b['bilder']):
-                    f = os.path.join(J, 'img', self.pid, 'b%d' % (k + 1)); pic = ''
-                    if os.path.exists(f + '.webp'):
-                        dim = json.load(open(f + '.json'))
-                        pic = '<figure><img src="%sb%d.webp" alt="%s" width="%d" height="%d" loading="lazy"></figure>' % (self.img, k + 1, E(bd['alt']), dim['w'], dim['h'])
+                    pic = ''
+                    if bd['bild'].startswith('='):                          # 다른 과의 그림을 빌려 쓴다
+                        pid2, name = bd['bild'][1:].split(); f = os.path.join(J, 'img', pid2, name); src = '../../img/%s/%s.webp' % (pid2, name)
                     else:
-                        self.miss.append('img b%d' % (k + 1))
+                        f = os.path.join(J, 'img', self.pid, 'b%d' % (k + 1)); src = '%sb%d.webp' % (self.img, k + 1)
+                    if os.path.exists(f + '.webp'):
+                        dim = json.load(open(f + '.json')) if os.path.exists(f + '.json') else {'w': 384, 'h': 384}
+                        pic = '<figure%s><img src="%s" alt="%s" width="%d" height="%d" loading="lazy"></figure>' % (' class="karte-bild"' if dim['w'] == dim['h'] else '', src, E(bd['alt']), dim['w'], dim['h'])
+                    else:
+                        self.miss.append('img ' + os.path.relpath(f, os.path.join(J, 'img')))
                     zs = ''
                     for l in bd['lines']:
                         ident = self.a(l['who'], l['say'])
@@ -1498,8 +1509,13 @@ class Page:
         wort = {'lektion': ('이 과를 끝까지 봤어요.', '이 과 마치기', '이 과를 마친 것으로 기록했어요.', '마친 과예요'),
                 'station': ('Station을 끝까지 했어요.', 'Station 마치기', 'Station을 마친 것으로 기록했어요.', '마친 Station이에요'),
                 'test': ('평가를 끝까지 했어요.', '평가 마치기', '평가를 마친 것으로 기록했어요.', '마친 평가예요')}[typ]
+        nxt_a = ''
+        if nxt and nxt['lv']['id'] == lv['id']:
+            nxt_a = '<a class="btn hell" href="../%s/"><span>다음</span> <span lang="de">%s</span></a>' % (nxt['slug'], E(nxt['de']))
+        elif nxt:
+            nxt_a = '<a class="btn hell" href="../../%s/%s/"><span>다음</span> <span lang="de">%s · %s</span></a>' % (nxt['lv']['id'], nxt['slug'], E(nxt['lv']['code']), E(nxt['de']))
         ende = '<div class="ende" id="ende"><p class="ende-t">%s</p><button type="button" class="btn" data-act="fertig" data-msg="%s" data-done="%s">%s</button>%s<a class="link" href="../../#%s">목차로 가기</a></div>' % (
-            wort[0], wort[2], wort[3], wort[1], ('<a class="btn hell" href="../%s/"><span>다음</span> <span lang="de">%s</span></a>' % (nxt['slug'], E(nxt['de']))) if nxt else '', lv['id'])
+            wort[0], wort[2], wort[3], wort[1], nxt_a, lv['id'])
         if typ == 'lektion':
             title = 'Lektion %d %s · %s | SODA Jugendliche %s' % (p['nr'], p['de'], p['ko'], lv['code'])
             desc = '청소년 독일어 %s %d과 %s(%s). %s. 독일어 음성으로 듣는 대화, 단어, 문법(%s), 연습 문제, 말하기와 쓰기 과제. 소피아 독일어학원.' % (lv['code'], p['nr'], p['de'], p['ko'], p['ziel'], p['gr'])
@@ -1549,6 +1565,8 @@ def cmd_site(draft=False):
         i = ids.index(p['id'])
         prev = next((allp[k] for k in range(i - 1, -1, -1) if allp[k]['id'] in ready and allp[k]['lv']['id'] == p['lv']['id']), None)
         nxt = next((allp[k] for k in range(i + 1, len(allp)) if allp[k]['id'] in ready and allp[k]['lv']['id'] == p['lv']['id']), None)
+        if nxt is None and i + 1 < len(allp) and allp[i + 1]['id'] in ready:      # 단계의 마지막 화면: 다음 단계의 첫 과가 열려 있으면 그리로 잇는다
+            nxt = allp[i + 1]
         pg = Page(p, L, draft)
         pl_ = next(((q, M) for q, M in allsrc if q['lv']['id'] == p['lv']['id'] and q['typ'] == 'lektion' and q['nr'] == p['nr'] - 1), None)
         pg.prev = pl_

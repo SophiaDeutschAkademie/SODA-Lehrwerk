@@ -1,0 +1,251 @@
+@id a1-2/5
+
+== einstieg
+bild: A bedroom in the morning. A 14-year-old Korean girl with straight black chin-length bob hair and light skin lies in bed under a blanket with a tired face and holds one hand on her forehead. SABINE sits on the edge of the bed and holds a thermometer. On the nightstand there is a cup of tea.
+alt: Yuna가 이불을 덮고 누워 이마에 손을 얹고 있고, Sabine가 침대 옆에 앉아 체온계를 들고 있어요. 탁자에는 찻잔이 있어요.
+lead: 월요일 아침이에요. Yuna가 일어나지 못해요. 의사인 Sabine가 Yuna의 방에 들어와요.
+mission: 이 과를 마치면 어디가 아픈지 말하고, 아픈 친구에게 조언할 수 있어요.
+wort: Ich bin krank. | 나 아파.
+wort: Mein Kopf tut weh. | 머리가 아파.
+wort: Ich habe Fieber. | 열이 있어.
+wort: Gute Besserung! | 빨리 나아!
+mc: Mein Kopf tut weh. 이 문장에서 '아프다'는 뜻의 말은 무엇일까요? | tut … weh* | Kopf | mein => wehtun은 aufstehen처럼 나뉘는 동사예요. tut은 둘째 자리에, weh는 맨 끝에 와요.
+
+== hoeren
+-- dialog A | Was ist los, Yuna? | 월요일 아침, Yuna의 방이에요.
+vor: 들으면서 찾아보세요. Yuna는 어디가 아픈가요?
+Sabine: Guten Morgen, Yuna! Was ist los? Bist du krank? | 좋은 아침, Yuna! 무슨 일이니? 아프니?
+Yuna: Ja. Mein Kopf tut weh. Und ich habe Halsschmerzen. | 네. 머리가 아파요. 그리고 목도 아파요.
+Sabine: Oh. Hast du auch Fieber? | 저런. 열도 있니?
+Yuna: Ich weiß nicht. Aber ich bin so müde. | 모르겠어요. 그런데 너무 피곤해요.
+Sabine: Ja, du hast Fieber. Heute darfst du nicht in die Schule gehen. | 그래, 열이 있구나. 오늘은 학교에 가면 안 돼.
+Yuna: Aber wir haben heute einen Mathetest! | 하지만 오늘 수학 시험이 있어요!
+Sabine: Kein Problem. Du sollst im Bett bleiben und viel Tee trinken. | 괜찮아. 침대에 누워서 차를 많이 마셔야 해.
+Yuna: Okay. Danke, Sabine. | 네. 고마워요, Sabine.
+Sabine: Gute Besserung! Ich rufe Frau Schneider an. | 빨리 나으렴! Schneider 선생님께는 내가 전화할게.
+
+-- dialog B | Yuna ist krank | 같은 날 아침, 8b 교실이에요.
+vor: 들으면서 찾아보세요. Elif는 Yuna를 위해 무엇을 하나요?
+Schneider: Guten Morgen! Wo ist Yuna heute? | 좋은 아침! 오늘 Yuna는 어디 있니?
+Emma: Yuna ist krank. Es geht ihr nicht gut. Sie hat Fieber. | Yuna는 아파요. 몸이 안 좋아요. 열이 있어요.
+Schneider: Oh, das tut mir leid. Sie soll zu Hause bleiben. | 저런, 안됐구나. 집에서 쉬어야겠다.
+Lukas: Was tut ihr weh? | 어디가 아프대?
+Emma: Der Kopf und der Hals. | 머리랑 목.
+Elif: Wollen wir ihr helfen? Ich mache ein Foto von der Tafel. | 우리가 도와줄까? 내가 칠판을 사진으로 찍을게.
+Lukas: Gute Idee! Und Tim? Ist er auch krank? | 좋은 생각이야! 그런데 Tim은? Tim도 아파?
+Schneider: Ja, Tim ist auch krank. Ihm tut der Bauch weh. | 그래, Tim도 아프단다. 배가 아프대.
+Emma: Oje. Aber uns geht es gut! | 이런. 그래도 우리는 괜찮아요!
+Schneider: Ja, zum Glück. Und jetzt: der Mathetest! | 그래, 다행이지. 자, 이제 수학 시험이다!
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Yuna는 어디가 아픈가요? | 머리와 목* | 배와 머리 | 목과 배
+rf: Yuna darf heute in die Schule gehen. | f => Heute darfst du nicht in die Schule gehen.
+mc: Sabine는 Yuna에게 무엇을 하라고 하나요? | 침대에 있고 차를 많이 마시라고 해요* | 병원에 가라고 해요 | 수학 시험을 보러 가라고 해요
+mc: Elif는 Yuna를 위해 무엇을 하나요? | 칠판을 사진으로 찍어요* | Yuna에게 전화해요 | 차를 가져다줘요
+rf: Tim hat Halsschmerzen. | f => Ihm tut der Bauch weh. Tim은 배가 아파요.
+mc: Wer ruft Frau Schneider an? | Sabine* | Yuna | Emma
+
+-- kultur 아파서 학교에 못 갈 때
+p: 독일에서는 아파서 학교에 못 가면 부모님이 그날 아침에 학교에 알려요. 전화나 메일, 학교 앱으로 알리는 곳이 많아요.
+p: 다시 학교에 갈 때는 부모님이 쓴 짧은 글 Entschuldigung을 내요. 언제, 왜 못 갔는지 적은 글이에요.
+p: 아픈 사람에게는 Gute Besserung!이라고 말해요. '빨리 나으세요'라는 뜻이에요.
+mc: 독일 학교에서 Entschuldigung은 무엇일까요? | 결석한 이유를 부모님이 적어 주는 글* | 의사가 주는 약 | 시험을 다시 보는 날
+
+== wortschatz
+-- gruppe Der Körper | 몸
+der Kopf, die Köpfe | 머리 | Mein Kopf tut weh. | 머리가 아파요.
+der Hals, die Hälse | 목 | Mein Hals tut weh. | 목이 아파요.
+der Bauch, die Bäuche | 배 | Ihm tut der Bauch weh. | 그는 배가 아파요.
+der Rücken, die Rücken | 등 | Mir tut der Rücken weh. | 나는 등이 아파요.
+der Arm, die Arme | 팔 | Mein Arm tut weh. | 팔이 아파요.
+das Bein, die Beine | 다리 | Das Bein tut weh. | 다리가 아파요.
+die Hand, die Hände | 손 | Meine Hand tut weh. | 손이 아파요.
+der Fuß, die Füße | 발 | Meine Füße tun weh. | 발이 아파요.
+der Zahn, die Zähne | 이, 치아 | Der Zahn tut weh. | 이가 아파요.
+
+-- gruppe Krank sein | 아플 때
+krank | 아픈, 병이 난 | Yuna ist krank. | Yuna는 아파요.
+gesund | 건강한 | Wir sind gesund. | 우리는 건강해요.
+müde | 피곤한 | Ich bin so müde. | 나는 너무 피곤해요.
+wehtun | 아프다 | Was tut dir weh? | 어디가 아파?
+die Schmerzen (Pl.) | 통증 | Ich habe Halsschmerzen. | 나는 목이 아파요.
+das Fieber | 열 | Hast du Fieber? | 열이 있어?
+der Arzt, die Ärzte | 의사 | Ich muss zum Arzt gehen. | 나는 병원에 가야 해요.
+die Tablette, die Tabletten | 알약 | Ich nehme eine Tablette. | 나는 약을 한 알 먹어요.
+der Tee, die Tees | 차 | Ich trinke Tee. | 나는 차를 마셔요.
+viel | 많이, 많은 | Du sollst viel Tee trinken. | 차를 많이 마셔야 해요.
+bleiben | 머무르다, 그대로 있다 | Ich bleibe im Bett. | 나는 침대에 있어요.
+zu Hause | 집에 | Sie soll zu Hause bleiben. | 그녀는 집에 있어야 해요.
+
+-- gruppe Helfen und raten | 돕고 조언하기
+sollen (du sollst, er soll) | ~해야 한다 (다른 사람이 하라고 함) | Du sollst im Bett bleiben. | 너는 침대에 있어야 해.
+dürfen (du darfst, er darf) | ~해도 된다 | Darf ich Fußball spielen? | 축구해도 돼요?
+helfen (du hilfst, er hilft) | 돕다 | Wollen wir ihr helfen? | 우리가 그녀를 도울까?
+Was ist los? | 무슨 일이야? | Was ist los? Bist du krank? | 무슨 일이야? 아파?
+Gute Besserung! | 빨리 나아! | Du bist krank? Gute Besserung! | 아프다고? 빨리 나아!
+
+-- bilder
+der Kopf, die Köpfe: a teenager who holds the head with both hands
+der Hals, die Hälse: a teenager who touches the throat with one hand
+der Bauch, die Bäuche: a teenager who holds the belly with both hands
+der Rücken, die Rücken: a teenager seen from the side who holds the lower back with one hand
+der Arm, die Arme: a single bent arm
+das Bein, die Beine: a single leg from the hip to the foot
+die Hand, die Hände: a single open hand
+der Fuß, die Füße: a single bare foot
+der Zahn, die Zähne: a single large tooth
+das Fieber: a medical thermometer
+die Tablette, die Tabletten: a blister pack of pills with two loose pills next to it
+der Tee, die Tees: a cup of hot tea with steam and a tea bag
+
+-- aussprache 긴 모음과 짧은 모음 | 모음의 길이로 낱말이 달라져요
+p: 독일어는 모음을 길게 내는지 짧게 내는지에 따라 다른 낱말이 돼요. 모음 뒤에 h가 있거나 자음이 하나만 오면 길게, 자음이 두 개 오면 짧게 내요.
+p: Zahn의 a는 길고 Mann의 a는 짧아요. Fuß의 u는 길고 muss의 u는 짧아요.
+hör: Zahn, Tee, Fuß, Fieber | 긴 모음
+hör: Mann, Bett, muss, Rücken | 짧은 모음
+hör: Ich muss zum Arzt. Mein Fuß tut weh. | 연습 문장
+
+== grammatik
+-- punkt wehtun und Schmerzen | 아픈 곳 말하기
+bsp: Mein Kopf *tut weh*. | 머리가 아파.
+bsp: Ich *habe* Hals*schmerzen*. | 나는 목이 아파.
+bsp: Ihm *tut* der Bauch *weh*. | 그는 배가 아파.
+finde: Mein Kopf tut weh. tut과 weh는 어디에 있나요? | tut은 둘째 자리, weh는 맨 끝* | 둘 다 맨 끝 | weh는 둘째 자리, tut은 맨 끝
+regel: 아픈 곳은 두 가지로 말해요. 하나는 wehtun이에요. 아픈 곳이 주어가 되고, tut은 둘째 자리에, weh는 맨 끝에 와요. 아픈 곳이 복수면 tun이 돼요. 다른 하나는 haben과 -schmerzen이에요. 몸의 이름 뒤에 schmerzen을 붙여요.
+| 아픈 곳 | wehtun | haben + Schmerzen
+| der Kopf | Mein Kopf *tut* weh. | Ich habe Kopf*schmerzen*.
+| der Hals | Mein Hals *tut* weh. | Ich habe Hals*schmerzen*.
+| der Bauch | Mein Bauch *tut* weh. | Ich habe Bauch*schmerzen*.
+| die Füße | Meine Füße *tun* weh. | –
+merke: 누가 아픈지는 mir, dir, ihm, ihr로도 말해요. Mir tut der Kopf weh. Was tut dir weh?
+
+-- punkt mir, dir, ihm, ihr, uns | ~에게
+bsp: Es geht *ihr* nicht gut. | 그녀는 몸이 안 좋아.
+bsp: *Ihm* tut der Bauch weh. | 그는 배가 아파.
+bsp: Aber *uns* geht es gut! | 그래도 우리는 괜찮아!
+bsp: Wollen wir *ihr* helfen? | 우리가 그녀를 도울까?
+finde: Yuna를 '그녀에게'라고 말할 때 쓴 말은 무엇인가요? | ihr* | sie | ihm
+regel: '~에게'를 뜻하는 3격(Dativ) 대명사예요. Wie geht es …?, wehtun, helfen, gefallen, stehen과 함께 써요.
+| ~은, ~는 | ich | du | er | sie | wir | ihr | sie, Sie
+| ~에게 | mir | dir | ihm | ihr | uns | euch | ihnen, Ihnen
+merke: ihr는 뜻이 세 가지예요. '너희는'(Ihr kommt.), '그녀의'(ihr Bruder), '그녀에게'(Es geht ihr gut.)예요. 문장 안의 자리를 보고 구별해요.
+
+-- punkt sollen und dürfen | 하라고 한 일, 해도 되는 일
+bsp: Du *sollst* im Bett *bleiben*. | 너는 침대에 있어야 해.
+bsp: Sie *soll* zu Hause *bleiben*. | 그녀는 집에 있어야 해.
+bsp: Heute *darfst* du nicht in die Schule *gehen*. | 오늘은 학교에 가면 안 돼.
+finde: Heute darfst du nicht in die Schule gehen. gehen은 어디에 있나요? | 문장 맨 끝* | 둘째 자리 | darfst 바로 뒤
+regel: sollen은 다른 사람이 하라고 한 일, dürfen은 해도 되는 일을 말할 때 써요. nicht dürfen은 '하면 안 된다'는 뜻이에요. können, müssen처럼 둘째 자리에 오고, 다른 동사는 원형으로 맨 끝에 가요.
+| | sollen | dürfen
+| ich | soll | d*a*rf
+| du | sollst | d*a*rfst
+| er, sie, es | soll | d*a*rf
+| wir | sollen | dürfen
+| ihr | sollt | dürft
+| sie, Sie | sollen | dürfen
+merke: müssen은 꼭 해야 하는 일, sollen은 의사나 부모님 같은 다른 사람이 하라고 한 일이에요. 의사가 차를 마시라고 했으면 Ich soll viel Tee trinken.이라고 해요.
+
+== training
+-- ex Hören | Lukas가 병원에 갔어요. 의사와 하는 말을 듣고 답하세요.
+audio | Beim Arzt
+> Mann: Guten Tag, Lukas. Was tut dir weh?
+> Lukas: Guten Tag. Mein Bauch tut weh. Und ich bin sehr müde.
+> Mann: Hast du auch Kopfschmerzen?
+> Lukas: Nein, Kopfschmerzen habe ich nicht.
+> Mann: Gut. Du sollst heute zu Hause bleiben und Tee trinken. Du darfst keine Schokolade essen!
+> Lukas: Okay. Darf ich Fußball spielen?
+> Mann: Nein! Heute darfst du nicht Fußball spielen.
+mc: Was tut Lukas weh? | der Bauch* | der Kopf | der Hals
+rf: Lukas hat Kopfschmerzen. | f => Kopfschmerzen habe ich nicht.
+mc: 의사는 Lukas에게 무엇을 하라고 하나요? | 집에 있고 차를 마시라고 해요* | 학교에 가라고 해요 | 약을 먹으라고 해요
+mc: Lukas가 오늘 하면 안 되는 것은 무엇인가요? | 초콜릿 먹기와 축구* | 차 마시기 | 집에 있기
+
+-- ex Hören | 듣고 어디가 아픈지 고르세요.
+hör: Yuna: Mein Hals tut weh.
+mc: 어디가 아픈가요? | 목* | 머리 | 배
+hör: Lukas: Ich habe Bauchschmerzen.
+mc: 어디가 아픈가요? | 배* | 등 | 이
+hör: Emma: Meine Füße tun weh.
+mc: 어디가 아픈가요? | 발* | 손 | 다리
+hör: Elif: Mir tut der Rücken weh.
+mc: 어디가 아픈가요? | 등* | 팔 | 목
+
+-- ex Lesen | Sabine가 Frau Schneider에게 보낸 메일이에요. 읽고 답하세요.
+text notiz | E-Mail an Frau Schneider
+> Guten Morgen, Frau Schneider,
+> Yuna kann heute leider nicht in die Schule kommen. Sie ist krank. Sie hat Fieber und Halsschmerzen.
+> Sie soll zwei Tage zu Hause bleiben. Am Mittwoch kann sie vielleicht kommen.
+> Vielen Dank!
+> Sabine Wagner
+rf: Yuna hat Bauchschmerzen. | f => Sie hat Fieber und Halsschmerzen.
+mc: Yuna는 며칠 동안 집에 있어야 하나요? | 이틀* | 하루 | 사흘 => Sie soll zwei Tage zu Hause bleiben.
+mc: Wann kann Yuna vielleicht in die Schule kommen? | am Mittwoch* | am Dienstag | am Montag
+mc: 이 메일은 누가 썼나요? | Sabine* | Yuna | Frau Schneider
+
+-- ex Grammatik | tut과 tun 가운데 알맞은 말을 고르세요.
+gap: Mein Kopf [tut|tun] weh.
+gap: Meine Füße [tun|tut] weh.
+gap: Der Bauch [tut|tun] ihm weh.
+gap: Meine Zähne [tun|tut] weh.
+gap: [Tut|Tun] dir der Rücken weh?
+
+-- ex Grammatik | 알맞은 대명사를 고르세요.
+gap: Yuna ist krank. Es geht [ihr|ihm|uns] nicht gut.
+gap: Tim ist auch krank. [Ihm|Ihr|Mir] tut der Bauch weh.
+gap: Wir sind gesund. Es geht [uns|ihm|ihr] gut.
+gap: Hallo, Lukas! Wie geht es [dir|mir|ihm]?
+gap: Ich bin müde. Der Kopf tut [mir|dir|ihr] weh.
+gap: Das ist Elif. Wir helfen [ihr|ihm|dir].
+
+-- ex Grammatik | 주어에 맞는 형태를 고르세요.
+gap: Du [sollst|soll|sollen] im Bett bleiben.
+gap: Yuna [darf|darfst|dürfen] heute nicht in die Schule gehen.
+gap: Ich [soll|sollst|sollt] viel Tee trinken.
+gap: [Darf|Darfst|Dürfen] ich Fußball spielen?
+gap: Wir [dürfen|darf|dürft] hier nicht essen.
+gap: Ihr [sollt|soll|sollen] jetzt Hausaufgaben machen.
+
+-- ex Wortschatz | 몸의 이름과 뜻을 짝지으세요.
+paar: der Kopf = 머리 ; der Hals = 목 ; der Bauch = 배 ; der Rücken = 등 ; die Hand = 손 ; der Fuß = 발 ; der Zahn = 이
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: mein Kopf / tut / weh. | 머리가 아파.
+ord: du / sollst / im Bett / bleiben. | 너는 침대에 있어야 해.
+ord: ich / darf / heute / nicht / Fußball spielen. ~ heute / darf / ich / nicht / Fußball spielen. | 나는 오늘 축구하면 안 돼.
+ord: es / geht / ihr / nicht gut. | 그녀는 몸이 안 좋아.
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Yuna: Mein Kopf tut weh. | 머리가 아파요.
+dik: Emma: Yuna ist krank. | Yuna는 아파요.
+dik: Sabine: Du sollst im Bett bleiben. | 침대에 있어야 해.
+
+== sprechen
+-- redemittel
+아픈 곳 묻고 말하기: Was ist los? | 무슨 일이야? ; Was tut dir weh? | 어디가 아파? ; Mein Kopf tut weh. | 머리가 아파. ; Ich habe Bauchschmerzen. | 배가 아파. ; Ich habe Fieber. | 열이 있어.
+조언하기: Du sollst im Bett bleiben. | 침대에 있어야 해. ; Trink viel Tee! | 차를 많이 마셔! ; Geh zum Arzt! | 병원에 가 봐! ; Gute Besserung! | 빨리 나아!
+못 간다고 알리기: Ich bin krank. Ich kann heute nicht kommen. | 아파요. 오늘 못 가요. ; Yuna ist krank. Es geht ihr nicht gut. | Yuna는 아파요. 몸이 안 좋아요.
+
+-- rolle A | Yuna, Sabine
+
+-- ich 아플 때 | 아픈 곳, 다른 증상 하나, 그럴 때 하라고 들은 일을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 아픈 곳 (Mein, Meine와 함께) | Mein Hals
+feld: b | 다른 증상 | Fieber
+feld: c | 하라고 들은 일 | im Bett bleiben
+satz: Ich bin krank. {a} tut weh.
+satz: Ich habe auch {b}.
+satz: Ich soll {c}.
+
+-- schreiben Ich bin krank | 아파서 오늘 약속에 못 가요. 친구에게 메시지를 써 보세요.
+punkt: 못 간다는 말 ; 어디가 아픈지 ; 하라고 들은 일 ; 다시 만날 날
+start: Hallo …! Ich kann heute leider nicht kommen. …
+muster: Hallo Elif! Ich kann heute leider nicht kommen. Ich bin krank. Mein Kopf tut weh und ich habe Fieber. Ich soll im Bett bleiben und viel Tee trinken. Vielleicht können wir am Samstag ins Kino gehen. Bis dann!
+check: 아픈 곳을 tut weh나 -schmerzen으로 썼나요? ; soll, darf, kann을 둘째 자리에 썼나요? ; 다른 동사를 원형으로 맨 끝에 썼나요? ; 인사말로 시작하고 끝냈나요?
+
+-- kann
+Ich kann sagen, was mir wehtut. | 어디가 아픈지 말할 수 있어요.
+Ich kann einen Rat geben. | 아픈 사람에게 조언할 수 있어요.
+Ich kann sagen: Ich bin krank und kann nicht kommen. | 아파서 못 간다고 알릴 수 있어요.
+
+-- tipp 몸을 짚으면서 외워요
+p: 몸의 이름은 그 부분을 손으로 짚으면서 소리 내어 말하면 잘 외워져요. 머리를 짚으며 der Kopf, 배를 짚으며 der Bauch라고 해 보세요.
+p: 익숙해지면 Mein Kopf tut weh.처럼 문장으로 바꿔요. 몸을 움직이며 외운 말은 더 오래 남아요.

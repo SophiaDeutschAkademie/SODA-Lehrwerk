@@ -1,0 +1,81 @@
+{
+ "job": "a12_yu_02",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Lukas, wie komme ich zum Schwimmbad?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Nein, ich habe kein Fahrrad. Ich fahre mit dem Bus."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Und wo steige ich aus?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Super, danke! Emma kommt auch mit."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Ja, klar!"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Ich fahre mit dem Bus."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Gute Idee! Ich will das Museum sehen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Ja, klar! Bis Sonntag!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Am zwölften März. Und du?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Und Emma hat am ersten Februar Geburtstag, oder?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Lukas, wie komme ich zum Schwimmbad? [pause] Nein, ich habe kein Fahrrad. Ich fahre mit dem Bus. [pause] Und wo steige ich aus? [pause] Super, danke! Emma kommt auch mit. [pause] Ja, klar! [pause] Ich fahre mit dem Bus. [pause] Gute Idee! Ich will das Museum sehen. [pause] Ja, klar! Bis Sonntag! [pause] Am zwölften März. Und du? [pause] Und Emma hat am ersten Februar Geburtstag, oder? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

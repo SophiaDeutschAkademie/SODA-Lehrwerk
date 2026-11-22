@@ -1,0 +1,39 @@
+{
+ "job": "a12_sc_01",
+ "who": "Schneider",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "Schneider",
+   "parts": [
+    "Guten Morgen! Wo ist Yuna heute?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Schneider",
+   "parts": [
+    "Oh, das tut mir leid. Sie soll zu Hause bleiben."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Schneider",
+   "parts": [
+    "Ja, Tim ist auch krank. Ihm tut der Bauch weh."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Schneider",
+   "parts": [
+    "Ja, zum Glück. Und jetzt: der Mathetest!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Morgen! Wo ist Yuna heute? [pause] Oh, das tut mir leid. Sie soll zu Hause bleiben. [pause] Ja, Tim ist auch krank. Ihm tut der Bauch weh. [pause] Ja, zum Glück. Und jetzt: der Mathetest! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

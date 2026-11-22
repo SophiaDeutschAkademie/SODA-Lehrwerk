@@ -1,0 +1,83 @@
+{
+ "job": "a12_n_24",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "kalt.",
+    "Es war sehr kalt."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "heiß.",
+    "Im Sommer ist es heiß."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "Frühling, Sommer."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "Herbst, Winter."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "im Sommer, im Juli."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "gegangen, lange, Frühling, Wohnung"
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "trinken, danke, links, krank"
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "Im Frühling sind wir lange gegangen."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "Es regnet."
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "N",
+   "parts": [
+    "Es ist sonnig und heiß."
+   ]
+  }
+ ],
+ "script": "Also. [pause] kalt. Es war sehr kalt. [pause] heiß. Im Sommer ist es heiß. [pause] Frühling, Sommer. [pause] Herbst, Winter. [pause] im Sommer, im Juli. [pause] gegangen, lange, Frühling, Wohnung [pause] trinken, danke, links, krank [pause] Im Frühling sind wir lange gegangen. [pause] Es regnet. [pause] Es ist sonnig und heiß. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

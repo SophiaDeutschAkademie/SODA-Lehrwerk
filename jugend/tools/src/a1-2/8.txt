@@ -1,0 +1,245 @@
+@id a1-2/8
+
+== einstieg
+bild: A birthday party in a living room. EMMA stands behind a table with a birthday cake with candles and smiles. YUNA hands her a wrapped gift box with a ribbon. ELIF holds a small bunch of flowers. LUKAS claps his hands. Two balloons float above them.
+alt: Emma가 촛불을 꽂은 케이크 앞에 서 있고, Yuna가 선물 상자를 건네요. Elif는 꽃다발을 들고 있고 Lukas는 손뼉을 쳐요.
+lead: 2월 1일은 Emma의 생일이에요. 친구들이 선물을 준비해서 파티에 왔어요.
+mission: 이 과를 마치면 생일을 축하하고, 누구에게 무엇을 선물하는지 말할 수 있어요.
+wort: Alles Gute zum Geburtstag! | 생일 축하해!
+wort: das Geschenk | 선물
+wort: Das ist für dich. | 이건 네 거야.
+wort: Ich schenke ihr ein Buch. | 나는 그녀에게 책을 선물해.
+mc: Ich schenke ihr ein Buch. 이 문장에서 '그녀에게'는 무엇일까요? | ihr* | ein Buch | ich => 받는 사람은 3격(ihr), 주는 물건은 4격(ein Buch)이에요.
+
+== hoeren
+-- dialog A | Was schenken wir Emma? | 금요일 쉬는 시간이에요. Emma가 자리에 없을 때 친구들이 이야기해요.
+vor: 들으면서 찾아보세요. Lukas는 파티에 무엇을 준비하나요?
+Elif: Emma hat am Sonntag Geburtstag. Was schenken wir ihr? | Emma가 일요일에 생일이야. 뭘 선물할까?
+Yuna: Emma liest gern. Ich schenke ihr ein Buch. | Emma는 책 읽기를 좋아해. 나는 책을 선물할래.
+Elif: Gute Idee! Und ich kaufe Blumen für Emma. | 좋은 생각이야! 그럼 나는 Emma에게 줄 꽃을 살게.
+Lukas: Und ich? Ich habe kein Geld. Ich habe meiner Schwester gestern ein Spiel geschenkt. | 나는? 나는 돈이 없어. 어제 여동생한테 게임을 선물했거든.
+Yuna: Dann mach einen Kuchen für die Party! | 그럼 파티에 쓸 케이크를 만들어!
+Lukas: Einen Kuchen? Okay! Meine Mutter hilft mir. | 케이크? 좋아! 엄마가 도와주실 거야.
+Elif: Super! Und wir schreiben zusammen eine Karte. | 좋아! 그리고 카드는 같이 쓰자.
+Yuna: Ja! Aber pst, Emma kommt! | 응! 그런데 쉿, Emma가 와!
+
+-- dialog B | Alles Gute zum Geburtstag! | 일요일 오후, Emma의 생일 파티예요.
+vor: 들으면서 찾아보세요. Emma는 할머니에게 무엇을 받았나요?
+Yuna: Alles Gute zum Geburtstag, Emma! Das ist für dich. | 생일 축하해, Emma! 이건 네 거야.
+Emma: Danke, Yuna! Oh, ein Buch! Das gefällt mir sehr. | 고마워, Yuna! 와, 책이네! 정말 마음에 들어.
+Elif: Herzlichen Glückwunsch! Die Blumen sind für dich. | 축하해! 이 꽃은 너한테 주는 거야.
+Emma: Wie schön! Mama, kannst du mir eine Vase geben? | 정말 예쁘다! 엄마, 꽃병 좀 주실래요?
+Lukas: Und ich habe einen Kuchen gemacht. Für dich und für uns! | 그리고 나는 케이크를 만들었어. 너랑 우리를 위해서!
+Emma: Danke, Lukas! Schaut mal, meine Oma hat mir eine Kamera geschenkt! | 고마워, Lukas! 이것 봐, 할머니가 나한테 카메라를 선물해 주셨어!
+Yuna: Toll! Dann machen wir jetzt ein Foto. | 멋지다! 그럼 지금 사진 찍자.
+Sabine: Kommt alle! Zuerst singen wir, dann essen wir den Kuchen. | 모두 오렴! 먼저 노래를 부르고, 그다음에 케이크를 먹자.
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Yuna는 Emma에게 무엇을 선물하나요? | 책* | 꽃 | 초콜릿
+rf: Elif kauft Blumen für Emma. | r
+mc: Lukas는 왜 선물을 사지 못하나요? | 돈이 없어서* | 시간이 없어서 | 아파서
+mc: Lukas는 파티에 무엇을 준비하나요? | 직접 만든 케이크* | 게임 | 꽃
+mc: Emma는 할머니에게 무엇을 받았나요? | 카메라* | 책 | 꽃병
+rf: Das Buch gefällt Emma nicht. | f => Das gefällt mir sehr. 책이 아주 마음에 든다고 해요.
+
+-- kultur 생일 축하는 미리 하지 않아요
+p: 독일에서는 생일이 되기 전에 미리 축하하지 않아요. 미리 축하하면 운이 나쁘다고 생각하기 때문이에요. 그래서 생일 파티도 생일 당일이나 그 뒤에 해요.
+p: 생일인 사람이 케이크를 구워 반 친구들에게 나눠 주기도 해요.
+p: 축하할 때는 Alles Gute zum Geburtstag! 또는 Herzlichen Glückwunsch!라고 말해요.
+mc: 친구의 생일이 내일이에요. 오늘 만났을 때 어떻게 하는 것이 좋을까요? | 오늘은 축하하지 않고 내일 축하해요* | 미리 축하하고 선물도 줘요 | 축하 인사만 미리 해요
+
+-- kultur 쾰른의 Karneval
+p: 쾰른은 카니발(Karneval)로 유명해요. 해마다 11월 11일 11시 11분에 시작하고, 가장 큰 행사는 2월이나 3월에 열려요.
+p: 가장 큰 날은 Rosenmontag이라는 월요일이에요. 사람들이 분장을 하고 거리에 나와 긴 행렬을 구경해요. 행렬에서는 사탕과 초콜릿을 던져 줘요.
+p: 이때 쾰른 사람들은 Kölle Alaaf!라고 외쳐요. 쾰른 만세라는 뜻의 인사예요.
+mc: 쾰른의 카니발은 해마다 언제 시작할까요? | 11월 11일 11시 11분* | 12월 24일 저녁 | 1월 1일 0시
+
+== wortschatz
+-- gruppe Feiern | 축하하기
+feiern, hat gefeiert | 축하하다, 파티를 하다 | Wir feiern am Sonntag. | 우리는 일요일에 파티를 해요.
+einladen (du lädst ein, er lädt ein) | 초대하다 | Ich lade dich ein. | 너를 초대할게.
+die Einladung, die Einladungen | 초대, 초대장 | Danke für die Einladung! | 초대해 줘서 고마워!
+der Gast, die Gäste | 손님 | Die Gäste kommen um drei. | 손님들은 세 시에 와요.
+singen, hat gesungen | 노래하다 | Zuerst singen wir. | 먼저 노래를 불러요.
+glücklich | 행복한, 기쁜 | Emma ist glücklich. | Emma는 기뻐요.
+Alles Gute zum Geburtstag! | 생일 축하해! | Alles Gute zum Geburtstag, Emma! | 생일 축하해, Emma!
+Herzlichen Glückwunsch! | 축하해! | Du hast Geburtstag? Herzlichen Glückwunsch! | 생일이야? 축하해!
+
+-- gruppe Geschenke | 선물
+das Geschenk, die Geschenke | 선물 | Das Geschenk ist für dich. | 그 선물은 네 거야.
+schenken | 선물하다 | Ich schenke ihr ein Buch. | 나는 그녀에게 책을 선물해요.
+geben (du gibst, er gibt) | 주다 | Kannst du mir eine Vase geben? | 꽃병 좀 줄 수 있어요?
+bekommen | 받다 | Emma bekommt viele Geschenke. | Emma는 선물을 많이 받아요.
+für | ~을 위해, ~에게 줄 | Das ist für dich. | 이건 너를 위한 거야.
+die Blume, die Blumen | 꽃 | Die Blumen sind schön. | 꽃이 예뻐요.
+die Karte, die Karten | 카드 | Wir schreiben eine Karte. | 우리는 카드를 써요.
+die Kerze, die Kerzen | 초 | Der Kuchen hat fünfzehn Kerzen. | 케이크에 초가 열다섯 개 있어요.
+die Kamera, die Kameras | 카메라 | Die Kamera ist neu. | 그 카메라는 새것이에요.
+das Geld | 돈 | Ich habe kein Geld. | 나는 돈이 없어요.
+
+-- gruppe Feste | 명절과 축제
+das Fest, die Feste | 축제, 잔치 | Das Fest war schön. | 축제는 즐거웠어요.
+Weihnachten | 크리스마스 | Weihnachten ist im Dezember. | 크리스마스는 12월에 있어요.
+der Karneval | 카니발 | Der Karneval in Köln ist lustig. | 쾰른의 카니발은 재미있어요.
+
+-- bilder
+feiern, hat gefeiert: two party hats and a string of small flags
+die Einladung, die Einladungen: an open envelope with a card that shows a balloon
+der Gast, die Gäste: two guests who stand at an open door and hold a gift
+singen, hat gesungen: two teenagers who sing with open mouths, three music notes above them
+das Geschenk, die Geschenke: a wrapped gift box with a ribbon
+die Blume, die Blumen: a small bunch of flowers
+die Karte, die Karten: a folded greeting card with a heart on the front
+die Kerze, die Kerzen: three burning candles
+die Kamera, die Kameras: a single photo camera
+das Geld: a banknote and four coins
+Weihnachten: a decorated fir tree with a star on top
+der Karneval: a clown hat, a paper streamer and confetti
+
+-- aussprache 낱말 끝의 -e와 -en | 힘을 빼고 짧게
+p: 낱말 끝의 -e는 힘을 빼고 짧게 내요. [에]와 [으] 사이의 약한 소리예요. Blume, Kerze, Karte, danke의 끝소리가 그래요.
+p: 끝의 -en은 e를 거의 내지 않고 [은]처럼 짧게 말해요. schenken은 [솅큰], Kuchen은 [쿠흔]에 가까워요.
+hör: Blume, Kerze, Karte, danke | 끝의 -e
+hör: schenken, singen, Kuchen, Blumen | 끝의 -en
+hör: Wir schenken Emma Blumen und einen Kuchen. | 연습 문장
+
+== grammatik
+-- punkt Wem? meinem, meiner | 누구에게
+bsp: Ich schenke *ihr* ein Buch. | 나는 그녀에게 책을 선물해.
+bsp: Ich habe *meiner Schwester* gestern ein Spiel geschenkt. | 나는 어제 여동생에게 게임을 선물했어.
+bsp: Meine Oma hat *mir* eine Kamera geschenkt. | 할머니가 나에게 카메라를 선물해 주셨어.
+finde: meine Schwester가 '여동생에게'가 될 때 meine는 무엇으로 바뀌었나요? | meiner* | meinem | meinen
+regel: '누구에게'(Wem?)는 3격(Dativ)으로 말해요. der와 das 명사 앞에서는 -em, die 명사 앞에서는 -er로 끝나요. mein, dein, sein, ihr, ein, kein이 모두 같은 방식으로 바뀌어요.
+| | der Vater, der Freund | das Kind | die Mutter, die Oma
+| ~은, ~는 | mein Vater | mein Kind | meine Mutter
+| ~에게 | mein*em* Vater | mein*em* Kind | mein*er* Mutter
+| ~에게 | dein*em* Freund | ein*em* Kind | sein*er* Oma
+merke: 1과에서 배운 dem, der와 끝 글자가 같아요. dem Vater는 meinem Vater, der Mutter는 meiner Mutter예요.
+
+-- punkt schenken, geben | 누구에게 무엇을
+bsp: Ich schenke *ihr* *ein Buch*. | 나는 그녀에게 책을 선물해.
+bsp: Kannst du *mir* *eine Vase* geben? | 나에게 꽃병을 줄 수 있어요?
+bsp: Was schenken wir *ihr*? | 그녀에게 뭘 선물할까?
+finde: Ich schenke ihr ein Buch. 받는 사람과 물건 가운데 무엇을 먼저 말했나요? | 받는 사람 ihr* | 물건 ein Buch
+regel: schenken(선물하다), geben(주다), kaufen(사 주다)은 '누구에게'와 '무엇을'을 함께 써요. 받는 사람은 3격, 물건은 4격이에요. 보통 받는 사람을 먼저 말해요.
+| 누가 | 동사 | 누구에게 (3격) | 무엇을 (4격)
+| Ich | schenke | meiner Freundin | ein Buch.
+| Lukas | gibt | seinem Vater | den Kuchen.
+| Wir | kaufen | Emma | Blumen.
+| Oma | schenkt | mir | eine Kamera.
+merke: geben은 e가 i로 바뀌어요. du gibst, er gibt. 친구에게 부탁할 때는 Gib mir bitte das Buch!라고 해요.
+
+-- punkt für | ~을 위해
+bsp: Das ist *für dich*. | 이건 너를 위한 거야.
+bsp: Ich kaufe Blumen *für Emma*. | 나는 Emma에게 줄 꽃을 사.
+bsp: Mach einen Kuchen *für die Party*! | 파티에 쓸 케이크를 만들어!
+finde: '너를 위해'라고 말할 때 für 뒤에 무엇을 썼나요? | dich* | dir | du
+regel: für 뒤에는 항상 4격(Akkusativ)이 와요. 대명사는 mich, dich, ihn, sie, uns를 써요. der 명사 앞에서는 den, einen, meinen이 돼요.
+| ~은, ~는 | ich | du | er | sie | wir
+| für … | für mich | für dich | für ihn | für sie | für uns
+merke: schenken은 3격과 함께 쓰고 für는 4격과 함께 써요. Ich schenke meinem Bruder ein Buch. Das Buch ist für meinen Bruder.
+
+== training
+-- ex Hören | Emma와 Thomas가 할머니 생일 이야기를 해요. 듣고 답하세요.
+audio | Omas Geburtstag
+> Emma: Papa, Oma hat am Samstag Geburtstag. Was schenken wir ihr?
+> Thomas: Ich mache ihr einen Kuchen. Oma isst gern Kuchen.
+> Emma: Und ich? Ich kaufe ihr Blumen.
+> Thomas: Gute Idee. Und Mama schenkt ihr ein Buch.
+> Emma: Und Yuna?
+> Thomas: Yuna schreibt eine Karte für Oma.
+mc: 할머니의 생일은 언제인가요? | 토요일* | 일요일 | 금요일
+mc: Was macht Thomas für Oma? | einen Kuchen* | eine Karte | ein Foto
+mc: Wer kauft Blumen? | Emma* | Sabine | Yuna
+mc: Yuna는 무엇을 하나요? | 카드를 써요* | 책을 선물해요 | 케이크를 만들어요
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Lukas: Ich schenke meiner Mutter Blumen.
+mc: Lukas는 누구에게 꽃을 선물하나요? | 어머니* | 여동생 | 할머니
+hör: Elif: Ich schenke meinem Bruder ein Spiel.
+mc: Elif는 남자 형제에게 무엇을 선물하나요? | 게임* | 책 | 케이크
+hör: Yuna: Die Karte ist für meine Oma.
+mc: 카드는 누구에게 주는 것인가요? | 할머니* | 어머니 | 친구
+hör: Emma: Meine Freunde haben mir ein Buch geschenkt.
+mc: Emma는 친구들에게 무엇을 받았나요? | 책* | 꽃 | 카메라
+
+-- ex Lesen | Emma가 보낸 초대장이에요. 읽고 답하세요.
+text notiz | Einladung
+> Liebe Yuna, lieber Lukas, liebe Elif,
+> ich habe am ersten Februar Geburtstag. Dann bin ich fünfzehn!
+> Ich lade euch ein. Die Party ist am Sonntag um drei Uhr bei mir zu Hause.
+> Es gibt Kuchen und Pizza. Wir hören Musik und tanzen.
+> Könnt ihr kommen? Schreibt mir bitte!
+> Eure Emma
+rf: Die Party ist am Samstag. | f => Die Party ist am Sonntag um drei Uhr.
+mc: Emma는 몇 살이 되나요? | 열다섯 살* | 열네 살 | 열여섯 살
+mc: 파티에서는 무엇을 먹나요? | Kuchen und Pizza* | Brezeln und Salat | Reis und Hähnchen
+mc: Emma는 친구들에게 무엇을 부탁하나요? | 올 수 있는지 답장해 달라고 해요* | 케이크를 가져오라고 해요 | 세 시 전에 오라고 해요
+
+-- ex Grammatik | 알맞은 형태를 고르세요.
+gap: Ich schenke [meinem|meiner] Vater ein Buch.
+gap: Ich schenke [meiner|meinem] Mutter Blumen.
+gap: Lukas gibt [seiner|seinem] Schwester ein Spiel.
+gap: Emma schreibt [ihrer|ihrem] Oma eine Karte.
+gap: Was schenkst du [deinem|deiner] Bruder?
+gap: Yuna hilft [ihrem|ihrer] Freund Lukas.
+
+-- ex Grammatik | 알맞은 대명사를 고르세요.
+gap: Emma hat Geburtstag. Wir schenken [ihr|ihm|uns] ein Buch.
+gap: Lukas hat Geburtstag. Ich schenke [ihm|ihr|dir] ein T-Shirt.
+gap: Ich habe Geburtstag! Meine Oma schenkt [mir|dir|ihr] eine Kamera.
+gap: Du hast Geburtstag? Ich schenke [dir|mir|ihm] Schokolade!
+gap: Wir haben Hunger. Thomas gibt [uns|ihm|ihr] Kuchen.
+
+-- ex Grammatik | für 뒤에 알맞은 말을 고르세요.
+gap: Das Geschenk ist für [dich|dir|du].
+gap: Die Blumen sind für [meine|meiner|meinem] Mutter.
+gap: Ich kaufe ein Buch für [meinen|meinem|mein] Bruder.
+gap: Die Karte ist für [ihn|ihm|er].
+gap: Ist der Kuchen für [uns|wir]?
+gap: Das ist für [mich|mir|ich].
+
+-- ex Wortschatz | 표현과 뜻을 짝지으세요.
+paar: Alles Gute zum Geburtstag! = 생일 축하해! ; Herzlichen Glückwunsch! = 축하해! ; Das ist für dich. = 이건 네 거야. ; Danke für die Einladung! = 초대해 줘서 고마워! ; Das gefällt mir sehr. = 정말 마음에 들어. ; Gute Besserung! = 빨리 나아!
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / schenke / ihr / ein Buch. | 나는 그녀에게 책을 선물해.
+ord: wir / kaufen / Blumen / für Emma. | 우리는 Emma에게 줄 꽃을 사.
+ord: was / schenkst / du / deinem Bruder? | 너는 남자 형제에게 뭘 선물해?
+ord: meine Oma / hat / mir / eine Kamera / geschenkt. | 할머니가 나에게 카메라를 선물해 주셨어.
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Yuna: Alles Gute zum Geburtstag! | 생일 축하해!
+dik: Yuna: Das ist für dich. | 이건 네 거야.
+dik: Elif: Was schenken wir ihr? | 그녀에게 뭘 선물할까?
+
+== sprechen
+-- redemittel
+초대하기: Ich lade dich ein. | 너를 초대할게. ; Die Party ist am Sonntag um drei. | 파티는 일요일 세 시야. ; Kannst du kommen? | 올 수 있어?
+초대에 답하기: Danke für die Einladung! | 초대해 줘서 고마워! ; Ja, ich komme gern. | 응, 기꺼이 갈게. ; Ich kann leider nicht kommen. | 아쉽지만 못 가.
+축하하고 선물 주기: Alles Gute zum Geburtstag! | 생일 축하해! ; Herzlichen Glückwunsch! | 축하해! ; Das ist für dich. | 이건 네 거야.
+선물 고르기: Was schenken wir ihr? | 그녀에게 뭘 선물할까? ; Ich schenke ihm ein Buch. | 나는 그에게 책을 선물할래. ; Ich kaufe Blumen für Emma. | 나는 Emma에게 줄 꽃을 살래.
+
+-- rolle B | Emma, Yuna, Elif, Lukas
+
+-- ich 생일과 선물 | 선물을 주고 싶은 사람, 줄 선물, 내가 받고 싶은 선물을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 선물을 주고 싶은 사람 (meinem, meiner와 함께) | meiner Mutter
+feld: b | 줄 선물 (einen, ein, eine와 함께) | ein Buch
+feld: c | 내가 받고 싶은 선물 | eine Kamera
+satz: Ich schenke {a} {b}.
+satz: Zum Geburtstag möchte ich {c}.
+
+-- schreiben Eine Einladung | 내 생일 파티에 친구를 부르는 초대장을 써 보세요.
+punkt: 받는 사람 ; 내 생일 날짜 ; 파티의 요일, 시각, 장소 ; 파티에서 하는 일 ; 답장해 달라는 말
+start: Liebe …, / Lieber …,
+muster: Liebe Mina, ich habe am zwölften März Geburtstag. Ich lade dich ein! Die Party ist am Samstag um vier Uhr bei mir zu Hause. Es gibt Kuchen und Pizza. Wir hören Musik und spielen. Kannst du kommen? Schreib mir bitte! Deine Yuna
+check: Liebe 또는 Lieber로 시작했나요? ; 날짜를 am …ten으로, 시각을 um으로 썼나요? ; 파티에서 무엇을 하는지 썼나요? ; 끝에 내 이름을 썼나요?
+
+-- kann
+Ich kann jemanden einladen. | 친구를 초대할 수 있어요.
+Ich kann zum Geburtstag gratulieren. | 생일을 축하할 수 있어요.
+Ich kann sagen, wem ich was schenke. | 누구에게 무엇을 선물하는지 말할 수 있어요.
+
+-- tipp 가족의 생일을 독일어로 말해요
+p: 달력에서 가족과 친구의 생일을 찾아 독일어로 말해 보세요. Meine Mutter hat am dritten Mai Geburtstag. Ich schenke ihr Blumen.
+p: 날짜와 3격, 선물 이름이 한 번에 연습돼요. 생일이 다가오면 독일어로 축하 카드를 써 보세요.

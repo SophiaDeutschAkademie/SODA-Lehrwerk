@@ -1,0 +1,25 @@
+{
+ "job": "a12s_sa_01",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Sabine",
+   "parts": [
+    "Du hast Fieber. Du sollst heute zu Hause bleiben."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Sabine",
+   "parts": [
+    "Was tut dir weh?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Du hast Fieber. Du sollst heute zu Hause bleiben. [pause] Was tut dir weh? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

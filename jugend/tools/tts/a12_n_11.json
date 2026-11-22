@@ -1,0 +1,83 @@
+{
+ "job": "a12_n_11",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Heute ist der dritte Mai."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Ich habe am siebten Juli Geburtstag."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Der Test ist am zwanzigsten Juni."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Wir treffen uns am ersten Dezember."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "die Jacke"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Die Jacke gefällt mir."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Das steht dir!"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Was kostet die Jacke?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "die Jacke, die Jacken.",
+    "Die Jacke ist warm."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "der Pullover, die Pullover.",
+    "Ich suche einen Pullover."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Heute ist der dritte Mai. [pause] Ich habe am siebten Juli Geburtstag. [pause] Der Test ist am zwanzigsten Juni. [pause] Wir treffen uns am ersten Dezember. [pause] die Jacke [pause] Die Jacke gefällt mir. [pause] Das steht dir! [pause] Was kostet die Jacke? [pause] die Jacke, die Jacken. Die Jacke ist warm. [pause] der Pullover, die Pullover. Ich suche einen Pullover. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

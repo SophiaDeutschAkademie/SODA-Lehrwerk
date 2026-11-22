@@ -1,0 +1,60 @@
+{
+ "job": "a12_yu_06",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Dann mach einen Kuchen für die Party!"
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Ja! Aber pst, Emma kommt!"
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Alles Gute zum Geburtstag, Emma! Das ist für dich."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Toll! Dann machen wir jetzt ein Foto."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Die Karte ist für meine Oma."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Alles Gute zum Geburtstag!"
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Das ist für dich."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Dann mach einen Kuchen für die Party! [pause] Ja! Aber pst, Emma kommt! [pause] Alles Gute zum Geburtstag, Emma! Das ist für dich. [pause] Toll! Dann machen wir jetzt ein Foto. [pause] Die Karte ist für meine Oma. [pause] Alles Gute zum Geburtstag! [pause] Das ist für dich. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "a12_em_04",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "Emma",
+   "parts": [
+    "Oje. Aber uns geht es gut!"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Emma",
+   "parts": [
+    "Meine Füße tun weh."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Emma",
+   "parts": [
+    "Yuna ist krank."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Emma",
+   "parts": [
+    "Hallo, Lukas! Wie war dein Wochenende?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Emma",
+   "parts": [
+    "Und am Sonntag?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Emma",
+   "parts": [
+    "Ich habe meine Oma besucht. Wir haben Kuchen gegessen und Tee getrunken."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Emma",
+   "parts": [
+    "Ja! Sie hatte Fieber, aber jetzt geht es ihr gut."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Emma",
+   "parts": [
+    "Gestern habe ich eine Jacke gekauft."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Emma",
+   "parts": [
+    "Wie war dein Wochenende?"
+   ]
+  },
+  {
+   "pid": "a1-2/7",
+   "who": "Emma",
+   "parts": [
+    "Ja, mit dem Zug. Wir sind vier Tage geblieben."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Oje. Aber uns geht es gut! [pause] Meine Füße tun weh. [pause] Yuna ist krank. [pause] Hallo, Lukas! Wie war dein Wochenende? [pause] Und am Sonntag? [pause] Ich habe meine Oma besucht. Wir haben Kuchen gegessen und Tee getrunken. [pause] Ja! Sie hatte Fieber, aber jetzt geht es ihr gut. [pause] Gestern habe ich eine Jacke gekauft. [pause] Wie war dein Wochenende? [pause] Ja, mit dem Zug. Wir sind vier Tage geblieben. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

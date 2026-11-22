@@ -1,0 +1,67 @@
+{
+ "job": "a12_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "Mann",
+   "parts": [
+    "Entschuldigung! Wo ist der Bahnhof, bitte?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Mann",
+   "parts": [
+    "Ist es weit?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Mann",
+   "parts": [
+    "Und wie komme ich zum Zoo?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Mann",
+   "parts": [
+    "Vielen Dank!"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag, Lukas. Was tut dir weh?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Hast du auch Kopfschmerzen?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Gut. Du sollst heute zu Hause bleiben und Tee trinken. Du darfst keine Schokolade essen!"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Nein! Heute darfst du nicht Fußball spielen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Entschuldigung! Wo ist der Bahnhof, bitte? [pause] Ist es weit? [pause] Und wie komme ich zum Zoo? [pause] Vielen Dank! [pause] Guten Tag, Lukas. Was tut dir weh? [pause] Hast du auch Kopfschmerzen? [pause] Gut. Du sollst heute zu Hause bleiben und Tee trinken. Du darfst keine Schokolade essen! [pause] Nein! Heute darfst du nicht Fußball spielen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

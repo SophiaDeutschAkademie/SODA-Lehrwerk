@@ -1,0 +1,84 @@
+{
+ "job": "a12_n_04",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Kuchen, Uhr, Stuhl, Buch"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Die Bücher sind in der Küche."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Wo ist der Bahnhof?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "geradeaus"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "links"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "rechts"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Bahnhof, die Bahnhöfe."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Haltestelle, die Haltestellen.",
+    "Die Haltestelle ist neben der Schule."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Straße, die Straßen.",
+    "Die Straße ist sehr schön."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Platz, die Plätze.",
+    "Der Platz ist groß."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Kuchen, Uhr, Stuhl, Buch [pause] Die Bücher sind in der Küche. [pause] Wo ist der Bahnhof? [pause] geradeaus [pause] links [pause] rechts [pause] der Bahnhof, die Bahnhöfe. [pause] die Haltestelle, die Haltestellen. Die Haltestelle ist neben der Schule. [pause] die Straße, die Straßen. Die Straße ist sehr schön. [pause] der Platz, die Plätze. Der Platz ist groß. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

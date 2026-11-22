@@ -1,0 +1,81 @@
+{
+ "job": "a12_em_01",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Mama, ich suche mein Handy! Wo ist es?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Nein, in der Tasche ist es nicht."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Nein, auch nicht."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Oh, danke, Yuna! Aber wo ist mein Mathebuch?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Ja, Mama."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Das Handy ist in der Tasche."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Milo ist auf dem Sofa."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Die Lampe ist neben dem Bett."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Der Ball ist unter dem Tisch."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Wo ist mein Handy?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Mama, ich suche mein Handy! Wo ist es? [pause] Nein, in der Tasche ist es nicht. [pause] Nein, auch nicht. [pause] Oh, danke, Yuna! Aber wo ist mein Mathebuch? [pause] Ja, Mama. [pause] Das Handy ist in der Tasche. [pause] Milo ist auf dem Sofa. [pause] Die Lampe ist neben dem Bett. [pause] Der Ball ist unter dem Tisch. [pause] Wo ist mein Handy? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

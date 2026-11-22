@@ -1,0 +1,84 @@
+{
+ "job": "a12_n_07",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Haus, hier, Haltestelle, Hund"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "fahren, gehen, Uhr, Bahn"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Wir fahren mit der Bahn zum Bahnhof."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Hast du Zeit?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Ich kann kommen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Ich kann leider nicht."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Ich muss lernen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "können, du kannst, er kann.",
+    "Ich kann am Samstag kommen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "müssen, du musst, er muss.",
+    "Ich muss für den Test lernen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "wollen, du willst, er will.",
+    "Wir wollen ins Museum gehen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Haus, hier, Haltestelle, Hund [pause] fahren, gehen, Uhr, Bahn [pause] Wir fahren mit der Bahn zum Bahnhof. [pause] Hast du Zeit? [pause] Ich kann kommen. [pause] Ich kann leider nicht. [pause] Ich muss lernen. [pause] können, du kannst, er kann. Ich kann am Samstag kommen. [pause] müssen, du musst, er muss. Ich muss für den Test lernen. [pause] wollen, du willst, er will. Wir wollen ins Museum gehen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

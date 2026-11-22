@@ -1,0 +1,91 @@
+{
+ "job": "a12_n_19",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "besuchen, hat besucht.",
+    "Ich habe meine Oma besucht."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "aufräumen, hat aufgeräumt.",
+    "Ich habe mein Zimmer aufgeräumt."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "sehen, hat gesehen.",
+    "Ich habe einen Film gesehen."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "lesen, hat gelesen.",
+    "Ich habe viel gelesen."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "essen, hat gegessen.",
+    "Wir haben Kuchen gegessen."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "trinken, hat getrunken.",
+    "Wir haben Tee getrunken."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "schlafen, hat geschlafen.",
+    "Ich habe lange geschlafen."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "treffen, hat getroffen.",
+    "Ich habe Tim getroffen."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "gestern.",
+    "Gestern hatte ich keine Zeit."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "letzte Woche.",
+    "Letzte Woche war ich krank."
+   ]
+  }
+ ],
+ "script": "Also. [pause] besuchen, hat besucht. Ich habe meine Oma besucht. [pause] aufräumen, hat aufgeräumt. Ich habe mein Zimmer aufgeräumt. [pause] sehen, hat gesehen. Ich habe einen Film gesehen. [pause] lesen, hat gelesen. Ich habe viel gelesen. [pause] essen, hat gegessen. Wir haben Kuchen gegessen. [pause] trinken, hat getrunken. Wir haben Tee getrunken. [pause] schlafen, hat geschlafen. Ich habe lange geschlafen. [pause] treffen, hat getroffen. Ich habe Tim getroffen. [pause] gestern. Gestern hatte ich keine Zeit. [pause] letzte Woche. Letzte Woche war ich krank. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

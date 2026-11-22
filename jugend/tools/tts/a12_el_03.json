@@ -1,0 +1,81 @@
+{
+ "job": "a12_el_03",
+ "who": "Elif",
+ "voice": "Emily",
+ "voice_id": "OO0WT3lY2gVNwzZMAjAI",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "Elif",
+   "parts": [
+    "Das ist günstig. Ich nehme sie!"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Elif",
+   "parts": [
+    "Das Kleid ist rot."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Elif",
+   "parts": [
+    "Wollen wir ihr helfen? Ich mache ein Foto von der Tafel."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Elif",
+   "parts": [
+    "Mir tut der Rücken weh."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Elif",
+   "parts": [
+    "Yuna! Du bist wieder da! Wie war dein Wochenende?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Elif",
+   "parts": [
+    "Und am Sonntag?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Elif",
+   "parts": [
+    "Bibimbap? Was ist das?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Elif",
+   "parts": [
+    "Toll! Ich habe am Sonntag einen Film gesehen. Aber er war langweilig."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Elif",
+   "parts": [
+    "Gestern Abend hatte ich keine Zeit. Ich habe mein Zimmer aufgeräumt."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Elif",
+   "parts": [
+    "Lukas, was hast du am Sonntag gemacht?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist günstig. Ich nehme sie! [pause] Das Kleid ist rot. [pause] Wollen wir ihr helfen? Ich mache ein Foto von der Tafel. [pause] Mir tut der Rücken weh. [pause] Yuna! Du bist wieder da! Wie war dein Wochenende? [pause] Und am Sonntag? [pause] Bibimbap? Was ist das? [pause] Toll! Ich habe am Sonntag einen Film gesehen. Aber er war langweilig. [pause] Gestern Abend hatte ich keine Zeit. Ich habe mein Zimmer aufgeräumt. [pause] Lukas, was hast du am Sonntag gemacht? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

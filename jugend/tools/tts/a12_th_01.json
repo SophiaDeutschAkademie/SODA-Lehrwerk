@@ -1,0 +1,32 @@
+{
+ "job": "a12_th_01",
+ "who": "Thomas",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a1-2/8",
+   "who": "Thomas",
+   "parts": [
+    "Ich mache ihr einen Kuchen. Oma isst gern Kuchen."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Thomas",
+   "parts": [
+    "Gute Idee. Und Mama schenkt ihr ein Buch."
+   ]
+  },
+  {
+   "pid": "a1-2/8",
+   "who": "Thomas",
+   "parts": [
+    "Yuna schreibt eine Karte für Oma."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich mache ihr einen Kuchen. Oma isst gern Kuchen. [pause] Gute Idee. Und Mama schenkt ihr ein Buch. [pause] Yuna schreibt eine Karte für Oma. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}
