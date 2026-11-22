@@ -11,13 +11,13 @@
 | 단계 | 이름 | 내용 | 마지막 |
 |---|---|---|---|
 | A1.1 | Ankommen 첫 만남 | 인사, 반, 학용품, 시간표, 취미, 가족, 음식, 하루 일과 | Stufentest A1.1 |
-| A1.2 | Einleben 익숙해지기 | 집, 길 찾기, 약속, 쇼핑, 건강, 지난 일, 여행, 축제 | Prüfungstraining A1 (Fit in Deutsch 1) |
+| A1.2 | Einleben 익숙해지기 | 집, 길 찾기, 약속, 쇼핑, 건강, 지난 일, 여행, 축제 | Stufentest A1.2 |
 | A2.1 | Dazugehören 어울리기 | 새 학기, 친구, 미디어, 집안일, 동아리, 요리, 교통, 스타일 | Stufentest A2.1 |
-| A2.2 | Entdecken 넓혀 가기 | 진로, 수학여행, 환경, D-A-CH, 용돈, 갈등, 음악과 영화, 한 해 돌아보기 | Prüfungstraining A2 (Fit in Deutsch) |
+| A2.2 | Entdecken 넓혀 가기 | 진로, 수학여행, 환경, D-A-CH, 용돈, 갈등, 음악과 영화, 한 해 돌아보기 | Stufentest A2.2 |
 | B1.1 | Mitreden 의견 말하기 | 가족과 세대, 공부, 우정, 뉴스, 건강, 여행, 기후, 참여 | Stufentest B1.1 |
-| B1.2 | Weiterdenken 깊이 생각하기 | 직업, 소비, 주거, 예술, 역사, 기술, 문화, 마무리 | Prüfungstraining B1 (Goethe-Zertifikat B1 청소년용) |
+| B1.2 | Weiterdenken 깊이 생각하기 | 직업, 소비, 주거, 예술, 역사, 기술, 문화, 마무리 | Stufentest B1.2 |
 
-단계마다 과 8개, Station 2개(4과와 8과 뒤, 복습과 프로젝트), 평가 1개가 있습니다. 모두 48과입니다.
+단계마다 과 8개, Station 2개(4과와 8과 뒤, 복습과 프로젝트), 평가 1개(Stufentest)가 있습니다. 모두 48과입니다. 시험 형식 연습은 넣지 않습니다. 목차 아래에는 단계 수준에 맞는 Goethe 시험 이름만 안내합니다.
 
 한 과는 여섯 순서로 진행합니다: Einstieg, Hören und Lesen, Wortschatz, Grammatik, Training, Sprechen und Schreiben. 과마다 Aussprache(발음), Land und Leute(문화), Lerntipp(공부 요령)이 함께 들어갑니다.
 
