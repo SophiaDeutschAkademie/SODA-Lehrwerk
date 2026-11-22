@@ -211,7 +211,7 @@ h1:focus{outline:none}
 #inhalt .cat.zert .grid{flex-direction:row;flex-wrap:wrap}
 #inhalt .cat.zert .grid li{flex:1 1 240px}
 @media (min-width:701px){#inhalt .cat.zert .grid{display:grid;grid-template-columns:repeat(3,1fr)}}
-@media (min-width:701px) and (max-width:900px){#inhalt .cat.zert .grid{grid-template-columns:repeat(2,1fr)}#inhalt .cat.zert .grid li:last-child:nth-child(odd){grid-column:1/-1}}
+@media (min-width:701px) and (max-width:900px){#inhalt .cat.zert .grid{grid-template-columns:repeat(2,1fr)}#inhalt .cat.zert .grid li:last-child:nth-child(odd){grid-column:1/-1}#inhalt .cat.zert.wort .grid li:last-child:nth-child(odd){grid-column:auto}}
 #inhalt .cat.zert.solo .grid,#inhalt .cat.zert.solo .grid.one{display:flex;flex-direction:column}
 #inhalt .cat.zert.solo .grid.one li{flex:0 0 auto}
 @media (min-width:701px){#inhalt .cat.zert.solo .tile{display:grid;grid-template-columns:1fr auto;grid-template-areas:"lab foot" "ttl foot" "dsc foot";column-gap:24px;align-items:center;padding:22px 24px}#inhalt .cat.zert.solo .tile .lab{grid-area:lab}#inhalt .cat.zert.solo .tile .ttl{grid-area:ttl;margin-top:6px}#inhalt .cat.zert.solo .tile .dsc{grid-area:dsc}#inhalt .cat.zert.solo .tile-foot{grid-area:foot;padding-top:0!important;gap:16px}}
@@ -277,10 +277,10 @@ html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visi
 #inhalt .cat .tile .meta,.meta{font-size:10.5px;padding:2px 8px}
 #inhalt .cat .tile .go,.go{width:26px;height:26px}
 .go svg{width:13px;height:13px}
-#inhalt .cat:nth-child(3) .tile .dsc{display:none}
-#inhalt .cat:nth-child(3) .tile{padding:9px 12px 8px}
-#inhalt .cat:nth-child(3) .tile .tile-foot{padding-top:5px!important}
-#inhalt .cat:nth-child(3) .tile .go{width:24px;height:24px}
+#inhalt .cat.wort .tile .dsc{display:none}
+#inhalt .cat.wort .tile{padding:9px 12px 8px}
+#inhalt .cat.wort .tile .tile-foot{padding-top:5px!important}
+#inhalt .cat.wort .tile .go{width:24px;height:24px}
 .tile .upd{top:9px;right:12px;font-size:10px}
 .tile .upd span:first-child{font-size:9.5px}
 }
@@ -339,6 +339,15 @@ html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visi
         </a></li>
         </ul>
       </section>
+      <section class="cat" aria-labelledby="cat-lehrbuch">
+        <header class="cat-h"><h2 id="cat-lehrbuch">Lehrbuch</h2></header>
+        <ul class="grid one">
+        <li><a class="tile" href="kinder/" style="--i:1"><span class="upd"><span>업데이트</span><span>2026.11.22</span></span>
+          <span class="lab">SODA Kinder</span><b class="ttl">어린이 독일어 첫걸음</b><span class="dsc">부엉이 Sofi와 함께 듣고, 따라 말하고, 놀면서 배우는 어린이·초등 저학년 교재</span>
+          <span class="tile-foot"><span class="metas"><span class="meta">24단원 · 음성 516개</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </a></li>
+        </ul>
+      </section>
       <section class="cat" aria-labelledby="cat-training">
         <header class="cat-h"><h2 id="cat-training">Training</h2></header>
         <ul class="grid three">
@@ -364,10 +373,10 @@ html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visi
         </a></li>
         </ul>
       </section>
-      <section class="cat" aria-labelledby="cat-wortschatz">
+      <section class="cat zert wort" aria-labelledby="cat-wortschatz">
         <header class="cat-h"><h2 id="cat-wortschatz">Wortschatz</h2></header>
         <ul class="grid three">
-        <li><a class="tile" href="vokalab/" style="--i:4"><span class="upd"><span>업데이트</span><span>2026.11.19</span></span>
+        <li style="grid-column:1/-1"><a class="tile" href="vokalab/" style="--i:4"><span class="upd"><span>업데이트</span><span>2026.11.19</span></span>
           <span class="lab">Vokalab</span><b class="ttl">독일어 단어장 A1–C1</b><span class="dsc">주차별 목표, 테스트, 관사·복수 훈련</span>
           <span class="tile-foot"><span class="metas"><span class="meta">A1–C1 · 12,724단어</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
@@ -394,15 +403,6 @@ html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visi
 <li><a class="tile" href="business-deutsch/" style="--i:10"><span class="upd"><span>업데이트</span><span>2026.11.16</span></span>
           <span class="lab">Business-Deutsch</span><b class="ttl">비즈니스 독일어 표현</b><span class="dsc">플래시카드 학습</span>
           <span class="tile-foot"><span class="metas"><span class="meta">A2–C1 · 270장</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
-        </a></li>
-        </ul>
-      </section>
-      <section class="cat zert solo" aria-labelledby="cat-lehrbuch">
-        <header class="cat-h"><h2 id="cat-lehrbuch">Lehrbuch</h2></header>
-        <ul class="grid one">
-        <li><a class="tile" href="kinder/" style="--i:10"><span class="upd"><span>업데이트</span><span>2026.11.22</span></span>
-          <span class="lab">SODA Kinder</span><b class="ttl">어린이 독일어 첫걸음</b><span class="dsc">부엉이 Sofi와 함께 듣고, 따라 말하고, 놀면서 배우는 어린이·초등 저학년 교재</span>
-          <span class="tile-foot"><span class="metas"><span class="meta">24단원 · 음성 516개</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
         </ul>
       </section>
