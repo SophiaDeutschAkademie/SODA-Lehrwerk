@@ -1,0 +1,49 @@
+{
+ "job": "k28_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   28,
+   "sofi",
+   "Au wie Auto"
+  ],
+  [
+   28,
+   "sofi",
+   "Wie kommst du zur Schule?"
+  ],
+  [
+   28,
+   "sofi",
+   "Was ist das?"
+  ],
+  [
+   28,
+   "sofi",
+   "Fährst du mit dem Schiff?"
+  ],
+  [
+   28,
+   "sofi",
+   "Brumm, brumm, brumm, da kommt der Bus,"
+  ],
+  [
+   28,
+   "sofi",
+   "Mama, tschüss, noch einen Kuss!"
+  ],
+  [
+   28,
+   "sofi",
+   "Mit dem Rad und mit dem Zug,"
+  ],
+  [
+   28,
+   "sofi",
+   "mit dem Schiff, das ist genug!"
+  ]
+ ],
+ "script": "[happy] Au wie Auto [long pause] Wie kommst du zur Schule? [long pause] Was ist das? [long pause] Fährst du mit dem Schiff? [long pause] Brumm, brumm, brumm, da kommt der Bus, [long pause] Mama, tschüss, noch einen Kuss! [long pause] Mit dem Rad und mit dem Zug, [long pause] mit dem Schiff, das ist genug!"
+}

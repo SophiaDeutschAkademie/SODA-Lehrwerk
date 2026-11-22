@@ -1,0 +1,44 @@
+{
+ "job": "k34_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   34,
+   "sofi",
+   "Hast du eine Laterne?"
+  ],
+  [
+   34,
+   "sofi",
+   "Was ist das?"
+  ],
+  [
+   34,
+   "sofi",
+   "Ist es hell?"
+  ],
+  [
+   34,
+   "sofi",
+   "Meine kleine Laterne brennt,"
+  ],
+  [
+   34,
+   "sofi",
+   "die hier jedes Kind gut kennt."
+  ],
+  [
+   34,
+   "sofi",
+   "Mond und Sterne leuchten hell,"
+  ],
+  [
+   34,
+   "sofi",
+   "wir gehn langsam, nicht so schnell."
+  ]
+ ],
+ "script": "[happy] Hast du eine Laterne? [long pause] Was ist das? [long pause] Ist es hell? [long pause] Meine kleine Laterne brennt, [long pause] die hier jedes Kind gut kennt. [long pause] Mond und Sterne leuchten hell, [long pause] wir gehn langsam, nicht so schnell."
+}

@@ -1,0 +1,44 @@
+{
+ "job": "t7_lena_a",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   25,
+   "lena",
+   "Ich frühstücke. Hm, lecker!"
+  ],
+  [
+   25,
+   "lena",
+   "Am Nachmittag spiele ich."
+  ],
+  [
+   25,
+   "lena",
+   "Dann gehe ich ins Bett. Gute Nacht!"
+  ],
+  [
+   25,
+   "lena",
+   "Ich gehe ins Bett."
+  ],
+  [
+   26,
+   "lena",
+   "Sofi, wie spät ist es?"
+  ],
+  [
+   26,
+   "lena",
+   "Und jetzt? Wie spät ist es jetzt?"
+  ],
+  [
+   26,
+   "lena",
+   "Um acht Uhr gehe ich ins Bett."
+  ]
+ ],
+ "script": "[happy] Ich frühstücke. Hm, lecker! [long pause] Am Nachmittag spiele ich. [long pause] Dann gehe ich ins Bett. Gute Nacht! [long pause] Ich gehe ins Bett. [long pause] Sofi, wie spät ist es? [long pause] Und jetzt? Wie spät ist es jetzt? [long pause] Um acht Uhr gehe ich ins Bett."
+}

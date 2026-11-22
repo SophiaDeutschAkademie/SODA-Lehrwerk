@@ -1,0 +1,39 @@
+{
+ "job": "t7_ben_a",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   25,
+   "ben",
+   "Guten Morgen! Ich stehe auf."
+  ],
+  [
+   25,
+   "ben",
+   "Dann gehe ich in die Schule."
+  ],
+  [
+   25,
+   "ben",
+   "Am Abend putze ich meine Zähne."
+  ],
+  [
+   25,
+   "ben",
+   "Ich stehe auf."
+  ],
+  [
+   26,
+   "ben",
+   "Drei Uhr! Wir spielen Fußball!"
+  ],
+  [
+   26,
+   "ben",
+   "Sechs Uhr! Ich habe Hunger."
+  ]
+ ],
+ "script": "[happy] Guten Morgen! Ich stehe auf. [long pause] Dann gehe ich in die Schule. [long pause] Am Abend putze ich meine Zähne. [long pause] Ich stehe auf. [long pause] Drei Uhr! Wir spielen Fußball! [long pause] Sechs Uhr! Ich habe Hunger."
+}

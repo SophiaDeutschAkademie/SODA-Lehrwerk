@@ -1,0 +1,226 @@
+{
+ "n": 36,
+ "kind": "pic",
+ "img": {
+  "szene": "In the middle stands a Christmas tree decorated with round baubles and a star on top; on the left LENA reaches up to hang a muted red bauble on the tree; on the right BEN holds a plate of star-shaped cookies. Clear white space between the girl, the tree and the boy.",
+  "sofi": "super",
+  "who": {
+   "lena": [
+    0.2,
+    0.55
+   ],
+   "ben": [
+    0.82,
+    0.55
+   ]
+  },
+  "karten": [
+   "a decorated Christmas tree with baubles and a star on top",
+   "a single round muted red Christmas bauble hanging from a fir twig",
+   "a small angel figure with wings and a simple robe",
+   "a golden bell with a ribbon bow",
+   "three star-shaped cookies",
+   "a snowman with a hat, a scarf and a carrot nose"
+  ]
+ },
+ "story": [
+  {
+   "pic": "szene",
+   "alt": "Lena가 크리스마스트리에 빨간 장식 공을 달고, Ben은 별 모양 쿠키 접시를 들고 있어요",
+   "label": "크리스마스트리 앞에서",
+   "lines": [
+    [
+     "lena",
+     "Frohe Weihnachten!",
+     "즐거운 성탄절 보내!"
+    ],
+    [
+     "ben",
+     "Frohe Weihnachten, Sofi!",
+     "Sofi, 즐거운 성탄절 보내!"
+    ],
+    [
+     "sofi",
+     "Oh, der Weihnachtsbaum ist schön!",
+     "와, 크리스마스트리가 예쁘다!"
+    ],
+    [
+     "lena",
+     "Hier ist eine Kugel. Sie ist rot.",
+     "여기 장식 공이 있어. 빨간색이야."
+    ],
+    [
+     "ben",
+     "Und hier sind Plätzchen. Hm, lecker!",
+     "여기 쿠키도 있어. 음, 맛있다!"
+    ],
+    [
+     "sofi",
+     "Hört mal, eine Glocke! Kling, kling!",
+     "들어 봐, 종소리야! 딸랑딸랑!"
+    ],
+    [
+     "lena",
+     "Schaut mal, es schneit!",
+     "이것 봐, 눈이 와!"
+    ],
+    [
+     "ben",
+     "Juhu! Wir bauen einen Schneemann!",
+     "야호! 우리 눈사람 만들자!"
+    ]
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "k": "c1",
+   "art": "der",
+   "de": "der Weihnachtsbaum",
+   "ko": "크리스마스트리",
+   "alt": "장식 공과 별을 단 크리스마스트리"
+  },
+  {
+   "k": "c2",
+   "art": "die",
+   "de": "die Kugel",
+   "ko": "장식 공",
+   "alt": "전나무 가지에 달린 빨간 장식 공"
+  },
+  {
+   "k": "c3",
+   "art": "der",
+   "de": "der Engel",
+   "ko": "천사",
+   "alt": "날개 달린 작은 천사"
+  },
+  {
+   "k": "c4",
+   "art": "die",
+   "de": "die Glocke",
+   "ko": "종",
+   "alt": "리본을 묶은 금빛 종"
+  },
+  {
+   "k": "c5",
+   "art": "das",
+   "de": "das Plätzchen",
+   "ko": "쿠키",
+   "alt": "별 모양 쿠키 세 개"
+  },
+  {
+   "k": "c6",
+   "art": "der",
+   "de": "der Schneemann",
+   "ko": "눈사람",
+   "alt": "모자와 목도리를 한 눈사람"
+  }
+ ],
+ "hint": "성탄절 인사는 [[Frohe Weihnachten!]]이에요. 독일에서는 12월에 가족과 [[Plätzchen]](쿠키)을 굽고 [[der Weihnachtsbaum]]을 꾸며요.",
+ "trace": "Engel",
+ "frames": [
+  {
+   "de": "Ich sehe {a}.",
+   "ko": "{a} 보여.",
+   "slots": [
+    "a"
+   ],
+   "models": [
+    [
+     "lena",
+     "Ich sehe einen Engel."
+    ]
+   ]
+  }
+ ],
+ "opts": {
+  "a": [
+   [
+    "einen Weihnachtsbaum",
+    "크리스마스트리가"
+   ],
+   [
+    "eine Kugel",
+    "장식 공이"
+   ],
+   [
+    "einen Engel",
+    "천사가"
+   ],
+   [
+    "eine Glocke",
+    "종이"
+   ],
+   [
+    "einen Schneemann",
+    "눈사람이"
+   ]
+  ]
+ },
+ "talk": [
+  {
+   "de": "Frohe Weihnachten!",
+   "ko": "즐거운 성탄절 보내!",
+   "me": "Frohe Weihnachten, Sofi!",
+   "meko": "Sofi, 즐거운 성탄절 보내!"
+  },
+  {
+   "de": "Was siehst du?",
+   "ko": "뭐가 보여?",
+   "me": "Ich sehe {a}.",
+   "meko": "{a} 보여."
+  },
+  {
+   "de": "Was ist das?",
+   "ko": "이게 뭐야?",
+   "pic": "c5",
+   "me": "Das ist ein Plätzchen.",
+   "meko": "이건 쿠키야."
+  }
+ ],
+ "reim": [
+  [
+   "<b>Kling</b>, kling, <b>kling</b>, die <b>Glo</b>cke <b>klingt</b>,",
+   "딸랑, 딸랑, 딸랑, 종이 울려요,",
+   "종을 흔드는 흉내를 내요"
+  ],
+  [
+   "<b>und</b> der <b>klei</b>ne <b>En</b>gel <b>singt</b>.",
+   "그리고 작은 천사가 노래해요.",
+   "두 팔을 날개처럼 펴요"
+  ],
+  [
+   "<b>Plätz</b>chen, <b>Ku</b>geln, <b>Ker</b>zen<b>schein</b>,",
+   "쿠키, 장식 공, 촛불 빛,",
+   "손가락을 반짝반짝 움직여요"
+  ],
+  [
+   "<b>fro</b>he <b>Weih</b>nacht, <b>komm</b> he<b>rein</b>!",
+   "즐거운 성탄절아, 어서 들어와!",
+   "문을 여는 흉내를 내요"
+  ]
+ ],
+ "reimNote": "[[klingt]]는 ‘울려요’, [[Kerzenschein]]은 ‘촛불 빛’이에요. [[Komm herein!]]은 ‘어서 들어와!’예요.",
+ "todo": [
+  "크리스마스트리나 그림을 보고 [[Ich sehe ….]] 하고 말해요.",
+  "가족에게 [[Frohe Weihnachten!]] 하고 인사해요.",
+  "흐린 글자 위에 [[Engel]]을 따라 써요."
+ ],
+ "goals": [
+  "성탄절 인사: [[Frohe Weihnachten!]]",
+  "보이는 것 말하기: [[Ich sehe einen Engel.]]",
+  "성탄절 낱말: [[der Weihnachtsbaum, die Kugel, der Engel, die Glocke]]",
+  "낱말 따라 쓰기: [[Engel]]"
+ ],
+ "sounds": [
+  "[[Weihnachten]]의 [[ei]]는 ‘아이’, [[ch]]는 [[acht]]처럼 목 안쪽 소리입니다. 맨 앞 [[Weih-]]를 세게 말합니다.",
+  "[[Plätzchen]]의 [[ä]]는 짧은 ‘에’, [[tz]]는 ‘츠’, [[ch]]는 [[ich]]의 [[ch]]입니다. [[Engel]]의 [[ng]]는 받침 ‘ㅇ’ 소리입니다."
+ ],
+ "lesson": [
+  "성탄절 이야기 5분: 독일의 12월 풍경(크리스마스 시장, 쿠키 굽기, 트리 꾸미기)을 사진이나 그림으로 보여 줍니다.",
+  "이야기와 카드 15분: 1번과 2번 활동을 듣고, 칠판에 그린 트리에 카드를 붙이며 따라 말합니다.",
+  "트리 꾸미기 10분: 종이 트리에 장식을 그리고 [[Ich sehe ….]]로 짝에게 설명합니다.",
+  "따라 쓰기와 리듬 10분: [[Engel]]을 공책에 세 번 쓰고, 5번 리듬을 동작과 함께 합니다."
+ ],
+ "sticker": "c1"
+}

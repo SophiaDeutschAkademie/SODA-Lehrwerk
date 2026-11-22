@@ -1,0 +1,85 @@
+{
+"aud": {
+"sofi|Im Dezember.": "s01",
+"sofi|Ja! Zwei Feste im Dezember!": "s02",
+"sofi|Januar": "s03",
+"sofi|Februar": "s04",
+"sofi|März": "s05",
+"sofi|April": "s06",
+"sofi|Mai": "s07",
+"sofi|Juni": "s08",
+"sofi|Juli": "s09",
+"sofi|August": "s10",
+"sofi|September": "s11",
+"sofi|Oktober": "s12",
+"sofi|November": "s13",
+"sofi|Dezember": "s14",
+"sofi|O wie Oktober": "s15",
+"sofi|Wann hast du Geburtstag?": "s16",
+"sofi|Welcher Monat ist das?": "s17",
+"sofi|Ist Weihnachten im Juli?": "s18",
+"sofi|Januar, Februar, März – hurra!": "s19",
+"sofi|April, Mai, Juni sind schon da.": "s20",
+"sofi|Juli, August, September, dann": "s21",
+"sofi|Oktober, November, Dezember dran!": "s22",
+"ben|Im Mai. Und du?": "b01",
+"ben|Sofi, wann hast du Geburtstag?": "b02",
+"ben|Toll! Zwei Kuchen!": "b03",
+"lena|Ben, wann hast du Geburtstag?": "l01",
+"lena|Ich habe im Oktober Geburtstag.": "l02",
+"lena|Im Dezember? Da ist auch Weihnachten!": "l03"
+},
+"dur": {
+"s01": 1.26,
+"s02": 2.65,
+"s03": 1.12,
+"s04": 1.31,
+"s05": 1.08,
+"s06": 0.99,
+"s07": 0.83,
+"s08": 0.65,
+"s09": 1.02,
+"s10": 1.06,
+"s11": 1.2,
+"s12": 1.08,
+"s13": 1.12,
+"s14": 1.36,
+"s15": 1.56,
+"s16": 1.51,
+"s17": 1.59,
+"s18": 2.03,
+"s19": 3.46,
+"s20": 2.52,
+"s21": 2.97,
+"s22": 2.66,
+"b01": 1.43,
+"b02": 2.31,
+"b03": 1.83,
+"l01": 2.05,
+"l02": 2.29,
+"l03": 3.04
+},
+"chant": {
+"beat": 0.89,
+"bar": 3.56,
+"marks": [
+[
+0.35,
+3.91
+],
+[
+7.47,
+11.03
+],
+[
+14.59,
+18.15
+],
+[
+21.71,
+25.27
+]
+],
+"sup": 28.98
+}
+}

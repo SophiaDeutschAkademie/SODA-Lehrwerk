@@ -1,0 +1,44 @@
+{
+ "job": "t9_lena_a",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   33,
+   "lena",
+   "Frohe Ostern, Sofi!"
+  ],
+  [
+   33,
+   "lena",
+   "Hier! Ein Ei! Es ist rot."
+  ],
+  [
+   33,
+   "lena",
+   "Mein Korb ist voll."
+  ],
+  [
+   34,
+   "lena",
+   "Schau mal, meine Laterne!"
+  ],
+  [
+   34,
+   "lena",
+   "Da ist der Mond."
+  ],
+  [
+   34,
+   "lena",
+   "Wir singen ein Lied."
+  ],
+  [
+   34,
+   "lena",
+   "Meine Laterne ist rot."
+  ]
+ ],
+ "script": "[happy] Frohe Ostern, Sofi! [long pause] Hier! Ein Ei! Es ist rot. [long pause] Mein Korb ist voll. [long pause] Schau mal, meine Laterne! [long pause] Da ist der Mond. [long pause] Wir singen ein Lied. [long pause] Meine Laterne ist rot."
+}

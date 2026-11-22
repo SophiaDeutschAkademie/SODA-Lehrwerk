@@ -1,0 +1,49 @@
+{
+ "job": "k30_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   30,
+   "sofi",
+   "I wie Igel"
+  ],
+  [
+   30,
+   "sofi",
+   "Wie ist es im Winter?"
+  ],
+  [
+   30,
+   "sofi",
+   "Und im Sommer?"
+  ],
+  [
+   30,
+   "sofi",
+   "Welche Jahreszeit magst du?"
+  ],
+  [
+   30,
+   "sofi",
+   "Frühling, Sommer, Herbst und Winter,"
+  ],
+  [
+   30,
+   "sofi",
+   "tanzen alle kleinen Kinder."
+  ],
+  [
+   30,
+   "sofi",
+   "Warm und heiß und windig, kalt,"
+  ],
+  [
+   30,
+   "sofi",
+   "und das Jahr ist um, so bald!"
+  ]
+ ],
+ "script": "[happy] I wie Igel [long pause] Wie ist es im Winter? [long pause] Und im Sommer? [long pause] Welche Jahreszeit magst du? [long pause] Frühling, Sommer, Herbst und Winter, [long pause] tanzen alle kleinen Kinder. [long pause] Warm und heiß und windig, kalt, [long pause] und das Jahr ist um, so bald!"
+}

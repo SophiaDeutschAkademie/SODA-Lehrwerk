@@ -1,0 +1,44 @@
+{
+ "job": "t8_lena_b",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   30,
+   "lena",
+   "Im Winter ist es kalt."
+  ],
+  [
+   31,
+   "lena",
+   "Ben, wann hast du Geburtstag?"
+  ],
+  [
+   31,
+   "lena",
+   "Ich habe im Oktober Geburtstag."
+  ],
+  [
+   31,
+   "lena",
+   "Im Dezember? Da ist auch Weihnachten!"
+  ],
+  [
+   32,
+   "lena",
+   "Überraschung!"
+  ],
+  [
+   32,
+   "lena",
+   "Hier ist ein Geschenk für dich."
+  ],
+  [
+   32,
+   "lena",
+   "Hm, lecker!"
+  ]
+ ],
+ "script": "[happy] Im Winter ist es kalt. [long pause] Ben, wann hast du Geburtstag? [long pause] Ich habe im Oktober Geburtstag. [long pause] Im Dezember? Da ist auch Weihnachten! [long pause] Überraschung! [long pause] Hier ist ein Geschenk für dich. [long pause] Hm, lecker!"
+}

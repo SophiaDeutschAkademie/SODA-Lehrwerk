@@ -1,0 +1,49 @@
+{
+ "job": "k26_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   26,
+   "sofi",
+   "Es ist drei Uhr."
+  ],
+  [
+   26,
+   "sofi",
+   "Jetzt ist es sechs Uhr."
+  ],
+  [
+   26,
+   "sofi",
+   "Und ich? Um acht Uhr stehe ich auf!"
+  ],
+  [
+   26,
+   "sofi",
+   "ein Uhr"
+  ],
+  [
+   26,
+   "sofi",
+   "zwei Uhr"
+  ],
+  [
+   26,
+   "sofi",
+   "drei Uhr"
+  ],
+  [
+   26,
+   "sofi",
+   "vier Uhr"
+  ],
+  [
+   26,
+   "sofi",
+   "fünf Uhr"
+  ]
+ ],
+ "script": "[happy] Es ist drei Uhr. [long pause] Jetzt ist es sechs Uhr. [long pause] Und ich? Um acht Uhr stehe ich auf! [long pause] ein Uhr [long pause] zwei Uhr [long pause] drei Uhr [long pause] vier Uhr [long pause] fünf Uhr"
+}

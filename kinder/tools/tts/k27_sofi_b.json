@@ -1,0 +1,54 @@
+{
+ "job": "k27_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   27,
+   "sofi",
+   "Sonntag"
+  ],
+  [
+   27,
+   "sofi",
+   "T wie Tag"
+  ],
+  [
+   27,
+   "sofi",
+   "Welcher Tag ist heute?"
+  ],
+  [
+   27,
+   "sofi",
+   "Was machst du am Samstag?"
+  ],
+  [
+   27,
+   "sofi",
+   "Ist heute Sonntag?"
+  ],
+  [
+   27,
+   "sofi",
+   "Montag, Dienstag, Mittwoch, ja,"
+  ],
+  [
+   27,
+   "sofi",
+   "Donnerstag ist auch schon da."
+  ],
+  [
+   27,
+   "sofi",
+   "Freitag, Samstag, Sonntag, fein,"
+  ],
+  [
+   27,
+   "sofi",
+   "so soll jede Woche sein!"
+  ]
+ ],
+ "script": "[happy] Sonntag [long pause] T wie Tag [long pause] Welcher Tag ist heute? [long pause] Was machst du am Samstag? [long pause] Ist heute Sonntag? [long pause] Montag, Dienstag, Mittwoch, ja, [long pause] Donnerstag ist auch schon da. [long pause] Freitag, Samstag, Sonntag, fein, [long pause] so soll jede Woche sein!"
+}

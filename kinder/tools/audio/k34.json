@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Es ist dunkel. Wie schön!": "s01",
+"sofi|Kommt, wir gehen los!": "s02",
+"sofi|die Laterne": "s03",
+"sofi|das Licht": "s04",
+"sofi|der Mond": "s05",
+"sofi|der Stern": "s06",
+"sofi|die Nacht": "s07",
+"sofi|das Lied": "s08",
+"sofi|Hast du eine Laterne?": "s09",
+"sofi|Was ist das?": "s10",
+"sofi|Ist es hell?": "s11",
+"sofi|Meine kleine Laterne brennt,": "s12",
+"sofi|die hier jedes Kind gut kennt.": "s13",
+"sofi|Mond und Sterne leuchten hell,": "s14",
+"sofi|wir gehn langsam, nicht so schnell.": "s15",
+"ben|Meine Laterne leuchtet.": "b01",
+"ben|Und da sind die Sterne.": "b02",
+"ben|Laterne, Laterne!": "b03",
+"lena|Schau mal, meine Laterne!": "l01",
+"lena|Da ist der Mond.": "l02",
+"lena|Wir singen ein Lied.": "l03",
+"lena|Meine Laterne ist rot.": "l04"
+},
+"dur": {
+"s01": 2.45,
+"s02": 1.79,
+"s03": 1.25,
+"s04": 1.06,
+"s05": 0.96,
+"s06": 1.04,
+"s07": 1.03,
+"s08": 0.89,
+"s09": 1.49,
+"s10": 1.05,
+"s11": 0.96,
+"s12": 1.77,
+"s13": 2.15,
+"s14": 2.01,
+"s15": 2.32,
+"b01": 1.71,
+"b02": 1.61,
+"b03": 1.8,
+"l01": 1.74,
+"l02": 1.09,
+"l03": 1.18,
+"l04": 1.52
+},
+"chant": {
+"beat": 0.66,
+"bar": 2.64,
+"marks": [
+[
+0.35,
+2.99
+],
+[
+5.63,
+8.27
+],
+[
+10.91,
+13.55
+],
+[
+16.19,
+18.83
+]
+],
+"sup": 21.62
+}
+}

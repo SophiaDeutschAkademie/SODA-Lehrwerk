@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Oh, der Weihnachtsbaum ist schön!": "s01",
+"sofi|Hört mal, eine Glocke! Kling, kling!": "s02",
+"sofi|der Weihnachtsbaum": "s03",
+"sofi|die Kugel": "s04",
+"sofi|der Engel": "s05",
+"sofi|die Glocke": "s06",
+"sofi|das Plätzchen": "s07",
+"sofi|der Schneemann": "s08",
+"sofi|Frohe Weihnachten!": "s09",
+"sofi|Was siehst du?": "s10",
+"sofi|Was ist das?": "s11",
+"sofi|Kling, kling, kling, die Glocke klingt,": "s12",
+"sofi|und der kleine Engel singt.": "s13",
+"sofi|Plätzchen, Kugeln, Kerzenschein,": "s14",
+"sofi|frohe Weihnacht, komm herein!": "s15",
+"ben|Frohe Weihnachten, Sofi!": "b01",
+"ben|Und hier sind Plätzchen. Hm, lecker!": "b02",
+"ben|Juhu! Wir bauen einen Schneemann!": "b03",
+"lena|Frohe Weihnachten!": "l01",
+"lena|Hier ist eine Kugel. Sie ist rot.": "l02",
+"lena|Schaut mal, es schneit!": "l03",
+"lena|Ich sehe einen Engel.": "l04"
+},
+"dur": {
+"s01": 2.26,
+"s02": 3.45,
+"s03": 1.45,
+"s04": 0.98,
+"s05": 0.89,
+"s06": 1.02,
+"s07": 1.21,
+"s08": 1.04,
+"s09": 1.44,
+"s10": 1.12,
+"s11": 1.21,
+"s12": 3.44,
+"s13": 1.9,
+"s14": 2.95,
+"s15": 2.46,
+"b01": 1.73,
+"b02": 3.12,
+"b03": 2.26,
+"l01": 1.41,
+"l02": 2.45,
+"l03": 1.84,
+"l04": 1.26
+},
+"chant": {
+"beat": 0.85,
+"bar": 3.4,
+"marks": [
+[
+0.35,
+3.75
+],
+[
+7.15,
+10.55
+],
+[
+13.95,
+17.35
+],
+[
+20.75,
+24.15
+]
+],
+"sup": 27.7
+}
+}

@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Der Nikolaus war da.": "s01",
+"sofi|Und ich? Ich habe keine Stiefel!": "s02",
+"sofi|der Nikolaus": "s03",
+"sofi|der Stiefel": "s04",
+"sofi|die Nuss": "s05",
+"sofi|die Mandarine": "s06",
+"sofi|die Schokolade": "s07",
+"sofi|der Sack": "s08",
+"sofi|Was ist in deinem Stiefel?": "s09",
+"sofi|Was ist das?": "s10",
+"sofi|Der Nikolaus war da!": "s11",
+"sofi|Stiefel, Stiefel vor der Tür,": "s12",
+"sofi|danke, danke sehr dafür!": "s13",
+"sofi|Nüsse, Mandarinen fein,": "s14",
+"sofi|passen in den Stiefel rein.": "s15",
+"ben|Schau mal, mein Stiefel!": "b01",
+"ben|Nüsse, Mandarinen und Schokolade!": "b02",
+"ben|Hm, die Schokolade ist lecker!": "b03",
+"ben|Im Stiefel ist Schokolade.": "b04",
+"lena|Heute ist Nikolaus!": "l01",
+"lena|Mein Stiefel ist voll!": "l02",
+"lena|Danke, lieber Nikolaus!": "l03"
+},
+"dur": {
+"s01": 1.89,
+"s02": 2.76,
+"s03": 1.24,
+"s04": 1.1,
+"s05": 0.91,
+"s06": 1.22,
+"s07": 1.34,
+"s08": 0.8,
+"s09": 1.73,
+"s10": 1.45,
+"s11": 1.73,
+"s12": 2.12,
+"s13": 2.1,
+"s14": 2.07,
+"s15": 1.71,
+"b01": 1.78,
+"b02": 2.88,
+"b03": 2.46,
+"b04": 1.85,
+"l01": 1.68,
+"l02": 1.58,
+"l03": 1.83
+},
+"chant": {
+"beat": 0.66,
+"bar": 2.64,
+"marks": [
+[
+0.35,
+2.99
+],
+[
+5.63,
+8.27
+],
+[
+10.91,
+13.55
+],
+[
+16.19,
+18.83
+]
+],
+"sup": 21.62
+}
+}

@@ -1,0 +1,39 @@
+{
+ "job": "k31_sofi_c",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   31,
+   "sofi",
+   "Welcher Monat ist das?"
+  ],
+  [
+   31,
+   "sofi",
+   "Ist Weihnachten im Juli?"
+  ],
+  [
+   31,
+   "sofi",
+   "Januar, Februar, März – hurra!"
+  ],
+  [
+   31,
+   "sofi",
+   "April, Mai, Juni sind schon da."
+  ],
+  [
+   31,
+   "sofi",
+   "Juli, August, September, dann"
+  ],
+  [
+   31,
+   "sofi",
+   "Oktober, November, Dezember dran!"
+  ]
+ ],
+ "script": "[happy] Welcher Monat ist das? [long pause] Ist Weihnachten im Juli? [long pause] Januar, Februar, März – hurra! [long pause] April, Mai, Juni sind schon da. [long pause] Juli, August, September, dann [long pause] Oktober, November, Dezember dran!"
+}

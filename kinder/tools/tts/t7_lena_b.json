@@ -1,0 +1,44 @@
+{
+ "job": "t7_lena_b",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   27,
+   "lena",
+   "Am Montag spiele ich Fußball."
+  ],
+  [
+   27,
+   "lena",
+   "Am Mittwoch singe ich."
+  ],
+  [
+   27,
+   "lena",
+   "Juhu, Wochenende!"
+  ],
+  [
+   28,
+   "lena",
+   "Ich fahre mit dem Bus."
+  ],
+  [
+   28,
+   "lena",
+   "Und du, Sofi?"
+  ],
+  [
+   28,
+   "lena",
+   "Da kommt der Bus! Tschüss!"
+  ],
+  [
+   28,
+   "lena",
+   "Ich gehe zu Fuß."
+  ]
+ ],
+ "script": "[happy] Am Montag spiele ich Fußball. [long pause] Am Mittwoch singe ich. [long pause] Juhu, Wochenende! [long pause] Ich fahre mit dem Bus. [long pause] Und du, Sofi? [long pause] Da kommt der Bus! Tschüss! [long pause] Ich gehe zu Fuß."
+}

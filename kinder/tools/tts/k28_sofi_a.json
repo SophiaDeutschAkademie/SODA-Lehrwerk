@@ -1,0 +1,49 @@
+{
+ "job": "k28_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   28,
+   "sofi",
+   "Ich fliege!"
+  ],
+  [
+   28,
+   "sofi",
+   "Nein! Ich bin doch ein Vogel!"
+  ],
+  [
+   28,
+   "sofi",
+   "der Bus"
+  ],
+  [
+   28,
+   "sofi",
+   "das Auto"
+  ],
+  [
+   28,
+   "sofi",
+   "das Fahrrad"
+  ],
+  [
+   28,
+   "sofi",
+   "der Zug"
+  ],
+  [
+   28,
+   "sofi",
+   "das Flugzeug"
+  ],
+  [
+   28,
+   "sofi",
+   "das Schiff"
+  ]
+ ],
+ "script": "[happy] Ich fliege! [long pause] Nein! Ich bin doch ein Vogel! [long pause] der Bus [long pause] das Auto [long pause] das Fahrrad [long pause] der Zug [long pause] das Flugzeug [long pause] das Schiff"
+}

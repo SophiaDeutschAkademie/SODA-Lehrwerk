@@ -1,0 +1,230 @@
+{
+ "n": 34,
+ "kind": "pic",
+ "img": {
+  "szene": "Evening: LENA and BEN walk side by side, each carrying a glowing round paper lantern that hangs from the end of a short wooden stick; above them a crescent moon and a few small stars on a deep navy night sky shape. Both children have fair pale skin and the girl has dark blond hair. Clear white space between the two children.",
+  "sofi": "hallo",
+  "who": {
+   "lena": [
+    0.36,
+    0.62
+   ],
+   "ben": [
+    0.62,
+    0.62
+   ]
+  },
+  "karten": [
+   "a round paper lantern glowing on a short stick",
+   "a small candle flame glowing inside a glass jar",
+   "a crescent moon",
+   "a five-pointed star",
+   "a deep navy night sky shape with a crescent moon and many tiny stars above a row of rooftops",
+   "an open song book with a few music notes floating above"
+  ],
+  "single": {
+   "c1": "A single child's round paper lantern hanging by a short wire from the end of a wooden stick, a small candle glowing warmly inside the lantern."
+  }
+ },
+ "story": [
+  {
+   "pic": "szene",
+   "alt": "저녁에 Lena와 Ben이 빛나는 종이 등불을 들고 걸어요. 하늘에 달과 별이 있어요",
+   "label": "등불을 들고",
+   "lines": [
+    [
+     "lena",
+     "Schau mal, meine Laterne!",
+     "이것 봐, 내 등불이야!"
+    ],
+    [
+     "ben",
+     "Meine Laterne leuchtet.",
+     "내 등불이 빛나."
+    ],
+    [
+     "sofi",
+     "Es ist dunkel. Wie schön!",
+     "어두워졌어. 정말 예쁘다!"
+    ],
+    [
+     "lena",
+     "Da ist der Mond.",
+     "저기 달이 있어."
+    ],
+    [
+     "ben",
+     "Und da sind die Sterne.",
+     "저기 별들도 있어."
+    ],
+    [
+     "sofi",
+     "Kommt, wir gehen los!",
+     "자, 출발하자!"
+    ],
+    [
+     "lena",
+     "Wir singen ein Lied.",
+     "우리 노래 부르자."
+    ],
+    [
+     "ben",
+     "Laterne, Laterne!",
+     "등불아, 등불아!"
+    ]
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "k": "c1",
+   "art": "die",
+   "de": "die Laterne",
+   "ko": "등불",
+   "alt": "막대에 달린 둥근 종이 등불"
+  },
+  {
+   "k": "c2",
+   "art": "das",
+   "de": "das Licht",
+   "ko": "빛",
+   "alt": "유리병 안에서 빛나는 촛불"
+  },
+  {
+   "k": "c3",
+   "art": "der",
+   "de": "der Mond",
+   "ko": "달",
+   "alt": "초승달"
+  },
+  {
+   "k": "c4",
+   "art": "der",
+   "de": "der Stern",
+   "ko": "별",
+   "alt": "뾰족한 별 하나"
+  },
+  {
+   "k": "c5",
+   "art": "die",
+   "de": "die Nacht",
+   "ko": "밤",
+   "alt": "지붕 위로 달과 별이 뜬 밤하늘"
+  },
+  {
+   "k": "c6",
+   "art": "das",
+   "de": "das Lied",
+   "ko": "노래",
+   "alt": "음표가 떠 있는 노래책"
+  }
+ ],
+ "hint": "11월 11일 무렵 독일 아이들은 직접 만든 등불을 들고 저녁 거리를 걸으며 노래해요. [[leuchten]]은 ‘빛나다’예요: [[Meine Laterne leuchtet.]]",
+ "trace": "Laterne",
+ "frames": [
+  {
+   "de": "Meine Laterne ist {a}.",
+   "ko": "내 등불은 {a}.",
+   "slots": [
+    "a"
+   ],
+   "models": [
+    [
+     "lena",
+     "Meine Laterne ist rot."
+    ],
+    [
+     "ben",
+     "Meine Laterne leuchtet."
+    ]
+   ]
+  }
+ ],
+ "opts": {
+  "a": [
+   [
+    "rot",
+    "빨개"
+   ],
+   [
+    "gelb",
+    "노래"
+   ],
+   [
+    "blau",
+    "파래"
+   ],
+   [
+    "bunt",
+    "알록달록해"
+   ]
+  ]
+ },
+ "talk": [
+  {
+   "de": "Hast du eine Laterne?",
+   "ko": "너는 등불이 있어?",
+   "me": "Ja! Meine Laterne ist {a}.",
+   "meko": "응! 내 등불은 {a}."
+  },
+  {
+   "de": "Was ist das?",
+   "ko": "이게 뭐야?",
+   "pic": "c3",
+   "me": "Das ist der Mond.",
+   "meko": "이건 달이야."
+  },
+  {
+   "de": "Ist es hell?",
+   "ko": "밝아?",
+   "pic": "c5",
+   "me": "Nein, es ist dunkel.",
+   "meko": "아니, 어두워."
+  }
+ ],
+ "reim": [
+  [
+   "<b>Mei</b>ne <b>klei</b>ne La<b>ter</b>ne <b>brennt</b>,",
+   "내 작은 등불이 타올라요,",
+   "등불을 든 손을 들어요"
+  ],
+  [
+   "<b>die</b> hier <b>je</b>des <b>Kind</b> gut <b>kennt</b>.",
+   "여기 아이들 모두가 잘 아는 등불.",
+   "친구들을 둘러봐요"
+  ],
+  [
+   "<b>Mond</b> und <b>Ster</b>ne <b>leuch</b>ten <b>hell</b>,",
+   "달과 별이 밝게 빛나요,",
+   "손가락을 반짝반짝 움직여요"
+  ],
+  [
+   "<b>wir</b> gehn <b>lang</b>sam, <b>nicht</b> so <b>schnell</b>.",
+   "우리는 천천히 걸어요, 서두르지 않아요.",
+   "천천히 제자리걸음을 해요"
+  ]
+ ],
+ "reimNote": "[[brennt]]는 ‘타올라요’, [[hell]]은 ‘밝게’, [[langsam]]은 ‘천천히’라는 뜻이에요.",
+ "todo": [
+  "종이로 등불을 만들고 [[Meine Laterne ist ….]] 하고 말해요.",
+  "저녁에 하늘을 보고 [[Da ist der Mond.]] 하고 말해요.",
+  "흐린 글자 위에 [[Laterne]]를 따라 써요."
+ ],
+ "goals": [
+  "등불 축제 말하기: [[Meine Laterne leuchtet.]]",
+  "밤하늘 낱말: [[der Mond, der Stern, die Nacht]]",
+  "밝기 말하기: [[Es ist dunkel. Es ist hell.]]",
+  "낱말 따라 쓰기: [[Laterne]]"
+ ],
+ "sounds": [
+  "[[Laterne]]는 가운데 [[-ter-]]를 세게 말합니다. [[leuchtet]]의 [[eu]]는 ‘오이’, [[ch]]는 [[ich]]의 [[ch]]와 같은 소리입니다.",
+  "[[Mond]]의 [[o]]는 길게 말하고 끝 [[d]]는 ‘ㅌ’에 가깝게 소리 냅니다. [[Licht]]와 [[Nacht]]의 [[ch]]는 서로 다른 소리입니다."
+ ],
+ "lesson": [
+  "등불 축제 이야기 5분: 11월 11일 무렵 독일 아이들이 등불을 들고 저녁 거리를 걷는 사진이나 그림을 보여 줍니다.",
+  "이야기와 카드 15분: 1번과 2번 활동을 듣고, 교실 불을 끄고 카드를 손전등으로 비추며 따라 말합니다.",
+  "등불 만들기 10분: 종이컵이나 색종이로 등불을 만들고 [[Meine Laterne ist ….]]로 소개합니다.",
+  "따라 쓰기와 리듬 10분: [[Laterne]]를 공책에 세 번 쓰고, 등불을 들고 5번 리듬에 맞춰 교실을 한 바퀴 돕니다."
+ ],
+ "sticker": "c1"
+}

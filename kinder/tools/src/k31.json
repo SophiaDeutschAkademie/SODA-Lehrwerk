@@ -1,0 +1,280 @@
+{
+ "n": 31,
+ "kind": "wort",
+ "img": {
+  "szene": "BEN wearing a paper party hat points at a large blank wall calendar on an easel; LENA holds a wrapped gift box with a ribbon. Clear white space between the children and the calendar.",
+  "sofi": "hoer",
+  "who": {
+   "ben": [
+    0.2,
+    0.55
+   ],
+   "lena": [
+    0.8,
+    0.55
+   ]
+  }
+ },
+ "story": [
+  {
+   "pic": "szene",
+   "alt": "고깔모자를 쓴 Ben이 큰 달력을 가리키고, Lena는 선물 상자를 들고 있어요",
+   "label": "달력 앞에서",
+   "lines": [
+    [
+     "lena",
+     "Ben, wann hast du Geburtstag?",
+     "Ben, 네 생일은 언제야?"
+    ],
+    [
+     "ben",
+     "Im Mai. Und du?",
+     "5월이야. 너는?"
+    ],
+    [
+     "lena",
+     "Ich habe im Oktober Geburtstag.",
+     "내 생일은 10월이야."
+    ],
+    [
+     "ben",
+     "Sofi, wann hast du Geburtstag?",
+     "Sofi, 네 생일은 언제야?"
+    ],
+    [
+     "sofi",
+     "Im Dezember.",
+     "12월이야."
+    ],
+    [
+     "lena",
+     "Im Dezember? Da ist auch Weihnachten!",
+     "12월? 그때는 성탄절도 있잖아!"
+    ],
+    [
+     "sofi",
+     "Ja! Zwei Feste im Dezember!",
+     "응! 12월에는 잔치가 두 번이야!"
+    ],
+    [
+     "ben",
+     "Toll! Zwei Kuchen!",
+     "멋지다! 케이크도 두 개!"
+    ]
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "k": "m1",
+   "tag": "Jan",
+   "de": "Januar",
+   "ko": "1월"
+  },
+  {
+   "k": "m2",
+   "tag": "Feb",
+   "de": "Februar",
+   "ko": "2월"
+  },
+  {
+   "k": "m3",
+   "tag": "Mär",
+   "de": "März",
+   "ko": "3월"
+  },
+  {
+   "k": "m4",
+   "tag": "Apr",
+   "de": "April",
+   "ko": "4월"
+  },
+  {
+   "k": "m5",
+   "tag": "Mai",
+   "de": "Mai",
+   "ko": "5월"
+  },
+  {
+   "k": "m6",
+   "tag": "Jun",
+   "de": "Juni",
+   "ko": "6월"
+  },
+  {
+   "k": "m7",
+   "tag": "Jul",
+   "de": "Juli",
+   "ko": "7월"
+  },
+  {
+   "k": "m8",
+   "tag": "Aug",
+   "de": "August",
+   "ko": "8월"
+  },
+  {
+   "k": "m9",
+   "tag": "Sep",
+   "de": "September",
+   "ko": "9월"
+  },
+  {
+   "k": "m10",
+   "tag": "Okt",
+   "de": "Oktober",
+   "ko": "10월"
+  },
+  {
+   "k": "m11",
+   "tag": "Nov",
+   "de": "November",
+   "ko": "11월"
+  },
+  {
+   "k": "m12",
+   "tag": "Dez",
+   "de": "Dezember",
+   "ko": "12월"
+  }
+ ],
+ "hint": "달 이름 앞에도 [[im]]을 써요: [[im Mai, im Oktober]]. 생일은 [[der Geburtstag]]예요.",
+ "letter": [
+  "O o",
+  "O wie Oktober"
+ ],
+ "trace": "Mai",
+ "frames": [
+  {
+   "de": "Ich habe im {a} Geburtstag.",
+   "ko": "내 생일은 {a}이야.",
+   "slots": [
+    "a"
+   ],
+   "models": [
+    [
+     "lena",
+     "Ich habe im Oktober Geburtstag."
+    ]
+   ]
+  }
+ ],
+ "opts": {
+  "a": [
+   [
+    "Januar",
+    "1월"
+   ],
+   [
+    "Februar",
+    "2월"
+   ],
+   [
+    "März",
+    "3월"
+   ],
+   [
+    "April",
+    "4월"
+   ],
+   [
+    "Mai",
+    "5월"
+   ],
+   [
+    "Juni",
+    "6월"
+   ],
+   [
+    "Juli",
+    "7월"
+   ],
+   [
+    "August",
+    "8월"
+   ],
+   [
+    "September",
+    "9월"
+   ],
+   [
+    "Oktober",
+    "10월"
+   ],
+   [
+    "November",
+    "11월"
+   ],
+   [
+    "Dezember",
+    "12월"
+   ]
+  ]
+ },
+ "talk": [
+  {
+   "de": "Wann hast du Geburtstag?",
+   "ko": "네 생일은 언제야?",
+   "me": "Ich habe im {a} Geburtstag.",
+   "meko": "내 생일은 {a}이야."
+  },
+  {
+   "de": "Welcher Monat ist das?",
+   "ko": "이건 몇 월이야?",
+   "pic": "m5",
+   "me": "Das ist der Mai.",
+   "meko": "5월이야."
+  },
+  {
+   "de": "Ist Weihnachten im Juli?",
+   "ko": "성탄절이 7월이야?",
+   "pic": "m12",
+   "me": "Nein, im Dezember.",
+   "meko": "아니, 12월이야."
+  }
+ ],
+ "reim": [
+  [
+   "<b>Ja</b>nuar, <b>Fe</b>bruar, <b>März</b> – hur<b>ra</b>!",
+   "1월, 2월, 3월, 만세!",
+   "손뼉을 치고 만세를 해요"
+  ],
+  [
+   "A<b>pril</b>, <b>Mai</b>, <b>Ju</b>ni sind schon <b>da</b>.",
+   "4월, 5월, 6월이 벌써 왔네.",
+   "손가락 세 개를 펴요"
+  ],
+  [
+   "<b>Ju</b>li, Au<b>gust</b>, Sep<b>tem</b>ber, <b>dann</b>",
+   "7월, 8월, 9월, 그다음은",
+   "무릎을 세 번 쳐요"
+  ],
+  [
+   "Ok<b>to</b>ber, No<b>vem</b>ber, De<b>zem</b>ber <b>dran</b>!",
+   "10월, 11월, 12월 차례야!",
+   "발을 세 번 굴러요"
+  ]
+ ],
+ "reimNote": "[[hurra]]는 ‘만세’, [[dran]]은 ‘차례가 됐어요’라는 뜻이에요.",
+ "todo": [
+  "달력에서 내 생일을 찾아 [[Ich habe im … Geburtstag.]] 하고 말해요.",
+  "가족에게 [[Wann hast du Geburtstag?]] 하고 물어요.",
+  "흐린 글자 위에 [[Mai]]를 따라 써요."
+ ],
+ "goals": [
+  "생일 묻고 답하기: [[Wann hast du Geburtstag? – Im Mai.]]",
+  "달 이름 열두 개: [[Januar … Dezember]]",
+  "달 말하기: [[im Mai, im Oktober]]",
+  "글자 [[O]]와 낱말 따라 쓰기: [[Oktober, Mai]]"
+ ],
+ "sounds": [
+  "[[Januar]]의 [[J]]는 ‘야’처럼 소리 냅니다. [[März]]의 [[ä]]는 ‘에’, [[z]]는 ‘츠’입니다.",
+  "[[April]], [[August]], [[September]], [[Oktober]], [[November]], [[Dezember]]는 뒤쪽을 세게 말합니다: [[aPRIL, auGUST, sepTEMber]]."
+ ],
+ "lesson": [
+  "생일 줄 서기 5분: 서로 [[Wann hast du Geburtstag?]] 하고 묻고, 1월부터 12월까지 생일 순서대로 줄을 섭니다.",
+  "이야기와 카드 15분: 1번과 2번 활동을 듣고, 달 카드를 차례로 따라 말합니다. 글자 [[O]]를 쓰고 [[O wie Oktober]]를 말합니다.",
+  "생일 달력 10분: 교실 달력에 이름을 붙이고 [[Ich habe im … Geburtstag.]]로 발표합니다.",
+  "따라 쓰기와 리듬 10분: [[Mai]]를 공책에 세 번 쓰고, 5번 리듬을 동작과 함께 합니다."
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "job": "t9_ben_a",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   33,
+   "ben",
+   "Wo sind die Ostereier?"
+  ],
+  [
+   33,
+   "ben",
+   "Und hier! Mein Ei ist blau."
+  ],
+  [
+   33,
+   "ben",
+   "Danke, Osterhase!"
+  ],
+  [
+   33,
+   "ben",
+   "Mein Ei ist blau."
+  ],
+  [
+   34,
+   "ben",
+   "Meine Laterne leuchtet."
+  ],
+  [
+   34,
+   "ben",
+   "Und da sind die Sterne."
+  ],
+  [
+   34,
+   "ben",
+   "Laterne, Laterne!"
+  ]
+ ],
+ "script": "[happy] Wo sind die Ostereier? [long pause] Und hier! Mein Ei ist blau. [long pause] Danke, Osterhase! [long pause] Mein Ei ist blau. [long pause] Meine Laterne leuchtet. [long pause] Und da sind die Sterne. [long pause] Laterne, Laterne!"
+}

@@ -1,0 +1,44 @@
+{
+ "job": "k35_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   35,
+   "sofi",
+   "Was ist in deinem Stiefel?"
+  ],
+  [
+   35,
+   "sofi",
+   "Was ist das?"
+  ],
+  [
+   35,
+   "sofi",
+   "Der Nikolaus war da!"
+  ],
+  [
+   35,
+   "sofi",
+   "Stiefel, Stiefel vor der Tür,"
+  ],
+  [
+   35,
+   "sofi",
+   "danke, danke sehr dafür!"
+  ],
+  [
+   35,
+   "sofi",
+   "Nüsse, Mandarinen fein,"
+  ],
+  [
+   35,
+   "sofi",
+   "passen in den Stiefel rein."
+  ]
+ ],
+ "script": "[happy] Was ist in deinem Stiefel? [long pause] Was ist das? [long pause] Der Nikolaus war da! [long pause] Stiefel, Stiefel vor der Tür, [long pause] danke, danke sehr dafür! [long pause] Nüsse, Mandarinen fein, [long pause] passen in den Stiefel rein."
+}

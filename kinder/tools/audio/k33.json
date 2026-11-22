@@ -1,0 +1,71 @@
+{
+"aud": {
+"sofi|Frohe Ostern!": "s01",
+"sofi|Sucht im Garten!": "s02",
+"sofi|der Osterhase": "s03",
+"sofi|das Osterei": "s04",
+"sofi|der Korb": "s05",
+"sofi|die Blume": "s06",
+"sofi|das Küken": "s07",
+"sofi|das Nest": "s08",
+"sofi|Wo ist das Osterei?": "s09",
+"sofi|Welche Farbe hat dein Osterei?": "s10",
+"sofi|Osterhase, hopp, hopp, hopp,": "s11",
+"sofi|lauf nicht weg, bleib stehen, stopp!": "s12",
+"sofi|Rote, blaue, gelbe Eier,": "s13",
+"sofi|heute ist die Osterfeier!": "s14",
+"ben|Wo sind die Ostereier?": "b01",
+"ben|Und hier! Mein Ei ist blau.": "b02",
+"ben|Danke, Osterhase!": "b03",
+"ben|Mein Ei ist blau.": "b04",
+"lena|Frohe Ostern, Sofi!": "l01",
+"lena|Hier! Ein Ei! Es ist rot.": "l02",
+"lena|Mein Korb ist voll.": "l03"
+},
+"dur": {
+"s01": 1.38,
+"s02": 1.31,
+"s03": 1.52,
+"s04": 1.37,
+"s05": 1.13,
+"s06": 1.05,
+"s07": 1.0,
+"s08": 0.96,
+"s09": 1.67,
+"s10": 2.24,
+"s11": 2.06,
+"s12": 3.15,
+"s13": 2.73,
+"s14": 2.07,
+"b01": 1.56,
+"b02": 2.48,
+"b03": 1.43,
+"b04": 1.45,
+"l01": 1.7,
+"l02": 2.65,
+"l03": 1.23
+},
+"chant": {
+"beat": 0.8,
+"bar": 3.2,
+"marks": [
+[
+0.35,
+3.55
+],
+[
+6.75,
+9.95
+],
+[
+13.15,
+16.35
+],
+[
+19.55,
+22.75
+]
+],
+"sup": 26.1
+}
+}

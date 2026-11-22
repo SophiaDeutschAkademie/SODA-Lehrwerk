@@ -1,0 +1,79 @@
+{
+"aud": {
+"sofi|Guten Morgen, Ben! Steh auf!": "s01",
+"sofi|Und am Abend?": "s02",
+"sofi|Gute Nacht? Ich stehe jetzt auf! Ich bin eine Eule.": "s03",
+"sofi|Ich stehe auf.": "s04",
+"sofi|Ich frühstücke.": "s05",
+"sofi|Ich gehe in die Schule.": "s06",
+"sofi|Ich spiele.": "s07",
+"sofi|Ich putze meine Zähne.": "s08",
+"sofi|Ich gehe ins Bett.": "s09",
+"sofi|E wie Eule": "s10",
+"sofi|Was machst du am Morgen?": "s11",
+"sofi|Und dann?": "s12",
+"sofi|Was machst du am Abend?": "s13",
+"sofi|Morgens steh ich fröhlich auf,": "s14",
+"sofi|in die Schule, lauf, lauf, lauf!": "s15",
+"sofi|Abends putz ich meine Zähne,": "s16",
+"sofi|gute Nacht! Ich gähne, gähne.": "s17",
+"ben|Guten Morgen! Ich stehe auf.": "b01",
+"ben|Dann gehe ich in die Schule.": "b02",
+"ben|Am Abend putze ich meine Zähne.": "b03",
+"ben|Ich stehe auf.": "b04",
+"lena|Ich frühstücke. Hm, lecker!": "l01",
+"lena|Am Nachmittag spiele ich.": "l02",
+"lena|Dann gehe ich ins Bett. Gute Nacht!": "l03",
+"lena|Ich gehe ins Bett.": "l04"
+},
+"dur": {
+"s01": 2.39,
+"s02": 1.17,
+"s03": 3.97,
+"s04": 1.14,
+"s05": 1.1,
+"s06": 1.47,
+"s07": 1.04,
+"s08": 1.56,
+"s09": 1.21,
+"s10": 1.55,
+"s11": 1.52,
+"s12": 0.71,
+"s13": 1.55,
+"s14": 2.05,
+"s15": 2.93,
+"s16": 1.96,
+"s17": 3.34,
+"b01": 2.4,
+"b02": 1.62,
+"b03": 2.16,
+"b04": 1.33,
+"l01": 2.53,
+"l02": 1.85,
+"l03": 2.55,
+"l04": 1.36
+},
+"chant": {
+"beat": 0.85,
+"bar": 3.4,
+"marks": [
+[
+0.35,
+3.75
+],
+[
+7.15,
+10.55
+],
+[
+13.95,
+17.35
+],
+[
+20.75,
+24.15
+]
+],
+"sup": 27.7
+}
+}

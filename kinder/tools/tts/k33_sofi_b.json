@@ -1,0 +1,44 @@
+{
+ "job": "k33_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   33,
+   "sofi",
+   "das Nest"
+  ],
+  [
+   33,
+   "sofi",
+   "Wo ist das Osterei?"
+  ],
+  [
+   33,
+   "sofi",
+   "Welche Farbe hat dein Osterei?"
+  ],
+  [
+   33,
+   "sofi",
+   "Osterhase, hopp, hopp, hopp,"
+  ],
+  [
+   33,
+   "sofi",
+   "lauf nicht weg, bleib stehen, stopp!"
+  ],
+  [
+   33,
+   "sofi",
+   "Rote, blaue, gelbe Eier,"
+  ],
+  [
+   33,
+   "sofi",
+   "heute ist die Osterfeier!"
+  ]
+ ],
+ "script": "[happy] das Nest [long pause] Wo ist das Osterei? [long pause] Welche Farbe hat dein Osterei? [long pause] Osterhase, hopp, hopp, hopp, [long pause] lauf nicht weg, bleib stehen, stopp! [long pause] Rote, blaue, gelbe Eier, [long pause] heute ist die Osterfeier!"
+}

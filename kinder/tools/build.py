@@ -62,6 +62,7 @@ def keys(d):
             if len(o) > 2 and o[2]: add('sofi', o[2])
     for t in d['talk']: add('sofi', t.get('say', t['de']))
     for r in d['reim']: add('sofi', r[0])
+    for e in d.get('extra', []): add(e[0], e[1])          # lines used outside the six steps (certificate)
     return out
 
 # ---------------------------------------------------------------- check
@@ -495,8 +496,10 @@ def cmd_site():
         d['scenes'] = L
         body = json.dumps({k: v for k, v in d.items() if k not in ('n', 'img')}, ensure_ascii=False, separators=(',', ':'))
         open(f'{K}/data/k{n:02d}.js', 'w', encoding='utf-8').write(f'KINDER.put({n},{body});\n'); ready.append(n)
+    last = max(it['n'] for g in book['book'] for it in g['items'])     # 32: Feste (33-36) do not count as 'open up to'
     op = 0
-    while op+1 in ready: op += 1
+    while op+1 in ready and op < last: op += 1
+    for f in book['feste']: f['ok'] = 1 if f['n'] in ready else 0
     shell = open(f'{T}/shell.html', encoding='utf-8').read()
     rd = lambda f: open(f'{T}/blocks/{f}', encoding='utf-8').read()
     ver = datetime.datetime.now().strftime('%Y%m%d%H%M')

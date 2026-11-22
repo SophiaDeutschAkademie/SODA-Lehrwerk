@@ -1,0 +1,77 @@
+{
+"aud": {
+"sofi|Oh! Danke! Ein Kuchen!": "s01",
+"sofi|Danke schön! Oh, ein Buch!": "s02",
+"sofi|Geschafft! Jetzt essen wir Kuchen.": "s03",
+"sofi|der Kuchen": "s04",
+"sofi|die Kerze": "s05",
+"sofi|das Geschenk": "s06",
+"sofi|der Ballon": "s07",
+"sofi|die Karte": "s08",
+"sofi|die Überraschung": "s09",
+"sofi|Ü wie Überraschung": "s10",
+"sofi|Ich habe heute Geburtstag!": "s11",
+"sofi|Hast du ein Geschenk für mich?": "s12",
+"sofi|Was ist das?": "s13",
+"sofi|Heute, heute ist dein Tag,": "s14",
+"sofi|weil ich dich so gerne mag.": "s15",
+"sofi|Kuchen, Kerzen und Gesang,": "s16",
+"sofi|alles Gute, ein Jahr lang!": "s17",
+"sofi|Herzlichen Glückwunsch! Du hast es geschafft!": "s18",
+"ben|Alles Gute zum Geburtstag, Sofi!": "b01",
+"ben|Und jetzt die Kerzen! Eins, zwei, drei!": "b02",
+"ben|Alles Gute zum Geburtstag!": "b03",
+"lena|Überraschung!": "l01",
+"lena|Hier ist ein Geschenk für dich.": "l02",
+"lena|Hm, lecker!": "l03"
+},
+"dur": {
+"s01": 2.76,
+"s02": 2.83,
+"s03": 2.52,
+"s04": 1.03,
+"s05": 1.16,
+"s06": 1.18,
+"s07": 0.95,
+"s08": 1.09,
+"s09": 1.18,
+"s10": 1.96,
+"s11": 1.83,
+"s12": 1.66,
+"s13": 1.18,
+"s14": 2.62,
+"s15": 1.94,
+"s16": 2.56,
+"s17": 2.48,
+"s18": 3.02,
+"b01": 2.88,
+"b02": 4.91,
+"b03": 1.77,
+"l01": 1.04,
+"l02": 1.98,
+"l03": 0.95
+},
+"chant": {
+"beat": 0.67,
+"bar": 2.68,
+"marks": [
+[
+0.35,
+3.03
+],
+[
+5.71,
+8.39
+],
+[
+11.07,
+13.75
+],
+[
+16.43,
+19.11
+]
+],
+"sup": 21.94
+}
+}

@@ -1,0 +1,54 @@
+{
+ "job": "k27_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   27,
+   "sofi",
+   "Heute ist Montag."
+  ],
+  [
+   27,
+   "sofi",
+   "Und am Mittwoch?"
+  ],
+  [
+   27,
+   "sofi",
+   "Ich lerne jeden Tag Deutsch. Du auch?"
+  ],
+  [
+   27,
+   "sofi",
+   "Montag"
+  ],
+  [
+   27,
+   "sofi",
+   "Dienstag"
+  ],
+  [
+   27,
+   "sofi",
+   "Mittwoch"
+  ],
+  [
+   27,
+   "sofi",
+   "Donnerstag"
+  ],
+  [
+   27,
+   "sofi",
+   "Freitag"
+  ],
+  [
+   27,
+   "sofi",
+   "Samstag"
+  ]
+ ],
+ "script": "[happy] Heute ist Montag. [long pause] Und am Mittwoch? [long pause] Ich lerne jeden Tag Deutsch. Du auch? [long pause] Montag [long pause] Dienstag [long pause] Mittwoch [long pause] Donnerstag [long pause] Freitag [long pause] Samstag"
+}

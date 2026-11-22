@@ -1,0 +1,49 @@
+{
+ "job": "k29_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   29,
+   "sofi",
+   "Ei wie Eis"
+  ],
+  [
+   29,
+   "sofi",
+   "Wie ist das Wetter heute?"
+  ],
+  [
+   29,
+   "sofi",
+   "Was ist das?"
+  ],
+  [
+   29,
+   "sofi",
+   "Scheint die Sonne?"
+  ],
+  [
+   29,
+   "sofi",
+   "Regen, Regen, tropf, tropf, tropf,"
+  ],
+  [
+   29,
+   "sofi",
+   "fällt mir auf den Kopf, Kopf, Kopf."
+  ],
+  [
+   29,
+   "sofi",
+   "Sonne, Sonne, komm heraus,"
+  ],
+  [
+   29,
+   "sofi",
+   "dann geh ich zum Spielen raus!"
+  ]
+ ],
+ "script": "[happy] Ei wie Eis [long pause] Wie ist das Wetter heute? [long pause] Was ist das? [long pause] Scheint die Sonne? [long pause] Regen, Regen, tropf, tropf, tropf, [long pause] fällt mir auf den Kopf, Kopf, Kopf. [long pause] Sonne, Sonne, komm heraus, [long pause] dann geh ich zum Spielen raus!"
+}

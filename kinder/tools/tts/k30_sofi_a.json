@@ -1,0 +1,54 @@
+{
+ "job": "k30_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   30,
+   "sofi",
+   "Es ist Herbst. Die Blätter sind bunt."
+  ],
+  [
+   30,
+   "sofi",
+   "Und im Winter?"
+  ],
+  [
+   30,
+   "sofi",
+   "Ich mag alle Jahreszeiten."
+  ],
+  [
+   30,
+   "sofi",
+   "der Frühling"
+  ],
+  [
+   30,
+   "sofi",
+   "der Sommer"
+  ],
+  [
+   30,
+   "sofi",
+   "der Herbst"
+  ],
+  [
+   30,
+   "sofi",
+   "der Winter"
+  ],
+  [
+   30,
+   "sofi",
+   "heiß"
+  ],
+  [
+   30,
+   "sofi",
+   "kalt"
+  ]
+ ],
+ "script": "[happy] Es ist Herbst. Die Blätter sind bunt. [long pause] Und im Winter? [long pause] Ich mag alle Jahreszeiten. [long pause] der Frühling [long pause] der Sommer [long pause] der Herbst [long pause] der Winter [long pause] heiß [long pause] kalt"
+}

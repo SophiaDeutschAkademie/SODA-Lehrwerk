@@ -1,0 +1,44 @@
+{
+ "job": "k36_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   36,
+   "sofi",
+   "Frohe Weihnachten!"
+  ],
+  [
+   36,
+   "sofi",
+   "Was siehst du?"
+  ],
+  [
+   36,
+   "sofi",
+   "Was ist das?"
+  ],
+  [
+   36,
+   "sofi",
+   "Kling, kling, kling, die Glocke klingt,"
+  ],
+  [
+   36,
+   "sofi",
+   "und der kleine Engel singt."
+  ],
+  [
+   36,
+   "sofi",
+   "Plätzchen, Kugeln, Kerzenschein,"
+  ],
+  [
+   36,
+   "sofi",
+   "frohe Weihnacht, komm herein!"
+  ]
+ ],
+ "script": "[happy] Frohe Weihnachten! [long pause] Was siehst du? [long pause] Was ist das? [long pause] Kling, kling, kling, die Glocke klingt, [long pause] und der kleine Engel singt. [long pause] Plätzchen, Kugeln, Kerzenschein, [long pause] frohe Weihnacht, komm herein!"
+}

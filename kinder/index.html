@@ -28,13 +28,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>어린이 독일어 첫걸음 · 초등 저학년 독일어 교재 | SODA Kinder</title>
 <!-- seo:begin (tools/seo.py에서 만듦, 직접 고치지 마세요) -->
-<meta name="description" content="부엉이 Sofi와 함께 듣고, 따라 말하고, 놀면서 배우는 어린이·초등 저학년 독일어 교재. 24단원마다 이야기, 그림 카드, 말하기, 놀이, 손뼉 리듬이 있고 모든 문장에 독일어 음성이 있습니다. 소피아 독일어학원.">
+<meta name="description" content="부엉이 Sofi와 함께 듣고, 따라 말하고, 놀면서 배우는 어린이·초등 저학년 독일어 교재. 32단원과 명절 4단원마다 이야기, 그림 카드, 말하기, 놀이, 손뼉 리듬이 있고 모든 문장에 독일어 음성이 있습니다. 소피아 독일어학원.">
 <link rel="canonical" href="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/kinder/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SODA Lehrwerk · 소피아 독일어학원">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="어린이 독일어 첫걸음 · 초등 저학년 독일어 교재 | SODA Kinder">
-<meta property="og:description" content="부엉이 Sofi와 함께 듣고, 따라 말하고, 놀면서 배우는 어린이·초등 저학년 독일어 교재. 24단원마다 이야기, 그림 카드, 말하기, 놀이, 손뼉 리듬이 있고 모든 문장에 독일어 음성이 있습니다. 소피아 독일어학원.">
+<meta property="og:description" content="부엉이 Sofi와 함께 듣고, 따라 말하고, 놀면서 배우는 어린이·초등 저학년 독일어 교재. 32단원과 명절 4단원마다 이야기, 그림 카드, 말하기, 놀이, 손뼉 리듬이 있고 모든 문장에 독일어 음성이 있습니다. 소피아 독일어학원.">
 <meta property="og:url" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/kinder/">
 <meta property="og:image" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/kinder/icons/icon-512.png">
 <meta name="twitter:card" content="summary">
@@ -209,6 +209,9 @@ body.no-ko .line-ko,body.no-ko .card-ko{display:none}
 .pips{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;width:61px}
 .pips i{width:9px;height:9px;border-radius:50%;background:#B87830}
 .cp-farbe{display:grid;place-items:center;background:var(--pic)}
+.cp-wort b{font-size:clamp(27px,10vw,50px);letter-spacing:.01em}
+.cp-uhr{display:grid;place-items:center;background:var(--pic)}
+.cp-uhr svg{width:86%;height:86%}
 .cp-farbe svg{width:62%;height:auto}
 .hint{margin-top:16px;padding:12px 14px;border-radius:var(--r-s);background:var(--soft);font-size:14px;line-height:1.5}
 .hint .de,.todo .de,.note-in .de{font-weight:700}
@@ -239,7 +242,7 @@ body.no-ko .line-ko,body.no-ko .card-ko{display:none}
 .say-b{display:block;width:100%;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:18px 18px 18px 6px;padding:10px 14px}
 .say-b.has-pic{display:grid;grid-template-columns:minmax(0,1fr) 64px;gap:10px;align-items:center}
 .say-b .cp{width:64px;height:64px;border-radius:12px;border:1px solid var(--line)}
-.say-b .cp-num b{font-size:30px}.say-b .pips{display:none}
+.say-b .cp-num b{font-size:30px}.say-b .pips{display:none}.say-b .cp-wort b{font-size:22px}
 .say.me{grid-template-columns:minmax(0,1fr) 44px}
 .say.me .say-b{background:var(--soft);border-color:var(--sand);border-radius:18px 18px 6px 18px}
 .or{display:block;font-size:12px;color:var(--ink2);margin:6px 0 2px}
@@ -277,7 +280,7 @@ html[data-theme="dark"] .chip.is-on,html[data-theme="dark"] .chip.is-rec{color:#
 html[data-theme="dark"] .mcard{background:#2E3A55;border-color:#2E3A55}
 .face{position:absolute;inset:0;display:none;place-items:center;background:var(--pic);color:#2E3A55;font-family:var(--de);font-weight:700;font-size:clamp(11px,3.5vw,20px);line-height:1.15;padding:3px;text-align:center}
 .face .cp{width:100%;height:100%}
-.face .cp-num b{font-size:clamp(22px,8vw,44px)}.face .pips{display:none}
+.face .cp-num b{font-size:clamp(22px,8vw,44px)}.face .pips{display:none}.face .cp-wort b{font-size:clamp(18px,6.4vw,36px)}
 .mcard.is-open{border-color:var(--sand)}
 .mcard.is-open .face{display:grid}
 .mcard.is-open::before{display:none}
@@ -361,7 +364,7 @@ body[data-talk="lena"] .part[data-who~="lena"],body[data-talk="ben"] .part[data-
 .card .cp img{animation:kbob 5.2s ease-in-out infinite}
 .cards li:nth-child(2n) .cp img,.cards .card:nth-child(2n) .cp img{animation-delay:-1.7s}
 .cards .card:nth-child(3n) .cp img{animation-delay:-3.1s}
-.card.is-playing .cp img,.card.is-playing .cp-num b,.opt.is-right .cp{animation:kpop .5s ease}
+.card.is-playing .cp img,.card.is-playing .cp-num b,.card.is-playing .cp-uhr svg,.opt.is-right .cp{animation:kpop .5s ease}
 .cp-farbe svg{transform-origin:50% 100%;animation:ksway 4.4s ease-in-out infinite}
 .cards .card:nth-child(2n) .cp-farbe svg{animation-delay:-2.2s}
 .guide-owl{transform-origin:50% 100%;animation:khop 4.8s ease-in-out infinite}
@@ -399,6 +402,16 @@ body[data-talk="lena"] .part[data-who~="lena"],body[data-talk="ben"] .part[data-
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html body[data-talk] .part[data-who]{animation:none!important}}
 @media print{.ch-nav,.soda-theme-btn,.soda-toc-btn{display:none!important}}
+.urk{margin:6px auto 0;max-width:430px;padding:28px 20px 24px;text-align:center;background:#FBF8F1;color:#2E3A55;border-radius:22px;box-shadow:inset 0 0 0 2px #DECDB0,inset 0 0 0 8px #FBF8F1,inset 0 0 0 9.5px #DECDB0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.urk-k{font-family:var(--de);font-weight:700;font-size:32px;letter-spacing:.05em}
+.urk img{display:block;width:150px;height:150px;margin:6px auto 2px}
+.urk-n{font-family:var(--de);font-weight:700;font-size:29px;line-height:1.2;margin-top:4px}
+.urk-de{font-family:var(--de);font-size:20px;margin-top:4px}
+.urk-ko{font-size:14.5px;line-height:1.5;margin-top:12px;color:#4B556B}
+.urk-d{font-size:12.5px;margin-top:14px;color:#6C768A}
+.urk-b{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
+.group-urk{margin-top:0}
+@media print{body.print-urk *{visibility:hidden!important}body.print-urk .urk,body.print-urk .urk *{visibility:visible!important}body.print-urk .urk{position:absolute;left:50%;top:30px;transform:translateX(-50%);width:430px}}
 </style>
 <style id="soda-dark">
 .soda-theme-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));z-index:2147482000;width:38px;height:38px;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
@@ -490,8 +503,8 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
 <script>
 (function(){
 'use strict';
-var V='202611221055';          /* 자료를 고치면 tools/build.py가 이 값을 바꿉니다 */
-var OPEN=24;           /* 열려 있는 마지막 단원 */
+var V='202611221300';          /* 자료를 고치면 tools/build.py가 이 값을 바꿉니다 */
+var OPEN=32;           /* 열려 있는 마지막 단원 */
 var $=function(s,r){return (r||document).querySelector(s)};
 var $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
 var esc=function(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
@@ -514,8 +527,11 @@ var I={
 
 /* ---------- the whole book ---------- */
 var BOOK=[{"n":1,"de":"Hallo!","ko":"만나요","items":[{"n":1,"de":"Hallo!","ko":"인사해요","key":"Hallo! Ich bin …"},{"n":2,"de":"Wie heißt du?","ko":"이름을 물어요","key":"Wie heißt du? – Ich heiße …"},{"n":3,"de":"Wie geht’s?","ko":"기분을 말해요","key":"Wie geht’s? – Gut!"},{"n":4,"de":"Eins, zwei, drei","ko":"열까지 세요","key":"Wie alt bist du? – Ich bin acht."}]},{"n":2,"de":"Bunte Welt","ko":"알록달록 세상","note":"첫소리 글자 시작","items":[{"n":5,"de":"Rot, blau, grün","ko":"색깔","key":"Der Ballon ist rot."},{"n":6,"de":"Mein Schulranzen","ko":"책가방 속","key":"Was ist das? – Das ist ein Stift."},{"n":7,"de":"Steh auf! Setz dich!","ko":"몸으로 해요","key":"Sofi sagt: Steh auf!"},{"n":8,"de":"Elf, zwölf, dreizehn","ko":"스물까지 세요","key":"Wie viele Sterne? – Zwölf!"}]},{"n":3,"de":"Ich und meine Familie","ko":"나와 우리 가족","items":[{"n":9,"de":"Meine Familie","ko":"우리 가족","key":"Das ist meine Mama. Das ist mein Papa."},{"n":10,"de":"Kopf, Bauch, Fuß","ko":"내 몸","key":"Wo ist deine Nase? – Hier!"},{"n":11,"de":"Hose und Pulli","ko":"옷","key":"Meine Jacke ist blau."},{"n":12,"de":"Mein Zuhause","ko":"우리 집","key":"Wo ist Sofi? – Im Bett!"}]},{"n":4,"de":"Lecker!","ko":"맛있어요","items":[{"n":13,"de":"Obst und Gemüse","ko":"과일과 채소","key":"Magst du Äpfel? – Ja! – Nein!"},{"n":14,"de":"Mein Frühstück","ko":"아침밥","key":"Ich esse Brot. Ich trinke Milch."},{"n":15,"de":"Hunger und Durst","ko":"배고파요, 목말라요","key":"Ich habe Hunger. – Hier, bitte! – Danke!"},{"n":16,"de":"Auf dem Markt","ko":"시장 놀이","key":"Zwei Äpfel, bitte!"}]},{"n":5,"de":"Tiere","ko":"동물 친구들","note":"따라 쓰기 시작","items":[{"n":17,"de":"Hund und Katze","ko":"집에서 사는 동물","key":"Ich habe eine Katze."},{"n":18,"de":"Auf dem Bauernhof","ko":"농장에서","key":"Wie macht die Kuh? – Muh!"},{"n":19,"de":"Im Zoo","ko":"동물원에서","key":"Der Elefant ist groß. Die Maus ist klein."},{"n":20,"de":"Was kann der Frosch?","ko":"동물이 잘하는 것","key":"Der Frosch kann springen. Ich auch!"}]},{"n":6,"de":"Spielen und Freunde","ko":"놀이와 친구","items":[{"n":21,"de":"Mein Spielzeug","ko":"장난감","key":"Ist das dein Ball? – Ja, das ist mein Ball."},{"n":22,"de":"Was machst du gern?","ko":"좋아하는 놀이","key":"Ich male gern. Und du?"},{"n":23,"de":"Spielst du mit?","ko":"같이 놀자","key":"Spielst du mit? – Ja, gern!"},{"n":24,"de":"Woher kommst du?","ko":"어디에서 왔어요?","key":"Woher kommst du? – Ich komme aus Korea."}]},{"n":7,"de":"Mein Tag","ko":"나의 하루","items":[{"n":25,"de":"Von morgens bis abends","ko":"아침부터 저녁까지","key":"Ich stehe auf. Ich gehe in die Schule."},{"n":26,"de":"Wie spät ist es?","ko":"몇 시예요?","key":"Wie spät ist es? – Es ist drei Uhr."},{"n":27,"de":"Montag, Dienstag …","ko":"요일","key":"Heute ist Montag."},{"n":28,"de":"Mit dem Bus","ko":"학교 가는 길","key":"Ich fahre mit dem Bus."}]},{"n":8,"de":"Das Jahr","ko":"일 년","items":[{"n":29,"de":"Wie ist das Wetter?","ko":"날씨","key":"Die Sonne scheint. Es regnet."},{"n":30,"de":"Die Jahreszeiten","ko":"사계절","key":"Im Winter ist es kalt."},{"n":31,"de":"Januar, Februar, März","ko":"열두 달","key":"Wann hast du Geburtstag? – Im Mai."},{"n":32,"de":"Alles Gute!","ko":"생일잔치","key":"Alles Gute zum Geburtstag!"}]}];
-var FESTE=[{"de":"Ostern","ko":"부활절, 봄","key":"Frohe Ostern!"},{"de":"Laternenfest","ko":"등불 축제, 11월","key":"Meine Laterne leuchtet."},{"de":"Nikolaus","ko":"니콜라우스의 날, 12월 6일","key":"Danke, lieber Nikolaus!"},{"de":"Weihnachten","ko":"성탄절, 12월","key":"Frohe Weihnachten!"}];
-var META={};BOOK.forEach(function(g){g.items.forEach(function(it){it.g=g.n;META[it.n]=it})});
+var FESTE=[{"n":33,"de":"Ostern","ko":"부활절, 봄","key":"Frohe Ostern!","ok":1},{"n":34,"de":"Laternenfest","ko":"등불 축제, 11월","key":"Meine Laterne leuchtet.","ok":1},{"n":35,"de":"Nikolaus","ko":"니콜라우스의 날, 12월 6일","key":"Danke, lieber Nikolaus!","ok":1},{"n":36,"de":"Weihnachten","ko":"성탄절, 12월","key":"Frohe Weihnachten!","ok":1}];
+var META={},LAST=0;BOOK.forEach(function(g){g.items.forEach(function(it){it.g=g.n;META[it.n]=it;if(it.n>LAST)LAST=it.n})});
+FESTE.forEach(function(it){it.fest=1;META[it.n]=it});          /* 명절 단원은 33번부터, 차례와 따로 열림 */
+function isOpen(n){var it=META[n];return !!it&&(it.fest?!!it.ok:n<=OPEN)}
+function uname(n){return META[n].fest?META[n].de:n+'단원'}
 var WHO={lena:'Lena',ben:'Ben',sofi:'Sofi'};
 var STEPS=[
  {de:'Hör zu!',ko:'들어요.',a:'c:st_hoer',owl:'sofi_hoer',tip:'그림을 보고 이야기를 들어요. 한 줄을 누르면 그 말만 다시 들려요.'},
@@ -531,8 +547,8 @@ var HOME=['하루 10분이면 충분합니다. 한 번에 오래 하기보다 �
 /* ---------- saved progress ---------- */
 var KEY='soda-kinder-v1';
 function freshK(){return {done:{},lines:{},heard:{},said:{},stars:0,mem:false,todo:{},sticker:false}}
-var S={ko:true,name:'',city:'',k:{},sp:{}};
-try{var raw=localStorage.getItem(KEY);if(raw){var o=JSON.parse(raw);if(o&&typeof o==='object'){S.ko=o.ko!==false;S.name=o.name||'';S.city=o.city||'';S.k=o.k||{};S.sp=o.sp||{};if(o.k1&&!S.k['1'])S.k['1']=o.k1}}}catch(e){}
+var S={ko:true,name:'',city:'',k:{},sp:{},urk:''};
+try{var raw=localStorage.getItem(KEY);if(raw){var o=JSON.parse(raw);if(o&&typeof o==='object'){S.ko=o.ko!==false;S.name=o.name||'';S.city=o.city||'';S.k=o.k||{};S.sp=o.sp||{};S.urk=o.urk||'';if(o.k1&&!S.k['1'])S.k['1']=o.k1}}}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 function P(n){n=n||cur;if(!S.k[n])S.k[n]=freshK();var p=S.k[n];var f=freshK();for(var k in f)if(p[k]===undefined)p[k]=f[k];return p}
 
@@ -590,8 +606,17 @@ function stopSound(){token++;seq++;try{player.pause()}catch(e){}try{mine.pause()
 function cp(c,d,cls){
   d=d||C;cls=cls?' '+cls:'';
   if(d.kind==='num'){var p='';for(var i=0;i<c.num;i++)p+='<i></i>';return '<span class="cp cp-num'+cls+'"><b>'+c.num+'</b><span class="pips">'+p+'</span></span>'}
+  if(d.kind==='wort')return '<span class="cp cp-num cp-wort'+cls+'"><b>'+esc(c.tag)+'</b></span>';
+  if(d.kind==='uhr')return '<span class="cp cp-uhr'+cls+'">'+clock(c.uhr)+'</span>';
   if(d.kind==='farbe')return '<span class="cp cp-farbe'+cls+'"><svg viewBox="0 0 100 130" aria-hidden="true"><path d="M50 4C24 4 8 24 8 48c0 24 20 44 38 50l-5 9h18l-5-9c18-6 38-26 38-50C92 24 76 4 50 4z" fill="'+c.hex+'" stroke="#2E3A55" stroke-width="'+(c.hex==='#FFFFFF'?3:0)+'"/><path d="M50 107c-6 8 6 12 0 20" fill="none" stroke="#6C768A" stroke-width="2.5" stroke-linecap="round"/><ellipse cx="34" cy="30" rx="8" ry="13" fill="#fff" opacity=".28" transform="rotate(-24 34 30)"/></svg></span>';
   return '<span class="cp'+cls+'"><img class="ill" src="'+ipath(d.n,c.k)+'" alt="'+esc(c.alt||'')+'" width="512" height="512" loading="lazy"></span>';
+}
+function clock(h){          /* a clock face showing the full hour h */
+  var a=(h%12)*30*Math.PI/180,s='';
+  for(var i=1;i<=12;i++){var b=i*30*Math.PI/180;s+='<text x="'+(50+34*Math.sin(b)).toFixed(1)+'" y="'+(50-34*Math.cos(b)+3.5).toFixed(1)+'" text-anchor="middle" font-size="'+(i%3?8.5:10.5)+'" font-weight="700" fill="#2E3A55">'+i+'</text>'}
+  return '<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45.5" fill="#FBF8F1" stroke="#2E3A55" stroke-width="4"/>'+s
+    +'<line x1="50" y1="50" x2="50" y2="25" stroke="#6C768A" stroke-width="2.8" stroke-linecap="round"/>'
+    +'<line x1="50" y1="50" x2="'+(50+17*Math.sin(a)).toFixed(1)+'" y2="'+(50-17*Math.cos(a)).toFixed(1)+'" stroke="#2E3A55" stroke-width="5" stroke-linecap="round"/><circle cx="50" cy="50" r="3.6" fill="#B87830"/></svg>';
 }
 function cardDe(c){        /* "der Hund" with the article in its colour */
   if(!c.art)return esc(c.de);
@@ -605,8 +630,9 @@ var view='cover',spN=0;
 function route(){
   stopSound();stopRec(true);closeAbout();
   var h=location.hash.replace('#',''),m;
-  if((m=h.match(/^k(\d+)-([1-6])$/))&&META[+m[1]]&&+m[1]<=OPEN){openChapter(+m[1],+m[2])}
+  if((m=h.match(/^k(\d+)-([1-6])$/))&&isOpen(+m[1])){openChapter(+m[1],+m[2])}
   else if((m=h.match(/^sp(\d)$/))&&spOpen(+m[1])){openSpiel(+m[1])}
+  else if(h==='urk'){openUrk()}
   else if(h==='toc'){view='toc';renderToc();show('toc')}
   else{view='cover';show('cover')}
   window.scrollTo(0,0);
@@ -622,6 +648,7 @@ function failLoad(){$('#stage').innerHTML='<div class="wait"><p>이 단원을 �
 function doneCount(n){var p=S.k[n],c=0;if(!p)return 0;for(var i=1;i<=6;i++)if(p.done&&p.done[i])c++;return c}
 function spOpen(g){var G=BOOK[g-1];return !!G&&G.items[G.items.length-1].n<=OPEN}
 function stickers(){var c=0;for(var n in S.k)if(S.k[n]&&S.k[n].sticker)c++;return c}
+function stReg(){var c=0;for(var n=1;n<=LAST;n++)if(S.k[n]&&S.k[n].sticker)c++;return c}      /* 수료증은 1~32단원 스티커로 */
 function renderToc(){
   var h='';
   BOOK.forEach(function(g){
@@ -636,22 +663,32 @@ function renderToc(){
     });
     var so=spOpen(g.n),sd=S.sp[g.n];
     h+=so?'<a class="rowk rowk-play is-open" href="#sp'+g.n+'"><span class="rowk-n">'+I.star+'</span><span>'+D('Spielplatz '+g.n)+' 복습 놀이</span>'+(sd?'<span class="mini-star" aria-label="마쳤어요">'+I.star+'</span>':'<span class="tag">놀기</span>')+'</a>'
-         :'<div class="rowk rowk-play"><span class="rowk-n">'+I.star+'</span><span>'+D('Spielplatz '+g.n)+' 복습 놀이'+(g.n===BOOK.length?'와 수료증':'')+'</span></div>';
+         :'<div class="rowk rowk-play"><span class="rowk-n">'+I.star+'</span><span>'+D('Spielplatz '+g.n)+' 복습 놀이</span></div>';
     h+='</section>';
   });
+  var sr=stReg();
+  h+='<section class="group group-urk">'+(sr>=LAST?'<a class="rowk rowk-play is-open" href="#urk"><span class="rowk-n">'+I.star+'</span><span>'+D('Urkunde')+' 수료증</span><span class="tag">보기</span></a>'
+     :'<div class="rowk rowk-play"><span class="rowk-n">'+I.star+'</span><span>'+D('Urkunde')+' 수료증 · 스티커 '+sr+'/'+LAST+'</span></div>')+'</section>';
   h+='<section class="group"><h3 class="group-h"><span class="group-n" lang="de">Extra</span><span class="group-de" lang="de">Feste</span><span class="group-ko">독일의 명절, 그 달에 꺼내 배워요</span></h3>';
-  FESTE.forEach(function(it){h+='<div class="rowk is-soon"><span class="rowk-n">'+I.star+'</span><span><span class="rowk-de" lang="de"><span class="rowk-ti">'+it.de+'</span><span class="rowk-ko" lang="ko">'+it.ko+'</span></span><span class="rowk-key" lang="de">'+it.key+'</span></span></div>'});
+  FESTE.forEach(function(it){
+    var body='<span class="rowk-n">'+I.star+'</span><span><span class="rowk-de" lang="de"><span class="rowk-ti">'+it.de+'</span><span class="rowk-ko" lang="ko">'+it.ko+'</span></span><span class="rowk-key" lang="de">'+it.key+'</span></span>';
+    if(it.ok){
+      var p=S.k[it.n],n=doneCount(it.n),st=p&&p.sticker;
+      var right=st?'<img class="mini-st ill" src="'+cimg('sofi_super')+'" alt="스티커를 받았어요" width="42" height="42">':'<span class="tag'+(n?' tag-go':'')+'">'+(n?'이어 하기':'시작')+'</span>';
+      h+='<a class="rowk is-open" href="#k'+it.n+'-'+(st?1:Math.min(6,n+1))+'">'+body+right+'</a>';
+    }else h+='<div class="rowk is-soon">'+body+'</div>';
+  });
   h+='</section>';
   $('#toc-list').innerHTML=h;
   var s=stickers();
-  $('#toc-lead').textContent='부엉이 Sofi와 함께 서른두 단원을 차례로 배워요. 지금은 '+OPEN+'단원까지 열려 있고, 흐린 단원은 준비하고 있어요.'+(s?' 모은 스티커는 '+s+'장이에요.':'');
+  $('#toc-lead').textContent='부엉이 Sofi와 함께 서른두 단원을 차례로 배워요. '+(OPEN>=LAST?'명절 단원은 그 달이 오면 꺼내 배워요.':'지금은 '+OPEN+'단원까지 열려 있고, 흐린 단원은 준비하고 있어요.')+(s?' 모은 스티커는 '+s+'장이에요.':'');
 }
 
 /* ---------- chapter frame ---------- */
 function openChapter(n,st){
   view='chapter';cur=n;step=st;C=DATA[n]||null;
   var it=META[n];
-  $('#ch-kicker').textContent='Kapitel '+n;
+  $('#ch-kicker').textContent=it.fest?'Fest':'Kapitel '+n;
   $('#ch-title').innerHTML='<span lang="de">'+it.de+'</span><small>'+it.ko+'</small>';
   $('#ch-nav').hidden=false;
   show('chapter');renderSteps();
@@ -727,7 +764,7 @@ function playStory(){
 
 /* 2 Schau mal! */
 function r2(){
-  var p=P(),h=guide(1)+'<div class="cards'+(C.kind==='num'?' is-num':'')+'">';
+  var p=P(),h=guide(1)+'<div class="cards'+(C.kind==='num'||C.kind==='uhr'||C.kind==='wort'?' is-num':'')+'">';
   C.cards.forEach(function(c){h+='<button class="card'+(c.art?' art-'+c.art:'')+(p.heard[c.k]?' is-heard':'')+'" type="button" data-card="'+c.k+'">'+cp(c)+'<span class="card-de" lang="de">'+cardDe(c)+'</span><span class="card-ko">'+c.ko+'</span>'+(c.when?'<span class="card-when">'+c.when+'</span>':'')+'</button>'});
   h+='</div>';
   if(C.letter)h+='<div class="ltr"><span class="ltr-big" lang="de">'+C.letter[0]+'</span><div><p class="ltr-t">오늘의 글자</p><button class="ltr-say" type="button" data-play="'+esc(akey('sofi',C.letter[1]))+'"><span lang="de">'+C.letter[1]+'</span>'+I.snd+'</button></div></div>';
@@ -928,14 +965,14 @@ function r6(){
   h+='</ul><div class="stbox" id="stbox">'+stickerHtml(false)+'</div>'
    +'<details class="note"><summary>부모님과 선생님께</summary><div class="note-in">'
    +'<h4>이 단원에서 배우는 것</h4>'+ul(C.goals)+'<h4>소리 도움말</h4>'+ul(C.sounds)+'<h4>집에서는 이렇게</h4>'+ul(HOME)+'<h4>수업에서는 이렇게 (40분)</h4>'+ul(C.lesson)
-   +'<h4>기록</h4><p>이 기기에 남은 '+C.n+'단원 기록과 스티커를 지우고 처음부터 다시 할 수 있습니다.</p><p style="margin-top:8px"><button class="chip" type="button" id="reset">'+C.n+'단원 기록 지우기</button></p>'
+   +'<h4>기록</h4><p>이 기기에 남은 '+uname(C.n)+' 기록과 스티커를 지우고 처음부터 다시 할 수 있습니다.</p><p style="margin-top:8px"><button class="chip" type="button" id="reset">'+C.n+'단원 기록 지우기</button></p>'
    +'</div></details>';
   return h;
 }
 function stickerPic(pop){var c=C.sticker?cardBy(C.sticker):null;return '<div class="sticker'+(pop?' pop':'')+'">'+(c&&C.kind==='pic'?cp(c):'<img class="ill" src="'+cimg('sofi_super')+'" alt="두 날개를 번쩍 든 Sofi 스티커" width="420" height="420">')+'</div>'}
 function stickerHtml(pop){
   var p=P();
-  if(p.sticker)return stickerPic(pop)+'<p class="st-name" lang="de">'+META[C.n].de+'</p><p class="st-msg">'+C.n+'단원 스티커를 받았어요.</p>'+(C.n<OPEN?'<a class="btn btn-primary" href="#k'+(C.n+1)+'-1">다음 단원</a> ':'')+'<a class="btn btn-ghost" href="#toc">차례</a>';
+  if(p.sticker)return stickerPic(pop)+'<p class="st-name" lang="de">'+META[C.n].de+'</p><p class="st-msg">'+uname(C.n)+' 스티커를 받았어요.</p>'+(C.n<OPEN?'<a class="btn btn-primary" href="#k'+(C.n+1)+'-1">다음 단원</a> ':'')+'<a class="btn btn-ghost" href="#toc">차례</a>';
   var l=left();
   if(!l.length)return '<div class="sticker is-empty">'+I.star+'</div><p class="st-msg">활동 다섯 개를 모두 마쳤어요.</p><button class="btn btn-accent" type="button" id="getst">스티커 받기</button>';
   var h='<div class="sticker is-empty">'+I.star+'</div><p class="st-msg">아직 남은 활동이 있어요. 마치면 스티커를 받아요.</p><div class="left">';
@@ -978,13 +1015,38 @@ function openSpiel(g){
   }).catch(function(){if(view==='spiel')failLoad()});
 }
 
+/* ---------- Urkunde: the certificate for 32 stickers ---------- */
+var GLUECK='Herzlichen Glückwunsch! Du hast es geschafft!';
+function openUrk(){
+  view='urk';C=null;
+  $('#ch-kicker').textContent='SODA KINDER';
+  $('#ch-title').innerHTML='<span lang="de">Urkunde</span><small>수료증</small>';
+  $('#steps').innerHTML='';$('#steps').hidden=true;$('#ch-nav').hidden=true;
+  show('chapter');
+  var n=stReg(),h;
+  if(n<LAST){
+    h='<div class="guide"><img class="guide-owl ill" src="'+cimg('sofi_hallo')+'" alt="" width="72" height="72"><div><p class="guide-ko"><strong>수료증은 아직이에요.</strong> 스티커 '+LAST+'장을 모두 모으면 수료증이 나와요. 지금은 '+n+'장이에요.</p></div></div>';
+  }else{
+    if(!S.urk){var d=new Date();S.urk=d.getFullYear()+'. '+(d.getMonth()+1)+'. '+d.getDate()+'.';save()}
+    var nm=S.name?esc(S.name):'';
+    h='<section class="urk" id="urk" aria-label="수료증"><p class="urk-k" lang="de">Urkunde</p><img class="ill" src="'+cimg('sofi_super_a')+'" alt="두 날개를 번쩍 든 Sofi" width="150" height="150">'
+     +(nm?'<p class="urk-n">'+nm+'</p><p class="urk-de" lang="de">hat SODA KINDER geschafft.</p>':'<p class="urk-de" lang="de">Du hast SODA KINDER geschafft.</p>')
+     +'<p class="urk-ko">'+(nm?nm+' 어린이는 ':'')+'SODA KINDER 서른두 단원을 모두 마쳤어요.</p>'
+     +'<p class="urk-d">'+S.urk+' · Sophia Deutsch Akademie</p></section>'
+     +'<p class="urk-b"><button class="btn btn-accent" type="button" id="urk-say">Sofi의 축하 인사 듣기</button><button class="btn btn-ghost" type="button" id="urk-print">수료증 인쇄하기</button></p>';
+  }
+  $('#stage').innerHTML=h+'<p style="margin:22px 0 0"><a class="btn btn-ghost" href="#toc">차례로 가기</a></p>';
+}
+
 /* ---------- events ---------- */
 document.addEventListener('click',function(e){
-  var t=e.target.closest('[data-play],[data-step],[data-line],[data-card],[data-said],[data-rec],[data-mine],[data-game],[data-g1],[data-g2],[data-opt-i],[data-m],[data-reim],[data-g],#story,#chant,#getst,#reset,#tclr,#prev,#next,#about-open,#about-close');
+  var t=e.target.closest('[data-play],[data-step],[data-line],[data-card],[data-said],[data-rec],[data-mine],[data-game],[data-g1],[data-g2],[data-opt-i],[data-m],[data-reim],[data-g],#story,#chant,#getst,#reset,#tclr,#prev,#next,#about-open,#about-close,#urk-say,#urk-print');
   if(!t){if(e.target.id==='about')closeAbout();return}
   var d=t.dataset,p;
   if(t.id==='about-open'){openAbout();return}
   if(t.id==='about-close'){closeAbout();return}
+  if(t.id==='urk-say'){need(LAST).then(function(dd){if(view==='urk')play(akey('sofi',GLUECK),t,dd)}).catch(function(){});return}
+  if(t.id==='urk-print'){document.body.classList.add('print-urk');window.print();setTimeout(function(){document.body.classList.remove('print-urk')},800);return}
   if(t.id==='prev'){if(step>1)go('k'+cur+'-'+(step-1));return}
   if(t.id==='next'){go(step<6?'k'+cur+'-'+(step+1):'toc');return}
   if(d.step){go('k'+cur+'-'+d.step);return}
@@ -1004,7 +1066,7 @@ document.addEventListener('click',function(e){
   if(t.id==='chant'){if(!chant.paused)stopChant();else startChant();return}
   if(d.reim!==undefined){play(akey('sofi',C.reim[+d.reim][0]),t);return}
   if(t.id==='tclr'){var cv=$('#tc');if(cv&&cv._clear)cv._clear();return}
-  if(t.id==='reset'){if(d.sure){S.k[cur]=freshK();save();G.g1=null;G.g2=null;stopRec(true);toast(cur+'단원 기록을 지웠어요.');go('k'+cur+'-1')}else{d.sure='1';t.textContent='한 번 더 누르면 지워져요'}return}
+  if(t.id==='reset'){if(d.sure){S.k[cur]=freshK();save();G.g1=null;G.g2=null;stopRec(true);toast(uname(cur)+' 기록을 지웠어요.');go('k'+cur+'-1')}else{d.sure='1';t.textContent='한 번 더 누르면 지워져요'}return}
   if(t.id==='getst'){p=P();p.sticker=true;save();mark(6);$('#stbox').innerHTML=stickerHtml(true);play('c:fb_super');return}
   if(d.play){var gs=t.classList.contains('guide-say');play(d.play,gs?$('.guide-owl',t.closest('.guide')):t);return}
 });

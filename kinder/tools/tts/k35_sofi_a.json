@@ -1,0 +1,49 @@
+{
+ "job": "k35_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   35,
+   "sofi",
+   "Der Nikolaus war da."
+  ],
+  [
+   35,
+   "sofi",
+   "Und ich? Ich habe keine Stiefel!"
+  ],
+  [
+   35,
+   "sofi",
+   "der Nikolaus"
+  ],
+  [
+   35,
+   "sofi",
+   "der Stiefel"
+  ],
+  [
+   35,
+   "sofi",
+   "die Nuss"
+  ],
+  [
+   35,
+   "sofi",
+   "die Mandarine"
+  ],
+  [
+   35,
+   "sofi",
+   "die Schokolade"
+  ],
+  [
+   35,
+   "sofi",
+   "der Sack"
+  ]
+ ],
+ "script": "[happy] Der Nikolaus war da. [long pause] Und ich? Ich habe keine Stiefel! [long pause] der Nikolaus [long pause] der Stiefel [long pause] die Nuss [long pause] die Mandarine [long pause] die Schokolade [long pause] der Sack"
+}

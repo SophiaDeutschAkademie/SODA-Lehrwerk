@@ -1,0 +1,44 @@
+{
+ "job": "t9_lena_b",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   35,
+   "lena",
+   "Heute ist Nikolaus!"
+  ],
+  [
+   35,
+   "lena",
+   "Mein Stiefel ist voll!"
+  ],
+  [
+   35,
+   "lena",
+   "Danke, lieber Nikolaus!"
+  ],
+  [
+   36,
+   "lena",
+   "Frohe Weihnachten!"
+  ],
+  [
+   36,
+   "lena",
+   "Hier ist eine Kugel. Sie ist rot."
+  ],
+  [
+   36,
+   "lena",
+   "Schaut mal, es schneit!"
+  ],
+  [
+   36,
+   "lena",
+   "Ich sehe einen Engel."
+  ]
+ ],
+ "script": "[happy] Heute ist Nikolaus! [long pause] Mein Stiefel ist voll! [long pause] Danke, lieber Nikolaus! [long pause] Frohe Weihnachten! [long pause] Hier ist eine Kugel. Sie ist rot. [long pause] Schaut mal, es schneit! [long pause] Ich sehe einen Engel."
+}

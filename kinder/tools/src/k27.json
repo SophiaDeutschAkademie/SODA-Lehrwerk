@@ -1,0 +1,264 @@
+{
+ "n": 27,
+ "kind": "wort",
+ "img": {
+  "szene": "LENA holds a round black and white soccer ball under her arm and BEN holds a paintbrush and a sheet of paper; between them stands a large blank weekly planner board on an easel with seven empty columns. Clear white space between the children and the board.",
+  "sofi": "hallo",
+  "who": {
+   "lena": [
+    0.2,
+    0.55
+   ],
+   "ben": [
+    0.8,
+    0.55
+   ]
+  }
+ },
+ "story": [
+  {
+   "pic": "szene",
+   "alt": "축구공을 든 Lena와 붓을 든 Ben 사이에 일주일 계획표가 있어요",
+   "label": "일주일 계획표 앞에서",
+   "lines": [
+    [
+     "sofi",
+     "Heute ist Montag.",
+     "오늘은 월요일이야."
+    ],
+    [
+     "lena",
+     "Am Montag spiele ich Fußball.",
+     "나는 월요일에 축구를 해."
+    ],
+    [
+     "ben",
+     "Am Dienstag male ich.",
+     "나는 화요일에 그림을 그려."
+    ],
+    [
+     "sofi",
+     "Und am Mittwoch?",
+     "그럼 수요일에는?"
+    ],
+    [
+     "lena",
+     "Am Mittwoch singe ich.",
+     "수요일에는 노래해."
+    ],
+    [
+     "ben",
+     "Am Samstag und am Sonntag ist keine Schule!",
+     "토요일과 일요일에는 학교에 안 가!"
+    ],
+    [
+     "lena",
+     "Juhu, Wochenende!",
+     "야호, 주말이다!"
+    ],
+    [
+     "sofi",
+     "Ich lerne jeden Tag Deutsch. Du auch?",
+     "나는 날마다 독일어를 배워. 너도?"
+    ]
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "k": "t1",
+   "tag": "Mo",
+   "de": "Montag",
+   "ko": "월요일"
+  },
+  {
+   "k": "t2",
+   "tag": "Di",
+   "de": "Dienstag",
+   "ko": "화요일"
+  },
+  {
+   "k": "t3",
+   "tag": "Mi",
+   "de": "Mittwoch",
+   "ko": "수요일"
+  },
+  {
+   "k": "t4",
+   "tag": "Do",
+   "de": "Donnerstag",
+   "ko": "목요일"
+  },
+  {
+   "k": "t5",
+   "tag": "Fr",
+   "de": "Freitag",
+   "ko": "금요일"
+  },
+  {
+   "k": "t6",
+   "tag": "Sa",
+   "de": "Samstag",
+   "ko": "토요일"
+  },
+  {
+   "k": "t7",
+   "tag": "So",
+   "de": "Sonntag",
+   "ko": "일요일"
+  }
+ ],
+ "hint": "요일은 거의 모두 [[-tag]]로 끝나요. [[Mittwoch]]만 달라요. ‘월요일에’는 [[am Montag]]이라고 해요.",
+ "letter": [
+  "T t",
+  "T wie Tag"
+ ],
+ "trace": "Montag",
+ "frames": [
+  {
+   "de": "Heute ist {a}.",
+   "ko": "오늘은 {a}이야.",
+   "slots": [
+    "a"
+   ],
+   "models": [
+    [
+     "sofi",
+     "Heute ist Montag."
+    ]
+   ]
+  },
+  {
+   "de": "Am {a} {b} ich.",
+   "ko": "나는 {a}에 {b}.",
+   "slots": [
+    "b"
+   ],
+   "models": [
+    [
+     "ben",
+     "Am Dienstag male ich."
+    ]
+   ]
+  }
+ ],
+ "opts": {
+  "a": [
+   [
+    "Montag",
+    "월요일"
+   ],
+   [
+    "Dienstag",
+    "화요일"
+   ],
+   [
+    "Mittwoch",
+    "수요일"
+   ],
+   [
+    "Donnerstag",
+    "목요일"
+   ],
+   [
+    "Freitag",
+    "금요일"
+   ],
+   [
+    "Samstag",
+    "토요일"
+   ],
+   [
+    "Sonntag",
+    "일요일"
+   ]
+  ],
+  "b": [
+   [
+    "spiele",
+    "놀아"
+   ],
+   [
+    "male",
+    "그림을 그려"
+   ],
+   [
+    "singe",
+    "노래해"
+   ],
+   [
+    "lerne",
+    "공부해"
+   ],
+   [
+    "schwimme",
+    "수영해"
+   ]
+  ]
+ },
+ "talk": [
+  {
+   "de": "Welcher Tag ist heute?",
+   "ko": "오늘은 무슨 요일이야?",
+   "me": "Heute ist {a}.",
+   "meko": "오늘은 {a}이야."
+  },
+  {
+   "de": "Was machst du am Samstag?",
+   "ko": "토요일에 뭐 해?",
+   "me": "Am Samstag {b} ich.",
+   "meko": "토요일에 나는 {b}."
+  },
+  {
+   "de": "Ist heute Sonntag?",
+   "ko": "오늘 일요일이야?",
+   "pic": "t3",
+   "me": "Nein, heute ist Mittwoch.",
+   "meko": "아니, 오늘은 수요일이야."
+  }
+ ],
+ "reim": [
+  [
+   "<b>Mon</b>tag, <b>Diens</b>tag, <b>Mitt</b>woch, <b>ja</b>,",
+   "월요일, 화요일, 수요일, 그래,",
+   "손가락을 하나씩 세 개 펴요"
+  ],
+  [
+   "<b>Don</b>ners<b>tag</b> ist <b>auch</b> schon <b>da</b>.",
+   "목요일도 벌써 왔네.",
+   "네 번째 손가락을 펴요"
+  ],
+  [
+   "<b>Frei</b>tag, <b>Sams</b>tag, <b>Sonn</b>tag, <b>fein</b>,",
+   "금요일, 토요일, 일요일, 좋아,",
+   "손가락 세 개를 더 펴요"
+  ],
+  [
+   "<b>so</b> soll <b>je</b>de <b>Wo</b>che <b>sein</b>!",
+   "매주가 이랬으면!",
+   "두 팔을 번쩍 들어요"
+  ]
+ ],
+ "reimNote": "[[fein]]은 ‘좋아, 멋져’라는 뜻이에요. 일주일은 [[die Woche]], 주말은 [[das Wochenende]]예요.",
+ "todo": [
+  "아침마다 달력을 보고 [[Heute ist ….]] 하고 말해요.",
+  "가족에게 [[Welcher Tag ist heute?]] 하고 물어요.",
+  "흐린 글자 위에 [[Montag]]를 따라 써요."
+ ],
+ "goals": [
+  "요일 묻고 답하기: [[Welcher Tag ist heute? – Heute ist Montag.]]",
+  "요일 이름 일곱 개: [[Montag … Sonntag]]",
+  "요일마다 하는 일 말하기: [[Am Dienstag male ich.]]",
+  "글자 [[T]]와 낱말 따라 쓰기: [[Tag, Montag]]"
+ ],
+ "sounds": [
+  "요일 이름은 모두 앞쪽을 세게 말합니다: [[MONtag, DIENStag]]. [[-tag]]의 [[g]]는 낱말 끝에서 ‘ㅋ’에 가깝게 소리 냅니다.",
+  "[[Mittwoch]]의 [[ch]]는 [[acht]]의 [[ch]]처럼 목 안쪽에서 내는 소리입니다. [[Freitag]]의 [[ei]]는 ‘아이’입니다."
+ ],
+ "lesson": [
+  "요일 줄 서기 5분: 요일 카드를 든 일곱 아이가 순서대로 서고, 모두 함께 [[Montag]]부터 [[Sonntag]]까지 말합니다.",
+  "이야기와 카드 15분: 1번과 2번 활동을 듣고, 교사가 가리키는 요일을 따라 말합니다. 글자 [[T]]를 쓰고 [[T wie Tag]]를 말합니다.",
+  "나의 일주일 10분: [[Am Montag … ich.]] 틀로 요일마다 하는 일을 말하고, 주간 계획표에 그림으로 표시합니다.",
+  "따라 쓰기와 리듬 10분: [[Montag]]를 공책에 세 번 쓰고, 5번 리듬을 동작과 함께 합니다."
+ ]
+}

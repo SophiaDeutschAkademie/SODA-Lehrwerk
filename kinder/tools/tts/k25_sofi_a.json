@@ -1,0 +1,54 @@
+{
+ "job": "k25_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   25,
+   "sofi",
+   "Guten Morgen, Ben! Steh auf!"
+  ],
+  [
+   25,
+   "sofi",
+   "Und am Abend?"
+  ],
+  [
+   25,
+   "sofi",
+   "Gute Nacht? Ich stehe jetzt auf! Ich bin eine Eule."
+  ],
+  [
+   25,
+   "sofi",
+   "Ich stehe auf."
+  ],
+  [
+   25,
+   "sofi",
+   "Ich frühstücke."
+  ],
+  [
+   25,
+   "sofi",
+   "Ich gehe in die Schule."
+  ],
+  [
+   25,
+   "sofi",
+   "Ich spiele."
+  ],
+  [
+   25,
+   "sofi",
+   "Ich putze meine Zähne."
+  ],
+  [
+   25,
+   "sofi",
+   "Ich gehe ins Bett."
+  ]
+ ],
+ "script": "[happy] Guten Morgen, Ben! Steh auf! [long pause] Und am Abend? [long pause] Gute Nacht? Ich stehe jetzt auf! Ich bin eine Eule. [long pause] Ich stehe auf. [long pause] Ich frühstücke. [long pause] Ich gehe in die Schule. [long pause] Ich spiele. [long pause] Ich putze meine Zähne. [long pause] Ich gehe ins Bett."
+}

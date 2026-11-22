@@ -1,0 +1,85 @@
+{
+"aud": {
+"sofi|Es ist drei Uhr.": "s01",
+"sofi|Jetzt ist es sechs Uhr.": "s02",
+"sofi|Und ich? Um acht Uhr stehe ich auf!": "s03",
+"sofi|ein Uhr": "s04",
+"sofi|zwei Uhr": "s05",
+"sofi|drei Uhr": "s06",
+"sofi|vier Uhr": "s07",
+"sofi|fünf Uhr": "s08",
+"sofi|sechs Uhr": "s09",
+"sofi|sieben Uhr": "s10",
+"sofi|acht Uhr": "s11",
+"sofi|neun Uhr": "s12",
+"sofi|zehn Uhr": "s13",
+"sofi|elf Uhr": "s14",
+"sofi|zwölf Uhr": "s15",
+"sofi|U wie Uhr": "s16",
+"sofi|Wie spät ist es?": "s17",
+"sofi|Wie spät ist es jetzt?": "s18",
+"sofi|Wann gehst du ins Bett?": "s19",
+"sofi|Tick, tack, tick, tack, macht die Uhr,": "s20",
+"sofi|wie spät ist es? Sag es nur!": "s21",
+"sofi|Es ist drei, jetzt spielen wir,": "s22",
+"sofi|es ist acht, jetzt schlafen wir.": "s23",
+"ben|Drei Uhr! Wir spielen Fußball!": "b01",
+"ben|Sechs Uhr! Ich habe Hunger.": "b02",
+"lena|Sofi, wie spät ist es?": "l01",
+"lena|Und jetzt? Wie spät ist es jetzt?": "l02",
+"lena|Um acht Uhr gehe ich ins Bett.": "l03"
+},
+"dur": {
+"s01": 1.37,
+"s02": 1.7,
+"s03": 3.01,
+"s04": 1.11,
+"s05": 1.09,
+"s06": 1.01,
+"s07": 1.09,
+"s08": 1.09,
+"s09": 1.06,
+"s10": 1.28,
+"s11": 1.07,
+"s12": 1.22,
+"s13": 1.19,
+"s14": 1.17,
+"s15": 1.21,
+"s16": 1.69,
+"s17": 1.35,
+"s18": 1.54,
+"s19": 1.37,
+"s20": 3.94,
+"s21": 2.34,
+"s22": 2.39,
+"s23": 2.29,
+"b01": 2.47,
+"b02": 1.96,
+"l01": 2.22,
+"l02": 2.94,
+"l03": 2.11
+},
+"chant": {
+"beat": 0.9,
+"bar": 3.6,
+"marks": [
+[
+0.35,
+3.95
+],
+[
+7.55,
+11.15
+],
+[
+14.75,
+18.35
+],
+[
+21.95,
+25.55
+]
+],
+"sup": 29.3
+}
+}

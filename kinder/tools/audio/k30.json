@@ -1,0 +1,75 @@
+{
+"aud": {
+"sofi|Es ist Herbst. Die Blätter sind bunt.": "s01",
+"sofi|Und im Winter?": "s02",
+"sofi|Ich mag alle Jahreszeiten.": "s03",
+"sofi|der Frühling": "s04",
+"sofi|der Sommer": "s05",
+"sofi|der Herbst": "s06",
+"sofi|der Winter": "s07",
+"sofi|heiß": "s08",
+"sofi|kalt": "s09",
+"sofi|I wie Igel": "s10",
+"sofi|Wie ist es im Winter?": "s11",
+"sofi|Und im Sommer?": "s12",
+"sofi|Welche Jahreszeit magst du?": "s13",
+"sofi|Frühling, Sommer, Herbst und Winter,": "s14",
+"sofi|tanzen alle kleinen Kinder.": "s15",
+"sofi|Warm und heiß und windig, kalt,": "s16",
+"sofi|und das Jahr ist um, so bald!": "s17",
+"ben|Im Herbst ist es windig.": "b01",
+"ben|Im Frühling ist es warm.": "b02",
+"lena|Schaut mal, ein Igel!": "l01",
+"lena|Im Winter ist es kalt. Es schneit.": "l02",
+"lena|Und im Sommer ist es heiß. Ich esse Eis!": "l03",
+"lena|Im Winter ist es kalt.": "l04"
+},
+"dur": {
+"s01": 3.16,
+"s02": 1.1,
+"s03": 2.18,
+"s04": 1.18,
+"s05": 0.92,
+"s06": 1.04,
+"s07": 1.04,
+"s08": 0.81,
+"s09": 0.64,
+"s10": 1.17,
+"s11": 1.48,
+"s12": 1.09,
+"s13": 1.79,
+"s14": 4.24,
+"s15": 2.13,
+"s16": 3.85,
+"s17": 2.33,
+"b01": 1.8,
+"b02": 1.91,
+"l01": 1.86,
+"l02": 2.86,
+"l03": 3.19,
+"l04": 1.68
+},
+"chant": {
+"beat": 1.0,
+"bar": 4.0,
+"marks": [
+[
+0.35,
+4.35
+],
+[
+8.35,
+12.35
+],
+[
+16.35,
+20.35
+],
+[
+24.35,
+28.35
+]
+],
+"sup": 32.5
+}
+}

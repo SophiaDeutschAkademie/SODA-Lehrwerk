@@ -1,0 +1,237 @@
+{
+ "n": 25,
+ "kind": "pic",
+ "img": {
+  "szene": "A bedroom in the morning: on the left a boy with short curly dark brown hair and fair pale skin in striped pajamas stands next to his bed and stretches both arms up, yawning; on the right LENA wears a backpack and holds a slice of bread. The girl has dark blond hair and both children are the same size. Clear white space between the two children.",
+  "sofi": "schlaf",
+  "who": {
+   "ben": [
+    0.27,
+    0.55
+   ],
+   "lena": [
+    0.76,
+    0.55
+   ]
+  },
+  "karten": [
+   "a child in pajamas stretching both arms up next to a bed",
+   "a child sitting at a table eating breakfast with a bowl and a cup",
+   "a child with a backpack walking toward a small school building",
+   "a child playing with a ball",
+   "a child brushing teeth with a toothbrush",
+   "a child sleeping in a bed under a blanket"
+  ]
+ },
+ "story": [
+  {
+   "pic": "szene",
+   "alt": "잠옷을 입은 Ben이 기지개를 켜며 하품하고, 책가방을 멘 Lena가 빵을 들고 있어요",
+   "label": "아침에",
+   "lines": [
+    [
+     "sofi",
+     "Guten Morgen, Ben! Steh auf!",
+     "좋은 아침, Ben! 일어나!"
+    ],
+    [
+     "ben",
+     "Guten Morgen! Ich stehe auf.",
+     "좋은 아침! 나 일어나."
+    ],
+    [
+     "lena",
+     "Ich frühstücke. Hm, lecker!",
+     "나는 아침을 먹어. 음, 맛있다!"
+    ],
+    [
+     "ben",
+     "Dann gehe ich in die Schule.",
+     "그다음에 나는 학교에 가."
+    ],
+    [
+     "lena",
+     "Am Nachmittag spiele ich.",
+     "오후에는 놀아."
+    ],
+    [
+     "sofi",
+     "Und am Abend?",
+     "그럼 저녁에는?"
+    ],
+    [
+     "ben",
+     "Am Abend putze ich meine Zähne.",
+     "저녁에는 이를 닦아."
+    ],
+    [
+     "lena",
+     "Dann gehe ich ins Bett. Gute Nacht!",
+     "그다음에 자러 가. 잘 자!"
+    ],
+    [
+     "sofi",
+     "Gute Nacht? Ich stehe jetzt auf! Ich bin eine Eule.",
+     "잘 자라고? 나는 지금 일어나! 나는 부엉이거든."
+    ]
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "k": "c1",
+   "de": "Ich stehe auf.",
+   "ko": "나는 일어나.",
+   "alt": "침대 옆에서 기지개를 켜는 아이"
+  },
+  {
+   "k": "c2",
+   "de": "Ich frühstücke.",
+   "ko": "나는 아침을 먹어.",
+   "alt": "식탁에서 아침을 먹는 아이"
+  },
+  {
+   "k": "c3",
+   "de": "Ich gehe in die Schule.",
+   "ko": "나는 학교에 가.",
+   "alt": "책가방을 메고 학교로 걸어가는 아이"
+  },
+  {
+   "k": "c4",
+   "de": "Ich spiele.",
+   "ko": "나는 놀아.",
+   "alt": "공을 가지고 노는 아이"
+  },
+  {
+   "k": "c5",
+   "de": "Ich putze meine Zähne.",
+   "ko": "나는 이를 닦아.",
+   "alt": "칫솔로 이를 닦는 아이"
+  },
+  {
+   "k": "c6",
+   "de": "Ich gehe ins Bett.",
+   "ko": "나는 자러 가.",
+   "alt": "침대에서 이불을 덮고 자는 아이"
+  }
+ ],
+ "hint": "[[Ich stehe auf.]]에서 [[auf]]는 문장 맨 끝에 와요. [[Dann]](그다음에)으로 시작하면 [[ich]]가 뒤로 가요: [[Dann frühstücke ich.]]",
+ "letter": [
+  "E e",
+  "E wie Eule"
+ ],
+ "trace": "Schule",
+ "frames": [
+  {
+   "de": "Ich {a}.",
+   "ko": "나는 {a}.",
+   "slots": [
+    "a"
+   ],
+   "models": [
+    [
+     "ben",
+     "Ich stehe auf."
+    ],
+    [
+     "lena",
+     "Ich gehe ins Bett."
+    ]
+   ]
+  }
+ ],
+ "opts": {
+  "a": [
+   [
+    "stehe auf",
+    "일어나"
+   ],
+   [
+    "frühstücke",
+    "아침을 먹어"
+   ],
+   [
+    "gehe in die Schule",
+    "학교에 가"
+   ],
+   [
+    "spiele",
+    "놀아"
+   ],
+   [
+    "putze meine Zähne",
+    "이를 닦아"
+   ],
+   [
+    "gehe ins Bett",
+    "자러 가"
+   ]
+  ]
+ },
+ "talk": [
+  {
+   "de": "Was machst du am Morgen?",
+   "ko": "아침에 뭐 해?",
+   "me": "Ich stehe auf. Dann frühstücke ich.",
+   "meko": "나는 일어나. 그다음에 아침을 먹어."
+  },
+  {
+   "de": "Und dann?",
+   "ko": "그다음에는?",
+   "pic": "c3",
+   "me": "Ich gehe in die Schule.",
+   "meko": "나는 학교에 가."
+  },
+  {
+   "de": "Was machst du am Abend?",
+   "ko": "저녁에 뭐 해?",
+   "me": "Ich putze meine Zähne. Dann gehe ich ins Bett.",
+   "meko": "나는 이를 닦아. 그다음에 자러 가."
+  }
+ ],
+ "reim": [
+  [
+   "<b>Mor</b>gens <b>steh</b> ich <b>fröh</b>lich <b>auf</b>,",
+   "아침마다 나는 신나게 일어나,",
+   "기지개를 켜요"
+  ],
+  [
+   "<b>in</b> die <b>Schu</b>le, <b>lauf</b>, lauf, <b>lauf</b>!",
+   "학교로 달려, 달려, 달려!",
+   "제자리에서 달려요"
+  ],
+  [
+   "<b>A</b>bends <b>putz</b> ich <b>mei</b>ne <b>Zäh</b>ne,",
+   "저녁마다 나는 이를 닦아,",
+   "이 닦는 흉내를 내요"
+  ],
+  [
+   "<b>gu</b>te <b>Nacht</b>! Ich <b>gäh</b>ne, <b>gäh</b>ne.",
+   "잘 자! 나는 하품해, 하품해.",
+   "하품하는 흉내를 내요"
+  ]
+ ],
+ "reimNote": "[[morgens]]는 ‘아침마다’, [[abends]]는 ‘저녁마다’라는 뜻이에요. [[gähnen]]은 ‘하품하다’예요.",
+ "todo": [
+  "아침에 일어나서 [[Ich stehe auf.]] 하고 말해요.",
+  "저녁에 이를 닦으며 [[Ich putze meine Zähne.]] 하고 말해요.",
+  "흐린 글자 위에 [[Schule]]를 따라 써요."
+ ],
+ "goals": [
+  "하루에 하는 일 말하기: [[Ich stehe auf. Ich gehe in die Schule.]]",
+  "차례 말하기: [[Dann frühstücke ich.]]",
+  "아침과 저녁 인사: [[Guten Morgen! Gute Nacht!]]",
+  "글자 [[E]]와 낱말 따라 쓰기: [[Eule, Schule]]"
+ ],
+ "sounds": [
+  "[[stehe]]의 [[st]]는 ‘슈트’에 가깝게 소리 냅니다. [[frühstücke]]의 [[ü]]는 입술을 둥글게 내밀고 ‘이’를 말하는 소리입니다.",
+  "[[Zähne]]의 [[ä]]는 ‘에’에 가깝고, [[Schule]]의 [[u]]는 길게 말합니다. [[Eule]]의 [[Eu]]는 ‘오이’입니다."
+ ],
+ "lesson": [
+  "몸으로 하루 보여 주기 5분: 교사가 [[Ich stehe auf.]], [[Ich putze meine Zähne.]]를 말하면 아이들이 동작으로 보여 줍니다.",
+  "이야기와 카드 15분: 1번과 2번 활동을 듣고, 카드 여섯 장을 하루 순서대로 늘어놓으며 따라 말합니다. 글자 [[E]]를 쓰고 [[E wie Eule]]를 말합니다.",
+  "나의 하루 말하기 10분: [[Ich …. Dann ….]] 틀로 두 문장을 이어 말합니다. 짝이 동작을 보고 문장을 맞힙니다.",
+  "따라 쓰기와 리듬 10분: [[Schule]]를 공책에 세 번 쓰고, 5번 리듬을 동작과 함께 합니다."
+ ],
+ "sticker": "c1"
+}

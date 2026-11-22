@@ -1,0 +1,75 @@
+{
+"aud": {
+"sofi|Ich fliege!": "s01",
+"sofi|Nein! Ich bin doch ein Vogel!": "s02",
+"sofi|der Bus": "s03",
+"sofi|das Auto": "s04",
+"sofi|das Fahrrad": "s05",
+"sofi|der Zug": "s06",
+"sofi|das Flugzeug": "s07",
+"sofi|das Schiff": "s08",
+"sofi|Au wie Auto": "s09",
+"sofi|Wie kommst du zur Schule?": "s10",
+"sofi|Was ist das?": "s11",
+"sofi|Fährst du mit dem Schiff?": "s12",
+"sofi|Brumm, brumm, brumm, da kommt der Bus,": "s13",
+"sofi|Mama, tschüss, noch einen Kuss!": "s14",
+"sofi|Mit dem Rad und mit dem Zug,": "s15",
+"sofi|mit dem Schiff, das ist genug!": "s16",
+"ben|Ich fahre mit dem Fahrrad.": "b01",
+"ben|Mit dem Flugzeug?": "b02",
+"ben|Tschüss! Bis morgen!": "b03",
+"lena|Ich fahre mit dem Bus.": "l01",
+"lena|Und du, Sofi?": "l02",
+"lena|Da kommt der Bus! Tschüss!": "l03",
+"lena|Ich gehe zu Fuß.": "l04"
+},
+"dur": {
+"s01": 1.35,
+"s02": 2.69,
+"s03": 0.93,
+"s04": 1.19,
+"s05": 1.24,
+"s06": 1.06,
+"s07": 1.33,
+"s08": 0.89,
+"s09": 1.53,
+"s10": 1.56,
+"s11": 1.28,
+"s12": 1.46,
+"s13": 3.01,
+"s14": 2.32,
+"s15": 2.32,
+"s16": 2.66,
+"b01": 1.69,
+"b02": 1.4,
+"b03": 1.61,
+"l01": 1.53,
+"l02": 1.52,
+"l03": 2.07,
+"l04": 1.36
+},
+"chant": {
+"beat": 0.78,
+"bar": 3.12,
+"marks": [
+[
+0.35,
+3.47
+],
+[
+6.59,
+9.71
+],
+[
+12.83,
+15.95
+],
+[
+19.07,
+22.19
+]
+],
+"sup": 25.46
+}
+}

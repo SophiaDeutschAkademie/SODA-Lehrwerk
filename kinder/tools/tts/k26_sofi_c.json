@@ -1,0 +1,44 @@
+{
+ "job": "k26_sofi_c",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   26,
+   "sofi",
+   "Wie spät ist es?"
+  ],
+  [
+   26,
+   "sofi",
+   "Wie spät ist es jetzt?"
+  ],
+  [
+   26,
+   "sofi",
+   "Wann gehst du ins Bett?"
+  ],
+  [
+   26,
+   "sofi",
+   "Tick, tack, tick, tack, macht die Uhr,"
+  ],
+  [
+   26,
+   "sofi",
+   "wie spät ist es? Sag es nur!"
+  ],
+  [
+   26,
+   "sofi",
+   "Es ist drei, jetzt spielen wir,"
+  ],
+  [
+   26,
+   "sofi",
+   "es ist acht, jetzt schlafen wir."
+  ]
+ ],
+ "script": "[happy] Wie spät ist es? [long pause] Wie spät ist es jetzt? [long pause] Wann gehst du ins Bett? [long pause] Tick, tack, tick, tack, macht die Uhr, [long pause] wie spät ist es? Sag es nur! [long pause] Es ist drei, jetzt spielen wir, [long pause] es ist acht, jetzt schlafen wir."
+}

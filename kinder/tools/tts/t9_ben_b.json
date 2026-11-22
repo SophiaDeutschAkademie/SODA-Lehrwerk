@@ -1,0 +1,44 @@
+{
+ "job": "t9_ben_b",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   35,
+   "ben",
+   "Schau mal, mein Stiefel!"
+  ],
+  [
+   35,
+   "ben",
+   "Nüsse, Mandarinen und Schokolade!"
+  ],
+  [
+   35,
+   "ben",
+   "Hm, die Schokolade ist lecker!"
+  ],
+  [
+   35,
+   "ben",
+   "Im Stiefel ist Schokolade."
+  ],
+  [
+   36,
+   "ben",
+   "Frohe Weihnachten, Sofi!"
+  ],
+  [
+   36,
+   "ben",
+   "Und hier sind Plätzchen. Hm, lecker!"
+  ],
+  [
+   36,
+   "ben",
+   "Juhu! Wir bauen einen Schneemann!"
+  ]
+ ],
+ "script": "[happy] Schau mal, mein Stiefel! [long pause] Nüsse, Mandarinen und Schokolade! [long pause] Hm, die Schokolade ist lecker! [long pause] Im Stiefel ist Schokolade. [long pause] Frohe Weihnachten, Sofi! [long pause] Und hier sind Plätzchen. Hm, lecker! [long pause] Juhu! Wir bauen einen Schneemann!"
+}

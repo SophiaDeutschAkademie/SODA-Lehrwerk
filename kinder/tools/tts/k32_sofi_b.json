@@ -1,0 +1,54 @@
+{
+ "job": "k32_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   32,
+   "sofi",
+   "Ü wie Überraschung"
+  ],
+  [
+   32,
+   "sofi",
+   "Ich habe heute Geburtstag!"
+  ],
+  [
+   32,
+   "sofi",
+   "Hast du ein Geschenk für mich?"
+  ],
+  [
+   32,
+   "sofi",
+   "Was ist das?"
+  ],
+  [
+   32,
+   "sofi",
+   "Heute, heute ist dein Tag,"
+  ],
+  [
+   32,
+   "sofi",
+   "weil ich dich so gerne mag."
+  ],
+  [
+   32,
+   "sofi",
+   "Kuchen, Kerzen und Gesang,"
+  ],
+  [
+   32,
+   "sofi",
+   "alles Gute, ein Jahr lang!"
+  ],
+  [
+   32,
+   "sofi",
+   "Herzlichen Glückwunsch! Du hast es geschafft!"
+  ]
+ ],
+ "script": "[happy] Ü wie Überraschung [long pause] Ich habe heute Geburtstag! [long pause] Hast du ein Geschenk für mich? [long pause] Was ist das? [long pause] Heute, heute ist dein Tag, [long pause] weil ich dich so gerne mag. [long pause] Kuchen, Kerzen und Gesang, [long pause] alles Gute, ein Jahr lang! [long pause] Herzlichen Glückwunsch! Du hast es geschafft!"
+}

@@ -1,0 +1,34 @@
+{
+ "job": "t8_ben_b",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   31,
+   "ben",
+   "Sofi, wann hast du Geburtstag?"
+  ],
+  [
+   31,
+   "ben",
+   "Toll! Zwei Kuchen!"
+  ],
+  [
+   32,
+   "ben",
+   "Alles Gute zum Geburtstag, Sofi!"
+  ],
+  [
+   32,
+   "ben",
+   "Und jetzt die Kerzen! Eins, zwei, drei!"
+  ],
+  [
+   32,
+   "ben",
+   "Alles Gute zum Geburtstag!"
+  ]
+ ],
+ "script": "[happy] Sofi, wann hast du Geburtstag? [long pause] Toll! Zwei Kuchen! [long pause] Alles Gute zum Geburtstag, Sofi! [long pause] Und jetzt die Kerzen! Eins, zwei, drei! [long pause] Alles Gute zum Geburtstag!"
+}

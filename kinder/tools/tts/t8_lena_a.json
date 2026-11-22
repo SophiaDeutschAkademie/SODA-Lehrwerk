@@ -1,0 +1,44 @@
+{
+ "job": "t8_lena_a",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   29,
+   "lena",
+   "Wie ist das Wetter?"
+  ],
+  [
+   29,
+   "lena",
+   "Ich habe einen Regenschirm."
+  ],
+  [
+   29,
+   "lena",
+   "Wie schön!"
+  ],
+  [
+   29,
+   "lena",
+   "Es regnet."
+  ],
+  [
+   30,
+   "lena",
+   "Schaut mal, ein Igel!"
+  ],
+  [
+   30,
+   "lena",
+   "Im Winter ist es kalt. Es schneit."
+  ],
+  [
+   30,
+   "lena",
+   "Und im Sommer ist es heiß. Ich esse Eis!"
+  ]
+ ],
+ "script": "[happy] Wie ist das Wetter? [long pause] Ich habe einen Regenschirm. [long pause] Wie schön! [long pause] Es regnet. [long pause] Schaut mal, ein Igel! [long pause] Im Winter ist es kalt. Es schneit. [long pause] Und im Sommer ist es heiß. Ich esse Eis!"
+}

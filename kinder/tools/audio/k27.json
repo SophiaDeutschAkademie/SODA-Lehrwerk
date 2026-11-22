@@ -1,0 +1,75 @@
+{
+"aud": {
+"sofi|Heute ist Montag.": "s01",
+"sofi|Und am Mittwoch?": "s02",
+"sofi|Ich lerne jeden Tag Deutsch. Du auch?": "s03",
+"sofi|Montag": "s04",
+"sofi|Dienstag": "s05",
+"sofi|Mittwoch": "s06",
+"sofi|Donnerstag": "s07",
+"sofi|Freitag": "s08",
+"sofi|Samstag": "s09",
+"sofi|Sonntag": "s10",
+"sofi|T wie Tag": "s11",
+"sofi|Welcher Tag ist heute?": "s12",
+"sofi|Was machst du am Samstag?": "s13",
+"sofi|Ist heute Sonntag?": "s14",
+"sofi|Montag, Dienstag, Mittwoch, ja,": "s15",
+"sofi|Donnerstag ist auch schon da.": "s16",
+"sofi|Freitag, Samstag, Sonntag, fein,": "s17",
+"sofi|so soll jede Woche sein!": "s18",
+"ben|Am Dienstag male ich.": "b01",
+"ben|Am Samstag und am Sonntag ist keine Schule!": "b02",
+"lena|Am Montag spiele ich Fußball.": "l01",
+"lena|Am Mittwoch singe ich.": "l02",
+"lena|Juhu, Wochenende!": "l03"
+},
+"dur": {
+"s01": 1.4,
+"s02": 1.18,
+"s03": 3.0,
+"s04": 0.98,
+"s05": 1.08,
+"s06": 1.04,
+"s07": 1.17,
+"s08": 1.17,
+"s09": 0.94,
+"s10": 1.05,
+"s11": 1.67,
+"s12": 1.63,
+"s13": 1.77,
+"s14": 1.53,
+"s15": 4.03,
+"s16": 1.7,
+"s17": 4.41,
+"s18": 1.92,
+"b01": 1.81,
+"b02": 3.05,
+"l01": 1.96,
+"l02": 1.5,
+"l03": 1.71
+},
+"chant": {
+"beat": 1.05,
+"bar": 4.2,
+"marks": [
+[
+0.35,
+4.55
+],
+[
+8.75,
+12.95
+],
+[
+17.15,
+21.35
+],
+[
+25.55,
+29.75
+]
+],
+"sup": 34.1
+}
+}

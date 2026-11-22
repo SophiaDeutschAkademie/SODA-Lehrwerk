@@ -1,0 +1,54 @@
+{
+ "job": "k32_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   32,
+   "sofi",
+   "Oh! Danke! Ein Kuchen!"
+  ],
+  [
+   32,
+   "sofi",
+   "Danke schön! Oh, ein Buch!"
+  ],
+  [
+   32,
+   "sofi",
+   "Geschafft! Jetzt essen wir Kuchen."
+  ],
+  [
+   32,
+   "sofi",
+   "der Kuchen"
+  ],
+  [
+   32,
+   "sofi",
+   "die Kerze"
+  ],
+  [
+   32,
+   "sofi",
+   "das Geschenk"
+  ],
+  [
+   32,
+   "sofi",
+   "der Ballon"
+  ],
+  [
+   32,
+   "sofi",
+   "die Karte"
+  ],
+  [
+   32,
+   "sofi",
+   "die Überraschung"
+  ]
+ ],
+ "script": "[happy] Oh! Danke! Ein Kuchen! [long pause] Danke schön! Oh, ein Buch! [long pause] Geschafft! Jetzt essen wir Kuchen. [long pause] der Kuchen [long pause] die Kerze [long pause] das Geschenk [long pause] der Ballon [long pause] die Karte [long pause] die Überraschung"
+}

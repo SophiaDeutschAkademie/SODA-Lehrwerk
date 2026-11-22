@@ -1,0 +1,54 @@
+{
+ "job": "k29_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   29,
+   "sofi",
+   "Die Sonne scheint. Es ist heiß."
+  ],
+  [
+   29,
+   "sofi",
+   "Oh, eine Wolke! Es regnet."
+  ],
+  [
+   29,
+   "sofi",
+   "Schaut mal, ein Regenbogen!"
+  ],
+  [
+   29,
+   "sofi",
+   "die Sonne"
+  ],
+  [
+   29,
+   "sofi",
+   "die Wolke"
+  ],
+  [
+   29,
+   "sofi",
+   "der Regen"
+  ],
+  [
+   29,
+   "sofi",
+   "der Wind"
+  ],
+  [
+   29,
+   "sofi",
+   "der Schnee"
+  ],
+  [
+   29,
+   "sofi",
+   "der Regenbogen"
+  ]
+ ],
+ "script": "[happy] Die Sonne scheint. Es ist heiß. [long pause] Oh, eine Wolke! Es regnet. [long pause] Schaut mal, ein Regenbogen! [long pause] die Sonne [long pause] die Wolke [long pause] der Regen [long pause] der Wind [long pause] der Schnee [long pause] der Regenbogen"
+}

@@ -1,0 +1,34 @@
+{
+ "job": "t7_ben_b",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   27,
+   "ben",
+   "Am Dienstag male ich."
+  ],
+  [
+   27,
+   "ben",
+   "Am Samstag und am Sonntag ist keine Schule!"
+  ],
+  [
+   28,
+   "ben",
+   "Ich fahre mit dem Fahrrad."
+  ],
+  [
+   28,
+   "ben",
+   "Mit dem Flugzeug?"
+  ],
+  [
+   28,
+   "ben",
+   "Tschüss! Bis morgen!"
+  ]
+ ],
+ "script": "[happy] Am Dienstag male ich. [long pause] Am Samstag und am Sonntag ist keine Schule! [long pause] Ich fahre mit dem Fahrrad. [long pause] Mit dem Flugzeug? [long pause] Tschüss! Bis morgen!"
+}

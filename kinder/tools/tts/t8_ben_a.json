@@ -1,0 +1,39 @@
+{
+ "job": "t8_ben_a",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   29,
+   "ben",
+   "Ich esse ein Eis!"
+  ],
+  [
+   29,
+   "ben",
+   "Oh nein, mein Eis ist nass!"
+  ],
+  [
+   29,
+   "ben",
+   "Es schneit."
+  ],
+  [
+   30,
+   "ben",
+   "Im Herbst ist es windig."
+  ],
+  [
+   30,
+   "ben",
+   "Im Frühling ist es warm."
+  ],
+  [
+   31,
+   "ben",
+   "Im Mai. Und du?"
+  ]
+ ],
+ "script": "[happy] Ich esse ein Eis! [long pause] Oh nein, mein Eis ist nass! [long pause] Es schneit. [long pause] Im Herbst ist es windig. [long pause] Im Frühling ist es warm. [long pause] Im Mai. Und du?"
+}

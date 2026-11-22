@@ -1,0 +1,49 @@
+{
+ "job": "k25_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   25,
+   "sofi",
+   "E wie Eule"
+  ],
+  [
+   25,
+   "sofi",
+   "Was machst du am Morgen?"
+  ],
+  [
+   25,
+   "sofi",
+   "Und dann?"
+  ],
+  [
+   25,
+   "sofi",
+   "Was machst du am Abend?"
+  ],
+  [
+   25,
+   "sofi",
+   "Morgens steh ich fröhlich auf,"
+  ],
+  [
+   25,
+   "sofi",
+   "in die Schule, lauf, lauf, lauf!"
+  ],
+  [
+   25,
+   "sofi",
+   "Abends putz ich meine Zähne,"
+  ],
+  [
+   25,
+   "sofi",
+   "gute Nacht! Ich gähne, gähne."
+  ]
+ ],
+ "script": "[happy] E wie Eule [long pause] Was machst du am Morgen? [long pause] Und dann? [long pause] Was machst du am Abend? [long pause] Morgens steh ich fröhlich auf, [long pause] in die Schule, lauf, lauf, lauf! [long pause] Abends putz ich meine Zähne, [long pause] gute Nacht! Ich gähne, gähne."
+}
