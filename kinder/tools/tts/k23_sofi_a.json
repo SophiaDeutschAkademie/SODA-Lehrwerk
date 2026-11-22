@@ -1,0 +1,44 @@
+{
+ "job": "k23_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   23,
+   "sofi",
+   "Ja, gern!"
+  ],
+  [
+   23,
+   "sofi",
+   "Juhu! Gewonnen!"
+  ],
+  [
+   23,
+   "sofi",
+   "Spielst du mit?"
+  ],
+  [
+   23,
+   "sofi",
+   "Nein, danke."
+  ],
+  [
+   23,
+   "sofi",
+   "Du bist dran!"
+  ],
+  [
+   23,
+   "sofi",
+   "Ich bin dran!"
+  ],
+  [
+   23,
+   "sofi",
+   "Gewonnen!"
+  ]
+ ],
+ "script": "[happy] Ja, gern! [long pause] Juhu! Gewonnen! [long pause] Spielst du mit? [long pause] Nein, danke. [long pause] Du bist dran! [long pause] Ich bin dran! [long pause] Gewonnen!"
+}

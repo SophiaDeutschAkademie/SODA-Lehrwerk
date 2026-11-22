@@ -1,0 +1,34 @@
+{
+ "job": "t6_lena_b",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   23,
+   "lena",
+   "Ja, gern! Was spielen wir?"
+  ],
+  [
+   23,
+   "lena",
+   "Sofi, spielst du auch mit?"
+  ],
+  [
+   23,
+   "lena",
+   "Sofi, du bist dran!"
+  ],
+  [
+   24,
+   "lena",
+   "Sofi, woher kommst du?"
+  ],
+  [
+   24,
+   "lena",
+   "Ich wohne auch in Berlin."
+  ]
+ ],
+ "script": "[happy] Ja, gern! Was spielen wir? [long pause] Sofi, spielst du auch mit? [long pause] Sofi, du bist dran! [long pause] Sofi, woher kommst du? [long pause] Ich wohne auch in Berlin."
+}

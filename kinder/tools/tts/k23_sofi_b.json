@@ -1,0 +1,39 @@
+{
+ "job": "k23_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   23,
+   "sofi",
+   "Sp wie Spiel"
+  ],
+  [
+   23,
+   "sofi",
+   "Was spielen wir?"
+  ],
+  [
+   23,
+   "sofi",
+   "Spielst du mit? Spielst du mit?"
+  ],
+  [
+   23,
+   "sofi",
+   "Ja, ich spiele gerne mit!"
+  ],
+  [
+   23,
+   "sofi",
+   "Ich bin dran und du bist dran,"
+  ],
+  [
+   23,
+   "sofi",
+   "jeder kommt hier einmal dran!"
+  ]
+ ],
+ "script": "[happy] Sp wie Spiel [long pause] Was spielen wir? [long pause] Spielst du mit? Spielst du mit? [long pause] Ja, ich spiele gerne mit! [long pause] Ich bin dran und du bist dran, [long pause] jeder kommt hier einmal dran!"
+}

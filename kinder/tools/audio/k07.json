@@ -1,0 +1,67 @@
+{
+"aud": {
+"sofi|Sofi sagt: Steh auf!": "s01",
+"sofi|Sofi sagt: Spring!": "s02",
+"sofi|Sofi sagt: Dreh dich!": "s03",
+"sofi|Setz dich!": "s04",
+"sofi|Stopp, Ben! Noch einmal!": "s05",
+"sofi|Steh auf!": "s06",
+"sofi|Komm her!": "s07",
+"sofi|Spring!": "s08",
+"sofi|Dreh dich!": "s09",
+"sofi|Stopp!": "s10",
+"sofi|K wie Komm!": "s11",
+"sofi|Jetzt du!": "s12",
+"sofi|Steh auf, steh auf, eins, zwei, drei!": "s13",
+"sofi|Spring, spring, spring – juchhei!": "s14",
+"sofi|Komm her, komm her, dreh dich um!": "s15",
+"sofi|Setz dich, setz dich – bumm, bumm, bumm!": "s16",
+"ben|Oh nein!": "b01",
+"ben|Okay! Noch einmal!": "b02",
+"lena|Juhu!": "l01"
+},
+"dur": {
+"s01": 2.35,
+"s02": 2.18,
+"s03": 2.31,
+"s04": 1.26,
+"s05": 2.14,
+"s06": 1.13,
+"s07": 0.86,
+"s08": 0.95,
+"s09": 0.99,
+"s10": 0.7,
+"s11": 1.72,
+"s12": 0.85,
+"s13": 3.68,
+"s14": 2.69,
+"s15": 2.49,
+"s16": 3.7,
+"b01": 1.14,
+"b02": 2.05,
+"l01": 0.8
+},
+"chant": {
+"beat": 0.92,
+"bar": 3.68,
+"marks": [
+[
+0.35,
+4.03
+],
+[
+7.71,
+11.39
+],
+[
+15.07,
+18.75
+],
+[
+22.43,
+26.11
+]
+],
+"sup": 29.94
+}
+}

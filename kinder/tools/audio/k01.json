@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Hallo!": "s01",
+"sofi|Guten Morgen!": "s02",
+"sofi|Guten Tag!": "s03",
+"sofi|Guten Abend!": "s04",
+"sofi|Gute Nacht!": "s05",
+"sofi|Tschüss!": "s06",
+"sofi|Guten Morgen! Ich bin Sofi.": "s07",
+"sofi|Tschüss! Bis bald!": "s08",
+"sofi|Hallo! Ich bin Sofi. Und du?": "s09",
+"sofi|Ich bin Sofi.": "s10",
+"sofi|Hallo, hallo! Ich bin da!": "s11",
+"sofi|Guten Morgen! Guten Tag!": "s12",
+"sofi|Guten Abend! Gute Nacht!": "s13",
+"sofi|Tschüss, tschüss, tschüss! Bis bald!": "s14",
+"lena|Hallo!": "l01",
+"lena|Ich bin Lena. Und du?": "l02",
+"lena|Guten Morgen, Sofi!": "l03",
+"lena|Tschüss, Ben!": "l04",
+"ben|Hallo!": "b01",
+"ben|Ich bin Ben.": "b02",
+"ben|Hallo, Sofi!": "b03",
+"ben|Tschüss, Lena! Tschüss, Sofi!": "b04"
+},
+"dur": {
+"s01": 0.84,
+"s02": 1.15,
+"s03": 1.13,
+"s04": 1.19,
+"s05": 1.12,
+"s06": 0.93,
+"s07": 2.62,
+"s08": 1.72,
+"s09": 2.94,
+"s10": 1.17,
+"s11": 2.06,
+"s12": 2.48,
+"s13": 2.11,
+"s14": 2.54,
+"l01": 0.69,
+"l02": 1.95,
+"l03": 1.79,
+"l04": 1.05,
+"b01": 0.73,
+"b02": 1.11,
+"b03": 1.06,
+"b04": 2.18
+},
+"chant": {
+"beat": 0.66,
+"bar": 2.64,
+"marks": [
+[
+0.35,
+2.99
+],
+[
+5.63,
+8.27
+],
+[
+10.91,
+13.55
+],
+[
+16.19,
+18.83
+]
+],
+"sup": 21.62
+}
+}

@@ -1,0 +1,39 @@
+{
+ "job": "t4_lena_a",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   13,
+   "lena",
+   "Ich mag Äpfel. Und du, Ben?"
+  ],
+  [
+   13,
+   "lena",
+   "Magst du Tomaten?"
+  ],
+  [
+   13,
+   "lena",
+   "Sofi mag alles!"
+  ],
+  [
+   14,
+   "lena",
+   "Guten Morgen! Mmh, Frühstück!"
+  ],
+  [
+   14,
+   "lena",
+   "Ich esse ein Ei."
+  ],
+  [
+   14,
+   "lena",
+   "Ich trinke Saft. Und du, Sofi?"
+  ]
+ ],
+ "script": "[happy] Ich mag Äpfel. Und du, Ben? [long pause] Magst du Tomaten? [long pause] Sofi mag alles! [long pause] Guten Morgen! Mmh, Frühstück! [long pause] Ich esse ein Ei. [long pause] Ich trinke Saft. Und du, Sofi?"
+}

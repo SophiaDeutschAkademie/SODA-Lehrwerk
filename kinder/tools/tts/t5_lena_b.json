@@ -1,0 +1,44 @@
+{
+ "job": "t5_lena_b",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   18,
+   "lena",
+   "Und wie macht die Eule?"
+  ],
+  [
+   19,
+   "lena",
+   "Schau mal, der Elefant! Er ist so groß!"
+  ],
+  [
+   19,
+   "lena",
+   "Der Affe ist lustig."
+  ],
+  [
+   19,
+   "lena",
+   "Der Affe hat deine Mütze!"
+  ],
+  [
+   20,
+   "lena",
+   "Der Frosch kann springen."
+  ],
+  [
+   20,
+   "lena",
+   "Der Fisch kann schwimmen. Kannst du schwimmen, Ben?"
+  ],
+  [
+   20,
+   "lena",
+   "Sofi, kannst du schwimmen?"
+  ]
+ ],
+ "script": "[happy] Und wie macht die Eule? [long pause] Schau mal, der Elefant! Er ist so groß! [long pause] Der Affe ist lustig. [long pause] Der Affe hat deine Mütze! [long pause] Der Frosch kann springen. [long pause] Der Fisch kann schwimmen. Kannst du schwimmen, Ben? [long pause] Sofi, kannst du schwimmen?"
+}

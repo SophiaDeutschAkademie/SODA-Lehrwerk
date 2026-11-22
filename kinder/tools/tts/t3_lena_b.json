@@ -1,0 +1,39 @@
+{
+ "job": "t3_lena_b",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   11,
+   "lena",
+   "Meine Jacke ist blau."
+  ],
+  [
+   11,
+   "lena",
+   "Ist deine Mütze rot?"
+  ],
+  [
+   12,
+   "lena",
+   "Wo ist Sofi?"
+  ],
+  [
+   12,
+   "lena",
+   "Nein."
+  ],
+  [
+   12,
+   "lena",
+   "Nein. Und im Garten? Auch nicht."
+  ],
+  [
+   12,
+   "lena",
+   "Pst! Sofi schläft."
+  ]
+ ],
+ "script": "[happy] Meine Jacke ist blau. [long pause] Ist deine Mütze rot? [long pause] Wo ist Sofi? [long pause] Nein. [long pause] Nein. Und im Garten? Auch nicht. [long pause] Pst! Sofi schläft."
+}

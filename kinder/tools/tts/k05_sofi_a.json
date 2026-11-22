@@ -1,0 +1,59 @@
+{
+ "job": "k05_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   5,
+   "sofi",
+   "Schaut mal! Ballons!"
+  ],
+  [
+   5,
+   "sofi",
+   "Was ist deine Lieblingsfarbe, Ben?"
+  ],
+  [
+   5,
+   "sofi",
+   "Hier, bitte! Der Ballon ist grün."
+  ],
+  [
+   5,
+   "sofi",
+   "rot"
+  ],
+  [
+   5,
+   "sofi",
+   "blau"
+  ],
+  [
+   5,
+   "sofi",
+   "gelb"
+  ],
+  [
+   5,
+   "sofi",
+   "grün"
+  ],
+  [
+   5,
+   "sofi",
+   "orange"
+  ],
+  [
+   5,
+   "sofi",
+   "lila"
+  ],
+  [
+   5,
+   "sofi",
+   "schwarz"
+  ]
+ ],
+ "script": "[happy] Schaut mal! Ballons! [long pause] Was ist deine Lieblingsfarbe, Ben? [long pause] Hier, bitte! Der Ballon ist grün. [long pause] rot [long pause] blau [long pause] gelb [long pause] grün [long pause] orange [long pause] lila [long pause] schwarz"
+}

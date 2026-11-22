@@ -1,0 +1,209 @@
+{
+"n": 2,
+"kind": "pic",
+"img": {
+"szene": "On a playground LENA waves happily and BEN holds up a small brown teddy bear with both hands to show it. The two children stand apart with clear white space between them.",
+"karten": [
+"a girl leaning forward with one open hand held out in a friendly asking gesture",
+"a boy pointing at himself with his thumb and smiling",
+"a girl pointing sideways at a teddy bear that sits on the ground, looking curious",
+"a boy holding up a teddy bear with both hands to show it",
+"a small round owl with slate gray feathers and an ivory face pointing one wing forward at the viewer",
+"two children shaking hands and smiling at each other"
+],
+"sofi": "hallo",
+"use": {
+"c5": "sofi_hallo"
+},
+"who": {
+"lena": [
+0.3,
+0.5
+],
+"ben": [
+0.71,
+0.5
+]
+}
+},
+"story": [
+{
+"pic": "szene",
+"alt": "놀이터에서 Lena가 손을 흔들고, Ben은 곰 인형을 들어 보여요. 울타리에 앉은 Sofi가 곰 인형을 봐요",
+"label": "놀이터에서",
+"lines": [
+[
+"sofi",
+"Hallo! Wie heißt du?",
+"안녕! 너는 이름이 뭐야?"
+],
+[
+"lena",
+"Ich heiße Lena.",
+"내 이름은 Lena야."
+],
+[
+"sofi",
+"Und du? Wie heißt du?",
+"너는? 이름이 뭐야?"
+],
+[
+"ben",
+"Ich heiße Ben.",
+"내 이름은 Ben이야."
+],
+[
+"sofi",
+"Wer ist das?",
+"얘는 누구야?"
+],
+[
+"ben",
+"Das ist Teddy.",
+"얘는 Teddy야."
+],
+[
+"sofi",
+"Hallo, Teddy! Freut mich!",
+"안녕, Teddy! 만나서 반가워!"
+],
+[
+"lena",
+"Teddy sagt: Freut mich auch!",
+"Teddy가 그러는데, 자기도 반갑대!"
+]
+]
+}
+],
+"cards": [
+{
+"k": "c1",
+"de": "Wie heißt du?",
+"ko": "이름이 뭐야?",
+"when": "이름을 물을 때",
+"alt": "한 손을 내밀며 이름을 묻는 아이"
+},
+{
+"k": "c2",
+"de": "Ich heiße …",
+"say": "Ich heiße Sofi.",
+"ko": "내 이름은 …",
+"when": "이름을 말할 때",
+"alt": "엄지로 자기를 가리키는 아이"
+},
+{
+"k": "c3",
+"de": "Wer ist das?",
+"ko": "얘는 누구야?",
+"when": "누구인지 물을 때",
+"alt": "바닥에 앉은 곰 인형을 가리키는 아이"
+},
+{
+"k": "c4",
+"de": "Das ist Teddy.",
+"ko": "얘는 Teddy야.",
+"when": "누구인지 알려 줄 때",
+"alt": "곰 인형을 두 손으로 들어 보이는 아이"
+},
+{
+"k": "c5",
+"de": "Und du?",
+"ko": "너는?",
+"when": "되물을 때",
+"alt": "날개로 앞을 가리키는 Sofi"
+},
+{
+"k": "c6",
+"de": "Freut mich!",
+"ko": "만나서 반가워!",
+"when": "처음 만났을 때",
+"alt": "악수하는 두 아이"
+}
+],
+"hint": "[[Ich bin Lena.]]와 [[Ich heiße Lena.]]는 뜻이 같아요. 이름을 물을 때는 [[Wie heißt du?]]라고 해요.",
+"frames": [
+{
+"de": "Ich heiße {name}.",
+"ko": "내 이름은 {name}{iya}.",
+"models": [
+[
+"sofi",
+"Ich heiße Sofi."
+],
+[
+"lena",
+"Ich heiße Lena."
+],
+[
+"ben",
+"Ich heiße Ben."
+]
+]
+}
+],
+"talk": [
+{
+"de": "Hallo! Wie heißt du?",
+"ko": "안녕! 너는 이름이 뭐야?",
+"me": "Ich heiße {name}.",
+"meko": "내 이름은 {name}{iya}."
+},
+{
+"de": "Wer ist das?",
+"ko": "얘는 누구야?",
+"pic": "c4",
+"me": "Das ist Teddy.",
+"meko": "얘는 Teddy야."
+},
+{
+"de": "Freut mich!",
+"ko": "만나서 반가워!",
+"me": "Freut mich auch!",
+"meko": "나도 반가워!"
+}
+],
+"reim": [
+[
+"<b>Wie</b> heißt <b>du</b>? <b>Wie</b> heißt <b>du</b>?",
+"이름이 뭐야? 이름이 뭐야?",
+"옆 친구를 손바닥으로 가리켜요"
+],
+[
+"<b>Ich</b> heiße <b>Le</b>na. <b>Und</b> <b>du</b>?",
+"나는 Lena야. 너는?",
+"가슴에 손을 댔다가 친구를 가리켜요"
+],
+[
+"<b>Wer</b> ist <b>das</b>? <b>Wer</b> ist <b>das</b>?",
+"얘는 누구야? 얘는 누구야?",
+"손을 눈썹 위에 대고 두리번거려요"
+],
+[
+"<b>Das</b> ist <b>Ben</b>! <b>Freut</b> mich <b>sehr</b>!",
+"얘는 Ben이야! 정말 반가워!",
+"친구와 악수해요"
+]
+],
+"reimNote": "[[Freut mich sehr!]]는 [[Freut mich!]]보다 더 반갑다는 말이에요.",
+"todo": [
+"가족에게 [[Wie heißt du?]] 하고 물어요. 가족은 [[Ich heiße …]]로 대답해요.",
+"좋아하는 인형을 들고 [[Das ist …]] 하고 소개해요.",
+"거울을 보고 [[Ich heiße …]]를 세 번 말해요."
+],
+"goals": [
+"이름 묻고 답하기: [[Wie heißt du? – Ich heiße …]]",
+"다른 사람이나 인형 소개하기: [[Wer ist das? – Das ist …]]",
+"반가움 나타내기: [[Freut mich!]]"
+],
+"sounds": [
+"[[heißt]]의 [[ei]]는 ‘아이’ 소리입니다. [[ß]]는 된소리가 아닌 맑은 ‘ㅅ’ 소리입니다.",
+"[[Wie]], [[Wer]]의 [[w]]는 윗니를 아랫입술에 살짝 대고 내는 소리로, 영어 v와 같습니다. [[Freut]]의 [[eu]]는 ‘오이’ 소리입니다."
+],
+"lesson": [
+"이름 공 5분: 공을 굴리며 [[Wie heißt du?]] 하고 묻고, 공을 받은 아이가 [[Ich heiße …]]로 답합니다.",
+"이야기와 카드 15분: 1번과 2번 활동을 함께 듣고, 교사가 카드를 들면 아이들이 그 말을 외칩니다.",
+"인형 소개 10분: 각자 가져온 인형이나 필통을 들고 [[Das ist …]]로 소개합니다. 듣는 아이들은 [[Freut mich!]] 하고 답합니다.",
+"손뼉 리듬 10분: 5번 리듬에서 [[Lena]]와 [[Ben]] 자리에 반 친구 이름을 넣어 돌아가며 합니다."
+],
+"sticker": "c6"
+}

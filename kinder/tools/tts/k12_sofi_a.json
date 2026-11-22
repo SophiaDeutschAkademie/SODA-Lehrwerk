@@ -1,0 +1,44 @@
+{
+ "job": "k12_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   12,
+   "sofi",
+   "das Haus"
+  ],
+  [
+   12,
+   "sofi",
+   "die Küche"
+  ],
+  [
+   12,
+   "sofi",
+   "das Bad"
+  ],
+  [
+   12,
+   "sofi",
+   "das Zimmer"
+  ],
+  [
+   12,
+   "sofi",
+   "das Bett"
+  ],
+  [
+   12,
+   "sofi",
+   "der Garten"
+  ],
+  [
+   12,
+   "sofi",
+   "G wie Garten"
+  ]
+ ],
+ "script": "[happy] das Haus [long pause] die Küche [long pause] das Bad [long pause] das Zimmer [long pause] das Bett [long pause] der Garten [long pause] G wie Garten"
+}

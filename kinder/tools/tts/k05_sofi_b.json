@@ -1,0 +1,54 @@
+{
+ "job": "k05_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   5,
+   "sofi",
+   "weiß"
+  ],
+  [
+   5,
+   "sofi",
+   "B wie Ballon"
+  ],
+  [
+   5,
+   "sofi",
+   "Ist der Ballon rot?"
+  ],
+  [
+   5,
+   "sofi",
+   "Ist der Ballon gelb?"
+  ],
+  [
+   5,
+   "sofi",
+   "Was ist deine Lieblingsfarbe?"
+  ],
+  [
+   5,
+   "sofi",
+   "Rot, blau, gelb, grün,"
+  ],
+  [
+   5,
+   "sofi",
+   "alle Farben sind so schön!"
+  ],
+  [
+   5,
+   "sofi",
+   "Schwarz und weiß, lila, orange,"
+  ],
+  [
+   5,
+   "sofi",
+   "meine Welt ist kunterbunt!"
+  ]
+ ],
+ "script": "[happy] weiß [long pause] B wie Ballon [long pause] Ist der Ballon rot? [long pause] Ist der Ballon gelb? [long pause] Was ist deine Lieblingsfarbe? [long pause] Rot, blau, gelb, grün, [long pause] alle Farben sind so schön! [long pause] Schwarz und weiß, lila, orange, [long pause] meine Welt ist kunterbunt!"
+}

@@ -1,0 +1,49 @@
+{
+ "job": "k06_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   6,
+   "sofi",
+   "die Brotdose"
+  ],
+  [
+   6,
+   "sofi",
+   "H wie Heft"
+  ],
+  [
+   6,
+   "sofi",
+   "Ist das ein Stift?"
+  ],
+  [
+   6,
+   "sofi",
+   "Ist das ein Kleber?"
+  ],
+  [
+   6,
+   "sofi",
+   "Was ist das? Was ist das?"
+  ],
+  [
+   6,
+   "sofi",
+   "Das ist ein Stift, das ist ein Heft."
+  ],
+  [
+   6,
+   "sofi",
+   "Buch und Schere, Kleber auch,"
+  ],
+  [
+   6,
+   "sofi",
+   "alles in den Ranzen rein!"
+  ]
+ ],
+ "script": "[happy] die Brotdose [long pause] H wie Heft [long pause] Ist das ein Stift? [long pause] Ist das ein Kleber? [long pause] Was ist das? Was ist das? [long pause] Das ist ein Stift, das ist ein Heft. [long pause] Buch und Schere, Kleber auch, [long pause] alles in den Ranzen rein!"
+}

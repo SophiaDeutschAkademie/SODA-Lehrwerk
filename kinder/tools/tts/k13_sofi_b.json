@@ -1,0 +1,49 @@
+{
+ "job": "k13_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   13,
+   "sofi",
+   "A wie Apfel"
+  ],
+  [
+   13,
+   "sofi",
+   "Magst du Äpfel?"
+  ],
+  [
+   13,
+   "sofi",
+   "Magst du Tomaten?"
+  ],
+  [
+   13,
+   "sofi",
+   "Was magst du?"
+  ],
+  [
+   13,
+   "sofi",
+   "Apfel, Apfel, lecker, lecker!"
+  ],
+  [
+   13,
+   "sofi",
+   "Ich mag Obst, das ist gesund!"
+  ],
+  [
+   13,
+   "sofi",
+   "Banane, Tomate, Gurke – bunt,"
+  ],
+  [
+   13,
+   "sofi",
+   "alles in den kleinen Mund!"
+  ]
+ ],
+ "script": "[happy] A wie Apfel [long pause] Magst du Äpfel? [long pause] Magst du Tomaten? [long pause] Was magst du? [long pause] Apfel, Apfel, lecker, lecker! [long pause] Ich mag Obst, das ist gesund! [long pause] Banane, Tomate, Gurke – bunt, [long pause] alles in den kleinen Mund!"
+}

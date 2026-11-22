@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Willkommen auf dem Bauernhof!": "s01",
+"sofi|Die Eule macht: Uhu! Uhu!": "s02",
+"sofi|die Kuh": "s03",
+"sofi|das Schwein": "s04",
+"sofi|das Schaf": "s05",
+"sofi|das Huhn": "s06",
+"sofi|das Pferd": "s07",
+"sofi|die Ente": "s08",
+"sofi|Sch wie Schaf": "s09",
+"sofi|Wie macht die Kuh?": "s10",
+"sofi|Wie macht die Ente?": "s11",
+"sofi|Wie macht das Schwein?": "s12",
+"sofi|Muh, muh, muh, so macht die Kuh.": "s13",
+"sofi|Mäh, mäh, mäh, das Schaf hört zu.": "s14",
+"sofi|Quak, quak, quak, die Ente lacht,": "s15",
+"sofi|und das Schwein sagt: Gute Nacht!": "s16",
+"ben|Wie macht die Kuh?": "b01",
+"ben|Und wie macht das Schaf?": "b02",
+"lena|Schau mal, eine Kuh!": "l01",
+"lena|Die Kuh macht: Muh!": "l02",
+"lena|Das Schaf macht: Mäh!": "l03",
+"lena|Und wie macht die Eule?": "l04"
+},
+"dur": {
+"s01": 2.0,
+"s02": 4.2,
+"s03": 0.84,
+"s04": 1.11,
+"s05": 1.16,
+"s06": 1.01,
+"s07": 1.11,
+"s08": 0.82,
+"s09": 1.92,
+"s10": 1.57,
+"s11": 1.58,
+"s12": 1.54,
+"s13": 4.8,
+"s14": 4.14,
+"s15": 4.01,
+"s16": 2.66,
+"b01": 1.26,
+"b02": 1.68,
+"l01": 1.63,
+"l02": 1.67,
+"l03": 1.82,
+"l04": 1.54
+},
+"chant": {
+"beat": 1.19,
+"bar": 4.76,
+"marks": [
+[
+0.35,
+5.11
+],
+[
+9.87,
+14.63
+],
+[
+19.39,
+24.15
+],
+[
+28.91,
+33.67
+]
+],
+"sup": 38.58
+}
+}

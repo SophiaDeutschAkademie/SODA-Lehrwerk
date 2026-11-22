@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Schaut mal, ein Frosch!": "s01",
+"sofi|Nein, ich kann nicht schwimmen.": "s02",
+"sofi|Aber ich kann fliegen! Tschüss!": "s03",
+"sofi|springen": "s04",
+"sofi|fliegen": "s05",
+"sofi|schwimmen": "s06",
+"sofi|laufen": "s07",
+"sofi|klettern": "s08",
+"sofi|tanzen": "s09",
+"sofi|F wie Frosch": "s10",
+"sofi|Kannst du springen?": "s11",
+"sofi|Kannst du fliegen?": "s12",
+"sofi|Was kannst du?": "s13",
+"sofi|Springen kann der kleine Frosch,": "s14",
+"sofi|schwimmen kann der Fisch im Meer,": "s15",
+"sofi|klettern kann der Affe gut,": "s16",
+"sofi|und ich tanze wie ein Bär!": "s17",
+"ben|Ich kann auch springen! Hopp!": "b01",
+"ben|Ja, ich kann schwimmen.": "b02",
+"lena|Der Frosch kann springen.": "l01",
+"lena|Der Fisch kann schwimmen. Kannst du schwimmen, Ben?": "l02",
+"lena|Sofi, kannst du schwimmen?": "l03"
+},
+"dur": {
+"s01": 2.31,
+"s02": 1.91,
+"s03": 2.6,
+"s04": 0.86,
+"s05": 0.9,
+"s06": 0.85,
+"s07": 0.91,
+"s08": 0.82,
+"s09": 0.81,
+"s10": 1.52,
+"s11": 1.17,
+"s12": 1.35,
+"s13": 1.18,
+"s14": 1.98,
+"s15": 2.01,
+"s16": 1.67,
+"s17": 1.88,
+"b01": 1.96,
+"b02": 1.45,
+"l01": 1.7,
+"l02": 3.62,
+"l03": 2.09
+},
+"chant": {
+"beat": 0.66,
+"bar": 2.64,
+"marks": [
+[
+0.35,
+2.99
+],
+[
+5.63,
+8.27
+],
+[
+10.91,
+13.55
+],
+[
+16.19,
+18.83
+]
+],
+"sup": 21.62
+}
+}

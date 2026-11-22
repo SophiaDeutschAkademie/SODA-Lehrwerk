@@ -1,0 +1,44 @@
+{
+ "job": "k17_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   17,
+   "sofi",
+   "Hast du ein Tier?"
+  ],
+  [
+   17,
+   "sofi",
+   "Was ist das?"
+  ],
+  [
+   17,
+   "sofi",
+   "Ist das eine Maus?"
+  ],
+  [
+   17,
+   "sofi",
+   "Hund und Katze, Maus und Fisch,"
+  ],
+  [
+   17,
+   "sofi",
+   "alle sitzen an dem Tisch."
+  ],
+  [
+   17,
+   "sofi",
+   "Wau, wau, wau und miau, miau,"
+  ],
+  [
+   17,
+   "sofi",
+   "das ist mein Zuhause, schau!"
+  ]
+ ],
+ "script": "[happy] Hast du ein Tier? [long pause] Was ist das? [long pause] Ist das eine Maus? [long pause] Hund und Katze, Maus und Fisch, [long pause] alle sitzen an dem Tisch. [long pause] Wau, wau, wau und miau, miau, [long pause] das ist mein Zuhause, schau!"
+}

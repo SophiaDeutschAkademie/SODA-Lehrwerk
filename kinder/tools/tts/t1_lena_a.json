@@ -1,0 +1,44 @@
+{
+ "job": "t1_lena_a",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   2,
+   "lena",
+   "Ich heiße Lena."
+  ],
+  [
+   2,
+   "lena",
+   "Teddy sagt: Freut mich auch!"
+  ],
+  [
+   3,
+   "lena",
+   "Hallo, Ben! Wie geht’s?"
+  ],
+  [
+   3,
+   "lena",
+   "Super!"
+  ],
+  [
+   3,
+   "lena",
+   "Hallo, Sofi! Wie geht’s?"
+  ],
+  [
+   4,
+   "lena",
+   "Hier bin ich!"
+  ],
+  [
+   4,
+   "lena",
+   "Ich bin acht."
+  ]
+ ],
+ "script": "[happy] Ich heiße Lena. [long pause] Teddy sagt: Freut mich auch! [long pause] Hallo, Ben! Wie geht’s? [long pause] Super! [long pause] Hallo, Sofi! Wie geht’s? [long pause] Hier bin ich! [long pause] Ich bin acht."
+}

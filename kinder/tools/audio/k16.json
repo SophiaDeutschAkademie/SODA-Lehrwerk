@@ -1,0 +1,71 @@
+{
+"aud": {
+"sofi|Guten Tag! Was möchtest du?": "s01",
+"sofi|Hier, bitte! Zwei Äpfel.": "s02",
+"sofi|Eins, zwei, drei. Bitte schön!": "s03",
+"sofi|Fünf Euro, bitte.": "s04",
+"sofi|Danke! Auf Wiedersehen!": "s05",
+"sofi|die Birne": "s06",
+"sofi|die Orange": "s07",
+"sofi|die Kartoffel": "s08",
+"sofi|der Salat": "s09",
+"sofi|das Geld": "s10",
+"sofi|der Korb": "s11",
+"sofi|S wie Salat": "s12",
+"sofi|Hier, bitte!": "s13",
+"sofi|Auf dem Markt, auf dem Markt": "s14",
+"sofi|kauf ich ein, kauf ich ein:": "s15",
+"sofi|Zwei Äpfel, drei Birnen,": "s16",
+"sofi|alles in den Korb hinein!": "s17",
+"ben|Und drei Birnen, bitte!": "b01",
+"lena|Guten Tag! Zwei Äpfel, bitte.": "l01",
+"lena|Was kostet das?": "l02",
+"lena|Hier, bitte. Auf Wiedersehen!": "l03"
+},
+"dur": {
+"s01": 2.16,
+"s02": 1.89,
+"s03": 3.3,
+"s04": 1.21,
+"s05": 1.64,
+"s06": 0.93,
+"s07": 1.08,
+"s08": 1.02,
+"s09": 0.89,
+"s10": 1.43,
+"s11": 1.2,
+"s12": 2.24,
+"s13": 1.31,
+"s14": 3.29,
+"s15": 3.63,
+"s16": 2.93,
+"s17": 2.08,
+"b01": 1.96,
+"l01": 2.27,
+"l02": 1.27,
+"l03": 2.04
+},
+"chant": {
+"beat": 0.9,
+"bar": 3.6,
+"marks": [
+[
+0.35,
+3.95
+],
+[
+7.55,
+11.15
+],
+[
+14.75,
+18.35
+],
+[
+21.95,
+25.55
+]
+],
+"sup": 29.3
+}
+}

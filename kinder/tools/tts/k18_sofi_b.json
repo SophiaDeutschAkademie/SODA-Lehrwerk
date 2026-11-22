@@ -1,0 +1,49 @@
+{
+ "job": "k18_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   18,
+   "sofi",
+   "Sch wie Schaf"
+  ],
+  [
+   18,
+   "sofi",
+   "Wie macht die Kuh?"
+  ],
+  [
+   18,
+   "sofi",
+   "Wie macht die Ente?"
+  ],
+  [
+   18,
+   "sofi",
+   "Wie macht das Schwein?"
+  ],
+  [
+   18,
+   "sofi",
+   "Muh, muh, muh, so macht die Kuh."
+  ],
+  [
+   18,
+   "sofi",
+   "Mäh, mäh, mäh, das Schaf hört zu."
+  ],
+  [
+   18,
+   "sofi",
+   "Quak, quak, quak, die Ente lacht,"
+  ],
+  [
+   18,
+   "sofi",
+   "und das Schwein sagt: Gute Nacht!"
+  ]
+ ],
+ "script": "[happy] Sch wie Schaf [long pause] Wie macht die Kuh? [long pause] Wie macht die Ente? [long pause] Wie macht das Schwein? [long pause] Muh, muh, muh, so macht die Kuh. [long pause] Mäh, mäh, mäh, das Schaf hört zu. [long pause] Quak, quak, quak, die Ente lacht, [long pause] und das Schwein sagt: Gute Nacht!"
+}

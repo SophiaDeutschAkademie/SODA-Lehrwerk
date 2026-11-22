@@ -1,0 +1,54 @@
+{
+ "job": "k16_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   16,
+   "sofi",
+   "Guten Tag! Was möchtest du?"
+  ],
+  [
+   16,
+   "sofi",
+   "Hier, bitte! Zwei Äpfel."
+  ],
+  [
+   16,
+   "sofi",
+   "Eins, zwei, drei. Bitte schön!"
+  ],
+  [
+   16,
+   "sofi",
+   "Fünf Euro, bitte."
+  ],
+  [
+   16,
+   "sofi",
+   "Danke! Auf Wiedersehen!"
+  ],
+  [
+   16,
+   "sofi",
+   "die Birne"
+  ],
+  [
+   16,
+   "sofi",
+   "die Orange"
+  ],
+  [
+   16,
+   "sofi",
+   "die Kartoffel"
+  ],
+  [
+   16,
+   "sofi",
+   "der Salat"
+  ]
+ ],
+ "script": "[happy] Guten Tag! Was möchtest du? [long pause] Hier, bitte! Zwei Äpfel. [long pause] Eins, zwei, drei. Bitte schön! [long pause] Fünf Euro, bitte. [long pause] Danke! Auf Wiedersehen! [long pause] die Birne [long pause] die Orange [long pause] die Kartoffel [long pause] der Salat"
+}

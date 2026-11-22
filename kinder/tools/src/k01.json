@@ -1,0 +1,229 @@
+{
+"n": 1,
+"kind": "pic",
+"story": [
+{
+"pic": "szene",
+"alt": "학교 앞에서 Lena와 Ben이 만나 손을 흔들고, 나뭇가지 위에서 부엉이 Sofi가 날개를 들어 인사해요",
+"label": "아침, 학교 가는 길",
+"lines": [
+[
+"lena",
+"Hallo!",
+"안녕!"
+],
+[
+"ben",
+"Hallo!",
+"안녕!"
+],
+[
+"lena",
+"Ich bin Lena. Und du?",
+"나는 Lena야. 너는?"
+],
+[
+"ben",
+"Ich bin Ben.",
+"나는 Ben이야."
+],
+[
+"sofi",
+"Guten Morgen! Ich bin Sofi.",
+"좋은 아침! 나는 Sofi야."
+],
+[
+"lena",
+"Guten Morgen, Sofi!",
+"좋은 아침, Sofi!"
+],
+[
+"ben",
+"Hallo, Sofi!",
+"안녕, Sofi!"
+]
+]
+},
+{
+"pic": "szene2",
+"alt": "버스에 탄 아이와 정류장에 선 아이가 서로 손을 흔들어요",
+"label": "집에 가는 길",
+"lines": [
+[
+"lena",
+"Tschüss, Ben!",
+"잘 가, Ben!"
+],
+[
+"ben",
+"Tschüss, Lena! Tschüss, Sofi!",
+"잘 가, Lena! 잘 있어, Sofi!"
+],
+[
+"sofi",
+"Tschüss! Bis bald!",
+"잘 가! 곧 또 만나!"
+]
+]
+}
+],
+"cards": [
+{
+"k": "c1",
+"de": "Hallo!",
+"ko": "안녕!",
+"when": "친구를 만날 때",
+"alt": "놀이터에서 만난 두 아이가 손을 흔들어요"
+},
+{
+"k": "c2",
+"de": "Guten Morgen!",
+"ko": "좋은 아침!",
+"when": "아침에",
+"alt": "해가 뜨는 아침, 아이가 침대에서 기지개를 켜요"
+},
+{
+"k": "c3",
+"de": "Guten Tag!",
+"ko": "안녕하세요!",
+"when": "낮에, 어른께",
+"alt": "해가 높이 뜬 낮, 아이가 꽃에 물을 주는 할머니께 인사해요"
+},
+{
+"k": "c4",
+"de": "Guten Abend!",
+"ko": "안녕하세요!",
+"when": "저녁에",
+"alt": "해가 지고 가로등이 켜진 저녁, 아이가 문 앞에서 할아버지를 맞이해요"
+},
+{
+"k": "c5",
+"de": "Gute Nacht!",
+"ko": "잘 자요!",
+"when": "자러 갈 때",
+"alt": "달과 별이 뜬 밤, 아이가 곰 인형을 안고 침대에 누워 있어요"
+},
+{
+"k": "c6",
+"de": "Tschüss!",
+"ko": "잘 가!",
+"when": "헤어질 때",
+"alt": "버스에 탄 아이와 정류장에 선 아이가 서로 손을 흔들어요"
+}
+],
+"hint": "[[Guten Tag!]]은 낮에 어른께 드리는 인사예요. 친구에게는 [[Hallo!]]라고 해요.",
+"frames": [
+{
+"de": "Ich bin {name}.",
+"ko": "나는 {name}{iya}.",
+"models": [
+[
+"sofi",
+"Ich bin Sofi."
+],
+[
+"lena",
+"Ich bin Lena. Und du?"
+],
+[
+"ben",
+"Ich bin Ben."
+]
+]
+}
+],
+"talk": [
+{
+"de": "Hallo! Ich bin Sofi. Und du?",
+"ko": "안녕! 나는 Sofi야. 너는?",
+"me": "Hallo! Ich bin {name}.",
+"meko": "안녕! 나는 {name}{iya}."
+},
+{
+"de": "Guten Morgen!",
+"ko": "좋은 아침!",
+"me": "Guten Morgen, Sofi!",
+"meko": "좋은 아침, Sofi!"
+},
+{
+"de": "Tschüss! Bis bald!",
+"ko": "잘 가! 곧 또 만나!",
+"me": "Tschüss, Sofi!",
+"meko": "잘 가, Sofi!"
+}
+],
+"reim": [
+[
+"<b>Hal</b>lo, <b>hal</b>lo! <b>Ich</b> bin <b>da</b>!",
+"안녕, 안녕! 나 왔어!",
+"두 손을 흔들어요"
+],
+[
+"<b>Gu</b>ten <b>Mor</b>gen! <b>Gu</b>ten <b>Tag</b>!",
+"좋은 아침! 안녕하세요!",
+"두 팔을 쭉 뻗어 기지개를 켜요"
+],
+[
+"<b>Gu</b>ten <b>A</b>bend! <b>Gu</b>te <b>Nacht</b>!",
+"좋은 저녁! 잘 자요!",
+"두 손을 모아 뺨에 대요"
+],
+[
+"<b>Tschüss</b>, <b>tschüss</b>, <b>tschüss</b>! Bis <b>bald</b>!",
+"잘 가, 잘 가, 잘 가! 곧 또 만나!",
+"손을 흔들며 뒤로 걸어요"
+]
+],
+"reimNote": "[[Ich bin da!]]는 “나 왔어!”, [[Bis bald!]]는 “곧 또 만나!”라는 뜻이에요.",
+"todo": [
+"오늘 자기 전에 가족에게 [[Gute Nacht!]] 하고 말해요.",
+"내일 아침에 가족에게 [[Guten Morgen!]] 하고 말해요.",
+"종이에 Sofi를 그려 나무젓가락에 붙여요. 막대 인형을 들고 [[Hallo! Ich bin Sofi.]] 놀이를 해요."
+],
+"goals": [
+"만날 때와 헤어질 때 인사하기: [[Hallo! Tschüss!]]",
+"때에 맞게 인사하기: [[Guten Morgen! Guten Tag! Guten Abend! Gute Nacht!]]",
+"내 이름 말하기: [[Ich bin …]]"
+],
+"sounds": [
+"[[ich]]의 [[ch]]는 ‘이크’도 ‘이쉬’도 아닙니다. 혀 가운데를 입천장 가까이 올리고 ‘히’ 하듯 바람만 내보냅니다.",
+"[[Tschüss]]의 [[ü]]는 입술을 ‘우’처럼 둥글게 모으고 혀는 ‘이’ 자리에 둡니다.",
+"[[Sofi]]와 [[super]]의 [[s]]는 모음 앞에서 영어 z처럼 울리는 소리입니다. 그래서 [[Sofi]]는 ‘조피’에 가깝게 들립니다."
+],
+"lesson": [
+"인사 원 5분: 둥글게 앉아 공을 굴리며 [[Hallo! Ich bin …]]를 말합니다.",
+"이야기와 카드 15분: 1번과 2번 활동을 함께 듣고, 교사가 카드를 들면 아이들이 그 인사를 외칩니다.",
+"놀이 10분: 4번 놀이를 모둠 대항으로 합니다. 교사가 아침, 낮, 저녁, 밤을 몸짓으로 보여 주어도 좋습니다.",
+"손뼉 리듬과 마무리 10분: 5번 리듬을 동작과 함께 두 번 하고, [[Tschüss! Bis bald!]]로 헤어집니다."
+],
+"sticker": "c1",
+"img": {
+"who": {
+"lena": [
+0.3,
+0.62
+],
+"ben": [
+0.62,
+0.62
+],
+"sofi": [
+0.5,
+0.2
+]
+},
+"szene2": {
+"who": {
+"lena": [
+0.35,
+0.45
+],
+"ben": [
+0.7,
+0.6
+]
+},
+"sofi": "hallo"
+}
+}
+}

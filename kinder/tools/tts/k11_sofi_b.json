@@ -1,0 +1,44 @@
+{
+ "job": "k11_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   11,
+   "sofi",
+   "Ist deine Hose blau?"
+  ],
+  [
+   11,
+   "sofi",
+   "Was ist das?"
+  ],
+  [
+   11,
+   "sofi",
+   "Ist dein Pulli grün?"
+  ],
+  [
+   11,
+   "sofi",
+   "Hose, Pulli, Jacke, Schuh,"
+  ],
+  [
+   11,
+   "sofi",
+   "Mütze auf und Tür jetzt zu!"
+  ],
+  [
+   11,
+   "sofi",
+   "Rot und blau und gelb und grün,"
+  ],
+  [
+   11,
+   "sofi",
+   "alle Sachen sind so schön!"
+  ]
+ ],
+ "script": "[happy] Ist deine Hose blau? [long pause] Was ist das? [long pause] Ist dein Pulli grün? [long pause] Hose, Pulli, Jacke, Schuh, [long pause] Mütze auf und Tür jetzt zu! [long pause] Rot und blau und gelb und grün, [long pause] alle Sachen sind so schön!"
+}

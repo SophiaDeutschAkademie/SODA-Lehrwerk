@@ -1,0 +1,49 @@
+{
+ "job": "k03_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   3,
+   "sofi",
+   "Mir geht’s gut."
+  ],
+  [
+   3,
+   "sofi",
+   "Hallo! Wie geht’s?"
+  ],
+  [
+   3,
+   "sofi",
+   "Ich bin müde. Und du?"
+  ],
+  [
+   3,
+   "sofi",
+   "Gute Nacht!"
+  ],
+  [
+   3,
+   "sofi",
+   "Wie geht’s, wie geht’s, wie geht’s dir?"
+  ],
+  [
+   3,
+   "sofi",
+   "Gut, gut, super gut!"
+  ],
+  [
+   3,
+   "sofi",
+   "So lala? Nicht so gut?"
+  ],
+  [
+   3,
+   "sofi",
+   "Ich bin müde. Gute Nacht!"
+  ]
+ ],
+ "script": "[happy] Mir geht’s gut. [long pause] Hallo! Wie geht’s? [long pause] Ich bin müde. Und du? [long pause] Gute Nacht! [long pause] Wie geht’s, wie geht’s, wie geht’s dir? [long pause] Gut, gut, super gut! [long pause] So lala? Nicht so gut? [long pause] Ich bin müde. Gute Nacht!"
+}

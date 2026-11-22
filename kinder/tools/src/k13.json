@@ -1,0 +1,255 @@
+{
+"n": 13,
+"kind": "pic",
+"img": {
+"szene": "A kitchen table with a big bowl full of apples, bananas, strawberries, tomatoes, carrots and a cucumber in natural muted colors; LENA stands at the left of the table holding a red apple and BEN stands at the right holding a yellow banana.",
+"sofi": "super",
+"karten": [
+"a red apple",
+"a yellow banana",
+"a red strawberry",
+"a red tomato",
+"an orange carrot with green leaves",
+"a green cucumber"
+],
+"single": {
+"c1": "A single bright red apple with a short brown stem and one small green leaf."
+},
+"who": {
+"lena": [
+0.29,
+0.3
+],
+"ben": [
+0.69,
+0.3
+]
+}
+},
+"story": [
+{
+"pic": "szene",
+"alt": "식탁 위 큰 그릇에 과일과 채소가 가득해요. Lena는 사과를, Ben은 바나나를 들고 있어요",
+"label": "부엌 식탁에서",
+"lines": [
+[
+"sofi",
+"Mmh! Obst und Gemüse!",
+"음! 과일과 채소네!"
+],
+[
+"lena",
+"Ich mag Äpfel. Und du, Ben?",
+"나는 사과를 좋아해. Ben, 너는?"
+],
+[
+"ben",
+"Ich mag Bananen.",
+"나는 바나나를 좋아해."
+],
+[
+"lena",
+"Magst du Tomaten?",
+"토마토 좋아해?"
+],
+[
+"ben",
+"Nein! Ich mag keine Tomaten.",
+"아니! 나는 토마토를 안 좋아해."
+],
+[
+"ben",
+"Sofi, magst du Karotten?",
+"Sofi, 당근 좋아해?"
+],
+[
+"sofi",
+"Ja! Ich mag Karotten. Und Gurken. Und Erdbeeren!",
+"응! 나는 당근을 좋아해. 오이도. 딸기도!"
+],
+[
+"lena",
+"Sofi mag alles!",
+"Sofi는 다 좋아하네!"
+]
+]
+}
+],
+"cards": [
+{
+"k": "c1",
+"art": "der",
+"de": "der Apfel",
+"ko": "사과",
+"alt": "빨간 사과"
+},
+{
+"k": "c2",
+"art": "die",
+"de": "die Banane",
+"ko": "바나나",
+"alt": "노란 바나나"
+},
+{
+"k": "c3",
+"art": "die",
+"de": "die Erdbeere",
+"ko": "딸기",
+"alt": "빨간 딸기"
+},
+{
+"k": "c4",
+"art": "die",
+"de": "die Tomate",
+"ko": "토마토",
+"alt": "빨간 토마토"
+},
+{
+"k": "c5",
+"art": "die",
+"de": "die Karotte",
+"ko": "당근",
+"alt": "잎이 달린 당근"
+},
+{
+"k": "c6",
+"art": "die",
+"de": "die Gurke",
+"ko": "오이",
+"alt": "초록 오이"
+}
+],
+"hint": "하나는 [[der Apfel]], 여럿은 [[Äpfel]]이에요. 좋아하는 것을 말할 때는 여럿으로 말해요. [[Ich mag Äpfel.]] 안 좋아하면 [[keine]]를 넣어요.",
+"letter": [
+"A a",
+"A wie Apfel"
+],
+"frames": [
+{
+"de": "Ich mag {a}.",
+"ko": "나는 {a} 좋아해.",
+"slots": [
+"a"
+],
+"models": [
+[
+"ben",
+"Ich mag Bananen."
+]
+]
+},
+{
+"de": "Ich mag keine {a}.",
+"ko": "나는 {a} 안 좋아해.",
+"models": [
+[
+"ben",
+"Nein! Ich mag keine Tomaten."
+]
+]
+}
+],
+"opts": {
+"a": [
+[
+"Äpfel",
+"사과를"
+],
+[
+"Bananen",
+"바나나를"
+],
+[
+"Erdbeeren",
+"딸기를"
+],
+[
+"Tomaten",
+"토마토를"
+],
+[
+"Karotten",
+"당근을"
+],
+[
+"Gurken",
+"오이를"
+]
+]
+},
+"talk": [
+{
+"de": "Magst du Äpfel?",
+"ko": "사과 좋아해?",
+"pic": "c1",
+"me": "Ja, ich mag Äpfel.",
+"meko": "응, 나는 사과를 좋아해.",
+"alt": [
+"Nein, ich mag keine Äpfel.",
+"아니, 나는 사과를 안 좋아해."
+]
+},
+{
+"de": "Magst du Tomaten?",
+"ko": "토마토 좋아해?",
+"pic": "c4",
+"me": "Ja, ich mag Tomaten.",
+"meko": "응, 나는 토마토를 좋아해.",
+"alt": [
+"Nein, ich mag keine Tomaten.",
+"아니, 나는 토마토를 안 좋아해."
+]
+},
+{
+"de": "Was magst du?",
+"ko": "너는 뭘 좋아해?",
+"me": "Ich mag {a}.",
+"meko": "나는 {a} 좋아해."
+}
+],
+"reim": [
+[
+"<b>Ap</b>fel, <b>Ap</b>fel, <b>le</b>cker, <b>le</b>cker!",
+"사과, 사과, 맛있어, 맛있어!",
+"사과를 베어 무는 시늉을 해요"
+],
+[
+"<b>Ich</b> mag <b>Obst</b>, das <b>ist</b> ge<b>sund</b>!",
+"나는 과일을 좋아해, 몸에 좋아!",
+"두 팔에 힘을 줘요"
+],
+[
+"Ba<b>na</b>ne, To<b>ma</b>te, <b>Gur</b>ke – <b>bunt</b>,",
+"바나나, 토마토, 오이, 알록달록,",
+"손가락을 하나씩 펴요"
+],
+[
+"<b>al</b>les <b>in</b> den <b>klei</b>nen <b>Mund</b>!",
+"모두 작은 입속으로!",
+"입을 가리켜요"
+]
+],
+"reimNote": "[[Obst]]는 과일, [[Gemüse]]는 채소예요. [[gesund]]는 “몸에 좋다”는 뜻이에요.",
+"todo": [
+"냉장고에서 과일과 채소를 찾아 독일어로 말해요.",
+"가족에게 [[Magst du Tomaten?]] 하고 물어요.",
+"좋아하는 과일을 그리고 [[Ich mag …]] 하고 말해요."
+],
+"goals": [
+"과일과 채소 여섯 가지: [[der Apfel, die Banane, die Erdbeere, die Tomate, die Karotte, die Gurke]]",
+"좋아하는 것과 안 좋아하는 것 말하기: [[Ich mag Äpfel. Ich mag keine Tomaten.]]",
+"좋아하는지 묻기: [[Magst du …?]]",
+"첫소리 글자 [[A]]: [[Apfel, acht, alle]]"
+],
+"sounds": [
+"[[Apfel]]의 [[pf]]는 [[Kopf]]와 같은 소리입니다. 여럿일 때 [[Äpfel]]의 [[Ä]]는 ‘에’로 소리 납니다.",
+"[[Erdbeere]]는 [[Erd]]와 [[beere]]를 이어 말하고, 두 [[e]]를 모두 길게 냅니다."
+],
+"lesson": [
+"과일 바구니 5분: 모형이나 그림을 하나씩 꺼내며 이름을 말합니다.",
+"이야기와 카드 15분: 1번과 2번 활동을 듣고, 하나일 때와 여럿일 때의 이름을 나란히 들려줍니다. 글자 [[A]]를 쓰고 [[A wie Apfel]]을 말합니다.",
+"좋아해 조사 10분: 교실을 돌며 친구 세 명에게 [[Magst du …?]] 하고 묻고, [[Ja]]와 [[Nein]]의 수를 셉니다.",
+"손뼉 리듬 10분: 5번 리듬을 동작과 함께 두 번 합니다."
+],
+"sticker": "c1"
+}

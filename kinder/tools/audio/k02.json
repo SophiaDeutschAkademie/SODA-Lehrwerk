@@ -1,0 +1,63 @@
+{
+"aud": {
+"sofi|Hallo! Wie heißt du?": "s01",
+"sofi|Und du? Wie heißt du?": "s02",
+"sofi|Wer ist das?": "s03",
+"sofi|Hallo, Teddy! Freut mich!": "s04",
+"sofi|Wie heißt du?": "s05",
+"sofi|Ich heiße Sofi.": "s06",
+"sofi|Das ist Teddy.": "s07",
+"sofi|Und du?": "s08",
+"sofi|Freut mich!": "s09",
+"sofi|Wie heißt du? Wie heißt du?": "s10",
+"sofi|Ich heiße Lena. Und du?": "s11",
+"sofi|Wer ist das? Wer ist das?": "s12",
+"sofi|Das ist Ben! Freut mich sehr!": "s13",
+"ben|Ich heiße Ben.": "b01",
+"ben|Das ist Teddy.": "b02",
+"lena|Ich heiße Lena.": "l01",
+"lena|Teddy sagt: Freut mich auch!": "l02"
+},
+"dur": {
+"s01": 1.91,
+"s02": 1.98,
+"s03": 1.06,
+"s04": 2.02,
+"s05": 1.01,
+"s06": 1.28,
+"s07": 1.06,
+"s08": 0.83,
+"s09": 1.15,
+"s10": 2.41,
+"s11": 2.32,
+"s12": 2.62,
+"s13": 2.46,
+"b01": 1.13,
+"b02": 1.14,
+"l01": 1.24,
+"l02": 2.05
+},
+"chant": {
+"beat": 0.66,
+"bar": 2.64,
+"marks": [
+[
+0.35,
+2.99
+],
+[
+5.63,
+8.27
+],
+[
+10.91,
+13.55
+],
+[
+16.19,
+18.83
+]
+],
+"sup": 21.62
+}
+}

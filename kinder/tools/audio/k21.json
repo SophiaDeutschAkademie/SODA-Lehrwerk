@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Das ist meine Puppe!": "s01",
+"sofi|Danke! Spielen wir zusammen?": "s02",
+"sofi|der Ball": "s03",
+"sofi|die Puppe": "s04",
+"sofi|das Auto": "s05",
+"sofi|der Teddy": "s06",
+"sofi|das Puzzle": "s07",
+"sofi|der Roller": "s08",
+"sofi|P wie Puppe": "s09",
+"sofi|Ist das dein Ball?": "s10",
+"sofi|Ist das dein Auto?": "s11",
+"sofi|Spielen wir zusammen?": "s12",
+"sofi|Ball und Puppe, Auto, Teddy,": "s13",
+"sofi|das ist meins und das ist deins.": "s14",
+"sofi|Komm, wir spielen, komm, wir spielen,": "s15",
+"sofi|eins und zwei und zwei und eins!": "s16",
+"ben|Ja, das ist mein Ball.": "b01",
+"ben|Ist das deine Puppe?": "b02",
+"ben|Ja! Wir spielen zusammen!": "b03",
+"lena|Ist das dein Ball, Ben?": "l01",
+"lena|Nein, das ist nicht meine Puppe.": "l02",
+"lena|Deine Puppe ist schön, Sofi!": "l03"
+},
+"dur": {
+"s01": 1.75,
+"s02": 2.4,
+"s03": 0.82,
+"s04": 0.89,
+"s05": 1.14,
+"s06": 0.93,
+"s07": 1.05,
+"s08": 0.87,
+"s09": 1.63,
+"s10": 1.4,
+"s11": 1.52,
+"s12": 1.36,
+"s13": 3.0,
+"s14": 2.86,
+"s15": 2.6,
+"s16": 3.25,
+"b01": 1.68,
+"b02": 1.51,
+"b03": 1.96,
+"l01": 1.5,
+"l02": 2.36,
+"l03": 2.39
+},
+"chant": {
+"beat": 0.82,
+"bar": 3.28,
+"marks": [
+[
+0.35,
+3.63
+],
+[
+6.91,
+10.19
+],
+[
+13.47,
+16.75
+],
+[
+20.03,
+23.31
+]
+],
+"sup": 26.74
+}
+}

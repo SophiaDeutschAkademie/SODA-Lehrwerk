@@ -1,6 +1,6 @@
 # SODA Lehrwerk
 
-Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 스물두 가지 학습 자료를 골라 열 수 있어요.
+Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를 한곳에 모은 웹앱입니다. 표지 다음 페이지의 목차에서 스물세 가지 학습 자료를 골라 열 수 있어요.
 
 ## 학습 자료
 
@@ -19,12 +19,13 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `redemittel/` | SODA Alltagsredemittel | 회화 패턴과 상황별 반응 표현 플래시카드, A1–B2, 279장 |
 | `kuerze-wuerze/` | In der Kürze liegt die Würze | 일상을 위한 MSG, 짧은 표현 플래시카드, A2–C1, 256장과 헷갈리는 짝 |
 | `business-deutsch/` | SODA Business-Deutsch | 비즈니스 독일어 표현 플래시카드, A2–C1, 270장(첫 만남부터 메일·전화·회의·발표·협상·고객 응대·면접까지 14개 상황)과 헷갈리는 비즈니스 어휘 |
+| `kinder/` | SODA Kinder | 어린이·초등 저학년 독일어 교재(레벨 구분 없음). 부엉이 Sofi와 독일 친구 Lena, Ben이 나오는 24단원(8주제 32단원 가운데 6주제까지)과 주제별 복습 놀이 Spielplatz 6개. 단원마다 이야기·그림 카드·말하기·놀이·손뼉 리듬·집에서 해 보기 여섯 활동, 독일어 음성 516개, 살짝 움직이는 그림, 부모님과 선생님께 드리는 안내 |
 | `lernmethoden/` | SODA Lernmethoden | 독일어 공부법, 학습 계획·어휘·문법·읽기·듣기·말하기·쓰기·시험·특별 주제 글 42편 |
 | `sprechen/` | SODA Sprechen | 말하기 실전 연습(시험관·파트너와 Teil별 연습, 평가, 결과 파일). Modelltest 연습 기록은 같은 브라우저(localStorage `soda-sprechen:mdt:<시험 id>`)에도 저장되어, Modelltest 디지털 시험의 「선생님께 제출하기」가 필기 결과와 함께 보냅니다. 소피아 독일어학원 수강생 전용이라 아이디와 비밀번호로 로그인해야 합니다. 학습 포탈(`SODA-LERNPORTAL` 저장소)에 로그인한 브라우저에서는 그 로그인으로 바로 들어가서 로그인 화면이 나오지 않습니다(같은 브라우저의 localStorage `soda-portal:session`에 들어 있는 말하기 계정을 씁니다. 로그인 요청에는 포탈 로그인 확인값을 함께 보내, 말하기 서버가 그 학생의 계정이 없으면 만들고 비밀번호가 다르면 맞춥니다. 자세한 규칙은 `SODA-LERNPORTAL`의 README 「계정 자동 맞춤」에 있습니다. 포탈이 그 계정을 확인하는 중에 열리면 입력 칸 없이 잠시 기다렸다가 들어가고, 열려 있는 동안 포탈 로그인이 생기거나 바뀌어도 그때 바로 들어갑니다. 그 브라우저에 학생의 포탈 로그인이 없으면(로그인이 없거나 관리자 화면에서 남긴 선생님 통과 로그인만 있을 때) 로그인 화면에 「학습 포탈에서 로그인」 링크가 나오고, 포탈에서 로그인하면 이 페이지로 돌아와 열립니다. 로그인 화면 맨 아래의 「이 브라우저의 학습 포탈 로그인: …」 줄은 그 창에서 보이는 포탈 로그인 상태와 화면 번호(`PORTAL_BUILD`, 이 부분을 고칠 때 함께 올립니다)를 그대로 적습니다. 로그인 화면이 다시 나올 때 원인을 구분하는 방법은 `SODA-LERNPORTAL`의 README 「말하기 연습(SODA Sprechen) 연결」). 목차의 「SODA Modelltest」 묶음 맨 아래 전체 너비 타일과, Goethe A2·B1·B2, telc B1·B2 Modelltest 1·2의 「말하기 실전 연습」 줄에서 열립니다. SODA GRAMMATIK KURS 과제의 말하기 연습(`#ueb-a1-NN`)과 SODA A2·B1·B2 챕터 연습(`#ueb-a2-NN`, `#ueb-b1-NN`, `#ueb-b2-NN`)은 대화를 녹음합니다: 마이크와 파트너 목소리를 한 파일로 녹음해 WAV(16 kHz·모노)로 바꿉니다. 녹음은 서버로 보내지 않고 어디에도 저장하지 않으며, 연습이 끝난 화면의 「대화 녹음」 칸에서만 다시 듣고 내려받습니다. 그 화면을 나가거나 창을 닫으면 녹음은 지워지고(내려받지 않은 녹음이 있으면 창을 닫을 때 브라우저가 한 번 묻습니다), 「기록 보기」에서는 지워졌다고 안내합니다. 예전 판이 IndexedDB(`soda-sprechen-rec`)에 남긴 녹음은 페이지를 열 때 지웁니다. 녹음하는 연습은 코드의 `REC_ON`으로 정합니다. 준비 화면에는 말하기 속도 막대를 두지 않습니다(모든 연습·모의고사, 그 브라우저에 저장된 속도를 씁니다). 챕터·과제 연습(Übung) 화면에는 `<html>`에 `ueb` 클래스가 붙어 진행자 칸을 감추고, 핸드폰(640px 이하)에서는 따로 배치합니다: 머리 막대 축소, 과제지 왼쪽 정렬과 좁은 여백, 연습 중 시간·단계·말하는 사람을 위에 고정하고 「여기서 끝내기·중단」을 아래에 고정, 준비 화면 아래에 「연습 시작」 고정. 이 과의 핵심 어휘와 표현, A1 연습 화면의 「도움이 되는 표현」은 Übung 화면에서 (컴퓨터에서도) 단어와 뜻을 한 줄에 쓴 작은 칩으로 이어서 보여 줍니다. 모의고사 화면은 바뀌지 않습니다 |
 | 별도 저장소 `SODA-Goethe` | Goethe A2·B1·B2 모의고사 | Modelltest 10·10·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면, A2·B1·B2·C1 Hochschule에는 쓰기·말하기 시험 대비 가이드 |
 | 별도 저장소 `SODA-TELC` | telc B1·B2·C1 Hochschule 모의고사 | Modelltest 5·7·5개, 페이퍼(PDF, 듣기 음원)와 디지털 시험 화면, B1·B2·C1 Hochschule에는 쓰기·말하기 시험 대비 가이드 |
 
-루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grammatik / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 Training 묶음에 들어 있어요. 그 아래에 「Lernmethoden」(독일어 공부법) 묶음이 있고, 그 아래에 전체 너비의 「SODA Modelltest」 묶음이 있고, Goethe A2, Goethe B1, Goethe B2, telc B1, telc B2, telc C1 Hochschule 모의고사 여섯 항목이 들어 있습니다. 그 아래에 전체 너비의 「말하기 실전 연습」 타일(`sprechen/`, 수강생 전용 로그인)이 하나 더 있습니다. 이 여섯 항목은 용량 한도(GitHub Pages 1 GB) 때문에 별도 저장소(`SODA-Goethe`, `SODA-TELC`)의 주소로 연결됩니다. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요. 목차 오른쪽 위에는 「공지사항」과 「표지」 버튼이 있습니다(아래 「공지사항」).
+루트의 `index.html`이 표지와 목차입니다. 목차는 세 묶음(Grammatik / Training / Wortschatz)을 가로 패널 세 개로 보여 주고, 말하기 훈련은 Training 묶음에 들어 있어요. 그 아래에 「Lehrbuch」(어린이 교재 SODA Kinder) 묶음과 「Lernmethoden」(독일어 공부법) 묶음이 차례로 있고, 그 아래에 전체 너비의 「SODA Modelltest」 묶음이 있고, Goethe A2, Goethe B1, Goethe B2, telc B1, telc B2, telc C1 Hochschule 모의고사 여섯 항목이 들어 있습니다. 그 아래에 전체 너비의 「말하기 실전 연습」 타일(`sprechen/`, 수강생 전용 로그인)이 하나 더 있습니다. 이 여섯 항목은 용량 한도(GitHub Pages 1 GB) 때문에 별도 저장소(`SODA-Goethe`, `SODA-TELC`)의 주소로 연결됩니다. 주소 끝에 `#inhalt`를 붙이면 목차가 바로 열려요. 목차 오른쪽 위에는 「공지사항」과 「표지」 버튼이 있습니다(아래 「공지사항」).
 
 ## 웹 주소로 열기 (GitHub Pages)
 
@@ -58,6 +59,7 @@ sprechen/                    말하기 실전 연습(단일 HTML). 서버(Cloudf
 redemittel/                  회화 패턴과 상황별 반응 표현 플래시카드(단일 HTML)
 kuerze-wuerze/               일상을 위한 MSG, 짧은 표현 플래시카드(단일 HTML)
 business-deutsch/            비즈니스 독일어 표현 플래시카드(단일 HTML)
+kinder/                      어린이 독일어 교재 SODA Kinder (화면은 index.html, 단원 자료는 data/kNN.js, 그림 img/, 음성 audio/, 원본과 빌드 도구는 tools/, kinder/README.md)
 lernmethoden/                독일어 공부법 글 42편(단일 HTML, 원고와 빌드 스크립트 포함). lernmethoden/a/<글 id>.html은 글마다 따로 만든 검색용 페이지
 zertifikat/                  옛 모의고사 주소를 새 주소로 넘기는 안내 페이지만 있음 (zertifikat/README.md)
 ```
@@ -130,7 +132,7 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 
 ## 학습 저장(다른 기기에서 이어 풀기)
 
-학습 포탈에 로그인한 학생이 푼 내용은 서버에 저장되어, 다른 기기에서 포탈에 로그인하면 그대로 이어집니다. 답을 저장하는 앱 페이지(목차, Grammatik, Hörtraining, Diktattraining, Lesetraining, Schreibtraining, Redemittel, Kürze-Würze, Business-Deutsch, Nomen-Verb-Verbindungen, Verben mit Präpositionen, 말하기 연습)는 `<meta charset>` 바로 뒤에서 `<script id="soda-sync" src="/SODA-LERNPORTAL/sync.js"></script>`를 불러옵니다. 앱은 지금처럼 localStorage에 저장하고, 그 스크립트가 바뀐 값을 서버와 주고받습니다.
+학습 포탈에 로그인한 학생이 푼 내용은 서버에 저장되어, 다른 기기에서 포탈에 로그인하면 그대로 이어집니다. 답을 저장하는 앱 페이지(목차, Grammatik, Hörtraining, Diktattraining, Lesetraining, Schreibtraining, Redemittel, Kürze-Würze, Business-Deutsch, Nomen-Verb-Verbindungen, Verben mit Präpositionen, SODA Kinder, 말하기 연습)는 `<meta charset>` 바로 뒤에서 `<script id="soda-sync" src="/SODA-LERNPORTAL/sync.js"></script>`를 불러옵니다. 앱은 지금처럼 localStorage에 저장하고, 그 스크립트가 바뀐 값을 서버와 주고받습니다.
 
 - 새 앱을 만들거나 답을 저장하게 바꾸면 같은 줄을 넣습니다. 기기마다 달라야 하는 화면 설정(글씨 크기, 보기 방식 등)의 저장 이름은 SODA-LERNPORTAL의 `sync.js` `SKIP_EXACT`에 더합니다.
 - `grammatik/`과 `hoertraining/`은 서비스워커가 `index.html`을 저장해 두므로, 이 줄을 넣은 뒤 `sw.js`의 VERSION을 바꿨습니다(Grammatik은 `python3 grammatik/tools/pager-build.py`). `sync.js`는 `?v=` 없이 불러와 서비스워커가 저장하지 않으므로 늘 새 파일이 옵니다.

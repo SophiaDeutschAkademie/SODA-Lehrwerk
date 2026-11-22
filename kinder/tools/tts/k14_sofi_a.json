@@ -1,0 +1,49 @@
+{
+ "job": "k14_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   14,
+   "sofi",
+   "Ich trinke Wasser."
+  ],
+  [
+   14,
+   "sofi",
+   "Mmh, lecker! Guten Appetit!"
+  ],
+  [
+   14,
+   "sofi",
+   "das Brot"
+  ],
+  [
+   14,
+   "sofi",
+   "der Käse"
+  ],
+  [
+   14,
+   "sofi",
+   "das Ei"
+  ],
+  [
+   14,
+   "sofi",
+   "die Milch"
+  ],
+  [
+   14,
+   "sofi",
+   "der Saft"
+  ],
+  [
+   14,
+   "sofi",
+   "das Wasser"
+  ]
+ ],
+ "script": "[happy] Ich trinke Wasser. [long pause] Mmh, lecker! Guten Appetit! [long pause] das Brot [long pause] der Käse [long pause] das Ei [long pause] die Milch [long pause] der Saft [long pause] das Wasser"
+}

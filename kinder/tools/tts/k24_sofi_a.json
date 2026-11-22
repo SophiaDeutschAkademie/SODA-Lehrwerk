@@ -1,0 +1,44 @@
+{
+ "job": "k24_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   24,
+   "sofi",
+   "Ich komme aus Korea."
+  ],
+  [
+   24,
+   "sofi",
+   "Und woher kommst du, Ben?"
+  ],
+  [
+   24,
+   "sofi",
+   "Ich wohne hier – im Baum!"
+  ],
+  [
+   24,
+   "sofi",
+   "Woher kommst du?"
+  ],
+  [
+   24,
+   "sofi",
+   "Ich komme aus Deutschland."
+  ],
+  [
+   24,
+   "sofi",
+   "Wo wohnst du?"
+  ],
+  [
+   24,
+   "sofi",
+   "Ich wohne in Seoul."
+  ]
+ ],
+ "script": "[happy] Ich komme aus Korea. [long pause] Und woher kommst du, Ben? [long pause] Ich wohne hier – im Baum! [long pause] Woher kommst du? [long pause] Ich komme aus Deutschland. [long pause] Wo wohnst du? [long pause] Ich wohne in Seoul."
+}

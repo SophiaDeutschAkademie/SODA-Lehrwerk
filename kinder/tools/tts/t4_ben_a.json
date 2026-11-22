@@ -1,0 +1,59 @@
+{
+ "job": "t4_ben_a",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   13,
+   "ben",
+   "Ich mag Bananen."
+  ],
+  [
+   13,
+   "ben",
+   "Nein! Ich mag keine Tomaten."
+  ],
+  [
+   13,
+   "ben",
+   "Sofi, magst du Karotten?"
+  ],
+  [
+   14,
+   "ben",
+   "Ich esse Brot mit Käse."
+  ],
+  [
+   14,
+   "ben",
+   "Und ich trinke Milch."
+  ],
+  [
+   14,
+   "ben",
+   "He! Wo ist mein Brot?"
+  ],
+  [
+   15,
+   "ben",
+   "Ich habe Hunger!"
+  ],
+  [
+   15,
+   "ben",
+   "Danke! Mmh, lecker!"
+  ],
+  [
+   15,
+   "ben",
+   "Ich bin satt."
+  ],
+  [
+   16,
+   "ben",
+   "Und drei Birnen, bitte!"
+  ]
+ ],
+ "script": "[happy] Ich mag Bananen. [long pause] Nein! Ich mag keine Tomaten. [long pause] Sofi, magst du Karotten? [long pause] Ich esse Brot mit Käse. [long pause] Und ich trinke Milch. [long pause] He! Wo ist mein Brot? [long pause] Ich habe Hunger! [long pause] Danke! Mmh, lecker! [long pause] Ich bin satt. [long pause] Und drei Birnen, bitte!"
+}

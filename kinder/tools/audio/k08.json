@@ -1,0 +1,81 @@
+{
+"aud": {
+"sofi|Guten Abend! Schaut mal, die Sterne!": "s01",
+"sofi|Zwanzig Sterne! Super!": "s02",
+"sofi|elf": "s03",
+"sofi|zwölf": "s04",
+"sofi|dreizehn": "s05",
+"sofi|vierzehn": "s06",
+"sofi|fünfzehn": "s07",
+"sofi|sechzehn": "s08",
+"sofi|siebzehn": "s09",
+"sofi|achtzehn": "s10",
+"sofi|neunzehn": "s11",
+"sofi|zwanzig": "s12",
+"sofi|Z wie zwölf": "s13",
+"sofi|Wie viele Sterne sind das?": "s14",
+"sofi|Elf, zwölf, dreizehn.": "s15",
+"sofi|Siebzehn, achtzehn.": "s16",
+"sofi|Elf, zwölf, dreizehn, vierzehn,": "s17",
+"sofi|fünfzehn, sechzehn, siebzehn, achtzehn,": "s18",
+"sofi|neunzehn, zwanzig – hurra, hurra!": "s19",
+"sofi|Zwanzig Sterne sind schon da!": "s20",
+"ben|Zehn, elf, zwölf …": "b01",
+"ben|Sechzehn, siebzehn, achtzehn …": "b02",
+"ben|Ich bin müde. Gute Nacht!": "b03",
+"lena|Wie viele Sterne sind das?": "l01",
+"lena|Dreizehn, vierzehn, fünfzehn …": "l02",
+"lena|Neunzehn, zwanzig!": "l03"
+},
+"dur": {
+"s01": 3.31,
+"s02": 2.6,
+"s03": 0.93,
+"s04": 1.14,
+"s05": 1.19,
+"s06": 1.14,
+"s07": 1.24,
+"s08": 1.14,
+"s09": 1.15,
+"s10": 0.93,
+"s11": 1.46,
+"s12": 1.66,
+"s13": 1.87,
+"s14": 1.91,
+"s15": 3.19,
+"s16": 2.35,
+"s17": 4.25,
+"s18": 4.95,
+"s19": 3.99,
+"s20": 2.21,
+"b01": 2.8,
+"b02": 3.1,
+"b03": 2.31,
+"l01": 1.81,
+"l02": 2.75,
+"l03": 1.75
+},
+"chant": {
+"beat": 1.15,
+"bar": 4.6,
+"marks": [
+[
+0.35,
+4.95
+],
+[
+9.55,
+14.15
+],
+[
+18.75,
+23.35
+],
+[
+27.95,
+32.55
+]
+],
+"sup": 37.3
+}
+}

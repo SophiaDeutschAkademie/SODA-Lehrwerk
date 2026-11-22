@@ -1,0 +1,77 @@
+{
+"aud": {
+"sofi|Wie alt bist du, Lena?": "s01",
+"sofi|eins": "s02",
+"sofi|zwei": "s03",
+"sofi|drei": "s04",
+"sofi|vier": "s05",
+"sofi|fünf": "s06",
+"sofi|sechs": "s07",
+"sofi|sieben": "s08",
+"sofi|acht": "s09",
+"sofi|neun": "s10",
+"sofi|zehn": "s11",
+"sofi|Wie alt bist du?": "s12",
+"sofi|Eins, zwei, drei.": "s13",
+"sofi|Sieben, acht.": "s14",
+"sofi|Eins, zwei, drei, vier,": "s15",
+"sofi|fünf, sechs, sieben, acht,": "s16",
+"sofi|neun und zehn, neun und zehn,": "s17",
+"sofi|hallo, hallo, ich bin zehn!": "s18",
+"ben|Eins, zwei, drei, vier, fünf …": "b01",
+"ben|Sechs, sieben, acht, neun, zehn!": "b02",
+"ben|Ich komme! Lena, wo bist du?": "b03",
+"ben|Ich bin auch acht!": "b04",
+"lena|Hier bin ich!": "l01",
+"lena|Ich bin acht.": "l02"
+},
+"dur": {
+"s01": 1.67,
+"s02": 1.01,
+"s03": 0.88,
+"s04": 0.8,
+"s05": 0.93,
+"s06": 1.01,
+"s07": 0.95,
+"s08": 0.91,
+"s09": 0.67,
+"s10": 1.03,
+"s11": 0.96,
+"s12": 1.26,
+"s13": 2.32,
+"s14": 1.84,
+"s15": 3.31,
+"s16": 3.81,
+"s17": 4.77,
+"s18": 2.96,
+"b01": 4.5,
+"b02": 4.24,
+"b03": 2.51,
+"b04": 1.09,
+"l01": 0.99,
+"l02": 0.85
+},
+"chant": {
+"beat": 1.11,
+"bar": 4.44,
+"marks": [
+[
+0.35,
+4.79
+],
+[
+9.23,
+13.67
+],
+[
+18.11,
+22.55
+],
+[
+26.99,
+31.43
+]
+],
+"sup": 36.02
+}
+}

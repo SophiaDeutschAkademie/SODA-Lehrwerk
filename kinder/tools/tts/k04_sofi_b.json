@@ -1,0 +1,54 @@
+{
+ "job": "k04_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   4,
+   "sofi",
+   "neun"
+  ],
+  [
+   4,
+   "sofi",
+   "zehn"
+  ],
+  [
+   4,
+   "sofi",
+   "Wie alt bist du?"
+  ],
+  [
+   4,
+   "sofi",
+   "Eins, zwei, drei."
+  ],
+  [
+   4,
+   "sofi",
+   "Sieben, acht."
+  ],
+  [
+   4,
+   "sofi",
+   "Eins, zwei, drei, vier,"
+  ],
+  [
+   4,
+   "sofi",
+   "fünf, sechs, sieben, acht,"
+  ],
+  [
+   4,
+   "sofi",
+   "neun und zehn, neun und zehn,"
+  ],
+  [
+   4,
+   "sofi",
+   "hallo, hallo, ich bin zehn!"
+  ]
+ ],
+ "script": "[happy] neun [long pause] zehn [long pause] Wie alt bist du? [long pause] Eins, zwei, drei. [long pause] Sieben, acht. [long pause] Eins, zwei, drei, vier, [long pause] fünf, sechs, sieben, acht, [long pause] neun und zehn, neun und zehn, [long pause] hallo, hallo, ich bin zehn!"
+}

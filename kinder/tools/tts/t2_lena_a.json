@@ -1,0 +1,49 @@
+{
+ "job": "t2_lena_a",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   5,
+   "lena",
+   "Oh, wie schön!"
+  ],
+  [
+   5,
+   "lena",
+   "Der Ballon ist rot."
+  ],
+  [
+   6,
+   "lena",
+   "Das ist ein Stift."
+  ],
+  [
+   6,
+   "lena",
+   "Das ist eine Schere. Vorsicht!"
+  ],
+  [
+   7,
+   "lena",
+   "Juhu!"
+  ],
+  [
+   8,
+   "lena",
+   "Wie viele Sterne sind das?"
+  ],
+  [
+   8,
+   "lena",
+   "Dreizehn, vierzehn, fünfzehn …"
+  ],
+  [
+   8,
+   "lena",
+   "Neunzehn, zwanzig!"
+  ]
+ ],
+ "script": "[happy] Oh, wie schön! [long pause] Der Ballon ist rot. [long pause] Das ist ein Stift. [long pause] Das ist eine Schere. Vorsicht! [long pause] Juhu! [long pause] Wie viele Sterne sind das? [long pause] Dreizehn, vierzehn, fünfzehn … [long pause] Neunzehn, zwanzig!"
+}

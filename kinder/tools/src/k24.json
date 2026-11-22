@@ -1,0 +1,234 @@
+{
+"n": 24,
+"kind": "pic",
+"img": {
+"szene": "On the left BEN holds a globe in both hands and LENA points at a spot on the globe with one finger; on the right stands a large tree with a thick trunk and a round crown. Clear white space between the children and the tree.",
+"sofi": "hallo",
+"karten": [
+"a globe on a stand",
+"a traditional Korean palace gate with a curved tiled roof",
+"a German half-timbered house",
+"a small house with a letterbox in front",
+"a tall observation tower on a wooded hill",
+"a classical city gate with six columns and a chariot statue on top"
+],
+"who": {
+"ben": [
+0.26,
+0.55
+],
+"lena": [
+0.46,
+0.55
+]
+}
+},
+"story": [
+{
+"pic": "szene",
+"alt": "Ben이 지구본을 들고 있고 Lena가 지구본의 한 곳을 가리켜요. 옆에는 큰 나무가 있어요",
+"label": "지구본 앞에서",
+"lines": [
+[
+"lena",
+"Sofi, woher kommst du?",
+"Sofi, 너는 어디에서 왔어?"
+],
+[
+"sofi",
+"Ich komme aus Korea.",
+"나는 한국에서 왔어."
+],
+[
+"ben",
+"Aus Korea? Toll!",
+"한국에서? 멋지다!"
+],
+[
+"sofi",
+"Und woher kommst du, Ben?",
+"Ben, 그럼 너는 어디에서 왔어?"
+],
+[
+"ben",
+"Ich komme aus Deutschland.",
+"나는 독일에서 왔어."
+],
+[
+"ben",
+"Ich wohne in Berlin.",
+"나는 베를린에 살아."
+],
+[
+"lena",
+"Ich wohne auch in Berlin.",
+"나도 베를린에 살아."
+],
+[
+"ben",
+"Und wo wohnst du, Sofi?",
+"Sofi, 그럼 너는 어디에 살아?"
+],
+[
+"sofi",
+"Ich wohne hier – im Baum!",
+"나는 여기 살아. 나무에!"
+]
+]
+}
+],
+"cards": [
+{
+"k": "c1",
+"de": "Woher kommst du?",
+"ko": "어디에서 왔어?",
+"alt": "받침대 위의 지구본"
+},
+{
+"k": "c2",
+"de": "Ich komme aus Korea.",
+"ko": "나는 한국에서 왔어.",
+"alt": "기와지붕이 있는 한국의 궁궐 문"
+},
+{
+"k": "c3",
+"de": "Ich komme aus Deutschland.",
+"ko": "나는 독일에서 왔어.",
+"alt": "나무 뼈대가 보이는 독일 전통 집"
+},
+{
+"k": "c4",
+"de": "Wo wohnst du?",
+"ko": "어디에 살아?",
+"alt": "우편함이 있는 작은 집"
+},
+{
+"k": "c5",
+"de": "Ich wohne in Seoul.",
+"ko": "나는 서울에 살아.",
+"alt": "숲이 있는 언덕 위의 높은 전망 탑"
+},
+{
+"k": "c6",
+"de": "Ich wohne in Berlin.",
+"ko": "나는 베를린에 살아.",
+"alt": "기둥 여섯 개와 마차 조각상이 있는 성문"
+}
+],
+"hint": "[[Woher kommst du?]]는 어느 나라에서 왔는지, [[Wo wohnst du?]]는 지금 어디에 사는지 묻는 말이에요. 나라 앞에는 [[aus]], 도시 앞에는 [[in]]을 써요.",
+"letter": [
+"Ö ö",
+"Ö wie Österreich"
+],
+"trace": "Korea",
+"frames": [
+{
+"de": "Ich komme aus {a}.",
+"ko": "나는 {a}에서 왔어.",
+"slots": [
+"a"
+],
+"models": [
+[
+"sofi",
+"Ich komme aus Korea."
+],
+[
+"ben",
+"Ich komme aus Deutschland."
+]
+]
+},
+{
+"de": "Ich wohne in {city}.",
+"ko": "나는 {city}에 살아.",
+"models": [
+[
+"ben",
+"Ich wohne in Berlin."
+]
+]
+}
+],
+"opts": {
+"a": [
+[
+"Korea",
+"한국"
+],
+[
+"Deutschland",
+"독일"
+],
+[
+"Österreich",
+"오스트리아"
+]
+]
+},
+"talk": [
+{
+"de": "Woher kommst du?",
+"ko": "너는 어디에서 왔어?",
+"me": "Ich komme aus {a}.",
+"meko": "나는 {a}에서 왔어."
+},
+{
+"de": "Wo wohnst du?",
+"ko": "너는 어디에 살아?",
+"me": "Ich wohne in {city}.",
+"meko": "나는 {city}에 살아."
+},
+{
+"de": "Ich wohne im Baum. Tschüss!",
+"ko": "나는 나무에 살아. 안녕!",
+"me": "Tschüss, Sofi! Bis bald!",
+"meko": "안녕, Sofi! 곧 또 만나!"
+}
+],
+"reim": [
+[
+"<b>Wo</b>, wo, <b>wo</b> kommst <b>du</b> denn <b>her</b>?",
+"어디, 어디, 너는 어디에서 왔니?",
+"손을 눈썹 위에 대고 멀리 봐요"
+],
+[
+"Ich <b>komm</b> aus Ko<b>re</b>a, <b>bit</b>te <b>sehr</b>!",
+"나는 한국에서 왔어, 바로 그래!",
+"두 손을 가슴에 대요"
+],
+[
+"<b>Ich</b> wohn <b>hier</b> und <b>du</b> wohnst <b>da</b>,",
+"나는 여기 살고 너는 저기 살아,",
+"나를 가리키고 멀리 가리켜요"
+],
+[
+"<b>al</b>le <b>Kin</b>der <b>sind</b> jetzt <b>da</b>!",
+"아이들이 모두 지금 여기 모였어!",
+"두 팔을 활짝 펴요"
+]
+],
+"reimNote": "[[Wo kommst du her?]]는 [[Woher kommst du?]]와 같은 말이에요. [[ich komm]], [[ich wohn]]은 [[ich komme]], [[ich wohne]]를 짧게 말한 거예요.",
+"todo": [
+"가족에게 [[Woher kommst du?]], [[Wo wohnst du?]] 하고 물어요.",
+"지도나 지구본에서 한국과 독일을 찾아 [[Korea]], [[Deutschland]] 하고 말해요.",
+"흐린 글자 위에 [[Korea]]를 따라 써요."
+],
+"goals": [
+"어디에서 왔는지 묻고 답하기: [[Woher kommst du? – Ich komme aus Korea.]]",
+"어디에 사는지 묻고 답하기: [[Wo wohnst du? – Ich wohne in Seoul.]]",
+"나라와 도시 이름: [[Korea, Deutschland, Österreich, Seoul, Berlin]]",
+"글자 [[Ö]]와 낱말 따라 쓰기: [[Österreich, Löwe, zwölf]]"
+],
+"sounds": [
+"[[Woher]]는 뒤쪽 [[-her]]를 세게 말합니다. [[Korea]]는 독일어에서 가운데 [[-re-]]를 세게 말합니다.",
+"[[Deutschland]]의 [[eu]]는 ‘오이’, [[tsch]]는 ‘치’에 가까운 소리입니다. [[Österreich]]의 [[Ö]]는 [[Löwe]]의 [[ö]]와 같고, 끝 [[ch]]는 [[ich]]와 같습니다."
+],
+"lesson": [
+"지구본 5분: 지구본에서 한국, 독일, 오스트리아를 찾고 나라 이름을 독일어로 말합니다.",
+"이야기와 카드 15분: 1번과 2번 활동을 듣고, [[aus]]와 [[in]]이 들어간 문장을 나눠 따라 합니다. 글자 [[Ö]]를 쓰고 [[Ö wie Österreich]]를 말합니다.",
+"자기소개 이어 말하기 10분: 지금까지 배운 말로 [[Ich heiße …. Ich bin …. Ich komme aus …. Ich wohne in ….]] 네 문장을 발표합니다.",
+"따라 쓰기와 리듬 10분: [[Korea]]를 공책에 세 번 쓰고, 5번 리듬을 동작과 함께 합니다."
+],
+"sticker": "c1"
+}

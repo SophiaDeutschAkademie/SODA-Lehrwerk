@@ -1,0 +1,49 @@
+{
+ "job": "k21_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   21,
+   "sofi",
+   "P wie Puppe"
+  ],
+  [
+   21,
+   "sofi",
+   "Ist das dein Ball?"
+  ],
+  [
+   21,
+   "sofi",
+   "Ist das dein Auto?"
+  ],
+  [
+   21,
+   "sofi",
+   "Spielen wir zusammen?"
+  ],
+  [
+   21,
+   "sofi",
+   "Ball und Puppe, Auto, Teddy,"
+  ],
+  [
+   21,
+   "sofi",
+   "das ist meins und das ist deins."
+  ],
+  [
+   21,
+   "sofi",
+   "Komm, wir spielen, komm, wir spielen,"
+  ],
+  [
+   21,
+   "sofi",
+   "eins und zwei und zwei und eins!"
+  ]
+ ],
+ "script": "[happy] P wie Puppe [long pause] Ist das dein Ball? [long pause] Ist das dein Auto? [long pause] Spielen wir zusammen? [long pause] Ball und Puppe, Auto, Teddy, [long pause] das ist meins und das ist deins. [long pause] Komm, wir spielen, komm, wir spielen, [long pause] eins und zwei und zwei und eins!"
+}

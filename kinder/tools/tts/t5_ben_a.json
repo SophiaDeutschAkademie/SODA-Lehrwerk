@@ -1,0 +1,59 @@
+{
+ "job": "t5_ben_a",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   17,
+   "ben",
+   "Das ist mein Hund. Er heißt Bello."
+  ],
+  [
+   17,
+   "ben",
+   "Stimmt! Du bist ein Vogel."
+  ],
+  [
+   17,
+   "ben",
+   "Und Bello ist so lieb!"
+  ],
+  [
+   18,
+   "ben",
+   "Wie macht die Kuh?"
+  ],
+  [
+   18,
+   "ben",
+   "Und wie macht das Schaf?"
+  ],
+  [
+   19,
+   "ben",
+   "Der Löwe ist stark."
+  ],
+  [
+   19,
+   "ben",
+   "He! Meine Mütze!"
+  ],
+  [
+   19,
+   "ben",
+   "Danke, Sofi!"
+  ],
+  [
+   20,
+   "ben",
+   "Ich kann auch springen! Hopp!"
+  ],
+  [
+   20,
+   "ben",
+   "Ja, ich kann schwimmen."
+  ]
+ ],
+ "script": "[happy] Das ist mein Hund. Er heißt Bello. [long pause] Stimmt! Du bist ein Vogel. [long pause] Und Bello ist so lieb! [long pause] Wie macht die Kuh? [long pause] Und wie macht das Schaf? [long pause] Der Löwe ist stark. [long pause] He! Meine Mütze! [long pause] Danke, Sofi! [long pause] Ich kann auch springen! Hopp! [long pause] Ja, ich kann schwimmen."
+}

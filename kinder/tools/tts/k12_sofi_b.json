@@ -1,0 +1,44 @@
+{
+ "job": "k12_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   12,
+   "sofi",
+   "Wo bin ich?"
+  ],
+  [
+   12,
+   "sofi",
+   "Und wo bin ich jetzt?"
+  ],
+  [
+   12,
+   "sofi",
+   "Bin ich im Bad?"
+  ],
+  [
+   12,
+   "sofi",
+   "Wo ist Sofi? Wo, wo, wo?"
+  ],
+  [
+   12,
+   "sofi",
+   "Im Bad? Im Garten? Nein, nein, nein!"
+  ],
+  [
+   12,
+   "sofi",
+   "Schau mal, schau mal: da im Bett!"
+  ],
+  [
+   12,
+   "sofi",
+   "Sofi schläft. Wie lieb, wie nett!"
+  ]
+ ],
+ "script": "[happy] Wo bin ich? [long pause] Und wo bin ich jetzt? [long pause] Bin ich im Bad? [long pause] Wo ist Sofi? Wo, wo, wo? [long pause] Im Bad? Im Garten? Nein, nein, nein! [long pause] Schau mal, schau mal: da im Bett! [long pause] Sofi schläft. Wie lieb, wie nett!"
+}

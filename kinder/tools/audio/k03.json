@@ -1,0 +1,71 @@
+{
+"aud": {
+"sofi|So lala. Ich bin müde.": "s01",
+"sofi|Danke. Gute Nacht!": "s02",
+"sofi|Gut!": "s03",
+"sofi|Super!": "s04",
+"sofi|So lala.": "s05",
+"sofi|Nicht so gut.": "s06",
+"sofi|Ich bin müde.": "s07",
+"sofi|Ich bin traurig.": "s08",
+"sofi|Mir geht’s gut.": "s09",
+"sofi|Hallo! Wie geht’s?": "s10",
+"sofi|Ich bin müde. Und du?": "s11",
+"sofi|Gute Nacht!": "s12",
+"sofi|Wie geht’s, wie geht’s, wie geht’s dir?": "s13",
+"sofi|Gut, gut, super gut!": "s14",
+"sofi|So lala? Nicht so gut?": "s15",
+"sofi|Ich bin müde. Gute Nacht!": "s16",
+"ben|Gut, danke! Und dir?": "b01",
+"ben|Oh! Gute Nacht, Sofi!": "b02",
+"lena|Hallo, Ben! Wie geht’s?": "l01",
+"lena|Super!": "l02",
+"lena|Hallo, Sofi! Wie geht’s?": "l03"
+},
+"dur": {
+"s01": 2.64,
+"s02": 2.1,
+"s03": 0.71,
+"s04": 0.77,
+"s05": 1.19,
+"s06": 1.41,
+"s07": 1.3,
+"s08": 1.23,
+"s09": 1.2,
+"s10": 1.77,
+"s11": 2.13,
+"s12": 1.09,
+"s13": 2.34,
+"s14": 2.7,
+"s15": 2.16,
+"s16": 2.29,
+"b01": 2.03,
+"b02": 1.93,
+"l01": 1.71,
+"l02": 0.79,
+"l03": 2.15
+},
+"chant": {
+"beat": 0.66,
+"bar": 2.64,
+"marks": [
+[
+0.35,
+2.99
+],
+[
+5.63,
+8.27
+],
+[
+10.91,
+13.55
+],
+[
+16.19,
+18.83
+]
+],
+"sup": 21.62
+}
+}

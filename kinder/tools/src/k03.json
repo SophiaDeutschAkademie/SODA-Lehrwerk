@@ -1,0 +1,215 @@
+{
+"n": 3,
+"kind": "pic",
+"img": {
+"szene": "In daylight LENA and BEN stand next to a small tree and wave hello to each other, smiling. The two children stand apart with clear white space between them.",
+"karten": [
+"a girl smiling with one thumb up",
+"a boy jumping happily with both arms up",
+"a girl with a neutral face tilting one flat hand from side to side",
+"a boy with a small frown scratching his head",
+"a girl yawning with closed eyes and one hand in front of her mouth",
+"a boy looking down with a sad face and hanging shoulders"
+],
+"sofi": "hoer",
+"who": {
+"lena": [
+0.27,
+0.5
+],
+"ben": [
+0.72,
+0.5
+]
+}
+},
+"story": [
+{
+"pic": "szene",
+"alt": "낮에 나무 아래에서 Lena와 Ben이 가지 위의 Sofi를 올려다봐요. Sofi는 졸려서 하품해요",
+"label": "낮, 나무 아래에서",
+"lines": [
+[
+"lena",
+"Hallo, Ben! Wie geht’s?",
+"안녕, Ben! 기분 어때?"
+],
+[
+"ben",
+"Gut, danke! Und dir?",
+"좋아, 고마워! 너는?"
+],
+[
+"lena",
+"Super!",
+"최고야!"
+],
+[
+"lena",
+"Hallo, Sofi! Wie geht’s?",
+"안녕, Sofi! 기분 어때?"
+],
+[
+"sofi",
+"So lala. Ich bin müde.",
+"그저 그래. 졸려."
+],
+[
+"ben",
+"Oh! Gute Nacht, Sofi!",
+"아! 잘 자, Sofi!"
+],
+[
+"sofi",
+"Danke. Gute Nacht!",
+"고마워. 잘 자!"
+]
+]
+}
+],
+"cards": [
+{
+"k": "c1",
+"de": "Gut!",
+"ko": "좋아!",
+"alt": "엄지를 든 웃는 아이"
+},
+{
+"k": "c2",
+"de": "Super!",
+"ko": "최고야!",
+"alt": "두 팔을 들고 펄쩍 뛰는 아이"
+},
+{
+"k": "c3",
+"de": "So lala.",
+"ko": "그저 그래.",
+"alt": "손바닥을 이리저리 기울이는 아이"
+},
+{
+"k": "c4",
+"de": "Nicht so gut.",
+"ko": "별로 안 좋아.",
+"alt": "머리를 긁적이며 얼굴을 찡그린 아이"
+},
+{
+"k": "c5",
+"de": "Ich bin müde.",
+"ko": "졸려.",
+"alt": "눈을 감고 하품하는 아이"
+},
+{
+"k": "c6",
+"de": "Ich bin traurig.",
+"ko": "슬퍼.",
+"alt": "고개를 숙인 슬픈 아이"
+}
+],
+"hint": "[[Wie geht’s?]]는 “기분 어때?”, “잘 지내?”라는 뜻이에요. 친구가 되물을 때는 [[Und dir?]]라고 해요.",
+"frames": [
+{
+"de": "Mir geht’s {a}.",
+"ko": "나는 {a}.",
+"slots": [
+"a"
+],
+"models": [
+[
+"sofi",
+"Mir geht’s gut."
+]
+]
+}
+],
+"opts": {
+"a": [
+[
+"gut",
+"기분이 좋아"
+],
+[
+"super",
+"기분이 최고야"
+],
+[
+"so lala",
+"그저 그래"
+],
+[
+"nicht so gut",
+"기분이 별로야"
+]
+]
+},
+"talk": [
+{
+"de": "Hallo! Wie geht’s?",
+"ko": "안녕! 기분 어때?",
+"me": "Gut, danke!",
+"meko": "좋아, 고마워!",
+"alt": [
+"So lala.",
+"그저 그래."
+]
+},
+{
+"de": "Ich bin müde. Und du?",
+"ko": "나는 졸려. 너는?",
+"me": "Ich auch!",
+"meko": "나도!",
+"alt": [
+"Ich nicht!",
+"나는 아니야!"
+]
+},
+{
+"de": "Gute Nacht!",
+"ko": "잘 자!",
+"me": "Gute Nacht, Sofi!",
+"meko": "잘 자, Sofi!"
+}
+],
+"reim": [
+[
+"<b>Wie</b> geht’s, <b>wie</b> geht’s, <b>wie</b> geht’s <b>dir</b>?",
+"어때, 어때, 기분 어때?",
+"어깨를 으쓱하며 두 손을 펴요"
+],
+[
+"<b>Gut</b>, <b>gut</b>, <b>su</b>per <b>gut</b>!",
+"좋아, 좋아, 아주 좋아!",
+"두 엄지를 들어요"
+],
+[
+"<b>So</b> la<b>la</b>? <b>Nicht</b> so <b>gut</b>?",
+"그저 그래? 별로야?",
+"손바닥을 이리저리 기울여요"
+],
+[
+"<b>Ich</b> bin <b>mü</b>de. <b>Gu</b>te <b>Nacht</b>!",
+"졸려. 잘 자!",
+"하품하고 두 손을 뺨에 대요"
+]
+],
+"todo": [
+"아침에 가족에게 [[Wie geht’s?]] 하고 물어요.",
+"내 기분을 얼굴 그림으로 그리고 [[Gut!]], [[So lala.]], [[Nicht so gut.]] 가운데 하나를 말해요.",
+"졸릴 때 [[Ich bin müde.]] 하고 말해요."
+],
+"goals": [
+"기분 묻고 답하기: [[Wie geht’s? – Gut! Super! So lala. Nicht so gut.]]",
+"내 상태 말하기: [[Ich bin müde. Ich bin traurig.]]",
+"고마움 나타내기와 되묻기: [[Danke! Und dir?]]"
+],
+"sounds": [
+"[[müde]]의 [[ü]]는 입술을 ‘우’처럼 모으고 혀는 ‘이’ 자리에 둡니다. [[Tschüss]]의 소리와 같습니다.",
+"[[nicht]]의 [[ch]]는 [[ich]]와 같은 소리입니다. 혀 가운데를 입천장 가까이 올리고 바람만 내보냅니다."
+],
+"lesson": [
+"기분 인사 5분: 교사가 한 명씩 [[Wie geht’s?]] 하고 묻고, 아이는 카드 가운데 하나를 골라 답합니다.",
+"이야기와 카드 15분: 1번과 2번 활동을 듣고, 교사가 표정을 지으면 아이들이 맞는 말을 외칩니다.",
+"표정 놀이 10분: 한 아이가 카드를 뽑아 표정과 몸짓만 보여 주고, 나머지가 독일어로 맞힙니다.",
+"손뼉 리듬 10분: 5번 리듬을 표정과 함께 두 번 합니다."
+],
+"sticker": "c2"
+}

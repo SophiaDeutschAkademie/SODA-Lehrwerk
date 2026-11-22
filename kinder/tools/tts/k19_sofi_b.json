@@ -1,0 +1,49 @@
+{
+ "job": "k19_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   19,
+   "sofi",
+   "L wie Löwe"
+  ],
+  [
+   19,
+   "sofi",
+   "Ist der Elefant klein?"
+  ],
+  [
+   19,
+   "sofi",
+   "Ist der Löwe stark?"
+  ],
+  [
+   19,
+   "sofi",
+   "Ich bin klein. Und du?"
+  ],
+  [
+   19,
+   "sofi",
+   "Groß, groß, groß ist der Elefant,"
+  ],
+  [
+   19,
+   "sofi",
+   "klein, klein, klein ist meine Hand."
+  ],
+  [
+   19,
+   "sofi",
+   "Stark ist der Löwe, lustig der Affe,"
+  ],
+  [
+   19,
+   "sofi",
+   "und ganz lang ist die Giraffe!"
+  ]
+ ],
+ "script": "[happy] L wie Löwe [long pause] Ist der Elefant klein? [long pause] Ist der Löwe stark? [long pause] Ich bin klein. Und du? [long pause] Groß, groß, groß ist der Elefant, [long pause] klein, klein, klein ist meine Hand. [long pause] Stark ist der Löwe, lustig der Affe, [long pause] und ganz lang ist die Giraffe!"
+}

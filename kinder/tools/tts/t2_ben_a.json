@@ -1,0 +1,59 @@
+{
+ "job": "t2_ben_a",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   5,
+   "ben",
+   "Der Ballon ist blau."
+  ],
+  [
+   5,
+   "ben",
+   "Grün!"
+  ],
+  [
+   5,
+   "ben",
+   "Danke, Sofi!"
+  ],
+  [
+   6,
+   "ben",
+   "Nein, das ist ein Heft."
+  ],
+  [
+   6,
+   "ben",
+   "Nein, Sofi! Das ist meine Brotdose!"
+  ],
+  [
+   7,
+   "ben",
+   "Oh nein!"
+  ],
+  [
+   7,
+   "ben",
+   "Okay! Noch einmal!"
+  ],
+  [
+   8,
+   "ben",
+   "Zehn, elf, zwölf …"
+  ],
+  [
+   8,
+   "ben",
+   "Sechzehn, siebzehn, achtzehn …"
+  ],
+  [
+   8,
+   "ben",
+   "Ich bin müde. Gute Nacht!"
+  ]
+ ],
+ "script": "[happy] Der Ballon ist blau. [long pause] Grün! [long pause] Danke, Sofi! [long pause] Nein, das ist ein Heft. [long pause] Nein, Sofi! Das ist meine Brotdose! [long pause] Oh nein! [long pause] Okay! Noch einmal! [long pause] Zehn, elf, zwölf … [long pause] Sechzehn, siebzehn, achtzehn … [long pause] Ich bin müde. Gute Nacht!"
+}

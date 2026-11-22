@@ -1,0 +1,54 @@
+{
+ "job": "k06_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   6,
+   "sofi",
+   "Was ist das?"
+  ],
+  [
+   6,
+   "sofi",
+   "Und das? Ist das ein Buch?"
+  ],
+  [
+   6,
+   "sofi",
+   "Und was ist das?"
+  ],
+  [
+   6,
+   "sofi",
+   "Oh! Eine Brotdose. Lecker!"
+  ],
+  [
+   6,
+   "sofi",
+   "der Stift"
+  ],
+  [
+   6,
+   "sofi",
+   "der Kleber"
+  ],
+  [
+   6,
+   "sofi",
+   "das Buch"
+  ],
+  [
+   6,
+   "sofi",
+   "das Heft"
+  ],
+  [
+   6,
+   "sofi",
+   "die Schere"
+  ]
+ ],
+ "script": "[happy] Was ist das? [long pause] Und das? Ist das ein Buch? [long pause] Und was ist das? [long pause] Oh! Eine Brotdose. Lecker! [long pause] der Stift [long pause] der Kleber [long pause] das Buch [long pause] das Heft [long pause] die Schere"
+}

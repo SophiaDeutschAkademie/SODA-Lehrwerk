@@ -1,0 +1,39 @@
+{
+ "job": "t3_ben_a",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   9,
+   "ben",
+   "Und wer ist das?"
+  ],
+  [
+   10,
+   "ben",
+   "Hier ist mein Bauch!"
+  ],
+  [
+   10,
+   "ben",
+   "Und wo ist deine Hand?"
+  ],
+  [
+   11,
+   "ben",
+   "Mein Pulli ist grün."
+  ],
+  [
+   11,
+   "ben",
+   "Aber wo ist meine Mütze?"
+  ],
+  [
+   11,
+   "ben",
+   "Ja, meine Mütze ist rot."
+  ]
+ ],
+ "script": "[happy] Und wer ist das? [long pause] Hier ist mein Bauch! [long pause] Und wo ist deine Hand? [long pause] Mein Pulli ist grün. [long pause] Aber wo ist meine Mütze? [long pause] Ja, meine Mütze ist rot."
+}

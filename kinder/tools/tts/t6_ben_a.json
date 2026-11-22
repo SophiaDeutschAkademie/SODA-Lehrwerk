@@ -1,0 +1,39 @@
+{
+ "job": "t6_ben_a",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   21,
+   "ben",
+   "Ja, das ist mein Ball."
+  ],
+  [
+   21,
+   "ben",
+   "Ist das deine Puppe?"
+  ],
+  [
+   21,
+   "ben",
+   "Ja! Wir spielen zusammen!"
+  ],
+  [
+   22,
+   "ben",
+   "Ich spiele gern Fußball."
+  ],
+  [
+   22,
+   "ben",
+   "Was machst du gern, Sofi?"
+  ],
+  [
+   23,
+   "ben",
+   "Lena, spielst du mit?"
+  ]
+ ],
+ "script": "[happy] Ja, das ist mein Ball. [long pause] Ist das deine Puppe? [long pause] Ja! Wir spielen zusammen! [long pause] Ich spiele gern Fußball. [long pause] Was machst du gern, Sofi? [long pause] Lena, spielst du mit?"
+}

@@ -1,0 +1,69 @@
+{
+"aud": {
+"sofi|Wo ist deine Nase?": "s01",
+"sofi|Wo ist dein Bauch?": "s02",
+"sofi|Mein Ohr? Hm … Hier!": "s03",
+"sofi|Hand? Nein! Das ist mein Flügel!": "s04",
+"sofi|der Kopf": "s05",
+"sofi|die Nase": "s06",
+"sofi|das Ohr": "s07",
+"sofi|die Hand": "s08",
+"sofi|der Bauch": "s09",
+"sofi|der Fuß": "s10",
+"sofi|N wie Nase": "s11",
+"sofi|Wo ist dein Fuß?": "s12",
+"sofi|Kopf, Bauch, Hand, Fuß,": "s13",
+"sofi|das bin ich von Kopf bis Fuß!": "s14",
+"sofi|Nase hier und Ohren da,": "s15",
+"sofi|ich bin ich – hurra, hurra!": "s16",
+"ben|Hier ist mein Bauch!": "b01",
+"ben|Und wo ist deine Hand?": "b02",
+"lena|Hier! Das ist meine Nase.": "l01",
+"lena|Sofi, wo ist dein Ohr?": "l02"
+},
+"dur": {
+"s01": 1.43,
+"s02": 1.32,
+"s03": 2.69,
+"s04": 3.05,
+"s05": 0.89,
+"s06": 1.08,
+"s07": 1.01,
+"s08": 0.72,
+"s09": 1.03,
+"s10": 0.99,
+"s11": 2.11,
+"s12": 1.49,
+"s13": 3.8,
+"s14": 3.11,
+"s15": 2.63,
+"s16": 2.55,
+"b01": 1.45,
+"b02": 2.15,
+"l01": 2.1,
+"l02": 2.14
+},
+"chant": {
+"beat": 0.86,
+"bar": 3.44,
+"marks": [
+[
+0.35,
+3.79
+],
+[
+7.23,
+10.67
+],
+[
+14.11,
+17.55
+],
+[
+20.99,
+24.43
+]
+],
+"sup": 28.02
+}
+}

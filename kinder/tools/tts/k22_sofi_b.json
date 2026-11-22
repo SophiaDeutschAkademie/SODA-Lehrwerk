@@ -1,0 +1,49 @@
+{
+ "job": "k22_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   22,
+   "sofi",
+   "R wie Rad"
+  ],
+  [
+   22,
+   "sofi",
+   "Was machst du gern?"
+  ],
+  [
+   22,
+   "sofi",
+   "Ich lese gern. Und du?"
+  ],
+  [
+   22,
+   "sofi",
+   "Spielst du gern Fußball?"
+  ],
+  [
+   22,
+   "sofi",
+   "Malen, singen, lesen, basteln,"
+  ],
+  [
+   22,
+   "sofi",
+   "das macht Spaß, das mach ich gern!"
+  ],
+  [
+   22,
+   "sofi",
+   "Fußball spielen, Rad fahren,"
+  ],
+  [
+   22,
+   "sofi",
+   "und am Abend schlaf ich gern!"
+  ]
+ ],
+ "script": "[happy] R wie Rad [long pause] Was machst du gern? [long pause] Ich lese gern. Und du? [long pause] Spielst du gern Fußball? [long pause] Malen, singen, lesen, basteln, [long pause] das macht Spaß, das mach ich gern! [long pause] Fußball spielen, Rad fahren, [long pause] und am Abend schlaf ich gern!"
+}

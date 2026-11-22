@@ -1,0 +1,49 @@
+{
+ "job": "k16_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   16,
+   "sofi",
+   "das Geld"
+  ],
+  [
+   16,
+   "sofi",
+   "der Korb"
+  ],
+  [
+   16,
+   "sofi",
+   "S wie Salat"
+  ],
+  [
+   16,
+   "sofi",
+   "Hier, bitte!"
+  ],
+  [
+   16,
+   "sofi",
+   "Auf dem Markt, auf dem Markt"
+  ],
+  [
+   16,
+   "sofi",
+   "kauf ich ein, kauf ich ein:"
+  ],
+  [
+   16,
+   "sofi",
+   "Zwei Äpfel, drei Birnen,"
+  ],
+  [
+   16,
+   "sofi",
+   "alles in den Korb hinein!"
+  ]
+ ],
+ "script": "[happy] das Geld [long pause] der Korb [long pause] S wie Salat [long pause] Hier, bitte! [long pause] Auf dem Markt, auf dem Markt [long pause] kauf ich ein, kauf ich ein: [long pause] Zwei Äpfel, drei Birnen, [long pause] alles in den Korb hinein!"
+}

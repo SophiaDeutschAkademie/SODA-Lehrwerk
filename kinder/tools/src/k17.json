@@ -1,0 +1,235 @@
+{
+"n": 17,
+"kind": "pic",
+"img": {
+"szene": "In a park BEN kneels at the left next to a friendly brown dog and strokes it, and LENA stands at the right holding a gray cat in her arms. Clear white space between the boy with the dog and the girl with the cat.",
+"sofi": "super",
+"karten": [
+"a friendly brown dog",
+"a gray cat",
+"a small bird",
+"a goldfish in a round bowl",
+"a rabbit with long ears",
+"a small gray mouse"
+],
+"who": {
+"ben": [
+0.29,
+0.65
+],
+"lena": [
+0.76,
+0.45
+]
+}
+},
+"story": [
+{
+"pic": "szene",
+"alt": "공원에서 Ben이 갈색 개 옆에 앉아 개를 쓰다듬어요. Lena는 회색 고양이를 안고 있어요",
+"label": "공원에서",
+"lines": [
+[
+"ben",
+"Das ist mein Hund. Er heißt Bello.",
+"얘는 내 개야. 이름은 Bello야."
+],
+[
+"lena",
+"Ich habe eine Katze.",
+"나는 고양이가 있어."
+],
+[
+"lena",
+"Sie heißt Mimi.",
+"이름은 Mimi야."
+],
+[
+"lena",
+"Sofi, hast du auch ein Tier?",
+"Sofi, 너도 동물이 있어?"
+],
+[
+"sofi",
+"Nein. Aber ich bin ein Vogel!",
+"아니. 하지만 나는 새잖아!"
+],
+[
+"ben",
+"Stimmt! Du bist ein Vogel.",
+"맞아! 너는 새야."
+],
+[
+"lena",
+"Mimi ist so süß!",
+"Mimi는 정말 귀여워!"
+],
+[
+"ben",
+"Und Bello ist so lieb!",
+"그리고 Bello는 정말 착해!"
+]
+]
+}
+],
+"cards": [
+{
+"k": "c1",
+"art": "der",
+"de": "der Hund",
+"ko": "개",
+"alt": "갈색 개"
+},
+{
+"k": "c2",
+"art": "die",
+"de": "die Katze",
+"ko": "고양이",
+"alt": "회색 고양이"
+},
+{
+"k": "c3",
+"art": "der",
+"de": "der Vogel",
+"ko": "새",
+"alt": "작은 새"
+},
+{
+"k": "c4",
+"art": "der",
+"de": "der Fisch",
+"ko": "물고기",
+"alt": "둥근 어항 속 금붕어"
+},
+{
+"k": "c5",
+"art": "der",
+"de": "der Hase",
+"ko": "토끼",
+"alt": "귀가 긴 토끼"
+},
+{
+"k": "c6",
+"art": "die",
+"de": "die Maus",
+"ko": "쥐",
+"alt": "작은 회색 쥐"
+}
+],
+"hint": "파랑 테두리 낱말은 [[einen]]으로 바뀌어요. [[Ich habe einen Hund.]] 빨강 테두리 낱말은 그대로 [[eine]]예요. [[Ich habe eine Katze.]]",
+"letter": [
+"V v",
+"V wie Vogel"
+],
+"trace": "Hund",
+"frames": [
+{
+"de": "Ich habe {a}.",
+"ko": "나는 {a}.",
+"slots": [
+"a"
+],
+"models": [
+[
+"lena",
+"Ich habe eine Katze."
+]
+]
+}
+],
+"opts": {
+"a": [
+[
+"einen Hund",
+"개가 있어"
+],
+[
+"eine Katze",
+"고양이가 있어"
+],
+[
+"einen Vogel",
+"새가 있어"
+],
+[
+"einen Fisch",
+"물고기가 있어"
+],
+[
+"eine Maus",
+"쥐가 있어"
+],
+[
+"kein Tier",
+"동물이 없어"
+]
+]
+},
+"talk": [
+{
+"de": "Hast du ein Tier?",
+"ko": "너는 동물이 있어?",
+"me": "Ich habe {a}.",
+"meko": "나는 {a}."
+},
+{
+"de": "Was ist das?",
+"ko": "이게 뭐야?",
+"pic": "c1",
+"me": "Das ist ein Hund.",
+"meko": "이건 개야."
+},
+{
+"de": "Ist das eine Maus?",
+"ko": "이거 쥐야?",
+"pic": "c2",
+"me": "Nein, das ist eine Katze.",
+"meko": "아니, 이건 고양이야."
+}
+],
+"reim": [
+[
+"<b>Hund</b> und <b>Kat</b>ze, <b>Maus</b> und <b>Fisch</b>,",
+"개와 고양이, 쥐와 물고기,",
+"손가락을 하나씩 펴요"
+],
+[
+"<b>al</b>le <b>sit</b>zen <b>an</b> dem <b>Tisch</b>.",
+"모두 식탁에 앉아 있어.",
+"책상을 두 손으로 두드려요"
+],
+[
+"<b>Wau</b>, wau, <b>wau</b> und mi<b>au</b>, mi<b>au</b>,",
+"멍, 멍, 멍 그리고 야옹, 야옹,",
+"개와 고양이 흉내를 내요"
+],
+[
+"<b>das</b> ist <b>mein</b> Zu<b>hau</b>se, <b>schau</b>!",
+"여기가 우리 집이야, 봐!",
+"두 팔을 활짝 펴요"
+]
+],
+"reimNote": "독일 개는 [[wau, wau]], 고양이는 [[miau]] 하고 울어요.",
+"todo": [
+"좋아하는 동물을 그리고 [[Das ist ein …]], [[Das ist eine …]] 하고 말해요.",
+"가족에게 [[Hast du ein Tier?]] 하고 물어요.",
+"흐린 글자 위에 [[Hund]]를 따라 써요."
+],
+"goals": [
+"집에서 기르는 동물 여섯 가지: [[der Hund, die Katze, der Vogel, der Fisch, der Hase, die Maus]]",
+"기르는 동물 말하기: [[Ich habe einen Hund. Ich habe eine Katze.]]",
+"이름 알려 주기: [[Er heißt Bello. Sie heißt Mimi.]]",
+"첫소리 글자 [[V]]와 낱말 따라 쓰기: [[Vogel, vier]]"
+],
+"sounds": [
+"[[Vogel]]의 [[V]]는 영어 f와 같은 소리입니다. [[vier]]도 같습니다.",
+"[[Hund]]의 끝 [[d]]는 ‘트’에 가깝게 소리 납니다. [[Maus]]의 [[au]]는 ‘아우’입니다."
+],
+"lesson": [
+"동물 소리 5분: 교사가 동물 소리를 내면 아이들이 이름을 맞힙니다.",
+"이야기와 카드 15분: 1번과 2번 활동을 듣고, 테두리 색에 따라 [[einen]]과 [[eine]]를 나눠 말합니다. 글자 [[V]]를 쓰고 [[V wie Vogel]]을 말합니다.",
+"동물 인터뷰 10분: 동물 카드를 한 장씩 뽑아 그 동물을 기르는 사람이 되어 [[Ich habe …. Er/Sie heißt ….]]로 말합니다.",
+"따라 쓰기와 리듬 10분: [[Hund]]를 공책에 세 번 쓰고, 5번 리듬을 동작과 함께 합니다."
+],
+"sticker": "c1"
+}

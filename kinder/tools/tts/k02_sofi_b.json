@@ -1,0 +1,39 @@
+{
+ "job": "k02_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   2,
+   "sofi",
+   "Und du?"
+  ],
+  [
+   2,
+   "sofi",
+   "Freut mich!"
+  ],
+  [
+   2,
+   "sofi",
+   "Wie heißt du? Wie heißt du?"
+  ],
+  [
+   2,
+   "sofi",
+   "Ich heiße Lena. Und du?"
+  ],
+  [
+   2,
+   "sofi",
+   "Wer ist das? Wer ist das?"
+  ],
+  [
+   2,
+   "sofi",
+   "Das ist Ben! Freut mich sehr!"
+  ]
+ ],
+ "script": "[happy] Und du? [long pause] Freut mich! [long pause] Wie heißt du? Wie heißt du? [long pause] Ich heiße Lena. Und du? [long pause] Wer ist das? Wer ist das? [long pause] Das ist Ben! Freut mich sehr!"
+}

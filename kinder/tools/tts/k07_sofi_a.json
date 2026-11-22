@@ -1,0 +1,49 @@
+{
+ "job": "k07_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   7,
+   "sofi",
+   "Sofi sagt: Steh auf!"
+  ],
+  [
+   7,
+   "sofi",
+   "Sofi sagt: Spring!"
+  ],
+  [
+   7,
+   "sofi",
+   "Sofi sagt: Dreh dich!"
+  ],
+  [
+   7,
+   "sofi",
+   "Setz dich!"
+  ],
+  [
+   7,
+   "sofi",
+   "Stopp, Ben! Noch einmal!"
+  ],
+  [
+   7,
+   "sofi",
+   "Steh auf!"
+  ],
+  [
+   7,
+   "sofi",
+   "Komm her!"
+  ],
+  [
+   7,
+   "sofi",
+   "Spring!"
+  ]
+ ],
+ "script": "[happy] Sofi sagt: Steh auf! [long pause] Sofi sagt: Spring! [long pause] Sofi sagt: Dreh dich! [long pause] Setz dich! [long pause] Stopp, Ben! Noch einmal! [long pause] Steh auf! [long pause] Komm her! [long pause] Spring!"
+}

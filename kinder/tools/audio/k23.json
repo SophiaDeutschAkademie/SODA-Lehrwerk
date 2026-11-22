@@ -1,0 +1,67 @@
+{
+"aud": {
+"sofi|Ja, gern!": "s01",
+"sofi|Juhu! Gewonnen!": "s02",
+"sofi|Spielst du mit?": "s03",
+"sofi|Nein, danke.": "s04",
+"sofi|Du bist dran!": "s05",
+"sofi|Ich bin dran!": "s06",
+"sofi|Gewonnen!": "s07",
+"sofi|Sp wie Spiel": "s08",
+"sofi|Was spielen wir?": "s09",
+"sofi|Spielst du mit? Spielst du mit?": "s10",
+"sofi|Ja, ich spiele gerne mit!": "s11",
+"sofi|Ich bin dran und du bist dran,": "s12",
+"sofi|jeder kommt hier einmal dran!": "s13",
+"ben|Lena, spielst du mit?": "b01",
+"ben|Wir spielen Memory.": "b02",
+"ben|Ich bin dran. Oh nein!": "b03",
+"lena|Ja, gern! Was spielen wir?": "l01",
+"lena|Sofi, spielst du auch mit?": "l02",
+"lena|Sofi, du bist dran!": "l03"
+},
+"dur": {
+"s01": 1.28,
+"s02": 1.93,
+"s03": 1.15,
+"s04": 1.22,
+"s05": 0.97,
+"s06": 1.12,
+"s07": 0.89,
+"s08": 1.35,
+"s09": 1.34,
+"s10": 2.68,
+"s11": 2.18,
+"s12": 2.42,
+"s13": 1.89,
+"b01": 1.5,
+"b02": 1.64,
+"b03": 2.25,
+"l01": 2.26,
+"l02": 1.76,
+"l03": 1.45
+},
+"chant": {
+"beat": 0.66,
+"bar": 2.64,
+"marks": [
+[
+0.35,
+2.99
+],
+[
+5.63,
+8.27
+],
+[
+10.91,
+13.55
+],
+[
+16.19,
+18.83
+]
+],
+"sup": 21.62
+}
+}

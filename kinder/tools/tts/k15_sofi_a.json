@@ -1,0 +1,49 @@
+{
+ "job": "k15_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   15,
+   "sofi",
+   "Ich habe Durst."
+  ],
+  [
+   15,
+   "sofi",
+   "Ja, bitte!"
+  ],
+  [
+   15,
+   "sofi",
+   "Danke, Lena!"
+  ],
+  [
+   15,
+   "sofi",
+   "Ich habe Hunger."
+  ],
+  [
+   15,
+   "sofi",
+   "Hier, bitte!"
+  ],
+  [
+   15,
+   "sofi",
+   "Danke!"
+  ],
+  [
+   15,
+   "sofi",
+   "Lecker!"
+  ],
+  [
+   15,
+   "sofi",
+   "Ich bin satt."
+  ]
+ ],
+ "script": "[happy] Ich habe Durst. [long pause] Ja, bitte! [long pause] Danke, Lena! [long pause] Ich habe Hunger. [long pause] Hier, bitte! [long pause] Danke! [long pause] Lecker! [long pause] Ich bin satt."
+}

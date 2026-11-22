@@ -1,0 +1,49 @@
+{
+ "job": "k15_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   15,
+   "sofi",
+   "D wie Durst"
+  ],
+  [
+   15,
+   "sofi",
+   "Ich möchte Wasser, bitte."
+  ],
+  [
+   15,
+   "sofi",
+   "Ich habe Durst. Und du?"
+  ],
+  [
+   15,
+   "sofi",
+   "Was möchtest du?"
+  ],
+  [
+   15,
+   "sofi",
+   "Hunger, Hunger, ich hab Hunger!"
+  ],
+  [
+   15,
+   "sofi",
+   "Durst, Durst, ich hab Durst!"
+  ],
+  [
+   15,
+   "sofi",
+   "Brot und Wasser, bitte sehr!"
+  ],
+  [
+   15,
+   "sofi",
+   "Danke, danke, danke sehr!"
+  ]
+ ],
+ "script": "[happy] D wie Durst [long pause] Ich möchte Wasser, bitte. [long pause] Ich habe Durst. Und du? [long pause] Was möchtest du? [long pause] Hunger, Hunger, ich hab Hunger! [long pause] Durst, Durst, ich hab Durst! [long pause] Brot und Wasser, bitte sehr! [long pause] Danke, danke, danke sehr!"
+}

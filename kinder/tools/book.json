@@ -1,0 +1,47 @@
+{"book":[
+{"n":1,"de":"Hallo!","ko":"만나요","items":[
+ {"n":1,"de":"Hallo!","ko":"인사해요","key":"Hallo! Ich bin …"},
+ {"n":2,"de":"Wie heißt du?","ko":"이름을 물어요","key":"Wie heißt du? – Ich heiße …"},
+ {"n":3,"de":"Wie geht’s?","ko":"기분을 말해요","key":"Wie geht’s? – Gut!"},
+ {"n":4,"de":"Eins, zwei, drei","ko":"열까지 세요","key":"Wie alt bist du? – Ich bin acht."}]},
+{"n":2,"de":"Bunte Welt","ko":"알록달록 세상","note":"첫소리 글자 시작","items":[
+ {"n":5,"de":"Rot, blau, grün","ko":"색깔","key":"Der Ballon ist rot."},
+ {"n":6,"de":"Mein Schulranzen","ko":"책가방 속","key":"Was ist das? – Das ist ein Stift."},
+ {"n":7,"de":"Steh auf! Setz dich!","ko":"몸으로 해요","key":"Sofi sagt: Steh auf!"},
+ {"n":8,"de":"Elf, zwölf, dreizehn","ko":"스물까지 세요","key":"Wie viele Sterne? – Zwölf!"}]},
+{"n":3,"de":"Ich und meine Familie","ko":"나와 우리 가족","items":[
+ {"n":9,"de":"Meine Familie","ko":"우리 가족","key":"Das ist meine Mama. Das ist mein Papa."},
+ {"n":10,"de":"Kopf, Bauch, Fuß","ko":"내 몸","key":"Wo ist deine Nase? – Hier!"},
+ {"n":11,"de":"Hose und Pulli","ko":"옷","key":"Meine Jacke ist blau."},
+ {"n":12,"de":"Mein Zuhause","ko":"우리 집","key":"Wo ist Sofi? – Im Bett!"}]},
+{"n":4,"de":"Lecker!","ko":"맛있어요","items":[
+ {"n":13,"de":"Obst und Gemüse","ko":"과일과 채소","key":"Magst du Äpfel? – Ja! – Nein!"},
+ {"n":14,"de":"Mein Frühstück","ko":"아침밥","key":"Ich esse Brot. Ich trinke Milch."},
+ {"n":15,"de":"Hunger und Durst","ko":"배고파요, 목말라요","key":"Ich habe Hunger. – Hier, bitte! – Danke!"},
+ {"n":16,"de":"Auf dem Markt","ko":"시장 놀이","key":"Zwei Äpfel, bitte!"}]},
+{"n":5,"de":"Tiere","ko":"동물 친구들","note":"따라 쓰기 시작","items":[
+ {"n":17,"de":"Hund und Katze","ko":"집에서 사는 동물","key":"Ich habe eine Katze."},
+ {"n":18,"de":"Auf dem Bauernhof","ko":"농장에서","key":"Wie macht die Kuh? – Muh!"},
+ {"n":19,"de":"Im Zoo","ko":"동물원에서","key":"Der Elefant ist groß. Die Maus ist klein."},
+ {"n":20,"de":"Was kann der Frosch?","ko":"동물이 잘하는 것","key":"Der Frosch kann springen. Ich auch!"}]},
+{"n":6,"de":"Spielen und Freunde","ko":"놀이와 친구","items":[
+ {"n":21,"de":"Mein Spielzeug","ko":"장난감","key":"Ist das dein Ball? – Ja, das ist mein Ball."},
+ {"n":22,"de":"Was machst du gern?","ko":"좋아하는 놀이","key":"Ich male gern. Und du?"},
+ {"n":23,"de":"Spielst du mit?","ko":"같이 놀자","key":"Spielst du mit? – Ja, gern!"},
+ {"n":24,"de":"Woher kommst du?","ko":"어디에서 왔어요?","key":"Woher kommst du? – Ich komme aus Korea."}]},
+{"n":7,"de":"Mein Tag","ko":"나의 하루","items":[
+ {"n":25,"de":"Von morgens bis abends","ko":"아침부터 저녁까지","key":"Ich stehe auf. Ich gehe in die Schule."},
+ {"n":26,"de":"Wie spät ist es?","ko":"몇 시예요?","key":"Wie spät ist es? – Es ist drei Uhr."},
+ {"n":27,"de":"Montag, Dienstag …","ko":"요일","key":"Heute ist Montag."},
+ {"n":28,"de":"Mit dem Bus","ko":"학교 가는 길","key":"Ich fahre mit dem Bus."}]},
+{"n":8,"de":"Das Jahr","ko":"일 년","items":[
+ {"n":29,"de":"Wie ist das Wetter?","ko":"날씨","key":"Die Sonne scheint. Es regnet."},
+ {"n":30,"de":"Die Jahreszeiten","ko":"사계절","key":"Im Winter ist es kalt."},
+ {"n":31,"de":"Januar, Februar, März","ko":"열두 달","key":"Wann hast du Geburtstag? – Im Mai."},
+ {"n":32,"de":"Alles Gute!","ko":"생일잔치","key":"Alles Gute zum Geburtstag!"}]}
+],
+"feste":[
+ {"de":"Ostern","ko":"부활절, 봄","key":"Frohe Ostern!"},
+ {"de":"Laternenfest","ko":"등불 축제, 11월","key":"Meine Laterne leuchtet."},
+ {"de":"Nikolaus","ko":"니콜라우스의 날, 12월 6일","key":"Danke, lieber Nikolaus!"},
+ {"de":"Weihnachten","ko":"성탄절, 12월","key":"Frohe Weihnachten!"}]}

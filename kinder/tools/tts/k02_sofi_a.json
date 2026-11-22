@@ -1,0 +1,44 @@
+{
+ "job": "k02_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   2,
+   "sofi",
+   "Hallo! Wie heißt du?"
+  ],
+  [
+   2,
+   "sofi",
+   "Und du? Wie heißt du?"
+  ],
+  [
+   2,
+   "sofi",
+   "Wer ist das?"
+  ],
+  [
+   2,
+   "sofi",
+   "Hallo, Teddy! Freut mich!"
+  ],
+  [
+   2,
+   "sofi",
+   "Wie heißt du?"
+  ],
+  [
+   2,
+   "sofi",
+   "Ich heiße Sofi."
+  ],
+  [
+   2,
+   "sofi",
+   "Das ist Teddy."
+  ]
+ ],
+ "script": "[happy] Hallo! Wie heißt du? [long pause] Und du? Wie heißt du? [long pause] Wer ist das? [long pause] Hallo, Teddy! Freut mich! [long pause] Wie heißt du? [long pause] Ich heiße Sofi. [long pause] Das ist Teddy."
+}

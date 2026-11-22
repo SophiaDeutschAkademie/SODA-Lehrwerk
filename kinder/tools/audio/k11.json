@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Schau mal! Da ist deine Mütze!": "s01",
+"sofi|die Hose": "s02",
+"sofi|der Pulli": "s03",
+"sofi|die Jacke": "s04",
+"sofi|das T-Shirt": "s05",
+"sofi|die Mütze": "s06",
+"sofi|der Schuh": "s07",
+"sofi|J wie Jacke": "s08",
+"sofi|Ist deine Hose blau?": "s09",
+"sofi|Was ist das?": "s10",
+"sofi|Ist dein Pulli grün?": "s11",
+"sofi|Hose, Pulli, Jacke, Schuh,": "s12",
+"sofi|Mütze auf und Tür jetzt zu!": "s13",
+"sofi|Rot und blau und gelb und grün,": "s14",
+"sofi|alle Sachen sind so schön!": "s15",
+"ben|Mein Pulli ist grün.": "b01",
+"ben|Aber wo ist meine Mütze?": "b02",
+"ben|Ja, meine Mütze ist rot.": "b03",
+"ben|Danke, Sofi!": "b04",
+"lena|Brr, es ist kalt!": "l01",
+"lena|Meine Jacke ist blau.": "l02",
+"lena|Ist deine Mütze rot?": "l03"
+},
+"dur": {
+"s01": 2.45,
+"s02": 1.07,
+"s03": 1.02,
+"s04": 1.03,
+"s05": 1.35,
+"s06": 1.07,
+"s07": 1.0,
+"s08": 2.21,
+"s09": 1.59,
+"s10": 0.98,
+"s11": 1.41,
+"s12": 3.14,
+"s13": 2.7,
+"s14": 2.92,
+"s15": 2.56,
+"b01": 1.63,
+"b02": 2.14,
+"b03": 2.15,
+"b04": 1.14,
+"l01": 1.33,
+"l02": 1.76,
+"l03": 1.65
+},
+"chant": {
+"beat": 0.82,
+"bar": 3.28,
+"marks": [
+[
+0.35,
+3.63
+],
+[
+6.91,
+10.19
+],
+[
+13.47,
+16.75
+],
+[
+20.03,
+23.31
+]
+],
+"sup": 26.74
+}
+}

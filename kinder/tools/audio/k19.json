@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Der Pinguin ist klein. Wie ich!": "s01",
+"sofi|Ich bin schnell! Hier, Ben!": "s02",
+"sofi|der Elefant": "s03",
+"sofi|der Löwe": "s04",
+"sofi|der Affe": "s05",
+"sofi|die Giraffe": "s06",
+"sofi|der Bär": "s07",
+"sofi|der Pinguin": "s08",
+"sofi|L wie Löwe": "s09",
+"sofi|Ist der Elefant klein?": "s10",
+"sofi|Ist der Löwe stark?": "s11",
+"sofi|Ich bin klein. Und du?": "s12",
+"sofi|Groß, groß, groß ist der Elefant,": "s13",
+"sofi|klein, klein, klein ist meine Hand.": "s14",
+"sofi|Stark ist der Löwe, lustig der Affe,": "s15",
+"sofi|und ganz lang ist die Giraffe!": "s16",
+"ben|Der Löwe ist stark.": "b01",
+"ben|He! Meine Mütze!": "b02",
+"ben|Danke, Sofi!": "b03",
+"lena|Schau mal, der Elefant! Er ist so groß!": "l01",
+"lena|Der Affe ist lustig.": "l02",
+"lena|Der Affe hat deine Mütze!": "l03"
+},
+"dur": {
+"s01": 2.5,
+"s02": 2.12,
+"s03": 1.12,
+"s04": 1.07,
+"s05": 0.94,
+"s06": 1.11,
+"s07": 0.95,
+"s08": 1.16,
+"s09": 1.61,
+"s10": 1.77,
+"s11": 1.57,
+"s12": 1.95,
+"s13": 3.3,
+"s14": 2.78,
+"s15": 3.18,
+"s16": 3.23,
+"b01": 1.68,
+"b02": 1.69,
+"b03": 1.11,
+"l01": 3.59,
+"l02": 1.87,
+"l03": 1.89
+},
+"chant": {
+"beat": 0.86,
+"bar": 3.44,
+"marks": [
+[
+0.35,
+3.79
+],
+[
+7.23,
+10.67
+],
+[
+14.11,
+17.55
+],
+[
+20.99,
+24.43
+]
+],
+"sup": 28.02
+}
+}

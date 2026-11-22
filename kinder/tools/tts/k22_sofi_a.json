@@ -1,0 +1,49 @@
+{
+ "job": "k22_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   22,
+   "sofi",
+   "Was machst du gern, Lena?"
+  ],
+  [
+   22,
+   "sofi",
+   "Ich lese gern. Und ich singe gern!"
+  ],
+  [
+   22,
+   "sofi",
+   "malen"
+  ],
+  [
+   22,
+   "sofi",
+   "singen"
+  ],
+  [
+   22,
+   "sofi",
+   "lesen"
+  ],
+  [
+   22,
+   "sofi",
+   "basteln"
+  ],
+  [
+   22,
+   "sofi",
+   "Fußball spielen"
+  ],
+  [
+   22,
+   "sofi",
+   "Rad fahren"
+  ]
+ ],
+ "script": "[happy] Was machst du gern, Lena? [long pause] Ich lese gern. Und ich singe gern! [long pause] malen [long pause] singen [long pause] lesen [long pause] basteln [long pause] Fußball spielen [long pause] Rad fahren"
+}

@@ -1,0 +1,49 @@
+{
+ "job": "k03_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   3,
+   "sofi",
+   "So lala. Ich bin müde."
+  ],
+  [
+   3,
+   "sofi",
+   "Danke. Gute Nacht!"
+  ],
+  [
+   3,
+   "sofi",
+   "Gut!"
+  ],
+  [
+   3,
+   "sofi",
+   "Super!"
+  ],
+  [
+   3,
+   "sofi",
+   "So lala."
+  ],
+  [
+   3,
+   "sofi",
+   "Nicht so gut."
+  ],
+  [
+   3,
+   "sofi",
+   "Ich bin müde."
+  ],
+  [
+   3,
+   "sofi",
+   "Ich bin traurig."
+  ]
+ ],
+ "script": "[happy] So lala. Ich bin müde. [long pause] Danke. Gute Nacht! [long pause] Gut! [long pause] Super! [long pause] So lala. [long pause] Nicht so gut. [long pause] Ich bin müde. [long pause] Ich bin traurig."
+}

@@ -1,0 +1,54 @@
+{
+ "job": "k20_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   20,
+   "sofi",
+   "Schaut mal, ein Frosch!"
+  ],
+  [
+   20,
+   "sofi",
+   "Nein, ich kann nicht schwimmen."
+  ],
+  [
+   20,
+   "sofi",
+   "Aber ich kann fliegen! Tschüss!"
+  ],
+  [
+   20,
+   "sofi",
+   "springen"
+  ],
+  [
+   20,
+   "sofi",
+   "fliegen"
+  ],
+  [
+   20,
+   "sofi",
+   "schwimmen"
+  ],
+  [
+   20,
+   "sofi",
+   "laufen"
+  ],
+  [
+   20,
+   "sofi",
+   "klettern"
+  ],
+  [
+   20,
+   "sofi",
+   "tanzen"
+  ]
+ ],
+ "script": "[happy] Schaut mal, ein Frosch! [long pause] Nein, ich kann nicht schwimmen. [long pause] Aber ich kann fliegen! Tschüss! [long pause] springen [long pause] fliegen [long pause] schwimmen [long pause] laufen [long pause] klettern [long pause] tanzen"
+}

@@ -1,0 +1,71 @@
+{
+"aud": {
+"sofi|Was machst du gern, Lena?": "s01",
+"sofi|Ich lese gern. Und ich singe gern!": "s02",
+"sofi|malen": "s03",
+"sofi|singen": "s04",
+"sofi|lesen": "s05",
+"sofi|basteln": "s06",
+"sofi|Fußball spielen": "s07",
+"sofi|Rad fahren": "s08",
+"sofi|R wie Rad": "s09",
+"sofi|Was machst du gern?": "s10",
+"sofi|Ich lese gern. Und du?": "s11",
+"sofi|Spielst du gern Fußball?": "s12",
+"sofi|Malen, singen, lesen, basteln,": "s13",
+"sofi|das macht Spaß, das mach ich gern!": "s14",
+"sofi|Fußball spielen, Rad fahren,": "s15",
+"sofi|und am Abend schlaf ich gern!": "s16",
+"ben|Ich spiele gern Fußball.": "b01",
+"ben|Was machst du gern, Sofi?": "b02",
+"lena|Ich male gern.": "l01",
+"lena|Und ich fahre gern Rad.": "l02",
+"lena|Schön! Wir singen zusammen!": "l03"
+},
+"dur": {
+"s01": 1.81,
+"s02": 2.85,
+"s03": 0.92,
+"s04": 0.89,
+"s05": 0.89,
+"s06": 0.88,
+"s07": 1.33,
+"s08": 1.17,
+"s09": 1.41,
+"s10": 1.23,
+"s11": 1.96,
+"s12": 1.67,
+"s13": 3.61,
+"s14": 2.58,
+"s15": 2.2,
+"s16": 2.21,
+"b01": 1.68,
+"b02": 1.59,
+"l01": 1.26,
+"l02": 1.81,
+"l03": 2.23
+},
+"chant": {
+"beat": 0.9,
+"bar": 3.6,
+"marks": [
+[
+0.35,
+3.95
+],
+[
+7.55,
+11.15
+],
+[
+14.75,
+18.35
+],
+[
+21.95,
+25.55
+]
+],
+"sup": 29.3
+}
+}

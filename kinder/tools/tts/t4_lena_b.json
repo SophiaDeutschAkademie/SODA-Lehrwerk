@@ -1,0 +1,39 @@
+{
+ "job": "t4_lena_b",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   15,
+   "lena",
+   "Hier, bitte! Ein Brot."
+  ],
+  [
+   15,
+   "lena",
+   "Möchtest du Wasser?"
+  ],
+  [
+   15,
+   "lena",
+   "Hier, bitte!"
+  ],
+  [
+   16,
+   "lena",
+   "Guten Tag! Zwei Äpfel, bitte."
+  ],
+  [
+   16,
+   "lena",
+   "Was kostet das?"
+  ],
+  [
+   16,
+   "lena",
+   "Hier, bitte. Auf Wiedersehen!"
+  ]
+ ],
+ "script": "[happy] Hier, bitte! Ein Brot. [long pause] Möchtest du Wasser? [long pause] Hier, bitte! [long pause] Guten Tag! Zwei Äpfel, bitte. [long pause] Was kostet das? [long pause] Hier, bitte. Auf Wiedersehen!"
+}

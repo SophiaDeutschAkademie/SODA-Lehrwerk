@@ -1,0 +1,44 @@
+{
+ "job": "k24_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   24,
+   "sofi",
+   "Ich wohne in Berlin."
+  ],
+  [
+   24,
+   "sofi",
+   "Ö wie Österreich"
+  ],
+  [
+   24,
+   "sofi",
+   "Ich wohne im Baum. Tschüss!"
+  ],
+  [
+   24,
+   "sofi",
+   "Wo, wo, wo kommst du denn her?"
+  ],
+  [
+   24,
+   "sofi",
+   "Ich komm aus Korea, bitte sehr!"
+  ],
+  [
+   24,
+   "sofi",
+   "Ich wohn hier und du wohnst da,"
+  ],
+  [
+   24,
+   "sofi",
+   "alle Kinder sind jetzt da!"
+  ]
+ ],
+ "script": "[happy] Ich wohne in Berlin. [long pause] Ö wie Österreich [long pause] Ich wohne im Baum. Tschüss! [long pause] Wo, wo, wo kommst du denn her? [long pause] Ich komm aus Korea, bitte sehr! [long pause] Ich wohn hier und du wohnst da, [long pause] alle Kinder sind jetzt da!"
+}

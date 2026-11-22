@@ -1,0 +1,44 @@
+{
+ "job": "t5_lena_a",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   17,
+   "lena",
+   "Ich habe eine Katze."
+  ],
+  [
+   17,
+   "lena",
+   "Sie heißt Mimi."
+  ],
+  [
+   17,
+   "lena",
+   "Sofi, hast du auch ein Tier?"
+  ],
+  [
+   17,
+   "lena",
+   "Mimi ist so süß!"
+  ],
+  [
+   18,
+   "lena",
+   "Schau mal, eine Kuh!"
+  ],
+  [
+   18,
+   "lena",
+   "Die Kuh macht: Muh!"
+  ],
+  [
+   18,
+   "lena",
+   "Das Schaf macht: Mäh!"
+  ]
+ ],
+ "script": "[happy] Ich habe eine Katze. [long pause] Sie heißt Mimi. [long pause] Sofi, hast du auch ein Tier? [long pause] Mimi ist so süß! [long pause] Schau mal, eine Kuh! [long pause] Die Kuh macht: Muh! [long pause] Das Schaf macht: Mäh!"
+}

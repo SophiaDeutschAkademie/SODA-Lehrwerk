@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Mmh! Obst und Gemüse!": "s01",
+"sofi|Ja! Ich mag Karotten. Und Gurken. Und Erdbeeren!": "s02",
+"sofi|der Apfel": "s03",
+"sofi|die Banane": "s04",
+"sofi|die Erdbeere": "s05",
+"sofi|die Tomate": "s06",
+"sofi|die Karotte": "s07",
+"sofi|die Gurke": "s08",
+"sofi|A wie Apfel": "s09",
+"sofi|Magst du Äpfel?": "s10",
+"sofi|Magst du Tomaten?": "s11",
+"sofi|Was magst du?": "s12",
+"sofi|Apfel, Apfel, lecker, lecker!": "s13",
+"sofi|Ich mag Obst, das ist gesund!": "s14",
+"sofi|Banane, Tomate, Gurke – bunt,": "s15",
+"sofi|alles in den kleinen Mund!": "s16",
+"ben|Ich mag Bananen.": "b01",
+"ben|Nein! Ich mag keine Tomaten.": "b02",
+"ben|Sofi, magst du Karotten?": "b03",
+"lena|Ich mag Äpfel. Und du, Ben?": "l01",
+"lena|Magst du Tomaten?": "l02",
+"lena|Sofi mag alles!": "l03"
+},
+"dur": {
+"s01": 2.45,
+"s02": 5.01,
+"s03": 0.98,
+"s04": 1.1,
+"s05": 1.23,
+"s06": 1.14,
+"s07": 1.07,
+"s08": 0.99,
+"s09": 1.58,
+"s10": 1.27,
+"s11": 1.39,
+"s12": 1.17,
+"s13": 2.55,
+"s14": 2.32,
+"s15": 3.29,
+"s16": 2.0,
+"b01": 1.45,
+"b02": 2.67,
+"b03": 2.61,
+"l01": 2.2,
+"l02": 1.37,
+"l03": 1.48
+},
+"chant": {
+"beat": 0.81,
+"bar": 3.24,
+"marks": [
+[
+0.35,
+3.59
+],
+[
+6.83,
+10.07
+],
+[
+13.31,
+16.55
+],
+[
+19.79,
+23.03
+]
+],
+"sup": 26.42
+}
+}

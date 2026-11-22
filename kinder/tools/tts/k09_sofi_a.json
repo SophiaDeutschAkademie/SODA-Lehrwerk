@@ -1,0 +1,49 @@
+{
+ "job": "k09_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   9,
+   "sofi",
+   "Wer ist das?"
+  ],
+  [
+   9,
+   "sofi",
+   "Und das?"
+  ],
+  [
+   9,
+   "sofi",
+   "Wie schön! Hallo, Familie!"
+  ],
+  [
+   9,
+   "sofi",
+   "die Mama"
+  ],
+  [
+   9,
+   "sofi",
+   "der Papa"
+  ],
+  [
+   9,
+   "sofi",
+   "die Oma"
+  ],
+  [
+   9,
+   "sofi",
+   "der Opa"
+  ],
+  [
+   9,
+   "sofi",
+   "die Schwester"
+  ]
+ ],
+ "script": "[happy] Wer ist das? [long pause] Und das? [long pause] Wie schön! Hallo, Familie! [long pause] die Mama [long pause] der Papa [long pause] die Oma [long pause] der Opa [long pause] die Schwester"
+}

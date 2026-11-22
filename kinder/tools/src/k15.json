@@ -1,0 +1,231 @@
+{
+"n": 15,
+"kind": "pic",
+"img": {
+"szene": "A picnic blanket in a park with a basket, a water bottle and two cups on it; LENA kneels at the left and hands a sandwich to BEN, who sits at the right holding his belly with one hand and reaching for the sandwich with the other.",
+"sofi": "hoer",
+"karten": [
+"a hungry child holding the belly in front of an empty plate",
+"a thirsty child holding an empty glass upside down",
+"a child offering an apple with both hands stretched forward",
+"a child holding a sandwich close with both hands and smiling thankfully",
+"a child happily biting into a sandwich with closed eyes",
+"a child leaning back in a chair with both hands on a full round belly next to an empty plate"
+],
+"who": {
+"lena": [
+0.39,
+0.45
+],
+"ben": [
+0.68,
+0.5
+]
+}
+},
+"story": [
+{
+"pic": "szene",
+"alt": "공원 돗자리 위에 바구니와 물병, 컵이 있어요. Lena가 배를 잡은 Ben에게 샌드위치를 건네요",
+"label": "공원 소풍",
+"lines": [
+[
+"ben",
+"Ich habe Hunger!",
+"배고파!"
+],
+[
+"lena",
+"Hier, bitte! Ein Brot.",
+"자, 여기! 빵이야."
+],
+[
+"ben",
+"Danke! Mmh, lecker!",
+"고마워! 음, 맛있다!"
+],
+[
+"sofi",
+"Ich habe Durst.",
+"목말라."
+],
+[
+"lena",
+"Möchtest du Wasser?",
+"물 마실래?"
+],
+[
+"sofi",
+"Ja, bitte!",
+"응, 부탁해!"
+],
+[
+"lena",
+"Hier, bitte!",
+"자, 여기!"
+],
+[
+"sofi",
+"Danke, Lena!",
+"고마워, Lena!"
+],
+[
+"ben",
+"Ich bin satt.",
+"배불러."
+]
+]
+}
+],
+"cards": [
+{
+"k": "c1",
+"de": "Ich habe Hunger.",
+"ko": "배고파.",
+"alt": "빈 접시 앞에서 배를 잡은 아이"
+},
+{
+"k": "c2",
+"de": "Ich habe Durst.",
+"ko": "목말라.",
+"alt": "빈 컵을 거꾸로 든 아이"
+},
+{
+"k": "c3",
+"de": "Hier, bitte!",
+"ko": "자, 여기!",
+"alt": "두 손으로 사과를 내미는 아이"
+},
+{
+"k": "c4",
+"de": "Danke!",
+"ko": "고마워!",
+"alt": "샌드위치를 받아 들고 웃는 아이"
+},
+{
+"k": "c5",
+"de": "Lecker!",
+"ko": "맛있어!",
+"alt": "눈을 감고 샌드위치를 베어 무는 아이"
+},
+{
+"k": "c6",
+"de": "Ich bin satt.",
+"ko": "배불러.",
+"alt": "빈 접시 옆에서 볼록한 배에 손을 얹은 아이"
+}
+],
+"hint": "무언가를 줄 때는 [[Hier, bitte!]], 받을 때는 [[Danke!]]라고 해요. 갖고 싶을 때는 [[Ich möchte …, bitte.]]라고 말해요.",
+"letter": [
+"D d",
+"D wie Durst"
+],
+"frames": [
+{
+"de": "Ich möchte {a}, bitte.",
+"ko": "{a} 주세요.",
+"slots": [
+"a"
+],
+"models": [
+[
+"sofi",
+"Ich möchte Wasser, bitte."
+]
+]
+}
+],
+"opts": {
+"a": [
+[
+"Brot",
+"빵"
+],
+[
+"Wasser",
+"물"
+],
+[
+"Milch",
+"우유"
+],
+[
+"Saft",
+"주스"
+],
+[
+"eine Banane",
+"바나나"
+]
+]
+},
+"talk": [
+{
+"de": "Ich habe Durst. Und du?",
+"ko": "나는 목말라. 너는?",
+"me": "Ich habe auch Durst.",
+"meko": "나도 목말라.",
+"alt": [
+"Ich habe Hunger.",
+"나는 배고파."
+]
+},
+{
+"de": "Was möchtest du?",
+"ko": "뭘 줄까?",
+"me": "Ich möchte {a}, bitte.",
+"meko": "{a} 주세요."
+},
+{
+"de": "Hier, bitte!",
+"ko": "자, 여기!",
+"me": "Danke, Sofi!",
+"meko": "고마워, Sofi!"
+}
+],
+"reim": [
+[
+"<b>Hun</b>ger, <b>Hun</b>ger, <b>ich</b> hab <b>Hun</b>ger!",
+"배고파, 배고파, 나 배고파!",
+"두 손으로 배를 문질러요"
+],
+[
+"<b>Durst</b>, <b>Durst</b>, <b>ich</b> hab <b>Durst</b>!",
+"목말라, 목말라, 나 목말라!",
+"컵으로 마시는 시늉을 해요"
+],
+[
+"<b>Brot</b> und <b>Was</b>ser, <b>bit</b>te <b>sehr</b>!",
+"빵과 물, 여기 있어요!",
+"두 손을 앞으로 내밀어요"
+],
+[
+"<b>Dan</b>ke, <b>dan</b>ke, <b>dan</b>ke <b>sehr</b>!",
+"고마워요, 고마워요, 정말 고마워요!",
+"고개를 숙여 인사해요"
+]
+],
+"reimNote": "[[ich hab]]은 [[ich habe]]를 짧게 말한 거예요. [[Bitte sehr!]]는 무언가를 건넬 때, [[Danke sehr!]]는 받을 때 하는 말이에요.",
+"todo": [
+"배고플 때 [[Ich habe Hunger.]], 목마를 때 [[Ich habe Durst.]] 하고 말해요.",
+"가족에게 물건을 건네며 [[Hier, bitte!]] 하고 말해요. 받을 때는 [[Danke!]]라고 해요.",
+"밥을 다 먹고 [[Ich bin satt.]] 하고 말해요."
+],
+"goals": [
+"배고픔과 목마름 말하기: [[Ich habe Hunger. Ich habe Durst. Ich bin satt.]]",
+"주고받을 때 하는 말: [[Hier, bitte! – Danke!]]",
+"공손하게 부탁하기: [[Ich möchte Wasser, bitte.]]",
+"첫소리 글자 [[D]]: [[Durst, danke, du]]"
+],
+"sounds": [
+"[[Hunger]]의 [[ng]]는 ‘응’ 소리 하나입니다. ‘훈거’처럼 [[g]]를 따로 내지 않습니다.",
+"[[möchte]]의 [[ö]]는 입술을 둥글게 모으고 ‘에’를 소리 내며, [[ch]]는 [[ich]]와 같습니다."
+],
+"lesson": [
+"몸짓 맞히기 5분: 교사가 배고픈 몸짓, 목마른 몸짓을 하면 아이들이 문장으로 말합니다.",
+"이야기와 카드 15분: 1번과 2번 활동을 듣고, 짝끼리 물건을 주고받으며 [[Hier, bitte! – Danke!]]를 말합니다. 글자 [[D]]를 쓰고 [[D wie Durst]]를 말합니다.",
+"소풍 놀이 10분: 14단원 먹거리 그림을 돗자리에 놓고 [[Ich möchte …, bitte.]]로 부탁해 받아 갑니다.",
+"손뼉 리듬 10분: 5번 리듬을 동작과 함께 두 번 합니다."
+],
+"sticker": "c3"
+}

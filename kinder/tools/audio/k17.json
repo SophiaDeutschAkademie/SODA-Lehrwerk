@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Nein. Aber ich bin ein Vogel!": "s01",
+"sofi|der Hund": "s02",
+"sofi|die Katze": "s03",
+"sofi|der Vogel": "s04",
+"sofi|der Fisch": "s05",
+"sofi|der Hase": "s06",
+"sofi|die Maus": "s07",
+"sofi|V wie Vogel": "s08",
+"sofi|Hast du ein Tier?": "s09",
+"sofi|Was ist das?": "s10",
+"sofi|Ist das eine Maus?": "s11",
+"sofi|Hund und Katze, Maus und Fisch,": "s12",
+"sofi|alle sitzen an dem Tisch.": "s13",
+"sofi|Wau, wau, wau und miau, miau,": "s14",
+"sofi|das ist mein Zuhause, schau!": "s15",
+"ben|Das ist mein Hund. Er heißt Bello.": "b01",
+"ben|Stimmt! Du bist ein Vogel.": "b02",
+"ben|Und Bello ist so lieb!": "b03",
+"lena|Ich habe eine Katze.": "l01",
+"lena|Sie heißt Mimi.": "l02",
+"lena|Sofi, hast du auch ein Tier?": "l03",
+"lena|Mimi ist so süß!": "l04"
+},
+"dur": {
+"s01": 2.34,
+"s02": 1.03,
+"s03": 0.98,
+"s04": 1.0,
+"s05": 0.91,
+"s06": 1.19,
+"s07": 1.12,
+"s08": 1.62,
+"s09": 1.3,
+"s10": 1.1,
+"s11": 1.53,
+"s12": 3.16,
+"s13": 2.17,
+"s14": 3.28,
+"s15": 2.48,
+"b01": 2.64,
+"b02": 2.15,
+"b03": 1.7,
+"l01": 1.41,
+"l02": 1.23,
+"l03": 2.39,
+"l04": 1.82
+},
+"chant": {
+"beat": 0.83,
+"bar": 3.32,
+"marks": [
+[
+0.35,
+3.67
+],
+[
+6.99,
+10.31
+],
+[
+13.63,
+16.95
+],
+[
+20.27,
+23.59
+]
+],
+"sup": 27.06
+}
+}

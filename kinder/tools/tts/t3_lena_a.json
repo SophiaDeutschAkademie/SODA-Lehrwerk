@@ -1,0 +1,44 @@
+{
+ "job": "t3_lena_a",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   9,
+   "lena",
+   "Das ist meine Mama."
+  ],
+  [
+   9,
+   "lena",
+   "Und das ist mein Papa."
+  ],
+  [
+   9,
+   "lena",
+   "Das ist mein Bruder. Er heißt Tim."
+  ],
+  [
+   9,
+   "lena",
+   "Das ist meine Oma. Und das ist mein Opa."
+  ],
+  [
+   10,
+   "lena",
+   "Hier! Das ist meine Nase."
+  ],
+  [
+   10,
+   "lena",
+   "Sofi, wo ist dein Ohr?"
+  ],
+  [
+   11,
+   "lena",
+   "Brr, es ist kalt!"
+  ]
+ ],
+ "script": "[happy] Das ist meine Mama. [long pause] Und das ist mein Papa. [long pause] Das ist mein Bruder. Er heißt Tim. [long pause] Das ist meine Oma. Und das ist mein Opa. [long pause] Hier! Das ist meine Nase. [long pause] Sofi, wo ist dein Ohr? [long pause] Brr, es ist kalt!"
+}

@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Ich habe Durst.": "s01",
+"sofi|Ja, bitte!": "s02",
+"sofi|Danke, Lena!": "s03",
+"sofi|Ich habe Hunger.": "s04",
+"sofi|Hier, bitte!": "s05",
+"sofi|Danke!": "s06",
+"sofi|Lecker!": "s07",
+"sofi|Ich bin satt.": "s08",
+"sofi|D wie Durst": "s09",
+"sofi|Ich möchte Wasser, bitte.": "s10",
+"sofi|Ich habe Durst. Und du?": "s11",
+"sofi|Was möchtest du?": "s12",
+"sofi|Hunger, Hunger, ich hab Hunger!": "s13",
+"sofi|Durst, Durst, ich hab Durst!": "s14",
+"sofi|Brot und Wasser, bitte sehr!": "s15",
+"sofi|Danke, danke, danke sehr!": "s16",
+"ben|Ich habe Hunger!": "b01",
+"ben|Danke! Mmh, lecker!": "b02",
+"ben|Ich bin satt.": "b03",
+"lena|Hier, bitte! Ein Brot.": "l01",
+"lena|Möchtest du Wasser?": "l02",
+"lena|Hier, bitte!": "l03"
+},
+"dur": {
+"s01": 1.43,
+"s02": 1.43,
+"s03": 1.21,
+"s04": 1.29,
+"s05": 1.26,
+"s06": 0.84,
+"s07": 0.95,
+"s08": 1.02,
+"s09": 1.48,
+"s10": 1.71,
+"s11": 2.22,
+"s12": 1.21,
+"s13": 2.34,
+"s14": 2.82,
+"s15": 1.78,
+"s16": 2.8,
+"b01": 1.25,
+"b02": 2.39,
+"b03": 1.01,
+"l01": 1.85,
+"l02": 1.16,
+"l03": 1.02
+},
+"chant": {
+"beat": 0.73,
+"bar": 2.92,
+"marks": [
+[
+0.35,
+3.27
+],
+[
+6.19,
+9.11
+],
+[
+12.03,
+14.95
+],
+[
+17.87,
+20.79
+]
+],
+"sup": 23.86
+}
+}

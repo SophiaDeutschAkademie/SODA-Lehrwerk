@@ -1,0 +1,49 @@
+{
+ "job": "t1_ben_a",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   2,
+   "ben",
+   "Ich heiße Ben."
+  ],
+  [
+   2,
+   "ben",
+   "Das ist Teddy."
+  ],
+  [
+   3,
+   "ben",
+   "Gut, danke! Und dir?"
+  ],
+  [
+   3,
+   "ben",
+   "Oh! Gute Nacht, Sofi!"
+  ],
+  [
+   4,
+   "ben",
+   "Eins, zwei, drei, vier, fünf …"
+  ],
+  [
+   4,
+   "ben",
+   "Sechs, sieben, acht, neun, zehn!"
+  ],
+  [
+   4,
+   "ben",
+   "Ich komme! Lena, wo bist du?"
+  ],
+  [
+   4,
+   "ben",
+   "Ich bin auch acht!"
+  ]
+ ],
+ "script": "[happy] Ich heiße Ben. [long pause] Das ist Teddy. [long pause] Gut, danke! Und dir? [long pause] Oh! Gute Nacht, Sofi! [long pause] Eins, zwei, drei, vier, fünf … [long pause] Sechs, sieben, acht, neun, zehn! [long pause] Ich komme! Lena, wo bist du? [long pause] Ich bin auch acht!"
+}

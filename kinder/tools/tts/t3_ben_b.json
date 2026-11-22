@@ -1,0 +1,34 @@
+{
+ "job": "t3_ben_b",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   11,
+   "ben",
+   "Danke, Sofi!"
+  ],
+  [
+   12,
+   "ben",
+   "Ist Sofi in der Küche?"
+  ],
+  [
+   12,
+   "ben",
+   "Ist Sofi im Bad?"
+  ],
+  [
+   12,
+   "ben",
+   "Schau mal! Sofi ist im Bett!"
+  ],
+  [
+   12,
+   "ben",
+   "Gute Nacht, Sofi!"
+  ]
+ ],
+ "script": "[happy] Danke, Sofi! [long pause] Ist Sofi in der Küche? [long pause] Ist Sofi im Bad? [long pause] Schau mal! Sofi ist im Bett! [long pause] Gute Nacht, Sofi!"
+}

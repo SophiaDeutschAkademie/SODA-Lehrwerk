@@ -1,0 +1,49 @@
+{
+ "job": "k14_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   14,
+   "sofi",
+   "W wie Wasser"
+  ],
+  [
+   14,
+   "sofi",
+   "Was isst du?"
+  ],
+  [
+   14,
+   "sofi",
+   "Was trinkst du?"
+  ],
+  [
+   14,
+   "sofi",
+   "Guten Appetit!"
+  ],
+  [
+   14,
+   "sofi",
+   "Brot und Käse, Ei und Saft,"
+  ],
+  [
+   14,
+   "sofi",
+   "Frühstück gibt mir große Kraft!"
+  ],
+  [
+   14,
+   "sofi",
+   "Ich esse Brot, ich trinke Milch,"
+  ],
+  [
+   14,
+   "sofi",
+   "Guten Appetit! Lecker, lecker!"
+  ]
+ ],
+ "script": "[happy] W wie Wasser [long pause] Was isst du? [long pause] Was trinkst du? [long pause] Guten Appetit! [long pause] Brot und Käse, Ei und Saft, [long pause] Frühstück gibt mir große Kraft! [long pause] Ich esse Brot, ich trinke Milch, [long pause] Guten Appetit! Lecker, lecker!"
+}

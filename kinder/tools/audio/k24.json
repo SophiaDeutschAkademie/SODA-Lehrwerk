@@ -1,0 +1,69 @@
+{
+"aud": {
+"sofi|Ich komme aus Korea.": "s01",
+"sofi|Und woher kommst du, Ben?": "s02",
+"sofi|Ich wohne hier – im Baum!": "s03",
+"sofi|Woher kommst du?": "s04",
+"sofi|Ich komme aus Deutschland.": "s05",
+"sofi|Wo wohnst du?": "s06",
+"sofi|Ich wohne in Seoul.": "s07",
+"sofi|Ich wohne in Berlin.": "s08",
+"sofi|Ö wie Österreich": "s09",
+"sofi|Ich wohne im Baum. Tschüss!": "s10",
+"sofi|Wo, wo, wo kommst du denn her?": "s11",
+"sofi|Ich komm aus Korea, bitte sehr!": "s12",
+"sofi|Ich wohn hier und du wohnst da,": "s13",
+"sofi|alle Kinder sind jetzt da!": "s14",
+"ben|Aus Korea? Toll!": "b01",
+"ben|Ich komme aus Deutschland.": "b02",
+"ben|Ich wohne in Berlin.": "b03",
+"ben|Und wo wohnst du, Sofi?": "b04",
+"lena|Sofi, woher kommst du?": "l01",
+"lena|Ich wohne auch in Berlin.": "l02"
+},
+"dur": {
+"s01": 1.77,
+"s02": 1.69,
+"s03": 2.1,
+"s04": 1.27,
+"s05": 1.66,
+"s06": 1.16,
+"s07": 1.51,
+"s08": 1.45,
+"s09": 2.17,
+"s10": 2.35,
+"s11": 2.61,
+"s12": 2.26,
+"s13": 2.38,
+"s14": 1.66,
+"b01": 2.05,
+"b02": 1.55,
+"b03": 1.45,
+"b04": 1.51,
+"l01": 1.68,
+"l02": 1.77
+},
+"chant": {
+"beat": 0.67,
+"bar": 2.68,
+"marks": [
+[
+0.35,
+3.03
+],
+[
+5.71,
+8.39
+],
+[
+11.07,
+13.75
+],
+[
+16.43,
+19.11
+]
+],
+"sup": 21.94
+}
+}

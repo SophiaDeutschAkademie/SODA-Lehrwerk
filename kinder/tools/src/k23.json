@@ -1,0 +1,222 @@
+{
+"n": 23,
+"kind": "pic",
+"img": {
+"szene": "LENA and BEN sit on the floor facing each other with a memory card game between them, many square cards lying face down in rows, BEN turns over one card and LENA holds two matching cards. Clear white space between the two children.",
+"sofi": "super",
+"karten": [
+"a child holding out a ball with an inviting smile",
+"a child nodding happily with both thumbs up",
+"a child politely shaking the head with one flat hand raised",
+"a child holding out a large die on an open hand toward the viewer",
+"a child happily holding a large die up high in one hand",
+"a child cheering with both arms up and holding a small trophy"
+],
+"who": {
+"lena": [
+0.24,
+0.53
+],
+"ben": [
+0.77,
+0.55
+]
+}
+},
+"story": [
+{
+"pic": "szene",
+"alt": "Lena와 Ben이 바닥에 마주 앉아 카드 짝 맞추기 놀이를 해요. 뒤집힌 카드가 줄지어 놓여 있어요",
+"label": "놀이 시간",
+"lines": [
+[
+"ben",
+"Lena, spielst du mit?",
+"Lena, 같이 놀래?"
+],
+[
+"lena",
+"Ja, gern! Was spielen wir?",
+"응, 좋아! 우리 뭐 하고 놀아?"
+],
+[
+"ben",
+"Wir spielen Memory.",
+"우리 메모리 게임 해."
+],
+[
+"lena",
+"Sofi, spielst du auch mit?",
+"Sofi, 너도 같이 놀래?"
+],
+[
+"sofi",
+"Ja, gern!",
+"응, 좋아!"
+],
+[
+"ben",
+"Ich bin dran. Oh nein!",
+"내 차례야. 아, 이런!"
+],
+[
+"lena",
+"Sofi, du bist dran!",
+"Sofi, 네 차례야!"
+],
+[
+"sofi",
+"Juhu! Gewonnen!",
+"야호! 이겼다!"
+]
+]
+}
+],
+"cards": [
+{
+"k": "c1",
+"de": "Spielst du mit?",
+"ko": "같이 놀래?",
+"alt": "공을 내밀며 웃는 아이"
+},
+{
+"k": "c2",
+"de": "Ja, gern!",
+"ko": "응, 좋아!",
+"alt": "두 엄지를 들고 고개를 끄덕이는 아이"
+},
+{
+"k": "c3",
+"de": "Nein, danke.",
+"ko": "아니, 괜찮아.",
+"alt": "한 손을 들고 고개를 젓는 아이"
+},
+{
+"k": "c4",
+"de": "Du bist dran!",
+"ko": "네 차례야!",
+"alt": "주사위를 앞으로 내미는 아이"
+},
+{
+"k": "c5",
+"de": "Ich bin dran!",
+"ko": "내 차례야!",
+"alt": "주사위를 높이 든 아이"
+},
+{
+"k": "c6",
+"de": "Gewonnen!",
+"ko": "이겼다!",
+"alt": "트로피를 들고 두 팔을 든 아이"
+}
+],
+"hint": "같이 놀고 싶을 때는 [[Spielst du mit?]] 하고 물어요. 차례가 되면 [[Ich bin dran!]], 친구 차례면 [[Du bist dran!]]이라고 해요.",
+"letter": [
+"Sp sp",
+"Sp wie Spiel"
+],
+"trace": "Spiel",
+"frames": [
+{
+"de": "Wir spielen {a}.",
+"ko": "우리는 {a} 해.",
+"slots": [
+"a"
+],
+"models": [
+[
+"ben",
+"Wir spielen Memory."
+]
+]
+}
+],
+"opts": {
+"a": [
+[
+"Memory",
+"메모리 게임을"
+],
+[
+"Fußball",
+"축구를"
+],
+[
+"Verstecken",
+"숨바꼭질을"
+],
+[
+"Fangen",
+"술래잡기를"
+]
+]
+},
+"talk": [
+{
+"de": "Spielst du mit?",
+"ko": "같이 놀래?",
+"me": "Ja, gern!",
+"meko": "응, 좋아!",
+"alt": [
+"Nein, danke.",
+"아니, 괜찮아."
+]
+},
+{
+"de": "Was spielen wir?",
+"ko": "우리 뭐 하고 놀아?",
+"me": "Wir spielen {a}.",
+"meko": "우리는 {a} 해."
+},
+{
+"de": "Du bist dran!",
+"ko": "네 차례야!",
+"me": "Okay, ich bin dran!",
+"meko": "좋아, 내 차례야!"
+}
+],
+"reim": [
+[
+"<b>Spielst</b> du <b>mit</b>? <b>Spielst</b> du <b>mit</b>?",
+"같이 놀래? 같이 놀래?",
+"손짓으로 친구를 불러요"
+],
+[
+"<b>Ja</b>, ich <b>spie</b>le <b>ger</b>ne <b>mit</b>!",
+"응, 나도 같이 놀래!",
+"고개를 끄덕이며 엄지를 들어요"
+],
+[
+"<b>Ich</b> bin <b>dran</b> und <b>du</b> bist <b>dran</b>,",
+"내 차례 그리고 네 차례,",
+"나를 가리키고 친구를 가리켜요"
+],
+[
+"<b>je</b>der <b>kommt</b> hier <b>ein</b>mal <b>dran</b>!",
+"여기서는 누구나 한 번씩 차례가 와!",
+"두 팔로 큰 원을 그려요"
+]
+],
+"reimNote": "[[gerne]]는 [[gern]]과 같은 말이에요. [[jeder]]는 “누구나”라는 뜻이에요.",
+"todo": [
+"가족에게 [[Spielst du mit?]] 하고 묻고 같이 놀아요.",
+"보드게임을 하면서 [[Ich bin dran!]], [[Du bist dran!]] 하고 말해요.",
+"흐린 글자 위에 [[Spiel]]을 따라 써요."
+],
+"goals": [
+"같이 놀 때 쓰는 말 여섯 가지: [[Spielst du mit? Ja, gern! Nein, danke. Du bist dran! Ich bin dran! Gewonnen!]]",
+"무슨 놀이를 하는지 말하기: [[Wir spielen Memory.]]",
+"첫소리 글자 [[Sp]]와 낱말 따라 쓰기: [[Spiel, spielen, springen]]"
+],
+"sounds": [
+"[[Sp]]는 낱말 맨 앞에서 ‘슈프’로 소리 납니다. [[Spiel]], [[spielen]], [[springen]]이 모두 그렇습니다.",
+"[[Gewonnen]]은 가운데 [[-won-]]을 세게 말하고, [[w]]는 영어 v 소리입니다."
+],
+"lesson": [
+"놀이 초대 5분: 교실을 돌아다니다가 만난 친구에게 [[Spielst du mit?]] 하고 묻고, [[Ja, gern!]]이면 손을 잡습니다.",
+"이야기와 카드 15분: 1번과 2번 활동을 듣고, 카드를 몸짓과 함께 따라 말합니다. 글자 [[Sp]]를 쓰고 [[Sp wie Spiel]]을 말합니다.",
+"메모리 게임 15분: 지금까지 배운 낱말 카드로 모둠별 메모리 게임을 하며 [[Ich bin dran. Du bist dran. Gewonnen!]]을 씁니다.",
+"따라 쓰기와 리듬 5분: [[Spiel]]을 공책에 세 번 쓰고, 5번 리듬을 한 번 합니다."
+],
+"sticker": "c6"
+}

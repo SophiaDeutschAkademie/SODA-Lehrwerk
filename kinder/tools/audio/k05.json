@@ -1,0 +1,77 @@
+{
+"aud": {
+"sofi|Schaut mal! Ballons!": "s01",
+"sofi|Was ist deine Lieblingsfarbe, Ben?": "s02",
+"sofi|Hier, bitte! Der Ballon ist grün.": "s03",
+"sofi|rot": "s04",
+"sofi|blau": "s05",
+"sofi|gelb": "s06",
+"sofi|grün": "s07",
+"sofi|orange": "s08",
+"sofi|lila": "s09",
+"sofi|schwarz": "s10",
+"sofi|weiß": "s11",
+"sofi|B wie Ballon": "s12",
+"sofi|Ist der Ballon rot?": "s13",
+"sofi|Ist der Ballon gelb?": "s14",
+"sofi|Was ist deine Lieblingsfarbe?": "s15",
+"sofi|Rot, blau, gelb, grün,": "s16",
+"sofi|alle Farben sind so schön!": "s17",
+"sofi|Schwarz und weiß, lila, orange,": "s18",
+"sofi|meine Welt ist kunterbunt!": "s19",
+"ben|Der Ballon ist blau.": "b01",
+"ben|Grün!": "b02",
+"ben|Danke, Sofi!": "b03",
+"lena|Oh, wie schön!": "l01",
+"lena|Der Ballon ist rot.": "l02"
+},
+"dur": {
+"s01": 2.27,
+"s02": 1.93,
+"s03": 2.73,
+"s04": 0.86,
+"s05": 0.79,
+"s06": 0.76,
+"s07": 0.87,
+"s08": 1.11,
+"s09": 0.82,
+"s10": 0.85,
+"s11": 0.86,
+"s12": 1.68,
+"s13": 1.45,
+"s14": 1.57,
+"s15": 1.87,
+"s16": 3.3,
+"s17": 1.68,
+"s18": 3.71,
+"s19": 2.17,
+"b01": 1.71,
+"b02": 0.85,
+"b03": 1.14,
+"l01": 1.49,
+"l02": 1.43
+},
+"chant": {
+"beat": 0.89,
+"bar": 3.56,
+"marks": [
+[
+0.35,
+3.91
+],
+[
+7.47,
+11.03
+],
+[
+14.59,
+18.15
+],
+[
+21.71,
+25.27
+]
+],
+"sup": 28.98
+}
+}

@@ -1,0 +1,49 @@
+{
+ "job": "k13_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   13,
+   "sofi",
+   "Mmh! Obst und Gemüse!"
+  ],
+  [
+   13,
+   "sofi",
+   "Ja! Ich mag Karotten. Und Gurken. Und Erdbeeren!"
+  ],
+  [
+   13,
+   "sofi",
+   "der Apfel"
+  ],
+  [
+   13,
+   "sofi",
+   "die Banane"
+  ],
+  [
+   13,
+   "sofi",
+   "die Erdbeere"
+  ],
+  [
+   13,
+   "sofi",
+   "die Tomate"
+  ],
+  [
+   13,
+   "sofi",
+   "die Karotte"
+  ],
+  [
+   13,
+   "sofi",
+   "die Gurke"
+  ]
+ ],
+ "script": "[happy] Mmh! Obst und Gemüse! [long pause] Ja! Ich mag Karotten. Und Gurken. Und Erdbeeren! [long pause] der Apfel [long pause] die Banane [long pause] die Erdbeere [long pause] die Tomate [long pause] die Karotte [long pause] die Gurke"
+}

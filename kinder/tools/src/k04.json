@@ -1,0 +1,231 @@
+{
+"n": 4,
+"kind": "num",
+"img": {
+"szene": "BEN leans against a tree trunk covering his eyes with both hands, counting, while LENA hides crouching behind a small bush. Clear white space between the tree and the bush.",
+"sofi": "hoer",
+"who": {
+"ben": [
+0.32,
+0.5
+],
+"lena": [
+0.74,
+0.72
+]
+}
+},
+"story": [
+{
+"pic": "szene",
+"alt": "Ben이 나무에 기대어 눈을 가리고 수를 세요. Lena는 덤불 뒤에 숨고, Sofi가 가지 위에서 지켜봐요",
+"label": "숨바꼭질",
+"lines": [
+[
+"ben",
+"Eins, zwei, drei, vier, fünf …",
+"하나, 둘, 셋, 넷, 다섯 …"
+],
+[
+"ben",
+"Sechs, sieben, acht, neun, zehn!",
+"여섯, 일곱, 여덟, 아홉, 열!"
+],
+[
+"ben",
+"Ich komme! Lena, wo bist du?",
+"찾는다! Lena, 어디 있어?"
+],
+[
+"lena",
+"Hier bin ich!",
+"나 여기 있어!"
+]
+]
+},
+{
+"label": "놀이가 끝나고",
+"lines": [
+[
+"sofi",
+"Wie alt bist du, Lena?",
+"Lena, 너는 몇 살이야?"
+],
+[
+"lena",
+"Ich bin acht.",
+"여덟 살이야."
+],
+[
+"ben",
+"Ich bin auch acht!",
+"나도 여덟 살이야!"
+]
+]
+}
+],
+"cards": [
+{
+"k": "n1",
+"num": 1,
+"de": "eins",
+"ko": "하나"
+},
+{
+"k": "n2",
+"num": 2,
+"de": "zwei",
+"ko": "둘"
+},
+{
+"k": "n3",
+"num": 3,
+"de": "drei",
+"ko": "셋"
+},
+{
+"k": "n4",
+"num": 4,
+"de": "vier",
+"ko": "넷"
+},
+{
+"k": "n5",
+"num": 5,
+"de": "fünf",
+"ko": "다섯"
+},
+{
+"k": "n6",
+"num": 6,
+"de": "sechs",
+"ko": "여섯"
+},
+{
+"k": "n7",
+"num": 7,
+"de": "sieben",
+"ko": "일곱"
+},
+{
+"k": "n8",
+"num": 8,
+"de": "acht",
+"ko": "여덟"
+},
+{
+"k": "n9",
+"num": 9,
+"de": "neun",
+"ko": "아홉"
+},
+{
+"k": "n10",
+"num": 10,
+"de": "zehn",
+"ko": "열"
+}
+],
+"hint": "손가락을 하나씩 펴면서 세어요. 독일에서는 엄지부터 펴요.",
+"frames": [
+{
+"de": "Ich bin {a}.",
+"ko": "나는 {a}이야.",
+"slots": [
+"a"
+],
+"models": [
+[
+"lena",
+"Ich bin acht."
+]
+]
+}
+],
+"opts": {
+"a": [
+[
+"sechs",
+"여섯 살"
+],
+[
+"sieben",
+"일곱 살"
+],
+[
+"acht",
+"여덟 살"
+],
+[
+"neun",
+"아홉 살"
+],
+[
+"zehn",
+"열 살"
+]
+]
+},
+"talk": [
+{
+"de": "Wie alt bist du?",
+"ko": "너는 몇 살이야?",
+"me": "Ich bin {a}.",
+"meko": "나는 {a}이야."
+},
+{
+"de": "Eins, zwei, drei.",
+"ko": "하나, 둘, 셋.",
+"me": "Vier, fünf, sechs!",
+"meko": "넷, 다섯, 여섯!"
+},
+{
+"de": "Sieben, acht.",
+"ko": "일곱, 여덟.",
+"me": "Neun, zehn!",
+"meko": "아홉, 열!"
+}
+],
+"reim": [
+[
+"<b>Eins</b>, <b>zwei</b>, <b>drei</b>, <b>vier</b>,",
+"하나, 둘, 셋, 넷,",
+"손가락을 하나씩 펴요"
+],
+[
+"<b>fünf</b>, <b>sechs</b>, <b>sie</b>ben, <b>acht</b>,",
+"다섯, 여섯, 일곱, 여덟,",
+"손가락을 하나씩 더 펴요"
+],
+[
+"<b>neun</b> und <b>zehn</b>, <b>neun</b> und <b>zehn</b>,",
+"아홉과 열, 아홉과 열,",
+"열 손가락을 흔들어요"
+],
+[
+"<b>hal</b>lo, <b>hal</b>lo, <b>ich</b> bin <b>zehn</b>!",
+"안녕, 안녕, 나는 열 살!",
+"두 팔을 번쩍 들어요"
+]
+],
+"todo": [
+"계단을 오르면서 [[eins]]부터 [[zehn]]까지 세어요.",
+"가족에게 [[Wie alt bist du?]] 하고 물어요. 나는 [[Ich bin …]]으로 대답해요.",
+"가족과 숨바꼭질을 하며 독일어로 열까지 세어요."
+],
+"goals": [
+"1부터 10까지 세기: [[eins, zwei, drei … zehn]]",
+"나이 묻고 답하기: [[Wie alt bist du? – Ich bin acht.]]",
+"어디 있는지 묻고 답하기(맛보기): [[Wo bist du? – Hier bin ich!]]"
+],
+"sounds": [
+"[[zwei]], [[zehn]]의 [[z]]는 ‘츠’처럼 터지는 소리입니다. 영어 z와 다릅니다.",
+"[[vier]], [[fünf]]의 첫소리는 둘 다 영어 f와 같습니다. [[sechs]]의 [[chs]]는 ‘크스’로 소리 납니다."
+],
+"lesson": [
+"수 세기 원 5분: 둥글게 앉아 한 명씩 다음 수를 말합니다. [[zehn]]을 말한 아이가 일어나 박수를 받습니다.",
+"이야기와 카드 15분: 1번과 2번 활동을 듣고, 교사가 손가락으로 수를 보여 주면 아이들이 독일어로 외칩니다.",
+"나이 인터뷰 10분: 짝을 바꿔 가며 [[Wie alt bist du?]] 하고 묻고 답합니다.",
+"손뼉 리듬 10분: 5번 리듬을 손가락 동작과 함께 두 번 합니다."
+]
+}

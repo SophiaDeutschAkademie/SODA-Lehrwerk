@@ -1,0 +1,39 @@
+{
+ "job": "t6_ben_b",
+ "who": "ben",
+ "voice": "Pipp",
+ "voice_id": "Im1tDIlzaGXABXZ9xEzu",
+ "items": [
+  [
+   23,
+   "ben",
+   "Wir spielen Memory."
+  ],
+  [
+   23,
+   "ben",
+   "Ich bin dran. Oh nein!"
+  ],
+  [
+   24,
+   "ben",
+   "Aus Korea? Toll!"
+  ],
+  [
+   24,
+   "ben",
+   "Ich komme aus Deutschland."
+  ],
+  [
+   24,
+   "ben",
+   "Ich wohne in Berlin."
+  ],
+  [
+   24,
+   "ben",
+   "Und wo wohnst du, Sofi?"
+  ]
+ ],
+ "script": "[happy] Wir spielen Memory. [long pause] Ich bin dran. Oh nein! [long pause] Aus Korea? Toll! [long pause] Ich komme aus Deutschland. [long pause] Ich wohne in Berlin. [long pause] Und wo wohnst du, Sofi?"
+}

@@ -1,0 +1,230 @@
+{
+"n": 22,
+"kind": "pic",
+"img": {
+"szene": "An afternoon in a garden: on the left LENA paints a picture at a small easel, on the right BEN kicks a football, and in the middle a bicycle leans against a small tree. Clear white space between the girl, the bicycle and the boy.",
+"sofi": "super",
+"karten": [
+"a child painting a picture at an easel",
+"a child singing with an open mouth and a few music notes around",
+"a child sitting and reading a book",
+"a child at a table making a paper craft with scissors and glue",
+"a child kicking a football",
+"a child riding a bicycle"
+],
+"who": {
+"lena": [
+0.36,
+0.5
+],
+"ben": [
+0.77,
+0.6
+]
+}
+},
+"story": [
+{
+"pic": "szene",
+"alt": "정원에서 Lena는 이젤 앞에서 그림을 그리고, Ben은 축구공을 차요. 가운데 나무에 자전거가 기대어 있어요",
+"label": "학교가 끝나고",
+"lines": [
+[
+"sofi",
+"Was machst du gern, Lena?",
+"Lena, 너는 뭘 즐겨 해?"
+],
+[
+"lena",
+"Ich male gern.",
+"나는 그림 그리기를 좋아해."
+],
+[
+"ben",
+"Ich spiele gern Fußball.",
+"나는 축구하기를 좋아해."
+],
+[
+"lena",
+"Und ich fahre gern Rad.",
+"그리고 나는 자전거 타기를 좋아해."
+],
+[
+"ben",
+"Was machst du gern, Sofi?",
+"Sofi, 너는 뭘 즐겨 해?"
+],
+[
+"sofi",
+"Ich lese gern. Und ich singe gern!",
+"나는 책 읽기를 좋아해. 그리고 노래하기도 좋아해!"
+],
+[
+"lena",
+"Schön! Wir singen zusammen!",
+"좋아! 우리 같이 노래하자!"
+]
+]
+}
+],
+"cards": [
+{
+"k": "c1",
+"de": "malen",
+"ko": "그림 그리다",
+"alt": "이젤 앞에서 그림을 그리는 아이"
+},
+{
+"k": "c2",
+"de": "singen",
+"ko": "노래하다",
+"alt": "입을 벌리고 노래하는 아이"
+},
+{
+"k": "c3",
+"de": "lesen",
+"ko": "책 읽다",
+"alt": "앉아서 책을 읽는 아이"
+},
+{
+"k": "c4",
+"de": "basteln",
+"ko": "만들다",
+"alt": "가위와 풀로 종이 공작을 하는 아이"
+},
+{
+"k": "c5",
+"de": "Fußball spielen",
+"ko": "축구하다",
+"alt": "축구공을 차는 아이"
+},
+{
+"k": "c6",
+"de": "Rad fahren",
+"ko": "자전거 타다",
+"alt": "자전거를 타는 아이"
+}
+],
+"hint": "즐겨 하는 일에는 [[gern]]을 붙여요. [[Ich male gern.]] [[Ich spiele gern Fußball.]] [[Ich fahre gern Rad.]]",
+"letter": [
+"R r",
+"R wie Rad"
+],
+"trace": "malen",
+"frames": [
+{
+"de": "Ich {a} gern.",
+"ko": "나는 {a} 좋아해.",
+"slots": [
+"a"
+],
+"models": [
+[
+"lena",
+"Ich male gern."
+],
+[
+"ben",
+"Ich spiele gern Fußball."
+],
+[
+"lena",
+"Und ich fahre gern Rad."
+]
+]
+}
+],
+"opts": {
+"a": [
+[
+"male",
+"그림 그리기를"
+],
+[
+"singe",
+"노래하기를"
+],
+[
+"lese",
+"책 읽기를"
+],
+[
+"bastle",
+"만들기를"
+]
+]
+},
+"talk": [
+{
+"de": "Was machst du gern?",
+"ko": "너는 뭘 즐겨 해?",
+"me": "Ich {a} gern.",
+"meko": "나는 {a} 좋아해."
+},
+{
+"de": "Ich lese gern. Und du?",
+"ko": "나는 책 읽기를 좋아해. 너는?",
+"me": "Ich lese auch gern.",
+"meko": "나도 책 읽기를 좋아해.",
+"alt": [
+"Ich lese nicht gern.",
+"나는 책 읽기를 안 좋아해."
+]
+},
+{
+"de": "Spielst du gern Fußball?",
+"ko": "축구하기 좋아해?",
+"me": "Ja, ich spiele gern Fußball.",
+"meko": "응, 나는 축구하기를 좋아해.",
+"alt": [
+"Nein, ich spiele nicht gern Fußball.",
+"아니, 나는 축구하기를 안 좋아해."
+]
+}
+],
+"reim": [
+[
+"<b>Ma</b>len, <b>sin</b>gen, <b>le</b>sen, <b>bas</b>teln,",
+"그리기, 노래하기, 읽기, 만들기,",
+"하는 시늉을 차례로 해요"
+],
+[
+"<b>das</b> macht <b>Spaß</b>, das <b>mach</b> ich <b>gern</b>!",
+"재미있어, 나는 즐겨 해!",
+"두 엄지를 들어요"
+],
+[
+"<b>Fuß</b>ball <b>spie</b>len, <b>Rad</b> <b>fah</b>ren,",
+"축구하기, 자전거 타기,",
+"공을 차고 페달을 밟는 시늉을 해요"
+],
+[
+"<b>und</b> am <b>A</b>bend <b>schlaf</b> ich <b>gern</b>!",
+"그리고 저녁에는 잠자기를 좋아해!",
+"두 손을 모아 뺨에 대요"
+]
+],
+"reimNote": "[[Das macht Spaß!]]는 “재미있어!”라는 뜻이에요.",
+"todo": [
+"내가 즐겨 하는 일을 세 가지 [[Ich … gern.]]으로 말해요.",
+"가족에게 [[Was machst du gern?]] 하고 물어요.",
+"흐린 글자 위에 [[malen]]을 따라 써요."
+],
+"goals": [
+"즐겨 하는 일 여섯 가지: [[malen, singen, lesen, basteln, Fußball spielen, Rad fahren]]",
+"즐겨 하는 일 말하기: [[Ich male gern. Ich spiele gern Fußball.]]",
+"묻기: [[Was machst du gern?]]",
+"첫소리 글자 [[R]]과 낱말 따라 쓰기: [[Rad, rot, Roller]]"
+],
+"sounds": [
+"[[Rad]]의 [[R]]은 목 안쪽에서 가볍게 울리는 소리이고, 끝 [[d]]는 ‘트’에 가깝습니다.",
+"[[singen]], [[lesen]]에서 모음 앞의 [[s]]는 영어 z처럼 울립니다. [[Fußball]]의 [[ß]]는 맑은 ‘ㅅ’입니다."
+],
+"lesson": [
+"몸짓 맞히기 5분: 한 아이가 즐겨 하는 일을 몸짓으로 보여 주고 나머지가 독일어로 맞힙니다.",
+"이야기와 카드 15분: 1번과 2번 활동을 듣고, [[ich]] 뒤에서 낱말 끝이 [[-e]]로 바뀌는 것을 소리로 익힙니다. 글자 [[R]]을 쓰고 [[R wie Rad]]를 말합니다.",
+"즐겨 해 조사 10분: 친구 세 명에게 [[Was machst du gern?]] 하고 묻고, 같은 답끼리 모입니다.",
+"따라 쓰기와 리듬 10분: [[malen]]을 공책에 세 번 쓰고, 5번 리듬을 동작과 함께 합니다."
+],
+"sticker": "c1"
+}

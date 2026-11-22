@@ -1,0 +1,73 @@
+{
+"aud": {
+"sofi|Ich trinke Wasser.": "s01",
+"sofi|Mmh, lecker! Guten Appetit!": "s02",
+"sofi|das Brot": "s03",
+"sofi|der Käse": "s04",
+"sofi|das Ei": "s05",
+"sofi|die Milch": "s06",
+"sofi|der Saft": "s07",
+"sofi|das Wasser": "s08",
+"sofi|W wie Wasser": "s09",
+"sofi|Was isst du?": "s10",
+"sofi|Was trinkst du?": "s11",
+"sofi|Guten Appetit!": "s12",
+"sofi|Brot und Käse, Ei und Saft,": "s13",
+"sofi|Frühstück gibt mir große Kraft!": "s14",
+"sofi|Ich esse Brot, ich trinke Milch,": "s15",
+"sofi|Guten Appetit! Lecker, lecker!": "s16",
+"ben|Ich esse Brot mit Käse.": "b01",
+"ben|Und ich trinke Milch.": "b02",
+"ben|He! Wo ist mein Brot?": "b03",
+"lena|Guten Morgen! Mmh, Frühstück!": "l01",
+"lena|Ich esse ein Ei.": "l02",
+"lena|Ich trinke Saft. Und du, Sofi?": "l03"
+},
+"dur": {
+"s01": 1.37,
+"s02": 2.85,
+"s03": 1.04,
+"s04": 1.14,
+"s05": 1.0,
+"s06": 0.96,
+"s07": 1.09,
+"s08": 0.98,
+"s09": 1.71,
+"s10": 1.5,
+"s11": 1.53,
+"s12": 1.42,
+"s13": 2.96,
+"s14": 2.58,
+"s15": 2.84,
+"s16": 3.0,
+"b01": 2.07,
+"b02": 1.47,
+"b03": 2.1,
+"l01": 2.58,
+"l02": 1.33,
+"l03": 2.37
+},
+"chant": {
+"beat": 0.74,
+"bar": 2.96,
+"marks": [
+[
+0.35,
+3.31
+],
+[
+6.27,
+9.23
+],
+[
+12.19,
+15.15
+],
+[
+18.11,
+21.07
+]
+],
+"sup": 24.18
+}
+}

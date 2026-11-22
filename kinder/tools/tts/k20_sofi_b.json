@@ -1,0 +1,49 @@
+{
+ "job": "k20_sofi_b",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   20,
+   "sofi",
+   "F wie Frosch"
+  ],
+  [
+   20,
+   "sofi",
+   "Kannst du springen?"
+  ],
+  [
+   20,
+   "sofi",
+   "Kannst du fliegen?"
+  ],
+  [
+   20,
+   "sofi",
+   "Was kannst du?"
+  ],
+  [
+   20,
+   "sofi",
+   "Springen kann der kleine Frosch,"
+  ],
+  [
+   20,
+   "sofi",
+   "schwimmen kann der Fisch im Meer,"
+  ],
+  [
+   20,
+   "sofi",
+   "klettern kann der Affe gut,"
+  ],
+  [
+   20,
+   "sofi",
+   "und ich tanze wie ein Bär!"
+  ]
+ ],
+ "script": "[happy] F wie Frosch [long pause] Kannst du springen? [long pause] Kannst du fliegen? [long pause] Was kannst du? [long pause] Springen kann der kleine Frosch, [long pause] schwimmen kann der Fisch im Meer, [long pause] klettern kann der Affe gut, [long pause] und ich tanze wie ein Bär!"
+}

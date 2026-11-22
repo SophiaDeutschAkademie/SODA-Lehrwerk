@@ -1,0 +1,49 @@
+{
+ "job": "k10_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   10,
+   "sofi",
+   "Wo ist deine Nase?"
+  ],
+  [
+   10,
+   "sofi",
+   "Wo ist dein Bauch?"
+  ],
+  [
+   10,
+   "sofi",
+   "Mein Ohr? Hm … Hier!"
+  ],
+  [
+   10,
+   "sofi",
+   "Hand? Nein! Das ist mein Flügel!"
+  ],
+  [
+   10,
+   "sofi",
+   "der Kopf"
+  ],
+  [
+   10,
+   "sofi",
+   "die Nase"
+  ],
+  [
+   10,
+   "sofi",
+   "das Ohr"
+  ],
+  [
+   10,
+   "sofi",
+   "die Hand"
+  ]
+ ],
+ "script": "[happy] Wo ist deine Nase? [long pause] Wo ist dein Bauch? [long pause] Mein Ohr? Hm … Hier! [long pause] Hand? Nein! Das ist mein Flügel! [long pause] der Kopf [long pause] die Nase [long pause] das Ohr [long pause] die Hand"
+}

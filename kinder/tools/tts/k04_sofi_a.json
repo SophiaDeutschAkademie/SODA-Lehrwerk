@@ -1,0 +1,54 @@
+{
+ "job": "k04_sofi_a",
+ "who": "sofi",
+ "voice": "Milly Maple",
+ "voice_id": "VD1if7jDVYtAKs4P0FIY",
+ "items": [
+  [
+   4,
+   "sofi",
+   "Wie alt bist du, Lena?"
+  ],
+  [
+   4,
+   "sofi",
+   "eins"
+  ],
+  [
+   4,
+   "sofi",
+   "zwei"
+  ],
+  [
+   4,
+   "sofi",
+   "drei"
+  ],
+  [
+   4,
+   "sofi",
+   "vier"
+  ],
+  [
+   4,
+   "sofi",
+   "fünf"
+  ],
+  [
+   4,
+   "sofi",
+   "sechs"
+  ],
+  [
+   4,
+   "sofi",
+   "sieben"
+  ],
+  [
+   4,
+   "sofi",
+   "acht"
+  ]
+ ],
+ "script": "[happy] Wie alt bist du, Lena? [long pause] eins [long pause] zwei [long pause] drei [long pause] vier [long pause] fünf [long pause] sechs [long pause] sieben [long pause] acht"
+}

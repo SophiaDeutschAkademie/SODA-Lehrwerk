@@ -1,0 +1,39 @@
+{
+ "job": "t6_lena_a",
+ "who": "lena",
+ "voice": "Rika Sturm",
+ "voice_id": "Jpm0FNvrnzdW3k4rnWVH",
+ "items": [
+  [
+   21,
+   "lena",
+   "Ist das dein Ball, Ben?"
+  ],
+  [
+   21,
+   "lena",
+   "Nein, das ist nicht meine Puppe."
+  ],
+  [
+   21,
+   "lena",
+   "Deine Puppe ist schön, Sofi!"
+  ],
+  [
+   22,
+   "lena",
+   "Ich male gern."
+  ],
+  [
+   22,
+   "lena",
+   "Und ich fahre gern Rad."
+  ],
+  [
+   22,
+   "lena",
+   "Schön! Wir singen zusammen!"
+  ]
+ ],
+ "script": "[happy] Ist das dein Ball, Ben? [long pause] Nein, das ist nicht meine Puppe. [long pause] Deine Puppe ist schön, Sofi! [long pause] Ich male gern. [long pause] Und ich fahre gern Rad. [long pause] Schön! Wir singen zusammen!"
+}
