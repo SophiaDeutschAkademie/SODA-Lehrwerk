@@ -566,8 +566,20 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
       e.preventDefault();show(n,true,true);
     });
   });
-  function fromHash(){var i=ids.indexOf((location.hash||'').slice(1));show(i>=0?i:cur,false,false)}
-  window.addEventListener('hashchange',fromHash);fromHash();
+  function fromHash(){var i=ids.indexOf((location.hash||'').slice(1));show(i>=0?i:cur,false,false);return i}
+  window.addEventListener('hashchange',fromHash);
+  /* 과 화면의 「교재 목차」처럼 단계 주소(#a1-2)로 들어오면 그 단계의 목차가 바로 보이는 자리로 간다. 새로 고침과 뒤로 가기는 브라우저가 자리를 되돌리므로 건드리지 않는다 */
+  if(fromHash()>=0){
+    var nav=(window.performance&&performance.getEntriesByType&&performance.getEntriesByType('navigation')[0])||{},at=-1;
+    var zu=function(){
+      var el=d.getElementById('inhalt');if(!el)return;
+      if(at>=0&&Math.abs((window.pageYOffset||0)-at)>4)return;          /* 그사이 손으로 움직였으면 그대로 둔다 */
+      var y=Math.max(0,Math.round(el.getBoundingClientRect().top+(window.pageYOffset||0)));
+      try{window.scrollTo({top:y,left:0,behavior:'instant'})}catch(e){window.scrollTo(0,y)}
+      at=window.pageYOffset||0;
+    };
+    if(!nav.type||nav.type==='navigate'){zu();window.addEventListener('load',zu)}
+  }
   /* 공부한 기록(과 화면이 이 브라우저에 남긴 것)으로 마친 과와 보던 과를 표시한다 */
   function mark(){
     var L={};try{L=(JSON.parse(localStorage.getItem('soda-jugend-v1')||'{}').l)||{}}catch(e){}
