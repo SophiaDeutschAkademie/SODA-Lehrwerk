@@ -1,0 +1,39 @@
+{
+ "job": "a11s_em_01",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Emma",
+   "parts": [
+    "Das ist meine Familie. Meine Mutter heißt Sabine. Sie ist Ärztin."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Emma",
+   "parts": [
+    "Mein Vater heißt Thomas. Er ist Koch und er kocht sehr gern."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Emma",
+   "parts": [
+    "Ich habe keine Geschwister. Aber wir haben einen Hund. Er heißt Milo."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Emma",
+   "parts": [
+    "Meine Großeltern wohnen in Bonn. Mein Opa ist fünfundsiebzig Jahre alt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist meine Familie. Meine Mutter heißt Sabine. Sie ist Ärztin. [pause] Mein Vater heißt Thomas. Er ist Koch und er kocht sehr gern. [pause] Ich habe keine Geschwister. Aber wir haben einen Hund. Er heißt Milo. [pause] Meine Großeltern wohnen in Bonn. Mein Opa ist fünfundsiebzig Jahre alt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

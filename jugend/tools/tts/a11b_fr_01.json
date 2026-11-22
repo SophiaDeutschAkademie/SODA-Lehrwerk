@@ -1,0 +1,80 @@
+{
+ "job": "a11b_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Hallo! Was möchtet ihr?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Gern. Das macht zusammen fünf Euro vierzig."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Ein Euro zwanzig."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Danke. Guten Appetit!"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Hallo! Was möchtest du?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Gern. Möchtest du auch eine Brezel?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Ein Euro neunzig."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Zwei Euro fünfzig, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Das macht vier Euro achtzig."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Der Salat kostet drei Euro dreißig."
+   ]
+  }
+ ],
+ "script": "Hallo! Was möchtet ihr? [pause] Gern. Das macht zusammen fünf Euro vierzig. [pause] Ein Euro zwanzig. [pause] Danke. Guten Appetit! [pause] Hallo! Was möchtest du? [pause] Gern. Möchtest du auch eine Brezel? [pause] Ein Euro neunzig. [pause] Zwei Euro fünfzig, bitte. [pause] Das macht vier Euro achtzig. [pause] Der Salat kostet drei Euro dreißig. [pause] Gut.",
+ "tail": "Gut."
+}

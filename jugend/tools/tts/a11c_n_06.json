@@ -1,0 +1,25 @@
+{
+ "job": "a11c_n_06",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "Es ist Viertel vor zwölf."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "Es ist zehn nach sechs."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Es ist Viertel vor zwölf. [pause] Es ist zehn nach sechs. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

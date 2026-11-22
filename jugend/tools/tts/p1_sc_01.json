@@ -1,0 +1,30 @@
+{
+ "job": "p1_sc_01",
+ "who": "Schneider",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Schneider",
+   "parts": [
+    "Guten Morgen! Ich bin Frau Schneider. Wer bist du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Schneider",
+   "parts": [
+    "Willkommen in der acht Beh, Yuna!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Schneider",
+   "parts": [
+    "Auf Wiedersehen!"
+   ]
+  }
+ ],
+ "script": "Guten Morgen! Ich bin Frau Schneider. Wer bist du? [pause] Willkommen in der acht Beh, Yuna! [pause] Auf Wiedersehen!"
+}

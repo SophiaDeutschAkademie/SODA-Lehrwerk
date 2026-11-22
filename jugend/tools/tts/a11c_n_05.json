@@ -1,0 +1,83 @@
+{
+ "job": "a11c_n_05",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "zuerst, dann, danach.",
+    "Zuerst dusche ich. Dann frühstücke ich."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "Die Schule ist aus.",
+    "Um vier ist die Schule aus."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "Sieben Uhr. Viertel nach sieben."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "Halb acht. Viertel vor acht."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "Fünf nach sieben. Fünf vor acht."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "aufstehen, anfangen, einkaufen, fernsehen"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "aufräumen, anrufen, mitkommen, zurückkommen"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "Ich stehe auf. Die Schule fängt an."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "Es ist halb neun."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "Es ist Viertel nach drei."
+   ]
+  }
+ ],
+ "script": "Also. [pause] zuerst, dann, danach. Zuerst dusche ich. Dann frühstücke ich. [pause] Die Schule ist aus. Um vier ist die Schule aus. [pause] Sieben Uhr. Viertel nach sieben. [pause] Halb acht. Viertel vor acht. [pause] Fünf nach sieben. Fünf vor acht. [pause] aufstehen, anfangen, einkaufen, fernsehen [pause] aufräumen, anrufen, mitkommen, zurückkommen [pause] Ich stehe auf. Die Schule fängt an. [pause] Es ist halb neun. [pause] Es ist Viertel nach drei. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,45 @@
+{
+ "job": "a11b_th_01",
+ "who": "Thomas",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a1-1/7",
+   "who": "Thomas",
+   "parts": [
+    "Das Essen ist fertig! Yuna, isst du Fleisch?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Thomas",
+   "parts": [
+    "Kein Problem. Heute gibt es Hähnchen mit Reis und Salat."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Thomas",
+   "parts": [
+    "Und? Wie schmeckt das Hähnchen?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Thomas",
+   "parts": [
+    "Möchtest du noch etwas?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Thomas",
+   "parts": [
+    "Das Essen ist fertig!"
+   ]
+  }
+ ],
+ "script": "Das Essen ist fertig! Yuna, isst du Fleisch? [pause] Kein Problem. Heute gibt es Hähnchen mit Reis und Salat. [pause] Und? Wie schmeckt das Hähnchen? [pause] Möchtest du noch etwas? [pause] Das Essen ist fertig! [pause] Gut.",
+ "tail": "Gut."
+}

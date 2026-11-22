@@ -1,0 +1,164 @@
+@id a1-1/stufentest
+@typ test
+
+== hoeren
+-- info A1.1을 돌아보는 평가예요
+p: 듣기, 읽기, 쓰기, 말하기 네 부분으로 되어 있어요. 시간 제한은 없어요. 문제를 풀면 바로 맞았는지 알려 주고, 마지막 Ergebnis에서 부분마다 몇 문제를 맞혔는지 보여 줘요.
+p: 음성은 여러 번 들을 수 있어요. 먼저 한 번만 듣고 풀어 보면 내 듣기 실력을 더 정확히 알 수 있어요.
+
+-- ex Hören 1 | 짧은 말을 듣고 알맞은 것을 고르세요.
+hör: Frau: Das macht zusammen drei Euro siebzig.
+mc: 모두 얼마인가요? | 3,70 €* | 3,17 € | 2,70 € => drei Euro siebzig. siebzig는 70, siebzehn은 17이에요.
+hör: Schneider: Am Mittwoch haben wir um zehn Uhr Biologie.
+mc: 생물 수업은 언제 있나요? | 수요일 10시* | 월요일 10시 | 수요일 12시 => Am Mittwoch um zehn Uhr.
+hör: Lukas: Ich stehe um Viertel nach sechs auf.
+mc: Lukas는 몇 시에 일어나나요? | 6:15* | 6:45 | 5:45 => Viertel nach sechs는 6시 15분이에요.
+hör: Elif: Ich habe zwei Brüder, aber ich habe keine Schwester.
+mc: Elif의 형제자매는 어떻게 되나요? | 남자 형제 둘* | 여자 형제 둘 | 남자 형제 하나, 여자 형제 하나 => zwei Brüder, keine Schwester
+hör: Thomas: Heute gibt es Fisch mit Reis und Salat.
+mc: 오늘 저녁에 먹는 것은 무엇인가요? | 생선, 밥, 샐러드* | 닭고기, 밥, 샐러드 | 생선, 빵, 샐러드 => Fisch mit Reis und Salat
+
+-- ex Hören 2 | Lukas와 Elif가 쉬는 시간에 이야기해요. 듣고 답하세요.
+audio | In der Pause
+> Lukas: Hallo, Elif! Was machst du am Samstag?
+> Elif: Am Samstag spiele ich Gitarre. Und du?
+> Lukas: Ich spiele Fußball im Park. Kommst du mit?
+> Elif: Nein, danke. Ich spiele nicht gern Fußball. Ich fahre lieber Rad.
+> Lukas: Dann fahren wir am Sonntag Rad! Hast du Zeit?
+> Elif: Ja, gern! Wann?
+> Lukas: Um elf Uhr im Park.
+> Elif: Super! Tschüss, Lukas!
+rf: Elif spielt am Samstag Gitarre. | r => Am Samstag spiele ich Gitarre.
+rf: Elif spielt gern Fußball. | f => Ich spiele nicht gern Fußball.
+mc: Was machen Lukas und Elif am Sonntag? | Rad fahren* | Fußball spielen | Filme sehen => Dann fahren wir am Sonntag Rad!
+mc: 두 사람은 일요일 몇 시에 만나나요? | 11시* | 1시 | 12시 => Um elf Uhr im Park.
+
+-- ex Hören 3 | Lukas가 친구 Tim을 소개해요. 듣고 답하세요.
+audio | Mein Freund Tim
+> Lukas: Das ist mein Freund Tim. Er ist zwölf Jahre alt.
+> Lukas: Sein Vater ist Ingenieur und seine Mutter ist Ärztin.
+> Lukas: Tim hat zwei Schwestern, aber er hat keinen Bruder.
+> Lukas: Seine Oma wohnt in Berlin. Sie ist achtundsechzig Jahre alt.
+mc: Tim의 어머니는 직업이 무엇인가요? | Ärztin* | Lehrerin | Ingenieurin => Seine Mutter ist Ärztin. Ingenieur는 아버지예요.
+rf: Tim hat einen Bruder. | f => Er hat keinen Bruder. Er hat zwei Schwestern.
+mc: Wo wohnt die Oma von Tim? | in Berlin* | in Bonn | in Köln => Seine Oma wohnt in Berlin.
+mc: Wie alt ist die Oma? | 68* | 86 | 78 => achtundsechzig는 68이에요. 일의 자리 8을 먼저 말해요.
+
+== lesen
+-- ex Lesen 1 | 8b의 시간표를 보고 답하세요.
+text plan | Stundenplan 8b
+> | Tag | 8:00 | 9:00 | 10:00 |
+> | Mo | Mathe | Deutsch | Sport |
+> | Di | Englisch | Kunst | Physik |
+> | Mi | Deutsch | Mathe | Biologie |
+> | Do | Mathe | Musik | Deutsch |
+> | Fr | Biologie | Englisch | Kunst |
+mc: Wann hat die Klasse Sport? | am Montag um zehn Uhr* | am Dienstag um zehn Uhr | am Montag um neun Uhr => Sport는 Mo(Montag) 줄의 10:00 칸에 있어요.
+mc: Was hat die Klasse am Dienstag um neun Uhr? | Kunst* | Englisch | Physik => Di(Dienstag) 줄의 9:00 칸은 Kunst예요.
+rf: Am Freitag hat die Klasse Musik. | f => Musik은 Do(Donnerstag)에 있어요. Fr(Freitag)에는 Biologie, Englisch, Kunst가 있어요.
+
+-- ex Lesen 2 | 새로 온 학생의 Steckbrief예요. 읽고 답하세요.
+text profil | Steckbrief
+> Name: Marie Huber
+> Alter: 15 Jahre
+> Land: Schweiz
+> Stadt: Köln
+> Geschwister: ein Bruder (Jonas, 11)
+> Hobbys: schwimmen, lesen, Gitarre spielen
+> Lieblingsfach: Biologie
+> Das esse ich gern: Käse und Salat
+> Das esse ich nicht: Fleisch
+rf: Marie kommt aus Österreich. | f => Land: Schweiz. Marie kommt aus der Schweiz.
+mc: Wie alt ist der Bruder von Marie? | 11* | 15 | 12 => Jonas, 11
+rf: Marie isst gern Fleisch. | f => Das esse ich nicht: Fleisch
+mc: Was macht Marie gern? | Sie schwimmt gern.* | Sie tanzt gern. | Sie spielt gern Fußball. => Hobbys: schwimmen, lesen, Gitarre spielen
+
+-- ex Lesen 3 | Lukas가 자기 하루를 쓴 글이에요. 읽고 답하세요.
+text notiz | Mein Tag
+> Ich stehe um Viertel vor sieben auf. Zuerst dusche ich, dann frühstücke ich. Ich esse Brot mit Käse und ich trinke Milch.
+> Um acht fängt die Schule an. Mein Lieblingsfach ist Sport. Um halb zwei ist die Schule aus.
+> Am Nachmittag mache ich zuerst Hausaufgaben. Danach spiele ich mit Tim Fußball.
+> Am Abend sehe ich fern. Um halb elf gehe ich ins Bett.
+mc: Lukas는 몇 시에 일어나나요? | 6:45* | 7:15 | 6:15 => Viertel vor sieben은 7시 15분 전, 6시 45분이에요.
+mc: Was trinkt Lukas am Morgen? | Milch* | Kakao | Saft => Ich trinke Milch.
+rf: Am Nachmittag spielt Lukas zuerst Fußball. | f => 먼저 숙제를 해요. Zuerst Hausaufgaben, danach Fußball.
+mc: Lukas는 몇 시에 자러 가나요? | 10:30* | 11:30 | 11:00 => halb elf는 10시 30분이에요.
+
+-- ex Lesen 4 | 학교 매점의 가격표예요. 보고 답하세요.
+text plan | Kiosk
+> | Essen und Trinken | Preis |
+> | Brezel | 1,20 € |
+> | Brötchen mit Käse | 1,90 € |
+> | Salat | 3,30 € |
+> | Apfel | 0,60 € |
+> | Wasser | 0,90 € |
+> | Kakao | 1,10 € |
+mc: Yuna möchte eine Brezel und ein Wasser. Was kostet das zusammen? | 2,10 €* | 2,00 € | 2,20 € => 1,20 € + 0,90 € = 2,10 €
+mc: Lukas에게 2유로가 있어요. 살 수 있는 것은 무엇인가요? | ein Brötchen mit Käse* | einen Salat | eine Brezel und einen Kakao => Brötchen mit Käse는 1,90 €예요. Brezel과 Kakao는 합쳐서 2,30 €예요.
+rf: Der Apfel kostet sechzig Cent. | r => Apfel 0,60 €
+
+== schreiben
+-- ex Schreiben 1 | 낱말을 순서대로 놓아 문장을 만드세요.
+ord: wie / alt / bist / du? | 너는 몇 살이야?
+ord: am Dienstag / haben / wir / Kunst. ~ wir / haben / am Dienstag / Kunst. | 화요일에 우리는 미술이 있어요.
+ord: ich / habe / einen Bruder. | 나는 남자 형제가 한 명 있어요.
+ord: Yuna / isst / keinen Fisch. | Yuna는 생선을 안 먹어요.
+ord: die Schule / fängt / um acht Uhr / an. ~ um acht Uhr / fängt / die Schule / an. | 학교는 8시에 시작해요.
+ord: um halb elf / gehe / ich / ins Bett. ~ ich / gehe / um halb elf / ins Bett. | 10시 반에 나는 자러 가요.
+
+-- ex Schreiben 2 | 괄호 안의 낱말을 알맞은 형태로 바꿔 빈칸에 쓰세요.
+gap: Woher [=kommst] du? (kommen) | 너는 어디에서 왔어? => du kommst
+gap: Wir [=haben] heute Mathe. (haben) | 우리는 오늘 수학이 있어요. => wir haben
+gap: Emma [=liest] gern Bücher. (lesen) | Emma는 책 읽기를 좋아해요. => sie liest
+gap: Das ist kein Heft. Das ist [=ein] Buch. (ein) | 이것은 공책이 아니에요. 책이에요. => das Buch라서 ein Buch예요.
+gap: Ich möchte [=einen] Apfel. (ein) | 나는 사과를 하나 원해요. => der Apfel은 einen Apfel이 돼요.
+gap: Lukas [=steht] um sieben Uhr auf. (aufstehen) | Lukas는 7시에 일어나요. => er steht … auf
+gap: Was [=isst] du gern? (essen) | 너는 뭘 즐겨 먹어? => du isst
+
+-- ex Schreiben 3 | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Wie heißt das auf Deutsch? | 이것은 독일어로 뭐라고 해요?
+dik: N: Ich habe keine Schwester. | 나는 여자 형제가 없어요.
+dik: N: Was kostet die Brezel? | 브레첼은 얼마예요?
+dik: N: Um elf gehe ich ins Bett. | 11시에 나는 자러 가요.
+
+-- schreiben Mein Text | 나를 소개하는 글을 써요. 아래 내용을 넣어서 여섯 문장 넘게 써 보세요. 이 글은 자동으로 채점하지 않아요. 다 쓴 뒤에 예시 글과 비교하고 아래 항목을 스스로 확인해요.
+punkt: 이름, 나이, 사는 곳 ; 가족 ; 좋아하는 과목 ; 취미 ; 즐겨 먹는 것 ; 하루 일과 한두 가지
+start: Hallo! Ich heiße …
+muster: Hallo! Ich heiße Yuna. Ich bin vierzehn Jahre alt und ich wohne in Köln. Ich habe einen Bruder. Er heißt Jun. Mein Lieblingsfach ist Musik. Ich tanze gern und ich höre gern Musik. Ich esse gern Brot mit Käse. Ich stehe um halb sieben auf. Um zehn gehe ich ins Bett.
+check: 여섯 문장 넘게 썼어요 ; 동사가 문장의 둘째 자리에 있어요 ; 가족을 말할 때 einen, eine, keine를 알맞게 썼어요 ; 나뉘는 동사의 앞부분을 문장 끝에 썼어요 ; 명사와 문장 첫 글자를 대문자로 썼어요
+
+== sprechen
+-- info 소리 내어 말해요
+p: 말하기는 자동으로 채점하지 않아요. 질문을 듣고 바로 소리 내어 답한 다음, 예시 답과 비교해 보세요.
+p: 녹음 단추를 누르면 내 목소리를 다시 들을 수 있어요. 녹음은 저장되지 않아요.
+
+-- sprich Fragen und Antworten | 질문을 듣고 소리 내어 답하세요. 한 문장으로 답하면 돼요. | Frau=Verkäuferin
+f: Emma: Woher kommst du? | 너는 어디에서 왔어? => Ich komme aus Korea.
+f: Elif: Wie alt bist du? | 너는 몇 살이야? => Ich bin vierzehn Jahre alt.
+f: Emma: Hast du Geschwister? | 형제자매가 있어? => Ja, ich habe einen Bruder. / Nein, ich habe keine Geschwister.
+f: Elif: Was ist dein Lieblingsfach? | 가장 좋아하는 과목이 뭐야? => Mein Lieblingsfach ist Musik.
+f: Lukas: Was machst du gern? | 너는 뭘 즐겨 해? => Ich höre gern Musik und ich spiele gern Fußball.
+f: Lukas: Was isst du gern? | 너는 뭘 즐겨 먹어? => Ich esse gern Reis mit Hähnchen.
+f: Elif: Wann gehst du ins Bett? | 몇 시에 자러 가? => Um elf gehe ich ins Bett.
+f: Frau: Hallo! Was möchtest du? | 안녕! 뭘 줄까? => Ich möchte eine Brezel und einen Apfelsaft, bitte.
+
+-- sprich Das bin ich | 아래 낱말을 보면서 30초쯤 나를 소개하세요. 먼저 혼자 말해 보고, 그다음에 예시를 확인해요.
+thema: Name ; Alter ; Wohnort ; Familie ; Hobbys ; Mein Tag
+muster: Hallo! Ich heiße Yuna. Ich bin vierzehn Jahre alt. Ich wohne in Köln. Ich habe einen Bruder. Ich tanze gern und ich höre gern Musik. Ich stehe um halb sieben auf. Am Abend sehe ich fern.
+
+== ergebnis
+-- bilanz
+hoch: A1.1에서 배운 내용을 잘 익혔어요. A1.2로 넘어가도 좋아요.
+mittel: 대부분 익혔어요. 틀린 문제의 설명을 다시 읽고, 점수가 낮은 부분은 Station 1과 Station 2의 복습 문제로 한 번 더 연습해 보세요.
+tief: 아직 헷갈리는 내용이 많아요. Station 1과 Station 2의 복습 문제를 다시 풀고, 어려웠던 과의 Grammatik과 Training을 본 다음 평가를 한 번 더 해 보세요.
+
+-- info 쓰기와 말하기는 스스로 확인해요
+p: 글쓰기 과제와 말하기는 점수에 들어가지 않아요. 아래 세 가지를 얼마나 할 수 있는지 스스로 표시해 보세요.
+
+-- kann
+Ich kann einen kurzen Text über mich schreiben. | 나를 소개하는 짧은 글을 쓸 수 있어요.
+Ich kann einfache Fragen beantworten. | 쉬운 질문에 답할 수 있어요.
+Ich kann mich vorstellen. | 나를 소개하는 말을 할 수 있어요.
+
+-- info 다음 단계는 A1.2 Einleben
+p: A1.2에서는 Yuna가 쾰른 생활에 익숙해져요. 길을 찾고, 약속을 잡고, 지난 일을 이야기하는 말을 배워요.

@@ -1,0 +1,39 @@
+{
+ "job": "a11s_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/station-2",
+   "who": "N",
+   "parts": [
+    "vierundfünfzig"
+   ]
+  },
+  {
+   "pid": "a1-1/station-2",
+   "who": "N",
+   "parts": [
+    "achtunddreißig"
+   ]
+  },
+  {
+   "pid": "a1-1/station-2",
+   "who": "N",
+   "parts": [
+    "sechsundsiebzig"
+   ]
+  },
+  {
+   "pid": "a1-1/station-2",
+   "who": "N",
+   "parts": [
+    "zweiundneunzig"
+   ]
+  }
+ ],
+ "script": "Also. [pause] vierundfünfzig [pause] achtunddreißig [pause] sechsundsiebzig [pause] zweiundneunzig [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

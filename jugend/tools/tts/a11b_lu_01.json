@@ -1,0 +1,80 @@
+{
+ "job": "a11b_lu_01",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Wie heißt du?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Lukas",
+   "parts": [
+    "Hey! Ich bin fast vierzehn!"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Lukas",
+   "parts": [
+    "Spielst du Fußball?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Lukas",
+   "parts": [
+    "Ich bin dreizehn."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Lukas",
+   "parts": [
+    "Das Heft ist hier. Aber wo ist mein Stift?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Lukas",
+   "parts": [
+    "Die Tafel, das Fenster, die Tür."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Lukas",
+   "parts": [
+    "Das ist kein Heft. Das ist ein Buch."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Guten Morgen, Yuna! Hier ist der Stundenplan."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Heute ist Montag. Am Montag haben wir Mathe, Deutsch und Sport."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Um elf Uhr. Aber um acht Uhr haben wir Mathe."
+   ]
+  }
+ ],
+ "script": "Wie heißt du? [pause] Hey! Ich bin fast vierzehn! [pause] Spielst du Fußball? [pause] Ich bin dreizehn. [pause] Das Heft ist hier. Aber wo ist mein Stift? [pause] Die Tafel, das Fenster, die Tür. [pause] Das ist kein Heft. Das ist ein Buch. [pause] Guten Morgen, Yuna! Hier ist der Stundenplan. [pause] Heute ist Montag. Am Montag haben wir Mathe, Deutsch und Sport. [pause] Um elf Uhr. Aber um acht Uhr haben wir Mathe. [pause] Gut.",
+ "tail": "Gut."
+}

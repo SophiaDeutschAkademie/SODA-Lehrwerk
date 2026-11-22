@@ -1,0 +1,39 @@
+{
+ "job": "a11s_sc_01",
+ "who": "Schneider",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a1-1/station-1",
+   "who": "Schneider",
+   "parts": [
+    "Guten Morgen! Das ist Paul. Paul ist neu in der Klasse."
+   ]
+  },
+  {
+   "pid": "a1-1/station-1",
+   "who": "Schneider",
+   "parts": [
+    "Er kommt aus Österreich, aus Wien. Er ist vierzehn Jahre alt."
+   ]
+  },
+  {
+   "pid": "a1-1/station-1",
+   "who": "Schneider",
+   "parts": [
+    "Paul wohnt jetzt in Köln. Er spielt Gitarre und er findet Musik toll."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Schneider",
+   "parts": [
+    "Am Mittwoch haben wir um zehn Uhr Biologie."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Morgen! Das ist Paul. Paul ist neu in der Klasse. [pause] Er kommt aus Österreich, aus Wien. Er ist vierzehn Jahre alt. [pause] Paul wohnt jetzt in Köln. Er spielt Gitarre und er findet Musik toll. [pause] Am Mittwoch haben wir um zehn Uhr Biologie. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

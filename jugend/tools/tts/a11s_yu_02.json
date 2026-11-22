@@ -1,0 +1,25 @@
+{
+ "job": "a11s_yu_02",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a1-1/station-2",
+   "who": "Yuna",
+   "parts": [
+    "Am Abend essen wir zusammen. Danach rufe ich meine Eltern an."
+   ]
+  },
+  {
+   "pid": "a1-1/station-2",
+   "who": "Yuna",
+   "parts": [
+    "Um zehn gehe ich ins Bett."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Am Abend essen wir zusammen. Danach rufe ich meine Eltern an. [pause] Um zehn gehe ich ins Bett. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

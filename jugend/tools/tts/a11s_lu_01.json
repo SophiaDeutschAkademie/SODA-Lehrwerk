@@ -1,0 +1,53 @@
+{
+ "job": "a11s_lu_01",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Ich stehe um Viertel nach sechs auf."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Hallo, Elif! Was machst du am Samstag?"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Ich spiele Fußball im Park. Kommst du mit?"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Dann fahren wir am Sonntag Rad! Hast du Zeit?"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Um elf Uhr im Park."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Was isst du gern?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich stehe um Viertel nach sechs auf. [pause] Hallo, Elif! Was machst du am Samstag? [pause] Ich spiele Fußball im Park. Kommst du mit? [pause] Dann fahren wir am Sonntag Rad! Hast du Zeit? [pause] Um elf Uhr im Park. [pause] Was isst du gern? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

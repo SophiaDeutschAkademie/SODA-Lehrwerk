@@ -1,0 +1,88 @@
+{
+ "job": "a11b_n_12",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Freunde treffen, du triffst, er trifft.",
+    "Wir treffen Freunde in der Stadt."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Filme sehen, du siehst, er sieht.",
+    "Siehst du gern Filme?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "malen.",
+    "Lukas malt gern."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "fotografieren.",
+    "Ich fotografiere gern."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Computerspiele spielen.",
+    "Tim spielt gern Computerspiele."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "das Hobby, die Hobbys.",
+    "Mein Hobby ist Tanzen."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "machen.",
+    "Was machst du gern?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "gern."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "lieber.",
+    "Ich fahre lieber Rad."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Wir spielen Fußball. Kommst du mit?"
+   ]
+  }
+ ],
+ "script": "Freunde treffen, du triffst, er trifft. Wir treffen Freunde in der Stadt. [pause] Filme sehen, du siehst, er sieht. Siehst du gern Filme? [pause] malen. Lukas malt gern. [pause] fotografieren. Ich fotografiere gern. [pause] Computerspiele spielen. Tim spielt gern Computerspiele. [pause] das Hobby, die Hobbys. Mein Hobby ist Tanzen. [pause] machen. Was machst du gern? [pause] gern. [pause] lieber. Ich fahre lieber Rad. [pause] Wir spielen Fußball. Kommst du mit? [pause] Gut.",
+ "tail": "Gut."
+}

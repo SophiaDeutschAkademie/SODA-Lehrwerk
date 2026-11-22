@@ -1,0 +1,227 @@
+@id a1-1/2
+
+== einstieg
+bild: Four teenagers stand in a row in a classroom in front of a simple dark blackboard. From left to right: YUNA who looks at the others, EMMA who points with an open hand to the two on her right, LUKAS who waves and ELIF who smiles.
+alt: 교실 칠판 앞에서 Emma가 Yuna에게 Lukas와 Elif를 소개하고 있어요.
+lead: 쉬는 시간이에요. Emma가 Yuna에게 반 친구들을 한 명씩 소개해요.
+mission: 이 과를 마치면 내 친구 한 명을 독일어로 소개하는 글을 쓸 수 있어요.
+wort: Das ist Lukas. | 얘는 Lukas야.
+wort: Er ist dreizehn. | 그는 열세 살이야.
+wort: Das ist Elif. | 얘는 Elif야.
+wort: Sie wohnt in Köln. | 그녀는 쾰른에 살아.
+mc: Emma가 Das ist Lukas. Er ist dreizehn.이라고 말했어요. er는 누구를 가리킬까요? | Lukas* | Elif | Emma => 남자를 다시 가리킬 때 er를 써요.
+
+== hoeren
+-- dialog A | In der Pause | 쉬는 시간, 8b 교실이에요. Emma가 Yuna에게 친구들을 소개해요.
+vor: 들으면서 찾아보세요. Lukas는 몇 살인가요?
+Emma: Yuna, das ist Elif. Sie ist meine Freundin. | Yuna, 얘는 Elif야. 내 친구야.
+Elif: Hallo, Yuna! Wie alt bist du? | 안녕, Yuna! 너는 몇 살이야?
+Yuna: Hallo, Elif! Ich bin vierzehn. Und du? | 안녕, Elif! 나는 열네 살이야. 너는?
+Elif: Ich bin auch vierzehn. | 나도 열네 살이야.
+Emma: Und das ist Lukas. Er ist dreizehn. | 그리고 얘는 Lukas야. 열세 살이야.
+Lukas: Hey! Ich bin fast vierzehn! | 야! 나 곧 열네 살이야!
+Elif: Wohnst du jetzt in Köln, Yuna? | Yuna, 너 지금 쾰른에 살아?
+Yuna: Ja, ich wohne bei Emma. | 응, Emma네 집에 살아.
+Lukas: Spielst du Fußball? | 너 축구 해?
+Yuna: Nein, aber ich tanze. | 아니, 그렇지만 춤을 춰.
+
+-- dialog B | Zu Hause | 저녁, Emma네 집이에요. Sabine가 Yuna에게 새 반이 어떤지 물어요.
+vor: 들으면서 찾아보세요. Elif는 무엇을 연주하나요?
+Sabine: Na, Yuna? Wie ist die Klasse? | 그래, Yuna? 반은 어떠니?
+Yuna: Sehr nett! Lukas ist lustig. Er spielt Fußball. | 정말 좋아요! Lukas는 재미있어요. 축구를 해요.
+Sabine: Und Elif? Kommt sie auch aus Köln? | Elif는? 그 애도 쾰른 출신이니?
+Yuna: Ja, sie kommt aus Köln. Sie spielt Gitarre. | 네, 쾰른 출신이에요. 기타를 쳐요.
+Sabine: Ist Frau Schneider nett? | Frau Schneider는 친절하시니?
+Yuna: Ja, sie ist sehr nett. | 네, 정말 친절하세요.
+Emma: Yuna, wie ist deine Handynummer? Für den Klassenchat. | Yuna, 휴대폰 번호가 뭐야? 반 채팅방에 넣으려고.
+Yuna: Null, eins, sieben, sechs, null, vier, null, sechs, neun, null, eins, zwei. | 0176 04069012.
+Emma: Danke! Jetzt bist du im Chat. | 고마워! 이제 너도 채팅방에 있어.
+
+-- fragen 두 대화를 듣고 답하세요.
+rf: Yuna ist vierzehn. | r
+rf: Lukas ist vierzehn. | f => Lukas는 아직 열세 살(dreizehn)이에요.
+rf: Elif kommt aus Köln. | r
+rf: Lukas spielt Gitarre. | f => 기타를 치는 사람은 Elif예요. Lukas는 축구를 해요.
+mc: Yuna는 지금 어디에 사나요? | bei Emma* | bei Elif | in Seoul
+mc: Emma는 왜 Yuna의 휴대폰 번호를 물었나요? | 반 채팅방에 넣으려고* | 선생님께 알려 드리려고 | 숙제를 물어보려고
+
+-- kultur 8b는 무슨 뜻일까요?
+p: 독일에서는 1학년부터 학년을 이어서 세요. 초등학교(Grundschule)는 보통 4학년까지이고, 5학년부터는 Gymnasium, Realschule, Gesamtschule 같은 학교에 다녀요.
+p: 그래서 8. Klasse는 한국의 중학교 2학년 나이예요. 숫자 뒤의 a, b, c는 반 이름이에요. 8b는 8학년 b반이에요.
+p: 반마다 담임 선생님이 있어요. 여자 선생님은 Klassenlehrerin, 남자 선생님은 Klassenlehrer라고 해요. 8b의 Klassenlehrerin은 Frau Schneider예요.
+mc: 독일의 6a는 한국으로 치면 몇 학년 나이일까요? | 초등학교 6학년* | 중학교 3학년 | 초등학교 1학년
+
+== wortschatz
+-- gruppe Menschen in der Schule | 학교에서 만나는 사람
+der Schüler, die Schüler | 학생 (남자) | Lukas ist Schüler. | Lukas는 학생이에요.
+die Schülerin, die Schülerinnen | 학생 (여자) | Yuna ist Schülerin. | Yuna는 학생이에요.
+der Lehrer, die Lehrer | 선생님 (남자) | Herr Braun ist Lehrer. | Herr Braun은 선생님이에요.
+die Lehrerin, die Lehrerinnen | 선생님 (여자) | Frau Schneider ist Lehrerin. | Frau Schneider는 선생님이에요.
+der Freund, die Freunde | 친구 (남자) | Lukas ist ein Freund von Emma. | Lukas는 Emma의 친구예요.
+die Freundin, die Freundinnen | 친구 (여자) | Elif ist meine Freundin. | Elif는 내 친구예요.
+die Klasse, die Klassen | 반, 학급 | Die Klasse ist sehr nett. | 반 친구들이 정말 좋아요.
+der Junge, die Jungen | 남자아이 | Der Junge heißt Lukas. | 그 남자아이의 이름은 Lukas예요.
+das Mädchen, die Mädchen | 여자아이 | Das Mädchen kommt aus Korea. | 그 여자아이는 한국에서 왔어요.
+
+-- gruppe Über Personen sprechen | 사람에 대해 말할 때
+wohnen | 살다 | Ich wohne in Köln. | 나는 쾰른에 살아요.
+lernen | 배우다, 공부하다 | Yuna lernt Deutsch. | Yuna는 독일어를 배워요.
+spielen | 놀다, (운동이나 악기를) 하다 | Elif spielt Gitarre. | Elif는 기타를 쳐요.
+alt | 나이가 ~인, 오래된 | Wie alt bist du? | 너는 몇 살이야?
+das Jahr, die Jahre | 해, 년, ~살 | Ich bin vierzehn Jahre alt. | 나는 열네 살이에요.
+wo | 어디에 | Wo wohnst du? | 너는 어디에 살아?
+auch | ~도 | Ich bin auch vierzehn. | 나도 열네 살이야.
+nett | 친절한, 좋은 | Frau Schneider ist sehr nett. | Frau Schneider는 정말 친절해요.
+lustig | 재미있는, 웃기는 | Lukas ist lustig. | Lukas는 재미있어요.
+neu | 새로운 | Yuna ist neu in der Klasse. | Yuna는 반에 새로 왔어요.
+jetzt | 지금 | Ich wohne jetzt in Köln. | 나는 지금 쾰른에 살아요.
+die Handynummer, die Handynummern | 휴대폰 번호 | Wie ist deine Handynummer? | 휴대폰 번호가 뭐야?
+
+-- bilder
+der Lehrer, die Lehrer: a man teacher who stands next to a blackboard and points at it with one hand
+die Lehrerin, die Lehrerinnen: a woman teacher who stands next to a blackboard and holds an open book
+der Junge, die Jungen: a boy of about thirteen who stands and smiles, full body
+das Mädchen, die Mädchen: a girl of about thirteen who stands and smiles, full body
+die Klasse, die Klassen: five school students who sit at two rows of desks in a classroom
+die Handynummer, die Handynummern: a hand that holds a smartphone with a blank screen
+
+-- tafel Die Zahlen von 0 bis 20 | 숫자 0부터 20까지
+p: 줄을 누르면 소리가 나요. 13부터 19까지는 3부터 9에 -zehn을 붙여요. 다만 sechzehn과 siebzehn은 철자가 조금 짧아져요.
+r: 0 null ; 1 eins ; 2 zwei ; 3 drei ; 4 vier ; 5 fünf | say=null, eins, zwei, drei, vier, fünf.
+r: 6 sechs ; 7 sieben ; 8 acht ; 9 neun ; 10 zehn | say=sechs, sieben, acht, neun, zehn.
+r: 11 elf ; 12 zwölf ; 13 dreizehn ; 14 vierzehn ; 15 fünfzehn | say=elf, zwölf, dreizehn, vierzehn, fünfzehn.
+r: 16 sechzehn ; 17 siebzehn ; 18 achtzehn ; 19 neunzehn ; 20 zwanzig | say=sechzehn, siebzehn, achtzehn, neunzehn, zwanzig.
+
+-- aussprache ch 소리 두 가지 | ich의 ch와 acht의 ch
+p: ch는 앞에 오는 모음에 따라 소리가 달라져요. i, e 뒤에서는 혀를 입천장 가까이 올리고 바람을 내보내요. 한국어 '히'를 속삭이듯 내는 소리예요.
+p: a, o, u, au 뒤에서는 목 안쪽을 긁듯이 '흐' 하고 내요. 두 소리 모두 k 소리가 아니에요. ich를 [이크]로 읽지 않아요.
+hör: ich, sechzehn, Mädchen | i, e 뒤: 부드러운 소리
+hör: acht, auch, achtzehn | a, au 뒤: 목 안쪽 소리
+hör: Ich bin sechzehn. Du auch? | 두 소리가 모두 들어 있는 문장
+
+== grammatik
+-- punkt er und sie | 사람을 다시 가리키는 말
+bsp: Das ist Lukas. *Er* spielt Fußball. | 얘는 Lukas야. 그는 축구를 해.
+bsp: Das ist Elif. *Sie* kommt aus Köln. | 얘는 Elif야. 그녀는 쾰른 출신이야.
+finde: Elif를 다시 가리킬 때 쓴 말은 무엇인가요? | sie* | er | du
+regel: 앞에서 말한 사람을 다시 가리킬 때 남자는 er, 여자는 sie를 써요. 이름을 되풀이하지 않아도 돼요.
+| | 뜻 | 예
+| ich | 나 | Ich bin Yuna.
+| du | 너 | Du bist Lukas.
+| er | 그 (남자) | Er ist dreizehn.
+| sie | 그녀 (여자) | Sie ist vierzehn.
+merke: 여기서 배운 sie는 소문자로 써요. 대문자로 쓰는 Sie는 어른에게 쓰는 높임말이에요.
+
+-- punkt Verben im Singular | 주어에 따라 달라지는 동사의 끝
+bsp: Ich *wohne* bei Emma. | 나는 Emma네 집에 살아.
+bsp: *Wohnst* du jetzt in Köln? | 너 지금 쾰른에 살아?
+bsp: Sie *kommt* aus Köln. | 그녀는 쾰른 출신이야.
+finde: er나 sie가 주어일 때 동사는 어떻게 끝나나요? | -t* | -e | -st
+regel: er와 sie에는 -t를 붙여요. ich는 -e, du는 -st, er와 sie는 -t예요.
+| | wohnen | spielen | heißen | sein
+| ich | wohn*e* | spiel*e* | heiß*e* | *bin*
+| du | wohn*st* | spiel*st* | heiß*t* | *bist*
+| er, sie | wohn*t* | spiel*t* | heiß*t* | *ist*
+merke: sein은 er ist, sie ist예요. heißen은 du heißt와 er heißt의 모양이 같아요.
+
+-- punkt Ja/Nein-Fragen | 네, 아니요로 답하는 질문
+bsp: *Wohnst* du jetzt in Köln? – Ja. | 너 지금 쾰른에 살아? – 응.
+bsp: *Kommt* sie auch aus Köln? – Ja. | 그 애도 쾰른 출신이니? – 네.
+bsp: *Spielst* du Fußball? – Nein. | 너 축구 해? – 아니.
+finde: 네, 아니요로 답하는 질문은 무엇으로 시작하나요? | 동사* | 의문사 | 주어
+regel: 의문사가 없는 질문은 동사가 맨 앞에 오고, 주어가 그 뒤에 와요. 문장 끝을 올려서 말해요.
+| 1 동사 | 2 주어 | 나머지
+| Wohnst | du | in Köln?
+| Kommt | sie | aus Köln?
+| Ist | Frau Schneider | nett?
+merke: 한국어는 문장 끝만 바꾸면 질문이 되지만, 독일어는 동사와 주어의 자리를 바꿔요. Du wohnst in Köln. → Wohnst du in Köln?
+
+== training
+-- ex Hören | 숫자를 듣고 알맞은 것을 고르세요.
+hör: Lukas: Ich bin dreizehn.
+mc: Lukas는 몇 살인가요? | 13* | 15 | 16
+hör: Elif: Tim ist zwölf.
+mc: Tim은 몇 살인가요? | 12* | 20 | 2
+hör: N: siebzehn
+mc: 어떤 숫자인가요? | 17* | 16 | 7
+hör: Emma: Meine Handynummer ist null, eins, fünf, zwei, drei, acht.
+mc: Emma가 말한 번호는 무엇인가요? | 015238* | 015328 | 015283
+
+-- ex Lesen | 친구 소개 카드를 읽고, 맞으면 richtig, 틀리면 falsch를 고르세요. Alter는 나이, Wohnort는 사는 곳이에요.
+text profil | Steckbrief
+> Name: Mats Becker
+> Alter: 14 Jahre
+> Wohnort: Bonn
+> Land: Deutschland
+> Hobby: Basketball
+rf: Mats ist vierzehn Jahre alt. | r
+rf: Er wohnt in Köln. | f => Mats는 본(Bonn)에 살아요.
+rf: Er kommt aus Deutschland. | r
+rf: Er spielt Fußball. | f => Mats의 취미는 농구(Basketball)예요.
+
+-- ex Grammatik | 알맞은 동사 형태를 고르세요.
+gap: Lukas [spielt|spielst|spiele] Fußball.
+gap: [Wohnst|Wohnt|Wohne] du in Köln?
+gap: Elif [kommt|kommst|komme] aus Köln.
+gap: Ich [lerne|lernst|lernt] Deutsch.
+gap: Frau Schneider [ist|bist|bin] Lehrerin.
+gap: Wie alt [bist|ist|bin] du?
+
+-- ex Grammatik | er와 sie 가운데 알맞은 말을 고르세요.
+gap: Das ist Lukas. [Er|Sie] ist dreizehn.
+gap: Das ist Elif. [Sie|Er] spielt Gitarre.
+gap: Das ist Frau Schneider. [Sie|Er] ist Lehrerin.
+gap: Das ist Herr Wagner. [Er|Sie] wohnt in Köln.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 질문을 만드세요.
+ord: wohnst / du / in Köln? | 너는 쾰른에 살아?
+ord: kommt / Elif / aus Köln? | Elif는 쾰른 출신이야?
+ord: ist / Lukas / dreizehn? | Lukas는 열세 살이야?
+ord: spielst / du / Fußball? | 너는 축구를 해?
+
+-- ex Wortschatz | 계산한 답을 독일어 숫자로 쓰세요.
+gap: drei + vier = [=sieben]
+gap: zehn + zwei = [=zwölf]
+gap: acht + acht = [=sechzehn]
+gap: zwanzig – eins = [=neunzehn]
+
+-- ex Wortschatz | 숫자와 낱말을 짝지으세요.
+paar: 3 = drei ; 7 = sieben ; 11 = elf ; 12 = zwölf ; 17 = siebzehn ; 20 = zwanzig
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Elif: Ich bin vierzehn Jahre alt. | 나는 열네 살이야.
+dik: Emma: Wo wohnst du? | 너는 어디에 살아?
+dik: Yuna: Sie kommt aus Köln. | 그녀는 쾰른 출신이야.
+
+== sprechen
+-- redemittel
+다른 사람 소개하기: Das ist … | 이 사람은 …예요. ; Er kommt aus … / Sie kommt aus … | 그는 / 그녀는 …에서 왔어요. ; Er wohnt in … / Sie wohnt in … | 그는 / 그녀는 …에 살아요.
+나이 묻고 답하기: Wie alt bist du? | 몇 살이야? ; Ich bin … Jahre alt. | 나는 …살이야.
+사는 곳 묻고 답하기: Wo wohnst du? | 어디에 살아? ; Ich wohne in … | 나는 …에 살아.
+번호 묻고 답하기: Wie ist deine Handynummer? | 휴대폰 번호가 뭐야? ; Meine Handynummer ist … | 내 번호는 …야.
+
+-- rolle A | Yuna, Elif
+
+-- ich 내 친구를 소개해요 | 친구 한 명을 떠올리고 칸을 채우세요. 남자면 Er, 여자면 Sie를 쓰고, 나이는 독일어 숫자로 적어요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: name | 친구 이름 | Minji
+feld: pron | Er 또는 Sie | Sie
+feld: alter | 나이 | vierzehn
+feld: stadt | 사는 곳 | Seoul
+satz: Das ist {name}.
+satz: {pron} ist {alter} Jahre alt.
+satz: {pron} wohnt in {stadt}.
+
+-- schreiben Mein Freund, meine Freundin | 친구 한 명을 소개하는 글을 써 보세요. 네다섯 문장이면 충분해요.
+punkt: 이름 ; 나이 ; 사는 곳 ; 그 친구가 하는 것 하나
+start: Das ist …
+muster: Das ist Minji. Sie ist meine Freundin. Sie ist vierzehn Jahre alt. Sie wohnt in Seoul. Sie spielt Gitarre.
+check: Das ist …로 시작했나요? ; 남자는 er, 여자는 sie로 받았나요? ; er나 sie 다음의 동사가 -t로 끝나나요? ; 나이를 독일어 숫자로 썼나요?
+
+-- kann
+Ich kann andere Personen vorstellen. | 다른 사람을 소개할 수 있어요.
+Ich kann nach Alter und Wohnort fragen. | 나이와 사는 곳을 묻고 답할 수 있어요.
+Ich kann die Zahlen von 0 bis 20 sagen. | 0부터 20까지 숫자를 말할 수 있어요.
+
+-- tipp 숫자는 볼 때마다 독일어로 말해요
+p: 숫자는 표로 외우는 것보다 자주 말하는 편이 오래 남아요. 휴대폰 번호, 버스 번호, 교실 번호를 볼 때마다 독일어로 중얼거려 보세요.
+p: 오늘은 내 휴대폰 번호를 독일어로 세 번 말해 보세요. 막히는 숫자가 있으면 그 숫자만 다시 들어요.

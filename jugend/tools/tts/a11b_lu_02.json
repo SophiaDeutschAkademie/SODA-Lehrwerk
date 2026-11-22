@@ -1,0 +1,80 @@
+{
+ "job": "a11b_lu_02",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Um zehn Uhr."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Ja, am Mittwoch. Kunst ist mein Lieblingsfach."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Physik? Physik finde ich langweilig!"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Um elf Uhr haben wir Sport."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Am Montag haben wir Mathe."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Yuna, was machst du gern?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Ich spiele gern Fußball. Spielst du auch gern Fußball?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Und du, Elif? Liest du gern?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Tim und ich spielen Fußball im Park. Kommst du mit?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Um drei? Dann komme ich auch mit!"
+   ]
+  }
+ ],
+ "script": "Um zehn Uhr. [pause] Ja, am Mittwoch. Kunst ist mein Lieblingsfach. [pause] Physik? Physik finde ich langweilig! [pause] Um elf Uhr haben wir Sport. [pause] Am Montag haben wir Mathe. [pause] Yuna, was machst du gern? [pause] Ich spiele gern Fußball. Spielst du auch gern Fußball? [pause] Und du, Elif? Liest du gern? [pause] Tim und ich spielen Fußball im Park. Kommst du mit? [pause] Um drei? Dann komme ich auch mit! [pause] Gut.",
+ "tail": "Gut."
+}

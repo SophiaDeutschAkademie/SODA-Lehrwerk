@@ -1,6 +1,6 @@
 # SODA Jugendliche
 
-청소년 독일어 교재 「청소년 독일어 발돋움」입니다. 독일어를 처음 배우는 초등 고학년, 중학생, 고등학생이 A1부터 B1까지 배웁니다. 지금은 목차만 있고, 본문은 A1.1부터 차례로 올립니다.
+청소년 독일어 교재 「청소년 독일어 발돋움」입니다. 독일어를 처음 배우는 초등 고학년, 중학생, 고등학생이 A1부터 B1까지 배웁니다. 목차는 여섯 단계 모두 있고, 본문은 A1.1부터 차례로 올립니다. 본문이 올라온 과는 목차에서 줄을 누르면 열립니다.
 
 - 주소: https://sophiadeutschakademie.github.io/SODA-Lehrwerk/jugend/
 - 목차 묶음: Lehrbuch
@@ -25,19 +25,38 @@
 
 ```
 index.html              목차 화면 (빌드 결과, 직접 고치지 않습니다)
+a1-1/1/ … a1-1/8/       과 화면 (빌드 결과). a1-1/station-1/, a1-1/station-2/, a1-1/stufentest/ 도 같은 틀입니다
+lektion.css, lektion.js 과 화면의 모양과 동작 (모든 과가 같이 씁니다)
+audio/<단계>/<과>/      독일어 음성 (mp3, 한 줄에 파일 하나)
+img/<단계>/<과>/        장면 그림 szene.webp, 단어 그림 c1.webp …, Station 이야기 그림 b1.webp …
+img/c/                  등장인물 얼굴
 manifest.webmanifest    홈 화면에 추가할 때 쓰는 정보
-icons/                  앱 아이콘
-fonts/                  독일어 글꼴 DM Sans(라틴 글자만, 굵기 400–900)와 사용 허가서 OFL.txt
+icons/, fonts/          앱 아이콘, 독일어 글꼴 DM Sans(라틴 글자만)와 사용 허가서 OFL.txt
 tools/inhalt.json       단계, 과 제목, 말하기 목표, 문법, Station, 평가, 과 구성
-tools/shell.html        화면 틀(CSS와 스크립트)
+tools/shell.html        목차 화면 틀
+tools/build.py          inhalt.json + shell.html + open.json -> index.html
+tools/src/<단계>/       과 원고 (1.txt … 8.txt, s1.txt, s2.txt, t.txt). 쓰는 법은 tools/src/README.md
+tools/page.html         과 화면 틀
+tools/lektion.py        원고 검사, 음성 대본 만들기, 음성 자르기, 그림 자르기, 과 화면 만들기
+tools/audio/            음성 파일 이름표 (과마다 "말한 사람|글" -> 파일 이름)
+tools/tts/              음성과 그림을 만들 때 쓴 대본과 프롬프트
+tools/open.json         본문이 올라온 화면 목록 (lektion.py site 가 적습니다)
 tools/blocks/           다크 모드 스위치, 목차 버튼, 홈 화면에 앱 추가 공통 조각
-tools/build.py          inhalt.json + shell.html -> index.html
 ```
 
 ## 고치는 법
 
-1. `tools/inhalt.json`에서 과 제목이나 내용을 고칩니다. 과 하나는 `{"t": "l", "de": 독일어 제목, "ko": 주제, "ziel": 말하기 목표, "gr": 문법}`이고, Station은 `"t": "s"`, 평가는 `"t": "t"`입니다.
-2. `python3 jugend/tools/build.py`를 실행합니다. 단계마다 과 8개, Station 2개, 평가 1개인지 확인한 뒤 `index.html`을 만들고, 저장소의 `tools/seo.py`를 이어서 실행합니다.
-3. 본문을 올릴 때는 과 항목에 주소를 더해 목차의 줄을 링크로 바꿉니다(아직 만들지 않았습니다).
+과 내용을 고칠 때
 
-화면은 다크 모드가 기본이고, 주소 끝에 `#a1-1`부터 `#b1-2`까지 붙이면 그 단계가 열립니다. 저장하는 학습 기록은 아직 없습니다.
+1. `tools/src/<단계>/<과>.txt`를 고칩니다.
+2. `python3 jugend/tools/lektion.py check`로 원고를 검사합니다.
+3. 독일어 문장을 바꾸거나 더했으면 그 줄의 음성을 새로 만들어야 합니다. `python3 jugend/tools/lektion.py tts 이름`이 음성이 없는 줄만 모아 대본(`tools/tts/이름_*.json`)을 만듭니다. 대본으로 만든 음성과 낱말 시각 파일을 한 폴더에 받아 `python3 jugend/tools/lektion.py cut 폴더`로 자릅니다.
+4. `python3 jugend/tools/lektion.py site`로 과 화면을 다시 만들고, `python3 jugend/tools/build.py`로 목차를 다시 만듭니다. 음성이나 그림이 하나라도 빠진 과는 열리지 않고 목차에도 링크가 생기지 않습니다.
+
+목차만 고칠 때는 `tools/inhalt.json`을 고치고 `python3 jugend/tools/build.py`를 실행합니다. 단계마다 과 8개, Station 2개, 평가 1개인지 확인한 뒤 `index.html`을 만들고, 저장소의 `tools/seo.py`를 이어서 실행합니다.
+
+## 학습 기록
+
+과 화면은 이 브라우저의 localStorage `soda-jugend-v1`에 기록을 남깁니다. 과마다 마지막으로 본 순서, 문제 결과, 쓴 글, 자기 평가, 마친 날이 들어갑니다. 목차 화면은 이 기록을 읽어 마친 과와 보던 과를 표시합니다. 과를 고칠 때 이 기록의 짜임을 바꾸지 않습니다. 녹음한 목소리는 저장하지 않습니다.
+
+화면은 다크 모드가 기본이고, 목차 주소 끝에 `#a1-1`부터 `#b1-2`까지 붙이면 그 단계가 열립니다. 과 화면 주소 끝에는 `#einstieg`, `#hoeren`, `#wortschatz`, `#grammatik`, `#training`, `#sprechen`을 붙일 수 있습니다.

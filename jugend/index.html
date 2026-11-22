@@ -26,15 +26,15 @@
 })();
 </script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>청소년 독일어 발돋움 · A1–B1 청소년 독일어 교재 목차 | SODA Jugendliche</title>
+<title>청소년 독일어 발돋움 · A1–B1 청소년 독일어 교재 | SODA Jugendliche</title>
 <!-- seo:begin (tools/seo.py에서 만듦, 직접 고치지 마세요) -->
-<meta name="description" content="초등 고학년부터 고등학생까지 독일어를 처음부터 B1까지 배우는 청소년 교재의 목차. A1.1부터 B1.2까지 여섯 단계 48과의 주제, 말하기 목표, 문법을 볼 수 있습니다. 소피아 독일어학원.">
+<meta name="description" content="초등 고학년부터 고등학생까지 독일어를 처음부터 B1까지 배우는 청소년 교재. 서울에서 온 Yuna의 쾰른 학교생활을 따라 대화, 단어, 문법, 연습 문제, 말하기와 쓰기를 독일어 음성과 함께 배웁니다. A1.1부터 B1.2까지 여섯 단계 48과의 목차와 A1.1 본문을 볼 수 있습니다. 소피아 독일어학원.">
 <link rel="canonical" href="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/jugend/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SODA Lehrwerk · 소피아 독일어학원">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:title" content="청소년 독일어 발돋움 · A1–B1 청소년 독일어 교재 목차 | SODA Jugendliche">
-<meta property="og:description" content="초등 고학년부터 고등학생까지 독일어를 처음부터 B1까지 배우는 청소년 교재의 목차. A1.1부터 B1.2까지 여섯 단계 48과의 주제, 말하기 목표, 문법을 볼 수 있습니다. 소피아 독일어학원.">
+<meta property="og:title" content="청소년 독일어 발돋움 · A1–B1 청소년 독일어 교재 | SODA Jugendliche">
+<meta property="og:description" content="초등 고학년부터 고등학생까지 독일어를 처음부터 B1까지 배우는 청소년 교재. 서울에서 온 Yuna의 쾰른 학교생활을 따라 대화, 단어, 문법, 연습 문제, 말하기와 쓰기를 독일어 음성과 함께 배웁니다. A1.1부터 B1.2까지 여섯 단계 48과의 목차와 A1.1 본문을 볼 수 있습니다. 소피아 독일어학원.">
 <meta property="og:url" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/jugend/">
 <meta property="og:image" content="https://sophiadeutschakademie.github.io/SODA-Lehrwerk/jugend/icons/icon-512.png">
 <meta name="twitter:card" content="summary">
@@ -137,6 +137,25 @@ html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
 .sta p,.tst p{margin-top:2px;font-size:14px;line-height:1.5}
 .sta p span{font-family:var(--de);font-weight:700}
 
+/* 본문이 올라온 줄: 줄 전체를 누르면 그 과로 간다 */
+.auf{position:relative}
+.auf a{text-decoration:none}
+.auf a::after{content:"";position:absolute;inset:0}
+.auf:hover a,.auf a:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.lek.auf>div{padding-right:20px}
+.lek.auf::after,.sta.auf::after,.tst.auf::after{content:"";position:absolute;right:4px;top:22px;width:8px;height:8px;border-right:2px solid var(--ink2);border-top:2px solid var(--ink2);transform:rotate(45deg);pointer-events:none}
+.sta.auf,.tst.auf{padding-right:34px}
+.sta.auf::after,.tst.auf::after{right:16px;top:50%;margin-top:-5px}
+.stat{font-weight:700;font-size:12px;line-height:1.3;color:var(--accent-ink)}
+.sta .stat,.tst .stat{margin-left:8px}
+.lek.fin .num{background:var(--fill);border-color:var(--fill);color:var(--on-fill)}
+.step.offen{position:relative}
+.step.offen::after{content:"";position:absolute;left:50%;bottom:9px;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:var(--accent)}
+.step.offen[aria-selected="true"]::after{background:var(--on-fill)}
+.p-go{margin-top:16px}
+.p-go .btn{min-height:44px;padding:0 22px;font-size:15px}
+.p-wart{margin-top:14px;font-size:13.5px;color:var(--ink2)}
+
 /* 과 구성 */
 .more{display:grid;gap:34px;padding:34px 0 10px;border-top:1.5px solid var(--line)}
 .more h2{font-weight:800;font-size:20px;line-height:1.3;letter-spacing:-.02em}
@@ -202,13 +221,13 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
       <p class="sub" lang="de">Deutsch für Jugendliche, A1 bis B1</p>
       <p class="lead">독일어를 처음 배우는 초등 고학년, 중학생, 고등학생을 위한 교재예요. 서울에서 온 Yuna가 쾰른의 학교에서 보내는 한 해를 따라가며 A1부터 B1까지 여섯 단계, 48과를 배워요.</p>
       <p class="cta"><a class="btn" href="#inhalt">목차 보기</a></p>
-      <p class="note">지금은 목차만 볼 수 있어요. 본문은 A1.1부터 차례로 올라와요.</p>
+      <p class="note">A1.1 본문을 볼 수 있어요. 나머지 단계는 차례로 올라와요.</p>
     </header>
     <section class="stufen" aria-labelledby="stufen-h">
       <h2 id="stufen-h">여섯 단계</h2>
       <p class="hint">단계를 누르면 그 단계의 목차가 열려요.</p>
       <div class="stairs" role="tablist" aria-label="단계 고르기">
-        <button type="button" role="tab" class="step" id="tab-a1-1" aria-controls="p-a1-1" aria-selected="true" aria-label="A1.1 Ankommen, 첫 만남" style="--i:0">A1.1</button>
+        <button type="button" role="tab" class="step offen" id="tab-a1-1" aria-controls="p-a1-1" aria-selected="true" aria-label="A1.1 Ankommen, 첫 만남, 본문 공개" style="--i:0">A1.1</button>
         <button type="button" role="tab" class="step" id="tab-a1-2" aria-controls="p-a1-2" aria-selected="false" aria-label="A1.2 Einleben, 익숙해지기" style="--i:1">A1.2</button>
         <button type="button" role="tab" class="step" id="tab-a2-1" aria-controls="p-a2-1" aria-selected="false" aria-label="A2.1 Dazugehören, 어울리기" style="--i:2">A2.1</button>
         <button type="button" role="tab" class="step" id="tab-a2-2" aria-controls="p-a2-2" aria-selected="false" aria-label="A2.2 Entdecken, 넓혀 가기" style="--i:3">A2.2</button>
@@ -230,22 +249,23 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
       <h2 class="p-name" lang="de">Ankommen</h2>
       <p class="p-ko">첫 만남</p>
       <p class="p-lead">Yuna가 쾰른의 새 학교에 온 첫 주예요. 인사하고, 나와 내 주변을 소개하는 말부터 배워요.</p>
+      <p class="p-go"><a class="btn" href="a1-1/1/" data-go="a1-1">Lektion 1 시작하기</a></p>
       <h3>이 단계를 마치면</h3>
       <ul class="kann"><li>나와 가족, 친구를 소개해요</li><li>시간표와 취미, 하루 일과를 말해요</li><li>매점에서 먹고 싶은 것을 주문해요</li></ul>
       <dl><div><dt>읽고 쓰는 글</dt><dd>채팅 메시지, 프로필, 시간표, 메뉴판</dd></div><div><dt>문화</dt><dd>du와 Sie, 독일 학교의 하루, 쉬는 시간 간식 Pausenbrot</dd></div></dl>
      </div>
      <ol class="leks">
-      <li class="lek"><span class="num">1</span><div><h3><span class="de" lang="de">Hallo, ich bin Yuna!</span><span class="ko">인사와 자기소개</span></h3><dl><div><dt>말하기</dt><dd>인사하기, 이름과 출신 말하기, 이름 철자 말하기</dd></div><div><dt>문법</dt><dd class="gr">sein, heißen, kommen (ich, du), <span class="nb">W-Fragen</span> (Wie? Woher? Wer?), das Alphabet</dd></div></dl></div></li>
-      <li class="lek"><span class="num">2</span><div><h3><span class="de" lang="de">Das ist die 8b</span><span class="ko">우리 반 친구들</span></h3><dl><div><dt>말하기</dt><dd>친구 소개하기, 나이와 사는 곳 묻고 답하기, 숫자 0–20 말하기</dd></div><div><dt>문법</dt><dd class="gr">er, sie, Verben im Singular, <span class="nb">Ja/Nein-Fragen</span></dd></div></dl></div></li>
-      <li class="lek"><span class="num">3</span><div><h3><span class="de" lang="de">Was ist das?</span><span class="ko">교실과 학용품</span></h3><dl><div><dt>말하기</dt><dd>물건 이름 묻고 답하기, 교실에서 쓰는 말 알아듣기</dd></div><div><dt>문법</dt><dd class="gr">der, die, das, ein, eine, kein, keine (Nominativ), Plural</dd></div></dl></div></li>
-      <li class="lek"><span class="num">4</span><div><h3><span class="de" lang="de">Mein Stundenplan</span><span class="ko">과목과 요일</span></h3><dl><div><dt>말하기</dt><dd>시간표 말하기, 좋아하는 과목 말하기, 시각 말하기</dd></div><div><dt>문법</dt><dd class="gr">haben, Verb auf Position 2, am Montag, um acht Uhr</dd></div></dl></div></li>
-      <li class="sta"><b lang="de">Station 1</b><i>복습과 프로젝트</i><p><span lang="de">Steckbrief</span>: 나를 소개하는 카드를 만들어요.</p></li>
-      <li class="lek"><span class="num">5</span><div><h3><span class="de" lang="de">Was machst du gern?</span><span class="ko">취미와 여가</span></h3><dl><div><dt>말하기</dt><dd>취미 묻고 답하기, 좋아하는 것과 싫어하는 것 말하기, 같이 하자고 말하기</dd></div><div><dt>문법</dt><dd class="gr">gern, nicht gern, lieber, Verben mit Vokalwechsel (lesen, fahren, treffen), wir, ihr, sie</dd></div></dl></div></li>
-      <li class="lek"><span class="num">6</span><div><h3><span class="de" lang="de">Meine Familie</span><span class="ko">가족</span></h3><dl><div><dt>말하기</dt><dd>가족 소개하기, 가족의 나이와 직업 말하기, 숫자 21–100 말하기</dd></div><div><dt>문법</dt><dd class="gr">mein, dein, sein, ihr, haben + Akkusativ (einen Bruder, eine Schwester)</dd></div></dl></div></li>
-      <li class="lek"><span class="num">7</span><div><h3><span class="de" lang="de">Ich habe Hunger!</span><span class="ko">음식과 주문</span></h3><dl><div><dt>말하기</dt><dd>먹고 마시는 것 말하기, 매점에서 주문하기, 가격 묻기</dd></div><div><dt>문법</dt><dd class="gr">Akkusativ (den, einen, keinen), möchten, essen, nehmen</dd></div></dl></div></li>
-      <li class="lek"><span class="num">8</span><div><h3><span class="de" lang="de">Mein Tag</span><span class="ko">하루 일과</span></h3><dl><div><dt>말하기</dt><dd>하루 일과 말하기, 시각 말하기 (halb, Viertel), 순서대로 이야기하기</dd></div><div><dt>문법</dt><dd class="gr">trennbare Verben (aufstehen, anfangen), Satzklammer, zuerst, dann, danach</dd></div></dl></div></li>
-      <li class="sta"><b lang="de">Station 2</b><i>복습과 프로젝트</i><p><span lang="de">Mein Tag</span>: 나의 하루를 사진과 문장으로 소개해요.</p></li>
-      <li class="tst"><b lang="de">Stufentest A1.1</b><i>단계 평가</i><p>듣기, 읽기, 쓰기, 말하기로 A1.1을 점검해요.</p></li>
+      <li class="lek auf" data-id="a1-1/1"><span class="num">1</span><div><h3><a class="de" lang="de" href="a1-1/1/">Hallo, ich bin Yuna!</a><span class="ko">인사와 자기소개</span><span class="stat"></span></h3><dl><div><dt>말하기</dt><dd>인사하기, 이름과 출신 말하기, 이름 철자 말하기</dd></div><div><dt>문법</dt><dd class="gr">sein, heißen, kommen (ich, du), <span class="nb">W-Fragen</span> (Wie? Woher? Wer?), das Alphabet</dd></div></dl></div></li>
+      <li class="lek auf" data-id="a1-1/2"><span class="num">2</span><div><h3><a class="de" lang="de" href="a1-1/2/">Das ist die 8b</a><span class="ko">우리 반 친구들</span><span class="stat"></span></h3><dl><div><dt>말하기</dt><dd>친구 소개하기, 나이와 사는 곳 묻고 답하기, 숫자 0–20 말하기</dd></div><div><dt>문법</dt><dd class="gr">er, sie, Verben im Singular, <span class="nb">Ja/Nein-Fragen</span></dd></div></dl></div></li>
+      <li class="lek auf" data-id="a1-1/3"><span class="num">3</span><div><h3><a class="de" lang="de" href="a1-1/3/">Was ist das?</a><span class="ko">교실과 학용품</span><span class="stat"></span></h3><dl><div><dt>말하기</dt><dd>물건 이름 묻고 답하기, 교실에서 쓰는 말 알아듣기</dd></div><div><dt>문법</dt><dd class="gr">der, die, das, ein, eine, kein, keine (Nominativ), Plural</dd></div></dl></div></li>
+      <li class="lek auf" data-id="a1-1/4"><span class="num">4</span><div><h3><a class="de" lang="de" href="a1-1/4/">Mein Stundenplan</a><span class="ko">과목과 요일</span><span class="stat"></span></h3><dl><div><dt>말하기</dt><dd>시간표 말하기, 좋아하는 과목 말하기, 시각 말하기</dd></div><div><dt>문법</dt><dd class="gr">haben, Verb auf Position 2, am Montag, um acht Uhr</dd></div></dl></div></li>
+      <li class="sta auf" data-id="a1-1/station-1"><b lang="de"><a href="a1-1/station-1/">Station 1</a></b><i>복습과 프로젝트</i><span class="stat"></span><p><span lang="de">Steckbrief</span>: 나를 소개하는 카드를 만들어요.</p></li>
+      <li class="lek auf" data-id="a1-1/5"><span class="num">5</span><div><h3><a class="de" lang="de" href="a1-1/5/">Was machst du gern?</a><span class="ko">취미와 여가</span><span class="stat"></span></h3><dl><div><dt>말하기</dt><dd>취미 묻고 답하기, 좋아하는 것과 싫어하는 것 말하기, 같이 하자고 말하기</dd></div><div><dt>문법</dt><dd class="gr">gern, nicht gern, lieber, Verben mit Vokalwechsel (lesen, fahren, treffen), wir, ihr, sie</dd></div></dl></div></li>
+      <li class="lek auf" data-id="a1-1/6"><span class="num">6</span><div><h3><a class="de" lang="de" href="a1-1/6/">Meine Familie</a><span class="ko">가족</span><span class="stat"></span></h3><dl><div><dt>말하기</dt><dd>가족 소개하기, 가족의 나이와 직업 말하기, 숫자 21–100 말하기</dd></div><div><dt>문법</dt><dd class="gr">mein, dein, sein, ihr, haben + Akkusativ (einen Bruder, eine Schwester)</dd></div></dl></div></li>
+      <li class="lek auf" data-id="a1-1/7"><span class="num">7</span><div><h3><a class="de" lang="de" href="a1-1/7/">Ich habe Hunger!</a><span class="ko">음식과 주문</span><span class="stat"></span></h3><dl><div><dt>말하기</dt><dd>먹고 마시는 것 말하기, 매점에서 주문하기, 가격 묻기</dd></div><div><dt>문법</dt><dd class="gr">Akkusativ (den, einen, keinen), möchten, essen, nehmen</dd></div></dl></div></li>
+      <li class="lek auf" data-id="a1-1/8"><span class="num">8</span><div><h3><a class="de" lang="de" href="a1-1/8/">Mein Tag</a><span class="ko">하루 일과</span><span class="stat"></span></h3><dl><div><dt>말하기</dt><dd>하루 일과 말하기, 시각 말하기 (halb, Viertel), 순서대로 이야기하기</dd></div><div><dt>문법</dt><dd class="gr">trennbare Verben (aufstehen, anfangen), Satzklammer, zuerst, dann, danach</dd></div></dl></div></li>
+      <li class="sta auf" data-id="a1-1/station-2"><b lang="de"><a href="a1-1/station-2/">Station 2</a></b><i>복습과 프로젝트</i><span class="stat"></span><p><span lang="de">Mein Tag</span>: 나의 하루를 사진과 문장으로 소개해요.</p></li>
+      <li class="tst auf" data-id="a1-1/stufentest"><b lang="de"><a href="a1-1/stufentest/">Stufentest A1.1</a></b><i>단계 평가</i><span class="stat"></span><p>듣기, 읽기, 쓰기, 말하기로 A1.1을 점검해요.</p></li>
      </ol>
     </article>
     <article class="panel" id="p-a1-2" role="tabpanel" aria-labelledby="tab-a1-2">
@@ -254,6 +274,7 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
       <h2 class="p-name" lang="de">Einleben</h2>
       <p class="p-ko">익숙해지기</p>
       <p class="p-lead">Yuna가 쾰른 생활에 익숙해져요. 길을 찾고, 약속을 잡고, 지난 일을 이야기해요.</p>
+      <p class="p-wart">이 단계의 본문은 준비 중이에요. 지금은 목차만 볼 수 있어요.</p>
       <h3>이 단계를 마치면</h3>
       <ul class="kann"><li>집과 동네를 설명하고 길을 물어요</li><li>약속을 잡고 가게에서 물건을 사요</li><li>지난 주말과 방학에 한 일을 이야기해요</li></ul>
       <dl><div><dt>읽고 쓰는 글</dt><dd>초대장, 엽서, 광고, 일기</dd></div><div><dt>문화</dt><dd>쾰른 둘러보기, 독일의 대중교통, 생일 문화, Weihnachten과 Karneval</dd></div></dl>
@@ -278,6 +299,7 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
       <h2 class="p-name" lang="de">Dazugehören</h2>
       <p class="p-ko">어울리기</p>
       <p class="p-lead">새 학기, Yuna에게 친구와 동아리가 생겨요. 이유를 대고, 비교하고, 의견을 전해요.</p>
+      <p class="p-wart">이 단계의 본문은 준비 중이에요. 지금은 목차만 볼 수 있어요.</p>
       <h3>이 단계를 마치면</h3>
       <ul class="kann"><li>사람과 물건을 자세히 묘사해요</li><li>이유와 조건을 넣어 길게 말해요</li><li>식당, 가게, 역에서 필요한 말을 해요</li></ul>
       <dl><div><dt>읽고 쓰는 글</dt><dd>블로그 글, 설문, 요리법, 상품 후기</dd></div><div><dt>문화</dt><dd>독일의 동아리 Verein, 집안 규칙, 독일 음식과 식당 예절</dd></div></dl>
@@ -302,6 +324,7 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
       <h2 class="p-name" lang="de">Entdecken</h2>
       <p class="p-ko">넓혀 가기</p>
       <p class="p-lead">수학여행, 환경, 진로처럼 교실 밖 이야기를 해요. 계획을 세우고 바라는 것을 말해요.</p>
+      <p class="p-wart">이 단계의 본문은 준비 중이에요. 지금은 목차만 볼 수 있어요.</p>
       <h3>이 단계를 마치면</h3>
       <ul class="kann"><li>여행 계획을 세우고 제안해요</li><li>바라는 것을 말하고 조언해요</li><li>영화와 책의 줄거리를 이야기해요</li></ul>
       <dl><div><dt>읽고 쓰는 글</dt><dd>여행 일정표, 안내문, 줄거리 소개, 고민 상담 글</dd></div><div><dt>문화</dt><dd>독일의 학교 제도, 베를린, 분리수거, 오스트리아와 스위스</dd></div></dl>
@@ -326,6 +349,7 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
       <h2 class="p-name" lang="de">Mitreden</h2>
       <p class="p-ko">의견 말하기</p>
       <p class="p-lead">반 친구들이 팟캐스트를 시작해요. 주제를 조사하고, 의견을 말하고, 토론해요.</p>
+      <p class="p-wart">이 단계의 본문은 준비 중이에요. 지금은 목차만 볼 수 있어요.</p>
       <h3>이 단계를 마치면</h3>
       <ul class="kann"><li>의견을 말하고 근거를 대요</li><li>경험과 사건을 순서대로 보고해요</li><li>가정해서 말하고 토론에 참여해요</li></ul>
       <dl><div><dt>읽고 쓰는 글</dt><dd>기사, 인터뷰, 독자 편지, 통계 설명</dd></div><div><dt>문화</dt><dd>독일의 가족과 세대, 언론과 미디어, 교환학생 제도, 청소년 참여 활동</dd></div></dl>
@@ -350,6 +374,7 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
       <h2 class="p-name" lang="de">Weiterdenken</h2>
       <p class="p-ko">깊이 생각하기</p>
       <p class="p-lead">직업, 사회, 기술, 문화를 다뤄요. 더 긴 글을 읽고 내 생각을 글과 발표로 정리해요.</p>
+      <p class="p-wart">이 단계의 본문은 준비 중이에요. 지금은 목차만 볼 수 있어요.</p>
       <h3>이 단계를 마치면</h3>
       <ul class="kann"><li>주제를 정해 발표해요</li><li>장단점을 비교하고 내 입장을 글로 써요</li><li>지원서와 공식 메일을 써요</li></ul>
       <dl><div><dt>읽고 쓰는 글</dt><dd>지원서, 감상문, 보고문, 의견 글</dd></div><div><dt>문화</dt><dd>직업 교육 Ausbildung, 분단과 통일의 역사, 독일의 도시와 시골, 한국과 독일</dd></div></dl>
@@ -396,7 +421,7 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
   </div>
 
   <footer>
-    <p><span class="de">SODA Jugendliche</span>, 청소년 독일어 발돋움. 목차 2026.11.22 공개. <a href="../#inhalt">SODA Lehrwerk 목차로</a></p>
+    <p><span class="de">SODA Jugendliche</span>, 청소년 독일어 발돋움. 2026.11.22 업데이트. <a href="../#inhalt">SODA Lehrwerk 목차로</a></p>
   </footer>
 </main>
 <!-- ===== SODA 공통 홈 화면에 앱 추가 ===== -->
@@ -543,6 +568,22 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
   });
   function fromHash(){var i=ids.indexOf((location.hash||'').slice(1));show(i>=0?i:cur,false,false)}
   window.addEventListener('hashchange',fromHash);fromHash();
+  /* 공부한 기록(과 화면이 이 브라우저에 남긴 것)으로 마친 과와 보던 과를 표시한다 */
+  function mark(){
+    var L={};try{L=(JSON.parse(localStorage.getItem('soda-jugend-v1')||'{}').l)||{}}catch(e){}
+    [].forEach.call(d.querySelectorAll('.auf[data-id]'),function(li){
+      var r=L[li.getAttribute('data-id')],s=li.querySelector('.stat');if(!s)return;
+      li.classList.toggle('fin',!!(r&&r.fin));s.textContent=r&&r.fin?'마침':(r&&r.d?'보는 중':'');
+    });
+    [].forEach.call(d.querySelectorAll('[data-go]'),function(a){
+      var items=[].slice.call(d.querySelectorAll('#p-'+a.getAttribute('data-go')+' .auf')),now=null,lastFin=-1;
+      items.forEach(function(li,k){var r=L[li.getAttribute('data-id')];if(!r)return;if(r.fin)lastFin=k;else if(r.t&&(!now||r.t>now.t))now={t:r.t,k:k}});
+      var k=now?now.k:(lastFin>=0?(lastFin<items.length-1?lastFin+1:0):-1);if(k<0)return;
+      var link=items[k].querySelector('a');a.href=link.getAttribute('href');
+      a.textContent=lastFin===items.length-1&&!now?'처음부터 다시 보기':link.textContent+(now?' 이어서 하기':' 시작하기');
+    });
+  }
+  mark();window.addEventListener('pageshow',mark);
 })();
 </script>
 <script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>

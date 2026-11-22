@@ -1,0 +1,91 @@
+{
+ "job": "a11c_n_04",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "das Zimmer, die Zimmer.",
+    "Das ist mein Zimmer."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "einkaufen.",
+    "Wir kaufen in der Stadt ein."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "mitkommen.",
+    "Yuna kommt mit."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "zurückkommen.",
+    "Wann kommt ihr zurück?"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "anrufen.",
+    "Ich rufe Freunde an."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "kochen.",
+    "Papa kocht heute."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "fernsehen, du siehst fern, er sieht fern.",
+    "Am Abend sehe ich fern."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "schlafen, du schläfst, er schläft.",
+    "Milo schläft gern."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "ins Bett gehen.",
+    "Um elf gehe ich ins Bett."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "am Morgen, am Nachmittag, am Abend.",
+    "Am Nachmittag mache ich Hausaufgaben."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Zimmer, die Zimmer. Das ist mein Zimmer. [pause] einkaufen. Wir kaufen in der Stadt ein. [pause] mitkommen. Yuna kommt mit. [pause] zurückkommen. Wann kommt ihr zurück? [pause] anrufen. Ich rufe Freunde an. [pause] kochen. Papa kocht heute. [pause] fernsehen, du siehst fern, er sieht fern. Am Abend sehe ich fern. [pause] schlafen, du schläfst, er schläft. Milo schläft gern. [pause] ins Bett gehen. Um elf gehe ich ins Bett. [pause] am Morgen, am Nachmittag, am Abend. Am Nachmittag mache ich Hausaufgaben. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

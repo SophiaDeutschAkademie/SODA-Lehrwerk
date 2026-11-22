@@ -1,0 +1,88 @@
+{
+ "job": "p1_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Willkommen in Köln!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "heißen.",
+    "Ich heiße Yuna."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "sein.",
+    "Ich bin Emma."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "kommen.",
+    "Ich komme aus Korea."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "der Name, die Namen.",
+    "Mein Name ist Yuna Kim."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "wie.",
+    "Wie heißt du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "woher.",
+    "Woher kommst du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "wer.",
+    "Wer bist du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "aus.",
+    "Ich komme aus Seoul."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Wie geht's?",
+    "Hallo, Lukas! Wie geht's?"
+   ]
+  }
+ ],
+ "script": "Willkommen in Köln! [pause] heißen. Ich heiße Yuna. [pause] sein. Ich bin Emma. [pause] kommen. Ich komme aus Korea. [pause] der Name, die Namen. Mein Name ist Yuna Kim. [pause] wie. Wie heißt du? [pause] woher. Woher kommst du? [pause] wer. Wer bist du? [pause] aus. Ich komme aus Seoul. [pause] Wie geht's? Hallo, Lukas! Wie geht's?"
+}

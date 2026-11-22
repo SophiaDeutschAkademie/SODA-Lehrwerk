@@ -1,0 +1,84 @@
+{
+ "job": "a11c_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "der Durst.",
+    "Hast du Durst?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "lecker.",
+    "Das ist lecker!"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "satt.",
+    "Ich bin satt."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "Neunzig Cent. Ein Euro zwanzig."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "Zwei Euro fünfzig. Fünf Euro vierzig."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "möchten, zwölf, Köln"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "Brötchen, hören, schön"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "Ich möchte zwölf Brötchen."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "Ich stehe auf."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "N",
+   "parts": [
+    "Um halb sieben."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Durst. Hast du Durst? [pause] lecker. Das ist lecker! [pause] satt. Ich bin satt. [pause] Neunzig Cent. Ein Euro zwanzig. [pause] Zwei Euro fünfzig. Fünf Euro vierzig. [pause] möchten, zwölf, Köln [pause] Brötchen, hören, schön [pause] Ich möchte zwölf Brötchen. [pause] Ich stehe auf. [pause] Um halb sieben. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

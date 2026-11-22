@@ -1,0 +1,80 @@
+{
+ "job": "a11b_lu_03",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Was machst du am Sonntag, Elif?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Ich treffe Tim. Wir sehen Filme. Kommst du mit?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Um vier Uhr."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Wir spielen jeden Tag Fußball."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Was machst du gern?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Lukas",
+   "parts": [
+    "Das ist meine Familie."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Lukas",
+   "parts": [
+    "Mein Vater heißt Martin. Er ist Lehrer."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Lukas",
+   "parts": [
+    "Meine Mutter heißt Anna. Sie ist achtunddreißig."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Lukas",
+   "parts": [
+    "Ich habe eine Schwester. Sie heißt Lea und ist acht."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Lukas",
+   "parts": [
+    "Wir haben keinen Hund, aber wir haben zwei Katzen."
+   ]
+  }
+ ],
+ "script": "Was machst du am Sonntag, Elif? [pause] Ich treffe Tim. Wir sehen Filme. Kommst du mit? [pause] Um vier Uhr. [pause] Wir spielen jeden Tag Fußball. [pause] Was machst du gern? [pause] Das ist meine Familie. [pause] Mein Vater heißt Martin. Er ist Lehrer. [pause] Meine Mutter heißt Anna. Sie ist achtunddreißig. [pause] Ich habe eine Schwester. Sie heißt Lea und ist acht. [pause] Wir haben keinen Hund, aber wir haben zwei Katzen. [pause] Gut.",
+ "tail": "Gut."
+}

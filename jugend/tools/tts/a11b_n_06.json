@@ -1,0 +1,89 @@
+{
+ "job": "a11b_n_06",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "die Tasche, die Taschen.",
+    "Wo ist die Tasche?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "der Tisch, die Tische.",
+    "Das ist mein Tisch."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "der Stuhl, die Stühle.",
+    "Hier ist ein Stuhl."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "die Tafel, die Tafeln.",
+    "Das ist die Tafel."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "das Fenster, die Fenster.",
+    "Das ist ein Fenster."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "die Tür, die Türen.",
+    "Wo ist die Tür?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "die Seite, die Seiten.",
+    "Seite zwölf, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Was ist das? Das ist ein Heft."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Wie heißt das auf Deutsch?",
+    "Entschuldigung, wie heißt das auf Deutsch?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Ich verstehe das nicht.",
+    "Entschuldigung, ich verstehe das nicht."
+   ]
+  }
+ ],
+ "script": "die Tasche, die Taschen. Wo ist die Tasche? [pause] der Tisch, die Tische. Das ist mein Tisch. [pause] der Stuhl, die Stühle. Hier ist ein Stuhl. [pause] die Tafel, die Tafeln. Das ist die Tafel. [pause] das Fenster, die Fenster. Das ist ein Fenster. [pause] die Tür, die Türen. Wo ist die Tür? [pause] die Seite, die Seiten. Seite zwölf, bitte. [pause] Was ist das? Das ist ein Heft. [pause] Wie heißt das auf Deutsch? Entschuldigung, wie heißt das auf Deutsch? [pause] Ich verstehe das nicht. Entschuldigung, ich verstehe das nicht. [pause] Gut.",
+ "tail": "Gut."
+}

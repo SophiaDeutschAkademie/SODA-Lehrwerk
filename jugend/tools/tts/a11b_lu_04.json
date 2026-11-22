@@ -1,0 +1,73 @@
+{
+ "job": "a11b_lu_04",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a1-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Ich habe Hunger! Was möchtest du, Yuna?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Ich nehme ein Käsebrötchen und einen Kakao."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Ich möchte ein Käsebrötchen und einen Kakao, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Was kostet das?"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Lukas",
+   "parts": [
+    "Ich stehe um Viertel vor sieben auf."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Lukas",
+   "parts": [
+    "Zuerst frühstücke ich. Dann gehe ich in die Schule."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Lukas",
+   "parts": [
+    "Die Schule ist um halb zwei aus."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Lukas",
+   "parts": [
+    "Am Nachmittag spiele ich Fußball. Danach mache ich Hausaufgaben."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Lukas",
+   "parts": [
+    "Um zehn gehe ich ins Bett."
+   ]
+  }
+ ],
+ "script": "Ich habe Hunger! Was möchtest du, Yuna? [pause] Ich nehme ein Käsebrötchen und einen Kakao. [pause] Ich möchte ein Käsebrötchen und einen Kakao, bitte. [pause] Was kostet das? [pause] Ich stehe um Viertel vor sieben auf. [pause] Zuerst frühstücke ich. Dann gehe ich in die Schule. [pause] Die Schule ist um halb zwei aus. [pause] Am Nachmittag spiele ich Fußball. Danach mache ich Hausaufgaben. [pause] Um zehn gehe ich ins Bett. [pause] Gut.",
+ "tail": "Gut."
+}

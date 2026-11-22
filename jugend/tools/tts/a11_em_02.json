@@ -1,0 +1,79 @@
+{
+ "job": "a11_em_02",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a1-1/3",
+   "who": "Emma",
+   "parts": [
+    "Das ist eine Tasche."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Emma",
+   "parts": [
+    "Ich finde Physik interessant."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Emma",
+   "parts": [
+    "Wie spät ist es?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Emma",
+   "parts": [
+    "Mein Lieblingsfach ist Biologie."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Emma",
+   "parts": [
+    "Was macht ihr am Samstag?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Emma",
+   "parts": [
+    "Nein, danke. Ich fahre lieber Rad."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Emma",
+   "parts": [
+    "Ja, sie spielen jeden Tag!"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Emma",
+   "parts": [
+    "Ja, gern! Wann trefft ihr die Freunde?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Emma",
+   "parts": [
+    "Ich lese nicht gern Comics."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Emma",
+   "parts": [
+    "Oh, schön! Ist das dein Vater?"
+   ]
+  }
+ ],
+ "script": "Das ist eine Tasche. [pause] Ich finde Physik interessant. [pause] Wie spät ist es? [pause] Mein Lieblingsfach ist Biologie. [pause] Was macht ihr am Samstag? [pause] Nein, danke. Ich fahre lieber Rad. [pause] Ja, sie spielen jeden Tag! [pause] Ja, gern! Wann trefft ihr die Freunde? [pause] Ich lese nicht gern Comics. [pause] Oh, schön! Ist das dein Vater? [pause]"
+}

@@ -1,0 +1,88 @@
+{
+ "job": "a11c_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "sechs, sieben, acht, neun, zehn."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "leicht."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "die Milch.",
+    "Ich trinke gern Milch."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "essen, du isst, er isst.",
+    "Was isst du gern?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "trinken.",
+    "Was trinkst du?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "nehmen, du nimmst, er nimmt.",
+    "Was nimmst du?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "möchten.",
+    "Ich möchte eine Brezel, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "kosten.",
+    "Das kostet zwei Euro."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "der Euro, die Euro.",
+    "Das macht zusammen fünf Euro."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "der Hunger."
+   ]
+  }
+ ],
+ "script": "Also. [pause] sechs, sieben, acht, neun, zehn. [pause] leicht. [pause] die Milch. Ich trinke gern Milch. [pause] essen, du isst, er isst. Was isst du gern? [pause] trinken. Was trinkst du? [pause] nehmen, du nimmst, er nimmt. Was nimmst du? [pause] möchten. Ich möchte eine Brezel, bitte. [pause] kosten. Das kostet zwei Euro. [pause] der Euro, die Euro. Das macht zusammen fünf Euro. [pause] der Hunger. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

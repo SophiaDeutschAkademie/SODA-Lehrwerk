@@ -1,0 +1,82 @@
+{
+ "job": "p1_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Hallo!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Guten Tag!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Willkommen!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Tschüss!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Hallo, Emma!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Guten Morgen!",
+    "Guten Morgen, Frau Schneider!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Guten Tag, Herr Wagner!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Guten Abend!",
+    "Guten Abend, Sabine!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Tschüss, bis morgen!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Auf Wiedersehen!",
+    "Auf Wiedersehen, Frau Schneider!"
+   ]
+  }
+ ],
+ "script": "Hallo! [pause] Guten Tag! [pause] Willkommen! [pause] Tschüss! [pause] Hallo, Emma! [pause] Guten Morgen! Guten Morgen, Frau Schneider! [pause] Guten Tag, Herr Wagner! [pause] Guten Abend! Guten Abend, Sabine! [pause] Tschüss, bis morgen! [pause] Auf Wiedersehen! Auf Wiedersehen, Frau Schneider!"
+}

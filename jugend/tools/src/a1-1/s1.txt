@@ -1,0 +1,134 @@
+@id a1-1/station-1
+@typ station
+@lektionen 1 2 3 4
+
+== rueckblick
+-- info Lektion 1부터 4까지 왔어요
+p: 여기서는 새 내용을 배우지 않아요. 네 과에서 배운 것을 섞어서 다시 써 보고, 마지막에 나를 소개하는 카드 Steckbrief를 만들어요.
+p: 먼저 어느 과까지 마쳤는지 보고, 낱말을 다시 떠올려 보세요.
+
+-- fortschritt
+
+-- quiz 낱말 다시 보기 | Lektion 1–4의 낱말로 여덟 문제를 풀어요. 다시 하면 다른 낱말이 나와요.
+
+== training
+-- ex Hören | Frau Schneider가 새로 온 친구를 소개해요. 듣고 답하세요.
+audio | Paul ist neu
+> Schneider: Guten Morgen! Das ist Paul. Paul ist neu in der Klasse.
+> Schneider: Er kommt aus Österreich, aus Wien. Er ist vierzehn Jahre alt.
+> Schneider: Paul wohnt jetzt in Köln. Er spielt Gitarre und er findet Musik toll.
+mc: Woher kommt Paul? | aus Österreich* | aus der Schweiz | aus Deutschland => Er kommt aus Österreich, aus Wien.
+mc: Wie alt ist Paul? | 14* | 13 | 15 => Er ist vierzehn Jahre alt.
+rf: Paul wohnt jetzt in Wien. | f => Wien에서 왔지만 지금은 Köln에 살아요. Paul wohnt jetzt in Köln.
+rf: Paul findet Musik toll. | r => Er spielt Gitarre und er findet Musik toll.
+
+-- ex Verben | 알맞은 동사 형태를 고르세요.
+gap: Ich [heiße|heißt|heißen] Yuna. | 나는 Yuna라고 해요. => ich 뒤에는 -e가 와요. ich heiße
+gap: Woher [kommst|komme|kommt] du? | 너는 어디에서 왔어? => du 뒤에는 -st가 와요. du kommst
+gap: Lukas [wohnt|wohne|wohnst] in Köln. | Lukas는 Köln에 살아요. => er, sie 뒤에는 -t가 와요. er wohnt
+gap: [Bist|Ist|Bin] du neu hier? | 너 여기 새로 왔어? => sein은 따로 외워요. ich bin, du bist, er ist
+gap: Wir [haben|hat|habe] heute Sport. | 우리는 오늘 체육이 있어요. => wir 뒤에는 -en이 와요. wir haben
+gap: Emma [findet|finde|findest] Physik interessant. | Emma는 물리가 재미있다고 생각해요. => finden은 t 앞에 e가 들어가요. er, sie findet
+
+-- ex der, die, das | 낱말에 맞는 관사를 고르세요. | opt: der / die / das
+wahl: Heft | das
+wahl: Tasche | die
+wahl: Stuhl | der
+wahl: Buch | das
+wahl: Tafel | die
+wahl: Kuli | der
+wahl: Lineal | das
+wahl: Schere | die
+
+-- ex ein, eine, kein, keine | 알맞은 말을 고르세요.
+gap: Das ist [ein|eine|kein] Stift. | 이것은 펜이에요. => der Stift는 ein Stift가 돼요.
+gap: Das ist [eine|ein|keine] Tasche. | 이것은 가방이에요. => die Tasche는 eine Tasche가 돼요.
+gap: Ist das ein Heft? – Nein, das ist [kein|keine|ein] Heft. | 이거 공책이야? – 아니, 공책이 아니야. => das Heft는 kein Heft가 돼요.
+gap: Ist das eine Schere? – Nein, das ist [keine|kein|eine] Schere. | 이거 가위야? – 아니, 가위가 아니야. => die Schere는 keine Schere가 돼요.
+gap: Hier sind [zwei|ein|eine] Bleistifte. | 여기 연필이 두 자루 있어요. => Bleistifte는 복수예요. ein, eine는 하나일 때만 써요.
+
+-- ex Wortstellung | 낱말을 순서대로 놓아 문장을 만드세요.
+ord: am Montag / haben / wir / Mathe. ~ wir / haben / am Montag / Mathe. | 월요일에 우리는 수학이 있어요. => 동사 haben은 항상 둘째 자리에 와요.
+ord: um acht Uhr / haben / wir / Deutsch. ~ wir / haben / um acht Uhr / Deutsch. | 8시에 우리는 독일어 수업이 있어요.
+ord: wie / findest / du / Sport? | 너는 체육을 어떻게 생각해?
+ord: mein Lieblingsfach / ist / Kunst. ~ Kunst / ist / mein Lieblingsfach. | 내가 가장 좋아하는 과목은 미술이에요.
+ord: wann / haben / wir / Musik? | 우리 음악 수업이 언제 있어?
+
+-- ex Fragen und Antworten | 질문과 대답을 짝지으세요.
+paar: Wie heißt du? = Ich heiße Paul. ; Woher kommst du? = Aus Österreich. ; Wie alt bist du? = Ich bin vierzehn. ; Wo wohnst du? = In Köln. ; Was ist das? = Das ist ein Mäppchen. ; Wann haben wir Musik? = Am Donnerstag.
+
+-- ex Lesen | Elif와 Yuna가 아침에 주고받은 메시지예요. 읽고 답하세요.
+text chat | Montag, 7 Uhr
+> Elif: Guten Morgen, Yuna! Was haben wir heute?
+> Yuna: Hallo, Elif! Heute ist Montag. Wir haben Mathe, Deutsch und Sport.
+> Elif: Oh, Mathe … Mathe finde ich schwer.
+> Yuna: Ich finde Mathe okay. Aber Sport ist toll!
+> Elif: Wann haben wir Sport?
+> Yuna: Um elf Uhr. Und um acht Uhr haben wir Mathe.
+> Elif: Wo ist mein Mathebuch? Ich habe kein Mathebuch!
+> Yuna: Kein Problem. Ich habe ein Buch.
+mc: Elif와 Yuna는 월요일에 무슨 수업이 있어요? | Mathe, Deutsch und Sport* | Mathe, Kunst und Sport | Deutsch, Musik und Sport => Wir haben Mathe, Deutsch und Sport.
+rf: Elif findet Mathe leicht. | f => Mathe finde ich schwer.
+mc: 체육 수업은 몇 시에 있어요? | um elf Uhr* | um acht Uhr | um zehn Uhr => Um elf Uhr. 8시에는 수학이 있어요.
+rf: Elif hat kein Mathebuch. | r => Ich habe kein Mathebuch!
+
+-- ex Diktat | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Ich wohne in Köln. | 나는 Köln에 살아요.
+dik: N: Wie alt bist du? | 너는 몇 살이야?
+dik: N: Das ist mein Tisch. | 이것은 내 책상이에요.
+dik: N: Mein Lieblingsfach ist Musik. | 내가 가장 좋아하는 과목은 음악이에요.
+
+== projekt
+-- info Steckbrief가 뭐예요?
+p: Steckbrief는 이름, 나이, 사는 곳 같은 정보를 짧게 적은 소개 카드예요. 독일 학교에서는 새 반이 시작될 때 Steckbrief를 써서 서로를 소개하기도 해요.
+p: 카드에 나오는 말이에요. Alter는 나이, Land는 나라, Stadt는 도시예요.
+p: 먼저 Yuna의 Steckbrief를 보고, 그다음에 내 카드를 만들어요.
+
+-- ex Beispiel | Yuna의 Steckbrief를 읽고, Yuna가 자기를 소개하는 말을 들어 보세요.
+text profil | Steckbrief
+> Name: Yuna Kim
+> Alter: 14 Jahre
+> Land: Korea
+> Stadt: Köln
+> Lieblingsfach: Musik
+> Das finde ich schwer: Physik
+> Freundin: Emma
+audio | Das ist Yuna
+> Yuna: Hallo! Ich heiße Yuna Kim. Ich bin vierzehn Jahre alt.
+> Yuna: Ich komme aus Korea und ich wohne jetzt in Köln.
+> Yuna: Ich lerne Deutsch. Mein Lieblingsfach ist Musik.
+> Yuna: Physik finde ich schwer. Meine Freundin heißt Emma.
+rf: Yuna ist dreizehn Jahre alt. | f => Ich bin vierzehn Jahre alt.
+rf: Yuna wohnt jetzt in Köln. | r => Ich wohne jetzt in Köln.
+mc: Yuna가 어렵다고 한 과목은 무엇인가요? | Physik* | Musik | Mathe => Physik finde ich schwer.
+
+-- projekt Mein Steckbrief | 칸을 채우면 아래 카드와 소개 글이 완성돼요. | Steckbrief
+p: 모두 독일어로 적어요. 나라와 도시는 Korea, Seoul, Busan처럼 알파벳으로 써요. 친구가 여자면 마지막 문장을 Meine Freundin heißt …로 바꿔 말해요.
+feld: name | 이름 | Yuna Kim
+feld: alter | 나이 (독일어 숫자로) | vierzehn
+feld: land | 나라 | Korea
+feld: stadt | 사는 도시 | Seoul
+feld: fach | 좋아하는 과목 | Musik
+feld: schwer | 어려운 과목 | Physik
+feld: freund | 친구 이름 | Minho
+karte: Name = {name}
+karte: Alter = {alter} Jahre
+karte: Land = {land}
+karte: Stadt = {stadt}
+karte: Lieblingsfach = {fach}
+karte: Das finde ich schwer = {schwer}
+karte: Freund, Freundin = {freund}
+satz: Hallo! Ich heiße {name}. Ich bin {alter} Jahre alt.
+satz: Ich komme aus {land} und ich wohne in {stadt}.
+satz: Ich lerne Deutsch. Mein Lieblingsfach ist {fach}.
+satz: {schwer} finde ich schwer. Mein Freund heißt {freund}.
+check: 이름과 나이를 말했어요 ; 나라와 사는 도시를 말했어요 ; 좋아하는 과목과 어려운 과목을 말했어요 ; 카드를 보지 않고 한 번 더 말했어요
+
+-- schreiben Das ist … | 친구나 가족 가운데 한 사람을 골라 소개하는 글을 써요. er 또는 sie를 써서 네 문장 넘게 써 보세요.
+punkt: 이름 ; 나라와 사는 곳 ; 나이 ; 어떤 사람인지 (nett, lustig)
+start: Das ist …
+muster: Das ist Lukas. Er kommt aus Deutschland und er wohnt in Köln. Er ist dreizehn Jahre alt. Er spielt Fußball. Lukas ist lustig.
+check: Das ist …로 시작했어요 ; 남자는 er, 여자는 sie로 썼어요 ; er, sie 뒤의 동사를 -t로 끝냈어요 (er kommt, sie wohnt) ; 문장 첫 글자와 명사를 대문자로 썼어요
+
+-- tipp 보고 말하기, 덮고 말하기
+p: 처음에는 카드를 보면서 소리 내어 읽어요. 그다음에는 카드를 가리고 말해 보세요. 막히는 곳만 다시 확인하면 돼요. 세 번쯤 되풀이하면 문장이 입에 붙어요.

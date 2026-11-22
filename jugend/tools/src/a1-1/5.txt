@@ -1,0 +1,229 @@
+@id a1-1/5
+
+== einstieg
+bild: Three teenagers in a park with two simple trees. On the left LUKAS dribbles a soccer ball with his foot. In the middle ELIF sits on a bench and plays an acoustic guitar. On the right YUNA wears headphones and dances with her arms raised.
+alt: 공원에서 Lukas는 축구공을 차고, Elif는 긴 의자에 앉아 기타를 치고, Yuna는 헤드폰을 쓰고 춤을 춰요.
+lead: 수업이 끝났어요. 친구들이 공원에서 저마다 좋아하는 것을 해요.
+mission: 이 과를 마치면 내 취미를 소개하고 친구에게 같이 하자고 말할 수 있어요.
+wort: Ich spiele gern Fußball. | 나는 축구하는 걸 좋아해.
+wort: Ich tanze gern. | 나는 춤추는 걸 좋아해.
+wort: Ich lese nicht gern. | 나는 책 읽는 걸 좋아하지 않아.
+wort: Kommst du mit? | 같이 갈래?
+mc: Ich spiele gern Fußball.에서 '좋아한다'는 뜻을 나타내는 낱말은 무엇일까요? | gern* | spiele | Fußball => 동사 뒤에 gern을 붙이면 그 일을 좋아한다는 뜻이 돼요.
+
+== hoeren
+-- dialog A | Nach der Schule | 수업이 끝나고 공원으로 가는 길이에요.
+vor: 들으면서 찾아보세요. Yuna는 축구와 수영 가운데 무엇을 더 좋아하나요?
+Lukas: Yuna, was machst du gern? | Yuna, 넌 뭘 하는 걸 좋아해?
+Yuna: Ich tanze gern und ich höre gern Musik. Und du? | 나는 춤추는 것과 음악 듣는 걸 좋아해. 너는?
+Lukas: Ich spiele gern Fußball. Spielst du auch gern Fußball? | 나는 축구를 좋아해. 너도 축구 좋아해?
+Yuna: Nein, nicht so gern. Ich schwimme lieber. | 아니, 별로 안 좋아해. 나는 수영이 더 좋아.
+Lukas: Und du, Elif? Liest du gern? | Elif, 너는? 책 읽는 거 좋아해?
+Elif: Ja, ich lese gern Comics. Aber ich spiele lieber Gitarre. | 응, 만화 읽는 걸 좋아해. 그런데 기타 치는 게 더 좋아.
+Yuna: Emma liest auch gern, oder? | Emma도 책 읽는 걸 좋아하지, 그렇지?
+Elif: Ja, sie liest sehr gern. Und sie fährt gern Rad. | 응, 정말 좋아해. 그리고 자전거 타는 것도 좋아해.
+
+-- dialog B | Pläne für Samstag | 금요일 쉬는 시간이에요. 친구들이 토요일 계획을 이야기해요.
+vor: 들으면서 찾아보세요. 친구들은 토요일 몇 시에 만나나요?
+Emma: Was macht ihr am Samstag? | 너희 토요일에 뭐 해?
+Lukas: Tim und ich spielen Fußball im Park. Kommst du mit? | Tim이랑 나는 공원에서 축구해. 같이 갈래?
+Emma: Nein, danke. Ich fahre lieber Rad. | 아니, 괜찮아. 나는 자전거 타는 게 더 좋아.
+Yuna: Lukas und Tim spielen wirklich gern Fußball. | Lukas랑 Tim은 축구를 정말 좋아하네.
+Emma: Ja, sie spielen jeden Tag! | 응, 걔들은 날마다 해!
+Elif: Yuna und ich treffen am Samstag Freunde in der Stadt. Kommt ihr mit? | Yuna랑 나는 토요일에 시내에서 친구들을 만나. 너희도 같이 갈래?
+Emma: Ja, gern! Wann trefft ihr die Freunde? | 응, 좋아! 친구들은 언제 만나?
+Elif: Um drei Uhr. | 세 시에.
+Lukas: Um drei? Dann komme ich auch mit! | 세 시? 그럼 나도 같이 갈래!
+
+-- fragen 두 대화를 듣고 답하세요.
+rf: Yuna tanzt gern. | r
+rf: Yuna spielt gern Fußball. | f => Yuna는 nicht so gern이라고 했어요. 수영을 더 좋아해요.
+rf: Emma fährt gern Rad. | r
+mc: Elif가 만화 읽기보다 더 좋아하는 것은 무엇인가요? | Gitarre spielen* | Fußball spielen | Rad fahren
+mc: Elif와 Yuna는 토요일에 무엇을 하나요? | 시내에서 친구들을 만나요* | 공원에서 축구를 해요 | 자전거를 타요
+mc: 친구들은 몇 시에 만나나요? | um drei Uhr* | um zwei Uhr | um elf Uhr
+
+-- kultur 취미는 동네 클럽에서
+p: 독일 학교는 오후 일찍 끝나는 날이 많아서, 학생들은 오후에 동네 클럽(der Verein)에서 취미 활동을 해요. 축구, 수영, 체조, 핸드볼처럼 종목마다 클럽이 있어요.
+p: 클럽에서는 초등학생부터 어른까지 나이별로 팀을 나누어 함께 운동해요. 악기는 음악 학교(die Musikschule)에서 배우는 학생이 많아요.
+p: 그래서 독일 친구에게 Was machst du gern?이라고 물으면 Ich spiele Fußball im Verein.처럼 클럽 이야기를 자주 들어요.
+mc: 독일 청소년이 방과 후에 운동하러 주로 가는 곳은 어디일까요? | 동네 클럽* | 학교 동아리방 | 학원
+
+== wortschatz
+-- gruppe Hobbys | 취미
+Fußball spielen | 축구를 하다 | Lukas spielt gern Fußball. | Lukas는 축구하는 걸 좋아해요.
+Gitarre spielen | 기타를 치다 | Elif spielt gern Gitarre. | Elif는 기타 치는 걸 좋아해요.
+Musik hören | 음악을 듣다 | Ich höre gern Musik. | 나는 음악 듣는 걸 좋아해요.
+tanzen | 춤추다 | Yuna tanzt gern. | Yuna는 춤추는 걸 좋아해요.
+schwimmen | 수영하다 | Ich schwimme lieber. | 나는 수영이 더 좋아요.
+lesen (du liest, er liest) | 읽다 | Emma liest gern Bücher. | Emma는 책 읽는 걸 좋아해요.
+Rad fahren (du fährst, er fährt) | 자전거를 타다 | Emma fährt gern Rad. | Emma는 자전거 타는 걸 좋아해요.
+Freunde treffen (du triffst, er trifft) | 친구를 만나다 | Wir treffen Freunde in der Stadt. | 우리는 시내에서 친구들을 만나요.
+Filme sehen (du siehst, er sieht) | 영화를 보다 | Siehst du gern Filme? | 너는 영화 보는 걸 좋아해?
+malen | 그림을 그리다 | Lukas malt gern. | Lukas는 그림 그리는 걸 좋아해요.
+fotografieren | 사진을 찍다 | Ich fotografiere gern. | 나는 사진 찍는 걸 좋아해요.
+Computerspiele spielen | 컴퓨터 게임을 하다 | Tim spielt gern Computerspiele. | Tim은 컴퓨터 게임을 좋아해요.
+das Hobby, die Hobbys | 취미 | Mein Hobby ist Tanzen. | 내 취미는 춤이에요.
+
+-- gruppe Zusammen etwas machen | 함께 무언가를 할 때
+machen | 하다, 만들다 | Was machst du gern? | 너는 뭘 하는 걸 좋아해?
+gern | 즐겨, 좋아해서 | Ich tanze gern. | 나는 춤추는 걸 좋아해요.
+lieber | 더 좋아해서 | Ich fahre lieber Rad. | 나는 자전거 타는 게 더 좋아요.
+Kommst du mit? | 같이 갈래? | Wir spielen Fußball. Kommst du mit? | 우리 축구해. 같이 갈래?
+die Zeit, die Zeiten | 시간 | Ich habe keine Zeit. | 나는 시간이 없어요.
+zusammen | 함께 | Wir lernen zusammen Deutsch. | 우리는 함께 독일어를 공부해요.
+der Park, die Parks | 공원 | Wir spielen Fußball im Park. | 우리는 공원에서 축구를 해요.
+die Stadt, die Städte | 도시, 시내 | Wir treffen Freunde in der Stadt. | 우리는 시내에서 친구들을 만나요.
+jeden Tag | 날마다 | Sie spielen jeden Tag. | 그들은 날마다 해요.
+
+-- bilder
+Fußball spielen: a teenage boy who kicks a soccer ball
+Gitarre spielen: a teenage girl who sits and plays an acoustic guitar
+Musik hören: a teenage girl with large headphones who listens with closed eyes
+tanzen: a teenage girl who dances with one arm raised
+schwimmen: a teenage boy who swims in blue water, seen from the side
+lesen (du liest, er liest): a teenage girl who sits and reads an open book
+Rad fahren (du fährst, er fährt): a teenage girl who rides a bicycle
+Freunde treffen (du triffst, er trifft): two teenagers who greet each other with a high five
+Filme sehen (du siehst, er sieht): a teenage boy on a sofa who watches a screen and holds a bowl of popcorn
+malen: a teenage boy who paints on a canvas on an easel
+fotografieren: a teenage girl who holds a camera up to her eye
+Computerspiele spielen: a teenage boy who holds a game controller in both hands
+
+-- aussprache r 소리 | 목 안쪽에서 나는 r
+p: 독일어 r는 혀끝을 굴리거나 마는 소리가 아니에요. 낱말이나 음절의 앞에 올 때는 목 안쪽에서 가볍게 긁듯이 내요. 물로 입 안을 헹굴 때 나는 소리와 비슷해요.
+p: 모음 뒤에 오는 r는 아주 약해져서 거의 모음처럼 들려요. gern은 [게안], Park는 [파크]에 가까워요.
+hör: Rad, Freunde, treffen, Gitarre | 앞에 오는 r
+hör: gern, Park, Sport, fährt | 모음 뒤의 r
+hör: Wir fahren gern Rad im Park. | 두 가지 r가 들어 있는 문장
+
+== grammatik
+-- punkt gern, nicht gern, lieber | 좋아하는 것을 말할 때
+bsp: Ich spiele *gern* Fußball. | 나는 축구하는 걸 좋아해.
+bsp: Ich schwimme *lieber*. | 나는 수영이 더 좋아.
+bsp: Ja, sie liest sehr *gern*. | 응, 그녀는 책 읽는 걸 정말 좋아해.
+finde: gern은 문장에서 어디에 있나요? | 동사 뒤* | 동사 앞 | 문장 맨 앞
+regel: 좋아하는 일을 말할 때는 그 일을 나타내는 동사 뒤에 gern을 붙여요. 좋아하지 않으면 nicht gern, 더 좋아하면 lieber를 써요.
+| 뜻 | 문장
+| 좋아해요 | Ich spiele *gern* Fußball.
+| 좋아하지 않아요 | Ich spiele *nicht gern* Fußball.
+| 더 좋아해요 | Ich spiele *lieber* Basketball.
+merke: 한국어처럼 '좋아하다'라는 동사를 따로 쓰지 않아요. spielen, tanzen, lesen처럼 하는 일을 나타내는 동사에 gern만 더하면 돼요.
+
+-- punkt Verben mit Vokalwechsel | 모음이 바뀌는 동사
+bsp: *Liest* du gern? | 너는 책 읽는 걸 좋아해?
+bsp: Sie *liest* sehr gern. | 그녀는 책 읽는 걸 정말 좋아해.
+bsp: Sie *fährt* gern Rad. | 그녀는 자전거 타는 걸 좋아해.
+finde: lesen은 du와 함께 쓰면 어떤 모양이 되나요? | liest* | lest | lesst
+regel: 몇몇 동사는 du와 er, sie에서 모음이 바뀌어요. e는 i나 ie로, a는 ä로 바뀌어요. ich에서는 바뀌지 않아요.
+| | lesen | sehen | treffen | fahren
+| ich | lese | sehe | treffe | fahre
+| du | l*ie*st | s*ie*hst | tr*i*ffst | f*ä*hrst
+| er, sie | l*ie*st | s*ie*ht | tr*i*fft | f*ä*hrt
+merke: 낱말 목록에는 모음이 바뀌는 동사 옆에 du와 er 형태를 함께 적었어요. 그 모양 그대로 외우는 것이 가장 빨라요.
+
+-- punkt wir, ihr, sie | 여러 사람이 주어일 때
+bsp: Was macht *ihr* am Samstag? | 너희 토요일에 뭐 해?
+bsp: Wann trefft *ihr* die Freunde? | 너희는 친구들을 언제 만나?
+bsp: Ja, *sie* spielen jeden Tag! | 응, 그들은 날마다 해!
+finde: ihr가 주어일 때 동사는 어떻게 끝나나요? | -t* | -en | -st
+regel: wir(우리)와 sie(그들)는 동사가 -en으로 끝나고, ihr(너희)는 -t로 끝나요. 모음이 바뀌는 동사도 여기서는 바뀌지 않아요.
+| | spielen | fahren | haben | sein
+| wir | spiel*en* | fahr*en* | hab*en* | *sind*
+| ihr | spiel*t* | fahr*t* | hab*t* | *seid*
+| sie | spiel*en* | fahr*en* | hab*en* | *sind*
+merke: sie는 '그녀'일 때도 있고 '그들'일 때도 있어요. 동사의 끝을 보면 알 수 있어요. Sie spielt는 그녀, Sie spielen은 그들이에요.
+
+== training
+-- ex Hören | 대화를 듣고 답하세요.
+audio | Im Park
+> Lukas: Was machst du am Sonntag, Elif?
+> Elif: Ich spiele Gitarre. Und du?
+> Lukas: Ich treffe Tim. Wir sehen Filme. Kommst du mit?
+> Elif: Ja, gern! Wann?
+> Lukas: Um vier Uhr.
+mc: Elif는 일요일에 무엇을 하려고 했나요? | 기타 치기* | 자전거 타기 | 책 읽기
+mc: Lukas는 누구를 만나나요? | Tim* | Emma | Yuna
+mc: 두 사람은 몇 시에 만나나요? | 4시* | 3시 | 5시
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Yuna: Ich schwimme lieber.
+mc: Yuna가 더 좋아하는 것은 무엇인가요? | 수영* | 축구 | 춤
+hör: Emma: Ich lese nicht gern Comics.
+mc: Emma는 만화 읽는 것을 어떻게 생각하나요? | 좋아하지 않아요* | 좋아해요 | 더 좋아해요
+hör: Lukas: Wir spielen jeden Tag Fußball.
+mc: Lukas와 친구들은 얼마나 자주 축구를 하나요? | 날마다* | 토요일마다 | 일요일마다
+
+-- ex Lesen | 반 채팅을 읽고 답하세요.
+text chat | Klassenchat 8b
+> Lukas: Wer kommt am Samstag mit? Wir spielen Fußball im Park!
+> Elif: Ich nicht. Ich spiele nicht gern Fußball. Ich höre lieber Musik.
+> Emma: Ich komme mit! Wann spielt ihr?
+> Lukas: Um zwei Uhr.
+> Yuna: Ich komme auch. Ich fotografiere gern. Ich mache Fotos!
+rf: Elif spielt gern Fußball. | f => Elif는 축구를 좋아하지 않아요. 음악 듣는 것을 더 좋아해요.
+rf: Emma kommt mit. | r
+mc: Wann spielen sie Fußball? | Um zwei Uhr.* | Um drei Uhr. | Um elf Uhr.
+mc: Was macht Yuna im Park? | Sie macht Fotos.* | Sie spielt Fußball. | Sie hört Musik.
+
+-- ex Grammatik | 모음이 바뀌는 동사예요. 알맞은 형태를 고르세요.
+gap: [Liest|Lest|Lesst] du gern Comics?
+gap: Emma [fährt|fahrt|fährst] gern Rad.
+gap: Lukas [trifft|trefft|triffst] am Samstag Tim.
+gap: [Siehst|Sehst|Sieht] du gern Filme?
+gap: Ich [lese|liest|lesen] gern Bücher.
+gap: Elif [liest|lest|lese] gern Comics.
+
+-- ex Grammatik | wir, ihr, sie에 맞는 동사 형태를 고르세요.
+gap: Wir [spielen|spielt|spielst] Fußball im Park.
+gap: Was [macht|machen|machst] ihr am Samstag?
+gap: Lukas und Tim [spielen|spielt|spiele] jeden Tag.
+gap: [Kommt|Kommen|Kommst] ihr mit?
+gap: Wir [fahren|fahrt|fährt] gern Rad.
+gap: Yuna und Elif [treffen|trefft|trifft] Freunde.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / spiele / gern / Fußball. | 나는 축구하는 걸 좋아해.
+ord: ich / lese / nicht gern / Comics. | 나는 만화 읽는 걸 좋아하지 않아.
+ord: ich / fahre / lieber / Rad. | 나는 자전거 타는 게 더 좋아.
+ord: was / machst / du / gern? | 너는 뭘 하는 걸 좋아해?
+
+-- ex Wortschatz | 독일어와 뜻을 짝지으세요.
+paar: Rad fahren = 자전거를 타다 ; Musik hören = 음악을 듣다 ; Freunde treffen = 친구를 만나다 ; Filme sehen = 영화를 보다 ; malen = 그림을 그리다 ; schwimmen = 수영하다
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Lukas: Was machst du gern? | 너는 뭘 하는 걸 좋아해?
+dik: Yuna: Ich höre gern Musik. | 나는 음악 듣는 걸 좋아해.
+dik: Elif: Kommt ihr mit? | 너희도 같이 갈래?
+
+== sprechen
+-- redemittel
+취미 묻고 답하기: Was machst du gern? | 넌 뭘 하는 걸 좋아해? ; Ich … gern. | 나는 …하는 걸 좋아해. ; Mein Hobby ist … | 내 취미는 …야.
+좋아하지 않는 것과 더 좋아하는 것: Ich … nicht gern. | 나는 …하는 걸 좋아하지 않아. ; Ich … lieber. | 나는 …하는 게 더 좋아.
+같이 하자고 말하기: Wir spielen Fußball. Kommst du mit? | 우리 축구해. 같이 갈래? ; Ja, gern! | 응, 좋아! ; Nein, danke. Ich habe keine Zeit. | 아니, 괜찮아. 시간이 없어.
+
+-- rolle B | Emma, Elif
+
+-- ich 내가 좋아하는 것을 말해요 | 좋아하는 일, 좋아하지 않는 일, 더 좋아하는 일을 ich에 맞는 동사 형태로 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 좋아하는 일 | tanze
+feld: b | 좋아하지 않는 일 | schwimme
+feld: c | 더 좋아하는 일 | lese
+satz: Ich {a} gern.
+satz: Ich {b} nicht gern.
+satz: Ich {c} lieber.
+satz: Und du? Was machst du gern?
+
+-- schreiben Meine Hobbys | 내 취미를 소개하는 글을 써 보세요. 좋아하는 것, 좋아하지 않는 것, 주말에 하는 것을 넣어요.
+punkt: 좋아하는 것 두 가지 ; 좋아하지 않는 것 한 가지 ; 주말에 하는 것 ; 친구에게 묻는 질문
+start: Ich … gern.
+muster: Ich tanze gern und ich höre gern Musik. Ich spiele nicht gern Fußball. Ich schwimme lieber. Am Samstag treffe ich Freunde in der Stadt. Und du? Was machst du gern?
+check: gern이 동사 뒤에 있나요? ; 좋아하지 않는 것도 하나 썼나요? ; 요일로 시작한 문장에서 동사가 둘째 자리에 있나요?
+
+-- kann
+Ich kann über Hobbys sprechen. | 취미를 묻고 답할 수 있어요.
+Ich kann sagen, was ich gern und nicht gern mache. | 좋아하는 것과 좋아하지 않는 것을 말할 수 있어요.
+Ich kann Freunde fragen: Kommst du mit? | 친구에게 같이 하자고 말할 수 있어요.
+
+-- tipp 동사는 짝이 되는 말과 함께 외워요
+p: fahren만 외우면 '자전거를 타다'를 말하기 어려워요. Rad fahren, Musik hören, Freunde treffen처럼 늘 함께 쓰는 말을 한 덩어리로 외우세요.
+p: 덩어리를 외웠으면 ich부터 넣어 말해 보세요. Ich fahre Rad. Du fährst Rad. Emma fährt Rad. 모음이 바뀌는 동사는 이렇게 세 문장으로 연습하면 잘 남아요.

@@ -38,11 +38,26 @@ def check(data):
     assert '_' not in blob
 
 
+def open_ids():
+    """본문이 올라온 화면의 이름 (tools/lektion.py site 가 적어 둔 tools/open.json)"""
+    p = os.path.join(T, 'open.json')
+    return set(json.load(open(p))['open']) if os.path.exists(p) else set()
+
+
+OPEN = open_ids()
+
+
+def lv_open(lv):
+    return any(x.startswith(lv['id'] + '/') for x in OPEN)
+
+
 def stairs(data):
     out = []
     for i, lv in enumerate(data['levels']):
-        out.append('        <button type="button" role="tab" class="step" id="tab-%s" aria-controls="p-%s" aria-selected="%s" aria-label="%s" style="--i:%d">%s</button>'
-                   % (lv['id'], lv['id'], 'true' if i == 0 else 'false', esc('%s %s, %s' % (lv['code'], lv['de'], lv['ko'])), i, esc(lv['code'])))
+        on = lv_open(lv)
+        out.append('        <button type="button" role="tab" class="step%s" id="tab-%s" aria-controls="p-%s" aria-selected="%s" aria-label="%s" style="--i:%d">%s</button>'
+                   % (' offen' if on else '', lv['id'], lv['id'], 'true' if i == 0 else 'false',
+                      esc('%s %s, %s%s' % (lv['code'], lv['de'], lv['ko'], ', 본문 공개' if on else '')), i, esc(lv['code'])))
     return '\n'.join(out)
 
 
@@ -55,33 +70,45 @@ def groups(data):
     return '\n'.join('        <div><b>%s</b></div>' % esc(c) for c in codes)
 
 
-def item(it, n):
+def item(it, n, pid):
+    """pid: 이 줄의 화면 이름(a1-1/3, a1-1/station-1, a1-1/stufentest). 본문이 올라와 있으면 그 화면으로 가는 줄이 된다."""
+    on = pid in OPEN; attr = (' auf" data-id="%s' % pid) if on else ''; stat = '<span class="stat"></span>' if on else ''
     if it['t'] == 'l':
-        return ('      <li class="lek"><span class="num">%d</span><div><h3><span class="de" lang="de">%s</span><span class="ko">%s</span></h3>'
+        name = ('<a class="de" lang="de" href="%s/">%s</a>' % (pid, de(it['de']))) if on else '<span class="de" lang="de">%s</span>' % de(it['de'])
+        return ('      <li class="lek%s"><span class="num">%d</span><div><h3>%s<span class="ko">%s</span>%s</h3>'
                 '<dl><div><dt>말하기</dt><dd>%s</dd></div><div><dt>문법</dt><dd class="gr">%s</dd></div></dl></div></li>'
-                % (n, de(it['de']), esc(it['ko']), esc(it['ziel']), de(it['gr'])))
+                % (attr, n, name, esc(it['ko']), stat, esc(it['ziel']), de(it['gr'])))
+    name = ('<a href="%s/">%s</a>' % (pid, esc(it['de']))) if on else esc(it['de'])
     if it['t'] == 's':
         head, _, rest = it['txt'].partition(': ')
-        return '      <li class="sta"><b lang="de">%s</b><i>복습과 프로젝트</i><p><span lang="de">%s</span>: %s</p></li>' % (esc(it['de']), esc(head), esc(rest))
-    return '      <li class="tst"><b lang="de">%s</b><i>%s</i><p>%s</p></li>' % (esc(it['de']), esc(it['ko']), esc(it['txt']))
+        return '      <li class="sta%s"><b lang="de">%s</b><i>복습과 프로젝트</i>%s<p><span lang="de">%s</span>: %s</p></li>' % (attr, name, stat, esc(head), esc(rest))
+    return '      <li class="tst%s"><b lang="de">%s</b><i>%s</i>%s<p>%s</p></li>' % (attr, name, esc(it['ko']), stat, esc(it['txt']))
 
 
 def panels(data):
     out = []
     for lv in data['levels']:
-        n = 0
+        n = 0; s = 0
         rows = []
         for it in lv['items']:
             if it['t'] == 'l':
-                n += 1
-            rows.append(item(it, n))
+                n += 1; pid = '%s/%d' % (lv['id'], n)
+            elif it['t'] == 's':
+                s += 1; pid = '%s/station-%d' % (lv['id'], s)
+            else:
+                pid = lv['id'] + '/stufentest'
+            rows.append(item(it, n, pid))
+        if lv['id'] + '/1' in OPEN:
+            go = '      <p class="p-go"><a class="btn" href="%s/1/" data-go="%s">Lektion 1 시작하기</a></p>\n' % (lv['id'], lv['id'])
+        else:
+            go = '      <p class="p-wart">이 단계의 본문은 준비 중이에요. 지금은 목차만 볼 수 있어요.</p>\n'
         out.append(
             '    <article class="panel" id="p-{id}" role="tabpanel" aria-labelledby="tab-{id}">\n'
             '     <div class="p-info">\n'
             '      <p><span class="p-code">{code}</span></p>\n'
             '      <h2 class="p-name" lang="de">{de}</h2>\n'
             '      <p class="p-ko">{ko}</p>\n'
-            '      <p class="p-lead">{lead}</p>\n'
+            '      <p class="p-lead">{lead}</p>\n{go}'
             '      <h3>이 단계를 마치면</h3>\n'
             '      <ul class="kann">{kann}</ul>\n'
             '      <dl><div><dt>읽고 쓰는 글</dt><dd>{text}</dd></div><div><dt>문화</dt><dd>{kultur}</dd></div></dl>\n'
@@ -89,8 +116,17 @@ def panels(data):
             '     <ol class="leks">\n{rows}\n     </ol>\n'
             '    </article>'.format(id=lv['id'], code=esc(lv['code']), de=esc(lv['de']), ko=esc(lv['ko']), lead=esc(lv['lead']),
                                     kann=''.join('<li>%s</li>' % esc(k) for k in lv['kann']), text=esc(lv['text']), kultur=esc(lv['kultur']),
-                                    rows='\n'.join(rows)))
+                                    rows='\n'.join(rows), go=go))
     return '\n'.join(out)
+
+
+def note(data):
+    codes = [lv['code'] for lv in data['levels'] if lv_open(lv)]
+    if not codes:
+        return '지금은 목차만 볼 수 있어요. 본문은 A1.1부터 차례로 올라와요.'
+    if len(codes) == len(data['levels']):
+        return '모든 단계의 본문을 볼 수 있어요.'
+    return '%s 본문을 볼 수 있어요. 나머지 단계는 차례로 올라와요.' % ', '.join(codes)
 
 
 def main():
@@ -105,6 +141,7 @@ def main():
         ('<!--STAIRS-->', stairs(data)),
         ('<!--GROUPS-->', groups(data)),
         ('<!--PANELS-->', panels(data)),
+        ('<!--NOTE-->', note(data)),
         ('<!--AUFBAU-->', '\n'.join('        <li><div><b lang="de">%s</b><span>%s</span></div></li>' % (esc(a['de']), esc(a['ko'])) for a in data['aufbau'])),
         ('<!--EXTRAS-->', '\n'.join('        <li><b lang="de">%s</b><span>%s</span></li>' % (esc(a['de']), esc(a['ko'])) for a in data['extras'])),
         ('__IDS__', json.dumps([lv['id'] for lv in data['levels']])),

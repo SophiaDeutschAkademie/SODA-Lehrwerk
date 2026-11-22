@@ -1,0 +1,80 @@
+{
+ "job": "a11b_sa_01",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Sabine",
+   "parts": [
+    "Sag einfach Sabine!"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Sabine",
+   "parts": [
+    "Na, Yuna? Wie ist die Klasse?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Sabine",
+   "parts": [
+    "Und Elif? Kommt sie auch aus Köln?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Sabine",
+   "parts": [
+    "Ist Frau Schneider nett?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Sabine",
+   "parts": [
+    "Möchtest du Wasser oder Saft, Yuna?"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Sabine",
+   "parts": [
+    "Guten Morgen! Was macht ihr heute?"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Sabine",
+   "parts": [
+    "Sehr gut! Und dann?"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Sabine",
+   "parts": [
+    "Wann kommt ihr zurück?"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Sabine",
+   "parts": [
+    "Gut. Um halb sieben essen wir. Papa kocht heute."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Sabine",
+   "parts": [
+    "Ja, gern."
+   ]
+  }
+ ],
+ "script": "Sag einfach Sabine! [pause] Na, Yuna? Wie ist die Klasse? [pause] Und Elif? Kommt sie auch aus Köln? [pause] Ist Frau Schneider nett? [pause] Möchtest du Wasser oder Saft, Yuna? [pause] Guten Morgen! Was macht ihr heute? [pause] Sehr gut! Und dann? [pause] Wann kommt ihr zurück? [pause] Gut. Um halb sieben essen wir. Papa kocht heute. [pause] Ja, gern. [pause] Gut.",
+ "tail": "Gut."
+}

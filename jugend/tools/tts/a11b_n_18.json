@@ -1,0 +1,90 @@
+{
+ "job": "a11b_n_18",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "der Käse.",
+    "Der Käse ist lecker."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "der Apfel, die Äpfel.",
+    "Ich nehme einen Apfel."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "der Salat, die Salate.",
+    "Ich nehme zuerst den Salat."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "der Reis.",
+    "Der Reis ist auch lecker."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "das Fleisch.",
+    "Isst du Fleisch?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "das Hähnchen, die Hähnchen.",
+    "Wie schmeckt das Hähnchen?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "der Fisch, die Fische.",
+    "Ich esse keinen Fisch."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "das Wasser.",
+    "Ich möchte Wasser, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "der Saft, die Säfte.",
+    "Ich möchte einen Apfelsaft."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "der Kakao.",
+    "Lukas trinkt einen Kakao."
+   ]
+  }
+ ],
+ "script": "der Käse. Der Käse ist lecker. [pause] der Apfel, die Äpfel. Ich nehme einen Apfel. [pause] der Salat, die Salate. Ich nehme zuerst den Salat. [pause] der Reis. Der Reis ist auch lecker. [pause] das Fleisch. Isst du Fleisch? [pause] das Hähnchen, die Hähnchen. Wie schmeckt das Hähnchen? [pause] der Fisch, die Fische. Ich esse keinen Fisch. [pause] das Wasser. Ich möchte Wasser, bitte. [pause] der Saft, die Säfte. Ich möchte einen Apfelsaft. [pause] der Kakao. Lukas trinkt einen Kakao. [pause] Gut.",
+ "tail": "Gut."
+}

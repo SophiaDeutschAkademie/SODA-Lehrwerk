@@ -1,0 +1,18 @@
+{
+ "job": "a11s_th_01",
+ "who": "Thomas",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Thomas",
+   "parts": [
+    "Heute gibt es Fisch mit Reis und Salat."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Heute gibt es Fisch mit Reis und Salat. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

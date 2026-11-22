@@ -1,0 +1,86 @@
+{
+ "job": "a11b_n_14",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "meine Mutter"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Ich habe einen Bruder."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Familie, die Familien."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Eltern.",
+    "Meine Eltern wohnen in Seoul."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "der Vater, die Väter.",
+    "Mein Vater ist Ingenieur."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Mutter, die Mütter.",
+    "Meine Mutter ist Lehrerin."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Geschwister.",
+    "Hast du Geschwister?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "der Bruder, die Brüder."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Schwester, die Schwestern.",
+    "Ich habe keine Schwester."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Großeltern.",
+    "Meine Großeltern wohnen in Bonn."
+   ]
+  }
+ ],
+ "script": "meine Mutter [pause] Ich habe einen Bruder. [pause] die Familie, die Familien. [pause] die Eltern. Meine Eltern wohnen in Seoul. [pause] der Vater, die Väter. Mein Vater ist Ingenieur. [pause] die Mutter, die Mütter. Meine Mutter ist Lehrerin. [pause] die Geschwister. Hast du Geschwister? [pause] der Bruder, die Brüder. [pause] die Schwester, die Schwestern. Ich habe keine Schwester. [pause] die Großeltern. Meine Großeltern wohnen in Bonn. [pause] Gut.",
+ "tail": "Gut."
+}

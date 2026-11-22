@@ -1,0 +1,79 @@
+{
+ "job": "a11_yu_02",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a1-1/3",
+   "who": "Yuna",
+   "parts": [
+    "Und wie heißt das auf Deutsch?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Yuna",
+   "parts": [
+    "Die Schere, der Bleistift, der Radiergummi. Puh!"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Yuna",
+   "parts": [
+    "Entschuldigung, ich verstehe das nicht."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Yuna",
+   "parts": [
+    "Ah, Seite zwölf! Danke."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Yuna",
+   "parts": [
+    "Was ist das?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Yuna",
+   "parts": [
+    "Was haben wir heute?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Yuna",
+   "parts": [
+    "Sport? Super! Wann haben wir Sport?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Yuna",
+   "parts": [
+    "Mathe ist okay. Und wann ist Pause?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Yuna",
+   "parts": [
+    "Haben wir auch Kunst?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Yuna",
+   "parts": [
+    "Mathe finde ich gut. Aber Deutsch ist schwer."
+   ]
+  }
+ ],
+ "script": "Und wie heißt das auf Deutsch? [pause] Die Schere, der Bleistift, der Radiergummi. Puh! [pause] Entschuldigung, ich verstehe das nicht. [pause] Ah, Seite zwölf! Danke. [pause] Was ist das? [pause] Was haben wir heute? [pause] Sport? Super! Wann haben wir Sport? [pause] Mathe ist okay. Und wann ist Pause? [pause] Haben wir auch Kunst? [pause] Mathe finde ich gut. Aber Deutsch ist schwer. [pause]"
+}

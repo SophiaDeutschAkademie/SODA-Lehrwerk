@@ -1,0 +1,87 @@
+{
+ "job": "a11b_n_11",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Ich tanze gern."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Ich lese nicht gern."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Kommst du mit?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Fußball spielen.",
+    "Lukas spielt gern Fußball."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Gitarre spielen.",
+    "Elif spielt gern Gitarre."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Musik hören.",
+    "Ich höre gern Musik."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "tanzen.",
+    "Yuna tanzt gern."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "schwimmen.",
+    "Ich schwimme lieber."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "lesen, du liest, er liest.",
+    "Emma liest gern Bücher."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Rad fahren, du fährst, er fährt.",
+    "Emma fährt gern Rad."
+   ]
+  }
+ ],
+ "script": "Ich tanze gern. [pause] Ich lese nicht gern. [pause] Kommst du mit? [pause] Fußball spielen. Lukas spielt gern Fußball. [pause] Gitarre spielen. Elif spielt gern Gitarre. [pause] Musik hören. Ich höre gern Musik. [pause] tanzen. Yuna tanzt gern. [pause] schwimmen. Ich schwimme lieber. [pause] lesen, du liest, er liest. Emma liest gern Bücher. [pause] Rad fahren, du fährst, er fährt. Emma fährt gern Rad. [pause] Gut.",
+ "tail": "Gut."
+}

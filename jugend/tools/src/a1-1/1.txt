@@ -1,0 +1,235 @@
+@id a1-1/1
+
+== einstieg
+bild: An airport arrivals hall. On the left YUNA stands next to a rolling suitcase, wears a backpack and waves with one hand. On the right EMMA faces her, smiles and waves back with one raised hand. Between and behind them a simple glass sliding door.
+alt: 공항 도착장에서 여행 가방을 든 Yuna와 마중 나온 Emma가 서로 손을 흔들어요.
+lead: Yuna가 쾰른 본 공항에 도착했어요. 한 해 동안 같이 살 Emma가 마중을 나왔어요.
+mission: 이 과를 마치면 반 채팅방에 독일어로 첫 인사를 올릴 수 있어요.
+wort: Hallo! | 안녕!
+wort: Guten Tag! | 안녕하세요!
+wort: Willkommen! | 환영해요!
+wort: Tschüss! | 잘 가!
+mc: 두 사람은 지금 처음 만났어요. 이때 하지 않는 말은 무엇일까요? | Hallo! | Willkommen! | Tschüss!* => Tschüss는 헤어질 때 하는 인사예요.
+
+== hoeren
+-- dialog A | Am Flughafen | 쾰른 본 공항이에요. Emma와 Emma의 어머니가 Yuna를 마중 나왔어요.
+vor: 들으면서 찾아보세요. Emma의 어머니 이름은 무엇인가요?
+Emma: Hallo! Bist du Yuna? | 안녕! 네가 Yuna야?
+Yuna: Ja, ich bin Yuna. Hallo! | 응, 내가 Yuna야. 안녕!
+Emma: Ich bin Emma. Willkommen in Köln! | 나는 Emma야. 쾰른에 온 걸 환영해!
+Yuna: Danke, Emma! | 고마워, Emma!
+Emma: Wie geht's? | 어떻게 지내?
+Yuna: Gut, danke. Und dir? | 잘 지내, 고마워. 너는?
+Emma: Auch gut! | 나도 잘 지내!
+Sabine: Guten Tag, Yuna! Ich bin Sabine. | 안녕, Yuna! 나는 Sabine야.
+Yuna: Guten Tag, Frau Wagner! | 안녕하세요, Frau Wagner!
+Sabine: Sag einfach Sabine! | 그냥 Sabine라고 불러!
+
+-- dialog B | In der Klasse 8b | 월요일 아침, Yuna가 새 교실에 들어왔어요.
+vor: 들으면서 찾아보세요. Lukas는 어디에서 왔나요?
+Lukas: Hi! Ich bin Lukas. Wie heißt du? | 안녕! 나는 Lukas야. 너는 이름이 뭐야?
+Yuna: Ich heiße Yuna. | 내 이름은 Yuna야.
+Lukas: Wie bitte? Wie schreibt man das? | 뭐라고? 그거 어떻게 써?
+Yuna: Y – U – N – A. | Y, U, N, A. | say=Ypsilon, Uh, Enn, Ah.
+Lukas: Ah, Yuna! Woher kommst du? | 아, Yuna! 너는 어디에서 왔어?
+Yuna: Ich komme aus Korea, aus Seoul. Und du? | 나는 한국 서울에서 왔어. 너는?
+Lukas: Ich komme aus Köln. | 나는 쾰른 출신이야.
+Schneider: Guten Morgen! Ich bin Frau Schneider. Wer bist du? | 좋은 아침이에요! 나는 Frau Schneider예요. 너는 누구니?
+Yuna: Guten Morgen, Frau Schneider! Ich bin Yuna Kim. | 안녕하세요, Frau Schneider! 저는 김유나예요.
+Schneider: Willkommen in der 8b, Yuna! | 8b 반에 온 걸 환영해요, Yuna! | say=Willkommen in der acht Beh, Yuna!
+
+-- fragen 두 대화를 듣고 답하세요.
+rf: Emma: „Ich komme aus Korea.“ | f => 한국에서 온 사람은 Yuna예요.
+rf: Lukas: „Ich komme aus Köln.“ | r
+rf: Sabine: „Ich bin Frau Wagner.“ | r => Sabine Wagner는 Emma의 어머니예요.
+mc: Yuna는 어디에서 왔나요? | aus Seoul* | aus Köln | aus Wien
+mc: Frau Schneider는 누구인가요? | 8b 반 선생님* | Emma의 어머니 | Yuna의 친구
+mc: Lukas는 왜 Wie schreibt man das?라고 물었나요? | 이름을 어떻게 쓰는지 알고 싶어서* | 나이를 알고 싶어서 | 어디에서 왔는지 알고 싶어서
+
+-- kultur du와 Sie
+p: 독일어에는 상대를 부르는 말이 두 가지예요. 친구, 가족, 또래에게는 du를 쓰고, 선생님이나 처음 만난 어른에게는 Sie를 써요.
+p: 학생끼리는 처음 만나도 바로 du라고 해요. 그래서 Lukas는 Yuna에게 Wie heißt du?라고 물었어요.
+p: 선생님은 이름으로 부르지 않고 Frau(여자)나 Herr(남자) 뒤에 성을 붙여 불러요. Frau Schneider, Herr Wagner처럼요. 인사도 Hallo보다 Guten Morgen이나 Guten Tag가 잘 어울려요.
+p: 어른이 Sag einfach Sabine!라고 하면 이름을 부르고 du를 써도 된다는 뜻이에요. 한집에 사는 홈스테이 가족끼리는 보통 이렇게 해요.
+mc: 학교 복도에서 Frau Schneider를 만났어요. 알맞은 인사는 무엇인가요? | Guten Morgen, Frau Schneider!* | Hi, Schneider! | Hallo, Sabine!
+
+== wortschatz
+-- gruppe Begrüßen und verabschieden | 만날 때와 헤어질 때
+Hallo! | 안녕!, 안녕하세요! | Hallo, Emma! | 안녕, Emma!
+Guten Morgen! | 좋은 아침이에요! (아침 인사) | Guten Morgen, Frau Schneider! | 안녕하세요, Frau Schneider!
+Guten Tag! | 안녕하세요! (낮 인사) | Guten Tag, Herr Wagner! | 안녕하세요, Herr Wagner!
+Guten Abend! | 안녕하세요! (저녁 인사) | Guten Abend, Sabine! | 좋은 저녁이에요, Sabine!
+Tschüss! | 잘 가!, 안녕! | Tschüss, bis morgen! | 잘 가, 내일 봐!
+Auf Wiedersehen! | 안녕히 가세요!, 안녕히 계세요! | Auf Wiedersehen, Frau Schneider! | 안녕히 계세요, Frau Schneider!
+Willkommen! | 환영해요! | Willkommen in Köln! | 쾰른에 온 걸 환영해!
+
+-- gruppe Sich vorstellen | 나를 소개할 때
+heißen | 이름이 ~이다 | Ich heiße Yuna. | 내 이름은 Yuna야.
+sein | ~이다 | Ich bin Emma. | 나는 Emma야.
+kommen | 오다 | Ich komme aus Korea. | 나는 한국에서 왔어.
+der Name, die Namen | 이름 | Mein Name ist Yuna Kim. | 내 이름은 김유나예요.
+wie | 어떻게 | Wie heißt du? | 너는 이름이 뭐야?
+woher | 어디에서 | Woher kommst du? | 너는 어디에서 왔어?
+wer | 누구 | Wer bist du? | 너는 누구야?
+aus | ~에서, ~ 출신 | Ich komme aus Seoul. | 나는 서울에서 왔어.
+
+-- gruppe Wie geht's? | 안부와 짧은 대답
+Wie geht's? | 어떻게 지내? | Hallo, Lukas! Wie geht's? | 안녕, Lukas! 어떻게 지내?
+gut | 좋은, 잘 | Gut, danke. Und dir? | 잘 지내, 고마워. 너는?
+danke | 고마워, 고맙습니다 | Danke, Emma! | 고마워, Emma!
+bitte | 부탁해요, 천만에요 | Wie bitte? | 뭐라고?, 뭐라고요?
+ja | 네, 응 | Ja, ich bin Yuna. | 응, 내가 Yuna야.
+nein | 아니요, 아니 | Nein, ich komme aus Köln. | 아니, 나는 쾰른 출신이야.
+
+-- gruppe Länder | 독일어를 쓰는 나라와 한국
+Deutschland | 독일 | Köln ist in Deutschland. | 쾰른은 독일에 있어요.
+Österreich | 오스트리아 | Wien ist in Österreich. | 빈은 오스트리아에 있어요.
+die Schweiz | 스위스 | Zürich ist in der Schweiz. | 취리히는 스위스에 있어요.
+Korea | 한국 | Seoul ist in Korea. | 서울은 한국에 있어요.
+
+-- bilder
+Hallo!: a teenage girl seen from the waist up who smiles and waves hello with one raised hand
+Guten Morgen!: a large sun rising behind the roof of a small simple house
+Guten Abend!: a crescent moon and three small stars above a small simple house with one lit window
+Tschüss!: a teenage boy with a backpack who walks away to the right, looks back over his shoulder and waves goodbye
+Willkommen!: an open front door with a doormat in front of it and a potted plant next to it
+gut: a single hand giving a thumbs up
+
+-- aussprache ei와 ie | ei는 [아이], ie는 길게 [이]
+p: e와 i가 나란히 있으면 순서를 잘 봐야 해요. ei는 [아이], ie는 길게 [이]로 읽어요.
+p: 헷갈릴 때는 뒤에 오는 글자를 영어 알파벳 이름으로 읽어 보세요. ei는 뒤 글자가 i라서 [아이], ie는 뒤 글자가 e라서 [이]예요.
+hör: heißen, nein, Schweiz, Österreich | ei [아이]
+hör: wie, die, Wien, Wiedersehen | ie [이]
+hör: Wie heißt du? Ich heiße Heidi. | 두 소리가 모두 들어 있는 문장
+
+== grammatik
+-- punkt Verben mit ich und du | ich와 du에 따라 동사의 끝이 달라져요
+bsp: Ich *komme* aus Korea. | 나는 한국에서 왔어.
+bsp: Woher *kommst* du? | 너는 어디에서 왔어?
+bsp: Ich *heiße* Yuna. | 내 이름은 Yuna야.
+finde: ich가 주어일 때 동사는 어떻게 끝나나요? | -e* | -st | -en
+regel: 독일어 동사는 주어에 따라 끝이 달라져요. kommen에서 -en을 뗀 komm-에 ich는 -e, du는 -st를 붙여요.
+| | kommen 오다 | heißen 이름이 ~이다
+| ich | komm*e* | heiß*e*
+| du | komm*st* | heiß*t*
+merke: heißen은 heiß-가 이미 ß로 끝나서 s를 한 번 더 쓰지 않아요. du heißst가 아니라 du heißt예요.
+
+-- punkt sein | sein은 모양이 완전히 달라져요
+bsp: Ich *bin* Yuna. | 나는 Yuna야.
+bsp: *Bist* du Yuna? | 네가 Yuna야?
+bsp: Wer *bist* du? | 너는 누구야?
+finde: du와 함께 쓰는 sein의 모양은 무엇인가요? | bist* | bin | seist
+regel: sein(~이다)은 규칙을 따르지 않는 동사예요. ich bin, du bist를 통째로 외워요.
+| | sein ~이다
+| ich | *bin*
+| du | *bist*
+merke: 한국어는 '나는 Yuna야'처럼 '이다'가 문장 끝에 오지만, 독일어는 Ich bin Yuna처럼 동사가 둘째 자리에 와요.
+
+-- punkt W-Fragen | 의문사로 묻는 문장
+bsp: *Wie* heißt du? | 너는 이름이 뭐야?
+bsp: *Woher* kommst du? | 너는 어디에서 왔어?
+bsp: *Wer* bist du? | 너는 누구야?
+finde: 의문사 바로 다음에는 무엇이 오나요? | 동사* | 주어 du | 이름
+regel: 의문사가 맨 앞에 오고, 동사가 둘째 자리에 와요. 주어는 그 뒤에 와요.
+| 1 의문사 | 2 동사 | 3 주어
+| Wie | heißt | du?
+| Woher | kommst | du?
+| Wer | bist | du?
+merke: 독일어 W는 영어 v처럼 아랫입술을 살짝 물고 내는 소리예요. Wie는 [비], Woher는 [보헤어], Wer는 [베어]에 가까워요.
+
+-- alphabet
+p: 독일어 알파벳은 영어와 같은 26자에 Ä, Ö, Ü, ß가 더 있어요. 글자 이름은 영어와 달라요. 줄을 누르면 소리가 나요.
+p: 이름을 잘 못 알아들었을 때는 Wie schreibt man das?(그거 어떻게 써요?)라고 물어요. 대답할 때는 글자 이름을 하나씩 말해요.
+
+== training
+-- ex Hören | 질문이나 인사를 듣고 알맞은 대답을 고르세요.
+hör: Lukas: Wie heißt du?
+mc: 알맞은 대답은? | Ich heiße Yuna.* | Ich komme aus Korea. | Gut, danke.
+hör: Emma: Woher kommst du?
+mc: 알맞은 대답은? | Ich komme aus Seoul.* | Ich bin Yuna. | Auch gut!
+hör: Emma: Wie geht's?
+mc: 알맞은 대답은? | Gut, danke. Und dir?* | Ich heiße Emma. | Aus Köln.
+hör: Schneider: Auf Wiedersehen!
+mc: 알맞은 대답은? | Auf Wiedersehen, Frau Schneider!* | Guten Morgen, Frau Schneider! | Willkommen!
+
+-- ex Hören | 철자를 듣고 알맞은 낱말을 고르세요.
+hör: N: E – M – M – A | say=Eh, Emm, Emm, Ah.
+mc: 어떤 이름인가요? | Emma* | Ella | Anna
+hör: N: W – I – E – N | say=Weh, Ih, Eh, Enn.
+mc: 어떤 도시인가요? | Wien* | Wein | Wenn
+hör: N: L – U – K – A – S | say=Ell, Uh, Kah, Ah, Ess.
+mc: 어떤 이름인가요? | Lukas* | Lucas | Jonas
+hör: N: S – E – O – U – L | say=Ess, Eh, Oh, Uh, Ell.
+mc: 어떤 도시인가요? | Seoul* | Soul | Seul
+
+-- ex Lesen | 채팅을 읽고, 맞으면 richtig, 틀리면 falsch를 고르세요.
+text chat | Deutsch-Chat
+> Mia: Hallo! Ich heiße Mia. Ich komme aus Österreich, aus Wien. Und du?
+> Tom: Hi Mia! Ich bin Tom. Ich komme aus der Schweiz, aus Zürich.
+> Mia: Hallo Tom! Wie geht's?
+> Tom: Gut, danke! Und dir?
+> Mia: Auch gut. Tschüss, bis morgen!
+rf: Mia: „Ich komme aus Wien.“ | r
+rf: Tom: „Ich komme aus Österreich.“ | f => Tom은 스위스 취리히에서 왔어요.
+rf: Tom: „Ich heiße Tom.“ | r
+rf: Mia: „Guten Abend, Tom!“ | f => Mia는 Hallo Tom!이라고 인사했어요.
+
+-- ex Grammatik | 알맞은 동사 형태를 고르세요.
+gap: Ich [heiße|heißt] Lukas.
+gap: Wie [heißt|heiße] du?
+gap: Woher [kommst|komme] du?
+gap: Ich [komme|kommst] aus Köln.
+gap: Ich [bin|bist] Emma.
+gap: [Bist|Bin] du Yuna? => du와 함께 쓰는 sein은 bist예요.
+
+-- ex Grammatik | 대답을 보고 알맞은 의문사를 고르세요.
+gap: [Wie|Woher|Wer] heißt du? – Ich heiße Elif.
+gap: [Woher|Wie|Wer] kommst du? – Aus Korea.
+gap: [Wer|Wie|Woher] bist du? – Ich bin Lukas.
+gap: [Wie|Wer|Woher] geht's? – Gut, danke!
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: wie / heißt / du? | 너는 이름이 뭐야?
+ord: ich / komme / aus / Korea. | 나는 한국에서 왔어.
+ord: woher / kommst / du? | 너는 어디에서 왔어?
+ord: wer / bist / du? | 너는 누구야?
+
+-- ex Wortschatz | 상황에 맞는 인사를 짝지으세요.
+paar: 아침 8시, 교실에 들어오신 선생님께 = Guten Morgen! ; 오후 2시, 가게에 들어가면서 = Guten Tag! ; 저녁 7시, 친구 부모님께 = Guten Abend! ; 수업이 끝나고 친구에게 = Tschüss! ; 병원을 나서며 의사 선생님께 = Auf Wiedersehen!
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Lukas: Wie heißt du? | 너는 이름이 뭐야?
+dik: Yuna: Ich komme aus Korea. | 나는 한국에서 왔어.
+dik: Emma: Hallo! Wie geht's? | 안녕! 어떻게 지내?
+
+== sprechen
+-- redemittel
+인사하기: Hallo! / Guten Morgen! / Guten Tag! | 안녕! / 안녕하세요! ; Tschüss! / Auf Wiedersehen! | 잘 가! / 안녕히 가세요!
+이름 묻고 답하기: Wie heißt du? | 이름이 뭐야? ; Ich heiße … / Ich bin … | 내 이름은 …야. / 나는 …야.
+출신 묻고 답하기: Woher kommst du? | 어디에서 왔어? ; Ich komme aus … | 나는 …에서 왔어.
+안부 묻고 답하기: Wie geht's? | 어떻게 지내? ; Gut, danke. Und dir? | 잘 지내, 고마워. 너는?
+철자 묻기: Wie schreibt man das? | 그거 어떻게 써?
+
+-- rolle B | Yuna, Lukas
+
+-- ich 내 이야기로 말해요 | 칸에 내 이름과 나라, 도시를 독일어로 적으세요. 완성된 문장을 소리 내어 읽고 녹음해서 들어 보세요.
+feld: name | 이름 | Yuna
+feld: land | 나라 | Korea
+feld: stadt | 도시 | Seoul
+satz: Hallo! Ich heiße {name}.
+satz: Ich komme aus {land}, aus {stadt}.
+satz: Und du? Wie heißt du?
+
+-- schreiben Hallo, 8b! | Yuna처럼 반 채팅방에 첫 인사를 써 보세요. 서너 문장이면 충분해요.
+punkt: 인사 ; 내 이름 ; 나라와 도시 ; 친구들에게 묻는 질문 하나
+muster: Hallo! Ich heiße Yuna. Ich komme aus Korea, aus Seoul. Und du? Woher kommst du?
+check: 인사로 시작했나요? ; 문장의 첫 글자와 이름, 나라 이름을 대문자로 썼나요? ; ich 다음의 동사가 -e로 끝나나요? ; 문장 끝에 마침표나 물음표를 찍었나요?
+
+-- kann
+Ich kann grüßen und mich verabschieden. | 만날 때와 헤어질 때 인사를 할 수 있어요.
+Ich kann meinen Namen und mein Land sagen. | 내 이름과 출신을 말하고 물을 수 있어요.
+Ich kann meinen Namen buchstabieren. | 내 이름의 철자를 말할 수 있어요.
+
+-- tipp 자주 쓰는 말은 통째로 외워요
+p: Wie geht's?를 낱말 하나하나로 나누어 생각하면 오히려 어려워요. 자주 쓰는 말은 한 덩어리로 소리 내어 외우는 편이 빨라요.
+p: 오늘 배운 말에서 세 덩어리를 골라, 음성을 듣고 같은 빠르기로 다섯 번씩 따라 해 보세요. Wie heißt du? / Ich komme aus Korea. / Gut, danke. Und dir?

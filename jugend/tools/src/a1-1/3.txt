@@ -1,0 +1,238 @@
+@id a1-1/3
+
+== einstieg
+bild: Two students sit side by side at a school desk. YUNA holds up a small eraser in one hand and looks at it with a curious face. EMMA sits next to her and points at the eraser. On the desk lie a pencil, a ruler, a pair of scissors, a notebook and a pencil case.
+alt: 책상에 나란히 앉은 Yuna가 지우개를 들어 보이고, Emma가 그것을 가리켜요. 책상 위에는 연필, 자, 가위, 공책, 필통이 있어요.
+lead: 독일어 수업이 곧 시작해요. Yuna는 책상 위에 있는 물건들의 독일어 이름이 궁금해요.
+mission: 이 과를 마치면 내 가방 속 물건을 독일어로 소개할 수 있어요.
+wort: Was ist das? | 이게 뭐예요?
+wort: Das ist ein Stift. | 그건 펜이에요.
+wort: Das ist eine Schere. | 그건 가위예요.
+wort: Das ist ein Heft. | 그건 공책이에요.
+mc: 방금 들은 문장에서 Schere 앞에는 ein이 아니라 eine가 왔어요. 왜 그럴까요? | 명사마다 정해진 성이 있어서* | 가위가 두 개라서 | 가위가 책상 위에 있어서 => 독일어 명사는 남성, 여성, 중성으로 나뉘어요. 이 과에서 배워요.
+
+== hoeren
+-- dialog A | Was ist das? | 수업이 시작하기 전이에요. Yuna가 책상 위 물건을 하나씩 가리키며 물어요.
+vor: 들으면서 찾아보세요. Yuna가 볼펜이라고 생각한 물건은 사실 무엇이었나요?
+Yuna: Emma, was ist das? | Emma, 이게 뭐야?
+Emma: Das ist ein Radiergummi. | 그건 지우개야.
+Yuna: Ein Radiergummi. Okay! Und das? Ist das ein Kuli? | 지우개. 알겠어! 그럼 이건? 이거 볼펜이야?
+Emma: Nein, das ist kein Kuli. Das ist ein Bleistift. | 아니, 그건 볼펜이 아니야. 연필이야.
+Yuna: Und wie heißt das auf Deutsch? | 그리고 이건 독일어로 뭐라고 해?
+Emma: Das ist eine Schere. | 그건 가위야.
+Yuna: Die Schere, der Bleistift, der Radiergummi … Puh! | 디 셰레, 데어 블라이슈티프트, 데어 라디어구미… 휴! | say=Die Schere, der Bleistift, der Radiergummi. Puh!
+Emma: Ja, der, die, das. Typisch Deutsch! | 그래, der, die, das. 딱 독일어답지!
+
+-- dialog B | Im Unterricht | 독일어 수업 시간이에요. Frau Schneider가 반 학생들에게 말해요.
+vor: 들으면서 찾아보세요. 책을 몇 쪽에 펴야 하나요?
+Schneider: Guten Morgen! Öffnet bitte das Buch auf Seite zwölf. | 좋은 아침이에요! 책 12쪽을 펴세요.
+Yuna: Entschuldigung, ich verstehe das nicht. | 죄송해요, 이해하지 못했어요.
+Schneider: Kein Problem, Yuna. Noch einmal: das Buch, Seite zwölf. | 괜찮아요, Yuna. 다시 한 번 말할게요. 책 12쪽이에요.
+Yuna: Ah, Seite zwölf! Danke. | 아, 12쪽! 감사합니다.
+Schneider: Lukas, wo ist dein Heft? | Lukas, 네 공책은 어디 있니?
+Lukas: Das Heft ist hier. Aber wo ist mein Stift? | 공책은 여기 있어요. 그런데 제 펜은 어디 있죠?
+Elif: Hier ist ein Stift, Lukas. | 여기 펜 있어, Lukas.
+Schneider: Gut. Hört jetzt zu und sprecht nach: die Tafel, das Fenster, die Tür. | 좋아요. 이제 잘 듣고 따라 말하세요. 칠판, 창문, 문.
+Lukas: Die Tafel, das Fenster, die Tür. | 칠판, 창문, 문.
+
+-- fragen 두 대화를 듣고 답하세요.
+rf: Emma: „Das ist ein Kuli.“ | f => Emma는 Das ist kein Kuli라고 했어요. 그 물건은 연필(Bleistift)이었어요.
+rf: Yuna: „Ich verstehe das nicht.“ | r
+rf: Elif: „Hier ist ein Stift.“ | r
+mc: Frau Schneider는 책을 몇 쪽에 펴라고 했나요? | 12* | 20 | 2
+mc: Lukas가 찾고 있는 것은 무엇인가요? | der Stift* | das Heft | das Buch
+mc: 물건의 독일어 이름을 모를 때 Yuna는 어떻게 물었나요? | Wie heißt das auf Deutsch?* | Wie alt bist du? | Woher kommst du?
+
+-- kultur 독일 학생의 필통
+p: 독일 학생들은 초등학교 때부터 만년필(der Füller)로 글씨를 써요. 틀리면 잉크만 지우는 펜(der Tintenkiller)으로 지우고 다시 써요.
+p: 공책은 줄 공책과 모눈 공책을 과목에 따라 나누어 써요. 수학 시간에는 대개 모눈 공책을 써요.
+p: 필통은 das Mäppchen이라고 해요. 지역에 따라 das Federmäppchen, die Federtasche라고도 해요.
+mc: 독일 학생이 글씨를 쓰다가 틀리면 주로 무엇으로 지울까요? | 잉크만 지우는 펜* | 지우개 | 수정 테이프
+
+== wortschatz
+-- gruppe Schulsachen | 학용품
+der Stift, die Stifte | 펜, 필기구 | Wo ist mein Stift? | 내 펜이 어디 있지?
+der Bleistift, die Bleistifte | 연필 | Das ist ein Bleistift. | 그건 연필이에요.
+der Kuli, die Kulis | 볼펜 | Ist das ein Kuli? | 그거 볼펜이에요?
+der Radiergummi, die Radiergummis | 지우개 | Der Radiergummi ist neu. | 그 지우개는 새것이에요.
+das Heft, die Hefte | 공책 | Das Heft ist hier. | 공책은 여기 있어요.
+das Buch, die Bücher | 책 | Das ist kein Heft. Das ist ein Buch. | 그건 공책이 아니에요. 책이에요.
+das Lineal, die Lineale | 자 | Hier ist ein Lineal. | 여기 자가 있어요.
+die Schere, die Scheren | 가위 | Das ist eine Schere. | 그건 가위예요.
+das Mäppchen, die Mäppchen | 필통 | Das Mäppchen ist neu. | 그 필통은 새것이에요.
+die Tasche, die Taschen | 가방 | Wo ist die Tasche? | 가방이 어디 있어요?
+
+-- gruppe Im Klassenzimmer | 교실에서
+der Tisch, die Tische | 책상, 탁자 | Das ist mein Tisch. | 이건 내 책상이에요.
+der Stuhl, die Stühle | 의자 | Hier ist ein Stuhl. | 여기 의자가 있어요.
+die Tafel, die Tafeln | 칠판 | Das ist die Tafel. | 이건 칠판이에요.
+das Fenster, die Fenster | 창문 | Das ist ein Fenster. | 그건 창문이에요.
+die Tür, die Türen | 문 | Wo ist die Tür? | 문이 어디 있어요?
+die Seite, die Seiten | 쪽, 페이지 | Seite zwölf, bitte. | 12쪽을 펴 주세요.
+
+-- gruppe Im Unterricht | 수업 시간에 쓰는 말
+Was ist das? | 이게 뭐예요? | Was ist das? Das ist ein Heft. | 이게 뭐예요? 그건 공책이에요.
+Wie heißt das auf Deutsch? | 이건 독일어로 뭐라고 해요? | Entschuldigung, wie heißt das auf Deutsch? | 실례지만, 이건 독일어로 뭐라고 해요?
+Ich verstehe das nicht. | 이해하지 못했어요. | Entschuldigung, ich verstehe das nicht. | 죄송해요, 이해하지 못했어요.
+Noch einmal, bitte. | 한 번 더 부탁해요. | Wie bitte? Noch einmal, bitte. | 뭐라고요? 한 번 더 말해 주세요.
+hier | 여기 | Hier ist ein Stift. | 여기 펜이 있어요.
+Entschuldigung! | 실례합니다!, 죄송해요! | Entschuldigung, Frau Schneider! | 죄송해요, Frau Schneider!
+
+-- bilder
+der Bleistift, die Bleistifte: a single wooden pencil with a sharp tip
+der Kuli, die Kulis: a single ballpoint pen with a clip
+der Radiergummi, die Radiergummis: a single rectangular eraser
+das Heft, die Hefte: a single thin school notebook with a plain cover
+das Buch, die Bücher: a single thick closed book
+das Lineal, die Lineale: a single straight ruler with small marks
+die Schere, die Scheren: a single pair of scissors
+das Mäppchen, die Mäppchen: a single zipped pencil case
+die Tasche, die Taschen: a single school backpack
+der Tisch, die Tische: a single simple school desk
+der Stuhl, die Stühle: a single simple school chair
+die Tafel, die Tafeln: a single dark classroom blackboard on a stand
+
+-- aussprache sch, sp, st | [슈] 소리가 나는 철자
+p: sch는 입술을 둥글게 내밀고 [슈]처럼 내는 소리예요. Schere, Tasche, Tisch에 들어 있어요.
+p: 낱말 맨 앞의 st와 sp도 [슈트], [슈프]로 읽어요. Stift는 [스티프트]가 아니라 [슈티프트]에 가까워요. 낱말 가운데나 끝에 오는 st는 ist, Fenster처럼 [스트] 그대로 읽어요.
+hör: Schere, Tasche, Tisch | sch
+hör: Stift, Stuhl, Bleistift | 낱말 앞의 st
+hör: Wo ist der Stift? Hier ist der Stift. | 두 가지 st가 들어 있는 문장
+
+== grammatik
+-- punkt der, die, das | 명사에는 성이 있어요
+bsp: *Der* Radiergummi ist neu. | 그 지우개는 새것이에요.
+bsp: *Die* Schere ist hier. | 가위는 여기 있어요.
+bsp: *Das* Heft ist hier. | 공책은 여기 있어요.
+finde: Heft 앞에는 무엇이 붙었나요? | das* | der | die
+regel: 독일어 명사는 남성(der), 여성(die), 중성(das) 가운데 하나예요. 뜻만 보고는 알 수 없는 낱말이 많아서 처음부터 관사와 함께 외워요. 명사는 문장 어디에 있든 첫 글자를 대문자로 써요.
+| der 남성 | die 여성 | das 중성
+| der Stift | die Schere | das Heft
+| der Tisch | die Tafel | das Buch
+| der Stuhl | die Tür | das Fenster
+merke: 사람은 대개 실제 성별을 따라요. der Lehrer, die Lehrerin처럼요. 하지만 das Mädchen은 중성이에요. -chen으로 끝나는 낱말은 언제나 das이기 때문이에요. das Mäppchen도 그래요.
+
+-- punkt ein, eine und kein, keine | 하나의 ~, ~이 아닌
+bsp: Das ist *ein* Bleistift. | 그건 연필이에요.
+bsp: Das ist *eine* Schere. | 그건 가위예요.
+bsp: Das ist *kein* Kuli. | 그건 볼펜이 아니에요.
+finde: die Schere 앞에는 ein과 eine 가운데 무엇을 쓰나요? | eine* | ein
+regel: 처음 말하는 물건에는 ein, eine를 써요. der와 das 명사에는 ein, die 명사에는 eine예요. '~이 아니다'라고 할 때는 앞에 k를 붙여 kein, keine라고 해요.
+| | der | das | die
+| 하나의 ~ | *ein* Stift | *ein* Heft | *eine* Schere
+| ~이 아닌 | *kein* Stift | *kein* Heft | *keine* Schere
+merke: 처음 말할 때는 ein, eine를 쓰고, 그 물건을 다시 말할 때는 der, die, das를 써요. Das ist ein Heft. Das Heft ist neu.
+
+-- punkt Plural | 여러 개를 말할 때
+bsp: ein Stift, zwei *Stifte* | 펜 한 자루, 펜 두 자루
+bsp: ein Buch, zwei *Bücher* | 책 한 권, 책 두 권
+bsp: eine Schere, zwei *Scheren* | 가위 한 개, 가위 두 개
+finde: die Stifte, die Bücher, die Scheren. 복수형 앞에 붙는 관사는 무엇인가요? | 언제나 die* | 단수와 같은 관사 | 언제나 das
+regel: 복수형을 만드는 방법은 낱말마다 달라요. 그래서 낱말을 외울 때 복수형도 함께 외워요. 복수형의 관사는 언제나 die예요.
+| 붙는 끝 | 단수 | 복수
+| -e | der Stift | die Stift*e*
+| -n, -en | die Schere | die Schere*n*
+| -er, 움라우트 | das Buch | die B*ü*ch*er*
+| -s | der Kuli | die Kuli*s*
+| 그대로 | das Fenster | die Fenster
+merke: 한국어는 '책 두 권'처럼 명사의 모양이 그대로지만, 독일어는 zwei Bücher처럼 꼭 복수형으로 바꿔요.
+
+== training
+-- ex Hören | 선생님의 말을 듣고 무엇을 해야 하는지 고르세요.
+hör: Schneider: Öffnet bitte das Buch.
+mc: 무엇을 해야 하나요? | 책을 펴요* | 공책에 써요 | 창문을 열어요
+hör: Schneider: Hört bitte zu.
+mc: 무엇을 해야 하나요? | 잘 들어요* | 따라 말해요 | 책을 읽어요
+hör: Schneider: Sprecht bitte nach.
+mc: 무엇을 해야 하나요? | 따라 말해요* | 잘 들어요 | 공책에 써요
+hör: Schneider: Noch einmal, bitte.
+mc: 무엇을 해야 하나요? | 한 번 더 해요* | 조용히 해요 | 책을 덮어요
+
+-- ex Hören | 듣고 어떤 물건인지 고르세요.
+hör: Emma: Das ist eine Tasche.
+mc: 무엇인가요? | 가방* | 칠판 | 가위
+hör: Lukas: Das ist kein Heft. Das ist ein Buch.
+mc: 무엇인가요? | 책* | 공책 | 볼펜
+hör: Elif: Hier sind zwei Bleistifte.
+mc: 무엇이 있나요? | 연필 두 자루* | 연필 한 자루 | 볼펜 두 자루
+
+-- ex Wortschatz | 알맞은 관사를 고르세요. | opt: der / die / das
+wahl: Stift | der
+wahl: Schere | die
+wahl: Heft | das
+wahl: Tisch | der
+wahl: Tafel | die
+wahl: Buch | das
+wahl: Tür | die
+wahl: Mäppchen | das
+wahl: Stuhl | der
+wahl: Fenster | das
+
+-- ex Grammatik | ein, eine, kein, keine 가운데 알맞은 말을 고르세요.
+gap: Das ist [ein|eine] Heft.
+gap: Das ist [eine|ein] Schere.
+gap: Ist das [ein|eine] Kuli?
+gap: Nein, das ist [kein|keine] Kuli.
+gap: Das ist [keine|kein] Tasche. Das ist ein Mäppchen.
+gap: Hier ist [ein|eine] Lineal.
+
+-- ex Grammatik | 복수형을 쓰세요.
+gap: ein Stift, zwei [=Stifte]
+gap: ein Buch, zwei [=Bücher]
+gap: eine Schere, zwei [=Scheren]
+gap: ein Kuli, zwei [=Kulis]
+gap: ein Heft, zwei [=Hefte]
+gap: ein Stuhl, zwei [=Stühle]
+
+-- ex Lesen | Yuna가 쓴 메모를 읽고 답하세요.
+text notiz | Meine Tasche
+> In der Tasche: zwei Hefte, ein Buch, ein Mäppchen.
+> Im Mäppchen: drei Bleistifte, ein Kuli, ein Radiergummi, eine Schere.
+> Kein Lineal!
+mc: 가방 안에 책은 몇 권 있나요? | 한 권* | 두 권 | 세 권
+mc: 필통 안에 연필은 몇 자루 있나요? | 세 자루* | 두 자루 | 한 자루
+mc: Yuna에게 없는 물건은 무엇인가요? | das Lineal* | der Kuli | die Schere
+rf: Im Mäppchen ist eine Schere. | r
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: das / ist / ein / Bleistift. | 그건 연필이에요.
+ord: ist / das / ein / Kuli? | 그거 볼펜이에요?
+ord: das / ist / kein / Heft. | 그건 공책이 아니에요.
+ord: wie / heißt / das / auf Deutsch? | 이건 독일어로 뭐라고 해요?
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Yuna: Was ist das? | 이게 뭐야?
+dik: Emma: Das ist eine Schere. | 그건 가위야.
+dik: Schneider: Noch einmal, bitte. | 한 번 더 부탁해요.
+
+== sprechen
+-- redemittel
+물건 이름 묻기: Was ist das? | 이게 뭐예요? ; Wie heißt das auf Deutsch? | 이건 독일어로 뭐라고 해요?
+대답하기: Das ist ein … / Das ist eine … | 그건 …예요. ; Das ist kein … / Das ist keine … | 그건 …이 아니에요.
+수업 시간에: Ich verstehe das nicht. | 이해하지 못했어요. ; Noch einmal, bitte. | 한 번 더 부탁해요. ; Wie schreibt man das? | 그거 어떻게 써요?
+
+-- rolle A | Yuna, Emma
+
+-- ich 내 가방을 소개해요 | 내 가방이나 필통에 있는 물건 세 가지를 ein이나 eine와 함께 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 첫째 물건 | ein Heft
+feld: b | 둘째 물건 | eine Schere
+feld: c | 셋째 물건 | ein Kuli
+satz: Das ist meine Tasche.
+satz: Hier ist {a}.
+satz: Hier ist {b}.
+satz: Und das ist {c}.
+
+-- schreiben In meiner Tasche | 내 가방이나 필통에 있는 물건을 네 가지쯤 써 보세요. 없는 물건도 kein이나 keine로 하나 써요.
+punkt: 가방이나 필통 소개 ; 물건 네 가지 ; 없는 물건 한 가지
+start: Das ist meine Tasche. …
+muster: Das ist meine Tasche. Hier ist ein Heft. Hier ist ein Buch. Und das ist ein Mäppchen. Hier ist eine Schere. Das ist kein Kuli, das ist ein Bleistift.
+check: 명사의 첫 글자를 모두 대문자로 썼나요? ; der, das 명사에는 ein, die 명사에는 eine를 썼나요? ; kein이나 keine를 한 번 썼나요?
+
+-- kann
+Ich kann nach Dingen fragen. | 물건의 이름을 묻고 답할 수 있어요.
+Ich kann ein, eine und kein, keine benutzen. | ein, eine와 kein, keine를 알맞게 쓸 수 있어요.
+Ich kann sagen: Ich verstehe das nicht. | 수업 시간에 모르는 것을 독일어로 말할 수 있어요.
+
+-- tipp 명사는 관사와 색으로 외워요
+p: 명사를 관사 없이 외우면 나중에 다시 외워야 해요. Stift가 아니라 der Stift로 외우세요.
+p: 이 책처럼 der는 파란색, die는 빨간색, das는 초록색으로 표시해 보세요. 단어장에 색 펜으로 쓰거나, 집 안 물건에 색 붙임쪽지를 붙이는 방법도 좋아요.

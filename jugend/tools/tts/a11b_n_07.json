@@ -1,0 +1,83 @@
+{
+ "job": "a11b_n_07",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Noch einmal, bitte.",
+    "Wie bitte? Noch einmal, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "hier.",
+    "Hier ist ein Stift."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Entschuldigung!",
+    "Entschuldigung, Frau Schneider!"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Schere, Tasche, Tisch"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Stift, Stuhl, Bleistift"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Wo ist der Stift? Hier ist der Stift."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Montag"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Mathe"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "die Pause"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Um acht Uhr."
+   ]
+  }
+ ],
+ "script": "Noch einmal, bitte. Wie bitte? Noch einmal, bitte. [pause] hier. Hier ist ein Stift. [pause] Entschuldigung! Entschuldigung, Frau Schneider! [pause] Schere, Tasche, Tisch [pause] Stift, Stuhl, Bleistift [pause] Wo ist der Stift? Hier ist der Stift. [pause] Montag [pause] Mathe [pause] die Pause [pause] Um acht Uhr. [pause] Gut.",
+ "tail": "Gut."
+}

@@ -1,0 +1,222 @@
+@id a1-1/4
+
+== einstieg
+bild: Two students stand in a school corridor in front of a large blank timetable grid with colored cells that hangs on the wall. LUKAS points at the grid with one hand. YUNA stands next to him, holds a notebook and looks at the grid.
+alt: 학교 복도에 붙은 시간표 앞에서 Lukas가 시간표를 가리키고, Yuna가 공책을 들고 보고 있어요.
+lead: 월요일 아침이에요. Yuna와 Lukas가 복도에 붙은 시간표에서 이번 주 수업을 확인해요.
+mission: 이 과를 마치면 내 시간표와 좋아하는 과목을 독일어로 말할 수 있어요.
+wort: Montag | 월요일
+wort: Mathe | 수학
+wort: die Pause | 쉬는 시간
+wort: Um acht Uhr. | 여덟 시에.
+mc: 독일 학교는 보통 몇 시쯤 첫 수업을 시작할까요? | 8시쯤* | 9시 반쯤 | 10시쯤 => 독일 학교는 대개 8시쯤 시작해요. 그 대신 오후 1시나 2시쯤 끝나는 날이 많아요.
+
+== hoeren
+-- dialog A | Am Montagmorgen | 월요일 아침, 복도의 시간표 앞이에요.
+vor: 들으면서 찾아보세요. 체육 수업은 몇 시에 있나요?
+Lukas: Guten Morgen, Yuna! Hier ist der Stundenplan. | 좋은 아침, Yuna! 여기 시간표가 있어.
+Yuna: Was haben wir heute? | 오늘은 무슨 수업이 있어?
+Lukas: Heute ist Montag. Am Montag haben wir Mathe, Deutsch und Sport. | 오늘은 월요일이야. 월요일에는 수학, 독일어, 체육이 있어.
+Yuna: Sport? Super! Wann haben wir Sport? | 체육? 좋다! 체육은 언제야?
+Lukas: Um elf Uhr. Aber um acht Uhr haben wir Mathe. | 열한 시에. 그런데 여덟 시에는 수학이 있어.
+Yuna: Mathe ist okay. Und wann ist Pause? | 수학은 괜찮아. 쉬는 시간은 언제야?
+Lukas: Um zehn Uhr. | 열 시에.
+Yuna: Haben wir auch Kunst? | 미술도 있어?
+Lukas: Ja, am Mittwoch. Kunst ist mein Lieblingsfach. | 응, 수요일에. 미술은 내가 가장 좋아하는 과목이야.
+
+-- dialog B | In der Pause | 쉬는 시간이에요. 친구들이 과목 이야기를 해요.
+vor: 들으면서 찾아보세요. Yuna가 가장 좋아하는 과목은 무엇인가요?
+Elif: Yuna, wie findest du Mathe? | Yuna, 수학은 어때?
+Yuna: Mathe finde ich gut. Aber Deutsch ist schwer. | 수학은 좋아. 그런데 독일어는 어려워.
+Elif: Stimmt. Was ist dein Lieblingsfach? | 맞아. 네가 가장 좋아하는 과목은 뭐야?
+Yuna: Mein Lieblingsfach ist Musik. | 내가 가장 좋아하는 과목은 음악이야.
+Elif: Musik finde ich auch toll! Wir haben am Donnerstag Musik. | 나도 음악이 정말 좋아! 음악은 목요일에 있어.
+Emma: Ich finde Physik interessant. | 나는 물리가 재미있어.
+Lukas: Physik? Physik finde ich langweilig! | 물리? 물리는 지루해!
+Emma: Wie spät ist es? | 지금 몇 시야?
+Elif: Es ist zehn Uhr zwanzig. Schnell, wir haben jetzt Englisch! | 열 시 이십 분이야. 서둘러, 지금 영어 수업이야!
+
+-- fragen 두 대화를 듣고 답하세요.
+rf: Heute ist Montag. | r
+rf: Die Klasse 8b hat am Montag Kunst. | f => 미술(Kunst)은 수요일에 있어요.
+rf: Lukas findet Physik interessant. | f => Physik이 재미있다고 한 사람은 Emma예요. Lukas는 지루하다고 했어요.
+mc: 체육 수업은 언제 있나요? | um elf Uhr* | um acht Uhr | um zehn Uhr
+mc: Yuna가 가장 좋아하는 과목은 무엇인가요? | Musik* | Mathe | Sport
+mc: 쉬는 시간이 끝나면 무슨 수업이 있나요? | Englisch* | Musik | Physik
+
+-- kultur 독일 학교의 하루
+p: 독일 학교는 아침 8시쯤 첫 수업을 시작해요. 수업 한 시간(eine Stunde)은 보통 45분이에요.
+p: 두 시간 수업을 하고 나면 20분쯤 되는 긴 쉬는 시간(die große Pause)이 있어요. 이때 학생들은 운동장(der Schulhof)에 나가서 집에서 싸 온 빵을 먹어요.
+p: 오후 1시나 2시쯤 수업이 끝나는 학교가 많아요. 요즘은 오후까지 수업하고 학교에서 점심을 먹는 종일 학교(die Ganztagsschule)도 늘었어요.
+mc: 독일 학교의 수업 한 시간은 보통 몇 분일까요? | 45분* | 50분 | 60분
+
+== wortschatz
+-- gruppe Fächer | 과목
+Mathe | 수학 | Am Montag haben wir Mathe. | 월요일에는 수학이 있어요.
+Deutsch | 독일어 | Deutsch ist schwer. | 독일어는 어려워요.
+Englisch | 영어 | Wir haben jetzt Englisch. | 우리는 지금 영어 수업이에요.
+Biologie | 생물 | Biologie finde ich interessant. | 생물은 재미있어요.
+Physik | 물리 | Emma findet Physik interessant. | Emma는 물리가 재미있다고 생각해요.
+Geschichte | 역사 | Am Freitag haben wir Geschichte. | 금요일에는 역사가 있어요.
+Kunst | 미술 | Kunst ist mein Lieblingsfach. | 미술은 내가 가장 좋아하는 과목이에요.
+Musik | 음악 | Wir haben am Donnerstag Musik. | 음악은 목요일에 있어요.
+Sport | 체육, 운동 | Wann haben wir Sport? | 체육은 언제 있어요?
+Informatik | 정보 | Informatik ist leicht. | 정보는 쉬워요.
+
+-- gruppe In der Schule | 학교생활
+der Stundenplan, die Stundenpläne | 시간표 | Hier ist der Stundenplan. | 여기 시간표가 있어요.
+die Stunde, die Stunden | 수업 시간, 시간 | Wir haben heute sechs Stunden. | 오늘은 수업이 여섯 시간 있어요.
+die Pause, die Pausen | 쉬는 시간 | Wann ist Pause? | 쉬는 시간은 언제예요?
+das Lieblingsfach, die Lieblingsfächer | 가장 좋아하는 과목 | Mein Lieblingsfach ist Musik. | 내가 가장 좋아하는 과목은 음악이에요.
+haben | 가지고 있다, (수업이) 있다 | Ich habe heute Sport. | 나는 오늘 체육이 있어요.
+finden | ~라고 생각하다, 찾다 | Wie findest du Mathe? | 수학은 어때?
+heute | 오늘 | Heute ist Montag. | 오늘은 월요일이에요.
+wann | 언제 | Wann haben wir Kunst? | 미술은 언제 있어요?
+die Uhr, die Uhren | 시계, ~시 | Es ist acht Uhr. | 여덟 시예요.
+
+-- gruppe Wie ist das Fach? | 과목이 어떤지 말할 때
+schwer | 어려운, 무거운 | Ist Physik schwer? | 물리는 어려워요?
+leicht | 쉬운, 가벼운 | Englisch ist leicht. | 영어는 쉬워요.
+interessant | 흥미로운, 재미있는 | Ich finde Geschichte interessant. | 나는 역사가 재미있어요.
+langweilig | 지루한 | Lukas findet Physik langweilig. | Lukas는 물리가 지루하다고 생각해요.
+toll | 아주 좋은, 멋진 | Musik finde ich toll. | 음악은 정말 좋아요.
+
+-- bilder
+Mathe: a pocket calculator next to a set square and a compass
+Musik: an acoustic guitar with two small music notes next to it
+Kunst: a painter's palette with a brush
+Sport: a ball next to a pair of sneakers
+Biologie: a microscope next to a single green leaf
+die Uhr, die Uhren: a round wall clock with simple hands and no numbers
+
+-- tafel Die Wochentage | 요일
+p: 월요일부터 일요일까지예요. 요일은 모두 der 명사이고, 첫 글자를 대문자로 써요. 독일 달력은 월요일에서 시작해요.
+r: Mo Montag ; Di Dienstag ; Mi Mittwoch ; Do Donnerstag | say=Montag, Dienstag, Mittwoch, Donnerstag.
+r: Fr Freitag ; Sa Samstag ; So Sonntag | say=Freitag, Samstag, Sonntag.
+
+-- aussprache z와 s | z는 [츠], 모음 앞의 s는 울리는 소리
+p: 독일어 z는 영어 z와 달라요. 혀끝을 윗니 뒤에 붙였다 떼면서 [츠] 하고 짧고 세게 내요. zehn은 [첸]에 가까워요.
+p: 모음 앞에 오는 s는 영어 z처럼 목이 울리는 소리예요. Samstag, Sonntag, Musik, Pause의 s가 그래요. 목에 손을 대고 떨림이 느껴지는지 확인해 보세요.
+hör: zehn, zwei, zwölf, zwanzig | z [츠]
+hör: Samstag, Sonntag, Musik, Pause | 모음 앞의 s
+hör: Am Samstag um zehn haben wir Musik. | 두 소리가 모두 들어 있는 문장
+
+== grammatik
+-- punkt haben | 가지고 있다, 수업이 있다
+bsp: Was *haben* wir heute? | 오늘은 무슨 수업이 있어?
+bsp: Am Montag *haben* wir Mathe. | 월요일에는 수학이 있어.
+bsp: Die Klasse *hat* am Mittwoch Kunst. | 그 반은 수요일에 미술이 있어.
+finde: er, sie와 함께 쓰는 haben의 모양은 무엇인가요? | hat* | habt | haben
+regel: haben은 du와 er, sie에서 b가 빠져요. 수업이 있다고 말할 때도 haben을 써요.
+| | haben
+| ich | hab*e*
+| du | ha*st*
+| er, sie | ha*t*
+| wir | hab*en*
+merke: wir는 '우리'라는 뜻이에요. wir 다음의 동사는 haben, kommen, spielen처럼 사전에 나오는 모양 그대로예요. 5과에서 더 배워요.
+
+-- punkt Verb auf Position 2 | 동사는 언제나 둘째 자리
+bsp: Wir *haben* am Donnerstag Musik. | 우리는 목요일에 음악이 있어.
+bsp: Am Montag *haben* wir Mathe. | 월요일에는 수학이 있어.
+bsp: Mathe *finde* ich gut. | 수학은 좋아.
+finde: 문장이 Am Montag으로 시작할 때 동사는 몇째 자리에 있나요? | 둘째 자리* | 첫째 자리 | 문장 끝
+regel: 독일어 평서문에서 동사는 언제나 둘째 자리에 와요. 요일이나 다른 말이 맨 앞에 오면 주어는 동사 뒤로 가요.
+| 1 | 2 동사 | 나머지
+| Wir | haben | am Montag Mathe.
+| Am Montag | haben | wir Mathe.
+| Mathe | finde | ich gut.
+merke: 한국어는 순서를 바꿔도 동사가 문장 끝에 있지만, 독일어는 무엇이 앞에 오든 동사가 둘째 자리를 지켜요. Am Montag wir haben Mathe는 틀린 문장이에요.
+
+-- punkt am und um | 요일과 시각 앞에 쓰는 말
+bsp: *Am* Mittwoch haben wir Kunst. | 수요일에는 미술이 있어.
+bsp: *Um* elf Uhr haben wir Sport. | 열한 시에는 체육이 있어.
+bsp: Es ist zehn Uhr zwanzig. | 열 시 이십 분이야.
+finde: 시각 앞에는 무엇을 쓰나요? | um* | am | aus
+regel: 요일 앞에는 am, 시각 앞에는 um을 써요. 지금 몇 시인지 말할 때는 Es ist … Uhr라고 해요.
+| 묻는 말 | 대답
+| Wann haben wir Kunst? | Am Mittwoch.
+| Wann haben wir Sport? | Um elf Uhr.
+| Wie spät ist es? | Es ist zehn Uhr.
+merke: 한 시는 Es ist ein Uhr예요. eins Uhr라고 하지 않아요.
+
+== training
+-- ex Hören | 듣고 알맞은 답을 고르세요.
+hör: Lukas: Um elf Uhr haben wir Sport.
+mc: 체육 수업은 몇 시에 있나요? | 11시* | 1시 | 10시
+hör: Elif: Es ist neun Uhr fünfzehn.
+mc: 지금은 몇 시인가요? | 9시 15분* | 9시 5분 | 5시 9분
+hör: Schneider: Am Freitag haben wir Geschichte.
+mc: 역사 수업은 무슨 요일에 있나요? | 금요일* | 목요일 | 화요일
+hör: Emma: Mein Lieblingsfach ist Biologie.
+mc: Emma가 가장 좋아하는 과목은 무엇인가요? | 생물* | 물리 | 역사
+
+-- ex Lesen | 8b의 시간표를 보고 답하세요.
+text plan | Stundenplan 8b
+> | | Montag | Dienstag | Mittwoch
+> | 8 Uhr | Mathe | Englisch | Deutsch
+> | 9 Uhr | Deutsch | Biologie | Kunst
+> | 10 Uhr | Pause | Pause | Pause
+> | 11 Uhr | Sport | Geschichte | Musik
+rf: Am Montag um acht Uhr hat die Klasse Mathe. | r
+rf: Am Dienstag hat die Klasse Sport. | f => 체육(Sport)은 월요일 11시에 있어요.
+mc: Wann hat die Klasse Musik? | Am Mittwoch um elf Uhr.* | Am Montag um neun Uhr. | Am Dienstag um elf Uhr.
+mc: Was hat die Klasse am Dienstag um neun Uhr? | Biologie* | Englisch | Kunst
+
+-- ex Grammatik | haben의 알맞은 형태를 고르세요.
+gap: Ich [habe|hast|hat] heute Mathe.
+gap: [Hast|Habe|Hat] du auch Musik?
+gap: Lukas [hat|hast|habe] am Mittwoch Kunst.
+gap: Wir [haben|habe|hat] jetzt Englisch.
+gap: Yuna [hat|hast|haben] heute Sport.
+
+-- ex Grammatik | am과 um 가운데 알맞은 말을 고르세요.
+gap: Wir haben [am|um] Montag Mathe.
+gap: Die Pause ist [um|am] zehn Uhr.
+gap: [Am|Um] Freitag haben wir Geschichte.
+gap: Sport haben wir [um|am] elf Uhr.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요. 동사를 둘째 자리에 놓아요.
+ord: am Montag / haben / wir / Mathe. ~ wir / haben / am Montag / Mathe. | 월요일에 우리는 수학이 있어.
+ord: heute / habe / ich / Sport. ~ ich / habe / heute / Sport. | 오늘 나는 체육이 있어.
+ord: um elf Uhr / haben / wir / Musik. ~ wir / haben / um elf Uhr / Musik. | 열한 시에 우리는 음악이 있어.
+ord: Mathe / finde / ich / gut. ~ ich / finde / Mathe / gut. | 수학은 좋아.
+
+-- ex Wortschatz | 요일을 짝지으세요.
+paar: Montag = 월요일 ; Mittwoch = 수요일 ; Donnerstag = 목요일 ; Freitag = 금요일 ; Samstag = 토요일 ; Sonntag = 일요일
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Lukas: Am Montag haben wir Mathe. | 월요일에는 수학이 있어.
+dik: Yuna: Wann haben wir Sport? | 체육은 언제 있어?
+dik: Elif: Es ist zehn Uhr. | 열 시야.
+
+== sprechen
+-- redemittel
+시간표 말하기: Was haben wir heute? | 오늘은 무슨 수업이 있어? ; Am Montag haben wir … | 월요일에는 … 수업이 있어. ; Wann haben wir …? | … 수업은 언제 있어?
+과목에 대해 말하기: Wie findest du …? | …은 어때? ; … finde ich gut. / … finde ich langweilig. | …은 좋아. / …은 지루해. ; Mein Lieblingsfach ist … | 내가 가장 좋아하는 과목은 …야.
+시각 묻고 말하기: Wie spät ist es? | 지금 몇 시야? ; Es ist … Uhr. | …시야. ; Um … Uhr. | …시에.
+
+-- rolle B | Yuna, Elif
+
+-- ich 내 시간표를 말해요 | 요일 하나를 고르고, 그날 있는 과목 두 개와 가장 좋아하는 과목을 독일어로 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: tag | 요일 | Montag
+feld: a | 과목 하나 | Mathe
+feld: b | 과목 또 하나 | Englisch
+feld: lf | 가장 좋아하는 과목 | Musik
+satz: Am {tag} habe ich {a} und {b}.
+satz: Mein Lieblingsfach ist {lf}.
+satz: {lf} finde ich toll.
+
+-- schreiben Mein Stundenplan | 독일 친구에게 내 시간표를 알려 주는 글을 써 보세요. 네다섯 문장이면 충분해요.
+punkt: 요일과 그날의 과목 ; 수업 시각 하나 ; 가장 좋아하는 과목 ; 어렵거나 지루한 과목
+start: Am Montag habe ich …
+muster: Am Montag habe ich Mathe, Englisch und Sport. Um neun Uhr habe ich Mathe. Mein Lieblingsfach ist Sport. Mathe finde ich schwer. Am Dienstag habe ich Musik.
+check: 요일 앞에는 am, 시각 앞에는 um을 썼나요? ; 요일이나 시각으로 시작한 문장에서 동사가 둘째 자리에 있나요? ; 요일과 과목 이름의 첫 글자를 대문자로 썼나요?
+
+-- kann
+Ich kann meinen Stundenplan beschreiben. | 내 시간표를 말할 수 있어요.
+Ich kann sagen, wie ich ein Fach finde. | 과목이 어떤지 말할 수 있어요.
+Ich kann nach der Uhrzeit fragen. | 시각을 묻고 말할 수 있어요.
+
+-- tipp 한 문장으로 열 문장을 만들어요
+p: 문장 하나를 외웠다면 낱말만 바꿔서 새 문장을 만들어 보세요. Am Montag haben wir Mathe.에서 요일과 과목만 바꾸면 돼요.
+p: Am Dienstag haben wir Kunst. Am Freitag haben wir Sport. 이렇게 소리 내어 열 문장을 말하면 동사가 둘째 자리에 오는 순서가 입에 붙어요.

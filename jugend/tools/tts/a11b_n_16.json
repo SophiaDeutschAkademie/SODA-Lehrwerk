@@ -1,0 +1,82 @@
+{
+ "job": "a11b_n_16",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Ärztin, die Ärztinnen.",
+    "Sabine ist Ärztin."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "der Koch, die Köche.",
+    "Thomas ist Koch."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "einundzwanzig, zweiundzwanzig, dreiundzwanzig."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "dreißig, vierzig, fünfzig, sechzig."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "siebzig, achtzig, neunzig, hundert."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "fünfundvierzig, zweiundsiebzig, neunundneunzig."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Vater, Mutter, Bruder, Schwester"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Lehrer, Schüler, Kinder, Fenster"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Mein Bruder und meine Schwester sind Schüler."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "dreiundvierzig"
+   ]
+  }
+ ],
+ "script": "die Ärztin, die Ärztinnen. Sabine ist Ärztin. [pause] der Koch, die Köche. Thomas ist Koch. [pause] einundzwanzig, zweiundzwanzig, dreiundzwanzig. [pause] dreißig, vierzig, fünfzig, sechzig. [pause] siebzig, achtzig, neunzig, hundert. [pause] fünfundvierzig, zweiundsiebzig, neunundneunzig. [pause] Vater, Mutter, Bruder, Schwester [pause] Lehrer, Schüler, Kinder, Fenster [pause] Mein Bruder und meine Schwester sind Schüler. [pause] dreiundvierzig [pause] Gut.",
+ "tail": "Gut."
+}

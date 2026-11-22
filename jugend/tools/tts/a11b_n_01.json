@@ -1,0 +1,82 @@
+{
+ "job": "a11b_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Hallo, Lukas! Wie geht's?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "heißen, nein, Schweiz, Österreich"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Ell, Uh, Kah, Ah, Ess."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Ess, Eh, Oh, Uh, Ell."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Das ist Lukas."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Er ist dreizehn."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Das ist Elif."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Sie wohnt in Köln."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "der Schüler, die Schüler.",
+    "Lukas ist Schüler."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Schülerin, die Schülerinnen.",
+    "Yuna ist Schülerin."
+   ]
+  }
+ ],
+ "script": "Hallo, Lukas! Wie geht's? [pause] heißen, nein, Schweiz, Österreich [pause] Ell, Uh, Kah, Ah, Ess. [pause] Ess, Eh, Oh, Uh, Ell. [pause] Das ist Lukas. [pause] Er ist dreizehn. [pause] Das ist Elif. [pause] Sie wohnt in Köln. [pause] der Schüler, die Schüler. Lukas ist Schüler. [pause] die Schülerin, die Schülerinnen. Yuna ist Schülerin. [pause] Gut.",
+ "tail": "Gut."
+}

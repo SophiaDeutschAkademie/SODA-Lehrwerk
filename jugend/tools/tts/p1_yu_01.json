@@ -1,0 +1,72 @@
+{
+ "job": "p1_yu_01",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "Ja, ich bin Yuna. Hallo!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "Danke, Emma!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "Gut, danke. Und dir?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "Guten Tag, Frau Wagner!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "Ich heiße Yuna."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "Ypsilon, Uh, Enn, Ah."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "Ich komme aus Korea, aus Seoul. Und du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "Guten Morgen, Frau Schneider! Ich bin Yuna Kim."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "Ich komme aus Korea."
+   ]
+  }
+ ],
+ "script": "Ja, ich bin Yuna. Hallo! [pause] Danke, Emma! [pause] Gut, danke. Und dir? [pause] Guten Tag, Frau Wagner! [pause] Ich heiße Yuna. [pause] Ypsilon, Uh, Enn, Ah. [pause] Ich komme aus Korea, aus Seoul. Und du? [pause] Guten Morgen, Frau Schneider! Ich bin Yuna Kim. [pause] Ich komme aus Korea."
+}

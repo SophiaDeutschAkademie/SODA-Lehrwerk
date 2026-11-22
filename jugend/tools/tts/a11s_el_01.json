@@ -1,0 +1,81 @@
+{
+ "job": "a11s_el_01",
+ "who": "Elif",
+ "voice": "Emily",
+ "voice_id": "OO0WT3lY2gVNwzZMAjAI",
+ "items": [
+  {
+   "pid": "a1-1/station-2",
+   "who": "Elif",
+   "parts": [
+    "Am Samstag stehe ich um halb zehn auf. Dann frühstücke ich mit Can und Emre."
+   ]
+  },
+  {
+   "pid": "a1-1/station-2",
+   "who": "Elif",
+   "parts": [
+    "Ich esse ein Brötchen mit Käse und ich trinke Kakao."
+   ]
+  },
+  {
+   "pid": "a1-1/station-2",
+   "who": "Elif",
+   "parts": [
+    "Am Nachmittag treffe ich Yuna und Emma. Wir fahren Rad im Park."
+   ]
+  },
+  {
+   "pid": "a1-1/station-2",
+   "who": "Elif",
+   "parts": [
+    "Am Abend kocht mein Vater. Danach sehen wir zusammen fern."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Ich habe zwei Brüder, aber ich habe keine Schwester."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Am Samstag spiele ich Gitarre. Und du?"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Nein, danke. Ich spiele nicht gern Fußball. Ich fahre lieber Rad."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Super! Tschüss, Lukas!"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Wie alt bist du?"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Was ist dein Lieblingsfach?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Am Samstag stehe ich um halb zehn auf. Dann frühstücke ich mit Can und Emre. [pause] Ich esse ein Brötchen mit Käse und ich trinke Kakao. [pause] Am Nachmittag treffe ich Yuna und Emma. Wir fahren Rad im Park. [pause] Am Abend kocht mein Vater. Danach sehen wir zusammen fern. [pause] Ich habe zwei Brüder, aber ich habe keine Schwester. [pause] Am Samstag spiele ich Gitarre. Und du? [pause] Nein, danke. Ich spiele nicht gern Fußball. Ich fahre lieber Rad. [pause] Super! Tschüss, Lukas! [pause] Wie alt bist du? [pause] Was ist dein Lieblingsfach? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

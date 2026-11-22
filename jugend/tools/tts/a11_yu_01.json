@@ -1,0 +1,79 @@
+{
+ "job": "a11_yu_01",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "Hallo, Elif! Ich bin vierzehn. Und du?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "Ja, ich wohne bei Emma."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "Nein, aber ich tanze."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "Sehr nett! Lukas ist lustig. Er spielt Fußball."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "Ja, sie kommt aus Köln. Sie spielt Gitarre."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "Ja, sie ist sehr nett."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "Null, eins, sieben, sechs, null, vier, null, sechs, neun, null, eins, zwei."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "Sie kommt aus Köln."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Yuna",
+   "parts": [
+    "Emma, was ist das?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Yuna",
+   "parts": [
+    "Ein Radiergummi. Okay! Und das? Ist das ein Kuli?"
+   ]
+  }
+ ],
+ "script": "Hallo, Elif! Ich bin vierzehn. Und du? [pause] Ja, ich wohne bei Emma. [pause] Nein, aber ich tanze. [pause] Sehr nett! Lukas ist lustig. Er spielt Fußball. [pause] Ja, sie kommt aus Köln. Sie spielt Gitarre. [pause] Ja, sie ist sehr nett. [pause] Null, eins, sieben, sechs, null, vier, null, sechs, neun, null, eins, zwei. [pause] Sie kommt aus Köln. [pause] Emma, was ist das? [pause] Ein Radiergummi. Okay! Und das? Ist das ein Kuli? [pause]"
+}

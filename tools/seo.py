@@ -15,6 +15,7 @@ lernmethoden/build.py 는 끝날 때 이 스크립트를 자동으로 부릅니�
 """
 import datetime
 import html
+import json
 import os
 import re
 import subprocess
@@ -95,8 +96,9 @@ PAGES = [
      '부엉이 Sofi와 함께 듣고, 따라 말하고, 놀면서 배우는 어린이·초등 저학년 독일어 교재. 32단원과 명절 4단원마다 이야기, 그림 카드, 말하기, 놀이, 손뼉 리듬이 있고 모든 문장에 독일어 음성이 있습니다. 소피아 독일어학원.',
      'kinder/icons/icon-512.png'),
     ('jugend/index.html',
-     '청소년 독일어 발돋움 · A1–B1 청소년 독일어 교재 목차 | SODA Jugendliche',
-     '초등 고학년부터 고등학생까지 독일어를 처음부터 B1까지 배우는 청소년 교재의 목차. A1.1부터 B1.2까지 여섯 단계 48과의 주제, 말하기 목표, 문법을 볼 수 있습니다. 소피아 독일어학원.',
+     '청소년 독일어 발돋움 · A1–B1 청소년 독일어 교재 | SODA Jugendliche',
+     '초등 고학년부터 고등학생까지 독일어를 처음부터 B1까지 배우는 청소년 교재. 서울에서 온 Yuna의 쾰른 학교생활을 따라 대화, 단어, 문법, 연습 문제, 말하기와 쓰기를 독일어 음성과 함께 배웁니다. '
+     'A1.1부터 B1.2까지 여섯 단계 48과의 목차와 A1.1 본문을 볼 수 있습니다. 소피아 독일어학원.',
      'jugend/icons/icon-512.png'),
     ('lernmethoden/index.html',
      '독일어 공부법 · SODA Lernmethoden | 소피아 독일어학원',
@@ -213,6 +215,13 @@ def main():
         for fn in sorted(os.listdir(adir)):
             if fn.endswith('.html'):
                 p = 'lernmethoden/a/' + fn
+                urls.append((url_of(p), lastmod(p), '0.6'))
+    # 청소년 교재에서 본문이 올라온 화면 (jugend/tools/lektion.py site 가 적어 둔 목록)
+    opn = os.path.join(ROOT, 'jugend', 'tools', 'open.json')
+    if os.path.exists(opn):
+        for pid in json.load(open(opn))['open']:
+            p = 'jugend/%s/index.html' % pid
+            if os.path.exists(os.path.join(ROOT, p)):
                 urls.append((url_of(p), lastmod(p), '0.6'))
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

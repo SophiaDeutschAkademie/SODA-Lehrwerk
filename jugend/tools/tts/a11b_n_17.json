@@ -1,0 +1,83 @@
+{
+ "job": "a11b_n_17",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "siebenundsechzig"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "neunundachtzig"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "einundzwanzig"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "Ich habe Hunger."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "Ich möchte eine Brezel."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "Was kostet das?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "Zwei Euro, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "das Brötchen, die Brötchen.",
+    "Ich möchte ein Brötchen."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "die Brezel, die Brezeln.",
+    "Was kostet die Brezel?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "N",
+   "parts": [
+    "das Brot, die Brote.",
+    "Ich esse gern Brot mit Käse."
+   ]
+  }
+ ],
+ "script": "siebenundsechzig [pause] neunundachtzig [pause] einundzwanzig [pause] Ich habe Hunger. [pause] Ich möchte eine Brezel. [pause] Was kostet das? [pause] Zwei Euro, bitte. [pause] das Brötchen, die Brötchen. Ich möchte ein Brötchen. [pause] die Brezel, die Brezeln. Was kostet die Brezel? [pause] das Brot, die Brote. Ich esse gern Brot mit Käse. [pause] Gut.",
+ "tail": "Gut."
+}

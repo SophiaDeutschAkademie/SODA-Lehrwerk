@@ -1,0 +1,234 @@
+@id a1-1/8
+
+== einstieg
+bild: A bedroom in the early morning. A 14-year-old Korean girl with straight black chin-length bob hair and light skin wears navy and ivory striped pajamas, sits on the edge of her bed, yawns and stretches both arms up. On a small nightstand next to the bed stands a round alarm clock. Behind her a window shows the rising sun.
+alt: 이른 아침, 잠옷을 입은 Yuna가 침대에 걸터앉아 하품을 하며 기지개를 켜요. 침대 옆 탁자에는 자명종이 있고 창밖으로 해가 떠요.
+lead: 아침 여섯 시 반, 알람이 울려요. 쾰른에서 보내는 Yuna의 하루가 시작돼요.
+mission: 이 과를 마치면 나의 하루를 시간 순서대로 독일어로 말할 수 있어요.
+wort: Ich stehe auf. | 나는 일어나요.
+wort: Um halb sieben. | 여섯 시 반에.
+wort: Zuerst dusche ich. | 먼저 샤워를 해요.
+wort: Dann frühstücke ich. | 그다음에 아침을 먹어요.
+mc: halb sieben은 몇 시일까요? | 6시 30분* | 7시 30분 | 7시 => 독일어의 halb는 '그 시각이 되기 30분 전'이라는 뜻이에요. halb sieben은 7시가 되기 30분 전이에요.
+
+== hoeren
+-- dialog A | Ein Tag in Korea | 쉬는 시간이에요. Elif는 한국 학생의 하루가 궁금해요.
+vor: 들으면서 찾아보세요. 한국에서 Yuna의 학교는 몇 시에 끝나나요?
+Elif: Yuna, wie ist dein Tag in Korea? Wann stehst du auf? | Yuna, 한국에서는 하루가 어때? 몇 시에 일어나?
+Yuna: Ich stehe um sieben Uhr auf. Die Schule fängt um halb neun an. | 일곱 시에 일어나. 학교는 여덟 시 반에 시작해.
+Elif: Und wann ist die Schule aus? | 그럼 학교는 언제 끝나?
+Yuna: Um Viertel nach vier. | 네 시 십오 분에.
+Elif: Was? So spät! Und danach? | 뭐? 그렇게 늦게! 그 뒤에는?
+Yuna: Danach mache ich Hausaufgaben. Am Abend sehe ich fern oder ich rufe Freunde an. | 그 뒤에는 숙제를 해. 저녁에는 텔레비전을 보거나 친구들에게 전화해.
+Elif: Und wann gehst du ins Bett? | 그리고 몇 시에 자?
+Yuna: Um elf. Aber hier in Köln stehe ich um halb sieben auf! | 열한 시에. 그런데 여기 쾰른에서는 여섯 시 반에 일어나!
+Elif: Ja, hier fängt die Schule um acht an. | 맞아, 여기는 학교가 여덟 시에 시작하니까.
+
+-- dialog B | Am Samstagmorgen | 토요일 아침 식탁이에요. Sabine가 오늘 계획을 물어요.
+vor: 들으면서 찾아보세요. Emma가 오늘 가장 먼저 하는 일은 무엇인가요?
+Sabine: Guten Morgen! Was macht ihr heute? | 좋은 아침! 너희 오늘 뭐 하니?
+Emma: Zuerst räume ich mein Zimmer auf. | 먼저 제 방을 치워요.
+Sabine: Sehr gut! Und dann? | 아주 좋아! 그다음에는?
+Emma: Dann kaufen wir in der Stadt ein. Yuna kommt mit. | 그다음에 시내에서 장을 봐요. Yuna도 같이 가요.
+Yuna: Ja! Und danach treffen wir Elif. | 네! 그 뒤에는 Elif를 만나요.
+Sabine: Wann kommt ihr zurück? | 언제 돌아오니?
+Emma: Um Viertel vor sechs. | 여섯 시 십오 분 전에요.
+Sabine: Gut. Um halb sieben essen wir. Papa kocht heute. | 그래. 여섯 시 반에 저녁을 먹자. 오늘은 아빠가 요리하신단다.
+Yuna: Super! Und am Abend sehen wir zusammen fern? | 좋아요! 저녁에는 같이 텔레비전 봐요?
+Sabine: Ja, gern. | 그래, 좋지.
+
+-- fragen 두 대화를 듣고 답하세요.
+rf: In Korea steht Yuna um sieben Uhr auf. | r
+rf: In Köln fängt die Schule um halb neun an. | f => 쾰른에서는 학교가 8시에 시작해요. 8시 반은 한국 학교예요.
+rf: Yuna kommt in die Stadt mit. | r
+mc: 한국에서 Yuna의 학교는 몇 시에 끝나나요? | 4시 15분* | 4시 45분 | 3시 45분
+mc: Emma가 토요일에 가장 먼저 하는 일은 무엇인가요? | 방 치우기* | 장 보기 | Elif 만나기
+mc: 토요일 저녁 식사는 몇 시인가요? | 6시 30분* | 7시 30분 | 5시 45분
+
+-- kultur 시각을 말하는 두 가지 방법
+p: 독일에서는 친구나 가족끼리 말할 때 halb drei, Viertel nach vier처럼 12시간으로 시각을 말해요.
+p: 기차 시간표, 영화 시간, 뉴스에서는 24시간으로 말해요. 오후 2시 30분은 vierzehn Uhr dreißig예요.
+p: halb drei는 3시 반이 아니라 2시 30분이에요. 이것을 헷갈려 약속에 한 시간 늦는 일이 많으니 조심하세요. 독일에서는 약속 시각을 지키는 것을 중요하게 생각해요.
+mc: 친구가 Wir treffen uns um halb drei.라고 했어요. 몇 시까지 가야 할까요? | 2시 30분* | 3시 30분 | 3시
+
+== wortschatz
+-- gruppe Am Morgen | 아침에
+aufstehen | 일어나다 | Ich stehe um halb sieben auf. | 나는 여섯 시 반에 일어나요.
+duschen | 샤워하다 | Zuerst dusche ich. | 먼저 샤워를 해요.
+frühstücken | 아침을 먹다 | Ich frühstücke mit Emma. | 나는 Emma와 아침을 먹어요.
+anfangen (du fängst an, er fängt an) | 시작하다 | Die Schule fängt um acht an. | 학교는 여덟 시에 시작해요.
+früh | 이른, 일찍 | Ich stehe früh auf. | 나는 일찍 일어나요.
+spät | 늦은, 늦게 | Was? So spät! | 뭐? 그렇게 늦게!
+
+-- gruppe Am Nachmittag und am Abend | 오후와 저녁에
+die Hausaufgaben (Pl.) | 숙제 | Ich mache Hausaufgaben. | 나는 숙제를 해요.
+aufräumen | 치우다, 정리하다 | Emma räumt ihr Zimmer auf. | Emma는 자기 방을 치워요.
+das Zimmer, die Zimmer | 방 | Das ist mein Zimmer. | 여기는 내 방이에요.
+einkaufen | 장을 보다, 쇼핑하다 | Wir kaufen in der Stadt ein. | 우리는 시내에서 장을 봐요.
+mitkommen | 같이 가다 | Yuna kommt mit. | Yuna도 같이 가요.
+zurückkommen | 돌아오다 | Wann kommt ihr zurück? | 너희는 언제 돌아오니?
+anrufen | 전화하다 | Ich rufe Freunde an. | 나는 친구들에게 전화해요.
+kochen | 요리하다 | Papa kocht heute. | 오늘은 아빠가 요리해요.
+fernsehen (du siehst fern, er sieht fern) | 텔레비전을 보다 | Am Abend sehe ich fern. | 저녁에 나는 텔레비전을 봐요.
+schlafen (du schläfst, er schläft) | 자다 | Milo schläft gern. | Milo는 자는 걸 좋아해요.
+ins Bett gehen | 자러 가다 | Um elf gehe ich ins Bett. | 열한 시에 나는 자러 가요.
+
+-- gruppe Zeit und Reihenfolge | 때와 순서
+am Morgen, am Nachmittag, am Abend | 아침에, 오후에, 저녁에 | Am Nachmittag mache ich Hausaufgaben. | 오후에 나는 숙제를 해요.
+zuerst, dann, danach | 먼저, 그다음에, 그 뒤에 | Zuerst dusche ich. Dann frühstücke ich. | 먼저 샤워를 해요. 그다음에 아침을 먹어요.
+Die Schule ist aus. | 학교가 끝났어요. | Um vier ist die Schule aus. | 네 시에 학교가 끝나요.
+
+-- bilder
+aufstehen: a teenager in pajamas who gets out of bed and stretches
+duschen: a shower head with falling water drops
+frühstücken: a breakfast table with a plate of bread, a boiled egg and a cup
+die Hausaufgaben (Pl.): an open notebook with a pencil under a desk lamp
+einkaufen: a shopping bag full of groceries
+fernsehen (du siehst fern, er sieht fern): a television set on a small stand
+
+-- tafel Die Uhrzeit | 시각 말하기
+p: 친구끼리는 시각을 이렇게 말해요. nach는 '지나서', vor는 '전'이라는 뜻이에요. halb는 다음 시각이 되기 30분 전이에요. 줄을 누르면 소리가 나요.
+r: 7:00 = sieben Uhr ; 7:15 = Viertel nach sieben | say=Sieben Uhr. Viertel nach sieben.
+r: 7:30 = halb acht ; 7:45 = Viertel vor acht | say=Halb acht. Viertel vor acht.
+r: 7:05 = fünf nach sieben ; 7:55 = fünf vor acht | say=Fünf nach sieben. Fünf vor acht.
+
+-- aussprache 나뉘는 동사의 강세 | 앞부분을 세게
+p: aufstehen, anfangen처럼 문장에서 둘로 나뉘는 동사는 앞부분에 힘을 줘서 말해요. AUFstehen, ANfangen, EINkaufen이에요.
+p: 문장에서 앞부분이 맨 끝으로 가도 힘은 그대로예요. Ich stehe um sieben AUF. 끝을 또렷하게 말해야 뜻이 전해져요.
+hör: aufstehen, anfangen, einkaufen, fernsehen | 앞부분에 강세
+hör: aufräumen, anrufen, mitkommen, zurückkommen | 앞부분에 강세
+hör: Ich stehe auf. Die Schule fängt an. | 문장 끝의 auf와 an
+
+== grammatik
+-- punkt Trennbare Verben | 둘로 나뉘는 동사
+bsp: Ich *stehe* um sieben Uhr *auf*. | 나는 일곱 시에 일어나.
+bsp: Die Schule *fängt* um halb neun *an*. | 학교는 여덟 시 반에 시작해.
+bsp: Dann *kaufen* wir in der Stadt *ein*. | 그다음에 우리는 시내에서 장을 봐.
+finde: aufstehen의 auf는 문장에서 어디로 갔나요? | 문장 맨 끝* | 동사 바로 앞 | 문장 맨 앞
+regel: aufstehen, anfangen, einkaufen 같은 동사는 문장에서 둘로 나뉘어요. 앞부분 auf, an, ein은 문장 맨 끝으로 가고, 나머지 부분은 주어에 맞게 변해서 둘째 자리에 와요.
+| 원형 | 문장
+| *auf*stehen | Ich stehe um sieben *auf*.
+| *an*fangen | Die Schule fängt um acht *an*.
+| *ein*kaufen | Wir kaufen in der Stadt *ein*.
+| *fern*sehen | Am Abend sehe ich *fern*.
+merke: 자주 나오는 앞부분은 auf, an, ein, mit, zurück, fern이에요. anfangen과 fernsehen은 5과에서 배운 것처럼 모음도 바뀌어요. du fängst an, er sieht fern.
+
+-- punkt Die Satzklammer | 문장을 감싸는 동사
+bsp: Am Abend sehe ich fern oder ich *rufe* Freunde *an*. | 저녁에는 텔레비전을 보거나 친구들에게 전화해.
+bsp: Wann *kommt* ihr *zurück*? | 너희는 언제 돌아오니?
+bsp: Zuerst *räume* ich mein Zimmer *auf*. | 먼저 내 방을 치워.
+finde: 질문 Wann kommt ihr zurück?에서 zurück은 어디에 있나요? | 문장 맨 끝* | 의문사 바로 뒤 | 동사 바로 앞
+regel: 나뉘는 동사는 문장의 다른 말을 괄호처럼 감싸요. 동사가 둘째 자리에 오고 앞부분이 맨 끝에 와요. 질문에서도 같아요.
+| 1 | 2 동사 | 가운데 | 끝
+| Ich | stehe | um halb sieben | auf.
+| Zuerst | räume | ich mein Zimmer | auf.
+| Wann | kommt | ihr | zurück?
+merke: 독일어 문장은 끝까지 들어야 뜻을 알 수 있어요. Ich kaufe heute mit Emma in der Stadt … ein.
+
+-- punkt zuerst, dann, danach | 순서대로 말할 때
+bsp: *Zuerst* räume ich mein Zimmer auf. | 먼저 내 방을 치워.
+bsp: *Dann* kaufen wir in der Stadt ein. | 그다음에 우리는 시내에서 장을 봐.
+bsp: *Danach* mache ich Hausaufgaben. | 그 뒤에 나는 숙제를 해.
+finde: Dann 바로 다음에는 무엇이 오나요? | 동사* | 주어 | 시각
+regel: 순서를 말할 때는 zuerst, dann, danach를 문장 맨 앞에 써요. 동사는 언제나 둘째 자리이므로, 주어는 동사 뒤로 가요.
+| 1 | 2 동사 | 나머지
+| Zuerst | dusche | ich.
+| Dann | frühstücke | ich mit Emma.
+| Danach | gehe | ich in die Schule.
+merke: Dann ich frühstücke는 틀린 문장이에요. Dann frühstücke ich가 맞아요. 4과에서 배운 Am Montag haben wir Mathe와 같은 규칙이에요.
+
+== training
+-- ex Hören | Lukas의 하루를 듣고 답하세요.
+audio | Der Tag von Lukas
+> Lukas: Ich stehe um Viertel vor sieben auf.
+> Lukas: Zuerst frühstücke ich. Dann gehe ich in die Schule.
+> Lukas: Die Schule ist um halb zwei aus.
+> Lukas: Am Nachmittag spiele ich Fußball. Danach mache ich Hausaufgaben.
+> Lukas: Um zehn gehe ich ins Bett.
+mc: Lukas는 몇 시에 일어나나요? | 6시 45분* | 7시 15분 | 7시 45분
+mc: 학교는 몇 시에 끝나나요? | 1시 30분* | 2시 30분 | 2시
+mc: Lukas가 오후에 먼저 하는 일은 무엇인가요? | 축구* | 숙제 | 텔레비전 보기
+mc: Lukas는 몇 시에 자러 가나요? | 10시* | 11시 | 9시
+
+-- ex Hören | 시각을 듣고 고르세요.
+hör: N: Es ist halb neun.
+mc: 몇 시인가요? | 8시 30분* | 9시 30분 | 9시
+hör: N: Es ist Viertel nach drei.
+mc: 몇 시인가요? | 3시 15분* | 2시 45분 | 3시 45분
+hör: N: Es ist Viertel vor zwölf.
+mc: 몇 시인가요? | 11시 45분* | 12시 15분 | 12시 45분
+hör: N: Es ist zehn nach sechs.
+mc: 몇 시인가요? | 6시 10분* | 5시 50분 | 10시 6분
+
+-- ex Lesen | Emma의 토요일 계획표를 보고 답하세요.
+text plan | Emmas Samstag
+> | Uhrzeit | Plan
+> | 9.00 | aufstehen
+> | 9.30 | frühstücken
+> | 10.00 | Zimmer aufräumen
+> | 14.00 | mit Yuna einkaufen
+> | 16.30 | Elif treffen
+> | 19.00 | fernsehen
+rf: Emma steht um neun Uhr auf. | r
+rf: Um halb zehn räumt Emma ihr Zimmer auf. | f => 9시 30분에는 아침을 먹어요. 방은 10시에 치워요.
+mc: Was macht Emma um zwei Uhr? | Sie kauft mit Yuna ein.* | Sie trifft Elif. | Sie sieht fern.
+mc: Wann trifft Emma Elif? | Um halb fünf.* | Um halb vier. | Um vier.
+
+-- ex Grammatik | 문장 끝에 올 알맞은 말을 고르세요.
+gap: Ich stehe um sieben [auf|an|ein].
+gap: Die Schule fängt um acht [an|auf|mit].
+gap: Wir kaufen in der Stadt [ein|an|auf].
+gap: Am Abend sehe ich [fern|mit|auf].
+gap: Emma räumt ihr Zimmer [auf|an|ein].
+gap: Wir gehen in den Park. Kommst du [mit|fern|an]?
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / stehe / um sieben / auf. ~ um sieben / stehe / ich / auf. | 나는 일곱 시에 일어나.
+ord: die Schule / fängt / um acht / an. ~ um acht / fängt / die Schule / an. | 학교는 여덟 시에 시작해.
+ord: wann / kommt / ihr / zurück? | 너희는 언제 돌아와?
+ord: dann / kaufen / wir / ein. ~ wir / kaufen / dann / ein. | 그다음에 우리는 장을 봐.
+
+-- ex Grammatik | 순서가 맞는 문장을 고르세요.
+mc: 알맞은 문장은 무엇인가요? | Dann frühstücke ich.* | Dann ich frühstücke. | Dann frühstücken ich.
+mc: 알맞은 문장은 무엇인가요? | Zuerst dusche ich.* | Zuerst ich dusche. | Ich zuerst dusche.
+mc: 알맞은 문장은 무엇인가요? | Um acht fängt die Schule an.* | Um acht die Schule fängt an. | Um acht anfängt die Schule.
+
+-- ex Wortschatz | 시각과 읽는 법을 짝지으세요.
+paar: 7:30 = halb acht ; 8:15 = Viertel nach acht ; 9:45 = Viertel vor zehn ; 10:30 = halb elf ; 12:05 = fünf nach zwölf ; 2:50 = zehn vor drei
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Yuna: Ich stehe um sieben Uhr auf. | 나는 일곱 시에 일어나.
+dik: Elif: Wann gehst du ins Bett? | 너는 몇 시에 자?
+dik: Emma: Dann kaufen wir ein. | 그다음에 우리는 장을 봐.
+
+== sprechen
+-- redemittel
+하루 일과 묻고 답하기: Wann stehst du auf? | 몇 시에 일어나? ; Ich stehe um … auf. | 나는 …시에 일어나. ; Die Schule fängt um … an. | 학교는 …시에 시작해. ; Um … gehe ich ins Bett. | …시에 자러 가.
+순서대로 말하기: Zuerst … | 먼저 … ; Dann … | 그다음에 … ; Danach … | 그 뒤에 …
+시각 말하기: Es ist halb … | …시 30분 전이야. ; Es ist Viertel nach … / Es ist Viertel vor … | …시 15분이야. / …시 15분 전이야.
+
+-- rolle B | Emma, Yuna
+
+-- ich 나의 하루를 말해요 | 내가 일어나는 시각, 학교가 시작하는 시각, 자러 가는 시각을 독일어로 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 일어나는 시각 | halb sieben
+feld: b | 학교가 시작하는 시각 | neun Uhr
+feld: c | 자러 가는 시각 | elf
+satz: Ich stehe um {a} auf.
+satz: Die Schule fängt um {b} an.
+satz: Am Nachmittag mache ich Hausaufgaben.
+satz: Um {c} gehe ich ins Bett.
+
+-- schreiben Mein Tag | 나의 하루를 아침부터 저녁까지 순서대로 써 보세요. zuerst, dann, danach를 넣어요.
+punkt: 일어나는 시각 ; 아침에 하는 일 ; 학교가 시작하고 끝나는 시각 ; 오후와 저녁에 하는 일 ; 자러 가는 시각
+start: Ich stehe um … auf.
+muster: Ich stehe um sieben Uhr auf. Zuerst dusche ich. Dann frühstücke ich. Die Schule fängt um halb neun an. Am Nachmittag mache ich Hausaufgaben. Danach treffe ich Freunde. Am Abend sehe ich fern. Um elf gehe ich ins Bett.
+check: 나뉘는 동사의 앞부분을 문장 끝에 썼나요? ; zuerst, dann, danach 바로 다음에 동사가 오나요? ; 시각 앞에 um을 썼나요?
+
+-- kann
+Ich kann meinen Tag beschreiben. | 나의 하루를 말할 수 있어요.
+Ich kann die Uhrzeit mit halb und Viertel sagen. | halb와 Viertel로 시각을 말할 수 있어요.
+Ich kann der Reihe nach erzählen. | 일을 순서대로 이야기할 수 있어요.
+
+-- tipp 내 하루를 독일어로 중계해요
+p: 지금 하는 일을 그 자리에서 독일어로 말해 보세요. 일어나면서 Ich stehe auf., 집을 나서면서 Ich gehe in die Schule., 저녁에는 Ich mache Hausaufgaben.이라고요.
+p: 소리 내기 어려운 곳에서는 속으로 말해도 돼요. 날마다 하는 일이라 같은 문장을 되풀이하게 되고, 그래서 가장 빨리 입에 붙어요.

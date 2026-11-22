@@ -1,0 +1,245 @@
+@id a1-1/7
+
+== einstieg
+bild: A school kiosk. Behind a simple counter with pretzels, bread rolls and small juice bottles stands a friendly young woman in an apron. In front of the counter stand LUKAS who points at a pretzel and YUNA who holds a small coin purse.
+alt: 학교 매점 계산대 앞에서 Lukas가 브레첼을 가리키고, Yuna는 동전 지갑을 들고 있어요. 계산대 뒤에는 앞치마를 두른 점원이 서 있어요.
+lead: 긴 쉬는 시간이에요. Yuna와 Lukas가 학교 매점(der Schulkiosk) 앞에 줄을 섰어요.
+mission: 이 과를 마치면 매점에서 먹고 싶은 것을 독일어로 주문할 수 있어요.
+wort: Ich habe Hunger. | 배고파요.
+wort: Ich möchte eine Brezel. | 브레첼 하나 주세요.
+wort: Was kostet das? | 얼마예요?
+wort: Zwei Euro, bitte. | 2유로입니다.
+mc: 매점에서 '~ 주세요'라고 주문할 때 쓰는 말은 무엇일까요? | Ich möchte …* | Ich bin … | Ich heiße … => Ich möchte는 '~을 원해요'라는 뜻으로, 주문할 때 가장 많이 써요.
+
+== hoeren
+-- dialog A | Am Schulkiosk | 긴 쉬는 시간, 학교 매점 앞이에요. | Frau=Verkäuferin
+vor: 들으면서 찾아보세요. 브레첼은 얼마인가요?
+Lukas: Ich habe Hunger! Was möchtest du, Yuna? | 배고파! Yuna, 넌 뭐 먹을래?
+Yuna: Ich weiß nicht. Was nimmst du? | 모르겠어. 넌 뭐 먹을 거야?
+Lukas: Ich nehme ein Käsebrötchen und einen Kakao. | 나는 치즈 빵 하나랑 코코아 하나 먹을 거야.
+Frau: Hallo! Was möchtet ihr? | 안녕! 뭐 줄까?
+Lukas: Ich möchte ein Käsebrötchen und einen Kakao, bitte. | 치즈 빵 하나랑 코코아 하나 주세요.
+Yuna: Und ich möchte eine Brezel und einen Apfelsaft. | 저는 브레첼 하나랑 사과 주스 하나 주세요.
+Frau: Gern. Das macht zusammen fünf Euro vierzig. | 그래. 모두 5유로 40센트야.
+Yuna: Was kostet die Brezel? | 브레첼은 얼마예요?
+Frau: Ein Euro zwanzig. | 1유로 20센트야.
+Yuna: Okay. Hier, bitte. | 네. 여기 있어요.
+Frau: Danke. Guten Appetit! | 고마워. 맛있게 먹으렴!
+
+-- dialog B | Beim Abendessen | 저녁 식사 시간이에요. 요리사인 Thomas가 음식을 차렸어요.
+vor: 들으면서 찾아보세요. Yuna가 먹지 않는 음식은 무엇인가요?
+Thomas: Das Essen ist fertig! Yuna, isst du Fleisch? | 밥 다 됐다! Yuna, 고기 먹니?
+Yuna: Ja, ich esse gern Fleisch. Aber ich esse keinen Fisch. | 네, 고기 좋아해요. 그런데 생선은 안 먹어요.
+Thomas: Kein Problem. Heute gibt es Hähnchen mit Reis und Salat. | 괜찮아. 오늘은 닭고기에 밥과 샐러드란다.
+Emma: Lecker! Ich nehme zuerst den Salat. | 맛있겠다! 나는 샐러드 먼저 먹을래.
+Sabine: Möchtest du Wasser oder Saft, Yuna? | Yuna, 물 마실래, 주스 마실래?
+Yuna: Ich möchte Wasser, bitte. | 물 주세요.
+Thomas: Und? Wie schmeckt das Hähnchen? | 어때? 닭고기 맛이 어떠니?
+Yuna: Sehr gut! Der Reis ist auch lecker. | 정말 맛있어요! 밥도 맛있어요.
+Thomas: Möchtest du noch etwas? | 더 먹을래?
+Yuna: Nein, danke. Ich bin satt. | 아니요, 괜찮아요. 배불러요.
+
+-- fragen 두 대화를 듣고 답하세요.
+rf: Lukas nimmt ein Käsebrötchen. | r
+rf: Yuna möchte einen Kakao. | f => Yuna는 브레첼과 사과 주스(Apfelsaft)를 주문했어요.
+rf: Yuna isst keinen Fisch. | r
+mc: 브레첼은 얼마인가요? | 1,20 Euro* | 2,10 Euro | 5,40 Euro
+mc: 오늘 저녁 메뉴는 무엇인가요? | Hähnchen mit Reis und Salat* | Fisch mit Reis | Brot mit Käse
+mc: Yuna는 저녁 식사 때 무엇을 마시나요? | Wasser* | Saft | Kakao
+
+-- kultur Pausenbrot와 Abendbrot
+p: 독일 학생들은 집에서 빵과 과일, 채소를 도시락통(die Brotdose)에 싸 와서 쉬는 시간에 먹어요. 이 빵을 das Pausenbrot라고 해요. 매점에서 브레첼이나 빵을 사 먹기도 해요.
+p: 독일에서는 점심을 따뜻한 음식으로 든든하게 먹고, 저녁에는 빵에 치즈나 햄을 올려 간단히 먹는 집이 많아요. 이런 저녁을 das Abendbrot라고 해요.
+p: 식사를 시작할 때는 서로 Guten Appetit!라고 말해요.
+mc: das Abendbrot는 어떤 식사일까요? | 빵으로 간단히 먹는 저녁* | 학교에서 먹는 점심 | 쉬는 시간에 먹는 간식
+
+== wortschatz
+-- gruppe Essen | 먹을 것
+das Brötchen, die Brötchen | 작은 빵 | Ich möchte ein Brötchen. | 작은 빵 하나 주세요.
+die Brezel, die Brezeln | 브레첼 | Was kostet die Brezel? | 브레첼은 얼마예요?
+das Brot, die Brote | 빵 | Ich esse gern Brot mit Käse. | 나는 치즈를 올린 빵을 좋아해요.
+der Käse | 치즈 | Der Käse ist lecker. | 그 치즈는 맛있어요.
+der Apfel, die Äpfel | 사과 | Ich nehme einen Apfel. | 나는 사과 하나를 먹을래요.
+der Salat, die Salate | 샐러드 | Ich nehme zuerst den Salat. | 나는 샐러드 먼저 먹을래요.
+der Reis | 밥, 쌀 | Der Reis ist auch lecker. | 밥도 맛있어요.
+das Fleisch | 고기 | Isst du Fleisch? | 고기 먹니?
+das Hähnchen, die Hähnchen | 닭고기 | Wie schmeckt das Hähnchen? | 닭고기 맛이 어때요?
+der Fisch, die Fische | 생선, 물고기 | Ich esse keinen Fisch. | 나는 생선을 안 먹어요.
+
+-- gruppe Trinken | 마실 것
+das Wasser | 물 | Ich möchte Wasser, bitte. | 물 주세요.
+der Saft, die Säfte | 주스 | Ich möchte einen Apfelsaft. | 사과 주스 하나 주세요.
+der Kakao | 코코아 | Lukas trinkt einen Kakao. | Lukas는 코코아를 마셔요.
+die Milch | 우유 | Ich trinke gern Milch. | 나는 우유를 좋아해요.
+
+-- gruppe Bestellen und bezahlen | 주문하고 계산할 때
+essen (du isst, er isst) | 먹다 | Was isst du gern? | 넌 뭘 즐겨 먹어?
+trinken | 마시다 | Was trinkst du? | 넌 뭘 마셔?
+nehmen (du nimmst, er nimmt) | 고르다, 가지다 | Was nimmst du? | 넌 뭐 먹을 거야?
+möchten | 원하다 | Ich möchte eine Brezel, bitte. | 브레첼 하나 주세요.
+kosten | 값이 ~이다 | Das kostet zwei Euro. | 그건 2유로예요.
+der Euro, die Euro | 유로 | Das macht zusammen fünf Euro. | 모두 5유로예요.
+der Hunger | 배고픔 | Ich habe Hunger. | 배고파요.
+der Durst | 목마름 | Hast du Durst? | 목말라?
+lecker | 맛있는 | Das ist lecker! | 맛있어요!
+satt | 배부른 | Ich bin satt. | 배불러요.
+
+-- bilder
+das Brötchen, die Brötchen: a single round bread roll
+die Brezel, die Brezeln: a single soft pretzel
+der Käse: a wedge of cheese with holes
+der Apfel, die Äpfel: a single apple with a leaf
+der Salat, die Salate: a bowl of green salad
+der Reis: a bowl of white rice
+das Hähnchen, die Hähnchen: a roasted chicken leg on a plate
+der Fisch, die Fische: a whole grilled fish on a plate
+das Wasser: a glass of water
+der Saft, die Säfte: a glass of juice with a straw
+der Kakao: a mug of hot cocoa
+die Milch: a carton of milk next to a glass of milk
+
+-- tafel Preise | 가격 읽기
+p: 가격은 유로와 센트를 차례로 읽어요. 쉼표는 읽지 않아요. 1유로는 ein Euro라고 해요. 줄을 누르면 소리가 나요.
+r: 0,90 € = neunzig Cent ; 1,20 € = ein Euro zwanzig | say=Neunzig Cent. Ein Euro zwanzig.
+r: 2,50 € = zwei Euro fünfzig ; 5,40 € = fünf Euro vierzig | say=Zwei Euro fünfzig. Fünf Euro vierzig.
+
+-- aussprache ö 소리 | 입술을 둥글게 내민 [에]
+p: ö는 한국어에 없는 소리예요. 먼저 [에]라고 말하고, 혀는 그대로 둔 채 입술만 [오]처럼 둥글게 내밀어 보세요. 한국어 '외'를 한 번에 내는 소리와 비슷해요.
+p: möchten, zwölf, Köln의 ö는 짧게, Brötchen, hören, schön의 ö는 길게 내요.
+hör: möchten, zwölf, Köln | 짧은 ö
+hör: Brötchen, hören, schön | 긴 ö
+hör: Ich möchte zwölf Brötchen. | 연습 문장
+
+== grammatik
+-- punkt Akkusativ: den, einen, keinen | '~을, ~를'을 말할 때
+bsp: Ich nehme zuerst *den* Salat. | 나는 샐러드 먼저 먹을래.
+bsp: Ich möchte eine Brezel und *einen* Apfelsaft. | 브레첼 하나랑 사과 주스 하나 주세요.
+bsp: Ich esse *keinen* Fisch. | 나는 생선을 안 먹어.
+finde: der Salat가 nehmen 뒤에 오면 der는 어떻게 바뀌나요? | den* | die | das
+regel: essen, trinken, nehmen, möchten, haben 뒤에 오는 '~을, ~를'은 4격(Akkusativ)이에요. der 명사만 모양이 바뀌어요. der는 den, ein은 einen, kein은 keinen이 돼요.
+| | der Salat | das Brötchen | die Brezel
+| Das ist … | der, ein, kein Salat | das, ein, kein Brötchen | die, eine, keine Brezel
+| Ich nehme … | *den*, *einen*, *keinen* Salat | das, ein, kein Brötchen | die, eine, keine Brezel
+merke: 6과에서 배운 Ich habe einen Bruder와 같은 규칙이에요. '무엇을?'에 답하는 말이 4격이에요.
+
+-- punkt möchten | 주문할 때 쓰는 동사
+bsp: Was *möchtest* du, Yuna? | Yuna, 넌 뭐 먹을래?
+bsp: Ich *möchte* Wasser, bitte. | 물 주세요.
+bsp: Was *möchtet* ihr? | 너희는 뭐 줄까?
+finde: ich möchte와 모양이 같은 것은 무엇인가요? | er möchte* | du möchte | ihr möchte
+regel: möchten은 '~을 원해요'라는 뜻이에요. ich와 er, sie의 모양이 möchte로 같아요. 주문할 때 끝에 bitte를 붙이면 공손한 말이 돼요.
+| | möchten | | möchten
+| ich | möcht*e* | wir | möcht*en*
+| du | möcht*est* | ihr | möcht*et*
+| er, sie | möcht*e* | sie | möcht*en*
+merke: du möchtest와 ihr möchtet에는 e가 하나 더 들어가요. 발음하기 쉽게 하려고 넣는 e예요.
+
+-- punkt essen und nehmen | 모음이 바뀌는 동사 둘
+bsp: Yuna, *isst* du Fleisch? | Yuna, 고기 먹니?
+bsp: Was *nimmst* du? | 넌 뭐 먹을 거야?
+bsp: Ich *nehme* ein Käsebrötchen. | 나는 치즈 빵을 먹을 거야.
+finde: nehmen은 du와 함께 쓰면 어떤 모양이 되나요? | nimmst* | nehmst | nimmt
+regel: essen과 nehmen도 5과에서 배운 동사들처럼 du와 er, sie에서 모음 e가 i로 바뀌어요.
+| | essen | nehmen | trinken
+| ich | esse | nehme | trinke
+| du | *i*sst | n*imm*st | trinkst
+| er, sie | *i*sst | n*imm*t | trinkt
+| wir | essen | nehmen | trinken
+merke: nehmen은 모음만 바뀌지 않아요. h가 빠지고 m이 두 개가 돼요. trinken은 모양이 바뀌지 않는 동사예요.
+
+== training
+-- ex Hören | 매점에서 나누는 대화를 듣고 답하세요.
+audio | Am Kiosk
+> Frau: Hallo! Was möchtest du?
+> Elif: Ich möchte einen Apfel und ein Wasser, bitte.
+> Frau: Gern. Möchtest du auch eine Brezel?
+> Elif: Nein, danke. Was kostet das?
+> Frau: Ein Euro neunzig.
+mc: Elif는 무엇을 샀나요? | 사과와 물* | 브레첼과 물 | 사과와 주스
+mc: 모두 얼마인가요? | 1,90 €* | 1,19 € | 9,10 €
+mc: Elif는 브레첼도 샀나요? | 아니요, 사지 않았어요* | 네, 한 개 샀어요 | 네, 두 개 샀어요
+
+-- ex Hören | 가격을 듣고 고르세요.
+hör: Frau: Zwei Euro fünfzig, bitte.
+mc: 얼마인가요? | 2,50 €* | 2,15 € | 5,20 €
+hör: Frau: Das macht vier Euro achtzig.
+mc: 얼마인가요? | 4,80 €* | 4,18 € | 8,40 €
+hör: Frau: Der Salat kostet drei Euro dreißig.
+mc: 얼마인가요? | 3,30 €* | 3,13 € | 3,03 €
+
+-- ex Lesen | 매점의 가격표를 보고 답하세요.
+text plan | Schulkiosk
+> | Essen und Trinken | Preis
+> | Brezel | 1,20 €
+> | Käsebrötchen | 1,80 €
+> | Salat | 3,50 €
+> | Apfel | 0,60 €
+> | Wasser | 1,00 €
+> | Apfelsaft | 1,20 €
+mc: Was kostet der Salat? | 3,50 Euro* | 1,80 Euro | 1,20 Euro
+rf: Der Apfel kostet sechzig Cent. | r
+rf: Das Wasser kostet zwei Euro. | f => 물(Wasser)은 1유로예요.
+mc: Lukas에게 2유로가 있어요. 무엇을 살 수 있나요? | ein Käsebrötchen* | einen Salat | eine Brezel und einen Apfelsaft => 치즈 빵은 1,80유로예요. 브레첼과 사과 주스는 모두 2,40유로라서 돈이 모자라요.
+
+-- ex Grammatik | 알맞은 관사를 고르세요.
+gap: Ich nehme [einen|ein|eine] Apfelsaft.
+gap: Ich möchte [eine|einen|ein] Brezel.
+gap: Lukas isst [ein|einen|eine] Käsebrötchen.
+gap: Ich esse [keinen|kein|keine] Fisch.
+gap: Emma nimmt [den|der|das] Salat.
+gap: Ich trinke [keine|keinen|kein] Milch.
+
+-- ex Grammatik | 알맞은 동사 형태를 고르세요.
+gap: Was [isst|esst|esse] du gern?
+gap: Lukas [nimmt|nehmt|nimmst] einen Kakao.
+gap: Ich [möchte|möchtest|möchten] eine Brezel.
+gap: Was [möchtet|möchten|möchte] ihr?
+gap: Yuna [isst|esst|esse] keinen Fisch.
+gap: Was [nimmst|nehmst|nimmt] du?
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / möchte / eine Brezel, / bitte. | 브레첼 하나 주세요.
+ord: was / kostet / der Salat? | 샐러드는 얼마예요?
+ord: ich / esse / keinen / Fisch. | 나는 생선을 안 먹어.
+ord: ich / nehme / einen / Apfelsaft. | 나는 사과 주스를 마실래.
+
+-- ex Wortschatz | 독일어와 뜻을 짝지으세요.
+paar: Ich habe Hunger. = 배고파요. ; Ich habe Durst. = 목말라요. ; Ich bin satt. = 배불러요. ; Guten Appetit! = 맛있게 드세요! ; Was kostet das? = 얼마예요? ; Das ist lecker. = 맛있어요.
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Yuna: Ich möchte eine Brezel. | 브레첼 하나 주세요.
+dik: Lukas: Was kostet das? | 얼마예요?
+dik: Thomas: Das Essen ist fertig! | 밥 다 됐다!
+
+== sprechen
+-- redemittel
+주문하기: Was möchtest du? | 뭐 먹을래? ; Ich möchte …, bitte. | … 주세요. ; Ich nehme … | 저는 …로 할게요.
+가격 묻기: Was kostet …? | …은 얼마예요? ; Das kostet … Euro. | …유로예요. ; Das macht zusammen … | 모두 …예요.
+먹고 마시는 것 말하기: Ich esse gern … | 나는 …을 즐겨 먹어요. ; Ich esse keinen Fisch. / Ich esse kein Fleisch. | 나는 생선을 안 먹어요. / 나는 고기를 안 먹어요. ; Ich trinke lieber … | 나는 …을 더 즐겨 마셔요.
+식사할 때: Guten Appetit! | 맛있게 드세요! ; Das ist lecker. | 맛있어요. ; Nein, danke. Ich bin satt. | 아니요, 괜찮아요. 배불러요.
+
+-- rolle A | Yuna, Lukas
+
+-- ich 매점에서 주문해요 | 먹을 것과 마실 것을 ein, eine, einen과 함께 적고, 먹지 않는 음식도 하나 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: e | 먹을 것 | eine Brezel
+feld: t | 마실 것 | einen Apfelsaft
+feld: n | 안 먹는 것 | keinen Fisch
+satz: Ich habe Hunger.
+satz: Ich möchte {e} und {t}, bitte.
+satz: Ich esse {n}.
+satz: Was kostet das?
+
+-- schreiben Was isst du gern? | 독일 친구가 Was isst und trinkst du gern?이라고 물었어요. 대답하는 글을 써 보세요.
+punkt: 즐겨 먹는 것 두 가지 ; 안 먹는 것 한 가지 ; 즐겨 마시는 것 ; 친구에게 되묻는 질문
+start: Ich esse gern …
+muster: Ich esse gern Reis und Hähnchen. Ich esse auch gern Brot mit Käse. Ich esse keinen Fisch. Ich trinke gern Apfelsaft. Und du? Was isst du gern?
+check: der 명사 앞에 einen이나 keinen을 썼나요? ; gern이 동사 뒤에 있나요? ; 음식 이름의 첫 글자를 대문자로 썼나요?
+
+-- kann
+Ich kann sagen, was ich gern esse und trinke. | 즐겨 먹고 마시는 것을 말할 수 있어요.
+Ich kann am Kiosk etwas bestellen. | 매점에서 먹고 싶은 것을 주문할 수 있어요.
+Ich kann nach dem Preis fragen. | 가격을 묻고 알아들을 수 있어요.
+
+-- tipp 밥 먹을 때마다 한 문장씩
+p: 배운 말은 실제로 그 일을 할 때 써야 오래 남아요. 밥을 먹을 때마다 Ich esse Reis., Ich trinke Wasser., Das ist lecker!처럼 한 문장씩 독일어로 말해 보세요.
+p: 편의점이나 분식집 메뉴판을 보면서 Ich möchte …, bitte.로 주문하는 연습을 해도 좋아요. 가격도 독일어로 읽어 보세요.

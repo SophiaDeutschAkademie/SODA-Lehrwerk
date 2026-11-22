@@ -1,0 +1,80 @@
+{
+ "job": "a11b_n_04",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "sechs, sieben, acht, neun, zehn."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "elf, zwölf, dreizehn, vierzehn, fünfzehn."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "sechzehn, siebzehn, achtzehn, neunzehn, zwanzig."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "ich, sechzehn, Mädchen"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "acht, auch, achtzehn"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Ich bin sechzehn. Du auch?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "siebzehn"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Was ist das?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Das ist ein Stift."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Das ist eine Schere."
+   ]
+  }
+ ],
+ "script": "sechs, sieben, acht, neun, zehn. [pause] elf, zwölf, dreizehn, vierzehn, fünfzehn. [pause] sechzehn, siebzehn, achtzehn, neunzehn, zwanzig. [pause] ich, sechzehn, Mädchen [pause] acht, auch, achtzehn [pause] Ich bin sechzehn. Du auch? [pause] siebzehn [pause] Was ist das? [pause] Das ist ein Stift. [pause] Das ist eine Schere. [pause] Gut.",
+ "tail": "Gut."
+}

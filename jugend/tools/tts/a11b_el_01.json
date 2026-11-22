@@ -1,0 +1,80 @@
+{
+ "job": "a11b_el_01",
+ "who": "Elif",
+ "voice": "Emily",
+ "voice_id": "OO0WT3lY2gVNwzZMAjAI",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "Elif",
+   "parts": [
+    "Hallo, Yuna! Wie alt bist du?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Elif",
+   "parts": [
+    "Ich bin auch vierzehn."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Elif",
+   "parts": [
+    "Wohnst du jetzt in Köln, Yuna?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Elif",
+   "parts": [
+    "Tim ist zwölf."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Elif",
+   "parts": [
+    "Ich bin vierzehn Jahre alt."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Elif",
+   "parts": [
+    "Hier ist ein Stift, Lukas."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Elif",
+   "parts": [
+    "Hier sind zwei Bleistifte."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Elif",
+   "parts": [
+    "Yuna, wie findest du Mathe?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Elif",
+   "parts": [
+    "Stimmt. Was ist dein Lieblingsfach?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Elif",
+   "parts": [
+    "Musik finde ich auch toll! Wir haben am Donnerstag Musik."
+   ]
+  }
+ ],
+ "script": "Hallo, Yuna! Wie alt bist du? [pause] Ich bin auch vierzehn. [pause] Wohnst du jetzt in Köln, Yuna? [pause] Tim ist zwölf. [pause] Ich bin vierzehn Jahre alt. [pause] Hier ist ein Stift, Lukas. [pause] Hier sind zwei Bleistifte. [pause] Yuna, wie findest du Mathe? [pause] Stimmt. Was ist dein Lieblingsfach? [pause] Musik finde ich auch toll! Wir haben am Donnerstag Musik. [pause] Gut.",
+ "tail": "Gut."
+}

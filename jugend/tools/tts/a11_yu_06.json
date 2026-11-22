@@ -1,0 +1,44 @@
+{
+ "job": "a11_yu_06",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a1-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Danach mache ich Hausaufgaben. Am Abend sehe ich fern oder ich rufe Freunde an."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Um elf. Aber hier in Köln stehe ich um halb sieben auf!"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Ja! Und danach treffen wir Elif."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Super! Und am Abend sehen wir zusammen fern?"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Ich stehe um sieben Uhr auf."
+   ]
+  }
+ ],
+ "script": "Danach mache ich Hausaufgaben. Am Abend sehe ich fern oder ich rufe Freunde an. [pause] Um elf. Aber hier in Köln stehe ich um halb sieben auf! [pause] Ja! Und danach treffen wir Elif. [pause] Super! Und am Abend sehen wir zusammen fern? [pause] Ich stehe um sieben Uhr auf. [pause]"
+}

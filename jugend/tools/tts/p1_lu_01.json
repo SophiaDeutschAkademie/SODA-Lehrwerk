@@ -1,0 +1,44 @@
+{
+ "job": "p1_lu_01",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Hi! Ich bin Lukas. Wie heißt du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Wie bitte? Wie schreibt man das?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Ah, Yuna! Woher kommst du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Ich komme aus Köln."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Wie heißt du?"
+   ]
+  }
+ ],
+ "script": "Hi! Ich bin Lukas. Wie heißt du? [pause] Wie bitte? Wie schreibt man das? [pause] Ah, Yuna! Woher kommst du? [pause] Ich komme aus Köln. [pause] Wie heißt du?"
+}

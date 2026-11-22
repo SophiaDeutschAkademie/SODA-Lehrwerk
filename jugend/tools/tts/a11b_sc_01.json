@@ -1,0 +1,73 @@
+{
+ "job": "a11b_sc_01",
+ "who": "Schneider",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a1-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Guten Morgen! Öffnet bitte das Buch auf Seite zwölf."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Kein Problem, Yuna. Noch einmal: das Buch, Seite zwölf."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Lukas, wo ist dein Heft?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Gut. Hört jetzt zu und sprecht nach: die Tafel, das Fenster, die Tür."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Öffnet bitte das Buch."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Hört bitte zu."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Sprecht bitte nach."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Noch einmal, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Schneider",
+   "parts": [
+    "Am Freitag haben wir Geschichte."
+   ]
+  }
+ ],
+ "script": "Guten Morgen! Öffnet bitte das Buch auf Seite zwölf. [pause] Kein Problem, Yuna. Noch einmal: das Buch, Seite zwölf. [pause] Lukas, wo ist dein Heft? [pause] Gut. Hört jetzt zu und sprecht nach: die Tafel, das Fenster, die Tür. [pause] Öffnet bitte das Buch. [pause] Hört bitte zu. [pause] Sprecht bitte nach. [pause] Noch einmal, bitte. [pause] Am Freitag haben wir Geschichte. [pause] Gut.",
+ "tail": "Gut."
+}

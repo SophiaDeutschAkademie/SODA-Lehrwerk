@@ -1,0 +1,89 @@
+{
+ "job": "a11b_n_03",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "alt.",
+    "Wie alt bist du?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "das Jahr, die Jahre.",
+    "Ich bin vierzehn Jahre alt."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "wo.",
+    "Wo wohnst du?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "auch.",
+    "Ich bin auch vierzehn."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "nett.",
+    "Frau Schneider ist sehr nett."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "lustig.",
+    "Lukas ist lustig."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "neu.",
+    "Yuna ist neu in der Klasse."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "jetzt.",
+    "Ich wohne jetzt in Köln."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Handynummer, die Handynummern.",
+    "Wie ist deine Handynummer?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "null, eins, zwei, drei, vier, fünf."
+   ]
+  }
+ ],
+ "script": "alt. Wie alt bist du? [pause] das Jahr, die Jahre. Ich bin vierzehn Jahre alt. [pause] wo. Wo wohnst du? [pause] auch. Ich bin auch vierzehn. [pause] nett. Frau Schneider ist sehr nett. [pause] lustig. Lukas ist lustig. [pause] neu. Yuna ist neu in der Klasse. [pause] jetzt. Ich wohne jetzt in Köln. [pause] die Handynummer, die Handynummern. Wie ist deine Handynummer? [pause] null, eins, zwei, drei, vier, fünf. [pause] Gut.",
+ "tail": "Gut."
+}

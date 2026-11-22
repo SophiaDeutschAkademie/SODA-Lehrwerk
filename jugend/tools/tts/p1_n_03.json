@@ -1,0 +1,88 @@
+{
+ "job": "p1_n_03",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "gut.",
+    "Gut, danke. Und dir?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "danke.",
+    "Danke, Emma!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "bitte.",
+    "Wie bitte?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "ja.",
+    "Ja, ich bin Yuna."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "nein.",
+    "Nein, ich komme aus Köln."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Deutschland.",
+    "Köln ist in Deutschland."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Österreich.",
+    "Wien ist in Österreich."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "die Schweiz.",
+    "Zürich ist in der Schweiz."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Korea.",
+    "Seoul ist in Korea."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "heißen, nein, Schweiz, Österreich"
+   ]
+  }
+ ],
+ "script": "gut. Gut, danke. Und dir? [pause] danke. Danke, Emma! [pause] bitte. Wie bitte? [pause] ja. Ja, ich bin Yuna. [pause] nein. Nein, ich komme aus Köln. [pause] Deutschland. Köln ist in Deutschland. [pause] Österreich. Wien ist in Österreich. [pause] die Schweiz. Zürich ist in der Schweiz. [pause] Korea. Seoul ist in Korea. [pause] heißen, nein, Schweiz, Österreich"
+}

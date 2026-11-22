@@ -1,0 +1,88 @@
+{
+ "job": "a11b_n_05",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Das ist ein Heft."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "der Stift, die Stifte.",
+    "Wo ist mein Stift?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "der Bleistift, die Bleistifte.",
+    "Das ist ein Bleistift."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "der Kuli, die Kulis.",
+    "Ist das ein Kuli?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "der Radiergummi, die Radiergummis.",
+    "Der Radiergummi ist neu."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "das Heft, die Hefte.",
+    "Das Heft ist hier."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "das Buch, die Bücher.",
+    "Das ist kein Heft. Das ist ein Buch."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "das Lineal, die Lineale.",
+    "Hier ist ein Lineal."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "die Schere, die Scheren."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "das Mäppchen, die Mäppchen.",
+    "Das Mäppchen ist neu."
+   ]
+  }
+ ],
+ "script": "Das ist ein Heft. [pause] der Stift, die Stifte. Wo ist mein Stift? [pause] der Bleistift, die Bleistifte. Das ist ein Bleistift. [pause] der Kuli, die Kulis. Ist das ein Kuli? [pause] der Radiergummi, die Radiergummis. Der Radiergummi ist neu. [pause] das Heft, die Hefte. Das Heft ist hier. [pause] das Buch, die Bücher. Das ist kein Heft. Das ist ein Buch. [pause] das Lineal, die Lineale. Hier ist ein Lineal. [pause] die Schere, die Scheren. [pause] das Mäppchen, die Mäppchen. Das Mäppchen ist neu. [pause] Gut.",
+ "tail": "Gut."
+}

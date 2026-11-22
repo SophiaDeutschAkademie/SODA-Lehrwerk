@@ -1,0 +1,23 @@
+{
+ "job": "p1_sa_01",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Sabine",
+   "parts": [
+    "Guten Tag, Yuna! Ich bin Sabine."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Sabine",
+   "parts": [
+    "Sag einfach Sabine!"
+   ]
+  }
+ ],
+ "script": "Guten Tag, Yuna! Ich bin Sabine. [pause] Sag einfach Sabine!"
+}

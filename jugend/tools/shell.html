@@ -103,6 +103,25 @@ html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
 .sta p,.tst p{margin-top:2px;font-size:14px;line-height:1.5}
 .sta p span{font-family:var(--de);font-weight:700}
 
+/* 본문이 올라온 줄: 줄 전체를 누르면 그 과로 간다 */
+.auf{position:relative}
+.auf a{text-decoration:none}
+.auf a::after{content:"";position:absolute;inset:0}
+.auf:hover a,.auf a:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.lek.auf>div{padding-right:20px}
+.lek.auf::after,.sta.auf::after,.tst.auf::after{content:"";position:absolute;right:4px;top:22px;width:8px;height:8px;border-right:2px solid var(--ink2);border-top:2px solid var(--ink2);transform:rotate(45deg);pointer-events:none}
+.sta.auf,.tst.auf{padding-right:34px}
+.sta.auf::after,.tst.auf::after{right:16px;top:50%;margin-top:-5px}
+.stat{font-weight:700;font-size:12px;line-height:1.3;color:var(--accent-ink)}
+.sta .stat,.tst .stat{margin-left:8px}
+.lek.fin .num{background:var(--fill);border-color:var(--fill);color:var(--on-fill)}
+.step.offen{position:relative}
+.step.offen::after{content:"";position:absolute;left:50%;bottom:9px;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:var(--accent)}
+.step.offen[aria-selected="true"]::after{background:var(--on-fill)}
+.p-go{margin-top:16px}
+.p-go .btn{min-height:44px;padding:0 22px;font-size:15px}
+.p-wart{margin-top:14px;font-size:13.5px;color:var(--ink2)}
+
 /* 과 구성 */
 .more{display:grid;gap:34px;padding:34px 0 10px;border-top:1.5px solid var(--line)}
 .more h2{font-weight:800;font-size:20px;line-height:1.3;letter-spacing:-.02em}
@@ -151,7 +170,7 @@ footer a{text-underline-offset:3px}
       <p class="sub" lang="de">Deutsch für Jugendliche, A1 bis B1</p>
       <p class="lead">독일어를 처음 배우는 초등 고학년, 중학생, 고등학생을 위한 교재예요. 서울에서 온 Yuna가 쾰른의 학교에서 보내는 한 해를 따라가며 A1부터 B1까지 여섯 단계, 48과를 배워요.</p>
       <p class="cta"><a class="btn" href="#inhalt">목차 보기</a></p>
-      <p class="note">지금은 목차만 볼 수 있어요. 본문은 A1.1부터 차례로 올라와요.</p>
+      <p class="note"><!--NOTE--></p>
     </header>
     <section class="stufen" aria-labelledby="stufen-h">
       <h2 id="stufen-h">여섯 단계</h2>
@@ -188,7 +207,7 @@ footer a{text-underline-offset:3px}
   </div>
 
   <footer>
-    <p><span class="de">SODA Jugendliche</span>, 청소년 독일어 발돋움. 목차 __DATE__ 공개. <a href="../#inhalt">SODA Lehrwerk 목차로</a></p>
+    <p><span class="de">SODA Jugendliche</span>, 청소년 독일어 발돋움. __DATE__ 업데이트. <a href="../#inhalt">SODA Lehrwerk 목차로</a></p>
   </footer>
 </main>
 <!--A2HS-->
@@ -213,6 +232,22 @@ footer a{text-underline-offset:3px}
   });
   function fromHash(){var i=ids.indexOf((location.hash||'').slice(1));show(i>=0?i:cur,false,false)}
   window.addEventListener('hashchange',fromHash);fromHash();
+  /* 공부한 기록(과 화면이 이 브라우저에 남긴 것)으로 마친 과와 보던 과를 표시한다 */
+  function mark(){
+    var L={};try{L=(JSON.parse(localStorage.getItem('soda-jugend-v1')||'{}').l)||{}}catch(e){}
+    [].forEach.call(d.querySelectorAll('.auf[data-id]'),function(li){
+      var r=L[li.getAttribute('data-id')],s=li.querySelector('.stat');if(!s)return;
+      li.classList.toggle('fin',!!(r&&r.fin));s.textContent=r&&r.fin?'마침':(r&&r.d?'보는 중':'');
+    });
+    [].forEach.call(d.querySelectorAll('[data-go]'),function(a){
+      var items=[].slice.call(d.querySelectorAll('#p-'+a.getAttribute('data-go')+' .auf')),now=null,lastFin=-1;
+      items.forEach(function(li,k){var r=L[li.getAttribute('data-id')];if(!r)return;if(r.fin)lastFin=k;else if(r.t&&(!now||r.t>now.t))now={t:r.t,k:k}});
+      var k=now?now.k:(lastFin>=0?(lastFin<items.length-1?lastFin+1:0):-1);if(k<0)return;
+      var link=items[k].querySelector('a');a.href=link.getAttribute('href');
+      a.textContent=lastFin===items.length-1&&!now?'처음부터 다시 보기':link.textContent+(now?' 이어서 하기':' 시작하기');
+    });
+  }
+  mark();window.addEventListener('pageshow',mark);
 })();
 </script>
 <script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>

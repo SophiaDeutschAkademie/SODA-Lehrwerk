@@ -1,0 +1,90 @@
+{
+ "job": "a11b_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "der Lehrer, die Lehrer.",
+    "Herr Braun ist Lehrer."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Lehrerin, die Lehrerinnen.",
+    "Frau Schneider ist Lehrerin."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "der Freund, die Freunde.",
+    "Lukas ist ein Freund von Emma."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Freundin, die Freundinnen.",
+    "Elif ist meine Freundin."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Klasse, die Klassen.",
+    "Die Klasse ist sehr nett."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "der Junge, die Jungen.",
+    "Der Junge heißt Lukas."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "das Mädchen, die Mädchen.",
+    "Das Mädchen kommt aus Korea."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "wohnen.",
+    "Ich wohne in Köln."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "lernen.",
+    "Yuna lernt Deutsch."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "spielen.",
+    "Elif spielt Gitarre."
+   ]
+  }
+ ],
+ "script": "der Lehrer, die Lehrer. Herr Braun ist Lehrer. [pause] die Lehrerin, die Lehrerinnen. Frau Schneider ist Lehrerin. [pause] der Freund, die Freunde. Lukas ist ein Freund von Emma. [pause] die Freundin, die Freundinnen. Elif ist meine Freundin. [pause] die Klasse, die Klassen. Die Klasse ist sehr nett. [pause] der Junge, die Jungen. Der Junge heißt Lukas. [pause] das Mädchen, die Mädchen. Das Mädchen kommt aus Korea. [pause] wohnen. Ich wohne in Köln. [pause] lernen. Yuna lernt Deutsch. [pause] spielen. Elif spielt Gitarre. [pause] Gut.",
+ "tail": "Gut."
+}

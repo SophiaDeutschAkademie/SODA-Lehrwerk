@@ -1,0 +1,79 @@
+{
+ "job": "a11_em_03",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "Emma",
+   "parts": [
+    "Und was ist er von Beruf?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Emma",
+   "parts": [
+    "Hast du Geschwister?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Emma",
+   "parts": [
+    "Hast du auch eine Schwester?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Emma",
+   "parts": [
+    "Nein, ich habe keine Geschwister. Aber wir haben einen Hund!"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Emma",
+   "parts": [
+    "Ja! Und sein Hobby ist Schlafen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Emma",
+   "parts": [
+    "Das hier sind meine Großeltern. Sie wohnen in Bonn."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Emma",
+   "parts": [
+    "Er ist fünfundsiebzig. Und meine Oma ist zweiundsiebzig."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Emma",
+   "parts": [
+    "Ja, das ist Tante Julia. Ihr Mann heißt Ben und ihre Kinder heißen Mia und Leo."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Emma",
+   "parts": [
+    "Lecker! Ich nehme zuerst den Salat."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Emma",
+   "parts": [
+    "Zuerst räume ich mein Zimmer auf."
+   ]
+  }
+ ],
+ "script": "Und was ist er von Beruf? [pause] Hast du Geschwister? [pause] Hast du auch eine Schwester? [pause] Nein, ich habe keine Geschwister. Aber wir haben einen Hund! [pause] Ja! Und sein Hobby ist Schlafen. [pause] Das hier sind meine Großeltern. Sie wohnen in Bonn. [pause] Er ist fünfundsiebzig. Und meine Oma ist zweiundsiebzig. [pause] Ja, das ist Tante Julia. Ihr Mann heißt Ben und ihre Kinder heißen Mia und Leo. [pause] Lecker! Ich nehme zuerst den Salat. [pause] Zuerst räume ich mein Zimmer auf. [pause]"
+}

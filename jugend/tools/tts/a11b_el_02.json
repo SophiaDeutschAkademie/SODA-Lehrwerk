@@ -1,0 +1,80 @@
+{
+ "job": "a11b_el_02",
+ "who": "Elif",
+ "voice": "Emily",
+ "voice_id": "OO0WT3lY2gVNwzZMAjAI",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "Elif",
+   "parts": [
+    "Es ist zehn Uhr zwanzig. Schnell, wir haben jetzt Englisch!"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Elif",
+   "parts": [
+    "Es ist neun Uhr fünfzehn."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Elif",
+   "parts": [
+    "Es ist zehn Uhr."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Elif",
+   "parts": [
+    "Ja, ich lese gern Comics. Aber ich spiele lieber Gitarre."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Elif",
+   "parts": [
+    "Ja, sie liest sehr gern. Und sie fährt gern Rad."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Elif",
+   "parts": [
+    "Yuna und ich treffen am Samstag Freunde in der Stadt. Kommt ihr mit?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Elif",
+   "parts": [
+    "Um drei Uhr."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Elif",
+   "parts": [
+    "Ich spiele Gitarre. Und du?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Elif",
+   "parts": [
+    "Ja, gern! Wann?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Elif",
+   "parts": [
+    "Kommt ihr mit?"
+   ]
+  }
+ ],
+ "script": "Es ist zehn Uhr zwanzig. Schnell, wir haben jetzt Englisch! [pause] Es ist neun Uhr fünfzehn. [pause] Es ist zehn Uhr. [pause] Ja, ich lese gern Comics. Aber ich spiele lieber Gitarre. [pause] Ja, sie liest sehr gern. Und sie fährt gern Rad. [pause] Yuna und ich treffen am Samstag Freunde in der Stadt. Kommt ihr mit? [pause] Um drei Uhr. [pause] Ich spiele Gitarre. Und du? [pause] Ja, gern! Wann? [pause] Kommt ihr mit? [pause] Gut.",
+ "tail": "Gut."
+}

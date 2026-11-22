@@ -1,0 +1,30 @@
+{
+ "job": "a11_em_04",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a1-1/8",
+   "who": "Emma",
+   "parts": [
+    "Dann kaufen wir in der Stadt ein. Yuna kommt mit."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Emma",
+   "parts": [
+    "Um Viertel vor sechs."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Emma",
+   "parts": [
+    "Dann kaufen wir ein."
+   ]
+  }
+ ],
+ "script": "Dann kaufen wir in der Stadt ein. Yuna kommt mit. [pause] Um Viertel vor sechs. [pause] Dann kaufen wir ein. [pause]"
+}

@@ -1,0 +1,39 @@
+{
+ "job": "a11u_lu_01",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Das ist mein Freund Tim. Er ist zwölf Jahre alt."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Sein Vater ist Ingenieur und seine Mutter ist Ärztin."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Tim hat zwei Schwestern, aber er hat keinen Bruder."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Seine Oma wohnt in Berlin. Sie ist achtundsechzig Jahre alt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist mein Freund Tim. Er ist zwölf Jahre alt. [pause] Sein Vater ist Ingenieur und seine Mutter ist Ärztin. [pause] Tim hat zwei Schwestern, aber er hat keinen Bruder. [pause] Seine Oma wohnt in Berlin. Sie ist achtundsechzig Jahre alt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

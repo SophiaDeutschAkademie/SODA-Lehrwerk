@@ -1,0 +1,66 @@
+{
+ "job": "a11b_el_03",
+ "who": "Elif",
+ "voice": "Emily",
+ "voice_id": "OO0WT3lY2gVNwzZMAjAI",
+ "items": [
+  {
+   "pid": "a1-1/7",
+   "who": "Elif",
+   "parts": [
+    "Ich möchte einen Apfel und ein Wasser, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Elif",
+   "parts": [
+    "Nein, danke. Was kostet das?"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Elif",
+   "parts": [
+    "Yuna, wie ist dein Tag in Korea? Wann stehst du auf?"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Elif",
+   "parts": [
+    "Und wann ist die Schule aus?"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Elif",
+   "parts": [
+    "Was? So spät! Und danach?"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Elif",
+   "parts": [
+    "Und wann gehst du ins Bett?"
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Elif",
+   "parts": [
+    "Ja, hier fängt die Schule um acht an."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Elif",
+   "parts": [
+    "Wann gehst du ins Bett?"
+   ]
+  }
+ ],
+ "script": "Ich möchte einen Apfel und ein Wasser, bitte. [pause] Nein, danke. Was kostet das? [pause] Yuna, wie ist dein Tag in Korea? Wann stehst du auf? [pause] Und wann ist die Schule aus? [pause] Was? So spät! Und danach? [pause] Und wann gehst du ins Bett? [pause] Ja, hier fängt die Schule um acht an. [pause] Wann gehst du ins Bett? [pause] Gut.",
+ "tail": "Gut."
+}

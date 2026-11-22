@@ -1,0 +1,51 @@
+{
+ "job": "p1_em_01",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Emma",
+   "parts": [
+    "Hallo! Bist du Yuna?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Emma",
+   "parts": [
+    "Ich bin Emma. Willkommen in Köln!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Emma",
+   "parts": [
+    "Wie geht's?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Emma",
+   "parts": [
+    "Auch gut!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Emma",
+   "parts": [
+    "Woher kommst du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Emma",
+   "parts": [
+    "Hallo! Wie geht's?"
+   ]
+  }
+ ],
+ "script": "Hallo! Bist du Yuna? [pause] Ich bin Emma. Willkommen in Köln! [pause] Wie geht's? [pause] Auch gut! [pause] Woher kommst du? [pause] Hallo! Wie geht's?"
+}

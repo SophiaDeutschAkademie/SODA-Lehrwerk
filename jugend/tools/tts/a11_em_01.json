@@ -1,0 +1,79 @@
+{
+ "job": "a11_em_01",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "Emma",
+   "parts": [
+    "Yuna, das ist Elif. Sie ist meine Freundin."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Emma",
+   "parts": [
+    "Und das ist Lukas. Er ist dreizehn."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Emma",
+   "parts": [
+    "Yuna, wie ist deine Handynummer? Für den Klassenchat."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Emma",
+   "parts": [
+    "Danke! Jetzt bist du im Chat."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Emma",
+   "parts": [
+    "Meine Handynummer ist null, eins, fünf, zwei, drei, acht."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Emma",
+   "parts": [
+    "Wo wohnst du?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Emma",
+   "parts": [
+    "Das ist ein Radiergummi."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Emma",
+   "parts": [
+    "Nein, das ist kein Kuli. Das ist ein Bleistift."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Emma",
+   "parts": [
+    "Das ist eine Schere."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Emma",
+   "parts": [
+    "Ja, der, die, das. Typisch Deutsch!"
+   ]
+  }
+ ],
+ "script": "Yuna, das ist Elif. Sie ist meine Freundin. [pause] Und das ist Lukas. Er ist dreizehn. [pause] Yuna, wie ist deine Handynummer? Für den Klassenchat. [pause] Danke! Jetzt bist du im Chat. [pause] Meine Handynummer ist null, eins, fünf, zwei, drei, acht. [pause] Wo wohnst du? [pause] Das ist ein Radiergummi. [pause] Nein, das ist kein Kuli. Das ist ein Bleistift. [pause] Das ist eine Schere. [pause] Ja, der, die, das. Typisch Deutsch! [pause]"
+}

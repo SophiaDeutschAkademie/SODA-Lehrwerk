@@ -1,0 +1,79 @@
+{
+ "job": "a11_yu_05",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a1-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Und ich möchte eine Brezel und einen Apfelsaft."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Was kostet die Brezel?"
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Okay. Hier, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Ja, ich esse gern Fleisch. Aber ich esse keinen Fisch."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Ich möchte Wasser, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Sehr gut! Der Reis ist auch lecker."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Nein, danke. Ich bin satt."
+   ]
+  },
+  {
+   "pid": "a1-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Ich möchte eine Brezel."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Ich stehe um sieben Uhr auf. Die Schule fängt um halb neun an."
+   ]
+  },
+  {
+   "pid": "a1-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Um Viertel nach vier."
+   ]
+  }
+ ],
+ "script": "Und ich möchte eine Brezel und einen Apfelsaft. [pause] Was kostet die Brezel? [pause] Okay. Hier, bitte. [pause] Ja, ich esse gern Fleisch. Aber ich esse keinen Fisch. [pause] Ich möchte Wasser, bitte. [pause] Sehr gut! Der Reis ist auch lecker. [pause] Nein, danke. Ich bin satt. [pause] Ich möchte eine Brezel. [pause] Ich stehe um sieben Uhr auf. Die Schule fängt um halb neun an. [pause] Um Viertel nach vier. [pause]"
+}

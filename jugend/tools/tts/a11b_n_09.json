@@ -1,0 +1,90 @@
+{
+ "job": "a11b_n_09",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Stundenplan, die Stundenpläne.",
+    "Hier ist der Stundenplan."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "die Stunde, die Stunden.",
+    "Wir haben heute sechs Stunden."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "die Pause, die Pausen.",
+    "Wann ist Pause?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "das Lieblingsfach, die Lieblingsfächer.",
+    "Mein Lieblingsfach ist Musik."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "haben.",
+    "Ich habe heute Sport."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "finden.",
+    "Wie findest du Mathe?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "heute.",
+    "Heute ist Montag."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "wann.",
+    "Wann haben wir Kunst?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "die Uhr, die Uhren.",
+    "Es ist acht Uhr."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "schwer.",
+    "Ist Physik schwer?"
+   ]
+  }
+ ],
+ "script": "der Stundenplan, die Stundenpläne. Hier ist der Stundenplan. [pause] die Stunde, die Stunden. Wir haben heute sechs Stunden. [pause] die Pause, die Pausen. Wann ist Pause? [pause] das Lieblingsfach, die Lieblingsfächer. Mein Lieblingsfach ist Musik. [pause] haben. Ich habe heute Sport. [pause] finden. Wie findest du Mathe? [pause] heute. Heute ist Montag. [pause] wann. Wann haben wir Kunst? [pause] die Uhr, die Uhren. Es ist acht Uhr. [pause] schwer. Ist Physik schwer? [pause] Gut.",
+ "tail": "Gut."
+}
