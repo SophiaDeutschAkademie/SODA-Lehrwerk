@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<!--SODA_THEME_JS-->
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>청소년 독일어 발돋움 · A1–B1 청소년 독일어 교재 목차 | SODA Jugendliche</title>
+<meta name="theme-color" content="#14181E">
+<meta name="color-scheme" content="light dark">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SODA Jugendliche">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/pretendard.css">
+<style>
+/* Schrift: DM Sans (gekürzt auf Latein, Strichstärke 400–900), Copyright 2014 The DM Sans Project Authors, SIL Open Font License 1.1 (fonts/OFL.txt) */
+@font-face{font-family:"DM Sans";font-weight:400 900;font-style:normal;font-display:swap;src:url(fonts/DMSans-latin.woff) format("woff")}
+:root{
+  --bg:#FBF8F1;--surface:#FFFFFF;--ink:#2E3A55;--ink2:#5E687F;--line:#E9DFCB;--sand:#DECDB0;--soft:#F4ECDD;
+  --accent:#B87830;--accent-ink:#8A591D;--fill:#9C6420;--on-fill:#FFFFFF;--on-ink:#FBF8F1;
+  --de:"DM Sans","Pretendard Variable","Pretendard",system-ui,sans-serif;
+  --ko:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Noto Sans CJK KR","Malgun Gothic",sans-serif;
+}
+html[data-theme="dark"]{
+  --bg:#182033;--surface:#232D46;--ink:#F4EFE3;--ink2:#AAB3C7;--line:#36415E;--sand:#4D5979;--soft:#2B3654;
+  --accent:#DDA65B;--accent-ink:#E9BC7E;--fill:#DDA65B;--on-fill:#182033;--on-ink:#182033;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;min-height:100vh;min-height:100dvh;background:var(--bg);color:var(--ink);font-family:var(--ko);font-size:16px;line-height:1.6;-webkit-tap-highlight-color:transparent;word-break:keep-all;overflow-wrap:anywhere}
+h1,h2,h3,h4,p,ol,ul,dl,dd,figure{margin:0}
+ol,ul{padding:0;list-style:none}
+button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}
+a{color:inherit}
+.de{font-family:var(--de)}
+.nb{white-space:nowrap}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+
+/* 표지와 단계 계단 */
+.top{display:grid;gap:34px;padding:76px 0 34px}
+.hero{display:flex;flex-direction:column;align-items:flex-start}
+.mark{font-family:var(--de);font-weight:800;font-size:16px;line-height:1.2;letter-spacing:.01em;color:var(--accent-ink)}
+h1{margin-top:10px;font-weight:800;font-size:clamp(34px,8.6vw,58px);line-height:1.14;letter-spacing:-.035em}
+.sub{margin-top:10px;font-family:var(--de);font-weight:600;font-size:17px;line-height:1.3;color:var(--ink2)}
+.lead{margin-top:18px;max-width:33em;font-size:16px}
+.cta{margin-top:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:24px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:16px;line-height:1.2;text-decoration:none}
+.btn:active{transform:translateY(1px)}
+.hero .a2hs-btn{margin-top:10px}
+html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
+.note{margin-top:16px;padding-left:12px;border-left:3px solid var(--accent);font-size:14px;line-height:1.55;color:var(--ink2)}
+
+.stufen h2{font-weight:800;font-size:20px;line-height:1.3;letter-spacing:-.02em}
+.stufen .hint{margin-top:2px;font-size:14px;color:var(--ink2)}
+.stairs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;align-items:end;height:136px;margin-top:16px}
+.step{height:calc(44% + var(--i)*11.2%);padding:9px 0 0;border:1.5px solid var(--line);border-radius:12px 12px 5px 5px;background:var(--soft);color:var(--ink);font-family:var(--de);font-weight:800;font-size:14px;line-height:1.1;letter-spacing:-.01em;text-align:center;display:flex;align-items:flex-start;justify-content:center;transform-origin:50% 100%;transition:background-color .15s,border-color .15s,color .15s}
+.step:hover{border-color:var(--accent)}
+.step[aria-selected="true"]{background:var(--fill);border-color:var(--fill);color:var(--on-fill)}
+.groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:8px}
+.groups div{padding-top:7px;border-top:2px solid var(--sand);font-size:12px;line-height:1.35;color:var(--ink2)}
+.groups b{display:block;font-family:var(--de);font-weight:800;font-size:14px;color:var(--ink)}
+.groups span{font-family:var(--de);font-weight:500}
+@media (prefers-reduced-motion:no-preference){
+  .js .step{animation:rise .5s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i)*55ms)}
+  @keyframes rise{from{transform:scaleY(.55);opacity:0}to{transform:none;opacity:1}}
+}
+
+/* 단계별 목차 */
+.panel{display:grid;gap:22px;padding:30px 0 38px;border-top:1.5px solid var(--line)}
+.js .panel[hidden]{display:none}
+.p-code{display:inline-block;padding:3px 10px;border-radius:999px;background:var(--fill);color:var(--on-fill);font-family:var(--de);font-weight:800;font-size:14px;line-height:1.4}
+.p-name{margin-top:10px;font-family:var(--de);font-weight:900;font-size:clamp(34px,9vw,50px);line-height:1.05;letter-spacing:-.035em;overflow-wrap:normal;white-space:nowrap}
+.p-ko{margin-top:6px;font-weight:700;font-size:17px;color:var(--ink2)}
+.p-lead{margin-top:14px;font-size:15.5px}
+.p-info h3{margin-top:20px;font-weight:700;font-size:13px;line-height:1.3;color:var(--ink2)}
+.kann{margin-top:6px}
+.kann li{position:relative;padding-left:16px;font-size:15px;line-height:1.55}
+.kann li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.p-info dl{margin-top:16px;display:grid;gap:10px}
+.p-info dt{font-weight:700;font-size:13px;line-height:1.3;color:var(--ink2)}
+.p-info dd{margin-top:2px;font-size:14.5px;line-height:1.55}
+
+.leks{border-top:1px solid var(--line)}
+.lek{display:grid;grid-template-columns:30px minmax(0,1fr);gap:0 10px;padding:13px 0 14px;border-bottom:1px solid var(--line)}
+.num{width:28px;height:28px;margin-top:1px;border:1.5px solid var(--sand);border-radius:50%;display:grid;place-items:center;font-family:var(--de);font-weight:800;font-size:13.5px;line-height:1}
+.lek h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:1px 10px;line-height:1.3}
+.lek h3 .de{font-weight:700;font-size:18px;letter-spacing:-.015em}
+.lek h3 .ko{font-weight:600;font-size:13.5px;color:var(--ink2)}
+.lek dl{margin-top:6px;display:grid;gap:3px}
+.lek dl div{display:grid;grid-template-columns:42px minmax(0,1fr);gap:0 6px;align-items:baseline}
+.lek dt{font-weight:700;font-size:12px;line-height:1.5;color:var(--ink2)}
+.lek dd{font-size:14px;line-height:1.5}
+.lek dd.gr{font-family:var(--de);font-weight:500;color:var(--ink)}
+.sta,.tst{margin:10px 0;padding:11px 14px 12px;border-radius:12px}
+.sta{background:var(--soft)}
+.tst{border:1.5px solid var(--accent)}
+.sta b,.tst b{font-family:var(--de);font-weight:800;font-size:15px;line-height:1.3;letter-spacing:-.01em}
+.sta i,.tst i{margin-left:8px;font-style:normal;font-weight:600;font-size:12.5px;color:var(--ink2)}
+.sta p,.tst p{margin-top:2px;font-size:14px;line-height:1.5}
+.sta p span{font-family:var(--de);font-weight:700}
+
+/* 과 구성, 시험 */
+.more{display:grid;gap:34px;padding:34px 0 10px;border-top:1.5px solid var(--line)}
+.more h2{font-weight:800;font-size:20px;line-height:1.3;letter-spacing:-.02em}
+.more .hint{margin-top:2px;font-size:14px;color:var(--ink2)}
+.teile{margin-top:14px;display:grid;gap:0;counter-reset:t}
+.teile li{counter-increment:t;display:grid;grid-template-columns:30px minmax(0,1fr);gap:0 10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.teile li::before{content:counter(t);width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--on-ink);display:grid;place-items:center;font-family:var(--de);font-weight:800;font-size:13.5px;line-height:1}
+.teile b,.dazu b,.pruef b{display:block;font-family:var(--de);font-weight:700;font-size:16.5px;line-height:1.3;letter-spacing:-.01em}
+.teile span,.dazu span,.pruef span{display:block;font-size:14px;line-height:1.5;color:var(--ink2)}
+.dazu{margin-top:16px;display:grid;gap:10px}
+.dazu li{padding-left:12px;border-left:3px solid var(--sand)}
+.pruef{margin-top:14px;display:grid;gap:0}
+.pruef li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:0 10px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--line)}
+.pruef em{font-style:normal;font-family:var(--de);font-weight:800;font-size:15px;color:var(--accent-ink)}
+.weiter{margin-top:14px;font-size:14px;line-height:1.6;color:var(--ink2)}
+footer{padding:26px 0 44px;font-size:13px;line-height:1.5;color:var(--ink2)}
+footer a{text-underline-offset:3px}
+
+@media (min-width:560px){
+  .stairs{height:168px;gap:8px}
+  .groups{gap:8px}
+  .step{font-size:16px;padding-top:11px}
+  .groups div{font-size:13px}
+}
+@media (min-width:900px){
+  .wrap{padding:0 32px}
+  .top{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:end;padding:96px 0 46px}
+  .stairs{height:208px}
+  .panel{grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:52px;padding:40px 0 48px}
+  .p-name{font-size:46px}
+  .p-info{position:sticky;top:20px;align-self:start}
+  .more{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;padding:44px 0 14px}
+  .lek{grid-template-columns:34px minmax(0,1fr)}
+}
+@media print{
+  .cta,.note,.hint{display:none}
+  .js .panel[hidden]{display:grid}
+}
+/*SODA_DARK_SHARED*/
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="top">
+    <header class="hero">
+      <p class="mark" lang="de">SODA Jugendliche</p>
+      <h1>청소년 독일어 발돋움</h1>
+      <p class="sub" lang="de">Deutsch für Jugendliche, A1 bis B1</p>
+      <p class="lead">독일어를 처음 배우는 초등 고학년, 중학생, 고등학생을 위한 교재예요. 서울에서 온 Yuna가 쾰른의 학교에서 보내는 한 해를 따라가며 A1부터 B1까지 여섯 단계, 48과를 배워요.</p>
+      <p class="cta"><a class="btn" href="#inhalt">목차 보기</a></p>
+      <p class="note">지금은 목차만 볼 수 있어요. 본문은 A1.1부터 차례로 올라와요.</p>
+    </header>
+    <section class="stufen" aria-labelledby="stufen-h">
+      <h2 id="stufen-h">여섯 단계</h2>
+      <p class="hint">단계를 누르면 그 단계의 목차가 열려요.</p>
+      <div class="stairs" role="tablist" aria-label="단계 고르기">
+<!--STAIRS-->
+      </div>
+      <div class="groups">
+<!--GROUPS-->
+      </div>
+    </section>
+  </div>
+
+  <div id="inhalt">
+<!--PANELS-->
+  </div>
+
+  <div class="more">
+    <section aria-labelledby="aufbau-h">
+      <h2 id="aufbau-h">한 과는 이렇게 진행돼요</h2>
+      <p class="hint">모든 과가 같은 여섯 순서로 이어져요.</p>
+      <ol class="teile">
+<!--AUFBAU-->
+      </ol>
+      <ul class="dazu">
+<!--EXTRAS-->
+      </ul>
+    </section>
+    <section aria-labelledby="pruef-h">
+      <h2 id="pruef-h">단계를 마치면 볼 수 있는 시험</h2>
+      <p class="hint">A1.2, A2.2, B1.2의 마지막에 시험 형식 연습이 있어요.</p>
+      <ul class="pruef">
+<!--PRUEF-->
+      </ul>
+      <p class="weiter">단계마다 과 8개, 복습과 프로젝트를 하는 Station 2개, 평가 1개가 있어요. B1을 마친 뒤에는 SODA Lehrwerk의 독해, 듣기, 쓰기 훈련과 모의고사로 이어서 공부할 수 있어요.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p><span class="de">SODA Jugendliche</span>, 청소년 독일어 발돋움. 목차 __DATE__ 공개. <a href="../#inhalt">SODA Lehrwerk 목차로</a></p>
+  </footer>
+</main>
+<!--A2HS-->
+<script>
+(function(){
+  var d=document,ids=__IDS__,cur=0;
+  d.documentElement.classList.add('js');
+  var tabs=[].slice.call(d.querySelectorAll('.step')),panels=ids.map(function(id){return d.getElementById('p-'+id)});
+  function show(i,focus,push){
+    cur=i;
+    tabs.forEach(function(t,k){var on=k===i;t.setAttribute('aria-selected',on?'true':'false');t.tabIndex=on?0:-1;panels[k].hidden=!on});
+    if(focus)tabs[i].focus();
+    if(push){try{history.replaceState(null,'','#'+ids[i])}catch(e){}}
+  }
+  tabs.forEach(function(t,k){
+    t.addEventListener('click',function(){show(k,false,true)});
+    t.addEventListener('keydown',function(e){
+      var n=e.key==='ArrowRight'?k+1:e.key==='ArrowLeft'?k-1:e.key==='Home'?0:e.key==='End'?ids.length-1:-1;
+      if(n<0||n>=ids.length)return;
+      e.preventDefault();show(n,true,true);
+    });
+  });
+  function fromHash(){var i=ids.indexOf((location.hash||'').slice(1));show(i>=0?i:cur,false,false)}
+  window.addEventListener('hashchange',fromHash);fromHash();
+})();
+</script>
+<script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
