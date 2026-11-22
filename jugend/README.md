@@ -17,7 +17,7 @@
 | B1.1 | Mitreden 의견 말하기 | 가족과 세대, 공부, 우정, 뉴스, 건강, 여행, 기후, 참여 | Stufentest B1.1 |
 | B1.2 | Weiterdenken 깊이 생각하기 | 직업, 소비, 주거, 예술, 역사, 기술, 문화, 마무리 | Stufentest B1.2 |
 
-단계마다 과 8개, Station 2개(4과와 8과 뒤, 복습과 프로젝트), 평가 1개(Stufentest)가 있습니다. 모두 48과입니다. 시험 형식 연습은 넣지 않습니다. 목차 아래에는 단계 수준에 맞는 Goethe 시험 이름만 안내합니다.
+단계마다 과 8개, Station 2개(4과와 8과 뒤, 복습과 프로젝트), 평가 1개(Stufentest)가 있습니다. 모두 48과입니다. 시험 형식 연습과 시험 안내는 넣지 않습니다.
 
 한 과는 여섯 순서로 진행합니다: Einstieg, Hören und Lesen, Wortschatz, Grammatik, Training, Sprechen und Schreiben. 과마다 Aussprache(발음), Land und Leute(문화), Lerntipp(공부 요령)이 함께 들어갑니다.
 

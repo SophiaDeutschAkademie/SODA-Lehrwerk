@@ -47,7 +47,12 @@ def stairs(data):
 
 
 def groups(data):
-    return '\n'.join('        <div><b>%s</b><span>%s</span></div>' % (esc(s['code']), esc(s['pruefung'])) for s in data['stufen'])
+    codes = []
+    for lv in data['levels']:
+        c = lv['code'].split('.')[0]
+        if c not in codes:
+            codes.append(c)
+    return '\n'.join('        <div><b>%s</b></div>' % esc(c) for c in codes)
 
 
 def item(it, n):
@@ -102,7 +107,6 @@ def main():
         ('<!--PANELS-->', panels(data)),
         ('<!--AUFBAU-->', '\n'.join('        <li><div><b lang="de">%s</b><span>%s</span></div></li>' % (esc(a['de']), esc(a['ko'])) for a in data['aufbau'])),
         ('<!--EXTRAS-->', '\n'.join('        <li><b lang="de">%s</b><span>%s</span></li>' % (esc(a['de']), esc(a['ko'])) for a in data['extras'])),
-        ('<!--PRUEF-->', '\n'.join('        <li><em>%s</em><div><b>%s</b><span>%s</span></div></li>' % (esc(s['code']), esc(s['name']), esc(s['alter'])) for s in data['stufen'])),
         ('__IDS__', json.dumps([lv['id'] for lv in data['levels']])),
         ('__DATE__', date),
     )

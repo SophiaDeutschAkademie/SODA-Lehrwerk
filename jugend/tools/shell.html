@@ -64,7 +64,6 @@ html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
 .groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:8px}
 .groups div{padding-top:7px;border-top:2px solid var(--sand);font-size:12px;line-height:1.35;color:var(--ink2)}
 .groups b{display:block;font-family:var(--de);font-weight:800;font-size:14px;color:var(--ink)}
-.groups span{font-family:var(--de);font-weight:500}
 @media (prefers-reduced-motion:no-preference){
   .js .step{animation:rise .5s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i)*55ms)}
   @keyframes rise{from{transform:scaleY(.55);opacity:0}to{transform:none;opacity:1}}
@@ -104,21 +103,19 @@ html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
 .sta p,.tst p{margin-top:2px;font-size:14px;line-height:1.5}
 .sta p span{font-family:var(--de);font-weight:700}
 
-/* 과 구성, 시험 */
+/* 과 구성 */
 .more{display:grid;gap:34px;padding:34px 0 10px;border-top:1.5px solid var(--line)}
 .more h2{font-weight:800;font-size:20px;line-height:1.3;letter-spacing:-.02em}
 .more .hint{margin-top:2px;font-size:14px;color:var(--ink2)}
 .teile{margin-top:14px;display:grid;gap:0;counter-reset:t}
 .teile li{counter-increment:t;display:grid;grid-template-columns:30px minmax(0,1fr);gap:0 10px;padding:10px 0;border-bottom:1px solid var(--line)}
 .teile li::before{content:counter(t);width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--on-ink);display:grid;place-items:center;font-family:var(--de);font-weight:800;font-size:13.5px;line-height:1}
-.teile b,.dazu b,.pruef b{display:block;font-family:var(--de);font-weight:700;font-size:16.5px;line-height:1.3;letter-spacing:-.01em}
-.teile span,.dazu span,.pruef span{display:block;font-size:14px;line-height:1.5;color:var(--ink2)}
-.dazu{margin-top:16px;display:grid;gap:10px}
+.teile b,.dazu b{display:block;font-family:var(--de);font-weight:700;font-size:16.5px;line-height:1.3;letter-spacing:-.01em}
+.teile span,.dazu span{display:block;font-size:14px;line-height:1.5;color:var(--ink2)}
+.dazu{margin-top:14px;display:grid;gap:12px}
 .dazu li{padding-left:12px;border-left:3px solid var(--sand)}
-.pruef{margin-top:14px;display:grid;gap:0}
-.pruef li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:0 10px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--line)}
-.pruef em{font-style:normal;font-family:var(--de);font-weight:800;font-size:15px;color:var(--accent-ink)}
-.weiter{margin-top:14px;font-size:14px;line-height:1.6;color:var(--ink2)}
+.more h2.zwei{margin-top:30px}
+.weiter{margin-top:8px;font-size:15px;line-height:1.6}
 footer{padding:26px 0 44px;font-size:13px;line-height:1.5;color:var(--ink2)}
 footer a{text-underline-offset:3px}
 
@@ -179,17 +176,14 @@ footer a{text-underline-offset:3px}
       <ol class="teile">
 <!--AUFBAU-->
       </ol>
+    </section>
+    <section aria-labelledby="dazu-h">
+      <h2 id="dazu-h">과마다 함께 들어 있어요</h2>
       <ul class="dazu">
 <!--EXTRAS-->
       </ul>
-    </section>
-    <section aria-labelledby="pruef-h">
-      <h2 id="pruef-h">단계를 마치면 볼 수 있는 시험</h2>
-      <p class="hint">각 단계의 수준에 맞는 Goethe 시험이에요.</p>
-      <ul class="pruef">
-<!--PRUEF-->
-      </ul>
-      <p class="weiter">단계마다 과 8개, 복습과 프로젝트를 하는 Station 2개, 평가 1개가 있어요. B1을 마친 뒤에는 SODA Lehrwerk의 독해, 듣기, 쓰기 훈련과 모의고사로 이어서 공부할 수 있어요.</p>
+      <h2 class="zwei">한 단계는 이렇게 이루어져요</h2>
+      <p class="weiter">단계마다 과 8개, 복습과 프로젝트를 하는 Station 2개, 단계 평가 1개가 있어요. B1을 마친 뒤에는 SODA Lehrwerk의 독해, 듣기, 쓰기 훈련으로 이어서 공부할 수 있어요.</p>
     </section>
   </div>
 
