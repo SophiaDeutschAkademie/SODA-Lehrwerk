@@ -111,6 +111,19 @@ NOINDEX = ['sprechen/index.html'] + ['zertifikat/%s/%s' % (d, f)
                                      for d in ('goethe-a2', 'goethe-b1', 'goethe-b2', 'telc-b1', 'telc-b2', 'telc-c1-hs')
                                      for f in ('index.html', 'digital.html')]
 
+# 청소년 교재(jugend/)는 jugend/tools/status.json 의 public 이 false 이면 비공개: 검색 태그와 사이트맵에서 빼고 noindex 를 넣습니다.
+def _jugend_public():
+    try:
+        return bool(json.load(open(os.path.join(ROOT, 'jugend', 'tools', 'status.json'), encoding='utf-8')).get('public', True))
+    except (OSError, ValueError):
+        return True
+
+
+JUGEND_PUBLIC = _jugend_public()
+if not JUGEND_PUBLIC:
+    PAGES = [x for x in PAGES if not x[0].startswith('jugend/')]
+    NOINDEX = NOINDEX + ['jugend/index.html']
+
 BEGIN = '<!-- seo:begin (tools/seo.py에서 만듦, 직접 고치지 마세요) -->'
 END = '<!-- seo:end -->'
 BLOCK_RE = re.compile(r'\n?<!-- seo:begin[^>]*-->.*?<!-- seo:end -->', re.S)
@@ -218,7 +231,7 @@ def main():
                 urls.append((url_of(p), lastmod(p), '0.6'))
     # 청소년 교재에서 본문이 올라온 화면 (jugend/tools/lektion.py site 가 적어 둔 목록)
     opn = os.path.join(ROOT, 'jugend', 'tools', 'open.json')
-    if os.path.exists(opn):
+    if os.path.exists(opn) and JUGEND_PUBLIC:
         for pid in json.load(open(opn))['open']:
             p = 'jugend/%s/index.html' % pid
             if os.path.exists(os.path.join(ROOT, p)):

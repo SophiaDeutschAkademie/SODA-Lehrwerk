@@ -1,6 +1,21 @@
 # SODA Jugendliche
 
-청소년 독일어 교재 「청소년 독일어 발돋움」입니다. 독일어를 처음 배우는 초등 고학년, 중학생, 고등학생이 A1부터 B1까지 배웁니다. 목차는 여섯 단계 모두 있고, 본문은 A1.1과 A1.2(A1 과정 16과)가 올라와 있습니다. 나머지 단계는 차례로 올립니다. 본문이 올라온 과는 목차에서 줄을 누르면 열립니다.
+청소년 독일어 교재 「청소년 독일어 발돋움」입니다. 독일어를 처음 배우는 초등 고학년, 중학생, 고등학생이 A1부터 B1까지 배웁니다. 목차는 여섯 단계 모두 있고, 본문은 A1.1과 A1.2(A1 과정 16과)가 올라와 있습니다. 나머지 단계는 차례로 올립니다.
+
+## 공개 상태
+
+지금은 **비공개**입니다 (`tools/status.json` 의 `public` 이 `false`).
+
+- Lehrwerk 목차의 청소년 칸은 「작업 중」으로 보이고 누를 수 없습니다.
+- 모든 화면에 `noindex` 가 들어가고, 사이트맵과 알림에는 나오지 않습니다.
+- 주소를 직접 열면 볼 수 있습니다: https://sophiadeutschakademie.github.io/SODA-Lehrwerk/jugend/
+
+다시 공개하려면
+
+1. `tools/status.json` 의 `public` 을 `true` 로 바꿉니다.
+2. `python3 jugend/tools/lektion.py site` 와 `JUGEND_DATE=2026.12.01 python3 jugend/tools/build.py` 를 실행합니다(날짜는 그날 날짜).
+3. 루트 `index.html` 의 청소년 칸을 링크가 있는 칸으로 되돌립니다(커밋 `525d023` 의 모양을 참고).
+4. `notices.json` 에 알림을 올립니다. 본문이 올라온 과는 목차에서 줄을 누르면 열립니다.
 
 - 주소: https://sophiadeutschakademie.github.io/SODA-Lehrwerk/jugend/
 - 목차 묶음: Lehrbuch

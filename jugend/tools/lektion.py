@@ -444,6 +444,14 @@ def inhalt():
 _PAGES = []
 
 
+def is_public():
+    """청소년 교재 공개 여부 (jugend/tools/status.json). 비공개이면 화면마다 noindex 를 넣는다."""
+    try:
+        return bool(json.load(open(os.path.join(T, 'status.json'), encoding='utf-8')).get('public', True))
+    except (OSError, ValueError):
+        return True
+
+
 def pages():
     """[(id, 단계, 이름, 종류, 번호, 독일어 제목, 한국어 주제, 목표, 문법)] 단계 순서대로"""
     if _PAGES:
@@ -1531,6 +1539,7 @@ class Page:
             ort = '<span lang="de">%s %s</span> · %s' % (E(lv['code']), E(lv['de']), E(p['ko'])); h1 = p['de']; thema = p['ziel']
         url = SITE + 'jugend/%s/%s/' % (lv['id'], p['slug'])
         rep = {
+            '__ROBOTS__': '' if is_public() else '<meta name="robots" content="noindex">\n',
             '__TITLE__': E(title), '__DESC__': E(desc), '__URL__': url, '__ID__': self.pid, '__LEVEL__': lv['id'], '__TYP__': p['typ'],
             '__ORT__': ort, '__H1__': E(h1), '__THEMA__': ko(thema), '__STEPS__': steps, '__BODY__': body.replace('__ENDE__', ende),
             '__DATA__': json.dumps(self.data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'),
