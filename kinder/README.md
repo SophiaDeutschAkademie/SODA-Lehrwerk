@@ -39,6 +39,12 @@
 
 그림은 생성한 그대로 쓰고, 화면에서 CSS로만 움직입니다. 장면 그림은 빌드할 때 덩어리(아이들, 물건, Sofi)로 나눠 따로 놓기 때문에 덩어리마다 조금씩 다르게 흔들립니다. 누가 말하는 동안에는 그 사람이 들어 있는 덩어리가 통통 뜁니다. 카드 그림, 안내하는 Sofi, 표지의 Sofi도 조금씩 움직입니다. 기기에서 「동작 줄이기」를 켜 두면 모든 움직임이 멈춥니다.
 
+## Sofi의 눈
+
+생성한 Sofi 그림의 눈은 남색 타원뿐이라 눈이 없는 것처럼 보였습니다. 그래서 눈마다 호박색 홍채 고리와 흰 반짝임 두 개를 덧그렸습니다(`tools/sofi_augen.py`). 원래의 남색 타원은 테두리와 눈동자로 남아 있습니다. 눈을 감은 `sofi_schlaf` 와 `sofi_hoer` 의 감은 눈은 그대로입니다.
+
+Sofi 그림을 새로 생성하면 `python3 kinder/tools/sofi_augen.py` 를 한 번 실행합니다. `img/c/` 의 Sofi 자세와 얼굴 그림, `icons/` 의 아이콘에 눈을 그리고, 이미 눈이 있는 그림은 건너뜁니다. 날개에 눈이 가린 `sofi_hoer` 자세는 눈의 자리를 도구 안에 적어 두었으므로, 이 자세를 새로 생성했다면 `HOER` 값을 고쳐야 합니다.
+
 ## 폴더
 
 ```
@@ -47,7 +53,7 @@ data/kNN.js           단원 자료 (단원을 열 때 하나씩 받음)
 audio/kNN/            단원 음성: s01… Sofi, l01… Lena, b01… Ben, chant.mp3 리듬 놀이
 audio/c/              공통 음성: 칭찬(fb_*), 활동 이름(st_*), 인사
 img/kNN/              단원 그림: 장면 덩어리(szene_pN.webp), 카드(c1–c6.webp)
-img/c/                Sofi 네 자세와 등장인물 얼굴
+img/c/                Sofi 네 자세와 등장인물 얼굴 (Sofi의 눈은 tools/sofi_augen.py 로 덧그림)
 fonts/                글꼴 SodaFibel (OFL.txt 참고)
 icons/, manifest.webmanifest   홈 화면 앱
 tools/                원본과 만드는 도구
@@ -61,6 +67,7 @@ src/kNN.json  단원 원본: 이야기, 카드, 문장 틀, 대화, 리듬, 집�
 shell.html    화면 틀 (CSS와 스크립트)
 blocks/       Lehrwerk 공통 블록 (다크 모드, 홈 화면에 앱 추가)
 build.py      검사, 음성 대본, 그림 프롬프트, 음성 자르기, 그림 넣기, 빌드
+sofi_augen.py Sofi 그림에 눈(홍채와 반짝임) 그리기
 test.py       화면 검사 (Playwright)
 tts/          음성 대본(<job>.json), plan.json, 그림 프롬프트(prompts.json)
 audio/, img/  단원별 음성 대응표와 장면 배치표 (build.py 가 만듦)
