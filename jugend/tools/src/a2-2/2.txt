@@ -1,0 +1,290 @@
+@id a2-2/2
+
+== einstieg
+bild: A classroom. SCHNEIDER stands next to a wall map of Germany without any text and points at a spot in the upper right part. YUNA and LUKAS sit at a desk with a travel guide book. ELIF raises her hand.
+alt: 교실이에요. Frau Schneider가 독일 지도의 오른쪽 위를 가리키고 있어요. Yuna와 Lukas는 여행 안내 책을 펴 놓고 앉아 있고, Elif는 손을 들고 있어요.
+lead: 6월 중순이에요. 8b는 두 주 뒤에 베를린으로 수학여행(Klassenfahrt)을 가요. 오늘은 베를린에서 무엇을 할지 정하고, 숙소에 전화해서 궁금한 것을 물어요.
+mission: 이 과를 마치면 여행 계획을 세우고, 숙소에 문의하고, 제안하고 정할 수 있어요.
+wort: die Klassenfahrt | 수학여행
+wort: die Jugendherberge | 유스호스텔
+wort: Wir könnten ins Museum gehen. | 우리 박물관에 갈 수도 있어.
+wort: Weißt du, wann wir fahren? | 우리가 언제 가는지 알아?
+mc: Weißt du, wann wir fahren? 이 문장에서 동사 fahren은 어디에 있나요? | 맨 끝* | wann 바로 뒤 | 맨 앞 => 다른 문장 안에 들어간 질문에서는 동사가 맨 끝으로 가요.
+
+== hoeren
+-- dialog A | Was machen wir in Berlin? | 수업 시간이에요. Frau Schneider와 8b가 수학여행 일정을 짜요.
+vor: 들으면서 찾아보세요. 유스호스텔에는 누가 전화하나요?
+Schneider: In zwei Wochen fahren wir nach Berlin. Die 8a fährt an die Ostsee und die 8c in die Berge. Wir fahren in die Hauptstadt! | 두 주 뒤에 우리는 베를린에 가요. 8a는 발트해로, 8c는 산으로 가요. 우리는 수도로 가요!
+Lukas: Wissen Sie schon, wann der Zug abfährt? | 기차가 언제 출발하는지 벌써 아세요?
+Schneider: Ja, am Montag um acht Uhr. Wir treffen uns um halb acht am Bahnhof. | 네, 월요일 8시예요. 7시 반에 역에서 만나요.
+Lukas: Halb acht? Oh nein. | 7시 반이요? 아, 큰일이다.
+Schneider: Jetzt planen wir das Programm. Was möchtet ihr in Berlin machen? | 이제 일정을 짜요. 베를린에서 무엇을 하고 싶어요?
+Yuna: Wir könnten das Brandenburger Tor besichtigen. Ich war schon dort. Es ist toll. | 브란덴부르크 문을 구경할 수도 있어요. 저는 벌써 가 봤어요. 멋져요.
+Elif: Ich möchte wissen, ob wir auch shoppen gehen können. | 쇼핑도 하러 갈 수 있는지 알고 싶어요.
+Schneider: Am Mittwochnachmittag habt ihr frei. Dann könnt ihr in die Stadt gehen. | 수요일 오후는 자유 시간이에요. 그때 시내에 갈 수 있어요.
+Emma: Wir könnten auch eine Fahrt mit dem Schiff machen. | 배를 타 볼 수도 있어요.
+Schneider: Gute Idee! Ich frage, was das kostet. | 좋은 생각이에요! 얼마인지 물어볼게요.
+Lukas: Und wer fragt, ob es in der Jugendherberge WLAN gibt? | 그런데 유스호스텔에 와이파이가 있는지는 누가 물어봐요?
+Schneider: Du, Lukas. Ruf bitte heute Nachmittag mit Yuna dort an. | Lukas가요. 오늘 오후에 Yuna와 같이 거기에 전화해 봐요.
+
+-- dialog B | Anruf in der Jugendherberge | 오후에 Lukas와 Yuna가 베를린의 유스호스텔에 전화해요. | Mann=Mitarbeiter
+vor: 들으면서 찾아보세요. 아침 식사는 몇 시부터 몇 시까지인가요?
+Mann: Jugendherberge Berlin, guten Tag! | 베를린 유스호스텔입니다, 안녕하세요!
+Lukas: Guten Tag, hier ist Lukas von der Klasse 8b aus Köln. Wir kommen in zwei Wochen. | 안녕하세요, 저는 쾰른 8b 반의 Lukas예요. 저희가 두 주 뒤에 가요. | say=Guten Tag, hier ist Lukas von der Klasse acht b aus Köln. Wir kommen in zwei Wochen.
+Mann: Ah ja, die Klasse von Frau Schneider. Was möchtest du wissen? | 아, Schneider 선생님 반이군요. 뭐가 궁금해요?
+Lukas: Können Sie mir sagen, ob es WLAN gibt? | 와이파이가 있는지 알려 주실 수 있어요?
+Mann: Ja, im ganzen Haus. Es ist kostenlos. | 네, 건물 어디에나 있어요. 무료예요.
+Lukas: Super! Yuna, frag du weiter. | 좋았어! Yuna, 네가 이어서 물어봐.
+Yuna: Guten Tag. Ich möchte wissen, wann es Frühstück gibt. | 안녕하세요. 아침 식사가 언제인지 알고 싶어요.
+Mann: Von sieben bis neun Uhr. | 7시부터 9시까지예요.
+Yuna: Und wissen Sie, wie viele Betten ein Zimmer hat? | 그리고 방 하나에 침대가 몇 개인지 아세요?
+Mann: Vier oder sechs. Bettwäsche bekommt ihr von uns. | 네 개나 여섯 개예요. 침구는 우리가 줘요.
+Yuna: Noch eine Frage: Wie kommen wir vom Bahnhof zur Jugendherberge? | 하나만 더 여쭤볼게요. 역에서 유스호스텔까지 어떻게 가요?
+Mann: Nehmt die S-Bahn. Die Fahrt dauert nur zehn Minuten. | 전철(S-Bahn)을 타요. 10분밖에 안 걸려요.
+Yuna: Vielen Dank für die Informationen. Auf Wiederhören! | 알려 주셔서 감사합니다. 안녕히 계세요!
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: 8b의 기차는 언제 출발하나요? | 월요일 8시* | 월요일 7시 반 | 수요일 8시
+rf: Die 8a fährt in die Berge. | f => Die 8a fährt an die Ostsee und die 8c in die Berge.
+mc: Was möchte Elif wissen? | ob sie shoppen gehen können* | wann der Zug abfährt | ob es WLAN gibt
+mc: Was schlägt Emma vor? | eine Fahrt mit dem Schiff* | einen Tag im Museum | einen Ausflug in die Berge
+rf: In der Jugendherberge gibt es kein WLAN. | f => Ja, im ganzen Haus. Es ist kostenlos.
+mc: Wann gibt es Frühstück? | von sieben bis neun Uhr* | von acht bis zehn Uhr | um halb acht
+mc: 역에서 유스호스텔까지는 무엇을 타고 가나요? | 전철(S-Bahn)* | 버스 | 배
+
+-- kultur 베를린, 나뉘었던 수도
+p: 베를린은 독일의 수도이고 가장 큰 도시예요. 350만 명이 넘는 사람이 살아요. 독일 의회가 모이는 건물 Reichstag에는 유리로 된 둥근 지붕이 있고, 그 안에 올라가 볼 수 있어요.
+p: 베를린은 1961년부터 1989년까지 장벽(die Mauer)으로 동쪽과 서쪽이 나뉘어 있었어요. 지금도 장벽의 일부가 남아 있어요. 그림이 그려진 긴 장벽 East Side Gallery가 가장 유명해요.
+p: 브란덴부르크 문(Brandenburger Tor)은 장벽 바로 옆에 있어서 오랫동안 지나갈 수 없었어요. 지금은 하나가 된 독일을 나타내는 곳이에요.
+mc: 베를린이 장벽으로 나뉘어 있던 때는 언제인가요? | 1961년부터 1989년까지* | 1945년부터 1961년까지 | 1989년부터 지금까지
+
+== wortschatz
+-- gruppe Die Klassenfahrt | 수학여행
+die Klassenfahrt, die Klassenfahrten | 수학여행 | Die Klassenfahrt dauert fünf Tage. | 수학여행은 닷새 동안 해요.
+die Jugendherberge, die Jugendherbergen | 유스호스텔 | Wir schlafen in einer Jugendherberge. | 우리는 유스호스텔에서 자요.
+die Hauptstadt, die Hauptstädte | 수도 | Berlin ist die Hauptstadt von Deutschland. | 베를린은 독일의 수도예요.
+das Programm, die Programme | 일정, 프로그램 | Das Programm ist fertig. | 일정이 다 짜였어요.
+planen, hat geplant | 계획하다 | Wir planen eine Reise. | 우리는 여행을 계획해요.
+der Ausflug, die Ausflüge | 소풍, 나들이 | Am Samstag machen wir einen Ausflug. | 토요일에 우리는 소풍을 가요.
+die Sehenswürdigkeit, die Sehenswürdigkeiten | 명소, 볼거리 | Berlin hat viele Sehenswürdigkeiten. | 베를린에는 볼거리가 많아요.
+besichtigen, hat besichtigt | 구경하다, 관람하다 | Wir besichtigen den Dom. | 우리는 대성당을 구경해요.
+das Schiff, die Schiffe | 배 | Das Schiff fährt um zehn Uhr. | 배는 10시에 떠나요.
+die Ostsee | 발트해 | Die 8a fährt an die Ostsee. | 8a는 발트해로 가요.
+der Koffer, die Koffer | 여행 가방 | Mein Koffer ist zu schwer. | 내 여행 가방은 너무 무거워요.
+packen, hat gepackt | (짐을) 싸다 | Ich packe heute meinen Koffer. | 나는 오늘 가방을 싸요.
+mitnehmen (du nimmst mit, er nimmt mit) | 가져가다, 데려가다 | Nimm eine Jacke mit! | 재킷을 가져가!
+
+-- gruppe In der Jugendherberge | 유스호스텔에서
+das Frühstück | 아침 식사 | Das Frühstück ist um sieben. | 아침 식사는 7시예요.
+die Übernachtung, die Übernachtungen | 숙박 | Eine Übernachtung kostet 30 Euro. | 하룻밤 묵는 데 30유로예요.
+die Nacht, die Nächte | 밤 | Wir bleiben vier Nächte. | 우리는 나흘 밤을 묵어요.
+das WLAN | 와이파이 | Gibt es hier WLAN? | 여기 와이파이가 있어요?
+die Bettwäsche | 침구 | Die Bettwäsche bekommt ihr von uns. | 침구는 우리가 줘요.
+der Schlüssel, die Schlüssel | 열쇠 | Wo ist der Schlüssel? | 열쇠가 어디 있어요?
+die Rezeption | 접수처, 프런트 | Fragen Sie bitte an der Rezeption. | 프런트에 물어보세요.
+die Information, die Informationen | 정보 | Vielen Dank für die Informationen. | 알려 주셔서 감사합니다.
+reservieren, hat reserviert | 예약하다 | Ich möchte ein Zimmer reservieren. | 방을 하나 예약하고 싶어요.
+
+-- gruppe Fragen und Vorschläge | 질문과 제안
+wissen (du weißt, er weiß) | 알다 | Ich weiß es nicht. | 나는 모르겠어요.
+ob | ~인지 (아닌지) | Ich weiß nicht, ob er kommt. | 그가 올지 모르겠어요.
+der Vorschlag, die Vorschläge | 제안 | Ich habe einen Vorschlag. | 제안이 하나 있어요.
+vorschlagen (du schlägst vor, er schlägt vor) | 제안하다 | Was schlägst du vor? | 너는 뭘 제안해?
+dafür | 찬성하는 | Ich bin dafür. | 나는 찬성이에요.
+dagegen | 반대하는 | Ich bin dagegen. | 나는 반대예요.
+einverstanden | 동의하는 | Bist du einverstanden? | 너도 좋아?
+entscheiden, hat entschieden | 정하다, 결정하다 | Wir entscheiden morgen. | 우리는 내일 정해요.
+
+-- bilder
+die Jugendherberge, die Jugendherbergen: a simple room with two bunk beds and two backpacks on the floor
+das Schiff, die Schiffe: a tour boat with passengers on a river
+die Ostsee: a sandy beach with a roofed wicker beach chair and small waves
+der Koffer, die Koffer: a suitcase with wheels
+packen, hat gepackt: a teenager who puts folded clothes into an open suitcase
+der Ausflug, die Ausflüge: three teenagers with backpacks who walk along a path between trees
+die Sehenswürdigkeit, die Sehenswürdigkeiten: two tourists who take photos of a large old city gate with columns
+das Frühstück: a breakfast table with bread rolls, cheese, a boiled egg and a glass of juice
+der Schlüssel, die Schlüssel: a key with a round blank tag
+die Bettwäsche: a pillow and folded bed sheets on a bed
+die Rezeption: a hotel front desk seen from the front, a tall counter with a small bell and a lamp, a smiling clerk in a shirt stands behind the counter
+die Nacht, die Nächte: roofs of houses at night under a moon and stars
+
+-- tafel wissen | 알다
+p: wissen은 ich와 er, sie, es의 모양이 같고 끝에 -t가 붙지 않아요. 줄을 누르면 소리가 나요.
+r: ich = weiß ; wir = wissen | say=ich weiß, wir wissen
+r: du = weißt ; ihr = wisst | say=du weißt, ihr wisst
+r: er, sie, es = weiß ; sie, Sie = wissen | say=er weiß, sie wissen
+
+-- aussprache 문장 안에 들어간 질문 | 끝을 올릴까요, 내릴까요?
+p: 질문이 다른 문장 안에 들어가면 억양은 앞부분을 따라요. Ich möchte wissen, …으로 시작하면 질문이 아니라서 끝을 내려요.
+p: Weißt du, …?나 Können Sie mir sagen, …?로 시작하면 질문이라서 끝을 올려요. 쉼표에서는 짧게 쉬어요.
+hör: Ich möchte wissen, wann wir fahren. | 끝을 내려요
+hör: Weißt du, wann wir fahren? | 끝을 올려요
+hör: Können Sie mir sagen, ob es WLAN gibt? | 끝을 올려요
+
+== grammatik
+-- punkt Indirekte Fragen mit Fragewort | 의문사가 있는 질문을 문장 안에 넣기
+bsp: Wissen Sie, *wann* der Zug *abfährt*? | 기차가 언제 출발하는지 아세요?
+bsp: Ich möchte wissen, *wann* es Frühstück *gibt*. | 아침 식사가 언제인지 알고 싶어요.
+bsp: Ich frage, *was* das *kostet*. | 그게 얼마인지 물어볼게요.
+finde: Wann fährt der Zug ab?를 Wissen Sie, … 뒤에 넣으면 동사는 어떻게 되나요? | 맨 끝으로 가서 abfährt가 돼요* | 그대로 fährt … ab이에요 | 맨 앞으로 와요
+regel: 질문을 Weißt du, …?, Ich möchte wissen, …, Können Sie mir sagen, …? 뒤에 넣으면 더 공손하게 물을 수 있어요. 의문사(wann, wo, was, wie)는 그대로 두고, 동사를 맨 끝으로 보내요. 분리 동사는 다시 붙여 써요.
+| 바로 묻기 | 문장 안에 넣어 묻기
+| Wann *fährt* der Zug *ab*? | Wissen Sie, wann der Zug *abfährt*?
+| Wo *ist* die Jugendherberge? | Weißt du, wo die Jugendherberge *ist*?
+| Was *kostet* das? | Ich möchte wissen, was das *kostet*.
+| Wie viele Betten *hat* ein Zimmer? | Können Sie mir sagen, wie viele Betten ein Zimmer *hat*?
+merke: 앞부분과 질문 사이에는 쉼표를 찍어요. weil, dass, wenn 문장처럼 동사가 맨 끝이에요.
+
+-- punkt Indirekte Fragen mit ob | 의문사가 없는 질문에는 ob
+bsp: Können Sie mir sagen, *ob* es WLAN *gibt*? | 와이파이가 있는지 알려 주실 수 있어요?
+bsp: Ich möchte wissen, *ob* wir shoppen gehen *können*. | 쇼핑하러 갈 수 있는지 알고 싶어요.
+finde: Gibt es WLAN?처럼 ja나 nein으로 답하는 질문을 문장 안에 넣을 때 쓰는 말은 무엇인가요? | ob* | dass | wann
+regel: 의문사가 없고 ja나 nein으로 답하는 질문은 ob으로 이어요. ob은 '~인지 (아닌지)'라는 뜻이에요. 이때도 동사는 맨 끝으로 가요.
+| 바로 묻기 | 문장 안에 넣어 묻기
+| *Gibt* es WLAN? | Ich möchte wissen, ob es WLAN *gibt*.
+| *Haben* wir am Abend frei? | Weißt du, ob wir am Abend frei *haben*?
+| *Kommt* Lukas pünktlich? | Ich weiß nicht, ob Lukas pünktlich *kommt*.
+merke: dass는 아는 사실을 말할 때, ob은 아직 모르는 것을 물을 때 써요. Ich weiß, dass er kommt. Ich weiß nicht, ob er kommt.
+
+-- punkt Wir könnten … | 제안하기
+bsp: *Wir könnten* das Brandenburger Tor *besichtigen*. | 브란덴부르크 문을 구경할 수도 있어.
+bsp: *Wir könnten* eine Fahrt mit dem Schiff *machen*. | 배를 타 볼 수도 있어.
+finde: Wir könnten …으로 무엇을 하나요? | 부드럽게 제안해요* | 지난 일을 말해요 | 규칙을 말해요
+regel: könnten으로 '~할 수도 있어', '~하면 어때?' 하고 부드럽게 제안해요. 다른 동사는 원형으로 맨 끝에 와요. 좋으면 Gute Idee!나 Ich bin dafür., 싫으면 Ich bin dagegen.이라고 답해요.
+| 주어 | könnten | 예문
+| ich | könnte | Ich könnte dir helfen.
+| du | könntest | Du könntest Elif fragen.
+| wir | könnten | Wir könnten ins Museum gehen.
+| ihr | könntet | Ihr könntet mit dem Schiff fahren.
+merke: Könnten Sie …?는 공손한 부탁이고, Wir könnten …은 제안이에요. 모양은 같고 쓰임이 달라요.
+
+-- punkt Wohin? an die Ostsee, in die Berge | 어디로 가는지 말하기
+bsp: Die 8a fährt *an die* Ostsee. | 8a는 발트해로 가.
+bsp: Die 8c fährt *in die* Berge. | 8c는 산으로 가.
+bsp: Wir fahren *nach* Berlin, *in die* Hauptstadt. | 우리는 베를린으로, 수도로 가.
+finde: 바다나 호수처럼 물가로 갈 때 쓰는 전치사는 무엇인가요? | an* | in | nach
+regel: 어디로 가는지 말할 때 물가는 an, 산이나 도시 안은 in과 4격을 써요. 관사 없이 쓰는 도시와 나라 이름 앞에는 nach를 써요.
+| 어디로? | 전치사 | 예
+| 물가 | an + 4격 | an die Ostsee, ans Meer, an den See
+| 산, 도시, 관사가 있는 나라 | in + 4격 | in die Berge, in die Stadt, in die Schweiz
+| 도시, 관사 없는 나라 | nach | nach Berlin, nach Österreich
+merke: an das는 ans, in das는 ins로 줄여요. Wir fahren ans Meer. Wir gehen ins Museum.
+
+== training
+-- ex Hören | Frau Schneider가 수학여행 일정을 알려 줘요. 듣고 답하세요.
+audio | Informationen zur Klassenfahrt
+> Schneider: Wir fahren am Montag um acht Uhr mit dem Zug nach Berlin. Die Fahrt dauert ungefähr fünf Stunden.
+> Schneider: Am Dienstag besichtigen wir das Brandenburger Tor und den Reichstag.
+> Schneider: Am Mittwoch machen wir eine Fahrt mit dem Schiff. Am Nachmittag habt ihr frei.
+> Schneider: Am Donnerstag gehen wir ins Museum. Am Freitag fahren wir zurück.
+> Schneider: Bitte nehmt eine Regenjacke mit. Und packt nicht zu viel in den Koffer!
+mc: Wie lange dauert die Fahrt nach Berlin? | ungefähr fünf Stunden* | ungefähr drei Stunden | ungefähr acht Stunden
+mc: Was macht die Klasse am Dienstag? | Sie besichtigt das Brandenburger Tor und den Reichstag.* | Sie macht eine Fahrt mit dem Schiff. | Sie geht ins Museum.
+rf: Am Mittwochnachmittag haben die Schüler frei. | r
+mc: 학생들은 무엇을 가져가야 하나요? | 비옷* | 수영복 | 침구
+mc: Wann fährt die Klasse zurück? | am Freitag* | am Donnerstag | am Samstag
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Elif: Weißt du, wo mein Koffer ist?
+mc: Elif는 무엇을 찾고 있나요? | 여행 가방* | 열쇠 | 차표
+hör: Lukas: Ich möchte wissen, ob wir am Abend frei haben.
+mc: Lukas는 무엇이 궁금한가요? | 저녁에 자유 시간이 있는지* | 저녁을 몇 시에 먹는지 | 저녁에 어디에 가는지
+hör: Emma: Wir könnten am Mittwoch ins Kino gehen.
+mc: Emma는 무엇을 하고 있나요? | 영화관에 가자고 제안해요* | 영화관에 갔다고 말해요 | 영화관에 가야 한다고 말해요
+hör: Yuna: Ich bin dagegen. Das Museum ist zu teuer.
+mc: Yuna는 어떻게 생각하나요? | 반대해요* | 찬성해요 | 잘 모르겠다고 해요
+
+-- ex Lesen | 8b의 수학여행 일정표예요. 보고 답하세요.
+text plan | Klassenfahrt der 8b nach Berlin
+> Tag | Vormittag | Nachmittag
+> Montag | Fahrt nach Berlin | Zimmer, Spaziergang
+> Dienstag | Brandenburger Tor | Reichstag
+> Mittwoch | Fahrt mit dem Schiff | frei
+> Donnerstag | Museum | East Side Gallery
+> Freitag | Koffer packen | Fahrt nach Köln
+mc: Wann besichtigt die Klasse den Reichstag? | am Dienstagnachmittag* | am Montagnachmittag | am Donnerstagvormittag
+mc: Was macht die Klasse am Donnerstagnachmittag? | Sie geht zur East Side Gallery.* | Sie hat frei. | Sie fährt nach Köln.
+rf: Am Mittwochnachmittag gibt es kein Programm. | r
+mc: 학생들은 언제 짐을 싸나요? | 금요일 오전* | 목요일 저녁 | 금요일 오후
+
+-- ex Lesen | 유스호스텔에 붙어 있는 안내문이에요. Nachtruhe는 '밤에 조용히 하는 시간'이에요. 읽고 답하세요.
+text notiz | Willkommen in der Jugendherberge!
+> Frühstück gibt es von 7 bis 9 Uhr. Abendessen gibt es um 18 Uhr.
+> Um 22 Uhr ist Nachtruhe. Bitte seid dann leise.
+> Das WLAN ist kostenlos. Das Passwort bekommt ihr an der Rezeption.
+> Gebt den Schlüssel bitte an der Rezeption zurück, wenn ihr in die Stadt geht.
+> Am letzten Tag müssen die Zimmer bis 10 Uhr frei sein.
+mc: Wann gibt es Abendessen? | um 18 Uhr* | um 19 Uhr | um 22 Uhr
+rf: Für das WLAN muss man bezahlen. | f => Das WLAN ist kostenlos.
+mc: Was macht man mit dem Schlüssel, wenn man in die Stadt geht? | Man gibt ihn an der Rezeption zurück.* | Man nimmt ihn mit. | Man legt ihn ins Zimmer.
+mc: 밤 10시부터는 어떻게 해야 하나요? | 조용히 해야 해요* | 방에서 나가야 해요 | 와이파이를 꺼야 해요
+
+-- ex Grammatik | 질문을 문장 안에 넣었어요. 알맞은 동사 모양을 고르세요.
+gap: Weißt du, wann der Zug [abfährt|fährt ab|abfahren]? => 동사가 맨 끝으로 가고, 분리 동사는 다시 붙어요.
+gap: Ich möchte wissen, wo die Jugendherberge [ist|sein|bist].
+gap: Können Sie mir sagen, wie viel das [kostet|kosten|gekostet]?
+gap: Weißt du, was wir am Dienstag [machen|macht|gemacht]?
+gap: Ich weiß nicht, wann wir [zurückfahren|fahren zurück|zurückfährt].
+
+-- ex Grammatik | 한국어 뜻을 보고 ob이나 알맞은 의문사를 고르세요.
+gap: Ich möchte wissen, [ob|wann|wo] es WLAN gibt. | 와이파이가 있는지 알고 싶어요.
+gap: Weißt du, [wann|ob|was] wir fahren? | 우리가 언제 가는지 알아?
+gap: Können Sie mir sagen, [wo|ob|wann] der Bahnhof ist? | 역이 어디인지 알려 주실 수 있어요?
+gap: Ich weiß nicht, [ob|wo|was] Lukas pünktlich kommt. | Lukas가 제시간에 올지 모르겠어요.
+gap: Frag bitte, [wie viel|ob|wo] die Fahrt kostet. | 가는 데 얼마인지 물어봐 줘.
+gap: Weißt du, [ob|was|wann] wir Bettwäsche brauchen? | 침구가 필요한지 알아?
+
+-- ex Grammatik | 제안하는 말과 어디로 가는지 나타내는 말이에요. 한국어 뜻을 보고 고르세요.
+gap: Wir [könnten|konnten|könntet] eine Fahrt mit dem Schiff machen. | 우리 배를 타 볼 수도 있어.
+gap: Die 8a fährt [an|in|nach] die Ostsee. | 8a는 발트해로 가요.
+gap: Die 8c fährt [in|an|nach] die Berge. | 8c는 산으로 가요.
+gap: Wir fahren [nach|in|an] Berlin. | 우리는 베를린으로 가요.
+gap: Im Sommer fahre ich [ans|ins|nach] Meer. | 여름에 나는 바다에 가요.
+gap: Du [könntest|könnten|konnte] Frau Schneider fragen. | Schneider 선생님께 여쭤볼 수도 있잖아.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: weißt du, / wann / wir / fahren? | 우리가 언제 가는지 알아?
+ord: ich / möchte / wissen, / ob / es / WLAN / gibt. | 와이파이가 있는지 알고 싶어요.
+ord: können Sie / mir / sagen, / wo / der Bahnhof / ist? | 역이 어디인지 알려 주실 수 있어요?
+ord: wir / könnten / ins Museum / gehen. | 우리 박물관에 갈 수도 있어.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: die Klassenfahrt = 수학여행 ; die Jugendherberge = 유스호스텔 ; die Hauptstadt = 수도 ; der Ausflug = 소풍 ; der Koffer = 여행 가방 ; der Schlüssel = 열쇠 ; der Vorschlag = 제안
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Lukas: Weißt du, wann wir fahren? | 우리가 언제 가는지 알아?
+dik: Emma: Wir könnten ins Museum gehen. | 우리 박물관에 갈 수도 있어.
+dik: Yuna: Ich möchte wissen, ob es WLAN gibt. | 와이파이가 있는지 알고 싶어요.
+
+== sprechen
+-- redemittel
+제안하기: Wir könnten ins Museum gehen. | 우리 박물관에 갈 수도 있어. ; Ich habe einen Vorschlag. | 제안이 하나 있어. ; Was meinst du? | 네 생각은 어때?
+찬성하고 반대하기: Gute Idee! | 좋은 생각이야! ; Ich bin dafür. | 나는 찬성이야. ; Ich bin dagegen. | 나는 반대야. ; Einverstanden! | 좋아, 그렇게 하자!
+공손하게 묻기: Können Sie mir sagen, wann …? | ~이 언제인지 알려 주실 수 있어요? ; Ich möchte wissen, ob … | ~인지 알고 싶어요. ; Wissen Sie, wo …? | ~이 어디인지 아세요?
+전화하기: Guten Tag, hier ist … | 안녕하세요, 저는 ~입니다. ; Noch eine Frage: … | 하나만 더 여쭤볼게요. ; Vielen Dank für die Informationen. | 알려 주셔서 감사합니다. ; Auf Wiederhören! | (전화에서) 안녕히 계세요!
+
+-- rolle B | Yuna, Mann
+
+-- ich Unser Ausflug | 친구들과 가고 싶은 나들이를 제안해 보세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 가고 싶은 곳 (ans Meer, in die Berge, nach Busan) | ans Meer
+feld: b | 거기서 할 수 있는 일 (동사 원형으로 끝나게) | im Meer schwimmen
+feld: c | 알고 싶은 것 (의문사나 ob으로 시작, 동사는 끝에) | was die Fahrt kostet
+satz: Wir könnten {a} fahren.
+satz: Dort könnten wir {b}.
+satz: Ich möchte wissen, {c}.
+
+-- schreiben Eine Anfrage | 가족 여행 때 묵을 유스호스텔에 문의하는 메일을 써 보세요.
+punkt: 인사 ; 누가 언제 가는지 ; 방에 대한 질문 ; 아침 식사에 대한 질문 ; 가는 길에 대한 질문 ; 끝인사
+start: Guten Tag, wir möchten …
+muster: Guten Tag, wir möchten im August drei Nächte in Ihrer Jugendherberge schlafen. Wir sind vier Personen. Können Sie mir sagen, ob Sie ein Zimmer mit vier Betten haben? Ich möchte auch wissen, wann es Frühstück gibt. Und wissen Sie, wie wir vom Bahnhof zu Ihnen kommen? Vielen Dank für Ihre Antwort. Viele Grüße, Jisu Kim
+check: 문장 안에 넣은 질문에서 동사를 맨 끝에 썼나요? ; ja, nein으로 답하는 질문에 ob을 썼나요? ; 쉼표를 찍었나요? ; Sie, Ihnen, Ihre를 대문자로 썼나요?
+
+-- kann
+Ich kann eine Reise planen und Vorschläge machen. | 여행 계획을 세우고 제안할 수 있어요.
+Ich kann höflich nach Informationen fragen. | 필요한 것을 공손하게 물을 수 있어요.
+Ich kann sagen, ob ich dafür oder dagegen bin. | 찬성인지 반대인지 말할 수 있어요.
+
+-- tipp 질문을 한 번 감싸요
+p: 모르는 어른에게 Wann gibt es Frühstück?이라고 바로 물으면 조금 딱딱하게 들려요. Können Sie mir sagen, …이나 Ich möchte wissen, …으로 감싸면 훨씬 공손해져요.
+p: 감쌀 때는 동사를 맨 끝으로 보내는 것만 기억해요. 길에서 본 간판이나 안내문을 보고 Weißt du, wann …? 문장을 만들어 보면 금방 익숙해져요.

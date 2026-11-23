@@ -1,0 +1,257 @@
+@id a2-1/5
+
+== einstieg
+bild: A sports hall. A man coach in his thirties with a whistle around his neck and a clipboard in his hand greets YUNA, who holds a volleyball. EMMA stands next to her in a sports shirt and points at a volleyball net behind them.
+alt: 체육관이에요. 호루라기를 목에 건 코치가 배구공을 든 Yuna를 맞아 줘요. 운동복을 입은 Emma가 옆에서 뒤쪽의 배구 네트를 가리켜요.
+lead: 5월이에요. Yuna가 Emma를 따라 스포츠 클럽(Sportverein)의 배구 연습에 왔어요. 오늘 클럽에 등록하려고 해요.
+mission: 이 과를 마치면 운동과 동아리를 소개하고, 클럽에 등록을 문의하고, 무엇에 관심이 있는지 말할 수 있어요.
+wort: der Verein | 동호회, 스포츠 클럽
+wort: das Training | 훈련, 연습
+wort: Ich möchte mich anmelden. | 등록하고 싶어요.
+wort: Ich freue mich! | 기뻐요!
+mc: Ich freue mich. Du freust dich. ich와 함께 쓰인 mich는 누구를 가리키나요? | 나 자신* | 너 | 다른 사람 => sich freuen 같은 동사는 주어와 같은 사람을 가리키는 mich, dich를 함께 써요.
+
+== hoeren
+-- dialog A | Ich möchte mich anmelden | 화요일 오후, 스포츠 클럽의 체육관이에요. Yuna가 배구 코치 Herr Becker를 만나요. | Mann=Trainer
+vor: 들으면서 찾아보세요. 배구 연습은 무슨 요일에 있나요?
+Emma: Hallo, Herr Becker! Das ist Yuna. Sie wohnt bei uns. | 안녕하세요, Becker 선생님! 얘는 Yuna예요. 우리 집에 살아요.
+Mann: Hallo, Yuna! Interessierst du dich für Volleyball? | 안녕, Yuna! 배구에 관심이 있니?
+Yuna: Ja, sehr. In Korea habe ich in der Schule Volleyball gespielt. Ich möchte mich anmelden. | 네, 아주 많이요. 한국에서 학교 다닐 때 배구를 했어요. 등록하고 싶어요.
+Mann: Schön! Wir trainieren am Dienstag und am Donnerstag um fünf. | 잘됐구나! 우리는 화요일과 목요일 다섯 시에 연습해.
+Yuna: Was kostet das? | 얼마예요?
+Mann: Der Beitrag kostet zehn Euro im Monat. Aber heute kannst du kostenlos mitmachen. | 회비는 한 달에 10유로야. 하지만 오늘은 무료로 같이 해 볼 수 있어.
+Yuna: Super. Muss ich ein Formular ausfüllen? | 좋아요. 신청서를 써야 하나요?
+Mann: Ja, hier bitte. Sabine oder Thomas muss auch unterschreiben. | 그래, 여기 있다. Sabine나 Thomas도 서명해야 해.
+Emma: Komm, Yuna, wir ziehen uns um. Beeil dich! | 가자, Yuna, 옷 갈아입자. 서둘러!
+Yuna: Ich freue mich so! | 정말 기뻐요!
+Mann: Wir uns auch. Willkommen in der Mannschaft! | 우리도 기쁘단다. 우리 팀에 온 걸 환영해!
+
+-- dialog B | Müde, aber glücklich | 다음 날 아침, 학교 가는 길이에요.
+vor: 들으면서 찾아보세요. Lukas는 일주일에 몇 번 연습하나요?
+Lukas: Morgen, Yuna! Du siehst müde aus. | 안녕, Yuna! 피곤해 보인다.
+Yuna: Ja, gestern war ich beim Volleyballtraining. Mir tun die Arme weh, trotzdem bin ich glücklich. | 응, 어제 배구 연습에 갔거든. 팔이 아픈데 그래도 기분이 좋아.
+Lukas: Das kenne ich. Ich trainiere dreimal in der Woche im Fußballverein. | 그거 나도 알아. 나는 축구 클럽에서 일주일에 세 번 연습해.
+Elif: Dreimal? Ich bin nur in der Tanz-AG. Wir treffen uns jeden Mittwoch nach der Schule. | 세 번? 나는 춤 동아리만 해. 수요일마다 학교 끝나고 모여.
+Yuna: Interessierst du dich nicht für Sport, Elif? | Elif, 너는 운동에 관심 없어?
+Elif: Doch! Tanzen ist auch Sport. Ich interessiere mich für Musik, deshalb tanze ich lieber. | 아니, 있어! 춤도 운동이야. 나는 음악에 관심이 있어서 춤추는 게 더 좋아.
+Lukas: Am Samstag haben wir ein Spiel. Kommt ihr? | 토요일에 우리 경기가 있어. 올래?
+Yuna: Ja, gern! Ich freue mich auf das Spiel. | 응, 좋아! 경기가 기대돼.
+Elif: Ich komme auch. Aber Lukas, du musst pünktlich sein! | 나도 갈게. 그런데 Lukas, 너 시간 지켜야 해!
+Lukas: Natürlich. Der Trainer wartet nicht. | 당연하지. 코치님은 기다려 주지 않으셔.
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: 배구 연습은 무슨 요일에 있나요? | 화요일과 목요일* | 월요일과 수요일 | 토요일
+mc: Was kostet der Beitrag? | zehn Euro im Monat* | zehn Euro in der Woche | fünf Euro im Monat
+rf: Yuna muss ein Formular ausfüllen. | r
+mc: Yuna는 왜 피곤해 보이나요? | 어제 배구 연습을 해서* | 늦게 자서 | 숙제가 많아서
+mc: Lukas는 일주일에 몇 번 연습하나요? | 세 번* | 두 번 | 한 번
+rf: Elif interessiert sich nicht für Sport. | f => Doch! Tanzen ist auch Sport. 춤도 운동이라고 했어요.
+mc: Wann treffen sich die Schüler in der Tanz-AG? | jeden Mittwoch* | jeden Dienstag | jeden Samstag
+
+-- kultur 운동은 학교가 아니라 Verein에서
+p: 독일 학교는 오후 일찍 끝나요. 그래서 청소년은 오후에 동네 스포츠 클럽(Sportverein)에서 운동을 해요. 축구, 배구, 체조, 수영처럼 종목마다 Verein이 있고, 대회에도 학교가 아니라 Verein 이름으로 나가요.
+p: Verein에 들어가려면 신청서를 내고 다달이 회비(Beitrag)를 내요. 미성년자는 보호자가 서명해야 해요. 처음 한두 번은 무료로 연습에 참여해 볼 수 있는 곳이 많아요.
+p: 음악, 연극, 소방대처럼 운동이 아닌 Verein도 많아요. 학교 안에는 AG라는 방과 후 동아리가 있어요.
+mc: 독일 청소년이 축구팀에서 뛰고 싶으면 보통 어디에 들어갈까요? | 동네 Sportverein* | 학교 운동부 | 학원
+
+== wortschatz
+-- gruppe Im Verein | 클럽에서
+der Verein, die Vereine | 동호회, 클럽 | Lukas spielt im Verein Fußball. | Lukas는 클럽에서 축구를 해요.
+das Mitglied, die Mitglieder | 회원 | Der Verein hat viele Mitglieder. | 그 클럽은 회원이 많아요.
+das Training | 훈련, 연습 | Das Training ist am Dienstag. | 연습은 화요일에 있어요.
+trainieren, hat trainiert | 훈련하다, 연습하다 | Wir trainieren zweimal in der Woche. | 우리는 일주일에 두 번 연습해요.
+der Trainer, die Trainer | 코치, 감독 | Der Trainer ist nett. | 코치님은 친절해요.
+die Mannschaft, die Mannschaften | 팀 | Die Mannschaft spielt am Samstag. | 팀은 토요일에 경기를 해요.
+das Formular, die Formulare | 신청서, 서류 | Hier ist das Formular. | 여기 신청서가 있어요.
+ausfüllen, hat ausgefüllt | (서류를) 작성하다 | Füll bitte das Formular aus. | 신청서를 작성해 줘.
+unterschreiben, hat unterschrieben | 서명하다 | Meine Mutter muss unterschreiben. | 어머니가 서명하셔야 해요.
+der Beitrag, die Beiträge | 회비 | Der Beitrag kostet zehn Euro im Monat. | 회비는 한 달에 10유로예요.
+kostenlos | 무료의 | Das Training ist heute kostenlos. | 오늘 연습은 무료예요.
+mitmachen, hat mitgemacht | 함께 하다, 참여하다 | Du kannst heute mitmachen. | 오늘 같이 해도 돼.
+die AG, die AGs | (학교의) 방과 후 동아리 | Elif ist in der Tanz-AG. | Elif는 춤 동아리에 있어요.
+
+-- gruppe Sportarten | 운동 종목
+Volleyball | 배구 | Emma spielt Volleyball. | Emma는 배구를 해요.
+Basketball | 농구 | Can spielt Basketball. | Can은 농구를 해요.
+Tennis | 테니스 | Spielst du Tennis? | 테니스 쳐?
+Tischtennis | 탁구 | In der Pause spielen wir Tischtennis. | 쉬는 시간에 우리는 탁구를 쳐요.
+turnen, hat geturnt | 체조하다 | Lea turnt im Verein. | Lea는 클럽에서 체조를 해요.
+joggen, ist gejoggt | 조깅하다 | Sabine joggt jeden Morgen. | Sabine는 아침마다 조깅해요.
+klettern, ist geklettert | 암벽을 오르다, 기어오르다 | Am Sonntag gehen wir klettern. | 일요일에 우리는 클라이밍하러 가요.
+die Halle, die Hallen | 체육관, 홀 | Wir trainieren in der Halle. | 우리는 체육관에서 연습해요.
+
+-- gruppe Mich, dich, sich | sich와 함께 쓰는 동사
+sich anmelden, hat sich angemeldet | 등록하다, 신청하다 | Ich möchte mich anmelden. | 등록하고 싶어요.
+sich freuen, hat sich gefreut | 기뻐하다, (auf와 함께) 기대하다 | Ich freue mich auf das Spiel. | 나는 경기가 기대돼요.
+sich interessieren, hat sich interessiert | 관심이 있다 | Ich interessiere mich für Musik. | 나는 음악에 관심이 있어요.
+sich treffen, hat sich getroffen | 만나다, 모이다 | Wir treffen uns um fünf. | 우리는 다섯 시에 만나요.
+sich umziehen, hat sich umgezogen | 옷을 갈아입다 | Ich ziehe mich schnell um. | 나는 얼른 옷을 갈아입어요.
+sich beeilen, hat sich beeilt | 서두르다 | Beeil dich! | 서둘러!
+warten, hat gewartet | 기다리다 | Der Trainer wartet nicht. | 코치님은 기다려 주지 않아요.
+deshalb | 그래서 | Es regnet, deshalb bleibe ich zu Hause. | 비가 와서 나는 집에 있어요.
+trotzdem | 그래도, 그런데도 | Ich bin müde, trotzdem gehe ich zum Training. | 나는 피곤하지만 그래도 연습하러 가요.
+doch | (부정으로 묻는 말에) 아니, 그렇지 않아 | Kommst du nicht? – Doch! | 안 와? – 아니, 가!
+
+-- bilder
+der Verein, die Vereine: a small clubhouse building with a flag on the roof and a ball in front of the door
+das Training: three teenagers in sports shirts who run around small cones
+der Trainer, die Trainer: a man with a whistle around his neck who holds a clipboard
+die Mannschaft, die Mannschaften: five players in the same shirts who stand in a row
+das Formular, die Formulare: a paper form with blank lines and boxes and a pen next to it
+Volleyball: two hands that hit a ball over a net
+Basketball: a ball that falls into a basket hoop
+Tennis: a tennis racket and a small ball
+Tischtennis: a table tennis table with two paddles and a small ball
+turnen, hat geturnt: a teenager who does a handstand on a mat
+joggen, ist gejoggt: a woman in sports clothes who jogs along a path with trees
+klettern, ist geklettert: a teenager who climbs a climbing wall with colored holds
+
+-- aussprache z와 s | z는 [츠], 첫머리 s는 떨리는 소리
+p: z는 언제나 [츠]예요. Zeit는 [차이트], tanzen은 [탄첸]이에요. 영어의 z처럼 소리 내지 않아요.
+p: 낱말 첫머리에서 모음 앞에 오는 s는 목이 떨리는 부드러운 소리예요. sich, sieben, Sonntag. 영어 zoo의 첫소리와 같아요.
+hör: Zeit, zehn, tanzen, Tanz | z
+hör: sich, sieben, Sonntag, sehr | 첫머리 s
+hör: Am Sonntag tanzen sieben Kinder zusammen. | 연습 문장
+
+== grammatik
+-- punkt Reflexive Verben | sich와 함께 쓰는 동사
+bsp: Ich möchte *mich* anmelden. | 등록하고 싶어요.
+bsp: Interessierst du *dich* für Volleyball? | 배구에 관심이 있니?
+bsp: Wir treffen *uns* jeden Mittwoch. | 우리는 수요일마다 모여.
+finde: ich와 함께 쓰는 말은 무엇인가요? | mich* | dich | sich
+regel: sich freuen, sich anmelden 같은 동사는 주어와 같은 사람을 가리키는 말을 함께 써요. ich는 mich, du는 dich, wir는 uns, ihr는 euch예요. er, sie, es와 복수 sie는 모두 sich를 써요.
+| 주어 | sich freuen | 예문
+| ich | freue *mich* | Ich freue mich auf das Spiel.
+| du | freust *dich* | Freust du dich?
+| er, sie, es | freut *sich* | Yuna freut sich sehr.
+| wir | freuen *uns* | Wir freuen uns auf dich.
+| ihr | freut *euch* | Freut ihr euch?
+| sie, Sie | freuen *sich* | Die Kinder freuen sich.
+merke: mich, dich는 동사 뒤에 와요. Ich freue mich. 질문처럼 주어가 동사 뒤에 있으면 주어 다음에 와요. Freust du dich? 조동사가 있어도 자리는 같아요. Ich möchte mich anmelden. 지난 일은 haben과 함께 말해요. Ich habe mich angemeldet.
+
+-- punkt sich interessieren für, sich freuen auf | 전치사와 함께 쓰는 동사
+bsp: Ich interessiere mich *für* Musik. | 나는 음악에 관심이 있어.
+bsp: Ich freue mich *auf* das Spiel. | 나는 경기가 기대돼.
+bsp: *Wofür* interessierst du dich? | 너는 무엇에 관심이 있어?
+finde: sich interessieren 뒤에 오는 전치사는 무엇인가요? | für* | auf | mit
+regel: 정해진 전치사와 함께 쓰는 동사가 있어요. sich interessieren은 für, 앞으로 올 일을 기대하는 sich freuen은 auf와 함께 써요. 전치사 뒤에는 4격이 와요. 물을 때는 Wofür?, Worauf?라고 해요.
+| 동사 | 물음 | 답
+| sich interessieren für | Wofür interessierst du dich? | Für Sport. Für den Verein.
+| sich freuen auf | Worauf freust du dich? | Auf das Wochenende. Auf die Ferien.
+merke: 동사를 외울 때 전치사까지 함께 외워요. sich interessieren für, sich freuen auf.
+
+-- punkt deshalb, trotzdem | 그래서, 그래도
+bsp: Ich interessiere mich für Musik, *deshalb tanze* ich lieber. | 나는 음악에 관심이 있어서 춤추는 게 더 좋아.
+bsp: Mir tun die Arme weh, *trotzdem bin* ich glücklich. | 팔이 아픈데 그래도 기분이 좋아.
+finde: deshalb와 trotzdem 바로 뒤에는 무엇이 오나요? | 동사* | 주어 | 쉼표
+regel: deshalb는 '그래서', trotzdem은 '그래도'라는 뜻이에요. 둘 다 문장의 첫 자리를 차지하기 때문에 바로 뒤에 동사가 오고, 그다음에 주어가 와요.
+| 앞 문장 | 첫 자리 | 동사 | 나머지
+| Es regnet, | deshalb | *bleibe* | ich zu Hause.
+| Es regnet, | trotzdem | *spielen* | wir Fußball.
+| Ich bin krank, | deshalb | *gehe* | ich zum Arzt.
+| Ich bin müde, | trotzdem | *gehe* | ich zum Training.
+merke: weil은 이유 쪽 문장에, deshalb는 결과 쪽 문장에 붙어요. Ich bleibe zu Hause, weil es regnet. = Es regnet, deshalb bleibe ich zu Hause.
+
+== training
+-- ex Hören | 코치가 팀에 음성 메시지를 보냈어요. 듣고 답하세요.
+audio | Nachricht vom Trainer | Mann=Trainer
+> Mann: Hallo zusammen! Am Samstag haben wir ein Spiel in Bonn.
+> Mann: Wir treffen uns um neun Uhr am Bahnhof. Bitte seid pünktlich!
+> Mann: Wir fahren zusammen mit dem Zug. In der Halle ziehen wir uns um.
+> Mann: Das Spiel fängt um elf an. Die Eltern können auch kommen.
+> Mann: Ich freue mich auf das Spiel!
+mc: Wo ist das Spiel? | in Bonn* | in Köln | in Berlin
+mc: Wann trifft sich die Mannschaft? | um neun Uhr* | um elf Uhr | um zehn Uhr
+rf: Die Mannschaft fährt mit dem Bus. | f => Wir fahren zusammen mit dem Zug.
+mc: 경기는 몇 시에 시작하나요? | 11시* | 9시 | 10시
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Yuna: Ich interessiere mich für Volleyball.
+mc: Yuna는 무엇에 관심이 있나요? | 배구* | 농구 | 테니스
+hör: Lukas: Ich bin müde. Trotzdem gehe ich zum Training.
+mc: Lukas는 어떻게 하나요? | 피곤하지만 연습하러 가요* | 피곤해서 집에 있어요 | 피곤해서 일찍 자요
+hör: Elif: Es regnet, deshalb bleibe ich zu Hause.
+mc: Elif는 왜 집에 있나요? | 비가 와서* | 피곤해서 | 숙제가 많아서
+hör: Emma: Wir treffen uns um vier in der Halle.
+mc: 어디에서 만나나요? | 체육관에서* | 역에서 | 학교에서
+
+-- ex Lesen | 스포츠 클럽의 안내문이에요. 읽고 답하세요.
+text notiz | Komm in den Sportverein!
+> Interessierst du dich für Sport? Dann komm zu uns!
+> Wir haben Fußball, Volleyball, Basketball, Tischtennis und Turnen.
+> Das Training für Schüler ist am Nachmittag. Volleyball: Dienstag und Donnerstag um fünf Uhr.
+> Du kannst zweimal kostenlos mitmachen. Dann meldest du dich an.
+> Der Beitrag für Schüler kostet zehn Euro im Monat.
+> Wir freuen uns auf dich!
+mc: Wann ist das Volleyballtraining? | am Dienstag und am Donnerstag* | am Montag und am Mittwoch | am Samstag
+rf: Schüler können zweimal kostenlos mitmachen. | r
+mc: Was kostet der Beitrag für Schüler? | zehn Euro im Monat* | zehn Euro in der Woche | zwanzig Euro im Monat
+rf: Im Verein gibt es Tennis. | f => 탁구(Tischtennis)는 있지만 테니스(Tennis)는 없어요.
+
+-- ex Grammatik | mich, dich, sich, uns, euch 가운데 알맞은 말을 고르세요.
+gap: Ich freue [mich|dich|sich] auf das Spiel.
+gap: Interessierst du [dich|mich|sich] für Musik?
+gap: Yuna meldet [sich|mich|dich] im Verein an. => er, sie, es는 sich예요.
+gap: Wir treffen [uns|euch|sich] um fünf.
+gap: Zieht ihr [euch|uns|sich] in der Halle um?
+gap: Die Kinder freuen [sich|uns|euch].
+
+-- ex Grammatik | für와 auf 가운데 알맞은 전치사를 고르세요.
+gap: Ich interessiere mich [für|auf|mit] Sport.
+gap: Yuna freut sich [auf|für|in] das Training.
+gap: [Wofür|Worauf|Wo] interessierst du dich? – Für Musik.
+gap: Elif interessiert sich [für|auf|an] Tanzvideos.
+gap: Wir freuen uns [auf|für|mit] die Ferien.
+
+-- ex Grammatik | 한국어 뜻을 보고 deshalb와 trotzdem 가운데 알맞은 말을 고르세요.
+gap: Ich bin krank, [deshalb|trotzdem] bleibe ich zu Hause. | 나는 아파서 집에 있어요.
+gap: Ich bin krank, [trotzdem|deshalb] gehe ich in die Schule. | 나는 아프지만 그래도 학교에 가요.
+gap: Es regnet, [trotzdem|deshalb] spielen wir Fußball. | 비가 오는데도 우리는 축구를 해요.
+gap: Yuna spielt gern Volleyball, [deshalb|trotzdem] meldet sie sich an. | Yuna는 배구를 좋아해서 등록해요.
+gap: Lukas hat wenig Zeit, [trotzdem|deshalb] trainiert er dreimal in der Woche. | Lukas는 시간이 적은데도 일주일에 세 번 연습해요.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / möchte / mich / anmelden. | 나는 등록하고 싶어.
+ord: wir / treffen / uns / um fünf. | 우리는 다섯 시에 만나.
+ord: ich / bin / müde, / trotzdem / gehe / ich / zum Training. | 나는 피곤하지만 그래도 연습하러 가.
+ord: es / regnet, / deshalb / bleibe / ich / zu Hause. | 비가 와서 나는 집에 있어.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: Volleyball = 배구 ; Basketball = 농구 ; Tischtennis = 탁구 ; turnen = 체조하다 ; joggen = 조깅하다 ; klettern = 암벽을 오르다 ; die Mannschaft = 팀
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Yuna: Ich möchte mich anmelden. | 등록하고 싶어요.
+dik: Yuna: Ich freue mich so! | 정말 기뻐요!
+dik: Elif: Tanzen ist auch Sport. | 춤도 운동이야.
+
+== sprechen
+-- redemittel
+관심 말하기: Wofür interessierst du dich? | 무엇에 관심이 있어? ; Ich interessiere mich für Musik. | 나는 음악에 관심이 있어. ; Ich bin in der Tanz-AG. | 나는 춤 동아리에 있어.
+등록 문의하기: Ich möchte mich anmelden. | 등록하고 싶어요. ; Wann ist das Training? | 연습은 언제예요? ; Was kostet der Beitrag? | 회비는 얼마예요? ; Muss ich ein Formular ausfüllen? | 신청서를 써야 하나요?
+기대 말하기: Ich freue mich auf das Spiel. | 경기가 기대돼. ; Wir freuen uns auf dich! | 네가 오기를 기다릴게!
+그래서, 그래도: Es regnet, deshalb bleibe ich zu Hause. | 비가 와서 집에 있어. ; Ich bin müde, trotzdem gehe ich zum Training. | 피곤하지만 그래도 연습하러 가.
+
+-- rolle A | Yuna, Mann
+
+-- ich Mein Hobby, mein Verein | 관심 있는 것과 하고 있는 활동을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 관심 있는 것 | Musik
+feld: b | 활동하는 곳 (in과 함께) | in der Tanz-AG
+feld: c | 모이는 요일 | Mittwoch
+satz: Ich interessiere mich für {a}.
+satz: Deshalb bin ich {b}.
+satz: Wir treffen uns jeden {c}.
+
+-- schreiben Eine Anfrage | 스포츠 클럽에 등록을 문의하는 메일을 써 보세요.
+punkt: 인사 ; 이름과 나이 ; 관심 있는 운동 ; 질문 두 가지 (연습 요일, 회비) ; 끝인사와 이름
+start: Guten Tag, …
+muster: Guten Tag, ich heiße Mina Park und ich bin vierzehn Jahre alt. Ich interessiere mich für Volleyball und möchte mich im Verein anmelden. Wann ist das Training für Schüler? Und was kostet der Beitrag im Monat? Ich freue mich auf Ihre Antwort. Viele Grüße, Mina Park
+check: Guten Tag로 시작하고 Viele Grüße로 끝냈나요? ; sich interessieren 뒤에 für를 썼나요? ; mich를 빠뜨리지 않았나요? (Ich interessiere mich …) ; 질문 끝에 물음표를 찍었나요?
+
+-- kann
+Ich kann über Sport und Vereine sprechen. | 운동과 동아리에 대해 말할 수 있어요.
+Ich kann mich in einem Verein anmelden. | 클럽에 등록을 문의할 수 있어요.
+Ich kann sagen, wofür ich mich interessiere. | 무엇에 관심이 있는지 말할 수 있어요.
+
+-- tipp mich까지 한 덩어리로 외워요
+p: sich 동사는 ich freue mich, du freust dich처럼 주어와 짝을 지어 소리 내어 외워요. 걸으면서 박자에 맞춰 말하면 입에 잘 붙어요.
+p: 사전에서 sich가 붙은 동사를 만나면 sich까지 함께 적어 두세요. anmelden만 외우면 Ich melde an에서 멈추게 돼요.

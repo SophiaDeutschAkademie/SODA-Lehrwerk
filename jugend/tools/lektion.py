@@ -3,7 +3,7 @@
 
   python3 jugend/tools/lektion.py check [a1-1/1 ...]      원고(tools/src/<단계>/<이름>.txt)를 읽어 짜임과 음성 글자 수를 검사합니다
   python3 jugend/tools/lektion.py tts NAME a1-1/1 ...      아직 음성이 없는 줄의 음성 대본을 tools/tts/NAME_<화자>_NN.json 에 씁니다
-  python3 jugend/tools/lektion.py prompts NAME a1-1/1 ...  아직 그림이 없는 그림의 프롬프트를 tools/tts/NAME.prompts.json 에 씁니다
+  python3 jugend/tools/lektion.py prompts NAME a1-1/1 ...  아직 그림이 없는 그림의 프롬프트를 tools/tts/NAME.prompts.json 에 씁니다 (--alle: 있는 그림도 모두)
   python3 jugend/tools/lektion.py cut RAW_DIR              RAW_DIR 의 생성 음성(<job>.mp3 + <job>.words.json)을 줄 단위로 잘라 audio/ 에 넣습니다
   python3 jugend/tools/lektion.py img RAW_DIR              RAW_DIR 의 그림(<단계>_<이름>_szene.webp, _kartenN.webp, cast_N.webp)을 img/ 에 넣습니다
   python3 jugend/tools/lektion.py site [--draft]           과 화면(jugend/<단계>/<이름>/index.html)을 만들고 tools/open.json 을 씁니다
@@ -312,7 +312,11 @@ def parse(path):
                 if s.startswith('text '):
                     f = fields(s[5:]); tgt.append({'k': 'text', 'art': f[0], 'titel': f[1] if len(f) > 1 else '', 'rows': []}); continue
                 if s == 'audio' or s.startswith('audio |'):
-                    f = fields(s); tgt.append({'k': 'audio', 'titel': f[1] if len(f) > 1 else '', 'lines': []}); continue
+                    f = fields(s); nm = {}
+                    for extra in f[2:]:                      # audio | 제목 | Mann=Trainer; Frau=Kellnerin
+                        for kv in extra.split(';'):
+                            a_, _, b_ = kv.partition('='); nm[a_.strip()] = b_.strip()
+                    tgt.append({'k': 'audio', 'titel': f[1] if len(f) > 1 else '', 'lines': [], 'names': nm}); continue
                 if s.startswith('> '):
                     last = tgt[-1]
                     if last['k'] == 'audio':
@@ -444,12 +448,22 @@ def inhalt():
 _PAGES = []
 
 
-def is_public():
-    """청소년 교재 공개 여부 (jugend/tools/status.json). 비공개이면 화면마다 noindex 를 넣는다."""
+def status():
+    """jugend/tools/status.json: {"public": 공개 여부, "ohne_audio": [음성을 아직 만들지 않은 단계]}"""
     try:
-        return bool(json.load(open(os.path.join(T, 'status.json'), encoding='utf-8')).get('public', True))
+        return json.load(open(os.path.join(T, 'status.json'), encoding='utf-8'))
     except (OSError, ValueError):
-        return True
+        return {}
+
+
+def is_public():
+    """청소년 교재 공개 여부. 비공개이면 화면마다 noindex 를 넣는다."""
+    return bool(status().get('public', True))
+
+
+def ohne_audio(lv_id):
+    """음성을 나중에 만들기로 한 단계인가. 그런 단계는 음성이 없어도 화면을 열고, 음성 단추는 꺼 둔다."""
+    return lv_id in (status().get('ohne_audio') or [])
 
 
 def pages():
@@ -751,21 +765,22 @@ def story_pics(L):
 
 
 def cmd_prompts(name, args):
+    alle = '--alle' in args; args = [a for a in args if a != '--alle']      # --alle: 이미 있는 그림의 프롬프트도 적는다 (기록용)
     os.makedirs(os.path.join(T, 'tts'), exist_ok=True); out = []
     for p in want(args):
         L = parse(src_path(p['id'])); base = p['id'].replace('/', '_'); d = os.path.join(J, 'img', p['id'])
         e = (L['secs'].get('einstieg') or [{}])[0]
-        if e.get('bild') and not os.path.exists(os.path.join(d, 'szene.webp')):
+        if e.get('bild') and (alle or not os.path.exists(os.path.join(d, 'szene.webp'))):
             out.append({'name': base + '_szene', 'ratio': '4:3', 'prompt': '%s All figures are shown in full from head to feet. %s %s' % (who_text(e['bild']), ONE, STYLE)})
         for i, sh in enumerate(card_sheets(L)):
-            if all(os.path.exists(os.path.join(d, 'c%d.webp' % (i * 6 + k + 1))) for k in range(6)):
+            if not alle and all(os.path.exists(os.path.join(d, 'c%d.webp' % (i * 6 + k + 1))) for k in range(6)):
                 continue
             k = [who_text(x[1]) for x in sh]
             out.append({'name': '%s_karten%d' % (base, i + 1), 'ratio': '3:2', 'prompt':
                         'Six separate small illustrations arranged in a neat grid of two rows and three columns, all the same size. Top row from left to right: %s; %s; %s. '
                         'Bottom row from left to right: %s; %s; %s. %s %s' % (k[0], k[1], k[2], k[3], k[4], k[5], MANY, STYLE)})
         for k, bild in story_pics(L):
-            if not os.path.exists(os.path.join(d, 'b%d.webp' % k)):
+            if alle or not os.path.exists(os.path.join(d, 'b%d.webp' % k)):
                 t = who_text(bild).strip()
                 t = t[0].upper() + t[1:] + ('' if t.endswith('.') else '.')
                 out.append({'name': '%s_b%d' % (base, k), 'ratio': '4:3', 'prompt': '%s %s %s' % (t, ONE, STYLE)})
@@ -1098,6 +1113,7 @@ class Page:
     def __init__(self, p, L, draft=False):
         self.p = p; self.L = L; self.pid = p['id']; self.mp = amap(self.pid); self.draft = draft
         self.miss = []; self.exn = 0; self.data = {'id': self.pid, 'w': [], 'dlg': {}}
+        self.na = ohne_audio(p['lv']['id']); self.nan = 0     # 음성을 나중에 만드는 단계, 빠진 음성 수
         self.prev = None                                   # 같은 단계의 앞 과
         self.img = '../../img/%s/' % self.pid
 
@@ -1107,7 +1123,10 @@ class Page:
         if not ident and self.p['typ'] != 'lektion':
             ident = sib_audio(self.pid, who, text)
         if not ident:
-            self.miss.append('%s|%s' % (who, text))
+            if self.na:
+                self.nan += 1                               # 음성이 없어도 화면은 연다
+            else:
+                self.miss.append('%s|%s' % (who, text))
         return ident
 
     def ton(self, ident, cls='', label='듣기'):
@@ -1120,7 +1139,7 @@ class Page:
             return self.lese(it), False
         if k == 'audio':
             ids = [self.a(l['who'], l['say']) for l in it['lines']]
-            rows = ''.join('<p><b>%s</b> <span lang="de">%s</span></p>' % (E(self.wname(l['who'], {})), hl(l['de'])) for l in it['lines'])
+            rows = ''.join('<p><b>%s</b> <span lang="de">%s</span></p>' % (E(self.wname(l['who'], it.get('names') or {})), hl(l['de'])) for l in it['lines'])
             return ('<div class="hoertext" data-seq="%s">%s<button type="button" class="btn-s" data-act="seq">%s<span>듣기</span></button>'
                     '<details class="skript"><summary>대본 보기</summary>%s</details></div>'
                     % (' '.join(ids), ('<p class="lese-t" lang="de">%s</p>' % E(it['titel'])) if it['titel'] else '', ICON['play'], rows)), False
@@ -1171,6 +1190,9 @@ class Page:
             return '<li class="it paar" data-k="paar" data-n="%d"><div class="paare"><div class="sp">%s</div><div class="sp">%s</div></div></li>' % (n, la, rb), True
         if k == 'dik':
             ident = self.a(it['who'], it['say'])
+            if self.na and not ident:
+                return ('<p class="na-dik"><span class="na-tag">음성 준비 중</span><span lang="de">%s</span>%s</p>'
+                        % (hl(it['de']), (' <span class="ko">%s</span>' % ko(it['ko'])) if it['ko'] else '')), False
             return ('<li class="it dik" data-k="dik" data-ok="%s">%s<span class="feld"><input type="text" lang="de" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="들은 문장">'
                     '<button type="button" class="pruef">확인</button></span><p class="loes" hidden><span lang="de">%s</span>%s</p></li>'
                     % (E(it['de']), self.ton(ident, 'gross', '문장 듣기'), hl(it['de']), (' <span class="ko">%s</span>' % ko(it['ko'])) if it['ko'] else '')), True
@@ -1538,8 +1560,17 @@ class Page:
             desc = '청소년 독일어 %s %s. %s 문제를 풀면 바로 채점되고, 약한 부분을 알려 줘요. 소피아 독일어학원.' % (lv['code'], p['ko'], p['ziel'])
             ort = '<span lang="de">%s %s</span> · %s' % (E(lv['code']), E(lv['de']), E(p['ko'])); h1 = p['de']; thema = p['ziel']
         url = SITE + 'jugend/%s/%s/' % (lv['id'], p['slug'])
+        hinweis = ''
+        if self.na and self.nan:
+            # 여러 음성을 이어 트는 단추는 끄고, 듣고 푸는 자리에는 글을 보여 준다
+            for act in ('dlg-play', 'dlg-slow', 'story-play', 'seq'):
+                body = body.replace('data-act="%s"' % act, 'data-act="%s" disabled' % act)
+            body = body.replace('<details class="skript">', '<details class="skript" open>').replace('<details class="sp-t">', '<details class="sp-t" open>')
+            body = body.replace('<p class="skript1" hidden>', '<p class="skript1">')
+            hinweis = '<p class="na-hinweis">음성은 준비 중이에요. 듣기 단추와 받아쓰기는 음성이 올라오면 쓸 수 있어요. 그동안은 글을 읽으면서 공부해요.</p>'
         rep = {
             '__ROBOTS__': '' if is_public() else '<meta name="robots" content="noindex">\n',
+            '__NA__': ' data-na="1"' if (self.na and self.nan) else '', '__HINWEIS__': hinweis,
             '__TITLE__': E(title), '__DESC__': E(desc), '__URL__': url, '__ID__': self.pid, '__LEVEL__': lv['id'], '__TYP__': p['typ'],
             '__ORT__': ort, '__H1__': E(h1), '__THEMA__': ko(thema), '__STEPS__': steps, '__BODY__': body.replace('__ENDE__', ende),
             '__DATA__': json.dumps(self.data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'),

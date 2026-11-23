@@ -1,6 +1,6 @@
 # SODA Jugendliche
 
-청소년 독일어 교재 「청소년 독일어 발돋움」입니다. 독일어를 처음 배우는 초등 고학년, 중학생, 고등학생이 A1부터 B1까지 배웁니다. 목차는 여섯 단계 모두 있고, 본문은 A1.1과 A1.2(A1 과정 16과)가 올라와 있습니다. 나머지 단계는 차례로 올립니다.
+청소년 독일어 교재 「청소년 독일어 발돋움」입니다. 독일어를 처음 배우는 초등 고학년, 중학생, 고등학생이 A1부터 B1까지 배웁니다. 목차는 여섯 단계 모두 있고, 본문은 A1.1, A1.2, A2.1, A2.2(A1·A2 과정 32과)가 올라와 있습니다. A2.1과 A2.2는 음성 없이 글과 그림으로 먼저 올렸습니다(아래 「음성이 아직 없는 단계」). 나머지 단계는 차례로 올립니다.
 
 ## 공개 상태
 
@@ -16,6 +16,23 @@
 2. `python3 jugend/tools/lektion.py site` 와 `JUGEND_DATE=2026.12.01 python3 jugend/tools/build.py` 를 실행합니다(날짜는 그날 날짜).
 3. 루트 `index.html` 의 청소년 칸을 링크가 있는 칸으로 되돌립니다(커밋 `525d023` 의 모양을 참고).
 4. `notices.json` 에 알림을 올립니다. 본문이 올라온 과는 목차에서 줄을 누르면 열립니다.
+
+## 음성이 아직 없는 단계
+
+`tools/status.json` 의 `ohne_audio` 에 적힌 단계(지금은 `a2-1`, `a2-2`)는 음성 없이 화면을 엽니다.
+
+- 듣기 단추는 꺼져 있고, 화면 위에 「음성은 준비 중이에요」 안내가 보입니다.
+- 듣기 글의 대본은 처음부터 펼쳐져 있습니다. 받아쓰기는 문장만 보여 주고 채점하지 않습니다.
+- 목차에서는 그 단계의 「시작하기」 단추 아래에 음성이 준비 중이라는 안내가 보입니다.
+
+음성을 넣을 때
+
+1. `python3 jugend/tools/lektion.py tts a21 a2-1` 처럼 단계마다 대본을 만듭니다(음성으로 만들 글자 수는 A2.1 약 34,400자, A2.2 약 36,700자).
+2. 대본으로 만든 음성과 낱말 시각 파일을 한 폴더에 받아 `python3 jugend/tools/lektion.py cut 폴더` 로 자릅니다.
+3. `tools/status.json` 의 `ohne_audio` 에서 그 단계를 뺍니다.
+4. `python3 jugend/tools/lektion.py site` 와 `JUGEND_DATE=그날 날짜 python3 jugend/tools/build.py` 를 실행합니다. 음성이 하나라도 빠진 화면은 열리지 않으므로, 빠진 줄이 있으면 1번부터 다시 합니다.
+
+## 틀
 
 - 주소: https://sophiadeutschakademie.github.io/SODA-Lehrwerk/jugend/
 - 목차 묶음: Lehrbuch
@@ -40,9 +57,9 @@
 
 ```
 index.html              목차 화면 (빌드 결과, 직접 고치지 않습니다)
-a1-1/1/ … a1-1/8/       과 화면 (빌드 결과). a1-1/station-1/, a1-1/station-2/, a1-1/stufentest/ 도 같은 틀입니다. a1-2/ 도 같습니다
+a1-1/1/ … a1-1/8/       과 화면 (빌드 결과). a1-1/station-1/, a1-1/station-2/, a1-1/stufentest/ 도 같은 틀입니다. a1-2/, a2-1/, a2-2/ 도 같습니다
 lektion.css, lektion.js 과 화면의 모양과 동작 (모든 과가 같이 씁니다)
-audio/<단계>/<과>/      독일어 음성 (mp3, 한 줄에 파일 하나)
+audio/<단계>/<과>/      독일어 음성 (mp3, 한 줄에 파일 하나). a2-1, a2-2 는 아직 없습니다
 img/<단계>/<과>/        장면 그림 szene.webp, 단어 그림 c1.webp …, Station 이야기 그림 b1.webp …
 img/c/                  등장인물 얼굴
 manifest.webmanifest    홈 화면에 추가할 때 쓰는 정보
@@ -56,6 +73,7 @@ tools/lektion.py        원고 검사, 음성 대본 만들기, 음성 자르기
 tools/audio/            음성 파일 이름표 (과마다 "말한 사람|글" -> 파일 이름)
 tools/tts/              음성과 그림을 만들 때 쓴 대본과 프롬프트
 tools/open.json         본문이 올라온 화면 목록 (lektion.py site 가 적습니다)
+tools/status.json       공개 여부(public)와 음성이 아직 없는 단계(ohne_audio)
 tools/blocks/           다크 모드 스위치, 목차 버튼, 홈 화면에 앱 추가 공통 조각
 ```
 
@@ -66,7 +84,7 @@ tools/blocks/           다크 모드 스위치, 목차 버튼, 홈 화면에 �
 1. `tools/src/<단계>/<과>.txt`를 고칩니다.
 2. `python3 jugend/tools/lektion.py check`로 원고를 검사합니다.
 3. 독일어 문장을 바꾸거나 더했으면 그 줄의 음성을 새로 만들어야 합니다. `python3 jugend/tools/lektion.py tts 이름`이 음성이 없는 줄만 모아 대본(`tools/tts/이름_*.json`)을 만듭니다. 대본으로 만든 음성과 낱말 시각 파일을 한 폴더에 받아 `python3 jugend/tools/lektion.py cut 폴더`로 자릅니다.
-4. `python3 jugend/tools/lektion.py site`로 과 화면을 다시 만들고, `python3 jugend/tools/build.py`로 목차를 다시 만듭니다. 음성이나 그림이 하나라도 빠진 과는 열리지 않고 목차에도 링크가 생기지 않습니다.
+4. `python3 jugend/tools/lektion.py site`로 과 화면을 다시 만들고, `python3 jugend/tools/build.py`로 목차를 다시 만듭니다. 음성이나 그림이 하나라도 빠진 과는 열리지 않고 목차에도 링크가 생기지 않습니다. `tools/status.json` 의 `ohne_audio` 에 적힌 단계만 음성 없이 열립니다.
 
 목차만 고칠 때는 `tools/inhalt.json`을 고치고 `python3 jugend/tools/build.py`를 실행합니다. 단계마다 과 8개, Station 2개, 평가 1개인지 확인한 뒤 `index.html`을 만들고, 저장소의 `tools/seo.py`를 이어서 실행합니다.
 

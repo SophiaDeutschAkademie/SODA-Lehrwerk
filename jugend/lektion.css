@@ -425,6 +425,13 @@ body[data-typ="test"] .schritte{grid-template-columns:repeat(5,minmax(0,1fr));ma
   .spielt,.ziel.nein{animation:none}
   #toast{transition:none}
 }
+/* 음성을 아직 만들지 않은 단계 (jugend/tools/status.json 의 ohne_audio): 글은 그대로 읽을 수 있게 두고 듣기 단추만 흐리게 */
+.na-hinweis{margin-top:12px;padding:9px 12px;border-radius:12px;background:var(--soft);color:var(--ink2);font-size:13.5px;line-height:1.5}
+body[data-na] .z[disabled],body[data-na] .wchip[disabled],body[data-na] .hz[disabled],body[data-na] .abc[disabled],body[data-na] .bz[disabled],body[data-na] .tz[disabled]{opacity:1}
+body[data-na] .btn-s[disabled],body[data-na] .chip[disabled]{opacity:.38;cursor:default}
+.na-dik{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:8px 0 0;padding:9px 12px;border-radius:12px;background:var(--soft);font-size:15px}
+.na-tag{font-size:12px;font-weight:700;color:var(--accent-ink);white-space:nowrap}
+
 @media print{
   .fuss,#toast,.schritte,.zurueck{display:none}
   main.wrap{padding-bottom:0}

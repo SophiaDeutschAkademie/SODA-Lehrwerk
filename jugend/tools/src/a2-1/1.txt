@@ -1,0 +1,266 @@
+@id a2-1/1
+
+== einstieg
+bild: A classroom in spring. YUNA holds up a printed photo that shows a family of four in front of a cathedral with two towers. EMMA and LUKAS stand next to her and look at the photo with interest. ELIF sits at a desk and waves. Through the window behind them a tree with blossoms.
+alt: Yuna가 대성당 앞에서 찍은 가족사진을 들어 보이고 Emma와 Lukas가 들여다봐요. Elif는 책상에 앉아 손을 흔들어요. 창밖에는 꽃이 핀 나무가 보여요.
+lead: 4월이에요. 2주 동안의 부활절 방학(Osterferien)이 끝나고 8b 친구들이 다시 만났어요. 방학에 무엇을 했는지, 왜 그랬는지 이야기해요.
+mission: 이 과를 마치면 방학에 한 일을 이유와 함께 말하고, 한국과 독일의 학교를 비교할 수 있어요.
+wort: die Osterferien | 부활절 방학
+wort: Warum? | 왜?
+wort: weil | ~해서, 왜냐하면
+wort: Ich bin zu Hause geblieben, weil ich krank war. | 나는 아파서 집에 있었어.
+mc: Ich bin zu Hause geblieben, weil ich krank war. weil 뒤에서 동사 war는 어디에 있나요? | 문장 맨 끝* | 둘째 자리 | weil 바로 뒤 => weil로 시작하는 문장에서는 동사가 맨 끝으로 가요.
+
+== hoeren
+-- dialog A | Wie waren die Osterferien? | 부활절 방학이 끝난 첫날 아침, 교실이에요.
+vor: 들으면서 찾아보세요. Yuna의 방학에는 누가 왔나요?
+Lukas: Hallo, Yuna! Wie waren die Osterferien? | 안녕, Yuna! 부활절 방학 어땠어?
+Yuna: Super! Meine Eltern und mein Bruder Jun haben mich besucht. | 최고였어! 부모님이랑 남동생 Jun이 나를 보러 왔어.
+Emma: Sie sind eine Woche geblieben. Yuna hat ihrer Familie die Stadt gezeigt. | 일주일 동안 계셨어. Yuna가 가족에게 시내를 구경시켜 줬어.
+Lukas: Und wie findet Jun Köln? | Jun은 쾰른이 어떻대?
+Yuna: Er findet Köln toll, weil es hier so viel Schokolade gibt. | 쾰른이 정말 좋대. 여기는 초콜릿이 아주 많으니까.
+Elif: Ich bin zu Hause geblieben, weil meine Eltern gearbeitet haben. | 나는 집에 있었어. 부모님이 일하셨거든.
+Emma: Und du, Lukas? Warum bist du nicht nach Österreich gefahren? | Lukas, 너는? 왜 오스트리아에 안 갔어?
+Lukas: Weil meine Oma Geburtstag hatte. Wir waren bei meinen Großeltern an der Nordsee. | 할머니 생신이었거든. 북해에 있는 할머니, 할아버지 댁에 있었어.
+Yuna: Wie war das Wetter? | 날씨는 어땠어?
+Lukas: Schlecht! Wir sind wenig spazieren gegangen, denn es hat fast jeden Tag geregnet. | 안 좋았어! 거의 날마다 비가 와서 산책을 조금밖에 못 했어.
+
+-- dialog B | Schule in Korea | 첫 시간은 Frau Schneider의 수업이에요. Yuna가 한국 학교 이야기를 해요.
+vor: 들으면서 찾아보세요. 한국에서는 새 학년이 언제 시작하나요?
+Schneider: Yuna, dein Bruder war hier. Was hat er von der Schule in Korea erzählt? | Yuna, 남동생이 왔었지. 한국 학교에 대해 뭐라고 이야기했니?
+Yuna: In Korea fängt das Schuljahr im März an. Jun ist jetzt in der fünften Klasse. | 한국에서는 새 학년이 3월에 시작해요. Jun은 지금 5학년이에요.
+Schneider: Im März? Bei uns fängt das Schuljahr nach den Sommerferien an. | 3월에? 우리는 여름 방학이 끝나고 새 학년이 시작하는데.
+Yuna: Ja. Und der Schultag ist lang. Der Unterricht dauert oft bis vier Uhr. | 네. 그리고 학교에 있는 시간이 길어요. 수업을 네 시까지 할 때가 많아요.
+Lukas: Bis vier? Warum so lange? | 네 시까지? 왜 그렇게 오래 해?
+Yuna: Weil die Schüler in der Schule zu Mittag essen. Und sie haben viele Stunden. | 학생들이 학교에서 점심을 먹거든. 그리고 수업 시간이 많아.
+Elif: Tragen die Schüler eine Uniform? | 학생들은 교복을 입어?
+Yuna: In der Grundschule nicht. Aber in der Mittelschule tragen fast alle eine Schuluniform. | 초등학교에서는 안 입어. 하지만 중학교에서는 거의 다 교복을 입어.
+Emma: Und was gefällt dir hier? | 그럼 여기는 뭐가 마음에 들어?
+Yuna: Die Schule ist um eins aus. Das finde ich gut, denn am Nachmittag habe ich Zeit für Hobbys. | 학교가 한 시에 끝나는 거. 오후에 취미를 즐길 시간이 있어서 좋아.
+Schneider: Aber bei uns gibt es viele Hausaufgaben, oder? | 그래도 우리는 숙제가 많지, 그렇지?
+Yuna: Ja, leider! | 네, 아쉽게도요!
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Yuna의 방학에는 누가 왔나요? | 부모님과 남동생* | 할머니와 할아버지 | 한국 친구들
+rf: Jun findet Köln langweilig. | f => Er findet Köln toll, weil es hier so viel Schokolade gibt.
+mc: Warum ist Elif zu Hause geblieben? | Weil ihre Eltern gearbeitet haben.* | Weil sie krank war. | Weil das Wetter schlecht war.
+mc: Wo war Lukas in den Osterferien? | an der Nordsee* | in Österreich | in Berlin
+mc: 한국에서는 새 학년이 언제 시작하나요? | 3월* | 여름 방학이 끝난 뒤 | 1월
+rf: In Korea tragen die Schüler in der Grundschule eine Uniform. | f => In der Grundschule nicht. 중학교부터 입어요.
+mc: Yuna는 독일 학교의 무엇이 마음에 드나요? | 학교가 한 시에 끝나는 것* | 숙제가 적은 것 | 교복이 없는 것
+
+-- kultur 성적은 1이 가장 좋아요
+p: 독일의 새 학년은 여름 방학이 끝난 8월이나 9월에 시작해요. 한 학년은 두 학기로 나뉘고, 1월 말과 여름 방학 전에 성적표(Zeugnis)를 받아요.
+p: 성적은 1부터 6까지 숫자로 나와요. 1(sehr gut)이 가장 좋고 6(ungenügend)이 가장 나빠요. 5나 6이 여러 과목에 있으면 한 학년을 다시 다녀야 할 수도 있어요.
+p: 방학은 여름에 6주, 가을과 크리스마스, 부활절에 1~2주씩 있어요. 부활절 방학을 Osterferien이라고 해요.
+mc: 독일 성적표에서 가장 좋은 성적은 무엇일까요? | 1* | 6 | 10
+
+== wortschatz
+-- gruppe In den Ferien | 방학에
+die Osterferien (Pl.) | 부활절 방학 | In den Osterferien war ich in Köln. | 부활절 방학에 나는 쾰른에 있었어요.
+der Besuch, die Besuche | 방문, 손님 | Wir hatten Besuch aus Korea. | 한국에서 손님이 왔어요.
+zeigen, hat gezeigt | 보여 주다 | Yuna hat ihrer Familie die Stadt gezeigt. | Yuna는 가족에게 시내를 구경시켜 줬어요.
+erzählen, hat erzählt | 이야기하다 | Jun hat von der Schule erzählt. | Jun은 학교 이야기를 했어요.
+arbeiten, hat gearbeitet | 일하다 | Meine Eltern haben gearbeitet. | 부모님은 일하셨어요.
+spazieren gehen, ist spazieren gegangen | 산책하다 | Wir sind am Strand spazieren gegangen. | 우리는 해변에서 산책했어요.
+der Strand, die Strände | 해변 | Der Strand ist schön. | 해변이 아름다워요.
+die Nordsee | 북해 | Lukas war an der Nordsee. | Lukas는 북해에 있었어요.
+bei | ~의 집에, ~에서 | Wir waren bei meinen Großeltern. | 우리는 할머니, 할아버지 댁에 있었어요.
+
+-- gruppe Warum? | 이유 묻고 말하기
+warum | 왜 | Warum bist du zu Hause geblieben? | 왜 집에 있었어?
+weil | ~해서, 왜냐하면 | Ich bin müde, weil ich wenig geschlafen habe. | 잠을 조금 자서 피곤해요.
+denn | 왜냐하면 | Ich bleibe zu Hause, denn ich bin krank. | 나는 집에 있어요. 아프거든요.
+der Grund, die Gründe | 이유 | Was ist der Grund? | 이유가 뭐예요?
+fragen, hat gefragt | 묻다 | Jun hat viel gefragt. | Jun은 질문을 많이 했어요.
+wenig | 조금, 적게 | Ich habe wenig geschlafen. | 나는 잠을 조금 잤어요.
+fast | 거의 | Es hat fast jeden Tag geregnet. | 거의 날마다 비가 왔어요.
+oft | 자주 | Wir gehen oft ins Kino. | 우리는 자주 영화관에 가요.
+oder | 또는, 아니면 | Fährst du mit dem Bus oder mit dem Rad? | 버스 타고 가, 아니면 자전거 타고 가?
+
+-- gruppe Schule hier und dort | 여기와 거기의 학교
+das Schuljahr, die Schuljahre | 학년, 학년도 | Das Schuljahr fängt im Sommer an. | 새 학년은 여름에 시작해요.
+der Unterricht | 수업 | Der Unterricht fängt um acht an. | 수업은 여덟 시에 시작해요.
+dauern, hat gedauert | (시간이) 걸리다, 계속되다 | Der Unterricht dauert bis vier Uhr. | 수업은 네 시까지 해요.
+die Grundschule, die Grundschulen | 초등학교 | Jun geht in die Grundschule. | Jun은 초등학교에 다녀요.
+die Mittelschule, die Mittelschulen | 중학교 | In Korea gehe ich in die Mittelschule. | 한국에서 나는 중학교에 다녀요.
+die Uniform, die Uniformen | 교복, 제복 | Viele Schüler tragen eine Uniform. | 많은 학생이 교복을 입어요.
+tragen (du trägst, er trägt) | 입다, 들다 | Er trägt eine Jacke. | 그는 재킷을 입고 있어요.
+zu Mittag essen | 점심을 먹다 | Wir essen in der Schule zu Mittag. | 우리는 학교에서 점심을 먹어요.
+das Zeugnis, die Zeugnisse | 성적표 | Im Sommer bekommen wir das Zeugnis. | 여름에 우리는 성적표를 받아요.
+die Note, die Noten | 성적, 점수 | Die Note Eins ist sehr gut. | 성적 1은 아주 좋은 거예요.
+
+-- bilder
+der Besuch, die Besuche: a family of three with a suitcase who stand at an open door and wave
+zeigen, hat gezeigt: a girl who points at a cathedral with two towers and shows it to two adults
+erzählen, hat erzählt: a boy who talks with an empty speech bubble while two friends listen
+arbeiten, hat gearbeitet: a woman who works at a desk with a laptop
+spazieren gehen, ist spazieren gegangen: two people who walk on a path with a small dog
+der Strand, die Strände: a sandy beach with a beach chair and two seagulls
+die Nordsee: a lighthouse on a flat coast with waves
+das Schuljahr, die Schuljahre: a wall calendar next to a school bag
+der Unterricht: a teacher who stands at a blackboard in front of three students at desks
+die Grundschule, die Grundschulen: a small school building with a slide and two small children with school bags
+die Uniform, die Uniformen: two students in matching school uniforms with blazers and ties
+das Zeugnis, die Zeugnisse: a sheet of paper with a table of blank lines and a round stamp
+
+-- tafel Die Noten | 독일의 성적
+p: 숫자가 작을수록 좋은 성적이에요. 줄을 누르면 소리가 나요.
+r: 1 sehr gut = 아주 잘함 ; 2 gut = 잘함 | say=Eins, sehr gut. Zwei, gut.
+r: 3 befriedigend = 보통 ; 4 ausreichend = 통과 | say=Drei, befriedigend. Vier, ausreichend.
+r: 5 mangelhaft = 부족함 ; 6 ungenügend = 매우 부족함 | say=Fünf, mangelhaft. Sechs, ungenügend.
+
+-- aussprache ch: ich와 ach | ch는 두 가지 소리
+p: i, e, ä, ö, ü와 자음 뒤의 ch는 혀를 입천장 가까이 대고 내는 부드러운 소리예요. ich, nicht, Unterricht, Mädchen.
+p: a, o, u, au 뒤의 ch는 목 안쪽에서 내는 거친 소리예요. auch, Buch, Besuch, Woche.
+hör: ich, nicht, Unterricht, Mädchen | 부드러운 ch
+hör: auch, Buch, Besuch, Woche | 거친 ch
+hör: Ich habe auch Besuch, aber nicht heute. | 연습 문장
+
+== grammatik
+-- punkt weil-Sätze | 이유를 말하는 weil
+bsp: Ich bin zu Hause geblieben, *weil* meine Eltern gearbeitet *haben*. | 부모님이 일하셔서 나는 집에 있었어.
+bsp: Jun findet Köln toll, *weil* es hier so viel Schokolade *gibt*. | 여기는 초콜릿이 아주 많아서 Jun은 쾰른이 좋대.
+bsp: Warum bist du nicht gefahren? – *Weil* meine Oma Geburtstag *hatte*. | 왜 안 갔어? – 할머니 생신이어서.
+finde: weil로 시작하는 문장에서 동사는 어디에 있나요? | 문장 맨 끝* | 둘째 자리 | weil 바로 뒤
+regel: 이유는 weil로 말해요. weil 문장에서는 동사가 맨 끝으로 가고, weil 앞에 쉼표를 찍어요. Warum?으로 물으면 Weil …로 짧게 답할 수 있어요.
+| 앞 문장 | weil | 가운데 | 동사
+| Ich bleibe zu Hause, | weil | ich krank | *bin*.
+| Er kommt nicht, | weil | er keine Zeit | *hat*.
+| Wir sind müde, | weil | wir wenig geschlafen | *haben*.
+| Lukas bleibt hier, | weil | er lernen | *muss*.
+merke: Perfekt에서는 haben이나 sein이, 조동사가 있으면 조동사가 맨 끝에 와요. …, weil ich wenig geschlafen habe. …, weil er lernen muss.
+
+-- punkt und, aber, oder, denn | 순서를 바꾸지 않는 이음말
+bsp: Ich habe viel gelesen *und* ich habe Karten gespielt. | 나는 책을 많이 읽고 카드놀이를 했어.
+bsp: Die Schule ist um eins aus, *aber* es gibt viele Hausaufgaben. | 학교는 한 시에 끝나지만 숙제가 많아.
+bsp: Fährst du mit dem Bus *oder* gehst du zu Fuß? | 버스 타고 가, 아니면 걸어가?
+bsp: Wir sind wenig spazieren gegangen, *denn* es *hat* geregnet. | 비가 와서 산책을 조금밖에 못 했어.
+finde: denn 뒤에서 동사 hat은 어디에 있나요? | 평소처럼 둘째 자리* | 문장 맨 끝 | denn 바로 앞
+regel: und(그리고), aber(하지만), oder(또는), denn(왜냐하면)은 두 문장을 이어요. 이 말들 뒤에서는 문장 순서가 바뀌지 않아요. 동사가 평소처럼 둘째 자리에 와요. aber와 denn 앞에는 쉼표를 찍어요.
+| weil: 동사가 맨 끝 | denn: 동사가 둘째 자리
+| Ich bleibe zu Hause, *weil* ich krank *bin*. | Ich bleibe zu Hause, *denn* ich *bin* krank.
+| Er kommt nicht, *weil* er keine Zeit *hat*. | Er kommt nicht, *denn* er *hat* keine Zeit.
+| Wir fahren mit dem Bus, *weil* es *regnet*. | Wir fahren mit dem Bus, *denn* es *regnet*.
+merke: weil과 denn은 뜻이 같아요. Warum?에 짧게 답할 때는 Weil …만 써요. Denn …으로 답을 시작하지는 않아요.
+
+-- punkt Perfekt: Wiederholung | 지난 일 말하기 복습
+bsp: Meine Eltern *haben* mich *besucht*. | 부모님이 나를 보러 오셨어.
+bsp: Jun *hat* viel von der Schule *erzählt*. | Jun은 학교 이야기를 많이 했어.
+bsp: Sie *sind* eine Woche *geblieben*. | 일주일 동안 계셨어.
+finde: besucht, erzählt처럼 be-, er-로 시작하는 동사의 과거분사에는 무엇이 없나요? | ge-* | -t | haben
+regel: 지난 일은 haben이나 sein과 과거분사로 말해요. 움직이는 동사와 bleiben은 sein을, 나머지는 haben을 써요. be-, er-, ver-로 시작하는 동사는 과거분사에 ge-를 붙이지 않아요.
+| 동사 | 과거분사 | 예문
+| zeigen | hat *ge*zeig*t* | Ich habe ihr die Stadt gezeigt.
+| arbeiten | hat *ge*arbeit*et* | Sie hat am Samstag gearbeitet.
+| fragen | hat *ge*frag*t* | Er hat viel gefragt.
+| besuchen | hat besuch*t* | Sie haben mich besucht.
+| erzählen | hat erzähl*t* | Er hat von Korea erzählt.
+| fliegen | ist *ge*flog*en* | Sie sind nach Köln geflogen.
+| bleiben | ist *ge*blieb*en* | Wir sind zu Hause geblieben.
+merke: arbeiten처럼 줄기가 -t, -d로 끝나거나 regnen처럼 자음 + n으로 끝나면 -et를 붙여요. gearbeitet, geregnet.
+
+== training
+-- ex Hören | Emma가 부활절 방학 이야기를 해요. 듣고 답하세요.
+audio | Meine Osterferien
+> Emma: In den Osterferien bin ich in Köln geblieben, weil wir Besuch aus Korea hatten.
+> Emma: Yunas Eltern und ihr Bruder Jun waren eine Woche bei uns.
+> Emma: Am Montag haben wir den Dom gesehen. Jun hat hundert Fotos gemacht!
+> Emma: Am Mittwoch sind wir nicht in den Zoo gegangen, denn es hat geregnet. Wir sind ins Schokoladenmuseum gegangen.
+> Emma: Am Samstag hat mein Vater für alle gekocht. Yunas Mutter hat Kimchi gemacht. Es war sehr lecker!
+mc: Warum ist Emma in Köln geblieben? | Weil sie Besuch hatten.* | Weil sie krank war. | Weil es geregnet hat.
+mc: Was hat Jun am Montag gemacht? | Er hat viele Fotos gemacht.* | Er ist in den Zoo gegangen. | Er hat gekocht.
+rf: Am Mittwoch sind sie in den Zoo gegangen. | f => 비가 와서 동물원 대신 초콜릿 박물관에 갔어요.
+mc: 토요일에는 누가 모두를 위해 요리했나요? | Emma의 아버지* | Yuna의 아버지 | Jun
+
+-- ex Hören | 듣고 이유를 고르세요.
+hör: Elif: Ich komme heute nicht, weil ich krank bin.
+mc: Elif는 왜 안 오나요? | 아파서* | 시간이 없어서 | 비가 와서
+hör: Lukas: Ich bin müde, weil ich wenig geschlafen habe.
+mc: Lukas는 왜 피곤한가요? | 잠을 조금 자서* | 축구를 해서 | 공부를 많이 해서
+hör: Emma: Ich fahre heute mit dem Bus, denn es regnet.
+mc: Emma는 왜 버스를 타나요? | 비가 와서* | 자전거가 없어서 | 늦어서
+hör: Yuna: Ich lerne Deutsch, weil ich in Köln wohne.
+mc: Yuna는 왜 독일어를 배우나요? | 쾰른에 살아서* | 독일어가 쉬워서 | 시험이 있어서
+
+-- ex Lesen | Yuna가 블로그에 쓴 글이에요. 읽고 답하세요.
+text notiz | Besuch aus Korea
+> Endlich! In den Osterferien hat mich meine Familie besucht. Meine Eltern und Jun sind am Samstag nach Köln geflogen.
+> Am Sonntag haben wir lange geschlafen, weil alle müde waren. Die Reise hat dreizehn Stunden gedauert!
+> Am Montag habe ich meiner Familie die Schule gezeigt. Meine Mutter findet die Schule schön, aber klein.
+> Jun hat gefragt: „Warum ist die Schule schon um eins aus?“ Er findet das toll, denn in Korea hat er bis vier Uhr Unterricht.
+> Am Freitag sind sie zurückgeflogen. Aber im Sommer fliege ich nach Korea. Dann sehe ich sie wieder!
+rf: Yunas Familie ist mit dem Zug nach Köln gekommen. | f => Sie sind nach Köln geflogen. 비행기를 타고 왔어요.
+mc: Warum haben am Sonntag alle lange geschlafen? | Weil alle müde waren.* | Weil es geregnet hat. | Weil die Schule aus war.
+mc: Wie findet Yunas Mutter die Schule? | schön, aber klein* | groß und alt | zu weit
+mc: Jun은 독일 학교의 무엇이 좋다고 하나요? | 학교가 한 시에 끝나는 것* | 숙제가 없는 것 | 교복이 없는 것
+rf: Im Sommer fliegt Yuna nach Korea. | r
+
+-- ex Grammatik | 동사의 자리를 보고 weil과 denn 가운데 알맞은 말을 고르세요.
+gap: Ich bleibe zu Hause, [weil|denn] ich krank bin. => 동사 bin이 맨 끝에 있으니 weil이에요.
+gap: Ich bleibe zu Hause, [denn|weil] ich bin krank. => 동사 bin이 둘째 자리에 있으니 denn이에요.
+gap: Er kommt nicht, [weil|denn] er keine Zeit hat.
+gap: Wir fahren mit dem Bus, [denn|weil] es regnet heute.
+gap: Lukas ist müde, [weil|denn] er wenig geschlafen hat.
+gap: Ich lerne Deutsch, [denn|weil] ich wohne in Köln.
+
+-- ex Grammatik | und, aber, oder, denn 가운데 알맞은 말을 고르세요.
+gap: Ich habe gelesen [und|aber|oder] ich habe Musik gehört. | 나는 책을 읽고 음악을 들었어요.
+gap: Die Schule ist schön, [aber|und|oder] sie ist klein. | 학교는 예쁘지만 작아요.
+gap: Gehen wir ins Kino [oder|aber|denn] bleiben wir zu Hause? | 영화관에 갈까, 아니면 집에 있을까?
+gap: Ich komme nicht mit, [denn|oder|und] ich habe keine Zeit. | 나는 같이 못 가. 시간이 없거든.
+gap: Jun findet Köln toll, [aber|oder|denn] er wohnt in Seoul. | Jun은 쾰른이 좋지만 서울에 살아요.
+
+-- ex Grammatik | 괄호 안의 동사를 과거분사로 바꿔 쓰세요.
+gap: Meine Eltern haben mich [=besucht]. (besuchen) | 부모님이 나를 보러 오셨어요.
+gap: Jun hat viel von Korea [=erzählt]. (erzählen) | Jun은 한국 이야기를 많이 했어요.
+gap: Ich habe meiner Familie die Stadt [=gezeigt]. (zeigen) | 나는 가족에게 시내를 보여 줬어요.
+gap: Meine Mutter hat am Samstag [=gearbeitet]. (arbeiten) | 어머니는 토요일에 일하셨어요.
+gap: Wir sind eine Woche [=geblieben]. (bleiben) | 우리는 일주일 동안 있었어요.
+gap: Der Unterricht hat lange [=gedauert]. (dauern) | 수업이 오래 걸렸어요.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / bleibe / zu Hause, / weil / ich / krank / bin. | 나는 아파서 집에 있어.
+ord: er / kommt / nicht, / weil / er / keine Zeit / hat. | 그는 시간이 없어서 안 와.
+ord: wir / sind / müde, / weil / wir / wenig / geschlafen / haben. | 우리는 잠을 조금 자서 피곤해.
+ord: warum / bist / du / zu Hause / geblieben? | 왜 집에 있었어?
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: das Schuljahr = 학년 ; der Unterricht = 수업 ; das Zeugnis = 성적표 ; die Note = 성적 ; die Uniform = 교복 ; die Grundschule = 초등학교 ; der Besuch = 방문, 손님
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Lukas: Wie waren die Osterferien? | 부활절 방학 어땠어?
+dik: Elif: Ich bin zu Hause geblieben. | 나는 집에 있었어.
+dik: Lukas: Warum so lange? | 왜 그렇게 오래 해?
+
+== sprechen
+-- redemittel
+방학 묻고 답하기: Wie waren die Osterferien? | 부활절 방학 어땠어? ; Was hast du in den Ferien gemacht? | 방학에 뭐 했어? ; Ich war bei meinen Großeltern. | 할머니, 할아버지 댁에 있었어. ; Wir hatten Besuch. | 손님이 왔어.
+이유 묻고 말하기: Warum bist du zu Hause geblieben? | 왜 집에 있었어? ; Weil ich krank war. | 아파서. ; …, denn es hat geregnet. | 비가 왔거든.
+비교하기: In Korea fängt das Schuljahr im März an. | 한국에서는 새 학년이 3월에 시작해. ; Bei uns ist die Schule um eins aus. | 우리는 학교가 한 시에 끝나. ; Das finde ich gut. / Das finde ich nicht so gut. | 그건 좋은 것 같아. / 그건 별로인 것 같아.
+문장 잇기: und | 그리고 ; aber | 하지만 ; oder | 또는, 아니면
+
+-- rolle A | Yuna, Lukas
+
+-- ich Meine Ferien | 지난 방학에 있었던 곳과 그 이유, 한 일을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 방학에 있었던 곳 | zu Hause
+feld: b | 이유 (동사는 맨 끝에) | meine Eltern gearbeitet haben
+feld: c | 한 일 (과거분사로 끝나게) | viel gelesen
+satz: In den Ferien war ich {a}, weil {b}.
+satz: Ich habe {c}.
+satz: Die Ferien waren schön!
+
+-- schreiben Schule hier und dort | 한국 학교와 독일 학교를 비교하는 글을 써 보세요. 다섯 문장쯤 써요.
+punkt: 새 학년이 시작하는 때 ; 학교가 끝나는 시각 ; 점심 ; 교복 ; 내 생각과 이유
+start: In Korea …
+muster: In Korea fängt das Schuljahr im März an, aber in Deutschland fängt es im Sommer an. In Korea dauert der Unterricht oft bis vier Uhr. In Deutschland ist die Schule oft um eins aus. In Korea essen die Schüler in der Schule zu Mittag. Viele Schüler in Korea tragen eine Uniform, aber in Deutschland gibt es keine Uniform. Ich finde die Schule in Deutschland gut, weil ich am Nachmittag Zeit habe.
+check: 두 나라를 aber로 이어서 비교했나요? ; weil 문장에서 동사를 맨 끝에 썼나요? ; weil과 aber 앞에 쉼표를 찍었나요? ; 명사를 대문자로 시작했나요?
+
+-- kann
+Ich kann von den Ferien erzählen. | 방학 이야기를 할 수 있어요.
+Ich kann Gründe sagen. | 이유를 말할 수 있어요.
+Ich kann die Schule in Korea und in Deutschland vergleichen. | 한국과 독일의 학교를 비교할 수 있어요.
+
+-- tipp 왜? 놀이로 weil을 익혀요
+p: 친구나 가족과 '왜?' 놀이를 해 보세요. 한 사람이 문장을 말하면 다른 사람이 Warum?이라고 묻고, 처음 사람은 Weil …로 답해요. Ich bin müde. – Warum? – Weil ich wenig geschlafen habe.
+p: weil 문장을 말할 때는 동사를 끝까지 아껴 두세요. 먼저 weil ich krank …까지 말하고, 마지막에 bin을 붙여요.

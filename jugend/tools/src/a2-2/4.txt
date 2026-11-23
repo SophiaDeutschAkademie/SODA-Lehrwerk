@@ -1,0 +1,276 @@
+@id a2-2/4
+
+== einstieg
+bild: A classroom. ELIF stands in front of the class next to a large wall map of central Europe without any text and points at a mountain region in the lower part of the map. LUKAS and YUNA sit at desks and listen. On the board hangs a photo of a pointed snowy mountain.
+alt: 교실이에요. Elif가 반 친구들 앞에서 큰 유럽 지도의 아래쪽 산악 지역을 가리키고 있어요. Lukas와 Yuna가 앉아서 듣고 있어요. 칠판에는 뾰족한 눈 덮인 산 사진이 붙어 있어요.
+lead: 수학여행을 며칠 앞두고 8b는 독일어를 쓰는 다른 나라를 알아봐요. Elif는 스위스를, Lukas는 오스트리아를 발표해요.
+mission: 이 과를 마치면 나라와 도시를 소개하고, 명소를 설명하고, 짧게 발표할 수 있어요.
+wort: das Land | 나라
+wort: das Referat | 발표
+wort: Wien ist eine Stadt, die an der Donau liegt. | 빈은 도나우강 가에 있는 도시예요.
+wort: Zürich ist die größte Stadt in der Schweiz. | 취리히는 스위스에서 가장 큰 도시예요.
+mc: Wien ist eine Stadt, die an der Donau liegt. 여기서 die는 무엇을 가리키나요? | 앞에 있는 Stadt* | 뒤에 있는 Donau | 말하는 사람 => die는 바로 앞의 명사 Stadt를 받아서 그 도시가 어떤 도시인지 설명해요.
+
+== hoeren
+-- dialog A | Elifs Referat: die Schweiz | 수업 시간이에요. Elif가 먼저 발표해요.
+vor: 들으면서 찾아보세요. 스위스의 수도는 어디인가요?
+Schneider: Heute hören wir kurze Referate über Österreich und die Schweiz. Elif, fang bitte an. | 오늘은 오스트리아와 스위스에 대한 짧은 발표를 들어요. Elif, 시작해 볼까요.
+Elif: Mein Thema ist die Schweiz. Die Schweiz ist ein Land, das südlich von Deutschland liegt. | 제 주제는 스위스예요. 스위스는 독일 남쪽에 있는 나라예요.
+Elif: In der Schweiz gibt es vier Sprachen. Deutsch ist die Sprache, die am meisten gesprochen wird. | 스위스에는 언어가 네 가지 있어요. 독일어가 가장 많이 쓰이는 언어예요.
+Lukas: Ist Zürich die Hauptstadt? | 취리히가 수도예요?
+Elif: Nein. Zürich ist die größte Stadt, aber die Hauptstadt ist Bern. | 아니요. 취리히는 가장 큰 도시이고, 수도는 베른이에요.
+Yuna: Was ist in der Schweiz besonders bekannt? | 스위스에서는 뭐가 특히 유명해요?
+Elif: Die Berge! Das Matterhorn ist ein Berg, der mehr als 4000 Meter hoch ist. | 산이에요! 마터호른은 높이가 4000미터가 넘는 산이에요. | say=Die Berge! Das Matterhorn ist ein Berg, der mehr als viertausend Meter hoch ist.
+Emma: Und die Schokolade. Meine Tante bringt immer Schokolade aus der Schweiz mit. | 초콜릿도요. 우리 이모는 늘 스위스에서 초콜릿을 사 와요.
+Elif: Stimmt. Und man bezahlt dort nicht mit Euro. Das Geld heißt Franken. | 맞아요. 그리고 거기서는 유로로 계산하지 않아요. 돈 이름이 프랑이에요.
+Schneider: Danke, Elif. Das war ein Referat, das sehr interessant war. | 고마워요, Elif. 아주 흥미로운 발표였어요.
+
+-- dialog B | Lukas' Referat: Österreich | 이어서 Lukas가 발표해요.
+vor: 들으면서 찾아보세요. 빈은 어느 강 가에 있나요?
+Lukas: Mein Thema ist Österreich. Paul hat mir geholfen, weil er aus Österreich kommt. | 제 주제는 오스트리아예요. Paul이 오스트리아에서 와서 저를 도와줬어요.
+Lukas: Die Hauptstadt ist Wien. Wien ist eine Stadt, die an der Donau liegt. | 수도는 빈이에요. 빈은 도나우강 가에 있는 도시예요.
+Schneider: Wie viele Einwohner hat Wien? | 빈에는 사람이 얼마나 살아요?
+Lukas: Ungefähr zwei Millionen. Wien ist die größte Stadt in Österreich. | 200만 명쯤이요. 빈은 오스트리아에서 가장 큰 도시예요.
+Yuna: Ich kenne Salzburg. Das ist die Stadt, die durch Mozart bekannt ist. | 저는 잘츠부르크를 알아요. 모차르트로 유명한 도시예요.
+Lukas: Genau. Mozart ist ein Musiker, der aus Salzburg kommt. | 맞아요. 모차르트는 잘츠부르크에서 난 음악가예요.
+Emma: Kann man in Österreich Ski fahren? | 오스트리아에서 스키를 탈 수 있어요?
+Lukas: Ja, sehr gut. Der höchste Berg heißt Großglockner. Er ist fast 3800 Meter hoch. | 네, 아주 잘 탈 수 있어요. 가장 높은 산은 그로스글로크너예요. 높이가 3800미터 가까이 돼요. | say=Ja, sehr gut. Der höchste Berg heißt Großglockner. Er ist fast dreitausendachthundert Meter hoch.
+Elif: Und wie sagt man in Österreich „Hallo“? | 그럼 오스트리아에서는 „Hallo“를 뭐라고 해요?
+Lukas: Man sagt „Servus“ oder „Grüß Gott“. Paul sagt immer „Servus“. | „Servus“나 „Grüß Gott“라고 해요. Paul은 늘 „Servus“라고 해요.
+Schneider: Vielen Dank, Lukas. Jetzt kennen wir zwei Länder, die neben Deutschland liegen. | 고마워요, Lukas. 이제 독일 옆에 있는 나라 둘을 알게 됐어요.
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: 스위스는 독일의 어느 쪽에 있나요? | 남쪽* | 북쪽 | 동쪽
+mc: Wie viele Sprachen gibt es in der Schweiz? | vier* | zwei | drei
+rf: Zürich ist die Hauptstadt von der Schweiz. | f => Die Hauptstadt ist Bern.
+mc: Wie heißt das Geld in der Schweiz? | Franken* | Euro | Dollar
+mc: Welche Stadt liegt an der Donau? | Wien* | Salzburg | Zürich
+rf: Mozart kommt aus Wien. | f => Mozart ist ein Musiker, der aus Salzburg kommt.
+mc: 오스트리아에서 가장 높은 산은 무엇인가요? | 그로스글로크너* | 마터호른 | 추크슈피체
+
+-- kultur D-A-CH, 같은 말을 쓰는 세 나라
+p: D-A-CH는 독일(D), 오스트리아(A), 스위스(CH)를 묶어 부르는 말이에요. 자동차에 붙이는 나라 글자를 이어 붙였어요. Dach는 독일어로 '지붕'이라는 뜻이기도 해요.
+p: 세 나라 모두 독일어를 쓰지만 말이 조금씩 달라요. 인사만 해도 오스트리아에서는 Servus나 Grüß Gott, 스위스에서는 Grüezi라고 해요. 오스트리아에서는 1월을 Jänner라고 하고, 스위스에서는 ß를 쓰지 않고 ss로 적어요.
+p: 오스트리아는 유로를 쓰고 스위스는 프랑(Franken)을 써요. 스위스에서는 독일어 말고도 프랑스어, 이탈리아어, 레토로만어를 써요.
+mc: 스위스에서 독일어로 인사하려고 해요. 뭐라고 하면 좋을까요? | Grüezi!* | Servus! | Jänner!
+
+== wortschatz
+-- gruppe Länder | 나라
+das Land, die Länder | 나라 | Die Schweiz ist ein kleines Land. | 스위스는 작은 나라예요.
+Europa | 유럽 | Deutschland liegt in Europa. | 독일은 유럽에 있어요.
+Asien | 아시아 | Korea liegt in Asien. | 한국은 아시아에 있어요.
+die Welt | 세계 | Ich möchte die Welt sehen. | 나는 세계를 보고 싶어요.
+der Einwohner, die Einwohner | 주민, 인구 | Wien hat zwei Millionen Einwohner. | 빈에는 200만 명이 살아요.
+die Million, die Millionen | 백만 | In Seoul wohnen fast zehn Millionen Leute. | 서울에는 천만 명 가까이 살아요.
+die Sprache, die Sprachen | 언어 | Yuna spricht drei Sprachen. | Yuna는 세 가지 언어를 해요.
+die Grenze, die Grenzen | 국경 | Die Stadt liegt an der Grenze. | 그 도시는 국경에 있어요.
+der Franken, die Franken | 프랑 (스위스 돈) | Das kostet zehn Franken. | 그건 10프랑이에요.
+
+-- gruppe Auf der Karte | 지도에서
+der Fluss, die Flüsse | 강 | Der Rhein ist ein langer Fluss. | 라인강은 긴 강이에요.
+der See, die Seen | 호수 | Wir schwimmen im See. | 우리는 호수에서 수영해요.
+fließen, ist geflossen | 흐르다 | Der Rhein fließt durch Köln. | 라인강은 쾰른을 지나 흘러요.
+die Insel, die Inseln | 섬 | Jeju ist eine Insel. | 제주는 섬이에요.
+der Wald, die Wälder | 숲 | Wir gehen im Wald spazieren. | 우리는 숲에서 산책해요.
+der Norden | 북쪽 | Hamburg liegt im Norden. | 함부르크는 북쪽에 있어요.
+der Süden | 남쪽 | München liegt im Süden. | 뮌헨은 남쪽에 있어요.
+der Osten | 동쪽 | Berlin liegt im Osten. | 베를린은 동쪽에 있어요.
+der Westen | 서쪽 | Köln liegt im Westen. | 쾰른은 서쪽에 있어요.
+südlich von | ~의 남쪽에 | Die Schweiz liegt südlich von Deutschland. | 스위스는 독일 남쪽에 있어요.
+hoch | 높은 | Der Berg ist sehr hoch. | 그 산은 아주 높아요.
+bekannt | 유명한, 잘 알려진 | Köln ist für den Dom bekannt. | 쾰른은 대성당으로 유명해요.
+besonders | 특히 | Die Berge sind besonders schön. | 산이 특히 아름다워요.
+
+-- gruppe Das Referat | 발표
+das Referat, die Referate | 발표 | Elif hält ein Referat. | Elif가 발표를 해요.
+das Thema, die Themen | 주제 | Mein Thema ist die Schweiz. | 제 주제는 스위스예요.
+vorstellen, hat vorgestellt | 소개하다 | Ich stelle heute Wien vor. | 저는 오늘 빈을 소개해요.
+der Musiker, die Musiker | 음악가 | Mozart ist ein bekannter Musiker. | 모차르트는 유명한 음악가예요.
+mehr als | ~보다 많이, ~ 넘게 | Der Berg ist mehr als 4000 Meter hoch. | 그 산은 높이가 4000미터가 넘어요. | say=Der Berg ist mehr als viertausend Meter hoch.
+die Leute (Pl.) | 사람들 | In Wien wohnen viele Leute. | 빈에는 사람이 많이 살아요.
+Servus! | 안녕! (오스트리아) | Servus, Paul! | 안녕, Paul!
+Grüezi! | 안녕하세요! (스위스) | Grüezi! Wie geht es Ihnen? | 안녕하세요! 어떻게 지내세요?
+
+-- bilder
+das Land, die Länder: a plain map shape of a country with a small flag pole next to it and no text
+der Einwohner, die Einwohner: a crowd of small people figures in front of a row of houses
+die Sprache, die Sprachen: two people who talk with empty speech bubbles in different shapes
+die Grenze, die Grenzen: a road with a border barrier and a small guard house between two fields
+der Fluss, die Flüsse: a wide river that curves through a green valley
+der See, die Seen: a calm lake with mountains behind it and a small boat
+die Insel, die Inseln: a small island with a tree in the sea
+der Wald, die Wälder: many tall fir trees close together
+hoch: a very tall snowy mountain next to a tiny house
+das Referat, die Referate: a teenager who stands next to a board with pictures and talks to a seated group
+der Musiker, die Musiker: a man who plays the piano
+bekannt: a person on a stage in a spotlight while a crowd takes photos
+
+-- aussprache ei, ie, eu | 나라와 도시 이름으로 익혀요
+p: 모음 글자 둘이 붙으면 소리가 달라져요. ei는 [아이], ie는 길게 [이], eu는 [오이]로 소리 나요.
+p: Schweiz와 Österreich의 ei는 [아이], Wien의 ie는 [이], Deutschland와 Europa의 eu는 [오이]예요. Zürich의 Z는 [츠]로 말해요.
+hör: Schweiz, Österreich, Rhein | ei
+hör: Wien, Kiel, liegen | ie
+hör: Deutschland, Europa, neun | eu
+hör: Zürich liegt in der Schweiz und Wien in Österreich. | 연습 문장
+
+== grammatik
+-- punkt Relativsätze im Nominativ | 명사를 문장으로 설명하기
+bsp: Die Schweiz ist ein Land, *das* südlich von Deutschland *liegt*. | 스위스는 독일 남쪽에 있는 나라예요.
+bsp: Wien ist eine Stadt, *die* an der Donau *liegt*. | 빈은 도나우강 가에 있는 도시예요.
+bsp: Das Matterhorn ist ein Berg, *der* sehr hoch *ist*. | 마터호른은 아주 높은 산이에요.
+finde: 관계문에서 동사는 어디에 있나요? | 맨 끝* | der, die, das 바로 뒤 | 쉼표 앞
+regel: 명사를 문장으로 더 자세히 설명할 때 관계문을 써요. 명사 바로 뒤에 쉼표를 찍고 der, die, das를 쓴 다음, 동사를 맨 끝에 둬요. der, die, das는 앞 명사의 성을 따르고, 복수는 die예요.
+| 명사 | 관계문
+| der Berg | ein Berg, *der* sehr hoch *ist*
+| die Stadt | eine Stadt, *die* an der Donau *liegt*
+| das Land | ein Land, *das* in Asien *liegt*
+| die Länder (복수) | zwei Länder, *die* neben Deutschland *liegen*
+merke: 두 문장을 하나로 묶는다고 생각하면 쉬워요. Wien ist eine Stadt. Sie liegt an der Donau. → Wien ist eine Stadt, die an der Donau liegt.
+
+-- punkt in der Schweiz, aus Österreich | 관사가 있는 나라와 없는 나라
+bsp: *In der Schweiz* gibt es vier Sprachen. | 스위스에는 언어가 네 가지 있어요.
+bsp: Paul kommt *aus Österreich*. | Paul은 오스트리아에서 왔어요.
+bsp: Meine Tante bringt Schokolade *aus der Schweiz* mit. | 우리 이모는 스위스에서 초콜릿을 사 와요.
+finde: 나라 이름 Schweiz 앞에는 무엇이 있나요? | 관사* | 아무것도 없어요 | nach
+regel: 나라 이름은 대부분 관사 없이 써요. 하지만 die Schweiz, die Türkei처럼 관사가 붙는 나라가 있어요. 이런 나라는 '~에서'를 in der, '~로'를 in die, '~에서 왔다'를 aus der로 말해요.
+| 물음 | 관사 없는 나라 | 관사 있는 나라
+| Wo? 어디에 | in Österreich, in Korea | in *der* Schweiz, in *der* Türkei
+| Wohin? 어디로 | nach Österreich, nach Korea | in *die* Schweiz, in *die* Türkei
+| Woher? 어디에서 | aus Österreich, aus Korea | aus *der* Schweiz, aus *der* Türkei
+merke: 미국은 die USA이고 복수예요. 그래서 in den USA, in die USA, aus den USA라고 해요.
+
+-- punkt Superlativ vor dem Nomen | 최상급을 명사 앞에 쓰기
+bsp: Zürich ist *die größte* Stadt in der Schweiz. | 취리히는 스위스에서 가장 큰 도시예요.
+bsp: *Der höchste* Berg heißt Großglockner. | 가장 높은 산은 그로스글로크너예요.
+finde: am größten을 명사 Stadt 앞에 쓰면 어떻게 되나요? | am이 빠지고 die größte Stadt가 돼요* | 그대로 am größten Stadt예요 | größer Stadt가 돼요
+regel: A2.1에서 am größten, am höchsten을 배웠어요. 최상급을 명사 앞에 쓸 때는 am을 빼고 der, die, das와 함께 써요. 끝은 -ste이고, 1격에서는 성과 상관없이 같은 모양이에요.
+| 원급 | 비교급 | 최상급 | 명사 앞
+| groß | größer | am größten | die größ*te* Stadt
+| hoch | höher | am höchsten | der höch*ste* Berg
+| lang | länger | am längsten | der läng*ste* Fluss
+| bekannt | bekannter | am bekanntesten | das bekannt*este* Museum
+| gut | besser | am besten | das be*ste* Eis
+merke: hoch는 비교급에서 c가 빠져요. hoch – höher – am höchsten. -t로 끝나는 형용사는 e를 넣어 bekannteste라고 해요.
+
+== training
+-- ex Hören | Yuna가 한국을 소개해요. 듣고 답하세요.
+audio | Yunas Referat: Korea
+> Yuna: Mein Thema ist Korea. Korea ist ein Land, das in Asien liegt.
+> Yuna: Die Hauptstadt ist Seoul. Seoul ist eine Stadt, die fast zehn Millionen Einwohner hat.
+> Yuna: Durch Seoul fließt ein Fluss, der Han heißt.
+> Yuna: Der höchste Berg in Südkorea heißt Hallasan. Er liegt auf der Insel Jeju.
+> Yuna: Jeju ist eine Insel, die im Süden liegt. Dort machen viele Leute Ferien.
+mc: Wie viele Einwohner hat Seoul? | fast zehn Millionen* | fast zwei Millionen | fast vier Millionen
+mc: Wie heißt der Fluss in Seoul? | Han* | Donau | Rhein
+rf: Der höchste Berg in Südkorea liegt in Seoul. | f => Er liegt auf der Insel Jeju.
+mc: 제주는 한국의 어느 쪽에 있나요? | 남쪽* | 북쪽 | 동쪽
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Elif: Der Rhein ist der längste Fluss in Deutschland.
+mc: Elif는 라인강이 어떻다고 하나요? | 독일에서 가장 긴 강이에요* | 독일에서 가장 짧은 강이에요 | 스위스에만 있는 강이에요
+hör: Lukas: Meine Oma wohnt in einer Stadt, die an der Nordsee liegt.
+mc: Lukas의 할머니는 어디에 사나요? | 북해에 있는 도시* | 산속에 있는 마을 | 호숫가에 있는 도시
+hör: Emma: Im Sommer fahren wir in die Schweiz.
+mc: Emma네는 여름에 어디로 가나요? | 스위스로* | 오스트리아로 | 발트해로
+hör: Yuna: Paul kommt aus Österreich, aber er wohnt seit einem Jahr in Köln.
+mc: Paul은 지금 어디에 사나요? | 쾰른* | 오스트리아 | 스위스
+
+-- ex Lesen | Paul이 반 블로그에 고향 빈을 소개했어요. 읽고 답하세요.
+text notiz | Meine Stadt: Wien
+> Ich komme aus Wien. Wien ist die Hauptstadt von Österreich und hat ungefähr zwei Millionen Einwohner.
+> Wien ist eine Stadt, die für Musik bekannt ist. Mozart und Beethoven haben hier gewohnt.
+> Mein Lieblingsplatz ist der Prater. Das ist ein Park, der sehr groß ist. Dort gibt es ein Riesenrad, das mehr als hundert Jahre alt ist.
+> In Wien isst man gern Schnitzel. Das Wiener Schnitzel ist das bekannteste Essen aus Österreich.
+> Im Winter fahre ich mit meiner Familie in die Berge. Österreich ist ein Land, das viele hohe Berge hat.
+mc: Wofür ist Wien bekannt? | für Musik* | für Schokolade | für das Meer
+rf: Im Prater gibt es ein Riesenrad, das sehr alt ist. | r
+mc: Was ist das bekannteste Essen aus Österreich? | das Wiener Schnitzel* | die Kartoffelsuppe | der Pfannkuchen
+mc: Paul은 겨울에 가족과 무엇을 하나요? | 산으로 가요* | 바다로 가요 | 빈에 있어요
+
+-- ex Lesen | 세 나라를 견준 표예요. 보고 답하세요.
+text plan | D-A-CH in Zahlen
+> Land | Hauptstadt | Einwohner | Höchster Berg
+> Deutschland | Berlin | 84 Millionen | Zugspitze, 2962 Meter
+> Österreich | Wien | 9 Millionen | Großglockner, 3798 Meter
+> Schweiz | Bern | 9 Millionen | Dufourspitze, 4634 Meter
+mc: Welches Land hat die meisten Einwohner? | Deutschland* | Österreich | die Schweiz
+mc: In welchem Land liegt der höchste Berg? | in der Schweiz* | in Österreich | in Deutschland
+rf: Die Zugspitze ist höher als der Großglockner. | f => Die Zugspitze ist 2962 Meter hoch, der Großglockner 3798 Meter.
+mc: 오스트리아의 수도는 어디인가요? | 빈* | 베른 | 베를린
+
+-- ex Grammatik | der, die, das 가운데 알맞은 것을 고르세요.
+gap: Wien ist eine Stadt, [die|der|das] an der Donau liegt.
+gap: Die Schweiz ist ein Land, [das|die|der] vier Sprachen hat.
+gap: Das Matterhorn ist ein Berg, [der|die|das] sehr bekannt ist.
+gap: Der Rhein ist ein Fluss, [der|das|die] durch Köln fließt.
+gap: Jeju ist eine Insel, [die|der|das] im Süden liegt.
+gap: Das sind zwei Länder, [die|das|der] neben Deutschland liegen. => 복수는 die예요.
+
+-- ex Grammatik | 두 문장을 하나로 묶었어요. 알맞은 동사 자리를 고르세요.
+gap: Salzburg ist eine Stadt, die für Mozart bekannt [ist|sein|sind].
+gap: Das ist ein See, der im Süden [liegt|liegen|gelegen].
+gap: Paul ist ein Schüler, der aus Wien [kommt|kommen|gekommen].
+gap: Ich kenne zwei Mädchen, die in der Schweiz [wohnen|wohnt|gewohnt].
+gap: Das ist ein Berg, der sehr hoch [ist|sind|sein].
+
+-- ex Grammatik | 나라 이름 앞에 올 알맞은 말을 고르세요.
+gap: Elifs Oma wohnt in [der|die|–] Türkei. | Elif의 할머니는 튀르키예에 살아요.
+gap: Im Winter fahren wir [nach|in die|in der] Österreich. | 겨울에 우리는 오스트리아로 가요.
+gap: Im Sommer fahren wir [in die|nach|in der] Schweiz. | 여름에 우리는 스위스로 가요.
+gap: Die Schokolade kommt [aus der|aus|von] Schweiz. | 그 초콜릿은 스위스에서 왔어요.
+gap: Paul kommt [aus|aus dem|aus der] Österreich. | Paul은 오스트리아에서 왔어요.
+gap: Yuna wohnt jetzt [in|in der|nach] Deutschland. | Yuna는 지금 독일에 살아요.
+
+-- ex Grammatik | 최상급을 알맞게 고르세요.
+gap: Zürich ist die [größte|größer|am größten] Stadt in der Schweiz.
+gap: Der [höchste|höher|am höchsten] Berg in Deutschland heißt Zugspitze.
+gap: Der Rhein ist der [längste|länger|am längsten] Fluss in Deutschland.
+gap: Im Sommer ist es am [wärmsten|wärmste|wärmer]. => 명사가 뒤에 없으면 am …sten이에요.
+gap: Das ist das [beste|besser|am besten] Eis in Köln.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: Wien / ist / eine Stadt, / die / an der Donau / liegt. | 빈은 도나우강 가에 있는 도시예요.
+ord: das Matterhorn / ist / ein Berg, / der / sehr hoch / ist. | 마터호른은 아주 높은 산이에요.
+ord: Zürich / ist / die größte Stadt / in der Schweiz. | 취리히는 스위스에서 가장 큰 도시예요.
+ord: Paul / kommt / aus Österreich. | Paul은 오스트리아에서 왔어요.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: der Fluss = 강 ; der See = 호수 ; die Insel = 섬 ; der Wald = 숲 ; die Grenze = 국경 ; der Einwohner = 주민 ; die Sprache = 언어
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Elif: Mein Thema ist die Schweiz. | 제 주제는 스위스예요.
+dik: Lukas: Die Hauptstadt ist Wien. | 수도는 빈이에요.
+dik: Yuna: Was ist dort besonders bekannt? | 거기서는 뭐가 특히 유명해요?
+
+== sprechen
+-- redemittel
+발표 시작하기: Mein Thema ist … | 제 주제는 ~입니다. ; Ich stelle heute … vor. | 저는 오늘 ~을 소개합니다. ; Zuerst zeige ich die Karte. | 먼저 지도를 보여 드릴게요.
+나라와 도시 소개하기: … liegt südlich von Deutschland. | ~은 독일 남쪽에 있어요. ; Die Hauptstadt ist … | 수도는 ~이에요. ; … hat zwei Millionen Einwohner. | ~에는 200만 명이 살아요. ; Man spricht dort Deutsch. | 거기서는 독일어를 써요.
+명소 설명하기: … ist eine Stadt, die … | ~은 ~하는 도시예요. ; … ist besonders bekannt. | ~이 특히 유명해요. ; Der höchste Berg heißt … | 가장 높은 산은 ~예요.
+발표 끝내기: Das war mein Referat. | 제 발표는 여기까지입니다. ; Habt ihr Fragen? | 질문 있어요? ; Danke fürs Zuhören! | 들어 주셔서 감사합니다!
+
+-- rolle B | Lukas, Schneider
+
+-- ich Meine Stadt | 내가 사는 도시나 고향을 소개하는 문장을 만들어 보세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 도시 이름 | Bucheon
+feld: b | 어디에 있는지 (im Westen von Korea, am Meer) | im Westen von Korea
+feld: c | 어떤 도시인지 (die + … + 동사) | die neben Seoul liegt
+feld: d | 유명한 것 (für + 4격) | für Comics
+satz: Ich wohne in {a}. Die Stadt liegt {b}.
+satz: {a} ist eine Stadt, {c}.
+satz: Die Stadt ist {d} bekannt.
+
+-- schreiben Mein Kurzreferat | 나라나 도시 하나를 골라 짧은 발표문을 써 보세요. 일곱 문장쯤 써요.
+punkt: 주제 ; 어디에 있는지 ; 수도나 인구 ; 유명한 것 (관계문으로) ; 가장 높은 것, 가장 큰 것 ; 끝인사
+start: Mein Thema ist …
+muster: Mein Thema ist Korea. Korea ist ein Land, das in Asien liegt. Die Hauptstadt ist Seoul. Seoul ist eine Stadt, die fast zehn Millionen Einwohner hat. Der höchste Berg in Südkorea heißt Hallasan. Jeju ist eine Insel, die für das Meer und die Berge bekannt ist. Das war mein Referat. Habt ihr Fragen?
+check: 관계문 앞에 쉼표를 찍었나요? ; der, die, das를 앞 명사의 성에 맞췄나요? ; 관계문의 동사를 맨 끝에 썼나요? ; 최상급을 명사 앞에 der höchste, die größte처럼 썼나요?
+
+-- kann
+Ich kann ein Land oder eine Stadt vorstellen. | 나라나 도시를 소개할 수 있어요.
+Ich kann etwas mit einem Relativsatz genauer beschreiben. | 관계문으로 더 자세히 설명할 수 있어요.
+Ich kann ein kurzes Referat halten. | 짧게 발표할 수 있어요.
+
+-- tipp 발표는 세 덩어리로
+p: 짧은 발표는 시작, 가운데, 끝 세 덩어리로 짜요. Mein Thema ist …로 시작하고, 사실 서너 가지를 말한 다음, Das war mein Referat. Habt ihr Fragen?으로 끝내요.
+p: 숫자는 미리 소리 내어 연습해 두세요. zwei Millionen, viertausend Meter처럼 큰 숫자에서 자주 막혀요.

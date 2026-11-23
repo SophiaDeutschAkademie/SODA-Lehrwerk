@@ -1,0 +1,274 @@
+@id a2-2/1
+
+== einstieg
+bild: A doctor's office. SABINE wears a white coat and holds up a stethoscope. YUNA stands next to her with a notebook and a pen and looks at the stethoscope. Behind them is an examination couch and a desk with a computer.
+alt: 병원 진료실이에요. 흰 가운을 입은 Sabine가 Yuna에게 청진기를 보여 줘요. Yuna는 공책과 펜을 들고 있어요.
+lead: 6월이에요. 8b 학생들은 지난주에 하루 동안 일터에 가서 직업을 체험했어요. Yuna는 병원에 갔어요. 오늘은 그날 이야기를 하고, 앞으로 무엇이 되고 싶은지 말해요.
+mission: 이 과를 마치면 독일의 학교 제도를 소개하고, 장래 희망을 말하고, 실습에서 한 일을 이야기할 수 있어요.
+wort: das Praktikum | 실습
+wort: die Zukunft | 미래, 장래
+wort: Ich möchte Ärztin werden. | 나는 의사가 되고 싶어.
+wort: Es macht Spaß, mit Kindern zu arbeiten. | 아이들과 함께 일하는 건 재미있어.
+mc: Ich möchte Ärztin werden. 여기서 werden은 어떤 뜻인가요? | ~이 되다* | ~이다 | ~을 가지다 => werden은 '되다'예요. 직업 이름 앞에는 ein, eine를 쓰지 않아요.
+
+== hoeren
+-- dialog A | Mein Praktikumstag | 월요일 수업 시간이에요. 8b는 지난주에 하루 동안 실습을 했어요.
+vor: 들으면서 찾아보세요. Lukas는 어디에서 실습했나요?
+Schneider: Letzte Woche hattet ihr euren Praktikumstag. Wie war es? Yuna, wo warst du? | 지난주에 실습하는 날이 있었죠. 어땠어요? Yuna는 어디에 갔어요?
+Yuna: Ich war in einer Arztpraxis. Es war interessant, den Ärzten zu helfen. | 저는 병원에 갔어요. 의사 선생님들을 돕는 게 흥미로웠어요.
+Schneider: Was hast du gemacht? | 무슨 일을 했어요?
+Yuna: Ich habe Termine in den Computer geschrieben. Am Telefon war es schwer, alles zu verstehen. | 예약을 컴퓨터에 입력했어요. 전화로는 다 알아듣기가 어려웠어요.
+Schneider: Und du, Lukas? | Lukas는요?
+Lukas: Ich war in einer Grundschule und habe im Sportunterricht geholfen. Es macht Spaß, mit Kindern zu arbeiten. | 저는 초등학교에 가서 체육 수업을 도왔어요. 아이들과 함께 일하는 게 재미있어요.
+Elif: Ich war bei einer Zeitung. Ich hatte die Aufgabe, Fotos für einen Artikel zu suchen. | 저는 신문사에 갔어요. 기사에 넣을 사진을 찾는 일을 맡았어요.
+Schneider: Das klingt spannend. Und Emma? | 재미있었겠네요. Emma는요?
+Emma: Ich war im Restaurant von meinem Vater. Es ist anstrengend, den ganzen Tag zu stehen! | 저는 아빠 식당에 갔어요. 하루 종일 서 있는 건 힘들어요!
+Schneider: Jetzt wisst ihr mehr über die Berufe. Das ist wichtig für eure Zukunft. | 이제 직업에 대해 더 알게 됐죠. 그게 여러분의 장래에 중요해요.
+
+-- dialog B | Was willst du werden? | 저녁 식탁이에요. Wagner 가족과 Yuna가 장래 이야기를 해요.
+vor: 들으면서 찾아보세요. Yuna는 무엇이 되고 싶어 하나요?
+Thomas: Na, Emma, willst du jetzt auch Köchin werden? | 그래, Emma, 이제 너도 요리사가 되고 싶니?
+Emma: Nein, danke! Ich möchte Architektin werden. Ich habe Lust, Häuser zu bauen. | 아니요, 됐어요! 저는 건축가가 되고 싶어요. 집을 짓고 싶어요.
+Sabine: Dann musst du nach dem Abitur studieren. | 그러면 아비투어를 보고 나서 대학에 가야겠네.
+Emma: Ich weiß. Das Abitur mache ich in fünf Jahren. | 알아요. 아비투어는 5년 뒤에 봐요.
+Thomas: Und du, Yuna? Was willst du werden? | Yuna는? 뭐가 되고 싶니?
+Yuna: Ich möchte Ärztin werden, wie Sabine. Der Tag in der Praxis hat mir sehr gefallen. | 저는 Sabine처럼 의사가 되고 싶어요. 병원에서 보낸 하루가 정말 좋았어요.
+Sabine: Das freut mich! Aber das Studium dauert lange, mindestens sechs Jahre. | 그 말을 들으니 기쁘구나! 하지만 대학 공부가 오래 걸려, 적어도 6년이야.
+Yuna: Das macht nichts. Ich habe vor, in Deutschland zu studieren. | 괜찮아요. 저는 독일에서 대학에 다닐 계획이에요.
+Thomas: Und Lukas? Will er Fußballspieler werden? | Lukas는? 축구 선수가 되고 싶대?
+Emma: Nein, Sportlehrer. Und Elif möchte Journalistin werden. | 아니요, 체육 선생님이요. 그리고 Elif는 기자가 되고 싶대요.
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Yuna는 실습하는 날 어디에 갔나요? | 병원* | 초등학교 | 신문사
+mc: Wo war Lukas? | in einer Grundschule* | bei einer Zeitung | in einem Restaurant
+rf: Elif hat Fotos für einen Artikel gesucht. | r
+mc: Warum findet Emma die Arbeit im Restaurant anstrengend? | Weil man den ganzen Tag stehen muss.* | Weil man früh aufstehen muss. | Weil man viel sprechen muss.
+mc: Was möchte Emma werden? | Architektin* | Köchin | Ärztin
+rf: Emma macht das Abitur in zwei Jahren. | f => Das Abitur mache ich in fünf Jahren.
+mc: Yuna는 앞으로 무엇을 할 계획인가요? | 독일에서 대학에 다니기* | 한국에서 일하기 | 식당에서 일하기
+
+-- kultur 독일의 학교, 그리고 그다음
+p: 독일에서는 초등학교(Grundschule)를 보통 4년 다니고 나면 학교가 갈라져요. Gymnasium에서는 12학년이나 13학년에 졸업 시험인 Abitur를 보고, Realschule는 10학년까지 다녀요. Gesamtschule는 여러 과정을 한 학교에서 가르쳐요. Yuna와 친구들이 다니는 학교도 Gesamtschule예요.
+p: 학교를 마친 뒤의 길은 크게 둘이에요. 하나는 대학에서 공부하는 Studium이고, 다른 하나는 Ausbildung이에요. Ausbildung은 회사에서 일을 배우면서 일주일에 하루 이틀은 직업학교에 다니는 과정이고, 보통 3년쯤 걸려요.
+p: 그래서 학생들은 8학년이나 9학년에 회사나 가게에서 Praktikum을 하면서 직업을 미리 겪어 봐요.
+mc: 회사에서 일을 배우면서 직업학교에도 다니는 과정은 무엇인가요? | Ausbildung* | Abitur | Gymnasium
+
+== wortschatz
+-- gruppe Berufe | 직업
+die Architektin, die Architektinnen | (여자) 건축가 | Emma möchte Architektin werden. | Emma는 건축가가 되고 싶어 해요.
+der Journalist, die Journalisten | (남자) 기자 | Der Journalist schreibt einen Artikel. | 기자가 기사를 써요.
+die Köchin, die Köchinnen | (여자) 요리사 | Die Köchin arbeitet im Restaurant. | 요리사는 식당에서 일해요.
+der Polizist, die Polizisten | (남자) 경찰관 | Der Polizist hilft den Kindern. | 경찰관이 아이들을 도와줘요.
+der Informatiker, die Informatiker | (남자) 컴퓨터 전문가 | Paul möchte Informatiker werden. | Paul은 컴퓨터 전문가가 되고 싶어 해요.
+der Mechaniker, die Mechaniker | (남자) 정비사 | Der Mechaniker arbeitet in der Werkstatt. | 정비사는 정비소에서 일해요.
+der Chef, die Chefs | 상사, 사장 | Der Chef ist nett. | 사장님은 친절해요.
+der Kollege, die Kollegen | (남자) 동료 | Thomas kocht mit zwei Kollegen. | Thomas는 동료 두 명과 함께 요리해요.
+
+-- gruppe Schule und Zukunft | 학교와 장래
+das Praktikum, die Praktika | 실습 | Ich mache ein Praktikum bei einer Zeitung. | 나는 신문사에서 실습을 해요.
+die Ausbildung, die Ausbildungen | 직업 교육 | Can macht eine Ausbildung. | Can은 직업 교육을 받고 있어요.
+das Abitur | 아비투어 (대학에 가려고 보는 졸업 시험) | Emma macht in fünf Jahren das Abitur. | Emma는 5년 뒤에 아비투어를 봐요.
+das Studium | 대학 공부 | Das Studium dauert sechs Jahre. | 대학 공부는 6년 걸려요.
+studieren, hat studiert | 대학에서 공부하다 | Yuna möchte in Deutschland studieren. | Yuna는 독일에서 대학에 다니고 싶어 해요.
+die Universität, die Universitäten | 대학교 | Die Universität ist in Köln. | 그 대학교는 쾰른에 있어요.
+das Gymnasium, die Gymnasien | 김나지움 (대학 진학을 준비하는 학교) | In Wien ist Paul aufs Gymnasium gegangen. | Paul은 빈에서 김나지움에 다녔어요.
+die Gesamtschule, die Gesamtschulen | 종합 학교 | Unsere Schule ist eine Gesamtschule. | 우리 학교는 종합 학교예요.
+die Zukunft | 미래, 장래 | Was möchtest du in der Zukunft machen? | 앞으로 무엇을 하고 싶어?
+der Traum, die Träume | 꿈 | Mein Traum ist ein Haus am Meer. | 내 꿈은 바닷가에 있는 집이에요.
+werden (du wirst, er wird) | ~이 되다, ~해지다 | Ich möchte Lehrerin werden. | 나는 선생님이 되고 싶어요.
+
+-- gruppe Arbeiten | 일하기
+die Arbeit, die Arbeiten | 일 | Die Arbeit macht mir Spaß. | 일이 재미있어요.
+die Aufgabe, die Aufgaben | 맡은 일, 과제 | Das ist eine leichte Aufgabe. | 그건 쉬운 일이에요.
+die Praxis, die Praxen | (의사의) 병원, 진료실 | Sabine arbeitet in einer Praxis. | Sabine는 병원에서 일해요.
+das Büro, die Büros | 사무실 | Mein Vater arbeitet im Büro. | 우리 아버지는 사무실에서 일해요.
+die Firma, die Firmen | 회사 | Die Firma ist groß. | 그 회사는 커요.
+verdienen, hat verdient | (돈을) 벌다 | Can verdient noch nicht viel. | Can은 아직 돈을 많이 벌지 못해요.
+anstrengend | 힘든, 고된 | Die Arbeit ist anstrengend. | 그 일은 힘들어요.
+wichtig | 중요한 | Die Schule ist wichtig. | 학교는 중요해요.
+Spaß machen | 재미있다 | Kochen macht mir Spaß. | 나는 요리가 재미있어요.
+Lust haben | ~하고 싶다 | Ich habe keine Lust. | 나는 하고 싶지 않아요.
+vorhaben (du hast vor, er hat vor) | ~할 계획이다 | Was hast du morgen vor? | 내일 뭐 할 계획이야?
+versuchen, hat versucht | 해 보다, 애쓰다 | Ich versuche, pünktlich zu sein. | 나는 시간을 지키려고 애써요.
+
+-- bilder
+die Architektin, die Architektinnen: a woman with a safety helmet who holds rolled paper plans next to a small model of a house
+der Journalist, die Journalisten: a man who holds a microphone and writes in a small notebook
+die Köchin, die Köchinnen: a woman with a white chef hat who stirs a pot
+der Polizist, die Polizisten: a police officer in a uniform with a cap
+der Informatiker, die Informatiker: a man who sits at a desk and types on a keyboard in front of two computer screens
+der Mechaniker, die Mechaniker: a man in overalls who holds a wrench next to a car with an open hood
+die Universität, die Universitäten: a large old university building with columns and wide steps where students sit
+die Praxis, die Praxen: a doctor's room with an examination couch and a stethoscope on a small table
+das Büro, die Büros: an office desk with a computer, a chair and a shelf with folders
+die Firma, die Firmen: a tall office building with many windows
+verdienen, hat verdient: a hand that receives coins and a banknote from another hand
+der Traum, die Träume: a sleeping teenager with a thought cloud that shows a house by the sea
+
+-- aussprache 직업 이름의 강세 | 어느 음절을 세게 말하나요?
+p: 독일어 낱말은 보통 첫 음절을 세게 말해요. Lehrer, Ärztin, Köchin.
+p: 다른 말에서 들어온 직업 이름은 뒤쪽을 세게 말해요. Journalist, Polizist, Architekt는 마지막 음절을, Informatiker와 Mechaniker는 가운데의 ma와 cha를 세게 말해요. -in이 붙어도 센 자리는 그대로예요.
+hör: Lehrer, Ärztin, Köchin | 첫 음절
+hör: Journalist, Polizist, Architekt | 마지막 음절
+hör: Informatiker, Mechaniker, Architektin | 가운데 음절
+hör: Der Journalist fragt die Architektin und den Informatiker. | 연습 문장
+
+== grammatik
+-- punkt werden | ~이 되다
+bsp: Ich möchte Ärztin *werden*. | 나는 의사가 되고 싶어.
+bsp: Was willst du *werden*? | 너는 뭐가 되고 싶어?
+bsp: Can *wird* Mechaniker. | Can은 정비사가 돼.
+finde: Ich möchte Ärztin werden. 에서 Ärztin 앞에 무엇이 있나요? | 아무것도 없어요* | eine | die
+regel: werden은 '~이 되다'라는 뜻이에요. 장래 희망을 말할 때는 möchten이나 wollen과 함께 쓰고, werden은 문장 맨 끝에 둬요. 직업 이름 앞에는 관사를 쓰지 않아요. du와 er, sie, es에서는 e가 i로 바뀌어요.
+| 주어 | werden | 예문
+| ich | werde | Ich werde bald fünfzehn.
+| du | w*i*rst | Wann wirst du fünfzehn?
+| er, sie, es | w*i*rd | Can wird Mechaniker.
+| wir | werden | Wir werden Freunde.
+| ihr | werdet | Ihr werdet müde.
+| sie, Sie | werden | Sie werden Lehrer.
+merke: 형용사와 함께 쓰면 '~해지다'라는 뜻이에요. Es wird kalt. Ich werde müde.
+
+-- punkt Infinitiv mit zu | zu + 동사 원형
+bsp: Es war interessant, den Ärzten *zu helfen*. | 의사 선생님들을 돕는 건 흥미로웠어.
+bsp: Ich habe Lust, Häuser *zu bauen*. | 나는 집을 짓고 싶어.
+bsp: Ich habe vor, in Deutschland *zu studieren*. | 나는 독일에서 대학에 다닐 계획이야.
+finde: zu와 동사 원형은 문장의 어디에 있나요? | 맨 끝* | 쉼표 바로 뒤 | 맨 앞
+regel: Es ist …, Es macht Spaß, Ich habe Lust, Ich habe vor 같은 말 뒤에 '~하는 것', '~하기'를 붙일 때 zu와 동사 원형을 써요. zu와 원형은 맨 끝에 오고, 그 앞부분과는 쉼표로 나눠요. 분리 동사는 zu가 가운데로 들어가요.
+| 앞부분 | zu + 원형이 있는 뒷부분
+| Es ist anstrengend, | den ganzen Tag *zu stehen*.
+| Es macht Spaß, | mit Kindern *zu arbeiten*.
+| Ich habe Lust, | Fußball *zu spielen*.
+| Ich habe vor, | früh *aufzustehen*.
+| Ich versuche, | pünktlich *zu sein*.
+merke: möchten, wollen, können, müssen 뒤에는 zu를 쓰지 않아요. Ich möchte studieren. 하지만 Ich habe vor, zu studieren.
+
+-- punkt in fünf Jahren, nach dem Abitur | 앞으로의 때
+bsp: *In fünf Jahren* mache ich das Abitur. | 5년 뒤에 나는 아비투어를 봐.
+bsp: *Nach dem Abitur* möchte ich studieren. | 아비투어를 본 뒤에 나는 대학에 가고 싶어.
+finde: in fünf Jahren은 언제인가요? | 지금부터 5년 뒤* | 5년 전 | 5년 동안
+regel: 지금부터 얼마 뒤인지 말할 때는 in과 3격을 써요. 어떤 일이 끝난 다음을 말할 때는 nach와 3격을 써요. 복수 3격에서는 명사에 -n이 붙어요. zwei Jahre → in zwei Jahren.
+| 표현 | 뜻 | 예문
+| in einem Jahr | 1년 뒤에 | In einem Jahr spreche ich besser Deutsch.
+| in zwei Jahren | 2년 뒤에 | In zwei Jahren mache ich ein Praktikum.
+| nach dem Abitur | 아비투어를 본 뒤에 | Nach dem Abitur möchte ich studieren.
+| nach der Schule | 학교를 마친 뒤에 | Nach der Schule mache ich eine Ausbildung.
+| später | 나중에 | Später möchte ich in Berlin wohnen.
+merke: vor zwei Jahren은 '2년 전에', in zwei Jahren은 '2년 뒤에'예요. 둘을 바꿔 쓰지 않게 조심해요.
+
+== training
+-- ex Hören | Elif가 오빠 Can 이야기를 해요. 듣고 답하세요.
+audio | Mein Bruder Can
+> Elif: Mein Bruder Can ist neunzehn. Er war bis zur zehnten Klasse in der Schule.
+> Elif: Jetzt macht er eine Ausbildung in einer Autowerkstatt. Er wird Mechaniker.
+> Elif: Drei Tage in der Woche arbeitet er in der Firma und zwei Tage geht er in die Berufsschule.
+> Elif: Die Arbeit macht ihm Spaß, aber es ist anstrengend, um sechs Uhr aufzustehen.
+> Elif: In einem Jahr ist er fertig. Dann verdient er mehr Geld.
+mc: Was macht Can jetzt? | eine Ausbildung* | das Abitur | ein Studium
+mc: Was wird Can? | Mechaniker* | Koch | Lehrer
+rf: Can geht drei Tage in der Woche in die Berufsschule. | f => Drei Tage arbeitet er in der Firma und zwei Tage geht er in die Berufsschule.
+mc: Can은 무엇이 힘들다고 하나요? | 6시에 일어나는 것* | 일이 재미없는 것 | 돈을 적게 버는 것
+mc: Wann ist Can mit der Ausbildung fertig? | in einem Jahr* | in zwei Jahren | in sechs Jahren
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Lukas: Ich möchte Sportlehrer werden.
+mc: Lukas는 무엇이 되고 싶어 하나요? | 체육 선생님* | 축구 선수 | 의사
+hör: Emma: In fünf Jahren mache ich das Abitur.
+mc: Emma는 언제 아비투어를 보나요? | 5년 뒤에* | 5년 전에 | 올해
+hör: Yuna: Es war schwer, am Telefon alles zu verstehen.
+mc: Yuna에게 무엇이 어려웠나요? | 전화로 하는 말을 다 알아듣기* | 컴퓨터로 글 쓰기 | 일찍 일어나기
+hör: Elif: Ich habe keine Lust, im Büro zu arbeiten.
+mc: Elif는 무엇을 하고 싶지 않나요? | 사무실에서 일하기* | 신문사에서 일하기 | 대학에서 공부하기
+
+-- ex Lesen | Yuna가 반 블로그에 실습 이야기를 썼어요. 읽고 답하세요.
+text notiz | Mein Tag in der Arztpraxis
+> Letzten Dienstag war mein Praktikumstag. Ich war in der Praxis von Sabine. Sie ist Ärztin.
+> Um halb acht hat die Arbeit angefangen. Zuerst habe ich Termine in den Computer geschrieben.
+> Dann hat mir Sabine alle Zimmer gezeigt. Später durfte ich am Telefon helfen.
+> Es war schwer, die Leute am Telefon zu verstehen. Sie sprechen so schnell!
+> Um eins war ich sehr müde. Aber der Tag hat mir gefallen. Ich habe Lust, noch einmal in der Praxis zu helfen.
+mc: Wo war Yuna am Praktikumstag? | in einer Arztpraxis* | in einer Schule | in einem Restaurant
+mc: Was hat Yuna zuerst gemacht? | Termine in den Computer geschrieben* | am Telefon geholfen | die Zimmer geputzt
+rf: Yuna konnte die Leute am Telefon gut verstehen. | f => Es war schwer, die Leute am Telefon zu verstehen.
+mc: Yuna는 그날이 어땠다고 하나요? | 피곤했지만 마음에 들었어요* | 지루했어요 | 너무 힘들어서 다시 가고 싶지 않아요
+
+-- ex Lesen | 8b가 만든 장래 희망 표예요. 보고 답하세요.
+text plan | Traumberufe in der 8b
+> Name | Traumberuf | Warum?
+> Lukas | Sportlehrer | Sport macht Spaß.
+> Emma | Architektin | Sie mag Häuser.
+> Elif | Journalistin | Sie schreibt gern.
+> Paul | Informatiker | Er mag Computer.
+> Yuna | Ärztin | Sie hilft gern.
+mc: Wer möchte Informatiker werden? | Paul* | Lukas | Yuna
+rf: Elif möchte Architektin werden. | f => Elif möchte Journalistin werden.
+mc: Warum möchte Lukas Sportlehrer werden? | Weil Sport Spaß macht.* | Weil er gern schreibt. | Weil er Computer mag.
+
+-- ex Grammatik | werden을 알맞게 써 보세요. 알맞은 말을 고르세요.
+gap: Ich möchte Ärztin [werden|werde|wird].
+gap: Was [willst|will|wollen] du werden?
+gap: Can [wird|werde|werden] Mechaniker.
+gap: Emma möchte [Architektin|eine Architektin|die Architektin] werden. => 직업 이름 앞에는 관사를 쓰지 않아요.
+gap: Im Winter [wird|werde|wirst] es früh dunkel.
+gap: Wir [werden|wird|werdet] bald fünfzehn.
+
+-- ex Grammatik | zu가 필요한지 보고 알맞은 말을 고르세요.
+gap: Es macht Spaß, mit Kindern [zu arbeiten|arbeiten|arbeitet].
+gap: Ich möchte in Deutschland [studieren|zu studieren|studiere]. => möchten 뒤에는 zu를 쓰지 않아요.
+gap: Ich habe Lust, ins Kino [zu gehen|gehen|gegangen].
+gap: Es ist anstrengend, früh [aufzustehen|zu aufstehen|aufstehen]. => 분리 동사는 zu가 가운데로 들어가요.
+gap: Yuna hat vor, Ärztin [zu werden|werden|wird].
+gap: Du musst mehr [lernen|zu lernen|lernst].
+
+-- ex Grammatik | 한국어 뜻을 보고 알맞은 말을 고르세요.
+gap: [In|Vor|Nach] zwei Jahren mache ich ein Praktikum. | 2년 뒤에 나는 실습을 해요.
+gap: [Nach|In|Vor] dem Abitur möchte Emma studieren. | 아비투어를 본 뒤에 Emma는 대학에 가고 싶어 해요.
+gap: [Vor|In|Nach] einem Jahr ist Yuna nach Köln gekommen. | 1년 전에 Yuna는 쾰른에 왔어요.
+gap: In fünf [Jahren|Jahre|Jahr] ist Lukas neunzehn. | 5년 뒤에 Lukas는 열아홉 살이에요.
+gap: [Nach|In|Seit] der Schule macht Can eine Ausbildung. | 학교를 마친 뒤에 Can은 직업 교육을 받아요.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / möchte / Ärztin / werden. | 나는 의사가 되고 싶어.
+ord: es / macht / Spaß, / mit Kindern / zu arbeiten. | 아이들과 함께 일하는 건 재미있어.
+ord: ich / habe / vor, / in Deutschland / zu studieren. | 나는 독일에서 대학에 다닐 계획이야.
+ord: nach / dem Abitur / möchte / ich / studieren. | 아비투어를 본 뒤에 나는 대학에 가고 싶어.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: die Ausbildung = 직업 교육 ; das Studium = 대학 공부 ; das Praktikum = 실습 ; die Zukunft = 장래 ; verdienen = 벌다 ; die Firma = 회사 ; anstrengend = 힘든
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Thomas: Was willst du werden? | 뭐가 되고 싶니?
+dik: Yuna: Ich möchte Ärztin werden. | 저는 의사가 되고 싶어요.
+dik: Emma: Ich habe Lust, Häuser zu bauen. | 저는 집을 짓고 싶어요.
+
+== sprechen
+-- redemittel
+장래 희망 말하기: Was willst du werden? | 뭐가 되고 싶어? ; Ich möchte Ärztin werden. | 나는 의사가 되고 싶어. ; Ich weiß es noch nicht. | 아직 모르겠어. ; Mein Traum ist … | 내 꿈은 ~이야.
+계획 말하기: Nach der Schule möchte ich studieren. | 학교를 마치면 대학에 가고 싶어. ; Ich habe vor, eine Ausbildung zu machen. | 나는 직업 교육을 받을 계획이야. ; In zwei Jahren mache ich ein Praktikum. | 2년 뒤에 실습을 해.
+실습 이야기하기: Ich war in einer Arztpraxis. | 나는 병원에 갔어. ; Ich hatte die Aufgabe, … zu … | 나는 ~하는 일을 맡았어. ; Es war interessant, … zu … | ~하는 게 흥미로웠어.
+느낌 말하기: Es macht Spaß, mit Kindern zu arbeiten. | 아이들과 일하는 건 재미있어. ; Es ist anstrengend, den ganzen Tag zu stehen. | 하루 종일 서 있는 건 힘들어. ; Das ist nichts für mich. | 그건 나한테 안 맞아.
+
+-- rolle B | Yuna, Thomas
+
+-- ich Meine Zukunft | 되고 싶은 것과 하고 싶은 일, 계획을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 되고 싶은 직업 (관사 없이) | Lehrerin
+feld: b | 하고 싶은 일 (… zu + 원형) | mit Kindern zu arbeiten
+feld: c | 학교를 마친 뒤의 계획 (동사 원형으로 끝나게) | in Seoul studieren
+satz: Ich möchte {a} werden.
+satz: Ich habe Lust, {b}.
+satz: Nach der Schule möchte ich {c}.
+
+-- schreiben Meine Zukunft | 내 장래 희망과 계획을 소개하는 글을 써 보세요. 여섯 문장쯤 써요.
+punkt: 되고 싶은 직업 ; 그 이유 ; 재미있는 것과 힘든 것 (zu + 원형) ; 학교를 마친 뒤의 계획 ; 몇 년 뒤의 내 모습
+start: Ich möchte … werden.
+muster: Ich möchte Lehrerin werden, weil ich gern mit Kindern arbeite. Es macht mir Spaß, anderen zu helfen. Aber es ist anstrengend, den ganzen Tag zu sprechen. Nach der Schule möchte ich in Seoul studieren. Ich habe vor, ein Jahr in Deutschland zu lernen. In zehn Jahren bin ich Lehrerin an einer Mittelschule.
+check: 직업 이름 앞에 관사를 쓰지 않았나요? ; zu + 원형을 문장 맨 끝에 썼나요? ; zu 앞부분 뒤에 쉼표를 찍었나요? ; in … Jahren, nach der Schule를 썼나요?
+
+-- kann
+Ich kann sagen, was ich werden möchte. | 무엇이 되고 싶은지 말할 수 있어요.
+Ich kann von einem Praktikum erzählen. | 실습에서 한 일을 이야기할 수 있어요.
+Ich kann das Schulsystem in Deutschland kurz erklären. | 독일의 학교 제도를 짧게 설명할 수 있어요.
+
+-- tipp 좋아하는 일부터 떠올려요
+p: 되고 싶은 직업이 아직 없어도 괜찮아요. 먼저 좋아하는 일을 Es macht mir Spaß, … zu …로 세 문장 말해 보세요. 그 문장들이 직업을 고르는 실마리가 돼요.
+p: 직업 이름은 남자와 여자 모양을 함께 외워요. der Lehrer, die Lehrerin, der Arzt, die Ärztin. 내 이야기를 할 때 바로 쓸 수 있어요.

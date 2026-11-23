@@ -1,0 +1,269 @@
+@id a2-2/6
+
+== einstieg
+bild: A room with two beds. EMMA sits on her bed with her arms crossed and looks away. YUNA stands in the open door with a worried face and holds one hand out toward her.
+alt: 침대가 두 개 있는 방이에요. Emma가 팔짱을 끼고 침대에 앉아 다른 쪽을 보고 있어요. Yuna는 걱정스러운 얼굴로 문간에 서서 한 손을 내밀고 있어요.
+lead: 7월이에요. Emma가 어제부터 Yuna와 말을 하지 않아요. 무슨 일이 있었을까요? 두 사람이 다투고, 사과하고, 다시 사이가 좋아지는 이야기예요.
+mission: 이 과를 마치면 감정을 표현하고, 사과하고 화해하고, 친구의 고민에 조언할 수 있어요.
+wort: der Streit | 다툼
+wort: das Geheimnis | 비밀
+wort: Ich ärgere mich über dich. | 나 너한테 화났어.
+wort: Es tut mir leid. | 미안해.
+mc: Ich ärgere mich über dich. 여기서 über dich는 무엇을 알려 주나요? | 누구 때문에 화가 났는지* | 어디에서 화가 났는지 | 언제 화가 났는지 => sich ärgern은 über와 함께 써서 화가 난 까닭이나 상대를 말해요.
+
+== hoeren
+-- dialog A | Warum bist du sauer? | 학교에서 돌아온 오후예요. Emma가 어제부터 Yuna와 말을 하지 않아요.
+vor: 들으면서 찾아보세요. Emma는 왜 화가 났나요?
+Yuna: Emma, was ist los? Du sprichst seit gestern nicht mit mir. | Emma, 무슨 일이야? 어제부터 나랑 말을 안 하잖아.
+Emma: Ich ärgere mich über dich. | 나 너한테 화났어.
+Yuna: Über mich? Worüber ärgerst du dich denn? | 나한테? 대체 뭐 때문에 화가 났는데?
+Emma: Du hast Elif von meiner Mathenote erzählt. Jetzt weiß es die ganze Klasse! | 네가 Elif한테 내 수학 점수 얘기했잖아. 이제 반 애들이 다 알아!
+Yuna: Oh nein. Ich habe nur mit Elif gesprochen. Ich wollte dir helfen. | 아, 어떡해. 나는 Elif하고만 얘기했어. 너를 도우려고 한 거야.
+Emma: Das war aber mein Geheimnis. Ich bin sehr enttäuscht von dir. | 하지만 그건 내 비밀이었어. 너한테 정말 실망했어.
+Yuna: Du hast recht. Es tut mir wirklich leid. Ich entschuldige mich bei dir. | 네 말이 맞아. 정말 미안해. 너한테 사과할게.
+Emma: Ich bin immer noch sauer. Ich brauche ein bisschen Zeit. | 아직 화가 안 풀렸어. 시간이 좀 필요해.
+Yuna: Okay. Ich warte auf dich. | 알았어. 기다릴게.
+
+-- dialog B | Was würdet ihr machen? | 다음 날 쉬는 시간이에요. Yuna가 Lukas와 Elif에게 고민을 말해요. 그리고 오후에 Emma를 만나요.
+vor: 들으면서 찾아보세요. Lukas는 Yuna에게 무엇을 하라고 조언하나요?
+Yuna: Emma und ich haben uns gestritten. Ich denke die ganze Zeit an den Streit. | Emma랑 나 싸웠어. 계속 그 생각만 나.
+Lukas: Worüber habt ihr euch gestritten? | 뭐 때문에 싸웠는데?
+Yuna: Über ein Geheimnis. Ich habe es Elif erzählt. | 비밀 때문에. 내가 그걸 Elif한테 말했거든.
+Elif: Und ich habe es Paul erzählt. Das war dumm von mir. Ich bin auch schuld. | 그리고 내가 그걸 Paul한테 말했어. 내가 바보 같았어. 나도 잘못했어.
+Yuna: Was würdet ihr jetzt machen? | 너희라면 이제 어떻게 하겠어?
+Lukas: An deiner Stelle würde ich ihr einen Brief schreiben. | 내가 너라면 Emma한테 편지를 쓰겠어.
+Elif: Und ich würde ihr ein Eis kaufen. Emma freut sich immer über ein Eis. | 그리고 나라면 아이스크림을 사 주겠어. Emma는 아이스크림을 받으면 늘 좋아하잖아.
+Yuna: Emma, hier ist ein Brief für dich. Und ein Eis. Es tut mir so leid. | Emma, 이거 너한테 쓴 편지야. 아이스크림도 있어. 정말 미안해.
+Emma: Danke. Ich habe auch über uns nachgedacht. Ich war zu sauer. | 고마워. 나도 우리 일을 곰곰이 생각해 봤어. 내가 너무 화를 냈어.
+Yuna: Ich erzähle nie wieder ein Geheimnis. Versprochen! | 다시는 비밀을 말하지 않을게. 약속해!
+Emma: Schon gut. Wir vertragen uns wieder, okay? | 됐어. 우리 화해하자, 응?
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Emma는 왜 화가 났나요? | Yuna가 수학 점수 이야기를 다른 사람에게 해서* | Yuna가 돈을 갚지 않아서 | Yuna가 약속에 늦어서
+mc: Mit wem hat Yuna über die Mathenote gesprochen? | mit Elif* | mit Paul | mit Lukas
+rf: Yuna entschuldigt sich bei Emma. | r
+rf: Emma ist nach der Entschuldigung sofort wieder froh. | f => Ich bin immer noch sauer. Ich brauche ein bisschen Zeit.
+mc: Was würde Lukas machen? | einen Brief schreiben* | ein Eis kaufen | nichts sagen
+mc: Worüber freut sich Emma immer? | über ein Eis* | über einen Brief | über gute Noten
+mc: 대화 끝에 두 사람은 어떻게 되나요? | 화해해요* | 다시 싸워요 | 서로 말을 안 해요
+
+-- kultur 다툼을 풀어 주는 학생, Streitschlichter
+p: 독일의 많은 학교에는 Streitschlichter가 있어요. 다툰 학생들의 이야기를 듣고 스스로 문제를 풀 수 있게 돕는 학생이에요. 따로 교육을 받은 선배 학생들이 맡아요.
+p: 다툰 두 사람은 차례로 자기 생각을 말해요. Streitschlichter는 누가 옳은지 정하지 않아요. 두 사람이 서로의 말을 끝까지 듣고 함께 해결 방법을 찾게 해요.
+p: 독일에서는 문제가 있으면 돌려 말하지 않고 바로 말하는 편이에요. Ich ärgere mich, weil …처럼 내 기분과 까닭을 말하는 것을 버릇없다고 여기지 않아요.
+mc: Streitschlichter는 어떤 일을 하나요? | 다툰 학생들이 스스로 문제를 풀게 도와요* | 누가 잘못했는지 정해 줘요 | 다툰 학생에게 벌을 줘요
+
+== wortschatz
+-- gruppe Gefühle | 감정
+das Gefühl, die Gefühle | 감정, 느낌 | Das ist ein schönes Gefühl. | 그건 기분 좋은 느낌이에요.
+sich fühlen, hat sich gefühlt | (기분이) ~하다, 느끼다 | Ich fühle mich heute gut. | 나는 오늘 기분이 좋아요.
+sauer | 화난 | Emma ist sauer. | Emma는 화가 났어요.
+wütend | 몹시 화난 | Er ist sehr wütend. | 그는 몹시 화가 났어요.
+traurig | 슬픈 | Warum bist du traurig? | 왜 슬퍼해?
+froh | 기쁜, 마음이 놓인 | Ich bin froh, dass du da bist. | 네가 있어서 기뻐.
+enttäuscht | 실망한 | Ich bin enttäuscht von dir. | 나는 너한테 실망했어.
+nervös | 초조한, 떨리는 | Vor dem Test bin ich nervös. | 시험 전에 나는 떨려요.
+Angst haben | 무서워하다, 걱정하다 | Ich habe Angst vor dem Test. | 나는 시험이 걱정돼요.
+weinen, hat geweint | 울다 | Das Kind weint. | 아이가 울어요.
+lachen, hat gelacht | 웃다 | Wir lachen viel zusammen. | 우리는 함께 많이 웃어요.
+
+-- gruppe Streit und Versöhnung | 다툼과 화해
+der Streit | 다툼, 싸움 | Ich mag keinen Streit. | 나는 다투는 게 싫어요.
+sich streiten, hat sich gestritten | 다투다 | Emma und Yuna streiten sich. | Emma와 Yuna가 다퉈요.
+sich ärgern, hat sich geärgert | 화나다, 짜증 나다 | Ich ärgere mich über den Bus. | 나는 버스 때문에 짜증이 나요.
+sich entschuldigen, hat sich entschuldigt | 사과하다 | Ich entschuldige mich bei dir. | 너한테 사과할게.
+sich vertragen (du verträgst dich, er verträgt sich) | 화해하다, 사이좋게 지내다 | Wir vertragen uns wieder. | 우리는 다시 사이좋게 지내요.
+das Geheimnis, die Geheimnisse | 비밀 | Das ist ein Geheimnis. | 그건 비밀이에요.
+schuld sein | 잘못이 있다, 탓이다 | Ich bin schuld. | 내 잘못이에요.
+recht haben | 옳다, 맞다 | Du hast recht. | 네 말이 맞아.
+das Problem, die Probleme | 문제, 고민 | Ich habe ein Problem. | 나한테 고민이 있어요.
+dumm | 어리석은, 바보 같은 | Das war dumm von mir. | 내가 바보 같았어요.
+
+-- gruppe Denken und raten | 생각하고 조언하기
+denken, hat gedacht | 생각하다 | Ich denke oft an dich. | 나는 네 생각을 자주 해.
+nachdenken, hat nachgedacht | 곰곰이 생각하다 | Ich muss nachdenken. | 나는 곰곰이 생각해 봐야 해요.
+der Brief, die Briefe | 편지 | Ich schreibe dir einen Brief. | 너한테 편지를 쓸게.
+der Rat | 조언 | Ich brauche deinen Rat. | 네 조언이 필요해.
+An deiner Stelle … | 내가 너라면 … | An deiner Stelle würde ich warten. | 내가 너라면 기다리겠어.
+Worüber? | 무엇에 대해?, 무엇 때문에? | Worüber sprecht ihr? | 너희 무슨 얘기 해?
+immer noch | 아직도, 여전히 | Ich bin immer noch müde. | 나는 아직도 피곤해요.
+nie wieder | 다시는 ~하지 않다 | Das mache ich nie wieder. | 다시는 그러지 않을게요.
+
+-- bilder
+sauer: a teenage girl with light skin and brown hair who stands with crossed arms and an angry face
+traurig: a teenage boy with light skin and black hair who sits on a bench with a sad face and looks down
+froh: a teenage girl with brown skin and curly hair who smiles and raises both arms
+enttäuscht: a teenage boy with light skin who looks into an empty open gift box and lets the shoulders hang
+nervös: a teenage girl with light skin and blond hair who bites her fingernails in front of a closed door
+weinen, hat geweint: a small child with light skin who cries with tears on the cheeks
+lachen, hat gelacht: two friends who laugh together
+sich streiten, hat sich gestritten: two teenagers who face each other and argue with open mouths
+sich entschuldigen, hat sich entschuldigt: a teenager who bows the head a little and holds out a small flower to a friend
+sich vertragen (du verträgst dich, er verträgt sich): two teenagers who shake hands and smile
+das Geheimnis, die Geheimnisse: a teenager who whispers into the ear of a friend
+der Brief, die Briefe: a closed envelope with a small heart sticker
+
+-- aussprache ng와 nk | 받침 ㅇ 소리
+p: ng는 한 소리예요. 우리말 받침 ㅇ처럼 소리 내고 g를 따로 터뜨리지 않아요. Entschuldigung, Zeitung, lange.
+p: nk는 받침 ㅇ 소리 뒤에 k를 붙여요. denken, danke, krank.
+hör: Entschuldigung, Zeitung, lange, singen | ng
+hör: denken, danke, krank, links | nk
+hör: Entschuldigung, ich denke schon lange an dich. | 연습 문장
+
+== grammatik
+-- punkt Verben mit Präpositionen | 전치사와 짝을 이루는 동사
+bsp: Ich ärgere mich *über dich*. | 나 너한테 화났어.
+bsp: Ich entschuldige mich *bei dir*. | 너한테 사과할게.
+bsp: Ich denke die ganze Zeit *an den Streit*. | 계속 그 다툼 생각만 나.
+bsp: Ich warte *auf dich*. | 너를 기다릴게.
+finde: sich ärgern과 짝을 이루는 전치사는 무엇인가요? | über* | mit | auf
+regel: 어떤 동사는 정해진 전치사와 짝을 이뤄요. 전치사마다 뒤에 오는 격이 정해져 있어요. 동사를 외울 때 전치사와 격까지 한 덩어리로 외워요.
+| 동사 | 전치사 + 격 | 예문
+| sich ärgern | über + 4격 | Ich ärgere mich *über* den Test.
+| sich freuen | über + 4격 | Emma freut sich *über* das Eis.
+| sprechen | über + 4격 | Wir sprechen *über* das Problem.
+| denken | an + 4격 | Ich denke *an* meine Familie.
+| warten | auf + 4격 | Ich warte *auf* den Bus.
+| sich streiten | mit + 3격 | Ich streite mich *mit* meinem Bruder.
+| sich entschuldigen | bei + 3격 | Ich entschuldige mich *bei* dir.
+merke: sich freuen auf는 앞으로 올 일을 기다릴 때, sich freuen über는 이미 받았거나 일어난 일이 기쁠 때 써요. Ich freue mich auf die Ferien. Ich freue mich über das Geschenk.
+
+-- punkt Worüber? Über wen? | 물건을 물을 때와 사람을 물을 때
+bsp: *Worüber* ärgerst du dich? – Über die Note. | 뭐 때문에 화가 났어? – 점수 때문에.
+bsp: *Über wen* ärgerst du dich? – Über Yuna. | 누구한테 화가 났어? – Yuna한테.
+bsp: *Mit wem* hast du dich gestritten? – Mit Emma. | 누구랑 다퉜어? – Emma랑.
+finde: 일이나 물건을 물을 때는 어떻게 묻나요? | wo와 전치사를 붙여서 (Worüber?)* | 전치사와 wen으로 (Über wen?) | was만 써서
+regel: 전치사와 짝을 이루는 동사로 물을 때, 일이나 물건은 wo와 전치사를 붙여서 물어요. 전치사가 모음으로 시작하면 사이에 r를 넣어요. 사람은 전치사 뒤에 wen(4격)이나 wem(3격)을 써서 물어요.
+| 동사 | 일, 물건 | 사람
+| sich ärgern über | Wo*r*über? | Über wen?
+| denken an | Wo*r*an? | An wen?
+| warten auf | Wo*r*auf? | Auf wen?
+| fahren mit | Womit? | Mit wem?
+merke: 답할 때도 전치사를 꼭 붙여요. Worauf wartest du? – Auf den Bus. Auf wen wartest du? – Auf Emma. mit처럼 자음으로 시작하는 전치사는 r 없이 붙여요. Womit fährst du? – Mit dem Bus.
+
+-- punkt An deiner Stelle würde ich … | 고민에 조언하기
+bsp: *An deiner Stelle würde ich* ihr einen Brief *schreiben*. | 내가 너라면 Emma한테 편지를 쓰겠어.
+bsp: *Ich würde* ihr ein Eis *kaufen*. | 나라면 아이스크림을 사 주겠어.
+finde: An deiner Stelle 바로 뒤에는 무엇이 오나요? | 동사 würde* | 주어 ich | 쉼표
+regel: An deiner Stelle würde ich …는 '내가 너라면 ~하겠어'라는 뜻이에요. 친구의 고민에 조언할 때 써요. An deiner Stelle가 첫 자리에 오면 würde가 바로 뒤에 오고, 다른 동사는 원형으로 맨 끝에 와요.
+| 첫 자리 | würde | 나머지 | 원형
+| An deiner Stelle | würde | ich mit ihr | sprechen.
+| An deiner Stelle | würde | ich mich | entschuldigen.
+| Ich | würde | ihr einen Brief | schreiben.
+| Ich | würde | nicht mehr | warten.
+merke: Du solltest …도 조언하는 말이에요. An deiner Stelle würde ich …는 내 일처럼 생각하고 말하기 때문에 더 부드럽게 들려요.
+
+== training
+-- ex Hören | Elif가 Emma에게 음성 메시지를 보냈어요. 듣고 답하세요.
+audio | Nachricht für Emma
+> Elif: Hallo Emma. Ich möchte mich bei dir entschuldigen.
+> Elif: Yuna hat mir von deiner Note erzählt, weil sie dir helfen wollte. Und ich habe es Paul erzählt. Das war dumm.
+> Elif: Ich ärgere mich sehr über mich. Bitte sei nicht sauer auf Yuna.
+> Elif: Du bist gut in Mathe. Eine schlechte Note ist kein Problem.
+> Elif: Wir könnten am Samstag zusammen für den nächsten Test lernen. Ich warte auf deine Antwort.
+mc: Warum ruft Elif an? | Sie möchte sich entschuldigen.* | Sie möchte Geld leihen. | Sie möchte ins Kino gehen.
+mc: Wem hat Elif von der Note erzählt? | Paul* | Lukas | Frau Schneider
+rf: Elif ärgert sich über Yuna. | f => Ich ärgere mich sehr über mich.
+mc: Elif는 토요일에 무엇을 하자고 하나요? | 다음 시험공부를 함께 하자고 해요* | 아이스크림을 먹자고 해요 | 편지를 쓰자고 해요
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Lukas: Ich ärgere mich über meine Schwester.
+mc: Lukas는 누구 때문에 짜증이 났나요? | 여동생* | 친구 | 선생님
+hör: Yuna: Ich freue mich über den Brief von Mina.
+mc: Yuna는 왜 기쁜가요? | Mina의 편지를 받아서* | Mina가 곧 와서 | Mina에게 편지를 써서
+hör: Emma: An deiner Stelle würde ich mit Frau Schneider sprechen.
+mc: Emma는 무엇을 하라고 조언하나요? | Schneider 선생님과 이야기하라고 해요* | Schneider 선생님께 편지를 쓰라고 해요 | 아무 말도 하지 말라고 해요
+hör: Elif: Worauf wartest du? – Auf den Bus.
+mc: 무엇을 기다리고 있나요? | 버스* | 친구 | 편지
+
+-- ex Lesen | 학교 신문의 고민 상담 글이에요. 읽고 답하세요.
+text notiz | Frag Dr. Rat!
+> Lieber Dr. Rat, ich habe ein Problem. Meine beste Freundin hat eine neue Freundin. Die zwei gehen jeden Tag zusammen in die Stadt. Mich fragen sie nicht. Ich bin traurig und auch ein bisschen wütend. Was soll ich machen? Mia, 14
+> Liebe Mia, ich verstehe dich. Aber ärgere dich nicht zu lange. An deiner Stelle würde ich mit deiner Freundin sprechen. Sag ihr, dass du traurig bist. Vielleicht weiß sie es nicht. Du könntest auch fragen, ob ihr zu dritt etwas machen könnt. Und vergiss nicht: Man kann mehr als eine Freundin haben. Dein Dr. Rat
+mc: Was ist Mias Problem? | Ihre beste Freundin hat eine neue Freundin.* | Sie hat schlechte Noten. | Sie hat kein Geld.
+mc: Wie fühlt sich Mia? | traurig und ein bisschen wütend* | froh | nervös
+rf: Dr. Rat sagt, dass Mia nicht mit ihrer Freundin sprechen soll. | f => An deiner Stelle würde ich mit deiner Freundin sprechen.
+mc: Dr. Rat는 또 무엇을 해 보라고 하나요? | 셋이서 함께 뭔가를 하자고 물어보라고 해요* | 새 친구와 다투라고 해요 | 다른 학교로 가라고 해요
+
+-- ex Lesen | Yuna가 Emma에게 쓴 편지예요. 읽고 답하세요.
+text notiz | Ein Brief für Emma
+> Liebe Emma,
+> ich denke seit gestern nur an unseren Streit. Ich habe mit Elif über deine Note gesprochen, weil ich dir helfen wollte. Das war falsch.
+> Es war dein Geheimnis. Ich verstehe, dass du sauer bist.
+> Ich entschuldige mich bei dir. Ich verspreche dir: Ich erzähle nie wieder ein Geheimnis.
+> Ich möchte, dass wir uns bald wieder vertragen. Du bist meine beste Freundin in Köln.
+> Deine Yuna
+mc: Woran denkt Yuna seit gestern? | an den Streit* | an die Ferien | an die Mathenote
+rf: Yuna findet, dass Emma nicht sauer sein darf. | f => Ich verstehe, dass du sauer bist.
+mc: Was verspricht Yuna? | Sie erzählt nie wieder ein Geheimnis.* | Sie lernt mit Emma Mathe. | Sie kauft Emma ein Eis.
+mc: Yuna는 무엇을 바라나요? | 곧 다시 화해하기를 바라요* | Emma가 먼저 사과하기를 바라요 | Elif가 편지를 쓰기를 바라요
+
+-- ex Grammatik | 동사와 짝을 이루는 전치사를 고르세요.
+gap: Ich ärgere mich [über|auf|mit] die schlechte Note.
+gap: Yuna entschuldigt sich [bei|über|an] Emma.
+gap: Wir warten [auf|über|an] den Bus.
+gap: Ich denke oft [an|auf|bei] meine Familie in Korea.
+gap: Lukas streitet sich [mit|über|auf] seiner Schwester.
+gap: Emma freut sich [über|bei|an] das Eis.
+gap: Wir sprechen [über|an|bei] das Problem.
+
+-- ex Grammatik | 물건을 묻는지 사람을 묻는지 보고 고르세요.
+gap: [Worüber|Über wen|Womit] ärgerst du dich? – Über die Note.
+gap: [Über wen|Worüber|Mit wem] ärgerst du dich? – Über meinen Bruder.
+gap: [Worauf|Auf wen|Woran] wartest du? – Auf den Bus.
+gap: [Auf wen|Worauf|An wen] wartest du? – Auf Emma.
+gap: [Mit wem|Womit|Über wen] hast du dich gestritten? – Mit Lukas.
+gap: [Woran|An wen|Worauf] denkst du? – An die Ferien.
+
+-- ex Grammatik | 조언하는 문장이에요. 알맞은 말을 고르세요.
+gap: An deiner Stelle [würde|würdest|wäre] ich mit ihr sprechen.
+gap: An deiner Stelle würde ich mich [entschuldigen|entschuldige|entschuldigt]. => 다른 동사는 원형으로 맨 끝에 와요.
+gap: Ich [würde|hätte|werde] ihr einen Brief schreiben. | 나라면 Emma한테 편지를 쓰겠어.
+gap: An deiner Stelle würde [ich|du|mir] nicht so lange warten.
+gap: Was [würdest|würde|würden] du machen?
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / ärgere / mich / über dich. | 나 너한테 화났어.
+ord: worüber / habt / ihr / euch / gestritten? | 너희 뭐 때문에 다퉜어?
+ord: an deiner Stelle / würde / ich / mit ihr / sprechen. | 내가 너라면 그 애와 이야기하겠어.
+ord: ich / entschuldige / mich / bei dir. | 너한테 사과할게.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: sauer = 화난 ; traurig = 슬픈 ; froh = 기쁜 ; enttäuscht = 실망한 ; der Streit = 다툼 ; das Geheimnis = 비밀 ; der Rat = 조언
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Emma: Ich ärgere mich über dich. | 나 너한테 화났어.
+dik: Yuna: Es tut mir wirklich leid. | 정말 미안해.
+dik: Emma: Wir vertragen uns wieder. | 우리 다시 사이좋게 지내자.
+
+== sprechen
+-- redemittel
+감정 말하기: Ich bin sauer. | 나 화났어. ; Ich bin traurig. | 나 슬퍼. ; Ich ärgere mich über … | 나는 ~ 때문에 화가 나. ; Ich bin enttäuscht von dir. | 너한테 실망했어.
+사과하기: Es tut mir leid. | 미안해. ; Ich entschuldige mich bei dir. | 너한테 사과할게. ; Das war dumm von mir. | 내가 바보 같았어. ; Das mache ich nie wieder. | 다시는 그러지 않을게.
+화해하기: Schon gut. | 됐어, 괜찮아. ; Du hast recht. | 네 말이 맞아. ; Wir vertragen uns wieder. | 우리 다시 사이좋게 지내자.
+조언하기: An deiner Stelle würde ich … | 내가 너라면 ~하겠어. ; Du könntest … | ~할 수도 있잖아. ; Sprich mit ihr! | 그 애와 이야기해 봐!
+
+-- rolle A | Yuna, Emma
+
+-- ich Meine Gefühle | 내 기분과 그 까닭을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 짜증 나는 것 (über + 4격) | über den Regen
+feld: b | 받으면 기쁜 것 (über + 4격) | über ein Geschenk
+feld: c | 자주 생각하는 것 (an + 4격) | an die Ferien
+satz: Ich ärgere mich {a}.
+satz: Ich freue mich {b}.
+satz: Ich denke oft {c}.
+
+-- schreiben Ein Rat | 친구가 고민을 써서 보냈어요. 친구에게 조언하는 답장을 써 보세요. 친구의 고민: 가장 친한 친구와 다퉈서 사흘째 서로 말을 하지 않아요.
+punkt: 친구의 마음을 이해한다고 말하기 ; 조언 두 가지 (An deiner Stelle würde ich …, Du könntest …) ; 까닭 하나 ; 힘이 되는 말
+start: Liebe … / Lieber …,
+muster: Lieber Jun, ich verstehe, dass du traurig bist. Ein Streit mit einem Freund ist nicht schön. An deiner Stelle würde ich nicht länger warten. Ich würde ihm eine Nachricht schreiben und mich entschuldigen. Du könntest ihn auch fragen, ob ihr zusammen Fußball spielen wollt. Ich glaube, dass er auch traurig ist. Bald vertragt ihr euch wieder!
+check: An deiner Stelle 바로 뒤에 würde를 썼나요? ; würde 뒤의 동사를 원형으로 맨 끝에 썼나요? ; 동사와 짝을 이루는 전치사를 맞게 썼나요? ; dass, ob 문장에서 동사를 맨 끝에 썼나요?
+
+-- kann
+Ich kann sagen, wie ich mich fühle. | 내 기분을 말할 수 있어요.
+Ich kann mich entschuldigen und mich wieder vertragen. | 사과하고 화해할 수 있어요.
+Ich kann einem Freund einen Rat geben. | 친구에게 조언할 수 있어요.
+
+-- tipp 기분에 이름을 붙여요
+p: 화가 났을 때 Du nervst!라고 하는 대신 Ich ärgere mich, weil …로 내 기분과 까닭을 말해 보세요. 듣는 사람이 덜 상처받고, 독일어 연습도 돼요.
+p: 하루를 마치면서 오늘 기분을 한 문장으로 말해 봐요. Heute bin ich froh, weil … Heute habe ich mich über … geärgert.

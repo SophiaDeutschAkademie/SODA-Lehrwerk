@@ -1,0 +1,282 @@
+@id a2-1/3
+
+== einstieg
+bild: A kitchen with a dinner table in the evening. THOMAS puts a pot on the table. EMMA sits at the table and looks at her smartphone. SABINE stands next to a shelf and points at a small basket with two smartphones in it. YUNA puts her smartphone into the basket.
+alt: 저녁 식탁이에요. Thomas가 냄비를 식탁에 놓고, Emma는 앉아서 휴대폰을 봐요. Sabine는 휴대폰이 담긴 바구니를 가리키고 Yuna는 자기 휴대폰을 바구니에 넣어요.
+lead: 5월 초예요. Wagner 가족의 저녁 식사 시간이에요. 휴대폰을 언제, 얼마나 쓰는지 이야기하고 서로 비교해요.
+mission: 이 과를 마치면 휴대폰과 인터넷을 어떻게 쓰는지 말하고, 둘을 비교하고, '~하면'이라고 조건을 말할 수 있어요.
+wort: online | 온라인의, 접속한
+wort: die Nachricht | 메시지
+wort: Ich bin länger online als du. | 나는 너보다 더 오래 온라인에 있어.
+wort: Wenn wir essen, ist das Handy aus. | 밥 먹을 때는 휴대폰을 꺼 둬.
+mc: Ich bin länger online als du. 누가 더 오래 온라인에 있나요? | 나 (ich)* | 너 (du) | 둘이 같아요 => länger als는 '~보다 더 오래'라는 뜻이에요.
+
+== hoeren
+-- dialog A | Kein Handy beim Essen | 저녁 식사 시간, Wagner 가족의 부엌이에요.
+vor: 들으면서 찾아보세요. 이 집의 규칙은 무엇인가요?
+Thomas: Das Essen ist fertig! Emma, bitte kein Handy am Tisch. | 밥 다 됐다! Emma, 식탁에서는 휴대폰 안 돼.
+Emma: Moment, Papa. Ich schreibe nur schnell eine Nachricht. | 잠깐만요, 아빠. 메시지 하나만 얼른 쓸게요.
+Thomas: Du kennst die Regel: Wenn wir essen, bleibt das Handy in der Tasche. | 규칙 알잖아. 밥 먹을 때 휴대폰은 가방 안에 있는 거야.
+Sabine: Stimmt. Wenn alle am Tisch sitzen, wollen wir zusammen sprechen. | 맞아. 다 같이 식탁에 앉으면 함께 이야기하자는 거지.
+Yuna: Meine Mutter sagt das auch. Aber mein Vater liest beim Essen immer Nachrichten. | 우리 엄마도 그렇게 말해요. 그런데 아빠는 밥 먹을 때 늘 뉴스를 읽어요.
+Emma: Siehst du, Papa? In Korea ist das kein Problem. | 보세요, 아빠. 한국에서는 문제없잖아요.
+Thomas: Nein, nein. Wenn du bei uns isst, ist das Handy aus. | 아니, 아니. 우리 집에서 밥 먹을 때는 휴대폰을 끄는 거야.
+Emma: Okay, okay. Mein Handy ist aus. | 알았어요, 알았어. 휴대폰 껐어요.
+Sabine: Danke! Und wenn du fertig bist, kannst du Elif antworten. | 고마워! 다 먹으면 Elif한테 답해도 돼.
+Emma: Woher weißt du, dass ich Elif schreibe? | Elif한테 쓰는 걸 어떻게 아세요?
+Sabine: Ich bin deine Mutter. Ich weiß alles! | 난 네 엄마잖아. 다 알지!
+
+-- dialog B | Wer ist am längsten online? | 다음 날 쉬는 시간이에요. 친구들이 휴대폰 쓰는 시간을 비교해요.
+vor: 들으면서 찾아보세요. 누가 가장 오래 온라인에 있나요?
+Elif: Schaut mal, mein Handy zeigt die Bildschirmzeit: zwei Stunden am Tag. | 이것 봐, 내 휴대폰에 화면 본 시간이 나와. 하루에 두 시간이야.
+Lukas: Nur zwei Stunden? Ich bin länger online als du. Drei Stunden! | 두 시간밖에 안 돼? 나는 너보다 더 오래 해. 세 시간!
+Yuna: Und ich vier. Ich telefoniere oft mit meiner Familie in Korea. | 나는 네 시간. 한국에 있는 가족이랑 자주 통화하거든.
+Emma: Dann ist Yuna am längsten online. | 그럼 Yuna가 가장 오래 하는 거네.
+Lukas: Aber ich spiele mehr als ihr. Spiele finde ich am besten. | 그래도 게임은 내가 너희보다 더 많이 해. 나는 게임이 제일 좋아.
+Elif: Ich sehe lieber Videos. Am liebsten sehe ich Tanzvideos. | 나는 영상 보는 게 더 좋아. 춤 영상을 가장 즐겨 봐.
+Yuna: Mein Handy ist leider langsam. Es ist älter als dein Handy, Lukas. | 내 휴대폰은 아쉽게도 느려. Lukas, 네 것보다 오래됐어.
+Lukas: Mein Handy ist neuer, aber es ist nicht so gut wie Emmas Handy. | 내 휴대폰이 더 새것이긴 한데 Emma 것만큼 좋지는 않아.
+Emma: Stimmt, mein Handy ist am schnellsten. Aber wenn ich lerne, mache ich es aus. | 맞아, 내 휴대폰이 가장 빨라. 하지만 공부할 때는 꺼 둬.
+Elif: Wirklich? Das ist eine gute Idee! | 정말? 좋은 생각이다!
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Wagner 가족의 규칙은 무엇인가요? | 밥 먹을 때는 휴대폰을 쓰지 않아요* | 저녁에는 휴대폰을 쓰지 않아요 | 휴대폰은 하루에 두 시간만 써요
+rf: Yunas Vater liest beim Essen Nachrichten. | r
+mc: Wann kann Emma Elif antworten? | Wenn sie fertig ist.* | Wenn sie am Tisch sitzt. | Wenn Thomas kocht.
+mc: 누가 가장 오래 온라인에 있나요? | Yuna* | Lukas | Elif => Yuna는 하루에 네 시간이에요.
+rf: Lukas spielt mehr als seine Freunde. | r
+mc: Was sieht Elif am liebsten? | Tanzvideos* | Filme | Nachrichten
+rf: Yunas Handy ist neuer als das Handy von Lukas. | f => Es ist älter als dein Handy, Lukas.
+
+-- kultur 학교에서는 휴대폰을 어떻게 할까요?
+p: 독일의 많은 학교에서는 수업 시간에 휴대폰을 꺼서 가방에 넣어 두어야 해요. 쉬는 시간에도 쓰지 못하게 하는 학교가 많아요. 규칙은 학교마다 달라요.
+p: 반 친구들끼리는 채팅방(Klassenchat)을 만들어 숙제나 준비물을 서로 물어봐요. 8b에도 Klassenchat이 있어요.
+p: 독일어로 휴대폰은 das Handy예요. 영어처럼 들리지만 영어에서는 이런 뜻으로 쓰지 않아요. 독일에서 만들어진 말이에요.
+mc: 독일의 많은 학교에서 수업 시간에 휴대폰은 어떻게 해야 할까요? | 꺼서 가방에 넣어 둬요* | 책상 위에 올려 둬요 | 선생님께 맡기고 집에 갈 때 받아요
+
+== wortschatz
+-- gruppe Medien | 미디어
+das Internet | 인터넷 | Ich suche das im Internet. | 그건 인터넷에서 찾아볼게요.
+online | 온라인의, 접속한 | Ich bin drei Stunden am Tag online. | 나는 하루에 세 시간 온라인에 있어요.
+die Nachricht, die Nachrichten | 메시지, 뉴스 | Ich schreibe eine Nachricht. | 나는 메시지를 써요.
+das Video, die Videos | 영상 | Elif sieht gern Videos. | Elif는 영상을 즐겨 봐요.
+die App, die Apps | 앱 | Die App ist neu. | 그 앱은 새로 나왔어요.
+der Computer, die Computer | 컴퓨터 | Der Computer ist langsam. | 컴퓨터가 느려요.
+das Tablet, die Tablets | 태블릿 | Jun hat ein Tablet. | Jun은 태블릿이 있어요.
+der Bildschirm, die Bildschirme | 화면 | Der Bildschirm ist groß. | 화면이 커요.
+die Bildschirmzeit | 화면을 보는 시간 | Meine Bildschirmzeit ist zu lang. | 나는 화면을 보는 시간이 너무 길어요.
+die Umfrage, die Umfragen | 설문 조사 | Wir machen eine Umfrage. | 우리는 설문 조사를 해요.
+
+-- gruppe Was machst du online? | 온라인에서 하는 일
+telefonieren, hat telefoniert | 통화하다 | Ich telefoniere mit meiner Familie. | 나는 가족과 통화해요.
+chatten, hat gechattet | 채팅하다 | Wir chatten jeden Abend. | 우리는 저녁마다 채팅해요.
+schicken, hat geschickt | 보내다 | Schick mir bitte ein Foto! | 사진 한 장 보내 줘!
+antworten, hat geantwortet | 답하다 | Ich antworte später. | 나중에 답할게요.
+benutzen, hat benutzt | 쓰다, 사용하다 | Ich benutze das Handy jeden Tag. | 나는 휴대폰을 날마다 써요.
+anmachen, hat angemacht | 켜다 | Mach bitte den Computer an. | 컴퓨터를 켜 줘.
+ausmachen, hat ausgemacht | 끄다 | Ich mache das Handy aus. | 나는 휴대폰을 꺼요.
+laden (du lädst, er lädt) | 충전하다 | Ich muss mein Handy laden. | 휴대폰을 충전해야 해요.
+
+-- gruppe Vergleichen | 비교하고 조건 말하기
+wenn | ~하면, ~할 때 | Wenn ich lerne, mache ich das Handy aus. | 공부할 때 나는 휴대폰을 꺼요.
+als | ~보다 | Lukas ist größer als Yuna. | Lukas는 Yuna보다 커요.
+so … wie | ~만큼 | Ich bin so alt wie du. | 나는 너와 나이가 같아.
+schnell | 빠른 | Das Internet ist schnell. | 인터넷이 빨라요.
+langsam | 느린 | Mein Handy ist langsam. | 내 휴대폰은 느려요.
+mehr | 더, 더 많이 | Ich spiele mehr als du. | 나는 너보다 게임을 더 많이 해.
+am liebsten | 가장 즐겨 | Am liebsten sehe ich Videos. | 나는 영상 보는 것을 가장 좋아해요.
+die Regel, die Regeln | 규칙 | Bei uns gibt es eine Regel. | 우리 집에는 규칙이 있어요.
+fertig | 끝난, 다 된 | Das Essen ist fertig. | 밥이 다 됐어요.
+sitzen, hat gesessen | 앉아 있다 | Alle sitzen am Tisch. | 모두 식탁에 앉아 있어요.
+
+-- bilder
+das Internet: a globe with a small cursor arrow
+die Nachricht, die Nachrichten: a smartphone that shows two empty speech bubbles
+das Video, die Videos: a screen with a play triangle in the middle
+die App, die Apps: a smartphone screen with a grid of nine blank rounded squares
+der Computer, die Computer: an open laptop
+das Tablet, die Tablets: a single tablet with a blank screen that leans on a stand
+der Bildschirm, die Bildschirme: a desktop monitor with a blank screen
+telefonieren, hat telefoniert: a teenage girl with a friendly face and natural light skin who holds a smartphone to her ear and talks
+chatten, hat gechattet: two smartphones face to face with small speech bubbles between them
+schicken, hat geschickt: a paper plane that flies out of a smartphone
+ausmachen, hat ausgemacht: a finger that presses the side button of a smartphone with a dark screen
+laden (du lädst, er lädt): a smartphone with a charging cable plugged into a wall socket
+
+-- tafel gut, besser, am besten | 모양이 바뀌는 비교
+p: 자주 쓰는 낱말 몇 개는 비교할 때 모양이 바뀌어요. 줄을 누르면 소리가 나요.
+r: gut = besser, am besten ; viel = mehr, am meisten | say=gut, besser, am besten. viel, mehr, am meisten.
+r: gern = lieber, am liebsten ; lang = länger, am längsten | say=gern, lieber, am liebsten. lang, länger, am längsten.
+r: alt = älter, am ältesten ; groß = größer, am größten | say=alt, älter, am ältesten. groß, größer, am größten.
+
+-- aussprache 낱말 끝의 -er | r 소리를 내지 않아요
+p: 낱말 끝의 -er은 r 소리를 내지 않고 짧은 [아]처럼 소리 내요. länger는 [렝아], besser는 [베사]에 가까워요.
+p: 비교급은 모두 -er로 끝나니 이 소리를 자주 쓰게 돼요. Computer, Bruder, Mutter도 같아요.
+hör: länger, schneller, älter, besser | 비교급
+hör: Computer, Bruder, Mutter, Zimmer | 명사
+hör: Mein Bruder ist älter und schneller. | 연습 문장
+
+== grammatik
+-- punkt wenn-Sätze | '~하면'을 말하는 wenn
+bsp: *Wenn* wir *essen*, bleibt das Handy in der Tasche. | 밥 먹을 때 휴대폰은 가방 안에 있어.
+bsp: *Wenn* ich *lerne*, mache ich es aus. | 공부할 때는 꺼 둬.
+bsp: Du kannst Elif antworten, *wenn* du fertig *bist*. | 다 먹으면 Elif한테 답해도 돼.
+finde: wenn 문장이 앞에 오면 쉼표 뒤에는 무엇이 바로 오나요? | 동사* | 주어 | wenn
+regel: wenn은 '~하면', '~할 때'라는 뜻이에요. weil, dass처럼 wenn 문장에서도 동사가 맨 끝으로 가요. wenn 문장이 앞에 오면 쉼표 뒤에 바로 동사가 와요.
+| wenn 문장 | 동사 | 나머지
+| Wenn ich lerne, | *mache* | ich das Handy aus.
+| Wenn wir essen, | *bleibt* | das Handy in der Tasche.
+| Wenn es regnet, | *bleibe* | ich zu Hause.
+| Wenn ich Zeit habe, | *sehe* | ich Videos.
+merke: wenn 문장은 뒤에 와도 돼요. Ich bleibe zu Hause, wenn es regnet. weil, dass, wenn 뒤에서는 언제나 동사가 맨 끝이에요.
+
+-- punkt Komparativ: als, so … wie | 둘을 비교하기
+bsp: Ich bin *länger* online *als* du. | 나는 너보다 더 오래 온라인에 있어.
+bsp: Es ist *älter als* dein Handy. | 네 휴대폰보다 오래됐어.
+bsp: Es ist nicht *so gut wie* Emmas Handy. | Emma의 휴대폰만큼 좋지는 않아.
+finde: '~보다'라고 비교할 때 쓰는 말은 무엇인가요? | als* | wie | wenn
+regel: 둘을 비교할 때는 형용사에 -er를 붙이고 als(~보다)를 써요. 둘이 같을 때는 so … wie(~만큼)를 써요. 짧은 낱말은 a, o, u가 ä, ö, ü로 바뀌는 것이 많아요.
+| 원래 모양 | 비교급 | 예문
+| schnell | schnell*er* | Emmas Handy ist schneller als mein Handy.
+| klein | klein*er* | Mein Zimmer ist kleiner als dein Zimmer.
+| alt | *ä*lt*er* | Mein Handy ist älter als dein Handy.
+| lang | l*ä*ng*er* | Ich bin länger online als du.
+| groß | gr*ö*ß*er* | Lukas ist größer als Yuna.
+| gut | *besser* | Dein Foto ist besser als mein Foto.
+| viel | *mehr* | Ich spiele mehr als du.
+| gern | *lieber* | Ich sehe lieber Videos.
+merke: 한국어의 '더'처럼 mehr를 앞에 붙이지 않아요. mehr schnell이 아니라 schneller예요. teuer는 teurer, dunkel은 dunkler가 돼요.
+
+-- punkt Superlativ: am …sten | 가장 ~한 것 말하기
+bsp: Yuna ist *am längsten* online. | Yuna가 가장 오래 온라인에 있어.
+bsp: Mein Handy ist *am schnellsten*. | 내 휴대폰이 가장 빨라.
+bsp: *Am liebsten* sehe ich Tanzvideos. | 나는 춤 영상을 가장 즐겨 봐.
+finde: '가장'이라고 말할 때 형용사 앞에 오는 말은 무엇인가요? | am* | als | so
+regel: 여럿 가운데 '가장 ~하다'라고 할 때는 am과 -sten을 써요. -t, -d, -z로 끝나는 낱말에는 -esten을 붙여요. groß는 am größten이라고 해요.
+| 원래 모양 | 비교급 | 최상급
+| schnell | schneller | am schnell*sten*
+| klein | kleiner | am klein*sten*
+| alt | älter | am ält*esten*
+| lang | länger | am läng*sten*
+| groß | größer | am größ*ten*
+| gut | besser | am *besten*
+| viel | mehr | am *meisten*
+| gern | lieber | am *liebsten*
+merke: 좋아하는 정도는 gern, lieber, am liebsten으로 말해요. Ich spiele gern Fußball. Ich schwimme lieber. Am liebsten tanze ich.
+
+== training
+-- ex Hören | Frau Schneider가 8b의 설문 결과를 말해요. 듣고 답하세요.
+audio | Die Umfrage in der 8b
+> Schneider: Wir haben in der 8b eine Umfrage gemacht. Alle Schüler haben ein Handy.
+> Schneider: Die Schüler sind drei Stunden am Tag online. Am Wochenende sind sie länger online als in der Woche.
+> Schneider: Am liebsten sehen sie Videos. Sie chatten auch viel.
+> Schneider: Nur fünf Schüler lesen Nachrichten.
+> Schneider: Zwanzig Schüler sagen, dass sie das Handy ausmachen, wenn sie lernen.
+mc: Wie lange sind die Schüler am Tag online? | drei Stunden* | zwei Stunden | fünf Stunden
+rf: In der Woche sind die Schüler länger online als am Wochenende. | f => 주말에 더 오래 온라인에 있어요.
+mc: Was machen die Schüler am liebsten? | Videos sehen* | Nachrichten lesen | telefonieren
+mc: 공부할 때 휴대폰을 끈다고 답한 학생은 몇 명인가요? | 20명* | 5명 | 12명
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: N: Lukas ist größer als Yuna.
+mc: 누가 더 큰가요? | Lukas* | Yuna | 둘이 같아요
+hör: N: Das Tablet ist so teuer wie das Handy.
+mc: 어느 것이 더 비싼가요? | 값이 같아요* | 태블릿 | 휴대폰
+hör: Elif: Wenn ich müde bin, höre ich Musik.
+mc: Elif는 피곤할 때 무엇을 하나요? | 음악을 들어요* | 영상을 봐요 | 잠을 자요
+hör: Emma: Am liebsten chatte ich mit Yuna.
+mc: Emma는 누구와 채팅하는 것을 가장 좋아하나요? | Yuna* | Elif | Lukas
+
+-- ex Lesen | Lukas가 반 블로그에 쓴 글이에요. 읽고 답하세요.
+text notiz | Meine Handyregeln
+> Meine Eltern haben drei Regeln für das Handy.
+> Regel eins: Wenn wir essen, ist das Handy aus.
+> Regel zwei: Wenn ich Hausaufgaben mache, liegt das Handy im Wohnzimmer.
+> Regel drei: Um neun Uhr abends mache ich das Handy aus, weil ich schlafen muss.
+> Ich finde Regel zwei am besten. Wenn das Handy nicht im Zimmer ist, lerne ich schneller.
+> Aber Regel drei finde ich nicht so gut. Meine Freunde chatten am Abend länger als ich.
+mc: Wo ist das Handy, wenn Lukas Hausaufgaben macht? | im Wohnzimmer* | in der Tasche | im Bett
+rf: Um neun Uhr abends macht Lukas das Handy aus. | r
+mc: Welche Regel findet Lukas am besten? | Regel zwei* | Regel eins | Regel drei
+mc: Lukas는 왜 셋째 규칙이 마음에 들지 않나요? | 친구들은 저녁에 더 오래 채팅해서* | 숙제를 못 해서 | 아침에 일찍 일어나야 해서
+
+-- ex Lesen | 8b의 설문 결과예요. 표를 보고 답하세요.
+text plan | Was machst du online?
+> Was? | Schüler
+> Videos sehen | 22
+> chatten | 20
+> Musik hören | 18
+> Spiele spielen | 12
+> Nachrichten lesen | 5
+mc: 가장 많은 학생이 하는 것은 무엇인가요? | Videos sehen* | chatten | Spiele spielen
+rf: Mehr Schüler chatten als Musik hören. | r => 채팅은 20명, 음악 듣기는 18명이에요.
+mc: 뉴스를 읽는 학생은 몇 명인가요? | 5명* | 12명 | 18명
+
+-- ex Grammatik | wenn 문장이에요. 알맞은 것을 고르세요.
+gap: Wenn ich Zeit habe, [sehe ich|ich sehe] einen Film. => wenn 문장 뒤에는 바로 동사가 와요.
+gap: Wenn es regnet, [bleiben wir|wir bleiben] zu Hause.
+gap: Ich mache das Handy aus, wenn ich [lerne|lernen|lernst].
+gap: Wenn du fertig [bist|sein|ist], kannst du spielen.
+gap: Wenn ich krank bin, [gehe ich|ich gehe] nicht in die Schule.
+
+-- ex Grammatik | 괄호 안의 낱말을 비교급으로 바꿔 쓰세요.
+gap: Lukas ist [=größer] als Yuna. (groß) | Lukas는 Yuna보다 커요.
+gap: Mein Handy ist [=älter] als dein Handy. (alt) | 내 휴대폰은 네 것보다 오래됐어요.
+gap: Emmas Handy ist [=schneller] als mein Handy. (schnell) | Emma의 휴대폰은 내 것보다 빨라요.
+gap: Ich spiele [=mehr] als du. (viel) | 나는 너보다 게임을 더 많이 해요.
+gap: Dein Foto ist [=besser] als mein Foto. (gut) | 네 사진이 내 사진보다 좋아요.
+gap: Am Wochenende bin ich [=länger] online. (lang) | 주말에는 더 오래 온라인에 있어요.
+
+-- ex Grammatik | als, wie, am 가운데 알맞은 말을 고르세요.
+gap: Ich bin länger online [als|wie|am] du.
+gap: Mein Handy ist so gut [wie|als|am] dein Handy.
+gap: Yuna ist [am|als|wie] längsten online.
+gap: Lukas ist größer [als|wie|so] Elif.
+gap: Mein Zimmer ist nicht so groß [wie|als|am] dein Zimmer.
+gap: [Am|Als|So] liebsten sehe ich Videos.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: wenn / ich / lerne, / mache / ich / das Handy / aus. | 공부할 때 나는 휴대폰을 꺼.
+ord: wenn / es / regnet, / bleibe / ich / zu Hause. | 비가 오면 나는 집에 있어.
+ord: ich / höre / Musik, / wenn / ich / müde / bin. | 피곤할 때 나는 음악을 들어.
+ord: wenn / ich / Zeit / habe, / sehe / ich / Videos. | 시간이 있으면 나는 영상을 봐.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: telefonieren = 통화하다 ; chatten = 채팅하다 ; schicken = 보내다 ; antworten = 답하다 ; benutzen = 사용하다 ; ausmachen = 끄다 ; laden = 충전하다
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Emma: Mein Handy ist aus. | 휴대폰 껐어요.
+dik: Lukas: Ich bin länger online als du. | 나는 너보다 더 오래 온라인에 있어.
+dik: Elif: Am liebsten sehe ich Tanzvideos. | 나는 춤 영상을 가장 즐겨 봐.
+
+== sprechen
+-- redemittel
+미디어 습관 묻고 답하기: Wie lange bist du am Tag online? | 하루에 얼마나 온라인에 있어? ; Ich bin drei Stunden am Tag online. | 하루에 세 시간 온라인에 있어. ; Was machst du am liebsten online? | 온라인에서 뭘 가장 즐겨 해? ; Am liebsten sehe ich Videos. | 영상 보는 걸 가장 좋아해.
+비교하기: Ich bin länger online als du. | 나는 너보다 더 오래 해. ; Mein Handy ist so gut wie dein Handy. | 내 휴대폰은 네 것만큼 좋아. ; Emmas Handy ist am schnellsten. | Emma의 휴대폰이 가장 빨라.
+조건 말하기: Wenn ich lerne, mache ich das Handy aus. | 공부할 때는 휴대폰을 꺼. ; Wenn ich Zeit habe, sehe ich Videos. | 시간이 있으면 영상을 봐.
+규칙 말하기: Bei uns gibt es eine Regel. | 우리 집에는 규칙이 있어. ; Beim Essen ist das Handy aus. | 밥 먹을 때는 휴대폰을 꺼.
+
+-- rolle B | Lukas, Yuna
+
+-- ich Ich und mein Handy | 내가 휴대폰을 어떻게 쓰는지 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 하루에 온라인에 있는 시간 | zwei Stunden
+feld: b | 가장 즐겨 보는 것 | Musikvideos
+feld: c | 휴대폰을 끄는 때 (동사는 맨 끝에) | ich lerne
+satz: Ich bin {a} am Tag online.
+satz: Am liebsten sehe ich {b}.
+satz: Wenn {c}, mache ich das Handy aus.
+
+-- schreiben Mein Handy und ich | 반 블로그에 올릴 글을 써 보세요. 휴대폰을 어떻게 쓰는지 다섯 문장쯤 써요.
+punkt: 하루에 쓰는 시간 ; 가장 즐겨 하는 것 ; 우리 집의 규칙 (Wenn …) ; 가족이나 친구와 비교 (… als …) ; 규칙에 대한 내 생각
+start: Ich bin … am Tag online.
+muster: Ich bin zwei Stunden am Tag online. Am liebsten sehe ich Videos und chatte mit meinen Freunden. Bei uns gibt es eine Regel: Wenn wir essen, ist das Handy aus. Mein Bruder ist länger online als ich, weil er viel spielt. Ich finde die Regel gut, denn beim Essen wollen wir zusammen sprechen.
+check: wenn 문장에서 동사를 맨 끝에 썼나요? ; wenn 문장 뒤에 바로 동사를 썼나요? ; 비교할 때 -er와 als를 썼나요? ; wenn, weil, denn 앞뒤에 쉼표를 찍었나요?
+
+-- kann
+Ich kann über Handy und Internet sprechen. | 휴대폰과 인터넷을 어떻게 쓰는지 말할 수 있어요.
+Ich kann Dinge und Personen vergleichen. | 물건과 사람을 비교할 수 있어요.
+Ich kann mit wenn sagen, was ich wann mache. | 어떤 때 무엇을 하는지 wenn으로 말할 수 있어요.
+
+-- tipp 내 방의 물건으로 비교해 봐요
+p: 방 안의 물건 두 개를 골라 비교하는 문장을 말해 보세요. Mein Bett ist größer als mein Schreibtisch. Mein Handy ist neuer als mein Computer. 눈에 보이는 것으로 말하면 오래 기억돼요.
+p: 비교급과 최상급은 세 개를 한 줄로 외워요. alt, älter, am ältesten. gut, besser, am besten.

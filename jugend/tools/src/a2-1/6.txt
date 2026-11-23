@@ -1,0 +1,303 @@
+@id a2-1/6
+
+== einstieg
+bild: A kitchen on a Sunday morning. THOMAS wears an apron and holds a pan with a pancake. YUNA cracks an egg into a bowl. EMMA pours flour from a paper bag into the bowl. On the table are a milk bottle, eggs and a piece of butter.
+alt: 일요일 아침의 부엌이에요. 앞치마를 두른 Thomas가 팬케이크가 담긴 프라이팬을 들고 있어요. Yuna는 그릇에 달걀을 깨 넣고 Emma는 밀가루를 부어요. 식탁에는 우유병과 달걀, 버터가 있어요.
+lead: 5월 둘째 일요일은 어머니날(Muttertag)이에요. 아침에는 Thomas와 Yuna, Emma가 Sabine에게 줄 팬케이크를 만들고, 저녁에는 다 같이 식당에 가요.
+mission: 이 과를 마치면 요리법을 설명하고, 식당에서 주문하고 계산할 수 있어요.
+wort: das Rezept | 요리법
+wort: der Pfannkuchen | 팬케이크
+wort: Man braucht ein Kilo Kartoffeln. | 감자 1킬로가 필요해요.
+wort: Ich hätte gern die Suppe. | 수프로 할게요.
+mc: Man braucht Mehl. 여기서 man은 누구인가요? | 정해지지 않은 사람, 누구나* | 남자 한 명 | 요리사 Thomas => man은 '사람들은, 누구나'라는 뜻이에요. der Mann(남자)과 다른 말이에요.
+
+== hoeren
+-- dialog A | Pfannkuchen für alle | 어머니날 아침이에요. Sabine는 아직 자고 있어요.
+vor: 들으면서 찾아보세요. 팬케이크를 만들 때 먼저 무엇을 하나요?
+Thomas: Heute ist Muttertag. Wir machen Pfannkuchen für Sabine. | 오늘은 어머니날이야. Sabine한테 줄 팬케이크를 만들자.
+Emma: Was braucht man für Pfannkuchen? | 팬케이크에는 뭐가 필요해요?
+Thomas: Man braucht 500 Gramm Mehl, vier Eier und einen Liter Milch. | 밀가루 500그램, 달걀 네 개, 우유 1리터가 필요해. | say=Man braucht fünfhundert Gramm Mehl, vier Eier und einen Liter Milch.
+Yuna: Und Zucker? | 설탕은요?
+Thomas: Nur einen Löffel Zucker und ein bisschen Salz. | 설탕 한 숟가락하고 소금 조금만.
+Yuna: Was macht man zuerst? | 먼저 뭘 해요?
+Thomas: Zuerst mischt man das Mehl und die Milch. Dann gibt man die Eier dazu. | 먼저 밀가루와 우유를 섞어. 그다음에 달걀을 넣어.
+Emma: Fertig! Und jetzt? | 다 됐어요! 이제는요?
+Thomas: Jetzt brät man den Pfannkuchen in der Pfanne. Nimm ein Stück Butter. | 이제 프라이팬에 팬케이크를 부쳐. 버터 한 조각을 써.
+Yuna: Der erste Pfannkuchen ist fertig. Darf ich probieren? | 첫 번째 팬케이크가 다 됐어요. 먹어 봐도 돼요?
+Thomas: Klar. Na, wie schmeckt er? | 그럼. 어때, 맛이 어때?
+Yuna: Sehr lecker! In Korea isst man Pfannkuchen mit Gemüse. | 정말 맛있어요! 한국에서는 채소를 넣은 부침개를 먹어요.
+
+-- dialog B | Im Restaurant | 어머니날 저녁, 시내의 식당이에요. 오늘은 Thomas도 요리를 쉬어요. | Frau=Kellnerin
+vor: 들으면서 찾아보세요. Yuna는 무엇을 주문하나요?
+Frau: Guten Abend! Hier ist die Speisekarte. Was möchten Sie trinken? | 안녕하세요! 메뉴판 여기 있습니다. 음료는 무엇으로 하시겠어요?
+Sabine: Eine große Flasche Wasser für alle, bitte. | 다 같이 마실 큰 물 한 병 주세요.
+Frau: Gern. Und was möchten Sie essen? | 네. 식사는 무엇으로 하시겠어요?
+Sabine: Ich hätte gern die Tomatensuppe und den frischen Fisch. | 저는 토마토 수프와 신선한 생선으로 할게요.
+Thomas: Für mich das Schnitzel mit Pommes, bitte. | 저는 감자튀김을 곁들인 슈니첼로 주세요.
+Emma: Ich nehme die Nudeln mit Tomatensoße. | 저는 토마토소스 파스타로 할게요.
+Yuna: Ich hätte gern den kleinen Salat und die Kartoffelsuppe. | 저는 작은 샐러드와 감자 수프로 할게요.
+Frau: Hat es geschmeckt? | 맛있게 드셨어요?
+Sabine: Ja, sehr gut. Die Rechnung, bitte. | 네, 아주 맛있었어요. 계산서 주세요.
+Frau: Zusammen oder getrennt? | 같이 계산하시겠어요, 따로 하시겠어요?
+Thomas: Zusammen, bitte. | 같이요.
+Frau: Das macht 58 Euro. | 58유로입니다. | say=Das macht achtundfünfzig Euro.
+Thomas: Hier sind 62 Euro. Stimmt so. | 여기 62유로요. 거스름돈은 괜찮습니다. | say=Hier sind zweiundsechzig Euro. Stimmt so.
+Sabine: Danke, Thomas. Das war ein schöner Muttertag! | 고마워요, Thomas. 정말 좋은 어머니날이었어요!
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Thomas와 아이들은 왜 팬케이크를 만드나요? | 어머니날이라서* | Yuna의 생일이라서 | 손님이 와서
+mc: Wie viel Mehl braucht man? | 500 Gramm* | 250 Gramm | ein Kilo
+rf: Man braucht viel Zucker. | f => Nur einen Löffel Zucker. 한 숟가락만 넣어요.
+mc: Was macht man zuerst? | Man mischt das Mehl und die Milch.* | Man brät den Pfannkuchen. | Man gibt die Eier dazu.
+mc: Was bestellt Yuna im Restaurant? | den kleinen Salat und die Kartoffelsuppe* | das Schnitzel mit Pommes | die Nudeln mit Tomatensoße
+rf: Die Familie bezahlt getrennt. | f => Zusammen, bitte. Thomas가 한꺼번에 계산해요.
+mc: Thomas는 모두 얼마를 냈나요? | 62유로* | 58유로 | 60유로
+
+-- kultur 물은 주문하고, 계산은 자리에서
+p: 독일 식당에서는 물이 그냥 나오지 않아요. 자리에 앉으면 음료부터 주문하고, 물도 돈을 내고 마셔요. 물을 시키면 탄산수가 나오는 일이 많아요. 탄산 없는 물은 stilles Wasser라고 해요.
+p: 계산은 자리에서 해요. 종업원이 Zusammen oder getrennt?라고 물으면 한 사람이 다 낼 때는 zusammen, 각자 낼 때는 getrennt라고 답해요. 친구끼리는 보통 getrennt로 내요.
+p: 팁(Trinkgeld)은 음식값의 5~10퍼센트쯤이에요. 돈을 식탁에 두고 가지 않고, 계산할 때 팁을 더한 금액을 내요. 58유로가 나왔으면 62유로를 내면서 Stimmt so.라고 해요.
+mc: 친구 셋이 식사를 하고 각자 계산하려고 해요. 뭐라고 말할까요? | Getrennt, bitte.* | Zusammen, bitte. | Stimmt so.
+
+== wortschatz
+-- gruppe Zutaten und Mengen | 재료와 양
+die Zutat, die Zutaten | 재료 | Wir haben alle Zutaten. | 재료가 다 있어요.
+die Kartoffel, die Kartoffeln | 감자 | Ich esse gern Kartoffeln. | 나는 감자를 즐겨 먹어요.
+die Tomate, die Tomaten | 토마토 | Die Tomaten sind frisch. | 토마토가 신선해요.
+das Mehl | 밀가루 | Für den Kuchen braucht man Mehl. | 케이크에는 밀가루가 필요해요.
+der Zucker | 설탕 | Nimmst du Zucker? | 설탕 넣어?
+das Salz | 소금 | Die Suppe braucht Salz. | 수프에 소금이 필요해요.
+die Butter | 버터 | Ich esse Brot mit Butter. | 나는 버터 바른 빵을 먹어요.
+das Öl | 기름, 식용유 | Man braucht ein bisschen Öl. | 기름이 조금 필요해요.
+das Kilo, die Kilo | 킬로그램 | Ein Kilo Äpfel, bitte. | 사과 1킬로 주세요.
+das Gramm | 그램 | Man braucht 200 Gramm Käse. | 치즈 200그램이 필요해요. | say=Man braucht zweihundert Gramm Käse.
+der Liter, die Liter | 리터 | Wir kaufen zwei Liter Milch. | 우리는 우유 2리터를 사요.
+die Flasche, die Flaschen | 병 | Eine Flasche Wasser, bitte. | 물 한 병 주세요.
+die Packung, die Packungen | 팩, 봉지, 갑 | Ich kaufe eine Packung Nudeln. | 나는 파스타 한 봉지를 사요.
+das Stück, die Stücke | 조각, 개 | Möchtest du ein Stück Kuchen? | 케이크 한 조각 먹을래?
+
+-- gruppe Kochen | 요리하기
+das Rezept, die Rezepte | 요리법 | Das Rezept ist leicht. | 그 요리법은 쉬워요.
+brauchen, hat gebraucht | 필요하다 | Was brauchen wir? | 우리는 뭐가 필요해?
+schneiden, hat geschnitten | 자르다, 썰다 | Ich schneide die Tomaten. | 나는 토마토를 썰어요.
+mischen, hat gemischt | 섞다 | Man mischt das Mehl und die Milch. | 밀가루와 우유를 섞어요.
+braten (du brätst, er brät) | 굽다, 부치다, 볶다 | Thomas brät den Fisch. | Thomas는 생선을 구워요.
+dazugeben, hat dazugegeben | 더 넣다 | Dann gibt man die Eier dazu. | 그다음에 달걀을 넣어요.
+die Pfanne, die Pfannen | 프라이팬 | Die Pfanne ist heiß. | 프라이팬이 뜨거워요.
+probieren, hat probiert | 맛보다, 해 보다 | Darf ich probieren? | 먹어 봐도 돼요?
+schmecken, hat geschmeckt | 맛이 나다, 맛있다 | Die Suppe schmeckt gut. | 수프가 맛있어요.
+
+-- gruppe Im Restaurant | 식당에서
+das Restaurant, die Restaurants | 식당 | Wir essen heute im Restaurant. | 우리는 오늘 식당에서 먹어요.
+die Speisekarte, die Speisekarten | 메뉴판 | Die Speisekarte, bitte. | 메뉴판 주세요.
+bestellen, hat bestellt | 주문하다 | Ich möchte bestellen. | 주문할게요.
+die Suppe, die Suppen | 수프 | Die Suppe ist heiß. | 수프가 뜨거워요.
+das Schnitzel, die Schnitzel | 슈니첼 (얇게 펴서 튀긴 고기) | Das Schnitzel ist groß. | 슈니첼이 커요.
+die Pommes (Pl.) | 감자튀김 | Ich nehme Pommes. | 나는 감자튀김으로 할게요.
+die Nudel, die Nudeln | 국수, 파스타 | Emma isst gern Nudeln. | Emma는 파스타를 즐겨 먹어요.
+die Rechnung, die Rechnungen | 계산서 | Die Rechnung, bitte. | 계산서 주세요.
+bezahlen, hat bezahlt | 돈을 내다, 계산하다 | Ich bezahle heute. | 오늘은 내가 낼게.
+getrennt | 따로 | Wir bezahlen getrennt. | 우리는 따로 계산해요.
+das Trinkgeld | 팁 | Thomas gibt vier Euro Trinkgeld. | Thomas는 팁을 4유로 줘요.
+frisch | 신선한 | Der Fisch ist frisch. | 생선이 신선해요.
+
+-- bilder
+die Kartoffel, die Kartoffeln: three brown potatoes
+die Tomate, die Tomaten: two red tomatoes with green stems
+das Mehl: an open paper bag next to a small heap of white flour and a wooden spoon
+die Butter: a block of butter on a small plate with a knife
+die Flasche, die Flaschen: a glass bottle of water
+die Packung, die Packungen: a closed cardboard package with a small window that shows pasta inside
+die Pfanne, die Pfannen: a frying pan with a pancake in it
+schneiden, hat geschnitten: two hands that cut a tomato with a knife on a wooden board
+die Suppe, die Suppen: a bowl of hot soup with steam and a spoon
+das Schnitzel, die Schnitzel: a plate with a breaded cutlet and a slice of lemon
+die Pommes (Pl.): a paper cone full of french fries
+die Nudel, die Nudeln: a plate of pasta with red tomato sauce and a fork
+
+-- aussprache 합친 낱말 | 앞 낱말을 세게
+p: 두 낱말을 합친 낱말은 앞 낱말을 세게 말해요. Tomatensuppe는 Tomaten을, Kartoffelsalat는 Kartoffel을 세게 말해요.
+p: 뜻과 성은 뒤 낱말이 정해요. die Tomate와 die Suppe를 합치면 die Tomatensuppe, die Kartoffel과 der Salat를 합치면 der Kartoffelsalat예요.
+hör: Tomatensuppe, Kartoffelsuppe, Kartoffelsalat | 앞을 세게
+hör: Apfelsaft, Speisekarte, Pfannkuchen | 앞을 세게
+hör: Ich hätte gern die Tomatensuppe und einen Apfelsaft. | 연습 문장
+
+== grammatik
+-- punkt man | 누구나 하는 일을 말할 때
+bsp: *Man braucht* 500 Gramm Mehl. | 밀가루 500그램이 필요해요.
+bsp: Zuerst *mischt man* das Mehl und die Milch. | 먼저 밀가루와 우유를 섞어요.
+bsp: In Korea *isst man* Pfannkuchen mit Gemüse. | 한국에서는 채소를 넣은 부침개를 먹어요.
+finde: man 뒤의 동사는 누구와 같은 모양인가요? | er, sie, es* | ich | wir
+regel: 누가 하는지 중요하지 않거나 누구나 그렇게 할 때 man을 주어로 써요. 요리법, 규칙, 그 나라의 습관을 말할 때 자주 써요. 동사는 er, sie, es와 같은 모양이에요. 한국어로는 주어 없이 옮기면 자연스러워요.
+| 주어 | 문장
+| ich | Ich *schneide* die Tomaten.
+| man | Man *schneidet* die Tomaten.
+| man | Man *brät* die Kartoffeln in der Pfanne.
+| man | Hier *darf* man nicht essen.
+merke: man은 소문자로 쓰고 n이 하나예요. der Mann(남자)과 달라요.
+
+-- punkt Mengenangaben | 양을 나타내는 말
+bsp: *ein Kilo* Kartoffeln | 감자 1킬로
+bsp: *eine Flasche* Wasser | 물 한 병
+bsp: *ein Stück* Butter | 버터 한 조각
+finde: ein Kilo와 Kartoffeln 사이에 무엇이 있나요? | 아무것도 없어요* | von | der
+regel: 양을 나타내는 말 바로 뒤에 재료 이름을 써요. 사이에 관사나 von을 넣지 않아요. Kilo, Gramm, Liter, Stück은 수가 커져도 모양이 바뀌지 않아요. Flasche, Packung 같은 여성 명사는 복수형으로 써요.
+| 하나 | 여럿
+| ein Kilo Kartoffeln | zwei Kilo Kartoffeln
+| ein Liter Milch | zwei Liter Milch
+| ein Stück Kuchen | zwei Stück Kuchen
+| eine Flasche Wasser | zwei Flasche*n* Wasser
+| eine Packung Nudeln | drei Packung*en* Nudeln
+merke: Liter와 Löffel은 남성이라서 4격에서는 ein이 einen으로 바뀌어요. Man braucht einen Liter Milch und einen Löffel Zucker.
+
+-- punkt Adjektive nach der, die, das | der, die, das 뒤의 형용사
+bsp: *Der* erst*e* Pfannkuchen ist fertig. | 첫 번째 팬케이크가 다 됐어요.
+bsp: Ich hätte gern *den* klein*en* Salat. | 작은 샐러드로 할게요.
+bsp: *Die* frisch*en* Tomaten schmecken gut. | 신선한 토마토는 맛있어요.
+finde: der, die, das 바로 뒤의 형용사에는 1격에서 어떤 끝이 붙나요? | -e* | -er | -es
+regel: der, die, das 뒤의 형용사에는 1격에서 -e가 붙어요. 관사가 이미 성을 알려 주기 때문에 형용사는 -e만 붙이면 돼요. 4격에서는 남성만 den …-en으로 바뀌고, 복수는 언제나 -en이에요.
+| | 1격 | 4격
+| der Salat | der klein*e* Salat | den klein*en* Salat
+| die Suppe | die heiß*e* Suppe | die heiß*e* Suppe
+| das Wasser | das kalt*e* Wasser | das kalt*e* Wasser
+| die Tomaten (복수) | die frisch*en* Tomaten | die frisch*en* Tomaten
+merke: ein 뒤에서는 형용사가 성을 알려 줬어요. ein kleiner Salat, ein kaltes Wasser. der, die, das 뒤에서는 그럴 필요가 없어서 -e예요. der kleine Salat, das kalte Wasser.
+
+-- punkt Ich hätte gern … | 공손하게 주문할 때
+bsp: *Ich hätte gern* die Tomatensuppe. | 토마토 수프로 할게요.
+bsp: *Wir hätten gern* eine Flasche Wasser. | 저희는 물 한 병 주세요.
+finde: Ich hätte gern … 대신 쓸 수 있는 말은 무엇인가요? | Ich möchte …* | Ich habe … | Ich hatte …
+regel: 식당이나 가게에서 Ich hätte gern …이라고 하면 공손하게 주문하는 말이 돼요. Ich möchte …와 뜻이 같아요. 뒤에는 4격이 와요. 여럿이 함께 주문하면 Wir hätten gern …이라고 해요.
+| 누가 | 공손한 주문
+| ich | Ich *hätte gern* einen Salat.
+| wir | Wir *hätten gern* die Speisekarte.
+| 종업원이 물을 때 | Was *hätten* Sie *gern*?
+merke: hatte는 '가지고 있었다'이고 hätte는 공손하게 바라는 말이에요. a 위의 두 점을 꼭 찍어요.
+
+== training
+-- ex Hören | Thomas가 감자 수프 만드는 법을 알려 줘요. 듣고 답하세요.
+audio | Kartoffelsuppe
+> Thomas: Für die Kartoffelsuppe braucht man ein Kilo Kartoffeln, einen Liter Wasser und ein Stück Butter.
+> Thomas: Zuerst schneidet man die Kartoffeln.
+> Thomas: Dann kocht man sie zwanzig Minuten im Wasser.
+> Thomas: Danach gibt man die Butter und ein bisschen Salz dazu.
+> Thomas: Zur Suppe isst man Brot. Guten Appetit!
+mc: Wie viele Kartoffeln braucht man? | ein Kilo* | zwei Kilo | 500 Gramm
+mc: Was macht man zuerst? | Man schneidet die Kartoffeln.* | Man kocht das Wasser. | Man gibt Salz dazu.
+rf: Man kocht die Kartoffeln zehn Minuten. | f => Dann kocht man sie zwanzig Minuten im Wasser.
+mc: 수프와 함께 무엇을 먹나요? | 빵* | 밥 | 샐러드
+
+-- ex Hören | 식당에서 하는 말이에요. 듣고 알맞은 것을 고르세요.
+hör: Sabine: Ich hätte gern eine Flasche Wasser.
+mc: Sabine는 무엇을 주문하나요? | 물 한 병* | 물 한 잔 | 주스 한 병
+hör: Lukas: Ich nehme das Schnitzel mit Pommes.
+mc: Lukas는 무엇을 먹나요? | 슈니첼과 감자튀김* | 슈니첼과 샐러드 | 생선과 감자튀김
+hör: Elif: Wir möchten getrennt bezahlen.
+mc: Elif와 친구들은 어떻게 계산하나요? | 각자 따로 내요* | 한 사람이 모두 내요 | 다음에 내요
+hör: Emma: Die Suppe ist kalt!
+mc: 무엇이 문제인가요? | 수프가 식었어요* | 수프가 너무 뜨거워요 | 수프가 안 나왔어요
+
+-- ex Lesen | Yuna가 반 블로그에 올린 요리법이에요. 읽고 답하세요.
+text notiz | Pfannkuchen aus Korea
+> Zutaten: 200 Gramm Mehl, ein Ei, ein Glas Wasser, Gemüse, Salz, Öl
+> Zuerst schneidet man das Gemüse klein.
+> Dann mischt man das Mehl, das Ei und das Wasser. Man gibt das Gemüse und ein bisschen Salz dazu.
+> Danach brät man den Pfannkuchen mit ein bisschen Öl in der Pfanne.
+> Der Pfannkuchen ist fertig, wenn er braun ist.
+> In Korea isst man den Pfannkuchen gern, wenn es regnet. Guten Appetit!
+mc: Wie viel Mehl braucht man? | 200 Gramm* | 300 Gramm | ein Kilo
+rf: Man braucht zwei Eier. | f => 재료에 ein Ei, 달걀 한 개라고 나와요.
+mc: Was macht man zuerst? | Man schneidet das Gemüse.* | Man brät den Pfannkuchen. | Man mischt das Mehl und das Wasser.
+mc: 한국에서는 이 음식을 언제 즐겨 먹는다고 했나요? | 비가 올 때* | 생일에 | 아침마다
+
+-- ex Lesen | 식당 메뉴판이에요. 보고 답하세요.
+text plan | Speisekarte
+> Essen | Preis
+> Tomatensuppe | 4,50 €
+> Kleiner Salat | 5,00 €
+> Nudeln mit Tomatensoße | 9,50 €
+> Schnitzel mit Pommes | 12,90 €
+> Frischer Fisch mit Kartoffeln | 14,90 €
+> Pfannkuchen mit Eis | 5,50 €
+mc: Was kostet die Tomatensuppe? | 4,50 €* | 5,00 € | 5,50 €
+mc: Was ist am teuersten? | der Fisch mit Kartoffeln* | das Schnitzel mit Pommes | die Nudeln mit Tomatensoße
+rf: Die Nudeln sind günstiger als das Schnitzel. | r
+mc: Yuna는 10유로를 가지고 있어요. 수프와 작은 샐러드를 주문하면 얼마가 남나요? | 50센트* | 1유로 | 남지 않아요 => 4,50유로와 5,00유로를 더하면 9,50유로예요.
+
+-- ex Grammatik | man과 함께 쓰는 동사 형태를 고르세요.
+gap: Für Pfannkuchen [braucht|brauchen|brauchst] man Mehl, Eier und Milch.
+gap: Zuerst [schneidet|schneiden|schneide] man die Kartoffeln.
+gap: In Deutschland [isst|essen|esse] man viel Brot.
+gap: Hier [darf|dürfen|darfst] man nicht telefonieren.
+gap: Wie [sagt|sagen|sagst] man das auf Deutsch?
+
+-- ex Grammatik | 양을 나타내는 알맞은 말을 고르세요.
+gap: Ich kaufe ein [Kilo|Stück|Flasche] Kartoffeln.
+gap: Wir brauchen einen [Liter|Kilo|Packung] Milch. => einen이 있으니 남성인 Liter예요.
+gap: Eine [Flasche|Kilo|Gramm] Wasser, bitte.
+gap: Man braucht 500 [Gramm|Liter|Flaschen] Mehl.
+gap: Möchtest du ein [Stück|Flasche|Liter] Kuchen?
+gap: Ich nehme zwei [Packungen|Packung|Liter] Nudeln.
+
+-- ex Grammatik | der, die, das 뒤의 형용사 끝을 고르세요.
+gap: Der [kleine|kleiner|kleinen] Salat kostet fünf Euro.
+gap: Ich nehme den [kleinen|kleine|kleiner] Salat. => 남성 4격 den 뒤에는 -en이에요.
+gap: Die [heiße|heißen|heißer] Suppe schmeckt gut.
+gap: Das [kalte|kaltes|kalten] Wasser ist für mich.
+gap: Die [frischen|frische|frischer] Tomaten sind lecker. => 복수는 언제나 -en이에요.
+gap: Ich hätte gern das [große|großes|großen] Schnitzel.
+
+-- ex Grammatik | ein 뒤인지 der, die, das 뒤인지 보고 고르세요.
+gap: Das ist ein [neues|neue] Restaurant.
+gap: Das [neue|neues] Restaurant ist sehr gut.
+gap: Thomas ist ein [guter|gute] Koch.
+gap: Der [neue|neuer] Koch heißt Thomas.
+gap: Ich möchte einen [kleinen|kleine] Salat.
+gap: Ich möchte den [kleinen|kleine] Salat.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: man / braucht / ein Kilo / Kartoffeln. | 감자 1킬로가 필요해요.
+ord: zuerst / schneidet / man / die Tomaten. | 먼저 토마토를 썰어요.
+ord: ich / hätte / gern / den kleinen Salat. | 작은 샐러드로 할게요.
+ord: wir / möchten / getrennt / bezahlen. | 저희는 따로 계산하고 싶어요.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: das Mehl = 밀가루 ; der Zucker = 설탕 ; das Salz = 소금 ; die Pfanne = 프라이팬 ; die Rechnung = 계산서 ; die Speisekarte = 메뉴판 ; das Trinkgeld = 팁
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Thomas: Man braucht einen Liter Milch. | 우유 1리터가 필요해.
+dik: Yuna: Darf ich probieren? | 먹어 봐도 돼요?
+dik: Sabine: Die Rechnung, bitte. | 계산서 주세요.
+
+== sprechen
+-- redemittel
+요리법 말하기: Man braucht … | ~이 필요해요. ; Zuerst schneidet man … | 먼저 ~을 썰어요. ; Dann gibt man … dazu. | 그다음에 ~을 넣어요. ; Zum Schluss brät man … | 마지막에 ~을 구워요.
+주문하기: Ich hätte gern … | ~로 할게요. ; Ich nehme … | 저는 ~로 할게요. ; Für mich …, bitte. | 저는 ~ 주세요.
+맛 말하기: Wie schmeckt es? | 맛이 어때요? ; Es schmeckt sehr gut. | 아주 맛있어요. ; Die Suppe ist kalt. | 수프가 식었어요.
+계산하기: Die Rechnung, bitte. | 계산서 주세요. ; Zusammen oder getrennt? | 같이 계산하시나요, 따로 하시나요? ; Getrennt, bitte. | 따로 할게요. ; Stimmt so. | 거스름돈은 괜찮아요.
+
+-- rolle B | Sabine, Frau
+
+-- ich Mein Rezept | 만들 줄 아는 음식 하나를 골라 재료와 첫 단계를 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 음식 이름 | Pfannkuchen
+feld: b | 재료와 양 하나 | 500 Gramm Mehl
+feld: c | 재료와 양 또 하나 (4격) | einen Liter Milch
+feld: d | 먼저 하는 일 (동사 + man으로 시작) | mischt man das Mehl und die Milch
+satz: Ich koche gern {a}.
+satz: Man braucht {b} und {c}.
+satz: Zuerst {d}.
+
+-- schreiben Mein Rezept | 좋아하는 음식의 요리법을 써 보세요. 여섯 문장쯤 써요.
+punkt: 음식 이름 ; 재료와 양 ; 순서 (zuerst, dann, danach, zum Schluss) ; 맛이 어떤지
+start: Mein Rezept: …
+muster: Mein Rezept: Reis mit Ei. Man braucht zwei Tassen Reis, zwei Eier, ein bisschen Öl und Salz. Zuerst kocht man den Reis. Dann brät man die Eier in der Pfanne. Danach gibt man den Reis und das Salz dazu. Zum Schluss mischt man alles. Das schmeckt sehr gut und geht schnell!
+check: man 뒤의 동사를 er, sie, es 모양으로 썼나요? ; 양을 나타내는 말과 재료 사이에 von을 넣지 않았나요? ; zuerst, dann, danach 바로 뒤에 동사를 썼나요? ; 명사를 대문자로 시작했나요?
+
+-- kann
+Ich kann ein Rezept erklären. | 요리법을 설명할 수 있어요.
+Ich kann sagen, wie viel man braucht. | 재료가 얼마나 필요한지 말할 수 있어요.
+Ich kann im Restaurant bestellen und bezahlen. | 식당에서 주문하고 계산할 수 있어요.
+
+-- tipp 장 볼 목록을 독일어로
+p: 집에서 장 볼 목록을 독일어로 써 보세요. ein Kilo Kartoffeln, eine Flasche Wasser처럼 양까지 적으면 양을 나타내는 말이 금방 익어요.
+p: 요리를 도울 때는 지금 하는 일을 man 문장으로 말해 보세요. Jetzt schneidet man die Tomaten. Dann brät man das Ei.

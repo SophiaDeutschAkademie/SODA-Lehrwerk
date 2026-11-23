@@ -47,6 +47,18 @@ def open_ids():
 OPEN = open_ids()
 
 
+def ohne_audio():
+    """음성을 아직 만들지 않은 단계 (tools/status.json 의 ohne_audio)"""
+    p = os.path.join(T, 'status.json')
+    try:
+        return set(json.load(open(p, encoding='utf-8')).get('ohne_audio') or [])
+    except (OSError, ValueError):
+        return set()
+
+
+NA = ohne_audio()
+
+
 def lv_open(lv):
     return any(x.startswith(lv['id'] + '/') for x in OPEN)
 
@@ -100,6 +112,8 @@ def panels(data):
             rows.append(item(it, n, pid))
         if lv['id'] + '/1' in OPEN:
             go = '      <p class="p-go"><a class="btn" href="%s/1/" data-go="%s">Lektion 1 시작하기</a></p>\n' % (lv['id'], lv['id'])
+            if lv['id'] in NA:
+                go += '      <p class="p-wart">이 단계의 음성은 준비 중이에요. 지금은 글과 그림으로 볼 수 있어요.</p>\n'
         else:
             go = '      <p class="p-wart">이 단계의 본문은 준비 중이에요. 지금은 목차만 볼 수 있어요.</p>\n'
         out.append(

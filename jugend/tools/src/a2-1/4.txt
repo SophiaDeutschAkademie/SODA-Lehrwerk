@@ -1,0 +1,276 @@
+@id a2-1/4
+
+== einstieg
+bild: A kitchen on a Saturday morning. YUNA takes plates out of an open dishwasher. EMMA pushes a vacuum cleaner. SABINE holds a sheet of paper with a checklist and points at a cupboard. THOMAS carries a laundry basket.
+alt: 토요일 아침의 부엌이에요. Yuna는 식기세척기에서 접시를 꺼내고 Emma는 청소기를 밀어요. Sabine는 계획표를 들고 찬장을 가리키고 Thomas는 빨래 바구니를 들고 가요.
+lead: 토요일 아침이에요. Wagner 가족은 토요일마다 다 같이 집을 청소해요. 누가 무엇을 할지 나누고, 물건을 어디에 둘지 말해요.
+mission: 이 과를 마치면 집안일을 나누고, 물건을 어디에 놓을지 말하고, 어릴 때 해야 했던 일을 이야기할 수 있어요.
+wort: putzen | 청소하다
+wort: der Teller | 접시
+wort: Stell die Teller in den Schrank. | 접시를 찬장에 넣어 줘.
+wort: Als Kind musste ich helfen. | 어릴 때 나는 도와야 했어.
+mc: Als Kind musste ich helfen. musste는 언제의 일을 말하나요? | 예전 일* | 지금 일 | 앞으로 할 일 => musste는 müssen의 과거예요. '~해야 했다'라는 뜻이에요.
+
+== hoeren
+-- dialog A | Der Putzplan | 토요일 아침이에요. Sabine가 청소 계획표를 가져왔어요.
+vor: 들으면서 찾아보세요. Yuna는 무슨 일을 맡았나요?
+Sabine: Guten Morgen! Heute ist Samstag. Hier ist der Putzplan. | 좋은 아침! 오늘은 토요일이야. 여기 청소 계획표가 있어.
+Emma: Oh nein. Was muss ich machen? | 아, 싫다. 저는 뭘 해야 해요?
+Sabine: Du musst im Wohnzimmer staubsaugen und den Müll rausbringen. | 너는 거실에 청소기를 돌리고 쓰레기를 내다 버려야 해.
+Yuna: Und ich? | 저는요?
+Sabine: Räumst du bitte die Spülmaschine aus, Yuna? | Yuna는 식기세척기에서 그릇을 꺼내 정리해 줄래?
+Yuna: Klar. Wohin soll ich die Teller stellen? | 그럼요. 접시는 어디에 놓을까요?
+Sabine: Stell sie in den Schrank neben dem Fenster. Die Gläser stehen im Regal. | 창문 옆 찬장에 넣어 줘. 유리잔은 선반에 있어.
+Yuna: Und die Gabeln und Messer? | 포크랑 칼은요?
+Sabine: Leg sie bitte in die Schublade. | 서랍에 넣어 줘.
+Thomas: Und ich wasche die Wäsche. Dann koche ich für alle. | 나는 빨래를 할게. 그러고 나서 모두 먹을 밥을 할 거야.
+Emma: Papa hat es gut. Kochen ist keine Arbeit für ihn! | 아빠는 좋겠다. 아빠한테 요리는 일도 아니잖아!
+
+-- dialog B | Als Kind musste ich … | 청소를 마치고 점심을 먹어요. 어릴 때 이야기가 나와요.
+vor: 들으면서 찾아보세요. Thomas는 어릴 때 무엇을 해야 했나요?
+Emma: Papa, musstest du früher auch putzen? | 아빠, 아빠도 예전에 청소해야 했어요?
+Thomas: Natürlich! Als Kind musste ich jeden Samstag das Auto waschen. | 그럼! 어릴 때 토요일마다 세차를 해야 했지.
+Sabine: Und ich musste jeden Tag den Tisch decken. Ich wollte lieber draußen spielen. | 나는 날마다 상을 차려야 했어. 밖에서 노는 게 더 좋았는데.
+Emma: Durftet ihr fernsehen? | 텔레비전은 봐도 됐어요?
+Sabine: Nur am Wochenende. In der Woche durften wir nicht fernsehen. | 주말에만. 평일에는 보면 안 됐어.
+Yuna: Ich musste mit sechs Jahren Klavier lernen. Ich musste jeden Tag üben. | 저는 여섯 살 때 피아노를 배워야 했어요. 날마다 연습해야 했어요.
+Thomas: Wolltest du das? | 네가 하고 싶었던 거니?
+Yuna: Nein, ich wollte lieber schwimmen. Aber jetzt spiele ich gern Klavier. | 아니요, 수영을 하고 싶었어요. 하지만 지금은 피아노 치는 걸 좋아해요.
+Emma: Und ich? Ich konnte mit vier Jahren schon Rad fahren! | 나는? 나는 네 살 때 벌써 자전거를 탈 수 있었어!
+Thomas: Stimmt. Aber du durftest nicht allein zur Schule fahren. | 맞아. 하지만 혼자 학교에 가는 건 안 됐지.
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Emma는 무슨 일을 맡았나요? | 청소기 돌리기와 쓰레기 버리기* | 설거지와 빨래 | 상 차리기와 요리
+mc: Yuna는 무슨 일을 맡았나요? | 식기세척기에서 그릇 꺼내기* | 빨래하기 | 욕실 청소하기
+mc: Wohin stellt Yuna die Teller? | in den Schrank* | ins Regal | in die Schublade
+rf: Die Gläser stehen im Regal. | r
+mc: Thomas는 어릴 때 무엇을 해야 했나요? | 토요일마다 세차하기* | 날마다 상 차리기 | 날마다 피아노 연습하기
+rf: Sabine durfte als Kind jeden Tag fernsehen. | f => Nur am Wochenende. 주말에만 볼 수 있었어요.
+mc: Was wollte Yuna als Kind lieber machen? | schwimmen* | Klavier spielen | Rad fahren
+
+-- kultur 일요일에는 조용히
+p: 독일에는 조용히 지내야 하는 시간(Ruhezeit)이 있어요. 보통 밤 10시부터 아침 6시까지이고, 일요일과 공휴일은 하루 종일이에요.
+p: 이 시간에는 큰 소리가 나는 일을 하지 않아요. 일요일에 잔디를 깎거나 유리병을 수거함에 버리면 이웃이 싫어해요. 여러 집이 함께 사는 건물에는 이런 규칙을 적은 Hausordnung이 붙어 있어요.
+p: 그래서 Wagner 가족도 청소기를 돌리고 빨래하는 큰 청소는 토요일에 해요.
+mc: 독일에서 일요일에 하지 않는 일은 무엇일까요? | 잔디 깎기* | 산책하기 | 요리하기
+
+== wortschatz
+-- gruppe Hausarbeit | 집안일
+die Hausarbeit | 집안일 | Alle müssen bei der Hausarbeit helfen. | 모두 집안일을 도와야 해요.
+putzen, hat geputzt | 청소하다, 닦다 | Am Samstag putzen wir die Wohnung. | 토요일에 우리는 집을 청소해요.
+staubsaugen, hat gestaubsaugt | 청소기를 돌리다 | Emma muss staubsaugen. | Emma는 청소기를 돌려야 해요.
+waschen (du wäschst, er wäscht) | 씻다, 빨다 | Thomas wäscht die Wäsche. | Thomas는 빨래를 해요.
+die Wäsche | 빨래 | Die Wäsche ist fertig. | 빨래가 다 됐어요.
+spülen, hat gespült | 설거지하다 | Ich spüle das Geschirr. | 나는 설거지를 해요.
+das Geschirr | 그릇, 식기 | Das Geschirr steht im Schrank. | 그릇은 찬장에 있어요.
+die Spülmaschine, die Spülmaschinen | 식기세척기 | Die Spülmaschine ist neu. | 식기세척기는 새것이에요.
+ausräumen, hat ausgeräumt | (안에 든 것을) 꺼내 정리하다 | Yuna räumt die Spülmaschine aus. | Yuna는 식기세척기에서 그릇을 꺼내요.
+den Tisch decken | 상을 차리다 | Lea deckt den Tisch. | Lea는 상을 차려요.
+der Müll | 쓰레기 | Bring bitte den Müll raus. | 쓰레기를 내다 버려 줘.
+
+-- gruppe In der Küche | 부엌에서
+der Teller, die Teller | 접시 | Die Teller sind sauber. | 접시가 깨끗해요.
+das Glas, die Gläser | 유리잔 | Die Gläser stehen im Regal. | 유리잔은 선반에 있어요.
+die Tasse, die Tassen | 찻잔 | Die Tasse ist heiß. | 찻잔이 뜨거워요.
+die Gabel, die Gabeln | 포크 | Ich brauche eine Gabel. | 포크가 하나 필요해요.
+das Messer, die Messer | 칼 | Das Messer liegt auf dem Tisch. | 칼은 식탁 위에 있어요.
+der Löffel, die Löffel | 숟가락 | Der Löffel ist klein. | 숟가락이 작아요.
+die Schublade, die Schubladen | 서랍 | Die Gabeln liegen in der Schublade. | 포크는 서랍에 있어요.
+stellen, hat gestellt | (세워서) 놓다 | Stell die Gläser in den Schrank. | 유리잔을 찬장에 넣어 줘.
+legen, hat gelegt | (눕혀서) 놓다 | Leg das Messer auf den Tisch. | 칼을 식탁 위에 놓아 줘.
+stehen, hat gestanden | 서 있다, 놓여 있다 | Die Teller stehen im Schrank. | 접시는 찬장에 있어요.
+liegen, hat gelegen | 누워 있다, 놓여 있다 | Mein Handy liegt auf dem Bett. | 내 휴대폰은 침대 위에 있어요.
+
+-- gruppe Früher | 예전에
+früher | 예전에 | Früher musste ich früh ins Bett gehen. | 예전에 나는 일찍 자야 했어요.
+als Kind | 어릴 때 | Als Kind durfte ich nicht lange fernsehen. | 어릴 때 나는 텔레비전을 오래 보면 안 됐어요.
+allein | 혼자 | Ich durfte nicht allein fahren. | 나는 혼자 가면 안 됐어요.
+draußen | 밖에서 | Die Kinder spielen draußen. | 아이들은 밖에서 놀아요.
+üben, hat geübt | 연습하다 | Ich musste jeden Tag üben. | 나는 날마다 연습해야 했어요.
+das Klavier, die Klaviere | 피아노 | Yuna spielt Klavier. | Yuna는 피아노를 쳐요.
+natürlich | 물론, 당연히 | Natürlich helfe ich dir. | 물론 도와줄게.
+sauber | 깨끗한 | Die Küche ist sauber. | 부엌이 깨끗해요.
+
+-- bilder
+putzen, hat geputzt: a teenager who wipes a window with a cloth
+staubsaugen, hat gestaubsaugt: a teenager who pushes a vacuum cleaner over a carpet
+die Wäsche: a washing machine next to a basket full of clothes
+spülen, hat gespült: two hands that wash a plate in a sink with foam
+die Spülmaschine, die Spülmaschinen: an open dishwasher with plates and glasses inside
+den Tisch decken: a table set with a plate, a fork, a knife and a glass
+der Müll: a trash bin next to a full trash bag
+der Teller, die Teller: a pile of three plates
+das Glas, die Gläser: two empty drinking glasses
+die Tasse, die Tassen: a simple coffee cup with a handle on a saucer, without a lid
+die Gabel, die Gabeln: a single fork
+die Schublade, die Schubladen: an open kitchen drawer with cutlery inside
+
+-- aussprache st와 sp | 낱말 첫머리에서는 [슈트], [슈프]
+p: 낱말이나 줄기의 첫머리에 오는 st는 [슈트], sp는 [슈프]로 소리 나요. stellen은 [슈텔렌], spülen은 [슈퓔렌]이에요.
+p: 낱말 가운데나 끝의 st는 그대로 [스트]예요. Fenster, Schwester, ist.
+hör: stellen, stehen, Stuhl, Stadt | st 첫머리
+hör: spülen, spielen, Sport, spät | sp 첫머리
+hör: Fenster, Schwester, ist, Durst | st 가운데와 끝
+hör: Meine Schwester stellt den Stuhl ans Fenster. | 연습 문장
+
+== grammatik
+-- punkt musste, durfte, konnte, wollte | 조동사의 과거
+bsp: Als Kind *musste* ich jeden Samstag das Auto waschen. | 어릴 때 나는 토요일마다 세차를 해야 했어.
+bsp: In der Woche *durften* wir nicht fernsehen. | 평일에 우리는 텔레비전을 보면 안 됐어.
+bsp: Ich *konnte* mit vier Jahren schon Rad fahren. | 나는 네 살 때 벌써 자전거를 탈 수 있었어.
+bsp: Ich *wollte* lieber schwimmen. | 나는 수영을 하고 싶었어.
+finde: müssen의 과거 musste에는 무엇이 없나요? | ü 위의 두 점 (Umlaut)* | t | m
+regel: müssen, dürfen, können, wollen으로 지난 일을 말할 때는 Perfekt 대신 이 짧은 과거형을 써요. 줄기에 -te를 붙이고, ü와 ö의 두 점이 없어져요. ich와 er, sie, es의 모양이 같아요.
+| | müssen | dürfen | können | wollen
+| ich | muss*te* | durf*te* | konn*te* | woll*te*
+| du | muss*test* | durf*test* | konn*test* | woll*test*
+| er, sie, es | muss*te* | durf*te* | konn*te* | woll*te*
+| wir | muss*ten* | durf*ten* | konn*ten* | woll*ten*
+| ihr | muss*tet* | durf*tet* | konn*tet* | woll*tet*
+| sie, Sie | muss*ten* | durf*ten* | konn*ten* | woll*ten*
+merke: 문장 짜임은 지금과 같아요. 조동사가 둘째 자리, 다른 동사는 원형으로 맨 끝에 와요. Ich musste jeden Tag üben.
+
+-- punkt Wohin? stellen, legen + Akkusativ | 어디로 놓는지 말할 때
+bsp: *Stell* die Teller *in den Schrank*. | 접시를 찬장에 넣어 줘.
+bsp: *Leg* die Gabeln *in die Schublade*. | 포크를 서랍에 넣어 줘.
+bsp: Wohin soll ich die Gläser stellen? – *Ins Regal*. | 유리잔은 어디에 놓을까요? – 선반에.
+finde: in den Schrank에서 den Schrank는 몇 격인가요? | 4격 (Akkusativ)* | 3격 (Dativ) | 1격 (Nominativ)
+regel: 물건을 어디로(Wohin?) 옮겨 놓는지 말할 때는 in, auf, unter, neben 뒤에 4격을 써요. 세워서 놓으면 stellen, 눕혀서 놓으면 legen을 써요.
+| 명사 | Wohin? + 4격 | 예문
+| der Schrank | in *den* Schrank | Ich stelle die Teller in den Schrank.
+| das Regal | in *das* Regal (ins Regal) | Ich stelle die Gläser ins Regal.
+| die Schublade | in *die* Schublade | Ich lege die Gabeln in die Schublade.
+| der Tisch | auf *den* Tisch | Ich lege das Messer auf den Tisch.
+merke: 접시, 유리잔, 병처럼 서 있는 물건은 stellen, 포크, 책, 휴대폰처럼 누워 있는 물건은 legen이에요.
+
+-- punkt Wo? stehen, liegen + Dativ | 어디에 있는지 말할 때
+bsp: Die Gläser *stehen im Regal*. | 유리잔은 선반에 있어.
+bsp: Die Gabeln *liegen in der Schublade*. | 포크는 서랍에 있어.
+bsp: Mein Handy *liegt auf dem Tisch*. | 내 휴대폰은 식탁 위에 있어.
+finde: 물건이 어디에 있는지(Wo?) 말할 때는 몇 격을 쓰나요? | 3격 (Dativ)* | 4격 (Akkusativ) | 1격 (Nominativ)
+regel: 물건이 어디에 있는지(Wo?) 말할 때는 같은 전치사 뒤에 3격을 써요. 서 있으면 stehen, 누워 있으면 liegen이에요. 옮기면 4격, 그대로 있으면 3격이라고 기억해요.
+| 어디로? 옮긴다 (4격) | 어디에? 있다 (3격)
+| Ich *stelle* die Teller *in den* Schrank. | Die Teller *stehen im* Schrank.
+| Ich *lege* das Handy *auf den* Tisch. | Das Handy *liegt auf dem* Tisch.
+| Ich *stelle* die Tasche *neben das* Bett. | Die Tasche *steht neben dem* Bett.
+| Ich *lege* die Gabeln *in die* Schublade. | Die Gabeln *liegen in der* Schublade.
+merke: stellen과 legen의 과거분사는 gestellt, gelegt이고, stehen과 liegen은 gestanden, gelegen이에요. Ich habe das Glas auf den Tisch gestellt. Das Glas hat auf dem Tisch gestanden.
+
+== training
+-- ex Hören | Lukas가 집안일 이야기를 해요. 듣고 답하세요.
+audio | Bei uns zu Hause
+> Lukas: Bei uns zu Hause müssen alle helfen.
+> Lukas: Ich muss den Müll rausbringen und mein Zimmer aufräumen.
+> Lukas: Meine Schwester Lea ist acht. Sie deckt den Tisch.
+> Lukas: Früher musste ich nicht helfen, aber jetzt bin ich vierzehn.
+> Lukas: Am Samstag wollte ich Fußball spielen, aber ich durfte nicht. Zuerst musste ich mein Zimmer aufräumen!
+mc: Was muss Lukas machen? | den Müll rausbringen und sein Zimmer aufräumen* | den Tisch decken | die Wäsche waschen
+mc: Was macht Lea? | Sie deckt den Tisch.* | Sie putzt das Bad. | Sie kocht.
+rf: Früher musste Lukas auch helfen. | f => Früher musste ich nicht helfen.
+mc: Lukas는 토요일에 왜 바로 축구를 하지 못했나요? | 먼저 방을 치워야 해서* | 비가 와서 | 숙제가 많아서
+
+-- ex Hören | 듣고 물건이 있는 곳이나 놓을 곳을 고르세요.
+hör: Sabine: Stell die Gläser bitte auf den Tisch.
+mc: 유리잔을 어디에 놓아야 하나요? | 식탁 위에* | 찬장 안에 | 서랍 안에
+hör: Thomas: Die Teller stehen im Schrank.
+mc: 접시는 어디에 있나요? | 찬장 안에* | 식탁 위에 | 식기세척기 안에
+hör: Emma: Leg das Handy bitte in die Tasche.
+mc: 휴대폰을 어디에 넣어야 하나요? | 가방 안에* | 책상 위에 | 침대 밑에
+hör: Yuna: Mein Heft liegt unter dem Bett.
+mc: 공책은 어디에 있나요? | 침대 밑에* | 침대 위에 | 가방 안에
+
+-- ex Lesen | Wagner 가족의 청소 계획표예요. 표를 보고 답하세요.
+text plan | Putzplan am Samstag
+> Wer? | Was?
+> Emma | staubsaugen, Müll rausbringen
+> Yuna | Spülmaschine ausräumen, Bad putzen
+> Thomas | Wäsche waschen, kochen
+> Sabine | Küche putzen, einkaufen
+mc: Wer putzt das Bad? | Yuna* | Emma | Sabine
+rf: Thomas geht einkaufen. | f => Sabine가 장을 봐요. Thomas는 빨래와 요리를 해요.
+mc: Emma가 맡은 일은 무엇인가요? | 청소기 돌리기와 쓰레기 버리기* | 부엌 청소와 장보기 | 빨래와 요리
+
+-- ex Lesen | Sabine가 어릴 때 이야기를 썼어요. 읽고 답하세요.
+text notiz | Früher bei uns
+> Als Kind habe ich nicht in der Stadt gewohnt. Das Haus war groß und wir hatten einen Garten.
+> Wir waren vier Kinder und alle mussten helfen. Ich musste den Tisch decken und mein Bruder musste den Müll rausbringen.
+> Wir durften nur am Wochenende fernsehen. Und um acht Uhr mussten wir ins Bett gehen.
+> Ich wollte immer länger lesen, aber ich durfte nicht. Meine Mutter hat die Lampe ausgemacht.
+> Mit zehn Jahren konnte ich schon kochen. Heute kocht Thomas besser als ich!
+mc: Was musste Sabine als Kind machen? | den Tisch decken* | den Müll rausbringen | kochen
+rf: Die Kinder durften jeden Tag fernsehen. | f => Wir durften nur am Wochenende fernsehen.
+mc: Wann mussten die Kinder ins Bett gehen? | um acht Uhr* | um neun Uhr | um zehn Uhr
+mc: Sabine는 열 살 때 무엇을 할 수 있었나요? | 요리* | 피아노 치기 | 자전거 타기
+rf: Heute kocht Sabine besser als Thomas. | f => Heute kocht Thomas besser als ich!
+
+-- ex Grammatik | 예전 일이에요. 알맞은 형태를 고르세요.
+gap: Als Kind [musste|muss|müssen] ich jeden Tag den Tisch decken.
+gap: Früher [durften|dürfen|durfte] wir nicht fernsehen.
+gap: Mit vier Jahren [konnte|kann|konnten] Emma schon Rad fahren.
+gap: Yuna [wollte|will|wollten] lieber schwimmen.
+gap: [Musstest|Musste|Musst] du früher auch helfen?
+gap: Wir [mussten|musste|müssen] um acht ins Bett gehen.
+
+-- ex Grammatik | 지금 일을 예전 일로 바꿔요. 괄호 안의 동사를 알맞게 쓰세요.
+gap: Heute muss ich lernen. Gestern [=musste] ich auch lernen. (müssen)
+gap: Heute darf ich fernsehen. Früher [=durfte] ich nicht fernsehen. (dürfen)
+gap: Heute kann ich schwimmen. Mit fünf [=konnte] ich nicht schwimmen. (können)
+gap: Heute will ich Musik hören. Gestern [=wollte] ich schlafen. (wollen)
+gap: Heute können wir kommen. Gestern [=konnten] wir nicht kommen. (können)
+
+-- ex Grammatik | 어디로 놓는지, 어디에 있는지 보고 알맞은 말을 고르세요.
+gap: Ich stelle die Teller in [den|dem] Schrank. => 어디로? 옮기니까 4격이에요.
+gap: Die Teller stehen [im|in den] Schrank. => 어디에? 그대로 있으니까 3격이에요. in dem은 im으로 줄여요.
+gap: Leg das Handy auf [den|dem] Tisch.
+gap: Das Handy liegt auf [dem|den] Tisch.
+gap: Stell die Tasche neben [das|dem] Bett.
+gap: Die Tasche steht neben [dem|das] Bett.
+gap: Ich lege die Gabeln in [die|der] Schublade.
+gap: Die Gabeln liegen in [der|die] Schublade.
+
+-- ex Grammatik | stellen, stehen, legen, liegen 가운데 알맞은 것을 고르세요.
+gap: Die Gläser [stehen|stellen|legen] im Regal.
+gap: [Stell|Steh|Lieg] die Tasse bitte auf den Tisch!
+gap: Das Buch [liegt|legt|stellt] auf dem Bett.
+gap: Ich [lege|liege|stehe] das Heft in die Tasche.
+gap: Wo [liegt|legt|stellt] mein Handy?
+
+-- ex Wortschatz | 집안일과 뜻을 짝지으세요.
+paar: putzen = 청소하다 ; spülen = 설거지하다 ; staubsaugen = 청소기를 돌리다 ; die Wäsche waschen = 빨래하다 ; den Tisch decken = 상을 차리다 ; den Müll rausbringen = 쓰레기를 내다 버리다 ; aufräumen = 정리하다
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Yuna: Wohin soll ich die Teller stellen? | 접시는 어디에 놓을까요?
+dik: Sabine: Die Gläser stehen im Regal. | 유리잔은 선반에 있어.
+dik: Thomas: Als Kind musste ich das Auto waschen. | 어릴 때 나는 세차를 해야 했어.
+
+== sprechen
+-- redemittel
+집안일 나누기: Was muss ich machen? | 나는 뭘 해야 해? ; Kannst du bitte den Tisch decken? | 상 좀 차려 줄래? ; Ich bringe den Müll raus. | 내가 쓰레기를 버릴게. ; Wer putzt das Bad? | 욕실은 누가 청소해?
+놓을 곳 묻고 답하기: Wohin soll ich die Teller stellen? | 접시는 어디에 놓을까? ; Stell sie in den Schrank. | 찬장에 넣어 줘. ; Wo ist mein Handy? – Es liegt auf dem Tisch. | 내 휴대폰 어디 있어? – 식탁 위에 있어.
+어릴 때 말하기: Als Kind musste ich … | 어릴 때 나는 ~해야 했어. ; Ich durfte nicht … | 나는 ~하면 안 됐어. ; Mit sechs Jahren konnte ich schon … | 여섯 살 때 나는 벌써 ~할 수 있었어. ; Ich wollte lieber … | 나는 ~하고 싶었어.
+규칙 말하기: Bei uns müssen alle helfen. | 우리 집에서는 모두 도와야 해. ; In der Woche darf ich nicht lange fernsehen. | 평일에는 텔레비전을 오래 보면 안 돼.
+
+-- rolle A | Yuna, Sabine
+
+-- ich Als Kind | 어릴 때 해야 했던 일, 하면 안 됐던 일, 하고 싶었던 일을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 해야 했던 일 (동사 원형으로 끝나게) | mein Zimmer aufräumen
+feld: b | 하면 안 됐던 일 | lange fernsehen
+feld: c | 하고 싶었던 일 | draußen spielen
+satz: Als Kind musste ich {a}.
+satz: Ich durfte nicht {b}.
+satz: Ich wollte lieber {c}.
+
+-- schreiben Bei uns zu Hause | 우리 집의 집안일과 규칙을 소개하는 글을 써 보세요. 여섯 문장쯤 써요.
+punkt: 내가 맡은 집안일 ; 가족이 하는 일 ; 우리 집 규칙 하나 ; 어릴 때 해야 했거나 하면 안 됐던 일 ; 내 생각
+start: Bei uns zu Hause …
+muster: Bei uns zu Hause müssen alle helfen. Ich muss mein Zimmer aufräumen und den Tisch decken. Mein Vater kocht und meine Mutter wäscht die Wäsche. Wir haben eine Regel: Wenn wir essen, ist das Handy aus. Als Kind durfte ich nur am Wochenende fernsehen. Ich wollte jeden Tag fernsehen! Jetzt finde ich die Regel gut.
+check: müssen, dürfen 뒤의 동사를 맨 끝에 원형으로 썼나요? ; 예전 일은 musste, durfte, wollte, konnte로 썼나요? ; wenn 문장에 쉼표를 찍었나요? ; 명사를 대문자로 시작했나요?
+
+-- kann
+Ich kann über Hausarbeit sprechen. | 집안일을 어떻게 나누는지 말할 수 있어요.
+Ich kann sagen, wohin etwas kommt und wo etwas ist. | 물건을 어디에 놓는지, 어디에 있는지 말할 수 있어요.
+Ich kann erzählen, was ich als Kind musste und durfte. | 어릴 때 해야 했던 일과 해도 됐던 일을 이야기할 수 있어요.
+
+-- tipp 놓으면서 말해요
+p: 연필 한 자루를 책상에 놓으면서 말해 보세요. Ich lege den Stift auf den Tisch. 그리고 손을 떼고 말해요. Der Stift liegt auf dem Tisch. 손이 움직이면 4격, 손을 떼면 3격이에요.
+p: 컵으로도 해 보세요. Ich stelle die Tasse auf den Tisch. Die Tasse steht auf dem Tisch. 몸으로 익힌 문법은 잘 잊히지 않아요.

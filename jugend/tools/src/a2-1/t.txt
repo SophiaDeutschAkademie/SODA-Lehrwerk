@@ -1,0 +1,149 @@
+@id a2-1/stufentest
+@typ test
+
+== hoeren
+-- info A2.1을 돌아보는 평가예요
+p: 듣기, 읽기, 쓰기, 말하기 네 부분으로 되어 있어요. 시간 제한은 없어요. 문제를 풀면 바로 맞았는지 알려 주고, 마지막 Ergebnis에서 부분마다 몇 문제를 맞혔는지 보여 줘요.
+p: 음성은 여러 번 들을 수 있어요. 먼저 한 번만 듣고 풀어 보면 내 듣기 실력을 더 정확히 알 수 있어요.
+
+-- ex Hören 1 | 짧은 말을 듣고 알맞은 것을 고르세요.
+hör: Frau: Der Zug nach Hamburg fährt heute ab Gleis zwölf.
+mc: 기차는 몇 번 선에서 출발하나요? | 12번 선* | 2번 선 | 20번 선 => ab Gleis zwölf
+hör: Thomas: Für den Kuchen braucht man dreihundert Gramm Mehl und vier Eier.
+mc: 밀가루는 얼마나 필요한가요? | 300그램* | 400그램 | 3킬로 => dreihundert Gramm Mehl
+hör: Elif: Ich bin müde, trotzdem gehe ich heute zur Tanz-AG.
+mc: Elif는 오늘 무엇을 하나요? | 피곤하지만 춤 동아리에 가요* | 피곤해서 집에 있어요 | 피곤해서 일찍 자요 => trotzdem은 '그래도'예요.
+hör: Mann: Gehen Sie über die Brücke und dann am Rathaus vorbei. Das Museum ist gegenüber vom Kino.
+mc: 박물관은 어디에 있나요? | 영화관 맞은편* | 시청 맞은편 | 다리 옆 => Das Museum ist gegenüber vom Kino.
+hör: Sabine: Als Kind durfte ich nur am Wochenende fernsehen.
+mc: Sabine는 어릴 때 언제 텔레비전을 볼 수 있었나요? | 주말에만* | 날마다 | 저녁마다 => nur am Wochenende
+
+-- ex Hören 2 | 학교가 끝나고 Lukas와 Yuna가 이야기해요. 듣고 답하세요.
+audio | Nach der Schule
+> Lukas: Yuna, kommst du heute mit ins Schwimmbad?
+> Yuna: Ich kann leider nicht, weil ich heute Volleyballtraining habe.
+> Lukas: Schade. Wie lange dauert das Training?
+> Yuna: Bis halb sieben. Danach muss ich noch die Spülmaschine ausräumen.
+> Lukas: Und morgen? Hast du morgen Zeit?
+> Yuna: Ja, morgen habe ich frei. Wenn es nicht regnet, komme ich mit.
+> Lukas: Super. Wir treffen uns um vier an der Haltestelle.
+mc: Warum kann Yuna heute nicht mitkommen? | Weil sie Volleyballtraining hat.* | Weil sie krank ist. | Weil sie lernen muss. => weil ich heute Volleyballtraining habe
+mc: Was muss Yuna nach dem Training machen? | die Spülmaschine ausräumen* | staubsaugen | kochen => Danach muss ich noch die Spülmaschine ausräumen.
+rf: Yuna kommt morgen mit, wenn es nicht regnet. | r => Wenn es nicht regnet, komme ich mit.
+mc: 두 사람은 내일 어디에서 만나나요? | 정류장에서* | 수영장 앞에서 | 학교에서 => Wir treffen uns um vier an der Haltestelle.
+
+-- ex Hören 3 | Elif가 토요일 이야기를 해요. 듣고 답하세요.
+audio | Elifs Samstag
+> Elif: Am Samstag war ich mit meinem Bruder Can in der Stadt.
+> Elif: Can hat einen schwarzen Mantel gesucht, aber die Mäntel waren ihm zu teuer.
+> Elif: Ich habe einen bunten Schal gekauft. Er hat nur acht Euro gekostet.
+> Elif: Danach hatten wir Hunger. Wir haben im Restaurant Nudeln und einen großen Salat bestellt.
+> Elif: Can hat bezahlt. Er ist älter als ich, deshalb bezahlt er immer!
+mc: Mit wem war Elif in der Stadt? | mit ihrem Bruder Can* | mit Yuna | mit ihrer Mutter => mit meinem Bruder Can
+mc: Warum hat Can keinen Mantel gekauft? | Die Mäntel waren zu teuer.* | Die Mäntel waren zu eng. | Es gab keine Mäntel. => die Mäntel waren ihm zu teuer
+mc: Was hat Elif gekauft? | einen bunten Schal* | einen schwarzen Mantel | eine grüne Jacke => Ich habe einen bunten Schal gekauft.
+rf: Elif hat im Restaurant bezahlt. | f => Can hat bezahlt.
+
+== lesen
+-- ex Lesen 1 | Paul이 친구 Lukas를 소개한 글이에요. 읽고 답하세요.
+text notiz | Mein Freund Lukas
+> Lukas ist ein guter Freund von mir. Er ist vierzehn und geht auch in die 8b.
+> Er hat kurze braune Haare und er ist größer als ich.
+> Lukas ist lustig und hilfsbereit, aber er kommt oft zu spät. Unsere Lehrerin sagt, dass er pünktlicher sein muss.
+> Er spielt seit sechs Jahren Fußball im Verein. Dreimal in der Woche hat er Training.
+> Als Kind wollte er jeden Tag nur Fußball spielen. Heute muss er auch für die Schule lernen!
+mc: Wie sieht Lukas aus? | Er hat kurze braune Haare.* | Er hat lange blonde Haare. | Er trägt eine Brille. => Er hat kurze braune Haare.
+rf: Lukas ist kleiner als Paul. | f => Er ist größer als ich.
+mc: Was sagt die Lehrerin? | dass Lukas pünktlicher sein muss* | dass Lukas mehr lernen muss | dass Lukas zu viel Fußball spielt => Unsere Lehrerin sagt, dass er pünktlicher sein muss.
+mc: Lukas는 언제부터 클럽에서 축구를 했나요? | 6년 전부터* | 3년 전부터 | 올해부터 => seit sechs Jahren
+
+-- ex Lesen 2 | 토마토 샐러드 요리법이에요. Kühlschrank는 '냉장고'예요. 읽고 답하세요.
+text notiz | Tomatensalat für vier Personen
+> Zutaten: sechs Tomaten, 200 Gramm Käse, zwei Löffel Öl, Salz
+> Zuerst wäscht man die Tomaten und schneidet sie.
+> Dann schneidet man den Käse und gibt ihn dazu.
+> Danach mischt man alles mit dem Öl und ein bisschen Salz.
+> Der Salat schmeckt am besten, wenn er kalt ist. Stellt ihn deshalb eine Stunde in den Kühlschrank!
+mc: Wie viele Tomaten braucht man? | sechs* | vier | zwei => sechs Tomaten
+mc: Was macht man zuerst? | Man wäscht und schneidet die Tomaten.* | Man schneidet den Käse. | Man mischt alles. => Zuerst wäscht man die Tomaten und schneidet sie.
+rf: Man braucht Zucker für den Salat. | f => 재료에 설탕은 없어요. 소금(Salz)이 들어가요.
+mc: 샐러드는 언제 가장 맛있다고 했나요? | 차가울 때* | 따뜻할 때 | 만들자마자 => Der Salat schmeckt am besten, wenn er kalt ist.
+
+-- ex Lesen 3 | Lena가 온라인 가게에 보낸 메시지예요. 읽고 답하세요.
+text notiz | Nachricht an das Geschäft
+> Guten Tag,
+> ich habe vor zwei Wochen bei Ihnen Sneaker bestellt. Gestern sind die Schuhe angekommen.
+> Leider passen mir die Schuhe nicht. Sie sind zu eng. Und ein Schuh hat ein kleines Loch!
+> Ich möchte die Schuhe zurückschicken. Könnten Sie mir das Geld zurückgeben?
+> Vielen Dank und viele Grüße
+> Lena Hoffmann
+mc: Wann hat Lena die Schuhe bestellt? | vor zwei Wochen* | gestern | vor zwei Tagen => vor zwei Wochen
+mc: Was ist das Problem? | Die Schuhe sind zu eng und ein Schuh hat ein Loch.* | Die Schuhe sind zu groß. | Die Schuhe sind nicht angekommen. => Sie sind zu eng. Und ein Schuh hat ein kleines Loch!
+rf: Lena möchte die Schuhe umtauschen. | f => 교환이 아니라 돈을 돌려 달라고 해요.
+mc: Lena는 가게에 무엇을 부탁하나요? | 돈을 돌려 달라고 해요* | 더 큰 신발을 보내 달라고 해요 | 신발을 고쳐 달라고 해요 => Könnten Sie mir das Geld zurückgeben?
+
+== schreiben
+-- ex Schreiben 1 | 낱말을 순서대로 놓아 문장을 만드세요.
+ord: ich / bleibe / zu Hause, / weil / ich / krank / bin. | 나는 아파서 집에 있어.
+ord: Emma / sagt, / dass / sie / müde / ist. | Emma는 피곤하다고 해.
+ord: wenn / es / regnet, / bleiben / wir / zu Hause. | 비가 오면 우리는 집에 있어.
+ord: ich / interessiere / mich / für Musik. | 나는 음악에 관심이 있어.
+ord: es / regnet, / deshalb / nehme / ich / den Bus. | 비가 와서 나는 버스를 타.
+ord: könnten / Sie / mir / bitte / helfen? | 저를 좀 도와주실 수 있을까요?
+
+-- ex Schreiben 2 | 괄호 안의 낱말을 알맞은 형태로 바꿔 빈칸에 쓰세요.
+gap: Als Kind [=musste] ich früh ins Bett gehen. (müssen) | 어릴 때 나는 일찍 자야 했어요. => müssen의 과거는 musste예요.
+gap: Lukas ist [=größer] als Yuna. (groß) | Lukas는 Yuna보다 커요. => groß – größer
+gap: Das ist ein [=neues] Handy. (neu) | 이건 새 휴대폰이에요. => das Handy → ein neues Handy
+gap: Ich freue [=mich] auf die Ferien. (sich) | 나는 방학이 기대돼요. => ich와 함께 쓰는 말은 mich예요.
+gap: Zuerst [=schneidet] man die Tomaten. (schneiden) | 먼저 토마토를 썰어요. => man 뒤의 동사는 er, sie, es와 같은 모양이에요.
+gap: Wir gehen durch [=den] Park. (der Park) | 우리는 공원을 지나가요. => durch 뒤는 4격이에요.
+gap: Die Jacke passt [=mir] gut. (ich) | 재킷이 나한테 잘 맞아요. => passen은 3격과 함께 써요.
+
+-- ex Schreiben 3 | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Ich habe den Bus verpasst. | 나는 버스를 놓쳤어요.
+dik: N: Die Rechnung, bitte. | 계산서 주세요.
+dik: N: Wem gehört die Tasche? | 그 가방은 누구 거예요?
+dik: N: Wir treffen uns um fünf. | 우리는 다섯 시에 만나요.
+
+-- schreiben Mein Text | 내 취미나 동아리 활동을 소개하는 글을 써요. 아래 내용을 넣어서 일곱 문장 넘게 써 보세요. 이 글은 자동으로 채점하지 않아요. 다 쓴 뒤에 예시 글과 비교하고 아래 항목을 스스로 확인해요.
+punkt: 무엇에 관심이 있는지 ; 언제부터, 얼마나 자주 하는지 ; 왜 좋아하는지 (weil) ; 어릴 때는 어땠는지 (musste, durfte, wollte) ; 친구에게 권하기
+start: Ich interessiere mich für …
+muster: Ich interessiere mich für Musik. Ich spiele seit drei Jahren Gitarre. Zweimal in der Woche übe ich mit meinem Freund. Ich mag Musik, weil sie Spaß macht. Als Kind musste ich Klavier lernen, aber ich wollte lieber Gitarre spielen. Jetzt bin ich in der Musik-AG. Wir treffen uns jeden Mittwoch. Komm doch auch!
+check: 일곱 문장 넘게 썼어요 ; sich interessieren과 함께 mich와 für를 썼어요 ; weil 문장에서 동사를 맨 끝에 썼어요 ; 어릴 때 일은 musste, durfte, wollte로 썼어요 ; 명사와 문장 첫 글자를 대문자로 썼어요
+
+== sprechen
+-- info 소리 내어 말해요
+p: 말하기는 자동으로 채점하지 않아요. 질문을 듣고 바로 소리 내어 답한 다음, 예시 답과 비교해 보세요.
+p: 녹음 단추를 누르면 내 목소리를 다시 들을 수 있어요. 녹음은 저장되지 않아요.
+
+-- sprich Fragen und Antworten | 질문을 듣고 소리 내어 답하세요. 한두 문장으로 답하면 돼요. | Frau=Kellnerin; Mann=Trainer
+f: Emma: Warum lernst du Deutsch? | 왜 독일어를 배워? => Ich lerne Deutsch, weil es Spaß macht. / Weil ich nach Deutschland fahren möchte.
+f: Lukas: Wie sieht dein Freund oder deine Freundin aus? | 네 친구는 어떻게 생겼어? => Sie ist groß und hat lange schwarze Haare.
+f: Elif: Was machst du am liebsten online? | 온라인으로 뭘 가장 즐겨 해? => Ich sehe am liebsten Videos.
+f: Sabine: Was musst du zu Hause machen? | 집에서 무슨 일을 해야 하니? => Ich muss mein Zimmer aufräumen und den Tisch decken.
+f: Mann: Wofür interessierst du dich? | 무엇에 관심이 있니? => Ich interessiere mich für Sport.
+f: Frau: Was möchten Sie essen? | 무엇을 드시겠어요? => Ich hätte gern die Tomatensuppe und einen Salat.
+f: Thomas: Wie kommst du zur Schule? | 학교에 어떻게 가니? => Ich gehe durch den Park und über die Brücke. Die Schule ist gegenüber vom Supermarkt.
+f: Yuna: Was für Kleidung trägst du gern? | 어떤 옷을 즐겨 입어? => Ich trage gern bequeme Hosen und weite Pullover.
+
+-- sprich Mein Lieblingsessen | 아래 낱말을 보면서 30초쯤 좋아하는 음식과 만드는 법을 말하세요. 먼저 혼자 말해 보고, 그다음에 예시를 확인해요.
+thema: Was? ; Zutaten ; Zuerst … ; Dann … ; Wie schmeckt es?
+muster: Mein Lieblingsessen ist Reis mit Ei. Man braucht Reis, zwei Eier, Öl und Salz. Zuerst kocht man den Reis. Dann brät man die Eier in der Pfanne und mischt alles. Das schmeckt sehr gut und geht schnell.
+
+== ergebnis
+-- bilanz
+hoch: A2.1에서 배운 내용을 잘 익혔어요. 이제 A2.2 Entdecken으로 넘어가도 좋아요.
+mittel: 대부분 익혔어요. 틀린 문제의 설명을 다시 읽고, 점수가 낮은 부분은 Station 1과 Station 2의 복습 문제로 한 번 더 연습해 보세요.
+tief: 아직 헷갈리는 내용이 많아요. Station 1과 Station 2의 복습 문제를 다시 풀고, 어려웠던 과의 Grammatik과 Training을 본 다음 평가를 한 번 더 해 보세요.
+
+-- info 쓰기와 말하기는 스스로 확인해요
+p: 글쓰기 과제와 말하기는 점수에 들어가지 않아요. 아래 세 가지를 얼마나 할 수 있는지 스스로 표시해 보세요.
+
+-- kann
+Ich kann über meine Hobbys und Interessen schreiben. | 내 취미와 관심사를 글로 쓸 수 있어요.
+Ich kann Fragen zu Alltag, Essen und Kleidung beantworten. | 일상, 음식, 옷에 대한 질문에 답할 수 있어요.
+Ich kann ein einfaches Rezept erklären. | 쉬운 요리법을 설명할 수 있어요.
+
+-- info 다음 단계는 A2.2 Entdecken
+p: A2.2에서는 진로, 수학여행, 환경, 독일어권 나라 이야기를 배워요. 학년이 끝날 때 Yuna가 쾰른에서 보낸 한 해를 돌아봐요.

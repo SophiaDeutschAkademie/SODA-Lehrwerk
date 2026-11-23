@@ -1,0 +1,270 @@
+@id a2-2/5
+
+== einstieg
+bild: A living room. YUNA sits on a sofa and looks into an almost empty wallet. EMMA sits next to her and shows her a phone with a picture of headphones on the screen. On the table stands a small snow globe with a tower inside.
+alt: 거실이에요. Yuna가 소파에 앉아 거의 빈 지갑을 들여다보고 있어요. 옆에 앉은 Emma가 헤드폰 사진이 뜬 휴대폰을 보여 줘요. 탁자에는 탑이 든 작은 스노볼이 있어요.
+lead: 7월 초, 수학여행에서 돌아왔어요. Yuna는 베를린에서 용돈을 거의 다 썼어요. 그런데 갖고 싶던 헤드폰의 광고가 눈에 띄어요.
+mission: 이 과를 마치면 용돈과 쓴 돈을 말하고, 바라는 것을 말하고, 광고에 대해 이야기할 수 있어요.
+wort: das Taschengeld | 용돈
+wort: die Werbung | 광고
+wort: Ich hätte gern neue Kopfhörer. | 새 헤드폰을 갖고 싶어.
+wort: Kannst du mir Geld leihen? | 나한테 돈 좀 빌려줄 수 있어?
+mc: Ich hätte gern neue Kopfhörer. Yuna에게 지금 새 헤드폰이 있나요? | 아니요, 갖고 싶어 해요* | 네, 있어요 | 예전에 있었어요 => hätte gern은 지금은 없지만 갖고 싶다는 말이에요.
+
+== hoeren
+-- dialog A | Kein Geld mehr! | 수학여행에서 돌아온 다음 주예요. Emma가 휴대폰에서 광고를 봤어요.
+vor: 들으면서 찾아보세요. Yuna에게 남은 돈은 얼마인가요?
+Emma: Schau mal, die Werbung! Kopfhörer für nur 40 Euro. Nur diese Woche! | 이 광고 좀 봐! 헤드폰이 40유로밖에 안 해. 이번 주만이래! | say=Schau mal, die Werbung! Kopfhörer für nur vierzig Euro. Nur diese Woche!
+Yuna: Die hätte ich gern. Meine alten Kopfhörer sind kaputt. | 저거 갖고 싶다. 내 헤드폰은 고장 났거든.
+Emma: Dann kauf sie doch. | 그럼 사.
+Yuna: Ich kann nicht. Ich habe in Berlin fast mein ganzes Taschengeld ausgegeben. | 못 사. 베를린에서 용돈을 거의 다 썼어.
+Emma: Wie viel hast du noch? | 얼마 남았어?
+Yuna: Nur zwölf Euro. Kannst du mir 30 Euro leihen? | 12유로밖에 없어. 나한테 30유로만 빌려줄 수 있어? | say=Nur zwölf Euro. Kannst du mir dreißig Euro leihen?
+Emma: 30 Euro? Hm. Ich spare gerade für ein neues Fahrrad. | 30유로? 음. 나 지금 새 자전거 사려고 돈 모으고 있어. | say=Dreißig Euro? Hm. Ich spare gerade für ein neues Fahrrad.
+Yuna: Ich gebe sie dir nächsten Monat zurück. Versprochen! | 다음 달에 돌려줄게. 약속해!
+Emma: Na gut. Aber frag zuerst Mama. Sie sagt immer: Man sollte nicht alles sofort kaufen. | 좋아. 그런데 먼저 엄마한테 물어봐. 엄마는 늘 뭐든 바로 사지는 말라고 하시잖아.
+Yuna: Ich würde so gern mehr Taschengeld bekommen! | 용돈을 더 받으면 정말 좋겠다!
+
+-- dialog B | Wünsche und Werbung | 저녁 식탁이에요. Yuna가 Sabine와 Thomas에게 헤드폰 이야기를 해요.
+vor: 들으면서 찾아보세요. Thomas는 Yuna에게 무엇을 먼저 하라고 하나요?
+Sabine: Yuna, du möchtest Kopfhörer kaufen? Zeig mir mal die Werbung. | Yuna, 헤드폰을 사고 싶다고? 그 광고 좀 보여 줘.
+Yuna: Hier. Die Werbung sagt, dass sie die besten Kopfhörer für Schüler sind. | 여기요. 광고에서는 학생한테 가장 좋은 헤드폰이래요.
+Thomas: Das sagt die Werbung immer. Hast du die Preise verglichen? | 광고는 늘 그렇게 말하지. 가격은 비교해 봤니?
+Yuna: Nein, noch nicht. | 아니요, 아직요.
+Thomas: Im Internet kosten sie vielleicht nur 30 Euro. Ich würde zuerst vergleichen. | 인터넷에서는 30유로밖에 안 할 수도 있어. 나라면 먼저 비교해 보겠다. | say=Im Internet kosten sie vielleicht nur dreißig Euro. Ich würde zuerst vergleichen.
+Emma: Papa, ich hätte gern mehr Taschengeld. 30 Euro im Monat sind zu wenig! | 아빠, 저 용돈 좀 더 받고 싶어요. 한 달에 30유로는 너무 적어요! | say=Papa, ich hätte gern mehr Taschengeld. Dreißig Euro im Monat sind zu wenig!
+Thomas: Mehr Taschengeld? Dann wäre ich bald arm! | 용돈을 더? 그럼 아빠가 금방 가난해지겠는데!
+Sabine: Ihr könntet auch etwas Geld verdienen. Oma braucht Hilfe im Garten. | 너희가 돈을 좀 벌 수도 있잖아. 할머니가 정원 일을 도와줄 사람이 필요하시대.
+Emma: Wie viel gibt sie uns? | 우리한테 얼마 주신대요?
+Sabine: Fragt sie selbst! Aber ich glaube, sie gibt euch zehn Euro pro Stunde. | 직접 여쭤봐! 그런데 내 생각엔 한 시간에 10유로는 주실 거야.
+Yuna: Dann kann ich die Kopfhörer bald selbst bezahlen. Das wäre toll! | 그럼 헤드폰을 곧 제 돈으로 살 수 있겠어요. 그러면 정말 좋겠어요!
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Was kosten die Kopfhörer in der Werbung? | 40 Euro* | 30 Euro | 12 Euro
+mc: Yuna는 왜 헤드폰을 살 수 없나요? | 베를린에서 용돈을 거의 다 써서* | 헤드폰이 다 팔려서 | Sabine가 못 사게 해서
+rf: Yuna hat noch zwölf Euro. | r
+mc: Wofür spart Emma? | für ein neues Fahrrad* | für Kopfhörer | für eine Reise
+mc: Was würde Thomas zuerst machen? | die Preise vergleichen* | die Kopfhörer sofort kaufen | Emma fragen
+rf: Emma findet, dass sie genug Taschengeld bekommt. | f => 30 Euro im Monat sind zu wenig!
+mc: 두 사람은 어떻게 돈을 벌 수 있나요? | 할머니의 정원 일을 도와서* | 식당에서 일해서 | 신문을 돌려서
+
+-- kultur 용돈과 첫 아르바이트
+p: 독일 청소년은 대부분 다달이 용돈(Taschengeld)을 받아요. 나이가 많을수록 더 받아요. 나이마다 얼마가 알맞은지 알려 주는 표(Taschengeldtabelle)도 있어서 부모가 참고해요.
+p: 13살부터는 부모님이 허락하면 가벼운 일을 해서 돈을 벌 수 있어요. 신문 돌리기, 아이 돌보기, 이웃집 개 산책시키기 같은 일이고, 하루에 두 시간까지만 할 수 있어요.
+p: 독일에는 아직 현금만 받는 가게가 있어요. 그래서 청소년도 현금을 조금씩 가지고 다녀요.
+mc: 독일에서 14살 학생이 해도 되는 일은 무엇일까요? | 하루 한 시간 이웃집 개 산책시키기* | 날마다 다섯 시간 식당에서 일하기 | 밤늦게까지 가게에서 일하기
+
+== wortschatz
+-- gruppe Geld | 돈
+das Taschengeld | 용돈 | Ich bekomme 30 Euro Taschengeld. | 나는 용돈을 30유로 받아요. | say=Ich bekomme dreißig Euro Taschengeld.
+ausgeben (du gibst aus, er gibt aus) | (돈을) 쓰다 | Ich gebe viel Geld für Essen aus. | 나는 먹는 데 돈을 많이 써요.
+leihen, hat geliehen | 빌려주다 | Kannst du mir zehn Euro leihen? | 나한테 10유로 빌려줄 수 있어?
+der Preis, die Preise | 가격 | Der Preis ist zu hoch. | 가격이 너무 높아요.
+vergleichen, hat verglichen | 비교하다 | Ich vergleiche die Preise. | 나는 가격을 비교해요.
+billig | 싼 | Das T-Shirt ist billig. | 그 티셔츠는 싸요.
+reich | 부유한, 돈이 많은 | Ich wäre gern reich. | 나는 부자면 좋겠어요.
+arm | 가난한 | Er ist nicht arm. | 그는 가난하지 않아요.
+das Bargeld | 현금 | Ich habe kein Bargeld. | 나는 현금이 없어요.
+der Geldbeutel, die Geldbeutel | 지갑 | Mein Geldbeutel ist leer. | 내 지갑이 비었어요.
+die Münze, die Münzen | 동전 | Ich habe nur Münzen. | 나는 동전밖에 없어요.
+der Schein, die Scheine | 지폐 | Hier ist ein Zehn-Euro-Schein. | 여기 10유로짜리 지폐가 있어요.
+der Job, die Jobs | 일, 아르바이트 | Paul hat einen Job. | Paul은 아르바이트를 해요.
+pro | ~마다, ~당 | Ich verdiene zehn Euro pro Stunde. | 나는 한 시간에 10유로를 벌어요.
+
+-- gruppe Kaufen und Werbung | 사기와 광고
+die Werbung | 광고 | Die Werbung ist lustig. | 그 광고는 웃겨요.
+das Produkt, die Produkte | 상품, 제품 | Das Produkt ist neu. | 그 제품은 새로 나왔어요.
+der Kopfhörer, die Kopfhörer | 헤드폰 | Meine Kopfhörer sind kaputt. | 내 헤드폰이 고장 났어요.
+das Souvenir, die Souvenirs | 기념품 | Ich habe in Berlin Souvenirs gekauft. | 나는 베를린에서 기념품을 샀어요.
+der Wunsch, die Wünsche | 바람, 소원 | Ich habe einen Wunsch. | 나는 바라는 게 하나 있어요.
+sofort | 바로, 당장 | Ich komme sofort. | 바로 갈게요.
+versprechen (du versprichst, er verspricht) | 약속하다 | Ich verspreche es dir. | 너한테 약속할게.
+
+-- gruppe Wünsche | 바라는 말
+Ich hätte gern … | ~을 갖고 싶어 | Ich hätte gern einen Hund. | 나는 개를 키우고 싶어요.
+Ich wäre gern … | ~이면 좋겠어 | Ich wäre jetzt gern am Meer. | 지금 바다에 있으면 좋겠어요.
+Ich würde gern … | ~하고 싶어 | Ich würde gern nach Japan reisen. | 나는 일본에 여행 가고 싶어요.
+reisen, ist gereist | 여행하다 | Wir reisen im Sommer nach Korea. | 우리는 여름에 한국으로 여행 가요.
+selbst | 스스로, 직접 | Ich bezahle das selbst. | 그건 내가 직접 낼게요.
+genug | 충분히, 넉넉한 | Ich habe nicht genug Geld. | 나는 돈이 모자라요.
+etwas | 조금, 어떤 것 | Ich brauche etwas Geld. | 나는 돈이 조금 필요해요.
+ganz | 전부의, 온 | Ich habe mein ganzes Geld ausgegeben. | 나는 돈을 다 썼어요.
+
+-- bilder
+das Taschengeld: an adult hand that puts a banknote and two coins into the open hand of a teenager
+ausgeben (du gibst aus, er gibt aus): a teenager who pays at a shop counter and holds an open empty wallet
+leihen, hat geliehen: one teenager who hands a banknote to another teenager
+der Geldbeutel, die Geldbeutel: a closed leather wallet
+die Münze, die Münzen: a small pile of coins
+der Schein, die Scheine: three plain banknotes without numbers
+die Werbung: a large billboard at a street that shows headphones and a big star shape without any text
+der Kopfhörer, die Kopfhörer: a pair of headphones
+das Souvenir, die Souvenirs: a snow globe with a small tower inside next to a key ring
+der Wunsch, die Wünsche: a teenager who looks up at a shooting star in the night sky
+reich: a smiling person who carries a big sack full of coins
+arm: a sad man with natural light skin who holds an empty open wallet upside down, nothing falls out
+
+-- aussprache hätte, wäre, würde | 두 점이 뜻을 바꿔요
+p: hätte, wäre, würde는 두 점이 있어서 hatte, war, wurde와 뜻이 달라요. 두 점을 또렷하게 소리 내야 바라는 말로 들려요.
+p: ä는 입을 조금 벌리고 내는 [에], ü는 입술을 둥글게 내밀고 내는 [위]예요.
+hör: hatte, hätte | a와 ä
+hör: war, wäre | a와 ä
+hör: wurde, würde | u와 ü
+hör: Ich hätte gern ein Fahrrad und ich wäre gern in Berlin. | 연습 문장
+
+== grammatik
+-- punkt hätte, wäre, würde | 바라는 것 말하기
+bsp: Die *hätte* ich *gern*. | 저거 갖고 싶어.
+bsp: Ich *würde* so *gern* mehr Taschengeld *bekommen*. | 용돈을 더 받으면 정말 좋겠어.
+bsp: Das *wäre* toll! | 그러면 정말 좋겠다!
+finde: Ich hätte gern einen Hund. 이 말을 한 사람에게 지금 개가 있나요? | 없어요* | 있어요 | 알 수 없어요
+regel: 지금 사실은 아니지만 그랬으면 좋겠다고 말할 때 hätte, wäre, würde를 써요. 갖고 싶은 것은 hätte gern, 되고 싶은 상태나 있고 싶은 곳은 wäre gern, 하고 싶은 일은 würde gern과 동사 원형으로 말해요.
+| 주어 | haben → hätte | sein → wäre | 다른 동사 → würde + 원형
+| ich | hätte | wäre | würde
+| du | hättest | wärst | würdest
+| er, sie, es | hätte | wäre | würde
+| wir | hätten | wären | würden
+| ihr | hättet | wärt | würdet
+| sie, Sie | hätten | wären | würden
+merke: Ich hätte gern neue Kopfhörer. Ich wäre gern reich. Ich würde gern nach Japan reisen. würde 뒤의 동사는 원형으로 맨 끝에 와요.
+
+-- punkt Dativ und Akkusativ im Satz | 누구에게 무엇을
+bsp: Kannst du *mir* *30 Euro* leihen? | 나한테 30유로 빌려줄 수 있어?
+bsp: Zeig *mir* *die Werbung*. | 나한테 그 광고를 보여 줘.
+bsp: Ich gebe *sie* *dir* zurück. | 그걸 너한테 돌려줄게.
+finde: Kannst du mir 30 Euro leihen? 에서 먼저 오는 것은 무엇인가요? | 사람 (mir)* | 물건 (30 Euro) | 동사 (leihen)
+regel: geben, leihen, zeigen, schenken, schicken 같은 동사는 '누구에게'(3격)와 '무엇을'(4격)을 함께 써요. 보통 사람이 먼저, 물건이 나중에 와요. 하지만 물건을 es, sie, ihn 같은 대명사로 말하면 그 대명사가 먼저 와요.
+| 문장 | 순서
+| Ich gebe *meinem Bruder* *das Geld*. | 3격 명사, 4격 명사
+| Ich gebe *ihm* *das Geld*. | 3격 대명사, 4격 명사
+| Ich gebe *es* *meinem Bruder*. | 4격 대명사, 3격 명사
+| Ich gebe *es* *ihm*. | 4격 대명사, 3격 대명사
+merke: 짧은 대명사가 앞으로 온다고 기억해요. 대명사가 둘이면 4격이 먼저예요. Ich gebe es dir.
+
+-- punkt Geld ausgeben für, sparen für | 돈을 어디에 쓰는지 말하기
+bsp: Ich spare *für ein neues Fahrrad*. | 나는 새 자전거를 사려고 돈을 모아.
+bsp: Ich gebe viel Geld *für Essen* aus. | 나는 먹는 데 돈을 많이 써.
+finde: für 뒤에는 몇 격이 오나요? | 4격 (Akkusativ)* | 3격 (Dativ) | 1격 (Nominativ)
+regel: 돈을 어디에 쓰는지, 무엇을 사려고 모으는지 말할 때 für와 4격을 써요. 물을 때는 Wofür?라고 해요. ausgeben은 분리 동사라서 aus가 문장 맨 끝으로 가요.
+| 물음 | 답
+| Wofür gibst du dein Geld aus? | Für Essen und Kino.
+| Wofür sparst du? | Für ein*en* Computer.
+| Wofür sparst du? | Für ein neues Handy.
+| Wofür sparst du? | Für eine Reise.
+merke: 지난 일은 ausgegeben으로 말해요. Ich habe zwanzig Euro für Souvenirs ausgegeben.
+
+== training
+-- ex Hören | 라디오에서 광고가 나와요. 듣고 답하세요.
+audio | Werbung im Radio | Frau=Werbung
+> Frau: Neu im Musikladen am Dom: Kopfhörer für Schüler!
+> Frau: Sie sind leicht, bequem und in fünf Farben da.
+> Frau: Diese Woche kosten sie nur vierzig Euro. Sie sparen zwanzig Euro!
+> Frau: Aber nur bis Samstag. Kommen Sie schnell!
+mc: Was kosten die Kopfhörer diese Woche? | 40 Euro* | 20 Euro | 60 Euro
+mc: Wie viel spart man? | 20 Euro* | 40 Euro | 5 Euro
+rf: Die Kopfhörer gibt es nur in einer Farbe. | f => Sie sind in fünf Farben da.
+mc: 이 가격은 언제까지인가요? | 토요일까지* | 일요일까지 | 다음 달까지
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Emma: Ich spare für ein neues Fahrrad.
+mc: Emma는 무엇을 사려고 돈을 모으나요? | 자전거* | 헤드폰 | 휴대폰
+hör: Lukas: Ich hätte gern einen Hund.
+mc: Lukas에게 지금 개가 있나요? | 아니요, 키우고 싶어 해요* | 네, 한 마리 있어요 | 네, 두 마리 있어요
+hör: Elif: Kannst du mir deinen Stift leihen?
+mc: Elif는 무엇을 부탁하나요? | 펜을 빌려 달라고 해요* | 펜을 사 달라고 해요 | 펜을 돌려 달라고 해요
+hör: Yuna: Ich gebe es dir morgen zurück.
+mc: Yuna는 언제 돌려주나요? | 내일* | 오늘 | 다음 달
+
+-- ex Lesen | Yuna가 6월에 받은 돈과 쓴 돈을 적었어요. 보고 답하세요.
+text plan | Yunas Geld im Juni
+> Was? | Euro
+> Taschengeld | + 40
+> Geschenk von Oma | + 20
+> Souvenirs in Berlin | – 22
+> Essen in Berlin | – 15
+> Kino | – 8
+> Geschenk für Mina | – 3
+> Rest | 12
+mc: Wie viel Taschengeld bekommt Yuna im Monat? | 40 Euro* | 20 Euro | 60 Euro
+mc: Wofür hat Yuna am meisten Geld ausgegeben? | für Souvenirs* | für Kino | für Essen
+rf: Yuna hat im Juni 20 Euro von ihrer Oma bekommen. | r
+mc: 6월 말에 Yuna에게 남은 돈은 얼마인가요? | 12유로* | 22유로 | 48유로
+
+-- ex Lesen | 반 블로그에 올라온 글이에요. 읽고 답하세요.
+text notiz | Wofür gibst du dein Taschengeld aus?
+> Lukas: Ich bekomme 25 Euro im Monat. Ich gebe fast alles für Essen aus. Ich würde gern sparen, aber ich habe immer Hunger!
+> Elif: Ich bekomme 30 Euro. 15 Euro spare ich jeden Monat. Ich hätte gern eine gute Kamera.
+> Paul: Ich bekomme kein Taschengeld. Ich bringe jeden Samstag Zeitungen zu den Leuten. Da verdiene ich 40 Euro im Monat.
+> Emma: Ich spare seit einem Jahr für ein Fahrrad. Bald habe ich genug Geld!
+mc: Wofür gibt Lukas sein Geld aus? | für Essen* | für Kleidung | für Spiele
+mc: Was hätte Elif gern? | eine Kamera* | ein Fahrrad | Kopfhörer
+rf: Paul bekommt 40 Euro Taschengeld von seinen Eltern. | f => Paul은 용돈을 받지 않고 신문을 돌려서 돈을 벌어요.
+mc: Emma는 언제부터 돈을 모으고 있나요? | 1년 전부터* | 한 달 전부터 | 지난주부터
+
+-- ex Grammatik | 한국어 뜻을 보고 hätte, wäre, würde 가운데 알맞은 말을 고르세요.
+gap: Ich [hätte|wäre|würde] gern neue Kopfhörer. | 새 헤드폰을 갖고 싶어요.
+gap: Ich [wäre|hätte|würde] gern reich. | 부자면 좋겠어요.
+gap: Ich [würde|hätte|wäre] gern nach Japan reisen. | 일본에 여행 가고 싶어요.
+gap: Emma [hätte|hätten|hättest] gern mehr Taschengeld. | Emma는 용돈을 더 받고 싶어 해요.
+gap: Wir [wären|wäre|wärst] jetzt gern am Meer. | 우리는 지금 바다에 있으면 좋겠어요.
+gap: [Würdest|Würde|Würden] du gern in Berlin wohnen? | 너는 베를린에 살고 싶어?
+
+-- ex Grammatik | 지난 사실인지 바라는 것인지 보고 고르세요.
+gap: Gestern [hatte|hätte] ich keine Zeit. | 어제 나는 시간이 없었어요. => 지난 사실은 두 점이 없는 hatte예요.
+gap: Ich [hätte|hatte] gern mehr Zeit. | 시간이 더 있으면 좋겠어요.
+gap: Letztes Jahr [war|wäre] ich in Seoul. | 작년에 나는 서울에 있었어요.
+gap: Ich [wäre|war] jetzt gern in Seoul. | 지금 서울에 있으면 좋겠어요.
+
+-- ex Grammatik | 누구에게 무엇을 주는지 보고 알맞은 말을 고르세요.
+gap: Kannst du [mir|mich|ich] zehn Euro leihen? | 나한테 10유로 빌려줄 수 있어?
+gap: Ich gebe [dir|dich|du] das Geld morgen zurück. | 내일 너한테 돈을 돌려줄게.
+gap: Oma gibt [uns|wir|unser] zehn Euro pro Stunde. | 할머니는 우리에게 한 시간에 10유로를 주세요.
+gap: Ich schenke [meiner Freundin|meine Freundin|mein Freundin] ein Buch. | 나는 친구에게 책을 선물해요.
+gap: Leihst du [ihm|ihn|er] dein Fahrrad? | 그에게 네 자전거를 빌려줄 거야?
+gap: Das ist mein Stift. Gib [ihn mir|mir ihn|mich ihn] bitte! | 그건 내 펜이야. 그걸 나한테 줘! => 대명사가 둘이면 4격이 먼저예요.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / hätte / gern / mehr Taschengeld. | 나는 용돈을 더 받고 싶어.
+ord: kannst du / mir / zehn Euro / leihen? | 나한테 10유로 빌려줄 수 있어?
+ord: ich / gebe / es / dir / morgen / zurück. | 내일 그걸 너한테 돌려줄게.
+ord: ich / würde / gern / ein Fahrrad / kaufen. | 나는 자전거를 사고 싶어.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: das Taschengeld = 용돈 ; ausgeben = (돈을) 쓰다 ; leihen = 빌려주다 ; die Werbung = 광고 ; der Preis = 가격 ; vergleichen = 비교하다 ; der Wunsch = 바람
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Yuna: Die hätte ich gern. | 저거 갖고 싶다.
+dik: Yuna: Kannst du mir Geld leihen? | 나한테 돈 좀 빌려줄 수 있어?
+dik: Emma: Ich spare für ein neues Fahrrad. | 나는 새 자전거를 사려고 돈을 모으고 있어.
+
+== sprechen
+-- redemittel
+용돈 말하기: Wie viel Taschengeld bekommst du? | 용돈을 얼마나 받아? ; Ich bekomme 30 Euro im Monat. | 한 달에 30유로 받아. ; Ich gebe viel Geld für Essen aus. | 나는 먹는 데 돈을 많이 써. ; Ich spare für … | 나는 ~을 사려고 돈을 모아.
+바라는 것 말하기: Ich hätte gern … | ~을 갖고 싶어. ; Ich wäre gern … | ~이면 좋겠어. ; Ich würde gern … | ~하고 싶어. ; Das wäre toll! | 그러면 정말 좋겠다!
+빌리고 돌려주기: Kannst du mir … leihen? | 나한테 ~ 빌려줄 수 있어? ; Ich gebe es dir morgen zurück. | 내일 돌려줄게. ; Versprochen! | 약속해!
+광고에 대해 말하기: Die Werbung sagt, dass … | 광고에서는 ~라고 해. ; Das glaube ich nicht. | 나는 그 말을 안 믿어. ; Ich würde zuerst die Preise vergleichen. | 나라면 먼저 가격을 비교해 보겠어.
+
+-- rolle A | Yuna, Emma
+
+-- ich Meine Wünsche | 갖고 싶은 것, 지금 있고 싶은 곳, 하고 싶은 일을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 갖고 싶은 것 (4격) | einen Hund
+feld: b | 지금 있고 싶은 곳 | am Meer
+feld: c | 하고 싶은 일 (동사 원형으로 끝나게) | nach Japan reisen
+satz: Ich hätte gern {a}.
+satz: Ich wäre jetzt gern {b}.
+satz: Ich würde gern {c}.
+
+-- schreiben Mein Taschengeld | 내 용돈 이야기를 써 보세요. 여섯 문장쯤 써요.
+punkt: 용돈을 얼마나 받는지 ; 어디에 쓰는지 ; 무엇을 사려고 모으는지 ; 바라는 것 두 가지 (hätte, würde) ; 광고에 대한 내 생각
+start: Ich bekomme …
+muster: Ich bekomme 30 000 Won in der Woche. Ich gebe viel Geld für Essen und Kino aus. Jeden Monat spare ich ein bisschen für ein neues Handy. Ich hätte gern mehr Taschengeld. Ich würde auch gern in den Ferien Geld verdienen. Ich finde, dass man der Werbung nicht alles glauben sollte.
+check: ausgeben, sparen과 함께 für를 썼나요? ; hätte gern 뒤에 4격을 썼나요? ; würde gern 뒤의 동사를 원형으로 맨 끝에 썼나요? ; hätte, wäre, würde에 두 점을 찍었나요?
+
+-- kann
+Ich kann über mein Taschengeld sprechen. | 내 용돈에 대해 말할 수 있어요.
+Ich kann Wünsche sagen. | 바라는 것을 말할 수 있어요.
+Ich kann über Werbung sprechen. | 광고에 대해 말할 수 있어요.
+
+-- tipp 바라는 것을 세 문장으로
+p: 자기 전에 바라는 것을 세 문장으로 말해 보세요. Ich hätte gern … Ich wäre gern … Ich würde gern … 날마다 내용을 바꿔 말하면 세 가지 모양이 입에 붙어요.
+p: 광고를 보면 Die Werbung sagt, dass …로 한 문장 만들어 보세요. 그다음에 Stimmt das?라고 스스로 물어봐요.

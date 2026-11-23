@@ -1,0 +1,278 @@
+@id a2-1/8
+
+== einstieg
+bild: A clothing store. YUNA stands in front of a mirror and wears a green jacket. ELIF holds two hangers with shirts. EMMA points at the jacket and smiles. Behind them is a rack with clothes.
+alt: 옷 가게예요. Yuna가 거울 앞에서 초록색 재킷을 입어 보고 있어요. Elif는 셔츠가 걸린 옷걸이 두 개를 들고 있고, Emma는 Yuna의 재킷을 가리키며 웃어요.
+lead: 5월 말, 날이 따뜻해졌어요. Yuna는 Emma, Elif와 함께 여름에 입을 재킷을 사러 시내에 갔어요. 그런데 일주일 뒤에 새 재킷의 지퍼가 고장 나요.
+mission: 이 과를 마치면 옷과 스타일을 묘사하고, 가게에서 물건을 교환하거나 돈을 돌려받을 수 있어요.
+wort: der Style | 스타일
+wort: umtauschen | 교환하다
+wort: Was für eine Jacke suchst du? | 어떤 재킷을 찾아?
+wort: Die Jacke passt mir. | 재킷이 나한테 맞아.
+mc: Die Jacke passt mir. 재킷은 누구에게 맞나요? | 나에게* | 너에게 | 그에게 => mir는 ich의 3격이에요. passen은 사람을 3격으로 써요.
+
+== hoeren
+-- dialog A | Was für eine Jacke suchst du? | 토요일 오후, 시내의 옷 가게예요.
+vor: 들으면서 찾아보세요. Yuna는 어떤 재킷을 찾고 있나요?
+Elif: Was für eine Jacke suchst du, Yuna? | 어떤 재킷을 찾아, Yuna?
+Yuna: Eine leichte Jacke für den Sommer. Meine alte Jacke ist zu warm. | 여름에 입을 가벼운 재킷. 지금 재킷은 너무 따뜻해.
+Emma: Wie findest du die Jeansjacke hier? | 여기 이 청재킷 어때?
+Yuna: Nicht schlecht. Aber ich mag keine engen Jacken. | 나쁘지 않아. 그런데 나는 꽉 끼는 재킷은 안 좋아해.
+Elif: Schau mal, das Mädchen dort mit der grünen Jacke. So eine Jacke steht dir. | 저기 초록색 재킷 입은 여자아이 좀 봐. 저런 재킷이 너한테 어울려.
+Yuna: Stimmt, die gefällt mir. Sie ist weit und bequem. | 맞아, 마음에 든다. 헐렁하고 편해 보여.
+Emma: Hier ist sie in Größe S. Probier sie mal an! | 여기 S 사이즈가 있어. 한번 입어 봐!
+Yuna: Sie passt mir gut. Und, wie sehe ich aus? | 나한테 잘 맞아. 어때, 나 어때 보여?
+Elif: Super! Mit der grünen Jacke und den weißen Schuhen siehst du toll aus. | 최고야! 초록색 재킷에 흰 신발을 신으니까 멋져 보여.
+Yuna: Dann nehme ich sie. Was kostet sie? | 그럼 이걸로 할래. 얼마야?
+Emma: 39 Euro. Sie ist im Angebot. | 39유로. 할인 중이야. | say=Neununddreißig Euro. Sie ist im Angebot.
+
+-- dialog B | Kann ich die Jacke umtauschen? | 일주일 뒤, 같은 가게예요. Yuna가 재킷을 들고 다시 왔어요. | Frau=Verkäuferin
+vor: 들으면서 찾아보세요. 재킷에 무슨 문제가 있나요?
+Yuna: Guten Tag. Ich habe letzte Woche diese Jacke gekauft. Leider ist der Reißverschluss kaputt. | 안녕하세요. 지난주에 이 재킷을 샀는데요. 아쉽게도 지퍼가 고장 났어요.
+Frau: Oh, das tut mir leid. Hast du den Kassenbon noch? | 아, 미안해요. 영수증 아직 가지고 있어요?
+Yuna: Ja, hier bitte. Kann ich die Jacke umtauschen? | 네, 여기요. 재킷을 교환할 수 있을까요?
+Frau: Natürlich. Möchtest du die gleiche Jacke noch einmal? | 그럼요. 같은 재킷으로 다시 줄까요?
+Yuna: Ja, gern. In Grün und in Größe S, bitte. | 네, 좋아요. 초록색 S 사이즈로 주세요.
+Frau: Moment. Leider haben wir die Jacke in Grün nicht mehr. Nur noch in Schwarz. | 잠깐만요. 아쉽게도 초록색은 이제 없어요. 검은색만 남았어요.
+Yuna: Hm, Schwarz gefällt mir nicht so gut. Kann ich das Geld zurückbekommen? | 음, 검은색은 그다지 마음에 안 들어요. 돈을 돌려받을 수 있을까요?
+Frau: Ja, das geht. Du bekommst 39 Euro zurück. | 네, 돼요. 39유로를 돌려줄게요. | say=Ja, das geht. Du bekommst neununddreißig Euro zurück.
+Emma: Yuna, wem gehört die Tasche hier? Ist das deine? | Yuna, 여기 이 가방 누구 거야? 네 거야?
+Yuna: Oh ja, die gehört mir! Danke, Emma. | 아 맞아, 내 거야! 고마워, Emma.
+Frau: So, hier ist dein Geld. Kann ich dir noch helfen? | 자, 돈 여기 있어요. 더 도와줄 일이 있을까요?
+Yuna: Nein, danke. Auf Wiedersehen! | 아니요, 괜찮아요. 안녕히 계세요!
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Yuna는 왜 새 재킷이 필요한가요? | 지금 재킷이 너무 따뜻해서* | 지금 재킷이 작아서 | 재킷을 잃어버려서
+mc: Was für eine Jacke sucht Yuna? | eine leichte Jacke* | eine warme Jacke | eine enge Jacke
+rf: Yuna mag enge Jacken. | f => Ich mag keine engen Jacken.
+mc: Was kostet die grüne Jacke? | 39 Euro* | 29 Euro | 49 Euro
+mc: Was ist das Problem mit der Jacke? | Der Reißverschluss ist kaputt.* | Die Jacke ist zu klein. | Die Farbe gefällt Yuna nicht.
+rf: Yuna bekommt eine neue grüne Jacke. | f => 초록색이 없어서 돈을 돌려받아요.
+mc: Wem gehört die Tasche? | Yuna* | Emma | der Verkäuferin
+
+-- kultur 교환은 가게 마음, 고장은 가게 책임
+p: 독일 가게에서는 마음이 바뀌었다고 해서 언제나 물건을 바꿔 주는 것은 아니에요. 많은 가게가 영수증(Kassenbon)이 있으면 두 주쯤 안에 바꿔 주지만, 이건 가게가 스스로 정한 규칙이에요.
+p: 물건에 문제가 있으면 달라요. 지퍼가 고장 났거나 구멍이 나 있으면 가게가 고쳐 주거나 새것으로 바꿔 줘야 하고, 그게 안 되면 돈을 돌려줘요.
+p: 인터넷으로 산 물건은 받은 날부터 14일 안에 이유를 말하지 않고 돌려보낼 수 있어요. 그래서 영수증과 상자를 한동안 버리지 않아요.
+mc: 가게에서 산 재킷의 지퍼가 고장 났어요. 무엇을 가지고 가게에 가면 좋을까요? | 재킷과 영수증* | 재킷만 | 새 지퍼
+
+== wortschatz
+-- gruppe Kleidung | 옷
+die Kleidung | 옷, 의류 | Ich trage gern bequeme Kleidung. | 나는 편한 옷을 즐겨 입어요.
+das Hemd, die Hemden | 셔츠 | Lukas trägt ein blaues Hemd. | Lukas는 파란 셔츠를 입고 있어요.
+die Jeans, die Jeans | 청바지 | Die Jeans ist neu. | 청바지는 새것이에요.
+der Mantel, die Mäntel | 코트 | Im Winter trage ich einen Mantel. | 겨울에 나는 코트를 입어요.
+der Schal, die Schals | 목도리, 스카프 | Der Schal ist warm. | 목도리가 따뜻해요.
+der Stiefel, die Stiefel | 부츠, 장화 | Die Stiefel sind schwarz. | 부츠는 검은색이에요.
+der Sneaker, die Sneaker | 운동화, 스니커즈 | Ich trage jeden Tag Sneaker. | 나는 날마다 운동화를 신어요.
+der Reißverschluss, die Reißverschlüsse | 지퍼 | Der Reißverschluss ist kaputt. | 지퍼가 고장 났어요.
+das Loch, die Löcher | 구멍 | Die Hose hat ein Loch. | 바지에 구멍이 났어요.
+der Style, die Styles | 스타일 | Dein Style gefällt mir. | 네 스타일이 마음에 들어.
+
+-- gruppe Wie ist es? | 어떤가요?
+eng | 꽉 끼는, 좁은 | Die Hose ist mir zu eng. | 바지가 나한테 너무 꽉 껴요.
+bequem | 편한 | Die Schuhe sind bequem. | 신발이 편해요.
+modern | 요즘 스타일의, 현대적인 | Die Jacke ist modern. | 그 재킷은 요즘 스타일이에요.
+bunt | 알록달록한 | Elif mag bunte Kleidung. | Elif는 알록달록한 옷을 좋아해요.
+hässlich | 보기 싫은, 못생긴 | Ich finde den Mantel hässlich. | 나는 그 코트가 보기 싫어요.
+kaputt | 망가진, 고장 난 | Mein Handy ist kaputt. | 내 휴대폰이 고장 났어요.
+Was für ein …? | 어떤 ~? | Was für eine Jacke suchst du? | 어떤 재킷을 찾아?
+
+-- gruppe Im Geschäft | 가게에서
+das Geschäft, die Geschäfte | 가게 | Das Geschäft ist in der Stadt. | 그 가게는 시내에 있어요.
+die Verkäuferin, die Verkäuferinnen | (여자) 점원 | Die Verkäuferin hilft mir. | 점원이 나를 도와줘요.
+die Kasse, die Kassen | 계산대 | Bitte bezahlen Sie an der Kasse. | 계산대에서 계산해 주세요.
+der Kassenbon, die Kassenbons | 영수증 | Hast du den Kassenbon noch? | 영수증 아직 있어?
+das Angebot, die Angebote | 할인 상품, 특가 | Die Jacke ist im Angebot. | 그 재킷은 할인 중이에요.
+umtauschen, hat umgetauscht | 교환하다 | Ich möchte die Schuhe umtauschen. | 신발을 교환하고 싶어요.
+zurückgeben, hat zurückgegeben | 돌려주다, 반품하다 | Ich gebe die Jacke zurück. | 나는 재킷을 반품해요.
+zurückbekommen, hat zurückbekommen | 돌려받다 | Du bekommst das Geld zurück. | 돈을 돌려받을 거야.
+zurückschicken, hat zurückgeschickt | 돌려보내다 | Ich schicke die Schuhe zurück. | 나는 신발을 돌려보내요.
+gehören, hat gehört | ~의 것이다 | Die Tasche gehört mir. | 그 가방은 내 거예요.
+die Bewertung, die Bewertungen | 후기, 평가 | Ich lese zuerst die Bewertungen. | 나는 먼저 후기를 읽어요.
+der Stern, die Sterne | 별 | Ich gebe fünf Sterne. | 나는 별 다섯 개를 줘요.
+
+-- bilder
+das Hemd, die Hemden: a folded shirt with a collar and buttons
+die Jeans, die Jeans: a pair of blue jeans
+der Mantel, die Mäntel: a long coat on a hanger
+der Schal, die Schals: a long knitted scarf
+der Stiefel, die Stiefel: a pair of boots
+der Sneaker, die Sneaker: a pair of plain sneakers with laces
+der Reißverschluss, die Reißverschlüsse: a close view of a half open zipper on a jacket
+das Loch, die Löcher: a sock with a hole at the toe
+eng: a teenager who tries to close a pair of trousers that is too tight
+kaputt: a smartphone with a cracked screen
+die Kasse, die Kassen: a shop counter with a cash register and a paper bag
+umtauschen, hat umgetauscht: a customer who hands a folded shirt across a counter to a shop assistant
+
+-- aussprache -e, -er, -en | 형용사의 세 가지 끝소리
+p: 형용사 끝 -e, -er, -en은 약하게 말하지만 소리가 서로 달라요. -e는 짧고 힘없는 [어], -er는 [아]에 가까운 소리, -en은 [은]처럼 들려요.
+p: 이 끝소리가 성과 격을 알려 줘요. 흐리지 말고 구별해서 말해요.
+hör: grüne, grüner, grünen | 세 가지 끝
+hör: eine neue Jacke, ein neuer Pullover, mit dem neuen Hemd | 끝에 주의
+hör: Das Mädchen mit der grünen Jacke trägt weiße Schuhe. | 연습 문장
+
+== grammatik
+-- punkt Adjektive im Dativ | 3격의 형용사
+bsp: das Mädchen *mit der* grün*en* Jacke | 초록색 재킷을 입은 여자아이
+bsp: *Mit den* weiß*en* Schuhen siehst du toll aus. | 흰 신발을 신으니까 멋져 보여.
+bsp: der Junge *mit einem* blau*en* Hemd | 파란 셔츠를 입은 남자아이
+finde: 3격에서 관사 뒤의 형용사 끝은 어떻게 되나요? | 언제나 -en* | 성에 따라 다르다 | 아무것도 붙지 않는다
+regel: mit, in, von, bei 같은 전치사 뒤에는 3격이 와요. 3격에서는 관사가 dem, der, den, einem, einer로 바뀌고, 관사 뒤의 형용사 끝은 성과 수에 상관없이 언제나 -en이에요.
+| 명사 | 3격 | 예
+| der Pullover | mit dem / einem rot*en* Pullover | der Mann mit dem roten Pullover
+| die Jacke | mit der / einer grün*en* Jacke | das Mädchen mit der grünen Jacke
+| das Hemd | mit dem / einem blau*en* Hemd | Lukas mit dem blauen Hemd
+| die Schuhe (복수) | mit den weiß*en* Schuhe*n* | Yuna mit den weißen Schuhen
+merke: 복수 3격에서는 명사에도 -n이 붙어요. die Schuhe → mit den Schuhen.
+
+-- punkt Verben mit Dativ | 3격과 함께 쓰는 동사
+bsp: Die Jacke passt *mir* gut. | 재킷이 나한테 잘 맞아.
+bsp: Die Tasche gehört *mir*. | 그 가방은 내 거야.
+bsp: Kann ich *dir* helfen? | 도와줄까?
+finde: Die Tasche gehört mir. 에서 mir는 몇 격인가요? | 3격 (Dativ)* | 4격 (Akkusativ) | 1격 (Nominativ)
+regel: passen(맞다), gehören(~의 것이다), helfen(돕다), gefallen(마음에 들다), stehen(어울리다)은 사람을 3격으로 써요. 한국어 '나를 도와줘'의 '를'을 보고 mich를 쓰면 틀려요. Hilf mir!
+| 1격 | 3격 | 예
+| ich | mir | Die Hose passt *mir*.
+| du | dir | Die Farbe steht *dir*.
+| er, es | ihm | Das Hemd gefällt *ihm*.
+| sie | ihr | Die Tasche gehört *ihr*.
+| wir | uns | Könnten Sie *uns* helfen?
+| ihr | euch | Gefällt *euch* das Geschäft?
+| sie, Sie | ihnen, Ihnen | Kann ich *Ihnen* helfen?
+merke: 누구 것인지 물을 때는 Wem?을 써요. Wem gehört die Tasche? – Mir.
+
+-- punkt Was für ein …? | 어떤 ~?
+bsp: *Was für eine* Jacke suchst du? | 어떤 재킷을 찾아?
+bsp: *Was für einen* Style magst du? | 어떤 스타일을 좋아해?
+bsp: *Was für* Schuhe trägst du gern? | 어떤 신발을 즐겨 신어?
+finde: Was für eine Jacke suchst du? 에 알맞은 답은 무엇인가요? | Eine leichte Jacke.* | Die Jacke dort. | Ja, gern.
+regel: Was für ein …?은 종류나 특징을 물어요. 답은 ein, eine와 형용사로 해요. ein은 뒤에 오는 명사의 성과 격에 맞춰요. 복수 명사 앞에서는 ein 없이 Was für …?라고 해요.
+| 물음 | 답
+| Was für *ein* Pullover ist das? | Ein warm*er* Pullover.
+| Was für *eine* Jacke suchst du? | Eine leicht*e* Jacke.
+| Was für *einen* Rock möchtest du? | Einen kurz*en* Rock.
+| Was für Schuhe trägst du? | Bequem*e* Schuhe.
+merke: 여럿 가운데 하나를 고를 때는 Welche Jacke nimmst du?라고 묻고 Die grüne.처럼 der, die, das로 답해요. Was für eine Jacke?에는 Eine grüne.처럼 ein으로 답해요.
+
+== training
+-- ex Hören | Emma가 Lukas에게 음성 메시지를 보냈어요. 듣고 답하세요.
+audio | Emmas Nachricht
+> Emma: Hallo Lukas! Ich war heute mit Yuna und Elif in der Stadt.
+> Emma: Yuna hat eine grüne Jacke gekauft. Sie steht ihr sehr gut.
+> Emma: Ich habe ein weißes T-Shirt und einen schwarzen Rock gekauft.
+> Emma: Elif hat nichts gekauft. Die Jacken haben ihr nicht gefallen.
+> Emma: Morgen trage ich den neuen Rock in der Schule.
+mc: Was hat Yuna gekauft? | eine grüne Jacke* | einen schwarzen Rock | ein weißes T-Shirt
+mc: Was hat Emma gekauft? | ein T-Shirt und einen Rock* | eine Jacke und Schuhe | nichts
+rf: Elif hat eine Jacke gekauft. | f => Elif hat nichts gekauft.
+mc: Emma는 내일 무엇을 입고 학교에 가나요? | 새 치마* | 새 재킷 | 새 신발
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Elif: Die Hose ist mir zu eng.
+mc: 바지가 어떤가요? | 너무 꽉 껴요* | 너무 헐렁해요 | 너무 길어요
+hör: Lukas: Der blaue Schal gehört Paul.
+mc: 파란 목도리는 누구 것인가요? | Paul* | Lukas | Yuna
+hör: Yuna: Ich möchte die Schuhe umtauschen. Sie sind zu klein.
+mc: Yuna는 왜 신발을 바꾸려고 하나요? | 너무 작아서* | 너무 커서 | 색이 마음에 안 들어서
+hör: Emma: Der Junge mit der roten Mütze ist Paul.
+mc: Paul은 무엇을 쓰고 있나요? | 빨간 모자* | 파란 모자 | 빨간 목도리
+
+-- ex Lesen | 온라인 가게에 올라온 운동화 후기예요. 읽고 답하세요.
+text notiz | Bewertungen: Sneaker „City“
+> Lena, 15 – fünf Sterne: Tolle Schuhe! Sie sind sehr bequem und sie passen mir gut. Ich trage sie jeden Tag.
+> Jonas, 14 – zwei Sterne: Die Schuhe sehen gut aus, aber sie sind mir zu eng. Ich musste sie zurückschicken. Bestellt eine Nummer größer!
+> Mia, 16 – vier Sterne: Die Farbe gefällt mir sehr. Die Schuhe sind schnell gekommen. Aber nach zwei Wochen war ein Schuh schon kaputt. Das Geschäft hat mir neue Schuhe geschickt.
+mc: Wer trägt die Schuhe jeden Tag? | Lena* | Jonas | Mia
+mc: Warum hat Jonas die Schuhe zurückgeschickt? | Weil sie zu eng waren.* | Weil sie zu teuer waren. | Weil sie kaputt waren.
+rf: Mia gefällt die Farbe nicht. | f => Die Farbe gefällt mir sehr.
+mc: Mia의 신발이 망가졌을 때 가게는 어떻게 했나요? | 새 신발을 보내 줬어요* | 돈을 돌려줬어요 | 아무것도 하지 않았어요
+rf: Jonas sagt, dass man die Schuhe eine Nummer größer bestellen soll. | r
+
+-- ex Lesen | 옷 가게 계산대에 붙은 안내문이에요. 읽고 답하세요.
+text notiz | Umtausch
+> Sie können Kleidung in 14 Tagen umtauschen.
+> Bitte bringen Sie den Kassenbon mit.
+> Kleidung im Angebot kann man nicht umtauschen.
+> Ist etwas kaputt? Dann bekommen Sie neue Kleidung oder Ihr Geld zurück.
+mc: Wie lange kann man Kleidung umtauschen? | 14 Tage* | 7 Tage | einen Monat
+rf: Man braucht den Kassenbon. | r
+rf: Kleidung im Angebot kann man umtauschen. | f => Kleidung im Angebot kann man nicht umtauschen.
+mc: 할인 상품으로 산 재킷의 지퍼가 고장 났어요. 어떻게 되나요? | 새 옷이나 돈을 받아요* | 아무것도 받지 못해요 | 영수증이 없어도 바꿔 줘요 => 물건이 고장 났을 때는 할인 상품이어도 새것이나 돈을 받아요.
+
+-- ex Grammatik | 3격이에요. 알맞은 형용사 끝을 고르세요.
+gap: Das Mädchen mit der [grünen|grüne|grüner] Jacke heißt Yuna.
+gap: Der Mann mit dem [kurzen|kurze|kurzer] Bart ist Thomas.
+gap: Ich trage die Jacke mit einem [weißen|weißes|weiße] T-Shirt.
+gap: Lukas kommt in einer [neuen|neue|neuer] Hose.
+gap: Mit den [schwarzen|schwarze|schwarzer] Schuhen siehst du gut aus.
+gap: Paul ist der Junge mit der [roten|rote|roter] Mütze.
+
+-- ex Grammatik | 1격, 4격, 3격이 섞여 있어요. 알맞은 형용사 끝을 고르세요.
+gap: Das ist eine [schöne|schönen|schöner] Jacke.
+gap: Ich kaufe den [blauen|blaue|blauer] Pullover. => 남성 4격 den 뒤에는 -en이에요.
+gap: Die [neue|neuen|neuer] Hose ist zu eng.
+gap: Sie kommt mit einem [großen|große|großer] Hund. => mit 뒤는 3격이라서 -en이에요.
+gap: Er trägt ein [weißes|weißen|weiße] Hemd.
+
+-- ex Grammatik | 3격 대명사예요. 알맞은 말을 고르세요.
+gap: Die Jacke passt [mir|mich|ich] gut. => passen은 3격과 함께 써요.
+gap: Kann ich [dir|dich|du] helfen?
+gap: Das ist Pauls Schal. Der Schal gehört [ihm|ihn|ihr].
+gap: Emma mag den Rock. Der Rock gefällt [ihr|sie|ihm].
+gap: Könnten Sie [uns|wir|unser] helfen?
+gap: Wem gehört die Tasche? – Sie gehört [mir|mich|mein].
+
+-- ex Grammatik | Was für ein …? 알맞은 말을 고르세요.
+gap: Was für [eine|ein|einen] Jacke suchst du? – Eine leichte Jacke.
+gap: Was für [einen|ein|eine] Pullover möchtest du? – Einen warmen Pullover. => möchten 뒤는 4격이라서 남성은 einen이에요.
+gap: Was für [ein|eine|einen] Hemd trägst du? – Ein weißes Hemd.
+gap: Was für [Schuhe|ein Schuhe|eine Schuhe] trägst du gern? – Bequeme Schuhe. => 복수 앞에는 ein을 쓰지 않아요.
+gap: Was für eine Hose suchst du? – [Eine weite|Die weite|Der weite] Hose.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: die Jacke / passt / mir / gut. | 재킷이 나한테 잘 맞아.
+ord: wem / gehört / die Tasche? | 그 가방은 누구 거야?
+ord: ich / möchte / die Schuhe / umtauschen. | 신발을 교환하고 싶어요.
+ord: kann / ich / das Geld / zurückbekommen? | 돈을 돌려받을 수 있을까요?
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: eng = 꽉 끼는 ; bequem = 편한 ; kaputt = 망가진 ; der Kassenbon = 영수증 ; umtauschen = 교환하다 ; das Angebot = 할인 상품 ; die Kasse = 계산대
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Elif: Was für eine Jacke suchst du? | 어떤 재킷을 찾아?
+dik: Yuna: Sie passt mir gut. | 나한테 잘 맞아.
+dik: Yuna: Kann ich die Jacke umtauschen? | 재킷을 교환할 수 있을까요?
+
+== sprechen
+-- redemittel
+스타일 말하기: Was für einen Style magst du? | 어떤 스타일을 좋아해? ; Ich trage gern bequeme Kleidung. | 나는 편한 옷을 즐겨 입어. ; Ich mag keine engen Hosen. | 나는 꽉 끼는 바지는 안 좋아해. ; Das steht dir! | 너한테 어울려!
+사람 가리키기: das Mädchen mit der grünen Jacke | 초록색 재킷을 입은 여자아이 ; der Junge mit dem blauen Hemd | 파란 셔츠를 입은 남자아이
+교환과 환불: Ich möchte die Jacke umtauschen. | 재킷을 교환하고 싶어요. ; Kann ich das Geld zurückbekommen? | 돈을 돌려받을 수 있을까요? ; Hier ist der Kassenbon. | 영수증 여기 있어요.
+문제 말하기: Der Reißverschluss ist kaputt. | 지퍼가 고장 났어요. ; Die Schuhe sind mir zu klein. | 신발이 저한테 너무 작아요. ; Die Hose hat ein Loch. | 바지에 구멍이 났어요.
+
+-- rolle B | Yuna, Frau
+
+-- ich Mein Style | 즐겨 입는 옷과 좋아하지 않는 옷, 오늘 입은 옷을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 즐겨 입는 옷 (형용사 + 복수 명사) | bequeme Hosen
+feld: b | 좋아하지 않는 옷 (keine + 형용사 -en + 복수 명사) | keine engen Jacken
+feld: c | 오늘 입은 옷 (4격) | einen blauen Pullover
+satz: Ich trage gern {a}.
+satz: Ich mag {b}.
+satz: Heute trage ich {c}.
+
+-- schreiben Eine Bewertung | 얼마 전에 산 옷이나 신발의 후기를 써 보세요. 여섯 문장쯤 써요.
+punkt: 무엇을 샀는지 ; 어떻게 생겼는지 ; 잘 맞는지 ; 좋은 점이나 문제 ; 별점
+start: Ich habe … gekauft.
+muster: Ich habe eine schwarze Hose gekauft. Sie ist weit und sehr bequem. Die Hose passt mir gut und die Farbe gefällt mir. Aber nach einer Woche war der Reißverschluss kaputt. Ich musste die Hose umtauschen. Die neue Hose ist gut. Ich gebe drei Sterne.
+check: ein, eine 뒤의 형용사 끝을 맞게 썼나요? ; passen, gefallen과 함께 mir를 썼나요? ; 지난 일을 Perfekt나 war, musste로 썼나요? ; 별점을 썼나요?
+
+-- kann
+Ich kann Kleidung und meinen Style beschreiben. | 옷과 내 스타일을 묘사할 수 있어요.
+Ich kann sagen, dass etwas kaputt ist oder nicht passt. | 물건이 고장 났거나 맞지 않는다고 말할 수 있어요.
+Ich kann etwas umtauschen oder zurückgeben. | 물건을 교환하거나 돌려줄 수 있어요.
+
+-- tipp 보이는 사람을 묘사해요
+p: 버스나 길에서 보이는 사람을 속으로 묘사해 보세요. der Mann mit dem schwarzen Mantel, die Frau mit der roten Tasche. mit dem, mit der 뒤의 형용사는 언제나 -en이라는 것을 금방 익힐 수 있어요.
+p: 옷장을 열고 옷마다 한 문장씩 말해 보는 것도 좋아요. Die Jacke passt mir. Der Pullover ist mir zu klein.

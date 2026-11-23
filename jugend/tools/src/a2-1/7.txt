@@ -1,0 +1,277 @@
+@id a2-1/7
+
+== einstieg
+bild: A train station hall. YUNA and ELIF stand at a ticket counter and talk to a woman in a blue uniform behind the counter. LUKAS runs toward them with a backpack. In the background a train stands at a platform.
+alt: 기차역이에요. Yuna와 Elif가 창구에서 파란 제복을 입은 직원과 이야기해요. 배낭을 멘 Lukas가 뛰어와요. 뒤로는 승강장에 선 기차가 보여요.
+lead: 토요일 아침이에요. Emma의 배구팀이 본(Bonn)에서 경기를 해요. Yuna와 Elif, Lukas는 응원하러 기차를 타고 가요. 역에서 표를 사고, 본에서는 체육관까지 가는 길을 물어요.
+mission: 이 과를 마치면 표를 사고, 필요한 정보를 묻고, 길을 자세히 알려 줄 수 있어요.
+wort: die Fahrkarte | 차표
+wort: das Gleis | 승강장
+wort: Gehen Sie über die Brücke. | 다리를 건너세요.
+wort: Könnten Sie uns helfen? | 좀 도와주실 수 있을까요?
+mc: Könnten Sie uns helfen? 이 말은 누구에게 하는 말일까요? | 처음 보는 어른* | 친한 친구 | 동생 => Sie는 어른이나 모르는 사람에게 쓰는 말이고, Könnten은 아주 공손한 부탁이에요.
+
+== hoeren
+-- dialog A | Am Bahnhof | 토요일 아침, 쾰른 중앙역이에요. Yuna와 Elif가 Lukas를 기다리고 있어요. | Frau=Mitarbeiterin
+vor: 들으면서 찾아보세요. 기차는 몇 번 선에서 출발하나요?
+Lukas: Entschuldigung! Ich bin zu spät. Ich habe den Bus verpasst. | 미안! 늦었어. 버스를 놓쳤어.
+Elif: Wir warten seit zwanzig Minuten! Komm, wir brauchen noch Fahrkarten. | 우리 20분째 기다리고 있어! 가자, 아직 표를 사야 해.
+Yuna: Guten Tag. Wir hätten gern drei Fahrkarten nach Bonn. | 안녕하세요. 본으로 가는 표 세 장 주세요.
+Frau: Einfach oder hin und zurück? | 편도인가요, 왕복인가요?
+Yuna: Hin und zurück, bitte. Wann fährt der nächste Zug? | 왕복으로 주세요. 다음 기차는 언제 가요?
+Frau: Um 9:53 Uhr, ab Gleis 9. Der Zug fährt direkt, ihr müsst nicht umsteigen. | 9시 53분, 9번 선에서 출발해요. 곧바로 가니까 갈아타지 않아도 돼요. | say=Um neun Uhr dreiundfünfzig, ab Gleis neun. Der Zug fährt direkt, ihr müsst nicht umsteigen.
+Elif: Wie lange dauert die Fahrt? | 가는 데 얼마나 걸려요?
+Frau: Ungefähr eine halbe Stunde. Aber der Zug hat heute zehn Minuten Verspätung. | 30분쯤 걸려요. 그런데 오늘은 기차가 10분 늦어요.
+Lukas: Könnten Sie das bitte wiederholen? Ab welchem Gleis? | 다시 한번 말씀해 주시겠어요? 몇 번 선에서요?
+Frau: Ab Gleis 9. Hier sind die Fahrkarten. Gute Fahrt! | 9번 선이에요. 표 여기 있어요. 잘 다녀와요! | say=Ab Gleis neun. Hier sind die Fahrkarten. Gute Fahrt!
+Yuna: Vielen Dank! | 감사합니다!
+
+-- dialog B | Der Weg zur Sporthalle | 본에 도착했어요. 체육관이 어디인지 몰라서 지나가는 사람에게 물어요. | Mann=Passant
+vor: 들으면서 찾아보세요. 체육관은 무엇의 맞은편에 있나요?
+Yuna: Entschuldigung, könnten Sie uns helfen? Wir suchen die Sporthalle am Park. | 실례합니다, 좀 도와주실 수 있을까요? 공원 옆 체육관을 찾고 있어요.
+Mann: Die Sporthalle? Die ist nicht weit. Geht hier über die Straße und dann durch den Park. | 체육관? 멀지 않아. 여기서 길을 건너고 공원을 지나서 가.
+Lukas: Durch den Park, okay. Und dann? | 공원을 지나서, 네. 그다음은요?
+Mann: Dann geht ihr an der Schule vorbei bis zur Ampel. | 그다음에 학교 옆을 지나 신호등까지 가.
+Elif: Bis zur Ampel. Und wo ist die Halle? | 신호등까지요. 그러면 체육관은 어디예요?
+Mann: An der Ampel geht ihr über die Brücke. Die Sporthalle ist gegenüber vom Schwimmbad. | 신호등에서 다리를 건너. 체육관은 수영장 맞은편에 있어.
+Yuna: Wie lange brauchen wir zu Fuß? | 걸어서 얼마나 걸려요?
+Mann: Ungefähr fünfzehn Minuten. | 15분쯤.
+Lukas: Oh nein! Das Spiel fängt in zehn Minuten an! | 아, 큰일이다! 경기가 10분 뒤에 시작해!
+Elif: Dann laufen wir. Vielen Dank! | 그럼 뛰자. 감사합니다!
+Mann: Gern. Viel Spaß beim Spiel! | 천만에. 경기 재미있게 봐!
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Lukas는 왜 늦었나요? | 버스를 놓쳐서* | 늦잠을 자서 | 표를 사느라
+mc: Was kaufen die drei? | Fahrkarten hin und zurück* | einfache Fahrkarten | Fahrkarten nach Köln
+mc: 기차는 몇 번 선에서 출발하나요? | 9번 선* | 3번 선 | 19번 선
+rf: Die drei müssen umsteigen. | f => Der Zug fährt direkt. 곧바로 가는 기차예요.
+rf: Der Zug hat zehn Minuten Verspätung. | r
+mc: Wohin gehen die drei zuerst? | über die Straße und durch den Park* | über die Brücke | an der Schule vorbei
+mc: Wo ist die Sporthalle? | gegenüber vom Schwimmbad* | neben der Schule | im Park
+
+-- kultur 표 검사는 기차 안에서
+p: 독일 역에는 개찰구가 없어요. 누구나 승강장까지 들어갈 수 있고, 표는 기차 안에서 검사해요. 검사원이 Die Fahrkarten, bitte!라고 하면 표를 보여 줘요.
+p: 표가 없으면 벌금을 내야 해요. 그래서 타기 전에 창구나 자동판매기, 앱에서 표를 사요. 날마다 통학하는 학생은 보통 정기권이 있어서 탈 때마다 표를 사지 않아요.
+p: 기차가 늦는 일도 자주 있어요. 역 안내판에 Verspätung이나 '10 Minuten später'가 보이면 그만큼 늦는다는 뜻이에요. 갈아타야 할 때는 시간을 넉넉히 잡아요.
+mc: 독일에서 기차표는 어디에서 검사하나요? | 기차 안에서* | 역 입구의 개찰구에서 | 내린 뒤 출구에서
+
+== wortschatz
+-- gruppe Am Bahnhof | 역에서
+die Fahrkarte, die Fahrkarten | 차표 | Ich brauche eine Fahrkarte nach Bonn. | 본으로 가는 표가 한 장 필요해요.
+das Gleis, die Gleise | 승강장, ~번 선 | Der Zug fährt ab Gleis neun. | 기차는 9번 선에서 출발해요.
+abfahren, ist abgefahren | 출발하다 | Der Zug fährt um zehn Uhr ab. | 기차는 10시에 출발해요.
+ankommen, ist angekommen | 도착하다 | Wir kommen um elf Uhr an. | 우리는 11시에 도착해요.
+umsteigen, ist umgestiegen | 갈아타다 | Wir müssen in Köln umsteigen. | 우리는 쾰른에서 갈아타야 해요.
+die Verspätung, die Verspätungen | 연착, 지연 | Der Zug hat zehn Minuten Verspätung. | 기차가 10분 늦어요.
+verpassen, hat verpasst | 놓치다 | Ich habe den Bus verpasst. | 나는 버스를 놓쳤어요.
+die Fahrt, die Fahrten | 가는 길, 운행 | Die Fahrt dauert eine halbe Stunde. | 가는 데 30분 걸려요.
+direkt | 곧바로, 갈아타지 않고 | Der Zug fährt direkt nach Bonn. | 기차는 본까지 곧바로 가요.
+einfach | 편도의, 쉬운 | Eine Fahrkarte nach Bonn, einfach, bitte. | 본으로 가는 편도 한 장 주세요.
+hin und zurück | 왕복 | Zwei Fahrkarten, hin und zurück. | 왕복으로 두 장이요.
+
+-- gruppe Der Weg | 길
+der Weg, die Wege | 길 | Wir suchen den Weg zur Sporthalle. | 우리는 체육관으로 가는 길을 찾고 있어요.
+die Ampel, die Ampeln | 신호등 | Geh bis zur Ampel. | 신호등까지 가.
+die Kreuzung, die Kreuzungen | 사거리, 교차로 | An der Kreuzung gehst du links. | 사거리에서 왼쪽으로 가.
+die Brücke, die Brücken | 다리 | Wir gehen über die Brücke. | 우리는 다리를 건너요.
+die Ecke, die Ecken | 모퉁이 | Der Supermarkt ist an der Ecke. | 슈퍼마켓은 모퉁이에 있어요.
+das Rathaus, die Rathäuser | 시청 | Das Rathaus ist alt. | 시청은 오래됐어요.
+die Kirche, die Kirchen | 교회, 성당 | Die Kirche ist neben dem Rathaus. | 교회는 시청 옆에 있어요.
+durch | ~을 지나서, ~을 통과해서 | Wir gehen durch den Park. | 우리는 공원을 지나가요.
+über | ~을 건너서, ~ 위로 | Geh über die Straße. | 길을 건너.
+an … vorbei | ~ 옆을 지나서 | Wir gehen am Kino vorbei. | 우리는 영화관 옆을 지나가요.
+gegenüber | 맞은편에 | Die Schule ist gegenüber vom Park. | 학교는 공원 맞은편에 있어요.
+bis zu | ~까지 | Geh bis zum Bahnhof. | 역까지 가.
+
+-- gruppe Zeit und Bitten | 시간과 부탁
+seit | ~부터 지금까지, ~째 | Ich warte seit zehn Minuten. | 나는 10분째 기다리고 있어요.
+vor | ~ 전에 | Vor einer Stunde war ich zu Hause. | 한 시간 전에 나는 집에 있었어요.
+nach | ~ 뒤에 | Nach dem Spiel gehen wir essen. | 경기가 끝난 뒤에 우리는 밥 먹으러 가요.
+ab | ~부터 | Ab Montag habe ich Ferien. | 월요일부터 방학이에요.
+ungefähr | 대략, ~쯤 | Das dauert ungefähr eine Stunde. | 한 시간쯤 걸려요.
+der Meter, die Meter | 미터 | Nach hundert Metern kommt eine Ampel. | 100미터 가면 신호등이 나와요.
+wiederholen, hat wiederholt | 되풀이하다, 다시 말하다 | Könnten Sie das wiederholen? | 다시 말씀해 주시겠어요?
+Könnten Sie …? | ~해 주실 수 있을까요? | Könnten Sie mir helfen? | 저를 도와주실 수 있을까요?
+
+-- bilder
+die Fahrkarte, die Fahrkarten: a hand that holds a small blank train ticket with a tiny train symbol
+das Gleis, die Gleise: an empty train platform with a bench next to railway tracks
+abfahren, ist abgefahren: a train that leaves a platform while a person on the platform waves
+umsteigen, ist umgestiegen: a teenager with a backpack who walks across a platform from one train to another train
+die Verspätung, die Verspätungen: a tired traveler who sits on a suitcase on an empty platform and looks at a wristwatch
+verpassen, hat verpasst: a teenager who runs after a bus that drives away
+der Weg, die Wege: a footpath that leads through grass to a wooden signpost with two blank arrows
+die Ampel, die Ampeln: a traffic light on a pole
+die Kreuzung, die Kreuzungen: two streets that cross, seen from above, with zebra crossings
+die Brücke, die Brücken: a stone bridge over a river
+das Rathaus, die Rathäuser: an old town hall building with a small tower and steps in front
+die Kirche, die Kirchen: a church with a pointed tower
+
+-- aussprache ü와 u, ö와 o | 두 점이 있으면 다른 소리
+p: ü는 입술을 u처럼 둥글게 내밀고 혀는 i를 말할 때처럼 앞에 둬요. über, Brücke, Züge.
+p: ö는 입술을 o처럼 둥글게 하고 e를 말해요. können, könnten, schön. 두 점이 있고 없고에 따라 뜻이 달라지니 또렷하게 구별해요.
+hör: Zug, Züge, Buch, Bücher | u와 ü
+hör: konnte, könnte, schon, schön | o와 ö
+hör: Könnten Sie uns helfen? Wir müssen über die Brücke. | 연습 문장
+
+== grammatik
+-- punkt durch, über, an … vorbei, bis zu, gegenüber | 길을 자세히 알려 줄 때
+bsp: Geht *durch den* Park. | 공원을 지나서 가.
+bsp: Geht *über die* Brücke. | 다리를 건너.
+bsp: Geht *an der* Schule *vorbei*. | 학교 옆을 지나가.
+bsp: Die Sporthalle ist *gegenüber vom* Schwimmbad. | 체육관은 수영장 맞은편에 있어.
+finde: durch와 über 뒤에는 몇 격이 오나요? | 4격 (Akkusativ)* | 3격 (Dativ) | 1격 (Nominativ)
+regel: 길을 알려 줄 때 쓰는 전치사예요. durch(~을 지나서)와 über(~을 건너서)는 4격과 함께 써요. an … vorbei(~ 옆을 지나서), bis zu(~까지), gegenüber von(~ 맞은편에)은 3격과 함께 써요.
+| 전치사 | 격 | 예
+| durch | 4격 | durch *den* Park, durch *die* Stadt
+| über | 4격 | über *die* Brücke, über *den* Platz
+| an … vorbei | 3격 | *am* Rathaus vorbei, *an der* Kirche vorbei
+| bis zu | 3격 | bis *zum* Bahnhof, bis *zur* Ampel
+| gegenüber von | 3격 | gegenüber *vom* Kino, gegenüber *von der* Schule
+merke: zu dem은 zum, zu der는 zur, von dem은 vom, an dem은 am으로 줄여요. vorbei는 문장 맨 끝에 와요. Wir gehen am Rathaus vorbei.
+
+-- punkt seit, vor, nach, ab | 시간을 말하는 전치사
+bsp: Wir warten *seit* zwanzig Minuten. | 우리는 20분째 기다리고 있어.
+bsp: Der Zug ist *vor* fünf Minuten abgefahren. | 기차는 5분 전에 떠났어.
+bsp: *Nach* dem Spiel fahren wir nach Hause. | 경기가 끝난 뒤에 우리는 집에 가.
+bsp: *Ab* Montag habe ich Training. | 월요일부터 나는 연습이 있어.
+finde: seit zwanzig Minuten은 어떤 뜻인가요? | 20분 전부터 지금까지* | 20분 뒤에 | 20분 전에 끝났다
+regel: seit는 전에 시작해서 지금도 이어지는 일에 써요. 그래서 동사는 현재형이에요. vor는 '~ 전에', nach는 '~ 뒤에', ab은 '~부터'예요. seit, vor, nach 뒤에는 3격이 와요.
+| 전치사 | 뜻 | 예
+| seit | ~부터 지금까지 | Ich lerne *seit* einem Jahr Deutsch.
+| vor | ~ 전에 | *Vor* einer Stunde war ich noch zu Hause.
+| nach | ~ 뒤에 | *Nach* der Schule gehe ich zum Training.
+| ab | ~부터 | *Ab* Montag habe ich Ferien.
+merke: '1년 전부터 배우고 있어요'를 과거로 옮기지 않아요. Ich lerne seit einem Jahr Deutsch. 지금도 배우고 있으니까 현재형이에요.
+
+-- punkt Könnten Sie …? | 공손하게 부탁할 때
+bsp: *Könnten Sie* uns *helfen*? | 좀 도와주실 수 있을까요?
+bsp: *Könnten Sie* das bitte *wiederholen*? | 다시 한번 말씀해 주시겠어요?
+bsp: *Könntest du* mir dein Heft *geben*? | 네 공책 좀 줄 수 있어?
+finde: Könnten Sie …?에서 다른 동사는 어디에 있나요? | 문장 맨 끝에 원형으로* | Könnten 바로 뒤에 | 문장 맨 앞에
+regel: 모르는 어른에게 부탁할 때는 Können Sie …?보다 Könnten Sie …?가 더 공손해요. 친구에게는 Könntest du …?라고 해요. können을 쓸 때처럼 다른 동사는 원형으로 맨 끝에 와요.
+| 명령 | 질문 | 더 공손한 질문
+| Helfen Sie mir! | Können Sie mir helfen? | *Könnten* Sie mir helfen?
+| Hilf mir! | Kannst du mir helfen? | *Könntest* du mir helfen?
+merke: konnte는 '할 수 있었다'이고 könnte는 공손한 부탁이에요. Ich konnte nicht kommen. Könnten Sie kommen?
+
+== training
+-- ex Hören | 표를 사고 나니 역에 안내 방송이 나와요. 듣고 답하세요.
+audio | Durchsage am Bahnhof | Frau=Durchsage
+> Frau: Achtung auf Gleis neun!
+> Frau: Der Zug nach Bonn, Abfahrt neun Uhr dreiundfünfzig, hat heute zehn Minuten Verspätung.
+> Frau: Der Zug fährt heute ab Gleis sieben.
+> Frau: Bitte gehen Sie zu Gleis sieben.
+mc: Wohin fährt der Zug? | nach Bonn* | nach Berlin | nach Köln
+mc: Wie viel Verspätung hat der Zug? | zehn Minuten* | sieben Minuten | neun Minuten
+rf: Der Zug fährt heute ab Gleis neun. | f => Der Zug fährt heute ab Gleis sieben. 승강장이 바뀌었어요.
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Lukas: Geh über die Brücke und dann links.
+mc: 무엇을 건너야 하나요? | 다리* | 광장 | 공원
+hör: Elif: Das Kino ist gegenüber vom Rathaus.
+mc: 영화관은 어디에 있나요? | 시청 맞은편* | 시청 옆 | 시청 안
+hör: Yuna: Ich lerne seit einem Jahr Deutsch.
+mc: Yuna는 지금 독일어를 배우고 있나요? | 네, 1년째 배우고 있어요* | 아니요, 1년 전에 그만뒀어요 | 아니요, 1년 뒤에 시작해요
+hör: Emma: Der Bus ist vor zwei Minuten abgefahren.
+mc: 버스는 어떻게 됐나요? | 2분 전에 떠났어요* | 2분 뒤에 와요 | 2분째 서 있어요
+
+-- ex Lesen | 쾰른에서 본으로 가는 기차 시간표예요. 보고 답하세요.
+text plan | Köln Hbf → Bonn Hbf
+> Abfahrt | Gleis | Information
+> 9:23 Uhr | 9 | direkt
+> 9:53 Uhr | 9 | direkt, 10 Minuten später
+> 10:10 Uhr | 4 | einmal umsteigen
+mc: Welcher Zug hat Verspätung? | der Zug um 9:53 Uhr* | der Zug um 9:23 Uhr | der Zug um 10:10 Uhr
+rf: Mit dem Zug um 10:10 Uhr muss man umsteigen. | r
+mc: Ab welchem Gleis fährt der Zug um 10:10 Uhr? | ab Gleis 4* | ab Gleis 9 | ab Gleis 10
+
+-- ex Lesen | Elif가 반 블로그에 쓴 글이에요. 읽고 답하세요.
+text notiz | Unser Samstag in Bonn
+> Am Samstag sind Yuna, Lukas und ich mit dem Zug nach Bonn gefahren. Emmas Mannschaft hatte dort ein Spiel.
+> Lukas hat den Bus verpasst, deshalb haben wir zwanzig Minuten am Bahnhof gewartet. Der Zug hatte auch Verspätung!
+> In Bonn haben wir einen Mann gefragt. Dann sind wir durch einen Park und über eine Brücke gelaufen. Wir waren pünktlich!
+> Das Spiel war spannend und Emma hat sehr gut gespielt.
+> Nach dem Spiel waren wir in der Stadt. Beethoven kommt aus Bonn, deshalb wollte Yuna das Beethoven-Haus sehen.
+> Um sechs Uhr sind wir zurück nach Köln gefahren. Seit Samstag übt Yuna jeden Tag Beethoven am Klavier.
+mc: Warum haben Yuna und Elif am Bahnhof gewartet? | Weil Lukas den Bus verpasst hat.* | Weil sie keine Fahrkarten hatten. | Weil es geregnet hat.
+rf: Die drei sind zu spät zum Spiel gekommen. | f => Wir waren pünktlich!
+mc: Warum wollte Yuna das Beethoven-Haus sehen? | Weil Beethoven aus Bonn kommt.* | Weil Emma dort gespielt hat. | Weil es neben der Sporthalle ist.
+mc: Yuna는 토요일부터 무엇을 하나요? | 날마다 피아노로 베토벤을 연습해요* | 날마다 배구를 해요 | 날마다 본에 가요
+
+-- ex Grammatik | 한국어 뜻을 보고 길을 알려 주는 알맞은 말을 고르세요.
+gap: Geh [durch|über|bis] den Park. | 공원을 지나서 가.
+gap: Wir gehen [über|durch|an] die Brücke. | 우리는 다리를 건너요.
+gap: Geh an der Kirche [vorbei|gegenüber|durch]. | 교회 옆을 지나가.
+gap: Fahr bis [zur|zum|vom] Ampel. | 신호등까지 가. => die Ampel이니까 zu der, 줄여서 zur예요.
+gap: Das Kino ist gegenüber [vom|von|zum] Rathaus. | 영화관은 시청 맞은편에 있어요.
+gap: Geh bis [zum|zur|vom] Bahnhof. | 역까지 가.
+
+-- ex Grammatik | 4격인지 3격인지 보고 알맞은 관사를 고르세요.
+gap: Wir gehen durch [den|dem] Park. => durch 뒤에는 4격이에요.
+gap: Geh über [die|der] Straße.
+gap: Geh über [den|dem] Platz.
+gap: Wir gehen an [der|die] Schule vorbei. => an … vorbei는 3격이에요.
+gap: Das Kino ist gegenüber von [der|die] Kirche.
+
+-- ex Grammatik | 한국어 뜻을 보고 seit, vor, nach, ab 가운데 알맞은 말을 고르세요.
+gap: Ich lerne [seit|vor|ab] einem Jahr Deutsch. | 나는 1년째 독일어를 배우고 있어요.
+gap: Der Zug ist [vor|seit|nach] fünf Minuten abgefahren. | 기차는 5분 전에 떠났어요.
+gap: [Nach|Vor|Seit] der Schule gehe ich zum Training. | 학교가 끝난 뒤에 나는 연습하러 가요.
+gap: [Ab|Seit|Vor] Montag habe ich Ferien. | 월요일부터 방학이에요.
+gap: Wir warten [seit|ab|nach] zwanzig Minuten. | 우리는 20분째 기다리고 있어요.
+gap: [Vor|Nach|Ab] dem Essen wasche ich die Hände. | 밥 먹기 전에 나는 손을 씻어요.
+
+-- ex Grammatik | 공손한 부탁이에요. 알맞은 말을 고르세요.
+gap: [Könnten|Konnten|Könntest] Sie mir bitte helfen? => Sie에게는 Könnten이에요. 두 점을 잊지 마세요.
+gap: [Könntest|Könnten|Konntest] du mir dein Heft geben?
+gap: Könnten Sie das bitte [wiederholen|wiederholt|wiederholst]? => 다른 동사는 원형으로 맨 끝에 와요.
+gap: [Könnten|Könntest|Konnte] Sie uns den Weg zeigen?
+gap: Könntest du bitte langsamer [sprechen|sprichst|gesprochen]?
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: wir / gehen / durch / den Park. | 우리는 공원을 지나가요.
+ord: geh / an / der Schule / vorbei. | 학교 옆을 지나가.
+ord: ich / warte / seit / zehn Minuten. | 나는 10분째 기다리고 있어.
+ord: könnten / Sie / das / bitte / wiederholen? | 다시 한번 말씀해 주시겠어요?
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: die Fahrkarte = 차표 ; das Gleis = 승강장 ; die Verspätung = 연착 ; umsteigen = 갈아타다 ; die Ampel = 신호등 ; die Kreuzung = 사거리 ; die Brücke = 다리
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Lukas: Ich habe den Bus verpasst. | 버스를 놓쳤어.
+dik: Elif: Wir warten seit zwanzig Minuten! | 우리 20분째 기다리고 있어!
+dik: Yuna: Könnten Sie uns helfen? | 좀 도와주실 수 있을까요?
+
+== sprechen
+-- redemittel
+표 사기: Ich hätte gern eine Fahrkarte nach … | ~로 가는 표 한 장 주세요. ; Einfach oder hin und zurück? | 편도인가요, 왕복인가요? ; Hin und zurück, bitte. | 왕복으로 주세요.
+정보 묻기: Wann fährt der nächste Zug nach …? | ~로 가는 다음 기차는 언제 가요? ; Ab welchem Gleis fährt der Zug? | 기차는 몇 번 선에서 출발해요? ; Muss ich umsteigen? | 갈아타야 하나요? ; Wie lange dauert die Fahrt? | 얼마나 걸려요?
+길 알려 주기: Gehen Sie durch den Park. | 공원을 지나가세요. ; Gehen Sie über die Brücke. | 다리를 건너세요. ; Gehen Sie am Rathaus vorbei. | 시청 옆을 지나가세요. ; Es ist gegenüber vom Kino. | 영화관 맞은편에 있어요.
+공손하게 부탁하기: Könnten Sie mir helfen? | 도와주실 수 있을까요? ; Könnten Sie das bitte wiederholen? | 다시 말씀해 주시겠어요? ; Könntest du langsamer sprechen? | 좀 더 천천히 말해 줄 수 있어?
+
+-- rolle A | Yuna, Frau
+
+-- ich Mein Weg zur Schule | 집에서 학교나 학원까지 가는 길을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 지나가는 곳 (durch + 4격) | durch den Park
+feld: b | 옆을 지나는 곳 (an + 3격) | am Supermarkt
+feld: c | 학교 맞은편에 있는 곳 (von + 3격) | vom Kino
+feld: d | 걸리는 시간 | zehn Minuten
+satz: Ich gehe {a} und {b} vorbei.
+satz: Meine Schule ist gegenüber {c}.
+satz: Der Weg dauert ungefähr {d}.
+
+-- schreiben Mein Weg | 친구가 우리 집에 처음 와요. 정류장에서 집까지 오는 길을 메시지로 써 보세요.
+punkt: 어디에서 내리는지 ; 어디를 건너고 지나는지 ; 집이 무엇의 맞은편인지 ; 얼마나 걸리는지
+start: Hallo …, so kommst du zu mir:
+muster: Hallo Mina, so kommst du zu mir: Fahr mit dem Bus bis zur Haltestelle Marktplatz. Geh dann über die Straße und durch den kleinen Park. Danach gehst du an der Kirche vorbei bis zur Ampel. Mein Haus ist gegenüber vom Supermarkt. Der Weg dauert ungefähr zehn Minuten. Bis gleich!
+check: durch, über 뒤에 4격을 썼나요? ; an … vorbei에서 vorbei를 끝에 썼나요? ; zum, zur, vom을 알맞게 줄여 썼나요? ; 명령문에서 동사를 맨 앞에 썼나요?
+
+-- kann
+Ich kann eine Fahrkarte kaufen und nach Informationen fragen. | 표를 사고 필요한 정보를 물을 수 있어요.
+Ich kann einen Weg genau beschreiben. | 길을 자세히 알려 줄 수 있어요.
+Ich kann höflich um Hilfe bitten. | 공손하게 도움을 청할 수 있어요.
+
+-- tipp 지도를 보며 혼자 말해요
+p: 지도 앱을 켜고 집에서 학교까지 가는 길을 독일어로 말해 보세요. Ich gehe durch den Park, über die Brücke, am Supermarkt vorbei. 걸으면서 말하면 더 좋아요.
+p: 전치사는 예와 함께 한 덩어리로 외워요. durch den Park, über die Brücke, bis zur Ampel처럼 외우면 격을 따로 떠올리지 않아도 돼요.

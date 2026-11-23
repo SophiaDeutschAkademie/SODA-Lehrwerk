@@ -1,0 +1,147 @@
+@id a2-2/stufentest
+@typ test
+
+== hoeren
+-- info A2.2를 돌아보는 평가예요
+p: 듣기, 읽기, 쓰기, 말하기 네 부분으로 되어 있어요. 시간 제한은 없어요. 문제를 풀면 바로 맞았는지 알려 주고, 마지막 Ergebnis에서 부분마다 몇 문제를 맞혔는지 보여 줘요.
+p: 음성은 여러 번 들을 수 있어요. 먼저 한 번만 듣고 풀어 보면 내 듣기 실력을 더 정확히 알 수 있어요.
+
+-- ex Hören 1 | 짧은 말을 듣고 알맞은 것을 고르세요.
+hör: Frau: Morgen wird es im Norden windig. Im Süden scheint die Sonne.
+mc: 내일 남쪽 날씨는 어떤가요? | 해가 나요* | 바람이 불어요 | 비가 와요 => Im Süden scheint die Sonne.
+hör: Lukas: Ich möchte Sportlehrer werden, weil ich gern mit Kindern arbeite.
+mc: Lukas는 왜 체육 선생님이 되고 싶어 하나요? | 아이들과 일하는 걸 좋아해서* | 축구를 잘해서 | 방학이 길어서 => weil ich gern mit Kindern arbeite
+hör: Mann: In den Zimmern gibt es kein WLAN. WLAN gibt es nur an der Rezeption.
+mc: 와이파이는 어디에서 쓸 수 있나요? | 프런트에서만* | 방에서만 | 어디에서나 => WLAN gibt es nur an der Rezeption.
+hör: Emma: Ich würde gern nach Japan reisen, aber ich habe nicht genug Geld.
+mc: Emma는 왜 일본에 가지 못하나요? | 돈이 모자라서* | 시간이 없어서 | 부모님이 반대해서 => ich habe nicht genug Geld
+hör: Thomas: Als ich fünfzehn war, wollte ich Musiker werden.
+mc: Thomas는 열다섯 살 때 무엇이 되고 싶었나요? | 음악가* | 요리사 | 의사 => wollte ich Musiker werden
+
+-- ex Hören 2 | Elif가 Yuna에게 전화했어요. 듣고 답하세요.
+audio | Am Telefon
+> Elif: Hallo Yuna! Hast du am Samstag Zeit? Ich würde gern ins Kino gehen.
+> Yuna: Gute Idee! Weißt du, welcher Film kommt?
+> Elif: „Die Reise nach Wien“. Das ist ein Film, den mein Bruder sehr lustig fand.
+> Yuna: Worum geht es?
+> Elif: Es geht um zwei Freunde, die ohne Geld nach Wien fahren.
+> Yuna: Das klingt gut. Ich frage Emma, ob sie auch mitkommt.
+> Elif: Super. Der Film fängt um sechs an. Wir treffen uns um halb sechs am Kino.
+mc: Was möchte Elif am Samstag machen? | ins Kino gehen* | nach Wien fahren | ein Konzert besuchen => Ich würde gern ins Kino gehen.
+mc: Wer fand den Film lustig? | Elifs Bruder* | Emma | Frau Schneider => ein Film, den mein Bruder sehr lustig fand
+mc: Worum geht es in dem Film? | um zwei Freunde, die nach Wien fahren* | um ein Mädchen am See | um eine Band => Es geht um zwei Freunde, die ohne Geld nach Wien fahren.
+rf: Yuna will Emma fragen, ob sie mitkommt. | r => Ich frage Emma, ob sie auch mitkommt.
+mc: 두 사람은 몇 시에 만나나요? | 5시 반* | 6시 | 6시 반 => Wir treffen uns um halb sechs am Kino.
+
+-- ex Hören 3 | Thomas가 열다섯 살 때 이야기를 해요. 듣고 답하세요.
+audio | Thomas erzählt
+> Thomas: Als ich fünfzehn war, wohnte ich in einer kleinen Stadt.
+> Thomas: Es gab kein Kino. Immer wenn wir einen Film sehen wollten, mussten wir mit dem Bus fahren.
+> Thomas: Ich hatte wenig Taschengeld. Deshalb habe ich am Samstag in einem Restaurant geholfen.
+> Thomas: Dort hat mir das Kochen viel Spaß gemacht.
+> Thomas: Nach der Schule habe ich eine Ausbildung gemacht. Heute bin ich Koch und habe ein Restaurant.
+mc: Wo wohnte Thomas mit fünfzehn? | in einer kleinen Stadt* | in Köln | in Berlin => wohnte ich in einer kleinen Stadt
+mc: Warum half Thomas in einem Restaurant? | Weil er wenig Taschengeld hatte.* | Weil seine Eltern ein Restaurant hatten. | Weil er nicht in die Schule ging. => Ich hatte wenig Taschengeld.
+rf: In der Stadt gab es ein großes Kino. | f => Es gab kein Kino.
+mc: Thomas는 학교를 마치고 무엇을 했나요? | 직업 교육을 받았어요* | 대학에 갔어요 | 여행을 떠났어요 => Nach der Schule habe ich eine Ausbildung gemacht.
+
+== lesen
+-- ex Lesen 1 | 학교 여름 잔치를 알리는 글이에요. 읽고 답하세요.
+text notiz | Sommerfest an unserer Schule
+> Am Freitag, 10. Juli, feiern wir unser Sommerfest. Es beginnt um 15 Uhr.
+> Die 8b verkauft Pfannkuchen und die 9a grillt. Das Geld wird für neue Bücher gesammelt.
+> Um 17 Uhr spielt die Schulband. Die Songs, die sie spielt, haben die Schüler selbst geschrieben.
+> Bitte bringt Teller und Gläser mit, weil wir keinen Müll machen möchten.
+> Wenn es regnet, feiern wir in der Sporthalle.
+mc: Wann beginnt das Sommerfest? | um 15 Uhr* | um 17 Uhr | um 10 Uhr => Es beginnt um 15 Uhr.
+mc: Wofür wird das Geld gesammelt? | für neue Bücher* | für die Klassenfahrt | für die Schulband => Das Geld wird für neue Bücher gesammelt.
+rf: Die Schüler haben die Songs selbst geschrieben. | r => Die Songs, die sie spielt, haben die Schüler selbst geschrieben.
+mc: 왜 접시와 잔을 가져오라고 하나요? | 쓰레기를 만들지 않으려고* | 학교에 접시가 없어서 | 음식을 집에 가져가라고 => weil wir keinen Müll machen möchten
+mc: Was passiert, wenn es regnet? | Das Fest ist in der Sporthalle.* | Es gibt kein Fest. | Das Fest ist am Samstag. => Wenn es regnet, feiern wir in der Sporthalle.
+
+-- ex Lesen 2 | 학교 신문의 고민 상담 글이에요. 읽고 답하세요.
+text notiz | Frag Dr. Rat!
+> Lieber Dr. Rat, ich habe mein ganzes Taschengeld für ein Spiel ausgegeben. Jetzt hat mein bester Freund Geburtstag und ich kann ihm nichts kaufen. Ich würde ihm so gern etwas schenken! Ich ärgere mich über mich. Was soll ich machen? Ben, 13
+> Lieber Ben, ärgere dich nicht zu lange. Ein Geschenk muss nicht teuer sein. An deiner Stelle würde ich etwas selbst machen. Du könntest ihm einen Kuchen backen oder ein Video für ihn machen. Ein Geschenk, das man selbst macht, ist oft das schönste. Und nächsten Monat solltest du ein bisschen Geld sparen. Dein Dr. Rat
+mc: Was ist Bens Problem? | Er hat kein Geld für ein Geschenk.* | Er hat sich mit seinem Freund gestritten. | Er hat den Geburtstag vergessen. => ich kann ihm nichts kaufen
+mc: Wofür hat Ben sein Taschengeld ausgegeben? | für ein Spiel* | für Kleidung | für einen Kuchen => für ein Spiel
+rf: Dr. Rat sagt, dass ein Geschenk teuer sein muss. | f => Ein Geschenk muss nicht teuer sein.
+mc: Dr. Rat는 무엇을 해 보라고 하나요? | 선물을 직접 만들어 보라고 해요* | 부모님께 돈을 빌리라고 해요 | 선물을 주지 말라고 해요 => An deiner Stelle würde ich etwas selbst machen.
+
+-- ex Lesen 3 | 책을 소개하는 글이에요. 읽고 답하세요.
+text notiz | Buchtipp: „Der Hund, der sprechen konnte“
+> In dem Buch geht es um Mia, ein Mädchen, das in einem kleinen Haus am See wohnt.
+> Im Wald findet sie einen Hund, der sprechen kann. Der Hund heißt Max.
+> Max hilft Mia in der Schule und sie werden Freunde. Aber dann kommt ein Mann, der den Hund kaufen will.
+> Am Ende bleibt Max bei Mia, weil der Mann die Sprache von dem Hund nicht versteht.
+> Das Buch ist witzig und spannend. Wir empfehlen es für alle, die Tiere mögen.
+mc: Worum geht es in dem Buch? | um ein Mädchen und einen Hund, der sprechen kann* | um einen Mann, der Hunde verkauft | um ein Haus im Wald => Im Wald findet sie einen Hund, der sprechen kann.
+mc: Was will der Mann? | den Hund kaufen* | mit Mia sprechen | am See wohnen => ein Mann, der den Hund kaufen will
+rf: Am Ende geht Max mit dem Mann weg. | f => Am Ende bleibt Max bei Mia.
+mc: 이 책은 어떤 사람에게 권하나요? | 동물을 좋아하는 사람* | 요리를 좋아하는 사람 | 여행을 좋아하는 사람 => für alle, die Tiere mögen
+
+== schreiben
+-- ex Schreiben 1 | 낱말을 순서대로 놓아 문장을 만드세요.
+ord: ich / möchte / Ärztin / werden. | 나는 의사가 되고 싶어.
+ord: weißt du, / wann / der Zug / abfährt? | 기차가 언제 출발하는지 알아?
+ord: der Müll / wird / getrennt. | 쓰레기는 분리해.
+ord: Wien / ist / eine Stadt, / die / an der Donau / liegt. | 빈은 도나우강 가에 있는 도시야.
+ord: ich / würde / gern / nach Japan / reisen. | 나는 일본에 여행 가고 싶어.
+ord: als / ich / klein / war, / wohnte / ich / in Seoul. | 어렸을 때 나는 서울에 살았어.
+
+-- ex Schreiben 2 | 괄호 안의 낱말을 알맞은 형태로 바꾸거나 알맞은 낱말을 골라 빈칸에 쓰세요.
+gap: Can [=wird] Mechaniker. (werden) | Can은 정비사가 돼요. => er wird
+gap: Ich weiß nicht, [=ob] er kommt. (ob, dass) | 그가 올지 모르겠어요. => 아직 모르는 것은 ob으로 이어요.
+gap: Die Flaschen [=werden] recycelt. (werden) | 병은 재활용돼요. => 주어가 여럿이면 werden이에요.
+gap: Das ist der Film, [=den] ich mag. (der) | 내가 좋아하는 영화예요. => 관계문의 목적어라서 den이에요.
+gap: Ich [=hätte] gern einen Hund. (haben) | 나는 개를 키우고 싶어요. => 바라는 말은 hätte예요.
+gap: Ich ärgere mich [=über] den Regen. (auf, über) | 나는 비 때문에 짜증이 나요. => sich ärgern은 über와 짝을 이뤄요.
+gap: Die Heinzelmännchen [=kamen] in der Nacht. (kommen) | Heinzelmännchen은 밤에 왔어요. => kommen의 Präteritum은 kam, 복수는 kamen이에요.
+
+-- ex Schreiben 3 | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Was willst du werden? | 너는 뭐가 되고 싶어?
+dik: N: Wir könnten ins Museum gehen. | 우리 박물관에 갈 수도 있어.
+dik: N: Du solltest mehr schlafen. | 잠을 더 자는 게 좋아.
+dik: N: Ich vermisse meine Familie. | 나는 가족이 보고 싶어요.
+
+-- schreiben Mein Text | 독일 친구가 다음 달에 우리 도시에 와요. 친구에게 이틀 동안의 계획을 알리는 메일을 써요. 아래 내용을 넣어서 여덟 문장 넘게 써 보세요. 이 글은 자동으로 채점하지 않아요. 다 쓴 뒤에 예시 글과 비교하고 아래 항목을 스스로 확인해요.
+punkt: 인사와 반가운 마음 ; 첫날 할 일 (Wir könnten …) ; 둘째 날 할 일 ; 볼 곳 하나를 관계문으로 설명하기 ; 날씨와 가져올 것 (Du solltest …) ; 묻고 싶은 것 (wann, ob) ; 끝인사
+start: Liebe … / Lieber …,
+muster: Lieber Paul, ich freue mich sehr, dass du nach Seoul kommst! Am ersten Tag könnten wir in die Stadt gehen. Dort gibt es einen Palast, der mehr als 600 Jahre alt ist. Am zweiten Tag könnten wir auf einen Berg gehen und am Abend koreanisch essen. Im August wird es sehr heiß, deshalb solltest du eine Mütze mitbringen. Weißt du schon, wann dein Flugzeug ankommt? Ich warte am Flughafen auf dich. Bis bald! Dein Minho
+check: 여덟 문장 넘게 썼어요 ; Wir könnten … 뒤의 동사를 맨 끝에 썼어요 ; 관계문 앞에 쉼표를 찍고 동사를 맨 끝에 썼어요 ; wann, ob 문장에서 동사를 맨 끝에 썼어요 ; 명사와 문장 첫 글자를 대문자로 썼어요
+
+== sprechen
+-- info 소리 내어 말해요
+p: 말하기는 자동으로 채점하지 않아요. 질문을 듣고 바로 소리 내어 답한 다음, 예시 답과 비교해 보세요.
+p: 녹음 단추를 누르면 내 목소리를 다시 들을 수 있어요. 녹음은 저장되지 않아요.
+
+-- sprich Fragen und Antworten | 질문을 듣고 소리 내어 답하세요. 한두 문장으로 답하면 돼요. | Frau=Mitarbeiterin
+f: Emma: Was möchtest du werden? | 뭐가 되고 싶어? => Ich möchte Lehrerin werden. / Ich weiß es noch nicht.
+f: Lukas: Was hast du in den Ferien vor? | 방학에 뭐 할 계획이야? => Ich habe vor, ans Meer zu fahren.
+f: Frau: Guten Tag, hier ist die Jugendherberge. Was möchten Sie wissen? | 안녕하세요, 유스호스텔입니다. 무엇이 궁금하세요? => Können Sie mir sagen, wann es Frühstück gibt?
+f: Thomas: Was machst du für die Umwelt? | 환경을 위해 뭘 하니? => Ich trenne den Müll und fahre mit dem Rad zur Schule.
+f: Elif: Was würdest du gern machen? | 뭘 해 보고 싶어? => Ich würde gern nach Deutschland reisen.
+f: Yuna: Ich habe mich mit meiner Freundin gestritten. Was würdest du machen? | 친구랑 다퉜어. 너라면 어떻게 하겠어? => An deiner Stelle würde ich mit ihr sprechen.
+f: Sabine: Welchen Film kannst du mir empfehlen? | 어떤 영화를 나한테 추천해 줄래? => Ich empfehle dir einen Film, den ich letzte Woche gesehen habe. Es geht um zwei Freunde.
+f: Schneider: Was konntest du vor einem Jahr noch nicht? | 한 해 전에는 무엇을 아직 못했나요? => Vor einem Jahr konnte ich kein Deutsch sprechen.
+
+-- sprich Meine Stadt | 아래 낱말을 보면서 30초쯤 내가 사는 도시나 우리나라를 소개하세요. 먼저 혼자 말해 보고, 그다음에 예시를 확인해요.
+thema: Wo? ; Einwohner ; bekannt für … ; ein Ort, der … ; Mein Tipp
+muster: Ich wohne in Seoul. Das ist die Hauptstadt von Korea. Seoul ist eine Stadt, die fast zehn Millionen Einwohner hat. Sie ist für das Essen und die Musik bekannt. Durch die Stadt fließt ein Fluss, der Han heißt. Du solltest im Mai kommen, weil dann das Wetter schön ist.
+
+== ergebnis
+-- bilanz
+hoch: A2.2에서 배운 내용을 잘 익혔어요. 이것으로 A2 과정을 마쳤어요.
+mittel: 대부분 익혔어요. 틀린 문제의 설명을 다시 읽고, 점수가 낮은 부분은 Station 1과 Station 2의 복습 문제로 한 번 더 연습해 보세요.
+tief: 아직 헷갈리는 내용이 많아요. Station 1과 Station 2의 복습 문제를 다시 풀고, 어려웠던 과의 Grammatik과 Training을 본 다음 평가를 한 번 더 해 보세요.
+
+-- info 쓰기와 말하기는 스스로 확인해요
+p: 글쓰기 과제와 말하기는 점수에 들어가지 않아요. 아래 세 가지를 얼마나 할 수 있는지 스스로 표시해 보세요.
+
+-- kann
+Ich kann einen Besuch oder eine Reise planen und beschreiben. | 방문이나 여행 계획을 세우고 글로 쓸 수 있어요.
+Ich kann Fragen zu Zukunft, Umwelt und Freizeit beantworten. | 장래, 환경, 여가에 대한 질문에 답할 수 있어요.
+Ich kann meine Stadt vorstellen. | 내가 사는 도시를 소개할 수 있어요.
+
+-- info 다음 단계는 B1.1 Mitreden
+p: B1.1에서는 Yuna와 친구들이 9학년이 되어 팟캐스트를 시작해요. 주제를 조사하고, 의견을 말하고, 토론해요. B1.1 본문은 준비 중이고, 올라오면 목차에서 열 수 있어요.

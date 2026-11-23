@@ -1,0 +1,257 @@
+@id a2-1/2
+
+== einstieg
+bild: A living room in the evening. YUNA sits on a sofa and holds a large printed class photo that shows a group of students in two rows. SABINE sits next to her and points at the photo. EMMA leans over the back of the sofa and smiles.
+alt: Yuna가 소파에 앉아 반 사진을 들고 있고, Sabine가 옆에서 사진 속 한 사람을 가리켜요. Emma는 소파 뒤에서 내려다보며 웃어요.
+lead: 4월 말이에요. 새 반 사진이 나왔어요. Yuna가 Sabine에게 친구들이 누구인지, 어떤 사람인지 이야기해요.
+mission: 이 과를 마치면 친구의 생김새와 성격을 묘사하고, 다른 사람이 한 말을 전할 수 있어요.
+wort: Er hat kurze Haare. | 그는 머리가 짧아.
+wort: die Brille | 안경
+wort: ein lustiger Junge | 재미있는 남자아이
+wort: Ich finde, dass sie nett ist. | 나는 그 애가 착하다고 생각해.
+mc: ein lustiger Junge. lustig 뒤에 무엇이 붙었나요? | -er* | -e | 아무것도 붙지 않았어요 => 형용사가 명사 앞에 오면 끝이 붙어요. der Junge라서 -er예요.
+
+== hoeren
+-- dialog A | Das Klassenfoto | 저녁, Wagner 가족의 거실이에요. Yuna가 새로 찍은 반 사진을 보여 줘요.
+vor: 들으면서 찾아보세요. Paul은 어떻게 생겼나요?
+Yuna: Schau mal, Sabine! Hier ist ein neues Foto von der Klasse. | Sabine, 이것 좀 보세요! 새로 찍은 반 사진이에요.
+Sabine: Oh, schön! Wer ist der Junge neben Lukas? | 어머, 잘 나왔네! Lukas 옆에 있는 남자아이는 누구니?
+Yuna: Das ist Paul. Er hat kurze blonde Haare und trägt eine Brille. | Paul이에요. 짧은 금발 머리에 안경을 썼어요.
+Emma: Paul ist ein lustiger Junge. Lukas sagt, dass er sehr gut Gitarre spielt. | Paul은 재미있는 애야. Lukas 말로는 기타를 아주 잘 친대.
+Sabine: Und das Mädchen hier? Sie hat schöne lange Haare. | 여기 이 여자아이는? 긴 머리가 예쁘구나.
+Yuna: Das ist Elif. Sie ist eine gute Freundin. Ich finde, dass sie sehr hilfsbereit ist. | Elif예요. 좋은 친구예요. 남을 정말 잘 도와준다고 생각해요.
+Sabine: Und wo bist du, Yuna? | 그럼 Yuna, 너는 어디 있니?
+Yuna: Hier, neben Frau Schneider. Ich sehe ein bisschen müde aus. | 여기요, Schneider 선생님 옆이요. 저는 조금 피곤해 보여요.
+Emma: Nein, du siehst toll aus! Aber Lukas hat die Augen zu. | 아니야, 너 멋지게 나왔어! 그런데 Lukas는 눈을 감았어.
+Sabine: Stimmt! Das ist ein lustiges Foto. | 그러네! 재미있는 사진이구나.
+
+-- dialog B | Wer ist das? | 독일어 시간이에요. 한 사람을 묘사하면 나머지가 누구인지 맞혀요.
+vor: 들으면서 찾아보세요. Lukas가 묘사한 사람은 누구인가요?
+Schneider: Heute spielen wir „Wer ist das?“. Beschreibt eine Person aus der Klasse! Lukas, fang bitte an. | 오늘은 '누구일까요?' 놀이를 해요. 우리 반의 한 사람을 묘사해 보세요! Lukas부터 시작하렴.
+Lukas: Okay. Die Person ist ein großes Mädchen. Sie hat lange braune Haare und braune Augen. | 네. 그 사람은 키 큰 여자아이예요. 긴 갈색 머리에 눈도 갈색이에요.
+Emma: Ist sie ruhig oder lustig? | 조용한 편이야, 재미있는 편이야?
+Lukas: Sie ist ein bisschen ruhig, aber sehr freundlich. Und sie hat zwei Brüder. | 조금 조용하지만 아주 친절해. 그리고 남자 형제가 둘 있어.
+Yuna: Ich glaube, dass es Elif ist! | 내 생각에는 Elif 같아!
+Lukas: Richtig! | 맞아!
+Elif: Danke, Lukas! Jetzt bin ich dran. Die Person ist ein netter Junge. Er hat kurze Haare und trägt heute einen blauen Pullover. | 고마워, Lukas! 이제 내 차례야. 그 사람은 착한 남자아이야. 머리가 짧고 오늘 파란 스웨터를 입었어.
+Emma: Ist er fleißig? | 성실해?
+Elif: Hm, nicht immer. Frau Schneider sagt, dass er oft zu spät kommt. | 음, 항상 그렇지는 않아. Schneider 선생님 말씀으로는 자주 지각한대.
+Lukas: Oh nein. Das bin ich! | 아, 이런. 그거 나잖아!
+Schneider: Richtig. Aber heute warst du pünktlich, Lukas. | 맞아요. 하지만 오늘은 제시간에 왔구나, Lukas.
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Paul은 어떻게 생겼나요? | 짧은 금발 머리에 안경을 썼어요* | 긴 갈색 머리예요 | 수염이 있어요
+rf: Lukas sagt, dass Paul gut Gitarre spielt. | r
+mc: Wie findet Yuna Elif? | hilfsbereit* | sportlich | lustig => Ich finde, dass sie sehr hilfsbereit ist.
+mc: 사진에서 Lukas는 어떤가요? | 눈을 감고 있어요* | 안경을 쓰고 있어요 | 피곤해 보여요
+mc: Lukas가 묘사한 사람은 누구인가요? | Elif* | Emma | Yuna
+rf: Elif ist ein kleines Mädchen. | f => Die Person ist ein großes Mädchen. 키가 커요.
+mc: Frau Schneider는 Lukas에 대해 뭐라고 했나요? | 자주 지각한다고 했어요* | 아주 성실하다고 했어요 | 운동을 잘한다고 했어요
+
+-- kultur mein Freund는 누구일까요?
+p: 독일어에서 Freund와 Freundin은 뜻이 두 가지예요. 그냥 친구일 수도 있고, 사귀는 사람일 수도 있어요.
+p: mein Freund, meine Freundin이라고 하면 보통 남자 친구, 여자 친구로 알아들어요. 그냥 친구라고 분명히 말하고 싶을 때는 ein Freund von mir, eine Freundin von mir라고 해요. '내 친구 가운데 한 명'이라는 뜻이에요.
+p: 친한 친구는 ein guter Freund, eine gute Freundin이라고 해요. 얼굴만 아는 사이는 Freund라고 하지 않고 ein Bekannter, eine Bekannte라고 불러요.
+mc: 사귀는 사이가 아닌 그냥 친구를 소개할 때 알맞은 말은 무엇일까요? | Das ist eine Freundin von mir.* | Das ist meine Freundin. | Das ist meine Schwester.
+
+== wortschatz
+-- gruppe Aussehen | 생김새
+aussehen (du siehst aus, er sieht aus) | ~하게 보이다, 생기다 | Du siehst toll aus. | 너 멋져 보여.
+das Haar, die Haare | 머리카락 | Sie hat schöne Haare. | 그녀는 머리가 예뻐요.
+das Auge, die Augen | 눈 | Er hat braune Augen. | 그는 눈이 갈색이에요.
+die Brille, die Brillen | 안경 | Paul trägt eine Brille. | Paul은 안경을 써요.
+der Bart, die Bärte | 수염 | Thomas hat einen kurzen Bart. | Thomas는 수염이 짧아요.
+lang | 긴 | Elif hat lange Haare. | Elif는 머리가 길어요.
+kurz | 짧은 | Paul hat kurze Haare. | Paul은 머리가 짧아요.
+blond | 금발의 | Er hat blonde Haare. | 그는 금발이에요.
+braun | 갈색의 | Mein Hund ist braun. | 우리 개는 갈색이에요.
+lockig | 곱슬곱슬한 | Lea hat lockige Haare. | Lea는 곱슬머리예요.
+
+-- gruppe Charakter | 성격
+freundlich | 친절한 | Elif ist sehr freundlich. | Elif는 아주 친절해요.
+ruhig | 조용한, 차분한 | Sie ist ein bisschen ruhig. | 그녀는 조금 조용해요.
+fleißig | 부지런한, 성실한 | Emma ist eine fleißige Schülerin. | Emma는 성실한 학생이에요.
+sportlich | 운동을 잘하는 | Lukas ist sehr sportlich. | Lukas는 운동을 아주 잘해요.
+schüchtern | 수줍음이 많은 | Am Anfang war Yuna schüchtern. | 처음에 Yuna는 수줍음이 많았어요.
+hilfsbereit | 남을 잘 돕는 | Meine Freundin ist hilfsbereit. | 내 친구는 남을 잘 도와요.
+ehrlich | 정직한, 솔직한 | Ein guter Freund ist ehrlich. | 좋은 친구는 솔직해요.
+pünktlich | 시간을 잘 지키는 | Heute war Lukas pünktlich. | 오늘 Lukas는 제시간에 왔어요.
+
+-- gruppe Sagen und meinen | 말하고 생각하기
+sagen, hat gesagt | 말하다 | Was hat er gesagt? | 그가 뭐라고 했어?
+glauben, hat geglaubt | 믿다, ~라고 생각하다 | Ich glaube, dass es Elif ist. | 내 생각에는 Elif 같아.
+dass | ~라는 것, ~라고 | Ich finde, dass sie nett ist. | 나는 그녀가 착하다고 생각해요.
+beschreiben, hat beschrieben | 묘사하다 | Beschreibt eine Person! | 한 사람을 묘사해 보세요!
+kennen, hat gekannt | (사람이나 장소를) 알다 | Kennst du Paul? | Paul을 알아?
+die Person, die Personen | 사람 | Wer ist die Person? | 그 사람은 누구예요?
+immer | 항상 | Er kommt immer zu spät. | 그는 항상 지각해요.
+ein bisschen | 조금 | Ich bin ein bisschen müde. | 나는 조금 피곤해요.
+Stimmt! | 맞아! | Stimmt! Das ist Elif. | 맞아! Elif야.
+
+-- bilder
+das Haar, die Haare: a head seen from behind with long wavy hair
+das Auge, die Augen: a single open eye with an eyebrow
+die Brille, die Brillen: a single pair of round glasses
+der Bart, die Bärte: the face of a smiling man with a short dark beard, black hair and natural light skin
+blond: a teenager with short blond hair
+lockig: a teenager with curly hair
+freundlich: a teenager who smiles and waves with one hand
+ruhig: a teenager who sits cross-legged with closed eyes and a calm face
+fleißig: a student who writes at a desk next to a pile of books
+sportlich: a teenager in sports clothes who runs
+schüchtern: a teenager who hides half of the face behind a book
+hilfsbereit: a teenager who helps an old woman and carries her shopping bag
+
+-- aussprache -ig와 -lich | 낱말 끝의 ig는 [이히]
+p: 낱말 끝의 -ig는 ich의 ch처럼 부드럽게 [이히]로 소리 나요. lustig는 [루스티히], ruhig는 [루이히]예요. 뒤에 끝이 붙으면 다시 g 소리가 나요. ein lustiger Junge.
+p: -lich의 ch도 같은 부드러운 소리예요. freundlich, ehrlich, pünktlich.
+hör: lustig, ruhig, fleißig, lockig | -ig
+hör: freundlich, ehrlich, pünktlich, sportlich | -lich
+hör: Elif ist ruhig und freundlich. | 연습 문장
+
+== grammatik
+-- punkt Adjektive nach ein, eine: Nominativ | ein, eine 뒤의 형용사 (1격)
+bsp: Paul ist *ein lustiger Junge*. | Paul은 재미있는 남자아이야.
+bsp: Die Person ist *ein großes Mädchen*. | 그 사람은 키 큰 여자아이야.
+bsp: Elif ist *eine gute Freundin*. | Elif는 좋은 친구야.
+finde: der Junge 앞에서 lustig에는 어떤 끝이 붙었나요? | -er* | -es | -e
+regel: 형용사가 명사 앞에 오면 끝이 붙어요. ein만 보아서는 der 명사인지 das 명사인지 알 수 없어서, 형용사의 끝이 그것을 알려 줘요. der 명사 앞에서는 -er, das 명사 앞에서는 -es, die 명사 앞에서는 -e예요.
+| 명사 | ein, eine + 형용사
+| der Junge | ein nett*er* Junge
+| das Mädchen | ein nett*es* Mädchen
+| die Freundin | eine nett*e* Freundin
+| die Freunde (Pl.) | nett*e* Freunde
+merke: sein 뒤에 형용사만 올 때는 끝이 없어요. Der Junge ist nett. 명사 앞에 올 때만 끝을 붙여요. mein, dein, kein 뒤에서도 똑같아요. mein neuer Freund, kein gutes Foto.
+
+-- punkt Adjektive nach ein, eine: Akkusativ | ein, eine 뒤의 형용사 (4격)
+bsp: Er trägt heute *einen blauen Pullover*. | 그는 오늘 파란 스웨터를 입었어.
+bsp: Paul trägt *eine schwarze Brille*. | Paul은 검은 안경을 써.
+bsp: Sie hat *lange braune Haare*. | 그녀는 긴 갈색 머리야.
+finde: 4격에서 모양이 달라지는 것은 어느 것인가요? | der 명사 (einen blauen Pullover)* | das 명사 | die 명사
+regel: 4격에서는 der 명사만 달라져요. einen 뒤의 형용사에는 -en이 붙어요. das 명사와 die 명사, 복수는 1격과 같아요.
+| 명사 | 1격 | 4격
+| der Pullover | ein blau*er* Pullover | einen blau*en* Pullover
+| das Kleid | ein blau*es* Kleid | ein blau*es* Kleid
+| die Jacke | eine blau*e* Jacke | eine blau*e* Jacke
+| die Schuhe (Pl.) | blau*e* Schuhe | blau*e* Schuhe
+merke: haben, tragen, suchen, kaufen 뒤에는 4격이 와요. Ich habe einen kleinen Bruder. 형용사가 둘이면 둘 다 같은 끝을 붙여요. lange braune Haare.
+
+-- punkt dass-Sätze | 들은 말과 생각을 전하는 dass
+bsp: Lukas sagt, *dass* er sehr gut Gitarre *spielt*. | Lukas 말로는 그가 기타를 아주 잘 친대.
+bsp: Ich finde, *dass* sie sehr hilfsbereit *ist*. | 나는 그녀가 남을 정말 잘 돕는다고 생각해.
+bsp: Frau Schneider sagt, *dass* er oft zu spät *kommt*. | Schneider 선생님 말씀으로는 그가 자주 지각한대.
+finde: dass 문장에서 동사는 어디에 있나요? | 문장 맨 끝* | 둘째 자리 | dass 바로 뒤
+regel: 다른 사람의 말이나 내 생각을 전할 때 dass를 써요. weil 문장처럼 동사가 맨 끝으로 가고, dass 앞에 쉼표를 찍어요. sagen, finden, glauben, wissen 뒤에 자주 와요.
+| 원래 문장 | dass 문장
+| Paul ist lustig. | Emma sagt, dass Paul lustig *ist*.
+| Sie ist nett. | Ich finde, dass sie nett *ist*.
+| Er kommt später. | Er schreibt, dass er später *kommt*.
+| Ich habe keine Zeit. | Sie sagt, dass sie keine Zeit *hat*.
+merke: 말을 전할 때는 사람이 바뀌어요. Emma: „Ich habe keine Zeit.“ → Emma sagt, dass *sie* keine Zeit hat.
+
+== training
+-- ex Hören | Elif가 오빠 Can을 소개해요. 듣고 답하세요.
+audio | Mein Bruder Can
+> Elif: Ich habe zwei Brüder. Heute erzähle ich von Can. Er ist neunzehn Jahre alt.
+> Elif: Can ist mein großer Bruder. Er hat kurze schwarze Haare und einen kurzen Bart.
+> Elif: Er ist sehr sportlich. Er spielt jeden Samstag Basketball.
+> Elif: Meine Mutter sagt, dass Can nicht fleißig ist. Aber ich finde, dass er ein toller Bruder ist.
+> Elif: Er ist lustig und er hilft mir oft bei den Hausaufgaben.
+mc: Wie alt ist Can? | 19* | 17 | 9
+mc: Wie sieht Can aus? | Er hat kurze schwarze Haare und einen Bart.* | Er hat lange Haare und trägt eine Brille. | Er hat blonde Haare.
+rf: Can spielt jeden Samstag Fußball. | f => Er spielt Basketball.
+mc: Elif의 어머니는 Can에 대해 뭐라고 하나요? | 성실하지 않다고 해요* | 운동을 못한다고 해요 | 조용하다고 해요
+rf: Elif findet, dass Can ein toller Bruder ist. | r
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: N: Die Person hat lange Haare und trägt eine Brille.
+mc: 어떤 사람인가요? | 머리가 길고 안경을 썼어요* | 머리가 짧고 안경을 썼어요 | 머리가 길고 수염이 있어요
+hör: N: Er ist ein ruhiger Junge. Er liest gern.
+mc: 어떤 사람인가요? | 조용하고 책 읽기를 좋아해요* | 운동을 잘하고 재미있어요 | 수줍음이 많고 그림을 좋아해요
+hör: Emma: Lukas sagt, dass er heute später kommt.
+mc: Lukas는 뭐라고 했나요? | 오늘 늦게 온다고 했어요* | 오늘 못 온다고 했어요 | 지금 온다고 했어요
+hör: Yuna: Ich glaube, dass Paul krank ist.
+mc: Yuna는 어떻게 생각하나요? | Paul이 아프다고 생각해요* | Paul이 늦는다고 생각해요 | Paul이 집에 갔다고 생각해요
+
+-- ex Lesen | Emma가 블로그에 쓴 글이에요. 읽고 답하세요.
+text notiz | Meine Leute
+> Heute schreibe ich über meine Leute. Das sind meine Freunde und meine Familie.
+> Yuna wohnt jetzt bei uns. Sie kommt aus Korea und hat schwarze Haare. Am Anfang war sie schüchtern, aber jetzt ist sie ein lustiges Mädchen.
+> Lukas kenne ich schon lange. Er ist ein sportlicher Junge, aber er ist nicht immer pünktlich.
+> Elif ist eine ruhige Person. Sie hat lange braune Haare und ist sehr hilfsbereit. Ich finde, dass sie eine gute Freundin ist.
+> Und mein Vater? Er hat einen kurzen Bart und kocht jeden Tag. Meine Freunde sagen, dass er ein toller Koch ist.
+mc: Wie war Yuna am Anfang? | schüchtern* | lustig | sportlich
+rf: Lukas ist immer pünktlich. | f => Er ist nicht immer pünktlich.
+mc: Wie sieht Elif aus? | Sie hat lange braune Haare.* | Sie hat kurze blonde Haare. | Sie trägt eine Brille.
+mc: Emma의 친구들은 Emma의 아버지에 대해 뭐라고 하나요? | 요리를 아주 잘한다고 해요* | 수염이 길다고 해요 | 조용한 사람이라고 해요
+rf: Emma findet, dass Elif eine gute Freundin ist. | r
+
+-- ex Grammatik | 1격이에요. 알맞은 형용사 끝을 고르세요.
+gap: Paul ist ein [lustiger|lustiges|lustige] Junge. => der Junge라서 -er예요.
+gap: Elif ist eine [gute|guter|gutes] Freundin. => die Freundin이라서 -e예요.
+gap: Das ist ein [neues|neuer|neue] Foto. => das Foto라서 -es예요.
+gap: Yuna ist ein [nettes|netter|nette] Mädchen.
+gap: Thomas ist ein [toller|tolles|tolle] Koch.
+gap: Das sind [nette|netter|nettes] Freunde. => 관사 없는 복수는 -e예요.
+
+-- ex Grammatik | 4격이에요. 알맞은 형용사 끝을 고르세요.
+gap: Lukas trägt einen [blauen|blauer|blaues] Pullover. => der Pullover의 4격은 einen …-en이에요.
+gap: Sie hat [lange|langen|langes] Haare.
+gap: Paul trägt eine [schwarze|schwarzen|schwarzer] Brille.
+gap: Ich habe einen [kleinen|kleiner|kleine] Bruder.
+gap: Emma kauft ein [blaues|blauen|blauer] Kleid.
+gap: Thomas hat einen [kurzen|kurzer|kurzes] Bart.
+
+-- ex Grammatik | 들은 말을 dass로 전해요. 알맞은 말을 고르세요.
+gap: Yuna: „Ich bin müde.“ → Yuna sagt, dass [sie|ich|er] müde ist. => 전할 때는 ich가 sie로 바뀌어요.
+gap: Lukas: „Ich komme später.“ → Lukas sagt, dass er später [kommt|komme|kommen].
+gap: Elif: „Ich habe keine Zeit.“ → Elif sagt, dass sie keine Zeit [hat|habe|haben].
+gap: Paul: „Ich bin krank.“ → Paul schreibt, [dass|denn|aber] er krank ist. => 동사 ist가 맨 끝에 있어요.
+gap: Emma: „Der Film ist toll.“ → Emma findet, dass der Film toll [ist|sein|bist].
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: Lukas / sagt, / dass / Paul / lustig / ist. | Lukas 말로는 Paul이 재미있대.
+ord: ich / finde, / dass / sie / nett / ist. | 나는 그녀가 착하다고 생각해.
+ord: Emma / sagt, / dass / sie / keine Zeit / hat. | Emma는 시간이 없다고 해.
+ord: ich / glaube, / dass / er / krank / ist. | 내 생각에는 그가 아픈 것 같아.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: freundlich = 친절한 ; ruhig = 조용한 ; fleißig = 부지런한 ; schüchtern = 수줍음이 많은 ; ehrlich = 정직한 ; pünktlich = 시간을 잘 지키는 ; hilfsbereit = 남을 잘 돕는
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Emma: Paul ist ein lustiger Junge. | Paul은 재미있는 애야.
+dik: Lukas: Sie hat lange braune Haare. | 그녀는 긴 갈색 머리야.
+dik: Yuna: Ich glaube, dass es Elif ist! | 내 생각에는 Elif 같아!
+
+== sprechen
+-- redemittel
+생김새 말하기: Er hat kurze blonde Haare. | 그는 짧은 금발 머리야. ; Sie hat braune Augen. | 그녀는 눈이 갈색이야. ; Er trägt eine Brille. | 그는 안경을 써. ; Du siehst toll aus. | 너 멋져 보여.
+성격 말하기: Er ist ein lustiger Junge. | 그는 재미있는 애야. ; Sie ist eine ruhige Person. | 그녀는 조용한 사람이야. ; Sie ist sehr hilfsbereit. | 그녀는 남을 정말 잘 도와.
+들은 말과 생각 전하기: Lukas sagt, dass … | Lukas 말로는 ~래. ; Ich finde, dass … | 나는 ~라고 생각해. ; Ich glaube, dass … | 내 생각에는 ~인 것 같아.
+맞히기 놀이: Wer ist das? | 누구일까? ; Jetzt bin ich dran. | 이제 내 차례야. ; Richtig! / Stimmt! | 맞아!
+
+-- rolle B | Lukas, Elif
+
+-- ich Ein Freund, eine Freundin | 친구 한 명을 골라 생김새와 성격을 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: n | 이름 | Mina
+feld: a | 머리 (형용사 + Haare) | lange schwarze Haare
+feld: b | 성격 | lustig
+feld: c | 내 생각 | sehr hilfsbereit
+satz: {n} hat {a}.
+satz: {n} ist {b}.
+satz: Ich finde, dass {n} {c} ist.
+
+-- schreiben Meine Leute | 친구나 가족 한 사람을 소개하는 글을 써 보세요. 여섯 문장쯤 써요.
+punkt: 누구인지 ; 생김새 (머리, 눈, 안경) ; 성격 두 가지 ; 다른 사람이 하는 말 (… sagt, dass) ; 내 생각 (Ich finde, dass)
+start: Das ist …
+muster: Das ist meine Freundin Mina. Sie wohnt in Seoul. Mina hat lange schwarze Haare und braune Augen. Sie trägt eine Brille. Sie ist ein lustiges Mädchen und sehr sportlich. Meine Mutter sagt, dass Mina immer freundlich ist. Ich finde, dass sie eine gute Freundin ist.
+check: ein, eine 뒤의 형용사에 끝을 붙였나요? (ein lustiges Mädchen) ; Haare, Augen 앞의 형용사를 -e로 끝냈나요? ; dass 문장에서 동사를 맨 끝에 썼나요? ; dass 앞에 쉼표를 찍었나요?
+
+-- kann
+Ich kann Personen beschreiben. | 사람의 생김새와 성격을 묘사할 수 있어요.
+Ich kann Freunde vorstellen. | 친구를 소개할 수 있어요.
+Ich kann erzählen, was andere sagen. | 다른 사람이 한 말을 전할 수 있어요.
+
+-- tipp 형용사 끝은 der, das, die의 끝과 같아요
+p: ein 뒤의 형용사 끝이 헷갈리면 관사를 떠올려 보세요. der의 r, das의 s, die의 e가 형용사로 옮겨 간 거예요. der Junge → ein netter Junge. das Mädchen → ein nettes Mädchen. die Freundin → eine nette Freundin.
+p: 낱말을 외울 때 형용사를 하나 붙여서 외우면 성도 함께 기억돼요. ein roter Pullover, ein neues Handy, eine lange Hose.

@@ -62,7 +62,7 @@ ord: wie / heißt / du? ~ 다른 / 순서 | 뜻
 paar: 왼쪽 = 오른쪽 ; 왼쪽 = 오른쪽
 dik: Emma: 받아쓸 문장 | 뜻
 text chat | 제목                 읽기 글. chat, profil, plan(표), notiz. 다음 줄부터 "> …"
-audio | 제목                     듣기 글. 다음 줄부터 "> Emma: …"
+audio | 제목 | Mann=Trainer      듣기 글. 다음 줄부터 "> Emma: …". 셋째 칸은 화면에 보일 이름 바꾸기(없어도 됨)
 
 == sprechen
 -- redemittel
