@@ -855,6 +855,28 @@ html[data-theme="dark"] #hub .art-a.no,html[data-theme="dark"] #hub .art-in.no{b
 html[data-theme="dark"] #hub .art-in.no input{color:#C99A84;text-decoration-color:#E9A587}
 html[data-theme="dark"] #hub .art-in input::placeholder{color:#6E7684}
 </style>
+<style id="voka-word-size">
+/* ===== 제시 단어 글씨 크기 (학습 카드·테스트·복습·힌트 창) ===== */
+.wcard-de{font-size:24px;line-height:1.3;letter-spacing:-.01em;max-width:calc(100% - 36px);text-wrap:balance}
+.tentry-word{font-size:21px;line-height:1.35;letter-spacing:-.01em;text-wrap:balance}
+.hint-head-t{font-size:20px;line-height:1.3;letter-spacing:-.01em;text-wrap:balance}
+@media(max-width:860px){.wcard-de{font-size:22px}.tentry-word{font-size:20px}}
+/* 주관식 입력 칸이 좁은 화면에서 줄어들 수 있게 (확인 버튼이 카드 밖으로 밀려나지 않게) */
+.tentry-input{min-width:0}
+/* 아주 긴 단어는 칸에 맞게 그 단어만 줄인다(14px 아래로는 줄이지 않음).
+   --dw: 줄바꿈 없이 붙여 쓴 가장 긴 덩어리의 폭(em) — 스크립트 dwPrep이 넣음
+   36px·110px·--dwr(기본 70px): 같은 줄에 놓이는 번호·발음 버튼·배지·다시·닫기 버튼 자리 */
+@supports (width:1cqi){
+  .wcard,.tentry,.hint-pop{container-type:inline-size}
+  .wcard-de{font-size:max(14px,min(24px,calc((100cqi - 36px) / var(--dw,.01))))}
+  .tentry-word{font-size:max(14px,min(21px,calc((100cqi - var(--dwr,70px)) / var(--dw,.01))))}
+  .hint-head-t{font-size:max(14px,min(20px,calc((100cqi - 110px) / var(--dw,.01))))}
+  @media(max-width:860px){
+    .wcard-de{font-size:max(14px,min(22px,calc((100cqi - 36px) / var(--dw,.01))))}
+    .tentry-word{font-size:max(14px,min(20px,calc((100cqi - var(--dwr,70px)) / var(--dw,.01))))}
+  }
+}
+</style>
 </head>
 <body>
 <div id="hub"></div><button id="hub-fab" type="button">← 목표·기록 허브</button>
@@ -1386,6 +1408,61 @@ function masteryStat(m) {
   return { key: 'needs', label: '학습 필요', color: '#C0392B', bg: '#FBEDEA' };
 }
 
+// ===== 제시 단어: 줄바꿈 자리와 글씨 맞춤 (<style id="voka-word-size">와 함께 씀) =====
+// 글자는 바꾸지 않고 줄이 바뀌어도 되는 자리만 고른다.
+//  · 관사+명사+복수형(die Sehenswürdigkeit, -en), 전치사+격(für + A), 형태 사이의 /(der Sänger, - / die …)는
+//    줄바꿈 없는 띄어쓰기로 붙인다. 붙인 덩어리가 DW_MAX(em)를 넘으면 그 단계는 붙이지 않는다(글씨가 너무 작아지지 않게).
+//  · 복수 표시의 '-' 뒤(-nen, 'Sänger, - /')에서 끊기지 않게 단어 결합 문자(U+2060)를 넣는다.
+//  · 붙인 덩어리 중 가장 넓은 것의 폭(em)을 --dw로 넘기면, 칸보다 넓을 때만 CSS가 그만큼 글씨를 줄인다.
+const DW_ART = /^(der|die|das)(\/(der|die|das))*$/;
+const DW_SUF = /^([-⸚]|\/$|\([^()\s]{1,5}\)$)/;
+const DW_MAX = 15;
+const DW_NB = '\u00A0';
+const DW_OK = !!(window.CSS && CSS.supports && CSS.supports('width', '1cqi')); // 글씨 맞춤(cqi)이 안 되는 옛 브라우저는 묶지 않고 그대로 보여 줌
+function dwEm(s) { // Pretendard SemiBold 글자 폭(em, 자간 -0.01em) 근삿값 — 실측보다 조금 넉넉하게 잡음
+  let w = 0;
+  for (const c of s) {
+    w += c === '\u2060' ? 0 :
+    ' \u00A0\''.includes(c) ? .23 :
+    'ijlI.,!:;'.includes(c) ? .27 :
+    '|/ftr()[]⸚°'.includes(c) ? .37 :
+    c === '-' ? .44 : c === '+' ? .64 :
+    'mwMW…→%'.includes(c) ? .9 : c === '↔' ? 1.3 :
+    /[A-ZÄÖÜ]/.test(c) ? .68 : .58;
+  }
+  return w;
+}
+function dwPrep(t, max = DW_MAX) {
+  t = String(t == null ? '' : t);
+  if (!DW_OK || !/[A-Za-zÄÖÜäöüß]/.test(t) || /[ㄱ-ㆎ가-힣]/.test(t)) return { text: t, style: undefined };
+  const forms = t.split(/ \/ (?=\S)/).map((f) => {
+    const tok = f.split(' ').filter(Boolean).map((x) => x === '-' ? '-\u2060' : x.replace(/(^|\/)([-⸚])(?=\S)/g, '$1$2\u2060'));
+    const out = [];
+    for (let i = 0; i < tok.length;) {
+      if (DW_ART.test(tok[i]) && i + 1 < tok.length) {
+        const core = tok[i] + DW_NB + tok[i + 1];
+        const u = dwEm(core) <= max ? [core] : [tok[i], tok[i + 1]];
+        for (i += 2; i < tok.length && DW_SUF.test(tok[i]); i++) {
+          const both = u[u.length - 1] + DW_NB + tok[i];
+          if (/^(-\u2060|\/)$/.test(tok[i]) || dwEm(both) <= max) u[u.length - 1] = both;else u.push(tok[i]); // '-'·'/'는 늘 붙임
+        }
+        out.push(...u);
+      } else if (tok[i + 1] === '+' && i + 2 < tok.length) {
+        out.push(tok[i] + DW_NB + '+' + DW_NB + tok[i + 2]);i += 3;
+      } else out.push(tok[i++]);
+    }
+    return out;
+  });
+  forms.forEach((u, k) => {if (k < forms.length - 1 && u.length) u[u.length - 1] += DW_NB + '/';});
+  const units = [].concat(...forms);
+  const em = Math.max(0, ...units.map(dwEm));
+  return { text: units.join(' '), style: em > 5 ? { '--dw': em.toFixed(2) } : undefined };
+}
+// room: 같은 줄에서 단어 말고 다른 것(번호·발음 버튼·배지·다시 버튼)이 차지하는 폭(px). 없으면 CSS 기본값(70px)
+// 자리가 좁은 줄은 묶음 길이를 줄여, 360px 폰(카드 안쪽 폭 DW_ROW)에서도 글씨가 DW_MIN_FS 아래로 작아지지 않게 한다.
+const DW_ROW = 298, DW_MIN_FS = 15;
+function dwEl(cls, t, room) {const d = dwPrep(t, room ? Math.min(DW_MAX, (DW_ROW - room) / DW_MIN_FS) : DW_MAX);const st = d.style && room ? Object.assign({ '--dwr': room + 'px' }, d.style) : d.style;return React.createElement("span", { className: cls, style: st }, d.text);}
+
 var HINT_EMOJI = window.__HINT_EMOJI || {};
 var HINT_IMG = window.__HINT_IMG || {};
 function hintData(word) {
@@ -1420,6 +1497,7 @@ function hintData(word) {
 }
 function HintPopup({ word, level, onMore, onReveal, onClose }) {
   const h = hintData(word);
+  const dw = dwPrep(word.de);
   const max = h.hasEx ? 2 : 1;
   const lv = Math.min(level, max);
   React.useEffect(() => {
@@ -1433,7 +1511,7 @@ function HintPopup({ word, level, onMore, onReveal, onClose }) {
     React.createElement("div", { className: "hint-ov", onClick: (e) => { if (e.target === e.currentTarget) onClose(); } },
     React.createElement("div", { className: "hint-pop", role: "dialog", "aria-modal": "true", "aria-label": "뜻 힌트" },
     React.createElement("div", { className: "hint-head" },
-    React.createElement("span", { className: "hint-head-t" }, word.de),
+    React.createElement("span", { className: "hint-head-t", style: dw.style }, dw.text),
     React.createElement("span", { className: "hint-head-s" }, "힌트"),
     React.createElement("button", { className: "hint-x", onClick: onClose, "aria-label": "닫기" }, "×")),
     React.createElement("div", { className: "hint-body" },
@@ -1467,13 +1545,14 @@ function WordCard({ globalIndex, word, isRevealed, onToggle, mastery, onRate, sh
   const dunno = mastery && mastery.rated && !mastery.learned && !mastery.streak;
   const showKO = showAllKO || isRevealed;
   const blurDE = hideAllDE;
+  const dw = dwPrep(word.de);
   return (
     React.createElement("div", { className: `wcard ${playing ? 'wcard-playing' : ''}`, style: { borderLeft: `4px solid ${st.color}` } },
     React.createElement("div", { className: "wcard-top" },
     React.createElement("span", { className: "wcard-num" }, globalIndex),
     React.createElement("div", { className: `wcard-de ${ttsOk ? 'tts-click' : ''}`, title: ttsOk ? '클릭하면 발음을 들을 수 있습니다' : undefined,
       onClick: ttsOk ? () => window.VokaTTS.speak(window.VokaTTS.prepWord(word.de)) : undefined,
-      style: blurDE ? { filter: 'blur(5px)', userSelect: 'none', transition: 'filter 0.2s' } : undefined }, word.de),
+      style: Object.assign({}, dw.style, blurDE ? { filter: 'blur(5px)', userSelect: 'none', transition: 'filter 0.2s' } : null) }, dw.text),
     React.createElement(TtsBtn, { text: word.de, word: true, title: "단어 발음 듣기" }),
     !showKO && React.createElement("button", {
       className: 'hint-btn' + (hintLv > 0 ? ' on' : ''),
@@ -1649,7 +1728,7 @@ function StudyView({ dayIndex, dayWords, globalStart, revealed, onToggleReveal, 
 
 }
 
-Object.assign(window, { StudyView, WordCard, TtsBtn, SPK_ICON, STOP_ICON });
+Object.assign(window, { StudyView, WordCard, TtsBtn, SPK_ICON, STOP_ICON, dwPrep, dwEl });
 })();</script>
 <script type="text/plain" id="eng-1">(function(){
 const { useState, useRef, useMemo } = React;
@@ -1944,7 +2023,7 @@ function PrepEntry({ gIdx, prompt, de, value, result, onAnswer, onResult, onRetr
   const ready = (v.b || '').trim() && v.p && v.p.length > 0 && v.c;
   return (
     React.createElement("div", { className: `tentry ${result === true ? 'correct' : result === false ? 'incorrect' : ''}` },
-    React.createElement("div", { className: "tentry-head" }, React.createElement("span", { className: "tentry-num" }, gIdx, "."), React.createElement("span", { className: "tentry-word" }, prompt), sayAfter && result !== undefined && React.createElement(TtsBtn, { text: sayAfter, word: true, small: true, title: "정답 발음 듣기" })),
+    React.createElement("div", { className: "tentry-head" }, React.createElement("span", { className: "tentry-num" }, gIdx, "."), dwEl("tentry-word", prompt), sayAfter && result !== undefined && React.createElement(TtsBtn, { text: sayAfter, word: true, small: true, title: "정답 발음 듣기" })),
     React.createElement("div", { style: { display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '4px' } },
     React.createElement("input", { type: "text", className: "tentry-input", value: v.b || '', onChange: (e) => {const nb = e.target.value;if (!disabled) onAnswer((prev) => ({ ...(prev || blank), b: nb }));}, placeholder: "동사·명사 본체 (전치사 제외)", disabled: disabled }),
     React.createElement("div", null,
@@ -1992,7 +2071,7 @@ function MCEntry({ gIdx, prompt, options, ci, selected, result, pickKnown, onSel
     React.createElement("div", { className: `tentry ${done ? ok ? 'correct' : 'incorrect' : ''}` },
     React.createElement("div", { className: "tentry-head" },
     React.createElement("span", { className: "tentry-num" }, gIdx, "."),
-    React.createElement("span", { className: "tentry-word" }, prompt),
+    dwEl("tentry-word", prompt, onRetry && done && !ok ? 124 : 0),
     say && React.createElement(TtsBtn, { text: say, word: true, small: true, title: "발음 듣기" }),
     !say && sayAfter && done && React.createElement(TtsBtn, { text: sayAfter, word: true, small: true, title: "정답 발음 듣기" }),
     onRetry && done && !ok && React.createElement("button", { className: "btn-retry-sm", onClick: onRetry }, "다시")
@@ -2020,7 +2099,7 @@ function FreeEntry({ gIdx, prompt, answer, result, correctAnswer, onAnswer, onCh
     React.createElement("div", { className: `tentry ${result === true ? 'correct' : result === false ? 'incorrect' : ''}` },
     React.createElement("div", { className: "tentry-head" },
     React.createElement("span", { className: "tentry-num" }, gIdx, "."),
-    React.createElement("span", { className: "tentry-word" }, prompt),
+    dwEl("tentry-word", prompt),
     say && React.createElement(TtsBtn, { text: say, word: true, small: true, title: "발음 듣기" }),
     !say && sayAfter && result !== undefined && React.createElement(TtsBtn, { text: sayAfter, word: true, small: true, title: "정답 발음 듣기" })
     ),
@@ -2844,7 +2923,7 @@ function ReviewView({ pool, mastery, onRate, wrongMap }) {
       return (
         React.createElement("div", { key: g, className: "tentry" },
         React.createElement("div", { className: "tentry-head" },
-        React.createElement("span", { className: "tentry-word" }, w.de),
+        dwEl("tentry-word", w.de, 30 + (wrongMap[g] !== undefined ? 40 : 0) + (isCarry(g) ? 76 : 0)),
         React.createElement(TtsBtn, { text: w.de, word: true, small: true, title: "발음 듣기" }),
         wrongMap[g] !== undefined && React.createElement("span", { style: { flexShrink: 0, whiteSpace: 'nowrap', fontSize: '10px', fontWeight: 700, color: '#C0392B', background: '#C0392B18', padding: '2px 7px', borderRadius: '5px' } }, "오답"),
         isCarry(g) && React.createElement("span", { className: "badge-carry", title: "지난 주차에서 넘어온 단어" }, w.from ? w.from + '주차 이월' : '이월')
