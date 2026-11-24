@@ -489,6 +489,90 @@ html.ueb #exHelp>p.kb:first-child{margin-top:0}
 .cards4 div{overflow-wrap:normal;word-break:normal;hyphens:none}
 .cards4 div,.cards4 div.wide{grid-column:1/-1;text-align:left;font-size:16px;line-height:1.5;padding:10px 16px}
 
+
+/* ---------- A1 단계 대화(GRAMMATIK KURS 과제 말하기 연습) · 연습 화면 #gdCard, 준비 화면 ol.gd-prep ---------- */
+.gd .gd-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.gd-step{font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--acc)}
+.gd-dots{display:flex;gap:6px}
+.gd-dots i{display:block;width:10px;height:10px;border-radius:50%;background:var(--line)}
+.gd-dots i.done{background:var(--ok)}
+.gd-dots i.cur{background:var(--acc);box-shadow:0 0 0 3px var(--acc-w)}
+.gd-ctx{display:flex;flex-wrap:wrap;gap:6px}
+.gd-ctx[hidden]{display:none}
+.gd-ctx span{border:1px solid var(--line);border-radius:7px;padding:3px 9px;font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+.gd-ctx b{color:var(--ink)}
+.gd-q{font-family:var(--serif);font-size:24px;font-weight:700;line-height:1.35;letter-spacing:-.005em}
+.gd-qk{font-size:14.5px;color:var(--muted);margin-top:2px}
+.gd-frame{border-left:3px solid var(--acc);background:var(--bg-2);border-radius:0 10px 10px 0;padding:10px 14px}
+.gd-frame .lab{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.02em}
+.gd-frame .fr{font-family:var(--serif);font-size:18.5px;font-weight:700;line-height:1.45;margin-top:2px}
+.gd-frame .fr:empty{display:none}
+.gd-frame .frk{font-size:13.5px;color:var(--muted);line-height:1.5}
+.gd-tip{font-size:13px;color:var(--ink-2);margin-top:6px;line-height:1.5}
+.gd-tip:empty{display:none}
+.gd-words{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.gd-words:empty{display:none}
+.gd-words span{border:1px solid var(--acc-line);background:var(--acc-w);border-radius:7px;padding:3px 10px;font-family:var(--serif);font-size:16px;font-weight:700;line-height:1.45}
+.gd-words span small{font-family:var(--font);font-weight:400;font-size:12.5px;color:var(--muted);margin-left:6px}
+.gd-ex[hidden]{display:none}
+.gd-ex>summary{cursor:pointer;font-size:14px;font-weight:700;color:var(--acc-2);list-style:none}
+.gd-ex>summary::-webkit-details-marker{display:none}
+.gd-ex>summary::before{content:'▸ '}
+.gd-ex[open]>summary::before{content:'▾ '}
+.gd-ex p{font-family:var(--serif);font-size:17px;margin-top:4px}
+.gd-ex small{display:block;font-size:13px;color:var(--muted)}
+.gd-live{display:grid;gap:6px}
+.gd-say{border:1px solid var(--part);background:var(--part-w);border-radius:10px;padding:8px 12px;font-family:var(--serif);font-size:16.5px;line-height:1.5}
+.gd-say b,.gd-me b{display:inline-block;font-family:var(--font);font-size:12px;font-weight:700;margin-right:8px}
+.gd-say b{color:var(--part)}
+.gd-me{font-size:14px;color:var(--ink-2);padding:0 2px}
+.gd-me b{color:var(--acc-2)}
+.gd-me span{font-family:var(--serif);font-size:15.5px}
+.gd-help{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.gd-help button{padding:10px 6px;font-size:14px;word-break:keep-all}
+.gd-sayhint{font-size:12.5px;color:var(--muted)}
+.gd-sayhint .de{font-family:var(--serif);color:var(--ink-2)}
+.gd-plan{border-top:1px solid var(--line);padding-top:8px}
+.gd-plan>summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--muted);list-style:none}
+.gd-plan>summary::-webkit-details-marker{display:none}
+.gd-plan>summary::after{content:' · 펼치기'}
+.gd-plan[open]>summary::after{content:' · 접기'}
+.gd-plan ol{list-style:none;margin:6px 0 0;padding:0}
+.gd-plan li{display:grid;grid-template-columns:22px 1fr;gap:6px;padding:3px 0;font-size:14px;color:var(--muted);line-height:1.5}
+.gd-plan li .mk{font-weight:700;text-align:center}
+.gd-plan li.done .mk{color:var(--ok)}
+.gd-plan li.cur{color:var(--ink)}
+.gd-plan li.cur .mk{color:var(--acc)}
+.gd-plan li .de{font-family:var(--serif)}
+/* 준비 화면: 대화 순서 */
+.sheet ol.gd-prep{list-style:none;margin:0;padding:0}
+.sheet ol.gd-prep>li{display:grid;grid-template-columns:28px 1fr;gap:10px;margin:0;padding:12px 0;border:0;border-top:1px solid var(--line-2);text-align:left}
+.sheet ol.gd-prep>li:first-child{border-top:0;padding-top:4px}
+.sheet ol.gd-prep>li>div>*+*{margin-top:4px}
+.sheet ol.gd-prep .n{width:24px;height:24px;border-radius:50%;background:var(--acc-w);color:var(--acc-2);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:3px}
+.sheet ol.gd-prep li.me .n{background:var(--ok-w);color:var(--ok)}
+.sheet ol.gd-prep .q{font-family:var(--serif);font-size:18px;font-weight:700;line-height:1.45}
+.sheet ol.gd-prep .q .gl{font-weight:400}
+.sheet ol.gd-prep .fr{font-family:var(--serif);font-size:16px;line-height:1.5}
+.sheet ol.gd-prep .fr::before{content:'→ ';color:var(--muted)}
+.sheet ol.gd-prep .tip{font-size:13px;color:var(--ink-2);line-height:1.5}
+.sheet ol.gd-prep .lab{margin:0;font-size:12px}
+.sheet ol.gd-prep .gd-words{margin-top:6px}
+.sheet ol.gd-prep .exl{font-size:13.5px;color:var(--muted);line-height:1.5}
+.sheet ol.gd-prep .exl i{font-style:normal;font-family:var(--serif);color:var(--ink-2)}
+.sheet ul.gd-how li{border-left:0;margin:0;padding:2px 0 2px 16px;position:relative;font-size:14.5px;line-height:1.6;text-align:left}
+.sheet ul.gd-how li::before{content:'·';position:absolute;left:4px;color:var(--muted)}
+@media (max-width:640px){
+  .gd-q{font-size:21px}
+  .gd-frame{padding:9px 11px}
+  .gd-frame .fr{font-size:17px}
+  .gd-words span{font-size:15px;padding:3px 8px}
+  .gd-help{gap:6px}
+  .gd-help button{padding:9px 4px;font-size:13px}
+  .gd-say{font-size:15.5px}
+  .sheet ol.gd-prep>li{grid-template-columns:24px 1fr;gap:8px}
+  .sheet ol.gd-prep .q{font-size:17px}
+}
 </style>
 </head>
 <body>
@@ -617,7 +701,7 @@ html.ueb #exHelp>p.kb:first-child{margin-top:0}
   </div>
 
   <div class="card">
-    <h2>과제지</h2>
+    <h2 id="prepTaskTitle">과제지</h2>
     <div id="prepTask" class="sheet"></div>
   </div>
 
@@ -625,15 +709,15 @@ html.ueb #exHelp>p.kb:first-child{margin-top:0}
     <h2>파트너</h2>
     <div class="partner-box">
       <div class="avatar" id="prepAvatar">M</div>
-      <div><b id="prepPartnerName"></b><div class="muted small">시험 수준에 맞는 독일어로 말하고, 학생의 말에 반응하며 대화를 이어 갑니다. 과제에서 벗어나면 과제로 돌아옵니다.</div></div>
+      <div><b id="prepPartnerName"></b><div class="muted small" id="prepPartnerDesc">시험 수준에 맞는 독일어로 말하고, 학생의 말에 반응하며 대화를 이어 갑니다. 과제에서 벗어나면 과제로 돌아옵니다.</div></div>
     </div>
     <div class="opt"><span class="optl">목소리</span>
       <div class="seg" data-seg="voice" role="group" aria-label="파트너 목소리"><button type="button" data-v="f">여성 (Mila)</button><button type="button" data-v="m">남성 (Ben)</button></div>
     </div>
-    <div class="opt"><span class="optl">상대의 독일어 실력</span>
+    <div class="opt" id="optSkill"><span class="optl">상대의 독일어 실력</span>
       <div class="seg" data-seg="skill" role="group" aria-label="상대의 독일어 실력"><button type="button" data-v="low">하</button><button type="button" data-v="mid">중</button><button type="button" data-v="high">상</button></div>
     </div>
-    <p class="muted small">시험 수준은 그대로이고, 같은 수준 안에서 상대가 쓰는 문장의 길이·어휘·말 속도가 달라집니다. 하는 더 짧고 쉽고 천천히, 상은 더 풍부하고 길게 말합니다. 연습을 시작할 때 적용됩니다.</p>
+    <p class="muted small" id="skillNote">시험 수준은 그대로이고, 같은 수준 안에서 상대가 쓰는 문장의 길이·어휘·말 속도가 달라집니다. 하는 더 짧고 쉽고 천천히, 상은 더 풍부하고 길게 말합니다. 연습을 시작할 때 적용됩니다.</p>
   </div>
 
   <div class="card">
@@ -647,7 +731,7 @@ html.ueb #exHelp>p.kb:first-child{margin-top:0}
     <div class="sens" data-sens></div>
   </div>
 
-  <div class="card">
+  <div class="card" id="notesCard">
     <h2>준비 메모</h2>
     <p class="muted">키워드만 적으십시오. 완성된 문장을 적으면 읽게 됩니다. 시험 중에도 이 메모를 볼 수 있습니다.</p>
     <textarea id="notes" rows="5" placeholder="키워드 메모"></textarea>
@@ -692,6 +776,18 @@ html.ueb #exHelp>p.kb:first-child{margin-top:0}
     <div class="spk" id="spkStudent"><b>나</b><span id="spkStudentName"></span></div>
   </div>
   </div>
+  <!-- A1 단계 대화(guided): 지금 질문, 대답 틀, 넣을 단어, 예시 대답, 파트너의 마지막 말과 내 말, 도움 버튼, 대화 순서 -->
+  <div class="card gd" id="gdCard" data-keep hidden>
+    <div class="gd-top"><span class="gd-step" id="gdStep">질문 1 / 4</span><span class="gd-dots" id="gdDots" aria-hidden="true"></span></div>
+    <div class="gd-ctx" id="gdCtx" hidden></div>
+    <div><div class="gd-q" id="gdQ" lang="de"></div><div class="gd-qk" id="gdQk"></div></div>
+    <div class="gd-frame"><div class="lab" id="gdLab">이렇게 대답하십시오</div><div class="fr" id="gdFr" lang="de"></div><div class="frk" id="gdFrk"></div><div class="gd-tip" id="gdTip"></div><div class="gd-words" id="gdW" lang="de"></div></div>
+    <details class="gd-ex" id="gdEx"><summary>예시 대답 보기</summary><p id="gdExDe" lang="de"></p><small id="gdExKo"></small></details>
+    <div class="gd-live" aria-live="polite"><div class="gd-say"><b id="gdWho">Mila</b><span id="gdSay" lang="de">…</span></div><div class="gd-me"><b>내 말</b><span id="gdMe" lang="de">—</span></div></div>
+    <div class="gd-help"><button class="secondary" type="button" data-gd="rep">질문 다시 듣기</button><button class="secondary" type="button" data-gd="ex">예시 대답 듣기</button><button class="ghost" type="button" data-gd="skip" id="gdSkip">다음 질문으로</button></div>
+    <p class="gd-sayhint">말로 부탁해도 됩니다: <span class="de" lang="de">Wie bitte?</span> · <span class="de" lang="de">Noch einmal, bitte.</span> · <span class="de" lang="de">Langsam, bitte.</span></p>
+    <details class="gd-plan" id="gdPlanBox" open><summary>대화 순서</summary><ol id="gdPlan"></ol></details>
+  </div>
   <div class="level"><i id="exLevel"></i><u class="thr"></u></div>
   <div class="sens" data-sens></div>
   <p class="notice" id="exNotice" role="status"></p>
@@ -701,11 +797,11 @@ html.ueb #exHelp>p.kb:first-child{margin-top:0}
     <p class="muted small">문장이 떠오르지 않으면 아래 표현을 그대로 읽거나 단어만 바꿔 말하십시오.</p>
     <div id="exHelp" class="sheet"></div>
   </div>
-  <div class="card">
+  <div class="card" id="exTaskCard">
     <h2>과제지</h2>
     <div id="exTask" class="sheet"></div>
   </div>
-  <div class="card">
+  <div class="card" id="exNotesCard">
     <h2>내 메모</h2>
     <textarea id="exNotes" rows="3"></textarea>
   </div>
@@ -714,7 +810,7 @@ html.ueb #exHelp>p.kb:first-child{margin-top:0}
     <button class="secondary" id="btnFinish" type="button" disabled>여기서 끝내기</button>
     <button class="ghost" id="btnAbort" type="button">중단</button>
   </div>
-  <p class="muted small">시험 중에는 대화 전사를 보여 주지 않습니다. 끝난 뒤에 확인할 수 있습니다.</p>
+  <p class="muted small" id="exNoTx">시험 중에는 대화 전사를 보여 주지 않습니다. 끝난 뒤에 확인할 수 있습니다.</p>
 </section>
 
 <!-- ========== 시도 종료 ========== -->
@@ -3230,432 +3326,334 @@ const EXAMS = [
   );
 })();
 
-/* 시험 데이터 확장: A1 Übung (Lektion별 문법 말하기 연습) · Lektion 01~16
-   - 주제와 문법은 SODA GRAMMATIK KURS의 Lektion 01~16(명사·관사·격부터 접속법까지)에 맞췄고, 어휘는 해당 과까지 나온 말이나 아주 쉬운 말만 썼습니다.
-   - 각 Übung은 Teil 하나로 이루어진 약 2분의 짧은 대화입니다. 구조와 평가 기준은 exams.js의 Goethe A2 Modelltest 1 Teil 3(두 사람 대화)와 같고(A1 시험이 없어 그 틀을 빌렸습니다),
-     과제 문구·카드·파트너 진행 방식·표현·점검 항목은 Lektion마다 새로 썼습니다. 파트너(Mila)는 A1 수준의 아주 짧고 쉬운 문장만 말합니다.
-   - 문법 점검(gramRe)은 Lektion의 목표 문법을 정규식으로 확인합니다. 드문 구조는 gramYes: 1로 한 번이면 충족합니다.
+/* 시험 데이터 확장: A1 Übung (Lektion별 문법 말하기 연습) · Lektion 01~16 — 단계별 대화(guided)
+   - SODA GRAMMATIK KURS 과제 Schritt 6의 말하기 연습입니다. 처음 독일어를 배우는 학생에게 맞춰, 자유 대화 대신 정해진 순서의 짧은 대화로 바꿨습니다(2026-11).
+   - 파트너가 화면에 보이는 질문 네 개를 하나씩 하고, 학생은 화면의 대답 틀과 단어를 보며 대답합니다. 마지막에 학생이 파트너에게 질문 하나를 합니다.
+     파트너는 한 단어 대답을 문장으로 바꿔 다시 말해 주고, 학생이 머뭇거리면 예시 대답을 말해 줍니다. 연습 화면의 도움 버튼(질문 다시 듣기·예시 대답 듣기·다음 질문으로)도 같은 일을 시킵니다.
+   - 질문·대답 틀·예시 대답에는 그 과까지 배운 문법만 씁니다. 과제 Schritt 6 「말하기」 표의 문장과 같은 틀을 씁니다.
+   - 파트너 에이전트의 지시문은 고치지 않고, 이 연습에서는 앱이 만드는 변수(flow, level_rules, task_text, redemittel)로 진행 방법을 정합니다(gdFlow).
+   - 자동 점검은 대답한 질문 수(gsteps), 세 단어 이상의 문장 대답(gsent), 이 과의 문법(gramRe), 마지막 질문(gask)을 봅니다. 평가 기준은 RUB_A1G(A·B·C)입니다.
    - 앱은 hidden, eyebrow, rowLabel, tag를 사용합니다. */
 (function () {
   const BASE = EXAMS.find(e => e.id === 'goethe-a2').teile[2];
 
-  const RULES = [
-    'Stelle immer nur eine Frage auf einmal und warte auf die Antwort (skip_turn).',
-    'Reagiere kurz auf jede Antwort („Ach so.“, „Echt?“, „Ich auch.“, „Schön!“). Sage dann manchmal in einem ganz kurzen Satz etwas über dich. Danach gibst du das Wort zurück.',
-    'Jeder Beitrag von dir hat höchstens zwei sehr kurze Sätze und eine Frage. Du hältst keinen Vortrag, erklärst nichts und korrigierst A nicht.',
-    'Antwortet A nur mit einem Wort, frage freundlich nach („Und noch?“, „Wie bitte?“). Versteht A etwas nicht, sage es noch einmal langsamer und einfacher.',
-    'Stellt A dir eine Frage, antworte kurz mit einem kleinen Detail und frage dann zurück oder gib das Wort zurück.'
+  /* 처음 배우는 학생용 평가 기준: 질문에 대답하기, 이 과의 문법 (발음·억양 제외) */
+  const RUB_A1G = {
+    grades: ['A', 'B', 'C'], points: null,
+    criteria: [
+      { key: 'antwort', de: 'Fragen beantworten', ko: '질문에 대답하기', assess: true, max: null, desc_ko: '파트너의 질문을 알아듣고 알맞은 내용으로 대답했는가(짧은 문장도 됩니다)' },
+      { key: 'grammatik', de: 'Grammatik der Lektion', ko: '이 과의 문법', assess: true, max: null, desc_ko: '이 과에서 배운 문법을 대답에 맞게 썼는가' },
+      NOT_ASSESSED
+    ],
+    notes: [
+      '처음 독일어를 배우는 학생의 단계별 대화 연습입니다. 파트너가 화면에 보이는 질문 네 개를 하나씩 하고, 학생은 화면의 대답 틀과 단어를 보며 대답한 뒤, 마지막에 파트너에게 질문 하나를 합니다.',
+      '짧은 대답이 정상입니다. 질문에 맞게 대답했으면 전체 단어 수가 적어도 낮은 등급을 주지 않습니다.',
+      '등급 A는 거의 모든 질문에 문장으로 알맞게 대답한 경우, B는 절반 이상의 질문에 대답한 경우, C는 대답이 거의 없거나 질문과 맞지 않는 경우입니다.',
+      '고칠 문장은 이 과의 문법과 관련된 것을 먼저 골라 최대 세 개만 적습니다. 고친 문장에는 이 과까지 배운 문법만 씁니다.',
+      '잘한 점은 학생이 실제로 한 말에서 구체적으로 찾아 적습니다.',
+      'redemittel.suggested에는 Noch einmal, bitte. / Langsam, bitte. / Und du? 처럼 아주 쉬운 표현만 고릅니다.'
+    ],
+    note_ko: '두 기준을 A(잘함)·B(보통)·C(더 연습)로 봅니다.'
+  };
+  const REDEMITTEL = '„Super!“ · „Schön!“ · „Gut!“ · „Ach so.“ · „Ich auch.“ · „Zum Beispiel: …“ · „Kein Problem!“ · „Jetzt fragst du mich.“ · „Danke! Das war super.“';
+
+  const CH = [
+    {
+      no: '01', title: 'Im Zimmer', titleKo: '방 안에서', topicDe: 'Zimmer und Möbel', topicKo: '방과 가구',
+      gramKo: '관사 1격·4격 — einen · eine · ein, den · die · das',
+      lang: 'nur Präsens und einfache Hauptsätze, Artikel einen, eine, ein, den, die, das.',
+      facts: 'Du hast im Zimmer ein Bett, einen Schrank, einen Tisch und einen Stuhl. Du siehst das Fenster und die Tür. Für das Zimmer kaufst du eine Lampe.',
+      recast: ['Tisch.', 'Ah, du hast einen Tisch. Super!'],
+      steps: [
+        { q: 'Was hast du im Zimmer?', ko: '방에 무엇이 있습니까?', fr: 'Ich habe einen … / eine … / ein …', frKo: '저는 …이(가) 있습니다.', w: [['einen Tisch', '탁자'], ['eine Lampe', '램프'], ['ein Bett', '침대']], ex: 'Ich habe einen Tisch und ein Bett.', exKo: '저는 탁자와 침대가 있습니다.', tip: 'der Tisch → einen Tisch · die Lampe → eine Lampe · das Bett → ein Bett' },
+        { q: 'Hast du einen Stuhl?', ko: '의자가 있습니까?', fr: 'Ja, ich habe einen Stuhl. / Nein.', frKo: '네, 저는 의자가 있습니다. / 아니요.', w: [['Ja', '네'], ['Nein', '아니요'], ['einen Stuhl', '의자']], ex: 'Ja, ich habe einen Stuhl.', exKo: '네, 저는 의자가 있습니다.', tip: 'der Stuhl → einen Stuhl (4격)' },
+        { q: 'Was siehst du im Zimmer?', ko: '방에서 무엇이 보입니까?', fr: 'Ich sehe den … / die … / das …', frKo: '저는 …을(를) 봅니다.', w: [['den Schrank', '옷장'], ['die Tür', '문'], ['das Fenster', '창문']], ex: 'Ich sehe das Fenster und die Tür.', exKo: '저는 창문과 문을 봅니다.', tip: 'der Schrank → den Schrank · die Tür, das Fenster는 그대로' },
+        { q: 'Was kaufst du für das Zimmer?', ko: '방에 놓을 것으로 무엇을 삽니까?', fr: 'Ich kaufe einen … / eine … / ein …', frKo: '저는 …을(를) 삽니다.', w: [['einen Schrank', '옷장'], ['eine Lampe', '램프'], ['ein Buch', '책']], ex: 'Ich kaufe eine Lampe.', exKo: '저는 램프를 삽니다.', tip: 'kaufen 뒤의 명사는 4격: einen · eine · ein' }
+      ],
+      ask: { q: 'Und du? Was hast du im Zimmer?', ko: '당신은요? 방에 무엇이 있습니까?', ans: 'Ich habe ein Bett, einen Schrank und einen Tisch.', ansKo: '저는 침대, 옷장, 탁자가 있습니다.' },
+      gramCheck: '명사 앞에 알맞은 관사를 붙여 말했다(einen Tisch, das Fenster)', gramNote: '관사 표현 {v}회',
+      gramRe: /\b(habe|hast|hat|sehe|siehst|kaufe|kaufst|brauche|suche)\s+(noch\s+)?(einen|eine|ein|den|die|das|zwei)\b/
+    },
+    {
+      no: '02', title: 'Wer ist das?', titleKo: '이 사람은 누구입니까?', topicDe: 'Anna und Tom', topicKo: '동료 Anna와 친구 Tom',
+      gramKo: '인칭대명사 3격·4격 — ihn · sie · ihm · ihr · mir',
+      lang: 'nur Präsens und einfache Hauptsätze, Personalpronomen wie sie, ihn, ihm, ihr, mir, dir.',
+      ctx: [['Anna', 'Kollegin · 동료(여자)', 'sie · ihr'], ['Tom', 'Freund · 친구(남자)', 'er · ihn · ihm']],
+      facts: 'Anna ist eine Kollegin, Tom ist ein Freund. Du kennst Anna gut. Du siehst Tom oft und hilfst ihm gern. Die Tasche auf dem Tisch gehört Anna.',
+      recast: ['Ja, kenne.', 'Ah, du kennst sie. Schön!'],
+      steps: [
+        { q: 'Kennst du Anna?', ko: 'Anna를 압니까?', fr: 'Ja, ich kenne sie.', frKo: '네, 저는 그녀를 압니다.', w: [['sie', '그녀를 (Anna)'], ['gut', '잘']], ex: 'Ja, ich kenne sie gut.', exKo: '네, 저는 그녀를 잘 압니다.', tip: 'Anna(여자) → 4격 sie' },
+        { q: 'Siehst du Tom oft?', ko: 'Tom을 자주 봅니까?', fr: 'Ja, ich sehe ihn oft.', frKo: '네, 저는 그를 자주 봅니다.', w: [['ihn', '그를 (Tom)'], ['oft', '자주'], ['jeden Tag', '매일']], ex: 'Ja, ich sehe ihn oft.', exKo: '네, 저는 그를 자주 봅니다.', tip: 'Tom(남자) → 4격 ihn' },
+        { q: 'Hilfst du Tom gern?', ko: 'Tom을 기꺼이 도와줍니까?', fr: 'Ja, ich helfe ihm gern.', frKo: '네, 저는 그를 기꺼이 도와줍니다.', w: [['ihm', '그에게 (Tom)'], ['gern', '기꺼이']], ex: 'Ja, ich helfe ihm gern.', exKo: '네, 저는 그를 기꺼이 도와줍니다.', tip: 'helfen 뒤에는 3격: Tom → ihm' },
+        { q: 'Gehört dir die Tasche?', ko: '그 가방은 당신 것입니까?', fr: 'Ja, sie gehört mir. / Nein, sie gehört Anna.', frKo: '네, 그것은 제 것입니다. / 아니요, 그것은 Anna의 것입니다.', w: [['mir', '나에게 (내 것)'], ['ihr', '그녀에게 (그녀 것)'], ['Anna', 'Anna에게']], ex: 'Nein, sie gehört Anna.', exKo: '아니요, 그 가방은 Anna의 것입니다.', tip: 'die Tasche → sie · gehören 뒤에는 3격: mir, ihr' }
+      ],
+      ask: { q: 'Und du? Kennst du Tom?', ko: '당신은요? Tom을 압니까?', ans: 'Ja, ich kenne ihn gut. Ich helfe ihm oft.', ansKo: '네, 저는 그를 잘 압니다. 저는 그를 자주 도와줍니다.' },
+      gramCheck: '사람과 물건을 대명사로 바꿔 말했다(ihn, sie, ihm, mir)', gramNote: '대명사 표현 {v}회',
+      gramRe: /\b(kenne|sehe|helfe|frage|besuche|liebe|finde|kennst|siehst|hilfst)\s+(ihn|sie|ihm|ihr|dich|dir|euch|uns|es)\b|\b(gehört|gefällt|gehören|gefallen)\s+(mir|dir|ihm|ihr|uns|euch)\b|\b(sie|er|es)\s+(gehört|gefällt)\b/
+    },
+    {
+      no: '03', title: 'Mein Tag', titleKo: '나의 하루', topicDe: 'Tagesablauf und Essen', topicKo: '하루 일과와 음식',
+      gramKo: '현재형 동사변화 — ich lerne, ich esse, ich lese',
+      lang: 'nur Präsens und einfache Hauptsätze mit dem Subjekt am Anfang.',
+      facts: 'Heute arbeitest du und kochst Suppe. Du isst gern Brot. Du liest gern Bücher. Du schläfst nicht lange.',
+      recast: ['Brot.', 'Ah, du isst gern Brot. Ich auch!'],
+      steps: [
+        { q: 'Was machst du heute?', ko: '오늘 무엇을 합니까?', fr: 'Ich lerne … / Ich arbeite. / Ich koche.', frKo: '저는 …합니다.', w: [['Ich lerne Deutsch.', '독일어를 배웁니다'], ['Ich arbeite.', '일합니다'], ['Ich koche.', '요리합니다']], ex: 'Ich lerne Deutsch.', exKo: '저는 독일어를 배웁니다.', tip: 'du machst → ich mache · ich 뒤의 동사는 -e로 끝납니다' },
+        { q: 'Was isst du gern?', ko: '무엇을 즐겨 먹습니까?', fr: 'Ich esse gern …', frKo: '저는 …을(를) 즐겨 먹습니다.', w: [['Brot', '빵'], ['Reis', '밥'], ['Pizza', '피자']], ex: 'Ich esse gern Brot.', exKo: '저는 빵을 즐겨 먹습니다.', tip: 'du isst → ich esse' },
+        { q: 'Liest du gern?', ko: '책 읽기를 좋아합니까?', fr: 'Ja, ich lese gern … / Nein, ich lese nicht gern.', frKo: '네, 저는 …을(를) 즐겨 읽습니다. / 아니요, 즐겨 읽지 않습니다.', w: [['Bücher', '책'], ['Comics', '만화책'], ['nicht gern', '즐겨 하지 않다']], ex: 'Ja, ich lese gern Bücher.', exKo: '네, 저는 책을 즐겨 읽습니다.', tip: 'du liest → ich lese' },
+        { q: 'Schläfst du lange?', ko: '잠을 오래 잡니까?', fr: 'Ja, ich schlafe lange. / Nein, ich schlafe nicht lange.', frKo: '네, 저는 오래 잡니다. / 아니요, 오래 자지 않습니다.', w: [['lange', '오래'], ['nicht lange', '오래 ~하지 않다']], ex: 'Nein, ich schlafe nicht lange.', exKo: '아니요, 저는 잠을 오래 자지 않습니다.', tip: 'du schläfst → ich schlafe' }
+      ],
+      ask: { q: 'Und du? Was machst du heute?', ko: '당신은요? 오늘 무엇을 합니까?', ans: 'Ich arbeite und ich koche Suppe.', ansKo: '저는 일하고 수프를 요리합니다.' },
+      gramCheck: '동사를 ich에 맞게 바꿔 말했다(ich lerne, ich esse, ich lese)', gramNote: 'ich + 동사 {v}회',
+      gramRe: /\bich\s+(lerne|arbeite|koche|esse|trinke|lese|schlafe|fahre|gehe|wohne|spiele|mache|kaufe|sehe|höre|spreche|treffe|bin|habe|schwimme|tanze|singe|male|schreibe)\b/
+    },
+    {
+      no: '04', title: 'Fragen und Zahlen', titleKo: '질문과 숫자', topicDe: 'Herkunft, Alter und Pläne', topicKo: '출신, 나이, 계획',
+      gramKo: '어순 · 의문문 · 수사 — Ich bin 25 Jahre alt. / Morgen arbeite ich.',
+      lang: 'Präsens, Hauptsätze und W-Fragen. Das Verb steht immer an Position zwei. Zahlen sprichst du langsam als Wörter.',
+      facts: 'Du kommst aus Polen, aus Krakau. Du bist achtundzwanzig Jahre alt. Du hast einen Bruder. Morgen arbeitest du.',
+      recast: ['Korea.', 'Ah, du kommst aus Korea. Schön!'],
+      steps: [
+        { q: 'Woher kommst du?', ko: '어디에서 왔습니까?', fr: 'Ich komme aus …', frKo: '저는 …에서 왔습니다.', w: [['Korea', '한국'], ['Seoul', '서울'], ['Busan', '부산']], ex: 'Ich komme aus Korea.', exKo: '저는 한국에서 왔습니다.', tip: 'Woher → aus …' },
+        { q: 'Wie alt bist du?', ko: '몇 살입니까?', fr: 'Ich bin … Jahre alt.', frKo: '저는 … 살입니다.', w: [['zwanzig', '20'], ['fünfundzwanzig', '25'], ['dreißig', '30']], ex: 'Ich bin fünfundzwanzig Jahre alt.', exKo: '저는 스물다섯 살입니다.', tip: '25 = fünf + und + zwanzig (일의 자리를 먼저 말합니다)' },
+        { q: 'Wie viele Geschwister hast du?', ko: '형제자매가 몇 명입니까?', fr: 'Ich habe … Geschwister. / Ich habe einen Bruder.', frKo: '저는 형제자매가 … 명 있습니다.', w: [['einen Bruder', '남자 형제 한 명'], ['eine Schwester', '여자 형제 한 명'], ['zwei Geschwister', '형제자매 두 명']], ex: 'Ich habe zwei Geschwister.', exKo: '저는 형제자매가 두 명 있습니다.' },
+        { q: 'Was machst du morgen?', ko: '내일 무엇을 합니까?', fr: 'Morgen + 동사 + ich …', frKo: '내일 저는 …합니다.', w: [['Morgen arbeite ich.', '내일 저는 일합니다'], ['Morgen lerne ich Deutsch.', '내일 저는 독일어를 배웁니다'], ['Morgen schlafe ich lange.', '내일 저는 늦잠을 잡니다']], ex: 'Morgen lerne ich Deutsch.', exKo: '내일 저는 독일어를 배웁니다.', tip: '동사는 늘 두 번째 자리: Morgen(1) lerne(2) ich' }
+      ],
+      ask: { q: 'Und du? Woher kommst du?', ko: '당신은요? 어디에서 왔습니까?', ans: 'Ich komme aus Polen. Ich bin achtundzwanzig Jahre alt.', ansKo: '저는 폴란드에서 왔습니다. 저는 스물여덟 살입니다.' },
+      gramCheck: '숫자를 말하거나 Morgen + 동사 + ich 어순으로 말했다', gramNote: '숫자·어순 표현 {v}회',
+      gramRe: /\b(morgen|heute|jetzt|dann)\s+(arbeite|lerne|schlafe|gehe|fahre|koche|mache|spiele|treffe|lese|esse|bin|habe)\s+ich\b|\b(eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf|[a-zäöüß]+zehn|[a-zäöüß]*zig|[a-zäöüß]*ßig|\d+)\b/
+    },
+    {
+      no: '05', title: 'Meine Familie', titleKo: '나의 가족', topicDe: 'Familie und Hobbys', topicKo: '가족과 취미',
+      gramKo: '소유관사와 kein — meine Familie, mein Hobby, keinen Hund',
+      lang: 'nur Präsens und einfache Hauptsätze, Possessivartikel mein, dein, sein, ihr und kein.',
+      facts: 'Du hast einen Bruder. Dein Bruder heißt Piotr. Deine Familie wohnt in Krakau. Dein Hobby ist Musik. Du hast keinen Hund, aber eine Katze.',
+      recast: ['Seoul.', 'Ah, deine Familie wohnt in Seoul. Schön!'],
+      steps: [
+        { q: 'Hast du Geschwister?', ko: '형제자매가 있습니까?', fr: 'Ja, ich habe einen Bruder / eine Schwester. / Nein, ich habe keine Geschwister.', frKo: '네, 저는 남자 형제 / 여자 형제가 있습니다. / 아니요, 형제자매가 없습니다.', w: [['einen Bruder', '남자 형제'], ['eine Schwester', '여자 형제'], ['keine Geschwister', '형제자매가 없다']], ex: 'Nein, ich habe keine Geschwister.', exKo: '아니요, 저는 형제자매가 없습니다.', tip: '없을 때는 kein: keine Geschwister' },
+        { q: 'Wo wohnt deine Familie?', ko: '당신의 가족은 어디에 삽니까?', fr: 'Meine Familie wohnt in …', frKo: '제 가족은 …에 삽니다.', w: [['in Seoul', '서울에'], ['in Busan', '부산에'], ['in Daegu', '대구에']], ex: 'Meine Familie wohnt in Busan.', exKo: '제 가족은 부산에 삽니다.', tip: 'deine Familie → meine Familie' },
+        { q: 'Was ist dein Hobby?', ko: '당신의 취미는 무엇입니까?', fr: 'Mein Hobby ist …', frKo: '제 취미는 …입니다.', w: [['Musik', '음악'], ['Sport', '운동'], ['Kochen', '요리']], ex: 'Mein Hobby ist Musik.', exKo: '제 취미는 음악입니다.', tip: 'dein Hobby → mein Hobby' },
+        { q: 'Hast du einen Hund?', ko: '개가 있습니까?', fr: 'Ja, mein Hund heißt … / Nein, ich habe keinen Hund.', frKo: '네, 제 개 이름은 …입니다. / 아니요, 저는 개가 없습니다.', w: [['keinen Hund', '개가 없다'], ['eine Katze', '고양이'], ['mein Hund', '나의 개']], ex: 'Nein, ich habe keinen Hund.', exKo: '아니요, 저는 개가 없습니다.', tip: 'einen Hund → keinen Hund' }
+      ],
+      ask: { q: 'Und du? Hast du Geschwister?', ko: '당신은요? 형제자매가 있습니까?', ans: 'Ja, ich habe einen Bruder. Mein Bruder heißt Piotr.', ansKo: '네, 저는 남자 형제가 한 명 있습니다. 그의 이름은 Piotr입니다.' },
+      gramCheck: '소유관사나 kein을 썼다(meine Familie, keinen Hund)', gramNote: '소유관사·kein {v}회',
+      gramRe: /\b(mein|meine|meinen|meinem|meiner|dein|deine|deinen|seine|seinen|ihre|ihren|unser|unsere|kein|keine|keinen|keinem)\b/
+    },
+    {
+      no: '06', title: 'Wo ist was?', titleKo: '무엇이 어디에 있습니까?', topicDe: 'Orte und Wege', topicKo: '장소와 길',
+      gramKo: '전치사와 격 — in der Tasche, mit der U-Bahn, ins Kino',
+      lang: 'Präsens, Hauptsätze, Präpositionen mit dem richtigen Fall (in der Tasche, mit dem Bus, in den Park).',
+      facts: 'Dein Handy ist auf dem Tisch. Du fährst mit dem Bus in die Stadt. Am Wochenende gehst du in den Park, mit deiner Freundin Ola.',
+      recast: ['Bus.', 'Ah, du fährst mit dem Bus. Ich auch!'],
+      steps: [
+        { q: 'Wo ist dein Handy?', ko: '당신의 휴대폰은 어디에 있습니까?', fr: 'Mein Handy ist auf dem … / in der …', frKo: '제 휴대폰은 … 위에 / 안에 있습니다.', w: [['auf dem Tisch', '탁자 위에'], ['in der Tasche', '가방 안에'], ['im Zimmer', '방 안에']], ex: 'Mein Handy ist in der Tasche.', exKo: '제 휴대폰은 가방 안에 있습니다.', tip: '어디에(위치) → 3격: auf dem Tisch, in der Tasche' },
+        { q: 'Wie fährst du in die Stadt?', ko: '시내에 무엇을 타고 갑니까?', fr: 'Ich fahre mit dem … / mit der …', frKo: '저는 …을(를) 타고 갑니다.', w: [['mit dem Bus', '버스로'], ['mit der U-Bahn', '지하철로'], ['mit dem Auto', '자동차로']], ex: 'Ich fahre mit der U-Bahn.', exKo: '저는 지하철을 타고 갑니다.', tip: 'mit 뒤에는 늘 3격: der Bus → mit dem Bus' },
+        { q: 'Wohin gehst du am Wochenende?', ko: '주말에 어디로 갑니까?', fr: 'Am Wochenende gehe ich in den … / ins …', frKo: '주말에 저는 …(으)로 갑니다.', w: [['in den Park', '공원으로'], ['ins Kino', '영화관으로'], ['in die Stadt', '시내로']], ex: 'Am Wochenende gehe ich ins Kino.', exKo: '주말에 저는 영화관에 갑니다.', tip: '어디로(방향) → 4격: in den Park · in das = ins' },
+        { q: 'Mit wem gehst du?', ko: '누구와 함께 갑니까?', fr: 'Ich gehe mit meinem … / mit meiner … / mit meinen …', frKo: '저는 …와(과) 함께 갑니다.', w: [['mit meiner Freundin', '친구(여자)와'], ['mit meinem Bruder', '남자 형제와'], ['mit meinen Freunden', '친구들과']], ex: 'Ich gehe mit meinen Freunden.', exKo: '저는 친구들과 함께 갑니다.', tip: 'mit + 3격: meine Freundin → mit meiner Freundin' }
+      ],
+      ask: { q: 'Und du? Wohin gehst du am Wochenende?', ko: '당신은요? 주말에 어디로 갑니까?', ans: 'Ich gehe in den Park. Ich gehe mit meiner Freundin Ola.', ansKo: '저는 공원에 갑니다. 친구 Ola와 함께 갑니다.' },
+      gramCheck: '전치사 뒤에 알맞은 관사를 썼다(in der Tasche, mit der U-Bahn, ins Kino)', gramNote: '전치사 표현 {v}회',
+      gramRe: /\b(auf|in|an|unter|neben|vor|hinter|mit|zu|nach|aus|von|bei|für|durch|ohne)\s+(dem|der|den|die|das|einem|einer|einen|meinem|meiner|meinen|deinem|deiner)\b|\b(im|ins|am|zum|zur|vom|beim)\b/
+    },
+    {
+      no: '07', title: 'Meine Kleidung', titleKo: '나의 옷', topicDe: 'Kleidung und Farben', topicKo: '옷과 색깔',
+      gramKo: '형용사 어미 — eine schwarze Hose, einen warmen Mantel',
+      lang: 'Präsens, Hauptsätze, Adjektive mit der richtigen Endung (einen blauen Pullover, die schwarze Hose, warme Schuhe).',
+      facts: 'Heute trägst du einen grünen Pullover und eine schwarze Hose. Deine Jacke ist neu. Du kaufst den roten Pullover. Im Winter brauchst du warme Schuhe.',
+      recast: ['Schwarze Hose.', 'Ah, du trägst eine schwarze Hose. Schön!'],
+      steps: [
+        { q: 'Was trägst du heute?', ko: '오늘 무엇을 입고 있습니까?', fr: 'Ich trage einen …en … / eine …e … / ein …es …', frKo: '저는 …을(를) 입고 있습니다.', w: [['einen blauen Pullover', '파란 스웨터'], ['eine schwarze Hose', '검은 바지'], ['ein weißes T-Shirt', '흰 티셔츠']], ex: 'Ich trage eine schwarze Hose.', exKo: '저는 검은 바지를 입고 있습니다.', tip: 'einen blauen · eine schwarze · ein weißes (명사의 성에 따라 끝이 바뀝니다)' },
+        { q: 'Wie ist deine Jacke?', ko: '당신의 재킷은 어떻습니까?', fr: 'Meine Jacke ist …', frKo: '제 재킷은 …합니다.', w: [['warm', '따뜻하다'], ['neu', '새것이다'], ['alt', '오래되었다']], ex: 'Meine Jacke ist warm.', exKo: '제 재킷은 따뜻합니다.', tip: 'ist 뒤의 형용사는 끝이 바뀌지 않습니다: Die Jacke ist warm.' },
+        { q: 'Kaufst du den roten oder den grünen Pullover?', ko: '빨간 스웨터를 삽니까, 초록 스웨터를 삽니까?', fr: 'Ich kaufe den roten / den grünen Pullover.', frKo: '저는 그 빨간 / 초록 스웨터를 삽니다.', w: [['den roten Pullover', '그 빨간 스웨터'], ['den grünen Pullover', '그 초록 스웨터']], ex: 'Ich kaufe den grünen Pullover.', exKo: '저는 그 초록 스웨터를 삽니다.', tip: 'den 뒤의 형용사는 -en: den roten Pullover' },
+        { q: 'Was brauchst du im Winter?', ko: '겨울에 무엇이 필요합니까?', fr: 'Im Winter brauche ich einen …en … / …e …', frKo: '겨울에 저는 …이(가) 필요합니다.', w: [['einen warmen Mantel', '따뜻한 외투'], ['warme Schuhe', '따뜻한 신발'], ['eine dicke Jacke', '두꺼운 재킷']], ex: 'Im Winter brauche ich einen warmen Mantel.', exKo: '겨울에 저는 따뜻한 외투가 필요합니다.', tip: '관사 없는 복수: warme Schuhe' }
+      ],
+      ask: { q: 'Und du? Was trägst du heute?', ko: '당신은요? 오늘 무엇을 입고 있습니까?', ans: 'Ich trage einen grünen Pullover und eine schwarze Hose.', ansKo: '저는 초록 스웨터와 검은 바지를 입고 있습니다.' },
+      gramCheck: '형용사 끝을 바꿔 말했다(eine schwarze Hose, warme Schuhe)', gramNote: '형용사 어미 {v}회',
+      gramRe: /\b(blau|schwarz|weiß|rot|grün|gelb|grau|braun|warm|neu|alt|dick|schön|klein|groß|teur|billig|lang|kurz|bunt|hell|dunkl|gut)(e|en|er|es|em)\b/
+    },
+    {
+      no: '08', title: 'Essen und Trinken im Vergleich', titleKo: '음식과 음료 비교하기', topicDe: 'Essen, Trinken und Preise', topicKo: '음식, 음료, 가격',
+      gramKo: '비교급 · 최상급 — lieber, gesünder als, am liebsten',
+      lang: 'Präsens, Hauptsätze, Komparativ mit als und Superlativ mit am (lieber, gesünder als, am liebsten).',
+      facts: 'Du trinkst lieber Tee als Kaffee. Ein Apfel ist gesünder als ein Kuchen. Kaffee ist teurer als Wasser. Du isst am liebsten Suppe.',
+      recast: ['Tee.', 'Ah, du trinkst lieber Tee. Ich auch!'],
+      steps: [
+        { q: 'Was trinkst du lieber, Tee oder Kaffee?', ko: '차와 커피 중 무엇을 더 좋아합니까?', fr: 'Ich trinke lieber …', frKo: '저는 …을(를) 더 좋아합니다.', w: [['Tee', '차'], ['Kaffee', '커피']], ex: 'Ich trinke lieber Tee.', exKo: '저는 차를 더 좋아합니다.', tip: 'gern → lieber(더 좋아하는) → am liebsten(가장 좋아하는)' },
+        { q: 'Was ist gesünder, ein Apfel oder ein Kuchen?', ko: '사과와 케이크 중 무엇이 더 건강에 좋습니까?', fr: '… ist gesünder als …', frKo: '…이(가) …보다 더 건강에 좋습니다.', w: [['Ein Apfel', '사과'], ['gesünder als', '~보다 더 건강한'], ['ein Kuchen', '케이크']], ex: 'Ein Apfel ist gesünder als ein Kuchen.', exKo: '사과가 케이크보다 더 건강에 좋습니다.', tip: 'gesund → gesünder + als' },
+        { q: 'Was ist teurer, Kaffee oder Wasser?', ko: '커피와 물 중 무엇이 더 비쌉니까?', fr: '… ist teurer als …', frKo: '…이(가) …보다 더 비쌉니다.', w: [['teurer als', '~보다 더 비싼'], ['billiger als', '~보다 더 싼']], ex: 'Kaffee ist teurer als Wasser.', exKo: '커피가 물보다 더 비쌉니다.', tip: 'teuer → teurer · billig → billiger' },
+        { q: 'Was isst du am liebsten?', ko: '무엇을 가장 좋아합니까? (먹는 것)', fr: 'Ich esse am liebsten …', frKo: '저는 …을(를) 가장 좋아합니다.', w: [['Pizza', '피자'], ['Kimchi', '김치'], ['Reis', '밥']], ex: 'Ich esse am liebsten Pizza.', exKo: '저는 피자를 가장 좋아합니다.', tip: 'am liebsten = 가장 즐겨' }
+      ],
+      ask: { q: 'Und du? Was isst du am liebsten?', ko: '당신은요? 무엇을 가장 좋아합니까?', ans: 'Ich esse am liebsten Suppe.', ansKo: '저는 수프를 가장 좋아합니다.' },
+      gramCheck: '비교급·최상급으로 말했다(lieber, teurer als, am liebsten)', gramNote: '비교 표현 {v}회',
+      gramRe: /\b[a-zäöüß]{2,}er als\b|\blieber\b|\bam\s+[a-zäöüß]+sten\b|\b(besser|mehr|weniger)\b/
+    },
+    {
+      no: '09', title: 'Was kann ich, was muss ich?', titleKo: '무엇을 할 수 있고, 무엇을 해야 합니까?', topicDe: 'Können, Pflichten und Pläne', topicKo: '능력, 할 일, 계획',
+      gramKo: '화법조동사 · 분리동사 — Ich kann gut kochen. / Ich stehe um 7 Uhr auf.',
+      lang: 'Präsens, Hauptsätze, Modalverben mit Infinitiv am Ende und trennbare Verben (Ich stehe um sieben Uhr auf).',
+      facts: 'Du kannst gut schwimmen, aber nicht gut singen. Morgen musst du arbeiten. Du stehst um sechs Uhr auf. Am Wochenende willst du deine Freundin treffen.',
+      recast: ['Kochen.', 'Ah, du kannst gut kochen. Super!'],
+      steps: [
+        { q: 'Was kannst du gut?', ko: '무엇을 잘할 수 있습니까?', fr: 'Ich kann gut … (동사 원형)', frKo: '저는 …을(를) 잘할 수 있습니다.', w: [['kochen', '요리하다'], ['singen', '노래하다'], ['schwimmen', '수영하다']], ex: 'Ich kann gut kochen.', exKo: '저는 요리를 잘할 수 있습니다.', tip: 'kann + 동사 원형(문장 끝)' },
+        { q: 'Was musst du morgen machen?', ko: '내일 무엇을 해야 합니까?', fr: 'Morgen muss ich … (동사 원형)', frKo: '내일 저는 …해야 합니다.', w: [['arbeiten', '일하다'], ['lernen', '공부하다'], ['einkaufen', '장을 보다']], ex: 'Morgen muss ich arbeiten.', exKo: '내일 저는 일해야 합니다.', tip: 'muss + 동사 원형(문장 끝)' },
+        { q: 'Wann stehst du auf?', ko: '몇 시에 일어납니까?', fr: 'Ich stehe um … Uhr auf.', frKo: '저는 … 시에 일어납니다.', w: [['um sechs Uhr', '6시에'], ['um sieben Uhr', '7시에'], ['um acht Uhr', '8시에']], ex: 'Ich stehe um sieben Uhr auf.', exKo: '저는 7시에 일어납니다.', tip: 'aufstehen → ich stehe … auf (auf는 문장 끝)' },
+        { q: 'Was willst du am Wochenende machen?', ko: '주말에 무엇을 하고 싶습니까?', fr: 'Am Wochenende will ich … (동사 원형)', frKo: '주말에 저는 …하고 싶습니다.', w: [['ins Kino gehen', '영화관에 가다'], ['Freunde treffen', '친구들을 만나다'], ['lange schlafen', '늦잠 자다']], ex: 'Am Wochenende will ich ins Kino gehen.', exKo: '주말에 저는 영화관에 가고 싶습니다.', tip: 'will + 동사 원형(문장 끝)' }
+      ],
+      ask: { q: 'Und du? Was kannst du gut?', ko: '당신은요? 무엇을 잘할 수 있습니까?', ans: 'Ich kann gut schwimmen. Aber ich kann nicht gut singen.', ansKo: '저는 수영을 잘할 수 있습니다. 하지만 노래는 잘하지 못합니다.' },
+      gramCheck: '조동사나 분리동사 문장으로 말했다(Ich kann gut kochen. / Ich stehe … auf.)', gramNote: '조동사·분리동사 {v}회',
+      gramRe: /\b(kann|muss|will|darf|soll|möchte)\b(\s+\S+){0,5}\s+[a-zäöüß]+(en|ern|eln)\b|\b(stehe|kaufe|rufe|hole|fange|sehe|mache|komme)\b(\s+\S+){0,5}\s+(auf|ein|an|ab|fern|mit|zu)\b/
+    },
+    {
+      no: '10', title: 'Mein Wochenende', titleKo: '나의 주말', topicDe: 'Das letzte Wochenende', topicKo: '지난 주말',
+      gramKo: '현재완료 — Ich habe … gesehen. / Ich bin … gefahren.',
+      lang: 'Perfekt mit haben und sein (Ich habe gekocht. Ich bin gegangen.) und einfaches Präsens, nur Hauptsätze.',
+      facts: 'Am Wochenende bist du in den Park gegangen. Dann hast du gekocht und Suppe gegessen. Du hast gut geschlafen.',
+      recast: ['Pizza.', 'Ah, du hast Pizza gegessen. Lecker!'],
+      steps: [
+        { q: 'Was hast du am Wochenende gemacht?', ko: '주말에 무엇을 했습니까?', fr: 'Ich habe … (과거분사)', frKo: '저는 …했습니다.', w: [['einen Film gesehen', '영화를 보았다'], ['Deutsch gelernt', '독일어를 공부했다'], ['Freunde getroffen', '친구들을 만났다']], ex: 'Ich habe einen Film gesehen.', exKo: '저는 영화를 보았습니다.', tip: 'habe + … + 과거분사(문장 끝)' },
+        { q: 'Bist du in die Stadt gefahren?', ko: '시내에 갔습니까?', fr: 'Ja, ich bin in die Stadt gefahren. / Nein, ich bin zu Hause geblieben.', frKo: '네, 저는 시내에 갔습니다. / 아니요, 저는 집에 있었습니다.', w: [['bin … gefahren', '(타고) 갔다'], ['bin zu Hause geblieben', '집에 있었다']], ex: 'Nein, ich bin zu Hause geblieben.', exKo: '아니요, 저는 집에 있었습니다.', tip: '이동·머무름은 sein: bin gefahren, bin geblieben' },
+        { q: 'Was hast du gegessen?', ko: '무엇을 먹었습니까?', fr: 'Ich habe … gegessen.', frKo: '저는 …을(를) 먹었습니다.', w: [['Pizza', '피자'], ['Nudeln', '면 요리'], ['Reis', '밥']], ex: 'Ich habe Pizza gegessen.', exKo: '저는 피자를 먹었습니다.', tip: 'essen → gegessen' },
+        { q: 'Hast du gut geschlafen?', ko: '잘 잤습니까?', fr: 'Ja, ich habe gut geschlafen. / Nein, ich habe schlecht geschlafen.', frKo: '네, 저는 잘 잤습니다. / 아니요, 잘 못 잤습니다.', w: [['gut', '잘'], ['schlecht', '잘 못'], ['lange', '오래']], ex: 'Ja, ich habe lange geschlafen.', exKo: '네, 저는 오래 잤습니다.', tip: 'schlafen → geschlafen' }
+      ],
+      ask: { q: 'Und du? Was hast du am Wochenende gemacht?', ko: '당신은요? 주말에 무엇을 했습니까?', ans: 'Ich bin in den Park gegangen. Dann habe ich gekocht.', ansKo: '저는 공원에 갔습니다. 그다음에 요리했습니다.' },
+      gramCheck: '현재완료로 말했다(habe … gesehen, bin … gefahren)', gramNote: '현재완료 {v}회',
+      gramRe: /\b(habe|hast|hat|haben|bin|bist|ist|sind)\b(\s+\S+){0,6}\s+(ge[a-zäöüß]{2,}(t|en)|[a-zäöüß]+iert|(be|ver|er|ent|zer|über)[a-zäöüß]{2,}(t|en)|[a-zäöüß]*(an|auf|aus|ein|mit|zurück|fern)ge[a-zäöüß]{2,}(t|en))\b/
+    },
+    {
+      no: '11', title: 'Früher und gestern', titleKo: '예전과 어제', topicDe: 'Gestern und die Kindheit', topicKo: '어제와 어린 시절',
+      gramKo: '과거형 — war, hatte, konnte',
+      lang: 'Präteritum von sein, haben und den Modalverben (war, hatte, konnte, musste) und einfaches Präsens, nur Hauptsätze.',
+      facts: 'Gestern warst du in der Apotheke. Das Wetter war kalt. Du hattest viel Arbeit. Als Kind konntest du gut schwimmen.',
+      recast: ['Zu Hause.', 'Ah, du warst zu Hause. Schön!'],
+      steps: [
+        { q: 'Wo warst du gestern?', ko: '어제 어디에 있었습니까?', fr: 'Gestern war ich …', frKo: '어제 저는 …에 있었습니다.', w: [['zu Hause', '집에'], ['in der Schule', '학교에'], ['bei der Arbeit', '직장에']], ex: 'Gestern war ich zu Hause.', exKo: '어제 저는 집에 있었습니다.', tip: 'sein → war (Gestern war ich …)' },
+        { q: 'Wie war das Wetter gestern?', ko: '어제 날씨는 어땠습니까?', fr: 'Das Wetter war …', frKo: '날씨가 …했습니다.', w: [['schön', '좋다'], ['kalt', '춥다'], ['schlecht', '나쁘다']], ex: 'Das Wetter war kalt.', exKo: '날씨가 추웠습니다.', tip: 'ist → war' },
+        { q: 'Hattest du gestern viel Arbeit?', ko: '어제 일이 많았습니까?', fr: 'Ja, ich hatte viel Arbeit. / Nein, ich hatte wenig Arbeit.', frKo: '네, 저는 일이 많았습니다. / 아니요, 일이 적었습니다.', w: [['viel Arbeit', '일이 많다'], ['wenig Arbeit', '일이 적다'], ['keine Zeit', '시간이 없다']], ex: 'Ja, ich hatte viel Arbeit.', exKo: '네, 저는 일이 많았습니다.', tip: 'haben → hatte' },
+        { q: 'Konntest du als Kind schwimmen?', ko: '어렸을 때 수영할 수 있었습니까?', fr: 'Ja, ich konnte schwimmen. / Nein, ich konnte nicht schwimmen.', frKo: '네, 저는 수영할 수 있었습니다. / 아니요, 수영하지 못했습니다.', w: [['konnte', '~할 수 있었다'], ['nicht', '~않다'], ['gut', '잘']], ex: 'Nein, ich konnte nicht schwimmen.', exKo: '아니요, 저는 수영하지 못했습니다.', tip: 'können → konnte + 동사 원형(문장 끝)' }
+      ],
+      ask: { q: 'Und du? Wo warst du gestern?', ko: '당신은요? 어제 어디에 있었습니까?', ans: 'Gestern war ich in der Apotheke. Ich hatte viel Arbeit.', ansKo: '어제 저는 약국에 있었습니다. 일이 많았습니다.' },
+      gramCheck: '과거형으로 말했다(war, hatte, konnte)', gramNote: '과거형 {v}회',
+      gramRe: /\b(war|warst|waren|wart|hatte|hattest|hatten|konnte|konntest|konnten|musste|musstest|wollte|wolltest|durfte|sollte|ging|kam|fuhr|gab|wusste|aß|trank|las|sah)\b/
+    },
+    {
+      no: '12', title: 'Worauf freust du dich?', titleKo: '무엇을 기대합니까?', topicDe: 'Wetter, Gefühle und Interessen', topicKo: '날씨, 기분, 관심사',
+      gramKo: '재귀동사 · 비인칭 es — Ich freue mich auf … / Es regnet.',
+      lang: 'Präsens, Hauptsätze, reflexive Verben (ich freue mich, ich fühle mich) und es (Es regnet).',
+      facts: 'Heute regnet es. Du fühlst dich ein bisschen müde. Du interessierst dich für Filme. Du freust dich auf den Sommer.',
+      recast: ['Musik.', 'Ah, du interessierst dich für Musik. Schön!'],
+      steps: [
+        { q: 'Wie ist das Wetter heute?', ko: '오늘 날씨는 어떻습니까?', fr: 'Es regnet. / Es ist kalt. / Es ist warm.', frKo: '비가 옵니다. / 춥습니다. / 따뜻합니다.', w: [['Es regnet.', '비가 옵니다'], ['Es schneit.', '눈이 옵니다'], ['Es ist warm.', '따뜻합니다']], ex: 'Heute ist es kalt.', exKo: '오늘은 춥습니다.', tip: '날씨는 es로 말합니다: es regnet, es ist kalt' },
+        { q: 'Wie fühlst du dich heute?', ko: '오늘 기분이 어떻습니까?', fr: 'Ich fühle mich …', frKo: '저는 기분이 …합니다.', w: [['gut', '좋다'], ['müde', '피곤하다'], ['super', '아주 좋다']], ex: 'Ich fühle mich gut.', exKo: '저는 기분이 좋습니다.', tip: 'du fühlst dich → ich fühle mich' },
+        { q: 'Wofür interessierst du dich?', ko: '무엇에 관심이 있습니까?', fr: 'Ich interessiere mich für …', frKo: '저는 …에 관심이 있습니다.', w: [['Musik', '음악'], ['Sport', '스포츠'], ['Filme', '영화']], ex: 'Ich interessiere mich für Musik.', exKo: '저는 음악에 관심이 있습니다.', tip: 'sich interessieren für + 4격' },
+        { q: 'Worauf freust du dich?', ko: '무엇을 기대하고 있습니까?', fr: 'Ich freue mich auf den … / die … / das …', frKo: '저는 …을(를) 기대하고 있습니다.', w: [['auf den Urlaub', '휴가를'], ['auf das Wochenende', '주말을'], ['auf die Ferien', '방학을']], ex: 'Ich freue mich auf das Wochenende.', exKo: '저는 주말을 기대하고 있습니다.', tip: 'sich freuen auf + 4격 = 앞으로의 일을 기대하다' }
+      ],
+      ask: { q: 'Und du? Worauf freust du dich?', ko: '당신은요? 무엇을 기대하고 있습니까?', ans: 'Ich freue mich auf den Sommer.', ansKo: '저는 여름을 기대하고 있습니다.' },
+      gramCheck: '재귀동사나 비인칭 es로 말했다(ich freue mich, es regnet)', gramNote: '재귀동사·es {v}회',
+      gramRe: /\b(freue|freust|freut|interessiere|interessierst|interessiert|ärgere|ärgerst|ärgert|fühle|fühlst|fühlt|erinnere|beeile|setze|wasche) (mich|dich|sich|uns|euch)\b|\b(warte|wartest|wartet|denke|denkst|denkt) (auf|an)\b|\bes (regnet|schneit|ist kalt|ist warm|ist heiß|ist schön)\b|\b(regnet|schneit) es\b|\bist es (kalt|warm|heiß|schön|windig|sonnig)\b/
+    },
+    {
+      no: '13', title: 'Warum lernst du Deutsch?', titleKo: '왜 독일어를 배웁니까?', topicDe: 'Gründe und Pläne', topicKo: '이유와 계획',
+      gramKo: '접속사 · 종속절 — weil …, wenn …, dass …, obwohl … (동사는 끝에)',
+      lang: 'Präsens, Nebensätze mit weil, wenn, dass und obwohl (Verb am Ende).',
+      facts: 'Du lernst Deutsch, weil du in Deutschland arbeitest. Wenn du Zeit hast, liest du. Du findest, dass Deutsch schwer, aber schön ist. Du lernst jeden Tag Deutsch, obwohl du wenig Zeit hast.',
+      recast: ['Reisen.', 'Ah, du lernst Deutsch, weil du gern reist. Schön!'],
+      steps: [
+        { q: 'Warum lernst du Deutsch?', ko: '왜 독일어를 배웁니까?', fr: 'Ich lerne Deutsch, weil ich … (동사는 끝에)', frKo: '저는 … 때문에 독일어를 배웁니다.', w: [['weil ich gern reise', '여행을 좋아해서'], ['weil ich in Deutschland studieren will', '독일에서 공부하고 싶어서'], ['weil Deutsch schön ist', '독일어가 아름다워서']], ex: 'Ich lerne Deutsch, weil ich gern reise.', exKo: '저는 여행을 좋아해서 독일어를 배웁니다.', tip: 'weil 문장에서 동사는 맨 끝: weil ich gern reise' },
+        { q: 'Was machst du, wenn du Zeit hast?', ko: '시간이 있으면 무엇을 합니까?', fr: 'Wenn ich Zeit habe, … ich …', frKo: '시간이 있으면 저는 …합니다.', w: [['lese ich', '책을 읽는다'], ['treffe ich Freunde', '친구들을 만난다'], ['schlafe ich', '잠을 잔다']], ex: 'Wenn ich Zeit habe, lese ich.', exKo: '시간이 있으면 저는 책을 읽습니다.', tip: 'Wenn …, 다음에는 동사가 먼저: lese ich' },
+        { q: 'Findest du, dass Deutsch schwer ist?', ko: '독일어가 어렵다고 생각합니까?', fr: 'Ja, ich finde, dass Deutsch … ist.', frKo: '네, 저는 독일어가 …하다고 생각합니다.', w: [['schwer', '어렵다'], ['leicht', '쉽다'], ['interessant', '흥미롭다']], ex: 'Ja, ich finde, dass Deutsch schwer ist.', exKo: '네, 저는 독일어가 어렵다고 생각합니다.', tip: 'dass 문장에서 동사는 맨 끝: dass Deutsch schwer ist' },
+        { q: 'Lernst du jeden Tag Deutsch?', ko: '매일 독일어를 공부합니까?', fr: 'Ja, ich lerne jeden Tag, obwohl ich … / Nein, weil ich …', frKo: '네, …지만 매일 공부합니다. / 아니요, … 때문입니다.', w: [['obwohl ich müde bin', '피곤하지만'], ['obwohl ich wenig Zeit habe', '시간이 적지만'], ['weil ich keine Zeit habe', '시간이 없어서']], ex: 'Ja, ich lerne jeden Tag, obwohl ich wenig Zeit habe.', exKo: '네, 저는 시간이 적지만 매일 공부합니다.', tip: 'obwohl · weil 문장에서 동사는 맨 끝: obwohl ich müde bin' }
+      ],
+      ask: { q: 'Und du? Warum lernst du Deutsch?', ko: '당신은요? 왜 독일어를 배웁니까?', ans: 'Ich lerne Deutsch, weil ich in Deutschland arbeite.', ansKo: '저는 독일에서 일하기 때문에 독일어를 배웁니다.' },
+      gramCheck: '접속사 문장으로 말했다(weil …, wenn …, dass …, obwohl …)', gramNote: '접속사 {v}회',
+      gramRe: /\b(weil|dass|wenn|ob|obwohl)\b/
+    },
+    {
+      no: '14', title: 'Menschen und Dinge beschreiben', titleKo: '사람과 사물 설명하기', topicDe: 'Filme, Freunde und Orte', topicKo: '영화, 친구, 장소',
+      gramKo: '관계문 — Filme, die lustig sind / ein Mensch, der mir hilft',
+      lang: 'Präsens, einfache Relativsätze mit der, die, das (Das ist ein Mensch, der mir hilft) und Nebensätze mit weil und dass.',
+      facts: 'Du magst Filme, die spannend sind. Ein guter Freund ist für dich ein Mensch, der gut zuhört. Du kennst eine Kollegin, die Deutsch und Polnisch spricht. In deiner Nähe gibt es eine Bäckerei, die du magst.',
+      recast: ['Lustig.', 'Ah, du magst Filme, die lustig sind. Ich auch!'],
+      steps: [
+        { q: 'Was für Filme magst du?', ko: '어떤 영화를 좋아합니까?', fr: 'Ich mag Filme, die … sind.', frKo: '저는 …한 영화를 좋아합니다.', w: [['lustig', '웃기다'], ['spannend', '흥미진진하다'], ['kurz', '짧다']], ex: 'Ich mag Filme, die lustig sind.', exKo: '저는 웃긴 영화를 좋아합니다.', tip: 'die Filme → die … sind (동사는 끝에)' },
+        { q: 'Was ist für dich ein guter Freund?', ko: '당신에게 좋은 친구는 어떤 사람입니까?', fr: 'Ein guter Freund ist ein Mensch, der …', frKo: '좋은 친구는 …하는 사람입니다.', w: [['mir hilft', '나를 도와준다'], ['gut zuhört', '잘 들어 준다'], ['viel lacht', '많이 웃는다']], ex: 'Ein guter Freund ist ein Mensch, der mir hilft.', exKo: '좋은 친구는 저를 도와주는 사람입니다.', tip: 'der Mensch → der … hilft (동사는 끝에)' },
+        { q: 'Kennst du jemanden, der Deutsch spricht?', ko: '독일어를 하는 사람을 압니까?', fr: 'Ja, ich kenne einen Mann, der … / eine Frau, die …', frKo: '네, 저는 …하는 남자 / 여자를 압니다.', w: [['einen Mann, der Deutsch spricht', '독일어를 하는 남자'], ['eine Frau, die Deutsch spricht', '독일어를 하는 여자'], ['eine Lehrerin, die Deutsch spricht', '독일어를 하는 여자 선생님']], ex: 'Ja, ich kenne eine Lehrerin, die Deutsch spricht.', exKo: '네, 저는 독일어를 하는 선생님을 압니다.', tip: 'einen Mann → der … · eine Frau → die …' },
+        { q: 'Gibt es in deiner Nähe ein Café, das du magst?', ko: '당신 집 근처에 마음에 드는 카페가 있습니까?', fr: 'Ja, es gibt ein Café, das ich mag. / Nein, es gibt kein Café, das ich mag.', frKo: '네, 제가 좋아하는 카페가 있습니다. / 아니요, 제가 좋아하는 카페는 없습니다.', w: [['ein Café, das ich mag', '내가 좋아하는 카페'], ['eine Bäckerei, die ich mag', '내가 좋아하는 빵집'], ['ein Restaurant, das ich mag', '내가 좋아하는 식당']], ex: 'Ja, es gibt ein Café, das ich mag.', exKo: '네, 제가 좋아하는 카페가 있습니다.', tip: 'das Café → das ich mag (4격 관계대명사)' }
+      ],
+      ask: { q: 'Und du? Was für Filme magst du?', ko: '당신은요? 어떤 영화를 좋아합니까?', ans: 'Ich mag Filme, die spannend sind.', ansKo: '저는 흥미진진한 영화를 좋아합니다.' },
+      gramCheck: '관계문으로 말했다(Filme, die lustig sind / ein Mensch, der mir hilft)', gramNote: '관계문 {v}회', gramYes: 1,
+      gramRe: /\b(filme|film|freund|freundin|mensch|menschen|frau|mann|lehrer|lehrerin|kollege|kollegin|café|cafe|restaurant|bäckerei|leute|stadt|buch|bücher|jemand|jemanden)\s+(der|die|das|den|dem|denen)\s+(\S+\s+){0,5}?(ist|sind|hat|hilft|spricht|sprechen|wohnt|arbeitet|lacht|zuhört|mag|magst|kenne|liegt|heißt|kocht|gefällt|macht|spielt)\b/
+    },
+    {
+      no: '15', title: 'Was wird gemacht?', titleKo: '무엇이 이루어집니까?', topicDe: 'Essen, Sprachen und Geschäfte', topicKo: '음식, 언어, 가게',
+      gramKo: '수동태 — wird verkauft, wird gegessen, wird gesprochen',
+      lang: 'Präsens, einfaches Passiv (Das wird verkauft, Das wird gegessen) und Hauptsätze.',
+      facts: 'Du arbeitest in einer Apotheke. Dort wird Medizin verkauft. In Polen wird viel Suppe gegessen. Der Supermarkt bei dir wird um acht Uhr geöffnet.',
+      recast: ['Kaffee.', 'Ah, im Café wird Kaffee verkauft. Genau!'],
+      steps: [
+        { q: 'Was wird im Café verkauft?', ko: '카페에서는 무엇을 팝니까?', fr: 'Im Café wird … verkauft.', frKo: '카페에서는 …을(를) 팝니다.', w: [['Kaffee', '커피'], ['Kuchen', '케이크'], ['Tee', '차']], ex: 'Im Café wird Kaffee verkauft.', exKo: '카페에서는 커피를 팝니다.', tip: 'wird + 과거분사(문장 끝): wird … verkauft' },
+        { q: 'Was wird in Korea viel gegessen?', ko: '한국에서는 무엇을 많이 먹습니까?', fr: 'In Korea wird viel … gegessen.', frKo: '한국에서는 …을(를) 많이 먹습니다.', w: [['Reis', '쌀(밥)'], ['Kimchi', '김치'], ['Gemüse', '채소']], ex: 'In Korea wird viel Reis gegessen.', exKo: '한국에서는 쌀을 많이 먹습니다.', tip: 'essen → wird gegessen' },
+        { q: 'Welche Sprache wird in Österreich gesprochen?', ko: '오스트리아에서는 어떤 언어를 씁니까?', fr: 'In Österreich wird … gesprochen.', frKo: '오스트리아에서는 …을(를) 씁니다.', w: [['Deutsch', '독일어'], ['gesprochen', '말해진다(쓴다)']], ex: 'In Österreich wird Deutsch gesprochen.', exKo: '오스트리아에서는 독일어를 씁니다.', tip: 'sprechen → wird gesprochen' },
+        { q: 'Wann wird der Supermarkt geöffnet?', ko: '슈퍼마켓은 몇 시에 문을 엽니까?', fr: 'Der Supermarkt wird um … Uhr geöffnet.', frKo: '슈퍼마켓은 … 시에 문을 엽니다.', w: [['um acht Uhr', '8시에'], ['um neun Uhr', '9시에'], ['um zehn Uhr', '10시에']], ex: 'Der Supermarkt wird um acht Uhr geöffnet.', exKo: '슈퍼마켓은 8시에 문을 엽니다.', tip: 'öffnen → wird geöffnet' }
+      ],
+      ask: { q: 'Und in Polen? Was wird dort viel gegessen?', ko: '그럼 폴란드에서는요? 그곳에서는 무엇을 많이 먹습니까?', ans: 'In Polen wird viel Suppe gegessen.', ansKo: '폴란드에서는 수프를 많이 먹습니다.' },
+      gramCheck: '수동태로 말했다(wird … verkauft, wird … gegessen)', gramNote: '수동태 {v}회',
+      gramRe: /\b(wird|werden|wurde|wurden)\b(\s+\S+){0,5}\s+(ge[a-zäöüß]{2,}(t|en)|(be|ver|er|ent|zer)[a-zäöüß]{2,}(t|en)|[a-zäöüß]*(an|auf|aus|ein|mit|zurück|vor)ge[a-zäöüß]{2,}(t|en))\b/
+    },
+    {
+      no: '16', title: 'Wenn ich viel Geld hätte …', titleKo: '돈이 많다면 …', topicDe: 'Wünsche und Träume', topicKo: '바람과 꿈',
+      gramKo: '접속법 II — ich hätte gern, ich würde gern, wenn ich … hätte',
+      lang: 'Konjunktiv II (ich hätte gern, ich würde, wenn ich … hätte), Präsens und Nebensätze mit wenn.',
+      facts: 'Du hättest gern einen Kaffee. Du würdest gern in Berlin wohnen. Wenn du viel Geld hättest, würdest du ein Haus am Meer kaufen. Wenn du mehr Zeit hättest, würdest du Gitarre lernen.',
+      recast: ['Reisen.', 'Ah, du würdest reisen. Schön!'],
+      steps: [
+        { q: 'Was hättest du gern, Kaffee oder Tee?', ko: '커피와 차 중 무엇으로 하겠습니까?', fr: 'Ich hätte gern einen … / ein …', frKo: '저는 …(으)로 하겠습니다.', w: [['einen Kaffee', '커피 한 잔'], ['einen Tee', '차 한 잔'], ['ein Wasser', '물 한 잔']], ex: 'Ich hätte gern einen Tee.', exKo: '저는 차 한 잔으로 하겠습니다.', tip: 'Ich hätte gern … = 정중하게 원하는 것을 말할 때' },
+        { q: 'Wo würdest du gern wohnen?', ko: '어디에서 살고 싶습니까?', fr: 'Ich würde gern … wohnen.', frKo: '저는 …에서 살고 싶습니다.', w: [['am Meer', '바닷가에'], ['in Berlin', '베를린에'], ['auf dem Land', '시골에']], ex: 'Ich würde gern am Meer wohnen.', exKo: '저는 바닷가에서 살고 싶습니다.', tip: 'würde + 동사 원형(문장 끝)' },
+        { q: 'Was würdest du machen, wenn du viel Geld hättest?', ko: '돈이 많다면 무엇을 하겠습니까?', fr: 'Wenn ich viel Geld hätte, würde ich … (동사 원형)', frKo: '돈이 많다면 저는 …하겠습니다.', w: [['reisen', '여행하다'], ['ein Haus kaufen', '집을 사다'], ['nicht mehr arbeiten', '더 이상 일하지 않다']], ex: 'Wenn ich viel Geld hätte, würde ich reisen.', exKo: '돈이 많다면 저는 여행을 하겠습니다.', tip: 'Wenn ich … hätte, würde ich … (동사 원형)' },
+        { q: 'Was würdest du machen, wenn du mehr Zeit hättest?', ko: '시간이 더 있다면 무엇을 하겠습니까?', fr: 'Wenn ich mehr Zeit hätte, würde ich … (동사 원형)', frKo: '시간이 더 있다면 저는 …하겠습니다.', w: [['mehr Sport machen', '운동을 더 하다'], ['mehr lesen', '책을 더 읽다'], ['Gitarre lernen', '기타를 배우다']], ex: 'Wenn ich mehr Zeit hätte, würde ich mehr Sport machen.', exKo: '시간이 더 있다면 저는 운동을 더 하겠습니다.', tip: 'hätte + Zeit / würde + 동사 원형' }
+      ],
+      ask: { q: 'Und du? Was würdest du machen, wenn du viel Geld hättest?', ko: '당신은요? 돈이 많다면 무엇을 하겠습니까?', ans: 'Ich würde ein Haus am Meer kaufen.', ansKo: '저는 바닷가에 집을 사겠습니다.' },
+      gramCheck: '접속법 II로 말했다(ich hätte gern, ich würde …)', gramNote: '접속법 {v}회',
+      gramRe: /\b(ich|du|er|sie|wir|man)\s+(würde|würdest|würden|hätte|hättest|hätten|wäre|wärst|wären|könnte|könntest|könnten)\b|\b(würde|hätte|wäre|könnte)\s+ich\b/
+    }
   ];
 
   function build(c) {
     const label = 'Lektion ' + c.no;
-    const persona = 'Deine erfundenen Angaben (bleibe dabei): Du heißt Mila, bist achtundzwanzig und kommst aus Krakau in Polen, lebst seit drei Jahren in Deutschland und arbeitest als Apothekenhelferin. ' + c.facts;
-    const head = 'Ihr führt ein kurzes Übungsgespräch von etwa zwei Minuten zur ' + label + ' „' + c.title + '“ (Thema: ' + c.topicDe + '). A übt Sprechen, es gibt kein richtig oder falsch bei den Inhalten.\n' + persona +
-      '\nDiese Wörter bringst du im Gespräch ganz natürlich vor, aber nur wenn sie passen: ' + c.pwords + '.\nMögliche Fragen an A, eine nach der anderen: ' + c.pqs.map(q => '„' + q + '“').join(' ');
-    const rule6 = 'Bleibe beim Thema der Lektion. Sprich auf A1-Niveau in ganz kurzen, einfachen Sätzen (höchstens etwa acht Wörter): ' + c.lang + ' Benutze keine seltenen Wörter und duze A.';
-    const rules = RULES.concat([rule6]).map((r, i) => (i + 3) + '. ' + r).join('\n');
-    const say = c.say.map(s => '„' + s + '“');
-    const late = parseInt(c.no, 10) >= 13;
-    const reasonRe = /\b(weil|denn|deshalb|deswegen)\b/;
     return Object.assign({}, BASE, {
       askStarter: false, starterFixed: 'partner',
-      n: 1, no: 'Teil 1', name: 'Gespräch zur Lektion', ko: 'Lektion 주제 대화',
-      summary_ko: c.summary_ko,
-      timing: { official: 120, extra: 60, prep: 30 }, minFinish: 30, prepLabel: '카드 읽기(약 30초)',
-      instruction: 'Sie sprechen mit Ihrer Partnerin/Ihrem Partner etwa zwei Minuten über das Thema der Lektion: „' + c.title + '“. Die Fragen und die Wörter helfen Ihnen. Fragen Sie auch Ihre Partnerin/Ihren Partner und antworten Sie in ganzen Sätzen.',
-      instruction_ko: '파트너와 약 2분 동안 이 과의 주제 「' + c.titleKo + '」에 대해 이야기합니다. 질문과 단어를 참고하십시오. 파트너에게도 질문하고, 완전한 문장으로 답하십시오.',
+      n: 1, no: 'Teil 1', name: 'Gespräch in Schritten', ko: '단계별 대화',
+      summary_ko: '「' + c.titleKo + '」 주제로 파트너가 짧은 질문 네 개를 하나씩 합니다. 화면의 대답 틀과 단어를 보고 대답한 뒤, 마지막에 파트너에게 질문 하나를 합니다.',
+      timing: { official: 240, extra: 60, prep: 60 }, minFinish: 20, prepLabel: '대화 순서 읽기(약 1분)',
+      instruction: 'Ihre Partnerin/Ihr Partner stellt Ihnen vier kurze Fragen. Die Frage, ein Antwortmuster und Wörter stehen auf dem Bildschirm. Am Ende stellen Sie selbst eine Frage.',
+      instruction_ko: '파트너가 짧은 질문 네 개를 하나씩 합니다. 화면의 질문과 대답 틀, 단어를 보고 대답하십시오. 마지막에 파트너에게 질문 하나를 합니다.',
       sheet: [
         { t: 'h', s: label + ' · ' + c.title, ko: c.titleKo },
         { t: 'i', s: 'Thema: ' + c.topicDe, ko: c.topicKo },
-        { t: 'ul', items: c.leit, ko: c.leitKo },
-        { t: 'p', x: true, s: '아래 카드는 이 과의 핵심 어휘와 표현입니다. 가능한 한 많이 사용하십시오. 질문에 한 단어로만 답하지 말고 문장으로 말한 뒤 파트너에게도 되물어 보십시오.' },
-        { t: 'cards', items: c.cards, ko: c.cardsKo },
-        { t: 'redemittel', items: c.help, ko: c.helpKo }
+        { t: 'ul', items: c.steps.map(s => s.q), ko: c.steps.map(s => s.ko) }
       ],
-      choice: null,
-      intro: 'Wir machen eine Übung zur ' + label + ': „' + c.title + '“. Sie sprechen etwa zwei Minuten mit {dat} über das Thema ' + c.topicDe + '. {n} beginnt.',
-      procedure: 'Sie und die Partnerin sprechen frei über das Thema der Lektion. Man fragt sich gegenseitig und antwortet in ganzen Sätzen. Ich sage Bescheid, wenn die Zeit um ist.',
-      flow: {
-        student: head + '\n1. A beginnt und sagt etwas zum Thema oder stellt dir eine Frage. Reagiere kurz darauf und antworte, wenn A fragt, mit einem kleinen Detail. Dann stellst du die erste Frage aus deiner Liste.\n2. Führe das Gespräch mit den Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules,
-        partner: head + '\n1. Auf „Bitte beginnen Sie.“ sage kurz „Hallo! Ich bin {n}. Heute sprechen wir über ' + c.topicDe + '.“ und stelle sofort die erste Frage: „' + c.pqs[0] + '“\n2. Höre die Antwort, reagiere kurz und führe das Gespräch mit den weiteren Fragen weiter, aber nur eine Frage pro Beitrag.\n' + rules
-      },
-      redemittel: 'Fragen und Antworten: ' + say.join(' · ') + ' · „Und du?“ · „Ich mag …“ · „Das ist gut.“',
-      phrases: c.phrases.concat([
-        ['Und du? / Wie ist das bei dir?', /\b(und du|wie ist das bei dir|wie ist es bei dir)\b/],
-        late ? ['weil … / denn … / deshalb …', reasonRe] : ['Ich mag … / Ich finde … / gern', /\b(ich mag|ich finde|gern|gerne|lieber)\b/]
-      ]),
+      choice: null, intro: '', procedure: '',
+      flow: { student: '', partner: '' },
+      redemittel: REDEMITTEL,
+      phrases: [
+        [c.gramKo.split(' — ')[0], c.gramRe],
+        ['Und du? (마지막 질문)', /\b(und du|und dir|und in polen|und bei dir)\b/],
+        ['Wie bitte? / Noch einmal, bitte. / Langsam, bitte.', /\b(wie bitte|noch einmal|noch mal|langsam)\b/]
+      ],
       checks: [
-        { ko: '파트너에게 질문을 2개 이상 했다', kind: 'questions', yes: 2, maybe: 1 },
-        { ko: '파트너의 질문에 예·아니요보다 길게 답했다', kind: 'answers', yes: 4, maybe: 2 },
-        late
-          ? { ko: '이유를 한 번 이상 덧붙였다(weil, denn, deshalb)', kind: 'count', re: reasonRe, yes: 1, maybe: 0, note: '이유 표현 {v}회' }
-          : { ko: '「Und du?」로 파트너에게 되물었다', kind: 'count', re: /\b(und du|und dir|und bei dir|wie ist das bei dir)\b/, yes: 1, maybe: 0, note: '되묻기 {v}회' },
-        { ko: '이 과의 주제 어휘를 사용했다(' + c.groupsKo + ')', kind: 'topics', groups: c.groups },
-        { ko: c.gramKo, kind: 'count', re: c.gramRe, yes: c.gramYes || 2, maybe: c.gramYes ? 0 : 1, note: c.gramNote },
-        { ko: '2분 대화에 맞는 분량으로 말했다', kind: 'words', yes: 30, maybe: 15, note: '내 단어 수 {v}(2분 대화에서 30단어 이상이 목표)' }
-      ]
+        { ko: '질문 네 개에 모두 대답했다', kind: 'gsteps', yes: 4, maybe: 2 },
+        { ko: '세 단어 이상의 문장으로 대답했다(질문 두 개 이상)', kind: 'gsent', yes: 2, maybe: 1 },
+        { ko: c.gramCheck, kind: 'count', re: c.gramRe, yes: c.gramYes || 2, maybe: c.gramYes ? 0 : 1, note: c.gramNote },
+        { ko: '마지막에 파트너에게 질문했다', kind: 'gask' }
+      ],
+      rubric: RUB_A1G, evalNotes: ['이 과의 문법: ' + c.gramKo],
+      guided: { no: c.no, title: c.title, titleKo: c.titleKo, topicDe: c.topicDe, topicKo: c.topicKo, gramKo: c.gramKo, lang: c.lang, facts: c.facts, recast: c.recast, ctx: c.ctx || null, steps: c.steps, ask: c.ask }
     });
   }
-
-  const CH = [
-    {
-      no: '01', title: 'Im Zimmer', topicDe: 'Zimmer und Möbel',
-      lead_ko: '방 안에 있는 물건을 명사와 관사(der, die, das, ein, eine)를 써서 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '방에 있는 가구와 물건을 관사와 함께 말하고, 필요한 물건을 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '방 안에서', topicKo: '방과 가구',
-      leitKo: ['방에 무엇이 있습니까?', '탁자와 의자가 있습니까?', '소파가 있습니까?', '창문 옆에 무엇이 있습니까?', '무엇을 더 사고 싶습니까?'],
-      cardsKo: ['탁자', '의자', '램프', '침대', '창문', '문', '책', '옷장'],
-      sayKo: ['방에 무엇이 있습니까?', '저는 탁자 하나와 의자 하나가 있습니다.', '침대가 있습니다.', '저는 램프를 봅니다.', '당신은요?'],
-      help: ['Was hast du im Zimmer?', 'Ich habe einen Tisch und einen Stuhl.', 'Es gibt ein Bett.', 'Ich habe keine Lampe.', 'Ich sehe das Fenster.', 'Und du?'],
-      helpKo: ['방에 무엇이 있습니까?', '저는 탁자 하나와 의자 하나가 있습니다.', '침대가 있습니다.', '저는 램프가 없습니다.', '저는 창문이 보입니다.', '당신은요?'],
-      leit: ['Was hast du im Zimmer?', 'Hast du einen Tisch und einen Stuhl?', 'Gibt es ein Sofa?', 'Was siehst du am Fenster?', 'Was möchtest du noch kaufen?'],
-      cards: ['der Tisch', 'der Stuhl', 'die Lampe', 'das Bett', 'das Fenster', 'die Tür', 'das Buch', 'der Schrank'],
-      say: ['Was hast du im Zimmer?', 'Ich habe einen Tisch und einen Stuhl.', 'Es gibt ein Bett.', 'Ich sehe die Lampe.', 'Und du?'],
-      facts: 'Du wohnst in einer kleinen Wohnung. Im Zimmer hast du ein Bett, einen Schrank, einen Tisch und zwei Stühle. Es gibt eine Lampe und ein Fenster. Ein Sofa hast du nicht. Du möchtest eine Pflanze kaufen.',
-      pwords: 'der Tisch, der Stuhl, die Lampe, das Bett, das Fenster',
-      pqs: ['Was hast du im Zimmer?', 'Hast du einen Tisch und einen Stuhl?', 'Gibt es ein Sofa?', 'Was siehst du am Fenster?', 'Was möchtest du noch kaufen?'],
-      lang: 'nur Präsens, ein, eine, einen, der, die, das, keine Nebensätze.',
-      phrases: [['Ich habe einen / eine / ein …', /\bich habe (noch )?(einen|eine|ein|keinen|keine|kein)\b/], ['Es gibt einen / eine / ein …', /\bes gibt (einen|eine|ein|keinen|keine|kein)\b/], ['Ich sehe den / die / das …', /\bich sehe (den|die|das|einen|eine|ein)\b/], ['der Tisch / die Lampe / das Bett', /\b(tisch|lampe|bett|stuhl|schrank|fenster)\b/]],
-      groupsKo: '가구·물건·방',
-      groups: [/(tisch|stuhl|bett|schrank|sofa|lampe|regal)/, /(fenster|tür|buch|bild|pflanze|handy|tasche)/, /(zimmer|wohnung|haus|küche)/],
-      gramKo: '명사 앞에 알맞은 관사를 썼다(ein·eine·einen, den·die·das)', gramRe: /\b(habe|haben|hat|sehe|brauche|kaufe|suche|möchte|kenne|gibt es) (noch )?(einen|eine|ein|den|die|das|keinen|keine|kein)\b/, gramNote: '관사 표현 {v}회'
-    },
-    {
-      no: '02', title: 'Wer ist das?', topicDe: 'Freunde und Kollegen',
-      lead_ko: '친구와 동료를 소개하고, 인칭대명사(er, sie, ihn, ihm, ihr …)를 써서 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '친구와 동료에 대해 인칭대명사로 말하고, 서로 아는 사람을 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '이 사람은 누구입니까?', topicKo: '친구와 동료',
-      leitKo: ['가장 친한 친구는 누구입니까?', '그 친구를 자주 만납니까?', '직장 동료를 압니까?', '친구를 기꺼이 도와줍니까?', '친구의 사진이 있습니까?'],
-      cardsKo: ['남자 친구', '여자 친구', '여자 동료', '사진', '알다', '돕다', '저는 그를 잘 압니다.', '저는 그녀를 기꺼이 도와줍니다.'],
-      sayKo: ['이 사람은 누구입니까?', '저는 그를 잘 압니다.', '저는 그녀를 자주 만납니다.', '저는 그에게 기꺼이 도움을 줍니다.', '당신은 그녀를 압니까?'],
-      help: ['Wer ist das?', 'Das ist meine Freundin.', 'Ich kenne ihn gut.', 'Ich sehe sie oft.', 'Ich helfe ihr gern.', 'Kennst du sie?'],
-      helpKo: ['이 사람은 누구입니까?', '이분은 제 친구입니다.', '저는 그를 잘 압니다.', '저는 그녀를 자주 만납니다.', '저는 그녀를 기꺼이 도와줍니다.', '당신은 그녀를 압니까?'],
-      leit: ['Wer ist dein bester Freund oder deine beste Freundin?', 'Siehst du ihn oder sie oft?', 'Kennst du die Kollegen?', 'Hilfst du gern?', 'Hast du ein Foto?'],
-      cards: ['der Freund', 'die Freundin', 'die Kollegin', 'das Foto', 'kennen', 'helfen', 'Ich kenne ihn gut.', 'Ich helfe ihr gern.'],
-      say: ['Wer ist das?', 'Ich kenne ihn gut.', 'Ich sehe sie oft.', 'Ich helfe ihr gern.', 'Kennst du sie?'],
-      facts: 'Deine beste Freundin heißt Ola. Sie wohnt auch in Deutschland. Du siehst sie oft, und du hilfst ihr gern. Dein Kollege heißt Jan. Du kennst ihn gut, er ist nett. Du hast ein Foto von Ola auf dem Handy.',
-      pwords: 'die Freundin, der Kollege, das Foto, helfen, kennen',
-      pqs: ['Wer ist das auf dem Foto?', 'Kennst du ihn oder sie gut?', 'Siehst du sie oft?', 'Hilfst du ihm oder ihr gern?', 'Wie findest du die Kollegen?'],
-      lang: 'nur Präsens, er, sie, es, ihn, ihm, ihr, mich, dich, keine Nebensätze.',
-      phrases: [['Ich kenne ihn / sie gut', /\bich kenne (ihn|sie|es|dich|euch)\b/], ['Ich sehe sie oft', /\bich (sehe|treffe|besuche|mag) (ihn|sie|es|dich|euch)\b/], ['Ich helfe ihm / ihr gern', /\bich (helfe|schreibe|zeige|gebe) (ihm|ihr|dir|euch|ihnen)\b/], ['Das ist mein Freund / meine Freundin', /\b(freund|freundin|kollege|kollegin|bruder|schwester)\b/]],
-      groupsKo: '사람·관계·동사',
-      groups: [/(freund|freundin|kollege|kollegin|chef|nachbar|mann|frau)/, /(foto|handy|bild)/, /(kenne|kennst|helfe|hilfst|sehe|siehst|treffe|besuche|mag)/],
-      gramKo: '인칭대명사의 4격·3격을 썼다(ihn, sie, ihm, ihr, dir, mir)', gramRe: /\b(kenne|kennst|sehe|siehst|mag|magst|liebe|besuche|treffe|brauche) (ihn|sie|es|dich|mich|uns|euch)\b|\b(helfe|hilfst|hilft|gehört|gefällt|schenke|schreibe|zeige|gebe) (ihm|ihr|dir|mir|uns|euch|ihnen)\b/, gramNote: '대명사 {v}회'
-    },
-    {
-      no: '03', title: 'Mein Tag', topicDe: 'Tagesablauf und Essen',
-      lead_ko: '하루 일과를 현재형 동사 변화(ich lerne, du isst, er schläft …)를 써서 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '하루 일과와 식사, 이동을 현재형으로 말하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '나의 하루', topicKo: '하루 일과와 식사',
-      leitKo: ['어디에서 일하거나 공부합니까?', '아침에 무엇을 먹습니까?', '어떻게 직장이나 학교에 갑니까?', '저녁에 무엇을 합니까?', '몇 시간 잡니까?'],
-      cardsKo: ['일하다', '먹다', '마시다', '자다', '(탈것으로) 가다', '읽다', '요리하다', '저는 매일 일합니다.'],
-      sayKo: ['오늘 무엇을 합니까?', '저는 약국에서 일합니다.', '저는 아침에 빵을 먹습니다.', '저는 버스로 갑니다.', '당신은 무엇을 합니까?'],
-      help: ['Was machst du heute?', 'Ich lerne Deutsch.', 'Ich esse Brot und trinke Tee.', 'Ich fahre mit dem Bus.', 'Ich schlafe sieben Stunden.', 'Und du, was machst du?'],
-      helpKo: ['오늘 무엇을 합니까?', '저는 독일어를 배웁니다.', '저는 빵을 먹고 차를 마십니다.', '저는 버스로 갑니다.', '저는 일곱 시간 잡니다.', '당신은 무엇을 합니까?'],
-      leit: ['Wo arbeitest du?', 'Was isst du am Morgen?', 'Wie fährst du zur Arbeit?', 'Was machst du am Abend?', 'Wie lange schläfst du?'],
-      cards: ['arbeiten', 'essen', 'trinken', 'schlafen', 'fahren', 'lesen', 'kochen', 'Ich arbeite jeden Tag.'],
-      say: ['Was machst du heute?', 'Ich arbeite in der Apotheke.', 'Ich esse Brot und trinke Tee.', 'Ich fahre mit dem Bus.', 'Und du, was machst du?'],
-      facts: 'Du arbeitest in einer Apotheke. Du isst am Morgen Brot und trinkst Tee. Du fährst mit dem Bus zur Arbeit. Am Abend kochst du und liest ein Buch. Du schläfst sieben Stunden.',
-      pwords: 'arbeiten, essen, trinken, fahren, schlafen, lesen',
-      pqs: ['Wo arbeitest du?', 'Was isst du am Morgen?', 'Wie fährst du zur Arbeit?', 'Was machst du am Abend?', 'Wie lange schläfst du?'],
-      lang: 'nur Präsens (ich arbeite, du isst, er fährt), sein und haben, keine Nebensätze.',
-      phrases: [['Ich arbeite / lerne / koche', /\bich (arbeite|lerne|koche|wohne|spiele|lebe|mache)\b/], ['Ich esse / trinke / lese', /\bich (esse|trinke|lese|schlafe|fahre|sehe)\b/], ['Er / Sie isst, fährt, schläft', /\b(er|sie|man) (isst|fährt|schläft|liest|sieht|arbeitet|kocht)\b/], ['am Morgen / am Abend', /\b(am morgen|am abend|am mittag|jeden tag|morgens|abends)\b/]],
-      groupsKo: '일과·음식·이동',
-      groups: [/(arbeit|apotheke|büro|schule|lerne|kurs)/, /(brot|tee|kaffee|wasser|essen|frühstück|mittagessen|abendessen|kochen|trinke|esse)/, /(bus|bahn|auto|fahre|fährt|schlaf|lese|buch|abend|morgen)/],
-      gramKo: '현재형 동사 변화를 올바르게 썼다(ich arbeite, du isst, er fährt, ich bin, ich habe)', gramRe: /\b(ich|du|er|sie|wir|man) (arbeite|arbeitest|arbeitet|arbeiten|lerne|lernst|lernt|lernen|esse|isst|essen|trinke|trinkst|trinkt|trinken|schlafe|schläfst|schläft|fahre|fährst|fährt|fahren|lese|liest|lesen|koche|kochst|kocht|kochen|bin|bist|ist|habe|hast|hat|wohne|wohnst|wohnt)\b/, gramNote: '동사 변화 {v}회'
-    },
-    {
-      no: '04', title: 'Fragen und Zahlen', topicDe: 'Kennenlernen, Alter und Uhrzeit',
-      lead_ko: '처음 만난 사람처럼 의문사(wie, wo, woher, wann)로 질문하고 숫자와 시각을 파트너와 약 2분 동안 말합니다.',
-      summary_ko: '이름, 출신, 나이, 시각을 묻고 답하며 어순과 숫자를 파트너와 약 2분 동안 연습합니다.',
-      titleKo: '질문과 숫자', topicKo: '처음 만남, 나이, 시각',
-      leitKo: ['어디에서 왔습니까?', '어디에 삽니까?', '몇 살입니까?', '언제 일합니까?', '지금 몇 시입니까?'],
-      cardsKo: ['어디에서(출신)', '어디로', '언제', '몇 살', '전화번호', '시각', '지금 몇 시입니까?', '저는 여덟 시에 일합니다.'],
-      sayKo: ['어디에서 왔습니까?', '저는 폴란드에서 왔습니다.', '저는 스물여덟 살입니다.', '월요일에 저는 일합니다.', '지금 몇 시입니까?'],
-      help: ['Woher kommst du?', 'Ich komme aus Korea.', 'Ich wohne in …', 'Ich bin … Jahre alt.', 'Am Montag arbeite ich.', 'Wie spät ist es?'],
-      helpKo: ['어디에서 왔습니까?', '저는 한국에서 왔습니다.', '저는 …에 삽니다.', '저는 … 살입니다.', '월요일에 저는 일합니다.', '지금 몇 시입니까?'],
-      leit: ['Woher kommst du?', 'Wo wohnst du?', 'Wie alt bist du?', 'Wann arbeitest du?', 'Wie spät ist es jetzt?'],
-      cards: ['woher', 'wohin', 'wann', 'wie alt', 'die Telefonnummer', 'die Uhr', 'Wie spät ist es?', 'Um acht Uhr arbeite ich.'],
-      say: ['Woher kommst du?', 'Ich komme aus Polen.', 'Ich bin achtundzwanzig Jahre alt.', 'Am Montag arbeite ich.', 'Wie spät ist es?'],
-      facts: 'Du kommst aus Krakau und wohnst jetzt in Deutschland. Du bist achtundzwanzig. Du arbeitest von Montag bis Freitag, um acht Uhr beginnt die Arbeit. Deine Telefonnummer sagst du nur Freunden. Du fragst gern: „Wie spät ist es?“',
-      pwords: 'woher, wo, wann, wie alt, die Uhr',
-      pqs: ['Woher kommst du?', 'Wo wohnst du?', 'Wie alt bist du?', 'Wann arbeitest du?', 'Wie spät ist es jetzt?'],
-      lang: 'nur Präsens, W-Fragen, Zahlen bis hundert, keine Nebensätze.',
-      phrases: [['Woher / Wo / Wohin …?', /\b(woher|wohin|wo)\b/], ['Wann / Wie alt / Wie viel …?', /\b(wann|wie alt|wie viel|wie viele|wie lange)\b/], ['Am Montag arbeite ich', /\b(am [a-zäöüß]+|um [a-zäöüß]+ uhr|heute|jetzt|dann) (arbeite|gehe|komme|esse|trinke|habe|bin|fahre|wohne)\b/], ['Zahlen: zwanzig, dreißig …', /\b(zehn|zwanzig|dreißig|vierzig|fünfzig|sechzig|siebzig|achtzig|neunzig|hundert|[a-zäöüß]+und[a-zäöüß]+zig)\b/]],
-      groupsKo: '질문·숫자·시각과 요일',
-      groups: [/(woher|wohin|wo|wann|wer|was|wie alt|wie viel|wie spät)/, /(eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|zwanzig|dreißig|hundert|\d)/, /(uhr|montag|dienstag|mittwoch|donnerstag|freitag|samstag|sonntag|spät|halb|viertel)/],
-      gramKo: 'W-Frage를 쓰거나 동사를 둘째 자리에 두었다(Wann arbeitest du? Am Montag arbeite ich.)', gramRe: /\b(woher|wohin|wo|wann|wer|was|warum|wie alt|wie viel|wie viele|wie spät|wie lange) [a-zäöüß]+|\b(am [a-zäöüß]+|um [a-zäöüß]+ uhr|heute|jetzt|dann|morgen) (arbeite|gehe|komme|esse|trinke|habe|bin|fahre|wohne|lerne|beginnt)\b/, gramNote: '질문·어순 {v}회'
-    },
-    {
-      no: '05', title: 'Meine Familie', topicDe: 'Familie und Verwandte',
-      lead_ko: '가족을 소개하고, 소유관사(mein, dein, sein, ihr …)와 kein을 써서 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '가족 구성원과 직업, 사는 곳을 소유관사로 말하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '나의 가족', topicKo: '가족과 친척',
-      leitKo: ['당신의 가족은 어떻습니까?', '형제나 자매가 있습니까?', '부모님은 어디에 사십니까?', '아버지와 어머니는 무슨 일을 하십니까?', '아이가 있습니까, 아니면 반려동물이 있습니까?'],
-      cardsKo: ['어머니', '아버지', '형제(남자)', '자매', '부모님', '아이', '저의 어머니는 …에 삽니다.', '저는 자매가 없습니다.'],
-      sayKo: ['당신의 가족은 어떻습니까?', '저의 아버지는 선생님입니다.', '저의 남동생은 스물다섯 살입니다.', '저는 자매가 없습니다.', '당신의 부모님은 어디에 사십니까?'],
-      help: ['Wie ist deine Familie?', 'Ich habe einen Bruder.', 'Ich habe keine Schwester.', 'Mein Bruder ist … Jahre alt.', 'Meine Eltern wohnen in …', 'Wo wohnen deine Eltern?'],
-      helpKo: ['당신의 가족은 어떻습니까?', '저는 남자 형제가 한 명 있습니다.', '저는 여자 형제가 없습니다.', '저의 남자 형제는 … 살입니다.', '저의 부모님은 …에 사십니다.', '당신의 부모님은 어디에 사십니까?'],
-      leit: ['Wie ist deine Familie?', 'Hast du Geschwister?', 'Wo wohnen deine Eltern?', 'Welchen Beruf haben dein Vater und deine Mutter?', 'Hast du Kinder oder ein Haustier?'],
-      cards: ['die Mutter', 'der Vater', 'der Bruder', 'die Schwester', 'die Eltern', 'das Kind', 'Meine Mutter wohnt in …', 'Ich habe keine Schwester.'],
-      say: ['Wie ist deine Familie?', 'Mein Vater ist Lehrer.', 'Mein Bruder ist fünfundzwanzig.', 'Ich habe keine Schwester.', 'Wo wohnen deine Eltern?'],
-      facts: 'Deine Eltern wohnen in Krakau. Dein Vater ist Lehrer, deine Mutter arbeitet in einer Bank. Dein Bruder heißt Tomek und ist fünfundzwanzig. Du hast keine Schwester und keine Kinder. Du hast auch keinen Hund, aber deine Eltern haben eine Katze.',
-      pwords: 'die Eltern, der Bruder, die Mutter, der Vater',
-      pqs: ['Wie ist deine Familie?', 'Hast du Geschwister?', 'Wo wohnen deine Eltern?', 'Welchen Beruf hat dein Vater?', 'Hast du Kinder?'],
-      lang: 'nur Präsens, mein, dein, sein, ihr, kein, keine Nebensätze.',
-      phrases: [['Mein Vater / Meine Mutter …', /\b(mein|meine|meinen|meiner) (vater|mutter|bruder|schwester|eltern|kind|kinder|familie|oma|opa)\b/], ['Dein Bruder / Deine Eltern …', /\b(dein|deine|deinen|deiner) [a-zäöüß]+/], ['Ich habe keinen / keine / kein …', /\bich habe (keinen|keine|kein)\b/], ['Seine / Ihre Mutter …', /\b(sein|seine|seinen|ihr|ihre|ihren|unser|unsere) [a-zäöüß]+/]],
-      groupsKo: '가족·직업·거주지',
-      groups: [/(familie|mutter|vater|eltern|bruder|schwester|geschwister|kind|oma|opa|sohn|tochter)/, /(lehrer|lehrerin|arzt|bank|beruf|arbeitet|arbeite)/, /(wohnt|wohnen|wohne|haus|stadt|krakau|polen|katze|hund)/],
-      gramKo: '소유관사나 kein을 썼다(mein, dein, sein, ihr, kein)', gramRe: /\b(mein|meine|meinen|meinem|meiner|dein|deine|deinen|deinem|deiner|sein|seine|seinen|ihr|ihre|ihren|unser|unsere|unseren|euer|eure|kein|keine|keinen)\b/, gramNote: '소유관사·kein {v}회'
-    },
-    {
-      no: '06', title: 'Wo ist was?', topicDe: 'Orte und Wege in der Stadt',
-      lead_ko: '물건과 장소의 위치를 전치사와 격(auf dem Tisch, in die Stadt)을 써서 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '물건이 어디에 있는지, 어디로 가는지를 전치사와 격으로 말하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '무엇이 어디에 있습니까?', topicKo: '장소와 길',
-      leitKo: ['지금 어디에 있습니까?', '탁자 위에 무엇이 있습니까?', '가방은 어디에 있습니까?', '주말에 어디로 갑니까?', '집 근처에 무엇이 있습니까?'],
-      cardsKo: ['위에', '안에', '옆에', '아래에', '앞에', '뒤에', '책은 탁자 위에 있습니다.', '저는 도시로 갑니다.'],
-      sayKo: ['어디에 있습니까?', '책은 탁자 위에 있습니다.', '저는 부엌에 있습니다.', '저는 도시로 갑니다.', '당신은 어디로 갑니까?'],
-      help: ['Wo ist die Tasche?', 'Die Tasche ist auf dem Tisch.', 'Ich bin in der Küche.', 'Ich gehe in die Stadt.', 'Es gibt einen Park in der Nähe.', 'Wohin gehst du am Wochenende?'],
-      helpKo: ['가방은 어디에 있습니까?', '가방은 탁자 위에 있습니다.', '저는 부엌에 있습니다.', '저는 시내로 갑니다.', '근처에 공원이 있습니다.', '주말에 어디로 갑니까?'],
-      leit: ['Wo bist du jetzt?', 'Was liegt auf dem Tisch?', 'Wo ist die Tasche?', 'Wohin gehst du am Wochenende?', 'Was gibt es in der Nähe?'],
-      cards: ['auf', 'in', 'neben', 'unter', 'vor', 'hinter', 'Das Buch liegt auf dem Tisch.', 'Ich gehe in die Stadt.'],
-      say: ['Wo ist die Tasche?', 'Das Buch liegt auf dem Tisch.', 'Ich bin in der Küche.', 'Ich gehe in die Stadt.', 'Wohin gehst du?'],
-      facts: 'Du bist jetzt zu Hause in der Küche. Die Tasche steht neben dem Schrank. Das Handy liegt auf dem Tisch. Am Wochenende gehst du in die Stadt oder in den Park. Neben dem Haus gibt es einen Supermarkt.',
-      pwords: 'auf dem Tisch, in der Küche, neben dem Schrank, in die Stadt',
-      pqs: ['Wo bist du jetzt?', 'Was liegt auf dem Tisch?', 'Wo ist die Tasche?', 'Wohin gehst du am Wochenende?', 'Was gibt es in der Nähe?'],
-      lang: 'nur Präsens, Präpositionen mit dem, der, den, die, das, keine Nebensätze.',
-      phrases: [['auf / in / neben + dem, der', /\b(auf|in|an|neben|unter|über|vor|hinter|zwischen) (dem|der)\b/], ['in die Stadt / in den Park', /\b(in|auf|an) (die|den|das)\b/], ['im / am / zum / zur', /\b(im|am|zum|zur|vom|beim|ins)\b/], ['Wo …? / Wohin …?', /\b(wo|wohin)\b/]],
-      groupsKo: '장소·물건·위치',
-      groups: [/(küche|zimmer|haus|stadt|park|supermarkt|bahnhof|straße|schule|apotheke)/, /(tisch|schrank|tasche|handy|buch|stuhl|bett)/, /(liegt|liegen|steht|stehen|ist|bin|gehe|gehst|nähe)/],
-      gramKo: '장소 전치사와 알맞은 격을 썼다(auf dem Tisch, in der Küche, in die Stadt)', gramRe: /\b(auf|in|an|neben|unter|über|vor|hinter|zwischen) (dem|der|den|die|das)\b|\b(im|am|ins|zum|zur|vom|beim)\b/, gramNote: '전치사 표현 {v}회'
-    },
-    {
-      no: '07', title: 'Meine Kleidung', topicDe: 'Kleidung und Farben',
-      lead_ko: '옷과 색깔을 형용사 어미(ein roter Pullover, eine blaue Jacke)를 맞추어 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '좋아하는 옷과 색깔, 새 옷과 헌 옷을 형용사 어미와 함께 말하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '나의 옷', topicKo: '옷과 색깔',
-      leitKo: ['오늘 무엇을 입고 있습니까?', '어떤 색을 좋아합니까?', '새 옷이 있습니까?', '겨울에는 무엇을 입습니까?', '어떤 신발을 가지고 있습니까?'],
-      cardsKo: ['스웨터', '바지', '재킷', '신발', '원피스', '외투', '저는 빨간 스웨터를 입고 있습니다.', '저는 새 신발이 있습니다.'],
-      sayKo: ['오늘 무엇을 입고 있습니까?', '저는 파란 재킷이 있습니다.', '저는 빨간 스웨터를 좋아합니다.', '저는 새 신발이 있습니다.', '당신은 어떤 색을 좋아합니까?'],
-      help: ['Was trägst du heute?', 'Ich trage eine blaue Jacke.', 'Ich mag den roten Pullover.', 'Ich habe neue Schuhe.', 'Meine Hose ist schwarz.', 'Welche Farbe magst du?'],
-      helpKo: ['오늘 무엇을 입고 있습니까?', '저는 파란 재킷을 입고 있습니다.', '저는 빨간 스웨터를 좋아합니다.', '저는 새 신발이 있습니다.', '저의 바지는 검은색입니다.', '당신은 어떤 색을 좋아합니까?'],
-      leit: ['Was trägst du heute?', 'Welche Farbe magst du?', 'Hast du etwas Neues?', 'Was trägst du im Winter?', 'Was für Schuhe hast du?'],
-      cards: ['der Pullover', 'die Hose', 'die Jacke', 'die Schuhe', 'das Kleid', 'der Mantel', 'ein roter Pullover', 'neue Schuhe'],
-      say: ['Was trägst du heute?', 'Ich habe eine blaue Jacke.', 'Ich mag den roten Pullover.', 'Ich habe neue Schuhe.', 'Welche Farbe magst du?'],
-      facts: 'Heute trägst du eine blaue Jacke, eine schwarze Hose und weiße Schuhe. Dein Lieblingspullover ist rot und warm. Im Winter trägst du einen langen Mantel. Du hast neue Schuhe, sie sind schön. Du magst Blau und Grün.',
-      pwords: 'die Jacke, der Pullover, die Schuhe, blau, rot, neu',
-      pqs: ['Was trägst du heute?', 'Welche Farbe magst du?', 'Hast du etwas Neues?', 'Was trägst du im Winter?', 'Was für Schuhe hast du?'],
-      lang: 'nur Präsens, kurze Adjektive vor dem Nomen (eine blaue Jacke, ein roter Pullover), keine Nebensätze.',
-      phrases: [['eine blaue Jacke / ein roter Pullover', /\b(ein|eine|einen|einem|einer) (blau|rot|grün|gelb|schwarz|weiß|braun|neu|alt|groß|klein|warm|lang|kurz|schön|bunt)(e|en|em|er|es)\b/], ['der / die / das + Adjektiv', /\b(der|die|das|den|dem) (blau|rot|grün|gelb|schwarz|weiß|braun|neu|alt|groß|klein|warm|lang|kurz|schön|bunt)(e|en)\b/], ['neue Schuhe / alte Hosen', /\b(neue|alte|große|kleine|schöne|warme|blaue|rote|schwarze|weiße|bunte|gute) [a-zäöüß]+/], ['Welche Farbe …?', /\b(farbe|blau|rot|grün|gelb|schwarz|weiß|braun)\b/]],
-      groupsKo: '옷·색깔·상태',
-      groups: [/(pullover|hose|jacke|schuhe|kleid|mantel|hemd|mütze|rock|kleidung)/, /(blau|rot|grün|gelb|schwarz|weiß|braun|bunt|farbe)/, /(neu|alt|groß|klein|warm|kalt|lang|kurz|schön|gut)/],
-      gramKo: '형용사에 알맞은 어미를 붙였다(eine blaue Jacke, ein roter Pullover, neue Schuhe)', gramRe: /\b(ein|eine|einen|einem|einer|der|die|das|den|dem|mein|meine|meinen|keine|keinen|zwei|drei) (neu|alt|groß|klein|rot|blau|schön|gut|schwarz|weiß|braun|gelb|grün|warm|lang|kurz|günstig|teuer|bunt|dunkel|hell)(e|en|em|er|es) [a-zäöüß]+|\b(neue|alte|große|kleine|schöne|warme|blaue|rote|schwarze|weiße|bunte|gute) (schuhe|hosen|jacken|kleider|socken)\b/, gramNote: '형용사 어미 {v}회'
-    },
-    {
-      no: '08', title: 'Essen und Trinken im Vergleich', topicDe: 'Essen, Trinken und Vergleiche',
-      lead_ko: '음식과 음료를 비교하고, 비교급과 최상급(besser, am liebsten, am besten)을 써서 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '음식과 음료를 비교하며 비교급과 최상급을 연습하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '음식과 음료 비교하기', topicKo: '먹고 마시는 것과 비교',
-      leitKo: ['차와 커피 중 무엇이 더 좋습니까?', '가장 좋아하는 음식은 무엇입니까?', '사과와 케이크 중 무엇이 더 건강에 좋습니까?', '집 음식과 식당 음식 중 어느 쪽이 더 싸거나 비쌉니까?', '무엇을 가장 자주 마십니까?'],
-      cardsKo: ['차', '커피', '물', '사과', '케이크', '건강한', '저는 차를 커피보다 더 좋아합니다.', '피자가 가장 맛있습니다.'],
-      sayKo: ['무엇을 더 좋아합니까?', '저는 차를 커피보다 더 좋아합니다.', '사과는 케이크보다 더 건강합니다.', '피자가 가장 맛있습니다.', '당신은 무엇을 가장 좋아합니까?'],
-      help: ['Was trinkst du lieber?', 'Ich trinke lieber Tee als Kaffee.', 'Ein Apfel ist gesünder als ein Kuchen.', 'Die Pizza schmeckt am besten.', 'Zu Hause essen ist billiger als im Restaurant.', 'Was isst du am liebsten?'],
-      helpKo: ['무엇을 더 좋아합니까? (마시는 것)', '저는 커피보다 차를 더 좋아합니다.', '사과는 케이크보다 더 건강합니다.', '피자가 가장 맛있습니다.', '집에서 먹는 것이 식당에서 먹는 것보다 더 쌉니다.', '당신은 무엇을 가장 좋아합니까? (먹는 것)'],
-      leit: ['Was trinkst du lieber: Tee oder Kaffee?', 'Was isst du am liebsten?', 'Was ist gesünder: ein Apfel oder ein Kuchen?', 'Was ist teurer: zu Hause essen oder im Restaurant?', 'Was trinkst du am meisten?'],
-      cards: ['der Tee', 'der Kaffee', 'das Wasser', 'der Apfel', 'der Kuchen', 'gesund', 'Ich trinke lieber Tee als Kaffee.', 'Die Pizza schmeckt am besten.'],
-      say: ['Was trinkst du lieber?', 'Ich trinke lieber Tee als Kaffee.', 'Ein Apfel ist gesünder als ein Kuchen.', 'Die Pizza schmeckt am besten.', 'Was isst du am liebsten?'],
-      facts: 'Du trinkst lieber Tee als Kaffee. Wasser trinkst du am meisten. Ein Apfel ist gesünder als ein Kuchen, aber Kuchen schmeckt besser. Die Pizza in Krakau schmeckt am besten, findest du. Im Restaurant essen ist teurer als zu Hause.',
-      pwords: 'lieber, am liebsten, besser, gesünder, am besten',
-      pqs: ['Was trinkst du lieber: Tee oder Kaffee?', 'Was isst du am liebsten?', 'Was ist gesünder: ein Apfel oder ein Kuchen?', 'Was ist teurer: zu Hause essen oder im Restaurant?', 'Was trinkst du am meisten?'],
-      lang: 'nur Präsens, einfache Vergleiche (lieber, besser, größer als, am besten), keine Nebensätze.',
-      phrases: [['lieber … als …', /\blieber [a-zäöüß ]{0,15}als\b/], ['… ist besser / teurer als …', /\b[a-zäöüß]+er als\b|\bbesser als\b/], ['am liebsten / am besten / am meisten', /\bam (liebsten|besten|meisten|schönsten|billigsten|gesündesten)\b/], ['so … wie …', /\bso [a-zäöüß]+ wie\b/]],
-      groupsKo: '음식·음료·평가',
-      groups: [/(tee|kaffee|wasser|saft|milch|bier|wein)/, /(apfel|kuchen|pizza|brot|obst|gemüse|suppe|salat|fleisch|essen|restaurant)/, /(gesund|teuer|billig|günstig|lecker|schmeckt|gut|besser|schlecht)/],
-      gramKo: '비교급이나 최상급을 썼다(lieber … als, besser, am liebsten, am besten)', gramRe: /\b[a-zäöüß]+er als\b|\blieber\b|\bbesser\b|\bam (liebsten|besten|meisten|schönsten|billigsten|gesündesten|teuersten)\b|\bso [a-zäöüß]+ wie\b/, gramNote: '비교 표현 {v}회'
-    },
-    {
-      no: '09', title: 'Was kann ich, was muss ich?', topicDe: 'Können, Müssen, Wollen und Alltag',
-      lead_ko: '할 수 있는 일, 해야 하는 일, 하고 싶은 일을 화법조동사와 분리동사를 써서 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '할 수 있는 일과 해야 하는 일, 하고 싶은 일을 화법조동사와 분리동사로 말하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '나는 무엇을 할 수 있고, 무엇을 해야 합니까?', topicKo: '할 수 있는 것, 해야 하는 것, 하고 싶은 것',
-      leitKo: ['무엇을 잘할 수 있습니까?', '내일 무엇을 해야 합니까?', '몇 시에 일어납니까?', '주말에 무엇을 하고 싶습니까?', '어디에서 장을 봅니까?'],
-      cardsKo: ['~할 수 있다', '~해야 한다', '~하고 싶다', '일어나다', '장을 보다', '전화하다', '저는 피아노를 칠 수 있습니다.', '저는 일곱 시에 일어나야 합니다.'],
-      sayKo: ['무엇을 할 수 있습니까?', '저는 요리를 할 수 있습니다.', '저는 일곱 시에 일어나야 합니다.', '저는 주말에 영화관에 가고 싶습니다.', '당신은 무엇을 해야 합니까?'],
-      help: ['Was kannst du gut?', 'Ich kann gut kochen.', 'Ich muss um sieben Uhr aufstehen.', 'Ich will am Wochenende ins Kino gehen.', 'Ich kann nicht gut singen.', 'Was musst du morgen machen?'],
-      helpKo: ['무엇을 잘할 수 있습니까?', '저는 요리를 잘할 수 있습니다.', '저는 일곱 시에 일어나야 합니다.', '저는 주말에 영화관에 가고 싶습니다.', '저는 노래를 잘하지 못합니다.', '당신은 내일 무엇을 해야 합니까?'],
-      leit: ['Was kannst du gut?', 'Was musst du morgen machen?', 'Wann stehst du auf?', 'Was willst du am Wochenende machen?', 'Wo kaufst du ein?'],
-      cards: ['können', 'müssen', 'wollen', 'aufstehen', 'einkaufen', 'anrufen', 'Ich kann gut kochen.', 'Ich muss um sieben aufstehen.'],
-      say: ['Was kannst du gut?', 'Ich kann gut kochen.', 'Ich muss um sieben aufstehen.', 'Ich will am Wochenende ins Kino gehen.', 'Was musst du morgen machen?'],
-      facts: 'Du kannst gut kochen und ein bisschen Klavier spielen. Morgen musst du früh aufstehen, um sieben Uhr, denn du arbeitest. Nach der Arbeit kaufst du im Supermarkt ein. Am Wochenende willst du ins Kino gehen. Du kannst nicht gut schwimmen.',
-      pwords: 'können, müssen, wollen, aufstehen, einkaufen',
-      pqs: ['Was kannst du gut?', 'Was musst du morgen machen?', 'Wann stehst du auf?', 'Was willst du am Wochenende machen?', 'Wo kaufst du ein?'],
-      lang: 'nur Präsens mit können, müssen, wollen, möchten und trennbaren Verben (ich stehe auf), keine Nebensätze.',
-      phrases: [['Ich kann / muss / will + Infinitiv', /\b(ich|du|er|sie|wir|man) (kann|kannst|können|muss|musst|müssen|will|willst|wollen|darf|darfst|dürfen|soll|sollst|sollen|möchte|möchtest|möchten) [a-zäöüß ]{0,25}\b/], ['Ich stehe um sieben Uhr auf', /\b(stehe|steht|stehst|kaufe|kauft|rufe|ruft|räume|fange|komme|kommt|sehe) [a-zäöüß ]{0,20}\b(auf|ein|an|mit|fern)\b/], ['Kannst du …? / Musst du …?', /\b(kannst du|musst du|willst du|möchtest du|darfst du)\b/], ['aufstehen / einkaufen / anrufen', /(aufstehen|einkaufen|anrufen|mitkommen|fernsehen|aufräumen|anfangen)/]],
-      groupsKo: '능력·의무와 희망·일상 동작',
-      groups: [/(kann|kannst|können|könnte|gut|schlecht|klavier|schwimm|kochen|spielen)/, /(muss|musst|müssen|will|willst|wollen|möchte|möchtest|möchten|soll|sollen|darf|dürfen)/, /(aufstehen|stehe|stehst|einkauf|kaufe|anruf|rufe|mitkommen|fernsehen|aufräumen|arbeit|wochenende|morgen)/],
-      gramKo: '화법조동사나 분리동사를 썼다(ich kann kochen, ich muss arbeiten, ich stehe auf)', gramRe: /\b(ich|du|er|sie|wir|man) (kann|kannst|können|muss|musst|müssen|will|willst|wollen|darf|darfst|dürfen|soll|sollst|sollen|möchte|möchtest|möchten)\b|\b(stehe|steht|stehst|kaufe|kauft|rufe|ruft|räume|fange|komme|kommt|sehe) [a-zäöüß ]{0,20}\b(auf|ein|an|mit|fern)\b/, gramNote: '조동사·분리동사 {v}회'
-    },
-    {
-      no: '10', title: 'Mein Wochenende', topicDe: 'Das letzte Wochenende',
-      lead_ko: '지난 주말에 한 일을 Perfekt(ich habe … gemacht, ich bin … gegangen)로 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '지난 주말에 한 일을 Perfekt로 말하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '나의 주말', topicKo: '지난 주말',
-      leitKo: ['주말에 무엇을 했습니까?', '어디에 갔습니까?', '무엇을 먹었습니까?', '누구를 만났습니까?', '주말은 어땠습니까?'],
-      cardsKo: ['하다·만들다', '가다(걸어서)', '타고 가다', '먹다', '자다', '만나다', '저는 영화를 보았습니다.', '저는 공원에 갔습니다.'],
-      sayKo: ['주말에 무엇을 했습니까?', '저는 공원에 갔습니다.', '저는 피자를 먹었습니다.', '저는 친구를 만났습니다.', '당신은 무엇을 했습니까?'],
-      help: ['Was hast du am Wochenende gemacht?', 'Ich bin in den Park gegangen.', 'Ich habe Pizza gegessen.', 'Ich habe eine Freundin getroffen.', 'Ich habe einen Film gesehen.', 'Und du?'],
-      helpKo: ['주말에 무엇을 했습니까?', '저는 공원에 갔습니다.', '저는 피자를 먹었습니다.', '저는 친구(여성)를 만났습니다.', '저는 영화를 보았습니다.', '당신은요?'],
-      leit: ['Was hast du am Wochenende gemacht?', 'Wohin bist du gegangen?', 'Was hast du gegessen?', 'Wen hast du getroffen?', 'Wie war das Wochenende?'],
-      cards: ['gemacht', 'gegangen', 'gefahren', 'gegessen', 'geschlafen', 'getroffen', 'Ich habe einen Film gesehen.', 'Ich bin in den Park gegangen.'],
-      say: ['Was hast du am Wochenende gemacht?', 'Ich bin in den Park gegangen.', 'Ich habe Pizza gegessen.', 'Ich habe Ola getroffen.', 'Und du?'],
-      facts: 'Am Samstag bist du mit Ola in den Park gegangen. Ihr habt Eis gegessen. Am Abend hast du einen Film gesehen. Am Sonntag hast du lange geschlafen und Tee getrunken. Das Wochenende war schön, aber kurz.',
-      pwords: 'gemacht, gegangen, gegessen, geschlafen, getroffen',
-      pqs: ['Was hast du am Wochenende gemacht?', 'Wohin bist du gegangen?', 'Was hast du gegessen?', 'Wen hast du getroffen?', 'Wie war das Wochenende?'],
-      lang: 'Präsens und Perfekt (ich habe … gemacht, ich bin … gegangen), keine Nebensätze.',
-      phrases: [['Ich habe … gemacht / gesehen', /\b(habe|haben|hat|hast) [a-zäöüß ]{0,30}ge[a-zäöüß]{2,}(t|en)\b/], ['Ich bin … gegangen / gefahren', /\b(bin|sind|ist|bist) [a-zäöüß ]{0,30}(gegangen|gefahren|gekommen|geblieben|geflogen|gelaufen)\b/], ['am Samstag / am Sonntag / am Abend', /\b(am samstag|am sonntag|am abend|am morgen|am nachmittag|gestern)\b/], ['Das war schön / toll / schlecht', /(schön|toll|gut|schlecht|langweilig)/]],
-      groupsKo: '주말 활동·장소·음식',
-      groups: [/(park|kino|film|café|stadt|see|freund|freundin|ola|besuch)/, /(gegessen|getrunken|eis|pizza|kuchen|tee|kaffee|gekocht|essen)/, /(samstag|sonntag|wochenende|abend|gestern|geschlafen|schön|toll|lang)/],
-      gramKo: 'Perfekt로 말했다(habe/bin + Partizip II)', gramRe: /\b(habe|haben|hat|hast|bin|sind|ist|bist) [a-zäöüß ]{0,30}\b(ge[a-zäöüß]{2,}(t|en)|[a-zäöüß]*(an|auf|aus|ein|mit|zurück|vor)ge[a-zäöüß]{2,}(t|en))\b/, gramNote: 'Perfekt 문장 {v}회'
-    },
-    {
-      no: '11', title: 'Früher und gestern', topicDe: 'Früher und gestern',
-      lead_ko: '어제와 어린 시절에 대해 Präteritum(ich war, ich hatte)과 과거완료를 써서 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '어제와 어린 시절의 일을 war, hatte 같은 과거형으로 말하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '예전과 어제', topicKo: '어제와 어린 시절',
-      leitKo: ['어제 어디에 있었습니까?', '어제 피곤했습니까?', '어렸을 때 어디에 살았습니까?', '어렸을 때 반려동물이 있었습니까?', '학교는 어땠습니까?'],
-      cardsKo: ['~였다', '~이 있었다', '어제', '예전에', '어린 시절', '학교', '어제 저는 피곤했습니다.', '예전에 저는 폴란드에 살았습니다.'],
-      sayKo: ['어제 어디에 있었습니까?', '어제 저는 피곤했습니다.', '저는 일이 많았습니다.', '예전에 저는 폴란드에 살았습니다.', '당신은 어땠습니까?'],
-      help: ['Wo warst du gestern?', 'Gestern war ich zu Hause.', 'Gestern war ich müde.', 'Ich hatte viel Arbeit.', 'Früher hatte ich mehr Zeit.', 'Wie war das bei dir?'],
-      helpKo: ['어제 어디에 있었습니까?', '어제 저는 집에 있었습니다.', '어제 저는 피곤했습니다.', '저는 일이 많았습니다.', '예전에는 시간이 더 많았습니다.', '당신은 어땠습니까?'],
-      leit: ['Wo warst du gestern?', 'Warst du gestern müde?', 'Wo hast du als Kind gewohnt?', 'Hattest du ein Haustier?', 'Wie war die Schule?'],
-      cards: ['war', 'hatte', 'gestern', 'früher', 'die Kindheit', 'die Schule', 'Gestern war ich müde.', 'Früher hatte ich eine Katze.'],
-      say: ['Wo warst du gestern?', 'Gestern war ich müde.', 'Ich hatte viel Arbeit.', 'Früher wohnte ich in Polen.', 'Wie war das bei dir?'],
-      facts: 'Gestern warst du zu Hause, denn du warst müde. Du hattest viel Arbeit in der Apotheke. Früher hast du in Krakau gewohnt. Als Kind hattest du einen Hund, er hieß Max. Die Schule war nicht schwer, aber Mathe war langweilig. Vor der Arbeit hattest du schon Kaffee getrunken.',
-      pwords: 'war, hatte, gestern, früher, die Schule',
-      pqs: ['Wo warst du gestern?', 'Warst du gestern müde?', 'Wo hast du früher gewohnt?', 'Hattest du ein Haustier?', 'Wie war die Schule?'],
-      lang: 'Präsens, Perfekt und Präteritum von sein und haben (ich war, ich hatte), keine Nebensätze.',
-      phrases: [['Ich war … / Du warst …', /\b(ich war|du warst|er war|sie war|wir waren|es war)\b/], ['Ich hatte … / Du hattest …', /\b(ich hatte|du hattest|er hatte|sie hatte|wir hatten)\b/], ['gestern / früher / damals', /\b(gestern|früher|damals|vorgestern|als kind)\b/], ['Ich konnte / musste / wollte …', /\b(ich|er|sie|wir) (konnte|konnten|musste|mussten|wollte|wollten|wohnte|lebte|ging|kam)\b/]],
-      groupsKo: '과거 시간·상태·학교와 반려동물',
-      groups: [/(gestern|früher|damals|vorgestern|als kind|kindheit|letzte)/, /(war|waren|warst|hatte|hatten|hattest|wohnte|lebte|ging|kam)/, /(schule|hund|katze|haus|arbeit|apotheke|müde|mathe|lehrer)/],
-      gramKo: 'Präteritum이나 과거완료를 썼다(ich war, ich hatte, ich hatte … gemacht)', gramRe: /\b(ich|er|sie|es|wir|man) (war|waren|hatte|hatten|wohnte|wohnten|lebte|konnte|musste|wollte|ging|kam)\b|\bdu (warst|hattest|konntest|musstest)\b/, gramNote: '과거형 {v}회'
-    },
-    {
-      no: '12', title: 'Worauf freust du dich?', topicDe: 'Gefühle, Interessen und Wetter',
-      lead_ko: '재귀동사(sich freuen, sich interessieren), 비인칭 표현(es regnet), 전치사가 붙는 동사(warten auf)를 써서 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '기대하는 일과 관심사, 날씨를 재귀동사와 전치사 동사로 말하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '무엇을 기대합니까?', topicKo: '감정, 관심사, 날씨',
-      leitKo: ['무엇을 기대합니까?', '무엇에 관심이 있습니까?', '오늘 날씨는 어떻습니까?', '누구를 기다립니까?', '지금 무엇을 생각합니까?'],
-      cardsKo: ['기뻐하다·기대하다', '~에 관심이 있다', '비가 오다', '~를 기다리다', '~를 생각하다', '~에 대해 말하다', '저는 휴가를 기대합니다.', '저는 음악에 관심이 있습니다.'],
-      sayKo: ['무엇을 기대합니까?', '저는 휴가를 기대합니다.', '저는 음악에 관심이 있습니다.', '오늘은 비가 옵니다.', '저는 버스를 기다립니다.'],
-      help: ['Worauf freust du dich?', 'Ich freue mich auf den Urlaub.', 'Ich interessiere mich für Musik.', 'Ich denke oft an meine Familie.', 'Heute regnet es.', 'Wofür interessierst du dich?'],
-      helpKo: ['무엇을 기대합니까?', '저는 휴가를 기대합니다.', '저는 음악에 관심이 있습니다.', '저는 가족을 자주 생각합니다.', '오늘은 비가 옵니다.', '당신은 무엇에 관심이 있습니까?'],
-      leit: ['Worauf freust du dich?', 'Wofür interessierst du dich?', 'Wie ist das Wetter heute?', 'Auf wen wartest du?', 'An wen denkst du oft?'],
-      cards: ['sich freuen auf', 'sich interessieren für', 'es regnet', 'warten auf', 'denken an', 'sprechen über', 'Ich freue mich auf den Urlaub.', 'Ich interessiere mich für Musik.'],
-      say: ['Worauf freust du dich?', 'Ich freue mich auf den Urlaub.', 'Ich interessiere mich für Musik.', 'Heute regnet es.', 'Ich warte auf den Bus.'],
-      facts: 'Du freust dich auf den Urlaub im Sommer. Du interessierst dich für Musik und für Filme. Heute regnet es, es ist kalt. Du wartest oft auf den Bus. Du denkst oft an deine Familie in Polen und sprichst viel mit deiner Mutter.',
-      pwords: 'sich freuen auf, sich interessieren für, es regnet, warten auf',
-      pqs: ['Worauf freust du dich?', 'Wofür interessierst du dich?', 'Wie ist das Wetter heute?', 'Auf wen wartest du?', 'An wen denkst du oft?'],
-      lang: 'Präsens und Perfekt, reflexive Verben und Verben mit Präposition (ich freue mich auf …), keine Nebensätze.',
-      phrases: [['Ich freue mich auf …', /\b(freue|freust|freut) (mich|dich|sich|uns|euch)\b/], ['Ich interessiere mich für …', /\b(interessiere|interessierst|interessiert) (mich|dich|sich)\b/], ['Es regnet. / Es ist kalt.', /\bes (regnet|schneit|ist kalt|ist warm|ist heiß|ist windig|gibt)\b/], ['warten auf / denken an / sprechen über', /\b(warte|wartest|wartet|denke|denkst|denkt|spreche|sprichst|spricht|sprechen) (auf|an|über|von|mit)\b/]],
-      groupsKo: '기대·관심사·날씨',
-      groups: [/(freue|freust|freut|urlaub|ferien|sommer|reise)/, /(interessiere|interessierst|musik|film|sport|buch|hobby)/, /(regnet|schneit|kalt|warm|heiß|sonne|wetter|wartet|warte|denke|denkst|spreche|sprichst)/],
-      gramKo: '재귀동사나 전치사 동사, 비인칭 es를 썼다(ich freue mich auf …, warten auf …, es regnet)', gramRe: /\b(freue|freust|freut|interessiere|interessierst|interessiert|ärgere|ärgerst|ärgert|fühle|fühlst|fühlt|treffe|triffst|trifft|erinnere|beeile|setze|wasche) (mich|dich|sich|uns|euch)\b|\b(warte|wartest|wartet|denke|denkst|denkt|spreche|sprichst|spricht|sprechen) (auf|an|über|von|mit)\b|\bes (regnet|schneit|ist kalt|ist warm|ist heiß)\b/, gramNote: '표현 {v}회'
-    },
-    {
-      no: '13', title: 'Warum lernst du Deutsch?', topicDe: 'Gründe, Wünsche und Pläne',
-      lead_ko: '독일어를 배우는 이유와 계획을 접속사(weil, dass, wenn, ob)와 부문장을 써서 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '독일어를 배우는 이유와 앞으로의 계획을 weil, dass, wenn 문장으로 말하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '왜 독일어를 배웁니까?', topicKo: '이유, 바람, 계획',
-      leitKo: ['왜 독일어를 배웁니까?', '독일어에서 무엇이 어렵습니까?', '시간이 있으면 무엇을 합니까?', '독일어가 중요하다고 생각합니까?', '다음 시험은 언제인지 압니까?'],
-      cardsKo: ['~때문에(이유)', '~라는 것', '~하면', '~인지 아닌지', '시험', '일(직장)', '저는 …해서 독일어를 배웁니다.', '시간이 있으면 저는 책을 읽습니다.'],
-      sayKo: ['왜 독일어를 배웁니까?', '저는 독일에서 일하기 때문에 독일어를 배웁니다.', '저는 독일어가 중요하다고 생각합니다.', '시간이 있으면 저는 책을 읽습니다.', '시험이 언제인지 압니까?'],
-      help: ['Warum lernst du Deutsch?', 'Ich lerne Deutsch, weil ich gern reise.', 'Ich denke, dass Deutsch wichtig ist.', 'Wenn ich Zeit habe, lese ich.', 'Ich weiß nicht, wann die Prüfung ist.', 'Weißt du, wann die Prüfung ist?'],
-      helpKo: ['왜 독일어를 배웁니까?', '저는 여행을 좋아하기 때문에 독일어를 배웁니다.', '저는 독일어가 중요하다고 생각합니다.', '시간이 있으면 저는 책을 읽습니다.', '저는 시험이 언제인지 모릅니다.', '시험이 언제인지 압니까?'],
-      leit: ['Warum lernst du Deutsch?', 'Was ist schwer, wenn du Deutsch sprichst?', 'Was machst du, wenn du Zeit hast?', 'Denkst du, dass Deutsch wichtig ist?', 'Weißt du, wann die Prüfung ist?'],
-      cards: ['weil', 'dass', 'wenn', 'ob', 'die Prüfung', 'die Arbeit', 'Ich lerne Deutsch, weil ich hier arbeite.', 'Wenn ich Zeit habe, lese ich.'],
-      say: ['Warum lernst du Deutsch?', 'Ich lerne Deutsch, weil ich hier arbeite.', 'Ich denke, dass Deutsch wichtig ist.', 'Wenn ich Zeit habe, lese ich.', 'Weißt du, wann die Prüfung ist?'],
-      facts: 'Du lernst Deutsch, weil du in Deutschland arbeitest. Du denkst, dass Deutsch wichtig ist. Schwer ist für dich, dass die Wörter so lang sind. Wenn du Zeit hast, liest du oder sprichst mit Freunden. Du weißt noch nicht, ob du die Prüfung im Mai machst.',
-      pwords: 'weil, dass, wenn, ob, die Prüfung',
-      pqs: ['Warum lernst du Deutsch?', 'Was ist schwer, wenn du Deutsch sprichst?', 'Was machst du, wenn du Zeit hast?', 'Denkst du, dass Deutsch wichtig ist?', 'Weißt du, wann die Prüfung ist?'],
-      lang: 'Präsens und Perfekt, einfache Nebensätze mit weil, dass und wenn (Ich lerne, weil ich hier arbeite).',
-      phrases: [['…, weil ich … (Verb am Ende)', /\bweil [a-zäöüß ]{1,30}\b/], ['Ich denke / glaube, dass …', /\b(denke|glaube|finde|meine|weiß|hoffe),? dass\b|\bdass [a-zäöüß ]{1,30}\b/], ['Wenn ich Zeit habe, …', /\bwenn [a-zäöüß ]{1,30}\b/], ['ob … / deshalb … / denn …', /\b(ob|deshalb|deswegen|denn)\b/]],
-      groupsKo: '이유·시험·일과 학습',
-      groups: [/(weil|denn|deshalb|deswegen|grund|warum)/, /(prüfung|test|kurs|lernen|lerne|deutsch|wörter|sprechen|schwer|wichtig)/, /(arbeit|arbeite|beruf|freunde|zeit|deutschland|mai)/],
-      gramKo: '접속사로 부문장을 만들었다(weil, dass, wenn, ob + 동사는 문장 끝)', gramRe: /\b(weil|dass|wenn|ob|obwohl)\b/, gramNote: '접속사 {v}회'
-    },
-    {
-      no: '14', title: 'Menschen und Dinge beschreiben', topicDe: 'Menschen, Orte und Dinge beschreiben',
-      lead_ko: '사람과 장소를 관계문(Das ist die Freundin, die in Berlin wohnt)으로 설명하고 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '사람과 장소, 물건을 관계문과 분사로 설명하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '사람과 사물 설명하기', topicKo: '사람, 장소, 물건 설명',
-      leitKo: ['어떤 친구를 좋아합니까?', '근처에 어떤 가게가 있습니까?', '어떤 도시에 살고 싶습니까?', '어떤 영화가 마음에 듭니까?', '어떤 음식을 좋아합니까?'],
-      cardsKo: ['이웃', '가게', '영화', '요리된', '열린', '이야기하다', '이분은 베를린에 사는 친구입니다.', '저는 사람들이 친절한 도시를 좋아합니다.'],
-      sayKo: ['어떤 친구입니까?', '이분은 베를린에 사는 친구입니다.', '저는 모두가 아는 영화를 좋아합니다.', '저는 가까이 있는 가게에서 장을 봅니다.', '당신은 어떤 도시를 좋아합니까?'],
-      help: ['Wer ist das?', 'Das ist die Freundin, die in Berlin wohnt.', 'Ich habe einen Freund, der gut kocht.', 'Ich mag Filme, die lustig sind.', 'Das ist das Geschäft, das ich mag.', 'Welche Stadt magst du?'],
-      helpKo: ['이 사람은 누구입니까?', '이분은 베를린에 사는 친구입니다.', '저는 요리를 잘하는 친구가 있습니다.', '저는 재미있는 영화를 좋아합니다.', '여기는 제가 좋아하는 가게입니다.', '당신은 어떤 도시를 좋아합니까?'],
-      leit: ['Welche Freunde magst du?', 'Welches Geschäft gibt es in der Nähe?', 'In welcher Stadt möchtest du wohnen?', 'Welchen Film magst du?', 'Welches Essen magst du gern?'],
-      cards: ['der Nachbar', 'das Geschäft', 'der Film', 'gekocht', 'geöffnet', 'erzählen', 'Das ist die Freundin, die in Berlin wohnt.', 'Ich mag Filme, die lustig sind.'],
-      say: ['Wer ist das?', 'Das ist die Freundin, die in Berlin wohnt.', 'Ich mag Filme, die lustig sind.', 'Das ist das Geschäft, das ich mag.', 'Welche Stadt magst du?'],
-      facts: 'Ola ist die Freundin, die in Berlin wohnt. Du magst Filme, die lustig sind. In der Nähe gibt es ein Geschäft, das jeden Tag geöffnet ist. Dort kaufst du Brot, das noch warm ist. Du möchtest in einer Stadt wohnen, die am Meer liegt.',
-      pwords: 'die Freundin, die …; Filme, die …; das Geschäft, das …',
-      pqs: ['Welche Freunde magst du?', 'Welches Geschäft gibt es in der Nähe?', 'In welcher Stadt möchtest du wohnen?', 'Welchen Film magst du?', 'Welches Essen magst du gern?'],
-      lang: 'Präsens und Perfekt, einfache Relativsätze (Das ist die Frau, die hier arbeitet) und Nebensätze mit weil und dass.',
-      phrases: [['…, der / die / das … (Relativsatz)', /\b(freund|freundin|mann|frau|kollege|kollegin|film|filme|geschäft|laden|stadt|haus|buch|nachbar|nachbarin|kind|hund|katze|brot|restaurant|café) (der|die|das|den|dem) [a-zäöüß ]{1,25}\b/], ['Das ist die Freundin, die …', /\bdas ist (der|die|das) [a-zäöüß]+ (der|die|das)\b/], ['geöffnet / gekocht / gemacht', /(geöffnet|gekocht|gemacht|geschlossen|gebacken|gebraucht|lachend|kochend)/], ['Welche / Welcher / Welches …?', /\bwelche[rsnm]?\b/]],
-      groupsKo: '사람·가게와 장소·영화와 음식',
-      groups: [/(freund|freundin|nachbar|kollege|mann|frau|mensch|leute)/, /(geschäft|laden|stadt|haus|restaurant|café|supermarkt|meer|berlin)/, /(film|filme|brot|essen|buch|lustig|warm|geöffnet|gekocht)/],
-      gramKo: '관계문이나 분사 형용사를 썼다(…, die in Berlin wohnt / geöffnet)', gramRe: /\b(freund|freundin|mann|frau|kollege|kollegin|film|filme|geschäft|laden|stadt|haus|buch|nachbar|nachbarin|kind|hund|katze|brot|restaurant|café|leute|menschen) (der|die|das|den|dem) [a-zäöüß ]{1,25}\b(wohnt|wohnen|arbeitet|arbeiten|liegt|liegen|steht|kommt|heißt|gefällt|sind|ist|hat|habe|mag|kenne|sehe|kaufe|brauche|spielt|kocht|gibt|lacht)\b|\b(gekocht|geöffnet|geschlossen|gebacken|gebraucht|lachend|kochend|schlafend)(e|en|er|es|em)?\b/, gramNote: '관계문·분사 {v}회', gramYes: 1
-    },
-    {
-      no: '15', title: 'Was wird gemacht?', topicDe: 'Arbeit in der Apotheke und Regeln in der Stadt',
-      lead_ko: '일터와 도시에서 무엇을 하는지를 수동태(wird … gemacht, wurde … gebaut)로 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '약국과 도시에서 무엇이 어떻게 이루어지는지를 수동태로 말하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '무엇이 이루어집니까?', topicKo: '약국의 일과 도시의 규칙',
-      leitKo: ['약국에서는 무엇을 팝니까?', '가게는 몇 시에 열립니까?', '독일에서는 어떻게 쓰레기를 분리합니까?', '당신의 집은 언제 지어졌습니까?', '독일어는 어디에서 말해집니까?'],
-      cardsKo: ['약', '쓰레기', '열리다', '팔리다', '짓다', '분리하다', '약국에서는 약이 팔립니다.', '가게는 아침 아홉 시에 열립니다.'],
-      sayKo: ['약국에서는 무엇이 팔립니까?', '약국에서는 약이 팔립니다.', '가게는 아침 아홉 시에 열립니다.', '독일에서는 쓰레기가 분리됩니다.', '당신의 나라에서는 어떻습니까?'],
-      help: ['Was wird in der Apotheke verkauft?', 'In der Apotheke wird Medizin verkauft.', 'Das Geschäft wird um neun Uhr geöffnet.', 'In Deutschland wird der Müll getrennt.', 'In Korea wird viel Reis gegessen.', 'Wie ist das in deinem Land?'],
-      helpKo: ['약국에서는 무엇이 팔립니까?', '약국에서는 약이 팔립니다.', '가게는 아홉 시에 열립니다.', '독일에서는 쓰레기가 분리됩니다.', '한국에서는 쌀을 많이 먹습니다.', '당신의 나라에서는 어떻습니까?'],
-      leit: ['Was wird in der Apotheke verkauft?', 'Wann wird das Geschäft geöffnet?', 'Wie wird der Müll in Deutschland getrennt?', 'Wann wurde das Haus gebaut?', 'Wo wird Deutsch gesprochen?'],
-      cards: ['die Medizin', 'der Müll', 'öffnen', 'verkaufen', 'bauen', 'trennen', 'Hier wird Medizin verkauft.', 'Das Geschäft wird um neun geöffnet.'],
-      say: ['Was wird verkauft?', 'In der Apotheke wird Medizin verkauft.', 'Das Geschäft wird um neun Uhr geöffnet.', 'In Deutschland wird der Müll getrennt.', 'Wie ist das in deinem Land?'],
-      facts: 'In deiner Apotheke wird Medizin verkauft, auch Tee und Creme. Die Apotheke wird um neun Uhr geöffnet. Am Abend wird sie geschlossen. In Deutschland wird der Müll getrennt, das findest du gut. Dein Haus wurde vor vielen Jahren gebaut. Deutsch wird auch in Österreich gesprochen.',
-      pwords: 'wird verkauft, wird geöffnet, wird getrennt, wurde gebaut',
-      pqs: ['Was wird in der Apotheke verkauft?', 'Wann wird das Geschäft geöffnet?', 'Wie wird der Müll in Deutschland getrennt?', 'Wann wurde das Haus gebaut?', 'Wo wird Deutsch gesprochen?'],
-      lang: 'Präsens und Perfekt, einfaches Passiv (Das wird verkauft, Das wurde gebaut), Nebensätze nur mit weil und dass.',
-      phrases: [['Das wird verkauft / geöffnet', /\b(wird|werden) [a-zäöüß ]{0,25}\b(verkauft|geöffnet|gemacht|gesprochen|getrennt|gebaut|geschlossen|gekocht|gebracht|bestellt)\b/], ['Das wurde gebaut / gemacht', /\b(wurde|wurden) [a-zäöüß ]{0,25}\b[a-zäöüß]+(t|en)\b/], ['In Deutschland wird …', /\b(in deutschland|hier|dort|bei uns|in polen) (wird|werden|wurde)\b/], ['Wie wird das gemacht?', /\bwie (wird|werden|wurde)\b/]],
-      groupsKo: '약국·가게 시간·도시와 집',
-      groups: [/(apotheke|medizin|tee|creme|geschäft|laden|verkauf)/, /(müll|trennen|getrennt|haus|gebaut|bauen|stadt|deutschland|österreich)/, /(öffnen|geöffnet|geschlossen|uhr|abend|morgen|gesprochen|sprechen)/],
-      gramKo: '수동태를 썼다(wird/werden/wurde + Partizip II)', gramRe: /\b(wird|werden|wurde|wurden) [a-zäöüß ]{0,30}\b(ge[a-zäöüß]{2,}(t|en)|(be|ver|er|ent|zer)[a-zäöüß]{2,}(t|en)|[a-zäöüß]*(an|auf|aus|ein|mit|zurück|vor)ge[a-zäöüß]{2,}(t|en))\b/, gramNote: '수동태 {v}회', gramYes: 1
-    },
-    {
-      no: '16', title: 'Wenn ich viel Geld hätte …', topicDe: 'Wünsche und Träume',
-      lead_ko: '이루어지지 않은 소원을 접속법(ich würde, ich hätte, ich wäre)으로 파트너와 약 2분 동안 이야기합니다.',
-      summary_ko: '돈이 많다면 하고 싶은 일과 꿈을 접속법으로 말하고 파트너와 약 2분 동안 이야기합니다.',
-      titleKo: '돈이 많다면 …', topicKo: '소원과 꿈',
-      leitKo: ['돈이 많다면 무엇을 하겠습니까?', '시간이 더 있다면 무엇을 하겠습니까?', '어디에서 살고 싶습니까?', '무엇이 되고 싶습니까?', '친구에게 무엇을 선물하겠습니까?'],
-      cardsKo: ['여행', '집', '자동차', '꿈', '~하겠습니다', '~가 있다면', '돈이 많다면 저는 여행을 하겠습니다.', '저는 바다 옆에 살고 싶습니다.'],
-      sayKo: ['돈이 많다면 무엇을 하겠습니까?', '돈이 많다면 저는 큰 여행을 하겠습니다.', '저는 바다 옆에 집을 사겠습니다.', '시간이 더 있다면 저는 더 자주 운동하겠습니다.', '당신은 무엇을 하겠습니까?'],
-      help: ['Was würdest du machen?', 'Wenn ich viel Geld hätte, würde ich reisen.', 'Ich würde ein Haus am Meer kaufen.', 'Wenn ich mehr Zeit hätte, würde ich mehr Sport machen.', 'Ich wäre gern Lehrerin / Lehrer.', 'Und du, was würdest du machen?'],
-      helpKo: ['당신은 무엇을 하겠습니까?', '돈이 많다면 저는 여행을 하겠습니다.', '저는 바다 옆에 집을 사겠습니다.', '시간이 더 있다면 저는 운동을 더 하겠습니다.', '저는 선생님이 되고 싶습니다.', '그럼 당신은 무엇을 하겠습니까?'],
-      leit: ['Was würdest du machen, wenn du viel Geld hättest?', 'Was würdest du machen, wenn du mehr Zeit hättest?', 'Wo würdest du gern wohnen?', 'Was wärst du gern?', 'Was würdest du deinen Freunden schenken?'],
-      cards: ['die Reise', 'das Haus', 'das Auto', 'der Traum', 'ich würde', 'ich hätte', 'Wenn ich Geld hätte, würde ich reisen.', 'Ich wäre gern Ärztin.'],
-      say: ['Was würdest du machen?', 'Wenn ich viel Geld hätte, würde ich reisen.', 'Ich würde ein Haus am Meer kaufen.', 'Ich wäre gern Ärztin.', 'Und du, was würdest du machen?'],
-      facts: 'Wenn du viel Geld hättest, würdest du eine lange Reise machen und ein Haus am Meer kaufen. Wenn du mehr Zeit hättest, würdest du mehr Sport machen. Du wärst gern Ärztin. Deinen Eltern würdest du ein Auto schenken.',
-      pwords: 'ich würde, ich hätte, ich wäre, wenn',
-      pqs: ['Was würdest du machen, wenn du viel Geld hättest?', 'Was würdest du machen, wenn du mehr Zeit hättest?', 'Wo würdest du gern wohnen?', 'Was wärst du gern?', 'Was würdest du deinen Freunden schenken?'],
-      lang: 'Präsens und Perfekt, einfacher Konjunktiv II (ich würde, ich hätte, ich wäre) und Nebensätze mit wenn, weil und dass.',
-      phrases: [['Ich würde … + Infinitiv', /\b(ich|du|er|sie|wir) (würde|würdest|würden) [a-zäöüß ]{0,25}\b/], ['Wenn ich … hätte, …', /\bwenn ich [a-zäöüß ]{0,20}\b(hätte|wäre|könnte)\b/], ['Ich wäre gern … / Ich hätte gern …', /\b(ich wäre|ich hätte|ich möchte) gern/], ['Ich könnte … / Ich hätte …', /\b(ich|er|sie|wir) (könnte|könnten|hätte|hätten|wäre|wären)\b/]],
-      groupsKo: '소원·돈과 시간·여행과 집',
-      groups: [/(geld|zeit|reise|reisen|urlaub|auto|haus|meer|sport)/, /(würde|würdest|würden|hätte|hättest|hätten|wäre|wärst|wären|könnte|könnten)/, /(traum|ärztin|arzt|beruf|schenken|geschenk|eltern|freunde|wohnen)/],
-      gramKo: '접속법 II를 썼다(ich würde …, ich hätte …, ich wäre …, wenn ich … hätte)', gramRe: /\b(ich|du|er|sie|wir|man) (würde|würdest|würden|hätte|hättest|hätten|wäre|wärst|wären|könnte|könntest|könnten)\b/, gramNote: '접속법 {v}회'
-    }
-  ];
 
   EXAMS.push(...CH.map(c => ({
     id: 'ueb-a1-' + c.no, org: 'Übung', level: 'A1', access: 'A1', hidden: true, mdt: parseInt(c.no, 10),
     name: 'Übung · Lektion ' + c.no, short: 'A1 Übung', label: 'A1 Übung Lektion ' + c.no + ' · ' + c.title,
-    ko: 'A1 · 문법 말하기 연습', lead_ko: c.lead_ko,
+    ko: 'A1 · 단계별 말하기 연습', lead_ko: '파트너의 질문 네 개에 대답하고 마지막에 질문 하나를 합니다. 이 과의 문법: ' + c.gramKo.split(' — ')[0] + '.',
     eyebrow: 'ÜBUNG · LEKTION ' + c.no, rowLabel: 'Lektion ' + c.no, tag: 'A1 Lektion ' + c.no,
     teile: [build(c)]
   })));
@@ -4894,7 +4892,8 @@ const EXAMS = [
 </script>
 <script>
 'use strict';
-/* SODA Sprechen · 말하기 AI 연습 (telc B2 · Goethe A2 · Goethe B1)
+/* SODA Sprechen · 말하기 AI 연습 (telc B2 · Goethe A2 · Goethe B1, 챕터·과제 연습)
+   - GRAMMATIK KURS 과제의 말하기 연습(A1)은 단계별 대화입니다(아래 「A1 단계 대화(guided)」).
    - 음성: ElevenLabs Agents WebSocket에 연결합니다. 연결 주소(signed URL)와 연습 횟수는 SODA Worker가 발급·기록합니다. 외부 라이브러리 없음
    - 시험관(Prüferin) → 파트너(Mila) → 시험관 마무리/추가 질문 순서로 세션을 따로 엽니다.
    - 시험 데이터는 exams.js(APP, EXAMS)에 있습니다. */
@@ -5345,7 +5344,7 @@ const isUebCtx = () => { const id = (S.cur && S.cur.ex && S.cur.ex.id) || S.open
 function uebRewrite() {
   if (!isUebCtx()) return;
   const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-  let n; while ((n = w.nextNode())) { if (/시험/.test(n.nodeValue) && !n.parentNode.closest('script,style,textarea')) n.nodeValue = uebWord(n.nodeValue); }
+  let n; while ((n = w.nextNode())) { if (/시험/.test(n.nodeValue) && !n.parentNode.closest('script,style,textarea,[data-keep]')) n.nodeValue = uebWord(n.nodeValue); }
 }
 new MutationObserver(() => { if (!uebRewrite.busy) { uebRewrite.busy = true; Promise.resolve().then(() => { uebRewrite(); uebRewrite.busy = false; }); } })
   .observe(document.body, { childList: true, subtree: true, characterData: true });
@@ -5447,7 +5446,7 @@ function examCard(ex) {
       div.innerHTML = '<div class="head"><div class="name"><b>' + esc(T.no) + ' · ' + esc(T.ko) + '</b><span>' + esc(T.name) + '</span></div>' +
         '<div class="dots" title="사용한 시도">' + (maxA() <= 3 ? Array.from({ length: maxA() }, (_, i) => '<i class="' + (i < used ? 'used' : '') + '"></i>').join('') + ' ' + used + '/' + maxA() : used + '회') + '</div></div>' +
         '<div class="desc">' + esc(T.summary_ko) + '</div>' +
-        '<div class="times">시험 시간 ' + fmt(tm.official) + ' + 추가 ' + fmt(tm.extra) + ' = 최대 ' + fmt(tm.official + tm.extra) + '</div>' +
+        (T.guided ? '<div class="times">질문 네 개와 마지막 내 질문 하나 · 보통 2~3분, 길어도 ' + fmt(tm.official + tm.extra) + '</div>' : '<div class="times">시험 시간 ' + fmt(tm.official) + ' + 추가 ' + fmt(tm.extra) + ' = 최대 ' + fmt(tm.official + tm.extra) + '</div>') +
         (r.evaluation ? '<div><span class="tag ok">평가 완료</span></div>' : '') + '<div class="row"></div>';
       const row = $('.row', div);
       const mk = (txt, cls, fn, dis) => { const b = document.createElement('button'); b.className = cls; b.type = 'button'; b.textContent = txt; b.onclick = fn; b.disabled = !!dis; row.appendChild(b); };
@@ -5575,6 +5574,178 @@ function mountPrefs() {
   paint();
 }
 
+/* ------------------------------------------------------------------ A1 단계 대화(guided)
+   SODA GRAMMATIK KURS 과제의 말하기 연습(T.guided가 있는 연습)입니다. 처음 배우는 학생에게 맞춘 진행입니다.
+   - 파트너가 화면에 보이는 질문 네 개를 하나씩 하고, 학생은 화면의 대답 틀과 단어를 보며 대답한 뒤 마지막에 질문 하나를 합니다.
+   - 파트너 에이전트의 지시문은 그대로 두고, 진행 방법은 이 앱이 만드는 변수로 줍니다(gdFlow → flow, gdLevelRules → level_rules, gdTaskDe → task_text).
+   - 지금 몇 번째 질문인지는 파트너의 말에서 그 질문 문장을 찾아 정합니다(gdTrack). 학생 발화에는 그때의 단계(step)를 붙여 저장합니다(pushTurn).
+   - 도움 버튼은 파트너에게 [Hinweis:]를 보냅니다: 질문 다시 듣기(rep), 예시 대답 듣기(ex), 다음 질문으로(skip, 마지막 단계에서는 끝내기).
+     학생이 30초 넘게 아무 말도 하지 않으면 앱이 다음 질문으로 넘기게 합니다(파트너는 10초쯤 조용하면 먼저 예시 대답을 말합니다).
+   - 파트너가 「Danke! Das war super.」라고 말하면 그 말이 끝난 뒤 연습을 마칩니다(끝난 이유 done). */
+const gdOf = T => (T && T.guided) || null;
+/* 대답 수를 셀 때 빼는 말: 인사, 되묻기, 머뭇거림 */
+const GD_FILL = /\b(hallo|hi|guten tag|tschüss|wie bitte|noch ?einmal|noch mal|langsam(er)?|bitte|danke|ich verstehe (das |es )?nicht|ich weiß (es |das )?nicht|ähm+|äh+|öhm|hm+|mhm|moment|einen moment|okay|ok)\b/g;
+const gdWords = t => wordsOf(normT(t).replace(GD_FILL, ' ')).length;
+/* 질문마다 찾을 문장: 질문 전체, 그리고 다른 질문과 겹치지 않는 가장 짧은 앞부분(세 단어 이상) */
+function gdKeys(G) {
+  const full = G.steps.map(s => normT(s.q).trim());
+  return full.map((k, i) => {
+    const w = k.split(' '), out = [k];
+    for (let n = 3; n < w.length; n++) {
+      const p = w.slice(0, n).join(' ');
+      if (!full.some((o, j) => j !== i && (o + ' ').startsWith(p + ' '))) { out.push(p); break; }
+    }
+    return out.map(x => ' ' + x + ' ');
+  });
+}
+function gdLevelRules(A) {
+  const G = gdOf(A.T);
+  return 'Du sprichst mit einer Anfängerin oder einem Anfänger: ganz kurze, einfache Sätze mit drei bis sechs Wörtern, langsam und deutlich, nach jedem Satz eine kleine Pause. Grammatik nur so: ' + G.lang +
+    ' Sage nie „ähm“, „also“ oder „Wie sagt man“. Schreibe Zahlen als Wörter.' + (A.partner.gender === 'm' ? ' Du bist männlich: Lernpartner, nicht Lernpartnerin.' : '') + SLOW_RULE;
+}
+/* 파트너에게 주는 글에서 한국어 설명(괄호)을 뺍니다. */
+const gdDe = s => String(s).replace(/\s*\([^)]*[가-힣][^)]*\)/g, '').replace(/동사/g, 'Verb');
+function gdTaskDe(ex, T) {
+  const G = gdOf(T);
+  return ex.label + ' · Sprechübung für Anfänger in Schritten\nA sieht auf dem Bildschirm diese Fragen, jeweils mit Antwortmuster und Wörtern:\n' +
+    G.steps.map((s, i) => (i + 1) + '. „' + s.q + '“ — Muster: ' + gdDe(s.fr)).join('\n') + '\nAm Ende fragt A: „' + G.ask.q + '“' +
+    (G.ctx ? '\nPersonen auf dem Bildschirm: ' + G.ctx.map(x => x[0] + ' (' + x[1].split(' · ')[0] + ')').join(', ') : '');
+}
+function gdFlow(A) {
+  const G = gdOf(A.T), n = A.partner.name, f = A.partner.gender === 'f';
+  const L = [
+    'Das ist keine Prüfung, sondern eine ganz einfache Sprechübung für Anfänger zur Lektion ' + G.no + ' „' + G.title + '“. Es gibt keine Prüferin. A lernt erst seit kurzem Deutsch. Du bist ' +
+    (f ? 'eine geduldige, freundliche Lernpartnerin' : 'ein geduldiger, freundlicher Lernpartner') + '. A sieht auf dem Bildschirm jede deiner Fragen auf Deutsch und Koreanisch, ein Antwortmuster, ein paar Wörter und eine Beispielantwort.',
+    'Deine Angaben (bleibe dabei): Du heißt ' + n + '. ' + G.facts,
+    'Das Gespräch hat genau vier Fragen in dieser Reihenfolge. Stelle jede Frage genau mit diesen Wörtern:'
+  ].concat(G.steps.map((s, i) => 'Frage ' + (i + 1) + ': „' + s.q + '“ Beispielantwort: „' + s.ex + '“'))
+    .concat(['Danach fragt A dich, zum Beispiel: „' + G.ask.q + '“ Deine Antwort: „' + G.ask.ans + '“', 'So machst du es:']);
+  const R = [
+    'Auf „Bitte beginnen Sie.“ sagst du nur „Hallo! Ich bin ' + n + '.“ und dann Frage 1.',
+    'Nach jeder Frage wartest du ruhig, bis A antwortet (skip_turn), auch wenn A lange überlegt, „ähm“ sagt oder erst einen Teil sagt.',
+    'Antwortet A, auch mit nur einem Wort oder mit Fehlern: Freue dich kurz und sage die Antwort von A einmal richtig als ganzen Satz in der du-Form. Beispiel: A sagt „' + G.recast[0] + '“, du sagst „' + G.recast[1] + '“ Auch „Ja.“, „Nein.“ oder „Nein, ich weiß nicht.“ ist eine Antwort, wenn es zur Frage passt. Sage nie, dass etwas falsch war, und erkläre keine Grammatik. Stelle dann sofort die nächste Frage.',
+    'Sagt A „Wie bitte?“, „Noch einmal, bitte“, „Langsam, bitte“ oder „Ich verstehe das nicht“: Sage nur die Frage noch einmal, ganz langsam, mit kleinen Pausen.',
+    'Sagt A nur „Ich weiß nicht“ und ist das keine passende Antwort auf deine Frage, spricht A Koreanisch oder Englisch oder kommt nur „...“: Sage langsam „Zum Beispiel:“ und die Beispielantwort zur aktuellen Frage. Dann warte wieder. Kommt bei derselben Frage noch einmal „...“, sage „Kein Problem!“ und stelle die nächste Frage.',
+    'Nach der Antwort auf Frage 4 sagst du: „Super! Jetzt fragst du mich.“ Dann wartest du.',
+    'Fragt A dich etwas, antworte kurz mit deinem Satz. Kam die Frage nach „Jetzt fragst du mich.“, sage danach nur „Danke! Das war super.“ und sage dann nichts mehr. Sagt A nach „Jetzt fragst du mich.“ nichts oder nur „...“, sage trotzdem kurz deinen Satz und dann „Danke! Das war super.“',
+    'Benutze nur Wörter aus den Fragen, den Beispielantworten und deinen Angaben und diese kurzen Reaktionen: „Super!“, „Schön!“, „Gut!“, „Ach so.“, „Ich auch.“, „Kein Problem!“, „Danke!“. Stelle keine anderen Fragen. Sage nie „Möchtest du etwas dazu sagen?“, „Und noch?“, „Hast du noch Fragen?“, „Kannst du das bitte auf Deutsch sagen?“ oder „Entschuldigung, kannst du das bitte wiederholen?“. Hast du A nicht verstanden, sage nur „Wie bitte?“.',
+    'Jeder Beitrag hat höchstens zwei sehr kurze Sätze und dann die nächste Frage. Sprich langsam.',
+    'Sage „Danke! Das war super.“ nur ganz am Ende.'
+  ];
+  return L.join('\n') + '\n' + R.map((r, i) => (i + 1) + '. ' + r).join('\n');
+}
+function gdStart(A) {
+  A.gs = { cur: 0, keys: gdKeys(gdOf(A.T)), asked: [], said: [], helps: {}, closing: 0, endHint: false, say: '', me: '', btnAt: 0, shown: -1 };
+  gdPaint();
+}
+function gdWire(s, A) {
+  const bu = s.onUser, ba = s.onAgent;
+  s.onUser = t => { bu(t); gdHeard(A, t); };
+  s.onAgent = t => { ba(t); gdTrack(A, t); };
+}
+function gdHeard(A, text) {
+  const g = A.gs; if (!g) return;
+  g.me = text;
+  if (gdWords(text) > 0) g.said[g.cur] = true;
+  gdPaint();
+}
+function gdTrack(A, text) {
+  const G = gdOf(A.T), g = A.gs; if (!g) return;
+  const nt = normT(text), n = G.steps.length;
+  g.say = text;
+  let hit = -1;
+  for (let i = n - 1; i >= Math.min(g.cur, n - 1); i--) if (g.keys[i].some(k => nt.includes(k))) { hit = i; break; }
+  if (hit >= 0 && g.cur < n) { if (hit > g.cur) g.cur = hit; g.asked[hit] = true; }
+  if (g.cur < n && (/ jetzt fragst du /.test(nt) || (g.cur === n - 1 && hit < 0 && g.said[n - 1] && !/ zum beispiel /.test(nt)))) g.cur = n;
+  if (!g.closing && (g.cur >= n - 1 || g.endHint) && / das war super /.test(nt)) g.closing = performance.now();
+  gdPaint();
+}
+function gdSend(kind, auto) {
+  const A = S.A, s = S.session;
+  if (!A || !A.gs || !s || s.role !== 'partner' || s.isClosed || A.gs.closing) return;
+  if (!auto && (AudioIO.speaking || performance.now() - A.gs.btnAt < 1500)) return;
+  const G = gdOf(A.T), g = A.gs, n = G.steps.length, i = g.cur, st = G.steps[Math.min(i, n - 1)];
+  let h;
+  if (kind === 'rep') h = i < n ? '[Hinweis: A möchte die Frage noch einmal hören. Sage nur ganz langsam: „' + st.q + '“]' : '[Hinweis: A möchte das noch einmal hören. Sage nur langsam: „Jetzt fragst du mich.“]';
+  else if (kind === 'ex') h = i < n ? '[Hinweis: A braucht Hilfe. Sage nur langsam: „Zum Beispiel: ' + st.ex + '“ Dann warte auf A.]' : '[Hinweis: A braucht Hilfe. Sage nur langsam: „Du kannst fragen: ' + G.ask.q + '“ Dann warte auf A.]';
+  else if (i < n - 1) h = '[Hinweis: A möchte zur nächsten Frage. Sage nur „Okay!“ und dann: „' + G.steps[i + 1].q + '“]';
+  else if (i === n - 1) h = '[Hinweis: A möchte weitermachen. Sage nur: „Okay! Jetzt fragst du mich.“]';
+  else h = '[Hinweis: A möchte aufhören. Sage nur kurz deinen Satz: „' + G.ask.ans + '“ und dann „Danke! Das war super.“]';
+  if (auto) g.helps.auto = (g.helps.auto || 0) + 1; else { g.helps[kind] = (g.helps[kind] || 0) + 1; g.btnAt = performance.now(); }
+  s.sendText(h);
+  gdPaint();
+}
+function gdStage(A) {
+  const g = A.gs, n = gdOf(A.T).steps.length;
+  return g.closing ? '마무리' : g.cur >= n ? '마지막 · 내가 질문하기' : '질문 ' + (g.cur + 1) + ' / ' + n;
+}
+function gdProgress(A) {
+  const g = A.gs, n = gdOf(A.T).steps.length;
+  return Math.round(Math.min(n + 1, g.cur + (g.closing ? 1 : 0)) / (n + 1) * 100);
+}
+const gdChips = w => (w || []).map(x => '<span>' + esc(x[0]) + '<small>' + esc(x[1]) + '</small></span>').join('');
+const gdCtxHtml = G => G.ctx ? G.ctx.map(x => '<span><b>' + esc(x[0]) + '</b> ' + esc(x[1]) + ' → <b>' + esc(x[2]) + '</b></span>').join('') : '';
+function gdPaint() {
+  const A = S.A; if (!A || !A.gs) return;
+  const G = gdOf(A.T), g = A.gs, n = G.steps.length, i = g.cur, ask = i >= n, st = ask ? null : G.steps[i];
+  const stage = gdStage(A);
+  $('#gdStep').textContent = stage;
+  if (!g.closing) $('#exStage').textContent = stage;
+  $('#gdDots').innerHTML = Array.from({ length: n + 1 }, (_, k) => '<i class="' + (g.closing || k < i ? 'done' : k === i ? 'cur' : '') + '"></i>').join('');
+  const cx = $('#gdCtx'); cx.hidden = !G.ctx; cx.innerHTML = gdCtxHtml(G);
+  if (g.shown !== i) {
+    g.shown = i;
+    $('#gdQ').textContent = ask ? G.ask.q : st.q;
+    $('#gdQk').textContent = ask ? G.ask.ko : st.ko;
+    $('#gdLab').textContent = ask ? '이제 내가 질문할 차례입니다' : '이렇게 대답하십시오';
+    $('#gdFr').textContent = ask ? '' : st.fr;
+    $('#gdFrk').textContent = ask ? '위 문장으로 파트너에게 물어보십시오. 파트너가 대답하면 연습이 끝납니다.' : st.frKo;
+    $('#gdTip').textContent = ask ? '' : (st.tip || '');
+    $('#gdW').innerHTML = ask ? '' : gdChips(st.w);
+    const ex = $('#gdEx'); ex.hidden = ask; ex.open = false;
+    if (!ask) { $('#gdExDe').textContent = st.ex; $('#gdExKo').textContent = st.exKo; }
+    $('#gdSkip').textContent = ask ? '끝내기' : i === n - 1 ? '내 질문으로' : '다음 질문으로';
+    $('#gdCard [data-gd="rep"]').textContent = ask ? '다시 듣기' : '질문 다시 듣기';
+    $('#gdCard [data-gd="ex"]').textContent = ask ? '물어볼 문장 듣기' : '예시 대답 듣기';
+    $('#gdPlan').innerHTML = G.steps.map((s, k) => '<li class="' + (k < i ? 'done' : k === i ? 'cur' : '') + '"><span class="mk">' + (k < i ? '✓' : k + 1) + '</span><span><span class="de">' + esc(s.q) + '</span> · ' + esc(s.ko) + '</span></li>').join('') +
+      '<li class="' + (ask ? 'cur' : '') + '"><span class="mk">' + (n + 1) + '</span><span>내 질문: <span class="de">' + esc(G.ask.q) + '</span></span></li>';
+  }
+  $('#gdWho').textContent = A.partner.name;
+  $('#gdSay').textContent = g.say || '…';
+  $('#gdMe').textContent = g.me || '—';
+}
+function gdButtons(sp) {
+  const A = S.A, g = A && A.gs, ok = !!g && !g.closing && !sp && !!S.session && S.session.role === 'partner' && performance.now() - g.btnAt >= 1500;
+  $$('#gdCard [data-gd]').forEach(b => { b.disabled = !ok; });
+}
+/* 준비 화면의 「대화 순서」 */
+function gdSheetHtml(ex, T) {
+  const G = gdOf(T), n = G.steps.length;
+  let h = '<p class="tt">Lektion ' + esc(G.no) + ' · ' + esc(G.title) + '<span class="gl">' + esc(G.titleKo) + '</span></p>';
+  h += '<p class="sub">이 과의 문법 · ' + esc(G.gramKo) + '</p>';
+  if (G.ctx) h += '<div class="gd-ctx">' + gdCtxHtml(G) + '</div>';
+  h += '<ol class="gd-prep">' + G.steps.map((s, k) => '<li><span class="n">' + (k + 1) + '</span><div><p class="q">' + esc(s.q) + '<span class="gl">' + esc(s.ko) + '</span></p><p class="fr">' + esc(s.fr) + '</p>' +
+    (s.tip ? '<p class="tip">' + esc(s.tip) + '</p>' : '') + '<div class="gd-words">' + gdChips(s.w) + '</div><p class="exl">예: <i>' + esc(s.ex) + '</i> ' + esc(s.exKo) + '</p></div></li>').join('') +
+    '<li class="me"><span class="n">' + (n + 1) + '</span><div><p class="lab">마지막에 내가 묻기</p><p class="q">' + esc(G.ask.q) + '<span class="gl">' + esc(G.ask.ko) + '</span></p></div></li></ol>';
+  h += '<p class="kb">이렇게 연습합니다</p><ul class="gd-how">' + [
+    '파트너는 천천히 말하고, 내가 대답할 때까지 기다립니다. 파트너의 말과 내 말이 화면에 글자로 나옵니다.',
+    '짧게 대답해도 됩니다. 단어 하나만 말해도 파트너가 문장으로 바꿔 다시 말해 줍니다.',
+    '대답이 떠오르지 않으면 잠시 기다리십시오. 10초쯤 지나면 파트너가 예시 대답을 말해 줍니다. 「예시 대답 듣기」를 눌러도 됩니다.',
+    '질문을 못 알아들었으면 \'Wie bitte?\'라고 말하거나 「질문 다시 듣기」를 누르십시오.'
+  ].map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>';
+  return h;
+}
+/* 자동 점검용: 질문마다 대답했는지, 세 단어 이상으로 대답했는지, 마지막에 질문했는지 */
+function gdStats(T, a) {
+  const n = gdOf(T).steps.length, st = { n, answered: 0, sentences: 0, asked: false, askText: '' }, by = {};
+  for (const x of a.turns) if (x.phase === 'dialog' && x.role === 'student' && typeof x.step === 'number') (by[x.step] = by[x.step] || []).push(x.text);
+  for (let i = 0; i < n; i++) { const w = gdWords((by[i] || []).join(' ')); if (w >= 1) st.answered++; if (w >= 3) st.sentences++; }
+  const ak = (by[n] || []).join(' ');
+  if (ak && gdWords(ak) > 0 && (/\?/.test(ak) || /\bund (du|dir|in)\b/i.test(ak) || questionsIn(ak) > 0)) { st.asked = true; st.askText = ak.slice(0, 90); }
+  return st;
+}
+const gdHelpText = h => h ? [['ex', '예시 대답 듣기'], ['rep', '질문 다시 듣기'], ['skip', '넘기기·끝내기'], ['auto', '오래 조용해서 자동으로 넘김']].filter(x => h[x[0]]).map(x => x[1] + ' ' + h[x[0]] + '회').join(', ') : '';
+
 /* ------------------------------------------------------------------ 준비 */
 function startPrep(ex, tn) {
   S.openEx = ex.id;
@@ -5614,6 +5785,16 @@ function startPrep(ex, tn) {
   $('#timeInfo').innerHTML = '시험 시간 <b>' + fmt(tm.official) + '</b>에 연장 시간 <b>' + fmt(tm.extra) + '</b>이 더해져 최대 <b>' + fmt(tm.official + tm.extra) + '</b>입니다. ' + (ex.hidden ? '시간이 되면 대화가 끝납니다. ' : '시간이 되면 시험관이 안내합니다. ') + who;
   /* 준비 화면에는 말하기 속도 막대를 두지 않습니다(모든 연습). 속도는 이 브라우저에 저장된 값을 씁니다. */
   $$('#v-prep [data-speedbox]').forEach(b => { b.hidden = true; });
+  /* 단계 대화(guided): 과제지 대신 대화 순서를 보이고, 상대 실력·준비 메모·준비 타이머는 감춥니다. */
+  const G = gdOf(T);
+  ['#optSkill', '#skillNote', '#notesCard'].forEach(q => { $(q).hidden = !!G; });
+  $('#prepTask').toggleAttribute('data-keep', !!G);
+  $('#prepTaskTitle').textContent = G ? '대화 순서' : '과제지';
+  $('#prepPartnerDesc').textContent = G ? '천천히 쉬운 문장으로 질문하고, 내가 대답할 때까지 기다립니다. 짧게 대답하면 문장으로 바꿔 다시 말해 주고, 대답이 떠오르지 않으면 예시 대답을 말해 줍니다.' : '시험 수준에 맞는 독일어로 말하고, 학생의 말에 반응하며 대화를 이어 갑니다. 과제에서 벗어나면 과제로 돌아옵니다.';
+  if (G) {
+    $('#prepTask').innerHTML = gdSheetHtml(ex, T);
+    $('#timeInfo').innerHTML = '질문 네 개와 내 질문 하나로 끝나는 짧은 대화입니다. 보통 2~3분 걸리고, 길어도 <b>' + fmt(tm.official + tm.extra) + '</b>이면 끝납니다. 시작하면 파트너가 먼저 인사하고 첫 질문을 합니다.';
+  }
   if (REC_ON(ex)) $('#prepSendNote').textContent += ' 연습하는 동안 나와 파트너의 대화가 녹음됩니다. 녹음은 연습이 끝난 화면에서 다시 듣고 파일로 내려받을 수 있으며, 내려받지 않으면 그 화면을 나갈 때 자동으로 지워집니다.';
   $('#startErr').textContent = '';
   show('v-prep');
@@ -5639,6 +5820,7 @@ function fill(str, A) {
 }
 function partnerVars(A) {
   const T = A.T;
+  if (gdOf(T)) return { partner_name: A.partner.name, exam_label: A.ex.label, level: A.ex.level, level_rules: gdLevelRules(A), teil_label: T.no + ' · ' + T.name, task_text: gdTaskDe(A.ex, T), flow: gdFlow(A), redemittel: T.redemittel };
   return {
     partner_name: A.partner.name, exam_label: A.ex.label, level: A.ex.level, level_rules: APP.levels[A.ex.level] + SKILLS[A.skill].rule + (A.partner.gender === 'm' ? ' Du bist männlich: Teilnehmer B, nicht Teilnehmerin.' : '') + (A.ex.hidden ? SLOW_RULE : ''),
     teil_label: T.no + ' · ' + T.name, task_text: taskTextDe(A.ex, T, A.studentItem && A.studentItem.id),
@@ -5653,7 +5835,9 @@ function setStage(txt, notice) {
 function pushTurn(role, text, phase) {
   const A = S.A; if (!A) return;
   const t = A.dialogStart ? Math.round((performance.now() - A.dialogStart) / 100) / 10 : null;
-  A.turns.push({ role, text, phase, t });
+  const rec = { role, text, phase, t };
+  if (A.gs) rec.step = A.gs.cur;
+  A.turns.push(rec);
 }
 function wireSession(s, role, phase) {
   s.onUser = t => pushTurn('student', t, phase);
@@ -5748,6 +5932,8 @@ function runDialog() {
   return new Promise(async (resolve, reject) => {
     const s = new Session('partner', partnerVars(A), { ticket: A.ticket }, (A.ex.hidden ? { tts: { model_id: SLOW_MODEL, voice_id: SLOW_VOICE[A.partner.gender], speed: Pref.speed } } : (Pref.speedSet ? { tts: { model_id: SLOW_MODEL, voice_id: A.partner.voice, speed: Pref.speed } } : { tts: { voice_id: A.partner.voice, speed: SKILLS[A.skill].speed } })));
     S.session = s; wireSession(s, 'partner', 'dialog');
+    const G = gdOf(T);
+    if (G) gdWire(s, A);
     try { await s.open(); } catch (e) { return reject(e); }
     A.dialogStart = performance.now(); A.started = new Date().toISOString(); A.heard = false;
     S.V = { lastVoiceAt: performance.now(), voicedMs: 0, voice: false };
@@ -5759,6 +5945,7 @@ function runDialog() {
     };
     s.onClose = () => { if (!finished) finish(S.abort ? 'abort' : 'disconnect'); };
     if (mono) setStage('혼자 이야기하기', '파트너는 듣기만 합니다. 이야기가 끝나면 "여기서 끝내기"를 누르십시오. 시간이 되면 시험관이 알려 줍니다.');
+    else if (G) setStage(gdStage(A), '화면의 질문과 대답 틀을 보고 대답하십시오. 짧게 대답해도 됩니다.');
     else setStage('대화 중', A.ex.hidden ? A.partner.name + '가 인사하며 대화를 시작합니다. 끝까지 듣고 질문이나 반응으로 이어 가십시오. ' + SLOW_HINT : A.starter === 'partner' ? A.partner.name + '가 먼저 말합니다. 끝까지 듣고 질문이나 반응으로 이어 가십시오.' : '먼저 말씀하십시오. 2초 안에 시작하지 않으면 ' + A.partner.name + '가 먼저 시작합니다. 파트너는 끝까지 듣습니다.');
     if (A.starter === 'partner' && !mono) s.sendText('Bitte beginnen Sie.');
     const h = longHint(A);
@@ -5769,6 +5956,7 @@ function runDialog() {
       $('#exMark').style.left = (tm.official / total * 100) + '%';
       $('#exLimit').textContent = el <= tm.official ? '시험 시간 ' + fmt(tm.official) + ' · 추가 ' + fmt(tm.extra) : '추가 시간 중 · 최대 ' + fmt(total);
       $('#btnFinish').disabled = el < T.minFinish;
+      if (G) { bar.style.width = gdProgress(A) + '%'; bar.classList.remove('ext'); $('#exLimit').textContent = '최대 ' + fmt(total); }
       const sp = AudioIO.speaking;
       $('#spkPartner').classList.toggle('on', sp);
       $('#spkStudent').classList.toggle('on', S.V.voice && !sp);
@@ -5777,13 +5965,19 @@ function runDialog() {
       if (wasSpeaking && !sp) partnerEndAt = now;
       wasSpeaking = sp;
       /* 연습(Übung): 학생이 10초 넘게 말하지 않으면 파트너가 다시 말을 겁니다. 시간이 끝날 때까지 반복합니다. */
-      if (!mono && A.ex.hidden && partnerEndAt && !sp && el < total - 8 && now - Math.max(S.V.lastVoiceAt, partnerEndAt) > 10000 && now - lastNudge > 10000) {
+      if (!mono && A.ex.hidden && !G && partnerEndAt && !sp && el < total - 8 && now - Math.max(S.V.lastVoiceAt, partnerEndAt) > 10000 && now - lastNudge > 10000) {
         lastNudge = now; nudges++;
         const asks = [
           '[Hinweis: A sagt seit zehn Sekunden nichts. Sage jetzt etwas, rufe skip_turn nicht auf: Wiederhole deine letzte Frage kürzer und einfacher oder hilf mit einer ganz einfachen Antwortmöglichkeit.]',
           '[Hinweis: A schweigt weiter. Sage jetzt etwas, rufe skip_turn nicht auf: Stelle eine neue, sehr einfache Frage zum Thema, die A mit einem kurzen Satz beantworten kann.]'
         ];
         s.sendText(asks[nudges % 2 === 1 ? 0 : 1]);
+      }
+      /* 단계 대화: 도움 버튼 상태. 30초 넘게 아무도 말하지 않으면 다음 질문으로 넘기게 하고, 마무리 말이 끝나면 연습을 마칩니다. */
+      if (G) {
+        gdButtons(sp);
+        if (partnerEndAt && !sp && !A.gs.closing && el < total - 8 && now - Math.max(S.V.lastVoiceAt, partnerEndAt) > 30000 && now - lastNudge > 30000) { lastNudge = now; gdSend('skip', true); }
+        if (A.gs.closing && ((now - A.gs.closing > 2000 && !AudioIO.busy) || now - A.gs.closing > 15000)) finish('done');
       }
       /* 내가 먼저 시작하는 차례인데 2초 안에 말하지 않으면 파트너가 먼저 시작합니다. */
       if (!mono && !switched && A.starter === 'student' && !A.heard && !sp && now - A.dialogStart > 2000 && typeof SILENT !== 'undefined' && T.flow && T.flow.partner && T.flow.partner !== SILENT) {
@@ -5793,8 +5987,12 @@ function runDialog() {
         setStage('대화 중', A.partner.name + '가 먼저 말합니다. 끝까지 듣고 질문이나 반응으로 이어 가십시오.');
       }
       if (h && !hintSent && S.V.voicedMs > h[0]) { hintSent = true; s.sendContext(h[1]); }
-      if (!mono && !endHint && el >= total - 30) { endHint = true; s.sendContext('[Hinweis: Die Zeit ist fast um. Komm in deinem nächsten Beitrag zu einem Abschluss.]'); }
-      if (el > tm.official && !timeUpAt) setStage(mono ? '혼자 이야기하기 · 추가 시간' : '대화 중 · 추가 시간');
+      if (!mono && !endHint && el >= total - 30) {
+        endHint = true;
+        if (G) { A.gs.endHint = true; s.sendContext('[Hinweis: Die Zeit ist fast um. Sage nach der nächsten Antwort von A nur noch „Danke! Das war super.“]'); }
+        else s.sendContext('[Hinweis: Die Zeit ist fast um. Komm in deinem nächsten Beitrag zu einem Abschluss.]');
+      }
+      if (el > tm.official && !timeUpAt && !G) setStage(mono ? '혼자 이야기하기 · 추가 시간' : '대화 중 · 추가 시간');
       if (el >= total) {
         if (!timeUpAt) timeUpAt = now;
         if ((!sp && now - S.V.lastVoiceAt > 1200) || now - timeUpAt > 15000) finish('time');
@@ -5850,6 +6048,11 @@ async function startExam() {
   $('#exTeil').textContent = ex.label + ' · ' + T.no + ' · ' + A.no + '번째 시도';
   $('#exTask').innerHTML = sheetHtml(ex, T, chosen && chosen.id);
   $('#exHelpCard').hidden = ex.level !== 'A1'; $('#exHelp').innerHTML = ex.level === 'A1' ? helpHtml(ex, T) : '';
+  /* 단계 대화(guided): 과제지·메모 대신 단계 카드를 보입니다. */
+  const G = gdOf(T);
+  $('#gdCard').hidden = !G; ['#exTaskCard', '#exNotesCard', '#exNoTx'].forEach(q => { $(q).hidden = !!G; });
+  if (G) { $('#exHelpCard').hidden = true; $('#gdPlanBox').open = window.innerWidth > 640; gdStart(A); }
+  $('#exMark').hidden = !!G;
   $('#exNotes').value = S.notes[ckey(ex, t)] || '';
   $('#spkPartnerName').textContent = A.partner.name; $('#spkStudentName').textContent = S.user.id;
   ['spkExaminer', 'spkPartner', 'spkStudent'].forEach((id, i) => { $('#' + id).className = 'spk ' + ['ex', 'pa', 'st'][i]; });
@@ -5929,6 +6132,7 @@ function finalizeAttempt(reason) {
     followQs: A.followQs, startedAt: A.started, durationSec: Math.round(dur), endReason: reason, turns: A.turns,
     official: A.timing.official, extra: A.timing.extra
   };
+  if (A.gs) rec.guided = { reached: A.gs.cur, done: !!A.gs.closing, helps: A.gs.helps };
   if (A.recorded !== undefined) {
     rec.recorded = !!A.recorded;
     $('#exRec').hidden = true;
@@ -6043,6 +6247,9 @@ function analyze(T, a, studentItem) {
         note = keys.length ? '다룬 키워드: ' + (got.map(k => k[0]).join(', ') || '없음') + ' (' + n + '/' + keys.length + ')' : '키워드를 확인하지 못했습니다.';
         break;
       }
+      case 'gsteps': { const g = gdStats(T, a); s = grade3(g.answered, c.yes, c.maybe); note = '대답한 질문 ' + g.answered + '/' + g.n; break; }
+      case 'gsent': { const g = gdStats(T, a); s = grade3(g.sentences, c.yes, c.maybe); note = '세 단어 이상으로 대답한 질문 ' + g.sentences + '개'; break; }
+      case 'gask': { const g = gdStats(T, a); s = g.asked ? 'yes' : 'no'; note = g.asked ? '내 질문: ' + g.askText : '마지막 질문을 한 기록이 없습니다.'; break; }
       case 'topics': {
         const n = c.groups.filter(g => has(g)).length;
         s = n >= c.groups.length ? 'yes' : n >= Math.ceil(c.groups.length / 2) ? 'maybe' : 'no';
@@ -6056,7 +6263,7 @@ function analyze(T, a, studentItem) {
 }
 
 /* ------------------------------------------------------------------ 시도 종료 화면 */
-const REASON = { reload: '시험 도중 새로고침하거나 창을 닫아 중단되었습니다. 1회로 계산됩니다.', time: '시간이 되어 대화가 끝났습니다.', user: '내가 끝냈습니다.', abort: '중단했습니다.', disconnect: '연결이 끊어졌습니다.' };
+const REASON = { done: '질문을 모두 마치고 대화가 끝났습니다.', reload: '시험 도중 새로고침하거나 창을 닫아 중단되었습니다. 1회로 계산됩니다.', time: '시간이 되어 대화가 끝났습니다.', user: '내가 끝냈습니다.', abort: '중단했습니다.', disconnect: '연결이 끊어졌습니다.' };
 const WHO_KO = { examiner: '시험관', partner: '파트너', student: '나' };
 function transcriptHtml(turns, whoStudent) {
   const bl = [];
@@ -6076,9 +6283,16 @@ function showAfter(ex, t, idx) {
   $('#afEyebrow').textContent = ex.label + ' · ' + T.no + ' · ' + a.no + '번째 시도';
   $('#afTitle').textContent = '연습 기록';
   $('#afInfo').textContent = (REASON[a.endReason] || '') + (mono ? ' 혼자 말하기 연습입니다.' : ' 파트너: ' + a.partnerName + '. 시작한 사람: ' + (a.starter === 'student' ? '나' : a.partnerName) + '.');
-  const tiles = [[fmt(a.durationSec), mono ? '말한 시간' : '대화 시간'], [m.studentWords, '내 단어 수']];
+  let tiles = [[fmt(a.durationSec), mono ? '말한 시간' : '대화 시간'], [m.studentWords, '내 단어 수']];
   if (mono) { if (T.followup) tiles.push([m.followWords, '추가 질문 답변(단어)']); } else tiles.push([m.share + '%', '내 발화 비율']);
   tiles.push([m.longestTurn, '가장 긴 발화(단어)'], [m.phraseKinds, '쓴 고정 표현 종류'], [m.fillers, '머뭇거림(ähm 등)']);
+  if (gdOf(T)) {
+    const g = gdStats(T, a);
+    const hp = a.guided && a.guided.helps ? ['ex', 'rep', 'skip'].reduce((x, k) => x + (a.guided.helps[k] || 0), 0) : 0;
+    tiles = [[g.answered + '/' + g.n, '대답한 질문'], [g.sentences, '문장 대답'], [g.asked ? '했음' : '안 함', '마지막 질문'], [fmt(a.durationSec), '대화 시간'], [m.studentWords, '내 단어 수'], [hp + '회', '도움 버튼']];
+    const ht = gdHelpText(a.guided && a.guided.helps);
+    $('#afInfo').textContent = (REASON[a.endReason] || '') + ' 파트너: ' + a.partnerName + '.' + (ht ? ' 도움 사용: ' + ht + '.' : '');
+  }
   $('#afMetrics').innerHTML = '<div class="metrics">' + tiles.map(x => '<div class="metric"><b>' + x[0] + '</b><span>' + x[1] + '</span></div>').join('') + '</div>';
   const used = usedOf(r, ex, t), left = unlimited() ? Infinity : r.locked ? 0 : Math.max(0, maxA() - used);
   const row = $('#afButtons'); row.innerHTML = '';
@@ -6113,7 +6327,7 @@ function evalPayload(ex, t) {
   const lastChoice = r.attempts.length ? r.attempts[r.attempts.length - 1] : null;
   return JSON.stringify({
     student_name: S.user.id, exam_label: ex.label, level: ex.level, teil_label: T.no, teil_name: T.name + ' (' + T.ko + ')', mode: T.kind,
-    task: taskTextDe(ex, T, null) + (lastChoice && lastChoice.studentTopic ? '\n\nGewählt von A: ' + lastChoice.studentTopic : ''),
+    task: (gdOf(T) ? gdTaskDe(ex, T) : taskTextDe(ex, T, null)) + (lastChoice && lastChoice.studentTopic ? '\n\nGewählt von A: ' + lastChoice.studentTopic : ''),
     check_items: T.checks.map(c => c.ko),
     rubric: { grades: rb.grades, points: rb.points, criteria: rb.criteria.map(c => ({ key: c.key, de: c.de, ko: c.ko, assess: c.assess, desc_ko: c.desc_ko })), notes: rb.notes.concat(T.evalNotes || []) },
     attempts: r.attempts.filter(a => a.turns.some(x => x.role === 'student')).slice(-2).map(a => ({
@@ -6304,6 +6518,7 @@ function uebText(ex) {
     L.push('학생 발화 ' + m.words + '단어 · 학생 발화 비율 ' + (m.share == null ? '-' : m.share + '%') + ' · 가장 긴 발화 ' + m.longest + '단어');
     if (m.topic) L.push('고른 주제·카드: ' + m.topic);
     m.checks.forEach(c => L.push('  - ' + c.ko + ': ' + ({ yes: '충족', maybe: '일부', no: '미충족' }[c.status] || c.status) + (c.note ? ' (' + c.note + ')' : '')));
+    if (a.guided && gdHelpText(a.guided.helps)) L.push('  - 도움 사용: ' + gdHelpText(a.guided.helps));
     L.push('대화 전사:');
     m.transcript.forEach(b => L.push('  ' + b.who + ': ' + b.text));
   });
@@ -6647,6 +6862,7 @@ $('#btnMic2').onclick = () => micCheck('#meterBar2', '#micMsg2', '#v-prep');
 mountSens(); mountPrefs();
 $('#btnPrepBack').onclick = () => { clearInterval(S.prepTimer); renderToc(); };
 $('#btnPrepTimer').onclick = prepTimer;
+$$('#gdCard [data-gd]').forEach(b => { b.onclick = () => gdSend(b.dataset.gd); });
 $('#btnStart').onclick = () => { $('#btnStart').disabled = true; clearInterval(S.prepTimer); startExam().finally(() => { $('#btnStart').disabled = false; }); };
 $('#mStart button').onclick = () => $('#btnStart').click();
 if (window.IntersectionObserver) new IntersectionObserver(es => es.forEach(e => { $('#mStart').hidden = e.isIntersecting; })).observe($('#btnStart'));
