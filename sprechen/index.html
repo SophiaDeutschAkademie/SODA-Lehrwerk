@@ -6286,7 +6286,7 @@ function showAfter(ex, t, idx) {
   let tiles = [[fmt(a.durationSec), mono ? '말한 시간' : '대화 시간'], [m.studentWords, '내 단어 수']];
   if (mono) { if (T.followup) tiles.push([m.followWords, '추가 질문 답변(단어)']); } else tiles.push([m.share + '%', '내 발화 비율']);
   tiles.push([m.longestTurn, '가장 긴 발화(단어)'], [m.phraseKinds, '쓴 고정 표현 종류'], [m.fillers, '머뭇거림(ähm 등)']);
-  if (gdOf(T)) {
+  if (gdOf(T) && a.guided) {
     const g = gdStats(T, a);
     const hp = a.guided && a.guided.helps ? ['ex', 'rep', 'skip'].reduce((x, k) => x + (a.guided.helps[k] || 0), 0) : 0;
     tiles = [[g.answered + '/' + g.n, '대답한 질문'], [g.sentences, '문장 대답'], [g.asked ? '했음' : '안 함', '마지막 질문'], [fmt(a.durationSec), '대화 시간'], [m.studentWords, '내 단어 수'], [hp + '회', '도움 버튼']];
