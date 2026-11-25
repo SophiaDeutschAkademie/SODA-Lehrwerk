@@ -1,0 +1,81 @@
+{
+ "job": "e1_mk_02",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "Markus",
+   "parts": [
+    "Kein Problem! Du lernst schnell."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Markus",
+   "parts": [
+    "Meine Nummer ist null, sechs, neun, neun, null, null, null, neun, eins, eins, acht."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Markus",
+   "parts": [
+    "m, Bindestrich, weber, at, example, Punkt, com"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Markus",
+   "parts": [
+    "Wir arbeiten zusammen."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Markus",
+   "parts": [
+    "Dohyun, bist du verheiratet?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Markus",
+   "parts": [
+    "Wohnt deine Frau auch in Frankfurt?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Markus",
+   "parts": [
+    "Habt ihr Kinder?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Markus",
+   "parts": [
+    "Ich habe zwei Kinder. Meine Tochter ist acht und mein Sohn ist drei."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Markus",
+   "parts": [
+    "Mia und Paul. Hier, das ist ein Foto."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Markus",
+   "parts": [
+    "Meine Tochter ist acht Jahre alt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Kein Problem! Du lernst schnell. [pause] Meine Nummer ist null, sechs, neun, neun, null, null, null, neun, eins, eins, acht. [pause] m, Bindestrich, weber, at, example, Punkt, com [pause] Wir arbeiten zusammen. [pause] Dohyun, bist du verheiratet? [pause] Wohnt deine Frau auch in Frankfurt? [pause] Habt ihr Kinder? [pause] Ich habe zwei Kinder. Meine Tochter ist acht und mein Sohn ist drei. [pause] Mia und Paul. Hier, das ist ein Foto. [pause] Meine Tochter ist acht Jahre alt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

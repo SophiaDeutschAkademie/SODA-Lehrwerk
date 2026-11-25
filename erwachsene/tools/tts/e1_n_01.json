@@ -1,0 +1,86 @@
+{
+ "job": "e1_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Guten Tag!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Ich heiße Jiu Kim."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Ich komme aus Korea."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Ich wohne in Frankfurt."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Hallo!",
+    "Hallo, Jiu!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Guten Morgen!",
+    "Guten Morgen, Frau Becker!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Guten Tag, Herr Park!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Guten Abend!",
+    "Guten Abend, Frau Lee!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Auf Wiedersehen!",
+    "Auf Wiedersehen, Frau Hoffmann!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Tschüss!",
+    "Tschüss, Dohyun!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag! [pause] Ich heiße Jiu Kim. [pause] Ich komme aus Korea. [pause] Ich wohne in Frankfurt. [pause] Hallo! Hallo, Jiu! [pause] Guten Morgen! Guten Morgen, Frau Becker! [pause] Guten Tag, Herr Park! [pause] Guten Abend! Guten Abend, Frau Lee! [pause] Auf Wiedersehen! Auf Wiedersehen, Frau Hoffmann! [pause] Tschüss! Tschüss, Dohyun! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

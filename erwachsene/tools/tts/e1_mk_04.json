@@ -1,0 +1,53 @@
+{
+ "job": "e1_mk_04",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "Markus",
+   "parts": [
+    "Ich nehme einen Salat."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Markus",
+   "parts": [
+    "Morgen, Dohyun! Du bist früh hier."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Markus",
+   "parts": [
+    "Um sechs? Wann fängst du an?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Markus",
+   "parts": [
+    "Wow! Und wann frühstückst du?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Markus",
+   "parts": [
+    "Ich stehe um sieben auf. Meine Tochter schläft gern lange."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Markus",
+   "parts": [
+    "Bis fünf. Um zehn Uhr haben wir eine Besprechung."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich nehme einen Salat. [pause] Morgen, Dohyun! Du bist früh hier. [pause] Um sechs? Wann fängst du an? [pause] Wow! Und wann frühstückst du? [pause] Ich stehe um sieben auf. Meine Tochter schläft gern lange. [pause] Bis fünf. Um zehn Uhr haben wir eine Besprechung. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

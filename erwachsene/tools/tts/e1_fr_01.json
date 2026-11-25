@@ -1,0 +1,81 @@
+{
+ "job": "e1_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Guten Morgen! Ich bin Sabine Schulz. Wie heißen Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Entschuldigung, wie bitte? Wie schreibt man das?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Vielen Dank! Woher kommen Sie, Frau Choi?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Und wo wohnen Sie jetzt?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Ich wohne in Mainz. Willkommen bei Kessler Technik!"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag, Frau Lee. Wie ist Ihre Telefonnummer, bitte?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Frau",
+   "parts": [
+    "Danke. Und wie ist Ihre E-Mail-Adresse?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Frau",
+   "parts": [
+    "Wie bitte? Langsam, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Frau",
+   "parts": [
+    "Danke schön. Arbeiten Sie in Frankfurt, Frau Lee?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Frau",
+   "parts": [
+    "Ah, interessant. Vielen Dank, Frau Lee. Bis morgen!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Morgen! Ich bin Sabine Schulz. Wie heißen Sie? [pause] Entschuldigung, wie bitte? Wie schreibt man das? [pause] Vielen Dank! Woher kommen Sie, Frau Choi? [pause] Und wo wohnen Sie jetzt? [pause] Ich wohne in Mainz. Willkommen bei Kessler Technik! [pause] Guten Tag, Frau Lee. Wie ist Ihre Telefonnummer, bitte? [pause] Danke. Und wie ist Ihre E-Mail-Adresse? [pause] Wie bitte? Langsam, bitte. [pause] Danke schön. Arbeiten Sie in Frankfurt, Frau Lee? [pause] Ah, interessant. Vielen Dank, Frau Lee. Bis morgen! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

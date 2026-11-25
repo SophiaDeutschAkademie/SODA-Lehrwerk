@@ -143,9 +143,10 @@ html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
 
 /* 본문이 올라온 줄: 줄 전체를 누르면 그 과로 간다 */
 .auf{position:relative}
-.auf a{text-decoration:none}
-.auf a::after{content:"";position:absolute;inset:0}
-.auf:hover a,.auf a:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.auf a.go{text-decoration:none}
+.auf a.go::after{content:"";position:absolute;inset:0}
+.auf:hover a.go,.auf a.go:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.auf .syn a{position:relative;z-index:1}
 .lek.auf>div{padding-right:20px}
 .lek.auf::after,.sta.auf::after,.tst.auf::after{content:"";position:absolute;right:4px;top:22px;width:8px;height:8px;border-right:2px solid var(--ink2);border-top:2px solid var(--ink2);transform:rotate(45deg);pointer-events:none}
 .sta.auf,.tst.auf{padding-right:34px}
@@ -158,7 +159,8 @@ html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
 .step.offen[aria-selected="true"]::after{background:var(--on-fill)}
 .p-go{margin-top:16px}
 .p-go .btn{min-height:44px;padding:0 22px;font-size:15px}
-.p-wart{margin-top:14px;font-size:13.5px;color:var(--ink2)}
+.p-wart,.p-na{margin-top:14px;font-size:13.5px;color:var(--ink2)}
+.p-go+.p-na,.p-go+.p-wart{margin-top:10px}
 
 /* 과 구성 */
 .more{display:grid;gap:34px;padding:34px 0 10px;border-top:1.5px solid var(--line)}
@@ -228,13 +230,13 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
       <p class="sub" lang="de">Deutsch für Studium und Uni, A1 bis C1 Hochschule</p>
       <p class="lead">독일 유학과 교환 학기를 준비하는 대학생을 위한 교재예요. 처음 배우는 A1부터 독일 대학 입학에 필요한 C1 Hochschule 수준까지 열 단계, 68과로 배워요.</p>
       <p class="cta"><a class="btn" href="#inhalt">목차 보기</a></p>
-      <p class="note">지금은 목차만 볼 수 있어요. 본문은 A1.1부터 차례로 올라와요.</p>
+      <p class="note">본문은 A1.1 Lektion 1–5까지 올라와 있어요. 나머지는 차례로 올라와요.</p>
     </header>
     <section class="stufen" aria-labelledby="stufen-h">
       <h2 id="stufen-h">열 단계</h2>
       <p class="hint">단계를 누르면 그 단계의 목차가 열려요.</p>
       <div class="stairs" role="tablist" aria-label="단계 고르기" style="--n:10">
-        <button type="button" role="tab" class="step" id="tab-a1-1" aria-controls="p-a1-1" aria-selected="true" aria-label="A1.1 Neu hier, 새 출발, 공통 과정" style="--i:0;--h:40.0%"><span>A1</span><span>.1</span></button>
+        <button type="button" role="tab" class="step offen" id="tab-a1-1" aria-controls="p-a1-1" aria-selected="true" aria-label="A1.1 Neu hier, 새 출발, 공통 과정" style="--i:0;--h:40.0%"><span>A1</span><span>.1</span></button>
         <button type="button" role="tab" class="step" id="tab-a1-2" aria-controls="p-a1-2" aria-selected="false" aria-label="A1.2 Im Alltag, 생활 꾸리기, 공통 과정" style="--i:1;--h:46.7%"><span>A1</span><span>.2</span></button>
         <button type="button" role="tab" class="step" id="tab-a2-1" aria-controls="p-a2-1" aria-selected="false" aria-label="A2.1 Angekommen, 자리 잡기, 공통 과정" style="--i:2;--h:53.3%"><span>A2</span><span>.1</span></button>
         <button type="button" role="tab" class="step" id="tab-a2-2" aria-controls="p-a2-2" aria-selected="false" aria-label="A2.2 Mittendrin, 생활 넓히기, 공통 과정" style="--i:3;--h:60.0%"><span>A2</span><span>.2</span></button>
@@ -266,18 +268,19 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
       <h2 class="p-name" lang="de">Neu hier</h2>
       <p class="p-ko">새 출발</p>
       <p class="p-lead">프랑크푸르트에 막 도착한 지우, 도현, 소라와 함께 시작해요. 인사하고, 나를 소개하고, 장을 보고, 약속을 잡아요.</p>
-      <p class="p-wart">이 단계의 본문은 준비 중이에요. 지금은 목차만 볼 수 있어요.</p>
+      <p class="p-go"><a class="btn" href="a1-1/1/" data-go="a1-1">Lektion 1 시작하기</a></p>
+      <p class="p-wart">지금은 과 6개 가운데 5개를 볼 수 있어요. 나머지는 차례로 올라와요.</p>
       <h3>이 단계를 마치면</h3>
       <ul class="kann"><li>나와 가족, 하는 일을 소개해요</li><li>가게와 카페에서 주문하고 값을 물어요</li><li>시각과 요일을 말하고 약속을 잡아요</li></ul>
       <dl><div><dt>읽고 쓰는 글</dt><dd>신청서, 명함, 메뉴판, 영업시간 안내, 짧은 메시지</dd></div><div><dt>독일 생활과 제도</dt><dd>du와 Sie, 주소와 전화번호 쓰는 법, 슈퍼마켓과 빈 병 보증금, 약속 시간 지키기</dd></div><div><dt>함께 쓰는 앱</dt><dd class="lnk"><a href="../vokalab/">Vokalab</a><a href="../grammatik/">Syntalab</a></dd></div></dl>
      </div>
      <ol class="leks">
-      <li class="lek"><span class="num">1</span><div><h3><span class="de" lang="de">Guten Tag!</span><span class="ko">인사와 소개</span></h3><dl><div><dt>목표</dt><dd>인사하고 헤어지기, 이름과 출신과 사는 곳 말하기, 철자 불러 주기</dd></div><div><dt>문법</dt><dd class="gr"><span lang="de">sein, heißen, kommen, wohnen (ich, du, Sie), <span class="nb">W-Fragen:</span> Wie? Woher? Wo?, Alphabet</span><span class="syn">Syntalab <a href="../grammatik/#/L04" aria-label="Syntalab Lektion 4">04</a><a href="../grammatik/#/L05" aria-label="Syntalab Lektion 5">05</a><a href="../grammatik/#/L06" aria-label="Syntalab Lektion 6">06</a></span></dd></div><div><dt>과제</dt><dd>어학 수업 첫날 옆 사람과 서로 소개하기</dd></div></dl></div></li>
-      <li class="lek"><span class="num">2</span><div><h3><span class="de" lang="de">Beruf und Studium</span><span class="ko">직업과 전공</span></h3><dl><div><dt>목표</dt><dd>직업과 전공 말하기, 할 줄 아는 언어 말하기, 전화번호와 이메일 주고받기</dd></div><div><dt>문법</dt><dd class="gr"><span lang="de">Präsens (alle Personen), <span class="nb">Ja-/Nein-Fragen,</span> Zahlen 0–100, nicht</span><span class="syn">Syntalab <a href="../grammatik/#/L05" aria-label="Syntalab Lektion 5">05</a><a href="../grammatik/#/L06" aria-label="Syntalab Lektion 6">06</a><a href="../grammatik/#/L07" aria-label="Syntalab Lektion 7">07</a><a href="../grammatik/#/L09" aria-label="Syntalab Lektion 9">09</a></span></dd></div><div><dt>과제</dt><dd>수강 신청서에 내 정보 써넣기</dd></div></dl></div></li>
-      <li class="lek"><span class="num">3</span><div><h3><span class="de" lang="de">Familie und Freunde</span><span class="ko">가족과 주변 사람</span></h3><dl><div><dt>목표</dt><dd>가족과 친구 소개하기, 나이와 사는 곳 말하기, 사진 보며 이야기하기</dd></div><div><dt>문법</dt><dd class="gr"><span lang="de">haben, Possessivartikel (mein, dein, Ihr, sein, ihr), Plural</span><span class="syn">Syntalab <a href="../grammatik/#/L02" aria-label="Syntalab Lektion 2">02</a><a href="../grammatik/#/L08" aria-label="Syntalab Lektion 8">08</a></span></dd></div><div><dt>과제</dt><dd>같이 사는 친구에게 가족 사진을 보여 주며 소개하기</dd></div></dl></div></li>
+      <li class="lek auf" data-id="a1-1/1"><span class="num">1</span><div><h3><a class="de go" lang="de" href="a1-1/1/">Guten Tag!</a><span class="ko">인사와 소개</span><span class="stat"></span></h3><dl><div><dt>목표</dt><dd>인사하고 헤어지기, 이름과 출신과 사는 곳 말하기, 철자 불러 주기</dd></div><div><dt>문법</dt><dd class="gr"><span lang="de">sein, heißen, kommen, wohnen (ich, du, Sie), <span class="nb">W-Fragen:</span> Wie? Woher? Wo?, Alphabet</span><span class="syn">Syntalab <a href="../grammatik/#/L04" aria-label="Syntalab Lektion 4">04</a><a href="../grammatik/#/L05" aria-label="Syntalab Lektion 5">05</a><a href="../grammatik/#/L06" aria-label="Syntalab Lektion 6">06</a></span></dd></div><div><dt>과제</dt><dd>어학 수업 첫날 옆 사람과 서로 소개하기</dd></div></dl></div></li>
+      <li class="lek auf" data-id="a1-1/2"><span class="num">2</span><div><h3><a class="de go" lang="de" href="a1-1/2/">Beruf und Studium</a><span class="ko">직업과 전공</span><span class="stat"></span></h3><dl><div><dt>목표</dt><dd>직업과 전공 말하기, 할 줄 아는 언어 말하기, 전화번호와 이메일 주고받기</dd></div><div><dt>문법</dt><dd class="gr"><span lang="de">Präsens (alle Personen), <span class="nb">Ja-/Nein-Fragen,</span> Zahlen 0–100, nicht</span><span class="syn">Syntalab <a href="../grammatik/#/L05" aria-label="Syntalab Lektion 5">05</a><a href="../grammatik/#/L06" aria-label="Syntalab Lektion 6">06</a><a href="../grammatik/#/L07" aria-label="Syntalab Lektion 7">07</a><a href="../grammatik/#/L09" aria-label="Syntalab Lektion 9">09</a></span></dd></div><div><dt>과제</dt><dd>수강 신청서에 내 정보 써넣기</dd></div></dl></div></li>
+      <li class="lek auf" data-id="a1-1/3"><span class="num">3</span><div><h3><a class="de go" lang="de" href="a1-1/3/">Familie und Freunde</a><span class="ko">가족과 주변 사람</span><span class="stat"></span></h3><dl><div><dt>목표</dt><dd>가족과 친구 소개하기, 나이와 사는 곳 말하기, 사진 보며 이야기하기</dd></div><div><dt>문법</dt><dd class="gr"><span lang="de">haben, Possessivartikel (mein, dein, Ihr, sein, ihr), Plural</span><span class="syn">Syntalab <a href="../grammatik/#/L02" aria-label="Syntalab Lektion 2">02</a><a href="../grammatik/#/L08" aria-label="Syntalab Lektion 8">08</a></span></dd></div><div><dt>과제</dt><dd>같이 사는 친구에게 가족 사진을 보여 주며 소개하기</dd></div></dl></div></li>
       <li class="sta"><b lang="de">Wiederholung 1</b><i>복습과 실전 과제</i><p><span>실전 과제</span>: 전입 신고서(Anmeldung)에 내 정보 써넣기</p></li>
-      <li class="lek"><span class="num">4</span><div><h3><span class="de" lang="de">Einkaufen</span><span class="ko">장보기와 주문</span></h3><dl><div><dt>목표</dt><dd>먹을거리 이름 말하기, 값과 양 묻기, 카페와 빵집에서 주문하기</dd></div><div><dt>문법</dt><dd class="gr"><span lang="de">der, das, die, ein, eine, kein, Akkusativ, möchten</span><span class="syn">Syntalab <a href="../grammatik/#/L01" aria-label="Syntalab Lektion 1">01</a><a href="../grammatik/#/L03" aria-label="Syntalab Lektion 3">03</a><a href="../grammatik/#/L09" aria-label="Syntalab Lektion 9">09</a><a href="../grammatik/#/L10" aria-label="Syntalab Lektion 10">10</a></span></dd></div><div><dt>과제</dt><dd>학생 식당과 카페에서 주문하기</dd></div></dl></div></li>
-      <li class="lek"><span class="num">5</span><div><h3><span class="de" lang="de">Mein Tag</span><span class="ko">하루 일과</span></h3><dl><div><dt>목표</dt><dd>시각 말하기, 하루 일과 설명하기, 요일별 계획 말하기</dd></div><div><dt>문법</dt><dd class="gr"><span lang="de">Uhrzeit, trennbare Verben (aufstehen, anfangen), Verben mit Vokalwechsel (fahren, essen, schlafen)</span><span class="syn">Syntalab <a href="../grammatik/#/L05" aria-label="Syntalab Lektion 5">05</a><a href="../grammatik/#/L07" aria-label="Syntalab Lektion 7">07</a><a href="../grammatik/#/L11" aria-label="Syntalab Lektion 11">11</a></span></dd></div><div><dt>과제</dt><dd>수업 시간표를 보며 한 주 설명하기</dd></div></dl></div></li>
+      <li class="lek auf" data-id="a1-1/4"><span class="num">4</span><div><h3><a class="de go" lang="de" href="a1-1/4/">Einkaufen</a><span class="ko">장보기와 주문</span><span class="stat"></span></h3><dl><div><dt>목표</dt><dd>먹을거리 이름 말하기, 값과 양 묻기, 카페와 빵집에서 주문하기</dd></div><div><dt>문법</dt><dd class="gr"><span lang="de">der, das, die, ein, eine, kein, Akkusativ, möchten</span><span class="syn">Syntalab <a href="../grammatik/#/L01" aria-label="Syntalab Lektion 1">01</a><a href="../grammatik/#/L03" aria-label="Syntalab Lektion 3">03</a><a href="../grammatik/#/L09" aria-label="Syntalab Lektion 9">09</a><a href="../grammatik/#/L10" aria-label="Syntalab Lektion 10">10</a></span></dd></div><div><dt>과제</dt><dd>학생 식당과 카페에서 주문하기</dd></div></dl></div></li>
+      <li class="lek auf" data-id="a1-1/5"><span class="num">5</span><div><h3><a class="de go" lang="de" href="a1-1/5/">Mein Tag</a><span class="ko">하루 일과</span><span class="stat"></span></h3><dl><div><dt>목표</dt><dd>시각 말하기, 하루 일과 설명하기, 요일별 계획 말하기</dd></div><div><dt>문법</dt><dd class="gr"><span lang="de">Uhrzeit, trennbare Verben (aufstehen, anfangen), Verben mit Vokalwechsel (fahren, essen, schlafen)</span><span class="syn">Syntalab <a href="../grammatik/#/L05" aria-label="Syntalab Lektion 5">05</a><a href="../grammatik/#/L07" aria-label="Syntalab Lektion 7">07</a><a href="../grammatik/#/L11" aria-label="Syntalab Lektion 11">11</a></span></dd></div><div><dt>과제</dt><dd>수업 시간표를 보며 한 주 설명하기</dd></div></dl></div></li>
       <li class="lek"><span class="num">6</span><div><h3><span class="de" lang="de">Termine</span><span class="ko">약속과 예약</span></h3><dl><div><dt>목표</dt><dd>약속 제안하고 정하기, 예약하고 미루기, 할 수 있는 일과 해야 하는 일 말하기</dd></div><div><dt>문법</dt><dd class="gr"><span lang="de">können, müssen, wollen, Satzklammer, am, um, von … bis</span><span class="syn">Syntalab <a href="../grammatik/#/L07" aria-label="Syntalab Lektion 7">07</a><a href="../grammatik/#/L10" aria-label="Syntalab Lektion 10">10</a></span></dd></div><div><dt>과제</dt><dd>어학원 사무실에 상담 시간 예약하기</dd></div></dl></div></li>
       <li class="sta"><b lang="de">Wiederholung 2</b><i>복습과 실전 과제</i><p><span>실전 과제</span>: 병원에 전화해 진료 예약하기</p></li>
       <li class="tst"><b lang="de">Stufentest A1.1</b><i>단계 평가</i><p>듣기, 읽기, 쓰기, 말하기로 A1.1을 점검해요.</p></li>
@@ -529,7 +532,7 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
   </div>
 
   <footer>
-    <p><span class="de">SODA Studium</span>, 대학생 독일어 디딤돌. 2026.11.23 업데이트. <a href="../#inhalt">SODA Lehrwerk 목차로</a></p>
+    <p><span class="de">SODA Studium</span>, 대학생 독일어 디딤돌. 2026.11.25 업데이트. <a href="../#inhalt">SODA Lehrwerk 목차로</a></p>
   </footer>
 </main>
 <!-- ===== SODA 공통 홈 화면에 앱 추가 ===== -->
@@ -688,6 +691,22 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
     };
     if(!nav.type||nav.type==='navigate'){zu();window.addEventListener('load',zu)}
   }
+  /* 공부한 기록(과 화면이 이 브라우저에 남긴 것)으로 마친 과와 보던 과를 표시한다. 기록은 교재마다 따로 있다 */
+  function mark(){
+    var L={};try{L=(JSON.parse(localStorage.getItem('soda-studium-v1')||'{}').l)||{}}catch(e){}
+    [].forEach.call(d.querySelectorAll('.auf[data-id]'),function(li){
+      var r=L[li.getAttribute('data-id')],s=li.querySelector('.stat');if(!s)return;
+      li.classList.toggle('fin',!!(r&&r.fin));s.textContent=r&&r.fin?'마침':(r&&r.d?'보는 중':'');
+    });
+    [].forEach.call(d.querySelectorAll('[data-go]'),function(a){
+      var items=[].slice.call(d.querySelectorAll('#p-'+a.getAttribute('data-go')+' .auf')),now=null,lastFin=-1;
+      items.forEach(function(li,k){var r=L[li.getAttribute('data-id')];if(!r)return;if(r.fin)lastFin=k;else if(r.t&&(!now||r.t>now.t))now={t:r.t,k:k}});
+      var k=now?now.k:(lastFin>=0?(lastFin<items.length-1?lastFin+1:0):-1);if(k<0)return;
+      var link=items[k].querySelector('a.go');a.href=link.getAttribute('href');
+      a.textContent=lastFin===items.length-1&&!now?'처음부터 다시 보기':link.textContent+(now?' 이어서 하기':' 시작하기');
+    });
+  }
+  mark();window.addEventListener('pageshow',mark);
 })();
 </script>
 <script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>

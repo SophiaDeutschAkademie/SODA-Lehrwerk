@@ -1,0 +1,88 @@
+{
+ "job": "e1_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Bis morgen!",
+    "Tschüss, bis morgen!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Freut mich!",
+    "Ich bin Sora Lee. – Freut mich!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Willkommen!",
+    "Willkommen in Frankfurt!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "heißen."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "kommen."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "wohnen."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "sein.",
+    "Ich bin Dohyun."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "der Name, die Namen.",
+    "Mein Name ist Dohyun Park."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "der Vorname, die Vornamen.",
+    "Mein Vorname ist Jiu."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "der Nachname, die Nachnamen.",
+    "Mein Nachname ist Kim."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Bis morgen! Tschüss, bis morgen! [pause] Freut mich! Ich bin Sora Lee. – Freut mich! [pause] Willkommen! Willkommen in Frankfurt! [pause] heißen. [pause] kommen. [pause] wohnen. [pause] sein. Ich bin Dohyun. [pause] der Name, die Namen. Mein Name ist Dohyun Park. [pause] der Vorname, die Vornamen. Mein Vorname ist Jiu. [pause] der Nachname, die Nachnamen. Mein Nachname ist Kim. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

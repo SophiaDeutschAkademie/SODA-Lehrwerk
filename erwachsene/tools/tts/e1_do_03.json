@@ -1,0 +1,81 @@
+{
+ "job": "e1_do_03",
+ "who": "Dohyun",
+ "voice": "Andreas",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "Dohyun",
+   "parts": [
+    "Hm, was ist das?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Dohyun",
+   "parts": [
+    "Ist das Fleisch?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Dohyun",
+   "parts": [
+    "Heute nicht. Ich nehme den Fisch mit Reis."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Dohyun",
+   "parts": [
+    "Nein, ich trinke ein Wasser."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Dohyun",
+   "parts": [
+    "Ich möchte ein Wasser, aber keinen Kaffee."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Morgen! Ja, ich stehe um sechs Uhr auf."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Um halb neun. Aber am Morgen lerne ich eine Stunde Deutsch."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Um Viertel nach sieben. Dann fahre ich ins Büro. Und du?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Bis wann arbeitest du heute?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Stimmt. Die Besprechung fängt um zehn an."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hm, was ist das? [pause] Ist das Fleisch? [pause] Heute nicht. Ich nehme den Fisch mit Reis. [pause] Nein, ich trinke ein Wasser. [pause] Ich möchte ein Wasser, aber keinen Kaffee. [pause] Morgen! Ja, ich stehe um sechs Uhr auf. [pause] Um halb neun. Aber am Morgen lerne ich eine Stunde Deutsch. [pause] Um Viertel nach sieben. Dann fahre ich ins Büro. Und du? [pause] Bis wann arbeitest du heute? [pause] Stimmt. Die Besprechung fängt um zehn an. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

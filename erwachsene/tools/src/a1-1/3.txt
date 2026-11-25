@@ -1,0 +1,274 @@
+@id a1-1/3
+
+== ziel
+bild: A living room of a shared flat in the evening. JIU and LENA sit next to each other on a sofa. JIU holds a smartphone with a blank screen in one hand and shows it to LENA, who looks at it with interest. Both women are seen from the front, and both faces clearly show simple eyes, eyebrows and a small friendly smile.
+alt: 거실 소파에서 Jiu가 Lena에게 휴대폰 속 사진을 보여 주고 있어요.
+lead: 조금 친해지면 가족 이야기가 나와요. Jiu는 Lena에게 가족 사진을 보여 주고, Dohyun은 점심시간에 Markus와 아이들 이야기를 해요.
+mission: 이 과를 마치면 사진을 보며 가족과 주변 사람을 소개하고 나이와 사는 곳을 말할 수 있어요.
+wort: Das ist meine Familie. | 우리 가족이에요.
+wort: Ich habe einen Bruder. | 저는 남자 형제가 한 명 있어요.
+wort: Hast du Geschwister? | 형제자매가 있어요?
+wort: Meine Tochter ist acht Jahre alt. | 제 딸은 여덟 살이에요.
+mc: '제 어머니'는 독일어로 어떻게 말할까요? | meine Mutter* | mein Mutter | ich Mutter => Mutter는 여성 명사라서 mein에 -e가 붙어요.
+mc: '저는 서른 살이에요'는 독일어로 어떻게 말할까요? | Ich bin 30 Jahre alt.* | Ich habe 30 Jahre. | Ich bin 30 Jahre. => 나이는 sein과 Jahre alt로 말해요.
+
+== hoeren
+-- dialog A | Fotos von zu Hause | 주말 저녁, WG 거실이에요. Jiu가 Lena에게 휴대폰 속 가족 사진을 보여 줘요.
+vor: 들으면서 찾아보세요. Jiu의 남동생은 어디에 사나요?
+Lena: Oh, Fotos! Ist das deine Familie? | 오, 사진이네요! 가족이에요?
+Jiu: Ja, das sind meine Eltern. Mein Vater heißt Sangho und meine Mutter heißt Mira. | 네, 우리 부모님이에요. 아버지 성함은 상호이고 어머니 성함은 미라예요.
+Lena: Sehr sympathisch! Und wer ist das? | 인상이 참 좋으세요! 이 사람은 누구예요?
+Jiu: Das ist mein Bruder Junho. Er ist dreiundzwanzig Jahre alt. | 제 남동생 준호예요. 스물세 살이에요.
+Lena: Wohnt er auch in Seoul? | 남동생도 서울에 살아요?
+Jiu: Nein, er wohnt in Busan. Er studiert dort. | 아니요, 부산에 살아요. 거기서 대학에 다녀요.
+Lena: Hast du auch eine Schwester? | 여자 형제도 있어요?
+Jiu: Nein, ich habe keine Schwester. Und du? Hast du Geschwister? | 아니요, 없어요. Lena 씨는요? 형제자매가 있어요?
+Lena: Ja, ich habe zwei Schwestern. Sie wohnen in Hamburg. | 네, 언니가 두 명 있어요. 함부르크에 살아요.
+
+-- dialog B | In der Mittagspause | 점심시간, 회사 식당이에요. Markus와 Dohyun이 가족 이야기를 해요.
+vor: 들으면서 찾아보세요. Markus의 아이들은 몇 살인가요?
+Markus: Dohyun, bist du verheiratet? | 도현 씨, 결혼했어요?
+Dohyun: Ja. Meine Frau heißt Sujin. | 네. 아내 이름은 수진이에요.
+Markus: Wohnt deine Frau auch in Frankfurt? | 아내분도 프랑크푸르트에 살아요?
+Dohyun: Nein, noch nicht. Sie ist noch in Korea. | 아니요, 아직이요. 아직 한국에 있어요.
+Markus: Habt ihr Kinder? | 아이가 있어요?
+Dohyun: Ja, wir haben einen Sohn. Er heißt Minjun und ist fünf Jahre alt. Und du? | 네, 아들이 하나 있어요. 이름은 민준이고 다섯 살이에요. Markus 씨는요?
+Markus: Ich habe zwei Kinder. Meine Tochter ist acht und mein Sohn ist drei. | 저는 아이가 둘이에요. 딸은 여덟 살이고 아들은 세 살이에요.
+Dohyun: Wie heißen deine Kinder? | 아이들 이름이 뭐예요?
+Markus: Mia und Paul. Hier, das ist ein Foto. | Mia와 Paul이에요. 여기, 사진이에요.
+Dohyun: Sehr süß! | 정말 귀엽네요!
+
+-- dialog C | Nach dem Kurs | 수업이 끝난 뒤예요. Frau Becker가 Sora에게 가족에 대해 물어요.
+vor: 들으면서 찾아보세요. Sora의 딸은 몇 살인가요?
+Becker: Frau Lee, wohnt Ihre Familie auch hier in Frankfurt? | Frau Lee, 가족도 여기 프랑크푸르트에 사세요?
+Sora: Ja, mein Mann und meine Tochter sind auch hier. | 네, 남편과 딸도 여기 있어요.
+Becker: Wie alt ist Ihre Tochter? | 따님은 몇 살이에요?
+Sora: Sie ist acht Jahre alt. Sie heißt Hana. | 여덟 살이에요. 이름은 하나예요.
+Becker: Und Ihr Mann? Arbeitet er in Frankfurt? | 남편분은요? 프랑크푸르트에서 일하세요?
+Sora: Ja, er ist Informatiker. Seine Firma ist in Frankfurt. | 네, 컴퓨터 전문가예요. 회사가 프랑크푸르트에 있어요.
+Becker: Lernt Ihre Tochter auch Deutsch? | 따님도 독일어를 배워요?
+Sora: Ja, sie lernt Deutsch in der Schule. Und ihre Lehrerin ist sehr nett. | 네, 학교에서 독일어를 배워요. 그리고 담임 선생님이 아주 친절해요.
+Becker: Das ist schön! | 잘됐네요!
+
+-- fragen 세 대화를 듣고 답하세요.
+mc: Jiu의 남동생 Junho는 어디에 사나요? | in Busan* | in Seoul | in Hamburg
+rf: Jiu hat eine Schwester. | f => Jiu는 남동생만 한 명 있어요.
+mc: Lena는 형제자매가 어떻게 되나요? | zwei Schwestern* | ein Bruder | keine Geschwister
+rf: Dohyun ist verheiratet. | r
+mc: Dohyun의 아들은 몇 살인가요? | fünf* | drei | acht
+rf: Markus hat zwei Kinder. | r
+mc: Sora의 딸 Hana는 몇 살인가요? | acht* | fünf | dreiundzwanzig
+mc: Sora의 남편은 무슨 일을 하나요? | Informatiker* | Ingenieur | Lehrer
+
+-- kultur 가족과 나이, 어디까지 물어도 될까요?
+p: 독일에서는 처음 만난 사이에 나이나 결혼 여부를 바로 묻지 않는 편이에요. 한국어는 나이를 알아야 말투를 정하기 쉽지만, 독일어는 du와 Sie만 고르면 되니 나이를 물을 까닭이 적어요. 가까워지면 Markus처럼 편하게 물어봐요.
+p: 가족 이야기에서 Partner, Partnerin이라는 말을 자주 들어요. 결혼하지 않고 함께 사는 사람도 많아서 Mann, Frau 대신 이 말을 써요.
+p: 서식의 Familienstand 칸에는 ledig(미혼), verheiratet(기혼), geschieden(이혼), verwitwet(사별) 가운데 하나를 골라요. 전입 신고서와 세금 서류에 이 칸이 있어요.
+mc: 서식에서 '기혼'을 뜻하는 말은 무엇일까요? | verheiratet* | ledig | geschieden
+
+== wortschatz
+-- gruppe Die Familie | 가족
+die Familie, die Familien | 가족 | Meine Familie wohnt in Seoul. | 우리 가족은 서울에 살아요.
+die Eltern (Pl.) | 부모 | Meine Eltern wohnen in Korea. | 우리 부모님은 한국에 사세요.
+der Vater, die Väter | 아버지 | Mein Vater heißt Sangho. | 아버지 성함은 상호예요.
+die Mutter, die Mütter | 어머니 | Meine Mutter ist Lehrerin. | 어머니는 교사예요.
+der Bruder, die Brüder | 남자 형제 (형, 오빠, 남동생) | Mein Bruder studiert in Busan. | 남동생은 부산에서 대학에 다녀요.
+die Schwester, die Schwestern | 여자 형제 (누나, 언니, 여동생) | Lena hat zwei Schwestern. | Lena는 언니가 두 명 있어요.
+die Geschwister (Pl.) | 형제자매 | Hast du Geschwister? | 형제자매가 있어요?
+der Mann, die Männer | 남편, 남자 | Mein Mann ist Informatiker. | 남편은 컴퓨터 전문가예요.
+die Frau, die Frauen | 아내, 여자 | Meine Frau heißt Sujin. | 아내 이름은 수진이에요.
+das Kind, die Kinder | 아이 | Wir haben zwei Kinder. | 우리는 아이가 둘이에요.
+der Sohn, die Söhne | 아들 | Mein Sohn ist fünf Jahre alt. | 아들은 다섯 살이에요.
+die Tochter, die Töchter | 딸 | Meine Tochter heißt Hana. | 딸 이름은 하나예요.
+die Großeltern (Pl.) | 조부모 | Meine Großeltern wohnen in Daegu. | 조부모님은 대구에 사세요.
+der Partner, die Partner | 함께 사는 사람, 애인 (남자) | Das ist mein Partner Jonas. | 제 파트너 Jonas예요.
+die Partnerin, die Partnerinnen | 함께 사는 사람, 애인 (여자) | Meine Partnerin kommt aus Wien. | 제 파트너는 빈 출신이에요.
+
+-- gruppe Freunde und Nachbarn | 친구와 이웃
+der Freund, die Freunde | 친구 (남자), 남자 친구 | Carlos ist ein Freund von Jiu. | Carlos는 Jiu의 친구예요.
+die Freundin, die Freundinnen | 친구 (여자), 여자 친구 | Lena ist meine Freundin. | Lena는 제 친구예요.
+der Mitbewohner, die Mitbewohner | 한집에 같이 사는 사람 (남자) | Mein Mitbewohner heißt Tim. | 같이 사는 사람 이름은 Tim이에요.
+die Mitbewohnerin, die Mitbewohnerinnen | 한집에 같이 사는 사람 (여자) | Lena ist meine Mitbewohnerin. | Lena는 저와 같이 살아요.
+der Nachbar, die Nachbarn | 이웃 (남자) | Mein Nachbar ist sehr nett. | 이웃이 아주 친절해요.
+die Nachbarin, die Nachbarinnen | 이웃 (여자) | Meine Nachbarin heißt Frau Krüger. | 이웃 이름은 Frau Krüger예요.
+das Foto, die Fotos | 사진 | Das ist ein Foto von Hana. | 하나의 사진이에요.
+die Schule, die Schulen | 학교 | Hana lernt Deutsch in der Schule. | 하나는 학교에서 독일어를 배워요.
+
+-- gruppe Über die Familie sprechen | 가족 이야기를 할 때
+haben (du hast, er hat) | 가지고 있다, ~이 있다 | Ich habe einen Bruder. | 저는 남자 형제가 한 명 있어요.
+verheiratet | 결혼한 | Sind Sie verheiratet? | 결혼하셨어요?
+ledig | 미혼인 | Mein Bruder ist ledig. | 남동생은 미혼이에요.
+alt | 나이가 ~인, 오래된 | Wie alt ist Ihre Tochter? | 따님은 몇 살이에요?
+das Jahr, die Jahre | 해, 년, ~살 | Sie ist acht Jahre alt. | 그 애는 여덟 살이에요.
+nett | 친절한 | Die Lehrerin ist sehr nett. | 선생님이 아주 친절해요.
+sehr | 아주 | Das Foto ist sehr schön. | 사진이 아주 멋져요.
+süß | 귀여운, 단 | Deine Kinder sind sehr süß! | 아이들이 정말 귀엽네요!
+dort | 거기 | Er studiert dort. | 그는 거기서 대학에 다녀요.
+noch | 아직 | Sie ist noch in Korea. | 그녀는 아직 한국에 있어요.
+
+-- bilder
+die Familie, die Familien: a family of four who stand close together and smile, a mother, a father, a girl and a small boy, full body
+die Eltern (Pl.): a man and a woman of about sixty who stand side by side arm in arm and smile, full body
+die Geschwister (Pl.): a young woman and her younger brother who stand side by side and each put one arm around the other's shoulder, full body
+die Großeltern (Pl.): an old man and an old woman with white hair who sit together on a small bench and smile
+das Foto, die Fotos: one hand that holds a printed photo with a white border, the photo shows a simple family group without faces in detail
+der Nachbar, die Nachbarn: a friendly man who stands in an open apartment door and waves with one hand, full body
+
+-- aussprache -er | 낱말 끝의 er는 가벼운 '아'
+p: 낱말 끝의 -er는 r를 굴리지 않고 가볍게 '아'에 가깝게 내요. Vater는 [파타], Mutter는 [무타]처럼 들려요. 영어처럼 혀를 말아 올리지 않아요.
+p: 가족을 가리키는 말에는 이 소리가 많아요. 복수 Väter, Mütter, Brüder는 앞 모음만 바뀌고 끝소리는 그대로예요.
+hör: Vater, Mutter, Bruder, Schwester | 끝의 -er
+hör: Tochter, Lehrer, Partner | 끝의 -er
+hör: Väter, Mütter, Brüder | 복수: 앞 모음이 바뀌어요
+hör: Mein Bruder und meine Schwester wohnen in Hamburg. | 문장으로 들어요
+
+== grammatik
+-- punkt haben | '가지고 있다, ~이 있다'
+bsp: Ich *habe* einen Bruder. | 저는 남자 형제가 한 명 있어요.
+bsp: *Hast* du Geschwister? | 형제자매가 있어요?
+bsp: Wir *haben* zwei Kinder. | 우리는 아이가 둘이에요.
+finde: du가 주어일 때 haben은 어떤 모양인가요? | hast* | habst | habt
+regel: haben은 가족, 물건, 시간이 '있다'고 말할 때 써요. du와 er, sie에서는 b가 빠져서 du hast, er hat이 돼요.
+| | haben | sein
+| ich | hab*e* | bin
+| du | *hast* | bist
+| er, sie | *hat* | ist
+| wir | hab*en* | sind
+| ihr | hab*t* | seid
+| sie, Sie | hab*en* | sind
+merke: 나이는 haben이 아니라 sein으로 말해요. Ich bin 30 Jahre alt.가 맞아요. Ich habe einen Bruder, eine Schwester, keine Geschwister.는 지금은 통째로 익혀요. einen과 keine는 4과에서 배워요.
+
+-- punkt Possessivartikel | 누구의 것인지 말하는 mein, dein, Ihr, sein, ihr
+bsp: Das ist *mein* Bruder. Das ist *meine* Mutter. | 제 남동생이에요. 제 어머니예요.
+bsp: Wie alt ist *Ihre* Tochter? | 따님은 몇 살이에요?
+bsp: *Seine* Firma ist in Frankfurt. | 그의 회사는 프랑크푸르트에 있어요.
+finde: Mutter, Tochter 같은 여성 명사 앞에서는 어떤 모양을 쓰나요? | meine* | mein | meinen
+regel: 남성 명사와 중성 명사 앞에서는 mein, 여성 명사와 복수 명사 앞에서는 끝에 -e를 붙여 meine라고 해요. dein, Ihr, sein, ihr도 똑같이 바뀌어요.
+| 누구의 | 남성, 중성 | 여성, 복수
+| ich | mein Vater | mein*e* Mutter
+| du | dein Vater | dein*e* Mutter
+| Sie | Ihr Vater | Ihr*e* Mutter
+| er | sein Vater | sein*e* Mutter
+| sie | ihr Vater | ihr*e* Mutter
+merke: sein은 남자의 것, ihr는 여자의 것이에요. 뒤에 오는 명사가 아니라 가진 사람을 보고 골라요. Markus의 딸은 seine Tochter, Sora의 남편은 ihr Mann이에요. 대문자로 쓰는 Ihr는 Sie를 쓰는 상대의 것이에요. 문장 첫머리에서는 '그녀의' ihr도 대문자로 쓰니 앞뒤 내용으로 구별해요.
+
+-- punkt Plural | 명사의 복수
+bsp: ein Kind, zwei *Kinder* | 아이 하나, 아이 둘
+bsp: eine Schwester, zwei *Schwestern* | 여자 형제 하나, 여자 형제 둘
+bsp: ein Bruder, drei *Brüder* | 남자 형제 하나, 남자 형제 셋
+finde: 복수 명사 앞에 쓰는 관사는 무엇인가요? | die* | der | das
+regel: 독일어 명사는 낱말마다 복수 모양이 달라요. 끝에 -e, -n, -er, -s가 붙거나 모음이 ä, ö, ü로 바뀌어요. 그래서 사전과 이 교재는 der Bruder, die Brüder처럼 단수와 복수를 함께 보여 줘요. 복수의 관사는 언제나 die예요.
+| 모양 | 단수 | 복수
+| -e | der Freund | die Freund*e*
+| -n, -en | die Schwester, die Frau | die Schwester*n*, die Frau*en*
+| -er | das Kind | die Kind*er*
+| 모음이 바뀜 | der Bruder, die Mutter | die Br*ü*der, die M*ü*tter
+| -s | das Foto, das Büro | die Foto*s*, die Büro*s*
+| 그대로 | der Lehrer | die Lehrer
+merke: 새 명사를 만나면 관사와 복수를 함께 외워요. die Eltern, die Geschwister, die Großeltern은 복수로만 써요.
+
+== training
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Markus: Meine Tochter ist acht Jahre alt.
+mc: Markus의 딸은 몇 살인가요? | 8* | 18 | 80
+hör: Jiu: Mein Bruder ist dreiundzwanzig.
+mc: Jiu의 남동생은 몇 살인가요? | 23* | 32 | 13
+hör: Sora: Mein Mann heißt Minho und meine Tochter heißt Hana.
+mc: Hana는 누구인가요? | Sora의 딸* | Sora의 남편 | Sora의 어머니
+hör: Lena: Ich habe zwei Schwestern, aber keinen Bruder.
+mc: Lena의 형제자매는 어떻게 되나요? | 여자 형제 둘* | 남자 형제 둘 | 남자 형제 하나와 여자 형제 하나
+
+-- ex Lesen | Sora가 독일어 수업에서 쓴 가족 소개를 읽고, 맞으면 richtig, 틀리면 falsch를 고르세요.
+text notiz | Meine Familie
+> Ich heiße Sora Lee. Ich bin verheiratet. Mein Mann heißt Minho. Er ist Informatiker und arbeitet in Frankfurt.
+> Wir haben eine Tochter. Sie heißt Hana und ist acht Jahre alt. Ihre Schule ist in Sachsenhausen.
+> Meine Eltern wohnen in Incheon. Ich habe auch einen Bruder. Er ist ledig und wohnt in Seoul.
+rf: Sora ist verheiratet. | r
+rf: Der Mann von Sora ist Lehrer. | f => Minho는 Informatiker예요.
+rf: Sora und Minho haben zwei Kinder. | f => 아이는 딸 Hana 한 명이에요.
+rf: Hana ist acht Jahre alt. | r
+rf: Der Bruder von Sora wohnt in Seoul. | r
+
+-- ex Grammatik | haben의 알맞은 형태를 고르세요.
+gap: Ich [habe|hast|hat] einen Bruder.
+gap: [Hast|Habt|Hat] du Geschwister?
+gap: Markus [hat|habt|haben] zwei Kinder.
+gap: Wir [haben|habt|hat] eine Tochter.
+gap: [Habt|Hast|Haben] ihr Kinder?
+gap: Meine Eltern [haben|hat|habt] drei Kinder.
+
+-- ex Grammatik | 알맞은 말을 고르세요.
+gap: Das ist [meine|mein] Mutter.
+gap: Das ist [mein|meine] Vater.
+gap: Frau Lee, wie alt ist [Ihre|Ihr] Tochter?
+gap: Lena, wo wohnen [deine|dein] Schwestern?
+gap: Markus hat zwei Kinder. [Seine|Ihre] Tochter ist acht. | Markus는 남자예요.
+gap: Sora ist verheiratet. [Ihr|Sein] Mann heißt Minho. | Sora는 여자예요.
+
+-- ex Grammatik | 복수 형태를 쓰세요.
+gap: ein Kind, zwei [=Kinder]
+gap: eine Schwester, zwei [=Schwestern]
+gap: ein Bruder, zwei [=Brüder]
+gap: ein Foto, drei [=Fotos]
+gap: ein Freund, vier [=Freunde]
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: hast / du / Geschwister? | 형제자매가 있어요?
+ord: wie / alt / ist / Ihre Tochter? | 따님은 몇 살이에요?
+ord: das / ist / mein / Bruder. | 이 사람은 제 남동생이에요.
+ord: wir / haben / zwei / Kinder. | 우리는 아이가 둘이에요.
+
+-- ex Wortschatz | 짝이 되는 말을 고르세요.
+paar: der Vater = die Mutter ; der Bruder = die Schwester ; der Sohn = die Tochter ; der Mann = die Frau ; der Nachbar = die Nachbarin
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Jiu: Das ist mein Bruder. | 이 사람은 제 남동생이에요.
+dik: Markus: Hast du Kinder? | 아이가 있어요?
+dik: Sora: Meine Tochter ist acht Jahre alt. | 제 딸은 여덟 살이에요.
+
+== aufgabe
+-- redemittel
+가족 소개하기: Das ist mein Vater. / Das ist meine Mutter. | 제 아버지예요. / 제 어머니예요. ; Das sind meine Eltern. | 제 부모님이에요.
+가족 묻기: Hast du Geschwister? / Haben Sie Kinder? | 형제자매가 있어요? / 아이가 있으세요? ; Sind Sie verheiratet? | 결혼하셨어요?
+가족 말하기: Ich habe einen Bruder und eine Schwester. | 남자 형제 하나와 여자 형제 하나가 있어요. ; Ich habe keine Geschwister. | 형제자매가 없어요. ; Ich bin verheiratet. / Ich bin ledig. | 결혼했어요. / 미혼이에요.
+나이 묻고 말하기: Wie alt ist dein Bruder? / Wie alt ist Ihre Tochter? | 남동생은 몇 살이에요? / 따님은 몇 살이에요? ; Er ist 23 Jahre alt. | 스물세 살이에요.
+사진 보며 말하기: Wer ist das? | 이 사람은 누구예요? ; Das ist ein Foto von … | …의 사진이에요. ; Sehr schön! / Sehr süß! | 정말 멋져요! / 정말 귀여워요!
+
+--S rolle A | Jiu, Lena
+
+--B rolle B | Dohyun, Markus
+
+-- ich 가족 한 사람을 소개해요 | 가족 한 사람을 떠올리고 칸을 채우세요. 남자면 mein과 Er, 여자면 meine와 Sie를 써요. 나이는 독일어 숫자로 적어요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: mein | mein 또는 meine | meine
+feld: wer | 누구 | Schwester
+feld: pron | Er 또는 Sie | Sie
+feld: name | 이름 | Yujin
+feld: alter | 나이 | dreißig
+feld: ort | 사는 곳 | Seoul
+satz: Das ist {mein} {wer}.
+satz: {pron} heißt {name}.
+satz: {pron} ist {alter} Jahre alt und wohnt in {ort}.
+
+--S sprich Meine Familie | 같이 사는 Lena에게 휴대폰 속 가족 사진을 보여 줘요. Lena의 질문을 듣고 내 가족 이야기로 답하세요. 예시 답은 참고만 하세요.
+f: Lena: Oh, ein Foto! Wer ist das? | 오, 사진이네요! 이 사람은 누구예요? => Das ist meine Schwester. Sie heißt Yujin.
+f: Lena: Wie alt ist sie? | 몇 살이에요? => Sie ist dreißig Jahre alt.
+f: Lena: Wo wohnt deine Familie? | 가족은 어디에 살아요? => Meine Eltern und meine Schwester wohnen in Seoul.
+f: Lena: Hast du auch einen Bruder? | 남자 형제도 있어요? => Ja, ich habe einen Bruder. Er heißt Minsu. / Nein, ich habe keinen Bruder.
+f: Lena: Arbeitet deine Schwester? | 언니는 일해요? => Ja, sie ist Lehrerin. Sie arbeitet in Seoul.
+
+--B sprich In der Mittagspause | 점심시간에 동료 Markus가 가족에 대해 물어요. du를 쓰는 사이예요. 질문을 듣고 내 이야기로 답하세요. 예시 답은 참고만 하세요.
+f: Markus: Bist du verheiratet? | 결혼했어요? => Ja, ich bin verheiratet. Mein Mann heißt Jinwoo. / Nein, ich bin ledig.
+f: Markus: Hast du Kinder? | 아이가 있어요? => Ja, ich habe eine Tochter. Sie ist sechs Jahre alt. / Nein, ich habe keine Kinder.
+f: Markus: Wo wohnt deine Familie? | 가족은 어디에 살아요? => Meine Eltern wohnen in Seoul.
+f: Markus: Hast du Geschwister? | 형제자매가 있어요? => Ja, ich habe einen Bruder. Er ist Arzt.
+f: Markus: Hast du ein Foto? | 사진 있어요? => Ja, hier. Das sind meine Eltern und das ist mein Bruder.
+
+-- kann
+Ich kann meine Familie vorstellen. | 가족을 소개할 수 있어요.
+Ich kann nach Familie und Alter fragen. | 가족과 나이를 묻고 답할 수 있어요.
+Ich kann mein, dein, Ihr, sein und ihr benutzen. | mein, dein, Ihr, sein, ihr를 알맞게 쓸 수 있어요.
+Ich kann den Plural von bekannten Nomen bilden. | 배운 명사의 복수를 말할 수 있어요.
+
+-- tipp 명사는 관사, 복수와 한 묶음으로 외워요
+p: Bruder만 외우면 나중에 der인지 die인지, 복수가 무엇인지 다시 찾아야 해요. 처음부터 der Bruder, die Brüder라고 한 묶음으로 소리 내어 외우면 문장을 만들 때 훨씬 편해요.
+p: 이 교재의 낱말 목록은 der는 파란색, die는 붉은색, das는 초록색으로 보여 줘요. 공책에 적을 때도 색을 나눠 쓰면 기억에 오래 남아요.

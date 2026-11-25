@@ -1,0 +1,32 @@
+{
+ "job": "e1_ho_01",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Guten Morgen, Herr Park! Willkommen bei Kessler Technik."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Das ist Markus Weber."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Guten Morgen, Herr Park!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Morgen, Herr Park! Willkommen bei Kessler Technik. [pause] Das ist Markus Weber. [pause] Guten Morgen, Herr Park! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

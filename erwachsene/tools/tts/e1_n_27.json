@@ -1,0 +1,60 @@
+{
+ "job": "e1_n_27",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "aufstehen, anfangen, einkaufen"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "fernsehen, anrufen, mitkommen"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Ich stehe um sechs auf."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Wann fängt der Kurs an?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Es ist halb acht."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Es ist Viertel vor neun."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Es ist zehn nach sechs."
+   ]
+  }
+ ],
+ "script": "Also. [pause] aufstehen, anfangen, einkaufen [pause] fernsehen, anrufen, mitkommen [pause] Ich stehe um sechs auf. [pause] Wann fängt der Kurs an? [pause] Es ist halb acht. [pause] Es ist Viertel vor neun. [pause] Es ist zehn nach sechs. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

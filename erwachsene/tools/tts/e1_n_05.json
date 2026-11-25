@@ -1,0 +1,81 @@
+{
+ "job": "e1_n_05",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Korea, Japan, China, Vietnam."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Deutschland, Österreich, die Schweiz."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Frankreich, Spanien, Italien, Polen."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "die Türkei, die Ukraine, die USA."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "aus Korea, aus Deutschland, aus der Schweiz, aus der Türkei, aus den USA."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "wie, wo, woher, wohnen"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Willkommen! Auf Wiedersehen!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Vorname, Vater, vier"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Wo wohnen Sie? Wie ist Ihr Vorname?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Ah, Beh, Tseh, Deh, Eh, Eff, Geh."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Korea, Japan, China, Vietnam. [pause] Deutschland, Österreich, die Schweiz. [pause] Frankreich, Spanien, Italien, Polen. [pause] die Türkei, die Ukraine, die USA. [pause] aus Korea, aus Deutschland, aus der Schweiz, aus der Türkei, aus den USA. [pause] wie, wo, woher, wohnen [pause] Willkommen! Auf Wiedersehen! [pause] Vorname, Vater, vier [pause] Wo wohnen Sie? Wie ist Ihr Vorname? [pause] Ah, Beh, Tseh, Deh, Eh, Eff, Geh. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,60 @@
+{
+ "job": "e1_fr_04",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Nein, kein Problem. Wir haben auch Essen ohne Fleisch."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Die Betreuung ist von dreizehn bis sechzehn Uhr."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Der Bus fährt um sechzehn Uhr dreißig."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Wann fangen Sie am Morgen an?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Und bis wann arbeiten Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Wann machen Sie Mittagspause?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Wann ist die Besprechung am Dienstag?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Nein, kein Problem. Wir haben auch Essen ohne Fleisch. [pause] Die Betreuung ist von dreizehn bis sechzehn Uhr. [pause] Der Bus fährt um sechzehn Uhr dreißig. [pause] Wann fangen Sie am Morgen an? [pause] Und bis wann arbeiten Sie? [pause] Wann machen Sie Mittagspause? [pause] Wann ist die Besprechung am Dienstag? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

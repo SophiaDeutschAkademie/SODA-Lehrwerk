@@ -1,0 +1,90 @@
+{
+ "job": "e1_n_10",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die E-Mail-Adresse, die E-Mail-Adressen.",
+    "Wie ist Ihre E-Mail-Adresse?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Adresse, die Adressen.",
+    "Meine Adresse ist Musterstraße zwölf."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Straße, die Straßen.",
+    "Die Straße heißt Musterstraße."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Postleitzahl, die Postleitzahlen.",
+    "Die Postleitzahl ist sechs, null, vier, acht, sieben."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Zahl, die Zahlen.",
+    "Die Zahl ist zwölf."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "zusammen.",
+    "Wir arbeiten zusammen."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "alle.",
+    "Alle sprechen Englisch."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "was.",
+    "Was studierst du?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "hier.",
+    "Arbeitest du hier?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "null, eins, zwei, drei, vier."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die E-Mail-Adresse, die E-Mail-Adressen. Wie ist Ihre E-Mail-Adresse? [pause] die Adresse, die Adressen. Meine Adresse ist Musterstraße zwölf. [pause] die Straße, die Straßen. Die Straße heißt Musterstraße. [pause] die Postleitzahl, die Postleitzahlen. Die Postleitzahl ist sechs, null, vier, acht, sieben. [pause] die Zahl, die Zahlen. Die Zahl ist zwölf. [pause] zusammen. Wir arbeiten zusammen. [pause] alle. Alle sprechen Englisch. [pause] was. Was studierst du? [pause] hier. Arbeitest du hier? [pause] null, eins, zwei, drei, vier. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

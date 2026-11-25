@@ -1,0 +1,81 @@
+{
+ "job": "e1_ma_02",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Vielen Dank! Auf Wiedersehen!"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag! Was darf es sein?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Gern. Sonst noch etwas?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Nein, leider nicht. Wir haben keinen Tofu. Aber der Käse hier ist sehr gut."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Ein Kilo kostet drei Euro fünfzig."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Gern. Das macht zusammen zwölf Euro vierzig."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Und zwei Euro sechzig zurück. Vielen Dank und ein schönes Wochenende!"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Ein Kilo Äpfel kostet zwei Euro neunundneunzig."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Der Kaffee kostet zwei Euro achtzig."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Hallo! Was möchten Sie?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Vielen Dank! Auf Wiedersehen! [pause] Guten Tag! Was darf es sein? [pause] Gern. Sonst noch etwas? [pause] Nein, leider nicht. Wir haben keinen Tofu. Aber der Käse hier ist sehr gut. [pause] Ein Kilo kostet drei Euro fünfzig. [pause] Gern. Das macht zusammen zwölf Euro vierzig. [pause] Und zwei Euro sechzig zurück. Vielen Dank und ein schönes Wochenende! [pause] Ein Kilo Äpfel kostet zwei Euro neunundneunzig. [pause] Der Kaffee kostet zwei Euro achtzig. [pause] Hallo! Was möchten Sie? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

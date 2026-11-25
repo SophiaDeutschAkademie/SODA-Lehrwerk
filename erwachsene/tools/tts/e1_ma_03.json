@@ -1,0 +1,39 @@
+{
+ "job": "e1_ma_03",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Gern. Möchten Sie den Kaffee mit Milch?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Sonst noch etwas?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Für hier oder zum Mitnehmen?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Das macht fünf Euro vierzig. Bar oder mit Karte?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gern. Möchten Sie den Kaffee mit Milch? [pause] Sonst noch etwas? [pause] Für hier oder zum Mitnehmen? [pause] Das macht fünf Euro vierzig. Bar oder mit Karte? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

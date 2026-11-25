@@ -1,0 +1,90 @@
+{
+ "job": "e1_n_15",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "die Nachbarin, die Nachbarinnen.",
+    "Meine Nachbarin heißt Frau Krüger."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "das Foto, die Fotos.",
+    "Das ist ein Foto von Hana."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "die Schule, die Schulen.",
+    "Hana lernt Deutsch in der Schule."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "haben, du hast, er hat."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "verheiratet.",
+    "Sind Sie verheiratet?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "ledig.",
+    "Mein Bruder ist ledig."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "alt.",
+    "Wie alt ist Ihre Tochter?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "das Jahr, die Jahre.",
+    "Sie ist acht Jahre alt."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "nett.",
+    "Die Lehrerin ist sehr nett."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "sehr.",
+    "Das Foto ist sehr schön."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Nachbarin, die Nachbarinnen. Meine Nachbarin heißt Frau Krüger. [pause] das Foto, die Fotos. Das ist ein Foto von Hana. [pause] die Schule, die Schulen. Hana lernt Deutsch in der Schule. [pause] haben, du hast, er hat. [pause] verheiratet. Sind Sie verheiratet? [pause] ledig. Mein Bruder ist ledig. [pause] alt. Wie alt ist Ihre Tochter? [pause] das Jahr, die Jahre. Sie ist acht Jahre alt. [pause] nett. Die Lehrerin ist sehr nett. [pause] sehr. Das Foto ist sehr schön. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

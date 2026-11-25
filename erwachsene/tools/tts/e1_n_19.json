@@ -1,0 +1,90 @@
+{
+ "job": "e1_n_19",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Saft, die Säfte.",
+    "Möchtest du einen Saft?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "die Milch.",
+    "Ich trinke Kaffee mit Milch."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "die Flasche, die Flaschen.",
+    "Eine Flasche Wasser, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "möchten.",
+    "Was möchten Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "nehmen, du nimmst, er nimmt.",
+    "Ich nehme einen Tee."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "kaufen.",
+    "Sora kauft Äpfel und Eier."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "brauchen.",
+    "Ich brauche ein Kilo Tomaten."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "kosten."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "essen, du isst, er isst.",
+    "Ich esse heute keinen Fisch."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "trinken.",
+    "Was trinkst du?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Saft, die Säfte. Möchtest du einen Saft? [pause] die Milch. Ich trinke Kaffee mit Milch. [pause] die Flasche, die Flaschen. Eine Flasche Wasser, bitte. [pause] möchten. Was möchten Sie? [pause] nehmen, du nimmst, er nimmt. Ich nehme einen Tee. [pause] kaufen. Sora kauft Äpfel und Eier. [pause] brauchen. Ich brauche ein Kilo Tomaten. [pause] kosten. [pause] essen, du isst, er isst. Ich esse heute keinen Fisch. [pause] trinken. Was trinkst du? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,74 @@
+{
+ "job": "e1_ji_03",
+ "who": "Jiu",
+ "voice": "Leni",
+ "voice_id": "WzPl01KDMCPMOyx39EfF",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Nein, danke. Ich möchte keinen Kuchen. Was macht das zusammen?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Hier, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Ich möchte einen Kaffee, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Von Montag bis Freitag. Der Kurs fängt um neun Uhr an."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Um Viertel vor eins. Dann esse ich in der Mensa."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Am Nachmittag rufe ich meine Eltern an. In Korea ist es dann schon Abend. Dann lerne ich in der Bibliothek."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Am Samstag kaufe ich ein. Am Abend sehe ich fern."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Gern! Wann fängt der Film an?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Der Kurs fängt um neun an."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Nein, danke. Ich möchte keinen Kuchen. Was macht das zusammen? [pause] Hier, bitte. [pause] Ich möchte einen Kaffee, bitte. [pause] Von Montag bis Freitag. Der Kurs fängt um neun Uhr an. [pause] Um Viertel vor eins. Dann esse ich in der Mensa. [pause] Am Nachmittag rufe ich meine Eltern an. In Korea ist es dann schon Abend. Dann lerne ich in der Bibliothek. [pause] Am Samstag kaufe ich ein. Am Abend sehe ich fern. [pause] Gern! Wann fängt der Film an? [pause] Der Kurs fängt um neun an. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

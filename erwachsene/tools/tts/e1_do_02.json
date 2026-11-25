@@ -1,0 +1,81 @@
+{
+ "job": "e1_do_02",
+ "who": "Dohyun",
+ "voice": "Andreas",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Dohyun",
+   "parts": [
+    "Ich komme aus Korea, aus Busan. Und du?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Dohyun",
+   "parts": [
+    "Nein, ich bin Ingenieur. Und du?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Dohyun",
+   "parts": [
+    "Kommt Frau Hoffmann aus Frankfurt?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Dohyun",
+   "parts": [
+    "Drei Sprachen! Und die Kollegen? Sprechen sie Englisch?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Dohyun",
+   "parts": [
+    "Ich spreche noch nicht gut Deutsch. Aber ich lerne."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Ja. Meine Frau heißt Sujin."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Nein, noch nicht. Sie ist noch in Korea."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Ja, wir haben einen Sohn. Er heißt Minjun und ist fünf Jahre alt. Und du?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Wie heißen deine Kinder?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Sehr süß!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich komme aus Korea, aus Busan. Und du? [pause] Nein, ich bin Ingenieur. Und du? [pause] Kommt Frau Hoffmann aus Frankfurt? [pause] Drei Sprachen! Und die Kollegen? Sprechen sie Englisch? [pause] Ich spreche noch nicht gut Deutsch. Aber ich lerne. [pause] Ja. Meine Frau heißt Sujin. [pause] Nein, noch nicht. Sie ist noch in Korea. [pause] Ja, wir haben einen Sohn. Er heißt Minjun und ist fünf Jahre alt. Und du? [pause] Wie heißen deine Kinder? [pause] Sehr süß! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

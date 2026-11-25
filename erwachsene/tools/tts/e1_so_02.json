@@ -1,0 +1,81 @@
+{
+ "job": "e1_so_02",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a1-1/3",
+   "who": "Sora",
+   "parts": [
+    "Meine Tochter ist acht Jahre alt."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Sora",
+   "parts": [
+    "Guten Tag! Ich brauche ein Kilo Äpfel und sechs Eier, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Sora",
+   "parts": [
+    "Ja. Haben Sie auch Tofu?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Sora",
+   "parts": [
+    "Gut, dann nehme ich zweihundert Gramm Käse. Was kosten die Tomaten?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Sora",
+   "parts": [
+    "Dann bitte ein Pfund Tomaten."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Sora",
+   "parts": [
+    "Hier sind fünfzehn Euro."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Sora",
+   "parts": [
+    "Ich brauche sechs Eier und ein Brot."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Sora",
+   "parts": [
+    "Was kosten die Tomaten?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Sora",
+   "parts": [
+    "Guten Tag! Eine Frage, bitte: Wann fängt die Schule an?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Sora",
+   "parts": [
+    "Und wann ist der Unterricht zu Ende?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Meine Tochter ist acht Jahre alt. [pause] Guten Tag! Ich brauche ein Kilo Äpfel und sechs Eier, bitte. [pause] Ja. Haben Sie auch Tofu? [pause] Gut, dann nehme ich zweihundert Gramm Käse. Was kosten die Tomaten? [pause] Dann bitte ein Pfund Tomaten. [pause] Hier sind fünfzehn Euro. [pause] Ich brauche sechs Eier und ein Brot. [pause] Was kosten die Tomaten? [pause] Guten Tag! Eine Frage, bitte: Wann fängt die Schule an? [pause] Und wann ist der Unterricht zu Ende? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

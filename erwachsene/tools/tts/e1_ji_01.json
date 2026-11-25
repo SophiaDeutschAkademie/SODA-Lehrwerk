@@ -1,0 +1,81 @@
+{
+ "job": "e1_ji_01",
+ "who": "Jiu",
+ "voice": "Leni",
+ "voice_id": "WzPl01KDMCPMOyx39EfF",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Jiu",
+   "parts": [
+    "Guten Morgen! Ich heiße Jiu Kim."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Jiu",
+   "parts": [
+    "Ich komme aus Korea, aus Seoul."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Jiu",
+   "parts": [
+    "Hallo, Dohyun! Ich heiße Jiu."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Jiu",
+   "parts": [
+    "Jott, Ih, Uh. Jiu."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Jiu",
+   "parts": [
+    "Ich komme aus Seoul. Und du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Jiu",
+   "parts": [
+    "Ich wohne in Bockenheim."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Jiu",
+   "parts": [
+    "Super! Bis morgen, Dohyun. Tschüss!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Jiu",
+   "parts": [
+    "Ich komme aus Korea."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Jiu",
+   "parts": [
+    "Nein, ich arbeite nicht. Ich lerne Deutsch."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Jiu",
+   "parts": [
+    "Ja, dann studiere ich Informatik. Und du? Was studierst du?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Morgen! Ich heiße Jiu Kim. [pause] Ich komme aus Korea, aus Seoul. [pause] Hallo, Dohyun! Ich heiße Jiu. [pause] Jott, Ih, Uh. Jiu. [pause] Ich komme aus Seoul. Und du? [pause] Ich wohne in Bockenheim. [pause] Super! Bis morgen, Dohyun. Tschüss! [pause] Ich komme aus Korea. [pause] Nein, ich arbeite nicht. Ich lerne Deutsch. [pause] Ja, dann studiere ich Informatik. Und du? Was studierst du? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -118,9 +118,10 @@ html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
 
 /* 본문이 올라온 줄: 줄 전체를 누르면 그 과로 간다 */
 .auf{position:relative}
-.auf a{text-decoration:none}
-.auf a::after{content:"";position:absolute;inset:0}
-.auf:hover a,.auf a:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.auf a.go{text-decoration:none}
+.auf a.go::after{content:"";position:absolute;inset:0}
+.auf:hover a.go,.auf a.go:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.auf .syn a{position:relative;z-index:1}
 .lek.auf>div{padding-right:20px}
 .lek.auf::after,.sta.auf::after,.tst.auf::after{content:"";position:absolute;right:4px;top:22px;width:8px;height:8px;border-right:2px solid var(--ink2);border-top:2px solid var(--ink2);transform:rotate(45deg);pointer-events:none}
 .sta.auf,.tst.auf{padding-right:34px}
@@ -133,7 +134,8 @@ html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
 .step.offen[aria-selected="true"]::after{background:var(--on-fill)}
 .p-go{margin-top:16px}
 .p-go .btn{min-height:44px;padding:0 22px;font-size:15px}
-.p-wart{margin-top:14px;font-size:13.5px;color:var(--ink2)}
+.p-wart,.p-na{margin-top:14px;font-size:13.5px;color:var(--ink2)}
+.p-go+.p-na,.p-go+.p-wart{margin-top:10px}
 
 /* 과 구성 */
 .more{display:grid;gap:34px;padding:34px 0 10px;border-top:1.5px solid var(--line)}
@@ -265,6 +267,22 @@ footer a{text-underline-offset:3px}
     };
     if(!nav.type||nav.type==='navigate'){zu();window.addEventListener('load',zu)}
   }
+  /* 공부한 기록(과 화면이 이 브라우저에 남긴 것)으로 마친 과와 보던 과를 표시한다. 기록은 교재마다 따로 있다 */
+  function mark(){
+    var L={};try{L=(JSON.parse(localStorage.getItem('__STORE__')||'{}').l)||{}}catch(e){}
+    [].forEach.call(d.querySelectorAll('.auf[data-id]'),function(li){
+      var r=L[li.getAttribute('data-id')],s=li.querySelector('.stat');if(!s)return;
+      li.classList.toggle('fin',!!(r&&r.fin));s.textContent=r&&r.fin?'마침':(r&&r.d?'보는 중':'');
+    });
+    [].forEach.call(d.querySelectorAll('[data-go]'),function(a){
+      var items=[].slice.call(d.querySelectorAll('#p-'+a.getAttribute('data-go')+' .auf')),now=null,lastFin=-1;
+      items.forEach(function(li,k){var r=L[li.getAttribute('data-id')];if(!r)return;if(r.fin)lastFin=k;else if(r.t&&(!now||r.t>now.t))now={t:r.t,k:k}});
+      var k=now?now.k:(lastFin>=0?(lastFin<items.length-1?lastFin+1:0):-1);if(k<0)return;
+      var link=items[k].querySelector('a.go');a.href=link.getAttribute('href');
+      a.textContent=lastFin===items.length-1&&!now?'처음부터 다시 보기':link.textContent+(now?' 이어서 하기':' 시작하기');
+    });
+  }
+  mark();window.addEventListener('pageshow',mark);
 })();
 </script>
 <script id="soda-analytics" data-goatcounter="https://sodadeutsch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>

@@ -1,0 +1,81 @@
+{
+ "job": "e1_fr_02",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "Frau",
+   "parts": [
+    "Wie ist Ihre Telefonnummer?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag! Wie heißen Sie, bitte?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Frau",
+   "parts": [
+    "Woher kommen Sie, Frau Choi?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Frau",
+   "parts": [
+    "Arbeiten Sie hier in Frankfurt?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Frau",
+   "parts": [
+    "Und wie ist Ihre E-Mail-Adresse?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Frau",
+   "parts": [
+    "Vielen Dank, Frau Choi. Bis Montag!"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Guten Morgen! Was möchten Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Gern. Und Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Möchten Sie auch ein Stück Kuchen? Der Apfelkuchen ist heute sehr gut."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Das macht zusammen sieben Euro neunzig."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wie ist Ihre Telefonnummer? [pause] Guten Tag! Wie heißen Sie, bitte? [pause] Woher kommen Sie, Frau Choi? [pause] Arbeiten Sie hier in Frankfurt? [pause] Und wie ist Ihre E-Mail-Adresse? [pause] Vielen Dank, Frau Choi. Bis Montag! [pause] Guten Morgen! Was möchten Sie? [pause] Gern. Und Sie? [pause] Möchten Sie auch ein Stück Kuchen? Der Apfelkuchen ist heute sehr gut. [pause] Das macht zusammen sieben Euro neunzig. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "e1_be_01",
+ "who": "Becker",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Becker",
+   "parts": [
+    "Guten Morgen! Ich bin Anna Becker. Wie heißen Sie, bitte?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Becker",
+   "parts": [
+    "Woher kommen Sie, Frau Kim?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Becker",
+   "parts": [
+    "Schön! Und Sie? Wie heißen Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Becker",
+   "parts": [
+    "Wo wohnen Sie, Herr Park?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Becker",
+   "parts": [
+    "Freut mich! Willkommen im Deutschkurs."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Becker",
+   "parts": [
+    "Auf Wiedersehen, Herr Park!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Becker",
+   "parts": [
+    "Wie heißen Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Becker",
+   "parts": [
+    "Frau Lee, wohnt Ihre Familie auch hier in Frankfurt?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Becker",
+   "parts": [
+    "Wie alt ist Ihre Tochter?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Becker",
+   "parts": [
+    "Und Ihr Mann? Arbeitet er in Frankfurt?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Morgen! Ich bin Anna Becker. Wie heißen Sie, bitte? [pause] Woher kommen Sie, Frau Kim? [pause] Schön! Und Sie? Wie heißen Sie? [pause] Wo wohnen Sie, Herr Park? [pause] Freut mich! Willkommen im Deutschkurs. [pause] Auf Wiedersehen, Herr Park! [pause] Wie heißen Sie? [pause] Frau Lee, wohnt Ihre Familie auch hier in Frankfurt? [pause] Wie alt ist Ihre Tochter? [pause] Und Ihr Mann? Arbeitet er in Frankfurt? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

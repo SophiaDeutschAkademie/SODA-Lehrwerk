@@ -1,0 +1,290 @@
+@id a1-1/1
+
+== ziel
+bild: A bright seminar room of a language school with a blank whiteboard. On the left BECKER stands and greets with one open hand. On the right JIU, DOHYUN and SORA stand next to each other, each holds a notebook, and they smile at her.
+alt: 어학원 교실에서 Frau Becker가 Jiu, Dohyun, Sora를 맞이하고 있어요.
+lead: 프랑크푸르트의 어학원, 독일어 수업 첫날이에요. 한국에서 온 Jiu, Dohyun, Sora가 처음 만나 인사하고 자기를 소개해요.
+mission: 이 과를 마치면 처음 만난 사람에게 인사하고 이름, 나라, 사는 곳을 말할 수 있어요.
+wort: Guten Tag! | 안녕하세요. (낮 인사)
+wort: Ich heiße Jiu Kim. | 저는 김지우예요.
+wort: Ich komme aus Korea. | 저는 한국에서 왔어요.
+wort: Ich wohne in Frankfurt. | 저는 프랑크푸르트에 살아요.
+mc: 처음 만난 회사 동료나 선생님에게 이름을 물을 때는 어떻게 말할까요? | Wie heißen Sie?* | Wie heißt du? | Wo wohnst du? => 처음 만난 어른에게는 Sie를 써요. du는 가족과 친구, 서로 그렇게 부르기로 한 사이에 써요.
+mc: 한국에서 왔다고 말하고 싶어요. 알맞은 문장은 무엇일까요? | Ich komme aus Korea.* | Ich wohne aus Korea. | Ich heiße Korea. => kommen aus가 '~에서 오다'예요.
+
+== hoeren
+-- dialog A | Im Deutschkurs | 월요일 아침, 어학원 교실이에요. 독일어 수업 첫날, Frau Becker가 수강생들과 인사해요.
+vor: 들으면서 찾아보세요. Dohyun은 어디에 사나요?
+Becker: Guten Morgen! Ich bin Anna Becker. Wie heißen Sie, bitte? | 좋은 아침이에요! 저는 Anna Becker예요. 성함이 어떻게 되세요?
+Jiu: Guten Morgen! Ich heiße Jiu Kim. | 좋은 아침이에요! 저는 김지우예요.
+Becker: Woher kommen Sie, Frau Kim? | Frau Kim, 어디에서 오셨어요?
+Jiu: Ich komme aus Korea, aus Seoul. | 한국, 서울에서 왔어요.
+Becker: Schön! Und Sie? Wie heißen Sie? | 좋네요! 그럼 이쪽 분은요? 성함이 어떻게 되세요?
+Dohyun: Mein Name ist Dohyun Park. Ich komme auch aus Korea. | 제 이름은 박도현이에요. 저도 한국에서 왔어요.
+Becker: Wo wohnen Sie, Herr Park? | Herr Park, 어디에 사세요?
+Dohyun: Ich wohne in Frankfurt, in Bockenheim. | 프랑크푸르트 보켄하임에 살아요.
+Sora: Und ich bin Sora Lee. Ich wohne auch in Frankfurt. | 그리고 저는 이소라예요. 저도 프랑크푸르트에 살아요.
+Becker: Freut mich! Willkommen im Deutschkurs. | 반가워요! 독일어 수업에 오신 것을 환영해요.
+
+-- dialog B | In der Pause | 쉬는 시간이에요. Jiu와 Dohyun이 커피 자판기 앞에서 이야기해요.
+vor: 들으면서 찾아보세요. 두 사람은 서로 du라고 하나요, Sie라고 하나요?
+Dohyun: Hallo! Ich bin Dohyun. Und du? Wie heißt du? | 안녕하세요! 저는 도현이에요. 이름이 뭐예요?
+Jiu: Hallo, Dohyun! Ich heiße Jiu. | 안녕하세요, 도현 씨! 저는 지우예요.
+Dohyun: Wie bitte? Wie schreibt man das? | 뭐라고요? 어떻게 써요?
+Jiu: J, I, U. Jiu. | J, I, U. Jiu예요. | say=Jott, Ih, Uh. Jiu.
+Dohyun: Ah, danke! Woher kommst du, Jiu? | 아, 고마워요! 지우 씨는 어디에서 왔어요?
+Jiu: Ich komme aus Seoul. Und du? | 서울에서 왔어요. 도현 씨는요?
+Dohyun: Ich komme aus Busan. Wo wohnst du jetzt? | 저는 부산에서 왔어요. 지금은 어디에 살아요?
+Jiu: Ich wohne in Bockenheim. | 보켄하임에 살아요.
+Dohyun: Ich wohne auch in Bockenheim! | 저도 보켄하임에 살아요!
+Jiu: Super! Bis morgen, Dohyun. Tschüss! | 잘됐네요! 내일 봐요, 도현 씨. 잘 가요!
+
+-- dialog C | Im Büro | 다음 날 아침, Dohyun의 첫 출근 날이에요. 팀장 Frau Hoffmann이 동료 Markus를 소개해요.
+vor: 들으면서 찾아보세요. Markus는 어디에서 왔나요?
+Hoffmann: Guten Morgen, Herr Park! Willkommen bei Kessler Technik. | 좋은 아침이에요, Herr Park! Kessler Technik에 오신 것을 환영해요.
+Dohyun: Guten Morgen, Frau Hoffmann. Vielen Dank! | 좋은 아침입니다, Frau Hoffmann. 감사합니다!
+Hoffmann: Das ist Markus Weber. | 이쪽은 Markus Weber예요.
+Markus: Hallo! Ich bin Markus. Wir sagen hier du. Okay? | 안녕하세요! 저는 Markus예요. 여기서는 서로 du라고 해요. 괜찮죠?
+Dohyun: Ja, gern! Ich bin Dohyun. | 네, 좋아요! 저는 도현이에요.
+Markus: Wie bitte? Wie schreibt man das? | 뭐라고요? 어떻게 써요?
+Dohyun: D, O, H, Y, U, N. Dohyun. | D, O, H, Y, U, N. Dohyun이에요. | say=Deh, Oh, Hah, Ypsilon, Uh, Enn. Dohyun.
+Markus: Danke! Woher kommst du, Dohyun? | 고마워요! 도현 씨는 어디에서 왔어요?
+Dohyun: Ich komme aus Korea, aus Busan. Und du? | 한국 부산에서 왔어요. Markus 씨는요?
+Markus: Ich komme aus Hamburg. Aber ich wohne jetzt in Frankfurt. | 저는 함부르크 출신이에요. 그렇지만 지금은 프랑크푸르트에 살아요.
+
+-- fragen 세 대화를 듣고 답하세요.
+mc: Jiu는 어디에서 왔나요? | aus Seoul* | aus Busan | aus Hamburg
+mc: Dohyun은 프랑크푸르트의 어느 동네에 사나요? | in Bockenheim* | in Sachsenhausen | in Offenbach
+mc: 대화 A에서 Frau Becker와 수강생들은 서로 무엇을 썼나요? | Sie* | du => 선생님과 성인 수강생은 처음에 보통 Sie를 써요.
+mc: 대화 B에서 Jiu와 Dohyun은 서로 무엇을 썼나요? | du* | Sie => 같은 수업을 듣는 사람끼리는 보통 du를 써요.
+mc: 대화 C에서 du라고 하자고 먼저 말한 사람은 누구인가요? | Markus* | Dohyun | Frau Hoffmann
+rf: Markus: Ich komme aus Frankfurt. | f => Markus는 함부르크 출신이고, 지금 프랑크푸르트에 살아요.
+rf: Sora: Ich wohne in Frankfurt. | r
+
+-- kultur du와 Sie, 언제 무엇을 쓸까요?
+p: 독일어에는 상대를 부르는 말이 두 가지 있어요. Sie는 처음 만난 어른, 관청과 가게의 직원, 의사, 교수처럼 예의를 갖추는 사이에 써요. 이때는 이름이 아니라 Herr Park, Frau Kim처럼 성으로 불러요.
+p: du는 가족, 친구, 아이에게 써요. 대학생끼리, 같은 수업을 듣는 사람끼리도 처음부터 du를 써요. 회사는 곳마다 달라요. 모두 du를 쓰는 회사가 많아졌지만, 먼저 Sie로 시작하고 상대가 Wir sagen du.라고 하면 그때 바꾸는 것이 안전해요. 보통 나이가 많거나 직급이 높은 사람이 먼저 제안해요.
+p: du는 한국어의 반말과 같지 않아요. 나이가 많은 동료에게도 du를 쓸 수 있고, du를 쓴다고 예의가 없는 것이 아니에요. 그래서 이 교재는 du로 나눈 어른들의 대화도 '해요'로 옮겼어요.
+mc: 관청 창구의 직원에게 말을 걸 때는 무엇을 쓸까요? | Sie* | du | 어느 쪽이든 괜찮아요
+
+== wortschatz
+-- gruppe Begrüßen und Verabschieden | 만날 때와 헤어질 때
+Hallo! | 안녕하세요 (편한 인사) | Hallo, Jiu! | 안녕하세요, 지우 씨!
+Guten Morgen! | 좋은 아침이에요 (아침 인사) | Guten Morgen, Frau Becker! | 좋은 아침이에요, Frau Becker!
+Guten Tag! | 안녕하세요 (낮 인사) | Guten Tag, Herr Park! | 안녕하세요, Herr Park!
+Guten Abend! | 안녕하세요 (저녁 인사) | Guten Abend, Frau Lee! | 안녕하세요, Frau Lee!
+Auf Wiedersehen! | 안녕히 가세요, 안녕히 계세요 | Auf Wiedersehen, Frau Hoffmann! | 안녕히 계세요, Frau Hoffmann!
+Tschüss! | 잘 가요, 잘 있어요 (편한 인사) | Tschüss, Dohyun! | 잘 가요, 도현 씨!
+Bis morgen! | 내일 봐요 | Tschüss, bis morgen! | 잘 가요, 내일 봐요!
+Freut mich! | 반가워요 | Ich bin Sora Lee. – Freut mich! | 저는 이소라예요. – 반가워요!
+Willkommen! | 환영해요 | Willkommen in Frankfurt! | 프랑크푸르트에 오신 것을 환영해요!
+
+-- gruppe Sich vorstellen | 나를 소개할 때
+heißen | 이름이 ~이다 | Ich heiße Jiu Kim. | 저는 김지우예요.
+kommen | 오다 | Ich komme aus Korea. | 저는 한국에서 왔어요.
+wohnen | 살다 | Ich wohne in Frankfurt. | 저는 프랑크푸르트에 살아요.
+sein | ~이다 | Ich bin Dohyun. | 저는 도현이에요.
+der Name, die Namen | 이름, 성명 | Mein Name ist Dohyun Park. | 제 이름은 박도현이에요.
+der Vorname, die Vornamen | 이름 (성을 뺀 이름) | Mein Vorname ist Jiu. | 제 이름은 Jiu예요.
+der Nachname, die Nachnamen | 성 | Mein Nachname ist Kim. | 제 성은 Kim이에요.
+das Land, die Länder | 나라 | Korea ist ein Land in Asien. | 한국은 아시아에 있는 나라예요.
+die Stadt, die Städte | 도시 | Frankfurt ist eine Stadt in Deutschland. | 프랑크푸르트는 독일에 있는 도시예요.
+der Kurs, die Kurse | 수업, 강좌 | Willkommen im Kurs! | 수업에 오신 것을 환영해요!
+der Kollege, die Kollegen | 동료 (남자) | Das ist Markus, ein Kollege. | 이쪽은 동료 Markus예요.
+die Kollegin, die Kolleginnen | 동료 (여자) | Das ist Frau Schulz, eine Kollegin. | 이쪽은 동료 Frau Schulz예요.
+buchstabieren | 철자를 하나씩 말하다 | Ich buchstabiere: K, I, M. | 철자를 불러 드릴게요. K, I, M. | say=Ich buchstabiere: Kah, Ih, Emm.
+
+-- gruppe Fragen und kleine Wörter | 묻는 말과 자주 쓰는 작은 말
+wie | 어떻게 | Wie heißen Sie? | 성함이 어떻게 되세요?
+woher | 어디에서 | Woher kommst du? | 어디에서 왔어요?
+wo | 어디에 | Wo wohnen Sie? | 어디에 사세요?
+wer | 누구 | Wer ist das? – Das ist Markus. | 저 사람은 누구예요? – Markus예요.
+und | 그리고 | Ich bin Dohyun. Und du? | 저는 도현이에요. 그쪽은요?
+auch | ~도 | Ich komme auch aus Korea. | 저도 한국에서 왔어요.
+aber | 그렇지만 | Ich komme aus Hamburg. Aber ich wohne in Frankfurt. | 저는 함부르크 출신이에요. 그렇지만 프랑크푸르트에 살아요.
+jetzt | 지금 | Ich wohne jetzt in Bockenheim. | 저는 지금 보켄하임에 살아요.
+ja | 네 | Ja, gern! | 네, 좋아요!
+nein | 아니요 | Nein, danke. | 아니요, 괜찮아요.
+danke | 고마워요 | Vielen Dank, Frau Hoffmann! | 정말 감사합니다, Frau Hoffmann!
+bitte | 부탁할 때, 고맙다는 말에 답할 때 | Wie heißen Sie, bitte? | 성함이 어떻게 되세요?
+Entschuldigung! | 실례합니다, 죄송합니다 | Entschuldigung, wie heißen Sie? | 실례지만 성함이 어떻게 되세요?
+Wie bitte? | 뭐라고요? (다시 말해 달라고 할 때) | Wie bitte? Noch einmal, bitte. | 뭐라고요? 한 번 더 말해 주세요.
+
+-- bilder
+Guten Tag!: a woman and a man in office clothes who shake hands and smile at each other, full body
+Tschüss!: a young woman with a backpack who walks away and waves goodbye with one raised hand, full body
+der Name, die Namen: a blank rectangular name badge with a clip, pinned on a navy jacket, close view
+das Land, die Länder: a simple flat map shape of a country with one ochre location pin on it
+die Stadt, die Städte: a small city skyline with a few tall towers, a river and one arched bridge
+der Kurs, die Kurse: four adults who sit at two tables with notebooks and look at a woman teacher who stands at a blank whiteboard
+
+-- tafel Woher kommen Sie? | 나라 이름
+p: 줄을 누르면 소리가 나요. 나라 이름은 대부분 관사 없이 aus 뒤에 바로 써요. 몇몇 나라는 관사가 함께 다녀서 aus der Schweiz, aus der Türkei, aus den USA라고 해요. 지금은 통째로 익혀요.
+r: Korea = 한국 ; Japan = 일본 ; China = 중국 ; Vietnam = 베트남 | say=Korea, Japan, China, Vietnam.
+r: Deutschland = 독일 ; Österreich = 오스트리아 ; die Schweiz = 스위스 | say=Deutschland, Österreich, die Schweiz.
+r: Frankreich = 프랑스 ; Spanien = 스페인 ; Italien = 이탈리아 ; Polen = 폴란드 | say=Frankreich, Spanien, Italien, Polen.
+r: die Türkei = 튀르키예 ; die Ukraine = 우크라이나 ; die USA = 미국 | say=die Türkei, die Ukraine, die USA.
+r: aus Korea ; aus Deutschland ; aus der Schweiz ; aus der Türkei ; aus den USA | say=aus Korea, aus Deutschland, aus der Schweiz, aus der Türkei, aus den USA.
+
+-- aussprache W와 V | 영어와 다르게 읽는 두 글자
+p: 독일어의 w는 윗니를 아랫입술에 살짝 대고 내는 소리예요. 영어의 v와 같아요. 한국어 '우'처럼 입술을 둥글게 모으지 않아요. wie는 '위'가 아니에요.
+p: v는 대부분 f와 같은 소리예요. Vorname의 첫소리는 f예요. 그래서 독일어에서는 w와 v를 영어와 반대로 읽는다고 기억하면 쉬워요.
+hör: wie, wo, woher, wohnen | w: 윗니를 아랫입술에 대요
+hör: Willkommen! Auf Wiedersehen! | w가 들어 있는 인사
+hör: Vorname, Vater, vier | v: f와 같은 소리
+hör: Wo wohnen Sie? Wie ist Ihr Vorname? | 두 소리가 모두 들어 있는 문장
+
+== grammatik
+-- punkt Verben: ich, du, Sie | 주어에 따라 달라지는 동사의 끝
+bsp: Ich *heiße* Jiu Kim. | 저는 김지우예요.
+bsp: Wie *heißt* du? | 이름이 뭐예요?
+bsp: Woher *kommen* Sie? | 어디에서 오셨어요?
+finde: Sie가 주어일 때 동사는 어떻게 끝나나요? | -en* | -e | -st
+regel: 독일어 동사는 주어에 따라 끝이 달라져요. ich는 -e, du는 -st, Sie는 -en으로 끝나요. Sie와 함께 쓰는 모양은 사전에 실린 모양과 같아요.
+| | kommen | heißen | sein
+| ich | komm*e* | heiß*e* | *bin*
+| du | komm*st* | heiß*t* | *bist*
+| Sie | komm*en* | heiß*en* | *sind*
+merke: wohnen은 kommen과 똑같이 바뀌어요. ich wohne, du wohnst, Sie wohnen. heißen은 du heißt예요. ß 뒤에는 s를 다시 쓰지 않아요. sein은 모양이 완전히 달라서 통째로 외워요. Das ist Markus.(이쪽은 Markus예요.)의 ist도 sein이에요.
+
+-- punkt W-Fragen | 의문사로 묻는 질문
+bsp: *Wie* heißen Sie? | 성함이 어떻게 되세요?
+bsp: *Woher* kommst du? | 어디에서 왔어요?
+bsp: *Wo* wohnen Sie? | 어디에 사세요?
+finde: 의문사로 시작하는 질문에서 동사는 몇 번째 자리에 오나요? | 두 번째* | 첫 번째 | 맨 끝
+regel: 의문사가 맨 앞에 오고, 동사가 바로 뒤 두 번째 자리에 와요. 주어는 동사 뒤에 와요. 대답하는 문장에서도 동사는 두 번째 자리에 있어요.
+| 1 | 2 동사 | 나머지
+| Wie | heißen | Sie?
+| Woher | kommst | du?
+| Wo | wohnen | Sie?
+| Ich | wohne | in Frankfurt.
+merke: wo는 있는 곳, woher는 떠나온 곳을 물어요. 대답에도 짝이 있어요. Wo? → in Frankfurt, Woher? → aus Korea.
+
+-- punkt du oder Sie? | 상대에 따라 고르는 두 가지 말
+bsp: Wie heißt *du*? Woher kommst *du*? | 친구, 같은 수업을 듣는 사람에게
+bsp: Wie heißen *Sie*? Woher kommen *Sie*? | 처음 만난 어른, 직원, 상사에게
+finde: Frau Becker가 수강생에게 한 질문은 무엇인가요? | Woher kommen Sie?* | Woher kommst du? | Woher komme ich?
+regel: du와 Sie는 동사의 끝도 함께 달라져요. Sie는 한 사람에게 써도, 여러 사람에게 써도 모양이 같아요. 글로 쓸 때 Sie의 S는 문장 어디에서나 대문자예요.
+| | du | Sie
+| 누구에게 | 가족, 친구, 학생끼리, du를 쓰기로 한 동료 | 처음 만난 어른, 직원, 선생님, 상사
+| 부르는 말 | Jiu, Markus | Frau Kim, Herr Weber
+| 동사 | kommst, wohnst, bist | kommen, wohnen, sind
+merke: 무엇을 쓸지 모르겠으면 Sie로 시작해요. Sie에서 du로 바꾸기는 쉽지만 반대로 바꾸면 어색해요.
+
+-- alphabet
+p: 독일어 알파벳은 영어와 같은 26자에 Ä, Ö, Ü, ß가 더 있어요. 글자 이름은 영어와 달라요. 줄을 누르면 소리가 나요.
+p: 이름을 잘 못 알아들었을 때는 Wie schreibt man das?(어떻게 써요?)라고 물어요. 한국 이름은 독일 사람에게 낯설어서 철자를 불러 줄 일이 많아요. 내 이름의 철자를 막힘없이 말할 수 있게 연습해 두세요.
+
+== training
+-- ex Hören | 인사를 듣고 알맞은 것을 고르세요.
+hör: Hoffmann: Guten Morgen, Herr Park!
+mc: 언제 하는 인사인가요? | 아침에 만났을 때* | 저녁에 만났을 때 | 헤어질 때
+hör: Markus: Tschüss, bis morgen!
+mc: 언제 하는 인사인가요? | 헤어질 때* | 아침에 만났을 때 | 처음 소개할 때
+hör: Sora: Guten Abend, Frau Becker!
+mc: 언제 하는 인사인가요? | 저녁에 만났을 때* | 아침에 만났을 때 | 헤어질 때
+hör: Becker: Auf Wiedersehen, Herr Park!
+mc: 두 사람은 어떤 사이인가요? | Sie를 쓰는 사이* | du를 쓰는 사이 => Herr Park처럼 성으로 부르고 Auf Wiedersehen이라고 인사하면 Sie를 쓰는 사이예요.
+
+-- ex Hören | 철자를 듣고 알맞은 이름을 고르세요.
+hör: N: Ess, Oh, Err, Ah.
+mc: 어떤 이름인가요? | Sora* | Sara | Sola
+hör: N: Peh, Ah, Err, Kah.
+mc: 어떤 성인가요? | Park* | Bark | Parg
+hör: N: Weh, Eh, Beh, Eh, Err.
+mc: 어떤 성인가요? | Weber* | Veber | Wever
+hör: N: Jott, Ih, Uh.
+mc: 어떤 이름인가요? | Jiu* | Giu | Yiu
+
+-- ex Lesen | 수강생 명단을 읽고, 맞으면 richtig, 틀리면 falsch를 고르세요. Wohnort는 사는 곳이에요.
+text plan | Deutschkurs A1.1: Teilnehmerliste
+> | Nachname | Vorname | Land | Wohnort |
+> | Kim | Jiu | Korea | Frankfurt |
+> | Park | Dohyun | Korea | Frankfurt |
+> | Lee | Sora | Korea | Frankfurt |
+> | García | Carlos | Spanien | Offenbach |
+> | Nowak | Ewa | Polen | Mainz |
+rf: Jiu Kim: Ich komme aus Korea. | r
+rf: Carlos García: Ich wohne in Frankfurt. | f => Carlos는 오펜바흐(Offenbach)에 살아요.
+rf: Ewa Nowak: Ich komme aus Polen. | r
+rf: Sora Lee: Mein Vorname ist Lee. | f => Lee는 성(Nachname)이에요. 이름(Vorname)은 Sora예요.
+rf: Dohyun Park: Ich wohne in Mainz. | f => Dohyun은 프랑크푸르트에 살아요. 마인츠(Mainz)에 사는 사람은 Ewa예요.
+
+-- ex Grammatik | 알맞은 동사 형태를 고르세요.
+gap: Ich [komme|kommst|kommen] aus Korea.
+gap: Wie [heißt|heiße|heißen] du?
+gap: Wo [wohnen|wohnst|wohne] Sie, Frau Lee?
+gap: Ich [bin|bist|sind] Dohyun Park.
+gap: Woher [kommst|komme|kommen] du?
+gap: Wie [heißen|heißt|heiße] Sie?
+
+-- ex Grammatik | 동사를 보고 du와 Sie 가운데 알맞은 말을 고르세요.
+gap: Guten Tag, Frau Hoffmann! Woher kommen [Sie|du]?
+gap: Hallo, Carlos! Wo wohnst [du|Sie]?
+gap: Entschuldigung, wie heißen [Sie|du]?
+gap: Hallo, Ewa! Woher kommst [du|Sie]?
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: wie / heißen / Sie? | 성함이 어떻게 되세요?
+ord: woher / kommst / du? | 어디에서 왔어요?
+ord: wo / wohnen / Sie? | 어디에 사세요?
+ord: ich / komme / aus Busan. | 저는 부산에서 왔어요.
+
+-- ex Wortschatz | 질문과 대답을 짝지으세요.
+paar: Wie heißen Sie? = Ich heiße Sora Lee. ; Woher kommen Sie? = Aus Korea. ; Wo wohnst du? = In Bockenheim. ; Wie schreibt man das? = L, E, E. ; Tschüss! = Bis morgen!
+
+-- ex Wortschatz | 빈칸에 알맞은 낱말을 쓰세요.
+gap: Guten [=Morgen]! | 아침 인사
+gap: Auf [=Wiedersehen]! | 헤어질 때 하는 인사, Sie를 쓰는 사이
+gap: Ich komme [=aus] Korea. | 저는 한국에서 왔어요.
+gap: Ich wohne [=in] Frankfurt. | 저는 프랑크푸르트에 살아요.
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Jiu: Ich komme aus Korea. | 저는 한국에서 왔어요.
+dik: Becker: Wie heißen Sie? | 성함이 어떻게 되세요?
+dik: Markus: Ich wohne jetzt in Frankfurt. | 저는 지금 프랑크푸르트에 살아요.
+
+== aufgabe
+-- redemittel
+인사하기: Guten Morgen! / Guten Tag! / Guten Abend! | 안녕하세요. (아침 / 낮 / 저녁) ; Hallo! | 안녕하세요. (편한 사이)
+이름 묻고 말하기: Wie heißen Sie? / Wie heißt du? | 이름이 어떻게 되세요? ; Ich heiße … / Ich bin … / Mein Name ist … | 저는 …예요.
+출신 묻고 말하기: Woher kommen Sie? / Woher kommst du? | 어디에서 오셨어요? ; Ich komme aus … | …에서 왔어요.
+사는 곳 묻고 말하기: Wo wohnen Sie? / Wo wohnst du? | 어디에 사세요? ; Ich wohne in … | …에 살아요.
+다시 묻기: Wie bitte? | 뭐라고요? ; Wie schreibt man das? | 어떻게 써요? ; Noch einmal, bitte. | 한 번 더 말해 주세요.
+du로 바꾸기: Wir sagen du. Okay? | 우리 du라고 해요. 괜찮죠? ; Ja, gern! | 네, 좋아요!
+헤어지기: Auf Wiedersehen! | 안녕히 가세요. ; Tschüss! Bis morgen! | 잘 가요! 내일 봐요!
+
+-- rolle B | Jiu, Dohyun
+
+-- ich 나를 소개해요 | 칸을 채우면 내 소개가 완성돼요. 나라와 도시는 Korea, Seoul처럼 알파벳으로 쓰세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: name | 이름과 성 | Minji Choi
+feld: land | 나라 | Korea
+feld: stadt | 떠나온 도시 | Daegu
+feld: ort | 지금 사는 곳 | Frankfurt
+satz: Guten Tag! Ich heiße {name}.
+satz: Ich komme aus {land}, aus {stadt}.
+satz: Ich wohne jetzt in {ort}.
+
+--S sprich Im Deutschkurs | 어학 수업 첫날, 옆자리에 앉은 Carlos가 말을 걸어요. 같은 수업을 듣는 사이니까 du로 답하세요. 질문을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요. | Mann=Carlos
+f: Mann: Hallo! Ich bin Carlos. Wie heißt du? | 안녕하세요! 저는 Carlos예요. 이름이 뭐예요? => Hallo, Carlos! Ich heiße Minji.
+f: Mann: Wie bitte? Wie schreibt man das? | 뭐라고요? 어떻게 써요? => M, I, N, J, I. Minji.
+f: Mann: Danke! Woher kommst du? | 고마워요! 어디에서 왔어요? => Ich komme aus Korea, aus Daegu. Und du? Woher kommst du?
+f: Mann: Ich komme aus Spanien. Wo wohnst du jetzt? | 저는 스페인에서 왔어요. 지금은 어디에 살아요? => Ich wohne in Frankfurt. Und du? Wo wohnst du?
+f: Mann: Ich wohne in Offenbach. Tschüss, bis morgen! | 저는 오펜바흐에 살아요. 잘 가요, 내일 봐요! => Tschüss, Carlos! Bis morgen!
+
+--B sprich Der erste Tag im Büro | 첫 출근 날, 새 동료 Frau Schulz가 인사해요. 아직 du를 제안받지 않았으니 Sie로 답하세요. 질문을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요. | Frau=Frau Schulz
+f: Frau: Guten Morgen! Ich bin Sabine Schulz. Wie heißen Sie? | 좋은 아침이에요! 저는 Sabine Schulz예요. 성함이 어떻게 되세요? => Guten Morgen, Frau Schulz! Ich heiße Minji Choi.
+f: Frau: Entschuldigung, wie bitte? Wie schreibt man das? | 죄송해요, 뭐라고요? 어떻게 써요? => Mein Vorname ist Minji: M, I, N, J, I. Mein Nachname ist Choi: C, H, O, I.
+f: Frau: Vielen Dank! Woher kommen Sie, Frau Choi? | 감사합니다! Frau Choi, 어디에서 오셨어요? => Ich komme aus Korea, aus Daegu.
+f: Frau: Und wo wohnen Sie jetzt? | 그럼 지금은 어디에 사세요? => Ich wohne jetzt in Frankfurt. Und Sie? Wo wohnen Sie?
+f: Frau: Ich wohne in Mainz. Willkommen bei Kessler Technik! | 저는 마인츠에 살아요. Kessler Technik에 오신 것을 환영해요! => Vielen Dank, Frau Schulz!
+
+-- kann
+Ich kann jemanden begrüßen und mich verabschieden. | 만날 때와 헤어질 때 인사할 수 있어요.
+Ich kann meinen Namen, mein Land und meinen Wohnort sagen. | 이름, 나라, 사는 곳을 말할 수 있어요.
+Ich kann meinen Namen buchstabieren. | 내 이름의 철자를 불러 줄 수 있어요.
+Ich kann zwischen du und Sie wählen. | du와 Sie 가운데 알맞은 것을 고를 수 있어요.
+
+-- tipp 내 이름의 철자부터 입에 붙여요
+p: 독일에서는 전화로 예약할 때, 관청과 병원 창구에서 이름의 철자를 자주 물어요. 한국 이름은 듣고 바로 받아 적기 어려워서 거의 매번 불러 주게 돼요.
+p: 오늘 내 이름과 성의 철자를 독일어 글자 이름으로 세 번 소리 내어 말해 보세요. 막히는 글자는 문법 순서의 알파벳 표에서 다시 확인해요. 이메일 주소까지 말할 수 있으면 더 좋아요.

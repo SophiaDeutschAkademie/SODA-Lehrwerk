@@ -1,0 +1,81 @@
+{
+ "job": "e1_n_12",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "vierzig, fünfzig, sechzig"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Zahl, die Postleitzahl"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Zweiundzwanzig plus zehn ist zweiunddreißig."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "dreiundvierzig"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "siebzehn"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "achtundsechzig"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Das ist meine Familie."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Ich habe einen Bruder."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Hast du Geschwister?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Meine Tochter ist acht Jahre alt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] vierzig, fünfzig, sechzig [pause] die Zahl, die Postleitzahl [pause] Zweiundzwanzig plus zehn ist zweiunddreißig. [pause] dreiundvierzig [pause] siebzehn [pause] achtundsechzig [pause] Das ist meine Familie. [pause] Ich habe einen Bruder. [pause] Hast du Geschwister? [pause] Meine Tochter ist acht Jahre alt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

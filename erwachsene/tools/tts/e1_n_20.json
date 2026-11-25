@@ -1,0 +1,91 @@
+{
+ "job": "e1_n_20",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Euro, die Euro.",
+    "Das kostet zwei Euro."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "das Kilo, die Kilos.",
+    "Ein Kilo kostet drei Euro."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "das Gramm.",
+    "Ich nehme zweihundert Gramm Käse."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "das Stück, die Stücke.",
+    "Ein Stück Kuchen, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Supermarkt, die Supermärkte.",
+    "Der Supermarkt ist nicht teuer."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "die Bäckerei, die Bäckereien.",
+    "Die Bäckerei hat Brot und Kuchen."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Markt, die Märkte.",
+    "Der Markt ist sehr schön."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "teuer.",
+    "Der Käse ist teuer."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "günstig.",
+    "Die Äpfel sind heute günstig."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "heute.",
+    "Heute möchte ich Fisch."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Euro, die Euro. Das kostet zwei Euro. [pause] das Kilo, die Kilos. Ein Kilo kostet drei Euro. [pause] das Gramm. Ich nehme zweihundert Gramm Käse. [pause] das Stück, die Stücke. Ein Stück Kuchen, bitte. [pause] der Supermarkt, die Supermärkte. Der Supermarkt ist nicht teuer. [pause] die Bäckerei, die Bäckereien. Die Bäckerei hat Brot und Kuchen. [pause] der Markt, die Märkte. Der Markt ist sehr schön. [pause] teuer. Der Käse ist teuer. [pause] günstig. Die Äpfel sind heute günstig. [pause] heute. Heute möchte ich Fisch. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

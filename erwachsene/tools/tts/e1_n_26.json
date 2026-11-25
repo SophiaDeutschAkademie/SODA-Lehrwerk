@@ -1,0 +1,84 @@
+{
+ "job": "e1_n_26",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "nie.",
+    "Ich sehe nie fern."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "dann.",
+    "Dann fahre ich ins Büro."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "morgen.",
+    "Morgen arbeite ich nicht."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Montag, Dienstag, Mittwoch, Donnerstag."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Freitag, Samstag, Sonntag."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "am Montag, am Wochenende, von Montag bis Freitag."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "sieben Uhr, Viertel nach sieben."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "halb acht, Viertel vor acht."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "zehn nach sieben, zehn vor acht."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "dreizehn Uhr, sechzehn Uhr dreißig."
+   ]
+  }
+ ],
+ "script": "Also. [pause] nie. Ich sehe nie fern. [pause] dann. Dann fahre ich ins Büro. [pause] morgen. Morgen arbeite ich nicht. [pause] Montag, Dienstag, Mittwoch, Donnerstag. [pause] Freitag, Samstag, Sonntag. [pause] am Montag, am Wochenende, von Montag bis Freitag. [pause] sieben Uhr, Viertel nach sieben. [pause] halb acht, Viertel vor acht. [pause] zehn nach sieben, zehn vor acht. [pause] dreizehn Uhr, sechzehn Uhr dreißig. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

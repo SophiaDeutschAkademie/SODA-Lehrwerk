@@ -1,0 +1,88 @@
+{
+ "job": "e1_n_22",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Ich stehe um sechs Uhr auf."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Der Kurs fängt um neun an."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Was machst du am Samstag?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "der Morgen.",
+    "Am Morgen lerne ich Deutsch."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "der Vormittag, die Vormittage.",
+    "Am Vormittag habe ich Unterricht."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "der Mittag.",
+    "Am Mittag esse ich in der Kantine."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "der Nachmittag, die Nachmittage.",
+    "Am Nachmittag kaufe ich ein."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "der Abend, die Abende.",
+    "Am Abend sehe ich fern."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "die Nacht, die Nächte.",
+    "In der Nacht schlafe ich."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "der Tag, die Tage.",
+    "Mein Tag fängt früh an."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich stehe um sechs Uhr auf. [pause] Der Kurs fängt um neun an. [pause] Was machst du am Samstag? [pause] der Morgen. Am Morgen lerne ich Deutsch. [pause] der Vormittag, die Vormittage. Am Vormittag habe ich Unterricht. [pause] der Mittag. Am Mittag esse ich in der Kantine. [pause] der Nachmittag, die Nachmittage. Am Nachmittag kaufe ich ein. [pause] der Abend, die Abende. Am Abend sehe ich fern. [pause] die Nacht, die Nächte. In der Nacht schlafe ich. [pause] der Tag, die Tage. Mein Tag fängt früh an. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

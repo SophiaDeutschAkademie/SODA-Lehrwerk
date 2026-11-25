@@ -1,0 +1,90 @@
+{
+ "job": "e1_n_09",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Deutsch.",
+    "Wir sprechen hier Deutsch."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Englisch.",
+    "Sprechen Sie Englisch?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Koreanisch.",
+    "Sprichst du Koreanisch?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "ein bisschen.",
+    "Ich spreche ein bisschen Deutsch."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "gut.",
+    "Dein Deutsch ist gut!"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "nicht.",
+    "Ich arbeite nicht."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "noch nicht.",
+    "Ich spreche noch nicht gut Deutsch."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "leider.",
+    "Nein, leider nicht."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Telefonnummer, die Telefonnummern."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Handynummer, die Handynummern.",
+    "Wie ist deine Handynummer?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Deutsch. Wir sprechen hier Deutsch. [pause] Englisch. Sprechen Sie Englisch? [pause] Koreanisch. Sprichst du Koreanisch? [pause] ein bisschen. Ich spreche ein bisschen Deutsch. [pause] gut. Dein Deutsch ist gut! [pause] nicht. Ich arbeite nicht. [pause] noch nicht. Ich spreche noch nicht gut Deutsch. [pause] leider. Nein, leider nicht. [pause] die Telefonnummer, die Telefonnummern. [pause] die Handynummer, die Handynummern. Wie ist deine Handynummer? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

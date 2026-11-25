@@ -1,0 +1,81 @@
+{
+ "job": "e1_mk_01",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Markus",
+   "parts": [
+    "Hallo! Ich bin Markus. Wir sagen hier du. Okay?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Markus",
+   "parts": [
+    "Wie bitte? Wie schreibt man das?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Markus",
+   "parts": [
+    "Danke! Woher kommst du, Dohyun?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Markus",
+   "parts": [
+    "Ich komme aus Hamburg. Aber ich wohne jetzt in Frankfurt."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Markus",
+   "parts": [
+    "Tschüss, bis morgen!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Markus",
+   "parts": [
+    "Ich wohne jetzt in Frankfurt."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Markus",
+   "parts": [
+    "Dohyun, was bist du von Beruf? Bist du Informatiker?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Markus",
+   "parts": [
+    "Ich bin auch Ingenieur. Wir arbeiten zusammen im Team von Frau Hoffmann."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Markus",
+   "parts": [
+    "Nein, sie kommt aus Köln. Sie spricht Deutsch, Englisch und Französisch."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Markus",
+   "parts": [
+    "Ja, alle sprechen Englisch. Aber wir sprechen hier meistens Deutsch."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hallo! Ich bin Markus. Wir sagen hier du. Okay? [pause] Wie bitte? Wie schreibt man das? [pause] Danke! Woher kommst du, Dohyun? [pause] Ich komme aus Hamburg. Aber ich wohne jetzt in Frankfurt. [pause] Tschüss, bis morgen! [pause] Ich wohne jetzt in Frankfurt. [pause] Dohyun, was bist du von Beruf? Bist du Informatiker? [pause] Ich bin auch Ingenieur. Wir arbeiten zusammen im Team von Frau Hoffmann. [pause] Nein, sie kommt aus Köln. Sie spricht Deutsch, Englisch und Französisch. [pause] Ja, alle sprechen Englisch. Aber wir sprechen hier meistens Deutsch. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

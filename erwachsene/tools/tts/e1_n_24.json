@@ -1,0 +1,90 @@
+{
+ "job": "e1_n_24",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "kochen.",
+    "Am Abend koche ich."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "fernsehen, du siehst fern, er sieht fern.",
+    "Lena sieht am Abend fern."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "anrufen.",
+    "Ich rufe meine Eltern an."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "schlafen, du schläfst, er schläft.",
+    "Meine Tochter schläft lange."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "lesen, du liest, er liest.",
+    "Markus liest E-Mails."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "mitkommen.",
+    "Kommst du mit?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "machen."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "die Arbeit.",
+    "Die Arbeit fängt um halb neun an."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "die Pause, die Pausen.",
+    "Um zwölf machen wir Pause."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "die Besprechung, die Besprechungen.",
+    "Die Besprechung ist um zehn Uhr."
+   ]
+  }
+ ],
+ "script": "Also. [pause] kochen. Am Abend koche ich. [pause] fernsehen, du siehst fern, er sieht fern. Lena sieht am Abend fern. [pause] anrufen. Ich rufe meine Eltern an. [pause] schlafen, du schläfst, er schläft. Meine Tochter schläft lange. [pause] lesen, du liest, er liest. Markus liest E-Mails. [pause] mitkommen. Kommst du mit? [pause] machen. [pause] die Arbeit. Die Arbeit fängt um halb neun an. [pause] die Pause, die Pausen. Um zwölf machen wir Pause. [pause] die Besprechung, die Besprechungen. Die Besprechung ist um zehn Uhr. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

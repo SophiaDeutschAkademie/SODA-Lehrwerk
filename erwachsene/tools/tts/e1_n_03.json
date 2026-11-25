@@ -1,0 +1,91 @@
+{
+ "job": "e1_n_03",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "das Land, die Länder.",
+    "Korea ist ein Land in Asien."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "die Stadt, die Städte.",
+    "Frankfurt ist eine Stadt in Deutschland."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "der Kurs, die Kurse.",
+    "Willkommen im Kurs!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "der Kollege, die Kollegen.",
+    "Das ist Markus, ein Kollege."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "die Kollegin, die Kolleginnen.",
+    "Das ist Frau Schulz, eine Kollegin."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "buchstabieren.",
+    "Ich buchstabiere: Kah, Ih, Emm."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "wie.",
+    "Wie heißen Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "woher.",
+    "Woher kommst du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "wo.",
+    "Wo wohnen Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "wer.",
+    "Wer ist das? – Das ist Markus."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Land, die Länder. Korea ist ein Land in Asien. [pause] die Stadt, die Städte. Frankfurt ist eine Stadt in Deutschland. [pause] der Kurs, die Kurse. Willkommen im Kurs! [pause] der Kollege, die Kollegen. Das ist Markus, ein Kollege. [pause] die Kollegin, die Kolleginnen. Das ist Frau Schulz, eine Kollegin. [pause] buchstabieren. Ich buchstabiere: Kah, Ih, Emm. [pause] wie. Wie heißen Sie? [pause] woher. Woher kommst du? [pause] wo. Wo wohnen Sie? [pause] wer. Wer ist das? – Das ist Markus. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

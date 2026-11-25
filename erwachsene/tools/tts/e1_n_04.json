@@ -1,0 +1,91 @@
+{
+ "job": "e1_n_04",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "und.",
+    "Ich bin Dohyun. Und du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "auch.",
+    "Ich komme auch aus Korea."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "aber.",
+    "Ich komme aus Hamburg. Aber ich wohne in Frankfurt."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "jetzt.",
+    "Ich wohne jetzt in Bockenheim."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "ja.",
+    "Ja, gern!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "nein.",
+    "Nein, danke."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "danke.",
+    "Vielen Dank, Frau Hoffmann!"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "bitte.",
+    "Wie heißen Sie, bitte?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Entschuldigung!",
+    "Entschuldigung, wie heißen Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Wie bitte?",
+    "Wie bitte? Noch einmal, bitte."
+   ]
+  }
+ ],
+ "script": "Also. [pause] und. Ich bin Dohyun. Und du? [pause] auch. Ich komme auch aus Korea. [pause] aber. Ich komme aus Hamburg. Aber ich wohne in Frankfurt. [pause] jetzt. Ich wohne jetzt in Bockenheim. [pause] ja. Ja, gern! [pause] nein. Nein, danke. [pause] danke. Vielen Dank, Frau Hoffmann! [pause] bitte. Wie heißen Sie, bitte? [pause] Entschuldigung! Entschuldigung, wie heißen Sie? [pause] Wie bitte? Wie bitte? Noch einmal, bitte. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "e1_le_01",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "Lena",
+   "parts": [
+    "Jiu, was machst du in Frankfurt? Arbeitest du hier?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Lena",
+   "parts": [
+    "Und dann? Studierst du hier?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Lena",
+   "parts": [
+    "Ich studiere Biologie. Sprichst du Englisch?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Lena",
+   "parts": [
+    "Dein Deutsch ist schon gut!"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Lena",
+   "parts": [
+    "Nein, leider nicht. Aber ich lerne gern Sprachen."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Lena",
+   "parts": [
+    "lena, Punkt, schmidt, at, example, Punkt, org"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Lena",
+   "parts": [
+    "Oh, Fotos! Ist das deine Familie?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Lena",
+   "parts": [
+    "Sehr sympathisch! Und wer ist das?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Lena",
+   "parts": [
+    "Wohnt er auch in Seoul?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Lena",
+   "parts": [
+    "Hast du auch eine Schwester?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Jiu, was machst du in Frankfurt? Arbeitest du hier? [pause] Und dann? Studierst du hier? [pause] Ich studiere Biologie. Sprichst du Englisch? [pause] Dein Deutsch ist schon gut! [pause] Nein, leider nicht. Aber ich lerne gern Sprachen. [pause] lena, Punkt, schmidt, at, example, Punkt, org [pause] Oh, Fotos! Ist das deine Familie? [pause] Sehr sympathisch! Und wer ist das? [pause] Wohnt er auch in Seoul? [pause] Hast du auch eine Schwester? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

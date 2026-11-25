@@ -1,0 +1,81 @@
+{
+ "job": "e1_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Mann",
+   "parts": [
+    "Hallo! Ich bin Carlos. Wie heißt du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Mann",
+   "parts": [
+    "Wie bitte? Wie schreibt man das?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Mann",
+   "parts": [
+    "Danke! Woher kommst du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Mann",
+   "parts": [
+    "Ich komme aus Spanien. Wo wohnst du jetzt?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Mann",
+   "parts": [
+    "Ich wohne in Offenbach. Tschüss, bis morgen!"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag! Mein Name ist Peter Schneider. Wie heißen Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Freut mich, Frau Choi! Was sind Sie von Beruf?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Sprechen Sie auch Englisch?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Wie ist Ihre Telefonnummer?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Und wie ist Ihre E-Mail-Adresse?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hallo! Ich bin Carlos. Wie heißt du? [pause] Wie bitte? Wie schreibt man das? [pause] Danke! Woher kommst du? [pause] Ich komme aus Spanien. Wo wohnst du jetzt? [pause] Ich wohne in Offenbach. Tschüss, bis morgen! [pause] Guten Tag! Mein Name ist Peter Schneider. Wie heißen Sie? [pause] Freut mich, Frau Choi! Was sind Sie von Beruf? [pause] Sprechen Sie auch Englisch? [pause] Wie ist Ihre Telefonnummer? [pause] Und wie ist Ihre E-Mail-Adresse? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

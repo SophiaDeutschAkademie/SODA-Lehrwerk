@@ -1,0 +1,91 @@
+{
+ "job": "e1_n_18",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Reis.",
+    "Ich nehme den Fisch mit Reis."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "das Fleisch.",
+    "Ich möchte heute kein Fleisch."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Fisch, die Fische.",
+    "Der Fisch ist sehr gut."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Salat, die Salate.",
+    "Markus nimmt einen Salat."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Kuchen, die Kuchen.",
+    "Möchten Sie ein Stück Kuchen?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "das Obst.",
+    "Sora kauft Obst."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "das Gemüse.",
+    "Das Gemüse ist heute günstig."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Kaffee, die Kaffees.",
+    "Ich möchte einen Kaffee."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Tee, die Tees.",
+    "Lena nimmt einen Tee."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "das Wasser.",
+    "Ich trinke ein Wasser."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Reis. Ich nehme den Fisch mit Reis. [pause] das Fleisch. Ich möchte heute kein Fleisch. [pause] der Fisch, die Fische. Der Fisch ist sehr gut. [pause] der Salat, die Salate. Markus nimmt einen Salat. [pause] der Kuchen, die Kuchen. Möchten Sie ein Stück Kuchen? [pause] das Obst. Sora kauft Obst. [pause] das Gemüse. Das Gemüse ist heute günstig. [pause] der Kaffee, die Kaffees. Ich möchte einen Kaffee. [pause] der Tee, die Tees. Lena nimmt einen Tee. [pause] das Wasser. Ich trinke ein Wasser. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

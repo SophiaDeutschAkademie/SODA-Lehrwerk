@@ -1,0 +1,81 @@
+{
+ "job": "e1_fr_03",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Danke schön. Einen schönen Tag!"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Das macht drei Euro fünfzig."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Zusammen zwölf Euro vierzig, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag! Was darf es sein?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Gern. Möchten Sie auch etwas trinken?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Sonst noch etwas?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Das macht zusammen sechzehn Euro dreißig. Bar oder mit Karte?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Möchten Sie den Kassenbon?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag, Frau Lee. Die Schule fängt um acht Uhr an."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Um zwölf Uhr dreißig. Dann essen die Kinder zusammen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Danke schön. Einen schönen Tag! [pause] Das macht drei Euro fünfzig. [pause] Zusammen zwölf Euro vierzig, bitte. [pause] Guten Tag! Was darf es sein? [pause] Gern. Möchten Sie auch etwas trinken? [pause] Sonst noch etwas? [pause] Das macht zusammen sechzehn Euro dreißig. Bar oder mit Karte? [pause] Möchten Sie den Kassenbon? [pause] Guten Tag, Frau Lee. Die Schule fängt um acht Uhr an. [pause] Um zwölf Uhr dreißig. Dann essen die Kinder zusammen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

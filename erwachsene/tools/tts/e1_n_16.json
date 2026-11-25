@@ -1,0 +1,84 @@
+{
+ "job": "e1_n_16",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "süß.",
+    "Deine Kinder sind sehr süß!"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "dort.",
+    "Er studiert dort."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "noch.",
+    "Sie ist noch in Korea."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Vater, Mutter, Bruder, Schwester"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Tochter, Lehrer, Partner"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Väter, Mütter, Brüder"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Mein Bruder und meine Schwester wohnen in Hamburg."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Ich möchte einen Kaffee, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Was kostet das?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Ein Kilo Äpfel, bitte."
+   ]
+  }
+ ],
+ "script": "Also. [pause] süß. Deine Kinder sind sehr süß! [pause] dort. Er studiert dort. [pause] noch. Sie ist noch in Korea. [pause] Vater, Mutter, Bruder, Schwester [pause] Tochter, Lehrer, Partner [pause] Väter, Mütter, Brüder [pause] Mein Bruder und meine Schwester wohnen in Hamburg. [pause] Ich möchte einen Kaffee, bitte. [pause] Was kostet das? [pause] Ein Kilo Äpfel, bitte. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

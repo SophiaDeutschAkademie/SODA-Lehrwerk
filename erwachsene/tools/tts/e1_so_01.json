@@ -1,0 +1,81 @@
+{
+ "job": "e1_so_01",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "Sora",
+   "parts": [
+    "Und ich bin Sora Lee. Ich wohne auch in Frankfurt."
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "Sora",
+   "parts": [
+    "Guten Abend, Frau Becker!"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Sora",
+   "parts": [
+    "Meine Nummer ist null, eins, sieben, sechs, null, vier, null, sechs, neun, null, drei, sieben."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Sora",
+   "parts": [
+    "sora, Bindestrich, lee, at, example, Punkt, com."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "Sora",
+   "parts": [
+    "Nein, ich arbeite jetzt nicht. Ich bin Designerin von Beruf."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Sora",
+   "parts": [
+    "Ja, mein Mann und meine Tochter sind auch hier."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Sora",
+   "parts": [
+    "Sie ist acht Jahre alt. Sie heißt Hana."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Sora",
+   "parts": [
+    "Ja, er ist Informatiker. Seine Firma ist in Frankfurt."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Sora",
+   "parts": [
+    "Ja, sie lernt Deutsch in der Schule. Und ihre Lehrerin ist sehr nett."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Sora",
+   "parts": [
+    "Mein Mann heißt Minho und meine Tochter heißt Hana."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und ich bin Sora Lee. Ich wohne auch in Frankfurt. [pause] Guten Abend, Frau Becker! [pause] Meine Nummer ist null, eins, sieben, sechs, null, vier, null, sechs, neun, null, drei, sieben. [pause] sora, Bindestrich, lee, at, example, Punkt, com. [pause] Nein, ich arbeite jetzt nicht. Ich bin Designerin von Beruf. [pause] Ja, mein Mann und meine Tochter sind auch hier. [pause] Sie ist acht Jahre alt. Sie heißt Hana. [pause] Ja, er ist Informatiker. Seine Firma ist in Frankfurt. [pause] Ja, sie lernt Deutsch in der Schule. Und ihre Lehrerin ist sehr nett. [pause] Mein Mann heißt Minho und meine Tochter heißt Hana. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

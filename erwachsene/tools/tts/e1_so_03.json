@@ -1,0 +1,53 @@
+{
+ "job": "e1_so_03",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a1-1/5",
+   "who": "Sora",
+   "parts": [
+    "Meine Tochter isst kein Fleisch. Ist das ein Problem?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Sora",
+   "parts": [
+    "Sehr gut. Und die Betreuung am Nachmittag?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Sora",
+   "parts": [
+    "Also bis vier. Vielen Dank!"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Sora",
+   "parts": [
+    "Ich stehe um halb sieben auf. Dann frühstücke ich mit Hana und Minho."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Sora",
+   "parts": [
+    "Um Viertel vor acht fährt Hana in die Schule. Mein Deutschkurs fängt um neun an."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Sora",
+   "parts": [
+    "Am Nachmittag kaufe ich ein und koche. Am Abend sehen wir zusammen fern."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Meine Tochter isst kein Fleisch. Ist das ein Problem? [pause] Sehr gut. Und die Betreuung am Nachmittag? [pause] Also bis vier. Vielen Dank! [pause] Ich stehe um halb sieben auf. Dann frühstücke ich mit Hana und Minho. [pause] Um Viertel vor acht fährt Hana in die Schule. Mein Deutschkurs fängt um neun an. [pause] Am Nachmittag kaufe ich ein und koche. Am Abend sehen wir zusammen fern. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

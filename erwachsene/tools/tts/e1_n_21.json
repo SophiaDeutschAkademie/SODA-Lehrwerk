@@ -1,0 +1,82 @@
+{
+ "job": "e1_n_21",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "etwas.",
+    "Möchten Sie noch etwas?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "ein Euro, fünfzig Cent."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "zwei Euro fünfzig, drei Euro neunundneunzig."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "sieben Euro neunzig, zwölf Euro vierzig."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "hundert Gramm, ein Kilo, ein Pfund."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Käse, Äpfel, Bäckerei"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Brötchen, möchten, zwölf"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Gemüse, günstig, fünf, Tschüss"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Ich möchte fünf Brötchen und Käse."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Es ist halb neun."
+   ]
+  }
+ ],
+ "script": "Also. [pause] etwas. Möchten Sie noch etwas? [pause] ein Euro, fünfzig Cent. [pause] zwei Euro fünfzig, drei Euro neunundneunzig. [pause] sieben Euro neunzig, zwölf Euro vierzig. [pause] hundert Gramm, ein Kilo, ein Pfund. [pause] Käse, Äpfel, Bäckerei [pause] Brötchen, möchten, zwölf [pause] Gemüse, günstig, fünf, Tschüss [pause] Ich möchte fünf Brötchen und Käse. [pause] Es ist halb neun. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

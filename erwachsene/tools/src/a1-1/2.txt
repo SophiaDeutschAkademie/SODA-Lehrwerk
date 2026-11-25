@@ -1,0 +1,328 @@
+@id a1-1/2
+
+== ziel
+bild: A small kitchen of a shared flat in the evening. JIU and LENA sit across from each other at a small wooden table with two mugs and an open laptop, they talk and smile.
+alt: 셰어하우스 부엌 식탁에서 Jiu와 Lena가 차를 마시며 이야기하고 있어요.
+lead: 서로 이름을 알았으니 이제 무슨 일을 하는지 이야기해요. Jiu는 집에서, Dohyun은 회사에서, Sora는 어학원 사무실에서 자기 이야기를 하고 연락처를 알려 줘요.
+mission: 이 과를 마치면 직업이나 전공, 할 줄 아는 언어를 말하고 전화번호와 이메일 주소를 주고받을 수 있어요.
+wort: Ich bin Ingenieur. | 저는 엔지니어예요.
+wort: Ich studiere Informatik. | 저는 컴퓨터공학을 전공해요.
+wort: Ich spreche Englisch. | 저는 영어를 해요.
+wort: Wie ist Ihre Telefonnummer? | 전화번호가 어떻게 되세요?
+mc: '저는 일하지 않아요'는 독일어로 어떻게 말할까요? | Ich arbeite nicht.* | Ich nicht arbeite. | Nicht ich arbeite. => nicht는 동사 앞이 아니라 뒤에 와요.
+mc: 23은 독일어로 어떻게 읽을까요? | dreiundzwanzig* | zwanzigunddrei | zweidrei => 독일어는 일의 자리를 먼저 말해요. '3 그리고 20'이에요.
+
+== hoeren
+-- dialog A | In der WG-Küche | 저녁, Jiu가 사는 셰어하우스(WG)의 부엌이에요. 같이 사는 Lena가 Jiu에게 이것저것 물어요.
+vor: 들으면서 찾아보세요. Lena는 무엇을 전공하나요?
+Lena: Jiu, was machst du in Frankfurt? Arbeitest du hier? | Jiu 씨, 프랑크푸르트에서 뭐 해요? 여기서 일해요?
+Jiu: Nein, ich arbeite nicht. Ich lerne Deutsch. | 아니요, 일하지 않아요. 독일어를 배워요.
+Lena: Und dann? Studierst du hier? | 그다음에는요? 여기서 대학에 다녀요?
+Jiu: Ja, dann studiere ich Informatik. Und du? Was studierst du? | 네, 그다음에 컴퓨터공학을 공부해요. Lena 씨는요? 뭘 전공해요?
+Lena: Ich studiere Biologie. Sprichst du Englisch? | 저는 생물학을 전공해요. 영어 해요?
+Jiu: Ja, ich spreche Englisch und ein bisschen Deutsch. | 네, 영어를 하고 독일어도 조금 해요.
+Lena: Dein Deutsch ist schon gut! | 독일어 벌써 잘하는데요!
+Jiu: Danke! Sprichst du auch Koreanisch? | 고마워요! Lena 씨는 한국어도 해요?
+Lena: Nein, leider nicht. Aber ich lerne gern Sprachen. | 아니요, 아쉽게도 못 해요. 그렇지만 언어 배우는 걸 좋아해요.
+
+-- dialog B | In der Kaffeeküche | 회사 탕비실이에요. Markus가 Dohyun에게 팀 사람들 이야기를 해 줘요.
+vor: 들으면서 찾아보세요. Frau Hoffmann은 몇 개 언어를 하나요?
+Markus: Dohyun, was bist du von Beruf? Bist du Informatiker? | 도현 씨, 직업이 뭐예요? 컴퓨터 전문가예요?
+Dohyun: Nein, ich bin Ingenieur. Und du? | 아니요, 저는 엔지니어예요. Markus 씨는요?
+Markus: Ich bin auch Ingenieur. Wir arbeiten zusammen im Team von Frau Hoffmann. | 저도 엔지니어예요. 우리는 Frau Hoffmann 팀에서 함께 일해요.
+Dohyun: Kommt Frau Hoffmann aus Frankfurt? | Frau Hoffmann은 프랑크푸르트 출신이에요?
+Markus: Nein, sie kommt aus Köln. Sie spricht Deutsch, Englisch und Französisch. | 아니요, 쾰른 출신이에요. 독일어, 영어, 프랑스어를 해요.
+Dohyun: Drei Sprachen! Und die Kollegen? Sprechen sie Englisch? | 세 개 언어나요! 다른 동료들은요? 영어를 해요?
+Markus: Ja, alle sprechen Englisch. Aber wir sprechen hier meistens Deutsch. | 네, 모두 영어를 해요. 그렇지만 여기서는 대부분 독일어로 말해요.
+Dohyun: Ich spreche noch nicht gut Deutsch. Aber ich lerne. | 저는 아직 독일어를 잘 못해요. 그렇지만 배우고 있어요.
+Markus: Kein Problem! Du lernst schnell. | 문제없어요! 금방 배울 거예요.
+
+-- dialog C | Im Kursbüro | 어학원 사무실이에요. 직원 Frau Wagner가 Sora의 연락처를 물어요. | Frau=Frau Wagner
+vor: 들으면서 찾아보세요. Sora는 지금 일을 하나요?
+Frau: Guten Tag, Frau Lee. Wie ist Ihre Telefonnummer, bitte? | 안녕하세요, Frau Lee. 전화번호가 어떻게 되세요?
+Sora: Meine Nummer ist null, eins, sieben, sechs, null, vier, null, sechs, neun, null, drei, sieben. | 제 번호는 0176 04069037이에요.
+Frau: Danke. Und wie ist Ihre E-Mail-Adresse? | 감사합니다. 이메일 주소는 어떻게 되세요?
+Sora: sora, Bindestrich, lee, at, example, Punkt, com. | sora-lee@example.com이에요.
+Frau: Wie bitte? Langsam, bitte. | 뭐라고요? 천천히 말씀해 주세요.
+Sora: sora, Bindestrich, lee, at, example, Punkt, com. | sora-lee@example.com이에요.
+Frau: Danke schön. Arbeiten Sie in Frankfurt, Frau Lee? | 감사합니다. Frau Lee, 프랑크푸르트에서 일하세요?
+Sora: Nein, ich arbeite jetzt nicht. Ich bin Designerin von Beruf. | 아니요, 지금은 일하지 않아요. 제 직업은 디자이너예요.
+Frau: Ah, interessant. Vielen Dank, Frau Lee. Bis morgen! | 아, 그렇군요. 감사합니다, Frau Lee. 내일 뵙겠습니다!
+
+-- fragen 세 대화를 듣고 답하세요.
+mc: Jiu는 프랑크푸르트에서 무엇을 하나요? | 독일어를 배워요* | 회사에서 일해요 | 생물학을 전공해요
+mc: Lena는 무엇을 전공하나요? | Biologie* | Informatik | Koreanisch
+rf: Dohyun ist Ingenieur. | r
+rf: Frau Hoffmann kommt aus Frankfurt. | f => Frau Hoffmann은 쾰른(Köln) 출신이에요.
+mc: Frau Hoffmann은 몇 개 언어를 하나요? | drei* | zwei | vier
+rf: Die Kollegen sprechen Englisch. | r
+mc: Sora의 이메일 주소는 무엇인가요? | sora-lee@example.com* | sora.lee@example.com | soralee@example.com => Bindestrich는 붙임표(-), Punkt는 점이에요.
+rf: Sora arbeitet jetzt nicht. | r
+
+-- kultur 전화번호, 이메일, 주소는 이렇게 말하고 써요
+p: 전화번호는 숫자를 하나씩 읽어도 되고 두 자리씩 묶어 읽어도 돼요. 독일 사람이 두 자리씩 빠르게 읽으면 받아 적기 어려워요. 그럴 때는 Wie bitte? Langsam, bitte.라고 다시 물어요. 내 번호는 하나씩 읽는 편이 안전해요.
+p: 이메일 주소에서 @는 at, 점은 Punkt, 붙임표는 Bindestrich라고 읽어요. 밑줄은 Unterstrich예요. 한국 이름은 낯설어서 철자까지 불러 줘야 할 때가 많아요.
+p: 주소는 한국과 순서가 반대예요. 길 이름과 번지를 먼저 쓰고, 그다음에 우편번호와 도시를 써요. 서식 견본에는 Musterstraße 12, 60487 Frankfurt am Main처럼 적혀 있어요. Musterstraße는 '견본 길'이라는 뜻으로, 예시에 쓰는 가짜 주소예요.
+mc: 이메일 주소의 @는 독일어로 어떻게 읽을까요? | at* | Punkt | Bindestrich
+
+== wortschatz
+-- gruppe Beruf und Studium | 직업과 전공
+der Beruf, die Berufe | 직업 | Was sind Sie von Beruf? | 직업이 무엇인가요?
+arbeiten | 일하다 | Ich arbeite bei Kessler Technik. | 저는 Kessler Technik에서 일해요.
+studieren | 대학에서 공부하다, 전공하다 | Lena studiert Biologie. | Lena는 생물학을 전공해요.
+lernen | 배우다 | Wir lernen Deutsch. | 우리는 독일어를 배워요.
+der Ingenieur, die Ingenieure | 엔지니어 (남자) | Dohyun ist Ingenieur. | Dohyun은 엔지니어예요.
+die Ingenieurin, die Ingenieurinnen | 엔지니어 (여자) | Sie ist Ingenieurin von Beruf. | 그녀의 직업은 엔지니어예요.
+der Student, die Studenten | 대학생 (남자) | Er ist Student in Frankfurt. | 그는 프랑크푸르트에서 대학에 다녀요.
+die Studentin, die Studentinnen | 대학생 (여자) | Lena ist Studentin. | Lena는 대학생이에요.
+der Lehrer, die Lehrer | 교사 (남자) | Herr Braun ist Lehrer. | Herr Braun은 교사예요.
+die Lehrerin, die Lehrerinnen | 교사 (여자) | Frau Becker ist Lehrerin. | Frau Becker는 교사예요.
+der Arzt, die Ärzte | 의사 (남자) | Er ist Arzt in Mainz. | 그는 마인츠에서 의사로 일해요.
+die Ärztin, die Ärztinnen | 의사 (여자) | Sie ist Ärztin. | 그녀는 의사예요.
+die Firma, die Firmen | 회사 | Die Firma heißt Kessler Technik. | 회사 이름은 Kessler Technik이에요.
+das Büro, die Büros | 사무실 | Markus ist im Büro. | Markus는 사무실에 있어요.
+die Universität, die Universitäten | 대학교 | Die Universität ist in Frankfurt. | 그 대학교는 프랑크푸르트에 있어요.
+das Team, die Teams | 팀 | Wir sind ein Team. | 우리는 한 팀이에요.
+
+-- gruppe Sprachen | 언어
+sprechen (du sprichst, er spricht) | 말하다 | Ich spreche Koreanisch und Englisch. | 저는 한국어와 영어를 해요.
+die Sprache, die Sprachen | 언어 | Frau Hoffmann spricht drei Sprachen. | Frau Hoffmann은 세 개 언어를 해요.
+Deutsch | 독일어 | Wir sprechen hier Deutsch. | 여기서는 독일어로 말해요.
+Englisch | 영어 | Sprechen Sie Englisch? | 영어 하세요?
+Koreanisch | 한국어 | Sprichst du Koreanisch? | 한국어 해요?
+ein bisschen | 조금 | Ich spreche ein bisschen Deutsch. | 저는 독일어를 조금 해요.
+gut | 잘, 좋은 | Dein Deutsch ist gut! | 독일어 잘하네요!
+nicht | ~하지 않다, ~이 아니다 | Ich arbeite nicht. | 저는 일하지 않아요.
+noch nicht | 아직 ~ 아니다 | Ich spreche noch nicht gut Deutsch. | 저는 아직 독일어를 잘하지 못해요.
+leider | 아쉽게도 | Nein, leider nicht. | 아니요, 아쉽게도 아니에요.
+
+-- gruppe Kontakt | 연락처
+die Telefonnummer, die Telefonnummern | 전화번호 | Wie ist Ihre Telefonnummer? | 전화번호가 어떻게 되세요?
+die Handynummer, die Handynummern | 휴대폰 번호 | Wie ist deine Handynummer? | 휴대폰 번호가 뭐예요?
+die E-Mail-Adresse, die E-Mail-Adressen | 이메일 주소 | Wie ist Ihre E-Mail-Adresse? | 이메일 주소가 어떻게 되세요?
+die Adresse, die Adressen | 주소 | Meine Adresse ist Musterstraße 12. | 제 주소는 Musterstraße 12예요. | say=Meine Adresse ist Musterstraße zwölf.
+die Straße, die Straßen | 길, 거리 | Die Straße heißt Musterstraße. | 길 이름은 Musterstraße예요.
+die Postleitzahl, die Postleitzahlen | 우편번호 | Die Postleitzahl ist 60487. | 우편번호는 60487이에요. | say=Die Postleitzahl ist sechs, null, vier, acht, sieben.
+die Zahl, die Zahlen | 숫자 | Die Zahl ist zwölf. | 그 숫자는 12예요.
+zusammen | 함께 | Wir arbeiten zusammen. | 우리는 함께 일해요.
+alle | 모두 | Alle sprechen Englisch. | 모두 영어를 해요.
+was | 무엇 | Was studierst du? | 무엇을 전공해요?
+hier | 여기 | Arbeitest du hier? | 여기서 일해요?
+
+-- bilder
+der Ingenieur, die Ingenieure: a man in a shirt who stands at a desk with a laptop and a large technical drawing, full body
+die Ärztin, die Ärztinnen: a woman doctor in a white coat with a stethoscope around her neck, full body
+die Lehrerin, die Lehrerinnen: a woman teacher who stands next to a blank whiteboard and points at it with one hand, full body
+die Studentin, die Studentinnen: a young woman with a backpack who carries two books under her arm, full body
+das Büro, die Büros: an office desk with a computer monitor, a keyboard, a desk lamp and an office chair
+die Firma, die Firmen: a modern office building with many windows and a small tree in front of it
+
+-- tafel Die Zahlen von 0 bis 100 | 숫자 0부터 100까지
+p: 줄을 누르면 소리가 나요. 13부터 19까지는 -zehn으로 끝나요. 21부터는 일의 자리를 먼저 말하고 und로 이어요. 21은 einundzwanzig, 곧 '1 그리고 20'이에요. 30은 dreißig라고 쓰고, 나머지 십의 자리는 -zig로 끝나요.
+r: 0 null ; 1 eins ; 2 zwei ; 3 drei ; 4 vier | say=null, eins, zwei, drei, vier.
+r: 5 fünf ; 6 sechs ; 7 sieben ; 8 acht ; 9 neun | say=fünf, sechs, sieben, acht, neun.
+r: 10 zehn ; 11 elf ; 12 zwölf ; 13 dreizehn | say=zehn, elf, zwölf, dreizehn.
+r: 14 vierzehn ; 15 fünfzehn ; 16 sechzehn | say=vierzehn, fünfzehn, sechzehn.
+r: 17 siebzehn ; 18 achtzehn ; 19 neunzehn | say=siebzehn, achtzehn, neunzehn.
+r: 20 zwanzig ; 30 dreißig ; 40 vierzig ; 50 fünfzig | say=zwanzig, dreißig, vierzig, fünfzig.
+r: 60 sechzig ; 70 siebzig ; 80 achtzig ; 90 neunzig | say=sechzig, siebzig, achtzig, neunzig.
+r: 21 einundzwanzig ; 22 zweiundzwanzig | say=einundzwanzig, zweiundzwanzig.
+r: 34 vierunddreißig ; 58 achtundfünfzig | say=vierunddreißig, achtundfünfzig.
+r: 99 neunundneunzig ; 100 hundert | say=neunundneunzig, hundert.
+
+-- aussprache Z | 영어 z와 다른 소리 [ts]
+p: 독일어의 z는 t와 s를 붙여 한 번에 내는 소리예요. 혀끝을 윗잇몸에 댔다가 떼면서 '츠' 하고 짧고 세게 내요. 영어 zoo의 부드러운 z처럼 내지 않아요.
+p: 숫자에 이 소리가 많아요. zwei, zehn, zwölf, zwanzig를 말할 때 특히 주의해요. 표준 발음에서 -zig의 g는 ich의 ch처럼 소리 나요.
+hör: zwei, zehn, zwölf, zwanzig | 낱말 첫머리의 z
+hör: vierzig, fünfzig, sechzig | -zig로 끝나는 숫자
+hör: die Zahl, die Postleitzahl | 명사 속의 z
+hör: Zweiundzwanzig plus zehn ist zweiunddreißig. | z가 여러 번 나오는 문장
+
+== grammatik
+-- punkt Präsens | 주어에 따라 달라지는 동사, 여섯 가지 모두
+bsp: Lena *studiert* Biologie. | Lena는 생물학을 전공해요.
+bsp: Wir *arbeiten* zusammen. | 우리는 함께 일해요.
+bsp: Alle *sprechen* Englisch. | 모두 영어를 해요.
+finde: er나 sie처럼 다른 한 사람이 주어일 때 동사는 어떻게 끝나나요? | -t* | -en | -e
+regel: 1과에서 ich, du, Sie를 배웠어요. 다른 사람 이야기를 할 때 남자는 er, 여자는 sie로 받고 동사는 -t로 끝나요. wir(우리)와 sie(그들)는 Sie처럼 -en, ihr(너희)는 -t예요.
+| | lernen | arbeiten | sprechen
+| ich | lern*e* | arbeit*e* | sprech*e*
+| du | lern*st* | arbeit*est* | spr*i*ch*st*
+| er, sie | lern*t* | arbeit*et* | spr*i*ch*t*
+| wir | lern*en* | arbeit*en* | sprech*en*
+| ihr | lern*t* | arbeit*et* | sprech*t*
+| sie, Sie | lern*en* | arbeit*en* | sprech*en*
+merke: arbeiten처럼 어간이 -t로 끝나면 발음하기 쉽게 e를 넣어요. sprechen은 du와 er, sie에서 e가 i로 바뀌어요. 이런 동사는 5과에서 더 배워요. sein은 ich bin, du bist, er ist, wir sind, ihr seid, sie sind예요.
+
+-- punkt Ja-/Nein-Fragen | 네, 아니요로 답하는 질문
+bsp: *Arbeitest* du hier? – Nein. | 여기서 일해요? – 아니요.
+bsp: *Sprechen* Sie Englisch? – Ja. | 영어 하세요? – 네.
+bsp: *Kommt* Frau Hoffmann aus Frankfurt? – Nein, aus Köln. | Frau Hoffmann은 프랑크푸르트 출신이에요? – 아니요, 쾰른 출신이에요.
+finde: 네, 아니요로 답하는 질문은 무엇으로 시작하나요? | 동사* | 의문사 | 주어
+regel: 의문사가 없는 질문은 동사가 맨 앞에 와요. 주어는 바로 뒤에 와요. 문장 끝을 올려서 말해요.
+| 1 동사 | 2 주어 | 나머지
+| Arbeitest | du | hier?
+| Sprechen | Sie | Englisch?
+| Kommt | Frau Hoffmann | aus Frankfurt?
+merke: 한국어는 문장 끝만 바꾸면 질문이 되지만 독일어는 동사와 주어의 자리를 바꿔요. Sie sprechen Englisch. → Sprechen Sie Englisch?
+
+-- punkt nicht | '아니다'를 만드는 말
+bsp: Ich arbeite *nicht*. | 저는 일하지 않아요.
+bsp: Frau Hoffmann kommt *nicht* aus Frankfurt. | Frau Hoffmann은 프랑크푸르트 출신이 아니에요.
+bsp: Ich spreche noch *nicht* gut Deutsch. | 저는 아직 독일어를 잘하지 못해요.
+finde: Ich arbeite nicht.에서 nicht는 어디에 있나요? | 동사 뒤* | 동사 앞 | 주어 앞
+regel: nicht는 동사 뒤에 와요. 뒤에 다른 말이 없으면 문장 끝에 와요. aus Frankfurt, in Mainz, gut처럼 장소나 상태를 나타내는 말이 있으면 그 앞에 와요.
+| 긍정 | 부정
+| Ich arbeite. | Ich arbeite *nicht*.
+| Sie kommt aus Köln. | Sie kommt *nicht* aus Köln.
+| Er wohnt in Mainz. | Er wohnt *nicht* in Mainz.
+| Das ist richtig. | Das ist *nicht* richtig.
+merke: 한국어 '안'은 동사 앞에 오지만 nicht는 동사 앞에 오지 않아요. Ich nicht arbeite.는 틀린 문장이에요. 명사를 부정하는 kein은 4과에서 배워요.
+
+== training
+-- ex Hören | 숫자를 듣고 알맞은 것을 고르세요.
+hör: N: dreiundvierzig
+mc: 어떤 숫자인가요? | 43* | 34 | 430
+hör: N: siebzehn
+mc: 어떤 숫자인가요? | 17* | 70 | 71
+hör: N: achtundsechzig
+mc: 어떤 숫자인가요? | 68* | 86 | 608
+hör: Markus: Meine Nummer ist null, sechs, neun, neun, null, null, null, neun, eins, eins, acht.
+mc: Markus의 전화번호는 무엇인가요? | 069 90009118* | 069 90009181 | 069 90000118
+
+-- ex Hören | 이메일 주소를 듣고 알맞은 것을 고르세요.
+hör: Lena: lena, Punkt, schmidt, at, example, Punkt, org
+mc: 어떤 주소인가요? | lena.schmidt@example.org* | lena-schmidt@example.org | lenaschmidt@example.org
+hör: Markus: m, Bindestrich, weber, at, example, Punkt, com
+mc: 어떤 주소인가요? | m-weber@example.com* | m.weber@example.com | mweber@example.com
+
+-- ex Lesen | 명함을 읽고, 맞으면 richtig, 틀리면 falsch를 고르세요. GmbH는 회사 형태를 나타내는 말이에요.
+text karte | Visitenkarte
+> Dohyun Park
+> Ingenieur
+> Kessler Technik GmbH
+> Musterstraße 12, 60487 Frankfurt am Main
+> Telefon: 069 90009-124
+> E-Mail: dohyun.park@example.org
+rf: Herr Park ist Ingenieur. | r
+rf: Die Firma heißt Kessler Technik. | r
+rf: Herr Park arbeitet in Mainz. | f => 회사는 Frankfurt am Main에 있어요.
+rf: Die Postleitzahl ist 60487. | r
+rf: Die Telefonnummer ist 069 90009-142. | f => 명함의 번호는 069 90009-124예요.
+
+-- ex Grammatik | 알맞은 동사 형태를 고르세요.
+gap: Lena [studiert|studiere|studieren] Biologie.
+gap: Wir [lernen|lernt|lerne] Deutsch.
+gap: [Sprichst|Sprecht|Spricht] du Englisch?
+gap: Markus und Dohyun [arbeiten|arbeitet|arbeite] zusammen.
+gap: Frau Hoffmann [spricht|sprecht|sprechen] drei Sprachen.
+gap: [Seid|Sind|Bist] ihr Studenten?
+
+-- ex Grammatik | 낱말을 순서대로 눌러 질문을 만드세요.
+ord: sprechen / Sie / Englisch? | 영어 하세요?
+ord: arbeitest / du / in Frankfurt? | 프랑크푸르트에서 일해요?
+ord: kommt / Markus / aus Hamburg? | Markus는 함부르크 출신이에요?
+ord: ist / Lena / Studentin? | Lena는 대학생이에요?
+
+-- ex Grammatik | 낱말을 순서대로 눌러 부정하는 문장을 만드세요.
+ord: ich / arbeite / nicht. | 저는 일하지 않아요.
+ord: sie / kommt / nicht / aus Köln. | 그녀는 쾰른 출신이 아니에요.
+ord: das / ist / nicht / richtig. | 그것은 맞지 않아요.
+ord: er / wohnt / nicht / in Mainz. | 그는 마인츠에 살지 않아요.
+
+-- ex Wortschatz | 계산한 답을 독일어 숫자로 쓰세요.
+gap: zwanzig + drei = [=dreiundzwanzig]
+gap: dreißig + zehn = [=vierzig]
+gap: fünfzig + fünfzig = [=hundert/einhundert]
+gap: siebzig – drei = [=siebenundsechzig]
+
+-- ex Wortschatz | 남자를 가리키는 말과 여자를 가리키는 말을 짝지으세요.
+paar: der Student = die Studentin ; der Arzt = die Ärztin ; der Lehrer = die Lehrerin ; der Ingenieur = die Ingenieurin ; der Kollege = die Kollegin
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Jiu: Ich spreche ein bisschen Deutsch. | 저는 독일어를 조금 해요.
+dik: Markus: Wir arbeiten zusammen. | 우리는 함께 일해요.
+dik: Frau: Wie ist Ihre Telefonnummer? | 전화번호가 어떻게 되세요?
+
+== aufgabe
+-- redemittel
+직업 묻기: Was sind Sie von Beruf? / Was bist du von Beruf? | 직업이 무엇인가요? ; Was machen Sie beruflich? | 무슨 일을 하세요?
+직업 말하기 (관사 없이): Ich bin Ingenieur. / Ich bin Ingenieurin. | 저는 엔지니어예요. ; Ich arbeite bei … | 저는 …에서 일해요. ; Ich arbeite jetzt nicht. | 지금은 일하지 않아요.
+전공 묻고 말하기: Was studierst du? | 무엇을 전공해요? ; Ich studiere Informatik. | 저는 컴퓨터공학을 전공해요. ; Ich lerne Deutsch. | 저는 독일어를 배워요.
+언어 묻고 말하기: Sprechen Sie Englisch? / Sprichst du Englisch? | 영어 하세요? ; Ich spreche Koreanisch, Englisch und ein bisschen Deutsch. | 저는 한국어와 영어를 하고 독일어를 조금 해요.
+연락처 묻고 말하기: Wie ist Ihre Telefonnummer? / Wie ist deine Handynummer? | 전화번호가 어떻게 되세요? ; Wie ist Ihre E-Mail-Adresse? | 이메일 주소가 어떻게 되세요? ; Meine Nummer ist … | 제 번호는 …예요.
+다시 묻기: Wie bitte? Langsam, bitte. | 뭐라고요? 천천히 말해 주세요. ; Noch einmal, bitte. | 한 번 더 말해 주세요.
+
+--S rolle A | Jiu, Lena
+
+--B rolle B | Dohyun, Markus
+
+--S projekt Anmeldung zum Deutschkurs | 어학원 수강 신청서예요. 칸을 채우면 아래 서식이 완성돼요. 모두 알파벳과 숫자로 쓰세요. | Anmeldung: Deutschkurs A1.1
+p: 서식에서 Vorname는 이름, Nachname는 성이에요. Studienfach에는 전공이나 앞으로 공부할 분야를 써요. 전화번호와 이메일은 지어낸 것을 써도 괜찮아요.
+feld: vorname | Vorname, 이름 | Minji
+feld: nachname | Nachname, 성 | Choi
+feld: land | Land, 나라 | Korea
+feld: ort | Wohnort, 사는 곳 | Frankfurt
+feld: tel | Telefon, 전화번호 | 0176 04069055
+feld: mail | E-Mail | minji@example.com
+feld: fach | Studienfach, 전공 | Informatik
+feld: spr | Sprachen, 할 줄 아는 언어 | Koreanisch und Englisch
+karte: Vorname = {vorname}
+karte: Nachname = {nachname}
+karte: Land = {land}
+karte: Wohnort = {ort}
+karte: Telefon = {tel}
+karte: E-Mail = {mail}
+karte: Studienfach = {fach}
+karte: Sprachen = {spr}
+satz: Ich heiße {vorname} {nachname} und komme aus {land}.
+satz: Ich wohne in {ort}.
+satz: Ich studiere {fach}.
+satz: Ich spreche {spr}.
+check: 이름과 성을 맞는 칸에 썼나요? ; 전화번호를 독일어 숫자로 소리 내어 읽어 봤나요? ; 이메일 주소의 @와 점을 독일어로 말할 수 있나요? ; Ich studiere 뒤에 관사 없이 전공을 썼나요?
+
+--S sprich Im Kursbüro | 어학원 사무실에서 수강 신청을 해요. 직원 Frau Wagner가 신청서에 적을 내용을 물어요. 직원에게는 Sie로 답하세요. 질문을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요. | Frau=Frau Wagner
+f: Frau: Guten Tag! Wie heißen Sie, bitte? | 안녕하세요! 성함이 어떻게 되세요? => Guten Tag! Ich heiße Minji Choi.
+f: Frau: Woher kommen Sie, Frau Choi? | Frau Choi, 어디에서 오셨어요? => Ich komme aus Korea.
+f: Frau: Arbeiten Sie hier in Frankfurt? | 여기 프랑크푸르트에서 일하세요? => Nein, ich arbeite nicht. Ich lerne Deutsch. Dann studiere ich Informatik.
+f: Frau: Wie ist Ihre Telefonnummer? | 전화번호가 어떻게 되세요? => Meine Nummer ist null, eins, sieben, sechs, null, vier, null, sechs, neun, null, fünf, fünf.
+f: Frau: Und wie ist Ihre E-Mail-Adresse? | 이메일 주소는 어떻게 되세요? => minji, at, example, Punkt, com.
+f: Frau: Vielen Dank, Frau Choi. Bis Montag! | 감사합니다, Frau Choi. 월요일에 뵙겠습니다! => Danke schön! Bis Montag! Auf Wiedersehen!
+
+--B projekt Meine Visitenkarte | 독일어 명함을 만들어요. 칸을 채우면 아래 명함이 완성돼요. 모두 알파벳과 숫자로 쓰세요. | Visitenkarte
+p: 독일 명함에는 보통 이름, 직업이나 직함, 회사, 도시, 전화번호, 이메일을 적어요. 여자는 직업 이름 끝에 -in을 붙여요. 전화번호와 이메일은 지어낸 것을 써도 괜찮아요.
+feld: name | 이름과 성 | Minji Choi
+feld: beruf | 직업 | Ingenieurin
+feld: firma | 회사 | Kessler Technik
+feld: ort | 도시 | Frankfurt
+feld: tel | 전화번호 | 069 90009-131
+feld: mail | 이메일 | m.choi@example.org
+karte: Name = {name}
+karte: Beruf = {beruf}
+karte: Firma = {firma}
+karte: Ort = {ort}
+karte: Telefon = {tel}
+karte: E-Mail = {mail}
+satz: Guten Tag! Mein Name ist {name}.
+satz: Ich bin {beruf} von Beruf.
+satz: Ich arbeite bei {firma} in {ort}.
+satz: Meine Telefonnummer ist {tel}.
+check: 직업 앞에 관사를 쓰지 않았나요? ; 전화번호를 독일어 숫자로 소리 내어 읽어 봤나요? ; 이메일 주소의 @와 점을 독일어로 말할 수 있나요? ; Ich arbeite bei … 문장을 보지 않고 말할 수 있나요?
+
+--B sprich Kontakte austauschen | 업무 행사에서 만난 Herr Schneider와 명함을 주고받아요. 처음 만난 사이니까 Sie로 답하세요. 질문을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요. | Mann=Herr Schneider
+f: Mann: Guten Tag! Mein Name ist Peter Schneider. Wie heißen Sie? | 안녕하세요! 제 이름은 Peter Schneider입니다. 성함이 어떻게 되세요? => Guten Tag, Herr Schneider! Ich heiße Minji Choi.
+f: Mann: Freut mich, Frau Choi! Was sind Sie von Beruf? | 반갑습니다, Frau Choi! 직업이 무엇인가요? => Ich bin Ingenieurin. Ich arbeite bei Kessler Technik.
+f: Mann: Sprechen Sie auch Englisch? | 영어도 하세요? => Ja, ich spreche Koreanisch, Englisch und ein bisschen Deutsch.
+f: Mann: Wie ist Ihre Telefonnummer? | 전화번호가 어떻게 되세요? => Meine Nummer ist null, sechs, neun, neun, null, null, null, neun, eins, drei, eins.
+f: Mann: Und wie ist Ihre E-Mail-Adresse? | 이메일 주소는 어떻게 되세요? => m, Punkt, choi, at, example, Punkt, org.
+f: Mann: Vielen Dank! Auf Wiedersehen! | 감사합니다! 안녕히 가세요! => Danke schön, Herr Schneider! Auf Wiedersehen!
+
+-- kann
+Ich kann meinen Beruf oder mein Studienfach nennen. | 직업이나 전공을 말할 수 있어요.
+Ich kann sagen, welche Sprachen ich spreche. | 내가 할 줄 아는 언어를 말할 수 있어요.
+Ich kann Telefonnummern und E-Mail-Adressen sagen und verstehen. | 전화번호와 이메일 주소를 말하고 알아들을 수 있어요.
+Ich kann bis 100 zählen. | 100까지 셀 수 있어요.
+
+-- tipp 내 번호와 주소를 독일어로 준비해 둬요
+p: 독일에서 처음 몇 달은 전화번호, 이메일, 주소를 말할 일이 아주 많아요. 은행 계좌를 열 때, 인터넷을 신청할 때, 병원을 예약할 때마다 물어봐요.
+p: 내 전화번호와 이메일 주소를 독일어로 적어 두고 막히지 않을 때까지 소리 내어 읽어 보세요. 두 자리 숫자가 헷갈리면 숫자를 하나씩 읽어도 괜찮아요. 직업을 말할 때는 Ich bin Lehrerin.처럼 관사를 넣지 않는다는 것도 함께 기억해요.

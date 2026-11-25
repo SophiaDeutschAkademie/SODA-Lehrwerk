@@ -1,0 +1,89 @@
+{
+ "job": "e1_n_07",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Ich spreche Englisch."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Wie ist Ihre Telefonnummer?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "der Beruf, die Berufe.",
+    "Was sind Sie von Beruf?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "arbeiten.",
+    "Ich arbeite bei Kessler Technik."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "studieren.",
+    "Lena studiert Biologie."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "lernen.",
+    "Wir lernen Deutsch."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "der Ingenieur, die Ingenieure.",
+    "Dohyun ist Ingenieur."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Ingenieurin, die Ingenieurinnen.",
+    "Sie ist Ingenieurin von Beruf."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "der Student, die Studenten.",
+    "Er ist Student in Frankfurt."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "die Studentin, die Studentinnen.",
+    "Lena ist Studentin."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich spreche Englisch. [pause] Wie ist Ihre Telefonnummer? [pause] der Beruf, die Berufe. Was sind Sie von Beruf? [pause] arbeiten. Ich arbeite bei Kessler Technik. [pause] studieren. Lena studiert Biologie. [pause] lernen. Wir lernen Deutsch. [pause] der Ingenieur, die Ingenieure. Dohyun ist Ingenieur. [pause] die Ingenieurin, die Ingenieurinnen. Sie ist Ingenieurin von Beruf. [pause] der Student, die Studenten. Er ist Student in Frankfurt. [pause] die Studentin, die Studentinnen. Lena ist Studentin. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "e1_le_03",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Und wann ist er zu Ende?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Und am Nachmittag?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Du machst viel! Was machst du am Samstag?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Wir gehen am Samstag ins Kino. Kommst du mit?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Um acht."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Was machst du am Samstag?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Wann hast du Unterricht?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Wann stehst du auf?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Was machst du am Nachmittag?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Und was machst du am Wochenende?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und wann ist er zu Ende? [pause] Und am Nachmittag? [pause] Du machst viel! Was machst du am Samstag? [pause] Wir gehen am Samstag ins Kino. Kommst du mit? [pause] Um acht. [pause] Was machst du am Samstag? [pause] Wann hast du Unterricht? [pause] Wann stehst du auf? [pause] Was machst du am Nachmittag? [pause] Und was machst du am Wochenende? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

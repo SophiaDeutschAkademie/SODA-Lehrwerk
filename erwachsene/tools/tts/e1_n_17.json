@@ -1,0 +1,89 @@
+{
+ "job": "e1_n_17",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Wir haben keinen Tofu."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "das Brot, die Brote.",
+    "Ich kaufe ein Brot."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "das Brötchen, die Brötchen.",
+    "Lena nimmt zwei Brötchen."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Käse.",
+    "Der Käse ist sehr gut."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "die Butter.",
+    "Wir haben keine Butter."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "das Ei, die Eier.",
+    "Ich brauche sechs Eier."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "der Apfel, die Äpfel."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "die Banane, die Bananen.",
+    "Ich möchte drei Bananen."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "die Tomate, die Tomaten.",
+    "Was kosten die Tomaten?"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "die Kartoffel, die Kartoffeln.",
+    "Ich esse Kartoffeln mit Butter."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wir haben keinen Tofu. [pause] das Brot, die Brote. Ich kaufe ein Brot. [pause] das Brötchen, die Brötchen. Lena nimmt zwei Brötchen. [pause] der Käse. Der Käse ist sehr gut. [pause] die Butter. Wir haben keine Butter. [pause] das Ei, die Eier. Ich brauche sechs Eier. [pause] der Apfel, die Äpfel. [pause] die Banane, die Bananen. Ich möchte drei Bananen. [pause] die Tomate, die Tomaten. Was kosten die Tomaten? [pause] die Kartoffel, die Kartoffeln. Ich esse Kartoffeln mit Butter. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

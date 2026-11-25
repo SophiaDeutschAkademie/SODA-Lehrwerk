@@ -1,0 +1,25 @@
+{
+ "job": "e1_be_02",
+ "who": "Becker",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a1-1/3",
+   "who": "Becker",
+   "parts": [
+    "Lernt Ihre Tochter auch Deutsch?"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "Becker",
+   "parts": [
+    "Das ist schön!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Lernt Ihre Tochter auch Deutsch? [pause] Das ist schön! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}
