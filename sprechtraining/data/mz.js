@@ -374,5 +374,170 @@ window.DIALOG_DATA.MZ = [
         { de: "Mein Bauchgefühl sagt: Das passt.", ko: "내 느낌상으로는 잘 맞을 것 같아." }
       ] }
     ]
+  },
+  {
+    no: 7, lv: "MZ",
+    title: "Der Zug fällt aus", titleKo: "기차가 취소됐어", type: "Unterwegs", typeKo: "이동",
+    intro: "기차가 취소돼 역에 발이 묶인 친구와 기다리는 친구가 전화로 약속 시간을 다시 맞추는 대화예요.",
+    focus: ["'ne · 'nen · Gibt's", "Mensch · Du · Alles klar", "Mach ich · Meld dich"],
+    roles: { A: "Lea", B: "Jonas" },
+    turns: [
+      { r: "A", de: "Hey Jonas, wo steckst du denn? Wir wollten uns doch um sieben treffen.", ko: "야 요나스, 어디야? 우리 7시에 만나기로 했잖아." },
+      { r: "B", de: "Sorry, ich sitz noch am Bahnhof fest. Mein Zug fällt aus, und keiner sagt, was los ist.", ko: "미안, 나 아직 역에 발이 묶여 있어. 내 기차가 취소됐는데 아무도 무슨 일인지 말을 안 해 줘." },
+      { r: "A", de: "Oh nein, nicht schon wieder! Gibt's denn 'ne andere Verbindung?", ko: "아 이런, 또야? 다른 연결편은 없어?" },
+      { r: "B", de: "Der nächste Zug geht erst in vierzig Minuten. Dann bin ich frühestens um acht da.", ko: "다음 기차는 40분 뒤에나 가. 그럼 빨라야 8시에 도착해." },
+      { r: "A", de: "Mensch, das ist ja ärgerlich. Soll ich schon mal 'nen Tisch reservieren?", ko: "아이고, 정말 짜증 나겠다. 내가 먼저 자리를 예약해 둘까?" },
+      { r: "B", de: "Ja, mach das. Aber sag den anderen noch nicht, dass ich zu spät komm. Ich schreib ihnen gleich selbst.", ko: "응, 그렇게 해 줘. 근데 내가 늦는다는 건 다른 애들한테 아직 말하지 마. 내가 곧 직접 쓸게." },
+      { r: "A", de: "Okay. Und hast du wenigstens was zu essen dabei? Bis acht ist das ja ewig.", ko: "알겠어. 그런데 먹을 건 가진 거 있어? 8시까지면 한참이잖아." },
+      { r: "B", de: "Ich hol mir gleich 'ne Brezel am Kiosk. Das reicht erstmal.", ko: "곧 매점에서 브레첼 하나 사 먹을게. 일단은 그거면 돼." },
+      { r: "A", de: "Gut. Ach, und nimm dir lieber 'nen Kaffee mit. Es ist ziemlich kalt draußen.", ko: "좋아. 아 그리고 커피도 하나 들고 가. 밖이 꽤 추워." },
+      { r: "B", de: "Stimmt, danke für den Tipp. Du, ich muss auflegen, die sagen gerade was durch.", ko: "맞네, 알려 줘서 고마워. 있잖아, 나 끊어야 해. 지금 안내 방송이 나와." },
+      { r: "A", de: "Alles klar, viel Glück! Meld dich, wenn du im Zug sitzt.", ko: "알았어, 행운을 빌어! 기차 타면 연락해." },
+      { r: "B", de: "Mach ich. Bis später!", ko: "그럴게. 이따 봐!" }
+    ],
+    umg: [
+      { de: "Hey", t: 1, ko: "안녕 (가벼운 인사)", std: "Hallo", reg: "구어" },
+      { de: "wo steckst du", t: 1, ko: "어디에 있어? (stecken = 있다)", std: "wo bist du", reg: "구어" },
+      { de: "Sorry", t: 2, ko: "미안", std: "Entschuldigung", reg: "구어" },
+      { de: "sitz", t: 2, ko: "sitze의 e 탈락", std: "sitze", reg: "축약" },
+      { de: "Gibt's", t: 3, ko: "gibt es의 축약", std: "Gibt es", reg: "축약" },
+      { de: "'ne", t: [3, 8], ko: "eine의 구어 축약", std: "eine", reg: "축약" },
+      { de: "Mensch", t: 5, ko: "아이고, 야 (놀람·아쉬움)", std: "Das ist wirklich schade.", reg: "추임새" },
+      { de: "'nen", t: [5, 9], ko: "einen의 구어 축약", std: "einen", reg: "축약" },
+      { de: "mach das", t: 6, ko: "그렇게 해 줘", std: "Bitte tu das.", reg: "구어" },
+      { de: "komm", t: 6, ko: "komme의 e 탈락", std: "komme", reg: "축약" },
+      { de: "was zu essen", t: 7, ko: "뭘 좀 먹을 것 (was = etwas)", std: "etwas zu essen", reg: "축약" },
+      { de: "hol mir", t: 8, ko: "나한테 사 오다 (hole의 e 탈락)", std: "hole mir", reg: "축약" },
+      { de: "erstmal", t: 8, ko: "일단, 우선", std: "zunächst", reg: "구어" },
+      { de: "Du,", t: 10, ko: "있잖아 (말을 꺼낼 때)", std: "Hör mal,", reg: "추임새" },
+      { de: "was durch", t: 10, ko: "방송으로 알리다 (was = etwas, durchsagen)", std: "etwas durchgesagt", reg: "구어" },
+      { de: "Alles klar", t: 11, ko: "알았어, 좋아", std: "In Ordnung", reg: "구어" },
+      { de: "Meld dich", t: 11, ko: "연락해 (melde의 e 탈락)", std: "Melde dich", reg: "축약" },
+      { de: "Mach ich", t: 12, ko: "그럴게 (주어 das가 빠짐)", std: "Das mache ich.", reg: "구어" }
+    ],
+    redemittel: [
+      { group: "늦는다고 알리기", items: [
+        { de: "Wo steckst du denn?", ko: "어디야?" },
+        { de: "Ich sitz noch am Bahnhof fest.", ko: "나 아직 역에 발이 묶여 있어." }
+      ] },
+      { group: "대안 찾기", items: [
+        { de: "Gibt's 'ne andere Verbindung?", ko: "다른 연결편은 없어?" },
+        { de: "Dann bin ich frühestens um acht da.", ko: "그럼 빨라야 8시에 도착해." }
+      ] },
+      { group: "연락 주고받기", items: [
+        { de: "Meld dich, wenn du im Zug sitzt.", ko: "기차 타면 연락해." },
+        { de: "Mach ich. Bis später!", ko: "그럴게. 이따 봐!" }
+      ] }
+    ]
+  },
+  {
+    no: 8, lv: "MZ",
+    title: "Das Meeting verschieben", titleKo: "회의 시간 옮기기", type: "Kollegen", typeKo: "직장 동료",
+    intro: "아침 회의가 어려운 동료가 시간을 옮겨 달라고 부탁하고, 다른 사람들에게 알리는 방법을 정하는 대화예요.",
+    focus: ["Hast du mal 'nen Moment?", "halb drei · checken", "Ich mach das schon"],
+    roles: { A: "Sandra", B: "Markus" },
+    turns: [
+      { r: "A", de: "Hast du mal 'nen Moment? Ich hab 'ne Frage wegen morgen.", ko: "잠깐 시간 돼? 내일 일 때문에 물어볼 게 있어." },
+      { r: "B", de: "Klar, schieß los. Was gibt's denn?", ko: "그럼, 말해 봐. 무슨 일인데?" },
+      { r: "A", de: "Unser Meeting um neun passt mir leider nicht. Ich muss morgen früh noch mein Auto in die Werkstatt bringen.", ko: "9시 회의가 나한테는 안 맞아. 내일 아침에 차를 정비소에 맡겨야 하거든." },
+      { r: "B", de: "Kein Problem, wir können das auch verschieben. Wann würd's dir denn besser passen?", ko: "문제없어, 옮겨도 돼. 언제가 더 편해?" },
+      { r: "A", de: "Vielleicht am Nachmittag? So gegen zwei oder halb drei?", ko: "오후는 어때? 2시나 2시 반쯤?" },
+      { r: "B", de: "Zwei ist okay. Aber ich muss kurz checken, ob die anderen da auch können.", ko: "2시 좋아. 근데 다른 사람들도 그때 되는지 잠깐 확인해 봐야 해." },
+      { r: "A", de: "Super, das wär nett. Soll ich 'ne Mail schreiben, oder machst du das?", ko: "좋아, 그래 주면 고맙지. 내가 메일을 쓸까, 아니면 네가 할래?" },
+      { r: "B", de: "Ich mach das schon. Ich schick gleich 'ne Nachricht in die Gruppe.", ko: "내가 할게. 곧 단체방에 메시지 보낼게." },
+      { r: "A", de: "Danke dir! Du rettest mir echt den Tag.", ko: "고마워! 너 덕분에 정말 살았어." },
+      { r: "B", de: "Gern geschehen. Übrigens, hast du schon die Zahlen für die Präsentation?", ko: "별말씀을. 그나저나 발표 자료에 쓸 숫자는 벌써 받았어?" },
+      { r: "A", de: "Noch nicht ganz. Ich warte noch auf die Daten vom Vertrieb, die kommen wohl erst morgen.", ko: "아직 다는 아니야. 영업팀 데이터를 기다리는 중인데, 내일에야 올 것 같아." },
+      { r: "B", de: "Na ja, dann bleibt ja genug Zeit. Bis morgen um zwei also!", ko: "뭐, 그럼 시간은 충분하네. 그럼 내일 2시에 보자!" }
+    ],
+    umg: [
+      { de: "mal 'nen Moment", t: 1, ko: "잠깐 (mal은 부드럽게 만드는 말, 'nen = einen)", std: "einen Moment Zeit", reg: "축약" },
+      { de: "hab", t: 1, ko: "habe의 e 탈락", std: "habe", reg: "축약" },
+      { de: "'ne", t: [1, 7, 8], ko: "eine의 구어 축약", std: "eine", reg: "축약" },
+      { de: "schieß los", t: 2, ko: "말해 봐, 시작해", std: "Sag, worum es geht.", reg: "구어" },
+      { de: "Was gibt's", t: 2, ko: "무슨 일이야? (gibt es의 축약)", std: "Was gibt es?", reg: "구어" },
+      { de: "würd's", t: 4, ko: "würde es의 축약", std: "würde es", reg: "축약" },
+      { de: "halb drei", t: 5, ko: "2시 반 (독일어는 '3시로 가는 반'이라고 말함)", std: "vierzehn Uhr dreißig", reg: "구어" },
+      { de: "checken", t: 6, ko: "확인하다 (영어 check에서 온 말)", std: "überprüfen", reg: "구어" },
+      { de: "wär", t: 7, ko: "wäre의 e 탈락", std: "wäre", reg: "축약" },
+      { de: "Ich mach das schon", t: 8, ko: "내가 할게 (schon = 걱정 마)", std: "Ich übernehme das.", reg: "구어" },
+      { de: "schick", t: 8, ko: "schicke의 e 탈락", std: "schicke", reg: "축약" },
+      { de: "Danke dir", t: 9, ko: "고마워 (dir를 붙여 친근하게)", std: "Danke schön", reg: "구어" },
+      { de: "rettest mir echt den Tag", t: 9, ko: "큰 도움이 됐어 (직역: 내 하루를 구했어)", std: "Du hilfst mir sehr.", reg: "구어" },
+      { de: "Noch nicht ganz", t: 11, ko: "아직 다는 아니야 (주어 생략)", std: "Ich habe sie noch nicht vollständig.", reg: "구어" },
+      { de: "wohl", t: 11, ko: "아마 …일 거야", std: "vermutlich", reg: "구어" },
+      { de: "Na ja", t: 12, ko: "뭐, 글쎄 (망설이거나 받아들일 때)", std: "Nun", reg: "추임새" }
+    ],
+    redemittel: [
+      { group: "부탁하기", items: [
+        { de: "Hast du mal 'nen Moment?", ko: "잠깐 시간 돼?" },
+        { de: "Ich hab 'ne Frage wegen morgen.", ko: "내일 일 때문에 물어볼 게 있어." }
+      ] },
+      { group: "시간 조정하기", items: [
+        { de: "Wann würd's dir besser passen?", ko: "언제가 더 편해?" },
+        { de: "So gegen zwei oder halb drei?", ko: "2시나 2시 반쯤?" }
+      ] },
+      { group: "일 나누기", items: [
+        { de: "Ich mach das schon.", ko: "내가 할게." },
+        { de: "Du rettest mir echt den Tag.", ko: "너 덕분에 정말 살았어." }
+      ] }
+    ]
+  },
+  {
+    no: 9, lv: "MZ",
+    title: "Kochen für Freunde", titleKo: "친구들에게 요리해 주기", type: "Essen", typeKo: "음식",
+    intro: "집에 손님을 초대한 사람이 형제와 메뉴를 정하고, 장보기와 후식을 나누는 대화예요.",
+    focus: ["'ne Menge · Die isst", "Das kriegen wir hin", "wär der Hammer"],
+    roles: { A: "Nina", B: "Felix" },
+    turns: [
+      { r: "A", de: "Du, ich hab am Samstag Leute zum Essen eingeladen. Kannst du mir beim Kochen helfen?", ko: "있잖아, 토요일에 사람들을 식사에 초대했어. 요리하는 거 좀 도와줄래?" },
+      { r: "B", de: "Klar, gern. Wie viele kommen denn?", ko: "물론, 좋아. 몇 명 오는데?" },
+      { r: "A", de: "So acht oder neun. Ich dachte an 'ne Lasagne, die geht immer.", ko: "한 8~9명쯤. 라자냐를 생각했어, 그건 언제나 무난하잖아." },
+      { r: "B", de: "Gute Idee. Aber was ist mit Valentina? Die isst doch kein Fleisch.", ko: "좋은 생각이야. 근데 발렌티나는 어떡해? 걔 고기 안 먹잖아." },
+      { r: "A", de: "Stimmt, daran hab ich gar nicht gedacht. Dann mach ich einfach 'ne zweite mit Spinat und Käse.", ko: "맞다, 그건 전혀 생각 못 했네. 그럼 시금치랑 치즈 넣은 걸 하나 더 만들지 뭐." },
+      { r: "B", de: "Das kriegen wir hin. Hast du denn schon alles zu Hause?", ko: "그건 해낼 수 있어. 근데 재료는 벌써 다 집에 있어?" },
+      { r: "A", de: "Nee, so gut wie nichts. Ich muss noch Hackfleisch, Tomaten und 'ne Menge Käse besorgen.", ko: "아니, 거의 아무것도 없어. 다진 고기, 토마토, 치즈를 잔뜩 사야 해." },
+      { r: "B", de: "Dann fahr ich morgen nach der Arbeit schnell zum Supermarkt. Schreib mir einfach 'ne Liste.", ko: "그럼 내가 내일 퇴근하고 마트에 얼른 갈게. 목록만 하나 써 줘." },
+      { r: "A", de: "Mach ich gleich. Und denk bitte dran, Wein mitzubringen. Rot oder weiß ist egal.", ko: "바로 써 줄게. 그리고 와인 사 오는 것 잊지 마. 레드든 화이트든 상관없어." },
+      { r: "B", de: "Alles klar. Soll ich auch 'nen Nachtisch machen? Ich könnt ja Tiramisu machen.", ko: "알았어. 후식도 내가 만들까? 티라미수를 만들 수도 있겠네." },
+      { r: "A", de: "Oh ja, das wär der Hammer! Aber nur, wenn's dir nicht zu viel wird.", ko: "오 좋아, 그럼 최고지! 근데 너한테 너무 부담이 안 될 때만." },
+      { r: "B", de: "Passt schon, das mach ich gern. Dann wird das ein richtig schöner Abend.", ko: "괜찮아, 기꺼이 할게. 그럼 정말 좋은 저녁이 되겠다." }
+    ],
+    umg: [
+      { de: "Du,", t: 1, ko: "있잖아 (말을 꺼낼 때)", std: "Hör mal,", reg: "추임새" },
+      { de: "hab", t: [1, 5], ko: "habe의 e 탈락", std: "habe", reg: "축약" },
+      { de: "Leute", t: 1, ko: "사람들 (여기서는 손님들)", std: "Gäste", reg: "구어" },
+      { de: "Klar", t: 2, ko: "물론", std: "Natürlich", reg: "구어" },
+      { de: "So acht oder neun", t: 3, ko: "한 8~9명쯤 (so = 대략)", std: "Ungefähr acht oder neun", reg: "구어" },
+      { de: "'ne", t: [3, 5, 7, 8], ko: "eine의 구어 축약", std: "eine", reg: "축약" },
+      { de: "die geht immer", t: 3, ko: "언제나 무난해, 어느 자리에나 어울려", std: "Die passt immer.", reg: "구어" },
+      { de: "Die isst", t: 4, ko: "걔는 먹어 (die = 그 사람을 가리키는 말)", std: "Sie isst", reg: "구어" },
+      { de: "Das kriegen wir hin", t: 6, ko: "우리가 해낼 수 있어", std: "Das schaffen wir.", reg: "구어" },
+      { de: "Nee", t: 7, ko: "아니 (Nein의 구어)", std: "Nein", reg: "구어" },
+      { de: "fahr", t: 8, ko: "fahre의 e 탈락", std: "fahre", reg: "축약" },
+      { de: "Mach ich gleich", t: 9, ko: "바로 할게 (주어 das가 빠짐)", std: "Das mache ich gleich.", reg: "구어" },
+      { de: "denk bitte dran", t: 9, ko: "잊지 말고 기억해 (dran = daran)", std: "denke bitte daran", reg: "축약" },
+      { de: "egal", t: 9, ko: "상관없어", std: "gleichgültig", reg: "구어" },
+      { de: "Alles klar", t: 10, ko: "알았어, 좋아", std: "In Ordnung", reg: "구어" },
+      { de: "'nen", t: 10, ko: "einen의 구어 축약", std: "einen", reg: "축약" },
+      { de: "könnt", t: 10, ko: "könnte의 e 탈락", std: "könnte", reg: "축약" },
+      { de: "wär der Hammer", t: 11, ko: "최고일 거야 (der Hammer = 아주 대단한 것)", std: "wäre fantastisch", reg: "구어" },
+      { de: "wenn's", t: 11, ko: "wenn es의 축약", std: "wenn es", reg: "축약" },
+      { de: "Passt schon", t: 12, ko: "괜찮아", std: "Das ist in Ordnung.", reg: "구어" }
+    ],
+    redemittel: [
+      { group: "초대와 부탁", items: [
+        { de: "Ich hab Leute zum Essen eingeladen.", ko: "사람들을 식사에 초대했어." },
+        { de: "Kannst du mir beim Kochen helfen?", ko: "요리하는 거 도와줄래?" }
+      ] },
+      { group: "메뉴 정하기", items: [
+        { de: "Ich dachte an 'ne Lasagne, die geht immer.", ko: "라자냐를 생각했어, 그건 언제나 무난해." },
+        { de: "Das kriegen wir hin.", ko: "우리가 해낼 수 있어." }
+      ] },
+      { group: "나누어 맡기", items: [
+        { de: "Schreib mir einfach 'ne Liste.", ko: "목록만 하나 써 줘." },
+        { de: "Das wär der Hammer!", ko: "그럼 최고지!" }
+      ] }
+    ]
   }
 ];

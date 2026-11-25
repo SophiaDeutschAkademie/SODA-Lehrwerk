@@ -294,7 +294,7 @@
     }).join('');
     app.innerHTML = '<main id="main" class="page view" tabindex="-1">' + brandTop('#/', '표지') +
       '<div class="sec-h"><span class="kicker">STUFE</span><h1>레벨 선택</h1>' +
-      '<p>A1–C1은 레벨마다 대화가 6개 있어요. 마지막 MZ 챕터에는 독일 젊은 층의 구어체 대화 6개가 있어요. 역할을 나눠 따라 말하고, 문장을 가린 뒤 말해 보고, 녹음해서 원문과 비교해요.</p></div>' +
+      '<p>A1–C1은 레벨마다 대화가 9개 있어요. 마지막 MZ 챕터에는 독일 젊은 층의 구어체 대화 9개가 있어요. 역할을 나눠 따라 말하고, 문장을 가린 뒤 말해 보고, 녹음해서 원문과 비교해요.</p></div>' +
       '<a class="guide-link" href="#/guide"><span><b>이렇게 공부하세요</b><small>이 자료를 가장 잘 활용하는 학습법</small></span>' + ICON.right + '</a>' +
       '<ul class="levels">' + cards + '</ul></main>';
   }
