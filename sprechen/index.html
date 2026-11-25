@@ -54,7 +54,7 @@ try { var th = localStorage.getItem('soda-theme'); document.documentElement.setA
   --exam:#aab6c8;--exam-w:#222f40;
   --ext:#b3a2f0;--ext-w:#2a2547;
   --bad:#f0a0bf;--bad-w:#3a2230;
-  --a1:#8fc3d6;--a2:#7fd0a0;--b1:#6ea8fe;--b2:#b3a2f0;
+  --a1:#8fc3d6;--a2:#7fd0a0;--b1:#6ea8fe;--b2:#b3a2f0;--c1:#5fd0c4;
   --shadow:0 8px 30px rgba(0,0,0,.35);
   --glow-1:rgba(110,168,254,.16);--glow-2:rgba(179,162,240,.12);--demo-a:rgba(28,42,61,.85);--demo-b:rgba(18,27,41,.85);--hi:rgba(255,255,255,.06);
   --font:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
@@ -70,7 +70,7 @@ try { var th = localStorage.getItem('soda-theme'); document.documentElement.setA
   --exam:#4a5568;--exam-w:#eceff3;
   --ext:#5b4b8a;--ext-w:#efecf6;
   --bad:#8a3a5f;--bad-w:#f6ecf1;
-  --a1:#2a6f87;--a2:#2c7a52;--b1:#1f5a9e;--b2:#5b4b8a;
+  --a1:#2a6f87;--a2:#2c7a52;--b1:#1f5a9e;--b2:#5b4b8a;--c1:#1b7a6e;
   --shadow:0 8px 24px rgba(30,50,80,.10);
   --glow-1:rgba(31,90,158,.10);--glow-2:rgba(91,75,138,.08);--demo-a:rgba(255,255,255,.95);--demo-b:rgba(246,248,251,.95);--hi:rgba(255,255,255,.9);
 }
@@ -149,7 +149,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 .cover .exams li{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--ink-2);letter-spacing:.01em;padding:0 14px;border-left:1px solid var(--line)}
 .cover .exams li:first-child{padding-left:0;border-left:0}
 .cover .exams i{width:7px;height:7px;border-radius:50%;background:var(--acc);display:inline-block}
-.cover .exams i.a1{background:var(--a1)}.cover .exams i.a2{background:var(--a2)}.cover .exams i.b1{background:var(--b1)}.cover .exams i.b2{background:var(--b2)}
+.cover .exams i.a1{background:var(--a1)}.cover .exams i.a2{background:var(--a2)}.cover .exams i.b1{background:var(--b1)}.cover .exams i.b2{background:var(--b2)}.cover .exams i.c1{background:var(--c1)}
 .cover .cta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:6px}
 .cover .go{display:inline-flex;align-items:center;gap:10px;font-size:16px;font-weight:700;padding:15px 30px;border-radius:999px;border:0;background:linear-gradient(135deg,var(--acc-2),var(--acc));color:var(--on-acc);box-shadow:0 10px 30px -10px var(--acc),inset 0 1px 0 rgba(255,255,255,.35);transition:transform .2s ease,box-shadow .2s ease}
 .cover .go svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s ease}
@@ -187,7 +187,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 @media (prefers-reduced-motion:reduce){.cover .hero>*,.cover .steps,.cover .fine,.cover .demo .wave i{animation:none}.cover .go,.cover .go svg{transition:none}}
 .lvl{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;background:var(--panel)}
 .lvl i{width:8px;height:8px;border-radius:50%;background:var(--acc);display:inline-block}
-.lvl.a1 i{background:var(--a1)}.lvl.a2 i{background:var(--a2)}.lvl.b1 i{background:var(--b1)}.lvl.b2 i{background:var(--b2)}
+.lvl.a1 i{background:var(--a1)}.lvl.a2 i{background:var(--a2)}.lvl.b1 i{background:var(--b1)}.lvl.b2 i{background:var(--b2)}.lvl.c1 i{background:var(--c1)}
 .login{max-width:420px;margin:24px auto 0}
 .login .mark.small{height:54px;width:auto;display:block}
 .login .org{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
@@ -606,6 +606,7 @@ html.ueb #exHelp>p.kb:first-child{margin-top:0}
         <li><i class="b1"></i>telc B1</li>
         <li><i class="b2"></i>Goethe B2</li>
         <li><i class="b2"></i>telc B2</li>
+        <li><i class="c1"></i>telc C1 Hochschule</li>
       </ul>
       <div class="cta">
         <button class="primary go" id="btnGo" type="button">시작하기<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
@@ -870,7 +871,8 @@ const APP = { /* 에이전트 ID는 accounts.py가 계정별로 암호화합니�
     A1: 'Du sprichst auf A1-Niveau: ganz kurze, einfache Sätze mit drei bis sieben Wörtern, nur Präsens (und in Lektion 10 und 11 einfaches Perfekt und Präteritum von sein und haben), sehr einfache Wörter, langsam und deutlich. Keine Nebensätze, kein Konjunktiv außer „ich möchte“. Pro Beitrag ein kurzer Satz und eine einfache Frage. Frage nie zwei Dinge auf einmal. Sprich sehr langsam und deutlich: Mache nach jedem Satz eine kleine Pause und betone jedes Wort klar. Schreibe jeden Satz einzeln mit Punkt und nenne Zahlen langsam.',
     A2: 'Du sprichst auf A2-Niveau: sehr einfache, kurze Sätze mit fünf bis zehn Wörtern, Präsens und Perfekt, alltägliche Wörter. Nebensätze nur selten (weil, dass). Kein Konjunktiv II außer „ich möchte“ und „wie wäre es“. Pro Beitrag ein bis zwei Sätze.',
     B1: 'Du sprichst auf B1-Niveau: einfache bis mittellange Sätze, Nebensätze mit weil, dass, wenn und obwohl, Perfekt und Präteritum von sein und haben, gelegentlich würde und könnte. Pro Beitrag zwei bis drei Sätze.',
-    B2: 'Du sprichst auf B2-Niveau, aber ruhig und nicht zu schnell: klare Nebensätze (weil, obwohl, dass, wenn, damit), gelegentlich Konjunktiv II (würde, könnte, wäre) und Konnektoren (außerdem, trotzdem, deshalb). Pro Beitrag zwei bis drei Sätze, nur in einer Präsentation etwas länger.'
+    B2: 'Du sprichst auf B2-Niveau, aber ruhig und nicht zu schnell: klare Nebensätze (weil, obwohl, dass, wenn, damit), gelegentlich Konjunktiv II (würde, könnte, wäre) und Konnektoren (außerdem, trotzdem, deshalb). Pro Beitrag zwei bis drei Sätze, nur in einer Präsentation etwas länger.',
+    C1: 'Du sprichst auf C1-Niveau, aber ruhig und gut verständlich: gegliederte, vollständige Sätze mit Nebensätzen, gelegentlich Konjunktiv I und II, Nominalisierungen und Konnektoren (zwar … aber, dennoch, folglich, sofern, hinzu kommt). Du wägst ab und differenzierst. Pro Beitrag drei bis vier Sätze, in einer Präsentation etwas länger.'
   }
 };
 
@@ -3036,6 +3038,180 @@ const EXAMS = [
           '2': ['Kochen Sie selbst gern, und was kochen Sie am häufigsten?', 'Sollte man Kindern in der Schule das Kochen beibringen? Warum (nicht)?']
         })
       ]
+    },
+    /* ====================================================================== Goethe B1 · Modelltest 6 */
+    {
+      id: 'goethe-b1-6', org: 'Goethe', level: 'B1', mdt: 6,
+      name: 'Goethe-Zertifikat B1', short: 'Goethe B1', label: 'Goethe-Zertifikat B1, Modelltest 6',
+      ko: 'Goethe B1 · Sprechen', lead_ko: '함께 계획하고, 5장 발표를 하고, 피드백과 질문으로 이어 갑니다.',
+      teile: [
+        teil1({
+          summary_ko: '시험 4주 전, 파트너와 함께 B1 시험 준비를 계획합니다. 제안하고, 파트너 제안에 반응하고, 함께 결정합니다.',
+          situation: 'Sie und Ihr Partner/Ihre Partnerin möchten sich gemeinsam auf die Prüfung „Zertifikat B1“ vorbereiten. Bis zur Prüfung haben Sie noch vier Wochen Zeit.',
+          title: 'Gemeinsam für die Prüfung lernen',
+          points: ['Wann und wie oft treffen wir uns?', 'Wo lernen wir?', 'Was üben wir?', 'Wer kann uns helfen?'],
+          introSit: 'Sie und Ihr Partner/Ihre Partnerin möchten sich gemeinsam auf die Prüfung „Zertifikat B1“ vorbereiten. Bis zur Prüfung haben Sie noch vier Wochen Zeit.',
+          introWhat: 'das gemeinsame Lernen für die Prüfung.',
+          procWhat: 'das gemeinsame Lernen für die Prüfung',
+          plan: 'das gemeinsame Lernen für die Prüfung „Zertifikat B1“, die in vier Wochen stattfindet',
+          leit: 'Wann und wie oft treffen wir uns? Wo lernen wir? Was üben wir? Wer kann uns helfen?',
+          ideas: 'Du würdest dich gern zweimal pro Woche treffen, zum Beispiel dienstags am späten Nachmittag und samstags vormittags, in der Stadtbibliothek lernen (dort kann man kostenlos Gruppenräume reservieren), bei jedem Treffen einen Prüfungsteil üben und danach eine halbe Stunde nur Deutsch sprechen, die Texte für das Schreiben tauschen und gegenseitig korrigieren, und du fragst eine Nachbarin oder Bekannte, die Deutsch kann, ob sie euch einmal pro Woche hilft.',
+          opener: 'Sollen wir zuerst überlegen, wann und wie oft wir uns treffen?',
+          groups: [/(treffen|wie oft|woche|dienstag|samstag|montag|mittwoch|donnerstag|freitag|sonntag|uhr|wann|abend|vormittag|nachmittag)/, /(bibliothek|zu hause|bei mir|bei dir|café|sprachschule|park|wo lernen|raum|online|videoanruf)/, /(üben|lesen|hören|schreiben|sprechen|grammatik|wortschatz|modelltest|prüfungsteil|texte|vokabeln|wiederholen)/, /(helfen|hilfe|nachbarin|nachbar|lehrer|lehrerin|kurs|freund|korrigier|app|bekannte|muttersprachler)/],
+          topicsKo: '네 가지 Leitpunkt(만남 시간·횟수, 장소, 연습 내용, 도움 줄 사람)를 모두 다뤘다'
+        }),
+        teil2([
+          { id: '1', de: 'Arbeiten im Homeoffice?', hint: '', ko: 'Thema 1 · 재택근무' },
+          { id: '2', de: 'Geschenke: selbst gemacht oder gekauft?', hint: '', ko: 'Thema 2 · 선물: 직접 만든 것 또는 산 것' }
+        ]),
+        teil3([
+          { id: '1', de: 'Arbeiten im Homeoffice?', hint: '', ko: 'Thema 1 · 재택근무' },
+          { id: '2', de: 'Geschenke: selbst gemacht oder gekauft?', hint: '', ko: 'Thema 2 · 선물: 직접 만든 것 또는 산 것' }
+        ], {
+          '1': ['Würden Sie selbst gern im Homeoffice arbeiten? Warum (nicht)?', 'Sollten Firmen ihren Mitarbeitern das Homeoffice erlauben? Was meinen Sie?'],
+          '2': ['Was war das schönste Geschenk, das Sie je bekommen haben?', 'Wie viel Geld sollte man Ihrer Meinung nach für ein Geschenk ausgeben?']
+        })
+      ]
+    },
+
+    /* ====================================================================== Goethe B1 · Modelltest 7 */
+    {
+      id: 'goethe-b1-7', org: 'Goethe', level: 'B1', mdt: 7,
+      name: 'Goethe-Zertifikat B1', short: 'Goethe B1', label: 'Goethe-Zertifikat B1, Modelltest 7',
+      ko: 'Goethe B1 · Sprechen', lead_ko: '함께 계획하고, 5장 발표를 하고, 피드백과 질문으로 이어 갑니다.',
+      teile: [
+        teil1({
+          summary_ko: '독일어 수업 반이 일요일에 하는 자전거 여행을 파트너와 함께 계획합니다. 제안하고, 파트너 제안에 반응하고, 함께 결정합니다.',
+          situation: 'Ihr Deutschkurs möchte am Sonntag gemeinsam eine Fahrradtour machen. Sie und Ihr Partner/Ihre Partnerin sollen die Tour organisieren.',
+          title: 'Fahrradtour mit dem Deutschkurs',
+          points: ['Wann und wo treffen wir uns?', 'Wohin fahren wir?', 'Fahrräder für alle?', 'Essen und Trinken?'],
+          introSit: 'Ihr Deutschkurs möchte am Sonntag gemeinsam eine Fahrradtour machen.',
+          introWhat: 'die Fahrradtour für den Deutschkurs.',
+          procWhat: 'die Fahrradtour für den Deutschkurs',
+          plan: 'eine Fahrradtour, die euer Deutschkurs am Sonntag gemeinsam machen möchte',
+          leit: 'Wann und wo treffen wir uns? Wohin fahren wir? Fahrräder für alle? Essen und Trinken?',
+          ideas: 'Du würdest gern am Sonntag um zehn Uhr vor der Sprachschule starten, weil alle sie kennen, am Fluss entlang zum See fahren (der Weg ist flach), am See eine lange Pause machen und mit dem Zug zurückfahren, für alle ohne Fahrrad am Bahnhof Räder leihen (du fragst vorher nach einem Gruppenpreis), und für das Picknick soll jeder etwas mitbringen, du schreibst eine Liste, damit nicht alle dasselbe mitbringen.',
+          opener: 'Sollen wir zuerst überlegen, wann und wo wir uns treffen?',
+          groups: [/(treffen|treffpunkt|sprachschule|bahnhof|sonntag|uhr|wann|wo treffen|losfahren|start)/, /(fahren|wohin|fluss|see|strecke|route|kilometer|ziel|park|wald|zug|zurück)/, /(fahrrad|fahrräder|räder|verleih|leihen|mieten|helm|mitbringen)/, /(essen|trinken|picknick|getränke|wasser|mittag|liste|belegte|brötchen|eis|café)/],
+          topicsKo: '네 가지 Leitpunkt(만남 시간·장소, 목적지, 자전거 마련, 음식과 음료)를 모두 다뤘다'
+        }),
+        teil2([
+          { id: '1', de: 'Bücher: gedruckt oder digital?', hint: '', ko: 'Thema 1 · 책: 종이책 또는 전자책' },
+          { id: '2', de: 'Nebenjobs für Schüler?', hint: '', ko: 'Thema 2 · 학생의 아르바이트' }
+        ]),
+        teil3([
+          { id: '1', de: 'Bücher: gedruckt oder digital?', hint: '', ko: 'Thema 1 · 책: 종이책 또는 전자책' },
+          { id: '2', de: 'Nebenjobs für Schüler?', hint: '', ko: 'Thema 2 · 학생의 아르바이트' }
+        ], {
+          '1': ['Lesen Sie lieber gedruckte oder digitale Bücher, und warum?', 'Glauben Sie, dass es in Zukunft noch gedruckte Bücher geben wird? Was meinen Sie?'],
+          '2': ['Ab welchem Alter sollten Schüler einen Nebenjob haben dürfen? Was meinen Sie?', 'Hatten Sie selbst als Schülerin oder Schüler einen Nebenjob? Wenn ja, was haben Sie gemacht?']
+        })
+      ]
+    },
+
+    /* ====================================================================== Goethe B1 · Modelltest 8 */
+    {
+      id: 'goethe-b1-8', org: 'Goethe', level: 'B1', mdt: 8,
+      name: 'Goethe-Zertifikat B1', short: 'Goethe B1', label: 'Goethe-Zertifikat B1, Modelltest 8',
+      ko: 'Goethe B1 · Sprechen', lead_ko: '함께 계획하고, 5장 발표를 하고, 피드백과 질문으로 이어 갑니다.',
+      teile: [
+        teil1({
+          summary_ko: '입원하게 된 이웃 Hagen 씨를 파트너와 함께 도울 방법을 계획합니다. 제안하고, 파트너 제안에 반응하고, 함께 결정합니다.',
+          situation: 'Ihre Nachbarin, Frau Hagen, muss für eine Woche ins Krankenhaus. Sie und Ihr Partner/Ihre Partnerin möchten ihr in dieser Zeit helfen.',
+          title: 'Hilfe für Frau Hagen',
+          points: ['Wer kümmert sich um die Katze?', 'Post und Blumen?', 'Besuch im Krankenhaus?', 'Wie kommt Frau Hagen nach Hause?'],
+          introSit: 'Ihre Nachbarin, Frau Hagen, muss für eine Woche ins Krankenhaus.',
+          introWhat: 'die Hilfe für Frau Hagen in dieser Woche.',
+          procWhat: 'die Hilfe für Frau Hagen',
+          plan: 'die Hilfe für eure Nachbarin Frau Hagen, die für eine Woche ins Krankenhaus muss',
+          leit: 'Wer kümmert sich um die Katze? Post und Blumen? Besuch im Krankenhaus? Wie kommt Frau Hagen nach Hause?',
+          ideas: 'Du würdest die Katze morgens und abends füttern, weil du in der Nähe wohnst, dich um die Post kümmern und die Blumen gießen (den Ersatzschlüssel holt ihr morgen), Frau Hagen am Mittwoch zusammen besuchen und ihr Zeitschriften und Obst mitbringen, und bei der Entlassung kann sie anrufen, dann holst du sie mit dem Auto ab, am ersten Abend könnte jemand für sie kochen.',
+          opener: 'Sollen wir zuerst überlegen, wer sich um die Katze kümmert?',
+          groups: [/(katze|füttern|tier|futter|katzenklo|kater)/, /(post|briefkasten|blumen|gießen|pflanzen|schlüssel|wohnung|zeitung)/, /(besuch|besuchen|krankenhaus|mittwoch|donnerstag|dienstag|zeitschrift|obst|mitbringen|karte|blumenstrauß)/, /(nach hause|abholen|abhol|auto|taxi|bus|entlass|heimfahrt|fahren|kochen|einkaufen)/],
+          topicsKo: '네 가지 Leitpunkt(고양이 돌보기, 우편과 화분, 병문안, 귀가)를 모두 다뤘다'
+        }),
+        teil2([
+          { id: '1', de: 'Sollen Kinder im Haushalt helfen?', hint: '', ko: 'Thema 1 · 아이들의 집안일 돕기' },
+          { id: '2', de: 'Freunde im Internet finden?', hint: '', ko: 'Thema 2 · 인터넷에서 친구 사귀기' }
+        ]),
+        teil3([
+          { id: '1', de: 'Sollen Kinder im Haushalt helfen?', hint: '', ko: 'Thema 1 · 아이들의 집안일 돕기' },
+          { id: '2', de: 'Freunde im Internet finden?', hint: '', ko: 'Thema 2 · 인터넷에서 친구 사귀기' }
+        ], {
+          '1': ['Welche Aufgaben im Haushalt können schon kleine Kinder übernehmen? Was meinen Sie?', 'Sollten Kinder für die Hausarbeit Taschengeld bekommen? Warum (nicht)?'],
+          '2': ['Haben Sie selbst schon einmal jemanden im Internet kennengelernt? Wie war das?', 'Worauf sollte man achten, wenn man Menschen im Internet kennenlernt?']
+        })
+      ]
+    },
+
+    /* ====================================================================== Goethe B1 · Modelltest 9 */
+    {
+      id: 'goethe-b1-9', org: 'Goethe', level: 'B1', mdt: 9,
+      name: 'Goethe-Zertifikat B1', short: 'Goethe B1', label: 'Goethe-Zertifikat B1, Modelltest 9',
+      ko: 'Goethe B1 · Sprechen', lead_ko: '함께 계획하고, 5장 발표를 하고, 피드백과 질문으로 이어 갑니다.',
+      teile: [
+        teil1({
+          summary_ko: '친구 Ivan의 이사를 파트너와 함께 돕는 계획을 세웁니다. 제안하고, 파트너 제안에 반응하고, 함께 결정합니다.',
+          situation: 'Ihr gemeinsamer Freund Ivan zieht am Samstag in eine neue Wohnung. Sie und Ihr Partner/Ihre Partnerin möchten ihm beim Umzug helfen.',
+          title: 'Ivans Umzug planen',
+          points: ['Wann fangen wir an?', 'Wie transportieren wir die Möbel?', 'Essen und Trinken für die Helfer?', 'Was passiert mit den alten Möbeln?'],
+          introSit: 'Ihr gemeinsamer Freund Ivan zieht am Samstag in eine neue Wohnung.',
+          introWhat: 'die Hilfe beim Umzug von Ivan.',
+          procWhat: 'Ivans Umzug',
+          plan: 'die Hilfe beim Umzug eures gemeinsamen Freundes Ivan, der am Samstag in eine neue Wohnung zieht',
+          leit: 'Wann fangen wir an? Wie transportieren wir die Möbel? Essen und Trinken für die Helfer? Was passiert mit den alten Möbeln?',
+          ideas: 'Du würdest gern am Samstag um acht Uhr vor Ivans alter Wohnung anfangen, damit ihr am Nachmittag fertig seid, einen Transporter mieten (du reservierst ihn, jemand anderes fährt), mittags Pizza bestellen, damit niemand kochen muss, Getränke wie Wasser und Saft schon am Freitag kaufen, und die alten Möbel im Internet verschenken oder zum Wertstoffhof bringen.',
+          opener: 'Sollen wir zuerst überlegen, wann wir anfangen?',
+          groups: [/(anfangen|beginnen|samstag|uhr|früh|wann|treffen|treffpunkt|morgens|fertig)/, /(transport|transporter|möbel|auto|autos|mieten|lastwagen|tragen|schränke|sofa|kartons|umzugswagen|fahren)/, /(essen|trinken|pizza|getränke|wasser|saft|pause|mittag|bestellen|kochen|kaffee|brötchen)/, /(alte möbel|alten möbel|verschenken|wegwerfen|wertstoffhof|sperrmüll|verkaufen|spenden|entsorg|internet)/],
+          topicsKo: '네 가지 Leitpunkt(시작 시간, 가구 운반, 도와주는 사람들의 음식과 음료, 낡은 가구 처리)를 모두 다뤘다'
+        }),
+        teil2([
+          { id: '1', de: 'Plastik im Alltag vermeiden?', hint: '', ko: 'Thema 1 · 일상에서 플라스틱 줄이기' },
+          { id: '2', de: 'Große Hochzeit oder kleine Feier?', hint: '', ko: 'Thema 2 · 큰 결혼식 또는 작은 잔치' }
+        ]),
+        teil3([
+          { id: '1', de: 'Plastik im Alltag vermeiden?', hint: '', ko: 'Thema 1 · 일상에서 플라스틱 줄이기' },
+          { id: '2', de: 'Große Hochzeit oder kleine Feier?', hint: '', ko: 'Thema 2 · 큰 결혼식 또는 작은 잔치' }
+        ], {
+          '1': ['Was tun Sie selbst, um Plastikmüll zu vermeiden?', 'Sollten Geschäfte für Plastiktüten und Verpackungen mehr Geld verlangen? Warum (nicht)?'],
+          '2': ['Wie möchten Sie selbst einmal heiraten, groß oder klein? Warum?', 'Wie viel Geld sollte man Ihrer Meinung nach für eine Hochzeit ausgeben?']
+        })
+      ]
+    },
+
+    /* ====================================================================== Goethe B1 · Modelltest 10 */
+    {
+      id: 'goethe-b1-10', org: 'Goethe', level: 'B1', mdt: 10,
+      name: 'Goethe-Zertifikat B1', short: 'Goethe B1', label: 'Goethe-Zertifikat B1, Modelltest 10',
+      ko: 'Goethe B1 · Sprechen', lead_ko: '함께 계획하고, 5장 발표를 하고, 피드백과 질문으로 이어 갑니다.',
+      teile: [
+        teil1({
+          summary_ko: '대학을 막 졸업한 친구 Mira를 위한 깜짝 파티를 파트너와 함께 계획합니다. 제안하고, 파트너 제안에 반응하고, 함께 결정합니다.',
+          situation: 'Ihre gemeinsame Freundin Mira hat gerade ihr Studium abgeschlossen. Sie und Ihr Partner/Ihre Partnerin möchten für Mira eine Überraschungsparty organisieren.',
+          title: 'Überraschungsparty für Mira',
+          points: ['Wann und wo feiern wir?', 'Wen laden wir ein?', 'Essen und Getränke?', 'Geschenk?'],
+          introSit: 'Ihre gemeinsame Freundin Mira hat gerade ihr Studium abgeschlossen.',
+          introWhat: 'eine Überraschungsparty für Mira.',
+          procWhat: 'die Überraschungsparty für Mira',
+          plan: 'eine Überraschungsparty für eure gemeinsame Freundin Mira, die gerade ihr Studium abgeschlossen hat',
+          leit: 'Wann und wo feiern wir? Wen laden wir ein? Essen und Getränke? Geschenk?',
+          ideas: 'Du würdest gern am Samstag in einer Woche feiern, im Garten von jemandem aus dem Freundeskreis und bei Regen in einem gemieteten Raum, Miras Familie, Freunde aus dem Studium und den alten Deutschkurs einladen (ohne dass Mira davon erfährt, also nicht in Gruppen schreiben, in denen sie ist), jeder bringt etwas zu essen mit, du kümmerst dich um Getränke und Kuchen, und als Geschenk sammelt ihr Geld für einen Gutschein für eine Reise.',
+          opener: 'Sollen wir zuerst überlegen, wann und wo wir feiern?',
+          groups: [/(wann|samstag|sonntag|freitag|uhr|woche|abend|datum|termin)/, /(wo feiern|garten|hütte|wohnung|jugendzentrum|raum|restaurant|café|park|reservier|ort)/, /(einladen|einlad|gäste|familie|freunde|studium|deutschkurs|schwester|bruder|kollegen|überraschung)/, /(essen|getränke|kuchen|mitbringen|kochen|buffet|pizza|grill|trinken|geschenk|gutschein|reise|flug|geld sammeln|sammeln)/],
+          topicsKo: '네 가지 Leitpunkt(파티 시간·장소, 초대할 사람, 음식과 음료, 선물)를 모두 다뤘다'
+        }),
+        teil2([
+          { id: '1', de: 'Allein reisen?', hint: '', ko: 'Thema 1 · 혼자 여행하기' },
+          { id: '2', de: 'Brauchen wir noch Fernsehen?', hint: '', ko: 'Thema 2 · 아직도 텔레비전이 필요할까?' }
+        ]),
+        teil3([
+          { id: '1', de: 'Allein reisen?', hint: '', ko: 'Thema 1 · 혼자 여행하기' },
+          { id: '2', de: 'Brauchen wir noch Fernsehen?', hint: '', ko: 'Thema 2 · 아직도 텔레비전이 필요할까?' }
+        ], {
+          '1': ['Sind Sie schon einmal allein gereist? Wie war das?', 'Was muss man beachten, wenn man allein in ein fremdes Land reist?'],
+          '2': ['Wie oft sehen Sie fern, und was sehen Sie am liebsten?', 'Werden Fernsehsender in Zukunft verschwinden? Was meinen Sie?']
+        })
+      ]
     }
   );
 })();
@@ -3107,7 +3283,51 @@ const EXAMS = [
     }
   };
 
-  EXAMS.push(EXAMS.builders.gb2(3, GB2_M3), EXAMS.builders.gb2(4, GB2_M4), EXAMS.builders.gb2(5, GB2_M5));
+  /* ---------------- Modelltest 6 ---------------- */
+  const GB2_M6 = {
+    t1: {
+      itemsA: [
+        { id: '1', de: 'Werbung im Alltag', hint: H('Mehrere Formen von Werbung beschreiben (z. B. Plakate)', 'Eine Form genauer beschreiben', 'Vor- und Nachteile nennen und bewerten'), ko: '카드 A · Thema 1 · 일상 속 광고' },
+        { id: '2', de: 'Allein verreisen', hint: H('Mehrere Möglichkeiten beschreiben, allein zu verreisen (z. B. eine Sprachreise)', 'Vor- und Nachteile nennen und bewerten', 'Eine Möglichkeit genauer beschreiben'), ko: '카드 A · Thema 2 · 혼자 여행하기' }
+      ],
+      itemsB: [
+        { id: 'B1', de: 'Computerspiele', hint: H('Mehrere Arten von Computerspielen beschreiben (z. B. Lernspiele)', 'Eine Art genauer beschreiben', 'Vor- und Nachteile nennen und bewerten'), ko: '카드 B · Thema 1 · 컴퓨터 게임' },
+        { id: 'B2', de: 'Jung und Alt gemeinsam', hint: H('Mehrere Möglichkeiten beschreiben, wie junge und ältere Menschen Zeit miteinander verbringen können (z. B. gemeinsames Kochen)', 'Vor- und Nachteile nennen und bewerten', 'Eine Möglichkeit genauer beschreiben'), ko: '카드 B · Thema 2 · 젊은 세대와 노인 세대가 함께하기' }
+      ],
+      pool: {
+        '1': ['Haben Sie selbst schon einmal etwas gekauft, weil es ein Influencer empfohlen hat?', 'Sollte Werbung für Kinder verboten werden?'],
+        '2': ['Würden Sie lieber allein oder mit anderen verreisen, und warum?', 'Welche Voraussetzungen sollte man für eine Reise allein mitbringen?']
+      }
+    },
+    t2: {
+      question: 'Sollte die Zeitumstellung abgeschafft werden?',
+      points: ['Wie reagiert der Körper auf die Umstellung?', 'Was spricht für lange helle Abende?', 'Welche Zeit sollte dauerhaft gelten?', 'Was bedeutet eine Änderung für die Nachbarländer?', '…']
+    }
+  };
+
+  /* ---------------- Modelltest 7 ---------------- */
+  const GB2_M7 = {
+    t1: {
+      itemsA: [
+        { id: '1', de: 'Soziale Netzwerke', hint: H('Mehrere Arten von sozialen Netzwerken beschreiben (z. B. berufliche Netzwerke)', 'Eine Art genauer beschreiben', 'Vor- und Nachteile nennen und bewerten'), ko: '카드 A · Thema 1 · 소셜 네트워크' },
+        { id: '2', de: 'Musik im Alltag', hint: H('Mehrere Situationen beschreiben, in denen Menschen Musik hören (z. B. beim Sport)', 'Vor- und Nachteile nennen und bewerten', 'Eine Situation genauer beschreiben'), ko: '카드 A · Thema 2 · 일상 속 음악' }
+      ],
+      itemsB: [
+        { id: 'B1', de: 'Filme und Serien', hint: H('Mehrere Möglichkeiten beschreiben, Filme und Serien zu sehen (z. B. im Kino)', 'Eine Möglichkeit genauer beschreiben', 'Vor- und Nachteile nennen und bewerten'), ko: '카드 B · Thema 1 · 영화와 시리즈' },
+        { id: 'B2', de: 'Für Prüfungen lernen', hint: H('Mehrere Lernmethoden beschreiben (z. B. Lerngruppen)', 'Vor- und Nachteile nennen und bewerten', 'Eine Methode genauer beschreiben'), ko: '카드 B · Thema 2 · 시험 준비하기' }
+      ],
+      pool: {
+        '1': ['Wie viel Zeit verbringen Sie pro Tag in sozialen Netzwerken?', 'Sollten Arbeitgeber die privaten Profile von Bewerbern ansehen dürfen?'],
+        '2': ['Welche Musik hören Sie am liebsten, und wann?', 'Sollte in Geschäften und Restaurants immer Musik laufen?']
+      }
+    },
+    t2: {
+      question: 'Sollten Handys an Schulen verboten werden?',
+      points: ['Wie beeinflussen Handys die Konzentration?', 'Was bedeutet ein Verbot für die Pausen?', 'Wie erreichen Eltern ihre Kinder im Notfall?', 'Wer soll die Regel kontrollieren?', '…']
+    }
+  };
+
+  EXAMS.push(EXAMS.builders.gb2(3, GB2_M3), EXAMS.builders.gb2(4, GB2_M4), EXAMS.builders.gb2(5, GB2_M5), EXAMS.builders.gb2(6, GB2_M6), EXAMS.builders.gb2(7, GB2_M7));
 })();
 
 /* 시험 데이터 확장: telc Deutsch B1 Modelltest 3, 4, 5 (접근 키 'telc-B1')
@@ -3412,6 +3632,390 @@ const EXAMS = [
       intro: 'Wir kommen zu Teil 3: Gemeinsam etwas planen. Sie trainieren ehrenamtlich die Fußballmannschaft der Neun- und Zehnjährigen in Ihrem Sportverein und möchten zum Ende der Saison mit den 14 Kindern einen Tagesausflug machen. Überlegen Sie zusammen mit {dat}, was alles geplant werden muss. Machen Sie Vorschläge, reagieren Sie auf die Vorschläge und entwickeln Sie gemeinsam einen Plan. Wer möchte anfangen?',
       what: 'zum Saisonende einen Tagesausflug mit den 14 Kindern der Fußballmannschaft der Neun- und Zehnjährigen in eurem Sportverein, die ihr ehrenamtlich trainiert',
       points: 'Ziel und Programm, Termin, Anreise und Rückfahrt, Kosten und Finanzierung, Einverständnis der Eltern, Aufsicht und Zahl der Betreuer, Verpflegung, Ausweichplan bei schlechtem Wetter, Erste Hilfe und Notfallnummern, Zeitplan, Aufgabenverteilung'
+    }),
+
+    /* ====================================================================== telc B2 · Modelltest 6 */
+    mk(6, {
+      items: [
+        { id: '1', de: 'Ein Buch, das Sie gelesen haben', hint: 'Thema, Autor, Ihre Meinung usw.', ko: '읽은 책' },
+        { id: '2', de: 'Einen Film, den Sie gesehen haben', hint: 'Thema und Handlung, Schauspieler, Ihre Meinung usw.', ko: '본 영화' },
+        { id: '3', de: 'Eine Reise, die Sie unternommen haben', hint: 'Ziel, Zeit, Land und Leute, Sehenswürdigkeiten usw.', ko: '다녀온 여행' },
+        { id: '4', de: 'Eine Musikveranstaltung, die Sie besucht haben', hint: 'Musikrichtung, Musiker, Ort, persönliche Vorlieben usw.', ko: '다녀온 음악 공연' },
+        { id: '5', de: 'Ein Sportereignis, das Sie besucht haben', hint: 'Sportart, Ort, Personen, Ergebnis usw.', ko: '관람한 스포츠 경기' },
+        { id: '6', de: 'Eine Person, die in Ihrem Leben wichtig war', hint: 'wer, wann, warum wichtig usw.', ko: '내 삶에서 중요했던 사람' },
+        { id: '7', de: 'Eine wichtige Erfahrung, die Sie in Ihrem Leben gemacht haben', hint: 'was, wann, wo, mit wem, warum wichtig usw.', ko: '살면서 겪은 중요한 경험' }
+      ],
+      sheet: [
+        { t: 'h', s: 'Einkaufen am Sonntag?' },
+        { t: 'i', s: 'Sollen Geschäfte auch sonntags öffnen dürfen?' },
+        { t: 'p', s: 'Wer am Sonntag einkaufen möchte, hat in Deutschland kaum Möglichkeiten: Bis auf Bäckereien, Tankstellen und Läden in Bahnhöfen bleiben die Geschäfte geschlossen. In den meisten Bundesländern sind nur wenige verkaufsoffene Sonntage im Jahr erlaubt, und auch die nur aus einem besonderen Anlass wie einem Stadtfest; Ausnahmen gelten außerdem für Ausflugs- und Kurorte. Der Einzelhandel möchte diese Regeln lockern. Viele Händler fürchten, dass sie sonst gegen die Konkurrenz aus dem Internet, wo man rund um die Uhr bestellen kann, keine Chance haben. Befürworter einer Lockerung verweisen außerdem auf Nachbarländer wie die Niederlande, wo in vielen Städten auch sonntags eingekauft werden kann.' },
+        { t: 'p', s: 'Gewerkschaften und Kirchen lehnen das entschieden ab. Der Sonntag sei für viele Beschäftigte der einzige Tag, an dem die ganze Familie Zeit füreinander habe. Außerdem würden die Umsätze kaum steigen, weil die Menschen ihr Geld nur auf mehr Tage verteilten. Kleine Läden könnten sich zusätzliches Personal am Sonntag zudem kaum leisten und würden gegenüber großen Ketten weiter zurückfallen. Und wer sonntags arbeiten müsse, brauche eine Betreuung für seine Kinder – doch Kitas seien an diesem Tag geschlossen.' },
+        { t: 'p', s: 'Auch unsere Leserinnen und Leser sind geteilter Meinung. „Ich arbeite im Schichtdienst und schaffe es unter der Woche oft nicht in die Stadt“, schreibt eine Krankenpflegerin. Ein Rentner hält dagegen: „Ein Tag ohne Einkaufsstress tut allen gut.“ Und eine Verkäuferin gibt zu bedenken: „Wer sonntags einkaufen will, sollte sich fragen, wer dann an der Kasse sitzt.“' },
+        { t: 'p', s: 'Einen Mittelweg schlagen manche Politiker vor: Die Zahl der verkaufsoffenen Sonntage soll moderat steigen, die Beschäftigten sollen dafür aber einen freien Tag unter der Woche und höhere Zuschläge bekommen. Ob sich Handel und Gewerkschaften auf diesen Kompromiss einigen, ist noch offen.' }
+      ],
+      instruction: 'Sie und Ihre Partnerin bzw. Ihr Partner sind Mitglieder eines Nachbarschaftsvereins. Im Frühjahr möchte der Verein eine Aufräumaktion am Flussufer organisieren, bei der Freiwillige Müll sammeln. Sie sollen die Aktion gemeinsam planen.',
+      intro: 'Wir kommen zu Teil 3: Gemeinsam etwas planen. Ihr Nachbarschaftsverein möchte im Frühjahr eine Aufräumaktion am Flussufer organisieren, bei der Freiwillige Müll sammeln. Überlegen Sie zusammen mit {dat}, was alles geplant werden muss. Machen Sie Vorschläge, reagieren Sie auf die Vorschläge und entwickeln Sie gemeinsam einen Plan. Wer möchte anfangen?',
+      what: 'für euren Nachbarschaftsverein im Frühjahr eine Aufräumaktion am Flussufer, bei der Freiwillige Müll sammeln',
+      points: 'Termin und Uhrzeit, Treffpunkt, Freiwillige finden (Schule, Sportverein, Aufruf im Internet), Handschuhe, Müllsäcke und Greifzangen, Abholung der vollen Säcke durch die Stadtreinigung, Sicherheit und Erste Hilfe, Wetter und Absage, Getränke und gemeinsames Grillen als Dank, Aufgabenverteilung'
+    }),
+
+    /* ====================================================================== telc B2 · Modelltest 7 */
+    mk(7, {
+      items: [
+        { id: '1', de: 'Ein Buch, das Sie gelesen haben', hint: 'Thema, Autor, Ihre Meinung usw.', ko: '읽은 책' },
+        { id: '2', de: 'Einen Film, den Sie gesehen haben', hint: 'Thema und Handlung, Schauspieler, Ihre Meinung usw.', ko: '본 영화' },
+        { id: '3', de: 'Eine Reise, die Sie unternommen haben', hint: 'Ziel, Zeit, Land und Leute, Sehenswürdigkeiten usw.', ko: '다녀온 여행' },
+        { id: '4', de: 'Eine Musikveranstaltung, die Sie besucht haben', hint: 'Musikrichtung, Musiker, Ort, persönliche Vorlieben usw.', ko: '다녀온 음악 공연' },
+        { id: '5', de: 'Ein Sportereignis, das Sie besucht haben', hint: 'Sportart, Ort, Personen, Ergebnis usw.', ko: '관람한 스포츠 경기' },
+        { id: '6', de: 'Eine Person, die in Ihrem Leben wichtig war', hint: 'wer, wann, warum wichtig usw.', ko: '내 삶에서 중요했던 사람' },
+        { id: '7', de: 'Eine wichtige Erfahrung, die Sie in Ihrem Leben gemacht haben', hint: 'was, wann, wo, mit wem, warum wichtig usw.', ko: '살면서 겪은 중요한 경험' }
+      ],
+      sheet: [
+        { t: 'h', s: 'Bus und Bahn zum Nulltarif?' },
+        { t: 'i', s: 'Sollte der öffentliche Nahverkehr kostenlos sein?' },
+        { t: 'p', s: 'Seit Ende Februar 2020 fährt man in Luxemburg kostenlos mit Bus, Bahn und Straßenbahn, nur die erste Klasse kostet noch etwas. Das kleine Land war damit das erste der Welt, in dem der öffentliche Nahverkehr überall kostenlos ist. Die estnische Hauptstadt Tallinn lässt ihre Einwohnerinnen und Einwohner sogar schon seit 2013 umsonst fahren. Auch in Deutschland wird die Idee immer wieder diskutiert.' },
+        { t: 'p', s: 'Befürworter sehen darin einen wichtigen Beitrag zum Klimaschutz: Wenn Fahrkarten nichts kosten, lassen mehr Menschen ihr Auto stehen, die Straßen werden leerer und die Luft sauberer. Außerdem könnten sich auch Menschen mit wenig Geld wieder Fahrten zum Arzt, zum Einkaufen oder ins Kino leisten. Fahrkartenautomaten und Kontrollen wären überflüssig, was ebenfalls Geld sparen würde. Und wer den Bus nimmt, muss in der Innenstadt keinen Parkplatz mehr suchen.' },
+        { t: 'p', s: 'Kritiker halten dagegen, dass kostenlose Busse vor allem Fußgänger und Radfahrer anlocken, aber kaum Autofahrer. Für viele sei nicht der Preis das Problem, sondern dass Busse zu selten oder auf dem Land gar nicht fahren. Zudem müsse der Staat jedes Jahr Milliarden ausgeben, die dann für neue Strecken und zusätzliche Fahrten fehlten. Außerdem seien Busse und Bahnen in vielen Städten schon heute im Berufsverkehr überfüllt; noch mehr Fahrgäste könnten sie kaum aufnehmen. „Was nichts kostet, ist auch nichts wert“, sagt ein Sprecher der Verkehrsbetriebe einer Großstadt.' },
+        { t: 'p', s: 'Manche Städte suchen deshalb einen Mittelweg: Sie bieten besonders günstige Jahreskarten an oder lassen nur Kinder, Jugendliche und Ältere kostenlos fahren. Andere investieren das Geld lieber in mehr Busse und kürzere Wartezeiten. Welcher Weg mehr Menschen zum Umsteigen bewegt, ist unter Fachleuten umstritten. Offen ist auch, wer die Kosten tragen soll: der Bund, die Länder oder die Städte selbst.' }
+      ],
+      instruction: 'Eine Teilnehmerin aus Ihrem Deutschkurs zieht in drei Wochen in eine neue Wohnung. Sie hat wenig Geld und kennt in der Stadt noch kaum jemanden. Sie und Ihre Partnerin bzw. Ihr Partner möchten ihr zusammen mit anderen aus dem Kurs beim Umzug helfen. Sie sollen die Hilfe gemeinsam planen.',
+      intro: 'Wir kommen zu Teil 3: Gemeinsam etwas planen. Eine Teilnehmerin aus Ihrem Deutschkurs zieht in drei Wochen in eine neue Wohnung. Sie hat wenig Geld und kennt in der Stadt noch kaum jemanden. Überlegen Sie zusammen mit {dat}, was für den Umzug alles geplant werden muss. Machen Sie Vorschläge, reagieren Sie auf die Vorschläge und entwickeln Sie gemeinsam einen Plan. Wer möchte anfangen?',
+      what: 'den Umzug einer Kurskollegin, die in drei Wochen in eine neue Wohnung zieht, wenig Geld hat und in der Stadt kaum jemanden kennt',
+      points: 'Termin (Samstag), Zahl der Helfer und Aufruf in der Kursgruppe, Transporter und Kosten für Benzin, Umzugskartons, Möbel ab- und aufbauen, Werkzeug, Essen und Getränke für die Helfer, Hilfe in der neuen Nachbarschaft (Kontakte, Einweihungsfeier), Aufgabenverteilung'
+    })
+  );
+})();
+
+/* 시험 데이터 확장: telc C1 Hochschule Modelltest 1–8
+   - 과제지 원문(Thema, Zitat, Aufgabenstellung)은 SODA-TELC(telc C1 Hochschule) 저장소의 Modelltest 1~5 PDF와 Modelltest 6~8 PDF(Mündlicher Ausdruck Teil 1·2)에서 옮겼습니다.
+   - 시험 구성(48점): Teil 1A Präsentation(ca. 3 Min.) + Teil 1B Zusammenfassung und Anschlussfragen(ca. 2 Min.), 역할 교대, Teil 2 Diskussion über ein Zitat(ca. 6 Min.). 준비 시간 20분, 앞의 Kennenlernen(채점 없음)은 연습하지 않습니다.
+   - 연습 단위: 앱의 Teil 1 = 1A + 1B(발표하고 질문받고, 역할을 바꿔 요약하고 질문하기), 앱의 Teil 2 = Diskussion.
+   - 채점(전사로 추정): 내용 Teil 1A 6/4/2/0, Teil 1B 4/2/1/0, Teil 2 6/4/2/0점. 언어는 전체 말하기에 한 번 매기며 Flüssigkeit·Repertoire·Grammatische Richtigkeit·Aussprache 각 8/5/2/0점(최대 32). 발음·억양은 전사로 평가할 수 없어 제외합니다. 합격은 48점 중 29점입니다.
+   - 접근 키: 'telc-C1-HS' (로그인 계정의 levels에 넣어야 열립니다. telc B1의 'telc-B1'과 같은 방식).
+   - 이 블록은 전역 EXAMS만 씁니다. 도우미(채점 기준, 정규식, 틀)는 모두 이 블록 안에 있습니다. */
+(function () {
+  const NOT_ASSESSED = { key: 'aussprache', de: 'Aussprache und Intonation', ko: '발음·억양', assess: false, max: null, desc_ko: '전사만으로는 평가할 수 없습니다.' };
+
+  /* ---------------- 채점 기준 ---------------- */
+  const LANG_NOTE = '언어 점수(Flüssigkeit, Repertoire, Grammatische Richtigkeit)는 실제 시험에서 말하기 전체에 대해 한 번 매기고 기준마다 8점(A 8 · B 5 · C 2 · D 0)입니다. 여기서는 이 Teil의 말하기만 보고 추정합니다. 복잡한 구조(부문장, 수동, 접속법, 명사화)를 시도했는지도 봅니다.';
+  const LANG = [
+    { key: 'fluessigkeit', de: 'Flüssigkeit', ko: '유창성', assess: true, max: 8, pts: { A: 8, B: 5, C: 2, D: 0 }, desc_ko: '막힘 없이 이어서 말하는가, 긴 발화를 이어 가는가(A 8 · B 5 · C 2 · D 0점)' },
+    { key: 'repertoire', de: 'Repertoire', ko: '표현의 폭', assess: true, max: 8, pts: { A: 8, B: 5, C: 2, D: 0 }, desc_ko: '어휘와 문장 구조의 폭, 학술적·추상적 표현(A 8 · B 5 · C 2 · D 0점)' },
+    { key: 'grammatik', de: 'Grammatische Richtigkeit', ko: '문법적 정확성', assess: true, max: 8, pts: { A: 8, B: 5, C: 2, D: 0 }, desc_ko: '어형·어순·시제·접속법의 정확성(A 8 · B 5 · C 2 · D 0점)' }
+  ];
+  const RUB_T1 = {
+    grades: ['A', 'B', 'C', 'D'], points: { A: 8, B: 5, C: 2, D: 0 },
+    criteria: [
+      { key: 'inhalt1a', de: 'Inhalt Teil 1A (Präsentation)', ko: '내용: 발표(1A)', assess: true, max: 6, pts: { A: 6, B: 4, C: 2, D: 0 }, desc_ko: '주제를 분명히 소개하고 구조(도입·본문·결론)를 갖춰 구체적으로 발표했는가(A 6 · B 4 · C 2 · D 0점)' },
+      { key: 'inhalt1b', de: 'Inhalt Teil 1B (Zusammenfassung und Anschlussfragen)', ko: '내용: 요약과 후속 질문(1B)', assess: true, max: 4, pts: { A: 4, B: 2, C: 1, D: 0 }, desc_ko: '발표를 반복하지 않고 눈에 띈 점을 골라 요약했는가, 진짜 질문을 했는가, 질문에 답했는가(A 4 · B 2 · C 1 · D 0점)' }
+    ].concat(LANG, [NOT_ASSESSED]),
+    notes: [
+      'telc C1 Hochschule 말하기는 48점입니다(내용 16점, 언어 32점). 합격은 29점 이상입니다. 등급은 A~D입니다.',
+      'Teil 1A(6점)와 Teil 1B(4점)의 내용 점수는 기준마다 다릅니다. 각 기준의 pts 표(또는 desc_ko에 적힌 점수)를 따르고, 언어 세 기준은 A 8 · B 5 · C 2 · D 0점입니다.',
+      '1A: 주제를 밝히고 부분을 예고하고 결론을 말하는 구성 신호, 자기 경험이나 예, 주제의 요구(설명과 평가, 또는 찬반과 자기 입장)를 모두 다뤘는지를 봅니다. 약 3분(300단어 안팎)에 한참 못 미치면 내용 점수를 낮춥니다.',
+      '1B: 파트너 발표를 그대로 되풀이하지 않고 눈에 띈 점을 골라 요약하고, 최소 한 개의 진짜 질문(발표에 대한 호기심이나 반론)을 하는지 봅니다. 상대의 질문에 구체적으로 답했는지도 봅니다.',
+      LANG_NOTE
+    ],
+    note_ko: '기준별 점수가 다릅니다(내용 1A 6점, 내용 1B 4점, 언어 세 기준 각 8점, 합계 34점 만점). 발음·억양(8점)은 제외합니다. 공식 채점이 아닙니다.'
+  };
+  const RUB_T2 = {
+    grades: ['A', 'B', 'C', 'D'], points: { A: 8, B: 5, C: 2, D: 0 },
+    criteria: [
+      { key: 'inhalt2', de: 'Inhalt Teil 2 (Diskussion)', ko: '내용: 토론(2)', assess: true, max: 6, pts: { A: 6, B: 4, C: 2, D: 0 }, desc_ko: '인용문을 이해해 설명하고, 동의 또는 반대를 이유와 예로 뒷받침하고, 파트너의 논거에 반응했는가(A 6 · B 4 · C 2 · D 0점)' }
+    ].concat(LANG, [NOT_ASSESSED]),
+    notes: [
+      'telc C1 Hochschule 말하기는 48점입니다(내용 16점, 언어 32점). 합격은 29점 이상입니다. 등급은 A~D입니다.',
+      'Teil 2의 내용 점수는 6점이며 A 6 · B 4 · C 2 · D 0점입니다. 언어 세 기준은 A 8 · B 5 · C 2 · D 0점입니다.',
+      'Teil 2에서는 상호작용이 중요합니다. 인용문 해석(Ich verstehe das so, dass …), 동의·부분 동의·반박, 자기 경험이나 예, 되묻기, 두 사람의 입장을 하나로 모으는 말(Dann würde ich den Satz so umformulieren …)을 봅니다. 파트너의 말에 반응하지 않고 자기 의견만 이어 말하면 낮게 평가합니다. 시험에서는 토론이 필요한 수준에 이르지 못하면 시험관이 질문으로 개입합니다.',
+      LANG_NOTE
+    ],
+    note_ko: '기준별 점수가 다릅니다(내용 6점, 언어 세 기준 각 8점, 합계 30점 만점). 발음·억양(8점)은 제외합니다. 공식 채점이 아닙니다.'
+  };
+
+  /* ---------------- 규칙 기반 점검에 쓰는 정규식 ---------------- */
+  const RE = {
+    reason: /\b(weil|denn|deshalb|deswegen|darum|da|sodass|damit)\b/,
+    opinion: /(meiner meinung|ich bin der meinung|ich finde|meiner ansicht|ich denke|ich glaube|ich halte|ich bin dafür|ich bin dagegen|ich sehe das|meines erachtens|aus meiner sicht)/,
+    example: /(zum beispiel|ein beispiel|beispielsweise|erfahrung|bei mir|in meinem (fach|studium|heimatland|land|alltag)|ich habe .{0,30}erlebt|ich selbst|eine freundin|ein freund|denk nur an|ich kenne)/,
+    react: /(zwar|stimme (ich )?(dir )?(voll |völlig )?zu|sehe das (genauso|anders)|widerspreche|widersprechen|hast (du )?recht|berechtigter einwand|guter punkt|gutes argument|da ist etwas dran|einverstanden|gebe zu|trotzdem|dennoch)/,
+    question: /(wie siehst du|wie stehst du|was meinst du|was denkst du|was hältst du|und du|oder nicht|lässt sich|würdest du|kannst du|könntest du)/,
+    wrap: /(zusammenfassend|alles in allem|insgesamt|einigen|einig|umformulieren|damit kann ich leben|fassen wir|zum schluss|am ende|schlussformulierung|auf den punkt)/
+  };
+
+  /* ---------------- 공통 문구 ---------------- */
+  const T1_FOLLOW = [
+    'Was würden Sie jemandem antworten, der Ihre Position ganz anders sieht?',
+    'Gibt es ein Argument der Gegenseite, das Sie überzeugt hat?',
+    'Was könnte man aus Ihrer Sicht konkret verbessern oder anders machen?',
+    'Welche eigene Erfahrung hat Ihre Sicht auf dieses Thema am stärksten geprägt?',
+    'Wie hat sich Ihre Meinung zu diesem Thema im Lauf der Zeit verändert?',
+    'Welchen Punkt Ihrer Präsentation hätten Sie gern noch ausführlicher dargestellt, und warum?'
+  ];
+  const MILA_BIO = 'Deine erfundenen Angaben (bleibe dabei, erfinde bei Bedarf glaubwürdige Details): Du heißt Mila, bist achtundzwanzig, kommst aus Krakau und studierst in Deutschland im Master Umweltwissenschaften. Du jobbst ein paar Stunden pro Woche in der Unibibliothek und lebst in einer WG.';
+
+  const TALK = 'halte deine Präsentation zu deinem Thema in etwa zweihundertfünfzig bis dreihundert Wörtern (zwei bis drei Minuten) und gliedere sie klar: Einleitung (nenne das Thema, sage in einem Satz, warum du es gewählt hast, am besten mit einem kurzen Beispiel oder einer eigenen Erfahrung, und kündige die Gliederung an: „Mein Vortrag hat drei Teile: …“), Hauptteil (bei einem Thema, das etwas beschreibt: Beschreibung mit konkreten Beispielen, dann deine Bewertung; bei einer Ja-Nein-Frage: zuerst die Vorteile bzw. Argumente dafür, dann die Nachteile bzw. Einwände, jeweils mit einem Beispiel) und Schluss (Fazit mit deiner eigenen, abgewogenen Position und „Vielen Dank fürs Zuhören – ich freue mich auf Fragen.“). Benutze auch komplexere Strukturen (Nebensätze, Konjunktiv II, Nominalisierungen), aber klinge natürlich. Nenne keine genauen erfundenen Statistiken, sprich allgemein von „Studien“ oder eigenen Beobachtungen. Mach dabei ein oder zwei kurze Pausen.';
+  const SUMMARIZE = 'Fasse in drei bis vier Sätzen zusammen, was A vorgetragen hat, ohne die Präsentation zu wiederholen („Du hast über … gesprochen und … dargestellt. Besonders interessant fand ich, dass …“). Stelle dann ein bis zwei echte Anschlussfragen, jede einzeln und mit Bezug auf ein konkretes Detail („Du hast gesagt, dass … Würdest du …?“, „Und was hältst du von der Idee, dass …?“). Reagiere nach jeder Antwort kurz („Das ist ein interessanter Vergleich.“).';
+  const ANSWER = 'Beantworte die Zusammenfassung und die Fragen von A in zwei bis drei Sätzen mit einer Begründung. Bleibt A still oder stellt keine Frage, ermutige: „Hast du noch eine Frage zu meiner Präsentation?“';
+
+  function teil1(d) {
+    const head = 'Jede Person hält eine Präsentation von ca. drei Minuten zu einem Thema des Aufgabenblatts (Teil 1A), gerichtet an die Partnerin bzw. den Partner. Danach fasst die andere Person zusammen, was besonders bemerkenswert war, und stellt Anschlussfragen (Teil 1B); die erste antwortet. Dann werden die Rollen getauscht. Ihr duzt euch beim Fragen, die Präsentation selbst ist halbformell.\n' + MILA_BIO + '\nThema von A: {C}\nDein Thema: {O}\n';
+    const lc = s => s.charAt(0).toLowerCase() + s.slice(1);
+    return {
+      n: 1, no: 'Teil 1', name: 'Präsentation, Zusammenfassung und Anschlussfragen', ko: '발표·요약·후속 질문',
+      summary_ko: '주제를 하나 골라 약 3분 동안 발표하고(1A), 파트너가 요약하고 묻는 질문에 답합니다(1B). 그다음 역할을 바꿔 파트너의 발표를 요약하고 질문합니다.',
+      kind: 'dialog', askStarter: true, timing: { official: 600, extra: 120, prep: 1200 }, minFinish: 150, prepLabel: '준비 시간(실제 시험은 20분, 메모는 키워드만 가능)',
+      longHint: [195000, '[Hinweis: Die Redezeit von A (ca. 3 Minuten) ist vorbei. Warte, bis A fertig ist, und fasse dann kurz zusammen, was besonders bemerkenswert war, und stelle deine Fragen.]'],
+      rubric: RUB_T1,
+      evalNotes: ['Teil 1A und Teil 1B der telc-Prüfung sind hier ein zusammenhängender Ablauf: Präsentation von A, danach Zusammenfassung und Fragen der Partnerin, Antworten von A, dann Rollentausch. Bewerte 1A anhand der Präsentation von A und 1B anhand der Zusammenfassung und der Fragen von A zur Präsentation der Partnerin. Die Antworten auf Fragen zählen zum Inhalt.'],
+      instruction: d.setA + ' sollen Sie ein Kurzreferat (ca. 3 Minuten) halten. Wählen Sie eines der Themen aus. Sie können sich Notizen machen (Stichworte, keinen zusammenhängenden Text). Denken Sie auch an eine Einleitung (Beispiel, eigene Erfahrung, …) und an einen Schluss bzw. ein Fazit. Ihr Vortrag soll gut gegliedert sein und das Thema klar und detailliert darstellen. Im Anschluss werden Ihnen Fragen gestellt.',
+      sheet: [
+        { t: 'h', s: 'Teil 1B Zusammenfassung und Anschlussfragen (2 Minuten)' },
+        { t: 'ul', items: ['Machen Sie sich Notizen, während Ihre Partnerin oder Ihr Partner ihre bzw. seine Präsentation vorträgt. Im Anschluss an die Präsentation sagen Sie dann zusammenfassend, was Ihre Partnerin oder Ihr Partner vorgetragen hat.', 'Stellen Sie dann Ihrer Partnerin oder Ihrem Partner Anschlussfragen.'] },
+        { t: 'p', x: true, s: '연습 방식: 아래 목록에서 주제를 하나 고릅니다(실제 시험에서는 내 카드의 두 주제 중에서 고릅니다). 먼저 내가 약 3분 발표를 하면 파트너 Mila가 요약하고 질문합니다. 그다음 Mila가 다른 카드의 주제로 발표하고, 내가 눈에 띈 점을 요약한 뒤 질문을 합니다. Mila의 발표는 2~3분으로 줄였습니다. 마지막에 시험관이 내 주제에 대해 한 가지를 더 물을 수 있습니다.' }
+      ],
+      choice: {
+        label_ko: '발표할 주제를 하나 고르십시오. 실제 시험에서는 자기 카드(A)의 주제 2개 중에서 고릅니다. B·C 카드의 주제는 추가 연습용입니다. 파트너는 남은 주제 중 하나로 발표합니다.',
+        other: 'random', items: d.items
+      },
+      intro: 'Wir beginnen mit Teil 1: Präsentation, Zusammenfassung und Anschlussfragen. Sie halten ein Kurzreferat von ca. drei Minuten zu Ihrem Thema, gerichtet an {dat}, nicht an mich. Danach fasst {n} zusammen, was besonders bemerkenswert war, und stellt Anschlussfragen. Anschließend halten die Rollen: {n} hält eine Präsentation, Sie fassen zusammen und stellen Fragen. Wer möchte anfangen?',
+      procedure: 'Jede Person hält ca. drei Minuten eine Präsentation. Danach fasst die andere Person zusammen, was besonders bemerkenswert war, und stellt Anschlussfragen, dann wird getauscht. Am Ende kann ich noch eine Frage stellen. Ich sage Bescheid, wenn die Zeit um ist.',
+      flow: {
+        student: head + '1. A hält zuerst die Präsentation. Du hörst zu (skip_turn) und merkst dir die wichtigsten Punkte. A ist fertig, wenn A abschließt („Vielen Dank fürs Zuhören“, „Ich freue mich auf Fragen“) oder ein [Hinweis:] sagt, dass die Redezeit vorbei ist.\n2. ' + SUMMARIZE + '\n3. Sage danach „Danke für deine Antworten. Dann bin ich jetzt dran.“ und ' + TALK + '\n4. Nach deiner Präsentation fasst A zusammen und stellt Fragen. Höre zu (skip_turn), bis A fertig ist. ' + ANSWER,
+        partner: head + '1. Auf „Bitte beginnen Sie.“ ' + TALK + '\n2. Danach fasst A zusammen und stellt Fragen. Höre zu (skip_turn), bis A fertig ist. ' + ANSWER + '\n3. Sage danach „Danke für deine Fragen. Jetzt bist du dran. Du möchtest über dein Thema sprechen, oder?“ Höre der Präsentation von A zu (skip_turn). A ist fertig, wenn A abschließt oder ein [Hinweis:] es sagt. Dann: ' + lc(SUMMARIZE)
+      },
+      redemittel: '„Ich möchte heute über die Frage sprechen, ob …“ · „Das Thema habe ich gewählt, weil …“ · „Mein Vortrag hat drei Teile: Zuerst …, dann …, und am Ende ziehe ich ein Fazit.“ · „Zunächst zu den Vorteilen. … Nun zu den Nachteilen.“ · „Hinzu kommt …“ · „Eine Freundin von mir hat …“ · „Mein Fazit: … ist dann ein Gewinn, wenn …“ · „Vielen Dank fürs Zuhören – ich freue mich auf Fragen.“ · „Du hast über … gesprochen und beide Seiten dargestellt. Besonders interessant fand ich den Punkt, dass …“ · „Dein Fazit war, dass …“ · „Dazu habe ich eine Frage: …“ · „Würdest du … rückblickend noch einmal …?“ · „Und was hältst du von der Idee, dass …?“ · „Das ist ein interessanter Vergleich. Aber …“',
+      followup: { lead: 'Ich habe noch eine Frage zu Ihrer Präsentation: ', pool: { x: T1_FOLLOW } },
+      phrases: [
+        ['Ich möchte heute über (die Frage, ob) … sprechen', /ich möchte (heute )?(über|von)[^.]{0,80}(sprechen|berichten|erzählen|vorstellen)/],
+        ['Das Thema habe ich gewählt, weil …', /(thema (habe ich )?(gewählt|ausgesucht)|habe (ich )?(dieses )?thema (gewählt|ausgesucht))/],
+        ['Mein Vortrag hat drei Teile / Ich gehe so vor', /(vortrag hat (drei|zwei|vier) teile|gehe so vor|gliedert sich|zuerst (nenne|stelle|beschreibe))/],
+        ['Zunächst zu …, nun zu …, hinzu kommt …', /\b(zunächst zu|nun zu|hinzu kommt|außerdem|darüber hinaus)\b/],
+        ['Ein Vorteil/Nachteil ist … / Dagegen spricht …', /(vorteil|nachteil|einwand|einwände|gegenargument|dagegen spricht|dafür spricht)/],
+        ['Mein Fazit: … / Alles in allem …', /(mein fazit|alles in allem|zusammenfassend|abschließend|insgesamt halte ich)/],
+        ['Vielen Dank fürs Zuhören – ich freue mich auf Fragen', /(danke|vielen dank)[^.]{0,30}(zuhören|zugehört|aufmerksamkeit)|freue mich auf (eure |ihre |deine )?fragen|gespannt auf (deine|ihre|eure) fragen/],
+        ['Du hast über … gesprochen. Besonders interessant fand ich …', /(du hast|sie haben) (über|darüber|erzählt|gesprochen|dargestellt|erwähnt)|besonders (interessant|bemerkenswert|eindrucksvoll)/],
+        ['Dazu habe ich eine Frage: … / Würdest du …?', /(dazu habe ich eine frage|ich habe eine frage|würdest du|und was hältst du von)/],
+        ['Das ist ein interessanter Vergleich / eine gute Frage', /(interessante[rn]? (vergleich|frage|punkt)|gute frage|guter punkt)/]
+      ],
+      checks: [
+        { ko: '도입에서 주제를 밝히고 발표의 구성(부분)을 예고했다', kind: 'has', re: /(möchte (heute )?(über|von)|mein vortrag|mein thema|vortrag hat (drei|zwei|vier) teile|gehe so vor|zuerst .{0,60}(dann|danach)|zunächst .{0,60}(dann|danach|am ende))/, yesNote: '주제 소개와 구성 예고 표현이 있습니다.', noNote: '주제를 밝히거나 구성을 예고하는 표현이 없습니다.' },
+        { ko: '구체적인 예나 자기 경험을 들었다', kind: 'has', re: RE.example, yesNote: '예나 경험을 든 표현이 있습니다.', noNote: '예나 경험을 든 표현이 없습니다.' },
+        { ko: '찬반이나 장단점, 또는 설명과 평가를 모두 다뤘다', kind: 'all', parts: [{ re: /(vorteil|dafür spricht|einerseits|positiv|gefällt|beeindruckt|besonders)/, min: 1, label: '긍정·설명' }, { re: /(nachteil|dagegen|andererseits|einwand|einwände|gegenargument|allerdings|negativ|problem|kritisch)/, min: 1, label: '부정·반론' }] },
+        { ko: '평가나 주장에 이유를 붙였다(weil, denn, deshalb)', kind: 'count', re: RE.reason, yes: 4, maybe: 2, note: '이유를 나타내는 표현 {v}회' },
+        { ko: '결론(Fazit)에서 자기 입장을 정리했다', kind: 'has', re: /(mein fazit|fazit|zusammenfassend|abschließend|alles in allem|insgesamt|zum schluss|meiner meinung nach)/, yesNote: '결론·정리 표현이 있습니다.', noNote: '결론을 정리하는 표현이 없습니다.' },
+        { ko: '마무리에서 청중에게 감사하고 질문을 유도했다', kind: 'has', re: /(danke|vielen dank)[^.]{0,30}(zuhören|zugehört|aufmerksamkeit)|freue mich auf (eure |ihre |deine )?fragen|gespannt auf (deine|ihre|eure) fragen|fragen (beantworte|gern)/, yesNote: '감사와 질문 유도 표현이 있습니다.', noNote: '감사하거나 질문을 유도하는 마무리가 없습니다.' },
+        { ko: '약 3분 분량으로 발표했다', kind: 'longest', yes: 220, maybe: 130, note: '가장 긴 발화 {v}단어(3분은 300단어 안팎)' },
+        { ko: '파트너 발표를 반복하지 않고 눈에 띈 점을 골라 요약했다', kind: 'has', re: /((du|sie) (hast|haben) (über|darüber|erzählt|gesprochen|dargestellt|erwähnt|vorgestellt|gesagt)|besonders (interessant|bemerkenswert|eindrucksvoll|beeindruckt)|dein fazit|deine präsentation|dein vortrag)/, yesNote: '요약하고 눈에 띈 점을 짚는 표현이 있습니다.', noNote: '파트너 발표를 요약하는 표현이 없습니다.' },
+        { ko: '파트너의 발표에 대해 구체적인 질문을 하나 이상 했다', kind: 'questions', yes: 2, maybe: 1 },
+        { ko: '파트너의 질문에 두 문장 이상으로 답했다', kind: 'answers', yes: 20, maybe: 10 },
+        { ko: '시험관의 추가 질문에 의견과 이유를 넣어 답했다', kind: 'followans', yes: 15, maybe: 8 }
+      ]
+    };
+  }
+
+  function teil2(d) {
+    const head = 'Ihr habt dasselbe Zitat vor euch (Aufgabenblatt, die Prüfenden haben es vorgelegt): {C}\nIhr klärt zuerst kurz, wie ihr die Aussage versteht, und diskutiert dann: inwieweit ihr zustimmt oder ablehnt, mit Gründen und Beispielen, und ihr geht auf die Argumente des anderen ein. Ihr duzt euch.\n' + MILA_BIO + '\nDeine Haltung zum Zitat: {STANCE} („pro“ = du stimmst eher zu, „contra“ = du lehnst eher ab, „gemischt“ = du stimmst teilweise zu).\n';
+    const rest = '\nReagiere in jedem Beitrag direkt auf das, was A zuletzt gesagt hat („Da stimme ich dir zu, was … angeht. Trotzdem …“, „Das ist ein berechtigter Einwand. Vielleicht meint er aber gar nicht, dass …, sondern dass …“). Hat A eine andere Haltung, widersprich höflich mit Grund und einem Beispiel aus deinem Studium oder Alltag („Da würde ich widersprechen. Bei mir im Studium …“, erfinde ein glaubwürdiges). Hat A dieselbe Haltung, stimme teilweise zu und bring einen weiteren Gesichtspunkt oder eine Einschränkung. Stelle zwischendurch einmal eine Frage, die das Thema vertieft („Lässt sich … überhaupt …?“, „Wie siehst du das?“). Beiträge: drei bis vier Sätze, damit A viel Raum hat. Führe gegen Ende die Positionen zusammen: schlage eine gemeinsame Schlussformulierung vor („Dann würde ich den Satz am Ende so umformulieren: …“) und frage, ob A damit leben kann. Lies das Zitat nicht noch einmal vor.';
+    return {
+      n: 2, no: 'Teil 2', name: 'Diskussion über ein Zitat', ko: '인용문 토론',
+      summary_ko: '시험관이 제시한 인용문의 뜻을 짧게 설명하고, 동의하거나 반대하며 이유와 예를 들고, 파트너의 논거에 반응하면서 약 6분 토론합니다.',
+      kind: 'dialog', askStarter: true, stance: true, stanceOptions: ['pro', 'contra', 'gemischt'], timing: { official: 360, extra: 90, prep: 120 }, minFinish: 100, prepLabel: '인용문을 읽고 생각하는 시간(실제 시험에는 별도 준비 시간이 없습니다)',
+      longHint: [55000, '[Hinweis: A spricht schon länger. Reagiere beim nächsten Satzende kurz auf die Argumente von A.]'],
+      rubric: RUB_T2,
+      instruction: 'Diskutieren Sie mit Ihrem Partner bzw. Ihrer Partnerin das folgende Thema:',
+      sheet: [
+        { t: 'h', s: 'Teil 2 Diskussion (6 Minuten)' },
+        { t: 'ul', items: ['Wie verstehen Sie diese Aussage?', 'Sagen Sie, inwieweit Sie mit der Aussage übereinstimmen oder sie ablehnen.', 'Geben Sie dazu Gründe und Beispiele an.', 'Gehen Sie auch auf die Argumente Ihres Partners oder Ihrer Partnerin ein.'] },
+        { t: 'p', x: true, s: '연습 방식: 실제 시험에서는 시험관이 세 인용문 중 하나만 제시합니다. 아래 목록에서 인용문을 하나 고르면 파트너 Mila와 같은 인용문으로 토론합니다. 먼저 뜻을 짧게 설명하고, 동의 또는 반대하는 이유와 예를 든 뒤 Mila의 논거에 반응하십시오. 마지막에 두 사람의 입장을 모아 한 문장으로 정리하면 좋습니다.' }
+      ],
+      choice: { label_ko: '토론할 인용문(Zitat)을 하나 고르십시오. 실제 시험에서는 시험관이 하나를 정해 줍니다. 파트너도 같은 인용문으로 토론합니다.', other: null, items: d.quotes },
+      intro: 'Wir kommen zu Teil 2: Diskussion. Ich lege Ihnen folgendes Zitat vor: {C}. Klären Sie zunächst kurz, wie Sie die Aussage verstehen, und diskutieren Sie dann mit {dat}: Inwieweit stimmen Sie zu oder lehnen Sie ab? Nennen Sie Gründe und Beispiele und gehen Sie auf die Argumente von {n} ein. Wer möchte anfangen?',
+      procedure: 'Ihr klärt kurz, wie ihr das Zitat versteht, und diskutiert dann: zustimmen oder ablehnen, Gründe und Beispiele nennen, auf die Argumente des anderen eingehen. Ich sage Bescheid, wenn die Zeit um ist.',
+      flow: {
+        student: head + '1. A beginnt und erklärt, wie A die Aussage versteht. Du hörst zu (skip_turn), bis A fertig ist. Sage dann, wie du die Aussage verstehst, und nenne deine Haltung mit zwei Gründen.' + rest,
+        partner: head + '1. Auf „Bitte beginnen Sie.“ erkläre in zwei bis drei Sätzen, wie du die Aussage verstehst, und nenne deine Haltung mit einem Grund. Gib dann an A ab („Wie siehst du das?“).' + rest
+      },
+      redemittel: '„Ich verstehe das Zitat so, dass …“ · „Der Satz bedeutet für mich, dass …“ · „Ich stimme dem Zitat teilweise zu, weil …“ · „Da stimme ich dir zu, was … angeht. Trotzdem finde ich den Satz etwas einseitig.“ · „Das ist ein berechtigter Einwand. Vielleicht meint er aber gar nicht, dass …, sondern dass …“ · „Da würde ich widersprechen. In meinem Fach/Studium ist es genau umgekehrt: …“ · „Ich sehe das an meinem eigenen Studium: …“ · „Ein gutes Beispiel dafür ist …“ · „Mich interessiert noch ein anderer Aspekt: Lässt sich … überhaupt …?“ · „Das ist ein schönes Beispiel.“ · „Gut, darauf können wir uns wahrscheinlich einigen.“ · „Dann würde ich den Satz am Ende so umformulieren: …“ · „Damit kann ich leben.“',
+      phrases: [
+        ['Ich verstehe das Zitat so, dass …', /(ich verstehe (das|den|die|diese|dieses)[^.]{0,40}so|das zitat (bedeutet|besagt)|der satz (bedeutet|besagt)|will (damit )?sagen|meint damit)/],
+        ['Da stimme ich dir zu, was … angeht', /(stimme (ich )?(dir )?(voll |völlig )?zu|sehe das genauso|da hast du recht)/],
+        ['Trotzdem finde ich … etwas einseitig', /(trotzdem|dennoch|einseitig|allerdings)/],
+        ['Das ist ein berechtigter Einwand / guter Punkt', /(berechtigter einwand|guter punkt|gutes argument|da ist etwas dran)/],
+        ['Vielleicht meint er aber gar nicht, dass …, sondern dass …', /(vielleicht meint|sondern dass)/],
+        ['Da würde ich widersprechen / Das sehe ich anders', /(widersprechen|sehe das anders|sehe ich anders|bin anderer meinung)/],
+        ['In meinem Fach/Studium … ist es genau umgekehrt', /(in meinem (fach|studium|alltag)|genau umgekehrt|ich sehe das an|bei mir)/],
+        ['Ein gutes Beispiel dafür ist …', /(beispiel|zum beispiel|denk nur an)/],
+        ['Mich interessiert noch ein anderer Aspekt: …', /(anderer aspekt|anderen aspekt|noch ein aspekt|lässt sich .{0,40} überhaupt)/],
+        ['Dann würde ich den Satz so umformulieren … / Damit kann ich leben', /(umformulieren|damit kann ich leben|darauf können wir uns einigen|einigen)/]
+      ],
+      checks: [
+        { ko: '인용문의 뜻을 자기 말로 해석해 설명했다(Ich verstehe das so, dass …)', kind: 'has', re: /(ich verstehe (das|den|die|diese|dieses)[^.]{0,40}so|das zitat (bedeutet|besagt)|der satz (bedeutet|besagt|sagt)|will (damit )?sagen|meint damit|die aussage (bedeutet|besagt)|ich interpretiere)/, yesNote: '인용문을 해석하는 표현이 있습니다.', noNote: '인용문의 뜻을 설명하는 표현이 없습니다.' },
+        { ko: '동의 또는 반대하는 자기 의견을 이유와 함께 말했다', kind: 'all', parts: [{ re: RE.opinion, min: 1, label: '의견' }, { re: RE.reason, min: 1, label: '이유' }] },
+        { ko: '자기 경험이나 구체적인 예를 넣었다', kind: 'has', re: RE.example, yesNote: '경험이나 예를 든 표현이 있습니다.', noNote: '경험이나 예를 든 표현이 없습니다.' },
+        { ko: '파트너의 논거에 직접 반응했다(동의·부분 동의·반박)', kind: 'count', re: RE.react, yes: 3, maybe: 1, note: '반응 표현 {v}회' },
+        { ko: '단순한 동의가 아니라 한계나 반론(Einwand)을 제시했다', kind: 'has', re: /(trotzdem|dennoch|einseitig|einwand|einwenden|widersprechen|sehe das anders|allerdings|andererseits|umgekehrt|aber man darf nicht)/, yesNote: '반론이나 한계를 제시하는 표현이 있습니다.', noNote: '반론이나 한계를 제시하는 표현이 없습니다.' },
+        { ko: '파트너에게 되묻거나 주제를 깊게 하는 질문을 했다', kind: 'has', re: RE.question, yesNote: '되묻거나 질문하는 표현이 있습니다.', noNote: '되묻는 표현이 없습니다.' },
+        { ko: '마무리에서 두 사람의 입장을 하나로 모았다(Schlussformulierung)', kind: 'has', re: RE.wrap, yesNote: '정리하거나 합의하는 표현이 있습니다.', noNote: '입장을 모아 정리하는 표현이 없습니다.' }
+      ]
+    };
+  }
+
+  /* ---------------- 시험 틀 ---------------- */
+  const topics = list => list.map(x => ({ id: x[0], de: x[1], ko: x[0].charAt(0) + '·주제 ' + x[0].charAt(1) + ' · ' + x[2] }));
+  const quotes = list => list.map((x, i) => ({ id: String(i + 1), de: x[0], hint: x[1], ko: 'Zitat ' + (i + 1) + ' · ' + x[2] }));
+
+  function mk(n, d) {
+    return {
+      id: n === 1 ? 'telc-c1-hs' : 'telc-c1-hs-' + n, access: 'telc-C1-HS', org: 'telc', level: 'C1', mdt: n,
+      name: 'telc Deutsch C1 Hochschule', short: 'telc C1 HS', label: 'telc Deutsch C1 Hochschule, Modelltest ' + n,
+      ko: 'telc C1 Hochschule · Mündlicher Ausdruck', lead_ko: '약 3분 발표(Präsentation)와 후속 질문, 인용문 토론을 연습합니다.',
+      teile: [teil1({ setA: d.setA, items: topics(d.topics) }), teil2({ quotes: quotes(d.quotes) })]
+    };
+  }
+
+  EXAMS.push(
+    /* ====================================================================== telc C1 Hochschule · Modelltest 1 */
+    mk(1, {
+      setA: 'In einer Informationsveranstaltung für Studienanfängerinnen und -anfänger',
+      topics: [
+        ['A1', 'Beschreiben Sie das Prüfungssystem an Hochschulen in einem Land Ihrer Wahl (Prüfungsformen, Benotung, Wiederholungsmöglichkeiten). Was halten Sie davon?', '한 나라의 대학 시험 제도와 내 의견'],
+        ['A2', 'Sollten Studierende neben dem Studium arbeiten? Welche Vorteile und welche Nachteile hat ein Nebenjob? Begründen Sie Ihre Meinung.', '학업 중 아르바이트의 장단점'],
+        ['B1', 'Stellen Sie eine Persönlichkeit aus Wissenschaft oder Kultur vor, die Sie beeindruckt. Was macht sie aus Ihrer Sicht bedeutend, und was kann man von ihr lernen?', '인상 깊은 학자·문화인 소개'],
+        ['B2', 'Sollte der Zugang zum Studium durch Zulassungsbeschränkungen (z. B. Notendurchschnitt, Aufnahmeprüfung) geregelt werden? Welche Alternativen gibt es? Begründen Sie Ihre Meinung.', '입학 제한(성적·입학시험) 찬반과 대안'],
+        ['C1', 'Beschreiben Sie, welche Rolle Sport und Bewegung im Alltag von Studierenden spielen und wie Hochschulen gesunde Gewohnheiten unterstützen könnten.', '대학생의 운동과 학교의 지원 방안'],
+        ['C2', 'Große Vorlesungen oder kleine Seminare – welche Lehrform halten Sie für wirksamer? Begründen Sie Ihre Meinung. Gibt es Gegenargumente?', '대형 강의와 소규모 세미나']
+      ],
+      quotes: [
+        ['„Man muss das Wahre immer wiederholen, weil auch der Irrtum um uns her immer wieder gepredigt wird.“', 'Johann Wolfgang von Goethe, 1749–1832, Dichter', '진실은 오류도 계속 퍼지므로 되풀이해 말해야 한다'],
+        ['„Phantasie ist wichtiger als Wissen, denn Wissen ist begrenzt.“', 'Albert Einstein, 1879–1955, Physiker', '상상력이 지식보다 중요하다'],
+        ['„Im Grunde sind es immer die Verbindungen mit Menschen, die dem Leben seinen Wert geben.“', 'Wilhelm von Humboldt, 1767–1835, Gelehrter und Bildungsreformer', '삶의 가치를 주는 것은 사람과의 관계']
+      ]
+    }),
+
+    /* ====================================================================== telc C1 Hochschule · Modelltest 2 */
+    mk(2, {
+      setA: 'In einem Tutorium für internationale Studierende',
+      topics: [
+        ['A1', 'Beschreiben Sie eine Erfindung oder Entdeckung, die den Alltag der Menschen stark verändert hat. Welche Folgen hatte sie, und wie beurteilen Sie diese?', '일상을 크게 바꾼 발명·발견과 그 결과'],
+        ['A2', 'Sollte ein Auslandssemester für alle Studierenden verpflichtend sein? Welche Vorteile und welche Nachteile hätte eine solche Regelung? Begründen Sie Ihre Meinung.', '교환학기 의무화 찬반'],
+        ['B1', 'Stellen Sie ein Buch, einen Film oder eine Serie vor, die Sie zum Nachdenken gebracht hat. Worum geht es, und warum ist das Werk aus Ihrer Sicht wichtig?', '생각하게 만든 책·영화·시리즈 소개'],
+        ['B2', 'Sollten Studierende ihre Lehrenden öffentlich und namentlich bewerten dürfen, zum Beispiel auf Online-Plattformen? Begründen Sie Ihre Meinung.', '학생의 교수 실명 공개 평가 찬반'],
+        ['C1', 'Beschreiben Sie eine Forschungsfrage aus Ihrem Fach, die Sie besonders interessiert. Warum ist sie wichtig, und wie könnte man sie untersuchen?', '내 전공의 관심 연구 질문'],
+        ['C2', 'Gruppenarbeit oder Einzelarbeit – welche Arbeitsform bringt im Studium mehr? Begründen Sie Ihre Meinung. Gibt es Gegenargumente?', '조별 작업과 개인 작업 비교']
+      ],
+      quotes: [
+        ['„Habe Mut, dich deines eigenen Verstandes zu bedienen!“', 'Immanuel Kant, 1724–1804, Philosoph', '용기를 내어 자기 이성을 사용하라'],
+        ['„Ich kann freilich nicht sagen, ob es besser werden wird, wenn es anders wird; aber so viel kann ich sagen: Es muss anders werden, wenn es gut werden soll.“', 'Georg Christoph Lichtenberg, 1742–1799, Physiker und Schriftsteller', '달라진다고 나아질지는 모르지만 좋아지려면 달라져야 한다'],
+        ['„Wenn es einen Glauben gibt, der Berge versetzen kann, so ist es der Glaube an die eigene Kraft.“', 'Marie von Ebner-Eschenbach, 1830–1916, Schriftstellerin', '산을 옮기는 믿음이 있다면 자기 힘에 대한 믿음']
+      ]
+    }),
+
+    /* ====================================================================== telc C1 Hochschule · Modelltest 3 */
+    mk(3, {
+      setA: 'Im Rahmen eines Workshops zur Präsentationstechnik',
+      topics: [
+        ['A1', 'Beschreiben Sie, wie das Internet das Einkaufen verändert hat. Welche Folgen hat diese Entwicklung für Innenstädte und Geschäfte?', '인터넷이 쇼핑을 바꾼 일과 도심·상점에 미친 영향'],
+        ['A2', 'Sollte es für junge Erwachsene ein verpflichtendes soziales Jahr geben? Welche Vorteile und welche Nachteile hätte eine solche Regelung? Begründen Sie Ihre Meinung.', '청년 사회봉사 1년 의무화 찬반'],
+        ['B1', 'Stellen Sie ein Gericht vor, das für Ihr Herkunftsland typisch ist. Welche Geschichte hat es, und welche Rolle spielt es heute?', '내 나라의 대표 음식, 역사와 오늘날의 의미'],
+        ['B2', 'Sollten Kinder schon in der Grundschule programmieren lernen? Begründen Sie Ihre Meinung.', '초등학교 코딩 교육 찬반'],
+        ['C1', 'Beschreiben Sie, wie Sie eine Fremdsprache gelernt haben. Was hat Ihnen geholfen, und was fiel Ihnen schwer?', '외국어를 배운 과정(도움이 된 것, 어려웠던 것)'],
+        ['C2', 'Sollten Schulen ein Fach einführen, in dem es um Alltagskompetenzen wie Gesundheit, Finanzen und Konfliktlösung geht? Begründen Sie Ihre Meinung. Gibt es Gegenargumente?', '생활 역량(건강·금융·갈등 해결) 과목 도입 찬반']
+      ],
+      quotes: [
+        ['„Nicht die Wahrheit, in deren Besitz irgendein Mensch ist …, sondern die aufrichtige Mühe, die er angewandt hat, hinter die Wahrheit zu kommen, macht den Wert des Menschen.“', 'Gotthold Ephraim Lessing, 1729–1781, Dichter und Philosoph', '인간의 가치는 진리를 가졌는지가 아니라 진리에 이르려는 진지한 노력에 있다'],
+        ['„Das Talent gleicht dem Schützen, der ein Ziel trifft, welches die Übrigen nicht erreichen können; das Genie dem, der eines trifft, bis zu welchem sie nicht einmal zu sehen vermögen.“', 'Arthur Schopenhauer, 1788–1860, Philosoph', '재능은 남이 못 맞히는 과녁을, 천재는 남이 보지도 못하는 과녁을 맞힌다'],
+        ['„Stets findet Überraschung statt, da, wo man’s nicht erwartet hat.“', 'Wilhelm Busch, 1832–1908, Dichter und Zeichner', '놀라운 일은 기대하지 않은 곳에서 일어난다']
+      ]
+    }),
+
+    /* ====================================================================== telc C1 Hochschule · Modelltest 4 */
+    mk(4, {
+      setA: 'Im Rahmen eines Workshops zur Präsentationstechnik',
+      topics: [
+        ['A1', 'Beschreiben Sie einen Ort in Ihrem Heimatland, der für Sie eine besondere Bedeutung hat. Was verbinden Sie mit diesem Ort?', '고향에서 내게 특별한 의미가 있는 장소'],
+        ['A2', 'Sollte der öffentliche Nahverkehr in Städten kostenlos sein? Welche Vorteile und welche Nachteile hätte eine solche Regelung? Begründen Sie Ihre Meinung.', '도시 대중교통 무료화 찬반'],
+        ['B1', 'Stellen Sie ein Fest aus Ihrem Heimatland vor. Woher stammt es, und wie wird es heute gefeiert?', '고향의 축제 소개'],
+        ['B2', 'Sollten Zoos abgeschafft werden? Begründen Sie Ihre Meinung.', '동물원 폐지 찬반'],
+        ['C1', 'Beschreiben Sie, wie sich Ihr Heimatort in den letzten Jahren verändert hat. Was gefällt Ihnen an diesen Veränderungen, und was nicht?', '최근 몇 해 동안 내 고향의 변화'],
+        ['C2', 'Sollten Schulen auf Hausaufgaben verzichten? Begründen Sie Ihre Meinung und gehen Sie auch auf Gegenargumente ein.', '학교 숙제 폐지 찬반']
+      ],
+      quotes: [
+        ['„Wer gar zu viel bedenkt, wird wenig leisten.“', 'Friedrich Schiller, 1759–1805, Dichter und Dramatiker', '너무 많이 따지는 사람은 이루는 것이 적다'],
+        ['„Das Wissen allein ist nicht Zweck des Menschen auf der Erde.“', 'Hermann von Helmholtz, 1821–1894, Physiker und Physiologe', '지식만이 인간의 목적은 아니다'],
+        ['„Man muss noch Chaos in sich haben, um einen tanzenden Stern gebären zu können.“', 'Friedrich Nietzsche, 1844–1900, Philosoph', '춤추는 별을 낳으려면 내면에 아직 혼돈이 있어야 한다']
+      ]
+    }),
+
+    /* ====================================================================== telc C1 Hochschule · Modelltest 5 */
+    mk(5, {
+      setA: 'In einem Kurs zur Studienvorbereitung',
+      topics: [
+        ['A1', 'Beschreiben Sie einen Beruf, der in Ihrem Heimatland ein besonders hohes Ansehen genießt. Woran liegt das, und wie sehen Sie das selbst?', '고향에서 평판이 높은 직업'],
+        ['A2', 'Sollten Einwegverpackungen für Speisen und Getränke zum Mitnehmen verboten werden? Begründen Sie Ihre Meinung.', '테이크아웃 일회용 포장 금지 찬반'],
+        ['B1', 'Beschreiben Sie, welche Rolle Haustiere in Ihrem Heimatland spielen. Wie leben die Menschen dort mit Tieren zusammen?', '고향에서 반려동물이 하는 역할'],
+        ['B2', 'Sollte das Wahlalter bei allen Wahlen auf 16 Jahre gesenkt werden? Begründen Sie Ihre Meinung.', '투표 연령 16세 인하 찬반'],
+        ['C1', 'Stellen Sie ein Spiel vor, das in Ihrem Heimatland beliebt ist oder das Sie als Kind gern gespielt haben. Was macht es besonders?', '고향에서 인기 있거나 어릴 때 즐긴 놀이'],
+        ['C2', 'Sollte Werbung für ungesunde Lebensmittel verboten werden, wenn sie sich an Kinder richtet? Begründen Sie Ihre Meinung und gehen Sie auch auf Gegenargumente ein.', '어린이 대상 해로운 식품 광고 금지 찬반']
+      ],
+      quotes: [
+        ['„Es gibt nichts Gutes, außer: Man tut es.“', 'Erich Kästner, 1899–1974, Schriftsteller', '좋은 일은 실천하는 것 말고는 없다'],
+        ['„Wo aber Gefahr ist, wächst das Rettende auch.“', 'Friedrich Hölderlin, 1770–1843, Dichter', '위험이 있는 곳에서 구원도 자란다'],
+        ['„Wer es einmal so weit gebracht hat, dass er nicht mehr irrt, der hat auch zu arbeiten aufgehört.“', 'Max Planck, 1858–1947, Physiker', '더는 틀리지 않게 된 사람은 일하기를 그만둔 것이다']
+      ]
+    }),
+
+    /* ====================================================================== telc C1 Hochschule · Modelltest 6 */
+    mk(6, {
+      setA: 'In einem Kurs zur Studienvorbereitung',
+      topics: [
+        ['A1', 'Stellen Sie ein Hobby vor, das Sie anderen empfehlen würden. Was braucht man dafür, und was macht es besonders?', '남에게 추천하고 싶은 취미'],
+        ['A2', 'Sollte die Vier-Tage-Woche bei gleichem Lohn eingeführt werden? Begründen Sie Ihre Meinung und gehen Sie auch auf Gegenargumente ein.', '임금 유지 주 4일 근무제 찬반'],
+        ['B1', 'Beschreiben Sie, welche Rolle Großeltern in den Familien Ihres Heimatlandes spielen. Hat sich daran in den letzten Jahrzehnten etwas verändert?', '고향 가정에서 조부모의 역할과 변화'],
+        ['B2', 'Sollten an Schulen Uniformen eingeführt werden? Begründen Sie Ihre Meinung.', '학교 교복 도입 찬반'],
+        ['C1', 'Stellen Sie ein Sprichwort aus Ihrem Heimatland vor. Was bedeutet es, und in welchen Situationen verwendet man es?', '고향의 속담(뜻과 쓰이는 상황)'],
+        ['C2', 'Sollte privates Feuerwerk an Silvester verboten werden? Begründen Sie Ihre Meinung.', '새해 전야 개인 불꽃놀이 금지 찬반']
+      ],
+      quotes: [
+        ['„Erst der Ernst macht den Mann, erst der Fleiß das Genie.“', 'Theodor Fontane, 1819–1898, Schriftsteller', '진지함이 사람을, 성실함이 천재를 만든다'],
+        ['„Man kann eine Sache auch zwanzig Jahre lang falsch machen.“', 'Kurt Tucholsky, 1890–1935, Schriftsteller und Journalist', '어떤 일을 이십 년 동안 잘못할 수도 있다'],
+        ['„Wenn jemand eine Reise tut, so kann er was erzählen.“', 'nach Matthias Claudius, 1740–1815, Dichter', '여행을 하면 이야기할 거리가 생긴다']
+      ]
+    }),
+
+    /* ====================================================================== telc C1 Hochschule · Modelltest 7 */
+    mk(7, {
+      setA: 'In einem Kurs zur Studienvorbereitung',
+      topics: [
+        ['A1', 'Stellen Sie ein traditionelles Handwerk aus Ihrem Heimatland vor. Wie wird es ausgeübt, und hat es heute noch eine Zukunft?', '고향의 전통 수공예와 그 미래'],
+        ['A2', 'Sollten Smartphones an Schulen verboten werden? Begründen Sie Ihre Meinung und gehen Sie auch auf Gegenargumente ein.', '학교 스마트폰 금지 찬반'],
+        ['B1', 'Beschreiben Sie, wie man sich in Ihrem Heimatland um eine Arbeitsstelle bewirbt. Was ist dabei besonders wichtig?', '고향의 구직·지원 방식'],
+        ['B2', 'Sollten Eltern ihre Kinder selbst zu Hause unterrichten dürfen? Begründen Sie Ihre Meinung.', '부모의 홈스쿨링 허용 찬반'],
+        ['C1', 'Stellen Sie eine Landschaft Ihres Heimatlandes vor, die Sie besonders beeindruckt. Was macht sie so besonders?', '인상 깊은 고향의 풍경'],
+        ['C2', 'Sollten Geschäfte auch an Sonntagen öffnen dürfen? Begründen Sie Ihre Meinung.', '일요일 상점 영업 허용 찬반']
+      ],
+      quotes: [
+        ['„Sieh nach den Sternen! Gib acht auf die Gassen!“', 'Wilhelm Raabe, 1831–1910, Schriftsteller', '별을 바라보고 골목길도 살펴라'],
+        ['„Die Politik bedeutet ein starkes langsames Bohren von harten Brettern mit Leidenschaft und Augenmaß zugleich.“', 'Max Weber, 1864–1920, Soziologe', '정치는 열정과 균형 감각으로 단단한 널빤지를 천천히 뚫는 일'],
+        ['„Nicht das Wissen, sondern das Lernen gewährt den größten Genuss.“', 'nach Carl Friedrich Gauß, 1777–1855, Mathematiker', '가장 큰 즐거움은 지식이 아니라 배우는 과정에 있다']
+      ]
+    }),
+
+    /* ====================================================================== telc C1 Hochschule · Modelltest 8 */
+    mk(8, {
+      setA: 'In einem Kurs zur Studienvorbereitung',
+      topics: [
+        ['A1', 'Stellen Sie eine Musikrichtung oder ein Musikinstrument aus Ihrem Heimatland vor. Welche Rolle spielt sie bzw. es heute?', '고향의 음악 장르·악기와 오늘날의 역할'],
+        ['A2', 'Sollte das Tragen eines Fahrradhelms Pflicht werden? Begründen Sie Ihre Meinung und gehen Sie auch auf Gegenargumente ein.', '자전거 헬멧 착용 의무화 찬반'],
+        ['B1', 'Stellen Sie eine bekannte Sage oder ein Märchen aus Ihrem Heimatland vor. Was erzählt die Geschichte über die Menschen dort?', '고향의 전설·동화와 그것이 보여 주는 사람들'],
+        ['B2', 'Sollten Museen ihre Ausstellungen kostenlos zugänglich machen? Begründen Sie Ihre Meinung.', '박물관 전시 무료 개방 찬반'],
+        ['C1', 'Beschreiben Sie, wie die Menschen in Ihrem Heimatland ihre Zeit zwischen Arbeit und Freizeit aufteilen. Was hat sich in den letzten Jahren verändert?', '고향 사람들의 일과 여가 시간 배분과 변화'],
+        ['C2', 'Sollte die Zeitumstellung zwischen Sommer- und Winterzeit abgeschafft werden? Begründen Sie Ihre Meinung.', '서머타임(시간 변경) 폐지 찬반']
+      ],
+      quotes: [
+        ['„Der Mensch ist, was er isst.“', 'Ludwig Feuerbach, 1804–1872, Philosoph', '인간은 그가 먹는 것이다'],
+        ['„Die Gedanken entstehen erst beim Reden.“', 'nach Heinrich von Kleist, 1777–1811, Schriftsteller', '생각은 말하는 도중에 비로소 생긴다'],
+        ['„Lieber Geld verlieren als Vertrauen.“', 'Robert Bosch, 1861–1942, Unternehmer', '신뢰를 잃느니 차라리 돈을 잃는 편이 낫다']
+      ]
     })
   );
 })();
@@ -4974,7 +5578,7 @@ const EXAMS = [
 
 /* 마지막에 실행: 표시 순서(A2 → B1 → B2, 같은 레벨은 Goethe → telc, 각 시험 안에서 Modelltest 번호순) */
 (function () {
-  const ORDER = { 'goethe-a2': 0, 'goethe-b1': 1, 'telc-b1': 2, 'goethe-b2': 3, 'telc-b2': 4, 'ueb-a1': 4.5, 'ueb-a2': 5, 'ueb-b1': 6, 'ueb-b2': 7 };
+  const ORDER = { 'goethe-a2': 0, 'goethe-b1': 1, 'telc-b1': 2, 'goethe-b2': 3, 'telc-b2': 4, 'telc-c1-hs': 4.2, 'ueb-a1': 4.5, 'ueb-a2': 5, 'ueb-b1': 6, 'ueb-b2': 7 };
   const fam = e => e.id.replace(/-\d+$/, '');
   EXAMS.sort((a, b) => ORDER[fam(a)] - ORDER[fam(b)] || a.mdt - b.mdt);
 })();
@@ -6419,7 +7023,7 @@ function evalPayload(ex, t) {
     student_name: S.user.id, exam_label: ex.label, level: ex.level, teil_label: T.no, teil_name: T.name + ' (' + T.ko + ')', mode: T.kind,
     task: (gdOf(T) ? gdTaskDe(ex, T) : taskTextDe(ex, T, null)) + (lastChoice && lastChoice.studentTopic ? '\n\nGewählt von A: ' + lastChoice.studentTopic : ''),
     check_items: T.checks.map(c => c.ko),
-    rubric: { grades: rb.grades, points: rb.points, criteria: rb.criteria.map(c => ({ key: c.key, de: c.de, ko: c.ko, assess: c.assess, desc_ko: c.desc_ko })), notes: rb.notes.concat(T.evalNotes || []) },
+    rubric: { grades: rb.grades, points: rb.points, criteria: rb.criteria.map(c => ({ key: c.key, de: c.de, ko: c.ko, assess: c.assess, max: c.max, pts: c.pts, desc_ko: c.desc_ko })), notes: rb.notes.concat(T.evalNotes || []) },
     attempts: r.attempts.filter(a => a.turns.some(x => x.role === 'student')).slice(-2).map(a => ({
       no: a.no, partner_type: a.partnerName, duration_sec: a.durationSec, starter: a.starter,
       turns: a.turns.map(x => ({ role: x.role, text: x.text })),
@@ -6488,7 +7092,7 @@ function evalHtml(T, e, attempts) {
   const list = a => '<ul class="plain">' + (a || []).map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>';
   const errs = (e.errors || []).map(x => '<div class="err-item"><div class="o">✗ ' + esc(x.original_de) + '</div><div class="c">✓ ' + esc(x.corrected_de) + '</div><div class="small"><b>' + esc(x.type_ko) + '</b> · ' + esc(x.why_ko) + '</div></div>').join('');
   const red = e.redemittel || {};
-  const note = rb.points ? '세 기준 합계 ' + pts + '/' + max + '점. ' + rb.note_ko : rb.note_ko;
+  const note = rb.points ? '기준 합계 ' + pts + '/' + max + '점. ' + rb.note_ko : rb.note_ko;
   return '<div class="card"><h2>총평</h2><p>' + esc(e.overall_ko) + '</p></div>' +
     '<div class="card"><h2>등급(SODA 추정)</h2><table class="sc"><tr><th>기준</th><th>등급' + (rb.points ? '·점수' : '') + '</th><th>근거</th></tr>' + rows + '</table><p class="muted small" style="margin-top:8px">' + esc(note) + ' 발음·억양은 전사로 평가할 수 없어 제외했습니다. 공식 채점이 아닙니다.</p></div>' +
     '<div class="card"><h2>과제 수행 점검</h2>' + (e.task_checks || []).map(c => '<div class="chk"><div class="mk ' + (c.done ? 'yes' : 'no') + '">' + (c.done ? '✓' : '✗') + '</div><div>' + esc(c.item_ko) + '<small>' + esc(c.evidence_ko) + '</small></div></div>').join('') + '</div>' +
