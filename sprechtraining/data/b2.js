@@ -267,5 +267,133 @@ window.DIALOG_DATA.B2 = [
         { de: "Entscheidend ist, dass wir …, statt abzuwarten.", ko: "중요한 건 가만히 기다리지 말고 우리가 …하는 거야." }
       ] }
     ]
+  },
+  {
+    no: 7, lv: "B2",
+    title: "Streit um die Nebenkosten", titleKo: "관리비 정산 문제", type: "Wohnen", typeKo: "주거",
+    intro: "관리비 정산서의 항목을 두고 세입자와 집주인이 이야기하는 대화예요.",
+    focus: ["Beschwerde", "Belege einsehen", "Kompromiss"],
+    roles: { A: "Mieterin", B: "Vermieter" },
+    turns: [
+      { r: "A", de: "Guten Tag, Herr Schneider. Ich habe die Nebenkostenabrechnung bekommen und verstehe einige Posten nicht. Hätten Sie kurz Zeit?", ko: "안녕하세요, 슈나이더 씨. 관리비 정산서를 받았는데 이해가 안 되는 항목이 몇 개 있어요. 잠깐 시간 되세요?" },
+      { r: "B", de: "Natürlich, Frau Park. Worum geht es genau?", ko: "물론이죠, 박 씨. 정확히 어떤 건가요?" },
+      { r: "A", de: "Die Heizkosten sind im Vergleich zum letzten Jahr um fast 40 Prozent gestiegen, obwohl ich kaum zu Hause war.", ko: "난방비가 작년보다 거의 40퍼센트 올랐어요. 저는 집에 거의 없었는데도요." },
+      { r: "B", de: "Das liegt vor allem an den höheren Gaspreisen. Außerdem war der Verbrauch im ganzen Haus etwas höher als sonst.", ko: "주로 가스 가격이 올랐기 때문이에요. 게다가 건물 전체 사용량도 평소보다 조금 많았어요." },
+      { r: "A", de: "Verstehe. Trotzdem möchte ich die Abrechnung gern prüfen. Dürfte ich die Belege einsehen?", ko: "이해해요. 그래도 정산서를 확인해 보고 싶어요. 증빙 자료를 볼 수 있을까요?" },
+      { r: "B", de: "Selbstverständlich, dazu sind Sie berechtigt. Sie können die Unterlagen in meinem Büro einsehen oder Kopien verlangen.", ko: "물론이죠, 그럴 권리가 있으세요. 제 사무실에서 서류를 보시거나 사본을 요청하실 수 있어요." },
+      { r: "A", de: "Mir ist außerdem aufgefallen, dass die Kosten für die Hausmeisterei doppelt so hoch sind wie im Vorjahr. Wie kommt das?", ko: "그리고 관리인 비용이 전년의 두 배라는 것도 눈에 띄었어요. 어떻게 된 건가요?" },
+      { r: "B", de: "Wir haben im Frühjahr den Dienstleister gewechselt. Der neue Anbieter ist teurer, kümmert sich aber auch um den Garten.", ko: "봄에 업체를 바꿨어요. 새 업체는 더 비싸지만 정원도 관리해요." },
+      { r: "A", de: "Mir war nicht klar, dass die Gartenpflege jetzt dazugehört. Darüber hätten Sie uns vorher informieren sollen.", ko: "정원 관리가 이제 포함된다는 건 몰랐어요. 그 점을 미리 알려 주셨어야 해요." },
+      { r: "B", de: "Da haben Sie recht, das hätte ich früher ankündigen sollen. Als Entgegenkommen übernehme ich die Mehrkosten für dieses Jahr.", ko: "맞는 말씀이에요, 더 일찍 알렸어야 했어요. 성의 표시로 올해 추가 비용은 제가 부담할게요." },
+      { r: "A", de: "Das ist fair. Bitte schicken Sie mir die korrigierte Abrechnung schriftlich zu, damit alles dokumentiert ist.", ko: "공정하네요. 모든 게 기록으로 남도록 수정된 정산서를 서면으로 보내 주세요." },
+      { r: "B", de: "Mache ich gern. Sie erhalten sie bis Ende nächster Woche.", ko: "기꺼이 그렇게 할게요. 다음 주 말까지 받으실 거예요." }
+    ],
+    redemittel: [
+      { group: "Anliegen vortragen", items: [
+        { de: "Ich verstehe einige Posten nicht.", ko: "이해가 안 되는 항목이 몇 개 있어요." },
+        { de: "Die Heizkosten sind um fast 40 Prozent gestiegen.", ko: "난방비가 거의 40퍼센트 올랐어요." }
+      ] },
+      { group: "Prüfung verlangen", items: [
+        { de: "Dürfte ich die Belege einsehen?", ko: "증빙 자료를 볼 수 있을까요?" },
+        { de: "Sie können Kopien verlangen.", ko: "사본을 요청하실 수 있어요." }
+      ] },
+      { group: "Erklären", items: [
+        { de: "Das liegt vor allem an den höheren Gaspreisen.", ko: "주로 가스 가격이 올랐기 때문이에요." },
+        { de: "Wir haben den Dienstleister gewechselt.", ko: "업체를 바꿨어요." }
+      ] },
+      { group: "Kritik üben", items: [
+        { de: "Darüber hätten Sie uns vorher informieren sollen.", ko: "그 점을 미리 알려 주셨어야 해요." }
+      ] },
+      { group: "Einigen", items: [
+        { de: "Als Entgegenkommen übernehme ich die Mehrkosten.", ko: "성의 표시로 추가 비용은 제가 부담할게요." },
+        { de: "Bitte schicken Sie mir die korrigierte Abrechnung zu.", ko: "수정된 정산서를 보내 주세요." }
+      ] }
+    ]
+  },
+  {
+    no: 8, lv: "B2",
+    title: "Nachhaltig leben", titleKo: "지속가능한 삶", type: "Diskussion", typeKo: "토론",
+    intro: "개인의 노력과 정치의 역할을 두고 친구끼리 의견을 나누는 대화예요.",
+    focus: ["Meinung äußern", "Zustimmen und widersprechen", "Konjunktiv II"],
+    roles: { A: "Sarah", B: "Max" },
+    turns: [
+      { r: "A", de: "Ich habe gestern einen Bericht über Mikroplastik gelesen. Ehrlich gesagt hat mich das ziemlich erschreckt.", ko: "어제 미세 플라스틱에 대한 기사를 읽었어. 솔직히 꽤 충격이었어." },
+      { r: "B", de: "Ja, das Thema ist überall. Aber was kann der Einzelne schon ausrichten? Die großen Konzerne verursachen doch den Großteil des Mülls.", ko: "응, 어디서나 나오는 주제지. 하지만 개인이 뭘 할 수 있겠어? 쓰레기의 대부분은 대기업이 만들잖아." },
+      { r: "A", de: "Das stimmt zwar, aber das ist auch eine bequeme Ausrede. Wenn alle so denken würden, würde sich nie etwas ändern.", ko: "맞는 말이긴 한데, 편한 핑계이기도 해. 다들 그렇게 생각하면 아무것도 바뀌지 않을 거야." },
+      { r: "B", de: "Ich sage ja nicht, dass man nichts tun soll. Nur glaube ich, dass die Politik klare Regeln schaffen muss, statt auf die Moral der Verbraucher zu hoffen.", ko: "아무것도 하지 말자는 게 아니야. 다만 정치가 소비자의 도덕에 기대지 말고 분명한 규칙을 만들어야 한다고 생각해." },
+      { r: "A", de: "Da stimme ich dir zu. Beides gehört zusammen: Gesetze und persönliches Verhalten. Ich verzichte zum Beispiel seit einem Jahr auf Flüge innerhalb Europas.", ko: "그건 동의해. 둘은 함께 가야 해. 법과 개인 행동 말이야. 나는 예를 들어 1년 전부터 유럽 안에서는 비행기를 안 타." },
+      { r: "B", de: "Wirklich? Das ist konsequent. Aber ist das nicht ein ziemlicher Verzicht? Mit dem Zug dauert alles doppelt so lange.", ko: "정말? 일관성 있네. 그런데 꽤 큰 희생 아니야? 기차로 가면 두 배는 오래 걸리잖아." },
+      { r: "A", de: "Manchmal schon. Aber ich sehe es nicht nur als Verzicht. Die Zugfahrt ist entspannter, und ich komme mitten in der Stadt an.", ko: "가끔은 그렇지. 하지만 희생으로만 보지는 않아. 기차는 더 편하고 도시 한가운데에 도착하거든." },
+      { r: "B", de: "Da ist was dran. Trotzdem können sich nicht alle teure Bahntickets leisten. Nachhaltigkeit darf kein Luxus sein.", ko: "일리 있네. 그래도 모두가 비싼 기차표를 감당할 순 없어. 지속가능성이 사치가 되어선 안 돼." },
+      { r: "A", de: "Genau deshalb müsste der Staat die Bahn stärker fördern, statt Flüge zu subventionieren.", ko: "바로 그래서 국가가 비행기를 보조하는 대신 철도를 더 지원해야 해." },
+      { r: "B", de: "Das sehe ich auch so. Ich würde weniger Fleisch essen, wenn es günstigere Alternativen gäbe.", ko: "나도 그렇게 생각해. 더 저렴한 대안이 있다면 고기를 덜 먹을 거야." },
+      { r: "A", de: "Siehst du, kleine Schritte zählen auch. Wir müssen ja nicht gleich perfekt sein.", ko: "봐, 작은 걸음도 의미가 있어. 처음부터 완벽할 필요는 없잖아." },
+      { r: "B", de: "Stimmt. Dann fange ich diese Woche mit zwei fleischfreien Tagen an. Und du fragst mich in einem Monat, ob ich durchgehalten habe!", ko: "맞아. 그럼 이번 주부터 고기 없는 날을 이틀 정해서 시작할게. 한 달 뒤에 내가 계속했는지 네가 물어봐 줘!" }
+    ],
+    redemittel: [
+      { group: "Eigene Meinung", items: [
+        { de: "Ehrlich gesagt hat mich das ziemlich erschreckt.", ko: "솔직히 꽤 충격이었어." },
+        { de: "Ich glaube, dass die Politik klare Regeln schaffen muss.", ko: "정치가 분명한 규칙을 만들어야 한다고 생각해." }
+      ] },
+      { group: "Zustimmen", items: [
+        { de: "Da stimme ich dir zu.", ko: "그건 동의해." },
+        { de: "Das sehe ich auch so.", ko: "나도 그렇게 생각해." }
+      ] },
+      { group: "Einwenden", items: [
+        { de: "Das stimmt zwar, aber …", ko: "맞는 말이긴 한데 …" },
+        { de: "Ist das nicht ein ziemlicher Verzicht?", ko: "꽤 큰 희생 아니야?" }
+      ] },
+      { group: "Konjunktiv II", items: [
+        { de: "Wenn alle so denken würden, würde sich nie etwas ändern.", ko: "다들 그렇게 생각하면 아무것도 바뀌지 않을 거야." },
+        { de: "Ich würde weniger Fleisch essen, wenn es günstigere Alternativen gäbe.", ko: "더 저렴한 대안이 있다면 고기를 덜 먹을 거야." }
+      ] },
+      { group: "Teilweise recht geben", items: [
+        { de: "Da ist was dran.", ko: "일리 있네." },
+        { de: "Kleine Schritte zählen auch.", ko: "작은 걸음도 의미가 있어." }
+      ] }
+    ]
+  },
+  {
+    no: 9, lv: "B2",
+    title: "Beratung bei der Bank", titleKo: "은행 상담", type: "Beratung", typeKo: "상담",
+    intro: "여유 자금을 어떻게 투자할지 은행 상담원과 이야기하는 대화예요.",
+    focus: ["Fachvokabular", "Risiko", "Nachfragen"],
+    roles: { A: "Bankberater", B: "Kundin" },
+    turns: [
+      { r: "A", de: "Guten Tag, Frau Kim. Schön, dass Sie da sind. Sie wollten sich zum Thema Geldanlage beraten lassen?", ko: "안녕하세요, 김 씨. 와 주셔서 반가워요. 자산 투자에 대해 상담받고 싶으시다고요?" },
+      { r: "B", de: "Genau. Ich habe etwas Geld gespart und möchte es nicht auf dem Girokonto liegen lassen, wo es durch die Inflation an Wert verliert.", ko: "맞아요. 돈을 좀 모았는데, 인플레이션 때문에 가치가 떨어지는 입출금 계좌에 그냥 두고 싶지 않아요." },
+      { r: "A", de: "Das ist ein vernünftiger Gedanke. Wie lange könnten Sie auf das Geld verzichten?", ko: "합리적인 생각이세요. 그 돈을 얼마 동안 쓰지 않아도 되세요?" },
+      { r: "B", de: "Etwa zehn Jahre. Einen Teil möchte ich aber jederzeit verfügbar haben, falls etwas Unerwartetes passiert.", ko: "10년쯤이요. 그래도 예상치 못한 일에 대비해 일부는 언제든 쓸 수 있게 두고 싶어요." },
+      { r: "A", de: "Dann empfehle ich, drei Monatsgehälter als Reserve auf einem Tagesgeldkonto zu lassen und den Rest langfristig anzulegen.", ko: "그럼 월급 석 달 치는 예비 자금으로 수시 입출금 예금 계좌에 두고, 나머지는 장기로 투자하시길 권해요." },
+      { r: "B", de: "Und wie sieht es mit Aktien aus? Ich habe Angst, dass ich bei einem Börsencrash viel verliere.", ko: "주식은 어떤가요? 증시가 폭락하면 많이 잃을까 봐 걱정돼요." },
+      { r: "A", de: "Das Risiko besteht natürlich. Bei zehn Jahren fallen Kursschwankungen aber weniger ins Gewicht. Ein breit gestreuter Indexfonds ist deshalb oft eine solide Wahl.", ko: "물론 위험은 있어요. 하지만 10년이면 주가 변동의 영향은 줄어들어요. 그래서 폭넓게 분산된 인덱스 펀드가 흔히 안정적인 선택이에요." },
+      { r: "B", de: "Was heißt „breit gestreut“ konkret?", ko: "\"폭넓게 분산\"이 구체적으로 무슨 뜻인가요?" },
+      { r: "A", de: "Das Geld wird in Hunderte Unternehmen aus vielen Ländern investiert. Fällt eine Firma aus, wirkt sich das kaum auf das Gesamtergebnis aus.", ko: "돈이 여러 나라의 수백 개 기업에 투자돼요. 한 회사가 무너져도 전체 결과에는 거의 영향이 없어요." },
+      { r: "B", de: "Und mit welchen Kosten muss ich rechnen? Ich habe gehört, dass manche Fonds hohe Gebühren verlangen.", ko: "그럼 비용은 어느 정도 예상해야 하나요? 어떤 펀드는 수수료가 높다고 들었어요." },
+      { r: "A", de: "Das stimmt. Achten Sie auf die laufenden Kosten: Bei guten Indexfonds liegen sie unter 0,3 Prozent im Jahr. Ich schicke Ihnen eine Übersicht, damit Sie die Angebote in Ruhe vergleichen können.", ko: "맞아요. 운용 비용을 보세요. 좋은 인덱스 펀드는 연 0.3퍼센트 미만이에요. 차분히 비교하실 수 있게 상품 정리표를 보내 드릴게요." },
+      { r: "B", de: "Das wäre sehr hilfreich. Ich möchte nichts überstürzen und mich in Ruhe entscheiden.", ko: "정말 도움이 되겠어요. 서두르지 않고 차분히 결정하고 싶어요." }
+    ],
+    redemittel: [
+      { group: "Ziel nennen", items: [
+        { de: "Ich möchte mich zum Thema Geldanlage beraten lassen.", ko: "자산 투자에 대해 상담받고 싶어요." },
+        { de: "Das Geld soll nicht an Wert verlieren.", ko: "돈이 가치를 잃지 않았으면 해요." }
+      ] },
+      { group: "Zeithorizont", items: [
+        { de: "Wie lange könnten Sie auf das Geld verzichten?", ko: "그 돈을 얼마 동안 쓰지 않아도 되세요?" },
+        { de: "Einen Teil möchte ich jederzeit verfügbar haben.", ko: "일부는 언제든 쓸 수 있게 두고 싶어요." }
+      ] },
+      { group: "Risiko ansprechen", items: [
+        { de: "Ich habe Angst, dass ich viel verliere.", ko: "많이 잃을까 봐 걱정돼요." },
+        { de: "Das Risiko besteht natürlich.", ko: "물론 위험은 있어요." }
+      ] },
+      { group: "Begriffe klären", items: [
+        { de: "Was heißt „breit gestreut“ konkret?", ko: "\"폭넓게 분산\"이 구체적으로 무슨 뜻인가요?" },
+        { de: "Mit welchen Kosten muss ich rechnen?", ko: "비용은 어느 정도 예상해야 하나요?" }
+      ] },
+      { group: "Entscheidung vertagen", items: [
+        { de: "Ich möchte nichts überstürzen.", ko: "서두르고 싶지 않아요." },
+        { de: "Damit Sie die Angebote in Ruhe vergleichen können.", ko: "차분히 상품을 비교하실 수 있도록요." }
+      ] }
+    ]
   }
 ];

@@ -270,5 +270,133 @@ window.DIALOG_DATA.C1 = [
         { de: "Dann würde ich Ihre These so zusammenfassen: …", ko: "그럼 선생님 주장을 이렇게 정리할 수 있겠네요. …" }
       ] }
     ]
+  },
+  {
+    no: 7, lv: "C1",
+    title: "Social Media und Jugendschutz", titleKo: "소셜 미디어와 청소년 보호", type: "Radiodiskussion", typeKo: "방송 토론",
+    intro: "라디오 방송에서 사회자와 전문가가 청소년의 소셜 미디어 규제를 논의하는 대화예요.",
+    focus: ["Argumentieren", "Abwägen", "Fachsprache"],
+    roles: { A: "Moderator", B: "Medienpsychologin" },
+    turns: [
+      { r: "A", de: "Willkommen zu unserer Sendung. Heute geht es um die Frage, ob soziale Netzwerke für Jugendliche stärker reguliert werden sollten. Zu Gast ist die Medienpsychologin Dr. Lena Brandt. Frau Brandt, wo sehen Sie das größte Problem?", ko: "방송에 오신 것을 환영합니다. 오늘은 청소년을 위해 소셜 네트워크를 더 강하게 규제해야 하는지를 다룹니다. 미디어 심리학자 레나 브란트 박사님을 모셨습니다. 브란트 박사님, 가장 큰 문제가 어디에 있다고 보십니까?" },
+      { r: "B", de: "Weniger in den Netzwerken selbst als in ihrer Funktionsweise. Die Algorithmen sind darauf ausgelegt, die Verweildauer zu maximieren, und das trifft Jugendliche besonders hart, deren Selbstkontrolle noch nicht ausgereift ist.", ko: "네트워크 자체보다는 작동 방식에 있습니다. 알고리즘이 이용 시간을 최대로 늘리도록 설계되어 있는데, 자기 통제력이 아직 덜 발달한 청소년에게 특히 큰 영향을 줍니다." },
+      { r: "A", de: "Befürworter eines Mindestalters argumentieren, so könne man Jugendliche schützen. Kritiker halten dagegen, ein Verbot sei kaum durchsetzbar und treibe junge Menschen in unkontrollierte Ecken des Internets. Wie bewerten Sie das?", ko: "최소 연령을 찬성하는 쪽은 그렇게 해야 청소년을 보호할 수 있다고 주장합니다. 반대하는 쪽은 금지를 관철하기 어렵고 청소년을 통제되지 않는 인터넷 구석으로 내몬다고 반박합니다. 어떻게 평가하십니까?" },
+      { r: "B", de: "Beide Einwände sind berechtigt. Ein pauschales Verbot halte ich für wenig wirksam, weil sich Altersgrenzen leicht umgehen lassen. Sinnvoller wäre es, die Plattformen in die Pflicht zu nehmen, etwa durch Voreinstellungen, die die Nachtnutzung begrenzen, und durch mehr Transparenz bei den Algorithmen.", ko: "두 반론 모두 타당합니다. 일괄적인 금지는 연령 제한을 쉽게 피할 수 있어서 효과가 적다고 봅니다. 플랫폼에 책임을 지우는 편이 더 의미 있습니다. 예를 들어 야간 사용을 제한하는 기본 설정과 알고리즘의 투명성 강화가 있겠습니다." },
+      { r: "A", de: "Das würde die Anbieter aber wirtschaftlich treffen. Rechnen Sie mit Widerstand?", ko: "하지만 그것은 사업자에게 경제적 타격이 될 텐데요. 저항을 예상하십니까?" },
+      { r: "B", de: "Zweifellos. Die Geschäftsmodelle beruhen auf Aufmerksamkeit. Doch wie der Verbraucherschutz in anderen Branchen zeigt, verhindern klare Vorgaben nicht zwangsläufig Innovation.", ko: "틀림없습니다. 사업 모델이 주목에 기반하니까요. 하지만 다른 업종의 소비자 보호가 보여 주듯, 분명한 기준이 반드시 혁신을 막지는 않습니다." },
+      { r: "A", de: "Welche Rolle spielen die Eltern in diesem Gefüge? Es heißt oft, die Verantwortung werde auf sie abgewälzt.", ko: "이 구도에서 부모는 어떤 역할을 합니까? 책임이 부모에게 떠넘겨진다는 말이 자주 나옵니다." },
+      { r: "B", de: "Zu Recht. Eltern können kaum kontrollieren, was ihre Kinder auf mehreren Geräten tun. Medienkompetenz muss deshalb in der Schule vermittelt werden, und zwar nicht als Zusatzangebot, sondern als fester Bestandteil des Unterrichts.", ko: "옳은 지적입니다. 부모는 아이가 여러 기기에서 하는 일을 거의 통제할 수 없습니다. 그래서 미디어 이해력은 학교에서 가르쳐야 하고, 부가 프로그램이 아니라 수업의 고정된 일부여야 합니다." },
+      { r: "A", de: "Sie plädieren also für einen Dreiklang aus Regulierung, Schule und Elternhaus?", ko: "그러니까 규제, 학교, 가정의 삼중주를 주장하시는 거군요?" },
+      { r: "B", de: "So könnte man es zusammenfassen. Wichtig ist mir allerdings, dass wir Jugendliche nicht nur als Schutzbedürftige betrachten. Sie sollten an den Regeln beteiligt werden, die ihren Alltag betreffen.", ko: "그렇게 요약할 수 있겠습니다. 다만 제게 중요한 것은 청소년을 보호받아야 할 대상으로만 보지 않는 것입니다. 자신의 일상에 관한 규칙에는 청소년도 참여해야 합니다." },
+      { r: "A", de: "Ein wichtiger Gedanke zum Schluss. Frau Brandt, haben Sie vielen Dank für das Gespräch.", ko: "마무리로 중요한 생각이네요. 브란트 박사님, 대화 감사합니다." },
+      { r: "B", de: "Sehr gern. Danke für die Einladung.", ko: "별말씀을요. 초대해 주셔서 감사합니다." }
+    ],
+    redemittel: [
+      { group: "Problem benennen", items: [
+        { de: "Das größte Problem liegt weniger in den Netzwerken selbst als in ihrer Funktionsweise.", ko: "가장 큰 문제는 네트워크 자체보다 작동 방식에 있습니다." }
+      ] },
+      { group: "Positionen gegenüberstellen", items: [
+        { de: "Befürworter argumentieren, so könne man Jugendliche schützen.", ko: "찬성하는 쪽은 그렇게 해야 청소년을 보호할 수 있다고 주장합니다." },
+        { de: "Kritiker halten dagegen, ein Verbot sei kaum durchsetzbar.", ko: "반대하는 쪽은 금지를 관철하기 어렵다고 반박합니다." }
+      ] },
+      { group: "Abwägen", items: [
+        { de: "Beide Einwände sind berechtigt.", ko: "두 반론 모두 타당합니다." },
+        { de: "Ein pauschales Verbot halte ich für wenig wirksam.", ko: "일괄 금지는 효과가 적다고 봅니다." }
+      ] },
+      { group: "Vorschläge machen", items: [
+        { de: "Sinnvoller wäre es, die Plattformen in die Pflicht zu nehmen.", ko: "플랫폼에 책임을 지우는 편이 더 의미 있습니다." },
+        { de: "Sie plädieren also für …?", ko: "그러니까 …를 주장하시는 거군요?" }
+      ] },
+      { group: "Gesprächsrahmen", items: [
+        { de: "Zu Gast ist …", ko: "…를 모셨습니다." },
+        { de: "Ein wichtiger Gedanke zum Schluss.", ko: "마무리로 중요한 생각이네요." }
+      ] }
+    ]
+  },
+  {
+    no: 8, lv: "C1",
+    title: "In der Ausstellung", titleKo: "전시회에서", type: "Kultur", typeKo: "문화",
+    intro: "현대 미술 전시에서 작품을 두고 친구끼리 해석을 나누는 대화예요.",
+    focus: ["Interpretieren", "Ironie", "Konjunktiv"],
+    roles: { A: "Clara", B: "Felix" },
+    turns: [
+      { r: "A", de: "Was sagst du zu dieser Installation? Ich stehe seit fünf Minuten davor und weiß nicht, ob ich sie genial oder prätentiös finden soll.", ko: "이 설치 작품 어떻게 생각해? 5분째 앞에 서 있는데 천재적인지 허세인지 모르겠어." },
+      { r: "B", de: "Ehrlich gesagt schwanke ich auch. Die Idee, Alltagsgegenstände aus Plastik wie Überreste einer untergegangenen Zivilisation zu zeigen, finde ich stark. Nur wirkt die Inszenierung ein bisschen überladen.", ko: "솔직히 나도 흔들려. 플라스틱 일상용품을 사라진 문명의 유물처럼 보여 주는 아이디어는 강렬하다고 생각해. 다만 연출이 좀 과해 보여." },
+      { r: "A", de: "Genau das ist es. Die Botschaft liegt auf der Hand, und dann wird sie mit Nebel und Spotlights noch einmal unterstrichen. Als traute der Künstler dem Publikum nicht zu, es selbst zu verstehen.", ko: "바로 그거야. 메시지가 뻔한데 안개와 조명으로 한 번 더 강조하잖아. 마치 작가가 관객이 스스로 이해하리라 믿지 않는 것처럼." },
+      { r: "B", de: "Vielleicht ist das aber Absicht. Möglicherweise spielt er mit der Übertreibung, um unseren Konsum zu parodieren.", ko: "어쩌면 의도일 수도 있어. 우리의 소비를 풍자하려고 일부러 과장하는 걸지도 몰라." },
+      { r: "A", de: "Das wäre eine großzügige Lesart. Dann wird die Kritik selbst zum Spektakel, und wir stehen hier und machen Fotos für unsere Feeds. Ironie, oder?", ko: "후하게 해석하는 거네. 그러면 비판 자체가 구경거리가 되고, 우리는 여기서 피드에 올릴 사진을 찍고 있지. 아이러니하지 않아?" },
+      { r: "B", de: "Touché. Dieses Dilemma haben viele politische Kunstwerke: Sie wollen aufrütteln und werden dabei zur Ware.", ko: "한 방 먹었네. 정치적인 예술 작품 상당수가 그런 딜레마를 안고 있어. 흔들어 깨우려다 상품이 되어 버리는 거지." },
+      { r: "A", de: "Und trotzdem bleibt es hängen. Ich werde morgen beim Einkaufen garantiert zweimal überlegen, ob ich die Plastiktüte nehme.", ko: "그래도 기억에는 남아. 내일 장 볼 때 비닐봉지를 쓸지 분명히 두 번은 고민하게 될 거야." },
+      { r: "B", de: "Dann hat das Werk seinen Zweck erfüllt, auch wenn es ästhetisch nicht alles überzeugt.", ko: "그럼 작품은 목적을 이룬 거네, 미적으로 다 설득되지는 않더라도." },
+      { r: "A", de: "Lass uns in den nächsten Raum gehen. Dort soll es eine Videoarbeit geben, die laut Katalog ganz ohne Sprache auskommt.", ko: "다음 전시실로 가 보자. 카탈로그에 따르면 말 없이 진행되는 영상 작품이 있대." },
+      { r: "B", de: "Gern. Nach so viel Reizüberflutung tut ein wenig Stille bestimmt gut.", ko: "좋아. 이렇게 자극이 넘친 뒤라 약간의 정적이 분명 좋을 거야." },
+      { r: "A", de: "Und danach trinken wir im Museumscafé einen Kaffee und streiten weiter?", ko: "그러고 나서 미술관 카페에서 커피 마시면서 계속 논쟁하자?" },
+      { r: "B", de: "Abgemacht. Allerdings zahlst du, weil ich vorhin die Eintrittskarten gekauft habe.", ko: "좋아. 그런데 아까 입장권을 내가 샀으니까 커피는 네가 사." }
+    ],
+    redemittel: [
+      { group: "Unsicherheit ausdrücken", items: [
+        { de: "Ich weiß nicht, ob ich sie genial oder prätentiös finden soll.", ko: "천재적인지 허세인지 모르겠어." },
+        { de: "Ehrlich gesagt schwanke ich auch.", ko: "솔직히 나도 흔들려." }
+      ] },
+      { group: "Werk beurteilen", items: [
+        { de: "Die Idee finde ich stark.", ko: "그 아이디어는 강렬하다고 생각해." },
+        { de: "Die Inszenierung wirkt überladen.", ko: "연출이 과해 보여." }
+      ] },
+      { group: "Deuten", items: [
+        { de: "Möglicherweise spielt er mit der Übertreibung.", ko: "어쩌면 일부러 과장하는 걸지도 몰라." },
+        { de: "Das wäre eine großzügige Lesart.", ko: "후하게 해석하는 거네." }
+      ] },
+      { group: "Konzedieren", items: [
+        { de: "Touché.", ko: "한 방 먹었네." },
+        { de: "Und trotzdem bleibt es hängen.", ko: "그래도 기억에는 남아." }
+      ] },
+      { group: "Vorschlagen und abmachen", items: [
+        { de: "Lass uns in den nächsten Raum gehen.", ko: "다음 전시실로 가 보자." },
+        { de: "Abgemacht.", ko: "좋아, 그렇게 하자." }
+      ] }
+    ]
+  },
+  {
+    no: 9, lv: "C1",
+    title: "Das Jahresgespräch", titleKo: "연간 면담", type: "Beruf", typeKo: "직장",
+    intro: "상사가 직원과 한 해를 돌아보며 비판과 성장 계획을 이야기하는 대화예요.",
+    focus: ["Feedback geben", "Diplomatisch formulieren", "Entwicklungsplan"],
+    roles: { A: "Vorgesetzte", B: "Mitarbeiter" },
+    turns: [
+      { r: "A", de: "Herr Weber, danke, dass Sie sich Zeit nehmen. Ich möchte mit Ihnen zunächst auf das vergangene Jahr zurückblicken. Insgesamt bin ich mit Ihrer Arbeit sehr zufrieden.", ko: "베버 씨, 시간 내 주셔서 감사해요. 먼저 지난 한 해를 함께 돌아보고 싶어요. 전반적으로 당신의 업무에 매우 만족해요." },
+      { r: "B", de: "Das freut mich zu hören. Gibt es etwas, das aus Ihrer Sicht besonders gut gelaufen ist?", ko: "그렇게 말씀해 주시니 기뻐요. 특별히 잘됐다고 보시는 부분이 있나요?" },
+      { r: "A", de: "Vor allem die Einführung des neuen Berichtssystems. Sie haben das Projekt nicht nur termingerecht abgeschlossen, sondern auch die Kollegen vorbildlich eingebunden. Ein Punkt liegt mir allerdings am Herzen.", ko: "특히 새 보고 시스템 도입이에요. 기한 내에 끝냈을 뿐 아니라 동료들도 모범적으로 참여시켰죠. 다만 마음에 걸리는 점이 하나 있어요." },
+      { r: "B", de: "Bitte sprechen Sie offen. Ich bin an ehrlichem Feedback interessiert.", ko: "솔직하게 말씀해 주세요. 저는 솔직한 피드백을 원해요." },
+      { r: "A", de: "In den Besprechungen habe ich den Eindruck, dass Sie sich mit Einwänden zurückhalten, obwohl Sie fachlich oft die fundiertere Position hätten. Das kostet das Team wertvolle Perspektiven.", ko: "회의에서 이의를 제기하는 걸 자제하시는 인상을 받았어요. 전문적으로는 더 탄탄한 입장일 때가 많은데도요. 그러면 팀이 소중한 관점을 잃어요." },
+      { r: "B", de: "Das trifft einen wunden Punkt. Ich wollte nicht als besserwisserisch gelten, vor allem, weil ich neu im Team war.", ko: "아픈 곳을 짚으셨네요. 저는 아는 체한다는 인상을 주고 싶지 않았어요. 특히 팀에 새로 들어온 처지였으니까요." },
+      { r: "A", de: "Das kann ich nachvollziehen. Aber inzwischen gehören Sie dazu, und Ihre Einschätzung hat Gewicht. Ich würde mir wünschen, dass Sie künftig früher Stellung beziehen.", ko: "이해해요. 하지만 이제는 팀의 일원이고 당신의 판단은 무게가 있어요. 앞으로는 더 일찍 입장을 밝혀 주면 좋겠어요." },
+      { r: "B", de: "Ich werde es versuchen. Hilfreich wäre es, wenn Agenda und Unterlagen früher verschickt würden, damit ich mich vorbereiten kann.", ko: "노력해 볼게요. 의제와 자료가 더 일찍 발송되면 준비할 수 있어서 도움이 될 거예요." },
+      { r: "A", de: "Das ist ein berechtigter Wunsch, den ich gern umsetze. Gibt es darüber hinaus etwas, das Ihnen die Arbeit erschwert?", ko: "정당한 요청이에요. 기꺼이 반영할게요. 그 밖에 일을 어렵게 하는 것이 있나요?" },
+      { r: "B", de: "Ehrlich gesagt hätte ich Interesse, mehr Verantwortung zu übernehmen, etwa als Projektleiter für das nächste Vorhaben.", ko: "솔직히 더 많은 책임을 맡고 싶어요. 예를 들어 다음 프로젝트의 프로젝트 리더로요." },
+      { r: "A", de: "Das halte ich für realistisch. Lassen Sie uns im nächsten Quartal gemeinsam einen Entwicklungsplan aufsetzen, der auch eine Weiterbildung im Bereich Führung umfasst.", ko: "현실적이라고 생각해요. 다음 분기에 리더십 교육까지 포함한 성장 계획을 함께 세워요." },
+      { r: "B", de: "Das wäre ein großer Schritt für mich. Vielen Dank für das Vertrauen.", ko: "저에게 큰 걸음이 될 거예요. 믿어 주셔서 감사해요." }
+    ],
+    redemittel: [
+      { group: "Würdigen", items: [
+        { de: "Insgesamt bin ich mit Ihrer Arbeit sehr zufrieden.", ko: "전반적으로 업무에 매우 만족해요." },
+        { de: "Sie haben die Kollegen vorbildlich eingebunden.", ko: "동료들을 모범적으로 참여시켰어요." }
+      ] },
+      { group: "Kritik diplomatisch äußern", items: [
+        { de: "Ein Punkt liegt mir allerdings am Herzen.", ko: "다만 마음에 걸리는 점이 하나 있어요." },
+        { de: "Ich habe den Eindruck, dass Sie sich zurückhalten.", ko: "자제하시는 인상을 받았어요." }
+      ] },
+      { group: "Auf Kritik reagieren", items: [
+        { de: "Das trifft einen wunden Punkt.", ko: "아픈 곳을 짚으셨네요." },
+        { de: "Ich werde es versuchen.", ko: "노력해 볼게요." }
+      ] },
+      { group: "Wünsche formulieren", items: [
+        { de: "Ich würde mir wünschen, dass Sie früher Stellung beziehen.", ko: "더 일찍 입장을 밝혀 주면 좋겠어요." },
+        { de: "Hilfreich wäre es, wenn Unterlagen früher verschickt würden.", ko: "자료가 더 일찍 발송되면 도움이 될 거예요." }
+      ] },
+      { group: "Perspektive entwickeln", items: [
+        { de: "Ich hätte Interesse, mehr Verantwortung zu übernehmen.", ko: "더 많은 책임을 맡고 싶어요." },
+        { de: "Lassen Sie uns einen Entwicklungsplan aufsetzen.", ko: "성장 계획을 함께 세워요." }
+      ] }
+    ]
   }
 ];

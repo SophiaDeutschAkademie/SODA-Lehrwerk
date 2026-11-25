@@ -10,7 +10,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `lesetraining/` | SODA Lesetraining | 독해 훈련, A1–C1, 텍스트 125개 |
 | `hoertraining/` | Lehrwerk Hörtraining | 듣기 훈련, A1–C1, 88세트 |
 | `schreibtraining/` | SODA Schreibtraining | 쓰기 훈련, A1–C1 레벨별 5챕터(총 25개), 챕터마다 구성·표현·연습·쓰기·모범답안, 「선생님께 제출하기」(소피아 독일어학원 수강생 전용 안내 팝업) |
-| `sprechtraining/` | SODA Sprechtraining | 말하기 훈련, A1–C1과 MZ 구어체, 대화 36개, 독일어 음성 433줄 |
+| `sprechtraining/` | SODA Sprechtraining | 말하기 훈련, A1–C1과 MZ 구어체, 대화 51개, 독일어 음성 613줄 |
 | `diktattraining/` | SODA Diktattraining | 받아쓰기 훈련, A1–C1, 문장 563개(56세트), 문장마다 음성, 틀린 곳을 종류별로 표시(어미·관사·철자·빠진 단어 등), 다시 쓸 문장, 나의 기록, 「선생님께 기록 보내기」(소피아 독일어학원 수강생 전용 안내 팝업) |
 | `vokalab/` | SODA Vokalab | 독일어 단어장, A1–C1, 12,724단어, 주차별 목표와 테스트, 명사의 관사·복수 훈련(아래 「VOKALAB 관사·복수 훈련」). 학습 포탈에 로그인한 브라우저에서는 기록이 서버에 자동 저장되어 다른 기기에서 이어서 학습(아래 「VOKALAB 학습 기록 자동 저장」) |
 | `praepositionen/` | SODA Präpositionen | 독일어 전치사의 모든 것, 전치사 80개, 비교, 퀴즈 |

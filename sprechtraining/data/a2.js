@@ -249,5 +249,133 @@ window.DIALOG_DATA.A2 = [
         { de: "Ich freue mich schon.", ko: "벌써 기대된다." }
       ] }
     ]
+  },
+  {
+    no: 7, lv: "A2",
+    title: "Beim Friseur", titleKo: "미용실에서", type: "Dienstleistung", typeKo: "서비스",
+    intro: "미용실에서 원하는 머리 모양을 설명하고 계산하는 대화예요.",
+    focus: ["Wünsche äußern", "Komparativ", "Preis"],
+    roles: { A: "Friseurin", B: "Kunde" },
+    turns: [
+      { r: "A", de: "Guten Tag! Haben Sie einen Termin?", ko: "안녕하세요! 예약하셨나요?" },
+      { r: "B", de: "Ja, um 14 Uhr, auf den Namen Müller.", ko: "네, 2시에 뮐러 이름으로요." },
+      { r: "A", de: "Stimmt. Bitte nehmen Sie Platz. Was möchten Sie heute machen?", ko: "맞네요. 앉으세요. 오늘 어떻게 해 드릴까요?" },
+      { r: "B", de: "Die Haare sind zu lang. Ich möchte sie kürzer haben, aber nicht zu kurz.", ko: "머리가 너무 길어요. 더 짧게 하고 싶은데 너무 짧진 않게요." },
+      { r: "A", de: "Wie kurz denn? Etwa so?", ko: "얼마나 짧게요? 대략 이 정도요?" },
+      { r: "B", de: "Ja, ungefähr drei Zentimeter weniger. Und hinten bitte etwas kürzer.", ko: "네, 대략 3센티미터 정도 덜어 주세요. 그리고 뒤쪽은 조금 더 짧게 해 주세요." },
+      { r: "A", de: "Gut. Soll ich die Haare auch waschen?", ko: "알겠어요. 머리도 감겨 드릴까요?" },
+      { r: "B", de: "Ja, bitte. Wie lange dauert das?", ko: "네, 부탁해요. 얼마나 걸리나요?" },
+      { r: "A", de: "Ungefähr 30 Minuten. Möchten Sie einen Kaffee?", ko: "약 30분이요. 커피 드실래요?" },
+      { r: "B", de: "Ja, gern. Ohne Milch, bitte.", ko: "네, 좋아요. 우유 없이 주세요." },
+      { r: "A", de: "So, fertig. Gefällt Ihnen der Schnitt?", ko: "자, 다 됐어요. 커트 마음에 드세요?" },
+      { r: "B", de: "Ja, sehr gut, danke! Was kostet das?", ko: "네, 아주 좋아요, 감사합니다! 얼마예요?" }
+    ],
+    redemittel: [
+      { group: "Termin", items: [
+        { de: "Haben Sie einen Termin?", ko: "예약하셨나요?" },
+        { de: "Ich habe einen Termin um 14 Uhr.", ko: "2시에 예약했어요." }
+      ] },
+      { group: "Wunsch sagen", items: [
+        { de: "Ich möchte sie kürzer haben, aber nicht zu kurz.", ko: "더 짧게 하고 싶은데 너무 짧진 않게요." },
+        { de: "Hinten bitte etwas kürzer.", ko: "뒤쪽은 조금 더 짧게 해 주세요." }
+      ] },
+      { group: "Ablauf fragen", items: [
+        { de: "Soll ich die Haare auch waschen?", ko: "머리도 감겨 드릴까요?" },
+        { de: "Wie lange dauert das?", ko: "얼마나 걸리나요?" }
+      ] },
+      { group: "Anbieten und annehmen", items: [
+        { de: "Möchten Sie einen Kaffee?", ko: "커피 드실래요?" },
+        { de: "Ja, gern. Ohne Milch, bitte.", ko: "네, 좋아요. 우유 없이 주세요." }
+      ] },
+      { group: "Ergebnis und Preis", items: [
+        { de: "Gefällt Ihnen der Schnitt?", ko: "커트 마음에 드세요?" },
+        { de: "Was kostet das?", ko: "얼마예요?" }
+      ] }
+    ]
+  },
+  {
+    no: 8, lv: "A2",
+    title: "Im Fitnessstudio", titleKo: "헬스장에서", type: "Dienstleistung", typeKo: "서비스",
+    intro: "헬스장에서 계약 종류를 묻고 체험 운동 약속을 잡는 대화예요.",
+    focus: ["Vertrag", "Termin vereinbaren", "Preise vergleichen"],
+    roles: { A: "Mitarbeiterin", B: "Interessent" },
+    turns: [
+      { r: "A", de: "Willkommen im FitPlus! Kann ich Ihnen helfen?", ko: "FitPlus에 오신 걸 환영해요! 도와드릴까요?" },
+      { r: "B", de: "Ja, ich möchte mich anmelden. Welche Verträge gibt es?", ko: "네, 등록하고 싶어요. 어떤 계약이 있나요?" },
+      { r: "A", de: "Wir haben einen Vertrag für ein Jahr und einen für sechs Monate.", ko: "1년짜리와 6개월짜리 계약이 있어요." },
+      { r: "B", de: "Was ist der Unterschied?", ko: "뭐가 다른가요?" },
+      { r: "A", de: "Der Jahresvertrag ist günstiger: 25 Euro im Monat. Der andere kostet 35 Euro.", ko: "연간 계약이 더 저렴해요. 한 달에 25유로예요. 다른 건 35유로예요." },
+      { r: "B", de: "Kann ich zuerst ein Probetraining machen?", ko: "먼저 체험 운동을 해 볼 수 있나요?" },
+      { r: "A", de: "Natürlich. Das erste Training ist kostenlos. Haben Sie morgen Zeit?", ko: "물론이죠. 첫 운동은 무료예요. 내일 시간 있으세요?" },
+      { r: "B", de: "Morgen Abend habe ich Zeit, ab 18 Uhr.", ko: "내일 저녁에 시간 있어요, 6시 이후로요." },
+      { r: "A", de: "Dann machen wir einen Termin um halb sieben. Bitte bringen Sie ein Handtuch und Sportschuhe mit.", ko: "그럼 6시 반으로 약속을 잡아요. 수건과 운동화를 가져오세요." },
+      { r: "B", de: "Gibt es auch Kurse, zum Beispiel Yoga?", ko: "수업도 있나요, 예를 들어 요가요?" },
+      { r: "A", de: "Ja, Yoga gibt es am Dienstag und am Donnerstag. Die Kurse sind im Preis inklusive.", ko: "네, 요가는 화요일과 목요일에 있어요. 수업은 가격에 포함이에요." },
+      { r: "B", de: "Super, dann komme ich morgen um halb sieben. Vielen Dank!", ko: "좋아요, 그럼 내일 6시 반에 올게요. 감사합니다!" }
+    ],
+    redemittel: [
+      { group: "Anmelden", items: [
+        { de: "Ich möchte mich anmelden.", ko: "등록하고 싶어요." },
+        { de: "Welche Verträge gibt es?", ko: "어떤 계약이 있나요?" }
+      ] },
+      { group: "Vergleichen", items: [
+        { de: "Der Jahresvertrag ist günstiger.", ko: "연간 계약이 더 저렴해요." },
+        { de: "Was ist der Unterschied?", ko: "뭐가 다른가요?" }
+      ] },
+      { group: "Probetraining", items: [
+        { de: "Kann ich zuerst ein Probetraining machen?", ko: "먼저 체험 운동을 해 볼 수 있나요?" },
+        { de: "Das erste Training ist kostenlos.", ko: "첫 운동은 무료예요." }
+      ] },
+      { group: "Termin machen", items: [
+        { de: "Haben Sie morgen Zeit?", ko: "내일 시간 있으세요?" },
+        { de: "Dann machen wir einen Termin um halb sieben.", ko: "그럼 6시 반으로 약속을 잡아요." }
+      ] },
+      { group: "Mitbringen", items: [
+        { de: "Bitte bringen Sie ein Handtuch mit.", ko: "수건을 가져오세요." }
+      ] }
+    ]
+  },
+  {
+    no: 9, lv: "A2",
+    title: "Im Fundbüro", titleKo: "분실물 센터에서", type: "Alltag", typeKo: "일상",
+    intro: "기차에 두고 내린 가방을 분실물 센터에서 찾는 대화예요.",
+    focus: ["Perfekt", "Beschreiben", "Ausweis"],
+    roles: { A: "Besucher", B: "Mitarbeiterin" },
+    turns: [
+      { r: "A", de: "Guten Tag. Ich habe meine Tasche im Zug vergessen.", ko: "안녕하세요. 기차에 가방을 두고 내렸어요." },
+      { r: "B", de: "Das ist schade. Wann war das?", ko: "안타깝네요. 언제였나요?" },
+      { r: "A", de: "Gestern Abend, ungefähr um 20 Uhr. Ich bin von München nach Augsburg gefahren.", ko: "어제 저녁 8시쯤이요. 뮌헨에서 아우크스부르크로 갔어요." },
+      { r: "B", de: "Wie sieht die Tasche aus?", ko: "가방이 어떻게 생겼나요?" },
+      { r: "A", de: "Sie ist schwarz und aus Leder. Sie hat zwei kleine Taschen vorne.", ko: "검은색 가죽 가방이에요. 앞쪽에 작은 주머니가 두 개 있어요." },
+      { r: "B", de: "Und was war in der Tasche?", ko: "가방 안에는 뭐가 있었나요?" },
+      { r: "A", de: "Mein Laptop, ein Buch und mein Schlüssel.", ko: "노트북, 책 한 권, 그리고 열쇠요." },
+      { r: "B", de: "Moment, ich schaue im Computer nach. Ja, wir haben gestern eine schwarze Tasche gefunden.", ko: "잠시만요, 컴퓨터에서 확인해 볼게요. 네, 어제 검은 가방을 하나 찾았어요." },
+      { r: "A", de: "Wirklich? Das ist ja super! Kann ich sie jetzt abholen?", ko: "정말요? 잘됐네요! 지금 찾아갈 수 있나요?" },
+      { r: "B", de: "Ja, aber ich brauche Ihren Ausweis und Ihre Telefonnummer.", ko: "네, 하지만 신분증과 전화번호가 필요해요." },
+      { r: "A", de: "Hier ist mein Ausweis. Die Nummer schreibe ich auf den Zettel.", ko: "여기 제 신분증이에요. 번호는 종이에 적을게요." },
+      { r: "B", de: "Danke. Hier ist Ihre Tasche. Prüfen Sie bitte, ob alles da ist.", ko: "감사합니다. 여기 가방이에요. 모두 있는지 확인해 주세요." }
+    ],
+    redemittel: [
+      { group: "Verlust melden", items: [
+        { de: "Ich habe meine Tasche im Zug vergessen.", ko: "기차에 가방을 두고 내렸어요." },
+        { de: "Das war gestern Abend.", ko: "어제 저녁이었어요." }
+      ] },
+      { group: "Beschreiben", items: [
+        { de: "Sie ist schwarz und aus Leder.", ko: "검은색 가죽 가방이에요." },
+        { de: "Sie hat zwei kleine Taschen vorne.", ko: "앞쪽에 작은 주머니가 두 개 있어요." }
+      ] },
+      { group: "Nachfragen", items: [
+        { de: "Wie sieht die Tasche aus?", ko: "가방이 어떻게 생겼나요?" },
+        { de: "Was war in der Tasche?", ko: "가방 안에는 뭐가 있었나요?" }
+      ] },
+      { group: "Gefunden", items: [
+        { de: "Wir haben gestern eine schwarze Tasche gefunden.", ko: "어제 검은 가방을 하나 찾았어요." },
+        { de: "Kann ich sie jetzt abholen?", ko: "지금 찾아갈 수 있나요?" }
+      ] },
+      { group: "Nachweis", items: [
+        { de: "Ich brauche Ihren Ausweis.", ko: "신분증이 필요해요." },
+        { de: "Prüfen Sie bitte, ob alles da ist.", ko: "모두 있는지 확인해 주세요." }
+      ] }
+    ]
   }
 ];

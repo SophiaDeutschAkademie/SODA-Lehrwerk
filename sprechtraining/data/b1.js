@@ -255,5 +255,133 @@ window.DIALOG_DATA.B1 = [
         { de: "Wie wäre es mit Dienstag nach dem Kurs?", ko: "화요일 수업 끝나고 어때?" }
       ] }
     ]
+  },
+  {
+    no: 7, lv: "B1",
+    title: "WG-Casting", titleKo: "WG 룸메이트 면접", type: "Wohnen", typeKo: "주거",
+    intro: "셰어하우스에서 방을 보고 룸메이트와 생활 규칙을 이야기하는 대화예요.",
+    focus: ["Wohnen", "Regeln", "Fragen stellen"],
+    roles: { A: "Mitbewohnerin", B: "Bewerber" },
+    turns: [
+      { r: "A", de: "Hi, du bist Daniel, oder? Komm rein!", ko: "안녕, 네가 다니엘이지? 들어와!" },
+      { r: "B", de: "Genau. Danke für die Einladung. Ich freue mich, dass es heute klappt.", ko: "맞아. 초대해 줘서 고마워. 오늘 시간이 맞아서 기뻐." },
+      { r: "A", de: "Ich zeige dir erst mal das Zimmer. Es ist nicht groß, aber es hat einen kleinen Balkon.", ko: "먼저 방을 보여 줄게. 크진 않지만 작은 발코니가 있어." },
+      { r: "B", de: "Das gefällt mir. Wie hoch ist die Miete?", ko: "마음에 들어. 월세는 얼마야?" },
+      { r: "A", de: "Das Zimmer kostet 420 Euro warm, mit Internet und Strom.", ko: "방은 관리비 포함해서 420유로야. 인터넷과 전기도 포함이야." },
+      { r: "B", de: "Okay, das ist fair. Und wie ist die Stimmung in der WG? Wer wohnt noch hier?", ko: "좋아, 합리적이네. 그리고 WG 분위기는 어때? 또 누가 살아?" },
+      { r: "A", de: "Wir sind zu dritt. Ich studiere Medizin, und Jonas arbeitet bei einer Bank. Wir kochen oft zusammen, aber jeder hat auch seine Ruhe.", ko: "우리는 셋이야. 나는 의대생이고 요나스는 은행에서 일해. 자주 같이 요리하지만 각자 쉬는 시간도 존중해." },
+      { r: "B", de: "Das klingt gut. Wie teilt ihr die Hausarbeit auf?", ko: "좋네. 집안일은 어떻게 나눠?" },
+      { r: "A", de: "Wir haben einen Putzplan. Jede Woche ist jemand anderes dran. Stört dich das?", ko: "청소 당번표가 있어. 매주 다른 사람이 맡아. 괜찮아?" },
+      { r: "B", de: "Nein, überhaupt nicht. Darf ich noch etwas fragen? Ich habe nämlich eine Katze. Sind Haustiere erlaubt?", ko: "아니, 전혀. 하나 더 물어봐도 돼? 사실 나는 고양이가 있어. 반려동물 괜찮아?" },
+      { r: "A", de: "Eine Katze ist kein Problem, wenn sie niemanden stört. Wir melden uns bis Freitag bei dir.", ko: "고양이는 아무도 방해하지 않으면 문제없어. 금요일까지 연락할게." },
+      { r: "B", de: "Prima, dann warte ich auf eure Antwort. Vielen Dank für das nette Gespräch!", ko: "좋아, 그럼 답을 기다릴게. 즐거운 대화 고마워!" }
+    ],
+    redemittel: [
+      { group: "Begrüßen", items: [
+        { de: "Komm rein!", ko: "들어와!" },
+        { de: "Danke für die Einladung.", ko: "초대해 줘서 고마워." }
+      ] },
+      { group: "Nach Kosten fragen", items: [
+        { de: "Wie hoch ist die Miete?", ko: "월세는 얼마야?" },
+        { de: "Das Zimmer kostet 420 Euro warm.", ko: "방은 관리비 포함 420유로야." }
+      ] },
+      { group: "Nach dem Alltag fragen", items: [
+        { de: "Wer wohnt noch hier?", ko: "또 누가 살아?" },
+        { de: "Wie teilt ihr die Hausarbeit auf?", ko: "집안일은 어떻게 나눠?" }
+      ] },
+      { group: "Regeln und Wünsche", items: [
+        { de: "Wir haben einen Putzplan.", ko: "청소 당번표가 있어." },
+        { de: "Sind Haustiere erlaubt?", ko: "반려동물 괜찮아?" }
+      ] },
+      { group: "Abschließen", items: [
+        { de: "Wir melden uns bis Freitag bei dir.", ko: "금요일까지 연락할게." },
+        { de: "Vielen Dank für das nette Gespräch!", ko: "즐거운 대화 고마워!" }
+      ] }
+    ]
+  },
+  {
+    no: 8, lv: "B1",
+    title: "Den Handyvertrag wechseln", titleKo: "휴대폰 요금제 바꾸기", type: "Beratung", typeKo: "상담",
+    intro: "더 저렴한 휴대폰 요금제로 바꾸며 조건을 묻는 대화예요.",
+    focus: ["Tarif", "Vertragsbedingungen", "Nachfragen"],
+    roles: { A: "Kundin", B: "Berater" },
+    turns: [
+      { r: "A", de: "Guten Tag, ich möchte meinen Handyvertrag wechseln. Mein jetziger Tarif ist zu teuer.", ko: "안녕하세요, 휴대폰 요금제를 바꾸고 싶어요. 지금 요금제가 너무 비싸요." },
+      { r: "B", de: "Gern. Wie viel bezahlen Sie denn im Moment?", ko: "그러시군요. 지금 얼마를 내고 계세요?" },
+      { r: "A", de: "40 Euro im Monat, aber ich brauche gar nicht so viel Datenvolumen.", ko: "한 달에 40유로인데, 데이터는 그렇게 많이 필요하지 않아요." },
+      { r: "B", de: "Verstehe. Wie viel Datenvolumen verbrauchen Sie normalerweise?", ko: "알겠습니다. 보통 데이터를 얼마나 쓰세요?" },
+      { r: "A", de: "Zu Hause nutze ich WLAN. Unterwegs brauche ich nur Nachrichten und Navigation, also vielleicht fünf Gigabyte.", ko: "집에서는 와이파이를 써요. 밖에서는 메시지와 내비게이션만 쓰니까 5기가바이트쯤이요." },
+      { r: "B", de: "Dann empfehle ich Ihnen unseren Tarif „Basic“: zehn Gigabyte für 15 Euro im Monat.", ko: "그럼 \"Basic\" 요금제를 추천해요. 10기가바이트에 한 달 15유로예요." },
+      { r: "A", de: "Das klingt gut. Wie lange ist die Mindestvertragslaufzeit?", ko: "좋네요. 최소 계약 기간은 얼마예요?" },
+      { r: "B", de: "Zwölf Monate. Danach können Sie monatlich kündigen.", ko: "12개월이에요. 그 이후에는 매달 해지할 수 있어요." },
+      { r: "A", de: "Gibt es versteckte Kosten, zum Beispiel eine Anschlussgebühr?", ko: "숨은 비용이 있나요, 예를 들어 개통 수수료요?" },
+      { r: "B", de: "Ja, einmalig 20 Euro. Aber wenn Sie heute abschließen, schenken wir Ihnen die Gebühr.", ko: "네, 한 번 20유로예요. 하지만 오늘 가입하시면 수수료는 면제해 드려요." },
+      { r: "A", de: "Dann möchte ich den Vertrag gleich abschließen. Kann ich meine alte Nummer behalten?", ko: "그럼 바로 계약할게요. 기존 번호를 그대로 쓸 수 있나요?" },
+      { r: "B", de: "Ja, das ist möglich. Dazu brauche ich nur Ihren Ausweis und Ihre bisherige Vertragsnummer.", ko: "네, 가능해요. 신분증과 기존 계약 번호만 있으면 돼요." }
+    ],
+    redemittel: [
+      { group: "Wunsch äußern", items: [
+        { de: "Ich möchte meinen Handyvertrag wechseln.", ko: "휴대폰 요금제를 바꾸고 싶어요." },
+        { de: "Mein jetziger Tarif ist zu teuer.", ko: "지금 요금제가 너무 비싸요." }
+      ] },
+      { group: "Bedarf beschreiben", items: [
+        { de: "Ich brauche gar nicht so viel Datenvolumen.", ko: "데이터는 그렇게 많이 필요하지 않아요." },
+        { de: "Zu Hause nutze ich WLAN.", ko: "집에서는 와이파이를 써요." }
+      ] },
+      { group: "Empfehlung", items: [
+        { de: "Dann empfehle ich Ihnen unseren Tarif „Basic“.", ko: "그럼 \"Basic\" 요금제를 추천해요." }
+      ] },
+      { group: "Bedingungen klären", items: [
+        { de: "Wie lange ist die Mindestvertragslaufzeit?", ko: "최소 계약 기간은 얼마예요?" },
+        { de: "Gibt es versteckte Kosten?", ko: "숨은 비용이 있나요?" }
+      ] },
+      { group: "Abschließen", items: [
+        { de: "Dann möchte ich den Vertrag gleich abschließen.", ko: "그럼 바로 계약할게요." },
+        { de: "Kann ich meine alte Nummer behalten?", ko: "기존 번호를 그대로 쓸 수 있나요?" }
+      ] }
+    ]
+  },
+  {
+    no: 9, lv: "B1",
+    title: "Die Grillparty planen", titleKo: "바비큐 파티 준비", type: "Freizeit", typeKo: "여가",
+    intro: "친구와 야외 바비큐 파티를 계획하고 역할을 나누는 대화예요.",
+    focus: ["Planen", "Aufgaben verteilen", "Wenn und falls"],
+    roles: { A: "Mia", B: "Jan" },
+    turns: [
+      { r: "A", de: "Hast du schon gehört? Wir wollen am Samstag eine Grillparty im Park machen. Hast du Lust?", ko: "들었어? 토요일에 공원에서 바비큐 파티를 하려고 해. 올래?" },
+      { r: "B", de: "Klar, gern! Aber wer organisiert das alles?", ko: "물론이지! 그런데 누가 이걸 다 준비해?" },
+      { r: "A", de: "Das machen wir zusammen. Kannst du vielleicht das Fleisch und die Getränke besorgen?", ko: "같이 해. 네가 고기랑 음료를 사 올 수 있어?" },
+      { r: "B", de: "Das geht, aber ich habe kein Auto. Wenn Lukas mich fährt, kaufe ich alles im Großmarkt.", ko: "가능한데 나는 차가 없어. 루카스가 태워 주면 도매마트에서 다 살게." },
+      { r: "A", de: "Ich frage ihn heute Abend. Und was ist mit Vegetariern? Anna isst kein Fleisch.", ko: "오늘 저녁에 물어볼게. 채식하는 사람은 어쩌지? 안나는 고기를 안 먹어." },
+      { r: "B", de: "Stimmt, daran habe ich nicht gedacht. Wir können Gemüse und Käse grillen. Ich bringe auch Salat mit.", ko: "맞아, 그 생각을 못 했네. 채소랑 치즈를 구우면 돼. 샐러드도 가져갈게." },
+      { r: "A", de: "Perfekt. Hoffentlich regnet es nicht. Hast du den Wetterbericht gesehen?", ko: "완벽해. 비가 안 오면 좋겠다. 일기예보 봤어?" },
+      { r: "B", de: "Ja, es soll sonnig und 25 Grad warm werden. Falls es doch regnet, können wir in meine Wohnung gehen. Da ist genug Platz.", ko: "응, 맑고 25도가 될 거래. 혹시 비가 오면 우리 집으로 가면 돼. 자리가 충분해." },
+      { r: "A", de: "Gut, das ist unser Plan B. Wer bringt die Musik mit?", ko: "좋아, 그게 대안이야. 음악은 누가 가져와?" },
+      { r: "B", de: "Das kann Tom machen. Er hat einen tollen Lautsprecher.", ko: "톰이 하면 돼. 멋진 스피커가 있거든." },
+      { r: "A", de: "Dann schreibe ich gleich in die Gruppe, wer was mitbringt.", ko: "그럼 내가 바로 단톡방에 누가 뭘 가져올지 쓸게." },
+      { r: "B", de: "Super! Ich freue mich schon auf Samstag.", ko: "좋아! 벌써 토요일이 기대돼." }
+    ],
+    redemittel: [
+      { group: "Einladen und zusagen", items: [
+        { de: "Hast du Lust?", ko: "올래?" },
+        { de: "Klar, gern!", ko: "물론이지!" }
+      ] },
+      { group: "Aufgaben verteilen", items: [
+        { de: "Kannst du vielleicht das Fleisch und die Getränke besorgen?", ko: "네가 고기랑 음료를 사 올 수 있어?" },
+        { de: "Das kann Tom machen.", ko: "톰이 하면 돼." }
+      ] },
+      { group: "Bedingung nennen", items: [
+        { de: "Wenn Lukas mich fährt, kaufe ich alles im Großmarkt.", ko: "루카스가 태워 주면 도매마트에서 다 살게." },
+        { de: "Falls es doch regnet, können wir in meine Wohnung gehen.", ko: "혹시 비가 오면 우리 집으로 가면 돼." }
+      ] },
+      { group: "Rücksicht nehmen", items: [
+        { de: "Anna isst kein Fleisch.", ko: "안나는 고기를 안 먹어." },
+        { de: "Wir können Gemüse und Käse grillen.", ko: "채소랑 치즈를 구우면 돼." }
+      ] },
+      { group: "Vorfreude", items: [
+        { de: "Hoffentlich regnet es nicht.", ko: "비가 안 오면 좋겠다." },
+        { de: "Ich freue mich schon auf Samstag.", ko: "벌써 토요일이 기대돼." }
+      ] }
+    ]
   }
 ];

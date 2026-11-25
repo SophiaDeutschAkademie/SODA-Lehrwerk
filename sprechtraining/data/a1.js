@@ -252,5 +252,130 @@ window.DIALOG_DATA.A1 = [
         { de: "Gute Reise!", ko: "즐거운 여행 되세요!" }
       ] }
     ]
+  },
+  {
+    no: 7, lv: "A1",
+    title: "Im Supermarkt", titleKo: "슈퍼마켓에서", type: "Einkauf", typeKo: "쇼핑",
+    intro: "슈퍼마켓에서 물건 위치와 가격을 묻고 계산하는 대화예요.",
+    focus: ["Nach dem Ort fragen", "Preise", "Bezahlen"],
+    roles: { A: "Kundin", B: "Mitarbeiter" },
+    turns: [
+      { r: "A", de: "Entschuldigung, wo finde ich die Milch?", ko: "실례합니다, 우유는 어디에 있어요?" },
+      { r: "B", de: "Die Milch ist dort hinten, neben dem Käse.", ko: "우유는 저기 뒤쪽, 치즈 옆에 있어요." },
+      { r: "A", de: "Danke. Und haben Sie auch Eier?", ko: "감사합니다. 그리고 달걀도 있나요?" },
+      { r: "B", de: "Ja, die Eier sind in Gang drei.", ko: "네, 달걀은 3번 통로에 있어요." },
+      { r: "A", de: "Wie viel kosten die Eier?", ko: "달걀은 얼마예요?" },
+      { r: "B", de: "Zehn Eier kosten drei Euro neunzig.", ko: "달걀 열 개에 3유로 90센트예요." },
+      { r: "A", de: "Gut. Ich nehme auch ein Kilo Äpfel.", ko: "좋아요. 사과도 1킬로 살게요." },
+      { r: "B", de: "Die Äpfel liegen links, bei dem Gemüse.", ko: "사과는 왼쪽 채소 옆에 있어요." },
+      { r: "A", de: "Haben Sie eine Tüte?", ko: "봉투 있어요?" },
+      { r: "B", de: "Ja, eine Tüte kostet zehn Cent. Das macht zusammen neun Euro dreißig.", ko: "네, 봉투는 10센트예요. 전부 합쳐서 9유로 30센트예요." },
+      { r: "A", de: "Kann ich mit Karte zahlen?", ko: "카드로 계산해도 되나요?" },
+      { r: "B", de: "Ja, natürlich. Bitte stecken Sie die Karte hier ein.", ko: "네, 물론이죠. 카드를 여기에 꽂아 주세요." }
+    ],
+    redemittel: [
+      { group: "Fragen: Wo ist …?", items: [
+        { de: "Wo finde ich die Milch?", ko: "우유는 어디에 있어요?" },
+        { de: "Haben Sie auch Eier?", ko: "달걀도 있나요?" }
+      ] },
+      { group: "Ort sagen", items: [
+        { de: "Die Milch ist dort hinten, neben dem Käse.", ko: "우유는 저기 뒤쪽, 치즈 옆에 있어요." },
+        { de: "Die Eier sind in Gang drei.", ko: "달걀은 3번 통로에 있어요." }
+      ] },
+      { group: "Preis fragen", items: [
+        { de: "Wie viel kosten die Eier?", ko: "달걀은 얼마예요?" },
+        { de: "Das macht zusammen neun Euro dreißig.", ko: "전부 합쳐서 9유로 30센트예요." }
+      ] },
+      { group: "Etwas kaufen", items: [
+        { de: "Ich nehme auch ein Kilo Äpfel.", ko: "사과도 1킬로 살게요." },
+        { de: "Haben Sie eine Tüte?", ko: "봉투 있어요?" }
+      ] },
+      { group: "Bezahlen", items: [
+        { de: "Kann ich mit Karte zahlen?", ko: "카드로 계산해도 되나요?" }
+      ] }
+    ]
+  },
+  {
+    no: 8, lv: "A1",
+    title: "Meine Familie", titleKo: "나의 가족", type: "Vorstellen", typeKo: "소개",
+    intro: "친구에게 가족 사진을 보여 주며 가족을 소개하는 대화예요.",
+    focus: ["Familie", "Alter", "Possessivartikel"],
+    roles: { A: "Lena", B: "Daniel" },
+    turns: [
+      { r: "A", de: "Schau mal, das ist ein Foto von meiner Familie.", ko: "이것 봐, 우리 가족 사진이야." },
+      { r: "B", de: "Oh, schön! Wer ist der Mann hier?", ko: "와, 예쁘다! 여기 이 남자는 누구야?" },
+      { r: "A", de: "Das ist mein Vater. Er heißt Peter und ist 52 Jahre alt.", ko: "우리 아빠야. 이름은 페터고 52살이야." },
+      { r: "B", de: "Und die Frau neben ihm?", ko: "그럼 아빠 옆에 있는 여자분은?" },
+      { r: "A", de: "Das ist meine Mutter. Sie arbeitet als Lehrerin.", ko: "우리 엄마야. 선생님으로 일해." },
+      { r: "B", de: "Hast du Geschwister?", ko: "형제자매 있어?" },
+      { r: "A", de: "Ja, ich habe einen Bruder und eine Schwester.", ko: "응, 남자 형제 한 명과 여자 형제 한 명이 있어." },
+      { r: "B", de: "Wie alt sind sie?", ko: "몇 살이야?" },
+      { r: "A", de: "Mein Bruder ist 20 und meine Schwester ist 14. Und du?", ko: "남자 형제는 스무 살이고 여자 형제는 열네 살이야. 너는?" },
+      { r: "B", de: "Ich habe keine Geschwister. Ich bin Einzelkind.", ko: "나는 형제가 없어. 외동이야." },
+      { r: "A", de: "Wirklich? Und wo wohnen deine Eltern?", ko: "정말? 그럼 부모님은 어디 사셔?" },
+      { r: "B", de: "Meine Eltern wohnen in Hamburg.", ko: "부모님은 함부르크에 사셔." }
+    ],
+    redemittel: [
+      { group: "Zeigen", items: [
+        { de: "Schau mal, das ist ein Foto von meiner Familie.", ko: "이것 봐, 우리 가족 사진이야." }
+      ] },
+      { group: "Personen vorstellen", items: [
+        { de: "Das ist mein Vater.", ko: "우리 아빠야." },
+        { de: "Das ist meine Mutter.", ko: "우리 엄마야." }
+      ] },
+      { group: "Alter und Beruf", items: [
+        { de: "Er ist 52 Jahre alt.", ko: "그는 52살이야." },
+        { de: "Sie arbeitet als Lehrerin.", ko: "그녀는 선생님으로 일해." }
+      ] },
+      { group: "Nach Geschwistern fragen", items: [
+        { de: "Hast du Geschwister?", ko: "형제자매 있어?" },
+        { de: "Ich habe keine Geschwister.", ko: "나는 형제가 없어." }
+      ] },
+      { group: "Wohnort", items: [
+        { de: "Meine Eltern wohnen in Hamburg.", ko: "부모님은 함부르크에 사셔." }
+      ] }
+    ]
+  },
+  {
+    no: 9, lv: "A1",
+    title: "Im Hotel", titleKo: "호텔에서", type: "Reise", typeKo: "여행",
+    intro: "호텔 프런트에서 예약한 방을 확인하고 체크인하는 대화예요.",
+    focus: ["Reservierung", "Zimmer", "Frühstück"],
+    roles: { A: "Gast", B: "Rezeptionist" },
+    turns: [
+      { r: "A", de: "Guten Abend. Ich habe ein Zimmer reserviert.", ko: "안녕하세요. 방을 예약했어요." },
+      { r: "B", de: "Guten Abend. Wie ist Ihr Name, bitte?", ko: "안녕하세요. 성함이 어떻게 되세요?" },
+      { r: "A", de: "Mein Name ist Kim, Hana Kim.", ko: "김, 김하나예요." },
+      { r: "B", de: "Einen Moment, bitte. Ja, ein Einzelzimmer für zwei Nächte. Stimmt das?", ko: "잠시만요. 네, 싱글룸 2박이에요. 맞나요?" },
+      { r: "A", de: "Ja, das stimmt. Wie viel kostet das Zimmer?", ko: "네, 맞아요. 방은 얼마예요?" },
+      { r: "B", de: "Es kostet 80 Euro pro Nacht. Das Frühstück ist inklusive.", ko: "하룻밤에 80유로예요. 조식은 포함이에요." },
+      { r: "A", de: "Super. Wann gibt es Frühstück?", ko: "좋아요. 조식은 몇 시에 있어요?" },
+      { r: "B", de: "Von sieben bis zehn Uhr, im Restaurant im Erdgeschoss.", ko: "7시부터 10시까지, 1층 식당에서요." },
+      { r: "A", de: "Gibt es WLAN im Zimmer?", ko: "객실에 와이파이가 있나요?" },
+      { r: "B", de: "Ja, das Passwort steht auf der Karte. Hier ist Ihr Schlüssel: Zimmer 305.", ko: "네, 비밀번호는 카드에 적혀 있어요. 열쇠 여기 있어요. 305호예요." },
+      { r: "A", de: "Vielen Dank. Wo ist der Aufzug?", ko: "감사합니다. 엘리베이터는 어디예요?" },
+      { r: "B", de: "Dort rechts. Ich wünsche Ihnen einen schönen Aufenthalt!", ko: "저기 오른쪽이에요. 즐거운 숙박 되세요!" }
+    ],
+    redemittel: [
+      { group: "Reservierung", items: [
+        { de: "Ich habe ein Zimmer reserviert.", ko: "방을 예약했어요." },
+        { de: "Ein Einzelzimmer für zwei Nächte.", ko: "싱글룸 2박이에요." }
+      ] },
+      { group: "Name sagen", items: [
+        { de: "Mein Name ist Kim.", ko: "제 이름은 김이에요." }
+      ] },
+      { group: "Preis und Frühstück", items: [
+        { de: "Es kostet 80 Euro pro Nacht.", ko: "하룻밤에 80유로예요." },
+        { de: "Wann gibt es Frühstück?", ko: "조식은 몇 시에 있어요?" }
+      ] },
+      { group: "Fragen zum Hotel", items: [
+        { de: "Gibt es WLAN im Zimmer?", ko: "객실에 와이파이가 있나요?" },
+        { de: "Wo ist der Aufzug?", ko: "엘리베이터는 어디예요?" }
+      ] },
+      { group: "Höflich abschließen", items: [
+        { de: "Vielen Dank.", ko: "감사합니다." },
+        { de: "Ich wünsche Ihnen einen schönen Aufenthalt!", ko: "즐거운 숙박 되세요!" }
+      ] }
+    ]
   }
 ];
