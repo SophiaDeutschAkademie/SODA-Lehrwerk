@@ -3215,7 +3215,97 @@ const EXAMS = [
     }
   };
 
-  EXAMS.push(EXAMS.builders.tb1(3, TB1_M3), EXAMS.builders.tb1(4, TB1_M4), EXAMS.builders.tb1(5, TB1_M5));
+  /* ---------------- Modelltest 6 ---------------- */
+  const I6 = 'Linh, eine Teilnehmerin aus Ihrem Deutschkurs, heiratet in drei Wochen und hat den ganzen Kurs zur Feier eingeladen. Sie und Ihre Gesprächspartnerin/Ihr Gesprächspartner möchten ein gemeinsames Geschenk und die Fahrt zur Feier organisieren. Überlegen Sie sich, was alles zu tun ist und wer welche Aufgaben übernimmt. Sie haben sich schon diese Liste gemacht.';
+  const TB1_M6 = {
+    extraQs: ['Welches Fest feiern Sie am liebsten?', 'Wie üben Sie außerhalb des Kurses Deutsch?'],
+    t2: {
+      topic: 'Sprachen lernen: im Kurs oder mit einer App?',
+      byA: 'Svea Brodersen, 34 Jahre, Altenpflegerin',
+      quoteA: '„Ich arbeite im Schichtdienst und kann keinen Kurs mit festen Zeiten besuchen. Mit der App lerne ich, wann ich will, zum Beispiel im Bus. Das kostet fast nichts, und ich kann jede Übung beliebig oft wiederholen.“',
+      textB: 'Piotr Zieliński, 47 Jahre, Busfahrer: „Mit einer App lernt man Wörter, aber nicht sprechen. Im Kurs muss ich reden, die Lehrerin korrigiert mich sofort, und die anderen haben dieselben Schwierigkeiten wie ich. Allein zu Hause würde ich nach zwei Wochen aufhören.“',
+      opinion: 'Du kannst Frau Brodersen gut verstehen, denn nicht jeder hat abends Zeit. Trotzdem glaubst du, dass eine App allein nicht reicht, weil man Sprechen nur lernt, wenn man mit Menschen redet. Am besten findest du beides zusammen: einen Kurs für das Sprechen und die App für die Wörter.',
+      experience: 'Du hast in deinem Heimatland ein Jahr lang nur mit einer App gelernt. Du kanntest viele Wörter, aber beim ersten Gespräch in Deutschland hast du fast nichts verstanden. Erst im Kurs ist es besser geworden. Heute übst du zusätzlich jeden Tag zehn Minuten mit der App, zum Beispiel in der U-Bahn.'
+    },
+    t3: {
+      title: 'Hochzeit von Linh',
+      items: ['Geschenk (was? wie teuer?)', 'Geld einsammeln', 'Glückwunschkarte', 'Fahrt zur Feier (Auto, Zug …)', 'Überraschung (Lied, Fotos …)', '…'],
+      instruction: I6,
+      summary_ko: '같은 반 수강생 린이 3주 뒤 결혼하며 반 전체를 결혼식에 초대했습니다. 파트너와 함께 공동 선물과 행사장까지 가는 방법을 계획합니다. 이유를 들어 제안하고, 파트너의 제안에 반응하고, 공동 제안에 합의합니다.',
+      intro: intro3(I6),
+      ideas: 'Du schlägst vor, dass ihr Linh und ihrem Mann einen Gutschein von einem Möbelhaus schenkt, damit sie sich für die neue Wohnung selbst etwas aussuchen können. Zusätzlich könnt ihr ein Fotobuch mit Bildern aus dem Kurs machen. Wenn jeder zehn Euro gibt, habt ihr ungefähr 150 Euro; du sammelst das Geld ein und besorgst den Gutschein. Dein Partner kauft eine Karte, und am Montag unterschreiben alle im Kurs. Der Saal liegt außerhalb der Stadt, und abends fährt kein Zug mehr zurück, deshalb fragst du, wer ein Auto hat; mit drei Autos schafft ihr es, und dein Partner schreibt eine Liste, wer bei wem mitfährt. Als Überraschung singt ihr ein kurzes Lied auf Deutsch, das ihr nächste Woche nach dem Unterricht übt.',
+      topicLabel: '선물, 돈 걷기, 축하 카드, 행사장 이동, 깜짝 이벤트',
+      groups: [
+        /(geschenk|gutschein|fotobuch|möbel|schenk|was schenken|wie teuer|kaufen|besorg)/,
+        /(geld|einsammel|sammel|euro|jeder gibt|bezahl|kasse|beitrag)/,
+        /(karte|glückwunsch|unterschreib|unterschrift|schreib|wünsche)/,
+        /(fahrt|auto|zug|fahren|mitfahr|abholen|bahn|saal|außerhalb|zurück|bus)/,
+        /(überrasch|lied|singen|foto|fotos|video|musik|üben)/
+      ]
+    }
+  };
+
+  /* ---------------- Modelltest 7 ---------------- */
+  const I7 = 'Ihr Deutschkurs möchte am letzten Kurstag vor den Ferien zusammen einen deutschen Film sehen. Sie und Ihre Gesprächspartnerin/Ihr Gesprächspartner sollen den Filmabend organisieren. Überlegen Sie sich, was alles zu tun ist und wer welche Aufgaben übernimmt. Sie haben sich schon diese Liste gemacht.';
+  const TB1_M7 = {
+    extraQs: ['Welches Essen aus Ihrer Heimat vermissen Sie?', 'Wie kommen Sie zum Kurs (Bus, Fahrrad …)?'],
+    t2: {
+      topic: 'Taschengeld nur für Mithilfe im Haushalt?',
+      byA: 'Verena Scholl, 41 Jahre, Krankenschwester',
+      quoteA: '„Unsere beiden Söhne bekommen ihr Taschengeld nur, wenn sie ihre Aufgaben erledigt haben: Zimmer aufräumen, Müll hinausbringen, Tisch decken. So lernen sie früh, dass man für sein Geld auch etwas tun muss.“',
+      textB: 'Florian Maier, 38 Jahre, Erzieher: „Taschengeld ist kein Lohn. Kinder sollen damit lernen, wie man mit Geld umgeht – auch wenn sie einmal nicht geholfen haben. Im Haushalt arbeiten bei uns alle mit, weil wir eine Familie sind, nicht weil jemand dafür bezahlt wird.“',
+      opinion: 'Du bist eher der gleichen Meinung wie Herr Maier: Im Haushalt sollen Kinder helfen, weil sie zur Familie gehören, und Taschengeld ist dazu da, dass sie den Umgang mit Geld lernen. Für eine besondere Arbeit, zum Beispiel den Balkon putzen oder Rasen mähen, findest du ein paar Euro extra aber in Ordnung.',
+      experience: 'Als Kind in Krakau hast du kein festes Taschengeld bekommen, nur ab und zu ein paar Złoty von deiner Oma. Im Haushalt hast du trotzdem immer geholfen, zum Beispiel beim Abwasch und beim Einkaufen. Gespart hast du für ein Fahrrad, und so hast du gelernt, mit Geld umzugehen. Deine Schwester bekam später ein bisschen Taschengeld, und das hat gut funktioniert.'
+    },
+    t3: {
+      title: 'Filmabend im Deutschkurs',
+      items: ['Film (welcher? mit Untertiteln?)', 'Raum und Technik', 'Essen und Getränke', 'Einladung (auch für die Lehrerin?)', 'Kosten (wer bezahlt was?)', '…'],
+      instruction: I7,
+      summary_ko: '방학 전 마지막 수업 날 독일어 반 전체가 함께 독일 영화를 보는 영화의 밤을 파트너와 함께 준비합니다. 이유를 들어 제안하고, 파트너의 제안에 반응하고, 공동 제안에 합의합니다.',
+      intro: intro3(I7),
+      ideas: 'Du würdest gern eine Komödie zeigen, weil dann alle etwas zu lachen haben, und zwar mit deutschen Untertiteln, damit alle gut mitkommen; der Film sollte nicht zu lang sein, und die Lehrerin kann einen Film empfehlen. Du schlägst vor, den Kursraum zu nehmen, weil es dort einen Beamer gibt; du reservierst den Raum und probierst vorher die Lautsprecher aus (wenn sie kaputt sind, bringst du deine eigenen mit). Jeder bringt eine Kleinigkeit aus seinem Land mit, und Getränke kauft ihr zusammen. Du schreibst eine Nachricht an die Kursgruppe mit Datum und Uhrzeit und lädst auch die Lehrerin ein. Für die Getränke sammelt ihr zwei Euro pro Person ein, dann wird es für niemanden teuer; das Geld sammelst du ein.',
+      topicLabel: '영화·자막, 공간·기술, 음식·음료, 초대, 비용',
+      groups: [
+        /(film|komödie|untertitel|lang|empfehl|krimi|drama|kino|deutscher film|sehen)/,
+        /(raum|technik|beamer|laptop|lautsprecher|kursraum|leinwand|ausprobier|testen|reserv|steckdose|licht)/,
+        /(essen|getränke|snack|popcorn|chips|kuchen|saft|wasser|trinken|mitbring|kleinigkeit|pizza|obst)/,
+        /(einladung|einlad|nachricht|lehrerin|gruppe|datum|uhrzeit|schreib|erinner|bescheid)/,
+        /(kosten|euro|geld|bezahl|sammel|einsammel|teuer|preis|zahlt|beitrag)/
+      ]
+    }
+  };
+
+  /* ---------------- Modelltest 8 ---------------- */
+  const I8 = 'In sechs Wochen ist die Prüfung. Einige aus Ihrem Deutschkurs möchten sich zusätzlich zum Unterricht gemeinsam vorbereiten. Sie und Ihre Gesprächspartnerin/Ihr Gesprächspartner sollen diese Lerngruppe organisieren. Überlegen Sie sich, was alles zu tun ist und wer welche Aufgaben übernimmt. Sie haben sich schon diese Liste gemacht.';
+  const TB1_M8 = {
+    extraQs: ['Welche deutsche Stadt möchten Sie gern besuchen?', 'Was machen Sie am Wochenende gern?'],
+    t2: {
+      topic: 'Privates Feuerwerk an Silvester verbieten?',
+      byA: 'Gudrun Thiele, 58 Jahre, Krankenschwester',
+      quoteA: '„In der Silvesternacht behandeln wir jedes Jahr Menschen mit schweren Verletzungen an Händen und Augen. Dazu kommen der Lärm, der viele Tiere erschreckt, und der Müll am nächsten Morgen. Ein gemeinsames Feuerwerk der Stadt würde völlig genügen.“',
+      textB: 'Malte Petersen, 31 Jahre, Elektriker: „Für mich gehören Raketen zu Silvester wie der Baum zu Weihnachten. Wir feiern mit allen Nachbarn auf der Straße, und die Kinder freuen sich das ganze Jahr darauf. Wer vorsichtig ist und nur geprüfte Raketen kauft, dem passiert nichts.“',
+      opinion: 'Du kannst beide verstehen, bist aber eher für ein Verbot von privatem Feuerwerk. Ein großes Feuerwerk der Stadt ist schöner und sicherer als hundert kleine, und es gibt weniger Lärm und Müll. Nur für Familien, die weit vom Zentrum wohnen, wäre das unpraktisch.',
+      experience: 'In Krakau hast du als Kind jedes Jahr das Feuerwerk der Stadt am Fluss gesehen; privat hat kaum jemand Raketen gekauft. In deiner ersten Silvesternacht in Deutschland bist du sehr erschrocken, weil es so laut war, und eine Nachbarin hat sich Sorgen um ihren Hund gemacht. Inzwischen feierst du meistens bei Freunden in der Wohnung und schaust vom Balkon aus zu.'
+    },
+    t3: {
+      title: 'Lerngruppe für die Prüfung',
+      items: ['Termine (wann? wie oft?)', 'Ort (Kursraum? Bibliothek? zu Hause?)', 'Was üben? (Hören, Schreiben, Sprechen …)', 'Material (Modelltests, Wörterlisten)', 'Pause (Essen und Getränke)', '…'],
+      instruction: I8,
+      summary_ko: '6주 뒤 시험을 앞두고 수업 외에 함께 준비할 스터디 그룹을 파트너와 함께 조직합니다. 이유를 들어 제안하고, 파트너의 제안에 반응하고, 공동 제안에 합의합니다.',
+      intro: intro3(I8),
+      ideas: 'Du würdest gern zweimal pro Woche lernen, am Dienstagabend und am Samstagvormittag (so bleibt genug Zeit bis zur Prüfung, und alle können nach der Arbeit kommen). Treffen könnt ihr euch im Kursraum, wenn er frei ist; sonst gibt es in der Stadtbibliothek Gruppenräume (du fragst im Büro der Sprachschule nach). Üben würdet ihr vor allem Hören und Sprechen: Ihr hört jedes Mal einen Text und sprecht darüber, am Samstag schreibt ihr zusätzlich einen Brief und korrigiert ihn gegenseitig. Als Material kopierst du die Modelltests und machst eine Wörterliste zu den wichtigsten Themen. In der Pause bringt jeder etwas zu essen mit, und du kochst Tee. Die anderen aus dem Kurs lädst du über die Chatgruppe ein.',
+      topicLabel: '시기·횟수, 장소, 연습 내용, 자료, 휴식(음식·음료)',
+      groups: [
+        /(wann|wie oft|termin|woche|dienstag|donnerstag|samstag|sonntag|montag|mittwoch|freitag|abend|vormittag|nachmittag|uhr|zeit|zweimal|einmal|dreimal)/,
+        /(ort|wo |kursraum|bibliothek|zu hause|raum|gruppenraum|büro|sprachschule|café|treffen)/,
+        /(üben|hören|schreiben|sprechen|lesen|brief|text|grammatik|wortschatz|korrigier|aufgabe|gegenseitig)/,
+        /(material|modelltest|wörterliste|liste|kopier|buch|heft|drucken|vokabel|unterlagen|übungstest)/,
+        /(pause|essen|getränk|tee|kaffee|kuchen|snack|mitbring|trinken|wasser|obst|saft|kochen)/
+      ]
+    }
+  };
+
+  EXAMS.push(EXAMS.builders.tb1(3, TB1_M3), EXAMS.builders.tb1(4, TB1_M4), EXAMS.builders.tb1(5, TB1_M5), EXAMS.builders.tb1(6, TB1_M6), EXAMS.builders.tb1(7, TB1_M7), EXAMS.builders.tb1(8, TB1_M8));
 })();
 
 /* 시험 데이터 확장: telc B2 Modelltest 3, 4, 5
