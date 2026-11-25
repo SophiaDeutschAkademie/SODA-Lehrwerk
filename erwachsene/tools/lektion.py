@@ -565,6 +565,9 @@ def audio_items(L):
             elif t == 'aussprache':
                 for h in b['hoer']:
                     add('N', h['say'])
+            elif t == 'punkt':
+                for de_, _ in b['bsp']:                                   # 문법 예문도 눌러서 들을 수 있게 한다
+                    add('N', plain(de_))
             elif t == 'alphabet':
                 for _, say, _ in ALPHABET:
                     add('N', say)

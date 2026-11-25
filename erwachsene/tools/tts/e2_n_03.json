@@ -1,0 +1,39 @@
+{
+ "job": "e2_n_03",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Wann fängt der Kurs an? – Um neun Uhr."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Ich fahre ins Büro. Dohyun fährt ins Büro."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Ich esse kein Fleisch. Hana isst kein Fleisch."
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Ich schlafe lange. Meine Tochter schläft lange."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wann fängt der Kurs an? – Um neun Uhr. [pause] Ich fahre ins Büro. Dohyun fährt ins Büro. [pause] Ich esse kein Fleisch. Hana isst kein Fleisch. [pause] Ich schlafe lange. Meine Tochter schläft lange. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

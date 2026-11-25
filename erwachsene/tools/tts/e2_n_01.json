@@ -1,0 +1,81 @@
+{
+ "job": "e2_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Wie heißt du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Woher kommen Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Wie heißt du? Woher kommst du?"
+   ]
+  },
+  {
+   "pid": "a1-1/1",
+   "who": "N",
+   "parts": [
+    "Wie heißen Sie? Woher kommen Sie?"
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Arbeitest du hier? – Nein."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Sprechen Sie Englisch? – Ja."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Kommt Frau Hoffmann aus Frankfurt? – Nein, aus Köln."
+   ]
+  },
+  {
+   "pid": "a1-1/2",
+   "who": "N",
+   "parts": [
+    "Frau Hoffmann kommt nicht aus Frankfurt."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Das ist mein Bruder. Das ist meine Mutter."
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "Seine Firma ist in Frankfurt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wie heißt du? [pause] Woher kommen Sie? [pause] Wie heißt du? Woher kommst du? [pause] Wie heißen Sie? Woher kommen Sie? [pause] Arbeitest du hier? – Nein. [pause] Sprechen Sie Englisch? – Ja. [pause] Kommt Frau Hoffmann aus Frankfurt? – Nein, aus Köln. [pause] Frau Hoffmann kommt nicht aus Frankfurt. [pause] Das ist mein Bruder. Das ist meine Mutter. [pause] Seine Firma ist in Frankfurt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

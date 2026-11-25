@@ -1,0 +1,81 @@
+{
+ "job": "e2_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "ein Kind, zwei Kinder"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "eine Schwester, zwei Schwestern"
+   ]
+  },
+  {
+   "pid": "a1-1/3",
+   "who": "N",
+   "parts": [
+    "ein Bruder, drei Brüder"
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Das ist ein Schnitzel. Das Schnitzel ist sehr gut."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Ich nehme den Fisch."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Ich möchte keinen Kuchen."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Wir haben keine Eier."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Der Kuchen ist nicht teuer."
+   ]
+  },
+  {
+   "pid": "a1-1/4",
+   "who": "N",
+   "parts": [
+    "Möchtest du auch ein Stück Kuchen?"
+   ]
+  },
+  {
+   "pid": "a1-1/5",
+   "who": "N",
+   "parts": [
+    "Wie spät ist es? – Es ist halb neun."
+   ]
+  }
+ ],
+ "script": "Also. [pause] ein Kind, zwei Kinder [pause] eine Schwester, zwei Schwestern [pause] ein Bruder, drei Brüder [pause] Das ist ein Schnitzel. Das Schnitzel ist sehr gut. [pause] Ich nehme den Fisch. [pause] Ich möchte keinen Kuchen. [pause] Wir haben keine Eier. [pause] Der Kuchen ist nicht teuer. [pause] Möchtest du auch ein Stück Kuchen? [pause] Wie spät ist es? – Es ist halb neun. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}
