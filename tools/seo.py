@@ -100,14 +100,19 @@ PAGES = [
      '초등 고학년부터 고등학생까지 독일어를 처음부터 B1까지 배우는 청소년 교재. 서울에서 온 Yuna의 쾰른 학교생활을 따라 대화, 단어, 문법, 연습 문제, 말하기와 쓰기를 독일어 음성과 함께 배웁니다. '
      'A1.1부터 B1.2까지 여섯 단계 48과의 목차와 A1.1, A1.2 본문을 볼 수 있습니다. 소피아 독일어학원.',
      'jugend/icons/icon-512.png'),
+    ('basis/index.html',
+     '성인 독일어 밑바탕 · A1–B1 성인 독일어 교재 | SODA Basis',
+     '독일에서 공부하거나 일하거나 살려는 성인을 위한 독일어 기초 교재. 처음 배우는 A1부터 B1까지 여섯 단계 40과로 배웁니다. '
+     '대화, 낱말, 문법, 읽기와 연습을 독일어 음성과 함께 배우고, 과제는 대학 생활과 직장 생활 가운데 골라서 합니다. 소피아 독일어학원.',
+     'basis/icons/icon-512.png'),
     ('studium/index.html',
-     '대학생 독일어 디딤돌 · A1–C1 Hochschule 대학생 독일어 교재 | SODA Studium',
-     '독일 유학과 교환 학기를 준비하는 대학생을 위한 독일어 교재. 처음 배우는 A1부터 독일 대학 입학에 필요한 C1 Hochschule 수준까지 열 단계 68과로 배웁니다. '
+     '대학생 독일어 디딤돌 · B2–C1 Hochschule 대학생 독일어 교재 | SODA Studium',
+     '독일 유학과 교환 학기를 준비하는 대학생을 위한 독일어 교재. B1을 마친 뒤 B2부터 독일 대학 입학에 필요한 C1 Hochschule 수준까지 네 단계 28과로 배웁니다. '
      '강의 듣기, 전공 글 읽기, 발표, 논증하는 글쓰기를 다룹니다. 소피아 독일어학원.',
      'studium/icons/icon-512.png'),
     ('beruf/index.html',
-     '직장인 독일어 길잡이 · A1–B2 직장인과 성인을 위한 독일어 교재 | SODA Beruf',
-     '독일 취업과 이직, 독일 생활을 준비하는 직장인과 성인을 위한 독일어 교재. 처음 배우는 A1부터 업무에 쓰는 B2까지 여덟 단계 56과로 배웁니다. '
+     '직장인 독일어 길잡이 · B2 직장인과 성인을 위한 독일어 교재 | SODA Beruf',
+     '독일 취업과 이직을 준비하는 직장인과 성인을 위한 독일어 교재. B1을 마친 뒤 업무에 쓰는 B2를 두 단계 16과로 배웁니다. '
      '업무 메일과 전화, 회의, 발표, 협상, 지원서와 면접을 다룹니다. 소피아 독일어학원.',
      'beruf/icons/icon-512.png'),
     ('lernmethoden/index.html',
@@ -134,7 +139,7 @@ if not JUGEND_PUBLIC:
     PAGES = [x for x in PAGES if not x[0].startswith('jugend/')]
     NOINDEX = NOINDEX + ['jugend/index.html']
 
-# 성인 교재 두 권(studium/, beruf/)은 erwachsene/tools/status.json 의 public 이 false 이면 비공개: 검색 태그와 사이트맵에서 빼고 noindex 를 넣습니다.
+# 성인 교재 세 권(basis/, studium/, beruf/)은 erwachsene/tools/status.json 의 public 이 false 이면 비공개: 검색 태그와 사이트맵에서 빼고 noindex 를 넣습니다.
 def _erwachsene_public():
     try:
         return bool(json.load(open(os.path.join(ROOT, 'erwachsene', 'tools', 'status.json'), encoding='utf-8')).get('public', True))
@@ -143,8 +148,8 @@ def _erwachsene_public():
 
 
 if not _erwachsene_public():
-    PAGES = [x for x in PAGES if not x[0].startswith(('studium/', 'beruf/'))]
-    NOINDEX = NOINDEX + ['studium/index.html', 'beruf/index.html']
+    PAGES = [x for x in PAGES if not x[0].startswith(('basis/', 'studium/', 'beruf/'))]
+    NOINDEX = NOINDEX + ['basis/index.html', 'studium/index.html', 'beruf/index.html']
 
 BEGIN = '<!-- seo:begin (tools/seo.py에서 만듦, 직접 고치지 마세요) -->'
 END = '<!-- seo:end -->'

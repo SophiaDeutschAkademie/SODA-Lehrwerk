@@ -1,32 +1,79 @@
 {
  "books": [
   {
-   "id": "studium",
-   "mark": "SODA Studium",
-   "titel": "대학생 독일어 디딤돌",
-   "sub": "Deutsch für Studium und Uni, A1 bis C1 Hochschule",
-   "seite": "대학생 독일어 디딤돌 · A1–C1 Hochschule 대학생 독일어 교재 목차 | SODA Studium",
-   "lead": "독일 유학과 교환 학기를 준비하는 대학생을 위한 교재예요. 처음 배우는 A1부터 독일 대학 입학에 필요한 C1 Hochschule 수준까지 열 단계, 68과로 배워요.",
-   "stufen": "열 단계",
-   "spur": "대학생 과정",
+   "id": "basis",
+   "mark": "SODA Basis",
+   "titel": "성인 독일어 밑바탕",
+   "sub": "Deutsch für Alltag, Studium und Beruf, A1 bis B1",
+   "seite": "성인 독일어 밑바탕 · A1–B1 성인 독일어 교재 목차 | SODA Basis",
+   "lead": "독일에서 공부하거나 일하거나 살려는 성인을 위한 기초 교재예요. 처음 배우는 A1부터 생활과 일에서 스스로 말하고 쓰는 B1까지 여섯 단계, 40과로 배워요.",
+   "stufen": "여섯 단계",
+   "spur": "공통 과정",
    "levels": [
     "a1-1",
     "a1-2",
     "a2-1",
     "a2-2",
     "b1-1",
-    "b1-2",
+    "b1-2"
+   ],
+   "weiter": {
+    "titel": "B1을 마친 뒤",
+    "text": "B1.2까지 마치면 목적에 따라 두 교재로 이어져요. 대학에서 공부하려면 「대학생 독일어 디딤돌」(B2–C1 Hochschule)로, 직장에서 쓰려면 「직장인 독일어 길잡이」(B2)로 가요.",
+    "links": [
+     [
+      "대학생 독일어 디딤돌 목차 보기",
+      "../studium/"
+     ],
+     [
+      "직장인 독일어 길잡이 목차 보기",
+      "../beruf/"
+     ]
+    ]
+   },
+   "stufe": "A1과 A2 단계에는 과가 6개씩, B1 단계에는 8개씩 있어요. 단계마다 복습과 실전 과제를 하는 Wiederholung 2개와 단계 평가 1개가 함께 있어요. 과마다 마지막 순서의 과제는 대학 생활과 직장 생활 두 가지예요. 하나를 고르면 다음 과에서도 그쪽 과제가 나와요.",
+   "app": "SODA BASIS",
+   "kurz": "Basis",
+   "desc": "Sophia Deutsch Akademie · 성인 독일어 밑바탕",
+   "farbe": {
+    "accent": "#6B4FA3",
+    "ink": "#553D86",
+    "fill": "#614796",
+    "daccent": "#B9A4EC",
+    "dink": "#CDBDF3",
+    "dfill": "#B9A4EC"
+   }
+  },
+  {
+   "id": "studium",
+   "mark": "SODA Studium",
+   "titel": "대학생 독일어 디딤돌",
+   "sub": "Deutsch für Studium und Uni, B2 bis C1 Hochschule",
+   "seite": "대학생 독일어 디딤돌 · B2–C1 Hochschule 대학생 독일어 교재 목차 | SODA Studium",
+   "lead": "독일 유학과 교환 학기를 준비하는 대학생을 위한 교재예요. B1을 마친 뒤 B2부터 독일 대학 입학에 필요한 C1 Hochschule 수준까지 네 단계, 28과로 배워요.",
+   "stufen": "네 단계",
+   "spur": "대학생 과정",
+   "levels": [
     "s-b2-1",
     "s-b2-2",
     "s-c1-1",
     "s-c1-2"
    ],
-   "zwei": "A1.1부터 B1.2까지는 「직장인 독일어 길잡이」와 같은 과로 배우고, 과제만 대학 생활에 맞췄어요. B2와 C1 Hochschule는 대학생을 위한 과정이에요.",
-   "andere": {
-    "titel": "직장인 독일어 길잡이 목차 보기",
-    "href": "../beruf/"
+   "weiter": {
+    "titel": "이 교재의 앞 단계",
+    "text": "A1.1부터 B1.2까지는 「성인 독일어 밑바탕」에서 배워요. 거기서 과제를 대학 생활 쪽으로 골라서 하면 이 교재로 바로 이어져요.",
+    "links": [
+     [
+      "성인 독일어 밑바탕 목차 보기",
+      "../basis/"
+     ],
+     [
+      "직장인 독일어 길잡이 목차 보기",
+      "../beruf/"
+     ]
+    ]
    },
-   "stufe": "A1과 A2 단계에는 과가 6개씩, B1과 B2 단계에는 8개씩, C1 단계에는 6개씩 있어요. 단계마다 복습과 실전 과제를 하는 Wiederholung 2개와 단계 평가 1개가 함께 있어요. C1 Hochschule 단계는 긴 글과 강의를 중심으로 진행해요.",
+   "stufe": "B2 단계에는 과가 8개씩, C1 단계에는 6개씩 있어요. 단계마다 복습과 실전 과제를 하는 Wiederholung 2개와 단계 평가 1개가 함께 있어요. C1 Hochschule 단계는 긴 글과 강의를 중심으로 진행해요.",
    "app": "SODA STUDIUM",
    "kurz": "Studium",
    "desc": "Sophia Deutsch Akademie · 대학생 독일어 디딤돌",
@@ -43,27 +90,30 @@
    "id": "beruf",
    "mark": "SODA Beruf",
    "titel": "직장인 독일어 길잡이",
-   "sub": "Deutsch für Alltag und Beruf, A1 bis B2",
-   "seite": "직장인 독일어 길잡이 · A1–B2 직장인과 성인을 위한 독일어 교재 목차 | SODA Beruf",
-   "lead": "독일 취업과 이직, 독일 생활을 준비하는 직장인과 성인을 위한 교재예요. 처음 배우는 A1부터 업무에 쓰는 B2까지 여덟 단계, 56과로 배워요.",
-   "stufen": "여덟 단계",
+   "sub": "Deutsch für den Beruf, B2",
+   "seite": "직장인 독일어 길잡이 · B2 직장인과 성인을 위한 독일어 교재 목차 | SODA Beruf",
+   "lead": "독일 취업과 이직을 준비하는 직장인과 성인을 위한 교재예요. B1을 마친 뒤 업무에 쓰는 B2를 두 단계, 16과로 배워요.",
+   "stufen": "두 단계",
    "spur": "직장인 과정",
    "levels": [
-    "a1-1",
-    "a1-2",
-    "a2-1",
-    "a2-2",
-    "b1-1",
-    "b1-2",
     "b-b2-1",
     "b-b2-2"
    ],
-   "zwei": "A1.1부터 B1.2까지는 「대학생 독일어 디딤돌」과 같은 과로 배우고, 과제만 직장과 생활에 맞췄어요. B2는 직장인을 위한 과정이에요.",
-   "andere": {
-    "titel": "대학생 독일어 디딤돌 목차 보기",
-    "href": "../studium/"
+   "weiter": {
+    "titel": "이 교재의 앞 단계",
+    "text": "A1.1부터 B1.2까지는 「성인 독일어 밑바탕」에서 배워요. 거기서 과제를 직장 생활 쪽으로 골라서 하면 이 교재로 바로 이어져요.",
+    "links": [
+     [
+      "성인 독일어 밑바탕 목차 보기",
+      "../basis/"
+     ],
+     [
+      "대학생 독일어 디딤돌 목차 보기",
+      "../studium/"
+     ]
+    ]
    },
-   "stufe": "A1과 A2 단계에는 과가 6개씩, B1과 B2 단계에는 8개씩 있어요. 단계마다 복습과 실전 과제를 하는 Wiederholung 2개와 단계 평가 1개가 함께 있어요. B2를 마친 뒤에는 SODA Lehrwerk의 Business-Deutsch와 독해, 듣기, 쓰기 훈련으로 이어서 공부할 수 있어요.",
+   "stufe": "B2 단계에는 과가 8개씩 있어요. 단계마다 복습과 실전 과제를 하는 Wiederholung 2개와 단계 평가 1개가 함께 있어요. B2를 마친 뒤에는 SODA Lehrwerk의 Business-Deutsch와 독해, 듣기, 쓰기 훈련으로 이어서 공부할 수 있어요.",
    "app": "SODA BERUF",
    "kurz": "Beruf",
    "desc": "Sophia Deutsch Akademie · 직장인 독일어 길잡이",
@@ -806,6 +856,14 @@
     ]
    ],
    "nach": [
+    [
+     "대학생 독일어 디딤돌 (B2부터)",
+     "../studium/"
+    ],
+    [
+     "직장인 독일어 길잡이 (B2)",
+     "../beruf/"
+    ],
     [
      "Goethe-Zertifikat B1 Modelltest",
      "https://sophiadeutschakademie.github.io/SODA-Goethe/goethe-b1/"

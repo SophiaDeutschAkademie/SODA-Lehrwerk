@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""SODA Studium, SODA Beruf 본문(과, Wiederholung, Stufentest) 도구. 청소년 교재 도구(jugend/tools/lektion.py)를 옮겨 쓴 것입니다.
+"""SODA Basis, SODA Studium, SODA Beruf 본문(과, Wiederholung, Stufentest) 도구. 청소년 교재 도구(jugend/tools/lektion.py)를 옮겨 쓴 것입니다.
 
   python3 erwachsene/tools/lektion.py check [a1-1/1 ...]      원고(tools/src/<단계>/<이름>.txt)를 읽어 짜임과 음성 글자 수를 검사합니다
   python3 erwachsene/tools/lektion.py tts NAME a1-1/1 ...      아직 음성이 없는 줄의 음성 대본을 tools/tts/NAME_<화자>_NN.json 에 씁니다
   python3 erwachsene/tools/lektion.py prompts NAME a1-1/1 ...  아직 그림이 없는 그림의 프롬프트를 tools/tts/NAME.prompts.json 에 씁니다 (--alle: 있는 그림도 모두)
   python3 erwachsene/tools/lektion.py cut RAW_DIR              RAW_DIR 의 생성 음성(<job>.mp3 + <job>.words.json)을 줄 단위로 잘라 audio/ 에 넣습니다
   python3 erwachsene/tools/lektion.py img RAW_DIR              RAW_DIR 의 그림(<단계>_<이름>_szene.webp, _kartenN.webp, cast_N.webp)을 img/ 에 넣습니다
-  python3 erwachsene/tools/lektion.py site [--draft]           과 화면을 두 교재(studium/<단계>/<이름>/, beruf/<단계>/<이름>/)에 만들고 tools/open.json 을 씁니다
+  python3 erwachsene/tools/lektion.py site [--draft]           과 화면을 그 단계가 든 교재 폴더(basis/<단계>/<이름>/, studium/…, beruf/…)에 만들고 tools/open.json 을 씁니다
 
-원고 하나로 두 교재의 화면을 만듭니다. 공통 단계(A1.1–B1.2)의 과는 본문이 같고, 과제 구역에서 --S 로 시작한 블록은 대학생 교재에만, --B 로 시작한 블록은 직장인 교재에만 나옵니다.
+원고 하나가 화면 하나가 됩니다. 공통 단계(A1.1–B1.2, 「성인 독일어 밑바탕」)의 과는 과제 구역에 과제가 두 가지 있습니다: --S 로 시작한 블록은 대학 과제, --B 로 시작한 블록은 직장 과제.
+화면에는 둘 다 들어가고, 학습자가 고른 쪽만 보입니다(고른 것은 기록의 o.sp 에 남아 다음 과에서도 이어집니다).
 원고 형식은 tools/src/README.md 에 있습니다. 음성은 ElevenLabs eleven_v3(language_code de), 그림은 Recraft 4.1 Flash(SODA 삽화 그림체)입니다.
 """
 import sys, os, re, json, glob, html, hashlib, subprocess, datetime, random
@@ -37,6 +38,11 @@ CAST = {
     'Mann':     dict(name='Mann', voice='aTTiK3YzK3dXETpuDE2h', vname='Ben', pre='ma', av=''),
     'N':        dict(name='', voice='tR9bEXIX9ixlxSis0fqv', vname='Toni', pre='n', av=''),
 }
+SPUR = {'S': '대학', 'B': '직장'}          # 공통 과정의 두 가지 과제
+WAHL = ('<div class="wahl" id="wahl" role="group" aria-labelledby="wahl-t"><p class="wahl-t" id="wahl-t">과제 고르기</p>'
+        '<p class="wahl-p">역할 대화와 말하기, 쓰기 과제는 대학 생활과 직장 생활 두 가지예요. 하나를 고르면 다음 과에서도 그쪽 과제가 나와요. 언제든 바꿀 수 있어요.</p>'
+        '<div class="wahl-k"><button type="button" class="chip" data-spur="S" aria-pressed="false">대학 과제</button>'
+        '<button type="button" class="chip" data-spur="B" aria-pressed="false">직장 과제</button></div></div>')
 CASTSHEETS = (('cast_1', ['jiu', 'dohyun', 'sora', 'lena']), ('cast_2', ['becker', 'markus', 'hoffmann']))
 STYLE = ('Modern minimalist editorial illustration, calm and refined, simplified geometric forms, flat matte colors with a very fine subtle grain, '
          'restrained palette of deep navy, slate gray, warm sand and ivory with one muted ochre accent, natural muted skin tones, minimal facial features, '
@@ -224,7 +230,7 @@ def parse(path):
                 continue
             assert sec, '== 구역 이름이 먼저 와야 합니다'
             if s.startswith(('-- ', '--S ', '--B ')):
-                nur = s[2] if s[2] in 'SB' else ''                  # --S: 대학생 교재에만, --B: 직장인 교재에만
+                nur = s[2] if s[2] in 'SB' else ''                  # --S: 대학 과제, --B: 직장 과제 (학습자가 고른 쪽만 보인다)
                 head = s[3:].strip(); t, _, arg = head.partition(' '); f = fields(arg) if arg else []
                 blk = {'t': t, 'nur': nur}; pend = None
                 if t == 'dialog':
@@ -672,6 +678,10 @@ def check_one(L, p):
         for sec_, bl_ in secs.items():
             if sec_ != 'sprechen' and any(b.get('nur') for b in bl_):
                 errs.append('--S, --B 는 과제 구역에서만 씀 (%s)' % sec_)
+        for kinds, was in ((('schreiben',), '쓰기'), (('ich', 'projekt'), '내 이야기')):      # 저장 이름이 제목에서 나오므로, 한 화면에 함께 들어가는 두 과제의 제목이 같으면 쓴 글이 겹친다
+            ts = [b.get('titel', '') for b in secs.get('sprechen', []) if b['t'] in kinds]
+            if len(set(ts)) != len(ts):
+                errs.append('%s 블록의 제목이 겹침 (대학 과제와 직장 과제의 제목을 다르게)' % was)
         e = secs.get('einstieg', [{}])[0]
         for k in ('bild', 'alt', 'lead', 'mission'):
             if not e.get(k):
@@ -1140,7 +1150,9 @@ class Page:
 
     def __init__(self, p, L, book, draft=False):
         self.p = p; self.L = L; self.pid = p['id']; self.mp = amap(self.pid); self.draft = draft
-        self.book = book; self.bk = 'S' if book['id'] == 'studium' else 'B'          # 교재
+        self.book = book
+        self.wahl = p['lv']['art'] == 'g'         # 공통 과정: 과제가 두 가지(--S 대학, --B 직장)라서 화면에서 하나를 고른다
+        self.wahl_da = False                       # 과제 고르기 단추를 이미 놓았는가
         self.miss = []; self.exn = 0; self.data = {'id': self.pid, 'w': [], 'dlg': {}}
         self.na = ohne_audio(p['lv']['id']); self.nan = 0     # 음성을 나중에 만드는 단계, 빠진 음성 수
         self.prev = None                                   # 같은 단계의 앞 과
@@ -1296,9 +1308,12 @@ class Page:
             self.miss.append('img szene')
         h += '<p class="lead">%s</p>' % ko(b['lead'])
         ziele = ''.join('<li>%s</li>' % ko(z.strip()) for z in p['ziel'].split(','))
-        auf = p['auf'][self.bk]
+        if self.wahl:                               # 두 과제를 모두 적고, 고른 뒤에는 고른 쪽만 보인다
+            auf = ''.join('<p class="zg auftrag" data-nur="%s"><b>과제</b><i class="nur-l">%s</i>%s</p>' % (k, SPUR[k], ko(p['auf'][k])) for k in 'SB' if p['auf'][k])
+        else:
+            auf = ('<p class="zg auftrag"><b>과제</b> %s</p>' % ko(p['auf']['S'])) if p['auf']['S'] else ''
         h += ('<div class="ziele"><h3>이 과에서 해낼 일</h3><ul class="zl">%s</ul><p class="zg"><b>문법</b> <span lang="de">%s</span></p>%s<p class="mission">%s</p></div>'
-              % (ziele, E(p['gr']), ('<p class="zg auftrag"><b>과제</b> %s</p>' % ko(auf)) if auf else '', ko(b['mission'])))
+              % (ziele, E(p['gr']), auf, ko(b['mission'])))
         if b['worte']:
             chips = ''
             for w in b['worte']:
@@ -1506,7 +1521,7 @@ class Page:
         """Station 과 평가의 구역: 블록을 적힌 순서대로 놓는다."""
         h = ''
         for b in blocks:
-            t = b['t']
+            t = b['t']; h0 = len(h)
             if t == 'info' and ctx == 'sprechen' and self.p['typ'] == 'lektion':
                 # 과제 순서의 쪽지: 과제에 필요한 정보를 종이 쪽지 모양으로 보여 준다
                 h += '<section class="teilb zettel">%s%s</section>' % (('<h3><span>%s</span></h3>' % ko(b['titel'])) if b['titel'] else '', ''.join('<p>%s</p>' % ko(x) for x in b['p']))
@@ -1584,11 +1599,16 @@ class Page:
                 h += self.s_hoeren([b])
             else:
                 h += self.s_sprechen([b])
+            if b.get('nur') and self.wahl:              # 두 가지 과제 가운데 하나: 고른 쪽만 보이게 감싼다. 첫 블록 앞에 고르는 단추를 놓는다
+                x = '<div class="nur" data-nur="%s" data-nur-l="%s 과제">%s</div>' % (b['nur'], SPUR[b['nur']], h[h0:])
+                if not self.wahl_da:
+                    self.wahl_da = True; x = WAHL + x
+                h = h[:h0] + x
         return h
 
     def render(self, tpl, nav):
         p = self.p; L = self.L; lv = p['lv']; body = ''; steps = ''; typ = p['typ']; STEPS = steps_of(typ); book = self.book
-        secs = {k_: [b_ for b_ in v_ if b_.get('nur', '') in ('', self.bk)] for k_, v_ in L['secs'].items()}          # 다른 교재의 과제 블록은 뺀다
+        secs = L['secs']; self.wahl_da = False          # 두 가지 과제(--S, --B)는 모두 넣는다. 화면에서 고른 쪽만 보인다
         if typ == 'lektion':
             fn = {'einstieg': lambda: self.s_einstieg(secs['einstieg'][0]), 'hoeren': lambda: self.s_hoeren(secs['hoeren']), 'wortschatz': lambda: self.s_wortschatz(secs['wortschatz']),
                   'grammatik': lambda: self.s_grammatik(secs['grammatik']), 'training': lambda: self.s_training(secs['training']), 'sprechen': lambda: self.s_mix(secs['sprechen'], 'sprechen')}
@@ -1610,7 +1630,7 @@ class Page:
             nxt_a = '<a class="btn hell" href="../../%s/%s/"><span>다음</span> <span lang="de">%s · %s</span></a>' % (nxt['lv']['hid'], nxt['slug'], E(nxt['lv']['code']), E(nxt['de']))
         ende = '<div class="ende" id="ende"><p class="ende-t">%s</p><button type="button" class="btn" data-act="fertig" data-msg="%s" data-done="%s">%s</button>%s<a class="link" href="../../#%s">목차로 가기</a></div>' % (
             wort[0], wort[2], wort[3], wort[1], nxt_a, lv['hid'])
-        mark = book['mark']; wem = '대학생' if self.bk == 'S' else '직장인과 성인'
+        mark = book['mark']; wem = {'g': '성인', 's': '대학생', 'b': '직장인과 성인'}[lv['art']]
         if typ == 'lektion':
             title = 'Lektion %d %s · %s | %s %s' % (p['nr'], p['de'], p['ko'], mark, lv['code'])
             desc = '%s을 위한 독일어 교재 「%s」 %s %d과 %s(%s). %s. 독일어 음성으로 듣는 대화, 낱말, 문법(%s), 읽기와 연습, 과제. 소피아 독일어학원.' % (wem, book['titel'], lv['code'], p['nr'], p['de'], p['ko'], p['ziel'], p['gr'])
@@ -1641,6 +1661,7 @@ class Page:
         rep = {
             '__ROBOTS__': '' if is_public() else '<meta name="robots" content="noindex">\n',
             '__NA__': ' data-na="1"' if (self.na and self.nan) else '', '__HINWEIS__': hinweis,
+            '__ALT__': ' data-alt="1"' if self.wahl else '',          # 공통 과정: 두 교재에 따로 있던 때의 기록을 옮겨 온다 (lektion.js)
             '__TITLE__': E(title), '__DESC__': E(desc), '__URL__': url, '__ID__': self.pid, '__LEVEL__': lv['hid'], '__TYP__': p['typ'],
             '__ORT__': ort, '__H1__': E(h1), '__THEMA__': ko(thema), '__STEPS__': steps, '__BODY__': body.replace('__ENDE__', ende),
             '__DATA__': json.dumps(self.data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/'),

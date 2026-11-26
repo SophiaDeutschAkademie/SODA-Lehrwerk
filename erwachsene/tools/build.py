@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""성인 교재 두 권의 목차 페이지 빌드.
+"""성인 교재 세 권의 목차 페이지 빌드.
 
-  SODA Studium 「대학생 독일어 디딤돌」  -> studium/index.html
-  SODA Beruf   「직장인 독일어 길잡이」  -> beruf/index.html
+  SODA Basis   「성인 독일어 밑바탕」    A1–B1            -> basis/index.html
+  SODA Studium 「대학생 독일어 디딤돌」  B2–C1 Hochschule -> studium/index.html
+  SODA Beruf   「직장인 독일어 길잡이」  B2               -> beruf/index.html
 
 tools/inhalt.json(교재, 단계, 과 목록) + tools/shell.html(화면 틀) + tools/blocks(공통 조각)
-A1.1부터 B1.2까지 여섯 단계는 두 교재가 함께 쓰고(art = g), 과마다 과제만 교재에 따라 다릅니다(as = 대학생, ab = 직장인).
-B2부터는 교재마다 따로 있습니다(art = s 대학생, b 직장인).
+A1.1부터 B1.2까지 여섯 단계(art = g)는 공통 과정으로 「성인 독일어 밑바탕」 한 권에 있고, 과마다 과제만 두 가지입니다(as = 대학 생활, ab = 직장 생활).
+B2부터는 목적에 따라 교재가 갈립니다(art = s 대학생, b 직장인). 한 교재에는 art 가 같은 단계만 들어갑니다.
 
 실행: python3 erwachsene/tools/build.py   (끝에 저장소 tools/seo.py 를 부릅니다)
 """
@@ -17,6 +18,7 @@ E = os.path.dirname(T)
 ROOT = os.path.dirname(E)
 esc = lambda s: html.escape(s, quote=True)
 ART = {'g': '공통 과정', 's': '대학생 과정', 'b': '직장인 과정'}
+ALT_STORES = ['soda-studium-v1', 'soda-beruf-v1']      # 공통 과정이 두 교재에 따로 있던 때(2026.11.26까지)의 기록 이름. 새 기록이 없으면 여기서 읽어 온다
 
 
 def open_ids():
@@ -68,11 +70,15 @@ def check(data):
                 need = ('de', 'txt')
             for k in need:
                 assert it.get(k, '').strip(), (x['id'], it.get('de'), k)
+    used = []
     for b in data['books']:
-        ids = b['levels']
-        assert all(i in lv for i in ids) and [lv[i]['art'] for i in ids[:6]] == ['g'] * 6, b['id']
+        ids = b['levels']; used += ids
+        assert all(i in lv for i in ids) and len({lv[i]['art'] for i in ids}) == 1, b['id']        # 한 교재에는 같은 과정의 단계만
         codes = [lv[i]['code'] for i in ids]
         assert len(codes) == len(set(codes)) and len(codes) % 2 == 0, (b['id'], codes)
+        w = b['weiter']
+        assert w['titel'].strip() and w['text'].strip() and w['links'], b['id']
+    assert sorted(used) == sorted(lv), '단계마다 교재가 하나씩 있어야 함'
     blob = json.dumps(data, ensure_ascii=False)
     assert 'von Beruf?' not in blob          # 쓰지 않기로 한 표현
     assert '_' not in blob
@@ -88,7 +94,7 @@ def stairs(levels):
     for i, lv in enumerate(levels):
         a, _, b = lv['code'].partition('.')
         out.append('        <button type="button" role="tab" class="step%s" id="tab-%s" aria-controls="p-%s" aria-selected="%s" aria-label="%s" style="--i:%d;--h:%.1f%%"><span>%s</span><span>.%s</span></button>'
-                   % (('' if lv['art'] == 'g' else ' spur') + (' offen' if lv_open(lv) else ''), hid(lv), hid(lv), 'true' if i == 0 else 'false',
+                   % ((' offen' if lv_open(lv) else ''), hid(lv), hid(lv), 'true' if i == 0 else 'false',
                       esc('%s %s, %s, %s' % (lv['code'], lv['de'], lv['ko'], ART[lv['art']])), i, 40 + 60.0 * i / (n - 1), esc(a), esc(b)))
     return '\n'.join(out)
 
@@ -107,14 +113,17 @@ def item(it, n, lv, book, pid, slug):
     on = pid in OPEN; attr = (' auf" data-id="%s' % pid) if on else ''; stat = '<span class="stat"></span>' if on else ''
     href = '%s/%s/' % (hid(lv), slug)
     if it['t'] == 'l':
-        auf = it['auf'] if lv['art'] != 'g' else it['as' if book['id'] == 'studium' else 'ab']
+        if lv['art'] == 'g':                # 공통 과정: 과제가 두 가지(대학 생활, 직장 생활)
+            auf = '<span class="zw"><i>대학</i>%s</span><span class="zw"><i>직장</i>%s</span>' % (esc(it['as']), esc(it['ab']))
+        else:
+            auf = esc(it['auf'])
         syn = ''.join('<a href="../grammatik/#/L%02d" aria-label="Syntalab Lektion %d">%02d</a>' % (k, k, k) for k in it['syn'])
         name = ('<a class="de go" lang="de" href="%s">%s</a>' % (href, de(it['de']))) if on else '<span class="de" lang="de">%s</span>' % de(it['de'])
         return ('      <li class="lek%s"><span class="num">%d</span><div><h3>%s<span class="ko">%s</span>%s</h3>'
                 '<dl><div><dt>목표</dt><dd>%s</dd></div>'
                 '<div><dt>문법</dt><dd class="gr"><span lang="de">%s</span><span class="syn">Syntalab %s</span></dd></div>'
                 '<div><dt>과제</dt><dd>%s</dd></div></dl></div></li>'
-                % (attr, n, name, esc(it['ko']), stat, esc(it['ziel']), de(it['gr']), syn, esc(auf)))
+                % (attr, n, name, esc(it['ko']), stat, esc(it['ziel']), de(it['gr']), syn, auf))
     name = ('<a class="go" href="%s">%s</a>' % (href, esc(it['de']))) if on else esc(it['de'])
     if it['t'] == 'w':
         head, _, rest = it['txt'].partition(': ')
@@ -155,7 +164,7 @@ def panels(levels, book):
         out.append(
             '    <article class="panel" id="p-{id}" role="tabpanel" aria-labelledby="tab-{id}">\n'
             '     <div class="p-info">\n'
-            '      <p><span class="p-code">{code}</span><span class="p-art{spur}">{art}</span></p>\n'
+            '      <p><span class="p-code">{code}</span><span class="p-art">{art}</span></p>\n'
             '      <h2 class="p-name" lang="de">{de}</h2>\n'
             '      <p class="p-ko">{ko}</p>\n'
             '      <p class="p-lead">{lead}</p>\n'
@@ -165,7 +174,7 @@ def panels(levels, book):
             '      <dl><div><dt>읽고 쓰는 글</dt><dd>{text}</dd></div><div><dt>독일 생활과 제도</dt><dd>{leben}</dd></div>{extra}</dl>\n'
             '     </div>\n'
             '     <ol class="leks">\n{rows}\n     </ol>\n'
-            '    </article>'.format(id=hid(lv), code=esc(lv['code']), art=ART[lv['art']], spur='' if lv['art'] == 'g' else ' spur',
+            '    </article>'.format(id=hid(lv), code=esc(lv['code']), art=ART[lv['art']],
                                     de=esc(lv['de']), ko=esc(lv['ko']), lead=esc(lv['lead']),
                                     kann=''.join('<li>%s</li>' % esc(k) for k in lv['kann']), text=esc(lv['text']), leben=esc(lv['leben']),
                                     extra=extra, rows='\n'.join(rows), go=go))
@@ -180,7 +189,7 @@ def note(levels):
         if ns:
             parts.append('%s Lektion %s' % (lv['code'], ('%d–%d' % (ns[0], ns[-1])) if ns == list(range(ns[0], ns[-1] + 1)) and len(ns) > 1 else ', '.join(str(n) for n in ns)))
     if not parts:
-        return '지금은 목차만 볼 수 있어요. 본문은 A1.1부터 차례로 올라와요.'
+        return '지금은 목차만 볼 수 있어요. 본문은 %s부터 차례로 올라와요.' % levels[0]['code']
     return '본문은 %s까지 올라와 있어요. 나머지는 차례로 올라와요.' % ', '.join(parts)
 
 
@@ -199,7 +208,7 @@ def manifest(book):
 def page(book, data, shell, date):
     by = {x['id']: x for x in data['levels']}
     levels = [by[i] for i in book['levels']]
-    codes = groups(levels); n = len(levels); ng = sum(1 for x in levels if x['art'] == 'g')
+    codes = groups(levels); n = len(levels); w = book['weiter']
     f = book['farbe']
     rep = (
         ('<!--SODA_THEME_JS-->', rd('soda-theme-js.html')),
@@ -207,17 +216,17 @@ def page(book, data, shell, date):
         ('<!--A2HS-->', rd('a2hs.html')),
         ('<!--STAIRS-->', stairs(levels)),
         ('<!--GROUPS-->', '\n'.join('        <div><b>%s</b></div>' % esc(c) for c in codes)),
-        ('<!--SPUREN-->', '        <div>공통 과정</div>\n        <div class="spur">%s</div>' % esc(book['spur'])),
         ('<!--PANELS-->', panels(levels, book)),
         ('<!--NOTE-->', note(levels)),
         ('__STORE__', 'soda-%s-v1' % book['id']),
         ('<!--AUFBAU-->', '\n'.join('        <li><div><b lang="de">%s</b><span>%s</span></div></li>' % (esc(a['de']), esc(a['ko'])) for a in data['aufbau'])),
         ('<!--EXTRAS-->', '\n'.join('        <li><b lang="de">%s</b><span>%s</span></li>' % (esc(a['de']), esc(a['ko'])) for a in data['extras'])),
         ('__SEITE__', esc(book['seite'])), ('__MARK__', esc(book['mark'])), ('__TITEL__', esc(book['titel'])), ('__SUB__', esc(book['sub'])),
-        ('__LEAD__', esc(book['lead'])), ('__STUFEN__', esc(book['stufen'])), ('__STUFE__', esc(book['stufe'])), ('__ZWEI__', esc(book['zwei'])),
-        ('__ANDERE_HREF__', esc(book['andere']['href'])), ('__ANDERE__', esc(book['andere']['titel'])),
+        ('__LEAD__', esc(book['lead'])), ('__STUFEN__', esc(book['stufen'])), ('__STUFE__', esc(book['stufe'])),
+        ('__WEITER_T__', esc(w['titel'])), ('__WEITER__', esc(w['text'])), ('<!--WEITER_LINKS-->', ' '.join('<a href="%s">%s</a>' % (esc(h), esc(t)) for t, h in w['links'])),
+        ('__ALT__', json.dumps(ALT_STORES if levels[0]['art'] == 'g' else [])),
         ('__ACC__', f['accent']), ('__INK__', f['ink']), ('__FILL__', f['fill']), ('__DACC__', f['daccent']), ('__DINK__', f['dink']), ('__DFILL__', f['dfill']),
-        ('__NG__', str(len(codes))), ('__N__', str(n)), ('__SPUR_COLS__', '%dfr %dfr' % (ng, n - ng)),
+        ('__NG__', str(len(codes))), ('__N__', str(n)),
         ('__IDS__', json.dumps([hid(x) for x in levels])),
         ('__DATE__', date),
     )

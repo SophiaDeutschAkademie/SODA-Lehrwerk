@@ -481,3 +481,23 @@ body[data-na] .btn-s[disabled],body[data-na] .chip[disabled]{opacity:.38;cursor:
 @media (max-width:400px){.gt td{font-size:15.5px}.gt th[scope="row"]{font-size:14px}.gt th,.gt td{padding:7px 4px}.plan td{font-size:14.5px}.plan th,.plan td{padding:6px 5px}.plan th{font-size:12.5px}}
 @media (max-width:374px){.gt td{font-size:14.5px}.gt th{font-size:12.5px}.gt th[scope="row"]{font-size:13px}.gt td[lang="ko"],.gt th[lang="ko"]{font-size:13px}.gt th,.gt td{padding:6px 3px}.plan td{font-size:13.5px}.plan th{font-size:12px}.plan th,.plan td{padding:6px 3px}}
 @media (max-width:340px){.gp,.teilb{padding-left:12px;padding-right:12px}.regel{padding-left:10px;padding-right:10px}.gt td{font-size:13.5px}.gt.c4 td{font-size:13px}.gt.c4 th,.gt.c4 td{padding:6px 2px}.plan td{font-size:12.5px}.plan th{font-size:11px}.plan th,.plan td{padding:5px 2px}.ex{padding-left:11px;padding-right:11px}.lese{padding-left:10px;padding-right:10px}}
+
+/* 과제 고르기 (공통 과정): 대학 과제와 직장 과제가 한 화면에 함께 들어 있고, 고른 쪽만 보인다. 고르기 전에는 두 과제 블록을 모두 감추고 고르는 상자만 보인다 */
+.wahl{margin-top:18px;padding:16px;border-radius:16px;background:var(--soft);border-left:4px solid var(--accent)}
+.wahl-t{font-weight:800;font-size:15.5px;line-height:1.4;color:var(--accent-ink)}
+.wahl-p{margin-top:4px;font-size:14.5px;line-height:1.55;color:var(--ink2)}
+.wahl-k{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.wahl .chip{min-height:44px;padding:0 20px;font-size:15.5px;background:var(--surface)}
+.wahl .chip[aria-pressed="true"]{background:var(--fill);border-color:var(--fill);color:var(--on-fill)}
+html[data-spur] .wahl{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:10px 12px 10px 14px;border-left-width:0}
+html[data-spur] .wahl-t{font-size:14.5px}
+html[data-spur] .wahl-p{display:none}
+html[data-spur] .wahl-k{margin-top:0}
+html[data-spur] .wahl .chip{min-height:38px;padding:0 15px;font-size:14.5px}
+.js:not([data-spur]) .nur{display:none}
+html[data-spur="S"] [data-nur="B"],html[data-spur="B"] [data-nur="S"]{display:none}
+.nur-l{display:inline-block;margin-right:6px;font-style:normal;font-weight:700;font-size:12.5px;color:var(--accent-ink)}
+html[data-spur] .nur-l{display:none}
+html:not(.js) .wahl{display:none}
+html:not(.js) .nur::before{content:attr(data-nur-l);display:block;margin-top:24px;font-weight:800;font-size:14px;color:var(--accent-ink)}
+@media print{.wahl{display:none}}

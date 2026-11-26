@@ -1,6 +1,8 @@
-/* SODA Studium, SODA Beruf 과 화면: 순서 넘기기, 음성, 문제, 역할 대화, 쓰기, 학습 기록 (청소년 교재의 lektion.js 를 옮겨 쓴 것)
-   기록은 이 브라우저의 localStorage 에 교재마다 따로 남습니다: 'soda-studium-v1', 'soda-beruf-v1' (화면의 body data-store). 과를 고칠 때 이 짜임을 바꾸지 않습니다.
-   { v:1, o:{ko:0|1}, l:{ "a1-1/1": { s:마지막 순서, d:[본 순서], x:{문제 묶음:[결과…]}, k:[자기 평가], w:{글}, c:{확인 표시}, f:{내 정보}, fin:"마친 날", t:시각 } } } */
+/* SODA Basis, SODA Studium, SODA Beruf 과 화면: 순서 넘기기, 음성, 문제, 역할 대화, 쓰기, 과제 고르기, 학습 기록 (청소년 교재의 lektion.js 를 옮겨 쓴 것)
+   기록은 이 브라우저의 localStorage 에 교재마다 따로 남습니다: 'soda-basis-v1', 'soda-studium-v1', 'soda-beruf-v1' (화면의 body data-store). 과를 고칠 때 이 짜임을 바꾸지 않습니다.
+   { v:1, o:{ko:0|1, sp:"S"|"B"}, l:{ "a1-1/1": { s:마지막 순서, d:[본 순서], x:{문제 묶음:[결과…]}, k:[자기 평가], w:{글}, c:{확인 표시}, f:{내 정보}, fin:"마친 날", t:시각 } } }
+   o.sp 는 공통 과정(SODA Basis)에서 고른 과제: S 대학 과제, B 직장 과제.
+   공통 과정은 2026.11.26까지 두 교재(studium, beruf)에 따로 있었습니다. 'soda-basis-v1' 이 아직 없으면 그때의 기록을 한 번 옮겨 옵니다(body data-alt). */
 (function () {
   'use strict';
   var d = document, root = d.documentElement, body = d.body;
@@ -18,7 +20,24 @@
     try { var o = JSON.parse(localStorage.getItem(KEY) || 'null'); if (o && typeof o === 'object' && o.l && typeof o.l === 'object') return o; } catch (e) { }
     return null;
   }
-  S = read() || S; if (!S.o) S.o = {};
+  /* 공통 과정이 두 교재에 따로 있던 때의 기록: 과마다 더 나중에 쓴 것을 가져오고, 과제는 마지막에 공부하던 교재 쪽으로 맞춘다. 옛 기록은 그대로 둔다 */
+  function alt() {
+    var out = { v: 1, o: {}, l: {} }, last = -1, any = false;
+    [['soda-studium-v1', 'S'], ['soda-beruf-v1', 'B']].forEach(function (kv) {
+      try {
+        var o = JSON.parse(localStorage.getItem(kv[0]) || 'null'); if (!o || !o.l) return;
+        Object.keys(o.l).forEach(function (id) {
+          if (!/^(a1|a2|b1)-/.test(id)) return;
+          var r = o.l[id], t = r.t || 0; any = true;
+          if (!out.l[id] || t > (out.l[id].t || 0)) out.l[id] = r;
+          if (t > last) { last = t; out.o.sp = kv[1]; }
+        });
+        if (o.o && o.o.ko) out.o.ko = 1;
+      } catch (e) { }
+    });
+    return any ? out : null;
+  }
+  S = read() || (body.getAttribute('data-alt') === '1' && alt()) || S; if (!S.o) S.o = {};
   function P() { return S.l[ID] || (S.l[ID] = {}); }
   function save() {
     var rec = P(), opt = S.o; rec.t = Date.now();
@@ -355,6 +374,14 @@
     else if (r && r.d) { t = '6단계 가운데 ' + r.d.filter(function (v) { return v; }).length + '단계까지 봤어요'; li.classList.add('teilw'); }
     if (sp) sp.textContent = t;
   });
+  /* ---------- 과제 고르기 (공통 과정) ---------- */
+  function spur(v, neu) {
+    if (v !== 'S' && v !== 'B') return;
+    root.setAttribute('data-spur', v);
+    $$('.wahl [data-spur]').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-spur') === v ? 'true' : 'false'); });
+    if (neu) { S.o.sp = v; save(); }
+  }
+  if ($('.wahl')) spur(S.o.sp, false);
   var kann = $$('.kannliste li');
   function kannPaint() { var k = P().k || []; kann.forEach(function (li, i) { $$('button', li).forEach(function (b) { b.setAttribute('aria-pressed', +b.getAttribute('data-v') === k[i] ? 'true' : 'false'); }); }); }
   kannPaint();
@@ -402,6 +429,7 @@
   d.addEventListener('click', function (e) {
     var t = e.target, b;
     if ((b = t.closest('[data-act]'))) { act(b); return; }
+    if ((b = t.closest('.wahl [data-spur]'))) { stop(); spur(b.getAttribute('data-spur'), true); return; }
     if ((b = t.closest('[data-rolle]'))) { rolleStart(b.closest('.rolle'), b.getAttribute('data-rolle')); return; }
     if ((b = t.closest('.stufe button'))) {
       var li = b.closest('li'), i = kann.indexOf(li), r = P(); r.k = r.k || []; r.k[i] = +b.getAttribute('data-v'); save(); kannPaint(); return;

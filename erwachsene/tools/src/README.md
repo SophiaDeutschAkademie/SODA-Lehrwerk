@@ -1,10 +1,10 @@
 # 과 원고 쓰는 법 (성인 교재)
 
-과 하나가 글 파일 하나입니다. 공통 단계(A1.1–B1.2)의 원고 하나에서 대학생 교재(`studium/`)와 직장인 교재(`beruf/`)의 화면이 함께 만들어집니다. `a1-1/1.txt`부터 `a1-1/6.txt`가 과, `w1.txt`와 `w2.txt`가 Wiederholung, `t.txt`가 단계 평가입니다.
+과 하나가 글 파일 하나이고, 원고 하나가 화면 하나가 됩니다. 공통 과정(A1.1–B1.2)의 화면은 「성인 독일어 밑바탕」(`basis/`)에 만들어집니다. `a1-1/1.txt`부터 `a1-1/6.txt`가 과, `w1.txt`와 `w2.txt`가 Wiederholung, `t.txt`가 단계 평가입니다.
 
 ```
 python3 erwachsene/tools/lektion.py check     원고 검사 (문제 0이어야 합니다)
-python3 erwachsene/tools/lektion.py site      두 교재의 화면 만들기
+python3 erwachsene/tools/lektion.py site      과 화면 만들기
 ERWACHSENE_DATE=2026.11.24 python3 erwachsene/tools/build.py     목차 다시 만들기
 ```
 
@@ -13,13 +13,13 @@ ERWACHSENE_DATE=2026.11.24 python3 erwachsene/tools/build.py     목차 다시 �
 ```
 @id a1-1/1                 화면 이름. 단계 id와 과 번호
 == ziel                    구역. 과는 ziel, hoeren, wortschatz, grammatik, training, aufgabe 여섯 개
--- dialog A | 제목 | 상황   블록 (두 교재에 모두 나옵니다)
---S sprich …               대학생 교재에만 나오는 블록
---B sprich …               직장인 교재에만 나오는 블록
+-- dialog A | 제목 | 상황   블록
+--S sprich …               대학 과제 블록 (학습자가 「대학 과제」를 골랐을 때 보입니다)
+--B sprich …               직장 과제 블록 (「직장 과제」를 골랐을 때 보입니다)
 # …                        원고에만 남기는 메모
 ```
 
-- `--S`와 `--B`는 aufgabe 구역에서만 씁니다. 공통 단계의 과에는 둘 다 하나 넘게 있어야 합니다. `check`가 확인합니다.
+- `--S`와 `--B`는 공통 과정의 aufgabe 구역에서만 씁니다. 과마다 둘 다 하나 넘게 있어야 합니다. 두 과제가 한 화면에 함께 들어가므로 쓰기(`schreiben`)와 내 이야기(`ich`, `projekt`) 블록의 제목은 한 과 안에서 서로 달라야 합니다. `check`가 확인합니다. B2부터의 단계에는 `--S`, `--B`를 쓰지 않습니다.
 - `*낱말*`처럼 별표로 감싸면 화면에서 강조됩니다. 칸은 ` | `(앞뒤 빈칸)로 나눕니다.
 - 음성으로 읽을 글을 화면 글과 다르게 적어야 하면 마지막 칸에 `say=…`를 씁니다. 숫자, 가격, 철자, 전화번호가 그렇습니다.
 - 말하는 사람은 `Jiu, Dohyun, Sora, Lena, Becker, Markus, Hoffmann` 그리고 이름 없는 `Frau, Mann`, 해설 `N`입니다. `Frau`와 `Mann`은 블록 첫 줄 마지막 칸에 `Frau=Verkäuferin`처럼 화면에 보일 이름을 적습니다.

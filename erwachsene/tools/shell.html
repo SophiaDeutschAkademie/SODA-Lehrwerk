@@ -57,18 +57,15 @@ html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
 
 .stufen h2{font-weight:800;font-size:20px;line-height:1.3;letter-spacing:-.02em}
 .stufen .hint{margin-top:2px;font-size:14px;color:var(--ink2)}
+.stairs,.groups{max-width:calc(var(--n)*76px + (var(--n) - 1)*4px)}      /* 단계가 적은 교재에서 계단 한 칸이 너무 넓어지지 않게 */
 .stairs{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:4px;align-items:end;height:150px;margin-top:16px}
 .step{height:var(--h);min-width:0;padding:8px 0 0;border:1.5px solid var(--line);border-radius:10px 10px 4px 4px;background:var(--soft);color:var(--ink);font-family:var(--de);font-weight:800;font-size:11.5px;line-height:1.15;letter-spacing:-.02em;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;transform-origin:50% 100%;transition:background-color .15s,border-color .15s,color .15s}
 .step span{display:block}
-.step.spur{border-color:var(--accent)}
 .step:hover{border-color:var(--accent)}
 .step[aria-selected="true"]{background:var(--fill);border-color:var(--fill);color:var(--on-fill)}
 .groups{display:grid;gap:4px;margin-top:8px}
 .groups div{padding-top:7px;border-top:2px solid var(--sand);font-size:12px;line-height:1.35;color:var(--ink2)}
 .groups b{display:block;font-family:var(--de);font-weight:800;font-size:14px;color:var(--ink)}
-.spuren{display:grid;gap:4px;margin-top:6px}
-.spuren div{padding:4px 0 0;font-weight:700;font-size:12px;line-height:1.35;color:var(--ink2);white-space:nowrap}
-.spuren .spur{color:var(--accent-ink)}
 @media (prefers-reduced-motion:no-preference){
   .js .step{animation:rise .5s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i)*55ms)}
   @keyframes rise{from{transform:scaleY(.55);opacity:0}to{transform:none;opacity:1}}
@@ -79,7 +76,6 @@ html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
 .js .panel[hidden]{display:none}
 .p-code{display:inline-block;padding:3px 10px;border-radius:999px;background:var(--fill);color:var(--on-fill);font-family:var(--de);font-weight:800;font-size:14px;line-height:1.4}
 .p-art{margin-left:8px;font-weight:700;font-size:13px;line-height:1.4;color:var(--ink2)}
-.p-art.spur{color:var(--accent-ink)}
 .p-name{margin-top:10px;font-family:var(--de);font-weight:900;font-size:clamp(32px,8.6vw,46px);line-height:1.08;letter-spacing:-.035em;overflow-wrap:normal}
 .p-ko{margin-top:6px;font-weight:700;font-size:17px;color:var(--ink2)}
 .p-lead{margin-top:14px;font-size:15.5px}
@@ -105,6 +101,8 @@ html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
 .lek dt{font-weight:700;font-size:12px;line-height:1.5;color:var(--ink2)}
 .lek dd{font-size:14px;line-height:1.5}
 .lek dd.gr{font-family:var(--de);font-weight:500;color:var(--ink)}
+.lek dd .zw{display:block}
+.lek dd .zw i{display:inline-block;margin-right:6px;font-style:normal;font-weight:700;font-size:12px;color:var(--accent-ink)}
 .syn{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin-top:5px;font-family:var(--ko);font-weight:600;font-size:12px;line-height:1.2;color:var(--ink2)}
 .syn a{display:inline-grid;place-items:center;min-width:30px;height:26px;padding:0 7px;border:1px solid var(--line);border-radius:999px;font-family:var(--de);font-weight:700;font-size:12px;line-height:1;color:var(--ink);text-decoration:none}
 .syn a:hover{border-color:var(--accent)}
@@ -151,15 +149,16 @@ html[data-theme="dark"] .hero .a2hs-btn{color:var(--ink2)}
 .more h2.zwei{margin-top:30px}
 .weiter{margin-top:8px;font-size:15px;line-height:1.6}
 .weiter a{font-weight:700;text-underline-offset:3px}
+.weiter.wl{display:flex;flex-wrap:wrap;gap:6px 18px}
 footer{padding:26px 0 44px;font-size:13px;line-height:1.5;color:var(--ink2)}
 footer a{text-underline-offset:3px}
 
 @media (min-width:560px){
+  .stairs,.groups{max-width:calc(var(--n)*120px + (var(--n) - 1)*8px)}
   .stairs{height:168px;gap:8px}
-  .groups,.spuren{gap:8px}
+  .groups{gap:8px}
   .step{font-size:14px;padding-top:10px;flex-direction:row;justify-content:center;align-items:flex-start;border-radius:12px 12px 5px 5px}
   .groups div{font-size:13px}
-  .spuren div{font-size:13px}
 }
 @media (min-width:900px){
   .wrap{padding:0 32px}
@@ -190,17 +189,14 @@ footer a{text-underline-offset:3px}
       <p class="cta"><a class="btn" href="#inhalt">목차 보기</a></p>
       <p class="note"><!--NOTE--></p>
     </header>
-    <section class="stufen" aria-labelledby="stufen-h">
+    <section class="stufen" aria-labelledby="stufen-h" style="--n:__N__">
       <h2 id="stufen-h">__STUFEN__</h2>
       <p class="hint">단계를 누르면 그 단계의 목차가 열려요.</p>
-      <div class="stairs" role="tablist" aria-label="단계 고르기" style="--n:__N__">
+      <div class="stairs" role="tablist" aria-label="단계 고르기">
 <!--STAIRS-->
       </div>
       <div class="groups" style="grid-template-columns:repeat(__NG__,minmax(0,1fr))">
 <!--GROUPS-->
-      </div>
-      <div class="spuren" style="grid-template-columns:__SPUR_COLS__">
-<!--SPUREN-->
       </div>
     </section>
   </div>
@@ -224,8 +220,9 @@ footer a{text-underline-offset:3px}
       </ul>
       <h2 class="zwei">한 단계는 이렇게 이루어져요</h2>
       <p class="weiter">__STUFE__</p>
-      <h2 class="zwei">두 교재가 함께 가는 구간</h2>
-      <p class="weiter">__ZWEI__ <a href="__ANDERE_HREF__">__ANDERE__</a></p>
+      <h2 class="zwei">__WEITER_T__</h2>
+      <p class="weiter">__WEITER__</p>
+      <p class="weiter wl"><!--WEITER_LINKS--></p>
     </section>
   </div>
 
@@ -267,9 +264,20 @@ footer a{text-underline-offset:3px}
     };
     if(!nav.type||nav.type==='navigate'){zu();window.addEventListener('load',zu)}
   }
-  /* 공부한 기록(과 화면이 이 브라우저에 남긴 것)으로 마친 과와 보던 과를 표시한다. 기록은 교재마다 따로 있다 */
+  /* 공부한 기록(과 화면이 이 브라우저에 남긴 것)으로 마친 과와 보던 과를 표시한다. 기록은 교재마다 따로 있다.
+     공통 과정은 예전에 두 교재에 따로 있었다. 새 기록이 아직 없으면 그때의 기록(alt)에서 과마다 더 나중 것을 읽는다 (옮겨 적는 일은 과 화면이 한다) */
+  function lies(){
+    var o=null,alt=__ALT__,L={};
+    try{o=JSON.parse(localStorage.getItem('__STORE__')||'null')}catch(e){}
+    if(o&&o.l)return o.l;
+    alt.forEach(function(k){
+      try{var a=(JSON.parse(localStorage.getItem(k)||'{}').l)||{};
+        Object.keys(a).forEach(function(id){if(!/^(a1|a2|b1)-/.test(id))return;if(!L[id]||(a[id].t||0)>(L[id].t||0))L[id]=a[id]})}catch(e){}
+    });
+    return L;
+  }
   function mark(){
-    var L={};try{L=(JSON.parse(localStorage.getItem('__STORE__')||'{}').l)||{}}catch(e){}
+    var L=lies();
     [].forEach.call(d.querySelectorAll('.auf[data-id]'),function(li){
       var r=L[li.getAttribute('data-id')],s=li.querySelector('.stat');if(!s)return;
       li.classList.toggle('fin',!!(r&&r.fin));s.textContent=r&&r.fin?'마침':(r&&r.d?'보는 중':'');

@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""성인 교재 두 권의 앱 아이콘 만들기.
+"""성인 교재 세 권의 앱 아이콘 만들기.
 
   python3 erwachsene/tools/icons.py
 
 남색 바탕에 단계 수만큼 막대가 올라가는 그림입니다(청소년 교재 아이콘과 같은 모양).
-공통 과정(A1–B1) 여섯 막대는 아이보리, 그 뒤의 교재별 과정 막대는 교재 색으로 칠합니다.
--> studium/icons/, beruf/icons/ 에 icon-512.png, icon-192.png, icon-maskable-512.png, apple-touch-icon.png
+공통 과정(A1–B1) 여섯 막대는 아이보리입니다. 「성인 독일어 밑바탕」은 이 여섯 막대만 그리고,
+B2부터의 두 교재는 그 뒤에 자기 단계 수만큼 교재 색 막대를 더 그립니다(대학생 4개, 직장인 2개).
+-> basis/icons/, studium/icons/, beruf/icons/ 에 icon-512.png, icon-192.png, icon-maskable-512.png, apple-touch-icon.png
 """
 import json, os
 from PIL import Image, ImageDraw
@@ -38,8 +39,9 @@ def draw(n, common, col, size, pad, round_bg):
 
 def main():
     data = json.load(open(os.path.join(T, 'inhalt.json'), encoding='utf-8'))
+    art = {x['id']: x['art'] for x in data['levels']}
     for b in data['books']:
-        n = len(b['levels']); col = rgb(b['farbe']['daccent'])
+        n = 6 + (0 if art[b['levels'][0]] == 'g' else len(b['levels'])); col = rgb(b['farbe']['daccent'])
         d = os.path.join(ROOT, b['id'], 'icons'); os.makedirs(d, exist_ok=True)
         big = draw(n, 6, col, 512, 0.17, True)
         big.save(os.path.join(d, 'icon-512.png'), optimize=True)

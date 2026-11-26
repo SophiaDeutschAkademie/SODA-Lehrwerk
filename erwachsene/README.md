@@ -1,38 +1,41 @@
-# 성인 교재 두 권: SODA Studium, SODA Beruf
+# 성인 교재 세 권: SODA Basis, SODA Studium, SODA Beruf
 
-성인 학습자를 위한 독일어 교재 두 권의 원고와 도구가 있는 폴더입니다. 지금은 목차와 공통 과정 열 과(A1.1의 1과부터 6과, A1.2의 1과부터 4과)의 본문이 있고, 둘 다 비공개입니다. 본문 음성은 Eleven v3로 만들어 넣었습니다(2026.11.25에 A1.1의 다섯 과, 2026.11.26에 그다음 다섯 과, 모두 1,488줄).
+성인 학습자를 위한 독일어 교재 세 권의 원고와 도구가 있는 폴더입니다. 지금은 세 권의 목차와 「성인 독일어 밑바탕」 열 과(A1.1의 1과부터 6과, A1.2의 1과부터 4과)의 본문이 있고, 모두 비공개입니다. 본문 음성은 Eleven v3로 만들어 넣었습니다(2026.11.25에 A1.1의 다섯 과, 2026.11.26에 그다음 다섯 과, 모두 1,488줄).
 
 | 교재 | 이름 | 대상 | 범위 | 목차 주소 |
 |---|---|---|---|---|
-| SODA Studium | 대학생 독일어 디딤돌 | 독일 유학과 교환 학기를 준비하는 대학생 | A1–C1 Hochschule, 열 단계 68과 | https://sophiadeutschakademie.github.io/SODA-Lehrwerk/studium/ |
-| SODA Beruf | 직장인 독일어 길잡이 | 독일 취업과 이직, 독일 생활을 준비하는 직장인과 성인 | A1–B2, 여덟 단계 56과 | https://sophiadeutschakademie.github.io/SODA-Lehrwerk/beruf/ |
+| SODA Basis | 성인 독일어 밑바탕 | 독일에서 공부하거나 일하거나 살려는 성인 | A1–B1, 여섯 단계 40과 (공통 과정) | https://sophiadeutschakademie.github.io/SODA-Lehrwerk/basis/ |
+| SODA Studium | 대학생 독일어 디딤돌 | 독일 유학과 교환 학기를 준비하는 대학생 | B2–C1 Hochschule, 네 단계 28과 | https://sophiadeutschakademie.github.io/SODA-Lehrwerk/studium/ |
+| SODA Beruf | 직장인 독일어 길잡이 | 독일 취업과 이직을 준비하는 직장인과 성인 | B2, 두 단계 16과 | https://sophiadeutschakademie.github.io/SODA-Lehrwerk/beruf/ |
 
-Lehrwerk 목차에서는 두 교재 모두 「작업 중」 칸으로 보이고 링크가 없습니다. 위 주소를 직접 열면 목차를 볼 수 있습니다.
+Lehrwerk 목차에서는 세 교재 모두 「작업 중」 칸으로 보이고 링크가 없습니다. 위 주소를 직접 열면 목차를 볼 수 있습니다.
 
-본문이 있는 과 (2026.11.26): A1.1 Lektion 1 Guten Tag!, 2 Beruf und Studium, 3 Familie und Freunde, 4 Einkaufen, 5 Mein Tag, 6 Termine, A1.2 Lektion 1 In der Stadt, 2 Meine Wohnung, 3 Gesundheit, 4 Was haben Sie gemacht? 주소는 `studium/a1-1/1/` … `studium/a1-1/6/`, `studium/a1-2/1/` … `studium/a1-2/4/`이고 `beruf/` 아래도 같습니다. 두 교재의 대화, 낱말, 문법, 연습은 같고 여섯째 순서 Aufgabe의 과제만 다릅니다. A1.1의 Wiederholung 두 개와 Stufentest, A1.2의 5과부터는 아직 없습니다. 그래서 A1.1 6과 끝의 「다음」 단추는 A1.2 1과로 바로 갑니다(`site` 는 단계의 마지막 화면을 그 뒤에 열려 있는 첫 화면으로 잇습니다).
+2026.11.27에 분류를 바꿨습니다. 그전에는 대학생용(A1–C1 Hochschule, 68과)과 직장인용(A1–B2, 56과) 두 권이었고, A1–B1 40과가 두 권에 똑같이 들어 있었습니다. 같은 과가 두 번 나오지 않게 공통 과정을 「성인 독일어 밑바탕」 한 권으로 떼고, B2부터 두 권으로 나눴습니다. 「성인 독일어 밑바탕」이라는 이름과 폴더 이름 `basis` 는 임시로 정한 것입니다. 바꾸려면 `tools/inhalt.json` 의 `books` 와 `tools/seo.py`, 루트 `index.html` 의 칸을 고치고 폴더를 옮깁니다. `studium/a1-…`, `beruf/a1-…` 주소는 없앴습니다(비공개 상태라 옛 주소에서 넘겨 주는 화면은 두지 않았습니다).
+
+본문이 있는 과 (2026.11.26): A1.1 Lektion 1 Guten Tag!, 2 Beruf und Studium, 3 Familie und Freunde, 4 Einkaufen, 5 Mein Tag, 6 Termine, A1.2 Lektion 1 In der Stadt, 2 Meine Wohnung, 3 Gesundheit, 4 Was haben Sie gemacht? 주소는 `basis/a1-1/1/` … `basis/a1-1/6/`, `basis/a1-2/1/` … `basis/a1-2/4/`입니다. 과마다 여섯째 순서 Aufgabe의 과제가 두 가지(대학 과제, 직장 과제)이고 학습자가 하나를 고릅니다. A1.1의 Wiederholung 두 개와 Stufentest, A1.2의 5과부터는 아직 없습니다. 그래서 A1.1 6과 끝의 「다음」 단추는 A1.2 1과로 바로 갑니다(`site` 는 단계의 마지막 화면을 그 뒤에 열려 있는 첫 화면으로 잇습니다).
 
 ## 구조
 
-A1부터 B1까지는 두 대상이 배우는 문법과 기본 어휘가 같으므로 한 번만 만들어 함께 씁니다. B2부터는 필요한 말이 달라지므로 교재마다 따로 만듭니다.
+A1부터 B1까지는 대학생과 직장인이 배우는 문법과 기본 어휘가 같으므로 한 권(「성인 독일어 밑바탕」)으로 만듭니다. B2부터는 필요한 말이 달라지므로 목적에 따라 두 권으로 나눕니다.
 
-| 단계 | 이름 | 과 | 쓰는 교재 |
+| 단계 | 이름 | 과 | 교재 |
 |---|---|---|---|
-| A1.1 | Neu hier, 새 출발 | 6 | 공통 |
-| A1.2 | Im Alltag, 생활 꾸리기 | 6 | 공통 |
-| A2.1 | Angekommen, 자리 잡기 | 6 | 공통 |
-| A2.2 | Mittendrin, 생활 넓히기 | 6 | 공통 |
-| B1.1 | Im Gespräch, 의견 나누기 | 8 | 공통 |
-| B1.2 | Perspektiven, 진로와 사회 | 8 | 공통 |
-| B2.1 | Im Team, 함께 일하기 | 8 | 직장인 |
-| B2.2 | Verantwortung, 맡아서 이끌기 | 8 | 직장인 |
-| B2.1 | Auf dem Campus, 대학 생활 | 8 | 대학생 |
-| B2.2 | Argumentieren, 논증하고 쓰기 | 8 | 대학생 |
-| C1.1 | Verstehen, 학문의 글과 강의 | 6 | 대학생 |
-| C1.2 | Mitgestalten, 쓰고 발표하기 | 6 | 대학생 |
+| A1.1 | Neu hier, 새 출발 | 6 | Basis (공통 과정) |
+| A1.2 | Im Alltag, 생활 꾸리기 | 6 | Basis (공통 과정) |
+| A2.1 | Angekommen, 자리 잡기 | 6 | Basis (공통 과정) |
+| A2.2 | Mittendrin, 생활 넓히기 | 6 | Basis (공통 과정) |
+| B1.1 | Im Gespräch, 의견 나누기 | 8 | Basis (공통 과정) |
+| B1.2 | Perspektiven, 진로와 사회 | 8 | Basis (공통 과정) |
+| B2.1 | Im Team, 함께 일하기 | 8 | Beruf (직장인) |
+| B2.2 | Verantwortung, 맡아서 이끌기 | 8 | Beruf (직장인) |
+| B2.1 | Auf dem Campus, 대학 생활 | 8 | Studium (대학생) |
+| B2.2 | Argumentieren, 논증하고 쓰기 | 8 | Studium (대학생) |
+| C1.1 | Verstehen, 학문의 글과 강의 | 6 | Studium (대학생) |
+| C1.2 | Mitgestalten, 쓰고 발표하기 | 6 | Studium (대학생) |
 
-- 실제로 만드는 과는 공통 40과, 직장인 B2 16과, 대학생 B2 16과, C1 Hochschule 12과로 모두 84과입니다.
+- 만드는 과는 Basis 40과, Beruf 16과, Studium 28과(B2 16과, C1 Hochschule 12과)로 모두 84과입니다.
 - 단계마다 복습과 실전 과제를 하는 Wiederholung 2개와 단계 평가(Stufentest) 1개가 있습니다.
-- 공통 단계의 과는 대화, 낱말, 문법이 같고 마지막 과제(Aufgabe)만 두 가지입니다. 대학생 교재에는 캠퍼스 상황, 직장인 교재에는 직장과 생활 상황의 과제가 나옵니다.
+- 공통 과정의 과는 마지막 순서의 과제(Aufgabe)가 두 가지입니다. 대학 과제는 캠퍼스 상황, 직장 과제는 직장과 생활 상황입니다. 과 화면에 둘 다 들어 있고, 학습자가 「과제 고르기」에서 고른 쪽만 보입니다. 고른 것은 다음 과에서도 이어지고 언제든 바꿀 수 있습니다.
 - 과 안에는 시험 형식 연습을 넣지 않습니다. A2.2, B1.2, B2.2, C1.2의 단계 정보에 SODA Modelltest로 가는 링크만 둡니다.
 - 한 과는 일주일 공부량으로 잡았습니다.
 
@@ -49,7 +52,7 @@ C1 Hochschule 단계는 긴 글과 강의가 중심이라, 본문을 만들 때 
 
 ## 설정
 
-무대는 프랑크푸르트입니다. 세 사람이 함께 나와서 두 교재가 같은 이야기를 씁니다. 지금까지 쓴 열 과를 아래 설정으로 썼습니다. 교재 속의 지금은 2026년입니다.
+무대는 프랑크푸르트입니다. 대학에 가려는 사람, 직장인, 가족과 사는 사람 세 명이 함께 나와서 대학 과제와 직장 과제가 같은 이야기 위에 놓입니다. 지금까지 쓴 열 과를 아래 설정으로 썼습니다. 교재 속의 지금은 2026년입니다.
 
 | 인물 | 설정 |
 |---|---|
@@ -146,10 +149,10 @@ B2는 학원 과정 챕터가 사회 주제 토론이고 이 교재의 B2는 직
 ## 폴더
 
 ```
-erwachsene/tools/inhalt.json   교재 두 권(books), 단계(levels), 과의 순서(aufbau), 과마다 함께 들어 있는 것(extras)
-erwachsene/tools/build.py      목차 빌드: studium/index.html, beruf/index.html, 두 폴더의 manifest.webmanifest
+erwachsene/tools/inhalt.json   교재 세 권(books), 단계(levels), 과의 순서(aufbau), 과마다 함께 들어 있는 것(extras)
+erwachsene/tools/build.py      목차 빌드: basis/index.html, studium/index.html, beruf/index.html, 세 폴더의 manifest.webmanifest
 erwachsene/tools/shell.html    목차 화면 틀 (청소년 교재 목차와 같은 모양, 교재마다 색만 다름)
-erwachsene/tools/icons.py      앱 아이콘 만들기: studium/icons/, beruf/icons/
+erwachsene/tools/icons.py      앱 아이콘 만들기: basis/icons/, studium/icons/, beruf/icons/
 erwachsene/tools/status.json   공개 여부(public)와 음성을 아직 만들지 않은 단계(ohne_audio)
 erwachsene/tools/blocks/       다크 모드 스위치, 홈 버튼, 「홈 화면에 앱 추가」 공통 조각
 erwachsene/tools/lektion.py    과 화면 도구: check, prompts, img, site, tts, cut
@@ -157,53 +160,62 @@ erwachsene/tools/page.html     과 화면 틀
 erwachsene/tools/src/          과 원고 (단계 폴더/과 번호.txt)와 쓰는 법 README.md
 erwachsene/tools/tts/          그림 설명 묶음(*.prompts.json). 음성을 만들면 음성 목록도 여기에 생깁니다
 erwachsene/tools/open.json     본문이 있는 과 목록 (site 가 씁니다. 목차 빌드가 읽어서 링크를 겁니다)
-erwachsene/lektion.css, lektion.js   과 화면의 모양과 동작 (두 교재가 함께 씁니다)
+erwachsene/lektion.css, lektion.js   과 화면의 모양과 동작 (세 교재가 함께 씁니다)
 erwachsene/img/                과 그림: 단계/과/szene.webp(장면), c1.webp …(낱말 그림), c/(인물 얼굴)
 erwachsene/audio/              과 음성(mp3, 한 줄에 파일 하나, 31MB)
 erwachsene/fonts/              독일어 글꼴 DM Sans(라틴 글자만)와 사용 허가서 OFL.txt
-studium/, beruf/               빌드 결과 (index.html, manifest.webmanifest, icons/, 단계/과/index.html)
+basis/, studium/, beruf/       빌드 결과 (index.html, manifest.webmanifest, icons/, 단계/과/index.html)
 ```
 
 ## inhalt.json
 
-- `books`: 교재마다 이름, 소개 글, 색(`farbe`), 쓰는 단계의 `id` 목록(`levels`)
+- `books`: 교재마다 이름, 소개 글, 색(`farbe`), 그 교재에 든 단계의 `id` 목록(`levels`), 앞뒤 교재를 알리는 글과 링크(`weiter`). 한 교재에는 `art` 가 같은 단계만 넣고, 단계마다 교재가 하나씩 있어야 합니다(`build.py` 가 검사합니다)
 - `levels`: 단계마다 `id`, `code`(A1.1), `art`(`g` 공통, `s` 대학생, `b` 직장인), 이름(`de`, `ko`), 소개(`lead`), 마치면 할 수 있는 일 세 가지(`kann`), 읽고 쓰는 글(`text`), 독일 생활과 제도(`leben`), 함께 쓰는 앱(`apps`), 마친 뒤 연결(`nach`), 과 목록(`items`)
-- 과(`t: l`): 제목(`de`), 주제(`ko`), 목표(`ziel`), 문법(`gr`), Syntalab Lektion 번호(`syn`), 과제. 공통 단계는 `as`(대학생)와 `ab`(직장인), 교재별 단계는 `auf` 하나
+- 과(`t: l`): 제목(`de`), 주제(`ko`), 목표(`ziel`), 문법(`gr`), Syntalab Lektion 번호(`syn`), 과제. 공통 과정은 `as`(대학 과제)와 `ab`(직장 과제), B2부터는 `auf` 하나
 - 복습(`t: w`)과 단계 평가(`t: t`): 제목과 설명(`txt`)
 
 ## 고칠 때
 
 1. `tools/inhalt.json` 을 고칩니다.
-2. `ERWACHSENE_DATE=그날 날짜 python3 erwachsene/tools/build.py` 를 실행합니다. 두 목차를 다시 만들고 끝에 `tools/seo.py` 를 부릅니다.
+2. `ERWACHSENE_DATE=그날 날짜 python3 erwachsene/tools/build.py` 를 실행합니다. 세 목차를 다시 만들고 끝에 `tools/seo.py` 를 부릅니다.
 3. 단계 수나 색을 바꿨으면 `python3 erwachsene/tools/icons.py` 로 아이콘도 다시 만듭니다.
 
 ## 공개할 때
 
 1. `tools/status.json` 의 `public` 을 `true` 로 바꿉니다.
-2. `python3 erwachsene/tools/lektion.py site` 와 목차 빌드를 다시 실행합니다. 목차와 과 화면에서 noindex 가 빠지고 `tools/seo.py` 가 목차 두 곳에 검색 태그를 넣고 사이트맵에 두 주소를 넣습니다.
+2. `python3 erwachsene/tools/lektion.py site` 와 목차 빌드를 다시 실행합니다. 목차와 과 화면에서 noindex 가 빠지고 `tools/seo.py` 가 목차 세 곳에 검색 태그를 넣고 사이트맵에 세 주소를 넣습니다.
 3. 과 화면 주소는 `tools/seo.py` 가 아직 사이트맵에 넣지 않습니다. 공개할 때 어린이 교재처럼 과 주소를 사이트맵에 넣는 부분을 `tools/seo.py` 에 더합니다.
-4. 루트 `index.html` 의 두 칸을 `<a class="tile" href="studium/">`, `<a class="tile" href="beruf/">` 로 바꾸고 업데이트 날짜와 화살표를 넣습니다.
+4. 루트 `index.html` 의 세 칸을 `<a class="tile" href="basis/">`, `<a class="tile" href="studium/">`, `<a class="tile" href="beruf/">` 로 바꾸고 업데이트 날짜와 화살표를 넣습니다. 본문이 있는 교재부터 하나씩 열어도 됩니다.
 5. `notices.json` 에 공지를 올립니다.
 
 ## 본문
 
-과 화면 도구는 청소년 교재의 `jugend/tools/lektion.py`에서 갈라 나왔습니다. 원고 하나(`tools/src/a1-1/1.txt`)에서 두 교재의 화면(`studium/a1-1/1/`, `beruf/a1-1/1/`)이 만들어집니다. 원고에서 `--S`로 시작하는 블록은 대학생 교재에만, `--B`로 시작하는 블록은 직장인 교재에만 나옵니다. 원고 쓰는 법은 `tools/src/README.md`에 있습니다.
+과 화면 도구는 청소년 교재의 `jugend/tools/lektion.py`에서 갈라 나왔습니다. 원고 하나(`tools/src/a1-1/1.txt`)가 화면 하나(`basis/a1-1/1/`)가 됩니다. 화면은 그 단계가 든 교재의 폴더에 만들어집니다. 공통 과정의 원고에서 `--S`로 시작하는 블록은 대학 과제, `--B`로 시작하는 블록은 직장 과제입니다. 화면에는 둘 다 들어가고 고른 쪽만 보입니다(아래 「과제 고르기」). 원고 쓰는 법은 `tools/src/README.md`에 있습니다.
 
 청소년 교재와 다른 점:
 
 - 여섯 순서의 이름이 Ziel, Hören, Wortschatz, Grammatik, Lesen und Training, Aufgabe입니다.
-- Ziel에서 이 과에서 해낼 일, 문법, 교재별 과제를 먼저 보여 줍니다(`inhalt.json`의 `ziel`, `gr`, `as`/`ab`).
+- Ziel에서 이 과에서 해낼 일, 문법, 과제를 먼저 보여 줍니다(`inhalt.json`의 `ziel`, `gr`, `as`/`ab`). 공통 과정은 두 과제를 모두 적고, 과제를 고른 뒤에는 고른 쪽만 보입니다.
 - 문법은 규칙과 표를 바로 보여 주고 확인 물음을 뒤에 둡니다.
 - 읽기 글에 서식(`formular`), 메일(`mail`), 명함(`karte`)이 있습니다.
 - Lesen und Training 끝에 그 과의 Syntalab Lektion과 Vokalab으로 가는 「Mehr üben」 상자가 붙습니다(`inhalt.json`의 `syn`).
 - 문화 상자의 이름은 「Leben in Deutschland」입니다.
-- 공부 기록은 교재마다 따로 남습니다(이 브라우저의 `soda-studium-v1`, `soda-beruf-v1`). 대학생 교재에서 마친 과가 직장인 교재에서는 마친 것으로 보이지 않습니다.
+- 공부 기록은 교재마다 따로 남습니다(이 브라우저의 `soda-basis-v1`, `soda-studium-v1`, `soda-beruf-v1`). 공통 과정은 한 권이므로 기록도 하나입니다.
+
+### 과제 고르기 (공통 과정)
+
+- 과제 구역(Aufgabe)의 `--S`, `--B` 블록은 `<div class="nur" data-nur="S">`, `<div class="nur" data-nur="B">` 로 감싸서 둘 다 화면에 넣습니다. 첫 블록 앞에 「과제 고르기」 상자(`.wahl`, 단추 「대학 과제」「직장 과제」)가 놓입니다. Ziel의 과제 줄도 두 줄(`data-nur`)입니다.
+- 고르기 전에는 두 과제 블록이 모두 감춰지고 상자만 보입니다. 고르면 `<html data-spur="S">` 또는 `B` 가 붙고 다른 쪽 블록이 감춰집니다. 상자는 작은 한 줄로 줄어들고 언제든 바꿀 수 있습니다.
+- 고른 것은 `soda-basis-v1` 의 `o.sp`(`S` 대학, `B` 직장)에 남아 다음 과에서도 이어집니다. 학습 포탈에 로그인한 학생은 다른 기기에서도 이어집니다(`sync.js`).
+- 자바스크립트가 꺼져 있으면 상자를 감추고 두 과제를 이름표와 함께 모두 보여 줍니다.
+- 공통 과정이 두 교재에 따로 있던 때(2026.11.26까지)의 기록 `soda-studium-v1`, `soda-beruf-v1` 은, `soda-basis-v1` 이 아직 없을 때 과 화면이 한 번 옮겨 옵니다(`lektion.js` 의 `alt()`: 과마다 더 나중 기록, 과제는 마지막에 공부하던 교재 쪽). 옛 기록은 지우지 않습니다. 목차는 옮기기 전에도 옛 기록을 읽어서 마친 과를 표시합니다.
+- 쓰기(`schreiben`)와 내 이야기(`ich`, `projekt`) 블록은 저장 이름이 블록 제목에서 나옵니다. 두 과제가 한 화면에 함께 들어가므로 한 과 안에서 제목이 같으면 쓴 글이 서로 겹칩니다. `check` 가 겹치는 제목을 걸러 냅니다.
 
 ### 과를 더 만들 때
 
 1. `tools/src/단계/번호.txt` 를 씁니다. `python3 erwachsene/tools/lektion.py check` 가 문제 0이어야 합니다.
 2. 그림: `python3 erwachsene/tools/lektion.py prompts 이름 단계` 가 그림 설명 묶음(`tools/tts/이름.prompts.json`)을 만듭니다. ElevenLabs flow `IvbXhqxUBYBb6uxNB2VD`(Recraft 4.1 Flash, 한 장 48.48크레딧)에서 그려 `단계_번호_szene.webp`, `단계_번호_karten1.webp` 같은 이름으로 한 폴더에 내려받고 `python3 erwachsene/tools/lektion.py img 폴더` 로 잘라 넣습니다. 인물 얼굴은 `cast_1`, `cast_2` 두 장에서 잘랐습니다.
-3. `python3 erwachsene/tools/lektion.py site` 가 두 교재의 화면을 만들고 `tools/open.json` 을 고칩니다. 그림이 하나라도 빠지면 그 과는 열리지 않습니다.
+3. `python3 erwachsene/tools/lektion.py site` 가 과 화면을 만들고 `tools/open.json` 을 고칩니다. 그림이 하나라도 빠지면 그 과는 열리지 않습니다.
 4. `ERWACHSENE_DATE=그날 날짜 python3 erwachsene/tools/build.py` 로 목차를 다시 만듭니다. 본문이 있는 과에 링크와 「시작하기」 단추가 생깁니다.
 
 2026.11.24에 다섯 과의 그림 15장을 만들었습니다(장면 5, 낱말 그림 묶음 6, 인물 2, 다시 그린 것 2). 4과의 Brötchen 그림은 생성된 그림이 달걀처럼 보여서 칼집을 직접 그려 넣었습니다.
