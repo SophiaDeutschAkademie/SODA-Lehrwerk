@@ -1,0 +1,214 @@
+/* Syntalab 인쇄용 PDF 의 모양 (pdf-build.py 가 읽는다)
+
+   A4 세로, 본문은 두 단. 본문(.lx) 안은 교재 앱의 화면용 스타일을 그대로 쓰고 배율(zoom, --z)로 줄인다.
+   그래서 .lx 안의 길이는 화면용 px 이고(17px 이 본문 글자), 표지·목차·과 첫머리·용어 풀이는 mm·pt 로 쓴다.
+   --pw 는 쪽에서 여백을 뺀 폭, --z 와 쪽 여백은 pdf-build.py 의 ZOOM · MARGIN 에서 온다. */
+
+:root{--navy:#384568;--ink:#1E1E1E;--ink2:#444;--mute:#666;--line:#DCDCD6;--line2:#ECEAE4;--tint:#ECEDF3;--tint2:#F5F5F9;--cg:7mm}
+html,body{margin:0;padding:0;background:#fff!important}
+body{font-family:PInter,PPret,'Noto Sans CJK KR',sans-serif!important;color:var(--ink);font-size:10pt;line-height:1.6;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact;word-break:keep-all;overflow-wrap:break-word;
+  -webkit-font-smoothing:antialiased;font-kerning:normal}
+*{box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+.pn{display:inline-block;min-width:2.1em;text-align:right;font-style:normal;font-variant-numeric:tabular-nums;white-space:nowrap}
+/* 어미 표기(-en, -(e)n)처럼 중간에서 줄이 바뀌면 안 되는 덩어리. pdf-build.py 가 감싼다. */
+.nb{white-space:nowrap}
+
+/* ---------- 표지 (전체 PDF 의 첫 쪽, 여백 없는 쪽) ---------- */
+.pcv{width:210mm;height:297mm;padding:24mm 24mm 20mm;display:flex;flex-direction:column;break-after:page;overflow:hidden}
+.pcv-brand{display:flex;align-items:center;gap:5mm}
+.pcv-brand img{height:17mm;width:auto}
+.pcv-brand div{display:flex;flex-direction:column;line-height:1.25}
+.pcv-brand b{font-size:15pt;font-weight:700;letter-spacing:.1pt}
+.pcv-brand span{font-size:10.5pt;color:var(--mute);font-weight:500}
+.pcv-hero{flex:1;display:flex;flex-direction:column;justify-content:center;padding-bottom:22mm}
+.pcv-hero h1{margin:0;font-family:PDisplay,PInter,sans-serif;font-size:74pt;line-height:1.02;letter-spacing:-.045em;color:var(--navy)}
+.pcv-hero h1 span{display:block}
+.pcv-hero .pt1{font-weight:800}
+.pcv-hero .pt2{font-weight:300;color:var(--ink);letter-spacing:-.04em}
+.pcv-sub{margin-top:13mm;display:flex;align-items:baseline;gap:4mm;font-size:13pt}
+.pcv-sub b{font-weight:700;color:var(--navy)}
+.pcv-sub span{color:var(--ink2)}
+.pcv-foot{display:flex;justify-content:space-between;gap:8mm;padding-top:5mm;border-top:.3mm solid var(--line);
+  font-size:8pt;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);font-weight:600}
+
+/* ---------- 목차 (두 단, 한 쪽) ---------- */
+.ptc{break-after:page}
+.ptc-h{display:flex;align-items:baseline;gap:4mm;padding-bottom:3.2mm;border-bottom:.5mm solid var(--navy);margin-bottom:3mm}
+.ptc-h h1{margin:0;font-size:22pt;font-weight:800;letter-spacing:-.02em;color:var(--navy);line-height:1.1}
+.ptc-h span{font-size:10pt;color:var(--mute);font-weight:500}
+.ptc-how{margin:0 0 2.5mm;font-size:7.8pt;color:var(--mute);line-height:1.5}
+.ptc-l{list-style:none;margin:0;padding:0}
+.ptc-l:not(.ptc-x){column-count:2;column-gap:var(--cg)}
+.ptc-l li{break-inside:avoid}
+.ptc-l a{display:flex;align-items:baseline;gap:2mm;padding:1.05mm 0;border-bottom:.2mm solid var(--line2)}
+.ptc-n{flex:none;width:6.5mm;font-size:8.8pt;font-weight:700;color:var(--navy);font-variant-numeric:tabular-nums}
+.ptc-t{flex:1;min-width:0;line-height:1.35}
+.ptc-ko{display:block;font-size:9.4pt;font-weight:600;color:var(--ink)}
+.ptc-de{display:block;font-size:7.4pt;line-height:1.3;color:var(--mute)}
+.ptc .pn{flex:none;width:7mm;text-align:right;font-size:8.8pt;font-weight:600;color:var(--ink)}
+.ptc-x{margin-top:2.5mm;border-top:.3mm solid var(--navy)}
+.ptc-x .ptc-n{font-size:8.2pt;width:9mm}
+.ptc-x .ptc-ko,.ptc-x .ptc-de{display:inline}
+.ptc-x .ptc-de{margin-left:2.5mm}
+
+/* ---------- 과 첫머리: 두 단 위에 걸친 띠 — 왼쪽 제목·소개·목표, 오른쪽 이 과의 차례 ---------- */
+.lk{break-before:page}
+.single .lk:first-of-type{break-before:auto}
+.op{margin:0 0 4mm;padding-bottom:4mm;border-bottom:.4mm solid var(--navy)}
+.op-brand{display:flex;align-items:center;gap:2.2mm;padding-bottom:3mm;margin-bottom:5mm;border-bottom:.3mm solid var(--line);font-size:8.5pt;line-height:1}
+.op-brand img{height:6.5mm;width:auto}
+.op-brand b{font-weight:700;color:var(--navy);font-size:9.5pt}
+.op-brand span{color:var(--mute);font-weight:500}
+.op-brand em{margin-left:auto;font-style:normal;color:var(--mute);font-weight:500}
+.op-cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--cg)}
+.op-hd{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:4mm;align-items:end}
+.op-k{grid-column:1/-1;font-size:8pt;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);font-weight:600}
+.op-n{grid-row:2/4;align-self:center;font-family:PDisplay,PInter,sans-serif;font-size:30pt;font-weight:800;line-height:1;color:var(--navy);margin:0;letter-spacing:.01em}
+.op-t{align-self:end;margin:0;font-size:16pt;font-weight:700;line-height:1.25;letter-spacing:-.01em}
+.op-de{align-self:start;font-size:8.6pt;color:var(--mute);margin-top:0}
+.op-ax .op-t,.op-ax .op-de{grid-column:1/-1}
+.op-box{margin-top:3mm}
+.op-intro{font-size:8.4pt;line-height:1.6;color:var(--ink2);text-align:justify}
+.op-lab{font-size:7.8pt;font-weight:700;color:var(--navy);letter-spacing:.02em;margin-bottom:1.2mm}
+.op-goals{margin-top:2.5mm}
+.op-goals ul{list-style:none;margin:0;padding:0}
+.op-goals li{position:relative;padding-left:5mm;font-size:8.2pt;line-height:1.55;color:var(--ink2)}
+.op-goals li::before{content:"";position:absolute;left:.8mm;top:.62em;width:2mm;height:1.1mm;border-left:.45mm solid var(--navy);border-bottom:.45mm solid var(--navy);transform:rotate(-45deg)}
+.op-nav{align-self:start;padding:3mm 4mm;background:var(--tint2);border-radius:2mm}
+.op-nav-l a{display:flex;align-items:baseline;gap:2mm;padding:.6mm 0;font-size:8.2pt;line-height:1.4;break-inside:avoid;border-bottom:.2mm solid #E1E3EA}
+.op-nav-l a:last-child{border-bottom:0}
+.op-nav-l a b{flex:none;width:4.5mm;font-weight:700;color:var(--navy)}
+.op-nav-l a span{flex:1;min-width:0}
+.op-nav-l .pn{flex:none;font-weight:600;color:var(--mute);font-size:8pt}
+
+/* ---------- 본문: 화면용 스타일을 배율로 줄여 두 단으로 ---------- */
+.lx{zoom:var(--z);font-size:17px;line-height:1.62;color:var(--text);word-break:keep-all;overflow-wrap:break-word;padding:0 1.5px;
+  column-count:2;column-gap:calc(var(--cg) / var(--z));column-rule:calc(.2mm / var(--z)) solid #D9DBE2}
+.lx section{padding:20px 0 0}
+.lx section:first-child{padding-top:0}
+.lx .sh{gap:10px;margin-bottom:10px}
+.lx .sl{min-width:34px;height:34px;border-radius:8px;font-size:1.05em}
+.lx .sh h2{font-size:1.22em}
+.lx h3{margin:15px 0 8px;font-size:1.04em}
+.lx p{margin:0 0 8px;orphans:2;widows:2}
+.lx .sub-head{margin:14px 0 8px;padding-bottom:5px}
+.lx .gt{border-bottom:none;cursor:auto;font-weight:600}
+.lx .callout{padding:9px 13px;margin:0 0 10px;line-height:1.6;gap:6px}
+.lx .dgm{padding:11px 12px;margin:0 0 11px;border-radius:10px}
+.lx .dgm-cap{margin-bottom:9px;font-size:.98em}
+.lx .dgm-note{margin-top:9px;padding:8px 11px}
+.lx .exl{padding:2px 12px;margin:0 0 10px}
+.lx .exl-i{padding:4px 0;line-height:1.5}
+.lx .trap{padding:11px 13px;margin:0 0 9px}
+.lx .trap p{margin:0 0 8px}
+.lx .trap-head{margin-bottom:7px}
+.lx .trap-ex{padding:5px 11px;margin:0 0 5px}
+.lx .tbl-wrap{overflow:visible;margin:0 0 11px;border-width:1.5px;border-radius:8px}
+.lx th{padding:5px 6px}
+.lx td{padding:5px 6px}
+.lx .photo{margin:2px 0 10px}
+.lx .photo img{max-width:300px;border-radius:8px}
+.lx .photo figcaption{max-width:none}
+.lx .fig{margin:2px 0 10px}
+.lx .fig-scroll{overflow:visible}
+.lx .kc-grid{gap:8px;margin:0 0 12px}
+.lx .kc-h{padding:6px 10px}
+.lx .kc-b{padding:0 10px 3px}
+.lx .kc-r{padding:5px 0;line-height:1.45}
+.lx .dgm-step{padding:9px 11px;gap:10px}
+.lx .dgm-seq{gap:7px}
+.lx .klam{margin:0 0 9px}
+.lx .summary-card{padding:14px 16px;border-radius:10px}
+.lx .sum-title{margin:0 0 9px;font-size:1.15em}
+.lx .sum-li{padding:5px 0;line-height:1.55}
+.lx .solutions{margin-top:16px;padding-top:12px}
+.lx .sol-grid{grid-template-columns:1fr;gap:8px;line-height:1.6}
+.lx a.xr,.lx a.ax-src{color:inherit;text-decoration:none}
+
+/* 문제: 선지를 작게, 한 줄에 여러 개. 한 줄에 몇 개 놓을지는 pdf-fit.js 가 글자 폭을 재서 정한다(data-cols) */
+.lx .quiz-block{display:block;margin-bottom:10px}
+.lx .qi{padding:6px 10px 7px;margin:0 0 5px;border-radius:7px}
+.lx .qq{font-size:1em;line-height:1.5;margin-bottom:4px}
+.lx .qh{white-space:normal}
+.lx .qg{display:grid;gap:3px 6px}
+.lx .qg[data-cols="4"]{grid-template-columns:repeat(4,minmax(0,1fr))}
+.lx .qg[data-cols="3"]{grid-template-columns:repeat(3,minmax(0,1fr))}
+.lx .qg[data-cols="2"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+.lx .qg[data-cols="1"]{grid-template-columns:minmax(0,1fr)}
+.lx .qo{display:flex;align-items:baseline;gap:5px;padding:2px 7px;font-size:.92em;line-height:1.45;border:1px solid var(--bd);border-radius:5px;background:none;cursor:auto;min-width:0}
+.lx .qo .qk{flex:none;display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;border:1.3px solid var(--text-m);border-radius:50%;font-size:11px;font-weight:700;color:var(--text-m);line-height:1;transform:translateY(-1px)}
+.lx .qg.q-fit .qo{white-space:nowrap}
+
+/* 좁은 단에 맞춘 도식 배치 — 교재 앱이 좁은 화면(600·640px 이하)에서 쓰는 규칙과 같다.
+   과에 새 종류의 도식을 넣고 앱에 좁은 화면 규칙을 더했다면 여기에도 같은 규칙을 더한다. */
+.lx .wpmap,.lx .wxmap,.lx .wgrid,.lx .pmap{grid-template-columns:repeat(2,1fr)}
+.lx .modalmap,.lx .wq{grid-template-columns:1fr 1fr}
+.lx .svm-cards{grid-template-columns:repeat(3,1fr)}
+.lx .cd-link,.lx .rp-bridge svg{transform:rotate(90deg)}
+.lx .tkml-arr{display:none}
+.lx .dgm svg{max-width:100%;height:auto}
+.lx .refl-row{flex-wrap:wrap;padding:14px 15px 16px}
+.lx .refl-gloss{margin-left:46px;flex:1 0 100%;margin-top:4px}
+.lx .conj-row,.lx .vow-row,.lx .dgm-row,.lx .push,.lx .prepset{flex-wrap:wrap}
+.lx .klam-cells,.lx .slot-row,.lx .compare2,.lx .dgm-contrast,.lx .clausevis,.lx .clause-def,.lx .refl-scene,.lx .spatial,.lx .poss,.lx .chain{gap:8px}
+.lx .klam-c{min-width:min-content;padding:9px 6px}
+.lx .klam-w{font-size:.9em}
+.lx table.decl-m{min-width:0;line-height:1.35}
+.lx table.decl-m th,.lx table.decl-m td{padding:6px 3px;overflow-wrap:break-word}
+.lx table.decl-m th:first-child,.lx table.decl-m td.rh{padding-left:6px;padding-right:6px}
+.lx table.decl-m th:not(:first-child){width:21%}
+.lx table.decl-m tr:has(>th:nth-child(4):last-child)>th:not(:first-child){width:29%}
+.lx .sh h2 .ax-de{display:block;margin:2px 0 0}
+
+/* 단보다 넓은 표: pdf-fit.js 가 data-tf 1~6 단계로 맞춘다(앱의 pager.js 와 같은 단계).
+   그래도 넓으면 data-span 을 붙여 두 단에 걸쳐 놓는다.
+   넘치지 않아도 첫 칸 때문에 다른 칸이 좁게 눌린 표에는 1단계(data-tf="1")를 건다. */
+.lx table[data-tf]{min-width:0!important}
+.lx table[data-tf] th,.lx table[data-tf] td{white-space:normal!important;padding:5px 4px!important;overflow-wrap:normal;word-break:keep-all}
+.lx table[data-tf="2"]{font-size:.8em!important}
+.lx table[data-tf="3"]{font-size:.75em!important}
+.lx table[data-tf="4"]{font-size:.7em!important}
+.lx table[data-tf="5"]{font-size:.66em!important}
+.lx table[data-tf="6"]{font-size:.62em!important}
+.lx table[data-tf="5"] th,.lx table[data-tf="5"] td,.lx table[data-tf="6"] th,.lx table[data-tf="6"] td{padding:4px 2px!important}
+.lx [data-span]{column-span:all}
+
+/* 쪽·단 나누기: 제목은 다음 덩어리와 함께, 작은 덩어리와 격변화표는 통째로 */
+.lx .sh,.lx h3,.lx .sub-head,.lx .dgm-cap,.lx .trap-head,.lx .kc-h,.lx .sum-title,.lx .sol-title{break-after:avoid;break-inside:avoid}
+.lx .qi,.lx .trap,.lx .callout,.lx .exl-i,.lx tr,.lx figure,.lx .klam,.lx .dgm-step,.lx .kc,.lx .sum-li,
+.lx .flow-node,.lx .dgm-row,.lx .dgm-side,.lx .tbl-wrap,.lx .conj-row,.lx .vow-row,.lx .slot,.lx .trap-ex,
+.lx .wq-card,.lx .wp-card,.lx .poss-card,.lx .spot-scene,.lx .sol-grid>div,.lx .dgm-note,.lx .exl,
+.lx .dgm,.lx .summary-card,.lx .solutions{break-inside:avoid}
+.lx thead{display:table-header-group}
+/* 긴 상자(pdf-build.py 가 brk 를 붙인다)는 넘겨도 된다: 넘어간 조각도 닫힌 상자로 그린다 */
+.lx .brk{break-inside:auto!important;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+/* 표는 닫지 않는다: 다음 줄이 들어가지 않아 남은 자리까지 테두리로 닫으면 빈 줄처럼 보인다. 열어 두면 「다음 단에 이어짐」 으로 읽힌다. */
+.lx .tbl-wrap.brk{box-decoration-break:slice;-webkit-box-decoration-break:slice}
+
+/* ---------- 용어 풀이 (한 과 파일은 과 끝, 전체 PDF 는 책 끝) ---------- */
+.gl{margin-top:5mm}
+.gl-h{display:flex;align-items:baseline;gap:3mm;padding-bottom:2mm;border-bottom:.4mm solid var(--navy);margin-bottom:2.5mm;break-after:avoid}
+.gl-h h2{margin:0;font-size:12pt;font-weight:700;color:var(--navy)}
+.gl-h span{font-size:8.5pt;color:var(--mute)}
+.gl-l{margin:0;column-count:2;column-gap:var(--cg)}
+.gl-i{break-inside:avoid;padding:1mm 0;border-bottom:.2mm solid var(--line2);font-size:7.6pt;line-height:1.55}
+.gl-i dt{font-weight:700;color:var(--ink);font-size:8pt}
+.gl-i dd{margin:0;color:var(--ink2);text-align:justify}
+.gl-ex{display:block;color:var(--mute)}
+.gl-book{margin-top:0}
+.gl-book .gl-h h2{font-size:22pt;font-weight:800}
+.gl-book .gl-i{font-size:8pt;line-height:1.5}
+.gl-book .gl-i dt{font-size:8.6pt}
+
+/* ---------- 재는 때의 배치 ---------- */
+/* 화면에 띄웠을 때(pdf-fit.js 가 인쇄 전에 폭을 재는 때)의 배치. 인쇄에는 걸리지 않는다.
+   본문을 두 단으로 놓지 않고, 단 하나의 폭으로 길게 한 줄로 늘어놓는다: 단의 경계에 걸쳐 둘로 나뉜 상자는 폭이 제대로 재어지지 않는다.
+   폭은 인쇄 때의 단보다 조금(0.3mm쯤) 좁게 잡아, 여기서 들어가면 인쇄에서도 들어가게 한다.
+   두 단에 걸쳐 놓을 것(data-span)은 여기서도 두 단 폭으로 놓아 본다. */
+@media screen{
+  html{width:var(--pw)}
+  .lx{column-count:1;width:calc((var(--pw) / var(--z) - 3px - var(--cg) / var(--z)) / 2 + 1.5px)}
+  .lx [data-span]{width:calc(200% + var(--cg) / var(--z))}
+}

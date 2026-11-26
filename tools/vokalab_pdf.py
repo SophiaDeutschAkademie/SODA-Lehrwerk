@@ -585,6 +585,7 @@ def build_html(D, lv, exam, limit=None):
 # Chrome 은 가변 글꼴과 OTF(CFF) 글꼴을 PDF 에 글자마다 따로 그리는 방식(Type 3)으로 넣어 파일이 몇 배 커진다.
 # 그래서 고정 굵기의 TrueType 글꼴을 만들어 쓴다(처음 한 번만 만들고 임시 폴더에 둔다).
 # fontTools 가 없거나 변환에 실패하면 시스템 글꼴을 그대로 쓴다(모양은 같고 파일만 커진다).
+# 아래의 _find_font, _otf_to_ttf, _brotli_shim, _ranges 와 chrome 은 grammatik/tools/pdf-build.py(Syntalab PDF)도 가져다 쓴다.
 FONT_DIR = os.path.join(tempfile.gettempdir(), 'vokalab-pdf-fonts-1')
 INTER = {400: 'Regular', 600: 'SemiBold', 700: 'Bold'}
 LORA = {400: 'Regular', 700: 'Bold'}

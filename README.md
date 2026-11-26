@@ -50,6 +50,7 @@ sitemap.xml       검색엔진에 제출하는 주소 목록 (tools/seo.py가 �
 tools/seo.py      페이지마다 검색용 태그를 넣고 sitemap.xml을 만드는 스크립트
 assets/           표지와 목차에 쓰는 로고, 글꼴, 홈 화면 아이콘(assets/icons/)
 grammatik/        SODA-Lehrwerk-Grammatik 저장소의 내용
+grammatik-pdf/    Syntalab(문법 교재) 인쇄용 PDF — 전체 1개와 과별 38개 (grammatik/tools/pdf-build.py가 만듦, 아래 「Syntalab 인쇄용 PDF」)
 lesetraining/     SODA-Lehrwerk-Lesetraining 저장소의 내용
 hoertraining/     SODA-Lehrwerk-Hoertraining 저장소의 내용
 sprechtraining/   SODA-SPRECHTRAINING 저장소의 내용 (대화 앱, 음성 mp3 포함)
@@ -97,8 +98,23 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
   - 모든 기기에서 한꺼번에 끄려면 `pager.js` 위쪽의 `TRIAL`을 `true`로 바꿉니다. 그러면 `?view=page`를 붙여 연 기기에서만 페이지로 열리고 나머지는 예전 화면 그대로예요.
   - `pager.js`를 고친 뒤에는 `python3 grammatik/tools/pager-build.py`를 실행합니다. `index.html`의 `pager.js?v=…`와 `sw.js`의 캐시 목록·버전 값이 함께 바뀌어 학생 기기에 새 파일이 나와요. `anhang-build.py`, `uebungen-build.py`는 이 항목을 건드리지 않고 그대로 둡니다.
   - 페이지를 나눌 때 덩어리를 다루는 규칙은 `pager.js`의 `SEL_HEAD`(다음 덩어리와 같은 페이지에 두는 제목), `SEL_AVOID`·`SEL_STRICT`(나누지 않는 덩어리), `SEL_FIT`(자리가 조금 모자라면 살짝 줄여 통째로 넣는 그림·표)에 클래스 이름으로 적혀 있습니다. 과에 새 종류의 상자를 만들면 여기에 더해 주세요. 과의 HTML에 `data-pg-keep`, `data-pg-avoid`, `data-pg-head`, `data-pg-break`, `data-pg-fit`을 직접 줄 수도 있습니다(뜻은 `pager.js` 맨 위 설명에 있어요).
+- `grammatik/`의 과나 부록을 고친 뒤에는 `python3 grammatik/tools/pdf-build.py`도 실행해 인쇄용 PDF를 다시 만듭니다(`anhang-build.py`를 실행했다면 그 뒤에). 바뀐 과의 PDF와 전체 PDF만 다시 만들어요. 자세한 것은 아래 「Syntalab 인쇄용 PDF」에 있습니다.
 - 목차에 자료를 추가하려면 루트 `index.html`의 해당 묶음의 `<ul class="grid">` 안에 `<li>` 항목을 같은 형식으로 추가합니다.
 - 모의고사 여섯 앱은 `SODA-Goethe`, `SODA-TELC` 저장소의 각 앱 폴더에 있고, 다시 만드는 방법은 앱 폴더의 `digital-src/README.md`에 있어요. 파일을 고치면 그 저장소의 `tools/soda-theme.py`로 다크 모드 스위치를 다시 넣습니다(빌드 스크립트는 자동으로 실행).
+
+## Syntalab 인쇄용 PDF(`grammatik-pdf/`)
+
+Syntalab(문법 교재)을 종이에 뽑아 쓸 수 있게 만든 PDF입니다. 학생은 Syntalab 목차의 「전체 PDF」와 줄마다 있는 PDF 단추로 내려받습니다. 연습문제(Übungen)는 넣지 않았습니다.
+
+- **파일.** `syntalab.pdf`(전체: 표지·목차·Lektion 01~37·부록 「암기 노트」·용어 풀이. 2026.11.27 기준 230쪽, 8.7MB), `syntalab-L01.pdf` … `syntalab-L37.pdf`(한 과씩, 5~7쪽), `syntalab-anhang.pdf`(부록), `manifest.json`(파일마다 쪽 수·크기·원본 지문). 학생이 받는 파일에는 `SODA Syntalab Lektion 03 격과 관사 변화.pdf` 같은 이름이 붙습니다.
+- **폴더가 `grammatik/` 밖에 있는 까닭.** `grammatik/sw.js`가 그 폴더 안의 페이지 요청에 모두 교재 화면을 돌려줍니다. PDF를 `grammatik/` 안으로 옮기면 PDF 주소로 들어온 사람에게 PDF 대신 교재 화면이 나옵니다.
+- **다시 만들기.** `python3 grammatik/tools/pdf-build.py`. 원본이 바뀐 것만 다시 만들고(과 하나를 고치면 그 과의 PDF와 전체 PDF), `grammatik/index.html`의 `sx-pdf` 블록(목차의 단추가 읽는 파일 이름·쪽 수·크기)과 `sw.js`의 VERSION을 맞춥니다. 원본이 같으면 파일도 글자 하나 다르지 않게 나오므로, 여러 번 실행해도 저장소에 바뀌는 것이 없습니다. `--all`은 모두 다시, `L03 anhang book`처럼 이름을 주면 그것만 다시 만들고, `--out 폴더`는 저장소를 건드리지 않고 그 폴더에 만들어 봅니다(`--html`을 붙이면 인쇄 직전의 HTML도 남깁니다). 전체를 만드는 데 1분쯤 걸립니다.
+- **모양.** A4 세로 두 단입니다. 과의 화면용 스타일(`index.html`의 `<style>`)을 그대로 쓰고 `grammatik/tools/pdf-print.css`가 종이용 배치를 얹습니다. 본문은 화면 크기의 0.66배(약 8.4pt)로 찍습니다. 과마다 새 쪽에서 시작하고, 첫머리에 제목·목표와 「이 과의 차례」가 쪽 번호와 함께 있습니다. 문제는 선지만 싣고(해설은 뺌) 정답은 과 끝의 「정답」에 있습니다. 화면에서 낱말을 누르면 뜨는 용어 풀이는 과별 파일에서는 과 끝에, 전체 PDF에서는 책 끝에 모읍니다.
+- **링크.** 전체 PDF의 목차, 과 첫머리의 차례, 쪽마다 왼쪽 아래의 「↑ 목차」(과별 파일은 「↑ 차례」), PDF 책갈피가 걸려 있습니다. 전체 PDF에서는 본문의 「3과」 같은 과 번호와 부록의 과 번호 단추도 그 과로 갑니다.
+- **좁은 단에 맞추기.** `grammatik/tools/pdf-fit.js`가 인쇄 직전에 Chrome 안에서 폭을 재서 맞춥니다(`pager.js`가 핸드폰에서 하는 것과 같은 방식). 선지는 네 개가 한 줄에 들어가면 4개, 아니면 2개나 1개씩 놓습니다. 단보다 넓은 표는 `data-tf` 단계로 줄이고, 첫 칸 때문에 다른 칸이 세 줄 넘게 접힌 표는 첫 칸도 접을 수 있게 풉니다. 그림(SVG) 속 글자는 겹치지 않는 만큼 키웁니다. 격변화표와 짧은 상자·표는 쪽이나 단을 넘기지 않고, 긴 표(9줄부터)와 긴 상자만 넘깁니다. `-en`, `-(e)n` 같은 어미 표기는 하이픈 뒤에서 줄이 바뀌지 않게 묶습니다.
+- **「고칠 것」이 나오면.** 도구는 만들고 나서 단이나 제 상자 밖으로 나간 요소, 준비한 글꼴(Inter·Pretendard)에 없는 글자, Chrome이 줄여서 찍은 파일을 알려 주고 종료 코드 1로 끝납니다. 단 밖으로 나간 것이 하나라도 오른쪽 단에 놓이면 Chrome이 그 파일 전체를 줄여서 찍으므로, 나온 것은 모두 고친 뒤 다시 만듭니다. 과에 새 종류의 도식을 넣고 앱에 좁은 화면용 규칙(`@media (max-width:…)`)을 더했다면 `pdf-print.css`의 「좁은 단에 맞춘 도식 배치」에도 같은 규칙을 더합니다.
+- **필요한 것.** Chrome(또는 Chromium, 환경 변수 `CHROME`으로 지정 가능), 파이썬 꾸러미 beautifulsoup4·lxml·pikepdf·fonttools·Pillow, 시스템에 깔린 Inter 글꼴(`Inter-*.otf`, `InterDisplay-*.otf`), woff2를 풀 brotli 또는 node. 한글은 저장소의 Pretendard 조각(`assets/fonts/`)을 굵기마다 한 글꼴로 합쳐 씁니다. 글꼴 변환 함수는 `tools/vokalab_pdf.py`의 것을 가져다 쓰므로, 그 파일의 `_find_font`·`_otf_to_ttf`·`_brotli_shim`·`_ranges`·`chrome`을 고칠 때는 이 도구도 함께 확인합니다.
+- **목차의 단추.** `grammatik/index.html`의 `sx-pdf` 블록이 없거나 어떤 과의 항목이 없으면 그 단추는 나오지 않습니다. 코드는 `index.html`에서 `pdfButton`을 찾으면 나옵니다. `sw.js`는 `grammatik-pdf/` 주소를 캐시에 넣지 않고 그대로 통과시킵니다.
 
 ## 쓰기 훈련(`schreibtraining/`) 고치기
 

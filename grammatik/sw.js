@@ -1,7 +1,7 @@
 /* Lehrwerk Grammatik — offline cache.
    Every file name below carries ?v=<content hash>, so a new upload only
    re-downloads the files that actually changed. */
-const VERSION = '35c0ffeef8';
+const VERSION = '4fef68ebd3';
 const PREFIX = 'lehrwerk-grammatik-';
 const CACHE = PREFIX + VERSION;
 const CORE = [
@@ -150,6 +150,8 @@ self.addEventListener('fetch', (event) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
+  /* the print PDFs (../grammatik-pdf/) are downloads, not part of the offline copy: leave them to the network */
+  if (url.pathname.indexOf('/grammatik-pdf/') !== -1) return;
 
   if (req.mode === 'navigate') {
     event.respondWith((async () => {
