@@ -51,7 +51,8 @@ mc: 확인 물음 | 보기* | 보기
 
 == wortschatz
 -- gruppe 독일어 이름 | 한국어 이름
-der Name, die Namen | 뜻 | 예문 | 예문 뜻       복수만 있으면 "die Eltern (Pl.)", 모음이 바뀌는 동사는 "lesen (du liest, er liest)"
+der Name, die Namen | 뜻 | 예문 | 예문 뜻       복수만 있으면 "die Eltern (Pl.)", 모음이 바뀌는 동사는 "lesen (du liest, er liest)",
+                                               Perfekt를 배운 뒤의 동사는 "reisen (ist gereist)", "putzen (hat geputzt)" (괄호 안의 말도 음성으로 읽습니다)
 -- bilder
 der Name, die Namen: 그림 설명(영어)            여섯 개씩 한 장에 그립니다 (6개 또는 12개)
 -- tafel 제목 | 부제

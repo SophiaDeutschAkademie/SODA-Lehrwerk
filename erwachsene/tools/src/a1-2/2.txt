@@ -1,0 +1,359 @@
+@id a1-2/2
+
+== ziel
+bild: An empty bright living room of an apartment with a large window and a glass balcony door. On the left stands a woman in her fifties with short blond hair, a slate gray blazer and a folder under her arm, she gestures toward the room with one open hand. On the right DOHYUN stands, looks around the room and holds a smartphone. Both faces are clearly visible.
+alt: 빈 거실에서 집주인이 집을 보여 주고, Dohyun이 방을 둘러보고 있어요.
+lead: 독일에서 집을 구하려면 광고를 읽고, 집을 보러 가서, 궁금한 것을 물어야 해요. Jiu의 WG에는 빈방이 하나 생겼고, Dohyun은 가족과 살 집을 보러 가고, Sora는 거실 사진을 보여 주며 집을 소개해요.
+mission: 이 과를 마치면 집 광고를 이해하고, 방과 가구를 설명하고, 집을 보면서 궁금한 것을 물을 수 있어요.
+wort: Die Wohnung hat drei Zimmer. | 그 집은 방이 세 개예요.
+wort: Gibt es einen Balkon? | 발코니가 있어요?
+wort: Das Zimmer ist klein, aber hell. | 방이 작지만 밝아요.
+wort: Wie hoch ist die Miete? | 집세가 얼마예요?
+mc: '발코니가 있어요?'는 어떻게 물을까요? | Gibt es einen Balkon?* | Ist es einen Balkon? | Hat es ein Balkon? => 어떤 곳에 무엇이 '있다'는 es gibt로 말해요.
+mc: 집 광고에 3 Zi.라고 적혀 있어요. 무슨 뜻일까요? | 방 세 개* | 3층 | 세 사람 => Zi.는 Zimmer를 줄인 말이에요.
+
+== hoeren
+-- dialog A | Ein Zimmer ist frei | 저녁, WG 부엌이에요. 같이 살던 Tim이 이사를 가요. Jiu와 Lena가 빈방 광고를 준비해요.
+vor: 들으면서 찾아보세요. 빈방의 집세는 얼마인가요?
+Lena: Jiu, Tim zieht nächste Woche aus. Wir brauchen einen Mitbewohner oder eine Mitbewohnerin. | Jiu 씨, Tim이 다음 주에 이사 나가요. 같이 살 사람이 새로 필요해요.
+Jiu: Oh! Dann schreiben wir eine Anzeige. Wie groß ist sein Zimmer? | 아! 그럼 광고를 써요. Tim의 방은 얼마나 커요?
+Lena: Es ist 16 Quadratmeter groß. Es ist hell und ruhig. | 16제곱미터예요. 밝고 조용해요. | say=Es ist sechzehn Quadratmeter groß. Es ist hell und ruhig.
+Jiu: Gibt es Möbel im Zimmer? | 방에 가구가 있어요?
+Lena: Ja, es gibt ein Bett, einen Schrank und einen Schreibtisch. Aber es gibt keinen Stuhl. | 네, 침대와 옷장, 책상이 있어요. 그런데 의자는 없어요.
+Jiu: Und wie hoch ist die Miete? | 그럼 집세는 얼마예요?
+Lena: 520 Euro warm. Das ist nicht teuer für Frankfurt. | 관리비를 포함해서 520유로예요. 프랑크푸르트치고는 비싸지 않아요. | say=Fünfhundertzwanzig Euro warm. Das ist nicht teuer für Frankfurt.
+Jiu: Stimmt. Und die Küche und das Bad sind neu. | 맞아요. 그리고 부엌과 욕실이 새것이에요.
+Lena: Genau. Und die U-Bahn ist in der Nähe. Das schreiben wir auch. | 그렇죠. 지하철도 가까워요. 그것도 써요.
+Jiu: Gut. Ich mache heute Abend Fotos. | 좋아요. 오늘 저녁에 제가 사진을 찍을게요.
+
+-- dialog B | Die Wohnungsbesichtigung | 토요일 오전이에요. Dohyun이 가족과 살 집을 보러 왔어요. 집주인 Frau Krause가 집을 보여 줘요. | Frau=Frau Krause
+vor: 들으면서 찾아보세요. 이 집에 없는 것은 무엇인가요?
+Frau: Guten Tag, Herr Park! Kommen Sie bitte herein. | 안녕하세요, Herr Park! 들어오세요.
+Dohyun: Guten Tag, Frau Krause. Vielen Dank! | 안녕하세요, Frau Krause. 감사합니다!
+Frau: Die Wohnung hat drei Zimmer, eine Küche und ein Bad. Hier links ist das Wohnzimmer. | 이 집은 방 세 개에 부엌과 욕실이 있어요. 여기 왼쪽이 거실이에요.
+Dohyun: Das Wohnzimmer ist groß und sehr hell. Gibt es auch einen Balkon? | 거실이 크고 아주 밝네요. 발코니도 있어요?
+Frau: Ja, der Balkon ist hier. Und rechts sind das Schlafzimmer und das Kinderzimmer. | 네, 발코니는 여기예요. 그리고 오른쪽이 침실과 아이 방이에요.
+Dohyun: Schön. Gibt es einen Keller? | 좋네요. 지하 창고가 있나요?
+Frau: Nein, leider gibt es keinen Keller. Aber im Bad gibt es einen Platz für die Waschmaschine. | 아니요, 아쉽게도 지하 창고는 없어요. 그렇지만 욕실에 세탁기 놓을 자리가 있어요.
+Dohyun: Wie hoch ist die Miete? | 집세는 얼마예요?
+Frau: Die Miete ist 1.350 Euro kalt. Die Nebenkosten sind 250 Euro. | 집세는 관리비를 빼고 1,350유로예요. 관리비는 250유로예요. | say=Die Miete ist tausenddreihundertfünfzig Euro kalt. Die Nebenkosten sind zweihundertfünfzig Euro.
+Dohyun: Also 1.600 Euro warm. Das ist nicht günstig. Und die Kaution? | 그러니까 관리비를 포함해서 1,600유로네요. 싸지는 않네요. 보증금은요? | say=Also tausendsechshundert Euro warm. Das ist nicht günstig. Und die Kaution?
+Frau: Drei Monatsmieten. Die Wohnung ist ab sofort frei. | 석 달 치 집세예요. 집은 지금 바로 들어올 수 있어요.
+Dohyun: Die Wohnung ist sehr schön. Ich möchte die Wohnung gern nehmen. | 집이 아주 좋아요. 이 집으로 하고 싶어요.
+
+-- dialog C | Das Wohnzimmer von Sora | 수업이 끝난 뒤예요. Sora가 Frau Becker에게 거실 사진을 보여 줘요.
+vor: 들으면서 찾아보세요. 탁자는 어디에 있나요?
+Becker: Frau Lee, wie ist Ihre Wohnung in Sachsenhausen? | Frau Lee, 작센하우젠 집은 어때요?
+Sora: Sie ist nicht groß, aber sehr schön. Hier ist ein Foto. Das ist das Wohnzimmer. | 크지는 않지만 아주 좋아요. 여기 사진이 있어요. 거실이에요.
+Becker: Oh, schön! Das Sofa steht am Fenster. | 오, 멋지네요! 소파가 창가에 있네요.
+Sora: Ja. Und vor dem Sofa steht ein Tisch. | 네. 그리고 소파 앞에 탁자가 있어요.
+Becker: Und was hängt an der Wand? | 벽에는 무엇이 걸려 있어요?
+Sora: Das ist ein Bild von Hana. Es hängt über dem Sofa. | Hana의 그림이에요. 소파 위쪽에 걸려 있어요.
+Becker: Sehr schön. Und wo steht der Fernseher? | 아주 좋네요. 텔레비전은 어디에 있어요?
+Sora: Der Fernseher steht zwischen dem Regal und der Tür. | 텔레비전은 책장과 문 사이에 있어요.
+Becker: Und die Lampe hinter dem Sofa? Die ist sehr schön. | 소파 뒤에 있는 조명은요? 아주 예쁘네요.
+Sora: Danke! Die Lampe ist neu. Sie steht in der Ecke. | 고마워요! 그 조명은 새것이에요. 구석에 있어요.
+Becker: Sie sind wirklich Designerin! | 역시 디자이너시네요!
+
+-- fragen 세 대화를 듣고 답하세요.
+mc: Tim의 방은 얼마나 큰가요? | 16 Quadratmeter* | 60 Quadratmeter | 6 Quadratmeter
+rf: Im Zimmer gibt es einen Stuhl. | f => 침대, 옷장, 책상은 있지만 의자는 없어요.
+mc: WG 방의 집세는 얼마인가요? | 520 Euro warm* | 250 Euro warm | 520 Euro kalt
+mc: Dohyun이 본 집에 없는 것은 무엇인가요? | ein Keller* | ein Balkon | ein Kinderzimmer
+rf: Die Wohnung hat drei Zimmer. | r
+mc: 그 집의 관리비는 얼마인가요? | 250 Euro* | 1.350 Euro | 1.600 Euro
+mc: Sora의 거실에서 탁자는 어디에 있나요? | vor dem Sofa* | hinter dem Sofa | über dem Sofa
+rf: Das Bild hängt über dem Sofa. | r
+
+-- kultur 집세와 보증금, 그리고 전입 신고
+p: 집 광고에는 집세가 두 가지로 나와요. Kaltmiete는 집만 빌리는 값이고, 여기에 난방, 물, 쓰레기 처리 같은 관리비(Nebenkosten)를 더하면 Warmmiete가 돼요. 전기와 인터넷은 보통 따로 계약하고 따로 내요. 광고에는 Zi.(방), qm(제곱미터), KM(Kaltmiete), NK(Nebenkosten)처럼 줄임말이 많아요.
+p: 계약할 때는 보증금(Kaution)을 내요. 법으로 Kaltmiete 석 달 치까지만 받을 수 있고, 이사 나갈 때 돌려받아요. 독일에는 전세가 없고 모두 월세예요. 부엌 가구가 없는 집도 많으니 광고에 EBK(붙박이 부엌)가 있는지 확인해요.
+p: 이사한 뒤에는 2주 안에 관청(Bürgeramt)에 가서 전입 신고(Anmeldung)를 해야 해요. 이때 집주인이 써 주는 확인서(Wohnungsgeberbestätigung)가 필요해요. 신고하고 받는 확인서(Meldebescheinigung)는 은행 계좌를 열 때, 체류 허가를 신청할 때처럼 여러 곳에서 써요.
+mc: 이사한 뒤 전입 신고는 언제까지 해야 하나요? | 2주 안에* | 3개월 안에 | 1년 안에
+
+== wortschatz
+-- gruppe Die Wohnung | 집
+die Wohnung, die Wohnungen | 집 (건물 안의 한 세대) | Die Wohnung hat drei Zimmer. | 그 집은 방이 세 개예요.
+das Haus, die Häuser | 집, 건물 | Das Haus ist alt, aber schön. | 그 집은 오래됐지만 예뻐요.
+das Zimmer, die Zimmer | 방 | Das Zimmer ist 16 Quadratmeter groß. | 그 방은 16제곱미터예요. | say=Das Zimmer ist sechzehn Quadratmeter groß.
+das Wohnzimmer, die Wohnzimmer | 거실 | Das Wohnzimmer ist groß und hell. | 거실이 크고 밝아요.
+das Schlafzimmer, die Schlafzimmer | 침실 | Das Schlafzimmer ist rechts. | 침실은 오른쪽이에요.
+die Küche, die Küchen | 부엌 | Die Küche ist neu. | 부엌이 새것이에요.
+das Bad, die Bäder | 욕실 | Das Bad ist klein. | 욕실이 작아요.
+der Balkon, die Balkone | 발코니 | Gibt es einen Balkon? | 발코니가 있어요?
+der Keller, die Keller | 지하실, 지하 창고 | Leider gibt es keinen Keller. | 아쉽게도 지하 창고는 없어요.
+der Flur, die Flure | 복도, 현관 | Der Schrank steht im Flur. | 옷장은 복도에 있어요.
+die Miete, die Mieten | 집세 | Wie hoch ist die Miete? | 집세가 얼마예요?
+die Nebenkosten (Pl.) | 관리비 | Die Nebenkosten sind 250 Euro. | 관리비는 250유로예요. | say=Die Nebenkosten sind zweihundertfünfzig Euro.
+die Kaution, die Kautionen | 보증금 | Wie hoch ist die Kaution? | 보증금은 얼마예요?
+der Vermieter, die Vermieter | 집주인 (남자) | Der Vermieter wohnt auch im Haus. | 집주인도 그 건물에 살아요.
+die Vermieterin, die Vermieterinnen | 집주인 (여자) | Die Vermieterin heißt Frau Krause. | 집주인은 Frau Krause예요.
+die Anzeige, die Anzeigen | 광고 | Wir schreiben eine Anzeige. | 우리는 광고를 써요.
+der Quadratmeter, die Quadratmeter | 제곱미터 | Die Wohnung hat 78 Quadratmeter. | 그 집은 78제곱미터예요. | say=Die Wohnung hat achtundsiebzig Quadratmeter.
+
+-- gruppe Möbel | 가구
+die Möbel (Pl.) | 가구 | Gibt es Möbel im Zimmer? | 방에 가구가 있어요?
+der Tisch, die Tische | 탁자, 식탁 | Vor dem Sofa steht ein Tisch. | 소파 앞에 탁자가 있어요.
+der Stuhl, die Stühle | 의자 | Am Tisch stehen vier Stühle. | 식탁에 의자가 네 개 있어요.
+das Bett, die Betten | 침대 | Das Bett steht an der Wand. | 침대는 벽 쪽에 있어요.
+der Schrank, die Schränke | 옷장, 장 | Der Schrank steht neben der Tür. | 옷장은 문 옆에 있어요.
+der Schreibtisch, die Schreibtische | 책상 | Der Schreibtisch steht am Fenster. | 책상은 창가에 있어요.
+das Sofa, die Sofas | 소파 | Das Sofa ist neu. | 소파가 새것이에요.
+das Regal, die Regale | 선반, 책장 | Das Regal steht neben dem Sofa. | 책장은 소파 옆에 있어요.
+die Lampe, die Lampen | 조명, 등 | Die Lampe hängt über dem Tisch. | 등이 탁자 위쪽에 걸려 있어요.
+der Fernseher, die Fernseher | 텔레비전 | Der Fernseher steht im Wohnzimmer. | 텔레비전은 거실에 있어요.
+die Waschmaschine, die Waschmaschinen | 세탁기 | Die Waschmaschine steht im Bad. | 세탁기는 욕실에 있어요.
+das Fenster, die Fenster | 창문 | Das Zimmer hat zwei Fenster. | 그 방은 창문이 두 개예요.
+die Tür, die Türen | 문 | Die Tür ist rechts. | 문은 오른쪽에 있어요.
+die Wand, die Wände | 벽 | An der Wand hängt ein Bild. | 벽에 그림이 걸려 있어요.
+das Bild, die Bilder | 그림, 사진 | Das Bild ist von Hana. | 그 그림은 Hana가 그렸어요.
+
+-- gruppe Wie ist die Wohnung? | 집이 어때요?
+groß | 큰 | Das Wohnzimmer ist groß. | 거실이 커요.
+klein | 작은 | Mein Zimmer ist klein. | 제 방은 작아요.
+hell | 밝은 | Die Küche ist hell. | 부엌이 밝아요.
+dunkel | 어두운 | Der Flur ist dunkel. | 복도가 어두워요.
+ruhig | 조용한 | Die Straße ist ruhig. | 그 길은 조용해요.
+laut | 시끄러운 | Die Wohnung ist leider laut. | 그 집은 아쉽게도 시끄러워요.
+neu | 새, 새로운 | Das Bad ist neu. | 욕실이 새것이에요.
+es gibt | ~이 있다 | Es gibt einen Balkon. | 발코니가 있어요.
+stehen | (서) 있다 | Das Sofa steht am Fenster. | 소파는 창가에 있어요.
+liegen | (놓여) 있다 | Das Foto liegt auf dem Tisch. | 사진은 탁자 위에 놓여 있어요.
+hängen | 걸려 있다 | Das Bild hängt an der Wand. | 그림은 벽에 걸려 있어요.
+mieten | (집을) 빌리다, 세 들다 | Ich möchte die Wohnung mieten. | 저는 그 집을 빌리고 싶어요.
+ausziehen | 이사 나가다 | Tim zieht nächste Woche aus. | Tim은 다음 주에 이사 나가요.
+
+-- bilder
+das Wohnzimmer, die Wohnzimmer: a living room with a sofa, a low table, a rug and a large window
+die Küche, die Küchen: a small kitchen with a stove, a sink, wall cupboards and a refrigerator
+das Bad, die Bäder: a bathroom with a bathtub, a washbasin and a round mirror
+der Balkon, die Balkone: a balcony with a railing, a small round table, one chair and two potted plants
+das Bett, die Betten: a bed with a pillow and a folded blanket
+der Schrank, die Schränke: a tall wardrobe with two doors, one door is open and shows clothes on hangers
+der Tisch, die Tische: a simple wooden dining table with four legs
+der Stuhl, die Stühle: a simple wooden chair seen from an angle
+das Sofa, die Sofas: a two-seat sofa with two cushions
+das Regal, die Regale: an open shelf unit with books and a small plant
+die Lampe, die Lampen: a floor lamp with a fabric shade
+die Waschmaschine, die Waschmaschinen: a front-loading washing machine with a round glass door
+
+-- tafel Wo steht das? | 자리를 나타내는 말
+p: 줄을 누르면 소리가 나요. 물건이 어디에 있는지 말할 때 쓰는 말이에요. 뒤에 오는 관사는 dem이나 der가 돼요.
+r: in = 안에 ; an = 옆에, 붙어서 ; auf = 위에 | say=in, an, auf.
+r: über = 위쪽에 ; unter = 아래에 | say=über, unter.
+r: vor = 앞에 ; hinter = 뒤에 | say=vor, hinter.
+r: neben = 옆에 ; zwischen = 사이에 | say=neben, zwischen.
+r: auf dem Tisch ; unter dem Tisch ; neben der Tür | say=auf dem Tisch, unter dem Tisch, neben der Tür.
+r: im Regal ; am Fenster ; an der Wand | say=im Regal, am Fenster, an der Wand.
+
+-- tafel Abkürzungen in Anzeigen | 집 광고의 줄임말
+p: 줄을 누르면 소리가 나요. 집 광고는 자리를 아끼려고 줄임말을 많이 써요. 읽을 때는 줄이지 않은 말로 읽어요.
+r: Zi. = Zimmer ; qm = Quadratmeter ; WG = Wohngemeinschaft | say=Zimmer, Quadratmeter, Wohngemeinschaft.
+r: KM = Kaltmiete ; NK = Nebenkosten ; WM = Warmmiete | say=Kaltmiete, Nebenkosten, Warmmiete.
+r: EBK = Einbauküche ; Blk. = Balkon ; EG = Erdgeschoss | say=Einbauküche, Balkon, Erdgeschoss.
+
+-- aussprache ei, eu, au | 두 모음이 이어지는 소리
+p: ei는 '아이', eu와 äu는 '오이', au는 '아우'로 소리 나요. 글자대로 '에이', '에우'라고 읽지 않아요. klein은 '클라인', neu는 '노이', Haus는 '하우스'예요.
+p: ie는 두 모음이 아니라 길게 내는 '이'예요. Miete는 '미테', vier는 '피어'에 가까워요. ei와 ie를 바꿔 읽으면 다른 낱말이 되니 주의해요.
+hör: klein, zwei, frei | ei
+hör: neu, teuer, Räume, Häuser | eu와 äu
+hör: Haus, Raum, laut, auch | au
+hör: Miete, vier, hier, liegen | ie는 긴 '이'
+hör: Mein Zimmer ist klein und neu, aber leider laut. | 문장으로 들어요
+
+== grammatik
+-- punkt es gibt | 어떤 곳에 무엇이 있다
+bsp: *Es gibt* einen Balkon. | 발코니가 있어요.
+bsp: *Gibt es* einen Keller? | 지하 창고가 있어요?
+bsp: Leider *gibt es* keinen Keller. | 아쉽게도 지하 창고는 없어요.
+finde: es gibt 뒤에 오는 남성 명사 앞에는 무엇을 쓰나요? | einen* | ein | einem
+regel: es gibt는 어떤 곳에 무엇이 '있다'고 말할 때 써요. 뒤에는 언제나 Akkusativ(4격)를 써요. 여러 개가 있어도 gibt의 모양은 바뀌지 않아요. 없다고 말할 때는 kein을 써요.
+| | 있다 | 없다
+| 남성 | Es gibt ein*en* Balkon. | Es gibt kein*en* Balkon.
+| 중성 | Es gibt ein Bad. | Es gibt kein Bad.
+| 여성 | Es gibt eine Küche. | Es gibt keine Küche.
+| 복수 | Es gibt zwei Zimmer. | Es gibt keine Möbel.
+merke: 한국어 '있다'는 독일어에서 세 가지로 나뉘어요. 내가 가진 것은 haben으로 말해요. Ich habe ein Auto. 어떤 곳에 무엇이 있는지는 es gibt로 말해요. Es gibt einen Balkon. 이미 아는 것이 어디에 있는지는 sein으로 말해요. Der Balkon ist hier.
+
+-- punkt Adjektive | 집과 방을 설명하는 말
+bsp: Das Wohnzimmer ist *groß* und *hell*. | 거실이 크고 밝아요.
+bsp: Das Zimmer ist *klein*, aber *ruhig*. | 방이 작지만 조용해요.
+bsp: Die Miete ist *zu teuer*. | 집세가 너무 비싸요.
+finde: Die Wohnung ist hell.에서 hell의 끝은 어떻게 되나요? | 바뀌지 않아요* | -e가 붙어요 | -en이 붙어요
+regel: 형용사가 sein 뒤에 오면 끝이 바뀌지 않아요. 명사의 성이나 수와 상관없이 언제나 같은 모양이에요. 앞에 sehr(아주), zu(너무), nicht so(그렇게 ~하지 않은)를 붙여 정도를 말해요.
+| 형용사 | 반대말 | 예
+| groß | klein | Das Bad ist klein.
+| hell | dunkel | Der Flur ist dunkel.
+| ruhig | laut | Die Straße ist laut.
+| teuer | günstig | Die Miete ist günstig.
+| neu | alt | Die Küche ist alt.
+merke: zu teuer는 '너무 비싸서 안 된다'는 뜻이고, sehr teuer는 그냥 '아주 비싸다'는 뜻이에요. 크기는 Wie groß ist das Zimmer?, 집세는 Wie hoch ist die Miete?로 물어요. 형용사가 명사 바로 앞에 오면 끝이 바뀌어요. 그것은 나중에 배워요.
+
+-- punkt Wechselpräpositionen mit Dativ | 물건이 있는 자리
+bsp: Das Sofa steht *am* Fenster. | 소파는 창가에 있어요.
+bsp: Vor *dem* Sofa steht ein Tisch. | 소파 앞에 탁자가 있어요.
+bsp: Das Bild hängt über *dem* Sofa. | 그림은 소파 위쪽에 걸려 있어요.
+finde: neben 뒤에서 die Tür는 어떻게 되나요? | neben der Tür* | neben die Tür | neben den Tür
+regel: 1과에서 배운 in, an, auf와 함께 über, unter, vor, hinter, neben, zwischen도 있는 곳(Wo?)을 말할 때 Dativ와 써요. der와 das는 dem, die는 der, 복수의 die는 den이 돼요. 서 있는 물건은 stehen, 놓여 있는 물건은 liegen, 걸려 있는 물건은 hängen으로 말해요.
+| 전치사 | 뜻 | 예
+| in, an, auf | 안에, 옆에, 위에 | *im* Regal, *am* Fenster, auf *dem* Tisch
+| über, unter | 위쪽에, 아래에 | über *dem* Sofa, unter *dem* Bett
+| vor, hinter | 앞에, 뒤에 | vor *der* Tür, hinter *dem* Schrank
+| neben, zwischen | 옆에, 사이에 | neben *der* Lampe, zwischen *den* Fenstern
+merke: auf는 닿아서 위에 있을 때, über는 떨어져서 위쪽에 있을 때 써요. Das Foto liegt auf dem Tisch. Die Lampe hängt über dem Tisch. 한국어는 둘 다 '위에'라서 헷갈리기 쉬워요. 침대, 옷장, 탁자처럼 다리나 바닥으로 서 있는 가구에는 stehen을 써요.
+
+== training
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Frau: Die Wohnung hat zwei Zimmer, eine Küche und ein Bad. Sie ist 55 Quadratmeter groß. | say=Die Wohnung hat zwei Zimmer, eine Küche und ein Bad. Sie ist fünfundfünfzig Quadratmeter groß.
+mc: 집은 몇 제곱미터인가요? | 55* | 65 | 45
+hör: Mann: Das Zimmer kostet 450 Euro warm. | say=Das Zimmer kostet vierhundertfünfzig Euro warm.
+mc: 방의 집세는 얼마인가요? | 450 Euro* | 540 Euro | 415 Euro
+hör: Lena: Es gibt ein Bett und einen Schrank, aber keinen Schreibtisch.
+mc: 방에 없는 것은 무엇인가요? | 책상* | 침대 | 옷장
+hör: Dohyun: Die Wohnung ist schön, aber sie ist leider zu teuer.
+mc: Dohyun은 이 집을 어떻게 생각하나요? | 좋지만 너무 비싸요* | 싸지만 어두워요 | 크고 값도 싸요
+
+-- ex Hören | Jiu가 자기 방을 소개해요. 듣고 알맞은 것을 고르세요.
+audio | Jius Zimmer
+> Jiu: Mein Zimmer ist klein, aber hell. Das Bett steht rechts an der Wand.
+> Jiu: Der Schreibtisch steht am Fenster. Auf dem Schreibtisch liegt mein Laptop.
+> Jiu: Neben der Tür steht ein Schrank. Und über dem Bett hängen Fotos von meiner Familie.
+mc: Jiu의 방은 어떤가요? | 작지만 밝아요* | 크지만 어두워요 | 작고 어두워요
+mc: 책상은 어디에 있나요? | am Fenster* | neben der Tür | an der Wand
+mc: 침대 위쪽에 무엇이 걸려 있나요? | 가족 사진* | 조명 | 달력
+
+-- ex Lesen | 집 광고 두 개를 읽고, 맞으면 richtig, 틀리면 falsch를 고르세요. Zi.는 Zimmer, qm는 Quadratmeter, KM은 Kaltmiete, NK는 Nebenkosten, EBK는 붙박이 부엌이에요.
+text notiz | Anzeige 1
+> 3-Zi.-Wohnung in Bockenheim, 78 qm, 2. Stock, Balkon, EBK, kein Keller. KM 1.350 €, NK 250 €, Kaution 3 Monatsmieten. Ab sofort frei. Telefon: 069 90009-355
+text notiz | Anzeige 2
+> WG-Zimmer in Bockenheim, 16 qm, hell und ruhig. Möbel: Bett, Schrank, Schreibtisch. Küche und Bad neu. 520 € warm. U-Bahn in der Nähe. E-Mail: lena.schmidt@example.org
+rf: Die Wohnung in Anzeige 1 hat drei Zimmer. | r
+rf: In der Wohnung gibt es einen Keller. | f => kein Keller라고 적혀 있어요.
+rf: Die Wohnung kostet 1.600 Euro warm. | r => Kaltmiete 1,350유로에 Nebenkosten 250유로를 더하면 1,600유로예요.
+rf: Das WG-Zimmer ist 16 Quadratmeter groß. | r
+rf: Im WG-Zimmer gibt es keine Möbel. | f => 침대, 옷장, 책상이 있어요.
+
+-- ex Grammatik | es gibt 뒤에 알맞은 말을 고르세요.
+gap: Es gibt [einen|ein|eine] Balkon.
+gap: Gibt es [eine|einen|ein] Waschmaschine?
+gap: Im Zimmer gibt es [ein|einen|eine] Bett.
+gap: Leider gibt es [keinen|kein|keine] Keller.
+gap: Im Zimmer gibt es [keine|keinen|kein] Möbel.
+gap: Gibt es hier [einen|ein|eine] Supermarkt?
+
+-- ex Grammatik | 반대말을 쓰세요.
+gap: groß – [=klein]
+gap: hell – [=dunkel]
+gap: ruhig – [=laut]
+gap: neu – [=alt]
+gap: teuer – [=günstig/billig]
+
+-- ex Grammatik | 알맞은 관사를 고르세요.
+gap: Das Sofa steht vor [dem|der|den] Fenster.
+gap: Der Schrank steht neben [der|dem|die] Tür.
+gap: Das Bild hängt über [dem|der|das] Sofa.
+gap: Der Laptop liegt auf [dem|der|den] Schreibtisch.
+gap: Das Foto liegt unter [dem|der|das] Bett.
+gap: Der Fernseher steht zwischen [dem|der|den] Regal und [der|dem|die] Tür.
+
+-- ex Grammatik | stehen, liegen, hängen 가운데 알맞은 동사를 고르세요.
+gap: Das Bett [steht|liegt|hängt] am Fenster.
+gap: Das Bild [hängt|steht|liegt] an der Wand.
+gap: Das Foto [liegt|hängt|steht] auf dem Tisch.
+gap: Der Schrank [steht|liegt|hängt] im Flur.
+gap: Die Lampe [hängt|liegt|steht] über dem Tisch.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: gibt / es / einen / Balkon? | 발코니가 있어요?
+ord: wie / hoch / ist / die Miete? | 집세가 얼마예요?
+ord: das Bett / steht / am / Fenster. | 침대는 창가에 있어요.
+ord: vor dem Sofa / steht / ein / Tisch. | 소파 앞에 탁자가 있어요.
+ord: die Wohnung / ist / leider / zu teuer. | 그 집은 아쉽게도 너무 비싸요.
+
+-- ex Wortschatz | 알맞은 관사를 고르세요. | opt: der / das / die
+wahl: Küche | die
+wahl: Bad | das
+wahl: Balkon | der
+wahl: Bett | das
+wahl: Schrank | der
+wahl: Lampe | die
+wahl: Zimmer | das
+wahl: Tisch | der
+
+-- ex Wortschatz | 줄임말과 뜻을 짝지으세요.
+paar: Zi. = Zimmer ; qm = Quadratmeter ; KM = Kaltmiete ; NK = Nebenkosten ; EBK = Einbauküche
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Dohyun: Gibt es einen Balkon? | 발코니가 있어요?
+dik: Lena: Das Zimmer ist hell und ruhig. | 방이 밝고 조용해요.
+dik: Sora: Das Bild hängt über dem Sofa. | 그림은 소파 위쪽에 걸려 있어요.
+
+== aufgabe
+-- redemittel
+집과 방 설명하기: Die Wohnung hat drei Zimmer. | 집에 방이 세 개 있어요. ; Das Zimmer ist 16 Quadratmeter groß. | 방은 16제곱미터예요. ; Es ist hell und ruhig. | 밝고 조용해요.
+있는지 묻기: Gibt es einen Balkon? | 발코니가 있어요? ; Gibt es eine Waschmaschine? | 세탁기가 있어요? ; Gibt es Möbel im Zimmer? | 방에 가구가 있어요?
+집세 묻기: Wie hoch ist die Miete? | 집세가 얼마예요? ; Ist das warm oder kalt? | 관리비를 포함한 값이에요, 뺀 값이에요? ; Wie hoch ist die Kaution? | 보증금은 얼마예요?
+집 보러 갈 약속 잡기: Ist das Zimmer noch frei? | 방이 아직 비어 있어요? ; Kann ich das Zimmer sehen? | 방을 볼 수 있을까요? ; Wann kann ich kommen? | 언제 가면 될까요?
+자리 말하기: Das Bett steht am Fenster. | 침대는 창가에 있어요. ; Das Bild hängt an der Wand. | 그림은 벽에 걸려 있어요. ; Das Foto liegt auf dem Tisch. | 사진은 탁자 위에 놓여 있어요.
+집이 어떤지 말하기: Wie finden Sie die Wohnung? | 집이 어떠세요? ; Die Wohnung ist sehr schön. | 집이 아주 좋아요. ; Ich möchte die Wohnung gern nehmen. | 이 집으로 하고 싶어요. ; Das ist leider zu teuer. | 아쉽지만 너무 비싸요.
+
+--S rolle A | Jiu, Lena
+
+--B rolle B | Dohyun, Frau
+
+-- ich 내 방을 소개해요 | 지금 사는 방을 떠올리고 칸을 채우세요. 방이 어떤지는 groß, klein, hell, ruhig처럼 써요. 가구는 Das Bett, Der Schreibtisch처럼 관사와 함께, 자리는 am Fenster, neben der Tür처럼 써요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: wie1 | 방이 어떤지 | klein
+feld: wie2 | 방이 어떤지 하나 더 | hell
+feld: was | 가구 하나 | Das Bett
+feld: wo | 그 가구가 있는 자리 | am Fenster
+feld: gibt | 방에 있는 것 | einen Schrank
+satz: Mein Zimmer ist {wie1} und {wie2}.
+satz: {was} steht {wo}.
+satz: Im Zimmer gibt es auch {gibt}.
+
+--S info WG 방 광고
+p: 인터넷에서 이 광고를 봤어요.
+p: WG-Zimmer in Bockenheim, 16 qm, hell und ruhig. Möbel: Bett, Schrank, Schreibtisch. 520 € warm. U-Bahn in der Nähe.
+p: 방을 보고 싶어요. 광고를 낸 Lena에게 전화해서 방이 아직 비어 있는지 묻고, 보러 갈 약속을 잡아요. 토요일 오후에 시간이 있어요. 학생끼리는 du를 써요.
+
+--S sprich Ein Anruf bei Lena | 광고를 보고 Lena에게 전화해요. 쪽지를 보고 답하세요. Lena의 말을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요.
+f: Lena: Hallo, hier ist Lena Schmidt. | 여보세요, Lena Schmidt예요. => Hallo, hier ist Minji Choi. Ich suche ein Zimmer. Ist das WG-Zimmer noch frei?
+f: Lena: Ja, das Zimmer ist noch frei. Möchtest du das Zimmer sehen? | 네, 방이 아직 비어 있어요. 방을 보러 올래요? => Ja, gern! Kann ich am Samstag kommen?
+f: Lena: Am Samstag passt es gut. Um wie viel Uhr? | 토요일 좋아요. 몇 시에요? => Um drei Uhr am Nachmittag. Geht das?
+f: Lena: Ja, das geht. Hast du noch Fragen? | 네, 돼요. 더 궁금한 것 있어요? => Ja. Gibt es eine Waschmaschine? Und wie hoch ist die Kaution?
+f: Lena: Ja, im Bad gibt es eine Waschmaschine. Die Kaution ist 1.000 Euro. | 네, 욕실에 세탁기가 있어요. 보증금은 1,000유로예요. | say=Ja, im Bad gibt es eine Waschmaschine. Die Kaution ist tausend Euro. => Gut, danke! Wie ist die Adresse?
+f: Lena: Beispielweg 7 in Bockenheim. Bis Samstag! | Bockenheim의 Beispielweg 7번지예요. 토요일에 봐요! | say=Beispielweg sieben in Bockenheim. Bis Samstag! => Vielen Dank! Bis Samstag um drei. Tschüss!
+
+--S schreiben Eine Nachricht an die WG | 광고를 낸 WG에 메시지를 써 보세요. 나를 짧게 소개하고, 방이 아직 비어 있는지 묻고, 보러 갈 수 있는 때를 써요. 다섯 문장이면 충분해요.
+punkt: 이름과 하는 일 ; 방이 아직 비어 있는지 ; 궁금한 것 하나 ; 보러 갈 수 있는 요일과 시각
+start: Hallo, ich heiße …
+muster: Hallo, ich heiße Minji Choi. Ich komme aus Korea und lerne Deutsch in Frankfurt. Ich suche ein Zimmer. Ist das WG-Zimmer noch frei? Gibt es eine Waschmaschine? Ich kann am Samstag um drei Uhr kommen. Viele Grüße, Minji
+check: es gibt 뒤에 einen, ein, eine를 맞게 썼나요? ; 질문을 동사나 의문사로 시작했나요? ; 요일 앞에 am, 시각 앞에 um을 썼나요? ; 끝인사를 썼나요?
+
+--B info 집 광고 쪽지
+p: 가족과 살 집을 찾고 있어요. 이 광고를 보고 집을 보러 왔어요.
+p: 3-Zi.-Wohnung in Bockenheim, 78 qm, Balkon, EBK. KM 1.350 €, NK 250 €.
+p: 집주인 Frau Krause에게 광고에 없는 것을 물어요. 지하 창고가 있는지, 세탁기가 있는지, 보증금이 얼마인지, 언제부터 들어올 수 있는지 궁금해요.
+
+--B sprich Fragen an die Vermieterin | 집을 보면서 집주인 Frau Krause와 이야기해요. 쪽지를 보고 궁금한 것을 물어요. 집주인의 말을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요. | Frau=Frau Krause
+f: Frau: Guten Tag! Das ist die Wohnung. Wie finden Sie das Wohnzimmer? | 안녕하세요! 이 집이에요. 거실은 어떠세요? => Guten Tag, Frau Krause! Das Wohnzimmer ist groß und sehr hell. Gibt es auch einen Keller?
+f: Frau: Nein, leider gibt es keinen Keller. Haben Sie noch Fragen? | 아니요, 아쉽게도 지하 창고는 없어요. 더 궁금한 것 있으세요? => Ja. Gibt es eine Waschmaschine?
+f: Frau: Nein, aber im Bad gibt es einen Platz für die Waschmaschine. | 아니요, 그렇지만 욕실에 세탁기 놓을 자리가 있어요. => Gut. Und wie hoch ist die Kaution?
+f: Frau: Die Kaution? Drei Monatsmieten, also 4.050 Euro. | 보증금이요? 석 달 치 집세, 그러니까 4,050유로예요. | say=Die Kaution? Drei Monatsmieten, also viertausendfünfzig Euro. => Danke. Und ab wann ist die Wohnung frei?
+f: Frau: Die Wohnung ist ab sofort frei. Möchten Sie die Wohnung nehmen? | 집은 지금 바로 들어오실 수 있어요. 이 집으로 하시겠어요? => Ja, die Wohnung ist sehr schön. Ich möchte die Wohnung gern nehmen.
+
+--B schreiben Eine E-Mail an die Vermieterin | 집을 보고 온 뒤 집주인에게 메일을 써 보세요. 집이 어땠는지 말하고, 그 집으로 하고 싶다고 쓰고, 궁금한 것을 하나 물어요. 다섯 문장이면 충분해요.
+punkt: 집이 어땠는지 ; 그 집으로 하고 싶다는 말 ; 궁금한 것 하나 ; 다시 만날 수 있는 요일과 시각
+start: Guten Tag, Frau Krause, …
+muster: Guten Tag, Frau Krause, vielen Dank für den Termin am Samstag. Die Wohnung ist groß, hell und ruhig. Ich möchte die Wohnung gern nehmen. Gibt es im Haus einen Platz für Fahrräder? Ich kann am Montag um 17 Uhr kommen. Viele Grüße, Minji Choi
+check: sein 뒤의 형용사를 끝을 바꾸지 않고 썼나요? ; es gibt 뒤에 einen, ein, eine를 맞게 썼나요? ; 요일 앞에 am, 시각 앞에 um을 썼나요? ; Guten Tag, Frau …로 시작하고 끝인사를 썼나요?
+
+-- kann
+Ich kann Wohnungsanzeigen verstehen. | 집 광고를 이해할 수 있어요.
+Ich kann eine Wohnung und ein Zimmer beschreiben. | 집과 방을 설명할 수 있어요.
+Ich kann sagen, wo die Möbel stehen. | 가구가 어디에 있는지 말할 수 있어요.
+Ich kann bei einer Wohnungsbesichtigung Fragen stellen. | 집을 보면서 궁금한 것을 물을 수 있어요.
+
+-- tipp 집 안의 물건에 이름표를 붙여요
+p: 가구와 방 이름은 날마다 보는 것이라 외우기 쉬워요. 쪽지에 der Schrank, die Tür, das Fenster처럼 관사와 함께 적어서 물건에 붙여 두세요. 볼 때마다 한 번씩 소리 내어 읽어요.
+p: 익숙해지면 자리도 말해 봐요. Der Schrank steht neben der Tür. 집 광고 누리집에서 광고를 몇 개 읽어 보는 것도 좋은 연습이에요. 줄임말만 알면 지금 실력으로도 대부분 이해할 수 있어요.

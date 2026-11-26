@@ -1,0 +1,81 @@
+{
+ "job": "e3_ma_03",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Bis Bockenheimer Warte. Und dann?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Ist die Firma weit?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Gut. Und wo ist der Eingang?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Vielen Dank! Bis morgen um zehn."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Mann",
+   "parts": [
+    "Das Zimmer kostet vierhundertfünfzig Euro warm."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Mann",
+   "parts": [
+    "Wie alt ist Ihre Tochter?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Mann",
+   "parts": [
+    "Hat sie auch Fieber?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Mann",
+   "parts": [
+    "Dann nehmen Sie den Hustensaft hier. Er ist gut für Kinder."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Mann",
+   "parts": [
+    "Dreimal am Tag einen Löffel, nach dem Essen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Mann",
+   "parts": [
+    "Nein, Kinder dürfen die Tabletten nicht nehmen. Sie soll viel Tee trinken und viel schlafen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Bis Bockenheimer Warte. Und dann? [pause] Ist die Firma weit? [pause] Gut. Und wo ist der Eingang? [pause] Vielen Dank! Bis morgen um zehn. [pause] Das Zimmer kostet vierhundertfünfzig Euro warm. [pause] Wie alt ist Ihre Tochter? [pause] Hat sie auch Fieber? [pause] Dann nehmen Sie den Hustensaft hier. Er ist gut für Kinder. [pause] Dreimal am Tag einen Löffel, nach dem Essen. [pause] Nein, Kinder dürfen die Tabletten nicht nehmen. Sie soll viel Tee trinken und viel schlafen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

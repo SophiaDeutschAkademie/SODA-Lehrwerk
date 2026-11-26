@@ -1,0 +1,91 @@
+{
+ "job": "e3_n_21",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "die Hand, die Hände.",
+    "Meine Hände sind kalt."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "das Bein, die Beine.",
+    "Meine Beine tun weh."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Fuß, die Füße.",
+    "Mein Fuß tut weh."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Zahn, die Zähne.",
+    "Ich habe Zahnschmerzen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "das Auge, die Augen.",
+    "Meine Augen sind müde."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "das Ohr, die Ohren.",
+    "Mein Ohr tut weh."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "die Nase, die Nasen.",
+    "Die Nase ist rot."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Mund, die Münder.",
+    "Machen Sie bitte den Mund auf."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "krank.",
+    "Ich bin leider krank."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "gesund.",
+    "Hana ist jetzt gesund."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Hand, die Hände. Meine Hände sind kalt. [pause] das Bein, die Beine. Meine Beine tun weh. [pause] der Fuß, die Füße. Mein Fuß tut weh. [pause] der Zahn, die Zähne. Ich habe Zahnschmerzen. [pause] das Auge, die Augen. Meine Augen sind müde. [pause] das Ohr, die Ohren. Mein Ohr tut weh. [pause] die Nase, die Nasen. Die Nase ist rot. [pause] der Mund, die Münder. Machen Sie bitte den Mund auf. [pause] krank. Ich bin leider krank. [pause] gesund. Hana ist jetzt gesund. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

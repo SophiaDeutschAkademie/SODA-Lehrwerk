@@ -1,0 +1,81 @@
+{
+ "job": "e3_ho_02",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Kessler Technik, Hoffmann, guten Morgen!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Oh, das tut mir leid. Was fehlt Ihnen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Und was sagt der Arzt?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Gut. Sie haben heute um vierzehn Uhr einen Termin mit einem Kunden."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Natürlich. Bleiben Sie im Bett. Gute Besserung!"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Hoffmann",
+   "parts": [
+    "Guten Morgen, Herr Park. Sind Sie wieder gesund?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Hoffmann",
+   "parts": [
+    "Schön. Was haben Sie letzte Woche gemacht?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Hoffmann",
+   "parts": [
+    "Haben Sie das Angebot schon geschickt?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Hoffmann",
+   "parts": [
+    "Sehr gut. Und der Bericht?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Hoffmann",
+   "parts": [
+    "Kein Problem. Sie waren ja krank. Können Sie den Bericht bis Mittwoch schreiben?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Kessler Technik, Hoffmann, guten Morgen! [pause] Oh, das tut mir leid. Was fehlt Ihnen? [pause] Und was sagt der Arzt? [pause] Gut. Sie haben heute um vierzehn Uhr einen Termin mit einem Kunden. [pause] Natürlich. Bleiben Sie im Bett. Gute Besserung! [pause] Guten Morgen, Herr Park. Sind Sie wieder gesund? [pause] Schön. Was haben Sie letzte Woche gemacht? [pause] Haben Sie das Angebot schon geschickt? [pause] Sehr gut. Und der Bericht? [pause] Kein Problem. Sie waren ja krank. Können Sie den Bericht bis Mittwoch schreiben? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

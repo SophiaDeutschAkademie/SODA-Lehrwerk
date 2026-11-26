@@ -1,0 +1,89 @@
+{
+ "job": "e3_n_22",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "müde.",
+    "Ich bin sehr müde."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "die Schmerzen.",
+    "Seit wann haben Sie die Schmerzen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "die Kopfschmerzen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "die Halsschmerzen.",
+    "Ich habe Halsschmerzen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "das Fieber.",
+    "Hast du Fieber?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Husten.",
+    "Meine Tochter hat Husten."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Schnupfen.",
+    "Ich habe Schnupfen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "die Erkältung, die Erkältungen.",
+    "Sie haben eine Erkältung."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "wehtun."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "das Medikament, die Medikamente.",
+    "Brauche ich Medikamente?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] müde. Ich bin sehr müde. [pause] die Schmerzen. Seit wann haben Sie die Schmerzen? [pause] die Kopfschmerzen. [pause] die Halsschmerzen. Ich habe Halsschmerzen. [pause] das Fieber. Hast du Fieber? [pause] der Husten. Meine Tochter hat Husten. [pause] der Schnupfen. Ich habe Schnupfen. [pause] die Erkältung, die Erkältungen. Sie haben eine Erkältung. [pause] wehtun. [pause] das Medikament, die Medikamente. Brauche ich Medikamente? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

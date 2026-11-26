@@ -1,0 +1,81 @@
+{
+ "job": "e3_le_02",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Fünfhundertzwanzig Euro warm. Das ist nicht teuer für Frankfurt."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Genau. Und die U-Bahn ist in der Nähe. Das schreiben wir auch."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Es gibt ein Bett und einen Schrank, aber keinen Schreibtisch."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Das Zimmer ist hell und ruhig."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Hallo, hier ist Lena Schmidt."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Ja, das Zimmer ist noch frei. Möchtest du das Zimmer sehen?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Am Samstag passt es gut. Um wie viel Uhr?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Ja, das geht. Hast du noch Fragen?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Ja, im Bad gibt es eine Waschmaschine. Die Kaution ist tausend Euro."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Beispielweg sieben in Bockenheim. Bis Samstag!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Fünfhundertzwanzig Euro warm. Das ist nicht teuer für Frankfurt. [pause] Genau. Und die U-Bahn ist in der Nähe. Das schreiben wir auch. [pause] Es gibt ein Bett und einen Schrank, aber keinen Schreibtisch. [pause] Das Zimmer ist hell und ruhig. [pause] Hallo, hier ist Lena Schmidt. [pause] Ja, das Zimmer ist noch frei. Möchtest du das Zimmer sehen? [pause] Am Samstag passt es gut. Um wie viel Uhr? [pause] Ja, das geht. Hast du noch Fragen? [pause] Ja, im Bad gibt es eine Waschmaschine. Die Kaution ist tausend Euro. [pause] Beispielweg sieben in Bockenheim. Bis Samstag! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

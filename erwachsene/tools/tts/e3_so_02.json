@@ -1,0 +1,81 @@
+{
+ "job": "e3_so_02",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "Sora",
+   "parts": [
+    "Und dann?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Sora",
+   "parts": [
+    "Danke. Und wo kann ich Fahrkarten kaufen?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Sora",
+   "parts": [
+    "Ich fahre mit meiner Tochter. Sie ist acht."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Sora",
+   "parts": [
+    "Gut. Und wo fährt die U vier ab?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Sora",
+   "parts": [
+    "Vielen Dank!"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Sora",
+   "parts": [
+    "Sie ist nicht groß, aber sehr schön. Hier ist ein Foto. Das ist das Wohnzimmer."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Sora",
+   "parts": [
+    "Ja. Und vor dem Sofa steht ein Tisch."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Sora",
+   "parts": [
+    "Das ist ein Bild von Hana. Es hängt über dem Sofa."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Sora",
+   "parts": [
+    "Der Fernseher steht zwischen dem Regal und der Tür."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Sora",
+   "parts": [
+    "Danke! Die Lampe ist neu. Sie steht in der Ecke."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und dann? [pause] Danke. Und wo kann ich Fahrkarten kaufen? [pause] Ich fahre mit meiner Tochter. Sie ist acht. [pause] Gut. Und wo fährt die U vier ab? [pause] Vielen Dank! [pause] Sie ist nicht groß, aber sehr schön. Hier ist ein Foto. Das ist das Wohnzimmer. [pause] Ja. Und vor dem Sofa steht ein Tisch. [pause] Das ist ein Bild von Hana. Es hängt über dem Sofa. [pause] Der Fernseher steht zwischen dem Regal und der Tür. [pause] Danke! Die Lampe ist neu. Sie steht in der Ecke. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

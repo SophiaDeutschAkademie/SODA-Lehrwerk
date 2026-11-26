@@ -1,0 +1,84 @@
+{
+ "job": "e3_n_18",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "hängen.",
+    "Das Bild hängt an der Wand."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "mieten.",
+    "Ich möchte die Wohnung mieten."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "ausziehen.",
+    "Tim zieht nächste Woche aus."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "in, an, auf."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "über, unter."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "vor, hinter."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "neben, zwischen."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "auf dem Tisch, unter dem Tisch, neben der Tür."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "im Regal, am Fenster, an der Wand."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Zimmer, Quadratmeter, Wohngemeinschaft."
+   ]
+  }
+ ],
+ "script": "Also. [pause] hängen. Das Bild hängt an der Wand. [pause] mieten. Ich möchte die Wohnung mieten. [pause] ausziehen. Tim zieht nächste Woche aus. [pause] in, an, auf. [pause] über, unter. [pause] vor, hinter. [pause] neben, zwischen. [pause] auf dem Tisch, unter dem Tisch, neben der Tür. [pause] im Regal, am Fenster, an der Wand. [pause] Zimmer, Quadratmeter, Wohngemeinschaft. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

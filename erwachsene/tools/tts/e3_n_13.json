@@ -1,0 +1,82 @@
+{
+ "job": "e3_n_13",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Wir steigen an der Station Stadtmitte um."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Steigen Sie am Hauptbahnhof um."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Wie komme ich zum Bahnhof?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Die Kinder spielen auf dem Platz."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Die Wohnung hat drei Zimmer."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Gibt es einen Balkon?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Das Zimmer ist klein, aber hell."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Wie hoch ist die Miete?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Wohnung, die Wohnungen."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Haus, die Häuser.",
+    "Das Haus ist alt, aber schön."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wir steigen an der Station Stadtmitte um. [pause] Steigen Sie am Hauptbahnhof um. [pause] Wie komme ich zum Bahnhof? [pause] Die Kinder spielen auf dem Platz. [pause] Die Wohnung hat drei Zimmer. [pause] Gibt es einen Balkon? [pause] Das Zimmer ist klein, aber hell. [pause] Wie hoch ist die Miete? [pause] die Wohnung, die Wohnungen. [pause] das Haus, die Häuser. Das Haus ist alt, aber schön. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

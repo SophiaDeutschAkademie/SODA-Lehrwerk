@@ -1,0 +1,81 @@
+{
+ "job": "e3_do_03",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "Dohyun",
+   "parts": [
+    "Also tausendsechshundert Euro warm. Das ist nicht günstig. Und die Kaution?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Dohyun",
+   "parts": [
+    "Die Wohnung ist sehr schön. Ich möchte die Wohnung gern nehmen."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Dohyun",
+   "parts": [
+    "Die Wohnung ist schön, aber sie ist leider zu teuer."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Dohyun",
+   "parts": [
+    "Gibt es einen Balkon?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Dohyun",
+   "parts": [
+    "Guten Tag, Frau Doktor Neumann. Ich habe Halsschmerzen und Husten. Und ich bin sehr müde."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Dohyun",
+   "parts": [
+    "Seit drei Tagen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Dohyun",
+   "parts": [
+    "Ja, achtunddreißig fünf."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Dohyun",
+   "parts": [
+    "Darf ich morgen arbeiten?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Dohyun",
+   "parts": [
+    "Brauche ich Medikamente?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Dohyun",
+   "parts": [
+    "Vielen Dank, Frau Doktor."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Also tausendsechshundert Euro warm. Das ist nicht günstig. Und die Kaution? [pause] Die Wohnung ist sehr schön. Ich möchte die Wohnung gern nehmen. [pause] Die Wohnung ist schön, aber sie ist leider zu teuer. [pause] Gibt es einen Balkon? [pause] Guten Tag, Frau Doktor Neumann. Ich habe Halsschmerzen und Husten. Und ich bin sehr müde. [pause] Seit drei Tagen. [pause] Ja, achtunddreißig fünf. [pause] Darf ich morgen arbeiten? [pause] Brauche ich Medikamente? [pause] Vielen Dank, Frau Doktor. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

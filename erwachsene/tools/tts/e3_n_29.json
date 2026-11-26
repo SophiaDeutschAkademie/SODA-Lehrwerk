@@ -1,0 +1,91 @@
+{
+ "job": "e3_n_29",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "die Stelle, die Stellen.",
+    "Sora sucht eine Stelle."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "der Lebenslauf, die Lebensläufe.",
+    "Haben Sie einen Lebenslauf?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "der Bericht, die Berichte.",
+    "Ich habe den Bericht geschrieben."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "das Angebot, die Angebote.",
+    "Ich habe das Angebot geschickt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "als.",
+    "Ich habe als Designerin gearbeitet."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "fertig.",
+    "Der Bericht ist noch nicht fertig."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "interessant.",
+    "Das Projekt war interessant."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "anstrengend.",
+    "Die Woche war anstrengend."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "langweilig.",
+    "Der Film war langweilig."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "toll.",
+    "Das Wochenende war toll!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Stelle, die Stellen. Sora sucht eine Stelle. [pause] der Lebenslauf, die Lebensläufe. Haben Sie einen Lebenslauf? [pause] der Bericht, die Berichte. Ich habe den Bericht geschrieben. [pause] das Angebot, die Angebote. Ich habe das Angebot geschickt. [pause] als. Ich habe als Designerin gearbeitet. [pause] fertig. Der Bericht ist noch nicht fertig. [pause] interessant. Das Projekt war interessant. [pause] anstrengend. Die Woche war anstrengend. [pause] langweilig. Der Film war langweilig. [pause] toll. Das Wochenende war toll! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

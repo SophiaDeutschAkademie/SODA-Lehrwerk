@@ -1,0 +1,74 @@
+{
+ "job": "e3_do_01",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Frau Hoffmann, haben Sie kurz Zeit?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Die Besprechung ist am Dienstag um zehn. Aber am Dienstag muss ich einen Kunden besuchen. Können wir den Termin verschieben?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Am Mittwochvormittag habe ich schon einen Termin. Aber am Nachmittag kann ich."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Ja, das geht. Vielen Dank!"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Ich kann Markus eine E-Mail schreiben."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Können wir die Besprechung am Freitag machen? Am Donnerstag kann ich nicht."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Können wir den Termin verschieben?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Guten Tag, Herr Schneider! Kommen Sie mit dem Auto oder mit dem Zug?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Gut. Nehmen Sie am Hauptbahnhof die U vier bis Bockenheimer Warte. Das sind nur zwei Stationen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Frau Hoffmann, haben Sie kurz Zeit? [pause] Die Besprechung ist am Dienstag um zehn. Aber am Dienstag muss ich einen Kunden besuchen. Können wir den Termin verschieben? [pause] Am Mittwochvormittag habe ich schon einen Termin. Aber am Nachmittag kann ich. [pause] Ja, das geht. Vielen Dank! [pause] Ich kann Markus eine E-Mail schreiben. [pause] Können wir die Besprechung am Freitag machen? Am Donnerstag kann ich nicht. [pause] Können wir den Termin verschieben? [pause] Guten Tag, Herr Schneider! Kommen Sie mit dem Auto oder mit dem Zug? [pause] Gut. Nehmen Sie am Hauptbahnhof die U vier bis Bockenheimer Warte. Das sind nur zwei Stationen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

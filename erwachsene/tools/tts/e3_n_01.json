@@ -1,0 +1,86 @@
+{
+ "job": "e3_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Hast du am Samstag Zeit?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Ich kann leider nicht."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Ich muss am Freitag arbeiten."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Ich möchte einen Termin vereinbaren."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "der Termin, die Termine.",
+    "Ich habe um zehn einen Termin."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Zeit."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "der Kalender, die Kalender.",
+    "Ist der Termin im Kalender?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Praxis, die Praxen.",
+    "Die Praxis hat am Mittwoch keinen Termin frei."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "der Arzttermin, die Arzttermine.",
+    "Ich habe morgen einen Arzttermin."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Sprechstunde, die Sprechstunden.",
+    "Die Sprechstunde ist von neun bis zwölf."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hast du am Samstag Zeit? [pause] Ich kann leider nicht. [pause] Ich muss am Freitag arbeiten. [pause] Ich möchte einen Termin vereinbaren. [pause] der Termin, die Termine. Ich habe um zehn einen Termin. [pause] die Zeit. [pause] der Kalender, die Kalender. Ist der Termin im Kalender? [pause] die Praxis, die Praxen. Die Praxis hat am Mittwoch keinen Termin frei. [pause] der Arzttermin, die Arzttermine. Ich habe morgen einen Arzttermin. [pause] die Sprechstunde, die Sprechstunden. Die Sprechstunde ist von neun bis zwölf. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

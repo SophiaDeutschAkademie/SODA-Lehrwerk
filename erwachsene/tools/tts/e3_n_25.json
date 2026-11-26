@@ -1,0 +1,81 @@
+{
+ "job": "e3_n_25",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Mein Bauch tut weh. Ich habe Bauchschmerzen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Mein Rücken tut weh. Ich habe Rückenschmerzen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Meine Beine tun weh. Meine Augen tun weh."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Hals, Tablette, schlafen, leider"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Rücken, Rezept, rot, krank"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "drei, trinken, Praxis"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Bleib im Bett und trink viel Tee!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Die Ärztin sagt, ich soll im Bett bleiben."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Sie dürfen bis Freitag nicht arbeiten."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Bleib heute zu Hause!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Mein Bauch tut weh. Ich habe Bauchschmerzen. [pause] Mein Rücken tut weh. Ich habe Rückenschmerzen. [pause] Meine Beine tun weh. Meine Augen tun weh. [pause] Hals, Tablette, schlafen, leider [pause] Rücken, Rezept, rot, krank [pause] drei, trinken, Praxis [pause] Bleib im Bett und trink viel Tee! [pause] Die Ärztin sagt, ich soll im Bett bleiben. [pause] Sie dürfen bis Freitag nicht arbeiten. [pause] Bleib heute zu Hause! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

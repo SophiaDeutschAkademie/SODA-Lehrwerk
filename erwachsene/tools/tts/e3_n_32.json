@@ -1,0 +1,74 @@
+{
+ "job": "e3_n_32",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Ich habe am Samstag eingekauft."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Was haben Sie letzte Woche gemacht?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Ich habe zehn Jahre als Designerin gearbeitet."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Ich habe Deutsch gelernt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Wir haben viel Fisch gegessen."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Lena hat ihre Schwestern besucht."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Wann sind Sie nach Deutschland gekommen?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Wir sind nach Hamburg gefahren."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Ich war drei Tage krank."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich habe am Samstag eingekauft. [pause] Was haben Sie letzte Woche gemacht? [pause] Ich habe zehn Jahre als Designerin gearbeitet. [pause] Ich habe Deutsch gelernt. [pause] Wir haben viel Fisch gegessen. [pause] Lena hat ihre Schwestern besucht. [pause] Wann sind Sie nach Deutschland gekommen? [pause] Wir sind nach Hamburg gefahren. [pause] Ich war drei Tage krank. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

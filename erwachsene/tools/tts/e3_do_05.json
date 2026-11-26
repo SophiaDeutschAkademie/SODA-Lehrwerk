@@ -1,0 +1,25 @@
+{
+ "job": "e3_do_05",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "Dohyun",
+   "parts": [
+    "Am Sonntag bin ich mit dem Zug nach Heidelberg gefahren. Die Stadt ist sehr schön. Und du?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Dohyun",
+   "parts": [
+    "Ich habe den Bericht geschrieben."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Am Sonntag bin ich mit dem Zug nach Heidelberg gefahren. Die Stadt ist sehr schön. Und du? [pause] Ich habe den Bericht geschrieben. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

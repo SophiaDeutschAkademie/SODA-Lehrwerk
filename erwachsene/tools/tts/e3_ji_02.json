@@ -1,0 +1,81 @@
+{
+ "job": "e3_ji_02",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Entschuldigung, wo ist die Post?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Jiu",
+   "parts": [
+    "Oh! Dann schreiben wir eine Anzeige. Wie groß ist sein Zimmer?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Jiu",
+   "parts": [
+    "Gibt es Möbel im Zimmer?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Jiu",
+   "parts": [
+    "Und wie hoch ist die Miete?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Jiu",
+   "parts": [
+    "Stimmt. Und die Küche und das Bad sind neu."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Jiu",
+   "parts": [
+    "Gut. Ich mache heute Abend Fotos."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Jiu",
+   "parts": [
+    "Mein Zimmer ist klein, aber hell. Das Bett steht rechts an der Wand."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Jiu",
+   "parts": [
+    "Der Schreibtisch steht am Fenster. Auf dem Schreibtisch liegt mein Laptop."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Jiu",
+   "parts": [
+    "Neben der Tür steht ein Schrank. Und über dem Bett hängen Fotos von meiner Familie."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Ich habe Kopfschmerzen und mein Hals tut weh."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Entschuldigung, wo ist die Post? [pause] Oh! Dann schreiben wir eine Anzeige. Wie groß ist sein Zimmer? [pause] Gibt es Möbel im Zimmer? [pause] Und wie hoch ist die Miete? [pause] Stimmt. Und die Küche und das Bad sind neu. [pause] Gut. Ich mache heute Abend Fotos. [pause] Mein Zimmer ist klein, aber hell. Das Bett steht rechts an der Wand. [pause] Der Schreibtisch steht am Fenster. Auf dem Schreibtisch liegt mein Laptop. [pause] Neben der Tür steht ein Schrank. Und über dem Bett hängen Fotos von meiner Familie. [pause] Ich habe Kopfschmerzen und mein Hals tut weh. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

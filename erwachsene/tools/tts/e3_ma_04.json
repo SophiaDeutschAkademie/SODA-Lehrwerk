@@ -1,0 +1,53 @@
+{
+ "job": "e3_ma_04",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "Mann",
+   "parts": [
+    "Sechs Euro fünfundneunzig. Gute Besserung für Ihre Tochter!"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Mann",
+   "parts": [
+    "Hallo! Was hast du letztes Semester gemacht?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Mann",
+   "parts": [
+    "Fünf Kurse! Hattest du auch Prüfungen?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Mann",
+   "parts": [
+    "Und was hast du in den Ferien gemacht?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Mann",
+   "parts": [
+    "Wann bist du nach Deutschland gekommen?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Mann",
+   "parts": [
+    "Warst du schon einmal in Berlin?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Sechs Euro fünfundneunzig. Gute Besserung für Ihre Tochter! [pause] Hallo! Was hast du letztes Semester gemacht? [pause] Fünf Kurse! Hattest du auch Prüfungen? [pause] Und was hast du in den Ferien gemacht? [pause] Wann bist du nach Deutschland gekommen? [pause] Warst du schon einmal in Berlin? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

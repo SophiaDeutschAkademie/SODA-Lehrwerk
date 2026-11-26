@@ -1,0 +1,81 @@
+{
+ "job": "e3_do_02",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Nein. Gehen Sie an der Station rechts und nehmen Sie dann die zweite Straße links. Das ist die Musterstraße."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Die Firma ist in der Musterstraße zwölf, bei der Apotheke."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Nur fünf Minuten. Rufen Sie bitte an, dann komme ich zum Eingang."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Nein, ich wohne in der Nähe. Ich gehe zu Fuß. Ich brauche nur fünfzehn Minuten."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Fährst du nie mit dem Auto?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Ich fahre mit der U-Bahn."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Dohyun",
+   "parts": [
+    "Guten Tag, Frau Krause. Vielen Dank!"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Dohyun",
+   "parts": [
+    "Das Wohnzimmer ist groß und sehr hell. Gibt es auch einen Balkon?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Dohyun",
+   "parts": [
+    "Schön. Gibt es einen Keller?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Dohyun",
+   "parts": [
+    "Wie hoch ist die Miete?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Nein. Gehen Sie an der Station rechts und nehmen Sie dann die zweite Straße links. Das ist die Musterstraße. [pause] Die Firma ist in der Musterstraße zwölf, bei der Apotheke. [pause] Nur fünf Minuten. Rufen Sie bitte an, dann komme ich zum Eingang. [pause] Nein, ich wohne in der Nähe. Ich gehe zu Fuß. Ich brauche nur fünfzehn Minuten. [pause] Fährst du nie mit dem Auto? [pause] Ich fahre mit der U-Bahn. [pause] Guten Tag, Frau Krause. Vielen Dank! [pause] Das Wohnzimmer ist groß und sehr hell. Gibt es auch einen Balkon? [pause] Schön. Gibt es einen Keller? [pause] Wie hoch ist die Miete? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

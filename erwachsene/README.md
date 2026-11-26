@@ -1,6 +1,6 @@
 # 성인 교재 두 권: SODA Studium, SODA Beruf
 
-성인 학습자를 위한 독일어 교재 두 권의 원고와 도구가 있는 폴더입니다. 지금은 목차와 공통 과정 A1.1의 1과부터 5과까지 본문이 있고, 둘 다 비공개입니다. 본문 음성은 2026.11.25에 Eleven v3로 만들어 넣었습니다(669줄).
+성인 학습자를 위한 독일어 교재 두 권의 원고와 도구가 있는 폴더입니다. 지금은 목차와 공통 과정 열 과(A1.1의 1과부터 6과, A1.2의 1과부터 4과)의 본문이 있고, 둘 다 비공개입니다. 본문 음성은 Eleven v3로 만들어 넣었습니다(2026.11.25에 A1.1의 다섯 과, 2026.11.26에 그다음 다섯 과, 모두 1,488줄).
 
 | 교재 | 이름 | 대상 | 범위 | 목차 주소 |
 |---|---|---|---|---|
@@ -9,7 +9,7 @@
 
 Lehrwerk 목차에서는 두 교재 모두 「작업 중」 칸으로 보이고 링크가 없습니다. 위 주소를 직접 열면 목차를 볼 수 있습니다.
 
-본문이 있는 과 (2026.11.24): A1.1 Lektion 1 Guten Tag!, 2 Beruf und Studium, 3 Familie und Freunde, 4 Einkaufen, 5 Mein Tag. 주소는 `studium/a1-1/1/` … `studium/a1-1/5/`, `beruf/a1-1/1/` … `beruf/a1-1/5/`입니다. 두 교재의 대화, 낱말, 문법, 연습은 같고 여섯째 순서 Aufgabe의 과제만 다릅니다. Lektion 6, Wiederholung 두 개, Stufentest는 아직 없습니다.
+본문이 있는 과 (2026.11.26): A1.1 Lektion 1 Guten Tag!, 2 Beruf und Studium, 3 Familie und Freunde, 4 Einkaufen, 5 Mein Tag, 6 Termine, A1.2 Lektion 1 In der Stadt, 2 Meine Wohnung, 3 Gesundheit, 4 Was haben Sie gemacht? 주소는 `studium/a1-1/1/` … `studium/a1-1/6/`, `studium/a1-2/1/` … `studium/a1-2/4/`이고 `beruf/` 아래도 같습니다. 두 교재의 대화, 낱말, 문법, 연습은 같고 여섯째 순서 Aufgabe의 과제만 다릅니다. A1.1의 Wiederholung 두 개와 Stufentest, A1.2의 5과부터는 아직 없습니다. 그래서 A1.1 6과 끝의 「다음」 단추는 A1.2 1과로 바로 갑니다(`site` 는 단계의 마지막 화면을 그 뒤에 열려 있는 첫 화면으로 잇습니다).
 
 ## 구조
 
@@ -49,7 +49,7 @@ C1 Hochschule 단계는 긴 글과 강의가 중심이라, 본문을 만들 때 
 
 ## 설정
 
-무대는 프랑크푸르트입니다. 세 사람이 함께 나와서 두 교재가 같은 이야기를 씁니다. A1.1의 1과부터 5과까지 아래 설정으로 썼습니다.
+무대는 프랑크푸르트입니다. 세 사람이 함께 나와서 두 교재가 같은 이야기를 씁니다. 지금까지 쓴 열 과를 아래 설정으로 썼습니다. 교재 속의 지금은 2026년입니다.
 
 | 인물 | 설정 |
 |---|---|
@@ -61,11 +61,13 @@ C1 Hochschule 단계는 긴 글과 강의가 중심이라, 본문을 만들 때 
 | Markus Weber | Dohyun의 동료 Ingenieur. Hamburg 출신. 딸 Mia(8살), 아들 Paul(3살) |
 | Frau Hoffmann | Dohyun의 팀장. Köln 출신. Deutsch, Englisch, Französisch를 함 |
 
-- 그 밖에 나오는 사람: 어학원 수강생 Carlos García(스페인, Offenbach)와 Ewa Nowak(폴란드, Mainz), 어학원 사무실의 Frau Wagner, Kessler Technik의 동료 Frau Schulz(Sabine Schulz), 업무 행사에서 만나는 Herr Schneider.
+- 그 밖에 나오는 사람: 어학원 수강생 Carlos García(스페인, Offenbach)와 Ewa Nowak(폴란드, Mainz), 어학원 사무실의 Frau Wagner, Kessler Technik의 동료 Frau Schulz(Sabine Schulz), 거래처의 Herr Schneider(Peter Schneider. A1.1 2과의 업무 행사에서 처음 만나고 A1.2 1과에서 회사로 찾아옴), 의사 Dr. Neumann(여자. Sora의 딸 Hana와 Dohyun이 가는 병원), 집주인 Frau Krause, Jiu와 Lena의 WG에서 이사 나가는 Tim.
+- A1.1 6과부터 A1.2 4과까지 더한 설정: Kessler Technik은 U4 Bockenheimer Warte 역에서 걸어서 5분, 약국 근처입니다(중앙역에서 두 정거장). WG의 빈방은 16 qm, 520유로 warm이고 과제에 나오는 WG 주소는 Beispielweg 7입니다. Dohyun이 가족과 살려고 본 집은 방 3개, 78 qm, Kaltmiete 1.350유로, Nebenkosten 250유로, Kaution은 석 달 치 Kaltmiete입니다. Sora는 서울에서 Design을 전공하고(2007–2011) 가구 회사에서 10년 동안 Designerin으로 일했고(2011–2021), 여섯 달 전에 독일에 와서 지금 일자리를 찾습니다. Lena는 주말에 Hamburg의 언니들에게 다녀왔고, Dohyun의 고객은 Mainz에 있습니다.
+- 바뀔 수 있는 사실은 쓰기 전에 확인했습니다(2026.11.26): RMV 프랑크푸르트 Einzelfahrkarte 어른 3,80유로, 어린이 1,55유로. U4는 Bockenheimer Warte, Festhalle/Messe, Hauptbahnhof, Willy-Brandt-Platz, Dom/Römer, Konstablerwache 순서로 서고, Zoo 역은 Konstablerwache 다음 역으로 U6와 U7이 섭니다. Deutschlandticket은 값이 해마다 바뀌어서 값을 적지 않았습니다. 요금이 바뀌면 A1.2 1과의 대화 B, 듣기 문제, 받아쓰기를 고치고 그 줄의 음성을 다시 만듭니다.
 - Kessler Technik은 지어낸 회사입니다. 주소는 견본 주소 Musterstraße 12, 60487 Frankfurt am Main, 전화번호는 드라마용 번호(0176 040690xx, 069 90009-xxx), 이메일은 example.com과 example.org를 씁니다.
 - 과제의 예시 답에 나오는 학습자는 Minji Choi(대구 출신, 프랑크푸르트 거주)입니다.
 - du로 나눈 어른들의 대화도 한국어 뜻은 '해요'로 옮깁니다. 까닭은 1과의 「Leben in Deutschland」에 적었습니다.
-- 이름과 설정은 6과부터 이어 쓰기 전에는 바꿀 수 있습니다. 바꾸면 다섯 과의 원고와 그림 설명(`tools/lektion.py`의 `WHO`)을 함께 고칩니다.
+- 이름과 설정을 바꾸면 지금까지 쓴 과의 원고와 그림 설명(`tools/lektion.py`의 `WHO`)을 함께 고치고, 바뀐 줄의 음성을 다시 만듭니다.
 
 ## 학원 자료와 맞춰 본 것
 
@@ -157,7 +159,7 @@ erwachsene/tools/tts/          그림 설명 묶음(*.prompts.json). 음성을 �
 erwachsene/tools/open.json     본문이 있는 과 목록 (site 가 씁니다. 목차 빌드가 읽어서 링크를 겁니다)
 erwachsene/lektion.css, lektion.js   과 화면의 모양과 동작 (두 교재가 함께 씁니다)
 erwachsene/img/                과 그림: 단계/과/szene.webp(장면), c1.webp …(낱말 그림), c/(인물 얼굴)
-erwachsene/audio/              과 음성(mp3, 한 줄에 파일 하나, 14MB)
+erwachsene/audio/              과 음성(mp3, 한 줄에 파일 하나, 31MB)
 erwachsene/fonts/              독일어 글꼴 DM Sans(라틴 글자만)와 사용 허가서 OFL.txt
 studium/, beruf/               빌드 결과 (index.html, manifest.webmanifest, icons/, 단계/과/index.html)
 ```
@@ -206,12 +208,14 @@ studium/, beruf/               빌드 결과 (index.html, manifest.webmanifest, 
 
 2026.11.24에 다섯 과의 그림 15장을 만들었습니다(장면 5, 낱말 그림 묶음 6, 인물 2, 다시 그린 것 2). 4과의 Brötchen 그림은 생성된 그림이 달걀처럼 보여서 칼집을 직접 그려 넣었습니다.
 
+2026.11.26에 그다음 다섯 과의 그림 15장을 만들었습니다(장면 5, 낱말 그림 묶음 8, 다시 그린 것 2). 사람 얼굴에 눈, 코, 입이 없거나 뒷모습으로 나온 낱말 그림은 다시 그렸습니다(A1.2 4과의 묶음 전체, A1.2 1과의 Bahnhof, U-Bahn, Fahrrad, Fahrkarte). 낱말 그림 하나만 바꿀 때는 `단계_번호_c번호.webp` 로 저장해서 `img` 에 주면 그 그림만 바뀝니다. 사람이 나오는 그림 설명에는 `face with clearly drawn eyes, nose and mouth` 를 적습니다. A1.1 6과의 Praxis 그림은 책상 위 물건에 깨진 글자가 있어서 그 글자만 지웠습니다.
+
 ### 음성을 만들 때
 
-A1.1 음성은 2026.11.25에 만들었습니다. `status.json` 의 `ohne_audio` 는 비어 있습니다. 새 단계를 음성 없이 먼저 올릴 때는 그 단계 id를 `ohne_audio` 에 적습니다. 그러면 화면 위에 「음성은 준비 중이에요」 안내가 나오고, 듣기 단추는 눌리지 않고, 듣고 푸는 문제에는 들려줄 글이 보이고, 받아쓰기는 문장만 보이고, 역할 대화는 상대의 말을 읽고 넘어갑니다.
+A1.1의 1과부터 5과 음성은 2026.11.25에, A1.1 6과와 A1.2의 1과부터 4과 음성은 2026.11.26에 만들었습니다(뒤의 다섯 과는 64묶음, 쉼 표시 포함 약 33,000자). `status.json` 의 `ohne_audio` 는 비어 있습니다. 새 단계를 음성 없이 먼저 올릴 때는 그 단계 id를 `ohne_audio` 에 적습니다. 그러면 화면 위에 「음성은 준비 중이에요」 안내가 나오고, 듣기 단추는 눌리지 않고, 듣고 푸는 문제에는 들려줄 글이 보이고, 받아쓰기는 문장만 보이고, 역할 대화는 상대의 말을 읽고 넘어갑니다.
 
 1. `python3 erwachsene/tools/lektion.py tts 이름 단계` 로 음성이 없는 줄만 모아 음성 목록을 만듭니다(다섯 과는 54묶음, 쉼 표시 포함 약 24,000자, 글자 수만큼 크레딧이 듭니다).
 2. ElevenLabs flow `ey7DgxIxSWctcTQ7kvGQ`(Eleven v3, `language_code` de)의 TTS 노드 10개에 묶음을 넣어 만들고, 모두 끝난 뒤 낱말 시각 정렬 노드를 돌립니다(음성이 끝나기 전에 돌리면 크레딧이 듭니다). 받은 파일을 `python3 erwachsene/tools/lektion.py cut 폴더` 로 잘라 `erwachsene/audio/` 에 넣습니다. 방법은 청소년 교재(`jugend/README.md`)와 같습니다.
 3. `status.json` 의 `ohne_audio` 에서 그 단계를 빼고 `site` 와 목차 빌드를 다시 실행합니다.
 
-정해 둔 목소리(`tools/lektion.py`의 `CAST`): Jiu는 Leni, Dohyun은 Andrew, Sora는 Ithaka, Lena는 Lucy, Frau Becker는 Melissa, Markus는 Jonas, Frau Hoffmann은 Bettina, 이름 없는 여자는 Ela, 이름 없는 남자는 Ben, 해설은 Toni. 목소리 설명만 보고 골랐고 만든 음성을 들어 보지는 않았습니다. Dohyun은 처음 고른 Andreas가 소유자에 의해 비활성화되어 있어 Andrew(bNFIvb6Gmmlk9QMIWo7U)로 바꿨습니다.
+정해 둔 목소리(`tools/lektion.py`의 `CAST`): Jiu는 Nadine, Dohyun은 Andrew, Sora는 Ithaka, Lena는 Lucy, Frau Becker는 Melissa, Markus는 Jonas, Frau Hoffmann은 Bettina, 이름 없는 여자는 Ela, 이름 없는 남자는 Ben, 해설은 Toni. 목소리 설명만 보고 골랐고 만든 음성을 들어 보지는 않았습니다. Dohyun은 처음 고른 Andreas가 소유자에 의해 비활성화되어 있어 Andrew(bNFIvb6Gmmlk9QMIWo7U)로 바꿨습니다. Jiu는 처음에 Leni였는데 2026.11.26에 그 목소리도 소유자가 비활성화해서 Nadine(XFigb6fqZPxl2Q2dFOXN)으로 바꾸고, 한 사람의 목소리가 과마다 달라지지 않게 A1.1 1과부터 5과의 Jiu 대사 29줄도 같은 목소리로 다시 만들어 바꿨습니다. 목소리가 비활성화되면 그 묶음만 실패하고 크레딧은 들지 않습니다. 묶음을 다시 만들 때는 `tts` 를 같은 이름으로 다시 실행하지 않습니다(묶음 번호가 바뀝니다). Lena의 Lucy는 글자당 크레딧이 다른 목소리의 약 2.5배입니다.

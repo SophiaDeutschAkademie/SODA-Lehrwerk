@@ -1,0 +1,74 @@
+{
+ "job": "e3_fr_03",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Die Wohnung hat drei Zimmer, eine Küche und ein Bad. Hier links ist das Wohnzimmer."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Ja, der Balkon ist hier. Und rechts sind das Schlafzimmer und das Kinderzimmer."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Nein, leider gibt es keinen Keller. Aber im Bad gibt es einen Platz für die Waschmaschine."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Die Miete ist tausenddreihundertfünfzig Euro kalt. Die Nebenkosten sind zweihundertfünfzig Euro."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Drei Monatsmieten. Die Wohnung ist ab sofort frei."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Die Wohnung hat zwei Zimmer, eine Küche und ein Bad. Sie ist fünfundfünfzig Quadratmeter groß."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag! Das ist die Wohnung. Wie finden Sie das Wohnzimmer?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Nein, leider gibt es keinen Keller. Haben Sie noch Fragen?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Nein, aber im Bad gibt es einen Platz für die Waschmaschine."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Die Wohnung hat drei Zimmer, eine Küche und ein Bad. Hier links ist das Wohnzimmer. [pause] Ja, der Balkon ist hier. Und rechts sind das Schlafzimmer und das Kinderzimmer. [pause] Nein, leider gibt es keinen Keller. Aber im Bad gibt es einen Platz für die Waschmaschine. [pause] Die Miete ist tausenddreihundertfünfzig Euro kalt. Die Nebenkosten sind zweihundertfünfzig Euro. [pause] Drei Monatsmieten. Die Wohnung ist ab sofort frei. [pause] Die Wohnung hat zwei Zimmer, eine Küche und ein Bad. Sie ist fünfundfünfzig Quadratmeter groß. [pause] Guten Tag! Das ist die Wohnung. Wie finden Sie das Wohnzimmer? [pause] Nein, leider gibt es keinen Keller. Haben Sie noch Fragen? [pause] Nein, aber im Bad gibt es einen Platz für die Waschmaschine. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

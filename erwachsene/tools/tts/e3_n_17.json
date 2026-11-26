@@ -1,0 +1,91 @@
+{
+ "job": "e3_n_17",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "groß.",
+    "Das Wohnzimmer ist groß."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "klein.",
+    "Mein Zimmer ist klein."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "hell.",
+    "Die Küche ist hell."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "dunkel.",
+    "Der Flur ist dunkel."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "ruhig.",
+    "Die Straße ist ruhig."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "laut.",
+    "Die Wohnung ist leider laut."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "neu.",
+    "Das Bad ist neu."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "es gibt.",
+    "Es gibt einen Balkon."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "stehen.",
+    "Das Sofa steht am Fenster."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "liegen.",
+    "Das Foto liegt auf dem Tisch."
+   ]
+  }
+ ],
+ "script": "Also. [pause] groß. Das Wohnzimmer ist groß. [pause] klein. Mein Zimmer ist klein. [pause] hell. Die Küche ist hell. [pause] dunkel. Der Flur ist dunkel. [pause] ruhig. Die Straße ist ruhig. [pause] laut. Die Wohnung ist leider laut. [pause] neu. Das Bad ist neu. [pause] es gibt. Es gibt einen Balkon. [pause] stehen. Das Sofa steht am Fenster. [pause] liegen. Das Foto liegt auf dem Tisch. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -26,7 +26,7 @@ MAXCHARS = 760
 
 # 화자: 화면 이름, 음성(ElevenLabs voice_id), 음성 파일 머리글자, 얼굴 그림
 CAST = {
-    'Jiu':      dict(name='Jiu', voice='WzPl01KDMCPMOyx39EfF', vname='Leni', pre='ji', av='jiu'),
+    'Jiu':      dict(name='Jiu', voice='XFigb6fqZPxl2Q2dFOXN', vname='Nadine', pre='ji', av='jiu'),
     'Dohyun':   dict(name='Dohyun', voice='bNFIvb6Gmmlk9QMIWo7U', vname='Andrew', pre='do', av='dohyun'),
     'Sora':     dict(name='Sora', voice='b07hJVVJyFDBHxFNr1Qb', vname='Ithaka', pre='so', av='sora'),
     'Lena':     dict(name='Lena', voice='MiVAi0PlB7YlXfCDRCkq', vname='Lucy', pre='le', av='lena'),
@@ -431,7 +431,7 @@ def parse(path):
 
 def lemma_info(lemma):
     """('der', 'der Name', ', die Namen', 말할 글)"""
-    forms = re.search(r'\((du [^)]*)\)', lemma)                  # 모음이 바뀌는 동사는 du, er 형태도 함께 말한다
+    forms = re.search(r'\(((?:du|hat|ist) [^)]*)\)', lemma)      # 모음이 바뀌는 동사는 du, er 형태를, Perfekt 를 배우는 과의 동사는 hat/ist + 과거분사를 함께 말한다
     spoken = re.sub(r'\s*\([^)]*\)', '', lemma).strip()
     m = re.match(r'^(der|die|das) ', spoken)
     art = m.group(1) if m else ''
@@ -1423,7 +1423,7 @@ class Page:
                         kz = lambda j, c: ' class="kz"' if j == 0 and len(plain(c)) <= 9 else ''     # 짧은 첫 칸은 줄을 바꾸지 않는다
                         trs += '<tr>%s</tr>' % ''.join(('<th scope="row" lang="%s"%s>%s</th>' % (mix(c)[1], kz(j, c), mix(c)[0])) if j == 0 and not head[0]
                                                        else '<td lang="%s"%s>%s</td>' % (mix(c)[1], kz(j, c), mix(c)[0]) for j, c in enumerate(r))
-                    tab = '<div class="scroll"><table class="gt">%s</table></div>' % trs
+                    tab = '<div class="scroll"><table class="gt%s">%s</table></div>' % (' c4' if len(head) >= 4 else '', trs)      # 네 칸 이상인 표는 아주 좁은 화면에서 글자와 여백을 조금 더 줄인다
                 # 성인 교재는 규칙과 표를 바로 보여 주고, 그 뒤에 확인 물음을 둔다
                 h += ('<article class="gp"><h3><span lang="de">%s</span><small>%s</small></h3><ul class="bsp">%s</ul><div class="regel"><p class="regel-l">규칙</p><p>%s</p>%s%s</div>%s</article>'
                       % (E(b['de']), ko(b['ko']), bsp, ko(b['regel']), tab, ('<p class="merke"><b>주의</b> %s</p>' % ko(b['merke'])) if b['merke'] else '', finde))
@@ -1681,8 +1681,8 @@ def cmd_site(draft=False):
             i = ids.index(p['id'])
             prev = next((allp[k] for k in range(i - 1, -1, -1) if allp[k]['id'] in ok and allp[k]['lv']['id'] == p['lv']['id']), None)
             nxt = next((allp[k] for k in range(i + 1, len(allp)) if allp[k]['id'] in ok and allp[k]['lv']['id'] == p['lv']['id']), None)
-            if nxt is None and i + 1 < len(allp) and allp[i + 1]['id'] in ok:      # 단계의 마지막 화면: 다음 단계의 첫 과가 열려 있으면 그리로 잇는다
-                nxt = allp[i + 1]
+            if nxt is None:      # 단계의 마지막 화면: 그 뒤에 열려 있는 첫 화면(다음 단계)으로 잇는다. 아직 만들지 않은 복습·평가는 건너뛴다
+                nxt = next((allp[k] for k in range(i + 1, len(allp)) if allp[k]['id'] in ok), None)
             pg = Page(p, L, book, draft)
             pg.prev = next(((q, M) for q, M in mine if q['lv']['id'] == p['lv']['id'] and q['typ'] == 'lektion' and q['nr'] == p['nr'] - 1), None)
             out = pg.render(tpl, (prev, nxt))

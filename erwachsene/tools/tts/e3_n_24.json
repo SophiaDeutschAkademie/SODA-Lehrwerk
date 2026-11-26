@@ -1,0 +1,88 @@
+{
+ "job": "e3_n_24",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "holen.",
+    "Ich hole die Medikamente in der Apotheke."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "dreimal am Tag.",
+    "Nehmen Sie die Tabletten dreimal am Tag."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "seit.",
+    "Seit wann sind Sie krank?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "gestern.",
+    "Seit gestern habe ich Fieber."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "schlecht.",
+    "Ich schlafe schlecht."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Was fehlt Ihnen?",
+    "Guten Tag, Frau Kim. Was fehlt Ihnen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Wie geht es Ihnen?",
+    "Wie geht es Ihnen? – Nicht so gut."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Gute Besserung, Herr Park!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Mein Kopf tut weh. Ich habe Kopfschmerzen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Mein Hals tut weh. Ich habe Halsschmerzen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] holen. Ich hole die Medikamente in der Apotheke. [pause] dreimal am Tag. Nehmen Sie die Tabletten dreimal am Tag. [pause] seit. Seit wann sind Sie krank? [pause] gestern. Seit gestern habe ich Fieber. [pause] schlecht. Ich schlafe schlecht. [pause] Was fehlt Ihnen? Guten Tag, Frau Kim. Was fehlt Ihnen? [pause] Wie geht es Ihnen? Wie geht es Ihnen? – Nicht so gut. [pause] Gute Besserung, Herr Park! [pause] Mein Kopf tut weh. Ich habe Kopfschmerzen. [pause] Mein Hals tut weh. Ich habe Halsschmerzen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

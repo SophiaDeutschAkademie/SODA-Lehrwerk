@@ -1,0 +1,91 @@
+{
+ "job": "e3_n_15",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Kaution, die Kautionen.",
+    "Wie hoch ist die Kaution?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Vermieter, die Vermieter.",
+    "Der Vermieter wohnt auch im Haus."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Vermieterin, die Vermieterinnen.",
+    "Die Vermieterin heißt Frau Krause."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Anzeige, die Anzeigen.",
+    "Wir schreiben eine Anzeige."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Quadratmeter, die Quadratmeter.",
+    "Die Wohnung hat achtundsiebzig Quadratmeter."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Möbel.",
+    "Gibt es Möbel im Zimmer?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Tisch, die Tische.",
+    "Vor dem Sofa steht ein Tisch."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Stuhl, die Stühle.",
+    "Am Tisch stehen vier Stühle."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Bett, die Betten.",
+    "Das Bett steht an der Wand."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Schrank, die Schränke.",
+    "Der Schrank steht neben der Tür."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Kaution, die Kautionen. Wie hoch ist die Kaution? [pause] der Vermieter, die Vermieter. Der Vermieter wohnt auch im Haus. [pause] die Vermieterin, die Vermieterinnen. Die Vermieterin heißt Frau Krause. [pause] die Anzeige, die Anzeigen. Wir schreiben eine Anzeige. [pause] der Quadratmeter, die Quadratmeter. Die Wohnung hat achtundsiebzig Quadratmeter. [pause] die Möbel. Gibt es Möbel im Zimmer? [pause] der Tisch, die Tische. Vor dem Sofa steht ein Tisch. [pause] der Stuhl, die Stühle. Am Tisch stehen vier Stühle. [pause] das Bett, die Betten. Das Bett steht an der Wand. [pause] der Schrank, die Schränke. Der Schrank steht neben der Tür. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

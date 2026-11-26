@@ -1,0 +1,81 @@
+{
+ "job": "e3_le_01",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Jiu, hast du am Freitagabend Zeit? Ich will ins Kino gehen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Schade! Und am Samstag?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Super! Wollen wir zusammen schwimmen gehen?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Kein Problem. Dann gehen wir ins Museum. Um drei?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Und am Abend können wir zusammen kochen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Ich will am Sonntag schwimmen gehen. Kommst du mit?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Hast du am Samstag Zeit?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Jiu, Tim zieht nächste Woche aus. Wir brauchen einen Mitbewohner oder eine Mitbewohnerin."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Es ist sechzehn Quadratmeter groß. Es ist hell und ruhig."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Ja, es gibt ein Bett, einen Schrank und einen Schreibtisch. Aber es gibt keinen Stuhl."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Jiu, hast du am Freitagabend Zeit? Ich will ins Kino gehen. [pause] Schade! Und am Samstag? [pause] Super! Wollen wir zusammen schwimmen gehen? [pause] Kein Problem. Dann gehen wir ins Museum. Um drei? [pause] Und am Abend können wir zusammen kochen. [pause] Ich will am Sonntag schwimmen gehen. Kommst du mit? [pause] Hast du am Samstag Zeit? [pause] Jiu, Tim zieht nächste Woche aus. Wir brauchen einen Mitbewohner oder eine Mitbewohnerin. [pause] Es ist sechzehn Quadratmeter groß. Es ist hell und ruhig. [pause] Ja, es gibt ein Bett, einen Schrank und einen Schreibtisch. Aber es gibt keinen Stuhl. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

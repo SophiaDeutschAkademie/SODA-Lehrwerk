@@ -1,0 +1,81 @@
+{
+ "job": "e3_n_06",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "von neun bis zwölf, von Montag bis Mittwoch."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "heute, morgen, übermorgen, nächste Woche."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "heute Abend, morgen Vormittag, morgen früh."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "ich, nicht, möchte, vielleicht"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Mittwoch, Nachmittag, machen, auch"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "wichtig, pünktlich, natürlich"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Ich möchte am Mittwochnachmittag kommen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Können Sie am Donnerstag kommen?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Am Mittwoch habe ich Zeit."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Der Termin ist um halb vier."
+   ]
+  }
+ ],
+ "script": "Also. [pause] von neun bis zwölf, von Montag bis Mittwoch. [pause] heute, morgen, übermorgen, nächste Woche. [pause] heute Abend, morgen Vormittag, morgen früh. [pause] ich, nicht, möchte, vielleicht [pause] Mittwoch, Nachmittag, machen, auch [pause] wichtig, pünktlich, natürlich [pause] Ich möchte am Mittwochnachmittag kommen. [pause] Können Sie am Donnerstag kommen? [pause] Am Mittwoch habe ich Zeit. [pause] Der Termin ist um halb vier. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

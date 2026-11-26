@@ -1,0 +1,81 @@
+{
+ "job": "e3_so_01",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "Sora",
+   "parts": [
+    "Guten Tag, hier ist Sora Lee. Ich möchte einen Termin für meine Tochter vereinbaren."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Sora",
+   "parts": [
+    "Am Mittwoch oder am Donnerstag, am Nachmittag."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Sora",
+   "parts": [
+    "Um halb vier? Ja, das geht."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Sora",
+   "parts": [
+    "Hana Lee. Ich buchstabiere: Ell, Eh, Eh."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Sora",
+   "parts": [
+    "Ja, natürlich. Vielen Dank! Bis Donnerstag."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Sora",
+   "parts": [
+    "Nächste Woche habe ich viele Termine. Am Montag habe ich um neun einen Termin mit Hanas Lehrerin."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Sora",
+   "parts": [
+    "Am Mittwoch um zehn habe ich einen Termin im Bürgeramt. Da kann ich nicht im Deutschkurs sein."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Sora",
+   "parts": [
+    "Am Donnerstag um halb vier hat Hana einen Arzttermin. Und am Freitag habe ich keinen Termin. Da will ich lange schlafen!"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Sora",
+   "parts": [
+    "Ich möchte einen Termin vereinbaren."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Sora",
+   "parts": [
+    "Entschuldigung, wie komme ich zum Zoo?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag, hier ist Sora Lee. Ich möchte einen Termin für meine Tochter vereinbaren. [pause] Am Mittwoch oder am Donnerstag, am Nachmittag. [pause] Um halb vier? Ja, das geht. [pause] Hana Lee. Ich buchstabiere: Ell, Eh, Eh. [pause] Ja, natürlich. Vielen Dank! Bis Donnerstag. [pause] Nächste Woche habe ich viele Termine. Am Montag habe ich um neun einen Termin mit Hanas Lehrerin. [pause] Am Mittwoch um zehn habe ich einen Termin im Bürgeramt. Da kann ich nicht im Deutschkurs sein. [pause] Am Donnerstag um halb vier hat Hana einen Arzttermin. Und am Freitag habe ich keinen Termin. Da will ich lange schlafen! [pause] Ich möchte einen Termin vereinbaren. [pause] Entschuldigung, wie komme ich zum Zoo? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

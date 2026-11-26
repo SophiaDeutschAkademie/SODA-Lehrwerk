@@ -1,0 +1,81 @@
+{
+ "job": "e3_mk_01",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "Markus",
+   "parts": [
+    "Am Donnerstag kann ich leider nicht. Ich muss bis sieben arbeiten."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Markus",
+   "parts": [
+    "Dohyun, wie kommst du zur Arbeit? Mit der U-Bahn?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Markus",
+   "parts": [
+    "Du hast es gut! Ich fahre mit dem Fahrrad zum Bahnhof und dann mit der S-Bahn. Ich brauche fünfundvierzig Minuten."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Markus",
+   "parts": [
+    "Nein. In der Stadt brauche ich kein Auto."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Markus",
+   "parts": [
+    "Meine Tochter ist krank. Sie hat Bauchschmerzen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Markus",
+   "parts": [
+    "Oh nein! Was hast du?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Markus",
+   "parts": [
+    "Kein Problem. Soll ich Frau Hoffmann informieren?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Markus",
+   "parts": [
+    "Klar, ich rufe deinen Kunden an. Gute Besserung!"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Markus",
+   "parts": [
+    "Am Samstag habe ich mit Mia und Paul Fußball gespielt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Markus",
+   "parts": [
+    "Morgen, Dohyun! Wie war dein Wochenende?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Am Donnerstag kann ich leider nicht. Ich muss bis sieben arbeiten. [pause] Dohyun, wie kommst du zur Arbeit? Mit der U-Bahn? [pause] Du hast es gut! Ich fahre mit dem Fahrrad zum Bahnhof und dann mit der S-Bahn. Ich brauche fünfundvierzig Minuten. [pause] Nein. In der Stadt brauche ich kein Auto. [pause] Meine Tochter ist krank. Sie hat Bauchschmerzen. [pause] Oh nein! Was hast du? [pause] Kein Problem. Soll ich Frau Hoffmann informieren? [pause] Klar, ich rufe deinen Kunden an. Gute Besserung! [pause] Am Samstag habe ich mit Mia und Paul Fußball gespielt. [pause] Morgen, Dohyun! Wie war dein Wochenende? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

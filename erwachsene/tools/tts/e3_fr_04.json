@@ -1,0 +1,81 @@
+{
+ "job": "e3_fr_04",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Die Kaution? Drei Monatsmieten, also viertausendfünfzig Euro."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Die Wohnung ist ab sofort frei. Möchten Sie die Wohnung nehmen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag, Herr Park. Was fehlt Ihnen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Seit wann haben Sie die Schmerzen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Haben Sie Fieber?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Machen Sie bitte den Mund auf. Ja, der Hals ist rot. Sie haben eine Erkältung."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Nein, Sie dürfen bis Freitag nicht arbeiten. Bleiben Sie im Bett und trinken Sie viel."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Ja. Nehmen Sie die Tabletten dreimal am Tag. Hier ist Ihr Rezept."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Gute Besserung, Herr Park!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Sie dürfen eine Woche keinen Sport machen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Die Kaution? Drei Monatsmieten, also viertausendfünfzig Euro. [pause] Die Wohnung ist ab sofort frei. Möchten Sie die Wohnung nehmen? [pause] Guten Tag, Herr Park. Was fehlt Ihnen? [pause] Seit wann haben Sie die Schmerzen? [pause] Haben Sie Fieber? [pause] Machen Sie bitte den Mund auf. Ja, der Hals ist rot. Sie haben eine Erkältung. [pause] Nein, Sie dürfen bis Freitag nicht arbeiten. Bleiben Sie im Bett und trinken Sie viel. [pause] Ja. Nehmen Sie die Tabletten dreimal am Tag. Hier ist Ihr Rezept. [pause] Gute Besserung, Herr Park! [pause] Sie dürfen eine Woche keinen Sport machen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,82 @@
+{
+ "job": "e3_n_26",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Trink viel Tee und schlaf viel!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Kommt bitte nicht krank zum Kurs!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Ich rufe meinen Arzt an."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Kannst du meinen Termin absagen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Bringen Sie bitte Ihre Versichertenkarte mit."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Wie war dein Wochenende?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Ich habe eingekauft."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Ich bin zu Hause geblieben."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Ich hatte keine Zeit."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "vorgestern.",
+    "Vorgestern war ich im Kino."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Trink viel Tee und schlaf viel! [pause] Kommt bitte nicht krank zum Kurs! [pause] Ich rufe meinen Arzt an. [pause] Kannst du meinen Termin absagen? [pause] Bringen Sie bitte Ihre Versichertenkarte mit. [pause] Wie war dein Wochenende? [pause] Ich habe eingekauft. [pause] Ich bin zu Hause geblieben. [pause] Ich hatte keine Zeit. [pause] vorgestern. Vorgestern war ich im Kino. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

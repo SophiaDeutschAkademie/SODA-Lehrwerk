@@ -1,0 +1,81 @@
+{
+ "job": "e3_ji_03",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Ja, ein bisschen. Aber ich muss zum Kurs gehen. Heute haben wir einen Test."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Aber der Test."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Okay. Ich rufe die Praxis an."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Danke, Lena. Du bist sehr nett."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Ich habe Fieber und mein Kopf tut weh."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Ich habe Kopfschmerzen."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Hallo Lena! Ganz ruhig. Am Samstag habe ich lange geschlafen. Dann habe ich eingekauft."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Am Sonntag habe ich mit meinen Eltern telefoniert. Und ich habe für den Kurs gelernt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Nein, ich bin zu Hause geblieben. Ich war noch ein bisschen müde. Und du? Wie war es in Hamburg?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Jiu",
+   "parts": [
+    "War das Wetter gut?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ja, ein bisschen. Aber ich muss zum Kurs gehen. Heute haben wir einen Test. [pause] Aber der Test. [pause] Okay. Ich rufe die Praxis an. [pause] Danke, Lena. Du bist sehr nett. [pause] Ich habe Fieber und mein Kopf tut weh. [pause] Ich habe Kopfschmerzen. [pause] Hallo Lena! Ganz ruhig. Am Samstag habe ich lange geschlafen. Dann habe ich eingekauft. [pause] Am Sonntag habe ich mit meinen Eltern telefoniert. Und ich habe für den Kurs gelernt. [pause] Nein, ich bin zu Hause geblieben. Ich war noch ein bisschen müde. Und du? Wie war es in Hamburg? [pause] War das Wetter gut? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,369 @@
+@id a1-2/3
+
+== ziel
+bild: A bright doctor's consulting room. On the left a woman doctor in her forties with dark hair in a bun, a white coat and a stethoscope around her neck sits on a stool and listens. On the right DOHYUN sits on an examination couch, holds one hand at his throat and looks tired. Both faces are clearly visible.
+alt: 진료실에서 의사가 Dohyun의 이야기를 듣고 있어요. Dohyun은 목에 손을 대고 있어요.
+lead: 몸이 아프면 독일어가 더 급해져요. 어디가 아픈지 말하고, 의사의 말을 알아듣고, 학교나 회사에 알려야 해요. Jiu는 감기에 걸려 Lena의 조언을 듣고, Dohyun은 병원에 가고, Sora는 약국에서 딸의 약을 사요.
+mission: 이 과를 마치면 아픈 곳과 증상을 말하고, 의사와 약사의 조언을 이해하고, 아파서 못 간다고 알릴 수 있어요.
+wort: Ich habe Kopfschmerzen. | 머리가 아파요.
+wort: Mein Hals tut weh. | 목이 아파요.
+wort: Ich soll im Bett bleiben. | 침대에 누워 있으래요.
+wort: Gute Besserung! | 빨리 나으세요!
+mc: 친구가 아프다고 해요. 뭐라고 말해 줄까요? | Gute Besserung!* | Guten Appetit! | Freut mich! => Gute Besserung은 아픈 사람에게 빨리 나으라고 하는 인사예요.
+mc: '여기서 담배를 피우시면 안 돼요'는 어떻게 말할까요? | Hier dürfen Sie nicht rauchen.* | Hier müssen Sie nicht rauchen. | Hier können Sie rauchen. => nicht dürfen은 '~하면 안 된다', nicht müssen은 '~하지 않아도 된다'예요.
+
+== hoeren
+-- dialog A | Du bist ja krank! | 아침, WG 부엌이에요. Jiu의 얼굴이 좋지 않아요. Lena가 걱정해요.
+vor: 들으면서 찾아보세요. Jiu는 오늘 무엇을 하기로 하나요?
+Lena: Guten Morgen, Jiu! Oh, du siehst nicht gut aus. Was ist los? | 좋은 아침이에요, Jiu 씨! 어, 얼굴이 안 좋아 보여요. 무슨 일이에요?
+Jiu: Ich habe Kopfschmerzen und mein Hals tut weh. | 머리가 아프고 목도 아파요.
+Lena: Hast du auch Fieber? | 열도 있어요?
+Jiu: Ja, ein bisschen. Aber ich muss zum Kurs gehen. Heute haben wir einen Test. | 네, 조금요. 그렇지만 수업에 가야 해요. 오늘 시험이 있어요.
+Lena: Nein! Du bist krank. Bleib heute zu Hause! | 안 돼요! 아프잖아요. 오늘은 집에 있어요!
+Jiu: Aber der Test … | 그렇지만 시험이… | say=Aber der Test.
+Lena: Schreib Frau Becker eine E-Mail. Und geh zum Arzt! | Frau Becker에게 이메일을 써요. 그리고 병원에 가요!
+Jiu: Okay. Ich rufe die Praxis an. | 알았어요. 병원에 전화할게요.
+Lena: Gut. Trink viel Tee und schlaf viel. Ich mache jetzt einen Tee. | 좋아요. 차를 많이 마시고 푹 자요. 지금 차를 끓일게요.
+Jiu: Danke, Lena. Du bist sehr nett. | 고마워요, Lena 씨. 정말 친절하네요.
+Lena: Gute Besserung! | 빨리 나아요!
+
+-- dialog B | In der Praxis | 며칠 뒤 오전이에요. Dohyun도 감기에 걸렸어요. Dr. Neumann의 진료실이에요. | Frau=Dr. Neumann
+vor: 들으면서 찾아보세요. Dohyun은 언제까지 일하면 안 되나요?
+Frau: Guten Tag, Herr Park. Was fehlt Ihnen? | 안녕하세요, Herr Park. 어디가 불편하세요?
+Dohyun: Guten Tag, Frau Doktor Neumann. Ich habe Halsschmerzen und Husten. Und ich bin sehr müde. | 안녕하세요, 선생님. 목이 아프고 기침이 나요. 그리고 아주 피곤해요.
+Frau: Seit wann haben Sie die Schmerzen? | 언제부터 아프셨어요?
+Dohyun: Seit drei Tagen. | 사흘 전부터요.
+Frau: Haben Sie Fieber? | 열이 있어요?
+Dohyun: Ja, 38,5. | 네, 38.5도예요. | say=Ja, achtunddreißig fünf.
+Frau: Machen Sie bitte den Mund auf. Ja, der Hals ist rot. Sie haben eine Erkältung. | 입을 벌려 보세요. 네, 목이 빨갛네요. 감기예요.
+Dohyun: Darf ich morgen arbeiten? | 내일 일해도 되나요?
+Frau: Nein, Sie dürfen bis Freitag nicht arbeiten. Bleiben Sie im Bett und trinken Sie viel. | 아니요, 금요일까지는 일하시면 안 돼요. 침대에 누워 쉬고 물을 많이 드세요.
+Dohyun: Brauche ich Medikamente? | 약이 필요한가요?
+Frau: Ja. Nehmen Sie die Tabletten dreimal am Tag. Hier ist Ihr Rezept. | 네. 알약을 하루에 세 번 드세요. 여기 처방전이에요.
+Dohyun: Vielen Dank, Frau Doktor. | 감사합니다, 선생님.
+Frau: Gute Besserung, Herr Park! | 빨리 나으세요, Herr Park!
+
+-- dialog C | In der Apotheke | 오후, 동네 약국이에요. Sora의 딸 Hana가 기침을 해요. Sora가 약을 사러 왔어요. | Mann=Apotheker
+vor: 들으면서 찾아보세요. Hana는 약을 하루에 몇 번 먹어야 하나요?
+Sora: Guten Tag. Meine Tochter hat Husten und Schnupfen. Haben Sie etwas gegen Husten? | 안녕하세요. 딸이 기침을 하고 콧물이 나요. 기침에 듣는 약이 있나요?
+Mann: Wie alt ist Ihre Tochter? | 따님이 몇 살이에요?
+Sora: Sie ist acht Jahre alt. | 여덟 살이에요.
+Mann: Hat sie auch Fieber? | 열도 있어요?
+Sora: Nein, kein Fieber. Aber sie schläft schlecht. | 아니요, 열은 없어요. 그런데 잠을 잘 못 자요.
+Mann: Dann nehmen Sie den Hustensaft hier. Er ist gut für Kinder. | 그럼 여기 이 기침 시럽을 쓰세요. 아이들에게 좋아요.
+Sora: Wie oft soll sie den Saft nehmen? | 얼마나 자주 먹어야 하나요?
+Mann: Dreimal am Tag einen Löffel, nach dem Essen. | 하루에 세 번, 한 숟가락씩, 식사 뒤에요.
+Sora: Wir haben zu Hause Hustentabletten. Darf sie die Tabletten auch nehmen? | 집에 기침 알약이 있어요. 그 알약도 먹어도 되나요?
+Mann: Nein, Kinder dürfen die Tabletten nicht nehmen. Sie soll viel Tee trinken und viel schlafen. | 아니요, 어린이는 그 알약을 먹으면 안 돼요. 차를 많이 마시고 푹 자야 해요.
+Sora: Gut. Dann nehme ich den Hustensaft. Was kostet er? | 알겠어요. 그럼 기침 시럽으로 할게요. 얼마예요?
+Mann: 6,95 Euro. Gute Besserung für Ihre Tochter! | 6유로 95센트예요. 따님이 빨리 낫기를 바라요! | say=Sechs Euro fünfundneunzig. Gute Besserung für Ihre Tochter!
+
+-- fragen 세 대화를 듣고 답하세요.
+mc: Jiu는 어디가 아픈가요? | 머리와 목* | 배와 머리 | 다리와 목
+rf: Jiu geht heute zum Kurs. | f => Lena가 집에 있으라고 했고, Jiu는 병원에 전화하기로 했어요.
+mc: Lena는 Jiu에게 무엇을 하라고 하나요? | 차를 많이 마시고 푹 자라고 해요* | 시험을 보러 가라고 해요 | 약국에 가라고 해요
+mc: Dohyun은 언제부터 아팠나요? | seit drei Tagen* | seit gestern | seit einer Woche
+rf: Dohyun darf morgen arbeiten. | f => 금요일까지 일하면 안 돼요.
+mc: Dohyun은 알약을 하루에 몇 번 먹어야 하나요? | dreimal* | zweimal | einmal
+mc: Hana는 어디가 아픈가요? | 기침과 콧물* | 열과 두통 | 배
+rf: Hana darf die Tabletten nehmen. | f => 어린이는 그 알약을 먹으면 안 돼요. 기침 시럽을 먹어요.
+
+-- kultur 병원에 가는 법과 건강 보험
+p: 독일에 사는 사람은 누구나 건강 보험(Krankenversicherung)에 들어야 해요. 보험에 들면 건강 보험 카드(Versichertenkarte)를 받고, 병원에 갈 때마다 이 카드를 내요. 공보험에 들었으면 진료비를 창구에서 따로 내지 않아요.
+p: 아프면 먼저 동네 의원(Hausarzt)에 가요. 큰 병원(Krankenhaus)은 응급이거나 의사가 보낼 때 가요. 의원은 대부분 예약을 하고 가지만, 갑자기 아프면 아침 일찍 전화해서 그날 갈 수 있는지 물어요. 밤이나 주말에 아프면 116 117로 전화하고, 목숨이 위험한 응급 상황에는 112로 전화해요.
+p: 약은 약국(Apotheke)에서 사요. 처방전(Rezept)이 있어야 살 수 있는 약이 많아요. 처방전은 전자로 나와서 약국에 건강 보험 카드를 내면 돼요. 사흘 넘게 아파서 일을 못 하면 의사의 진단서(Krankschreibung)가 필요하고, 첫날부터 달라고 하는 회사도 있어요. 회사와 학교에는 아픈 첫날 바로 알려요.
+mc: 주말 밤에 열이 많이 나요. 목숨이 위험한 응급은 아니에요. 어디로 전화할까요? | 116 117* | 112 | 110
+
+== wortschatz
+-- gruppe Der Körper | 몸
+der Kopf, die Köpfe | 머리 | Mein Kopf tut weh. | 머리가 아파요.
+der Hals, die Hälse | 목 | Der Hals ist rot. | 목이 빨개요.
+der Bauch, die Bäuche | 배 | Mein Bauch tut weh. | 배가 아파요.
+der Rücken, die Rücken | 등, 허리 | Mein Rücken tut weh. | 허리가 아파요.
+der Arm, die Arme | 팔 | Der Arm tut weh. | 팔이 아파요.
+die Hand, die Hände | 손 | Meine Hände sind kalt. | 손이 차가워요.
+das Bein, die Beine | 다리 | Meine Beine tun weh. | 다리가 아파요.
+der Fuß, die Füße | 발 | Mein Fuß tut weh. | 발이 아파요.
+der Zahn, die Zähne | 이 | Ich habe Zahnschmerzen. | 이가 아파요.
+das Auge, die Augen | 눈 | Meine Augen sind müde. | 눈이 피곤해요.
+das Ohr, die Ohren | 귀 | Mein Ohr tut weh. | 귀가 아파요.
+die Nase, die Nasen | 코 | Die Nase ist rot. | 코가 빨개요.
+der Mund, die Münder | 입 | Machen Sie bitte den Mund auf. | 입을 벌려 보세요.
+
+-- gruppe Krank sein | 아플 때
+krank | 아픈 | Ich bin leider krank. | 아쉽게도 몸이 아파요.
+gesund | 건강한 | Hana ist jetzt gesund. | Hana는 이제 다 나았어요.
+müde | 피곤한 | Ich bin sehr müde. | 아주 피곤해요.
+die Schmerzen (Pl.) | 통증 | Seit wann haben Sie die Schmerzen? | 언제부터 아프셨어요?
+die Kopfschmerzen (Pl.) | 두통 | Ich habe Kopfschmerzen. | 머리가 아파요.
+die Halsschmerzen (Pl.) | 목 아픔 | Ich habe Halsschmerzen. | 목이 아파요.
+das Fieber | 열 | Hast du Fieber? | 열이 있어요?
+der Husten | 기침 | Meine Tochter hat Husten. | 딸이 기침을 해요.
+der Schnupfen | 콧물감기 | Ich habe Schnupfen. | 콧물이 나요.
+die Erkältung, die Erkältungen | 감기 | Sie haben eine Erkältung. | 감기예요.
+wehtun | 아프다 | Mein Hals tut weh. | 목이 아파요.
+das Medikament, die Medikamente | 약 | Brauche ich Medikamente? | 약이 필요한가요?
+die Tablette, die Tabletten | 알약 | Ich nehme eine Tablette. | 알약을 한 알 먹어요.
+der Hustensaft | 기침 시럽 | Der Hustensaft ist gut für Kinder. | 그 기침 시럽은 아이들에게 좋아요.
+das Rezept, die Rezepte | 처방전 | Hier ist Ihr Rezept. | 여기 처방전이에요.
+das Krankenhaus, die Krankenhäuser | (큰) 병원 | Das Krankenhaus ist in der Nähe. | 병원이 근처에 있어요.
+die Krankmeldung, die Krankmeldungen | 아파서 못 간다는 알림 | Ich schreibe heute eine Krankmeldung. | 오늘 병가 알림 메일을 써요.
+
+-- gruppe Rat und Regeln | 조언과 규칙
+sollen (du sollst, er soll) | ~하라고 하다 (남이 시킨 일) | Ich soll im Bett bleiben. | 침대에 누워 있으래요.
+dürfen (du darfst, er darf) | ~해도 된다 | Darf ich morgen arbeiten? | 내일 일해도 되나요?
+aussehen (du siehst aus, er sieht aus) | ~해 보이다 | Du siehst nicht gut aus. | 얼굴이 안 좋아 보여요.
+aufmachen | 열다, 벌리다 | Kannst du bitte das Fenster aufmachen? | 창문 좀 열어 줄 수 있어요?
+rauchen | 담배를 피우다 | Hier dürfen Sie nicht rauchen. | 여기서 담배를 피우시면 안 돼요.
+holen | 가져오다, 사 오다 | Ich hole die Medikamente in der Apotheke. | 약국에서 약을 사 와요.
+dreimal am Tag | 하루에 세 번 | Nehmen Sie die Tabletten dreimal am Tag. | 알약을 하루에 세 번 드세요.
+seit | ~부터 (지금까지) | Seit wann sind Sie krank? | 언제부터 아프셨어요?
+gestern | 어제 | Seit gestern habe ich Fieber. | 어제부터 열이 나요.
+schlecht | 나쁜, 나쁘게 | Ich schlafe schlecht. | 잠을 잘 못 자요.
+Was fehlt Ihnen? | 어디가 불편하세요? | Guten Tag, Frau Kim. Was fehlt Ihnen? | 안녕하세요, Frau Kim. 어디가 불편하세요?
+Wie geht es Ihnen? | 몸은 어떠세요, 어떻게 지내세요? | Wie geht es Ihnen? – Nicht so gut. | 몸은 어떠세요? – 별로 좋지 않아요.
+Gute Besserung! | 빨리 나으세요 | Gute Besserung, Herr Park! | 빨리 나으세요, Herr Park!
+
+-- bilder
+der Kopf, die Köpfe: a man who holds his forehead with one hand and closes his eyes in pain, head and shoulders, his face is visible
+der Hals, die Hälse: a woman with a scarf who holds her throat with one hand, head and shoulders, her face is visible
+der Bauch, die Bäuche: a man who holds his belly with both hands and bends slightly forward, full body, his face is visible
+der Rücken, die Rücken: a woman seen from the side who holds her lower back with one hand, full body, her face is visible
+das Bein, die Beine: a man who sits on a chair and holds his knee with both hands, full body, his face is visible
+der Zahn, die Zähne: a woman who holds her cheek with one hand and looks unhappy, head and shoulders, her face is visible
+das Fieber: a man who lies in bed under a blanket with red cheeks and a thermometer in his mouth, his face is visible
+der Husten: a woman who coughs into her bent elbow, head and shoulders, her face is partly visible
+der Schnupfen: a man who blows his nose with a paper tissue, head and shoulders, a box of tissues stands next to him
+die Tablette, die Tabletten: a blister pack with round pills and a glass of water
+der Hustensaft: a small brown medicine bottle with a blank label and a spoon
+das Rezept, die Rezepte: a hand that holds a small blank paper slip over a pharmacy counter
+
+-- tafel Was tut weh? | 아픈 곳 말하기
+p: 줄을 누르면 소리가 나요. 아픈 곳은 두 가지로 말해요. 아픈 곳 뒤에 tut weh를 붙이거나, 몸의 이름에 -schmerzen을 붙여 Ich habe …라고 해요. 아픈 곳이 둘이면 tun weh가 돼요.
+r: Mein Kopf tut weh. ; Ich habe Kopfschmerzen. | say=Mein Kopf tut weh. Ich habe Kopfschmerzen.
+r: Mein Hals tut weh. ; Ich habe Halsschmerzen. | say=Mein Hals tut weh. Ich habe Halsschmerzen.
+r: Mein Bauch tut weh. ; Ich habe Bauchschmerzen. | say=Mein Bauch tut weh. Ich habe Bauchschmerzen.
+r: Mein Rücken tut weh. ; Ich habe Rückenschmerzen. | say=Mein Rücken tut weh. Ich habe Rückenschmerzen.
+r: Meine Beine tun weh. ; Meine Augen tun weh. | say=Meine Beine tun weh. Meine Augen tun weh.
+
+-- aussprache L und R | 한국어 ㄹ과 다른 두 소리
+p: 한국어의 ㄹ은 자리에 따라 l처럼도 r처럼도 들려서, 독일어의 l과 r를 섞어 말하기 쉬워요. l은 혀끝을 윗잇몸에 꼭 붙이고 내요. Hals, Tablette, schlafen이 그래요.
+p: r는 혀끝을 쓰지 않고 목 안쪽에서 내요. 물로 입 안을 헹굴 때처럼 목젖 쪽을 살짝 울려요. Rücken, Rezept, krank가 그래요. 낱말 끝의 -er는 r를 내지 않고 가볍게 '아'에 가깝게 내요.
+hör: Hals, Tablette, schlafen, leider | l: 혀끝을 윗잇몸에 붙여요
+hör: Rücken, Rezept, rot, krank | r: 목 안쪽에서 내요
+hör: drei, trinken, Praxis | 자음 뒤의 r
+hör: Bleib im Bett und trink viel Tee! | l과 r가 모두 들어 있는 문장
+
+== grammatik
+-- punkt sollen und dürfen | 남이 하라는 일, 해도 되는 일
+bsp: Die Ärztin sagt, ich *soll* im Bett bleiben. | 의사 선생님이 침대에 누워 있으래요.
+bsp: *Darf* ich morgen arbeiten? | 내일 일해도 되나요?
+bsp: Sie *dürfen* bis Freitag *nicht* arbeiten. | 금요일까지 일하시면 안 돼요.
+finde: '~하면 안 된다'는 어떻게 말하나요? | nicht dürfen* | nicht müssen | nicht können
+regel: sollen은 의사나 선생님처럼 다른 사람이 하라고 한 일을 전할 때 써요. dürfen은 해도 되는 일, nicht dürfen은 하면 안 되는 일을 말해요. 앞 단계에서 배운 können, müssen, wollen처럼 ich와 er, sie의 모양이 같고, 동사 원형은 문장 끝에 와요.
+| | sollen | dürfen
+| ich | soll | d*a*rf
+| du | sollst | d*a*rfst
+| er, sie | soll | d*a*rf
+| wir | sollen | dürfen
+| ihr | sollt | dürft
+| sie, Sie | sollen | dürfen
+merke: nicht müssen과 nicht dürfen은 뜻이 전혀 달라요. Sie müssen nicht kommen.은 '오지 않아도 된다', Sie dürfen nicht kommen.은 '오면 안 된다'예요. Soll ich …?는 '제가 …할까요?' 하고 도와주겠다고 묻는 말이에요. Soll ich Frau Hoffmann anrufen?
+
+-- punkt Imperativ mit du und ihr | du와 ihr에게 하는 말
+bsp: *Bleib* heute zu Hause! | 오늘은 집에 있어요!
+bsp: *Trink* viel Tee und *schlaf* viel! | 차를 많이 마시고 푹 자요!
+bsp: *Kommt* bitte nicht krank zum Kurs! | 아플 때는 수업에 오지 마세요!
+finde: du에게 '와요!'라고 말할 때 알맞은 것은 무엇인가요? | Komm!* | Kommst! | Kommen!
+regel: du에게 하는 말은 du 모양에서 -st와 du를 빼고 써요. du kommst → Komm! ihr에게 하는 말은 ihr 모양에서 ihr만 빼요. ihr kommt → Kommt! 분리동사는 앞부분이 끝으로 가요.
+| 원형 | du | ihr | Sie
+| kommen | Komm! | Kommt! | Kommen Sie!
+| trinken | Trink! | Trinkt! | Trinken Sie!
+| nehmen | N*i*mm! | Nehmt! | Nehmen Sie!
+| schlafen | Schlaf! | Schlaft! | Schlafen Sie!
+| anrufen | Ruf an! | Ruft an! | Rufen Sie an!
+| sein | Sei ruhig! | Seid ruhig! | Seien Sie ruhig!
+merke: e가 i로 바뀌는 동사는 du에게 말할 때도 바뀌어요. Nimm! Iss! Sprich! 그러나 a가 ä로 바뀌는 동사는 바뀌지 않아요. du schläfst이지만 Schlaf!, du fährst이지만 Fahr!라고 해요. 어간이 -t로 끝나면 끝에 -e를 붙여요. Warte! Arbeite nicht so viel!
+
+-- punkt Possessivartikel im Akkusativ | 목적어 자리의 mein, dein, Ihr
+bsp: Ich rufe *meinen* Arzt an. | 저는 제 주치의에게 전화해요.
+bsp: Kannst du *meinen* Termin absagen? | 제 약속을 취소해 줄 수 있어요?
+bsp: Bringen Sie bitte *Ihre* Versichertenkarte mit. | 건강 보험 카드를 가져오세요.
+finde: 목적어 자리에서 mein Arzt는 어떻게 바뀌나요? | meinen Arzt* | meinem Arzt | meine Arzt
+regel: mein, dein, sein, ihr, unser, Ihr는 ein과 똑같이 바뀌어요. 목적어 자리(Akkusativ)에서 남성 명사 앞에서만 -en이 붙고, 중성과 여성, 복수는 주어 자리와 같아요. unser는 '우리의'라는 뜻이에요.
+| | 남성 | 중성 | 여성, 복수
+| ich | mein*en* Arzt | mein Rezept | meine Tabletten
+| du | dein*en* Arzt | dein Rezept | deine Tabletten
+| er | sein*en* Arzt | sein Rezept | seine Tabletten
+| sie | ihr*en* Arzt | ihr Rezept | ihre Tabletten
+| wir | unser*en* Arzt | unser Rezept | unsere Tabletten
+| Sie | Ihr*en* Arzt | Ihr Rezept | Ihre Tabletten
+merke: 앞 단계에서 배운 ein → einen과 같은 규칙이에요. Ich habe einen Termin. Ich habe meinen Termin. sein 뒤에서는 바뀌지 않아요. Das ist mein Arzt. '너희의'는 euer이고, 끝에 -e가 붙으면 eure가 돼요.
+
+== training
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Jiu: Ich habe Fieber und mein Kopf tut weh.
+mc: Jiu는 어디가 아픈가요? | 머리* | 배 | 목
+hör: Frau: Sie dürfen eine Woche keinen Sport machen.
+mc: 무엇을 하면 안 되나요? | 운동* | 일 | 공부
+hör: Markus: Meine Tochter ist krank. Sie hat Bauchschmerzen.
+mc: Markus의 딸은 어디가 아픈가요? | 배* | 머리 | 이
+hör: Becker: Viele Leute sind krank. Bleibt bitte zu Hause und kommt nicht krank zum Kurs!
+mc: Frau Becker는 수강생들에게 무엇을 부탁하나요? | 아프면 집에 있으라고* | 수업에 일찍 오라고 | 병원에 가라고
+
+-- ex Hören | Dohyun이 Markus에게 전화해요. 듣고 알맞은 것을 고르세요.
+audio | Ich bin krank
+> Dohyun: Hallo Markus, hier ist Dohyun. Ich bin krank. Ich kann heute nicht kommen.
+> Markus: Oh nein! Was hast du?
+> Dohyun: Eine Erkältung. Die Ärztin sagt, ich soll im Bett bleiben. Ich darf bis Freitag nicht arbeiten.
+> Markus: Kein Problem. Soll ich Frau Hoffmann informieren?
+> Dohyun: Ja, bitte. Und kannst du meinen Termin am Donnerstag absagen?
+> Markus: Klar, ich rufe deinen Kunden an. Gute Besserung!
+mc: Dohyun은 왜 전화했나요? | 아파서 못 간다고 알리려고* | 회의 시간을 물으려고 | 고객을 만나려고
+mc: Dohyun은 언제까지 일하면 안 되나요? | bis Freitag* | bis Donnerstag | bis Montag
+mc: Markus는 무엇을 해 주나요? | 고객에게 전화해요* | 병원에 같이 가요 | 약을 사다 줘요
+
+-- ex Lesen | Jiu가 Frau Becker에게 쓴 메일을 읽고, 맞으면 richtig, 틀리면 falsch를 고르세요. Betreff는 메일 제목이에요.
+text mail | E-Mail an Frau Becker
+> Von: jiu.kim@example.com
+> An: a.becker@example.org
+> Betreff: Ich bin krank
+> Liebe Frau Becker,
+> ich bin leider krank. Ich habe Fieber und Halsschmerzen. Heute kann ich nicht zum Kurs kommen.
+> Ich gehe heute zum Arzt. Kann ich den Test nächste Woche schreiben?
+> Viele Grüße
+> Jiu Kim
+rf: Jiu hat Fieber. | r
+rf: Jiu kommt heute zum Kurs. | f => 오늘은 수업에 갈 수 없다고 썼어요.
+rf: Jiu geht heute zum Arzt. | r
+rf: Jiu möchte den Test morgen schreiben. | f => 다음 주에 시험을 볼 수 있는지 물었어요.
+rf: Die E-Mail ist für Frau Becker. | r
+
+-- ex Grammatik | sollen과 dürfen의 알맞은 형태를 고르세요.
+gap: Ich [soll|sollst|sollen] viel Tee trinken.
+gap: [Darf|Darfst|Dürfen] ich heute arbeiten?
+gap: Kinder [dürfen|darf|dürft] die Tabletten nicht nehmen.
+gap: Du [sollst|soll|sollt] im Bett bleiben.
+gap: Hier [dürfen|darf|darfst] Sie nicht rauchen.
+gap: Hana [soll|sollst|sollen] den Hustensaft dreimal am Tag nehmen.
+
+-- ex Grammatik | 한국어 뜻에 맞는 말을 고르세요.
+gap: Im Krankenhaus [dürfen|müssen] Sie nicht rauchen. | 병원에서는 담배를 피우시면 안 돼요.
+gap: Morgen ist Sonntag. Du [musst|darfst] nicht früh aufstehen. | 내일은 일요일이에요. 일찍 일어나지 않아도 돼요.
+gap: Die Ärztin sagt, ich [soll|will] viel schlafen. | 의사 선생님이 푹 자래요.
+gap: Du hast Fieber. Du [darfst|musst] heute nicht arbeiten. | 열이 있어요. 오늘은 일하면 안 돼요.
+gap: [Soll|Muss] ich Frau Hoffmann anrufen? – Ja, bitte. | 제가 Frau Hoffmann에게 전화할까요? – 네, 부탁해요.
+
+-- ex Grammatik | du에게 하는 말이에요. 알맞은 형태를 고르세요.
+gap: [Bleib|Bleibst|Bleiben] heute zu Hause!
+gap: [Trink|Trinkst|Trinkt] viel Wasser!
+gap: [Nimm|Nehm|Nimmst] die Tabletten!
+gap: [Schlaf|Schläf|Schläfst] viel!
+gap: [Ruf|Rufst|Rufen] bitte die Praxis an!
+gap: [Geh|Gehst|Gehen] zum Arzt!
+
+-- ex Grammatik | ihr에게 하는 말이에요. 빈칸에 알맞은 형태를 쓰세요.
+gap: kommen → [=Kommt/kommt] bitte pünktlich!
+gap: trinken → [=Trinkt/trinkt] viel Wasser!
+gap: schlafen → [=Schlaft/schlaft] gut!
+gap: bleiben → [=Bleibt/bleibt] gesund!
+
+-- ex Grammatik | 알맞은 말을 고르세요.
+gap: Ich rufe [meinen|mein|meine] Arzt an.
+gap: Hast du [deine|deinen|dein] Versichertenkarte?
+gap: Hana nimmt [ihren|ihr|ihre] Hustensaft.
+gap: Dohyun sagt [seinen|sein|seine] Termin ab.
+gap: Bringen Sie bitte [Ihr|Ihren|Ihre] Rezept mit.
+gap: Wir besuchen [unsere|unseren|unser] Ärztin.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: du / sollst / im Bett / bleiben. | 침대에 누워 있어야 해요.
+ord: darf / ich / morgen / arbeiten? | 내일 일해도 되나요?
+ord: Sie / dürfen / hier / nicht / rauchen. | 여기서 담배를 피우시면 안 돼요.
+ord: mein / Hals / tut / weh. | 목이 아파요.
+ord: nimm / die Tabletten / dreimal / am Tag! | 알약을 하루에 세 번 먹어요!
+
+-- ex Wortschatz | 알맞은 관사를 고르세요. | opt: der / das / die
+wahl: Kopf | der
+wahl: Hand | die
+wahl: Bein | das
+wahl: Bauch | der
+wahl: Nase | die
+wahl: Auge | das
+wahl: Rücken | der
+wahl: Ohr | das
+
+-- ex Wortschatz | 어울리는 말끼리 짝지으세요.
+paar: Kopfschmerzen = haben ; im Bett = bleiben ; Tabletten = nehmen ; viel Tee = trinken ; zum Arzt = gehen ; den Mund = aufmachen
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Jiu: Ich habe Kopfschmerzen. | 머리가 아파요.
+dik: Lena: Bleib heute zu Hause! | 오늘은 집에 있어요!
+dik: Frau: Sie dürfen nicht arbeiten. | 일하시면 안 돼요.
+
+== aufgabe
+-- redemittel
+몸 상태 묻기: Wie geht es Ihnen? / Wie geht es dir? | 몸은 어떠세요? / 몸은 어때요? ; Was fehlt Ihnen? | 어디가 불편하세요? ; Was ist los? | 무슨 일이에요? ; Seit wann? | 언제부터요?
+아픈 곳 말하기: Mir geht es nicht gut. | 몸이 좋지 않아요. ; Ich habe Kopfschmerzen / Fieber / Husten. | 머리가 아파요 / 열이 나요 / 기침이 나요. ; Mein Hals tut weh. | 목이 아파요. ; Seit gestern. / Seit drei Tagen. | 어제부터요. / 사흘 전부터요.
+조언하기: Bleib zu Hause! / Bleiben Sie zu Hause! | 집에 있어요! / 집에 계세요! ; Trink viel Tee! | 차를 많이 마셔요! ; Geh zum Arzt! | 병원에 가요! ; Gute Besserung! | 빨리 나으세요!
+의사의 말 전하기: Die Ärztin sagt, ich soll im Bett bleiben. | 의사 선생님이 침대에 누워 있으래요. ; Ich darf bis Freitag nicht arbeiten. | 금요일까지 일하면 안 돼요.
+아파서 못 간다고 알리기: Ich bin leider krank. | 아쉽게도 몸이 아파요. ; Ich kann heute nicht kommen. | 오늘은 갈 수 없어요. ; Ich bin bis Freitag krankgeschrieben. | 금요일까지 병가예요.
+약국에서: Haben Sie etwas gegen Husten? | 기침에 듣는 약이 있나요? ; Wie oft soll ich das nehmen? | 얼마나 자주 먹어야 하나요? ; Dreimal am Tag. | 하루에 세 번이요.
+
+--S rolle A | Jiu, Lena
+
+--B rolle B | Dohyun, Frau
+
+-- ich 몸이 아픈 날 | 몸이 아팠던 날을 떠올리고 칸을 채우세요. 아픈 곳은 Kopf, Hals, Bauch, Rücken에서, 증상은 Fieber, Husten, Schnupfen에서 골라요. 의사가 하라는 일은 동사 원형으로 써요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: wo | 아픈 곳 | Hals
+feld: was | 증상 | Husten
+feld: seit | 언제부터 | gestern
+feld: rat | 의사가 하라는 일 | viel Tee trinken
+satz: Mein {wo} tut weh.
+satz: Ich habe auch {was}.
+satz: Seit {seit} bin ich krank.
+satz: Ich soll {rat}.
+
+--S info 아픈 날 아침
+p: 아침에 일어났더니 열이 나고 목이 아파요. 오늘은 수업에 갈 수 없어요. 오늘 병원에 갈 생각이에요.
+p: 오늘 내야 하는 숙제(Hausaufgabe)는 내일 보내고 싶어요.
+
+--S sprich Wie geht es dir? | 같이 사는 Lena가 내 얼굴을 보고 걱정해요. Lena의 말을 듣고 쪽지를 보며 답하세요. 예시 답은 참고만 하세요.
+f: Lena: Du siehst nicht gut aus. Was ist los? | 얼굴이 안 좋아 보여요. 무슨 일이에요? => Mir geht es nicht gut. Ich habe Fieber und mein Hals tut weh.
+f: Lena: Oh nein! Seit wann? | 저런! 언제부터요? => Seit gestern Abend.
+f: Lena: Gehst du heute zum Kurs? | 오늘 수업에 가요? => Nein, ich bleibe zu Hause. Ich schreibe Frau Becker eine E-Mail.
+f: Lena: Gut. Soll ich einen Tee machen? | 잘 생각했어요. 차를 끓일까요? => Ja, gern. Vielen Dank!
+f: Lena: Und geh bitte zum Arzt! | 그리고 병원에 꼭 가요! => Ja, ich rufe jetzt die Praxis an.
+
+--S schreiben Eine E-Mail an Frau Becker | 아파서 수업에 못 간다고 Frau Becker에게 메일을 써 보세요. 읽기와 연습 순서에 나온 Jiu의 메일을 참고해도 좋아요. 다섯 문장이면 충분해요.
+punkt: 아프다는 말 ; 증상 두 가지 ; 오늘 수업에 못 간다는 말 ; 병원에 간다는 말 ; 부탁 하나
+start: Liebe Frau Becker, …
+muster: Liebe Frau Becker, ich bin leider krank. Ich habe Fieber und mein Hals tut weh. Heute kann ich nicht zum Kurs kommen. Ich gehe heute zum Arzt. Kann ich die Hausaufgabe morgen schicken? Viele Grüße, Minji Choi
+check: Liebe Frau …로 시작하고 끝인사를 썼나요? ; 증상을 Ich habe …나 … tut weh로 썼나요? ; kann 뒤의 동사 원형을 문장 끝에 썼나요? ; 부탁을 Kann ich …?로 물었나요?
+
+--B info 아픈 날 아침
+p: 아침에 일어났더니 열이 나고 기침이 심해요. 일찍 병원에 다녀왔어요. 의사가 수요일까지 일하지 말고 쉬라고 했어요.
+p: 팀장 Frau Hoffmann에게 전화해서 알려요. 오늘 14시에 고객과 약속이 있는데 갈 수 없어요.
+
+--B sprich Ein Anruf im Büro | 팀장 Frau Hoffmann에게 전화해서 아파서 출근하지 못한다고 알려요. 쪽지를 보고 답하세요. 팀장의 말을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요.
+f: Hoffmann: Kessler Technik, Hoffmann, guten Morgen! | Kessler Technik의 Hoffmann입니다, 좋은 아침이에요! => Guten Morgen, Frau Hoffmann. Hier ist Minji Choi. Ich bin leider krank und kann heute nicht kommen.
+f: Hoffmann: Oh, das tut mir leid. Was fehlt Ihnen? | 저런, 안됐네요. 어디가 안 좋으세요? => Ich habe Fieber und Husten.
+f: Hoffmann: Und was sagt der Arzt? | 의사는 뭐라고 해요? => Der Arzt sagt, ich soll im Bett bleiben. Ich bin bis Mittwoch krankgeschrieben.
+f: Hoffmann: Gut. Sie haben heute um 14 Uhr einen Termin mit einem Kunden. | 알겠어요. 오늘 14시에 고객과 약속이 있죠. | say=Gut. Sie haben heute um vierzehn Uhr einen Termin mit einem Kunden. => Ja, das stimmt. Kann Markus meinen Termin absagen?
+f: Hoffmann: Natürlich. Bleiben Sie im Bett. Gute Besserung! | 물론이죠. 푹 쉬세요. 빨리 나으세요! => Vielen Dank, Frau Hoffmann! Auf Wiederhören!
+
+--B schreiben Eine Krankmeldung | 아파서 출근하지 못한다고 팀장 Frau Hoffmann에게 메일을 써 보세요. 다섯 문장이면 충분해요.
+punkt: 아프다는 말 ; 오늘 출근하지 못한다는 말 ; 의사가 한 말 ; 언제까지 쉬는지 ; 부탁 하나
+start: Guten Morgen, Frau Hoffmann, …
+muster: Guten Morgen, Frau Hoffmann, ich bin leider krank. Ich habe Fieber und Husten und kann heute nicht kommen. Die Ärztin sagt, ich soll im Bett bleiben. Ich bin bis Mittwoch krankgeschrieben. Kann Markus meinen Termin am Donnerstag absagen? Viele Grüße, Minji Choi
+check: 의사의 말을 ich soll …로 전했나요? ; 언제까지 쉬는지 bis …로 썼나요? ; 조동사 뒤의 동사 원형을 문장 끝에 썼나요? ; meinen Termin처럼 남성 명사 앞에 -en을 붙였나요?
+
+-- kann
+Ich kann sagen, was mir wehtut. | 어디가 아픈지 말할 수 있어요.
+Ich kann beim Arzt meine Beschwerden beschreiben. | 병원에서 증상을 설명할 수 있어요.
+Ich kann Ratschläge verstehen und geben. | 조언을 알아듣고 해 줄 수 있어요.
+Ich kann mich krankmelden. | 아파서 못 간다고 알릴 수 있어요.
+
+-- tipp 아프기 전에 준비해 둬요
+p: 아플 때는 독일어가 잘 떠오르지 않아요. 내 증상을 말하는 문장 세 개를 미리 적어 휴대폰에 넣어 두세요. Ich habe Fieber. Mein Hals tut weh. Seit gestern. 이 세 문장이면 병원 접수대와 약국에서 충분히 통해요.
+p: 집 근처 의원의 전화번호와 진료 시간도 미리 알아 둬요. 독일 의원은 수요일과 금요일 오후에 문을 닫는 곳이 많아요. 건강 보험 카드는 늘 지갑에 넣고 다녀요.

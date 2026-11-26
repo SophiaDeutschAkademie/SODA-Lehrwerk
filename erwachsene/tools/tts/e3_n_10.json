@@ -1,0 +1,90 @@
+{
+ "job": "e3_n_10",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "umsteigen.",
+    "Sie müssen am Hauptbahnhof umsteigen."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "einsteigen.",
+    "Wir steigen hier ein."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "aussteigen.",
+    "Steigen Sie an der Station Zoo aus."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "ankommen.",
+    "Ich komme um neun Uhr an."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "abfahren, du fährst ab, er fährt ab.",
+    "Der Zug fährt um acht Uhr ab."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Weg, die Wege.",
+    "Der Weg ist nicht weit."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Treppe, die Treppen.",
+    "Nehmen Sie hier die Treppe."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "suchen.",
+    "Ich suche die Post."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "zahlen.",
+    "Kinder zahlen einen Euro fünfundfünfzig."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "geradeaus."
+   ]
+  }
+ ],
+ "script": "Also. [pause] umsteigen. Sie müssen am Hauptbahnhof umsteigen. [pause] einsteigen. Wir steigen hier ein. [pause] aussteigen. Steigen Sie an der Station Zoo aus. [pause] ankommen. Ich komme um neun Uhr an. [pause] abfahren, du fährst ab, er fährt ab. Der Zug fährt um acht Uhr ab. [pause] der Weg, die Wege. Der Weg ist nicht weit. [pause] die Treppe, die Treppen. Nehmen Sie hier die Treppe. [pause] suchen. Ich suche die Post. [pause] zahlen. Kinder zahlen einen Euro fünfundfünfzig. [pause] geradeaus. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

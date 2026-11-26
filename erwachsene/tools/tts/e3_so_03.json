@@ -1,0 +1,81 @@
+{
+ "job": "e3_so_03",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "Sora",
+   "parts": [
+    "Das Bild hängt über dem Sofa."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Sora",
+   "parts": [
+    "Guten Tag. Meine Tochter hat Husten und Schnupfen. Haben Sie etwas gegen Husten?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Sora",
+   "parts": [
+    "Sie ist acht Jahre alt."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Sora",
+   "parts": [
+    "Nein, kein Fieber. Aber sie schläft schlecht."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Sora",
+   "parts": [
+    "Wie oft soll sie den Saft nehmen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Sora",
+   "parts": [
+    "Wir haben zu Hause Hustentabletten. Darf sie die Tabletten auch nehmen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Sora",
+   "parts": [
+    "Gut. Dann nehme ich den Hustensaft. Was kostet er?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Sora",
+   "parts": [
+    "Ich habe in Seoul Design studiert. Dann habe ich zehn Jahre als Designerin gearbeitet."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Sora",
+   "parts": [
+    "Bei einer Möbelfirma in Seoul."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Sora",
+   "parts": [
+    "Vor sechs Monaten, mit meinem Mann und meiner Tochter."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das Bild hängt über dem Sofa. [pause] Guten Tag. Meine Tochter hat Husten und Schnupfen. Haben Sie etwas gegen Husten? [pause] Sie ist acht Jahre alt. [pause] Nein, kein Fieber. Aber sie schläft schlecht. [pause] Wie oft soll sie den Saft nehmen? [pause] Wir haben zu Hause Hustentabletten. Darf sie die Tabletten auch nehmen? [pause] Gut. Dann nehme ich den Hustensaft. Was kostet er? [pause] Ich habe in Seoul Design studiert. Dann habe ich zehn Jahre als Designerin gearbeitet. [pause] Bei einer Möbelfirma in Seoul. [pause] Vor sechs Monaten, mit meinem Mann und meiner Tochter. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

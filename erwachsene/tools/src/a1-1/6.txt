@@ -1,0 +1,341 @@
+@id a1-1/6
+
+== ziel
+bild: A small office meeting room. HOFFMANN stands next to a large wall calendar with a grid of empty squares, without letters and without numbers, and points at one square with a pen. DOHYUN sits at a table with an open laptop and MARKUS sits next to him and holds a smartphone. Both men look at her.
+alt: 회의실에서 Frau Hoffmann이 벽 달력의 한 칸을 가리키고, Dohyun과 Markus가 함께 일정을 맞추고 있어요.
+lead: 독일 생활은 약속으로 굴러가요. 친구를 만날 때도, 회의를 잡을 때도, 병원에 갈 때도 먼저 시간을 정해요. Jiu는 Lena와 주말 약속을 잡고, Dohyun은 회의 시간을 바꾸고, Sora는 병원에 전화해서 예약해요.
+mission: 이 과를 마치면 약속을 제안하고 정하고, 전화로 예약하고 미룰 수 있어요. 할 수 있는 일과 해야 하는 일도 말할 수 있어요.
+wort: Hast du am Samstag Zeit? | 토요일에 시간 있어요?
+wort: Ich kann leider nicht. | 아쉽지만 안 돼요.
+wort: Ich muss am Freitag arbeiten. | 금요일에는 일해야 해요.
+wort: Ich möchte einen Termin vereinbaren. | 예약을 하고 싶어요.
+mc: '저는 내일 일해야 해요'는 어떻게 말할까요? | Ich muss morgen arbeiten.* | Ich muss arbeiten morgen. | Ich arbeiten muss morgen. => müssen이 두 번째 자리에 오고, 동사 원형은 문장 맨 끝에 와요.
+mc: 친구가 Hast du am Freitag Zeit?이라고 물었어요. 그날 안 될 때 가장 알맞은 대답은 무엇일까요? | Leider nicht. Ich muss lernen.* | Nein. | Ich will nicht. => 거절할 때는 leider를 붙이고 이유를 말하면 부드러워요.
+
+== hoeren
+-- dialog A | Am Wochenende? | 수요일 저녁, WG 부엌이에요. Lena가 Jiu에게 주말에 같이 할 일을 제안해요.
+vor: 들으면서 찾아보세요. 두 사람은 토요일 몇 시에 만나기로 하나요?
+Lena: Jiu, hast du am Freitagabend Zeit? Ich will ins Kino gehen. | Jiu 씨, 금요일 저녁에 시간 있어요? 영화 보러 가려고요.
+Jiu: Am Freitag kann ich leider nicht. Ich muss lernen. Am Montag haben wir einen Test. | 금요일에는 아쉽지만 안 돼요. 공부해야 해요. 월요일에 시험이 있거든요.
+Lena: Schade! Und am Samstag? | 아쉽네요! 그럼 토요일은요?
+Jiu: Am Samstag muss ich am Vormittag einkaufen. Aber am Nachmittag habe ich Zeit. | 토요일 오전에는 장을 봐야 해요. 그렇지만 오후에는 시간이 있어요.
+Lena: Super! Wollen wir zusammen schwimmen gehen? | 잘됐네요! 우리 같이 수영하러 갈까요?
+Jiu: Schwimmen? Ich kann leider nicht gut schwimmen. | 수영이요? 저는 수영을 잘 못해요.
+Lena: Kein Problem. Dann gehen wir ins Museum. Um drei? | 괜찮아요. 그럼 박물관에 가요. 세 시에요?
+Jiu: Ja, gern. Um drei passt es gut. | 네, 좋아요. 세 시 좋아요.
+Lena: Und am Abend können wir zusammen kochen. | 그리고 저녁에는 같이 요리할 수 있어요.
+Jiu: Gute Idee! Ich kann Bulgogi machen. | 좋은 생각이에요! 제가 불고기를 만들 수 있어요.
+
+-- dialog B | Die Besprechung | 월요일 오전, 사무실이에요. Dohyun이 Frau Hoffmann에게 회의 시간을 바꿔 달라고 부탁해요.
+vor: 들으면서 찾아보세요. 회의는 언제로 바뀌나요?
+Dohyun: Frau Hoffmann, haben Sie kurz Zeit? | Frau Hoffmann, 잠깐 시간 있으세요?
+Hoffmann: Ja, natürlich, Herr Park. | 네, 물론이죠, Herr Park.
+Dohyun: Die Besprechung ist am Dienstag um zehn. Aber am Dienstag muss ich einen Kunden besuchen. Können wir den Termin verschieben? | 회의가 화요일 열 시예요. 그런데 화요일에 고객을 방문해야 해요. 일정을 옮길 수 있을까요?
+Hoffmann: Kein Problem. Können Sie am Mittwoch? | 문제없어요. 수요일은 되세요?
+Dohyun: Am Mittwochvormittag habe ich schon einen Termin. Aber am Nachmittag kann ich. | 수요일 오전에는 이미 약속이 있어요. 그렇지만 오후에는 돼요.
+Hoffmann: Gut. Dann am Mittwoch um vierzehn Uhr? | 좋아요. 그럼 수요일 14시는요?
+Dohyun: Ja, das geht. Vielen Dank! | 네, 됩니다. 감사합니다!
+Hoffmann: Ich muss noch Markus fragen. Er will auch kommen. | Markus에게도 물어봐야 해요. Markus도 오려고 하거든요.
+Dohyun: Ich kann Markus eine E-Mail schreiben. | 제가 Markus에게 이메일을 쓸 수 있어요.
+Hoffmann: Sehr gut. Also: Mittwoch, vierzehn Uhr, Raum drei. | 아주 좋아요. 그럼 수요일 14시, 3번 회의실이에요.
+
+-- dialog C | Ein Anruf in der Praxis | 화요일 아침이에요. Sora가 병원에 전화해서 딸 Hana의 진료를 예약해요. | Frau=Mitarbeiterin
+vor: 들으면서 찾아보세요. 예약은 무슨 요일 몇 시인가요?
+Frau: Praxis Dr. Neumann, guten Tag! | Dr. Neumann 병원입니다, 안녕하세요! | say=Praxis Doktor Neumann, guten Tag!
+Sora: Guten Tag, hier ist Sora Lee. Ich möchte einen Termin für meine Tochter vereinbaren. | 안녕하세요, 이소라입니다. 딸의 진료를 예약하고 싶어요.
+Frau: Gern. Wann können Sie kommen? | 네. 언제 오실 수 있어요?
+Sora: Am Mittwoch oder am Donnerstag, am Nachmittag. | 수요일이나 목요일 오후에요.
+Frau: Am Mittwoch haben wir leider keinen Termin frei. Können Sie am Donnerstag um 15.30 Uhr kommen? | 수요일에는 아쉽게도 빈 시간이 없어요. 목요일 15시 30분에 오실 수 있어요? | say=Am Mittwoch haben wir leider keinen Termin frei. Können Sie am Donnerstag um fünfzehn Uhr dreißig kommen?
+Sora: Um halb vier? Ja, das geht. | 세 시 반이요? 네, 돼요.
+Frau: Wie heißt Ihre Tochter? | 따님 이름이 어떻게 되나요?
+Sora: Hana Lee. Ich buchstabiere: L, E, E. | Hana Lee예요. 철자를 불러 드릴게요. L, E, E. | say=Hana Lee. Ich buchstabiere: Ell, Eh, Eh.
+Frau: Danke, Frau Lee. Sie müssen die Versichertenkarte mitbringen. | 감사합니다, Frau Lee. 건강 보험 카드를 가져오셔야 해요.
+Sora: Ja, natürlich. Vielen Dank! Bis Donnerstag. | 네, 물론이죠. 감사합니다! 목요일에 뵐게요.
+Frau: Bis Donnerstag. Auf Wiederhören! | 목요일에 뵙겠습니다. 안녕히 계세요!
+
+-- fragen 세 대화를 듣고 답하세요.
+mc: Jiu는 왜 금요일 저녁에 영화를 보러 갈 수 없나요? | 공부해야 해서* | 장을 봐야 해서 | 일해야 해서
+rf: Am Samstagvormittag muss Jiu einkaufen. | r
+mc: Jiu와 Lena는 토요일 세 시에 무엇을 하나요? | 박물관에 가요* | 수영하러 가요 | 영화를 봐요
+rf: Dohyun kann am Dienstag um zehn kommen. | f => 화요일에는 고객을 방문해야 해요.
+mc: 회의는 언제로 바뀌었나요? | am Mittwoch um 14 Uhr* | am Dienstag um 14 Uhr | am Mittwoch um 10 Uhr
+rf: Markus will auch kommen. | r
+mc: Sora는 누구의 진료를 예약하나요? | 딸 Hana* | 남편 Minho | Sora 자신
+mc: Hana의 진료는 언제인가요? | am Donnerstag um 15.30 Uhr* | am Mittwoch um 15.30 Uhr | am Donnerstag um 14.30 Uhr => halb vier는 15시 30분이에요.
+
+-- kultur 약속은 미리 잡고, 시간은 꼭 지켜요
+p: 독일에서는 병원, 관청, 은행, 미용실처럼 사람을 만나 일을 보는 곳은 대부분 미리 예약(Termin)을 해야 해요. 예약 없이 가면 오래 기다리거나 그냥 돌아와야 할 수 있어요. 전화로 예약하기도 하고, 인터넷으로 예약하는 곳도 많아요.
+p: 예약한 시간은 꼭 지켜요. 병원과 관청에는 5분에서 10분쯤 일찍 가는 것이 좋아요. 늦을 것 같으면 5분만 늦어도 미리 전화해요. 못 가게 되면 그냥 안 가지 말고 꼭 취소해요. 연락 없이 오지 않으면 비용을 청구하는 병원도 있어요.
+p: 친구 집에 초대받았을 때는 조금 달라요. 정해진 시각보다 일찍 가지 않고, 정각이나 5분쯤 뒤에 가는 것이 예의예요. 대학 시간표에 c.t.라고 적혀 있으면 적힌 시각보다 15분 늦게, s.t.라고 적혀 있으면 정각에 시작해요.
+mc: 예약한 진료에 갈 수 없게 됐어요. 어떻게 하는 것이 좋을까요? | 미리 전화해서 취소해요* | 그냥 가지 않아요 | 다음 날 가서 설명해요
+
+== wortschatz
+-- gruppe Termine und Treffen | 약속과 예약
+der Termin, die Termine | 약속, 예약 (정해진 시간) | Ich habe um zehn einen Termin. | 열 시에 약속이 있어요.
+die Zeit | 시간 | Hast du am Samstag Zeit? | 토요일에 시간 있어요?
+der Kalender, die Kalender | 달력, 일정표 | Ist der Termin im Kalender? | 그 약속이 일정표에 있어요?
+die Praxis, die Praxen | 개인 병원, 의원 | Die Praxis hat am Mittwoch keinen Termin frei. | 그 병원은 수요일에 빈 시간이 없어요.
+der Arzttermin, die Arzttermine | 진료 예약 | Ich habe morgen einen Arzttermin. | 내일 병원 예약이 있어요.
+die Sprechstunde, die Sprechstunden | 상담 시간, 진료 시간 | Die Sprechstunde ist von neun bis zwölf. | 상담 시간은 아홉 시부터 열두 시까지예요.
+die Beratung, die Beratungen | 상담 | Ich brauche einen Termin für eine Beratung. | 상담 예약이 필요해요.
+der Kunde, die Kunden | 고객 (남자) | Dohyun muss einen Kunden besuchen. | Dohyun은 고객을 방문해야 해요.
+die Kundin, die Kundinnen | 고객 (여자) | Die Kundin kommt um elf. | 그 고객은 열한 시에 와요.
+der Raum, die Räume | 방, 회의실 | Die Besprechung ist in Raum drei. | 회의는 3번 회의실에서 해요.
+der Test, die Tests | 시험, 테스트 | Am Montag haben wir einen Test. | 월요일에 시험이 있어요.
+das Kino, die Kinos | 영화관 | Wir gehen am Freitag ins Kino. | 우리는 금요일에 영화 보러 가요.
+das Museum, die Museen | 박물관, 미술관 | Am Samstag gehen wir ins Museum. | 토요일에 박물관에 가요.
+die Versichertenkarte, die Versichertenkarten | 건강 보험 카드 | Sie müssen die Versichertenkarte mitbringen. | 건강 보험 카드를 가져오셔야 해요.
+die Minute, die Minuten | 분 | Ich komme zehn Minuten später. | 10분 늦게 가요.
+
+-- gruppe Können, müssen, wollen | 할 수 있다, 해야 한다, 하려고 한다
+können (du kannst, er kann) | ~할 수 있다 | Ich kann am Nachmittag kommen. | 저는 오후에 올 수 있어요.
+müssen (du musst, er muss) | ~해야 한다 | Ich muss am Freitag lernen. | 금요일에는 공부해야 해요.
+wollen (du willst, er will) | ~하려고 하다 | Lena will ins Kino gehen. | Lena는 영화 보러 가려고 해요.
+vereinbaren | (약속을) 정하다, 예약하다 | Ich möchte einen Termin vereinbaren. | 예약을 하고 싶어요.
+verschieben | 미루다, 옮기다 | Können wir den Termin verschieben? | 일정을 옮길 수 있을까요?
+absagen | 취소하다 | Ich muss den Termin leider absagen. | 아쉽지만 약속을 취소해야 해요.
+mitbringen | 가져오다 | Kannst du den Kuchen mitbringen? | 케이크를 가져올 수 있어요?
+besuchen | 방문하다, 찾아가다 | Am Sonntag besuche ich meine Freundin. | 일요일에 친구를 찾아가요.
+treffen (du triffst, er trifft) | 만나다 | Ich treffe Lena um drei. | 저는 세 시에 Lena를 만나요.
+fragen | 묻다 | Ich muss Markus fragen. | Markus에게 물어봐야 해요.
+schwimmen | 수영하다 | Ich kann nicht gut schwimmen. | 저는 수영을 잘 못해요.
+spielen | 놀다, (운동이나 악기를) 하다 | Am Sonntag spielen wir Fußball. | 일요일에 우리는 축구를 해요.
+bleiben | 머무르다 | Heute bleibe ich zu Hause. | 오늘은 집에 있어요.
+warten | 기다리다 | Sie müssen zehn Minuten warten. | 10분 기다리셔야 해요.
+telefonieren | 전화로 이야기하다 | Können wir morgen telefonieren? | 내일 통화할 수 있을까요?
+
+-- gruppe Zusagen und Absagen | 된다고 할 때, 안 된다고 할 때
+Zeit haben | 시간이 있다 | Am Nachmittag habe ich Zeit. | 오후에는 시간이 있어요.
+frei | 비어 있는, 쉬는 | Am Freitag habe ich frei. | 금요일에는 쉬어요.
+gern | 기꺼이, 즐겨 | Kommst du mit? – Ja, gern! | 같이 갈래요? – 네, 좋아요!
+natürlich | 물론 | Ja, natürlich. | 네, 물론이죠.
+vielleicht | 아마, 어쩌면 | Vielleicht kann ich am Sonntag. | 일요일에는 될지도 몰라요.
+schade | 아쉬운 | Du kannst nicht kommen? Schade! | 못 와요? 아쉽네요!
+Das geht. | 돼요, 괜찮아요 | Um halb vier? Ja, das geht. | 세 시 반이요? 네, 돼요.
+Das geht leider nicht. | 아쉽지만 안 돼요 | Am Dienstag? Das geht leider nicht. | 화요일이요? 아쉽지만 안 돼요.
+pünktlich | 제시간에, 시간을 잘 지키는 | Ich komme immer pünktlich. | 저는 항상 제시간에 와요.
+zu spät | 너무 늦은, 늦게 | Entschuldigung, ich komme zu spät. | 죄송해요, 늦었어요.
+wichtig | 중요한 | Der Termin ist sehr wichtig. | 그 약속은 아주 중요해요.
+heute Abend | 오늘 저녁 | Hast du heute Abend Zeit? | 오늘 저녁에 시간 있어요?
+übermorgen | 모레 | Übermorgen habe ich einen Arzttermin. | 모레 병원 예약이 있어요.
+nächste Woche | 다음 주 | Nächste Woche habe ich viele Termine. | 다음 주에는 약속이 많아요.
+
+-- bilder
+der Kalender, die Kalender: a wall calendar with a grid of empty squares, one square is marked with an ochre circle, without letters and without numbers
+die Praxis, die Praxen: a reception desk in a doctor's office, behind it sits a woman in a white coat who holds a telephone receiver to her ear and smiles, a potted plant stands on the desk, the desk is otherwise empty, without signs and without papers
+das Kino, die Kinos: two people who sit in cinema seats and look at a large blank bright screen, seen from the side so that both faces are visible
+das Museum, die Museen: a woman who stands in a gallery room and looks at two framed abstract pictures on the wall, full body, her face is seen from the side
+schwimmen: a man with swimming goggles on his forehead who swims in a pool lane, his face is visible
+treffen (du triffst, er trifft): two women who meet in front of a cafe door and wave to each other with a smile, full body
+
+-- tafel Wann? | 때를 나타내는 말
+p: 줄을 누르면 소리가 나요. 요일과 하루의 때 앞에는 am, 시각 앞에는 um을 써요. heute, morgen, übermorgen, nächste Woche 앞에는 아무것도 붙이지 않아요.
+r: am Montag ; am Freitagabend ; am Wochenende | say=am Montag, am Freitagabend, am Wochenende.
+r: um drei Uhr ; um halb vier ; um 15.30 Uhr | say=um drei Uhr, um halb vier, um fünfzehn Uhr dreißig.
+r: von neun bis zwölf ; von Montag bis Mittwoch | say=von neun bis zwölf, von Montag bis Mittwoch.
+r: heute ; morgen ; übermorgen ; nächste Woche | say=heute, morgen, übermorgen, nächste Woche.
+r: heute Abend ; morgen Vormittag ; morgen früh | say=heute Abend, morgen Vormittag, morgen früh.
+
+-- aussprache ch | ich와 ach, 두 가지 ch 소리
+p: ch는 앞에 오는 소리에 따라 두 가지로 소리 나요. i, e, ä, ö, ü, ei와 자음 뒤에서는 혀 가운데를 입천장 가까이 올리고 바람을 내보내요. '히'를 속삭이듯 내는 소리예요. ich, nicht, möchte, vielleicht가 그래요.
+p: a, o, u, au 뒤에서는 목 안쪽을 좁혀서 내는 거친 소리가 돼요. acht, machen, Woche, auch가 그래요. 낱말 끝의 -ig도 표준 발음에서는 ich의 ch처럼 소리 나요. wichtig의 끝소리가 그래요.
+hör: ich, nicht, möchte, vielleicht | 입 앞쪽에서 내는 ch
+hör: Mittwoch, Nachmittag, machen, auch | 목 안쪽에서 내는 ch
+hör: wichtig, pünktlich, natürlich | -ig와 -lich
+hör: Ich möchte am Mittwochnachmittag kommen. | 두 소리가 모두 들어 있는 문장
+
+== grammatik
+-- punkt Modalverben: können, müssen, wollen | 할 수 있다, 해야 한다, 하려고 한다
+bsp: Ich *kann* am Nachmittag kommen. | 저는 오후에 올 수 있어요.
+bsp: Ich *muss* am Freitag lernen. | 금요일에는 공부해야 해요.
+bsp: Lena *will* ins Kino gehen. | Lena는 영화 보러 가려고 해요.
+finde: ich와 er, sie가 주어일 때 können은 어떤 모양인가요? | kann* | könne | kannt
+regel: können은 할 수 있는 일과 가능한 일, müssen은 꼭 해야 하는 일, wollen은 하려고 마음먹은 일을 말해요. 세 동사 모두 ich와 er, sie의 모양이 같고 끝에 -e나 -t가 붙지 않아요. ich, du, er, sie에서는 모음도 바뀌어요.
+| | können | müssen | wollen
+| ich | k*a*nn | m*u*ss | w*i*ll
+| du | k*a*nnst | m*u*sst | w*i*llst
+| er, sie | k*a*nn | m*u*ss | w*i*ll
+| wir | können | müssen | wollen
+| ihr | könnt | müsst | wollt
+| sie, Sie | können | müssen | wollen
+merke: Ich will einen Termin.은 가게나 병원에서 쓰면 딱딱하고 무례하게 들려요. 부탁하거나 주문할 때는 4과에서 배운 möchten을 써요. Ich möchte einen Termin vereinbaren. wollen은 내 계획을 말할 때 써요. 같이 하자고 제안할 때는 Wollen wir …?(우리 …할까요?)라고 해요.
+
+-- punkt Die Satzklammer | 조동사는 두 번째 자리, 원형은 맨 끝
+bsp: Ich *muss* am Freitag *lernen*. | 금요일에는 공부해야 해요.
+bsp: *Können* Sie am Donnerstag *kommen*? | 목요일에 오실 수 있어요?
+bsp: Sie *müssen* die Versichertenkarte *mitbringen*. | 건강 보험 카드를 가져오셔야 해요.
+finde: 조동사가 있는 문장에서 동사 원형은 어디에 오나요? | 문장 맨 끝* | 조동사 바로 뒤 | 주어 앞
+regel: 조동사는 주어에 맞게 바뀌어 두 번째 자리에 오고, 하려는 일을 나타내는 동사는 원형 그대로 문장 맨 끝에 와요. 두 동사가 문장을 괄호처럼 감싸서 Satzklammer(문장 괄호)라고 해요. 네, 아니요로 답하는 질문에서는 조동사가 맨 앞에 와요.
+| 1 | 2 조동사 | 가운데 | 끝 원형
+| Ich | muss | am Freitag | lernen.
+| Am Samstag | kann | ich | kommen.
+| Wir | wollen | ins Kino | gehen.
+| Wann | können | Sie | kommen?
+| Sie | müssen | die Karte | mitbringen.
+merke: 5과의 분리동사는 조동사와 함께 쓰면 갈라지지 않고 원형 그대로 끝에 와요. Ich stehe um sechs auf. → Ich muss um sechs aufstehen. 부정하는 nicht는 원형 앞에 와요. Ich kann nicht kommen. 영어처럼 원형을 조동사 바로 뒤에 붙여서 Ich muss lernen am Freitag.라고 하지 않아요.
+
+-- punkt am, um, von … bis | 때를 나타내는 말
+bsp: *Am* Mittwoch habe ich Zeit. | 수요일에 시간이 있어요.
+bsp: Der Termin ist *um* halb vier. | 예약은 세 시 반이에요.
+bsp: Die Sprechstunde ist *von* neun *bis* zwölf. | 상담 시간은 아홉 시부터 열두 시까지예요.
+finde: 요일 앞에는 무엇을 쓰나요? | am* | um | von
+regel: 요일과 하루의 때 앞에는 am, 시각 앞에는 um을 써요. 시작과 끝은 von … bis로 말해요. heute, morgen, übermorgen, nächste Woche 앞에는 아무것도 붙이지 않아요.
+| 물음 | 대답 | 쓰는 곳
+| Wann? | *am* Montag, *am* Abend | 요일, 하루의 때
+| Um wie viel Uhr? | *um* drei, *um* halb vier | 시각
+| Von wann bis wann? | *von* neun *bis* zwölf | 시작과 끝
+| Wann? | heute, morgen | 앞에 아무것도 없음
+merke: 밤만 am을 쓰지 않고 in der Nacht라고 해요. 때를 나타내는 말이 문장 맨 앞에 오면 동사가 바로 뒤에 오고 주어는 그 뒤로 가요. Am Samstag kann ich kommen.
+
+== training
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Lena: Ich will am Sonntag schwimmen gehen. Kommst du mit?
+mc: Lena는 일요일에 무엇을 하려고 하나요? | 수영* | 영화 보기 | 요리
+hör: Markus: Am Donnerstag kann ich leider nicht. Ich muss bis sieben arbeiten.
+mc: Markus는 왜 목요일에 안 되나요? | 일곱 시까지 일해야 해서* | 병원 예약이 있어서 | 고객을 방문해야 해서
+hör: Frau: Sie können am Montag um elf Uhr fünfzehn kommen.
+mc: 예약은 언제인가요? | 월요일 11:15* | 월요일 11:50 | 화요일 11:15
+hör: Dohyun: Können wir die Besprechung am Freitag machen? Am Donnerstag kann ich nicht.
+mc: Dohyun은 회의를 언제 하고 싶어 하나요? | 금요일* | 목요일 | 수요일
+
+-- ex Hören | Sora가 다음 주 일정을 이야기해요. 듣고 알맞은 것을 고르세요. Bürgeramt는 전입 신고 같은 일을 보는 관청이에요.
+audio | Soras Woche
+> Sora: Nächste Woche habe ich viele Termine. Am Montag habe ich um neun einen Termin mit Hanas Lehrerin.
+> Sora: Am Mittwoch um zehn habe ich einen Termin im Bürgeramt. Da kann ich nicht im Deutschkurs sein.
+> Sora: Am Donnerstag um halb vier hat Hana einen Arzttermin. Und am Freitag habe ich keinen Termin. Da will ich lange schlafen!
+mc: Sora는 월요일 아홉 시에 누구를 만나나요? | Hana의 선생님* | 의사 | Frau Becker
+mc: 수요일 약속은 어디에서 있나요? | im Bürgeramt* | in der Praxis | in der Schule
+mc: Sora는 금요일에 무엇을 하려고 하나요? | 늦게까지 자요* | 장을 봐요 | 병원에 가요
+
+-- ex Lesen | 어학원 사무실 문에 붙은 안내문을 읽고, 맞으면 richtig, 틀리면 falsch를 고르세요. Sprechzeiten은 상담 시간, geschlossen은 문을 닫는다는 뜻이에요.
+text plan | Kursbüro: Sprechzeiten
+> | | Vormittag | Nachmittag |
+> | Mo | 9–12 Uhr | 14–16 Uhr |
+> | Di | 9–12 Uhr | geschlossen |
+> | Mi | geschlossen | 14–18 Uhr |
+> | Do | 9–12 Uhr | 14–16 Uhr |
+> | Fr | 9–13 Uhr | geschlossen |
+text notiz | Bitte beachten
+> Beratung nur mit Termin. Einen Termin können Sie am Telefon vereinbaren: 069 90009-210. Sie können auch eine E-Mail schreiben: kursbuero@example.org
+> Sie können nicht kommen? Dann müssen Sie den Termin absagen.
+rf: Am Dienstagnachmittag ist das Kursbüro geschlossen. | r
+rf: Am Mittwoch können Sie um zehn Uhr kommen. | f => 수요일 오전에는 문을 닫아요. 오후 14시부터 18시까지 열어요.
+rf: Am Freitag können Sie bis 13 Uhr kommen. | r
+rf: Für eine Beratung brauchen Sie einen Termin. | r
+rf: Einen Termin können Sie nur am Telefon vereinbaren. | f => 이메일로도 예약할 수 있어요.
+
+-- ex Grammatik | 알맞은 조동사 형태를 고르세요.
+gap: Ich [kann|kannst|können] am Freitag leider nicht kommen.
+gap: [Kannst|Kann|Könnt] du am Samstag?
+gap: Jiu [muss|musst|müssen] am Wochenende lernen.
+gap: Wir [wollen|wollt|will] ins Kino gehen.
+gap: [Müssen|Musst|Muss] Sie heute lange arbeiten?
+gap: Lena [will|willst|wollen] schwimmen gehen.
+
+-- ex Grammatik | 뜻에 맞는 조동사를 고르세요.
+gap: Ich habe morgen einen Test. Ich [muss|will] heute lernen. | 내일 시험이 있어요. 오늘 공부해야 해요.
+gap: Am Samstag habe ich Zeit. Da [kann|muss] ich kommen. | 토요일에는 시간이 있어요. 그날은 올 수 있어요.
+gap: Lena hat am Freitag frei. Sie [will|muss] ins Kino gehen. | Lena는 금요일에 쉬어요. 영화 보러 가려고 해요.
+gap: Sie haben keinen Termin? Dann [müssen|wollen] Sie leider warten. | 예약이 없으세요? 그럼 아쉽지만 기다리셔야 해요.
+gap: Mein Deutsch ist noch nicht gut. Ich [kann|muss] noch nicht gut telefonieren. | 제 독일어는 아직 서툴러요. 전화 통화는 아직 잘 못해요.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / muss / am Freitag / lernen. ~ am Freitag / muss / ich / lernen. | 저는 금요일에 공부해야 해요.
+ord: können / Sie / am Donnerstag / kommen? | 목요일에 오실 수 있어요?
+ord: wir / wollen / ins Museum / gehen. | 우리는 박물관에 가려고 해요.
+ord: Sie / müssen / die Karte / mitbringen. | 카드를 가져오셔야 해요.
+ord: ich / kann / leider / nicht / kommen. | 저는 아쉽지만 올 수 없어요.
+
+-- ex Grammatik | am과 um 가운데 알맞은 말을 고르세요.
+gap: Der Termin ist [am|um] Donnerstag.
+gap: Die Besprechung fängt [um|am] vierzehn Uhr an.
+gap: [Am|Um] Nachmittag habe ich Zeit.
+gap: Wir treffen Lena [um|am] halb vier.
+gap: [Am|Um] Wochenende will ich lange schlafen.
+
+-- ex Grammatik | 분리동사를 조동사와 함께 써 보세요. 빈칸에 동사 원형을 쓰세요.
+gap: Ich stehe um sechs auf. → Ich muss um sechs [=aufstehen].
+gap: Ich kaufe am Samstag ein. → Ich will am Samstag [=einkaufen].
+gap: Ich rufe die Praxis an. → Ich muss die Praxis [=anrufen].
+gap: Kommst du mit? → Kannst du [=mitkommen]?
+
+-- ex Wortschatz | 어울리는 말끼리 짝지으세요.
+paar: einen Termin = vereinbaren ; ins Kino = gehen ; einen Kunden = besuchen ; die Versichertenkarte = mitbringen ; zehn Minuten = warten ; zu Hause = bleiben
+
+-- ex Wortschatz | 빈칸에 알맞은 낱말을 쓰세요.
+gap: Hast du am Samstag [=Zeit]? | 토요일에 시간 있어요?
+gap: Ich kann [=leider] nicht kommen. | 아쉽지만 올 수 없어요.
+gap: Um halb vier? Ja, das [=geht]. | 세 시 반이요? 네, 돼요.
+gap: Ich möchte einen Termin [=vereinbaren/machen]. | 예약을 하고 싶어요.
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Lena: Hast du am Samstag Zeit? | 토요일에 시간 있어요?
+dik: Dohyun: Können wir den Termin verschieben? | 일정을 옮길 수 있을까요?
+dik: Sora: Ich möchte einen Termin vereinbaren. | 예약을 하고 싶어요.
+
+== aufgabe
+-- redemittel
+약속 제안하기: Hast du am Samstag Zeit? / Haben Sie am Montag Zeit? | 토요일에 시간 있어요? / 월요일에 시간 있으세요? ; Wollen wir ins Kino gehen? | 우리 영화 보러 갈까요? ; Kannst du am Freitag? | 금요일에 돼요?
+받아들이기: Ja, gern! | 네, 좋아요! ; Ja, das geht. | 네, 돼요. ; Um drei passt es gut. | 세 시 좋아요.
+거절하고 다른 때 제안하기: Am Freitag kann ich leider nicht. | 금요일에는 아쉽지만 안 돼요. ; Ich muss arbeiten. | 일해야 해요. ; Geht es auch am Samstag? | 토요일에도 돼요? ; Schade! | 아쉽네요!
+예약하기: Ich möchte einen Termin vereinbaren. | 예약을 하고 싶어요. ; Wann können Sie kommen? | 언제 오실 수 있어요? ; Haben Sie am Donnerstag einen Termin frei? | 목요일에 빈 시간이 있어요? ; Um wie viel Uhr? | 몇 시에요?
+미루고 취소하기: Können wir den Termin verschieben? | 일정을 옮길 수 있을까요? ; Ich muss den Termin leider absagen. | 아쉽지만 약속을 취소해야 해요. ; Ich komme zehn Minuten später. | 10분 늦게 가요.
+전화할 때: Guten Tag, hier ist … | 안녕하세요, …입니다. ; Auf Wiederhören! | 안녕히 계세요. (전화를 끊을 때)
+
+--S rolle A | Jiu, Lena
+
+--B rolle B | Dohyun, Hoffmann
+
+-- ich 이번 주 내 일정 | 이번 주를 떠올리고 칸을 채우세요. 요일은 Montag, Freitag처럼 독일어로 적어요. 할 일은 arbeiten, lernen, einkaufen처럼 동사 원형으로 써요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: tag1 | 바쁜 요일 | Freitag
+feld: muss | 그날 해야 하는 일 | lernen
+feld: tag2 | 시간이 있는 요일 | Samstag
+feld: will | 그날 하려는 일 | ins Kino gehen
+satz: Am {tag1} muss ich {muss}.
+satz: Am {tag1} kann ich leider nicht.
+satz: Am {tag2} habe ich Zeit.
+satz: Am {tag2} will ich {will}.
+
+--S info 상담 예약 쪽지
+p: 다음 단계 수업에 대해 상담을 받고 싶어요. 어학원 사무실에 전화해서 상담 시간을 예약해요.
+p: 화요일 오전에는 수업이 있어서 갈 수 없어요. 수요일 오후와 목요일 오후에는 갈 수 있어요.
+
+--S sprich Ein Termin im Kursbüro | 어학원 사무실의 Frau Wagner에게 전화해서 상담 시간을 예약해요. 쪽지를 보고 답하세요. 직원의 말을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요. | Frau=Frau Wagner
+f: Frau: Kursbüro, Wagner, guten Tag! | 어학원 사무실 Wagner입니다, 안녕하세요! => Guten Tag, hier ist Minji Choi. Ich möchte einen Termin für eine Beratung vereinbaren.
+f: Frau: Gern, Frau Choi. Können Sie am Dienstag um zehn Uhr kommen? | 네, Frau Choi. 화요일 열 시에 오실 수 있어요? => Am Dienstag kann ich leider nicht. Am Vormittag habe ich Unterricht.
+f: Frau: Und am Mittwoch? Wir haben um 14.30 Uhr einen Termin frei. | 그럼 수요일은요? 14시 30분에 빈 시간이 있어요. | say=Und am Mittwoch? Wir haben um vierzehn Uhr dreißig einen Termin frei. => Ja, das geht. Am Mittwochnachmittag habe ich Zeit.
+f: Frau: Gut. Wie ist Ihre Telefonnummer? | 좋아요. 전화번호가 어떻게 되세요? => Meine Nummer ist null, eins, sieben, sechs, null, vier, null, sechs, neun, null, fünf, fünf.
+f: Frau: Danke. Also am Mittwoch um 14.30 Uhr. Auf Wiederhören! | 감사합니다. 그럼 수요일 14시 30분입니다. 안녕히 계세요! | say=Danke. Also am Mittwoch um vierzehn Uhr dreißig. Auf Wiederhören! => Vielen Dank! Bis Mittwoch. Auf Wiederhören!
+
+--S schreiben Eine Nachricht an Lena | 같이 사는 Lena가 금요일 저녁에 영화를 보러 가자고 메시지를 보냈어요. 금요일에는 갈 수 없어요. 이유를 말하고 다른 날을 제안하는 답장을 써 보세요. 네 문장이면 충분해요.
+punkt: 금요일에 안 된다는 말 ; 이유 ; 다른 요일과 시각 ; 끝인사
+start: Hallo Lena, …
+muster: Hallo Lena, am Freitag kann ich leider nicht. Ich muss lernen. Am Montag haben wir einen Test. Hast du am Samstag Zeit? Wir können um sechs ins Kino gehen. Viele Grüße, Minji
+check: 조동사 뒤의 동사 원형을 문장 끝에 썼나요? ; 요일 앞에 am, 시각 앞에 um을 썼나요? ; leider를 넣어 부드럽게 거절했나요? ; 다른 날을 제안했나요?
+
+--B info 회의 일정 쪽지
+p: 팀 회의가 화요일 10시에 잡혀 있어요. 그런데 화요일 오전에 고객을 방문해야 해요.
+p: 수요일은 하루 종일 시간이 있고, 목요일은 오전에만 시간이 있어요.
+
+--B sprich Die Besprechung verschieben | 팀장 Frau Hoffmann에게 회의 시간을 바꿔 달라고 부탁해요. 쪽지를 보고 답하세요. 팀장의 말을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요.
+f: Hoffmann: Guten Morgen! Die Besprechung ist am Dienstag um zehn Uhr. Können Sie kommen? | 좋은 아침이에요! 회의는 화요일 열 시예요. 오실 수 있어요? => Am Dienstag kann ich leider nicht. Ich muss einen Kunden besuchen. Können wir den Termin verschieben?
+f: Hoffmann: Ja, das geht. Wann haben Sie Zeit? | 네, 돼요. 언제 시간이 있으세요? => Am Mittwoch habe ich Zeit. Am Donnerstag kann ich nur am Vormittag.
+f: Hoffmann: Dann am Mittwoch. Können Sie um neun Uhr? | 그럼 수요일로 해요. 아홉 시에 되세요? => Ja, um neun Uhr passt es gut.
+f: Hoffmann: Gut. Können Sie Markus eine E-Mail schreiben? | 좋아요. Markus에게 이메일을 써 주실 수 있어요? => Ja, natürlich. Ich schreibe Markus heute eine E-Mail.
+f: Hoffmann: Vielen Dank! Bis Mittwoch. | 감사합니다! 수요일에 봬요. => Bis Mittwoch, Frau Hoffmann!
+
+--B schreiben Eine E-Mail an Markus | 회의 시간이 바뀌었어요. 동료 Markus에게 새 일정을 알리는 짧은 메일을 써 보세요. 네 문장이면 충분해요.
+punkt: 화요일에 안 되는 이유 ; 새 요일과 시각 ; 회의실 ; 올 수 있는지 묻기
+start: Hallo Markus, …
+muster: Hallo Markus, am Dienstag kann ich leider nicht kommen. Ich muss einen Kunden besuchen. Die Besprechung ist jetzt am Mittwoch um neun Uhr in Raum drei. Kannst du am Mittwoch kommen? Viele Grüße, Minji
+check: 조동사 뒤의 동사 원형을 문장 끝에 썼나요? ; 요일 앞에 am, 시각 앞에 um을 썼나요? ; 새 요일, 시각, 회의실을 모두 썼나요? ; 상대가 올 수 있는지 물었나요?
+
+-- kann
+Ich kann einen Vorschlag machen und einen Termin vereinbaren. | 약속을 제안하고 정할 수 있어요.
+Ich kann am Telefon einen Termin vereinbaren. | 전화로 예약할 수 있어요.
+Ich kann einen Termin verschieben oder absagen. | 약속을 미루거나 취소할 수 있어요.
+Ich kann sagen, was ich kann, muss und will. | 할 수 있는 일, 해야 하는 일, 하려는 일을 말할 수 있어요.
+
+-- tipp 전화하기 전에 세 가지를 적어 둬요
+p: 독일어로 전화하는 것은 얼굴을 보고 말하는 것보다 어려워요. 표정과 손짓이 보이지 않고 상대는 빠르게 말해요. 전화하기 전에 내 이름, 원하는 것, 가능한 요일과 시각을 독일어로 적어 두면 훨씬 편해요.
+p: 잘 못 들었으면 Wie bitte? Langsam, bitte.라고 다시 물어요. 끝에는 Also am Donnerstag um halb vier?처럼 요일과 시각을 한 번 더 말해서 확인해요. 통화가 끝나면 바로 달력에 적어 둬요.

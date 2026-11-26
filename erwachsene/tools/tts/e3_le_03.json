@@ -1,0 +1,81 @@
+{
+ "job": "e3_le_03",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Guten Morgen, Jiu! Oh, du siehst nicht gut aus. Was ist los?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Hast du auch Fieber?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Nein! Du bist krank. Bleib heute zu Hause!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Schreib Frau Becker eine E-Mail. Und geh zum Arzt!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Gut. Trink viel Tee und schlaf viel. Ich mache jetzt einen Tee."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Gute Besserung!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Bleib heute zu Hause!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Du siehst nicht gut aus. Was ist los?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Oh nein! Seit wann?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Gehst du heute zum Kurs?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Morgen, Jiu! Oh, du siehst nicht gut aus. Was ist los? [pause] Hast du auch Fieber? [pause] Nein! Du bist krank. Bleib heute zu Hause! [pause] Schreib Frau Becker eine E-Mail. Und geh zum Arzt! [pause] Gut. Trink viel Tee und schlaf viel. Ich mache jetzt einen Tee. [pause] Gute Besserung! [pause] Bleib heute zu Hause! [pause] Du siehst nicht gut aus. Was ist los? [pause] Oh nein! Seit wann? [pause] Gehst du heute zum Kurs? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,356 @@
+@id a1-2/1
+
+== ziel
+bild: A street corner in a city with a traffic light and a tram stop in the background. JIU stands with a smartphone in one hand and talks to an older man with a hat and a long coat, who points to the left with one outstretched arm. Both faces are clearly visible.
+alt: 시내 길모퉁이에서 Jiu가 지나가는 사람에게 길을 묻고, 그 사람이 팔을 뻗어 방향을 가리켜요.
+lead: 새 도시에서는 길을 묻고 교통편을 알아야 어디든 갈 수 있어요. Jiu는 도서관 가는 길을 묻고, Sora는 동물원에 가는 표를 사고, Dohyun은 손님에게 회사 오는 길을 알려 줘요.
+mission: 이 과를 마치면 길을 묻고 알려 주고, 표를 사고, 무엇을 타고 가는지 말할 수 있어요.
+wort: Entschuldigung, wo ist der Bahnhof? | 실례합니다, 역이 어디예요?
+wort: Gehen Sie hier geradeaus. | 여기서 곧장 가세요.
+wort: Ich fahre mit der U-Bahn. | 저는 지하철을 타고 가요.
+wort: Wie komme ich zum Zoo? | 동물원에 어떻게 가요?
+mc: 길에서 모르는 사람에게 길을 물을 때 먼저 하는 말은 무엇일까요? | Entschuldigung!* | Tschüss! | Freut mich! => 말을 걸 때는 Entschuldigung으로 시작해요.
+mc: '저는 버스를 타고 가요'는 어떻게 말할까요? | Ich fahre mit dem Bus.* | Ich fahre mit der Bus. | Ich fahre der Bus. => mit 뒤에서 der Bus의 der는 dem으로 바뀌어요.
+
+== hoeren
+-- dialog A | Wo ist die Bibliothek? | 토요일 오전, 보켄하임의 거리예요. Jiu가 대학 도서관을 찾고 있어요. | Mann=Passant
+vor: 들으면서 찾아보세요. 도서관까지 걸어서 얼마나 걸리나요?
+Jiu: Entschuldigung, ich suche die Universitätsbibliothek. Ist sie hier in der Nähe? | 실례합니다, 대학 도서관을 찾고 있어요. 이 근처에 있나요?
+Mann: Ja, das ist nicht weit. Gehen Sie hier geradeaus bis zur Ampel. | 네, 멀지 않아요. 여기서 신호등까지 곧장 가세요.
+Jiu: Bis zur Ampel. Und dann? | 신호등까지요. 그다음에는요?
+Mann: Gehen Sie an der Ampel links. Dann sehen Sie einen Platz. | 신호등에서 왼쪽으로 가세요. 그러면 광장이 보여요.
+Jiu: Ist die Bibliothek am Platz? | 도서관이 광장에 있나요?
+Mann: Ja, genau. Sie ist rechts, an der Ecke. | 네, 맞아요. 오른쪽 모퉁이에 있어요.
+Jiu: Wie lange brauche ich zu Fuß? | 걸어서 얼마나 걸려요?
+Mann: Zehn Minuten. Sie brauchen keinen Bus. | 10분이요. 버스를 탈 필요는 없어요.
+Jiu: Vielen Dank! | 정말 감사합니다!
+Mann: Bitte, gern! | 천만에요!
+
+-- dialog B | Zum Zoo, bitte! | 일요일 아침, 프랑크푸르트 중앙역이에요. Sora가 딸 Hana와 동물원에 가려고 해요. 역 직원에게 물어요. | Frau=Mitarbeiterin
+vor: 들으면서 찾아보세요. Sora는 어느 역에서 갈아타나요?
+Sora: Entschuldigung, wie komme ich zum Zoo? | 실례합니다, 동물원에 어떻게 가나요?
+Frau: Nehmen Sie die U4 bis Konstablerwache. Dort steigen Sie um. | U4를 타고 Konstablerwache까지 가세요. 거기서 갈아타세요. | say=Nehmen Sie die U vier bis Konstablerwache. Dort steigen Sie um.
+Sora: Und dann? | 그다음에는요?
+Frau: Dann nehmen Sie die U6 oder die U7. Die Station heißt Zoo. | 그다음에 U6이나 U7을 타세요. 역 이름은 Zoo예요. | say=Dann nehmen Sie die U sechs oder die U sieben. Die Station heißt Zoo.
+Sora: Danke. Und wo kann ich Fahrkarten kaufen? | 감사합니다. 표는 어디에서 살 수 있어요?
+Frau: Hier am Automaten oder in der App. Eine Einzelfahrkarte kostet 3,80 Euro. | 여기 자동판매기나 앱에서요. 한 번 타는 표는 3유로 80센트예요. | say=Hier am Automaten oder in der App. Eine Einzelfahrkarte kostet drei Euro achtzig.
+Sora: Ich fahre mit meiner Tochter. Sie ist acht. | 딸과 같이 가요. 여덟 살이에요.
+Frau: Kinder zahlen 1,55 Euro. | 어린이는 1유로 55센트를 내요. | say=Kinder zahlen einen Euro fünfundfünfzig.
+Sora: Gut. Und wo fährt die U4 ab? | 알겠어요. U4는 어디에서 떠나요? | say=Gut. Und wo fährt die U vier ab?
+Frau: Die U-Bahn fährt unten ab. Nehmen Sie hier die Treppe. | 지하철은 아래층에서 떠나요. 여기 계단으로 내려가세요.
+Sora: Vielen Dank! | 정말 감사합니다!
+
+-- dialog C | Der Weg zur Firma | 월요일 오후, Dohyun의 사무실이에요. 내일 회사에 오는 Herr Schneider가 전화로 길을 물어요. | Mann=Herr Schneider
+vor: 들으면서 찾아보세요. Herr Schneider는 무엇을 타고 프랑크푸르트에 오나요?
+Mann: Guten Tag, Herr Park. Hier ist Peter Schneider. Ich komme morgen zu Kessler Technik. Wie komme ich zur Firma? | 안녕하세요, Herr Park. Peter Schneider입니다. 내일 Kessler Technik에 갑니다. 회사까지 어떻게 가나요?
+Dohyun: Guten Tag, Herr Schneider! Kommen Sie mit dem Auto oder mit dem Zug? | 안녕하세요, Herr Schneider! 차로 오세요, 기차로 오세요?
+Mann: Mit dem Zug. Ich komme um neun Uhr am Hauptbahnhof an. | 기차로요. 아홉 시에 중앙역에 도착해요.
+Dohyun: Gut. Nehmen Sie am Hauptbahnhof die U4 bis Bockenheimer Warte. Das sind nur zwei Stationen. | 좋아요. 중앙역에서 U4를 타고 Bockenheimer Warte까지 오세요. 두 정거장밖에 안 돼요. | say=Gut. Nehmen Sie am Hauptbahnhof die U vier bis Bockenheimer Warte. Das sind nur zwei Stationen.
+Mann: Bis Bockenheimer Warte. Und dann? Ist es weit? | Bockenheimer Warte까지요. 그다음에는요? 먼가요?
+Dohyun: Nein. Gehen Sie an der Station rechts und nehmen Sie dann die zweite Straße links. Das ist die Musterstraße. | 아니요. 역에서 오른쪽으로 가다가 두 번째 길에서 왼쪽으로 가세요. 거기가 Musterstraße예요.
+Mann: Die zweite Straße links. Gut. | 두 번째 길에서 왼쪽이요. 알겠습니다.
+Dohyun: Die Firma ist in der Musterstraße 12, bei der Apotheke. | 회사는 Musterstraße 12번지, 약국 근처에 있어요. | say=Die Firma ist in der Musterstraße zwölf, bei der Apotheke.
+Mann: Sehr gut. Wie lange brauche ich zu Fuß? | 좋습니다. 걸어서 얼마나 걸리나요?
+Dohyun: Nur fünf Minuten. Rufen Sie bitte an, dann komme ich zum Eingang. | 5분밖에 안 걸려요. 전화 주세요. 그러면 제가 입구로 나갈게요.
+Mann: Vielen Dank, Herr Park. Bis morgen! | 감사합니다, Herr Park. 내일 뵙겠습니다!
+
+-- fragen 세 대화를 듣고 답하세요.
+mc: Jiu는 무엇을 찾고 있나요? | die Universitätsbibliothek* | die Post | den Bahnhof
+rf: Jiu muss an der Ampel rechts gehen. | f => 신호등에서 왼쪽으로 가요.
+mc: 도서관까지 걸어서 얼마나 걸리나요? | zehn Minuten* | fünf Minuten | zwanzig Minuten
+mc: Sora는 어디에서 갈아타나요? | Konstablerwache* | Hauptbahnhof | Zoo
+rf: Eine Einzelfahrkarte kostet 3,80 Euro. | r
+mc: Hana의 표는 얼마인가요? | 1,55 Euro* | 3,80 Euro | 5,15 Euro
+mc: Herr Schneider는 무엇을 타고 프랑크푸르트에 오나요? | mit dem Zug* | mit dem Auto | mit dem Bus
+rf: Die Firma ist bei der Apotheke. | r
+
+-- kultur 대중교통 표, 이렇게 사고 이렇게 써요
+p: 독일 도시의 지하철(U-Bahn), 도시 철도(S-Bahn), 전차(Straßenbahn), 버스는 표 한 장으로 갈아타며 탈 수 있어요. 표는 역의 자동판매기나 교통 앱에서 사요. 한 번 타는 표는 Einzelfahrkarte, 하루 동안 여러 번 타는 표는 Tageskarte예요. 값은 도시마다 다르고 해마다 조금씩 달라져요.
+p: 독일 지하철역에는 개찰구가 없어요. 그 대신 검표원이 차 안에서 갑자기 표를 검사해요. 표가 없으면 보통 60유로를 내야 해요. 종이 표에 날짜와 시각을 찍어야 하는 도시도 있으니 자동판매기의 안내를 잘 읽어요.
+p: 날마다 대중교통을 타면 Deutschlandticket이 편해요. 달마다 돈을 내는 정기권으로, 독일 어디에서나 근거리 열차와 지하철, 전차, 버스를 탈 수 있어요. ICE 같은 장거리 열차는 탈 수 없어요. 대학생은 학기마다 내는 등록비에 교통권(Semesterticket)이 들어 있는 경우가 많아요.
+mc: 독일 지하철에서는 표를 어떻게 검사하나요? | 검표원이 차 안에서 검사해요* | 개찰구에 표를 넣어요 | 내릴 때 기사에게 보여 줘요
+
+== wortschatz
+-- gruppe In der Stadt | 시내에서
+der Bahnhof, die Bahnhöfe | 역 | Wo ist der Bahnhof? | 역이 어디예요?
+der Hauptbahnhof, die Hauptbahnhöfe | 중앙역 | Ich komme um neun am Hauptbahnhof an. | 아홉 시에 중앙역에 도착해요.
+die Haltestelle, die Haltestellen | 정류장 | Die Haltestelle ist an der Ecke. | 정류장은 모퉁이에 있어요.
+die Station, die Stationen | (지하철) 역, 정거장 | Das sind nur zwei Stationen. | 두 정거장밖에 안 돼요.
+die Post | 우체국 | Die Post ist am Platz. | 우체국은 광장에 있어요.
+die Bank, die Banken | 은행 | Ich muss heute zur Bank gehen. | 오늘 은행에 가야 해요.
+die Apotheke, die Apotheken | 약국 | Die Firma ist bei der Apotheke. | 회사는 약국 근처에 있어요.
+das Rathaus, die Rathäuser | 시청 | Der Bus fährt zum Rathaus. | 그 버스는 시청으로 가요.
+die Bibliothek, die Bibliotheken | 도서관 | Ich suche die Bibliothek. | 도서관을 찾고 있어요.
+der Platz, die Plätze | 광장, 자리 | Die Bibliothek ist am Platz. | 도서관은 광장에 있어요.
+der Park, die Parks | 공원 | Die Kinder spielen im Park. | 아이들이 공원에서 놀아요.
+die Ampel, die Ampeln | 신호등 | Gehen Sie an der Ampel links. | 신호등에서 왼쪽으로 가세요.
+die Ecke, die Ecken | 모퉁이 | Das Café ist an der Ecke. | 카페는 모퉁이에 있어요.
+der Eingang, die Eingänge | 입구 | Ich warte am Eingang. | 입구에서 기다릴게요.
+das Zentrum, die Zentren | 중심, 시내 | Das Rathaus ist im Zentrum. | 시청은 시내 중심에 있어요.
+
+-- gruppe Verkehrsmittel | 탈것
+der Bus, die Busse | 버스 | Ich fahre mit dem Bus. | 저는 버스를 타고 가요.
+die U-Bahn, die U-Bahnen | 지하철 | Nehmen Sie die U-Bahn. | 지하철을 타세요.
+die S-Bahn, die S-Bahnen | 도시 철도 | Die S-Bahn fährt nach Mainz. | 그 도시 철도는 마인츠로 가요.
+die Straßenbahn, die Straßenbahnen | 전차, 트램 | Die Straßenbahn fährt zum Bahnhof. | 그 전차는 역으로 가요.
+der Zug, die Züge | 기차 | Der Zug kommt um neun Uhr an. | 기차는 아홉 시에 도착해요.
+das Auto, die Autos | 자동차 | Kommen Sie mit dem Auto? | 차로 오세요?
+das Fahrrad, die Fahrräder | 자전거 | Markus fährt mit dem Fahrrad ins Büro. | Markus는 자전거를 타고 사무실에 가요.
+zu Fuß | 걸어서 | Ich gehe zu Fuß. | 저는 걸어서 가요.
+die Fahrkarte, die Fahrkarten | 차표 | Was kostet eine Fahrkarte? | 표는 얼마예요?
+der Automat, die Automaten | 자동판매기 | Sie können die Fahrkarte am Automaten kaufen. | 표는 자동판매기에서 살 수 있어요.
+die Linie, die Linien | 노선 | Die Linie 4 fährt zum Hauptbahnhof. | 4번 노선은 중앙역으로 가요. | say=Die Linie vier fährt zum Hauptbahnhof.
+umsteigen | 갈아타다 | Sie müssen am Hauptbahnhof umsteigen. | 중앙역에서 갈아타셔야 해요.
+einsteigen | 타다 | Wir steigen hier ein. | 우리는 여기서 타요.
+aussteigen | 내리다 | Steigen Sie an der Station Zoo aus. | Zoo 역에서 내리세요.
+ankommen | 도착하다 | Ich komme um neun Uhr an. | 저는 아홉 시에 도착해요.
+abfahren (du fährst ab, er fährt ab) | 떠나다, 출발하다 | Der Zug fährt um acht Uhr ab. | 기차는 여덟 시에 떠나요.
+
+-- gruppe Den Weg beschreiben | 길을 알려 줄 때
+der Weg, die Wege | 길 | Der Weg ist nicht weit. | 가는 길은 멀지 않아요.
+die Treppe, die Treppen | 계단 | Nehmen Sie hier die Treppe. | 여기 계단으로 가세요.
+suchen | 찾다 | Ich suche die Post. | 우체국을 찾고 있어요.
+zahlen | (돈을) 내다 | Kinder zahlen 1,55 Euro. | 어린이는 1유로 55센트를 내요. | say=Kinder zahlen einen Euro fünfundfünfzig.
+geradeaus | 곧장 | Gehen Sie hier geradeaus. | 여기서 곧장 가세요.
+links | 왼쪽에, 왼쪽으로 | Die Bank ist links. | 은행은 왼쪽에 있어요.
+rechts | 오른쪽에, 오른쪽으로 | Gehen Sie an der Ecke rechts. | 모퉁이에서 오른쪽으로 가세요.
+weit | 먼 | Ist es weit? – Nein, nur fünf Minuten. | 먼가요? – 아니요, 5분밖에 안 걸려요.
+in der Nähe | 근처에 | Ist hier eine Apotheke in der Nähe? | 이 근처에 약국이 있나요?
+bis zu | ~까지 | Gehen Sie bis zur Ampel. | 신호등까지 가세요.
+zurück | 되돌아 | Wir fahren am Abend zurück. | 우리는 저녁에 돌아와요.
+unten | 아래에 | Die U-Bahn fährt unten ab. | 지하철은 아래층에서 떠나요.
+wie lange | 얼마나 오래 | Wie lange brauche ich zu Fuß? | 걸어서 얼마나 걸려요?
+
+-- bilder
+der Bahnhof, die Bahnhöfe: a railway platform under a wide arched glass roof, a long train stands at the platform, a round clock without numbers hangs from the roof, a woman with a suitcase waits on the platform, her face with clearly drawn eyes, nose and mouth
+die Haltestelle, die Haltestellen: a bus stop with a small glass shelter, a bench and a pole with a blank round sign, one woman waits there and her face is visible
+die Ampel, die Ampeln: a traffic light pole next to a pedestrian crossing with white stripes
+die Apotheke, die Apotheken: a small shop front with a large window and a plain cross sign above the door, shelves with small boxes are seen inside
+der Eingang, die Eingänge: an open glass double door of a building with two steps in front, a man walks in and looks back with a smile
+die Treppe, die Treppen: a wide staircase with a handrail that leads down, a woman walks down and her face is visible
+der Bus, die Busse: a city bus seen from the side with a driver and passengers at the windows
+die U-Bahn, die U-Bahnen: a subway train that stands at an underground platform with open doors, a woman stands on the platform in front of the train and looks at the viewer, her face with clearly drawn eyes, nose and mouth
+die Straßenbahn, die Straßenbahnen: a tram on rails in a city street with overhead wires, seen from the side
+der Zug, die Züge: a long modern train on a track in a green landscape, seen from the side
+das Fahrrad, die Fahrräder: a man without a cap who rides a bicycle and turns his head to the viewer with a smile, full body, his face with clearly drawn eyes, nose and mouth
+die Fahrkarte, die Fahrkarten: a hand that holds two small rectangular blank paper tickets, close view
+
+-- tafel Wie komme ich zu …? | 방향과 순서
+p: 줄을 누르면 소리가 나요. 길을 알려 줄 때는 방향을 나타내는 말과 erste, zweite, dritte처럼 순서를 나타내는 말을 함께 써요.
+r: links = 왼쪽 ; rechts = 오른쪽 ; geradeaus = 곧장 | say=links, rechts, geradeaus.
+r: die erste Straße links ; die zweite Straße rechts | say=die erste Straße links, die zweite Straße rechts.
+r: die dritte Straße ; die vierte Straße | say=die dritte Straße, die vierte Straße.
+r: bis zur Ampel ; bis zum Bahnhof ; an der Ecke | say=bis zur Ampel, bis zum Bahnhof, an der Ecke.
+r: zwei Stationen ; fünf Minuten zu Fuß | say=zwei Stationen, fünf Minuten zu Fuß.
+
+-- tafel Womit fahren Sie? | 무엇을 타고 가요?
+p: 줄을 누르면 소리가 나요. 탈것 앞에는 mit을 쓰고, 관사가 dem이나 der로 바뀌어요. 걸어서 갈 때만 zu Fuß라고 해요.
+r: mit dem Bus ; mit dem Zug ; mit dem Auto | say=mit dem Bus, mit dem Zug, mit dem Auto.
+r: mit dem Fahrrad ; mit dem Taxi | say=mit dem Fahrrad, mit dem Taxi.
+r: mit der U-Bahn ; mit der S-Bahn ; mit der Straßenbahn | say=mit der U-Bahn, mit der S-Bahn, mit der Straßenbahn.
+r: zu Fuß | say=zu Fuß.
+
+-- aussprache St und Sp | 낱말 첫머리의 st와 sp
+p: 낱말이나 음절의 첫머리에 오는 st와 sp는 s를 '슈'처럼 내요. Straße는 '슈트라세', Station은 '슈타치온', sprechen은 '슈프레헨'에 가까워요. 영어 street처럼 '스'로 시작하지 않아요.
+p: 합쳐서 만든 낱말 안에서도 음절의 첫머리이면 똑같이 소리 나요. Haltestelle, umsteigen, aussteigen이 그래요. 낱말 끝의 st는 '스트' 그대로예요. Post와 ist가 그래요.
+hör: Straße, Stadt, Station | 낱말 첫머리의 st
+hör: Haltestelle, umsteigen, aussteigen | 낱말 안, 음절 첫머리의 st
+hör: sprechen, spät, Sport | 낱말 첫머리의 sp
+hör: Post, ist, Obst | 낱말 끝의 st는 그대로
+hör: Wir steigen an der Station Stadtmitte um. | 문장으로 들어요
+
+== grammatik
+-- punkt Imperativ mit Sie | Sie에게 하는 안내와 부탁
+bsp: *Gehen Sie* hier geradeaus. | 여기서 곧장 가세요.
+bsp: *Nehmen Sie* die U-Bahn. | 지하철을 타세요.
+bsp: *Steigen Sie* am Hauptbahnhof *um*. | 중앙역에서 갈아타세요.
+finde: Sie에게 무엇을 하라고 말할 때 문장은 무엇으로 시작하나요? | 동사* | Sie | bitte
+regel: Sie를 쓰는 상대에게 길을 알려 주거나 부탁할 때는 동사를 맨 앞에 놓고 바로 뒤에 Sie를 써요. 동사 모양은 원형과 같아요. 분리동사는 앞부분이 문장 끝으로 가요. bitte를 넣으면 더 공손해요.
+| 1 동사 | 2 | 가운데 | 끝
+| Gehen | Sie | geradeaus. |
+| Nehmen | Sie | die U-Bahn. |
+| Steigen | Sie | hier | um.
+| Rufen | Sie | bitte | an.
+merke: 모양은 네, 아니요로 답하는 질문과 같고 억양만 달라요. 질문은 끝을 올리고, 안내는 끝을 내려요. sein만 모양이 달라서 Seien Sie bitte pünktlich.라고 해요. du에게 하는 말은 3과에서 배워요.
+
+-- punkt Dativ nach mit, zu, bei, nach | mit, zu, bei 뒤에서 바뀌는 관사
+bsp: Ich fahre *mit dem* Bus. | 저는 버스를 타고 가요.
+bsp: Wie komme ich *zum* Bahnhof? | 역에 어떻게 가요?
+bsp: Die Firma ist *bei der* Apotheke. | 회사는 약국 근처에 있어요.
+bsp: Die S-Bahn fährt *nach* Mainz. | 그 도시 철도는 마인츠로 가요.
+finde: mit 뒤에서 der Bus의 der는 어떻게 바뀌나요? | dem* | den | der
+regel: mit(~을 타고, ~와 함께), zu(~로), bei(~ 근처에, ~ 회사에서) 뒤에는 언제나 Dativ(3격)를 써요. Dativ에서 der와 das는 dem, die는 der, 복수의 die는 den이 돼요. zu dem은 zum, zu der는 zur, bei dem은 beim으로 줄여 써요.
+| | 1격 | Dativ | 예
+| 남성 | der Bus | d*em* Bus | mit dem Bus
+| 중성 | das Auto | d*em* Auto | mit dem Auto
+| 여성 | die U-Bahn | d*er* U-Bahn | mit der U-Bahn
+| 복수 | die Kinder | d*en* Kinder*n* | mit den Kindern
+merke: ein과 mein도 똑같이 바뀌어요. mit einem Freund, mit meiner Tochter. 복수 Dativ에서는 명사 끝에도 -n을 붙여요. 도시와 나라로 갈 때는 zu가 아니라 nach를 쓰고 관사를 붙이지 않아요. nach Mainz, nach Korea. '집으로'는 nach Hause, '집에'는 zu Hause예요.
+
+-- punkt Wo? in, an, auf + Dativ | 어디에 있는지 말하기
+bsp: Das Rathaus ist *im* Zentrum. | 시청은 시내 중심에 있어요.
+bsp: Gehen Sie *an der* Ampel links. | 신호등에서 왼쪽으로 가세요.
+bsp: Die Kinder spielen *auf dem* Platz. | 아이들이 광장에서 놀아요.
+finde: in dem을 줄이면 어떻게 되나요? | im* | ins | am
+regel: 있는 곳을 말할 때(Wo?) in, an, auf 뒤에 Dativ를 써요. in은 건물이나 공간 안, an은 바로 옆이나 가장자리, auf는 위나 탁 트인 곳이에요. in dem은 im, an dem은 am으로 줄여 써요.
+| | in | an | auf
+| 남성 | *im* Park | *am* Bahnhof | auf *dem* Platz
+| 중성 | *im* Zentrum | *am* Rathaus | auf *dem* Foto
+| 여성 | in *der* Stadt | an *der* Ampel | auf *der* Straße
+merke: 지금까지 통째로 써 온 im Büro, in der Schule, in der Bibliothek가 모두 이 규칙이에요. 길 이름 앞에는 in der를 써요. Die Firma ist in der Musterstraße. 가는 곳을 말할 때(Wohin?)는 규칙이 달라요. 그것은 A2.1에서 배워요. 지금은 ins Kino, ins Büro를 통째로 기억해요.
+
+== training
+-- ex Hören | 길 안내를 듣고 알맞은 것을 고르세요.
+hör: Mann: Gehen Sie geradeaus und dann die zweite Straße rechts.
+mc: 어디에서 돌아야 하나요? | 두 번째 길에서 오른쪽* | 두 번째 길에서 왼쪽 | 첫 번째 길에서 오른쪽
+hör: Frau: Nehmen Sie den Bus Linie 36 bis zum Rathaus. | say=Nehmen Sie den Bus Linie sechsunddreißig bis zum Rathaus.
+mc: 어디까지 가야 하나요? | 시청까지* | 역까지 | 우체국까지
+hör: Mann: Die Post? Die ist nicht weit. Gehen Sie an der Ampel links. Sie brauchen drei Minuten.
+mc: 우체국까지 얼마나 걸리나요? | 3분* | 13분 | 30분
+hör: Frau: Steigen Sie am Hauptbahnhof um und nehmen Sie die S8 nach Mainz. | say=Steigen Sie am Hauptbahnhof um und nehmen Sie die S acht nach Mainz.
+mc: 어디에서 갈아타나요? | 중앙역* | 마인츠 | 시청
+
+-- ex Hören | Markus와 Dohyun이 출근길 이야기를 해요. 듣고 알맞은 것을 고르세요.
+audio | Wie kommst du zur Arbeit?
+> Markus: Dohyun, wie kommst du zur Arbeit? Mit der U-Bahn?
+> Dohyun: Nein, ich wohne in der Nähe. Ich gehe zu Fuß. Ich brauche nur fünfzehn Minuten.
+> Markus: Du hast es gut! Ich fahre mit dem Fahrrad zum Bahnhof und dann mit der S-Bahn. Ich brauche fünfundvierzig Minuten.
+> Dohyun: Fährst du nie mit dem Auto?
+> Markus: Nein. In der Stadt brauche ich kein Auto.
+mc: Dohyun은 회사에 어떻게 가나요? | zu Fuß* | mit der U-Bahn | mit dem Fahrrad
+mc: Markus는 역까지 무엇을 타고 가나요? | mit dem Fahrrad* | mit dem Bus | mit dem Auto
+mc: Markus는 회사까지 얼마나 걸리나요? | 45 Minuten* | 15 Minuten | 54 Minuten
+
+-- ex Lesen | 박물관 누리집의 찾아오는 길 안내를 읽고, 맞으면 richtig, 틀리면 falsch를 고르세요. Anfahrt는 찾아오는 길, Parkplätze는 주차 자리, Parkhaus는 주차 건물이에요.
+text notiz | Stadtmuseum: Anfahrt
+> Mit der U-Bahn: Nehmen Sie die Linie U3 bis zur Station Marktplatz. Dann gehen Sie fünf Minuten zu Fuß.
+> Mit dem Bus: Die Linie 42 fährt zum Museum. Steigen Sie an der Haltestelle Stadtmuseum aus.
+> Mit dem Auto: Das Museum hat keine Parkplätze. Parken Sie bitte im Parkhaus am Rathaus.
+> Mit dem Fahrrad: Fahrräder können Sie am Eingang parken.
+rf: Die U3 fährt bis zur Station Marktplatz. | r
+rf: Von der Station Marktplatz brauchen Sie zu Fuß fünfzehn Minuten. | f => 역에서 걸어서 5분 걸려요.
+rf: Mit dem Bus fahren Sie bis zur Haltestelle Stadtmuseum. | r
+rf: Am Museum können Sie mit dem Auto parken. | f => 박물관에는 주차 자리가 없어요. 시청 옆 주차 건물에 세워요.
+rf: Das Parkhaus ist am Rathaus. | r
+
+-- ex Grammatik | Sie에게 하는 안내를 완성하세요. 알맞은 말을 고르세요.
+gap: [Gehen|Geht|Gehst] Sie hier geradeaus.
+gap: [Nehmen|Nimmt|Nimmst] Sie die U-Bahn.
+gap: Steigen Sie am Hauptbahnhof [um|an|auf].
+gap: [Fahren|Fährt|Fahrt] Sie bis zum Rathaus.
+gap: Rufen Sie bitte morgen [an|um|aus].
+gap: [Kommen|Kommt|Kommst] Sie bitte um neun.
+
+-- ex Grammatik | mit 뒤에 알맞은 관사를 고르세요.
+gap: Ich fahre mit [dem|der|den] Bus.
+gap: Sora fährt mit [der|dem|die] U-Bahn.
+gap: Markus fährt mit [dem|der|das] Fahrrad.
+gap: Wir fahren mit [dem|den|der] Zug nach Mainz.
+gap: Jiu fährt mit [der|dem|die] Straßenbahn.
+gap: Kommen Sie mit [dem|das|der] Auto?
+
+-- ex Grammatik | zum과 zur 가운데 알맞은 말을 고르세요.
+gap: Wie komme ich [zum|zur] Bahnhof?
+gap: Wie komme ich [zur|zum] Post?
+gap: Gehen Sie bis [zur|zum] Ampel.
+gap: Der Bus fährt [zum|zur] Rathaus.
+gap: Ich muss heute [zur|zum] Bank gehen.
+
+-- ex Grammatik | 있는 곳을 나타내는 알맞은 말을 고르세요.
+gap: Das Rathaus ist [im|in der|am] Zentrum.
+gap: Die Haltestelle ist [an der|am|im] Ecke.
+gap: Jiu lernt [in der|im|an der] Bibliothek.
+gap: Ich komme um neun [am|im|an der] Hauptbahnhof an.
+gap: Die Kinder spielen [auf dem|auf der|in der] Platz.
+gap: Die Firma ist [in der|im|am] Musterstraße.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: gehen / Sie / hier / geradeaus. | 여기서 곧장 가세요.
+ord: wie / komme / ich / zum Bahnhof? | 역에 어떻게 가요?
+ord: ich / fahre / mit dem Bus / zur Arbeit. | 저는 버스를 타고 일하러 가요.
+ord: steigen / Sie / am Rathaus / aus. | 시청에서 내리세요.
+ord: die Post / ist / an der / Ecke. | 우체국은 모퉁이에 있어요.
+
+-- ex Wortschatz | 알맞은 관사를 고르세요. | opt: der / das / die
+wahl: Bahnhof | der
+wahl: Haltestelle | die
+wahl: Auto | das
+wahl: Bus | der
+wahl: U-Bahn | die
+wahl: Fahrrad | das
+wahl: Ampel | die
+wahl: Zug | der
+
+-- ex Wortschatz | 반대가 되는 말끼리 짝지으세요.
+paar: links = rechts ; einsteigen = aussteigen ; abfahren = ankommen ; weit = in der Nähe ; hier = dort
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Jiu: Entschuldigung, wo ist die Post? | 실례합니다, 우체국이 어디예요?
+dik: Mann: Gehen Sie an der Ampel links. | 신호등에서 왼쪽으로 가세요.
+dik: Dohyun: Ich fahre mit der U-Bahn. | 저는 지하철을 타고 가요.
+
+== aufgabe
+-- redemittel
+길 묻기: Entschuldigung, wo ist …? | 실례합니다, …이 어디예요? ; Wie komme ich zum Bahnhof / zur Post? | 역에 / 우체국에 어떻게 가요? ; Ich suche … | …을 찾고 있어요. ; Ist das weit? | 먼가요?
+길 알려 주기: Gehen Sie geradeaus. | 곧장 가세요. ; Gehen Sie an der Ampel links / rechts. | 신호등에서 왼쪽 / 오른쪽으로 가세요. ; Nehmen Sie die zweite Straße links. | 두 번째 길에서 왼쪽으로 가세요. ; Das ist in der Nähe. | 근처에 있어요.
+교통편 알려 주기: Nehmen Sie die U-Bahn / den Bus. | 지하철을 / 버스를 타세요. ; Steigen Sie am Hauptbahnhof um. | 중앙역에서 갈아타세요. ; Steigen Sie an der Station … aus. | … 역에서 내리세요.
+무엇을 타고 가는지 말하기: Ich fahre mit dem Bus / mit der U-Bahn. | 버스를 / 지하철을 타고 가요. ; Ich gehe zu Fuß. | 걸어서 가요. ; Ich brauche zwanzig Minuten. | 20분 걸려요.
+표 사기: Was kostet eine Fahrkarte? | 표는 얼마예요? ; Eine Einzelfahrkarte, bitte. | 한 번 타는 표 한 장 주세요. ; Wo kann ich Fahrkarten kaufen? | 표는 어디에서 살 수 있어요?
+잘 모를 때: Tut mir leid, ich bin nicht von hier. | 죄송해요, 저는 이곳 사람이 아니에요. ; Noch einmal, bitte. | 한 번 더 말해 주세요.
+
+--S rolle A | Jiu, Mann
+
+--B rolle C | Dohyun, Mann
+
+-- ich 나는 이렇게 다녀요 | 내가 날마다 가는 곳을 떠올리고 칸을 채우세요. 탈것은 mit dem Bus, mit der U-Bahn, zu Fuß처럼, 가는 곳은 zur Universität, zur Arbeit, zum Kurs처럼 써요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: wo | 사는 곳 | in Bockenheim
+feld: wie | 탈것 | mit der U-Bahn
+feld: wohin | 가는 곳 | zur Universität
+feld: min | 걸리는 시간 (분) | zwanzig
+satz: Ich wohne {wo}.
+satz: Ich komme {wie} {wohin}.
+satz: Ich brauche {min} Minuten.
+
+--S info 캠퍼스에서
+p: 대학에 온 첫날이에요. 도서관(Bibliothek)과 3번 강의실(Hörsaal 3)을 찾아야 해요. 지나가는 학생에게 길을 물어요. 학생끼리는 du를 써요.
+p: 들은 길을 되풀이해서 확인하고, 끝에 고맙다고 인사해요.
+
+--S sprich Auf dem Campus | 캠퍼스에서 만난 학생에게 도서관과 강의실 가는 길을 물어요. 학생의 말을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요. | Mann=Student
+f: Mann: Hallo! Suchst du etwas? | 안녕하세요! 뭐 찾아요? => Ja. Entschuldigung, wo ist die Bibliothek?
+f: Mann: Die Bibliothek ist nicht weit. Du gehst hier geradeaus und dann an der Ecke links. | 도서관은 멀지 않아요. 여기서 곧장 가다가 모퉁이에서 왼쪽으로 가요. => Geradeaus und dann an der Ecke links. Danke! Und wo ist der Hörsaal 3?
+f: Mann: Der Hörsaal 3 ist im Hauptgebäude, rechts am Eingang. | 3번 강의실은 본관에 있어요. 입구에서 오른쪽이에요. | say=Der Hörsaal drei ist im Hauptgebäude, rechts am Eingang. => Im Hauptgebäude, rechts am Eingang. Ist das weit?
+f: Mann: Nein, nur zwei Minuten zu Fuß. Das Hauptgebäude ist dort an der Ampel. | 아니요, 걸어서 2분이에요. 본관은 저기 신호등 옆에 있어요. => Ah, dort an der Ampel. Vielen Dank!
+f: Mann: Gern. Viel Erfolg! | 천만에요. 잘해 봐요! => Danke! Tschüss!
+
+--S schreiben Mein Weg zum Kurs | 내가 어학원이나 대학까지 가는 길을 써 보세요. 네 문장이면 충분해요.
+punkt: 사는 곳 ; 탈것 ; 갈아타는 곳이나 내리는 곳 ; 걸리는 시간
+start: Ich wohne in …
+muster: Ich wohne in Bockenheim. Ich fahre mit der U-Bahn zur Universität. Ich nehme die U4 und steige am Hauptbahnhof um. Dann fahre ich mit dem Bus bis zur Haltestelle Campus. Ich brauche dreißig Minuten.
+check: mit 뒤에 dem, der를 맞게 썼나요? ; zum, zur를 맞게 썼나요? ; 분리동사의 앞부분을 문장 끝에 썼나요? ; 걸리는 시간을 썼나요?
+
+--B info 회사 오는 길 쪽지
+p: 내 회사는 Kessler Technik이고 주소는 Musterstraße 12예요. 내일 거래처의 Herr Schneider가 처음으로 회사에 와요.
+p: 중앙역에서 U4를 타고 Bockenheimer Warte 역에서 내려요. 역에서 오른쪽으로 가다가 두 번째 길에서 왼쪽으로 돌면 Musterstraße예요. 회사는 약국 근처에 있고, 역에서 걸어서 5분 걸려요.
+
+--B sprich Der Weg zu Kessler Technik | Herr Schneider가 전화로 회사 오는 길을 물어요. 쪽지를 보고 Sie로 안내하세요. 질문을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요. | Mann=Herr Schneider
+f: Mann: Guten Tag! Ich komme morgen mit dem Zug. Wie komme ich zur Firma? | 안녕하세요! 내일 기차로 갑니다. 회사까지 어떻게 가나요? => Guten Tag, Herr Schneider! Nehmen Sie am Hauptbahnhof die U4 bis Bockenheimer Warte.
+f: Mann: Bis Bockenheimer Warte. Und dann? | Bockenheimer Warte까지요. 그다음에는요? => Gehen Sie an der Station rechts. Nehmen Sie dann die zweite Straße links. Das ist die Musterstraße.
+f: Mann: Ist die Firma weit? | 회사가 먼가요? => Nein, nur fünf Minuten zu Fuß. Die Firma ist bei der Apotheke.
+f: Mann: Gut. Und wo ist der Eingang? | 알겠습니다. 입구는 어디예요? => Der Eingang ist an der Ecke. Rufen Sie bitte an, dann komme ich zum Eingang.
+f: Mann: Vielen Dank! Bis morgen um zehn. | 감사합니다! 내일 열 시에 뵙겠습니다. => Bis morgen, Herr Schneider! Auf Wiederhören!
+
+--B schreiben Eine Wegbeschreibung | 내일 회사에 처음 오는 손님에게 오는 길을 알려 주는 메일을 써 보세요. 네 문장이면 충분해요.
+punkt: 탈것과 노선 ; 내리는 역 ; 역에서 회사까지 가는 길 ; 걸리는 시간
+start: Guten Tag, Herr Schneider, …
+muster: Guten Tag, Herr Schneider, nehmen Sie am Hauptbahnhof die U4 bis Bockenheimer Warte. Gehen Sie an der Station rechts und nehmen Sie dann die zweite Straße links. Die Firma ist in der Musterstraße 12, bei der Apotheke. Sie brauchen fünf Minuten zu Fuß. Viele Grüße, Minji Choi
+check: 안내하는 문장을 동사로 시작했나요? ; 동사 바로 뒤에 Sie를 썼나요? ; in der, an der, bei der를 맞게 썼나요? ; 걸리는 시간을 썼나요?
+
+-- kann
+Ich kann nach dem Weg fragen. | 길을 물을 수 있어요.
+Ich kann einen Weg beschreiben. | 길을 알려 줄 수 있어요.
+Ich kann sagen, wie ich zur Arbeit oder zum Kurs komme. | 무엇을 타고 다니는지 말할 수 있어요.
+Ich kann eine Fahrkarte kaufen. | 표를 살 수 있어요.
+
+-- tipp 다니는 길을 독일어로 말해 봐요
+p: 길 안내는 말하기보다 듣기가 어려워요. 상대가 빠르게 말해도 links, rechts, geradeaus와 숫자만 잡으면 길을 찾을 수 있어요. 들은 말을 Also geradeaus und dann links?처럼 되풀이해서 확인해요.
+p: 날마다 다니는 길을 걸으면서 속으로 안내해 보세요. Jetzt gehe ich geradeaus. An der Ampel gehe ich links. 지도 앱의 안내 음성을 독일어로 바꿔 두면 길 안내 표현을 날마다 듣게 돼요.

@@ -1,0 +1,32 @@
+{
+ "job": "e3_ji_04",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Schön! Ich war noch nie in Hamburg."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Gestern bin ich um sechs Uhr aufgestanden."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Ich bin zu Hause geblieben."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Schön! Ich war noch nie in Hamburg. [pause] Gestern bin ich um sechs Uhr aufgestanden. [pause] Ich bin zu Hause geblieben. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,89 @@
+{
+ "job": "e3_n_14",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Zimmer, die Zimmer.",
+    "Das Zimmer ist sechzehn Quadratmeter groß."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Wohnzimmer, die Wohnzimmer.",
+    "Das Wohnzimmer ist groß und hell."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Schlafzimmer, die Schlafzimmer.",
+    "Das Schlafzimmer ist rechts."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Küche, die Küchen.",
+    "Die Küche ist neu."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Bad, die Bäder.",
+    "Das Bad ist klein."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Balkon, die Balkone."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Keller, die Keller.",
+    "Leider gibt es keinen Keller."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Flur, die Flure.",
+    "Der Schrank steht im Flur."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Miete, die Mieten."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Nebenkosten.",
+    "Die Nebenkosten sind zweihundertfünfzig Euro."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Zimmer, die Zimmer. Das Zimmer ist sechzehn Quadratmeter groß. [pause] das Wohnzimmer, die Wohnzimmer. Das Wohnzimmer ist groß und hell. [pause] das Schlafzimmer, die Schlafzimmer. Das Schlafzimmer ist rechts. [pause] die Küche, die Küchen. Die Küche ist neu. [pause] das Bad, die Bäder. Das Bad ist klein. [pause] der Balkon, die Balkone. [pause] der Keller, die Keller. Leider gibt es keinen Keller. [pause] der Flur, die Flure. Der Schrank steht im Flur. [pause] die Miete, die Mieten. [pause] die Nebenkosten. Die Nebenkosten sind zweihundertfünfzig Euro. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

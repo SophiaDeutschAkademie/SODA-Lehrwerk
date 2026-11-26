@@ -1,0 +1,91 @@
+{
+ "job": "e3_n_08",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Apotheke, die Apotheken.",
+    "Die Firma ist bei der Apotheke."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "das Rathaus, die Rathäuser.",
+    "Der Bus fährt zum Rathaus."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Bibliothek, die Bibliotheken.",
+    "Ich suche die Bibliothek."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Platz, die Plätze.",
+    "Die Bibliothek ist am Platz."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Park, die Parks.",
+    "Die Kinder spielen im Park."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Ampel, die Ampeln.",
+    "Gehen Sie an der Ampel links."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Ecke, die Ecken.",
+    "Das Café ist an der Ecke."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Eingang, die Eingänge.",
+    "Ich warte am Eingang."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "das Zentrum, die Zentren.",
+    "Das Rathaus ist im Zentrum."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Bus, die Busse.",
+    "Ich fahre mit dem Bus."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Apotheke, die Apotheken. Die Firma ist bei der Apotheke. [pause] das Rathaus, die Rathäuser. Der Bus fährt zum Rathaus. [pause] die Bibliothek, die Bibliotheken. Ich suche die Bibliothek. [pause] der Platz, die Plätze. Die Bibliothek ist am Platz. [pause] der Park, die Parks. Die Kinder spielen im Park. [pause] die Ampel, die Ampeln. Gehen Sie an der Ampel links. [pause] die Ecke, die Ecken. Das Café ist an der Ecke. [pause] der Eingang, die Eingänge. Ich warte am Eingang. [pause] das Zentrum, die Zentren. Das Rathaus ist im Zentrum. [pause] der Bus, die Busse. Ich fahre mit dem Bus. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

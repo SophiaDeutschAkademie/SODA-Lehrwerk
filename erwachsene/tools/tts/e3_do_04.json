@@ -1,0 +1,74 @@
+{
+ "job": "e3_do_04",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "Dohyun",
+   "parts": [
+    "Hallo Markus, hier ist Dohyun. Ich bin krank. Ich kann heute nicht kommen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Dohyun",
+   "parts": [
+    "Eine Erkältung. Die Ärztin sagt, ich soll im Bett bleiben. Ich darf bis Freitag nicht arbeiten."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Dohyun",
+   "parts": [
+    "Ja, bitte. Und kannst du meinen Termin am Donnerstag absagen?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Dohyun",
+   "parts": [
+    "Ja, danke. Letzte Woche war ich drei Tage krank, aber jetzt geht es mir gut."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Dohyun",
+   "parts": [
+    "Am Montag habe ich den Kunden in Mainz besucht. Am Dienstag habe ich das Angebot geschrieben."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Dohyun",
+   "parts": [
+    "Ja, ich habe es am Dienstagabend geschickt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Dohyun",
+   "parts": [
+    "Der Bericht ist leider noch nicht fertig. Ich hatte keine Zeit."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Dohyun",
+   "parts": [
+    "Ja, das geht."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Dohyun",
+   "parts": [
+    "Schön! Am Samstag habe ich die Wohnung geputzt. Am Abend habe ich mit meiner Frau telefoniert."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hallo Markus, hier ist Dohyun. Ich bin krank. Ich kann heute nicht kommen. [pause] Eine Erkältung. Die Ärztin sagt, ich soll im Bett bleiben. Ich darf bis Freitag nicht arbeiten. [pause] Ja, bitte. Und kannst du meinen Termin am Donnerstag absagen? [pause] Ja, danke. Letzte Woche war ich drei Tage krank, aber jetzt geht es mir gut. [pause] Am Montag habe ich den Kunden in Mainz besucht. Am Dienstag habe ich das Angebot geschrieben. [pause] Ja, ich habe es am Dienstagabend geschickt. [pause] Der Bericht ist leider noch nicht fertig. Ich hatte keine Zeit. [pause] Ja, das geht. [pause] Schön! Am Samstag habe ich die Wohnung geputzt. Am Abend habe ich mit meiner Frau telefoniert. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

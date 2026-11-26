@@ -1,0 +1,81 @@
+{
+ "job": "e3_ma_02",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Vielen Dank, Herr Park. Bis morgen!"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Gehen Sie geradeaus und dann die zweite Straße rechts."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Die Post? Die ist nicht weit. Gehen Sie an der Ampel links. Sie brauchen drei Minuten."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Gehen Sie an der Ampel links."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Hallo! Suchst du etwas?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Die Bibliothek ist nicht weit. Du gehst hier geradeaus und dann an der Ecke links."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Der Hörsaal drei ist im Hauptgebäude, rechts am Eingang."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Nein, nur zwei Minuten zu Fuß. Das Hauptgebäude ist dort an der Ampel."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Gern. Viel Erfolg!"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag! Ich komme morgen mit dem Zug. Wie komme ich zur Firma?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Vielen Dank, Herr Park. Bis morgen! [pause] Gehen Sie geradeaus und dann die zweite Straße rechts. [pause] Die Post? Die ist nicht weit. Gehen Sie an der Ampel links. Sie brauchen drei Minuten. [pause] Gehen Sie an der Ampel links. [pause] Hallo! Suchst du etwas? [pause] Die Bibliothek ist nicht weit. Du gehst hier geradeaus und dann an der Ecke links. [pause] Der Hörsaal drei ist im Hauptgebäude, rechts am Eingang. [pause] Nein, nur zwei Minuten zu Fuß. Das Hauptgebäude ist dort an der Ampel. [pause] Gern. Viel Erfolg! [pause] Guten Tag! Ich komme morgen mit dem Zug. Wie komme ich zur Firma? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

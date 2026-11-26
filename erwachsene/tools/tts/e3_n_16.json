@@ -1,0 +1,91 @@
+{
+ "job": "e3_n_16",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Schreibtisch, die Schreibtische.",
+    "Der Schreibtisch steht am Fenster."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Sofa, die Sofas.",
+    "Das Sofa ist neu."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Regal, die Regale.",
+    "Das Regal steht neben dem Sofa."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Lampe, die Lampen.",
+    "Die Lampe hängt über dem Tisch."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "der Fernseher, die Fernseher.",
+    "Der Fernseher steht im Wohnzimmer."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Waschmaschine, die Waschmaschinen.",
+    "Die Waschmaschine steht im Bad."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Fenster, die Fenster.",
+    "Das Zimmer hat zwei Fenster."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Tür, die Türen.",
+    "Die Tür ist rechts."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "die Wand, die Wände.",
+    "An der Wand hängt ein Bild."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "das Bild, die Bilder.",
+    "Das Bild ist von Hana."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Schreibtisch, die Schreibtische. Der Schreibtisch steht am Fenster. [pause] das Sofa, die Sofas. Das Sofa ist neu. [pause] das Regal, die Regale. Das Regal steht neben dem Sofa. [pause] die Lampe, die Lampen. Die Lampe hängt über dem Tisch. [pause] der Fernseher, die Fernseher. Der Fernseher steht im Wohnzimmer. [pause] die Waschmaschine, die Waschmaschinen. Die Waschmaschine steht im Bad. [pause] das Fenster, die Fenster. Das Zimmer hat zwei Fenster. [pause] die Tür, die Türen. Die Tür ist rechts. [pause] die Wand, die Wände. An der Wand hängt ein Bild. [pause] das Bild, die Bilder. Das Bild ist von Hana. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,89 @@
+{
+ "job": "e3_n_05",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Das geht.",
+    "Um halb vier? Ja, das geht."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Das geht leider nicht.",
+    "Am Dienstag? Das geht leider nicht."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "pünktlich.",
+    "Ich komme immer pünktlich."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "zu spät.",
+    "Entschuldigung, ich komme zu spät."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "wichtig.",
+    "Der Termin ist sehr wichtig."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "heute Abend.",
+    "Hast du heute Abend Zeit?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "übermorgen.",
+    "Übermorgen habe ich einen Arzttermin."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "nächste Woche.",
+    "Nächste Woche habe ich viele Termine."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "am Montag, am Freitagabend, am Wochenende."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "um drei Uhr, um halb vier, um fünfzehn Uhr dreißig."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das geht. Um halb vier? Ja, das geht. [pause] Das geht leider nicht. Am Dienstag? Das geht leider nicht. [pause] pünktlich. Ich komme immer pünktlich. [pause] zu spät. Entschuldigung, ich komme zu spät. [pause] wichtig. Der Termin ist sehr wichtig. [pause] heute Abend. Hast du heute Abend Zeit? [pause] übermorgen. Übermorgen habe ich einen Arzttermin. [pause] nächste Woche. Nächste Woche habe ich viele Termine. [pause] am Montag, am Freitagabend, am Wochenende. [pause] um drei Uhr, um halb vier, um fünfzehn Uhr dreißig. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

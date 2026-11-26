@@ -1,0 +1,81 @@
+{
+ "job": "e3_fr_02",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Gut. Wie ist Ihre Telefonnummer?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Danke. Also am Mittwoch um vierzehn Uhr dreißig. Auf Wiederhören!"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Nehmen Sie die U vier bis Konstablerwache. Dort steigen Sie um."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Dann nehmen Sie die U sechs oder die U sieben. Die Station heißt Zoo."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Hier am Automaten oder in der App. Eine Einzelfahrkarte kostet drei Euro achtzig."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Kinder zahlen einen Euro fünfundfünfzig."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Die U-Bahn fährt unten ab. Nehmen Sie hier die Treppe."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Nehmen Sie den Bus Linie sechsunddreißig bis zum Rathaus."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Steigen Sie am Hauptbahnhof um und nehmen Sie die S acht nach Mainz."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag, Herr Park! Kommen Sie bitte herein."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gut. Wie ist Ihre Telefonnummer? [pause] Danke. Also am Mittwoch um vierzehn Uhr dreißig. Auf Wiederhören! [pause] Nehmen Sie die U vier bis Konstablerwache. Dort steigen Sie um. [pause] Dann nehmen Sie die U sechs oder die U sieben. Die Station heißt Zoo. [pause] Hier am Automaten oder in der App. Eine Einzelfahrkarte kostet drei Euro achtzig. [pause] Kinder zahlen einen Euro fünfundfünfzig. [pause] Die U-Bahn fährt unten ab. Nehmen Sie hier die Treppe. [pause] Nehmen Sie den Bus Linie sechsunddreißig bis zum Rathaus. [pause] Steigen Sie am Hauptbahnhof um und nehmen Sie die S acht nach Mainz. [pause] Guten Tag, Herr Park! Kommen Sie bitte herein. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

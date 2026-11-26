@@ -1,0 +1,32 @@
+{
+ "job": "e3_so_04",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "Sora",
+   "parts": [
+    "Nein, noch nicht. Ich habe zuerst Deutsch gelernt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Sora",
+   "parts": [
+    "Ja, hier bitte. Ich habe den Lebenslauf gestern geschrieben."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Sora",
+   "parts": [
+    "Wir sind am Sonntag mit dem Zug nach Mainz gefahren."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Nein, noch nicht. Ich habe zuerst Deutsch gelernt. [pause] Ja, hier bitte. Ich habe den Lebenslauf gestern geschrieben. [pause] Wir sind am Sonntag mit dem Zug nach Mainz gefahren. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

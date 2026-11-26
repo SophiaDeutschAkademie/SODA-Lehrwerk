@@ -1,0 +1,81 @@
+{
+ "job": "e3_ho_01",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "Hoffmann",
+   "parts": [
+    "Ja, natürlich, Herr Park."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Hoffmann",
+   "parts": [
+    "Kein Problem. Können Sie am Mittwoch?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Hoffmann",
+   "parts": [
+    "Gut. Dann am Mittwoch um vierzehn Uhr?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Hoffmann",
+   "parts": [
+    "Ich muss noch Markus fragen. Er will auch kommen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Hoffmann",
+   "parts": [
+    "Sehr gut. Also: Mittwoch, vierzehn Uhr, Raum drei."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Hoffmann",
+   "parts": [
+    "Guten Morgen! Die Besprechung ist am Dienstag um zehn Uhr. Können Sie kommen?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Hoffmann",
+   "parts": [
+    "Ja, das geht. Wann haben Sie Zeit?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Hoffmann",
+   "parts": [
+    "Dann am Mittwoch. Können Sie um neun Uhr?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Hoffmann",
+   "parts": [
+    "Gut. Können Sie Markus eine E-Mail schreiben?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Hoffmann",
+   "parts": [
+    "Vielen Dank! Bis Mittwoch."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ja, natürlich, Herr Park. [pause] Kein Problem. Können Sie am Mittwoch? [pause] Gut. Dann am Mittwoch um vierzehn Uhr? [pause] Ich muss noch Markus fragen. Er will auch kommen. [pause] Sehr gut. Also: Mittwoch, vierzehn Uhr, Raum drei. [pause] Guten Morgen! Die Besprechung ist am Dienstag um zehn Uhr. Können Sie kommen? [pause] Ja, das geht. Wann haben Sie Zeit? [pause] Dann am Mittwoch. Können Sie um neun Uhr? [pause] Gut. Können Sie Markus eine E-Mail schreiben? [pause] Vielen Dank! Bis Mittwoch. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

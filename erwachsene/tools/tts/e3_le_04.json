@@ -1,0 +1,81 @@
+{
+ "job": "e3_le_04",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Gut. Soll ich einen Tee machen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Und geh bitte zum Arzt!"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Hallo Jiu! Ich bin wieder da. Wie war dein Wochenende?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Und am Sonntag?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Bist du nicht ins Kino gegangen?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Sehr schön! Ich habe meine Schwestern besucht. Wir haben einen Ausflug gemacht und viel Fisch gegessen."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Nein, das Wetter war schlecht. Aber wir hatten viel Spaß."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Dann fahren wir nächstes Mal zusammen!"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Ich war noch nie in Korea."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Wie war dein Wochenende?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gut. Soll ich einen Tee machen? [pause] Und geh bitte zum Arzt! [pause] Hallo Jiu! Ich bin wieder da. Wie war dein Wochenende? [pause] Und am Sonntag? [pause] Bist du nicht ins Kino gegangen? [pause] Sehr schön! Ich habe meine Schwestern besucht. Wir haben einen Ausflug gemacht und viel Fisch gegessen. [pause] Nein, das Wetter war schlecht. Aber wir hatten viel Spaß. [pause] Dann fahren wir nächstes Mal zusammen! [pause] Ich war noch nie in Korea. [pause] Wie war dein Wochenende? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

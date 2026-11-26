@@ -1,0 +1,91 @@
+{
+ "job": "e3_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Beratung, die Beratungen.",
+    "Ich brauche einen Termin für eine Beratung."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "der Kunde, die Kunden.",
+    "Dohyun muss einen Kunden besuchen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Kundin, die Kundinnen.",
+    "Die Kundin kommt um elf."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "der Raum, die Räume.",
+    "Die Besprechung ist in Raum drei."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "der Test, die Tests.",
+    "Am Montag haben wir einen Test."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "das Kino, die Kinos.",
+    "Wir gehen am Freitag ins Kino."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "das Museum, die Museen.",
+    "Am Samstag gehen wir ins Museum."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Versichertenkarte, die Versichertenkarten.",
+    "Sie müssen die Versichertenkarte mitbringen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "die Minute, die Minuten.",
+    "Ich komme zehn Minuten später."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "können, du kannst, er kann.",
+    "Ich kann am Nachmittag kommen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Beratung, die Beratungen. Ich brauche einen Termin für eine Beratung. [pause] der Kunde, die Kunden. Dohyun muss einen Kunden besuchen. [pause] die Kundin, die Kundinnen. Die Kundin kommt um elf. [pause] der Raum, die Räume. Die Besprechung ist in Raum drei. [pause] der Test, die Tests. Am Montag haben wir einen Test. [pause] das Kino, die Kinos. Wir gehen am Freitag ins Kino. [pause] das Museum, die Museen. Am Samstag gehen wir ins Museum. [pause] die Versichertenkarte, die Versichertenkarten. Sie müssen die Versichertenkarte mitbringen. [pause] die Minute, die Minuten. Ich komme zehn Minuten später. [pause] können, du kannst, er kann. Ich kann am Nachmittag kommen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

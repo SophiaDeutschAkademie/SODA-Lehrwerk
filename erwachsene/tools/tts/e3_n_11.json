@@ -1,0 +1,89 @@
+{
+ "job": "e3_n_11",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "links.",
+    "Die Bank ist links."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "rechts.",
+    "Gehen Sie an der Ecke rechts."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "weit.",
+    "Ist es weit? – Nein, nur fünf Minuten."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "in der Nähe.",
+    "Ist hier eine Apotheke in der Nähe?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "bis zu.",
+    "Gehen Sie bis zur Ampel."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "zurück.",
+    "Wir fahren am Abend zurück."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "unten.",
+    "Die U-Bahn fährt unten ab."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "wie lange.",
+    "Wie lange brauche ich zu Fuß?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "links, rechts, geradeaus."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die erste Straße links, die zweite Straße rechts."
+   ]
+  }
+ ],
+ "script": "Also. [pause] links. Die Bank ist links. [pause] rechts. Gehen Sie an der Ecke rechts. [pause] weit. Ist es weit? – Nein, nur fünf Minuten. [pause] in der Nähe. Ist hier eine Apotheke in der Nähe? [pause] bis zu. Gehen Sie bis zur Ampel. [pause] zurück. Wir fahren am Abend zurück. [pause] unten. Die U-Bahn fährt unten ab. [pause] wie lange. Wie lange brauche ich zu Fuß? [pause] links, rechts, geradeaus. [pause] die erste Straße links, die zweite Straße rechts. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

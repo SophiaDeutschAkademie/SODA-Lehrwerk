@@ -1,0 +1,81 @@
+{
+ "job": "e3_ji_01",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "Jiu",
+   "parts": [
+    "Am Freitag kann ich leider nicht. Ich muss lernen. Am Montag haben wir einen Test."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Jiu",
+   "parts": [
+    "Am Samstag muss ich am Vormittag einkaufen. Aber am Nachmittag habe ich Zeit."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Jiu",
+   "parts": [
+    "Schwimmen? Ich kann leider nicht gut schwimmen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Jiu",
+   "parts": [
+    "Ja, gern. Um drei passt es gut."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Jiu",
+   "parts": [
+    "Gute Idee! Ich kann Bulgogi machen."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Entschuldigung, ich suche die Universitätsbibliothek. Ist sie hier in der Nähe?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Bis zur Ampel. Und dann?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Ist die Bibliothek am Platz?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Wie lange brauche ich zu Fuß?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Vielen Dank!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Am Freitag kann ich leider nicht. Ich muss lernen. Am Montag haben wir einen Test. [pause] Am Samstag muss ich am Vormittag einkaufen. Aber am Nachmittag habe ich Zeit. [pause] Schwimmen? Ich kann leider nicht gut schwimmen. [pause] Ja, gern. Um drei passt es gut. [pause] Gute Idee! Ich kann Bulgogi machen. [pause] Entschuldigung, ich suche die Universitätsbibliothek. Ist sie hier in der Nähe? [pause] Bis zur Ampel. Und dann? [pause] Ist die Bibliothek am Platz? [pause] Wie lange brauche ich zu Fuß? [pause] Vielen Dank! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

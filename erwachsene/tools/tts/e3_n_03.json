@@ -1,0 +1,90 @@
+{
+ "job": "e3_n_03",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "müssen, du musst, er muss.",
+    "Ich muss am Freitag lernen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "wollen, du willst, er will.",
+    "Lena will ins Kino gehen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "vereinbaren."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "verschieben.",
+    "Können wir den Termin verschieben?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "absagen.",
+    "Ich muss den Termin leider absagen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "mitbringen.",
+    "Kannst du den Kuchen mitbringen?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "besuchen.",
+    "Am Sonntag besuche ich meine Freundin."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "treffen, du triffst, er trifft.",
+    "Ich treffe Lena um drei."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "fragen.",
+    "Ich muss Markus fragen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "schwimmen.",
+    "Ich kann nicht gut schwimmen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] müssen, du musst, er muss. Ich muss am Freitag lernen. [pause] wollen, du willst, er will. Lena will ins Kino gehen. [pause] vereinbaren. [pause] verschieben. Können wir den Termin verschieben? [pause] absagen. Ich muss den Termin leider absagen. [pause] mitbringen. Kannst du den Kuchen mitbringen? [pause] besuchen. Am Sonntag besuche ich meine Freundin. [pause] treffen, du triffst, er trifft. Ich treffe Lena um drei. [pause] fragen. Ich muss Markus fragen. [pause] schwimmen. Ich kann nicht gut schwimmen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

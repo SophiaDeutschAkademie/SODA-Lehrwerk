@@ -1,0 +1,60 @@
+{
+ "job": "e3_fr_05",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Sie dürfen nicht arbeiten."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag, Frau Lee. Was haben Sie in Korea gemacht?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Wo haben Sie gearbeitet?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Interessant. Und wann sind Sie nach Deutschland gekommen?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Haben Sie in Deutschland schon gearbeitet?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Ihr Deutsch ist schon sehr gut. Haben Sie einen Lebenslauf?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Sehr gut, Frau Lee. Dann suchen wir jetzt zusammen eine Stelle."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Sie dürfen nicht arbeiten. [pause] Guten Tag, Frau Lee. Was haben Sie in Korea gemacht? [pause] Wo haben Sie gearbeitet? [pause] Interessant. Und wann sind Sie nach Deutschland gekommen? [pause] Haben Sie in Deutschland schon gearbeitet? [pause] Ihr Deutsch ist schon sehr gut. Haben Sie einen Lebenslauf? [pause] Sehr gut, Frau Lee. Dann suchen wir jetzt zusammen eine Stelle. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

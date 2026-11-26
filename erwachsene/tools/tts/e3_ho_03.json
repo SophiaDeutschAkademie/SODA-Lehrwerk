@@ -1,0 +1,46 @@
+{
+ "job": "e3_ho_03",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "Hoffmann",
+   "parts": [
+    "Guten Morgen! Was haben Sie letzte Woche gemacht?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Hoffmann",
+   "parts": [
+    "Gut. Und das Angebot?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Hoffmann",
+   "parts": [
+    "Waren Sie am Mittwoch in der Besprechung?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Hoffmann",
+   "parts": [
+    "Haben Sie den Bericht schon geschrieben?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Hoffmann",
+   "parts": [
+    "Können Sie den Bericht bis Mittwoch schicken?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Morgen! Was haben Sie letzte Woche gemacht? [pause] Gut. Und das Angebot? [pause] Waren Sie am Mittwoch in der Besprechung? [pause] Haben Sie den Bericht schon geschrieben? [pause] Können Sie den Bericht bis Mittwoch schicken? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

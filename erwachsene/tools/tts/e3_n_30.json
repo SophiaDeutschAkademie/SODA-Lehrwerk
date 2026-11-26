@@ -1,0 +1,88 @@
+{
+ "job": "e3_n_30",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "reisen, ist gereist.",
+    "Wir sind nach Italien gereist."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "wandern, ist gewandert.",
+    "Am Sonntag sind wir gewandert."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "passieren, ist passiert.",
+    "Was ist passiert?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "putzen, hat geputzt.",
+    "Ich habe die Wohnung geputzt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "aufräumen, hat aufgeräumt.",
+    "Jiu hat ihr Zimmer aufgeräumt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "schicken, hat geschickt.",
+    "Ich habe die E-Mail geschickt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "Wie war es?",
+    "Wie war es in Hamburg?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "machen, gemacht. kaufen, gekauft. lernen, gelernt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "arbeiten, gearbeitet. kochen, gekocht. spielen, gespielt."
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "N",
+   "parts": [
+    "essen, gegessen. trinken, getrunken. lesen, gelesen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] reisen, ist gereist. Wir sind nach Italien gereist. [pause] wandern, ist gewandert. Am Sonntag sind wir gewandert. [pause] passieren, ist passiert. Was ist passiert? [pause] putzen, hat geputzt. Ich habe die Wohnung geputzt. [pause] aufräumen, hat aufgeräumt. Jiu hat ihr Zimmer aufgeräumt. [pause] schicken, hat geschickt. Ich habe die E-Mail geschickt. [pause] Wie war es? Wie war es in Hamburg? [pause] machen, gemacht. kaufen, gekauft. lernen, gelernt. [pause] arbeiten, gearbeitet. kochen, gekocht. spielen, gespielt. [pause] essen, gegessen. trinken, getrunken. lesen, gelesen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

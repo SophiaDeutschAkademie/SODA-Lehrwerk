@@ -1,0 +1,87 @@
+{
+ "job": "e3_n_07",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Entschuldigung, wo ist der Bahnhof?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Gehen Sie hier geradeaus."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Ich fahre mit der U-Bahn."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "Wie komme ich zum Zoo?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Bahnhof, die Bahnhöfe.",
+    "Wo ist der Bahnhof?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Hauptbahnhof, die Hauptbahnhöfe.",
+    "Ich komme um neun am Hauptbahnhof an."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Haltestelle, die Haltestellen.",
+    "Die Haltestelle ist an der Ecke."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Station, die Stationen.",
+    "Das sind nur zwei Stationen."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Post.",
+    "Die Post ist am Platz."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Bank, die Banken.",
+    "Ich muss heute zur Bank gehen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Entschuldigung, wo ist der Bahnhof? [pause] Gehen Sie hier geradeaus. [pause] Ich fahre mit der U-Bahn. [pause] Wie komme ich zum Zoo? [pause] der Bahnhof, die Bahnhöfe. Wo ist der Bahnhof? [pause] der Hauptbahnhof, die Hauptbahnhöfe. Ich komme um neun am Hauptbahnhof an. [pause] die Haltestelle, die Haltestellen. Die Haltestelle ist an der Ecke. [pause] die Station, die Stationen. Das sind nur zwei Stationen. [pause] die Post. Die Post ist am Platz. [pause] die Bank, die Banken. Ich muss heute zur Bank gehen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

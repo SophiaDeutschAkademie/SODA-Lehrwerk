@@ -1,0 +1,90 @@
+{
+ "job": "e3_n_23",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "die Tablette, die Tabletten.",
+    "Ich nehme eine Tablette."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Hustensaft.",
+    "Der Hustensaft ist gut für Kinder."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "das Rezept, die Rezepte.",
+    "Hier ist Ihr Rezept."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "das Krankenhaus, die Krankenhäuser.",
+    "Das Krankenhaus ist in der Nähe."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "die Krankmeldung, die Krankmeldungen.",
+    "Ich schreibe heute eine Krankmeldung."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "sollen, du sollst, er soll."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "dürfen, du darfst, er darf.",
+    "Darf ich morgen arbeiten?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "aussehen, du siehst aus, er sieht aus.",
+    "Du siehst nicht gut aus."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "aufmachen.",
+    "Kannst du bitte das Fenster aufmachen?"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "rauchen.",
+    "Hier dürfen Sie nicht rauchen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Tablette, die Tabletten. Ich nehme eine Tablette. [pause] der Hustensaft. Der Hustensaft ist gut für Kinder. [pause] das Rezept, die Rezepte. Hier ist Ihr Rezept. [pause] das Krankenhaus, die Krankenhäuser. Das Krankenhaus ist in der Nähe. [pause] die Krankmeldung, die Krankmeldungen. Ich schreibe heute eine Krankmeldung. [pause] sollen, du sollst, er soll. [pause] dürfen, du darfst, er darf. Darf ich morgen arbeiten? [pause] aussehen, du siehst aus, er sieht aus. Du siehst nicht gut aus. [pause] aufmachen. Kannst du bitte das Fenster aufmachen? [pause] rauchen. Hier dürfen Sie nicht rauchen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

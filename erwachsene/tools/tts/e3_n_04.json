@@ -1,0 +1,91 @@
+{
+ "job": "e3_n_04",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "spielen.",
+    "Am Sonntag spielen wir Fußball."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "bleiben.",
+    "Heute bleibe ich zu Hause."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "warten.",
+    "Sie müssen zehn Minuten warten."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "telefonieren.",
+    "Können wir morgen telefonieren?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "Zeit haben.",
+    "Am Nachmittag habe ich Zeit."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "frei.",
+    "Am Freitag habe ich frei."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "gern.",
+    "Kommst du mit? – Ja, gern!"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "natürlich.",
+    "Ja, natürlich."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "vielleicht.",
+    "Vielleicht kann ich am Sonntag."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "N",
+   "parts": [
+    "schade.",
+    "Du kannst nicht kommen? Schade!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] spielen. Am Sonntag spielen wir Fußball. [pause] bleiben. Heute bleibe ich zu Hause. [pause] warten. Sie müssen zehn Minuten warten. [pause] telefonieren. Können wir morgen telefonieren? [pause] Zeit haben. Am Nachmittag habe ich Zeit. [pause] frei. Am Freitag habe ich frei. [pause] gern. Kommst du mit? – Ja, gern! [pause] natürlich. Ja, natürlich. [pause] vielleicht. Vielleicht kann ich am Sonntag. [pause] schade. Du kannst nicht kommen? Schade! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

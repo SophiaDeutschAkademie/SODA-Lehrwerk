@@ -1,0 +1,81 @@
+{
+ "job": "e3_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Ja, das ist nicht weit. Gehen Sie hier geradeaus bis zur Ampel."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Gehen Sie an der Ampel links. Dann sehen Sie einen Platz."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Ja, genau. Sie ist rechts, an der Ecke."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Zehn Minuten. Sie brauchen keinen Bus."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Bitte, gern!"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag, Herr Park. Hier ist Peter Schneider. Ich komme morgen zu Kessler Technik. Wie komme ich zur Firma?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Mit dem Zug. Ich komme um neun Uhr am Hauptbahnhof an."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Bis Bockenheimer Warte. Und dann? Ist es weit?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Die zweite Straße links. Gut."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Sehr gut. Wie lange brauche ich zu Fuß?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ja, das ist nicht weit. Gehen Sie hier geradeaus bis zur Ampel. [pause] Gehen Sie an der Ampel links. Dann sehen Sie einen Platz. [pause] Ja, genau. Sie ist rechts, an der Ecke. [pause] Zehn Minuten. Sie brauchen keinen Bus. [pause] Bitte, gern! [pause] Guten Tag, Herr Park. Hier ist Peter Schneider. Ich komme morgen zu Kessler Technik. Wie komme ich zur Firma? [pause] Mit dem Zug. Ich komme um neun Uhr am Hauptbahnhof an. [pause] Bis Bockenheimer Warte. Und dann? Ist es weit? [pause] Die zweite Straße links. Gut. [pause] Sehr gut. Wie lange brauche ich zu Fuß? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

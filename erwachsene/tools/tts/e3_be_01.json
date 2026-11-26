@@ -1,0 +1,60 @@
+{
+ "job": "e3_be_01",
+ "who": "Becker",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "Becker",
+   "parts": [
+    "Frau Lee, wie ist Ihre Wohnung in Sachsenhausen?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Becker",
+   "parts": [
+    "Oh, schön! Das Sofa steht am Fenster."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Becker",
+   "parts": [
+    "Und was hängt an der Wand?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Becker",
+   "parts": [
+    "Sehr schön. Und wo steht der Fernseher?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Becker",
+   "parts": [
+    "Und die Lampe hinter dem Sofa? Die ist sehr schön."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "Becker",
+   "parts": [
+    "Sie sind wirklich Designerin!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "Becker",
+   "parts": [
+    "Viele Leute sind krank. Bleibt bitte zu Hause und kommt nicht krank zum Kurs!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Frau Lee, wie ist Ihre Wohnung in Sachsenhausen? [pause] Oh, schön! Das Sofa steht am Fenster. [pause] Und was hängt an der Wand? [pause] Sehr schön. Und wo steht der Fernseher? [pause] Und die Lampe hinter dem Sofa? Die ist sehr schön. [pause] Sie sind wirklich Designerin! [pause] Viele Leute sind krank. Bleibt bitte zu Hause und kommt nicht krank zum Kurs! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

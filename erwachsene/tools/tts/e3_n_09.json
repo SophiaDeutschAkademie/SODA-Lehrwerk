@@ -1,0 +1,91 @@
+{
+ "job": "e3_n_09",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die U-Bahn, die U-Bahnen.",
+    "Nehmen Sie die U-Bahn."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die S-Bahn, die S-Bahnen.",
+    "Die S-Bahn fährt nach Mainz."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Straßenbahn, die Straßenbahnen.",
+    "Die Straßenbahn fährt zum Bahnhof."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Zug, die Züge.",
+    "Der Zug kommt um neun Uhr an."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "das Auto, die Autos.",
+    "Kommen Sie mit dem Auto?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "das Fahrrad, die Fahrräder.",
+    "Markus fährt mit dem Fahrrad ins Büro."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "zu Fuß.",
+    "Ich gehe zu Fuß."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Fahrkarte, die Fahrkarten.",
+    "Was kostet eine Fahrkarte?"
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "der Automat, die Automaten.",
+    "Sie können die Fahrkarte am Automaten kaufen."
+   ]
+  },
+  {
+   "pid": "a1-2/1",
+   "who": "N",
+   "parts": [
+    "die Linie, die Linien.",
+    "Die Linie vier fährt zum Hauptbahnhof."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die U-Bahn, die U-Bahnen. Nehmen Sie die U-Bahn. [pause] die S-Bahn, die S-Bahnen. Die S-Bahn fährt nach Mainz. [pause] die Straßenbahn, die Straßenbahnen. Die Straßenbahn fährt zum Bahnhof. [pause] der Zug, die Züge. Der Zug kommt um neun Uhr an. [pause] das Auto, die Autos. Kommen Sie mit dem Auto? [pause] das Fahrrad, die Fahrräder. Markus fährt mit dem Fahrrad ins Büro. [pause] zu Fuß. Ich gehe zu Fuß. [pause] die Fahrkarte, die Fahrkarten. Was kostet eine Fahrkarte? [pause] der Automat, die Automaten. Sie können die Fahrkarte am Automaten kaufen. [pause] die Linie, die Linien. Die Linie vier fährt zum Hauptbahnhof. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

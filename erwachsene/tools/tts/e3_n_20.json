@@ -1,0 +1,86 @@
+{
+ "job": "e3_n_20",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Das Bild hängt über dem Sofa."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Ich habe Kopfschmerzen."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Mein Hals tut weh."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Ich soll im Bett bleiben."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "Gute Besserung!"
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Kopf, die Köpfe.",
+    "Mein Kopf tut weh."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Hals, die Hälse.",
+    "Der Hals ist rot."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Bauch, die Bäuche.",
+    "Mein Bauch tut weh."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Rücken, die Rücken.",
+    "Mein Rücken tut weh."
+   ]
+  },
+  {
+   "pid": "a1-2/3",
+   "who": "N",
+   "parts": [
+    "der Arm, die Arme.",
+    "Der Arm tut weh."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das Bild hängt über dem Sofa. [pause] Ich habe Kopfschmerzen. [pause] Mein Hals tut weh. [pause] Ich soll im Bett bleiben. [pause] Gute Besserung! [pause] der Kopf, die Köpfe. Mein Kopf tut weh. [pause] der Hals, die Hälse. Der Hals ist rot. [pause] der Bauch, die Bäuche. Mein Bauch tut weh. [pause] der Rücken, die Rücken. Mein Rücken tut weh. [pause] der Arm, die Arme. Der Arm tut weh. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

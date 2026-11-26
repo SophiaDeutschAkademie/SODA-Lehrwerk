@@ -1,0 +1,81 @@
+{
+ "job": "e3_n_19",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Kaltmiete, Nebenkosten, Warmmiete."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Einbauküche, Balkon, Erdgeschoss."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "klein, zwei, frei"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "neu, teuer, Räume, Häuser"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Haus, Raum, laut, auch"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Miete, vier, hier, liegen"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Mein Zimmer ist klein und neu, aber leider laut."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Gibt es einen Keller?"
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Das Zimmer ist klein, aber ruhig."
+   ]
+  },
+  {
+   "pid": "a1-2/2",
+   "who": "N",
+   "parts": [
+    "Die Miete ist zu teuer."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Kaltmiete, Nebenkosten, Warmmiete. [pause] Einbauküche, Balkon, Erdgeschoss. [pause] klein, zwei, frei [pause] neu, teuer, Räume, Häuser [pause] Haus, Raum, laut, auch [pause] Miete, vier, hier, liegen [pause] Mein Zimmer ist klein und neu, aber leider laut. [pause] Gibt es einen Keller? [pause] Das Zimmer ist klein, aber ruhig. [pause] Die Miete ist zu teuer. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

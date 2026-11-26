@@ -1,0 +1,25 @@
+{
+ "job": "e3_mk_02",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a1-2/4",
+   "who": "Markus",
+   "parts": [
+    "Und am Sonntag?"
+   ]
+  },
+  {
+   "pid": "a1-2/4",
+   "who": "Markus",
+   "parts": [
+    "Wir waren im Zoo. Die Kinder hatten viel Spaß. Aber am Abend war ich sehr müde."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und am Sonntag? [pause] Wir waren im Zoo. Die Kinder hatten viel Spaß. Aber am Abend war ich sehr müde. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

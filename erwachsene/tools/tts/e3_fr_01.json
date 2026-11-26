@@ -1,0 +1,81 @@
+{
+ "job": "e3_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Praxis Doktor Neumann, guten Tag!"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Gern. Wann können Sie kommen?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Am Mittwoch haben wir leider keinen Termin frei. Können Sie am Donnerstag um fünfzehn Uhr dreißig kommen?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Wie heißt Ihre Tochter?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Danke, Frau Lee. Sie müssen die Versichertenkarte mitbringen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Bis Donnerstag. Auf Wiederhören!"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Sie können am Montag um elf Uhr fünfzehn kommen."
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Kursbüro, Wagner, guten Tag!"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Gern, Frau Choi. Können Sie am Dienstag um zehn Uhr kommen?"
+   ]
+  },
+  {
+   "pid": "a1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Und am Mittwoch? Wir haben um vierzehn Uhr dreißig einen Termin frei."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Praxis Doktor Neumann, guten Tag! [pause] Gern. Wann können Sie kommen? [pause] Am Mittwoch haben wir leider keinen Termin frei. Können Sie am Donnerstag um fünfzehn Uhr dreißig kommen? [pause] Wie heißt Ihre Tochter? [pause] Danke, Frau Lee. Sie müssen die Versichertenkarte mitbringen. [pause] Bis Donnerstag. Auf Wiederhören! [pause] Sie können am Montag um elf Uhr fünfzehn kommen. [pause] Kursbüro, Wagner, guten Tag! [pause] Gern, Frau Choi. Können Sie am Dienstag um zehn Uhr kommen? [pause] Und am Mittwoch? Wir haben um vierzehn Uhr dreißig einen Termin frei. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}
