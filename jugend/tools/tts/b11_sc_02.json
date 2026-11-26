@@ -1,0 +1,74 @@
+{
+ "job": "b11_sc_02",
+ "who": "Schneider",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "Schneider",
+   "parts": [
+    "Siehst du? Gib nicht auf, Lukas. Du schaffst auch eine Zwei."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Schneider",
+   "parts": [
+    "Ich gebe euch die Lösungen, damit ihr eure Fehler selbst finden könnt."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Schneider",
+   "parts": [
+    "Guten Morgen! Wo sind denn die anderen? Nur zwölf von euch sind da."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Schneider",
+   "parts": [
+    "Was für eine Nachricht?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Schneider",
+   "parts": [
+    "Das stimmt nicht. Unsere Schule ist trocken, wie ihr seht. Wer hat das geschrieben?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Schneider",
+   "parts": [
+    "Seht ihr, so schnell wird ein Gerücht verbreitet. Eine Nachricht muss zuerst geprüft werden. Erst dann darf man sie teilen."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Schneider",
+   "parts": [
+    "Gute Idee. Und jetzt schreiben wir den anderen: Die Schule ist offen!"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Schneider",
+   "parts": [
+    "Jede Nachricht muss zuerst geprüft werden."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Schneider",
+   "parts": [
+    "Prüft zuerst die Quelle!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Siehst du? Gib nicht auf, Lukas. Du schaffst auch eine Zwei. [pause] Ich gebe euch die Lösungen, damit ihr eure Fehler selbst finden könnt. [pause] Guten Morgen! Wo sind denn die anderen? Nur zwölf von euch sind da. [pause] Was für eine Nachricht? [pause] Das stimmt nicht. Unsere Schule ist trocken, wie ihr seht. Wer hat das geschrieben? [pause] Seht ihr, so schnell wird ein Gerücht verbreitet. Eine Nachricht muss zuerst geprüft werden. Erst dann darf man sie teilen. [pause] Gute Idee. Und jetzt schreiben wir den anderen: Die Schule ist offen! [pause] Jede Nachricht muss zuerst geprüft werden. [pause] Prüft zuerst die Quelle! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

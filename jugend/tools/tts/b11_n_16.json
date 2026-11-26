@@ -1,0 +1,87 @@
+{
+ "job": "b11_n_16",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "gefährlich.",
+    "Falsche Nachrichten können gefährlich sein."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "behaupten, hat behauptet.",
+    "Er behauptet, dass morgen schulfrei ist."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "der Beweis, die Beweise.",
+    "Hast du einen Beweis?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "das Argument, die Argumente.",
+    "Das ist ein gutes Argument."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "zustimmen, hat zugestimmt.",
+    "Ich stimme dir zu."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "widersprechen, du widersprichst, er widerspricht.",
+    "Da muss ich dir widersprechen."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "der Chef, recherchieren"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "der Chat, der Klassenchat"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "der Charakter, das Chaos"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "Die Redaktion recherchiert im Klassenchat."
+   ]
+  }
+ ],
+ "script": "Also. [pause] gefährlich. Falsche Nachrichten können gefährlich sein. [pause] behaupten, hat behauptet. Er behauptet, dass morgen schulfrei ist. [pause] der Beweis, die Beweise. Hast du einen Beweis? [pause] das Argument, die Argumente. Das ist ein gutes Argument. [pause] zustimmen, hat zugestimmt. Ich stimme dir zu. [pause] widersprechen, du widersprichst, er widerspricht. Da muss ich dir widersprechen. [pause] der Chef, recherchieren [pause] der Chat, der Klassenchat [pause] der Charakter, das Chaos [pause] Die Redaktion recherchiert im Klassenchat. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

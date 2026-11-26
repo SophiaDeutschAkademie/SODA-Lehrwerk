@@ -1,0 +1,32 @@
+{
+ "job": "b11_th_01",
+ "who": "Thomas",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "b1-1/1",
+   "who": "Thomas",
+   "parts": [
+    "Als ich fünfzehn war, musste ich um neun zu Hause sein. Meine Eltern waren viel strenger."
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Thomas",
+   "parts": [
+    "Ich habe einen Vorschlag. Wir finden einen Kompromiss: Ich hole euch um halb elf ab."
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Thomas",
+   "parts": [
+    "Wir finden einen Kompromiss."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Als ich fünfzehn war, musste ich um neun zu Hause sein. Meine Eltern waren viel strenger. [pause] Ich habe einen Vorschlag. Wir finden einen Kompromiss: Ich hole euch um halb elf ab. [pause] Wir finden einen Kompromiss. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

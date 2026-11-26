@@ -1,0 +1,25 @@
+{
+ "job": "b11_sa_02",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "Sabine",
+   "parts": [
+    "Nein, darauf musst du nicht verzichten. Aber iss täglich Obst und Gemüse und trink viel Wasser."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Sabine",
+   "parts": [
+    "Bewegt euch mehr!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Nein, darauf musst du nicht verzichten. Aber iss täglich Obst und Gemüse und trink viel Wasser. [pause] Bewegt euch mehr! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

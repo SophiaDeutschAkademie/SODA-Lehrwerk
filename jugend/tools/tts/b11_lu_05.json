@@ -1,0 +1,74 @@
+{
+ "job": "b11_lu_05",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Und das Essen? Muss ich auf Schokolade verzichten?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Darauf kann ich achten. Außerdem mag ich Äpfel."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Ich habe einen Test gemacht: eine Woche kein Handy nach neun Uhr."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Am ersten Abend war es schwer. Ich konnte lange nicht einschlafen."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Aber am dritten Tag bin ich schon um zehn eingeschlafen. Deswegen war ich am Morgen wach und fit."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Je mehr ich geschlafen habe, desto besser konnte ich mich konzentrieren. In Mathe habe ich alles verstanden!"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Ich mache weiter. Nur am Wochenende nicht."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Je mehr Schokolade ich esse, desto glücklicher bin ich."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Darauf kann ich nicht verzichten."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und das Essen? Muss ich auf Schokolade verzichten? [pause] Darauf kann ich achten. Außerdem mag ich Äpfel. [pause] Ich habe einen Test gemacht: eine Woche kein Handy nach neun Uhr. [pause] Am ersten Abend war es schwer. Ich konnte lange nicht einschlafen. [pause] Aber am dritten Tag bin ich schon um zehn eingeschlafen. Deswegen war ich am Morgen wach und fit. [pause] Je mehr ich geschlafen habe, desto besser konnte ich mich konzentrieren. In Mathe habe ich alles verstanden! [pause] Ich mache weiter. Nur am Wochenende nicht. [pause] Je mehr Schokolade ich esse, desto glücklicher bin ich. [pause] Darauf kann ich nicht verzichten. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,281 @@
+@id b1-1/3
+
+== einstieg
+bild: A schoolyard with a bench and a tree. YUNA and LUKAS sit on the bench and talk, the boy looks a little shy and the Korean girl listens with a friendly smile. Behind them ELIF holds a small cardboard box with a slot on top and EMMA drops a folded note into it. Everyone is seen from the front, all faces with clearly drawn eyes, nose and mouth.
+alt: 학교 운동장의 벤치에 Yuna와 Lukas가 앉아 이야기해요. Lukas는 수줍은 얼굴이고 Yuna는 웃으며 듣고 있어요. 뒤에서는 Elif와 Emma가 고민 상자를 들고 있고, Emma가 접은 쪽지를 넣고 있어요.
+lead: 10월이에요. 팟캐스트 팀이 이번에는 우정을 이야기해요. 학생들의 고민을 받는 상자, Kummerkasten도 만들어요. 그런데 Lukas에게 비밀이 하나 생겼어요.
+mission: 이 과를 마치면 우정이 무엇인지 이야기하고, 사람을 자세히 설명하고, 친구의 고민에 조언할 수 있어요.
+wort: die Freundschaft | 우정
+wort: sich verlieben | 사랑에 빠지다
+wort: Ein echter Freund ist jemand, dem ich vertraue. | 진짜 친구는 내가 믿는 사람이야.
+wort: Mina ist die Freundin, mit der ich jeden Sonntag telefoniere. | Mina는 내가 일요일마다 통화하는 친구야.
+mc: Mina ist die Freundin, mit der ich jeden Sonntag telefoniere. 여기서 mit der는 누구를 가리키나요? | die Freundin* | ich | Sonntag => mit der는 앞에 나온 die Freundin을 가리켜요. '그 친구와 함께'라는 뜻이에요.
+
+== hoeren
+-- dialog A | Was ist ein echter Freund? | 10월의 어느 방과 후, 9b 교실이에요. 팟캐스트 팀이 우정을 주제로 이야기해요.
+vor: 들으면서 찾아보세요. Yuna가 일요일마다 통화하는 친구는 누구인가요?
+Elif: Unser nächstes Thema ist Freundschaft. Was ist für euch ein echter Freund? | 다음 주제는 우정이야. 너희한테 진짜 친구는 어떤 사람이야?
+Emma: Ein echter Freund ist jemand, dem ich vertraue. | 진짜 친구는 내가 믿는 사람이야.
+Lukas: Und mit dem ich lachen kann! Ein Freund ohne Humor? Nein, danke. | 그리고 같이 웃을 수 있는 사람! 유머 없는 친구? 그건 사양할게.
+Yuna: Für mich ist eine echte Freundin eine Person, der ich alles erzählen kann. Auch peinliche Dinge. | 나한테 진짜 친구는 뭐든지 이야기할 수 있는 사람이야. 창피한 일까지도.
+Elif: Und auf die man sich verlassen kann. Zuverlässige Freunde sind wichtig. | 그리고 믿고 기댈 수 있는 사람. 믿음직한 친구가 중요해.
+Lukas: Tim ist so ein Freund. Er ist der Kumpel, mit dem ich seit vielen Jahren Fußball spiele. | Tim이 그런 친구야. 여러 해 동안 같이 축구를 해 온 친구거든.
+Emma: Yuna, du hast doch eine Freundin in Seoul, von der du oft sprichst. | Yuna, 너 서울에 자주 이야기하는 친구 있잖아.
+Yuna: Ja, Mina. Wir sind sehr verschieden, aber sie ist die Freundin, mit der ich jeden Sonntag telefoniere. | 응, Mina. 우리는 많이 다르지만, 일요일마다 통화하는 친구야.
+Elif: Obwohl sie so weit weg wohnt? Das ist echte Freundschaft. | 그렇게 멀리 사는데도? 그게 진짜 우정이네.
+Lukas: Und was machen wir, wenn Freunde Probleme haben? | 그런데 친구 사이에 문제가 생기면 어떻게 해?
+Elif: Gute Frage. Wir machen einen Kummerkasten: Alle können uns ihre Probleme schreiben, ohne Namen. | 좋은 질문이야. 고민 상자를 만들자. 누구나 이름 없이 고민을 써서 보낼 수 있어.
+Emma: Und wir antworten im Podcast. Tolle Idee! | 그리고 우리가 팟캐스트에서 대답하는 거지. 좋은 생각이야!
+
+-- dialog B | Das Mädchen aus der 9a | 며칠 뒤 쉬는 시간, 학교 운동장이에요. Lukas가 Yuna에게 고민을 털어놓아요.
+vor: 들으면서 찾아보세요. Yuna는 Lukas에게 무엇을 해 보라고 하나요?
+Lukas: Yuna, kann ich dich etwas fragen? Aber du darfst es nicht weitererzählen. | Yuna, 뭐 좀 물어봐도 돼? 근데 다른 사람한테 말하면 안 돼.
+Yuna: Klar. Ich höre zu. | 물론이지. 듣고 있어.
+Lukas: Kennst du Hanna aus der 9a? Das ist das Mädchen, mit dem ich im Bus immer spreche. | 9a의 Hanna 알아? 내가 버스에서 늘 이야기하는 여자애야. | say=Kennst du Hanna aus der neun a? Das ist das Mädchen, mit dem ich im Bus immer spreche.
+Yuna: Die mit den langen roten Haaren? Ja. Was ist mit ihr? | 긴 빨간 머리 그 애? 알지. 그 애가 왜?
+Lukas: Ich glaube, ich habe mich in sie verliebt. Aber ich bin zu schüchtern, um es ihr zu sagen. | 나 그 애를 좋아하게 된 것 같아. 근데 너무 수줍어서 말을 못 하겠어.
+Yuna: Oh, Lukas! Das ist doch schön. Weiß sie es? | 어머, Lukas! 좋은 일이잖아. 그 애도 알아?
+Lukas: Nein! Und gestern habe ich sie mit einem anderen Jungen gesehen. Ich war sehr eifersüchtig. | 아니! 그리고 어제 그 애가 다른 남자애랑 있는 걸 봤어. 엄청 질투가 났어.
+Yuna: Vielleicht ist das nur ein Freund, mit dem sie lernt. An deiner Stelle würde ich sie einfach ansprechen. | 그냥 같이 공부하는 친구일 수도 있잖아. 내가 너라면 그냥 말을 걸어 볼 거야.
+Lukas: Und wenn sie Nein sagt? Das wäre so peinlich. | 싫다고 하면? 그러면 너무 창피할 텐데.
+Yuna: Dann weißt du es. Sei mutig! Lad sie doch ins Kino ein. | 그러면 알게 되는 거지. 용기를 내! 영화 보러 가자고 해 봐.
+Lukas: Ins Kino … Okay. Ich schreibe ihr heute. Aber sag es niemandem! | 영화라 … 알았어. 오늘 메시지를 보낼게. 근데 아무한테도 말하지 마!
+Yuna: Niemandem. Ich bin doch die Freundin, auf die du dich verlassen kannst. | 아무한테도 안 해. 나는 네가 믿을 수 있는 친구잖아.
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Was ist für Emma ein echter Freund? | jemand, dem sie vertraut* | jemand, der viel Geld hat | jemand, der in ihrer Klasse ist
+rf: Lukas findet Humor nicht wichtig. | f => Lukas sagt: „Ein Freund ohne Humor? Nein, danke.“
+mc: Wer ist Mina? | die Freundin, mit der Yuna jeden Sonntag telefoniert* | die Schwester, von der Emma oft spricht | das Mädchen, mit dem Lukas im Bus spricht
+mc: Was ist der Kummerkasten? | Dort kann man ohne Namen über Probleme schreiben.* | Dort kann man Bücher leihen. | Dort bekommt man die Noten.
+mc: In wen hat sich Lukas verliebt? | in Hanna aus der 9a* | in Mina aus Seoul | in Emma
+rf: Hanna weiß, dass Lukas in sie verliebt ist. | f => 아직 몰라요. Lukas는 수줍어서 말하지 못했어요.
+mc: Yuna는 Lukas에게 무엇을 권하나요? | Hanna에게 영화를 보러 가자고 하기* | 고민 상자에 편지를 쓰기 | 다른 남자아이에게 물어보기
+
+-- kultur Jugendzentrum, 청소년이 모이는 곳
+p: 독일의 도시와 마을에는 Jugendzentrum이 있어요. Jugendtreff라고도 해요. 학교가 끝난 오후와 저녁에 청소년이 모이는 곳이에요.
+p: 테이블 축구(Kicker)와 탁구를 하고, 음악을 듣고, 같이 요리도 해요. 숙제를 도와주거나 고민을 들어 주는 선생님도 있어요. 돈을 내지 않고, 미리 신청하지 않아도 돼요.
+p: 시나 교회, 여러 단체가 운영해요. 쾰른에도 동네마다 이런 곳이 있어서 새 친구를 사귀기 좋아요.
+mc: Jugendzentrum은 어떤 곳인가요? | 청소년이 돈을 내지 않고 모여서 쉬고 노는 곳* | 성적이 나쁜 학생이 다니는 학원 | 운동선수만 가는 체육관
+
+== wortschatz
+-- gruppe Freundschaft | 우정
+die Freundschaft, die Freundschaften | 우정 | Unsere Freundschaft ist mir wichtig. | 우리 우정은 나에게 중요해요.
+echt | 진짜의, 참된 | Ein echter Freund lügt nicht. | 진짜 친구는 거짓말하지 않아요.
+der Kumpel, die Kumpel | (편한) 친구 | Tim ist ein alter Kumpel von mir. | Tim은 내 오랜 친구예요.
+die Clique, die Cliquen | 친구 무리 | Sie hat eine neue Clique. | 그 애에게 새 친구 무리가 생겼어요.
+jemand | 누군가, 어떤 사람 | Ein Freund ist jemand, dem ich vertraue. | 친구는 내가 믿는 사람이에요.
+niemand | 아무도 (~않다) | Niemand weiß es. | 아무도 그걸 몰라요.
+sich verlassen (du verlässt dich, er verlässt sich) | 믿고 기대다 | Auf Emma kann ich mich verlassen. | Emma는 믿을 수 있어요.
+zuverlässig | 믿음직한 | Elif ist sehr zuverlässig. | Elif는 아주 믿음직해요.
+treu | 한결같은, 의리 있는 | Ein treuer Freund bleibt bei dir. | 의리 있는 친구는 네 곁에 남아요.
+zuhören, hat zugehört | 귀 기울여 듣다 | Yuna hört mir immer zu. | Yuna는 늘 내 말을 들어 줘요.
+unterstützen, hat unterstützt | 돕다, 힘이 되어 주다 | Meine Freunde unterstützen mich. | 친구들이 나에게 힘이 되어 줘요.
+gemeinsam | 함께, 공통의 | Wir haben viele gemeinsame Hobbys. | 우리는 같은 취미가 많아요.
+verschieden | 다른, 여러 가지의 | Mina und ich sind sehr verschieden. | Mina와 나는 많이 달라요.
+der Humor | 유머 | Lukas hat viel Humor. | Lukas는 유머가 많아요.
+
+-- gruppe Liebe und Gefühle | 사랑과 감정
+die Liebe | 사랑 | Liebe und Freundschaft sind wichtig. | 사랑과 우정은 중요해요.
+sich verlieben, hat sich verliebt | 사랑에 빠지다 | Lukas hat sich in Hanna verliebt. | Lukas는 Hanna를 좋아하게 됐어요.
+verliebt | 사랑에 빠진 | Er ist in sie verliebt. | 그는 그 애를 좋아해요.
+eifersüchtig | 질투하는 | Warum bist du so eifersüchtig? | 너 왜 그렇게 질투해?
+peinlich | 창피한, 민망한 | Das ist mir peinlich. | 그건 창피해요.
+mutig | 용감한 | Sei mutig und sprich mit ihr! | 용기를 내서 그 애와 이야기해 봐!
+das Herz, die Herzen | 심장, 마음 | Mein Herz schlägt schnell. | 가슴이 빨리 뛰어요.
+ansprechen (du sprichst an, er spricht an) | 말을 걸다 | Ich möchte sie ansprechen. | 나는 그 애에게 말을 걸고 싶어요.
+
+-- gruppe Probleme und Rat | 고민과 조언
+der Kummerkasten, die Kummerkästen | 고민 상자 | Schreib an den Kummerkasten! | 고민 상자에 편지를 써 봐!
+lügen, hat gelogen | 거짓말하다 | Du sollst nicht lügen. | 거짓말하면 안 돼.
+die Lüge, die Lügen | 거짓말 | Das ist eine Lüge. | 그건 거짓말이에요.
+die Wahrheit | 진실, 사실 | Sag mir bitte die Wahrheit. | 나에게 사실을 말해 줘.
+verzeihen, hat verziehen | 용서하다 | Kannst du mir verzeihen? | 나를 용서해 줄 수 있어?
+sich versöhnen, hat sich versöhnt | 화해하다 | Wir haben uns wieder versöhnt. | 우리는 다시 화해했어요.
+weitererzählen, hat weitererzählt | 다른 사람에게 옮기다 | Erzähl das bitte nicht weiter! | 그거 다른 사람한테 말하지 마!
+ignorieren, hat ignoriert | 못 본 척하다, 무시하다 | Sie ignoriert mich. | 그 애가 나를 못 본 척해요.
+beleidigt | 토라진, 기분이 상한 | Bist du beleidigt? | 너 토라졌어?
+sich melden, hat sich gemeldet | 연락하다 | Sie meldet sich nicht mehr. | 그 애가 더는 연락하지 않아요.
+
+-- bilder
+die Freundschaft, die Freundschaften: two teenagers who stand arm in arm and laugh, both seen from the front, their faces with clearly drawn eyes, nose and mouth
+die Clique, die Cliquen: four teenagers who stand close together as one group and smile, all seen from the front, their faces with clearly drawn eyes, nose and mouth
+zuhören, hat zugehört: a teenager who talks with moving hands and a second teenager who leans forward and listens carefully, their faces with clearly drawn eyes, nose and mouth
+unterstützen, hat unterstützt: a teenager who helps a friend with a bandaged foot to walk, arm around the shoulder, both seen from the front, their faces with clearly drawn eyes, nose and mouth
+verliebt: a teenager who looks dreamy and smiles while three small red hearts float above the head, the face with clearly drawn eyes, nose and mouth
+eifersüchtig: a teenager in front who frowns and looks sideways at two other teenagers who laugh together in the background, all faces with clearly drawn eyes, nose and mouth
+peinlich: a teenager with red cheeks who smiles awkwardly and scratches the back of the head, seen from the front, the face with clearly drawn eyes, nose and mouth
+mutig: a teenager who stands alone on a small stage in front of a seated audience and speaks with a raised hand, the face with clearly drawn eyes, nose and mouth
+das Herz, die Herzen: one big red heart
+lügen, hat gelogen: a teenager who talks to a mother with a nervous smile and hides a broken vase behind the back, both faces with clearly drawn eyes, nose and mouth
+sich versöhnen, hat sich versöhnt: two teenagers who shake hands and smile at each other, their faces with clearly drawn eyes, nose and mouth
+weitererzählen, hat weitererzählt: a teenager who whispers behind a raised hand into the ear of a surprised friend, both faces with clearly drawn eyes, nose and mouth
+
+-- aussprache ver-, be-, er-, ent- | 앞은 약하게, 뒤를 세게
+p: ver-, be-, er-, ent-로 시작하는 동사는 앞부분에 힘을 주지 않아요. 바로 뒤 음절을 세게 말해요. verLIEben, verZEIhen, erZÄHlen처럼요. 이런 동사는 나뉘지 않고, 과거분사에 ge-가 붙지 않아요.
+p: 나뉘는 동사는 거꾸로 앞부분을 세게 말해요. ZUhören, ANsprechen. 힘을 어디에 주는지 들으면 나뉘는 동사인지 알 수 있어요.
+hör: verlieben, verzeihen, vertrauen | ver-는 약하게
+hör: erzählen, besuchen, entschuldigen | 뒤를 세게
+hör: zuhören, ansprechen, anrufen | 나뉘는 동사는 앞을 세게
+hör: Ich verzeihe dir. Hör mir bitte zu! | 문장으로
+
+== grammatik
+-- punkt Relativsätze im Dativ | 3격 관계대명사 dem, der, denen
+bsp: Ein echter Freund ist jemand, *dem* ich *vertraue*. | 진짜 친구는 내가 믿는 사람이야.
+bsp: Eine Freundin ist eine Person, *der* ich alles *erzählen kann*. | 친구는 내가 뭐든지 이야기할 수 있는 사람이야.
+bsp: Das sind die Freunde, *denen* ich oft *helfe*. | 내가 자주 도와주는 친구들이야.
+finde: jemand, dem ich vertraue에서 dem이 3격인 까닭은 무엇인가요? | vertrauen이 3격과 함께 쓰는 동사라서* | jemand가 3격이라서 | ich가 3격이라서
+regel: 관계대명사의 성과 수는 앞의 명사를 따르고, 격은 관계문 안에서 하는 일을 따라요. helfen, vertrauen, gefallen처럼 3격과 함께 쓰는 동사가 오면 dem, der, denen을 써요. 동사는 맨 끝에 와요.
+| | 1격 | 4격 | 3격
+| 남성 | der | den | *dem*
+| 중성 | das | das | *dem*
+| 여성 | die | die | *der*
+| 복수 | die | die | *denen*
+merke: 3격 복수만 관사 den과 달라요. 관계대명사는 den*en*이에요.
+
+-- punkt Relativsätze mit Präposition | 전치사와 함께 쓰는 관계대명사
+bsp: Tim ist der Kumpel, *mit dem* ich Fußball *spiele*. | Tim은 내가 같이 축구하는 친구야.
+bsp: Mina ist die Freundin, *mit der* ich jeden Sonntag *telefoniere*. | Mina는 내가 일요일마다 통화하는 친구야.
+bsp: Ich bin die Freundin, *auf die* du dich *verlassen kannst*. | 나는 네가 믿을 수 있는 친구야.
+finde: das Mädchen, mit dem ich spreche에서 왜 mit der가 아니라 mit dem인가요? | das Mädchen이 중성이라서* | Mädchen이 여자아이라서 | mit 뒤에는 언제나 dem이 와서
+regel: 전치사는 관계대명사 바로 앞에 와요. 관계대명사의 격은 전치사가 정해요. mit, von, bei 뒤에는 3격을, für, ohne 뒤에는 4격을 써요. sich verlassen auf, verliebt in처럼 동사가 전치사와 격을 정하기도 해요.
+| 두 문장 | 한 문장
+| Das ist Tim. Ich spiele *mit ihm* Fußball. | Das ist Tim, *mit dem* ich Fußball spiele.
+| Das ist Mina. Ich telefoniere *mit ihr*. | Das ist Mina, *mit der* ich telefoniere.
+| Das sind meine Freunde. Ich lache *mit ihnen*. | Das sind meine Freunde, *mit denen* ich lache.
+merke: 전치사와 관계대명사는 떨어지지 않아요. 한국어와 달리 전치사를 빼면 안 돼요.
+
+-- punkt Adjektivendungen: Überblick | 형용사 끝 한눈에 보기
+bsp: Tim ist ein *echter* Freund. | Tim은 진짜 친구야.
+bsp: Ich brauche einen *guten* Rat. | 나는 좋은 조언이 필요해.
+bsp: Hanna ist das Mädchen mit den *langen* Haaren. | Hanna는 머리가 긴 그 여자애야.
+finde: mit meiner besten Freundin에서 3격 형용사는 어떻게 끝나나요? | -en* | -e | -er
+regel: 형용사 끝은 A2에서 배웠어요. 여기서 한 번에 정리해요. der, das, die 뒤에서는 -e나 -en으로 끝나요. ein, mein, kein 뒤에서는 관사가 보여 주지 못하는 성을 형용사가 -er, -es로 보여 줘요.
+| | ein, kein 뒤 | der, die 뒤
+| 남성 1격 | ein echt*er* Freund | der echt*e* Freund
+| 중성 1·4격 | ein gut*es* Gefühl | das gut*e* Gefühl
+| 여성 1·4격 | eine ehrlich*e* Antwort | die ehrlich*e* Antwort
+| 남성 4격 | einen gut*en* Rat | den gut*en* Rat
+| 3격 | mit einem gut*en* Freund | mit dem gut*en* Freund
+| 복수 | meine best*en* Freunde | die best*en* Freunde
+merke: 3격과 관사가 있는 복수는 언제나 -en이에요. 관사가 없는 복수는 -e로 끝나요. echt*e* Freunde.
+
+== training
+-- ex Hören | 팟캐스트 팀이 고민 상자에 온 편지에 답해요. 듣고 답하세요.
+audio | Der Kummerkasten
+> Elif: Heute im Kummerkasten: Ein Junge schreibt, dass sein bester Freund ein Geheimnis weitererzählt hat.
+> Elif: Jetzt ist er enttäuscht und spricht nicht mehr mit ihm. Was raten wir ihm?
+> Emma: Ich würde mit dem Freund sprechen. Vielleicht tut es ihm leid.
+> Yuna: Ein Freund, dem man nicht mehr vertraut, ist kein Freund. Aber jeder macht Fehler.
+> Emma: Wenn er sich entschuldigt, kann man ihm verzeihen.
+> Elif: Unser Rat: Sprecht über das Problem und versöhnt euch!
+mc: Was hat der beste Freund gemacht? | Er hat ein Geheimnis weitererzählt.* | Er hat gelogen. | Er hat sich nicht gemeldet.
+rf: Der Junge spricht noch jeden Tag mit seinem Freund. | f => Er spricht nicht mehr mit ihm.
+mc: Was würde Emma tun? | mit dem Freund sprechen* | den Freund ignorieren | das Geheimnis auch weitererzählen
+mc: 팟캐스트 팀은 무엇을 권하나요? | 문제를 이야기하고 화해하기* | 새 친구를 찾기 | 선생님에게 알리기
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Emma: Das ist der Junge, dem ich bei den Hausaufgaben helfe.
+mc: Emma는 그 남자아이에게 무엇을 해 주나요? | 숙제를 도와줘요* | 숙제를 받아요 | 숙제를 내 줘요
+hör: Yuna: Mina ist die Freundin, mit der ich jeden Sonntag telefoniere.
+mc: Yuna는 Mina와 언제 통화하나요? | 일요일마다* | 날마다 | 한 달에 한 번
+hör: Lukas: Das ist das Mädchen, von dem ich dir erzählt habe.
+mc: Lukas가 가리키는 사람은 누구인가요? | 전에 이야기한 여자아이* | 오늘 처음 본 여자아이 | Lukas의 여동생
+hör: Elif: Meine Brüder sind die Menschen, auf die ich mich immer verlassen kann.
+mc: Elif가 언제나 믿는 사람은 누구인가요? | 오빠와 남동생* | 부모님 | 반 친구들
+
+-- ex Lesen | 고민 상자에 편지가 왔어요. 읽고 답하세요.
+text notiz | Ein Brief an den Kummerkasten
+> Liebes „Mitreden“-Team, ich habe ein Problem mit meiner besten Freundin Nele.
+> Wir kennen uns seit der Grundschule. Sie war immer die Person, der ich alles erzählt habe.
+> Seit drei Wochen hat sie eine neue Clique, mit der sie in jeder Pause zusammen ist. Mich ignoriert sie und sie meldet sich nicht mehr.
+> Gestern habe ich sie gefragt: „Was ist los?“ Sie hat gesagt: „Nichts.“ Aber das ist eine Lüge.
+> Ich bin traurig und auch ein bisschen eifersüchtig. Soll ich ihr einen Brief schreiben oder soll ich warten?
+> Eine Schülerin aus der 8. Klasse
+mc: Seit wann kennen sich die zwei Freundinnen? | seit der Grundschule* | seit drei Wochen | seit gestern
+mc: Mit wem ist Nele jetzt in den Pausen zusammen? | mit einer neuen Clique* | mit ihrer Schwester | mit ihrer Lehrerin
+rf: Nele erzählt der Schülerin, was los ist. | f => Sie sagt nur: „Nichts.“
+mc: Wie fühlt sich die Schülerin? | traurig und ein bisschen eifersüchtig* | glücklich | wütend auf die Lehrerin
+mc: 글쓴이가 묻는 것은 무엇인가요? | 편지를 쓸지 기다릴지* | 새 친구 무리에 들어갈지 | 학교를 옮길지
+
+-- ex Lesen | 그날 오후 Lukas가 Hanna에게 메시지를 보냈어요. 읽고 답하세요.
+text chat | Freitag, 16 Uhr
+> Lukas: Hallo Hanna, hier ist Lukas aus dem Bus. Am Samstag läuft ein neuer Film im Kino. Hast du Lust?
+> Hanna: Hi Lukas! Am Samstag kann ich leider nicht. Da besuche ich meine Oma, bei der ich oft am Wochenende bin.
+> Lukas: Schade. Und am Sonntag?
+> Hanna: Sonntag geht! Mein Bruder Felix kommt auch mit. Das ist der Junge, mit dem du mich gestern gesehen hast.
+> Lukas: Dein Bruder? Super! Dann bis Sonntag um drei am Kino.
+rf: Hanna hat am Samstag Zeit. | f => Am Samstag besucht sie ihre Oma.
+mc: Wer ist Felix? | Hannas Bruder* | Hannas Freund | Lukas' Kumpel
+mc: Wann treffen sich Lukas und Hanna? | am Sonntag um drei* | am Samstag um drei | am Freitag um vier
+
+-- ex Grammatik | 3격 관계대명사예요. 알맞은 말을 고르세요.
+gap: Das ist der Freund, [dem|den|der] ich vertraue. => vertrauen은 3격과 함께 써요.
+gap: Das ist die Freundin, [der|die|dem] ich alles erzähle.
+gap: Das ist das Kind, [dem|das|der] ich bei den Hausaufgaben helfe.
+gap: Das sind die Freunde, [denen|die|den] ich oft schreibe. => 3격 복수는 denen이에요.
+gap: Tim ist ein Kumpel, [dem|den|der] ich immer helfe.
+gap: Mina ist eine Freundin, [der|die|den] ich oft schreibe.
+
+-- ex Grammatik | 전치사 뒤에 오는 관계대명사예요. 알맞은 말을 고르세요.
+gap: Das ist der Kumpel, mit [dem|den|der] ich Fußball spiele.
+gap: Mina ist die Freundin, mit [der|die|dem] Yuna telefoniert.
+gap: Das ist das Mädchen, von [dem|der|das] Lukas erzählt hat. => das Mädchen은 중성이에요.
+gap: Das sind die Leute, mit [denen|den|die] ich Musik mache.
+gap: Emma ist eine Freundin, auf [die|der|den] ich mich verlassen kann. => sich verlassen auf 뒤에는 4격이 와요.
+gap: Das ist der Junge, in [den|dem|der] Hanna verliebt ist. => verliebt in 뒤에는 4격이 와요.
+
+-- ex Grammatik | 형용사 끝이에요. 알맞은 말을 고르세요.
+gap: Tim ist ein [echter|echte|echten] Freund.
+gap: Ich brauche einen [guten|guter|gute] Rat.
+gap: Das ist eine [ehrliche|ehrlicher|ehrlichen] Antwort.
+gap: Ich spreche mit meiner [besten|beste|bester] Freundin.
+gap: [Zuverlässige|Zuverlässigen|Zuverlässiger] Freunde sind wichtig. => 관사가 없는 복수는 -e로 끝나요.
+gap: Hanna ist das Mädchen mit den [langen|lange|langer] Haaren.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: das ist / der Freund, / dem / ich / vertraue. | 내가 믿는 친구야.
+ord: Mina / ist / die Freundin, / mit der / ich / telefoniere. | Mina는 내가 통화하는 친구야.
+ord: ich / habe / mich / in sie / verliebt. | 나는 그 애를 좋아하게 됐어.
+ord: auf / echte Freunde / kann / man / sich / verlassen. | 진짜 친구는 믿을 수 있어.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: die Freundschaft = 우정 ; zuverlässig = 믿음직한 ; eifersüchtig = 질투하는 ; peinlich = 창피한 ; lügen = 거짓말하다 ; verzeihen = 용서하다 ; die Wahrheit = 진실
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Emma: Ein echter Freund hört zu. | 진짜 친구는 귀 기울여 들어 줘.
+dik: Lukas: Ich habe mich verliebt. | 나 사랑에 빠졌어.
+dik: Yuna: Auf dich kann ich mich verlassen. | 너는 믿을 수 있어.
+
+== sprechen
+-- redemittel
+우정 말하기: Ein echter Freund ist jemand, der … | 진짜 친구는 ~하는 사람이야. ; … jemand, dem ich vertraue. | 내가 믿는 사람 ; … jemand, mit dem ich lachen kann. | 같이 웃을 수 있는 사람 ; Auf sie kann ich mich verlassen. | 그 애는 믿을 수 있어.
+사람 설명하기: Sie ist die Freundin, mit der ich … | 그 애는 내가 같이 ~하는 친구야. ; Er ist ehrlich und zuverlässig. | 그는 정직하고 믿음직해. ; Wir sind sehr verschieden, aber … | 우리는 많이 다르지만 … ; Wir lachen viel zusammen. | 우리는 같이 많이 웃어.
+고민 말하기: Ich habe ein Problem mit … | ~와 문제가 있어. ; Ich weiß nicht, was ich tun soll. | 어떻게 해야 할지 모르겠어. ; Ich bin enttäuscht von … | ~에게 실망했어. ; Kannst du mir einen Rat geben? | 조언 좀 해 줄 수 있어?
+조언하기: An deiner Stelle würde ich … | 내가 너라면 ~할 거야. ; Sprich doch mit ihm! | 그 애와 이야기해 봐! ; Sei mutig! | 용기를 내! ; Vielleicht tut es ihm leid. | 그 애도 미안해할지 몰라.
+
+-- rolle B | Lukas, Yuna
+
+-- ich Mein bester Freund, meine beste Freundin | 가장 친한 친구를 떠올리며 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 친구 이름 | Minjun
+feld: b | 알게 된 때 (seit …) | seit der Grundschule
+feld: c | 같이 하는 일 (mit dem / mit der ich …) | mit dem ich jeden Tag Basketball spiele
+feld: d | 성격 두 가지 | ehrlich und lustig
+satz: {a} und ich kennen uns {b}.
+satz: {a} ist ein Mensch, {c}.
+satz: {a} ist {d}.
+satz: Auf {a} kann ich mich verlassen.
+
+-- schreiben Antwort an den Kummerkasten | 위 편지를 쓴 8학년 학생에게 팟캐스트 팀이 되어 답장을 써요. 일곱 문장쯤 써요.
+punkt: 인사와 공감하는 말 ; 내가 그 학생이라면 할 일 (An deiner Stelle würde ich …) ; 조언 두 가지 (명령형) ; 진짜 친구란 (… ist jemand, mit dem …) ; 힘을 주는 끝인사
+start: Liebe Schülerin aus der 8. Klasse, …
+muster: Liebe Schülerin aus der 8. Klasse, ich verstehe dein Problem gut. Es tut weh, wenn die beste Freundin plötzlich keine Zeit mehr hat. An deiner Stelle würde ich nicht warten. Schreib Nele einen ehrlichen Brief oder sprich allein mit ihr. Sag ihr, dass du traurig bist. Eine echte Freundin ist jemand, mit dem man über alles sprechen kann. Vielleicht weiß Nele nicht, wie du dich fühlst. Viel Glück! Dein „Mitreden“-Team
+check: An deiner Stelle würde ich … 문장을 썼나요? ; 명령형으로 조언했나요? ; 관계문에서 동사를 맨 끝에 썼나요? ; 형용사 끝을 살펴봤나요?
+
+-- kann
+Ich kann sagen, was für mich ein echter Freund ist. | 나에게 진짜 친구가 어떤 사람인지 말할 수 있어요.
+Ich kann Personen mit Relativsätzen genau beschreiben. | 관계문으로 사람을 자세히 설명할 수 있어요.
+Ich kann bei Problemen mit Freunden einen Rat geben. | 친구 사이의 고민에 조언할 수 있어요.
+
+-- tipp 아는 사람을 한 문장으로 소개해요
+p: 관계문은 두 문장을 하나로 묶어요. 아는 사람을 한 명 떠올리고 Das ist …, mit dem ich …나 Das ist …, mit der ich …로 소개해 보세요. 하루에 한 사람씩이면 돼요.
+p: 전치사가 어떤 격과 쓰이는지 알면 관계대명사는 저절로 정해져요. 새 동사를 외울 때 sich verlassen auf + 4격처럼 전치사와 격까지 한 덩어리로 외우세요.

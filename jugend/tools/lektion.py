@@ -82,11 +82,12 @@ def hl(s):
 
 def ko(s):
     """한국어 문장: 안에 든 독일어 낱말을 lang=de 로 묶는다."""
+    s = re.sub(r'\*([^*]+)\*', '\x01\\1\x02', s)             # *x* 강조는 먼저 표시해 둔다. 독일어 낱말 한가운데(den*en*)에 있어도 깨지지 않는다
     out = []; i = 0
     for m in LATRUN.finditer(s):
         out.append(hl(s[i:m.start()])); out.append('<span lang="de" class="d">%s</span>' % hl(m.group(0))); i = m.end()
     out.append(hl(s[i:]))
-    return ''.join(out)
+    return ''.join(out).replace('\x01', '<b class="hl">').replace('\x02', '</b>')
 
 
 def mix(s):

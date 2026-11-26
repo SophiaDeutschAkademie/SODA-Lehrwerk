@@ -1,0 +1,88 @@
+{
+ "job": "b11_n_05",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Lernplan"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "Ich mache einen Lernplan, um nichts zu vergessen."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "Wegen des Trainings hatte ich keine Zeit."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "die Klassenarbeit, die Klassenarbeiten.",
+    "Morgen schreiben wir eine Klassenarbeit."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "die Prüfung, die Prüfungen.",
+    "Die Prüfung dauert zwei Stunden."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Fehler, die Fehler.",
+    "Ich habe nur zwei Fehler gemacht."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "die Lösung, die Lösungen.",
+    "Die Lösung steht auf der anderen Seite."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "das Ergebnis, die Ergebnisse.",
+    "Das Ergebnis des Tests ist gut."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "bestehen, hat bestanden.",
+    "Ich habe die Prüfung bestanden."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "schaffen, hat geschafft.",
+    "Du schaffst das!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Lernplan [pause] Ich mache einen Lernplan, um nichts zu vergessen. [pause] Wegen des Trainings hatte ich keine Zeit. [pause] die Klassenarbeit, die Klassenarbeiten. Morgen schreiben wir eine Klassenarbeit. [pause] die Prüfung, die Prüfungen. Die Prüfung dauert zwei Stunden. [pause] der Fehler, die Fehler. Ich habe nur zwei Fehler gemacht. [pause] die Lösung, die Lösungen. Die Lösung steht auf der anderen Seite. [pause] das Ergebnis, die Ergebnisse. Das Ergebnis des Tests ist gut. [pause] bestehen, hat bestanden. Ich habe die Prüfung bestanden. [pause] schaffen, hat geschafft. Du schaffst das! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

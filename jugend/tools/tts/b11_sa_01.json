@@ -1,0 +1,67 @@
+{
+ "job": "b11_sa_01",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "b1-1/1",
+   "who": "Sabine",
+   "parts": [
+    "Am Mittwoch? Am Donnerstag habt ihr Schule. Wann ist das Konzert zu Ende?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Sabine",
+   "parts": [
+    "Viele? Das glaube ich nicht. Elf Uhr ist zu spät."
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Sabine",
+   "parts": [
+    "Und ihr macht zuerst die Hausaufgaben. Einverstanden?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Sabine",
+   "parts": [
+    "Gut. Aber am Donnerstag steht ihr trotzdem pünktlich auf!"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Sabine",
+   "parts": [
+    "Auf drei Dinge: Schlaf, Bewegung und Ernährung."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Sabine",
+   "parts": [
+    "In eurem Alter acht bis zehn Stunden. Je mehr ihr schlaft, desto besser könnt ihr euch konzentrieren."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Sabine",
+   "parts": [
+    "Dann leg das Handy eine Stunde vor dem Schlafen weg. Das Licht des Bildschirms macht wach."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Sabine",
+   "parts": [
+    "Mindestens eine Stunde am Tag. Das empfiehlt die Weltgesundheitsorganisation. Fahrt mit dem Rad zur Schule, sonst sitzt ihr den ganzen Tag."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Am Mittwoch? Am Donnerstag habt ihr Schule. Wann ist das Konzert zu Ende? [pause] Viele? Das glaube ich nicht. Elf Uhr ist zu spät. [pause] Und ihr macht zuerst die Hausaufgaben. Einverstanden? [pause] Gut. Aber am Donnerstag steht ihr trotzdem pünktlich auf! [pause] Auf drei Dinge: Schlaf, Bewegung und Ernährung. [pause] In eurem Alter acht bis zehn Stunden. Je mehr ihr schlaft, desto besser könnt ihr euch konzentrieren. [pause] Dann leg das Handy eine Stunde vor dem Schlafen weg. Das Licht des Bildschirms macht wach. [pause] Mindestens eine Stunde am Tag. Das empfiehlt die Weltgesundheitsorganisation. Fahrt mit dem Rad zur Schule, sonst sitzt ihr den ganzen Tag. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

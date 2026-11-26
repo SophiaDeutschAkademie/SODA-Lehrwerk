@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_19",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Hälfte, die Hälften.",
+    "Die Hälfte der Klasse frühstückt."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "das Drittel, die Drittel.",
+    "Ein Drittel schläft zu wenig."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "das Viertel, die Viertel.",
+    "Ein Viertel isst täglich Obst."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "der Durchschnitt.",
+    "Im Durchschnitt schlafe ich sieben Stunden."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Mehrheit.",
+    "Die Mehrheit macht Sport."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "steigen, ist gestiegen.",
+    "Die Zahl steigt."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "sinken, ist gesunken.",
+    "Die Zahl sinkt."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "mindestens.",
+    "Schlaf mindestens acht Stunden!"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Ursache, die Ursachen.",
+    "Die Ursache ist oft das Handy."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "deswegen.",
+    "Ich schlafe wenig, deswegen bin ich müde."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Hälfte, die Hälften. Die Hälfte der Klasse frühstückt. [pause] das Drittel, die Drittel. Ein Drittel schläft zu wenig. [pause] das Viertel, die Viertel. Ein Viertel isst täglich Obst. [pause] der Durchschnitt. Im Durchschnitt schlafe ich sieben Stunden. [pause] die Mehrheit. Die Mehrheit macht Sport. [pause] steigen, ist gestiegen. Die Zahl steigt. [pause] sinken, ist gesunken. Die Zahl sinkt. [pause] mindestens. Schlaf mindestens acht Stunden! [pause] die Ursache, die Ursachen. Die Ursache ist oft das Handy. [pause] deswegen. Ich schlafe wenig, deswegen bin ich müde. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

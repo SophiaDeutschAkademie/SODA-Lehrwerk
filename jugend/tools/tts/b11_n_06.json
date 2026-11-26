@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_06",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "sich vorbereiten, hat sich vorbereitet.",
+    "Ich bereite mich auf die Arbeit vor."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Stress.",
+    "Vor Prüfungen habe ich viel Stress."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Druck.",
+    "Der Druck in der Schule ist groß."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "die Nachhilfe.",
+    "Ich bekomme Nachhilfe in Mathe."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Lernplan, die Lernpläne.",
+    "Ich mache einen Lernplan für die Woche."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "die Karteikarte, die Karteikarten.",
+    "Ich schreibe die Wörter auf Karteikarten."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "sich konzentrieren, hat sich konzentriert.",
+    "Ich kann mich nicht konzentrieren."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "ablenken, hat abgelenkt.",
+    "Das Handy lenkt mich ab."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "weglegen, hat weggelegt.",
+    "Leg bitte das Handy weg!"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "sich merken, hat sich gemerkt.",
+    "Ich kann mir die Wörter gut merken."
+   ]
+  }
+ ],
+ "script": "Also. [pause] sich vorbereiten, hat sich vorbereitet. Ich bereite mich auf die Arbeit vor. [pause] der Stress. Vor Prüfungen habe ich viel Stress. [pause] der Druck. Der Druck in der Schule ist groß. [pause] die Nachhilfe. Ich bekomme Nachhilfe in Mathe. [pause] der Lernplan, die Lernpläne. Ich mache einen Lernplan für die Woche. [pause] die Karteikarte, die Karteikarten. Ich schreibe die Wörter auf Karteikarten. [pause] sich konzentrieren, hat sich konzentriert. Ich kann mich nicht konzentrieren. [pause] ablenken, hat abgelenkt. Das Handy lenkt mich ab. [pause] weglegen, hat weggelegt. Leg bitte das Handy weg! [pause] sich merken, hat sich gemerkt. Ich kann mir die Wörter gut merken. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

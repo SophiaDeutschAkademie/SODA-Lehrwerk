@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_11",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "verliebt.",
+    "Er ist in sie verliebt."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "eifersüchtig.",
+    "Warum bist du so eifersüchtig?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "peinlich.",
+    "Das ist mir peinlich."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "mutig.",
+    "Sei mutig und sprich mit ihr!"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "das Herz, die Herzen.",
+    "Mein Herz schlägt schnell."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "ansprechen, du sprichst an, er spricht an.",
+    "Ich möchte sie ansprechen."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "der Kummerkasten, die Kummerkästen.",
+    "Schreib an den Kummerkasten!"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "lügen, hat gelogen.",
+    "Du sollst nicht lügen."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "die Lüge, die Lügen.",
+    "Das ist eine Lüge."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "die Wahrheit.",
+    "Sag mir bitte die Wahrheit."
+   ]
+  }
+ ],
+ "script": "Also. [pause] verliebt. Er ist in sie verliebt. [pause] eifersüchtig. Warum bist du so eifersüchtig? [pause] peinlich. Das ist mir peinlich. [pause] mutig. Sei mutig und sprich mit ihr! [pause] das Herz, die Herzen. Mein Herz schlägt schnell. [pause] ansprechen, du sprichst an, er spricht an. Ich möchte sie ansprechen. [pause] der Kummerkasten, die Kummerkästen. Schreib an den Kummerkasten! [pause] lügen, hat gelogen. Du sollst nicht lügen. [pause] die Lüge, die Lügen. Das ist eine Lüge. [pause] die Wahrheit. Sag mir bitte die Wahrheit. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

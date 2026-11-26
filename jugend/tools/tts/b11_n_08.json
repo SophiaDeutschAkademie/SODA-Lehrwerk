@@ -1,0 +1,87 @@
+{
+ "job": "b11_n_08",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "die Mühe.",
+    "Ich gebe mir viel Mühe."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Tipp, die Tipps.",
+    "Hast du einen Tipp für mich?"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "raten, du rätst, er rät.",
+    "Was raten Sie mir?"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "damit.",
+    "Ich erkläre es dir, damit du es verstehst."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "wegen.",
+    "Wegen des Trainings habe ich keine Zeit."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "trotz.",
+    "Trotz des Stresses schlafe ich gut."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "du lernst, du schreibst, du schaffst"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "nichts, jetzt, selbst"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Stress, die Angst, der Herbst"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "Du schaffst das! Du brauchst nichts."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Mühe. Ich gebe mir viel Mühe. [pause] der Tipp, die Tipps. Hast du einen Tipp für mich? [pause] raten, du rätst, er rät. Was raten Sie mir? [pause] damit. Ich erkläre es dir, damit du es verstehst. [pause] wegen. Wegen des Trainings habe ich keine Zeit. [pause] trotz. Trotz des Stresses schlafe ich gut. [pause] du lernst, du schreibst, du schaffst [pause] nichts, jetzt, selbst [pause] der Stress, die Angst, der Herbst [pause] Du schaffst das! Du brauchst nichts. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

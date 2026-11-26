@@ -1,0 +1,25 @@
+{
+ "job": "b11_n_21",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "Je mehr, desto besser."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "Je länger ich am Handy bin, desto später schlafe ich ein."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Je mehr, desto besser. [pause] Je länger ich am Handy bin, desto später schlafe ich ein. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

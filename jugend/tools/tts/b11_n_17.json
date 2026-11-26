@@ -1,0 +1,87 @@
+{
+ "job": "b11_n_17",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Gewohnheit"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Hälfte"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "Je mehr ich schlafe, desto besser lerne ich."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "Worauf achtest du?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Gesundheit.",
+    "Gesundheit ist wichtig."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Ernährung.",
+    "Eine gesunde Ernährung hilft beim Lernen."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "sich ernähren, hat sich ernährt.",
+    "Ich ernähre mich gesund."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "sich bewegen, hat sich bewegt.",
+    "Ich bewege mich zu wenig."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Bewegung.",
+    "Bewegung macht fit."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "der Schlaf.",
+    "Genug Schlaf ist wichtig."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Gewohnheit [pause] die Hälfte [pause] Je mehr ich schlafe, desto besser lerne ich. [pause] Worauf achtest du? [pause] die Gesundheit. Gesundheit ist wichtig. [pause] die Ernährung. Eine gesunde Ernährung hilft beim Lernen. [pause] sich ernähren, hat sich ernährt. Ich ernähre mich gesund. [pause] sich bewegen, hat sich bewegt. Ich bewege mich zu wenig. [pause] die Bewegung. Bewegung macht fit. [pause] der Schlaf. Genug Schlaf ist wichtig. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

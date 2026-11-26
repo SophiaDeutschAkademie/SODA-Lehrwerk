@@ -1,0 +1,81 @@
+{
+ "job": "b11_lu_01",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "b1-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Super! Und worüber sprechen wir?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Wenn ich ein Einzelkind wäre, hätte ich endlich meine Ruhe! Lea kommt immer in mein Zimmer."
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Ich frage meine Großeltern. Obwohl sie an der Nordsee wohnen, telefonieren wir jede Woche."
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Oma, wie war deine Familie früher?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Und was würdest du heute anders machen?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Meine Eltern sind nicht streng. Trotzdem muss ich um neun zu Hause sein."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Lukas",
+   "parts": [
+    "Eine Fünf. Schon wieder. Meine Eltern sind bestimmt sauer."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Lukas",
+   "parts": [
+    "Doch, am Abend vor der Arbeit. Wegen des Trainings hatte ich in der Woche keine Zeit."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Lukas",
+   "parts": [
+    "Eine Woche? So viel Zeit habe ich nicht."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Lukas",
+   "parts": [
+    "Ohne Handy lernen? Das ist schwer."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Super! Und worüber sprechen wir? [pause] Wenn ich ein Einzelkind wäre, hätte ich endlich meine Ruhe! Lea kommt immer in mein Zimmer. [pause] Ich frage meine Großeltern. Obwohl sie an der Nordsee wohnen, telefonieren wir jede Woche. [pause] Oma, wie war deine Familie früher? [pause] Und was würdest du heute anders machen? [pause] Meine Eltern sind nicht streng. Trotzdem muss ich um neun zu Hause sein. [pause] Eine Fünf. Schon wieder. Meine Eltern sind bestimmt sauer. [pause] Doch, am Abend vor der Arbeit. Wegen des Trainings hatte ich in der Woche keine Zeit. [pause] Eine Woche? So viel Zeit habe ich nicht. [pause] Ohne Handy lernen? Das ist schwer. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

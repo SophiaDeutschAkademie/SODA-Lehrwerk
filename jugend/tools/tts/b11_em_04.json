@@ -1,0 +1,46 @@
+{
+ "job": "b11_em_04",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "Emma",
+   "parts": [
+    "Das ist gut. Und der Schlaf?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Emma",
+   "parts": [
+    "Und je weniger du schläfst, desto müder bist du in Mathe."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Emma",
+   "parts": [
+    "Wir sollten eine Ärztin fragen. Meine Mutter hat sicher Zeit. Außerdem hört sie unseren Podcast gern."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Emma",
+   "parts": [
+    "Und in der Schule?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Emma",
+   "parts": [
+    "Ich gehe zu Fuß zur Schule. Außerdem spiele ich zweimal pro Woche Volleyball."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist gut. Und der Schlaf? [pause] Und je weniger du schläfst, desto müder bist du in Mathe. [pause] Wir sollten eine Ärztin fragen. Meine Mutter hat sicher Zeit. Außerdem hört sie unseren Podcast gern. [pause] Und in der Schule? [pause] Ich gehe zu Fuß zur Schule. Außerdem spiele ich zweimal pro Woche Volleyball. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

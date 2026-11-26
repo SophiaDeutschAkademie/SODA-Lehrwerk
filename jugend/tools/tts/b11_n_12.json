@@ -1,0 +1,87 @@
+{
+ "job": "b11_n_12",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "verzeihen, hat verziehen.",
+    "Kannst du mir verzeihen?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "sich versöhnen, hat sich versöhnt.",
+    "Wir haben uns wieder versöhnt."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "weitererzählen, hat weitererzählt.",
+    "Erzähl das bitte nicht weiter!"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "ignorieren, hat ignoriert.",
+    "Sie ignoriert mich."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "beleidigt.",
+    "Bist du beleidigt?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "sich melden, hat sich gemeldet.",
+    "Sie meldet sich nicht mehr."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "verlieben, verzeihen, vertrauen"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "erzählen, besuchen, entschuldigen"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "zuhören, ansprechen, anrufen"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "Ich verzeihe dir. Hör mir bitte zu!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] verzeihen, hat verziehen. Kannst du mir verzeihen? [pause] sich versöhnen, hat sich versöhnt. Wir haben uns wieder versöhnt. [pause] weitererzählen, hat weitererzählt. Erzähl das bitte nicht weiter! [pause] ignorieren, hat ignoriert. Sie ignoriert mich. [pause] beleidigt. Bist du beleidigt? [pause] sich melden, hat sich gemeldet. Sie meldet sich nicht mehr. [pause] verlieben, verzeihen, vertrauen [pause] erzählen, besuchen, entschuldigen [pause] zuhören, ansprechen, anrufen [pause] Ich verzeihe dir. Hör mir bitte zu! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

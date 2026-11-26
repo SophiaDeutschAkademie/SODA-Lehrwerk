@@ -1,0 +1,87 @@
+{
+ "job": "b11_n_13",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "die Fake News"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "die Quelle"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "Die Nachricht wurde gestern Abend gepostet."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "Jede Nachricht muss geprüft werden."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "die Medien.",
+    "Die Medien berichten über den Regen."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "der Artikel, die Artikel.",
+    "Elif schreibt einen Artikel für die Schülerzeitung."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "die Schlagzeile, die Schlagzeilen.",
+    "Die Schlagzeile ist kurz und groß."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "die Quelle, die Quellen.",
+    "Aus welcher Quelle kommt die Nachricht?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "die Meldung, die Meldungen.",
+    "Die Meldung war falsch."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "die Sendung, die Sendungen.",
+    "Die Sendung fängt um acht an."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Fake News [pause] die Quelle [pause] Die Nachricht wurde gestern Abend gepostet. [pause] Jede Nachricht muss geprüft werden. [pause] die Medien. Die Medien berichten über den Regen. [pause] der Artikel, die Artikel. Elif schreibt einen Artikel für die Schülerzeitung. [pause] die Schlagzeile, die Schlagzeilen. Die Schlagzeile ist kurz und groß. [pause] die Quelle, die Quellen. Aus welcher Quelle kommt die Nachricht? [pause] die Meldung, die Meldungen. Die Meldung war falsch. [pause] die Sendung, die Sendungen. Die Sendung fängt um acht an. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

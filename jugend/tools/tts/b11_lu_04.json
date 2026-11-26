@@ -1,0 +1,74 @@
+{
+ "job": "b11_lu_04",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "b1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Morgen schulfrei! Wegen des starken Regens stehen die Schulen in Köln unter Wasser. Mit einem Foto von einem Schulhof."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Echt? Ich habe es sofort geglaubt und an meine Mannschaft weitergeleitet. Wie peinlich."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Das mache ich. Aber dieses Mal prüfe ich die Nachricht zuerst."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "In unserem Klassenchat wurde letzte Woche eine falsche Nachricht verbreitet. Das Foto war fünf Jahre alt."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Meiner Meinung nach sollten Handys in der Pause erlaubt sein."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Klar. Wie viele von uns machen Sport?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Das kenne ich. Je länger ich am Handy bin, desto später schlafe ich ein."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Gut. Ich frage sie, worauf ich verzichten muss. Auf Schokolade nicht, oder?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lukas",
+   "parts": [
+    "Aber abends bin ich nicht müde!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Morgen schulfrei! Wegen des starken Regens stehen die Schulen in Köln unter Wasser. Mit einem Foto von einem Schulhof. [pause] Echt? Ich habe es sofort geglaubt und an meine Mannschaft weitergeleitet. Wie peinlich. [pause] Das mache ich. Aber dieses Mal prüfe ich die Nachricht zuerst. [pause] In unserem Klassenchat wurde letzte Woche eine falsche Nachricht verbreitet. Das Foto war fünf Jahre alt. [pause] Meiner Meinung nach sollten Handys in der Pause erlaubt sein. [pause] Klar. Wie viele von uns machen Sport? [pause] Das kenne ich. Je länger ich am Handy bin, desto später schlafe ich ein. [pause] Gut. Ich frage sie, worauf ich verzichten muss. Auf Schokolade nicht, oder? [pause] Aber abends bin ich nicht müde! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

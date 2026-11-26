@@ -1,0 +1,88 @@
+{
+ "job": "b11_n_20",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "sonst.",
+    "Trink Wasser, sonst bekommst du Kopfschmerzen."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "außerdem.",
+    "Sport macht fit. Außerdem macht er Spaß."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "täglich.",
+    "Ich esse täglich Obst."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "selten.",
+    "Ich esse selten Fleisch."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "einschlafen, du schläfst ein, er schläft ein.",
+    "Ich kann nicht einschlafen."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "wach.",
+    "Um sechs bin ich schon wach."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "träumen, hat geträumt.",
+    "Ich träume von einer Reise nach Korea."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "fünfzig Prozent, die Hälfte. fünfundzwanzig Prozent, ein Viertel."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "dreiunddreißig Prozent, ein Drittel. fünfundsiebzig Prozent, drei Viertel."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "zwanzig Prozent, jeder Fünfte. zehn Prozent, jeder Zehnte."
+   ]
+  }
+ ],
+ "script": "Also. [pause] sonst. Trink Wasser, sonst bekommst du Kopfschmerzen. [pause] außerdem. Sport macht fit. Außerdem macht er Spaß. [pause] täglich. Ich esse täglich Obst. [pause] selten. Ich esse selten Fleisch. [pause] einschlafen, du schläfst ein, er schläft ein. Ich kann nicht einschlafen. [pause] wach. Um sechs bin ich schon wach. [pause] träumen, hat geträumt. Ich träume von einer Reise nach Korea. [pause] fünfzig Prozent, die Hälfte. fünfundzwanzig Prozent, ein Viertel. [pause] dreiunddreißig Prozent, ein Drittel. fünfundsiebzig Prozent, drei Viertel. [pause] zwanzig Prozent, jeder Fünfte. zehn Prozent, jeder Zehnte. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

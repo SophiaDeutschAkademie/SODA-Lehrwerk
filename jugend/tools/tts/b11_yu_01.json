@@ -1,0 +1,74 @@
+{
+ "job": "b11_yu_01",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "b1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "Ich habe zwei Familien: meine Familie in Seoul und meine Gastfamilie hier."
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "In Korea wäre das auch nicht leicht. Meine Eltern würden es nicht erlauben, obwohl sie mir vertrauen."
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "Obwohl ich meine Familie vermisse, bin ich gern in Köln."
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Yuna",
+   "parts": [
+    "Meine Eltern vertrauen mir."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "Oh nein. Hast du nicht gelernt?"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "Ich lege das Handy in ein anderes Zimmer, damit es mich nicht ablenkt."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "Trotz des Stresses mache ich auch Pausen. Ohne Pausen kann ich mich nicht konzentrieren."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "In Korea gehen viele Schüler nach der Schule noch zur Nachhilfe und lernen bis spät am Abend. Wegen des Drucks schlafen sie zu wenig."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Yuna",
+   "parts": [
+    "Trotz der Kopfschmerzen bin ich heute zur Schule gegangen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich habe zwei Familien: meine Familie in Seoul und meine Gastfamilie hier. [pause] In Korea wäre das auch nicht leicht. Meine Eltern würden es nicht erlauben, obwohl sie mir vertrauen. [pause] Obwohl ich meine Familie vermisse, bin ich gern in Köln. [pause] Meine Eltern vertrauen mir. [pause] Oh nein. Hast du nicht gelernt? [pause] Ich lege das Handy in ein anderes Zimmer, damit es mich nicht ablenkt. [pause] Trotz des Stresses mache ich auch Pausen. Ohne Pausen kann ich mich nicht konzentrieren. [pause] In Korea gehen viele Schüler nach der Schule noch zur Nachhilfe und lernen bis spät am Abend. Wegen des Drucks schlafen sie zu wenig. [pause] Trotz der Kopfschmerzen bin ich heute zur Schule gegangen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

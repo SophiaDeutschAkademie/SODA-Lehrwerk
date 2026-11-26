@@ -1,0 +1,285 @@
+@id b1-1/5
+
+== einstieg
+bild: A classroom corner with a big paper chart on the wall that shows four coloured bars of different heights and no text. ELIF points at the chart. YUNA holds an apple, EMMA holds a water bottle and LUKAS hides a chocolate bar behind his arm and grins. Everyone faces the viewer, all faces with clearly drawn eyes, nose and mouth.
+alt: 교실 벽에 막대그래프가 그려진 큰 종이가 붙어 있어요. Elif가 그래프를 가리키고 있어요. Yuna는 사과를, Emma는 물병을 들고 있고, Lukas는 초콜릿을 팔 뒤에 숨기고 웃고 있어요.
+lead: 12월 초, 팟캐스트 첫 회가 나간 뒤예요. 9b는 다음 주제를 건강으로 정하고 반 학생 24명에게 물었어요. 얼마나 자고, 얼마나 움직이고, 무엇을 먹는지요.
+mission: 이 과를 마치면 생활 습관을 이야기하고, 통계와 그래프를 설명하고, 원인과 결과를 말할 수 있어요.
+wort: die Gewohnheit | 습관
+wort: die Hälfte | 절반
+wort: Je mehr ich schlafe, desto besser lerne ich. | 나는 많이 잘수록 공부가 더 잘돼.
+wort: Worauf achtest du? | 너는 무엇에 신경 써?
+mc: Je mehr ich schlafe, desto besser lerne ich. 이 사람은 언제 공부가 더 잘되나요? | 잠을 많이 잤을 때* | 잠을 적게 잤을 때 | 잠과는 상관없어요 => je … desto는 '~할수록 더 ~하다'라는 뜻이에요.
+
+== hoeren
+-- dialog A | Die Umfrage der 9b | 12월 초 방과 후, 9b 교실이에요. 팟캐스트 팀이 설문 결과를 살펴봐요.
+vor: 들으면서 찾아보세요. 반 학생 가운데 날마다 아침을 먹는 사람은 얼마나 되나요?
+Elif: Die Ergebnisse unserer Umfrage sind da. Wollt ihr die Zahlen hören? | 우리 설문 결과가 나왔어. 숫자 들어 볼래?
+Lukas: Klar. Wie viele von uns machen Sport? | 물론이지. 우리 가운데 운동하는 사람이 몇이야?
+Elif: Die Mehrheit. Zwei Drittel machen mindestens zweimal pro Woche Sport. | 반이 넘어. 3분의 2가 한 주에 적어도 두 번 운동해.
+Emma: Das ist gut. Und der Schlaf? | 그건 좋네. 잠은?
+Elif: Nicht so gut. Ein Drittel schläft weniger als sieben Stunden. | 별로 안 좋아. 3분의 1이 일곱 시간도 못 자.
+Yuna: Ich weiß, warum. Drei Viertel sind täglich mehr als drei Stunden am Handy. | 왜 그런지 알아. 4분의 3이 날마다 세 시간 넘게 휴대폰을 봐.
+Lukas: Das kenne ich. Je länger ich am Handy bin, desto später schlafe ich ein. | 나도 그래. 휴대폰을 오래 볼수록 늦게 잠들어.
+Emma: Und je weniger du schläfst, desto müder bist du in Mathe. | 그리고 잠을 적게 잘수록 수학 시간에 더 졸리지.
+Elif: Nur die Hälfte frühstückt jeden Tag. Deswegen haben viele in der dritten Stunde schon Hunger. | 날마다 아침을 먹는 사람은 절반뿐이야. 그래서 3교시면 벌써 배고픈 애들이 많아.
+Yuna: Ich frühstücke immer, sonst kann ich mich nicht konzentrieren. | 나는 꼭 아침을 먹어. 안 그러면 집중이 안 돼.
+Emma: Wir sollten eine Ärztin fragen. Meine Mutter hat sicher Zeit. Außerdem hört sie unseren Podcast gern. | 의사 선생님한테 물어보자. 우리 엄마가 분명 시간이 될 거야. 게다가 우리 팟캐스트를 즐겨 들으셔.
+Lukas: Gut. Ich frage sie, worauf ich verzichten muss. Auf Schokolade nicht, oder? | 좋아. 내가 뭘 끊어야 하는지 여쭤볼게. 초콜릿은 아니겠지?
+
+-- dialog B | Interview mit Frau Dr. Wagner | 며칠 뒤, Emma의 어머니 Sabine의 병원이에요. Elif와 Lukas가 팟캐스트에 넣을 인터뷰를 녹음해요.
+vor: 들으면서 찾아보세요. 청소년은 하루에 얼마나 움직여야 하나요?
+Elif: Frau Dr. Wagner, danke, dass Sie Zeit für uns haben. Worauf sollten Jugendliche achten? | Wagner 선생님, 시간 내 주셔서 고맙습니다. 청소년은 무엇에 신경 써야 하나요? | say=Frau Doktor Wagner, danke, dass Sie Zeit für uns haben. Worauf sollten Jugendliche achten?
+Sabine: Auf drei Dinge: Schlaf, Bewegung und Ernährung. | 세 가지예요. 잠, 운동, 그리고 식생활이요.
+Elif: Fangen wir mit dem Schlaf an. Wie viel brauchen wir? | 잠부터 시작할게요. 저희는 얼마나 자야 하나요?
+Sabine: In eurem Alter acht bis zehn Stunden. Je mehr ihr schlaft, desto besser könnt ihr euch konzentrieren. | 여러분 나이에는 여덟 시간에서 열 시간이에요. 많이 잘수록 집중이 더 잘돼요.
+Lukas: Aber abends bin ich nicht müde! | 그런데 저는 밤에 안 졸려요!
+Sabine: Dann leg das Handy eine Stunde vor dem Schlafen weg. Das Licht des Bildschirms macht wach. | 그러면 자기 한 시간 전에 휴대폰을 치워 둬요. 화면의 빛이 잠을 깨우거든요.
+Elif: Und Bewegung? | 운동은요?
+Sabine: Mindestens eine Stunde am Tag. Das empfiehlt die Weltgesundheitsorganisation. Fahrt mit dem Rad zur Schule, sonst sitzt ihr den ganzen Tag. | 하루에 적어도 한 시간이요. 세계보건기구가 권하는 시간이에요. 자전거로 학교에 가세요. 안 그러면 하루 종일 앉아 있게 돼요.
+Lukas: Und das Essen? Muss ich auf Schokolade verzichten? | 먹는 건요? 초콜릿을 끊어야 하나요?
+Sabine: Nein, darauf musst du nicht verzichten. Aber iss täglich Obst und Gemüse und trink viel Wasser. | 아니요, 그건 끊지 않아도 돼요. 하지만 날마다 과일과 채소를 먹고 물을 많이 마셔요.
+Lukas: Darauf kann ich achten. Außerdem mag ich Äpfel. | 그건 신경 쓸 수 있어요. 게다가 저는 사과를 좋아해요.
+Elif: Vielen Dank für das Interview, Frau Dr. Wagner! | 인터뷰 고맙습니다, Wagner 선생님! | say=Vielen Dank für das Interview, Frau Doktor Wagner!
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Wie viele aus der 9b machen mindestens zweimal pro Woche Sport? | zwei Drittel* | ein Drittel | die Hälfte
+rf: Die Mehrheit der Klasse frühstückt jeden Tag. | f => Nur die Hälfte frühstückt jeden Tag.
+mc: Warum schläft Lukas spät ein? | Weil er lange am Handy ist.* | Weil er abends Sport macht. | Weil er zu viel isst.
+mc: Was passiert, wenn Yuna nicht frühstückt? | Sie kann sich nicht konzentrieren.* | Sie bekommt Kopfschmerzen. | Sie schläft ein.
+mc: Wie lange sollten Jugendliche schlafen? | acht bis zehn Stunden* | sechs bis sieben Stunden | mindestens zwölf Stunden
+rf: Lukas muss auf Schokolade verzichten. | f => Frau Dr. Wagner sagt: „Darauf musst du nicht verzichten.“
+mc: 청소년은 하루에 적어도 얼마나 움직여야 하나요? | 한 시간* | 삼십 분 | 세 시간
+
+-- kultur Bundesjugendspiele, 해마다 하는 학교 운동 대회
+p: 독일 학교에서는 해마다 Bundesjugendspiele라는 운동 대회를 열어요. 1학년부터 10학년까지 모든 학생이 참가해요. 달리기, 멀리뛰기, 던지기 같은 육상을 하거나 수영, 기계 체조를 해요.
+p: 대회가 끝나면 증서(Urkunde)를 받아요. 참가한 학생이 받는 증서, 잘한 학생이 받는 증서, 그리고 가장 잘한 학생이 받는 Ehrenurkunde가 있어요. Ehrenurkunde에는 독일 대통령의 서명이 들어 있어요.
+p: 열두 살에서 열네 살 사이에는 J1이라는 청소년 건강 검진도 받을 수 있어요. 돈을 내지 않고, 받고 싶은 사람만 받아요.
+mc: Ehrenurkunde에는 누구의 서명이 들어 있나요? | 독일 대통령* | 교장 선생님 | 체육 선생님
+
+== wortschatz
+-- gruppe Gesund leben | 건강하게 살기
+die Gesundheit | 건강 | Gesundheit ist wichtig. | 건강은 중요해요.
+die Ernährung | 식생활, 영양 | Eine gesunde Ernährung hilft beim Lernen. | 건강한 식생활은 공부에 도움이 돼요.
+sich ernähren, hat sich ernährt | 먹고 살다, 식생활을 하다 | Ich ernähre mich gesund. | 나는 건강하게 먹어요.
+sich bewegen, hat sich bewegt | 움직이다 | Ich bewege mich zu wenig. | 나는 너무 적게 움직여요.
+die Bewegung | 움직임, 운동 | Bewegung macht fit. | 운동하면 몸이 튼튼해져요.
+der Schlaf | 잠 | Genug Schlaf ist wichtig. | 잠을 충분히 자는 것이 중요해요.
+die Gewohnheit, die Gewohnheiten | 습관 | Das ist eine gute Gewohnheit. | 그건 좋은 습관이에요.
+sich entspannen, hat sich entspannt | 쉬다, 긴장을 풀다 | Am Abend entspanne ich mich. | 저녁에 나는 쉬어요.
+fit | 몸이 튼튼한, 기운찬 | Nach dem Sport bin ich fit. | 운동하고 나면 기운이 나요.
+ungesund | 건강에 나쁜 | Zu viel Zucker ist ungesund. | 설탕을 너무 많이 먹으면 건강에 나빠요.
+verzichten, hat verzichtet | (~ 없이) 지내다, 끊다 | Ich verzichte auf Zucker. | 나는 설탕을 끊어요.
+achten, hat geachtet | 신경 쓰다, 주의하다 | Ich achte auf meine Gesundheit. | 나는 건강에 신경 써요.
+der Jugendliche, die Jugendlichen | 청소년 | Viele Jugendliche schlafen zu wenig. | 많은 청소년이 잠을 너무 적게 자요.
+
+-- gruppe Zahlen und Statistik | 숫자와 통계
+die Statistik, die Statistiken | 통계 | Die Statistik zeigt das Ergebnis der Umfrage. | 통계가 설문 결과를 보여 줘요.
+die Grafik, die Grafiken | 그래프, 도표 | Die Grafik zeigt vier Zahlen. | 그래프가 숫자 네 개를 보여 줘요.
+das Prozent, die Prozente | 퍼센트 | Fünfzig Prozent frühstücken jeden Tag. | 50퍼센트가 날마다 아침을 먹어요.
+die Hälfte, die Hälften | 절반 | Die Hälfte der Klasse frühstückt. | 반의 절반이 아침을 먹어요.
+das Drittel, die Drittel | 3분의 1 | Ein Drittel schläft zu wenig. | 3분의 1이 잠을 너무 적게 자요.
+das Viertel, die Viertel | 4분의 1 | Ein Viertel isst täglich Obst. | 4분의 1이 날마다 과일을 먹어요.
+der Durchschnitt | 평균 | Im Durchschnitt schlafe ich sieben Stunden. | 나는 평균 일곱 시간 자요.
+die Mehrheit | 다수, 반이 넘는 수 | Die Mehrheit macht Sport. | 반이 넘는 학생이 운동해요.
+steigen, ist gestiegen | 오르다, 늘다 | Die Zahl steigt. | 숫자가 늘어요.
+sinken, ist gesunken | 내려가다, 줄다 | Die Zahl sinkt. | 숫자가 줄어요.
+mindestens | 적어도 | Schlaf mindestens acht Stunden! | 적어도 여덟 시간은 자!
+
+-- gruppe Warum und was dann? | 원인과 결과
+die Ursache, die Ursachen | 원인 | Die Ursache ist oft das Handy. | 원인은 휴대폰일 때가 많아요.
+deswegen | 그래서 | Ich schlafe wenig, deswegen bin ich müde. | 나는 잠을 적게 자요. 그래서 피곤해요.
+sonst | 안 그러면 | Trink Wasser, sonst bekommst du Kopfschmerzen. | 물을 마셔. 안 그러면 머리가 아파.
+außerdem | 게다가 | Sport macht fit. Außerdem macht er Spaß. | 운동하면 튼튼해져요. 게다가 재미있어요.
+täglich | 날마다 | Ich esse täglich Obst. | 나는 날마다 과일을 먹어요.
+selten | 드물게, 좀처럼 ~않다 | Ich esse selten Fleisch. | 나는 고기를 잘 안 먹어요.
+einschlafen (du schläfst ein, er schläft ein) | 잠들다 | Ich kann nicht einschlafen. | 나는 잠이 안 와요.
+wach | 깨어 있는 | Um sechs bin ich schon wach. | 나는 여섯 시면 벌써 깨어 있어요.
+träumen, hat geträumt | 꿈꾸다 | Ich träume von einer Reise nach Korea. | 나는 한국 여행을 꿈꿔요.
+
+-- bilder
+die Ernährung: a plate with vegetables, fruit and bread next to a glass of water on a table
+sich bewegen, hat sich bewegt: a teenager in sports clothes who jumps with arms and legs spread wide and smiles, the face with clearly drawn eyes, nose and mouth
+der Schlaf: a teenager who sleeps peacefully in a bed under a blanket at night, the face turned to the viewer with closed eyes, nose and mouth clearly drawn
+sich entspannen, hat sich entspannt: a teenager who lies on a sofa with headphones and smiles calmly, the face with clearly drawn eyes, nose and mouth
+fit: a teenager in sports clothes who shows a strong arm and smiles, the face with clearly drawn eyes, nose and mouth
+ungesund: a burger, a portion of fries and a cup with a straw on a tray
+verzichten, hat verzichtet: a teenager who pushes a plate with a piece of cake away with a flat hand and smiles, the face with clearly drawn eyes, nose and mouth
+die Grafik, die Grafiken: a simple bar chart with four coloured bars of different heights, no letters and no numbers
+die Hälfte, die Hälften: a round pizza that is cut into two equal halves, one half moved a little to the side
+steigen, ist gestiegen: a simple line chart with a line that goes up to the right and ends in an arrow, no letters and no numbers
+sinken, ist gesunken: a simple line chart with a line that goes down to the right and ends in an arrow, no letters and no numbers
+einschlafen (du schläfst ein, er schläft ein): a teenager who falls asleep at a desk with the head on one arm over an open book, the face turned to the viewer with closed eyes, nose and mouth clearly drawn
+
+-- tafel Zahlen in der Statistik | 숫자를 분수로 말해요
+p: 통계를 설명할 때는 퍼센트 대신 분수로 자주 말해요. 줄을 누르면 소리가 나요.
+r: 50 % = die Hälfte ; 25 % = ein Viertel | say=fünfzig Prozent, die Hälfte. fünfundzwanzig Prozent, ein Viertel.
+r: 33 % = ein Drittel ; 75 % = drei Viertel | say=dreiunddreißig Prozent, ein Drittel. fünfundsiebzig Prozent, drei Viertel.
+r: 20 % = jeder Fünfte ; 10 % = jeder Zehnte | say=zwanzig Prozent, jeder Fünfte. zehn Prozent, jeder Zehnte.
+
+-- aussprache je … desto | 비교급 두 개를 세게
+p: je … desto 문장에서는 비교급 두 개를 세게 말해요. Je MEHR ich schlafe, desto BESSER lerne ich. 나머지 낱말은 힘을 빼고 가볍게 말해요.
+p: 쉼표 앞에서는 목소리를 조금 올리고 잠깐 쉬어요. 문장 끝에서 목소리를 내려요.
+hör: Je mehr, desto besser. | 짧게
+hör: Je mehr ich schlafe, desto besser lerne ich. | 비교급을 세게
+hör: Je länger ich am Handy bin, desto später schlafe ich ein. | 쉼표에서 올리고 끝에서 내려요
+
+== grammatik
+-- punkt je … desto | ~할수록 더 ~해요
+bsp: *Je länger* ich am Handy *bin*, *desto später* schlafe ich ein. | 휴대폰을 오래 볼수록 늦게 잠들어.
+bsp: *Je mehr* ihr *schlaft*, *desto besser* könnt ihr euch konzentrieren. | 많이 잘수록 집중이 더 잘돼요.
+bsp: *Je weniger* du *schläfst*, *desto müder* bist du. | 잠을 적게 잘수록 더 피곤해.
+finde: je로 시작하는 앞 문장에서 동사는 어디에 오나요? | 맨 끝* | 둘째 자리 | 맨 앞
+regel: je와 desto 뒤에는 비교급이 와요. je 문장에서는 동사가 맨 끝에 와요. desto 문장에서는 비교급 바로 뒤에 동사가 와요.
+| je + 비교급 … 동사 | desto + 비교급 + 동사 …
+| *Je mehr* ich *schlafe*, | *desto besser lerne* ich.
+| *Je früher* ich *aufstehe*, | *desto mehr* Zeit *habe* ich.
+| *Je öfter* wir *üben*, | *desto leichter wird* es.
+merke: 비교급을 다시 떠올려요. gut – besser, viel – mehr, gern – lieber. desto 대신 umso를 쓰기도 해요.
+
+-- punkt deswegen, sonst, außerdem | 문장을 잇는 세 낱말
+bsp: Viele frühstücken nicht, *deswegen haben* sie früh Hunger. | 아침을 안 먹는 사람이 많아. 그래서 일찍 배가 고파.
+bsp: Ich frühstücke immer, *sonst kann* ich mich nicht konzentrieren. | 나는 꼭 아침을 먹어. 안 그러면 집중이 안 돼.
+bsp: Sport macht fit. *Außerdem macht* er Spaß. | 운동하면 튼튼해져. 게다가 재미있어.
+finde: deswegen, sonst, außerdem 바로 뒤에는 무엇이 오나요? | 동사* | 주어 | 동사 원형
+regel: 세 낱말 모두 문장의 첫 자리에 오고, 바로 뒤에 동사가 와요. deswegen은 결과를, sonst는 그렇게 하지 않으면 생길 일을, außerdem은 덧붙이는 말을 이끌어요.
+| | 보기
+| deswegen | Ich schlafe wenig, *deswegen bin* ich müde.
+| sonst | Trink Wasser, *sonst bekommst* du Kopfschmerzen.
+| außerdem | Obst ist gesund. *Außerdem schmeckt* es gut.
+merke: deswegen은 A2에서 배운 deshalb와 뜻이 같아요.
+
+-- punkt Worauf? Darauf. | 전치사와 짝이 되는 동사로 묻고 답하기
+bsp: *Worauf* sollten Jugendliche *achten*? | 청소년은 무엇에 신경 써야 하나요?
+bsp: Schokolade? *Darauf* musst du nicht *verzichten*. | 초콜릿? 그건 끊지 않아도 돼.
+bsp: *Wovon* träumst du? – *Von* einer Reise nach Korea. | 너는 무엇을 꿈꿔? – 한국 여행.
+finde: Worauf achtest du?에 맞는 대답은 무엇인가요? | Auf meine Ernährung.* | Mit meiner Ernährung. | Meine Ernährung.
+regel: achten auf, verzichten auf, träumen von, sich freuen auf처럼 동사가 전치사와 짝이 되면 물건이나 일은 wo + 전치사로 묻고 da + 전치사로 받아요. 전치사가 모음으로 시작하면 사이에 r를 넣어요. worauf, darauf, worüber, darüber.
+| 질문 | 대답
+| Worauf achtest du? | Auf genug Schlaf. *Darauf* achte ich auch.
+| Worauf verzichtest du? | Auf Zucker. *Darauf* verzichte ich nicht.
+| Wovon träumst du? | Von einer Reise. *Davon* träume ich auch.
+| Worauf freust du dich? | Auf die Ferien. *Darauf* freue ich mich auch.
+merke: 사람을 물을 때는 wo-를 쓰지 않고 전치사 + wen, wem으로 물어요. Auf wen wartest du? – Auf Emma.
+
+== training
+-- ex Hören | Lukas가 팟캐스트에서 한 주 동안 해 본 일을 이야기해요. 듣고 답하세요.
+audio | Eine Woche ohne Handy am Abend
+> Lukas: Ich habe einen Test gemacht: eine Woche kein Handy nach neun Uhr.
+> Lukas: Am ersten Abend war es schwer. Ich konnte lange nicht einschlafen.
+> Lukas: Aber am dritten Tag bin ich schon um zehn eingeschlafen. Deswegen war ich am Morgen wach und fit.
+> Emma: Und in der Schule?
+> Lukas: Je mehr ich geschlafen habe, desto besser konnte ich mich konzentrieren. In Mathe habe ich alles verstanden!
+> Lukas: Ich mache weiter. Nur am Wochenende nicht.
+mc: Was war Lukas' Test? | eine Woche kein Handy nach neun Uhr* | eine Woche ohne Schokolade | eine Woche jeden Tag Sport
+rf: Am ersten Abend ist Lukas schnell eingeschlafen. | f => Er konnte lange nicht einschlafen.
+mc: Wann ist Lukas am dritten Tag eingeschlafen? | um zehn* | um neun | um zwölf
+mc: Lukas는 학교에서 무엇이 달라졌나요? | 집중이 더 잘됐어요* | 더 졸렸어요 | 달라진 것이 없어요
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Yuna: Ich frühstücke jeden Tag, sonst bin ich in der Schule müde.
+mc: Yuna가 아침을 먹지 않으면 어떻게 되나요? | 학교에서 피곤해요* | 학교에 늦어요 | 배가 아파요
+hör: Lukas: Je mehr Schokolade ich esse, desto glücklicher bin ich.
+mc: Lukas는 무엇을 먹으면 기분이 좋아지나요? | 초콜릿* | 과일 | 채소
+hör: Emma: Ich gehe zu Fuß zur Schule. Außerdem spiele ich zweimal pro Woche Volleyball.
+mc: Emma는 한 주에 몇 번 배구를 하나요? | 두 번* | 한 번 | 날마다
+hör: Elif: Worauf ich mich freue? Auf das Wochenende. Da kann ich endlich lange schlafen.
+mc: Elif는 무엇을 기다리나요? | 주말* | 시험 | 방학
+
+-- ex Lesen | 9b가 설문 결과를 기사로 썼어요. 읽고 답하세요.
+text notiz | Wie gesund lebt die 9b?
+> Für unseren Podcast haben wir 24 Schülerinnen und Schüler unserer Klasse gefragt. Hier sind die Ergebnisse.
+> Zwei Drittel der Klasse machen mindestens zweimal pro Woche Sport. Das ist die gute Nachricht.
+> Die schlechte Nachricht: Ein Drittel schläft weniger als sieben Stunden. Die Ursache ist oft das Handy.
+> Drei Viertel sind täglich mehr als drei Stunden am Bildschirm. Je länger sie am Bildschirm sind, desto weniger schlafen sie.
+> Nur die Hälfte frühstückt jeden Tag, und nur ein Viertel isst täglich Obst.
+> Frau Dr. Wagner rät: mehr Schlaf, mehr Bewegung und weniger Zeit am Handy.
+mc: Wie viele Schülerinnen und Schüler wurden gefragt? | 24* | 12 | 18
+mc: Was ist die gute Nachricht? | Zwei Drittel machen Sport.* | Alle frühstücken. | Niemand hat ein Handy.
+rf: Die Mehrheit schläft weniger als sieben Stunden. | f => Ein Drittel schläft weniger als sieben Stunden.
+mc: Was ist oft die Ursache für zu wenig Schlaf? | das Handy* | die Hausaufgaben | der Sport
+mc: Frau Dr. Wagner가 권하는 것이 아닌 것은 무엇인가요? | 아침을 먹지 않기* | 더 많이 자기 | 더 많이 움직이기
+
+-- ex Lesen | 9b의 설문 결과표예요. 보고 답하세요.
+text plan | Umfrage der 9b (24 Schülerinnen und Schüler)
+> Gewohnheit | Ja | Nein
+> zweimal pro Woche Sport | 16 | 8
+> sieben Stunden Schlaf | 16 | 8
+> jeden Tag Frühstück | 12 | 12
+> täglich Obst | 6 | 18
+> über drei Stunden am Handy | 18 | 6
+mc: Wie viele frühstücken jeden Tag? | 12* | 16 | 6
+rf: Die Mehrheit isst täglich Obst. | f => 날마다 과일을 먹는 학생은 6명뿐이에요.
+mc: Welche Zahl passt zu „drei Viertel“? | 18 von 24* | 12 von 24 | 6 von 24
+
+-- ex Grammatik | je … desto 문장이에요. 알맞은 말을 고르세요.
+gap: Je mehr ich schlafe, desto [besser|gut|am besten] lerne ich. => je와 desto 뒤에는 비교급이 와요.
+gap: Je [länger|lang|am längsten] ich am Handy bin, desto später schlafe ich ein.
+gap: Je mehr Sport ich mache, [desto|als|wie] fitter bin ich.
+gap: [Je|Desto|Wenn] früher ich aufstehe, desto mehr Zeit habe ich.
+gap: Je weniger Zucker du isst, desto [gesünder|gesund|am gesündesten] lebst du.
+gap: Je öfter wir üben, desto leichter [wird es|es wird|es werden]. => desto + 비교급 바로 뒤에 동사가 와요.
+
+-- ex Grammatik | deswegen, sonst, außerdem 가운데 알맞은 말을 고르세요.
+gap: Ich schlafe zu wenig, [deswegen|sonst|außerdem] bin ich oft müde. | 나는 잠을 너무 적게 자요. 그래서 자주 피곤해요.
+gap: Trink genug Wasser, [sonst|deswegen|außerdem] bekommst du Kopfschmerzen. | 물을 충분히 마셔. 안 그러면 머리가 아파.
+gap: Sport macht fit. [Außerdem|Sonst|Deswegen] macht er Spaß. | 운동하면 튼튼해져요. 게다가 재미있어요.
+gap: Leg das Handy weg, [sonst|deswegen|außerdem] kannst du nicht einschlafen. | 휴대폰을 치워. 안 그러면 잠이 안 와.
+gap: Lukas hat nicht gefrühstückt, [deswegen|sonst|außerdem] hat er Hunger. | Lukas는 아침을 안 먹었어요. 그래서 배가 고파요.
+gap: Obst ist gesund. [Außerdem|Sonst|Deswegen] schmeckt es gut. | 과일은 건강에 좋아요. 게다가 맛있어요.
+
+-- ex Grammatik | 전치사와 짝이 되는 동사예요. 알맞은 말을 고르세요.
+gap: [Worauf|Wofür|Wovon] freust du dich? – Auf die Ferien. => sich freuen auf
+gap: [Wovon|Worauf|Wofür] träumst du? – Von einer Reise nach Korea. => träumen von
+gap: Achtest du auf deine Ernährung? – Ja, [darauf|davon|dafür] achte ich.
+gap: [Wofür|Worauf|Wovon] interessierst du dich? – Für Sport. => sich interessieren für
+gap: Schokolade? [Darauf|Davon|Dafür] kann ich nicht verzichten.
+gap: [Auf wen|Worauf|Wovon] wartest du? – Auf Emma. => 사람은 전치사 + wen으로 물어요.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: je mehr / ich / schlafe, / desto besser / lerne / ich. | 나는 많이 잘수록 공부가 더 잘돼.
+ord: ich / schlafe / zu wenig, / deswegen / bin / ich / müde. | 나는 잠을 너무 적게 자. 그래서 피곤해.
+ord: worauf / freust / du / dich? | 너는 무엇을 기다려?
+ord: darauf / kann / ich / nicht / verzichten. | 그건 포기할 수 없어.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: die Gesundheit = 건강 ; die Ernährung = 식생활 ; die Gewohnheit = 습관 ; die Hälfte = 절반 ; der Durchschnitt = 평균 ; die Ursache = 원인 ; verzichten = 끊다
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Yuna: Ich frühstücke jeden Tag. | 나는 날마다 아침을 먹어.
+dik: Lukas: Darauf kann ich nicht verzichten. | 그건 포기할 수 없어.
+dik: Sabine: Bewegt euch mehr! | 더 많이 움직이세요!
+
+== sprechen
+-- redemittel
+습관 말하기: Ich achte auf … | 나는 ~에 신경 써. ; Ich schlafe im Durchschnitt … Stunden. | 나는 평균 ~시간 자. ; Ich mache zweimal pro Woche Sport. | 나는 한 주에 두 번 운동해. ; Auf … kann ich nicht verzichten. | ~은 포기할 수 없어.
+통계 설명하기: Die Hälfte der Klasse … | 반의 절반이 … ; Ein Drittel … | 3분의 1이 … ; Die Mehrheit … | 반이 넘는 학생이 … ; Nur jeder Vierte … | 넷 가운데 한 명만 … ; Die Zahl steigt. / Die Zahl sinkt. | 숫자가 늘어. / 숫자가 줄어.
+원인과 결과: …, deswegen … | 그래서 ; …, sonst … | 안 그러면 ; Je mehr …, desto … | ~할수록 더 ; Die Ursache ist … | 원인은 ~이야.
+묻기: Worauf achtest du? | 너는 무엇에 신경 써? ; Worauf freust du dich? | 너는 무엇을 기다려? ; Wovon träumst du? | 너는 무엇을 꿈꿔?
+
+-- rolle B | Elif, Sabine
+
+-- ich Meine Gewohnheiten | 내 생활 습관을 떠올리며 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 자는 시간 (숫자) | sieben
+feld: b | 내 운동 (동사로 시작) | spiele zweimal pro Woche Badminton
+feld: c | 포기할 수 없는 것 (Auf …) | Auf Schokolade
+feld: d | 더 하면 좋은 일 (비교급 + ich + 동사) | mehr ich schlafe
+satz: Ich schlafe im Durchschnitt {a} Stunden.
+satz: Ich {b}.
+satz: {c} kann ich nicht verzichten.
+satz: Je {d}, desto fitter bin ich.
+
+-- schreiben Wie gesund lebt die 9b? | 위 결과표를 보고 9b의 생활 습관을 설명하는 글을 써요. 일곱 문장쯤 써요.
+punkt: 누구에게 무엇을 물었는지 ; 좋은 결과 한 가지 (Zwei Drittel …) ; 나쁜 결과 두 가지 (Nur die Hälfte … / Nur ein Viertel …) ; 원인이나 결과 (deswegen / je … desto) ; 내 습관 한 가지 (sonst) ; 친구들에게 주는 조언
+start: Die 9b hat 24 Schülerinnen und Schüler gefragt: …
+muster: Die 9b hat 24 Schülerinnen und Schüler gefragt: Wie gesund lebt ihr? Zwei Drittel machen mindestens zweimal pro Woche Sport. Das finde ich gut. Aber nur die Hälfte frühstückt jeden Tag, und nur ein Viertel isst täglich Obst. Drei Viertel sind mehr als drei Stunden am Handy, deswegen schlafen viele zu wenig. Je länger man am Handy ist, desto später schläft man ein. Ich selbst frühstücke immer, sonst kann ich mich nicht konzentrieren. Mein Rat: Legt das Handy abends weg!
+check: 분수(die Hälfte, ein Drittel, ein Viertel)로 숫자를 말했나요? ; deswegen과 sonst 바로 뒤에 동사를 썼나요? ; je 문장에서 동사를 맨 끝에 썼나요? ; 조언을 한 가지 썼나요?
+
+-- kann
+Ich kann über meine Gewohnheiten und meine Gesundheit sprechen. | 내 생활 습관과 건강을 이야기할 수 있어요.
+Ich kann Zahlen aus einer Umfrage oder Statistik beschreiben. | 설문이나 통계의 숫자를 설명할 수 있어요.
+Ich kann sagen, warum etwas so ist und was dann passiert. | 왜 그런지, 그래서 어떻게 되는지 말할 수 있어요.
+
+-- tipp 숫자를 보면 분수로 바꿔요
+p: 뉴스나 책에서 퍼센트를 보면 독일어 분수로 바꿔 말해 보세요. 50 %는 die Hälfte, 25 %는 ein Viertel, 33 %는 ein Drittel이에요. 통계를 설명하는 글이 훨씬 자연스러워져요.
+p: je … desto는 내 하루에 붙여 연습해요. Je früher ich aufstehe, desto …의 뒤를 날마다 다르게 채워 보세요.

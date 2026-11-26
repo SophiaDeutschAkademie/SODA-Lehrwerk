@@ -1,0 +1,32 @@
+{
+ "job": "b11_fr_02",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Drei Fragen helfen: Wer hat es geschrieben? Wann wurde es veröffentlicht? Berichten auch andere Medien?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Viele wollen Geld verdienen, andere wollen Angst machen. Wenn eine Meldung oft geteilt wird, glauben viele Leute, dass sie wahr ist."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Bleibt kritisch! Lest zuerst genau, prüft die Quelle und teilt erst dann."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Drei Fragen helfen: Wer hat es geschrieben? Wann wurde es veröffentlicht? Berichten auch andere Medien? [pause] Viele wollen Geld verdienen, andere wollen Angst machen. Wenn eine Meldung oft geteilt wird, glauben viele Leute, dass sie wahr ist. [pause] Bleibt kritisch! Lest zuerst genau, prüft die Quelle und teilt erst dann. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}
