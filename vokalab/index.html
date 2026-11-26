@@ -725,6 +725,20 @@ html[data-theme="dark"] #hub .lv-art .bar{background:#263040}
 html[data-theme="dark"] #hub .lv-art .bar i{background:#8EA3BC}
 html[data-theme="dark"] #hub .lv-art:focus-visible{outline-color:#9FB2C8}
 #hub .nw{white-space:nowrap}
+/* 단어장 PDF 내려받기 (레벨 카드 아래) */
+#hub .lv-pdf{margin-top:8px;padding-top:8px;border-top:1px dashed #d9d0bd}
+#hub .lv-pdf-t{display:block;font-size:11px;font-weight:600;color:#6b7a8e;margin-bottom:5px;letter-spacing:-.1px}
+#hub .lv-pdf-b{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+#hub .lv-pdf-a{display:flex;align-items:center;justify-content:center;gap:4px;min-width:0;padding:6px 4px;border:1.5px solid #c9bfa9;border-radius:8px;background:#fbf8f1;color:#384568;font:inherit;font-size:12px;font-weight:700;line-height:1.2;text-decoration:none;white-space:nowrap;cursor:pointer;transition:border-color .15s,background .15s}
+#hub .lv-pdf-a:hover{border-color:#384568;background:#fff}
+#hub .lv-pdf-a:focus-visible{outline:2px solid #384568;outline-offset:2px}
+#hub .lv-pdf-a svg{width:13px;height:13px;flex:none}
+#hub .lv-pdf-a:only-child{grid-column:1 / -1}
+html[data-theme="dark"] #hub .lv-pdf{border-top-color:#2F3744}
+html[data-theme="dark"] #hub .lv-pdf-t{color:#A3ADBA}
+html[data-theme="dark"] #hub .lv-pdf-a{background:#161B22;border-color:#344052;color:#AEB9DD}
+html[data-theme="dark"] #hub .lv-pdf-a:hover{border-color:#8FB0E0;background:#1B2028}
+html[data-theme="dark"] #hub .lv-pdf-a:focus-visible{outline-color:#AEB9DD}
 #hub .art-tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:#e9e1cf;border-radius:12px;padding:4px;margin-bottom:16px}
 #hub .art-tab{border:0;border-radius:9px;padding:10px 6px;font:inherit;font-size:15px;font-weight:700;color:#4c6078;background:transparent;cursor:pointer;line-height:1.3}
 #hub .art-tab small{font-weight:500;font-size:12px;margin-left:3px}
@@ -5688,6 +5702,16 @@ function makeLevel(L, shell) {
       '<span class="lv-s">' + (sm ? sm.cur + '주차 · ' + pct + '%' : '시작 전') + '</span>' +
       '<span class="bar"><i style="width:' + pct + '%"></i></span></button>';
   }
+  /* 단어장 PDF: vokalab/pdf/ 에 레벨마다 일반·시험용 한 벌씩 */
+  var PDF_ICON = '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3v10M6 9l4 4 4-4M4 16h12"/></svg>';
+  function pdfLink(L, kind, text) {
+    return '<a class="lv-pdf-a" href="pdf/vokalab-' + L.id + '-' + kind + '.pdf" download="Vokalab 단어장 ' + esc(L.label) + (kind === 'exam' ? ' 시험용' : ' 일반') + '.pdf" ' +
+      'title="' + esc(L.label) + (kind === 'exam' ? ' 시험 필수 단어' : ' 전체 단어') + ' 암기용 PDF 내려받기">' + PDF_ICON + text + '</a>';
+  }
+  function pdfBlock(i, L, X) {
+    return '<div class="lv-pdf"><span class="lv-pdf-t">암기용 PDF 내려받기</span><div class="lv-pdf-b">' +
+      pdfLink(L, 'all', '일반') + (X ? pdfLink(L, 'exam', '시험용') : '') + '</div></div>';
+  }
   function showLevels() {
     hub.classList.remove('xmode');
     screen = 'levels'; current = null; closeModal();
@@ -5700,7 +5724,7 @@ function makeLevel(L, shell) {
       return '<div class="lv"><span class="lv-big">' + esc(L.label) + '</span><span class="lv-nm">' + esc(L.name.replace(/^[A-C][0-9](-[A-C][0-9])?\s*/, '')) + '</span><div class="lv-opts">' +
         optTile(false, i, L.words.length, L.short + ' 어휘 전체', sm) +
         (X ? optTile(true, i, X.words.length, X.examName + ' 필수', xapis[i].summary()) : '') +
-        (window.VokaArt ? window.VokaArt.levelTile(i) : '') + '</div></div>';
+        (window.VokaArt ? window.VokaArt.levelTile(i) : '') + '</div>' + pdfBlock(i, L, X) + '</div>';
     }).join('');
     hub.innerHTML =
       '<div class="wrap narrow"><header class="hd"><img class="logo" src="' + window.__LOGO + '" alt=""><div><h1>VOKALAB</h1><p class="sub">학습할 레벨을 선택하세요</p>' + syncBadge() + '</div><div class="hd-a"><button class="btn" id="btn-cover">표지</button></div></header>' +
