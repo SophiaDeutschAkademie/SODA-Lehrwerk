@@ -1,0 +1,53 @@
+{
+ "job": "b11b_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Achtung am Gleis fünf! Der Zug aus Frankfurt hat heute neunzig Minuten Verspätung."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Willkommen im Tierheim. Ich bin Frau Sommer und leite das Haus seit zehn Jahren."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Hier leben vierzig Hunde und sechzig Katzen. Die meisten wurden auf der Straße gefunden."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Ihr geht mit den Hunden spazieren. Die wartenden Hunde freuen sich schon."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Bei uns arbeiten dreißig Menschen ehrenamtlich. Ohne diese Helfer könnten wir das nicht schaffen."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Achtung am Gleis drei! Der Zug nach Hamburg hat heute vierzig Minuten Verspätung."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Achtung am Gleis fünf! Der Zug aus Frankfurt hat heute neunzig Minuten Verspätung. [pause] Willkommen im Tierheim. Ich bin Frau Sommer und leite das Haus seit zehn Jahren. [pause] Hier leben vierzig Hunde und sechzig Katzen. Die meisten wurden auf der Straße gefunden. [pause] Ihr geht mit den Hunden spazieren. Die wartenden Hunde freuen sich schon. [pause] Bei uns arbeiten dreißig Menschen ehrenamtlich. Ohne diese Helfer könnten wir das nicht schaffen. [pause] Achtung am Gleis drei! Der Zug nach Hamburg hat heute vierzig Minuten Verspätung. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

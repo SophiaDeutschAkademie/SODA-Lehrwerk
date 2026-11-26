@@ -1,0 +1,74 @@
+{
+ "job": "b11b_yu_02",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "b1-1/6",
+   "who": "Yuna",
+   "parts": [
+    "Gut. Was müssen wir tun?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Yuna",
+   "parts": [
+    "Könnten Sie uns bitte helfen? Meine Freundin spricht kein Deutsch."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Yuna",
+   "parts": [
+    "Das haben wir schon gemacht. Vielen Dank für Ihre Hilfe!"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Yuna",
+   "parts": [
+    "Sie hat mir geschrieben. Nachdem sie gelandet war, hat sie zwei Stunden auf ihren Koffer gewartet."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Yuna",
+   "parts": [
+    "Der Koffer ist nicht gekommen. Deshalb hat sie den ersten Zug verpasst."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Yuna",
+   "parts": [
+    "Seitdem Mina hier ist, spreche ich wieder viel Koreanisch."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Yuna",
+   "parts": [
+    "Der Zug hatte Verspätung."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Yuna",
+   "parts": [
+    "In Korea wird es im Sommer auch immer heißer. Letztes Jahr gab es eine lange Hitze."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Und der Weg zur Schule: Entweder fahren wir mit dem Rad oder wir nehmen den Bus. Das Auto der Eltern brauchen wir nicht."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gut. Was müssen wir tun? [pause] Könnten Sie uns bitte helfen? Meine Freundin spricht kein Deutsch. [pause] Das haben wir schon gemacht. Vielen Dank für Ihre Hilfe! [pause] Sie hat mir geschrieben. Nachdem sie gelandet war, hat sie zwei Stunden auf ihren Koffer gewartet. [pause] Der Koffer ist nicht gekommen. Deshalb hat sie den ersten Zug verpasst. [pause] Seitdem Mina hier ist, spreche ich wieder viel Koreanisch. [pause] Der Zug hatte Verspätung. [pause] In Korea wird es im Sommer auch immer heißer. Letztes Jahr gab es eine lange Hitze. [pause] Und der Weg zur Schule: Entweder fahren wir mit dem Rad oder wir nehmen den Bus. Das Auto der Eltern brauchen wir nicht. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

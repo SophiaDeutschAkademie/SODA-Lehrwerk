@@ -1,0 +1,46 @@
+{
+ "job": "b11b_th_01",
+ "who": "Thomas",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "b1-1/6",
+   "who": "Thomas",
+   "parts": [
+    "Neunzig Minuten! Mina ist schon seit sechzehn Stunden unterwegs."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Thomas",
+   "parts": [
+    "Und dann?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Thomas",
+   "parts": [
+    "Komm, wir trinken einen Kakao, bis der Zug kommt."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Thomas",
+   "parts": [
+    "Wir warten, bis der Zug kommt."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Thomas",
+   "parts": [
+    "Wie wird das Wetter in zwanzig Jahren sein?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Neunzig Minuten! Mina ist schon seit sechzehn Stunden unterwegs. [pause] Und dann? [pause] Komm, wir trinken einen Kakao, bis der Zug kommt. [pause] Wir warten, bis der Zug kommt. [pause] Wie wird das Wetter in zwanzig Jahren sein? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

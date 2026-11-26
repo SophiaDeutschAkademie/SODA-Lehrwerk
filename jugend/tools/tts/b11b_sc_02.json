@@ -1,0 +1,46 @@
+{
+ "job": "b11b_sc_02",
+ "who": "Schneider",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "b1-1/station-2",
+   "who": "Schneider",
+   "parts": [
+    "Jeder spricht zwei Minuten. Während jemand spricht, hören die anderen zu."
+   ]
+  },
+  {
+   "pid": "b1-1/station-2",
+   "who": "Schneider",
+   "parts": [
+    "Nachdem die zwei Gruppen gesprochen haben, stimmt die Klasse ab."
+   ]
+  },
+  {
+   "pid": "b1-1/station-2",
+   "who": "Schneider",
+   "parts": [
+    "Je besser eure Argumente sind, desto mehr Stimmen bekommt ihr."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Schneider",
+   "parts": [
+    "Die Klassenarbeit wird nicht morgen geschrieben, sondern erst nächsten Freitag."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Schneider",
+   "parts": [
+    "Sollten Handys im Unterricht verboten werden? Was meinst du?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Jeder spricht zwei Minuten. Während jemand spricht, hören die anderen zu. [pause] Nachdem die zwei Gruppen gesprochen haben, stimmt die Klasse ab. [pause] Je besser eure Argumente sind, desto mehr Stimmen bekommt ihr. [pause] Die Klassenarbeit wird nicht morgen geschrieben, sondern erst nächsten Freitag. [pause] Sollten Handys im Unterricht verboten werden? Was meinst du? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "b11b_lu_02",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "b1-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Gute Idee. Und kaputte Dinge kann man reparieren. Mein Opa repariert alles."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Opa, hat sich das Wetter an der Nordsee verändert?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Hast du Angst vor der Zukunft?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Am Wochenende habe ich weder Hausaufgaben gemacht noch mein Zimmer aufgeräumt."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lukas",
+   "parts": [
+    "Wo wart ihr am Samstag? Ich habe euch im Park mit drei Hunden gesehen."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lukas",
+   "parts": [
+    "Bekommt ihr Geld dafür?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lukas",
+   "parts": [
+    "Na ja. Ich helfe unserem Nachbarn, Herrn Krause. Er ist vierundachtzig und kann nicht mehr gut laufen."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lukas",
+   "parts": [
+    "Ich kaufe für ihn ein und bringe den Müll raus. Danach trinken wir Tee, und er erzählt von früher."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lukas",
+   "parts": [
+    "Ein Held? Nein. Ich helfe doch nur einem Nachbarn."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lukas",
+   "parts": [
+    "Mit einem bellenden Hund im Regen spazieren gehen? Da müsst ihr mich erst überzeugen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gute Idee. Und kaputte Dinge kann man reparieren. Mein Opa repariert alles. [pause] Opa, hat sich das Wetter an der Nordsee verändert? [pause] Hast du Angst vor der Zukunft? [pause] Am Wochenende habe ich weder Hausaufgaben gemacht noch mein Zimmer aufgeräumt. [pause] Wo wart ihr am Samstag? Ich habe euch im Park mit drei Hunden gesehen. [pause] Bekommt ihr Geld dafür? [pause] Na ja. Ich helfe unserem Nachbarn, Herrn Krause. Er ist vierundachtzig und kann nicht mehr gut laufen. [pause] Ich kaufe für ihn ein und bringe den Müll raus. Danach trinken wir Tee, und er erzählt von früher. [pause] Ein Held? Nein. Ich helfe doch nur einem Nachbarn. [pause] Mit einem bellenden Hund im Regen spazieren gehen? Da müsst ihr mich erst überzeugen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

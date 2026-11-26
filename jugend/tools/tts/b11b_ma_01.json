@@ -1,0 +1,67 @@
+{
+ "job": "b11b_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Das tut mir leid. Haben Sie die Fahrkarte noch?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Ich sehe. Ab sechzig Minuten Verspätung bekommen Sie fünfundzwanzig Prozent des Preises zurück."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Ich verstehe Sie. Ab hundertzwanzig Minuten wären es fünfzig Prozent. So sind die Regeln."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Füllen Sie bitte dieses Formular aus. Sie können es auch online machen."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Natürlich. Hier kommt der Name hin, und hier das Datum der Reise. Das Geld bekommen Sie bald."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Da müssen Sie den Flughafen fragen. Das können wir hier leider nicht machen."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Mann",
+   "parts": [
+    "Oh ja. Als ich ein Kind war, hatten wir jeden Winter Schnee. Heute regnet es fast nur noch."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Mann",
+   "parts": [
+    "Und die Stürme werden stärker. Letztes Jahr hat unser Garten zweimal unter Wasser gestanden."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das tut mir leid. Haben Sie die Fahrkarte noch? [pause] Ich sehe. Ab sechzig Minuten Verspätung bekommen Sie fünfundzwanzig Prozent des Preises zurück. [pause] Ich verstehe Sie. Ab hundertzwanzig Minuten wären es fünfzig Prozent. So sind die Regeln. [pause] Füllen Sie bitte dieses Formular aus. Sie können es auch online machen. [pause] Natürlich. Hier kommt der Name hin, und hier das Datum der Reise. Das Geld bekommen Sie bald. [pause] Da müssen Sie den Flughafen fragen. Das können wir hier leider nicht machen. [pause] Oh ja. Als ich ein Kind war, hatten wir jeden Winter Schnee. Heute regnet es fast nur noch. [pause] Und die Stürme werden stärker. Letztes Jahr hat unser Garten zweimal unter Wasser gestanden. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

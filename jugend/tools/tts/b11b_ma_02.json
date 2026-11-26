@@ -1,0 +1,60 @@
+{
+ "job": "b11b_ma_02",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-1/7",
+   "who": "Mann",
+   "parts": [
+    "Angst nicht, aber Sorgen. Der Meeresspiegel wird steigen. Wir werden unser Haus besser schützen müssen."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Mann",
+   "parts": [
+    "Aber ich habe auch Hoffnung. Ihr werdet vieles besser machen als wir."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Ganz anders als heute. Wir waren vierzig Schüler in einer Klasse, und die Lehrer waren sehr streng."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Nein! Es gab weder Handys noch Computer. Nachdem wir die Hausaufgaben gemacht hatten, haben wir auf der Straße gespielt."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Ich würde mehr Fremdsprachen lernen. Ich war nie im Ausland, obwohl ich es mir immer gewünscht habe."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Mein Tipp für euch: Fragt die alten Menschen. Je mehr ihr fragt, desto mehr lernt ihr."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag. Was kann ich für Sie tun?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Angst nicht, aber Sorgen. Der Meeresspiegel wird steigen. Wir werden unser Haus besser schützen müssen. [pause] Aber ich habe auch Hoffnung. Ihr werdet vieles besser machen als wir. [pause] Ganz anders als heute. Wir waren vierzig Schüler in einer Klasse, und die Lehrer waren sehr streng. [pause] Nein! Es gab weder Handys noch Computer. Nachdem wir die Hausaufgaben gemacht hatten, haben wir auf der Straße gespielt. [pause] Ich würde mehr Fremdsprachen lernen. Ich war nie im Ausland, obwohl ich es mir immer gewünscht habe. [pause] Mein Tipp für euch: Fragt die alten Menschen. Je mehr ihr fragt, desto mehr lernt ihr. [pause] Guten Tag. Was kann ich für Sie tun? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,67 @@
+{
+ "job": "b11b_em_03",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "b1-1/8",
+   "who": "Emma",
+   "parts": [
+    "Siehst du, das ist auch ein Ehrenamt. Komm doch am Samstag mit ins Tierheim!"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Emma",
+   "parts": [
+    "Ich bin dafür. Wir verkaufen gebrauchte Bücher und Spiele. Das gesammelte Geld spenden wir dem Tierheim."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Emma",
+   "parts": [
+    "Ja. Eine Hälfte für das Tierheim, die andere Hälfte für das Seniorenheim. Dort wohnen viele allein lebende Menschen."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Emma",
+   "parts": [
+    "Wie viele Tiere leben hier?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Emma",
+   "parts": [
+    "Siehst du den lachenden Jungen dort? Das ist Elifs Bruder."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Emma",
+   "parts": [
+    "Mach doch mit!"
+   ]
+  },
+  {
+   "pid": "b1-1/station-2",
+   "who": "Emma",
+   "parts": [
+    "Ich bin dagegen. Wenn die Schule später anfängt, endet sie auch später. Dann haben wir weder Zeit für Sport noch für Freunde."
+   ]
+  },
+  {
+   "pid": "b1-1/station-2",
+   "who": "Emma",
+   "parts": [
+    "Außerdem werden viele trotzdem spät ins Bett gehen. Nicht die Schule, sondern das Handy ist das Problem."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Siehst du, das ist auch ein Ehrenamt. Komm doch am Samstag mit ins Tierheim! [pause] Ich bin dafür. Wir verkaufen gebrauchte Bücher und Spiele. Das gesammelte Geld spenden wir dem Tierheim. [pause] Ja. Eine Hälfte für das Tierheim, die andere Hälfte für das Seniorenheim. Dort wohnen viele allein lebende Menschen. [pause] Wie viele Tiere leben hier? [pause] Siehst du den lachenden Jungen dort? Das ist Elifs Bruder. [pause] Mach doch mit! [pause] Ich bin dagegen. Wenn die Schule später anfängt, endet sie auch später. Dann haben wir weder Zeit für Sport noch für Freunde. [pause] Außerdem werden viele trotzdem spät ins Bett gehen. Nicht die Schule, sondern das Handy ist das Problem. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

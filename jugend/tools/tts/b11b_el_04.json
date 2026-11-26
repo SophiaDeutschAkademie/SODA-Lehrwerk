@@ -1,0 +1,25 @@
+{
+ "job": "b11b_el_04",
+ "who": "Elif",
+ "voice": "Emily",
+ "voice_id": "OO0WT3lY2gVNwzZMAjAI",
+ "items": [
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Was würden Sie machen, wenn Sie heute fünfzehn wären?"
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Was ist für dich ein echter Freund?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Was würden Sie machen, wenn Sie heute fünfzehn wären? [pause] Was ist für dich ein echter Freund? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

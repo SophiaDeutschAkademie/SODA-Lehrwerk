@@ -1,0 +1,91 @@
+{
+ "job": "b11b_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "abfliegen, ist abgeflogen.",
+    "Wir fliegen um zehn Uhr ab."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "das Gepäck.",
+    "Mein Gepäck ist nicht angekommen."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "der Reisepass, die Reisepässe.",
+    "Hast du deinen Reisepass?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "der Anschluss, die Anschlüsse.",
+    "Ich habe meinen Anschluss verpasst."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "der Bahnsteig, die Bahnsteige.",
+    "Wir warten auf dem Bahnsteig."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "der Schalter, die Schalter.",
+    "Fragen Sie bitte am Schalter."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "unterwegs.",
+    "Mina ist seit sechzehn Stunden unterwegs."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "der Schüleraustausch.",
+    "Unsere Schule macht einen Schüleraustausch mit Wien."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "die Partnerschule, die Partnerschulen.",
+    "Unsere Partnerschule ist in Frankreich."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "die Fremdsprache, die Fremdsprachen.",
+    "Deutsch ist meine zweite Fremdsprache."
+   ]
+  }
+ ],
+ "script": "Also. [pause] abfliegen, ist abgeflogen. Wir fliegen um zehn Uhr ab. [pause] das Gepäck. Mein Gepäck ist nicht angekommen. [pause] der Reisepass, die Reisepässe. Hast du deinen Reisepass? [pause] der Anschluss, die Anschlüsse. Ich habe meinen Anschluss verpasst. [pause] der Bahnsteig, die Bahnsteige. Wir warten auf dem Bahnsteig. [pause] der Schalter, die Schalter. Fragen Sie bitte am Schalter. [pause] unterwegs. Mina ist seit sechzehn Stunden unterwegs. [pause] der Schüleraustausch. Unsere Schule macht einen Schüleraustausch mit Wien. [pause] die Partnerschule, die Partnerschulen. Unsere Partnerschule ist in Frankreich. [pause] die Fremdsprache, die Fremdsprachen. Deutsch ist meine zweite Fremdsprache. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

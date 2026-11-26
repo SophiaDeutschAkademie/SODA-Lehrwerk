@@ -1,0 +1,150 @@
+@id b1-1/stufentest
+@typ test
+
+== hoeren
+-- info B1.1을 돌아보는 평가예요
+p: 듣기, 읽기, 쓰기, 말하기 네 부분으로 되어 있어요. 시간 제한은 없어요. 문제를 풀면 바로 맞았는지 알려 주고, 마지막 Ergebnis에서 부분마다 몇 문제를 맞혔는지 보여 줘요.
+p: 음성은 여러 번 들을 수 있어요. 먼저 한 번만 듣고 풀어 보면 내 듣기 실력을 더 정확히 알 수 있어요.
+
+-- ex Hören 1 | 짧은 말을 듣고 알맞은 것을 고르세요.
+hör: Frau: Achtung am Gleis drei! Der Zug nach Hamburg hat heute vierzig Minuten Verspätung.
+mc: 함부르크행 기차는 얼마나 늦나요? | 40분* | 14분 | 4분 => vierzig Minuten Verspätung
+hör: Elif: Wenn ich mehr Zeit hätte, würde ich auch im Tierheim helfen.
+mc: Elif는 지금 동물 보호소에서 돕고 있나요? | 아니요, 시간이 모자라요* | 네, 토요일마다 도와요 | 네, 날마다 도와요 => Wenn ich mehr Zeit hätte는 지금 시간이 없다는 뜻이에요.
+hör: Lukas: Obwohl ich viel gelernt hatte, habe ich nur eine Vier bekommen.
+mc: Lukas는 시험 전에 어떻게 했나요? | 공부를 많이 했어요* | 공부를 하지 않았어요 | 아파서 누워 있었어요 => Obwohl ich viel gelernt hatte
+hör: Schneider: Die Klassenarbeit wird nicht morgen geschrieben, sondern erst nächsten Freitag.
+mc: 시험은 언제 보나요? | 다음 금요일* | 내일 | 오늘 => sondern erst nächsten Freitag
+hör: Sabine: Du solltest abends weder Cola noch Kaffee trinken, sonst kannst du nicht einschlafen.
+mc: Sabine는 저녁에 무엇을 마시지 말라고 하나요? | 콜라와 커피 둘 다* | 콜라만 | 커피만 => weder Cola noch Kaffee
+
+-- ex Hören 2 | Elif가 팟캐스트에서 Herr Krause와 이야기해요. 듣고 답하세요.
+audio | Interview mit Herrn Krause | Mann=Herr Krause
+> Elif: Herr Krause, wie war die Schule, als Sie jung waren?
+> Mann: Ganz anders als heute. Wir waren vierzig Schüler in einer Klasse, und die Lehrer waren sehr streng.
+> Elif: Hatten Sie ein Handy?
+> Mann: Nein! Es gab weder Handys noch Computer. Nachdem wir die Hausaufgaben gemacht hatten, haben wir auf der Straße gespielt.
+> Elif: Was würden Sie machen, wenn Sie heute fünfzehn wären?
+> Mann: Ich würde mehr Fremdsprachen lernen. Ich war nie im Ausland, obwohl ich es mir immer gewünscht habe.
+> Mann: Mein Tipp für euch: Fragt die alten Menschen. Je mehr ihr fragt, desto mehr lernt ihr.
+mc: Wie viele Schüler waren in Herrn Krauses Klasse? | vierzig* | vierzehn | vierundzwanzig => Wir waren vierzig Schüler in einer Klasse.
+rf: Herr Krause hatte als Schüler einen Computer. | f => Es gab weder Handys noch Computer.
+mc: Was haben die Kinder nach den Hausaufgaben gemacht? | Sie haben auf der Straße gespielt.* | Sie haben Musik gehört. | Sie haben Fremdsprachen gelernt. => haben wir auf der Straße gespielt
+mc: Was würde Herr Krause machen, wenn er heute fünfzehn wäre? | mehr Fremdsprachen lernen* | weniger lernen | Lehrer werden => Ich würde mehr Fremdsprachen lernen.
+mc: Herr Krause는 청소년에게 무엇을 권하나요? | 어르신들에게 많이 물어보라고 해요* | 휴대폰을 쓰지 말라고 해요 | 밖에서 놀라고 해요 => Fragt die alten Menschen.
+
+-- ex Hören 3 | Emma가 팟캐스트에서 자기 봉사 활동을 이야기해요. 듣고 답하세요.
+audio | Emma erzählt
+> Emma: Seit März arbeite ich ehrenamtlich im Tierheim. Bevor ich dort angefangen habe, hatte ich Angst vor großen Hunden.
+> Emma: Jetzt gehe ich jeden Samstag mit Bruno spazieren. Er ist ein Hund, dem man vertrauen kann.
+> Emma: Das Tierheim braucht Geld. Deswegen hat unsere Klasse einen Flohmarkt organisiert.
+> Emma: Meiner Meinung nach sollte jeder Jugendliche ein Ehrenamt haben. Man hilft nicht nur anderen, sondern lernt auch viel.
+> Emma: Nach der Schule werde ich vielleicht Tierärztin.
+mc: Wovor hatte Emma früher Angst? | vor großen Hunden* | vor Katzen | vor dem Tierheim => hatte ich Angst vor großen Hunden
+rf: Emma geht jeden Sonntag mit Bruno spazieren. | f => Sie geht jeden Samstag mit Bruno spazieren.
+mc: Warum hat die Klasse einen Flohmarkt organisiert? | Weil das Tierheim Geld braucht.* | Weil die Klasse eine Reise machen will. | Weil Emma Geburtstag hat. => Das Tierheim braucht Geld. Deswegen …
+mc: Emma는 학교를 마치고 무엇이 되려고 하나요? | 동물을 치료하는 의사* | 교사 | 기자 => Nach der Schule werde ich vielleicht Tierärztin.
+
+== lesen
+-- ex Lesen 1 | 학교 신문 기사예요. 읽고 답하세요.
+text notiz | Eine Woche ohne Handy
+> Die Klasse 10a hat etwas Neues versucht: Eine Woche lang wurden alle Handys am Morgen der Lehrerin gegeben.
+> Am ersten Tag waren viele Schüler nervös. Zwei Drittel der Klasse wollten das Handy sofort zurückbekommen.
+> Aber nach drei Tagen hat sich etwas verändert. In den Pausen wurde mehr gesprochen und gelacht.
+> „Je länger ich ohne Handy war, desto besser konnte ich mich konzentrieren“, sagt Jonas (16).
+> Trotzdem möchte die Mehrheit das Handy nicht für immer weglegen. Die Klasse schlägt einen Kompromiss vor: Handys nur in den Pausen.
+mc: Was hat die Klasse 10a eine Woche lang gemacht? | Sie hat die Handys am Morgen der Lehrerin gegeben.* | Sie hat keine Hausaufgaben gemacht. | Sie hat nur am Computer gelernt. => wurden alle Handys am Morgen der Lehrerin gegeben
+mc: Wie viele Schüler wollten das Handy am ersten Tag zurückbekommen? | zwei Drittel* | die Hälfte | ein Viertel => Zwei Drittel der Klasse
+rf: Nach drei Tagen wurde in den Pausen weniger gesprochen. | f => In den Pausen wurde mehr gesprochen und gelacht.
+mc: Was sagt Jonas? | Ohne Handy konnte er sich besser konzentrieren.* | Ohne Handy war ihm langweilig. | Er hat sein Handy nie weggelegt. => desto besser konnte ich mich konzentrieren
+mc: 반에서 내놓은 타협안은 무엇인가요? | 쉬는 시간에만 휴대폰을 쓰기* | 휴대폰을 아예 가져오지 않기 | 수업 시간에도 휴대폰을 쓰기 => Handys nur in den Pausen
+
+-- ex Lesen 2 | Lukas가 팟캐스트 게시판에 쓴 여행 이야기예요. 읽고 답하세요.
+text notiz | Mit Opa nach Hamburg
+> Letztes Wochenende bin ich mit meinem Opa nach Hamburg gefahren. Bevor wir abgefahren sind, hatte Opa alles geplant.
+> Aber dann kam alles anders. Nachdem wir in Bremen umgestiegen waren, hatte der Zug eine Stunde Verspätung.
+> Wir haben unser Schiff verpasst, obwohl wir vom Bahnhof bis zum Wasser gelaufen sind.
+> Opa hat sich am Schalter beschwert. Wegen der Verspätung haben wir ein Viertel des Preises zurückbekommen.
+> Am Ende war es trotzdem ein schöner Tag: Wir haben Fisch gegessen und viele Schiffe gesehen.
+mc: Wer hatte die Reise geplant? | Opa* | Lukas | Lukas' Mutter => hatte Opa alles geplant
+mc: Wo sind Lukas und Opa umgestiegen? | in Bremen* | in Hamburg | in Köln => Nachdem wir in Bremen umgestiegen waren
+rf: Lukas und Opa haben ihr Schiff noch bekommen. | f => Wir haben unser Schiff verpasst.
+mc: 두 사람은 표 값의 얼마를 돌려받았나요? | 4분의 1* | 절반 | 전부 => ein Viertel des Preises
+
+-- ex Lesen 3 | 학교 게시판에 붙은 알림이에요. 읽고 답하세요.
+text notiz | Reparieren, nicht wegwerfen!
+> Ab Mai treffen wir uns jeden Mittwoch im Klassenzimmer der 10a, um kaputte Dinge zu reparieren.
+> Schüler, Eltern und Nachbarn können kaputte Fahrräder, Lampen und Handys mitbringen. Sie werden von Schülern der 10. Klasse und von einem Kollegen von Herrn Maier repariert.
+> Die reparierten Dinge kann man wieder mitnehmen. Es kostet nichts, aber wir freuen uns über eine Spende.
+> So wird weniger Müll gemacht und Energie gespart. In Zukunft werden wir auch gebrauchte Kleidung tauschen.
+> Wer helfen möchte, schreibt seinen Namen auf die Liste.
+mc: Was kann man am Mittwoch im Klassenzimmer der 10a machen? | kaputte Dinge reparieren* | Kleidung kaufen | Kuchen essen => um kaputte Dinge zu reparieren
+rf: Das Reparieren kostet fünf Euro. | f => Es kostet nichts.
+mc: Was passiert mit den reparierten Dingen? | Man kann sie wieder mitnehmen.* | Sie werden verkauft. | Sie bleiben in der Schule. => Die reparierten Dinge kann man wieder mitnehmen.
+mc: 돕고 싶은 사람은 무엇을 해야 하나요? | 명단에 이름을 써요* | 선생님께 전화해요 | 5월까지 기다려요 => schreibt seinen Namen auf die Liste
+
+== schreiben
+-- ex Schreiben 1 | 낱말을 순서대로 놓아 문장을 만드세요.
+ord: wenn / ich / Zeit / hätte, / würde / ich / mehr lesen. | 시간이 있다면 책을 더 읽을 텐데.
+ord: ich / lerne / viel, / um / die Prüfung / zu bestehen. | 나는 시험에 합격하려고 공부를 많이 해.
+ord: das ist / der Freund, / mit dem / ich / Musik / mache. | 내가 같이 음악을 하는 친구야.
+ord: das Foto / wurde / vor fünf Jahren / gemacht. | 그 사진은 5년 전에 찍혔어.
+ord: nachdem / ich / gegessen hatte, / habe / ich / gelernt. | 나는 밥을 먹은 뒤에 공부했어.
+ord: es / wird / morgen / regnen. | 내일 비가 올 거야.
+
+-- ex Schreiben 2 | 괄호 안의 낱말을 알맞은 형태로 바꾸거나 알맞은 낱말을 골라 빈칸에 쓰세요.
+gap: Wenn ich reich [=wäre], würde ich viel reisen. (sein) | 내가 부자라면 여행을 많이 할 텐데. => 사실이 아닌 일을 가정할 때는 wäre를 써요.
+gap: Das ist das Auto [=meines] Vaters. (mein) | 우리 아버지의 차예요. => 남성 2격은 meines예요.
+gap: Das ist die Freundin, mit [=der] ich telefoniere. (die) | 내가 통화하는 친구예요. => mit 뒤에는 3격이 와요.
+gap: Die Nachricht [=wurde] gestern gelöscht. (werden) | 그 메시지는 어제 지워졌어요. => 지난 일의 Passiv는 wurde로 만들어요.
+gap: Je mehr ich übe, [=desto] besser spreche ich. (desto, als) | 연습을 많이 할수록 말을 더 잘해요. => je 다음에는 desto가 와요.
+gap: Der Zug [=war] schon abgefahren. (sein) | 기차는 이미 떠난 뒤였어요. => Plusquamperfekt는 war나 hatte로 만들어요.
+gap: Ich helfe einem [=Kollegen]. (Kollege) | 나는 동료 한 사람을 도와요. => Kollege는 1격 단수가 아니면 -n이 붙어요.
+
+-- ex Schreiben 3 | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Wenn ich Zeit hätte, würde ich kommen. | 시간이 있다면 갈 텐데.
+dik: N: Meiner Meinung nach ist das falsch. | 내 생각에 그건 틀렸어요.
+dik: N: Ich möchte mich beschweren. | 항의하고 싶습니다.
+dik: N: Wir werden weniger Müll machen. | 우리는 쓰레기를 덜 만들 거예요.
+
+-- schreiben Mein Text | 학교 신문에 의견 글을 써요. 주제는 '학교에서 휴대폰을 써도 될까?'예요. 아래 내용을 넣어서 여덟 문장 넘게 써 보세요. 이 글은 자동으로 채점하지 않아요. 다 쓴 뒤에 예시 글과 비교하고 아래 항목을 스스로 확인해요.
+punkt: 주제와 내 입장 (Meiner Meinung nach …) ; 근거 (je … desto, deswegen) ; 반대쪽 생각 (Die anderen sagen, dass …) ; 가정해서 말하기 (Wenn ich … wäre, …) ; 제안 (… könnten …) ; 맺는 말
+start: Meiner Meinung nach …
+muster: Meiner Meinung nach sollten Handys in der Schule erlaubt sein, aber nur in den Pausen. Im Unterricht lenken sie ab. Je öfter ich auf das Handy sehe, desto schlechter kann ich mich konzentrieren. Deswegen brauchen wir Regeln. Die anderen sagen, dass man mit dem Handy auch lernen kann. Das stimmt, obwohl die meisten nur spielen. Wenn ich Lehrerin wäre, würde ich die Handys am Morgen sammeln. In den Pausen könnten die Schüler sie zurückbekommen. So hätten alle mehr Ruhe.
+check: 여덟 문장 넘게 썼어요 ; Meiner Meinung nach 바로 뒤에 동사를 썼어요 ; je … desto나 deswegen으로 근거를 댔어요 ; wenn 문장과 뒤 문장에 wäre, hätte, würde를 썼어요 ; 반대쪽 생각을 한 번 적었어요
+
+== sprechen
+-- info 소리 내어 말해요
+p: 말하기는 자동으로 채점하지 않아요. 질문을 듣고 바로 소리 내어 답한 다음, 예시 답과 비교해 보세요.
+p: 녹음 단추를 누르면 내 목소리를 다시 들을 수 있어요. 녹음은 저장되지 않아요.
+
+-- sprich Fragen und Antworten | 질문을 듣고 소리 내어 답하세요. 한두 문장으로 답하면 돼요. | Mann=Mitarbeiter
+f: Emma: Was würdest du machen, wenn du einen Tag Lehrer wärst? | 하루 동안 선생님이 된다면 뭘 하겠어? => Wenn ich Lehrer wäre, würde ich keine Hausaufgaben geben.
+f: Lukas: Wie bereitest du dich auf eine Prüfung vor? | 시험을 어떻게 준비해? => Ich mache einen Lernplan, um rechtzeitig anzufangen.
+f: Elif: Was ist für dich ein echter Freund? | 너한테 진짜 친구란 어떤 사람이야? => Ein echter Freund ist jemand, dem ich vertrauen kann.
+f: Schneider: Sollten Handys im Unterricht verboten werden? Was meinst du? | 수업 시간에 휴대폰을 금지해야 할까요? 어떻게 생각해요? => Meiner Meinung nach sollten sie verboten werden, weil sie ablenken. / Ich bin dagegen, weil man mit dem Handy auch lernen kann.
+f: Sabine: Was machst du für deine Gesundheit? | 건강을 위해 뭘 하니? => Ich bewege mich jeden Tag. Je mehr ich schlafe, desto fitter bin ich.
+f: Mann: Guten Tag. Was kann ich für Sie tun? | 안녕하세요. 무엇을 도와드릴까요? => Ich möchte mich beschweren. Mein Zug hatte neunzig Minuten Verspätung.
+f: Thomas: Wie wird das Wetter in zwanzig Jahren sein? | 20년 뒤에는 날씨가 어떨까? => Es wird wahrscheinlich wärmer werden.
+f: Yuna: Engagierst du dich für andere? | 너는 남을 위해 하는 일이 있어? => Ich helfe meinem Nachbarn. / Ich würde gern im Tierheim arbeiten.
+
+-- sprich Meine Meinung | 주제는 '숙제가 필요할까?'예요. 아래 낱말을 보면서 1분쯤 내 의견을 말하세요. 먼저 혼자 말해 보고, 그다음에 예시를 확인해요.
+thema: dafür / dagegen ; Erstens … ; Zweitens … ; Die anderen sagen … ; Deswegen …
+muster: Brauchen wir Hausaufgaben? Ich bin dafür, aber es sollten weniger sein. Erstens kann man zu Hause in Ruhe üben. Je öfter ich übe, desto besser verstehe ich das Thema. Zweitens sieht die Lehrerin, wer noch Hilfe braucht. Die anderen sagen, dass man nach der Schule müde ist. Das stimmt. Deswegen sollten Hausaufgaben nicht länger als eine halbe Stunde dauern.
+
+== ergebnis
+-- bilanz
+hoch: B1.1에서 배운 내용을 잘 익혔어요. 이제 B1.2로 넘어가도 좋아요.
+mittel: 대부분 익혔어요. 틀린 문제의 설명을 다시 읽고, 점수가 낮은 부분은 Station 1과 Station 2의 복습 문제로 한 번 더 연습해 보세요.
+tief: 아직 헷갈리는 내용이 많아요. Station 1과 Station 2의 복습 문제를 다시 풀고, 어려웠던 과의 Grammatik과 Training을 본 다음 평가를 한 번 더 해 보세요.
+
+-- info 쓰기와 말하기는 스스로 확인해요
+p: 글쓰기 과제와 말하기는 점수에 들어가지 않아요. 아래 세 가지를 얼마나 할 수 있는지 스스로 표시해 보세요.
+
+-- kann
+Ich kann meine Meinung sagen und Argumente dafür geben. | 내 의견을 말하고 근거를 댈 수 있어요.
+Ich kann von einer Reise erzählen und mich beschweren. | 여행 이야기를 하고 항의할 수 있어요.
+Ich kann sagen, was ich tun würde und was in Zukunft passieren wird. | 내가 무엇을 하겠는지, 앞으로 무슨 일이 일어날지 말할 수 있어요.
+
+-- info 다음 단계는 B1.2 Weiterdenken
+p: B1.2에서는 직업, 소비, 사는 곳, 예술, 역사, 기술, 문화를 다뤄요. 더 긴 글을 읽고 내 생각을 글과 발표로 정리해요. B1.2 본문은 준비 중이고, 올라오면 목차에서 열 수 있어요.

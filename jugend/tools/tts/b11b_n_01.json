@@ -1,0 +1,85 @@
+{
+ "job": "b11b_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/station-1",
+   "who": "N",
+   "parts": [
+    "Ich bin ein Einzelkind."
+   ]
+  },
+  {
+   "pid": "b1-1/station-1",
+   "who": "N",
+   "parts": [
+    "Auf dich kann ich mich verlassen."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "das Ausland"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "die Verspätung"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "Nachdem Mina gelandet war, nahm sie den Zug."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "Ich möchte mich beschweren."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "das Ausland.",
+    "Ich möchte ein Jahr im Ausland leben."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "der Flughafen, die Flughäfen.",
+    "Wir holen Mina am Flughafen ab."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "der Flug, die Flüge.",
+    "Der Flug dauert dreizehn Stunden."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "landen, ist gelandet.",
+    "Das Flugzeug ist pünktlich gelandet."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich bin ein Einzelkind. [pause] Auf dich kann ich mich verlassen. [pause] das Ausland [pause] die Verspätung [pause] Nachdem Mina gelandet war, nahm sie den Zug. [pause] Ich möchte mich beschweren. [pause] das Ausland. Ich möchte ein Jahr im Ausland leben. [pause] der Flughafen, die Flughäfen. Wir holen Mina am Flughafen ab. [pause] der Flug, die Flüge. Der Flug dauert dreizehn Stunden. [pause] landen, ist gelandet. Das Flugzeug ist pünktlich gelandet. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

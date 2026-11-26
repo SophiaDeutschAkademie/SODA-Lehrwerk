@@ -1,0 +1,81 @@
+{
+ "job": "b11b_lu_01",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "b1-1/station-1",
+   "who": "Lukas",
+   "parts": [
+    "Ich spreche über das Lernen. Wenn ich zu schnell sprechen würde, könnte mich niemand verstehen. Deshalb mache ich kurze Pausen."
+   ]
+  },
+  {
+   "pid": "b1-1/station-1",
+   "who": "Lukas",
+   "parts": [
+    "Emma hört zu und sagt mir, ob man mich gut versteht."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Lukas",
+   "parts": [
+    "Yuna, ist deine Freundin aus Seoul gut angekommen?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Lukas",
+   "parts": [
+    "Die Arme! Und jetzt? Was zieht sie an?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Lukas",
+   "parts": [
+    "Und der Zug? Bekommt ihr Geld zurück?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Lukas",
+   "parts": [
+    "Bevor ich in den Zug eingestiegen bin, habe ich eine Fahrkarte gekauft."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Und was wird in Zukunft passieren?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Meine Großeltern wohnen an der Nordsee. Wird ihr Haus bald unter Wasser stehen?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Moment. Ich wohne weit weg. Ich will weder eine Stunde Rad fahren noch um sechs aufstehen."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Na gut. Ich werde weniger Fleisch essen. Aber auf Schokolade werde ich nie verzichten!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich spreche über das Lernen. Wenn ich zu schnell sprechen würde, könnte mich niemand verstehen. Deshalb mache ich kurze Pausen. [pause] Emma hört zu und sagt mir, ob man mich gut versteht. [pause] Yuna, ist deine Freundin aus Seoul gut angekommen? [pause] Die Arme! Und jetzt? Was zieht sie an? [pause] Und der Zug? Bekommt ihr Geld zurück? [pause] Bevor ich in den Zug eingestiegen bin, habe ich eine Fahrkarte gekauft. [pause] Und was wird in Zukunft passieren? [pause] Meine Großeltern wohnen an der Nordsee. Wird ihr Haus bald unter Wasser stehen? [pause] Moment. Ich wohne weit weg. Ich will weder eine Stunde Rad fahren noch um sechs aufstehen. [pause] Na gut. Ich werde weniger Fleisch essen. Aber auf Schokolade werde ich nie verzichten! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

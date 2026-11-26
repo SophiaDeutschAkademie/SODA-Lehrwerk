@@ -1,0 +1,25 @@
+{
+ "job": "b11b_sa_01",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Sabine",
+   "parts": [
+    "Du solltest abends weder Cola noch Kaffee trinken, sonst kannst du nicht einschlafen."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Sabine",
+   "parts": [
+    "Was machst du für deine Gesundheit?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Du solltest abends weder Cola noch Kaffee trinken, sonst kannst du nicht einschlafen. [pause] Was machst du für deine Gesundheit? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

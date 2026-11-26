@@ -1,0 +1,39 @@
+{
+ "job": "b11b_yu_04",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "b1-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Der reparierte Stuhl steht wieder im Klassenzimmer."
+   ]
+  },
+  {
+   "pid": "b1-1/station-2",
+   "who": "Yuna",
+   "parts": [
+    "Die Klasse hat abgestimmt: vierzehn Stimmen dafür, zehn dagegen. Die Mehrheit möchte später anfangen."
+   ]
+  },
+  {
+   "pid": "b1-1/station-2",
+   "who": "Yuna",
+   "parts": [
+    "Sowohl Lukas als auch Emma hatten gute Argumente. Jetzt schreiben wir einen Brief an die Schülervertretung."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Engagierst du dich für andere?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Der reparierte Stuhl steht wieder im Klassenzimmer. [pause] Die Klasse hat abgestimmt: vierzehn Stimmen dafür, zehn dagegen. Die Mehrheit möchte später anfangen. [pause] Sowohl Lukas als auch Emma hatten gute Argumente. Jetzt schreiben wir einen Brief an die Schülervertretung. [pause] Engagierst du dich für andere? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

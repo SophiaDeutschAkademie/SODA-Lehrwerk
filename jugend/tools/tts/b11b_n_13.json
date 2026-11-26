@@ -1,0 +1,81 @@
+{
+ "job": "b11b_n_13",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "der Job, die Jeans, joggen"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "Der Junge joggt jeden Tag."
+   ]
+  },
+  {
+   "pid": "b1-1/station-2",
+   "who": "N",
+   "parts": [
+    "Deswegen schlafe ich früh."
+   ]
+  },
+  {
+   "pid": "b1-1/station-2",
+   "who": "N",
+   "parts": [
+    "Mein Koffer ist nicht angekommen."
+   ]
+  },
+  {
+   "pid": "b1-1/station-2",
+   "who": "N",
+   "parts": [
+    "Wir müssen Energie sparen."
+   ]
+  },
+  {
+   "pid": "b1-1/station-2",
+   "who": "N",
+   "parts": [
+    "Die Mehrheit ist dafür."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Wenn ich Zeit hätte, würde ich kommen."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Meiner Meinung nach ist das falsch."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Ich möchte mich beschweren."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Wir werden weniger Müll machen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Job, die Jeans, joggen [pause] Der Junge joggt jeden Tag. [pause] Deswegen schlafe ich früh. [pause] Mein Koffer ist nicht angekommen. [pause] Wir müssen Energie sparen. [pause] Die Mehrheit ist dafür. [pause] Wenn ich Zeit hätte, würde ich kommen. [pause] Meiner Meinung nach ist das falsch. [pause] Ich möchte mich beschweren. [pause] Wir werden weniger Müll machen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

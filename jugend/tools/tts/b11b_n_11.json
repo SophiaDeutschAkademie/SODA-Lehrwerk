@@ -1,0 +1,91 @@
+{
+ "job": "b11b_n_11",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "wählen, hat gewählt.",
+    "Wir wählen heute den Klassensprecher."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "abstimmen, hat abgestimmt.",
+    "Wir stimmen jetzt ab."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "die Veranstaltung, die Veranstaltungen.",
+    "Die Veranstaltung fängt um zehn an."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "organisieren, hat organisiert.",
+    "Wir organisieren einen Flohmarkt."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "teilnehmen, hat teilgenommen, du nimmst teil, er nimmt teil.",
+    "Ich nehme am Flohmarkt teil."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "die Diskussion, die Diskussionen.",
+    "Die Diskussion war interessant."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "diskutieren, hat diskutiert.",
+    "Wir diskutieren über den Vorschlag."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "leiten, hat geleitet.",
+    "Elif leitet die Diskussion."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "der Nachbar, die Nachbarn.",
+    "Unser Nachbar ist sehr nett."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "der Kunde, die Kunden.",
+    "Der Kunde kauft drei Bücher."
+   ]
+  }
+ ],
+ "script": "Also. [pause] wählen, hat gewählt. Wir wählen heute den Klassensprecher. [pause] abstimmen, hat abgestimmt. Wir stimmen jetzt ab. [pause] die Veranstaltung, die Veranstaltungen. Die Veranstaltung fängt um zehn an. [pause] organisieren, hat organisiert. Wir organisieren einen Flohmarkt. [pause] teilnehmen, hat teilgenommen, du nimmst teil, er nimmt teil. Ich nehme am Flohmarkt teil. [pause] die Diskussion, die Diskussionen. Die Diskussion war interessant. [pause] diskutieren, hat diskutiert. Wir diskutieren über den Vorschlag. [pause] leiten, hat geleitet. Elif leitet die Diskussion. [pause] der Nachbar, die Nachbarn. Unser Nachbar ist sehr nett. [pause] der Kunde, die Kunden. Der Kunde kauft drei Bücher. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

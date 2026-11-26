@@ -903,8 +903,13 @@ def split_words(x, words, items, tail='', head=''):
         k = len(it['parts'][0].split())                      # 첫 조각의 낱말 수
         tb = (g[k - 1]['end'] + g[k]['start']) / 2
         cand = [(abs((o[i][1] + o[i + 1][0]) / 2 - tb) - 0.6 * (o[i + 1][0] - o[i][1]), i) for i in range(len(o) - 1)]
-        if not cand:
-            return None, {'err': 'no pause between word and example: ' + it['parts'][0] + ' (runs %s)' % o}
+        if not cand:                                         # 낱말과 예문 사이에 묵음이 없다: 알려 준 경계 가까이에서 가장 조용한 곳에서 나눈다
+            sh = o[0][0] - g[0]['start']; lo_ = max(o[0][0] + 0.2, g[k - 1]['end'] + sh - 0.15); hi_ = min(o[-1][1] - 0.2, g[k]['start'] + sh + 0.15)
+            if hi_ <= lo_:
+                return None, {'err': 'no pause between word and example: ' + it['parts'][0] + ' (runs %s)' % o}
+            db_, h_ = env_db(x); a_i = int(lo_ * SR / h_); b_i = max(a_i + 1, int(hi_ * SR / h_))
+            q = (a_i + int(np.argmin(db_[a_i:b_i]))) * h_ / SR + 0.01
+            inner.append(0.0); out.append([(o[0][0], q), (q, o[-1][1])]); continue
         _, i = min(cand)
         inner.append(round(o[i + 1][0] - o[i][1], 2))
         out.append([(o[0][0], o[i][1]), (o[i + 1][0], o[-1][1])])
