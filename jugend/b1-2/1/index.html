@@ -25,6 +25,95 @@
   if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
 })();
 </script>
+<style id="soda-fz-css">
+/* 글자 크기: 오른쪽 위 「가」 버튼으로 네 단계를 고릅니다. 교재의 CSS는 본문 글자를 calc(Npx*var(--fz)), 큰 제목을 var(--fzh)로 적습니다 (저장소 tools/fz.py) */
+:root{--fz:1;--fzh:1}
+html[data-fz="s"]{--fz:.9;--fzh:.95}
+html[data-fz="l"]{--fz:1.15;--fzh:1.07}
+html[data-fz="xl"]{--fz:1.3;--fzh:1.14}
+html[data-fz="s"] input:not([type="checkbox"]):not([type="radio"]),html[data-fz="s"] textarea,html[data-fz="s"] select{font-size:16px}   /* 입력 칸이 16px보다 작으면 iOS가 입력할 때 화면을 확대합니다 */
+.soda-fz-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:calc(max(10px,env(safe-area-inset-right)) + 92px);z-index:2147482000;width:38px;height:38px;margin:0;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent;font:700 17px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:-.04em}
+.soda-fz-btn i{font-style:normal;font-size:11px;margin-right:1px}
+.soda-fz-btn[aria-expanded="true"]{background:#384568;color:#fff;border-color:#384568}
+html[data-theme="dark"] .soda-fz-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
+html[data-theme="dark"] .soda-fz-btn[aria-expanded="true"]{background:#AEB9DD;color:#14181E;border-color:#AEB9DD}
+.soda-fz-btn:focus-visible,.soda-fz-seg button:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
+.soda-fz-pop{position:fixed;top:calc(max(10px,env(safe-area-inset-top)) + 46px);right:max(10px,env(safe-area-inset-right));z-index:2147482000;margin:0;padding:10px 12px 12px;border-radius:16px;border:1px solid rgba(110,118,130,.35);background:#FAFAF8;color:#384568;box-shadow:0 12px 32px rgba(0,0,0,.18);font:600 12px/1.3 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;text-align:left}
+.soda-fz-pop[hidden]{display:none}
+.soda-fz-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 2px 8px;padding:0;color:#6B7385}
+.soda-fz-top b{font-weight:700;color:#384568}
+.soda-fz-seg{display:grid;grid-template-columns:repeat(4,46px);border:1px solid rgba(110,118,130,.4);border-radius:11px;overflow:hidden}
+.soda-fz-seg button{height:42px;min-height:0;margin:0;padding:0;border:0;border-left:1px solid rgba(110,118,130,.4);border-radius:0;background:transparent;color:#384568;font:700 15px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.soda-fz-seg button:first-child{border-left:0}
+.soda-fz-seg button[data-z="s"]{font-size:12px}
+.soda-fz-seg button[data-z="l"]{font-size:18px}
+.soda-fz-seg button[data-z="xl"]{font-size:21px}
+.soda-fz-seg button[aria-pressed="true"]{background:#384568;color:#fff}
+html[data-theme="dark"] .soda-fz-pop{background:#1B2028;color:#E3E6F0;border-color:#3A4350;box-shadow:0 14px 36px rgba(0,0,0,.6)}
+html[data-theme="dark"] .soda-fz-top{color:#A9B0BA}
+html[data-theme="dark"] .soda-fz-top b{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg,html[data-theme="dark"] .soda-fz-seg button{border-color:#3A4350}
+html[data-theme="dark"] .soda-fz-seg button{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg button[aria-pressed="true"]{background:#AEB9DD;color:#14181E}
+@media print{.soda-fz-btn,.soda-fz-pop{display:none!important}}
+</style>
+<script id="soda-fz-js">
+/* 글자 크기. 고른 단계는 이 기기의 쿠키 soda_fz (s, l, xl. 보통이면 지움)에 남고, 어린이·청소년·성인 교재가 함께 씁니다.
+   localStorage 에 두지 않는 까닭: 학습 포탈의 sync.js 가 localStorage 값을 로그인한 학생의 다른 기기로 옮기는데, 글자 크기는 기기마다 달라야 합니다. */
+(function(){
+  var CK='soda_fz', d=document.documentElement, OPT=[['s','작게'],['m','보통'],['l','크게'],['xl','아주 크게']], cur='m', paint=function(){};
+  function ok(v){ return v==='s'||v==='l'||v==='xl'; }
+  function lesen(){ try{ var m=document.cookie.match(/(?:^|;\s*)soda_fz=(s|l|xl)(?:;|$)/); return m?m[1]:'m'; }catch(e){ return 'm'; } }
+  function merken(v){ try{ var p=location.pathname.indexOf('/SODA-Lehrwerk/')===0?'/SODA-Lehrwerk/':'/'; document.cookie=CK+'='+(ok(v)?v:'')+'; path='+p+'; max-age='+(ok(v)?31536000:0)+'; SameSite=Lax'; }catch(e){} }
+  function apply(v){ if(ok(v)) d.setAttribute('data-fz',v); else d.removeAttribute('data-fz'); }
+  cur=lesen(); apply(cur);
+  if(ok(cur)) merken(cur);          /* 열 때마다 기한을 다시 1년으로 */
+  /* 다른 탭에서 바꿨거나 뒤로 가기로 돌아온 화면: 쿠키를 다시 읽어 맞춘다 */
+  function neu(){ var v=lesen(); if(v!==cur){ cur=v; apply(v); paint(); } }
+  window.addEventListener('pageshow',neu);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) neu(); });
+  function mount(){
+    if(document.getElementById('soda-fz-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-fz-btn'; b.className='soda-fz-btn';
+    b.innerHTML='<span aria-hidden="true"><i>가</i>가</span>';
+    b.setAttribute('aria-label','글자 크기'); b.setAttribute('aria-haspopup','true'); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-controls','soda-fz-pop'); b.title='글자 크기';
+    var p=document.createElement('div'); p.id='soda-fz-pop'; p.className='soda-fz-pop'; p.hidden=true; p.setAttribute('role','group'); p.setAttribute('aria-label','글자 크기');
+    p.innerHTML='<p class="soda-fz-top"><span>글자 크기</span><b></b></p><div class="soda-fz-seg">'+OPT.map(function(o){ return '<button type="button" data-z="'+o[0]+'" aria-label="'+o[1]+'" title="'+o[1]+'">가</button>'; }).join('')+'</div>';
+    var name=p.querySelector('b'), bs=[].slice.call(p.querySelectorAll('button'));
+    paint=function(){
+      bs.forEach(function(x){ x.setAttribute('aria-pressed', x.getAttribute('data-z')===cur?'true':'false'); });
+      for(var i=0;i<OPT.length;i++) if(OPT[i][0]===cur) name.textContent=OPT[i][1];
+    };
+    function open(on){ p.hidden=!on; b.setAttribute('aria-expanded', on?'true':'false'); }
+    /* 크기를 바꾸면 글이 다시 흐르므로, 읽던 자리의 요소가 화면에서 같은 높이에 남게 한다 */
+    function anker(){
+      if((window.pageYOffset||0)<40) return null;
+      var W=window.innerWidth, H=window.innerHeight, xs=[W/2,W/4,W*3/4], ys=[110,150,200,260];
+      for(var j=0;j<ys.length;j++) for(var i=0;i<xs.length;i++){
+        var el=document.elementFromPoint(Math.round(xs[i]), ys[j]), f=el, fest=false;
+        if(!el||el===d||el===document.body||el.getBoundingClientRect().height>H) continue;      /* 화면보다 큰 상자(구역 전체)는 기준이 못 된다 */
+        while(f&&f!==document.body){ var ps=getComputedStyle(f).position; if(ps==='fixed'||ps==='sticky'){ fest=true; break; } f=f.parentElement; }
+        if(!fest) return el;
+      }
+      return null;
+    }
+    function set(v){
+      if(v===cur) return;
+      var a=null, t0=0; try{ a=anker(); if(a) t0=a.getBoundingClientRect().top; }catch(e){}
+      cur=v; apply(v); merken(v); paint();
+      try{ if(a){ var t1=a.getBoundingClientRect().top; if(Math.abs(t1-t0)>1) window.scrollBy(0,t1-t0); } }catch(e){}
+      try{ window.dispatchEvent(new CustomEvent('soda-fz',{detail:v})); }catch(e){}
+    }
+    b.addEventListener('click',function(){ open(p.hidden); });
+    p.addEventListener('click',function(e){ var t=e.target; while(t&&t!==p&&!(t.getAttribute&&t.getAttribute('data-z'))) t=t.parentNode; if(t&&t!==p) set(t.getAttribute('data-z')); });
+    document.addEventListener('click',function(e){ if(p.hidden) return; var t=e.target; if(t===b||b.contains(t)||p.contains(t)) return; open(false); });
+    document.addEventListener('keydown',function(e){ if((e.key==='Escape'||e.key==='Esc')&&!p.hidden){ open(false); try{ b.focus(); }catch(x){} } });
+    paint(); document.body.appendChild(b); document.body.appendChild(p);
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Lektion 1 Was will ich werden? · 직업과 진로 | SODA Jugendliche B1.2</title>
 <meta name="description" content="청소년 독일어 B1.2 1과 Was will ich werden?(직업과 진로). 직업과 적성 이야기하기, 실습 지원서 쓰기, 면접에서 말하기. 독일어 음성으로 듣는 대화, 단어, 문법(lassen + Infinitiv, sich bewerben um, Interesse an (Verben und Nomen mit Präposition), Ich würde mich freuen, …), 연습 문제, 말하기와 쓰기 과제. 소피아 독일어학원.">
@@ -47,7 +136,7 @@
 <link rel="icon" type="image/png" href="../../icons/icon-192.png">
 <link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
 <link rel="stylesheet" href="../../../assets/pretendard.css">
-<link rel="stylesheet" href="../../lektion.css?v=b6cb803b">
+<link rel="stylesheet" href="../../lektion.css?v=1b1ef1f7">
 <style id="soda-dark">
 .soda-theme-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));z-index:2147482000;width:38px;height:38px;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
 .soda-theme-btn svg{width:20px;height:20px}
@@ -91,6 +180,6 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
 <footer class="fuss" id="fuss"><div class="wrap"><button type="button" class="btn hell" id="prev">이전</button><button type="button" class="btn" id="next">다음</button></div></footer>
 <div id="toast" role="status" aria-live="polite"></div>
 <script type="application/json" id="daten">{"id":"b1-2/1","w":[{"d":"der Betrieb","k":"회사, 사업장","a":"n05","g":"der"},{"d":"der Arbeitsplatz","k":"일하는 자리, 일자리","a":"n07","g":"der"},{"d":"die Werkstatt","k":"작업장, 정비소","a":"n09","g":"die"},{"d":"der Handwerker","k":"기술자","a":"n11","g":"der"},{"d":"der Tierarzt","k":"수의사","a":"n13","g":"der"},{"d":"der Krankenpfleger","k":"간호사(남자)","a":"n15","g":"der"},{"d":"der Erzieher","k":"보육 교사","a":"n17","g":"der"},{"d":"der Praktikant","k":"실습생","a":"n19","g":"der"},{"d":"der Azubi","k":"직업 교육생","a":"n21","g":"der"},{"d":"das Gehalt","k":"급여, 월급","a":"n23","g":"das"},{"d":"die Arbeitszeit","k":"일하는 시간","a":"n25","g":"die"},{"d":"der Feierabend","k":"일과 끝, 퇴근","a":"n27","g":"der"},{"d":"sich bewerben, hat sich beworben","k":"지원하다","a":"n29","g":""},{"d":"die Bewerbung","k":"지원, 지원서","a":"n30","g":"die"},{"d":"der Lebenslauf","k":"이력서","a":"n32","g":"der"},{"d":"das Anschreiben","k":"지원 편지","a":"n34","g":"das"},{"d":"das Vorstellungsgespräch","k":"면접","a":"n36","g":"das"},{"d":"die Stelle","k":"일자리","a":"n38","g":"die"},{"d":"die Unterlagen","k":"서류","a":"n40","g":"pl"},{"d":"die Zusage","k":"합격 통보, 승낙","a":"n42","g":"die"},{"d":"die Absage","k":"거절 통보","a":"n44","g":"die"},{"d":"der Erfolg","k":"성공","a":"n46","g":"der"},{"d":"das Interesse","k":"관심, 흥미","a":"n48","g":"das"},{"d":"die Stärke","k":"강점","a":"n50","g":"die"},{"d":"die Schwäche","k":"약점","a":"n52","g":"die"},{"d":"die Fähigkeit","k":"능력","a":"n54","g":"die"},{"d":"geeignet","k":"알맞은, 적합한","a":"n56","g":""},{"d":"geduldig","k":"참을성 있는","a":"n58","g":""},{"d":"kreativ","k":"창의적인","a":"n60","g":""},{"d":"selbstständig","k":"스스로 하는, 독립적인","a":"n62","g":""},{"d":"handwerklich","k":"손으로 하는 일의, 손재주의","a":"n64","g":""},{"d":"lassen, hat gelassen","k":"하게 하다, 맡기다","a":"n66","g":""},{"d":"erledigen, hat erledigt","k":"처리하다, 끝내다","a":"n67","g":""},{"d":"beraten, hat beraten","k":"상담하다, 조언하다","a":"n69","g":""}],"dlg":{"A":[["Schneider","Frau Schneider","sc01","Im Juni macht ihr zwei Wochen Praktikum. Bis Ende April müsst ihr euch um einen Platz bewerben.","6월에 여러분은 2주 동안 실습을 해요. 4월 말까지 자리에 지원해야 해요."],["Elif","Elif","el01","Ich habe mich schon bei der Zeitung beworben. Frau Berger lässt mich vielleicht einen Artikel schreiben!","저는 벌써 신문사에 지원했어요. Berger 기자님이 어쩌면 기사를 쓰게 해 주실지도 몰라요!"],["Emma","Emma","em01","Ich möchte in eine Tierarztpraxis. Ich habe großes Interesse an Tieren, und geduldig bin ich auch.","저는 동물병원에 가고 싶어요. 동물에 관심이 많고, 참을성도 있어요."],["Yuna","Yuna","yu01","Ich interessiere mich für Radio. Deshalb habe ich mich beim Radio beworben.","저는 라디오에 관심이 있어요. 그래서 라디오 방송국에 지원했어요."],["Lukas","Lukas","lu01","Und ich? Ich weiß nicht, was ich werden will. Ich habe keine Stärken.","저는요? 뭐가 되고 싶은지 모르겠어요. 저는 강점이 없어요."],["Emma","Emma","em02","Das stimmt nicht. Du bist handwerklich sehr gut. Du hast mein Fahrrad repariert!","그렇지 않아. 너는 손재주가 아주 좋아. 내 자전거도 고쳐 줬잖아!"],["Schneider","Frau Schneider","sc02","Emma hat recht. Im Fahrradladen neben der Schule lässt der Chef die Praktikanten selbst reparieren.","Emma 말이 맞아요. 학교 옆 자전거 가게에서는 사장님이 실습생에게 직접 고치게 해 줘요."],["Lukas","Lukas","lu02","Wirklich? Dann bewerbe ich mich dort. Aber wie schreibt man eine Bewerbung?","정말요? 그럼 거기에 지원할게요. 근데 지원서는 어떻게 써요?"],["Schneider","Frau Schneider","sc03","Du brauchst ein Anschreiben und einen Lebenslauf. Im Anschreiben erklärst du, warum du geeignet bist.","지원 편지와 이력서가 필요해요. 지원 편지에는 왜 네가 알맞은 사람인지 설명해요."],["Elif","Elif","el02","Und am Ende schreibst du: Über eine Einladung zum Gespräch würde ich mich freuen.","그리고 끝에는 이렇게 써. 면접에 불러 주시면 기쁘겠습니다."],["Lukas","Lukas","lu03","Das klingt sehr erwachsen. Lasst mich mal üben: Sehr geehrter Herr … Wie heißt der Chef?","엄청 어른스럽게 들리네. 연습 좀 해 볼게. 존경하는 … 사장님 성함이 뭐예요?"],["Schneider","Frau Schneider","sc04","Herr Demir. Und lass deine Bewerbung von Emma lesen, bevor du sie schickst.","Demir 씨예요. 그리고 보내기 전에 Emma에게 지원서를 읽어 달라고 해요."]],"B":[["Mann","Herr Demir","ma01","Guten Tag, Lukas. Schön, dass du da bist. Warum möchtest du dein Praktikum bei uns machen?","안녕, Lukas. 와 줘서 반가워. 왜 우리 가게에서 실습하고 싶니?"],["Lukas","Lukas","lu04","Guten Tag, Herr Demir. Ich interessiere mich für Fahrräder, und ich repariere gern.","안녕하세요, Demir 씨. 저는 자전거에 관심이 있고, 고치는 걸 좋아해요."],["Mann","Herr Demir","ma02","Wo hast du das gelernt?","그건 어디에서 배웠니?"],["Lukas","Lukas","lu05","Bei meinem Opa. Er lässt mich in seiner Werkstatt alles selbst machen.","할아버지께 배웠어요. 할아버지는 작업장에서 뭐든지 제가 직접 하게 해 주세요."],["Mann","Herr Demir","ma03","Sehr gut. Was sind deine Stärken?","아주 좋구나. 네 강점은 뭐니?"],["Lukas","Lukas","lu06","Ich bin geduldig und arbeite gern im Team. Und ich bin pünktlich. Fast immer.","저는 참을성이 있고 여럿이 함께 일하는 걸 좋아해요. 그리고 시간을 잘 지켜요. 거의 언제나요."],["Mann","Herr Demir","ma04","Und deine Schwächen?","약점은?"],["Lukas","Lukas","lu07","Ich spreche manchmal zu viel. Aber ich lasse mir gern etwas erklären.","가끔 말이 너무 많아요. 하지만 설명해 주시면 잘 들어요."],["Mann","Herr Demir","ma05","Das ist ehrlich. Die Arbeit fängt um neun an, und um fünf ist Feierabend.","솔직하구나. 일은 아홉 시에 시작하고 다섯 시에 끝나."],["Lukas","Lukas","lu08","Das passt. Darf ich auch Kunden beraten?","괜찮아요. 손님 상담도 해도 되나요?"],["Mann","Herr Demir","ma06","Am Anfang hilfst du in der Werkstatt. Später lasse ich dich auch mit den Kunden sprechen.","처음에는 작업장에서 돕고, 나중에는 손님과도 이야기하게 해 줄게."],["Lukas","Lukas","lu09","Das wäre toll.","그러면 정말 좋겠어요."],["Mann","Herr Demir","ma07","Gut, Lukas. Du bekommst den Platz. Wir sehen uns am siebten Juni.","좋아, Lukas. 자리는 네 거야. 6월 7일에 보자."]]},"rolle":{"dlg":"B","roles":["Lukas","Mann"]}}</script>
-<script src="../../lektion.js?v=b6cb803b"></script>
+<script src="../../lektion.js?v=1b1ef1f7"></script>
 </body>
 </html>

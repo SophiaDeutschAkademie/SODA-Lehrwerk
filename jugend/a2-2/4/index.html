@@ -25,6 +25,95 @@
   if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
 })();
 </script>
+<style id="soda-fz-css">
+/* 글자 크기: 오른쪽 위 「가」 버튼으로 네 단계를 고릅니다. 교재의 CSS는 본문 글자를 calc(Npx*var(--fz)), 큰 제목을 var(--fzh)로 적습니다 (저장소 tools/fz.py) */
+:root{--fz:1;--fzh:1}
+html[data-fz="s"]{--fz:.9;--fzh:.95}
+html[data-fz="l"]{--fz:1.15;--fzh:1.07}
+html[data-fz="xl"]{--fz:1.3;--fzh:1.14}
+html[data-fz="s"] input:not([type="checkbox"]):not([type="radio"]),html[data-fz="s"] textarea,html[data-fz="s"] select{font-size:16px}   /* 입력 칸이 16px보다 작으면 iOS가 입력할 때 화면을 확대합니다 */
+.soda-fz-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:calc(max(10px,env(safe-area-inset-right)) + 92px);z-index:2147482000;width:38px;height:38px;margin:0;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent;font:700 17px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:-.04em}
+.soda-fz-btn i{font-style:normal;font-size:11px;margin-right:1px}
+.soda-fz-btn[aria-expanded="true"]{background:#384568;color:#fff;border-color:#384568}
+html[data-theme="dark"] .soda-fz-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
+html[data-theme="dark"] .soda-fz-btn[aria-expanded="true"]{background:#AEB9DD;color:#14181E;border-color:#AEB9DD}
+.soda-fz-btn:focus-visible,.soda-fz-seg button:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
+.soda-fz-pop{position:fixed;top:calc(max(10px,env(safe-area-inset-top)) + 46px);right:max(10px,env(safe-area-inset-right));z-index:2147482000;margin:0;padding:10px 12px 12px;border-radius:16px;border:1px solid rgba(110,118,130,.35);background:#FAFAF8;color:#384568;box-shadow:0 12px 32px rgba(0,0,0,.18);font:600 12px/1.3 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;text-align:left}
+.soda-fz-pop[hidden]{display:none}
+.soda-fz-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 2px 8px;padding:0;color:#6B7385}
+.soda-fz-top b{font-weight:700;color:#384568}
+.soda-fz-seg{display:grid;grid-template-columns:repeat(4,46px);border:1px solid rgba(110,118,130,.4);border-radius:11px;overflow:hidden}
+.soda-fz-seg button{height:42px;min-height:0;margin:0;padding:0;border:0;border-left:1px solid rgba(110,118,130,.4);border-radius:0;background:transparent;color:#384568;font:700 15px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.soda-fz-seg button:first-child{border-left:0}
+.soda-fz-seg button[data-z="s"]{font-size:12px}
+.soda-fz-seg button[data-z="l"]{font-size:18px}
+.soda-fz-seg button[data-z="xl"]{font-size:21px}
+.soda-fz-seg button[aria-pressed="true"]{background:#384568;color:#fff}
+html[data-theme="dark"] .soda-fz-pop{background:#1B2028;color:#E3E6F0;border-color:#3A4350;box-shadow:0 14px 36px rgba(0,0,0,.6)}
+html[data-theme="dark"] .soda-fz-top{color:#A9B0BA}
+html[data-theme="dark"] .soda-fz-top b{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg,html[data-theme="dark"] .soda-fz-seg button{border-color:#3A4350}
+html[data-theme="dark"] .soda-fz-seg button{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg button[aria-pressed="true"]{background:#AEB9DD;color:#14181E}
+@media print{.soda-fz-btn,.soda-fz-pop{display:none!important}}
+</style>
+<script id="soda-fz-js">
+/* 글자 크기. 고른 단계는 이 기기의 쿠키 soda_fz (s, l, xl. 보통이면 지움)에 남고, 어린이·청소년·성인 교재가 함께 씁니다.
+   localStorage 에 두지 않는 까닭: 학습 포탈의 sync.js 가 localStorage 값을 로그인한 학생의 다른 기기로 옮기는데, 글자 크기는 기기마다 달라야 합니다. */
+(function(){
+  var CK='soda_fz', d=document.documentElement, OPT=[['s','작게'],['m','보통'],['l','크게'],['xl','아주 크게']], cur='m', paint=function(){};
+  function ok(v){ return v==='s'||v==='l'||v==='xl'; }
+  function lesen(){ try{ var m=document.cookie.match(/(?:^|;\s*)soda_fz=(s|l|xl)(?:;|$)/); return m?m[1]:'m'; }catch(e){ return 'm'; } }
+  function merken(v){ try{ var p=location.pathname.indexOf('/SODA-Lehrwerk/')===0?'/SODA-Lehrwerk/':'/'; document.cookie=CK+'='+(ok(v)?v:'')+'; path='+p+'; max-age='+(ok(v)?31536000:0)+'; SameSite=Lax'; }catch(e){} }
+  function apply(v){ if(ok(v)) d.setAttribute('data-fz',v); else d.removeAttribute('data-fz'); }
+  cur=lesen(); apply(cur);
+  if(ok(cur)) merken(cur);          /* 열 때마다 기한을 다시 1년으로 */
+  /* 다른 탭에서 바꿨거나 뒤로 가기로 돌아온 화면: 쿠키를 다시 읽어 맞춘다 */
+  function neu(){ var v=lesen(); if(v!==cur){ cur=v; apply(v); paint(); } }
+  window.addEventListener('pageshow',neu);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) neu(); });
+  function mount(){
+    if(document.getElementById('soda-fz-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-fz-btn'; b.className='soda-fz-btn';
+    b.innerHTML='<span aria-hidden="true"><i>가</i>가</span>';
+    b.setAttribute('aria-label','글자 크기'); b.setAttribute('aria-haspopup','true'); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-controls','soda-fz-pop'); b.title='글자 크기';
+    var p=document.createElement('div'); p.id='soda-fz-pop'; p.className='soda-fz-pop'; p.hidden=true; p.setAttribute('role','group'); p.setAttribute('aria-label','글자 크기');
+    p.innerHTML='<p class="soda-fz-top"><span>글자 크기</span><b></b></p><div class="soda-fz-seg">'+OPT.map(function(o){ return '<button type="button" data-z="'+o[0]+'" aria-label="'+o[1]+'" title="'+o[1]+'">가</button>'; }).join('')+'</div>';
+    var name=p.querySelector('b'), bs=[].slice.call(p.querySelectorAll('button'));
+    paint=function(){
+      bs.forEach(function(x){ x.setAttribute('aria-pressed', x.getAttribute('data-z')===cur?'true':'false'); });
+      for(var i=0;i<OPT.length;i++) if(OPT[i][0]===cur) name.textContent=OPT[i][1];
+    };
+    function open(on){ p.hidden=!on; b.setAttribute('aria-expanded', on?'true':'false'); }
+    /* 크기를 바꾸면 글이 다시 흐르므로, 읽던 자리의 요소가 화면에서 같은 높이에 남게 한다 */
+    function anker(){
+      if((window.pageYOffset||0)<40) return null;
+      var W=window.innerWidth, H=window.innerHeight, xs=[W/2,W/4,W*3/4], ys=[110,150,200,260];
+      for(var j=0;j<ys.length;j++) for(var i=0;i<xs.length;i++){
+        var el=document.elementFromPoint(Math.round(xs[i]), ys[j]), f=el, fest=false;
+        if(!el||el===d||el===document.body||el.getBoundingClientRect().height>H) continue;      /* 화면보다 큰 상자(구역 전체)는 기준이 못 된다 */
+        while(f&&f!==document.body){ var ps=getComputedStyle(f).position; if(ps==='fixed'||ps==='sticky'){ fest=true; break; } f=f.parentElement; }
+        if(!fest) return el;
+      }
+      return null;
+    }
+    function set(v){
+      if(v===cur) return;
+      var a=null, t0=0; try{ a=anker(); if(a) t0=a.getBoundingClientRect().top; }catch(e){}
+      cur=v; apply(v); merken(v); paint();
+      try{ if(a){ var t1=a.getBoundingClientRect().top; if(Math.abs(t1-t0)>1) window.scrollBy(0,t1-t0); } }catch(e){}
+      try{ window.dispatchEvent(new CustomEvent('soda-fz',{detail:v})); }catch(e){}
+    }
+    b.addEventListener('click',function(){ open(p.hidden); });
+    p.addEventListener('click',function(e){ var t=e.target; while(t&&t!==p&&!(t.getAttribute&&t.getAttribute('data-z'))) t=t.parentNode; if(t&&t!==p) set(t.getAttribute('data-z')); });
+    document.addEventListener('click',function(e){ if(p.hidden) return; var t=e.target; if(t===b||b.contains(t)||p.contains(t)) return; open(false); });
+    document.addEventListener('keydown',function(e){ if((e.key==='Escape'||e.key==='Esc')&&!p.hidden){ open(false); try{ b.focus(); }catch(x){} } });
+    paint(); document.body.appendChild(b); document.body.appendChild(p);
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Lektion 4 D-A-CH entdecken · 독일, 오스트리아, 스위스 | SODA Jugendliche A2.2</title>
 <meta name="description" content="청소년 독일어 A2.2 4과 D-A-CH entdecken(독일, 오스트리아, 스위스). 나라와 도시 소개하기, 명소 설명하기, 짧게 발표하기. 독일어 음성으로 듣는 대화, 단어, 문법(Relativsätze im Nominativ (eine Stadt, die …), in der Schweiz, aus Österreich, Superlativ 복습), 연습 문제, 말하기와 쓰기 과제. 소피아 독일어학원.">
@@ -47,7 +136,7 @@
 <link rel="icon" type="image/png" href="../../icons/icon-192.png">
 <link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
 <link rel="stylesheet" href="../../../assets/pretendard.css">
-<link rel="stylesheet" href="../../lektion.css?v=b6cb803b">
+<link rel="stylesheet" href="../../lektion.css?v=1b1ef1f7">
 <style id="soda-dark">
 .soda-theme-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));z-index:2147482000;width:38px;height:38px;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
 .soda-theme-btn svg{width:20px;height:20px}
@@ -91,6 +180,6 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
 <footer class="fuss" id="fuss"><div class="wrap"><button type="button" class="btn hell" id="prev">이전</button><button type="button" class="btn" id="next">다음</button></div></footer>
 <div id="toast" role="status" aria-live="polite"></div>
 <script type="application/json" id="daten">{"id":"a2-2/4","w":[{"d":"das Land","k":"나라","a":"n05","g":"das"},{"d":"Europa","k":"유럽","a":"n07","g":""},{"d":"Asien","k":"아시아","a":"n09","g":""},{"d":"die Welt","k":"세계","a":"n11","g":"die"},{"d":"der Einwohner","k":"주민, 인구","a":"n13","g":"der"},{"d":"die Million","k":"백만","a":"n15","g":"die"},{"d":"die Sprache","k":"언어","a":"n17","g":"die"},{"d":"die Grenze","k":"국경","a":"n19","g":"die"},{"d":"der Franken","k":"프랑 (스위스 돈)","a":"n21","g":"der"},{"d":"der Fluss","k":"강","a":"n23","g":"der"},{"d":"der See","k":"호수","a":"n25","g":"der"},{"d":"fließen, ist geflossen","k":"흐르다","a":"n27","g":""},{"d":"die Insel","k":"섬","a":"n29","g":"die"},{"d":"der Wald","k":"숲","a":"n31","g":"der"},{"d":"der Norden","k":"북쪽","a":"n33","g":"der"},{"d":"der Süden","k":"남쪽","a":"n35","g":"der"},{"d":"der Osten","k":"동쪽","a":"n37","g":"der"},{"d":"der Westen","k":"서쪽","a":"n39","g":"der"},{"d":"südlich von","k":"~의 남쪽에","a":"n41","g":""},{"d":"hoch","k":"높은","a":"n43","g":""},{"d":"bekannt","k":"유명한, 잘 알려진","a":"n45","g":""},{"d":"besonders","k":"특히","a":"n47","g":""},{"d":"das Referat","k":"발표","a":"n49","g":"das"},{"d":"das Thema","k":"주제","a":"n51","g":"das"},{"d":"vorstellen, hat vorgestellt","k":"소개하다","a":"n53","g":""},{"d":"der Musiker","k":"음악가","a":"n55","g":"der"},{"d":"mehr als","k":"~보다 많이, ~ 넘게","a":"n57","g":""},{"d":"die Leute","k":"사람들","a":"n59","g":"pl"},{"d":"Servus!","k":"안녕! (오스트리아)","a":"n61","g":""},{"d":"Grüezi!","k":"안녕하세요! (스위스)","a":"n63","g":""}],"dlg":{"A":[["Schneider","Frau Schneider","sc01","Heute hören wir kurze Referate über Österreich und die Schweiz. Elif, fang bitte an.","오늘은 오스트리아와 스위스에 대한 짧은 발표를 들어요. Elif, 시작해 볼까요."],["Elif","Elif","el01","Mein Thema ist die Schweiz. Die Schweiz ist ein Land, das südlich von Deutschland liegt.","제 주제는 스위스예요. 스위스는 독일 남쪽에 있는 나라예요."],["Elif","Elif","el02","In der Schweiz gibt es vier Sprachen. Deutsch ist die Sprache, die am meisten gesprochen wird.","스위스에는 언어가 네 가지 있어요. 독일어가 가장 많이 쓰이는 언어예요."],["Lukas","Lukas","lu01","Ist Zürich die Hauptstadt?","취리히가 수도예요?"],["Elif","Elif","el03","Nein. Zürich ist die größte Stadt, aber die Hauptstadt ist Bern.","아니요. 취리히는 가장 큰 도시이고, 수도는 베른이에요."],["Yuna","Yuna","yu01","Was ist in der Schweiz besonders bekannt?","스위스에서는 뭐가 특히 유명해요?"],["Elif","Elif","el04","Die Berge! Das Matterhorn ist ein Berg, der mehr als 4000 Meter hoch ist.","산이에요! 마터호른은 높이가 4000미터가 넘는 산이에요."],["Emma","Emma","em01","Und die Schokolade. Meine Tante bringt immer Schokolade aus der Schweiz mit.","초콜릿도요. 우리 이모는 늘 스위스에서 초콜릿을 사 와요."],["Elif","Elif","el05","Stimmt. Und man bezahlt dort nicht mit Euro. Das Geld heißt Franken.","맞아요. 그리고 거기서는 유로로 계산하지 않아요. 돈 이름이 프랑이에요."],["Schneider","Frau Schneider","sc02","Danke, Elif. Das war ein Referat, das sehr interessant war.","고마워요, Elif. 아주 흥미로운 발표였어요."]],"B":[["Lukas","Lukas","lu02","Mein Thema ist Österreich. Paul hat mir geholfen, weil er aus Österreich kommt.","제 주제는 오스트리아예요. Paul이 오스트리아에서 와서 저를 도와줬어요."],["Lukas","Lukas","lu03","Die Hauptstadt ist Wien. Wien ist eine Stadt, die an der Donau liegt.","수도는 빈이에요. 빈은 도나우강 가에 있는 도시예요."],["Schneider","Frau Schneider","sc03","Wie viele Einwohner hat Wien?","빈에는 사람이 얼마나 살아요?"],["Lukas","Lukas","lu04","Ungefähr zwei Millionen. Wien ist die größte Stadt in Österreich.","200만 명쯤이요. 빈은 오스트리아에서 가장 큰 도시예요."],["Yuna","Yuna","yu02","Ich kenne Salzburg. Das ist die Stadt, die durch Mozart bekannt ist.","저는 잘츠부르크를 알아요. 모차르트로 유명한 도시예요."],["Lukas","Lukas","lu05","Genau. Mozart ist ein Musiker, der aus Salzburg kommt.","맞아요. 모차르트는 잘츠부르크에서 난 음악가예요."],["Emma","Emma","em02","Kann man in Österreich Ski fahren?","오스트리아에서 스키를 탈 수 있어요?"],["Lukas","Lukas","lu06","Ja, sehr gut. Der höchste Berg heißt Großglockner. Er ist fast 3800 Meter hoch.","네, 아주 잘 탈 수 있어요. 가장 높은 산은 그로스글로크너예요. 높이가 3800미터 가까이 돼요."],["Elif","Elif","el06","Und wie sagt man in Österreich „Hallo“?","그럼 오스트리아에서는 „Hallo“를 뭐라고 해요?"],["Lukas","Lukas","lu07","Man sagt „Servus“ oder „Grüß Gott“. Paul sagt immer „Servus“.","„Servus“나 „Grüß Gott“라고 해요. Paul은 늘 „Servus“라고 해요."],["Schneider","Frau Schneider","sc04","Vielen Dank, Lukas. Jetzt kennen wir zwei Länder, die neben Deutschland liegen.","고마워요, Lukas. 이제 독일 옆에 있는 나라 둘을 알게 됐어요."]]},"pw":[{"d":"die Umwelt","k":"환경","a":"","g":"die"},{"d":"trennen, hat getrennt","k":"나누다, 분리하다","a":"","g":""},{"d":"sammeln, hat gesammelt","k":"모으다, 줍다","a":"","g":""},{"d":"die Tonne","k":"(큰) 쓰레기통","a":"","g":"die"},{"d":"der Restmüll","k":"일반 쓰레기","a":"","g":"der"},{"d":"das Plastik","k":"플라스틱","a":"","g":"das"},{"d":"das Papier","k":"종이","a":"","g":"das"},{"d":"die Dose","k":"캔, 깡통","a":"","g":"die"},{"d":"das Pfand","k":"보증금","a":"","g":"das"},{"d":"recyceln, hat recycelt","k":"재활용하다","a":"","g":""},{"d":"wegwerfen","k":"버리다","a":"","g":""},{"d":"sparen, hat gespart","k":"아끼다, 모으다","a":"","g":""},{"d":"der Strom","k":"전기","a":"","g":"der"},{"d":"das Licht","k":"불, 빛","a":"","g":"das"},{"d":"der Wetterbericht","k":"일기 예보","a":"","g":"der"},{"d":"die Temperatur","k":"기온","a":"","g":"die"},{"d":"der Grad","k":"도","a":"","g":"der"},{"d":"die Sonne","k":"해","a":"","g":"die"},{"d":"scheinen, hat geschienen","k":"비치다","a":"","g":""},{"d":"der Regen","k":"비","a":"","g":"der"},{"d":"die Wolke","k":"구름","a":"","g":"die"},{"d":"bewölkt","k":"구름 낀, 흐린","a":"","g":""},{"d":"der Wind","k":"바람","a":"","g":"der"},{"d":"windig","k":"바람 부는","a":"","g":""},{"d":"das Gewitter","k":"천둥 번개, 뇌우","a":"","g":"das"},{"d":"trocken","k":"비가 안 오는, 마른","a":"","g":""},{"d":"Du solltest …","k":"~하는 게 좋아","a":"","g":""},{"d":"mitbringen, hat mitgebracht","k":"가져오다","a":"","g":""},{"d":"der Handschuh","k":"장갑","a":"","g":"der"},{"d":"die Natur","k":"자연","a":"","g":"die"},{"d":"schützen, hat geschützt","k":"보호하다, 지키다","a":"","g":""},{"d":"wirklich","k":"정말","a":"","g":""}],"rolle":{"dlg":"B","roles":["Lukas","Schneider"]}}</script>
-<script src="../../lektion.js?v=b6cb803b"></script>
+<script src="../../lektion.js?v=1b1ef1f7"></script>
 </body>
 </html>

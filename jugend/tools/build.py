@@ -146,10 +146,12 @@ def note(data):
 def main():
     data = json.load(open(os.path.join(T, 'inhalt.json'), encoding='utf-8'))
     check(data)
+    sys.path.insert(0, os.path.join(ROOT, 'tools')); import fz; fz.muss(['jugend/tools/shell.html'])          # 글자 크기 배율(오른쪽 위 「가」 버튼)을 따르는지
     shell = open(os.path.join(T, 'shell.html'), encoding='utf-8').read()
     date = os.environ.get('JUGEND_DATE') or datetime.date.today().strftime('%Y.%m.%d')
     rep = (
         ('<!--SODA_THEME_JS-->', rd('soda-theme-js.html')),
+        ('<!--SODA_FZ-->', rd('soda-fz.html')),
         ('/*SODA_DARK_SHARED*/', rd('soda-dark-shared.css')),
         ('<!--A2HS-->', rd('a2hs.html')),
         ('<!--STAIRS-->', stairs(data)),

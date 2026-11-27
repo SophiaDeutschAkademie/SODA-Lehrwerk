@@ -154,13 +154,13 @@ erwachsene/tools/build.py      목차 빌드: basis/index.html, studium/index.ht
 erwachsene/tools/shell.html    목차 화면 틀 (청소년 교재 목차와 같은 모양, 교재마다 색만 다름)
 erwachsene/tools/icons.py      앱 아이콘 만들기: basis/icons/, studium/icons/, beruf/icons/
 erwachsene/tools/status.json   공개 여부(public)와 음성을 아직 만들지 않은 단계(ohne_audio)
-erwachsene/tools/blocks/       다크 모드 스위치, 홈 버튼, 「홈 화면에 앱 추가」 공통 조각
+erwachsene/tools/blocks/       다크 모드 스위치, 홈 버튼, 글자 크기 버튼(soda-fz.html), 「홈 화면에 앱 추가」 공통 조각
 erwachsene/tools/lektion.py    과 화면 도구: check, prompts, img, site, tts, cut
 erwachsene/tools/page.html     과 화면 틀
 erwachsene/tools/src/          과 원고 (단계 폴더/과 번호.txt)와 쓰는 법 README.md
 erwachsene/tools/tts/          그림 설명 묶음(*.prompts.json). 음성을 만들면 음성 목록도 여기에 생깁니다
 erwachsene/tools/open.json     본문이 있는 과 목록 (site 가 씁니다. 목차 빌드가 읽어서 링크를 겁니다)
-erwachsene/lektion.css, lektion.js   과 화면의 모양과 동작 (세 교재가 함께 씁니다)
+erwachsene/lektion.css, lektion.js   과 화면의 모양과 동작 (세 교재가 함께 씁니다). 글자 크기는 font-size:calc(17px*var(--fz)) 처럼 적습니다 (저장소 README 「글자 크기(교재)」)
 erwachsene/img/                과 그림: 단계/과/szene.webp(장면), c1.webp …(낱말 그림), c/(인물 얼굴)
 erwachsene/audio/              과 음성(mp3, 한 줄에 파일 하나, 31MB)
 erwachsene/fonts/              독일어 글꼴 DM Sans(라틴 글자만)와 사용 허가서 OFL.txt

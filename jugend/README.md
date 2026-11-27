@@ -49,7 +49,7 @@
 ```
 index.html              목차 화면 (빌드 결과, 직접 고치지 않습니다)
 a1-1/1/ … a1-1/8/       과 화면 (빌드 결과). a1-1/station-1/, a1-1/station-2/, a1-1/stufentest/ 도 같은 틀입니다. a1-2/, a2-1/, a2-2/, b1-1/, b1-2/ 도 같습니다
-lektion.css, lektion.js 과 화면의 모양과 동작 (모든 과가 같이 씁니다)
+lektion.css, lektion.js 과 화면의 모양과 동작 (모든 과가 같이 씁니다). 글자 크기는 font-size:calc(17px*var(--fz)) 처럼 적습니다 (저장소 README 「글자 크기(교재)」)
 audio/<단계>/<과>/      독일어 음성 (mp3, 한 줄에 파일 하나). 여섯 단계 모두 있습니다
 img/<단계>/<과>/        장면 그림 szene.webp, 단어 그림 c1.webp …, Station 이야기 그림 b1.webp …
 img/c/                  등장인물 얼굴
@@ -65,7 +65,7 @@ tools/audio/            음성 파일 이름표 (과마다 "말한 사람|글" -
 tools/tts/              음성과 그림을 만들 때 쓴 대본과 프롬프트
 tools/open.json         본문이 올라온 화면 목록 (lektion.py site 가 적습니다)
 tools/status.json       공개 여부(public)와 음성이 아직 없는 단계(ohne_audio)
-tools/blocks/           다크 모드 스위치, 목차 버튼, 홈 화면에 앱 추가 공통 조각
+tools/blocks/           다크 모드 스위치, 목차 버튼, 글자 크기 버튼(soda-fz.html), 홈 화면에 앱 추가 공통 조각
 ```
 
 ## 고치는 법

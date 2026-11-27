@@ -25,6 +25,95 @@
   if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
 })();
 </script>
+<style id="soda-fz-css">
+/* 글자 크기: 오른쪽 위 「가」 버튼으로 네 단계를 고릅니다. 교재의 CSS는 본문 글자를 calc(Npx*var(--fz)), 큰 제목을 var(--fzh)로 적습니다 (저장소 tools/fz.py) */
+:root{--fz:1;--fzh:1}
+html[data-fz="s"]{--fz:.9;--fzh:.95}
+html[data-fz="l"]{--fz:1.15;--fzh:1.07}
+html[data-fz="xl"]{--fz:1.3;--fzh:1.14}
+html[data-fz="s"] input:not([type="checkbox"]):not([type="radio"]),html[data-fz="s"] textarea,html[data-fz="s"] select{font-size:16px}   /* 입력 칸이 16px보다 작으면 iOS가 입력할 때 화면을 확대합니다 */
+.soda-fz-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:calc(max(10px,env(safe-area-inset-right)) + 92px);z-index:2147482000;width:38px;height:38px;margin:0;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent;font:700 17px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:-.04em}
+.soda-fz-btn i{font-style:normal;font-size:11px;margin-right:1px}
+.soda-fz-btn[aria-expanded="true"]{background:#384568;color:#fff;border-color:#384568}
+html[data-theme="dark"] .soda-fz-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
+html[data-theme="dark"] .soda-fz-btn[aria-expanded="true"]{background:#AEB9DD;color:#14181E;border-color:#AEB9DD}
+.soda-fz-btn:focus-visible,.soda-fz-seg button:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
+.soda-fz-pop{position:fixed;top:calc(max(10px,env(safe-area-inset-top)) + 46px);right:max(10px,env(safe-area-inset-right));z-index:2147482000;margin:0;padding:10px 12px 12px;border-radius:16px;border:1px solid rgba(110,118,130,.35);background:#FAFAF8;color:#384568;box-shadow:0 12px 32px rgba(0,0,0,.18);font:600 12px/1.3 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;text-align:left}
+.soda-fz-pop[hidden]{display:none}
+.soda-fz-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 2px 8px;padding:0;color:#6B7385}
+.soda-fz-top b{font-weight:700;color:#384568}
+.soda-fz-seg{display:grid;grid-template-columns:repeat(4,46px);border:1px solid rgba(110,118,130,.4);border-radius:11px;overflow:hidden}
+.soda-fz-seg button{height:42px;min-height:0;margin:0;padding:0;border:0;border-left:1px solid rgba(110,118,130,.4);border-radius:0;background:transparent;color:#384568;font:700 15px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.soda-fz-seg button:first-child{border-left:0}
+.soda-fz-seg button[data-z="s"]{font-size:12px}
+.soda-fz-seg button[data-z="l"]{font-size:18px}
+.soda-fz-seg button[data-z="xl"]{font-size:21px}
+.soda-fz-seg button[aria-pressed="true"]{background:#384568;color:#fff}
+html[data-theme="dark"] .soda-fz-pop{background:#1B2028;color:#E3E6F0;border-color:#3A4350;box-shadow:0 14px 36px rgba(0,0,0,.6)}
+html[data-theme="dark"] .soda-fz-top{color:#A9B0BA}
+html[data-theme="dark"] .soda-fz-top b{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg,html[data-theme="dark"] .soda-fz-seg button{border-color:#3A4350}
+html[data-theme="dark"] .soda-fz-seg button{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg button[aria-pressed="true"]{background:#AEB9DD;color:#14181E}
+@media print{.soda-fz-btn,.soda-fz-pop{display:none!important}}
+</style>
+<script id="soda-fz-js">
+/* 글자 크기. 고른 단계는 이 기기의 쿠키 soda_fz (s, l, xl. 보통이면 지움)에 남고, 어린이·청소년·성인 교재가 함께 씁니다.
+   localStorage 에 두지 않는 까닭: 학습 포탈의 sync.js 가 localStorage 값을 로그인한 학생의 다른 기기로 옮기는데, 글자 크기는 기기마다 달라야 합니다. */
+(function(){
+  var CK='soda_fz', d=document.documentElement, OPT=[['s','작게'],['m','보통'],['l','크게'],['xl','아주 크게']], cur='m', paint=function(){};
+  function ok(v){ return v==='s'||v==='l'||v==='xl'; }
+  function lesen(){ try{ var m=document.cookie.match(/(?:^|;\s*)soda_fz=(s|l|xl)(?:;|$)/); return m?m[1]:'m'; }catch(e){ return 'm'; } }
+  function merken(v){ try{ var p=location.pathname.indexOf('/SODA-Lehrwerk/')===0?'/SODA-Lehrwerk/':'/'; document.cookie=CK+'='+(ok(v)?v:'')+'; path='+p+'; max-age='+(ok(v)?31536000:0)+'; SameSite=Lax'; }catch(e){} }
+  function apply(v){ if(ok(v)) d.setAttribute('data-fz',v); else d.removeAttribute('data-fz'); }
+  cur=lesen(); apply(cur);
+  if(ok(cur)) merken(cur);          /* 열 때마다 기한을 다시 1년으로 */
+  /* 다른 탭에서 바꿨거나 뒤로 가기로 돌아온 화면: 쿠키를 다시 읽어 맞춘다 */
+  function neu(){ var v=lesen(); if(v!==cur){ cur=v; apply(v); paint(); } }
+  window.addEventListener('pageshow',neu);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) neu(); });
+  function mount(){
+    if(document.getElementById('soda-fz-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-fz-btn'; b.className='soda-fz-btn';
+    b.innerHTML='<span aria-hidden="true"><i>가</i>가</span>';
+    b.setAttribute('aria-label','글자 크기'); b.setAttribute('aria-haspopup','true'); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-controls','soda-fz-pop'); b.title='글자 크기';
+    var p=document.createElement('div'); p.id='soda-fz-pop'; p.className='soda-fz-pop'; p.hidden=true; p.setAttribute('role','group'); p.setAttribute('aria-label','글자 크기');
+    p.innerHTML='<p class="soda-fz-top"><span>글자 크기</span><b></b></p><div class="soda-fz-seg">'+OPT.map(function(o){ return '<button type="button" data-z="'+o[0]+'" aria-label="'+o[1]+'" title="'+o[1]+'">가</button>'; }).join('')+'</div>';
+    var name=p.querySelector('b'), bs=[].slice.call(p.querySelectorAll('button'));
+    paint=function(){
+      bs.forEach(function(x){ x.setAttribute('aria-pressed', x.getAttribute('data-z')===cur?'true':'false'); });
+      for(var i=0;i<OPT.length;i++) if(OPT[i][0]===cur) name.textContent=OPT[i][1];
+    };
+    function open(on){ p.hidden=!on; b.setAttribute('aria-expanded', on?'true':'false'); }
+    /* 크기를 바꾸면 글이 다시 흐르므로, 읽던 자리의 요소가 화면에서 같은 높이에 남게 한다 */
+    function anker(){
+      if((window.pageYOffset||0)<40) return null;
+      var W=window.innerWidth, H=window.innerHeight, xs=[W/2,W/4,W*3/4], ys=[110,150,200,260];
+      for(var j=0;j<ys.length;j++) for(var i=0;i<xs.length;i++){
+        var el=document.elementFromPoint(Math.round(xs[i]), ys[j]), f=el, fest=false;
+        if(!el||el===d||el===document.body||el.getBoundingClientRect().height>H) continue;      /* 화면보다 큰 상자(구역 전체)는 기준이 못 된다 */
+        while(f&&f!==document.body){ var ps=getComputedStyle(f).position; if(ps==='fixed'||ps==='sticky'){ fest=true; break; } f=f.parentElement; }
+        if(!fest) return el;
+      }
+      return null;
+    }
+    function set(v){
+      if(v===cur) return;
+      var a=null, t0=0; try{ a=anker(); if(a) t0=a.getBoundingClientRect().top; }catch(e){}
+      cur=v; apply(v); merken(v); paint();
+      try{ if(a){ var t1=a.getBoundingClientRect().top; if(Math.abs(t1-t0)>1) window.scrollBy(0,t1-t0); } }catch(e){}
+      try{ window.dispatchEvent(new CustomEvent('soda-fz',{detail:v})); }catch(e){}
+    }
+    b.addEventListener('click',function(){ open(p.hidden); });
+    p.addEventListener('click',function(e){ var t=e.target; while(t&&t!==p&&!(t.getAttribute&&t.getAttribute('data-z'))) t=t.parentNode; if(t&&t!==p) set(t.getAttribute('data-z')); });
+    document.addEventListener('click',function(e){ if(p.hidden) return; var t=e.target; if(t===b||b.contains(t)||p.contains(t)) return; open(false); });
+    document.addEventListener('keydown',function(e){ if((e.key==='Escape'||e.key==='Esc')&&!p.hidden){ open(false); try{ b.focus(); }catch(x){} } });
+    paint(); document.body.appendChild(b); document.body.appendChild(p);
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Lektion 5 Mein Geld · 용돈과 소비 | SODA Jugendliche A2.2</title>
 <meta name="description" content="청소년 독일어 A2.2 5과 Mein Geld(용돈과 소비). 용돈과 지출 말하기, 바라는 것 말하기, 광고에 대해 말하기. 독일어 음성으로 듣는 대화, 단어, 문법(würde, hätte, wäre (Wünsche), Dativ und Akkusativ im Satz (Ich gebe es ihm.)), 연습 문제, 말하기와 쓰기 과제. 소피아 독일어학원.">
@@ -47,7 +136,7 @@
 <link rel="icon" type="image/png" href="../../icons/icon-192.png">
 <link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
 <link rel="stylesheet" href="../../../assets/pretendard.css">
-<link rel="stylesheet" href="../../lektion.css?v=b6cb803b">
+<link rel="stylesheet" href="../../lektion.css?v=1b1ef1f7">
 <style id="soda-dark">
 .soda-theme-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));z-index:2147482000;width:38px;height:38px;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
 .soda-theme-btn svg{width:20px;height:20px}
@@ -91,6 +180,6 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
 <footer class="fuss" id="fuss"><div class="wrap"><button type="button" class="btn hell" id="prev">이전</button><button type="button" class="btn" id="next">다음</button></div></footer>
 <div id="toast" role="status" aria-live="polite"></div>
 <script type="application/json" id="daten">{"id":"a2-2/5","w":[{"d":"das Taschengeld","k":"용돈","a":"n05","g":"das"},{"d":"ausgeben","k":"(돈을) 쓰다","a":"n07","g":""},{"d":"leihen, hat geliehen","k":"빌려주다","a":"n09","g":""},{"d":"der Preis","k":"가격","a":"n11","g":"der"},{"d":"vergleichen, hat verglichen","k":"비교하다","a":"n13","g":""},{"d":"billig","k":"싼","a":"n15","g":""},{"d":"reich","k":"부유한, 돈이 많은","a":"n17","g":""},{"d":"arm","k":"가난한","a":"n19","g":""},{"d":"das Bargeld","k":"현금","a":"n21","g":"das"},{"d":"der Geldbeutel","k":"지갑","a":"n23","g":"der"},{"d":"die Münze","k":"동전","a":"n25","g":"die"},{"d":"der Schein","k":"지폐","a":"n27","g":"der"},{"d":"der Job","k":"일, 아르바이트","a":"n29","g":"der"},{"d":"pro","k":"~마다, ~당","a":"n31","g":""},{"d":"die Werbung","k":"광고","a":"n33","g":"die"},{"d":"das Produkt","k":"상품, 제품","a":"n35","g":"das"},{"d":"der Kopfhörer","k":"헤드폰","a":"n37","g":"der"},{"d":"das Souvenir","k":"기념품","a":"n39","g":"das"},{"d":"der Wunsch","k":"바람, 소원","a":"n41","g":"der"},{"d":"sofort","k":"바로, 당장","a":"n43","g":""},{"d":"versprechen","k":"약속하다","a":"n45","g":""},{"d":"Ich hätte gern …","k":"~을 갖고 싶어","a":"n47","g":""},{"d":"Ich wäre gern …","k":"~이면 좋겠어","a":"n49","g":""},{"d":"Ich würde gern …","k":"~하고 싶어","a":"n51","g":""},{"d":"reisen, ist gereist","k":"여행하다","a":"n53","g":""},{"d":"selbst","k":"스스로, 직접","a":"n55","g":""},{"d":"genug","k":"충분히, 넉넉한","a":"n57","g":""},{"d":"etwas","k":"조금, 어떤 것","a":"n59","g":""},{"d":"ganz","k":"전부의, 온","a":"n61","g":""}],"dlg":{"A":[["Emma","Emma","em01","Schau mal, die Werbung! Kopfhörer für nur 40 Euro. Nur diese Woche!","이 광고 좀 봐! 헤드폰이 40유로밖에 안 해. 이번 주만이래!"],["Yuna","Yuna","yu01","Die hätte ich gern. Meine alten Kopfhörer sind kaputt.","저거 갖고 싶다. 내 헤드폰은 고장 났거든."],["Emma","Emma","em02","Dann kauf sie doch.","그럼 사."],["Yuna","Yuna","yu02","Ich kann nicht. Ich habe in Berlin fast mein ganzes Taschengeld ausgegeben.","못 사. 베를린에서 용돈을 거의 다 썼어."],["Emma","Emma","em03","Wie viel hast du noch?","얼마 남았어?"],["Yuna","Yuna","yu03","Nur zwölf Euro. Kannst du mir 30 Euro leihen?","12유로밖에 없어. 나한테 30유로만 빌려줄 수 있어?"],["Emma","Emma","em04","30 Euro? Hm. Ich spare gerade für ein neues Fahrrad.","30유로? 음. 나 지금 새 자전거 사려고 돈 모으고 있어."],["Yuna","Yuna","yu04","Ich gebe sie dir nächsten Monat zurück. Versprochen!","다음 달에 돌려줄게. 약속해!"],["Emma","Emma","em05","Na gut. Aber frag zuerst Mama. Sie sagt immer: Man sollte nicht alles sofort kaufen.","좋아. 그런데 먼저 엄마한테 물어봐. 엄마는 늘 뭐든 바로 사지는 말라고 하시잖아."],["Yuna","Yuna","yu05","Ich würde so gern mehr Taschengeld bekommen!","용돈을 더 받으면 정말 좋겠다!"]],"B":[["Sabine","Sabine","sa01","Yuna, du möchtest Kopfhörer kaufen? Zeig mir mal die Werbung.","Yuna, 헤드폰을 사고 싶다고? 그 광고 좀 보여 줘."],["Yuna","Yuna","yu06","Hier. Die Werbung sagt, dass sie die besten Kopfhörer für Schüler sind.","여기요. 광고에서는 학생한테 가장 좋은 헤드폰이래요."],["Thomas","Thomas","th01","Das sagt die Werbung immer. Hast du die Preise verglichen?","광고는 늘 그렇게 말하지. 가격은 비교해 봤니?"],["Yuna","Yuna","yu07","Nein, noch nicht.","아니요, 아직요."],["Thomas","Thomas","th02","Im Internet kosten sie vielleicht nur 30 Euro. Ich würde zuerst vergleichen.","인터넷에서는 30유로밖에 안 할 수도 있어. 나라면 먼저 비교해 보겠다."],["Emma","Emma","em06","Papa, ich hätte gern mehr Taschengeld. 30 Euro im Monat sind zu wenig!","아빠, 저 용돈 좀 더 받고 싶어요. 한 달에 30유로는 너무 적어요!"],["Thomas","Thomas","th03","Mehr Taschengeld? Dann wäre ich bald arm!","용돈을 더? 그럼 아빠가 금방 가난해지겠는데!"],["Sabine","Sabine","sa02","Ihr könntet auch etwas Geld verdienen. Oma braucht Hilfe im Garten.","너희가 돈을 좀 벌 수도 있잖아. 할머니가 정원 일을 도와줄 사람이 필요하시대."],["Emma","Emma","em07","Wie viel gibt sie uns?","우리한테 얼마 주신대요?"],["Sabine","Sabine","sa03","Fragt sie selbst! Aber ich glaube, sie gibt euch zehn Euro pro Stunde.","직접 여쭤봐! 그런데 내 생각엔 한 시간에 10유로는 주실 거야."],["Yuna","Yuna","yu08","Dann kann ich die Kopfhörer bald selbst bezahlen. Das wäre toll!","그럼 헤드폰을 곧 제 돈으로 살 수 있겠어요. 그러면 정말 좋겠어요!"]]},"pw":[{"d":"das Land","k":"나라","a":"","g":"das"},{"d":"Europa","k":"유럽","a":"","g":""},{"d":"Asien","k":"아시아","a":"","g":""},{"d":"die Welt","k":"세계","a":"","g":"die"},{"d":"der Einwohner","k":"주민, 인구","a":"","g":"der"},{"d":"die Million","k":"백만","a":"","g":"die"},{"d":"die Sprache","k":"언어","a":"","g":"die"},{"d":"die Grenze","k":"국경","a":"","g":"die"},{"d":"der Franken","k":"프랑 (스위스 돈)","a":"","g":"der"},{"d":"der Fluss","k":"강","a":"","g":"der"},{"d":"der See","k":"호수","a":"","g":"der"},{"d":"fließen, ist geflossen","k":"흐르다","a":"","g":""},{"d":"die Insel","k":"섬","a":"","g":"die"},{"d":"der Wald","k":"숲","a":"","g":"der"},{"d":"der Norden","k":"북쪽","a":"","g":"der"},{"d":"der Süden","k":"남쪽","a":"","g":"der"},{"d":"der Osten","k":"동쪽","a":"","g":"der"},{"d":"der Westen","k":"서쪽","a":"","g":"der"},{"d":"südlich von","k":"~의 남쪽에","a":"","g":""},{"d":"hoch","k":"높은","a":"","g":""},{"d":"bekannt","k":"유명한, 잘 알려진","a":"","g":""},{"d":"besonders","k":"특히","a":"","g":""},{"d":"das Referat","k":"발표","a":"","g":"das"},{"d":"das Thema","k":"주제","a":"","g":"das"},{"d":"vorstellen, hat vorgestellt","k":"소개하다","a":"","g":""},{"d":"der Musiker","k":"음악가","a":"","g":"der"},{"d":"mehr als","k":"~보다 많이, ~ 넘게","a":"","g":""},{"d":"die Leute","k":"사람들","a":"","g":"pl"},{"d":"Servus!","k":"안녕! (오스트리아)","a":"","g":""},{"d":"Grüezi!","k":"안녕하세요! (스위스)","a":"","g":""}],"rolle":{"dlg":"A","roles":["Yuna","Emma"]}}</script>
-<script src="../../lektion.js?v=b6cb803b"></script>
+<script src="../../lektion.js?v=1b1ef1f7"></script>
 </body>
 </html>

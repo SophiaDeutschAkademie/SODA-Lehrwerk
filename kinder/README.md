@@ -64,8 +64,8 @@ tools/                원본과 만드는 도구
 ```
 book.json     차례 (8 Thema, 32단원, 명절 단원 33–36)
 src/kNN.json  단원 원본: 이야기, 카드, 문장 틀, 대화, 리듬, 집에서 해 보기, 그림 설명
-shell.html    화면 틀 (CSS와 스크립트)
-blocks/       Lehrwerk 공통 블록 (다크 모드, 홈 화면에 앱 추가)
+shell.html    화면 틀 (CSS와 스크립트). 글자 크기는 font-size:calc(17px*var(--fz)) 처럼 적습니다 (저장소 README 「글자 크기(교재)」)
+blocks/       Lehrwerk 공통 블록 (다크 모드, 글자 크기 버튼 soda-fz.html, 홈 화면에 앱 추가)
 build.py      검사, 음성 대본, 그림 프롬프트, 음성 자르기, 그림 넣기, 빌드
 sofi_augen.py Sofi 그림에 눈(홍채와 반짝임) 그리기
 test.py       화면 검사 (Playwright)

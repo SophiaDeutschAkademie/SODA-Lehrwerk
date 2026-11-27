@@ -1598,7 +1598,8 @@ def asset_ver():
 def cmd_site(draft=False):
     tpl = open(os.path.join(T, 'page.html'), encoding='utf-8').read()
     rd = lambda f: open(os.path.join(T, 'blocks', f), encoding='utf-8').read()
-    tpl = tpl.replace('<!--SODA_THEME_JS-->', rd('soda-theme-js.html')).replace('/*SODA_DARK_SHARED*/', rd('soda-dark-shared.css')).replace('__VER__', asset_ver())
+    sys.path.insert(0, os.path.join(ROOT, 'tools')); import fz; fz.muss(['jugend/lektion.css'])          # 글자 크기 배율(오른쪽 위 「가」 버튼)을 따르는지
+    tpl = tpl.replace('<!--SODA_THEME_JS-->', rd('soda-theme-js.html')).replace('<!--SODA_FZ-->', rd('soda-fz.html')).replace('/*SODA_DARK_SHARED*/', rd('soda-dark-shared.css')).replace('__VER__', asset_ver())
     allp = pages(); ps = have_src(); built = []; ready = []
     allsrc = [(q, parse(src_path(q['id']))) for q in ps]
     for p, L in allsrc:

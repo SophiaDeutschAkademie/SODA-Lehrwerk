@@ -25,6 +25,95 @@
   if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
 })();
 </script>
+<style id="soda-fz-css">
+/* 글자 크기: 오른쪽 위 「가」 버튼으로 네 단계를 고릅니다. 교재의 CSS는 본문 글자를 calc(Npx*var(--fz)), 큰 제목을 var(--fzh)로 적습니다 (저장소 tools/fz.py) */
+:root{--fz:1;--fzh:1}
+html[data-fz="s"]{--fz:.9;--fzh:.95}
+html[data-fz="l"]{--fz:1.15;--fzh:1.07}
+html[data-fz="xl"]{--fz:1.3;--fzh:1.14}
+html[data-fz="s"] input:not([type="checkbox"]):not([type="radio"]),html[data-fz="s"] textarea,html[data-fz="s"] select{font-size:16px}   /* 입력 칸이 16px보다 작으면 iOS가 입력할 때 화면을 확대합니다 */
+.soda-fz-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:calc(max(10px,env(safe-area-inset-right)) + 92px);z-index:2147482000;width:38px;height:38px;margin:0;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent;font:700 17px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:-.04em}
+.soda-fz-btn i{font-style:normal;font-size:11px;margin-right:1px}
+.soda-fz-btn[aria-expanded="true"]{background:#384568;color:#fff;border-color:#384568}
+html[data-theme="dark"] .soda-fz-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
+html[data-theme="dark"] .soda-fz-btn[aria-expanded="true"]{background:#AEB9DD;color:#14181E;border-color:#AEB9DD}
+.soda-fz-btn:focus-visible,.soda-fz-seg button:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
+.soda-fz-pop{position:fixed;top:calc(max(10px,env(safe-area-inset-top)) + 46px);right:max(10px,env(safe-area-inset-right));z-index:2147482000;margin:0;padding:10px 12px 12px;border-radius:16px;border:1px solid rgba(110,118,130,.35);background:#FAFAF8;color:#384568;box-shadow:0 12px 32px rgba(0,0,0,.18);font:600 12px/1.3 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;text-align:left}
+.soda-fz-pop[hidden]{display:none}
+.soda-fz-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 2px 8px;padding:0;color:#6B7385}
+.soda-fz-top b{font-weight:700;color:#384568}
+.soda-fz-seg{display:grid;grid-template-columns:repeat(4,46px);border:1px solid rgba(110,118,130,.4);border-radius:11px;overflow:hidden}
+.soda-fz-seg button{height:42px;min-height:0;margin:0;padding:0;border:0;border-left:1px solid rgba(110,118,130,.4);border-radius:0;background:transparent;color:#384568;font:700 15px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.soda-fz-seg button:first-child{border-left:0}
+.soda-fz-seg button[data-z="s"]{font-size:12px}
+.soda-fz-seg button[data-z="l"]{font-size:18px}
+.soda-fz-seg button[data-z="xl"]{font-size:21px}
+.soda-fz-seg button[aria-pressed="true"]{background:#384568;color:#fff}
+html[data-theme="dark"] .soda-fz-pop{background:#1B2028;color:#E3E6F0;border-color:#3A4350;box-shadow:0 14px 36px rgba(0,0,0,.6)}
+html[data-theme="dark"] .soda-fz-top{color:#A9B0BA}
+html[data-theme="dark"] .soda-fz-top b{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg,html[data-theme="dark"] .soda-fz-seg button{border-color:#3A4350}
+html[data-theme="dark"] .soda-fz-seg button{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg button[aria-pressed="true"]{background:#AEB9DD;color:#14181E}
+@media print{.soda-fz-btn,.soda-fz-pop{display:none!important}}
+</style>
+<script id="soda-fz-js">
+/* 글자 크기. 고른 단계는 이 기기의 쿠키 soda_fz (s, l, xl. 보통이면 지움)에 남고, 어린이·청소년·성인 교재가 함께 씁니다.
+   localStorage 에 두지 않는 까닭: 학습 포탈의 sync.js 가 localStorage 값을 로그인한 학생의 다른 기기로 옮기는데, 글자 크기는 기기마다 달라야 합니다. */
+(function(){
+  var CK='soda_fz', d=document.documentElement, OPT=[['s','작게'],['m','보통'],['l','크게'],['xl','아주 크게']], cur='m', paint=function(){};
+  function ok(v){ return v==='s'||v==='l'||v==='xl'; }
+  function lesen(){ try{ var m=document.cookie.match(/(?:^|;\s*)soda_fz=(s|l|xl)(?:;|$)/); return m?m[1]:'m'; }catch(e){ return 'm'; } }
+  function merken(v){ try{ var p=location.pathname.indexOf('/SODA-Lehrwerk/')===0?'/SODA-Lehrwerk/':'/'; document.cookie=CK+'='+(ok(v)?v:'')+'; path='+p+'; max-age='+(ok(v)?31536000:0)+'; SameSite=Lax'; }catch(e){} }
+  function apply(v){ if(ok(v)) d.setAttribute('data-fz',v); else d.removeAttribute('data-fz'); }
+  cur=lesen(); apply(cur);
+  if(ok(cur)) merken(cur);          /* 열 때마다 기한을 다시 1년으로 */
+  /* 다른 탭에서 바꿨거나 뒤로 가기로 돌아온 화면: 쿠키를 다시 읽어 맞춘다 */
+  function neu(){ var v=lesen(); if(v!==cur){ cur=v; apply(v); paint(); } }
+  window.addEventListener('pageshow',neu);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) neu(); });
+  function mount(){
+    if(document.getElementById('soda-fz-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-fz-btn'; b.className='soda-fz-btn';
+    b.innerHTML='<span aria-hidden="true"><i>가</i>가</span>';
+    b.setAttribute('aria-label','글자 크기'); b.setAttribute('aria-haspopup','true'); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-controls','soda-fz-pop'); b.title='글자 크기';
+    var p=document.createElement('div'); p.id='soda-fz-pop'; p.className='soda-fz-pop'; p.hidden=true; p.setAttribute('role','group'); p.setAttribute('aria-label','글자 크기');
+    p.innerHTML='<p class="soda-fz-top"><span>글자 크기</span><b></b></p><div class="soda-fz-seg">'+OPT.map(function(o){ return '<button type="button" data-z="'+o[0]+'" aria-label="'+o[1]+'" title="'+o[1]+'">가</button>'; }).join('')+'</div>';
+    var name=p.querySelector('b'), bs=[].slice.call(p.querySelectorAll('button'));
+    paint=function(){
+      bs.forEach(function(x){ x.setAttribute('aria-pressed', x.getAttribute('data-z')===cur?'true':'false'); });
+      for(var i=0;i<OPT.length;i++) if(OPT[i][0]===cur) name.textContent=OPT[i][1];
+    };
+    function open(on){ p.hidden=!on; b.setAttribute('aria-expanded', on?'true':'false'); }
+    /* 크기를 바꾸면 글이 다시 흐르므로, 읽던 자리의 요소가 화면에서 같은 높이에 남게 한다 */
+    function anker(){
+      if((window.pageYOffset||0)<40) return null;
+      var W=window.innerWidth, H=window.innerHeight, xs=[W/2,W/4,W*3/4], ys=[110,150,200,260];
+      for(var j=0;j<ys.length;j++) for(var i=0;i<xs.length;i++){
+        var el=document.elementFromPoint(Math.round(xs[i]), ys[j]), f=el, fest=false;
+        if(!el||el===d||el===document.body||el.getBoundingClientRect().height>H) continue;      /* 화면보다 큰 상자(구역 전체)는 기준이 못 된다 */
+        while(f&&f!==document.body){ var ps=getComputedStyle(f).position; if(ps==='fixed'||ps==='sticky'){ fest=true; break; } f=f.parentElement; }
+        if(!fest) return el;
+      }
+      return null;
+    }
+    function set(v){
+      if(v===cur) return;
+      var a=null, t0=0; try{ a=anker(); if(a) t0=a.getBoundingClientRect().top; }catch(e){}
+      cur=v; apply(v); merken(v); paint();
+      try{ if(a){ var t1=a.getBoundingClientRect().top; if(Math.abs(t1-t0)>1) window.scrollBy(0,t1-t0); } }catch(e){}
+      try{ window.dispatchEvent(new CustomEvent('soda-fz',{detail:v})); }catch(e){}
+    }
+    b.addEventListener('click',function(){ open(p.hidden); });
+    p.addEventListener('click',function(e){ var t=e.target; while(t&&t!==p&&!(t.getAttribute&&t.getAttribute('data-z'))) t=t.parentNode; if(t&&t!==p) set(t.getAttribute('data-z')); });
+    document.addEventListener('click',function(e){ if(p.hidden) return; var t=e.target; if(t===b||b.contains(t)||p.contains(t)) return; open(false); });
+    document.addEventListener('keydown',function(e){ if((e.key==='Escape'||e.key==='Esc')&&!p.hidden){ open(false); try{ b.focus(); }catch(x){} } });
+    paint(); document.body.appendChild(b); document.body.appendChild(p);
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex">
 <title>Lektion 1 In der Stadt · 길 찾기와 교통 | SODA Basis A1.2</title>
@@ -48,7 +137,7 @@
 <link rel="icon" type="image/png" href="../../icons/icon-192.png">
 <link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
 <link rel="stylesheet" href="../../../assets/pretendard.css">
-<link rel="stylesheet" href="../../../erwachsene/lektion.css?v=1020dec3">
+<link rel="stylesheet" href="../../../erwachsene/lektion.css?v=47261b7b">
 <style id="soda-dark">
 .soda-theme-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));z-index:2147482000;width:38px;height:38px;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
 .soda-theme-btn svg{width:20px;height:20px}
@@ -96,6 +185,6 @@ html[data-theme="dark"]{--accent:#B9A4EC;--accent-ink:#CDBDF3;--fill:#B9A4EC}
 <footer class="fuss" id="fuss"><div class="wrap"><button type="button" class="btn hell" id="prev">이전</button><button type="button" class="btn" id="next">다음</button></div></footer>
 <div id="toast" role="status" aria-live="polite"></div>
 <script type="application/json" id="daten">{"id":"a1-2/1","w":[{"d":"der Bahnhof","k":"역","a":"n05","g":"der"},{"d":"der Hauptbahnhof","k":"중앙역","a":"n07","g":"der"},{"d":"die Haltestelle","k":"정류장","a":"n09","g":"die"},{"d":"die Station","k":"(지하철) 역, 정거장","a":"n11","g":"die"},{"d":"die Post","k":"우체국","a":"n13","g":"die"},{"d":"die Bank","k":"은행","a":"n15","g":"die"},{"d":"die Apotheke","k":"약국","a":"n17","g":"die"},{"d":"das Rathaus","k":"시청","a":"n19","g":"das"},{"d":"die Bibliothek","k":"도서관","a":"n21","g":"die"},{"d":"der Platz","k":"광장, 자리","a":"n23","g":"der"},{"d":"der Park","k":"공원","a":"n25","g":"der"},{"d":"die Ampel","k":"신호등","a":"n27","g":"die"},{"d":"die Ecke","k":"모퉁이","a":"n29","g":"die"},{"d":"der Eingang","k":"입구","a":"n31","g":"der"},{"d":"das Zentrum","k":"중심, 시내","a":"n33","g":"das"},{"d":"der Bus","k":"버스","a":"n35","g":"der"},{"d":"die U-Bahn","k":"지하철","a":"n37","g":"die"},{"d":"die S-Bahn","k":"도시 철도","a":"n39","g":"die"},{"d":"die Straßenbahn","k":"전차, 트램","a":"n41","g":"die"},{"d":"der Zug","k":"기차","a":"n43","g":"der"},{"d":"das Auto","k":"자동차","a":"n45","g":"das"},{"d":"das Fahrrad","k":"자전거","a":"n47","g":"das"},{"d":"zu Fuß","k":"걸어서","a":"n49","g":""},{"d":"die Fahrkarte","k":"차표","a":"n51","g":"die"},{"d":"der Automat","k":"자동판매기","a":"n53","g":"der"},{"d":"die Linie","k":"노선","a":"n55","g":"die"},{"d":"umsteigen","k":"갈아타다","a":"n57","g":""},{"d":"einsteigen","k":"타다","a":"n59","g":""},{"d":"aussteigen","k":"내리다","a":"n61","g":""},{"d":"ankommen","k":"도착하다","a":"n63","g":""},{"d":"abfahren","k":"떠나다, 출발하다","a":"n65","g":""},{"d":"der Weg","k":"길","a":"n67","g":"der"},{"d":"die Treppe","k":"계단","a":"n69","g":"die"},{"d":"suchen","k":"찾다","a":"n71","g":""},{"d":"zahlen","k":"(돈을) 내다","a":"n73","g":""},{"d":"geradeaus","k":"곧장","a":"n75","g":""},{"d":"links","k":"왼쪽에, 왼쪽으로","a":"n76","g":""},{"d":"rechts","k":"오른쪽에, 오른쪽으로","a":"n78","g":""},{"d":"weit","k":"먼","a":"n80","g":""},{"d":"in der Nähe","k":"근처에","a":"n82","g":""},{"d":"bis zu","k":"~까지","a":"n84","g":""},{"d":"zurück","k":"되돌아","a":"n86","g":""},{"d":"unten","k":"아래에","a":"n88","g":""},{"d":"wie lange","k":"얼마나 오래","a":"n90","g":""}],"dlg":{"A":[["Jiu","Jiu","ji01","Entschuldigung, ich suche die Universitätsbibliothek. Ist sie hier in der Nähe?","실례합니다, 대학 도서관을 찾고 있어요. 이 근처에 있나요?"],["Mann","Passant","ma01","Ja, das ist nicht weit. Gehen Sie hier geradeaus bis zur Ampel.","네, 멀지 않아요. 여기서 신호등까지 곧장 가세요."],["Jiu","Jiu","ji02","Bis zur Ampel. Und dann?","신호등까지요. 그다음에는요?"],["Mann","Passant","ma02","Gehen Sie an der Ampel links. Dann sehen Sie einen Platz.","신호등에서 왼쪽으로 가세요. 그러면 광장이 보여요."],["Jiu","Jiu","ji03","Ist die Bibliothek am Platz?","도서관이 광장에 있나요?"],["Mann","Passant","ma03","Ja, genau. Sie ist rechts, an der Ecke.","네, 맞아요. 오른쪽 모퉁이에 있어요."],["Jiu","Jiu","ji04","Wie lange brauche ich zu Fuß?","걸어서 얼마나 걸려요?"],["Mann","Passant","ma04","Zehn Minuten. Sie brauchen keinen Bus.","10분이요. 버스를 탈 필요는 없어요."],["Jiu","Jiu","ji05","Vielen Dank!","정말 감사합니다!"],["Mann","Passant","ma05","Bitte, gern!","천만에요!"]],"B":[["Sora","Sora","so01","Entschuldigung, wie komme ich zum Zoo?","실례합니다, 동물원에 어떻게 가나요?"],["Frau","Mitarbeiterin","fr01","Nehmen Sie die U4 bis Konstablerwache. Dort steigen Sie um.","U4를 타고 Konstablerwache까지 가세요. 거기서 갈아타세요."],["Sora","Sora","so02","Und dann?","그다음에는요?"],["Frau","Mitarbeiterin","fr02","Dann nehmen Sie die U6 oder die U7. Die Station heißt Zoo.","그다음에 U6이나 U7을 타세요. 역 이름은 Zoo예요."],["Sora","Sora","so03","Danke. Und wo kann ich Fahrkarten kaufen?","감사합니다. 표는 어디에서 살 수 있어요?"],["Frau","Mitarbeiterin","fr03","Hier am Automaten oder in der App. Eine Einzelfahrkarte kostet 3,80 Euro.","여기 자동판매기나 앱에서요. 한 번 타는 표는 3유로 80센트예요."],["Sora","Sora","so04","Ich fahre mit meiner Tochter. Sie ist acht.","딸과 같이 가요. 여덟 살이에요."],["Frau","Mitarbeiterin","fr04","Kinder zahlen 1,55 Euro.","어린이는 1유로 55센트를 내요."],["Sora","Sora","so05","Gut. Und wo fährt die U4 ab?","알겠어요. U4는 어디에서 떠나요?"],["Frau","Mitarbeiterin","fr05","Die U-Bahn fährt unten ab. Nehmen Sie hier die Treppe.","지하철은 아래층에서 떠나요. 여기 계단으로 내려가세요."],["Sora","Sora","so06","Vielen Dank!","정말 감사합니다!"]],"C":[["Mann","Herr Schneider","ma06","Guten Tag, Herr Park. Hier ist Peter Schneider. Ich komme morgen zu Kessler Technik. Wie komme ich zur Firma?","안녕하세요, Herr Park. Peter Schneider입니다. 내일 Kessler Technik에 갑니다. 회사까지 어떻게 가나요?"],["Dohyun","Dohyun","do01","Guten Tag, Herr Schneider! Kommen Sie mit dem Auto oder mit dem Zug?","안녕하세요, Herr Schneider! 차로 오세요, 기차로 오세요?"],["Mann","Herr Schneider","ma07","Mit dem Zug. Ich komme um neun Uhr am Hauptbahnhof an.","기차로요. 아홉 시에 중앙역에 도착해요."],["Dohyun","Dohyun","do02","Gut. Nehmen Sie am Hauptbahnhof die U4 bis Bockenheimer Warte. Das sind nur zwei Stationen.","좋아요. 중앙역에서 U4를 타고 Bockenheimer Warte까지 오세요. 두 정거장밖에 안 돼요."],["Mann","Herr Schneider","ma08","Bis Bockenheimer Warte. Und dann? Ist es weit?","Bockenheimer Warte까지요. 그다음에는요? 먼가요?"],["Dohyun","Dohyun","do03","Nein. Gehen Sie an der Station rechts und nehmen Sie dann die zweite Straße links. Das ist die Musterstraße.","아니요. 역에서 오른쪽으로 가다가 두 번째 길에서 왼쪽으로 가세요. 거기가 Musterstraße예요."],["Mann","Herr Schneider","ma09","Die zweite Straße links. Gut.","두 번째 길에서 왼쪽이요. 알겠습니다."],["Dohyun","Dohyun","do04","Die Firma ist in der Musterstraße 12, bei der Apotheke.","회사는 Musterstraße 12번지, 약국 근처에 있어요."],["Mann","Herr Schneider","ma10","Sehr gut. Wie lange brauche ich zu Fuß?","좋습니다. 걸어서 얼마나 걸리나요?"],["Dohyun","Dohyun","do05","Nur fünf Minuten. Rufen Sie bitte an, dann komme ich zum Eingang.","5분밖에 안 걸려요. 전화 주세요. 그러면 제가 입구로 나갈게요."],["Mann","Herr Schneider","ma11","Vielen Dank, Herr Park. Bis morgen!","감사합니다, Herr Park. 내일 뵙겠습니다!"]]},"rolle":{"dlg":"C","roles":["Dohyun","Mann"]}}</script>
-<script src="../../../erwachsene/lektion.js?v=1020dec3"></script>
+<script src="../../../erwachsene/lektion.js?v=47261b7b"></script>
 </body>
 </html>

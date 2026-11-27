@@ -25,6 +25,95 @@
   if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
 })();
 </script>
+<style id="soda-fz-css">
+/* 글자 크기: 오른쪽 위 「가」 버튼으로 네 단계를 고릅니다. 교재의 CSS는 본문 글자를 calc(Npx*var(--fz)), 큰 제목을 var(--fzh)로 적습니다 (저장소 tools/fz.py) */
+:root{--fz:1;--fzh:1}
+html[data-fz="s"]{--fz:.9;--fzh:.95}
+html[data-fz="l"]{--fz:1.15;--fzh:1.07}
+html[data-fz="xl"]{--fz:1.3;--fzh:1.14}
+html[data-fz="s"] input:not([type="checkbox"]):not([type="radio"]),html[data-fz="s"] textarea,html[data-fz="s"] select{font-size:16px}   /* 입력 칸이 16px보다 작으면 iOS가 입력할 때 화면을 확대합니다 */
+.soda-fz-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:calc(max(10px,env(safe-area-inset-right)) + 92px);z-index:2147482000;width:38px;height:38px;margin:0;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent;font:700 17px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:-.04em}
+.soda-fz-btn i{font-style:normal;font-size:11px;margin-right:1px}
+.soda-fz-btn[aria-expanded="true"]{background:#384568;color:#fff;border-color:#384568}
+html[data-theme="dark"] .soda-fz-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
+html[data-theme="dark"] .soda-fz-btn[aria-expanded="true"]{background:#AEB9DD;color:#14181E;border-color:#AEB9DD}
+.soda-fz-btn:focus-visible,.soda-fz-seg button:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
+.soda-fz-pop{position:fixed;top:calc(max(10px,env(safe-area-inset-top)) + 46px);right:max(10px,env(safe-area-inset-right));z-index:2147482000;margin:0;padding:10px 12px 12px;border-radius:16px;border:1px solid rgba(110,118,130,.35);background:#FAFAF8;color:#384568;box-shadow:0 12px 32px rgba(0,0,0,.18);font:600 12px/1.3 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;text-align:left}
+.soda-fz-pop[hidden]{display:none}
+.soda-fz-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 2px 8px;padding:0;color:#6B7385}
+.soda-fz-top b{font-weight:700;color:#384568}
+.soda-fz-seg{display:grid;grid-template-columns:repeat(4,46px);border:1px solid rgba(110,118,130,.4);border-radius:11px;overflow:hidden}
+.soda-fz-seg button{height:42px;min-height:0;margin:0;padding:0;border:0;border-left:1px solid rgba(110,118,130,.4);border-radius:0;background:transparent;color:#384568;font:700 15px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.soda-fz-seg button:first-child{border-left:0}
+.soda-fz-seg button[data-z="s"]{font-size:12px}
+.soda-fz-seg button[data-z="l"]{font-size:18px}
+.soda-fz-seg button[data-z="xl"]{font-size:21px}
+.soda-fz-seg button[aria-pressed="true"]{background:#384568;color:#fff}
+html[data-theme="dark"] .soda-fz-pop{background:#1B2028;color:#E3E6F0;border-color:#3A4350;box-shadow:0 14px 36px rgba(0,0,0,.6)}
+html[data-theme="dark"] .soda-fz-top{color:#A9B0BA}
+html[data-theme="dark"] .soda-fz-top b{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg,html[data-theme="dark"] .soda-fz-seg button{border-color:#3A4350}
+html[data-theme="dark"] .soda-fz-seg button{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg button[aria-pressed="true"]{background:#AEB9DD;color:#14181E}
+@media print{.soda-fz-btn,.soda-fz-pop{display:none!important}}
+</style>
+<script id="soda-fz-js">
+/* 글자 크기. 고른 단계는 이 기기의 쿠키 soda_fz (s, l, xl. 보통이면 지움)에 남고, 어린이·청소년·성인 교재가 함께 씁니다.
+   localStorage 에 두지 않는 까닭: 학습 포탈의 sync.js 가 localStorage 값을 로그인한 학생의 다른 기기로 옮기는데, 글자 크기는 기기마다 달라야 합니다. */
+(function(){
+  var CK='soda_fz', d=document.documentElement, OPT=[['s','작게'],['m','보통'],['l','크게'],['xl','아주 크게']], cur='m', paint=function(){};
+  function ok(v){ return v==='s'||v==='l'||v==='xl'; }
+  function lesen(){ try{ var m=document.cookie.match(/(?:^|;\s*)soda_fz=(s|l|xl)(?:;|$)/); return m?m[1]:'m'; }catch(e){ return 'm'; } }
+  function merken(v){ try{ var p=location.pathname.indexOf('/SODA-Lehrwerk/')===0?'/SODA-Lehrwerk/':'/'; document.cookie=CK+'='+(ok(v)?v:'')+'; path='+p+'; max-age='+(ok(v)?31536000:0)+'; SameSite=Lax'; }catch(e){} }
+  function apply(v){ if(ok(v)) d.setAttribute('data-fz',v); else d.removeAttribute('data-fz'); }
+  cur=lesen(); apply(cur);
+  if(ok(cur)) merken(cur);          /* 열 때마다 기한을 다시 1년으로 */
+  /* 다른 탭에서 바꿨거나 뒤로 가기로 돌아온 화면: 쿠키를 다시 읽어 맞춘다 */
+  function neu(){ var v=lesen(); if(v!==cur){ cur=v; apply(v); paint(); } }
+  window.addEventListener('pageshow',neu);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) neu(); });
+  function mount(){
+    if(document.getElementById('soda-fz-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-fz-btn'; b.className='soda-fz-btn';
+    b.innerHTML='<span aria-hidden="true"><i>가</i>가</span>';
+    b.setAttribute('aria-label','글자 크기'); b.setAttribute('aria-haspopup','true'); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-controls','soda-fz-pop'); b.title='글자 크기';
+    var p=document.createElement('div'); p.id='soda-fz-pop'; p.className='soda-fz-pop'; p.hidden=true; p.setAttribute('role','group'); p.setAttribute('aria-label','글자 크기');
+    p.innerHTML='<p class="soda-fz-top"><span>글자 크기</span><b></b></p><div class="soda-fz-seg">'+OPT.map(function(o){ return '<button type="button" data-z="'+o[0]+'" aria-label="'+o[1]+'" title="'+o[1]+'">가</button>'; }).join('')+'</div>';
+    var name=p.querySelector('b'), bs=[].slice.call(p.querySelectorAll('button'));
+    paint=function(){
+      bs.forEach(function(x){ x.setAttribute('aria-pressed', x.getAttribute('data-z')===cur?'true':'false'); });
+      for(var i=0;i<OPT.length;i++) if(OPT[i][0]===cur) name.textContent=OPT[i][1];
+    };
+    function open(on){ p.hidden=!on; b.setAttribute('aria-expanded', on?'true':'false'); }
+    /* 크기를 바꾸면 글이 다시 흐르므로, 읽던 자리의 요소가 화면에서 같은 높이에 남게 한다 */
+    function anker(){
+      if((window.pageYOffset||0)<40) return null;
+      var W=window.innerWidth, H=window.innerHeight, xs=[W/2,W/4,W*3/4], ys=[110,150,200,260];
+      for(var j=0;j<ys.length;j++) for(var i=0;i<xs.length;i++){
+        var el=document.elementFromPoint(Math.round(xs[i]), ys[j]), f=el, fest=false;
+        if(!el||el===d||el===document.body||el.getBoundingClientRect().height>H) continue;      /* 화면보다 큰 상자(구역 전체)는 기준이 못 된다 */
+        while(f&&f!==document.body){ var ps=getComputedStyle(f).position; if(ps==='fixed'||ps==='sticky'){ fest=true; break; } f=f.parentElement; }
+        if(!fest) return el;
+      }
+      return null;
+    }
+    function set(v){
+      if(v===cur) return;
+      var a=null, t0=0; try{ a=anker(); if(a) t0=a.getBoundingClientRect().top; }catch(e){}
+      cur=v; apply(v); merken(v); paint();
+      try{ if(a){ var t1=a.getBoundingClientRect().top; if(Math.abs(t1-t0)>1) window.scrollBy(0,t1-t0); } }catch(e){}
+      try{ window.dispatchEvent(new CustomEvent('soda-fz',{detail:v})); }catch(e){}
+    }
+    b.addEventListener('click',function(){ open(p.hidden); });
+    p.addEventListener('click',function(e){ var t=e.target; while(t&&t!==p&&!(t.getAttribute&&t.getAttribute('data-z'))) t=t.parentNode; if(t&&t!==p) set(t.getAttribute('data-z')); });
+    document.addEventListener('click',function(e){ if(p.hidden) return; var t=e.target; if(t===b||b.contains(t)||p.contains(t)) return; open(false); });
+    document.addEventListener('keydown',function(e){ if((e.key==='Escape'||e.key==='Esc')&&!p.hidden){ open(false); try{ b.focus(); }catch(x){} } });
+    paint(); document.body.appendChild(b); document.body.appendChild(p);
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Lektion 5 Gestern und heute · 역사와 사회 | SODA Jugendliche B1.2</title>
 <meta name="description" content="청소년 독일어 B1.2 5과 Gestern und heute(역사와 사회). 분단과 통일 이해하기, 사회의 변화 보고하기, 이주와 다양성에 대해 말하기. 독일어 음성으로 듣는 대화, 단어, 문법(Passiv Perfekt und Präteritum 정리, damals, seitdem, im Jahr 1989, als, nachdem 복습), 연습 문제, 말하기와 쓰기 과제. 소피아 독일어학원.">
@@ -47,7 +136,7 @@
 <link rel="icon" type="image/png" href="../../icons/icon-192.png">
 <link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
 <link rel="stylesheet" href="../../../assets/pretendard.css">
-<link rel="stylesheet" href="../../lektion.css?v=b6cb803b">
+<link rel="stylesheet" href="../../lektion.css?v=1b1ef1f7">
 <style id="soda-dark">
 .soda-theme-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));z-index:2147482000;width:38px;height:38px;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
 .soda-theme-btn svg{width:20px;height:20px}
@@ -91,6 +180,6 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
 <footer class="fuss" id="fuss"><div class="wrap"><button type="button" class="btn hell" id="prev">이전</button><button type="button" class="btn" id="next">다음</button></div></footer>
 <div id="toast" role="status" aria-live="polite"></div>
 <script type="application/json" id="daten">{"id":"b1-2/5","w":[{"d":"die Mauer","k":"장벽, 담","a":"n05","g":"die"},{"d":"der Krieg","k":"전쟁","a":"n07","g":"der"},{"d":"der Frieden","k":"평화","a":"n09","g":"der"},{"d":"die Teilung","k":"분단, 나뉨","a":"n11","g":"die"},{"d":"die Einheit","k":"통일, 하나 됨","a":"n13","g":"die"},{"d":"die Wiedervereinigung","k":"다시 하나가 됨, 재통일","a":"n15","g":"die"},{"d":"der Staat","k":"국가","a":"n17","g":"der"},{"d":"die Regierung","k":"정부","a":"n19","g":"die"},{"d":"die Freiheit","k":"자유","a":"n21","g":"die"},{"d":"fliehen, ist geflohen","k":"달아나다, 탈출하다","a":"n23","g":""},{"d":"der Bürger","k":"시민","a":"n25","g":"der"},{"d":"die Vergangenheit","k":"과거","a":"n27","g":"die"},{"d":"die Gegenwart","k":"현재","a":"n29","g":"die"},{"d":"das Ereignis","k":"사건, 일어난 일","a":"n31","g":"das"},{"d":"der Zeitzeuge","k":"그 시대를 겪은 증인","a":"n33","g":"der"},{"d":"die Erinnerung","k":"기억, 추억","a":"n35","g":"die"},{"d":"das Jahrzehnt","k":"10년","a":"n37","g":"das"},{"d":"das Denkmal","k":"기념물","a":"n39","g":"das"},{"d":"friedlich","k":"평화로운","a":"n41","g":""},{"d":"öffnen, hat geöffnet","k":"열다","a":"n43","g":""},{"d":"fallen, ist gefallen","k":"떨어지다, 무너지다","a":"n45","g":""},{"d":"gründen, hat gegründet","k":"세우다, 창립하다","a":"n47","g":""},{"d":"die Gesellschaft","k":"사회","a":"n49","g":"die"},{"d":"die Migration","k":"이주","a":"n51","g":"die"},{"d":"einwandern, ist eingewandert","k":"이민 오다","a":"n53","g":""},{"d":"auswandern, ist ausgewandert","k":"이민 가다","a":"n55","g":""},{"d":"der Gastarbeiter","k":"다른 나라에서 일하러 온 노동자","a":"n57","g":"der"},{"d":"die Herkunft","k":"출신","a":"n59","g":"die"},{"d":"die Heimat","k":"고향","a":"n61","g":"die"},{"d":"die Vielfalt","k":"다양성","a":"n63","g":"die"},{"d":"das Vorurteil","k":"편견","a":"n65","g":"das"},{"d":"der Respekt","k":"존중","a":"n67","g":"der"},{"d":"die Fabrik","k":"공장","a":"n69","g":"die"}],"dlg":{"A":[["Elif","Elif","el01","Herr Krause, Sie haben die Teilung Deutschlands erlebt. Wie war das damals?","Krause 선생님은 독일이 나뉘어 있던 때를 겪으셨어요. 그때는 어땠나요?"],["Mann","Herr Krause","ma01","1961 wurde in Berlin die Mauer gebaut. Ich war achtzehn Jahre alt. Plötzlich konnte niemand mehr über die Grenze.","1961년에 베를린에 장벽이 세워졌어요. 나는 열여덟 살이었지요. 갑자기 아무도 국경을 넘을 수 없게 됐어요."],["Yuna","Yuna","yu01","Waren Sie damals in Berlin?","그때 베를린에 계셨어요?"],["Mann","Herr Krause","ma02","Nein, ich lebte in Köln, im Westen. Aber meine Schwester wohnte in Leipzig, im Osten. Wir durften uns nur selten sehen.","아니요, 나는 서쪽인 쾰른에 살았어요. 하지만 여동생은 동쪽인 라이프치히에 살았지요. 우리는 아주 가끔만 만날 수 있었어요."],["Lukas","Lukas","lu01","Wie lange war Deutschland geteilt?","독일은 얼마나 오래 나뉘어 있었어요?"],["Mann","Herr Krause","ma03","Mehr als vierzig Jahre. Es gab zwei deutsche Staaten. Die Mauer stand achtundzwanzig Jahre.","40년이 넘었지요. 독일이라는 나라가 둘 있었어요. 장벽은 28년 동안 서 있었고요."],["Elif","Elif","el02","Und wie ist die Mauer gefallen?","장벽은 어떻게 무너졌나요?"],["Mann","Herr Krause","ma04","Im Herbst 1989 demonstrierten in Leipzig viele tausend Menschen friedlich für Freiheit. Am neunten November wurde die Grenze geöffnet.","1989년 가을에 라이프치히에서 수많은 사람이 자유를 바라며 평화롭게 시위했어요. 11월 9일에 국경이 열렸지요."],["Yuna","Yuna","yu02","Wo waren Sie an diesem Abend?","그날 저녁에 어디 계셨어요?"],["Mann","Herr Krause","ma05","Vor dem Fernseher. Als ich die Bilder aus Berlin sah, habe ich geweint. Drei Tage später stand meine Schwester vor meiner Tür.","텔레비전 앞에 있었어요. 베를린에서 온 화면을 보고 울었지요. 사흘 뒤에 여동생이 우리 집 문 앞에 서 있었어요."],["Lukas","Lukas","lu02","Und seitdem ist Deutschland wieder ein Land?","그때부터 독일이 다시 한 나라인 거예요?"],["Mann","Herr Krause","ma06","Seit dem dritten Oktober 1990. Die Wiedervereinigung ist an diesem Tag gefeiert worden. Er ist bis heute ein Feiertag.","1990년 10월 3일부터지요. 그날 통일을 축하했어요. 그날은 지금도 공휴일이에요."],["Yuna","Yuna","yu03","Korea ist seit mehr als siebzig Jahren geteilt. Ihre Geschichte gibt mir Hoffnung.","한국은 70년 넘게 나뉘어 있어요. 선생님 이야기를 들으니 희망이 생겨요."]],"B":[["Elif","Elif","el03","Oma, wann bist du nach Deutschland gekommen?","할머니, 독일에는 언제 오셨어요?"],["Frau","Elifs Oma","fr01","Im Jahr 1971. Dein Opa war schon zwei Jahre früher als Gastarbeiter eingewandert. Er arbeitete in einer Autofabrik.","1971년에 왔지. 네 할아버지는 그보다 두 해 먼저 일하러 와 계셨어. 자동차 공장에서 일하셨단다."],["Emma","Emma","em01","Warum sind damals so viele Menschen gekommen?","그때는 왜 그렇게 많은 사람이 왔어요?"],["Frau","Elifs Oma","fr02","Deutschland brauchte Arbeiter. Deshalb wurden Menschen aus der Türkei, aus Italien und aus anderen Ländern eingeladen.","독일에 일할 사람이 필요했거든. 그래서 터키, 이탈리아, 그 밖의 나라 사람들을 불러들였지."],["Yuna","Yuna","yu04","Auch aus Korea sind damals Menschen gekommen. Sie haben als Bergarbeiter und Krankenschwestern gearbeitet.","그때 한국에서도 사람들이 왔어요. 광부와 간호사로 일했어요."],["Elif","Elif","el04","War der Anfang schwer, Oma?","처음에는 힘드셨어요, 할머니?"],["Frau","Elifs Oma","fr03","Sehr. Ich konnte kein Deutsch, und ich hatte Heimweh. Als dein Vater in die Schule kam, habe ich mit ihm zusammen Deutsch gelernt.","아주 힘들었지. 독일어를 못했고 고향이 그리웠어. 네 아버지가 학교에 들어갔을 때 나도 같이 독일어를 배웠단다."],["Emma","Emma","em02","Und heute? Wo ist Ihre Heimat?","지금은요? 고향은 어디세요?"],["Frau","Elifs Oma","fr04","Hier und dort. Köln ist meine Heimat geworden. Aber im Sommer fahre ich immer in mein Dorf in der Türkei.","여기도 거기도 고향이지. 쾰른이 내 고향이 됐어. 그래도 여름이면 늘 터키에 있는 우리 마을에 간단다."],["Yuna","Yuna","yu05","Hat sich die Gesellschaft seitdem verändert?","그때부터 사회가 달라졌나요?"],["Frau","Elifs Oma","fr05","Oh ja. Damals gab es viele Vorurteile. Heute ist die Vielfalt normal. In deiner Klasse sitzen Kinder aus zehn Ländern, Elif.","그럼. 그때는 편견이 많았어. 지금은 여러 나라 사람이 섞여 사는 게 당연하지. Elif, 네 반에는 열 나라에서 온 아이들이 앉아 있잖니."],["Elif","Elif","el05","Aus elf, Oma. Yuna kommt aus Korea.","열한 나라예요, 할머니. Yuna는 한국에서 왔어요."],["Frau","Elifs Oma","fr06","Dann aus elf. Und alle sprechen besser Deutsch als ich!","그럼 열한 나라구나. 그리고 다들 나보다 독일어를 잘하지!"]]},"pw":[{"d":"der Künstler","k":"예술가","a":"","g":"der"},{"d":"die Bühne","k":"무대","a":"","g":"die"},{"d":"das Theater","k":"극장, 연극","a":"","g":"das"},{"d":"das Theaterstück","k":"연극 작품","a":"","g":"das"},{"d":"die Rolle","k":"역할","a":"","g":"die"},{"d":"die Aufführung","k":"공연","a":"","g":"die"},{"d":"das Publikum","k":"관객","a":"","g":"das"},{"d":"klatschen, hat geklatscht","k":"손뼉 치다","a":"","g":""},{"d":"der Eintritt","k":"입장, 입장료","a":"","g":"der"},{"d":"die Ausstellung","k":"전시회","a":"","g":"die"},{"d":"das Gemälde","k":"그림, 회화","a":"","g":"das"},{"d":"der Komponist","k":"작곡가","a":"","g":"der"},{"d":"komponieren, hat komponiert","k":"작곡하다","a":"","g":""},{"d":"das Orchester","k":"오케스트라","a":"","g":"das"},{"d":"das Instrument","k":"악기","a":"","g":"das"},{"d":"die Geige","k":"바이올린","a":"","g":"die"},{"d":"das Werk","k":"작품","a":"","g":"das"},{"d":"berühmt","k":"유명한","a":"","g":""},{"d":"das Talent","k":"재능","a":"","g":"das"},{"d":"taub","k":"귀가 들리지 않는","a":"","g":""},{"d":"die Biografie","k":"전기, 일대기","a":"","g":"die"},{"d":"sterben, ist gestorben","k":"죽다, 세상을 떠나다","a":"","g":""},{"d":"auftreten, ist aufgetreten","k":"무대에 서다, 공연하다","a":"","g":""},{"d":"der Auftritt","k":"무대에 서는 일, 공연","a":"","g":"der"},{"d":"proben, hat geprobt","k":"(공연을) 연습하다","a":"","g":""},{"d":"das Lampenfieber","k":"무대에 서기 전의 떨림","a":"","g":"das"},{"d":"der Witz","k":"우스갯소리","a":"","g":"der"},{"d":"beeindrucken, hat beeindruckt","k":"깊은 인상을 주다","a":"","g":""},{"d":"die Kritik","k":"평, 비평","a":"","g":"die"},{"d":"gewinnen, hat gewonnen","k":"이기다, (상을) 받다","a":"","g":""},{"d":"das Jahrhundert","k":"세기, 백 년","a":"","g":"das"},{"d":"der Erwachsene","k":"어른","a":"","g":"der"},{"d":"der Deutsche","k":"독일 사람","a":"","g":"der"},{"d":"der Bekannte","k":"아는 사람","a":"","g":"der"}],"rolle":{"dlg":"A","roles":["Elif","Mann"]}}</script>
-<script src="../../lektion.js?v=b6cb803b"></script>
+<script src="../../lektion.js?v=1b1ef1f7"></script>
 </body>
 </html>

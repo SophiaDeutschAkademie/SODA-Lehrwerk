@@ -25,6 +25,95 @@
   if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
 })();
 </script>
+<style id="soda-fz-css">
+/* 글자 크기: 오른쪽 위 「가」 버튼으로 네 단계를 고릅니다. 교재의 CSS는 본문 글자를 calc(Npx*var(--fz)), 큰 제목을 var(--fzh)로 적습니다 (저장소 tools/fz.py) */
+:root{--fz:1;--fzh:1}
+html[data-fz="s"]{--fz:.9;--fzh:.95}
+html[data-fz="l"]{--fz:1.15;--fzh:1.07}
+html[data-fz="xl"]{--fz:1.3;--fzh:1.14}
+html[data-fz="s"] input:not([type="checkbox"]):not([type="radio"]),html[data-fz="s"] textarea,html[data-fz="s"] select{font-size:16px}   /* 입력 칸이 16px보다 작으면 iOS가 입력할 때 화면을 확대합니다 */
+.soda-fz-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:calc(max(10px,env(safe-area-inset-right)) + 92px);z-index:2147482000;width:38px;height:38px;margin:0;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent;font:700 17px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:-.04em}
+.soda-fz-btn i{font-style:normal;font-size:11px;margin-right:1px}
+.soda-fz-btn[aria-expanded="true"]{background:#384568;color:#fff;border-color:#384568}
+html[data-theme="dark"] .soda-fz-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
+html[data-theme="dark"] .soda-fz-btn[aria-expanded="true"]{background:#AEB9DD;color:#14181E;border-color:#AEB9DD}
+.soda-fz-btn:focus-visible,.soda-fz-seg button:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
+.soda-fz-pop{position:fixed;top:calc(max(10px,env(safe-area-inset-top)) + 46px);right:max(10px,env(safe-area-inset-right));z-index:2147482000;margin:0;padding:10px 12px 12px;border-radius:16px;border:1px solid rgba(110,118,130,.35);background:#FAFAF8;color:#384568;box-shadow:0 12px 32px rgba(0,0,0,.18);font:600 12px/1.3 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;text-align:left}
+.soda-fz-pop[hidden]{display:none}
+.soda-fz-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 2px 8px;padding:0;color:#6B7385}
+.soda-fz-top b{font-weight:700;color:#384568}
+.soda-fz-seg{display:grid;grid-template-columns:repeat(4,46px);border:1px solid rgba(110,118,130,.4);border-radius:11px;overflow:hidden}
+.soda-fz-seg button{height:42px;min-height:0;margin:0;padding:0;border:0;border-left:1px solid rgba(110,118,130,.4);border-radius:0;background:transparent;color:#384568;font:700 15px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.soda-fz-seg button:first-child{border-left:0}
+.soda-fz-seg button[data-z="s"]{font-size:12px}
+.soda-fz-seg button[data-z="l"]{font-size:18px}
+.soda-fz-seg button[data-z="xl"]{font-size:21px}
+.soda-fz-seg button[aria-pressed="true"]{background:#384568;color:#fff}
+html[data-theme="dark"] .soda-fz-pop{background:#1B2028;color:#E3E6F0;border-color:#3A4350;box-shadow:0 14px 36px rgba(0,0,0,.6)}
+html[data-theme="dark"] .soda-fz-top{color:#A9B0BA}
+html[data-theme="dark"] .soda-fz-top b{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg,html[data-theme="dark"] .soda-fz-seg button{border-color:#3A4350}
+html[data-theme="dark"] .soda-fz-seg button{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg button[aria-pressed="true"]{background:#AEB9DD;color:#14181E}
+@media print{.soda-fz-btn,.soda-fz-pop{display:none!important}}
+</style>
+<script id="soda-fz-js">
+/* 글자 크기. 고른 단계는 이 기기의 쿠키 soda_fz (s, l, xl. 보통이면 지움)에 남고, 어린이·청소년·성인 교재가 함께 씁니다.
+   localStorage 에 두지 않는 까닭: 학습 포탈의 sync.js 가 localStorage 값을 로그인한 학생의 다른 기기로 옮기는데, 글자 크기는 기기마다 달라야 합니다. */
+(function(){
+  var CK='soda_fz', d=document.documentElement, OPT=[['s','작게'],['m','보통'],['l','크게'],['xl','아주 크게']], cur='m', paint=function(){};
+  function ok(v){ return v==='s'||v==='l'||v==='xl'; }
+  function lesen(){ try{ var m=document.cookie.match(/(?:^|;\s*)soda_fz=(s|l|xl)(?:;|$)/); return m?m[1]:'m'; }catch(e){ return 'm'; } }
+  function merken(v){ try{ var p=location.pathname.indexOf('/SODA-Lehrwerk/')===0?'/SODA-Lehrwerk/':'/'; document.cookie=CK+'='+(ok(v)?v:'')+'; path='+p+'; max-age='+(ok(v)?31536000:0)+'; SameSite=Lax'; }catch(e){} }
+  function apply(v){ if(ok(v)) d.setAttribute('data-fz',v); else d.removeAttribute('data-fz'); }
+  cur=lesen(); apply(cur);
+  if(ok(cur)) merken(cur);          /* 열 때마다 기한을 다시 1년으로 */
+  /* 다른 탭에서 바꿨거나 뒤로 가기로 돌아온 화면: 쿠키를 다시 읽어 맞춘다 */
+  function neu(){ var v=lesen(); if(v!==cur){ cur=v; apply(v); paint(); } }
+  window.addEventListener('pageshow',neu);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) neu(); });
+  function mount(){
+    if(document.getElementById('soda-fz-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-fz-btn'; b.className='soda-fz-btn';
+    b.innerHTML='<span aria-hidden="true"><i>가</i>가</span>';
+    b.setAttribute('aria-label','글자 크기'); b.setAttribute('aria-haspopup','true'); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-controls','soda-fz-pop'); b.title='글자 크기';
+    var p=document.createElement('div'); p.id='soda-fz-pop'; p.className='soda-fz-pop'; p.hidden=true; p.setAttribute('role','group'); p.setAttribute('aria-label','글자 크기');
+    p.innerHTML='<p class="soda-fz-top"><span>글자 크기</span><b></b></p><div class="soda-fz-seg">'+OPT.map(function(o){ return '<button type="button" data-z="'+o[0]+'" aria-label="'+o[1]+'" title="'+o[1]+'">가</button>'; }).join('')+'</div>';
+    var name=p.querySelector('b'), bs=[].slice.call(p.querySelectorAll('button'));
+    paint=function(){
+      bs.forEach(function(x){ x.setAttribute('aria-pressed', x.getAttribute('data-z')===cur?'true':'false'); });
+      for(var i=0;i<OPT.length;i++) if(OPT[i][0]===cur) name.textContent=OPT[i][1];
+    };
+    function open(on){ p.hidden=!on; b.setAttribute('aria-expanded', on?'true':'false'); }
+    /* 크기를 바꾸면 글이 다시 흐르므로, 읽던 자리의 요소가 화면에서 같은 높이에 남게 한다 */
+    function anker(){
+      if((window.pageYOffset||0)<40) return null;
+      var W=window.innerWidth, H=window.innerHeight, xs=[W/2,W/4,W*3/4], ys=[110,150,200,260];
+      for(var j=0;j<ys.length;j++) for(var i=0;i<xs.length;i++){
+        var el=document.elementFromPoint(Math.round(xs[i]), ys[j]), f=el, fest=false;
+        if(!el||el===d||el===document.body||el.getBoundingClientRect().height>H) continue;      /* 화면보다 큰 상자(구역 전체)는 기준이 못 된다 */
+        while(f&&f!==document.body){ var ps=getComputedStyle(f).position; if(ps==='fixed'||ps==='sticky'){ fest=true; break; } f=f.parentElement; }
+        if(!fest) return el;
+      }
+      return null;
+    }
+    function set(v){
+      if(v===cur) return;
+      var a=null, t0=0; try{ a=anker(); if(a) t0=a.getBoundingClientRect().top; }catch(e){}
+      cur=v; apply(v); merken(v); paint();
+      try{ if(a){ var t1=a.getBoundingClientRect().top; if(Math.abs(t1-t0)>1) window.scrollBy(0,t1-t0); } }catch(e){}
+      try{ window.dispatchEvent(new CustomEvent('soda-fz',{detail:v})); }catch(e){}
+    }
+    b.addEventListener('click',function(){ open(p.hidden); });
+    p.addEventListener('click',function(e){ var t=e.target; while(t&&t!==p&&!(t.getAttribute&&t.getAttribute('data-z'))) t=t.parentNode; if(t&&t!==p) set(t.getAttribute('data-z')); });
+    document.addEventListener('click',function(e){ if(p.hidden) return; var t=e.target; if(t===b||b.contains(t)||p.contains(t)) return; open(false); });
+    document.addEventListener('keydown',function(e){ if((e.key==='Escape'||e.key==='Esc')&&!p.hidden){ open(false); try{ b.focus(); }catch(x){} } });
+    paint(); document.body.appendChild(b); document.body.appendChild(p);
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Lektion 7 Stars, Serien, Songs · 음악과 영화 | SODA Jugendliche A2.2</title>
 <meta name="description" content="청소년 독일어 A2.2 7과 Stars, Serien, Songs(음악과 영화). 영화와 책 소개하기, 줄거리 말하기, 추천하기. 독일어 음성으로 듣는 대화, 단어, 문법(Relativsätze im Akkusativ (der Film, den …), Präteritum (kam, ging, sagte)), 연습 문제, 말하기와 쓰기 과제. 소피아 독일어학원.">
@@ -47,7 +136,7 @@
 <link rel="icon" type="image/png" href="../../icons/icon-192.png">
 <link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
 <link rel="stylesheet" href="../../../assets/pretendard.css">
-<link rel="stylesheet" href="../../lektion.css?v=b6cb803b">
+<link rel="stylesheet" href="../../lektion.css?v=1b1ef1f7">
 <style id="soda-dark">
 .soda-theme-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));z-index:2147482000;width:38px;height:38px;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
 .soda-theme-btn svg{width:20px;height:20px}
@@ -91,6 +180,6 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
 <footer class="fuss" id="fuss"><div class="wrap"><button type="button" class="btn hell" id="prev">이전</button><button type="button" class="btn" id="next">다음</button></div></footer>
 <div id="toast" role="status" aria-live="polite"></div>
 <script type="application/json" id="daten">{"id":"a2-2/7","w":[{"d":"die Serie","k":"드라마, 시리즈","a":"n05","g":"die"},{"d":"die Schauspielerin","k":"(여자) 배우","a":"n07","g":"die"},{"d":"der Horrorfilm","k":"공포 영화","a":"n09","g":"der"},{"d":"der Liebesfilm","k":"로맨스 영화","a":"n11","g":"der"},{"d":"die Komödie","k":"코미디","a":"n13","g":"die"},{"d":"der Untertitel","k":"자막","a":"n15","g":"der"},{"d":"der Titel","k":"제목","a":"n17","g":"der"},{"d":"das Ende","k":"끝, 결말","a":"n19","g":"das"},{"d":"die Geschichte","k":"이야기","a":"n21","g":"die"},{"d":"gruselig","k":"으스스한, 무서운","a":"n23","g":""},{"d":"witzig","k":"웃긴, 재치 있는","a":"n25","g":""},{"d":"der Song","k":"노래, 곡","a":"n27","g":"der"},{"d":"das Lied","k":"노래","a":"n29","g":"das"},{"d":"die Band","k":"밴드","a":"n31","g":"die"},{"d":"die Sängerin","k":"(여자) 가수","a":"n33","g":"die"},{"d":"das Konzert","k":"콘서트","a":"n35","g":"das"},{"d":"der Star","k":"스타","a":"n37","g":"der"},{"d":"der Fan","k":"팬","a":"n39","g":"der"},{"d":"die Stimme","k":"목소리","a":"n41","g":"die"},{"d":"empfehlen","k":"추천하다","a":"n43","g":""},{"d":"Es geht um …","k":"~에 대한 이야기예요","a":"n45","g":""},{"d":"kennenlernen, hat kennengelernt","k":"알게 되다, 처음 만나다","a":"n47","g":""},{"d":"passieren, ist passiert","k":"(일이) 일어나다","a":"n49","g":""},{"d":"plötzlich","k":"갑자기","a":"n51","g":""},{"d":"bestimmt","k":"틀림없이, 분명히","a":"n53","g":""},{"d":"die Treppe","k":"계단","a":"n55","g":"die"},{"d":"hinfallen, ist hingefallen","k":"넘어지다","a":"n57","g":""}],"dlg":{"A":[["Emma","Emma","em01","Heute ist Filmabend! Welchen Film sehen wir?","오늘은 영화 보는 저녁이야! 어떤 영화 볼까?"],["Lukas","Lukas","lu01","Wie wäre es mit „Das dunkle Haus“? Das ist der Film, den ich letzte Woche im Kino gesehen habe.","„Das dunkle Haus“ 어때? 내가 지난주에 영화관에서 본 영화야."],["Elif","Elif","el01","Ein Horrorfilm? Nein, danke. Ich mag keine Filme, die mir Angst machen.","공포 영화? 싫어. 나는 무서운 영화는 안 좋아해."],["Yuna","Yuna","yu01","Ich möchte den Film sehen, den Frau Schneider empfohlen hat. Er heißt „Sommer am See“.","나는 Schneider 선생님이 추천하신 영화를 보고 싶어. 제목은 „Sommer am See“야."],["Emma","Emma","em02","Worum geht es in dem Film?","그 영화는 무슨 내용이야?"],["Yuna","Yuna","yu02","Es geht um ein Mädchen, das in den Ferien einen Jungen kennenlernt.","방학에 한 남자아이를 알게 되는 여자아이 이야기야."],["Lukas","Lukas","lu02","Ein Liebesfilm? Oh nein. Die Schauspielerin, die du so magst, spielt bestimmt mit.","로맨스 영화? 아, 싫다. 네가 그렇게 좋아하는 그 배우가 틀림없이 나오겠네."],["Yuna","Yuna","yu03","Stimmt! Und die Musik ist von der Band, die wir in Berlin gehört haben.","맞아! 그리고 음악은 우리가 베를린에서 들은 그 밴드가 맡았어."],["Elif","Elif","el02","Dann bin ich dafür. Lukas, den Horrorfilm kannst du allein sehen.","그럼 난 찬성. Lukas, 공포 영화는 너 혼자 봐."],["Lukas","Lukas","lu03","Na gut. Aber das Popcorn, das ich mitgebracht habe, esse ich allein!","알았어. 그런데 내가 가져온 팝콘은 나 혼자 먹을 거야!"]],"B":[["Yuna","Yuna","yu04","Thomas, was sind die Heinzelmännchen? Ich habe in der Stadt einen Brunnen mit kleinen Männern gesehen.","Thomas, Heinzelmännchen이 뭐예요? 시내에서 작은 남자들이 새겨진 분수를 봤어요."],["Thomas","Thomas","th01","Das ist eine alte Geschichte aus Köln. Früher kamen in der Nacht kleine Männer in die Häuser.","그건 쾰른의 옛이야기야. 옛날에는 밤이 되면 작은 남자들이 집집마다 찾아왔어."],["Thomas","Thomas","th02","Sie machten die ganze Arbeit. Die Leute schliefen und am Morgen war alles fertig.","그들이 일을 다 해 줬어. 사람들은 잠을 잤고, 아침이면 일이 다 끝나 있었지."],["Emma","Emma","em03","Das wäre toll! Dann hätte ich nie Hausaufgaben.","그러면 정말 좋겠다! 그럼 나는 숙제가 하나도 없을 텐데."],["Thomas","Thomas","th03","Aber eine Frau sagte: „Ich will die Männer sehen!“ Sie legte Erbsen auf die Treppe.","그런데 한 여자가 „그 남자들을 보고 싶어!“ 하고 말했어. 그래서 계단에 완두콩을 뿌려 놓았지."],["Yuna","Yuna","yu05","Und dann? Was passierte?","그래서요? 어떻게 됐어요?"],["Thomas","Thomas","th04","Die kleinen Männer kamen, fielen hin und wurden sehr wütend.","작은 남자들이 왔다가 넘어져서 몹시 화가 났어."],["Thomas","Thomas","th05","Sie gingen weg und kamen nie wieder.","그들은 떠났고 다시는 오지 않았어."],["Emma","Emma","em04","Schade! Deshalb müssen wir heute alles selbst machen.","아깝다! 그래서 요즘은 우리가 뭐든 직접 해야 하는구나."],["Thomas","Thomas","th06","Genau. Und jetzt räumt bitte das Wohnzimmer auf. Die Heinzelmännchen kommen nicht!","그렇지. 자, 이제 거실 좀 치우렴. Heinzelmännchen은 안 온단다!"]]},"pw":[{"d":"das Gefühl","k":"감정, 느낌","a":"","g":"das"},{"d":"sich fühlen, hat sich gefühlt","k":"(기분이) ~하다, 느끼다","a":"","g":""},{"d":"sauer","k":"화난","a":"","g":""},{"d":"wütend","k":"몹시 화난","a":"","g":""},{"d":"traurig","k":"슬픈","a":"","g":""},{"d":"froh","k":"기쁜, 마음이 놓인","a":"","g":""},{"d":"enttäuscht","k":"실망한","a":"","g":""},{"d":"nervös","k":"초조한, 떨리는","a":"","g":""},{"d":"Angst haben","k":"무서워하다, 걱정하다","a":"","g":""},{"d":"weinen, hat geweint","k":"울다","a":"","g":""},{"d":"lachen, hat gelacht","k":"웃다","a":"","g":""},{"d":"der Streit","k":"다툼, 싸움","a":"","g":"der"},{"d":"sich streiten, hat sich gestritten","k":"다투다","a":"","g":""},{"d":"sich ärgern, hat sich geärgert","k":"화나다, 짜증 나다","a":"","g":""},{"d":"sich entschuldigen, hat sich entschuldigt","k":"사과하다","a":"","g":""},{"d":"sich vertragen","k":"화해하다, 사이좋게 지내다","a":"","g":""},{"d":"das Geheimnis","k":"비밀","a":"","g":"das"},{"d":"schuld sein","k":"잘못이 있다, 탓이다","a":"","g":""},{"d":"recht haben","k":"옳다, 맞다","a":"","g":""},{"d":"das Problem","k":"문제, 고민","a":"","g":"das"},{"d":"dumm","k":"어리석은, 바보 같은","a":"","g":""},{"d":"denken, hat gedacht","k":"생각하다","a":"","g":""},{"d":"nachdenken, hat nachgedacht","k":"곰곰이 생각하다","a":"","g":""},{"d":"der Brief","k":"편지","a":"","g":"der"},{"d":"der Rat","k":"조언","a":"","g":"der"},{"d":"An deiner Stelle …","k":"내가 너라면 …","a":"","g":""},{"d":"Worüber?","k":"무엇에 대해?, 무엇 때문에?","a":"","g":""},{"d":"immer noch","k":"아직도, 여전히","a":"","g":""},{"d":"nie wieder","k":"다시는 ~하지 않다","a":"","g":""}],"rolle":{"dlg":"A","roles":["Yuna","Lukas"]}}</script>
-<script src="../../lektion.js?v=b6cb803b"></script>
+<script src="../../lektion.js?v=1b1ef1f7"></script>
 </body>
 </html>

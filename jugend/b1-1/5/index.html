@@ -25,6 +25,95 @@
   if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
 })();
 </script>
+<style id="soda-fz-css">
+/* 글자 크기: 오른쪽 위 「가」 버튼으로 네 단계를 고릅니다. 교재의 CSS는 본문 글자를 calc(Npx*var(--fz)), 큰 제목을 var(--fzh)로 적습니다 (저장소 tools/fz.py) */
+:root{--fz:1;--fzh:1}
+html[data-fz="s"]{--fz:.9;--fzh:.95}
+html[data-fz="l"]{--fz:1.15;--fzh:1.07}
+html[data-fz="xl"]{--fz:1.3;--fzh:1.14}
+html[data-fz="s"] input:not([type="checkbox"]):not([type="radio"]),html[data-fz="s"] textarea,html[data-fz="s"] select{font-size:16px}   /* 입력 칸이 16px보다 작으면 iOS가 입력할 때 화면을 확대합니다 */
+.soda-fz-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:calc(max(10px,env(safe-area-inset-right)) + 92px);z-index:2147482000;width:38px;height:38px;margin:0;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent;font:700 17px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:-.04em}
+.soda-fz-btn i{font-style:normal;font-size:11px;margin-right:1px}
+.soda-fz-btn[aria-expanded="true"]{background:#384568;color:#fff;border-color:#384568}
+html[data-theme="dark"] .soda-fz-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
+html[data-theme="dark"] .soda-fz-btn[aria-expanded="true"]{background:#AEB9DD;color:#14181E;border-color:#AEB9DD}
+.soda-fz-btn:focus-visible,.soda-fz-seg button:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
+.soda-fz-pop{position:fixed;top:calc(max(10px,env(safe-area-inset-top)) + 46px);right:max(10px,env(safe-area-inset-right));z-index:2147482000;margin:0;padding:10px 12px 12px;border-radius:16px;border:1px solid rgba(110,118,130,.35);background:#FAFAF8;color:#384568;box-shadow:0 12px 32px rgba(0,0,0,.18);font:600 12px/1.3 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;text-align:left}
+.soda-fz-pop[hidden]{display:none}
+.soda-fz-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 2px 8px;padding:0;color:#6B7385}
+.soda-fz-top b{font-weight:700;color:#384568}
+.soda-fz-seg{display:grid;grid-template-columns:repeat(4,46px);border:1px solid rgba(110,118,130,.4);border-radius:11px;overflow:hidden}
+.soda-fz-seg button{height:42px;min-height:0;margin:0;padding:0;border:0;border-left:1px solid rgba(110,118,130,.4);border-radius:0;background:transparent;color:#384568;font:700 15px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.soda-fz-seg button:first-child{border-left:0}
+.soda-fz-seg button[data-z="s"]{font-size:12px}
+.soda-fz-seg button[data-z="l"]{font-size:18px}
+.soda-fz-seg button[data-z="xl"]{font-size:21px}
+.soda-fz-seg button[aria-pressed="true"]{background:#384568;color:#fff}
+html[data-theme="dark"] .soda-fz-pop{background:#1B2028;color:#E3E6F0;border-color:#3A4350;box-shadow:0 14px 36px rgba(0,0,0,.6)}
+html[data-theme="dark"] .soda-fz-top{color:#A9B0BA}
+html[data-theme="dark"] .soda-fz-top b{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg,html[data-theme="dark"] .soda-fz-seg button{border-color:#3A4350}
+html[data-theme="dark"] .soda-fz-seg button{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg button[aria-pressed="true"]{background:#AEB9DD;color:#14181E}
+@media print{.soda-fz-btn,.soda-fz-pop{display:none!important}}
+</style>
+<script id="soda-fz-js">
+/* 글자 크기. 고른 단계는 이 기기의 쿠키 soda_fz (s, l, xl. 보통이면 지움)에 남고, 어린이·청소년·성인 교재가 함께 씁니다.
+   localStorage 에 두지 않는 까닭: 학습 포탈의 sync.js 가 localStorage 값을 로그인한 학생의 다른 기기로 옮기는데, 글자 크기는 기기마다 달라야 합니다. */
+(function(){
+  var CK='soda_fz', d=document.documentElement, OPT=[['s','작게'],['m','보통'],['l','크게'],['xl','아주 크게']], cur='m', paint=function(){};
+  function ok(v){ return v==='s'||v==='l'||v==='xl'; }
+  function lesen(){ try{ var m=document.cookie.match(/(?:^|;\s*)soda_fz=(s|l|xl)(?:;|$)/); return m?m[1]:'m'; }catch(e){ return 'm'; } }
+  function merken(v){ try{ var p=location.pathname.indexOf('/SODA-Lehrwerk/')===0?'/SODA-Lehrwerk/':'/'; document.cookie=CK+'='+(ok(v)?v:'')+'; path='+p+'; max-age='+(ok(v)?31536000:0)+'; SameSite=Lax'; }catch(e){} }
+  function apply(v){ if(ok(v)) d.setAttribute('data-fz',v); else d.removeAttribute('data-fz'); }
+  cur=lesen(); apply(cur);
+  if(ok(cur)) merken(cur);          /* 열 때마다 기한을 다시 1년으로 */
+  /* 다른 탭에서 바꿨거나 뒤로 가기로 돌아온 화면: 쿠키를 다시 읽어 맞춘다 */
+  function neu(){ var v=lesen(); if(v!==cur){ cur=v; apply(v); paint(); } }
+  window.addEventListener('pageshow',neu);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) neu(); });
+  function mount(){
+    if(document.getElementById('soda-fz-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-fz-btn'; b.className='soda-fz-btn';
+    b.innerHTML='<span aria-hidden="true"><i>가</i>가</span>';
+    b.setAttribute('aria-label','글자 크기'); b.setAttribute('aria-haspopup','true'); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-controls','soda-fz-pop'); b.title='글자 크기';
+    var p=document.createElement('div'); p.id='soda-fz-pop'; p.className='soda-fz-pop'; p.hidden=true; p.setAttribute('role','group'); p.setAttribute('aria-label','글자 크기');
+    p.innerHTML='<p class="soda-fz-top"><span>글자 크기</span><b></b></p><div class="soda-fz-seg">'+OPT.map(function(o){ return '<button type="button" data-z="'+o[0]+'" aria-label="'+o[1]+'" title="'+o[1]+'">가</button>'; }).join('')+'</div>';
+    var name=p.querySelector('b'), bs=[].slice.call(p.querySelectorAll('button'));
+    paint=function(){
+      bs.forEach(function(x){ x.setAttribute('aria-pressed', x.getAttribute('data-z')===cur?'true':'false'); });
+      for(var i=0;i<OPT.length;i++) if(OPT[i][0]===cur) name.textContent=OPT[i][1];
+    };
+    function open(on){ p.hidden=!on; b.setAttribute('aria-expanded', on?'true':'false'); }
+    /* 크기를 바꾸면 글이 다시 흐르므로, 읽던 자리의 요소가 화면에서 같은 높이에 남게 한다 */
+    function anker(){
+      if((window.pageYOffset||0)<40) return null;
+      var W=window.innerWidth, H=window.innerHeight, xs=[W/2,W/4,W*3/4], ys=[110,150,200,260];
+      for(var j=0;j<ys.length;j++) for(var i=0;i<xs.length;i++){
+        var el=document.elementFromPoint(Math.round(xs[i]), ys[j]), f=el, fest=false;
+        if(!el||el===d||el===document.body||el.getBoundingClientRect().height>H) continue;      /* 화면보다 큰 상자(구역 전체)는 기준이 못 된다 */
+        while(f&&f!==document.body){ var ps=getComputedStyle(f).position; if(ps==='fixed'||ps==='sticky'){ fest=true; break; } f=f.parentElement; }
+        if(!fest) return el;
+      }
+      return null;
+    }
+    function set(v){
+      if(v===cur) return;
+      var a=null, t0=0; try{ a=anker(); if(a) t0=a.getBoundingClientRect().top; }catch(e){}
+      cur=v; apply(v); merken(v); paint();
+      try{ if(a){ var t1=a.getBoundingClientRect().top; if(Math.abs(t1-t0)>1) window.scrollBy(0,t1-t0); } }catch(e){}
+      try{ window.dispatchEvent(new CustomEvent('soda-fz',{detail:v})); }catch(e){}
+    }
+    b.addEventListener('click',function(){ open(p.hidden); });
+    p.addEventListener('click',function(e){ var t=e.target; while(t&&t!==p&&!(t.getAttribute&&t.getAttribute('data-z'))) t=t.parentNode; if(t&&t!==p) set(t.getAttribute('data-z')); });
+    document.addEventListener('click',function(e){ if(p.hidden) return; var t=e.target; if(t===b||b.contains(t)||p.contains(t)) return; open(false); });
+    document.addEventListener('keydown',function(e){ if((e.key==='Escape'||e.key==='Esc')&&!p.hidden){ open(false); try{ b.focus(); }catch(x){} } });
+    paint(); document.body.appendChild(b); document.body.appendChild(p);
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Lektion 5 Fit und gesund? · 건강한 생활 | SODA Jugendliche B1.1</title>
 <meta name="description" content="청소년 독일어 B1.1 5과 Fit und gesund?(건강한 생활). 생활 습관 이야기하기, 통계와 그래프 설명하기, 원인과 결과 말하기. 독일어 음성으로 듣는 대화, 단어, 문법(je … desto, deswegen, sonst, außerdem, darauf, worauf (Verben mit Präposition)), 연습 문제, 말하기와 쓰기 과제. 소피아 독일어학원.">
@@ -47,7 +136,7 @@
 <link rel="icon" type="image/png" href="../../icons/icon-192.png">
 <link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
 <link rel="stylesheet" href="../../../assets/pretendard.css">
-<link rel="stylesheet" href="../../lektion.css?v=b6cb803b">
+<link rel="stylesheet" href="../../lektion.css?v=1b1ef1f7">
 <style id="soda-dark">
 .soda-theme-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));z-index:2147482000;width:38px;height:38px;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
 .soda-theme-btn svg{width:20px;height:20px}
@@ -91,6 +180,6 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
 <footer class="fuss" id="fuss"><div class="wrap"><button type="button" class="btn hell" id="prev">이전</button><button type="button" class="btn" id="next">다음</button></div></footer>
 <div id="toast" role="status" aria-live="polite"></div>
 <script type="application/json" id="daten">{"id":"b1-1/5","w":[{"d":"die Gesundheit","k":"건강","a":"n05","g":"die"},{"d":"die Ernährung","k":"식생활, 영양","a":"n07","g":"die"},{"d":"sich ernähren, hat sich ernährt","k":"먹고 살다, 식생활을 하다","a":"n09","g":""},{"d":"sich bewegen, hat sich bewegt","k":"움직이다","a":"n11","g":""},{"d":"die Bewegung","k":"움직임, 운동","a":"n13","g":"die"},{"d":"der Schlaf","k":"잠","a":"n15","g":"der"},{"d":"die Gewohnheit","k":"습관","a":"n17","g":"die"},{"d":"sich entspannen, hat sich entspannt","k":"쉬다, 긴장을 풀다","a":"n19","g":""},{"d":"fit","k":"몸이 튼튼한, 기운찬","a":"n21","g":""},{"d":"ungesund","k":"건강에 나쁜","a":"n23","g":""},{"d":"verzichten, hat verzichtet","k":"(~ 없이) 지내다, 끊다","a":"n25","g":""},{"d":"achten, hat geachtet","k":"신경 쓰다, 주의하다","a":"n27","g":""},{"d":"der Jugendliche","k":"청소년","a":"n29","g":"der"},{"d":"die Statistik","k":"통계","a":"n31","g":"die"},{"d":"die Grafik","k":"그래프, 도표","a":"n33","g":"die"},{"d":"das Prozent","k":"퍼센트","a":"n35","g":"das"},{"d":"die Hälfte","k":"절반","a":"n37","g":"die"},{"d":"das Drittel","k":"3분의 1","a":"n39","g":"das"},{"d":"das Viertel","k":"4분의 1","a":"n41","g":"das"},{"d":"der Durchschnitt","k":"평균","a":"n43","g":"der"},{"d":"die Mehrheit","k":"다수, 반이 넘는 수","a":"n45","g":"die"},{"d":"steigen, ist gestiegen","k":"오르다, 늘다","a":"n47","g":""},{"d":"sinken, ist gesunken","k":"내려가다, 줄다","a":"n49","g":""},{"d":"mindestens","k":"적어도","a":"n51","g":""},{"d":"die Ursache","k":"원인","a":"n53","g":"die"},{"d":"deswegen","k":"그래서","a":"n55","g":""},{"d":"sonst","k":"안 그러면","a":"n57","g":""},{"d":"außerdem","k":"게다가","a":"n59","g":""},{"d":"täglich","k":"날마다","a":"n61","g":""},{"d":"selten","k":"드물게, 좀처럼 ~않다","a":"n63","g":""},{"d":"einschlafen","k":"잠들다","a":"n65","g":""},{"d":"wach","k":"깨어 있는","a":"n67","g":""},{"d":"träumen, hat geträumt","k":"꿈꾸다","a":"n69","g":""}],"dlg":{"A":[["Elif","Elif","el01","Die Ergebnisse unserer Umfrage sind da. Wollt ihr die Zahlen hören?","우리 설문 결과가 나왔어. 숫자 들어 볼래?"],["Lukas","Lukas","lu01","Klar. Wie viele von uns machen Sport?","물론이지. 우리 가운데 운동하는 사람이 몇이야?"],["Elif","Elif","el02","Die Mehrheit. Zwei Drittel machen mindestens zweimal pro Woche Sport.","반이 넘어. 3분의 2가 한 주에 적어도 두 번 운동해."],["Emma","Emma","em01","Das ist gut. Und der Schlaf?","그건 좋네. 잠은?"],["Elif","Elif","el03","Nicht so gut. Ein Drittel schläft weniger als sieben Stunden.","별로 안 좋아. 3분의 1이 일곱 시간도 못 자."],["Yuna","Yuna","yu01","Ich weiß, warum. Drei Viertel sind täglich mehr als drei Stunden am Handy.","왜 그런지 알아. 4분의 3이 날마다 세 시간 넘게 휴대폰을 봐."],["Lukas","Lukas","lu02","Das kenne ich. Je länger ich am Handy bin, desto später schlafe ich ein.","나도 그래. 휴대폰을 오래 볼수록 늦게 잠들어."],["Emma","Emma","em02","Und je weniger du schläfst, desto müder bist du in Mathe.","그리고 잠을 적게 잘수록 수학 시간에 더 졸리지."],["Elif","Elif","el04","Nur die Hälfte frühstückt jeden Tag. Deswegen haben viele in der dritten Stunde schon Hunger.","날마다 아침을 먹는 사람은 절반뿐이야. 그래서 3교시면 벌써 배고픈 애들이 많아."],["Yuna","Yuna","yu02","Ich frühstücke immer, sonst kann ich mich nicht konzentrieren.","나는 꼭 아침을 먹어. 안 그러면 집중이 안 돼."],["Emma","Emma","em03","Wir sollten eine Ärztin fragen. Meine Mutter hat sicher Zeit. Außerdem hört sie unseren Podcast gern.","의사 선생님한테 물어보자. 우리 엄마가 분명 시간이 될 거야. 게다가 우리 팟캐스트를 즐겨 들으셔."],["Lukas","Lukas","lu03","Gut. Ich frage sie, worauf ich verzichten muss. Auf Schokolade nicht, oder?","좋아. 내가 뭘 끊어야 하는지 여쭤볼게. 초콜릿은 아니겠지?"]],"B":[["Elif","Elif","el05","Frau Dr. Wagner, danke, dass Sie Zeit für uns haben. Worauf sollten Jugendliche achten?","Wagner 선생님, 시간 내 주셔서 고맙습니다. 청소년은 무엇에 신경 써야 하나요?"],["Sabine","Sabine","sa01","Auf drei Dinge: Schlaf, Bewegung und Ernährung.","세 가지예요. 잠, 운동, 그리고 식생활이요."],["Elif","Elif","el06","Fangen wir mit dem Schlaf an. Wie viel brauchen wir?","잠부터 시작할게요. 저희는 얼마나 자야 하나요?"],["Sabine","Sabine","sa02","In eurem Alter acht bis zehn Stunden. Je mehr ihr schlaft, desto besser könnt ihr euch konzentrieren.","여러분 나이에는 여덟 시간에서 열 시간이에요. 많이 잘수록 집중이 더 잘돼요."],["Lukas","Lukas","lu04","Aber abends bin ich nicht müde!","그런데 저는 밤에 안 졸려요!"],["Sabine","Sabine","sa03","Dann leg das Handy eine Stunde vor dem Schlafen weg. Das Licht des Bildschirms macht wach.","그러면 자기 한 시간 전에 휴대폰을 치워 둬요. 화면의 빛이 잠을 깨우거든요."],["Elif","Elif","el07","Und Bewegung?","운동은요?"],["Sabine","Sabine","sa04","Mindestens eine Stunde am Tag. Das empfiehlt die Weltgesundheitsorganisation. Fahrt mit dem Rad zur Schule, sonst sitzt ihr den ganzen Tag.","하루에 적어도 한 시간이요. 세계보건기구가 권하는 시간이에요. 자전거로 학교에 가세요. 안 그러면 하루 종일 앉아 있게 돼요."],["Lukas","Lukas","lu05","Und das Essen? Muss ich auf Schokolade verzichten?","먹는 건요? 초콜릿을 끊어야 하나요?"],["Sabine","Sabine","sa05","Nein, darauf musst du nicht verzichten. Aber iss täglich Obst und Gemüse und trink viel Wasser.","아니요, 그건 끊지 않아도 돼요. 하지만 날마다 과일과 채소를 먹고 물을 많이 마셔요."],["Lukas","Lukas","lu06","Darauf kann ich achten. Außerdem mag ich Äpfel.","그건 신경 쓸 수 있어요. 게다가 저는 사과를 좋아해요."],["Elif","Elif","el08","Vielen Dank für das Interview, Frau Dr. Wagner!","인터뷰 고맙습니다, Wagner 선생님!"]]},"pw":[{"d":"die Medien","k":"미디어, 매체","a":"","g":"pl"},{"d":"der Artikel","k":"기사","a":"","g":"der"},{"d":"die Schlagzeile","k":"(기사의) 큰 제목","a":"","g":"die"},{"d":"die Quelle","k":"출처","a":"","g":"die"},{"d":"die Meldung","k":"보도, 소식","a":"","g":"die"},{"d":"die Sendung","k":"방송 프로그램","a":"","g":"die"},{"d":"berichten, hat berichtet","k":"보도하다, 알리다","a":"","g":""},{"d":"veröffentlichen, hat veröffentlicht","k":"발표하다, 싣다","a":"","g":""},{"d":"die Redaktion","k":"편집부","a":"","g":"die"},{"d":"recherchieren, hat recherchiert","k":"조사하다, 자료를 찾다","a":"","g":""},{"d":"das Netz","k":"인터넷","a":"","g":"das"},{"d":"posten, hat gepostet","k":"(인터넷에) 올리다","a":"","g":""},{"d":"weiterleiten, hat weitergeleitet","k":"(메시지를) 전달하다","a":"","g":""},{"d":"der Kommentar","k":"댓글, 논평","a":"","g":"der"},{"d":"löschen, hat gelöscht","k":"지우다","a":"","g":""},{"d":"verbreiten, hat verbreitet","k":"퍼뜨리다","a":"","g":""},{"d":"das Gerücht","k":"소문","a":"","g":"das"},{"d":"der Fakt","k":"사실","a":"","g":"der"},{"d":"die künstliche Intelligenz","k":"인공지능. 짧게 KI","a":"","g":"die"},{"d":"bearbeiten, hat bearbeitet","k":"손보다, 편집하다","a":"","g":""},{"d":"prüfen, hat geprüft","k":"확인하다, 따져 보다","a":"","g":""},{"d":"erkennen, hat erkannt","k":"알아보다, 알아차리다","a":"","g":""},{"d":"wahr","k":"참인, 사실인","a":"","g":""},{"d":"falsch","k":"틀린, 거짓인","a":"","g":""},{"d":"zweifeln, hat gezweifelt","k":"의심하다","a":"","g":""},{"d":"kritisch","k":"비판적인, 꼼꼼히 따지는","a":"","g":""},{"d":"gefährlich","k":"위험한","a":"","g":""},{"d":"behaupten, hat behauptet","k":"주장하다","a":"","g":""},{"d":"der Beweis","k":"증거","a":"","g":"der"},{"d":"das Argument","k":"근거, 논거","a":"","g":"das"},{"d":"zustimmen, hat zugestimmt","k":"동의하다","a":"","g":""},{"d":"widersprechen","k":"반대하다, 반박하다","a":"","g":""}],"rolle":{"dlg":"B","roles":["Elif","Sabine"]}}</script>
-<script src="../../lektion.js?v=b6cb803b"></script>
+<script src="../../lektion.js?v=1b1ef1f7"></script>
 </body>
 </html>

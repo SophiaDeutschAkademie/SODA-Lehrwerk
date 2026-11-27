@@ -25,6 +25,95 @@
   if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
 })();
 </script>
+<style id="soda-fz-css">
+/* 글자 크기: 오른쪽 위 「가」 버튼으로 네 단계를 고릅니다. 교재의 CSS는 본문 글자를 calc(Npx*var(--fz)), 큰 제목을 var(--fzh)로 적습니다 (저장소 tools/fz.py) */
+:root{--fz:1;--fzh:1}
+html[data-fz="s"]{--fz:.9;--fzh:.95}
+html[data-fz="l"]{--fz:1.15;--fzh:1.07}
+html[data-fz="xl"]{--fz:1.3;--fzh:1.14}
+html[data-fz="s"] input:not([type="checkbox"]):not([type="radio"]),html[data-fz="s"] textarea,html[data-fz="s"] select{font-size:16px}   /* 입력 칸이 16px보다 작으면 iOS가 입력할 때 화면을 확대합니다 */
+.soda-fz-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:calc(max(10px,env(safe-area-inset-right)) + 92px);z-index:2147482000;width:38px;height:38px;margin:0;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent;font:700 17px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:-.04em}
+.soda-fz-btn i{font-style:normal;font-size:11px;margin-right:1px}
+.soda-fz-btn[aria-expanded="true"]{background:#384568;color:#fff;border-color:#384568}
+html[data-theme="dark"] .soda-fz-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
+html[data-theme="dark"] .soda-fz-btn[aria-expanded="true"]{background:#AEB9DD;color:#14181E;border-color:#AEB9DD}
+.soda-fz-btn:focus-visible,.soda-fz-seg button:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
+.soda-fz-pop{position:fixed;top:calc(max(10px,env(safe-area-inset-top)) + 46px);right:max(10px,env(safe-area-inset-right));z-index:2147482000;margin:0;padding:10px 12px 12px;border-radius:16px;border:1px solid rgba(110,118,130,.35);background:#FAFAF8;color:#384568;box-shadow:0 12px 32px rgba(0,0,0,.18);font:600 12px/1.3 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;text-align:left}
+.soda-fz-pop[hidden]{display:none}
+.soda-fz-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 2px 8px;padding:0;color:#6B7385}
+.soda-fz-top b{font-weight:700;color:#384568}
+.soda-fz-seg{display:grid;grid-template-columns:repeat(4,46px);border:1px solid rgba(110,118,130,.4);border-radius:11px;overflow:hidden}
+.soda-fz-seg button{height:42px;min-height:0;margin:0;padding:0;border:0;border-left:1px solid rgba(110,118,130,.4);border-radius:0;background:transparent;color:#384568;font:700 15px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.soda-fz-seg button:first-child{border-left:0}
+.soda-fz-seg button[data-z="s"]{font-size:12px}
+.soda-fz-seg button[data-z="l"]{font-size:18px}
+.soda-fz-seg button[data-z="xl"]{font-size:21px}
+.soda-fz-seg button[aria-pressed="true"]{background:#384568;color:#fff}
+html[data-theme="dark"] .soda-fz-pop{background:#1B2028;color:#E3E6F0;border-color:#3A4350;box-shadow:0 14px 36px rgba(0,0,0,.6)}
+html[data-theme="dark"] .soda-fz-top{color:#A9B0BA}
+html[data-theme="dark"] .soda-fz-top b{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg,html[data-theme="dark"] .soda-fz-seg button{border-color:#3A4350}
+html[data-theme="dark"] .soda-fz-seg button{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg button[aria-pressed="true"]{background:#AEB9DD;color:#14181E}
+@media print{.soda-fz-btn,.soda-fz-pop{display:none!important}}
+</style>
+<script id="soda-fz-js">
+/* 글자 크기. 고른 단계는 이 기기의 쿠키 soda_fz (s, l, xl. 보통이면 지움)에 남고, 어린이·청소년·성인 교재가 함께 씁니다.
+   localStorage 에 두지 않는 까닭: 학습 포탈의 sync.js 가 localStorage 값을 로그인한 학생의 다른 기기로 옮기는데, 글자 크기는 기기마다 달라야 합니다. */
+(function(){
+  var CK='soda_fz', d=document.documentElement, OPT=[['s','작게'],['m','보통'],['l','크게'],['xl','아주 크게']], cur='m', paint=function(){};
+  function ok(v){ return v==='s'||v==='l'||v==='xl'; }
+  function lesen(){ try{ var m=document.cookie.match(/(?:^|;\s*)soda_fz=(s|l|xl)(?:;|$)/); return m?m[1]:'m'; }catch(e){ return 'm'; } }
+  function merken(v){ try{ var p=location.pathname.indexOf('/SODA-Lehrwerk/')===0?'/SODA-Lehrwerk/':'/'; document.cookie=CK+'='+(ok(v)?v:'')+'; path='+p+'; max-age='+(ok(v)?31536000:0)+'; SameSite=Lax'; }catch(e){} }
+  function apply(v){ if(ok(v)) d.setAttribute('data-fz',v); else d.removeAttribute('data-fz'); }
+  cur=lesen(); apply(cur);
+  if(ok(cur)) merken(cur);          /* 열 때마다 기한을 다시 1년으로 */
+  /* 다른 탭에서 바꿨거나 뒤로 가기로 돌아온 화면: 쿠키를 다시 읽어 맞춘다 */
+  function neu(){ var v=lesen(); if(v!==cur){ cur=v; apply(v); paint(); } }
+  window.addEventListener('pageshow',neu);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) neu(); });
+  function mount(){
+    if(document.getElementById('soda-fz-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-fz-btn'; b.className='soda-fz-btn';
+    b.innerHTML='<span aria-hidden="true"><i>가</i>가</span>';
+    b.setAttribute('aria-label','글자 크기'); b.setAttribute('aria-haspopup','true'); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-controls','soda-fz-pop'); b.title='글자 크기';
+    var p=document.createElement('div'); p.id='soda-fz-pop'; p.className='soda-fz-pop'; p.hidden=true; p.setAttribute('role','group'); p.setAttribute('aria-label','글자 크기');
+    p.innerHTML='<p class="soda-fz-top"><span>글자 크기</span><b></b></p><div class="soda-fz-seg">'+OPT.map(function(o){ return '<button type="button" data-z="'+o[0]+'" aria-label="'+o[1]+'" title="'+o[1]+'">가</button>'; }).join('')+'</div>';
+    var name=p.querySelector('b'), bs=[].slice.call(p.querySelectorAll('button'));
+    paint=function(){
+      bs.forEach(function(x){ x.setAttribute('aria-pressed', x.getAttribute('data-z')===cur?'true':'false'); });
+      for(var i=0;i<OPT.length;i++) if(OPT[i][0]===cur) name.textContent=OPT[i][1];
+    };
+    function open(on){ p.hidden=!on; b.setAttribute('aria-expanded', on?'true':'false'); }
+    /* 크기를 바꾸면 글이 다시 흐르므로, 읽던 자리의 요소가 화면에서 같은 높이에 남게 한다 */
+    function anker(){
+      if((window.pageYOffset||0)<40) return null;
+      var W=window.innerWidth, H=window.innerHeight, xs=[W/2,W/4,W*3/4], ys=[110,150,200,260];
+      for(var j=0;j<ys.length;j++) for(var i=0;i<xs.length;i++){
+        var el=document.elementFromPoint(Math.round(xs[i]), ys[j]), f=el, fest=false;
+        if(!el||el===d||el===document.body||el.getBoundingClientRect().height>H) continue;      /* 화면보다 큰 상자(구역 전체)는 기준이 못 된다 */
+        while(f&&f!==document.body){ var ps=getComputedStyle(f).position; if(ps==='fixed'||ps==='sticky'){ fest=true; break; } f=f.parentElement; }
+        if(!fest) return el;
+      }
+      return null;
+    }
+    function set(v){
+      if(v===cur) return;
+      var a=null, t0=0; try{ a=anker(); if(a) t0=a.getBoundingClientRect().top; }catch(e){}
+      cur=v; apply(v); merken(v); paint();
+      try{ if(a){ var t1=a.getBoundingClientRect().top; if(Math.abs(t1-t0)>1) window.scrollBy(0,t1-t0); } }catch(e){}
+      try{ window.dispatchEvent(new CustomEvent('soda-fz',{detail:v})); }catch(e){}
+    }
+    b.addEventListener('click',function(){ open(p.hidden); });
+    p.addEventListener('click',function(e){ var t=e.target; while(t&&t!==p&&!(t.getAttribute&&t.getAttribute('data-z'))) t=t.parentNode; if(t&&t!==p) set(t.getAttribute('data-z')); });
+    document.addEventListener('click',function(e){ if(p.hidden) return; var t=e.target; if(t===b||b.contains(t)||p.contains(t)) return; open(false); });
+    document.addEventListener('keydown',function(e){ if((e.key==='Escape'||e.key==='Esc')&&!p.hidden){ open(false); try{ b.focus(); }catch(x){} } });
+    paint(); document.body.appendChild(b); document.body.appendChild(p);
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Station 2 Präsentation · 복습과 프로젝트 | SODA Jugendliche B1.2</title>
 <meta name="description" content="청소년 독일어 B1.2 Station 2 Präsentation. Lektion 5–8에서 배운 것을 복습하고 프로젝트를 해요. 내가 고른 주제를 5분 동안 발표해요. 소피아 독일어학원.">
@@ -47,7 +136,7 @@
 <link rel="icon" type="image/png" href="../../icons/icon-192.png">
 <link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
 <link rel="stylesheet" href="../../../assets/pretendard.css">
-<link rel="stylesheet" href="../../lektion.css?v=b6cb803b">
+<link rel="stylesheet" href="../../lektion.css?v=1b1ef1f7">
 <style id="soda-dark">
 .soda-theme-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));z-index:2147482000;width:38px;height:38px;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
 .soda-theme-btn svg{width:20px;height:20px}
@@ -88,6 +177,6 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
 <footer class="fuss" id="fuss"><div class="wrap"><button type="button" class="btn hell" id="prev">이전</button><button type="button" class="btn" id="next">다음</button></div></footer>
 <div id="toast" role="status" aria-live="polite"></div>
 <script type="application/json" id="daten">{"id":"b1-2/station-2","w":[{"d":"die Mauer","k":"장벽, 담","a":"../5/n05","g":"die"},{"d":"der Krieg","k":"전쟁","a":"../5/n07","g":"der"},{"d":"der Frieden","k":"평화","a":"../5/n09","g":"der"},{"d":"die Teilung","k":"분단, 나뉨","a":"../5/n11","g":"die"},{"d":"die Einheit","k":"통일, 하나 됨","a":"../5/n13","g":"die"},{"d":"die Wiedervereinigung","k":"다시 하나가 됨, 재통일","a":"../5/n15","g":"die"},{"d":"der Staat","k":"국가","a":"../5/n17","g":"der"},{"d":"die Regierung","k":"정부","a":"../5/n19","g":"die"},{"d":"die Freiheit","k":"자유","a":"../5/n21","g":"die"},{"d":"fliehen, ist geflohen","k":"달아나다, 탈출하다","a":"../5/n23","g":""},{"d":"der Bürger","k":"시민","a":"../5/n25","g":"der"},{"d":"die Vergangenheit","k":"과거","a":"../5/n27","g":"die"},{"d":"die Gegenwart","k":"현재","a":"../5/n29","g":"die"},{"d":"das Ereignis","k":"사건, 일어난 일","a":"../5/n31","g":"das"},{"d":"der Zeitzeuge","k":"그 시대를 겪은 증인","a":"../5/n33","g":"der"},{"d":"die Erinnerung","k":"기억, 추억","a":"../5/n35","g":"die"},{"d":"das Jahrzehnt","k":"10년","a":"../5/n37","g":"das"},{"d":"das Denkmal","k":"기념물","a":"../5/n39","g":"das"},{"d":"friedlich","k":"평화로운","a":"../5/n41","g":""},{"d":"öffnen, hat geöffnet","k":"열다","a":"../5/n43","g":""},{"d":"fallen, ist gefallen","k":"떨어지다, 무너지다","a":"../5/n45","g":""},{"d":"gründen, hat gegründet","k":"세우다, 창립하다","a":"../5/n47","g":""},{"d":"die Gesellschaft","k":"사회","a":"../5/n49","g":"die"},{"d":"die Migration","k":"이주","a":"../5/n51","g":"die"},{"d":"einwandern, ist eingewandert","k":"이민 오다","a":"../5/n53","g":""},{"d":"auswandern, ist ausgewandert","k":"이민 가다","a":"../5/n55","g":""},{"d":"der Gastarbeiter","k":"다른 나라에서 일하러 온 노동자","a":"../5/n57","g":"der"},{"d":"die Herkunft","k":"출신","a":"../5/n59","g":"die"},{"d":"die Heimat","k":"고향","a":"../5/n61","g":"die"},{"d":"die Vielfalt","k":"다양성","a":"../5/n63","g":"die"},{"d":"das Vorurteil","k":"편견","a":"../5/n65","g":"das"},{"d":"der Respekt","k":"존중","a":"../5/n67","g":"der"},{"d":"die Fabrik","k":"공장","a":"../5/n69","g":"die"},{"d":"die Technik","k":"기술","a":"../6/n05","g":"die"},{"d":"die Wissenschaft","k":"과학, 학문","a":"../6/n07","g":"die"},{"d":"der Forscher","k":"연구자","a":"../6/n09","g":"der"},{"d":"forschen, hat geforscht","k":"연구하다","a":"../6/n11","g":""},{"d":"erfinden, hat erfunden","k":"발명하다","a":"../6/n13","g":""},{"d":"die Erfindung","k":"발명, 발명품","a":"../6/n15","g":"die"},{"d":"entdecken, hat entdeckt","k":"발견하다","a":"../6/n17","g":""},{"d":"entwickeln, hat entwickelt","k":"개발하다","a":"../6/n19","g":""},{"d":"das Experiment","k":"실험","a":"../6/n21","g":"das"},{"d":"das Labor","k":"실험실","a":"../6/n23","g":"das"},{"d":"der Wettbewerb","k":"대회, 경쟁","a":"../6/n25","g":"der"},{"d":"der Roboter","k":"로봇","a":"../6/n27","g":"der"},{"d":"die Maschine","k":"기계","a":"../6/n29","g":"die"},{"d":"das Gerät","k":"기기, 장치","a":"../6/n31","g":"das"},{"d":"der Akku","k":"충전지","a":"../6/n33","g":"der"},{"d":"aufladen, hat aufgeladen","k":"충전하다","a":"../6/n35","g":""},{"d":"die Daten","k":"데이터, 자료","a":"../6/n37","g":"pl"},{"d":"programmieren, hat programmiert","k":"프로그램을 짜다","a":"../6/n39","g":""},{"d":"speichern, hat gespeichert","k":"저장하다","a":"../6/n41","g":""},{"d":"digital","k":"디지털의","a":"../6/n43","g":""},{"d":"automatisch","k":"자동의, 저절로","a":"../6/n45","g":""},{"d":"der Drucker","k":"프린터, 인쇄기","a":"../6/n47","g":"der"},{"d":"der Fortschritt","k":"발전, 진보","a":"../6/n49","g":"der"},{"d":"das Risiko","k":"일어날 수 있는 위험","a":"../6/n51","g":"das"},{"d":"die Gefahr","k":"위험","a":"../6/n53","g":"die"},{"d":"die Sicherheit","k":"안전","a":"../6/n55","g":"die"},{"d":"ersetzen, hat ersetzt","k":"대신하다, 바꾸다","a":"../6/n57","g":""},{"d":"nützlich","k":"쓸모 있는, 유익한","a":"../6/n59","g":""},{"d":"möglich","k":"가능한","a":"../6/n61","g":""},{"d":"unmöglich","k":"불가능한","a":"../6/n63","g":""},{"d":"bedienen, hat bedient","k":"다루다, 조작하다","a":"../6/n65","g":""},{"d":"funktionieren, hat funktioniert","k":"작동하다, 잘되다","a":"../6/n67","g":""},{"d":"lösen, hat gelöst","k":"풀다, 해결하다","a":"../6/n69","g":""},{"d":"die Kultur","k":"문화","a":"../7/n05","g":"die"},{"d":"die Tradition","k":"전통","a":"../7/n07","g":"die"},{"d":"die Gemeinsamkeit","k":"공통점","a":"../7/n09","g":"die"},{"d":"das Missverständnis","k":"오해","a":"../7/n11","g":"das"},{"d":"missverstehen, hat missverstanden","k":"잘못 알아듣다, 오해하다","a":"../7/n12","g":""},{"d":"bedeuten, hat bedeutet","k":"뜻하다","a":"../7/n14","g":""},{"d":"das Verhalten","k":"행동, 태도","a":"../7/n16","g":"das"},{"d":"sich verhalten, hat sich verhalten","k":"행동하다","a":"../7/n18","g":""},{"d":"typisch","k":"전형적인, ~다운","a":"../7/n20","g":""},{"d":"üblich","k":"흔히 하는, 보통인","a":"../7/n22","g":""},{"d":"ähnlich","k":"비슷한","a":"../7/n24","g":""},{"d":"überrascht","k":"놀란","a":"../7/n26","g":""},{"d":"höflich","k":"공손한, 예의 바른","a":"../7/n28","g":""},{"d":"unhöflich","k":"무례한","a":"../7/n30","g":""},{"d":"die Höflichkeit","k":"예의, 공손함","a":"../7/n32","g":"die"},{"d":"die Pünktlichkeit","k":"시간을 잘 지키는 것","a":"../7/n34","g":"die"},{"d":"die Ehrlichkeit","k":"솔직함, 정직","a":"../7/n36","g":"die"},{"d":"begrüßen, hat begrüßt","k":"인사하며 맞이하다","a":"../7/n38","g":""},{"d":"die Begrüßung","k":"인사, 맞이하는 말","a":"../7/n40","g":"die"},{"d":"sich verbeugen, hat sich verbeugt","k":"허리 숙여 인사하다","a":"../7/n42","g":""},{"d":"umarmen, hat umarmt","k":"껴안다","a":"../7/n44","g":""},{"d":"duzen, hat geduzt","k":"du라고 부르다","a":"../7/n46","g":""},{"d":"siezen, hat gesiezt","k":"Sie라고 부르다","a":"../7/n48","g":""},{"d":"die Muttersprache","k":"모국어","a":"../7/n50","g":"die"},{"d":"zweisprachig","k":"두 말을 쓰는","a":"../7/n52","g":""},{"d":"aufwachsen, ist aufgewachsen","k":"자라다","a":"../7/n54","g":""},{"d":"der Akzent","k":"말씨, 외국어 억양","a":"../7/n56","g":"der"},{"d":"die Identität","k":"정체성","a":"../7/n58","g":"die"},{"d":"dazugehören, hat dazugehört","k":"한 무리에 들다, 속하다","a":"../7/n60","g":""},{"d":"der Gastgeber","k":"손님을 맞는 사람","a":"../7/n62","g":"der"},{"d":"die Hausschuhe","k":"실내화","a":"../7/n64","g":"pl"},{"d":"lächeln, hat gelächelt","k":"미소 짓다","a":"../7/n66","g":""},{"d":"schweigen, hat geschwiegen","k":"말없이 있다","a":"../7/n68","g":""},{"d":"der Vortrag","k":"발표, 강연","a":"../7/n70","g":"der"},{"d":"der Abschluss","k":"졸업, 학교를 마침","a":"../8/n05","g":"der"},{"d":"die Möglichkeit","k":"가능성, 할 수 있는 길","a":"../8/n07","g":"die"},{"d":"die Chance","k":"기회","a":"../8/n09","g":"die"},{"d":"nutzen, hat genutzt","k":"살려 쓰다, 이용하다","a":"../8/n11","g":""},{"d":"hoffen, hat gehofft","k":"바라다","a":"../8/n13","g":""},{"d":"gelingen, ist gelungen","k":"잘되다, 뜻대로 되다","a":"../8/n15","g":""},{"d":"klappen, hat geklappt","k":"(일이) 잘되다","a":"../8/n17","g":""},{"d":"der Mut","k":"용기","a":"../8/n19","g":"der"},{"d":"sich trauen, hat sich getraut","k":"용기를 내어 하다","a":"../8/n21","g":""},{"d":"der Schritt","k":"걸음, 단계","a":"../8/n23","g":"der"},{"d":"das Stipendium","k":"장학금","a":"../8/n25","g":"das"},{"d":"der Rückblick","k":"돌아보기","a":"../8/n27","g":"der"},{"d":"die Leistung","k":"해낸 일, 성과","a":"../8/n29","g":"die"},{"d":"korrigieren, hat korrigiert","k":"고치다, 바로잡다","a":"../8/n31","g":""},{"d":"der Überblick","k":"한눈에 보기","a":"../8/n33","g":"der"},{"d":"insgesamt","k":"모두 합쳐서, 전체로 보면","a":"../8/n35","g":""},{"d":"schließlich","k":"마침내, 결국","a":"../8/n37","g":""},{"d":"die Geduld","k":"참을성","a":"../8/n39","g":"die"},{"d":"loben, hat gelobt","k":"칭찬하다","a":"../8/n41","g":""},{"d":"der Zweifel","k":"의심, 망설임","a":"../8/n43","g":"der"},{"d":"unsicher","k":"자신 없는, 불안한","a":"../8/n45","g":""},{"d":"selbstbewusst","k":"자신감 있는","a":"../8/n47","g":""},{"d":"weitermachen, hat weitergemacht","k":"계속하다","a":"../8/n49","g":""},{"d":"der Kontakt","k":"연락, 교류","a":"../8/n51","g":"der"},{"d":"das Wiedersehen","k":"다시 만남","a":"../8/n52","g":"das"},{"d":"die Umarmung","k":"포옹","a":"../8/n54","g":"die"},{"d":"die Träne","k":"눈물","a":"../8/n56","g":"die"},{"d":"der Abflug","k":"(비행기의) 출발","a":"../8/n58","g":"der"},{"d":"das Andenken","k":"기념품, 추억이 담긴 물건","a":"../8/n60","g":"das"},{"d":"die Rede","k":"연설, 여럿 앞에서 하는 말","a":"../8/n62","g":"die"},{"d":"dankbar","k":"고마워하는","a":"../8/n64","g":""},{"d":"sich bedanken, hat sich bedankt","k":"고맙다고 말하다","a":"../8/n65","g":""},{"d":"unvergesslich","k":"잊을 수 없는","a":"../8/n67","g":""},{"d":"winken, hat gewinkt","k":"손을 흔들다","a":"../8/n69","g":""}],"dlg":{}}</script>
-<script src="../../lektion.js?v=b6cb803b"></script>
+<script src="../../lektion.js?v=1b1ef1f7"></script>
 </body>
 </html>

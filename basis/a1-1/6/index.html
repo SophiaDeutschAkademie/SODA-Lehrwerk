@@ -25,6 +25,95 @@
   if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
 })();
 </script>
+<style id="soda-fz-css">
+/* 글자 크기: 오른쪽 위 「가」 버튼으로 네 단계를 고릅니다. 교재의 CSS는 본문 글자를 calc(Npx*var(--fz)), 큰 제목을 var(--fzh)로 적습니다 (저장소 tools/fz.py) */
+:root{--fz:1;--fzh:1}
+html[data-fz="s"]{--fz:.9;--fzh:.95}
+html[data-fz="l"]{--fz:1.15;--fzh:1.07}
+html[data-fz="xl"]{--fz:1.3;--fzh:1.14}
+html[data-fz="s"] input:not([type="checkbox"]):not([type="radio"]),html[data-fz="s"] textarea,html[data-fz="s"] select{font-size:16px}   /* 입력 칸이 16px보다 작으면 iOS가 입력할 때 화면을 확대합니다 */
+.soda-fz-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:calc(max(10px,env(safe-area-inset-right)) + 92px);z-index:2147482000;width:38px;height:38px;margin:0;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent;font:700 17px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:-.04em}
+.soda-fz-btn i{font-style:normal;font-size:11px;margin-right:1px}
+.soda-fz-btn[aria-expanded="true"]{background:#384568;color:#fff;border-color:#384568}
+html[data-theme="dark"] .soda-fz-btn{background:rgba(27,32,40,.94);color:#E3E6F0;border-color:#3A4350;box-shadow:0 2px 12px rgba(0,0,0,.5)}
+html[data-theme="dark"] .soda-fz-btn[aria-expanded="true"]{background:#AEB9DD;color:#14181E;border-color:#AEB9DD}
+.soda-fz-btn:focus-visible,.soda-fz-seg button:focus-visible{outline:3px solid #9DA6C6;outline-offset:2px}
+.soda-fz-pop{position:fixed;top:calc(max(10px,env(safe-area-inset-top)) + 46px);right:max(10px,env(safe-area-inset-right));z-index:2147482000;margin:0;padding:10px 12px 12px;border-radius:16px;border:1px solid rgba(110,118,130,.35);background:#FAFAF8;color:#384568;box-shadow:0 12px 32px rgba(0,0,0,.18);font:600 12px/1.3 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;text-align:left}
+.soda-fz-pop[hidden]{display:none}
+.soda-fz-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 2px 8px;padding:0;color:#6B7385}
+.soda-fz-top b{font-weight:700;color:#384568}
+.soda-fz-seg{display:grid;grid-template-columns:repeat(4,46px);border:1px solid rgba(110,118,130,.4);border-radius:11px;overflow:hidden}
+.soda-fz-seg button{height:42px;min-height:0;margin:0;padding:0;border:0;border-left:1px solid rgba(110,118,130,.4);border-radius:0;background:transparent;color:#384568;font:700 15px/1 "Pretendard Variable","Pretendard","Noto Sans KR",system-ui,sans-serif;letter-spacing:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.soda-fz-seg button:first-child{border-left:0}
+.soda-fz-seg button[data-z="s"]{font-size:12px}
+.soda-fz-seg button[data-z="l"]{font-size:18px}
+.soda-fz-seg button[data-z="xl"]{font-size:21px}
+.soda-fz-seg button[aria-pressed="true"]{background:#384568;color:#fff}
+html[data-theme="dark"] .soda-fz-pop{background:#1B2028;color:#E3E6F0;border-color:#3A4350;box-shadow:0 14px 36px rgba(0,0,0,.6)}
+html[data-theme="dark"] .soda-fz-top{color:#A9B0BA}
+html[data-theme="dark"] .soda-fz-top b{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg,html[data-theme="dark"] .soda-fz-seg button{border-color:#3A4350}
+html[data-theme="dark"] .soda-fz-seg button{color:#E3E6F0}
+html[data-theme="dark"] .soda-fz-seg button[aria-pressed="true"]{background:#AEB9DD;color:#14181E}
+@media print{.soda-fz-btn,.soda-fz-pop{display:none!important}}
+</style>
+<script id="soda-fz-js">
+/* 글자 크기. 고른 단계는 이 기기의 쿠키 soda_fz (s, l, xl. 보통이면 지움)에 남고, 어린이·청소년·성인 교재가 함께 씁니다.
+   localStorage 에 두지 않는 까닭: 학습 포탈의 sync.js 가 localStorage 값을 로그인한 학생의 다른 기기로 옮기는데, 글자 크기는 기기마다 달라야 합니다. */
+(function(){
+  var CK='soda_fz', d=document.documentElement, OPT=[['s','작게'],['m','보통'],['l','크게'],['xl','아주 크게']], cur='m', paint=function(){};
+  function ok(v){ return v==='s'||v==='l'||v==='xl'; }
+  function lesen(){ try{ var m=document.cookie.match(/(?:^|;\s*)soda_fz=(s|l|xl)(?:;|$)/); return m?m[1]:'m'; }catch(e){ return 'm'; } }
+  function merken(v){ try{ var p=location.pathname.indexOf('/SODA-Lehrwerk/')===0?'/SODA-Lehrwerk/':'/'; document.cookie=CK+'='+(ok(v)?v:'')+'; path='+p+'; max-age='+(ok(v)?31536000:0)+'; SameSite=Lax'; }catch(e){} }
+  function apply(v){ if(ok(v)) d.setAttribute('data-fz',v); else d.removeAttribute('data-fz'); }
+  cur=lesen(); apply(cur);
+  if(ok(cur)) merken(cur);          /* 열 때마다 기한을 다시 1년으로 */
+  /* 다른 탭에서 바꿨거나 뒤로 가기로 돌아온 화면: 쿠키를 다시 읽어 맞춘다 */
+  function neu(){ var v=lesen(); if(v!==cur){ cur=v; apply(v); paint(); } }
+  window.addEventListener('pageshow',neu);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) neu(); });
+  function mount(){
+    if(document.getElementById('soda-fz-btn')) return;
+    var b=document.createElement('button'); b.type='button'; b.id='soda-fz-btn'; b.className='soda-fz-btn';
+    b.innerHTML='<span aria-hidden="true"><i>가</i>가</span>';
+    b.setAttribute('aria-label','글자 크기'); b.setAttribute('aria-haspopup','true'); b.setAttribute('aria-expanded','false'); b.setAttribute('aria-controls','soda-fz-pop'); b.title='글자 크기';
+    var p=document.createElement('div'); p.id='soda-fz-pop'; p.className='soda-fz-pop'; p.hidden=true; p.setAttribute('role','group'); p.setAttribute('aria-label','글자 크기');
+    p.innerHTML='<p class="soda-fz-top"><span>글자 크기</span><b></b></p><div class="soda-fz-seg">'+OPT.map(function(o){ return '<button type="button" data-z="'+o[0]+'" aria-label="'+o[1]+'" title="'+o[1]+'">가</button>'; }).join('')+'</div>';
+    var name=p.querySelector('b'), bs=[].slice.call(p.querySelectorAll('button'));
+    paint=function(){
+      bs.forEach(function(x){ x.setAttribute('aria-pressed', x.getAttribute('data-z')===cur?'true':'false'); });
+      for(var i=0;i<OPT.length;i++) if(OPT[i][0]===cur) name.textContent=OPT[i][1];
+    };
+    function open(on){ p.hidden=!on; b.setAttribute('aria-expanded', on?'true':'false'); }
+    /* 크기를 바꾸면 글이 다시 흐르므로, 읽던 자리의 요소가 화면에서 같은 높이에 남게 한다 */
+    function anker(){
+      if((window.pageYOffset||0)<40) return null;
+      var W=window.innerWidth, H=window.innerHeight, xs=[W/2,W/4,W*3/4], ys=[110,150,200,260];
+      for(var j=0;j<ys.length;j++) for(var i=0;i<xs.length;i++){
+        var el=document.elementFromPoint(Math.round(xs[i]), ys[j]), f=el, fest=false;
+        if(!el||el===d||el===document.body||el.getBoundingClientRect().height>H) continue;      /* 화면보다 큰 상자(구역 전체)는 기준이 못 된다 */
+        while(f&&f!==document.body){ var ps=getComputedStyle(f).position; if(ps==='fixed'||ps==='sticky'){ fest=true; break; } f=f.parentElement; }
+        if(!fest) return el;
+      }
+      return null;
+    }
+    function set(v){
+      if(v===cur) return;
+      var a=null, t0=0; try{ a=anker(); if(a) t0=a.getBoundingClientRect().top; }catch(e){}
+      cur=v; apply(v); merken(v); paint();
+      try{ if(a){ var t1=a.getBoundingClientRect().top; if(Math.abs(t1-t0)>1) window.scrollBy(0,t1-t0); } }catch(e){}
+      try{ window.dispatchEvent(new CustomEvent('soda-fz',{detail:v})); }catch(e){}
+    }
+    b.addEventListener('click',function(){ open(p.hidden); });
+    p.addEventListener('click',function(e){ var t=e.target; while(t&&t!==p&&!(t.getAttribute&&t.getAttribute('data-z'))) t=t.parentNode; if(t&&t!==p) set(t.getAttribute('data-z')); });
+    document.addEventListener('click',function(e){ if(p.hidden) return; var t=e.target; if(t===b||b.contains(t)||p.contains(t)) return; open(false); });
+    document.addEventListener('keydown',function(e){ if((e.key==='Escape'||e.key==='Esc')&&!p.hidden){ open(false); try{ b.focus(); }catch(x){} } });
+    paint(); document.body.appendChild(b); document.body.appendChild(p);
+  }
+  if(document.body) mount(); else document.addEventListener('DOMContentLoaded',mount);
+})();
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex">
 <title>Lektion 6 Termine · 약속과 예약 | SODA Basis A1.1</title>
@@ -48,7 +137,7 @@
 <link rel="icon" type="image/png" href="../../icons/icon-192.png">
 <link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
 <link rel="stylesheet" href="../../../assets/pretendard.css">
-<link rel="stylesheet" href="../../../erwachsene/lektion.css?v=1020dec3">
+<link rel="stylesheet" href="../../../erwachsene/lektion.css?v=47261b7b">
 <style id="soda-dark">
 .soda-theme-btn{position:fixed;top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));z-index:2147482000;width:38px;height:38px;padding:0;border-radius:50%;border:1px solid rgba(110,118,130,.35);background:rgba(250,250,248,.92);color:#384568;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);-webkit-tap-highlight-color:transparent}
 .soda-theme-btn svg{width:20px;height:20px}
@@ -96,6 +185,6 @@ html[data-theme="dark"]{--accent:#B9A4EC;--accent-ink:#CDBDF3;--fill:#B9A4EC}
 <footer class="fuss" id="fuss"><div class="wrap"><button type="button" class="btn hell" id="prev">이전</button><button type="button" class="btn" id="next">다음</button></div></footer>
 <div id="toast" role="status" aria-live="polite"></div>
 <script type="application/json" id="daten">{"id":"a1-1/6","w":[{"d":"der Termin","k":"약속, 예약 (정해진 시간)","a":"n05","g":"der"},{"d":"die Zeit","k":"시간","a":"n07","g":"die"},{"d":"der Kalender","k":"달력, 일정표","a":"n08","g":"der"},{"d":"die Praxis","k":"개인 병원, 의원","a":"n10","g":"die"},{"d":"der Arzttermin","k":"진료 예약","a":"n12","g":"der"},{"d":"die Sprechstunde","k":"상담 시간, 진료 시간","a":"n14","g":"die"},{"d":"die Beratung","k":"상담","a":"n16","g":"die"},{"d":"der Kunde","k":"고객 (남자)","a":"n18","g":"der"},{"d":"die Kundin","k":"고객 (여자)","a":"n20","g":"die"},{"d":"der Raum","k":"방, 회의실","a":"n22","g":"der"},{"d":"der Test","k":"시험, 테스트","a":"n24","g":"der"},{"d":"das Kino","k":"영화관","a":"n26","g":"das"},{"d":"das Museum","k":"박물관, 미술관","a":"n28","g":"das"},{"d":"die Versichertenkarte","k":"건강 보험 카드","a":"n30","g":"die"},{"d":"die Minute","k":"분","a":"n32","g":"die"},{"d":"können","k":"~할 수 있다","a":"n34","g":""},{"d":"müssen","k":"~해야 한다","a":"n36","g":""},{"d":"wollen","k":"~하려고 하다","a":"n38","g":""},{"d":"vereinbaren","k":"(약속을) 정하다, 예약하다","a":"n40","g":""},{"d":"verschieben","k":"미루다, 옮기다","a":"n41","g":""},{"d":"absagen","k":"취소하다","a":"n43","g":""},{"d":"mitbringen","k":"가져오다","a":"n45","g":""},{"d":"besuchen","k":"방문하다, 찾아가다","a":"n47","g":""},{"d":"treffen","k":"만나다","a":"n49","g":""},{"d":"fragen","k":"묻다","a":"n51","g":""},{"d":"schwimmen","k":"수영하다","a":"n53","g":""},{"d":"spielen","k":"놀다, (운동이나 악기를) 하다","a":"n55","g":""},{"d":"bleiben","k":"머무르다","a":"n57","g":""},{"d":"warten","k":"기다리다","a":"n59","g":""},{"d":"telefonieren","k":"전화로 이야기하다","a":"n61","g":""},{"d":"Zeit haben","k":"시간이 있다","a":"n63","g":""},{"d":"frei","k":"비어 있는, 쉬는","a":"n65","g":""},{"d":"gern","k":"기꺼이, 즐겨","a":"n67","g":""},{"d":"natürlich","k":"물론","a":"n69","g":""},{"d":"vielleicht","k":"아마, 어쩌면","a":"n71","g":""},{"d":"schade","k":"아쉬운","a":"n73","g":""},{"d":"Das geht.","k":"돼요, 괜찮아요","a":"n75","g":""},{"d":"Das geht leider nicht.","k":"아쉽지만 안 돼요","a":"n77","g":""},{"d":"pünktlich","k":"제시간에, 시간을 잘 지키는","a":"n79","g":""},{"d":"zu spät","k":"너무 늦은, 늦게","a":"n81","g":""},{"d":"wichtig","k":"중요한","a":"n83","g":""},{"d":"heute Abend","k":"오늘 저녁","a":"n85","g":""},{"d":"übermorgen","k":"모레","a":"n87","g":""},{"d":"nächste Woche","k":"다음 주","a":"n89","g":""}],"dlg":{"A":[["Lena","Lena","le01","Jiu, hast du am Freitagabend Zeit? Ich will ins Kino gehen.","Jiu 씨, 금요일 저녁에 시간 있어요? 영화 보러 가려고요."],["Jiu","Jiu","ji01","Am Freitag kann ich leider nicht. Ich muss lernen. Am Montag haben wir einen Test.","금요일에는 아쉽지만 안 돼요. 공부해야 해요. 월요일에 시험이 있거든요."],["Lena","Lena","le02","Schade! Und am Samstag?","아쉽네요! 그럼 토요일은요?"],["Jiu","Jiu","ji02","Am Samstag muss ich am Vormittag einkaufen. Aber am Nachmittag habe ich Zeit.","토요일 오전에는 장을 봐야 해요. 그렇지만 오후에는 시간이 있어요."],["Lena","Lena","le03","Super! Wollen wir zusammen schwimmen gehen?","잘됐네요! 우리 같이 수영하러 갈까요?"],["Jiu","Jiu","ji03","Schwimmen? Ich kann leider nicht gut schwimmen.","수영이요? 저는 수영을 잘 못해요."],["Lena","Lena","le04","Kein Problem. Dann gehen wir ins Museum. Um drei?","괜찮아요. 그럼 박물관에 가요. 세 시에요?"],["Jiu","Jiu","ji04","Ja, gern. Um drei passt es gut.","네, 좋아요. 세 시 좋아요."],["Lena","Lena","le05","Und am Abend können wir zusammen kochen.","그리고 저녁에는 같이 요리할 수 있어요."],["Jiu","Jiu","ji05","Gute Idee! Ich kann Bulgogi machen.","좋은 생각이에요! 제가 불고기를 만들 수 있어요."]],"B":[["Dohyun","Dohyun","do01","Frau Hoffmann, haben Sie kurz Zeit?","Frau Hoffmann, 잠깐 시간 있으세요?"],["Hoffmann","Frau Hoffmann","ho01","Ja, natürlich, Herr Park.","네, 물론이죠, Herr Park."],["Dohyun","Dohyun","do02","Die Besprechung ist am Dienstag um zehn. Aber am Dienstag muss ich einen Kunden besuchen. Können wir den Termin verschieben?","회의가 화요일 열 시예요. 그런데 화요일에 고객을 방문해야 해요. 일정을 옮길 수 있을까요?"],["Hoffmann","Frau Hoffmann","ho02","Kein Problem. Können Sie am Mittwoch?","문제없어요. 수요일은 되세요?"],["Dohyun","Dohyun","do03","Am Mittwochvormittag habe ich schon einen Termin. Aber am Nachmittag kann ich.","수요일 오전에는 이미 약속이 있어요. 그렇지만 오후에는 돼요."],["Hoffmann","Frau Hoffmann","ho03","Gut. Dann am Mittwoch um vierzehn Uhr?","좋아요. 그럼 수요일 14시는요?"],["Dohyun","Dohyun","do04","Ja, das geht. Vielen Dank!","네, 됩니다. 감사합니다!"],["Hoffmann","Frau Hoffmann","ho04","Ich muss noch Markus fragen. Er will auch kommen.","Markus에게도 물어봐야 해요. Markus도 오려고 하거든요."],["Dohyun","Dohyun","do05","Ich kann Markus eine E-Mail schreiben.","제가 Markus에게 이메일을 쓸 수 있어요."],["Hoffmann","Frau Hoffmann","ho05","Sehr gut. Also: Mittwoch, vierzehn Uhr, Raum drei.","아주 좋아요. 그럼 수요일 14시, 3번 회의실이에요."]],"C":[["Frau","Mitarbeiterin","fr01","Praxis Dr. Neumann, guten Tag!","Dr. Neumann 병원입니다, 안녕하세요!"],["Sora","Sora","so01","Guten Tag, hier ist Sora Lee. Ich möchte einen Termin für meine Tochter vereinbaren.","안녕하세요, 이소라입니다. 딸의 진료를 예약하고 싶어요."],["Frau","Mitarbeiterin","fr02","Gern. Wann können Sie kommen?","네. 언제 오실 수 있어요?"],["Sora","Sora","so02","Am Mittwoch oder am Donnerstag, am Nachmittag.","수요일이나 목요일 오후에요."],["Frau","Mitarbeiterin","fr03","Am Mittwoch haben wir leider keinen Termin frei. Können Sie am Donnerstag um 15.30 Uhr kommen?","수요일에는 아쉽게도 빈 시간이 없어요. 목요일 15시 30분에 오실 수 있어요?"],["Sora","Sora","so03","Um halb vier? Ja, das geht.","세 시 반이요? 네, 돼요."],["Frau","Mitarbeiterin","fr04","Wie heißt Ihre Tochter?","따님 이름이 어떻게 되나요?"],["Sora","Sora","so04","Hana Lee. Ich buchstabiere: L, E, E.","Hana Lee예요. 철자를 불러 드릴게요. L, E, E."],["Frau","Mitarbeiterin","fr05","Danke, Frau Lee. Sie müssen die Versichertenkarte mitbringen.","감사합니다, Frau Lee. 건강 보험 카드를 가져오셔야 해요."],["Sora","Sora","so05","Ja, natürlich. Vielen Dank! Bis Donnerstag.","네, 물론이죠. 감사합니다! 목요일에 뵐게요."],["Frau","Mitarbeiterin","fr06","Bis Donnerstag. Auf Wiederhören!","목요일에 뵙겠습니다. 안녕히 계세요!"]]},"pw":[{"d":"der Morgen","k":"아침","a":"","g":"der"},{"d":"der Vormittag","k":"오전","a":"","g":"der"},{"d":"der Mittag","k":"정오, 점심때","a":"","g":"der"},{"d":"der Nachmittag","k":"오후","a":"","g":"der"},{"d":"der Abend","k":"저녁","a":"","g":"der"},{"d":"die Nacht","k":"밤","a":"","g":"die"},{"d":"der Tag","k":"날, 하루","a":"","g":"der"},{"d":"die Woche","k":"주","a":"","g":"die"},{"d":"das Wochenende","k":"주말","a":"","g":"das"},{"d":"die Uhr","k":"시계, ~시","a":"","g":"die"},{"d":"die Stunde","k":"시간 (60분)","a":"","g":"die"},{"d":"aufstehen","k":"일어나다","a":"","g":""},{"d":"frühstücken","k":"아침을 먹다","a":"","g":""},{"d":"anfangen","k":"시작하다","a":"","g":""},{"d":"fahren","k":"타고 가다","a":"","g":""},{"d":"gehen","k":"가다","a":"","g":""},{"d":"einkaufen","k":"장을 보다","a":"","g":""},{"d":"kochen","k":"요리하다","a":"","g":""},{"d":"fernsehen","k":"텔레비전을 보다","a":"","g":""},{"d":"anrufen","k":"전화하다","a":"","g":""},{"d":"schlafen","k":"자다","a":"","g":""},{"d":"lesen","k":"읽다","a":"","g":""},{"d":"mitkommen","k":"같이 가다","a":"","g":""},{"d":"machen","k":"하다","a":"","g":""},{"d":"die Arbeit","k":"일, 직장","a":"","g":"die"},{"d":"die Pause","k":"쉬는 시간","a":"","g":"die"},{"d":"die Besprechung","k":"회의","a":"","g":"die"},{"d":"der Unterricht","k":"수업","a":"","g":"der"},{"d":"wann","k":"언제","a":"","g":""},{"d":"um","k":"~시에","a":"","g":""},{"d":"bis","k":"~까지","a":"","g":""},{"d":"früh","k":"일찍","a":"","g":""},{"d":"spät","k":"늦은, 늦게","a":"","g":""},{"d":"lange","k":"오래","a":"","g":""},{"d":"immer","k":"항상","a":"","g":""},{"d":"oft","k":"자주","a":"","g":""},{"d":"manchmal","k":"가끔","a":"","g":""},{"d":"nie","k":"전혀 ~ 않다","a":"","g":""},{"d":"dann","k":"그다음에","a":"","g":""},{"d":"morgen","k":"내일","a":"","g":""}],"rolle":{"dlg":"B","roles":["Dohyun","Hoffmann"]}}</script>
-<script src="../../../erwachsene/lektion.js?v=1020dec3"></script>
+<script src="../../../erwachsene/lektion.js?v=47261b7b"></script>
 </body>
 </html>

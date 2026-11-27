@@ -500,10 +500,11 @@ def cmd_site():
     op = 0
     while op+1 in ready and op < last: op += 1
     for f in book['feste']: f['ok'] = 1 if f['n'] in ready else 0
+    sys.path.insert(0, os.path.join(os.path.dirname(K), 'tools')); import fz; fz.muss(['kinder/tools/shell.html'])          # 글자 크기 배율(오른쪽 위 「가」 버튼)을 따르는지
     shell = open(f'{T}/shell.html', encoding='utf-8').read()
     rd = lambda f: open(f'{T}/blocks/{f}', encoding='utf-8').read()
     ver = datetime.datetime.now().strftime('%Y%m%d%H%M')
-    for a, b in (('<!--SODA_THEME_JS-->', rd('soda-theme-js.html')), ('/*SODA_DARK_SHARED*/', rd('soda-dark-shared.css')), ('<!--A2HS-->', rd('a2hs.html')),
+    for a, b in (('<!--SODA_THEME_JS-->', rd('soda-theme-js.html')), ('<!--SODA_FZ-->', rd('soda-fz.html')), ('/*SODA_DARK_SHARED*/', rd('soda-dark-shared.css')), ('<!--A2HS-->', rd('a2hs.html')),
                  ('__BUILD__', ver), ('__OPEN__', str(op)), ('__BOOK__', json.dumps(book['book'], ensure_ascii=False, separators=(',', ':'))),
                  ('__FESTE__', json.dumps(book['feste'], ensure_ascii=False, separators=(',', ':')))):
         assert shell.count(a) == 1, a; shell = shell.replace(a, b)
