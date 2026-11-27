@@ -1,0 +1,81 @@
+{
+ "job": "a21_sa_01",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a2-1/2",
+   "who": "Sabine",
+   "parts": [
+    "Oh, schön! Wer ist der Junge neben Lukas?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Sabine",
+   "parts": [
+    "Und das Mädchen hier? Sie hat schöne lange Haare."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Sabine",
+   "parts": [
+    "Und wo bist du, Yuna?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Sabine",
+   "parts": [
+    "Stimmt! Das ist ein lustiges Foto."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Sabine",
+   "parts": [
+    "Stimmt. Wenn alle am Tisch sitzen, wollen wir zusammen sprechen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Sabine",
+   "parts": [
+    "Danke! Und wenn du fertig bist, kannst du Elif antworten."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Sabine",
+   "parts": [
+    "Ich bin deine Mutter. Ich weiß alles!"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sabine",
+   "parts": [
+    "Guten Morgen! Heute ist Samstag. Hier ist der Putzplan."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sabine",
+   "parts": [
+    "Du musst im Wohnzimmer staubsaugen und den Müll rausbringen."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sabine",
+   "parts": [
+    "Räumst du bitte die Spülmaschine aus, Yuna?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Oh, schön! Wer ist der Junge neben Lukas? [pause] Und das Mädchen hier? Sie hat schöne lange Haare. [pause] Und wo bist du, Yuna? [pause] Stimmt! Das ist ein lustiges Foto. [pause] Stimmt. Wenn alle am Tisch sitzen, wollen wir zusammen sprechen. [pause] Danke! Und wenn du fertig bist, kannst du Elif antworten. [pause] Ich bin deine Mutter. Ich weiß alles! [pause] Guten Morgen! Heute ist Samstag. Hier ist der Putzplan. [pause] Du musst im Wohnzimmer staubsaugen und den Müll rausbringen. [pause] Räumst du bitte die Spülmaschine aus, Yuna? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

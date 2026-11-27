@@ -1,0 +1,91 @@
+{
+ "job": "a22_n_07",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Bettwäsche.",
+    "Die Bettwäsche bekommt ihr von uns."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "der Schlüssel, die Schlüssel.",
+    "Wo ist der Schlüssel?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Rezeption.",
+    "Fragen Sie bitte an der Rezeption."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Information, die Informationen.",
+    "Vielen Dank für die Informationen."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "reservieren, hat reserviert.",
+    "Ich möchte ein Zimmer reservieren."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "wissen, du weißt, er weiß.",
+    "Ich weiß es nicht."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "ob.",
+    "Ich weiß nicht, ob er kommt."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "der Vorschlag, die Vorschläge.",
+    "Ich habe einen Vorschlag."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "vorschlagen, du schlägst vor, er schlägt vor.",
+    "Was schlägst du vor?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "dafür.",
+    "Ich bin dafür."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Bettwäsche. Die Bettwäsche bekommt ihr von uns. [pause] der Schlüssel, die Schlüssel. Wo ist der Schlüssel? [pause] die Rezeption. Fragen Sie bitte an der Rezeption. [pause] die Information, die Informationen. Vielen Dank für die Informationen. [pause] reservieren, hat reserviert. Ich möchte ein Zimmer reservieren. [pause] wissen, du weißt, er weiß. Ich weiß es nicht. [pause] ob. Ich weiß nicht, ob er kommt. [pause] der Vorschlag, die Vorschläge. Ich habe einen Vorschlag. [pause] vorschlagen, du schlägst vor, er schlägt vor. Was schlägst du vor? [pause] dafür. Ich bin dafür. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

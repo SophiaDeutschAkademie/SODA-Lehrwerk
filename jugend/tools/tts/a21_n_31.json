@@ -1,0 +1,87 @@
+{
+ "job": "a21_n_31",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "zurückgeben, hat zurückgegeben.",
+    "Ich gebe die Jacke zurück."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "zurückbekommen, hat zurückbekommen.",
+    "Du bekommst das Geld zurück."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "zurückschicken, hat zurückgeschickt.",
+    "Ich schicke die Schuhe zurück."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "gehören, hat gehört.",
+    "Die Tasche gehört mir."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "die Bewertung, die Bewertungen.",
+    "Ich lese zuerst die Bewertungen."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "der Stern, die Sterne.",
+    "Ich gebe fünf Sterne."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "grüne, grüner, grünen"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "eine neue Jacke, ein neuer Pullover, mit dem neuen Hemd"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "Das Mädchen mit der grünen Jacke trägt weiße Schuhe."
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "N",
+   "parts": [
+    "Ich freue mich auf das Spiel."
+   ]
+  }
+ ],
+ "script": "Also. [pause] zurückgeben, hat zurückgegeben. Ich gebe die Jacke zurück. [pause] zurückbekommen, hat zurückbekommen. Du bekommst das Geld zurück. [pause] zurückschicken, hat zurückgeschickt. Ich schicke die Schuhe zurück. [pause] gehören, hat gehört. Die Tasche gehört mir. [pause] die Bewertung, die Bewertungen. Ich lese zuerst die Bewertungen. [pause] der Stern, die Sterne. Ich gebe fünf Sterne. [pause] grüne, grüner, grünen [pause] eine neue Jacke, ein neuer Pullover, mit dem neuen Hemd [pause] Das Mädchen mit der grünen Jacke trägt weiße Schuhe. [pause] Ich freue mich auf das Spiel. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,18 @@
+{
+ "job": "a22_fr_02",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag, hier ist die Jugendherberge. Was möchten Sie wissen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag, hier ist die Jugendherberge. Was möchten Sie wissen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

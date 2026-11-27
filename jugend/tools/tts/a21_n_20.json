@@ -1,0 +1,84 @@
+{
+ "job": "a21_n_20",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Zeit, zehn, tanzen, Tanz"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "sich, sieben, Sonntag, sehr"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Am Sonntag tanzen sieben Kinder zusammen."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Rezept"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Pfannkuchen"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Man braucht ein Kilo Kartoffeln."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Ich hätte gern die Suppe."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Zutat, die Zutaten.",
+    "Wir haben alle Zutaten."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Kartoffel, die Kartoffeln.",
+    "Ich esse gern Kartoffeln."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Tomate, die Tomaten.",
+    "Die Tomaten sind frisch."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Zeit, zehn, tanzen, Tanz [pause] sich, sieben, Sonntag, sehr [pause] Am Sonntag tanzen sieben Kinder zusammen. [pause] das Rezept [pause] der Pfannkuchen [pause] Man braucht ein Kilo Kartoffeln. [pause] Ich hätte gern die Suppe. [pause] die Zutat, die Zutaten. Wir haben alle Zutaten. [pause] die Kartoffel, die Kartoffeln. Ich esse gern Kartoffeln. [pause] die Tomate, die Tomaten. Die Tomaten sind frisch. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

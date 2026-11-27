@@ -1,0 +1,74 @@
+{
+ "job": "a21_lu_05",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a2-1/station-2",
+   "who": "Lukas",
+   "parts": [
+    "Am Sonntag war ich mit Lea in der Stadt. Sie hat neue Sneaker gekauft."
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "Lukas",
+   "parts": [
+    "Die Sneaker passen ihr gut, aber sie waren sehr teuer!"
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "Lukas",
+   "parts": [
+    "Fertig! Der Pfannkuchen schmeckt sehr gut."
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "Lukas",
+   "parts": [
+    "Unser Video dauert zwei Minuten."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Yuna, kommst du heute mit ins Schwimmbad?"
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Schade. Wie lange dauert das Training?"
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Und morgen? Hast du morgen Zeit?"
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Super. Wir treffen uns um vier an der Haltestelle."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Wie sieht dein Freund oder deine Freundin aus?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Am Sonntag war ich mit Lea in der Stadt. Sie hat neue Sneaker gekauft. [pause] Die Sneaker passen ihr gut, aber sie waren sehr teuer! [pause] Fertig! Der Pfannkuchen schmeckt sehr gut. [pause] Unser Video dauert zwei Minuten. [pause] Yuna, kommst du heute mit ins Schwimmbad? [pause] Schade. Wie lange dauert das Training? [pause] Und morgen? Hast du morgen Zeit? [pause] Super. Wir treffen uns um vier an der Haltestelle. [pause] Wie sieht dein Freund oder deine Freundin aus? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,60 @@
+{
+ "job": "a21_ma_02",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-1/7",
+   "who": "Mann",
+   "parts": [
+    "Die Sporthalle? Die ist nicht weit. Geht hier über die Straße und dann durch den Park."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Mann",
+   "parts": [
+    "Dann geht ihr an der Schule vorbei bis zur Ampel."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Mann",
+   "parts": [
+    "An der Ampel geht ihr über die Brücke. Die Sporthalle ist gegenüber vom Schwimmbad."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Mann",
+   "parts": [
+    "Ungefähr fünfzehn Minuten."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Mann",
+   "parts": [
+    "Gern. Viel Spaß beim Spiel!"
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Gehen Sie über die Brücke und dann am Rathaus vorbei. Das Museum ist gegenüber vom Kino."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Wofür interessierst du dich?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Die Sporthalle? Die ist nicht weit. Geht hier über die Straße und dann durch den Park. [pause] Dann geht ihr an der Schule vorbei bis zur Ampel. [pause] An der Ampel geht ihr über die Brücke. Die Sporthalle ist gegenüber vom Schwimmbad. [pause] Ungefähr fünfzehn Minuten. [pause] Gern. Viel Spaß beim Spiel! [pause] Gehen Sie über die Brücke und dann am Rathaus vorbei. Das Museum ist gegenüber vom Kino. [pause] Wofür interessierst du dich? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

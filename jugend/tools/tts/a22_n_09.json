@@ -1,0 +1,89 @@
+{
+ "job": "a22_n_09",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Der Müll wird getrennt."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Du solltest das Licht ausmachen."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Umwelt.",
+    "Das ist gut für die Umwelt."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "trennen, hat getrennt.",
+    "Wir trennen den Müll."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "sammeln, hat gesammelt.",
+    "Die Klasse sammelt Müll am Rhein."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Tonne, die Tonnen.",
+    "Die gelbe Tonne ist voll."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "der Restmüll.",
+    "Das kommt in den Restmüll."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "das Plastik.",
+    "Die Flasche ist aus Plastik."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "das Papier.",
+    "Papier kommt in die blaue Tonne."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Dose, die Dosen.",
+    "Ich kaufe keine Dosen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Der Müll wird getrennt. [pause] Du solltest das Licht ausmachen. [pause] die Umwelt. Das ist gut für die Umwelt. [pause] trennen, hat getrennt. Wir trennen den Müll. [pause] sammeln, hat gesammelt. Die Klasse sammelt Müll am Rhein. [pause] die Tonne, die Tonnen. Die gelbe Tonne ist voll. [pause] der Restmüll. Das kommt in den Restmüll. [pause] das Plastik. Die Flasche ist aus Plastik. [pause] das Papier. Papier kommt in die blaue Tonne. [pause] die Dose, die Dosen. Ich kaufe keine Dosen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

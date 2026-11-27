@@ -1,0 +1,81 @@
+{
+ "job": "a22_th_03",
+ "who": "Thomas",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a2-2/7",
+   "who": "Thomas",
+   "parts": [
+    "Sie kamen nie wieder."
+   ]
+  },
+  {
+   "pid": "a2-2/8",
+   "who": "Thomas",
+   "parts": [
+    "Als Yuna zu uns kam, war sie unser Gast. Jetzt gehört sie zur Familie. Wir sind stolz auf dich, Yuna."
+   ]
+  },
+  {
+   "pid": "a2-2/8",
+   "who": "Thomas",
+   "parts": [
+    "Wir sind stolz auf dich."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Thomas",
+   "parts": [
+    "Als ich fünfzehn war, wollte ich Musiker werden."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Thomas",
+   "parts": [
+    "Als ich fünfzehn war, wohnte ich in einer kleinen Stadt."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Thomas",
+   "parts": [
+    "Es gab kein Kino. Immer wenn wir einen Film sehen wollten, mussten wir mit dem Bus fahren."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Thomas",
+   "parts": [
+    "Ich hatte wenig Taschengeld. Deshalb habe ich am Samstag in einem Restaurant geholfen."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Thomas",
+   "parts": [
+    "Dort hat mir das Kochen viel Spaß gemacht."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Thomas",
+   "parts": [
+    "Nach der Schule habe ich eine Ausbildung gemacht. Heute bin ich Koch und habe ein Restaurant."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Thomas",
+   "parts": [
+    "Was machst du für die Umwelt?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Sie kamen nie wieder. [pause] Als Yuna zu uns kam, war sie unser Gast. Jetzt gehört sie zur Familie. Wir sind stolz auf dich, Yuna. [pause] Wir sind stolz auf dich. [pause] Als ich fünfzehn war, wollte ich Musiker werden. [pause] Als ich fünfzehn war, wohnte ich in einer kleinen Stadt. [pause] Es gab kein Kino. Immer wenn wir einen Film sehen wollten, mussten wir mit dem Bus fahren. [pause] Ich hatte wenig Taschengeld. Deshalb habe ich am Samstag in einem Restaurant geholfen. [pause] Dort hat mir das Kochen viel Spaß gemacht. [pause] Nach der Schule habe ich eine Ausbildung gemacht. Heute bin ich Koch und habe ein Restaurant. [pause] Was machst du für die Umwelt? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

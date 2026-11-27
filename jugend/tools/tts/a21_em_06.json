@@ -1,0 +1,39 @@
+{
+ "job": "a21_em_06",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a2-1/8",
+   "who": "Emma",
+   "parts": [
+    "Elif hat nichts gekauft. Die Jacken haben ihr nicht gefallen."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Emma",
+   "parts": [
+    "Morgen trage ich den neuen Rock in der Schule."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Emma",
+   "parts": [
+    "Der Junge mit der roten Mütze ist Paul."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Emma",
+   "parts": [
+    "Warum lernst du Deutsch?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Elif hat nichts gekauft. Die Jacken haben ihr nicht gefallen. [pause] Morgen trage ich den neuen Rock in der Schule. [pause] Der Junge mit der roten Mütze ist Paul. [pause] Warum lernst du Deutsch? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

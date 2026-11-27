@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_26",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "der Weg, die Wege.",
+    "Wir suchen den Weg zur Sporthalle."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "die Ampel, die Ampeln.",
+    "Geh bis zur Ampel."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "die Kreuzung, die Kreuzungen.",
+    "An der Kreuzung gehst du links."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "die Brücke, die Brücken.",
+    "Wir gehen über die Brücke."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "die Ecke, die Ecken.",
+    "Der Supermarkt ist an der Ecke."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "das Rathaus, die Rathäuser.",
+    "Das Rathaus ist alt."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "die Kirche, die Kirchen.",
+    "Die Kirche ist neben dem Rathaus."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "durch.",
+    "Wir gehen durch den Park."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "über.",
+    "Geh über die Straße."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "an … vorbei.",
+    "Wir gehen am Kino vorbei."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Weg, die Wege. Wir suchen den Weg zur Sporthalle. [pause] die Ampel, die Ampeln. Geh bis zur Ampel. [pause] die Kreuzung, die Kreuzungen. An der Kreuzung gehst du links. [pause] die Brücke, die Brücken. Wir gehen über die Brücke. [pause] die Ecke, die Ecken. Der Supermarkt ist an der Ecke. [pause] das Rathaus, die Rathäuser. Das Rathaus ist alt. [pause] die Kirche, die Kirchen. Die Kirche ist neben dem Rathaus. [pause] durch. Wir gehen durch den Park. [pause] über. Geh über die Straße. [pause] an … vorbei. Wir gehen am Kino vorbei. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

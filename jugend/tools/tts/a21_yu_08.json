@@ -1,0 +1,39 @@
+{
+ "job": "a21_yu_08",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Ich kann leider nicht, weil ich heute Volleyballtraining habe."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Bis halb sieben. Danach muss ich noch die Spülmaschine ausräumen."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Ja, morgen habe ich frei. Wenn es nicht regnet, komme ich mit."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Was für Kleidung trägst du gern?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich kann leider nicht, weil ich heute Volleyballtraining habe. [pause] Bis halb sieben. Danach muss ich noch die Spülmaschine ausräumen. [pause] Ja, morgen habe ich frei. Wenn es nicht regnet, komme ich mit. [pause] Was für Kleidung trägst du gern? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

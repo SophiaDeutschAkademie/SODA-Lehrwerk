@@ -1,0 +1,81 @@
+{
+ "job": "a21_yu_06",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a2-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Ich lerne seit einem Jahr Deutsch."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Könnten Sie uns helfen?"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Eine leichte Jacke für den Sommer. Meine alte Jacke ist zu warm."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Nicht schlecht. Aber ich mag keine engen Jacken."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Stimmt, die gefällt mir. Sie ist weit und bequem."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Sie passt mir gut. Und, wie sehe ich aus?"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Dann nehme ich sie. Was kostet sie?"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Guten Tag. Ich habe letzte Woche diese Jacke gekauft. Leider ist der Reißverschluss kaputt."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Ja, hier bitte. Kann ich die Jacke umtauschen?"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Ja, gern. In Grün und in Größe S, bitte."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich lerne seit einem Jahr Deutsch. [pause] Könnten Sie uns helfen? [pause] Eine leichte Jacke für den Sommer. Meine alte Jacke ist zu warm. [pause] Nicht schlecht. Aber ich mag keine engen Jacken. [pause] Stimmt, die gefällt mir. Sie ist weit und bequem. [pause] Sie passt mir gut. Und, wie sehe ich aus? [pause] Dann nehme ich sie. Was kostet sie? [pause] Guten Tag. Ich habe letzte Woche diese Jacke gekauft. Leider ist der Reißverschluss kaputt. [pause] Ja, hier bitte. Kann ich die Jacke umtauschen? [pause] Ja, gern. In Grün und in Größe S, bitte. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

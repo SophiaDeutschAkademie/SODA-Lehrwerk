@@ -1,0 +1,81 @@
+{
+ "job": "a21_sa_02",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "Sabine",
+   "parts": [
+    "Stell sie in den Schrank neben dem Fenster. Die Gläser stehen im Regal."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sabine",
+   "parts": [
+    "Leg sie bitte in die Schublade."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sabine",
+   "parts": [
+    "Und ich musste jeden Tag den Tisch decken. Ich wollte lieber draußen spielen."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sabine",
+   "parts": [
+    "Nur am Wochenende. In der Woche durften wir nicht fernsehen."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sabine",
+   "parts": [
+    "Stell die Gläser bitte auf den Tisch."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sabine",
+   "parts": [
+    "Die Gläser stehen im Regal."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sabine",
+   "parts": [
+    "Eine große Flasche Wasser für alle, bitte."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sabine",
+   "parts": [
+    "Ich hätte gern die Tomatensuppe und den frischen Fisch."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sabine",
+   "parts": [
+    "Ja, sehr gut. Die Rechnung, bitte."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sabine",
+   "parts": [
+    "Danke, Thomas. Das war ein schöner Muttertag!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Stell sie in den Schrank neben dem Fenster. Die Gläser stehen im Regal. [pause] Leg sie bitte in die Schublade. [pause] Und ich musste jeden Tag den Tisch decken. Ich wollte lieber draußen spielen. [pause] Nur am Wochenende. In der Woche durften wir nicht fernsehen. [pause] Stell die Gläser bitte auf den Tisch. [pause] Die Gläser stehen im Regal. [pause] Eine große Flasche Wasser für alle, bitte. [pause] Ich hätte gern die Tomatensuppe und den frischen Fisch. [pause] Ja, sehr gut. Die Rechnung, bitte. [pause] Danke, Thomas. Das war ein schöner Muttertag! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

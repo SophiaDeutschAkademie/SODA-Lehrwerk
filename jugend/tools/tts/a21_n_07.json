@@ -1,0 +1,89 @@
+{
+ "job": "a21_n_07",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "sagen, hat gesagt.",
+    "Was hat er gesagt?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "glauben, hat geglaubt.",
+    "Ich glaube, dass es Elif ist."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "dass."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "beschreiben, hat beschrieben.",
+    "Beschreibt eine Person!"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "kennen, hat gekannt.",
+    "Kennst du Paul?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "die Person, die Personen.",
+    "Wer ist die Person?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "immer.",
+    "Er kommt immer zu spät."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "ein bisschen.",
+    "Ich bin ein bisschen müde."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "Stimmt!",
+    "Stimmt! Das ist Elif."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "lustig, ruhig, fleißig, lockig"
+   ]
+  }
+ ],
+ "script": "Also. [pause] sagen, hat gesagt. Was hat er gesagt? [pause] glauben, hat geglaubt. Ich glaube, dass es Elif ist. [pause] dass. [pause] beschreiben, hat beschrieben. Beschreibt eine Person! [pause] kennen, hat gekannt. Kennst du Paul? [pause] die Person, die Personen. Wer ist die Person? [pause] immer. Er kommt immer zu spät. [pause] ein bisschen. Ich bin ein bisschen müde. [pause] Stimmt! Stimmt! Das ist Elif. [pause] lustig, ruhig, fleißig, lockig [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

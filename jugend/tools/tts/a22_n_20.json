@@ -1,0 +1,90 @@
+{
+ "job": "a22_n_20",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "versprechen, du versprichst, er verspricht.",
+    "Ich verspreche es dir."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "Ich hätte gern …",
+    "Ich hätte gern einen Hund."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "Ich wäre gern …",
+    "Ich wäre jetzt gern am Meer."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "Ich würde gern …",
+    "Ich würde gern nach Japan reisen."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "reisen, ist gereist.",
+    "Wir reisen im Sommer nach Korea."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "selbst.",
+    "Ich bezahle das selbst."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "genug.",
+    "Ich habe nicht genug Geld."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "etwas.",
+    "Ich brauche etwas Geld."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "ganz.",
+    "Ich habe mein ganzes Geld ausgegeben."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "hatte, hätte"
+   ]
+  }
+ ],
+ "script": "Also. [pause] versprechen, du versprichst, er verspricht. Ich verspreche es dir. [pause] Ich hätte gern … Ich hätte gern einen Hund. [pause] Ich wäre gern … Ich wäre jetzt gern am Meer. [pause] Ich würde gern … Ich würde gern nach Japan reisen. [pause] reisen, ist gereist. Wir reisen im Sommer nach Korea. [pause] selbst. Ich bezahle das selbst. [pause] genug. Ich habe nicht genug Geld. [pause] etwas. Ich brauche etwas Geld. [pause] ganz. Ich habe mein ganzes Geld ausgegeben. [pause] hatte, hätte [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

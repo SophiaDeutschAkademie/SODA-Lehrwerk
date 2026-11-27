@@ -1,0 +1,81 @@
+{
+ "job": "a22_th_01",
+ "who": "Thomas",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "Thomas",
+   "parts": [
+    "Na, Emma, willst du jetzt auch Köchin werden?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Thomas",
+   "parts": [
+    "Und du, Yuna? Was willst du werden?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Thomas",
+   "parts": [
+    "Und Lukas? Will er Fußballspieler werden?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Thomas",
+   "parts": [
+    "Was willst du werden?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Thomas",
+   "parts": [
+    "Nein, Plastik kommt in die gelbe Tonne. Bei uns wird der Müll getrennt."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Thomas",
+   "parts": [
+    "Papier wird in der blauen Tonne gesammelt. Obst und Gemüse kommen in die braune Tonne."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Thomas",
+   "parts": [
+    "Und was machst du für die Umwelt, Emma?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Thomas",
+   "parts": [
+    "Sehr gut. Aber du solltest auch das Licht ausmachen, wenn du aus dem Zimmer gehst!"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Thomas",
+   "parts": [
+    "Du solltest eine Jacke mitnehmen. Am Abend wird es kalt."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Thomas",
+   "parts": [
+    "Bei uns wird der Müll getrennt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Na, Emma, willst du jetzt auch Köchin werden? [pause] Und du, Yuna? Was willst du werden? [pause] Und Lukas? Will er Fußballspieler werden? [pause] Was willst du werden? [pause] Nein, Plastik kommt in die gelbe Tonne. Bei uns wird der Müll getrennt. [pause] Papier wird in der blauen Tonne gesammelt. Obst und Gemüse kommen in die braune Tonne. [pause] Und was machst du für die Umwelt, Emma? [pause] Sehr gut. Aber du solltest auch das Licht ausmachen, wenn du aus dem Zimmer gehst! [pause] Du solltest eine Jacke mitnehmen. Am Abend wird es kalt. [pause] Bei uns wird der Müll getrennt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

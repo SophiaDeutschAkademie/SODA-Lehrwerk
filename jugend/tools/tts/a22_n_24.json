@@ -1,0 +1,87 @@
+{
+ "job": "a22_n_24",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "der Brief, die Briefe.",
+    "Ich schreibe dir einen Brief."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "der Rat.",
+    "Ich brauche deinen Rat."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "An deiner Stelle …",
+    "An deiner Stelle würde ich warten."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Worüber?",
+    "Worüber sprecht ihr?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "immer noch.",
+    "Ich bin immer noch müde."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "nie wieder.",
+    "Das mache ich nie wieder."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Entschuldigung, Zeitung, lange, singen"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "denken, danke, krank, links"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Entschuldigung, ich denke schon lange an dich."
+   ]
+  },
+  {
+   "pid": "a2-2/7",
+   "who": "N",
+   "parts": [
+    "die Serie"
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Brief, die Briefe. Ich schreibe dir einen Brief. [pause] der Rat. Ich brauche deinen Rat. [pause] An deiner Stelle … An deiner Stelle würde ich warten. [pause] Worüber? Worüber sprecht ihr? [pause] immer noch. Ich bin immer noch müde. [pause] nie wieder. Das mache ich nie wieder. [pause] Entschuldigung, Zeitung, lange, singen [pause] denken, danke, krank, links [pause] Entschuldigung, ich denke schon lange an dich. [pause] die Serie [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

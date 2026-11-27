@@ -1,0 +1,60 @@
+{
+ "job": "a22_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-2/2",
+   "who": "Mann",
+   "parts": [
+    "Jugendherberge Berlin, guten Tag!"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Mann",
+   "parts": [
+    "Ah ja, die Klasse von Frau Schneider. Was möchtest du wissen?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Mann",
+   "parts": [
+    "Ja, im ganzen Haus. Es ist kostenlos."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Mann",
+   "parts": [
+    "Von sieben bis neun Uhr."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Mann",
+   "parts": [
+    "Vier oder sechs. Bettwäsche bekommt ihr von uns."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Mann",
+   "parts": [
+    "Nehmt die S-Bahn. Die Fahrt dauert nur zehn Minuten."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Mann",
+   "parts": [
+    "In den Zimmern gibt es kein WLAN. WLAN gibt es nur an der Rezeption."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Jugendherberge Berlin, guten Tag! [pause] Ah ja, die Klasse von Frau Schneider. Was möchtest du wissen? [pause] Ja, im ganzen Haus. Es ist kostenlos. [pause] Von sieben bis neun Uhr. [pause] Vier oder sechs. Bettwäsche bekommt ihr von uns. [pause] Nehmt die S-Bahn. Die Fahrt dauert nur zehn Minuten. [pause] In den Zimmern gibt es kein WLAN. WLAN gibt es nur an der Rezeption. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

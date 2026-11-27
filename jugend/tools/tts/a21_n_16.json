@@ -1,0 +1,82 @@
+{
+ "job": "a21_n_16",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Meine Schwester stellt den Stuhl ans Fenster."
+   ]
+  },
+  {
+   "pid": "a2-1/station-1",
+   "who": "N",
+   "parts": [
+    "Ich habe wenig geschlafen."
+   ]
+  },
+  {
+   "pid": "a2-1/station-1",
+   "who": "N",
+   "parts": [
+    "Er hat braune Augen."
+   ]
+  },
+  {
+   "pid": "a2-1/station-1",
+   "who": "N",
+   "parts": [
+    "Mein Handy ist langsam."
+   ]
+  },
+  {
+   "pid": "a2-1/station-1",
+   "who": "N",
+   "parts": [
+    "Die Küche ist sauber."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "der Verein"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "das Training"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Ich möchte mich anmelden."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Ich freue mich!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "der Verein, die Vereine.",
+    "Lukas spielt im Verein Fußball."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Meine Schwester stellt den Stuhl ans Fenster. [pause] Ich habe wenig geschlafen. [pause] Er hat braune Augen. [pause] Mein Handy ist langsam. [pause] Die Küche ist sauber. [pause] der Verein [pause] das Training [pause] Ich möchte mich anmelden. [pause] Ich freue mich! [pause] der Verein, die Vereine. Lukas spielt im Verein Fußball. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,74 @@
+{
+ "job": "a22_sc_02",
+ "who": "Schneider",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a2-2/2",
+   "who": "Schneider",
+   "parts": [
+    "Du, Lukas. Ruf bitte heute Nachmittag mit Yuna dort an."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Schneider",
+   "parts": [
+    "Wir fahren am Montag um acht Uhr mit dem Zug nach Berlin. Die Fahrt dauert ungefähr fünf Stunden."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Schneider",
+   "parts": [
+    "Am Dienstag besichtigen wir das Brandenburger Tor und den Reichstag."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Schneider",
+   "parts": [
+    "Am Mittwoch machen wir eine Fahrt mit dem Schiff. Am Nachmittag habt ihr frei."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Schneider",
+   "parts": [
+    "Am Donnerstag gehen wir ins Museum. Am Freitag fahren wir zurück."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Schneider",
+   "parts": [
+    "Bitte nehmt eine Regenjacke mit. Und packt nicht zu viel in den Koffer!"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Schneider",
+   "parts": [
+    "Morgen ist unser Umwelttag. Wir sammeln Müll am Rhein."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Schneider",
+   "parts": [
+    "Der Wetterbericht sagt: Morgen wird es sonnig und heiß, dreißig Grad."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Schneider",
+   "parts": [
+    "Richtig. Wir fangen um acht an. Ihr solltet viel Wasser mitbringen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Du, Lukas. Ruf bitte heute Nachmittag mit Yuna dort an. [pause] Wir fahren am Montag um acht Uhr mit dem Zug nach Berlin. Die Fahrt dauert ungefähr fünf Stunden. [pause] Am Dienstag besichtigen wir das Brandenburger Tor und den Reichstag. [pause] Am Mittwoch machen wir eine Fahrt mit dem Schiff. Am Nachmittag habt ihr frei. [pause] Am Donnerstag gehen wir ins Museum. Am Freitag fahren wir zurück. [pause] Bitte nehmt eine Regenjacke mit. Und packt nicht zu viel in den Koffer! [pause] Morgen ist unser Umwelttag. Wir sammeln Müll am Rhein. [pause] Der Wetterbericht sagt: Morgen wird es sonnig und heiß, dreißig Grad. [pause] Richtig. Wir fangen um acht an. Ihr solltet viel Wasser mitbringen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

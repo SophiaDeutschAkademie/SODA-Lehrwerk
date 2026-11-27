@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_21",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Mehl.",
+    "Für den Kuchen braucht man Mehl."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Zucker.",
+    "Nimmst du Zucker?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Salz.",
+    "Die Suppe braucht Salz."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Butter.",
+    "Ich esse Brot mit Butter."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Öl.",
+    "Man braucht ein bisschen Öl."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Kilo, die Kilo.",
+    "Ein Kilo Äpfel, bitte."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Gramm.",
+    "Man braucht zweihundert Gramm Käse."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Liter, die Liter.",
+    "Wir kaufen zwei Liter Milch."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Flasche, die Flaschen.",
+    "Eine Flasche Wasser, bitte."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Packung, die Packungen.",
+    "Ich kaufe eine Packung Nudeln."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Mehl. Für den Kuchen braucht man Mehl. [pause] der Zucker. Nimmst du Zucker? [pause] das Salz. Die Suppe braucht Salz. [pause] die Butter. Ich esse Brot mit Butter. [pause] das Öl. Man braucht ein bisschen Öl. [pause] das Kilo, die Kilo. Ein Kilo Äpfel, bitte. [pause] das Gramm. Man braucht zweihundert Gramm Käse. [pause] der Liter, die Liter. Wir kaufen zwei Liter Milch. [pause] die Flasche, die Flaschen. Eine Flasche Wasser, bitte. [pause] die Packung, die Packungen. Ich kaufe eine Packung Nudeln. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

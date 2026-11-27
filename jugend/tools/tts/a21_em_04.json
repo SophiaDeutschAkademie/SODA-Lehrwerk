@@ -1,0 +1,81 @@
+{
+ "job": "a21_em_04",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a2-1/station-1",
+   "who": "Emma",
+   "parts": [
+    "Hallo Oma! Danke für deine Nachricht. Ich antworte spät, weil ich viel für die Schule lernen musste."
+   ]
+  },
+  {
+   "pid": "a2-1/station-1",
+   "who": "Emma",
+   "parts": [
+    "Am Samstag haben wir die Wohnung geputzt. Ich musste staubsaugen und Yuna hat das Bad geputzt."
+   ]
+  },
+  {
+   "pid": "a2-1/station-1",
+   "who": "Emma",
+   "parts": [
+    "Yuna ist ein tolles Mädchen. Sie ist hilfsbereit und immer freundlich."
+   ]
+  },
+  {
+   "pid": "a2-1/station-1",
+   "who": "Emma",
+   "parts": [
+    "Papa sagt, dass du im Sommer zu uns kommst. Stimmt das?"
+   ]
+  },
+  {
+   "pid": "a2-1/station-1",
+   "who": "Emma",
+   "parts": [
+    "Wenn du kommst, zeige ich dir ein neues Foto von der Klasse!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Emma",
+   "parts": [
+    "Hallo, Herr Becker! Das ist Yuna. Sie wohnt bei uns."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Emma",
+   "parts": [
+    "Komm, Yuna, wir ziehen uns um. Beeil dich!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Emma",
+   "parts": [
+    "Wir treffen uns um vier in der Halle."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Emma",
+   "parts": [
+    "Was braucht man für Pfannkuchen?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Emma",
+   "parts": [
+    "Fertig! Und jetzt?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hallo Oma! Danke für deine Nachricht. Ich antworte spät, weil ich viel für die Schule lernen musste. [pause] Am Samstag haben wir die Wohnung geputzt. Ich musste staubsaugen und Yuna hat das Bad geputzt. [pause] Yuna ist ein tolles Mädchen. Sie ist hilfsbereit und immer freundlich. [pause] Papa sagt, dass du im Sommer zu uns kommst. Stimmt das? [pause] Wenn du kommst, zeige ich dir ein neues Foto von der Klasse! [pause] Hallo, Herr Becker! Das ist Yuna. Sie wohnt bei uns. [pause] Komm, Yuna, wir ziehen uns um. Beeil dich! [pause] Wir treffen uns um vier in der Halle. [pause] Was braucht man für Pfannkuchen? [pause] Fertig! Und jetzt? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

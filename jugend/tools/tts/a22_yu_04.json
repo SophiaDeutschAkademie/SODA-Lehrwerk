@@ -1,0 +1,81 @@
+{
+ "job": "a22_yu_04",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a2-2/station-1",
+   "who": "Yuna",
+   "parts": [
+    "Wir wissen noch nicht, ob das Wetter gut wird. Deshalb haben wir auch einen Plan für Regen."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Yuna",
+   "parts": [
+    "Die hätte ich gern. Meine alten Kopfhörer sind kaputt."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Yuna",
+   "parts": [
+    "Ich kann nicht. Ich habe in Berlin fast mein ganzes Taschengeld ausgegeben."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Yuna",
+   "parts": [
+    "Nur zwölf Euro. Kannst du mir dreißig Euro leihen?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Yuna",
+   "parts": [
+    "Ich gebe sie dir nächsten Monat zurück. Versprochen!"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Yuna",
+   "parts": [
+    "Ich würde so gern mehr Taschengeld bekommen!"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Yuna",
+   "parts": [
+    "Hier. Die Werbung sagt, dass sie die besten Kopfhörer für Schüler sind."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Yuna",
+   "parts": [
+    "Nein, noch nicht."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Yuna",
+   "parts": [
+    "Dann kann ich die Kopfhörer bald selbst bezahlen. Das wäre toll!"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Yuna",
+   "parts": [
+    "Ich gebe es dir morgen zurück."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wir wissen noch nicht, ob das Wetter gut wird. Deshalb haben wir auch einen Plan für Regen. [pause] Die hätte ich gern. Meine alten Kopfhörer sind kaputt. [pause] Ich kann nicht. Ich habe in Berlin fast mein ganzes Taschengeld ausgegeben. [pause] Nur zwölf Euro. Kannst du mir dreißig Euro leihen? [pause] Ich gebe sie dir nächsten Monat zurück. Versprochen! [pause] Ich würde so gern mehr Taschengeld bekommen! [pause] Hier. Die Werbung sagt, dass sie die besten Kopfhörer für Schüler sind. [pause] Nein, noch nicht. [pause] Dann kann ich die Kopfhörer bald selbst bezahlen. Das wäre toll! [pause] Ich gebe es dir morgen zurück. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

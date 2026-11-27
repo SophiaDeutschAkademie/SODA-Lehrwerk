@@ -1,0 +1,81 @@
+{
+ "job": "a21_yu_05",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "Yuna",
+   "parts": [
+    "Was macht man zuerst?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Yuna",
+   "parts": [
+    "Der erste Pfannkuchen ist fertig. Darf ich probieren?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Yuna",
+   "parts": [
+    "Sehr lecker! In Korea isst man Pfannkuchen mit Gemüse."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Yuna",
+   "parts": [
+    "Ich hätte gern den kleinen Salat und die Kartoffelsuppe."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Yuna",
+   "parts": [
+    "Darf ich probieren?"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Guten Tag. Wir hätten gern drei Fahrkarten nach Bonn."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Hin und zurück, bitte. Wann fährt der nächste Zug?"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Vielen Dank!"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Entschuldigung, könnten Sie uns helfen? Wir suchen die Sporthalle am Park."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Yuna",
+   "parts": [
+    "Wie lange brauchen wir zu Fuß?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Was macht man zuerst? [pause] Der erste Pfannkuchen ist fertig. Darf ich probieren? [pause] Sehr lecker! In Korea isst man Pfannkuchen mit Gemüse. [pause] Ich hätte gern den kleinen Salat und die Kartoffelsuppe. [pause] Darf ich probieren? [pause] Guten Tag. Wir hätten gern drei Fahrkarten nach Bonn. [pause] Hin und zurück, bitte. Wann fährt der nächste Zug? [pause] Vielen Dank! [pause] Entschuldigung, könnten Sie uns helfen? Wir suchen die Sporthalle am Park. [pause] Wie lange brauchen wir zu Fuß? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

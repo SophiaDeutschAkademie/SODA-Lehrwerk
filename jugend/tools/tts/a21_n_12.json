@@ -1,0 +1,84 @@
+{
+ "job": "a21_n_12",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Computer, Bruder, Mutter, Zimmer"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Mein Bruder ist älter und schneller."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Das Tablet ist so teuer wie das Handy."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "putzen"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Teller"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Stell die Teller in den Schrank."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Als Kind musste ich helfen."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Hausarbeit.",
+    "Alle müssen bei der Hausarbeit helfen."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "putzen, hat geputzt.",
+    "Am Samstag putzen wir die Wohnung."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "staubsaugen, hat gestaubsaugt.",
+    "Emma muss staubsaugen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Computer, Bruder, Mutter, Zimmer [pause] Mein Bruder ist älter und schneller. [pause] Das Tablet ist so teuer wie das Handy. [pause] putzen [pause] der Teller [pause] Stell die Teller in den Schrank. [pause] Als Kind musste ich helfen. [pause] die Hausarbeit. Alle müssen bei der Hausarbeit helfen. [pause] putzen, hat geputzt. Am Samstag putzen wir die Wohnung. [pause] staubsaugen, hat gestaubsaugt. Emma muss staubsaugen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

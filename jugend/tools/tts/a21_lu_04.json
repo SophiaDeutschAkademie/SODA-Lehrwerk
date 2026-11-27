@@ -1,0 +1,81 @@
+{
+ "job": "a21_lu_04",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a2-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Entschuldigung! Ich bin zu spät. Ich habe den Bus verpasst."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Könnten Sie das bitte wiederholen? Ab welchem Gleis?"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Durch den Park, okay. Und dann?"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Oh nein! Das Spiel fängt in zehn Minuten an!"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Geh über die Brücke und dann links."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Lukas",
+   "parts": [
+    "Ich habe den Bus verpasst."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Lukas",
+   "parts": [
+    "Der blaue Schal gehört Paul."
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "Lukas",
+   "parts": [
+    "Am Samstag hatte ich ein Spiel mit dem Fußballverein. Wir haben uns um neun getroffen."
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "Lukas",
+   "parts": [
+    "Es hat geregnet, trotzdem haben wir gut gespielt."
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "Lukas",
+   "parts": [
+    "Nach dem Spiel hatte ich großen Hunger. Deshalb habe ich mit Papa Nudeln mit Tomatensoße gekocht."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Entschuldigung! Ich bin zu spät. Ich habe den Bus verpasst. [pause] Könnten Sie das bitte wiederholen? Ab welchem Gleis? [pause] Durch den Park, okay. Und dann? [pause] Oh nein! Das Spiel fängt in zehn Minuten an! [pause] Geh über die Brücke und dann links. [pause] Ich habe den Bus verpasst. [pause] Der blaue Schal gehört Paul. [pause] Am Samstag hatte ich ein Spiel mit dem Fußballverein. Wir haben uns um neun getroffen. [pause] Es hat geregnet, trotzdem haben wir gut gespielt. [pause] Nach dem Spiel hatte ich großen Hunger. Deshalb habe ich mit Papa Nudeln mit Tomatensoße gekocht. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_22",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Stück, die Stücke.",
+    "Möchtest du ein Stück Kuchen?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Rezept, die Rezepte.",
+    "Das Rezept ist leicht."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "brauchen, hat gebraucht.",
+    "Was brauchen wir?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "schneiden, hat geschnitten.",
+    "Ich schneide die Tomaten."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "mischen, hat gemischt.",
+    "Man mischt das Mehl und die Milch."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "braten, du brätst, er brät.",
+    "Thomas brät den Fisch."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "dazugeben, hat dazugegeben.",
+    "Dann gibt man die Eier dazu."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Pfanne, die Pfannen.",
+    "Die Pfanne ist heiß."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "probieren, hat probiert.",
+    "Darf ich probieren?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "schmecken, hat geschmeckt.",
+    "Die Suppe schmeckt gut."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Stück, die Stücke. Möchtest du ein Stück Kuchen? [pause] das Rezept, die Rezepte. Das Rezept ist leicht. [pause] brauchen, hat gebraucht. Was brauchen wir? [pause] schneiden, hat geschnitten. Ich schneide die Tomaten. [pause] mischen, hat gemischt. Man mischt das Mehl und die Milch. [pause] braten, du brätst, er brät. Thomas brät den Fisch. [pause] dazugeben, hat dazugegeben. Dann gibt man die Eier dazu. [pause] die Pfanne, die Pfannen. Die Pfanne ist heiß. [pause] probieren, hat probiert. Darf ich probieren? [pause] schmecken, hat geschmeckt. Die Suppe schmeckt gut. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

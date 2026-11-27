@@ -1,8 +1,5 @@
 {
  "public": true,
- "ohne_audio": [
-  "a2-1",
-  "a2-2"
- ],
+ "ohne_audio": [],
  "_": "청소년 교재 공개 여부. false 이면 Lehrwerk 목차 칸은 「작업 중」, 화면마다 noindex, 사이트맵·알림에서 뺌. 다시 공개하려면 true 로 바꾸고 jugend/README.md 의 '다시 공개하기'를 따릅니다. ohne_audio: 음성을 아직 만들지 않은 단계. 여기에 있는 단계는 음성 없이 화면을 열고 듣기 단추를 꺼 둡니다. 음성을 만든 뒤 목록에서 빼면 됩니다."
 }

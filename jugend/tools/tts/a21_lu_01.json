@@ -1,0 +1,81 @@
+{
+ "job": "a21_lu_01",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Hallo, Yuna! Wie waren die Osterferien?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Und wie findet Jun Köln?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Weil meine Oma Geburtstag hatte. Wir waren bei meinen Großeltern an der Nordsee."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Schlecht! Wir sind wenig spazieren gegangen, denn es hat fast jeden Tag geregnet."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Bis vier? Warum so lange?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Ich bin müde, weil ich wenig geschlafen habe."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Wie waren die Osterferien?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lukas",
+   "parts": [
+    "Warum so lange?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Lukas",
+   "parts": [
+    "Okay. Die Person ist ein großes Mädchen. Sie hat lange braune Haare und braune Augen."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Lukas",
+   "parts": [
+    "Sie ist ein bisschen ruhig, aber sehr freundlich. Und sie hat zwei Brüder."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hallo, Yuna! Wie waren die Osterferien? [pause] Und wie findet Jun Köln? [pause] Weil meine Oma Geburtstag hatte. Wir waren bei meinen Großeltern an der Nordsee. [pause] Schlecht! Wir sind wenig spazieren gegangen, denn es hat fast jeden Tag geregnet. [pause] Bis vier? Warum so lange? [pause] Ich bin müde, weil ich wenig geschlafen habe. [pause] Wie waren die Osterferien? [pause] Warum so lange? [pause] Okay. Die Person ist ein großes Mädchen. Sie hat lange braune Haare und braune Augen. [pause] Sie ist ein bisschen ruhig, aber sehr freundlich. Und sie hat zwei Brüder. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

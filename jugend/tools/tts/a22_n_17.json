@@ -1,0 +1,81 @@
+{
+ "job": "a22_n_17",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Deutschland, Europa, neun"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Zürich liegt in der Schweiz und Wien in Österreich."
+   ]
+  },
+  {
+   "pid": "a2-2/station-1",
+   "who": "N",
+   "parts": [
+    "Ich möchte Ärztin werden."
+   ]
+  },
+  {
+   "pid": "a2-2/station-1",
+   "who": "N",
+   "parts": [
+    "Weißt du, wann wir fahren?"
+   ]
+  },
+  {
+   "pid": "a2-2/station-1",
+   "who": "N",
+   "parts": [
+    "Der Müll wird getrennt."
+   ]
+  },
+  {
+   "pid": "a2-2/station-1",
+   "who": "N",
+   "parts": [
+    "Wien liegt an der Donau."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "das Taschengeld"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "die Werbung"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "Ich hätte gern neue Kopfhörer."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "Kannst du mir Geld leihen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Deutschland, Europa, neun [pause] Zürich liegt in der Schweiz und Wien in Österreich. [pause] Ich möchte Ärztin werden. [pause] Weißt du, wann wir fahren? [pause] Der Müll wird getrennt. [pause] Wien liegt an der Donau. [pause] das Taschengeld [pause] die Werbung [pause] Ich hätte gern neue Kopfhörer. [pause] Kannst du mir Geld leihen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "a21_lu_02",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a2-1/2",
+   "who": "Lukas",
+   "parts": [
+    "Richtig!"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Lukas",
+   "parts": [
+    "Oh nein. Das bin ich!"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Lukas",
+   "parts": [
+    "Sie hat lange braune Haare."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Lukas",
+   "parts": [
+    "Nur zwei Stunden? Ich bin länger online als du. Drei Stunden!"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Lukas",
+   "parts": [
+    "Aber ich spiele mehr als ihr. Spiele finde ich am besten."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Lukas",
+   "parts": [
+    "Mein Handy ist neuer, aber es ist nicht so gut wie Emmas Handy."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Lukas",
+   "parts": [
+    "Ich bin länger online als du."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Bei uns zu Hause müssen alle helfen."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Ich muss den Müll rausbringen und mein Zimmer aufräumen."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Lukas",
+   "parts": [
+    "Meine Schwester Lea ist acht. Sie deckt den Tisch."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Richtig! [pause] Oh nein. Das bin ich! [pause] Sie hat lange braune Haare. [pause] Nur zwei Stunden? Ich bin länger online als du. Drei Stunden! [pause] Aber ich spiele mehr als ihr. Spiele finde ich am besten. [pause] Mein Handy ist neuer, aber es ist nicht so gut wie Emmas Handy. [pause] Ich bin länger online als du. [pause] Bei uns zu Hause müssen alle helfen. [pause] Ich muss den Müll rausbringen und mein Zimmer aufräumen. [pause] Meine Schwester Lea ist acht. Sie deckt den Tisch. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

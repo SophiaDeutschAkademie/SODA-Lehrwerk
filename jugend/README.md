@@ -1,25 +1,16 @@
 # SODA Jugendliche
 
-청소년 독일어 교재 「청소년 독일어 발돋움」입니다. 독일어를 처음 배우는 초등 고학년, 중학생, 고등학생이 A1부터 B1까지 배웁니다. 여섯 단계(A1.1, A1.2, A2.1, A2.2, B1.1, B1.2)의 본문이 모두 올라와 있습니다. 단계마다 과 8개, Station 2개, Stufentest 1개이고 모두 48과입니다. A2.1과 A2.2는 음성 없이 글과 그림으로 먼저 올렸습니다(아래 「음성이 아직 없는 단계」). 나머지 네 단계는 음성까지 들어 있습니다.
+청소년 독일어 교재 「청소년 독일어 발돋움」입니다. 독일어를 처음 배우는 초등 고학년, 중학생, 고등학생이 A1부터 B1까지 배웁니다. 여섯 단계(A1.1, A1.2, A2.1, A2.2, B1.1, B1.2)의 본문이 모두 올라와 있습니다. 단계마다 과 8개, Station 2개, Stufentest 1개이고 모두 48과입니다. 여섯 단계 모두 독일어 음성(Eleven v3)까지 들어 있습니다. A2.1과 A2.2의 음성은 2026-11-27에 나중에 넣었습니다.
 
 ## 공개 상태
 
-지금은 **비공개**입니다 (`tools/status.json` 의 `public` 이 `false`).
+지금은 **공개**입니다 (`tools/status.json` 의 `public` 이 `true`). Lehrwerk 목차의 청소년 칸을 누르면 열리고, 사이트맵에 들어 있습니다.
 
-- Lehrwerk 목차의 청소년 칸은 「작업 중」으로 보이고 누를 수 없습니다.
-- 모든 화면에 `noindex` 가 들어가고, 사이트맵과 알림에는 나오지 않습니다.
-- 주소를 직접 열면 볼 수 있습니다: https://sophiadeutschakademie.github.io/SODA-Lehrwerk/jugend/
+비공개로 돌리려면 `public` 을 `false` 로 바꾸고 `python3 jugend/tools/lektion.py site` 와 `JUGEND_DATE=그날 날짜 python3 jugend/tools/build.py` 를 실행합니다. 그러면 목차 칸은 「작업 중」으로 바뀌고 화면마다 `noindex` 가 들어가며, 사이트맵과 알림에서 빠집니다. 루트 `index.html` 의 청소년 칸은 링크가 없는 칸으로 되돌립니다(커밋 `525d023` 의 모양을 참고).
 
-다시 공개하려면
+## 음성이 없는 단계를 둘 때
 
-1. `tools/status.json` 의 `public` 을 `true` 로 바꿉니다.
-2. `python3 jugend/tools/lektion.py site` 와 `JUGEND_DATE=2026.12.01 python3 jugend/tools/build.py` 를 실행합니다(날짜는 그날 날짜).
-3. 루트 `index.html` 의 청소년 칸을 링크가 있는 칸으로 되돌립니다(커밋 `525d023` 의 모양을 참고).
-4. `notices.json` 에 알림을 올립니다. 본문이 올라온 과는 목차에서 줄을 누르면 열립니다.
-
-## 음성이 아직 없는 단계
-
-`tools/status.json` 의 `ohne_audio` 에 적힌 단계(지금은 `a2-1`, `a2-2`)는 음성 없이 화면을 엽니다.
+`tools/status.json` 의 `ohne_audio` 에 단계 이름(예: `a2-1`)을 적으면 그 단계는 음성 없이 화면을 엽니다. 지금은 목록이 비어 있습니다.
 
 - 듣기 단추는 꺼져 있고, 화면 위에 「음성은 준비 중이에요」 안내가 보입니다.
 - 듣기 글의 대본은 처음부터 펼쳐져 있습니다. 받아쓰기는 문장만 보여 주고 채점하지 않습니다.
@@ -27,8 +18,8 @@
 
 음성을 넣을 때
 
-1. `python3 jugend/tools/lektion.py tts a21 a2-1` 처럼 단계마다 대본을 만듭니다(음성으로 만들 글자 수는 A2.1 약 34,400자, A2.2 약 36,700자).
-2. 대본으로 만든 음성과 낱말 시각 파일을 한 폴더에 받아 `python3 jugend/tools/lektion.py cut 폴더` 로 자릅니다.
+1. `python3 jugend/tools/lektion.py tts a21 a2-1` 처럼 단계마다 대본을 만듭니다(A2.1은 35,840자, A2.2는 38,162자였습니다).
+2. 대본으로 만든 음성과 낱말 시각 파일을 한 폴더에 받아 `python3 jugend/tools/lektion.py cut 폴더` 로 자릅니다. 한 줄이 다른 줄과 붙어 「sounds for lines」 오류가 나면 그 대본 하나만 다시 만들어 `cut 폴더 대본이름` 으로 자릅니다(2026-11-27 a22_lu_05가 이랬습니다: 쉼이 0.13초였습니다).
 3. `tools/status.json` 의 `ohne_audio` 에서 그 단계를 뺍니다.
 4. `python3 jugend/tools/lektion.py site` 와 `JUGEND_DATE=그날 날짜 python3 jugend/tools/build.py` 를 실행합니다. 음성이 하나라도 빠진 화면은 열리지 않으므로, 빠진 줄이 있으면 1번부터 다시 합니다.
 
@@ -59,7 +50,7 @@
 index.html              목차 화면 (빌드 결과, 직접 고치지 않습니다)
 a1-1/1/ … a1-1/8/       과 화면 (빌드 결과). a1-1/station-1/, a1-1/station-2/, a1-1/stufentest/ 도 같은 틀입니다. a1-2/, a2-1/, a2-2/, b1-1/, b1-2/ 도 같습니다
 lektion.css, lektion.js 과 화면의 모양과 동작 (모든 과가 같이 씁니다)
-audio/<단계>/<과>/      독일어 음성 (mp3, 한 줄에 파일 하나). a2-1, a2-2 는 아직 없습니다
+audio/<단계>/<과>/      독일어 음성 (mp3, 한 줄에 파일 하나). 여섯 단계 모두 있습니다
 img/<단계>/<과>/        장면 그림 szene.webp, 단어 그림 c1.webp …, Station 이야기 그림 b1.webp …
 img/c/                  등장인물 얼굴
 manifest.webmanifest    홈 화면에 추가할 때 쓰는 정보

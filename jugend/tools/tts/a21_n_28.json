@@ -1,0 +1,84 @@
+{
+ "job": "a21_n_28",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "Zug, Züge, Buch, Bücher"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "konnte, könnte, schon, schön"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "Könnten Sie uns helfen? Wir müssen über die Brücke."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "der Style"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "umtauschen"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "Was für eine Jacke suchst du?"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "Die Jacke passt mir."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "die Kleidung.",
+    "Ich trage gern bequeme Kleidung."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "das Hemd, die Hemden.",
+    "Lukas trägt ein blaues Hemd."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "N",
+   "parts": [
+    "die Jeans, die Jeans.",
+    "Die Jeans ist neu."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Zug, Züge, Buch, Bücher [pause] konnte, könnte, schon, schön [pause] Könnten Sie uns helfen? Wir müssen über die Brücke. [pause] der Style [pause] umtauschen [pause] Was für eine Jacke suchst du? [pause] Die Jacke passt mir. [pause] die Kleidung. Ich trage gern bequeme Kleidung. [pause] das Hemd, die Hemden. Lukas trägt ein blaues Hemd. [pause] die Jeans, die Jeans. Die Jeans ist neu. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

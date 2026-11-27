@@ -1,0 +1,90 @@
+{
+ "job": "a21_n_19",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "sich anmelden, hat sich angemeldet."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "sich freuen, hat sich gefreut.",
+    "Ich freue mich auf das Spiel."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "sich interessieren, hat sich interessiert.",
+    "Ich interessiere mich für Musik."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "sich treffen, hat sich getroffen.",
+    "Wir treffen uns um fünf."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "sich umziehen, hat sich umgezogen.",
+    "Ich ziehe mich schnell um."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "sich beeilen, hat sich beeilt.",
+    "Beeil dich!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "warten, hat gewartet.",
+    "Der Trainer wartet nicht."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "deshalb.",
+    "Es regnet, deshalb bleibe ich zu Hause."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "trotzdem.",
+    "Ich bin müde, trotzdem gehe ich zum Training."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "doch.",
+    "Kommst du nicht? – Doch!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] sich anmelden, hat sich angemeldet. [pause] sich freuen, hat sich gefreut. Ich freue mich auf das Spiel. [pause] sich interessieren, hat sich interessiert. Ich interessiere mich für Musik. [pause] sich treffen, hat sich getroffen. Wir treffen uns um fünf. [pause] sich umziehen, hat sich umgezogen. Ich ziehe mich schnell um. [pause] sich beeilen, hat sich beeilt. Beeil dich! [pause] warten, hat gewartet. Der Trainer wartet nicht. [pause] deshalb. Es regnet, deshalb bleibe ich zu Hause. [pause] trotzdem. Ich bin müde, trotzdem gehe ich zum Training. [pause] doch. Kommst du nicht? – Doch! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

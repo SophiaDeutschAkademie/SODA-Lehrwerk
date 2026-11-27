@@ -1,0 +1,81 @@
+{
+ "job": "a21_th_01",
+ "who": "Thomas",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "Thomas",
+   "parts": [
+    "Das Essen ist fertig! Emma, bitte kein Handy am Tisch."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Thomas",
+   "parts": [
+    "Du kennst die Regel: Wenn wir essen, bleibt das Handy in der Tasche."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Thomas",
+   "parts": [
+    "Nein, nein. Wenn du bei uns isst, ist das Handy aus."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Thomas",
+   "parts": [
+    "Und ich wasche die Wäsche. Dann koche ich für alle."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Thomas",
+   "parts": [
+    "Natürlich! Als Kind musste ich jeden Samstag das Auto waschen."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Thomas",
+   "parts": [
+    "Wolltest du das?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Thomas",
+   "parts": [
+    "Stimmt. Aber du durftest nicht allein zur Schule fahren."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Thomas",
+   "parts": [
+    "Die Teller stehen im Schrank."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Thomas",
+   "parts": [
+    "Als Kind musste ich das Auto waschen."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Thomas",
+   "parts": [
+    "Heute ist Muttertag. Wir machen Pfannkuchen für Sabine."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das Essen ist fertig! Emma, bitte kein Handy am Tisch. [pause] Du kennst die Regel: Wenn wir essen, bleibt das Handy in der Tasche. [pause] Nein, nein. Wenn du bei uns isst, ist das Handy aus. [pause] Und ich wasche die Wäsche. Dann koche ich für alle. [pause] Natürlich! Als Kind musste ich jeden Samstag das Auto waschen. [pause] Wolltest du das? [pause] Stimmt. Aber du durftest nicht allein zur Schule fahren. [pause] Die Teller stehen im Schrank. [pause] Als Kind musste ich das Auto waschen. [pause] Heute ist Muttertag. Wir machen Pfannkuchen für Sabine. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

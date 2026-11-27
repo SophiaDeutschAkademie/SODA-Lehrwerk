@@ -1,0 +1,81 @@
+{
+ "job": "a21_fr_02",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-1/7",
+   "who": "Frau",
+   "parts": [
+    "Der Zug nach Bonn, Abfahrt neun Uhr dreiundfünfzig, hat heute zehn Minuten Verspätung."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Frau",
+   "parts": [
+    "Der Zug fährt heute ab Gleis sieben."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Frau",
+   "parts": [
+    "Bitte gehen Sie zu Gleis sieben."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Frau",
+   "parts": [
+    "Oh, das tut mir leid. Hast du den Kassenbon noch?"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Frau",
+   "parts": [
+    "Natürlich. Möchtest du die gleiche Jacke noch einmal?"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Frau",
+   "parts": [
+    "Moment. Leider haben wir die Jacke in Grün nicht mehr. Nur noch in Schwarz."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Frau",
+   "parts": [
+    "Ja, das geht. Du bekommst neununddreißig Euro zurück."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Frau",
+   "parts": [
+    "So, hier ist dein Geld. Kann ich dir noch helfen?"
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Der Zug nach Hamburg fährt heute ab Gleis zwölf."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Was möchten Sie essen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Der Zug nach Bonn, Abfahrt neun Uhr dreiundfünfzig, hat heute zehn Minuten Verspätung. [pause] Der Zug fährt heute ab Gleis sieben. [pause] Bitte gehen Sie zu Gleis sieben. [pause] Oh, das tut mir leid. Hast du den Kassenbon noch? [pause] Natürlich. Möchtest du die gleiche Jacke noch einmal? [pause] Moment. Leider haben wir die Jacke in Grün nicht mehr. Nur noch in Schwarz. [pause] Ja, das geht. Du bekommst neununddreißig Euro zurück. [pause] So, hier ist dein Geld. Kann ich dir noch helfen? [pause] Der Zug nach Hamburg fährt heute ab Gleis zwölf. [pause] Was möchten Sie essen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

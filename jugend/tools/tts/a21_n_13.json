@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_13",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "waschen, du wäschst, er wäscht.",
+    "Thomas wäscht die Wäsche."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Wäsche.",
+    "Die Wäsche ist fertig."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "spülen, hat gespült.",
+    "Ich spüle das Geschirr."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "das Geschirr.",
+    "Das Geschirr steht im Schrank."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Spülmaschine, die Spülmaschinen.",
+    "Die Spülmaschine ist neu."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "ausräumen, hat ausgeräumt.",
+    "Yuna räumt die Spülmaschine aus."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "den Tisch decken.",
+    "Lea deckt den Tisch."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Müll.",
+    "Bring bitte den Müll raus."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Teller, die Teller.",
+    "Die Teller sind sauber."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "das Glas, die Gläser.",
+    "Die Gläser stehen im Regal."
+   ]
+  }
+ ],
+ "script": "Also. [pause] waschen, du wäschst, er wäscht. Thomas wäscht die Wäsche. [pause] die Wäsche. Die Wäsche ist fertig. [pause] spülen, hat gespült. Ich spüle das Geschirr. [pause] das Geschirr. Das Geschirr steht im Schrank. [pause] die Spülmaschine, die Spülmaschinen. Die Spülmaschine ist neu. [pause] ausräumen, hat ausgeräumt. Yuna räumt die Spülmaschine aus. [pause] den Tisch decken. Lea deckt den Tisch. [pause] der Müll. Bring bitte den Müll raus. [pause] der Teller, die Teller. Die Teller sind sauber. [pause] das Glas, die Gläser. Die Gläser stehen im Regal. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

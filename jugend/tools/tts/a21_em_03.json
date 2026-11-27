@@ -1,0 +1,81 @@
+{
+ "job": "a21_em_03",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "Emma",
+   "parts": [
+    "Dann ist Yuna am längsten online."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Emma",
+   "parts": [
+    "Stimmt, mein Handy ist am schnellsten. Aber wenn ich lerne, mache ich es aus."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Emma",
+   "parts": [
+    "Am liebsten chatte ich mit Yuna."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Emma",
+   "parts": [
+    "Mein Handy ist aus."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Emma",
+   "parts": [
+    "Oh nein. Was muss ich machen?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Emma",
+   "parts": [
+    "Papa hat es gut. Kochen ist keine Arbeit für ihn!"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Emma",
+   "parts": [
+    "Papa, musstest du früher auch putzen?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Emma",
+   "parts": [
+    "Durftet ihr fernsehen?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Emma",
+   "parts": [
+    "Und ich? Ich konnte mit vier Jahren schon Rad fahren!"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Emma",
+   "parts": [
+    "Leg das Handy bitte in die Tasche."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Dann ist Yuna am längsten online. [pause] Stimmt, mein Handy ist am schnellsten. Aber wenn ich lerne, mache ich es aus. [pause] Am liebsten chatte ich mit Yuna. [pause] Mein Handy ist aus. [pause] Oh nein. Was muss ich machen? [pause] Papa hat es gut. Kochen ist keine Arbeit für ihn! [pause] Papa, musstest du früher auch putzen? [pause] Durftet ihr fernsehen? [pause] Und ich? Ich konnte mit vier Jahren schon Rad fahren! [pause] Leg das Handy bitte in die Tasche. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

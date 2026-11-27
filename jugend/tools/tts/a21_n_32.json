@@ -1,0 +1,60 @@
+{
+ "job": "a21_n_32",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/station-2",
+   "who": "N",
+   "parts": [
+    "Man braucht ein Kilo Kartoffeln."
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "N",
+   "parts": [
+    "Der Zug hat Verspätung."
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "N",
+   "parts": [
+    "Die Jacke passt mir gut."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Ich habe den Bus verpasst."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Die Rechnung, bitte."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Wem gehört die Tasche?"
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Wir treffen uns um fünf."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Man braucht ein Kilo Kartoffeln. [pause] Der Zug hat Verspätung. [pause] Die Jacke passt mir gut. [pause] Ich habe den Bus verpasst. [pause] Die Rechnung, bitte. [pause] Wem gehört die Tasche? [pause] Wir treffen uns um fünf. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

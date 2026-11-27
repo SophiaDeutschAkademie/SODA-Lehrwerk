@@ -1,0 +1,81 @@
+{
+ "job": "a21_sc_01",
+ "who": "Schneider",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "Schneider",
+   "parts": [
+    "Yuna, dein Bruder war hier. Was hat er von der Schule in Korea erzählt?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Schneider",
+   "parts": [
+    "Im März? Bei uns fängt das Schuljahr nach den Sommerferien an."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Schneider",
+   "parts": [
+    "Aber bei uns gibt es viele Hausaufgaben, oder?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Schneider",
+   "parts": [
+    "Heute spielen wir „Wer ist das?“. Beschreibt eine Person aus der Klasse! Lukas, fang bitte an."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Schneider",
+   "parts": [
+    "Richtig. Aber heute warst du pünktlich, Lukas."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Wir haben in der 8b eine Umfrage gemacht. Alle Schüler haben ein Handy."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Die Schüler sind drei Stunden am Tag online. Am Wochenende sind sie länger online als in der Woche."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Am liebsten sehen sie Videos. Sie chatten auch viel."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Nur fünf Schüler lesen Nachrichten."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Schneider",
+   "parts": [
+    "Zwanzig Schüler sagen, dass sie das Handy ausmachen, wenn sie lernen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Yuna, dein Bruder war hier. Was hat er von der Schule in Korea erzählt? [pause] Im März? Bei uns fängt das Schuljahr nach den Sommerferien an. [pause] Aber bei uns gibt es viele Hausaufgaben, oder? [pause] Heute spielen wir „Wer ist das?“. Beschreibt eine Person aus der Klasse! Lukas, fang bitte an. [pause] Richtig. Aber heute warst du pünktlich, Lukas. [pause] Wir haben in der 8b eine Umfrage gemacht. Alle Schüler haben ein Handy. [pause] Die Schüler sind drei Stunden am Tag online. Am Wochenende sind sie länger online als in der Woche. [pause] Am liebsten sehen sie Videos. Sie chatten auch viel. [pause] Nur fünf Schüler lesen Nachrichten. [pause] Zwanzig Schüler sagen, dass sie das Handy ausmachen, wenn sie lernen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

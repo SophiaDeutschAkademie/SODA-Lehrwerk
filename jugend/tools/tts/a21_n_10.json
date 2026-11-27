@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_10",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "schicken, hat geschickt.",
+    "Schick mir bitte ein Foto!"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "antworten, hat geantwortet.",
+    "Ich antworte später."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "benutzen, hat benutzt.",
+    "Ich benutze das Handy jeden Tag."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "anmachen, hat angemacht.",
+    "Mach bitte den Computer an."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "ausmachen, hat ausgemacht.",
+    "Ich mache das Handy aus."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "laden, du lädst, er lädt.",
+    "Ich muss mein Handy laden."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "wenn.",
+    "Wenn ich lerne, mache ich das Handy aus."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "als.",
+    "Lukas ist größer als Yuna."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "so … wie.",
+    "Ich bin so alt wie du."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "schnell.",
+    "Das Internet ist schnell."
+   ]
+  }
+ ],
+ "script": "Also. [pause] schicken, hat geschickt. Schick mir bitte ein Foto! [pause] antworten, hat geantwortet. Ich antworte später. [pause] benutzen, hat benutzt. Ich benutze das Handy jeden Tag. [pause] anmachen, hat angemacht. Mach bitte den Computer an. [pause] ausmachen, hat ausgemacht. Ich mache das Handy aus. [pause] laden, du lädst, er lädt. Ich muss mein Handy laden. [pause] wenn. Wenn ich lerne, mache ich das Handy aus. [pause] als. Lukas ist größer als Yuna. [pause] so … wie. Ich bin so alt wie du. [pause] schnell. Das Internet ist schnell. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

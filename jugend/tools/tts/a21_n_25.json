@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_25",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "das Gleis, die Gleise.",
+    "Der Zug fährt ab Gleis neun."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "abfahren, ist abgefahren.",
+    "Der Zug fährt um zehn Uhr ab."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "ankommen, ist angekommen.",
+    "Wir kommen um elf Uhr an."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "umsteigen, ist umgestiegen.",
+    "Wir müssen in Köln umsteigen."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "die Verspätung, die Verspätungen.",
+    "Der Zug hat zehn Minuten Verspätung."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "verpassen, hat verpasst.",
+    "Ich habe den Bus verpasst."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "die Fahrt, die Fahrten.",
+    "Die Fahrt dauert eine halbe Stunde."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "direkt.",
+    "Der Zug fährt direkt nach Bonn."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "einfach.",
+    "Eine Fahrkarte nach Bonn, einfach, bitte."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "hin und zurück.",
+    "Zwei Fahrkarten, hin und zurück."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Gleis, die Gleise. Der Zug fährt ab Gleis neun. [pause] abfahren, ist abgefahren. Der Zug fährt um zehn Uhr ab. [pause] ankommen, ist angekommen. Wir kommen um elf Uhr an. [pause] umsteigen, ist umgestiegen. Wir müssen in Köln umsteigen. [pause] die Verspätung, die Verspätungen. Der Zug hat zehn Minuten Verspätung. [pause] verpassen, hat verpasst. Ich habe den Bus verpasst. [pause] die Fahrt, die Fahrten. Die Fahrt dauert eine halbe Stunde. [pause] direkt. Der Zug fährt direkt nach Bonn. [pause] einfach. Eine Fahrkarte nach Bonn, einfach, bitte. [pause] hin und zurück. Zwei Fahrkarten, hin und zurück. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,53 @@
+{
+ "job": "a21_th_03",
+ "who": "Thomas",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "Thomas",
+   "parts": [
+    "Dann kocht man sie zwanzig Minuten im Wasser."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Thomas",
+   "parts": [
+    "Danach gibt man die Butter und ein bisschen Salz dazu."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Thomas",
+   "parts": [
+    "Zur Suppe isst man Brot. Guten Appetit!"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Thomas",
+   "parts": [
+    "Man braucht einen Liter Milch."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Thomas",
+   "parts": [
+    "Für den Kuchen braucht man dreihundert Gramm Mehl und vier Eier."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Thomas",
+   "parts": [
+    "Wie kommst du zur Schule?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Dann kocht man sie zwanzig Minuten im Wasser. [pause] Danach gibt man die Butter und ein bisschen Salz dazu. [pause] Zur Suppe isst man Brot. Guten Appetit! [pause] Man braucht einen Liter Milch. [pause] Für den Kuchen braucht man dreihundert Gramm Mehl und vier Eier. [pause] Wie kommst du zur Schule? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

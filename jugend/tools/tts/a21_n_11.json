@@ -1,0 +1,87 @@
+{
+ "job": "a21_n_11",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "langsam.",
+    "Mein Handy ist langsam."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "mehr.",
+    "Ich spiele mehr als du."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "am liebsten.",
+    "Am liebsten sehe ich Videos."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Regel, die Regeln.",
+    "Bei uns gibt es eine Regel."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "fertig.",
+    "Das Essen ist fertig."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "sitzen, hat gesessen.",
+    "Alle sitzen am Tisch."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "gut, besser, am besten. viel, mehr, am meisten."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "gern, lieber, am liebsten. lang, länger, am längsten."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "alt, älter, am ältesten. groß, größer, am größten."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "länger, schneller, älter, besser"
+   ]
+  }
+ ],
+ "script": "Also. [pause] langsam. Mein Handy ist langsam. [pause] mehr. Ich spiele mehr als du. [pause] am liebsten. Am liebsten sehe ich Videos. [pause] die Regel, die Regeln. Bei uns gibt es eine Regel. [pause] fertig. Das Essen ist fertig. [pause] sitzen, hat gesessen. Alle sitzen am Tisch. [pause] gut, besser, am besten. viel, mehr, am meisten. [pause] gern, lieber, am liebsten. lang, länger, am längsten. [pause] alt, älter, am ältesten. groß, größer, am größten. [pause] länger, schneller, älter, besser [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

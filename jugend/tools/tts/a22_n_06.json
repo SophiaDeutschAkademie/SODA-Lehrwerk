@@ -1,0 +1,91 @@
+{
+ "job": "a22_n_06",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "besichtigen, hat besichtigt.",
+    "Wir besichtigen den Dom."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "das Schiff, die Schiffe.",
+    "Das Schiff fährt um zehn Uhr."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Ostsee.",
+    "Die 8a fährt an die Ostsee."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "der Koffer, die Koffer.",
+    "Mein Koffer ist zu schwer."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "packen, hat gepackt.",
+    "Ich packe heute meinen Koffer."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "mitnehmen, du nimmst mit, er nimmt mit.",
+    "Nimm eine Jacke mit!"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "das Frühstück.",
+    "Das Frühstück ist um sieben."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Übernachtung, die Übernachtungen.",
+    "Eine Übernachtung kostet 30 Euro."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Nacht, die Nächte.",
+    "Wir bleiben vier Nächte."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "das WLAN.",
+    "Gibt es hier WLAN?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] besichtigen, hat besichtigt. Wir besichtigen den Dom. [pause] das Schiff, die Schiffe. Das Schiff fährt um zehn Uhr. [pause] die Ostsee. Die 8a fährt an die Ostsee. [pause] der Koffer, die Koffer. Mein Koffer ist zu schwer. [pause] packen, hat gepackt. Ich packe heute meinen Koffer. [pause] mitnehmen, du nimmst mit, er nimmt mit. Nimm eine Jacke mit! [pause] das Frühstück. Das Frühstück ist um sieben. [pause] die Übernachtung, die Übernachtungen. Eine Übernachtung kostet 30 Euro. [pause] die Nacht, die Nächte. Wir bleiben vier Nächte. [pause] das WLAN. Gibt es hier WLAN? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

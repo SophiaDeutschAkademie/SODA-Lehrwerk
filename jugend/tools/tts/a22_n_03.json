@@ -1,0 +1,91 @@
+{
+ "job": "a22_n_03",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Zukunft.",
+    "Was möchtest du in der Zukunft machen?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "der Traum, die Träume.",
+    "Mein Traum ist ein Haus am Meer."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "werden, du wirst, er wird.",
+    "Ich möchte Lehrerin werden."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Arbeit, die Arbeiten.",
+    "Die Arbeit macht mir Spaß."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Aufgabe, die Aufgaben.",
+    "Das ist eine leichte Aufgabe."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Praxis, die Praxen.",
+    "Sabine arbeitet in einer Praxis."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "das Büro, die Büros.",
+    "Mein Vater arbeitet im Büro."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Firma, die Firmen.",
+    "Die Firma ist groß."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "verdienen, hat verdient.",
+    "Can verdient noch nicht viel."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "anstrengend.",
+    "Die Arbeit ist anstrengend."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Zukunft. Was möchtest du in der Zukunft machen? [pause] der Traum, die Träume. Mein Traum ist ein Haus am Meer. [pause] werden, du wirst, er wird. Ich möchte Lehrerin werden. [pause] die Arbeit, die Arbeiten. Die Arbeit macht mir Spaß. [pause] die Aufgabe, die Aufgaben. Das ist eine leichte Aufgabe. [pause] die Praxis, die Praxen. Sabine arbeitet in einer Praxis. [pause] das Büro, die Büros. Mein Vater arbeitet im Büro. [pause] die Firma, die Firmen. Die Firma ist groß. [pause] verdienen, hat verdient. Can verdient noch nicht viel. [pause] anstrengend. Die Arbeit ist anstrengend. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

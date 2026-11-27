@@ -1,0 +1,39 @@
+{
+ "job": "a21_el_05",
+ "who": "Elif",
+ "voice": "Emily",
+ "voice_id": "OO0WT3lY2gVNwzZMAjAI",
+ "items": [
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Ich habe einen bunten Schal gekauft. Er hat nur acht Euro gekostet."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Danach hatten wir Hunger. Wir haben im Restaurant Nudeln und einen großen Salat bestellt."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Can hat bezahlt. Er ist älter als ich, deshalb bezahlt er immer!"
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Elif",
+   "parts": [
+    "Was machst du am liebsten online?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich habe einen bunten Schal gekauft. Er hat nur acht Euro gekostet. [pause] Danach hatten wir Hunger. Wir haben im Restaurant Nudeln und einen großen Salat bestellt. [pause] Can hat bezahlt. Er ist älter als ich, deshalb bezahlt er immer! [pause] Was machst du am liebsten online? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

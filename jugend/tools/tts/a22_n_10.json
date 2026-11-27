@@ -1,0 +1,91 @@
+{
+ "job": "a22_n_10",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "das Pfand.",
+    "Für die Flasche gibt es Pfand."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "recyceln, hat recycelt.",
+    "Glas kann man recyceln."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "wegwerfen, du wirfst weg, er wirft weg.",
+    "Wirf die Flasche nicht weg!"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "sparen, hat gespart.",
+    "Wir sparen Wasser."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "der Strom.",
+    "Der Computer braucht Strom."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "das Licht, die Lichter.",
+    "Mach bitte das Licht aus."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "der Wetterbericht, die Wetterberichte.",
+    "Was sagt der Wetterbericht?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Temperatur, die Temperaturen.",
+    "Die Temperatur ist hoch."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "der Grad.",
+    "Heute sind es dreißig Grad."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Sonne.",
+    "Die Sonne ist stark."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Pfand. Für die Flasche gibt es Pfand. [pause] recyceln, hat recycelt. Glas kann man recyceln. [pause] wegwerfen, du wirfst weg, er wirft weg. Wirf die Flasche nicht weg! [pause] sparen, hat gespart. Wir sparen Wasser. [pause] der Strom. Der Computer braucht Strom. [pause] das Licht, die Lichter. Mach bitte das Licht aus. [pause] der Wetterbericht, die Wetterberichte. Was sagt der Wetterbericht? [pause] die Temperatur, die Temperaturen. Die Temperatur ist hoch. [pause] der Grad. Heute sind es dreißig Grad. [pause] die Sonne. Die Sonne ist stark. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

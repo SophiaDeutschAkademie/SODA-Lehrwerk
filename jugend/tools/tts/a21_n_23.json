@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_23",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Restaurant, die Restaurants.",
+    "Wir essen heute im Restaurant."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Speisekarte, die Speisekarten.",
+    "Die Speisekarte, bitte."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "bestellen, hat bestellt.",
+    "Ich möchte bestellen."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Suppe, die Suppen.",
+    "Die Suppe ist heiß."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Schnitzel, die Schnitzel.",
+    "Das Schnitzel ist groß."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Pommes.",
+    "Ich nehme Pommes."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Nudel, die Nudeln.",
+    "Emma isst gern Nudeln."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Rechnung, die Rechnungen.",
+    "Die Rechnung, bitte."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "bezahlen, hat bezahlt.",
+    "Ich bezahle heute."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "getrennt.",
+    "Wir bezahlen getrennt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Restaurant, die Restaurants. Wir essen heute im Restaurant. [pause] die Speisekarte, die Speisekarten. Die Speisekarte, bitte. [pause] bestellen, hat bestellt. Ich möchte bestellen. [pause] die Suppe, die Suppen. Die Suppe ist heiß. [pause] das Schnitzel, die Schnitzel. Das Schnitzel ist groß. [pause] die Pommes. Ich nehme Pommes. [pause] die Nudel, die Nudeln. Emma isst gern Nudeln. [pause] die Rechnung, die Rechnungen. Die Rechnung, bitte. [pause] bezahlen, hat bezahlt. Ich bezahle heute. [pause] getrennt. Wir bezahlen getrennt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

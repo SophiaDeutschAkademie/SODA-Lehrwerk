@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_14",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Tasse, die Tassen.",
+    "Die Tasse ist heiß."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Gabel, die Gabeln.",
+    "Ich brauche eine Gabel."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "das Messer, die Messer.",
+    "Das Messer liegt auf dem Tisch."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Löffel, die Löffel.",
+    "Der Löffel ist klein."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Schublade, die Schubladen.",
+    "Die Gabeln liegen in der Schublade."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "stellen, hat gestellt.",
+    "Stell die Gläser in den Schrank."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "legen, hat gelegt.",
+    "Leg das Messer auf den Tisch."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "stehen, hat gestanden.",
+    "Die Teller stehen im Schrank."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "liegen, hat gelegen.",
+    "Mein Handy liegt auf dem Bett."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "früher.",
+    "Früher musste ich früh ins Bett gehen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Tasse, die Tassen. Die Tasse ist heiß. [pause] die Gabel, die Gabeln. Ich brauche eine Gabel. [pause] das Messer, die Messer. Das Messer liegt auf dem Tisch. [pause] der Löffel, die Löffel. Der Löffel ist klein. [pause] die Schublade, die Schubladen. Die Gabeln liegen in der Schublade. [pause] stellen, hat gestellt. Stell die Gläser in den Schrank. [pause] legen, hat gelegt. Leg das Messer auf den Tisch. [pause] stehen, hat gestanden. Die Teller stehen im Schrank. [pause] liegen, hat gelegen. Mein Handy liegt auf dem Bett. [pause] früher. Früher musste ich früh ins Bett gehen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

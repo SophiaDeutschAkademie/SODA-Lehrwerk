@@ -1,0 +1,74 @@
+{
+ "job": "a21_em_01",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "Emma",
+   "parts": [
+    "Sie sind eine Woche geblieben. Yuna hat ihrer Familie die Stadt gezeigt."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Emma",
+   "parts": [
+    "Und du, Lukas? Warum bist du nicht nach Österreich gefahren?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Emma",
+   "parts": [
+    "Und was gefällt dir hier?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Emma",
+   "parts": [
+    "In den Osterferien bin ich in Köln geblieben, weil wir Besuch aus Korea hatten."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Emma",
+   "parts": [
+    "Yunas Eltern und ihr Bruder Jun waren eine Woche bei uns."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Emma",
+   "parts": [
+    "Am Montag haben wir den Dom gesehen. Jun hat hundert Fotos gemacht!"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Emma",
+   "parts": [
+    "Am Mittwoch sind wir nicht in den Zoo gegangen, denn es hat geregnet. Wir sind ins Schokoladenmuseum gegangen."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Emma",
+   "parts": [
+    "Am Samstag hat mein Vater für alle gekocht. Yunas Mutter hat Kimchi gemacht. Es war sehr lecker!"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Emma",
+   "parts": [
+    "Ich fahre heute mit dem Bus, denn es regnet."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Sie sind eine Woche geblieben. Yuna hat ihrer Familie die Stadt gezeigt. [pause] Und du, Lukas? Warum bist du nicht nach Österreich gefahren? [pause] Und was gefällt dir hier? [pause] In den Osterferien bin ich in Köln geblieben, weil wir Besuch aus Korea hatten. [pause] Yunas Eltern und ihr Bruder Jun waren eine Woche bei uns. [pause] Am Montag haben wir den Dom gesehen. Jun hat hundert Fotos gemacht! [pause] Am Mittwoch sind wir nicht in den Zoo gegangen, denn es hat geregnet. Wir sind ins Schokoladenmuseum gegangen. [pause] Am Samstag hat mein Vater für alle gekocht. Yunas Mutter hat Kimchi gemacht. Es war sehr lecker! [pause] Ich fahre heute mit dem Bus, denn es regnet. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

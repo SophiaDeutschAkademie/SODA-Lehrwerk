@@ -1,0 +1,81 @@
+{
+ "job": "a21_yu_07",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Hm, Schwarz gefällt mir nicht so gut. Kann ich das Geld zurückbekommen?"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Oh ja, die gehört mir! Danke, Emma."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Nein, danke. Auf Wiedersehen!"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Ich möchte die Schuhe umtauschen. Sie sind zu klein."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Sie passt mir gut."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Yuna",
+   "parts": [
+    "Kann ich die Jacke umtauschen?"
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "Yuna",
+   "parts": [
+    "Hallo! Heute machen wir Pfannkuchen aus Korea."
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "Yuna",
+   "parts": [
+    "Man braucht zweihundert Gramm Mehl, ein Ei, ein Glas Wasser und Gemüse."
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "Yuna",
+   "parts": [
+    "Zuerst schneidet man das Gemüse. Dann mischt man alles."
+   ]
+  },
+  {
+   "pid": "a2-1/station-2",
+   "who": "Yuna",
+   "parts": [
+    "Danach brät man den Pfannkuchen in der Pfanne."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hm, Schwarz gefällt mir nicht so gut. Kann ich das Geld zurückbekommen? [pause] Oh ja, die gehört mir! Danke, Emma. [pause] Nein, danke. Auf Wiedersehen! [pause] Ich möchte die Schuhe umtauschen. Sie sind zu klein. [pause] Sie passt mir gut. [pause] Kann ich die Jacke umtauschen? [pause] Hallo! Heute machen wir Pfannkuchen aus Korea. [pause] Man braucht zweihundert Gramm Mehl, ein Ei, ein Glas Wasser und Gemüse. [pause] Zuerst schneidet man das Gemüse. Dann mischt man alles. [pause] Danach brät man den Pfannkuchen in der Pfanne. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

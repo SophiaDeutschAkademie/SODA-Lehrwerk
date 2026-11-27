@@ -1,0 +1,84 @@
+{
+ "job": "a22_n_08",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "dagegen.",
+    "Ich bin dagegen."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "einverstanden.",
+    "Bist du einverstanden?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "entscheiden, hat entschieden.",
+    "Wir entscheiden morgen."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "ich weiß, wir wissen"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "du weißt, ihr wisst"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "er weiß, sie wissen"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Ich möchte wissen, wann wir fahren."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Können Sie mir sagen, ob es WLAN gibt?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Umwelt"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "der Wetterbericht"
+   ]
+  }
+ ],
+ "script": "Also. [pause] dagegen. Ich bin dagegen. [pause] einverstanden. Bist du einverstanden? [pause] entscheiden, hat entschieden. Wir entscheiden morgen. [pause] ich weiß, wir wissen [pause] du weißt, ihr wisst [pause] er weiß, sie wissen [pause] Ich möchte wissen, wann wir fahren. [pause] Können Sie mir sagen, ob es WLAN gibt? [pause] die Umwelt [pause] der Wetterbericht [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

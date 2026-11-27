@@ -1,0 +1,39 @@
+{
+ "job": "a21_sa_03",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "Sabine",
+   "parts": [
+    "Ich hätte gern eine Flasche Wasser."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sabine",
+   "parts": [
+    "Die Rechnung, bitte."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Sabine",
+   "parts": [
+    "Als Kind durfte ich nur am Wochenende fernsehen."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Sabine",
+   "parts": [
+    "Was musst du zu Hause machen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich hätte gern eine Flasche Wasser. [pause] Die Rechnung, bitte. [pause] Als Kind durfte ich nur am Wochenende fernsehen. [pause] Was musst du zu Hause machen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

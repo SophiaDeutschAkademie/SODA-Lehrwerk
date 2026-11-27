@@ -1,0 +1,81 @@
+{
+ "job": "a22_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Und jetzt das Wetter für morgen."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Im Norden ist es bewölkt und windig. An der Nordsee gibt es Regen. Die Temperatur liegt bei achtzehn Grad."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Im Westen scheint die Sonne. In Köln wird es heiß, dreißig Grad."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Am Nachmittag gibt es im Westen Gewitter."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Im Süden bleibt es trocken und warm, fünfundzwanzig Grad."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Frau",
+   "parts": [
+    "Neu im Musikladen am Dom: Kopfhörer für Schüler!"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Frau",
+   "parts": [
+    "Sie sind leicht, bequem und in fünf Farben da."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Frau",
+   "parts": [
+    "Diese Woche kosten sie nur vierzig Euro. Sie sparen zwanzig Euro!"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Frau",
+   "parts": [
+    "Aber nur bis Samstag. Kommen Sie schnell!"
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Morgen wird es im Norden windig. Im Süden scheint die Sonne."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und jetzt das Wetter für morgen. [pause] Im Norden ist es bewölkt und windig. An der Nordsee gibt es Regen. Die Temperatur liegt bei achtzehn Grad. [pause] Im Westen scheint die Sonne. In Köln wird es heiß, dreißig Grad. [pause] Am Nachmittag gibt es im Westen Gewitter. [pause] Im Süden bleibt es trocken und warm, fünfundzwanzig Grad. [pause] Neu im Musikladen am Dom: Kopfhörer für Schüler! [pause] Sie sind leicht, bequem und in fünf Farben da. [pause] Diese Woche kosten sie nur vierzig Euro. Sie sparen zwanzig Euro! [pause] Aber nur bis Samstag. Kommen Sie schnell! [pause] Morgen wird es im Norden windig. Im Süden scheint die Sonne. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

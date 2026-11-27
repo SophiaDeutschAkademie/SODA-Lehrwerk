@@ -1,0 +1,81 @@
+{
+ "job": "a22_sc_01",
+ "who": "Schneider",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "Schneider",
+   "parts": [
+    "Letzte Woche hattet ihr euren Praktikumstag. Wie war es? Yuna, wo warst du?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Schneider",
+   "parts": [
+    "Was hast du gemacht?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Schneider",
+   "parts": [
+    "Und du, Lukas?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Schneider",
+   "parts": [
+    "Das klingt spannend. Und Emma?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Schneider",
+   "parts": [
+    "Jetzt wisst ihr mehr über die Berufe. Das ist wichtig für eure Zukunft."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Schneider",
+   "parts": [
+    "In zwei Wochen fahren wir nach Berlin. Die 8a fährt an die Ostsee und die 8c in die Berge. Wir fahren in die Hauptstadt!"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Schneider",
+   "parts": [
+    "Ja, am Montag um acht Uhr. Wir treffen uns um halb acht am Bahnhof."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Schneider",
+   "parts": [
+    "Jetzt planen wir das Programm. Was möchtet ihr in Berlin machen?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Schneider",
+   "parts": [
+    "Am Mittwochnachmittag habt ihr frei. Dann könnt ihr in die Stadt gehen."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Schneider",
+   "parts": [
+    "Gute Idee! Ich frage, was das kostet."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Letzte Woche hattet ihr euren Praktikumstag. Wie war es? Yuna, wo warst du? [pause] Was hast du gemacht? [pause] Und du, Lukas? [pause] Das klingt spannend. Und Emma? [pause] Jetzt wisst ihr mehr über die Berufe. Das ist wichtig für eure Zukunft. [pause] In zwei Wochen fahren wir nach Berlin. Die 8a fährt an die Ostsee und die 8c in die Berge. Wir fahren in die Hauptstadt! [pause] Ja, am Montag um acht Uhr. Wir treffen uns um halb acht am Bahnhof. [pause] Jetzt planen wir das Programm. Was möchtet ihr in Berlin machen? [pause] Am Mittwochnachmittag habt ihr frei. Dann könnt ihr in die Stadt gehen. [pause] Gute Idee! Ich frage, was das kostet. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

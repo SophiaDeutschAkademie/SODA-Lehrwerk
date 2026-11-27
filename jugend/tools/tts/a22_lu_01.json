@@ -1,0 +1,81 @@
+{
+ "job": "a22_lu_01",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Ich war in einer Grundschule und habe im Sportunterricht geholfen. Es macht Spaß, mit Kindern zu arbeiten."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Ich möchte Sportlehrer werden."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Wissen Sie schon, wann der Zug abfährt?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Halb acht? Oh nein."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Und wer fragt, ob es in der Jugendherberge WLAN gibt?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Guten Tag, hier ist Lukas von der Klasse acht b aus Köln. Wir kommen in zwei Wochen."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Können Sie mir sagen, ob es WLAN gibt?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Super! Yuna, frag du weiter."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Ich möchte wissen, ob wir am Abend frei haben."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Weißt du, wann wir fahren?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich war in einer Grundschule und habe im Sportunterricht geholfen. Es macht Spaß, mit Kindern zu arbeiten. [pause] Ich möchte Sportlehrer werden. [pause] Wissen Sie schon, wann der Zug abfährt? [pause] Halb acht? Oh nein. [pause] Und wer fragt, ob es in der Jugendherberge WLAN gibt? [pause] Guten Tag, hier ist Lukas von der Klasse acht b aus Köln. Wir kommen in zwei Wochen. [pause] Können Sie mir sagen, ob es WLAN gibt? [pause] Super! Yuna, frag du weiter. [pause] Ich möchte wissen, ob wir am Abend frei haben. [pause] Weißt du, wann wir fahren? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

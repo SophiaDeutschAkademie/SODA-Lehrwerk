@@ -1,0 +1,86 @@
+{
+ "job": "a22_n_04",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "wichtig.",
+    "Die Schule ist wichtig."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "Spaß machen.",
+    "Kochen macht mir Spaß."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "Lust haben.",
+    "Ich habe keine Lust."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "vorhaben, du hast vor, er hat vor.",
+    "Was hast du morgen vor?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "versuchen, hat versucht.",
+    "Ich versuche, pünktlich zu sein."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "Lehrer, Ärztin, Köchin"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "Journalist, Polizist, Architekt"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "Informatiker, Mechaniker, Architektin"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "Der Journalist fragt die Architektin und den Informatiker."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Klassenfahrt"
+   ]
+  }
+ ],
+ "script": "Also. [pause] wichtig. Die Schule ist wichtig. [pause] Spaß machen. Kochen macht mir Spaß. [pause] Lust haben. Ich habe keine Lust. [pause] vorhaben, du hast vor, er hat vor. Was hast du morgen vor? [pause] versuchen, hat versucht. Ich versuche, pünktlich zu sein. [pause] Lehrer, Ärztin, Köchin [pause] Journalist, Polizist, Architekt [pause] Informatiker, Mechaniker, Architektin [pause] Der Journalist fragt die Architektin und den Informatiker. [pause] die Klassenfahrt [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

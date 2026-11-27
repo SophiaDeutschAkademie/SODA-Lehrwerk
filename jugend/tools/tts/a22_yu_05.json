@@ -1,0 +1,81 @@
+{
+ "job": "a22_yu_05",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a2-2/5",
+   "who": "Yuna",
+   "parts": [
+    "Die hätte ich gern."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Yuna",
+   "parts": [
+    "Kannst du mir Geld leihen?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Yuna",
+   "parts": [
+    "Emma, was ist los? Du sprichst seit gestern nicht mit mir."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Yuna",
+   "parts": [
+    "Über mich? Worüber ärgerst du dich denn?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Yuna",
+   "parts": [
+    "Oh nein. Ich habe nur mit Elif gesprochen. Ich wollte dir helfen."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Yuna",
+   "parts": [
+    "Du hast recht. Es tut mir wirklich leid. Ich entschuldige mich bei dir."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Yuna",
+   "parts": [
+    "Okay. Ich warte auf dich."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Yuna",
+   "parts": [
+    "Emma und ich haben uns gestritten. Ich denke die ganze Zeit an den Streit."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Yuna",
+   "parts": [
+    "Über ein Geheimnis. Ich habe es Elif erzählt."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Yuna",
+   "parts": [
+    "Was würdet ihr jetzt machen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Die hätte ich gern. [pause] Kannst du mir Geld leihen? [pause] Emma, was ist los? Du sprichst seit gestern nicht mit mir. [pause] Über mich? Worüber ärgerst du dich denn? [pause] Oh nein. Ich habe nur mit Elif gesprochen. Ich wollte dir helfen. [pause] Du hast recht. Es tut mir wirklich leid. Ich entschuldige mich bei dir. [pause] Okay. Ich warte auf dich. [pause] Emma und ich haben uns gestritten. Ich denke die ganze Zeit an den Streit. [pause] Über ein Geheimnis. Ich habe es Elif erzählt. [pause] Was würdet ihr jetzt machen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

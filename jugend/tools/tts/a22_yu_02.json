@@ -1,0 +1,81 @@
+{
+ "job": "a22_yu_02",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "a2-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Vielen Dank für die Informationen. Auf Wiederhören!"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Ich bin dagegen. Das Museum ist zu teuer."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Ich möchte wissen, ob es WLAN gibt."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Thomas, wohin kommt der Joghurtbecher? In den Restmüll?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Und das Papier?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Geld? Wirklich?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Yuna",
+   "parts": [
+    "In Korea wird der Müll auch getrennt. Aber Pfand gibt es nicht für alle Flaschen."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Sollten wir auch Handschuhe mitbringen?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Sollten wir Handschuhe mitbringen?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Yuna",
+   "parts": [
+    "Was ist in der Schweiz besonders bekannt?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Vielen Dank für die Informationen. Auf Wiederhören! [pause] Ich bin dagegen. Das Museum ist zu teuer. [pause] Ich möchte wissen, ob es WLAN gibt. [pause] Thomas, wohin kommt der Joghurtbecher? In den Restmüll? [pause] Und das Papier? [pause] Geld? Wirklich? [pause] In Korea wird der Müll auch getrennt. Aber Pfand gibt es nicht für alle Flaschen. [pause] Sollten wir auch Handschuhe mitbringen? [pause] Sollten wir Handschuhe mitbringen? [pause] Was ist in der Schweiz besonders bekannt? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

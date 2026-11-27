@@ -1,0 +1,87 @@
+{
+ "job": "a21_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "die Osterferien"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Warum?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "weil"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Ich bin zu Hause geblieben, weil ich krank war."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "die Osterferien.",
+    "In den Osterferien war ich in Köln."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Besuch, die Besuche.",
+    "Wir hatten Besuch aus Korea."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "zeigen, hat gezeigt.",
+    "Yuna hat ihrer Familie die Stadt gezeigt."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "erzählen, hat erzählt.",
+    "Jun hat von der Schule erzählt."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "arbeiten, hat gearbeitet.",
+    "Meine Eltern haben gearbeitet."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "spazieren gehen, ist spazieren gegangen.",
+    "Wir sind am Strand spazieren gegangen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Osterferien [pause] Warum? [pause] weil [pause] Ich bin zu Hause geblieben, weil ich krank war. [pause] die Osterferien. In den Osterferien war ich in Köln. [pause] der Besuch, die Besuche. Wir hatten Besuch aus Korea. [pause] zeigen, hat gezeigt. Yuna hat ihrer Familie die Stadt gezeigt. [pause] erzählen, hat erzählt. Jun hat von der Schule erzählt. [pause] arbeiten, hat gearbeitet. Meine Eltern haben gearbeitet. [pause] spazieren gehen, ist spazieren gegangen. Wir sind am Strand spazieren gegangen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

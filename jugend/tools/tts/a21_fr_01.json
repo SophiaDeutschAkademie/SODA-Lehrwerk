@@ -1,0 +1,81 @@
+{
+ "job": "a21_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Guten Abend! Hier ist die Speisekarte. Was möchten Sie trinken?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Gern. Und was möchten Sie essen?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Hat es geschmeckt?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Zusammen oder getrennt?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Das macht achtundfünfzig Euro."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Frau",
+   "parts": [
+    "Einfach oder hin und zurück?"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Frau",
+   "parts": [
+    "Um neun Uhr dreiundfünfzig, ab Gleis neun. Der Zug fährt direkt, ihr müsst nicht umsteigen."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Frau",
+   "parts": [
+    "Ungefähr eine halbe Stunde. Aber der Zug hat heute zehn Minuten Verspätung."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Frau",
+   "parts": [
+    "Ab Gleis neun. Hier sind die Fahrkarten. Gute Fahrt!"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Frau",
+   "parts": [
+    "Achtung auf Gleis neun!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Abend! Hier ist die Speisekarte. Was möchten Sie trinken? [pause] Gern. Und was möchten Sie essen? [pause] Hat es geschmeckt? [pause] Zusammen oder getrennt? [pause] Das macht achtundfünfzig Euro. [pause] Einfach oder hin und zurück? [pause] Um neun Uhr dreiundfünfzig, ab Gleis neun. Der Zug fährt direkt, ihr müsst nicht umsteigen. [pause] Ungefähr eine halbe Stunde. Aber der Zug hat heute zehn Minuten Verspätung. [pause] Ab Gleis neun. Hier sind die Fahrkarten. Gute Fahrt! [pause] Achtung auf Gleis neun! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

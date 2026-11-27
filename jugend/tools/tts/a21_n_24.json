@@ -1,0 +1,84 @@
+{
+ "job": "a21_n_24",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Trinkgeld.",
+    "Thomas gibt vier Euro Trinkgeld."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "frisch.",
+    "Der Fisch ist frisch."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Tomatensuppe, Kartoffelsuppe, Kartoffelsalat"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Apfelsaft, Speisekarte, Pfannkuchen"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Ich hätte gern die Tomatensuppe und einen Apfelsaft."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "die Fahrkarte"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "das Gleis"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "Gehen Sie über die Brücke."
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "Könnten Sie uns helfen?"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "N",
+   "parts": [
+    "die Fahrkarte, die Fahrkarten.",
+    "Ich brauche eine Fahrkarte nach Bonn."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Trinkgeld. Thomas gibt vier Euro Trinkgeld. [pause] frisch. Der Fisch ist frisch. [pause] Tomatensuppe, Kartoffelsuppe, Kartoffelsalat [pause] Apfelsaft, Speisekarte, Pfannkuchen [pause] Ich hätte gern die Tomatensuppe und einen Apfelsaft. [pause] die Fahrkarte [pause] das Gleis [pause] Gehen Sie über die Brücke. [pause] Könnten Sie uns helfen? [pause] die Fahrkarte, die Fahrkarten. Ich brauche eine Fahrkarte nach Bonn. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

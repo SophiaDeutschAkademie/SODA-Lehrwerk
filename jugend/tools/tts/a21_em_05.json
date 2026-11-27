@@ -1,0 +1,81 @@
+{
+ "job": "a21_em_05",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "Emma",
+   "parts": [
+    "Ich nehme die Nudeln mit Tomatensoße."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Emma",
+   "parts": [
+    "Die Suppe ist kalt!"
+   ]
+  },
+  {
+   "pid": "a2-1/7",
+   "who": "Emma",
+   "parts": [
+    "Der Bus ist vor zwei Minuten abgefahren."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Emma",
+   "parts": [
+    "Wie findest du die Jeansjacke hier?"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Emma",
+   "parts": [
+    "Hier ist sie in Größe S. Probier sie mal an!"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Emma",
+   "parts": [
+    "Neununddreißig Euro. Sie ist im Angebot."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Emma",
+   "parts": [
+    "Yuna, wem gehört die Tasche hier? Ist das deine?"
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Emma",
+   "parts": [
+    "Hallo Lukas! Ich war heute mit Yuna und Elif in der Stadt."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Emma",
+   "parts": [
+    "Yuna hat eine grüne Jacke gekauft. Sie steht ihr sehr gut."
+   ]
+  },
+  {
+   "pid": "a2-1/8",
+   "who": "Emma",
+   "parts": [
+    "Ich habe ein weißes T-Shirt und einen schwarzen Rock gekauft."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich nehme die Nudeln mit Tomatensoße. [pause] Die Suppe ist kalt! [pause] Der Bus ist vor zwei Minuten abgefahren. [pause] Wie findest du die Jeansjacke hier? [pause] Hier ist sie in Größe S. Probier sie mal an! [pause] Neununddreißig Euro. Sie ist im Angebot. [pause] Yuna, wem gehört die Tasche hier? Ist das deine? [pause] Hallo Lukas! Ich war heute mit Yuna und Elif in der Stadt. [pause] Yuna hat eine grüne Jacke gekauft. Sie steht ihr sehr gut. [pause] Ich habe ein weißes T-Shirt und einen schwarzen Rock gekauft. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

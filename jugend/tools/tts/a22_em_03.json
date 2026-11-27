@@ -1,0 +1,81 @@
+{
+ "job": "a22_em_03",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "a2-2/5",
+   "who": "Emma",
+   "parts": [
+    "Dann kauf sie doch."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Emma",
+   "parts": [
+    "Wie viel hast du noch?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Emma",
+   "parts": [
+    "Dreißig Euro? Hm. Ich spare gerade für ein neues Fahrrad."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Emma",
+   "parts": [
+    "Na gut. Aber frag zuerst Mama. Sie sagt immer: Man sollte nicht alles sofort kaufen."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Emma",
+   "parts": [
+    "Papa, ich hätte gern mehr Taschengeld. Dreißig Euro im Monat sind zu wenig!"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Emma",
+   "parts": [
+    "Wie viel gibt sie uns?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Emma",
+   "parts": [
+    "Ich spare für ein neues Fahrrad."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Emma",
+   "parts": [
+    "Ich ärgere mich über dich."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Emma",
+   "parts": [
+    "Du hast Elif von meiner Mathenote erzählt. Jetzt weiß es die ganze Klasse!"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Emma",
+   "parts": [
+    "Das war aber mein Geheimnis. Ich bin sehr enttäuscht von dir."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Dann kauf sie doch. [pause] Wie viel hast du noch? [pause] Dreißig Euro? Hm. Ich spare gerade für ein neues Fahrrad. [pause] Na gut. Aber frag zuerst Mama. Sie sagt immer: Man sollte nicht alles sofort kaufen. [pause] Papa, ich hätte gern mehr Taschengeld. Dreißig Euro im Monat sind zu wenig! [pause] Wie viel gibt sie uns? [pause] Ich spare für ein neues Fahrrad. [pause] Ich ärgere mich über dich. [pause] Du hast Elif von meiner Mathenote erzählt. Jetzt weiß es die ganze Klasse! [pause] Das war aber mein Geheimnis. Ich bin sehr enttäuscht von dir. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

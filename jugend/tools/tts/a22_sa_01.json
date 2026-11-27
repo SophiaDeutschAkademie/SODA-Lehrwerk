@@ -1,0 +1,67 @@
+{
+ "job": "a22_sa_01",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "Sabine",
+   "parts": [
+    "Dann musst du nach dem Abitur studieren."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Sabine",
+   "parts": [
+    "Das freut mich! Aber das Studium dauert lange, mindestens sechs Jahre."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Sabine",
+   "parts": [
+    "Yuna, du möchtest Kopfhörer kaufen? Zeig mir mal die Werbung."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Sabine",
+   "parts": [
+    "Ihr könntet auch etwas Geld verdienen. Oma braucht Hilfe im Garten."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Sabine",
+   "parts": [
+    "Fragt sie selbst! Aber ich glaube, sie gibt euch zehn Euro pro Stunde."
+   ]
+  },
+  {
+   "pid": "a2-2/8",
+   "who": "Sabine",
+   "parts": [
+    "Schön, dass ihr da seid! Yuna hat eine Nachricht für euch."
+   ]
+  },
+  {
+   "pid": "a2-2/8",
+   "who": "Sabine",
+   "parts": [
+    "Was hast du in den Ferien vor?"
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Sabine",
+   "parts": [
+    "Welchen Film kannst du mir empfehlen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Dann musst du nach dem Abitur studieren. [pause] Das freut mich! Aber das Studium dauert lange, mindestens sechs Jahre. [pause] Yuna, du möchtest Kopfhörer kaufen? Zeig mir mal die Werbung. [pause] Ihr könntet auch etwas Geld verdienen. Oma braucht Hilfe im Garten. [pause] Fragt sie selbst! Aber ich glaube, sie gibt euch zehn Euro pro Stunde. [pause] Schön, dass ihr da seid! Yuna hat eine Nachricht für euch. [pause] Was hast du in den Ferien vor? [pause] Welchen Film kannst du mir empfehlen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

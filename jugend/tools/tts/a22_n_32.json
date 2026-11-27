@@ -1,0 +1,32 @@
+{
+ "job": "a22_n_32",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/stufentest",
+   "who": "N",
+   "parts": [
+    "Wir könnten ins Museum gehen."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "N",
+   "parts": [
+    "Du solltest mehr schlafen."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "N",
+   "parts": [
+    "Ich vermisse meine Familie."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wir könnten ins Museum gehen. [pause] Du solltest mehr schlafen. [pause] Ich vermisse meine Familie. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}
