@@ -362,11 +362,11 @@ html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visi
         <ul class="grid one">
         <li><a class="tile" href="kinder/" style="--i:1"><span class="upd"><span>업데이트</span><span>2026.11.23</span></span>
           <span class="lab">SODA Kinder</span><span class="thd"><img class="tic" src="assets/lehrbuch/kinder.webp" alt="" width="44" height="44" loading="lazy"><b class="ttl">어린이 독일어</b></span><span class="dsc">부엉이 Sofi와 놀면서 배우는 첫 독일어</span>
-          <span class="tile-foot"><span class="metas"><span class="meta">32단원</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+          <span class="tile-foot"><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
         <li><a class="tile" href="jugend/" style="--i:2"><span class="upd"><span>업데이트</span><span>2026.11.27</span></span>
           <span class="lab">SODA Jugendliche</span><span class="thd"><img class="tic" src="assets/lehrbuch/jugend.webp" alt="" width="44" height="44" loading="lazy"><b class="ttl">청소년 독일어</b></span><span class="dsc">Yuna와 함께 A1부터 B1까지</span>
-          <span class="tile-foot"><span class="metas"><span class="meta">A1–B1 · 48과</span></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+          <span class="tile-foot"><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
         </a></li>
         <li><div class="tile soon" style="--i:3" aria-disabled="true">
           <span class="lab">SODA Basis</span><span class="thd"><img class="tic" src="assets/lehrbuch/basis.webp" alt="" width="44" height="44" loading="lazy"><b class="ttl">성인 독일어</b></span><span class="dsc">A1부터 B1까지 다지는 기초</span>
@@ -764,6 +764,18 @@ html[data-theme="dark"] .ntc .nb,html[data-theme="dark"] .nt-tag.new,html[data-t
 .a2hs-sheet :focus-visible,.a2hs-btn:focus-visible{outline:3px solid #9DA6C6;outline-offset:3px}
 @media (min-width:641px){.a2hs-sheet{align-items:center}.a2hs-box{margin:0}}
 @media print{.a2hs-btn,.a2hs-sheet{display:none!important}}
+
+/* Lehrbuch 타일: 그림을 왼쪽에 크게, 글(분류·제목·설명)을 그 오른쪽에 세로로, 화살표는 오른쪽 가운데 */
+#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile{display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-areas:"pic lab go" "pic ttl go" "pic dsc go" ". foot foot";column-gap:14px;align-items:center;padding:16px 18px}
+#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .thd{display:contents}
+#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .tic{grid-area:pic;width:68px;height:68px;border-radius:16px}
+#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .lab{grid-area:lab;padding-right:84px}
+#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .ttl{grid-area:ttl;margin-top:3px}
+#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .dsc{grid-area:dsc;margin-top:3px}
+#inhalt .cat[aria-labelledby="cat-lehrbuch"] a.tile .tile-foot{grid-area:go;align-self:end;padding:0!important;margin:0}
+#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile.soon .tile-foot{grid-area:foot;padding-top:8px!important}
+#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .go{width:34px;height:34px}
+@media (max-width:520px){#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile{column-gap:11px;padding:13px 14px}#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .tic{width:56px;height:56px;border-radius:14px}#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .lab{padding-right:0;white-space:nowrap}#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .go{width:30px;height:30px}}
 </style>
 <script id="a2hs-js">
 (function(){
