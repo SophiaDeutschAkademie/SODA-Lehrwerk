@@ -46,6 +46,111 @@
     gs.forEach(function (s) { s.g.setAttribute('data-cols', s.cols); });
   }
 
+  /* ── 1-2. 문법 연습(body.ueb): 문항은 높이가 정해진 줄(.u-r)로 이루어지고, 줄에 든 글은 다음 줄로 넘어가지 않는다.
+        들어가지 않는 줄은 이 순서로 맞춘다: 글자를 조금 줄인다 → (문장이 여럿이면) 문장마다 한 줄 → (한 문장이 너무 길면) 쉼표에서 나눈다.
+        한국어 뜻은 줄여도 안 들어가면 여러 줄로 접는다. 문항이 천 개가 넘으므로 잴 때는 한꺼번에 잰다. ── */
+  var K_SPLIT = 0.88;      /* 문장이 여럿인 줄: 이만큼 줄여도 안 들어가면 문장마다 한 줄로 나눈다 */
+  var K_MIN = 0.8;         /* 한 문장: 이만큼(약 8pt)까지는 줄여서 한 줄에 넣는다 */
+  var K_KO = 0.9;          /* 한국어 뜻: 이만큼 줄여도 안 들어가면 여러 줄로 접는다 */
+  var K_OPT = 0.88;        /* 보기: 이만큼 줄여서 들어가면 줄 수를 늘리지 않는다 */
+  function ubOptions() {
+    /* 보기: 네 칸(칸 폭이 같아 문항끼리 줄이 맞는다, "4") → 한 줄에 제 폭대로("4f") → 두 줄("2") → 보기마다 한 줄("1") */
+    var gs = all('.lx .qg').map(function (g) { return { g: g, os: all('.qo', g) }; });
+    gs.forEach(function (s) { s.g.setAttribute('data-cols', 'm'); });          /* 재는 상태: 보기를 제 폭대로 늘어놓는다 */
+    gs.forEach(function (s) { s.W = s.g.clientWidth; s.w = s.os.map(function (o) { return o.offsetWidth; }); });
+    gs.forEach(function (s) {
+      var n = s.w.length, GAP = 16, FREE = 28, max = 0, sum = 0, k = 1, cols, i;
+      for (i = 0; i < n; i++) { max = Math.max(max, s.w[i]); sum += s.w[i]; }
+      if (max <= (s.W - 3 * GAP) / 4) cols = '4';
+      else if ((k = (s.W - (n - 1) * FREE) / sum) >= K_OPT) cols = '4f';
+      else if ((k = (s.W - GAP) / 2 / max) >= K_OPT) cols = '2';
+      else { cols = '1'; k = s.W / max; }
+      s.g.setAttribute('data-cols', cols);
+      if (k < 1) { s.g.style.fontSize = (Math.floor(k * 980) / 10) + '%'; N.os++; }
+    });
+  }
+  function ubOver(x) { return x.scrollWidth > x.clientWidth + 0.5 ? x.clientWidth / x.scrollWidth : 1; }
+  function ubShrink(x, k) {
+    x.__k = (x.__k || 1) * k * 0.992;
+    x.style.fontSize = (Math.floor(x.__k * 1000) / 10) + '%';
+  }
+  /* s(문장 .u-s)와 그 뒤의 것들을 새 줄로 옮긴다 → 새 줄의 .u-x */
+  function ubNewRow(s, cont) {
+    var x = s.parentNode, row = x.parentNode, r = row.cloneNode(false), nx = x.cloneNode(false), t;
+    nx.removeAttribute('style');
+    while (s) { t = s.nextSibling; nx.appendChild(s); s = t; }
+    r.appendChild(nx);
+    if (cont) r.classList.add('u-r-c');
+    row.parentNode.insertBefore(r, row.nextSibling);
+    return nx;
+  }
+  /* 한 문장이 너무 길 때(약 8pt 로 줄여도 한 줄에 들어가지 않을 때) 두 줄로 나눈다. 나눌 곳은 이 차례로 찾는다:
+     ① 쉼표·쌍반점·쌍점·줄표·가운뎃점 뒤 ② und · oder · aber … 앞 ③ 낱말 사이. 두 조각이 다 한 줄에 들어가는 곳 가운데 길이가 가장 고른 곳을 고른다.
+     힌트(괄호 안)와 빈칸 사이에서는 나누지 않는다. 뒤 조각은 들여 쓴다. */
+  var CUTS = [/[,;:–—·]\s+/g, /\s+(?=(?:und|oder|aber|denn|sondern|doch)\s)/g, /\s+/g];
+  function ubClause(x) {
+    var z = x.getBoundingClientRect().width / x.offsetWidth, full = x.scrollWidth, limit = x.clientWidth / K_MIN;
+    var r = doc.createRange(), best = null, score = 1e9, loose = null, lscore = 1e9, t, tw, n, m, re, a, v;
+    for (t = 0; t < CUTS.length && !best; t++) {
+      re = CUTS[t];
+      tw = doc.createTreeWalker(x, 4, null, false);
+      while ((n = tw.nextNode())) {
+        if (n.parentNode.closest('.qh,.u-bh')) continue;
+        re.lastIndex = 0;
+        while ((m = re.exec(n.data))) {
+          if (!m.index && !n.previousSibling && n.parentNode.firstChild === n && n.parentNode === x.firstChild) continue;   /* 맨 앞 */
+          r.setStart(x, 0); r.setEnd(n, m.index + m[0].length);
+          a = r.getBoundingClientRect().width / z;
+          if (a < 40 || full - a < 40) continue;
+          v = Math.max(a, full - a + 24);
+          if (v <= limit && v < score) { score = v; best = { n: n, o: m.index + m[0].length }; }
+          if (v < lscore) { lscore = v; loose = { n: n, o: m.index + m[0].length }; }
+        }
+      }
+    }
+    best = best || loose;
+    if (!best) return null;
+    r.setStart(best.n, best.o); r.setEndAfter(x.lastChild);
+    var row = x.parentNode, nr = row.cloneNode(false), nx = x.cloneNode(false);
+    nx.removeAttribute('style');
+    nx.appendChild(r.extractContents());
+    nr.appendChild(nx); nr.classList.add('u-r-c');
+    row.parentNode.insertBefore(nr, row.nextSibling);
+    nx.__cl = x.__cl = (x.__cl || 0) + 1;
+    return nx;
+  }
+  function ubRows() {
+    /* 줄바꿈이 적혀 있던 자리(data-br)에서는 언제나 줄을 나눈다 */
+    all('.lx .u-r-s .u-s[data-br]').forEach(function (s) { if (s.previousSibling) ubNewRow(s); });
+    var todo = all('.lx .u-r > .u-x'), pass, ks, next;
+    for (pass = 0; pass < 8 && todo.length; pass++) {
+      ks = todo.map(ubOver); next = [];
+      todo.forEach(function (x, i) {
+        var k = ks[i], row = x.parentNode, sent, ss, j, nx;
+        if (k >= 1) return;
+        sent = row.classList.contains('u-r-s'); ss = sent ? all('.u-s', x) : [];
+        if (ss.length > 1 && (x.__k || 1) * k < K_SPLIT) {
+          if (x.__k) { x.__k = 0; x.style.fontSize = ''; }
+          for (j = 1; j < ss.length; j++) next.push(ubNewRow(ss[j]));
+          next.push(x); N.sp++;
+        } else if ((x.__k || 1) * k >= (row.classList.contains('u-r-m') ? K_KO : K_MIN)) {
+          if (!x.__k) N.rs++;
+          ubShrink(x, k); next.push(x);
+        } else if (sent && (x.__cl || 0) < 3 && (nx = ubClause(x))) {
+          if (x.__k) { x.__k = 0; x.style.fontSize = ''; }
+          next.push(x); next.push(nx); N.cl++;
+        } else if (row.classList.contains('u-r-m') && !row.classList.contains('u-wrap')) {
+          if (x.__k) { x.__k = 0; x.style.fontSize = ''; }
+          row.classList.add('u-wrap'); N.wr++;
+        } else if (!row.classList.contains('u-wrap')) {
+          if (!x.__k) N.rs++;
+          ubShrink(x, k); next.push(x);
+        }
+      });
+      todo = next;
+    }
+  }
+
   /* ── 2. 단보다 넓은 표: data-tf 1(최소 폭·줄바꿈 금지를 풀고 칸 여백을 줄임) → 2~6(글자를 한 단계씩 줄임).
         6단계에서도 넓으면 두 단에 걸쳐 놓는다(data-span). 낱말 중간에서 줄을 바꾸지는 않는다. ── */
   var TF_MAX = 6;
@@ -261,6 +366,11 @@
         });
       });
     });
+    /* 문법 연습: 높이가 정해진 줄에 든 것이 그 줄보다 높으면(안에서 줄이 바뀌었으면) 아래 줄과 겹친다 */
+    all('.ueb .lx .u-r, .ueb .lx .qg').forEach(function (r) {
+      var d = r.scrollHeight - r.clientHeight, art = r.closest('article');
+      if (d > 6) over.push({ key: art ? art.id : '', tag: label(r) + '(높이)', over: d, text: snip(r, 60) });
+    });
     /* 과 첫머리 차례의 한 줄 폭(px). pdf-build.py 가 PDF 에 찍힌 폭과 견주어, Chrome 이 쪽을 줄여 찍지 않았는지 본다. */
     var ref = doc.querySelector('.op-nav-l a');
     return { over: over, small: small, n: N, ref: ref ? ref.getBoundingClientRect().width : 0 };
@@ -271,7 +381,8 @@
       var failed = [];
       if (doc.fonts && doc.fonts.forEach) doc.fonts.forEach(function (f) { if (f.status === 'error') failed.push(f.family + ' ' + f.weight); });
       if (failed.length) throw new Error('글꼴을 불러오지 못함: ' + failed.join(', '));
-      quizCols();
+      if (doc.body.classList.contains('ueb')) { N.os = N.rs = N.sp = N.cl = N.wr = 0; ubOptions(); ubRows(); }
+      else quizCols();
       tableFit();
       tableBalance();
       all('.lx').forEach(function (lx) { wordFit(lx); svgFit(lx); });

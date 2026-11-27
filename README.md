@@ -50,7 +50,7 @@ sitemap.xml       검색엔진에 제출하는 주소 목록 (tools/seo.py가 �
 tools/seo.py      페이지마다 검색용 태그를 넣고 sitemap.xml을 만드는 스크립트
 assets/           표지와 목차에 쓰는 로고, 글꼴, 홈 화면 아이콘(assets/icons/)
 grammatik/        SODA-Lehrwerk-Grammatik 저장소의 내용
-grammatik-pdf/    Syntalab(문법 교재) 인쇄용 PDF — 전체 1개와 과별 38개 (grammatik/tools/pdf-build.py가 만듦, 아래 「Syntalab 인쇄용 PDF」)
+grammatik-pdf/    Syntalab 문법 교재와 문법 연습의 인쇄용 PDF — 교재 39개, 문법 연습 42개 (grammatik/tools/pdf-build.py가 만듦, 아래 「Syntalab 인쇄용 PDF」)
 lesetraining/     SODA-Lehrwerk-Lesetraining 저장소의 내용
 hoertraining/     SODA-Lehrwerk-Hoertraining 저장소의 내용
 sprechtraining/   SODA-SPRECHTRAINING 저장소의 내용 (대화 앱, 음성 mp3 포함)
@@ -89,7 +89,7 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 - 교재·부록의 표가 화면 폭보다 넓으면 `pager.js`가 그 표만 골라 맞춥니다(`data-tf` 1~6단계): 최소 폭과 줄바꿈 금지를 풀고 칸 여백을 줄인 뒤, 그래도 넓으면 글자를 한 단계씩 줄여요. 스크롤 보기와 페이지 보기 모두 같고, 표의 HTML은 고치지 않습니다.
 - 격변화표(`table.decl-m`)는 핸드폰에서도 격(세로)×성(가로) 표 한 장으로 보입니다(교재의 스크롤 보기·페이지 보기, 부록 모두). 글자와 여백은 `grammatik/index.html`의 `@media(max-width:840px){table.decl-m…}`에서 화면 폭에 맞춰 줄여요. 칸의 글이 길면 두세 줄로 접히므로, 표를 새로 넣거나 고친 뒤에는 핸드폰 폭에서 한 번 확인합니다.
 - 과의 용어에 점선 밑줄로 걸린 낱말 풀이(`span.gt`)는 과마다 같은 글이 되풀이되어 들어 있습니다. 풀이를 고칠 때는 모든 과에서 같은 글을 한꺼번에 바꿉니다.
-- `grammatik/`의 연습문제(목차 아래 「연습문제 · Übungen」)는 과마다 하나, 37개예요. 과마다 기본·중간·도전 뒤에 보강(바꿔 쓰기·오류 찾기)이 있고, 목차 맨 아래에 여러 과를 섞은 통합 복습 4세트(`W1.json` … `W4.json`)가 있어요. 학생이 푼 답은 기기에 저장되며, 지키는 규칙은 `grammatik/tools/uebungen-src/README.md` 끝에 있어요. 원본은 `grammatik/tools/uebungen-src/U01.json` … `U37.json`이고, 쓰는 법과 규칙은 같은 폴더의 `README.md`에 있어요. 원본을 고친 뒤 `python3 grammatik/tools/uebungen-check.py`로 검사하고 `python3 grammatik/tools/uebungen-build.py`를 실행하면 `grammatik/uebungen/`의 앱용 파일, `index.html`의 연습 주소, `sw.js`의 캐시 목록과 버전이 함께 바뀌어요.
+- `grammatik/`의 연습문제(목차 아래 「연습문제 · Übungen」)는 과마다 하나, 37개예요. 과마다 기본·중간·도전 뒤에 보강(바꿔 쓰기·오류 찾기)이 있고, 목차 맨 아래에 여러 과를 섞은 통합 복습 4세트(`W1.json` … `W4.json`)가 있어요. 학생이 푼 답은 기기에 저장되며, 지키는 규칙은 `grammatik/tools/uebungen-src/README.md` 끝에 있어요. 원본은 `grammatik/tools/uebungen-src/U01.json` … `U37.json`이고, 쓰는 법과 규칙은 같은 폴더의 `README.md`에 있어요. 원본을 고친 뒤 `python3 grammatik/tools/uebungen-check.py`로 검사하고 `python3 grammatik/tools/uebungen-build.py`를 실행하면 `grammatik/uebungen/`의 앱용 파일, `index.html`의 연습 주소, `sw.js`의 캐시 목록과 버전이 함께 바뀌어요. 그 뒤에 `python3 grammatik/tools/pdf-build.py`를 실행해 문법 연습 PDF도 다시 만들어요(아래 「Syntalab 인쇄용 PDF」의 「문법 연습 PDF」).
 - `grammatik/`의 교재(과, `#/L01` …)는 핸드폰과 작은 태블릿(화면 폭 820px 이하, 세워 든 상태)에서 책처럼 한 페이지씩 넘겨 보는 「페이지 보기」로 열립니다. 옆으로 밀면 종이가 손가락을 따라 접히며 넘어가고, 화면 좌우 가장자리를 누르거나 아래 띠의 화살표를 눌러도 넘어가요. 넓은 화면과 옆으로 눕힌 핸드폰은 전처럼 스크롤로 열리고, 오른쪽 아래 글자 크기 단추 옆의 책 단추로 페이지 보기를 켤 수 있습니다. 목차·연습문제·부록은 늘 스크롤이에요. 이 기능은 `grammatik/pager.js` 한 파일에 들어 있습니다.
   - 문제(`.quiz-block`)는 페이지 보기에서 촘촘하게 놓아 한 페이지에 여러 문제가 들어갑니다. 선지 네 개가 한 줄에 들어가면 한 줄에 4개, 조금 길면 2개씩, 문장처럼 길면 1개씩 놓아요(글자 폭을 재서 정하므로 선지를 고치면 자동으로 바뀝니다). 풀이는 접은 높이로 재고, 학생이 어떤 페이지에서 답을 누르기 시작하면 그 페이지의 풀이 자리를 잡아 다시 나눕니다. 자리가 모자란 뒤 문제는 다음 페이지로 넘어가요.
   - 과의 내용(`lessons/L01.json` …)은 그대로 두고 화면에서만 페이지로 나눕니다. 스크롤 보기로 바꾸거나 인쇄하면 원래 모양으로 돌아가요. 읽던 자리와 진도는 전처럼 앱(`index.html`)이 저장하고, `pager.js`는 지금 페이지가 과 전체에서 어디쯤인지를 스크롤 보기의 '읽은 비율'과 같은 값으로 알려 줍니다. 앱과 이어지는 곳은 `index.html`에서 `SodaPager`를 찾으면 나와요(과를 연 직후 `mount`, 과에서 나갈 때 `unmount`, 글자 크기를 바꾼 뒤 `refresh`).
@@ -104,17 +104,24 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 
 ## Syntalab 인쇄용 PDF(`grammatik-pdf/`)
 
-Syntalab(문법 교재)을 종이에 뽑아 쓸 수 있게 만든 PDF입니다. 학생은 Syntalab 목차의 「전체 PDF」와 줄마다 있는 PDF 단추로 내려받습니다. 연습문제(Übungen)는 넣지 않았습니다.
+Syntalab(문법 교재)과 문법 연습(Grammatikübungen)을 종이에 뽑아 쓸 수 있게 만든 PDF입니다. 학생은 교재 목차와 연습 목차의 「전체 PDF」, 그리고 줄마다 있는 PDF 단추로 내려받습니다. 아래는 교재 PDF를 기준으로 적었고, 문법 연습 PDF에서 다른 점은 끝의 「문법 연습 PDF」에 모았습니다.
 
 - **파일.** `syntalab.pdf`(전체: 표지·목차·Lektion 01~37·부록 「암기 노트」·용어 풀이. 2026.11.27 기준 230쪽, 8.7MB), `syntalab-L01.pdf` … `syntalab-L37.pdf`(한 과씩, 5~7쪽), `syntalab-anhang.pdf`(부록), `manifest.json`(파일마다 쪽 수·크기·원본 지문). 학생이 받는 파일에는 `SODA Syntalab Lektion 03 격과 관사 변화.pdf` 같은 이름이 붙습니다.
 - **폴더가 `grammatik/` 밖에 있는 까닭.** `grammatik/sw.js`가 그 폴더 안의 페이지 요청에 모두 교재 화면을 돌려줍니다. PDF를 `grammatik/` 안으로 옮기면 PDF 주소로 들어온 사람에게 PDF 대신 교재 화면이 나옵니다.
-- **다시 만들기.** `python3 grammatik/tools/pdf-build.py`. 원본이 바뀐 것만 다시 만들고(과 하나를 고치면 그 과의 PDF와 전체 PDF), `grammatik/index.html`의 `sx-pdf` 블록(목차의 단추가 읽는 파일 이름·쪽 수·크기)과 `sw.js`의 VERSION을 맞춥니다. 원본이 같으면 파일도 글자 하나 다르지 않게 나오므로, 여러 번 실행해도 저장소에 바뀌는 것이 없습니다. `--all`은 모두 다시, `L03 anhang book`처럼 이름을 주면 그것만 다시 만들고, `--out 폴더`는 저장소를 건드리지 않고 그 폴더에 만들어 봅니다(`--html`을 붙이면 인쇄 직전의 HTML도 남깁니다). 전체를 만드는 데 1분쯤 걸립니다.
+- **다시 만들기.** `python3 grammatik/tools/pdf-build.py`. 원본이 바뀐 것만 다시 만들고(과 하나를 고치면 그 과의 PDF와 전체 PDF), `grammatik/index.html`의 `sx-pdf` 블록(목차의 단추가 읽는 파일 이름·쪽 수·크기)과 `sw.js`의 VERSION을 맞춥니다. 원본이 같으면 파일도 글자 하나 다르지 않게 나오므로, 여러 번 실행해도 저장소에 바뀌는 것이 없습니다. `--all`은 모두 다시, `L03 anhang book`처럼 이름을 주면 그것만 다시 만들고(교재는 `book`·`L01`…`L37`·`anhang`, 문법 연습은 `ubook`·`U01`…`U37`·`W1`…`W4`), `--out 폴더`는 저장소를 건드리지 않고 그 폴더에 만들어 봅니다(`--html`을 붙이면 인쇄 직전의 HTML도 남깁니다). 모두 만드는 데 2분쯤 걸립니다.
 - **모양.** A4 세로 두 단입니다. 과의 화면용 스타일(`index.html`의 `<style>`)을 그대로 쓰고 `grammatik/tools/pdf-print.css`가 종이용 배치를 얹습니다. 본문은 화면 크기의 0.66배(약 8.4pt)로 찍습니다. 과마다 새 쪽에서 시작하고, 첫머리에 제목·목표와 「이 과의 차례」가 쪽 번호와 함께 있습니다. 문제는 선지만 싣고(해설은 뺌) 정답은 과 끝의 「정답」에 있습니다. 화면에서 낱말을 누르면 뜨는 용어 풀이는 과별 파일에서는 과 끝에, 전체 PDF에서는 책 끝에 모읍니다.
 - **링크.** 전체 PDF의 목차, 과 첫머리의 차례, 쪽마다 왼쪽 아래의 「↑ 목차」(과별 파일은 「↑ 차례」), PDF 책갈피가 걸려 있습니다. 전체 PDF에서는 본문의 「3과」 같은 과 번호와 부록의 과 번호 단추도 그 과로 갑니다. 링크는 가리키는 쪽과 위치를 직접 적는 방식으로 넣습니다. Chrome이 PDF에 적는 방식(이름 붙은 자리)은 Chrome·Acrobat에서는 되지만 핸드폰의 PDF 뷰어 가운데 따라가지 못하는 것이 있어서, 도구가 마지막에 바꿔 적습니다. 링크 자체를 지원하지 않는 미리보기 화면에서는 어떤 방식으로 넣어도 눌리지 않으므로, 그때는 PDF 앱으로 열거나 책갈피와 목차의 쪽 번호를 씁니다.
 - **좁은 단에 맞추기.** `grammatik/tools/pdf-fit.js`가 인쇄 직전에 Chrome 안에서 폭을 재서 맞춥니다(`pager.js`가 핸드폰에서 하는 것과 같은 방식). 선지는 네 개가 한 줄에 들어가면 4개, 아니면 2개나 1개씩 놓습니다. 단보다 넓은 표는 `data-tf` 단계로 줄이고, 첫 칸 때문에 다른 칸이 세 줄 넘게 접힌 표는 첫 칸도 접을 수 있게 풉니다. 그림(SVG) 속 글자는 겹치지 않는 만큼 키웁니다. 격변화표와 짧은 상자·표는 쪽이나 단을 넘기지 않고, 긴 표(9줄부터)와 긴 상자만 넘깁니다. `-en`, `-(e)n` 같은 어미 표기는 하이픈 뒤에서 줄이 바뀌지 않게 묶습니다.
 - **「고칠 것」이 나오면.** 도구는 만들고 나서 단이나 제 상자 밖으로 나간 요소, 준비한 글꼴(Inter·Pretendard)에 없는 글자, Chrome이 줄여서 찍은 파일을 알려 주고 종료 코드 1로 끝납니다. 단 밖으로 나간 것이 하나라도 오른쪽 단에 놓이면 Chrome이 그 파일 전체를 줄여서 찍으므로, 나온 것은 모두 고친 뒤 다시 만듭니다. 과에 새 종류의 도식을 넣고 앱에 좁은 화면용 규칙(`@media (max-width:…)`)을 더했다면 `pdf-print.css`의 「좁은 단에 맞춘 도식 배치」에도 같은 규칙을 더합니다.
-- **필요한 것.** Chrome(또는 Chromium, 환경 변수 `CHROME`으로 지정 가능), 파이썬 꾸러미 beautifulsoup4·lxml·pikepdf·fonttools·Pillow, 시스템에 깔린 Inter 글꼴(`Inter-*.otf`, `InterDisplay-*.otf`), woff2를 풀 brotli 또는 node. 한글은 저장소의 Pretendard 조각(`assets/fonts/`)을 굵기마다 한 글꼴로 합쳐 씁니다. 글꼴 변환 함수는 `tools/vokalab_pdf.py`의 것을 가져다 쓰므로, 그 파일의 `_find_font`·`_otf_to_ttf`·`_brotli_shim`·`_ranges`·`chrome`을 고칠 때는 이 도구도 함께 확인합니다.
-- **목차의 단추.** `grammatik/index.html`의 `sx-pdf` 블록이 없거나 어떤 과의 항목이 없으면 그 단추는 나오지 않습니다. 코드는 `index.html`에서 `pdfButton`을 찾으면 나옵니다. `sw.js`는 `grammatik-pdf/` 주소를 캐시에 넣지 않고 그대로 통과시킵니다.
+- **필요한 것.** Chrome(또는 Chromium, 환경 변수 `CHROME`으로 지정 가능), 파이썬 꾸러미 beautifulsoup4·lxml·pikepdf·fonttools·Pillow, 시스템에 깔린 Inter 글꼴(`Inter-*.otf`, `InterDisplay-*.otf`), woff2를 풀 brotli 또는 node. 한글은 저장소의 Pretendard 조각(`assets/fonts/`)을 굵기마다 한 글꼴로 합쳐 씁니다. 글꼴 변환 함수는 `tools/vokalab_pdf.py`의 것을 가져다 쓰므로, 그 파일의 `_find_font`·`_otf_to_ttf`·`_brotli_shim`·`_ranges`·`chrome`을 고칠 때는 이 도구도 함께 확인합니다. 준비한 글꼴은 임시 폴더에 두고 다시 쓰며, 글꼴 파일에 준비한 시각을 적지 않습니다(글꼴의 시각이 PDF에 그대로 들어가서, 적으면 글꼴을 다시 준비할 때마다 내용이 같은 PDF도 파일이 달라집니다). 교재 PDF는 이렇게 고치기 전(2026.11.27)에 준비한 글꼴로 만든 것이라, 다른 컴퓨터에서 교재 PDF를 다시 만들면 내용은 같아도 파일이 한 번 달라집니다.
+- **목차의 단추.** `grammatik/index.html`의 `sx-pdf` 블록이 없거나 어떤 과의 항목이 없으면 그 단추는 나오지 않습니다(교재 목차와 연습 목차 모두). 코드는 `index.html`에서 `pdfButton`을 찾으면 나옵니다. `sw.js`는 `grammatik-pdf/` 주소를 캐시에 넣지 않고 그대로 통과시킵니다.
+- **문법 연습 PDF.** 앱에서 눌러서 푸는 연습을 종이에 써서 푸는 문제집으로 바꾼 것입니다. 문항 번호와 보기 순서는 앱과 같습니다.
+  - 파일: `uebungen.pdf`(전체: 표지·목차·Übung 01~37·통합 복습 1~4·정답과 해설. 2026.11.27 기준 192쪽, 2.4MB), `uebungen-U01.pdf` … `uebungen-U37.pdf`(연습 하나씩, 5~7쪽), `uebungen-W1.pdf` … `uebungen-W4.pdf`(통합 복습, 3쪽). 학생이 받는 파일에는 `SODA Grammatikübungen 03 격과 관사 변화.pdf` 같은 이름이 붙습니다.
+  - 모양: A4 세로 한 단, 본문 약 10pt(화면 크기의 0.78배). 교재의 `pdf-print.css` 위에 `grammatik/tools/pdf-ueb.css`를 얹습니다. 첫머리 오른쪽에 날짜·맞은 개수를 적는 칸이 있고(연습 하나짜리 파일에는 이름 칸도), 풀이 방법은 연습 하나짜리 파일의 첫머리와 전체 PDF의 목차에 있습니다.
+  - 문항의 높이가 일정합니다. 문항은 번호와 줄들로 이루어지고 줄의 높이는 두 가지뿐입니다(문장·단어 조각·쓸 줄은 높은 줄, 보기·한국어 뜻·지시문은 낮은 줄). 객관식은 「문제 문장 / 보기」, 빈칸은 「문장 / 한국어 뜻」, 바꿔 쓰기는 「지시문·원래 문장 / 쓸 줄」, 틀린 단어 찾기는 「지시문·한국어 뜻 / 문장 → 고친 말을 쓸 자리」로 모두 높은 줄 하나와 낮은 줄 하나이고, 단어 배열만 「지시문·한국어 뜻 / 단어 조각 / 쓸 줄」로 높은 줄이 하나 더 있습니다. 줄 높이와 문항 사이 간격은 `pdf-ueb.css` 맨 위의 `--ra`·`--rb`·`--gap`입니다.
+  - 예문은 한 줄을 넘기지 않습니다. `pdf-fit.js`가 줄마다 폭을 재서, 들어가지 않는 줄은 글자를 조금 줄이고(약 8pt까지), 문장이 여러 개인 문항은 문장마다 한 줄로 나누고, 한 문장이 그래도 길면 쉼표 뒤(없으면 und·oder·aber 앞)에서 둘로 나눠 뒤 조각을 들여 씁니다. 원본에 줄바꿈이 있던 자리(대화문)에서는 언제나 줄을 나눕니다. 보기는 네 칸(칸 폭이 같아 문항끼리 줄이 맞습니다) → 한 줄에 제 폭대로 → 두 줄 → 보기마다 한 줄 순서로 놓습니다. 한국어 뜻은 줄여도 한 줄에 안 들어가면 여러 줄로 접습니다. 만들 때 나오는 「글자 줄인 줄 · 문장마다 나눈 문항 · 쉼표에서 나눈 문장 …」이 그 개수입니다.
+  - 정답과 해설: 연습 하나짜리 파일은 문제 다음 쪽부터, 전체 PDF는 책 뒤에 두 단으로 모았습니다. 앱이 정답으로 받는 다른 답도 함께 적습니다(「또는 …」, 「…도 정답」). 전체 PDF에서는 연습 첫머리의 「정답과 해설」과 정답 쪽의 「문제 ○쪽」으로 오갈 수 있습니다.
+  - 고칠 때: 종이용 문항의 요소 이름은 `u-`로 시작합니다(앱의 `.qb`·`.qr`·`.qx`와 겹치지 않게). 앱의 화면용 스타일 가운데 `transition`은 `pdf-ueb.css`에서 꺼 두었습니다(켜 두면 `pdf-fit.js`가 바꾼 값이 다 바뀌기 전에 재고 찍게 됩니다). `pdf-ueb.css`만 고치면 문법 연습 PDF만 다시 만들어지고, `pdf-build.py`·`pdf-print.css`·`pdf-fit.js`를 고치면 교재 PDF도 다시 만들어집니다. 「고칠 것」에는 줄보다 높은 것(줄 안에서 줄이 바뀌어 아래 줄과 겹친 것)도 나옵니다.
 
 ## 쓰기 훈련(`schreibtraining/`) 고치기
 
