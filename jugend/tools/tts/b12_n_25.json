@@ -1,0 +1,84 @@
+{
+ "job": "b12_n_25",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "bedienen, hat bedient.",
+    "Ich kann die Maschine nicht bedienen."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "funktionieren, hat funktioniert.",
+    "Der Drucker funktioniert nicht."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "lösen, hat gelöst.",
+    "Wir müssen das Problem lösen."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "die Musik, die Physik, die Politik, die Fabrik"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "die Technik, die Grammatik, die Informatik"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "die Energie, die Chemie, die Biografie"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "Technik und Musik brauchen Energie."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "N",
+   "parts": [
+    "die Kultur"
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "N",
+   "parts": [
+    "das Missverständnis"
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "N",
+   "parts": [
+    "Sie sagt, dass das unhöflich ist."
+   ]
+  }
+ ],
+ "script": "Also. [pause] bedienen, hat bedient. Ich kann die Maschine nicht bedienen. [pause] funktionieren, hat funktioniert. Der Drucker funktioniert nicht. [pause] lösen, hat gelöst. Wir müssen das Problem lösen. [pause] die Musik, die Physik, die Politik, die Fabrik [pause] die Technik, die Grammatik, die Informatik [pause] die Energie, die Chemie, die Biografie [pause] Technik und Musik brauchen Energie. [pause] die Kultur [pause] das Missverständnis [pause] Sie sagt, dass das unhöflich ist. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

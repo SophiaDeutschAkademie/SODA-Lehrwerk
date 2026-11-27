@@ -1,0 +1,81 @@
+{
+ "job": "b12_sa_01",
+ "who": "Sabine",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "b1-2/3",
+   "who": "Sabine",
+   "parts": [
+    "Ein Garten wäre schön. Aber da ich oft bis spät am Abend arbeite, brauche ich einen kurzen Weg zur Arbeit."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Sabine",
+   "parts": [
+    "Langsam. Zuerst fahren wir zusammen zu dem Haus."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Sabine",
+   "parts": [
+    "Wie war Yunas Vortrag heute?"
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Sabine",
+   "parts": [
+    "Das stimmt. Und ich habe sie umarmt. Sie war ganz überrascht."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Sabine",
+   "parts": [
+    "Oh. Und wie ist es jetzt?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Sabine",
+   "parts": [
+    "Und jetzt diskutierst du mit uns über Politik und korrigierst die Rezepte von Thomas."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Sabine",
+   "parts": [
+    "Du gehörst zu unserer Familie, Yuna. Dein Zimmer bleibt dein Zimmer."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Sabine",
+   "parts": [
+    "Dann fahren wir um sieben los. Und nächsten Sommer werden wir dich in Seoul besuchen."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Sabine",
+   "parts": [
+    "Thomas hat angerufen. Er sagt, dass er heute später nach Hause kommt."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Sabine",
+   "parts": [
+    "Was hat dich in einer anderen Stadt oder in einem anderen Land überrascht?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ein Garten wäre schön. Aber da ich oft bis spät am Abend arbeite, brauche ich einen kurzen Weg zur Arbeit. [pause] Langsam. Zuerst fahren wir zusammen zu dem Haus. [pause] Wie war Yunas Vortrag heute? [pause] Das stimmt. Und ich habe sie umarmt. Sie war ganz überrascht. [pause] Oh. Und wie ist es jetzt? [pause] Und jetzt diskutierst du mit uns über Politik und korrigierst die Rezepte von Thomas. [pause] Du gehörst zu unserer Familie, Yuna. Dein Zimmer bleibt dein Zimmer. [pause] Dann fahren wir um sieben los. Und nächsten Sommer werden wir dich in Seoul besuchen. [pause] Thomas hat angerufen. Er sagt, dass er heute später nach Hause kommt. [pause] Was hat dich in einer anderen Stadt oder in einem anderen Land überrascht? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

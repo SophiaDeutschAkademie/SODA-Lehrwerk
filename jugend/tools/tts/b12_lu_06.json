@@ -1,0 +1,67 @@
+{
+ "job": "b12_lu_06",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "b1-2/6",
+   "who": "Lukas",
+   "parts": [
+    "Nein, du brauchst nichts zu tun. Man braucht nur einmal pro Woche den Akku aufzuladen."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Lukas",
+   "parts": [
+    "Ja, mit einer App. Die App lässt sich in zwei Minuten installieren. Alles ist auf dem Handy lesbar."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Lukas",
+   "parts": [
+    "Die Teile haben nur dreißig Euro gekostet. Das meiste war gebraucht."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Lukas",
+   "parts": [
+    "Ja! Roboter erledigen langweilige Arbeit. Dann braucht der Mensch sie nicht mehr zu machen."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Lukas",
+   "parts": [
+    "Aber wenn die künstliche Intelligenz meine Hausaufgaben macht, lerne ich nichts. Ist dieses Problem lösbar?"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Lukas",
+   "parts": [
+    "Stimmt. Mein Roboter gibt Pflanzen Wasser, aber er lacht nicht über meine Witze."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Lukas",
+   "parts": [
+    "Fast. Es ist ein Roboter für Pflanzen. Er prüft jede Stunde, ob die Erde trocken ist."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Lukas",
+   "parts": [
+    "Dann gibt er automatisch Wasser. Sie brauchen nichts zu tun."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Nein, du brauchst nichts zu tun. Man braucht nur einmal pro Woche den Akku aufzuladen. [pause] Ja, mit einer App. Die App lässt sich in zwei Minuten installieren. Alles ist auf dem Handy lesbar. [pause] Die Teile haben nur dreißig Euro gekostet. Das meiste war gebraucht. [pause] Ja! Roboter erledigen langweilige Arbeit. Dann braucht der Mensch sie nicht mehr zu machen. [pause] Aber wenn die künstliche Intelligenz meine Hausaufgaben macht, lerne ich nichts. Ist dieses Problem lösbar? [pause] Stimmt. Mein Roboter gibt Pflanzen Wasser, aber er lacht nicht über meine Witze. [pause] Fast. Es ist ein Roboter für Pflanzen. Er prüft jede Stunde, ob die Erde trocken ist. [pause] Dann gibt er automatisch Wasser. Sie brauchen nichts zu tun. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

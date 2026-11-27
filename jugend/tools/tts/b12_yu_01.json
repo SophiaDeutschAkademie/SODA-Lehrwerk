@@ -1,0 +1,60 @@
+{
+ "job": "b12_yu_01",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "Yuna",
+   "parts": [
+    "Ich interessiere mich für Radio. Deshalb habe ich mich beim Radio beworben."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Du hast doch schon drei Paar Schuhe für den Sport. Statt neue zu kaufen, könntest du die alten reparieren lassen."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "In Seoul gibt es eine Straße, wo ich früher jedes Wochenende eingekauft habe. Das meiste habe ich nie getragen."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Und vergleich die Preise. Im Internet gibt es vielleicht ein besseres Angebot."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Die Zielgruppe sind Jugendliche. Die Werbung verspricht: Mit diesen Schuhen wirst du so gut wie er."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Der Nachteil: Werbung zeigt nie die Nachteile eines Produkts. Und sie beeinflusst uns jeden Tag."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Ja. Ich habe diese Jacke im Internet bestellt, aber sie ist zu klein. Kann ich sie hier zurückgeben?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich interessiere mich für Radio. Deshalb habe ich mich beim Radio beworben. [pause] Du hast doch schon drei Paar Schuhe für den Sport. Statt neue zu kaufen, könntest du die alten reparieren lassen. [pause] In Seoul gibt es eine Straße, wo ich früher jedes Wochenende eingekauft habe. Das meiste habe ich nie getragen. [pause] Und vergleich die Preise. Im Internet gibt es vielleicht ein besseres Angebot. [pause] Die Zielgruppe sind Jugendliche. Die Werbung verspricht: Mit diesen Schuhen wirst du so gut wie er. [pause] Der Nachteil: Werbung zeigt nie die Nachteile eines Produkts. Und sie beeinflusst uns jeden Tag. [pause] Ja. Ich habe diese Jacke im Internet bestellt, aber sie ist zu klein. Kann ich sie hier zurückgeben? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,87 @@
+{
+ "job": "b12_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Bewerbung"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Stärke"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "Ich bewerbe mich um ein Praktikum."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "Der Chef lässt mich selbst reparieren."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Betrieb, die Betriebe.",
+    "Der Betrieb hat zwanzig Mitarbeiter."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Arbeitsplatz, die Arbeitsplätze.",
+    "Mein Arbeitsplatz ist in der Werkstatt."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Werkstatt, die Werkstätten.",
+    "In der Werkstatt werden Fahrräder repariert."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Handwerker, die Handwerker.",
+    "Der Handwerker repariert das Fenster."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Tierarzt, die Tierärzte.",
+    "Emma möchte Tierärztin werden."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Krankenpfleger, die Krankenpfleger.",
+    "Mein Onkel ist Krankenpfleger."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Bewerbung [pause] die Stärke [pause] Ich bewerbe mich um ein Praktikum. [pause] Der Chef lässt mich selbst reparieren. [pause] der Betrieb, die Betriebe. Der Betrieb hat zwanzig Mitarbeiter. [pause] der Arbeitsplatz, die Arbeitsplätze. Mein Arbeitsplatz ist in der Werkstatt. [pause] die Werkstatt, die Werkstätten. In der Werkstatt werden Fahrräder repariert. [pause] der Handwerker, die Handwerker. Der Handwerker repariert das Fenster. [pause] der Tierarzt, die Tierärzte. Emma möchte Tierärztin werden. [pause] der Krankenpfleger, die Krankenpfleger. Mein Onkel ist Krankenpfleger. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

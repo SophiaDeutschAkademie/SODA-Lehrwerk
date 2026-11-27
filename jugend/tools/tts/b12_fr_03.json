@@ -1,0 +1,53 @@
+{
+ "job": "b12_fr_03",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-2/station-1",
+   "who": "Frau",
+   "parts": [
+    "Ruf mich bitte an, wenn du noch Fragen hast."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Im Jahr neunzehnhunderteinundsiebzig. Dein Opa war schon zwei Jahre früher als Gastarbeiter eingewandert. Er arbeitete in einer Autofabrik."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Deutschland brauchte Arbeiter. Deshalb wurden Menschen aus der Türkei, aus Italien und aus anderen Ländern eingeladen."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Sehr. Ich konnte kein Deutsch, und ich hatte Heimweh. Als dein Vater in die Schule kam, habe ich mit ihm zusammen Deutsch gelernt."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Hier und dort. Köln ist meine Heimat geworden. Aber im Sommer fahre ich immer in mein Dorf in der Türkei."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Oh ja. Damals gab es viele Vorurteile. Heute ist die Vielfalt normal. In deiner Klasse sitzen Kinder aus zehn Ländern, Elif."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ruf mich bitte an, wenn du noch Fragen hast. [pause] Im Jahr neunzehnhunderteinundsiebzig. Dein Opa war schon zwei Jahre früher als Gastarbeiter eingewandert. Er arbeitete in einer Autofabrik. [pause] Deutschland brauchte Arbeiter. Deshalb wurden Menschen aus der Türkei, aus Italien und aus anderen Ländern eingeladen. [pause] Sehr. Ich konnte kein Deutsch, und ich hatte Heimweh. Als dein Vater in die Schule kam, habe ich mit ihm zusammen Deutsch gelernt. [pause] Hier und dort. Köln ist meine Heimat geworden. Aber im Sommer fahre ich immer in mein Dorf in der Türkei. [pause] Oh ja. Damals gab es viele Vorurteile. Heute ist die Vielfalt normal. In deiner Klasse sitzen Kinder aus zehn Ländern, Elif. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

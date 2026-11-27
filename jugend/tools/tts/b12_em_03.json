@@ -1,0 +1,81 @@
+{
+ "job": "b12_em_03",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "b1-2/3",
+   "who": "Emma",
+   "parts": [
+    "Unsere Gruppe möchte eine autofreie Innenstadt. Innerhalb der Innenstadt fahren nur Busse, Bahnen und Fahrräder."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Emma",
+   "parts": [
+    "Am Stadtrand gibt es große Parkplätze. Von dort fährt alle fünf Minuten eine Bahn."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Emma",
+   "parts": [
+    "Und ich? Ich müsste jeden Tag pendeln. Meine Freunde wohnen alle in der Stadt."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Emma",
+   "parts": [
+    "Einen Hund? Wirklich? Ich wünschte, wir könnten morgen einziehen!"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Emma",
+   "parts": [
+    "Ich wünschte, ich hätte einen Balkon."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Emma",
+   "parts": [
+    "Ich wünschte, wir hätten einen Garten."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Emma",
+   "parts": [
+    "Stimmt es, dass er taub war?"
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Emma",
+   "parts": [
+    "Das ist nichts Schlimmes. Jeder Künstler, dessen Auftritt gut wird, ist zuerst nervös."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Emma",
+   "parts": [
+    "Psst! Es geht los. Elif, du bist dran."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Emma",
+   "parts": [
+    "Heute habe ich nichts Besonderes gemacht."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Unsere Gruppe möchte eine autofreie Innenstadt. Innerhalb der Innenstadt fahren nur Busse, Bahnen und Fahrräder. [pause] Am Stadtrand gibt es große Parkplätze. Von dort fährt alle fünf Minuten eine Bahn. [pause] Und ich? Ich müsste jeden Tag pendeln. Meine Freunde wohnen alle in der Stadt. [pause] Einen Hund? Wirklich? Ich wünschte, wir könnten morgen einziehen! [pause] Ich wünschte, ich hätte einen Balkon. [pause] Ich wünschte, wir hätten einen Garten. [pause] Stimmt es, dass er taub war? [pause] Das ist nichts Schlimmes. Jeder Künstler, dessen Auftritt gut wird, ist zuerst nervös. [pause] Psst! Es geht los. Elif, du bist dran. [pause] Heute habe ich nichts Besonderes gemacht. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

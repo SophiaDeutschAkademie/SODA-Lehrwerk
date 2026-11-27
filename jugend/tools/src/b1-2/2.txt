@@ -1,0 +1,277 @@
+@id b1-2/2
+
+== einstieg
+bild: A shopping street. LUKAS stands in front of a shop window with one pair of sneakers on a small stand, he points at them with both hands and smiles widely. EMMA stands next to him with crossed arms and a doubtful look, YUNA holds a cloth bag full of folded used clothes and smiles. All three face the viewer, all faces with clearly drawn eyes, nose and mouth.
+alt: 가게가 늘어선 거리예요. Lukas가 진열창 안의 운동화를 두 손으로 가리키며 활짝 웃어요. 옆에서 Emma는 팔짱을 끼고 못 미더운 얼굴로 서 있고, Yuna는 헌 옷이 든 천 가방을 들고 웃어요.
+lead: 5월이에요. Lukas는 광고에서 본 운동화를 갖고 싶어 해요. 값은 180유로예요. Emma와 Yuna는 그 신발이 정말 필요한지 물어요. 팟캐스트 팀은 광고가 어떻게 사람을 움직이는지 알아보기로 해요.
+mission: 이 과를 마치면 내 소비 습관을 돌아보고, 광고를 분석하고, 장점과 단점을 비교할 수 있어요.
+wort: der Vorteil | 장점
+wort: der Nachteil | 단점
+wort: Das ist alles, was ich brauche. | 내가 필요한 건 그게 다야.
+wort: Kauf nichts, ohne zu vergleichen! | 비교하지 않고 사지 마!
+mc: Das ist alles, was ich brauche. alles 뒤에서는 어떤 말로 문장을 잇나요? | was* | das | wo => alles, etwas, nichts 뒤에서는 was로 이어요.
+
+== hoeren
+-- dialog A | Brauche ich das? | 토요일 오후, 쾰른의 가게 거리예요. Lukas가 신발 가게 앞에서 멈춰 서요.
+vor: 들으면서 찾아보세요. Emma는 Lukas에게 얼마나 기다리라고 하나요?
+Lukas: Da sind sie! Das sind die Schuhe, die ich in der Werbung gesehen habe. Sie sind alles, was ich mir wünsche. | 저기 있다! 광고에서 본 그 신발이야. 내가 바라는 건 저게 다야.
+Emma: Hundertachtzig Euro? Das ist viel Geld für etwas, was du nicht brauchst. | 180유로? 필요하지도 않은 것에 쓰기에는 큰돈이야.
+Lukas: Ich brauche sie aber! Alle in der Mannschaft tragen diese Marke. | 그래도 필요해! 팀 애들이 다 이 상표를 신어.
+Yuna: Du hast doch schon drei Paar Schuhe für den Sport. Statt neue zu kaufen, könntest du die alten reparieren lassen. | 운동할 때 신는 신발이 벌써 세 켤레 있잖아. 새로 사는 대신 헌 것을 고쳐 달라고 할 수 있어.
+Lukas: Aber heute gibt es zwanzig Prozent Rabatt. Das ist ein Sonderangebot! | 하지만 오늘은 20퍼센트 깎아 준대. 특별 할인이야!
+Emma: Genau so wirkt Werbung. Du kaufst etwas, ohne lange nachzudenken. | 광고가 바로 그렇게 통하는 거야. 오래 생각하지도 않고 사게 돼.
+Yuna: In Seoul gibt es eine Straße, wo ich früher jedes Wochenende eingekauft habe. Das meiste habe ich nie getragen. | 서울에는 내가 예전에 주말마다 물건을 사던 거리가 있어. 산 것 대부분은 한 번도 안 입었어.
+Lukas: Na gut. Was soll ich denn machen? | 알았어. 그럼 어떻게 하라고?
+Emma: Warte eine Woche. Wenn du die Schuhe dann immer noch willst, kannst du sie kaufen. | 일주일 기다려 봐. 그때도 여전히 갖고 싶으면 사도 돼.
+Yuna: Und vergleich die Preise. Im Internet gibt es vielleicht ein besseres Angebot. | 그리고 값을 비교해 봐. 인터넷에 더 좋은 조건이 있을지도 몰라.
+Lukas: Eine Woche warten? Das ist das Schwerste, was es gibt. | 일주일을 기다리라고? 세상에서 제일 어려운 일이야.
+Emma: Du schaffst das. Komm, wir gehen ein Eis essen, statt hier zu stehen. | 넌 할 수 있어. 여기 서 있지 말고 아이스크림 먹으러 가자.
+
+-- dialog B | Wie wirkt Werbung? | 다음 주, 팟캐스트 「Mitreden」을 녹음해요. 팀이 운동화 광고를 살펴봐요.
+vor: 들으면서 찾아보세요. Lukas는 일주일 뒤에 신발을 샀나요?
+Elif: Willkommen bei „Mitreden“. Heute fragen wir: Wie wirkt Werbung? Wir sprechen über ein Plakat für Schuhe. | 「Mitreden」입니다. 오늘은 광고가 어떻게 통하는지 물어요. 신발 광고 포스터를 놓고 이야기해요. | say=Willkommen bei Mitreden. Heute fragen wir: Wie wirkt Werbung? Wir sprechen über ein Plakat für Schuhe.
+Emma: Auf dem Plakat sieht man einen bekannten Fußballspieler. Der Slogan heißt: Alles, was du brauchst. | 포스터에는 유명한 축구 선수가 나와요. 광고 문구는 「네게 필요한 모든 것」이에요.
+Yuna: Die Zielgruppe sind Jugendliche. Die Werbung verspricht: Mit diesen Schuhen wirst du so gut wie er. | 대상은 청소년이에요. 광고는 이 신발을 신으면 그 선수만큼 잘하게 된다고 약속해요.
+Lukas: Und das hat bei mir gewirkt. Ich wollte die Schuhe sofort kaufen, ohne den Preis zu vergleichen. | 그게 저한테 통했어요. 값을 비교하지도 않고 바로 사려고 했어요.
+Elif: Hat Werbung auch Vorteile? | 광고에 장점도 있나요?
+Emma: Ja. Man sieht, welche Produkte es gibt, und kann sie vergleichen. | 네. 어떤 제품이 있는지 볼 수 있고, 서로 비교할 수 있어요.
+Yuna: Der Nachteil: Werbung zeigt nie die Nachteile eines Produkts. Und sie beeinflusst uns jeden Tag. | 단점은 광고가 제품의 나쁜 점을 절대 보여 주지 않는다는 거예요. 그리고 날마다 우리에게 영향을 줘요.
+Elif: Und im Internet, wo wir jeden Tag viele Stunden sind, gibt es sehr viel Werbung. | 그리고 우리가 날마다 여러 시간을 보내는 인터넷에는 광고가 아주 많아요.
+Lukas: Stimmt. Manche Influencer zeigen Produkte, ohne zu sagen, dass es Werbung ist. | 맞아요. 어떤 인플루언서는 광고라고 말하지 않고 제품을 보여 줘요.
+Elif: Lukas, hast du die Schuhe am Ende gekauft? | Lukas, 결국 그 신발 샀어요?
+Lukas: Nein. Nach einer Woche wollte ich sie nicht mehr. Jetzt lasse ich meine alten Schuhe reparieren. | 아니요. 일주일이 지나니까 갖고 싶지 않았어요. 지금은 헌 신발을 고쳐 달라고 맡겼어요.
+Emma: Und von dem Geld, das er gespart hat, lädt er uns alle zum Eis ein! | 그리고 아낀 돈으로 우리 모두에게 아이스크림을 사 준대요!
+Lukas: Moment, das habe ich nie versprochen! | 잠깐, 그런 약속은 한 적 없어!
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Wie viel kosten die Schuhe? | 180 Euro* | 80 Euro | 118 Euro
+rf: Lukas hat noch keine Schuhe für den Sport. | f => Er hat schon drei Paar.
+mc: Was schlägt Yuna vor? | die alten Schuhe reparieren lassen* | zwei Paar kaufen | die Schuhe tauschen
+mc: Wie lange soll Lukas warten? | eine Woche* | einen Tag | einen Monat
+mc: Wer ist die Zielgruppe der Werbung? | Jugendliche* | Eltern | Fußballspieler
+rf: Lukas hat die Schuhe nach einer Woche gekauft. | f => Nach einer Woche wollte er sie nicht mehr.
+mc: 광고의 단점으로 무엇을 말했나요? | 제품의 나쁜 점은 보여 주지 않아요* | 제품을 비교할 수 있어요 | 값이 너무 싸져요
+
+-- kultur 용돈으로 사기, 14일 안에 돌려보내기
+p: 독일에서는 일곱 살부터 열일곱 살까지 부모의 허락 없이도 자기 용돈으로 물건을 살 수 있어요. 법의 이 조항을 사람들은 Taschengeldparagraf라고 불러요. 아주 비싼 물건이나 다달이 돈을 내는 계약은 여기에 들지 않아요.
+p: 인터넷에서 산 물건은 대부분 받은 뒤 14일 안에 이유를 말하지 않고 돌려보낼 수 있어요. 이 권리를 Widerrufsrecht라고 해요.
+p: 헌 물건을 사고파는 일도 흔해요. 주말이면 Flohmarkt가 열리고, 헌 옷 가게 Secondhandladen이나 인터넷 중고 장터를 많이 써요.
+mc: 인터넷에서 산 물건은 보통 며칠 안에 돌려보낼 수 있나요? | 14일* | 3일 | 100일
+
+== wortschatz
+-- gruppe Kaufen und Konsum | 사는 것과 소비
+der Konsum | 소비 | Unser Konsum macht viel Müll. | 우리의 소비는 쓰레기를 많이 만들어요.
+die Marke, die Marken | 상표, 브랜드 | Diese Marke tragen viele Jugendliche. | 이 상표는 많은 청소년이 입어요.
+die Qualität | 품질 | Die Qualität ist wichtiger als der Preis. | 품질이 값보다 중요해요.
+der Rabatt, die Rabatte | 할인 | Heute gibt es zwanzig Prozent Rabatt. | 오늘은 20퍼센트 깎아 줘요.
+das Sonderangebot, die Sonderangebote | 특별 할인 상품 | Die Jacke ist im Sonderangebot. | 그 재킷은 특별 할인 중이에요.
+der Gutschein, die Gutscheine | 상품권, 쿠폰 | Zum Geburtstag bekomme ich einen Gutschein. | 생일에 나는 상품권을 받아요.
+die Garantie, die Garantien | 보증 | Das Handy hat zwei Jahre Garantie. | 그 휴대폰은 보증 기간이 2년이에요.
+die Quittung, die Quittungen | 영수증 | Ohne Quittung kann man nichts umtauschen. | 영수증이 없으면 아무것도 바꿀 수 없어요.
+die Bestellung, die Bestellungen | 주문 | Meine Bestellung kommt morgen. | 내가 주문한 것이 내일 와요.
+liefern, hat geliefert | 배달하다, 배송하다 | Das Paket wird morgen geliefert. | 소포는 내일 배달돼요.
+das Paket, die Pakete | 소포, 택배 | Ich schicke das Paket zurück. | 나는 소포를 돌려보내요.
+
+-- gruppe Die Werbung | 광고
+die Anzeige, die Anzeigen | (신문이나 인터넷의) 광고 | In der Zeitung steht eine Anzeige. | 신문에 광고가 실려 있어요.
+das Plakat, die Plakate | 포스터, 벽보 | An der Haltestelle sehe ich jeden Tag ein Plakat. | 정류장에서 나는 날마다 포스터를 봐요.
+der Slogan, die Slogans | 광고 문구 | Der Slogan ist kurz und lustig. | 광고 문구가 짧고 재미있어요.
+die Zielgruppe, die Zielgruppen | 대상 고객 | Die Zielgruppe sind Jugendliche. | 대상 고객은 청소년이에요.
+beeinflussen, hat beeinflusst | 영향을 주다 | Werbung beeinflusst uns jeden Tag. | 광고는 날마다 우리에게 영향을 줘요.
+überreden, hat überredet | 구슬려서 하게 하다 | Der Verkäufer wollte mich überreden. | 판매원이 나를 구슬리려고 했어요.
+auffallen (du fällst auf, er fällt auf), ist aufgefallen | 눈에 띄다 | Das Plakat fällt sofort auf. | 그 포스터는 바로 눈에 띄어요.
+wirken, hat gewirkt | 효과가 있다, 통하다 | Die Werbung hat bei mir gewirkt. | 그 광고는 나한테 통했어요.
+der Trend, die Trends | 유행 | Dieser Trend kommt aus Korea. | 이 유행은 한국에서 왔어요.
+der Influencer, die Influencer | 인플루언서 | Der Influencer zeigt jeden Tag neue Produkte. | 그 인플루언서는 날마다 새 제품을 보여 줘요.
+die Mode, die Moden | 패션, 유행하는 옷차림 | Yuna interessiert sich für Mode. | Yuna는 패션에 관심이 있어요.
+
+-- gruppe Brauchen und entscheiden | 필요와 결정
+der Vorteil, die Vorteile | 장점 | Ein Vorteil ist der Preis. | 장점 하나는 값이에요.
+der Nachteil, die Nachteile | 단점 | Jedes Produkt hat auch Nachteile. | 어떤 제품이든 단점도 있어요.
+das Bedürfnis, die Bedürfnisse | 꼭 있어야 하는 것, 욕구 | Essen und Schlaf sind Bedürfnisse. | 먹는 것과 자는 것은 꼭 있어야 해요.
+nötig | 필요한 | Ist das wirklich nötig? | 그게 정말 필요해?
+unnötig | 필요 없는 | Ich kaufe keine unnötigen Dinge mehr. | 나는 이제 필요 없는 물건을 사지 않아요.
+praktisch | 쓸모 있는, 편리한 | Die Tasche ist sehr praktisch. | 그 가방은 아주 편리해요.
+sich leisten, hat sich geleistet | (값을 치르고) 가질 형편이 되다 | Das kann ich mir nicht leisten. | 그건 내 형편으로는 못 사요.
+die Entscheidung, die Entscheidungen | 결정 | Das war eine gute Entscheidung. | 그건 좋은 결정이었어요.
+auswählen, hat ausgewählt | 고르다 | Ich wähle ein Geschenk für Oma aus. | 나는 할머니께 드릴 선물을 골라요.
+wert | ~의 값어치가 있는 | Die Schuhe sind ihr Geld nicht wert. | 그 신발은 그 값을 못 해요.
+statt | ~ 대신에 | Statt zu kaufen, tausche ich Kleidung. | 나는 옷을 사는 대신 바꿔 입어요.
+
+-- bilder
+die Marke, die Marken: a white sneaker with a simple star symbol as a brand sign on its side, no letters
+der Rabatt, die Rabatte: a jacket on a hanger with a price tag with a muted red accent that shows a big percent sign
+der Gutschein, die Gutscheine: a gift card with a ribbon bow and a star symbol, no letters
+die Quittung, die Quittungen: a long paper receipt with gray lines instead of text next to two coins
+die Bestellung, die Bestellungen: a hand that taps a shopping cart symbol on a phone screen
+das Paket, die Pakete: a delivery person who hands a cardboard parcel to a smiling teenager at a door, both faces turned to the viewer with clearly drawn eyes, nose and mouth
+das Plakat, die Plakate: a big poster on a wall that shows one sports shoe, and a teenager who stands next to it and looks at the viewer, the face with clearly drawn eyes, nose and mouth
+der Influencer, die Influencer: a young woman who holds up a bottle and films herself with a phone on a small tripod, seen from the front, the face with clearly drawn eyes, nose and mouth
+überreden, hat überredet: a seller who holds two shirts toward a doubtful customer and talks, both faces turned to the viewer with clearly drawn eyes, nose and mouth
+auffallen (du fällst auf, er fällt auf), ist aufgefallen: one bright ochre umbrella among many gray umbrellas
+sich leisten, hat sich geleistet: a teenager who looks into an empty wallet in front of a shop window with a bicycle, seen from the front, the face with clearly drawn eyes, nose and mouth
+auswählen, hat ausgewählt: a teenager who stands in front of a shelf with three bags and points at one, the face turned to the viewer with clearly drawn eyes, nose and mouth
+
+-- aussprache qu는 [kv] | k 다음에 바로 w 소리
+p: qu는 [kv]로 읽어요. k 다음에 바로 독일어 w 소리를 내요. Qualität, Quittung, bequem이 그래요.
+p: 영어처럼 입술을 둥글게 내밀지 않아요. 윗니를 아랫입술에 살짝 대고 소리 내요.
+hör: die Qualität, die Quittung, bequem | qu는 [kv]
+hör: die Quelle, das Quiz | 낱말 처음의 qu
+hör: Gute Qualität ist bequem. | 문장으로
+
+== grammatik
+-- punkt Relativsätze mit was | alles, etwas, nichts 뒤에서
+bsp: Sie sind alles, *was* ich mir wünsche. | 내가 바라는 건 저게 다야.
+bsp: Das ist viel Geld für etwas, *was* du nicht brauchst. | 필요하지도 않은 것에 쓰기에는 큰돈이야.
+bsp: Das ist das Schwerste, *was* es gibt. | 세상에서 제일 어려운 일이야.
+finde: Ich kaufe nichts, … ich nicht brauche. 빈칸에 알맞은 말은 무엇인가요? | was* | das | wo
+regel: alles, etwas, nichts, vieles 뒤와 das Beste, das Schwerste 같은 말 뒤에서는 관계문을 was로 시작해요. 동사는 맨 끝에 써요.
+| 앞말 | 보기
+| alles | Das ist alles, *was* ich habe.
+| etwas | Ich suche etwas, *was* nicht teuer ist.
+| nichts | Es gibt nichts, *was* ich brauche.
+| das Beste | Das ist das Beste, *was* du tun kannst.
+merke: 명사 뒤에서는 der, die, das를 써요. Das ist das Buch, *das* ich brauche. Das ist alles, *was* ich brauche.
+
+-- punkt Relativsätze mit wo | 곳을 나타내는 말 뒤에서
+bsp: In Seoul gibt es eine Straße, *wo* ich früher eingekauft habe. | 서울에는 내가 예전에 물건을 사던 거리가 있어.
+bsp: Im Internet, *wo* wir jeden Tag viele Stunden sind, gibt es sehr viel Werbung. | 우리가 날마다 여러 시간을 보내는 인터넷에는 광고가 아주 많아요.
+bsp: Das ist der Laden, *wo* es die Schuhe gibt. | 그 신발을 파는 가게야.
+finde: Das ist die Stadt, wo ich wohne. wo 대신 쓸 수 있는 말은 무엇인가요? | in der* | die | was
+regel: 곳을 나타내는 말 뒤에서는 관계문을 wo로 시작할 수 있어요. in dem, in der와 뜻이 같아요. 도시와 나라 이름, dort 뒤에서는 언제나 wo를 써요.
+| wo | 전치사 + 관계대명사
+| der Laden, *wo* ich arbeite | der Laden, *in dem* ich arbeite
+| die Stadt, *wo* ich wohne | die Stadt, *in der* ich wohne
+| Köln, *wo* Yuna lebt | 이름 뒤에서는 wo만 써요
+merke: wo 문장에서도 동사는 맨 끝에 와요. Das ist der Park, wo wir uns immer *treffen*.
+
+-- punkt statt … zu, ohne … zu | ~하는 대신에, ~하지 않고
+bsp: *Statt* neue *zu kaufen*, könntest du die alten reparieren lassen. | 새로 사는 대신 헌 것을 고쳐 달라고 할 수 있어.
+bsp: Du kaufst etwas, *ohne* lange *nachzudenken*. | 오래 생각하지도 않고 사게 돼.
+bsp: Wir gehen ein Eis essen, *statt* hier *zu stehen*. | 여기 서 있지 말고 아이스크림 먹으러 가자.
+finde: Er kauft, ohne die Preise zu vergleichen. 그는 값을 비교했나요? | 아니요, 비교하지 않았어요* | 네, 비교했어요 | 알 수 없어요
+regel: statt … zu는 '~하는 대신에', ohne … zu는 '~하지 않고'예요. um … zu처럼 zu와 동사 원형을 맨 끝에 써요. 나누어지는 동사는 zu가 가운데에 들어가요.
+| | 보기
+| statt … zu | *Statt* zu kaufen, tausche ich Kleidung.
+| ohne … zu | Er geht, *ohne* etwas zu sagen.
+| 나누어지는 동사 | Sie kauft, *ohne* nach*zu*denken.
+merke: 두 문장의 주어가 같을 때만 써요. Ich kaufe nichts, ohne zu vergleichen. 사는 사람도 비교하는 사람도 나예요.
+
+== training
+-- ex Hören | Yuna가 가게에서 재킷을 돌려주려고 해요. 듣고 답하세요.
+audio | Im Laden | Frau=Verkäuferin
+> Frau: Guten Tag. Kann ich dir helfen?
+> Yuna: Ja. Ich habe diese Jacke im Internet bestellt, aber sie ist zu klein. Kann ich sie hier zurückgeben?
+> Frau: Hast du die Quittung?
+> Yuna: Ja, hier. Die Bestellung ist erst fünf Tage alt.
+> Frau: Gut. Du kannst die Jacke umtauschen oder das Geld zurückbekommen. Was ist dir lieber?
+> Yuna: Ich hätte gern das Geld zurück. Ich habe gemerkt, dass ich die Jacke nicht brauche.
+mc: Warum möchte Yuna die Jacke zurückgeben? | Sie ist zu klein.* | Sie ist kaputt. | Sie ist zu teuer.
+mc: Was will die Verkäuferin sehen? | die Quittung* | den Gutschein | das Paket
+rf: Yuna hat die Jacke vor fünf Wochen bestellt. | f => Die Bestellung ist erst fünf Tage alt.
+mc: Yuna는 무엇을 고르나요? | 돈을 돌려받아요* | 더 큰 재킷으로 바꿔요 | 상품권을 받아요
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Emma: Ich kaufe nichts, was ich nicht wirklich brauche.
+mc: Emma는 어떤 것을 사지 않나요? | 정말 필요하지는 않은 것* | 비싼 것 | 헌 것
+hör: Lukas: Das ist der Laden, wo ich mein erstes Fahrrad gekauft habe.
+mc: Lukas는 이 가게에서 무엇을 샀나요? | 첫 자전거* | 운동화 | 휴대폰
+hör: Elif: Statt neue Bücher zu kaufen, leihe ich sie von Freunden.
+mc: Elif는 책을 어떻게 구하나요? | 친구에게 빌려요* | 새로 사요 | 선물로 받아요
+hör: Thomas: Er hat das Handy bestellt, ohne den Preis zu vergleichen.
+mc: 그 사람은 주문하기 전에 무엇을 하지 않았나요? | 값을 비교하지 않았어요* | 돈을 내지 않았어요 | 휴대폰을 고르지 않았어요
+
+-- ex Lesen | Emma가 팟캐스트 게시판에 쓴 글이에요. 읽고 답하세요.
+text notiz | Ein Monat ohne Einkaufen
+> Im Mai habe ich einen Monat lang nichts gekauft, was ich nicht wirklich brauche. Nur Essen und Dinge für die Schule waren erlaubt.
+> Die erste Woche war am schwersten. In der Straße, wo ich wohne, gibt es drei Läden mit Sonderangeboten.
+> Statt in die Stadt zu gehen, habe ich mit Yuna Kleidung getauscht. Das war lustig und hat nichts gekostet.
+> Am Ende des Monats hatte ich sechzig Euro gespart, ohne etwas zu vermissen.
+> Mein Ergebnis: Vieles, was ich früher gekauft habe, war unnötig. Jetzt warte ich immer eine Woche, bevor ich etwas kaufe.
+mc: Was hat Emma im Mai gemacht? | Sie hat nur gekauft, was sie wirklich braucht.* | Sie hat jeden Tag eingekauft. | Sie hat in einem Laden gearbeitet.
+rf: Emma durfte kein Essen kaufen. | f => Essen und Dinge für die Schule waren erlaubt.
+mc: Was hat Emma gemacht, statt in die Stadt zu gehen? | Sie hat mit Yuna Kleidung getauscht.* | Sie hat im Internet bestellt. | Sie hat Schuhe repariert.
+mc: Wie viel Geld hatte Emma am Ende gespart? | sechzig Euro* | sechzehn Euro | hundertachtzig Euro
+mc: Emma는 이제 물건을 사기 전에 어떻게 하나요? | 일주일을 기다려요* | 부모님께 물어봐요 | 광고를 찾아봐요
+
+-- ex Lesen | Lukas가 신발 두 켤레를 견주어 본 표예요. 보고 답하세요.
+text plan | Zwei Paar Schuhe
+> Was? | Schuh A | Schuh B
+> Preis | 180 Euro | 70 Euro
+> Marke | bekannt | nicht bekannt
+> Qualität | gut | gut
+> Garantie | 2 Jahre | 2 Jahre
+mc: Welcher Schuh ist billiger? | Schuh B* | Schuh A | Die Preise sind gleich.
+rf: Schuh A hat eine bessere Qualität als Schuh B. | f => 두 신발의 품질은 같아요.
+mc: Was ist bei den Schuhen verschieden? | der Preis und die Marke* | die Garantie | die Qualität
+
+-- ex Grammatik | was, das, wo 가운데 알맞은 말을 고르세요.
+gap: Das ist alles, [was|das|wo] ich brauche. | 내가 필요한 건 그게 다예요.
+gap: Das ist das Handy, [das|was|wo] ich mir wünsche. | 내가 갖고 싶은 휴대폰이에요. => 명사 뒤에는 das를 써요.
+gap: Es gibt nichts, [was|das|wo] mir gefällt. | 마음에 드는 것이 하나도 없어요.
+gap: Das ist der Laden, [wo|was|den] ich arbeite. | 내가 일하는 가게예요.
+gap: Köln ist die Stadt, [wo|was|die] Yuna wohnt. | 쾰른은 Yuna가 사는 도시예요.
+gap: Das ist das Beste, [was|das|wo] du tun kannst. | 그게 네가 할 수 있는 가장 좋은 일이야.
+
+-- ex Grammatik | 한국어 뜻을 보고 알맞은 말을 고르세요.
+gap: [Statt|Ohne|Um] neue Schuhe zu kaufen, repariere ich die alten. | 새 신발을 사는 대신 헌 신발을 고쳐요.
+gap: Er kauft alles, [ohne|statt|um] die Preise zu vergleichen. | 그는 값을 비교하지 않고 다 사요.
+gap: Sie geht aus dem Laden, ohne etwas [zu kaufen|kaufen|gekauft]. | 그 애는 아무것도 사지 않고 가게에서 나와요.
+gap: Statt [einzukaufen|zu einkaufen|einkaufen], gehen wir in den Park. | 물건을 사는 대신 우리는 공원에 가요. => 나누어지는 동사는 zu가 가운데에 들어가요.
+gap: Ich spare Geld, [um|ohne|statt] ein Fahrrad zu kaufen. | 나는 자전거를 사려고 돈을 모아요.
+gap: Lukas hat bestellt, [ohne|statt|um] lange nachzudenken. | Lukas는 오래 생각하지 않고 주문했어요.
+
+-- ex Wortschatz | 알맞은 낱말을 고르세요.
+gap: Heute gibt es zwanzig Prozent [Rabatt|Quittung|Garantie]. | 오늘은 20퍼센트 깎아 줘요.
+gap: Ohne [Quittung|Marke|Mode] kann man nichts umtauschen. | 영수증이 없으면 아무것도 바꿀 수 없어요.
+gap: Das Paket wird morgen [geliefert|überredet|gewirkt]. | 소포는 내일 배달돼요.
+gap: Das ist zu teuer. Das kann ich mir nicht [leisten|liefern|auswählen]. | 너무 비싸요. 내 형편으로는 못 사요.
+gap: Ein [Vorteil|Nachteil|Slogan] vom Internet: Man kann die Preise schnell vergleichen. | 인터넷의 장점 하나는 값을 빨리 비교할 수 있다는 거예요.
+gap: Werbung [beeinflusst|liefert|leistet] uns jeden Tag. | 광고는 날마다 우리에게 영향을 줘요.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: das / ist / alles, / was / ich / brauche. | 내가 필요한 건 그게 다야.
+ord: das ist / der Laden, / wo / ich / arbeite. | 내가 일하는 가게야.
+ord: er / kauft, / ohne / die Preise / zu vergleichen. | 그는 값을 비교하지 않고 사.
+ord: statt / zu kaufen, / tausche / ich / Kleidung. | 나는 옷을 사는 대신 바꿔 입어.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: der Vorteil = 장점 ; der Nachteil = 단점 ; der Rabatt = 할인 ; die Quittung = 영수증 ; die Marke = 상표 ; nötig = 필요한 ; beeinflussen = 영향을 주다
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Emma: Brauche ich das wirklich? | 나한테 그게 정말 필요할까?
+dik: Yuna: Das ist alles, was ich brauche. | 내가 필요한 건 그게 다야.
+dik: Lukas: Das kann ich mir nicht leisten. | 그건 내 형편으로는 못 사.
+
+== sprechen
+-- redemittel
+소비 습관 말하기: Ich gebe mein Geld für … aus. | 나는 ~에 돈을 써. ; Ich kaufe oft etwas, was ich nicht brauche. | 나는 필요 없는 것을 자주 사. ; Ich vergleiche zuerst die Preise. | 나는 먼저 값을 비교해. ; Das kann ich mir nicht leisten. | 그건 내 형편으로는 못 사.
+광고 분석하기: Auf dem Plakat sieht man … | 포스터에는 ~이 나와. ; Die Zielgruppe sind … | 대상 고객은 ~이야. ; Die Werbung verspricht, dass … | 광고는 ~라고 약속해. ; Der Slogan heißt … | 광고 문구는 ~이야.
+장단점 비교하기: Ein Vorteil ist, dass … | 장점 하나는 ~라는 거야. ; Ein Nachteil ist, dass … | 단점 하나는 ~라는 거야. ; Im Vergleich zu … ist … | ~에 견주면 ~은 … ; Das ist sein Geld nicht wert. | 그건 그 값을 못 해.
+권하기: Statt … zu kaufen, könntest du … | ~을 사는 대신 ~할 수 있어. ; Warte eine Woche! | 일주일 기다려 봐! ; Vergleich die Preise! | 값을 비교해 봐!
+
+-- rolle A | Lukas, Emma
+
+-- ich Mein Geld und ich | 내 소비 습관을 떠올리며 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 돈을 자주 쓰는 곳 (für + 4격) | für Kleidung und Essen
+feld: b | 생각 없이 산 것 (4격) | eine teure Jacke
+feld: c | 사는 대신 하는 일 (… zu + 동사 원형, 그다음 동사로 시작) | Kleidung zu kaufen, tausche ich mit Freunden
+satz: Ich gebe mein Geld oft {a} aus.
+satz: Einmal habe ich {b} gekauft, ohne nachzudenken.
+satz: Statt {c}.
+satz: Ich kaufe nichts mehr, was ich nicht brauche.
+
+-- schreiben Im Internet oder im Laden? | 인터넷에서 사는 것과 가게에서 사는 것의 장단점을 견주는 글을 써요. 여덟 문장쯤 써요.
+punkt: 주제 ; 인터넷의 장점 ; 인터넷의 단점 ; 가게의 장점 (…, wo …) ; 내 경험 (ohne … zu) ; 내 생각 (statt … zu)
+start: Viele Jugendliche kaufen heute im Internet ein.
+muster: Viele Jugendliche kaufen heute im Internet ein. Ein Vorteil ist, dass man die Preise schnell vergleichen kann. Außerdem wird alles nach Hause geliefert. Ein Nachteil ist, dass man die Kleidung nicht anprobieren kann. Im Laden, wo man alles anprobieren kann, kauft man selten die falsche Größe. Ich habe einmal Schuhe bestellt, ohne die Größe zu prüfen. Ich musste das Paket zurückschicken. Meiner Meinung nach sollte man Kleidung im Laden kaufen, statt sie zu bestellen.
+check: 장점과 단점을 하나씩 썼나요? ; wo로 시작하는 관계문을 썼나요? ; ohne … zu나 statt … zu를 썼나요? ; 마지막에 내 생각을 썼나요?
+
+-- kann
+Ich kann sagen, wofür ich Geld ausgebe und was ich wirklich brauche. | 내가 어디에 돈을 쓰고 정말 필요한 것이 무엇인지 말할 수 있어요.
+Ich kann sagen, wie eine Werbung wirkt und wen sie erreichen will. | 광고가 어떻게 통하고 누구를 겨냥하는지 말할 수 있어요.
+Ich kann Vorteile und Nachteile vergleichen. | 장점과 단점을 견줄 수 있어요.
+
+-- tipp 사기 전에 세 가지를 물어요
+p: 갖고 싶은 것이 생기면 독일어로 세 가지를 물어보세요. Brauche ich das? Kann ich es mir leisten? Habe ich schon etwas, was genauso gut ist?
+p: 광고를 보면 Zielgruppe와 Slogan을 찾아 독일어로 한 문장씩 말해 보세요. Die Zielgruppe sind … Die Werbung verspricht, dass …

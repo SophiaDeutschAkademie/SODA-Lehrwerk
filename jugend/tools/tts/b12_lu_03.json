@@ -1,0 +1,74 @@
+{
+ "job": "b12_lu_03",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "b1-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Das ist der Laden, wo ich mein erstes Fahrrad gekauft habe."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Lukas",
+   "parts": [
+    "Das kann ich mir nicht leisten."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Willkommen in meinem Dorf! Hier wohnen fünfhundert Menschen. Und es gibt mehr Kühe als Autos."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Ja, aber da der Bus nur einmal pro Stunde fährt, brauche ich für alles mein Fahrrad."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Eine Stunde. Ich pendle jeden Tag. Ich wünschte, ich würde innerhalb der Stadt wohnen."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Im zwanzigsten Stock? Unser höchstes Gebäude ist die Kirche."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Stimmt. Wenn ich krank bin, weiß es am Abend das ganze Dorf."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Zehn Kilometer außerhalb des Dorfes. Willkommen auf dem Land!"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Lukas",
+   "parts": [
+    "Moment. Und die Leute, die außerhalb der Stadt wohnen? Da es bei uns keine Bahn gibt, brauchen viele das Auto."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist der Laden, wo ich mein erstes Fahrrad gekauft habe. [pause] Das kann ich mir nicht leisten. [pause] Willkommen in meinem Dorf! Hier wohnen fünfhundert Menschen. Und es gibt mehr Kühe als Autos. [pause] Ja, aber da der Bus nur einmal pro Stunde fährt, brauche ich für alles mein Fahrrad. [pause] Eine Stunde. Ich pendle jeden Tag. Ich wünschte, ich würde innerhalb der Stadt wohnen. [pause] Im zwanzigsten Stock? Unser höchstes Gebäude ist die Kirche. [pause] Stimmt. Wenn ich krank bin, weiß es am Abend das ganze Dorf. [pause] Zehn Kilometer außerhalb des Dorfes. Willkommen auf dem Land! [pause] Moment. Und die Leute, die außerhalb der Stadt wohnen? Da es bei uns keine Bahn gibt, brauchen viele das Auto. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

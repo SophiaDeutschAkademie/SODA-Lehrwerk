@@ -1,0 +1,81 @@
+{
+ "job": "b12_em_06",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "b1-2/7",
+   "who": "Emma",
+   "parts": [
+    "Sie sagt, dass sie müde ist."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Dein Praktikum hat also super geklappt! Ich mache das Abitur, weil ich Tierärztin werden will."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Ja. Deshalb werde ich nächstes Jahr mehr für Mathe und Chemie lernen. Ich habe Zweifel, aber ich versuche es."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Yuna, das ist für dich: ein Fotoalbum. Als Andenken an uns."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Lies ihn bitte nicht jetzt vor, sonst weinen wir alle."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Schreib uns, wenn du gelandet bist."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Obwohl ich Zweifel habe, mache ich weiter."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Emma",
+   "parts": [
+    "Ich hoffe, dass wir uns bald wiedersehen."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Emma",
+   "parts": [
+    "Statt neue Schuhe zu kaufen, habe ich meine alten reparieren lassen."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Emma",
+   "parts": [
+    "Brauchst du alles, was du kaufst?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Sie sagt, dass sie müde ist. [pause] Dein Praktikum hat also super geklappt! Ich mache das Abitur, weil ich Tierärztin werden will. [pause] Ja. Deshalb werde ich nächstes Jahr mehr für Mathe und Chemie lernen. Ich habe Zweifel, aber ich versuche es. [pause] Yuna, das ist für dich: ein Fotoalbum. Als Andenken an uns. [pause] Lies ihn bitte nicht jetzt vor, sonst weinen wir alle. [pause] Schreib uns, wenn du gelandet bist. [pause] Obwohl ich Zweifel habe, mache ich weiter. [pause] Ich hoffe, dass wir uns bald wiedersehen. [pause] Statt neue Schuhe zu kaufen, habe ich meine alten reparieren lassen. [pause] Brauchst du alles, was du kaufst? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

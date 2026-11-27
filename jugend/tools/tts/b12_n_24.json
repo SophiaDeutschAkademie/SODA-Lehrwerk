@@ -1,0 +1,91 @@
+{
+ "job": "b12_n_24",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "automatisch.",
+    "Das Licht geht automatisch an."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "der Drucker, die Drucker.",
+    "Der Drucker ist schon wieder kaputt."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "der Fortschritt, die Fortschritte.",
+    "Die Technik macht schnelle Fortschritte."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "das Risiko, die Risiken.",
+    "Jede neue Technik hat auch Risiken."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "die Gefahr, die Gefahren.",
+    "Im Internet gibt es auch Gefahren."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "die Sicherheit.",
+    "Die Sicherheit der Daten ist wichtig."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "ersetzen, hat ersetzt.",
+    "Kein Roboter kann einen Freund ersetzen."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "nützlich.",
+    "Diese App ist sehr nützlich."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "möglich.",
+    "Ist das möglich?"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "unmöglich.",
+    "Ohne Strom ist das unmöglich."
+   ]
+  }
+ ],
+ "script": "Also. [pause] automatisch. Das Licht geht automatisch an. [pause] der Drucker, die Drucker. Der Drucker ist schon wieder kaputt. [pause] der Fortschritt, die Fortschritte. Die Technik macht schnelle Fortschritte. [pause] das Risiko, die Risiken. Jede neue Technik hat auch Risiken. [pause] die Gefahr, die Gefahren. Im Internet gibt es auch Gefahren. [pause] die Sicherheit. Die Sicherheit der Daten ist wichtig. [pause] ersetzen, hat ersetzt. Kein Roboter kann einen Freund ersetzen. [pause] nützlich. Diese App ist sehr nützlich. [pause] möglich. Ist das möglich? [pause] unmöglich. Ohne Strom ist das unmöglich. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

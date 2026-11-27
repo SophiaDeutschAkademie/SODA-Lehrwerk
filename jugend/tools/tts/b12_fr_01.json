@@ -1,0 +1,74 @@
+{
+ "job": "b12_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Tierarztpraxis Doktor Lang, guten Tag."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Schön. Hast du schon Erfahrung mit Tieren?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Das klingt gut. Schick uns bitte deinen Lebenslauf. Dann laden wir dich zum Gespräch ein."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag. Kann ich dir helfen?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Hast du die Quittung?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Gut. Du kannst die Jacke umtauschen oder das Geld zurückbekommen. Was ist dir lieber?"
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Willkommen im Beethoven-Haus. In diesem Haus wurde Ludwig van Beethoven im Dezember siebzehnhundertsiebzig geboren."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Schon als Kind spielte er Klavier und Geige. Mit sieben Jahren gab er in Köln sein erstes Konzert."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Im Jahr siebzehnhundertzweiundneunzig zog er nach Wien. Dort wurde er berühmt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Tierarztpraxis Doktor Lang, guten Tag. [pause] Schön. Hast du schon Erfahrung mit Tieren? [pause] Das klingt gut. Schick uns bitte deinen Lebenslauf. Dann laden wir dich zum Gespräch ein. [pause] Guten Tag. Kann ich dir helfen? [pause] Hast du die Quittung? [pause] Gut. Du kannst die Jacke umtauschen oder das Geld zurückbekommen. Was ist dir lieber? [pause] Willkommen im Beethoven-Haus. In diesem Haus wurde Ludwig van Beethoven im Dezember siebzehnhundertsiebzig geboren. [pause] Schon als Kind spielte er Klavier und Geige. Mit sieben Jahren gab er in Köln sein erstes Konzert. [pause] Im Jahr siebzehnhundertzweiundneunzig zog er nach Wien. Dort wurde er berühmt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

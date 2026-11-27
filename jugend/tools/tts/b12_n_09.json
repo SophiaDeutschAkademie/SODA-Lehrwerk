@@ -1,0 +1,86 @@
+{
+ "job": "b12_n_09",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "Gute Qualität ist bequem."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "das Dorf"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Großstadt"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "Lukas wohnt außerhalb der Stadt."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "Ich wünschte, wir hätten einen Garten."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "das Dorf, die Dörfer.",
+    "Lukas wohnt in einem kleinen Dorf."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Großstadt, die Großstädte.",
+    "Seoul ist eine Großstadt."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Innenstadt, die Innenstädte.",
+    "In der Innenstadt gibt es viele Geschäfte."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "der Stadtrand.",
+    "Wir wohnen am Stadtrand."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "das Hochhaus, die Hochhäuser.",
+    "Yuna wohnt in einem Hochhaus."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gute Qualität ist bequem. [pause] das Dorf [pause] die Großstadt [pause] Lukas wohnt außerhalb der Stadt. [pause] Ich wünschte, wir hätten einen Garten. [pause] das Dorf, die Dörfer. Lukas wohnt in einem kleinen Dorf. [pause] die Großstadt, die Großstädte. Seoul ist eine Großstadt. [pause] die Innenstadt, die Innenstädte. In der Innenstadt gibt es viele Geschäfte. [pause] der Stadtrand. Wir wohnen am Stadtrand. [pause] das Hochhaus, die Hochhäuser. Yuna wohnt in einem Hochhaus. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

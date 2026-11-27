@@ -1,0 +1,32 @@
+{
+ "job": "b12_yu_09",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Das T-Shirt, auf dem eure Namen stehen, hängt über meinem Bett."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Ich brauche euch nicht zu sagen, wie sehr ich euch vermisse. Bis bald, online!"
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Welche Musik oder welches Bild beeindruckt dich?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das T-Shirt, auf dem eure Namen stehen, hängt über meinem Bett. [pause] Ich brauche euch nicht zu sagen, wie sehr ich euch vermisse. Bis bald, online! [pause] Welche Musik oder welches Bild beeindruckt dich? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

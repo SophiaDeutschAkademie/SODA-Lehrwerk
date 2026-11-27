@@ -1,0 +1,67 @@
+{
+ "job": "b12_lu_08",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "b1-2/8",
+   "who": "Lukas",
+   "parts": [
+    "Nach dem Abschluss in der zehnten Klasse möchte ich eine Ausbildung machen. Herr Demir hat gesagt, dass ich mich bei ihm bewerben soll."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Lukas",
+   "parts": [
+    "Du schaffst das. Und du, Elif?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Lukas",
+   "parts": [
+    "Dann sehen wir uns erst in drei Jahren wieder?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Lukas",
+   "parts": [
+    "Yuna! Wir wollten dich überraschen."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Lukas",
+   "parts": [
+    "Es hat geklappt! Mein Zeugnis ist viel besser als letztes Jahr."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Lukas",
+   "parts": [
+    "Es hat geklappt."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Mein Fahrrad ist kaputt. Ich lasse es von Herrn Demir reparieren."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Lukas",
+   "parts": [
+    "Möchtest du lieber in der Stadt oder auf dem Land wohnen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Nach dem Abschluss in der zehnten Klasse möchte ich eine Ausbildung machen. Herr Demir hat gesagt, dass ich mich bei ihm bewerben soll. [pause] Du schaffst das. Und du, Elif? [pause] Dann sehen wir uns erst in drei Jahren wieder? [pause] Yuna! Wir wollten dich überraschen. [pause] Es hat geklappt! Mein Zeugnis ist viel besser als letztes Jahr. [pause] Es hat geklappt. [pause] Mein Fahrrad ist kaputt. Ich lasse es von Herrn Demir reparieren. [pause] Möchtest du lieber in der Stadt oder auf dem Land wohnen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

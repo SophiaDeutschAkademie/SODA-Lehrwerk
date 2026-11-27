@@ -1,0 +1,81 @@
+{
+ "job": "b12_th_01",
+ "who": "Thomas",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "b1-2/2",
+   "who": "Thomas",
+   "parts": [
+    "Er hat das Handy bestellt, ohne den Preis zu vergleichen."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Thomas",
+   "parts": [
+    "Ich habe ein Haus mit Garten gesehen. Es liegt zwanzig Kilometer außerhalb von Köln."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Thomas",
+   "parts": [
+    "Aber du hättest ein großes Zimmer. Und vielleicht einen Hund."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Thomas",
+   "parts": [
+    "Hallo Lukas. Was ist das für ein Gerät? Das könnte eine Uhr sein."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Thomas",
+   "parts": [
+    "Und dann?"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Thomas",
+   "parts": [
+    "Das wäre etwas für mein Restaurant. Lässt sich der Roboter auch für große Pflanzen benutzen?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Thomas",
+   "parts": [
+    "Heute halte ich eine kleine Rede. Yuna, vor zwei Jahren bist du mit zwei Koffern und fast ohne Deutsch gekommen."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Thomas",
+   "parts": [
+    "Das stimmt leider. Meine Suppe ist wirklich besser geworden."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Thomas",
+   "parts": [
+    "Wann ist morgen der Abflug?"
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Thomas",
+   "parts": [
+    "Was hast du nach der Schule vor?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Er hat das Handy bestellt, ohne den Preis zu vergleichen. [pause] Ich habe ein Haus mit Garten gesehen. Es liegt zwanzig Kilometer außerhalb von Köln. [pause] Aber du hättest ein großes Zimmer. Und vielleicht einen Hund. [pause] Hallo Lukas. Was ist das für ein Gerät? Das könnte eine Uhr sein. [pause] Und dann? [pause] Das wäre etwas für mein Restaurant. Lässt sich der Roboter auch für große Pflanzen benutzen? [pause] Heute halte ich eine kleine Rede. Yuna, vor zwei Jahren bist du mit zwei Koffern und fast ohne Deutsch gekommen. [pause] Das stimmt leider. Meine Suppe ist wirklich besser geworden. [pause] Wann ist morgen der Abflug? [pause] Was hast du nach der Schule vor? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

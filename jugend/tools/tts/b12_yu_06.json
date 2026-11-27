@@ -1,0 +1,67 @@
+{
+ "job": "b12_yu_06",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "b1-2/6",
+   "who": "Yuna",
+   "parts": [
+    "Du brauchst mich nicht abzuholen. Ich nehme den Bus."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Yuna",
+   "parts": [
+    "Das könnte ein Roboter sein."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Yuna",
+   "parts": [
+    "Die Begrüßung. Am ersten Tag habe ich mich vor meiner Gastmutter verbeugt. Aber sie hat mich einfach umarmt."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Yuna",
+   "parts": [
+    "Ich war überrascht, dass ihr so offen mit den Lehrern diskutiert. Meine Mutter sagt, dass das in Korea unhöflich wäre."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Yuna",
+   "parts": [
+    "Ja. Dein Vater hat einmal gesagt, dass meine Suppe zu scharf ist. Ich dachte, dass er sich über mich ärgert."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Yuna",
+   "parts": [
+    "Das weiß ich jetzt. Bei uns sagt man so etwas nicht direkt. Man lächelt und isst weiter."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Yuna",
+   "parts": [
+    "Die Menschen fast immer. Die Züge nicht immer."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Yuna",
+   "parts": [
+    "Sie meinen, dass alle Deutschen jeden Tag Wurst und Kartoffeln essen. Das ist ein typisches Vorurteil."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Du brauchst mich nicht abzuholen. Ich nehme den Bus. [pause] Das könnte ein Roboter sein. [pause] Die Begrüßung. Am ersten Tag habe ich mich vor meiner Gastmutter verbeugt. Aber sie hat mich einfach umarmt. [pause] Ich war überrascht, dass ihr so offen mit den Lehrern diskutiert. Meine Mutter sagt, dass das in Korea unhöflich wäre. [pause] Ja. Dein Vater hat einmal gesagt, dass meine Suppe zu scharf ist. Ich dachte, dass er sich über mich ärgert. [pause] Das weiß ich jetzt. Bei uns sagt man so etwas nicht direkt. Man lächelt und isst weiter. [pause] Die Menschen fast immer. Die Züge nicht immer. [pause] Sie meinen, dass alle Deutschen jeden Tag Wurst und Kartoffeln essen. Das ist ein typisches Vorurteil. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

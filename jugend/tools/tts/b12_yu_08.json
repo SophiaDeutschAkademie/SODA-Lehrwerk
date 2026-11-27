@@ -1,0 +1,81 @@
+{
+ "job": "b12_yu_08",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "b1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Um elf Uhr. Wir müssen um acht am Flughafen sein."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Wirklich? Dann koche ich für euch. Und die Suppe wird scharf!"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Lukas, Elif! Ihr seid zum Flughafen gekommen? Um acht Uhr morgens?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Danke! Das trage ich im Flugzeug."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Versprochen. Macht es gut! Und vergesst mich nicht."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Der Abflug ist um elf, deshalb fahren wir um sieben los."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Yuna",
+   "parts": [
+    "Wir bleiben in Kontakt."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Hallo ihr drei! Ich bin gut in Seoul gelandet. Am Flughafen wurde ich von meiner ganzen Familie abgeholt."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Meine Mutter sagt, dass ich Koreanisch jetzt mit deutschem Akzent spreche. Das könnte stimmen."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Yuna",
+   "parts": [
+    "Hier ist alles laut und schnell, während es in Köln am Sonntag ganz ruhig war. Ich wünschte, hier wäre es auch manchmal so ruhig."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Um elf Uhr. Wir müssen um acht am Flughafen sein. [pause] Wirklich? Dann koche ich für euch. Und die Suppe wird scharf! [pause] Lukas, Elif! Ihr seid zum Flughafen gekommen? Um acht Uhr morgens? [pause] Danke! Das trage ich im Flugzeug. [pause] Versprochen. Macht es gut! Und vergesst mich nicht. [pause] Der Abflug ist um elf, deshalb fahren wir um sieben los. [pause] Wir bleiben in Kontakt. [pause] Hallo ihr drei! Ich bin gut in Seoul gelandet. Am Flughafen wurde ich von meiner ganzen Familie abgeholt. [pause] Meine Mutter sagt, dass ich Koreanisch jetzt mit deutschem Akzent spreche. Das könnte stimmen. [pause] Hier ist alles laut und schnell, während es in Köln am Sonntag ganz ruhig war. Ich wünschte, hier wäre es auch manchmal so ruhig. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

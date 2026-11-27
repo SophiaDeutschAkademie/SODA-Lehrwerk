@@ -1,0 +1,74 @@
+{
+ "job": "b12_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag, Lukas. Schön, dass du da bist. Warum möchtest du dein Praktikum bei uns machen?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Wo hast du das gelernt?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Sehr gut. Was sind deine Stärken?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Und deine Schwächen?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Das ist ehrlich. Die Arbeit fängt um neun an, und um fünf ist Feierabend."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Am Anfang hilfst du in der Werkstatt. Später lasse ich dich auch mit den Kunden sprechen."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Gut, Lukas. Du bekommst den Platz. Wir sehen uns am siebten Juni."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Deine Bewerbung hat uns gut gefallen. Wir laden dich zum Vorstellungsgespräch ein."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Neunzehnhunderteinundsechzig wurde in Berlin die Mauer gebaut. Ich war achtzehn Jahre alt. Plötzlich konnte niemand mehr über die Grenze."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag, Lukas. Schön, dass du da bist. Warum möchtest du dein Praktikum bei uns machen? [pause] Wo hast du das gelernt? [pause] Sehr gut. Was sind deine Stärken? [pause] Und deine Schwächen? [pause] Das ist ehrlich. Die Arbeit fängt um neun an, und um fünf ist Feierabend. [pause] Am Anfang hilfst du in der Werkstatt. Später lasse ich dich auch mit den Kunden sprechen. [pause] Gut, Lukas. Du bekommst den Platz. Wir sehen uns am siebten Juni. [pause] Deine Bewerbung hat uns gut gefallen. Wir laden dich zum Vorstellungsgespräch ein. [pause] Neunzehnhunderteinundsechzig wurde in Berlin die Mauer gebaut. Ich war achtzehn Jahre alt. Plötzlich konnte niemand mehr über die Grenze. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

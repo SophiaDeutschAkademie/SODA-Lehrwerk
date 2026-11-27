@@ -1,0 +1,91 @@
+{
+ "job": "b12_n_03",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "das Vorstellungsgespräch, die Vorstellungsgespräche.",
+    "Morgen habe ich ein Vorstellungsgespräch."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Stelle, die Stellen.",
+    "Ich suche eine Stelle als Koch."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Unterlagen.",
+    "Bitte schicken Sie uns Ihre Unterlagen."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Zusage, die Zusagen.",
+    "Lukas hat eine Zusage bekommen."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Absage, die Absagen.",
+    "Nach drei Absagen kam endlich eine Zusage."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Erfolg, die Erfolge.",
+    "Viel Erfolg beim Gespräch!"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "das Interesse, die Interessen.",
+    "Ich habe großes Interesse an Tieren."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Stärke, die Stärken.",
+    "Zuhören ist meine Stärke."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Schwäche, die Schwächen.",
+    "Mathe ist meine Schwäche."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Fähigkeit, die Fähigkeiten.",
+    "Für diesen Beruf braucht man viele Fähigkeiten."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Vorstellungsgespräch, die Vorstellungsgespräche. Morgen habe ich ein Vorstellungsgespräch. [pause] die Stelle, die Stellen. Ich suche eine Stelle als Koch. [pause] die Unterlagen. Bitte schicken Sie uns Ihre Unterlagen. [pause] die Zusage, die Zusagen. Lukas hat eine Zusage bekommen. [pause] die Absage, die Absagen. Nach drei Absagen kam endlich eine Zusage. [pause] der Erfolg, die Erfolge. Viel Erfolg beim Gespräch! [pause] das Interesse, die Interessen. Ich habe großes Interesse an Tieren. [pause] die Stärke, die Stärken. Zuhören ist meine Stärke. [pause] die Schwäche, die Schwächen. Mathe ist meine Schwäche. [pause] die Fähigkeit, die Fähigkeiten. Für diesen Beruf braucht man viele Fähigkeiten. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

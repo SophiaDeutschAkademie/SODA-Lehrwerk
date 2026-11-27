@@ -1,0 +1,151 @@
+@id b1-2/stufentest
+@typ test
+
+== hoeren
+-- info B1.2를 돌아보는 평가예요
+p: 듣기, 읽기, 쓰기, 말하기 네 부분으로 되어 있어요. 시간 제한은 없어요. 문제를 풀면 바로 맞았는지 알려 주고, 마지막 Ergebnis에서 부분마다 몇 문제를 맞혔는지 보여 줘요.
+p: 음성은 여러 번 들을 수 있어요. 먼저 한 번만 듣고 풀어 보면 내 듣기 실력을 더 정확히 알 수 있어요.
+
+-- ex Hören 1 | 짧은 말을 듣고 알맞은 것을 고르세요.
+hör: Lukas: Mein Fahrrad ist kaputt. Ich lasse es von Herrn Demir reparieren.
+mc: 자전거는 누가 고치나요? | Herr Demir* | Lukas | Lukas의 할아버지 => Ich lasse es von Herrn Demir reparieren.
+hör: Emma: Statt neue Schuhe zu kaufen, habe ich meine alten reparieren lassen.
+mc: Emma는 어떻게 했나요? | 헌 신발을 고치게 맡겼어요* | 새 신발을 샀어요 | 헌 신발을 버렸어요 => Statt neue Schuhe zu kaufen
+hör: Frau: Liebe Gäste, das Museum ist heute nur bis sechzehn Uhr geöffnet, da es am Abend ein Konzert gibt.
+mc: 박물관은 왜 오늘 일찍 닫나요? | 저녁에 음악회가 있어서* | 공휴일이라서 | 전시를 바꾸고 있어서 => da es am Abend ein Konzert gibt
+hör: Elif: Paul ist heute nicht gekommen. Er wird wohl krank sein.
+mc: Elif는 Paul이 왜 안 왔다고 짐작하나요? | 아마 아파서* | 여행을 가서 | 늦잠을 자서 => Er wird wohl krank sein.
+hör: Sabine: Thomas hat angerufen. Er sagt, dass er heute später nach Hause kommt.
+mc: Thomas는 오늘 어떻게 하나요? | 집에 늦게 와요* | 집에 일찍 와요 | 집에 오지 않아요 => dass er heute später nach Hause kommt
+
+-- ex Hören 2 | Elif가 팟캐스트에서 기자 Frau Berger와 이야기해요. 듣고 답하세요.
+audio | Interview mit Frau Berger | Frau=Frau Berger
+> Elif: Frau Berger, wie sind Sie Journalistin geworden?
+> Frau: Nach dem Abitur habe ich mich bei einer kleinen Zeitung um ein Praktikum beworben. Dort durfte ich nach zwei Wochen meinen ersten Artikel schreiben.
+> Elif: Hatten Sie nie Zweifel?
+> Frau: Doch, oft. Mein erster Artikel wurde dreimal korrigiert. Trotzdem habe ich weitergemacht.
+> Elif: Was sollte man für diesen Beruf können?
+> Frau: Man sollte viele Fragen stellen und gut zuhören können. Schreiben lässt sich lernen.
+> Frau: Mein Tipp: Statt lange zu warten, sollte man einfach anfangen. Schreibt für die Schülerzeitung!
+mc: Wo hat Frau Berger ein Praktikum gemacht? | bei einer kleinen Zeitung* | beim Radio | in einer Schule => bei einer kleinen Zeitung um ein Praktikum beworben
+rf: Frau Bergers erster Artikel war sofort perfekt. | f => Mein erster Artikel wurde dreimal korrigiert.
+mc: Was hat Frau Berger gemacht, obwohl sie Zweifel hatte? | Sie hat weitergemacht.* | Sie hat aufgegeben. | Sie hat einen anderen Beruf gelernt. => Trotzdem habe ich weitergemacht.
+mc: Was sollte man für den Beruf können? | gut zuhören* | schnell laufen | gut singen => viele Fragen stellen und gut zuhören können
+mc: Frau Berger는 학생들에게 무엇을 권하나요? | 오래 기다리지 말고 바로 시작하라고* | 먼저 대학에 가라고 | 글쓰기 수업을 들으라고 => Statt lange zu warten, sollte man einfach anfangen.
+
+-- ex Hören 3 | 서울에 도착한 Yuna가 친구들에게 음성 메시지를 보냈어요. 듣고 답하세요.
+audio | Nachricht aus Seoul
+> Yuna: Hallo ihr drei! Ich bin gut in Seoul gelandet. Am Flughafen wurde ich von meiner ganzen Familie abgeholt.
+> Yuna: Meine Mutter sagt, dass ich Koreanisch jetzt mit deutschem Akzent spreche. Das könnte stimmen.
+> Yuna: Hier ist alles laut und schnell, während es in Köln am Sonntag ganz ruhig war. Ich wünschte, hier wäre es auch manchmal so ruhig.
+> Yuna: Das T-Shirt, auf dem eure Namen stehen, hängt über meinem Bett.
+> Yuna: Ich brauche euch nicht zu sagen, wie sehr ich euch vermisse. Bis bald, online!
+mc: Wer hat Yuna am Flughafen abgeholt? | ihre ganze Familie* | ihre Mutter allein | niemand => wurde ich von meiner ganzen Familie abgeholt
+rf: Yunas Mutter meint, dass Yuna Koreanisch mit deutschem Akzent spricht. | r => dass ich Koreanisch jetzt mit deutschem Akzent spreche
+mc: Was wünscht sich Yuna? | dass es in Seoul manchmal so ruhig wäre* | dass sie einen Garten hätte | dass ihre Familie Deutsch spricht => Ich wünschte, hier wäre es auch manchmal so ruhig.
+mc: 티셔츠는 어디에 걸려 있나요? | 침대 위쪽에* | 옷장 안에 | 방문에 => hängt über meinem Bett
+
+== lesen
+-- ex Lesen 1 | 지역 신문 기사예요. 읽고 답하세요.
+text notiz | Jung hilft Alt
+> Im Seniorenheim am Park gibt es jeden Donnerstag einen besonderen Unterricht: Jugendliche erklären älteren Menschen das Handy.
+> Die Idee wurde von zwei Schülerinnen entwickelt, deren Großeltern Probleme mit ihren Geräten hatten.
+> „Viele ältere Menschen glauben, dass die Technik zu schwer für sie ist“, sagt Hanna (15). „Aber fast alles lässt sich in einer Stunde lernen.“
+> Herr Vogel (81) ist sehr zufrieden: Statt seine Tochter anzurufen, schickt er ihr jetzt Fotos.
+> Der Unterricht kostet nichts. Wer mitmachen möchte, braucht sich nur im Seniorenheim zu melden.
+mc: Was passiert jeden Donnerstag im Seniorenheim? | Jugendliche erklären älteren Menschen das Handy.* | Ältere Menschen reparieren Handys. | Schüler machen dort ihre Hausaufgaben. => Jugendliche erklären älteren Menschen das Handy
+mc: Wer hatte die Idee? | zwei Schülerinnen* | ein Lehrer | Herr Vogel => Die Idee wurde von zwei Schülerinnen entwickelt
+rf: Hanna meint, dass man für das Handy viele Wochen braucht. | f => Fast alles lässt sich in einer Stunde lernen.
+mc: Was macht Herr Vogel jetzt? | Er schickt seiner Tochter Fotos.* | Er ruft seine Tochter jeden Tag an. | Er kauft ein neues Handy. => schickt er ihr jetzt Fotos
+mc: 이 수업에 함께하려면 어떻게 하나요? | 요양원에 알리기만 하면 돼요* | 돈을 내야 해요 | 시험을 봐야 해요 => braucht sich nur im Seniorenheim zu melden
+
+-- ex Lesen 2 | 자동차의 역사를 다룬 글이에요. 읽고 답하세요.
+text notiz | Bertha Benz und die erste lange Autofahrt
+> Im Jahr 1886 erfand Karl Benz das Auto. Aber niemand wollte es kaufen, da die Leute dem neuen Gerät nicht vertrauten.
+> Seine Frau Bertha, deren Geld er für die Erfindung gebraucht hatte, hatte eine Idee.
+> Im August 1888 fuhr sie mit ihren Kindern Eugen und Richard von Mannheim nach Pforzheim, ohne ihrem Mann etwas zu sagen. Die Fahrt war ungefähr hundert Kilometer lang.
+> Unterwegs musste sie das Auto selbst reparieren. Trotzdem kam sie am Abend an.
+> Nach dieser Fahrt wurde das Auto in ganz Deutschland bekannt. Ihr Weg heißt heute Bertha Benz Memorial Route.
+mc: Warum wollte am Anfang niemand das Auto kaufen? | Die Leute vertrauten dem neuen Gerät nicht.* | Das Auto war zu langsam. | Es gab keine Straßen. => da die Leute dem neuen Gerät nicht vertrauten
+mc: Mit wem fuhr Bertha Benz nach Pforzheim? | mit zwei Kindern* | mit ihrem Mann | allein => mit ihren Kindern Eugen und Richard
+rf: Karl Benz wusste vor der Fahrt, was seine Frau plante. | f => Sie fuhr, ohne ihrem Mann etwas zu sagen.
+mc: 이 여행 뒤에 어떤 일이 일어났나요? | 자동차가 독일 곳곳에 알려졌어요* | 자동차가 금지됐어요 | Bertha가 자동차를 팔았어요 => wurde das Auto in ganz Deutschland bekannt
+
+-- ex Lesen 3 | 박물관 누리집에 올라온 알림이에요. 읽고 답하세요.
+text notiz | Praktikum im Technikmuseum
+> Du interessierst dich für Technik und bist mindestens fünfzehn Jahre alt? Dann bewirb dich um ein Praktikum bei uns!
+> In den Ferien suchen wir fünf Jugendliche, die unseren Gästen alte Maschinen und neue Roboter erklären.
+> Du brauchst keine Erfahrung zu haben. Alles, was du wissen musst, lernst du am ersten Tag.
+> Das Museum liegt innerhalb der Innenstadt und ist gut mit der Bahn erreichbar.
+> Schick deinen Lebenslauf bis zum 30. September an praktikum@technikmuseum.example.com. Wir würden uns freuen, wenn du auch schreibst, warum du mitmachen möchtest.
+mc: Wie alt muss man für das Praktikum sein? | mindestens fünfzehn* | mindestens achtzehn | mindestens einundzwanzig => mindestens fünfzehn Jahre alt
+mc: Was machen die Praktikanten? | Sie erklären den Gästen Maschinen und Roboter.* | Sie reparieren Roboter. | Sie verkaufen Eintrittskarten. => die unseren Gästen alte Maschinen und neue Roboter erklären
+rf: Für das Praktikum braucht man viel Erfahrung. | f => Du brauchst keine Erfahrung zu haben.
+mc: 9월 30일까지 무엇을 보내야 하나요? | 이력서* | 성적표 | 사진 => Schick deinen Lebenslauf bis zum 30. September
+
+== schreiben
+-- ex Schreiben 1 | 낱말을 순서대로 놓아 문장을 만드세요.
+ord: ich / lasse / mein Fahrrad / reparieren. | 나는 자전거를 고치게 맡겨.
+ord: das ist / alles, / was / ich / brauche. | 이게 내가 필요한 전부야.
+ord: ich / wünschte, / ich / hätte / mehr Zeit. | 시간이 더 있으면 좋겠어.
+ord: das Museum / ist / letztes Jahr / gebaut / worden. | 그 박물관은 지난해에 지어졌어.
+ord: du / brauchst / nicht / zu warten. | 너는 기다릴 필요가 없어.
+ord: sie / sagt, / dass / sie / später / kommt. | 그 애는 늦게 온다고 해.
+
+-- ex Schreiben 2 | 괄호 안의 낱말을 알맞은 형태로 바꾸거나 알맞은 낱말을 골라 빈칸에 쓰세요.
+gap: Ich interessiere mich [=für] Technik. (für, an, um) | 나는 기술에 관심이 있어요. => sich interessieren 뒤에는 für가 와요.
+gap: Er geht, ohne ein Wort [=zu] sagen. (zu, um) | 그는 한마디도 하지 않고 가요. => ohne 뒤에는 zu와 동사 원형이 와요.
+gap: Das Dorf liegt außerhalb [=der] Stadt. (die) | 그 마을은 도시 밖에 있어요. => außerhalb 뒤에는 2격이 와요.
+gap: Das ist der Komponist, [=dessen] Musik ich gern höre. (dessen, deren) | 내가 즐겨 듣는 음악을 만든 작곡가예요. => 남성 명사를 받는 2격 관계대명사는 dessen이에요.
+gap: Die Mauer ist in einer Nacht gebaut [=worden]. (werden) | 장벽은 하룻밤 사이에 세워졌어요. => Passiv의 Perfekt는 worden으로 끝나요.
+gap: Das Problem ist [=lösbar]. Man kann es lösen. (lösen) | 그 문제는 풀 수 있어요. => 동사 뿌리에 -bar를 붙이면 '할 수 있는'이라는 뜻이 돼요.
+gap: Yuna ist pünktlich. Ihre [=Pünktlichkeit] gefällt allen. (pünktlich) | Yuna는 시간을 지켜요. 모두 그 점을 좋아해요. => -lich로 끝나는 형용사에는 -keit를 붙여요.
+
+-- ex Schreiben 3 | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Ich würde mich über eine Antwort freuen. | 답장을 주시면 기쁘겠습니다.
+dik: N: Die Schule wurde vor hundert Jahren gegründet. | 그 학교는 백 년 전에 세워졌어요.
+dik: N: Das könnte ein Missverständnis sein. | 그건 오해일 수도 있어요.
+dik: N: Ich hoffe, dass wir uns wiedersehen. | 우리가 다시 만나기를 바라요.
+
+-- schreiben Mein Text | 독일 청소년 잡지에 '우리나라와 독일'이라는 글을 보내요. 아래 내용을 넣어서 여덟 문장 넘게 써 보세요. 이 글은 자동으로 채점하지 않아요. 다 쓴 뒤에 예시 글과 견주어 보고, 아래 항목을 스스로 확인하세요.
+punkt: 주제 알리기 ; 두 나라의 차이 (Während …) ; 공통점 (Eine Gemeinsamkeit ist, dass …) ; 남이 한 말 전하기 (… sagt, dass …) ; 바라는 것 (Ich wünschte, …) ; 맺는 말 (Ich hoffe, dass …)
+start: In Korea und in Deutschland …
+muster: In Korea und in Deutschland ist vieles ähnlich, aber nicht alles ist gleich. Während man in Korea ältere Menschen mit einer Verbeugung begrüßt, gibt man sich in Deutschland die Hand. Eine Gemeinsamkeit ist, dass die Familie in beiden Ländern sehr wichtig ist. Meine deutsche Freundin sagt, dass die Koreaner sehr höflich sind. Ich finde, dass die Deutschen sehr ehrlich sind. Am Anfang war diese Ehrlichkeit fremd für mich, aber jetzt mag ich sie. Ich wünschte, in Korea wären die Geschäfte am Sonntag auch geschlossen, denn dann hätten alle mehr Ruhe. Ich hoffe, dass ich beide Länder noch besser kennenlerne.
+check: 여덟 문장 넘게 썼어요 ; während로 두 나라를 맞세웠어요 ; dass 문장으로 남이 한 말을 전했어요 ; Ich wünschte 뒤에 wäre, hätte, könnte를 썼어요 ; 맺는 말을 썼어요
+
+== sprechen
+-- info 소리 내어 말해요
+p: 말하기는 자동으로 채점하지 않아요. 질문을 듣고 바로 소리 내어 답한 다음, 예시 답과 견주어 보세요.
+p: 녹음 단추를 누르면 내 목소리를 다시 들을 수 있어요. 녹음은 저장되지 않아요.
+
+-- sprich Fragen und Antworten | 질문을 듣고 소리 내어 답하세요. 한두 문장으로 답하면 돼요. | Frau=Chefin
+f: Frau: Guten Tag. Warum möchten Sie bei uns ein Praktikum machen? | 안녕하세요. 왜 우리 회사에서 실습을 하고 싶으세요? => Ich interessiere mich für Technik. Ich würde gern sehen, wie ein Betrieb arbeitet.
+f: Emma: Brauchst du alles, was du kaufst? | 너는 사는 물건이 다 필요해? => Nein. Statt etwas sofort zu kaufen, warte ich jetzt eine Woche.
+f: Lukas: Möchtest du lieber in der Stadt oder auf dem Land wohnen? | 도시에 살고 싶어, 시골에 살고 싶어? => Lieber in der Stadt, da dort mehr los ist. / Lieber auf dem Land. Ich wünschte, ich hätte einen Garten.
+f: Yuna: Welche Musik oder welches Bild beeindruckt dich? | 어떤 음악이나 그림이 너한테 깊은 인상을 줘? => Mich beeindruckt Beethoven, dessen Musik heute noch gespielt wird.
+f: Schneider: Was wurde in deinem Land vor vielen Jahren erfunden oder gebaut? | 여러분 나라에서는 오래전에 무엇을 발명하거나 지었나요? => In Korea wurde vor fast sechshundert Jahren das koreanische Alphabet erfunden.
+f: Elif: Wie wird die Schule in zwanzig Jahren wohl aussehen? | 20년 뒤에 학교는 아마 어떤 모습일까? => Die Schüler werden wohl mit Robotern lernen. / Es könnte keine Bücher mehr geben.
+f: Sabine: Was hat dich in einer anderen Stadt oder in einem anderen Land überrascht? | 다른 도시나 다른 나라에서 무엇이 놀라웠니? => Mich hat überrascht, dass die Geschäfte am Sonntag geschlossen sind.
+f: Thomas: Was hast du nach der Schule vor? | 학교를 마치면 뭘 할 계획이니? => Ich habe vor zu studieren. Ich hoffe, dass es klappt.
+
+-- sprich Mein Weg | 주제는 '내가 독일어를 배워 온 길'이에요. 아래 낱말을 보면서 1분쯤 말하세요. 먼저 혼자 말해 보고, 그다음에 예시를 확인해요.
+thema: Am Anfang … ; Damals … ; Obwohl … ; Heute kann ich … ; Mein nächstes Ziel …
+muster: Ich lerne seit zwei Jahren Deutsch. Am Anfang konnte ich nur meinen Namen sagen. Damals war die Aussprache sehr schwer für mich, und ich habe mich kaum getraut zu sprechen. Obwohl ich viele Fehler gemacht habe, habe ich weitergemacht. Heute kann ich längere Texte lesen und meine Meinung sagen. Darauf bin ich stolz. Mein nächstes Ziel ist, ein ganzes Buch auf Deutsch zu lesen. Ich hoffe, dass ich später in Deutschland studieren kann.
+
+== ergebnis
+-- bilanz
+hoch: B1.2에서 배운 내용을 잘 익혔어요. 이것으로 B1 과정을 마쳤어요.
+mittel: 대부분 익혔어요. 틀린 문제의 설명을 다시 읽고, 점수가 낮은 부분은 Station 1과 Station 2의 복습 문제로 한 번 더 연습해 보세요.
+tief: 아직 헷갈리는 내용이 많아요. Station 1과 Station 2의 복습 문제를 다시 풀고, 어려웠던 과의 Grammatik과 Training을 본 다음 평가를 한 번 더 해 보세요.
+
+-- info 쓰기와 말하기는 스스로 확인해요
+p: 글쓰기 과제와 말하기는 점수에 들어가지 않아요. 아래 세 가지를 얼마나 할 수 있는지 스스로 표시해 보세요.
+
+-- kann
+Ich kann mich um ein Praktikum bewerben und über Berufe sprechen. | 실습에 지원하고 직업에 대해 말할 수 있어요.
+Ich kann über Geschichte, Technik und Kulturen sprechen und Vermutungen sagen. | 역사, 기술, 문화를 이야기하고 짐작해서 말할 수 있어요.
+Ich kann einen Vortrag halten und einen längeren Text schreiben und korrigieren. | 발표를 하고, 긴 글을 쓰고 고칠 수 있어요.
+
+-- info B1 과정을 마쳤어요
+p: A1.1에서 인사를 배웠고, B1.2에서는 5분 발표까지 했어요. 이제 독일어로 내 생각을 말하고, 긴 글을 읽고, 편지와 의견 글을 쓸 수 있어요.
+p: 지금까지 익힌 낱말과 문법은 목차에서 언제든 다시 볼 수 있어요. 틀렸던 문제와 어려웠던 과를 한 번 더 살펴보세요.

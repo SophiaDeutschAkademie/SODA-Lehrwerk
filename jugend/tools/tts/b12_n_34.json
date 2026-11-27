@@ -1,0 +1,74 @@
+{
+ "job": "b12_n_34",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/8",
+   "who": "N",
+   "parts": [
+    "Tschüss, Deutschland! Bis bald!"
+   ]
+  },
+  {
+   "pid": "b1-2/station-2",
+   "who": "N",
+   "parts": [
+    "Die Grenze wurde geöffnet."
+   ]
+  },
+  {
+   "pid": "b1-2/station-2",
+   "who": "N",
+   "parts": [
+    "Das könnte ein Roboter sein."
+   ]
+  },
+  {
+   "pid": "b1-2/station-2",
+   "who": "N",
+   "parts": [
+    "Das war ein Missverständnis."
+   ]
+  },
+  {
+   "pid": "b1-2/station-2",
+   "who": "N",
+   "parts": [
+    "Wir bleiben in Kontakt."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "N",
+   "parts": [
+    "Ich würde mich über eine Antwort freuen."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "N",
+   "parts": [
+    "Die Schule wurde vor hundert Jahren gegründet."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "N",
+   "parts": [
+    "Das könnte ein Missverständnis sein."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "N",
+   "parts": [
+    "Ich hoffe, dass wir uns wiedersehen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Tschüss, Deutschland! Bis bald! [pause] Die Grenze wurde geöffnet. [pause] Das könnte ein Roboter sein. [pause] Das war ein Missverständnis. [pause] Wir bleiben in Kontakt. [pause] Ich würde mich über eine Antwort freuen. [pause] Die Schule wurde vor hundert Jahren gegründet. [pause] Das könnte ein Missverständnis sein. [pause] Ich hoffe, dass wir uns wiedersehen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "b12_lu_05",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "b1-2/4",
+   "who": "Lukas",
+   "parts": [
+    "Das ist der Musiker, dessen Konzert wir gestern gesehen haben."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Lukas",
+   "parts": [
+    "Ich habe etwas Neues gelernt."
+   ]
+  },
+  {
+   "pid": "b1-2/station-1",
+   "who": "Lukas",
+   "parts": [
+    "Heute ist mein erster Tag im Fahrradladen. Herr Demir lässt mich schon ein Rad reparieren."
+   ]
+  },
+  {
+   "pid": "b1-2/station-1",
+   "who": "Lukas",
+   "parts": [
+    "Ich habe mich um diesen Platz beworben, weil ich handwerklich gut bin."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Lukas",
+   "parts": [
+    "Wie lange war Deutschland geteilt?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Lukas",
+   "parts": [
+    "Und seitdem ist Deutschland wieder ein Land?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Lukas",
+   "parts": [
+    "Gibt es dort auch eine Mauer?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Lukas",
+   "parts": [
+    "Die Grenze wurde geöffnet."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Lukas",
+   "parts": [
+    "Richtig! Das ist unsere Erfindung: ein Roboter, der Pflanzen Wasser gibt. Paul hat ihn programmiert, und ich habe ihn gebaut."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Lukas",
+   "parts": [
+    "Ganz einfach. Ein Sensor prüft, ob die Erde trocken ist. Wenn ja, gibt der Roboter automatisch Wasser."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist der Musiker, dessen Konzert wir gestern gesehen haben. [pause] Ich habe etwas Neues gelernt. [pause] Heute ist mein erster Tag im Fahrradladen. Herr Demir lässt mich schon ein Rad reparieren. [pause] Ich habe mich um diesen Platz beworben, weil ich handwerklich gut bin. [pause] Wie lange war Deutschland geteilt? [pause] Und seitdem ist Deutschland wieder ein Land? [pause] Gibt es dort auch eine Mauer? [pause] Die Grenze wurde geöffnet. [pause] Richtig! Das ist unsere Erfindung: ein Roboter, der Pflanzen Wasser gibt. Paul hat ihn programmiert, und ich habe ihn gebaut. [pause] Ganz einfach. Ein Sensor prüft, ob die Erde trocken ist. Wenn ja, gibt der Roboter automatisch Wasser. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

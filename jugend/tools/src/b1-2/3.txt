@@ -1,0 +1,272 @@
+@id b1-2/3
+
+== einstieg
+bild: A village street with two small houses, a field and one cow in the background. LUKAS stands next to a bus stop pole and points proudly at the village with one arm. YUNA and EMMA stand beside a small bus with backpacks and look around with surprised smiles. All three face the viewer, all faces with clearly drawn eyes, nose and mouth.
+alt: 작은 집 두 채와 밭, 소 한 마리가 보이는 시골 길이에요. 정류장 옆에서 Lukas가 뿌듯하게 마을을 가리켜요. 작은 버스 옆에 배낭을 멘 Yuna와 Emma가 놀란 얼굴로 둘러봐요.
+lead: 5월이에요. Yuna와 Emma가 처음으로 Lukas네 마을에 놀러 가요. 쾰른에서 버스로 한 시간이 걸려요. 조용하고 공기가 맑지만 버스는 한 시간에 한 대뿐이에요. 9b는 도시와 시골 가운데 어디가 살기 좋은지, 미래의 도시는 어떤 모습일지 이야기해요.
+mission: 이 과를 마치면 도시와 시골을 견주고, 미래의 도시를 상상하고, 내 입장을 정해 말할 수 있어요.
+wort: das Dorf | 마을, 시골 동네
+wort: die Großstadt | 대도시
+wort: Lukas wohnt außerhalb der Stadt. | Lukas는 도시 밖에 살아.
+wort: Ich wünschte, wir hätten einen Garten. | 우리 집에 정원이 있으면 좋을 텐데.
+mc: außerhalb der Stadt. die Stadt가 der Stadt로 바뀌었어요. 무슨 격인가요? | Genitiv(2격)* | Akkusativ(4격) | Nominativ(1격) => innerhalb와 außerhalb 뒤에는 Genitiv가 와요.
+
+== hoeren
+-- dialog A | Zu Besuch im Dorf | 5월의 토요일, Yuna와 Emma가 Lukas네 마을에 왔어요.
+vor: 들으면서 찾아보세요. Lukas는 학교까지 얼마나 걸리나요?
+Lukas: Willkommen in meinem Dorf! Hier wohnen fünfhundert Menschen. Und es gibt mehr Kühe als Autos. | 우리 마을에 온 걸 환영해! 여기에는 오백 명이 살아. 그리고 자동차보다 소가 더 많아.
+Yuna: Es ist so ruhig hier! Während man in Köln immer Autos hört, hört man hier fast nichts. | 여긴 정말 조용하다! 쾰른에서는 늘 차 소리가 들리는데, 여기서는 거의 아무 소리도 안 들려.
+Emma: Und die Luft ist viel besser. Bei uns in der Innenstadt gibt es zu viel Verkehr. | 그리고 공기가 훨씬 좋아. 우리 시내에는 차가 너무 많아.
+Lukas: Ja, aber da der Bus nur einmal pro Stunde fährt, brauche ich für alles mein Fahrrad. | 응, 하지만 버스가 한 시간에 한 번만 다녀서 나는 뭘 하든 자전거가 필요해.
+Yuna: Wie lange brauchst du zur Schule? | 학교까지 얼마나 걸려?
+Lukas: Eine Stunde. Ich pendle jeden Tag. Ich wünschte, ich würde innerhalb der Stadt wohnen. | 한 시간. 날마다 통학해. 도시 안에 살면 좋을 텐데.
+Emma: Und ich wünschte, wir hätten einen Garten. Wir wohnen im dritten Stock, ohne Balkon. | 나는 우리 집에 정원이 있으면 좋겠어. 우리는 3층에 사는데 발코니도 없어.
+Yuna: In Seoul wohnen wir im zwanzigsten Stock eines Hochhauses. Von dort sieht man die ganze Stadt. | 서울에서 우리는 고층 건물 20층에 살아. 거기서는 온 도시가 보여.
+Lukas: Im zwanzigsten Stock? Unser höchstes Gebäude ist die Kirche. | 20층이라고? 우리 마을에서 제일 높은 건물은 교회야.
+Emma: Aber hier kennt jeder jeden. In der Großstadt ist man manchmal einsam. | 그래도 여기서는 누구나 서로 알잖아. 대도시에서는 가끔 외로워.
+Lukas: Stimmt. Wenn ich krank bin, weiß es am Abend das ganze Dorf. | 맞아. 내가 아프면 저녁에는 온 마을이 알아.
+Yuna: Ich finde es schön hier. Aber wo ist der nächste Supermarkt? | 난 여기 좋다. 근데 제일 가까운 슈퍼마켓은 어디야?
+Lukas: Zehn Kilometer außerhalb des Dorfes. Willkommen auf dem Land! | 마을에서 10킬로미터 떨어져 있어. 시골에 온 걸 환영해!
+
+-- dialog B | Köln im Jahr 2050 | 일주일 뒤, 9b가 수업에서 미래의 쾰른을 발표해요.
+vor: 들으면서 찾아보세요. Emma네 조는 시내를 어떻게 바꾸려고 하나요?
+Schneider: Heute zeigt ihr eure Ideen für Köln im Jahr 2050. Die Bevölkerung wächst, aber der Platz bleibt gleich. Emma, fang bitte an. | 오늘은 2050년의 쾰른을 위한 생각을 보여 주세요. 인구는 늘어나는데 땅은 그대로예요. Emma, 시작해요. | say=Heute zeigt ihr eure Ideen für Köln im Jahr zweitausendfünfzig. Die Bevölkerung wächst, aber der Platz bleibt gleich. Emma, fang bitte an.
+Emma: Unsere Gruppe möchte eine autofreie Innenstadt. Innerhalb der Innenstadt fahren nur Busse, Bahnen und Fahrräder. | 우리 조는 차 없는 시내를 바라요. 시내 안에서는 버스, 전철, 자전거만 다녀요.
+Lukas: Moment. Und die Leute, die außerhalb der Stadt wohnen? Da es bei uns keine Bahn gibt, brauchen viele das Auto. | 잠깐만요. 도시 밖에 사는 사람들은요? 우리 동네에는 전철이 없어서 많은 사람이 차가 필요해요.
+Emma: Am Stadtrand gibt es große Parkplätze. Von dort fährt alle fünf Minuten eine Bahn. | 변두리에 큰 주차장이 있어요. 거기서 5분마다 전철이 다녀요.
+Yuna: In Seoul ist das schon so. Während hier viele mit dem Auto fahren, nehmen dort die meisten die Bahn. | 서울은 벌써 그래요. 여기서는 많은 사람이 차를 타는데, 거기서는 대부분 전철을 타요.
+Elif: Unsere Gruppe will mehr Grün. Da die Sommer heißer werden, brauchen wir Bäume und Gärten auf den Dächern. | 우리 조는 푸른 곳을 늘리려고 해요. 여름이 더 더워지니까 나무와 옥상 정원이 필요해요.
+Schneider: Gute Idee. Und wo sollen die Menschen wohnen? Die Mieten steigen jedes Jahr. | 좋은 생각이에요. 그럼 사람들은 어디에 살지요? 집세가 해마다 올라요.
+Elif: Wir würden höher bauen. Und in jedem Hochhaus gibt es Platz für alle: eine Werkstatt, eine Küche, einen Garten. | 우리는 더 높이 지을 거예요. 그리고 건물마다 모두가 쓰는 곳이 있어요. 작업장, 부엌, 정원이요.
+Lukas: Ich wünschte, das wäre schon heute so. | 지금 벌써 그러면 좋겠어요.
+Yuna: Und die Dörfer? Während die Städte wachsen, werden viele Dörfer kleiner. | 시골 마을은요? 도시는 커지는데 많은 마을은 작아져요.
+Lukas: Genau. Deshalb brauchen wir schnelles Internet und bessere Verbindungen. Dann kann man im Dorf wohnen und trotzdem in der Stadt arbeiten. | 맞아요. 그래서 빠른 인터넷과 더 좋은 교통편이 필요해요. 그러면 마을에 살면서도 도시에서 일할 수 있어요.
+Schneider: Sehr gut. Stadt und Land brauchen sich. Schreibt eure Ideen für die Schülerzeitung auf. | 아주 좋아요. 도시와 시골은 서로 필요해요. 여러분 생각을 학교 신문에 실을 글로 적어 보세요.
+
+-- fragen 두 대화를 듣고 답하세요.
+mc: Wie viele Menschen wohnen in Lukas' Dorf? | fünfhundert* | fünftausend | fünfzig
+rf: Der Bus fährt alle zehn Minuten. | f => Er fährt nur einmal pro Stunde.
+mc: Wie lange braucht Lukas zur Schule? | eine Stunde* | zehn Minuten | drei Stunden
+mc: Was wünscht sich Emma? | einen Garten* | ein Auto | ein Hochhaus
+mc: Was möchte Emmas Gruppe für Köln? | eine autofreie Innenstadt* | mehr Parkplätze in der Innenstadt | weniger Busse
+rf: Elifs Gruppe will Bäume und Gärten auf den Dächern. | r
+mc: Lukas는 시골 마을에 무엇이 필요하다고 하나요? | 빠른 인터넷과 더 좋은 교통편* | 더 높은 건물 | 더 많은 주차장
+
+-- kultur 세 들어 살기, WG, 작은 텃밭
+p: 독일에서는 집을 사지 않고 세 들어 사는 일이 흔해요. 전체 가구의 절반이 넘게 세를 내고 살아요. 그래서 집세 Miete는 늘 큰 이야깃거리예요.
+p: 대학생과 젊은 사람들은 Wohngemeinschaft, 줄여서 WG에서 많이 살아요. 방은 따로 쓰고 부엌과 욕실은 함께 써요. 집세를 나누어 내니까 혼자 살 때보다 싸요.
+p: 도시에 사는 사람들은 작은 텃밭을 빌리기도 해요. 이것을 Kleingarten 또는 Schrebergarten이라고 해요. 주말에 거기서 채소와 꽃을 가꿔요.
+mc: 독일 가구의 절반이 넘게는 어떻게 사나요? | 세를 내고 살아요* | 집을 사서 살아요 | 텃밭에서 살아요
+
+== wortschatz
+-- gruppe Stadt und Land | 도시와 시골
+das Dorf, die Dörfer | 마을, 시골 동네 | Lukas wohnt in einem kleinen Dorf. | Lukas는 작은 마을에 살아요.
+die Großstadt, die Großstädte | 대도시 | Seoul ist eine Großstadt. | 서울은 대도시예요.
+die Innenstadt, die Innenstädte | 시내, 도심 | In der Innenstadt gibt es viele Geschäfte. | 시내에는 가게가 많아요.
+der Stadtrand | 도시 변두리 | Wir wohnen am Stadtrand. | 우리는 변두리에 살아요.
+das Hochhaus, die Hochhäuser | 고층 건물 | Yuna wohnt in einem Hochhaus. | Yuna는 고층 건물에 살아요.
+der Verkehr | 교통, 차량 통행 | Am Morgen gibt es viel Verkehr. | 아침에는 차가 많이 다녀요.
+der Stau, die Staus | 교통 체증 | Wir stehen seit einer Stunde im Stau. | 우리는 한 시간째 길이 막혀 서 있어요.
+der Lärm | 소음 | Bei dem Lärm kann ich nicht schlafen. | 이렇게 시끄러우면 잠을 잘 수 없어요.
+laut | 시끄러운, 소리가 큰 | In der Stadt ist es laut. | 도시는 시끄러워요.
+die Luft | 공기 | Die Luft auf dem Land ist sauber. | 시골 공기는 깨끗해요.
+der Bauernhof, die Bauernhöfe | 농장 | Auf dem Bauernhof gibt es viele Tiere. | 농장에는 동물이 많아요.
+
+-- gruppe Wohnen | 사는 집
+die Miete, die Mieten | 집세 | Die Miete ist sehr hoch. | 집세가 아주 비싸요.
+mieten, hat gemietet | 세 들다, 빌리다 | Wir mieten eine Wohnung in Köln. | 우리는 쾰른에서 집을 세 들어 살아요.
+die Wohngemeinschaft, die Wohngemeinschaften | 여럿이 함께 사는 집 | Viele Studenten wohnen in einer Wohngemeinschaft. | 많은 대학생이 여럿이 함께 사는 집에 살아요.
+die Nachbarschaft | 이웃, 동네 사람들 | In unserer Nachbarschaft kennen sich alle. | 우리 동네에서는 모두 서로 알아요.
+die Umgebung | 주변, 근처 | In der Umgebung gibt es viele Wälder. | 주변에 숲이 많아요.
+der Balkon, die Balkone | 발코니 | Auf dem Balkon stehen Blumen. | 발코니에 꽃이 놓여 있어요.
+der Stock | 층 | Wir wohnen im dritten Stock. | 우리는 3층에 살아요.
+das Gebäude, die Gebäude | 건물 | Das höchste Gebäude ist die Kirche. | 가장 높은 건물은 교회예요.
+einziehen, ist eingezogen | 이사 들어오다 | Nächste Woche ziehen wir in die neue Wohnung ein. | 다음 주에 우리는 새집으로 이사 들어가요.
+ausziehen, ist ausgezogen | 이사 나가다 | Mit neunzehn ist mein Bruder ausgezogen. | 우리 형은 열아홉 살에 집에서 나갔어요.
+pendeln, ist gependelt | 통근하다, 통학하다 | Lukas pendelt jeden Tag nach Köln. | Lukas는 날마다 쾰른으로 통학해요.
+
+-- gruppe Die Stadt der Zukunft | 미래의 도시
+die Bevölkerung | 인구, 주민 | Die Bevölkerung der Stadt wächst. | 그 도시의 인구가 늘어나요.
+wachsen (du wächst, er wächst), ist gewachsen | 자라다, 늘어나다 | Die Städte wachsen jedes Jahr. | 도시는 해마다 커져요.
+bauen, hat gebaut | 짓다 | Hier wird ein Hochhaus gebaut. | 여기에 고층 건물을 지어요.
+der Radweg, die Radwege | 자전거 길 | Wir brauchen mehr Radwege. | 자전거 길이 더 필요해요.
+die Fußgängerzone, die Fußgängerzonen | 보행자 거리 | In der Fußgängerzone fahren keine Autos. | 보행자 거리에는 차가 다니지 않아요.
+autofrei | 차가 없는 | Am Sonntag ist die Straße autofrei. | 일요일에는 그 길에 차가 없어요.
+die Verbindung, die Verbindungen | 연결, 교통편 | Die Verbindung nach Köln ist schlecht. | 쾰른으로 가는 교통편이 나빠요.
+lebendig | 활기찬 | Köln ist eine lebendige Stadt. | 쾰른은 활기찬 도시예요.
+einsam | 외로운 | Ohne Freunde ist man einsam. | 친구가 없으면 외로워요.
+innerhalb | ~ 안에 | Innerhalb der Stadt fahre ich mit dem Rad. | 도시 안에서 나는 자전거를 타요.
+außerhalb | ~ 밖에 | Lukas wohnt außerhalb der Stadt. | Lukas는 도시 밖에 살아요.
+
+-- bilder
+das Dorf, die Dörfer: a small village with a church tower, four houses and green hills
+die Großstadt, die Großstädte: a big city skyline with many tall buildings and a bridge over a river
+das Hochhaus, die Hochhäuser: one very tall apartment building next to two small houses
+der Stau, die Staus: a long line of cars that stand close behind each other on a road
+der Lärm: a teenager who covers both ears with the hands while a jackhammer breaks the street right next to the teenager, zigzag sound lines around the jackhammer, seen from the front, the whole face stays uncovered with clearly drawn eyes, nose and mouth
+der Bauernhof, die Bauernhöfe: a farmhouse with a barn, a tractor and two cows on a meadow
+der Balkon, die Balkone: a balcony with flower pots and a small chair on the side of a house
+pendeln, ist gependelt: a teenager with a backpack who sits in a train next to the window and looks at the viewer, the face with clearly drawn eyes, nose and mouth
+einziehen, ist eingezogen: two people who carry a sofa toward an open front door, moving boxes next to them, both faces turned to the viewer with clearly drawn eyes, nose and mouth
+der Radweg, die Radwege: a bicycle lane with a painted bicycle symbol and a teenager who rides a bicycle on it toward the viewer, the face with clearly drawn eyes, nose and mouth
+die Fußgängerzone, die Fußgängerzonen: a street without cars where four people walk between small shops, their faces turned to the viewer with clearly drawn eyes, nose and mouth
+einsam: one person who sits alone on a bench between tall buildings and looks sadly at the viewer, the face with clearly drawn eyes, nose and mouth
+
+-- aussprache 맞세우는 말에 힘을 줘요 | 두 가지를 견줄 때의 강세
+p: 두 가지를 맞세울 때는 서로 다른 낱말에 힘을 줘요. In der Stadt ist es laut, im Dorf ist es ruhig. 이 문장에서는 Stadt와 Dorf, laut와 ruhig를 세게 말해요.
+p: 힘을 주는 낱말은 조금 더 높고 길게 말해요. 나머지 낱말은 가볍게 지나가요.
+hör: In der Stadt ist es laut, im Dorf ist es ruhig. | Stadt와 Dorf, laut와 ruhig
+hör: Emma wohnt innerhalb der Stadt, Lukas außerhalb. | innerhalb와 außerhalb
+hör: Während ich Bus fahre, fährst du Rad. | ich와 du, Bus와 Rad
+
+== grammatik
+-- punkt während und da | 맞세우기와 까닭 대기
+bsp: *Während* man in Köln immer Autos hört, hört man hier fast nichts. | 쾰른에서는 늘 차 소리가 들리는데, 여기서는 거의 아무 소리도 안 들려.
+bsp: *Da* der Bus nur einmal pro Stunde fährt, brauche ich für alles mein Fahrrad. | 버스가 한 시간에 한 번만 다녀서 나는 뭘 하든 자전거가 필요해.
+bsp: *Während* die Städte wachsen, werden viele Dörfer kleiner. | 도시는 커지는데 많은 마을은 작아져요.
+finde: Während Emma in der Stadt wohnt, lebt Lukas im Dorf. 이 während는 무슨 뜻인가요? | 두 가지를 맞세워요* | 같은 때에 일어나요 | 까닭을 말해요
+regel: während는 '~하는 동안'이라는 뜻 말고 두 가지를 맞세울 때도 써요. da는 weil처럼 까닭을 말하는데, 듣는 사람도 이미 아는 까닭일 때 문장 앞에 자주 써요. 둘 다 동사를 맨 끝으로 보내요.
+| | 보기
+| während | *Während* ich Rad fahre, nimmt Emma den Bus.
+| da | *Da* es regnet, bleiben wir zu Hause.
+merke: 부문장이 앞에 오면 주문장은 동사로 시작해요. Da es regnet, *bleiben* wir zu Hause.
+
+-- punkt innerhalb, außerhalb + Genitiv | ~ 안에, ~ 밖에
+bsp: Ich wünschte, ich würde *innerhalb der Stadt* wohnen. | 도시 안에 살면 좋을 텐데.
+bsp: Der Supermarkt ist zehn Kilometer *außerhalb des Dorfes*. | 슈퍼마켓은 마을에서 10킬로미터 떨어져 있어.
+bsp: *Innerhalb der Innenstadt* fahren nur Busse, Bahnen und Fahrräder. | 시내 안에서는 버스, 전철, 자전거만 다녀요.
+finde: außerhalb … Stadt. 빈칸에 알맞은 말은 무엇인가요? | der* | die | dem
+regel: innerhalb와 außerhalb 뒤에는 Genitiv를 써요. 곳뿐 아니라 시간에도 써요. innerhalb einer Woche는 '일주일 안에'라는 뜻이에요.
+| | 곳 | 시간
+| innerhalb | innerhalb *der* Stadt | innerhalb *eines* Monats
+| außerhalb | außerhalb *des* Dorfes | außerhalb *der* Ferien
+merke: 도시 이름처럼 관사가 없는 말 앞에서는 von을 써요. außerhalb *von* Köln.
+
+-- punkt Ich wünschte, … | 지금은 그렇지 않은 일을 바라기
+bsp: Ich *wünschte*, ich *würde* innerhalb der Stadt wohnen. | 도시 안에 살면 좋을 텐데.
+bsp: Ich *wünschte*, wir *hätten* einen Garten. | 우리 집에 정원이 있으면 좋을 텐데.
+bsp: Ich *wünschte*, das *wäre* schon heute so. | 지금 벌써 그러면 좋을 텐데.
+finde: Ich wünschte, wir hätten einen Garten. Emma네 집에는 정원이 있나요? | 아니요, 없어요* | 네, 있어요 | 알 수 없어요
+regel: 지금은 그렇지 않지만 그랬으면 하고 바랄 때 Ich wünschte, …를 써요. 뒤 문장에는 wäre, hätte, würde, könnte를 쓰고, 동사는 둘째 자리에 둬요.
+| 지금 | 바람
+| Wir haben keinen Garten. | Ich wünschte, wir *hätten* einen Garten.
+| Der Bus fährt selten. | Ich wünschte, der Bus *würde* öfter fahren.
+| Ich bin nicht in Seoul. | Ich wünschte, ich *wäre* in Seoul.
+merke: Ich wünsche mir ein Fahrrad는 받고 싶은 것을 말해요. Ich wünschte, …는 지금 사실이 아닌 일을 말해요.
+
+== training
+-- ex Hören | Emma네 가족이 이사를 놓고 이야기해요. 듣고 답하세요.
+audio | Stadt oder Land?
+> Thomas: Ich habe ein Haus mit Garten gesehen. Es liegt zwanzig Kilometer außerhalb von Köln.
+> Sabine: Ein Garten wäre schön. Aber da ich oft bis spät am Abend arbeite, brauche ich einen kurzen Weg zur Arbeit.
+> Emma: Und ich? Ich müsste jeden Tag pendeln. Meine Freunde wohnen alle in der Stadt.
+> Thomas: Aber du hättest ein großes Zimmer. Und vielleicht einen Hund.
+> Emma: Einen Hund? Wirklich? Ich wünschte, wir könnten morgen einziehen!
+> Sabine: Langsam. Zuerst fahren wir zusammen zu dem Haus.
+mc: Wo liegt das Haus? | zwanzig Kilometer außerhalb von Köln* | in der Innenstadt | am Meer
+mc: Warum braucht Sabine einen kurzen Weg zur Arbeit? | Weil sie oft bis spät arbeitet.* | Weil sie kein Auto hat. | Weil sie nicht gern Bahn fährt.
+rf: Emma findet die Idee zuerst nicht gut. | r
+mc: Emma의 마음은 왜 바뀌나요? | 개를 키울 수도 있어서* | 방이 작아서 | 학교가 가까워서
+
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Yuna: Während Seoul fast zehn Millionen Einwohner hat, hat Köln nur eine Million.
+mc: 어느 도시에 사람이 더 많이 사나요? | 서울* | 쾰른 | 두 도시가 같아요
+hör: Lukas: Da der letzte Bus um acht fährt, muss ich früh nach Hause.
+mc: Lukas는 왜 일찍 집에 가야 하나요? | 마지막 버스가 여덟 시에 있어서* | 숙제가 많아서 | 부모님이 기다려서
+hör: Emma: Ich wünschte, ich hätte einen Balkon.
+mc: Emma네 집에는 발코니가 있나요? | 없어요* | 있어요 | 두 개 있어요
+hör: Elif: Unsere Schule liegt innerhalb der Fußgängerzone. Dort fahren keine Autos.
+mc: 학교 앞에는 무엇이 다니지 않나요? | 자동차* | 사람 | 자전거
+
+-- ex Lesen | 학교 신문에 실린 두 사람의 글이에요. 읽고 답하세요.
+text notiz | Stadt oder Land?
+> Lukas (15): Ich wohne in einem Dorf mit fünfhundert Einwohnern. Die Luft ist sauber, und jeder kennt jeden. Aber da es bei uns weder ein Kino noch einen Supermarkt gibt, muss ich für alles in die Stadt fahren. Ich wünschte, der Bus würde öfter fahren.
+> Emma (15): Ich wohne in der Innenstadt von Köln. Innerhalb von zehn Minuten bin ich in der Schule, im Kino oder bei meinen Freunden. Während Lukas pendeln muss, gehe ich zu Fuß. Aber es ist laut, und die Mieten sind hoch. Ich wünschte, wir hätten einen Garten.
+mc: Was gefällt Lukas an seinem Dorf? | die saubere Luft* | das Kino | der Supermarkt
+rf: In Lukas' Dorf gibt es ein Kino. | f => Es gibt weder ein Kino noch einen Supermarkt.
+mc: Was wünscht sich Lukas? | dass der Bus öfter fährt* | dass er einen Garten hat | dass es mehr Kühe gibt
+mc: Wie kommt Emma zur Schule? | zu Fuß* | mit dem Bus | mit dem Auto
+mc: Emma는 도시의 어떤 점이 나쁘다고 하나요? | 시끄럽고 집세가 비싸요* | 친구가 멀리 살아요 | 영화관이 없어요
+
+-- ex Lesen | 9b가 미래의 쾰른을 위해 낸 생각이에요. 보고 답하세요.
+text plan | Köln 2050
+> Idee | Wer? | Wo?
+> keine Autos | Emma | Innenstadt
+> Dachgärten | Elif | Hochhäuser
+> gutes Internet | Lukas | Dörfer
+> mehr Radwege | Yuna | ganz Köln
+mc: Wer möchte Gärten auf den Dächern? | Elif* | Emma | Lukas
+rf: Lukas möchte gutes Internet in der Innenstadt. | f => Er möchte gutes Internet in den Dörfern.
+mc: Wo soll es mehr Radwege geben? | in ganz Köln* | nur in den Dörfern | nur am Stadtrand
+
+-- ex Grammatik | während와 da예요. 한국어 뜻을 보고 알맞은 말을 고르세요.
+gap: [Während|Da|Bevor] Emma in der Stadt wohnt, lebt Lukas auf dem Land. | Emma는 도시에 사는데, Lukas는 시골에 살아요.
+gap: [Da|Während|Obwohl] der Bus selten fährt, nehme ich das Fahrrad. | 버스가 드물게 다녀서 나는 자전거를 타요.
+gap: Da es regnet, [bleiben wir|wir bleiben|wir geblieben] zu Hause. | 비가 와서 우리는 집에 있어요. => 부문장이 앞에 오면 주문장은 동사로 시작해요.
+gap: [Während|Da|Seitdem] es in Seoul viele Hochhäuser gibt, gibt es in meinem Dorf nur kleine Häuser. | 서울에는 고층 건물이 많은데, 우리 마을에는 작은 집만 있어요.
+gap: [Da|Während|Bis] ich außerhalb wohne, muss ich früh aufstehen. | 나는 도시 밖에 살아서 일찍 일어나야 해요.
+gap: Da die Miete zu hoch [ist|sind|hat], ziehen wir um. | 집세가 너무 비싸서 우리는 이사해요.
+
+-- ex Grammatik | 한국어 뜻을 보고 알맞은 말을 고르세요.
+gap: Lukas wohnt außerhalb [der|die|dem] Stadt. | Lukas는 도시 밖에 살아요.
+gap: Innerhalb [des|der|dem] Dorfes gibt es keinen Supermarkt. | 마을 안에는 슈퍼마켓이 없어요.
+gap: Wir wohnen außerhalb [von|der|des] Köln. | 우리는 쾰른 밖에 살아요. => 관사가 없는 이름 앞에서는 von을 써요.
+gap: Ich wünschte, ich [hätte|habe|hatte] einen Garten. | 정원이 있으면 좋을 텐데.
+gap: Ich wünschte, der Bus [würde|wird|wurde] öfter fahren. | 버스가 더 자주 다니면 좋을 텐데.
+gap: Ich wünschte, ich [wäre|bin|war] jetzt in Seoul. | 지금 서울에 있으면 좋을 텐데.
+
+-- ex Wortschatz | 알맞은 낱말을 고르세요.
+gap: Am Morgen stehen viele Autos im [Stau|Lärm|Stock]. | 아침에는 많은 차가 길이 막혀 서 있어요.
+gap: Die [Miete|Luft|Umgebung] für die Wohnung ist sehr hoch. | 그 집의 집세가 아주 비싸요.
+gap: Wir wohnen im vierten [Stock|Balkon|Dorf]. | 우리는 4층에 살아요.
+gap: In der [Fußgängerzone|Großstadt|Verbindung] dürfen keine Autos fahren. | 보행자 거리에는 차가 다니면 안 돼요.
+gap: Lukas muss jeden Tag in die Stadt [pendeln|bauen|wachsen]. | Lukas는 날마다 도시로 통학해야 해요.
+gap: Die [Bevölkerung|Miete|Luft] der Städte wächst jedes Jahr. | 도시의 인구는 해마다 늘어나요.
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: da / der Bus / selten / fährt, / nehme / ich / das Fahrrad. | 버스가 드물게 다녀서 나는 자전거를 타.
+ord: Lukas / wohnt / außerhalb / der Stadt. | Lukas는 도시 밖에 살아.
+ord: ich / wünschte, / ich / hätte / einen Garten. | 정원이 있으면 좋을 텐데.
+ord: während / ich / pendle, / geht / Emma / zu Fuß. | 나는 통학하는데, Emma는 걸어서 가.
+
+-- ex Wortschatz | 낱말과 뜻을 짝지으세요.
+paar: das Dorf = 마을 ; die Großstadt = 대도시 ; der Verkehr = 교통 ; der Lärm = 소음 ; die Miete = 집세 ; die Umgebung = 주변 ; einsam = 외로운
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Lukas: Ich wohne außerhalb der Stadt. | 나는 도시 밖에 살아.
+dik: Emma: Ich wünschte, wir hätten einen Garten. | 우리 집에 정원이 있으면 좋을 텐데.
+dik: Yuna: In der Stadt ist es laut. | 도시는 시끄러워.
+
+== sprechen
+-- redemittel
+사는 곳 말하기: Ich wohne in der Innenstadt. | 나는 시내에 살아. ; Ich wohne außerhalb der Stadt. | 나는 도시 밖에 살아. ; Wir wohnen im dritten Stock. | 우리는 3층에 살아. ; In der Umgebung gibt es … | 주변에 ~이 있어.
+견주기: Während es in der Stadt laut ist, ist es auf dem Land ruhig. | 도시는 시끄러운데, 시골은 조용해. ; In der Stadt gibt es mehr Geschäfte. | 도시에는 가게가 더 많아. ; Auf dem Land ist die Luft besser. | 시골은 공기가 더 좋아.
+바람 말하기: Ich wünschte, ich hätte … | ~이 있으면 좋을 텐데. ; Ich wünschte, ich würde … wohnen. | ~에 살면 좋을 텐데. ; Ich wünschte, wir könnten … | 우리가 ~할 수 있으면 좋을 텐데.
+입장 말하기: Ich würde lieber in der Stadt leben, da … | ~하니까 나는 도시에 사는 게 더 좋아. ; Für mich ist … am wichtigsten. | 나한테는 ~이 가장 중요해. ; Das hat Vorteile und Nachteile. | 그건 장점도 단점도 있어.
+
+-- rolle A | Lukas, Yuna
+
+-- ich Wo ich wohne | 내가 사는 곳을 떠올리며 적으세요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: a | 내가 사는 곳 (in … / am …) | in einer Großstadt
+feld: b | 우리 집 (im … Stock / in einem Haus) | im achten Stock eines Hochhauses
+feld: c | 주변에 있는 것 (동사로 시작) | gibt es viele Geschäfte
+feld: d | 바라는 것 (wir hätten … / ich wäre …) | wir hätten einen Garten
+satz: Ich wohne {a}.
+satz: Wir wohnen {b}.
+satz: In der Umgebung {c}.
+satz: Ich wünschte, {d}.
+
+-- schreiben Stadt oder Land? | 어디에 살고 싶은지 정해서 의견 글을 써요. 여덟 문장쯤 써요.
+punkt: 내 입장 ; 까닭 (da …) ; 견주기 (während …) ; 그곳의 단점 (außerhalb, innerhalb) ; 바람 (Ich wünschte, …) ; 맺는 말
+start: Ich würde lieber … leben.
+muster: Ich würde lieber auf dem Land leben. Da es dort weniger Verkehr gibt, ist die Luft sauber. Während man in der Stadt oft im Stau steht, kann man auf dem Land gut mit dem Rad fahren. Außerdem kennt man seine Nachbarn. Ein Nachteil ist, dass es außerhalb der Stadt wenige Geschäfte gibt. Auch die Verbindungen sind schlecht. Ich wünschte, es würde mehr Busse geben. Trotzdem ist das Land für mich der beste Ort zum Leben.
+check: 첫 문장에서 입장을 밝혔나요? ; da 문장과 während 문장에서 동사를 맨 끝에 썼나요? ; außerhalb, innerhalb 뒤에 Genitiv를 썼나요? ; Ich wünschte 뒤에 hätte, wäre, würde를 썼나요?
+
+-- kann
+Ich kann das Leben in der Stadt und auf dem Land vergleichen. | 도시의 삶과 시골의 삶을 견줄 수 있어요.
+Ich kann beschreiben, wie eine Stadt der Zukunft aussehen könnte. | 미래의 도시가 어떤 모습일지 그려 말할 수 있어요.
+Ich kann sagen, wo ich leben möchte und warum. | 어디에 살고 싶은지, 왜 그런지 말할 수 있어요.
+
+-- tipp 우리 동네를 독일어로 말해요
+p: 우리 동네를 독일어 문장 다섯 개로 말해 보세요. Ich wohne innerhalb der Stadt. In der Umgebung gibt es einen Park. 길을 걸으면서 보이는 것을 독일어 낱말로 불러 봐도 좋아요.
+p: 두 가지를 견줄 때는 während 문장 하나로 말해 보세요. Während meine Stadt groß ist, ist das Dorf meiner Oma klein.

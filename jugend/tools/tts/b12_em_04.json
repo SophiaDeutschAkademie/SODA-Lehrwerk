@@ -1,0 +1,81 @@
+{
+ "job": "b12_em_04",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "b1-2/station-1",
+   "who": "Emma",
+   "parts": [
+    "Ich bin in der Tierarztpraxis. Hier ist alles, was ich mir gewünscht habe."
+   ]
+  },
+  {
+   "pid": "b1-2/station-1",
+   "who": "Emma",
+   "parts": [
+    "Frau Doktor Lang lässt mich bei den Katzen helfen."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Emma",
+   "parts": [
+    "Warum sind damals so viele Menschen gekommen?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Emma",
+   "parts": [
+    "Und heute? Wo ist Ihre Heimat?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Emma",
+   "parts": [
+    "Können sich die Familien besuchen?"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Emma",
+   "parts": [
+    "Was ist das denn? Das könnte eine Lampe sein."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Emma",
+   "parts": [
+    "Wie funktioniert er?"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Emma",
+   "parts": [
+    "Und was kostet so ein Roboter? Ist er bezahlbar?"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Emma",
+   "parts": [
+    "Aber viele Menschen könnten ihre Arbeit verlieren. In zwanzig Jahren werden wohl viele Autos allein fahren."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Emma",
+   "parts": [
+    "Beides. Für die Medizin ist sie nützlich: Krankheiten lassen sich früher erkennen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich bin in der Tierarztpraxis. Hier ist alles, was ich mir gewünscht habe. [pause] Frau Doktor Lang lässt mich bei den Katzen helfen. [pause] Warum sind damals so viele Menschen gekommen? [pause] Und heute? Wo ist Ihre Heimat? [pause] Können sich die Familien besuchen? [pause] Was ist das denn? Das könnte eine Lampe sein. [pause] Wie funktioniert er? [pause] Und was kostet so ein Roboter? Ist er bezahlbar? [pause] Aber viele Menschen könnten ihre Arbeit verlieren. In zwanzig Jahren werden wohl viele Autos allein fahren. [pause] Beides. Für die Medizin ist sie nützlich: Krankheiten lassen sich früher erkennen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

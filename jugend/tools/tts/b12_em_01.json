@@ -1,0 +1,74 @@
+{
+ "job": "b12_em_01",
+ "who": "Emma",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Ich möchte in eine Tierarztpraxis. Ich habe großes Interesse an Tieren, und geduldig bin ich auch."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Das stimmt nicht. Du bist handwerklich sehr gut. Du hast mein Fahrrad repariert!"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Guten Tag, hier ist Emma Wagner. Ich möchte mich um ein Praktikum im Juni bewerben."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Ja, ich arbeite ehrenamtlich im Tierheim. Ich habe großes Interesse an dem Beruf."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Vielen Dank! Ich schicke die Unterlagen noch heute."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Emma",
+   "parts": [
+    "Ich habe Interesse an Tieren."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Emma",
+   "parts": [
+    "Hundertachtzig Euro? Das ist viel Geld für etwas, was du nicht brauchst."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Emma",
+   "parts": [
+    "Genau so wirkt Werbung. Du kaufst etwas, ohne lange nachzudenken."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Emma",
+   "parts": [
+    "Warte eine Woche. Wenn du die Schuhe dann immer noch willst, kannst du sie kaufen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich möchte in eine Tierarztpraxis. Ich habe großes Interesse an Tieren, und geduldig bin ich auch. [pause] Das stimmt nicht. Du bist handwerklich sehr gut. Du hast mein Fahrrad repariert! [pause] Guten Tag, hier ist Emma Wagner. Ich möchte mich um ein Praktikum im Juni bewerben. [pause] Ja, ich arbeite ehrenamtlich im Tierheim. Ich habe großes Interesse an dem Beruf. [pause] Vielen Dank! Ich schicke die Unterlagen noch heute. [pause] Ich habe Interesse an Tieren. [pause] Hundertachtzig Euro? Das ist viel Geld für etwas, was du nicht brauchst. [pause] Genau so wirkt Werbung. Du kaufst etwas, ohne lange nachzudenken. [pause] Warte eine Woche. Wenn du die Schuhe dann immer noch willst, kannst du sie kaufen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

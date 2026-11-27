@@ -1,0 +1,88 @@
+{
+ "job": "b12_n_04",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "geeignet.",
+    "Du bist für den Beruf geeignet."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "geduldig.",
+    "Ein Lehrer muss geduldig sein."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "kreativ.",
+    "Elif ist kreativ und schreibt gern."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "selbstständig.",
+    "Yuna arbeitet sehr selbstständig."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "handwerklich.",
+    "Lukas ist handwerklich gut."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "lassen, hat gelassen, du lässt, er lässt."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "erledigen, hat erledigt.",
+    "Ich erledige zuerst die wichtigen Aufgaben."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "beraten, hat beraten, du berätst, er berät.",
+    "Die Verkäuferin berät die Kunden."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "pflanzen, der Krankenpfleger"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Apfel, der Kopf, empfehlen"
+   ]
+  }
+ ],
+ "script": "Also. [pause] geeignet. Du bist für den Beruf geeignet. [pause] geduldig. Ein Lehrer muss geduldig sein. [pause] kreativ. Elif ist kreativ und schreibt gern. [pause] selbstständig. Yuna arbeitet sehr selbstständig. [pause] handwerklich. Lukas ist handwerklich gut. [pause] lassen, hat gelassen, du lässt, er lässt. [pause] erledigen, hat erledigt. Ich erledige zuerst die wichtigen Aufgaben. [pause] beraten, hat beraten, du berätst, er berät. Die Verkäuferin berät die Kunden. [pause] pflanzen, der Krankenpfleger [pause] der Apfel, der Kopf, empfehlen [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

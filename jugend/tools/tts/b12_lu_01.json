@@ -1,0 +1,81 @@
+{
+ "job": "b12_lu_01",
+ "who": "Lukas",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Und ich? Ich weiß nicht, was ich werden will. Ich habe keine Stärken."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Wirklich? Dann bewerbe ich mich dort. Aber wie schreibt man eine Bewerbung?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Das klingt sehr erwachsen. Lasst mich mal üben: Sehr geehrter Herr … Wie heißt der Chef?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Guten Tag, Herr Demir. Ich interessiere mich für Fahrräder, und ich repariere gern."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Bei meinem Opa. Er lässt mich in seiner Werkstatt alles selbst machen."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Ich bin geduldig und arbeite gern im Team. Und ich bin pünktlich. Fast immer."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Ich spreche manchmal zu viel. Aber ich lasse mir gern etwas erklären."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Das passt. Darf ich auch Kunden beraten?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Das wäre toll."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lukas",
+   "parts": [
+    "Ich lasse mein Handy reparieren. Ich kann das nicht selbst."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und ich? Ich weiß nicht, was ich werden will. Ich habe keine Stärken. [pause] Wirklich? Dann bewerbe ich mich dort. Aber wie schreibt man eine Bewerbung? [pause] Das klingt sehr erwachsen. Lasst mich mal üben: Sehr geehrter Herr … Wie heißt der Chef? [pause] Guten Tag, Herr Demir. Ich interessiere mich für Fahrräder, und ich repariere gern. [pause] Bei meinem Opa. Er lässt mich in seiner Werkstatt alles selbst machen. [pause] Ich bin geduldig und arbeite gern im Team. Und ich bin pünktlich. Fast immer. [pause] Ich spreche manchmal zu viel. Aber ich lasse mir gern etwas erklären. [pause] Das passt. Darf ich auch Kunden beraten? [pause] Das wäre toll. [pause] Ich lasse mein Handy reparieren. Ich kann das nicht selbst. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

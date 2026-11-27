@@ -1,0 +1,67 @@
+{
+ "job": "b12_sc_01",
+ "who": "Schneider",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "Schneider",
+   "parts": [
+    "Im Juni macht ihr zwei Wochen Praktikum. Bis Ende April müsst ihr euch um einen Platz bewerben."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Schneider",
+   "parts": [
+    "Emma hat recht. Im Fahrradladen neben der Schule lässt der Chef die Praktikanten selbst reparieren."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Schneider",
+   "parts": [
+    "Du brauchst ein Anschreiben und einen Lebenslauf. Im Anschreiben erklärst du, warum du geeignet bist."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Schneider",
+   "parts": [
+    "Herr Demir. Und lass deine Bewerbung von Emma lesen, bevor du sie schickst."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Schneider",
+   "parts": [
+    "Viel Erfolg!"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Schneider",
+   "parts": [
+    "Heute zeigt ihr eure Ideen für Köln im Jahr zweitausendfünfzig. Die Bevölkerung wächst, aber der Platz bleibt gleich. Emma, fang bitte an."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Schneider",
+   "parts": [
+    "Gute Idee. Und wo sollen die Menschen wohnen? Die Mieten steigen jedes Jahr."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Schneider",
+   "parts": [
+    "Sehr gut. Stadt und Land brauchen sich. Schreibt eure Ideen für die Schülerzeitung auf."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Im Juni macht ihr zwei Wochen Praktikum. Bis Ende April müsst ihr euch um einen Platz bewerben. [pause] Emma hat recht. Im Fahrradladen neben der Schule lässt der Chef die Praktikanten selbst reparieren. [pause] Du brauchst ein Anschreiben und einen Lebenslauf. Im Anschreiben erklärst du, warum du geeignet bist. [pause] Herr Demir. Und lass deine Bewerbung von Emma lesen, bevor du sie schickst. [pause] Viel Erfolg! [pause] Heute zeigt ihr eure Ideen für Köln im Jahr zweitausendfünfzig. Die Bevölkerung wächst, aber der Platz bleibt gleich. Emma, fang bitte an. [pause] Gute Idee. Und wo sollen die Menschen wohnen? Die Mieten steigen jedes Jahr. [pause] Sehr gut. Stadt und Land brauchen sich. Schreibt eure Ideen für die Schülerzeitung auf. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

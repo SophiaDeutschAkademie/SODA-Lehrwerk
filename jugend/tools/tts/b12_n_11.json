@@ -1,0 +1,91 @@
+{
+ "job": "b12_n_11",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Umgebung.",
+    "In der Umgebung gibt es viele Wälder."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "der Balkon, die Balkone.",
+    "Auf dem Balkon stehen Blumen."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "der Stock.",
+    "Wir wohnen im dritten Stock."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "das Gebäude, die Gebäude.",
+    "Das höchste Gebäude ist die Kirche."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "einziehen, ist eingezogen.",
+    "Nächste Woche ziehen wir in die neue Wohnung ein."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "ausziehen, ist ausgezogen.",
+    "Mit neunzehn ist mein Bruder ausgezogen."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "pendeln, ist gependelt.",
+    "Lukas pendelt jeden Tag nach Köln."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Bevölkerung.",
+    "Die Bevölkerung der Stadt wächst."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "wachsen, ist gewachsen, du wächst, er wächst.",
+    "Die Städte wachsen jedes Jahr."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "bauen, hat gebaut.",
+    "Hier wird ein Hochhaus gebaut."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Umgebung. In der Umgebung gibt es viele Wälder. [pause] der Balkon, die Balkone. Auf dem Balkon stehen Blumen. [pause] der Stock. Wir wohnen im dritten Stock. [pause] das Gebäude, die Gebäude. Das höchste Gebäude ist die Kirche. [pause] einziehen, ist eingezogen. Nächste Woche ziehen wir in die neue Wohnung ein. [pause] ausziehen, ist ausgezogen. Mit neunzehn ist mein Bruder ausgezogen. [pause] pendeln, ist gependelt. Lukas pendelt jeden Tag nach Köln. [pause] die Bevölkerung. Die Bevölkerung der Stadt wächst. [pause] wachsen, ist gewachsen, du wächst, er wächst. Die Städte wachsen jedes Jahr. [pause] bauen, hat gebaut. Hier wird ein Hochhaus gebaut. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

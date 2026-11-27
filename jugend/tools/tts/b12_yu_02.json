@@ -1,0 +1,74 @@
+{
+ "job": "b12_yu_02",
+ "who": "Yuna",
+ "voice": "Juna",
+ "voice_id": "uZCiMraXvGgdBPlDzm6l",
+ "items": [
+  {
+   "pid": "b1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Ja, hier. Die Bestellung ist erst fünf Tage alt."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Ich hätte gern das Geld zurück. Ich habe gemerkt, dass ich die Jacke nicht brauche."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Yuna",
+   "parts": [
+    "Das ist alles, was ich brauche."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Es ist so ruhig hier! Während man in Köln immer Autos hört, hört man hier fast nichts."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Wie lange brauchst du zur Schule?"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "In Seoul wohnen wir im zwanzigsten Stock eines Hochhauses. Von dort sieht man die ganze Stadt."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Ich finde es schön hier. Aber wo ist der nächste Supermarkt?"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "In Seoul ist das schon so. Während hier viele mit dem Auto fahren, nehmen dort die meisten die Bahn."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Yuna",
+   "parts": [
+    "Und die Dörfer? Während die Städte wachsen, werden viele Dörfer kleiner."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ja, hier. Die Bestellung ist erst fünf Tage alt. [pause] Ich hätte gern das Geld zurück. Ich habe gemerkt, dass ich die Jacke nicht brauche. [pause] Das ist alles, was ich brauche. [pause] Es ist so ruhig hier! Während man in Köln immer Autos hört, hört man hier fast nichts. [pause] Wie lange brauchst du zur Schule? [pause] In Seoul wohnen wir im zwanzigsten Stock eines Hochhauses. Von dort sieht man die ganze Stadt. [pause] Ich finde es schön hier. Aber wo ist der nächste Supermarkt? [pause] In Seoul ist das schon so. Während hier viele mit dem Auto fahren, nehmen dort die meisten die Bahn. [pause] Und die Dörfer? Während die Städte wachsen, werden viele Dörfer kleiner. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

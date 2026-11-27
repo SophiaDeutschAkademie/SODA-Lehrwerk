@@ -1,0 +1,67 @@
+{
+ "job": "b12_sc_03",
+ "who": "Schneider",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "b1-2/8",
+   "who": "Schneider",
+   "parts": [
+    "Insgesamt war es ein tolles Schuljahr. Ich bin stolz auf euch."
+   ]
+  },
+  {
+   "pid": "b1-2/station-2",
+   "who": "Schneider",
+   "parts": [
+    "Morgen haltet ihr eure Vorträge. Jeder Vortrag dauert fünf Minuten."
+   ]
+  },
+  {
+   "pid": "b1-2/station-2",
+   "who": "Schneider",
+   "parts": [
+    "Zuerst sagt ihr euer Thema und gebt einen Überblick."
+   ]
+  },
+  {
+   "pid": "b1-2/station-2",
+   "who": "Schneider",
+   "parts": [
+    "Ihr braucht nicht alles auf die Karte zu schreiben. Fünf Wörter sind genug."
+   ]
+  },
+  {
+   "pid": "b1-2/station-2",
+   "who": "Schneider",
+   "parts": [
+    "Sprecht langsam und schaut die Klasse an. Sonst könnte das Publikum nichts verstehen."
+   ]
+  },
+  {
+   "pid": "b1-2/station-2",
+   "who": "Schneider",
+   "parts": [
+    "Zum Schluss bedankt ihr euch. Danach dürfen die anderen Fragen stellen."
+   ]
+  },
+  {
+   "pid": "b1-2/station-2",
+   "who": "Schneider",
+   "parts": [
+    "Danke, Elif. Du hast frei gesprochen und alles klar erklärt. Das war eine tolle Leistung."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Schneider",
+   "parts": [
+    "Was wurde in deinem Land vor vielen Jahren erfunden oder gebaut?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Insgesamt war es ein tolles Schuljahr. Ich bin stolz auf euch. [pause] Morgen haltet ihr eure Vorträge. Jeder Vortrag dauert fünf Minuten. [pause] Zuerst sagt ihr euer Thema und gebt einen Überblick. [pause] Ihr braucht nicht alles auf die Karte zu schreiben. Fünf Wörter sind genug. [pause] Sprecht langsam und schaut die Klasse an. Sonst könnte das Publikum nichts verstehen. [pause] Zum Schluss bedankt ihr euch. Danach dürfen die anderen Fragen stellen. [pause] Danke, Elif. Du hast frei gesprochen und alles klar erklärt. Das war eine tolle Leistung. [pause] Was wurde in deinem Land vor vielen Jahren erfunden oder gebaut? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,86 @@
+{
+ "job": "b12_n_05",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "Der Krankenpfleger empfiehlt Äpfel."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "der Vorteil"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "der Nachteil"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "Das ist alles, was ich brauche."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "Kauf nichts, ohne zu vergleichen!"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "der Konsum.",
+    "Unser Konsum macht viel Müll."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "die Marke, die Marken.",
+    "Diese Marke tragen viele Jugendliche."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "die Qualität.",
+    "Die Qualität ist wichtiger als der Preis."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "der Rabatt, die Rabatte.",
+    "Heute gibt es zwanzig Prozent Rabatt."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "das Sonderangebot, die Sonderangebote.",
+    "Die Jacke ist im Sonderangebot."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Der Krankenpfleger empfiehlt Äpfel. [pause] der Vorteil [pause] der Nachteil [pause] Das ist alles, was ich brauche. [pause] Kauf nichts, ohne zu vergleichen! [pause] der Konsum. Unser Konsum macht viel Müll. [pause] die Marke, die Marken. Diese Marke tragen viele Jugendliche. [pause] die Qualität. Die Qualität ist wichtiger als der Preis. [pause] der Rabatt, die Rabatte. Heute gibt es zwanzig Prozent Rabatt. [pause] das Sonderangebot, die Sonderangebote. Die Jacke ist im Sonderangebot. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}
