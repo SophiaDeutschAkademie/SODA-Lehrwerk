@@ -205,8 +205,27 @@ h1:focus{outline:none}
 #inhalt .cat .grid.one .tile .go{background:#fff;color:var(--accent)}
 #inhalt .cat .grid.one .tile:hover{background:var(--accent-d)}
 #inhalt .cat .grid.one .tile .ttl{font-size:clamp(26px,3vw,36px)}
-.tile .thd{display:flex;align-items:center;gap:11px;margin-top:8px;min-width:0}.tile .thd .ttl{margin-top:0;min-width:0}.tile .tic{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:#fff;object-fit:cover}.tile.soon .tic{opacity:.7}#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .dsc{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-@media (min-width:701px){#inhalt .cat[aria-labelledby="cat-lehrbuch"] .grid.one .tile .ttl{font-size:clamp(20px,2.1vw,25px)}}
+/* ── Lehrbuch 타일(.buch) ──
+   윗줄: 분류(왼쪽) + 상태(오른쪽: 업데이트 날짜 또는 「작업 중」)
+   아랫줄: 그림(왼쪽) + 제목·설명(가운데) + 화살표(오른쪽 아래)
+   다섯 타일이 왼쪽 축(분류·그림), 글 축(제목·설명), 오른쪽 축(상태·화살표), 바닥선(그림·화살표)을 똑같이 쓰고 높이도 같습니다.
+   윗줄 높이(--hd)는 분류 글줄이고 상태는 위아래로 --ov 만큼 넘칩니다. 그래서 분류·업데이트가 옆 묶음 타일과 같은 높이에 옵니다.
+   그림 크기·글자 크기는 타일 너비(li 가 container)에 맞춰 바뀝니다. */
+#inhalt .cat[aria-labelledby="cat-lehrbuch"] .grid.one{display:grid;grid-template-columns:minmax(0,1fr);grid-auto-rows:1fr}
+#inhalt .cat[aria-labelledby="cat-lehrbuch"] .grid.one li{container-type:inline-size;min-width:0}
+#inhalt .cat .grid.one .tile.buch{--pad:18px;--hd:20px;--ov:4px;--hg:14px;--pic:64px;--gap:14px;--ttl:21px;--dsc:13px;--tg:2px;--go:36px;--gg:10px;display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:minmax(var(--hd),auto) minmax(var(--hg),1fr) auto;padding:var(--pad)}
+#inhalt .cat .grid.one .tile.buch .lab{grid-area:1/1/2/-1;justify-self:start;align-self:center;padding:0;line-height:1.3;white-space:nowrap}
+#inhalt .cat .grid.one .tile.buch .upd,#inhalt .cat .grid.one .tile.buch .st{grid-area:1/1/2/-1;justify-self:end;align-self:center;position:static;margin-block:calc(-1*var(--ov))}
+#inhalt .cat .grid.one .tile.buch .tic{grid-area:3/1/4/2;align-self:end;width:var(--pic);height:var(--pic);margin-right:var(--gap);border-radius:14px;background:#fff;object-fit:cover}
+#inhalt .cat .grid.one .tile.buch.soon .tic{opacity:.7}
+#inhalt .cat .grid.one .tile.buch .txt{grid-area:3/2/4/3;align-self:center;display:block;min-width:0}
+#inhalt .cat .grid.one .tile.buch .ttl{margin:0;font-size:var(--ttl);line-height:1.2}
+#inhalt .cat .grid.one .tile.buch .dsc{margin:var(--tg) 0 0;font-size:var(--dsc);line-height:1.4;text-wrap:balance}
+#inhalt .cat .grid.one a.tile.buch .dsc{margin-right:calc(var(--go) + var(--gg))}
+#inhalt .cat .grid.one .tile.buch .go{grid-area:3/2/4/3;justify-self:end;align-self:end;width:var(--go);height:var(--go)}
+@media (min-width:621px){@container (max-width:300px){#inhalt .cat .grid.one .tile.buch{--gap:12px;--ttl:20px;--dsc:12.5px}}}
+@supports (width:1cqw){@media (min-width:1001px){#inhalt .cat .grid.one .tile.buch{--pic:clamp(64px,25cqw,88px);--ttl:clamp(20px,7.3cqw,25px);--dsc:clamp(12.5px,4.1cqw,13.5px)}}}
+@media (max-width:620px){#inhalt .cat .grid.one .tile.buch{--pad:13px;--hd:26px;--ov:0px;--hg:8px;--gap:12px;--ttl:19px;--dsc:12px;--go:26px;--gg:8px}#inhalt .cat .grid.one .tile.buch .tic{border-radius:13px}}
 #inhalt .cat .grid.one .tile{justify-content:flex-start}
 #inhalt .cat .tile.hl,html[data-theme="dark"] #inhalt .cat .tile.hl{background:#0F766E;border-color:#0F766E;color:#fff}
 #inhalt .cat .tile.hl:hover,html[data-theme="dark"] #inhalt .cat .tile.hl:hover{background:#13897F}
@@ -360,25 +379,27 @@ html[data-theme="dark"] .tile:hover .go,html[data-theme="dark"] .tile:focus-visi
       <section class="cat" aria-labelledby="cat-lehrbuch">
         <header class="cat-h"><h2 id="cat-lehrbuch">Lehrbuch</h2></header>
         <ul class="grid one">
-        <li><a class="tile" href="kinder/" style="--i:1"><span class="upd"><span>업데이트</span><span>2026.11.23</span></span>
-          <span class="lab">SODA Kinder</span><span class="thd"><img class="tic" src="assets/lehrbuch/kinder.webp" alt="" width="44" height="44" loading="lazy"><b class="ttl">어린이 독일어</b></span><span class="dsc">부엉이 Sofi와 놀면서 배우는 첫 독일어</span>
-          <span class="tile-foot"><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        <li><a class="tile buch" href="kinder/" style="--i:1">
+          <span class="lab">SODA Kinder</span><span class="upd"><span>업데이트</span><span>2026.11.23</span></span>
+          <img class="tic" src="assets/lehrbuch/kinder.webp" alt="" width="64" height="64" loading="lazy"><span class="txt"><b class="ttl">어린이 독일어</b><span class="dsc">부엉이 Sofi와 놀면서 배우는 첫 독일어</span></span>
+          <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a></li>
-        <li><a class="tile" href="jugend/" style="--i:2"><span class="upd"><span>업데이트</span><span>2026.11.27</span></span>
-          <span class="lab">SODA Jugendliche</span><span class="thd"><img class="tic" src="assets/lehrbuch/jugend.webp" alt="" width="44" height="44" loading="lazy"><b class="ttl">청소년 독일어</b></span><span class="dsc">Yuna와 함께 A1부터 B1까지</span>
-          <span class="tile-foot"><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        <li><a class="tile buch" href="jugend/" style="--i:2">
+          <span class="lab">SODA Jugendliche</span><span class="upd"><span>업데이트</span><span>2026.11.27</span></span>
+          <img class="tic" src="assets/lehrbuch/jugend.webp" alt="" width="64" height="64" loading="lazy"><span class="txt"><b class="ttl">청소년 독일어</b><span class="dsc">Yuna와 함께 A1부터 B1까지</span></span>
+          <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a></li>
-        <li><div class="tile soon" style="--i:3" aria-disabled="true">
-          <span class="lab">SODA Basis</span><span class="thd"><img class="tic" src="assets/lehrbuch/basis.webp" alt="" width="44" height="44" loading="lazy"><b class="ttl">성인 독일어</b></span><span class="dsc">A1부터 B1까지 다지는 기초</span>
-          <span class="tile-foot"><span class="metas"><span class="meta">작업 중</span></span></span>
+        <li><div class="tile soon buch" style="--i:3" aria-disabled="true">
+          <span class="lab">SODA Basis</span><span class="meta st">작업 중</span>
+          <img class="tic" src="assets/lehrbuch/basis.webp" alt="" width="64" height="64" loading="lazy"><span class="txt"><b class="ttl">성인 독일어</b><span class="dsc">A1부터 B1까지 다지는 기초</span></span>
         </div></li>
-        <li><div class="tile soon" style="--i:4" aria-disabled="true">
-          <span class="lab">SODA Studium</span><span class="thd"><img class="tic" src="assets/lehrbuch/studium.webp" alt="" width="44" height="44" loading="lazy"><b class="ttl">대학생 독일어</b></span><span class="dsc">B2부터 C1까지, 유학 준비</span>
-          <span class="tile-foot"><span class="metas"><span class="meta">작업 중</span></span></span>
+        <li><div class="tile soon buch" style="--i:4" aria-disabled="true">
+          <span class="lab">SODA Studium</span><span class="meta st">작업 중</span>
+          <img class="tic" src="assets/lehrbuch/studium.webp" alt="" width="64" height="64" loading="lazy"><span class="txt"><b class="ttl">대학생 독일어</b><span class="dsc">B2부터 C1까지, 유학 준비</span></span>
         </div></li>
-        <li><div class="tile soon" style="--i:5" aria-disabled="true">
-          <span class="lab">SODA Beruf</span><span class="thd"><img class="tic" src="assets/lehrbuch/beruf.webp" alt="" width="44" height="44" loading="lazy"><b class="ttl">직장인 독일어</b></span><span class="dsc">B2, 일터에서 쓰는 독일어</span>
-          <span class="tile-foot"><span class="metas"><span class="meta">작업 중</span></span></span>
+        <li><div class="tile soon buch" style="--i:5" aria-disabled="true">
+          <span class="lab">SODA Beruf</span><span class="meta st">작업 중</span>
+          <img class="tic" src="assets/lehrbuch/beruf.webp" alt="" width="64" height="64" loading="lazy"><span class="txt"><b class="ttl">직장인 독일어</b><span class="dsc">B2, 일터에서 쓰는 독일어</span></span>
         </div></li>
         </ul>
       </section>
@@ -764,19 +785,6 @@ html[data-theme="dark"] .ntc .nb,html[data-theme="dark"] .nt-tag.new,html[data-t
 .a2hs-sheet :focus-visible,.a2hs-btn:focus-visible{outline:3px solid #9DA6C6;outline-offset:3px}
 @media (min-width:641px){.a2hs-sheet{align-items:center}.a2hs-box{margin:0}}
 @media print{.a2hs-btn,.a2hs-sheet{display:none!important}}
-
-/* Lehrbuch 타일: 그림을 왼쪽에 크게, 글(분류·제목·설명)을 그 오른쪽에 세로로, 화살표는 오른쪽 가운데 */
-#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile{display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-areas:"pic lab go" "pic ttl go" "pic dsc go" ". foot foot";column-gap:14px;align-items:center;padding:16px 18px}
-#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .thd{display:contents}
-#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .tic{grid-area:pic;width:68px;height:68px;border-radius:16px}
-#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .lab{grid-area:lab;padding-right:84px}
-#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .ttl{grid-area:ttl;margin-top:3px}
-#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .dsc{grid-area:dsc;margin-top:3px}
-#inhalt .cat[aria-labelledby="cat-lehrbuch"] a.tile .tile-foot{grid-area:go;align-self:end;padding:0!important;margin:0}
-#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile.soon .tile-foot{grid-area:foot;padding-top:8px!important}
-#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .go{width:34px;height:34px}
-@media (max-width:520px){#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile{column-gap:11px;padding:13px 14px}#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .tic{width:56px;height:56px;border-radius:14px}#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .lab{padding-right:0;white-space:nowrap}#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .go{width:30px;height:30px}}
-#inhalt .cat[aria-labelledby="cat-lehrbuch"] .tile .dsc{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.4}
 </style>
 <script id="a2hs-js">
 (function(){

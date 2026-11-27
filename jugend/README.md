@@ -6,7 +6,7 @@
 
 지금은 **공개**입니다 (`tools/status.json` 의 `public` 이 `true`). Lehrwerk 목차의 청소년 칸을 누르면 열리고, 사이트맵에 들어 있습니다.
 
-비공개로 돌리려면 `public` 을 `false` 로 바꾸고 `python3 jugend/tools/lektion.py site` 와 `JUGEND_DATE=그날 날짜 python3 jugend/tools/build.py` 를 실행합니다. 그러면 목차 칸은 「작업 중」으로 바뀌고 화면마다 `noindex` 가 들어가며, 사이트맵과 알림에서 빠집니다. 루트 `index.html` 의 청소년 칸은 링크가 없는 칸으로 되돌립니다(커밋 `525d023` 의 모양을 참고).
+비공개로 돌리려면 `public` 을 `false` 로 바꾸고 `python3 jugend/tools/lektion.py site` 와 `JUGEND_DATE=그날 날짜 python3 jugend/tools/build.py` 를 실행합니다. 그러면 목차 칸은 「작업 중」으로 바뀌고 화면마다 `noindex` 가 들어가며, 사이트맵과 알림에서 빠집니다. 루트 `index.html` 의 청소년 칸은 링크가 없는 칸으로 되돌립니다(같은 묶음의 「작업 중」 칸과 같은 모양: `<div class="tile soon buch" aria-disabled="true">`, 업데이트 날짜 자리에 `<span class="meta st">작업 중</span>`, 화살표 없음).
 
 ## 음성이 없는 단계를 둘 때
 

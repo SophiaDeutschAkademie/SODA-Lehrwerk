@@ -185,7 +185,7 @@ basis/, studium/, beruf/       빌드 결과 (index.html, manifest.webmanifest, 
 1. `tools/status.json` 의 `public` 을 `true` 로 바꿉니다.
 2. `python3 erwachsene/tools/lektion.py site` 와 목차 빌드를 다시 실행합니다. 목차와 과 화면에서 noindex 가 빠지고 `tools/seo.py` 가 목차 세 곳에 검색 태그를 넣고 사이트맵에 세 주소를 넣습니다.
 3. 과 화면 주소는 `tools/seo.py` 가 아직 사이트맵에 넣지 않습니다. 공개할 때 어린이 교재처럼 과 주소를 사이트맵에 넣는 부분을 `tools/seo.py` 에 더합니다.
-4. 루트 `index.html` 의 세 칸을 `<a class="tile" href="basis/">`, `<a class="tile" href="studium/">`, `<a class="tile" href="beruf/">` 로 바꾸고 업데이트 날짜와 화살표를 넣습니다. 본문이 있는 교재부터 하나씩 열어도 됩니다.
+4. 루트 `index.html` 의 세 칸을 `<a class="tile buch" href="basis/">`, `<a class="tile buch" href="studium/">`, `<a class="tile buch" href="beruf/">` 로 바꾸고, 「작업 중」 표시 자리에 업데이트 날짜(`.upd`)를, 끝에 화살표(`.go`)를 넣습니다(어린이·청소년 칸과 같은 모양). 본문이 있는 교재부터 하나씩 열어도 됩니다.
 5. `notices.json` 에 공지를 올립니다.
 
 ## 본문

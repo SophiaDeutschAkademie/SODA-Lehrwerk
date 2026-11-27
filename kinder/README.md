@@ -82,7 +82,7 @@ audio/, img/  단원별 음성 대응표와 장면 배치표 (build.py 가 만�
 5. `python3 kinder/tools/build.py cut 폴더` 로 음성을 줄 단위로 자르고, `img 폴더` 로 그림을 넣습니다.
 6. `python3 kinder/tools/build.py site` 로 `data/` 와 `index.html` 을 다시 만듭니다. 그림과 음성이 모두 있는 단원만 열립니다. 끝날 때 저장소의 `tools/seo.py` 도 함께 돕니다.
 7. `python3 kinder/tools/test.py smoke 1-36` 과 `full NN` 으로 화면을 확인합니다.
-8. 목차 타일의 업데이트 날짜와 단원 수를 고치고 `notices.json` 에 공지를 더합니다.
+8. 목차 타일의 업데이트 날짜를 고치고 `notices.json` 에 공지를 더합니다.
 
 목소리는 Sofi = Milly Maple, Lena = Rika Sturm, Ben = Pipp 입니다. 한 번에 열 줄까지 `[long pause]` 로 이어 생성한 다음 줄 단위로 자릅니다. 그림은 SODA 삽화 그림체(남색, 회청, 모래색, 아이보리)입니다. 장면에는 Sofi를 그리지 않고, 빌드할 때 Sofi의 정해진 그림을 따로 놓습니다. 그래서 Sofi의 모습이 단원마다 같습니다.
 
