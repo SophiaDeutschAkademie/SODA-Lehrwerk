@@ -19,7 +19,8 @@
   2. 교재 앱의 화면용 스타일(index.html 의 <style>)에 pdf-print.css 를 얹어 HTML 한 장으로 만든다. 모양은 A4 두 단.
   3. Chrome 에 띄워 pdf-fit.js 로 좁은 단에 선지·표·도식을 맞춘 뒤 PDF 로 두 번 찍는다
      (첫 번째에서 제목들이 놓인 쪽을 알아내 목차의 쪽 번호를 채우고 다시 찍는다).
-  4. pikepdf 로 책갈피, 쪽마다 왼쪽 아래 「↑ 목차」 링크, 문서 정보를 넣는다.
+  4. pikepdf 로 책갈피, 쪽마다 왼쪽 아래 「↑ 목차」 링크, 문서 정보를 넣고, 문서 안 링크를 쪽을 직접 가리키는 방식으로 바꾼다
+     (Chrome 이 쓰는 이름 방식은 핸드폰의 PDF 뷰어 가운데 따라가지 못하는 것이 있다).
 
 PDF 를 grammatik/ 밖에 두는 까닭: grammatik/sw.js 는 그 폴더 안의 모든 페이지 이동 요청에 교재 화면(index.html)을 돌려준다.
 PDF 가 그 안에 있으면 주소로 들어온 사람이 PDF 대신 교재 화면을 보게 된다.
@@ -838,7 +839,8 @@ def dest_pages(pdf_path):
 
 
 def finish(tmp_pdf, out_pdf, lessons, title, single, ref_px=0):
-    """책갈피, 쪽마다 왼쪽 아래 「↑ 목차」 링크, 문서 정보를 넣고 다시 압축한다. → (뜻밖의 글꼴 이름들, 찍힌 배율)"""
+    """책갈피, 쪽마다 왼쪽 아래 「↑ 목차」 링크, 문서 정보를 넣고, 문서 안 링크를 쪽을 직접 가리키게 바꾸고, 다시 압축한다.
+    → (뜻밖의 글꼴 이름들, 찍힌 배율, 갈 곳을 찾지 못한 링크 수)"""
     import pikepdf
     pikepdf.settings.set_flate_compression_level(9)
     pages, _ = dest_pages(tmp_pdf)
@@ -900,6 +902,28 @@ def finish(tmp_pdf, out_pdf, lessons, title, single, ref_px=0):
         widths = sorted(float(a.Rect[2]) - float(a.Rect[0]) for page in pdf.pages for a in (page.get('/Annots') or [])
                         if isinstance(a.get('/Dest'), pikepdf.Name) and str(a.Dest)[1:] in names)
         scale = widths[len(widths) // 2] / (ref_px * 0.75) if widths and ref_px else 1.0
+        # 문서 안 링크를 「가리키는 쪽과 위치를 직접 적는」 방식으로 바꾼다(/Dest [쪽 /XYZ 왼쪽 위 0] — Word 가 PDF 를 만들 때 쓰는 방식).
+        # Chrome 은 「이름 붙은 자리」(/Dest /이름 → 문서의 /Dests 사전)로 적는다. Chrome·Acrobat 은 이것을 따라가지만
+        # 핸드폰의 PDF 뷰어(구글 드라이브 미리보기 등) 가운데에는 따라가지 못하는 것이 있어, 목차를 눌러도 움직이지 않는다.
+        named = pdf.Root.get('/Dests')
+        lost = 0
+        for page in pdf.pages:
+            for a in page.get('/Annots') or []:
+                d = a.get('/Dest')
+                act = a.get('/A')
+                if d is None and act is not None and act.get('/S') == '/GoTo':
+                    d = act.get('/D')
+                if not isinstance(d, (pikepdf.Name, pikepdf.String)):
+                    continue
+                t = named.get('/' + str(d).lstrip('/')) if named is not None else None
+                if isinstance(t, pikepdf.Dictionary):
+                    t = t.get('/D')
+                if not isinstance(t, pikepdf.Array):
+                    lost += 1
+                    continue
+                a.Dest = pikepdf.Array(list(t))
+                if act is not None:
+                    del a['/A']
         odd = set()
         for obj in pdf.objects:
             if isinstance(obj, pikepdf.Dictionary) and obj.get('/Type') == '/Font':
@@ -908,7 +932,7 @@ def finish(tmp_pdf, out_pdf, lessons, title, single, ref_px=0):
                     odd.add('%s (%s)' % (name.lstrip('/') or '이름 없음', sub.lstrip('/')))
         pdf.save(out_pdf, compress_streams=True, recompress_flate=True, deterministic_id=True,
                  object_stream_mode=pikepdf.ObjectStreamMode.generate)
-    return sorted(odd), scale
+    return sorted(odd), scale, lost
 
 
 ATTR_JS = '(document.documentElement?document.documentElement.getAttribute("%s"):null)'
@@ -941,7 +965,7 @@ def build(chrome, target, out_pdf, keep_html=False):
         moved = [k for k in pages if pages2.get(k, (0,))[0] != pages[k][0]]
         if n1 != n2 or moved:
             report['moved'] = len(moved) or 1
-        report['fonts'], report['scale'] = finish(p2, out_pdf, lessons, title, single, report.get('ref', 0))
+        report['fonts'], report['scale'], report['lost'] = finish(p2, out_pdf, lessons, title, single, report.get('ref', 0))
         if keep_html:
             shutil.copy(hp, os.path.splitext(out_pdf)[0] + '.html')
     finally:
@@ -962,6 +986,9 @@ def show_report(target, rep):
     for name in rep.get('fonts', []):
         bad += 1
         print('  고칠 것 %s: 준비한 글꼴에 없는 글자가 있어 다른 글꼴이 쓰였습니다 — %s' % (target, name), file=sys.stderr)
+    if rep.get('lost'):
+        bad += 1
+        print('  고칠 것 %s: 갈 곳을 찾지 못한 링크가 %d개 있습니다.' % (target, rep['lost']), file=sys.stderr)
     if rep.get('moved'):
         bad += 1
         print('  고칠 것 %s: 쪽 번호를 채운 뒤 쪽이 달라져 목차의 쪽 번호가 틀릴 수 있습니다.' % target, file=sys.stderr)
