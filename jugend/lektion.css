@@ -432,6 +432,12 @@ body[data-na] .btn-s[disabled],body[data-na] .chip[disabled]{opacity:.38;cursor:
 .na-dik{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:8px 0 0;padding:9px 12px;border-radius:12px;background:var(--soft);font-size:15px}
 .na-tag{font-size:12px;font-weight:700;color:var(--accent-ink);white-space:nowrap}
 
+/* 본문 문단은 양쪽 정렬 (가운데·오른쪽 정렬 문단과 한 줄짜리 카드 글은 그대로) */
+main p,main .lese p,main .skript p{text-align:justify;text-justify:inter-word}
+main .ende-t,main .ex-fuss,main .karte-t,main .w-kopf,main .w-bsp,main .na-tag{text-align:left}
+main .ende-t,main .karte-t{text-align:center}
+main .ex-fuss{text-align:right}
+
 @media print{
   .fuss,#toast,.schritte,.zurueck{display:none}
   main.wrap{padding-bottom:0}
