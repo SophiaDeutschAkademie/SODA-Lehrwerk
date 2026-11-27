@@ -3,11 +3,11 @@
   'use strict';
 
   var LEVELS = [
-    { code: 'A1', de: 'Anfänger', ko: '처음 쓰는 독일어', desc: '자기소개, 약속과 초대 메시지, 간단한 문의·예약 메일을 써요. 부르는 말과 끝인사부터 익혀요.' },
-    { code: 'A2', de: 'Grundlegende Kenntnisse', ko: '생활 속 이메일', desc: '소식을 전하고, 고마움을 말하고, 묻고, 제안하는 생활 속 이메일을 써요.' },
-    { code: 'B1', de: 'Fortgeschrittene Sprachverwendung', ko: '요구 사항에 맞춰 쓰기', desc: '시험처럼 요구 사항에 모두 답하는 개인 이메일, 반격식·격식 메일, 토론 글을 써요.' },
-    { code: 'B2', de: 'Selbständige Sprachverwendung', ko: '격식 있는 글과 의견', desc: '항의 편지, 직장 메시지, 지원 편지와, 반대 의견까지 다루는 의견 글·독자 편지를 써요.' },
-    { code: 'C1', de: 'Fachkundige Sprachkenntnisse', ko: '논증과 대학 글쓰기', desc: '논증문, 그래프 설명, 요약문과, 교수에게 쓰는 메일·지원 동기서를 써요.' }
+    { code: 'A1', de: 'Anfänger', ko: '처음 쓰는 독일어', desc: '자기소개와 하루 일과, 약속·초대·방문 메시지, 엽서, 간단한 문의·예약·취소 메일을 써요. 부르는 말과 끝인사부터 익혀요.' },
+    { code: 'A2', de: 'Grundlegende Kenntnisse', ko: '생활 속 이메일', desc: '소식과 휴가 이야기를 전하고, 고마움을 말하고, 묻고, 제안하고, 고장을 알리는 생활 속 이메일과 문자를 써요.' },
+    { code: 'B1', de: 'Fortgeschrittene Sprachverwendung', ko: '요구 사항에 맞춰 쓰기', desc: '시험처럼 요구 사항에 모두 답하는 개인 이메일, 문의·항의·취소 같은 반격식·격식 메일, 토론 글을 써요.' },
+    { code: 'B2', de: 'Selbständige Sprachverwendung', ko: '격식 있는 글과 의견', desc: '항의·문의 편지, 직장 메시지, 지원 편지, 해지 통지서와, 반대 의견까지 다루는 의견 글·독자 편지·그래프 설명을 써요.' },
+    { code: 'C1', de: 'Fachkundige Sprachkenntnisse', ko: '논증과 대학 글쓰기', desc: '논증문, 포럼 글, 그래프 설명, 요약문, 글에 대한 입장문과, 교수에게 쓰는 메일·이의 신청서·지원 동기서·경험 보고서를 써요.' }
   ];
   var LEVEL_BY = {};
   LEVELS.forEach(function (l) { LEVEL_BY[l.code] = l; });

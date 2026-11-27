@@ -9,7 +9,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 | `grammatik/` | Syntalab | 문법 교재, Lektion 37개와 부록「암기 노트」, 과마다 연습문제 37개(보강 포함)와 통합 복습 4세트. 별도 항목 「C1 문법」에 Lektion 38~46의 교재와 연습 9개, 통합 복습 5. 교재와 연습 모두 인쇄용 PDF(전체·과별) |
 | `lesetraining/` | SODA Lesetraining | 독해 훈련, A1–C1, 텍스트 125개 |
 | `hoertraining/` | Lehrwerk Hörtraining | 듣기 훈련, A1–C1, 88세트 |
-| `schreibtraining/` | SODA Schreibtraining | 쓰기 훈련, A1–C1 레벨별 5챕터(총 25개), 챕터마다 구성·표현·연습·쓰기·모범답안, 「선생님께 제출하기」(소피아 독일어학원 수강생 전용 안내 팝업) |
+| `schreibtraining/` | SODA Schreibtraining | 쓰기 훈련, A1–C1 레벨별 10챕터(총 50개), 챕터마다 구성·표현·연습·쓰기·모범답안, 「선생님께 제출하기」(소피아 독일어학원 수강생 전용 안내 팝업) |
 | `sprechtraining/` | SODA Sprechtraining | 말하기 훈련, A1–C1과 MZ 구어체, 대화 54개, 독일어 음성 649줄 |
 | `diktattraining/` | SODA Diktattraining | 받아쓰기 훈련, A1–C1, 문장 563개(56세트), 문장마다 음성, 틀린 곳을 종류별로 표시(어미·관사·철자·빠진 단어 등), 다시 쓸 문장, 나의 기록, 「선생님께 기록 보내기」(소피아 독일어학원 수강생 전용 안내 팝업) |
 | `vokalab/` | SODA Vokalab | 독일어 단어장, A1–C1 12,646단어와 분야별 단어(레벨 구분 없음) Business 330단어·Pflege 363단어·Musik 236단어, 모두 13,575단어, 주차별 목표와 테스트, 간격을 둔 복습(오늘 복습), 명사의 관사·복수 훈련(아래 「VOKALAB 관사·복수 훈련」). 파일 구성과 단어를 고치는 방법은 아래 「VOKALAB 파일 구성과 단어 번호」. 학습 포탈에 로그인한 브라우저에서는 기록이 서버에 자동 저장되어 다른 기기에서 이어서 학습(아래 「VOKALAB 학습 기록 자동 저장」) |

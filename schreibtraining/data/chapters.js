@@ -1,4 +1,4 @@
-/* SODA SCHREIBTRAINING · 쓰기 훈련 데이터 (A1–C1, 레벨별 5챕터)
+/* SODA SCHREIBTRAINING · 쓰기 훈련 데이터 (A1–C1, 레벨별 10챕터)
  *
  * 챕터 하나의 구조
  *   id, level, no, title(독일어), titleKo, type, typeKo, exam(어떤 시험 유형과 같은지), time(권장 분), words[최소, 최대]
@@ -383,6 +383,367 @@ window.SCHREIB_DATA = [
   }
 },
 
+{
+  id: 'a1-06', level: 'A1', no: 6,
+  title: 'Einen Arzttermin absagen', titleKo: '병원 예약 취소하고 다시 잡기',
+  type: 'Formelle E-Mail', typeKo: '격식 이메일',
+  exam: 'Goethe-Zertifikat A1 쓰기 Teil 2와 같은 유형',
+  time: 10, words: [25, 45],
+  intro: '병원에 예약한 시간에 갈 수 없다고 알리고 새 예약을 부탁하는 짧은 격식 이메일을 써요. 요일과 시각을 정확하게 쓰는 연습을 해요.',
+  goals: ['요일에는 am, 시각에는 um을 써요', '갈 수 없다고 알리고 이유를 한 문장으로 말해요', 'Haben Sie …?로 새 예약을 정중하게 물어요'],
+  aufbau: [
+    { de: 'Anrede', ko: '부르는 말', ex: 'Sehr geehrte Damen und Herren,' },
+    { de: 'Termin', ko: '내 예약', ex: 'ich habe am Dienstag um 10 Uhr einen Termin bei Dr. Weber.' },
+    { de: 'Absage und Grund', ko: '취소와 이유', ex: 'Leider kann ich nicht kommen. Ich muss arbeiten.' },
+    { de: 'Bitte um einen neuen Termin', ko: '새 예약 부탁', ex: 'Haben Sie am Donnerstag einen Termin frei?' },
+    { de: 'Gruß und Name', ko: '끝인사와 이름', ex: 'Mit freundlichen Grüßen / Sora Kim' }
+  ],
+  tipps: [
+    '먼저 내 예약이 언제인지 써요. 병원은 그 정보로 내 예약을 찾아요.',
+    '요일 앞에는 am, 시각 앞에는 um이에요. am Dienstag um 10 Uhr',
+    '병원이나 기관에는 Sie로 써요. Sie와 Ihnen은 언제나 대문자로 시작해요.',
+    '이름을 모르는 사람에게는 Sehr geehrte Damen und Herren,으로 시작해요.'
+  ],
+  fehler: [
+    { f: 'Ich habe im Dienstag einen Termin.', r: 'Ich habe am Dienstag einen Termin.', e: '요일 앞에는 am을 써요.' },
+    { f: 'Ich habe am 10 Uhr einen Termin.', r: 'Ich habe um 10 Uhr einen Termin.', e: '시각 앞에는 um을 써요.' },
+    { f: 'Ich habe ein Termin.', r: 'Ich habe einen Termin.', e: 'der Termin은 남성 명사예요. haben 뒤에서는 4격 einen이 돼요.' },
+    { f: 'Hast du am Donnerstag einen Termin frei?', r: 'Haben Sie am Donnerstag einen Termin frei?', e: '병원에는 du가 아니라 Sie로 물어요.' }
+  ],
+  redemittel: [
+    { g: '내 예약 말하기', items: [['Ich habe am Dienstag um 10 Uhr einen Termin.', '화요일 10시에 예약이 있어요.'], ['Ich habe einen Termin bei Dr. Weber.', '베버 선생님께 예약이 있어요.'], ['Mein Name ist Sora Kim.', '제 이름은 김소라예요.']] },
+    { g: '취소하기', items: [['Leider kann ich nicht kommen.', '아쉽지만 갈 수 없어요.'], ['Ich kann am Dienstag leider nicht kommen.', '화요일에는 아쉽지만 갈 수 없어요.'], ['Ich muss den Termin absagen.', '예약을 취소해야 해요.']] },
+    { g: '이유 말하기', items: [['Ich muss arbeiten.', '일해야 해요.'], ['Ich habe einen Deutschkurs.', '독일어 수업이 있어요.'], ['Mein Kind ist krank.', '아이가 아파요.']] },
+    { g: '새 예약 부탁하기', items: [['Haben Sie am Donnerstag einen Termin frei?', '목요일에 빈 예약 시간이 있나요?'], ['Kann ich am Freitag kommen?', '금요일에 가도 될까요?'], ['Ich habe am Nachmittag Zeit.', '오후에 시간이 있어요.']] },
+    { g: '끝인사', items: [['Vielen Dank!', '감사합니다!'], ['Mit freundlichen Grüßen', '안녕히 계세요 (격식 있는 끝인사)']] }
+  ],
+  uebung: [
+    { t: 'fill', q: 'Ich habe ___ Dienstag einen Termin.', a: ['am'], e: '요일 앞에는 am을 써요.' },
+    { t: 'fill', q: 'Der Termin ist ___ 10 Uhr.', a: ['um'], e: '시각 앞에는 um을 써요.' },
+    { t: 'mc', q: '알맞은 것은? Ich habe ___ Termin bei Dr. Weber.', o: ['ein', 'einen', 'eine'], a: 1, e: 'der Termin은 남성 명사라서 4격은 einen이에요.' },
+    { t: 'mc', q: '병원에 새 예약을 물을 때 알맞은 문장은?', o: ['Hast du am Donnerstag Zeit?', 'Haben Sie am Donnerstag einen Termin frei?', 'Ich will einen Termin!'], a: 1, e: '병원에는 Sie로 정중하게 물어요.' },
+    { t: 'fix', q: 'Leider ich kann nicht kommen.', a: ['Leider kann ich nicht kommen.'], e: 'Leider가 첫 자리에 오면 동사 kann이 두 번째 자리에 와요.' },
+    { t: 'mc', q: '병원에 보내는 이메일의 끝인사로 알맞은 것은?', o: ['Tschüs!', 'Liebe Grüße', 'Mit freundlichen Grüßen'], a: 2, e: '기관에 쓰는 글은 Mit freundlichen Grüßen으로 끝내요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie haben am Dienstag um 10 Uhr einen Termin bei Dr. Weber. Sie können nicht kommen. Schreiben Sie eine E-Mail an die Arztpraxis.',
+    punkte: ['Warum schreiben Sie?', 'Warum können Sie nicht kommen?', 'Bitten Sie um einen neuen Termin.'],
+    close: 'Schreiben Sie 25–45 Wörter. Schreiben Sie zu allen drei Punkten.',
+    ko: {
+      lead: '화요일 10시에 베버 선생님께 예약이 있어요. 그런데 갈 수 없어요. 병원에 이메일을 쓰세요.',
+      punkte: ['왜 메일을 쓰나요?', '왜 갈 수 없나요?', '새 예약을 부탁하세요.'],
+      close: '25–45단어로 쓰세요. 세 가지 내용을 모두 쓰세요.'
+    }
+  },
+  check: ['Sehr geehrte Damen und Herren,으로 시작했어요.', '내 예약의 요일과 시각을 썼어요.', '갈 수 없는 이유를 썼어요.', '새 예약을 물었어요.', '처음부터 끝까지 Sie로 썼어요.', 'Mit freundlichen Grüßen과 내 이름으로 끝냈어요.'],
+  muster: {
+    de: [
+      'Sehr geehrte Damen und Herren,',
+      'ich habe am Dienstag um 10 Uhr einen Termin bei Dr. Weber. Leider kann ich nicht kommen. Ich muss am Dienstag arbeiten. Haben Sie am Donnerstag einen Termin frei? Vielen Dank!',
+      'Mit freundlichen Grüßen\nSora Kim'
+    ],
+    ko: [
+      '담당자님께,',
+      '화요일 10시에 베버 선생님께 예약이 있어요. 아쉽지만 갈 수 없어요. 화요일에 일해야 해요. 목요일에 빈 예약 시간이 있나요? 감사합니다!',
+      '안녕히 계세요.\n김소라'
+    ],
+    notes: [
+      { de: 'am Dienstag um 10 Uhr', ko: '요일은 am, 시각은 um이에요. 요일을 먼저, 시각을 나중에 써요.' },
+      { de: 'einen Termin bei Dr. Weber', ko: '사람에게 가는 예약은 bei + 사람으로 말해요.' },
+      { de: 'Leider kann ich nicht kommen.', ko: 'Leider가 첫 자리라 동사 kann이 두 번째, 원형 kommen은 맨 끝이에요.' },
+      { de: 'Haben Sie am Donnerstag einen Termin frei?', ko: '질문이라 동사 Haben이 맨 앞에 와요. 새 날짜를 직접 제안하면 답을 빨리 받을 수 있어요.' }
+    ]
+  }
+},
+{
+  id: 'a1-07', level: 'A1', no: 7,
+  title: 'Eine Postkarte aus dem Urlaub', titleKo: '휴가지에서 엽서 쓰기',
+  type: 'Postkarte', typeKo: '엽서',
+  exam: '휴가지에서 친구에게 보내는 엽서 · Goethe-Zertifikat A1 쓰기 Teil 2와 비슷한 분량',
+  time: 10, words: [30, 50],
+  intro: '휴가지에서 친구에게 엽서를 써요. 어디에 있는지, 날씨가 어떤지, 무엇을 하는지를 짧은 문장으로 전해요.',
+  goals: ['Viele Grüße aus …로 엽서를 시작해요', '날씨를 Das Wetter ist …, Es regnet. 같은 문장으로 말해요', '시간 표현을 문장 앞에 두고 동사를 두 번째 자리에 써요'],
+  aufbau: [
+    { de: 'Anrede', ko: '부르는 말', ex: 'Lieber Paul,' },
+    { de: 'Gruß aus dem Urlaub', ko: '휴가지 인사', ex: 'viele Grüße aus Hamburg!' },
+    { de: 'Wetter', ko: '날씨', ex: 'Das Wetter ist schön, die Sonne scheint.' },
+    { de: 'Aktivitäten', ko: '하는 일', ex: 'Ich gehe viel spazieren und esse jeden Tag Fisch.' },
+    { de: 'Rückkehr', ko: '돌아가는 날', ex: 'Am Sonntag komme ich zurück.' },
+    { de: 'Gruß und Name', ko: '끝인사와 이름', ex: 'Bis bald! / Deine Yuna' }
+  ],
+  tipps: [
+    '도시와 나라 이름 앞에는 aus(~에서 보내는)와 in(~에 있는)을 써요. Grüße aus Hamburg / Ich bin in Hamburg.',
+    '엽서는 짧아요. 한 문장에 한 가지 내용만 쓰세요.',
+    'Morgen, Am Sonntag 같은 시간 표현으로 문장을 시작하면 동사가 바로 뒤에 와요. Morgen fahre ich …',
+    '끝에는 Dein(남자가 쓸 때) 또는 Deine(여자가 쓸 때)와 이름을 써요.'
+  ],
+  fehler: [
+    { f: 'Viele Grüße von Hamburg!', r: 'Viele Grüße aus Hamburg!', e: '도시에서 보내는 인사는 aus를 써요.' },
+    { f: 'Das Wetter ist schon.', r: 'Das Wetter ist schön.', e: 'schon은 「이미」, schön은 「좋은, 아름다운」이에요. 움라우트를 꼭 써요.' },
+    { f: 'Morgen ich fahre mit dem Schiff.', r: 'Morgen fahre ich mit dem Schiff.', e: 'Morgen이 첫 자리에 오면 동사 fahre가 두 번째 자리에 와요.' },
+    { f: 'Ich bin in Hamburg seit Montag.', r: 'Ich bin seit Montag in Hamburg.', e: '시간(seit Montag)을 장소(in Hamburg)보다 먼저 써요.' }
+  ],
+  redemittel: [
+    { g: '휴가지에서 인사하기', items: [['Viele Grüße aus Hamburg!', '함부르크에서 인사를 보내요!'], ['Ich bin seit Montag hier.', '월요일부터 여기 있어요.'], ['Ich bin mit meiner Familie in Wien.', '가족과 함께 빈에 있어요.']] },
+    { g: '날씨 말하기', items: [['Das Wetter ist schön.', '날씨가 좋아요.'], ['Die Sonne scheint.', '해가 나요.'], ['Es regnet leider.', '아쉽게도 비가 와요.'], ['Es ist kalt, aber schön.', '춥지만 좋아요.']] },
+    { g: '하는 일 말하기', items: [['Ich gehe viel spazieren.', '산책을 많이 해요.'], ['Ich esse jeden Tag Fisch.', '매일 생선을 먹어요.'], ['Ich besuche viele Museen.', '박물관에 많이 가요.'], ['Morgen fahre ich mit dem Schiff.', '내일은 배를 타요.']] },
+    { g: '돌아가는 날 말하기', items: [['Am Sonntag komme ich zurück.', '일요일에 돌아가요.'], ['Ich bleibe noch drei Tage.', '사흘 더 있어요.']] },
+    { g: '끝인사', items: [['Bis bald!', '곧 만나요!'], ['Dein Minsu', '민수가 (남자가 쓸 때)'], ['Deine Yuna', '유나가 (여자가 쓸 때)']] }
+  ],
+  uebung: [
+    { t: 'fill', q: 'Viele Grüße ___ Hamburg!', a: ['aus'], e: '도시에서 보내는 인사는 aus를 써요.' },
+    { t: 'mc', q: '어순이 바른 문장은?', o: ['Morgen ich fahre mit dem Schiff.', 'Morgen fahre ich mit dem Schiff.', 'Morgen fahre mit dem Schiff ich.'], a: 1, e: '시간 표현이 첫 자리에 오면 동사가 두 번째, 주어가 그 뒤에 와요.' },
+    { t: 'fill', q: 'Die Sonne ___. (scheinen)', a: ['scheint'], e: 'die Sonne는 3인칭 단수라서 동사에 -t가 붙어요.' },
+    { t: 'mc', q: '여자인 Yuna가 엽서 끝에 쓰는 말은?', o: ['Dein Yuna', 'Deine Yuna', 'Deiner Yuna'], a: 1, e: '쓰는 사람이 여자이면 Deine, 남자이면 Dein을 써요.' },
+    { t: 'fix', q: 'Am Sonntag ich komme zurück.', a: ['Am Sonntag komme ich zurück.'], e: 'Am Sonntag이 첫 자리라 동사 komme가 두 번째 자리에 와요. zurück은 문장 끝이에요.' },
+    { t: 'fill', q: 'Ich ___ jeden Tag Fisch. (essen)', a: ['esse'], e: 'ich와 함께 쓰는 essen은 esse예요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie machen Urlaub in Hamburg. Schreiben Sie eine Postkarte an Ihren Freund Paul.',
+    punkte: ['Wie ist das Wetter?', 'Was machen Sie in Hamburg?', 'Wann kommen Sie zurück?'],
+    close: 'Schreiben Sie 30–50 Wörter. Schreiben Sie zu allen drei Punkten.',
+    ko: {
+      lead: '함부르크에서 휴가를 보내고 있어요. 친구 파울에게 엽서를 쓰세요.',
+      punkte: ['날씨가 어떤가요?', '함부르크에서 무엇을 하나요?', '언제 돌아가나요?'],
+      close: '30–50단어로 쓰세요. 세 가지 내용을 모두 쓰세요.'
+    }
+  },
+  check: ['Lieber Paul, 또는 Hallo Paul,로 시작했어요.', '날씨를 썼어요.', '하는 일을 두 가지 이상 썼어요.', '돌아가는 날을 썼어요.', '시간 표현 뒤에 동사를 바로 썼어요.', '끝인사와 내 이름을 썼어요.'],
+  muster: {
+    de: [
+      'Lieber Paul,',
+      'viele Grüße aus Hamburg! Ich bin seit Montag hier. Das Wetter ist schön, die Sonne scheint. Ich gehe viel spazieren und esse jeden Tag Fisch. Morgen fahre ich mit dem Schiff. Am Sonntag komme ich zurück.',
+      'Bis bald!\nDeine Yuna'
+    ],
+    ko: [
+      '파울에게,',
+      '함부르크에서 인사를 보내요! 월요일부터 여기 있어요. 날씨가 좋고 해가 나요. 산책을 많이 하고 매일 생선을 먹어요. 내일은 배를 타요. 일요일에 돌아가요.',
+      '곧 만나요!\n유나가'
+    ],
+    notes: [
+      { de: 'viele Grüße aus Hamburg!', ko: '부르는 말 다음 줄이라 소문자로 시작해요. 엽서에서 가장 많이 쓰는 첫 문장이에요.' },
+      { de: 'Ich bin seit Montag hier.', ko: 'seit + 시점은 「~부터 지금까지」예요. 현재형과 함께 써요.' },
+      { de: 'Ich gehe viel spazieren und esse jeden Tag Fisch.', ko: '주어가 같으면 und 뒤에서 ich를 다시 쓰지 않아도 돼요.' },
+      { de: 'Am Sonntag komme ich zurück.', ko: 'zurückkommen은 분리동사예요. zurück이 문장 끝으로 가요.' }
+    ]
+  }
+},
+{
+  id: 'a1-08', level: 'A1', no: 8,
+  title: 'Wann kommst du an?', titleKo: '놀러 오는 친구에게 메시지 쓰기',
+  type: 'Kurznachricht', typeKo: '짧은 메시지',
+  exam: 'Goethe-Zertifikat A1 쓰기 Teil 2와 같은 유형',
+  time: 10, words: [30, 50],
+  intro: '주말에 나를 찾아오는 친구에게 메시지를 써요. 도착 시간을 묻고, 어디에서 만나는지와 함께 무엇을 할지 알려요.',
+  goals: ['ankommen, abholen 같은 분리동사를 바르게 써요', 'W-질문과 Ja/Nein 질문을 구별해 써요', 'können wir …로 함께 할 일을 제안해요'],
+  aufbau: [
+    { de: 'Anrede', ko: '부르는 말', ex: 'Hallo Jan,' },
+    { de: 'Freude', ko: '기쁜 마음', ex: 'ich freue mich sehr auf deinen Besuch!' },
+    { de: 'Frage nach der Ankunft', ko: '도착 시간 묻기', ex: 'Wann kommst du am Samstag an?' },
+    { de: 'Treffpunkt', ko: '만나는 곳', ex: 'Ich hole dich am Bahnhof ab.' },
+    { de: 'Programm', ko: '함께 할 일', ex: 'Am Nachmittag können wir in die Stadt gehen.' },
+    { de: 'Gruß und Name', ko: '끝인사와 이름', ex: 'Bis Samstag! / Jiho' }
+  ],
+  tipps: [
+    '분리동사는 앞부분이 문장 끝으로 가요. ankommen → Wann kommst du an? / abholen → Ich hole dich ab.',
+    'W-질문은 의문사 다음에 동사, Ja/Nein 질문은 동사로 시작해요. Wann kommst du? / Isst du gern scharf?',
+    '어디에서 만나는지는 am Bahnhof, am Flughafen, vor dem Kino처럼 써요.',
+    '끝인사에 만나는 날을 넣으면 자연스러워요. Bis Samstag!'
+  ],
+  fehler: [
+    { f: 'Wann ankommst du?', r: 'Wann kommst du an?', e: 'ankommen은 분리동사예요. an이 문장 끝으로 가요.' },
+    { f: 'Ich abhole dich am Bahnhof.', r: 'Ich hole dich am Bahnhof ab.', e: 'abholen도 분리동사예요. ab이 문장 끝으로 가요.' },
+    { f: 'Ich hole du ab.', r: 'Ich hole dich ab.', e: 'abholen의 목적어는 4격이에요. du의 4격은 dich예요.' },
+    { f: 'Wir können gehen in die Stadt.', r: 'Wir können in die Stadt gehen.', e: 'können과 함께 쓰는 원형 gehen은 문장 맨 끝에 와요.' }
+  ],
+  redemittel: [
+    { g: '기쁜 마음 말하기', items: [['Ich freue mich sehr auf deinen Besuch!', '와 준다니 정말 기대돼요!'], ['Schön, dass du kommst!', '온다니 좋아요!'], ['Ich freue mich auf Samstag.', '토요일이 기대돼요.']] },
+    { g: '도착 묻기', items: [['Wann kommst du an?', '언제 도착해요?'], ['Um wie viel Uhr kommst du an?', '몇 시에 도착해요?'], ['Kommst du mit dem Zug oder mit dem Bus?', '기차로 와요, 버스로 와요?']] },
+    { g: '만나는 곳 말하기', items: [['Ich hole dich am Bahnhof ab.', '역으로 데리러 갈게요.'], ['Wir treffen uns am Flughafen.', '공항에서 만나요.'], ['Ich warte vor dem Bahnhof.', '역 앞에서 기다릴게요.']] },
+    { g: '함께 할 일 말하기', items: [['Am Nachmittag können wir in die Stadt gehen.', '오후에 시내에 갈 수 있어요.'], ['Am Abend koche ich koreanisch.', '저녁에는 제가 한국 음식을 해요.'], ['Am Sonntag können wir ins Museum gehen.', '일요일에는 박물관에 갈 수 있어요.'], ['Isst du gern scharf?', '매운 음식 좋아해요?']] },
+    { g: '끝인사', items: [['Bis Samstag!', '토요일에 만나요!'], ['Bis bald!', '곧 만나요!'], ['Viele Grüße', '안부를 전해요']] }
+  ],
+  uebung: [
+    { t: 'fix', q: 'Wann ankommst du am Samstag?', a: ['Wann kommst du am Samstag an?'], e: '분리동사 ankommen의 an은 문장 끝으로 가요.' },
+    { t: 'fill', q: 'Ich hole ___ am Bahnhof ab. (du)', a: ['dich'], e: 'du의 4격은 dich예요.' },
+    { t: 'mc', q: '어순이 바른 문장은?', o: ['Wir können in die Stadt gehen.', 'Wir können gehen in die Stadt.', 'Wir in die Stadt gehen können.'], a: 0, e: '화법조동사가 두 번째 자리, 원형은 맨 끝이에요.' },
+    { t: 'mc', q: 'Ja/Nein 질문으로 바른 것은?', o: ['Du isst gern scharf?', 'Isst du gern scharf?', 'Gern isst du scharf?'], a: 1, e: 'Ja/Nein 질문은 동사로 시작해요.' },
+    { t: 'fill', q: 'Ich freue mich ___ deinen Besuch.', a: ['auf'], e: '앞으로 올 일을 기대할 때는 sich freuen auf + 4격을 써요.' },
+    { t: 'fill', q: 'Am Abend ___ ich koreanisch. (kochen)', a: ['koche'], e: 'Am Abend이 첫 자리라 동사 koche가 두 번째 자리에 와요.' }
+  ],
+  aufgabe: {
+    lead: 'Ihr Freund Jan besucht Sie am Wochenende. Schreiben Sie Jan eine Nachricht.',
+    punkte: ['Fragen Sie: Wann kommt er an?', 'Wo treffen Sie Jan?', 'Was möchten Sie zusammen machen?'],
+    close: 'Schreiben Sie 30–50 Wörter. Schreiben Sie zu allen drei Punkten.',
+    ko: {
+      lead: '친구 얀이 주말에 찾아와요. 얀에게 메시지를 쓰세요.',
+      punkte: ['언제 도착하는지 물어보세요.', '얀을 어디에서 만나나요?', '함께 무엇을 하고 싶나요?'],
+      close: '30–50단어로 쓰세요. 세 가지 내용을 모두 쓰세요.'
+    }
+  },
+  check: ['Hallo Jan, 또는 Lieber Jan,으로 시작했어요.', '도착 시간을 질문으로 물었어요.', '만나는 곳을 썼어요.', '함께 할 일을 한 가지 이상 썼어요.', '분리동사의 앞부분을 문장 끝에 썼어요.', '끝인사와 내 이름을 썼어요.'],
+  muster: {
+    de: [
+      'Hallo Jan,',
+      'ich freue mich sehr auf deinen Besuch! Wann kommst du am Samstag an? Ich hole dich am Bahnhof ab. Am Nachmittag können wir in die Stadt gehen. Am Abend koche ich koreanisch. Isst du gern scharf?',
+      'Bis Samstag!\nJiho'
+    ],
+    ko: [
+      '얀, 안녕하세요.',
+      '와 준다니 정말 기대돼요! 토요일에 언제 도착해요? 역으로 데리러 갈게요. 오후에는 시내에 갈 수 있어요. 저녁에는 제가 한국 음식을 해요. 매운 음식 좋아해요?',
+      '토요일에 만나요!\n지호'
+    ],
+    notes: [
+      { de: 'ich freue mich sehr auf deinen Besuch!', ko: 'sich freuen auf + 4격이에요. der Besuch가 남성이라 deinen이 돼요.' },
+      { de: 'Wann kommst du am Samstag an?', ko: '분리동사 ankommen의 an이 문장 맨 끝에 있어요.' },
+      { de: 'Ich hole dich am Bahnhof ab.', ko: 'abholen도 분리동사예요. 목적어 dich는 4격이에요.' },
+      { de: 'Am Nachmittag können wir in die Stadt gehen.', ko: '시간 표현이 첫 자리, können이 두 번째, 원형 gehen이 맨 끝이에요.' }
+    ]
+  }
+},
+{
+  id: 'a1-09', level: 'A1', no: 9,
+  title: 'Mein Tag', titleKo: '나의 하루 쓰기',
+  type: 'Tagesablauf', typeKo: '하루 일과',
+  exam: '수업에서 쓰는 하루 일과 글 · Goethe-Zertifikat A1 쓰기 Teil 2보다 조금 긴 분량',
+  time: 15, words: [35, 55],
+  intro: '아침부터 밤까지 나의 하루를 순서대로 써요. 시각과 하루의 때를 나타내는 말, 그리고 분리동사를 익혀요.',
+  goals: ['um sieben Uhr, am Nachmittag처럼 시각과 때를 말해요', 'aufstehen, einkaufen, fernsehen 같은 분리동사를 바르게 써요', 'Dann, Danach로 문장을 순서대로 이어요'],
+  aufbau: [
+    { de: 'Titel', ko: '제목', ex: 'Mein Tag' },
+    { de: 'Morgen', ko: '아침', ex: 'Ich stehe um sieben Uhr auf.' },
+    { de: 'Vormittag', ko: '오전', ex: 'Der Kurs beginnt um neun Uhr.' },
+    { de: 'Nachmittag', ko: '오후', ex: 'Am Nachmittag kaufe ich ein oder lerne zu Hause.' },
+    { de: 'Abend', ko: '저녁', ex: 'Am Abend koche ich und sehe fern.' },
+    { de: 'Nacht', ko: '밤', ex: 'Um elf Uhr gehe ich ins Bett.' }
+  ],
+  tipps: [
+    '모든 문장을 Ich로 시작하지 마세요. Dann, Am Abend, Um elf Uhr로 시작하면 글이 자연스러워요.',
+    '시각은 um, 하루의 때는 am이에요. um sieben Uhr / am Morgen, am Nachmittag, am Abend. 밤만 in der Nacht예요.',
+    '분리동사는 앞부분을 문장 끝에 써요. Ich stehe um sieben Uhr auf.',
+    '「집에서」는 zu Hause, 「집으로」는 nach Hause예요.'
+  ],
+  fehler: [
+    { f: 'Ich aufstehe um sieben Uhr.', r: 'Ich stehe um sieben Uhr auf.', e: 'aufstehen은 분리동사예요. auf가 문장 끝으로 가요.' },
+    { f: 'Dann ich frühstücke.', r: 'Dann frühstücke ich.', e: 'Dann이 첫 자리에 오면 동사가 두 번째 자리에 와요.' },
+    { f: 'Ich lerne nach Hause.', r: 'Ich lerne zu Hause.', e: '「집에서」는 zu Hause예요. nach Hause는 「집으로」예요.' },
+    { f: 'Ich sehe fern am Abend.', r: 'Am Abend sehe ich fern.', e: '분리동사의 앞부분 fern은 문장 맨 끝에 와요.' }
+  ],
+  redemittel: [
+    { g: '아침', items: [['Ich stehe um sieben Uhr auf.', '7시에 일어나요.'], ['Dann frühstücke ich.', '그다음에 아침을 먹어요.'], ['Ich trinke Kaffee und esse Brot.', '커피를 마시고 빵을 먹어요.']] },
+    { g: '오전', items: [['Ich fahre mit dem Bus zum Deutschkurs.', '버스를 타고 독일어 수업에 가요.'], ['Der Kurs beginnt um neun Uhr.', '수업은 9시에 시작해요.'], ['Ich arbeite von neun bis fünf Uhr.', '9시부터 5시까지 일해요.']] },
+    { g: '오후', items: [['Am Nachmittag kaufe ich ein.', '오후에 장을 봐요.'], ['Ich lerne zu Hause.', '집에서 공부해요.'], ['Danach treffe ich Freunde.', '그 뒤에 친구들을 만나요.']] },
+    { g: '저녁과 밤', items: [['Am Abend koche ich.', '저녁에 요리해요.'], ['Ich sehe fern.', '텔레비전을 봐요.'], ['Um elf Uhr gehe ich ins Bett.', '11시에 자러 가요.']] }
+  ],
+  uebung: [
+    { t: 'fix', q: 'Ich aufstehe um sieben Uhr.', a: ['Ich stehe um sieben Uhr auf.'], e: '분리동사 aufstehen의 auf는 문장 끝으로 가요.' },
+    { t: 'fill', q: 'Der Kurs beginnt ___ neun Uhr.', a: ['um'], e: '시각 앞에는 um을 써요.' },
+    { t: 'fill', q: '___ Nachmittag kaufe ich ein.', a: ['Am'], e: '하루의 때 앞에는 am을 써요. 문장 처음이라 대문자로 써요.' },
+    { t: 'mc', q: '「집에서 공부해요」로 알맞은 문장은?', o: ['Ich lerne nach Hause.', 'Ich lerne zu Hause.', 'Ich lerne im Hause.'], a: 1, e: '「집에서」는 zu Hause예요.' },
+    { t: 'mc', q: '어순이 바른 문장은?', o: ['Dann ich frühstücke.', 'Dann frühstücke ich.', 'Ich dann frühstücke.'], a: 1, e: 'Dann이 첫 자리, 동사가 두 번째 자리예요.' },
+    { t: 'fill', q: 'Am Abend sehe ich ___. (fernsehen)', a: ['fern'], e: 'fernsehen은 분리동사예요. fern이 문장 끝으로 가요.' }
+  ],
+  aufgabe: {
+    lead: 'Ihre Lehrerin möchte wissen: Wie ist Ihr Tag? Schreiben Sie einen kurzen Text für den Deutschkurs.',
+    punkte: ['Wann stehen Sie auf?', 'Was machen Sie am Vormittag und am Nachmittag?', 'Was machen Sie am Abend?'],
+    close: 'Schreiben Sie 35–55 Wörter. Schreiben Sie zu allen drei Punkten.',
+    ko: {
+      lead: '선생님이 여러분의 하루가 어떤지 알고 싶어 해요. 독일어 수업에 낼 짧은 글을 쓰세요.',
+      punkte: ['언제 일어나나요?', '오전과 오후에 무엇을 하나요?', '저녁에 무엇을 하나요?'],
+      close: '35–55단어로 쓰세요. 세 가지 내용을 모두 쓰세요.'
+    }
+  },
+  check: ['일어나는 시각을 썼어요.', '오전과 오후에 하는 일을 썼어요.', '저녁에 하는 일을 썼어요.', '분리동사의 앞부분을 문장 끝에 썼어요.', 'Ich가 아닌 말로 시작하는 문장이 두 개 이상 있어요.', '시각에는 um, 하루의 때에는 am을 썼어요.'],
+  muster: {
+    de: [
+      'Mein Tag',
+      'Ich stehe um sieben Uhr auf. Dann frühstücke ich und fahre mit dem Bus zum Deutschkurs. Der Kurs beginnt um neun Uhr. Am Nachmittag kaufe ich ein oder lerne zu Hause. Am Abend koche ich und sehe fern. Um elf Uhr gehe ich ins Bett.'
+    ],
+    ko: [
+      '나의 하루',
+      '저는 7시에 일어나요. 그다음에 아침을 먹고 버스를 타고 독일어 수업에 가요. 수업은 9시에 시작해요. 오후에는 장을 보거나 집에서 공부해요. 저녁에는 요리하고 텔레비전을 봐요. 11시에 자러 가요.'
+    ],
+    notes: [
+      { de: 'Ich stehe um sieben Uhr auf.', ko: '분리동사 aufstehen이에요. stehe는 두 번째 자리, auf는 맨 끝이에요.' },
+      { de: 'Dann frühstücke ich und fahre mit dem Bus zum Deutschkurs.', ko: 'Dann 뒤에 동사가 바로 와요. frühstücken은 분리동사가 아니에요.' },
+      { de: 'Am Nachmittag kaufe ich ein oder lerne zu Hause.', ko: 'einkaufen은 분리동사예요. oder로 두 가지 일을 이었어요.' },
+      { de: 'Um elf Uhr gehe ich ins Bett.', ko: 'ins Bett gehen은 「자러 가다」예요. ins = in das.' }
+    ]
+  }
+},
+{
+  id: 'a1-10', level: 'A1', no: 10,
+  title: 'Eine E-Mail an die Touristeninformation', titleKo: '관광 안내소에 정보 부탁하기',
+  type: 'Formelle E-Mail', typeKo: '격식 이메일',
+  exam: 'Goethe-Zertifikat A1 쓰기 Teil 2와 같은 유형',
+  time: 10, words: [25, 45],
+  intro: '여행 가려는 도시의 관광 안내소에 이메일을 써서 정보를 부탁해요. A1 시험에 자주 나오는 과제예요. Bitte schicken Sie mir …를 익혀요.',
+  goals: ['언제 어디에 가려는지 ich möchte …로 말해요', 'Bitte schicken Sie mir …로 정중하게 부탁해요', 'Informationen über + 4격을 바르게 써요'],
+  aufbau: [
+    { de: 'Anrede', ko: '부르는 말', ex: 'Sehr geehrte Damen und Herren,' },
+    { de: 'Plan', ko: '내 계획', ex: 'ich möchte im Mai Dresden besuchen.' },
+    { de: 'Bitte um Informationen', ko: '정보 부탁', ex: 'Bitte schicken Sie mir Informationen über die Museen.' },
+    { de: 'Frage nach Hotels', ko: '호텔 묻기', ex: 'Haben Sie Adressen von günstigen Hotels?' },
+    { de: 'Dank', ko: '감사', ex: 'Vielen Dank!' },
+    { de: 'Gruß und Name', ko: '끝인사와 이름', ex: 'Mit freundlichen Grüßen / Minho Lee' }
+  ],
+  tipps: [
+    '달 이름 앞에는 im을 써요. im Mai, im August',
+    'Bitte로 시작하는 부탁은 동사가 바로 뒤에 와요. Bitte schicken Sie mir …',
+    'Informationen은 언제나 복수로 써요. Informationen über die Stadt',
+    '부탁을 한 뒤에는 Vielen Dank!로 미리 고마움을 말하면 좋아요.'
+  ],
+  fehler: [
+    { f: 'Ich möchte am Mai Dresden besuchen.', r: 'Ich möchte im Mai Dresden besuchen.', e: '달 이름 앞에는 im을 써요.' },
+    { f: 'Bitte Sie schicken mir Informationen.', r: 'Bitte schicken Sie mir Informationen.', e: 'Sie에게 하는 부탁은 동사가 Sie 앞에 와요.' },
+    { f: 'Bitte schicken Sie mich Informationen.', r: 'Bitte schicken Sie mir Informationen.', e: '「나에게」는 3격 mir예요.' },
+    { f: 'Ich möchte besuchen Dresden.', r: 'Ich möchte Dresden besuchen.', e: 'möchte와 함께 쓰는 원형 besuchen은 문장 맨 끝에 와요.' }
+  ],
+  redemittel: [
+    { g: '계획 말하기', items: [['Ich möchte im Mai Dresden besuchen.', '5월에 드레스덴에 가고 싶어요.'], ['Ich komme im August nach Wien.', '8월에 빈에 가요.'], ['Ich bleibe drei Tage.', '사흘 동안 있어요.']] },
+    { g: '정보 부탁하기', items: [['Bitte schicken Sie mir Informationen über die Museen.', '박물관 정보를 보내 주세요.'], ['Was kann man in Dresden sehen?', '드레스덴에서 무엇을 볼 수 있나요?'], ['Haben Sie einen Stadtplan?', '시내 지도가 있나요?'], ['Gibt es im Mai Konzerte?', '5월에 음악회가 있나요?']] },
+    { g: '호텔 묻기', items: [['Ich brauche auch ein Hotel.', '호텔도 필요해요.'], ['Haben Sie Adressen von günstigen Hotels?', '싼 호텔 주소가 있나요?'], ['Was kostet ein Zimmer?', '방 하나에 얼마예요?']] },
+    { g: '감사와 끝인사', items: [['Vielen Dank!', '감사합니다!'], ['Vielen Dank für Ihre Hilfe.', '도와주셔서 감사합니다.'], ['Mit freundlichen Grüßen', '안녕히 계세요 (격식 있는 끝인사)']] }
+  ],
+  uebung: [
+    { t: 'fill', q: 'Ich möchte ___ Mai Dresden besuchen.', a: ['im'], e: '달 이름 앞에는 im을 써요.' },
+    { t: 'fix', q: 'Bitte Sie schicken mir Informationen.', a: ['Bitte schicken Sie mir Informationen.'], e: 'Sie에게 하는 부탁은 동사가 먼저, Sie가 그 뒤에 와요.' },
+    { t: 'mc', q: '알맞은 것은? Bitte schicken Sie ___ einen Stadtplan.', o: ['ich', 'mich', 'mir'], a: 2, e: '「나에게 보내다」는 3격 mir를 써요.' },
+    { t: 'mc', q: '어순이 바른 문장은?', o: ['Ich möchte besuchen Dresden.', 'Ich möchte Dresden besuchen.', 'Ich Dresden möchte besuchen.'], a: 1, e: 'möchte가 두 번째 자리, 원형 besuchen이 맨 끝이에요.' },
+    { t: 'fill', q: 'Was ___ man in Dresden sehen? (können)', a: ['kann'], e: 'man과 함께 쓰는 können은 kann이에요.' },
+    { t: 'fill', q: 'Vielen Dank ___ Ihre Hilfe.', a: ['für'], e: '고마운 이유는 danken für, Dank für로 말해요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie möchten im Mai Dresden besuchen. Schreiben Sie eine E-Mail an die Touristeninformation in Dresden.',
+    punkte: ['Warum schreiben Sie?', 'Bitten Sie um Informationen über Museen.', 'Fragen Sie nach Hoteladressen.'],
+    close: 'Schreiben Sie 25–45 Wörter. Schreiben Sie zu allen drei Punkten.',
+    ko: {
+      lead: '5월에 드레스덴에 가고 싶어요. 드레스덴 관광 안내소에 이메일을 쓰세요.',
+      punkte: ['왜 메일을 쓰나요?', '박물관 정보를 부탁하세요.', '호텔 주소를 물어보세요.'],
+      close: '25–45단어로 쓰세요. 세 가지 내용을 모두 쓰세요.'
+    }
+  },
+  check: ['Sehr geehrte Damen und Herren,으로 시작했어요.', '언제 드레스덴에 가는지 썼어요.', '박물관 정보를 부탁했어요.', '호텔 주소를 물었어요.', '처음부터 끝까지 Sie로 썼어요.', 'Mit freundlichen Grüßen과 내 이름으로 끝냈어요.'],
+  muster: {
+    de: [
+      'Sehr geehrte Damen und Herren,',
+      'ich möchte im Mai Dresden besuchen. Was kann man in Dresden sehen? Bitte schicken Sie mir Informationen über die Museen. Ich brauche auch ein Hotel. Haben Sie Adressen von günstigen Hotels? Vielen Dank!',
+      'Mit freundlichen Grüßen\nMinho Lee'
+    ],
+    ko: [
+      '담당자님께,',
+      '5월에 드레스덴에 가고 싶어요. 드레스덴에서 무엇을 볼 수 있나요? 박물관 정보를 보내 주세요. 호텔도 필요해요. 싼 호텔 주소가 있나요? 감사합니다!',
+      '안녕히 계세요.\n이민호'
+    ],
+    notes: [
+      { de: 'ich möchte im Mai Dresden besuchen.', ko: '첫 문장이 「왜 쓰나요?」의 답이에요. möchte는 두 번째, besuchen은 맨 끝이에요.' },
+      { de: 'Was kann man in Dresden sehen?', ko: 'man은 「사람들, 누구나」예요. 동사는 3인칭 단수로 써요.' },
+      { de: 'Bitte schicken Sie mir Informationen über die Museen.', ko: 'Sie에게 하는 부탁이에요. über 뒤는 4격이에요.' },
+      { de: 'Haben Sie Adressen von günstigen Hotels?', ko: 'von 뒤는 3격이에요. 복수 3격이라 형용사 어미가 -en이에요.' }
+    ]
+  }
+},
+
 /* ═══════════════════════ A2 ═══════════════════════ */
 {
   id: 'a2-01', level: 'A2', no: 1,
@@ -761,6 +1122,380 @@ window.SCHREIB_DATA = [
       { de: 'Wir treffen uns um 9 Uhr am Bahnhof', ko: '만나는 장소는 위치라서 3격 am Bahnhof예요.' },
       { de: 'Bringt bitte Badesachen mit!', ko: 'ihr에게 하는 명령문이에요. mitbringen의 mit은 끝으로 가요.' },
       { de: 'Ich bringe Würstchen und Getränke mit.', ko: '내가 무엇을 가져가는지도 알리면 준비물이 겹치지 않아요.' }
+    ]
+  }
+},
+
+{
+  id: 'a2-06', level: 'A2', no: 6,
+  title: 'Ich komme später!', titleKo: '늦는다고 알리는 문자 쓰기',
+  type: 'SMS', typeKo: '문자 메시지',
+  exam: 'Goethe-Zertifikat A2 쓰기 Teil 1(SMS)과 같은 유형',
+  time: 10, words: [20, 30],
+  intro: '약속에 늦는다고 친구에게 알리는 문자를 써요. 20–30단어 안에 사과, 이유, 새 시간이나 장소를 모두 담는 연습을 해요.',
+  goals: ['짧은 글 안에 요구 사항 세 가지를 모두 써요', 'weil 문장에서 동사를 끝에 둬요', 'zu spät, Verspätung, erst um … 같은 표현을 익혀요'],
+  aufbau: [
+    { de: 'Anrede', ko: '부르는 말', ex: 'Hallo Anna,' },
+    { de: 'Entschuldigung', ko: '사과', ex: 'entschuldige, ich komme leider zu spät,' },
+    { de: 'Grund', ko: '이유', ex: 'weil mein Bus Verspätung hat.' },
+    { de: 'Neue Zeit', ko: '새 시간', ex: 'Ich bin erst um halb acht da.' },
+    { de: 'Neuer Ort', ko: '새 장소', ex: 'Wartest du im Café neben dem Kino?' },
+    { de: 'Gruß und Name', ko: '끝인사와 이름', ex: 'Bis gleich / Dami' }
+  ],
+  tipps: [
+    '문자는 20–30단어예요. 요구 사항 하나에 한 문장이면 충분해요.',
+    'weil 다음에는 동사가 맨 끝에 와요. …, weil mein Bus Verspätung hat.',
+    '「늦게 가요」는 Ich komme zu spät. 또는 Ich komme später.로 써요. spät만 쓰면 뜻이 달라져요.',
+    '곧 만날 사람에게는 Bis gleich! 또는 Bis später!로 끝내요.'
+  ],
+  fehler: [
+    { f: 'Ich komme zu spät, weil mein Bus hat Verspätung.', r: 'Ich komme zu spät, weil mein Bus Verspätung hat.', e: 'weil 문장에서는 동사 hat이 맨 끝에 와요.' },
+    { f: 'Ich bin zu spät kommen.', r: 'Ich komme zu spät.', e: '「늦게 가요」는 현재형 Ich komme zu spät.로 써요.' },
+    { f: 'Ich bin um halb acht dort erst.', r: 'Ich bin erst um halb acht da.', e: 'erst(~에야)는 시각 앞에 써요.' },
+    { f: 'Wartest du in Café?', r: 'Wartest du im Café?', e: 'das Café이므로 in dem을 줄인 im을 써요.' }
+  ],
+  redemittel: [
+    { g: '사과하기', items: [['Entschuldige, ich komme leider zu spät.', '미안해요, 아쉽지만 늦어요.'], ['Tut mir leid, ich schaffe es nicht pünktlich.', '미안해요, 제시간에 못 가요.'], ['Sei bitte nicht böse!', '화내지 말아요!']] },
+    { g: '이유 말하기', items: [['Mein Bus hat Verspätung.', '버스가 늦어요.'], ['Ich habe die Bahn verpasst.', '전철을 놓쳤어요.'], ['Ich muss noch länger arbeiten.', '일을 더 해야 해요.'], ['Ich stehe im Stau.', '길이 막혀요.']] },
+    { g: '새 시간 말하기', items: [['Ich bin erst um halb acht da.', '7시 반에야 도착해요.'], ['Ich komme 20 Minuten später.', '20분 늦게 가요.'], ['Können wir uns um acht Uhr treffen?', '8시에 만날 수 있을까요?']] },
+    { g: '새 장소 말하기', items: [['Wartest du im Café neben dem Kino?', '영화관 옆 카페에서 기다려 줄래요?'], ['Treffen wir uns vor dem Eingang?', '입구 앞에서 만날까요?'], ['Geh schon rein, ich komme nach.', '먼저 들어가요, 뒤따라 갈게요.']] },
+    { g: '끝인사', items: [['Bis gleich!', '곧 만나요!'], ['Bis später!', '나중에 만나요!']] }
+  ],
+  uebung: [
+    { t: 'fix', q: 'Ich komme zu spät, weil mein Bus hat Verspätung.', a: ['Ich komme zu spät, weil mein Bus Verspätung hat.'], e: 'weil 문장에서는 동사가 맨 끝에 와요.' },
+    { t: 'fill', q: 'Ich habe die Bahn ___. (verpassen)', a: ['verpasst'], e: 'verpassen의 과거분사는 verpasst예요. ver-로 시작하는 동사에는 ge-가 붙지 않아요.' },
+    { t: 'mc', q: '「7시 반에야 도착해요」로 알맞은 문장은?', o: ['Ich bin nur um halb acht da.', 'Ich bin erst um halb acht da.', 'Ich bin schon um halb acht da.'], a: 1, e: '예상보다 늦은 시각은 erst로 말해요. schon은 「벌써」예요.' },
+    { t: 'fill', q: 'Wartest du ___ Café neben dem Kino?', a: ['im'], e: 'das Café, 어디에서 기다리는지이므로 in dem = im이에요.' },
+    { t: 'mc', q: '곧 만날 친구에게 보내는 문자의 끝인사로 알맞은 것은?', o: ['Mit freundlichen Grüßen', 'Bis gleich!', 'Hochachtungsvoll'], a: 1, e: '곧 만날 때는 Bis gleich!가 자연스러워요.' },
+    { t: 'fill', q: 'Können wir ___ um acht Uhr treffen?', a: ['uns'], e: 'sich treffen은 재귀동사예요. wir의 재귀대명사는 uns예요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie sind um 19 Uhr mit Ihrer Freundin Anna vor dem Kino verabredet, aber Sie kommen zu spät. Schreiben Sie Anna eine SMS.',
+    punkte: ['Entschuldigen Sie sich, dass Sie zu spät kommen.', 'Schreiben Sie, warum.', 'Nennen Sie eine neue Uhrzeit oder einen neuen Ort für das Treffen.'],
+    close: 'Schreiben Sie 20–30 Wörter. Schreiben Sie zu allen drei Punkten.',
+    ko: {
+      lead: '저녁 7시에 영화관 앞에서 친구 안나와 만나기로 했는데 늦어요. 안나에게 문자를 쓰세요.',
+      punkte: ['늦는 것을 사과하세요.', '왜 늦는지 쓰세요.', '만날 새 시간이나 새 장소를 알려 주세요.'],
+      close: '20–30단어로 쓰세요. 세 가지 내용을 모두 쓰세요.'
+    }
+  },
+  check: ['사과하는 말을 썼어요.', '늦는 이유를 썼어요.', '새 시간이나 새 장소를 썼어요.', 'weil 문장에서 동사가 맨 끝에 있어요.', '20–30단어로 썼어요.', '끝인사와 내 이름을 썼어요.'],
+  muster: {
+    de: [
+      'Hallo Anna,',
+      'entschuldige, ich komme leider zu spät, weil mein Bus Verspätung hat. Ich bin erst um halb acht da. Wartest du im Café neben dem Kino?',
+      'Bis gleich\nDami'
+    ],
+    ko: [
+      '안나, 안녕하세요.',
+      '미안해요, 버스가 늦어서 아쉽지만 늦어요. 7시 반에야 도착해요. 영화관 옆 카페에서 기다려 줄래요?',
+      '곧 만나요.\n다미'
+    ],
+    notes: [
+      { de: 'entschuldige, ich komme leider zu spät', ko: 'entschuldige는 du에게 하는 사과예요. Sie에게는 Entschuldigen Sie를 써요.' },
+      { de: '…, weil mein Bus Verspätung hat.', ko: 'weil 문장이라 동사 hat이 맨 끝이에요. weil 앞에는 쉼표를 찍어요.' },
+      { de: 'Ich bin erst um halb acht da.', ko: 'halb acht는 7시 반이에요. erst는 예상보다 늦다는 뜻을 더해요.' },
+      { de: 'Wartest du im Café neben dem Kino?', ko: '새 장소를 질문으로 제안했어요. neben + 3격(어디에)이에요.' }
+    ]
+  }
+},
+{
+  id: 'a2-07', level: 'A2', no: 7,
+  title: 'Antwort auf die Einladung der Chefin', titleKo: '상사의 초대에 답장하기',
+  type: 'Halbformelle E-Mail', typeKo: '반격식 이메일',
+  exam: 'Goethe-Zertifikat A2 쓰기 Teil 2와 같은 유형',
+  time: 15, words: [35, 50],
+  intro: '상사가 보낸 초대에 고맙다고 하고, 가겠다고 알리고, 궁금한 것을 묻는 이메일을 써요. Sie로 쓰는 A2 시험 Teil 2의 대표 과제예요.',
+  goals: ['Sehr geehrte Frau …로 시작하고 Sie로 써요', 'Vielen Dank für + 4격으로 고마움을 말해요', 'Darf ich …?, Soll ich …?로 정중하게 물어요'],
+  aufbau: [
+    { de: 'Anrede', ko: '부르는 말', ex: 'Sehr geehrte Frau Sommer,' },
+    { de: 'Dank', ko: '감사', ex: 'vielen Dank für die Einladung zum Sommerfest.' },
+    { de: 'Zusage', ko: '가겠다는 말', ex: 'Ich komme sehr gern.' },
+    { de: 'Frage', ko: '질문', ex: 'Darf ich meinen Mann mitbringen?' },
+    { de: 'Angebot', ko: '제안', ex: 'Soll ich einen Salat oder einen Kuchen machen?' },
+    { de: 'Gruß und Name', ko: '끝인사와 이름', ex: 'Mit freundlichen Grüßen / Hana Choi' }
+  ],
+  tipps: [
+    '상사에게는 이름을 알아도 Sie로 써요. Sehr geehrte Frau Sommer, / Sehr geehrter Herr Sommer,',
+    'Darf ich …?는 허락을, Soll ich …?는 상대가 원하는지를 묻는 말이에요.',
+    'mitbringen은 분리동사지만 dürfen, sollen과 함께 쓰면 문장 끝에 붙여 써요. Darf ich … mitbringen?',
+    'Teil 2는 30–40단어가 기준이에요. 요구 사항마다 한두 문장을 쓰세요.'
+  ],
+  fehler: [
+    { f: 'Sehr geehrte Herr Sommer,', r: 'Sehr geehrter Herr Sommer,', e: '남자에게는 geehrter, 여자에게는 geehrte예요.' },
+    { f: 'Vielen Dank für der Einladung.', r: 'Vielen Dank für die Einladung.', e: 'für 뒤는 4격이에요. die Einladung은 4격에서도 die예요.' },
+    { f: 'Darf ich mitbringen meinen Mann?', r: 'Darf ich meinen Mann mitbringen?', e: '화법조동사와 함께 쓰는 원형은 문장 맨 끝에 와요.' },
+    { f: 'Ich komme sehr gern zu Ihre Party.', r: 'Ich komme sehr gern zu Ihrer Party.', e: 'zu 뒤는 3격이에요. die Party의 3격은 Ihrer Party예요.' }
+  ],
+  redemittel: [
+    { g: '감사하기', items: [['Vielen Dank für die Einladung.', '초대해 주셔서 감사합니다.'], ['Ich habe mich sehr über Ihre Einladung gefreut.', '초대를 받고 무척 기뻤습니다.'], ['Das ist sehr nett von Ihnen.', '정말 친절하세요.']] },
+    { g: '가겠다고 말하기', items: [['Ich komme sehr gern.', '기꺼이 가겠습니다.'], ['Natürlich komme ich.', '물론 가겠습니다.'], ['Ich freue mich schon auf das Fest.', '벌써 잔치가 기대됩니다.']] },
+    { g: '허락 구하기', items: [['Darf ich meinen Mann mitbringen?', '남편을 데려가도 될까요?'], ['Darf ich meine Kinder mitbringen?', '아이들을 데려가도 될까요?'], ['Kann ich etwas später kommen?', '조금 늦게 가도 될까요?']] },
+    { g: '도움 제안하기', items: [['Soll ich einen Salat machen?', '샐러드를 만들어 갈까요?'], ['Ich möchte etwas zum Essen mitbringen.', '먹을 것을 가져가고 싶습니다.'], ['Kann ich Ihnen helfen?', '도와드릴까요?'], ['Brauchen Sie noch Getränke?', '음료가 더 필요하신가요?']] },
+    { g: '끝인사', items: [['Mit freundlichen Grüßen', '안녕히 계세요 (격식 있는 끝인사)'], ['Viele Grüße', '안부를 전합니다 (조금 편한 끝인사)']] }
+  ],
+  uebung: [
+    { t: 'mc', q: 'Herr Sommer에게 쓸 때 알맞은 부르는 말은?', o: ['Sehr geehrte Herr Sommer,', 'Sehr geehrter Herr Sommer,', 'Lieber Sommer,'], a: 1, e: '남자에게는 Sehr geehrter Herr + 성으로 써요.' },
+    { t: 'fill', q: 'Vielen Dank ___ die Einladung.', a: ['für'], e: '고마운 이유는 für + 4격으로 말해요.' },
+    { t: 'fix', q: 'Darf ich mitbringen meinen Mann?', a: ['Darf ich meinen Mann mitbringen?'], e: '원형 mitbringen은 문장 맨 끝에 와요.' },
+    { t: 'mc', q: '「샐러드를 만들어 갈까요?」로 알맞은 문장은?', o: ['Muss ich einen Salat machen?', 'Soll ich einen Salat machen?', 'Will ich einen Salat machen?'], a: 1, e: '상대가 원하는지 물을 때는 Soll ich …?를 써요.' },
+    { t: 'fill', q: 'Ich freue mich schon ___ das Fest.', a: ['auf'], e: '앞으로 올 일을 기대할 때는 sich freuen auf + 4격이에요.' },
+    { t: 'fill', q: 'Ich komme gern zu ___ Party. (Ihr)', a: ['Ihrer'], e: 'zu + 3격이에요. die Party의 3격이라 Ihrer가 돼요.' }
+  ],
+  aufgabe: {
+    lead: 'Ihre Chefin, Frau Sommer, macht ein Sommerfest in ihrem Garten und hat Sie eingeladen. Schreiben Sie Frau Sommer eine E-Mail.',
+    punkte: ['Bedanken Sie sich und schreiben Sie, dass Sie kommen.', 'Fragen Sie, ob Sie jemanden mitbringen dürfen.', 'Fragen Sie, was Sie mitbringen sollen.'],
+    close: 'Schreiben Sie 35–50 Wörter. Schreiben Sie zu allen drei Punkten.',
+    ko: {
+      lead: '상사인 좀머 씨가 정원에서 여름 잔치를 열고 여러분을 초대했어요. 좀머 씨에게 이메일을 쓰세요.',
+      punkte: ['고맙다고 하고, 가겠다고 쓰세요.', '누군가를 데려가도 되는지 물어보세요.', '무엇을 가져가면 좋을지 물어보세요.'],
+      close: '35–50단어로 쓰세요. 세 가지 내용을 모두 쓰세요.'
+    }
+  },
+  check: ['Sehr geehrte Frau Sommer,로 시작했어요.', '초대에 고맙다고 썼어요.', '가겠다고 썼어요.', '누군가를 데려가도 되는지 물었어요.', '무엇을 가져갈지 물었어요.', '처음부터 끝까지 Sie로 쓰고 Mit freundlichen Grüßen으로 끝냈어요.'],
+  muster: {
+    de: [
+      'Sehr geehrte Frau Sommer,',
+      'vielen Dank für die Einladung zum Sommerfest. Ich komme sehr gern. Darf ich meinen Mann mitbringen? Ich möchte auch etwas zum Essen mitbringen. Soll ich einen Salat oder einen Kuchen machen?',
+      'Mit freundlichen Grüßen\nHana Choi'
+    ],
+    ko: [
+      '좀머 씨께,',
+      '여름 잔치에 초대해 주셔서 감사합니다. 기꺼이 가겠습니다. 남편을 데려가도 될까요? 먹을 것도 가져가고 싶습니다. 샐러드를 만들어 갈까요, 케이크를 만들어 갈까요?',
+      '안녕히 계세요.\n최하나 드림'
+    ],
+    notes: [
+      { de: 'vielen Dank für die Einladung zum Sommerfest.', ko: 'für + 4격, zu + 3격이에요. zum = zu dem.' },
+      { de: 'Darf ich meinen Mann mitbringen?', ko: 'dürfen으로 허락을 구해요. 4격 목적어 meinen Mann, 원형은 맨 끝이에요.' },
+      { de: 'etwas zum Essen', ko: '「먹을 것」이에요. 동사를 명사로 쓰면 대문자로 시작하고 중성이에요.' },
+      { de: 'Soll ich einen Salat oder einen Kuchen machen?', ko: 'Soll ich …?로 상대가 원하는 것을 물었어요. 두 가지를 주면 답하기 쉬워요.' }
+    ]
+  }
+},
+{
+  id: 'a2-08', level: 'A2', no: 8,
+  title: 'Die Heizung ist kaputt', titleKo: '집주인에게 고장 알리기',
+  type: 'Halbformelle E-Mail', typeKo: '반격식 이메일',
+  exam: 'Goethe-Zertifikat A2 쓰기 Teil 2와 비슷한 유형 · 독일 생활에서 자주 쓰는 메일',
+  time: 15, words: [40, 60],
+  intro: '집에 고장 난 것이 있을 때 집주인에게 알리고 수리를 부탁하는 이메일을 써요. 무엇이, 언제부터, 어떻게 안 되는지를 정확하게 전해요.',
+  goals: ['funktioniert nicht, ist kaputt로 문제를 설명해요', 'seit + 3격으로 언제부터인지 말해요', 'Können Sie bitte …?로 수리를 부탁하고 내가 집에 있는 시간을 알려요'],
+  aufbau: [
+    { de: 'Anrede', ko: '부르는 말', ex: 'Sehr geehrter Herr Krause,' },
+    { de: 'Wer und wo', ko: '누구이고 어디에 사는지', ex: 'ich wohne in der Gartenstraße 12 im zweiten Stock.' },
+    { de: 'Problem', ko: '문제', ex: 'Seit Montag funktioniert meine Heizung nicht mehr.' },
+    { de: 'Bitte', ko: '부탁', ex: 'Können Sie bitte einen Handwerker schicken?' },
+    { de: 'Zeit', ko: '집에 있는 시간', ex: 'Ich bin diese Woche jeden Tag ab 16 Uhr zu Hause.' },
+    { de: 'Dank und Gruß', ko: '감사와 끝인사', ex: 'Vielen Dank für Ihre Hilfe. / Mit freundlichen Grüßen' }
+  ],
+  tipps: [
+    '집주인은 집이 여러 채일 수 있어요. 주소와 층을 먼저 써요.',
+    'seit 뒤는 3격이에요. seit Montag, seit einer Woche, seit drei Tagen',
+    '문제 때문에 무엇이 불편한지 한 문장 더 쓰면 급한 일인지 알 수 있어요. In der Wohnung ist es sehr kalt.',
+    '수리 기사가 올 수 있게 내가 집에 있는 시간을 알려 주세요. ab 16 Uhr, am Vormittag'
+  ],
+  fehler: [
+    { f: 'Seit Montag meine Heizung funktioniert nicht mehr.', r: 'Seit Montag funktioniert meine Heizung nicht mehr.', e: 'Seit Montag이 첫 자리에 오면 동사 funktioniert가 두 번째 자리에 와요.' },
+    { f: 'Seit eine Woche ist die Heizung kaputt.', r: 'Seit einer Woche ist die Heizung kaputt.', e: 'seit 뒤는 3격이에요. die Woche의 3격은 einer Woche예요.' },
+    { f: 'Ich wohne im zweite Stock.', r: 'Ich wohne im zweiten Stock.', e: 'im(in dem) 뒤의 형용사와 서수는 어미 -en을 가져요.' },
+    { f: 'Können Sie bitte schicken einen Handwerker?', r: 'Können Sie bitte einen Handwerker schicken?', e: '원형 schicken은 문장 맨 끝에 와요.' }
+  ],
+  redemittel: [
+    { g: '누구인지 말하기', items: [['Ich wohne in der Gartenstraße 12 im zweiten Stock.', '가르텐 거리 12번지 3층에 삽니다. (독일의 2층은 한국의 3층)'], ['Ich bin Ihre Mieterin. / Ich bin Ihr Mieter.', '세입자입니다.']] },
+    { g: '문제 말하기', items: [['Meine Heizung funktioniert nicht mehr.', '난방이 더는 안 됩니다.'], ['Die Waschmaschine ist kaputt.', '세탁기가 고장 났습니다.'], ['Aus dem Wasserhahn kommt kein warmes Wasser.', '수도꼭지에서 따뜻한 물이 안 나옵니다.'], ['Das Licht im Flur geht nicht.', '복도 불이 안 켜집니다.'], ['In der Wohnung ist es sehr kalt.', '집 안이 무척 춥습니다.']] },
+    { g: '언제부터인지 말하기', items: [['seit Montag', '월요일부터'], ['seit drei Tagen', '사흘 전부터'], ['seit einer Woche', '일주일 전부터']] },
+    { g: '부탁하기', items: [['Können Sie bitte einen Handwerker schicken?', '수리 기사를 보내 주실 수 있나요?'], ['Könnten Sie das bitte schnell reparieren lassen?', '빨리 수리하게 해 주실 수 있을까요?'], ['Ich bin jeden Tag ab 16 Uhr zu Hause.', '매일 오후 4시부터 집에 있습니다.']] },
+    { g: '감사와 끝인사', items: [['Vielen Dank für Ihre Hilfe.', '도와주셔서 감사합니다.'], ['Mit freundlichen Grüßen', '안녕히 계세요 (격식 있는 끝인사)']] }
+  ],
+  uebung: [
+    { t: 'fill', q: 'Seit ___ Woche ist die Heizung kaputt. (eine)', a: ['einer'], e: 'seit + 3격이에요. die Woche의 3격은 einer Woche예요.' },
+    { t: 'fill', q: 'Ich wohne im ___ Stock. (zweite)', a: ['zweiten'], e: 'im 뒤에서 서수는 어미 -en을 가져요.' },
+    { t: 'mc', q: '「난방이 더는 안 돼요」로 알맞은 문장은?', o: ['Die Heizung funktioniert nicht mehr.', 'Die Heizung funktioniert kein mehr.', 'Die Heizung funktioniert nicht noch.'], a: 0, e: '「더는 ~하지 않다」는 nicht mehr예요.' },
+    { t: 'fix', q: 'Können Sie bitte schicken einen Handwerker?', a: ['Können Sie bitte einen Handwerker schicken?'], e: '화법조동사와 함께 쓰는 원형은 문장 맨 끝에 와요.' },
+    { t: 'mc', q: '「오후 4시부터」로 알맞은 것은?', o: ['seit 16 Uhr', 'ab 16 Uhr', 'bis 16 Uhr'], a: 1, e: '앞으로의 시작 시점은 ab으로 말해요. seit는 과거에 시작해 지금까지 이어지는 일에 써요.' },
+    { t: 'fill', q: 'Aus dem Wasserhahn kommt ___ warmes Wasser.', a: ['kein'], e: '관사 없는 명사는 kein으로 부정해요. das Wasser라서 kein이에요.' }
+  ],
+  aufgabe: {
+    lead: 'Ihre Heizung funktioniert nicht. Schreiben Sie eine E-Mail an Ihren Vermieter, Herrn Krause.',
+    punkte: ['Was ist das Problem?', 'Seit wann haben Sie das Problem?', 'Worum bitten Sie? Wann sind Sie zu Hause?'],
+    close: 'Schreiben Sie 40–60 Wörter. Schreiben Sie zu allen drei Punkten.',
+    ko: {
+      lead: '난방이 안 돼요. 집주인 크라우제 씨에게 이메일을 쓰세요.',
+      punkte: ['무엇이 문제인가요?', '언제부터 그런가요?', '무엇을 부탁하나요? 언제 집에 있나요?'],
+      close: '40–60단어로 쓰세요. 세 가지 내용을 모두 쓰세요.'
+    }
+  },
+  check: ['Sehr geehrter Herr Krause,로 시작했어요.', '주소나 층을 썼어요.', '무엇이 안 되는지 썼어요.', '언제부터인지 seit로 썼어요.', '수리를 부탁하고 집에 있는 시간을 썼어요.', 'Mit freundlichen Grüßen과 내 이름으로 끝냈어요.'],
+  muster: {
+    de: [
+      'Sehr geehrter Herr Krause,',
+      'ich wohne in der Gartenstraße 12 im zweiten Stock. Seit Montag funktioniert meine Heizung nicht mehr und in der Wohnung ist es sehr kalt.',
+      'Können Sie bitte einen Handwerker schicken? Ich bin diese Woche jeden Tag ab 16 Uhr zu Hause. Vielen Dank für Ihre Hilfe.',
+      'Mit freundlichen Grüßen\nSeojun Park'
+    ],
+    ko: [
+      '크라우제 씨께,',
+      '저는 가르텐 거리 12번지 3층에 삽니다. 월요일부터 난방이 안 되어서 집 안이 무척 춥습니다.',
+      '수리 기사를 보내 주실 수 있나요? 이번 주에는 매일 오후 4시부터 집에 있습니다. 도와주셔서 감사합니다.',
+      '안녕히 계세요.\n박서준 드림'
+    ],
+    notes: [
+      { de: 'im zweiten Stock', ko: '독일에서는 1층이 Erdgeschoss라서 zweiter Stock은 한국식으로 3층이에요.' },
+      { de: 'Seit Montag funktioniert meine Heizung nicht mehr', ko: 'Seit Montag이 첫 자리라 동사가 두 번째예요. 지금도 이어지는 일이라 현재형으로 써요.' },
+      { de: '… und in der Wohnung ist es sehr kalt.', ko: '문제 때문에 생긴 불편을 덧붙였어요. 급한 일이라는 것이 전해져요.' },
+      { de: 'Können Sie bitte einen Handwerker schicken?', ko: 'Können Sie bitte …?는 정중한 부탁이에요. 원형 schicken이 맨 끝이에요.' },
+      { de: 'jeden Tag ab 16 Uhr', ko: 'ab + 시각은 「~부터」예요. 수리 기사가 올 시간을 정하기 쉬워져요.' }
+    ]
+  }
+},
+{
+  id: 'a2-09', level: 'A2', no: 9,
+  title: 'Mein Urlaub an der Ostsee', titleKo: '친구에게 휴가 이야기 전하기',
+  type: 'Persönliche E-Mail', typeKo: '개인 이메일',
+  exam: 'Goethe-Zertifikat A2 쓰기와 같은 분량 · 지난 일을 현재완료로 전하는 연습',
+  time: 15, words: [40, 60],
+  intro: '지난 휴가에 어디에 갔고 무엇을 했는지 친구에게 이메일로 전해요. 현재완료(Perfekt)에서 haben과 sein을 고르는 연습을 해요.',
+  goals: ['지난 일을 현재완료로 써요', '이동과 상태 변화 동사는 sein과 함께 써요', 'war, hatte로 날씨와 느낌을 말해요'],
+  aufbau: [
+    { de: 'Anrede', ko: '부르는 말', ex: 'Lieber Felix,' },
+    { de: 'Einstieg', ko: '첫 문장', ex: 'wie geht es dir?' },
+    { de: 'Wo und mit wem', ko: '어디에, 누구와', ex: 'Ich war letzte Woche mit meiner Schwester an der Ostsee.' },
+    { de: 'Aktivitäten', ko: '한 일', ex: 'Wir sind jeden Tag geschwommen und haben viel Fisch gegessen.' },
+    { de: 'Bewertung', ko: '느낌', ex: 'Der Urlaub hat mir sehr gefallen.' },
+    { de: 'Frage und Gruß', ko: '질문과 끝인사', ex: 'Was hast du in den Ferien gemacht? / Viele Grüße' }
+  ],
+  tipps: [
+    '현재완료는 haben 또는 sein + 과거분사예요. 과거분사는 문장 맨 끝에 와요.',
+    '이동(fahren, gehen, fliegen, schwimmen)과 상태 변화(aufstehen, einschlafen), 그리고 sein, bleiben은 sein과 함께 써요.',
+    'sein과 haben은 현재완료보다 과거형 war, hatte를 더 많이 써요. Das Wetter war gut.',
+    '끝에 친구에게 질문을 하나 하면 답장을 받기 쉬운 이메일이 돼요.'
+  ],
+  fehler: [
+    { f: 'Ich habe nach Rostock gefahren.', r: 'Ich bin nach Rostock gefahren.', e: 'fahren은 이동 동사라서 sein과 함께 써요.' },
+    { f: 'Wir haben gegessen viel Fisch.', r: 'Wir haben viel Fisch gegessen.', e: '과거분사 gegessen은 문장 맨 끝에 와요.' },
+    { f: 'Der Urlaub hat mich sehr gefallen.', r: 'Der Urlaub hat mir sehr gefallen.', e: 'gefallen은 3격과 함께 써요. ich의 3격은 mir예요.' },
+    { f: 'Wir haben eine Radtour gemachen.', r: 'Wir haben eine Radtour gemacht.', e: 'machen은 규칙동사라서 과거분사가 gemacht예요.' }
+  ],
+  redemittel: [
+    { g: '어디에 갔는지 말하기', items: [['Ich war letzte Woche an der Ostsee.', '지난주에 발트해에 있었어요.'], ['Ich bin mit dem Zug nach Rostock gefahren.', '기차를 타고 로스토크에 갔어요.'], ['Wir sind fünf Tage geblieben.', '닷새 동안 있었어요.'], ['Ich war mit meiner Schwester dort.', '언니(여동생)와 함께 갔어요.']] },
+    { g: '한 일 말하기', items: [['Wir sind jeden Tag geschwommen.', '매일 수영했어요.'], ['Wir haben viel Fisch gegessen.', '생선을 많이 먹었어요.'], ['Am Mittwoch haben wir eine Radtour gemacht.', '수요일에는 자전거 여행을 했어요.'], ['Ich habe viele Fotos gemacht.', '사진을 많이 찍었어요.']] },
+    { g: '날씨와 느낌 말하기', items: [['Das Wetter war leider nicht so gut.', '날씨는 아쉽게도 별로 좋지 않았어요.'], ['Der Urlaub hat mir sehr gefallen.', '휴가가 정말 마음에 들었어요.'], ['Es war wunderschön.', '정말 좋았어요.'], ['Das Hotel war klein, aber gemütlich.', '호텔은 작지만 아늑했어요.']] },
+    { g: '질문하기', items: [['Was hast du in den Ferien gemacht?', '방학에 뭐 했어요?'], ['Wie war dein Urlaub?', '휴가는 어땠어요?'], ['Warst du auch am Meer?', '바다에도 갔어요?']] },
+    { g: '끝인사', items: [['Viele Grüße', '안부를 전해요'], ['Schreib mir bald!', '곧 답장해요!']] }
+  ],
+  uebung: [
+    { t: 'mc', q: '알맞은 것은? Ich ___ mit dem Zug nach Rostock gefahren.', o: ['habe', 'bin', 'war'], a: 1, e: 'fahren은 이동 동사라서 현재완료를 sein으로 만들어요.' },
+    { t: 'fill', q: 'Wir haben viel Fisch ___. (essen)', a: ['gegessen'], e: 'essen의 과거분사는 gegessen이에요.' },
+    { t: 'fill', q: 'Wir sind jeden Tag ___. (schwimmen)', a: ['geschwommen'], e: 'schwimmen의 과거분사는 geschwommen이에요. sein과 함께 써요.' },
+    { t: 'fix', q: 'Wir haben gemacht eine Radtour.', a: ['Wir haben eine Radtour gemacht.'], e: '과거분사는 문장 맨 끝에 와요.' },
+    { t: 'mc', q: '알맞은 것은? Der Urlaub hat ___ sehr gefallen.', o: ['ich', 'mich', 'mir'], a: 2, e: 'gefallen은 3격과 함께 써요.' },
+    { t: 'fill', q: 'Das Wetter ___ leider nicht so gut. (sein, 과거)', a: ['war'], e: 'sein의 과거형은 war예요. 현재완료보다 과거형을 더 많이 써요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie waren letzte Woche im Urlaub. Schreiben Sie Ihrem Freund Felix eine E-Mail.',
+    punkte: ['Wo waren Sie und mit wem?', 'Was haben Sie dort gemacht?', 'Wie hat Ihnen der Urlaub gefallen?'],
+    close: 'Schreiben Sie 40–60 Wörter. Schreiben Sie zu allen drei Punkten.',
+    ko: {
+      lead: '지난주에 휴가를 다녀왔어요. 친구 펠릭스에게 이메일을 쓰세요.',
+      punkte: ['어디에 누구와 갔나요?', '거기에서 무엇을 했나요?', '휴가가 어땠나요?'],
+      close: '40–60단어로 쓰세요. 세 가지 내용을 모두 쓰세요.'
+    }
+  },
+  check: ['Lieber Felix, 또는 Hallo Felix,로 시작했어요.', '어디에 누구와 갔는지 썼어요.', '한 일을 두 가지 이상 썼어요.', '휴가가 어땠는지 썼어요.', '이동 동사를 sein과 함께 썼어요.', '과거분사를 문장 맨 끝에 썼어요.'],
+  muster: {
+    de: [
+      'Lieber Felix,',
+      'wie geht es dir? Ich war letzte Woche mit meiner Schwester an der Ostsee. Wir sind jeden Tag geschwommen und haben viel Fisch gegessen. Am Mittwoch haben wir eine Radtour gemacht.',
+      'Das Wetter war leider nicht so gut, aber der Urlaub hat mir sehr gefallen. Was hast du in den Ferien gemacht?',
+      'Viele Grüße\nEunji'
+    ],
+    ko: [
+      '펠릭스에게,',
+      '잘 지내요? 저는 지난주에 언니와 발트해에 다녀왔어요. 매일 수영하고 생선을 많이 먹었어요. 수요일에는 자전거 여행을 했어요.',
+      '날씨는 아쉽게도 별로 좋지 않았지만 휴가는 정말 마음에 들었어요. 방학에 뭐 했어요?',
+      '안부를 전하며,\n은지'
+    ],
+    notes: [
+      { de: 'Ich war letzte Woche … an der Ostsee.', ko: 'sein은 과거형 war로 써요. 바다와 호수는 an + 3격이에요.' },
+      { de: 'Wir sind jeden Tag geschwommen und haben viel Fisch gegessen.', ko: 'schwimmen은 sein, essen은 haben과 함께 써요. 조동사가 다르면 둘 다 써야 해요.' },
+      { de: 'Am Mittwoch haben wir eine Radtour gemacht.', ko: 'Am Mittwoch이 첫 자리, haben이 두 번째, 과거분사가 맨 끝이에요.' },
+      { de: '…, aber der Urlaub hat mir sehr gefallen.', ko: 'gefallen + 3격이에요. aber 앞에는 쉼표를 찍어요.' },
+      { de: 'Was hast du in den Ferien gemacht?', ko: '친구에게 되물으면서 이메일을 마무리했어요.' }
+    ]
+  }
+},
+{
+  id: 'a2-10', level: 'A2', no: 10,
+  title: 'Anmeldung zum Schwimmkurs', titleKo: '강좌에 등록 문의하기',
+  type: 'Formelle E-Mail', typeKo: '격식 이메일',
+  exam: 'Goethe-Zertifikat A2 쓰기 Teil 2와 비슷한 유형',
+  time: 15, words: [40, 60],
+  intro: '스포츠 클럽의 수영 강좌에 등록하고 싶다고 알리고, 가능한 시간과 수강료를 묻는 격식 이메일을 써요. deshalb로 이유와 결과를 잇는 연습을 해요.',
+  goals: ['sich anmelden für + 4격을 바르게 써요', 'deshalb 뒤에 동사를 바로 써요', '시간과 가격을 W-질문으로 물어요'],
+  aufbau: [
+    { de: 'Anrede', ko: '부르는 말', ex: 'Sehr geehrte Damen und Herren,' },
+    { de: 'Grund', ko: '메일을 쓰는 이유', ex: 'ich möchte mich für den Schwimmkurs für Anfänger anmelden.' },
+    { de: 'Zeit', ko: '가능한 시간', ex: 'Ich arbeite bis 17 Uhr, deshalb habe ich nur am Abend Zeit.' },
+    { de: 'Fragen', ko: '질문', ex: 'Gibt es einen Kurs am Samstag? Wie viel kostet der Kurs?' },
+    { de: 'Dank', ko: '감사', ex: 'Vielen Dank für Ihre Antwort.' },
+    { de: 'Gruß und Name', ko: '끝인사와 이름', ex: 'Mit freundlichen Grüßen / Taeyang Kim' }
+  ],
+  tipps: [
+    'sich anmelden은 재귀동사이면서 분리동사예요. Ich melde mich an. / Ich möchte mich anmelden.',
+    'deshalb는 문장의 첫 자리를 차지해요. 바로 뒤에 동사가 와요. …, deshalb habe ich …',
+    '어디에서 광고를 봤는지 쓰면 첫 문장이 자연스러워요. im Internet, in der Zeitung',
+    '가격은 pro Monat(한 달에), pro Stunde(한 시간에)로 물어요.'
+  ],
+  fehler: [
+    { f: 'Ich möchte anmelden für den Kurs.', r: 'Ich möchte mich für den Kurs anmelden.', e: 'sich anmelden은 재귀동사예요. mich를 꼭 쓰고, 원형은 맨 끝에 둬요.' },
+    { f: 'Ich arbeite bis 17 Uhr, deshalb ich habe nur am Abend Zeit.', r: 'Ich arbeite bis 17 Uhr, deshalb habe ich nur am Abend Zeit.', e: 'deshalb 바로 뒤에 동사가 와요.' },
+    { f: 'Wie viel kostet der Kurs für Monat?', r: 'Wie viel kostet der Kurs pro Monat?', e: '「한 달에」는 pro Monat 또는 im Monat예요.' },
+    { f: 'Ich habe Ihre Anzeige im Internet gesehen und ich möchte mich für der Kurs anmelden.', r: 'Ich habe Ihre Anzeige im Internet gesehen und möchte mich für den Kurs anmelden.', e: 'für 뒤는 4격이라 den Kurs예요. 주어가 같으면 und 뒤의 ich는 빼도 돼요.' }
+  ],
+  redemittel: [
+    { g: '메일을 쓰는 이유', items: [['Ich habe Ihre Anzeige im Internet gesehen.', '인터넷에서 광고를 봤습니다.'], ['Ich möchte mich für den Schwimmkurs anmelden.', '수영 강좌에 등록하고 싶습니다.'], ['Ich interessiere mich für den Kurs für Anfänger.', '초보자 강좌에 관심이 있습니다.']] },
+    { g: '가능한 시간 말하기', items: [['Ich arbeite bis 17 Uhr.', '오후 5시까지 일합니다.'], ['Deshalb habe ich nur am Abend Zeit.', '그래서 저녁에만 시간이 있습니다.'], ['Am Wochenende kann ich immer.', '주말에는 언제든 됩니다.'], ['Vormittags habe ich leider keine Zeit.', '오전에는 아쉽게도 시간이 없습니다.']] },
+    { g: '질문하기', items: [['Gibt es einen Kurs am Samstag?', '토요일에 강좌가 있습니까?'], ['Wie viel kostet der Kurs pro Monat?', '수강료가 한 달에 얼마입니까?'], ['Wann beginnt der nächste Kurs?', '다음 강좌는 언제 시작합니까?'], ['Was muss ich mitbringen?', '무엇을 가져가야 합니까?']] },
+    { g: '감사와 끝인사', items: [['Vielen Dank für Ihre Antwort.', '답변에 감사드립니다.'], ['Mit freundlichen Grüßen', '안녕히 계세요 (격식 있는 끝인사)']] }
+  ],
+  uebung: [
+    { t: 'fix', q: 'Ich möchte anmelden für den Kurs.', a: ['Ich möchte mich für den Kurs anmelden.'], e: '재귀대명사 mich를 쓰고 원형 anmelden을 맨 끝에 둬요.' },
+    { t: 'mc', q: '어순이 바른 문장은?', o: ['Ich arbeite viel, deshalb ich habe wenig Zeit.', 'Ich arbeite viel, deshalb habe ich wenig Zeit.', 'Ich arbeite viel, deshalb ich wenig Zeit habe.'], a: 1, e: 'deshalb 바로 뒤에 동사가 와요.' },
+    { t: 'fill', q: 'Ich möchte mich ___ den Schwimmkurs anmelden.', a: ['für'], e: 'sich anmelden für + 4격이에요.' },
+    { t: 'fill', q: 'Wie viel kostet der Kurs ___ Monat?', a: ['pro', 'im'], e: '「한 달에」는 pro Monat 또는 im Monat예요.' },
+    { t: 'mc', q: '알맞은 것은? ___ es einen Kurs am Samstag?', o: ['Ist', 'Gibt', 'Hat'], a: 1, e: '「~이 있다」는 es gibt + 4격으로 말해요.' },
+    { t: 'fill', q: 'Ich melde ___ für den Kurs an.', a: ['mich'], e: 'ich의 재귀대명사는 mich예요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie möchten schwimmen lernen und haben im Internet die Anzeige von einem Sportverein gesehen. Schreiben Sie eine E-Mail an den Sportverein.',
+    punkte: ['Warum schreiben Sie?', 'Wann haben Sie Zeit?', 'Fragen Sie nach dem Preis.'],
+    close: 'Schreiben Sie 40–60 Wörter. Schreiben Sie zu allen drei Punkten.',
+    ko: {
+      lead: '수영을 배우고 싶은데 인터넷에서 스포츠 클럽의 광고를 봤어요. 스포츠 클럽에 이메일을 쓰세요.',
+      punkte: ['왜 메일을 쓰나요?', '언제 시간이 있나요?', '가격을 물어보세요.'],
+      close: '40–60단어로 쓰세요. 세 가지 내용을 모두 쓰세요.'
+    }
+  },
+  check: ['Sehr geehrte Damen und Herren,으로 시작했어요.', '등록하고 싶다고 썼어요.', '시간이 되는 때를 썼어요.', '가격을 물었어요.', 'deshalb 뒤에 동사를 바로 썼어요.', 'Mit freundlichen Grüßen과 내 이름으로 끝냈어요.'],
+  muster: {
+    de: [
+      'Sehr geehrte Damen und Herren,',
+      'ich habe Ihre Anzeige im Internet gesehen und möchte mich für den Schwimmkurs für Anfänger anmelden.',
+      'Ich arbeite bis 17 Uhr, deshalb habe ich nur am Abend oder am Wochenende Zeit. Gibt es einen Kurs am Samstag? Wie viel kostet der Kurs pro Monat?',
+      'Vielen Dank für Ihre Antwort.\nMit freundlichen Grüßen\nTaeyang Kim'
+    ],
+    ko: [
+      '담당자님께,',
+      '인터넷에서 광고를 보았고 초보자 수영 강좌에 등록하고 싶습니다.',
+      '저는 오후 5시까지 일해서 저녁이나 주말에만 시간이 있습니다. 토요일에 강좌가 있습니까? 수강료는 한 달에 얼마입니까?',
+      '답변에 감사드립니다.\n안녕히 계세요.\n김태양 드림'
+    ],
+    notes: [
+      { de: '… und möchte mich für den Schwimmkurs für Anfänger anmelden.', ko: 'sich anmelden für + 4격이에요. mich는 möchte 바로 뒤, 원형은 맨 끝이에요.' },
+      { de: 'Ich arbeite bis 17 Uhr, deshalb habe ich …', ko: '이유를 먼저 쓰고 deshalb로 결과를 이었어요. deshalb 뒤에 동사가 바로 와요.' },
+      { de: 'nur am Abend oder am Wochenende', ko: '시간이 되는 때를 두 가지 써서 답을 받기 쉽게 했어요.' },
+      { de: 'Gibt es einen Kurs am Samstag?', ko: 'es gibt 뒤는 4격이에요. 질문이라 동사 Gibt가 맨 앞이에요.' },
+      { de: 'Wie viel kostet der Kurs pro Monat?', ko: '가격을 묻는 W-질문이에요. 요구 사항 「Preis」에 답하는 문장이에요.' }
     ]
   }
 },
@@ -1167,6 +1902,408 @@ window.SCHREIB_DATA = [
       { de: 'Könnten Sie mir bitte mitteilen, wie viel der Kurs kostet und um wie viel Uhr er beginnt?', ko: '질문 두 개를 간접의문문으로 만들어 und로 이었어요. 두 동사 모두 끝에 있어요.' },
       { de: 'Außerdem würde mich interessieren, ob …', ko: '질문을 하나 더 할 때 쓰는 정중한 표현이에요.' },
       { de: 'Über eine baldige Antwort würde ich mich freuen.', ko: '격식 메일의 대표적인 마무리 문장이에요. 통째로 외워 두세요.' }
+    ]
+  }
+},
+
+{
+  id: 'b1-06', level: 'B1', no: 6,
+  title: 'Einen Termin höflich absagen', titleKo: '약속을 정중하게 취소하기',
+  type: 'Formelle Absage', typeKo: '격식 있는 취소 메일',
+  exam: 'Goethe-Zertifikat B1 쓰기 Aufgabe 3과 같은 유형',
+  time: 15, words: [40, 60],
+  intro: '선생님이 잡아 준 상담 약속에 갈 수 없을 때 정중하게 사과하고 이유를 알리는 짧은 격식 메일을 써요. 40단어 안팎의 짧은 글에서 격식을 지키는 연습을 해요.',
+  goals: ['고마움, 취소, 이유, 새 제안을 네다섯 문장에 담아요', 'da, leider, Wäre es möglich, …로 정중하게 말해요', 'absagen과 verschieben을 구별해 써요'],
+  aufbau: [
+    { de: 'Anrede', ko: '부르는 말', ex: 'Sehr geehrte Frau Hoffmann,' },
+    { de: 'Dank', ko: '감사', ex: 'vielen Dank für die Einladung zum Beratungsgespräch am Donnerstag.' },
+    { de: 'Absage und Grund', ko: '취소와 이유', ex: 'Leider muss ich den Termin absagen, da ich …' },
+    { de: 'Entschuldigung', ko: '사과', ex: 'Das tut mir sehr leid.' },
+    { de: 'Neuer Vorschlag', ko: '새 제안', ex: 'Wäre es möglich, das Gespräch auf Freitag zu verschieben?' },
+    { de: 'Gruß', ko: '끝인사', ex: 'Mit freundlichen Grüßen / Jimin Seo' }
+  ],
+  tipps: [
+    '이 과제는 40단어 정도예요. 부르는 말과 끝인사를 빼면 서너 문장이니, 문장마다 할 일을 하나씩 맡기세요.',
+    '이유는 구체적으로 한 가지만 써요. 「시간이 없어서」보다 「그날 관청에 약속이 있어서」가 설득력이 있어요.',
+    'absagen은 「취소하다」, verschieben auf + 4격은 「~로 미루다」예요.',
+    '취소만 하지 말고 새 날짜를 제안하면 성의가 전해져요.'
+  ],
+  fehler: [
+    { f: 'Leider ich muss den Termin absagen.', r: 'Leider muss ich den Termin absagen.', e: 'Leider가 첫 자리에 오면 동사 muss가 두 번째 자리에 와요.' },
+    { f: 'Ich muss den Termin absagen, da ich habe einen anderen Termin.', r: 'Ich muss den Termin absagen, da ich einen anderen Termin habe.', e: 'da는 weil처럼 종속접속사예요. 동사가 맨 끝에 와요.' },
+    { f: 'Wäre es möglich, das Gespräch auf Freitag verschieben?', r: 'Wäre es möglich, das Gespräch auf Freitag zu verschieben?', e: 'Es ist möglich 뒤에는 zu + 원형을 써요.' },
+    { f: 'Können wir das Gespräch am Freitag verschieben?', r: 'Können wir das Gespräch auf Freitag verschieben?', e: '「~로 미루다」는 verschieben auf + 4격이에요.' }
+  ],
+  redemittel: [
+    { g: '감사하기', items: [['Vielen Dank für die Einladung zum Beratungsgespräch.', '상담에 불러 주셔서 감사합니다.'], ['Vielen Dank für Ihre Nachricht.', '연락 주셔서 감사합니다.']] },
+    { g: '취소하기', items: [['Leider muss ich den Termin absagen.', '죄송하지만 약속을 취소해야 합니다.'], ['Leider kann ich an diesem Tag nicht kommen.', '죄송하지만 그날은 갈 수 없습니다.'], ['Zu meinem Bedauern kann ich den Termin nicht wahrnehmen.', '유감스럽게도 그 약속에 갈 수 없습니다.']] },
+    { g: '이유 말하기', items: [['…, da ich an diesem Tag einen Termin bei der Ausländerbehörde habe.', '그날 외국인청에 약속이 있어서'], ['…, weil ich an diesem Tag arbeiten muss.', '그날 일해야 해서'], ['Ich habe an diesem Tag eine Prüfung.', '그날 시험이 있습니다.']] },
+    { g: '사과하기', items: [['Das tut mir sehr leid.', '정말 죄송합니다.'], ['Ich bitte um Ihr Verständnis.', '양해를 부탁드립니다.'], ['Ich möchte mich dafür entschuldigen.', '그 점 사과드립니다.']] },
+    { g: '새로 제안하기', items: [['Wäre es möglich, das Gespräch auf Freitag zu verschieben?', '상담을 금요일로 미룰 수 있겠습니까?'], ['Hätten Sie nächste Woche Zeit?', '다음 주에 시간이 있으십니까?'], ['Ich könnte am Montag nach dem Unterricht kommen.', '월요일 수업 뒤에는 갈 수 있습니다.']] },
+    { g: '끝인사', items: [['Mit freundlichen Grüßen', '안녕히 계십시오 (격식 있는 끝인사)']] }
+  ],
+  uebung: [
+    { t: 'fix', q: 'Ich muss absagen, da ich habe einen anderen Termin.', a: ['Ich muss absagen, da ich einen anderen Termin habe.'], e: 'da 문장에서는 동사가 맨 끝에 와요.' },
+    { t: 'fill', q: 'Wäre es möglich, das Gespräch auf Freitag ___ verschieben?', a: ['zu'], e: 'Es ist möglich, … 뒤에는 zu + 원형이 와요.' },
+    { t: 'mc', q: '「약속을 금요일로 미루다」로 알맞은 것은?', o: ['den Termin am Freitag verschieben', 'den Termin auf Freitag verschieben', 'den Termin für Freitag absagen'], a: 1, e: 'verschieben auf + 4격이에요.' },
+    { t: 'mc', q: '선생님께 쓰는 취소 메일에 가장 알맞은 문장은?', o: ['Ich komme nicht. Tschüs!', 'Leider muss ich den Termin absagen.', 'Der Termin passt mir überhaupt nicht.'], a: 1, e: 'leider와 müssen을 쓰면 어쩔 수 없는 사정이라는 뜻이 전해져요.' },
+    { t: 'fill', q: '___ Sie nächste Woche Zeit? (haben, 접속법 II)', a: ['Hätten'], e: 'haben의 접속법 II는 hätten이에요. 정중하게 물을 때 써요.' },
+    { t: 'fill', q: 'Ich bitte ___ Ihr Verständnis.', a: ['um'], e: 'bitten um + 4격이에요.' }
+  ],
+  aufgabe: {
+    lead: 'Ihre Kursleiterin, Frau Hoffmann, hat Sie für Donnerstag zu einem Beratungsgespräch über Ihre Lernfortschritte eingeladen. Zu dem Termin können Sie nicht kommen. Schreiben Sie an Frau Hoffmann.',
+    punkte: ['Entschuldigen Sie sich höflich.', 'Berichten Sie, warum Sie nicht kommen können.', 'Schlagen Sie einen neuen Termin vor.'],
+    close: 'Schreiben Sie eine E-Mail (etwa 40–60 Wörter). Vergessen Sie nicht die Anrede und den Gruß am Schluss.',
+    ko: {
+      lead: '담당 선생님인 호프만 선생님이 목요일에 학습 상담을 하자고 했어요. 그런데 그 시간에 갈 수 없어요. 호프만 선생님께 메일을 쓰세요.',
+      punkte: ['정중하게 사과하세요.', '왜 갈 수 없는지 알리세요.', '새 날짜를 제안하세요.'],
+      close: '이메일을 쓰세요(40–60단어 정도). 부르는 말과 끝인사를 잊지 마세요.'
+    }
+  },
+  check: ['Sehr geehrte Frau Hoffmann,으로 시작했어요.', '초대에 고맙다고 하거나 사과하는 말을 썼어요.', '갈 수 없는 이유를 구체적으로 썼어요.', '새 날짜를 제안했어요.', 'da·weil 문장에서 동사가 맨 끝에 있어요.', '처음부터 끝까지 Sie로 썼어요.', 'Mit freundlichen Grüßen과 내 이름으로 끝냈어요.'],
+  muster: {
+    de: [
+      'Sehr geehrte Frau Hoffmann,',
+      'vielen Dank für die Einladung zum Beratungsgespräch am Donnerstag. Leider muss ich den Termin absagen, da ich an diesem Tag einen wichtigen Termin bei der Ausländerbehörde habe. Das tut mir sehr leid.',
+      'Wäre es möglich, das Gespräch auf Freitag zu verschieben?',
+      'Mit freundlichen Grüßen\nJimin Seo'
+    ],
+    ko: [
+      '호프만 선생님께,',
+      '목요일 상담에 불러 주셔서 감사합니다. 죄송하지만 그날 외국인청에 중요한 약속이 있어서 상담 약속을 취소해야 합니다. 정말 죄송합니다.',
+      '상담을 금요일로 미룰 수 있겠습니까?',
+      '안녕히 계십시오.\n서지민 드림'
+    ],
+    notes: [
+      { de: 'vielen Dank für die Einladung zum Beratungsgespräch am Donnerstag.', ko: '취소하는 메일도 감사로 시작하면 정중해요. 어떤 약속인지도 함께 밝혔어요.' },
+      { de: 'Leider muss ich den Termin absagen, da ich …', ko: 'leider + müssen으로 어쩔 수 없다는 뜻을 전해요. da는 weil보다 조금 격식 있는 말이에요.' },
+      { de: '… einen wichtigen Termin bei der Ausländerbehörde habe.', ko: '이유를 구체적으로 썼어요. da 문장이라 동사 habe가 맨 끝이에요.' },
+      { de: 'Wäre es möglich, das Gespräch auf Freitag zu verschieben?', ko: '접속법 II로 정중하게 제안했어요. verschieben auf + 4격, zu + 원형이에요.' },
+      { de: 'Mit freundlichen Grüßen', ko: '끝인사 뒤에는 쉼표나 마침표를 찍지 않아요.' }
+    ]
+  }
+},
+{
+  id: 'b1-07', level: 'B1', no: 7,
+  title: 'Handyverbot an Schulen?', titleKo: '방송 게시판에 의견 쓰기',
+  type: 'Diskussionsbeitrag', typeKo: '토론 글',
+  exam: 'Goethe-Zertifikat B1 쓰기 Aufgabe 2와 같은 유형',
+  time: 25, words: [80, 110],
+  intro: '다른 사람의 의견을 읽고 부분적으로만 동의하는 의견 글을 써요. 상대의 말을 인정한 뒤 trotzdem으로 내 입장을 밝히고, 경험에서 나온 예로 뒷받침해요.',
+  goals: ['Ich kann … nur teilweise zustimmen.으로 부분 동의를 말해요', 'Natürlich …, trotzdem …으로 인정한 뒤 반박해요', 'statt … zu + 원형, seit 문장을 써서 예를 들어요'],
+  aufbau: [
+    { de: 'Bezug', ko: '상대 의견에 반응', ex: 'Ich kann Lukas nur teilweise zustimmen.' },
+    { de: 'Zugeständnis', ko: '인정하는 점', ex: 'Natürlich gehören Handys heute zum Alltag, …' },
+    { de: 'Eigene Meinung', ko: '내 의견', ex: 'Trotzdem bin ich dafür, dass Handys im Unterricht ausgeschaltet bleiben.' },
+    { de: 'Begründung und Beispiel', ko: '이유와 예', ex: 'Mein jüngerer Bruder zum Beispiel …' },
+    { de: 'Schluss', ko: '결론', ex: 'Deshalb finde ich klare Regeln sinnvoll.' }
+  ],
+  tipps: [
+    '토론 글에는 부르는 말과 끝인사가 없어요. 상대 의견에 반응하는 문장으로 바로 시작해요.',
+    '상대 의견을 조금 인정한 다음 내 의견을 쓰면 글이 균형 있게 보여요. Natürlich …, trotzdem …',
+    'trotzdem은 문장의 첫 자리를 차지해요. 바로 뒤에 동사가 와요. Trotzdem bin ich dafür, …',
+    '예는 내 주변 이야기가 좋아요. Mein Bruder zum Beispiel …, In meinem Heimatland …'
+  ],
+  fehler: [
+    { f: 'Trotzdem ich bin dafür.', r: 'Trotzdem bin ich dafür.', e: 'trotzdem 바로 뒤에 동사가 와요.' },
+    { f: 'Ich stimme mit Lukas zu.', r: 'Ich stimme Lukas zu.', e: 'zustimmen은 전치사 없이 3격과 함께 써요.' },
+    { f: 'Viele Schüler schauen auf ihr Handy, statt zuhören.', r: 'Viele Schüler schauen auf ihr Handy, statt zuzuhören.', e: 'statt … zu + 원형이에요. 분리동사는 zu가 가운데에 들어가요.' },
+    { f: 'Ich bin dafür, dass Handys bleiben ausgeschaltet.', r: 'Ich bin dafür, dass Handys ausgeschaltet bleiben.', e: 'dass 문장에서는 동사 bleiben이 맨 끝에 와요.' }
+  ],
+  redemittel: [
+    { g: '상대 의견에 반응하기', items: [['Ich kann Lukas nur teilweise zustimmen.', '루카스의 말에 일부만 동의해요.'], ['Ich bin ganz anderer Meinung als Lukas.', '저는 루카스와 생각이 아주 달라요.'], ['Lukas hat recht, wenn er sagt, dass …', '…라고 한 루카스의 말은 맞아요.']] },
+    { g: '인정한 뒤 반박하기', items: [['Natürlich gehören Handys heute zum Alltag.', '물론 휴대폰은 오늘날 일상의 일부예요.'], ['Es stimmt zwar, dass …, aber …', '…인 것은 맞지만 …'], ['Trotzdem bin ich dafür, dass …', '그래도 저는 …에 찬성해요.'], ['Auf der anderen Seite …', '다른 한편으로는 …']] },
+    { g: '내 의견 말하기', items: [['Meiner Meinung nach lenken Handys zu stark ab.', '제 생각에 휴대폰은 주의를 너무 많이 빼앗아요.'], ['Ich bin dafür. / Ich bin dagegen.', '찬성해요. / 반대해요.'], ['Ich halte ein komplettes Verbot für übertrieben.', '전면 금지는 지나치다고 생각해요.'], ['Ich finde klare Regeln sinnvoll.', '분명한 규칙이 의미 있다고 생각해요.']] },
+    { g: '이유와 예 들기', items: [['Viele Schüler schauen ständig auf ihre Nachrichten, statt zuzuhören.', '많은 학생이 듣지 않고 계속 메시지를 봐요.'], ['Mein jüngerer Bruder zum Beispiel …', '예를 들어 제 남동생은 …'], ['Seit seine Schule die Handys einsammelt, …', '학교에서 휴대폰을 걷은 뒤로 …'], ['Ein weiterer Vorteil ist, dass …', '또 하나의 좋은 점은 …라는 거예요.']] },
+    { g: '결론 맺기', items: [['Deshalb finde ich klare Regeln sinnvoll.', '그래서 분명한 규칙이 의미 있다고 생각해요.'], ['Insgesamt bin ich der Meinung, dass …', '전체적으로 저는 …라고 생각해요.']] }
+  ],
+  uebung: [
+    { t: 'fix', q: 'Trotzdem ich bin für klare Regeln.', a: ['Trotzdem bin ich für klare Regeln.'], e: 'trotzdem 바로 뒤에 동사가 와요.' },
+    { t: 'mc', q: '바른 문장은?', o: ['Ich stimme mit Lukas zu.', 'Ich stimme Lukas zu.', 'Ich stimme den Lukas zu.'], a: 1, e: 'zustimmen + 3격이에요. 전치사를 쓰지 않아요.' },
+    { t: 'fill', q: 'Viele Schüler schauen aufs Handy, statt ___. (zuhören)', a: ['zuzuhören'], e: '분리동사의 zu는 앞부분과 동사 사이에 들어가요. zu + zu + hören' },
+    { t: 'fill', q: 'Ich halte ein Verbot ___ übertrieben.', a: ['für'], e: 'etwas für + 형용사 halten은 「~을 ~라고 생각하다」예요.' },
+    { t: 'mc', q: '「~인 것은 맞지만」으로 알맞은 것은?', o: ['Es stimmt zwar, dass …, aber …', 'Es stimmt weil, dass …, aber …', 'Es stimmt obwohl, dass …'], a: 0, e: 'zwar … aber는 인정한 뒤 반박할 때 쓰는 짝이에요.' },
+    { t: 'fix', q: 'Ich bin dafür, dass Handys bleiben ausgeschaltet.', a: ['Ich bin dafür, dass Handys ausgeschaltet bleiben.'], e: 'dass 문장에서는 동사가 맨 끝에 와요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie haben im Fernsehen eine Diskussionssendung zum Thema „Handyverbot an Schulen“ gesehen. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:',
+    brief: 'Lukas: Ich finde ein Handyverbot an Schulen falsch. Handys gehören heute einfach zum Leben. Die Schüler sollen lieber lernen, wie man sie sinnvoll benutzt. Verbote bringen doch nichts!',
+    punkte: ['Reagieren Sie auf die Meinung von Lukas.', 'Schreiben Sie Ihre eigene Meinung.', 'Begründen Sie Ihre Meinung und nennen Sie ein Beispiel.'],
+    close: 'Schreiben Sie nun Ihre Meinung (etwa 80–110 Wörter).',
+    ko: {
+      lead: '텔레비전에서 「학교의 휴대폰 금지」를 주제로 한 토론 방송을 봤어요. 방송의 온라인 게시판에 이런 의견이 있어요.',
+      brief: '루카스: 저는 학교에서 휴대폰을 금지하는 것이 잘못이라고 생각해요. 휴대폰은 이제 삶의 일부예요. 학생들은 휴대폰을 의미 있게 쓰는 법을 배우는 편이 나아요. 금지는 아무 소용이 없어요!',
+      punkte: ['루카스의 의견에 반응하세요.', '내 의견을 쓰세요.', '이유를 대고 예를 하나 드세요.'],
+      close: '이제 내 의견을 쓰세요(80–110단어 정도).'
+    }
+  },
+  check: ['루카스의 의견에 동의하는지 밝혔어요.', '내 의견을 분명하게 썼어요.', '이유를 두 가지 이상 썼어요.', '예를 하나 들었어요.', '결론 문장으로 끝냈어요.', 'trotzdem, deshalb 뒤에 동사를 바로 썼어요.', '부르는 말과 끝인사 없이 썼어요.'],
+  muster: {
+    de: [
+      'Ich kann Lukas nur teilweise zustimmen. Natürlich gehören Handys heute zum Alltag, und im Unterricht kann man damit schnell etwas recherchieren. Trotzdem bin ich dafür, dass Handys während des Unterrichts ausgeschaltet bleiben.',
+      'Meiner Meinung nach lenken sie zu stark ab: Viele Schüler schauen ständig auf ihre Nachrichten, statt zuzuhören. Mein jüngerer Bruder zum Beispiel kann sich viel besser konzentrieren, seit seine Schule die Handys morgens einsammelt. In den Pausen sprechen die Schüler außerdem wieder mehr miteinander.',
+      'Deshalb finde ich klare Regeln sinnvoll. Ein komplettes Verbot auf dem ganzen Schulgelände halte ich aber für übertrieben.'
+    ],
+    ko: [
+      '루카스의 말에 일부만 동의해요. 물론 휴대폰은 오늘날 일상의 일부이고, 수업에서 휴대폰으로 무언가를 빨리 찾아볼 수도 있어요. 그래도 저는 수업 시간에는 휴대폰을 꺼 두는 데 찬성해요.',
+      '제 생각에 휴대폰은 주의를 너무 많이 빼앗아요. 많은 학생이 듣지 않고 계속 메시지를 봐요. 예를 들어 제 남동생은 학교에서 아침마다 휴대폰을 걷은 뒤로 훨씬 잘 집중해요. 게다가 쉬는 시간에 학생들이 다시 서로 이야기를 더 많이 해요.',
+      '그래서 분명한 규칙이 의미 있다고 생각해요. 하지만 학교 안 어디에서나 전면 금지하는 것은 지나치다고 생각해요.'
+    ],
+    notes: [
+      { de: 'Ich kann Lukas nur teilweise zustimmen.', ko: '첫 문장에서 상대 의견에 반응했어요. zustimmen + 3격이에요.' },
+      { de: 'Natürlich …, Trotzdem bin ich dafür, dass …', ko: '먼저 인정하고, trotzdem으로 내 입장을 밝혔어요. trotzdem 뒤에 동사가 바로 와요.' },
+      { de: 'während des Unterrichts', ko: 'während + 2격이에요. 「수업 동안」' },
+      { de: '…, statt zuzuhören.', ko: 'statt … zu + 원형은 「~하지 않고」예요. 분리동사 zuhören이라 zuzuhören이 돼요.' },
+      { de: '… kann sich viel besser konzentrieren, seit seine Schule die Handys morgens einsammelt.', ko: 'seit가 접속사로 쓰였어요. 동사 einsammelt가 맨 끝이고 분리동사가 다시 붙어요.' },
+      { de: 'Ein komplettes Verbot … halte ich aber für übertrieben.', ko: '4격 목적어가 첫 자리에 왔어요. 마지막에 내 입장의 한계를 밝혀 균형을 잡았어요.' }
+    ]
+  }
+},
+{
+  id: 'b1-08', level: 'B1', no: 8,
+  title: 'Reklamation: Die neue Waschmaschine', titleKo: '고장 난 물건에 대해 항의 메일 쓰기',
+  type: 'Formelle Reklamation', typeKo: '격식 항의 메일',
+  exam: 'telc Deutsch B1 · DTZ 쓰기의 항의(Reklamation) 유형',
+  time: 30, words: [80, 110],
+  intro: '새로 산 세탁기가 고장 났을 때 가게에 보내는 항의 메일을 써요. 언제 무엇을 샀는지, 무엇이 문제인지, 무엇을 원하는지를 차분하고 분명하게 전해요.',
+  goals: ['구입 날짜와 물건을 첫 문장에서 밝혀요', '문제를 구체적으로 설명해요', 'Ich bitte Sie, … zu + 원형으로 요구를 정중하게 말해요'],
+  aufbau: [
+    { de: 'Anrede', ko: '부르는 말', ex: 'Sehr geehrte Damen und Herren,' },
+    { de: 'Kauf', ko: '언제 무엇을 샀는지', ex: 'am 3. Mai habe ich in Ihrem Geschäft eine Waschmaschine gekauft.' },
+    { de: 'Problem', ko: '문제', ex: 'Die Maschine verliert Wasser, und die Tür lässt sich nur schwer öffnen.' },
+    { de: 'Forderung', ko: '요구', ex: 'Ich bitte Sie, einen Techniker zu schicken oder die Maschine umzutauschen.' },
+    { de: 'Erreichbarkeit', ko: '연락 방법', ex: 'Sie erreichen mich am besten per E-Mail.' },
+    { de: 'Schluss und Gruß', ko: '마무리와 끝인사', ex: 'Ich hoffe auf eine schnelle Lösung. / Mit freundlichen Grüßen' }
+  ],
+  tipps: [
+    '화가 나도 말투는 정중하게 유지해요. 사실을 정확하게 쓰는 것이 가장 강한 항의예요.',
+    '날짜, 물건 이름, 영수증 번호를 쓰면 가게가 바로 확인할 수 있어요.',
+    '요구는 하나로 분명하게 써요. 수리(reparieren), 교환(umtauschen), 환불(das Geld zurückbekommen) 가운데 무엇을 원하는지 밝혀요.',
+    'Ich bitte Sie, … 뒤에는 zu + 원형이 와요. 분리동사는 umzutauschen처럼 zu가 가운데에 들어가요.'
+  ],
+  fehler: [
+    { f: 'Ich habe am 3. Mai eine Waschmaschine in Ihrem Geschäft kaufen.', r: 'Ich habe am 3. Mai in Ihrem Geschäft eine Waschmaschine gekauft.', e: '현재완료는 haben + 과거분사예요. kaufen의 과거분사는 gekauft예요.' },
+    { f: 'Ich bin mit das Gerät nicht zufrieden.', r: 'Ich bin mit dem Gerät nicht zufrieden.', e: 'zufrieden mit + 3격이에요. das Gerät의 3격은 dem Gerät예요.' },
+    { f: 'Ich bitte Sie, die Maschine umtauschen.', r: 'Ich bitte Sie, die Maschine umzutauschen.', e: 'bitten 뒤에는 zu + 원형이에요. 분리동사 umtauschen은 umzutauschen이 돼요.' },
+    { f: 'Die Tür kann man nur schwer sich öffnen.', r: 'Die Tür lässt sich nur schwer öffnen.', e: '「~이 잘 안 된다」는 sich lassen + 원형으로 말해요.' }
+  ],
+  redemittel: [
+    { g: '구입 밝히기', items: [['Am 3. Mai habe ich in Ihrem Geschäft eine Waschmaschine gekauft.', '5월 3일에 귀하의 가게에서 세탁기를 샀습니다.'], ['Die Rechnungsnummer lautet 48215.', '영수증 번호는 48215입니다.'], ['Leider bin ich mit dem Gerät nicht zufrieden.', '유감스럽게도 이 제품에 만족하지 못합니다.']] },
+    { g: '문제 설명하기', items: [['Schon nach einer Woche ist das erste Problem aufgetreten.', '일주일 만에 벌써 첫 문제가 생겼습니다.'], ['Die Maschine verliert Wasser.', '세탁기에서 물이 샙니다.'], ['Die Tür lässt sich nur schwer öffnen.', '문이 잘 열리지 않습니다.'], ['Außerdem ist sie beim Schleudern extrem laut.', '게다가 탈수할 때 몹시 시끄럽습니다.']] },
+    { g: '요구하기', items: [['Da das Gerät noch Garantie hat, bitte ich Sie, einen Techniker zu schicken.', '제품의 보증 기간이 남아 있으니 수리 기사를 보내 주시기 바랍니다.'], ['Ich bitte Sie, die Maschine umzutauschen.', '세탁기를 교환해 주시기 바랍니다.'], ['Andernfalls möchte ich mein Geld zurückbekommen.', '그렇지 않으면 환불을 받고 싶습니다.'], ['Bitte teilen Sie mir mit, wann der Techniker kommen kann.', '수리 기사가 언제 올 수 있는지 알려 주십시오.']] },
+    { g: '연락 방법 알리기', items: [['Sie erreichen mich am besten per E-Mail.', '이메일로 연락 주시는 것이 가장 좋습니다.'], ['Nachmittags ab 15 Uhr bin ich auch telefonisch erreichbar.', '오후 3시부터는 전화도 받을 수 있습니다.']] },
+    { g: '마무리와 끝인사', items: [['Ich hoffe auf eine schnelle Lösung.', '빠른 해결을 기대합니다.'], ['Ich erwarte Ihre Antwort bis zum 20. Mai.', '5월 20일까지 답변을 기다리겠습니다.'], ['Mit freundlichen Grüßen', '안녕히 계십시오 (격식 있는 끝인사)']] }
+  ],
+  uebung: [
+    { t: 'fill', q: 'Leider bin ich mit ___ Gerät nicht zufrieden. (das)', a: ['dem'], e: 'zufrieden mit + 3격이에요.' },
+    { t: 'fix', q: 'Ich bitte Sie, die Maschine umtauschen.', a: ['Ich bitte Sie, die Maschine umzutauschen.'], e: '분리동사의 zu는 앞부분과 동사 사이에 들어가요.' },
+    { t: 'mc', q: '「문이 잘 열리지 않습니다」로 알맞은 문장은?', o: ['Die Tür lässt sich nur schwer öffnen.', 'Die Tür lässt nur schwer öffnen.', 'Die Tür ist nur schwer sich öffnen.'], a: 0, e: 'sich lassen + 원형은 수동의 뜻(~될 수 있다)을 나타내요.' },
+    { t: 'fill', q: 'Schon nach einer Woche ist das erste Problem ___. (auftreten)', a: ['aufgetreten'], e: 'auftreten의 과거분사는 aufgetreten이에요. sein과 함께 써요.' },
+    { t: 'mc', q: '항의 메일의 말투로 가장 알맞은 문장은?', o: ['Ihre Maschine ist Schrott!', 'Leider bin ich mit dem Gerät nicht zufrieden.', 'Ich kaufe nie wieder bei Ihnen!'], a: 1, e: '격식 항의 메일에서는 사실을 차분하게 말해요.' },
+    { t: 'fill', q: 'Ich hoffe ___ eine schnelle Lösung.', a: ['auf'], e: 'hoffen auf + 4격이에요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie haben vor zwei Wochen in einem Elektrogeschäft eine Waschmaschine gekauft. Die Maschine funktioniert nicht richtig. Schreiben Sie eine E-Mail an das Geschäft.',
+    punkte: ['Grund für Ihr Schreiben', 'Was genau ist das Problem?', 'Was soll das Geschäft tun?', 'Wie kann man Sie erreichen?'],
+    close: 'Schreiben Sie etwas zu allen vier Punkten (etwa 80–110 Wörter). Denken Sie an Anrede, Einleitung, Schluss und Gruß.',
+    ko: {
+      lead: '2주 전에 전자제품 가게에서 세탁기를 샀어요. 그런데 세탁기가 제대로 작동하지 않아요. 가게에 이메일을 쓰세요.',
+      punkte: ['메일을 쓰는 이유', '정확히 무엇이 문제인가요?', '가게가 무엇을 해 주기를 원하나요?', '어떻게 연락하면 되나요?'],
+      close: '네 가지 내용을 모두 쓰세요(80–110단어 정도). 부르는 말, 도입, 마무리, 끝인사를 잊지 마세요.'
+    }
+  },
+  check: ['Sehr geehrte Damen und Herren,으로 시작했어요.', '언제 무엇을 샀는지 썼어요.', '문제를 두 가지 이상 구체적으로 썼어요.', '원하는 해결(수리, 교환, 환불)을 분명히 썼어요.', '연락 방법을 썼어요.', '정중한 말투를 끝까지 지켰어요.', '마무리 문장과 Mit freundlichen Grüßen으로 끝냈어요.'],
+  muster: {
+    de: [
+      'Sehr geehrte Damen und Herren,',
+      'am 3. Mai habe ich in Ihrem Geschäft eine Waschmaschine gekauft (Rechnungsnummer 48215). Leider bin ich mit dem Gerät nicht zufrieden.',
+      'Schon nach einer Woche ist das erste Problem aufgetreten: Die Maschine verliert Wasser, und die Tür lässt sich nur schwer öffnen. Außerdem ist sie beim Schleudern extrem laut.',
+      'Da das Gerät noch Garantie hat, bitte ich Sie, einen Techniker zu schicken oder die Maschine umzutauschen.',
+      'Sie erreichen mich am besten per E-Mail oder nachmittags ab 15 Uhr telefonisch.',
+      'Ich hoffe auf eine schnelle Lösung.',
+      'Mit freundlichen Grüßen\nYerin Han'
+    ],
+    ko: [
+      '담당자님께,',
+      '5월 3일에 귀하의 가게에서 세탁기를 샀습니다(영수증 번호 48215). 유감스럽게도 이 제품에 만족하지 못합니다.',
+      '일주일 만에 벌써 첫 문제가 생겼습니다. 세탁기에서 물이 새고 문이 잘 열리지 않습니다. 게다가 탈수할 때 몹시 시끄럽습니다.',
+      '제품의 보증 기간이 남아 있으니 수리 기사를 보내 주시거나 세탁기를 교환해 주시기 바랍니다.',
+      '이메일로 연락 주시는 것이 가장 좋고, 오후 3시부터는 전화도 받을 수 있습니다.',
+      '빠른 해결을 기대합니다.',
+      '안녕히 계십시오.\n한예린 드림'
+    ],
+    notes: [
+      { de: 'am 3. Mai habe ich in Ihrem Geschäft eine Waschmaschine gekauft', ko: '날짜, 장소, 물건을 첫 문장에 모두 담았어요. 날짜가 첫 자리라 habe가 두 번째예요.' },
+      { de: 'Leider bin ich mit dem Gerät nicht zufrieden.', ko: '항의의 뜻을 차분하게 밝히는 문장이에요. zufrieden mit + 3격.' },
+      { de: '… die Tür lässt sich nur schwer öffnen.', ko: 'sich lassen + 원형은 「~될 수 있다」예요. 여기서는 「잘 열리지 않는다」.' },
+      { de: 'beim Schleudern', ko: 'beim + 명사가 된 동사는 「~할 때」예요.' },
+      { de: 'Da das Gerät noch Garantie hat, bitte ich Sie, einen Techniker zu schicken oder die Maschine umzutauschen.', ko: 'da 문장이 앞에 와서 주절의 동사 bitte가 바로 뒤에 왔어요. 요구는 zu + 원형으로 썼어요.' },
+      { de: 'Ich hoffe auf eine schnelle Lösung.', ko: '항의 메일을 정중하게 마무리하는 문장이에요.' }
+    ]
+  }
+},
+{
+  id: 'b1-09', level: 'B1', no: 9,
+  title: 'Ein Rat für eine Freundin', titleKo: '고민하는 친구에게 조언하기',
+  type: 'Persönliche E-Mail', typeKo: '개인 이메일',
+  exam: 'telc Deutsch B1 · Goethe-Zertifikat B1 개인 이메일 유형',
+  time: 25, words: [80, 110],
+  intro: '새 도시에서 외로워하는 친구의 메일에 답장하면서 조언을 해요. 접속법 II로 부드럽게 권하는 표현을 익혀요.',
+  goals: ['친구의 상황에 공감하는 말로 시작해요', 'An deiner Stelle würde ich …, Du könntest …로 조언해요', '내 경험을 이유로 덧붙여요'],
+  aufbau: [
+    { de: 'Anrede und Dank', ko: '부르는 말과 감사', ex: 'Liebe Sara, vielen Dank für deine E-Mail.' },
+    { de: 'Mitgefühl', ko: '공감', ex: 'Es tut mir leid, dass du dich in Leipzig noch so allein fühlst.' },
+    { de: 'Ratschläge', ko: '조언', ex: 'An deiner Stelle würde ich mich in einem Sportverein anmelden.' },
+    { de: 'Eigene Erfahrung', ko: '내 경험', ex: 'Ich habe so meine beste Freundin kennengelernt.' },
+    { de: 'Angebot', ko: '제안', ex: 'Wenn du Lust hast, besuche ich dich nächsten Monat.' },
+    { de: 'Gruß', ko: '끝인사', ex: 'Kopf hoch und bis bald! / Deine Nari' }
+  ],
+  tipps: [
+    '조언하기 전에 먼저 공감하는 문장을 써요. 바로 조언부터 하면 차갑게 들려요.',
+    '명령문(Mach das!)보다 접속법 II가 부드러워요. Du könntest …, Du solltest …, An deiner Stelle würde ich …',
+    '조언마다 이유나 내 경험을 한 문장 덧붙이면 설득력이 생겨요.',
+    '요구 사항 하나에 단락 하나를 쓰면 빠뜨리지 않아요.'
+  ],
+  fehler: [
+    { f: 'An deiner Stelle ich würde in einen Verein gehen.', r: 'An deiner Stelle würde ich in einen Verein gehen.', e: 'An deiner Stelle가 첫 자리라 동사 würde가 두 번째 자리에 와요.' },
+    { f: 'Es tut mir leid, dass du fühlst dich allein.', r: 'Es tut mir leid, dass du dich allein fühlst.', e: 'dass 문장에서는 동사 fühlst가 맨 끝에 와요.' },
+    { f: 'Du solltest einen Tandempartner zu suchen.', r: 'Du solltest einen Tandempartner suchen.', e: 'sollen은 화법조동사라서 zu 없이 원형과 함께 써요.' },
+    { f: 'Ich habe meine beste Freundin kennenlernt.', r: 'Ich habe meine beste Freundin kennengelernt.', e: 'kennenlernen은 분리동사라서 과거분사는 kennen + ge + lernt예요.' }
+  ],
+  redemittel: [
+    { g: '공감하기', items: [['Es tut mir leid, dass du dich so allein fühlst.', '그렇게 외롭다니 마음이 아파요.'], ['Das kann ich gut verstehen.', '그 마음 잘 알아요.'], ['Am Anfang ging es mir genauso.', '저도 처음에는 똑같았어요.'], ['Mach dir keine Sorgen!', '걱정하지 마요!']] },
+    { g: '조언하기', items: [['An deiner Stelle würde ich mich in einem Sportverein anmelden.', '나라면 스포츠 클럽에 등록하겠어요.'], ['Du könntest auch einen Tandempartner suchen.', '탄뎀 파트너를 찾아볼 수도 있어요.'], ['Du solltest öfter rausgehen.', '더 자주 밖에 나가는 게 좋겠어요.'], ['Wie wäre es, wenn du einen Kochkurs machst?', '요리 강좌를 들어 보면 어때요?']] },
+    { g: '이유와 경험 말하기', items: [['Dort lernt man schnell Leute kennen.', '거기서는 사람을 금방 사귀어요.'], ['Ich habe so meine beste Freundin kennengelernt.', '저는 그렇게 가장 친한 친구를 사귀었어요.'], ['Mir hat das damals sehr geholfen.', '저에게는 그때 그게 큰 도움이 됐어요.']] },
+    { g: '제안하기', items: [['Wenn du Lust hast, besuche ich dich nächsten Monat.', '원하면 다음 달에 찾아갈게요.'], ['Dann erkunden wir zusammen die Stadt.', '그러면 같이 도시를 구경해요.'], ['Ruf mich an, wenn du reden möchtest.', '이야기하고 싶으면 전화해요.']] },
+    { g: '끝인사', items: [['Kopf hoch!', '힘내요!'], ['Bis bald!', '곧 만나요!'], ['Deine Nari', '나리가']] }
+  ],
+  uebung: [
+    { t: 'fix', q: 'An deiner Stelle ich würde einen Kurs machen.', a: ['An deiner Stelle würde ich einen Kurs machen.'], e: 'An deiner Stelle 바로 뒤에 동사 würde가 와요.' },
+    { t: 'fill', q: 'Du ___ auch einen Tandempartner suchen. (können, 접속법 II)', a: ['könntest'], e: 'du와 함께 쓰는 können의 접속법 II는 könntest예요.' },
+    { t: 'mc', q: '가장 부드러운 조언은?', o: ['Geh in einen Verein!', 'Du musst in einen Verein gehen.', 'Du könntest in einen Verein gehen.'], a: 2, e: '접속법 II könntest를 쓰면 권하는 말투가 돼요.' },
+    { t: 'fix', q: 'Es tut mir leid, dass du fühlst dich allein.', a: ['Es tut mir leid, dass du dich allein fühlst.'], e: 'dass 문장에서는 동사가 맨 끝에 와요.' },
+    { t: 'fill', q: 'Ich habe so meine beste Freundin ___. (kennenlernen)', a: ['kennengelernt'], e: '분리동사의 과거분사는 앞부분 + ge + 동사예요.' },
+    { t: 'mc', q: '알맞은 것은? Wie wäre es, ___ du einen Kochkurs machst?', o: ['wenn', 'ob', 'dass'], a: 0, e: 'Wie wäre es, wenn …?은 제안할 때 쓰는 굳은 표현이에요.' }
+  ],
+  aufgabe: {
+    lead: 'Ihre Freundin Sara hat Ihnen diese E-Mail geschrieben:',
+    brief: 'Hallo!\nSeit zwei Monaten wohne ich jetzt in Leipzig. Die Arbeit gefällt mir, aber ich kenne hier noch niemanden. Am Wochenende sitze ich meistens allein zu Hause. Wie hast du das damals in Berlin gemacht? Hast du einen Tipp für mich?\nLiebe Grüße\nSara',
+    punkte: ['Reagieren Sie auf Saras Situation.', 'Geben Sie Sara zwei Ratschläge.', 'Berichten Sie von Ihren eigenen Erfahrungen.', 'Machen Sie einen Vorschlag für ein Treffen.'],
+    close: 'Schreiben Sie eine Antwort an Sara (etwa 80–110 Wörter). Schreiben Sie etwas zu allen vier Punkten.',
+    ko: {
+      lead: '친구 사라가 이런 이메일을 보냈어요.',
+      brief: '안녕하세요!\n라이프치히에 산 지 이제 두 달이 됐어요. 일은 마음에 드는데 여기 아는 사람이 아직 아무도 없어요. 주말에는 거의 집에 혼자 있어요. 그때 베를린에서는 어떻게 했어요? 저에게 해 줄 조언이 있나요?\n안부를 전하며\n사라',
+      punkte: ['사라의 상황에 반응하세요.', '사라에게 조언을 두 가지 하세요.', '내 경험을 이야기하세요.', '만나자고 제안하세요.'],
+      close: '사라에게 답장을 쓰세요(80–110단어 정도). 네 가지 내용을 모두 쓰세요.'
+    }
+  },
+  check: ['Liebe Sara,로 시작했어요.', '사라의 상황에 공감하는 말을 썼어요.', '조언을 두 가지 썼어요.', '내 경험을 썼어요.', '만나자고 제안했어요.', '접속법 II(würde, könntest, solltest)를 한 번 이상 썼어요.', '끝인사와 내 이름을 썼어요.'],
+  muster: {
+    de: [
+      'Liebe Sara,',
+      'vielen Dank für deine E-Mail. Es tut mir leid, dass du dich in Leipzig noch so allein fühlst. Das kann ich gut verstehen, denn am Anfang ging es mir in Berlin genauso.',
+      'An deiner Stelle würde ich mich in einem Sportverein anmelden. Dort lernt man schnell Leute kennen, weil man jede Woche zusammen trainiert. Du könntest auch einen Tandempartner suchen. Ich habe so meine beste Freundin kennengelernt.',
+      'Wenn du Lust hast, besuche ich dich nächsten Monat. Dann erkunden wir zusammen die Stadt.',
+      'Kopf hoch und bis bald!\nDeine Nari'
+    ],
+    ko: [
+      '사라에게,',
+      '메일 고마워요. 라이프치히에서 아직 그렇게 외롭다니 마음이 아파요. 그 마음 잘 알아요. 저도 처음에 베를린에서 똑같았거든요.',
+      '나라면 스포츠 클럽에 등록하겠어요. 매주 같이 운동하니까 거기서는 사람을 금방 사귀어요. 탄뎀 파트너를 찾아볼 수도 있어요. 저는 그렇게 가장 친한 친구를 사귀었어요.',
+      '원하면 다음 달에 찾아갈게요. 그러면 같이 도시를 구경해요.',
+      '힘내요, 곧 만나요!\n나리가'
+    ],
+    notes: [
+      { de: 'Es tut mir leid, dass du dich in Leipzig noch so allein fühlst.', ko: '조언하기 전에 공감부터 했어요. dass 문장이라 동사 fühlst가 맨 끝이에요.' },
+      { de: '…, denn am Anfang ging es mir in Berlin genauso.', ko: 'denn 뒤는 어순이 그대로예요. ging은 gehen의 과거형이에요.' },
+      { de: 'An deiner Stelle würde ich mich in einem Sportverein anmelden.', ko: '「나라면 ~하겠다」는 조언의 대표 표현이에요. würde + 원형으로 써요.' },
+      { de: 'Du könntest auch einen Tandempartner suchen.', ko: 'könntest로 두 번째 조언을 부드럽게 권했어요.' },
+      { de: 'Wenn du Lust hast, besuche ich dich nächsten Monat.', ko: 'wenn 문장이 앞에 오면 주절은 동사로 시작해요. nächsten Monat은 4격으로 때를 나타내요.' }
+    ]
+  }
+},
+{
+  id: 'b1-10', level: 'B1', no: 10,
+  title: 'Auf eine Wohnungsanzeige antworten', titleKo: '집 광고에 문의 메일 쓰기',
+  type: 'Formelle Anfrage', typeKo: '격식 문의 메일',
+  exam: 'telc Deutsch B1 · DTZ 쓰기처럼 요구 사항 네 가지에 답하는 메일 유형 · 독일에서 집을 구할 때 쓰는 메일',
+  time: 30, words: [80, 110],
+  intro: '집 광고를 보고 집주인에게 보내는 문의 메일을 써요. 나를 믿을 만한 세입자로 소개하고, 집에 대해 묻고, 집을 볼 날짜를 제안해요.',
+  goals: ['나이, 직업, 생활 방식을 짧게 소개해요', '간접의문문으로 집에 대해 물어요', 'Ich würde mir die Wohnung gern ansehen.으로 방문을 부탁해요'],
+  aufbau: [
+    { de: 'Anrede', ko: '부르는 말', ex: 'Sehr geehrte Frau Lindner,' },
+    { de: 'Bezug auf die Anzeige', ko: '광고를 봤다는 말', ex: 'mit großem Interesse habe ich Ihre Anzeige … gelesen.' },
+    { de: 'Angaben zur Person', ko: '나에 대한 소개', ex: 'Ich bin 29 Jahre alt und arbeite seit zwei Jahren als Ingenieur.' },
+    { de: 'Fragen zur Wohnung', ko: '집에 대한 질문', ex: 'Könnten Sie mir bitte mitteilen, ob die Wohnung einen Balkon hat?' },
+    { de: 'Besichtigung', ko: '집 보기', ex: 'Ich würde mir die Wohnung gern ansehen.' },
+    { de: 'Schluss und Gruß', ko: '마무리와 끝인사', ex: 'Über eine Antwort würde ich mich sehr freuen. / Mit freundlichen Grüßen' }
+  ],
+  tipps: [
+    '집주인은 믿을 만한 세입자를 찾아요. 직업, 일한 기간, 흡연과 반려동물 여부를 짧게 쓰면 좋아요.',
+    '집에 대한 말을 익혀요. die Kaution(보증금), die Nebenkosten(관리비), warm(난방비 포함), kalt(난방비 제외), die Besichtigung(집 보기)',
+    'sich etwas ansehen에서 sich는 3격이에요. Ich würde mir die Wohnung gern ansehen.',
+    '집을 볼 수 있는 날을 내가 먼저 제안하면 약속이 빨리 잡혀요.'
+  ],
+  fehler: [
+    { f: 'Ich würde mich die Wohnung gern ansehen.', r: 'Ich würde mir die Wohnung gern ansehen.', e: '4격 목적어(die Wohnung)가 있으면 재귀대명사는 3격 mir예요.' },
+    { f: 'Ich arbeite seit zwei Jahren als ein Ingenieur.', r: 'Ich arbeite seit zwei Jahren als Ingenieur.', e: '직업 앞에는 관사를 쓰지 않아요.' },
+    { f: 'Könnten Sie mir mitteilen, wie hoch ist die Kaution?', r: 'Könnten Sie mir mitteilen, wie hoch die Kaution ist?', e: '간접의문문에서는 동사 ist가 맨 끝에 와요.' },
+    { f: 'Die Wohnung liegt in der Nähe vom Hauptbahnhofs.', r: 'Die Wohnung liegt in der Nähe des Hauptbahnhofs.', e: 'in der Nähe 뒤는 2격(des Hauptbahnhofs) 또는 von + 3격(vom Hauptbahnhof)이에요. 둘을 섞지 않아요.' }
+  ],
+  redemittel: [
+    { g: '광고를 봤다고 말하기', items: [['Mit großem Interesse habe ich Ihre Anzeige gelesen.', '광고를 큰 관심을 갖고 읽었습니다.'], ['Ich suche zum 1. Juli eine neue Wohnung.', '7월 1일부터 살 새 집을 찾고 있습니다.'], ['Die Wohnung gefällt mir sehr gut.', '집이 무척 마음에 듭니다.']] },
+    { g: '나를 소개하기', items: [['Ich bin 29 Jahre alt und komme aus Korea.', '저는 29살이고 한국에서 왔습니다.'], ['Ich arbeite seit zwei Jahren als Ingenieur bei einer Firma in Stuttgart.', '2년 전부터 슈투트가르트의 한 회사에서 엔지니어로 일하고 있습니다.'], ['Ich bin Nichtraucher und habe keine Haustiere.', '담배를 피우지 않고 반려동물도 없습니다.'], ['Ich habe ein festes Einkommen.', '고정 수입이 있습니다.']] },
+    { g: '집에 대해 묻기', items: [['Könnten Sie mir bitte mitteilen, ob die Wohnung einen Balkon hat?', '집에 발코니가 있는지 알려 주실 수 있겠습니까?'], ['Ich möchte gern wissen, wie hoch die Kaution ist.', '보증금이 얼마인지 알고 싶습니다.'], ['Sind die Nebenkosten im Preis enthalten?', '관리비가 가격에 포함되어 있습니까?'], ['Gibt es eine Einbauküche?', '붙박이 주방이 있습니까?']] },
+    { g: '집 보기 부탁하기', items: [['Ich würde mir die Wohnung gern ansehen.', '집을 보고 싶습니다.'], ['Wäre ein Termin am Samstagvormittag möglich?', '토요일 오전에 볼 수 있겠습니까?'], ['Wann wäre eine Besichtigung möglich?', '언제 집을 볼 수 있겠습니까?']] },
+    { g: '마무리와 끝인사', items: [['Über eine Antwort würde ich mich sehr freuen.', '답변을 주시면 무척 감사하겠습니다.'], ['Mit freundlichen Grüßen', '안녕히 계십시오 (격식 있는 끝인사)']] }
+  ],
+  uebung: [
+    { t: 'mc', q: '알맞은 것은? Ich würde ___ die Wohnung gern ansehen.', o: ['mich', 'mir', 'mein'], a: 1, e: '4격 목적어가 따로 있으면 재귀대명사는 3격이에요.' },
+    { t: 'fix', q: 'Könnten Sie mir mitteilen, wie hoch ist die Kaution?', a: ['Könnten Sie mir mitteilen, wie hoch die Kaution ist?'], e: '간접의문문에서는 동사가 맨 끝에 와요.' },
+    { t: 'fill', q: 'Ich arbeite seit zwei ___ als Ingenieur. (Jahr)', a: ['Jahren'], e: 'seit + 3격이에요. 복수 3격에는 -n이 붙어요.' },
+    { t: 'fill', q: 'Ich möchte wissen, ___ die Wohnung einen Balkon hat.', a: ['ob'], e: '의문사가 없는 질문은 ob으로 시작하는 간접의문문이 돼요.' },
+    { t: 'mc', q: '「650 € warm」의 뜻은?', o: ['난방비를 뺀 월세 650유로', '난방비 등 관리비를 포함한 월세 650유로', '보증금 650유로'], a: 1, e: 'warm은 난방비 같은 관리비가 포함된 월세(Warmmiete)를 말해요.' },
+    { t: 'fill', q: 'Die Wohnung liegt in der Nähe ___ Hauptbahnhofs.', a: ['des'], e: 'in der Nähe + 2격이에요. 남성 2격 관사는 des이고 명사에 -s가 붙어요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie suchen eine Wohnung und haben im Internet diese Anzeige gelesen:',
+    brief: '2-Zimmer-Wohnung, 55 m², Nähe Hauptbahnhof\n650 € warm, ab 1. Juli frei\nKontakt: Frau Lindner',
+    punkte: ['Grund für Ihr Schreiben', 'Angaben zu Ihrer Person', 'Fragen zur Wohnung', 'Termin für eine Besichtigung'],
+    close: 'Schreiben Sie eine E-Mail an Frau Lindner. Schreiben Sie etwas zu allen vier Punkten (etwa 80–110 Wörter). Denken Sie an Anrede, Einleitung, Schluss und Gruß.',
+    ko: {
+      lead: '집을 구하고 있는데 인터넷에서 이 광고를 읽었어요.',
+      brief: '방 2개 집, 55 m², 중앙역 근처\n월세 650유로(관리비 포함), 7월 1일부터 입주 가능\n연락: 린트너 씨',
+      punkte: ['메일을 쓰는 이유', '나에 대한 소개', '집에 대한 질문', '집을 볼 날짜'],
+      close: '린트너 씨에게 이메일을 쓰세요. 네 가지 내용을 모두 쓰세요(80–110단어 정도). 부르는 말, 도입, 마무리, 끝인사를 잊지 마세요.'
+    }
+  },
+  check: ['Sehr geehrte Frau Lindner,로 시작했어요.', '어떤 광고를 보고 쓰는지 밝혔어요.', '나이나 직업 등 나를 소개했어요.', '집에 대해 한 가지 이상 물었어요.', '집을 볼 날짜를 제안했어요.', '질문 가운데 하나 이상을 간접의문문으로 썼어요.', '마무리 문장과 Mit freundlichen Grüßen으로 끝냈어요.'],
+  muster: {
+    de: [
+      'Sehr geehrte Frau Lindner,',
+      'mit großem Interesse habe ich Ihre Anzeige für die 2-Zimmer-Wohnung in der Nähe des Hauptbahnhofs gelesen. Ich suche zum 1. Juli eine neue Wohnung.',
+      'Ich bin 29 Jahre alt, komme aus Korea und arbeite seit zwei Jahren als Ingenieur bei einer Firma in Stuttgart. Ich bin Nichtraucher und habe keine Haustiere.',
+      'Könnten Sie mir bitte mitteilen, ob die Wohnung einen Balkon hat und wie hoch die Kaution ist?',
+      'Ich würde mir die Wohnung gern ansehen. Wäre ein Termin am Samstagvormittag möglich?',
+      'Über eine Antwort würde ich mich sehr freuen.',
+      'Mit freundlichen Grüßen\nDohyun Lim'
+    ],
+    ko: [
+      '린트너 씨께,',
+      '중앙역 근처 방 2개 집 광고를 큰 관심을 갖고 읽었습니다. 저는 7월 1일부터 살 새 집을 찾고 있습니다.',
+      '저는 29살이고 한국에서 왔으며, 2년 전부터 슈투트가르트의 한 회사에서 엔지니어로 일하고 있습니다. 담배를 피우지 않고 반려동물도 없습니다.',
+      '집에 발코니가 있는지, 그리고 보증금이 얼마인지 알려 주실 수 있겠습니까?',
+      '집을 보고 싶습니다. 토요일 오전에 볼 수 있겠습니까?',
+      '답변을 주시면 무척 감사하겠습니다.',
+      '안녕히 계십시오.\n임도현 드림'
+    ],
+    notes: [
+      { de: 'mit großem Interesse habe ich Ihre Anzeige … gelesen.', ko: '격식 문의 메일의 대표적인 첫 문장이에요. mit + 3격이라 großem이에요.' },
+      { de: 'in der Nähe des Hauptbahnhofs', ko: 'in der Nähe + 2격이에요. 남성 명사에 -s가 붙어요.' },
+      { de: 'Ich suche zum 1. Juli eine neue Wohnung.', ko: 'zum + 날짜는 「그 날짜부터, 그 날짜에 맞춰」예요. 계약과 이사에서 자주 써요.' },
+      { de: '… arbeite seit zwei Jahren als Ingenieur', ko: '직업 앞에는 관사를 쓰지 않아요. seit + 3격, 현재형이에요.' },
+      { de: 'Könnten Sie mir bitte mitteilen, ob … hat und wie hoch … ist?', ko: '질문 두 개를 간접의문문으로 묶었어요. 두 동사가 모두 끝에 있어요.' },
+      { de: 'Ich würde mir die Wohnung gern ansehen.', ko: 'sich(3격) etwas(4격) ansehen이에요. würde gern으로 정중하게 바람을 말했어요.' }
     ]
   }
 },
@@ -1580,6 +2717,428 @@ window.SCHREIB_DATA = [
       { de: 'Ich arbeite als Pflegekraft in einem Krankenhaus.', ko: '내 직업을 밝혀서 뒤에 오는 경험을 믿을 만하게 했어요.' },
       { de: 'Würden alle nur noch vier Tage arbeiten, müssten …', ko: 'wenn 없이 동사 würden을 맨 앞에 둔 가정문이에요. Wenn alle … arbeiten würden과 같은 뜻이에요.' },
       { de: 'Sinnvoller wäre es, wenn …', ko: '비판에서 끝내지 않고 대안을 제안했어요.' }
+    ]
+  }
+},
+
+{
+  id: 'b2-06', level: 'B2', no: 6,
+  title: 'Bitte um Informationen: Weiterbildung', titleKo: '교육 과정에 대해 자세히 문의하기',
+  type: 'Formelle Anfrage', typeKo: '격식 문의 편지',
+  exam: 'telc Deutsch B2 쓰기(Schriftlicher Ausdruck) 정보 요청(Bitte um Informationen) 유형',
+  time: 30, words: [140, 180],
+  intro: '직업 교육 과정 광고를 읽고 교육 기관에 자세한 정보를 요청하는 격식 편지를 써요. 내 상황을 근거로 질문을 묶어서 묻고, 명사 중심의 격식 있는 표현을 익혀요.',
+  goals: ['광고를 언급하며 편지의 목적을 밝혀요', '내 직업 상황과 기대를 설명한 뒤 그에 맞는 질문을 해요', 'Mich würde interessieren, …, Ließe sich …? 같은 B2 표현으로 물어요'],
+  aufbau: [
+    { de: 'Betreff und Anrede', ko: '제목과 부르는 말', ex: 'Ihre Anzeige „Projektmanagement kompakt“ / Sehr geehrte Damen und Herren,' },
+    { de: 'Anlass', ko: '쓰는 계기', ex: 'mit großem Interesse habe ich Ihre Anzeige … gelesen.' },
+    { de: 'Berufliche Situation', ko: '직업 상황과 기대', ex: 'Seit drei Jahren bin ich als Sachbearbeiterin … tätig.' },
+    { de: 'Fragen zu Inhalt und Ablauf', ko: '내용과 진행에 대한 질문', ex: 'Zunächst würde mich interessieren, welche Vorkenntnisse vorausgesetzt werden.' },
+    { de: 'Fragen zu Kosten und Abschluss', ko: '비용과 수료에 대한 질문', ex: 'Darüber hinaus wüsste ich gern, ob …' },
+    { de: 'Schluss und Gruß', ko: '마무리와 끝인사', ex: 'Für Ihre Bemühungen bedanke ich mich im Voraus.' }
+  ],
+  tipps: [
+    'B2에서는 질문을 나열하지 말고 내 상황과 이어서 물어요. 「저녁까지 일하므로, 수업 시간이 어떻게 되는지 궁금합니다」처럼 써요.',
+    '질문의 순서를 Zunächst, Darüber hinaus, Schließlich로 잡아 주면 읽기 쉬워요.',
+    '간접의문문 안에 수동태가 오면 werden이 맨 끝이에요. …, welche Vorkenntnisse vorausgesetzt werden.',
+    '제목(Betreff)을 한 줄 쓰면 격식 편지의 형식이 갖춰져요. 제목 끝에는 마침표를 찍지 않아요.'
+  ],
+  fehler: [
+    { f: 'Ich bin seit drei Jahren als Sachbearbeiterin beschäftigen.', r: 'Ich bin seit drei Jahren als Sachbearbeiterin beschäftigt.', e: '「~로 일하고 있다」는 beschäftigt sein 또는 tätig sein이에요.' },
+    { f: 'Mich würde interessieren, welche Vorkenntnisse werden vorausgesetzt.', r: 'Mich würde interessieren, welche Vorkenntnisse vorausgesetzt werden.', e: '간접의문문에서는 변화한 동사 werden이 맨 끝에 와요.' },
+    { f: 'Ich interessiere mich an dieser Weiterbildung.', r: 'Ich interessiere mich für diese Weiterbildung.', e: 'sich interessieren für + 4격이에요. interessiert sein an + 3격과 섞지 않아요.' },
+    { f: 'Ich bedanke mich im Voraus für Ihre Bemühung und freue mich auf Ihre Antwort bald.', r: 'Für Ihre Bemühungen bedanke ich mich im Voraus und freue mich auf Ihre baldige Antwort.', e: 'bald는 부사라 명사 뒤에 붙일 수 없어요. 형용사 baldig를 명사 앞에 써요.' }
+  ],
+  redemittel: [
+    { g: '쓰는 계기 밝히기', items: [['Mit großem Interesse habe ich Ihre Anzeige in der „Süddeutschen Zeitung“ gelesen.', '「쥐트도이체 차이퉁」에 실린 귀 기관의 광고를 큰 관심을 갖고 읽었습니다.'], ['Ihr Angebot hat mich sofort angesprochen.', '귀 기관의 과정이 곧바로 제 관심을 끌었습니다.'], ['Bevor ich mich anmelde, hätte ich noch einige Fragen.', '등록하기 전에 몇 가지 여쭙고 싶은 것이 있습니다.']] },
+    { g: '직업 상황과 기대 말하기', items: [['Seit drei Jahren bin ich als Sachbearbeiterin in einem Logistikunternehmen tätig.', '저는 3년 전부터 물류 회사에서 사무 담당자로 일하고 있습니다.'], ['In Zukunft möchte ich mehr Verantwortung übernehmen.', '앞으로 더 큰 책임을 맡고 싶습니다.'], ['Von dem Kurs erhoffe ich mir vor allem praxisnahes Wissen.', '이 과정에서 무엇보다 실무에 가까운 지식을 얻기를 기대합니다.']] },
+    { g: '정중하게 묻기', items: [['Zunächst würde mich interessieren, welche Vorkenntnisse vorausgesetzt werden.', '먼저 어떤 사전 지식이 필요한지 궁금합니다.'], ['Darüber hinaus wüsste ich gern, ob …', '그 밖에 …인지도 알고 싶습니다.'], ['Könnten Sie mir außerdem mitteilen, wie hoch die Kursgebühr ist?', '또한 수강료가 얼마인지 알려 주실 수 있겠습니까?'], ['Ließe sich die Gebühr auch in Raten zahlen?', '수강료를 나누어 낼 수도 있겠습니까?']] },
+    { g: '수료와 지원 묻기', items: [['Mit welchem Abschluss endet die Weiterbildung?', '이 과정은 어떤 수료증으로 끝납니까?'], ['Wird das Zertifikat bundesweit anerkannt?', '그 수료증은 독일 전역에서 인정됩니까?'], ['Gibt es Fördermöglichkeiten für Berufstätige?', '직장인을 위한 지원 제도가 있습니까?']] },
+    { g: '마무리와 끝인사', items: [['Für Ihre Bemühungen bedanke ich mich im Voraus.', '수고에 미리 감사드립니다.'], ['Über eine baldige Antwort würde ich mich sehr freuen.', '빠른 답변을 주시면 대단히 감사하겠습니다.'], ['Mit freundlichen Grüßen', '안녕히 계십시오 (격식 있는 끝인사)']] }
+  ],
+  uebung: [
+    { t: 'fix', q: 'Mich würde interessieren, welche Vorkenntnisse werden vorausgesetzt.', a: ['Mich würde interessieren, welche Vorkenntnisse vorausgesetzt werden.'], e: '간접의문문에서는 werden이 맨 끝에 와요.' },
+    { t: 'fill', q: 'Darüber hinaus ___ ich gern, ob der Kurs auch online stattfindet. (wissen, 접속법 II)', a: ['wüsste'], e: 'wissen의 접속법 II는 wüsste예요. 「알고 싶습니다」를 정중하게 말해요.' },
+    { t: 'mc', q: '알맞은 것은? Ich interessiere mich ___ diese Weiterbildung.', o: ['an', 'für', 'über'], a: 1, e: 'sich interessieren für + 4격이에요.' },
+    { t: 'fill', q: 'Von dem Kurs erhoffe ich ___ vor allem praxisnahes Wissen.', a: ['mir'], e: 'sich(3격) etwas erhoffen이에요. ich의 3격 재귀대명사는 mir예요.' },
+    { t: 'mc', q: '「수강료를 나누어 낼 수도 있겠습니까?」로 알맞은 문장은?', o: ['Ließe sich die Gebühr auch in Raten zahlen?', 'Lässt man die Gebühr auch in Raten?', 'Kann die Gebühr sich in Raten zahlen?'], a: 0, e: 'sich lassen + 원형은 수동의 뜻이에요. 접속법 II ließe로 더 정중해져요.' },
+    { t: 'fill', q: 'Seit drei Jahren bin ich als Sachbearbeiterin ___. (일하고 있다, 형용사)', a: ['tätig', 'beschäftigt'], e: 'als … tätig sein, beschäftigt sein은 「~로 일하고 있다」예요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie haben in der Zeitung folgende Anzeige gelesen und interessieren sich für das Angebot. Sie möchten aber noch mehr wissen.',
+    brief: 'Projektmanagement kompakt\nBerufsbegleitende Weiterbildung mit Zertifikat\nIn sechs Monaten zum Projektleiter / zur Projektleiterin\nBeginn: Oktober · Akademie für Berufsbildung, Hamburg',
+    punkte: ['Grund für Ihr Schreiben', 'Ihre berufliche Situation und Ihre Erwartungen', 'Fragen zu Inhalten und Kurszeiten', 'Fragen zu Kosten und Abschluss'],
+    close: 'Schreiben Sie einen Brief an die Akademie (etwa 140–180 Wörter). Überlegen Sie sich eine passende Reihenfolge der Punkte, eine Einleitung und einen Schluss. Vergessen Sie nicht Betreff, Anrede und Gruß.',
+    ko: {
+      lead: '신문에서 다음 광고를 읽고 이 과정에 관심이 생겼어요. 그런데 더 알고 싶은 것이 있어요.',
+      brief: '프로젝트 관리 집중 과정\n직장을 다니며 듣는 수료증 과정\n6개월 만에 프로젝트 책임자로\n시작: 10월 · 함부르크 직업교육 아카데미',
+      punkte: ['편지를 쓰는 이유', '내 직업 상황과 기대', '내용과 수업 시간에 대한 질문', '비용과 수료에 대한 질문'],
+      close: '아카데미에 편지를 쓰세요(140–180단어 정도). 내용의 순서, 도입, 마무리를 스스로 정하세요. 제목, 부르는 말, 끝인사를 잊지 마세요.'
+    }
+  },
+  check: ['제목(Betreff)을 썼어요.', 'Sehr geehrte Damen und Herren,으로 시작했어요.', '어떤 광고를 보고 쓰는지 밝혔어요.', '내 직업 상황과 기대를 썼어요.', '내용과 수업 시간을 물었어요.', '비용과 수료를 물었어요.', '질문을 Zunächst, Darüber hinaus 같은 말로 이었어요.', '마무리 문장과 Mit freundlichen Grüßen으로 끝냈어요.'],
+  muster: {
+    de: [
+      'Ihre Anzeige „Projektmanagement kompakt“',
+      'Sehr geehrte Damen und Herren,',
+      'mit großem Interesse habe ich Ihre Anzeige in der Zeitung gelesen. Bevor ich mich anmelde, hätte ich allerdings noch einige Fragen.',
+      'Seit drei Jahren bin ich als Sachbearbeiterin in einem Logistikunternehmen tätig. Da ich in Zukunft eigene Projekte leiten möchte, erhoffe ich mir von der Weiterbildung vor allem praxisnahes Wissen.',
+      'Zunächst würde mich interessieren, welche Vorkenntnisse vorausgesetzt werden und welche Themen im Mittelpunkt stehen. Da ich täglich bis 18 Uhr arbeite, wüsste ich außerdem gern, an welchen Tagen der Unterricht stattfindet und ob ein Teil davon online angeboten wird.',
+      'Darüber hinaus bitte ich Sie, mir mitzuteilen, wie hoch die Kursgebühr ist und ob sie sich in Raten zahlen lässt. Wichtig wäre für mich auch zu erfahren, ob das Zertifikat bundesweit anerkannt wird.',
+      'Für Ihre Bemühungen bedanke ich mich im Voraus und freue mich auf Ihre baldige Antwort.',
+      'Mit freundlichen Grüßen\nSoyeon Bae'
+    ],
+    ko: [
+      '귀 기관의 광고 「프로젝트 관리 집중 과정」',
+      '담당자님께,',
+      '신문에 실린 귀 기관의 광고를 큰 관심을 갖고 읽었습니다. 다만 등록하기 전에 몇 가지 여쭙고 싶은 것이 있습니다.',
+      '저는 3년 전부터 물류 회사에서 사무 담당자로 일하고 있습니다. 앞으로 직접 프로젝트를 이끌고 싶기 때문에 이 과정에서 무엇보다 실무에 가까운 지식을 얻기를 기대합니다.',
+      '먼저 어떤 사전 지식이 필요한지, 그리고 어떤 주제를 중심으로 다루는지 궁금합니다. 또한 저는 매일 오후 6시까지 일하므로 수업이 무슨 요일에 있는지, 일부가 온라인으로 제공되는지도 알고 싶습니다.',
+      '그 밖에 수강료가 얼마인지, 나누어 낼 수 있는지 알려 주시기 바랍니다. 수료증이 독일 전역에서 인정되는지도 저에게는 중요합니다.',
+      '수고에 미리 감사드리며 빠른 답변을 기다리겠습니다.',
+      '안녕히 계십시오.\n배소연 드림'
+    ],
+    notes: [
+      { de: 'Bevor ich mich anmelde, hätte ich allerdings noch einige Fragen.', ko: 'hätte로 「질문이 있습니다」를 정중하게 말했어요. bevor 문장이 앞에 와서 주절은 동사로 시작해요.' },
+      { de: 'Da ich in Zukunft eigene Projekte leiten möchte, erhoffe ich mir …', ko: '내 상황(da 문장)을 근거로 기대를 말했어요. sich(3격) etwas erhoffen von + 3격.' },
+      { de: '…, welche Vorkenntnisse vorausgesetzt werden', ko: '간접의문문 안의 수동태예요. 과거분사 다음에 werden이 맨 끝에 와요.' },
+      { de: 'Da ich täglich bis 18 Uhr arbeite, wüsste ich außerdem gern, …', ko: '질문을 내 상황과 이었어요. wüsste gern은 möchte wissen보다 격식 있어요.' },
+      { de: '… ob sie sich in Raten zahlen lässt.', ko: 'sich lassen + 원형으로 수동의 뜻을 나타냈어요. sie는 die Kursgebühr를 가리켜요.' }
+    ]
+  }
+},
+{
+  id: 'b2-07', level: 'B2', no: 7,
+  title: 'Stellungnahme: Autofreie Innenstadt?', titleKo: '찬반을 따져 의견 글 쓰기',
+  type: 'Stellungnahme', typeKo: '찬반 의견 글',
+  exam: 'B2 시험과 수업에서 쓰는 찬반 의견 글(Stellungnahme) 유형',
+  time: 35, words: [150, 190],
+  intro: '찬성 근거와 반대 근거를 차례로 살핀 뒤 내 입장을 밝히는 의견 글을 써요. 문단마다 역할을 나누고, 근거를 연결어로 잇는 연습을 해요.',
+  goals: ['도입, 찬성, 반대, 입장의 네 문단으로 글을 짜요', 'Befürworter, Kritiker 같은 말로 다른 사람의 근거를 전해요', 'zwar … aber, je … desto, sofern 같은 연결 표현을 써요'],
+  aufbau: [
+    { de: 'Einleitung', ko: '도입: 주제 소개', ex: 'In immer mehr Städten wird darüber diskutiert, ob …' },
+    { de: 'Argumente dafür', ko: '찬성 근거', ex: 'Befürworter weisen darauf hin, dass …' },
+    { de: 'Argumente dagegen', ko: '반대 근거', ex: 'Kritiker befürchten dagegen, dass …' },
+    { de: 'Eigene Position', ko: '내 입장', ex: 'Ich persönlich halte … für sinnvoll, sofern …' },
+    { de: 'Schluss', ko: '결론', ex: 'Alles in allem überwiegen meiner Ansicht nach die Vorteile.' }
+  ],
+  tipps: [
+    '도입에서는 아직 내 의견을 말하지 않아요. 주제가 왜 논의되는지만 한두 문장으로 써요.',
+    '근거마다 「주장 + 이유 또는 예」를 붙여요. 주장만 나열하면 설득력이 없어요.',
+    '찬성과 반대의 분량을 비슷하게 맞추고, 내 입장은 마지막 문단에서 분명히 밝혀요.',
+    'je + 비교급 …, desto + 비교급 … 문장에서 je 쪽은 동사가 끝, desto 쪽은 동사가 비교급 바로 뒤에 와요.'
+  ],
+  fehler: [
+    { f: 'Befürworter weisen darauf hin, dass die Luft wird sauberer.', r: 'Befürworter weisen darauf hin, dass die Luft sauberer wird.', e: 'dass 문장에서는 동사 wird가 맨 끝에 와요.' },
+    { f: 'Je weniger Autos fahren, desto die Luft ist besser.', r: 'Je weniger Autos fahren, desto besser ist die Luft.', e: 'desto 바로 뒤에 비교급, 그다음에 동사가 와요.' },
+    { f: 'Ich bin der Meinung, dass man soll die Innenstadt sperren.', r: 'Ich bin der Meinung, dass man die Innenstadt sperren sollte.', e: 'dass 문장에서 화법조동사는 원형 뒤, 문장 맨 끝에 와요.' },
+    { f: 'Meiner Ansicht nach die Vorteile überwiegen.', r: 'Meiner Ansicht nach überwiegen die Vorteile.', e: 'Meiner Ansicht nach가 첫 자리라 동사가 바로 뒤에 와요.' }
+  ],
+  redemittel: [
+    { g: '주제 소개하기', items: [['In immer mehr Städten wird darüber diskutiert, ob …', '점점 더 많은 도시에서 …인지를 두고 논의하고 있어요.'], ['Das Thema ist heftig umstritten.', '이 주제는 논란이 커요.'], ['Im Folgenden möchte ich beide Seiten betrachten.', '아래에서 양쪽을 모두 살펴보려 해요.']] },
+    { g: '찬성 근거 전하기', items: [['Befürworter weisen darauf hin, dass …', '찬성하는 사람들은 …라고 지적해요.'], ['Ein wichtiges Argument dafür ist, dass …', '찬성의 중요한 근거는 …라는 점이에요.'], ['Hinzu kommt, dass …', '여기에 …라는 점이 더해져요.'], ['Je weniger Autos fahren, desto sauberer ist die Luft.', '자동차가 적게 다닐수록 공기가 깨끗해요.']] },
+    { g: '반대 근거 전하기', items: [['Kritiker befürchten dagegen, dass …', '반면 비판하는 사람들은 …를 걱정해요.'], ['Dagegen spricht, dass …', '반대 근거로는 …라는 점이 있어요.'], ['Nicht zu vergessen sind Menschen, die auf das Auto angewiesen sind.', '자동차가 꼭 필요한 사람들도 잊으면 안 돼요.']] },
+    { g: '내 입장 밝히기', items: [['Ich persönlich halte eine autofreie Innenstadt für sinnvoll, sofern …', '저는 …라는 조건이라면 차 없는 도심이 의미 있다고 생각해요.'], ['Zwar …, aber …', '…이긴 하지만 …'], ['Entscheidend ist meiner Meinung nach, dass …', '제 생각에 결정적인 것은 …라는 점이에요.']] },
+    { g: '결론 맺기', items: [['Alles in allem überwiegen meiner Ansicht nach die Vorteile.', '종합하면 제가 보기에 좋은 점이 더 커요.'], ['Zusammenfassend lässt sich sagen, dass …', '요약하면 …라고 할 수 있어요.']] }
+  ],
+  uebung: [
+    { t: 'fix', q: 'Je weniger Autos fahren, desto die Luft ist besser.', a: ['Je weniger Autos fahren, desto besser ist die Luft.'], e: 'desto + 비교급 + 동사 + 주어 순서예요.' },
+    { t: 'mc', q: '「~라는 조건이라면」으로 알맞은 접속사는?', o: ['sofern', 'obwohl', 'sodass'], a: 0, e: 'sofern은 「~하는 한, ~라는 조건이라면」이에요.' },
+    { t: 'fill', q: 'Befürworter weisen ___ hin, dass die Lebensqualität steigt.', a: ['darauf'], e: 'hinweisen auf + 4격이에요. dass 문장이 뒤따르면 darauf를 써요.' },
+    { t: 'fix', q: 'Ich bin der Meinung, dass man soll die Innenstadt sperren.', a: ['Ich bin der Meinung, dass man die Innenstadt sperren soll.', 'Ich bin der Meinung, dass man die Innenstadt sperren sollte.'], e: 'dass 문장에서 화법조동사는 맨 끝에 와요.' },
+    { t: 'mc', q: '알맞은 것은? Menschen, die auf das Auto ___ sind', o: ['abhängig', 'angewiesen', 'gewohnt'], a: 1, e: 'auf + 4격 angewiesen sein은 「~에 의존해야 한다」예요. abhängig는 von과 함께 써요.' },
+    { t: 'fill', q: 'Alles in allem ___ meiner Ansicht nach die Vorteile. (überwiegen)', a: ['überwiegen'], e: '주어가 복수 die Vorteile라서 동사는 überwiegen이에요. 비분리동사예요.' }
+  ],
+  aufgabe: {
+    lead: 'In Ihrer Stadt wird diskutiert, ob die Innenstadt für private Autos gesperrt werden soll. Die Lokalzeitung bittet ihre Leserinnen und Leser um Stellungnahmen. Schreiben Sie einen Text.',
+    punkte: ['Führen Sie kurz in das Thema ein.', 'Nennen Sie Argumente für eine autofreie Innenstadt.', 'Nennen Sie Argumente dagegen.', 'Schreiben Sie Ihre eigene Meinung und begründen Sie sie.'],
+    close: 'Schreiben Sie etwa 150–190 Wörter. Achten Sie darauf, dass die Abschnitte und Sätze gut miteinander verbunden sind.',
+    ko: {
+      lead: '여러분이 사는 도시에서 도심에 개인 자동차가 못 들어오게 할지를 두고 논의하고 있어요. 지역 신문이 독자들에게 의견을 보내 달라고 해요. 글을 쓰세요.',
+      punkte: ['주제를 짧게 소개하세요.', '차 없는 도심에 찬성하는 근거를 쓰세요.', '반대하는 근거를 쓰세요.', '내 의견을 쓰고 이유를 대세요.'],
+      close: '150–190단어 정도로 쓰세요. 문단과 문장이 서로 잘 이어지도록 쓰세요.'
+    }
+  },
+  check: ['도입에서 주제를 소개했어요.', '찬성 근거를 두 가지 썼어요.', '반대 근거를 두 가지 썼어요.', '근거마다 이유나 예를 붙였어요.', '내 입장을 마지막에 분명히 밝혔어요.', '문단을 연결어로 이었어요.', 'dass 문장과 종속절에서 동사가 맨 끝에 있어요.'],
+  muster: {
+    de: [
+      'In immer mehr Städten wird darüber diskutiert, ob die Innenstadt für private Autos gesperrt werden soll. Auch bei uns ist das Thema heftig umstritten, seit der Stadtrat einen entsprechenden Antrag berät.',
+      'Befürworter weisen darauf hin, dass die Lebensqualität deutlich steigen würde: Je weniger Autos fahren, desto sauberer ist die Luft und desto leiser wird es. Hinzu kommt, dass frei werdende Parkplätze für Radwege, Bäume oder Cafés genutzt werden könnten.',
+      'Kritiker befürchten dagegen, dass die Geschäfte im Zentrum Kunden verlieren, weil viele Menschen dann lieber in Einkaufszentren am Stadtrand fahren. Nicht zu vergessen sind außerdem ältere Menschen und Handwerker, die auf das Auto angewiesen sind.',
+      'Ich persönlich halte eine autofreie Innenstadt für sinnvoll, sofern Busse und Bahnen häufiger fahren und es Ausnahmen für Lieferungen und Menschen mit Behinderung gibt. Zwar müssen sich manche erst umstellen, aber Städte wie Kopenhagen zeigen, dass ein Zentrum ohne Autos attraktiver wird.',
+      'Alles in allem überwiegen meiner Ansicht nach die Vorteile, wenn die Umstellung schrittweise erfolgt.'
+    ],
+    ko: [
+      '점점 더 많은 도시에서 도심에 개인 자동차가 못 들어오게 해야 하는지를 두고 논의하고 있어요. 우리 도시에서도 시의회가 관련 안건을 논의하기 시작한 뒤로 이 주제는 논란이 커요.',
+      '찬성하는 사람들은 삶의 질이 뚜렷이 높아질 것이라고 지적해요. 자동차가 적게 다닐수록 공기가 깨끗해지고 더 조용해져요. 여기에 비게 되는 주차 공간을 자전거 도로, 나무, 카페에 쓸 수 있다는 점이 더해져요.',
+      '반면 비판하는 사람들은 많은 사람이 차라리 교외 쇼핑센터로 가게 되어 도심 가게들이 손님을 잃을 것을 걱정해요. 또한 자동차가 꼭 필요한 노인과 기술자들도 잊으면 안 돼요.',
+      '저는 버스와 전철이 더 자주 다니고 배달 차량과 장애인을 위한 예외가 있다는 조건이라면 차 없는 도심이 의미 있다고 생각해요. 적응하는 데 시간이 걸리는 사람도 있겠지만, 코펜하겐 같은 도시는 차 없는 도심이 더 매력적이라는 것을 보여 줘요.',
+      '종합하면 제가 보기에 변화를 단계적으로 진행한다면 좋은 점이 더 커요.'
+    ],
+    notes: [
+      { de: 'In immer mehr Städten wird darüber diskutiert, ob …', ko: '주어 없는 수동태로 주제를 객관적으로 소개했어요. 도입에서는 내 의견을 말하지 않아요.' },
+      { de: 'Je weniger Autos fahren, desto sauberer ist die Luft …', ko: 'je 쪽은 동사가 끝, desto 쪽은 비교급 다음에 동사가 와요.' },
+      { de: 'frei werdende Parkplätze', ko: '현재분사 werdend가 형용사처럼 쓰였어요. 「비게 되는 주차 공간」' },
+      { de: 'Kritiker befürchten dagegen, dass …', ko: 'dagegen으로 반대쪽 근거로 넘어갔어요. 문단의 역할이 첫 문장에서 드러나요.' },
+      { de: '…, sofern Busse und Bahnen häufiger fahren …', ko: 'sofern으로 조건을 달아 입장을 정확하게 했어요. 무조건 찬성보다 설득력이 있어요.' }
+    ]
+  }
+},
+{
+  id: 'b2-08', level: 'B2', no: 8,
+  title: 'Beschwerde nach einer Sprachreise', titleKo: '광고와 달랐던 어학연수에 항의하기',
+  type: 'Formelle Beschwerde', typeKo: '격식 항의 편지',
+  exam: 'telc Deutsch B2 쓰기(Schriftlicher Ausdruck) 항의 편지 유형 · 광고와 실제를 비교하는 과제',
+  time: 30, words: [140, 180],
+  intro: '광고를 믿고 간 어학연수가 약속과 달랐을 때 주최 회사에 보내는 항의 편지를 써요. 광고의 약속과 실제를 짝지어 대비하고, 구체적인 보상을 요구해요.',
+  goals: ['광고의 약속과 실제를 하나씩 짝지어 대비해요', 'anders als angekündigt, entgegen Ihrer Zusage, statt + 2격을 써요', '금액과 기한을 정해 보상을 요구해요'],
+  aufbau: [
+    { de: 'Betreff und Anrede', ko: '제목과 부르는 말', ex: 'Beschwerde über die Sprachreise nach Freiburg (Buchungsnummer 7731)' },
+    { de: 'Anlass', ko: '쓰는 계기', ex: 'vom 4. bis 17. August habe ich an Ihrer Sprachreise … teilgenommen.' },
+    { de: 'Mängel: Anzeige und Wirklichkeit', ko: '문제점: 광고와 실제', ex: 'In Ihrer Anzeige hieß es, … Tatsächlich …' },
+    { de: 'Folgen', ko: '그 때문에 생긴 일', ex: 'Unter diesen Umständen konnte ich … kaum verbessern.' },
+    { de: 'Forderung mit Frist', ko: '요구와 기한', ex: 'Ich fordere Sie daher auf, mir … zu erstatten.' },
+    { de: 'Schluss und Gruß', ko: '마무리와 끝인사', ex: 'Andernfalls sehe ich mich gezwungen, …' }
+  ],
+  tipps: [
+    '문제마다 「광고에서는 … 그런데 실제로는 …」의 짝으로 써요. 채점자는 광고의 내용을 정확히 언급했는지를 봐요.',
+    '광고의 내용은 과거형 hieß es, wurde versprochen이나 접속법 I(sei, werde)로 전해요.',
+    '요구는 숫자로 써요. 「보상해 주세요」보다 「참가비의 30퍼센트를 돌려주세요」가 분명해요.',
+    '기한(bis zum …)과 다음 조치를 밝히되, 협박처럼 들리지 않게 차분하게 써요.'
+  ],
+  fehler: [
+    { f: 'In Ihrer Anzeige hieß es, dass die Gruppen sind klein.', r: 'In Ihrer Anzeige hieß es, dass die Gruppen klein seien.', e: 'dass 문장이라 동사가 맨 끝에 와요. 남의 말을 전할 때는 접속법 I(seien)이 격식에 맞아요.' },
+    { f: 'Statt einem Einzelzimmer bekam ich ein Dreibettzimmer.', r: 'Statt eines Einzelzimmers bekam ich ein Dreibettzimmer.', e: '격식 있는 글에서 statt 뒤는 2격이에요.' },
+    { f: 'Ich fordere Sie auf, mir 30 Prozent des Preises erstatten.', r: 'Ich fordere Sie auf, mir 30 Prozent des Preises zu erstatten.', e: 'auffordern 뒤에는 zu + 원형이 와요.' },
+    { f: 'Entgegen Ihre Zusage gab es kein Freizeitprogramm.', r: 'Entgegen Ihrer Zusage gab es kein Freizeitprogramm.', e: 'entgegen 뒤는 3격이에요.' }
+  ],
+  redemittel: [
+    { g: '쓰는 계기 밝히기', items: [['Vom 4. bis 17. August habe ich an Ihrer Sprachreise nach Freiburg teilgenommen.', '8월 4일부터 17일까지 귀사의 프라이부르크 어학연수에 참가했습니다.'], ['Leider entsprach die Reise in mehreren Punkten nicht Ihrer Anzeige.', '유감스럽게도 연수는 여러 점에서 귀사의 광고와 달랐습니다.'], ['Ich sehe mich daher veranlasst, mich bei Ihnen zu beschweren.', '그래서 귀사에 항의하지 않을 수 없습니다.']] },
+    { g: '광고와 실제 대비하기', items: [['In Ihrer Anzeige hieß es, die Gruppen bestünden aus höchstens acht Personen.', '귀사의 광고에는 한 반이 최대 여덟 명이라고 되어 있었습니다.'], ['Tatsächlich saßen wir zu sechzehnt im Unterricht.', '실제로는 열여섯 명이 함께 수업을 들었습니다.'], ['Anders als angekündigt …', '예고된 것과 달리 …'], ['Entgegen Ihrer Zusage …', '귀사의 약속과 달리 …'], ['Statt eines Einzelzimmers erhielt ich ein Dreibettzimmer.', '1인실 대신 3인실을 받았습니다.']] },
+    { g: '결과 말하기', items: [['Unter diesen Umständen konnte ich meine Sprachkenntnisse kaum verbessern.', '이런 상황에서는 언어 실력을 거의 늘릴 수 없었습니다.'], ['Von einer intensiven Betreuung konnte keine Rede sein.', '집중적인 지도라고는 전혀 할 수 없었습니다.']] },
+    { g: '요구하기', items: [['Ich fordere Sie daher auf, mir 30 Prozent des Reisepreises zu erstatten.', '그러므로 연수 비용의 30퍼센트를 돌려주시기를 요구합니다.'], ['Ich erwarte Ihre Stellungnahme bis zum 15. September.', '9월 15일까지 귀사의 답변을 기다리겠습니다.'], ['Als Entschädigung halte ich 400 Euro für angemessen.', '보상으로 400유로가 적절하다고 생각합니다.']] },
+    { g: '마무리와 끝인사', items: [['Andernfalls sehe ich mich gezwungen, mich an die Verbraucherzentrale zu wenden.', '그렇지 않으면 소비자 센터에 도움을 청할 수밖에 없습니다.'], ['Ich hoffe auf eine einvernehmliche Lösung.', '원만한 해결을 기대합니다.'], ['Mit freundlichen Grüßen', '안녕히 계십시오 (격식 있는 끝인사)']] }
+  ],
+  uebung: [
+    { t: 'fill', q: 'Statt ___ Einzelzimmers erhielt ich ein Dreibettzimmer. (ein)', a: ['eines'], e: 'statt + 2격이에요. 중성 2격은 eines이고 명사에 -s가 붙어요.' },
+    { t: 'fill', q: 'Entgegen ___ Zusage gab es kein Freizeitprogramm. (Ihre)', a: ['Ihrer'], e: 'entgegen + 3격이에요. die Zusage의 3격은 Ihrer Zusage예요.' },
+    { t: 'mc', q: '광고의 내용을 전하는 격식 있는 문장은?', o: ['In Ihrer Anzeige hieß es, die Gruppen seien klein.', 'In Ihrer Anzeige heißt, die Gruppen sind klein.', 'Ihre Anzeige sagte, die Gruppen klein sind.'], a: 0, e: 'hieß es + 접속법 I로 남의 말을 전해요.' },
+    { t: 'fix', q: 'Ich fordere Sie auf, mir 30 Prozent des Preises erstatten.', a: ['Ich fordere Sie auf, mir 30 Prozent des Preises zu erstatten.'], e: 'auffordern 뒤에는 zu + 원형이 와요.' },
+    { t: 'mc', q: '알맞은 것은? Die Reise entsprach nicht ___ Anzeige.', o: ['Ihre', 'Ihrer', 'Ihren'], a: 1, e: 'entsprechen은 3격과 함께 써요.' },
+    { t: 'fill', q: 'Andernfalls sehe ich mich ___, mich an die Verbraucherzentrale zu wenden. (zwingen, 과거분사)', a: ['gezwungen'], e: 'sich gezwungen sehen, … zu + 원형은 「~할 수밖에 없다」예요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie haben aufgrund der folgenden Anzeige eine Sprachreise gebucht. Nach der Reise sind Sie sehr unzufrieden, weil vieles nicht der Anzeige entsprach.',
+    brief: 'Deutsch lernen in Freiburg!\nZwei Wochen Intensivkurs in kleinen Gruppen (max. 8 Personen)\nUnterkunft im Einzelzimmer bei Gastfamilien\nJeden Nachmittag Freizeitprogramm mit Betreuung\nSprachreisen Sonnenschein',
+    punkte: ['Grund für Ihr Schreiben', 'Was war anders als in der Anzeige? (mindestens zwei Punkte)', 'Welche Folgen hatte das für Sie?', 'Was erwarten Sie vom Veranstalter?'],
+    close: 'Schreiben Sie einen Beschwerdebrief an den Veranstalter (etwa 140–180 Wörter). Vergessen Sie nicht Betreff, Anrede und Gruß.',
+    ko: {
+      lead: '다음 광고를 보고 어학연수를 예약했어요. 그런데 많은 것이 광고와 달라서 연수를 마친 뒤 무척 불만이에요.',
+      brief: '프라이부르크에서 독일어를 배우세요!\n2주 집중 과정, 소규모 반(최대 8명)\n홈스테이 가정의 1인실\n매일 오후 지도 교사와 함께하는 여가 프로그램\n조넨샤인 어학연수',
+      punkte: ['편지를 쓰는 이유', '광고와 무엇이 달랐나요? (두 가지 이상)', '그 때문에 어떤 일이 생겼나요?', '주최 회사에 무엇을 기대하나요?'],
+      close: '주최 회사에 항의 편지를 쓰세요(140–180단어 정도). 제목, 부르는 말, 끝인사를 잊지 마세요.'
+    }
+  },
+  check: ['제목에 무엇에 대한 항의인지 썼어요.', '언제 어떤 연수에 참가했는지 썼어요.', '광고의 약속과 실제를 두 가지 이상 짝지어 썼어요.', '그 때문에 생긴 결과를 썼어요.', '요구를 숫자로 분명히 썼어요.', '답변 기한을 썼어요.', '정중한 말투를 끝까지 지켰어요.', 'Mit freundlichen Grüßen과 내 이름으로 끝냈어요.'],
+  muster: {
+    de: [
+      'Beschwerde über die Sprachreise nach Freiburg (Buchungsnummer 7731)',
+      'Sehr geehrte Damen und Herren,',
+      'vom 4. bis 17. August habe ich an Ihrer Sprachreise nach Freiburg teilgenommen. Leider entsprach die Reise in mehreren Punkten nicht Ihrer Anzeige, weshalb ich mich hiermit bei Ihnen beschwere.',
+      'Dort hieß es, die Gruppen bestünden aus höchstens acht Personen. Tatsächlich saßen wir zu sechzehnt im Unterricht, sodass jeder nur selten zu Wort kam. Statt eines Einzelzimmers erhielt ich zudem ein Dreibettzimmer, in dem konzentriertes Lernen unmöglich war. Entgegen Ihrer Zusage fand außerdem nur an drei Nachmittagen ein Freizeitprogramm statt.',
+      'Unter diesen Umständen konnte ich meine Sprachkenntnisse kaum verbessern, obwohl ich für einen Intensivkurs bezahlt hatte.',
+      'Ich fordere Sie daher auf, mir 30 Prozent des Reisepreises zu erstatten, und erwarte Ihre Stellungnahme bis zum 15. September. Andernfalls sehe ich mich gezwungen, mich an die Verbraucherzentrale zu wenden.',
+      'Mit freundlichen Grüßen\nJunho Shin'
+    ],
+    ko: [
+      '프라이부르크 어학연수에 대한 항의(예약 번호 7731)',
+      '담당자님께,',
+      '저는 8월 4일부터 17일까지 귀사의 프라이부르크 어학연수에 참가했습니다. 유감스럽게도 연수는 여러 점에서 귀사의 광고와 달랐기에 이 편지로 귀사에 항의합니다.',
+      '광고에는 한 반이 최대 여덟 명이라고 되어 있었습니다. 실제로는 열여섯 명이 함께 수업을 들어서 각자 말할 기회가 드물었습니다. 또한 1인실 대신 3인실을 받아 집중해서 공부할 수 없었습니다. 게다가 귀사의 약속과 달리 여가 프로그램은 사흘 오후에만 있었습니다.',
+      '집중 과정의 비용을 냈는데도 이런 상황에서는 언어 실력을 거의 늘릴 수 없었습니다.',
+      '그러므로 연수 비용의 30퍼센트를 돌려주시기를 요구하며, 9월 15일까지 귀사의 답변을 기다리겠습니다. 그렇지 않으면 소비자 센터에 도움을 청할 수밖에 없습니다.',
+      '안녕히 계십시오.\n신준호 드림'
+    ],
+    notes: [
+      { de: 'Leider entsprach die Reise in mehreren Punkten nicht Ihrer Anzeige, weshalb …', ko: 'entsprechen + 3격이에요. weshalb(그래서)로 편지를 쓰는 이유를 이었어요. 동사는 맨 끝이에요.' },
+      { de: 'Dort hieß es, die Gruppen bestünden aus höchstens acht Personen.', ko: '광고의 내용을 접속법으로 전했어요. bestehen의 접속법 I이 직설법과 같아서 접속법 II bestünden을 썼어요.' },
+      { de: 'Tatsächlich saßen wir zu sechzehnt im Unterricht, sodass …', ko: 'Tatsächlich로 실제를 대비했어요. zu sechzehnt는 「열여섯 명이서」, sodass는 결과를 나타내요.' },
+      { de: 'Statt eines Einzelzimmers … / Entgegen Ihrer Zusage …', ko: 'statt + 2격, entgegen + 3격으로 약속과 실제를 짧게 대비했어요.' },
+      { de: '…, obwohl ich für einen Intensivkurs bezahlt hatte.', ko: '연수보다 먼저 일어난 일이라 과거완료(hatte bezahlt)를 썼어요.' },
+      { de: 'Ich fordere Sie daher auf, mir 30 Prozent des Reisepreises zu erstatten', ko: '요구를 숫자로 밝혔어요. auffordern + zu 원형, des Reisepreises는 2격이에요.' }
+    ]
+  }
+},
+{
+  id: 'b2-09', level: 'B2', no: 9,
+  title: 'Eine Grafik beschreiben: Nachrichten', titleKo: '그래프를 설명하고 내 생각 쓰기',
+  type: 'Grafikbeschreibung', typeKo: '그래프 설명',
+  exam: 'B2 수업과 대학 준비 과정에서 쓰는 그래프 설명 유형 · C1 그래프 설명의 앞 단계',
+  time: 30, words: [130, 170],
+  intro: '막대그래프를 보고 주제, 중요한 수치, 변화를 설명한 뒤 내 경험과 생각을 덧붙여요. 수치를 말하는 여러 표현과 변화를 나타내는 동사를 익혀요.',
+  goals: ['그래프의 주제와 출처를 첫 문단에서 소개해요', 'steigen, sinken, sich verdoppeln과 von … auf …를 바르게 써요', '모든 수치를 옮기지 않고 눈에 띄는 것만 골라 써요'],
+  aufbau: [
+    { de: 'Einleitung', ko: '도입: 주제와 출처', ex: 'Die Grafik zeigt, woher die Menschen in Deutschland ihre Nachrichten beziehen.' },
+    { de: 'Wichtigste Ergebnisse', ko: '가장 중요한 결과', ex: 'Am deutlichsten ist die Veränderung bei den Nachrichten-Apps.' },
+    { de: 'Weitere Entwicklungen', ko: '그 밖의 변화', ex: 'Dagegen ist der Anteil der gedruckten Zeitung … gesunken.' },
+    { de: 'Eigene Erfahrung', ko: '내 경험', ex: 'Diese Entwicklung kann ich aus eigener Erfahrung bestätigen.' },
+    { de: 'Bewertung', ko: '내 생각', ex: 'Meiner Meinung nach hat diese Entwicklung Vor- und Nachteile.' }
+  ],
+  tipps: [
+    '변화의 크기는 um, 도착점은 auf로 말해요. von 12 auf 35 Prozent steigen / um 23 Prozentpunkte steigen',
+    '숫자를 문장마다 바꿔 표현해요. 41 Prozent → gut 40 Prozent, vier von zehn Befragten, fast die Hälfte',
+    '수치 네 개를 모두 쓰지 마세요. 가장 큰 변화와 가장 작은 변화를 골라 쓰면 돼요.',
+    '지난 변화는 현재완료(ist gestiegen, ist gesunken)로 써요. steigen과 sinken은 sein과 함께 써요.'
+  ],
+  fehler: [
+    { f: 'Der Anteil hat von 12 auf 35 Prozent gestiegen.', r: 'Der Anteil ist von 12 auf 35 Prozent gestiegen.', e: 'steigen과 sinken은 sein과 함께 현재완료를 만들어요.' },
+    { f: 'Der Anteil ist auf 23 Prozentpunkte gestiegen.', r: 'Der Anteil ist um 23 Prozentpunkte gestiegen.', e: '변화의 크기는 um, 도착한 값은 auf로 말해요.' },
+    { f: 'Die Grafik zeigt, woher beziehen die Menschen ihre Nachrichten.', r: 'Die Grafik zeigt, woher die Menschen ihre Nachrichten beziehen.', e: '간접의문문에서는 동사가 맨 끝에 와요.' },
+    { f: 'Die Zahl der Zeitungsleser sind gesunken.', r: 'Die Zahl der Zeitungsleser ist gesunken.', e: '주어는 단수 die Zahl이에요. 동사도 단수로 써요.' }
+  ],
+  redemittel: [
+    { g: '그래프 소개하기', items: [['Die Grafik zeigt, woher die Menschen ihre Nachrichten beziehen.', '이 그래프는 사람들이 뉴스를 어디에서 얻는지 보여 줘요.'], ['Die Angaben erfolgen in Prozent.', '수치는 퍼센트로 표시되어 있어요.'], ['Verglichen werden die Jahre 2015 und 2025.', '2015년과 2025년을 비교하고 있어요.'], ['Die Daten stammen aus einer Umfrage.', '자료는 설문 조사에서 나왔어요.']] },
+    { g: '수치 말하기', items: [['Der Anteil liegt bei 38 Prozent.', '비율은 38퍼센트예요.'], ['gut ein Drittel / fast die Hälfte', '3분의 1 남짓 / 거의 절반'], ['vier von zehn Befragten', '응답자 열 명 가운데 네 명'], ['An erster Stelle steht das Fernsehen.', '1위는 텔레비전이에요.']] },
+    { g: '변화 말하기', items: [['Der Anteil ist von 12 auf 35 Prozent gestiegen.', '비율이 12퍼센트에서 35퍼센트로 올랐어요.'], ['Der Anteil hat sich fast verdreifacht.', '비율이 거의 세 배가 됐어요.'], ['Der Anteil ist um 19 Prozentpunkte gesunken.', '비율이 19퍼센트포인트 내렸어요.'], ['Der Wert hat sich fast halbiert.', '값이 거의 절반으로 줄었어요.'], ['Das Fernsehen hat nur leicht verloren.', '텔레비전은 조금만 줄었어요.']] },
+    { g: '비교하고 강조하기', items: [['Am deutlichsten ist die Veränderung bei …', '변화가 가장 뚜렷한 것은 …예요.'], ['Dagegen … / Im Gegensatz dazu …', '반면 …'], ['Auffällig ist, dass …', '눈에 띄는 것은 …라는 점이에요.']] },
+    { g: '내 경험과 생각 말하기', items: [['Diese Entwicklung kann ich aus eigener Erfahrung bestätigen.', '이 변화는 제 경험으로도 확인할 수 있어요.'], ['Ich selbst lese Nachrichten fast nur noch auf dem Handy.', '저도 뉴스를 거의 휴대폰으로만 읽어요.'], ['Meiner Meinung nach hat diese Entwicklung Vor- und Nachteile.', '제 생각에 이 변화에는 좋은 점과 나쁜 점이 다 있어요.']] }
+  ],
+  uebung: [
+    { t: 'mc', q: '알맞은 것은? Der Anteil ___ von 12 auf 35 Prozent gestiegen.', o: ['hat', 'ist', 'wird'], a: 1, e: 'steigen은 sein과 함께 현재완료를 만들어요.' },
+    { t: 'fill', q: 'Der Anteil ist ___ 23 Prozentpunkte gestiegen.', a: ['um'], e: '얼마만큼 변했는지는 um으로 말해요.' },
+    { t: 'fill', q: 'Der Anteil ist von 41 ___ 22 Prozent gesunken.', a: ['auf'], e: '도착한 값은 auf로 말해요. von … auf …' },
+    { t: 'fix', q: 'Die Grafik zeigt, woher beziehen die Menschen ihre Nachrichten.', a: ['Die Grafik zeigt, woher die Menschen ihre Nachrichten beziehen.'], e: '간접의문문에서는 동사가 맨 끝에 와요.' },
+    { t: 'mc', q: '「41 Prozent」를 다르게 말한 것으로 알맞은 것은?', o: ['knapp ein Viertel', 'gut 40 Prozent', 'mehr als die Hälfte'], a: 1, e: 'gut은 「~남짓」, knapp은 「~에 조금 못 미치는」이에요.' },
+    { t: 'fill', q: 'Der Anteil der Apps hat ___ fast verdreifacht.', a: ['sich'], e: 'sich verdoppeln, sich verdreifachen, sich halbieren은 재귀동사예요.' }
+  ],
+  aufgabe: {
+    lead: 'Die Grafik zeigt, welche Medien die Menschen in Deutschland in den Jahren 2015 und 2025 regelmäßig genutzt haben, um sich über Nachrichten zu informieren. Mehrere Antworten waren möglich.',
+    chart: {
+      title: 'Woher kommen die Nachrichten?',
+      unit: 'Angaben in Prozent, Mehrfachnennungen möglich',
+      source: 'Quelle: Umfrage zur Mediennutzung (Beispieldaten für den Unterricht)',
+      series: ['2015', '2025'],
+      rows: [
+        { label: 'Fernsehen', ko: '텔레비전', v: [46, 38] },
+        { label: 'Gedruckte Zeitung', ko: '종이 신문', v: [41, 22] },
+        { label: 'Nachrichten-Apps', ko: '뉴스 앱', v: [12, 35] },
+        { label: 'Soziale Medien', ko: '소셜 미디어', v: [9, 28] }
+      ]
+    },
+    punkte: ['Beschreiben Sie, was die Grafik zeigt.', 'Nennen Sie die wichtigsten Veränderungen.', 'Berichten Sie, wie Sie selbst sich über Nachrichten informieren.', 'Wie bewerten Sie diese Entwicklung?'],
+    close: 'Schreiben Sie etwa 130–170 Wörter.',
+    ko: {
+      lead: '이 그래프는 독일 사람들이 2015년과 2025년에 뉴스를 얻으려고 어떤 매체를 자주 이용했는지 보여 줘요. 여러 개를 고를 수 있었어요.',
+      punkte: ['그래프가 무엇을 보여 주는지 설명하세요.', '가장 중요한 변화를 쓰세요.', '나는 뉴스를 어떻게 얻는지 쓰세요.', '이 변화를 어떻게 생각하나요?'],
+      close: '130–170단어 정도로 쓰세요.'
+    }
+  },
+  check: ['첫 문단에서 그래프의 주제를 소개했어요.', '가장 큰 변화를 수치와 함께 썼어요.', '줄어든 항목과 늘어난 항목을 대비했어요.', '수치를 두 가지 이상의 방식으로 표현했어요.', '내 경험을 썼어요.', '이 변화에 대한 내 생각을 썼어요.', 'steigen, sinken을 sein과 함께 썼어요.'],
+  muster: {
+    de: [
+      'Die Grafik zeigt, über welche Medien sich die Menschen in Deutschland in den Jahren 2015 und 2025 über Nachrichten informiert haben. Die Angaben erfolgen in Prozent.',
+      'Am deutlichsten ist die Veränderung bei den Nachrichten-Apps: Ihr Anteil hat sich von 12 auf 35 Prozent fast verdreifacht. Auch die sozialen Medien haben stark zugelegt und werden inzwischen von gut einem Viertel der Befragten genutzt. Dagegen ist der Anteil der gedruckten Zeitung von 41 auf 22 Prozent gesunken und hat sich damit fast halbiert. Das Fernsehen steht zwar weiterhin an erster Stelle, hat aber ebenfalls verloren.',
+      'Diese Entwicklung kann ich aus eigener Erfahrung bestätigen. Ich selbst lese Nachrichten fast nur noch auf dem Handy, während meine Eltern jeden Abend die Fernsehnachrichten sehen.',
+      'Meiner Meinung nach hat diese Entwicklung Vor- und Nachteile. Einerseits ist man schneller informiert, andererseits verbreiten sich in sozialen Medien auch viele falsche Meldungen. Deshalb sollte man immer prüfen, woher eine Nachricht stammt.'
+    ],
+    ko: [
+      '이 그래프는 독일 사람들이 2015년과 2025년에 어떤 매체로 뉴스를 접했는지 보여 줘요. 수치는 퍼센트로 표시되어 있어요.',
+      '변화가 가장 뚜렷한 것은 뉴스 앱이에요. 비율이 12퍼센트에서 35퍼센트로 거의 세 배가 됐어요. 소셜 미디어도 크게 늘어 이제 응답자의 4분의 1 남짓이 이용해요. 반면 종이 신문의 비율은 41퍼센트에서 22퍼센트로 내려 거의 절반이 됐어요. 텔레비전은 여전히 1위이지만 역시 줄었어요.',
+      '이 변화는 제 경험으로도 확인할 수 있어요. 저도 뉴스를 거의 휴대폰으로만 읽고, 부모님은 매일 저녁 텔레비전 뉴스를 보세요.',
+      '제 생각에 이 변화에는 좋은 점과 나쁜 점이 다 있어요. 한편으로는 소식을 더 빨리 알 수 있지만, 다른 한편으로는 소셜 미디어에서 잘못된 소식도 많이 퍼져요. 그래서 뉴스가 어디에서 나왔는지 늘 확인해야 해요.'
+    ],
+    notes: [
+      { de: 'Die Grafik zeigt, über welche Medien sich die Menschen … informiert haben.', ko: '간접의문문으로 그래프의 주제를 소개했어요. 과제의 문장을 그대로 베끼지 않고 바꿔 썼어요.' },
+      { de: 'Ihr Anteil hat sich von 12 auf 35 Prozent fast verdreifacht.', ko: 'von … auf …로 처음과 끝 값을, sich verdreifachen으로 변화의 크기를 말했어요.' },
+      { de: '… werden inzwischen von gut einem Viertel der Befragten genutzt.', ko: '28퍼센트를 「4분의 1 남짓」으로 바꿔 표현했어요. 수동태 + von + 3격이에요.' },
+      { de: 'Dagegen ist der Anteil … gesunken und hat sich damit fast halbiert.', ko: 'Dagegen으로 줄어든 항목을 대비했어요. sinken은 sein, sich halbieren은 haben과 써요.' },
+      { de: 'Das Fernsehen steht zwar weiterhin an erster Stelle, hat aber ebenfalls verloren.', ko: 'zwar … aber로 「1위이긴 하지만 줄었다」를 한 문장에 담았어요.' },
+      { de: 'Einerseits …, andererseits …', ko: '좋은 점과 나쁜 점을 한 문장으로 견주는 짝이에요. 둘 다 뒤에 동사가 바로 와요.' }
+    ]
+  }
+},
+{
+  id: 'b2-10', level: 'B2', no: 10,
+  title: 'Einen Vertrag kündigen', titleKo: '계약 해지 통지서 쓰기',
+  type: 'Kündigungsschreiben', typeKo: '해지 통지서',
+  exam: '독일 생활에서 실제로 쓰는 해지 통지서(Kündigung) · 헬스장, 휴대폰, 보험 계약에 그대로 쓸 수 있는 형식',
+  time: 20, words: [90, 130],
+  intro: '헬스장 회원 계약을 해지하는 통지서를 써요. 독일에서는 계약을 글로 해지해야 하는 경우가 많아요. 짧지만 빠지면 안 되는 내용과 굳어진 표현을 익혀요.',
+  goals: ['제목에 무엇을 해지하는지와 회원 번호를 써요', 'hiermit kündige ich … fristgerecht zum …를 정확하게 써요', '해지 확인서를 요청하고 자동이체 동의를 철회해요'],
+  aufbau: [
+    { de: 'Betreff', ko: '제목', ex: 'Kündigung meiner Mitgliedschaft, Mitgliedsnummer 20417' },
+    { de: 'Anrede', ko: '부르는 말', ex: 'Sehr geehrte Damen und Herren,' },
+    { de: 'Kündigung', ko: '해지 선언', ex: 'hiermit kündige ich meine Mitgliedschaft fristgerecht zum 30. Juni.' },
+    { de: 'Begründung', ko: '이유 (쓰지 않아도 됨)', ex: 'Grund dafür ist mein beruflich bedingter Umzug nach München.' },
+    { de: 'Lastschrift', ko: '자동이체', ex: 'Zugleich widerrufe ich die Ihnen erteilte Einzugsermächtigung zum Vertragsende.' },
+    { de: 'Bitte um Bestätigung', ko: '확인서 요청', ex: 'Bitte bestätigen Sie mir die Kündigung schriftlich.' },
+    { de: 'Gruß', ko: '끝인사', ex: 'Mit freundlichen Grüßen' }
+  ],
+  tipps: [
+    '해지 통지서는 짧을수록 좋아요. 감정이나 긴 설명은 쓰지 않아요.',
+    '날짜를 모를 때는 zum nächstmöglichen Zeitpunkt(가능한 가장 빠른 시점에)를 덧붙여요.',
+    '이유는 쓰지 않아도 되지만, 이사처럼 계약 기간보다 일찍 해지하려는 사정이 있으면 꼭 써요.',
+    '해지 확인서와 계약이 끝나는 날짜를 글로 받아 두면 나중에 다툼이 없어요.'
+  ],
+  fehler: [
+    { f: 'Hiermit ich kündige meine Mitgliedschaft.', r: 'Hiermit kündige ich meine Mitgliedschaft.', e: 'hiermit가 첫 자리에 오면 동사가 바로 뒤에 와요.' },
+    { f: 'Ich kündige meine Mitgliedschaft am 30. Juni.', r: 'Ich kündige meine Mitgliedschaft zum 30. Juni.', e: '계약이 끝나는 날짜는 zum으로 말해요. am 30. Juni는 그날 통지한다는 뜻이 돼요.' },
+    { f: 'Bitte bestätigen Sie mich die Kündigung.', r: 'Bitte bestätigen Sie mir die Kündigung.', e: 'jemandem(3격) etwas(4격) bestätigen이에요.' },
+    { f: 'Ich kündige wegen meinem Umzug nach München.', r: 'Ich kündige wegen meines Umzugs nach München.', e: '격식 있는 글에서 wegen 뒤는 2격이에요.' }
+  ],
+  redemittel: [
+    { g: '해지 선언하기', items: [['Hiermit kündige ich meine Mitgliedschaft fristgerecht zum 30. Juni.', '이 편지로 제 회원 계약을 기한에 맞춰 6월 30일 자로 해지합니다.'], ['…, hilfsweise zum nächstmöglichen Zeitpunkt.', '그것이 안 되면 가능한 가장 빠른 시점에 해지합니다.'], ['Hiermit kündige ich den oben genannten Vertrag.', '이 편지로 위에 적은 계약을 해지합니다.']] },
+    { g: '이유 말하기', items: [['Grund dafür ist mein beruflich bedingter Umzug nach München.', '이유는 직장 때문에 뮌헨으로 이사하기 때문입니다.'], ['Da es an meinem neuen Wohnort kein Studio Ihrer Kette gibt, bitte ich um eine vorzeitige Beendigung des Vertrags.', '새로 살 곳에 귀사의 지점이 없으므로 계약을 일찍 끝내 주시기를 부탁드립니다.'], ['Eine Meldebescheinigung reiche ich gern nach.', '거주 등록 확인서는 나중에 기꺼이 내겠습니다.']] },
+    { g: '자동이체 철회하기', items: [['Zugleich widerrufe ich die Ihnen erteilte Einzugsermächtigung zum Vertragsende.', '아울러 귀사에 드린 자동이체 동의를 계약 종료일 자로 철회합니다.'], ['Bitte buchen Sie nach diesem Datum keine Beiträge mehr ab.', '이 날짜 이후로는 회비를 인출하지 마시기 바랍니다.']] },
+    { g: '확인서 요청하기', items: [['Bitte bestätigen Sie mir die Kündigung schriftlich.', '해지를 서면으로 확인해 주시기 바랍니다.'], ['Bitte teilen Sie mir das genaue Datum des Vertragsendes mit.', '계약이 끝나는 정확한 날짜를 알려 주시기 바랍니다.'], ['Vielen Dank im Voraus.', '미리 감사드립니다.']] },
+    { g: '끝인사', items: [['Mit freundlichen Grüßen', '안녕히 계십시오 (격식 있는 끝인사)']] }
+  ],
+  uebung: [
+    { t: 'fill', q: 'Hiermit kündige ich meine Mitgliedschaft ___ 30. Juni.', a: ['zum'], e: '계약이 끝나는 날짜는 zum + 날짜로 말해요.' },
+    { t: 'mc', q: '「기한에 맞춰」를 뜻하는 말은?', o: ['fristlos', 'fristgerecht', 'vorzeitig'], a: 1, e: 'fristgerecht는 「해지 기한을 지켜서」, fristlos는 「기한 없이 즉시」, vorzeitig는 「기간보다 일찍」이에요.' },
+    { t: 'fix', q: 'Hiermit ich kündige den Vertrag.', a: ['Hiermit kündige ich den Vertrag.'], e: 'hiermit 바로 뒤에 동사가 와요.' },
+    { t: 'mc', q: '알맞은 것은? Bitte bestätigen Sie ___ die Kündigung schriftlich.', o: ['mich', 'mir', 'ich'], a: 1, e: '「나에게 확인해 주다」는 3격 mir예요.' },
+    { t: 'fill', q: 'Ich kündige wegen ___ Umzugs nach München. (mein)', a: ['meines'], e: 'wegen + 2격이에요. 남성 2격은 meines이고 명사에 -s가 붙어요.' },
+    { t: 'fill', q: 'Zugleich ___ ich die Einzugsermächtigung. (widerrufen)', a: ['widerrufe'], e: 'widerrufen은 비분리동사예요. 앞부분이 떨어지지 않아요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie sind seit zwei Jahren Mitglied im Fitnessstudio „FitPlus“ in Köln. Weil Sie aus beruflichen Gründen nach München ziehen, möchten Sie den Vertrag beenden. Schreiben Sie eine Kündigung.',
+    punkte: ['Kündigen Sie den Vertrag und nennen Sie ein Datum.', 'Begründen Sie die Kündigung.', 'Klären Sie die Zahlung der Beiträge.', 'Bitten Sie um eine schriftliche Bestätigung.'],
+    close: 'Schreiben Sie etwa 90–130 Wörter. Vergessen Sie nicht Betreff, Anrede und Gruß.',
+    ko: {
+      lead: '쾰른의 헬스장 「FitPlus」에 2년 전부터 다니고 있어요. 직장 때문에 뮌헨으로 이사하게 되어 계약을 끝내려고 해요. 해지 통지서를 쓰세요.',
+      punkte: ['계약을 해지하고 날짜를 밝히세요.', '해지하는 이유를 쓰세요.', '회비 납부를 정리하세요.', '서면 확인을 요청하세요.'],
+      close: '90–130단어 정도로 쓰세요. 제목, 부르는 말, 끝인사를 잊지 마세요.'
+    }
+  },
+  check: ['제목에 Kündigung과 회원 번호를 썼어요.', 'Hiermit kündige ich …로 해지를 분명히 선언했어요.', '계약이 끝나는 날짜를 zum으로 썼어요.', '이유를 한두 문장으로 썼어요.', '자동이체에 대해 썼어요.', '서면 확인을 요청했어요.', '감정적인 표현 없이 짧게 썼어요.', 'Mit freundlichen Grüßen과 내 이름으로 끝냈어요.'],
+  muster: {
+    de: [
+      'Kündigung meiner Mitgliedschaft, Mitgliedsnummer 20417',
+      'Sehr geehrte Damen und Herren,',
+      'hiermit kündige ich meine Mitgliedschaft in Ihrem Studio fristgerecht zum 30. Juni, hilfsweise zum nächstmöglichen Zeitpunkt.',
+      'Grund dafür ist mein beruflich bedingter Umzug nach München. Da es an meinem neuen Wohnort kein Studio Ihrer Kette gibt, kann ich Ihr Angebot künftig nicht mehr nutzen. Eine Meldebescheinigung reiche ich Ihnen gern nach.',
+      'Zugleich widerrufe ich die Ihnen erteilte Einzugsermächtigung zum Vertragsende. Bitte buchen Sie nach diesem Datum keine Beiträge mehr von meinem Konto ab.',
+      'Bitte bestätigen Sie mir den Eingang dieses Schreibens sowie das genaue Datum des Vertragsendes schriftlich.',
+      'Vielen Dank im Voraus.',
+      'Mit freundlichen Grüßen\nMinseo Kwon'
+    ],
+    ko: [
+      '회원 계약 해지, 회원 번호 20417',
+      '담당자님께,',
+      '이 편지로 귀 지점의 제 회원 계약을 기한에 맞춰 6월 30일 자로, 그것이 안 되면 가능한 가장 빠른 시점에 해지합니다.',
+      '이유는 직장 때문에 뮌헨으로 이사하기 때문입니다. 새로 살 곳에 귀사의 지점이 없어 앞으로는 시설을 이용할 수 없습니다. 거주 등록 확인서는 나중에 기꺼이 내겠습니다.',
+      '아울러 귀사에 드린 자동이체 동의를 계약 종료일 자로 철회합니다. 이 날짜 이후로는 제 계좌에서 회비를 인출하지 마시기 바랍니다.',
+      '이 편지를 받으셨다는 것과 계약이 끝나는 정확한 날짜를 서면으로 확인해 주시기 바랍니다.',
+      '미리 감사드립니다.',
+      '안녕히 계십시오.\n권민서 드림'
+    ],
+    notes: [
+      { de: 'hiermit kündige ich … fristgerecht zum 30. Juni, hilfsweise zum nächstmöglichen Zeitpunkt.', ko: '해지 통지서의 굳어진 문장이에요. hilfsweise 뒤의 말로 날짜가 틀렸을 때를 대비해요.' },
+      { de: 'mein beruflich bedingter Umzug', ko: 'beruflich bedingt는 「직장 때문에 생긴」이에요. 과거분사가 형용사로 쓰였어요.' },
+      { de: 'die Ihnen erteilte Einzugsermächtigung', ko: '분사 구문이에요. 「귀사에 드린 자동이체 동의」. 관계문 die ich Ihnen erteilt habe를 줄인 꼴이에요.' },
+      { de: 'Bitte buchen Sie … keine Beiträge mehr von meinem Konto ab.', ko: 'abbuchen은 분리동사예요. kein … mehr는 「더는 ~않다」.' },
+      { de: 'Bitte bestätigen Sie mir den Eingang dieses Schreibens … schriftlich.', ko: 'jemandem etwas bestätigen이에요. dieses Schreibens는 2격이에요.' }
     ]
   }
 },
@@ -2004,6 +3563,422 @@ window.SCHREIB_DATA = [
       { de: 'Dabei ist mir bewusst geworden, dass … nicht ausreichen, um … zu vermitteln.', ko: '경험에서 깨달은 점을 말해요. 「나는 이런 사람이다」가 아니라 「이런 일을 겪고 이것을 알게 됐다」로 써요.' },
       { de: 'Ihr Studiengang überzeugt mich vor allem durch …', ko: '이 대학을 고른 이유예요. 과정의 중점 분야와 실습처럼 그 대학에만 있는 것을 짚었어요.' },
       { de: 'Langfristig strebe ich an, Lehrmaterialien zu entwickeln, die auf … zugeschnitten sind.', ko: 'anstreben은 분리동사예요. auf etwas zugeschnitten sein = 무엇에 꼭 맞춰져 있다.' }
+    ]
+  }
+},
+{
+  id: 'c1-06', level: 'C1', no: 6,
+  title: 'Forumsbeitrag: Unbezahlte Praktika', titleKo: '포럼 토론 글 쓰기: 무급 인턴',
+  type: 'Forumsbeitrag', typeKo: '포럼 토론 글',
+  exam: 'Goethe-Zertifikat C1 쓰기 Teil 1(포럼 토론 글)과 비슷한 유형',
+  time: 45, words: [220, 270],
+  intro: '온라인 포럼의 토론에 내 글을 올려요. 요구 사항 네 가지를 모두 다루면서도 하나의 흐름으로 읽히게 쓰는 것이 C1의 과제예요. 입장을 조건과 함께 정교하게 밝히는 표현을 익혀요.',
+  goals: ['요구 사항 네 가지를 문단 하나씩에 담고 서로 이어요', 'grundsätzlich … dennoch, sobald, wer … 문장으로 입장에 조건을 달아요', '명사화와 sich lassen 구문으로 문체를 압축해요'],
+  aufbau: [
+    { de: 'Einstieg mit Bezug zur Diskussion', ko: '토론에 이어 들어가기', ex: 'Die Diskussion in diesem Forum zeigt, wie unterschiedlich … bewertet werden.' },
+    { de: 'Eigene Position', ko: '내 입장', ex: 'Grundsätzlich halte ich unbezahlte Praktika für problematisch, sobald …' },
+    { de: 'Bedeutung für den Berufseinstieg', ko: '취업에서의 의미', ex: 'Dennoch wäre es falsch, den Wert von Praktika generell infrage zu stellen.' },
+    { de: 'Alternativen', ko: '다른 방법', ex: 'Berufserfahrung lässt sich allerdings auch auf anderen Wegen sammeln.' },
+    { de: 'Vorteile der Alternativen', ko: '그 방법의 장점', ex: 'Der Vorteil solcher Alternativen liegt auf der Hand: …' },
+    { de: 'Fazit', ko: '결론', ex: 'Mein Fazit lautet daher: Praktika ja, aber nicht um jeden Preis.' }
+  ],
+  tipps: [
+    '포럼 글이라도 C1에서는 말하듯 쓰지 않아요. 부르는 말 없이 토론에 이어지는 문장으로 시작하고, 문체는 중립적으로 유지해요.',
+    '요구 사항의 문장을 그대로 옮기지 말고 바꿔 써요. Berufserfahrung sammeln → auf anderen Wegen in die Praxis kommen',
+    '입장에 조건을 달면 글이 정교해져요. 「무급 인턴은 나쁘다」보다 「몇 주를 넘기면 문제가 된다」가 C1다운 주장이에요.',
+    '문단의 첫 문장이 앞 문단을 받아야 해요. Dennoch, Allerdings, Der Vorteil solcher Alternativen처럼 앞 내용을 가리키는 말로 시작해요.'
+  ],
+  fehler: [
+    { f: 'Wer drei Monate Vollzeit arbeitet, er sollte bezahlt werden.', r: 'Wer drei Monate Vollzeit arbeitet, sollte bezahlt werden.', e: 'wer로 시작하는 문장 뒤에는 주어를 다시 쓰지 않아요. 격이 같으면 der도 생략해요.' },
+    { f: 'Es wäre falsch, den Wert von Praktika in Frage stellen.', r: 'Es wäre falsch, den Wert von Praktika infrage zu stellen.', e: 'Es wäre falsch 뒤에는 zu + 원형이 와요.' },
+    { f: 'Berufserfahrung lässt sich auch anders gesammelt.', r: 'Berufserfahrung lässt sich auch anders sammeln.', e: 'sich lassen 뒤에는 과거분사가 아니라 원형이 와요.' },
+    { f: 'Praktika sind kaum zu ersetzen, denn erst im Arbeitsalltag sich zeigt, ob …', r: 'Praktika sind kaum zu ersetzen, denn erst im Arbeitsalltag zeigt sich, ob …', e: 'denn 뒤는 주문장 어순이에요. erst im Arbeitsalltag이 첫 자리라 동사 zeigt가 두 번째예요.' }
+  ],
+  redemittel: [
+    { g: '토론에 이어 들어가기', items: [['Die Diskussion in diesem Forum zeigt, wie unterschiedlich … bewertet werden.', '이 포럼의 토론은 …에 대한 평가가 얼마나 다른지 보여 줘요.'], ['Ich möchte etwas differenzierter antworten.', '저는 조금 더 나누어 답하고 싶어요.'], ['Aus eigener Erfahrung kann ich dazu Folgendes beitragen.', '제 경험에서 다음과 같은 점을 보탤 수 있어요.']] },
+    { g: '조건을 달아 입장 밝히기', items: [['Grundsätzlich halte ich … für problematisch, sobald …', '원칙적으로 저는 …하면 곧 …가 문제라고 봐요.'], ['Wer …, sollte dafür auch entlohnt werden.', '…하는 사람은 그에 대한 대가도 받아야 해요.'], ['Hinzu kommt ein Gerechtigkeitsproblem.', '여기에 공정성의 문제가 더해져요.'], ['Dennoch wäre es falsch, … generell infrage zu stellen.', '그렇다고 …를 통째로 의심하는 것은 잘못일 거예요.']] },
+    { g: '의미 설명하기', items: [['Gerade für den Berufseinstieg sind Praktika kaum zu ersetzen.', '특히 취업에서 인턴은 다른 것으로 바꾸기 어려워요.'], ['Erst im Arbeitsalltag zeigt sich, ob …', '일하는 일상 속에서야 …인지 드러나요.'], ['Zudem entstehen Kontakte, die sich später als entscheidend erweisen können.', '또한 나중에 결정적이었다고 밝혀질 수 있는 인맥이 생겨요.']] },
+    { g: '다른 방법과 장점 말하기', items: [['Berufserfahrung lässt sich auch auf anderen Wegen sammeln.', '직업 경험은 다른 길로도 쌓을 수 있어요.'], ['Zu denken ist etwa an Werkstudentenstellen.', '예를 들어 근로 학생 자리를 생각해 볼 수 있어요.'], ['Der Vorteil solcher Alternativen liegt auf der Hand.', '이런 방법의 장점은 분명해요.'], ['…, sodass sie mehr Verantwortung übernehmen als …', '그래서 …보다 더 큰 책임을 맡아요.']] },
+    { g: '결론 맺기', items: [['Mein Fazit lautet daher: …', '그래서 제 결론은 이래요. …'], ['Wer Leistung erwartet, muss sie auch honorieren.', '성과를 기대하는 쪽은 그에 대한 대가도 치러야 해요.'], ['… ja, aber nicht um jeden Preis.', '…는 좋지만 어떤 대가를 치르더라도 그런 것은 아니에요.']] }
+  ],
+  uebung: [
+    { t: 'fix', q: 'Wer drei Monate Vollzeit arbeitet, er sollte bezahlt werden.', a: ['Wer drei Monate Vollzeit arbeitet, sollte bezahlt werden.', 'Wer drei Monate Vollzeit arbeitet, der sollte bezahlt werden.'], e: 'wer 문장 뒤에는 인칭대명사 er를 쓰지 않아요. 쓰려면 지시대명사 der를 써요.' },
+    { t: 'fill', q: 'Berufserfahrung ___ sich auch auf anderen Wegen sammeln.', a: ['lässt'], e: 'sich lassen + 원형은 「~될 수 있다」예요. 주어가 단수라 lässt예요.' },
+    { t: 'mc', q: '「~하자마자, ~하면 곧」을 뜻하는 접속사는?', o: ['sobald', 'solange', 'sofern'], a: 0, e: 'sobald는 「~하자마자」, solange는 「~하는 동안」, sofern은 「~라는 조건이라면」이에요.' },
+    { t: 'fill', q: 'Es entstehen Kontakte, die sich später ___ entscheidend erweisen können.', a: ['als'], e: 'sich als + 형용사 erweisen은 「~인 것으로 밝혀지다」예요.' },
+    { t: 'mc', q: '알맞은 것은? Praktika sind für den Berufseinstieg kaum ___.', o: ['ersetzt', 'zu ersetzen', 'ersetzend'], a: 1, e: 'sein + zu + 원형은 「~될 수 있다, ~되어야 한다」는 수동의 뜻이에요.' },
+    { t: 'fill', q: 'Der Vorteil solcher Alternativen liegt auf der ___.', a: ['Hand'], e: 'auf der Hand liegen은 「분명하다, 뻔하다」는 굳은 표현이에요.' }
+  ],
+  aufgabe: {
+    lead: 'In einem Online-Forum für Studierende wird über das Thema „Unbezahlte Praktika – Sprungbrett oder Ausbeutung?“ diskutiert. Schreiben Sie einen Beitrag für das Forum.',
+    punkte: ['Äußern Sie Ihre Meinung zu unbezahlten Praktika.', 'Begründen Sie, warum Praktika für den Berufseinstieg wichtig sind.', 'Nennen Sie andere Möglichkeiten, Berufserfahrung zu sammeln.', 'Nennen Sie Vorteile dieser Möglichkeiten.'],
+    close: 'Schreiben Sie mindestens 220 Wörter. Denken Sie an eine Einleitung und einen Schluss. Bei der Bewertung wird darauf geachtet, wie genau die Inhaltspunkte bearbeitet sind, wie korrekt der Text ist und wie gut die Sätze und Abschnitte verknüpft sind.',
+    ko: {
+      lead: '대학생 온라인 포럼에서 「무급 인턴 – 발판인가, 착취인가?」라는 주제로 토론하고 있어요. 이 포럼에 올릴 글을 쓰세요.',
+      punkte: ['무급 인턴에 대한 내 의견을 말하세요.', '인턴이 취업에 왜 중요한지 근거를 대세요.', '직업 경험을 쌓을 수 있는 다른 방법을 드세요.', '그 방법들의 장점을 쓰세요.'],
+      close: '220단어 이상 쓰세요. 도입과 결론을 넣으세요. 채점에서는 요구 사항을 얼마나 정확히 다뤘는지, 글이 얼마나 정확한지, 문장과 문단이 얼마나 잘 이어지는지를 봐요.'
+    }
+  },
+  check: ['토론에 이어지는 문장으로 시작했어요.', '무급 인턴에 대한 내 입장을 조건과 함께 밝혔어요.', '인턴이 취업에 중요한 이유를 썼어요.', '다른 방법을 두 가지 이상 들었어요.', '그 방법의 장점을 썼어요.', '문단의 첫 문장이 앞 문단을 받아요.', '요구 사항의 문장을 그대로 옮기지 않았어요.', '결론으로 끝냈어요.'],
+  muster: {
+    de: [
+      'Die Diskussion in diesem Forum zeigt, wie unterschiedlich unbezahlte Praktika bewertet werden. Ich selbst habe während meines Studiums zwei Praktika absolviert, eines davon ohne jede Vergütung, und möchte deshalb etwas differenzierter antworten.',
+      'Grundsätzlich halte ich unbezahlte Praktika für problematisch, sobald sie länger als wenige Wochen dauern. Wer drei Monate lang Vollzeit arbeitet, leistet in der Regel einen echten Beitrag zum Unternehmen und sollte dafür auch entlohnt werden. Hinzu kommt ein Gerechtigkeitsproblem: Unbezahlt arbeiten kann nur, wer von den Eltern unterstützt wird. Alle anderen bleiben von begehrten Branchen wie Medien oder Kultur faktisch ausgeschlossen.',
+      'Dennoch wäre es falsch, den Wert von Praktika generell infrage zu stellen. Gerade für den Berufseinstieg sind sie kaum zu ersetzen, denn erst im Arbeitsalltag zeigt sich, ob die eigenen Vorstellungen von einem Beruf der Realität standhalten. Zudem entstehen Kontakte, die sich später als entscheidend erweisen können.',
+      'Berufserfahrung lässt sich allerdings auch auf anderen Wegen sammeln. Zu denken ist etwa an Werkstudentenstellen, an Projektarbeiten in Kooperation mit Unternehmen oder an ehrenamtliches Engagement.',
+      'Der Vorteil solcher Alternativen liegt auf der Hand: Werkstudierende werden bezahlt und über einen längeren Zeitraum eingebunden, sodass sie mehr Verantwortung übernehmen als Praktikanten, die nach sechs Wochen wieder gehen. Ehrenamtliche Tätigkeiten wiederum fördern Fähigkeiten wie Organisationstalent und Teamarbeit, auf die Arbeitgeber großen Wert legen.',
+      'Mein Fazit lautet daher: Praktika ja, aber nicht um jeden Preis. Wer Leistung erwartet, muss sie auch honorieren.'
+    ],
+    ko: [
+      '이 포럼의 토론은 무급 인턴에 대한 평가가 얼마나 다른지 보여 줘요. 저도 대학 때 인턴을 두 번 했고 그 가운데 한 번은 아무 보수도 받지 못했어요. 그래서 조금 더 나누어 답하고 싶어요.',
+      '원칙적으로 저는 무급 인턴이 몇 주를 넘기면 곧 문제가 된다고 봐요. 석 달 동안 전일제로 일하는 사람은 대개 회사에 실제로 기여하므로 그에 대한 대가도 받아야 해요. 여기에 공정성의 문제가 더해져요. 보수 없이 일할 수 있는 사람은 부모의 지원을 받는 사람뿐이에요. 나머지는 미디어나 문화처럼 인기 있는 분야에서 사실상 배제돼요.',
+      '그렇다고 인턴의 가치를 통째로 의심하는 것은 잘못일 거예요. 특히 취업에서 인턴은 다른 것으로 바꾸기 어려워요. 어떤 직업에 대해 품은 생각이 현실 앞에서도 유지되는지는 일하는 일상 속에서야 드러나기 때문이에요. 또한 나중에 결정적이었다고 밝혀질 수 있는 인맥이 생겨요.',
+      '하지만 직업 경험은 다른 길로도 쌓을 수 있어요. 예를 들어 근로 학생 자리, 기업과 함께하는 프로젝트 과제, 자원봉사를 생각해 볼 수 있어요.',
+      '이런 방법의 장점은 분명해요. 근로 학생은 보수를 받고 더 긴 기간 동안 조직에 참여하므로, 6주 뒤에 떠나는 인턴보다 더 큰 책임을 맡아요. 한편 자원봉사는 기업이 중요하게 여기는 조직력과 협업 같은 능력을 길러 줘요.',
+      '그래서 제 결론은 이래요. 인턴은 좋지만 어떤 대가를 치르더라도 그런 것은 아니에요. 성과를 기대하는 쪽은 그에 대한 대가도 치러야 해요.'
+    ],
+    notes: [
+      { de: 'Grundsätzlich halte ich … für problematisch, sobald sie länger als wenige Wochen dauern.', ko: 'grundsätzlich와 sobald로 입장에 조건을 달았어요. 무조건적인 주장보다 정교해요.' },
+      { de: 'Wer drei Monate lang Vollzeit arbeitet, leistet … und sollte dafür auch entlohnt werden.', ko: 'wer 문장이 주어 역할을 해요. 뒤에 주어를 다시 쓰지 않아요.' },
+      { de: 'Unbezahlt arbeiten kann nur, wer von den Eltern unterstützt wird.', ko: '원형 구문을 첫 자리에 두고 wer 문장을 뒤로 보내 「~뿐이다」를 강조했어요.' },
+      { de: 'Dennoch wäre es falsch, den Wert von Praktika generell infrage zu stellen.', ko: 'Dennoch가 앞 문단을 받으면서 두 번째 요구 사항으로 넘어가요.' },
+      { de: '…, ob die eigenen Vorstellungen von einem Beruf der Realität standhalten.', ko: 'standhalten + 3격은 「~을 견뎌 내다」예요. ob 문장이라 동사가 끝에 붙어요.' },
+      { de: 'Zu denken ist etwa an …', ko: 'sein + zu + 원형으로 「~를 생각해 볼 수 있다」를 객관적으로 표현했어요. ich를 쓰지 않는 C1 문체예요.' }
+    ]
+  }
+},
+{
+  id: 'c1-07', level: 'C1', no: 7,
+  title: 'Widerspruch gegen einen Bescheid', titleKo: '결정에 이의 제기하기',
+  type: 'Widerspruch', typeKo: '이의 신청서',
+  exam: '독일 대학과 관청의 결정에 이의를 제기하는 격식 서한(Widerspruch) · 대학 생활에서 실제로 쓰는 글',
+  time: 30, words: [140, 190],
+  intro: '교환학기에 딴 학점을 인정하지 않는다는 시험 사무처의 결정에 이의를 제기하는 서한을 써요. 감정을 빼고 결정문, 근거, 증빙, 요청을 차례로 제시하는 관청 문체를 익혀요.',
+  goals: ['제목에 결정문의 날짜와 학번을 밝혀요', 'Widerspruch einlegen, zur Begründung anführen, in Aussicht stellen 같은 기능동사 구문을 써요', '상대의 근거를 접속법 I로 옮긴 뒤 증빙으로 반박해요'],
+  aufbau: [
+    { de: 'Betreff', ko: '제목', ex: 'Widerspruch gegen den Bescheid vom 12. März, Matrikelnummer 3120458' },
+    { de: 'Widerspruch', ko: '이의 선언', ex: 'gegen Ihren oben genannten Bescheid … lege ich hiermit fristgerecht Widerspruch ein.' },
+    { de: 'Wiedergabe der Begründung', ko: '상대 근거 옮기기', ex: 'Zur Begründung führen Sie an, die Module seien … nicht gleichwertig.' },
+    { de: 'Eigene Begründung mit Nachweisen', ko: '내 근거와 증빙', ex: 'Wie aus den beigefügten Modulbeschreibungen hervorgeht, …' },
+    { de: 'Bitte um erneute Prüfung', ko: '재검토 요청', ex: 'Ich bitte Sie daher, die Entscheidung … erneut zu prüfen.' },
+    { de: 'Gruß und Anlagen', ko: '끝인사와 첨부', ex: 'Mit freundlichen Grüßen / Anlagen: …' }
+  ],
+  tipps: [
+    '이의 신청에는 기한(대개 결정문을 받은 뒤 한 달)이 있어요. fristgerecht라는 말로 기한을 지켰다는 것을 밝혀요.',
+    '상대의 근거는 접속법 I로 옮겨요. 내 생각이 아니라 상대의 말이라는 것이 문법으로 드러나요.',
+    '「부당하다」 같은 평가어 대신 nicht nachvollziehen können(납득할 수 없다)을 쓰고, 곧바로 증빙을 가리켜요.',
+    '첨부한 서류는 끝인사 아래 Anlagen에 적어요. 본문에서는 beigefügt, beiliegend로 가리켜요.'
+  ],
+  fehler: [
+    { f: 'Ich lege hiermit Widerspruch gegen Ihrem Bescheid ein.', r: 'Ich lege hiermit Widerspruch gegen Ihren Bescheid ein.', e: 'gegen 뒤는 4격이에요. der Bescheid의 4격은 Ihren Bescheid예요.' },
+    { f: 'Sie führen an, die Module sind nicht gleichwertig.', r: 'Sie führen an, die Module seien nicht gleichwertig.', e: '상대의 말을 옮길 때는 접속법 I(seien)을 써요.' },
+    { f: 'Wie aus den beigefügten Unterlagen hervorgeht, die Lernziele stimmen überein.', r: 'Wie aus den beigefügten Unterlagen hervorgeht, stimmen die Lernziele überein.', e: '종속절이 앞에 오면 주절은 동사로 시작해요.' },
+    { f: 'Ich bitte Sie, die Entscheidung unter Berücksichtigung den Unterlagen erneut zu prüfen.', r: 'Ich bitte Sie, die Entscheidung unter Berücksichtigung der Unterlagen erneut zu prüfen.', e: 'unter Berücksichtigung 뒤는 2격이에요.' }
+  ],
+  redemittel: [
+    { g: '이의 선언하기', items: [['Gegen Ihren Bescheid vom 12. März lege ich hiermit fristgerecht Widerspruch ein.', '3월 12일 자 귀 기관의 결정에 대해 이 서한으로 기한 안에 이의를 제기합니다.'], ['… mit dem mein Antrag auf Anerkennung abgelehnt wurde', '제 인정 신청을 거부한 (결정)'], ['Ich beziehe mich auf Ihr Schreiben vom …', '…일 자 귀 기관의 서한과 관련하여 씁니다.']] },
+    { g: '상대 근거 옮기기', items: [['Zur Begründung führen Sie an, die Module seien nicht gleichwertig.', '귀 기관은 그 근거로 해당 과목들이 동등하지 않다는 점을 들고 있습니다.'], ['In Ihrem Bescheid heißt es, …', '귀 기관의 결정문에는 …라고 되어 있습니다.'], ['Diese Einschätzung kann ich nicht nachvollziehen.', '이 판단은 납득할 수 없습니다.']] },
+    { g: '증빙으로 반박하기', items: [['Wie aus den beigefügten Modulbeschreibungen hervorgeht, …', '첨부한 과목 설명서에서 알 수 있듯이 …'], ['Sowohl die Lernziele als auch der Arbeitsaufwand stimmen weitgehend überein.', '학습 목표와 학습량이 모두 대체로 일치합니다.'], ['Zudem wurde die Anerkennung im Learning Agreement ausdrücklich in Aussicht gestellt.', '또한 학습 계약서에서 학점 인정을 명시적으로 약속받았습니다.'], ['Den entsprechenden Nachweis füge ich bei.', '해당 증빙을 첨부합니다.']] },
+    { g: '재검토 요청하기', items: [['Ich bitte Sie daher, die Entscheidung erneut zu prüfen.', '그러므로 결정을 다시 검토해 주시기 바랍니다.'], ['unter Berücksichtigung der beiliegenden Unterlagen', '동봉한 서류를 고려하여'], ['Sollten weitere Nachweise erforderlich sein, reiche ich diese umgehend nach.', '증빙이 더 필요하면 곧바로 추가로 내겠습니다.']] },
+    { g: '마무리와 끝인사', items: [['Für eine schriftliche Rückmeldung wäre ich Ihnen dankbar.', '서면으로 답변해 주시면 감사하겠습니다.'], ['Mit freundlichen Grüßen', '안녕히 계십시오 (격식 있는 끝인사)'], ['Anlagen', '첨부']] }
+  ],
+  uebung: [
+    { t: 'fill', q: 'Gegen Ihren Bescheid ___ ich hiermit Widerspruch ein.', a: ['lege'], e: 'Widerspruch einlegen은 「이의를 제기하다」는 기능동사 구문이에요.' },
+    { t: 'mc', q: '상대의 근거를 옮기는 문장으로 알맞은 것은?', o: ['Sie führen an, die Module sind nicht gleichwertig.', 'Sie führen an, die Module seien nicht gleichwertig.', 'Sie führen an, die Module nicht gleichwertig sind.'], a: 1, e: '남의 말을 옮길 때는 접속법 I을 써요. sein의 3인칭 복수 접속법 I은 seien이에요.' },
+    { t: 'fix', q: 'Wie aus den Unterlagen hervorgeht, die Lernziele stimmen überein.', a: ['Wie aus den Unterlagen hervorgeht, stimmen die Lernziele überein.'], e: '종속절 다음의 주절은 동사로 시작해요.' },
+    { t: 'fill', q: 'Die Anerkennung wurde ausdrücklich in Aussicht ___. (stellen)', a: ['gestellt'], e: 'in Aussicht stellen은 「약속하다, 기대하게 하다」는 기능동사 구문이에요. 수동태라 과거분사를 써요.' },
+    { t: 'mc', q: '알맞은 것은? ___ weitere Nachweise erforderlich sein, reiche ich diese nach.', o: ['Sollten', 'Wenn', 'Würden'], a: 0, e: 'wenn을 빼고 sollten을 문장 맨 앞에 두면 격식 있는 조건문이 돼요.' },
+    { t: 'fill', q: 'unter Berücksichtigung ___ beiliegenden Unterlagen', a: ['der'], e: 'unter Berücksichtigung + 2격이에요. 복수 2격 관사는 der예요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie haben ein Semester an einer Universität in Seoul studiert. Das Prüfungsamt Ihrer deutschen Universität hat mit Bescheid vom 12. März Ihren Antrag abgelehnt, zwei dort bestandene Module anzuerkennen. Sie halten die Entscheidung für falsch. Schreiben Sie einen Widerspruch an das Prüfungsamt.',
+    punkte: ['Beziehen Sie sich auf den Bescheid und legen Sie Widerspruch ein.', 'Geben Sie die Begründung des Prüfungsamts wieder.', 'Begründen Sie Ihren Widerspruch und verweisen Sie auf Nachweise.', 'Bitten Sie um eine erneute Prüfung.'],
+    close: 'Schreiben Sie etwa 140–190 Wörter. Achten Sie auf Betreff, Anrede, Gruß und einen sachlichen Stil.',
+    ko: {
+      lead: '서울의 한 대학에서 한 학기를 공부했어요. 독일 대학의 시험 사무처가 3월 12일 자 결정문으로, 거기서 합격한 두 과목을 인정해 달라는 신청을 거부했어요. 이 결정이 잘못됐다고 생각해요. 시험 사무처에 이의 신청서를 쓰세요.',
+      punkte: ['결정문을 언급하고 이의를 제기하세요.', '시험 사무처의 근거를 옮기세요.', '이의의 근거를 대고 증빙을 가리키세요.', '재검토를 요청하세요.'],
+      close: '140–190단어 정도로 쓰세요. 제목, 부르는 말, 끝인사와 객관적인 문체에 주의하세요.'
+    }
+  },
+  check: ['제목에 결정문의 날짜와 학번을 썼어요.', '첫 문장에서 이의를 분명히 선언했어요.', '상대의 근거를 접속법 I로 옮겼어요.', '내 근거를 두 가지 이상 썼어요.', '첨부한 증빙을 본문에서 가리켰어요.', '재검토를 요청했어요.', '감정적인 표현 없이 객관적으로 썼어요.', '끝인사 아래에 첨부 서류를 적었어요.'],
+  muster: {
+    de: [
+      'Widerspruch gegen den Bescheid vom 12. März (Anerkennung von Studienleistungen), Matrikelnummer 3120458',
+      'Sehr geehrte Damen und Herren,',
+      'gegen Ihren oben genannten Bescheid, mit dem mein Antrag auf Anerkennung zweier im Ausland erbrachter Studienleistungen abgelehnt wurde, lege ich hiermit fristgerecht Widerspruch ein.',
+      'Zur Begründung führen Sie an, die an meiner Gastuniversität in Seoul belegten Module seien mit den hiesigen Pflichtmodulen inhaltlich nicht gleichwertig. Diese Einschätzung kann ich nicht nachvollziehen. Wie aus den beigefügten Modulbeschreibungen hervorgeht, stimmen sowohl die Lernziele als auch der Arbeitsaufwand von jeweils sechs Leistungspunkten weitgehend überein. Zudem wurde die Anerkennung im Learning Agreement, das vor meiner Abreise von der Fachstudienberatung unterzeichnet wurde, ausdrücklich in Aussicht gestellt.',
+      'Ich bitte Sie daher, die Entscheidung unter Berücksichtigung der beiliegenden Unterlagen erneut zu prüfen. Sollten weitere Nachweise erforderlich sein, reiche ich diese umgehend nach.',
+      'Für eine schriftliche Rückmeldung wäre ich Ihnen dankbar, da meine Anmeldung zur Abschlussarbeit von der Anerkennung abhängt.',
+      'Mit freundlichen Grüßen\nHaeun Jung',
+      'Anlagen: Modulbeschreibungen, Notenübersicht der Gastuniversität, Learning Agreement'
+    ],
+    ko: [
+      '3월 12일 자 결정(학업 성과 인정)에 대한 이의 신청, 학번 3120458',
+      '담당자님께,',
+      '외국에서 취득한 두 과목의 학점을 인정해 달라는 제 신청을 거부한 위 결정에 대해 이 서한으로 기한 안에 이의를 제기합니다.',
+      '귀 사무처는 그 근거로, 제가 서울의 교환 대학에서 수강한 과목들이 이곳의 필수 과목과 내용상 동등하지 않다는 점을 들고 있습니다. 이 판단은 납득할 수 없습니다. 첨부한 과목 설명서에서 알 수 있듯이 학습 목표와 각 6학점의 학습량이 모두 대체로 일치합니다. 또한 출국 전에 학과 상담 담당자가 서명한 학습 계약서에서 학점 인정을 명시적으로 약속받았습니다.',
+      '그러므로 동봉한 서류를 고려하여 결정을 다시 검토해 주시기 바랍니다. 증빙이 더 필요하면 곧바로 추가로 내겠습니다.',
+      '졸업 논문 등록이 학점 인정에 달려 있으므로 서면으로 답변해 주시면 감사하겠습니다.',
+      '안녕히 계십시오.\n정하은 드림',
+      '첨부: 과목 설명서, 교환 대학 성적표, 학습 계약서'
+    ],
+    notes: [
+      { de: 'gegen Ihren oben genannten Bescheid, mit dem mein Antrag … abgelehnt wurde, lege ich hiermit fristgerecht Widerspruch ein.', ko: '이의 신청서의 핵심 문장이에요. 관계문으로 어떤 결정인지 밝히고, 기능동사 구문 Widerspruch einlegen으로 끝냈어요.' },
+      { de: 'zweier im Ausland erbrachter Studienleistungen', ko: 'zwei의 2격 zweier예요. 관사가 없어서 분사 erbrachter도 2격 어미 -er를 가져요.' },
+      { de: 'Zur Begründung führen Sie an, die … Module seien … nicht gleichwertig.', ko: '상대의 근거를 접속법 I로 옮겼어요. 내 판단과 분명히 구별돼요.' },
+      { de: 'Wie aus den beigefügten Modulbeschreibungen hervorgeht, stimmen … überein.', ko: '주장을 곧바로 증빙에 연결했어요. hervorgehen aus + 3격은 「~에서 드러나다」.' },
+      { de: '… wurde … ausdrücklich in Aussicht gestellt.', ko: '기능동사 구문의 수동태예요. 누가 약속했는지보다 약속이 있었다는 사실을 앞세워요.' },
+      { de: 'Sollten weitere Nachweise erforderlich sein, reiche ich diese umgehend nach.', ko: 'wenn 없는 조건문이에요. sollten이 맨 앞에 오고 주절은 동사로 시작해요.' }
+    ]
+  }
+},
+{
+  id: 'c1-08', level: 'C1', no: 8,
+  title: 'Text und Grafik zusammenfassen', titleKo: '글과 그래프를 함께 요약하기',
+  type: 'Zusammenfassung von Text und Grafik', typeKo: '글·그래프 요약',
+  exam: 'digital TestDaF 쓰기 Aufgabe 2(글과 그래프 요약)와 같은 유형',
+  time: 30, words: [100, 150],
+  intro: '짧은 글과 그래프를 읽고 두 자료의 정보를 하나의 글로 요약해요. 내 의견은 쓰지 않아요. 글의 내용은 내 말로 줄이고, 그래프에서는 글과 관계있는 수치만 골라 두 자료를 서로 이어요.',
+  goals: ['글의 핵심을 원문과 다른 말로 줄여요', '그래프에서 글의 내용을 뒷받침하거나 보충하는 수치만 골라요', 'dem Text zufolge, die Grafik bestätigt로 두 자료의 관계를 밝혀요'],
+  aufbau: [
+    { de: 'Gemeinsames Thema', ko: '두 자료의 공통 주제', ex: 'Der Text und die Grafik befassen sich mit …' },
+    { de: 'Kernaussagen des Textes', ko: '글의 핵심 내용', ex: 'Dem Text zufolge reicht eine einmal abgeschlossene Ausbildung … nicht mehr aus.' },
+    { de: 'Wichtigste Daten der Grafik', ko: '그래프의 주요 수치', ex: 'Zwischen 2012 und 2022 ist die Teilnahmequote in allen Altersgruppen gestiegen.' },
+    { de: 'Bezug zwischen Text und Grafik', ko: '두 자료의 관계', ex: 'Die Grafik bestätigt die wachsende Bedeutung des Themas.' },
+    { de: 'Schlusssatz', ko: '마무리 문장', ex: 'Insgesamt zeigt sich, dass …' }
+  ],
+  tipps: [
+    '내 의견, 내 경험, 한국과의 비교는 쓰지 않아요. 두 자료에 있는 정보만 써요.',
+    '글의 문장을 베끼면 감점이에요. 동사를 명사로, 능동을 수동으로, 낱말을 비슷한 말로 바꿔요.',
+    '그래프의 수치를 모두 쓰지 않아요. 전체 흐름 하나, 가장 높은 값 하나, 가장 눈에 띄는 변화 하나면 충분해요.',
+    '두 자료를 따로 요약하고 끝내지 말고, 그래프가 글의 어떤 내용을 확인하거나 보충하는지 한 문장으로 써요.'
+  ],
+  fehler: [
+    { f: 'Laut dem Text zufolge reicht eine Ausbildung nicht mehr aus.', r: 'Dem Text zufolge reicht eine Ausbildung nicht mehr aus.', e: 'laut과 zufolge를 함께 쓰지 않아요. zufolge는 3격 명사 뒤에 와요.' },
+    { f: 'Ich finde, dass Weiterbildung sehr wichtig ist.', r: 'Dem Text zufolge ist Weiterbildung unverzichtbar geworden.', e: '요약에는 내 의견을 쓰지 않아요. 자료의 내용만 전해요.' },
+    { f: 'Die Teilnahmequote ist in allen Altersgruppen gestiegt.', r: 'Die Teilnahmequote ist in allen Altersgruppen gestiegen.', e: 'steigen의 과거분사는 gestiegen이에요.' },
+    { f: 'Den stärksten Zuwachs verzeichnet die 55- bis 64-Jährigen.', r: 'Den stärksten Zuwachs verzeichnen die 55- bis 64-Jährigen.', e: '주어는 복수 die 55- bis 64-Jährigen이에요. 4격 목적어가 앞에 와도 동사는 주어에 맞춰요.' }
+  ],
+  redemittel: [
+    { g: '공통 주제 밝히기', items: [['Der Text und die Grafik befassen sich mit der beruflichen Weiterbildung.', '글과 그래프는 직업 재교육을 다뤄요.'], ['Beide Materialien behandeln das Thema …', '두 자료는 모두 …라는 주제를 다뤄요.'], ['Im Mittelpunkt steht die Frage, …', '중심에는 …라는 물음이 있어요.']] },
+    { g: '글의 내용 전하기', items: [['Dem Text zufolge …', '글에 따르면 …'], ['Im Text wird betont, dass …', '글에서는 …라는 점을 강조해요.'], ['Als Hindernisse werden Zeitmangel und ungeklärte Kosten genannt.', '걸림돌로는 시간 부족과 해결되지 않은 비용 문제를 들어요.'], ['Davon profitieren demnach sowohl … als auch …', '그에 따르면 …와 … 모두 그 덕을 봐요.']] },
+    { g: '그래프의 수치 전하기', items: [['Zwischen 2012 und 2022 ist die Teilnahmequote in allen Altersgruppen gestiegen.', '2012년과 2022년 사이에 참여율이 모든 연령대에서 올랐어요.'], ['Am höchsten liegt sie mit 47 Prozent bei den 25- bis 34-Jährigen.', '25–34세가 47퍼센트로 가장 높아요.'], ['Den stärksten Zuwachs verzeichnen die 55- bis 64-Jährigen.', '가장 크게 늘어난 것은 55–64세예요.'], ['… deren Anteil von 21 auf 34 Prozent zugenommen hat', '그 비율이 21퍼센트에서 34퍼센트로 늘어난 …'], ['Nach wie vor bildet sich nur rund jeder Dritte weiter.', '여전히 세 명 가운데 한 명쯤만 재교육을 받아요.']] },
+    { g: '두 자료 잇기', items: [['Die Grafik bestätigt die wachsende Bedeutung des Themas.', '그래프는 이 주제가 점점 중요해지고 있음을 확인해 줘요.'], ['Die Grafik ergänzt den Text um konkrete Zahlen.', '그래프는 글에 구체적인 수치를 보태요.'], ['Im Unterschied zum Text zeigt die Grafik, dass …', '글과 달리 그래프는 …를 보여 줘요.']] },
+    { g: '마무리하기', items: [['Insgesamt zeigt sich, dass …', '전체적으로 …라는 것을 알 수 있어요.'], ['Zusammenfassend lässt sich festhalten, dass …', '요약하면 …라고 정리할 수 있어요.']] }
+  ],
+  uebung: [
+    { t: 'mc', q: '바른 것은?', o: ['Laut dem Text zufolge …', 'Dem Text zufolge …', 'Zufolge der Text …'], a: 1, e: 'zufolge는 3격 명사 뒤에 와요. laut과 함께 쓰지 않아요.' },
+    { t: 'mc', q: '요약문에 쓰면 안 되는 문장은?', o: ['Dem Text zufolge profitieren auch die Unternehmen.', 'Meiner Meinung nach sollten alle Betriebe die Kosten übernehmen.', 'Als Hindernis wird der Zeitmangel genannt.'], a: 1, e: '요약에는 내 의견을 쓰지 않아요.' },
+    { t: 'fill', q: 'Den stärksten Zuwachs ___ die 55- bis 64-Jährigen. (verzeichnen)', a: ['verzeichnen'], e: '주어가 복수라서 동사는 verzeichnen이에요. 문장 앞의 Den stärksten Zuwachs는 4격 목적어예요.' },
+    { t: 'fill', q: 'die 55- bis 64-Jährigen, ___ Anteil von 21 auf 34 Prozent zugenommen hat', a: ['deren'], e: '복수 명사를 받는 2격 관계대명사는 deren이에요.' },
+    { t: 'fix', q: 'Im Text wird betont, dass Weiterbildung ist unverzichtbar geworden.', a: ['Im Text wird betont, dass Weiterbildung unverzichtbar geworden ist.'], e: 'dass 문장에서는 변화한 동사 ist가 맨 끝에 와요.' },
+    { t: 'mc', q: '「Digitalisierung verändert die Anforderungen.」을 명사 중심으로 바꾼 것은?', o: ['die Veränderung der Anforderungen durch die Digitalisierung', 'die Digitalisierung der veränderten Anforderungen', 'die Anforderungen an die Veränderung'], a: 0, e: '동사를 명사로 바꾸면 목적어는 2격, 행위자는 durch + 4격이 돼요.' }
+  ],
+  aufgabe: {
+    lead: 'Fassen Sie die Informationen aus dem Text und der Grafik zusammen. Setzen Sie beide Materialien zueinander in Beziehung. Ihre eigene Meinung ist nicht gefragt.',
+    brief: 'Lernen hört nach der Ausbildung nicht auf\nWer heute einen Beruf erlernt, kann sich nicht darauf verlassen, ihn vierzig Jahre lang auf dieselbe Weise auszuüben. Digitalisierung und neue Technologien verändern die Anforderungen in fast allen Branchen. Fachleute betonen deshalb, dass berufliche Weiterbildung für Beschäftigte jeden Alters unverzichtbar geworden ist. Auch die Unternehmen haben etwas davon: Sie können offene Stellen leichter mit eigenen Mitarbeitenden besetzen. Allerdings fehlt vielen Beschäftigten im Alltag die Zeit, und nicht jeder Betrieb übernimmt die Kosten.',
+    chart: {
+      title: 'Teilnahme an beruflicher Weiterbildung nach Alter',
+      unit: 'Anteil der Beschäftigten in Prozent',
+      source: 'Quelle: Befragung von Beschäftigten (Beispieldaten für den Unterricht)',
+      series: ['2012', '2022'],
+      rows: [
+        { label: '25–34 Jahre', ko: '25–34세', v: [38, 47] },
+        { label: '35–44 Jahre', ko: '35–44세', v: [37, 46] },
+        { label: '45–54 Jahre', ko: '45–54세', v: [33, 43] },
+        { label: '55–64 Jahre', ko: '55–64세', v: [21, 34] }
+      ]
+    },
+    punkte: ['Nennen Sie das gemeinsame Thema.', 'Geben Sie die wichtigsten Aussagen des Textes wieder.', 'Beschreiben Sie die wichtigsten Informationen der Grafik.', 'Zeigen Sie, wie Text und Grafik zusammenhängen.'],
+    close: 'Schreiben Sie etwa 100–150 Wörter.',
+    ko: {
+      lead: '글과 그래프의 정보를 요약하세요. 두 자료를 서로 관련지으세요. 내 의견은 쓰지 않아요.',
+      brief: '배움은 직업 교육이 끝나도 끝나지 않는다\n오늘날 어떤 직업을 배운 사람은 그 일을 40년 동안 같은 방식으로 할 수 있으리라고 믿을 수 없어요. 디지털화와 새로운 기술이 거의 모든 분야에서 요구되는 능력을 바꾸고 있어요. 그래서 전문가들은 직업 재교육이 모든 연령의 직장인에게 꼭 필요해졌다고 강조해요. 기업에도 이로운 점이 있어요. 빈자리를 자기 직원으로 더 쉽게 채울 수 있어요. 다만 많은 직장인은 일상에서 시간이 부족하고, 모든 회사가 비용을 내 주는 것도 아니에요.',
+      punkte: ['공통 주제를 밝히세요.', '글의 가장 중요한 내용을 전하세요.', '그래프의 가장 중요한 정보를 설명하세요.', '글과 그래프가 어떻게 이어지는지 보여 주세요.'],
+      close: '100–150단어 정도로 쓰세요.'
+    }
+  },
+  check: ['첫 문장에서 두 자료의 공통 주제를 밝혔어요.', '글의 핵심 내용을 내 말로 바꿔 썼어요.', '그래프의 전체 흐름을 썼어요.', '가장 눈에 띄는 수치를 한두 개만 골라 썼어요.', '글과 그래프의 관계를 한 문장 이상으로 밝혔어요.', '내 의견이나 경험을 쓰지 않았어요.', '글의 문장을 그대로 베끼지 않았어요.', '100–150단어로 썼어요.'],
+  muster: {
+    de: [
+      'Der Text und die Grafik befassen sich mit der beruflichen Weiterbildung in Deutschland.',
+      'Dem Text zufolge reicht eine einmal abgeschlossene Ausbildung heute nicht mehr für ein ganzes Berufsleben aus, da der technische Wandel die Anforderungen in nahezu allen Branchen verändert. Von Weiterbildung profitieren demnach sowohl die Beschäftigten als auch die Unternehmen. Als Hindernisse werden Zeitmangel und ungeklärte Kosten genannt.',
+      'Die Grafik bestätigt die wachsende Bedeutung des Themas: Zwischen 2012 und 2022 ist die Teilnahmequote in allen Altersgruppen gestiegen. Am höchsten liegt sie mit 47 Prozent bei den 25- bis 34-Jährigen. Den stärksten Zuwachs verzeichnen jedoch die 55- bis 64-Jährigen, deren Anteil von 21 auf 34 Prozent zugenommen hat. Dennoch bildet sich in dieser Gruppe nach wie vor nur rund jeder Dritte weiter.',
+      'Insgesamt zeigt sich, dass die im Text beschriebene Notwendigkeit zunehmend erkannt wird, ältere Beschäftigte aber weiterhin seltener erreicht werden.'
+    ],
+    ko: [
+      '글과 그래프는 독일의 직업 재교육을 다뤄요.',
+      '글에 따르면 기술 변화가 거의 모든 분야에서 요구되는 능력을 바꾸기 때문에, 한 번 마친 직업 교육만으로는 이제 직업 생활 전체를 버틸 수 없어요. 그에 따르면 재교육은 직장인과 기업 모두에게 이로워요. 걸림돌로는 시간 부족과 해결되지 않은 비용 문제를 들어요.',
+      '그래프는 이 주제가 점점 중요해지고 있음을 확인해 줘요. 2012년과 2022년 사이에 참여율이 모든 연령대에서 올랐어요. 25–34세가 47퍼센트로 가장 높아요. 하지만 가장 크게 늘어난 것은 55–64세로, 그 비율이 21퍼센트에서 34퍼센트로 늘었어요. 그런데도 이 집단에서는 여전히 세 명 가운데 한 명쯤만 재교육을 받아요.',
+      '전체적으로, 글에서 말한 필요성을 점점 더 많은 사람이 알아차리고 있지만 나이 든 직장인에게는 여전히 덜 미친다는 것을 알 수 있어요.'
+    ],
+    notes: [
+      { de: 'Dem Text zufolge reicht eine einmal abgeschlossene Ausbildung … nicht mehr … aus', ko: '원문의 「40년 동안 같은 방식으로 할 수 없다」를 다른 말로 줄였어요. zufolge는 3격 명사 뒤에 와요.' },
+      { de: '…, da der technische Wandel die Anforderungen … verändert.', ko: '원문의 「Digitalisierung und neue Technologien」을 상위 개념 der technische Wandel로 묶었어요.' },
+      { de: 'Als Hindernisse werden Zeitmangel und ungeklärte Kosten genannt.', ko: '원문의 두 문장을 명사 두 개로 압축하고 수동태로 전했어요.' },
+      { de: 'Die Grafik bestätigt die wachsende Bedeutung des Themas: …', ko: '그래프 문단의 첫 문장에서 글과의 관계를 밝혔어요. 이 과제의 핵심 요구예요.' },
+      { de: 'Den stärksten Zuwachs verzeichnen jedoch die 55- bis 64-Jährigen, deren Anteil …', ko: '4격 목적어를 앞에 두어 강조했어요. deren은 복수 명사를 받는 2격 관계대명사예요.' },
+      { de: '…, dass die im Text beschriebene Notwendigkeit zunehmend erkannt wird, ältere Beschäftigte aber …', ko: '마무리 문장 하나에 글의 내용과 그래프의 내용을 함께 담았어요.' }
+    ]
+  }
+},
+{
+  id: 'c1-09', level: 'C1', no: 9,
+  title: 'Stellungnahme zu einem Text', titleKo: '글을 읽고 입장 밝히기',
+  type: 'Textgebundene Stellungnahme', typeKo: '글에 대한 입장문',
+  exam: '대학 세미나와 C1 시험에서 쓰는, 글을 읽고 입장을 밝히는 글',
+  time: 50, words: [230, 290],
+  intro: '짧은 글을 읽고 핵심 주장을 옮긴 뒤, 그 근거 하나하나에 동의하는지 따져 내 입장을 세워요. 글의 내용을 옮기는 말투와 내 판단을 밝히는 말투를 분명히 구별하는 것이 핵심이에요.',
+  goals: ['글의 주장을 접속법 I과 간접 화법 표현으로 옮겨요', 'stichhaltig, weniger überzeugend처럼 근거를 평가하는 말을 써요', '근거마다 따로 평가한 뒤 조건이 달린 제안으로 맺어요'],
+  aufbau: [
+    { de: 'Wiedergabe der Kernaussagen', ko: '글의 핵심 주장 옮기기', ex: 'Der vorliegende Text befasst sich mit der Frage, …' },
+    { de: 'Zustimmung zu einem Argument', ko: '동의하는 근거', ex: 'Das erste Argument der Kritiker halte ich für stichhaltig.' },
+    { de: 'Einwand gegen ein Argument', ko: '동의하지 않는 근거', ex: 'Weniger überzeugend erscheint mir dagegen …' },
+    { de: 'Eigene Erfahrung oder Vergleich', ko: '내 경험이나 비교', ex: 'Aus Korea kenne ich eine ähnliche Debatte.' },
+    { de: 'Fazit mit Vorschlag', ko: '제안이 있는 결론', ex: 'Meines Erachtens liegt die Lösung daher nicht in einem Entweder-oder.' }
+  ],
+  tipps: [
+    '첫 문단은 요약이에요. 내 평가를 섞지 말고 글의 주장만 접속법 I이나 befürchten, warnen 같은 동사로 옮겨요.',
+    '글 전체에 찬성하거나 반대하지 말고 근거를 하나씩 따져요. 하나는 받아들이고 하나는 반박하면 글이 정교해져요.',
+    '평가할 때는 근거를 대요. 「설득력이 없다」에서 끝내지 말고 왜 그런지 한두 문장으로 밝혀요.',
+    '결론에서는 양쪽을 아우르는 제안을 해요. ohne dass + 문장으로 「~하지 않으면서도」를 표현할 수 있어요.'
+  ],
+  fehler: [
+    { f: 'Kritiker befürchten, dass das Deutsche verliert an Bedeutung.', r: 'Kritiker befürchten, dass das Deutsche an Bedeutung verliere.', e: 'dass 문장이라 동사가 맨 끝에 와요. 남의 주장을 옮길 때는 접속법 I(verliere)이 알맞아요.' },
+    { f: 'Das erste Argument halte ich als stichhaltig.', r: 'Das erste Argument halte ich für stichhaltig.', e: 'etwas für + 형용사 halten이에요. als는 betrachten, ansehen과 함께 써요.' },
+    { f: 'Meines Erachtens nach liegt die Lösung woanders.', r: 'Meines Erachtens liegt die Lösung woanders.', e: 'meines Erachtens 뒤에는 nach를 붙이지 않아요. meiner Meinung nach와 섞이기 쉬워요.' },
+    { f: 'Die Hochschulen bleiben attraktiv, ohne dass ihre Absolventen bleiben isoliert.', r: 'Die Hochschulen bleiben attraktiv, ohne dass ihre Absolventen isoliert bleiben.', e: 'ohne dass 문장에서도 동사가 맨 끝에 와요.' }
+  ],
+  redemittel: [
+    { g: '글의 주장 옮기기', items: [['Der vorliegende Text befasst sich mit der Frage, …', '이 글은 …라는 물음을 다뤄요.'], ['Während die Hochschulen darin eine Chance sehen, befürchten Kritiker, dass …', '대학은 그것을 기회로 보는 반면 비판하는 사람들은 …를 걱정해요.'], ['Zudem drohe das Deutsche seine Rolle als Wissenschaftssprache einzubüßen.', '또한 독일어가 학문 언어로서의 역할을 잃을 위험이 있다고 해요.'], ['Der Autor vertritt die These, dass …', '글쓴이는 …라는 주장을 펴요.']] },
+    { g: '근거에 동의하기', items: [['Dieses Argument halte ich für stichhaltig.', '이 근거는 타당하다고 생각해요.'], ['Dem ist uneingeschränkt zuzustimmen.', '이 점에는 전적으로 동의할 수 있어요.'], ['Spätestens bei der Stellensuche erweist sich das als Nachteil.', '늦어도 일자리를 구할 때 그것이 불리하다는 것이 드러나요.']] },
+    { g: '근거에 반박하기', items: [['Weniger überzeugend erscheint mir dagegen …', '반면 …는 덜 설득력 있어 보여요.'], ['Dieses Argument greift meines Erachtens zu kurz.', '이 근거는 제가 보기에 충분히 깊지 않아요.'], ['Diese Entwicklung lässt sich kaum aufhalten.', '이 흐름은 거의 막을 수 없어요.'], ['Dabei wird übersehen, dass …', '여기서는 …라는 점을 놓치고 있어요.']] },
+    { g: '경험과 비교 말하기', items: [['Aus Korea kenne ich eine ähnliche Debatte.', '한국에도 비슷한 논쟁이 있어요.'], ['Nicht selten litt darunter die Qualität der Diskussionen.', '그 때문에 토론의 질이 떨어지는 일이 드물지 않았어요.'], ['Ähnliches lässt sich in meinem Heimatland beobachten.', '제 나라에서도 비슷한 일을 볼 수 있어요.']] },
+    { g: '결론과 제안', items: [['Meines Erachtens liegt die Lösung nicht in einem Entweder-oder.', '제가 보기에 해결책은 둘 가운데 하나를 고르는 데 있지 않아요.'], ['Sinnvoll wären Studiengänge, die … einschließen.', '…를 포함하는 과정이 의미 있을 거예요.'], ['Auf diese Weise blieben die Hochschulen attraktiv, ohne dass …', '이렇게 하면 대학은 …하지 않으면서도 매력을 유지할 거예요.']] }
+  ],
+  uebung: [
+    { t: 'mc', q: '알맞은 것은? Dieses Argument halte ich ___ stichhaltig.', o: ['als', 'für', 'wie'], a: 1, e: 'etwas für + 형용사 halten은 「~을 ~라고 여기다」예요.' },
+    { t: 'fix', q: 'Meines Erachtens nach liegt die Lösung woanders.', a: ['Meines Erachtens liegt die Lösung woanders.'], e: 'meines Erachtens에는 nach를 붙이지 않아요.' },
+    { t: 'fill', q: 'Zudem ___ das Deutsche seine Rolle einzubüßen. (drohen, 접속법 I)', a: ['drohe'], e: '3인칭 단수 접속법 I은 어간 + e예요. 남의 주장을 옮길 때 써요.' },
+    { t: 'fill', q: 'Diese Entwicklung ___ sich kaum aufhalten.', a: ['lässt'], e: 'sich lassen + 원형은 「~될 수 있다」예요.' },
+    { t: 'mc', q: '글의 주장을 옮기는 문장은?', o: ['Ich finde, dass Deutsch wichtig bleibt.', 'Kritiker warnen, das Deutsche verliere an Bedeutung.', 'Das ist natürlich völlig falsch.'], a: 1, e: 'warnen + 접속법 I로 남의 주장을 내 평가 없이 옮겨요.' },
+    { t: 'fix', q: 'Die Hochschulen bleiben attraktiv, ohne dass ihre Absolventen bleiben isoliert.', a: ['Die Hochschulen bleiben attraktiv, ohne dass ihre Absolventen isoliert bleiben.'], e: 'ohne dass 문장에서는 동사가 맨 끝에 와요.' }
+  ],
+  aufgabe: {
+    lead: 'Lesen Sie den folgenden Text und schreiben Sie dazu eine Stellungnahme.',
+    brief: 'Studieren auf Englisch\nImmer mehr Masterstudiengänge in Deutschland werden vollständig auf Englisch angeboten. Die Hochschulen versprechen sich davon mehr internationale Studierende und eine größere Sichtbarkeit in der Forschung. Kritiker warnen jedoch: Wer nur auf Englisch studiert, lernt kaum Deutsch und verlässt das Land nach dem Abschluss häufig wieder. Außerdem verliere das Deutsche als Wissenschaftssprache an Bedeutung, wenn Fachbegriffe nicht mehr auf Deutsch geprägt würden.',
+    punkte: ['Geben Sie die wichtigsten Aussagen des Textes wieder.', 'Nehmen Sie zu den Argumenten der Kritiker Stellung.', 'Berichten Sie von eigenen Erfahrungen oder von der Situation in Ihrem Heimatland.', 'Formulieren Sie ein Fazit mit einem eigenen Vorschlag.'],
+    close: 'Schreiben Sie etwa 230–290 Wörter. Achten Sie auf eine klare Gliederung und auf die Trennung von Textwiedergabe und eigener Meinung.',
+    ko: {
+      lead: '다음 글을 읽고 이에 대한 입장문을 쓰세요.',
+      brief: '영어로 공부하기\n독일에서 영어로만 진행하는 석사 과정이 점점 늘고 있어요. 대학은 이를 통해 외국인 학생이 늘고 연구에서 더 눈에 띄게 되기를 기대해요. 하지만 비판하는 사람들은 경고해요. 영어로만 공부하는 사람은 독일어를 거의 배우지 않고 졸업 뒤에 독일을 다시 떠나는 일이 많다는 거예요. 또한 전문 용어가 더는 독일어로 만들어지지 않으면 독일어가 학문 언어로서 중요성을 잃는다고 해요.',
+      punkte: ['글의 가장 중요한 내용을 옮기세요.', '비판하는 사람들의 근거에 대한 입장을 밝히세요.', '내 경험이나 내 나라의 상황을 쓰세요.', '내 제안이 담긴 결론을 쓰세요.'],
+      close: '230–290단어 정도로 쓰세요. 구성을 분명히 하고, 글의 내용을 옮기는 부분과 내 의견을 구별하세요.'
+    }
+  },
+  check: ['첫 문단에서 글의 핵심 주장을 내 평가 없이 옮겼어요.', '남의 주장을 접속법 I이나 간접 화법 표현으로 썼어요.', '근거 하나에는 동의하고 이유를 댔어요.', '다른 근거에는 반박하고 이유를 댔어요.', '내 경험이나 내 나라의 상황을 썼어요.', '제안이 담긴 결론으로 끝냈어요.', '글의 문장을 그대로 베끼지 않았어요.', '문단의 첫 문장이 그 문단의 역할을 보여 줘요.'],
+  muster: {
+    de: [
+      'Studieren auf Englisch – Gewinn oder Verlust?',
+      'Der vorliegende Text befasst sich mit der Frage, welche Folgen es hat, dass immer mehr Masterstudiengänge in Deutschland ausschließlich auf Englisch angeboten werden. Während die Hochschulen darin eine Chance sehen, internationale Studierende zu gewinnen, befürchten Kritiker, dass diese kaum Deutsch lernen und das Land nach dem Abschluss wieder verlassen. Zudem drohe das Deutsche seine Rolle als Wissenschaftssprache einzubüßen.',
+      'Das erste Argument der Kritiker halte ich für stichhaltig. Wer im Hörsaal, im Labor und im Wohnheim ausschließlich Englisch spricht, hat wenig Anlass, sich auf die Landessprache einzulassen. Spätestens bei der Stellensuche erweist sich das als Nachteil, denn außerhalb weniger internationaler Konzerne wird im Berufsalltag nach wie vor Deutsch erwartet.',
+      'Weniger überzeugend erscheint mir dagegen die Sorge um die Wissenschaftssprache. In den Natur- und Ingenieurwissenschaften wird längst weltweit auf Englisch publiziert; diese Entwicklung lässt sich durch die Unterrichtssprache einzelner Studiengänge kaum aufhalten. Entscheidend ist vielmehr, dass deutschsprachige Lehrbücher und Fachbegriffe weiterhin gepflegt werden.',
+      'Aus Korea kenne ich eine ähnliche Debatte. Dort wurden an vielen Universitäten englischsprachige Lehrveranstaltungen eingeführt, um internationaler zu werden. Nicht selten litt darunter jedoch die Qualität der Diskussionen, weil weder Lehrende noch Studierende sich so differenziert ausdrücken konnten wie in ihrer Muttersprache.',
+      'Meines Erachtens liegt die Lösung daher nicht in einem Entweder-oder. Sinnvoll wären englischsprachige Studiengänge, die verpflichtende Deutschkurse und einzelne deutschsprachige Module einschließen. Auf diese Weise blieben die Hochschulen international attraktiv, ohne dass ihre Absolventen sprachlich isoliert bleiben.'
+    ],
+    ko: [
+      '영어로 공부하기 – 얻는 것일까요, 잃는 것일까요?',
+      '이 글은 독일에서 영어로만 진행하는 석사 과정이 점점 늘어나는 것이 어떤 결과를 낳는지를 다뤄요. 대학은 여기서 외국인 학생을 끌어올 기회를 보는 반면, 비판하는 사람들은 그 학생들이 독일어를 거의 배우지 않고 졸업 뒤에 독일을 다시 떠날 것을 걱정해요. 또한 독일어가 학문 언어로서의 역할을 잃을 위험이 있다고 해요.',
+      '비판하는 사람들의 첫 번째 근거는 타당하다고 생각해요. 강의실, 실험실, 기숙사에서 영어만 쓰는 사람은 그 나라의 말을 배우려고 마음먹을 계기가 별로 없어요. 늦어도 일자리를 구할 때 그것이 불리하다는 것이 드러나요. 몇몇 국제적인 대기업을 빼면 직장 생활에서는 여전히 독일어를 기대하기 때문이에요.',
+      '반면 학문 언어에 대한 걱정은 덜 설득력 있어 보여요. 자연 과학과 공학에서는 이미 오래전부터 세계적으로 영어로 논문을 내고 있어요. 이 흐름은 몇몇 과정의 수업 언어로는 거의 막을 수 없어요. 그보다 중요한 것은 독일어 교재와 전문 용어를 계속 가꾸어 가는 일이에요.',
+      '한국에도 비슷한 논쟁이 있어요. 한국에서는 국제화를 위해 많은 대학에 영어 강의가 도입됐어요. 하지만 가르치는 사람도 배우는 사람도 모국어만큼 정교하게 표현할 수 없어서 토론의 질이 떨어지는 일이 드물지 않았어요.',
+      '그래서 제가 보기에 해결책은 둘 가운데 하나를 고르는 데 있지 않아요. 필수 독일어 수업과 독일어로 진행하는 과목 몇 개를 포함하는 영어 과정이 의미 있을 거예요. 이렇게 하면 대학은 졸업생이 언어 때문에 고립되지 않으면서도 국제적인 매력을 유지할 거예요.'
+    ],
+    notes: [
+      { de: 'Während die Hochschulen darin eine Chance sehen, …, befürchten Kritiker, dass …', ko: 'während로 두 입장을 한 문장에 대비했어요. 요약 문단이라 내 평가는 들어 있지 않아요.' },
+      { de: 'Zudem drohe das Deutsche seine Rolle als Wissenschaftssprache einzubüßen.', ko: '접속법 I drohe로 비판자의 주장임을 나타냈어요. drohen + zu 원형은 「~할 위험이 있다」.' },
+      { de: 'Das erste Argument der Kritiker halte ich für stichhaltig.', ko: '문단의 첫 문장에서 평가를 밝히고, 이어지는 문장에서 이유를 댔어요.' },
+      { de: 'Wer …, hat wenig Anlass, sich auf die Landessprache einzulassen.', ko: 'sich einlassen auf + 4격은 「~에 마음을 열고 뛰어들다」예요. Anlass haben, … zu + 원형.' },
+      { de: 'Weniger überzeugend erscheint mir dagegen die Sorge um die Wissenschaftssprache.', ko: '형용사구를 앞에 두고 dagegen으로 앞 문단과 대비했어요. 주어는 뒤의 die Sorge예요.' },
+      { de: 'Auf diese Weise blieben die Hochschulen …, ohne dass ihre Absolventen … bleiben.', ko: '접속법 II blieben으로 제안의 결과를 가정했어요. ohne dass는 「~하지 않으면서」.' }
+    ]
+  }
+},
+{
+  id: 'c1-10', level: 'C1', no: 10,
+  title: 'Erfahrungsbericht: Auslandssemester', titleKo: '교환학기 경험 보고서 쓰기',
+  type: 'Erfahrungsbericht', typeKo: '경험 보고서',
+  exam: '교환학기 뒤 대학 국제처나 장학 기관에 내는 경험 보고서(Erfahrungsbericht)',
+  time: 45, words: [230, 290],
+  intro: '독일에서 보낸 교환학기를 돌아보는 경험 보고서를 써요. 다음에 갈 학생이 읽는 글이라, 겪은 일을 시간 순서로 늘어놓지 않고 주제별로 묶어 평가와 조언을 함께 담아요.',
+  goals: ['준비, 학업, 일상, 총평의 주제별 문단으로 글을 짜요', 'sich erweisen als, empfinden als, zu schaffen machen으로 경험을 평가해요', 'Es empfiehlt sich, …, Ich würde raten, …로 다음 학생에게 조언해요'],
+  aufbau: [
+    { de: 'Titel und Rahmen', ko: '제목과 기본 정보', ex: 'Im Wintersemester 2025/26 habe ich … ein Semester in Heidelberg studiert.' },
+    { de: 'Vorbereitung', ko: '준비', ex: 'Als zeitaufwendig erwies sich vor allem die Wohnungssuche.' },
+    { de: 'Studium', ko: '학업', ex: 'Das Studium unterschied sich deutlich von dem an meiner Heimatuniversität.' },
+    { de: 'Alltag und Freizeit', ko: '일상과 여가', ex: 'Auch außerhalb der Universität habe ich mich schnell eingelebt.' },
+    { de: 'Fazit und Empfehlungen', ko: '총평과 조언', ex: 'Rückblickend war das Semester … ein großer Gewinn.' }
+  ],
+  tipps: [
+    '일기처럼 「그다음에, 그다음에」로 쓰지 않아요. 문단마다 주제를 하나 정하고 그 주제의 경험을 평가해요.',
+    '보고서에서는 과거형(Präteritum)이 기본이에요. 지금까지 이어지는 결과나 총평에는 현재완료와 현재형을 써요.',
+    '어려웠던 점도 써요. 좋은 말만 있는 보고서는 다음 학생에게 도움이 되지 않아요. 어려움 다음에는 어떻게 풀었는지를 붙여요.',
+    '조언은 구체적으로 써요. 「열심히 준비하세요」보다 「합격 통지를 받자마자 기숙사를 신청하세요」가 쓸모 있어요.'
+  ],
+  fehler: [
+    { f: 'Das Studium unterschied sich deutlich von das an meiner Heimatuniversität.', r: 'Das Studium unterschied sich deutlich von dem an meiner Heimatuniversität.', e: 'von 뒤는 3격이에요. das Studium을 받는 지시대명사의 3격은 dem이에요.' },
+    { f: 'Die Wohnungssuche hat sich als zeitaufwendig erweist.', r: 'Die Wohnungssuche hat sich als zeitaufwendig erwiesen.', e: 'erweisen의 과거분사는 erwiesen이에요. 과거형은 erwies예요.' },
+    { f: 'Es empfiehlt sich, früh um einen Wohnheimplatz bewerben.', r: 'Es empfiehlt sich, sich früh um einen Wohnheimplatz zu bewerben.', e: 'Es empfiehlt sich 뒤에는 zu + 원형이 와요. sich bewerben의 재귀대명사도 빠지면 안 돼요.' },
+    { f: 'Ich würde raten, den Kontakt zu Einheimischen suchen, statt unter Landsleuten bleiben.', r: 'Ich würde raten, den Kontakt zu Einheimischen zu suchen, statt unter Landsleuten zu bleiben.', e: 'raten 뒤에도, statt 뒤에도 zu + 원형이 와요.' }
+  ],
+  redemittel: [
+    { g: '기본 정보 밝히기', items: [['Im Wintersemester 2025/26 habe ich im Rahmen eines Austauschprogramms in Heidelberg studiert.', '2025/26년 겨울 학기에 교환 프로그램으로 하이델베르크에서 공부했어요.'], ['Mit der Vorbereitung begann ich rund sechs Monate vor der Abreise.', '준비는 출국하기 여섯 달쯤 전에 시작했어요.']] },
+    { g: '경험 평가하기', items: [['Als zeitaufwendig erwies sich vor allem die Wohnungssuche.', '무엇보다 집을 구하는 데 시간이 많이 들었어요.'], ['Als besonders hilfreich empfand ich das Schreibzentrum.', '글쓰기 센터가 특히 도움이 됐어요.'], ['Anfangs fiel es mir schwer, mich spontan zu Wort zu melden.', '처음에는 그 자리에서 손을 들고 말하기가 어려웠어요.'], ['Zu schaffen machte mir lediglich die Bürokratie.', '저를 힘들게 한 것은 행정 절차뿐이었어요.'], ['Dank der Unterstützung der Dozierenden gewann ich rasch an Sicherheit.', '교수진의 도움 덕분에 빠르게 자신감을 얻었어요.']] },
+    { g: '차이 설명하기', items: [['Das Studium unterschied sich deutlich von dem an meiner Heimatuniversität.', '학업은 제 대학에서의 학업과 뚜렷이 달랐어요.'], ['Statt Vorlesungen mit Abschlussklausur besuchte ich überwiegend Seminare.', '기말시험이 있는 강의 대신 주로 세미나를 들었어요.'], ['Im Unterschied zu Korea wird hier erwartet, dass …', '한국과 달리 여기서는 …하기를 기대해요.']] },
+    { g: '일상 말하기', items: [['Auch außerhalb der Universität habe ich mich schnell eingelebt.', '대학 밖에서도 빨리 적응했어요.'], ['Über den Hochschulsport kam ich mit deutschen Studierenden in Kontakt.', '대학 스포츠 프로그램을 통해 독일 학생들과 알게 됐어요.'], ['Das erwies sich als weitaus wirkungsvoller als jeder Sprachkurs.', '그것이 어떤 어학 수업보다 훨씬 효과적이었어요.']] },
+    { g: '총평과 조언', items: [['Rückblickend war das Semester sowohl fachlich als auch persönlich ein großer Gewinn.', '돌아보면 이 학기는 전공 면에서도 개인적으로도 큰 수확이었어요.'], ['Es empfiehlt sich, sich frühzeitig um einen Wohnheimplatz zu bewerben.', '기숙사는 일찍 신청하는 것이 좋아요.'], ['Künftigen Austauschstudierenden würde ich raten, …', '앞으로 올 교환 학생에게는 …하라고 권하고 싶어요.']] }
+  ],
+  uebung: [
+    { t: 'fill', q: 'Die Wohnungssuche ___ sich als zeitaufwendig. (erweisen, 과거형)', a: ['erwies'], e: 'erweisen의 과거형은 erwies, 과거분사는 erwiesen이에요.' },
+    { t: 'fix', q: 'Es empfiehlt sich, früh um einen Wohnheimplatz bewerben.', a: ['Es empfiehlt sich, sich früh um einen Wohnheimplatz zu bewerben.'], e: 'zu + 원형을 쓰고, sich bewerben의 재귀대명사 sich도 써요.' },
+    { t: 'mc', q: '알맞은 것은? Das Studium unterschied sich von ___ an meiner Heimatuniversität.', o: ['das', 'dem', 'den'], a: 1, e: 'von + 3격이에요. das Studium을 받는 지시대명사 3격은 dem이에요.' },
+    { t: 'fill', q: 'Anfangs ___ es mir schwer, mich zu Wort zu melden. (fallen, 과거형)', a: ['fiel'], e: 'es fällt mir schwer의 과거형은 es fiel mir schwer예요.' },
+    { t: 'mc', q: '보고서의 문단 첫 문장으로 가장 알맞은 것은?', o: ['Und dann bin ich in die Mensa gegangen.', 'Das Studium unterschied sich deutlich von dem an meiner Heimatuniversität.', 'Am 3. Oktober war ich müde.'], a: 1, e: '문단의 첫 문장은 그 문단의 주제와 평가를 보여 줘야 해요.' },
+    { t: 'fill', q: '___ der Unterstützung der Dozierenden gewann ich rasch an Sicherheit.', a: ['Dank'], e: 'dank + 2격(또는 3격)은 「~ 덕분에」예요. 좋은 결과의 원인에 써요.' }
+  ],
+  aufgabe: {
+    lead: 'Sie haben ein Semester an einer deutschen Universität studiert. Das International Office Ihrer Heimatuniversität bittet Sie um einen Erfahrungsbericht, der künftigen Austauschstudierenden bei der Vorbereitung helfen soll.',
+    punkte: ['Beschreiben Sie Ihre Vorbereitung und geben Sie einen Hinweis dazu.', 'Berichten Sie über das Studium an der Gasthochschule.', 'Gehen Sie auf Alltag und Freizeit ein, auch auf Schwierigkeiten.', 'Ziehen Sie ein Fazit und geben Sie Empfehlungen.'],
+    close: 'Schreiben Sie etwa 230–290 Wörter. Gliedern Sie Ihren Bericht nach Themen und geben Sie ihm eine Überschrift.',
+    ko: {
+      lead: '독일의 한 대학에서 한 학기를 공부했어요. 여러분 대학의 국제처가 앞으로 갈 교환 학생의 준비에 도움이 될 경험 보고서를 부탁해요.',
+      punkte: ['준비 과정을 설명하고 그에 대한 조언을 하나 하세요.', '교환 대학에서의 학업을 이야기하세요.', '일상과 여가를 다루고, 어려웠던 점도 쓰세요.', '총평을 하고 조언을 하세요.'],
+      close: '230–290단어 정도로 쓰세요. 보고서를 주제별로 나누고 제목을 다세요.'
+    }
+  },
+  check: ['제목을 달았어요.', '언제 어디에서 무엇을 공부했는지 첫 문단에 썼어요.', '준비 과정과 그에 대한 조언을 썼어요.', '학업의 차이와 그에 대한 평가를 썼어요.', '일상에서 좋았던 점과 어려웠던 점을 모두 썼어요.', '총평과 구체적인 조언으로 끝냈어요.', '시간 순서가 아니라 주제별로 문단을 나눴어요.', '과거형을 기본 시제로 썼어요.'],
+  muster: {
+    de: [
+      'Erfahrungsbericht: Ein Semester an der Universität Heidelberg',
+      'Im Wintersemester 2025/26 habe ich im Rahmen eines Austauschprogramms ein Semester Germanistik in Heidelberg studiert. Mit der Vorbereitung begann ich rund sechs Monate vor der Abreise. Als zeitaufwendig erwies sich vor allem die Wohnungssuche; es empfiehlt sich daher, sich unmittelbar nach der Zusage um einen Platz im Studierendenwohnheim zu bewerben. Auch das Visum und die Krankenversicherung sollten frühzeitig geklärt werden.',
+      'Das Studium unterschied sich deutlich von dem an meiner Heimatuniversität. Statt Vorlesungen mit Abschlussklausur besuchte ich überwiegend Seminare, in denen Referate gehalten und Texte kontrovers diskutiert wurden. Anfangs fiel es mir schwer, mich spontan zu Wort zu melden. Dank der Unterstützung der Dozierenden, die Nachfragen ausdrücklich begrüßten, gewann ich jedoch rasch an Sicherheit. Als besonders hilfreich empfand ich das Schreibzentrum, das mich bei meiner ersten Hausarbeit beriet.',
+      'Auch außerhalb der Universität habe ich mich schnell eingelebt. Über den Hochschulsport und ein Sprachtandem kam ich mit deutschen Studierenden in Kontakt, was sich als weitaus wirkungsvoller erwies als jeder Sprachkurs. Zu schaffen machten mir lediglich die frühen Ladenschlusszeiten und die Bürokratie bei der Anmeldung im Bürgeramt. Wer sich darauf einstellt und Behördentermine rechtzeitig online bucht, erspart sich allerdings viel Ärger.',
+      'Rückblickend war das Semester sowohl fachlich als auch persönlich ein großer Gewinn. Künftigen Austauschstudierenden würde ich raten, mindestens ein Seminar außerhalb des eigenen Fachs zu belegen und von Anfang an den Kontakt zu Einheimischen zu suchen, statt unter Landsleuten zu bleiben.'
+    ],
+    ko: [
+      '경험 보고서: 하이델베르크 대학에서 보낸 한 학기',
+      '저는 2025/26년 겨울 학기에 교환 프로그램으로 하이델베르크에서 한 학기 동안 독어독문학을 공부했어요. 준비는 출국하기 여섯 달쯤 전에 시작했어요. 무엇보다 집을 구하는 데 시간이 많이 들었어요. 그래서 합격 통지를 받자마자 학생 기숙사 자리를 신청하는 것이 좋아요. 비자와 건강 보험도 일찍 해결해 두어야 해요.',
+      '학업은 제 대학에서의 학업과 뚜렷이 달랐어요. 기말시험이 있는 강의 대신 주로 세미나를 들었는데, 세미나에서는 발표를 하고 글을 놓고 치열하게 토론했어요. 처음에는 그 자리에서 손을 들고 말하기가 어려웠어요. 하지만 질문을 분명히 반기는 교수진의 도움 덕분에 빠르게 자신감을 얻었어요. 첫 학기 말 과제를 쓸 때 조언해 준 글쓰기 센터가 특히 도움이 됐어요.',
+      '대학 밖에서도 빨리 적응했어요. 대학 스포츠 프로그램과 언어 교환을 통해 독일 학생들과 알게 됐는데, 그것이 어떤 어학 수업보다 훨씬 효과적이었어요. 저를 힘들게 한 것은 가게가 일찍 닫는 것과 시청에서 거주 등록을 할 때의 행정 절차뿐이었어요. 다만 이를 미리 알고 관청 예약을 제때 온라인으로 해 두면 번거로운 일을 많이 줄일 수 있어요.',
+      '돌아보면 이 학기는 전공 면에서도 개인적으로도 큰 수확이었어요. 앞으로 올 교환 학생에게는 자기 전공 밖의 세미나를 적어도 하나 듣고, 같은 나라 사람들 사이에만 머물지 말고 처음부터 현지 사람들과 사귀라고 권하고 싶어요.'
+    ],
+    notes: [
+      { de: 'Als zeitaufwendig erwies sich vor allem die Wohnungssuche; es empfiehlt sich daher, …', ko: '평가(als … erwies sich)와 조언(es empfiehlt sich)을 한 문장에 이었어요. 보고서의 기본 틀이에요.' },
+      { de: 'Das Studium unterschied sich deutlich von dem an meiner Heimatuniversität.', ko: 'dem은 das Studium을 되풀이하지 않으려고 쓴 지시대명사예요. 문단의 주제를 첫 문장에서 밝혔어요.' },
+      { de: '… Seminare, in denen Referate gehalten und Texte kontrovers diskutiert wurden.', ko: '관계문 안의 수동태 과거예요. 과거분사 두 개가 wurden 하나를 함께 써요.' },
+      { de: 'Anfangs fiel es mir schwer, … Dank der Unterstützung … gewann ich jedoch rasch an Sicherheit.', ko: '어려움을 쓰고 곧바로 어떻게 풀렸는지를 붙였어요. dank + 2격.' },
+      { de: '…, was sich als weitaus wirkungsvoller erwies als jeder Sprachkurs.', ko: 'was는 앞 문장 전체를 받는 관계대명사예요. 앞의 als는 sich erweisen als, 뒤의 als는 비교예요.' },
+      { de: 'Künftigen Austauschstudierenden würde ich raten, … zu belegen und … zu suchen, statt … zu bleiben.', ko: 'raten + 3격 + zu 원형이에요. 조언 두 가지와 피할 일 한 가지를 한 문장에 담았어요.' }
     ]
   }
 }
