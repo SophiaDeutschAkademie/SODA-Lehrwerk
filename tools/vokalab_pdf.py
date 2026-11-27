@@ -29,7 +29,7 @@ import tempfile
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'vokalab', 'data', 'words.js')
 OUT = os.path.join(ROOT, 'vokalab', 'pdf')
-ROWS = {'a12': 12, 'b1': 11, 'b2': 10, 'c1': 9}      # 한 쪽에 넣는 단어 수
+ROWS = {'a12': 12, 'b1': 11, 'b2': 10, 'c1': 9, 'biz': 10, 'pfl': 10}      # 한 쪽에 넣는 단어 수
 AREA = 705.0                                         # 단어 줄이 차지하는 높이(pt)
 
 esc = html.escape
@@ -796,7 +796,7 @@ def stats(D):
 
 def main():
     ap = argparse.ArgumentParser(description='Vokalab 암기용 PDF 만들기')
-    ap.add_argument('levels', nargs='*', help='a12 b1 b2 c1 (비우면 전부)')
+    ap.add_argument('levels', nargs='*', help='a12 b1 b2 c1 biz pfl (비우면 전부)')
     ap.add_argument('--exam', action='store_true', help='시험용만')
     ap.add_argument('--all', action='store_true', help='전체 단어만')
     ap.add_argument('--out', default=OUT, help='PDF를 둘 폴더')
@@ -811,6 +811,8 @@ def main():
     kinds = [True] if a.exam else [False] if a.all else [False, True]
     for lv in a.levels or list(ROWS):
         for exam in kinds:
+            if exam and not (D.get('exam') or {}).get(lv):
+                continue                                   # 시험용 목록이 없는 묶음(Business, Pflege)
             title, doc, n = build_html(D, lv, exam, a.limit)
             fd, hp = tempfile.mkstemp(suffix='.html', prefix='vokalab-pdf-')
             with os.fdopen(fd, 'w', encoding='utf-8') as f:
