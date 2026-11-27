@@ -7,12 +7,15 @@
     python3 grammatik/tools/pdf-build.py --out DIR U03   # 저장소는 그대로 두고 DIR 에 만들어 본다 (--html: 중간 HTML 도 남긴다)
 
     이름: 교재는 book(전체) · L01 … L37 · anhang, 문법 연습은 ubook(전체) · U01 … U37 · W1 … W4(통합 복습)
+          C1 문법(index.html 의 sx-c1)은 c1book(교재 전체) · L38 … · c1ubook(연습 전체) · U38 … · W5
 
 만드는 것 (저장소의 grammatik-pdf/)
     syntalab.pdf          교재 전체 — 표지 · 목차 · Lektion 01~37 · 부록 「암기 노트」 · 용어 풀이
     syntalab-L01.pdf …    교재 한 과씩,  syntalab-anhang.pdf  부록
     uebungen.pdf          문법 연습 전체 — 표지 · 목차 · Übung 01~37 · 통합 복습 1~4 · 정답과 해설
     uebungen-U01.pdf …    연습 하나씩(문제 + 다음 쪽부터 정답과 해설),  uebungen-W1.pdf …  통합 복습
+    syntalab-c1.pdf       C1 문법 교재 전체 — 표지 · 목차 · Lektion 38~46 · 용어 풀이 (과 하나씩은 syntalab-L38.pdf …)
+    uebungen-c1.pdf       C1 문법 연습 전체 — 표지 · 목차 · Übung 38~46 · 통합 복습 5 · 정답과 해설 (하나씩은 uebungen-U38.pdf …)
     manifest.json         파일마다 쪽 수 · 크기 · 원본 지문. 다음에 바뀐 것만 다시 만드는 데 쓴다.
 그리고 grammatik/index.html 의 sx-pdf 블록(목차의 내려받기 단추가 읽는 정보)과 sw.js 의 VERSION 을 맞춘다.
 
@@ -52,12 +55,14 @@ import subprocess
 import sys
 import tempfile
 import time
+from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup, NavigableString, Tag
 
 sys.dont_write_bytecode = True                       # tools/ 에 __pycache__ 를 남기지 않는다
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+SITE = 'https://sophiadeutschakademie.github.io/SODA-Lehrwerk/grammatik/'      # 앱이 열리는 주소. 본문의 상대 링크를 여기에 맞춰 푼다
 G = os.path.dirname(HERE)                            # grammatik/
 ROOT = os.path.dirname(G)                            # 저장소
 OUT = os.path.join(ROOT, 'grammatik-pdf')
@@ -85,6 +90,22 @@ vp = _load_vokalab()                                 # _find_font, _otf_to_ttf, 
 # ════════════════════════════════════════════════════════════════ 자료 읽기
 _cache = {}
 
+# 묶음: 'main'(Lektion 01~37 과 그 연습) 또는 'c1'(C1 문법 — index.html 의 sx-c1 블록).
+# 묶음마다 책(전체 PDF) · 글꼴 · 지문이 따로다. 한쪽을 고쳐도 다른 쪽 PDF 는 다시 만들지 않는다.
+# use() 로 묶음을 고르면 load_meta() · load_umeta() 와 그것을 쓰는 모든 함수가 그 묶음의 과와 연습을 다룬다.
+_caches = {'main': _cache}
+PART = 'main'
+C1_BOOKS = ('c1book', 'c1ubook')
+BOOKS = ('book', 'ubook') + C1_BOOKS                # 전체 PDF 의 이름
+BRAND = {'main': {'lehr': ('SODA Syntalab', '문법 교재'), 'ueb': ('SODA Grammatikübungen', '문법 연습')},
+         'c1': {'lehr': ('SODA Syntalab C1', '문법 교재'), 'ueb': ('SODA Grammatikübungen C1', '문법 연습')}}
+
+
+def use(part):
+    global _cache, PART
+    PART = part
+    _cache = _caches.setdefault(part, {})
+
 
 def _index():
     if 'index' not in _cache:
@@ -97,8 +118,31 @@ def _json_block(src, block_id):
     return json.loads(m.group(1))
 
 
+def _c1():
+    """index.html 의 sx-c1 블록(C1 문법의 과 · 연습 · 통합 복습). 없으면 None."""
+    main = _caches['main']
+    if 'c1' not in main:
+        m = re.search(r'<script type="application/json" id="sx-c1">(.*?)</script>', _index(), re.S)
+        main['c1'] = json.loads(m.group(1)) if m else None
+    return main['c1']
+
+
+def part_of(target):
+    """이 PDF 가 속한 묶음."""
+    c1 = _c1()
+    if not c1:
+        return 'main'
+    keys = (['L' + m['n'] for m in c1['lessons']] + ['U' + u['n'] for u in c1.get('ux', [])]
+            + [w['n'] for w in c1.get('wx', [])])
+    return 'c1' if target in C1_BOOKS or target in keys else 'main'
+
+
 def load_meta():
-    """→ (과 목록, 부록). index.html 의 sx-meta · sx-ax 그대로이고 key(L01 … / anhang)만 더한다."""
+    """→ (과 목록, 부록). index.html 의 sx-meta · sx-ax 그대로이고 key(L01 … / anhang)만 더한다.
+    C1 문법은 sx-c1 의 과 목록이고 부록이 없다(None)."""
+    if 'meta' not in _cache and PART == 'c1':
+        meta = [dict(m, key='L' + m['n']) for m in _c1()['lessons']]
+        _cache['meta'] = (meta, None)
     if 'meta' not in _cache:
         src = _index()
         meta = _json_block(src, 'sx-meta')
@@ -115,10 +159,11 @@ def load_umeta():
     if 'umeta' not in _cache:
         src = _index()
         by = {m['n']: m for m in load_meta()[0]}
-        ux = _json_block(src, 'sx-ux')
+        c1 = _c1() if PART == 'c1' else None
+        ux = [dict(u) for u in c1.get('ux', [])] if c1 else _json_block(src, 'sx-ux')
         for u in ux:
             u.update(key='U' + u['n'], ko=by[u['n']]['ko'], de=by[u['n']]['de'])
-        wx = _json_block(src, 'sx-wx')
+        wx = [dict(w) for w in c1.get('wx', [])] if c1 else _json_block(src, 'sx-wx')
         for w in wx:
             w['key'] = w['n']
         _cache['umeta'] = (ux, wx)
@@ -127,7 +172,7 @@ def load_umeta():
 
 def kind_of(target):
     """'ueb'(문법 연습) 또는 'lehr'(교재)."""
-    return 'ueb' if target == 'ubook' or target[:1] in ('U', 'W') else 'lehr'
+    return 'ueb' if target in ('ubook', 'c1ubook') or target[:1] in ('U', 'W') else 'lehr'
 
 
 def _lesson_raw(meta):
@@ -231,8 +276,10 @@ def all_chars(kind='lehr'):
                         '이름 날짜 맞은 개수 다음 에 있어요 도 정답 은 는 비워 두어도')
         else:
             meta, ax = load_meta()
-            parts = meta + [ax]
+            parts = meta + ([ax] if ax else [])
             chars = set('SODA Syntalab 문법 교재 목차 차례 부록 용어 풀이 정답 이 과 정리 에 나온 ↑ · 0123456789 Lektion Fachwörter Inhalt')
+        if PART == 'c1':
+            chars.update(C1_TEXT)
         for m in parts:
             chars.update(re.sub(r'data:image/[^"\']+', '', _lesson_raw(m)))
             chars.update(m.get('title', '') + m.get('de', '') + m.get('ko', ''))
@@ -395,6 +442,7 @@ class Lesson:
 
     def __init__(self, meta, book):
         self.meta, self.book = meta, book
+        self.brand = BRAND[PART]['lehr']
         self.key = meta['key']
         self.is_ax = self.key == 'anhang'
         raw = _lesson_raw(meta).replace('✕', '×').replace('⏭', '→')     # 글꼴에 없는 기호
@@ -528,6 +576,12 @@ class Lesson:
                 del a['aria-label']
         for x in self.root.select('.ax-up'):
             x.decompose()
+        # 본문에서 사이트의 다른 앱으로 가는 링크(「../nomen-verb-verbindungen/」): 웹 주소로 건다.
+        # 그대로 두면 PDF 를 만든 자리의 파일 주소(file:///tmp/…)가 되어 눌러도 열리지 않는다.
+        for a in self.root.select('a[href]'):
+            h = a['href']
+            if not h.startswith('#') and not re.match(r'[a-z][a-z0-9+.-]*:', h, re.I):
+                a['href'] = urljoin(SITE, h)
         if self.book:
             self._xrefs()
 
@@ -535,7 +589,7 @@ class Lesson:
     XREF = re.compile(r'(?<![\d.])(\d{1,2}(?:\s*[·,~–-]\s*\d{1,2})*)과(?!\s*\d)')
 
     def _xrefs(self):
-        last = len(load_meta()[0])
+        here = {int(m['n']) for m in load_meta()[0]}       # 이 책에 실린 과(C1 문법 책에서는 38~46과만 링크가 된다)
         me = int(self.num) if self.num.isdigit() else 0
         for node in list(self.root.find_all(string=True)):
             if not isinstance(node, NavigableString) or '과' not in node:
@@ -546,7 +600,7 @@ class Lesson:
             text = str(node)
             parts, pos, hit = [], 0, False
             for m in self.XREF.finditer(text):
-                if not all(1 <= int(n) <= last for n in re.findall(r'\d{1,2}', m.group(1))):
+                if not all(int(n) in here for n in re.findall(r'\d{1,2}', m.group(1))):
                     continue
                 parts.append(text[pos:m.start()])
                 seg, p2 = m.group(0), 0
@@ -663,6 +717,7 @@ class Exercise:
 
     def __init__(self, meta, book):
         self.meta, self.book = meta, book
+        self.brand = BRAND[PART]['ueb']
         self.key = meta['key']
         self.review = self.key.startswith('W')
         raw = _lesson_raw(meta).replace('✕', '×').replace('⏭', '→')      # 글꼴에 없는 기호
@@ -1041,7 +1096,23 @@ def key_block(L):
             '<div class="lx ky-l">%s</div></section>' % (L.key, esc(L.run_title()), L.key_html()))
 
 
+# C1 문법의 표지와 목차에만 나오는 글(글꼴에 넣을 글자를 모을 때도 쓴다)
+C1_SUB = {'lehr': ('C1 문법 교재', '글에서 쓰는 독일어 문법'), 'ueb': ('C1 문법 연습', '풀면서 익히는 C1 문법')}
+C1_HOW = ('제목을 누르면 그 과로 갑니다. 본문 속 「39과」처럼 이 책에 실린 과 번호도 누르면 그 과로 가고, '
+          '쪽마다 왼쪽 아래의 「↑ 목차」를 누르면 이 목차로 돌아옵니다.')
+C1_TEXT = 'C1 Lektion Übungen Wiederholung 0123456789–' + ''.join(C1_SUB['lehr'] + C1_SUB['ueb']) + C1_HOW
+
+
 def ucover_html(n_u, n_w):
+    if PART == 'c1':
+        return ('<section class="pcv pcv-u" id="cover"><div class="pcv-brand"><img src="%s" alt="">'
+                '<div><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div></div>'
+                '<div class="pcv-hero"><h1><span class="pt1">SODA</span><span class="pt2">GRAMMATIK</span>'
+                '<span class="pt2">ÜBUNGEN</span><span class="pt1">C1</span></h1>'
+                '<div class="pcv-sub"><b>%s</b><span>%s</span></div></div>'
+                '<div class="pcv-foot"><span>Innovative Learning Beyond the Traditional</span>'
+                '<span>%d Übungen · %d Wiederholung%s</span></div></section>'
+                % ((_asset('assets/logo.png'),) + C1_SUB['ueb'] + (n_u, n_w, '' if n_w == 1 else 'en')))
     return ('<section class="pcv pcv-u" id="cover"><div class="pcv-brand"><img src="%s" alt="">'
             '<div><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div></div>'
             '<div class="pcv-hero"><h1><span class="pt1">SODA</span><span class="pt2">GRAMMATIK</span>'
@@ -1067,6 +1138,16 @@ def utoc_html(us, ws):
 
 
 def cover_html(n_lessons):
+    if PART == 'c1':
+        meta = load_meta()[0]
+        return ('<section class="pcv" id="cover"><div class="pcv-brand"><img src="%s" alt="">'
+                '<div><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div></div>'
+                '<div class="pcv-hero"><h1><span class="pt1">SODA</span><span class="pt2">SYNTALAB</span>'
+                '<span class="pt1">C1</span></h1>'
+                '<div class="pcv-sub"><b>%s</b><span>%s</span></div></div>'
+                '<div class="pcv-foot"><span>Innovative Learning Beyond the Traditional</span>'
+                '<span>Lektion %s–%s</span></div></section>'
+                % ((_asset('assets/logo.png'),) + C1_SUB['lehr'] + (meta[0]['n'], meta[-1]['n'])))
     return ('<section class="pcv" id="cover"><div class="pcv-brand"><img src="%s" alt="">'
             '<div><b>Sophia Deutsch Akademie</b><span>소피아 독일어학원</span></div></div>'
             '<div class="pcv-hero"><h1><span class="pt1">SODA</span><span class="pt2">SYNTALAB</span></h1>'
@@ -1079,11 +1160,13 @@ def toc_html(lessons, ax, has_gloss):
     row = ('<li><a href="#%s"><b class="ptc-n">%s</b><span class="ptc-t"><span class="ptc-ko">%s</span>'
            '<span class="ptc-de" lang="de">%s</span></span>%s</a></li>')
     rows = [row % (L.key, esc(L.num), esc(L.title), esc(L.de), pn(L.key)) for L in lessons]
-    extra = [row % (ax.key, '부록', esc(ax.title), esc(ax.de), pn(ax.key))]
+    extra = [row % (ax.key, '부록', esc(ax.title), esc(ax.de), pn(ax.key))] if ax else []
     if has_gloss:
         extra.append(row % ('book-gloss', '', '용어 풀이', 'Fachwörter', pn('book-gloss')))
     how = ('<p class="ptc-how">제목을 누르면 그 과로 갑니다. 본문 속 「3과」 같은 과 번호도 누르면 그 과로 가고, '
            '쪽마다 왼쪽 아래의 「↑ 목차」를 누르면 이 목차로 돌아옵니다.</p>')
+    if PART == 'c1':
+        how = '<p class="ptc-how">%s</p>' % C1_HOW
     return ('<section class="ptc" id="toc" style="page:ptoc"><div class="ptc-h"><h1>목차</h1><span lang="de">Inhalt</span></div>%s'
             '<ol class="ptc-l">%s</ol><ol class="ptc-l ptc-x">%s</ol></section>' % (how, ''.join(rows), ''.join(extra)))
 
@@ -1128,9 +1211,10 @@ def page_css(lessons, single):
 
 
 def build_html(target):
-    """→ (HTML, 과들, 문서 제목). target: 'book' · 과의 key(교재), 'ubook' · U01 … · W1 …(문법 연습)."""
+    """→ (HTML, 과들, 문서 제목). target: 'book' · 과의 key(교재), 'ubook' · U01 … · W1 …(문법 연습).
+    C1 문법은 'c1book' · 'c1ubook' 과 그 과 · 연습의 key. 부르기 전에 use(part_of(target)) 로 묶음을 골라 둔다."""
     kind = kind_of(target)
-    single = target not in ('book', 'ubook')
+    single = target not in BOOKS
     if kind == 'ueb':
         ux, wx = load_umeta()
         if single:
@@ -1138,7 +1222,7 @@ def build_html(target):
             lessons = [Exercise(m, book=False)]
             parts = [exercise_html(lessons[0]),
                      '<article class="lk lk-ky" style="page:pkey">%s</article>' % key_block(lessons[0])]
-            title = 'SODA Grammatikübungen ' + lessons[0].run_title()
+            title = lessons[0].brand[0] + ' ' + lessons[0].run_title()
         else:
             us = [Exercise(m, book=True) for m in ux]
             ws = [Exercise(m, book=True) for m in wx]
@@ -1148,33 +1232,34 @@ def build_html(target):
             parts.append('<article class="lk lk-ky" id="key" style="page:pkey"><div class="ky-hd ky-book"><h1>정답과 해설</h1>'
                          '<span lang="de">Lösungen</span></div><div class="lx ky-l">%s</div></article>'
                          % ''.join(key_block(L) for L in lessons))
-            title = 'SODA Grammatikübungen 문법 연습'
-        margin_text = ('SODA Grammatikübungen 목차 정답과 해설 ↑ 차례 0123456789 ' + key_title(lessons, single) + ' '
+            title = ' '.join(lessons[0].brand)
+        margin_text = (lessons[0].brand[0] + ' 목차 정답과 해설 ↑ 차례 0123456789 ' + key_title(lessons, single) + ' '
                        + ' '.join(L.run_title() for L in lessons))
     elif single:
         meta, axm = load_meta()
         m = axm if target == 'anhang' else [x for x in meta if x['key'] == target][0]
         lessons = [Lesson(m, book=False)]
         parts = [lesson_html(lessons[0])]
-        title = 'SODA Syntalab ' + lessons[0].run_title()
+        title = lessons[0].brand[0] + ' ' + lessons[0].run_title()
     else:
         meta, axm = load_meta()
         lessons = [Lesson(m, book=True) for m in meta]
-        ax = Lesson(axm, book=True)
+        ax = Lesson(axm, book=True) if axm else None
         terms, seen = [], set()
-        for L in lessons + [ax]:
+        for L in lessons + ([ax] if ax else []):
             for t in L.terms:
                 if t[0] not in seen:
                     seen.add(t[0])
                     terms.append(t)
         terms.sort(key=lambda t: t[0])
         parts = [cover_html(len(lessons)), toc_html(lessons, ax, bool(terms))]
-        lessons.append(ax)
+        if ax:
+            lessons.append(ax)
         parts += [lesson_html(L) for L in lessons]
         if terms:
             parts.append('<article class="lk lk-gl" style="page:pgloss">%s</article>'
                          % gloss_block(terms, 'book', '용어 풀이', 'Fachwörter', ' gl-book'))
-        title = 'SODA Syntalab 문법 교재'
+        title = ' '.join(lessons[0].brand)
     mt, mr, mb, ml = MARGIN
     css = [fonts_css(kind), app_css(), _tool_file('pdf-print.css')]
     zoom, mark = ZOOM, ''
@@ -1184,7 +1269,7 @@ def build_html(target):
     css += [':root{--z:%s;--pw:%smm}' % (zoom, 210 - ml - mr), page_css(lessons, single)]
     # 쪽 여백 상자(머리말·꼬리말)에 찍는 글자. pdf-fit.js 가 이 글자에 쓸 글꼴을 미리 불러 둔다.
     if kind != 'ueb':
-        margin_text = 'SODA Syntalab 목차 용어 풀이 ↑ 차례 0123456789 ' + ' '.join(L.run_title() for L in lessons)
+        margin_text = lessons[0].brand[0] + ' 목차 용어 풀이 ↑ 차례 0123456789 ' + ' '.join(L.run_title() for L in lessons)
     doc = ('<!doctype html><html lang="ko" data-margin-text="%s"><head><meta charset="utf-8"><title>%s</title>'
            '<style>%s</style></head><body class="%s">%s<script>%s</script></body></html>'
            % (esc(margin_text, quote=True), esc(title), '\n'.join(css), ('single' if single else 'book') + mark,
@@ -1435,7 +1520,8 @@ FILL_JS = ('(function(p){var l=document.querySelectorAll(".pn[data-ref]");'
 
 def build(chrome, target, out_pdf, keep_html=False):
     """target 하나를 만든다. → dict(pages, bytes, report)"""
-    single = target not in ('book', 'ubook')
+    use(part_of(target))
+    single = target not in BOOKS
     doc, lessons, title = build_html(target)
     work = tempfile.mkdtemp(prefix='syntalab-pdf-')
     hp = os.path.join(work, target + '.html')
@@ -1491,21 +1577,31 @@ def show_report(target, rep):
 
 # ════════════════════════════════════════════════════════════════ 무엇을 만들지, 목차에 알리기
 def file_name(target):
+    if target in C1_BOOKS:
+        return 'uebungen-c1.pdf' if target == 'c1ubook' else 'syntalab-c1.pdf'
     if kind_of(target) == 'ueb':
         return 'uebungen.pdf' if target == 'ubook' else 'uebungen-%s.pdf' % target
     return 'syntalab.pdf' if target == 'book' else 'syntalab-%s.pdf' % target
 
 
 def all_targets():
-    meta, ax = load_meta()
-    ux, wx = load_umeta()
-    return (['book'] + [m['key'] for m in meta] + [ax['key']]
-            + ['ubook'] + [m['key'] for m in ux] + [m['key'] for m in wx])
+    """만들 수 있는 이름 모두. 앞쪽이 Lektion 01~37 묶음, 뒤쪽이 C1 문법 묶음(sx-c1 이 있을 때)."""
+    was, out = PART, []
+    for part in ('main', 'c1') if _c1() else ('main',):
+        use(part)
+        meta, ax = load_meta()
+        ux, wx = load_umeta()
+        book, ubook = C1_BOOKS if part == 'c1' else ('book', 'ubook')
+        out += ([book] + [m['key'] for m in meta] + ([ax['key']] if ax else [])
+                + [ubook] + [m['key'] for m in ux] + [m['key'] for m in wx])
+    use(was)
+    return out
 
 
 def signature(target):
     """이 PDF 의 원본 지문: 과(연습)의 내용, 본문 스타일, 이 도구의 파일들. 지문이 같으면 다시 만들지 않는다.
     문법 연습만의 모양(pdf-ueb.css)은 연습의 지문에만 들어간다 — 그것만 고치면 교재 PDF 는 다시 만들지 않는다."""
+    use(part_of(target))
     kind = kind_of(target)
     if 'sig-' + kind not in _cache:
         h = hashlib.sha256()
@@ -1516,10 +1612,11 @@ def signature(target):
         _cache['sig-' + kind] = h.hexdigest()
     if kind == 'ueb':
         every = sum(load_umeta(), [])
-        parts = every if target == 'ubook' else [m for m in every if m['key'] == target]
+        parts = every if target in BOOKS else [m for m in every if m['key'] == target]
     else:
         meta, ax = load_meta()
-        parts = meta + [ax] if target == 'book' else [m for m in meta + [ax] if m['key'] == target]
+        every = meta + ([ax] if ax else [])
+        parts = every if target in BOOKS else [m for m in every if m['key'] == target]
     h = hashlib.sha256((_cache['sig-' + kind] + target).encode())
     for m in parts:
         h.update(json.dumps([m.get(k, '') for k in ('key', 'n', 'ko', 'de', 'title')], ensure_ascii=False).encode())
@@ -1550,7 +1647,10 @@ def stamp(files):
         return {'f': e['file'], 'v': e['v'], 'p': e['pages'], 'mb': round(e['bytes'] / 1e6, 1)}
     info = {'dir': '../grammatik-pdf/', 'book': entry('book') if 'book' in files else None,
             'ubook': entry('ubook') if 'ubook' in files else None,
-            'parts': {t: entry(t) for t in all_targets() if t not in ('book', 'ubook') and t in files}}
+            'parts': {t: entry(t) for t in all_targets() if t not in BOOKS and t in files}}
+    for t in C1_BOOKS:                                # C1 문법의 전체 PDF 둘(C1 목차의 「교재 전체 PDF」 「연습 전체 PDF」)
+        if t in files:
+            info[t] = entry(t)
     block = '<script type="application/json" id="sx-pdf">%s</script>' % json.dumps(info, ensure_ascii=False, separators=(',', ':'))
     path = os.path.join(G, 'index.html')
     idx = open(path, encoding='utf-8').read()
@@ -1578,7 +1678,8 @@ def stamp(files):
 
 def main():
     ap = argparse.ArgumentParser(description='Syntalab 문법 교재와 문법 연습의 인쇄용 PDF 를 만듭니다.')
-    ap.add_argument('targets', nargs='*', help='교재: book, L01 … L37, anhang. 문법 연습: ubook, U01 … U37, W1 … W4. 비우면 바뀐 것만')
+    ap.add_argument('targets', nargs='*', help='교재: book, L01 … L37, anhang. 문법 연습: ubook, U01 … U37, W1 … W4. '
+                                               'C1 문법: c1book, L38 …, c1ubook, U38 …, W5. 비우면 바뀐 것만')
     ap.add_argument('--all', action='store_true', help='모두 다시 만든다')
     ap.add_argument('--out', help='저장소 대신 이 폴더에 만든다(목차 정보는 건드리지 않는다)')
     ap.add_argument('--html', action='store_true', help='중간 HTML 도 PDF 옆에 남긴다')
@@ -1587,8 +1688,7 @@ def main():
     every = all_targets()
     bad = [t for t in a.targets if t not in every]
     if bad:
-        sys.exit('모르는 이름: %s (쓸 수 있는 이름: book, L01 … L%s, anhang, ubook, U01 … U%s, W1 … W%d)'
-                 % (', '.join(bad), load_meta()[0][-1]['n'], load_umeta()[0][-1]['n'], len(load_umeta()[1])))
+        sys.exit('모르는 이름: %s (쓸 수 있는 이름: %s)' % (', '.join(bad), ' '.join(every)))
     out_dir = os.path.abspath(a.out) if a.out else OUT
     os.makedirs(out_dir, exist_ok=True)
     files = {} if a.out else read_manifest()
