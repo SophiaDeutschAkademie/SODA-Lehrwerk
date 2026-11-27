@@ -1,0 +1,460 @@
+{
+  "n": "43",
+  "level": "C1",
+  "goals": [
+    "können · müssen · dürfen을 풀어 쓴 표현으로 바꿔요",
+    "풀어 쓴 표현 뒤에 zu 부정형을 쓰고, 시제를 sein · haben에 옮겨요",
+    "haben … zu와 sein … zu, nicht müssen과 nicht dürfen을 구별해요",
+    "추측의 화법조동사를 부사나 문장으로 바꿔요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Der neue Mitarbeiter kann selbstständig arbeiten.\n= Der neue Mitarbeiter ist ___, selbstständig zu arbeiten.",
+      "o": [
+        "fähig",
+        "verpflichtet",
+        "gezwungen",
+        "berechtigt"
+      ],
+      "a": 0,
+      "e": "능력의 können = fähig sein · in der Lage sein, … zu."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Besucher müssen sich am Empfang anmelden.\n= Besucher sind ___, sich am Empfang anzumelden.",
+      "o": [
+        "verpflichtet",
+        "imstande",
+        "berechtigt",
+        "bereit"
+      ],
+      "a": 0,
+      "e": "규칙에 따른 의무의 müssen = verpflichtet sein, … zu."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Im Lesesaal darf man nicht laut sprechen.\n= Es ist im Lesesaal ___, laut zu sprechen.",
+      "o": [
+        "nicht gestattet",
+        "nicht nötig",
+        "nicht möglich",
+        "nicht ratsam"
+      ],
+      "a": 0,
+      "e": "nicht dürfen = es ist nicht gestattet · verboten. nicht nötig는 nicht müssen이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir wollen im Herbst ein zweites Geschäft eröffnen.\n= Wir ___, im Herbst ein zweites Geschäft zu eröffnen.",
+      "o": [
+        "beabsichtigen",
+        "vermögen",
+        "brauchen",
+        "erlauben"
+      ],
+      "a": 0,
+      "e": "계획의 wollen = beabsichtigen · vorhaben, … zu."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Du musst mich nicht abholen.\n= Du ___ mich nicht abzuholen.",
+      "o": [
+        "brauchst",
+        "bist",
+        "darfst",
+        "vermagst"
+      ],
+      "a": 0,
+      "e": "nicht müssen = nicht brauchen … zu. '~할 필요 없다'예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Sie dürfte schon zu Hause sein.\n= Sie ist ___ schon zu Hause.",
+      "o": [
+        "wahrscheinlich",
+        "zweifellos",
+        "angeblich",
+        "keinesfalls"
+      ],
+      "a": 0,
+      "e": "추측의 dürfte = wahrscheinlich · vermutlich. zweifellos는 muss, angeblich는 soll이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Sie kann fünf Stunden ohne Pause fahren.\n= Sie ist in der ___, fünf Stunden ohne Pause zu fahren.",
+      "ko": "그녀는 쉬지 않고 다섯 시간을 운전할 수 있어요.",
+      "h": "명사",
+      "a": [
+        "Lage"
+      ],
+      "e": "können = in der Lage sein. 뒤에는 zu 부정형이 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Nach dem Wasserschaden mussten wir ins Hotel ziehen.\n= Nach dem Wasserschaden waren wir ___, ins Hotel zu ziehen.",
+      "ko": "집에 물난리가 나서 우리는 호텔로 옮길 수밖에 없었어요.",
+      "h": "어쩔 수 없음",
+      "a": [
+        "gezwungen"
+      ],
+      "e": "다른 길이 없어서 해야 하는 일은 gezwungen sein이에요. mussten → waren gezwungen."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "In der Ausstellung darf man Fotos machen.\n= Es ist in der Ausstellung ___, Fotos zu machen.",
+      "ko": "전시장에서는 사진을 찍어도 돼요.",
+      "h": "허락",
+      "a": [
+        [
+          "erlaubt",
+          "gestattet"
+        ]
+      ],
+      "e": "dürfen = es ist erlaubt · gestattet. gestattet가 더 격식 있어요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Fahrgäste müssen ihre Fahrkarten vorzeigen.\n= Die Fahrgäste sind verpflichtet, ihre Fahrkarten ___.",
+      "ko": "승객은 승차권을 보여 줘야 해요.",
+      "h": "vorzeigen · zu 부정형",
+      "a": [
+        "vorzuzeigen"
+      ],
+      "e": "풀어 쓴 표현 뒤는 zu 부정형이에요. 분리동사는 zu가 가운데 들어가요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Er konnte die Frage nicht beantworten.\n= Er ___ nicht in der Lage, die Frage zu beantworten.",
+      "ko": "그는 그 질문에 답할 수 없었어요.",
+      "h": "sein · 과거형",
+      "a": [
+        "war"
+      ],
+      "e": "시제는 sein이 맡아요. konnte → war in der Lage."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Neue Mitarbeiter müssen an der Schulung teilnehmen.\n= Neue Mitarbeiter ___ an der Schulung teilzunehmen.",
+      "ko": "새 직원은 그 교육에 참가해야 해요.",
+      "h": "동사",
+      "a": [
+        "haben"
+      ],
+      "e": "haben … zu = müssen. 일을 하는 사람이 주어라서 haben이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Zug soll Verspätung haben.\n= ___ hat der Zug Verspätung.",
+      "ko": "그 기차가 늦는다고 해요.",
+      "h": "부사 · 들은 말",
+      "a": [
+        "Angeblich"
+      ],
+      "e": "남에게 들은 말의 sollen = angeblich."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Du solltest dir den Vertrag genau durchlesen.\n= Es ist ___, sich den Vertrag genau durchzulesen.",
+      "ko": "계약서는 꼼꼼히 읽어 보는 게 좋아요.",
+      "h": "조언",
+      "a": [
+        [
+          "ratsam",
+          "empfehlenswert"
+        ]
+      ],
+      "e": "조언의 sollte = es ist ratsam · empfehlenswert, … zu."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "저희는 물건을 제때 보내 드릴 수 없어요.",
+      "a": [
+        "Wir sind nicht in der Lage, die Ware pünktlich zu liefern."
+      ],
+      "e": "nicht können = nicht in der Lage sein. zu 부정형 구는 쉼표 뒤에 오고, zu liefern이 맨 끝이에요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "계단에 자전거를 세워 두면 안 돼요.",
+      "a": [
+        "Es ist verboten, im Treppenhaus Fahrräder abzustellen.",
+        "Es ist verboten, Fahrräder im Treppenhaus abzustellen."
+      ],
+      "e": "nicht dürfen = es ist verboten, … zu. 분리동사 abstellen은 ab + zu + stellen이에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Die Formulare ___ bis Montag abzugeben.\nDie Studierenden ___ die Formulare bis Montag abzugeben.",
+      "o": [
+        "sind – haben",
+        "haben – sind",
+        "sind – sind",
+        "haben – haben"
+      ],
+      "a": 0,
+      "e": "일을 당하는 대상(die Formulare)이 주어면 sein … zu, 일을 하는 사람(die Studierenden)이 주어면 haben … zu예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'Sie müssen das Formular nicht ausdrucken.'과 뜻이 같은 문장은?",
+      "o": [
+        "Es ist nicht nötig, das Formular auszudrucken.",
+        "Es ist verboten, das Formular auszudrucken.",
+        "Sie sind nicht in der Lage, das Formular auszudrucken.",
+        "Sie sind nicht berechtigt, das Formular auszudrucken."
+      ],
+      "a": 0,
+      "e": "nicht müssen은 '필요 없다'예요. '하면 안 된다'는 nicht dürfen = verboten이에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'Er will den Unfall nicht gesehen haben.'와 뜻이 같은 문장은?",
+      "o": [
+        "Er behauptet, den Unfall nicht gesehen zu haben.",
+        "Er beabsichtigt, den Unfall nicht zu sehen.",
+        "Er ist nicht in der Lage, den Unfall zu sehen.",
+        "Angeblich hat er den Unfall nicht gesehen."
+      ],
+      "a": 0,
+      "e": "wollen + 완료 원형은 본인의 주장이에요 → er behauptet, … zu haben. angeblich는 남에게 들은 말(soll)이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Früher mussten alle Schüler eine Uniform tragen.\n= Früher ___ alle Schüler ___, eine Uniform zu tragen.",
+      "ko": "예전에는 모든 학생이 교복을 입어야 했어요.",
+      "h": [
+        "sein · 과거형",
+        "의무"
+      ],
+      "a": [
+        "waren",
+        [
+          "verpflichtet",
+          "gezwungen"
+        ]
+      ],
+      "e": "mussten → waren verpflichtet. 시제는 sein에 옮기고 뒤는 zu 부정형이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Wir mussten den Urlaub absagen.\n= Uns blieb nichts anderes ___, als den Urlaub abzusagen.",
+      "ko": "우리는 휴가를 취소할 수밖에 없었어요.",
+      "h": "",
+      "a": [
+        "übrig"
+      ],
+      "e": "es bleibt jemandem nichts anderes übrig, als … zu = 다른 길이 없다. 사람은 3격(uns)으로 써요.",
+      "ok": "nichts anderes übrig bleiben은 이 과의 연습 대상 문형 자체"
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Mit mehr Zeit könnten wir jede Frage beantworten.\n= Mit mehr Zeit ___ wir in der Lage, jede Frage zu beantworten.",
+      "ko": "시간이 더 있다면 질문마다 답할 수 있을 텐데요.",
+      "h": "sein · 접속법 II",
+      "a": [
+        "wären"
+      ],
+      "e": "접속법 II도 sein이 맡아요. könnten → wären in der Lage."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Der Schlüssel muss im Auto liegen.\n= Der Schlüssel liegt ___ im Auto.",
+      "ko": "열쇠는 틀림없이 차 안에 있어요.",
+      "h": "부사 · 확신",
+      "a": [
+        [
+          "sicher",
+          "bestimmt",
+          "zweifellos",
+          "sicherlich",
+          "gewiss"
+        ]
+      ],
+      "e": "확신하는 추측의 müssen = sicher · bestimmt · zweifellos."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그 클럽은 여름에 대회를 열 계획이에요.",
+      "a": [
+        "Der Verein hat vor, im Sommer ein Turnier zu veranstalten.",
+        "Der Verein hat vor, ein Turnier im Sommer zu veranstalten."
+      ],
+      "e": "wollen = vorhaben, … zu. 분리동사 vorhaben의 vor는 쉼표 앞에 와요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Die Unterlagen haben bis Freitag einzureichen.",
+        "Es ist untersagt, das Gelände zu betreten.",
+        "Sie ist berechtigt, die Akten einzusehen.",
+        "Er war nicht imstande, den Koffer zu heben."
+      ],
+      "a": 0,
+      "e": "서류는 일을 당하는 대상이라서 sein … zu를 써요 → Die Unterlagen sind bis Freitag einzureichen."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'Es ist ausgeschlossen, dass sie die Verabredung vergessen hat.'와 뜻이 같은 문장은?",
+      "o": [
+        "Sie kann die Verabredung nicht vergessen haben.",
+        "Sie muss die Verabredung vergessen haben.",
+        "Sie dürfte die Verabredung vergessen haben.",
+        "Sie soll die Verabredung vergessen haben."
+      ],
+      "a": 0,
+      "e": "es ist ausgeschlossen = kann nicht. '그랬을 리가 없다'는 추측이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Die Bewohner müssen den Müll trennen. Im Hof darf man nicht grillen. Besucher müssen ihre Fahrzeuge auf der Straße abstellen.\n→ Die Bewohner sind ___, den Müll zu trennen. Es ist nicht ___, im Hof zu grillen. Besucher ___ ihre Fahrzeuge auf der Straße abzustellen.",
+      "ko": "입주민은 쓰레기를 분리해야 해요. 마당에서 고기를 구우면 안 돼요. 방문객은 차를 길에 세워야 해요.",
+      "h": [
+        "의무",
+        "허락",
+        "동사"
+      ],
+      "a": [
+        "verpflichtet",
+        [
+          "gestattet",
+          "erlaubt"
+        ],
+        "haben"
+      ],
+      "e": "müssen = verpflichtet sein · nicht dürfen = nicht gestattet sein · müssen = haben … zu.<br>규정은 이런 표현으로 써요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Angeblich hat der Minister von dem Plan gewusst.\n= Der Minister ___ von dem Plan gewusst ___.",
+      "ko": "장관이 그 계획을 알고 있었다고 해요.",
+      "h": [
+        "화법조동사",
+        "원형"
+      ],
+      "a": [
+        "soll",
+        "haben"
+      ],
+      "e": "angeblich = sollen. 지난 일이라서 완료 원형 gewusst haben을 써요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Ich nehme an, dass er schon abgereist ist.\n= Er ___ schon abgereist ___.",
+      "ko": "그는 아마 벌써 떠났을 거예요.",
+      "h": [
+        "화법조동사",
+        "원형"
+      ],
+      "a": [
+        [
+          "dürfte",
+          "wird"
+        ],
+        "sein"
+      ],
+      "e": "ich nehme an = dürfte. abreisen은 sein과 완료형을 만들어서 abgereist sein이에요. werden으로 추측을 말해도 돼요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "손님은 모두 열한 시까지 방을 비워 주시기 바라요.",
+      "a": [
+        "Alle Gäste werden gebeten, ihre Zimmer bis elf Uhr zu verlassen.",
+        "Alle Gäste werden gebeten, bis elf Uhr ihre Zimmer zu verlassen."
+      ],
+      "e": "sollen의 정중한 꼴은 gebeten werden, … zu예요. 공문과 안내문에서 써요."
+    }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "können을 in der Lage sein으로 바꿔 쓰세요.",
+      "s": "Das Team kann den Termin einhalten.",
+      "a": [
+        "Das Team ist in der Lage, den Termin einzuhalten."
+      ],
+      "e": "können = in der Lage sein, … zu. 분리동사 einhalten은 einzuhalten이 돼요."
+    },
+    {
+      "t": "tr",
+      "q": "화법조동사를 es ist verboten으로 바꿔 쓰세요.",
+      "s": "Man darf im Museum nicht essen.",
+      "a": [
+        "Es ist verboten, im Museum zu essen.",
+        "Es ist im Museum verboten zu essen.",
+        "Im Museum ist es verboten zu essen.",
+        "Im Museum zu essen ist verboten."
+      ],
+      "e": "nicht dürfen = es ist verboten, … zu. man이 빠지고 es가 주어가 돼요."
+    },
+    {
+      "t": "tr",
+      "q": "풀어 쓴 표현을 화법조동사로 바꿔 쓰세요.",
+      "s": "Die Kinder waren nicht imstande, still zu sitzen.",
+      "a": [
+        "Die Kinder konnten nicht still sitzen.",
+        "Die Kinder konnten nicht stillsitzen."
+      ],
+      "e": "imstande sein = können. 과거형 waren은 konnten으로 옮기고, zu는 빠져요."
+    },
+    {
+      "t": "err",
+      "q": "Gestern ist er gezwungen, zu Fuß zu gehen.",
+      "x": 1,
+      "r": "Gestern war er gezwungen, zu Fuß zu gehen.",
+      "ko": "어제 그는 걸어갈 수밖에 없었어요.",
+      "e": "gestern의 일이라서 과거형 war를 써요. 시제는 sein이 맡아요."
+    },
+    {
+      "t": "err",
+      "q": "Ihr müsst nicht zu bezahlen.",
+      "x": 1,
+      "r": "Ihr braucht nicht zu bezahlen.",
+      "ko": "너희는 돈을 내지 않아도 돼.",
+      "e": "화법조동사 müssen 뒤에는 zu 없는 원형이 와요. zu 부정형을 받는 것은 nicht brauchen이에요."
+    },
+    {
+      "t": "err",
+      "q": "Wir sind die Möglichkeit, ein Praktikum zu machen.",
+      "x": 1,
+      "r": "Wir haben die Möglichkeit, ein Praktikum zu machen.",
+      "ko": "우리는 실습을 할 기회가 있어요.",
+      "e": "die Möglichkeit haben, … zu가 한 덩어리예요. sein과 쓰는 것은 in der Lage예요."
+    }
+  ]
+}

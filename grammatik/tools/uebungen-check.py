@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""연습 챕터 원본(tools/uebungen-src/U01.json … U37.json)을 검사해요.
+"""연습 챕터 원본(tools/uebungen-src/U01.json … U46.json)을 검사해요. 38과부터는 C1 과예요.
 
     python3 grammatik/tools/uebungen-check.py            # 전부 검사
     python3 grammatik/tools/uebungen-check.py 05 06      # 일부만 검사
@@ -17,6 +17,16 @@ G = os.path.normpath(G) + os.sep
 SRC = G + 'tools' + os.sep + 'uebungen-src' + os.sep
 
 WORD = r"[A-Za-zÄÖÜäöüß]+"
+
+
+def lesson_numbers():
+    """교재에 있는 과 번호(1, 2, … — C1 과 포함)."""
+    return sorted(int(os.path.basename(f)[1:3]) for f in glob.glob(G + 'lessons/L[0-9][0-9].json'))
+
+
+def chapter_numbers():
+    """원본이 있는 연습 챕터 번호."""
+    return sorted(int(os.path.basename(f)[1:3]) for f in glob.glob(SRC + 'U[0-9][0-9].json'))
 SPLIT = r'[가-힣0-9.?!:;|/()·—–=→+\[\]„“"”‚‘’…~]+'
 
 
@@ -91,6 +101,12 @@ RULES = [
     ('수·요일·달·시각', 7, r'\d|\b(elf|zwölf|zwanzig|dreißig|hundert|tausend|montag|dienstag|mittwoch|donnerstag|freitag|samstag|sonntag|januar|februar|märz|april|mai|juni|juli|august|september|oktober|november|dezember|uhr)\b'),
     ('숫자 1–10', 2, r'\b(eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn)\b'),
     ('의문사', 6, r'\b(wer|wen|wem|wessen|was|wo|woher|wohin|wann|warum|wie|welche|welcher|welches|welchen|welchem)\b'),
+    # C1 과(38과~): 뒤 과에서 배우는 구문
+    ('zu + 현재분사', 41, r'\b(der|die|das|den|dem|des|ein|eine|einen|einem|einer|eines|kein\w*)\s+(?:\w+\s+){0,3}(?-i:zu\s+[a-zäöüß]+end|[a-zäöüß]+zu[a-zäöüß]+end)(?:e|en|er|es|em)\b'),
+    ('수동의 접속법 II 과거', 42, r'\b(hätte|hätten|hättest)\b.*\bwerden\s+(müssen|können|sollen|dürfen)\b|\bwäre[n]?\b.*\bworden\b'),
+    ('bekommen 수동', 42, r'\b(bekomm\w*|bekam\w*|erh[aä]lt\w*|erhielt\w*)\b.*\bge[a-zäöüß]+(?:t|en)\s*[.?!]?$'),
+    ('sollte 조건문', 44, r'^Sollte[nst]*\s'),
+    ('auch immer · so … auch', 44, r'\bauch immer\b|^(So|Wie)\s+\w+\s.*\bauch\b.*,'),
 ]
 
 BAD_KO = re.compile(r'(습니다|입니다|합니다|됩니다|십시오)|[가-힣]다(?=\s*[.!?]?\s*(?:<br>|$))')
@@ -155,7 +171,7 @@ def check_chapter(n, strict_counts=True, review=False):
         return ['JSON 오류: %s' % e], [], None
     if review:
         rg = d.get('range')
-        if not (isinstance(rg, list) and len(rg) == 2 and 1 <= rg[0] < rg[1] <= 37):
+        if not (isinstance(rg, list) and len(rg) == 2 and 1 <= rg[0] < rg[1] <= max(lesson_numbers())):
             return ['range는 [첫 과, 마지막 과]'], [], None
         if not d.get('ko') or not d.get('de'):
             errs.append('ko·de(제목)가 없어요')
@@ -164,8 +180,8 @@ def check_chapter(n, strict_counts=True, review=False):
         lesson = int(n)
     if d.get('n') != n:
         errs.append('n이 파일 번호와 달라요')
-    if d.get('level') not in ('A1', 'A2', 'B1', 'B2'):
-        errs.append('level은 A1·A2·B1·B2 중 하나')
+    if d.get('level') not in ('A1', 'A2', 'B1', 'B2', 'C1'):
+        errs.append('level은 A1·A2·B1·B2·C1 중 하나')
     goals = d.get('goals') or []
     if not (3 <= len(goals) <= 4):
         errs.append('goals는 3~4개')
@@ -297,7 +313,7 @@ def check_chapter(n, strict_counts=True, review=False):
 def main():
     args = sys.argv[1:]
     if args and args[0] == '--toc':
-        for i in range(1, 38):
+        for i in lesson_numbers():
             h = json.load(open(G + 'lessons/L%02d.json' % i, encoding='utf8'))
             t = re.search(r'<h1>(.*?)</h1>', h, re.S).group(1)
             secs = [x for x in re.findall(r'<section id="sec-[^"]+"><div class="sh"><span class="sl">[^<]*</span><h2>(.*?)</h2>', h)
@@ -311,7 +327,7 @@ def main():
             print(re.sub(r'\n{2,}', '\n', lesson_text(n)))
         return
     ws = [a.upper() for a in args if a.upper().startswith('W')]
-    ns = ['%02d' % int(a) for a in args if not a.upper().startswith('W')] if args else ['%02d' % i for i in range(1, 38)]
+    ns = ['%02d' % int(a) for a in args if not a.upper().startswith('W')] if args else ['%02d' % i for i in chapter_numbers()]
     if not args:
         ws = ['W%d' % i for i in range(1, 10) if os.path.exists(SRC + 'W%d.json' % i)]
     bad = 0

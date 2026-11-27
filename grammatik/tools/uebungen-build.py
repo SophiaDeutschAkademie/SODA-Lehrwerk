@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""연습 챕터 원본(tools/uebungen-src/U01.json … U37.json)으로 uebungen/U01.json … U37.json을 만들어요.
+"""연습 챕터 원본(tools/uebungen-src/U01.json … U46.json)으로 uebungen/U01.json … U46.json을 만들어요.
 
     python3 grammatik/tools/uebungen-build.py
 
@@ -7,6 +7,8 @@
   1. 원본을 검사해요(uebungen-check.py의 오류 검사). 오류가 있으면 멈춰요.
   2. 객관식 보기를 문항마다 정해진 순서로 섞고, 단어 배열 조각도 섞어서 HTML로 만들어요.
   3. index.html의 sx-ux(연습 주소·문항 수)·sx-wx(통합 복습)와 sw.js의 오프라인 목록·VERSION을 함께 갱신해요.
+     C1 과(index.html의 sx-c1에 적힌 과)의 연습과 통합 복습은 sx-ux·sx-wx가 아니라 sx-c1의 ux·wx에 적어요.
+     앱은 그것을 연습 목차가 아니라 C1 문법 항목(#/c1)에 교재와 함께 보여 줘요.
 
 문항마다 data-id(문항 내용으로 만든 고정 번호)를 붙여요. 앱은 학생의 답을 이 번호로 저장하므로,
 문항을 더하거나 순서를 바꿔도 이미 푼 답이 다른 문항에 붙지 않아요. 문항의 질문이나 정답을 고치면
@@ -176,7 +178,7 @@ def chapter_html(d, meta, head, foot):
 
 
 def main():
-    ns = ['%02d' % i for i in range(1, 38) if os.path.exists(chk.SRC + 'U%02d.json' % i)]
+    ns = ['%02d' % i for i in chk.chapter_numbers()]
     ws = ['W%d' % i for i in range(1, 10) if os.path.exists(chk.SRC + 'W%d.json' % i)]
     only = ['%02d' % int(a) for a in sys.argv[1:]]
     if not ns:
@@ -186,6 +188,12 @@ def main():
     foot = re.search(r'<div class="brand-foot">.*?</div></div>', L1, re.S).group(0)
     idx = open(G + 'index.html', encoding='utf8').read()
     meta_all = {m['n']: m for m in json.loads(re.search(r'<script type="application/json" id="sx-meta">(.*?)</script>', idx, re.S).group(1))}
+    # C1 과: sx-meta가 아니라 sx-c1에 있어요
+    c1m = re.search(r'<script type="application/json" id="sx-c1">(.*?)</script>', idx, re.S)
+    c1 = json.loads(c1m.group(1)) if c1m else None
+    c1set = set(m['n'] for m in c1['lessons']) if c1 else set()
+    if c1:
+        meta_all.update({m['n']: m for m in c1['lessons']})
     head = (bar + '\n<header class="lk-hd"><div class="lk-topic">' + PENCIL + '</div><div class="lk-kicker">Übung</div>'
             '<div class="lk-big">%%LEKTION%%</div><h1>%%KO%%</h1><div class="lk-de">%%DE%%</div><div class="lk-intro">%%INTRO%%</div></header>')
     os.makedirs(OUT, exist_ok=True)
@@ -222,17 +230,26 @@ def main():
                    'ko': d['ko'], 'de': d['de'], 'w': 1, 'src': 'uebungen/%s.json?v=%s' % (n, hv)})
     if nerr:
         print('오류가 있는 챕터는 만들지 않았어요.')
-    # index.html
+    # index.html — C1 과의 연습과 복습은 sx-c1로 갈라요
+    ux_c1 = [u for u in ux if u['n'] in c1set]
+    wx_c1 = [u for u in wx if '%02d' % u['range'][1] in c1set]
+    ux = [u for u in ux if u['n'] not in c1set]
+    wx = [u for u in wx if '%02d' % u['range'][1] not in c1set]
     tag = '<script type="application/json" id="sx-ux">' + json.dumps(ux, ensure_ascii=False, separators=(',', ':')) + '</script>'
     idx, k = re.subn(r'<script type="application/json" id="sx-ux">.*?</script>', lambda m: tag, idx, flags=re.S)
     assert k == 1, 'sx-ux script missing in index.html'
     wtag = '<script type="application/json" id="sx-wx">' + json.dumps(wx, ensure_ascii=False, separators=(',', ':')) + '</script>'
     idx, k = re.subn(r'<script type="application/json" id="sx-wx">.*?</script>', lambda m: wtag, idx, flags=re.S)
     assert k == 1, 'sx-wx script missing in index.html'
+    if c1:
+        c1['ux'], c1['wx'] = ux_c1, wx_c1
+        ctag = '<script type="application/json" id="sx-c1">' + json.dumps(c1, ensure_ascii=False, separators=(',', ':')) + '</script>'
+        idx, k = re.subn(r'<script type="application/json" id="sx-c1">.*?</script>', lambda m: ctag, idx, flags=re.S)
+        assert k == 1, 'sx-c1 script missing in index.html'
     open(G + 'index.html', 'w', encoding='utf8').write(idx)
     # sw.js
     sw = open(G + 'sw.js', encoding='utf8').read()
-    arr = 'const UEBUNGEN = [\n' + ',\n'.join('  "%s"' % u['src'] for u in ux + wx) + '\n];'
+    arr = 'const UEBUNGEN = [\n' + ',\n'.join('  "%s"' % u['src'] for u in ux + wx + ux_c1 + wx_c1) + '\n];'
     sw, k = re.subn(r'const UEBUNGEN = \[.*?\];', lambda m: arr, sw, flags=re.S)
     assert k == 1, 'UEBUNGEN missing in sw.js'
     lists = re.findall(r'"([^"]+\?v=[0-9a-f]+)"', sw)
@@ -241,6 +258,9 @@ def main():
     open(G + 'sw.js', 'w', encoding='utf8').write(sw)
     print('연습 %d챕터 · 문항 %d개(보강 %d) · 통합 복습 %d세트 %d문항 · sw VERSION %s' % (
         len(ux), sum(u['q'] for u in ux), sum(u.get('p', 0) for u in ux), len(wx), sum(u['q'] for u in wx), ver))
+    if ux_c1 or wx_c1:
+        print('C1  연습 %d챕터 · 문항 %d개(보강 %d) · 통합 복습 %d세트 %d문항' % (
+            len(ux_c1), sum(u['q'] for u in ux_c1), sum(u.get('p', 0) for u in ux_c1), len(wx_c1), sum(u['q'] for u in wx_c1)))
     sys.exit(1 if nerr else 0)
 
 

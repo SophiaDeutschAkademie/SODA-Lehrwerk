@@ -1,0 +1,464 @@
+{
+  "n": "42",
+  "level": "C1",
+  "goals": [
+    "수동문을 접속법 II로 말해요 — würde … · wäre … worden",
+    "'~됐어야 했다 · ~될 수 있었다'를 hätte … werden müssen · können으로 말해요",
+    "bekommen 수동으로 받는 사람을 주어로 세워요",
+    "수동문을 sich lassen · sein … zu · -bar · bleiben … zu · es gilt … zu로 바꿔요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wenn wir mehr Personal hätten, ___ die Anträge schneller bearbeitet.",
+      "o": [
+        "würden",
+        "wären",
+        "hätten",
+        "werden"
+      ],
+      "a": 0,
+      "e": "지금의 가정을 수동으로 말하면 würde + 과거분사예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ohne den Hinweis der Nachbarin ___ der Brand erst viel später entdeckt worden.",
+      "o": [
+        "wäre",
+        "würde",
+        "hätte",
+        "wird"
+      ],
+      "a": 0,
+      "e": "지난 일의 가정을 수동으로 말하면 wäre + 과거분사 + worden이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Straße hätte schon letztes Jahr repariert werden ___.",
+      "o": [
+        "müssen",
+        "gemusst",
+        "musste",
+        "müsste"
+      ],
+      "a": 0,
+      "e": "hätte + 과거분사 + werden + 화법조동사 원형. 완료형에서 화법조동사는 원형으로 써요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Zum Geburtstag ___ sie von ihrer Abteilung einen Reiseführer geschenkt.",
+      "o": [
+        "bekam",
+        "wurde",
+        "hat",
+        "war"
+      ],
+      "a": 0,
+      "e": "받는 사람(sie)이 주어면 bekommen + 과거분사를 써요. Man schenkte ihr einen Reiseführer와 뜻이 같아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Der Fleck ___ sich mit Wasser entfernen.",
+      "o": [
+        "lässt",
+        "wird",
+        "ist",
+        "kann"
+      ],
+      "a": 0,
+      "e": "sich lassen + 원형 = ~될 수 있다. Der Fleck kann mit Wasser entfernt werden과 뜻이 같아요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Hausarbeiten ___ bis zum 15. Mai abzugeben.",
+      "o": [
+        "sind",
+        "haben",
+        "werden",
+        "lassen"
+      ],
+      "a": 0,
+      "e": "sein … zu + 원형 = ~되어야 한다. Die Hausarbeiten müssen abgegeben werden과 뜻이 같아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Termin wäre beinahe vergessen ___.",
+      "ko": "그 약속은 하마터면 잊힐 뻔했어요.",
+      "h": "수동의 완료형",
+      "a": [
+        "worden"
+      ],
+      "e": "수동의 werden은 완료형에서 worden이에요. geworden은 '~이 되다'일 때만 써요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wenn es mehr Parkplätze gäbe, ___ das Zentrum öfter besucht.",
+      "ko": "주차장이 더 있다면 사람들이 시내를 더 자주 찾을 텐데요.",
+      "h": "수동 · 접속법 II",
+      "a": [
+        "würde"
+      ],
+      "e": "지금의 가정 → würde + 과거분사(besucht)."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Streit hätte vermieden werden ___.",
+      "ko": "그 다툼은 피할 수 있었어요.",
+      "h": "~수 있었다 · 원형",
+      "a": [
+        "können"
+      ],
+      "e": "hätte + 과거분사 + werden + können. 화법조동사는 원형으로 맨 끝에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Man schickt mir die Rechnung per Post.\n→ Ich ___ die Rechnung per Post geschickt.",
+      "ko": "저는 계산서를 우편으로 받아요.",
+      "h": "받다",
+      "a": [
+        [
+          "bekomme",
+          "erhalte",
+          "kriege"
+        ]
+      ],
+      "e": "3격 mir가 주어 ich가 되고, bekommen + 과거분사를 써요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Termin kann nicht verschoben werden.\n→ Der Termin lässt ___ nicht verschieben.",
+      "ko": "그 약속은 미룰 수 없어요.",
+      "h": "재귀대명사",
+      "a": [
+        "sich"
+      ],
+      "e": "sich lassen + 원형이 한 덩어리예요. sich를 빼면 안 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Tür kann nicht geöffnet werden.\n→ Die Tür ist nicht ___ öffnen.",
+      "ko": "그 문은 열 수 없어요.",
+      "h": "",
+      "a": [
+        "zu"
+      ],
+      "e": "sein … zu + 원형은 '될 수 있다'도 나타내요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Arzt kann jederzeit erreicht werden.\n→ Der Arzt ist jederzeit erreich___.",
+      "ko": "그 의사는 언제든 연락이 돼요.",
+      "h": "접미사",
+      "a": [
+        "bar"
+      ],
+      "e": "동사 어간 + -bar = ~될 수 있는. erreichen → erreichbar."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Brücke wurde ___ ein Hochwasser zerstört.",
+      "ko": "그 다리는 홍수로 무너졌어요.",
+      "h": "원인 · 4격",
+      "a": [
+        "durch"
+      ],
+      "e": "원인과 수단은 durch + 4격으로 말해요. von + 3격은 일을 한 사람에게 써요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그 계산서는 진작 냈어야 했어요.",
+      "a": [
+        "Die Rechnung hätte längst bezahlt werden müssen.",
+        "Längst hätte die Rechnung bezahlt werden müssen."
+      ],
+      "e": "hätte가 두 번째, 끝에는 과거분사 → werden → müssen 순서로 쌓아요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리는 회사에서 교통비를 돌려받아요.",
+      "a": [
+        "Wir bekommen die Fahrtkosten von der Firma erstattet.",
+        "Von der Firma bekommen wir die Fahrtkosten erstattet.",
+        "Die Fahrtkosten bekommen wir von der Firma erstattet."
+      ],
+      "e": "bekommen 수동이에요. Die Firma erstattet uns die Fahrtkosten의 3격 uns가 주어 wir가 됐어요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Ich finde, dass die Eltern früher ___.",
+      "o": [
+        "hätten gefragt werden müssen",
+        "gefragt werden müssen hätten",
+        "gefragt hätten werden müssen",
+        "hätten gefragt worden müssen"
+      ],
+      "a": 0,
+      "e": "종속절에서도 hätte는 끝에 가지 않아요. 원형 두 개(werden müssen)가 이어지면 동사 묶음의 맨 앞에 서요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'Die Sicherheitsvorschriften müssen beachtet werden.'와 뜻이 같은 문장은?",
+      "o": [
+        "Die Sicherheitsvorschriften sind zu beachten.",
+        "Die Sicherheitsvorschriften lassen sich beachten.",
+        "Die Sicherheitsvorschriften sind beachtbar.",
+        "Die Sicherheitsvorschriften bekommen beachtet."
+      ],
+      "a": 0,
+      "e": "'되어야 한다'는 sein … zu로 바꿔요. sich lassen과 -bar는 '될 수 있다'예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "수동문으로 바꿀 수 없는 문장은?",
+      "o": [
+        "Das Paket wiegt drei Kilo.",
+        "Die Köchin bereitet das Essen zu.",
+        "Die Lehrerin erklärt die Regel.",
+        "Man baut hier ein Hotel."
+      ],
+      "a": 0,
+      "e": "wiegen · kosten · haben · kennen 같은 동사는 수동으로 쓰지 않아요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Man hat ihr die Stelle angeboten.\n→ Sie hat die Stelle ___ ___.",
+      "ko": "그녀는 그 자리를 제안받았어요.",
+      "h": [
+        "anbieten · 과거분사",
+        "받다 · 과거분사"
+      ],
+      "a": [
+        "angeboten",
+        [
+          "bekommen",
+          "erhalten",
+          "gekriegt"
+        ]
+      ],
+      "e": "bekommen 수동의 완료형은 과거분사 + bekommen이에요. 3격 ihr가 주어 sie가 돼요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Dieser Punkt muss noch geprüft werden.\n→ Dieser Punkt ___ noch zu prüfen.",
+      "ko": "이 점은 아직 검토해야 해요.",
+      "h": "동사",
+      "a": [
+        [
+          "bleibt",
+          "ist"
+        ]
+      ],
+      "e": "'아직 되어야 한다'는 bleiben … zu로 말해요. sein … zu도 맞아요.",
+      "ok": "bleiben … zu는 이 과의 연습 대상 문형 자체"
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Zuerst müssen die Ursachen geklärt werden.\n→ Zuerst ___ es, die Ursachen zu klären.",
+      "ko": "먼저 원인을 밝혀야 해요.",
+      "h": "동사",
+      "a": [
+        "gilt"
+      ],
+      "e": "es gilt, … zu + 원형 = ~해야 한다. 글에서 쓰는 표현이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Diese Kosten können nicht vermieden werden.\n→ Diese Kosten sind ___.",
+      "ko": "이 비용은 피할 수 없어요.",
+      "h": "vermeiden → 형용사",
+      "a": [
+        [
+          "unvermeidbar",
+          "unvermeidlich"
+        ]
+      ],
+      "e": "kann nicht vermieden werden = unvermeidbar. nicht는 un-으로, können은 -bar로 옮겨요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "도와준 많은 사람이 없었다면 그 벼룩시장은 열리지 못했을 거예요.",
+      "a": [
+        "Ohne die vielen Helfer wäre der Flohmarkt nie organisiert worden.",
+        "Der Flohmarkt wäre ohne die vielen Helfer nie organisiert worden."
+      ],
+      "e": "지난 일의 가정 + 수동 → wäre … organisiert worden. worden이 맨 끝에 와요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Die Entscheidung hätte früher getroffen werden gemusst.",
+        "Er bekam die Kosten vom Arbeitgeber erstattet.",
+        "Der Text ist kaum zu verstehen.",
+        "Die Brücke wäre beinahe gesperrt worden."
+      ],
+      "a": 0,
+      "e": "다른 동사와 함께 쓰는 화법조동사는 완료형에서 원형이에요 → hätte getroffen werden müssen."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'Der Fehler hätte nicht übersehen werden dürfen.'의 뜻은?",
+      "o": [
+        "그 실수는 놓쳐서는 안 됐어요.",
+        "그 실수는 놓칠 수 없었어요.",
+        "그 실수는 놓치지 않았을 거예요.",
+        "그 실수는 놓쳐도 괜찮았어요."
+      ],
+      "a": 0,
+      "e": "hätte nicht … werden dürfen = ~되어서는 안 됐다. 실제로는 놓쳤다는 뜻이 들어 있어요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Hinweise zur Anmeldung:\nDas Formular ___ vollständig auszufüllen. Fehlende Angaben ___ sich später nicht mehr ergänzen. Nach der Anmeldung ___ Sie eine Bestätigung zugeschickt.",
+      "ko": "등록 안내: 신청서는 빠짐없이 작성해야 해요. 빠진 내용은 나중에 채워 넣을 수 없어요. 등록이 끝나면 확인서를 보내 드려요.",
+      "h": [
+        "~되어야 한다",
+        "~될 수 있다",
+        "받다"
+      ],
+      "a": [
+        "ist",
+        "lassen",
+        [
+          "bekommen",
+          "erhalten"
+        ]
+      ],
+      "e": "ist … auszufüllen = muss ausgefüllt werden · lassen sich … ergänzen = können ergänzt werden · bekommen … zugeschickt는 bekommen 수동이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Leider hat man die Anwohner nicht rechtzeitig gewarnt.\n→ Die Anwohner ___ rechtzeitig gewarnt ___ ___.",
+      "ko": "주민들에게 제때 알렸어야 했어요.",
+      "h": [
+        "접속법 II",
+        "수동",
+        "~야 했다"
+      ],
+      "a": [
+        "hätten",
+        "werden",
+        [
+          "müssen",
+          "sollen"
+        ]
+      ],
+      "e": "하지 않은 일을 아쉬워할 때 hätte + 과거분사 + werden + müssen을 써요. 주어가 복수라서 hätten이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Ich bin sicher, dass man das Gebäude hätte retten können.\n→ Ich bin sicher, dass das Gebäude ___ gerettet ___ ___.",
+      "ko": "그 건물은 분명히 구할 수 있었어요.",
+      "h": [
+        "접속법 II",
+        "수동",
+        "~수 있었다"
+      ],
+      "a": [
+        "hätte",
+        "werden",
+        "können"
+      ],
+      "e": "종속절에서 hätte는 동사 묶음의 맨 앞에 서요 — hätte gerettet werden können."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그녀는 임대 계약서를 더 꼼꼼히 검토했어야 했다고 생각해요.",
+      "a": [
+        "Sie meint, dass der Mietvertrag genauer hätte geprüft werden müssen."
+      ],
+      "e": "종속절이지만 hätte가 끝에 가지 않아요. hätte → 과거분사 → werden → müssen 순서예요."
+    }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "수동문을 sich lassen으로 바꿔 쓰세요.",
+      "s": "Die Datei kann nicht gespeichert werden.",
+      "a": [
+        "Die Datei lässt sich nicht speichern."
+      ],
+      "e": "kann … werden = lässt sich + 원형. 과거분사 gespeichert는 원형 speichern으로 돌아가요."
+    },
+    {
+      "t": "tr",
+      "q": "bekommen 수동으로 바꿔 쓰세요.",
+      "s": "Man hat mir das Paket nach Hause geliefert.",
+      "a": [
+        "Ich habe das Paket nach Hause geliefert bekommen.",
+        "Das Paket habe ich nach Hause geliefert bekommen.",
+        "Ich habe das Paket nach Hause geliefert gekriegt.",
+        "Das Paket habe ich nach Hause geliefert gekriegt."
+      ],
+      "e": "3격 mir가 주어 ich가 돼요. 완료형은 habe … geliefert bekommen이에요."
+    },
+    {
+      "t": "tr",
+      "q": "'~됐어야 했다'로 바꿔 쓰세요. (hätte … werden müssen)",
+      "s": "Man hat die Heizung nicht rechtzeitig repariert.",
+      "a": [
+        "Die Heizung hätte rechtzeitig repariert werden müssen.",
+        "Die Heizung hätte rechtzeitig repariert werden sollen."
+      ],
+      "e": "4격 목적어 die Heizung이 주어가 돼요. nicht는 빠지고, hätte + 과거분사 + werden + müssen을 써요."
+    },
+    {
+      "t": "err",
+      "q": "Das Auto wäre fast gestohlen geworden.",
+      "x": 5,
+      "r": "Das Auto wäre fast gestohlen worden.",
+      "ko": "그 차는 하마터면 도둑맞을 뻔했어요.",
+      "e": "수동의 완료형에서는 worden을 써요."
+    },
+    {
+      "t": "err",
+      "q": "Der Schrank lässt sich ohne Werkzeug aufgebaut.",
+      "x": 6,
+      "r": "Der Schrank lässt sich ohne Werkzeug aufbauen.",
+      "ko": "그 옷장은 공구 없이 조립할 수 있어요.",
+      "e": "sich lassen 뒤에는 과거분사가 아니라 원형이 와요."
+    },
+    {
+      "t": "err",
+      "q": "Der Text wurde von einem Bleistift geschrieben.",
+      "x": 3,
+      "r": "Der Text wurde mit einem Bleistift geschrieben.",
+      "ko": "그 글은 연필로 썼어요.",
+      "e": "손에 든 도구는 mit + 3격으로 말해요. von은 일을 한 사람에게 써요."
+    }
+  ]
+}

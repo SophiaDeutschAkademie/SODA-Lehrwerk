@@ -1,0 +1,456 @@
+{
+  "n": "39",
+  "level": "C1",
+  "goals": [
+    "문장의 주어를 2격 · 소유관사 · von으로 옮겨요",
+    "4격 목적어는 2격으로, 일을 한 쪽은 durch로 옮겨요",
+    "동사가 받던 전치사를 명사 뒤에도 그대로 써요",
+    "dass 문장을 명사구로 줄이고, 명사구를 문장으로 풀어요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Bevölkerung wächst.\n→ das Wachstum ___",
+      "o": [
+        "der Bevölkerung",
+        "die Bevölkerung",
+        "von Bevölkerung",
+        "durch die Bevölkerung"
+      ],
+      "a": 0,
+      "e": "목적어가 없는 문장은 주어가 2격이 돼요. die Bevölkerung → der Bevölkerung."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir fahren ab.\n→ ___ Abfahrt",
+      "o": [
+        "unsere",
+        "wir",
+        "uns",
+        "unser"
+      ],
+      "a": 0,
+      "e": "대명사 주어는 소유관사가 돼요. die Abfahrt는 여성이라서 unsere예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Zugvögel kehren zurück.\n→ die Rückkehr ___",
+      "o": [
+        "von Zugvögeln",
+        "von Zugvögel",
+        "Zugvögel",
+        "des Zugvögeln"
+      ],
+      "a": 0,
+      "e": "관사 없는 복수 명사는 2격임을 보여 줄 말이 없어서 von + 3격을 써요. 복수 3격은 -n이 붙어요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Regierung senkt die Steuern.\n→ die Senkung der Steuern ___ die Regierung",
+      "o": [
+        "durch",
+        "von",
+        "mit",
+        "für"
+      ],
+      "a": 0,
+      "e": "2격 목적어(der Steuern)가 있으면 일을 한 쪽은 durch + 4격으로 써요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Man verlängert die Frist.\n→ die Verlängerung ___",
+      "o": [
+        "der Frist",
+        "die Frist",
+        "durch die Frist",
+        "von Frist"
+      ],
+      "a": 0,
+      "e": "4격 목적어는 명사 뒤에서 2격이 돼요. man이 주어라서 durch는 없어요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Schüler nehmen am Wettbewerb teil.\n→ die Teilnahme der Schüler ___ Wettbewerb",
+      "o": [
+        "am",
+        "im",
+        "zum",
+        "vom"
+      ],
+      "a": 0,
+      "e": "동사가 받던 전치사는 명사도 그대로 받아요. teilnehmen an → die Teilnahme an."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Kinder freuen sich.\n→ die Freude ___ Kinder",
+      "ko": "아이들이 기뻐해요. → 아이들의 기쁨",
+      "h": "2격 복수 관사",
+      "a": [
+        "der"
+      ],
+      "e": "주어 die Kinder가 2격 der Kinder가 돼요. 재귀대명사 sich는 사라져요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Verein gründet eine Jugendmannschaft.\n→ die ___ einer Jugendmannschaft durch den Verein",
+      "ko": "구단이 유소년 팀을 만들어요. → 구단의 유소년 팀 창단",
+      "h": "gründen → 명사",
+      "a": [
+        "Gründung"
+      ],
+      "e": "gründen → die Gründung. 4격 목적어는 2격(einer Jugendmannschaft), 주어는 durch den Verein이 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Sie antwortet auf meine Mail.\n→ ihre Antwort ___ meine Mail",
+      "ko": "그녀가 내 메일에 답해요. → 내 메일에 대한 그녀의 답",
+      "h": "전치사",
+      "a": [
+        "auf"
+      ],
+      "e": "antworten auf → die Antwort auf. 전치사는 그대로예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir danken den Helfern.\n→ unser Dank ___ die Helfer",
+      "ko": "우리는 도와준 분들께 감사해요. → 도와준 분들께 드리는 우리의 감사",
+      "h": "3격 목적어 → 전치사",
+      "a": [
+        "an"
+      ],
+      "e": "3격 목적어는 2격이 되지 않고 전치사를 받아요. jemandem danken → der Dank an + 4격."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Bürger protestieren gegen den Flughafenausbau.\n→ der Protest der Bürger ___ den Flughafenausbau",
+      "ko": "시민들이 공항 확장에 항의해요. → 공항 확장에 대한 시민들의 항의",
+      "h": "전치사",
+      "a": [
+        "gegen"
+      ],
+      "e": "protestieren gegen → der Protest gegen. 주어는 2격 der Bürger가 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Vorstellung findet heute statt.\n→ die ___ Vorstellung",
+      "ko": "공연은 오늘 열려요. → 오늘의 공연",
+      "h": "heute → 형용사",
+      "a": [
+        "heutige"
+      ],
+      "e": "때의 부사에 -ig를 붙여 형용사로 만들어요. heute → heutig. 정관사 뒤 1격 여성은 -e예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Umsätze gehen leicht zurück.\n→ der ___ Rückgang der Umsätze",
+      "ko": "매출이 조금 줄어요. → 매출의 소폭 감소",
+      "h": "leicht",
+      "a": [
+        "leichte"
+      ],
+      "e": "부사 leicht는 명사 앞에서 형용사가 돼요. 정관사 뒤 1격 남성은 -e예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das Versprechen wurde nicht erfüllt.\n→ die ___ des Versprechens",
+      "ko": "약속을 지키지 않았어요. → 약속 불이행",
+      "h": "nicht + erfüllen → 명사",
+      "a": [
+        "Nichterfüllung"
+      ],
+      "e": "erfüllen → die Erfüllung. nicht는 Nicht-가 되어 앞에 붙어요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "새 역의 개통은 3월로 계획돼 있어요.",
+      "a": [
+        "Die Eröffnung des neuen Bahnhofs ist für März geplant.",
+        "Für März ist die Eröffnung des neuen Bahnhofs geplant."
+      ],
+      "e": "Man eröffnet den neuen Bahnhof를 명사구로 줄였어요. 4격 목적어가 2격 des neuen Bahnhofs가 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "설문에 참여해 주셔서 감사해요.",
+      "a": [
+        "Wir danken Ihnen für Ihre Teilnahme an der Umfrage.",
+        "Für Ihre Teilnahme an der Umfrage danken wir Ihnen."
+      ],
+      "e": "Sie nehmen an der Umfrage teil → Ihre Teilnahme an der Umfrage. 대명사 주어는 소유관사가 되고 전치사 an은 그대로예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'Der Stadtrat genehmigte das Projekt.'를 명사구로 바르게 바꾼 것은?",
+      "o": [
+        "die Genehmigung des Projekts durch den Stadtrat",
+        "die Genehmigung das Projekt durch den Stadtrat",
+        "die Genehmigung des Projekts von den Stadtrat",
+        "die Genehmigung des Stadtrats durch das Projekt"
+      ],
+      "a": 0,
+      "e": "4격 목적어 das Projekt → 2격 des Projekts, 주어 der Stadtrat → durch den Stadtrat."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Es ist erforderlich, dass alle Mitglieder zustimmen.\n→ ___ aller Mitglieder ist erforderlich.",
+      "o": [
+        "Die Zustimmung",
+        "Die Zustimmen",
+        "Das Zugestimmte",
+        "Die Zustimmheit"
+      ],
+      "a": 0,
+      "e": "zustimmen → die Zustimmung. 주어 alle Mitglieder는 2격 aller Mitglieder가 돼요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Er interessiert sich sehr für Technik.\n→ sein großes Interesse ___ Technik",
+      "o": [
+        "an",
+        "auf",
+        "über",
+        "nach"
+      ],
+      "a": 0,
+      "e": "명사 Interesse는 an + 3격을 받아요. 동사와 명사의 전치사가 다른 짝이에요.<br>sehr는 형용사 groß로 바뀌었어요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Die Firma hofft darauf, dass sich der Markt erholt.\n→ Die Firma hofft auf eine ___ des Marktes.",
+      "ko": "회사는 시장이 회복되기를 바라요.",
+      "h": "sich erholen → 명사",
+      "a": [
+        "Erholung"
+      ],
+      "e": "sich erholen → die Erholung. sich는 사라지고, darauf에서는 전치사 auf만 남아요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich zweifle daran, dass die Angaben richtig sind.\n→ Ich zweifle ___ der ___ der Angaben.",
+      "ko": "저는 그 정보가 맞는지 의심스러워요.",
+      "h": [
+        "전치사",
+        "richtig → 명사"
+      ],
+      "a": [
+        "an",
+        "Richtigkeit"
+      ],
+      "e": "daran에서 전치사 an만 남아요. richtig sein → die Richtigkeit. 주어 die Angaben은 2격이 돼요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Dass sie plötzlich abreiste, überraschte alle.\n→ Ihre ___ ___ überraschte alle.",
+      "ko": "그녀가 갑자기 떠나서 모두 놀랐어요.",
+      "h": [
+        "plötzlich",
+        "abreisen → 명사"
+      ],
+      "a": [
+        "plötzliche",
+        "Abreise"
+      ],
+      "e": "abreisen → die Abreise. 부사 plötzlich는 형용사가 되고, 소유관사 뒤 1격 여성이라서 -e예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "die Entlassung von 200 Mitarbeitern durch den Konzern\n→ Der Konzern ___ 200 Mitarbeiter.",
+      "ko": "그 대기업이 직원 200명을 해고해요.",
+      "h": "명사 → 동사",
+      "a": [
+        [
+          "entlässt",
+          "entließ"
+        ]
+      ],
+      "e": "die Entlassung → entlassen. durch den Konzern이 주어가 되고, von 200 Mitarbeitern이 4격 목적어가 돼요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그 계획에 대한 노조의 비판이 커지고 있어요.",
+      "a": [
+        "Die Kritik der Gewerkschaft an den Plänen wächst."
+      ],
+      "e": "비판하는 쪽은 2격(der Gewerkschaft), 비판받는 것은 an + 3격(an den Plänen)이에요.<br>an den Plänen der Gewerkschaft라고 쓰면 '노조의 계획에 대한 비판'이 돼요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 명사구는?",
+      "o": [
+        "die Untersuchung den Unfall durch Experten",
+        "die Befragung der Zeugen durch die Polizei",
+        "die Hoffnung der Angehörigen auf eine schnelle Aufklärung",
+        "die baldige Wiedereröffnung der Strecke"
+      ],
+      "a": 0,
+      "e": "untersuchen의 4격 목적어는 명사 뒤에서 2격이 돼요 → die Untersuchung des Unfalls durch Experten."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "뉴스 제목 'Verschiebung der Wahl durch das Gericht'와 뜻이 같은 문장은?",
+      "o": [
+        "Das Gericht verschiebt die Wahl.",
+        "Das Gericht wird durch die Wahl verschoben.",
+        "Die Wahl verschiebt den Gerichtstermin.",
+        "Das Gericht wird nach der Wahl verschoben."
+      ],
+      "a": 0,
+      "e": "die Verschiebung → verschieben. 2격 der Wahl이 목적어, durch das Gericht가 주어예요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Die Stadt will ein neues Stadion bauen. Ob das Land die Kosten übernimmt, ist aber noch offen. Viele Anwohner fürchten, dass der Lärm zunimmt.\n→ Die Stadt plant den ___ eines neuen Stadions. Die ___ der Kosten durch das Land ist aber noch offen. Viele Anwohner fürchten eine ___ des Lärms.",
+      "ko": "시는 새 경기장 건설을 계획해요. 하지만 주에서 비용을 부담할지는 아직 정해지지 않았어요. 많은 주민이 소음이 늘까 봐 걱정해요.",
+      "h": [
+        "bauen → 명사",
+        "übernehmen → 명사",
+        "zunehmen → 명사"
+      ],
+      "a": [
+        [
+          "Bau",
+          "Neubau"
+        ],
+        "Übernahme",
+        "Zunahme"
+      ],
+      "e": "bauen → der Bau · übernehmen → die Übernahme · zunehmen → die Zunahme.<br>4격 목적어는 2격(der Kosten), 일을 한 쪽은 durch das Land예요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Der Betriebsrat fordert, dass die Arbeitszeit sofort verkürzt wird.\n→ Der Betriebsrat fordert die ___ ___ der Arbeitszeit.",
+      "ko": "직장 평의회는 근무 시간을 바로 줄이라고 요구해요.",
+      "h": [
+        "sofort → 형용사",
+        "verkürzen → 명사"
+      ],
+      "a": [
+        "sofortige",
+        "Verkürzung"
+      ],
+      "e": "sofort → sofortig. 4격 여성이라서 die sofortige Verkürzung이에요. 수동문의 주어 die Arbeitszeit는 2격이 돼요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "die Nichtteilnahme vieler Länder an der Konferenz\n→ Viele Länder ___ ___ an der Konferenz ___.",
+      "ko": "많은 나라가 그 회의에 참가하지 않아요.",
+      "h": [
+        "동사",
+        "Nicht- → ?",
+        "분리 전철"
+      ],
+      "a": [
+        [
+          "nehmen",
+          "nahmen"
+        ],
+        "nicht",
+        "teil"
+      ],
+      "e": "die Teilnahme → teilnehmen. Nicht-는 nicht로 풀고, 2격 vieler Länder가 주어 viele Länder가 돼요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "학교 측이 제안을 거절한 뒤 학부모들이 항의했어요.",
+      "a": [
+        "Nach der Ablehnung des Vorschlags durch die Schulleitung protestierten die Eltern.",
+        "Die Eltern protestierten nach der Ablehnung des Vorschlags durch die Schulleitung."
+      ],
+      "e": "Nachdem die Schulleitung den Vorschlag abgelehnt hatte를 명사구로 줄였어요. 목적어가 명사 바로 뒤에 2격으로 오고, 일을 한 쪽은 그 뒤에 durch로 와요."
+    }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "dass 문장을 명사구로 바꿔 쓰세요.",
+      "s": "Es ist notwendig, dass die Wälder geschützt werden.",
+      "a": [
+        "Der Schutz der Wälder ist notwendig.",
+        "Notwendig ist der Schutz der Wälder.",
+        "Der Waldschutz ist notwendig.",
+        "Notwendig ist der Waldschutz."
+      ],
+      "e": "schützen → der Schutz. 수동문의 주어 die Wälder는 2격 der Wälder가 돼요. 합성어 Waldschutz로 더 줄일 수도 있어요."
+    },
+    {
+      "t": "tr",
+      "q": "문장을 명사구로 바꿔 쓰세요.",
+      "s": "Die Gemeinde schließt das Schwimmbad.",
+      "a": [
+        "die Schließung des Schwimmbads durch die Gemeinde",
+        "die Schließung des Schwimmbades durch die Gemeinde"
+      ],
+      "e": "schließen → die Schließung. 4격 목적어는 2격 des Schwimmbads, 주어는 durch die Gemeinde가 돼요."
+    },
+    {
+      "t": "tr",
+      "q": "명사구를 현재형 문장으로 풀어 쓰세요.",
+      "s": "die Prüfung der Unterlagen durch das Amt",
+      "a": [
+        "Das Amt prüft die Unterlagen.",
+        "Die Unterlagen werden durch das Amt geprüft.",
+        "Die Unterlagen werden vom Amt geprüft.",
+        "Die Unterlagen prüft das Amt."
+      ],
+      "e": "die Prüfung → prüfen. 2격 der Unterlagen이 목적어, durch das Amt가 주어예요. 수동으로 풀어도 돼요."
+    },
+    {
+      "t": "err",
+      "q": "Die Sanierung die Brücke dauert zwei Jahre.",
+      "x": 2,
+      "r": "Die Sanierung der Brücke dauert zwei Jahre.",
+      "ko": "다리 보수는 2년이 걸려요.",
+      "e": "명사 뒤에서는 4격 목적어가 2격이 돼요. die Brücke → der Brücke."
+    },
+    {
+      "t": "err",
+      "q": "Die Entdeckung Amerikas von Kolumbus veränderte die Welt.",
+      "x": 3,
+      "r": "Die Entdeckung Amerikas durch Kolumbus veränderte die Welt.",
+      "ko": "콜럼버스의 아메리카 발견은 세상을 바꿨어요.",
+      "e": "2격 목적어(Amerikas)가 있으면 일을 한 쪽은 durch로 써요."
+    },
+    {
+      "t": "err",
+      "q": "Das gestern Gespräch war sehr hilfreich.",
+      "x": 1,
+      "r": "Das gestrige Gespräch war sehr hilfreich.",
+      "ko": "어제 나눈 이야기는 큰 도움이 됐어요.",
+      "e": "부사 gestern은 명사 앞에 그대로 올 수 없어요. -ig를 붙여 형용사 gestrig로 만들어요."
+    }
+  ]
+}

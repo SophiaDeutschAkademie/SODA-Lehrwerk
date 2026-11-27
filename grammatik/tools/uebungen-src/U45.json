@@ -1,0 +1,445 @@
+{
+  "n": "45",
+  "level": "C1",
+  "goals": [
+    "가운데 자리에서 대명사 · 아는 정보 · 새 정보를 알맞은 순서로 놓아요",
+    "문장 전체의 nicht와 일부만 부정하는 nicht … sondern을 구별해요",
+    "비교의 als · wie와 und zwar를 뒷자리에 놓아요",
+    "첫 자리에 성분 하나만 놓고, 앞 문장을 받는 말로 문장을 이어요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich habe das Buch meiner Schwester geliehen.\n→ Ich habe ___ geliehen.",
+      "o": [
+        "es ihr",
+        "ihr es",
+        "sie ihm",
+        "ihm sie"
+      ],
+      "a": 0,
+      "e": "대명사끼리는 4격이 3격보다 앞에 와요. das Buch → es, meiner Schwester → ihr."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "맞는 문장은?",
+      "o": [
+        "Wir fliegen im Sommer nicht nach Spanien.",
+        "Wir fliegen im Sommer nach Spanien nicht.",
+        "Wir nicht fliegen im Sommer nach Spanien.",
+        "Wir fliegen nicht im Sommer nach Spanien nicht."
+      ],
+      "a": 0,
+      "e": "문장 전체를 부정하는 nicht는 방향을 나타내는 말(nach Spanien) 앞에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "맞는 문장은?",
+      "o": [
+        "Sie ist schneller geschwommen als ihre Schwester.",
+        "Sie ist als ihre Schwester schneller geschwommen.",
+        "Sie ist schneller als geschwommen ihre Schwester.",
+        "Als ihre Schwester sie ist schneller geschwommen."
+      ],
+      "a": 0,
+      "e": "비교의 als는 문장 끝의 동사(geschwommen) 뒤, 뒷자리에 둬요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "맞는 문장은?",
+      "o": [
+        "Am Wochenende besuchen wir meine Großeltern.",
+        "Am Wochenende wir besuchen meine Großeltern.",
+        "Wir am Wochenende besuchen meine Großeltern.",
+        "Am Wochenende meine Großeltern wir besuchen."
+      ],
+      "a": 0,
+      "e": "첫 자리에는 성분 하나만 와요. 동사 besuchen이 두 번째, 주어 wir는 그 뒤예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "'누구에게 줬는지'가 새 정보인 문장은?",
+      "o": [
+        "Ich habe die Blumen einer Nachbarin geschenkt.",
+        "Ich habe der Nachbarin Blumen geschenkt.",
+        "Ich habe sie ihr geschenkt.",
+        "Ich habe ihr die Blumen geschenkt."
+      ],
+      "a": 0,
+      "e": "아는 것(die Blumen)은 앞에, 새 정보(einer Nachbarin)는 뒤에 와요. 부정관사가 붙은 말이 새 정보예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Er hat mehr gegessen ___ ich.",
+      "ko": "그는 나보다 더 많이 먹었어요.",
+      "h": "비교",
+      "a": [
+        "als"
+      ],
+      "e": "비교급 + als. als ich는 과거분사 gegessen 뒤, 뒷자리에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Sie hat genauso lange gewartet ___ wir.",
+      "ko": "그녀는 우리만큼 오래 기다렸어요.",
+      "h": "비교",
+      "a": [
+        "wie"
+      ],
+      "e": "genauso … wie = ~만큼. wie wir도 뒷자리에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Nicht mein Bruder, ___ meine Schwester studiert in Wien.",
+      "ko": "빈에서 공부하는 건 오빠가 아니라 언니예요.",
+      "h": "",
+      "a": [
+        "sondern"
+      ],
+      "e": "일부만 부정할 때는 그 말 바로 앞에 nicht를 두고 sondern으로 바로잡아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir haben das Haus verkauft, und ___ bereits vor drei Jahren.",
+      "ko": "우리는 그 집을 팔았어요, 그것도 벌써 3년 전에요.",
+      "h": "",
+      "a": [
+        "zwar"
+      ],
+      "e": "und zwar는 앞말을 더 자세히 밝힐 때 써요. 문장 끝의 동사 뒤, 뒷자리에 덧붙여요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich habe dem Nachbarn den Schlüssel gegeben.\n→ Ich habe ___ ___ gegeben.",
+      "ko": "나는 이웃에게 열쇠를 줬어요. → 나는 그에게 그것을 줬어요.",
+      "h": [
+        "den Schlüssel → 대명사",
+        "dem Nachbarn → 대명사"
+      ],
+      "a": [
+        "ihn",
+        "ihm"
+      ],
+      "e": "대명사끼리는 4격(ihn) → 3격(ihm) 순서예요. 명사끼리일 때와 순서가 반대예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Letzte Woche war ich in einem kleinen Dorf in den Alpen. ___ gibt es nur ein einziges Geschäft.",
+      "ko": "지난주에 알프스의 작은 마을에 있었어요. 거기에는 가게가 하나뿐이에요.",
+      "h": "거기",
+      "a": [
+        [
+          "Dort",
+          "Da"
+        ]
+      ],
+      "e": "앞 문장의 끝(in einem kleinen Dorf)을 Dort로 받아 첫 자리에 놓으면 글이 이어져요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그녀가 오늘 아침에 나에게 그것(ihn)을 보여 줬어요.",
+      "a": [
+        "Sie hat ihn mir heute Morgen gezeigt.",
+        "Heute Morgen hat sie ihn mir gezeigt."
+      ],
+      "e": "대명사가 가운데 자리의 맨 앞에 와요. 4격 ihn → 3격 mir → 시간 순서예요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리는 어제 추위 때문에 택시를 타고 집에 갔어요.",
+      "a": [
+        "Wir sind gestern wegen der Kälte mit dem Taxi nach Hause gefahren.",
+        "Gestern sind wir wegen der Kälte mit dem Taxi nach Hause gefahren.",
+        "Wegen der Kälte sind wir gestern mit dem Taxi nach Hause gefahren."
+      ],
+      "e": "부사어는 시간 → 이유 → 방법 순서로 놓아요. 방향(nach Hause)은 동사에 딸린 말이라서 맨 뒤예요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그는 선물을 받고도 고맙다고 하지 않았어요.",
+      "a": [
+        "Er hat sich nicht für das Geschenk bedankt.",
+        "Er hat sich für das Geschenk nicht bedankt.",
+        "Für das Geschenk hat er sich nicht bedankt."
+      ],
+      "e": "문장 전체의 nicht는 보통 전치사 목적어(für das Geschenk) 앞에 와요. 재귀대명사 sich는 동사 바로 뒤예요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "가는 길은 우리가 생각했던 것보다 오래 걸렸어요.",
+      "a": [
+        "Die Fahrt hat länger gedauert, als wir gedacht hatten."
+      ],
+      "e": "비교의 als 문장은 문장 끝의 동사 gedauert 뒤, 뒷자리에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "'Gestern'으로 시작해서 단어를 알맞은 순서로 놓으세요.",
+      "ko": "어제 이모가 나에게 소포를 보냈어요.",
+      "a": [
+        "Gestern hat mir meine Tante ein Paket geschickt.",
+        "Gestern hat meine Tante mir ein Paket geschickt."
+      ],
+      "e": "대명사 mir는 명사 주어 meine Tante보다 앞에 올 수 있어요. 새 정보 ein Paket은 뒤에 와요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Sie hat nicht ihren Bruder angerufen, ___.",
+      "o": [
+        "sondern ihre Schwester",
+        "sondern geschrieben",
+        "sondern gestern",
+        "sondern zu Hause"
+      ],
+      "a": 0,
+      "e": "nicht가 ihren Bruder 바로 앞에 있으니 '누구에게'만 부정해요. sondern 뒤에도 사람이 와요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'Was hast du mit dem alten Fahrrad gemacht?'에 가장 자연스러운 대답은?",
+      "o": [
+        "Ich habe das Fahrrad einem Studenten verkauft.",
+        "Ich habe einem Studenten das Fahrrad verkauft.",
+        "Ich habe verkauft das Fahrrad einem Studenten.",
+        "Einem Studenten ich habe das Fahrrad verkauft."
+      ],
+      "a": 0,
+      "e": "자전거는 이미 아는 것이라서 앞에, 새 정보인 einem Studenten은 뒤에 와요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "In unserer Straße hat ein neues Café eröffnet.\n이 문장에 가장 매끄럽게 이어지는 문장은?",
+      "o": [
+        "Dort gibt es den besten Kuchen der Stadt.",
+        "Den besten Kuchen der Stadt dort gibt es.",
+        "Es dort gibt den besten Kuchen der Stadt.",
+        "Dort es gibt den besten Kuchen der Stadt."
+      ],
+      "a": 0,
+      "e": "앞 문장의 새 정보(ein neues Café)를 Dort로 받아 첫 자리에 놓아요. 동사 gibt는 두 번째예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Ich habe den Roman nicht gelesen, ___ nur die Verfilmung gesehen.",
+      "ko": "그 소설은 읽지 않고 영화로 만든 것만 봤어요.",
+      "h": "",
+      "a": [
+        "sondern"
+      ],
+      "e": "nicht …, sondern … = ~이 아니라. 앞말을 부정하고 바로잡을 때 aber가 아니라 sondern을 써요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Kannst du mir das Wörterbuch leihen? – Ja, ich leihe ___ ___ gern.",
+      "ko": "사전 좀 빌려줄 수 있어? – 응, 기꺼이 빌려줄게.",
+      "h": [
+        "das Wörterbuch → 대명사",
+        "너에게"
+      ],
+      "a": [
+        "es",
+        "dir"
+      ],
+      "e": "대명사끼리는 4격(es)이 3격(dir)보다 앞에 와요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그 강연은 내가 기대했던 것보다 재미있었어요.",
+      "a": [
+        "Der Vortrag war interessanter, als ich erwartet hatte."
+      ],
+      "e": "비교의 als 문장은 뒷자리에 와요. als 문장 안에서는 동사 hatte가 끝에 가요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "'Diesen Fehler'로 시작해서 단어를 알맞은 순서로 놓으세요.",
+      "ko": "이 실수는 분명히 다시 하지 않을 거예요.",
+      "a": [
+        "Diesen Fehler mache ich bestimmt nicht noch einmal."
+      ],
+      "e": "목적어를 첫 자리에 놓으면 그 말이 강조돼요. 동사 mache가 두 번째, 주어 ich는 그 뒤예요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "시는 2020년부터 새 자전거 도로에 많은 돈을 들였어요.",
+      "a": [
+        "Die Stadt hat seit 2020 viel Geld in neue Radwege investiert.",
+        "Seit 2020 hat die Stadt viel Geld in neue Radwege investiert."
+      ],
+      "e": "시간이 먼저 오고, 전치사 목적어 in neue Radwege는 동사에 딸린 말이라서 investiert 바로 앞에 와요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Ich habe ihm es schon zweimal erklärt.",
+        "Ich habe es ihm schon zweimal erklärt.",
+        "Erklärt habe ich es ihm schon zweimal.",
+        "Schon zweimal habe ich es ihm erklärt."
+      ],
+      "a": 0,
+      "e": "대명사끼리는 4격 es가 3격 ihm보다 앞에 와요. 첫 자리에는 과거분사나 부사가 와도 돼요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "Nach monatelangem Streit haben sich die Nachbarn gestern vor Gericht auf eine Lösung geeinigt.\n이 문장에서 가장 중요한 새 정보는?",
+      "o": [
+        "auf eine Lösung",
+        "nach monatelangem Streit",
+        "gestern",
+        "die Nachbarn"
+      ],
+      "a": 0,
+      "e": "새롭고 중요한 정보는 문장 끝쪽, 동사 바로 앞에 와요. 첫 자리의 말은 배경이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Im Mai habe ich eine alte Schulfreundin wiedergetroffen. ___ lebt seit zehn Jahren in Kanada. ___ leitet sie ein kleines Hotel. ___ kommt sie nur selten nach Deutschland.",
+      "ko": "5월에 옛 학교 친구를 다시 만났어요. 그녀는 10년 전부터 캐나다에 살아요. 거기서 작은 호텔을 운영해요. 그래서 독일에는 가끔만 와요.",
+      "h": [
+        "그녀",
+        "거기서",
+        "그래서"
+      ],
+      "a": [
+        "Sie",
+        [
+          "Dort",
+          "Da"
+        ],
+        [
+          "Deshalb",
+          "Deswegen",
+          "Daher",
+          "Darum"
+        ]
+      ],
+      "e": "앞 문장의 새 정보를 다음 문장의 첫 자리에서 받아요 — eine Schulfreundin → Sie, in Kanada → Dort. 접속부사 뒤에는 동사가 바로 와요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Wir sind ___ mit dem Auto, ___ mit dem Zug gefahren, und ___ erst am Samstag.",
+      "ko": "우리는 차가 아니라 기차로 갔어요, 그것도 토요일에야 갔어요.",
+      "h": [
+        "부정",
+        "바로잡기",
+        "덧붙이기"
+      ],
+      "a": [
+        "nicht",
+        "sondern",
+        "zwar"
+      ],
+      "e": "일부만 부정할 때는 그 말 바로 앞에 nicht, 바로잡을 때 sondern, 뒷자리에 덧붙일 때 und zwar를 써요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "'Der Direktor'로 시작해서 단어를 알맞은 순서로 놓으세요.",
+      "ko": "교장 선생님은 어제 편지로 그들에게 새 규칙을 설명했어요.",
+      "a": [
+        "Der Direktor hat ihnen gestern in einem Brief die neuen Regeln erklärt.",
+        "Der Direktor hat ihnen die neuen Regeln gestern in einem Brief erklärt."
+      ],
+      "e": "대명사 ihnen이 가운데 자리의 맨 앞에 와요. 그 뒤에 시간 → 방법이 오고, 4격 목적어는 그 앞이나 뒤에 놓아요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리는 계약을 해지해야 해요, 그것도 이번 달 안에요.",
+      "a": [
+        "Wir müssen den Vertrag kündigen, und zwar noch in diesem Monat."
+      ],
+      "e": "und zwar로 덧붙이는 말은 문장 끝의 동사 kündigen 뒤, 뒷자리에 와요."
+    }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "두 목적어를 대명사로 바꿔 쓰세요.",
+      "s": "Ich habe meiner Freundin die Fotos gezeigt.",
+      "a": [
+        "Ich habe sie ihr gezeigt."
+      ],
+      "e": "die Fotos → sie(4격), meiner Freundin → ihr(3격). 대명사는 4격이 먼저예요."
+    },
+    {
+      "t": "tr",
+      "q": "문장 전체를 nicht로 부정하세요.",
+      "s": "Wir ziehen im Herbst nach München.",
+      "a": [
+        "Wir ziehen im Herbst nicht nach München.",
+        "Im Herbst ziehen wir nicht nach München."
+      ],
+      "e": "문장 전체의 nicht는 방향을 나타내는 말(nach München) 앞에 와요."
+    },
+    {
+      "t": "tr",
+      "q": "'Gestern'으로 시작하도록 바꿔 쓰세요.",
+      "s": "Ich habe gestern einen interessanten Vortrag gehört.",
+      "a": [
+        "Gestern habe ich einen interessanten Vortrag gehört."
+      ],
+      "e": "첫 자리에는 성분 하나만 와요. Gestern이 첫 자리에 오면 주어 ich는 동사 habe 뒤로 가요."
+    },
+    {
+      "t": "err",
+      "q": "Das Kind hat lauter gelacht wie alle anderen.",
+      "x": 5,
+      "r": "Das Kind hat lauter gelacht als alle anderen.",
+      "ko": "그 아이는 다른 누구보다 크게 웃었어요.",
+      "e": "비교급(lauter) 뒤에는 als를 써요. wie는 genauso · so와 함께 써요."
+    },
+    {
+      "t": "err",
+      "q": "Nicht der Lehrer, aber die Schüler haben das Fest organisiert.",
+      "x": 3,
+      "r": "Nicht der Lehrer, sondern die Schüler haben das Fest organisiert.",
+      "ko": "축제를 준비한 건 선생님이 아니라 학생들이에요.",
+      "e": "nicht로 부정한 말을 바로잡을 때는 sondern을 써요."
+    },
+    {
+      "t": "err",
+      "q": "Sie hat gekündigt, und nämlich gleich am ersten Tag.",
+      "x": 4,
+      "r": "Sie hat gekündigt, und zwar gleich am ersten Tag.",
+      "ko": "그녀는 그만뒀어요, 그것도 첫날에 바로요.",
+      "e": "앞말을 더 자세히 밝혀 덧붙일 때는 und zwar를 써요."
+    }
+  ]
+}

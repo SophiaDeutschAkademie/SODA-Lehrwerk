@@ -6,7 +6,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 
 | 폴더 | 자료 | 내용 |
 |---|---|---|
-| `grammatik/` | Syntalab | 문법 교재, Lektion 37개와 부록「암기 노트」, 과마다 연습문제 37개(보강 포함)와 통합 복습 4세트 |
+| `grammatik/` | Syntalab | 문법 교재, Lektion 37개와 부록「암기 노트」, 과마다 연습문제 37개(보강 포함)와 통합 복습 4세트. 별도 항목 「C1 문법」에 Lektion 38~46의 교재와 연습 9개, 통합 복습 5 |
 | `lesetraining/` | SODA Lesetraining | 독해 훈련, A1–C1, 텍스트 125개 |
 | `hoertraining/` | Lehrwerk Hörtraining | 듣기 훈련, A1–C1, 88세트 |
 | `schreibtraining/` | SODA Schreibtraining | 쓰기 훈련, A1–C1 레벨별 5챕터(총 25개), 챕터마다 구성·표현·연습·쓰기·모범답안, 「선생님께 제출하기」(소피아 독일어학원 수강생 전용 안내 팝업) |
@@ -90,6 +90,7 @@ Goethe(A2·B1·B2)와 telc(B1·B2·C1 Hochschule) 모의고사는 각각 `SODA-G
 - 격변화표(`table.decl-m`)는 핸드폰에서도 격(세로)×성(가로) 표 한 장으로 보입니다(교재의 스크롤 보기·페이지 보기, 부록 모두). 글자와 여백은 `grammatik/index.html`의 `@media(max-width:840px){table.decl-m…}`에서 화면 폭에 맞춰 줄여요. 칸의 글이 길면 두세 줄로 접히므로, 표를 새로 넣거나 고친 뒤에는 핸드폰 폭에서 한 번 확인합니다.
 - 과의 용어에 점선 밑줄로 걸린 낱말 풀이(`span.gt`)는 과마다 같은 글이 되풀이되어 들어 있습니다. 풀이를 고칠 때는 모든 과에서 같은 글을 한꺼번에 바꿉니다.
 - `grammatik/`의 연습문제(목차 아래 「연습문제 · Übungen」)는 과마다 하나, 37개예요. 과마다 기본·중간·도전 뒤에 보강(바꿔 쓰기·오류 찾기)이 있고, 목차 맨 아래에 여러 과를 섞은 통합 복습 4세트(`W1.json` … `W4.json`)가 있어요. 학생이 푼 답은 기기에 저장되며, 지키는 규칙은 `grammatik/tools/uebungen-src/README.md` 끝에 있어요. 원본은 `grammatik/tools/uebungen-src/U01.json` … `U37.json`이고, 쓰는 법과 규칙은 같은 폴더의 `README.md`에 있어요. 원본을 고친 뒤 `python3 grammatik/tools/uebungen-check.py`로 검사하고 `python3 grammatik/tools/uebungen-build.py`를 실행하면 `grammatik/uebungen/`의 앱용 파일, `index.html`의 연습 주소, `sw.js`의 캐시 목록과 버전이 함께 바뀌어요. 그 뒤에 `python3 grammatik/tools/pdf-build.py`를 실행해 문법 연습 PDF도 다시 만들어요(아래 「Syntalab 인쇄용 PDF」의 「문법 연습 PDF」).
+- `grammatik/`의 「C1 문법」(`#/c1`)은 Lektion 38~46의 교재와 연습을 한 묶음으로 둔 별도 항목이에요. 교재 목차와 연습 목차 맨 아래의 「C1 문법」 카드로 들어가요. 과마다 「교재」와 「연습」 단추가 한 줄에 나란히 있고, 그 아래에 아홉 과를 섞은 통합 복습 5(`W5.json`)가 있어요. 목록은 `index.html`의 `sx-c1` 블록(`lessons`·`ux`·`wx`)에 따로 있어서 교재 목차의 과 수(37)와 진도 칸에는 들어가지 않아요. 학습 완료와 답은 다른 과와 같은 저장 이름에 과 번호(38~46)로 들어가므로 저장 이름을 바꾸지 않습니다. 과 파일은 `lessons/L38.json` … `L46.json`이고 다른 과와 같은 형식이라 직접 고쳐요. 고친 뒤 `python3 grammatik/tools/anhang-build.py`를 실행하면 `sx-c1`과 `sw.js`의 `?v=` 값과 버전이 함께 맞춰져요(부록에는 38과 이후의 표를 넣지 않았어요). 연습 원본은 `grammatik/tools/uebungen-src/U38.json` … `U46.json`과 `W5.json`(레벨 `C1`)이고, 고친 뒤 하는 일은 위와 같아요. `uebungen-build.py`가 38과 이후의 연습을 `sx-ux`·`sx-wx`가 아니라 `sx-c1`에 적어요. 인쇄용 PDF(`pdf-build.py`)는 `sx-meta`·`sx-ux`·`sx-wx`만 읽으므로 C1 문법은 아직 PDF에 들어가지 않고, C1 목차에는 PDF 단추가 나오지 않아요.
 - `grammatik/`의 교재(과, `#/L01` …)는 핸드폰과 작은 태블릿(화면 폭 820px 이하, 세워 든 상태)에서 책처럼 한 페이지씩 넘겨 보는 「페이지 보기」로 열립니다. 옆으로 밀면 종이가 손가락을 따라 접히며 넘어가고, 화면 좌우 가장자리를 누르거나 아래 띠의 화살표를 눌러도 넘어가요. 넓은 화면과 옆으로 눕힌 핸드폰은 전처럼 스크롤로 열리고, 오른쪽 아래 글자 크기 단추 옆의 책 단추로 페이지 보기를 켤 수 있습니다. 목차·연습문제·부록은 늘 스크롤이에요. 이 기능은 `grammatik/pager.js` 한 파일에 들어 있습니다.
   - 문제(`.quiz-block`)는 페이지 보기에서 촘촘하게 놓아 한 페이지에 여러 문제가 들어갑니다. 선지 네 개가 한 줄에 들어가면 한 줄에 4개, 조금 길면 2개씩, 문장처럼 길면 1개씩 놓아요(글자 폭을 재서 정하므로 선지를 고치면 자동으로 바뀝니다). 풀이는 접은 높이로 재고, 학생이 어떤 페이지에서 답을 누르기 시작하면 그 페이지의 풀이 자리를 잡아 다시 나눕니다. 자리가 모자란 뒤 문제는 다음 페이지로 넘어가요.
   - 과의 내용(`lessons/L01.json` …)은 그대로 두고 화면에서만 페이지로 나눕니다. 스크롤 보기로 바꾸거나 인쇄하면 원래 모양으로 돌아가요. 읽던 자리와 진도는 전처럼 앱(`index.html`)이 저장하고, `pager.js`는 지금 페이지가 과 전체에서 어디쯤인지를 스크롤 보기의 '읽은 비율'과 같은 값으로 알려 줍니다. 앱과 이어지는 곳은 `index.html`에서 `SodaPager`를 찾으면 나와요(과를 연 직후 `mount`, 과에서 나갈 때 `unmount`, 글자 크기를 바꾼 뒤 `refresh`).

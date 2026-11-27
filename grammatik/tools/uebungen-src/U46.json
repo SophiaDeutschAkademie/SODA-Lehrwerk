@@ -1,0 +1,443 @@
+{
+  "n": "46",
+  "level": "C1",
+  "goals": [
+    "2격을 받는 동사와 형용사를 알아보고 2격을 맞춰 써요",
+    "격식 있는 2격 전치사의 뜻을 구별해요 — ungeachtet · mangels · unweit · um … willen",
+    "meines Erachtens · eines Tages 같은 2격의 굳은 표현을 써요",
+    "동격을 앞 명사와 같은 격으로 덧붙여요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Diese Frage bedarf ___ genauen Prüfung.",
+      "o": [
+        "einer",
+        "eine",
+        "einem",
+        "ein"
+      ],
+      "a": 0,
+      "e": "bedürfen은 2격을 받아요. die Prüfung → einer genauen Prüfung."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Ich bin mir ___ Problems bewusst.",
+      "o": [
+        "des",
+        "das",
+        "dem",
+        "den"
+      ],
+      "a": 0,
+      "e": "sich einer Sache bewusst sein — 2격을 받아요. das Problem → des Problems."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ Erachtens kostet der Umbau zu viel.",
+      "o": [
+        "Meines",
+        "Meinem",
+        "Meiner",
+        "Meinen"
+      ],
+      "a": 0,
+      "e": "meines Erachtens = 내 생각에는. 2격의 굳은 표현이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die Jugendherberge befindet sich unweit ___.",
+      "o": [
+        "des Marktplatzes",
+        "dem Marktplatz",
+        "den Marktplatz",
+        "der Marktplatz"
+      ],
+      "a": 0,
+      "e": "unweit는 2격 전치사예요 — '~에서 멀지 않은 곳에'."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wir haben mit Frau Hoffmann, ___, gesprochen.",
+      "o": [
+        "der neuen Schulleiterin",
+        "die neue Schulleiterin",
+        "der neue Schulleiterin",
+        "den neuen Schulleiterin"
+      ],
+      "a": 0,
+      "e": "동격은 앞 명사와 같은 격이에요. mit + 3격 → der neuen Schulleiterin."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ Tages möchte ich ein eigenes Café eröffnen.",
+      "o": [
+        "Eines",
+        "Einen",
+        "Einem",
+        "Ein"
+      ],
+      "a": 0,
+      "e": "eines Tages = 언젠가. 전치사 없이 2격만으로 때를 나타내는 굳은 표현이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Jedes Jahr gedenkt das Dorf ___ Gründers der Schule.",
+      "ko": "해마다 마을은 학교를 세운 분을 기려요.",
+      "h": "2격 관사",
+      "a": [
+        "des"
+      ],
+      "e": "gedenken은 2격을 받아요. der Gründer → des Gründers."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das alte Kino erfreut sich wachsend___ Beliebtheit.",
+      "ko": "그 오래된 영화관은 갈수록 인기를 얻고 있어요.",
+      "h": "2격 여성 · 관사 없음",
+      "a": [
+        "er"
+      ],
+      "e": "sich erfreuen은 2격을 받아요. 관사가 없으니 형용사 어미 -er가 2격을 보여 줘요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ich bin ___ der Schwierigkeiten bewusst.",
+      "ko": "저는 그 어려움을 잘 알고 있어요.",
+      "h": "재귀대명사",
+      "a": [
+        "mir"
+      ],
+      "e": "sich bewusst sein의 sich는 3격이에요 → ich bin mir."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Der Kassierer wird ___ Diebstahls verdächtigt.",
+      "ko": "그 계산원은 절도 혐의를 받고 있어요.",
+      "h": "2격 관사",
+      "a": [
+        "des"
+      ],
+      "e": "jemanden einer Sache verdächtigen — 사람은 4격, 일은 2격이에요. 수동문에서도 2격은 그대로예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ Wissens fährt am Sonntag kein Bus.",
+      "ko": "내가 알기로 일요일에는 버스가 다니지 않아요.",
+      "h": "내가 알기로",
+      "a": [
+        "Meines"
+      ],
+      "e": "meines Wissens = 내가 알기로는. 첫 자리를 차지해서 바로 뒤에 동사가 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Um des lieben Friedens ___ schwieg er.",
+      "ko": "괜한 다툼을 피하려고 그는 입을 다물었어요.",
+      "h": "",
+      "a": [
+        "willen"
+      ],
+      "e": "um + 2격 + willen = ~을 위해서. 2격 명사를 가운데에 끼워요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Klage wurde mangels ausreichend___ Beweise abgewiesen.",
+      "ko": "증거가 충분하지 않아서 그 소송은 기각됐어요.",
+      "h": "2격 복수 · 관사 없음",
+      "a": [
+        "er"
+      ],
+      "e": "mangels는 2격 전치사예요. 관사가 없으니 형용사 어미 -er가 2격을 보여 줘요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Das ist ein Bild von Clara, mein___ ältesten Freundin.",
+      "ko": "이건 가장 오랜 친구인 클라라의 사진이에요.",
+      "h": "3격 여성",
+      "a": [
+        "er"
+      ],
+      "e": "동격은 앞 명사와 같은 격이에요. von + 3격 → meiner ältesten Freundin."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "제 생각에는 새 계획이 필요해요.",
+      "a": [
+        "Meines Erachtens brauchen wir einen neuen Plan.",
+        "Wir brauchen meines Erachtens einen neuen Plan."
+      ],
+      "e": "meines Erachtens가 첫 자리에 오면 바로 뒤에 동사 brauchen이 와요. nach는 붙이지 않아요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "결국은 저마다 스스로 정해야 해요.",
+      "a": [
+        "Letzten Endes muss jeder selbst entscheiden.",
+        "Jeder muss letzten Endes selbst entscheiden."
+      ],
+      "e": "letzten Endes = 결국. 2격의 굳은 표현이에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'Das Gerät braucht regelmäßige Pflege.'와 뜻이 같은 문장은?",
+      "o": [
+        "Das Gerät bedarf regelmäßiger Pflege.",
+        "Das Gerät bedarf regelmäßige Pflege.",
+        "Das Gerät bedient sich regelmäßiger Pflege.",
+        "Das Gerät gedenkt regelmäßiger Pflege."
+      ],
+      "a": 0,
+      "e": "brauchen + 4격 = bedürfen + 2격. 관사 없는 2격 여성은 형용사 어미 -er예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Die Zeitung beschreibt ihn als ___.",
+      "o": [
+        "einen ehrlichen Politiker",
+        "ein ehrlicher Politiker",
+        "einem ehrlichen Politiker",
+        "eines ehrlichen Politikers"
+      ],
+      "a": 0,
+      "e": "als + 명사는 가리키는 말과 같은 격이에요. ihn이 4격이라서 einen ehrlichen Politiker예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "___ der vielen Proteste wurde das Gesetz beschlossen.",
+      "o": [
+        "Ungeachtet",
+        "Mangels",
+        "Kraft",
+        "Zugunsten"
+      ],
+      "a": 0,
+      "e": "ungeachtet + 2격 = ~에도 불구하고. trotz의 격식 있는 말이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Bei der Abstimmung haben sich drei Mitglieder der ___ enthalten.",
+      "ko": "표결에서 회원 세 명이 기권했어요.",
+      "h": "명사",
+      "a": [
+        "Stimme"
+      ],
+      "e": "sich der Stimme enthalten = 기권하다. sich enthalten은 2격을 받아요.",
+      "ok": "sich der Stimme enthalten은 굳은 표현이라 이 과의 연습 대상 그 자체"
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Unser Vorhaben braucht die Unterstützung aller.\n→ Unser Vorhaben ___ der Unterstützung aller.",
+      "ko": "우리 계획은 모두의 지원이 필요해요.",
+      "h": "2격을 받는 동사",
+      "a": [
+        "bedarf"
+      ],
+      "e": "brauchen + 4격 → bedürfen + 2격. bedürfen은 dürfen처럼 변해요 — er bedarf."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Die Direktorin wurde wegen des Skandals ihres ___ enthoben.",
+      "ko": "그 관장은 그 일로 자리에서 물러나게 됐어요.",
+      "h": "명사 · 2격",
+      "a": [
+        [
+          "Amtes",
+          "Amts"
+        ]
+      ],
+      "e": "jemanden seines Amtes entheben = 직에서 물러나게 하다. das Amt → des Amtes."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Das ist das Haus meines Onkels, ein___ bekannt___ Architekten.",
+      "ko": "이건 이름난 건축가인 삼촌의 집이에요.",
+      "h": [
+        "2격 남성",
+        "형용사 어미"
+      ],
+      "a": [
+        "es",
+        "en"
+      ],
+      "e": "앞 명사 meines Onkels가 2격이니 동격도 2격이에요 → eines bekannten Architekten."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그녀는 자기 생각이 맞다고 굳게 믿어요.",
+      "a": [
+        "Sie ist sich ihrer Sache ganz sicher.",
+        "Ihrer Sache ist sie sich ganz sicher."
+      ],
+      "e": "sich einer Sache sicher sein — 2격 ihrer Sache가 형용사 sicher 앞에 와요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Meines Erachtens nach ist das Angebot fair.",
+        "Der Vollständigkeit halber nenne ich auch die Nachteile.",
+        "Kraft ihres Amtes kann die Präsidentin das Gesetz stoppen.",
+        "Binnen eines Monats muss die Rechnung bezahlt sein."
+      ],
+      "a": 0,
+      "e": "meines Erachtens에는 nach를 붙이지 않아요. nach는 3격과 써요 — meiner Meinung nach.",
+      "ok": "meines Erachtens nach는 이 과에서 고쳐 보는 틀린 꼴 그 자체"
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'Die Firma bediente sich eines Tricks.'에서 bediente sich의 뜻은?",
+      "o": [
+        "수단으로 썼어요",
+        "도와줬어요",
+        "삼갔어요",
+        "자랑했어요"
+      ],
+      "a": 0,
+      "e": "sich einer Sache bedienen = ~을 수단으로 쓰다. 쉬운 말로는 Die Firma benutzte einen Trick이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Der Bürgermeister, ___ erfahrener Politiker, ist sich ___ Lage bewusst. ___ aller Kritik will er im Amt bleiben. Die Entscheidung bedarf jedoch ___ Genehmigung des Stadtrats.",
+      "ko": "경험 많은 정치인인 시장은 상황을 잘 알고 있어요. 온갖 비판에도 그는 자리를 지키려고 해요. 하지만 그 결정은 시의회의 승인이 필요해요.",
+      "h": [
+        "관사 · 1격",
+        "관사 · 2격",
+        "~에도 불구하고",
+        "관사 · 2격"
+      ],
+      "a": [
+        "ein",
+        "der",
+        [
+          "Ungeachtet",
+          "Trotz"
+        ],
+        "der"
+      ],
+      "e": "동격은 주어와 같은 1격 → ein erfahrener Politiker.<br>sich bewusst sein · bedürfen은 2격 → der Lage · der Genehmigung. ungeachtet도 2격을 받아요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Ich habe mit Professor Lange gesprochen. Er ist der Leiter des Instituts.\n→ Ich habe mit Professor Lange, ___ ___ des Instituts, gesprochen.",
+      "ko": "연구소장인 랑게 교수와 이야기했어요.",
+      "h": [
+        "관사",
+        "명사"
+      ],
+      "a": [
+        "dem",
+        "Leiter"
+      ],
+      "e": "두 문장을 동격으로 이었어요. mit + 3격이라서 동격도 3격 dem Leiter예요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Sie spricht sehr gut Französisch.\n→ Sie ist des Französischen ___.",
+      "ko": "그녀는 프랑스어를 할 줄 알아요.",
+      "h": "형용사",
+      "a": [
+        "mächtig"
+      ],
+      "e": "einer Sache mächtig sein = ~을 다룰 줄 알다. 언어 이름은 2격 des Französischen으로 써요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그녀는 아이들을 위해 자기 경력을 내려놓았어요.",
+      "a": [
+        "Zugunsten ihrer Kinder verzichtete sie auf eine eigene Karriere.",
+        "Sie verzichtete zugunsten ihrer Kinder auf eine eigene Karriere.",
+        "Auf eine eigene Karriere verzichtete sie zugunsten ihrer Kinder."
+      ],
+      "e": "zugunsten + 2격 = ~을 위해. 전치사 목적어 auf eine eigene Karriere는 가운데 자리의 뒤쪽에 와요."
+    }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "brauchen을 bedürfen으로 바꿔 쓰세요.",
+      "s": "Der Plan braucht eine sorgfältige Überarbeitung.",
+      "a": [
+        "Der Plan bedarf einer sorgfältigen Überarbeitung."
+      ],
+      "e": "bedürfen은 2격을 받아요. eine sorgfältige Überarbeitung → einer sorgfältigen Überarbeitung."
+    },
+    {
+      "t": "tr",
+      "q": "두 문장을 동격으로 이어 한 문장으로 쓰세요.",
+      "s": "Ich besuche Herrn Wagner. Er ist mein früherer Lehrer.",
+      "a": [
+        "Ich besuche Herrn Wagner, meinen früheren Lehrer."
+      ],
+      "e": "동격은 앞 명사와 같은 격이에요. Herrn Wagner가 4격이라서 meinen früheren Lehrer예요."
+    },
+    {
+      "t": "tr",
+      "q": "sich bewusst sein을 써서 바꿔 쓰세요.",
+      "s": "Wir wissen von den Nachteilen.",
+      "a": [
+        "Wir sind uns der Nachteile bewusst.",
+        "Der Nachteile sind wir uns bewusst."
+      ],
+      "e": "sich(3격) + 2격 + bewusst sein. von den Nachteilen → der Nachteile."
+    },
+    {
+      "t": "err",
+      "q": "Der Vertrag bedarf die Unterschrift beider Partner.",
+      "x": 3,
+      "r": "Der Vertrag bedarf der Unterschrift beider Partner.",
+      "ko": "그 계약은 양쪽의 서명이 필요해요.",
+      "e": "bedürfen은 2격을 받아요. die Unterschrift → der Unterschrift."
+    },
+    {
+      "t": "err",
+      "q": "Ich suche Herrn Braun, der Hausmeister.",
+      "x": 4,
+      "r": "Ich suche Herrn Braun, den Hausmeister.",
+      "ko": "관리인 브라운 씨를 찾고 있어요.",
+      "e": "동격은 앞 명사와 같은 격이에요. Herrn Braun이 4격이라서 den Hausmeister예요."
+    },
+    {
+      "t": "err",
+      "q": "Meiner Erachtens lohnt sich der Umweg nicht.",
+      "x": 0,
+      "r": "Meines Erachtens lohnt sich der Umweg nicht.",
+      "ko": "제 생각에는 돌아갈 만하지 않아요.",
+      "e": "das Erachten은 중성이라서 2격은 meines Erachtens예요."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "n": "41",
+  "level": "C1",
+  "goals": [
+    "현재분사와 과거분사 가운데 알맞은 것을 골라 어미를 붙여요",
+    "관계문을 분사구로, 분사구를 관계문으로 바꿔요",
+    "zu + 현재분사로 '~해야 할 · ~할 수 있는'을 말해요",
+    "분사구문으로 종속절을 줄이고, 긴 분사구에서 뼈대를 찾아요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "die Künstlerin, die in Leipzig wohnt\n→ die in Leipzig ___ Künstlerin",
+      "o": [
+        "wohnende",
+        "gewohnte",
+        "wohnend",
+        "wohnenden"
+      ],
+      "a": 0,
+      "e": "지금 하고 있는 일은 현재분사예요. 명사 앞이라서 형용사 어미가 붙어요 — 정관사 뒤 1격 여성 -e."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "das Bild, das 1920 gemalt wurde\n→ das 1920 ___ Bild",
+      "o": [
+        "gemalte",
+        "malende",
+        "gemalt",
+        "gemalten"
+      ],
+      "a": 0,
+      "e": "수동(gemalt wurde)은 과거분사로 줄여요. 정관사 뒤 1격 중성은 -e예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "der Zug, der gerade abgefahren ist\n→ der gerade ___ Zug",
+      "o": [
+        "abgefahrene",
+        "abfahrende",
+        "abgefahren",
+        "abzufahrende"
+      ],
+      "a": 0,
+      "e": "sein과 완료형을 만드는 동사의 과거분사는 '끝난 일'을 나타내요. abfahrende는 '지금 떠나고 있는'이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "die Gebühr, die überwiesen werden muss\n→ die ___ Gebühr",
+      "o": [
+        "zu überweisende",
+        "überwiesene",
+        "überweisende",
+        "zu überwiesene"
+      ],
+      "a": 0,
+      "e": "'~되어야 할'은 zu + 현재분사예요. überwiesene Gebühr는 '이미 보낸 수수료'예요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "die Bücher, die zurückzugeben sind\n→ die ___ Bücher",
+      "o": [
+        "zurückzugebenden",
+        "zu zurückgebenden",
+        "zurückgegebenen",
+        "zurückgebenden"
+      ],
+      "a": 0,
+      "e": "분리동사는 zu가 접두어와 동사 사이에 들어가요 — zurück + zu + gebend + en."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___, begann sie sofort mit der Arbeit.",
+      "o": [
+        "Im Büro angekommen",
+        "Im Büro ankommen",
+        "Im Büro angekommene",
+        "Im Büro ankam"
+      ],
+      "a": 0,
+      "e": "분사구문에서는 분사가 구의 끝에 어미 없이 와요. Nachdem sie im Büro angekommen war를 줄인 꼴이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "die Fahrgäste, die am Bahnsteig warten\n→ die am Bahnsteig ___ Fahrgäste",
+      "ko": "승강장에서 기다리는 승객들",
+      "h": "warten · 분사 + 어미",
+      "a": [
+        "wartenden"
+      ],
+      "e": "같은 때에 하고 있는 일 → 현재분사 wartend. 정관사 뒤 복수는 -en이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "der Brief, der gestern abgeschickt wurde\n→ der gestern ___ Brief",
+      "ko": "어제 부친 편지",
+      "h": "abschicken · 분사 + 어미",
+      "a": [
+        "abgeschickte"
+      ],
+      "e": "수동 → 과거분사 abgeschickt. 정관사 뒤 1격 남성은 -e예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "ein Auto, das gestohlen wurde\n→ ein ___ Auto",
+      "ko": "도난당한 차",
+      "h": "stehlen · 분사 + 어미",
+      "a": [
+        "gestohlenes"
+      ],
+      "e": "과거분사 gestohlen + 어미. 부정관사 뒤 1격 중성은 -es예요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "die Fragen, die geklärt werden müssen\n→ die zu ___ Fragen",
+      "ko": "밝혀야 할 문제들",
+      "h": "klären · 분사 + 어미",
+      "a": [
+        "klärenden"
+      ],
+      "e": "zu + 현재분사 = ~되어야 할. klärend + 복수 어미 -en."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "das Konzept, das die Studentin entwickelt hat\n→ das ___ der Studentin entwickelte Konzept",
+      "ko": "그 학생이 만든 구상",
+      "h": "전치사",
+      "a": [
+        "von"
+      ],
+      "e": "과거분사는 수동의 뜻이어서 관계문의 주어는 von + 3격이 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "die Gäste, die verspätet eingetroffen sind\n→ die verspätet ___ Gäste",
+      "ko": "늦게 도착한 손님들",
+      "h": "eintreffen · 분사 + 어미",
+      "a": [
+        "eingetroffenen"
+      ],
+      "e": "eintreffen은 sein과 완료형을 만들어요. 끝난 일이라서 과거분사 eingetroffen + -en이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "___ gesagt hat mir der Film nicht gefallen.",
+      "ko": "솔직히 말하면 그 영화는 마음에 들지 않았어요.",
+      "h": "솔직히",
+      "a": [
+        [
+          "Ehrlich",
+          "Offen"
+        ]
+      ],
+      "e": "ehrlich gesagt는 굳은 분사구문이에요. 첫 자리를 차지해서 바로 뒤에 동사 hat이 와요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Verglichen ___ dem letzten Winter ist es dieses Jahr mild.",
+      "ko": "지난겨울과 비교하면 올해는 포근해요.",
+      "h": "전치사",
+      "a": [
+        "mit"
+      ],
+      "e": "verglichen mit + 3격은 '~와 비교하면'이라는 굳은 분사구문이에요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "어제 고친 엘리베이터가 벌써 또 고장 났어요.",
+      "a": [
+        "Der gestern reparierte Aufzug ist schon wieder kaputt.",
+        "Schon wieder ist der gestern reparierte Aufzug kaputt."
+      ],
+      "e": "분사구 gestern reparierte는 관사 der와 명사 Aufzug 사이에 들어가요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "예상대로 그 팀이 경기에서 이겼어요.",
+      "a": [
+        "Wie erwartet hat die Mannschaft das Spiel gewonnen.",
+        "Die Mannschaft hat wie erwartet das Spiel gewonnen.",
+        "Die Mannschaft hat das Spiel wie erwartet gewonnen.",
+        "Das Spiel hat die Mannschaft wie erwartet gewonnen."
+      ],
+      "e": "wie erwartet는 굳은 분사구문이에요. 첫 자리에 오면 바로 뒤에 동사가 와요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'die von den Schülern organisierte Ausstellung'을 관계문으로 바르게 푼 것은?",
+      "o": [
+        "die Ausstellung, die von den Schülern organisiert wurde",
+        "die Schüler, die von der Ausstellung organisiert wurden",
+        "die Ausstellung, die die Schüler organisiert",
+        "die Ausstellung, die Schüler organisierend"
+      ],
+      "a": 0,
+      "e": "과거분사 organisierte는 수동이에요 → organisiert wurde. 꾸밈을 받는 명사 Ausstellung이 관계문 앞에 와요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "ein Problem, das schwer gelöst werden kann\n→ ein ___ Problem",
+      "o": [
+        "schwer zu lösendes",
+        "schwer gelöstes",
+        "schwer lösendes",
+        "schwer zu gelöstes"
+      ],
+      "a": 0,
+      "e": "zu + 현재분사는 '~될 수 있는'도 나타내요. schwer가 있으니 können의 뜻이에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Der Anteil der Studierenden, die neben dem Studium arbeiten, wächst.\n→ Der Anteil der neben dem Studium ___ Studierenden wächst.",
+      "o": [
+        "arbeitenden",
+        "gearbeiteten",
+        "arbeitende",
+        "arbeitender"
+      ],
+      "a": 0,
+      "e": "현재분사 arbeitend + 어미. 2격 복수 정관사 der 뒤라서 -en이에요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "ein Vertrag, der für beide Seiten vorteilhaft ist\n→ ein ___ beide Seiten ___ Vertrag",
+      "ko": "양쪽 모두에게 이로운 계약",
+      "h": [
+        "전치사",
+        "vorteilhaft + 어미"
+      ],
+      "a": [
+        "für",
+        "vorteilhafter"
+      ],
+      "e": "형용사도 분사처럼 앞에 딸린 말을 데리고 명사 앞으로 가요. 부정관사 뒤 1격 남성은 -er예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "die Studie, die Forscher aus Wien durchgeführt haben\n→ die ___ Forschern aus Wien ___ Studie",
+      "ko": "빈의 연구자들이 수행한 연구",
+      "h": [
+        "전치사",
+        "durchführen · 분사 + 어미"
+      ],
+      "a": [
+        "von",
+        "durchgeführte"
+      ],
+      "e": "능동문의 주어 Forscher는 von + 3격(Forschern)이 돼요. 과거분사 durchgeführt + -e."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Nachdem er in Rente gegangen war, zog er aufs Land.\n→ In Rente ___, zog er aufs Land.",
+      "ko": "은퇴한 뒤 그는 시골로 이사했어요.",
+      "h": "분사",
+      "a": [
+        "gegangen"
+      ],
+      "e": "주어가 같아서 분사구문으로 줄일 수 있어요. 접속사 · 주어 · 보조 동사가 빠지고 분사만 어미 없이 남아요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "der vor zwei Jahren verstorbene Autor\n→ der Autor, der vor zwei Jahren ___ ___",
+      "ko": "2년 전에 세상을 떠난 작가",
+      "h": [
+        "과거분사",
+        "보조 동사"
+      ],
+      "a": [
+        [
+          "verstorben",
+          "gestorben"
+        ],
+        "ist"
+      ],
+      "e": "sterben · versterben은 sein과 완료형을 만들어요. 과거분사는 '끝난 일'이라서 완료형으로 풀어요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "선생님이 고친 작문들이 책상 위에 놓여 있어요.",
+      "a": [
+        "Die von der Lehrerin korrigierten Aufsätze liegen auf dem Tisch.",
+        "Auf dem Tisch liegen die von der Lehrerin korrigierten Aufsätze."
+      ],
+      "e": "die Aufsätze, die die Lehrerin korrigiert hat를 줄인 분사구예요. 관사 die와 명사 Aufsätze 사이에 통째로 들어가요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Am Bahnhof angekommen, fuhr der Zug gerade ab.",
+        "Vom Lärm geweckt, stand er auf und schloss das Fenster.",
+        "Die noch zu prüfenden Anträge liegen im Büro.",
+        "Laut lachend kamen die Kinder aus der Schule."
+      ],
+      "a": 0,
+      "e": "분사구문의 숨은 주어는 주문장의 주어예요. 역에 도착한 것은 기차가 아니니 Als wir am Bahnhof ankamen, fuhr der Zug gerade ab라고 써요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "Die vom Ministerium im Mai veröffentlichten, bisher kaum beachteten Zahlen zeigen einen klaren Trend.\n이 문장의 뼈대는?",
+      "o": [
+        "Die Zahlen zeigen einen klaren Trend.",
+        "Das Ministerium zeigt einen klaren Trend.",
+        "Die Zahlen veröffentlichen das Ministerium.",
+        "Der Mai zeigt die Zahlen."
+      ],
+      "a": 0,
+      "e": "관사 Die에서 명사 Zahlen으로 건너뛰어 뼈대를 먼저 읽어요. 그 사이의 말은 모두 Zahlen을 꾸며요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Die Stadt hat gestern die lange ___ Brücke eröffnet. Die von einer Hamburger Firma ___ Brücke verbindet die beiden Stadtteile. Die noch zu ___ Arbeiten an den Radwegen dauern bis Mai.",
+      "ko": "시는 어제 오래 기다려 온 다리를 개통했어요. 함부르크의 한 회사가 지은 이 다리는 두 지역을 이어요. 자전거 도로에서 아직 해야 할 공사는 5월까지 이어져요.",
+      "h": [
+        "erwarten · 분사 + 어미",
+        "bauen · 분사 + 어미",
+        "erledigen · 분사 + 어미"
+      ],
+      "a": [
+        "erwartete",
+        [
+          "gebaute",
+          "errichtete"
+        ],
+        "erledigenden"
+      ],
+      "e": "기다려진 · 지어진 → 과거분사 erwartete · gebaute.<br>아직 해야 할 → zu + 현재분사 zu erledigenden."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "die Maßnahmen, die sofort umgesetzt werden müssen\n→ die sofort ___ Maßnahmen",
+      "ko": "바로 실행해야 할 조치들",
+      "h": "umsetzen · zu + 분사 + 어미",
+      "a": [
+        "umzusetzenden"
+      ],
+      "e": "분리동사는 zu가 가운데 들어가요 — um + zu + setzend + en."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Weil er vom Erfolg seiner Idee überzeugt war, kündigte er seine Stelle.\n→ Vom Erfolg seiner Idee ___, ___ er seine Stelle.",
+      "ko": "자기 생각이 성공할 거라고 믿어서 그는 직장을 그만뒀어요.",
+      "h": [
+        "분사",
+        "동사"
+      ],
+      "a": [
+        "überzeugt",
+        "kündigte"
+      ],
+      "e": "분사구문은 분사가 끝에 어미 없이 와요. 구 전체가 첫 자리라서 바로 뒤에 동사 kündigte가 와요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "폭풍우 때 부서진 집들은 빨리 고쳐야 해요.",
+      "a": [
+        "Die bei dem Unwetter beschädigten Häuser müssen schnell repariert werden."
+      ],
+      "e": "die Häuser, die bei dem Unwetter beschädigt wurden을 줄인 분사구예요. 뼈대는 Die Häuser müssen repariert werden이에요."
+    }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "관계문을 분사구로 바꿔 쓰세요.",
+      "s": "Der Roman, der im Frühjahr erschienen ist, wurde ein Bestseller.",
+      "a": [
+        "Der im Frühjahr erschienene Roman wurde ein Bestseller."
+      ],
+      "e": "관계대명사 der와 보조 동사 ist를 지우고, 과거분사 erschienen에 어미 -e를 붙여 명사 앞에 넣어요."
+    },
+    {
+      "t": "tr",
+      "q": "분사구를 관계문으로 풀어 쓰세요.",
+      "s": "Das von den Gästen gelobte Essen war schnell ausverkauft.",
+      "a": [
+        "Das Essen, das von den Gästen gelobt wurde, war schnell ausverkauft.",
+        "Das Essen, das die Gäste gelobt haben, war schnell ausverkauft.",
+        "Das Essen, das die Gäste lobten, war schnell ausverkauft.",
+        "Das Essen, das von den Gästen gelobt worden ist, war schnell ausverkauft.",
+        "Das Essen, das die Gäste gelobt hatten, war schnell ausverkauft.",
+        "Das Essen, das von den Gästen gelobt worden war, war schnell ausverkauft."
+      ],
+      "e": "과거분사 gelobte는 수동이에요 → gelobt wurde. von den Gästen을 주어로 삼아 능동으로 풀어도 돼요."
+    },
+    {
+      "t": "tr",
+      "q": "관계문을 zu + 현재분사로 바꿔 쓰세요.",
+      "s": "Die Fehler, die korrigiert werden müssen, sind rot markiert.",
+      "a": [
+        "Die zu korrigierenden Fehler sind rot markiert."
+      ],
+      "e": "수동 + müssen은 zu + 현재분사로 줄여요. korrigierend + 복수 어미 -en."
+    },
+    {
+      "t": "err",
+      "q": "Die gestern ankommenden Gäste schlafen noch.",
+      "x": 2,
+      "r": "Die gestern angekommenen Gäste schlafen noch.",
+      "ko": "어제 도착한 손님들은 아직 자고 있어요.",
+      "e": "어제 이미 끝난 일이라서 과거분사 angekommen을 써요. 현재분사는 지금 하고 있는 일이에요."
+    },
+    {
+      "t": "err",
+      "q": "Der von ihr gebacken Kuchen schmeckt allen.",
+      "x": 3,
+      "r": "Der von ihr gebackene Kuchen schmeckt allen.",
+      "ko": "그녀가 구운 케이크는 모두가 맛있어해요.",
+      "e": "명사 앞의 분사는 형용사예요. 정관사 뒤 1격 남성 어미 -e를 붙여요."
+    },
+    {
+      "t": "err",
+      "q": "In der Stadt angekommene, suchte er ein Hotel.",
+      "x": 3,
+      "r": "In der Stadt angekommen, suchte er ein Hotel.",
+      "ko": "그 도시에 도착하자 그는 호텔을 찾았어요.",
+      "e": "분사구문의 분사는 명사를 꾸미지 않아서 어미가 붙지 않아요."
+    }
+  ]
+}

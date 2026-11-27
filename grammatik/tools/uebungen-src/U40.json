@@ -1,0 +1,475 @@
+{
+  "n": "40",
+  "level": "C1",
+  "goals": [
+    "명사에 맞는 기능동사를 골라요 — eine Entscheidung treffen · eine Frage stellen",
+    "전치사 + 명사형 구문을 굳은 모양 그대로 써요 — in Kraft treten · zur Verfügung stehen",
+    "bringen ↔ kommen처럼 '하다'와 '되다'의 짝을 구별해요",
+    "구문 뒤의 전치사를 지키고, 동사 하나와 구문을 서로 바꿔 써요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Bis Freitag muss der Vorstand eine Entscheidung ___.",
+      "o": [
+        "treffen",
+        "machen",
+        "tun",
+        "nehmen"
+      ],
+      "a": 0,
+      "e": "'결정을 내리다'는 eine Entscheidung treffen이에요. 명사와 동사를 한 덩어리로 외워요.",
+      "ok": "기능동사 구문은 굳은 표현이라 이 과의 연습 대상 그 자체"
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Nach dem Vortrag konnten die Zuhörer Fragen ___.",
+      "o": [
+        "stellen",
+        "fragen",
+        "legen",
+        "setzen"
+      ],
+      "a": 0,
+      "e": "'질문을 하다'는 eine Frage stellen이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Die neue Regelung ___ nächste Woche in Kraft.",
+      "o": [
+        "tritt",
+        "kommt",
+        "geht",
+        "steht"
+      ],
+      "a": 0,
+      "e": "'효력이 생기다'는 in Kraft treten이에요. 전치사 + 명사 부분은 문장 끝에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Im Lesesaal ___ den Studierenden 40 Computer zur Verfügung.",
+      "o": [
+        "stehen",
+        "stellen",
+        "kommen",
+        "gehen"
+      ],
+      "a": 0,
+      "e": "zur Verfügung stehen은 '쓸 수 있게 되어 있다'예요. stellen은 4격 목적어가 있어야 해요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Das Alter ___ bei der Bewerbung keine Rolle.",
+      "o": [
+        "spielt",
+        "macht",
+        "hat",
+        "nimmt"
+      ],
+      "a": 0,
+      "e": "eine Rolle spielen은 '중요하다'예요. 부정은 kein으로 해요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Bei dem Unfall ___ mehrere Autofahrer Erste Hilfe.",
+      "o": [
+        "leisteten",
+        "übten",
+        "trafen",
+        "stellten"
+      ],
+      "a": 0,
+      "e": "'도움을 주다'는 Hilfe leisten이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir müssen mehr Rücksicht ___ die Umwelt nehmen.",
+      "ko": "우리는 환경을 더 생각해야 해요.",
+      "h": "전치사",
+      "a": [
+        "auf"
+      ],
+      "e": "Rücksicht nehmen auf + 4격."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Opposition übt deutliche Kritik ___ der Steuerreform.",
+      "ko": "야당은 세제 개혁을 분명하게 비판해요.",
+      "h": "전치사",
+      "a": [
+        "an"
+      ],
+      "e": "Kritik üben an + 3격. 동사 kritisieren은 4격을 받지만 구문은 an을 받아요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Firma will ___ dem Bericht keine Stellung nehmen.",
+      "ko": "회사는 그 보도에 대해 입장을 밝히지 않으려고 해요.",
+      "h": "전치사",
+      "a": [
+        "zu"
+      ],
+      "e": "Stellung nehmen zu + 3격."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Er hat einen Antrag auf ein Stipendium ___.",
+      "ko": "그는 장학금을 신청했어요.",
+      "h": "기능동사 · 과거분사",
+      "a": [
+        "gestellt"
+      ],
+      "e": "einen Antrag stellen. 무엇을 신청하는지는 auf + 4격으로 말해요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Wir haben alle nötigen Vorbereitungen ___.",
+      "ko": "필요한 준비는 다 했어요.",
+      "h": "기능동사 · 과거분사",
+      "a": [
+        "getroffen"
+      ],
+      "e": "Vorbereitungen treffen. treffen – traf – getroffen."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Die Stadt hat neue Maßnahmen für mehr Sicherheit im Verkehr ___.",
+      "ko": "시는 교통안전을 높이려고 새 조치를 취했어요.",
+      "h": "기능동사 · 과거분사",
+      "a": [
+        [
+          "ergriffen",
+          "getroffen"
+        ]
+      ],
+      "e": "Maßnahmen ergreifen. ergreifen – ergriff – ergriffen. Maßnahmen treffen이라고도 해요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Ein Auto für 40 000 Euro kommt für meine Eltern nicht in ___.",
+      "ko": "4만 유로짜리 차는 우리 부모님께 고려 대상이 아니에요.",
+      "h": "명사",
+      "a": [
+        [
+          "Frage",
+          "Betracht"
+        ]
+      ],
+      "e": "in Frage kommen은 '고려 대상이 되다'예요. 전치사 + 명사형은 nicht로 부정해요. in Betracht kommen도 같은 뜻이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Geben Sie uns bitte bis Montag ___, ob Sie kommen.",
+      "ko": "오실지 월요일까지 알려 주세요.",
+      "h": "명사",
+      "a": [
+        "Bescheid"
+      ],
+      "e": "Bescheid geben · sagen은 '알려 주다'예요. 관사 없이 써요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "회의는 다섯 시에 끝났어요.",
+      "a": [
+        "Die Sitzung ist um fünf Uhr zu Ende gegangen.",
+        "Um fünf Uhr ist die Sitzung zu Ende gegangen."
+      ],
+      "e": "zu Ende gehen은 '끝나다'예요. 완료형에서는 zu Ende가 gegangen 바로 앞에 와요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "오늘은 제가 그 차를 쓸 수 없어요.",
+      "a": [
+        "Das Auto steht mir heute nicht zur Verfügung.",
+        "Heute steht mir das Auto nicht zur Verfügung.",
+        "Mir steht das Auto heute nicht zur Verfügung."
+      ],
+      "e": "zur Verfügung stehen. 전치사 + 명사형은 그 앞에 nicht를 놓아 부정해요.",
+      "ok": "기능동사 구문은 굳은 표현이라 이 과의 연습 대상 그 자체"
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Die Elternvertreterin ___ die vielen Hausaufgaben zur Sprache.",
+      "o": [
+        "brachte",
+        "kam",
+        "ging",
+        "trat"
+      ],
+      "a": 0,
+      "e": "4격 목적어(die vielen Hausaufgaben)가 있으니 '꺼내다'의 zur Sprache bringen이에요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "In der Diskussion ___ auch die Kosten zur Sprache.",
+      "o": [
+        "kamen",
+        "brachten",
+        "stellten",
+        "setzten"
+      ],
+      "a": 0,
+      "e": "목적어가 없고 die Kosten이 주어예요 → '거론되다'의 zur Sprache kommen."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "맞는 문장은?",
+      "o": [
+        "Die beiden Firmen haben noch keine Vereinbarung getroffen.",
+        "Die beiden Firmen haben noch nicht Vereinbarung getroffen.",
+        "Die beiden Firmen haben noch keine Vereinbarung gemacht.",
+        "Die beiden Firmen haben noch nicht eine Vereinbarung treffen."
+      ],
+      "a": 0,
+      "e": "eine Vereinbarung treffen. 4격 명사형 구문은 kein으로 부정해요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Der Stadtrat beschloss, das Schwimmbad zu sanieren.\n→ Der Stadtrat ___ den ___, das Schwimmbad zu sanieren.",
+      "ko": "시의회는 수영장을 수리하기로 결의했어요.",
+      "h": [
+        "기능동사 · 과거형",
+        "명사"
+      ],
+      "a": [
+        "fasste",
+        [
+          "Beschluss",
+          "Entschluss"
+        ]
+      ],
+      "e": "beschließen = einen Beschluss fassen. 과거형이라서 fasste예요.",
+      "ok": "기능동사 구문은 굳은 표현이라 이 과의 연습 대상 그 자체"
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Viele Kunden nutzen den Lieferservice.\n→ Viele Kunden nehmen den Lieferservice in ___.",
+      "ko": "많은 고객이 배달 서비스를 이용해요.",
+      "h": "명사",
+      "a": [
+        "Anspruch"
+      ],
+      "e": "etwas nutzen = etwas in Anspruch nehmen. 4격 목적어는 그대로예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Die Forscher bezweifeln die Ergebnisse der Studie.\n→ Die Forscher ___ die Ergebnisse der Studie in Zweifel.",
+      "ko": "연구자들은 그 연구 결과를 의심해요.",
+      "h": "기능동사 · 현재형",
+      "a": [
+        "ziehen"
+      ],
+      "e": "etwas bezweifeln = etwas in Zweifel ziehen."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Das neue Verfahren wird in vielen Kliniken angewendet.\n→ Das neue Verfahren ___ in vielen Kliniken ___.",
+      "ko": "새 방식은 많은 병원에서 쓰여요.",
+      "h": [
+        "기능동사",
+        "명사"
+      ],
+      "a": [
+        "findet",
+        "Anwendung"
+      ],
+      "e": "angewendet werden = Anwendung finden. finden과 쓰는 구문은 수동과 뜻이 같아요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "우리 사장님은 팀워크를 아주 중요하게 여겨요.",
+      "a": [
+        "Unsere Chefin legt viel Wert auf Teamarbeit.",
+        "Auf Teamarbeit legt unsere Chefin viel Wert.",
+        "Viel Wert legt unsere Chefin auf Teamarbeit."
+      ],
+      "e": "Wert legen auf + 4격. 명사 Wert 앞에 viel이나 großen을 넣어 뜻을 더해요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Das Problem brachte in der Sitzung zur Sprache.",
+        "Der alte Brauch ist in Vergessenheit geraten.",
+        "Ihr Vorschlag fand im Team große Beachtung.",
+        "Die Ministerin geriet wegen des Skandals unter Druck."
+      ],
+      "a": 0,
+      "e": "bringen은 4격 목적어가 있어야 해요. 문제가 '거론됐다'는 뜻이면 Das Problem kam in der Sitzung zur Sprache예요.",
+      "ok": "기능동사 구문은 굳은 표현이라 이 과의 연습 대상 그 자체"
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'Die Warnung der Experten wurde wenig beachtet.'와 뜻이 같은 문장은?",
+      "o": [
+        "Die Warnung der Experten fand wenig Beachtung.",
+        "Die Warnung der Experten nahm wenig Beachtung.",
+        "Die Warnung der Experten brachte wenig Beachtung.",
+        "Die Warnung der Experten stellte wenig Beachtung."
+      ],
+      "a": 0,
+      "e": "beachtet werden = Beachtung finden. 수동의 뜻을 가진 구문이에요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Sehr geehrte Frau Berger,\nich nehme ___ auf Ihre E-Mail vom 12. April. Leider können wir Ihren Vorschlag nicht in ___ ziehen. Für Rückfragen stehe ich Ihnen gern zur ___.",
+      "ko": "베르거 님께, 4월 12일에 보내신 메일과 관련해 말씀드려요. 아쉽지만 제안하신 내용은 고려할 수 없어요. 더 궁금한 점이 있으면 언제든 문의해 주세요.",
+      "h": [
+        "관련짓다",
+        "고려하다",
+        "쓸 수 있다"
+      ],
+      "a": [
+        "Bezug",
+        [
+          "Betracht",
+          "Erwägung"
+        ],
+        "Verfügung"
+      ],
+      "e": "Bezug nehmen auf · in Betracht ziehen · zur Verfügung stehen. 공문에서 늘 쓰는 구문이에요.",
+      "ok": "공문 인사말과 이 과의 연습 대상 구문 그 자체"
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Die Zeitungen kritisierten den Trainer hart.\n→ Die Zeitungen ___ ___ Kritik ___ dem Trainer.",
+      "ko": "신문들은 그 감독을 심하게 비판했어요.",
+      "h": [
+        "기능동사 · 과거형",
+        "hart",
+        "전치사"
+      ],
+      "a": [
+        "übten",
+        "harte",
+        "an"
+      ],
+      "e": "kritisieren = Kritik üben an + 3격. 부사 hart는 명사 앞에서 형용사 harte가 돼요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Soziale Medien beeinflussen die Meinung der Jugendlichen stark.\n→ Soziale Medien ___ ___ Einfluss ___ die Meinung der Jugendlichen.",
+      "ko": "소셜 미디어는 청소년의 생각에 큰 영향을 미쳐요.",
+      "h": [
+        "기능동사",
+        "stark",
+        "전치사"
+      ],
+      "a": [
+        [
+          "nehmen",
+          "haben"
+        ],
+        [
+          "starken",
+          "großen"
+        ],
+        "auf"
+      ],
+      "e": "beeinflussen = Einfluss nehmen auf + 4격. 부사 stark는 형용사가 되고, 관사 없는 4격 남성이라서 -en이에요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "출근길이 짧아서 그녀는 비싼 월세를 감수해요.",
+      "a": [
+        "Für den kurzen Arbeitsweg nimmt sie eine hohe Miete in Kauf.",
+        "Sie nimmt für den kurzen Arbeitsweg eine hohe Miete in Kauf.",
+        "Sie nimmt eine hohe Miete für den kurzen Arbeitsweg in Kauf.",
+        "Eine hohe Miete nimmt sie für den kurzen Arbeitsweg in Kauf."
+      ],
+      "e": "etwas in Kauf nehmen은 '감수하다'예요. in Kauf는 문장 끝에 와요."
+    }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "동사를 기능동사 구문으로 바꿔 쓰세요. (Antrag)",
+      "s": "Sie beantragt ein Visum.",
+      "a": [
+        "Sie stellt einen Antrag auf ein Visum.",
+        "Sie stellt einen Visumantrag.",
+        "Sie stellt einen Visumsantrag."
+      ],
+      "e": "etwas beantragen = einen Antrag auf + 4격 stellen."
+    },
+    {
+      "t": "tr",
+      "q": "기능동사 구문을 동사 하나로 바꿔 쓰세요.",
+      "s": "Er hat von seinen Freunden Abschied genommen.",
+      "a": [
+        "Er hat sich von seinen Freunden verabschiedet.",
+        "Von seinen Freunden hat er sich verabschiedet."
+      ],
+      "e": "Abschied nehmen von = sich verabschieden von. 시제는 현재완료 그대로예요."
+    },
+    {
+      "t": "tr",
+      "q": "동사를 기능동사 구문으로 바꿔 쓰세요. (Ausdruck)",
+      "s": "Die Rednerin drückte ihre Sorge aus.",
+      "a": [
+        "Die Rednerin brachte ihre Sorge zum Ausdruck.",
+        "Ihre Sorge brachte die Rednerin zum Ausdruck."
+      ],
+      "e": "etwas ausdrücken = etwas zum Ausdruck bringen. 4격 목적어는 그대로 두고, zum Ausdruck는 문장 끝에 놓아요."
+    },
+    {
+      "t": "err",
+      "q": "Wir müssen bald eine Entscheidung machen.",
+      "x": 5,
+      "r": "Wir müssen bald eine Entscheidung treffen.",
+      "ko": "우리는 곧 결정을 내려야 해요.",
+      "e": "Entscheidung의 짝은 treffen이에요. 뜻만 보고 machen을 붙이지 않아요.",
+      "ok": "기능동사 구문은 굳은 표현이라 이 과의 연습 대상 그 자체"
+    },
+    {
+      "t": "err",
+      "q": "Im Bus sollte man Rücksicht für ältere Fahrgäste nehmen.",
+      "x": 5,
+      "r": "Im Bus sollte man Rücksicht auf ältere Fahrgäste nehmen.",
+      "ko": "버스에서는 나이 든 승객을 배려해야 해요.",
+      "e": "Rücksicht nehmen은 auf + 4격을 받아요."
+    },
+    {
+      "t": "err",
+      "q": "Ihr größter Wunsch kam endlich in Erfüllung.",
+      "x": 3,
+      "r": "Ihr größter Wunsch ging endlich in Erfüllung.",
+      "ko": "그녀의 가장 큰 소원이 마침내 이루어졌어요.",
+      "e": "'이루어지다'는 in Erfüllung gehen이에요."
+    }
+  ]
+}

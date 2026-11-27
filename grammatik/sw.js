@@ -1,7 +1,7 @@
 /* Lehrwerk Grammatik — offline cache.
    Every file name below carries ?v=<content hash>, so a new upload only
    re-downloads the files that actually changed. */
-const VERSION = '7b828638ab';
+const VERSION = '43338bd182';
 const PREFIX = 'lehrwerk-grammatik-';
 const CACHE = PREFIX + VERSION;
 const CORE = [
@@ -53,6 +53,15 @@ const LESSONS = [
   "lessons/L35.json?v=032cfc7d4b",
   "lessons/L36.json?v=5379d34134",
   "lessons/L37.json?v=be99ca2dc8",
+  "lessons/L38.json?v=951cc0a52a",
+  "lessons/L39.json?v=8e204ea4f5",
+  "lessons/L40.json?v=7f3e2164b4",
+  "lessons/L41.json?v=35c22f4cb8",
+  "lessons/L42.json?v=f08c6cf1f6",
+  "lessons/L43.json?v=7e584a8994",
+  "lessons/L44.json?v=c04a80a9ea",
+  "lessons/L45.json?v=5241c3aa77",
+  "lessons/L46.json?v=9ad21524a9",
   "lessons/anhang.json?v=3b4b9f3809"
 ];
 
@@ -97,7 +106,17 @@ const UEBUNGEN = [
   "uebungen/W1.json?v=3d3df737e0",
   "uebungen/W2.json?v=553871c5de",
   "uebungen/W3.json?v=6dbf119f13",
-  "uebungen/W4.json?v=ca89762aa5"
+  "uebungen/W4.json?v=ca89762aa5",
+  "uebungen/U38.json?v=64ba38274f",
+  "uebungen/U39.json?v=e3ec028909",
+  "uebungen/U40.json?v=4bdc04acee",
+  "uebungen/U41.json?v=887caacc67",
+  "uebungen/U42.json?v=a2699fa08d",
+  "uebungen/U43.json?v=b5c898418b",
+  "uebungen/U44.json?v=557f07eba2",
+  "uebungen/U45.json?v=50eb128897",
+  "uebungen/U46.json?v=2a41783272",
+  "uebungen/W5.json?v=6d996d5516"
 ];
 
 self.addEventListener('install', (event) => {

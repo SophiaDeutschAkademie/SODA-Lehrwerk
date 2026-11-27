@@ -1,0 +1,486 @@
+{
+  "n": "38",
+  "level": "C1",
+  "goals": [
+    "이유 · 양보 · 조건 · 시간 · 목적 · 방법의 종속절을 알맞은 전치사로 줄여요",
+    "동사를 명사로, 주어를 2격으로, 부사를 형용사로 옮겨요",
+    "aus · vor · dank처럼 이유를 나타내는 전치사를 구별해요",
+    "전치사구를 종속절로 풀고 시제를 맞춰요"
+  ],
+  "items": [
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "___ der Sanierung bleibt das Schwimmbad bis Ende Mai geschlossen.",
+      "o": [
+        "Wegen",
+        "Trotz",
+        "Statt",
+        "Seit"
+      ],
+      "a": 0,
+      "e": "수리가 문을 닫는 이유예요 → wegen + 2격.<br>weil das Schwimmbad saniert wird를 명사로 줄인 꼴이에요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Wenn es schneit, fährt die Bergbahn nicht.\n→ ___ Schneefall fährt die Bergbahn nicht.",
+      "o": [
+        "Bei",
+        "Trotz",
+        "Nach",
+        "Durch"
+      ],
+      "a": 0,
+      "e": "조건의 wenn은 bei + 3격으로 줄여요. 안내문에서는 관사 없이 bei Schneefall이라고 써요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Bevor die Vorstellung beginnt, schalten Sie bitte Ihr Handy aus.\n→ ___ Beginn der Vorstellung schalten Sie bitte Ihr Handy aus.",
+      "o": [
+        "Vor",
+        "Seit",
+        "Nach",
+        "Durch"
+      ],
+      "a": 0,
+      "e": "bevor는 vor + 3격으로 줄여요. beginnen → der Beginn."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Vor dem Auftritt zitterte die Sängerin ___ Aufregung.",
+      "o": [
+        "vor",
+        "aus",
+        "zu",
+        "durch"
+      ],
+      "a": 0,
+      "e": "떨림은 저절로 나오는 몸의 반응이에요 → vor + 관사 없는 명사."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Er hat das Geld ___ Dankbarkeit gespendet.",
+      "o": [
+        "aus",
+        "vor",
+        "bei",
+        "durch"
+      ],
+      "a": 0,
+      "e": "기부는 스스로 마음먹고 한 행동이에요. 그 동기는 aus + 관사 없는 명사로 말해요."
+    },
+    {
+      "lv": 1,
+      "t": "mc",
+      "q": "Nachdem die Genehmigung erteilt worden war, begannen die Bauarbeiten.\n→ Nach ___ der Genehmigung begannen die Bauarbeiten.",
+      "o": [
+        "der Erteilung",
+        "die Erteilung",
+        "dem Erteilung",
+        "des Erteilung"
+      ],
+      "a": 0,
+      "e": "nach는 3격을 받아요. die Erteilung → nach der Erteilung.<br>문장의 주어였던 die Genehmigung은 명사 뒤에서 2격 der Genehmigung이 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Weil die Chefin abwesend war, wurde die Sitzung verschoben.\n→ Wegen der ___ der Chefin wurde die Sitzung verschoben.",
+      "ko": "사장이 자리에 없어서 회의가 미뤄졌어요.",
+      "h": "abwesend → 명사",
+      "a": [
+        "Abwesenheit"
+      ],
+      "e": "abwesend sein → die Abwesenheit. 주어 die Chefin은 명사 뒤에서 2격 der Chefin이 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Obwohl der Nebel dicht war, landete das Flugzeug sicher.\n→ Trotz des ___ Nebels landete das Flugzeug sicher.",
+      "ko": "안개가 짙었는데도 비행기는 안전하게 착륙했어요.",
+      "h": "dicht",
+      "a": [
+        "dichten"
+      ],
+      "e": "문장에서 서술어였던 dicht가 명사 앞의 형용사가 돼요. 정관사 뒤 2격 남성은 -en이에요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Während die Lehrerin erklärte, schrieben alle mit.\n→ Während der ___ der Lehrerin schrieben alle mit.",
+      "ko": "선생님이 설명하는 동안 모두 받아 적었어요.",
+      "h": "erklären → 명사",
+      "a": [
+        [
+          "Erklärung",
+          "Erklärungen"
+        ]
+      ],
+      "e": "접속사 während가 전치사 während + 2격이 돼요. erklären → die Erklärung."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Seit sie umgezogen ist, fährt sie mit dem Rad zur Arbeit.\n→ Seit ihrem ___ fährt sie mit dem Rad zur Arbeit.",
+      "ko": "이사한 뒤로 그녀는 자전거로 출근해요.",
+      "h": "umziehen → 명사 · 남성",
+      "a": [
+        "Umzug"
+      ],
+      "e": "umziehen → der Umzug. 대명사 주어 sie는 소유관사 ihr-가 되고, seit는 3격을 받아요 → seit ihrem Umzug."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Bis das Konzert anfängt, haben wir noch zehn Minuten.\n→ Bis ___ Anfang des Konzerts haben wir noch zehn Minuten.",
+      "ko": "공연이 시작할 때까지 아직 10분 남았어요.",
+      "h": "zu + 관사 · Anfang 남성",
+      "a": [
+        "zum"
+      ],
+      "e": "bis 뒤에 관사 붙은 명사가 오면 bis zu + 3격을 써요. zu + dem → zum."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Um das Klima zu schützen, fahren viele Menschen weniger Auto.\n→ ___ Schutz des Klimas fahren viele Menschen weniger Auto.",
+      "ko": "기후를 지키려고 많은 사람이 차를 덜 타요.",
+      "h": "목적 · Schutz 남성",
+      "a": [
+        "Zum"
+      ],
+      "e": "um … zu는 zu + 3격으로 줄여요. der Schutz → zum Schutz. 4격 목적어 das Klima는 2격 des Klimas가 돼요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Indem man täglich wiederholt, behält man neue Wörter besser.\n→ ___ tägliches Wiederholen behält man neue Wörter besser.",
+      "ko": "날마다 되풀이하면 새 단어가 더 잘 기억돼요.",
+      "h": "방법",
+      "a": [
+        "Durch"
+      ],
+      "e": "방법의 indem은 durch + 4격으로 줄여요."
+    },
+    {
+      "lv": 1,
+      "t": "fill",
+      "q": "Als die Sonne aufging, waren wir schon auf dem Gipfel.\n→ ___ Sonnenaufgang waren wir schon auf dem Gipfel.",
+      "ko": "해가 뜰 때 우리는 벌써 정상에 있었어요.",
+      "h": "~할 때",
+      "a": [
+        "Bei"
+      ],
+      "e": "'~할 때'의 als는 bei + 3격으로 줄여요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "폭풍 때문에 모든 항공편이 취소됐어요.",
+      "a": [
+        "Wegen des Sturms wurden alle Flüge gestrichen.",
+        "Alle Flüge wurden wegen des Sturms gestrichen."
+      ],
+      "e": "wegen + 2격 → des Sturms. 전치사구가 첫 자리에 오면 바로 뒤에 동사 wurden이 와요."
+    },
+    {
+      "lv": 1,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "길이 얼면 수업이 없어요.",
+      "a": [
+        "Bei Glatteis fällt der Unterricht aus.",
+        "Der Unterricht fällt bei Glatteis aus."
+      ],
+      "e": "wenn es glatt ist를 bei Glatteis로 줄였어요. 분리동사 ausfallen의 aus는 문장 끝에 와요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "___ der schnellen Hilfe der Nachbarn konnte das Feuer gelöscht werden.",
+      "o": [
+        "Dank",
+        "Trotz",
+        "Statt",
+        "Mangels"
+      ],
+      "a": 0,
+      "e": "좋은 결과(불을 끔)를 낳은 이유는 dank + 2격으로 말해요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "'Weil die Nachfrage gesunken ist, …'를 바르게 바꾼 것은?",
+      "o": [
+        "Wegen des Rückgangs der Nachfrage …",
+        "Wegen der Rückgang der Nachfrage …",
+        "Wegen des Rückgangs die Nachfrage …",
+        "Wegen dem Rückgang die Nachfrage …"
+      ],
+      "a": 0,
+      "e": "sinken → der Rückgang. wegen 뒤는 2격 des Rückgangs, 주어였던 die Nachfrage도 2격 der Nachfrage예요."
+    },
+    {
+      "lv": 2,
+      "t": "mc",
+      "q": "Wenn Sie nicht unterschreiben, ist der Vertrag ungültig.\n→ ___ ist der Vertrag ungültig.",
+      "o": [
+        "Ohne Ihre Unterschrift",
+        "Bei Ihrer Unterschrift",
+        "Trotz Ihrer Unterschrift",
+        "Ohne Ihrer Unterschrift"
+      ],
+      "a": 0,
+      "e": "wenn … nicht는 ohne + 4격으로 줄여요. ohne는 4격을 받으니 Ihre Unterschrift예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Weil die Temperaturen plötzlich gesunken sind, sind die Straßen glatt.\n→ Wegen des ___ ___ der Temperaturen sind die Straßen glatt.",
+      "ko": "기온이 갑자기 떨어져서 길이 미끄러워요.",
+      "h": [
+        "plötzlich",
+        "sinken → 명사 · 2격"
+      ],
+      "a": [
+        "plötzlichen",
+        [
+          "Rückgangs",
+          "Sinkens",
+          "Abfalls"
+        ]
+      ],
+      "e": "부사 plötzlich는 형용사 plötzlichen이 되고, sinken은 명사가 돼요. wegen 뒤라서 2격 des plötzlichen Rückgangs예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Nachdem der Bürgermeister zurückgetreten war, gab es Neuwahlen.\n→ Nach dem ___ des ___ gab es Neuwahlen.",
+      "ko": "시장이 물러난 뒤 재선거가 있었어요.",
+      "h": [
+        "zurücktreten → 명사",
+        "Bürgermeister · 2격"
+      ],
+      "a": [
+        "Rücktritt",
+        "Bürgermeisters"
+      ],
+      "e": "zurücktreten → der Rücktritt. 주어였던 der Bürgermeister는 2격 des Bürgermeisters가 돼요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Trotz großer Anstrengungen gelang der Versuch nicht.\n→ ___ man sich sehr ___, gelang der Versuch nicht.",
+      "ko": "많이 애썼는데도 실험은 성공하지 못했어요.",
+      "h": [
+        "양보 접속사",
+        "sich anstrengen · 과거형"
+      ],
+      "a": [
+        [
+          "Obwohl",
+          "Obgleich"
+        ],
+        "anstrengte"
+      ],
+      "e": "trotz를 문장으로 풀면 obwohl이에요. 명사 Anstrengungen에서 동사 sich anstrengen을 찾아요. 주문장이 과거라서 anstrengte예요."
+    },
+    {
+      "lv": 2,
+      "t": "fill",
+      "q": "Nach dem Ende der Vorlesung gingen die Studenten in die Mensa.\n→ Nachdem die Vorlesung ___ ___, gingen die Studenten in die Mensa.",
+      "ko": "강의가 끝난 뒤 학생들은 학생 식당에 갔어요.",
+      "h": [
+        "enden · 과거분사",
+        "보조 동사"
+      ],
+      "a": [
+        "geendet",
+        "hatte"
+      ],
+      "e": "nachdem 문장은 주문장보다 한 단계 앞선 시제예요. 주문장이 과거(gingen)라서 과거완료 geendet hatte를 써요."
+    },
+    {
+      "lv": 2,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "그는 두려워서 진실을 말하지 않았어요.",
+      "a": [
+        "Aus Angst hat er die Wahrheit nicht gesagt.",
+        "Er hat aus Angst die Wahrheit nicht gesagt.",
+        "Er hat die Wahrheit aus Angst nicht gesagt.",
+        "Die Wahrheit hat er aus Angst nicht gesagt."
+      ],
+      "e": "스스로 한 행동의 동기는 aus + 관사 없는 명사예요. weil er Angst hatte를 줄인 꼴이에요."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "틀린 문장은?",
+      "o": [
+        "Sie zitterte aus Kälte am ganzen Körper.",
+        "Vor lauter Freude vergaß sie, sich zu bedanken.",
+        "Aus Zeitmangel konnte er den Bericht nicht fertigstellen.",
+        "Bei meiner Rückkehr war die Wohnung leer."
+      ],
+      "a": 0,
+      "e": "추워서 떠는 것은 저절로 나오는 반응이에요 → vor Kälte zittern.<br>aus는 스스로 한 행동의 동기에 써요 — aus Zeitmangel."
+    },
+    {
+      "lv": 3,
+      "t": "mc",
+      "q": "'Nach bestandener Fahrprüfung lud sie ihre Freunde zum Essen ein.'과 뜻이 같은 문장은?",
+      "o": [
+        "Nachdem sie die Fahrprüfung bestanden hatte, lud sie ihre Freunde zum Essen ein.",
+        "Bevor sie die Fahrprüfung bestand, lud sie ihre Freunde zum Essen ein.",
+        "Nachdem sie die Fahrprüfung besteht, lud sie ihre Freunde zum Essen ein.",
+        "Obwohl sie die Fahrprüfung bestanden hatte, lud sie ihre Freunde zum Essen ein."
+      ],
+      "a": 0,
+      "e": "nach → nachdem. 주문장이 과거(lud … ein)라서 nachdem 문장은 과거완료 bestanden hatte예요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Liebe Fahrgäste,\n___ eines Stromausfalls fahren zurzeit keine U-Bahnen. ___ der Störung verkehren Ersatzbusse. ___ der Fahrt mit dem Ersatzbus gilt Ihr normales Ticket. ___ Ende der Störung informieren wir Sie über die Lautsprecher.",
+      "ko": "승객 여러분, 정전으로 지금 지하철이 다니지 않아요. 장애가 이어지는 동안 대체 버스가 다녀요. 대체 버스를 탈 때는 평소 승차권을 쓰시면 돼요. 장애가 끝나면 방송으로 알려 드려요.",
+      "h": [
+        "원인 · 2격",
+        "~하는 동안 · 2격",
+        "~할 때 · 3격",
+        "~한 뒤"
+      ],
+      "a": [
+        [
+          "wegen",
+          "aufgrund",
+          "infolge"
+        ],
+        "Während",
+        [
+          "Bei",
+          "Während"
+        ],
+        [
+          "Nach",
+          "Am",
+          "Zum"
+        ]
+      ],
+      "e": "원인 → wegen · aufgrund + 2격(eines Stromausfalls) · 동안 → während + 2격(der Störung) · ~할 때 → bei + 3격(der Fahrt) · 끝난 뒤 → nach Ende.<br>안내 방송은 종속절 대신 이런 전치사구로 말해요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Weil die Zahl der Touristen ständig zunimmt, werden neue Hotels gebaut.\n→ Wegen der ___ ___ der Zahl der Touristen werden neue Hotels gebaut.",
+      "ko": "관광객 수가 계속 늘어서 새 호텔을 지어요.",
+      "h": [
+        "ständig",
+        "zunehmen → 명사"
+      ],
+      "a": [
+        "ständigen",
+        "Zunahme"
+      ],
+      "e": "부사 ständig → 형용사 ständigen(2격 여성 -en), zunehmen → die Zunahme. 주어 die Zahl der Touristen은 2격 der Zahl der Touristen이 돼요."
+    },
+    {
+      "lv": 3,
+      "t": "fill",
+      "q": "Seit der Schließung der Fabrik ziehen viele junge Leute weg.\n→ Seit die Fabrik ___ ___, ziehen viele junge Leute weg.",
+      "ko": "공장이 문을 닫은 뒤로 젊은 사람이 많이 떠나요.",
+      "h": [
+        "schließen · 과거분사",
+        "동사"
+      ],
+      "a": [
+        "geschlossen",
+        [
+          "wurde",
+          "ist",
+          "hat"
+        ]
+      ],
+      "e": "die Schließung → schließen. 2격 der Fabrik이 주어 die Fabrik이 돼요.<br>수동 geschlossen wurde, 상태 geschlossen ist, 능동 geschlossen hat 모두 써요."
+    },
+    {
+      "lv": 3,
+      "t": "order",
+      "q": "단어를 알맞은 순서로 놓으세요.",
+      "ko": "재정 지원이 없으면 그 프로젝트는 실현될 수 없어요.",
+      "a": [
+        "Ohne finanzielle Unterstützung kann das Projekt nicht verwirklicht werden.",
+        "Das Projekt kann ohne finanzielle Unterstützung nicht verwirklicht werden."
+      ],
+      "e": "wenn es keine finanzielle Unterstützung gibt를 ohne + 4격으로 줄였어요. 화법조동사 kann이 두 번째, verwirklicht werden이 끝에 와요."
+    }
+  ],
+  "plus": [
+    {
+      "t": "tr",
+      "q": "종속절을 전치사구로 바꿔 쓰세요.",
+      "s": "Obwohl die Kritik heftig war, blieb die Ministerin im Amt.",
+      "a": [
+        "Trotz der heftigen Kritik blieb die Ministerin im Amt.",
+        "Trotz heftiger Kritik blieb die Ministerin im Amt.",
+        "Die Ministerin blieb trotz der heftigen Kritik im Amt.",
+        "Die Ministerin blieb trotz heftiger Kritik im Amt."
+      ],
+      "e": "obwohl → trotz + 2격. 서술어였던 heftig는 형용사 어미를 받아요 — der heftigen Kritik, 관사 없이 쓰면 heftiger Kritik."
+    },
+    {
+      "t": "tr",
+      "q": "전치사구를 종속절로 바꿔 쓰세요.",
+      "s": "Bei Regen wird das Sommerfest in die Turnhalle verlegt.",
+      "a": [
+        "Wenn es regnet, wird das Sommerfest in die Turnhalle verlegt.",
+        "Falls es regnet, wird das Sommerfest in die Turnhalle verlegt.",
+        "Das Sommerfest wird in die Turnhalle verlegt, wenn es regnet.",
+        "Das Sommerfest wird in die Turnhalle verlegt, falls es regnet."
+      ],
+      "e": "조건의 bei는 wenn이나 falls로 풀어요. 명사 Regen은 동사 regnen이 되고, 날씨 동사라서 주어 es가 필요해요."
+    },
+    {
+      "t": "tr",
+      "q": "종속절을 nach + 명사로 바꿔 쓰세요.",
+      "s": "Nachdem er das Abitur bestanden hatte, reiste er durch Asien.",
+      "a": [
+        "Nach dem Abitur reiste er durch Asien.",
+        "Nach bestandenem Abitur reiste er durch Asien.",
+        "Nach dem bestandenen Abitur reiste er durch Asien.",
+        "Nach dem Bestehen des Abiturs reiste er durch Asien.",
+        "Er reiste nach dem Abitur durch Asien."
+      ],
+      "e": "nachdem → nach + 3격. bestehen은 과거분사를 형용사로 써서 nach bestandenem Abitur라고 줄일 수도 있어요."
+    },
+    {
+      "t": "err",
+      "q": "Wegen den anhaltenden Regens wird das Spiel verschoben.",
+      "x": 1,
+      "r": "Wegen des anhaltenden Regens wird das Spiel verschoben.",
+      "ko": "비가 계속 와서 경기가 미뤄져요.",
+      "e": "wegen은 2격을 받아요. 남성 2격 관사는 des예요."
+    },
+    {
+      "t": "err",
+      "q": "Nach seine Rückkehr aus Japan eröffnete er ein Restaurant.",
+      "x": 1,
+      "r": "Nach seiner Rückkehr aus Japan eröffnete er ein Restaurant.",
+      "ko": "일본에서 돌아온 뒤 그는 식당을 열었어요.",
+      "e": "nach는 3격을 받아요. die Rückkehr → seiner Rückkehr."
+    },
+    {
+      "t": "err",
+      "q": "Trotz sie stark erkältet war, half sie mir beim Umzug.",
+      "x": 0,
+      "r": "Obwohl sie stark erkältet war, half sie mir beim Umzug.",
+      "ko": "감기가 심했는데도 그녀는 내 이사를 도와줬어요.",
+      "e": "뒤에 문장(sie stark erkältet war)이 오면 접속사 obwohl을 써요. trotz는 전치사라서 뒤에 명사가 와요."
+    }
+  ]
+}
