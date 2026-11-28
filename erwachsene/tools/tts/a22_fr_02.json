@@ -1,0 +1,81 @@
+{
+ "job": "a22_fr_02",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Der Zug nach Köln um acht Uhr dreißig fällt heute leider aus. Bitte nehmen Sie den Zug um neun Uhr dreißig."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag. Was kann ich für Sie tun?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Wann möchten Sie fahren?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Der ICE fährt um neun Uhr von Gleis sechs. Möchten Sie einen Sitzplatz reservieren?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Ich sehe gerade: Der Zug hat morgen dreißig Minuten Verspätung."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Nein, der nächste Zug fährt erst um zehn."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag, Frau Kim, hier ist Brandt vom Café Morgenrot."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Vielen Dank für Ihre Bewerbung. Wir möchten Sie gern zu einem Gespräch einladen."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Haben Sie am Donnerstag um fünfzehn Uhr Zeit für ein Vorstellungsgespräch?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Bitte bringen Sie Ihren Ausweis mit, und rufen Sie mich bitte heute noch zurück."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Der Zug nach Köln um acht Uhr dreißig fällt heute leider aus. Bitte nehmen Sie den Zug um neun Uhr dreißig. [pause] Guten Tag. Was kann ich für Sie tun? [pause] Wann möchten Sie fahren? [pause] Der ICE fährt um neun Uhr von Gleis sechs. Möchten Sie einen Sitzplatz reservieren? [pause] Ich sehe gerade: Der Zug hat morgen dreißig Minuten Verspätung. [pause] Nein, der nächste Zug fährt erst um zehn. [pause] Guten Tag, Frau Kim, hier ist Brandt vom Café Morgenrot. [pause] Vielen Dank für Ihre Bewerbung. Wir möchten Sie gern zu einem Gespräch einladen. [pause] Haben Sie am Donnerstag um fünfzehn Uhr Zeit für ein Vorstellungsgespräch? [pause] Bitte bringen Sie Ihren Ausweis mit, und rufen Sie mich bitte heute noch zurück. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

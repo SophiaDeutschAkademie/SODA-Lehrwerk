@@ -1,0 +1,81 @@
+{
+ "job": "a22_fr_05",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Tut mir leid, Herr Schneider ist gerade in einer Besprechung. Kann ich ihm etwas ausrichten?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Einen Moment, ich schreibe das auf. Wie war Ihr Name, bitte?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Danke, Herr Park. Und worum geht es genau?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Ich verstehe. Soll er Sie zurückrufen?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Gut. Hat Herr Schneider Ihre Nummer?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Gut, ich richte es ihm aus. Er meldet sich bestimmt heute noch."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Sprachenzentrum, guten Tag. Was kann ich für Sie tun?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Gern. Studieren Sie schon bei uns?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Und welche Stufe haben Sie im Moment?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Dann passt der Kurs. Haben Sie noch Fragen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Tut mir leid, Herr Schneider ist gerade in einer Besprechung. Kann ich ihm etwas ausrichten? [pause] Einen Moment, ich schreibe das auf. Wie war Ihr Name, bitte? [pause] Danke, Herr Park. Und worum geht es genau? [pause] Ich verstehe. Soll er Sie zurückrufen? [pause] Gut. Hat Herr Schneider Ihre Nummer? [pause] Gut, ich richte es ihm aus. Er meldet sich bestimmt heute noch. [pause] Sprachenzentrum, guten Tag. Was kann ich für Sie tun? [pause] Gern. Studieren Sie schon bei uns? [pause] Und welche Stufe haben Sie im Moment? [pause] Dann passt der Kurs. Haben Sie noch Fragen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

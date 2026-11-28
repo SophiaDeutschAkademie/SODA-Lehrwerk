@@ -1,0 +1,81 @@
+{
+ "job": "a22_fr_03",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Universitätsbibliothek, guten Tag."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Schön. Was studieren Sie?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Haben Sie schon Erfahrung?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Wann können Sie arbeiten?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Und ab wann können Sie anfangen?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Hallo, ich bin neu hier. Was machen Sie bei Kessler Technik?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Seit wann arbeiten Sie hier?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Und was haben Sie studiert?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Was sind Ihre Aufgaben?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Frau",
+   "parts": [
+    "Haben Sie Pläne für dieses Jahr?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Universitätsbibliothek, guten Tag. [pause] Schön. Was studieren Sie? [pause] Haben Sie schon Erfahrung? [pause] Wann können Sie arbeiten? [pause] Und ab wann können Sie anfangen? [pause] Hallo, ich bin neu hier. Was machen Sie bei Kessler Technik? [pause] Seit wann arbeiten Sie hier? [pause] Und was haben Sie studiert? [pause] Was sind Ihre Aufgaben? [pause] Haben Sie Pläne für dieses Jahr? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

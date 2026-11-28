@@ -1,0 +1,81 @@
+{
+ "job": "a22_fr_06",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Am Montag und Mittwoch von sechzehn bis achtzehn Uhr. Für Studierende ist er kostenlos."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Frau",
+   "parts": [
+    "Herr Park, Sie interessieren sich für eine Haftpflichtversicherung, richtig?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Frau",
+   "parts": [
+    "Das stimmt. Wenn Sie zum Beispiel das Handy von einem Freund kaputt machen, zahlt die Versicherung den Schaden."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Frau",
+   "parts": [
+    "Dann auch. Ich würde Ihnen eine Versicherung für die ganze Familie empfehlen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Frau",
+   "parts": [
+    "Sieben Euro im Monat. Das wären vierundachtzig Euro im Jahr."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Frau",
+   "parts": [
+    "Die Laufzeit ist ein Jahr. Danach verlängert sich der Vertrag automatisch."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Frau",
+   "parts": [
+    "Dann müssen Sie drei Monate vor dem Ende schriftlich kündigen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Frau",
+   "parts": [
+    "Natürlich. Ich schicke sie Ihnen auch per E-Mail."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag. Wofür interessieren Sie sich?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Frau",
+   "parts": [
+    "Gern. Wohnen Sie allein oder mit Familie?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Am Montag und Mittwoch von sechzehn bis achtzehn Uhr. Für Studierende ist er kostenlos. [pause] Herr Park, Sie interessieren sich für eine Haftpflichtversicherung, richtig? [pause] Das stimmt. Wenn Sie zum Beispiel das Handy von einem Freund kaputt machen, zahlt die Versicherung den Schaden. [pause] Dann auch. Ich würde Ihnen eine Versicherung für die ganze Familie empfehlen. [pause] Sieben Euro im Monat. Das wären vierundachtzig Euro im Jahr. [pause] Die Laufzeit ist ein Jahr. Danach verlängert sich der Vertrag automatisch. [pause] Dann müssen Sie drei Monate vor dem Ende schriftlich kündigen. [pause] Natürlich. Ich schicke sie Ihnen auch per E-Mail. [pause] Guten Tag. Wofür interessieren Sie sich? [pause] Gern. Wohnen Sie allein oder mit Familie? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

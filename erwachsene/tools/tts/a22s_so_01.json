@@ -1,0 +1,74 @@
+{
+ "job": "a22s_so_01",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a2-2/wiederholung-2",
+   "who": "Sora",
+   "parts": [
+    "Guten Tag, hier ist Sora Lee. Ich habe letzte Woche meinen Vertrag gekündigt. Könnten Sie mir sagen, ob mein Brief angekommen ist?"
+   ]
+  },
+  {
+   "pid": "a2-2/wiederholung-2",
+   "who": "Sora",
+   "parts": [
+    "Sehr gut. Bekomme ich eine Bestätigung?"
+   ]
+  },
+  {
+   "pid": "a2-2/wiederholung-2",
+   "who": "Sora",
+   "parts": [
+    "Nein, danke. Ich habe mich schon entschieden."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Obwohl der Kurs voll war, durfte ich mitmachen."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Seit Mai bin ich Mitglied in einem Fotoclub. Das ist eine Gruppe, die sich jeden zweiten Donnerstag trifft."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Am Anfang habe ich dort niemanden gekannt. Jetzt habe ich zwei Freundinnen gefunden."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Im Juli zeigen wir unsere Fotos im Bürgerhaus. Die Fotos, die ich zeige, habe ich am Main gemacht."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Obwohl ich wenig Zeit habe, gehe ich immer hin. Der Fotoclub macht mir großen Spaß."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Was ist in Deutschland anders als in Korea?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag, hier ist Sora Lee. Ich habe letzte Woche meinen Vertrag gekündigt. Könnten Sie mir sagen, ob mein Brief angekommen ist? [pause] Sehr gut. Bekomme ich eine Bestätigung? [pause] Nein, danke. Ich habe mich schon entschieden. [pause] Obwohl der Kurs voll war, durfte ich mitmachen. [pause] Seit Mai bin ich Mitglied in einem Fotoclub. Das ist eine Gruppe, die sich jeden zweiten Donnerstag trifft. [pause] Am Anfang habe ich dort niemanden gekannt. Jetzt habe ich zwei Freundinnen gefunden. [pause] Im Juli zeigen wir unsere Fotos im Bürgerhaus. Die Fotos, die ich zeige, habe ich am Main gemacht. [pause] Obwohl ich wenig Zeit habe, gehe ich immer hin. Der Fotoclub macht mir großen Spaß. [pause] Was ist in Deutschland anders als in Korea? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

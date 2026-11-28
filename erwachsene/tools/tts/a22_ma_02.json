@@ -1,0 +1,81 @@
+{
+ "job": "a22_ma_02",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-2/3",
+   "who": "Mann",
+   "parts": [
+    "Ich habe aber noch eine Frage zum Preis. Können Sie mich bitte morgen Vormittag zurückrufen?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Mann",
+   "parts": [
+    "Sie erreichen mich von neun bis zwölf Uhr im Büro. Auf Wiederhören!"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Mann",
+   "parts": [
+    "Firma Nordlicht, Peters, guten Tag."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Mann",
+   "parts": [
+    "Frau Sommer ist leider gerade nicht da. Kann ich ihr etwas ausrichten?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Mann",
+   "parts": [
+    "Ja? Was soll ich ihr sagen?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Mann",
+   "parts": [
+    "Gut, ich schreibe es auf. Soll sie Sie zurückrufen?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Mann",
+   "parts": [
+    "In Ordnung. Ich richte es ihr aus."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag. Was kann ich für Sie tun?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Mann",
+   "parts": [
+    "Gern. Für Studierende haben wir ein kostenloses Girokonto. Hätten Sie Ihren Pass und Ihre Meldebescheinigung dabei?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Mann",
+   "parts": [
+    "Sehr gut. Möchten Sie auch eine Kreditkarte?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich habe aber noch eine Frage zum Preis. Können Sie mich bitte morgen Vormittag zurückrufen? [pause] Sie erreichen mich von neun bis zwölf Uhr im Büro. Auf Wiederhören! [pause] Firma Nordlicht, Peters, guten Tag. [pause] Frau Sommer ist leider gerade nicht da. Kann ich ihr etwas ausrichten? [pause] Ja? Was soll ich ihr sagen? [pause] Gut, ich schreibe es auf. Soll sie Sie zurückrufen? [pause] In Ordnung. Ich richte es ihr aus. [pause] Guten Tag. Was kann ich für Sie tun? [pause] Gern. Für Studierende haben wir ein kostenloses Girokonto. Hätten Sie Ihren Pass und Ihre Meldebescheinigung dabei? [pause] Sehr gut. Möchten Sie auch eine Kreditkarte? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

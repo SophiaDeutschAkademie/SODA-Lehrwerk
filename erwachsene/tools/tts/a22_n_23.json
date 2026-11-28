@@ -1,0 +1,91 @@
+{
+ "job": "a22_n_23",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "das Bargeld.",
+    "Ich habe kein Bargeld dabei."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "der Kontoauszug, die Kontoauszüge.",
+    "Der Kontoauszug kommt jeden Monat."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "das Online-Banking.",
+    "Mit Online-Banking geht es schnell."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "sparen, hat gespart.",
+    "Ich spare für den Urlaub."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die Filiale, die Filialen.",
+    "Die Filiale ist bis sechzehn Uhr geöffnet."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die Beraterin, die Beraterinnen.",
+    "Die Beraterin erklärt den Vertrag."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "benutzen, hat benutzt.",
+    "Ich benutze das Konto online."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "der Handyvertrag, die Handyverträge.",
+    "Mein Handyvertrag ist zu teuer."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "der Tarif, die Tarife.",
+    "Dieser Tarif kostet fünfzehn Euro im Monat."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die Laufzeit, die Laufzeiten.",
+    "Die Laufzeit ist ein Jahr."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Bargeld. Ich habe kein Bargeld dabei. [pause] der Kontoauszug, die Kontoauszüge. Der Kontoauszug kommt jeden Monat. [pause] das Online-Banking. Mit Online-Banking geht es schnell. [pause] sparen, hat gespart. Ich spare für den Urlaub. [pause] die Filiale, die Filialen. Die Filiale ist bis sechzehn Uhr geöffnet. [pause] die Beraterin, die Beraterinnen. Die Beraterin erklärt den Vertrag. [pause] benutzen, hat benutzt. Ich benutze das Konto online. [pause] der Handyvertrag, die Handyverträge. Mein Handyvertrag ist zu teuer. [pause] der Tarif, die Tarife. Dieser Tarif kostet fünfzehn Euro im Monat. [pause] die Laufzeit, die Laufzeiten. Die Laufzeit ist ein Jahr. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

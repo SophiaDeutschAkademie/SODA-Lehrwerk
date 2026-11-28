@@ -1,0 +1,67 @@
+{
+ "job": "a22_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Gern. Wann möchten Sie fahren?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Es gibt eine direkte Verbindung mit dem ICE. Abfahrt um sieben Uhr von Gleis neun, Ankunft um elf Uhr."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Am Abend fährt ein Zug um achtzehn Uhr. Sie sind dann um zweiundzwanzig Uhr wieder in Frankfurt."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Einen Moment. Oh, ich sehe gerade: Der frühe Zug fällt morgen aus."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Der nächste ICE fährt um acht Uhr von Gleis sieben. Sie kommen dann um zwölf Uhr an."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Leider nein. Aber mit dem neuen Ticket können Sie jeden Zug nehmen."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Achtung am Gleis sieben! Der ICE nach Hamburg, Abfahrt acht Uhr, hat heute zwanzig Minuten Verspätung."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Frau",
+   "parts": [
+    "Der Regionalzug nach Marburg fährt heute von Gleis zwölf, nicht von Gleis vierzehn."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gern. Wann möchten Sie fahren? [pause] Es gibt eine direkte Verbindung mit dem ICE. Abfahrt um sieben Uhr von Gleis neun, Ankunft um elf Uhr. [pause] Am Abend fährt ein Zug um achtzehn Uhr. Sie sind dann um zweiundzwanzig Uhr wieder in Frankfurt. [pause] Einen Moment. Oh, ich sehe gerade: Der frühe Zug fällt morgen aus. [pause] Der nächste ICE fährt um acht Uhr von Gleis sieben. Sie kommen dann um zwölf Uhr an. [pause] Leider nein. Aber mit dem neuen Ticket können Sie jeden Zug nehmen. [pause] Achtung am Gleis sieben! Der ICE nach Hamburg, Abfahrt acht Uhr, hat heute zwanzig Minuten Verspätung. [pause] Der Regionalzug nach Marburg fährt heute von Gleis zwölf, nicht von Gleis vierzehn. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

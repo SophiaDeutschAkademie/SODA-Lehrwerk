@@ -1,0 +1,74 @@
+{
+ "job": "a22_ji_05",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a2-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Ich suche etwas, das nicht so anstrengend ist."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Ist der Kurs für Anfänger? Ich habe noch nie Yoga gemacht."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Was kostet das?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Das stimmt. Wie melde ich mich an?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Gut, ich melde mich heute Abend an. Kennst du jemanden, der auch Yoga macht?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Hallo Mai, ich bin Jiu. Ja, ich wohne auch hier. Kann ich dir helfen?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Papier kommt in die grüne Tonne. Hier in Frankfurt ist sie grün, in vielen Städten ist sie blau."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Die werden in der gelben Tonne gesammelt. Der Biomüll kommt in die braune Tonne und der Rest in die graue."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Glas wird nicht hier gesammelt. Es wird zum Container an der Ecke gebracht. Aber Vorsicht: Viele Flaschen haben Pfand."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich suche etwas, das nicht so anstrengend ist. [pause] Ist der Kurs für Anfänger? Ich habe noch nie Yoga gemacht. [pause] Was kostet das? [pause] Das stimmt. Wie melde ich mich an? [pause] Gut, ich melde mich heute Abend an. Kennst du jemanden, der auch Yoga macht? [pause] Hallo Mai, ich bin Jiu. Ja, ich wohne auch hier. Kann ich dir helfen? [pause] Papier kommt in die grüne Tonne. Hier in Frankfurt ist sie grün, in vielen Städten ist sie blau. [pause] Die werden in der gelben Tonne gesammelt. Der Biomüll kommt in die braune Tonne und der Rest in die graue. [pause] Glas wird nicht hier gesammelt. Es wird zum Container an der Ecke gebracht. Aber Vorsicht: Viele Flaschen haben Pfand. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

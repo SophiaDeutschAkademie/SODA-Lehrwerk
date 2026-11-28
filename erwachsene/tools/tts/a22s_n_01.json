@@ -1,0 +1,53 @@
+{
+ "job": "a22s_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "Der Zug fährt von Gleis sieben ab."
+   ]
+  },
+  {
+   "pid": "a2-2/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "Ich werde Sie morgen anrufen."
+   ]
+  },
+  {
+   "pid": "a2-2/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "Wir freuen uns auf Ihre Antwort."
+   ]
+  },
+  {
+   "pid": "a2-2/wiederholung-2",
+   "who": "N",
+   "parts": [
+    "Ich würde gern den Tarif wechseln."
+   ]
+  },
+  {
+   "pid": "a2-2/wiederholung-2",
+   "who": "N",
+   "parts": [
+    "Das ist ein Kurs, der nichts kostet."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "N",
+   "parts": [
+    "Ich interessiere mich für die Stelle."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Der Zug fährt von Gleis sieben ab. [pause] Ich werde Sie morgen anrufen. [pause] Wir freuen uns auf Ihre Antwort. [pause] Ich würde gern den Tarif wechseln. [pause] Das ist ein Kurs, der nichts kostet. [pause] Ich interessiere mich für die Stelle. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

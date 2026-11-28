@@ -1,0 +1,81 @@
+{
+ "job": "a22_ma_06",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-2/5",
+   "who": "Mann",
+   "parts": [
+    "Wir haben eine Gruppe am Mittwoch um neunzehn Uhr."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Mann",
+   "parts": [
+    "Ja, das erste Training kostet nichts."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag, hier ist Krüger, Ihr Hausmeister. Ich habe drei Informationen für alle im Haus."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Mann",
+   "parts": [
+    "Ab nächster Woche wird der Biomüll am Dienstag abgeholt und nicht mehr am Donnerstag."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Mann",
+   "parts": [
+    "Am Freitag werden die Fenster im Treppenhaus geputzt. Bitte stellen Sie deshalb nichts ins Treppenhaus."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Mann",
+   "parts": [
+    "Und am Samstag wird im Hof das Sommerfest gefeiert. Alle sind herzlich eingeladen!"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Mann",
+   "parts": [
+    "Wann fängt man hier morgens an?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Mann",
+   "parts": [
+    "Und wie wird die Arbeitszeit notiert?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Mann",
+   "parts": [
+    "Wo essen Sie zu Mittag?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Mann",
+   "parts": [
+    "Gibt es feste Besprechungen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wir haben eine Gruppe am Mittwoch um neunzehn Uhr. [pause] Ja, das erste Training kostet nichts. [pause] Guten Tag, hier ist Krüger, Ihr Hausmeister. Ich habe drei Informationen für alle im Haus. [pause] Ab nächster Woche wird der Biomüll am Dienstag abgeholt und nicht mehr am Donnerstag. [pause] Am Freitag werden die Fenster im Treppenhaus geputzt. Bitte stellen Sie deshalb nichts ins Treppenhaus. [pause] Und am Samstag wird im Hof das Sommerfest gefeiert. Alle sind herzlich eingeladen! [pause] Wann fängt man hier morgens an? [pause] Und wie wird die Arbeitszeit notiert? [pause] Wo essen Sie zu Mittag? [pause] Gibt es feste Besprechungen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

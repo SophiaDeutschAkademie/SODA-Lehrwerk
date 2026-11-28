@@ -1,0 +1,74 @@
+{
+ "job": "a22_so_05",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a2-2/5",
+   "who": "Sora",
+   "parts": [
+    "Das ist interessant. Muss ich etwas bezahlen?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Sora",
+   "parts": [
+    "Sehr gut. Brauche ich eine teure Kamera?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Sora",
+   "parts": [
+    "Das gefällt mir. Wo treffen Sie sich?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Sora",
+   "parts": [
+    "Dann komme ich gern. Vielen Dank!"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Sora",
+   "parts": [
+    "Ich kenne hier niemanden, der fotografiert."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Sora",
+   "parts": [
+    "Ich suche eine Gruppe, die zu mir passt."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Sora",
+   "parts": [
+    "Vieles ist ähnlich, aber es gibt auch große Unterschiede. Am Sonntag sind hier fast alle Geschäfte geschlossen. In Korea wird auch am Sonntag eingekauft."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Sora",
+   "parts": [
+    "Ja. Einmal hatten wir am Sonntag nichts im Kühlschrank. Deshalb kaufe ich jetzt immer am Samstag ein."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Sora",
+   "parts": [
+    "Ja, sehr. Obwohl ich am Anfang überrascht war, finde ich ihn jetzt schön. Die ganze Familie hat Zeit."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist interessant. Muss ich etwas bezahlen? [pause] Sehr gut. Brauche ich eine teure Kamera? [pause] Das gefällt mir. Wo treffen Sie sich? [pause] Dann komme ich gern. Vielen Dank! [pause] Ich kenne hier niemanden, der fotografiert. [pause] Ich suche eine Gruppe, die zu mir passt. [pause] Vieles ist ähnlich, aber es gibt auch große Unterschiede. Am Sonntag sind hier fast alle Geschäfte geschlossen. In Korea wird auch am Sonntag eingekauft. [pause] Ja. Einmal hatten wir am Sonntag nichts im Kühlschrank. Deshalb kaufe ich jetzt immer am Samstag ein. [pause] Ja, sehr. Obwohl ich am Anfang überrascht war, finde ich ihn jetzt schön. Die ganze Familie hat Zeit. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

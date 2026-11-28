@@ -1,0 +1,81 @@
+{
+ "job": "a22_le_02",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "Lena",
+   "parts": [
+    "Ab sechs Uhr fährt jede Stunde ein Zug. Wir können bis zum Abend bleiben."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Lena",
+   "parts": [
+    "Der Zug fährt um neun Uhr zwölf von Gleis vierzehn ab."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Lena",
+   "parts": [
+    "Wir gehen über die Brücke."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lena",
+   "parts": [
+    "Was steht da?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lena",
+   "parts": [
+    "Nicht schlecht. Was musst du machen?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lena",
+   "parts": [
+    "Das bist du doch. Brauchst du Erfahrung?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lena",
+   "parts": [
+    "Und dein Deutsch ist jetzt wirklich gut. Hast du vor, dich zu bewerben?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lena",
+   "parts": [
+    "Dann schreib heute noch die Bewerbung. Ich helfe dir, den Lebenslauf zu schreiben."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lena",
+   "parts": [
+    "Vergiss nicht, deine Telefonnummer zu schreiben."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Lena",
+   "parts": [
+    "Bestimmt. Ich drücke dir die Daumen!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ab sechs Uhr fährt jede Stunde ein Zug. Wir können bis zum Abend bleiben. [pause] Der Zug fährt um neun Uhr zwölf von Gleis vierzehn ab. [pause] Wir gehen über die Brücke. [pause] Was steht da? [pause] Nicht schlecht. Was musst du machen? [pause] Das bist du doch. Brauchst du Erfahrung? [pause] Und dein Deutsch ist jetzt wirklich gut. Hast du vor, dich zu bewerben? [pause] Dann schreib heute noch die Bewerbung. Ich helfe dir, den Lebenslauf zu schreiben. [pause] Vergiss nicht, deine Telefonnummer zu schreiben. [pause] Bestimmt. Ich drücke dir die Daumen! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

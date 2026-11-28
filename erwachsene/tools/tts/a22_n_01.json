@@ -1,0 +1,86 @@
+{
+ "job": "a22_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "Der Zug fährt von Gleis neun ab."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "Gehen Sie an der Kirche vorbei."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "Das Museum ist gegenüber vom Park."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "Der Zug fällt heute aus."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "das Gleis, die Gleise."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "der Bahnsteig, die Bahnsteige.",
+    "Wir warten am Bahnsteig."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Abfahrt.",
+    "Die Abfahrt ist um sieben Uhr."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Ankunft.",
+    "Die Ankunft in Hamburg ist um elf Uhr."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Verbindung, die Verbindungen.",
+    "Gibt es eine direkte Verbindung?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "der Anschluss, die Anschlüsse.",
+    "Ich habe meinen Anschluss verpasst."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Der Zug fährt von Gleis neun ab. [pause] Gehen Sie an der Kirche vorbei. [pause] Das Museum ist gegenüber vom Park. [pause] Der Zug fällt heute aus. [pause] das Gleis, die Gleise. [pause] der Bahnsteig, die Bahnsteige. Wir warten am Bahnsteig. [pause] die Abfahrt. Die Abfahrt ist um sieben Uhr. [pause] die Ankunft. Die Ankunft in Hamburg ist um elf Uhr. [pause] die Verbindung, die Verbindungen. Gibt es eine direkte Verbindung? [pause] der Anschluss, die Anschlüsse. Ich habe meinen Anschluss verpasst. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

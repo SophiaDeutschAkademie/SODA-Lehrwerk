@@ -1,0 +1,86 @@
+{
+ "job": "a22_n_08",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Ich bin für die Kunden zuständig."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Ich möchte mich bewerben."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Ich habe vor, einen Kurs zu machen."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Ich werde die E-Mail heute schicken."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "der Job, die Jobs.",
+    "Ich suche einen Job."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "der Nebenjob, die Nebenjobs.",
+    "Jiu sucht einen Nebenjob."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Aufgabe, die Aufgaben.",
+    "Was sind Ihre Aufgaben?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "zuständig."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "das Projekt, die Projekte.",
+    "Ich plane die Projekte."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Abteilung, die Abteilungen.",
+    "Ich arbeite in der Abteilung Technik."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich bin für die Kunden zuständig. [pause] Ich möchte mich bewerben. [pause] Ich habe vor, einen Kurs zu machen. [pause] Ich werde die E-Mail heute schicken. [pause] der Job, die Jobs. Ich suche einen Job. [pause] der Nebenjob, die Nebenjobs. Jiu sucht einen Nebenjob. [pause] die Aufgabe, die Aufgaben. Was sind Ihre Aufgaben? [pause] zuständig. [pause] das Projekt, die Projekte. Ich plane die Projekte. [pause] die Abteilung, die Abteilungen. Ich arbeite in der Abteilung Technik. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

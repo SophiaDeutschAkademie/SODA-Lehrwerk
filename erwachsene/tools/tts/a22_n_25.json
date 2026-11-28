@@ -1,0 +1,91 @@
+{
+ "job": "a22_n_25",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "automatisch.",
+    "Der Vertrag verlängert sich automatisch."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "schriftlich.",
+    "Sie müssen schriftlich kündigen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "im Monat.",
+    "Das kostet sieben Euro im Monat."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "unbedingt.",
+    "Diese Versicherung braucht man unbedingt."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Ich würde gern …",
+    "Ich würde gern mehr reisen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Ich wäre gern …",
+    "Ich wäre gern schon fertig."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Wir könnten …",
+    "Wir könnten den Anbieter wechseln."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Das wäre super.",
+    "Ein Ausflug im Sommer? Das wäre super."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "der Wunsch, die Wünsche.",
+    "Ich habe einen Wunsch."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "der Vorschlag, die Vorschläge.",
+    "Ich habe einen Vorschlag."
+   ]
+  }
+ ],
+ "script": "Also. [pause] automatisch. Der Vertrag verlängert sich automatisch. [pause] schriftlich. Sie müssen schriftlich kündigen. [pause] im Monat. Das kostet sieben Euro im Monat. [pause] unbedingt. Diese Versicherung braucht man unbedingt. [pause] Ich würde gern … Ich würde gern mehr reisen. [pause] Ich wäre gern … Ich wäre gern schon fertig. [pause] Wir könnten … Wir könnten den Anbieter wechseln. [pause] Das wäre super. Ein Ausflug im Sommer? Das wäre super. [pause] der Wunsch, die Wünsche. Ich habe einen Wunsch. [pause] der Vorschlag, die Vorschläge. Ich habe einen Vorschlag. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

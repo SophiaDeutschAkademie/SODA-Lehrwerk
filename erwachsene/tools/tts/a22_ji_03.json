@@ -1,0 +1,81 @@
+{
+ "job": "a22_ji_03",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a2-2/2",
+   "who": "Jiu",
+   "parts": [
+    "Ich möchte mich bewerben."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Guten Tag, hier ist Jiu Kim. Ich fange im April mit dem Studium an und interessiere mich für einen Deutschkurs."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Ich interessiere mich für den Kurs B1 am Abend. Können Sie mir sagen, wann er stattfindet?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Das passt gut. Und was kostet der Kurs?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Ach so. Wo kann ich den Test machen?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Vielen Dank. Und bis wann muss ich mich anmelden?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Gut, ich melde mich heute noch an. Bekomme ich am Ende ein Zertifikat?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Super. Vielen Dank für die Informationen!"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Ich interessiere mich für den Deutschkurs am Abend."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Jiu",
+   "parts": [
+    "Ich interessiere mich für den Kurs."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich möchte mich bewerben. [pause] Guten Tag, hier ist Jiu Kim. Ich fange im April mit dem Studium an und interessiere mich für einen Deutschkurs. [pause] Ich interessiere mich für den Kurs B1 am Abend. Können Sie mir sagen, wann er stattfindet? [pause] Das passt gut. Und was kostet der Kurs? [pause] Ach so. Wo kann ich den Test machen? [pause] Vielen Dank. Und bis wann muss ich mich anmelden? [pause] Gut, ich melde mich heute noch an. Bekomme ich am Ende ein Zertifikat? [pause] Super. Vielen Dank für die Informationen! [pause] Ich interessiere mich für den Deutschkurs am Abend. [pause] Ich interessiere mich für den Kurs. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

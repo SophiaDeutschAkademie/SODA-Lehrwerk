@@ -1,0 +1,81 @@
+{
+ "job": "a22_so_01",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "Sora",
+   "parts": [
+    "Entschuldigung, können Sie mir helfen? Ich suche das Stadtmuseum."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Sora",
+   "parts": [
+    "Ja, mit meiner Tochter."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Sora",
+   "parts": [
+    "An der Kreuzung rechts. Und dann?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Sora",
+   "parts": [
+    "Über die Brücke, gut."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Sora",
+   "parts": [
+    "Wie lange dauert das zu Fuß?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Sora",
+   "parts": [
+    "Nein, wir gehen lieber zu Fuß. Wissen Sie, ob das Museum heute geöffnet ist?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Sora",
+   "parts": [
+    "Heute ist ja Samstag. Vielen Dank für Ihre Hilfe!"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Sora",
+   "parts": [
+    "Gehen Sie an der Kirche vorbei und dann über die Brücke."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Sora",
+   "parts": [
+    "Das Museum ist gegenüber vom Park."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Sora",
+   "parts": [
+    "Frau Becker, darf ich Sie etwas fragen? Der Sohn von meiner Nachbarin macht eine Ausbildung. Was ist das genau?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Entschuldigung, können Sie mir helfen? Ich suche das Stadtmuseum. [pause] Ja, mit meiner Tochter. [pause] An der Kreuzung rechts. Und dann? [pause] Über die Brücke, gut. [pause] Wie lange dauert das zu Fuß? [pause] Nein, wir gehen lieber zu Fuß. Wissen Sie, ob das Museum heute geöffnet ist? [pause] Heute ist ja Samstag. Vielen Dank für Ihre Hilfe! [pause] Gehen Sie an der Kirche vorbei und dann über die Brücke. [pause] Das Museum ist gegenüber vom Park. [pause] Frau Becker, darf ich Sie etwas fragen? Der Sohn von meiner Nachbarin macht eine Ausbildung. Was ist das genau? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

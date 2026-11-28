@@ -1,0 +1,91 @@
+{
+ "job": "a22_n_16",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "ausrichten, hat ausgerichtet.",
+    "Kann ich ihm etwas ausrichten?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Mailbox.",
+    "Ich habe auf die Mailbox gesprochen."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Notiz, die Notizen.",
+    "Ich schreibe eine Notiz."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "sich melden, hat sich gemeldet.",
+    "Ich melde mich morgen wieder."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "gerade.",
+    "Er telefoniert gerade."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "einverstanden.",
+    "Ich bin einverstanden."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Worum geht es?",
+    "Worum geht es genau?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Es geht um …",
+    "Es geht um das Angebot."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Anfrage, die Anfragen.",
+    "Vielen Dank für Ihre Anfrage."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "der Betreff.",
+    "Im Betreff steht das Thema."
+   ]
+  }
+ ],
+ "script": "Also. [pause] ausrichten, hat ausgerichtet. Kann ich ihm etwas ausrichten? [pause] die Mailbox. Ich habe auf die Mailbox gesprochen. [pause] die Notiz, die Notizen. Ich schreibe eine Notiz. [pause] sich melden, hat sich gemeldet. Ich melde mich morgen wieder. [pause] gerade. Er telefoniert gerade. [pause] einverstanden. Ich bin einverstanden. [pause] Worum geht es? Worum geht es genau? [pause] Es geht um … Es geht um das Angebot. [pause] die Anfrage, die Anfragen. Vielen Dank für Ihre Anfrage. [pause] der Betreff. Im Betreff steht das Thema. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

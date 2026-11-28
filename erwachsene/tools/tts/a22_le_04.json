@@ -1,0 +1,60 @@
+{
+ "job": "a22_le_04",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Der Kurs ist für Anfänger."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Machst du dieses Semester beim Hochschulsport mit?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Wann findet der Kurs statt?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Und was kostet er?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Musst du etwas mitbringen?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Gehst du allein?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Lena",
+   "parts": [
+    "Am Sonntag sind die Geschäfte geschlossen, deshalb kaufe ich heute ein."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Der Kurs ist für Anfänger. [pause] Machst du dieses Semester beim Hochschulsport mit? [pause] Wann findet der Kurs statt? [pause] Und was kostet er? [pause] Musst du etwas mitbringen? [pause] Gehst du allein? [pause] Am Sonntag sind die Geschäfte geschlossen, deshalb kaufe ich heute ein. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

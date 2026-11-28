@@ -1,0 +1,91 @@
+{
+ "job": "a22_n_35",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "das Altpapier.",
+    "Das Altpapier wird gesammelt."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "die Verpackung, die Verpackungen.",
+    "Verpackungen kommen in die gelbe Tonne."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "das Altglas.",
+    "Das Altglas wird zum Container gebracht."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "der Container, die Container.",
+    "Der Container steht an der Ecke."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "das Pfand.",
+    "Auf der Flasche ist Pfand."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "die Pfandflasche, die Pfandflaschen.",
+    "Ich bringe die Pfandflaschen zurück."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "die Dose, die Dosen.",
+    "Auch Dosen haben Pfand."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "der Pfandautomat, die Pfandautomaten.",
+    "Der Pfandautomat steht am Eingang."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "wegwerfen, du wirfst weg, hat weggeworfen.",
+    "Wirf die Flasche nicht weg!"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "sammeln, hat gesammelt.",
+    "Ich sammle die Flaschen in einer Tasche."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Altpapier. Das Altpapier wird gesammelt. [pause] die Verpackung, die Verpackungen. Verpackungen kommen in die gelbe Tonne. [pause] das Altglas. Das Altglas wird zum Container gebracht. [pause] der Container, die Container. Der Container steht an der Ecke. [pause] das Pfand. Auf der Flasche ist Pfand. [pause] die Pfandflasche, die Pfandflaschen. Ich bringe die Pfandflaschen zurück. [pause] die Dose, die Dosen. Auch Dosen haben Pfand. [pause] der Pfandautomat, die Pfandautomaten. Der Pfandautomat steht am Eingang. [pause] wegwerfen, du wirfst weg, hat weggeworfen. Wirf die Flasche nicht weg! [pause] sammeln, hat gesammelt. Ich sammle die Flaschen in einer Tasche. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

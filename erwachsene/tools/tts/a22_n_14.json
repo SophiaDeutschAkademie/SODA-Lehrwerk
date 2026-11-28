@@ -1,0 +1,81 @@
+{
+ "job": "a22_n_14",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Ich werde die E-Mail heute Abend schicken."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Die Firma wird die Weiterbildung bezahlen."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Im Sommer werden wir einen neuen Kunden bekommen."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Ich habe vor, mich zu bewerben."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Ich habe Lust, in einem Café zu arbeiten."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Ich versuche, jeden Tag eine Stunde zu lernen."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Ich möchte im Café arbeiten."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Ich habe vor, im Café zu arbeiten."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "Ich werde morgen die Bewerbung schreiben."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Kann ich eine Nachricht hinterlassen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich werde die E-Mail heute Abend schicken. [pause] Die Firma wird die Weiterbildung bezahlen. [pause] Im Sommer werden wir einen neuen Kunden bekommen. [pause] Ich habe vor, mich zu bewerben. [pause] Ich habe Lust, in einem Café zu arbeiten. [pause] Ich versuche, jeden Tag eine Stunde zu lernen. [pause] Ich möchte im Café arbeiten. [pause] Ich habe vor, im Café zu arbeiten. [pause] Ich werde morgen die Bewerbung schreiben. [pause] Kann ich eine Nachricht hinterlassen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

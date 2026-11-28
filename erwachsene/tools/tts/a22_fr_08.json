@@ -1,0 +1,81 @@
+{
+ "job": "a22_fr_08",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "So viele Tonnen! Und die Flaschen?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Pfand? Was ist das?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Ach so, deshalb stehen dort immer Leute am Automaten."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Auch am Wochenende?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Das ist viel. Obwohl ich schon einen Monat in Deutschland bin, kenne ich die Regeln noch nicht."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Guten Morgen, Herr Park. Vielen Dank."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Gern. Ich bin Elif. Wann fängt man hier morgens an?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Und wann ist die Mittagspause?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Gut zu wissen. Gibt es feste Besprechungen?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Natürlich. Und wie ist das mit dem Urlaub?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] So viele Tonnen! Und die Flaschen? [pause] Pfand? Was ist das? [pause] Ach so, deshalb stehen dort immer Leute am Automaten. [pause] Auch am Wochenende? [pause] Das ist viel. Obwohl ich schon einen Monat in Deutschland bin, kenne ich die Regeln noch nicht. [pause] Guten Morgen, Herr Park. Vielen Dank. [pause] Gern. Ich bin Elif. Wann fängt man hier morgens an? [pause] Und wann ist die Mittagspause? [pause] Gut zu wissen. Gibt es feste Besprechungen? [pause] Natürlich. Und wie ist das mit dem Urlaub? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

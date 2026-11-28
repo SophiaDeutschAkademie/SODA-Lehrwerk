@@ -1,0 +1,91 @@
+{
+ "job": "a22_n_24",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "kündigen, hat gekündigt.",
+    "Ich möchte den Vertrag kündigen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die Kündigung, die Kündigungen.",
+    "Ich schreibe heute die Kündigung."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die Kündigungsfrist, die Kündigungsfristen.",
+    "Die Kündigungsfrist ist ein Monat."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "abschließen, hat abgeschlossen.",
+    "Ich schließe einen Vertrag ab."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die Versicherung, die Versicherungen.",
+    "Ich brauche eine Versicherung."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die Haftpflichtversicherung.",
+    "Die Haftpflichtversicherung zahlt den Schaden."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "der Schaden, die Schäden.",
+    "Wer zahlt den Schaden?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die Bedingung, die Bedingungen.",
+    "Ich lese zuerst die Bedingungen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "der Anbieter, die Anbieter.",
+    "Wir wechseln den Anbieter."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "wechseln, hat gewechselt.",
+    "Ich möchte den Tarif wechseln."
+   ]
+  }
+ ],
+ "script": "Also. [pause] kündigen, hat gekündigt. Ich möchte den Vertrag kündigen. [pause] die Kündigung, die Kündigungen. Ich schreibe heute die Kündigung. [pause] die Kündigungsfrist, die Kündigungsfristen. Die Kündigungsfrist ist ein Monat. [pause] abschließen, hat abgeschlossen. Ich schließe einen Vertrag ab. [pause] die Versicherung, die Versicherungen. Ich brauche eine Versicherung. [pause] die Haftpflichtversicherung. Die Haftpflichtversicherung zahlt den Schaden. [pause] der Schaden, die Schäden. Wer zahlt den Schaden? [pause] die Bedingung, die Bedingungen. Ich lese zuerst die Bedingungen. [pause] der Anbieter, die Anbieter. Wir wechseln den Anbieter. [pause] wechseln, hat gewechselt. Ich möchte den Tarif wechseln. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,74 @@
+{
+ "job": "a22_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "Mann",
+   "parts": [
+    "Das Stadtmuseum? Das ist nicht weit. Sind Sie zu Fuß unterwegs?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Mann",
+   "parts": [
+    "Dann gehen Sie hier die Straße entlang bis zur Kreuzung. Dort biegen Sie rechts ab."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Mann",
+   "parts": [
+    "Dann gehen Sie an der alten Kirche vorbei und über die Brücke."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Mann",
+   "parts": [
+    "Nach der Brücke sehen Sie einen kleinen Park. Das Museum ist gegenüber vom Park, das große Haus mit dem Turm."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Mann",
+   "parts": [
+    "Ungefähr zehn Minuten. Mit dem Bus geht es auch. Die Linie sechsunddreißig fährt direkt zum Museum."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Mann",
+   "parts": [
+    "Ich glaube, es ist von zehn bis achtzehn Uhr geöffnet. Nur am Montag ist es geschlossen."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Mann",
+   "parts": [
+    "Gern. Viel Spaß im Museum!"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag, Herr Park, hier ist Schneider."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Mann",
+   "parts": [
+    "Vielen Dank für Ihren Anruf. Ich habe Ihr Angebot gelesen und bin einverstanden."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das Stadtmuseum? Das ist nicht weit. Sind Sie zu Fuß unterwegs? [pause] Dann gehen Sie hier die Straße entlang bis zur Kreuzung. Dort biegen Sie rechts ab. [pause] Dann gehen Sie an der alten Kirche vorbei und über die Brücke. [pause] Nach der Brücke sehen Sie einen kleinen Park. Das Museum ist gegenüber vom Park, das große Haus mit dem Turm. [pause] Ungefähr zehn Minuten. Mit dem Bus geht es auch. Die Linie sechsunddreißig fährt direkt zum Museum. [pause] Ich glaube, es ist von zehn bis achtzehn Uhr geöffnet. Nur am Montag ist es geschlossen. [pause] Gern. Viel Spaß im Museum! [pause] Guten Tag, Herr Park, hier ist Schneider. [pause] Vielen Dank für Ihren Anruf. Ich habe Ihr Angebot gelesen und bin einverstanden. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

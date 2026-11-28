@@ -1,0 +1,67 @@
+{
+ "job": "a22s_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-2/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Sie kommen mit der U-Bahn? Dann steigen Sie an der Station Bockenheimer Warte aus."
+   ]
+  },
+  {
+   "pid": "a2-2/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Gehen Sie die Straße entlang bis zur zweiten Kreuzung."
+   ]
+  },
+  {
+   "pid": "a2-2/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Dort biegen Sie links ab und gehen an der Bäckerei vorbei."
+   ]
+  },
+  {
+   "pid": "a2-2/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Das Café ist gegenüber von der Bibliothek. Das Gespräch beginnt um fünfzehn Uhr."
+   ]
+  },
+  {
+   "pid": "a2-2/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Beispiel Mobil, Kundenservice, Lang, guten Tag."
+   ]
+  },
+  {
+   "pid": "a2-2/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Einen Moment, bitte. Ja, Ihre Kündigung ist am Dienstag angekommen. Der Vertrag endet am einunddreißigsten Mai."
+   ]
+  },
+  {
+   "pid": "a2-2/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Ja, sie wird Ihnen diese Woche per E-Mail geschickt. Möchten Sie nicht lieber bei uns bleiben? Wir hätten ein gutes Angebot für Sie."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Der Vertrag hat eine Laufzeit von zwölf Monaten. Danach können Sie jeden Monat kündigen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Sie kommen mit der U-Bahn? Dann steigen Sie an der Station Bockenheimer Warte aus. [pause] Gehen Sie die Straße entlang bis zur zweiten Kreuzung. [pause] Dort biegen Sie links ab und gehen an der Bäckerei vorbei. [pause] Das Café ist gegenüber von der Bibliothek. Das Gespräch beginnt um fünfzehn Uhr. [pause] Beispiel Mobil, Kundenservice, Lang, guten Tag. [pause] Einen Moment, bitte. Ja, Ihre Kündigung ist am Dienstag angekommen. Der Vertrag endet am einunddreißigsten Mai. [pause] Ja, sie wird Ihnen diese Woche per E-Mail geschickt. Möchten Sie nicht lieber bei uns bleiben? Wir hätten ein gutes Angebot für Sie. [pause] Der Vertrag hat eine Laufzeit von zwölf Monaten. Danach können Sie jeden Monat kündigen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "a22_le_03",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a2-2/4",
+   "who": "Lena",
+   "parts": [
+    "Könntest du mir deine IBAN schicken?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Jiu, machst du im Moment Sport?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Dann komm doch zum Hochschulsport! Das ist ein Programm, das die Universität für Studierende anbietet."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Fast alles: Volleyball, Yoga, Klettern, Tanzen. Der Kurs, den ich mache, ist Volleyball."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Dann wäre Yoga gut. Es gibt einen Kurs, der am Mittwochabend stattfindet."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Ja. Niemand muss Erfahrung haben. Und die Trainerin, die den Kurs leitet, ist sehr nett."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Fünfzehn Euro für das ganze Semester. Das ist fast nichts."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Online. Aber mach es schnell! Die Kurse, die beliebt sind, sind nach einem Tag voll."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Ja, meine Freundin Paula. Ich stelle sie dir vor."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Lena",
+   "parts": [
+    "Der Kurs, den ich mache, ist am Mittwochabend."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Könntest du mir deine IBAN schicken? [pause] Jiu, machst du im Moment Sport? [pause] Dann komm doch zum Hochschulsport! Das ist ein Programm, das die Universität für Studierende anbietet. [pause] Fast alles: Volleyball, Yoga, Klettern, Tanzen. Der Kurs, den ich mache, ist Volleyball. [pause] Dann wäre Yoga gut. Es gibt einen Kurs, der am Mittwochabend stattfindet. [pause] Ja. Niemand muss Erfahrung haben. Und die Trainerin, die den Kurs leitet, ist sehr nett. [pause] Fünfzehn Euro für das ganze Semester. Das ist fast nichts. [pause] Online. Aber mach es schnell! Die Kurse, die beliebt sind, sind nach einem Tag voll. [pause] Ja, meine Freundin Paula. Ich stelle sie dir vor. [pause] Der Kurs, den ich mache, ist am Mittwochabend. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

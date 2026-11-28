@@ -1,0 +1,67 @@
+{
+ "job": "a22_fr_09",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Und die Küche? Darf ich sie benutzen?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Verstanden. Gibt es noch etwas Wichtiges?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Gut, dass du es sagst. Danke, Dohyun!"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Ich bin neu hier. Wie wird der Müll getrennt?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Und was mache ich mit den Flaschen?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Kann ich abends Musik hören?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Wann kann ich einkaufen?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Brauche ich eine Fahrkarte für den Bus?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und die Küche? Darf ich sie benutzen? [pause] Verstanden. Gibt es noch etwas Wichtiges? [pause] Gut, dass du es sagst. Danke, Dohyun! [pause] Ich bin neu hier. Wie wird der Müll getrennt? [pause] Und was mache ich mit den Flaschen? [pause] Kann ich abends Musik hören? [pause] Wann kann ich einkaufen? [pause] Brauche ich eine Fahrkarte für den Bus? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

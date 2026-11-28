@@ -1,0 +1,82 @@
+{
+ "job": "a22_n_21",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Ich telefoniere jede Woche mit meinen Eltern."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Wofür interessieren Sie sich? Für Design."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Worauf wartest du? Auf die E-Mail."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Auf wen wartest du? Auf Lena."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Freust du dich auf den Kurs?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Ich würde gern ein Konto eröffnen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Was würde das kosten?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Wir könnten den Tarif wechseln."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Können Sie es mir schicken?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "das Konto, die Konten.",
+    "Ich brauche ein Konto."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich telefoniere jede Woche mit meinen Eltern. [pause] Wofür interessieren Sie sich? Für Design. [pause] Worauf wartest du? Auf die E-Mail. [pause] Auf wen wartest du? Auf Lena. [pause] Freust du dich auf den Kurs? [pause] Ich würde gern ein Konto eröffnen. [pause] Was würde das kosten? [pause] Wir könnten den Tarif wechseln. [pause] Können Sie es mir schicken? [pause] das Konto, die Konten. Ich brauche ein Konto. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

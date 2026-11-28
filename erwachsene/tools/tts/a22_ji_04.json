@@ -1,0 +1,81 @@
+{
+ "job": "a22_ji_04",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a2-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Guten Tag. Ich würde gern ein Konto eröffnen. Ich bin Studentin."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Ja, hier sind sie. Und das ist meine Bescheinigung von der Universität."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Was würde die Kreditkarte kosten?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Dann hätte ich lieber nur die normale Bankkarte. Könnte ich das Konto auch online benutzen?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Wann bekomme ich sie?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Gut. Und ab wann kann ich Geld überweisen? Mein Lohn vom Café kommt Ende April."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Sehr gut. Vielen Dank für die Beratung!"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Jiu",
+   "parts": [
+    "Ich würde gern ein Konto eröffnen."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Nein, leider nicht. Seit April sitze ich nur am Schreibtisch."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Was kann man dort machen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag. Ich würde gern ein Konto eröffnen. Ich bin Studentin. [pause] Ja, hier sind sie. Und das ist meine Bescheinigung von der Universität. [pause] Was würde die Kreditkarte kosten? [pause] Dann hätte ich lieber nur die normale Bankkarte. Könnte ich das Konto auch online benutzen? [pause] Wann bekomme ich sie? [pause] Gut. Und ab wann kann ich Geld überweisen? Mein Lohn vom Café kommt Ende April. [pause] Sehr gut. Vielen Dank für die Beratung! [pause] Ich würde gern ein Konto eröffnen. [pause] Nein, leider nicht. Seit April sitze ich nur am Schreibtisch. [pause] Was kann man dort machen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

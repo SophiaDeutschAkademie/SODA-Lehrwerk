@@ -1,0 +1,81 @@
+{
+ "job": "a22_ma_04",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-2/4",
+   "who": "Mann",
+   "parts": [
+    "Gute Idee. Wo ist der Link? Schick ihn mir bitte."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Mann",
+   "parts": [
+    "Das wäre schön!"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Mann",
+   "parts": [
+    "Wie viel Internet brauchen Sie im Monat?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Mann",
+   "parts": [
+    "Dann würde ich Ihnen diesen Tarif empfehlen: zehn Gigabyte für zwölf Euro im Monat."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Mann",
+   "parts": [
+    "Es gibt keine. Sie können jeden Monat kündigen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Mann",
+   "parts": [
+    "Gern. Haben Sie Ihre Unterlagen dabei?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Mann",
+   "parts": [
+    "Möchten Sie auch eine Kreditkarte?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Mann",
+   "parts": [
+    "Und möchten Sie das Konto online benutzen?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Mann",
+   "parts": [
+    "Natürlich. Haben Sie noch eine Frage?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Mann",
+   "parts": [
+    "Fotoclub am Main, Albers."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gute Idee. Wo ist der Link? Schick ihn mir bitte. [pause] Das wäre schön! [pause] Wie viel Internet brauchen Sie im Monat? [pause] Dann würde ich Ihnen diesen Tarif empfehlen: zehn Gigabyte für zwölf Euro im Monat. [pause] Es gibt keine. Sie können jeden Monat kündigen. [pause] Gern. Haben Sie Ihre Unterlagen dabei? [pause] Möchten Sie auch eine Kreditkarte? [pause] Und möchten Sie das Konto online benutzen? [pause] Natürlich. Haben Sie noch eine Frage? [pause] Fotoclub am Main, Albers. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

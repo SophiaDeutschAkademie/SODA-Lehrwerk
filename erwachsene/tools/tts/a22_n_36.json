@@ -1,0 +1,91 @@
+{
+ "job": "a22_n_36",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "recyceln, hat recycelt.",
+    "Glas wird recycelt."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "die Umwelt.",
+    "Das ist gut für die Umwelt."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "die Ruhezeit, die Ruhezeiten.",
+    "In der Ruhezeit ist es leise im Haus."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "die Nachtruhe.",
+    "Ab zehn Uhr abends ist Nachtruhe."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "der Feiertag, die Feiertage.",
+    "Am Feiertag sind die Geschäfte geschlossen."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "der Lärm.",
+    "Der Lärm stört die Nachbarn."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "bohren, hat gebohrt.",
+    "Am Sonntag wird nicht gebohrt."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "erlaubt.",
+    "Grillen ist im Hof erlaubt."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "verboten.",
+    "Rauchen ist hier verboten."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "sich an die Regeln halten.",
+    "Alle halten sich an die Regeln."
+   ]
+  }
+ ],
+ "script": "Also. [pause] recyceln, hat recycelt. Glas wird recycelt. [pause] die Umwelt. Das ist gut für die Umwelt. [pause] die Ruhezeit, die Ruhezeiten. In der Ruhezeit ist es leise im Haus. [pause] die Nachtruhe. Ab zehn Uhr abends ist Nachtruhe. [pause] der Feiertag, die Feiertage. Am Feiertag sind die Geschäfte geschlossen. [pause] der Lärm. Der Lärm stört die Nachbarn. [pause] bohren, hat gebohrt. Am Sonntag wird nicht gebohrt. [pause] erlaubt. Grillen ist im Hof erlaubt. [pause] verboten. Rauchen ist hier verboten. [pause] sich an die Regeln halten. Alle halten sich an die Regeln. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,86 @@
+{
+ "job": "a22_n_26",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "vorschlagen, du schlägst vor, hat vorgeschlagen.",
+    "Ich schlage einen Termin vor."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "sich entscheiden, hat sich entschieden.",
+    "Ich habe mich für das Girokonto entschieden."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "überlegen, hat überlegt.",
+    "Ich muss noch überlegen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "weniger.",
+    "Ich würde gern weniger zahlen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "normal.",
+    "Ich nehme die normale Bankkarte."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "ich würde, du würdest, er würde."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "ich könnte, du könntest, er könnte."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "ich hätte, du hättest, er hätte."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "ich wäre, du wärst, er wäre."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "konnte, könnte"
+   ]
+  }
+ ],
+ "script": "Also. [pause] vorschlagen, du schlägst vor, hat vorgeschlagen. Ich schlage einen Termin vor. [pause] sich entscheiden, hat sich entschieden. Ich habe mich für das Girokonto entschieden. [pause] überlegen, hat überlegt. Ich muss noch überlegen. [pause] weniger. Ich würde gern weniger zahlen. [pause] normal. Ich nehme die normale Bankkarte. [pause] ich würde, du würdest, er würde. [pause] ich könnte, du könntest, er könnte. [pause] ich hätte, du hättest, er hätte. [pause] ich wäre, du wärst, er wäre. [pause] konnte, könnte [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

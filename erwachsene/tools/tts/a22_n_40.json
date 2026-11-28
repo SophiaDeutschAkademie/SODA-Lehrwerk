@@ -1,0 +1,81 @@
+{
+ "job": "a22_n_40",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "wird, werden"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "gelb, die gelbe Tonne"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "der Tag, die Tage"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Das Pfand wird am Montag zurückgegeben."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Die Flaschen werden im Supermarkt zurückgegeben."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Am Sonntag sind die Geschäfte geschlossen. Deshalb kaufe ich am Samstag ein."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "In der Kantine wird mit Karte bezahlt, deshalb brauchst du kein Bargeld."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Ich war neu hier, deshalb habe ich viel gefragt."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Es regnet. Trotzdem gehe ich spazieren."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Obwohl es regnet, gehe ich spazieren."
+   ]
+  }
+ ],
+ "script": "Also. [pause] wird, werden [pause] gelb, die gelbe Tonne [pause] der Tag, die Tage [pause] Das Pfand wird am Montag zurückgegeben. [pause] Die Flaschen werden im Supermarkt zurückgegeben. [pause] Am Sonntag sind die Geschäfte geschlossen. Deshalb kaufe ich am Samstag ein. [pause] In der Kantine wird mit Karte bezahlt, deshalb brauchst du kein Bargeld. [pause] Ich war neu hier, deshalb habe ich viel gefragt. [pause] Es regnet. Trotzdem gehe ich spazieren. [pause] Obwohl es regnet, gehe ich spazieren. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

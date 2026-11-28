@@ -1,0 +1,81 @@
+{
+ "job": "a22_do_01",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Guten Tag. Ich brauche für morgen eine Fahrkarte nach Hamburg, hin und zurück."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Am Morgen. Ich habe um zwölf Uhr einen Termin in Hamburg."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Das passt gut. Und zurück?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Gut. Ich möchte auch einen Sitzplatz reservieren. Am Fenster, wenn es geht."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Wie bitte? Und jetzt?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Dann komme ich zu spät zu meinem Termin. Gibt es keine andere Verbindung?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Gut, dann nehme ich den Zug um acht. Ich rufe gleich meinen Kunden an."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Mein Zug fällt aus. Ich komme eine Stunde später."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Der Zug fällt heute aus."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Dohyun",
+   "parts": [
+    "Sehr gut. Am Anfang war es schwer, aber jetzt verstehe ich fast alles."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag. Ich brauche für morgen eine Fahrkarte nach Hamburg, hin und zurück. [pause] Am Morgen. Ich habe um zwölf Uhr einen Termin in Hamburg. [pause] Das passt gut. Und zurück? [pause] Gut. Ich möchte auch einen Sitzplatz reservieren. Am Fenster, wenn es geht. [pause] Wie bitte? Und jetzt? [pause] Dann komme ich zu spät zu meinem Termin. Gibt es keine andere Verbindung? [pause] Gut, dann nehme ich den Zug um acht. Ich rufe gleich meinen Kunden an. [pause] Mein Zug fällt aus. Ich komme eine Stunde später. [pause] Der Zug fällt heute aus. [pause] Sehr gut. Am Anfang war es schwer, aber jetzt verstehe ich fast alles. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

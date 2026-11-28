@@ -1,0 +1,81 @@
+{
+ "job": "a22_fr_07",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-2/4",
+   "who": "Frau",
+   "parts": [
+    "Dann würde ich Ihnen diesen Tarif empfehlen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Frau",
+   "parts": [
+    "Fünf Euro im Monat."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "Frau",
+   "parts": [
+    "Ein Jahr. Möchten Sie den Vertrag heute abschließen?"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Frau",
+   "parts": [
+    "Hallo Jiu, hier ist Paula. Lena hat mir gesagt, dass du Yoga ausprobieren möchtest."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Frau",
+   "parts": [
+    "Der Kurs, den ich mache, ist am Mittwoch um achtzehn Uhr in der Sporthalle zwei."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Frau",
+   "parts": [
+    "Du musst nichts mitbringen, nur bequeme Kleidung."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "Frau",
+   "parts": [
+    "Nach dem Kurs gehen wir immer zusammen etwas trinken. Komm doch mit!"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Entschuldigung, wohnst du auch hier? Ich bin Mai. Ich bin letzte Woche eingezogen."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Ja, bitte. In welche Tonne wird das Papier geworfen?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Frau",
+   "parts": [
+    "Und die Verpackungen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Dann würde ich Ihnen diesen Tarif empfehlen. [pause] Fünf Euro im Monat. [pause] Ein Jahr. Möchten Sie den Vertrag heute abschließen? [pause] Hallo Jiu, hier ist Paula. Lena hat mir gesagt, dass du Yoga ausprobieren möchtest. [pause] Der Kurs, den ich mache, ist am Mittwoch um achtzehn Uhr in der Sporthalle zwei. [pause] Du musst nichts mitbringen, nur bequeme Kleidung. [pause] Nach dem Kurs gehen wir immer zusammen etwas trinken. Komm doch mit! [pause] Entschuldigung, wohnst du auch hier? Ich bin Mai. Ich bin letzte Woche eingezogen. [pause] Ja, bitte. In welche Tonne wird das Papier geworfen? [pause] Und die Verpackungen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

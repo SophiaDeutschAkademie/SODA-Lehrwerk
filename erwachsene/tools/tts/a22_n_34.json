@@ -1,0 +1,86 @@
+{
+ "job": "a22_n_34",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "Muss ich etwas bezahlen? Nein, das kostet nichts."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Der Müll wird getrennt."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Die Flaschen werden zurückgegeben."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Deshalb kaufe ich am Samstag ein."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "Trotzdem gefällt es mir hier."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "die Mülltrennung.",
+    "Die Mülltrennung ist nicht kompliziert."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "trennen, hat getrennt.",
+    "Wir trennen den Müll."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "die Tonne, die Tonnen.",
+    "Papier kommt in die grüne Tonne."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "der Restmüll.",
+    "Der Restmüll kommt in die graue Tonne."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "N",
+   "parts": [
+    "der Biomüll.",
+    "Der Biomüll wird am Dienstag abgeholt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Muss ich etwas bezahlen? Nein, das kostet nichts. [pause] Der Müll wird getrennt. [pause] Die Flaschen werden zurückgegeben. [pause] Deshalb kaufe ich am Samstag ein. [pause] Trotzdem gefällt es mir hier. [pause] die Mülltrennung. Die Mülltrennung ist nicht kompliziert. [pause] trennen, hat getrennt. Wir trennen den Müll. [pause] die Tonne, die Tonnen. Papier kommt in die grüne Tonne. [pause] der Restmüll. Der Restmüll kommt in die graue Tonne. [pause] der Biomüll. Der Biomüll wird am Dienstag abgeholt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,60 @@
+{
+ "job": "a22_le_01",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "Lena",
+   "parts": [
+    "Jiu, hast du am Samstag Zeit? Ich möchte einen Ausflug nach Marburg machen."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Lena",
+   "parts": [
+    "Im Norden von Frankfurt. Mit dem Regionalzug dauert es ungefähr eine Stunde."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Lena",
+   "parts": [
+    "Für mich nichts. Mit dem Semesterticket fahre ich kostenlos mit den Regionalzügen. Du brauchst ein Ticket."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Lena",
+   "parts": [
+    "Eine schöne Altstadt und ein berühmtes Schloss. Die alten Häuser sind wirklich toll."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Lena",
+   "parts": [
+    "Nein. Vom Bahnhof gehen wir über die Brücke und dann durch die Altstadt. Wir gehen am Rathaus vorbei und dann hinauf zum Schloss."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Lena",
+   "parts": [
+    "Ja, sehr viele! Aber vom Schloss sieht man die ganze Stadt."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Lena",
+   "parts": [
+    "Der Zug fährt um neun Uhr zwölf von Gleis vierzehn ab. Wir treffen uns um halb neun am Hauptbahnhof."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Jiu, hast du am Samstag Zeit? Ich möchte einen Ausflug nach Marburg machen. [pause] Im Norden von Frankfurt. Mit dem Regionalzug dauert es ungefähr eine Stunde. [pause] Für mich nichts. Mit dem Semesterticket fahre ich kostenlos mit den Regionalzügen. Du brauchst ein Ticket. [pause] Eine schöne Altstadt und ein berühmtes Schloss. Die alten Häuser sind wirklich toll. [pause] Nein. Vom Bahnhof gehen wir über die Brücke und dann durch die Altstadt. Wir gehen am Rathaus vorbei und dann hinauf zum Schloss. [pause] Ja, sehr viele! Aber vom Schloss sieht man die ganze Stadt. [pause] Der Zug fährt um neun Uhr zwölf von Gleis vierzehn ab. Wir treffen uns um halb neun am Hauptbahnhof. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

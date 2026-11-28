@@ -1,0 +1,81 @@
+{
+ "job": "a22_n_27",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "hatte, hätte"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "wurde, würde"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Ich hätte gern einen Termin. Könnten Sie mir helfen?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Was würden Sie mir empfehlen?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Ich würde zuerst die Bedingungen lesen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Ich hätte gern einen neuen Tarif."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Wir schicken sie Ihnen per Post."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "Schick ihn mir bitte!"
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "Ich suche einen Verein, der am Abend trainiert."
+   ]
+  },
+  {
+   "pid": "a2-2/5",
+   "who": "N",
+   "parts": [
+    "Der Kurs, den ich mache, ist Volleyball."
+   ]
+  }
+ ],
+ "script": "Also. [pause] hatte, hätte [pause] wurde, würde [pause] Ich hätte gern einen Termin. Könnten Sie mir helfen? [pause] Was würden Sie mir empfehlen? [pause] Ich würde zuerst die Bedingungen lesen. [pause] Ich hätte gern einen neuen Tarif. [pause] Wir schicken sie Ihnen per Post. [pause] Schick ihn mir bitte! [pause] Ich suche einen Verein, der am Abend trainiert. [pause] Der Kurs, den ich mache, ist Volleyball. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

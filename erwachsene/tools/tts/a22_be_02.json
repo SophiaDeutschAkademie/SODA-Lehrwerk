@@ -1,0 +1,81 @@
+{
+ "job": "a22_be_02",
+ "who": "Becker",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a2-2/3",
+   "who": "Becker",
+   "parts": [
+    "Das stimmt. Ärgern Sie sich über das Wetter?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Becker",
+   "parts": [
+    "Da sind Sie nicht allein. Woran denken Sie oft?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Becker",
+   "parts": [
+    "Und wovon träumen Sie?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Becker",
+   "parts": [
+    "Ein schöner Traum. Kümmern Sie sich schon um die Pläne?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Becker",
+   "parts": [
+    "Dann üben wir jetzt weiter. Ich warte schon auf Ihre Hausaufgaben!"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Becker",
+   "parts": [
+    "Frau Lee, Sie leben jetzt schon länger in Deutschland. Was ist anders als in Korea?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Becker",
+   "parts": [
+    "War das am Anfang schwierig?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Becker",
+   "parts": [
+    "Und gefällt Ihnen der ruhige Sonntag jetzt?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Becker",
+   "parts": [
+    "Was ist noch anders?"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Becker",
+   "parts": [
+    "Vermissen Sie das?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das stimmt. Ärgern Sie sich über das Wetter? [pause] Da sind Sie nicht allein. Woran denken Sie oft? [pause] Und wovon träumen Sie? [pause] Ein schöner Traum. Kümmern Sie sich schon um die Pläne? [pause] Dann üben wir jetzt weiter. Ich warte schon auf Ihre Hausaufgaben! [pause] Frau Lee, Sie leben jetzt schon länger in Deutschland. Was ist anders als in Korea? [pause] War das am Anfang schwierig? [pause] Und gefällt Ihnen der ruhige Sonntag jetzt? [pause] Was ist noch anders? [pause] Vermissen Sie das? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

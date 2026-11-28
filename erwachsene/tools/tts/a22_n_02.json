@@ -1,0 +1,90 @@
+{
+ "job": "a22_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Durchsage, die Durchsagen.",
+    "Hast du die Durchsage verstanden?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "der Fahrplan, die Fahrpläne.",
+    "Der Fahrplan hängt am Bahnsteig."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "der Regionalzug, die Regionalzüge.",
+    "Der Regionalzug hält in Marburg."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "der ICE, die ICEs.",
+    "Der ICE ist schneller als der Regionalzug."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "der Sitzplatz, die Sitzplätze.",
+    "Ich möchte einen Sitzplatz reservieren."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "das Ticket, die Tickets.",
+    "Ich kaufe das Ticket in der App."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "das Semesterticket.",
+    "Mit dem Semesterticket fahre ich kostenlos."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Rückfahrt, die Rückfahrten.",
+    "Die Rückfahrt ist am Sonntag."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "ausfallen."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "kostenlos.",
+    "Der Eintritt ist kostenlos."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Durchsage, die Durchsagen. Hast du die Durchsage verstanden? [pause] der Fahrplan, die Fahrpläne. Der Fahrplan hängt am Bahnsteig. [pause] der Regionalzug, die Regionalzüge. Der Regionalzug hält in Marburg. [pause] der ICE, die ICEs. Der ICE ist schneller als der Regionalzug. [pause] der Sitzplatz, die Sitzplätze. Ich möchte einen Sitzplatz reservieren. [pause] das Ticket, die Tickets. Ich kaufe das Ticket in der App. [pause] das Semesterticket. Mit dem Semesterticket fahre ich kostenlos. [pause] die Rückfahrt, die Rückfahrten. Die Rückfahrt ist am Sonntag. [pause] ausfallen. [pause] kostenlos. Der Eintritt ist kostenlos. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

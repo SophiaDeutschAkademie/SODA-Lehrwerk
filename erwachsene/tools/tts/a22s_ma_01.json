@@ -1,0 +1,46 @@
+{
+ "job": "a22s_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Gehen Sie über die Brücke und dann an der Kirche vorbei. Das Museum ist gegenüber vom Rathaus."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag, hier ist Schneider von der Firma Schneider und Partner. Kann ich bitte Frau Hoffmann sprechen?"
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Ja, bitte. Es geht um den Termin am Donnerstag. Ich kann erst um elf Uhr kommen, nicht um neun."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Ja, bitte heute Nachmittag. Sie hat meine Nummer."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Entschuldigung, wie komme ich zum Bahnhof?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gehen Sie über die Brücke und dann an der Kirche vorbei. Das Museum ist gegenüber vom Rathaus. [pause] Guten Tag, hier ist Schneider von der Firma Schneider und Partner. Kann ich bitte Frau Hoffmann sprechen? [pause] Ja, bitte. Es geht um den Termin am Donnerstag. Ich kann erst um elf Uhr kommen, nicht um neun. [pause] Ja, bitte heute Nachmittag. Sie hat meine Nummer. [pause] Entschuldigung, wie komme ich zum Bahnhof? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

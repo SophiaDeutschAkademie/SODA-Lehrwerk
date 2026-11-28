@@ -1,0 +1,88 @@
+{
+ "job": "a22_n_15",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Ich warte auf Ihre Antwort."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Ich interessiere mich für den Kurs."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "Können Sie mich bitte zurückrufen?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "der Anruf, die Anrufe.",
+    "Danke für Ihren Anruf."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "zurückrufen, hat zurückgerufen.",
+    "Können Sie mich zurückrufen?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "verbinden, hat verbunden.",
+    "Ich verbinde Sie mit Herrn Schneider."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "erreichen, hat erreicht.",
+    "Sie erreichen mich bis siebzehn Uhr."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "besetzt.",
+    "Die Nummer ist besetzt."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Nachricht, die Nachrichten.",
+    "Ich habe eine Nachricht für Sie."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "hinterlassen, du hinterlässt, hat hinterlassen.",
+    "Ich möchte eine Nachricht hinterlassen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich warte auf Ihre Antwort. [pause] Ich interessiere mich für den Kurs. [pause] Können Sie mich bitte zurückrufen? [pause] der Anruf, die Anrufe. Danke für Ihren Anruf. [pause] zurückrufen, hat zurückgerufen. Können Sie mich zurückrufen? [pause] verbinden, hat verbunden. Ich verbinde Sie mit Herrn Schneider. [pause] erreichen, hat erreicht. Sie erreichen mich bis siebzehn Uhr. [pause] besetzt. Die Nummer ist besetzt. [pause] die Nachricht, die Nachrichten. Ich habe eine Nachricht für Sie. [pause] hinterlassen, du hinterlässt, hat hinterlassen. Ich möchte eine Nachricht hinterlassen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

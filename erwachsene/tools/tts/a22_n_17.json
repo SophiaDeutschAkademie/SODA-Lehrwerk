@@ -1,0 +1,90 @@
+{
+ "job": "a22_n_17",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "der Anhang, die Anhänge.",
+    "Das Formular ist im Anhang."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Antwort, die Antworten."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Information, die Informationen.",
+    "Ich brauche Informationen zum Kurs."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "sich anmelden, hat sich angemeldet.",
+    "Ich möchte mich für den Kurs anmelden."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "teilnehmen, du nimmst teil, hat teilgenommen.",
+    "Ich möchte an dem Kurs teilnehmen."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "der Teilnehmer, die Teilnehmer.",
+    "Der Kurs hat zwölf Teilnehmer."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "der Einstufungstest, die Einstufungstests.",
+    "Vor dem Kurs machen Sie einen Einstufungstest."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "die Stufe, die Stufen.",
+    "Welche Stufe ist richtig für mich?"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "das Zertifikat, die Zertifikate.",
+    "Am Ende bekommen Sie ein Zertifikat."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "N",
+   "parts": [
+    "stattfinden, hat stattgefunden.",
+    "Der Kurs findet am Abend statt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Anhang, die Anhänge. Das Formular ist im Anhang. [pause] die Antwort, die Antworten. [pause] die Information, die Informationen. Ich brauche Informationen zum Kurs. [pause] sich anmelden, hat sich angemeldet. Ich möchte mich für den Kurs anmelden. [pause] teilnehmen, du nimmst teil, hat teilgenommen. Ich möchte an dem Kurs teilnehmen. [pause] der Teilnehmer, die Teilnehmer. Der Kurs hat zwölf Teilnehmer. [pause] der Einstufungstest, die Einstufungstests. Vor dem Kurs machen Sie einen Einstufungstest. [pause] die Stufe, die Stufen. Welche Stufe ist richtig für mich? [pause] das Zertifikat, die Zertifikate. Am Ende bekommen Sie ein Zertifikat. [pause] stattfinden, hat stattgefunden. Der Kurs findet am Abend statt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

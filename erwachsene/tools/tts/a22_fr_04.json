@@ -1,0 +1,74 @@
+{
+ "job": "a22_fr_04",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Sprachenzentrum der Universität, Meyer, guten Tag."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Gern. Wofür interessieren Sie sich genau? Wir haben Kurse von A2 bis C1."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Der B1-Kurs findet am Dienstag und Donnerstag von achtzehn bis zwanzig Uhr statt. Er beginnt am dreizehnten April."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Für Studierende ist er kostenlos. Sie müssen aber vorher einen Einstufungstest machen."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Online. Ich schicke Ihnen den Link per E-Mail."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Bis zum ersten April. Die Kurse sind schnell voll, also warten Sie nicht zu lange."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Ja, wenn Sie an allen Terminen teilnehmen und die Prüfung bestehen."
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Gern. Wir freuen uns auf Sie!"
+   ]
+  },
+  {
+   "pid": "a2-2/3",
+   "who": "Frau",
+   "parts": [
+    "Firma Schneider und Partner, Vogt, guten Tag."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Sprachenzentrum der Universität, Meyer, guten Tag. [pause] Gern. Wofür interessieren Sie sich genau? Wir haben Kurse von A2 bis C1. [pause] Der B1-Kurs findet am Dienstag und Donnerstag von achtzehn bis zwanzig Uhr statt. Er beginnt am dreizehnten April. [pause] Für Studierende ist er kostenlos. Sie müssen aber vorher einen Einstufungstest machen. [pause] Online. Ich schicke Ihnen den Link per E-Mail. [pause] Bis zum ersten April. Die Kurse sind schnell voll, also warten Sie nicht zu lange. [pause] Ja, wenn Sie an allen Terminen teilnehmen und die Prüfung bestehen. [pause] Gern. Wir freuen uns auf Sie! [pause] Firma Schneider und Partner, Vogt, guten Tag. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

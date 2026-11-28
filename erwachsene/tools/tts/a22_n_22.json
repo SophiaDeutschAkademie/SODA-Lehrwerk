@@ -1,0 +1,91 @@
+{
+ "job": "a22_n_22",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "das Girokonto, die Girokonten.",
+    "Das Girokonto ist für Studierende kostenlos."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "eröffnen, hat eröffnet.",
+    "Ich habe ein Konto eröffnet."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die Bankkarte, die Bankkarten.",
+    "Die Bankkarte kommt per Post."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die Kreditkarte, die Kreditkarten.",
+    "Kann ich mit Kreditkarte zahlen?"
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die PIN.",
+    "Ich habe meine PIN vergessen."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die IBAN.",
+    "Meine IBAN beginnt mit DE."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "überweisen, hat überwiesen.",
+    "Ich überweise die Miete."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "die Überweisung, die Überweisungen.",
+    "Die Überweisung dauert einen Tag."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "abheben, hat abgehoben.",
+    "Ich hebe hundert Euro ab."
+   ]
+  },
+  {
+   "pid": "a2-2/4",
+   "who": "N",
+   "parts": [
+    "der Geldautomat, die Geldautomaten.",
+    "Der Geldautomat ist neben dem Eingang."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Girokonto, die Girokonten. Das Girokonto ist für Studierende kostenlos. [pause] eröffnen, hat eröffnet. Ich habe ein Konto eröffnet. [pause] die Bankkarte, die Bankkarten. Die Bankkarte kommt per Post. [pause] die Kreditkarte, die Kreditkarten. Kann ich mit Kreditkarte zahlen? [pause] die PIN. Ich habe meine PIN vergessen. [pause] die IBAN. Meine IBAN beginnt mit DE. [pause] überweisen, hat überwiesen. Ich überweise die Miete. [pause] die Überweisung, die Überweisungen. Die Überweisung dauert einen Tag. [pause] abheben, hat abgehoben. Ich hebe hundert Euro ab. [pause] der Geldautomat, die Geldautomaten. Der Geldautomat ist neben dem Eingang. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

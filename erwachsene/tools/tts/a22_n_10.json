@@ -1,0 +1,90 @@
+{
+ "job": "a22_n_10",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "bezahlen, hat bezahlt.",
+    "Die Firma bezahlt den Kurs."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "pro.",
+    "Ich arbeite zehn Stunden pro Woche."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Stellenanzeige, die Stellenanzeigen.",
+    "Ich habe eine Stellenanzeige gelesen."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Bewerbung, die Bewerbungen.",
+    "Ich schreibe heute die Bewerbung."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "sich bewerben, du bewirbst dich, hat sich beworben."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "das Vorstellungsgespräch, die Vorstellungsgespräche.",
+    "Ich habe morgen ein Vorstellungsgespräch."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "das Zeugnis, die Zeugnisse.",
+    "Ich schicke meine Zeugnisse mit."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Erfahrung, die Erfahrungen.",
+    "Ich habe keine Erfahrung."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "die Aushilfe, die Aushilfen.",
+    "Das Café sucht eine Aushilfe."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "N",
+   "parts": [
+    "bedienen, hat bedient.",
+    "Ich bediene die Gäste."
+   ]
+  }
+ ],
+ "script": "Also. [pause] bezahlen, hat bezahlt. Die Firma bezahlt den Kurs. [pause] pro. Ich arbeite zehn Stunden pro Woche. [pause] die Stellenanzeige, die Stellenanzeigen. Ich habe eine Stellenanzeige gelesen. [pause] die Bewerbung, die Bewerbungen. Ich schreibe heute die Bewerbung. [pause] sich bewerben, du bewirbst dich, hat sich beworben. [pause] das Vorstellungsgespräch, die Vorstellungsgespräche. Ich habe morgen ein Vorstellungsgespräch. [pause] das Zeugnis, die Zeugnisse. Ich schicke meine Zeugnisse mit. [pause] die Erfahrung, die Erfahrungen. Ich habe keine Erfahrung. [pause] die Aushilfe, die Aushilfen. Das Café sucht eine Aushilfe. [pause] bedienen, hat bedient. Ich bediene die Gäste. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

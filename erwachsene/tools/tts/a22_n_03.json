@@ -1,0 +1,90 @@
+{
+ "job": "a22_n_03",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "direkt.",
+    "Der Zug fährt direkt nach Hamburg."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Kreuzung, die Kreuzungen.",
+    "An der Kreuzung gehen Sie rechts."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Richtung, die Richtungen.",
+    "Fahren Sie in Richtung Zentrum."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Kirche, die Kirchen."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Fußgängerzone, die Fußgängerzonen.",
+    "In der Fußgängerzone gibt es viele Geschäfte."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "das Schild, die Schilder.",
+    "Das Schild zeigt den Weg zum Schloss."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "der Parkplatz, die Parkplätze.",
+    "Der Parkplatz ist hinter dem Bahnhof."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "die Autobahn, die Autobahnen.",
+    "Auf der Autobahn ist Stau."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "abbiegen, ist abgebogen.",
+    "Biegen Sie an der Ampel links ab."
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "N",
+   "parts": [
+    "überqueren, hat überquert.",
+    "Wir überqueren die Straße."
+   ]
+  }
+ ],
+ "script": "Also. [pause] direkt. Der Zug fährt direkt nach Hamburg. [pause] die Kreuzung, die Kreuzungen. An der Kreuzung gehen Sie rechts. [pause] die Richtung, die Richtungen. Fahren Sie in Richtung Zentrum. [pause] die Kirche, die Kirchen. [pause] die Fußgängerzone, die Fußgängerzonen. In der Fußgängerzone gibt es viele Geschäfte. [pause] das Schild, die Schilder. Das Schild zeigt den Weg zum Schloss. [pause] der Parkplatz, die Parkplätze. Der Parkplatz ist hinter dem Bahnhof. [pause] die Autobahn, die Autobahnen. Auf der Autobahn ist Stau. [pause] abbiegen, ist abgebogen. Biegen Sie an der Ampel links ab. [pause] überqueren, hat überquert. Wir überqueren die Straße. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,53 @@
+{
+ "job": "a22_ji_06",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a2-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Du bezahlst beim Kaufen fünfundzwanzig Cent mehr. Die Flasche wird im Supermarkt zurückgegeben, und du bekommst das Geld zurück."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Genau. Noch etwas: Ab zweiundzwanzig Uhr ist Nachtruhe. Dann wird keine Wäsche mehr gewaschen und keine laute Musik gehört."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Ja. Und am Sonntag ist es den ganzen Tag ruhig. Die Geschäfte sind auch geschlossen."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Das war bei mir am Anfang auch so. Trotzdem lernt man es schnell. Frag mich einfach!"
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Der Biomüll wird am Dienstag abgeholt."
+   ]
+  },
+  {
+   "pid": "a2-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Der Müll wird getrennt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Du bezahlst beim Kaufen fünfundzwanzig Cent mehr. Die Flasche wird im Supermarkt zurückgegeben, und du bekommst das Geld zurück. [pause] Genau. Noch etwas: Ab zweiundzwanzig Uhr ist Nachtruhe. Dann wird keine Wäsche mehr gewaschen und keine laute Musik gehört. [pause] Ja. Und am Sonntag ist es den ganzen Tag ruhig. Die Geschäfte sind auch geschlossen. [pause] Das war bei mir am Anfang auch so. Trotzdem lernt man es schnell. Frag mich einfach! [pause] Der Biomüll wird am Dienstag abgeholt. [pause] Der Müll wird getrennt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

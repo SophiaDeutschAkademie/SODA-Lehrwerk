@@ -1,0 +1,81 @@
+{
+ "job": "a22_ji_01",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a2-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Gern! Wo liegt Marburg?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Und was kostet die Fahrt?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Kein Problem, ich kaufe es in der App. Was gibt es in Marburg?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Ist das Schloss weit vom Bahnhof?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Hinauf? Gibt es viele Treppen?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Schön. Wann fahren wir ab?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Und wann fahren wir zurück?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Super. Ich freue mich schon!"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Wohin fahren wir am Samstag?"
+   ]
+  },
+  {
+   "pid": "a2-2/1",
+   "who": "Jiu",
+   "parts": [
+    "Wie lange dauert die Fahrt?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gern! Wo liegt Marburg? [pause] Und was kostet die Fahrt? [pause] Kein Problem, ich kaufe es in der App. Was gibt es in Marburg? [pause] Ist das Schloss weit vom Bahnhof? [pause] Hinauf? Gibt es viele Treppen? [pause] Schön. Wann fahren wir ab? [pause] Und wann fahren wir zurück? [pause] Super. Ich freue mich schon! [pause] Wohin fahren wir am Samstag? [pause] Wie lange dauert die Fahrt? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

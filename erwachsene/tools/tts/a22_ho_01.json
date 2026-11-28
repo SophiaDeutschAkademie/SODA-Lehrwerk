@@ -1,0 +1,67 @@
+{
+ "job": "a22_ho_01",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a2-2/2",
+   "who": "Hoffmann",
+   "parts": [
+    "Herr Park, Sie sind jetzt seit über einem Jahr bei uns. Wie gefällt Ihnen die Arbeit?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Hoffmann",
+   "parts": [
+    "Das freut mich. Was sind im Moment Ihre Aufgaben?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Hoffmann",
+   "parts": [
+    "Und was möchten Sie in diesem Jahr lernen?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Hoffmann",
+   "parts": [
+    "Das ist ein guter Plan. Die Firma wird die Weiterbildung bezahlen."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Hoffmann",
+   "parts": [
+    "Sie müssen aber versuchen, noch mehr Deutsch zu sprechen, auch am Telefon."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Hoffmann",
+   "parts": [
+    "Sehr gut. Und im Sommer werden wir einen neuen Kunden in Hamburg bekommen. Haben Sie Lust, das Projekt zu übernehmen?"
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Hoffmann",
+   "parts": [
+    "Schön. Dann sprechen wir nächste Woche über die Details."
+   ]
+  },
+  {
+   "pid": "a2-2/2",
+   "who": "Hoffmann",
+   "parts": [
+    "Die Firma wird die Weiterbildung bezahlen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Herr Park, Sie sind jetzt seit über einem Jahr bei uns. Wie gefällt Ihnen die Arbeit? [pause] Das freut mich. Was sind im Moment Ihre Aufgaben? [pause] Und was möchten Sie in diesem Jahr lernen? [pause] Das ist ein guter Plan. Die Firma wird die Weiterbildung bezahlen. [pause] Sie müssen aber versuchen, noch mehr Deutsch zu sprechen, auch am Telefon. [pause] Sehr gut. Und im Sommer werden wir einen neuen Kunden in Hamburg bekommen. Haben Sie Lust, das Projekt zu übernehmen? [pause] Schön. Dann sprechen wir nächste Woche über die Details. [pause] Die Firma wird die Weiterbildung bezahlen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

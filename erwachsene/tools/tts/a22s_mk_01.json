@@ -1,0 +1,39 @@
+{
+ "job": "a22s_mk_01",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Kessler Technik, Weber, guten Tag."
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Frau Hoffmann ist leider in einer Besprechung. Kann ich ihr etwas ausrichten?"
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Donnerstag um elf, nicht um neun. Ich sage es ihr. Soll sie Sie zurückrufen?"
+   ]
+  },
+  {
+   "pid": "a2-2/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Was machst du in deiner Freizeit?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Kessler Technik, Weber, guten Tag. [pause] Frau Hoffmann ist leider in einer Besprechung. Kann ich ihr etwas ausrichten? [pause] Donnerstag um elf, nicht um neun. Ich sage es ihr. Soll sie Sie zurückrufen? [pause] Was machst du in deiner Freizeit? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}
