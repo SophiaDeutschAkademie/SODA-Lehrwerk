@@ -1,0 +1,39 @@
+{
+ "job": "b11s_ma_02",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "An einer App für eine Buchhandlung. Die App wurde letztes Jahr entwickelt und wird jetzt verbessert."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Sie testen die neuen Funktionen. Jeder Fehler muss in eine Liste eingetragen werden."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Mit Frau Aydin. Sie ist die Kollegin, die das Projekt leitet. Montags um zehn wird die Woche besprochen."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Kundenservice, guten Tag. Was kann ich für Sie tun?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] An einer App für eine Buchhandlung. Die App wurde letztes Jahr entwickelt und wird jetzt verbessert. [pause] Sie testen die neuen Funktionen. Jeder Fehler muss in eine Liste eingetragen werden. [pause] Mit Frau Aydin. Sie ist die Kollegin, die das Projekt leitet. Montags um zehn wird die Woche besprochen. [pause] Kundenservice, guten Tag. Was kann ich für Sie tun? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

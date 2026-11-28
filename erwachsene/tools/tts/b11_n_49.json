@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_49",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "der Zählerstand, die Zählerstände.",
+    "Der Zählerstand ist falsch."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "der Verbrauch.",
+    "Unser Verbrauch war nicht höher."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "die Nachzahlung, die Nachzahlungen.",
+    "Die Nachzahlung ist sehr hoch."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "das Recht, die Rechte.",
+    "Das ist mein Recht."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "die Verbraucherzentrale, die Verbraucherzentralen.",
+    "Die Verbraucherzentrale hilft bei Problemen mit Rechnungen."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "der Beleg, die Belege.",
+    "Haben Sie einen Beleg?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "aufbewahren, hat aufbewahrt.",
+    "Bewahren Sie die Rechnung gut auf."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "wegen.",
+    "Ich rufe wegen der Rechnung an."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "trotz.",
+    "Trotz des Rabatts ist es teuer."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "während.",
+    "Während des Semesters habe ich wenig Zeit."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Zählerstand, die Zählerstände. Der Zählerstand ist falsch. [pause] der Verbrauch. Unser Verbrauch war nicht höher. [pause] die Nachzahlung, die Nachzahlungen. Die Nachzahlung ist sehr hoch. [pause] das Recht, die Rechte. Das ist mein Recht. [pause] die Verbraucherzentrale, die Verbraucherzentralen. Die Verbraucherzentrale hilft bei Problemen mit Rechnungen. [pause] der Beleg, die Belege. Haben Sie einen Beleg? [pause] aufbewahren, hat aufbewahrt. Bewahren Sie die Rechnung gut auf. [pause] wegen. Ich rufe wegen der Rechnung an. [pause] trotz. Trotz des Rabatts ist es teuer. [pause] während. Während des Semesters habe ich wenig Zeit. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,87 @@
+{
+ "job": "b11_n_08",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "Das ist der Nachbar, dem wir oft helfen."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "Felix ist ein Mitbewohner, mit dem man gut reden kann."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "An deiner Stelle würde ich mit ihm sprechen."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "Das ist ein Kompromiss, mit dem alle leben können."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "die Wohngemeinschaft, die Wohngemeinschaften.",
+    "Ich wohne in einer Wohngemeinschaft."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "das Wohnheim, die Wohnheime.",
+    "Viele Studierende wohnen im Wohnheim."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "die Hausarbeit.",
+    "Wir teilen die Hausarbeit."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "sich abwechseln, hat sich abgewechselt.",
+    "Wir wechseln uns jede Woche ab."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "teilen, hat geteilt.",
+    "Wir teilen die Küche und das Bad."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "spülen, hat gespült.",
+    "Wer spült heute?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist der Nachbar, dem wir oft helfen. [pause] Felix ist ein Mitbewohner, mit dem man gut reden kann. [pause] An deiner Stelle würde ich mit ihm sprechen. [pause] Das ist ein Kompromiss, mit dem alle leben können. [pause] die Wohngemeinschaft, die Wohngemeinschaften. Ich wohne in einer Wohngemeinschaft. [pause] das Wohnheim, die Wohnheime. Viele Studierende wohnen im Wohnheim. [pause] die Hausarbeit. Wir teilen die Hausarbeit. [pause] sich abwechseln, hat sich abgewechselt. Wir wechseln uns jede Woche ab. [pause] teilen, hat geteilt. Wir teilen die Küche und das Bad. [pause] spülen, hat gespült. Wer spült heute? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

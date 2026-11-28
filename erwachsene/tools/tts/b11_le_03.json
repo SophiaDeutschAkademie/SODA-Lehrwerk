@@ -1,0 +1,67 @@
+{
+ "job": "b11_le_03",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "Lena",
+   "parts": [
+    "Wie wäre es mit dieser Regel: Unter der Woche geht der Besuch um zweiundzwanzig Uhr, und man sagt vorher Bescheid."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Lena",
+   "parts": [
+    "Dann schreiben wir die Regeln nach dem Gespräch auf, damit sie später niemand vergisst."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Lena",
+   "parts": [
+    "Wir haben uns auf drei Regeln geeinigt."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Lena",
+   "parts": [
+    "Hast du schon die Nachrichten gelesen? Der Stromausfall von gestern steht in der Zeitung."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Lena",
+   "parts": [
+    "Ich lese dir vor: Gestern Abend fiel in Bockenheim um kurz nach neun der Strom aus. Etwa fünftausend Haushalte hatten zwei Stunden lang kein Licht."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Lena",
+   "parts": [
+    "Wo warst du eigentlich, als es passierte?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Lena",
+   "parts": [
+    "Oh nein! Und dann?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Lena",
+   "parts": [
+    "Hier steht auch etwas über die Straßenbahn: Die Linie sechzehn fuhr eine Stunde lang nicht."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wie wäre es mit dieser Regel: Unter der Woche geht der Besuch um zweiundzwanzig Uhr, und man sagt vorher Bescheid. [pause] Dann schreiben wir die Regeln nach dem Gespräch auf, damit sie später niemand vergisst. [pause] Wir haben uns auf drei Regeln geeinigt. [pause] Hast du schon die Nachrichten gelesen? Der Stromausfall von gestern steht in der Zeitung. [pause] Ich lese dir vor: Gestern Abend fiel in Bockenheim um kurz nach neun der Strom aus. Etwa fünftausend Haushalte hatten zwei Stunden lang kein Licht. [pause] Wo warst du eigentlich, als es passierte? [pause] Oh nein! Und dann? [pause] Hier steht auch etwas über die Straßenbahn: Die Linie sechzehn fuhr eine Stunde lang nicht. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,60 @@
+{
+ "job": "b11_so_08",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "b1-1/7",
+   "who": "Sora",
+   "parts": [
+    "Die Farben und das Foto sind sehr gut. Aber der Preis des Autos steht ganz klein unten. Das finde ich nicht ehrlich."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Sora",
+   "parts": [
+    "Ehrlich gesagt, ja. Letzte Woche habe ich während des Schlussverkaufs einen Mantel gekauft. Er war um die Hälfte reduziert."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Sora",
+   "parts": [
+    "Eigentlich nicht. Trotz des Rabatts war er immer noch teuer. Aber auf dem Schild stand: nur heute!"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Sora",
+   "parts": [
+    "Mein Mann hat nur gelacht. Er sagt, ich spare Geld, das ich gar nicht ausgeben wollte."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Sora",
+   "parts": [
+    "Ich lese die Bewertungen der Kunden und vergleiche die Preise. Bei Werbung im Internet bin ich vorsichtig."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Sora",
+   "parts": [
+    "Gute Werbung zeigt den Wert eines Produkts und verspricht nichts Falsches. Aber ehrliche Werbung ist selten."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Sora",
+   "parts": [
+    "Trotz des Rabatts war der Mantel teuer."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Die Farben und das Foto sind sehr gut. Aber der Preis des Autos steht ganz klein unten. Das finde ich nicht ehrlich. [pause] Ehrlich gesagt, ja. Letzte Woche habe ich während des Schlussverkaufs einen Mantel gekauft. Er war um die Hälfte reduziert. [pause] Eigentlich nicht. Trotz des Rabatts war er immer noch teuer. Aber auf dem Schild stand: nur heute! [pause] Mein Mann hat nur gelacht. Er sagt, ich spare Geld, das ich gar nicht ausgeben wollte. [pause] Ich lese die Bewertungen der Kunden und vergleiche die Preise. Bei Werbung im Internet bin ich vorsichtig. [pause] Gute Werbung zeigt den Wert eines Produkts und verspricht nichts Falsches. Aber ehrliche Werbung ist selten. [pause] Trotz des Rabatts war der Mantel teuer. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

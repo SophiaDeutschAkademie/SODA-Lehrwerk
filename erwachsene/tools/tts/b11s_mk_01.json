@@ -1,0 +1,25 @@
+{
+ "job": "b11s_mk_01",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Markus",
+   "parts": [
+    "An deiner Stelle würde ich zuerst mit dem Nachbarn sprechen."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Hast du die Nachrichten gelesen? Was ist gestern passiert?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] An deiner Stelle würde ich zuerst mit dem Nachbarn sprechen. [pause] Hast du die Nachrichten gelesen? Was ist gestern passiert? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

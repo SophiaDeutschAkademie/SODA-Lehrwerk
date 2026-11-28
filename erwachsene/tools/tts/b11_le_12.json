@@ -1,0 +1,25 @@
+{
+ "job": "b11_le_12",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-1/8",
+   "who": "Lena",
+   "parts": [
+    "Ich freue mich darauf, in Leipzig zu studieren."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lena",
+   "parts": [
+    "Ich freue mich darauf, dort zu studieren."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich freue mich darauf, in Leipzig zu studieren. [pause] Ich freue mich darauf, dort zu studieren. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,67 @@
+{
+ "job": "b11s_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Sprachschule, Wagner, guten Tag."
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Gern. Die Prüfung findet am elften Dezember statt. Die Anmeldung ist bis zum zwanzigsten November möglich."
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Hundertfünfzig Euro für Teilnehmer aus unseren Kursen. Wenn Sie nicht bei uns lernen würden, wären es hundertneunzig."
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Ja, an zwei Samstagen im November. Ich würde ihn auf jeden Fall empfehlen, damit Sie die Prüfung schon kennen."
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Vielen Dank. Warum haben Sie dieses Thema gewählt?"
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Was ist für Sie der größte Unterschied zwischen Korea und Deutschland?"
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Können Sie den letzten Punkt noch einmal erklären?"
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Wegen eines Streiks fuhren gestern keine Züge nach Frankfurt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Sprachschule, Wagner, guten Tag. [pause] Gern. Die Prüfung findet am elften Dezember statt. Die Anmeldung ist bis zum zwanzigsten November möglich. [pause] Hundertfünfzig Euro für Teilnehmer aus unseren Kursen. Wenn Sie nicht bei uns lernen würden, wären es hundertneunzig. [pause] Ja, an zwei Samstagen im November. Ich würde ihn auf jeden Fall empfehlen, damit Sie die Prüfung schon kennen. [pause] Vielen Dank. Warum haben Sie dieses Thema gewählt? [pause] Was ist für Sie der größte Unterschied zwischen Korea und Deutschland? [pause] Können Sie den letzten Punkt noch einmal erklären? [pause] Wegen eines Streiks fuhren gestern keine Züge nach Frankfurt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

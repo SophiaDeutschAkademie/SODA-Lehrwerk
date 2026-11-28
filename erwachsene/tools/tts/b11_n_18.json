@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_18",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "die Baustelle, die Baustellen.",
+    "Vor dem Haus ist eine Baustelle."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "die Ursache, die Ursachen.",
+    "Die Ursache war ein kaputtes Kabel."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "die Folge, die Folgen.",
+    "Der Streik hatte viele Folgen."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "retten, hat gerettet.",
+    "Die Feuerwehr rettete drei Personen."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "verletzt.",
+    "Zum Glück ist niemand verletzt."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "der Einwohner, die Einwohner.",
+    "Frankfurt hat viele Einwohner."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "der Streik, die Streiks.",
+    "Wegen dem Streik fährt kein Bus."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "steigen, ist gestiegen.",
+    "Die Preise sind gestiegen."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "sinken, ist gesunken.",
+    "Die Zahl ist gesunken."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "die Messe, die Messen.",
+    "Die Messe findet in Stuttgart statt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Baustelle, die Baustellen. Vor dem Haus ist eine Baustelle. [pause] die Ursache, die Ursachen. Die Ursache war ein kaputtes Kabel. [pause] die Folge, die Folgen. Der Streik hatte viele Folgen. [pause] retten, hat gerettet. Die Feuerwehr rettete drei Personen. [pause] verletzt. Zum Glück ist niemand verletzt. [pause] der Einwohner, die Einwohner. Frankfurt hat viele Einwohner. [pause] der Streik, die Streiks. Wegen dem Streik fährt kein Bus. [pause] steigen, ist gestiegen. Die Preise sind gestiegen. [pause] sinken, ist gesunken. Die Zahl ist gesunken. [pause] die Messe, die Messen. Die Messe findet in Stuttgart statt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

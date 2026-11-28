@@ -1,0 +1,87 @@
+{
+ "job": "b11_n_37",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "Leipzig ist die größere Stadt."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "In Freiburg gibt es höhere Mieten."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "Auf dem Land gibt es frische Luft."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "Je größer die Stadt, desto höher die Mieten."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "die Großstadt, die Großstädte.",
+    "Ich kenne nur das Leben in der Großstadt."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "die Kleinstadt, die Kleinstädte.",
+    "In der Kleinstadt kennt jeder jeden."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "der Vorort, die Vororte.",
+    "Wir wohnen in einem Vorort von Frankfurt."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "die Innenstadt, die Innenstädte.",
+    "In der Innenstadt gibt es viele Geschäfte."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "der Stadtrand.",
+    "Am Stadtrand ist es ruhiger."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "ländlich.",
+    "Die Gegend ist sehr ländlich."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Leipzig ist die größere Stadt. [pause] In Freiburg gibt es höhere Mieten. [pause] Auf dem Land gibt es frische Luft. [pause] Je größer die Stadt, desto höher die Mieten. [pause] die Großstadt, die Großstädte. Ich kenne nur das Leben in der Großstadt. [pause] die Kleinstadt, die Kleinstädte. In der Kleinstadt kennt jeder jeden. [pause] der Vorort, die Vororte. Wir wohnen in einem Vorort von Frankfurt. [pause] die Innenstadt, die Innenstädte. In der Innenstadt gibt es viele Geschäfte. [pause] der Stadtrand. Am Stadtrand ist es ruhiger. [pause] ländlich. Die Gegend ist sehr ländlich. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

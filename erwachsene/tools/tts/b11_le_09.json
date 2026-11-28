@@ -1,0 +1,81 @@
+{
+ "job": "b11_le_09",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Vielleicht. Aber ich würde die Berge vermissen. Schauen wir uns im Februar zusammen beide Städte an?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Leipzig ist die größere Stadt, aber Freiburg hat das schönere Wetter."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Leipzig ist die größere Stadt."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Du suchst auch eine Stadt für den Master? Welche Städte hast du auf der Liste?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Was ist der größte Unterschied?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Und die Mieten?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Was spricht für Freiburg?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Und wofür entscheidest du dich?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Trotz deines Jobs im Café?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Weißt du, wofür du das Geld ausgibst?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Vielleicht. Aber ich würde die Berge vermissen. Schauen wir uns im Februar zusammen beide Städte an? [pause] Leipzig ist die größere Stadt, aber Freiburg hat das schönere Wetter. [pause] Leipzig ist die größere Stadt. [pause] Du suchst auch eine Stadt für den Master? Welche Städte hast du auf der Liste? [pause] Was ist der größte Unterschied? [pause] Und die Mieten? [pause] Was spricht für Freiburg? [pause] Und wofür entscheidest du dich? [pause] Trotz deines Jobs im Café? [pause] Weißt du, wofür du das Geld ausgibst? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "b11_ma_03",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Und was schreibst du?"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Und wenn das nicht hilft?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Du bist ja immer noch im Büro. Warum?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Kannst du zu Hause abschalten?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Was würdest du tun, wenn du weniger Arbeit hättest?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Mann",
+   "parts": [
+    "Hast du schon mit der Chefin gesprochen?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Mann",
+   "parts": [
+    "An deiner Stelle würde ich das morgen ansprechen."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Weil die Mieten dort viel höher sind. In unserer Kleinstadt haben wir für das gleiche Geld ein Haus mit Garten."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Doch. Ich sitze jeden Tag zwei Stunden im Zug. Aber dort lese ich oder schlafe."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Ja. Je älter die Kinder werden, desto mehr Platz brauchen wir. Und abends haben wir die bessere Luft."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und was schreibst du? [pause] Und wenn das nicht hilft? [pause] Du bist ja immer noch im Büro. Warum? [pause] Kannst du zu Hause abschalten? [pause] Was würdest du tun, wenn du weniger Arbeit hättest? [pause] Hast du schon mit der Chefin gesprochen? [pause] An deiner Stelle würde ich das morgen ansprechen. [pause] Weil die Mieten dort viel höher sind. In unserer Kleinstadt haben wir für das gleiche Geld ein Haus mit Garten. [pause] Doch. Ich sitze jeden Tag zwei Stunden im Zug. Aber dort lese ich oder schlafe. [pause] Ja. Je älter die Kinder werden, desto mehr Platz brauchen wir. Und abends haben wir die bessere Luft. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

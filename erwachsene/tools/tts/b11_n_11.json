@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_11",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "die Rücksicht.",
+    "Bitte nehmen Sie Rücksicht auf die Nachbarn."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "das Verständnis.",
+    "Vielen Dank für Ihr Verständnis."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "sich entschuldigen, hat sich entschuldigt.",
+    "Felix hat sich entschuldigt."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Kompromiss, die Kompromisse.",
+    "Wir haben einen Kompromiss gefunden."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "die Lösung, die Lösungen.",
+    "Wir brauchen eine Lösung."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "lösen, hat gelöst.",
+    "Wir lösen das Problem zusammen."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "sich einigen, hat sich geeinigt.",
+    "Wir haben uns auf drei Regeln geeinigt."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "ansprechen, du sprichst an, hat angesprochen.",
+    "Ich spreche das Problem heute an."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "zugeben, du gibst zu, hat zugegeben.",
+    "Er gibt zu, dass er zu laut war."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "recht haben.",
+    "Du hast recht."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Rücksicht. Bitte nehmen Sie Rücksicht auf die Nachbarn. [pause] das Verständnis. Vielen Dank für Ihr Verständnis. [pause] sich entschuldigen, hat sich entschuldigt. Felix hat sich entschuldigt. [pause] der Kompromiss, die Kompromisse. Wir haben einen Kompromiss gefunden. [pause] die Lösung, die Lösungen. Wir brauchen eine Lösung. [pause] lösen, hat gelöst. Wir lösen das Problem zusammen. [pause] sich einigen, hat sich geeinigt. Wir haben uns auf drei Regeln geeinigt. [pause] ansprechen, du sprichst an, hat angesprochen. Ich spreche das Problem heute an. [pause] zugeben, du gibst zu, hat zugegeben. Er gibt zu, dass er zu laut war. [pause] recht haben. Du hast recht. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

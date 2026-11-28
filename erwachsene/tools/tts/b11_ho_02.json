@@ -1,0 +1,81 @@
+{
+ "job": "b11_ho_02",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "b1-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Das ist interessant. Wann kommt sie auf den Markt?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Stand auch etwas über den Preis in dem Artikel?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Und wie war die Messe sonst? Kamen viele Besucher?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Gut. Könnten Sie den Artikel kurz zusammenfassen und an das Team schicken?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Danke. Als ich hier anfing, lasen wir solche Nachrichten noch in der Zeitschrift, einmal im Monat."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Das stimmt. Woher kommt Ihr Artikel?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Ab Januar soll bei uns Homeoffice eingeführt werden: zwei Tage pro Woche, freiwillig. Was meinen Sie, Herr Park?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Sehen Sie auch Nachteile?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Das höre ich oft. Wie könnte das gelöst werden?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Ein guter Vorschlag. Und die Gespräche mit den Kunden?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist interessant. Wann kommt sie auf den Markt? [pause] Stand auch etwas über den Preis in dem Artikel? [pause] Und wie war die Messe sonst? Kamen viele Besucher? [pause] Gut. Könnten Sie den Artikel kurz zusammenfassen und an das Team schicken? [pause] Danke. Als ich hier anfing, lasen wir solche Nachrichten noch in der Zeitschrift, einmal im Monat. [pause] Das stimmt. Woher kommt Ihr Artikel? [pause] Ab Januar soll bei uns Homeoffice eingeführt werden: zwei Tage pro Woche, freiwillig. Was meinen Sie, Herr Park? [pause] Sehen Sie auch Nachteile? [pause] Das höre ich oft. Wie könnte das gelöst werden? [pause] Ein guter Vorschlag. Und die Gespräche mit den Kunden? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

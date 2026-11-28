@@ -1,0 +1,87 @@
+{
+ "job": "b11_n_30",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "Gestern wurde ein Gerät repariert."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "Die Geräte müssen jeden Abend gereinigt werden."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "Meiner Meinung nach ist das eine gute Idee."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "Einerseits spart man Zeit, andererseits fehlt der Kontakt."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "das Homeoffice.",
+    "Am Montag arbeite ich im Homeoffice."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "der Arbeitsplatz, die Arbeitsplätze.",
+    "Mein Arbeitsplatz ist am Fenster."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "das Großraumbüro, die Großraumbüros.",
+    "Im Großraumbüro ist es oft laut."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "der Arbeitgeber, die Arbeitgeber.",
+    "Der Arbeitgeber zahlt die Versicherung."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "der Arbeitnehmer, die Arbeitnehmer.",
+    "Arbeitnehmer haben bezahlten Urlaub."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "angestellt.",
+    "Ich bin bei einer Firma angestellt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gestern wurde ein Gerät repariert. [pause] Die Geräte müssen jeden Abend gereinigt werden. [pause] Meiner Meinung nach ist das eine gute Idee. [pause] Einerseits spart man Zeit, andererseits fehlt der Kontakt. [pause] das Homeoffice. Am Montag arbeite ich im Homeoffice. [pause] der Arbeitsplatz, die Arbeitsplätze. Mein Arbeitsplatz ist am Fenster. [pause] das Großraumbüro, die Großraumbüros. Im Großraumbüro ist es oft laut. [pause] der Arbeitgeber, die Arbeitgeber. Der Arbeitgeber zahlt die Versicherung. [pause] der Arbeitnehmer, die Arbeitnehmer. Arbeitnehmer haben bezahlten Urlaub. [pause] angestellt. Ich bin bei einer Firma angestellt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

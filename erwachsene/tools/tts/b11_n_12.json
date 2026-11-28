@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_12",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "einschlafen, du schläfst ein, ist eingeschlafen.",
+    "Ich konnte nicht einschlafen."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "begegnen, ist begegnet.",
+    "Ich begegne ihm oft im Treppenhaus."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "An deiner Stelle.",
+    "An deiner Stelle würde ich mit ihm reden."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "auf jeden Fall.",
+    "Du solltest auf jeden Fall mit ihm sprechen."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "auf keinen Fall.",
+    "Ich würde auf keinen Fall schimpfen."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "ehrlich.",
+    "Sei ehrlich, aber freundlich."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "höflich.",
+    "Der Brief ist sehr höflich."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "vermeiden, hat vermieden.",
+    "Ich möchte Streit vermeiden."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "klären, hat geklärt.",
+    "Wir sollten das heute klären."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "besprechen, du besprichst, hat besprochen.",
+    "Wir besprechen das Problem in der WG."
+   ]
+  }
+ ],
+ "script": "Also. [pause] einschlafen, du schläfst ein, ist eingeschlafen. Ich konnte nicht einschlafen. [pause] begegnen, ist begegnet. Ich begegne ihm oft im Treppenhaus. [pause] An deiner Stelle. An deiner Stelle würde ich mit ihm reden. [pause] auf jeden Fall. Du solltest auf jeden Fall mit ihm sprechen. [pause] auf keinen Fall. Ich würde auf keinen Fall schimpfen. [pause] ehrlich. Sei ehrlich, aber freundlich. [pause] höflich. Der Brief ist sehr höflich. [pause] vermeiden, hat vermieden. Ich möchte Streit vermeiden. [pause] klären, hat geklärt. Wir sollten das heute klären. [pause] besprechen, du besprichst, hat besprochen. Wir besprechen das Problem in der WG. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

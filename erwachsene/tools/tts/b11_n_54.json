@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_54",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "enttäuscht.",
+    "Ich bin ein bisschen enttäuscht."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "traurig.",
+    "Ich bin traurig, dass du gehst."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "froh.",
+    "Ich bin froh, dass wir gesprochen haben."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "glücklich.",
+    "Sie sieht glücklich aus."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "beleidigt.",
+    "Er war kurz beleidigt."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "dankbar.",
+    "Ich bin dir sehr dankbar."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "sich aufregen über, hat sich aufgeregt.",
+    "Reg dich nicht darüber auf!"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "verzeihen, hat verziehen.",
+    "Kannst du mir verzeihen?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "sich versöhnen, hat sich versöhnt.",
+    "Wir haben uns wieder versöhnt."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "das Missverständnis, die Missverständnisse.",
+    "Das war ein Missverständnis."
+   ]
+  }
+ ],
+ "script": "Also. [pause] enttäuscht. Ich bin ein bisschen enttäuscht. [pause] traurig. Ich bin traurig, dass du gehst. [pause] froh. Ich bin froh, dass wir gesprochen haben. [pause] glücklich. Sie sieht glücklich aus. [pause] beleidigt. Er war kurz beleidigt. [pause] dankbar. Ich bin dir sehr dankbar. [pause] sich aufregen über, hat sich aufgeregt. Reg dich nicht darüber auf! [pause] verzeihen, hat verziehen. Kannst du mir verzeihen? [pause] sich versöhnen, hat sich versöhnt. Wir haben uns wieder versöhnt. [pause] das Missverständnis, die Missverständnisse. Das war ein Missverständnis. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

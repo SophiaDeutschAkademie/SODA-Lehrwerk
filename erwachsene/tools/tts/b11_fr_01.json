@@ -1,0 +1,81 @@
+{
+ "job": "b11_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Warum lernen Sie Deutsch?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Was ist für Sie leicht, und was ist schwierig?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Wie lernen Sie im Moment?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Was haben Sie sich für das nächste Semester vorgenommen?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Haben Sie schon einen Tandempartner?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Sie wollten mit mir sprechen. Worum geht es?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Wozu brauchen Sie den Kurs?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Wann findet der Kurs statt?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Und was kostet er?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Frau",
+   "parts": [
+    "Das ist möglich. Was brauche ich von Ihnen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Warum lernen Sie Deutsch? [pause] Was ist für Sie leicht, und was ist schwierig? [pause] Wie lernen Sie im Moment? [pause] Was haben Sie sich für das nächste Semester vorgenommen? [pause] Haben Sie schon einen Tandempartner? [pause] Sie wollten mit mir sprechen. Worum geht es? [pause] Wozu brauchen Sie den Kurs? [pause] Wann findet der Kurs statt? [pause] Und was kostet er? [pause] Das ist möglich. Was brauche ich von Ihnen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

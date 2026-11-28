@@ -1,0 +1,67 @@
+{
+ "job": "b11_le_07",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Ja, ich bereite die Proben vor. Aber die Ergebnisse dürfen nur von den Angestellten eingetragen werden."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Im Labor muss alles genau aufgeschrieben werden. Und abends müssen alle Geräte gereinigt werden. Das mache ich jetzt auch."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Gestern. Da wurde ein Gerät repariert, und wir konnten den ganzen Vormittag nicht arbeiten."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Sehr nett. Ich wurde gleich am ersten Tag zum Mittagessen eingeladen. Und du? Gibt es etwas Neues von deiner Bewerbung?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Super! Dann musst du mir bald erklären, was dort gemacht wird."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Die Ergebnisse werden von der Laborleiterin kontrolliert."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Lena",
+   "parts": [
+    "Gestern wurde ein Gerät repariert."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Lena",
+   "parts": [
+    "Jiu, ich brauche deine Hilfe. Für den Master habe ich zwei Städte auf meiner Liste: Leipzig und Freiburg."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ja, ich bereite die Proben vor. Aber die Ergebnisse dürfen nur von den Angestellten eingetragen werden. [pause] Im Labor muss alles genau aufgeschrieben werden. Und abends müssen alle Geräte gereinigt werden. Das mache ich jetzt auch. [pause] Gestern. Da wurde ein Gerät repariert, und wir konnten den ganzen Vormittag nicht arbeiten. [pause] Sehr nett. Ich wurde gleich am ersten Tag zum Mittagessen eingeladen. Und du? Gibt es etwas Neues von deiner Bewerbung? [pause] Super! Dann musst du mir bald erklären, was dort gemacht wird. [pause] Die Ergebnisse werden von der Laborleiterin kontrolliert. [pause] Gestern wurde ein Gerät repariert. [pause] Jiu, ich brauche deine Hilfe. Für den Master habe ich zwei Städte auf meiner Liste: Leipzig und Freiburg. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

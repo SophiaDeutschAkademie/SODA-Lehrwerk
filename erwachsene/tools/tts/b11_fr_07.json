@@ -1,0 +1,81 @@
+{
+ "job": "b11_fr_07",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Und bewahren Sie bitte Ihren Kassenzettel auf. Reduzierte Ware kann nur innerhalb von vierzehn Tagen umgetauscht werden."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Kundenservice, guten Tag. Was kann ich für Sie tun?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Was genau stimmt nicht?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Wurde der Betrag schon abgebucht?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Das prüfen wir. Haben Sie die Nummer des Vertrags?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Sie bekommen in einigen Tagen eine Antwort."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Hallo Sora, hier ist Marta. Ich möchte mich für gestern entschuldigen."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Ich habe unsere Verabredung ganz vergessen. Ich habe aus Versehen den falschen Tag in den Kalender geschrieben."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Ich habe mich so darüber geärgert! Hoffentlich bist du mir nicht böse."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Hast du am Donnerstag Zeit? Ich lade dich zum Kaffee ein. Ich freue mich darauf, dich zu sehen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und bewahren Sie bitte Ihren Kassenzettel auf. Reduzierte Ware kann nur innerhalb von vierzehn Tagen umgetauscht werden. [pause] Kundenservice, guten Tag. Was kann ich für Sie tun? [pause] Was genau stimmt nicht? [pause] Wurde der Betrag schon abgebucht? [pause] Das prüfen wir. Haben Sie die Nummer des Vertrags? [pause] Sie bekommen in einigen Tagen eine Antwort. [pause] Hallo Sora, hier ist Marta. Ich möchte mich für gestern entschuldigen. [pause] Ich habe unsere Verabredung ganz vergessen. Ich habe aus Versehen den falschen Tag in den Kalender geschrieben. [pause] Ich habe mich so darüber geärgert! Hoffentlich bist du mir nicht böse. [pause] Hast du am Donnerstag Zeit? Ich lade dich zum Kaffee ein. Ich freue mich darauf, dich zu sehen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

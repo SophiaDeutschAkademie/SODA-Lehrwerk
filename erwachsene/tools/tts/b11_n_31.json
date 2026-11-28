@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_31",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "selbstständig.",
+    "Sora möchte selbstständig arbeiten."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Probezeit.",
+    "Die Probezeit dauert sechs Monate."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "der Betriebsrat, die Betriebsräte.",
+    "Der Betriebsrat wurde informiert."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "der Urlaubstag, die Urlaubstage.",
+    "Ich habe dreißig Urlaubstage im Jahr."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "der Arbeitsweg, die Arbeitswege.",
+    "Mein Arbeitsweg dauert eine halbe Stunde."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "pendeln, ist gependelt.",
+    "Ich pendle jeden Tag nach Frankfurt."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Videokonferenz, die Videokonferenzen.",
+    "Um zehn habe ich eine Videokonferenz."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "zusammenarbeiten, hat zusammengearbeitet.",
+    "Wir arbeiten gut zusammen."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Zusammenarbeit.",
+    "Danke für die gute Zusammenarbeit."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "produktiv.",
+    "Zu Hause bin ich produktiver."
+   ]
+  }
+ ],
+ "script": "Also. [pause] selbstständig. Sora möchte selbstständig arbeiten. [pause] die Probezeit. Die Probezeit dauert sechs Monate. [pause] der Betriebsrat, die Betriebsräte. Der Betriebsrat wurde informiert. [pause] der Urlaubstag, die Urlaubstage. Ich habe dreißig Urlaubstage im Jahr. [pause] der Arbeitsweg, die Arbeitswege. Mein Arbeitsweg dauert eine halbe Stunde. [pause] pendeln, ist gependelt. Ich pendle jeden Tag nach Frankfurt. [pause] die Videokonferenz, die Videokonferenzen. Um zehn habe ich eine Videokonferenz. [pause] zusammenarbeiten, hat zusammengearbeitet. Wir arbeiten gut zusammen. [pause] die Zusammenarbeit. Danke für die gute Zusammenarbeit. [pause] produktiv. Zu Hause bin ich produktiver. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

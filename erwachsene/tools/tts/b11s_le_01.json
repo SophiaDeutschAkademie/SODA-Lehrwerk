@@ -1,0 +1,25 @@
+{
+ "job": "b11s_le_01",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Ich habe mir vorgenommen, jeden Tag zwanzig Minuten Koreanisch zu lernen."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Mein Mitbewohner spült nie. Was würdest du an meiner Stelle tun?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich habe mir vorgenommen, jeden Tag zwanzig Minuten Koreanisch zu lernen. [pause] Mein Mitbewohner spült nie. Was würdest du an meiner Stelle tun? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

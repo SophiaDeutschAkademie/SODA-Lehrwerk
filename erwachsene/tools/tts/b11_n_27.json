@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_27",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "übertreiben, hat übertrieben.",
+    "Übertreib es nicht!"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "sich Zeit nehmen.",
+    "Ich nehme mir Zeit für einen Spaziergang."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "Wenn ich du wäre.",
+    "Wenn ich du wäre, würde ich mehr schlafen."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "eigentlich.",
+    "Eigentlich esse ich gesund."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "sonst.",
+    "Mach eine Pause, sonst wirst du krank."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "stattdessen.",
+    "Trink keinen Kaffee. Trink stattdessen Tee."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "wenigstens.",
+    "Mach wenigstens zehn Minuten Pause."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "mindestens.",
+    "Man sollte mindestens sieben Stunden schlafen."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "selten.",
+    "Ich mache selten Sport."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "ab und zu.",
+    "Ab und zu gehe ich schwimmen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] übertreiben, hat übertrieben. Übertreib es nicht! [pause] sich Zeit nehmen. Ich nehme mir Zeit für einen Spaziergang. [pause] Wenn ich du wäre. Wenn ich du wäre, würde ich mehr schlafen. [pause] eigentlich. Eigentlich esse ich gesund. [pause] sonst. Mach eine Pause, sonst wirst du krank. [pause] stattdessen. Trink keinen Kaffee. Trink stattdessen Tee. [pause] wenigstens. Mach wenigstens zehn Minuten Pause. [pause] mindestens. Man sollte mindestens sieben Stunden schlafen. [pause] selten. Ich mache selten Sport. [pause] ab und zu. Ab und zu gehe ich schwimmen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

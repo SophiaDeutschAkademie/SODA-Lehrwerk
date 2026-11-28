@@ -1,0 +1,81 @@
+{
+ "job": "b11_ho_01",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "b1-1/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Natürlich. Worum geht es?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Ich finde, Sie haben große Fortschritte gemacht."
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Was haben Sie vor?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Das klingt sinnvoll. Wann findet der Kurs statt?"
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Am Samstag? Dann verlieren Sie keine Arbeitszeit. Das ist gut."
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Das ist möglich. Wenn ein Kurs für die Arbeit wichtig ist, unterstützt die Firma ihre Mitarbeiter."
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Schreiben Sie mir bitte eine kurze E-Mail mit den Terminen und den Kosten, damit ich mit der Personalabteilung sprechen kann."
+   ]
+  },
+  {
+   "pid": "b1-1/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Gern. Und schreiben Sie auch, wozu Sie den Kurs brauchen. Dann geht es schneller."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Zuerst eine Frage: Gibt es Neuigkeiten aus der Branche? Herr Park, Sie wollten etwas berichten."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Die Firma Lindner?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Natürlich. Worum geht es? [pause] Ich finde, Sie haben große Fortschritte gemacht. [pause] Was haben Sie vor? [pause] Das klingt sinnvoll. Wann findet der Kurs statt? [pause] Am Samstag? Dann verlieren Sie keine Arbeitszeit. Das ist gut. [pause] Das ist möglich. Wenn ein Kurs für die Arbeit wichtig ist, unterstützt die Firma ihre Mitarbeiter. [pause] Schreiben Sie mir bitte eine kurze E-Mail mit den Terminen und den Kosten, damit ich mit der Personalabteilung sprechen kann. [pause] Gern. Und schreiben Sie auch, wozu Sie den Kurs brauchen. Dann geht es schneller. [pause] Zuerst eine Frage: Gibt es Neuigkeiten aus der Branche? Herr Park, Sie wollten etwas berichten. [pause] Die Firma Lindner? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

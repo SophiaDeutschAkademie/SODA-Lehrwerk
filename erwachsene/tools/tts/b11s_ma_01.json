@@ -1,0 +1,67 @@
+{
+ "job": "b11s_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-1/wiederholung-2",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag, Frau Kim, hier ist Engel von der Firma Datenwerk."
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-2",
+   "who": "Mann",
+   "parts": [
+    "Vielen Dank für das Gespräch letzte Woche. Wir haben uns für Sie entschieden: Sie bekommen den Praktikumsplatz."
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-2",
+   "who": "Mann",
+   "parts": [
+    "Das Praktikum beginnt am einundzwanzigsten Februar und dauert sechs Wochen."
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-2",
+   "who": "Mann",
+   "parts": [
+    "Der Vertrag wird Ihnen diese Woche per E-Mail geschickt. Bitte unterschreiben Sie ihn und schicken Sie ihn bis Freitag zurück."
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-2",
+   "who": "Mann",
+   "parts": [
+    "Am ersten Tag werden Sie um neun Uhr am Empfang abgeholt. Wir freuen uns auf Sie!"
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-2",
+   "who": "Mann",
+   "parts": [
+    "Wie oft machen Sie selbst Sport?"
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-2",
+   "who": "Mann",
+   "parts": [
+    "Was würden Sie jemandem raten, der keine Zeit für Sport hat?"
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Willkommen bei Datenwerk, Frau Kim. Ich zeige Ihnen zuerst Ihren Arbeitsplatz."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag, Frau Kim, hier ist Engel von der Firma Datenwerk. [pause] Vielen Dank für das Gespräch letzte Woche. Wir haben uns für Sie entschieden: Sie bekommen den Praktikumsplatz. [pause] Das Praktikum beginnt am einundzwanzigsten Februar und dauert sechs Wochen. [pause] Der Vertrag wird Ihnen diese Woche per E-Mail geschickt. Bitte unterschreiben Sie ihn und schicken Sie ihn bis Freitag zurück. [pause] Am ersten Tag werden Sie um neun Uhr am Empfang abgeholt. Wir freuen uns auf Sie! [pause] Wie oft machen Sie selbst Sport? [pause] Was würden Sie jemandem raten, der keine Zeit für Sport hat? [pause] Willkommen bei Datenwerk, Frau Kim. Ich zeige Ihnen zuerst Ihren Arbeitsplatz. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

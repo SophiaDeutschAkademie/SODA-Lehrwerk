@@ -1,0 +1,81 @@
+{
+ "job": "b11_le_10",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Dann schreib einmal alles auf. Was sind deine festen Ausgaben?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Das sind schon mehr als sechshundert. Und der Rest?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Ich benutze eine App, in der ich jede Ausgabe notiere. Am Anfang des Monats plane ich: so viel für Essen, so viel für Freizeit."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Meistens. Wegen der App habe ich gemerkt, dass ich fünfzig Euro im Monat für Abos bezahle, die ich gar nicht benutze."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Siehst du. Die Summe der kleinen Beträge ist das Problem, nicht die Miete."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Ich brauche auch einen Plan. Wenn ich nach Leipzig gehe, habe ich nur noch achthundert Euro im Monat."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Während des Semesters gebe ich mehr Geld aus."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Wie viel Geld hast du im Monat?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Was ist deine größte Ausgabe?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Und wie viel gibst du für Essen aus?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Dann schreib einmal alles auf. Was sind deine festen Ausgaben? [pause] Das sind schon mehr als sechshundert. Und der Rest? [pause] Ich benutze eine App, in der ich jede Ausgabe notiere. Am Anfang des Monats plane ich: so viel für Essen, so viel für Freizeit. [pause] Meistens. Wegen der App habe ich gemerkt, dass ich fünfzig Euro im Monat für Abos bezahle, die ich gar nicht benutze. [pause] Siehst du. Die Summe der kleinen Beträge ist das Problem, nicht die Miete. [pause] Ich brauche auch einen Plan. Wenn ich nach Leipzig gehe, habe ich nur noch achthundert Euro im Monat. [pause] Während des Semesters gebe ich mehr Geld aus. [pause] Wie viel Geld hast du im Monat? [pause] Was ist deine größte Ausgabe? [pause] Und wie viel gibst du für Essen aus? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

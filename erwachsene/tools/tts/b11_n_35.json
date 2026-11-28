@@ -1,0 +1,86 @@
+{
+ "job": "b11_n_35",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "überzeugen, hat überzeugt.",
+    "Das Argument überzeugt mich."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Entscheidung, die Entscheidungen.",
+    "Die Entscheidung kommt am Freitag."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "abstimmen, hat abgestimmt.",
+    "Am Freitag wird abgestimmt."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Umfrage, die Umfragen.",
+    "Wir machen eine Umfrage im Team."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Mehrheit.",
+    "Die Mehrheit ist dafür."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "Das Gerät wird repariert. Das Gerät wurde repariert."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "Die Laptops werden bestellt. Die Laptops wurden bestellt."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "Die Geräte müssen gereinigt werden. Das kann nicht zu Hause gemacht werden."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "Das muss noch geklärt werden. Kaputte Ware darf nicht verschickt werden."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "das Homeoffice, das Meeting"
+   ]
+  }
+ ],
+ "script": "Also. [pause] überzeugen, hat überzeugt. Das Argument überzeugt mich. [pause] die Entscheidung, die Entscheidungen. Die Entscheidung kommt am Freitag. [pause] abstimmen, hat abgestimmt. Am Freitag wird abgestimmt. [pause] die Umfrage, die Umfragen. Wir machen eine Umfrage im Team. [pause] die Mehrheit. Die Mehrheit ist dafür. [pause] Das Gerät wird repariert. Das Gerät wurde repariert. [pause] Die Laptops werden bestellt. Die Laptops wurden bestellt. [pause] Die Geräte müssen gereinigt werden. Das kann nicht zu Hause gemacht werden. [pause] Das muss noch geklärt werden. Kaputte Ware darf nicht verschickt werden. [pause] das Homeoffice, das Meeting [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

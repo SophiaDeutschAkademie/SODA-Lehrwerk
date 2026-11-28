@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_32",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "freiwillig.",
+    "Das Homeoffice ist freiwillig."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Sicherheit.",
+    "Am Anfang brauche ich Sicherheit."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "der Ablauf, die Abläufe.",
+    "Ich erkläre dir den Ablauf."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "der Schritt, die Schritte.",
+    "Der erste Schritt ist die Kontrolle."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "der Auftrag, die Aufträge.",
+    "Wir haben einen neuen Auftrag bekommen."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "bearbeiten, hat bearbeitet.",
+    "Die Bestellung wird heute bearbeitet."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "prüfen, hat geprüft.",
+    "Zuerst wird die Bestellung geprüft."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "kontrollieren, hat kontrolliert.",
+    "Die Ergebnisse werden kontrolliert."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "herstellen, hat hergestellt.",
+    "Die Firma stellt Maschinen her."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "verpacken, hat verpackt.",
+    "Die Pakete werden von uns verpackt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] freiwillig. Das Homeoffice ist freiwillig. [pause] die Sicherheit. Am Anfang brauche ich Sicherheit. [pause] der Ablauf, die Abläufe. Ich erkläre dir den Ablauf. [pause] der Schritt, die Schritte. Der erste Schritt ist die Kontrolle. [pause] der Auftrag, die Aufträge. Wir haben einen neuen Auftrag bekommen. [pause] bearbeiten, hat bearbeitet. Die Bestellung wird heute bearbeitet. [pause] prüfen, hat geprüft. Zuerst wird die Bestellung geprüft. [pause] kontrollieren, hat kontrolliert. Die Ergebnisse werden kontrolliert. [pause] herstellen, hat hergestellt. Die Firma stellt Maschinen her. [pause] verpacken, hat verpackt. Die Pakete werden von uns verpackt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

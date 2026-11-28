@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_10",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Mieter, die Mieter.",
+    "Im Haus wohnen zwölf Mieter."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "die Hausverwaltung, die Hausverwaltungen.",
+    "Ich rufe die Hausverwaltung an."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "hellhörig.",
+    "Die Wohnung ist sehr hellhörig."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "sich wohlfühlen, hat sich wohlgefühlt.",
+    "In der WG fühle ich mich wohl."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Konflikt, die Konflikte.",
+    "In jeder WG gibt es Konflikte."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Streit.",
+    "Ich möchte keinen Streit."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "sich streiten, hat sich gestritten.",
+    "Sie streiten sich über den Putzplan."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "nerven, hat genervt.",
+    "Der Lärm nervt mich."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "wütend.",
+    "Er war sehr wütend."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "schimpfen, hat geschimpft.",
+    "Schimpf nicht, sag es ihm freundlich!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Mieter, die Mieter. Im Haus wohnen zwölf Mieter. [pause] die Hausverwaltung, die Hausverwaltungen. Ich rufe die Hausverwaltung an. [pause] hellhörig. Die Wohnung ist sehr hellhörig. [pause] sich wohlfühlen, hat sich wohlgefühlt. In der WG fühle ich mich wohl. [pause] der Konflikt, die Konflikte. In jeder WG gibt es Konflikte. [pause] der Streit. Ich möchte keinen Streit. [pause] sich streiten, hat sich gestritten. Sie streiten sich über den Putzplan. [pause] nerven, hat genervt. Der Lärm nervt mich. [pause] wütend. Er war sehr wütend. [pause] schimpfen, hat geschimpft. Schimpf nicht, sag es ihm freundlich! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,67 @@
+{
+ "job": "b11_be_04",
+ "who": "Becker",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "b1-1/3",
+   "who": "Becker",
+   "parts": [
+    "Und heute? Woher wissen Sie, ob eine Nachricht stimmt?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Becker",
+   "parts": [
+    "Sehr gut. Über welches Thema lesen Sie am liebsten?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Becker",
+   "parts": [
+    "Dann habe ich eine Aufgabe für Sie: Lesen Sie heute einen kurzen Artikel und fassen Sie ihn morgen für die Gruppe zusammen."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Becker",
+   "parts": [
+    "Wenn die Nachrichten begannen, saß die ganze Familie vor dem Fernseher."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Becker",
+   "parts": [
+    "Frau Lee, die Prüfung ist vorbei. Wie war es?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Becker",
+   "parts": [
+    "Dann drücke ich Ihnen die Daumen. Sie möchten ja bald wieder als Designerin arbeiten. Angestellt oder selbstständig?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Becker",
+   "parts": [
+    "Und die Überstunden? Wurden sie bezahlt?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Becker",
+   "parts": [
+    "Das ist ein Vorteil. Allerdings müssen die Aufträge selbst gesucht werden. Und wenn Sie krank sind, wird kein Gehalt gezahlt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und heute? Woher wissen Sie, ob eine Nachricht stimmt? [pause] Sehr gut. Über welches Thema lesen Sie am liebsten? [pause] Dann habe ich eine Aufgabe für Sie: Lesen Sie heute einen kurzen Artikel und fassen Sie ihn morgen für die Gruppe zusammen. [pause] Wenn die Nachrichten begannen, saß die ganze Familie vor dem Fernseher. [pause] Frau Lee, die Prüfung ist vorbei. Wie war es? [pause] Dann drücke ich Ihnen die Daumen. Sie möchten ja bald wieder als Designerin arbeiten. Angestellt oder selbstständig? [pause] Und die Überstunden? Wurden sie bezahlt? [pause] Das ist ein Vorteil. Allerdings müssen die Aufträge selbst gesucht werden. Und wenn Sie krank sind, wird kein Gehalt gezahlt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

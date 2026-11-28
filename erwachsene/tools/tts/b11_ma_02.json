@@ -1,0 +1,81 @@
+{
+ "job": "b11_ma_02",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Noch eine Frage: Am Samstag kommt meine Schwester zu Besuch. Sie würde gern bei uns übernachten. Ist das für euch in Ordnung?"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Schreibt mir kurz, damit ich ihr Bescheid sagen kann."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Du wolltest etwas besprechen. Worum geht es?"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Oh, das habe ich gar nicht gemerkt. Was schlägst du vor?"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Einverstanden. Gibt es noch etwas?"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Was wäre für dich in Ordnung?"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Gut. Das ist ein Kompromiss, mit dem ich leben kann."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Du siehst müde aus. Was ist los?"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Hast du schon mit ihr gesprochen?"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "Mann",
+   "parts": [
+    "Was hast du vor?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Noch eine Frage: Am Samstag kommt meine Schwester zu Besuch. Sie würde gern bei uns übernachten. Ist das für euch in Ordnung? [pause] Schreibt mir kurz, damit ich ihr Bescheid sagen kann. [pause] Du wolltest etwas besprechen. Worum geht es? [pause] Oh, das habe ich gar nicht gemerkt. Was schlägst du vor? [pause] Einverstanden. Gibt es noch etwas? [pause] Was wäre für dich in Ordnung? [pause] Gut. Das ist ein Kompromiss, mit dem ich leben kann. [pause] Du siehst müde aus. Was ist los? [pause] Hast du schon mit ihr gesprochen? [pause] Was hast du vor? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

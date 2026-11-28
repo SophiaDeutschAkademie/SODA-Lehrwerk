@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_56",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "achten auf, hat geachtet.",
+    "Ich achte auf meine Gesundheit."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "abhängen von, hat abgehangen.",
+    "Das hängt vom Wetter ab."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "sich vorbereiten auf, hat sich vorbereitet.",
+    "Ich bereite mich auf das Gespräch vor."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "darüber.",
+    "Wir sprechen morgen darüber."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "darauf.",
+    "Ich freue mich darauf."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "daran.",
+    "Daran habe ich nicht gedacht."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "davon.",
+    "Ich träume oft davon."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "davor.",
+    "Davor habe ich Angst."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "Worüber?",
+    "Worüber ärgerst du dich?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "N",
+   "parts": [
+    "Über wen?",
+    "Über wen sprecht ihr?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] achten auf, hat geachtet. Ich achte auf meine Gesundheit. [pause] abhängen von, hat abgehangen. Das hängt vom Wetter ab. [pause] sich vorbereiten auf, hat sich vorbereitet. Ich bereite mich auf das Gespräch vor. [pause] darüber. Wir sprechen morgen darüber. [pause] darauf. Ich freue mich darauf. [pause] daran. Daran habe ich nicht gedacht. [pause] davon. Ich träume oft davon. [pause] davor. Davor habe ich Angst. [pause] Worüber? Worüber ärgerst du dich? [pause] Über wen? Über wen sprecht ihr? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

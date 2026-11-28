@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_48",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "der Wert.",
+    "Gute Werbung zeigt den Wert eines Produkts."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "die Mahnung, die Mahnungen.",
+    "Gestern kam eine Mahnung."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "die Frist, die Fristen.",
+    "Die Frist endet am Freitag."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "die Beschwerde, die Beschwerden.",
+    "Ich schreibe eine Beschwerde."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "der Widerspruch, die Widersprüche.",
+    "Bitte schicken Sie uns einen Widerspruch."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "fordern, hat gefordert.",
+    "Ich fordere mein Geld zurück."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "erstatten, hat erstattet.",
+    "Der Betrag wird Ihnen erstattet."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "zurückzahlen, hat zurückgezahlt.",
+    "Die Firma zahlt das Geld zurück."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "abbuchen, hat abgebucht.",
+    "Das Geld wurde gestern abgebucht."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "der Zähler, die Zähler.",
+    "Der Zähler ist im Flur."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Wert. Gute Werbung zeigt den Wert eines Produkts. [pause] die Mahnung, die Mahnungen. Gestern kam eine Mahnung. [pause] die Frist, die Fristen. Die Frist endet am Freitag. [pause] die Beschwerde, die Beschwerden. Ich schreibe eine Beschwerde. [pause] der Widerspruch, die Widersprüche. Bitte schicken Sie uns einen Widerspruch. [pause] fordern, hat gefordert. Ich fordere mein Geld zurück. [pause] erstatten, hat erstattet. Der Betrag wird Ihnen erstattet. [pause] zurückzahlen, hat zurückgezahlt. Die Firma zahlt das Geld zurück. [pause] abbuchen, hat abgebucht. Das Geld wurde gestern abgebucht. [pause] der Zähler, die Zähler. Der Zähler ist im Flur. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

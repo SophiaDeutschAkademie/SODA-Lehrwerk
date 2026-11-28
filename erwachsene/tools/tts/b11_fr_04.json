@@ -1,0 +1,81 @@
+{
+ "job": "b11_fr_04",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Für die Gesundheit reichen schon zwanzig Minuten Bewegung am Tag. Gehen Sie in der Mittagspause spazieren, obwohl Sie viel zu tun haben."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Am Nachmittag sind Sie dann wacher und können sich besser konzentrieren."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Und noch ein Tipp für den Abend: Schalten Sie das Handy eine Stunde vor dem Schlafen aus. Dann schlafen Sie schneller ein."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Ich bin neu hier. Was wird zuerst gemacht, wenn eine Bestellung kommt?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Und dann?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Wer verpackt die Pakete?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Wann werden die Pakete abgeholt?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Und wenn etwas kaputt ist?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Bei uns soll Homeoffice eingeführt werden. Was meinen Sie?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Welche Vorteile sehen Sie?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Für die Gesundheit reichen schon zwanzig Minuten Bewegung am Tag. Gehen Sie in der Mittagspause spazieren, obwohl Sie viel zu tun haben. [pause] Am Nachmittag sind Sie dann wacher und können sich besser konzentrieren. [pause] Und noch ein Tipp für den Abend: Schalten Sie das Handy eine Stunde vor dem Schlafen aus. Dann schlafen Sie schneller ein. [pause] Ich bin neu hier. Was wird zuerst gemacht, wenn eine Bestellung kommt? [pause] Und dann? [pause] Wer verpackt die Pakete? [pause] Wann werden die Pakete abgeholt? [pause] Und wenn etwas kaputt ist? [pause] Bei uns soll Homeoffice eingeführt werden. Was meinen Sie? [pause] Welche Vorteile sehen Sie? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

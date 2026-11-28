@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_25",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "der Blutdruck.",
+    "Mein Blutdruck ist normal."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "ungesund.",
+    "Zu viel Kaffee ist ungesund."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "der Stress.",
+    "Ich habe im Moment viel Stress."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "gestresst.",
+    "Vor der Prüfung bin ich gestresst."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "stressig.",
+    "Die Woche war sehr stressig."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "der Druck.",
+    "Ich stehe unter Druck."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "die Belastung, die Belastungen.",
+    "Die Überstunden sind eine große Belastung."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "erschöpft.",
+    "Du siehst erschöpft aus."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "die Überstunde, die Überstunden.",
+    "Ich mache zu viele Überstunden."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "der Feierabend.",
+    "Um sechs mache ich Feierabend."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Blutdruck. Mein Blutdruck ist normal. [pause] ungesund. Zu viel Kaffee ist ungesund. [pause] der Stress. Ich habe im Moment viel Stress. [pause] gestresst. Vor der Prüfung bin ich gestresst. [pause] stressig. Die Woche war sehr stressig. [pause] der Druck. Ich stehe unter Druck. [pause] die Belastung, die Belastungen. Die Überstunden sind eine große Belastung. [pause] erschöpft. Du siehst erschöpft aus. [pause] die Überstunde, die Überstunden. Ich mache zu viele Überstunden. [pause] der Feierabend. Um sechs mache ich Feierabend. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_17",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "aktuell.",
+    "Das ist ein aktuelles Thema."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "erscheinen, ist erschienen.",
+    "Die Zeitung erscheint jeden Tag."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "sich informieren, hat sich informiert.",
+    "Ich informiere mich im Internet."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "vorlesen, du liest vor, hat vorgelesen.",
+    "Ich lese dir den Artikel vor."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "die Falschmeldung, die Falschmeldungen.",
+    "Das war eine Falschmeldung."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "überprüfen, hat überprüft.",
+    "Ich überprüfe immer die Quelle."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "das Ereignis, die Ereignisse.",
+    "Das war ein wichtiges Ereignis."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "der Stromausfall, die Stromausfälle.",
+    "Der Stromausfall dauerte zwei Stunden."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "der Strom.",
+    "Wir hatten keinen Strom."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "N",
+   "parts": [
+    "ausgehen, ist ausgegangen.",
+    "Plötzlich ging das Licht aus."
+   ]
+  }
+ ],
+ "script": "Also. [pause] aktuell. Das ist ein aktuelles Thema. [pause] erscheinen, ist erschienen. Die Zeitung erscheint jeden Tag. [pause] sich informieren, hat sich informiert. Ich informiere mich im Internet. [pause] vorlesen, du liest vor, hat vorgelesen. Ich lese dir den Artikel vor. [pause] die Falschmeldung, die Falschmeldungen. Das war eine Falschmeldung. [pause] überprüfen, hat überprüft. Ich überprüfe immer die Quelle. [pause] das Ereignis, die Ereignisse. Das war ein wichtiges Ereignis. [pause] der Stromausfall, die Stromausfälle. Der Stromausfall dauerte zwei Stunden. [pause] der Strom. Wir hatten keinen Strom. [pause] ausgehen, ist ausgegangen. Plötzlich ging das Licht aus. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

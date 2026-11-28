@@ -1,0 +1,81 @@
+{
+ "job": "b11_fr_02",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-1/3",
+   "who": "Frau",
+   "parts": [
+    "Guten Morgen, es ist sieben Uhr. Die Nachrichten."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Frau",
+   "parts": [
+    "Frankfurt. Die Mitarbeiter im Nahverkehr streikten gestern den ganzen Tag. Busse und Straßenbahnen fuhren nicht. Heute fahren alle Linien wieder normal."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Frau",
+   "parts": [
+    "Am Mittwoch begann die Buchmesse. Bis Sonntag kann man dort neue Bücher aus der ganzen Welt sehen."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Frau",
+   "parts": [
+    "Und das Wetter: Heute bleibt es kühl und nass. Morgen scheint wieder die Sonne."
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Frau",
+   "parts": [
+    "Gibt es Neuigkeiten aus der Branche?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Frau",
+   "parts": [
+    "Was stand in dem Artikel?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Frau",
+   "parts": [
+    "Wann kommt sie auf den Markt?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Frau",
+   "parts": [
+    "Und der Preis?"
+   ]
+  },
+  {
+   "pid": "b1-1/3",
+   "who": "Frau",
+   "parts": [
+    "Woher haben Sie die Information?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Frau Lee, Ihre Untersuchung war insgesamt gut. Der Blutdruck ist normal. Aber Sie haben geschrieben, dass Sie schlecht schlafen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Morgen, es ist sieben Uhr. Die Nachrichten. [pause] Frankfurt. Die Mitarbeiter im Nahverkehr streikten gestern den ganzen Tag. Busse und Straßenbahnen fuhren nicht. Heute fahren alle Linien wieder normal. [pause] Am Mittwoch begann die Buchmesse. Bis Sonntag kann man dort neue Bücher aus der ganzen Welt sehen. [pause] Und das Wetter: Heute bleibt es kühl und nass. Morgen scheint wieder die Sonne. [pause] Gibt es Neuigkeiten aus der Branche? [pause] Was stand in dem Artikel? [pause] Wann kommt sie auf den Markt? [pause] Und der Preis? [pause] Woher haben Sie die Information? [pause] Frau Lee, Ihre Untersuchung war insgesamt gut. Der Blutdruck ist normal. Aber Sie haben geschrieben, dass Sie schlecht schlafen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

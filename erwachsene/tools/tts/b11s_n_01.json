@@ -1,0 +1,39 @@
+{
+ "job": "b11s_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "Als ich ankam, verstand ich nichts."
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "Wenn ich Zeit hätte, würde ich mehr lesen."
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-2",
+   "who": "N",
+   "parts": [
+    "Ich freue mich darauf, dich zu sehen."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Trotz des Regens gehen wir spazieren."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Als ich ankam, verstand ich nichts. [pause] Wenn ich Zeit hätte, würde ich mehr lesen. [pause] Ich freue mich darauf, dich zu sehen. [pause] Trotz des Regens gehen wir spazieren. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

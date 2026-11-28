@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_45",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "das Einkommen.",
+    "Die Miete ist ein Drittel des Einkommens."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "ausgeben, du gibst aus, hat ausgegeben.",
+    "Wofür gibst du dein Geld aus?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "sich leisten, hat sich geleistet.",
+    "Das kann ich mir nicht leisten."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "die Schulden.",
+    "Ich möchte keine Schulden machen."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "der Betrag, die Beträge.",
+    "Der Betrag stimmt nicht."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "die Summe, die Summen.",
+    "Die Summe der Ausgaben ist zu hoch."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "die Lebensmittel.",
+    "Für Lebensmittel gebe ich zweihundert Euro aus."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "der Semesterbeitrag, die Semesterbeiträge.",
+    "Der Semesterbeitrag muss im Februar bezahlt werden."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "das Stipendium, die Stipendien.",
+    "Sie bekommt ein Stipendium."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "monatlich.",
+    "Ich bezahle monatlich dreißig Euro."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Einkommen. Die Miete ist ein Drittel des Einkommens. [pause] ausgeben, du gibst aus, hat ausgegeben. Wofür gibst du dein Geld aus? [pause] sich leisten, hat sich geleistet. Das kann ich mir nicht leisten. [pause] die Schulden. Ich möchte keine Schulden machen. [pause] der Betrag, die Beträge. Der Betrag stimmt nicht. [pause] die Summe, die Summen. Die Summe der Ausgaben ist zu hoch. [pause] die Lebensmittel. Für Lebensmittel gebe ich zweihundert Euro aus. [pause] der Semesterbeitrag, die Semesterbeiträge. Der Semesterbeitrag muss im Februar bezahlt werden. [pause] das Stipendium, die Stipendien. Sie bekommt ein Stipendium. [pause] monatlich. Ich bezahle monatlich dreißig Euro. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

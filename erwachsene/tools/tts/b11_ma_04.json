@@ -1,0 +1,46 @@
+{
+ "job": "b11_ma_04",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Stimmt es, dass du ein Angebot aus Hamburg hast?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Was spricht für Hamburg?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Und was spricht dagegen?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Wie sind die Wohnungen dort?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Mann",
+   "parts": [
+    "Wann entscheidest du dich?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Stimmt es, dass du ein Angebot aus Hamburg hast? [pause] Was spricht für Hamburg? [pause] Und was spricht dagegen? [pause] Wie sind die Wohnungen dort? [pause] Wann entscheidest du dich? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

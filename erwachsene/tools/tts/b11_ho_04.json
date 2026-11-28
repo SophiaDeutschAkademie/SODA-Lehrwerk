@@ -1,0 +1,32 @@
+{
+ "job": "b11_ho_04",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Dienstag und Donnerstag sind feste Bürotage. Die Laptops werden nächste Woche verteilt."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Bitte tragen Sie Ihre Homeoffice-Tage bis Mittwoch in die Liste ein."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Das muss noch geklärt werden."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Dienstag und Donnerstag sind feste Bürotage. Die Laptops werden nächste Woche verteilt. [pause] Bitte tragen Sie Ihre Homeoffice-Tage bis Mittwoch in die Liste ein. [pause] Das muss noch geklärt werden. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

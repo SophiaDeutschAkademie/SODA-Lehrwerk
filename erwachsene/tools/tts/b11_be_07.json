@@ -1,0 +1,81 @@
+{
+ "job": "b11_be_07",
+ "who": "Becker",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "b1-1/7",
+   "who": "Becker",
+   "parts": [
+    "Sie sind Designerin. Finden Sie das Plakat gut gemacht?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Becker",
+   "parts": [
+    "Kaufen Sie manchmal etwas wegen der Werbung?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Becker",
+   "parts": [
+    "Brauchten Sie den Mantel?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Becker",
+   "parts": [
+    "Das ist ein bekannter Trick. Wegen der kurzen Zeit denkt man nicht lange nach."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Becker",
+   "parts": [
+    "Ein kluger Satz. Und wie informieren Sie sich vor einem größeren Kauf?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Becker",
+   "parts": [
+    "Sehr vernünftig. Was ist für Sie gute Werbung?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Becker",
+   "parts": [
+    "Frau Lee, heute ist unsere letzte Stunde. Herzlichen Glückwunsch noch einmal zur Prüfung!"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Becker",
+   "parts": [
+    "Das haben Sie selbst geschafft. Worauf freuen Sie sich jetzt am meisten?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Becker",
+   "parts": [
+    "Haben Sie in Frankfurt schon viele Freunde gefunden?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Becker",
+   "parts": [
+    "Im Deutschen unterscheiden wir genau. Ein Bekannter ist jemand, den man kennt und grüßt. Ein Freund ist jemand, auf den man sich verlassen kann."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Sie sind Designerin. Finden Sie das Plakat gut gemacht? [pause] Kaufen Sie manchmal etwas wegen der Werbung? [pause] Brauchten Sie den Mantel? [pause] Das ist ein bekannter Trick. Wegen der kurzen Zeit denkt man nicht lange nach. [pause] Ein kluger Satz. Und wie informieren Sie sich vor einem größeren Kauf? [pause] Sehr vernünftig. Was ist für Sie gute Werbung? [pause] Frau Lee, heute ist unsere letzte Stunde. Herzlichen Glückwunsch noch einmal zur Prüfung! [pause] Das haben Sie selbst geschafft. Worauf freuen Sie sich jetzt am meisten? [pause] Haben Sie in Frankfurt schon viele Freunde gefunden? [pause] Im Deutschen unterscheiden wir genau. Ein Bekannter ist jemand, den man kennt und grüßt. Ein Freund ist jemand, auf den man sich verlassen kann. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

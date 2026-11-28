@@ -1,0 +1,86 @@
+{
+ "job": "b11_n_13",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "das Gespräch, die Gespräche.",
+    "Danke für das gute Gespräch."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "reagieren, hat reagiert.",
+    "Wie hat er reagiert?"
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "vertrauen, hat vertraut.",
+    "Ich vertraue meinen Mitbewohnern."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "gerecht.",
+    "Der neue Plan ist gerecht."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "erledigen, hat erledigt.",
+    "Ich erledige das heute noch."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Nachbar, dem ich helfe. die Nachbarin, der ich helfe. die Nachbarn, denen ich helfe."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "der Freund, mit dem ich wohne. die Freundin, mit der ich wohne. die Freunde, mit denen ich wohne."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "Du könntest ihm einen Brief schreiben. Ich würde zuerst mit ihm reden."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "An deiner Stelle würde ich es ansprechen. Du solltest auf jeden Fall mit ihm sprechen."
+   ]
+  },
+  {
+   "pid": "b1-1/2",
+   "who": "N",
+   "parts": [
+    "mit ihm, mit ihr"
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Gespräch, die Gespräche. Danke für das gute Gespräch. [pause] reagieren, hat reagiert. Wie hat er reagiert? [pause] vertrauen, hat vertraut. Ich vertraue meinen Mitbewohnern. [pause] gerecht. Der neue Plan ist gerecht. [pause] erledigen, hat erledigt. Ich erledige das heute noch. [pause] der Nachbar, dem ich helfe. die Nachbarin, der ich helfe. die Nachbarn, denen ich helfe. [pause] der Freund, mit dem ich wohne. die Freundin, mit der ich wohne. die Freunde, mit denen ich wohne. [pause] Du könntest ihm einen Brief schreiben. Ich würde zuerst mit ihm reden. [pause] An deiner Stelle würde ich es ansprechen. Du solltest auf jeden Fall mit ihm sprechen. [pause] mit ihm, mit ihr [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

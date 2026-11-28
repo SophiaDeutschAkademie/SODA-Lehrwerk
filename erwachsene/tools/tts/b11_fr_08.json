@@ -1,0 +1,81 @@
+{
+ "job": "b11_fr_08",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Ich bin neu hier und kenne niemanden. Wie war das bei dir am Anfang?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Und wie hast du Leute kennengelernt?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Worüber sprecht ihr?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Hast du Angst davor, Fehler auf Deutsch zu machen?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Was würdest du mir raten?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Du warst am Freitag nicht auf meiner Feier. Ich war ziemlich enttäuscht."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Aber ich habe sie schon vor zwei Wochen geschickt."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Ich dachte, du hast keine Lust."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Wirklich?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Frau",
+   "parts": [
+    "Schon gut. Ich bin froh, dass wir darüber gesprochen haben."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich bin neu hier und kenne niemanden. Wie war das bei dir am Anfang? [pause] Und wie hast du Leute kennengelernt? [pause] Worüber sprecht ihr? [pause] Hast du Angst davor, Fehler auf Deutsch zu machen? [pause] Was würdest du mir raten? [pause] Du warst am Freitag nicht auf meiner Feier. Ich war ziemlich enttäuscht. [pause] Aber ich habe sie schon vor zwei Wochen geschickt. [pause] Ich dachte, du hast keine Lust. [pause] Wirklich? [pause] Schon gut. Ich bin froh, dass wir darüber gesprochen haben. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

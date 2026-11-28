@@ -1,0 +1,46 @@
+{
+ "job": "b11s_fr_02",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Und jetzt unser Tipp für Verbraucher. Am Anfang des Jahres kommen die Jahresrechnungen für Strom und Heizung."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Frau",
+   "parts": [
+    "In vielen Rechnungen gibt es Fehler. Vergleichen Sie deshalb den Zählerstand auf der Rechnung mit Ihrem Zähler."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Wenn der Betrag nicht stimmt, sollten Sie schriftlich widersprechen, obwohl ein Anruf schneller geht."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Bewahren Sie alle Belege auf. Und wenn Sie Hilfe brauchen, können Sie die Verbraucherzentrale fragen."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Was würden Sie tun, wenn Sie mehr Zeit hätten?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und jetzt unser Tipp für Verbraucher. Am Anfang des Jahres kommen die Jahresrechnungen für Strom und Heizung. [pause] In vielen Rechnungen gibt es Fehler. Vergleichen Sie deshalb den Zählerstand auf der Rechnung mit Ihrem Zähler. [pause] Wenn der Betrag nicht stimmt, sollten Sie schriftlich widersprechen, obwohl ein Anruf schneller geht. [pause] Bewahren Sie alle Belege auf. Und wenn Sie Hilfe brauchen, können Sie die Verbraucherzentrale fragen. [pause] Was würden Sie tun, wenn Sie mehr Zeit hätten? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

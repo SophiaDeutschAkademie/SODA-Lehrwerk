@@ -1,0 +1,67 @@
+{
+ "job": "b11_le_05",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-1/4",
+   "who": "Lena",
+   "parts": [
+    "Du siehst erschöpft aus. Wie viele Tassen Kaffee waren das heute?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Lena",
+   "parts": [
+    "Und wie viel schläfst du im Moment?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Lena",
+   "parts": [
+    "Kein Wunder bei so viel Kaffee. Wenn du nachmittags keinen Kaffee mehr trinken würdest, könntest du besser schlafen."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Lena",
+   "parts": [
+    "Das denkst du nur. Wenn ich du wäre, würde ich heute Abend gar nichts mehr machen und früh ins Bett gehen."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Lena",
+   "parts": [
+    "Du arbeitest seit heute Morgen. Wie viel schaffst du jetzt noch?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Lena",
+   "parts": [
+    "Siehst du. Eine Stunde mit klarem Kopf ist besser als drei Stunden ohne Energie."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Lena",
+   "parts": [
+    "Wenn du am Mittwoch nach der Abgabe zum Yoga gehen würdest, hättest du wenigstens einen Ausgleich."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Lena",
+   "parts": [
+    "Heute machen wir einen Spaziergang, zwanzig Minuten an der frischen Luft. Und dann trinkst du einen Tee, keinen Kaffee."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Du siehst erschöpft aus. Wie viele Tassen Kaffee waren das heute? [pause] Und wie viel schläfst du im Moment? [pause] Kein Wunder bei so viel Kaffee. Wenn du nachmittags keinen Kaffee mehr trinken würdest, könntest du besser schlafen. [pause] Das denkst du nur. Wenn ich du wäre, würde ich heute Abend gar nichts mehr machen und früh ins Bett gehen. [pause] Du arbeitest seit heute Morgen. Wie viel schaffst du jetzt noch? [pause] Siehst du. Eine Stunde mit klarem Kopf ist besser als drei Stunden ohne Energie. [pause] Wenn du am Mittwoch nach der Abgabe zum Yoga gehen würdest, hättest du wenigstens einen Ausgleich. [pause] Heute machen wir einen Spaziergang, zwanzig Minuten an der frischen Luft. Und dann trinkst du einen Tee, keinen Kaffee. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

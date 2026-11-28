@@ -1,0 +1,53 @@
+{
+ "job": "b11s_so_01",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "b1-1/wiederholung-1",
+   "who": "Sora",
+   "parts": [
+    "Guten Tag, hier ist Sora Lee. Ich rufe an, um mich für die B1-Prüfung im Dezember anzumelden."
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-1",
+   "who": "Sora",
+   "parts": [
+    "Was kostet die Prüfung?"
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-1",
+   "who": "Sora",
+   "parts": [
+    "Gibt es einen Kurs, in dem man die Prüfung üben kann?"
+   ]
+  },
+  {
+   "pid": "b1-1/wiederholung-1",
+   "who": "Sora",
+   "parts": [
+    "Gut. Dann melde ich mich für beides an."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Je länger ich hier wohne, desto besser gefällt mir die Stadt."
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Worauf freust du dich im Moment?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag, hier ist Sora Lee. Ich rufe an, um mich für die B1-Prüfung im Dezember anzumelden. [pause] Was kostet die Prüfung? [pause] Gibt es einen Kurs, in dem man die Prüfung üben kann? [pause] Gut. Dann melde ich mich für beides an. [pause] Je länger ich hier wohne, desto besser gefällt mir die Stadt. [pause] Worauf freust du dich im Moment? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

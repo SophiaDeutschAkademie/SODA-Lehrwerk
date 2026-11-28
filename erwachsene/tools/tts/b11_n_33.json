@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_33",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "das Lager, die Lager.",
+    "Die Ware ist im Lager."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "einführen, hat eingeführt.",
+    "Die Firma führt Homeoffice ein."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "das Ergebnis, die Ergebnisse.",
+    "Die Ergebnisse kommen im Januar."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "das Labor, die Labore.",
+    "Lena arbeitet im Labor."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Probe, die Proben.",
+    "Die Proben werden morgens geliefert."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "reinigen, hat gereinigt.",
+    "Die Geräte müssen gereinigt werden."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "testen, hat getestet.",
+    "Die Maschine wird morgen getestet."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "eintragen, du trägst ein, hat eingetragen.",
+    "Tragen Sie Ihren Namen in die Liste ein."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "einarbeiten, hat eingearbeitet.",
+    "Ich wurde gut eingearbeitet."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "N",
+   "parts": [
+    "die Praktikantin, die Praktikantinnen.",
+    "Die Praktikantin bereitet die Proben vor."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Lager, die Lager. Die Ware ist im Lager. [pause] einführen, hat eingeführt. Die Firma führt Homeoffice ein. [pause] das Ergebnis, die Ergebnisse. Die Ergebnisse kommen im Januar. [pause] das Labor, die Labore. Lena arbeitet im Labor. [pause] die Probe, die Proben. Die Proben werden morgens geliefert. [pause] reinigen, hat gereinigt. Die Geräte müssen gereinigt werden. [pause] testen, hat getestet. Die Maschine wird morgen getestet. [pause] eintragen, du trägst ein, hat eingetragen. Tragen Sie Ihren Namen in die Liste ein. [pause] einarbeiten, hat eingearbeitet. Ich wurde gut eingearbeitet. [pause] die Praktikantin, die Praktikantinnen. Die Praktikantin bereitet die Proben vor. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

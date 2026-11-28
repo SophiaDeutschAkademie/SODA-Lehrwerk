@@ -1,0 +1,67 @@
+{
+ "job": "b11_mk_02",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "b1-1/2",
+   "who": "Markus",
+   "parts": [
+    "An deiner Stelle würde ich mit ihm reden."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Markus",
+   "parts": [
+    "Dohyun, du bist ja immer noch da. Es ist sieben Uhr!"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Markus",
+   "parts": [
+    "Das ist schon die dritte Woche mit Überstunden. Wie geht es deinem Rücken?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Markus",
+   "parts": [
+    "Und zu Hause? Kannst du da abschalten?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Markus",
+   "parts": [
+    "Das kenne ich von früher. Vor drei Jahren war ich auch immer erreichbar. Dann wurde ich krank."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Markus",
+   "parts": [
+    "Ja, ich war sechs Wochen zu Hause. Seitdem mache ich um halb sechs Feierabend, auch wenn nicht alles fertig ist."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Markus",
+   "parts": [
+    "Dann sprich mit Frau Hoffmann. Wenn wir die Arbeit besser verteilen würden, müsstest du nicht jeden Abend hier sitzen."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Markus",
+   "parts": [
+    "Das denkt sie nicht. Wenn ich an deiner Stelle wäre, würde ich ihr die Situation ehrlich erklären."
+   ]
+  }
+ ],
+ "script": "Also. [pause] An deiner Stelle würde ich mit ihm reden. [pause] Dohyun, du bist ja immer noch da. Es ist sieben Uhr! [pause] Das ist schon die dritte Woche mit Überstunden. Wie geht es deinem Rücken? [pause] Und zu Hause? Kannst du da abschalten? [pause] Das kenne ich von früher. Vor drei Jahren war ich auch immer erreichbar. Dann wurde ich krank. [pause] Ja, ich war sechs Wochen zu Hause. Seitdem mache ich um halb sechs Feierabend, auch wenn nicht alles fertig ist. [pause] Dann sprich mit Frau Hoffmann. Wenn wir die Arbeit besser verteilen würden, müsstest du nicht jeden Abend hier sitzen. [pause] Das denkt sie nicht. Wenn ich an deiner Stelle wäre, würde ich ihr die Situation ehrlich erklären. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

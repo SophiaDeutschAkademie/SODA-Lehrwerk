@@ -1,0 +1,83 @@
+{
+ "job": "b11_n_44",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "Mit kleinem Budget lebt man in Leipzig besser."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "Dort gibt es sicher auch koreanisches Essen."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "Je länger ich überlege, desto schwieriger wird die Entscheidung."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "Je mehr wir sehen, desto leichter wird die Entscheidung."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "Am Ende des Monats ist mein Konto leer."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "Ich rufe wegen meiner Rechnung an."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "Trotz des Rabatts war der Mantel teuer."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "Könnten Sie mir den Namen des Kollegen geben?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "die Ausgabe, die Ausgaben.",
+    "Meine Ausgaben sind zu hoch."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "N",
+   "parts": [
+    "die Einnahme, die Einnahmen.",
+    "Meine Einnahmen sind tausend Euro im Monat."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Mit kleinem Budget lebt man in Leipzig besser. [pause] Dort gibt es sicher auch koreanisches Essen. [pause] Je länger ich überlege, desto schwieriger wird die Entscheidung. [pause] Je mehr wir sehen, desto leichter wird die Entscheidung. [pause] Am Ende des Monats ist mein Konto leer. [pause] Ich rufe wegen meiner Rechnung an. [pause] Trotz des Rabatts war der Mantel teuer. [pause] Könnten Sie mir den Namen des Kollegen geben? [pause] die Ausgabe, die Ausgaben. Meine Ausgaben sind zu hoch. [pause] die Einnahme, die Einnahmen. Meine Einnahmen sind tausend Euro im Monat. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

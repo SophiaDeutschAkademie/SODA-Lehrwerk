@@ -1,0 +1,81 @@
+{
+ "job": "b11_ji_05",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Und was wird dort genau gemacht?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Und dann?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Darfst du auch schon etwas selbst machen?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Das klingt nach vielen Regeln."
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Hattest du schon Probleme?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Und wie sind die Kollegen?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Ja! Ich wurde heute zu einem Gespräch eingeladen. Es geht um ein Praktikum bei einer Softwarefirma im Februar."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Jiu",
+   "parts": [
+    "Zwei ganz verschiedene Städte. Was spricht für Leipzig?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Jiu",
+   "parts": [
+    "Niedrigere Mieten sind ein starkes Argument. Und Freiburg?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Jiu",
+   "parts": [
+    "Das klingt nach einem schöneren Alltag. Aber wie ist das Studium?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und was wird dort genau gemacht? [pause] Und dann? [pause] Darfst du auch schon etwas selbst machen? [pause] Das klingt nach vielen Regeln. [pause] Hattest du schon Probleme? [pause] Und wie sind die Kollegen? [pause] Ja! Ich wurde heute zu einem Gespräch eingeladen. Es geht um ein Praktikum bei einer Softwarefirma im Februar. [pause] Zwei ganz verschiedene Städte. Was spricht für Leipzig? [pause] Niedrigere Mieten sind ein starkes Argument. Und Freiburg? [pause] Das klingt nach einem schöneren Alltag. Aber wie ist das Studium? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "b11_le_11",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Bleibt am Ende des Monats etwas übrig?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Lena",
+   "parts": [
+    "Was willst du ändern?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lena",
+   "parts": [
+    "Leipzig hat mir wirklich gefallen. Ich freue mich darauf, dort zu studieren."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lena",
+   "parts": [
+    "Aber ich habe auch Angst davor. In Frankfurt kenne ich alle, in Leipzig niemanden."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lena",
+   "parts": [
+    "Wirklich? Woran denkst du?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lena",
+   "parts": [
+    "Und du? Hast du die anderen angesprochen?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lena",
+   "parts": [
+    "Typisch. Alle warten, und niemand fängt an. Und wie hast du dann Leute kennengelernt?"
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lena",
+   "parts": [
+    "Daran erinnere ich mich gut! Felix und ich haben so gelacht. Entschuldige, wir haben nicht über dich gelacht, nur über den Satz."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lena",
+   "parts": [
+    "Siehst du, aus einem Fehler ist eine Freundschaft geworden."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Lena",
+   "parts": [
+    "Ich auch. Aber wir bleiben in Kontakt. Versprichst du mir, mich oft zu besuchen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Bleibt am Ende des Monats etwas übrig? [pause] Was willst du ändern? [pause] Leipzig hat mir wirklich gefallen. Ich freue mich darauf, dort zu studieren. [pause] Aber ich habe auch Angst davor. In Frankfurt kenne ich alle, in Leipzig niemanden. [pause] Wirklich? Woran denkst du? [pause] Und du? Hast du die anderen angesprochen? [pause] Typisch. Alle warten, und niemand fängt an. Und wie hast du dann Leute kennengelernt? [pause] Daran erinnere ich mich gut! Felix und ich haben so gelacht. Entschuldige, wir haben nicht über dich gelacht, nur über den Satz. [pause] Siehst du, aus einem Fehler ist eine Freundschaft geworden. [pause] Ich auch. Aber wir bleiben in Kontakt. Versprichst du mir, mich oft zu besuchen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

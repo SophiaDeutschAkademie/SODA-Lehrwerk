@@ -1,0 +1,81 @@
+{
+ "job": "b11_fr_05",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Gibt es auch Nachteile?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Wie könnte das gelöst werden?"
+   ]
+  },
+  {
+   "pid": "b1-1/5",
+   "who": "Frau",
+   "parts": [
+    "Und die Gespräche mit den Kunden?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Herr Kraft, Sie fahren jeden Tag fünfzig Kilometer nach Frankfurt. Warum wohnen Sie nicht in der Stadt?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Und der längere Arbeitsweg stört Sie nicht?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "Frau",
+   "parts": [
+    "Würden Sie wieder aufs Land ziehen?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Stadtwerke, Kundenservice, guten Tag. Was kann ich für Sie tun?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Haben Sie Ihre Kundennummer?"
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Danke, Herr Park. Ich sehe die Rechnung des letzten Jahres. Die Nachzahlung ist vierhundertachtzig Euro."
+   ]
+  },
+  {
+   "pid": "b1-1/7",
+   "who": "Frau",
+   "parts": [
+    "Haben Sie den Zählerstand auf der Rechnung mit Ihrem Zähler verglichen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gibt es auch Nachteile? [pause] Wie könnte das gelöst werden? [pause] Und die Gespräche mit den Kunden? [pause] Herr Kraft, Sie fahren jeden Tag fünfzig Kilometer nach Frankfurt. Warum wohnen Sie nicht in der Stadt? [pause] Und der längere Arbeitsweg stört Sie nicht? [pause] Würden Sie wieder aufs Land ziehen? [pause] Stadtwerke, Kundenservice, guten Tag. Was kann ich für Sie tun? [pause] Haben Sie Ihre Kundennummer? [pause] Danke, Herr Park. Ich sehe die Rechnung des letzten Jahres. Die Nachzahlung ist vierhundertachtzig Euro. [pause] Haben Sie den Zählerstand auf der Rechnung mit Ihrem Zähler verglichen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

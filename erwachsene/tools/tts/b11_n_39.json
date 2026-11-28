@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_39",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "der Umzug, die Umzüge.",
+    "Der Umzug war anstrengend."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "aufwachsen, du wächst auf, ist aufgewachsen.",
+    "Ich bin in einem Dorf aufgewachsen."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "der Hafen, die Häfen.",
+    "Hamburg hat einen großen Hafen."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "die Lebensqualität.",
+    "Die Lebensqualität ist hier hoch."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "die Lebenshaltungskosten.",
+    "Die Lebenshaltungskosten sind in der Stadt höher."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "bezahlbar.",
+    "Bezahlbare Wohnungen sind selten."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "die Auswahl.",
+    "In der Stadt ist die Auswahl größer."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "das Verkehrsmittel, die Verkehrsmittel.",
+    "Welches Verkehrsmittel benutzt du?"
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "der Nahverkehr.",
+    "Der Nahverkehr ist hier sehr gut."
+   ]
+  },
+  {
+   "pid": "b1-1/6",
+   "who": "N",
+   "parts": [
+    "die Entfernung, die Entfernungen.",
+    "Die Entfernung zur Arbeit ist groß."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Umzug, die Umzüge. Der Umzug war anstrengend. [pause] aufwachsen, du wächst auf, ist aufgewachsen. Ich bin in einem Dorf aufgewachsen. [pause] der Hafen, die Häfen. Hamburg hat einen großen Hafen. [pause] die Lebensqualität. Die Lebensqualität ist hier hoch. [pause] die Lebenshaltungskosten. Die Lebenshaltungskosten sind in der Stadt höher. [pause] bezahlbar. Bezahlbare Wohnungen sind selten. [pause] die Auswahl. In der Stadt ist die Auswahl größer. [pause] das Verkehrsmittel, die Verkehrsmittel. Welches Verkehrsmittel benutzt du? [pause] der Nahverkehr. Der Nahverkehr ist hier sehr gut. [pause] die Entfernung, die Entfernungen. Die Entfernung zur Arbeit ist groß. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

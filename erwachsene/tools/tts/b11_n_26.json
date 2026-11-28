@@ -1,0 +1,91 @@
+{
+ "job": "b11_n_26",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "abschalten, hat abgeschaltet.",
+    "Am Wochenende kann ich nicht abschalten."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "erreichbar.",
+    "Im Urlaub bin ich nicht erreichbar."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "der Ausgleich.",
+    "Sport ist ein guter Ausgleich."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "die Klausur, die Klausuren.",
+    "Nächste Woche schreibe ich drei Klausuren."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "abgeben, du gibst ab, hat abgegeben.",
+    "Ich muss das Projekt am Mittwoch abgeben."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "verteilen, hat verteilt.",
+    "Wir verteilen die Aufgaben im Team."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "sich Sorgen machen.",
+    "Mach dir keine Sorgen!"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "nervös.",
+    "Vor Prüfungen bin ich immer nervös."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "die Laune.",
+    "Heute habe ich schlechte Laune."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "N",
+   "parts": [
+    "die Energie.",
+    "Ich habe keine Energie mehr."
+   ]
+  }
+ ],
+ "script": "Also. [pause] abschalten, hat abgeschaltet. Am Wochenende kann ich nicht abschalten. [pause] erreichbar. Im Urlaub bin ich nicht erreichbar. [pause] der Ausgleich. Sport ist ein guter Ausgleich. [pause] die Klausur, die Klausuren. Nächste Woche schreibe ich drei Klausuren. [pause] abgeben, du gibst ab, hat abgegeben. Ich muss das Projekt am Mittwoch abgeben. [pause] verteilen, hat verteilt. Wir verteilen die Aufgaben im Team. [pause] sich Sorgen machen. Mach dir keine Sorgen! [pause] nervös. Vor Prüfungen bin ich immer nervös. [pause] die Laune. Heute habe ich schlechte Laune. [pause] die Energie. Ich habe keine Energie mehr. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

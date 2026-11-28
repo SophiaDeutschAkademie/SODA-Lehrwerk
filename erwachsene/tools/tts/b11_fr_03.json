@@ -1,0 +1,67 @@
+{
+ "job": "b11_fr_03",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Wie viele Stunden schlafen Sie ungefähr?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Das ist zu wenig. Und wie ernähren Sie sich?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Und Bewegung? Machen Sie Sport?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Was würden Sie tun, wenn Sie jeden Tag eine halbe Stunde mehr hätten?"
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Genau das habe ich gedacht. Frau Lee, Ihr Körper braucht Erholung. Sie lernen nicht besser, wenn Sie erschöpft sind."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Drei Dinge. Erstens: kein Handy und kein Buch im Bett. Zweitens: jeden Tag zwanzig Minuten spazieren gehen, auch wenn es regnet."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Lernen Sie nicht nach neun Uhr abends. Obwohl Sie dann weniger Zeit haben, behalten Sie mehr."
+   ]
+  },
+  {
+   "pid": "b1-1/4",
+   "who": "Frau",
+   "parts": [
+    "Viele Menschen sagen: Wenn ich mehr Zeit hätte, würde ich mehr Sport machen. Aber stimmt das wirklich?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wie viele Stunden schlafen Sie ungefähr? [pause] Das ist zu wenig. Und wie ernähren Sie sich? [pause] Und Bewegung? Machen Sie Sport? [pause] Was würden Sie tun, wenn Sie jeden Tag eine halbe Stunde mehr hätten? [pause] Genau das habe ich gedacht. Frau Lee, Ihr Körper braucht Erholung. Sie lernen nicht besser, wenn Sie erschöpft sind. [pause] Drei Dinge. Erstens: kein Handy und kein Buch im Bett. Zweitens: jeden Tag zwanzig Minuten spazieren gehen, auch wenn es regnet. [pause] Lernen Sie nicht nach neun Uhr abends. Obwohl Sie dann weniger Zeit haben, behalten Sie mehr. [pause] Viele Menschen sagen: Wenn ich mehr Zeit hätte, würde ich mehr Sport machen. Aber stimmt das wirklich? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,25 @@
+{
+ "job": "b11_mk_05",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "b1-1/8",
+   "who": "Markus",
+   "parts": [
+    "Ich habe darauf gewartet, dass du es mir erzählst."
+   ]
+  },
+  {
+   "pid": "b1-1/8",
+   "who": "Markus",
+   "parts": [
+    "Das war ein Missverständnis."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich habe darauf gewartet, dass du es mir erzählst. [pause] Das war ein Missverständnis. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

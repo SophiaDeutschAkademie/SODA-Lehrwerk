@@ -1,0 +1,39 @@
+{
+ "job": "b11s_ji_01",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Vielen Dank. Woran werde ich arbeiten?"
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Und was ist meine Aufgabe?"
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Mit wem arbeite ich zusammen?"
+   ]
+  },
+  {
+   "pid": "b1-1/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Würdest du lieber in einer Großstadt oder auf dem Land wohnen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Vielen Dank. Woran werde ich arbeiten? [pause] Und was ist meine Aufgabe? [pause] Mit wem arbeite ich zusammen? [pause] Würdest du lieber in einer Großstadt oder auf dem Land wohnen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}
