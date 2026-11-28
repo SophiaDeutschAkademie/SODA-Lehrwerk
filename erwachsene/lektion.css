@@ -418,6 +418,7 @@ body[data-typ="test"] .schritte{grid-template-columns:repeat(5,minmax(0,1fr));ma
   .kopf{padding-top:18px}
   .schritte{max-width:420px}
   .szene{padding:14px}
+  .szene img{max-height:600px;object-fit:contain}
   .qz-o{grid-template-columns:repeat(4,1fr)}
   .w-bild{width:76px;height:76px}
   .bilder{grid-template-columns:1fr 1fr}

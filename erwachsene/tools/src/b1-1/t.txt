@@ -1,0 +1,156 @@
+@id b1-1/stufentest
+@typ test
+
+== hoeren
+-- info B1.1을 돌아보는 평가예요
+p: 듣기, 읽기, 쓰기, 말하기 네 부분으로 되어 있어요. 시간 제한은 없어요. 문제를 풀면 바로 맞았는지 알려 주고, 마지막 Ergebnis에서 부분마다 몇 문제를 맞혔는지 보여 줘요.
+p: 음성은 여러 번 들을 수 있어요. 먼저 한 번만 듣고 풀어 보면 내 듣기 실력을 더 정확히 알 수 있어요.
+
+-- ex Hören 1 | 짧은 말을 듣고 알맞은 것을 고르세요.
+hör: Lena: Ich habe mir vorgenommen, jeden Tag zwanzig Minuten Koreanisch zu lernen.
+mc: Lena는 무엇을 하기로 마음먹었나요? | 날마다 20분씩 한국어를 공부하기* | 한국에 20일 동안 다녀오기 | 한국어 과정에 등록하기
+hör: Markus: An deiner Stelle würde ich zuerst mit dem Nachbarn sprechen.
+mc: Markus는 무엇을 조언하나요? | 먼저 이웃과 이야기하라고 해요* | 먼저 관리 회사에 전화하라고 해요 | 이웃과 말하지 말라고 해요
+hör: Frau: Wegen eines Streiks fuhren gestern keine Züge nach Frankfurt.
+mc: 어제 무슨 일이 있었나요? | 파업 때문에 기차가 다니지 않았어요* | 사고 때문에 기차가 늦었어요 | 눈 때문에 기차가 서 있었어요 => wegen은 '~ 때문에'예요.
+hör: Dohyun: Wenn ich mehr Zeit hätte, würde ich wieder Tischtennis spielen.
+mc: Dohyun은 지금 탁구를 치나요? | 아니요, 시간이 없어서 못 쳐요* | 네, 주마다 쳐요 | 내일부터 다시 쳐요 => hätte와 würde는 실제가 아닌 일을 말해요.
+hör: Sora: Je länger ich hier wohne, desto besser gefällt mir die Stadt.
+mc: Sora는 이 도시를 어떻게 느끼나요? | 오래 살수록 더 마음에 들어요* | 오래 살수록 싫어져요 | 처음부터 마음에 들지 않았어요
+
+-- ex Hören 2 | Jiu가 인턴으로 일하는 첫날이에요. 듣고 답하세요.
+audio | Der erste Tag im Praktikum | Mann=Herr Engel
+> Mann: Willkommen bei Datenwerk, Frau Kim. Ich zeige Ihnen zuerst Ihren Arbeitsplatz.
+> Jiu: Vielen Dank. Woran werde ich arbeiten?
+> Mann: An einer App für eine Buchhandlung. Die App wurde letztes Jahr entwickelt und wird jetzt verbessert.
+> Jiu: Und was ist meine Aufgabe?
+> Mann: Sie testen die neuen Funktionen. Jeder Fehler muss in eine Liste eingetragen werden.
+> Jiu: Mit wem arbeite ich zusammen?
+> Mann: Mit Frau Aydin. Sie ist die Kollegin, die das Projekt leitet. Montags um zehn wird die Woche besprochen.
+mc: Woran arbeitet Jiu? | an einer App für eine Buchhandlung* | an einer Internetseite für eine Schule | an einem Programm für die Bibliothek
+rf: Die App wird erst nächstes Jahr entwickelt. | f => 지난해에 개발했고 지금은 더 좋게 고치고 있어요.
+mc: Was muss mit den Fehlern gemacht werden? | Sie müssen in eine Liste eingetragen werden.* | Sie müssen sofort repariert werden. | Sie müssen dem Kunden gemeldet werden.
+mc: Wer leitet das Projekt? | Frau Aydin* | Herr Engel | Frau Kim
+
+-- ex Hören 3 | 라디오의 소비자 정보 시간이에요. 듣고 답하세요.
+audio | Ein Tipp für Verbraucher | Frau=Radio
+> Frau: Und jetzt unser Tipp für Verbraucher. Am Anfang des Jahres kommen die Jahresrechnungen für Strom und Heizung.
+> Frau: In vielen Rechnungen gibt es Fehler. Vergleichen Sie deshalb den Zählerstand auf der Rechnung mit Ihrem Zähler.
+> Frau: Wenn der Betrag nicht stimmt, sollten Sie schriftlich widersprechen, obwohl ein Anruf schneller geht.
+> Frau: Bewahren Sie alle Belege auf. Und wenn Sie Hilfe brauchen, können Sie die Verbraucherzentrale fragen.
+mc: Wann kommen die Jahresrechnungen? | am Anfang des Jahres* | am Ende des Sommers | jeden Monat
+mc: Was soll man vergleichen? | den Zählerstand auf der Rechnung mit dem Zähler* | die Rechnung mit der Rechnung der Nachbarn | den Betrag mit dem Betrag im letzten Jahr
+rf: Bei einem Fehler soll man nur anrufen. | f => 글로 이의를 제기하라고 했어요.
+mc: 도움이 필요하면 어디에 물어볼 수 있나요? | 소비자 상담 기관* | 은행 | 건물 관리 회사
+
+== lesen
+-- ex Lesen 1 | 게시판에 붙은 글이에요. 읽고 답하세요.
+text notiz | Zimmer frei
+> Helles Zimmer in netter WG ab 1. April frei!
+> Wir sind zwei Studentinnen und ein Berufstätiger und suchen eine Mitbewohnerin oder einen Mitbewohner, auf den man sich verlassen kann.
+> Das Zimmer hat 16 Quadratmeter und kostet 420 Euro im Monat. Küche und Bad werden geteilt.
+> Bei uns wird abwechselnd geputzt, und einmal im Monat kochen wir gemeinsam.
+> Wir wünschen uns jemanden, der ordentlich ist und Rücksicht nimmt. Laute Partys unter der Woche gibt es bei uns nicht.
+> Interesse? Dann schreib uns, wer du bist und warum du zu uns passt.
+mc: Ab wann ist das Zimmer frei? | ab dem 1. April* | ab sofort | ab dem 16. April
+rf: In der WG wohnen im Moment vier Personen. | f => 대학생 둘과 직장인 하나, 모두 세 사람이에요.
+mc: Wie wird in der WG geputzt? | abwechselnd* | einmal im Monat | von einer Firma
+mc: 이 WG는 어떤 사람을 찾나요? | 깔끔하고 남을 배려하는 사람* | 요리를 잘하는 사람 | 파티를 좋아하는 사람
+
+-- ex Lesen 2 | 지역 신문의 기사예요. 읽고 답하세요.
+text notiz | Viele Besucher am Sonntag
+> Frankfurt. Seit Januar hat die Stadtbibliothek auch am Sonntag geöffnet. Gestern stellte die Stadt die ersten Zahlen vor.
+> In den ersten sechs Wochen kamen an jedem Sonntag etwa 900 Besucher, mehr als an einem normalen Wochentag.
+> Besonders Familien und Studierende kamen in die Bibliothek.
+> Die Leiterin, Frau Kern, war zufrieden: „So viele Besucher haben wir nicht erwartet.“
+> Trotz des Erfolgs gibt es ein Problem: Es fehlen noch Studierende, die am Sonntag in der Bibliothek arbeiten möchten.
+> Im Juli wird entschieden, ob die Bibliothek auch in Zukunft sonntags öffnet.
+mc: Was stellte die Stadt gestern vor? | die ersten Zahlen* | ein neues Gebäude | einen neuen Leiter
+mc: Wie viele Besucher kamen an einem Sonntag? | etwa 900* | etwa 600 | etwa 90
+rf: An Sonntagen kamen weniger Besucher als an Wochentagen. | f => 평일보다 더 많이 왔어요.
+mc: Wann wird entschieden, wie es weitergeht? | im Juli* | im Januar | in sechs Wochen
+
+-- ex Lesen 3 | 전기 회사가 Dohyun에게 보낸 답장이에요. 읽고 답하세요.
+text mail | Ihre Jahresrechnung
+> Von: kundenservice@stadtwerke.example.com
+> An: dohyun.park@example.com
+> Betreff: Ihre Jahresrechnung
+> Sehr geehrter Herr Park,
+> vielen Dank für Ihre E-Mail vom 25. Januar. Wir haben Ihre Jahresrechnung geprüft.
+> Sie haben recht: Der Zählerstand wurde falsch eingetragen. Wir entschuldigen uns für diesen Fehler.
+> Die Rechnung wurde korrigiert. Die Nachzahlung ist jetzt nur noch 80 Euro.
+> Der Betrag von 400 Euro wird in den nächsten Tagen auf Ihr Konto überwiesen.
+> Die neue Rechnung finden Sie im Anhang.
+> Mit freundlichen Grüßen
+> Petra Seidel
+mc: Was haben die Stadtwerke geprüft? | die Jahresrechnung von Herrn Park* | den Zähler im Haus | das Konto von Herrn Park
+rf: Der Zählerstand auf der ersten Rechnung war richtig. | f => 잘못 기입했다고 썼어요.
+mc: Wie viel Geld wird auf das Konto überwiesen? | 400 Euro* | 480 Euro | 80 Euro
+mc: 새 청구서는 어디에 있나요? | 메일에 붙어 있어요* | 우편으로 와요 | 고객 센터에 가서 받아요
+
+== schreiben
+-- ex Schreiben 1 | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / lerne Deutsch, / um / hier / zu arbeiten. | 여기서 일하려고 독일어를 배워요.
+ord: das ist der Nachbar, / dem / wir / oft / helfen. | 우리가 자주 도와주는 이웃이에요.
+ord: als / ich / ankam, / verstand ich / nichts. | 도착했을 때 아무것도 못 알아들었어요.
+ord: wenn / ich / Zeit / hätte, / würde ich / mehr lesen. | 시간이 있으면 책을 더 읽을 텐데요.
+ord: das / muss / noch / geklärt / werden. | 그건 아직 정해야 해요.
+ord: je größer / die Stadt, / desto höher / die Mieten. | 도시가 클수록 집세가 높아요.
+
+-- ex Schreiben 2 | 괄호 안의 낱말을 알맞은 형태로 바꿔 빈칸에 쓰세요.
+gap: Ich spreche langsam, [=damit] du mich verstehst. (um 또는 damit) | 당신이 알아듣게 천천히 말해요. => 주어가 다르면 damit이에요.
+gap: Das ist die Kollegin, mit [=der] ich zusammenarbeite. (die) | 저와 같이 일하는 동료예요. => mit 뒤는 Dativ예요.
+gap: Gestern Abend [=fiel] der Strom aus. (ausfallen) | 어제저녁에 전기가 나갔어요.
+gap: Wenn ich du [=wäre], würde ich mehr schlafen. (sein) | 제가 당신이라면 잠을 더 자겠어요.
+gap: Letzte Woche [=wurden] neue Laptops bestellt. (werden) | 지난주에 새 노트북을 주문했어요. => 지난 일의 Passiv는 wurde, wurden이에요.
+gap: Berlin ist die [=größte] Stadt in Deutschland. (groß) | 베를린은 독일에서 가장 큰 도시예요.
+gap: Am Ende des [=Monats] ist mein Konto leer. (der Monat) | 월말이면 계좌가 비어요.
+gap: Ich freue mich [=darauf], dich zu besuchen. (auf) | 당신을 만나러 가는 것이 기대돼요. => 뒤에 문장이 오면 darauf를 써요.
+
+-- ex Schreiben 3 | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Es ist wichtig, viel zu sprechen. | 많이 말하는 것이 중요해요.
+dik: N: An deiner Stelle würde ich mit ihm reden. | 저라면 그 사람과 이야기하겠어요.
+dik: N: Trotz des Regens gehen wir spazieren. | 비가 오는데도 우리는 산책을 가요.
+dik: N: Daran habe ich nicht gedacht. | 그 생각을 못 했어요.
+
+-- schreiben Mein Text | 다니는 어학원이 가을부터 모든 수업을 온라인으로만 하려고 해요. 어학원에 내 의견을 메일로 써요. 아래 내용을 넣어서 여덟 문장 넘게 써 보세요. 이 글은 자동으로 채점하지 않아요. 다 쓴 뒤에 예시 글과 비교하고 아래 항목을 스스로 확인해요.
+punkt: 인사 ; 내 의견 ; 좋은 점과 나쁜 점 ; 내 경험 ; 제안 ; 맺음말
+start: Sehr geehrte Damen und Herren, …
+muster: Sehr geehrte Damen und Herren, ich habe gelesen, dass ab Herbst alle Kurse nur noch online stattfinden sollen. Meiner Meinung nach ist das keine gute Idee. Einerseits spart man den Weg zur Schule, andererseits fehlt der Kontakt zu den anderen Teilnehmern. Als ich im letzten Jahr einen Online-Kurs machte, sprach ich viel weniger als im Unterricht. Obwohl die Technik gut funktionierte, konnte ich mich oft nicht konzentrieren. Wenn ein Teil der Kurse weiter in der Schule stattfinden würde, wären sicher mehr Teilnehmer zufrieden. Ich schlage deshalb vor, dass beide Formen angeboten werden. Mit freundlichen Grüßen, Minji Choi
+check: 여덟 문장 넘게 썼어요 ; 의견을 첫머리에 분명히 썼어요 ; einerseits와 andererseits를 썼어요 ; als와 Präteritum으로 경험을 썼어요 ; wenn과 würde로 제안을 썼어요
+
+== sprechen
+-- info 소리 내어 말해요
+p: 말하기는 자동으로 채점하지 않아요. 질문을 듣고 바로 소리 내어 답한 다음, 예시 답과 비교해 보세요.
+p: 녹음 단추를 누르면 내 목소리를 다시 들을 수 있어요. 녹음은 저장되지 않아요.
+
+-- sprich Fragen und Antworten | 질문을 듣고 소리 내어 답하세요. 두세 문장으로 답하면 돼요. | Frau=Ärztin; Mann=Kundenservice
+f: Becker: Warum lernen Sie Deutsch? | 독일어를 왜 배우세요? => Ich lerne Deutsch, um in Deutschland zu arbeiten. / Ich lerne Deutsch, damit ich mit meinen Kollegen sprechen kann.
+f: Lena: Mein Mitbewohner spült nie. Was würdest du an meiner Stelle tun? | 룸메이트가 설거지를 안 해요. 당신이라면 어떻게 하겠어요? => An deiner Stelle würde ich das Problem ruhig ansprechen und einen Putzplan vorschlagen.
+f: Markus: Hast du die Nachrichten gelesen? Was ist gestern passiert? | 뉴스 봤어요? 어제 무슨 일이 있었어요? => Ja. In der Zeitung stand, dass es einen Streik gab. Viele Züge fuhren nicht.
+f: Frau: Was würden Sie tun, wenn Sie mehr Zeit hätten? | 시간이 더 있다면 무엇을 하시겠어요? => Wenn ich mehr Zeit hätte, würde ich mehr Sport machen und öfter Freunde treffen.
+f: Hoffmann: Wie finden Sie die Idee, zwei Tage pro Woche zu Hause zu arbeiten? | 일주일에 이틀을 집에서 일하자는 생각을 어떻게 보세요? => Meiner Meinung nach ist das eine gute Idee. Einerseits spart man Zeit, andererseits fehlt der Kontakt zu den Kollegen.
+f: Jiu: Würdest du lieber in einer Großstadt oder auf dem Land wohnen? | 큰 도시와 시골 가운데 어디에 살고 싶어요? => Lieber in einer Großstadt. Dort gibt es bessere Verkehrsmittel und kürzere Wege.
+f: Mann: Kundenservice, guten Tag. Was kann ich für Sie tun? | 고객 센터입니다, 안녕하세요. 무엇을 도와드릴까요? => Guten Tag. Ich rufe wegen meiner Rechnung an. Der Betrag stimmt nicht. Ich bitte Sie, die Rechnung zu korrigieren.
+f: Sora: Worauf freust du dich im Moment? | 요즘 무엇이 기대돼요? => Ich freue mich auf den Sommer. Ich freue mich darauf, meine Familie zu besuchen.
+
+-- sprich Eine kurze Präsentation | 아래 낱말을 보면서 1분쯤 발표하세요. 주제는 '함께 사는 집(WG)'이에요. 먼저 혼자 말해 보고, 그다음에 예시를 확인해요.
+thema: Thema ; Meine Erfahrung ; In Korea ; Vorteile und Nachteile ; Meine Meinung
+muster: Ich möchte über das Thema Wohngemeinschaft sprechen. Als ich nach Deutschland kam, zog ich in eine WG. Dort wohne ich jetzt seit zwei Jahren. In Korea habe ich immer bei meinen Eltern gewohnt. Ein Vorteil der WG ist, dass man Geld spart und nie allein ist. Ein Nachteil ist, dass man Rücksicht nehmen muss. Meiner Meinung nach ist eine WG ideal, wenn man neu in einer Stadt ist. Vielen Dank für Ihre Aufmerksamkeit.
+
+== ergebnis
+-- bilanz
+hoch: B1.1에서 배운 내용을 잘 익혔어요. 이제 B1.2 Perspektiven으로 넘어가요.
+mittel: 대부분 익혔어요. 틀린 문제의 설명을 다시 읽고, 점수가 낮은 부분은 Wiederholung 1과 Wiederholung 2의 복습 문제로 한 번 더 연습해 보세요.
+tief: 아직 헷갈리는 내용이 많아요. Wiederholung 1과 Wiederholung 2의 복습 문제를 다시 풀고, 어려웠던 과의 Grammatik과 Training을 본 다음 평가를 한 번 더 해 보세요.
+
+-- info 쓰기와 말하기는 스스로 확인해요
+p: 글쓰기 과제와 말하기는 점수에 들어가지 않아요. 아래 세 가지를 얼마나 할 수 있는지 스스로 표시해 보세요.
+
+-- kann
+Ich kann meine Meinung in einer E-Mail begründen und einen Vorschlag machen. | 메일에서 의견에 이유를 붙이고 제안할 수 있어요.
+Ich kann von Erfahrungen und Ereignissen erzählen. | 겪은 일과 일어난 일을 이야기할 수 있어요.
+Ich kann Ratschläge geben und sagen, was ich tun würde. | 조언하고, 나라면 어떻게 할지 말할 수 있어요.
+
+-- info 다음 단계는 B1.2 Perspektiven
+p: B1.2에서는 지원서와 면접, 대학과 직업 교육, 환경과 사회 참여까지 다뤄요. 긴 글을 읽고, 내 생각을 짜임새 있게 말하고 쓰는 법을 배워요.
