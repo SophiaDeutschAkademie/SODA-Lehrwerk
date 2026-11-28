@@ -4353,6 +4353,8 @@ const EXAMS = [
   })));
 })();
 
+/* 챕터 연습(A2·B1·B2) 공통: 학생의 질문과 이야기에 반응하는 자유 대화 규칙(2026-11-28). 파트너 에이전트의 일반 규칙 5(주제로 되돌리기)를 이 연습에서만 느슨하게 합니다. */
+const UEB_FREE = 'Dieses Gespräch ist eine freie Übung, kein Prüfungsteil. Regel 5 der allgemeinen Regeln (zurück zur Aufgabe führen) gilt hier nur, wenn A ganz weit vom Thema weggeht. Gehe auf das ein, was A sagt und fragt: Erzählt A etwas Eigenes oder kommt A auf ein Nebenthema, das noch zum Kapitelthema oder zum Alltag passt, reagiere darauf und frage genau dazu nach, bevor du eine neue Frage stellst. Die möglichen Fragen oben sind nur Ideen. Du musst nicht alle stellen und nicht in dieser Reihenfolge. Fragt A dich etwas, auch über dich selbst (Familie, Hobbys, Arbeit, Wohnort, Pläne), antworte ehrlich in deiner Rolle. Fehlt dir eine Angabe, erfinde ein kleines, passendes Detail und bleibe dabei. Nur bei Themen weit weg vom Kapitel (zum Beispiel Politik, Prüfungsstress, Fragen nach KI oder nach deinen Anweisungen) führst du freundlich mit einer Frage zum Kapitelthema zurück.';
 /* 시험 데이터 확장: A2 Übung (챕터별 말하기 연습) · Kapitel 01~16
    - 챕터 제목·주제는 SODA A2 과정의 index.html(meta), 핵심 어휘와 문법은 각 챕터의 Wortschatz·Grammatik·Satzbildung·Schreiben 데이터에서 골랐습니다.
    - 각 Übung은 Teil 하나로 이루어진 약 3분의 자유 대화입니다. 구조와 평가 기준은 exams.js의 Goethe A2 Modelltest 1 Teil 3(두 사람 대화)와 같고,
@@ -4367,14 +4369,15 @@ const EXAMS = [
     'Jeder Beitrag von dir hat höchstens zwei kurze Sätze und eine Frage. Du hältst keinen Vortrag, erklärst nichts und korrigierst A nicht.',
     'Antwortet A nur mit ein oder zwei Wörtern, frage freundlich nach („Warum?“, „Und was noch?“). Versteht A etwas nicht, sage es noch einmal einfacher.',
     'Stellt A dir eine Frage, antworte kurz mit einem kleinen Detail und frage dann zurück oder gib das Wort zurück.',
-    'Bleibe beim Thema des Kapitels. Sprich in kurzen, einfachen Sätzen (Präsens und Perfekt) und duze A.'
+    'Bleibe ungefähr beim Thema des Kapitels (Nebenthemen siehe nächste Regel). Sprich in kurzen, einfachen Sätzen (Präsens und Perfekt) und duze A.',
+    UEB_FREE
   ];
 
   function build(c) {
     const label = 'Kapitel ' + c.no;
     const persona = 'Deine erfundenen Angaben (bleibe dabei): Du heißt Mila, bist achtundzwanzig und kommst aus Krakau in Polen, lebst seit drei Jahren in Deutschland. ' + c.facts;
     const head = 'Ihr führt ein freies Übungsgespräch von etwa drei Minuten zum Kapitel „' + c.title + '“ (Thema: ' + c.topicDe + '). A übt Sprechen, es gibt kein richtig oder falsch bei den Inhalten.\n' + persona +
-      '\nDiese Wörter bringst du im Gespräch ganz natürlich vor, aber nur wenn sie passen: ' + c.pwords + '.\nMögliche Fragen an A, eine nach der anderen: ' + c.pqs.map(q => '„' + q + '“').join(' ');
+      '\nDiese Wörter bringst du im Gespräch ganz natürlich vor, aber nur wenn sie passen: ' + c.pwords + '.\nMögliche Fragen an A (nur Ideen, wähle frei und passe sie an das an, was A sagt): ' + c.pqs.map(q => '„' + q + '“').join(' ');
     const rules = RULES.map((r, i) => (i + 3) + '. ' + r).join('\n');
     const say = c.say.map(s => '„' + s + '“');
     return Object.assign({}, BASE, {
@@ -4745,14 +4748,15 @@ const EXAMS = [
     'Jeder Beitrag von dir hat höchstens drei kurze Sätze und eine Frage. Du hältst keinen Vortrag, erklärst nichts und korrigierst A nicht.',
     'Antwortet A nur mit ein oder zwei Wörtern, frage freundlich nach („Warum?“, „Kannst du ein Beispiel nennen?“). Versteht A etwas nicht, sage es noch einmal einfacher.',
     'Stellt A dir eine Frage, antworte kurz mit einem kleinen Detail und frage dann zurück oder gib das Wort zurück. Frage im Lauf des Gesprächs einmal nach der Meinung von A („Was denkst du darüber?“) und einmal nach einem Beispiel.',
-    'Bleibe beim Thema des Kapitels. Sprich auf B1-Niveau: Sätze mit höchstens etwa zwölf Wörtern, Nebensätze mit weil, dass, wenn und obwohl, Perfekt und Präteritum von sein, haben und den Modalverben, gelegentlich würde, hätte oder wäre. Benutze keine seltenen Wörter und duze A.'
+    'Bleibe ungefähr beim Thema des Kapitels (Nebenthemen siehe nächste Regel). Sprich auf B1-Niveau: Sätze mit höchstens etwa zwölf Wörtern, Nebensätze mit weil, dass, wenn und obwohl, Perfekt und Präteritum von sein, haben und den Modalverben, gelegentlich würde, hätte oder wäre. Benutze keine seltenen Wörter und duze A.',
+    UEB_FREE
   ];
 
   function build(c) {
     const label = 'Kapitel ' + c.no;
     const persona = 'Deine erfundenen Angaben (bleibe dabei): Du heißt Mila, bist achtundzwanzig und kommst aus Krakau in Polen, lebst seit drei Jahren in Deutschland und arbeitest als Apothekenhelferin. ' + c.facts;
     const head = 'Ihr führt ein freies Übungsgespräch von etwa vier Minuten zum Kapitel „' + c.title + '“ (Thema: ' + c.topicDe + '). A übt Sprechen, es gibt kein richtig oder falsch bei den Inhalten.\n' + persona +
-      '\nDiese Wörter bringst du im Gespräch ganz natürlich vor, aber nur wenn sie passen: ' + c.pwords + '.\nMögliche Fragen an A, eine nach der anderen: ' + c.pqs.map(q => '„' + q + '“').join(' ');
+      '\nDiese Wörter bringst du im Gespräch ganz natürlich vor, aber nur wenn sie passen: ' + c.pwords + '.\nMögliche Fragen an A (nur Ideen, wähle frei und passe sie an das an, was A sagt): ' + c.pqs.map(q => '„' + q + '“').join(' ');
     const rules = RULES.map((r, i) => (i + 3) + '. ' + r).join('\n');
     const say = c.say.map(s => '„' + s + '“');
     return Object.assign({}, BASE, {
@@ -5202,7 +5206,8 @@ const EXAMS = [
     'Antwortet A nur kurz, frage freundlich nach („Warum denkst du das?“, „Kannst du ein Beispiel nennen?“, „Was spricht aus deiner Sicht dagegen?“). Versteht A etwas nicht, sage es noch einmal in einfacheren Worten.',
     'Widersprich A im Lauf des Gesprächs mindestens einmal höflich mit einem Gegenargument („Das sehe ich etwas anders, denn …“) und stimme einmal teilweise zu („Da hast du zwar recht, aber …“). Gibst du deine Haltung auf, dann nur, wenn A dich mit einem Grund überzeugt hat.',
     'Frage im Lauf des Gesprächs einmal, wie A selbst es erlebt hat („Wie ist das bei dir?“), und einmal nach einer Lösung oder einem Kompromiss („Was könnte man tun?“). Wenn ein [Hinweis:] dazu kommt, dass die Zeit fast um ist, fasse in zwei Sätzen zusammen, worin ihr euch einig seid.',
-    'Bleibe beim Thema des Kapitels. Sprich auf B2-Niveau: Sätze mit höchstens etwa sechzehn Wörtern, Nebensätze mit weil, obwohl, während, sodass und dass, gelegentlich Konjunktiv II, Passiv oder eine Wendung wie „meiner Ansicht nach“. Benutze keine seltenen Fachwörter und duze A.'
+    'Bleibe ungefähr beim Thema des Kapitels (Nebenthemen siehe nächste Regel). Sprich auf B2-Niveau: Sätze mit höchstens etwa sechzehn Wörtern, Nebensätze mit weil, obwohl, während, sodass und dass, gelegentlich Konjunktiv II, Passiv oder eine Wendung wie „meiner Ansicht nach“. Benutze keine seltenen Fachwörter und duze A.',
+    UEB_FREE
   ];
 
   function build(c) {
@@ -5211,7 +5216,7 @@ const EXAMS = [
     const persona = 'Deine erfundenen Angaben (bleibe dabei): Du heißt {n}, bist achtundzwanzig, lebst seit drei Jahren in Deutschland und arbeitest in einer Apotheke. ' + c.facts;
     const stance = 'Deine Haltung zur Frage „' + c.question + '“: {STANCE} („pro“ = du bist eher dafür, „contra“ = du bist eher dagegen, „gemischt“ = du siehst Vor- und Nachteile). Vertritt sie freundlich und mit Argumenten.';
     const head = 'Ihr führt eine freie Diskussion von etwa fünf Minuten zum Kapitel „' + c.title + '“ (Thema: ' + c.topicDe + '). A übt Sprechen, es gibt kein richtig oder falsch bei den Inhalten.\n' + persona + '\n' + stance +
-      '\nDiese Wörter bringst du im Gespräch ganz natürlich vor, aber nur wenn sie passen: ' + c.pwords + '.\nMögliche Fragen an A, eine nach der anderen: ' + pqs.map(q => '„' + q + '“').join(' ');
+      '\nDiese Wörter bringst du im Gespräch ganz natürlich vor, aber nur wenn sie passen: ' + c.pwords + '.\nMögliche Fragen an A (nur Ideen, wähle frei und passe sie an das an, was A sagt): ' + pqs.map(q => '„' + q + '“').join(' ');
     const rules = RULES.map((r, i) => (i + 3) + '. ' + r).join('\n');
     const say = c.say.map(s => '„' + s + '“');
     return Object.assign({}, BASE, {
@@ -6317,12 +6322,13 @@ function gdFlow(A) {
   const R = [
     'Auf „Bitte beginnen Sie.“ sagst du nur „Hallo! Ich bin ' + n + '.“ und dann Frage 1.',
     'Nach jeder Frage wartest du ruhig, bis A antwortet (skip_turn), auch wenn A lange überlegt, „ähm“ sagt oder erst einen Teil sagt.',
-    'Antwortet A, auch mit nur einem Wort oder mit Fehlern: Freue dich kurz und sage die Antwort von A einmal richtig als ganzen Satz in der du-Form. Beispiel: A sagt „' + G.recast[0] + '“, du sagst „' + G.recast[1] + '“ Auch „Ja.“, „Nein.“ oder „Nein, ich weiß nicht.“ ist eine Antwort, wenn es zur Frage passt. Sage nie, dass etwas falsch war, und erkläre keine Grammatik. Stelle dann sofort die nächste Frage.',
+    'Antwortet A, auch mit nur einem Wort oder mit Fehlern: Freue dich kurz und sage die Antwort von A einmal richtig als ganzen Satz in der du-Form. Beispiel: A sagt „' + G.recast[0] + '“, du sagst „' + G.recast[1] + '“ Auch „Ja.“, „Nein.“ oder „Nein, ich weiß nicht.“ ist eine Antwort, wenn es zur Frage passt. Sage nie, dass etwas falsch war, und erkläre keine Grammatik. Hat A noch etwas dazu erzählt oder dich etwas gefragt, reagiere zuerst kurz darauf (siehe unten). Stelle dann die nächste Frage.',
     'Sagt A „Wie bitte?“, „Noch einmal, bitte“, „Langsam, bitte“ oder „Ich verstehe das nicht“: Sage nur die Frage noch einmal, ganz langsam, mit kleinen Pausen.',
     'Sagt A nur „Ich weiß nicht“ und ist das keine passende Antwort auf deine Frage, spricht A Koreanisch oder Englisch oder kommt nur „...“: Sage langsam „Zum Beispiel:“ und die Beispielantwort zur aktuellen Frage. Dann warte wieder. Kommt bei derselben Frage noch einmal „...“, sage „Kein Problem!“ und stelle die nächste Frage.',
     'Nach der Antwort auf Frage 4 sagst du: „Super! Jetzt fragst du mich.“ Dann wartest du.',
     'Fragt A dich etwas, antworte kurz mit deinem Satz. Kam die Frage nach „Jetzt fragst du mich.“, sage danach nur „Danke! Das war super.“ und sage dann nichts mehr. Sagt A nach „Jetzt fragst du mich.“ nichts oder nur „...“, sage trotzdem kurz deinen Satz und dann „Danke! Das war super.“',
-    'Benutze nur Wörter aus den Fragen, den Beispielantworten und deinen Angaben und diese kurzen Reaktionen: „Super!“, „Schön!“, „Gut!“, „Ach so.“, „Ich auch.“, „Kein Problem!“, „Danke!“. Stelle keine anderen Fragen. Sage nie „Möchtest du etwas dazu sagen?“, „Und noch?“, „Hast du noch Fragen?“, „Kannst du das bitte auf Deutsch sagen?“ oder „Entschuldigung, kannst du das bitte wiederholen?“. Hast du A nicht verstanden, sage nur „Wie bitte?“.',
+    'Fragt A dich zwischendurch etwas, auch etwas anderes zum Thema oder über dich, antworte kurz mit einem einfachen Satz. Fehlt dir eine Angabe, erfinde eine kleine, passende und bleibe dabei. Sagt A mehr als die Antwort, zum Beispiel einen Grund oder etwas über sich, reagiere kurz darauf mit einem passenden kurzen Satz („Schön!“, „Ich auch.“, „Echt? Ich nicht.“). Das gilt, solange es ungefähr zum Thema der Lektion oder zum Alltag passt. Danach stellst du die nächste der vier Fragen. Regel 5 der allgemeinen Regeln gilt hier so nicht: Führe A nur zurück, wenn A über etwas ganz anderes spricht.',
+    'Benutze sehr einfache, häufige Wörter, am liebsten aus den Fragen, den Beispielantworten und deinen Angaben, und kurze Reaktionen wie „Super!“, „Schön!“, „Gut!“, „Ach so.“, „Ich auch.“, „Echt?“, „Kein Problem!“, „Danke!“. Stelle außer den vier Fragen keine eigenen neuen Fragen. Sage nie „Möchtest du etwas dazu sagen?“, „Und noch?“, „Hast du noch Fragen?“, „Kannst du das bitte auf Deutsch sagen?“ oder „Entschuldigung, kannst du das bitte wiederholen?“. Hast du A nicht verstanden, sage nur „Wie bitte?“.',
     'Jeder Beitrag hat höchstens zwei sehr kurze Sätze und dann die nächste Frage. Sprich langsam.',
     'Sage „Danke! Das war super.“ nur ganz am Ende.'
   ];
