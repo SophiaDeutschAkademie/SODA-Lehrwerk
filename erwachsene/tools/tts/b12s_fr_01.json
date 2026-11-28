@@ -1,0 +1,74 @@
+{
+ "job": "b12s_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-2/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag, Herr Park. Jetzt bin ich aber gespannt."
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Das freut mich sehr! Wann wäre der Arbeitsbeginn?"
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Wunderbar. Bekomme ich den Vertrag per Post?"
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Das mache ich. Ich werde den Vertrag lesen, sobald er da ist."
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Ich finde, Smartphones sollten in der Schule verboten werden. Wie sehen Sie das?"
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Und was passiert, falls ein Kind das Handy trotzdem benutzt?"
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Können wir uns auf einen Kompromiss einigen?"
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Und nun ein Tipp für das Wochenende. Am Samstag findet in unserer Stadt die Nacht der Museen statt."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Mehr als dreißig Museen haben von neunzehn Uhr bis zwei Uhr nachts geöffnet. Mit einem Ticket können Sie alle Häuser besuchen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag, Herr Park. Jetzt bin ich aber gespannt. [pause] Das freut mich sehr! Wann wäre der Arbeitsbeginn? [pause] Wunderbar. Bekomme ich den Vertrag per Post? [pause] Das mache ich. Ich werde den Vertrag lesen, sobald er da ist. [pause] Ich finde, Smartphones sollten in der Schule verboten werden. Wie sehen Sie das? [pause] Und was passiert, falls ein Kind das Handy trotzdem benutzt? [pause] Können wir uns auf einen Kompromiss einigen? [pause] Und nun ein Tipp für das Wochenende. Am Samstag findet in unserer Stadt die Nacht der Museen statt. [pause] Mehr als dreißig Museen haben von neunzehn Uhr bis zwei Uhr nachts geöffnet. Mit einem Ticket können Sie alle Häuser besuchen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

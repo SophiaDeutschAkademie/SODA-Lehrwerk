@@ -1,0 +1,53 @@
+{
+ "job": "b12s_le_01",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Lena",
+   "parts": [
+    "Hallo Jiu! Ich bin gut angekommen. Die neue WG ist klein, aber gemütlich."
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Lena",
+   "parts": [
+    "Anstrengend. Der Transporter kam zwei Stunden zu spät, sodass wir erst am Abend fertig waren. Ich hätte einen früheren Termin nehmen sollen."
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Lena",
+   "parts": [
+    "Sehr gut. Gestern war ich in der Nikolaikirche. Dort begannen damals die Montagsdemonstrationen."
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Lena",
+   "parts": [
+    "Im Oktober. Bis dahin werde ich wohl noch viele Formulare ausfüllen."
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Lena",
+   "parts": [
+    "Abgemacht. Bring doch Felix mit!"
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Was wirst du in fünf Jahren machen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hallo Jiu! Ich bin gut angekommen. Die neue WG ist klein, aber gemütlich. [pause] Anstrengend. Der Transporter kam zwei Stunden zu spät, sodass wir erst am Abend fertig waren. Ich hätte einen früheren Termin nehmen sollen. [pause] Sehr gut. Gestern war ich in der Nikolaikirche. Dort begannen damals die Montagsdemonstrationen. [pause] Im Oktober. Bis dahin werde ich wohl noch viele Formulare ausfüllen. [pause] Abgemacht. Bring doch Felix mit! [pause] Was wirst du in fünf Jahren machen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

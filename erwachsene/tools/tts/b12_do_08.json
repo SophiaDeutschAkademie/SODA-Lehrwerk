@@ -1,0 +1,53 @@
+{
+ "job": "b12_do_08",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "b1-2/7",
+   "who": "Dohyun",
+   "parts": [
+    "Sehr gut. Die Maschine hat Sensoren, die alle Teile überwachen. Sie meldet selbst, wenn ein Teil bald ersetzt werden muss."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Dohyun",
+   "parts": [
+    "Genau. Der Kunde bekommt eine Nachricht, bevor etwas kaputtgeht. Die Wartung kann geplant werden, sodass die Produktion nicht stehen bleibt."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Dohyun",
+   "parts": [
+    "Ich werde wohl seltener zu Notfällen fahren müssen. Dafür werde ich mehr Daten lesen und die Kunden beraten."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Dohyun",
+   "parts": [
+    "Vermutlich ja. Die Daten sind kompliziert, und die Kunden werden viele Fragen haben."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Dohyun",
+   "parts": [
+    "Der Datenschutz. Die Maschine schickt Daten aus der Fabrik des Kunden zu uns. Manche Kunden werden das nicht wollen."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Dohyun",
+   "parts": [
+    "Dann bleiben die Daten bei ihm, und er liest sie selbst. Das ist möglich, aber weniger effizient."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Sehr gut. Die Maschine hat Sensoren, die alle Teile überwachen. Sie meldet selbst, wenn ein Teil bald ersetzt werden muss. [pause] Genau. Der Kunde bekommt eine Nachricht, bevor etwas kaputtgeht. Die Wartung kann geplant werden, sodass die Produktion nicht stehen bleibt. [pause] Ich werde wohl seltener zu Notfällen fahren müssen. Dafür werde ich mehr Daten lesen und die Kunden beraten. [pause] Vermutlich ja. Die Daten sind kompliziert, und die Kunden werden viele Fragen haben. [pause] Der Datenschutz. Die Maschine schickt Daten aus der Fabrik des Kunden zu uns. Manche Kunden werden das nicht wollen. [pause] Dann bleiben die Daten bei ihm, und er liest sie selbst. Das ist möglich, aber weniger effizient. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "b12_ho_04",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "b1-2/7",
+   "who": "Hoffmann",
+   "parts": [
+    "Das klingt nach einem großen Vorteil. Was bedeutet das für Ihre Arbeit?"
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Hoffmann",
+   "parts": [
+    "Brauchen Sie dafür eine Schulung?"
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Hoffmann",
+   "parts": [
+    "Und die Risiken?"
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Hoffmann",
+   "parts": [
+    "Falls ein Kunde dagegen ist, was dann?"
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Hoffmann",
+   "parts": [
+    "Gut. Wann könnten wir mit dem ersten Kunden anfangen?"
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Hoffmann",
+   "parts": [
+    "Dann schreiben Sie mir bitte auf, was sich für unser Team verändern wird."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Hoffmann",
+   "parts": [
+    "Herr Park, setzen Sie sich doch. Sie sind ja jetzt fast drei Jahre bei uns."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Hoffmann",
+   "parts": [
+    "Blicken wir kurz zurück. Was ist Ihnen gut gelungen?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Hoffmann",
+   "parts": [
+    "Das ist eine starke Leistung. Die Kunden in Hamburg loben Sie sehr."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Hoffmann",
+   "parts": [
+    "Und was war schwierig?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das klingt nach einem großen Vorteil. Was bedeutet das für Ihre Arbeit? [pause] Brauchen Sie dafür eine Schulung? [pause] Und die Risiken? [pause] Falls ein Kunde dagegen ist, was dann? [pause] Gut. Wann könnten wir mit dem ersten Kunden anfangen? [pause] Dann schreiben Sie mir bitte auf, was sich für unser Team verändern wird. [pause] Herr Park, setzen Sie sich doch. Sie sind ja jetzt fast drei Jahre bei uns. [pause] Blicken wir kurz zurück. Was ist Ihnen gut gelungen? [pause] Das ist eine starke Leistung. Die Kunden in Hamburg loben Sie sehr. [pause] Und was war schwierig? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

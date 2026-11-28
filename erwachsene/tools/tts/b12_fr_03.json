@@ -1,0 +1,81 @@
+{
+ "job": "b12_fr_03",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Wer wäscht die Becher?"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Ich bin nicht sicher. Viele Studenten sind dagegen, weil es Zeit kostet."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Und wenn es nicht funktioniert?"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Sie haben Vorschläge für unser Büro?"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Gut. Und zweitens?"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Was machen wir mit den alten Laptops im Keller?"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Kostet das nicht viel?"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Einverstanden. Wie fangen wir an?"
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Personalabteilung, guten Tag. Was kann ich für Sie tun?"
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Sehr schön. Haben Sie Erfahrung mit Gartenarbeit?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wer wäscht die Becher? [pause] Ich bin nicht sicher. Viele Studenten sind dagegen, weil es Zeit kostet. [pause] Und wenn es nicht funktioniert? [pause] Sie haben Vorschläge für unser Büro? [pause] Gut. Und zweitens? [pause] Was machen wir mit den alten Laptops im Keller? [pause] Kostet das nicht viel? [pause] Einverstanden. Wie fangen wir an? [pause] Personalabteilung, guten Tag. Was kann ich für Sie tun? [pause] Sehr schön. Haben Sie Erfahrung mit Gartenarbeit? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

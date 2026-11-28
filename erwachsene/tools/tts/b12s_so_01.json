@@ -1,0 +1,18 @@
+{
+ "job": "b12s_so_01",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Was sind deine Ziele für das nächste Jahr?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Was sind deine Ziele für das nächste Jahr? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

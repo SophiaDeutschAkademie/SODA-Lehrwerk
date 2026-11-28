@@ -1,0 +1,53 @@
+{
+ "job": "b12_ma_05",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-2/8",
+   "who": "Mann",
+   "parts": [
+    "Gut. Kann ich danach gleich die Prüfung machen?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Mann",
+   "parts": [
+    "Warum möchten Sie bei uns studieren?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Mann",
+   "parts": [
+    "Was haben Sie bisher gemacht?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Mann",
+   "parts": [
+    "Was sind Ihre Ziele nach dem Studium?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Mann",
+   "parts": [
+    "Unsere Kurse sind auf Deutsch. Wie bereiten Sie sich vor?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Mann",
+   "parts": [
+    "Und was machen Sie, falls das Lernen schwierig wird?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gut. Kann ich danach gleich die Prüfung machen? [pause] Warum möchten Sie bei uns studieren? [pause] Was haben Sie bisher gemacht? [pause] Was sind Ihre Ziele nach dem Studium? [pause] Unsere Kurse sind auf Deutsch. Wie bereiten Sie sich vor? [pause] Und was machen Sie, falls das Lernen schwierig wird? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

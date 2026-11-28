@@ -1,0 +1,91 @@
+{
+ "job": "b12_n_40",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "die Ruine, die Ruinen.",
+    "Von der Burg ist nur eine Ruine geblieben."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "der Soldat, die Soldaten.",
+    "An der Grenze standen Soldaten."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "geboren.",
+    "Goethe wurde siebzehnhundertneunundvierzig in Frankfurt geboren."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "die Erinnerung, die Erinnerungen.",
+    "Ich habe schöne Erinnerungen an Berlin."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "das Denkmal, die Denkmäler.",
+    "Auf dem Platz steht ein Denkmal."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "die Gedenkstätte, die Gedenkstätten.",
+    "Wir besuchen die Gedenkstätte an der Mauer."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "der Zeitzeuge, die Zeitzeugen.",
+    "Ein Zeitzeuge erzählt von neunzehnhundertneunundachtzig."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "die Ausstellung, die Ausstellungen.",
+    "Die Ausstellung zeigt alte Fotos."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "der Rundgang, die Rundgänge.",
+    "Der Rundgang dauert eine Stunde."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "N",
+   "parts": [
+    "der Eintritt.",
+    "Der Eintritt ist frei."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Ruine, die Ruinen. Von der Burg ist nur eine Ruine geblieben. [pause] der Soldat, die Soldaten. An der Grenze standen Soldaten. [pause] geboren. Goethe wurde siebzehnhundertneunundvierzig in Frankfurt geboren. [pause] die Erinnerung, die Erinnerungen. Ich habe schöne Erinnerungen an Berlin. [pause] das Denkmal, die Denkmäler. Auf dem Platz steht ein Denkmal. [pause] die Gedenkstätte, die Gedenkstätten. Wir besuchen die Gedenkstätte an der Mauer. [pause] der Zeitzeuge, die Zeitzeugen. Ein Zeitzeuge erzählt von neunzehnhundertneunundachtzig. [pause] die Ausstellung, die Ausstellungen. Die Ausstellung zeigt alte Fotos. [pause] der Rundgang, die Rundgänge. Der Rundgang dauert eine Stunde. [pause] der Eintritt. Der Eintritt ist frei. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

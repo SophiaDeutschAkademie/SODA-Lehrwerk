@@ -1,0 +1,74 @@
+{
+ "job": "b12_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag. Erzählen Sie bitte kurz von Ihrer jetzigen Stelle."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Warum möchten Sie wechseln?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Was sind Ihre Stärken und Schwächen?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Wie sind Ihre Gehaltsvorstellungen?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Mann",
+   "parts": [
+    "Ab wann könnten Sie bei uns anfangen?"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Mann",
+   "parts": [
+    "Und jetzt unser Umwelttipp der Woche. Heute geht es um Strom."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Mann",
+   "parts": [
+    "Viele Geräte verbrauchen Strom, auch wenn sie nicht benutzt werden. Der Fernseher, der Drucker und das Ladegerät hängen Tag und Nacht an der Steckdose."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Mann",
+   "parts": [
+    "Unser Tipp: Schalten Sie die Geräte ganz aus, statt sie nur schlafen zu lassen. So sparen Sie Geld, ohne auf etwas zu verzichten."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Mann",
+   "parts": [
+    "Und wenn ein Gerät kaputt ist: Lassen Sie es reparieren, statt es wegzuwerfen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag. Erzählen Sie bitte kurz von Ihrer jetzigen Stelle. [pause] Warum möchten Sie wechseln? [pause] Was sind Ihre Stärken und Schwächen? [pause] Wie sind Ihre Gehaltsvorstellungen? [pause] Ab wann könnten Sie bei uns anfangen? [pause] Und jetzt unser Umwelttipp der Woche. Heute geht es um Strom. [pause] Viele Geräte verbrauchen Strom, auch wenn sie nicht benutzt werden. Der Fernseher, der Drucker und das Ladegerät hängen Tag und Nacht an der Steckdose. [pause] Unser Tipp: Schalten Sie die Geräte ganz aus, statt sie nur schlafen zu lassen. So sparen Sie Geld, ohne auf etwas zu verzichten. [pause] Und wenn ein Gerät kaputt ist: Lassen Sie es reparieren, statt es wegzuwerfen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

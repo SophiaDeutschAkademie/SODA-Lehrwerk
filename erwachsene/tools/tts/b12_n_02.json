@@ -1,0 +1,91 @@
+{
+ "job": "b12_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Berufserfahrung.",
+    "Ich habe drei Jahre Berufserfahrung."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Kenntnisse.",
+    "Ich habe gute Kenntnisse in Statistik."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Sprachkenntnisse.",
+    "Welche Sprachkenntnisse haben Sie?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Abschluss, die Abschlüsse.",
+    "Im Sommer mache ich meinen Abschluss."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Qualifikation, die Qualifikationen.",
+    "Sie hat die richtige Qualifikation."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Tätigkeit, die Tätigkeiten.",
+    "Was waren Ihre Tätigkeiten im Praktikum?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Bereich, die Bereiche.",
+    "Ich möchte im Bereich Software arbeiten."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Werkstudent, die Werkstudenten.",
+    "Die Firma sucht einen Werkstudenten."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "befristet.",
+    "Der Vertrag ist auf ein Jahr befristet."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "unbefristet.",
+    "Sie hat einen unbefristeten Vertrag."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Berufserfahrung. Ich habe drei Jahre Berufserfahrung. [pause] die Kenntnisse. Ich habe gute Kenntnisse in Statistik. [pause] die Sprachkenntnisse. Welche Sprachkenntnisse haben Sie? [pause] der Abschluss, die Abschlüsse. Im Sommer mache ich meinen Abschluss. [pause] die Qualifikation, die Qualifikationen. Sie hat die richtige Qualifikation. [pause] die Tätigkeit, die Tätigkeiten. Was waren Ihre Tätigkeiten im Praktikum? [pause] der Bereich, die Bereiche. Ich möchte im Bereich Software arbeiten. [pause] der Werkstudent, die Werkstudenten. Die Firma sucht einen Werkstudenten. [pause] befristet. Der Vertrag ist auf ein Jahr befristet. [pause] unbefristet. Sie hat einen unbefristeten Vertrag. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

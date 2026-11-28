@@ -1,0 +1,60 @@
+{
+ "job": "b12s_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Mann",
+   "parts": [
+    "Aber die Kinder spielen in der Pause nur noch mit dem Handy."
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Mann",
+   "parts": [
+    "Früher ging es doch auch ohne Smartphone."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Gern. Seit wann funktioniert er nicht mehr?"
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Dann ist wohl der Motor kaputt. Ich lasse ihn von meinem Kollegen prüfen, der weiß mehr darüber."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Nichts. Wir arbeiten hier ehrenamtlich. Falls wir ein neues Teil brauchen, bezahlen Sie nur das Teil."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Ungefähr eine Stunde. Trinken Sie doch so lange einen Kaffee."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag. Möchten Sie an der Führung teilnehmen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Aber die Kinder spielen in der Pause nur noch mit dem Handy. [pause] Früher ging es doch auch ohne Smartphone. [pause] Gern. Seit wann funktioniert er nicht mehr? [pause] Dann ist wohl der Motor kaputt. Ich lasse ihn von meinem Kollegen prüfen, der weiß mehr darüber. [pause] Nichts. Wir arbeiten hier ehrenamtlich. Falls wir ein neues Teil brauchen, bezahlen Sie nur das Teil. [pause] Ungefähr eine Stunde. Trinken Sie doch so lange einen Kaffee. [pause] Guten Tag. Möchten Sie an der Führung teilnehmen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

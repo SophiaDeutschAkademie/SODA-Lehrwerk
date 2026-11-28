@@ -1,0 +1,74 @@
+{
+ "job": "b12s_ji_01",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Jiu",
+   "parts": [
+    "Das freut mich. Wie war der Umzug?"
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Jiu",
+   "parts": [
+    "Und wie gefällt dir Leipzig?"
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Jiu",
+   "parts": [
+    "Die möchte ich auch sehen. Wann fängt die Uni eigentlich an?"
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "Jiu",
+   "parts": [
+    "Falls du Hilfe brauchst, ruf mich an. Ich komme im November."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Nachdem ich das Praktikum beendet hatte, habe ich mich um die Stelle beworben."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Guten Tag. Mein Staubsauger geht nicht mehr an. Können Sie ihn sich mal ansehen?"
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Seit einer Woche. Zuerst wurde er sehr heiß, dann ging er aus."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Und was kostet die Reparatur?"
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Das ist ja toll. Wie lange dauert es?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das freut mich. Wie war der Umzug? [pause] Und wie gefällt dir Leipzig? [pause] Die möchte ich auch sehen. Wann fängt die Uni eigentlich an? [pause] Falls du Hilfe brauchst, ruf mich an. Ich komme im November. [pause] Nachdem ich das Praktikum beendet hatte, habe ich mich um die Stelle beworben. [pause] Guten Tag. Mein Staubsauger geht nicht mehr an. Können Sie ihn sich mal ansehen? [pause] Seit einer Woche. Zuerst wurde er sehr heiß, dann ging er aus. [pause] Und was kostet die Reparatur? [pause] Das ist ja toll. Wie lange dauert es? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

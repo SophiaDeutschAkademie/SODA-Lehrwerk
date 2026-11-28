@@ -1,0 +1,67 @@
+{
+ "job": "b12_ma_04",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-2/6",
+   "who": "Mann",
+   "parts": [
+    "Gibt es hier einen berühmten Dichter?"
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Mann",
+   "parts": [
+    "Zum Beispiel heizen. Sensoren merken, ob jemand zu Hause ist. Falls niemand da ist, wird die Heizung automatisch kleiner gestellt."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Mann",
+   "parts": [
+    "Genau. Viele Familien sparen vermutlich zwanzig Prozent. Auch das Licht geht aus, wenn man den Raum verlässt."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Mann",
+   "parts": [
+    "Dann funktioniert alles weiter, nur ohne die App. Man kann jedes Gerät auch mit der Hand bedienen."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Mann",
+   "parts": [
+    "Jedes wohl nicht. Aber neue Häuser werden wahrscheinlich alle solche Sensoren haben."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag. Ich habe im Juni die B1-Prüfung bestanden und möchte jetzt weiterlernen. Was würden Sie mir empfehlen?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Mann",
+   "parts": [
+    "Wie lange dauert der Kurs eigentlich?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Mann",
+   "parts": [
+    "Das mache ich gern. Und was kostet der Kurs?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gibt es hier einen berühmten Dichter? [pause] Zum Beispiel heizen. Sensoren merken, ob jemand zu Hause ist. Falls niemand da ist, wird die Heizung automatisch kleiner gestellt. [pause] Genau. Viele Familien sparen vermutlich zwanzig Prozent. Auch das Licht geht aus, wenn man den Raum verlässt. [pause] Dann funktioniert alles weiter, nur ohne die App. Man kann jedes Gerät auch mit der Hand bedienen. [pause] Jedes wohl nicht. Aber neue Häuser werden wahrscheinlich alle solche Sensoren haben. [pause] Guten Tag. Ich habe im Juni die B1-Prüfung bestanden und möchte jetzt weiterlernen. Was würden Sie mir empfehlen? [pause] Wie lange dauert der Kurs eigentlich? [pause] Das mache ich gern. Und was kostet der Kurs? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,89 @@
+{
+ "job": "b12_n_34",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "die Klimaanlage, die Klimaanlagen.",
+    "Das Hotel hatte keine Klimaanlage."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "die Öffnungszeit, die Öffnungszeiten.",
+    "Die Öffnungszeiten stehen an der Tür."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "bar.",
+    "Hier kann man nur bar bezahlen."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "umbuchen, hat umgebucht.",
+    "Ich musste den Flug umbuchen."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "stornieren, hat storniert.",
+    "Wir haben das Hotel storniert."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "das Vorurteil, die Vorurteile.",
+    "Jeder hat Vorurteile."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "das Klischee, die Klischees.",
+    "Das ist nur ein Klischee."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "tolerant.",
+    "Ich versuche, tolerant zu sein."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "Ich habe gefragt. Ich hätte gefragt."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "Ich bin geblieben. Ich wäre geblieben."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Klimaanlage, die Klimaanlagen. Das Hotel hatte keine Klimaanlage. [pause] die Öffnungszeit, die Öffnungszeiten. Die Öffnungszeiten stehen an der Tür. [pause] bar. Hier kann man nur bar bezahlen. [pause] umbuchen, hat umgebucht. Ich musste den Flug umbuchen. [pause] stornieren, hat storniert. Wir haben das Hotel storniert. [pause] das Vorurteil, die Vorurteile. Jeder hat Vorurteile. [pause] das Klischee, die Klischees. Das ist nur ein Klischee. [pause] tolerant. Ich versuche, tolerant zu sein. [pause] Ich habe gefragt. Ich hätte gefragt. [pause] Ich bin geblieben. Ich wäre geblieben. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

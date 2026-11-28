@@ -1,0 +1,67 @@
+{
+ "job": "b12_fr_05",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Was würden Sie anderen Studierenden raten?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Bereuen Sie etwas?"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Frau",
+   "parts": [
+    "Herzlich willkommen im Historischen Museum. Mein Name ist Keller, ich begleite Sie heute."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Frau",
+   "parts": [
+    "Unser Rundgang dauert fünfundvierzig Minuten. Im ersten Raum sehen Sie die Stadt im Mittelalter. Damals lebten hier ungefähr zehntausend Menschen."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Frau",
+   "parts": [
+    "Im zweiten Raum geht es um das Jahr achtzehnhundertachtundvierzig. In der Paulskirche traf sich das erste frei gewählte Parlament."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Frau",
+   "parts": [
+    "Der dritte Raum zeigt die zerstörte Stadt nach dem Krieg und den Wiederaufbau."
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Frau",
+   "parts": [
+    "Fotografieren ist erlaubt, aber bitte ohne Blitz. Studierende bekommen an der Kasse eine Ermäßigung."
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Frau",
+   "parts": [
+    "Herr Brenner, Sie bauen Häuser, die mitdenken. Was kann so ein Haus?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Was würden Sie anderen Studierenden raten? [pause] Bereuen Sie etwas? [pause] Herzlich willkommen im Historischen Museum. Mein Name ist Keller, ich begleite Sie heute. [pause] Unser Rundgang dauert fünfundvierzig Minuten. Im ersten Raum sehen Sie die Stadt im Mittelalter. Damals lebten hier ungefähr zehntausend Menschen. [pause] Im zweiten Raum geht es um das Jahr achtzehnhundertachtundvierzig. In der Paulskirche traf sich das erste frei gewählte Parlament. [pause] Der dritte Raum zeigt die zerstörte Stadt nach dem Krieg und den Wiederaufbau. [pause] Fotografieren ist erlaubt, aber bitte ohne Blitz. Studierende bekommen an der Kasse eine Ermäßigung. [pause] Herr Brenner, Sie bauen Häuser, die mitdenken. Was kann so ein Haus? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

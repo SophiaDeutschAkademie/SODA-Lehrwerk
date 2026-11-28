@@ -1,0 +1,81 @@
+{
+ "job": "b12_be_01",
+ "who": "Becker",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "Becker",
+   "parts": [
+    "Frau Lee, wie schön, Sie zu sehen! Erzählen Sie: Wie sind die ersten Wochen in der Agentur?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Becker",
+   "parts": [
+    "Wie war eigentlich das Vorstellungsgespräch? Das haben Sie mir noch gar nicht erzählt."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Becker",
+   "parts": [
+    "Und was wurde gefragt?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Becker",
+   "parts": [
+    "Die schwierigste Frage. Was haben Sie geantwortet?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Becker",
+   "parts": [
+    "Eine ehrliche Antwort. Wie hat Frau Sander reagiert?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Becker",
+   "parts": [
+    "Und dann kam die Zusage."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Becker",
+   "parts": [
+    "Mit Recht. Ist der Vertrag befristet?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Becker",
+   "parts": [
+    "Das ist üblich. Und telefonieren Sie inzwischen auf Deutsch?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Becker",
+   "parts": [
+    "Frau Lee, Sie arbeiten jetzt. Werden Sie trotzdem weiter Deutsch lernen?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Becker",
+   "parts": [
+    "Sehr gut. Und beruflich? Haben Sie Pläne?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Frau Lee, wie schön, Sie zu sehen! Erzählen Sie: Wie sind die ersten Wochen in der Agentur? [pause] Wie war eigentlich das Vorstellungsgespräch? Das haben Sie mir noch gar nicht erzählt. [pause] Und was wurde gefragt? [pause] Die schwierigste Frage. Was haben Sie geantwortet? [pause] Eine ehrliche Antwort. Wie hat Frau Sander reagiert? [pause] Und dann kam die Zusage. [pause] Mit Recht. Ist der Vertrag befristet? [pause] Das ist üblich. Und telefonieren Sie inzwischen auf Deutsch? [pause] Frau Lee, Sie arbeiten jetzt. Werden Sie trotzdem weiter Deutsch lernen? [pause] Sehr gut. Und beruflich? Haben Sie Pläne? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "b12_fr_04",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Gibt es etwas, was Sie besonders gut können?"
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Das ist eine gute Idee. Haben Sie noch Fragen?"
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Frau",
+   "parts": [
+    "Natürlich. Wir treffen uns um neun Uhr vor dem Seniorenheim."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Herr Albrecht, Sie haben ein Jahr in Seoul gearbeitet. Was hat Sie am meisten überrascht?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Und was war schwierig?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Sind Sie auch in Fettnäpfchen getreten?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Was würden Sie heute anders machen?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Vielen Dank für die Präsentation. Was hat Sie in Deutschland am meisten überrascht?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Wäre das in Korea nicht möglich?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Wie haben Sie sich im Seminar verhalten?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gibt es etwas, was Sie besonders gut können? [pause] Das ist eine gute Idee. Haben Sie noch Fragen? [pause] Natürlich. Wir treffen uns um neun Uhr vor dem Seniorenheim. [pause] Herr Albrecht, Sie haben ein Jahr in Seoul gearbeitet. Was hat Sie am meisten überrascht? [pause] Und was war schwierig? [pause] Sind Sie auch in Fettnäpfchen getreten? [pause] Was würden Sie heute anders machen? [pause] Vielen Dank für die Präsentation. Was hat Sie in Deutschland am meisten überrascht? [pause] Wäre das in Korea nicht möglich? [pause] Wie haben Sie sich im Seminar verhalten? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

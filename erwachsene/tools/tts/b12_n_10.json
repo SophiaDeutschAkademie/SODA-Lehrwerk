@@ -1,0 +1,91 @@
+{
+ "job": "b12_n_10",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "die Studienberatung.",
+    "Die Studienberatung hilft bei der Wahl des Fachs."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "die Regelstudienzeit.",
+    "Die Regelstudienzeit ist vier Semester."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "das Abitur.",
+    "Nach dem Abitur hat sie studiert."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "der Schulabschluss, die Schulabschlüsse.",
+    "Welchen Schulabschluss haben Sie?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "das Gymnasium, die Gymnasien.",
+    "Am Gymnasium macht man das Abitur."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "die Grundschule, die Grundschulen.",
+    "Hana geht in die Grundschule."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "die Berufsausbildung, die Berufsausbildungen.",
+    "Er macht eine Berufsausbildung als Koch."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "der Ausbildungsplatz, die Ausbildungsplätze.",
+    "Sie sucht einen Ausbildungsplatz."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "das Handwerk.",
+    "Im Handwerk fehlen viele Leute."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "N",
+   "parts": [
+    "der Meister, die Meister.",
+    "Nach fünf Jahren wurde er Meister."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Studienberatung. Die Studienberatung hilft bei der Wahl des Fachs. [pause] die Regelstudienzeit. Die Regelstudienzeit ist vier Semester. [pause] das Abitur. Nach dem Abitur hat sie studiert. [pause] der Schulabschluss, die Schulabschlüsse. Welchen Schulabschluss haben Sie? [pause] das Gymnasium, die Gymnasien. Am Gymnasium macht man das Abitur. [pause] die Grundschule, die Grundschulen. Hana geht in die Grundschule. [pause] die Berufsausbildung, die Berufsausbildungen. Er macht eine Berufsausbildung als Koch. [pause] der Ausbildungsplatz, die Ausbildungsplätze. Sie sucht einen Ausbildungsplatz. [pause] das Handwerk. Im Handwerk fehlen viele Leute. [pause] der Meister, die Meister. Nach fünf Jahren wurde er Meister. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

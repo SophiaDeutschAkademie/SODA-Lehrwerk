@@ -1,0 +1,60 @@
+{
+ "job": "b12_fr_07",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-2/8",
+   "who": "Frau",
+   "parts": [
+    "Sechshundertvierzig Euro. Falls Ihr Arbeitgeber die Kosten übernimmt, schreiben wir eine Rechnung für die Firma."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Frau",
+   "parts": [
+    "Die meisten brauchen zwei Kurse, bevor sie die B2-Prüfung machen. Kommen Sie doch erst einmal zur Probestunde."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Frau",
+   "parts": [
+    "Setzen Sie sich doch. Was ist Ihnen in diesem Jahr gut gelungen?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Frau",
+   "parts": [
+    "Und was war schwierig?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Frau",
+   "parts": [
+    "Was sind eigentlich Ihre Ziele für das nächste Jahr?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Frau",
+   "parts": [
+    "Was brauchen Sie dafür?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Frau",
+   "parts": [
+    "Wie wollen Sie das schaffen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Sechshundertvierzig Euro. Falls Ihr Arbeitgeber die Kosten übernimmt, schreiben wir eine Rechnung für die Firma. [pause] Die meisten brauchen zwei Kurse, bevor sie die B2-Prüfung machen. Kommen Sie doch erst einmal zur Probestunde. [pause] Setzen Sie sich doch. Was ist Ihnen in diesem Jahr gut gelungen? [pause] Und was war schwierig? [pause] Was sind eigentlich Ihre Ziele für das nächste Jahr? [pause] Was brauchen Sie dafür? [pause] Wie wollen Sie das schaffen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

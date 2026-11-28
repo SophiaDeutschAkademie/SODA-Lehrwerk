@@ -1,0 +1,83 @@
+{
+ "job": "b12_n_33",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "die Geschäftsreise, die Geschäftsreisen.",
+    "Nächste Woche bin ich auf Geschäftsreise."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "die Visitenkarte, die Visitenkarten.",
+    "Darf ich Ihnen meine Visitenkarte geben?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "der Gastgeber, die Gastgeber.",
+    "Der Gastgeber hat uns vom Flughafen abgeholt."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "die Gastfreundschaft.",
+    "Vielen Dank für Ihre Gastfreundschaft."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "das Gastgeschenk, die Gastgeschenke.",
+    "Als Gastgeschenk habe ich Tee mitgebracht."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "auspacken, hat ausgepackt.",
+    "Darf ich das Geschenk gleich auspacken?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "einschenken, hat eingeschenkt.",
+    "Darf ich Ihnen Wasser einschenken?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "anstoßen, du stößt an, hat angestoßen.",
+    "Wir stoßen auf den Erfolg an."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "N",
+   "parts": [
+    "das Stäbchen, die Stäbchen.",
+    "Kannst du mit Stäbchen essen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Geschäftsreise, die Geschäftsreisen. Nächste Woche bin ich auf Geschäftsreise. [pause] die Visitenkarte, die Visitenkarten. Darf ich Ihnen meine Visitenkarte geben? [pause] der Gastgeber, die Gastgeber. Der Gastgeber hat uns vom Flughafen abgeholt. [pause] die Gastfreundschaft. Vielen Dank für Ihre Gastfreundschaft. [pause] das Gastgeschenk, die Gastgeschenke. Als Gastgeschenk habe ich Tee mitgebracht. [pause] auspacken, hat ausgepackt. Darf ich das Geschenk gleich auspacken? [pause] einschenken, hat eingeschenkt. Darf ich Ihnen Wasser einschenken? [pause] anstoßen, du stößt an, hat angestoßen. Wir stoßen auf den Erfolg an. [pause] das Stäbchen, die Stäbchen. Kannst du mit Stäbchen essen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

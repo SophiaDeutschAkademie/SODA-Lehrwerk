@@ -1,0 +1,91 @@
+{
+ "job": "b12_n_18",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Steckdose, die Steckdosen.",
+    "Der Laptop hängt an der Steckdose."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "das Plastik.",
+    "Ich kaufe Obst ohne Plastik."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "der Abfall, die Abfälle.",
+    "Jeder Mensch produziert viel Abfall."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Tüte, die Tüten.",
+    "Ich brauche keine Tüte, danke."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Mehrwegflasche, die Mehrwegflaschen.",
+    "Mehrwegflaschen bringt man zurück."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "wiederverwenden, hat wiederverwendet.",
+    "Gläser kann man gut wiederverwenden."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "gebraucht.",
+    "Ich habe ein gebrauchtes Fahrrad gekauft."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "der Flohmarkt, die Flohmärkte.",
+    "Am Sonntag ist Flohmarkt am Main."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "tauschen, hat getauscht.",
+    "Wir tauschen Bücher."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "umweltfreundlich.",
+    "Die Bahn ist umweltfreundlicher als das Auto."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Steckdose, die Steckdosen. Der Laptop hängt an der Steckdose. [pause] das Plastik. Ich kaufe Obst ohne Plastik. [pause] der Abfall, die Abfälle. Jeder Mensch produziert viel Abfall. [pause] die Tüte, die Tüten. Ich brauche keine Tüte, danke. [pause] die Mehrwegflasche, die Mehrwegflaschen. Mehrwegflaschen bringt man zurück. [pause] wiederverwenden, hat wiederverwendet. Gläser kann man gut wiederverwenden. [pause] gebraucht. Ich habe ein gebrauchtes Fahrrad gekauft. [pause] der Flohmarkt, die Flohmärkte. Am Sonntag ist Flohmarkt am Main. [pause] tauschen, hat getauscht. Wir tauschen Bücher. [pause] umweltfreundlich. Die Bahn ist umweltfreundlicher als das Auto. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

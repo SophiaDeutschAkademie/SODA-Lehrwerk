@@ -1,0 +1,91 @@
+{
+ "job": "b12_n_05",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "annehmen, du nimmst an, hat angenommen.",
+    "Ich nehme die Stelle an."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "ablehnen, hat abgelehnt.",
+    "Er hat das Angebot abgelehnt."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "beenden, hat beendet.",
+    "Ich habe das Praktikum im März beendet."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Rückmeldung, die Rückmeldungen.",
+    "Ich warte noch auf eine Rückmeldung."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "Bescheid geben.",
+    "Wir geben Ihnen bis Freitag Bescheid."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Gelegenheit, die Gelegenheiten.",
+    "Das ist eine gute Gelegenheit."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Arbeitsbeginn.",
+    "Arbeitsbeginn ist der erste Juni."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "nachdem.",
+    "Nachdem ich angekommen war, rief ich an."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "bevor.",
+    "Bevor ich gehe, schreibe ich die E-Mail."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "seitdem.",
+    "Seitdem ich hier arbeite, lerne ich viel."
+   ]
+  }
+ ],
+ "script": "Also. [pause] annehmen, du nimmst an, hat angenommen. Ich nehme die Stelle an. [pause] ablehnen, hat abgelehnt. Er hat das Angebot abgelehnt. [pause] beenden, hat beendet. Ich habe das Praktikum im März beendet. [pause] die Rückmeldung, die Rückmeldungen. Ich warte noch auf eine Rückmeldung. [pause] Bescheid geben. Wir geben Ihnen bis Freitag Bescheid. [pause] die Gelegenheit, die Gelegenheiten. Das ist eine gute Gelegenheit. [pause] der Arbeitsbeginn. Arbeitsbeginn ist der erste Juni. [pause] nachdem. Nachdem ich angekommen war, rief ich an. [pause] bevor. Bevor ich gehe, schreibe ich die E-Mail. [pause] seitdem. Seitdem ich hier arbeite, lerne ich viel. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,53 @@
+{
+ "job": "b12s_do_01",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "b1-2/wiederholung-1",
+   "who": "Dohyun",
+   "parts": [
+    "Guten Tag, Frau Petersen, hier ist Park von Kessler Technik. Ich habe eine gute Nachricht für Sie."
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-1",
+   "who": "Dohyun",
+   "parts": [
+    "Nachdem wir mit allen Kandidaten gesprochen hatten, haben wir uns für Sie entschieden. Wir möchten Ihnen die Stelle anbieten."
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-1",
+   "who": "Dohyun",
+   "parts": [
+    "Am ersten August. Der Vertrag ist unbefristet, und die Probezeit dauert sechs Monate."
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-1",
+   "who": "Dohyun",
+   "parts": [
+    "Ja, er wird Ihnen morgen geschickt. Bitte geben Sie uns bis Freitag Bescheid, ob Sie die Stelle annehmen."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Dohyun",
+   "parts": [
+    "Wenn ich das gewusst hätte, hätte ich die Karte mit beiden Händen gegeben."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Dohyun",
+   "parts": [
+    "Wie wird künstliche Intelligenz deine Arbeit verändern?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag, Frau Petersen, hier ist Park von Kessler Technik. Ich habe eine gute Nachricht für Sie. [pause] Nachdem wir mit allen Kandidaten gesprochen hatten, haben wir uns für Sie entschieden. Wir möchten Ihnen die Stelle anbieten. [pause] Am ersten August. Der Vertrag ist unbefristet, und die Probezeit dauert sechs Monate. [pause] Ja, er wird Ihnen morgen geschickt. Bitte geben Sie uns bis Freitag Bescheid, ob Sie die Stelle annehmen. [pause] Wenn ich das gewusst hätte, hätte ich die Karte mit beiden Händen gegeben. [pause] Wie wird künstliche Intelligenz deine Arbeit verändern? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

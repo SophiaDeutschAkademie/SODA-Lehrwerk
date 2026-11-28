@@ -1,0 +1,67 @@
+{
+ "job": "b12_le_05",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Das ist eine schöne Idee. Hast du überhaupt Zeit? Du arbeitest jetzt bei Datenwerk."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Was denn?"
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Lena",
+   "parts": [
+    "So ist es bei mir auch. Du weißt ja, dass ich bei der Naturschutzgruppe mitmache."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Genau. Am Samstag ist die nächste Aktion. Wir treffen uns um zehn an der Brücke, dort, wo auch der Flohmarkt ist."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Ja. Alles, was man braucht, bekommt man von uns: Handschuhe, Säcke und einen Kaffee."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Hallo zusammen, hier ist Lena. Am Samstag ist unsere nächste Aktion am Mainufer."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Wir treffen uns um zehn Uhr an der Brücke, dort, wo auch der Flohmarkt ist."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Bringt bitte feste Schuhe und etwas zu trinken mit. Alles, was ihr sonst braucht, bekommt ihr von uns."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist eine schöne Idee. Hast du überhaupt Zeit? Du arbeitest jetzt bei Datenwerk. [pause] Was denn? [pause] So ist es bei mir auch. Du weißt ja, dass ich bei der Naturschutzgruppe mitmache. [pause] Genau. Am Samstag ist die nächste Aktion. Wir treffen uns um zehn an der Brücke, dort, wo auch der Flohmarkt ist. [pause] Ja. Alles, was man braucht, bekommt man von uns: Handschuhe, Säcke und einen Kaffee. [pause] Hallo zusammen, hier ist Lena. Am Samstag ist unsere nächste Aktion am Mainufer. [pause] Wir treffen uns um zehn Uhr an der Brücke, dort, wo auch der Flohmarkt ist. [pause] Bringt bitte feste Schuhe und etwas zu trinken mit. Alles, was ihr sonst braucht, bekommt ihr von uns. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

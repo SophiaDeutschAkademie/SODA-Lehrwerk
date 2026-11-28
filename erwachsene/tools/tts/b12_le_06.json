@@ -1,0 +1,81 @@
+{
+ "job": "b12_le_06",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Wir sammeln zwar nur zwei Stunden, aber beim letzten Mal waren es dreißig Säcke Müll."
+   ]
+  },
+  {
+   "pid": "b1-2/4",
+   "who": "Lena",
+   "parts": [
+    "Danach gibt es Kaffee und Kuchen. Neue Helfer sind willkommen. Sagt es weiter!"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Deine Eltern sind wieder zu Hause, oder? Wie war der Besuch?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Was ist denn passiert?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Das hättest du ihnen vorher sagen können."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Und wie war Heidelberg?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Oh nein. In Deutschland ist das leider normal."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Und das Essen? Hat es ihnen geschmeckt?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Das ist mir auch schon passiert. Und der Abend bei uns? War mein Kartoffelsalat in Ordnung?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Wirklich? Das hätte ich wissen müssen! Hier ist es unhöflich, ein Geschenk nicht auszupacken."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wir sammeln zwar nur zwei Stunden, aber beim letzten Mal waren es dreißig Säcke Müll. [pause] Danach gibt es Kaffee und Kuchen. Neue Helfer sind willkommen. Sagt es weiter! [pause] Deine Eltern sind wieder zu Hause, oder? Wie war der Besuch? [pause] Was ist denn passiert? [pause] Das hättest du ihnen vorher sagen können. [pause] Und wie war Heidelberg? [pause] Oh nein. In Deutschland ist das leider normal. [pause] Und das Essen? Hat es ihnen geschmeckt? [pause] Das ist mir auch schon passiert. Und der Abend bei uns? War mein Kartoffelsalat in Ordnung? [pause] Wirklich? Das hätte ich wissen müssen! Hier ist es unhöflich, ein Geschenk nicht auszupacken. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

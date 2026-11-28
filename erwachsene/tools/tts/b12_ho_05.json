@@ -1,0 +1,53 @@
+{
+ "job": "b12_ho_05",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "b1-2/8",
+   "who": "Hoffmann",
+   "parts": [
+    "Das merkt man. Was sind eigentlich Ihre Ziele für die nächsten Jahre?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Hoffmann",
+   "parts": [
+    "Dann habe ich eine gute Nachricht. Ab Januar übernehmen Sie die Projektleitung für Hamburg."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Hoffmann",
+   "parts": [
+    "Sie haben es verdient. Mit der neuen Aufgabe kommt auch eine Gehaltserhöhung. Brauchen Sie dafür noch etwas?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Hoffmann",
+   "parts": [
+    "Die Firma bezahlt den Kurs, damit Sie abends lernen können. Sagen Sie mir einfach mal, welchen Sie möchten."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Hoffmann",
+   "parts": [
+    "Sie sind ja jetzt fast drei Jahre bei uns."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Hoffmann",
+   "parts": [
+    "Was sind eigentlich Ihre Ziele?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das merkt man. Was sind eigentlich Ihre Ziele für die nächsten Jahre? [pause] Dann habe ich eine gute Nachricht. Ab Januar übernehmen Sie die Projektleitung für Hamburg. [pause] Sie haben es verdient. Mit der neuen Aufgabe kommt auch eine Gehaltserhöhung. Brauchen Sie dafür noch etwas? [pause] Die Firma bezahlt den Kurs, damit Sie abends lernen können. Sagen Sie mir einfach mal, welchen Sie möchten. [pause] Sie sind ja jetzt fast drei Jahre bei uns. [pause] Was sind eigentlich Ihre Ziele? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

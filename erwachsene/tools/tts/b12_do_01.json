@@ -1,0 +1,60 @@
+{
+ "job": "b12_do_01",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Ja. Nachdem ich alle Unterlagen gelesen hatte, habe ich drei Kandidaten ausgewählt."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Frau Petersen. Bevor sie nach Hamburg zog, hatte sie fünf Jahre im Vertrieb einer Maschinenfirma gearbeitet."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Englisch fließend, dazu Grundkenntnisse in Dänisch. Das ist für die Kunden im Norden nützlich."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Herr Yilmaz. Er hat erst zwei Jahre Berufserfahrung, aber sein Anschreiben hat mich überzeugt. Er begründet genau, warum er zu uns passt."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Seine Gehaltsvorstellung steht nicht in der Bewerbung. Darüber müssen wir im Gespräch verhandeln."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Herr Lorenz hat die meiste Erfahrung. Aber seitdem er selbstständig ist, hat er nicht mehr im Team gearbeitet."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Dohyun",
+   "parts": [
+    "Einverstanden. Soll ich die Termine vereinbaren?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ja. Nachdem ich alle Unterlagen gelesen hatte, habe ich drei Kandidaten ausgewählt. [pause] Frau Petersen. Bevor sie nach Hamburg zog, hatte sie fünf Jahre im Vertrieb einer Maschinenfirma gearbeitet. [pause] Englisch fließend, dazu Grundkenntnisse in Dänisch. Das ist für die Kunden im Norden nützlich. [pause] Herr Yilmaz. Er hat erst zwei Jahre Berufserfahrung, aber sein Anschreiben hat mich überzeugt. Er begründet genau, warum er zu uns passt. [pause] Seine Gehaltsvorstellung steht nicht in der Bewerbung. Darüber müssen wir im Gespräch verhandeln. [pause] Herr Lorenz hat die meiste Erfahrung. Aber seitdem er selbstständig ist, hat er nicht mehr im Team gearbeitet. [pause] Einverstanden. Soll ich die Termine vereinbaren? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

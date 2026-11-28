@@ -1,0 +1,25 @@
+{
+ "job": "b12s_mk_01",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Statt zu fliegen, fahren wir mit der Bahn nach Hamburg."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Was machst du für die Umwelt?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Statt zu fliegen, fahren wir mit der Bahn nach Hamburg. [pause] Was machst du für die Umwelt? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

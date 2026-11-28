@@ -1,0 +1,81 @@
+{
+ "job": "b12_fr_02",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Ja, das geht. Sie können sich sowohl für Biologie als auch für Biochemie bewerben. Sie brauchen aber zwei Anträge."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Ihr Bachelorzeugnis und einen Nachweis über Ihre Englischkenntnisse. Wenn Sie das Zeugnis noch nicht haben, reicht zunächst eine Liste Ihrer Noten."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Voraussichtlich Anfang August. Danach müssen Sie sich bis zum fünfzehnten September einschreiben."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Sie wollten mit mir über eine Fortbildung sprechen?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Welche Angebote haben Sie gefunden?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Und was ist der Unterschied?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Was kostet das?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Frau",
+   "parts": [
+    "Gut, die Kosten übernehmen wir. Was bekommen wir dafür?"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Du hast eine Idee für die Mensa? Was ist das Problem?"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Frau",
+   "parts": [
+    "Und was schlägst du vor?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ja, das geht. Sie können sich sowohl für Biologie als auch für Biochemie bewerben. Sie brauchen aber zwei Anträge. [pause] Ihr Bachelorzeugnis und einen Nachweis über Ihre Englischkenntnisse. Wenn Sie das Zeugnis noch nicht haben, reicht zunächst eine Liste Ihrer Noten. [pause] Voraussichtlich Anfang August. Danach müssen Sie sich bis zum fünfzehnten September einschreiben. [pause] Sie wollten mit mir über eine Fortbildung sprechen? [pause] Welche Angebote haben Sie gefunden? [pause] Und was ist der Unterschied? [pause] Was kostet das? [pause] Gut, die Kosten übernehmen wir. Was bekommen wir dafür? [pause] Du hast eine Idee für die Mensa? Was ist das Problem? [pause] Und was schlägst du vor? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,91 @@
+{
+ "job": "b12_n_17",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "verursachen, hat verursacht.",
+    "Der Verkehr verursacht viel Lärm."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "erneuerbar.",
+    "Wind und Sonne sind erneuerbare Energien."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Solaranlage, die Solaranlagen.",
+    "Auf dem Dach ist eine Solaranlage."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "das Windrad, die Windräder.",
+    "An der Küste stehen viele Windräder."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Kohle.",
+    "Früher wurde mit Kohle geheizt."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "das Gas.",
+    "Wir heizen mit Gas."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "verbrauchen, hat verbraucht.",
+    "Der alte Kühlschrank verbraucht viel Strom."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "verschwenden, hat verschwendet.",
+    "Wir verschwenden zu viel Wasser."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "ausschalten, hat ausgeschaltet.",
+    "Bitte schalten Sie das Licht aus."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "heizen, hat geheizt.",
+    "Im Winter heizen wir nur zwei Zimmer."
+   ]
+  }
+ ],
+ "script": "Also. [pause] verursachen, hat verursacht. Der Verkehr verursacht viel Lärm. [pause] erneuerbar. Wind und Sonne sind erneuerbare Energien. [pause] die Solaranlage, die Solaranlagen. Auf dem Dach ist eine Solaranlage. [pause] das Windrad, die Windräder. An der Küste stehen viele Windräder. [pause] die Kohle. Früher wurde mit Kohle geheizt. [pause] das Gas. Wir heizen mit Gas. [pause] verbrauchen, hat verbraucht. Der alte Kühlschrank verbraucht viel Strom. [pause] verschwenden, hat verschwendet. Wir verschwenden zu viel Wasser. [pause] ausschalten, hat ausgeschaltet. Bitte schalten Sie das Licht aus. [pause] heizen, hat geheizt. Im Winter heizen wir nur zwei Zimmer. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

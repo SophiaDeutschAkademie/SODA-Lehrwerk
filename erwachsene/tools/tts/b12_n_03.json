@@ -1,0 +1,91 @@
+{
+ "job": "b12_n_03",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Empfehlung, die Empfehlungen.",
+    "Meine Chefin hat mir eine Empfehlung geschrieben."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Stärke, die Stärken.",
+    "Was sind Ihre Stärken?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Schwäche, die Schwächen.",
+    "Jeder hat Schwächen."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Fähigkeit, die Fähigkeiten.",
+    "Für diese Arbeit braucht man viele Fähigkeiten."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "teamfähig.",
+    "Wir suchen teamfähige Mitarbeiter."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "belastbar.",
+    "In dieser Stelle muss man belastbar sein."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "geeignet.",
+    "Sie ist für die Stelle geeignet."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "verantwortlich.",
+    "Ich war für die Tests verantwortlich."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Eindruck, die Eindrücke.",
+    "Er hat einen guten Eindruck gemacht."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "erwarten, hat erwartet.",
+    "Was erwarten Sie von der Stelle?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Empfehlung, die Empfehlungen. Meine Chefin hat mir eine Empfehlung geschrieben. [pause] die Stärke, die Stärken. Was sind Ihre Stärken? [pause] die Schwäche, die Schwächen. Jeder hat Schwächen. [pause] die Fähigkeit, die Fähigkeiten. Für diese Arbeit braucht man viele Fähigkeiten. [pause] teamfähig. Wir suchen teamfähige Mitarbeiter. [pause] belastbar. In dieser Stelle muss man belastbar sein. [pause] geeignet. Sie ist für die Stelle geeignet. [pause] verantwortlich. Ich war für die Tests verantwortlich. [pause] der Eindruck, die Eindrücke. Er hat einen guten Eindruck gemacht. [pause] erwarten, hat erwartet. Was erwarten Sie von der Stelle? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

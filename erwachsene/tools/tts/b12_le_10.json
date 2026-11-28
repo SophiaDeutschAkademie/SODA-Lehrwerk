@@ -1,0 +1,81 @@
+{
+ "job": "b12_le_10",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-2/7",
+   "who": "Lena",
+   "parts": [
+    "Ist das gut oder schlecht?"
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Lena",
+   "parts": [
+    "Und was ist das Risiko?"
+   ]
+  },
+  {
+   "pid": "b1-2/7",
+   "who": "Lena",
+   "parts": [
+    "Was kann man dagegen tun?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Lena",
+   "parts": [
+    "Jiu, komm doch mal her. Ich bekomme den Karton nicht zu."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Lena",
+   "parts": [
+    "Stimmt. So, das war der letzte. Am Samstag kommt der Transporter."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Lena",
+   "parts": [
+    "Und du hast in dieser Zeit so viel erreicht. Als du eingezogen bist, hast du kaum Deutsch gesprochen."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Lena",
+   "parts": [
+    "Was hast du eigentlich nach dem Master vor?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Lena",
+   "parts": [
+    "Das werden sie bestimmt. Und dein Deutsch?"
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Lena",
+   "parts": [
+    "Du hältst ja immer durch. Ich habe eher Zweifel. Eine neue Stadt, eine neue Uni und niemand, den ich kenne."
+   ]
+  },
+  {
+   "pid": "b1-2/8",
+   "who": "Lena",
+   "parts": [
+    "Besuch mich mal in Leipzig. Dann zeige ich dir die Stadt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ist das gut oder schlecht? [pause] Und was ist das Risiko? [pause] Was kann man dagegen tun? [pause] Jiu, komm doch mal her. Ich bekomme den Karton nicht zu. [pause] Stimmt. So, das war der letzte. Am Samstag kommt der Transporter. [pause] Und du hast in dieser Zeit so viel erreicht. Als du eingezogen bist, hast du kaum Deutsch gesprochen. [pause] Was hast du eigentlich nach dem Master vor? [pause] Das werden sie bestimmt. Und dein Deutsch? [pause] Du hältst ja immer durch. Ich habe eher Zweifel. Eine neue Stadt, eine neue Uni und niemand, den ich kenne. [pause] Besuch mich mal in Leipzig. Dann zeige ich dir die Stadt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

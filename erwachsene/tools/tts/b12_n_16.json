@@ -1,0 +1,91 @@
+{
+ "job": "b12_n_16",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "das Hochwasser.",
+    "Das Hochwasser hat viele Häuser zerstört."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "der Sturm, die Stürme.",
+    "Der Sturm hat Bäume umgeworfen."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Luftverschmutzung.",
+    "Die Luftverschmutzung macht krank."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "das Abgas, die Abgase.",
+    "Autos produzieren Abgase."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "der Verkehr.",
+    "In der Innenstadt gibt es zu viel Verkehr."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Pflanze, die Pflanzen.",
+    "Viele Pflanzen brauchen wenig Wasser."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Tierart, die Tierarten.",
+    "Viele Tierarten sind in Gefahr."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "aussterben, ist ausgestorben.",
+    "Diese Tierart stirbt aus."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "schützen, hat geschützt.",
+    "Wir müssen die Wälder schützen."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "zerstören, hat zerstört.",
+    "Der Sturm hat das Dach zerstört."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Hochwasser. Das Hochwasser hat viele Häuser zerstört. [pause] der Sturm, die Stürme. Der Sturm hat Bäume umgeworfen. [pause] die Luftverschmutzung. Die Luftverschmutzung macht krank. [pause] das Abgas, die Abgase. Autos produzieren Abgase. [pause] der Verkehr. In der Innenstadt gibt es zu viel Verkehr. [pause] die Pflanze, die Pflanzen. Viele Pflanzen brauchen wenig Wasser. [pause] die Tierart, die Tierarten. Viele Tierarten sind in Gefahr. [pause] aussterben, ist ausgestorben. Diese Tierart stirbt aus. [pause] schützen, hat geschützt. Wir müssen die Wälder schützen. [pause] zerstören, hat zerstört. Der Sturm hat das Dach zerstört. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

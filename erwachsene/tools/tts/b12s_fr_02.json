@@ -1,0 +1,32 @@
+{
+ "job": "b12s_fr_02",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Das Ticket kostet zwölf Euro. Studierende bekommen eine Ermäßigung, sodass sie nur acht Euro bezahlen."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Im Historischen Museum erzählen Zeitzeugen vom Fall der Mauer. Falls Sie mit Kindern kommen: Für sie gibt es ein eigenes Programm bis einundzwanzig Uhr."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Warum sollten wir Sie einstellen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das Ticket kostet zwölf Euro. Studierende bekommen eine Ermäßigung, sodass sie nur acht Euro bezahlen. [pause] Im Historischen Museum erzählen Zeitzeugen vom Fall der Mauer. Falls Sie mit Kindern kommen: Für sie gibt es ein eigenes Programm bis einundzwanzig Uhr. [pause] Warum sollten wir Sie einstellen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

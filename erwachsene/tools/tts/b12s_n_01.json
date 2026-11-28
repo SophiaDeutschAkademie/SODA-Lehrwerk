@@ -1,0 +1,46 @@
+{
+ "job": "b12s_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "Das ist alles, was ich weiß."
+   ]
+  },
+  {
+   "pid": "b1-2/wiederholung-2",
+   "who": "N",
+   "parts": [
+    "Falls du Hilfe brauchst, ruf mich an."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "N",
+   "parts": [
+    "Bevor ich unterschreibe, lese ich den Vertrag."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "N",
+   "parts": [
+    "Das hätte ich früher wissen sollen."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "N",
+   "parts": [
+    "Falls du Zeit hast, komm doch mal vorbei."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist alles, was ich weiß. [pause] Falls du Hilfe brauchst, ruf mich an. [pause] Bevor ich unterschreibe, lese ich den Vertrag. [pause] Das hätte ich früher wissen sollen. [pause] Falls du Zeit hast, komm doch mal vorbei. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

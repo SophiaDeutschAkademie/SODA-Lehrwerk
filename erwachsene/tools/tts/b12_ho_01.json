@@ -1,0 +1,81 @@
+{
+ "job": "b12_ho_01",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Herr Park, haben Sie die Bewerbungen für Hamburg gelesen?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Wer ist Ihre Nummer eins?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Das klingt gut. Und ihre Sprachkenntnisse?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Und der zweite Kandidat?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Was erwartet er beim Gehalt?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Gut. Und der dritte?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Dann laden wir zunächst Frau Petersen und Herrn Yilmaz ein. Anschließend entscheiden wir, ob wir Herrn Lorenz noch brauchen."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Ja, bitte. Und geben Sie den anderen Bewerbern Bescheid, sobald wir uns entschieden haben. Niemand soll wochenlang auf eine Rückmeldung warten."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Hoffmann",
+   "parts": [
+    "Geben Sie den anderen Bewerbern Bescheid, sobald wir uns entschieden haben."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Hoffmann",
+   "parts": [
+    "Natürlich. Woran haben Sie gedacht?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Herr Park, haben Sie die Bewerbungen für Hamburg gelesen? [pause] Wer ist Ihre Nummer eins? [pause] Das klingt gut. Und ihre Sprachkenntnisse? [pause] Und der zweite Kandidat? [pause] Was erwartet er beim Gehalt? [pause] Gut. Und der dritte? [pause] Dann laden wir zunächst Frau Petersen und Herrn Yilmaz ein. Anschließend entscheiden wir, ob wir Herrn Lorenz noch brauchen. [pause] Ja, bitte. Und geben Sie den anderen Bewerbern Bescheid, sobald wir uns entschieden haben. Niemand soll wochenlang auf eine Rückmeldung warten. [pause] Geben Sie den anderen Bewerbern Bescheid, sobald wir uns entschieden haben. [pause] Natürlich. Woran haben Sie gedacht? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

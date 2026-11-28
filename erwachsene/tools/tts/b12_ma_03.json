@@ -1,0 +1,81 @@
+{
+ "job": "b12_ma_03",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "b1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Ich wäre länger geblieben. Ein Jahr war zu kurz. Wenn ich die Möglichkeit gehabt hätte, hätte ich den Vertrag verlängert."
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Na, wie war die Reise nach Seoul?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Was ist denn passiert?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Wusste sie das nicht?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Und die Besprechung?"
+   ]
+  },
+  {
+   "pid": "b1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Was machen wir beim nächsten Mal anders?"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Mann",
+   "parts": [
+    "Wie alt ist Ihre Firma?"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Mann",
+   "parts": [
+    "Und seit wann sind Sie in diesem Gebäude?"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Mann",
+   "parts": [
+    "Was ist das für eine Kirche?"
+   ]
+  },
+  {
+   "pid": "b1-2/6",
+   "who": "Mann",
+   "parts": [
+    "Die Häuser hier sehen sehr alt aus."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich wäre länger geblieben. Ein Jahr war zu kurz. Wenn ich die Möglichkeit gehabt hätte, hätte ich den Vertrag verlängert. [pause] Na, wie war die Reise nach Seoul? [pause] Was ist denn passiert? [pause] Wusste sie das nicht? [pause] Und die Besprechung? [pause] Was machen wir beim nächsten Mal anders? [pause] Wie alt ist Ihre Firma? [pause] Und seit wann sind Sie in diesem Gebäude? [pause] Was ist das für eine Kirche? [pause] Die Häuser hier sehen sehr alt aus. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

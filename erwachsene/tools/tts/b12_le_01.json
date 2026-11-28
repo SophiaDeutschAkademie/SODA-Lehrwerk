@@ -1,0 +1,81 @@
+{
+ "job": "b12_le_01",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "Lena",
+   "parts": [
+    "Du strahlst ja. Was ist los?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lena",
+   "parts": [
+    "Zeig mal. Was sind die Anforderungen?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lena",
+   "parts": [
+    "Und Deutsch?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lena",
+   "parts": [
+    "Siehst du! Bis wann musst du dich bewerben?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lena",
+   "parts": [
+    "Hast du das Zeugnis schon?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lena",
+   "parts": [
+    "Dann bist du gut vorbereitet. Und das Café?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lena",
+   "parts": [
+    "Susanne wird traurig sein."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Lena",
+   "parts": [
+    "Stimmt. Soll ich dein Anschreiben lesen, bevor du es abschickst?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Fast fertig. Die Frist endet am einunddreißigsten Mai. Ich bewerbe mich sowohl für Biologie als auch für Biochemie."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Ja. Entweder bekomme ich einen Platz in Biologie, oder ich nehme Biochemie. Beide haben einen Schwerpunkt in der Forschung."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Du strahlst ja. Was ist los? [pause] Zeig mal. Was sind die Anforderungen? [pause] Und Deutsch? [pause] Siehst du! Bis wann musst du dich bewerben? [pause] Hast du das Zeugnis schon? [pause] Dann bist du gut vorbereitet. Und das Café? [pause] Susanne wird traurig sein. [pause] Stimmt. Soll ich dein Anschreiben lesen, bevor du es abschickst? [pause] Fast fertig. Die Frist endet am einunddreißigsten Mai. Ich bewerbe mich sowohl für Biologie als auch für Biochemie. [pause] Ja. Entweder bekomme ich einen Platz in Biologie, oder ich nehme Biochemie. Beide haben einen Schwerpunkt in der Forschung. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

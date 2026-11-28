@@ -1,0 +1,81 @@
+{
+ "job": "b12_le_03",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "b1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Wann werde ich eine Antwort bekommen?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Im Oktober werden die Vorlesungen beginnen."
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Du suchst einen Master? Welche Studiengänge hast du gefunden?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Was ist der Unterschied?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Und wann kann man anfangen?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Wofür wirst du dich entscheiden?"
+   ]
+  },
+  {
+   "pid": "b1-2/2",
+   "who": "Lena",
+   "parts": [
+    "Weißt du schon alles über die Bewerbung?"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Statt einen neuen zu kaufen, sollten wir ihn zuerst reparieren lassen. Im Repair-Café kostet das fast nichts."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Ein Treffpunkt, an dem Leute kaputte Geräte reparieren, ohne Geld dafür zu nehmen. Man bringt das Gerät hin und hilft mit."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "Lena",
+   "parts": [
+    "Dann kaufen wir einen gebrauchten. Für jedes neue Gerät werden Ressourcen und viel Energie verbraucht."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wann werde ich eine Antwort bekommen? [pause] Im Oktober werden die Vorlesungen beginnen. [pause] Du suchst einen Master? Welche Studiengänge hast du gefunden? [pause] Was ist der Unterschied? [pause] Und wann kann man anfangen? [pause] Wofür wirst du dich entscheiden? [pause] Weißt du schon alles über die Bewerbung? [pause] Statt einen neuen zu kaufen, sollten wir ihn zuerst reparieren lassen. Im Repair-Café kostet das fast nichts. [pause] Ein Treffpunkt, an dem Leute kaputte Geräte reparieren, ohne Geld dafür zu nehmen. Man bringt das Gerät hin und hilft mit. [pause] Dann kaufen wir einen gebrauchten. Für jedes neue Gerät werden Ressourcen und viel Energie verbraucht. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

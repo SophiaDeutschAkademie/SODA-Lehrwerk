@@ -1,0 +1,25 @@
+{
+ "job": "b12s_ho_01",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Hoffmann",
+   "parts": [
+    "Die Einführung wird wohl ein halbes Jahr dauern."
+   ]
+  },
+  {
+   "pid": "b1-2/stufentest",
+   "who": "Hoffmann",
+   "parts": [
+    "Was hätten Sie in Ihrem ersten Jahr in Deutschland anders gemacht?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Die Einführung wird wohl ein halbes Jahr dauern. [pause] Was hätten Sie in Ihrem ersten Jahr in Deutschland anders gemacht? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "b12_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag, Frau Kim, hier ist Aydin von Datenwerk. Vielen Dank für Ihre Bewerbung."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Nachdem wir alle Unterlagen gelesen hatten, haben wir vier Bewerber ausgewählt. Sie sind dabei."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Wir möchten Sie zu einem Gespräch einladen: am Donnerstag, dem vierten Mai, um vierzehn Uhr."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Das Gespräch dauert ungefähr eine Stunde. Bitte bringen Sie Ihren Studentenausweis mit."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Bevor Sie kommen, schauen Sie sich bitte unsere neue App an. Wir geben Ihnen bis zum zwölften Mai Bescheid."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag. Stellen Sie sich bitte kurz vor."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Haben Sie schon Erfahrung im Testen?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Was sind Ihre Stärken und Schwächen?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Wie gut ist Ihr Deutsch?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "Frau",
+   "parts": [
+    "Ab wann könnten Sie anfangen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag, Frau Kim, hier ist Aydin von Datenwerk. Vielen Dank für Ihre Bewerbung. [pause] Nachdem wir alle Unterlagen gelesen hatten, haben wir vier Bewerber ausgewählt. Sie sind dabei. [pause] Wir möchten Sie zu einem Gespräch einladen: am Donnerstag, dem vierten Mai, um vierzehn Uhr. [pause] Das Gespräch dauert ungefähr eine Stunde. Bitte bringen Sie Ihren Studentenausweis mit. [pause] Bevor Sie kommen, schauen Sie sich bitte unsere neue App an. Wir geben Ihnen bis zum zwölften Mai Bescheid. [pause] Guten Tag. Stellen Sie sich bitte kurz vor. [pause] Haben Sie schon Erfahrung im Testen? [pause] Was sind Ihre Stärken und Schwächen? [pause] Wie gut ist Ihr Deutsch? [pause] Ab wann könnten Sie anfangen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

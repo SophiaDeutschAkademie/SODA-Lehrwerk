@@ -1,0 +1,87 @@
+{
+ "job": "b12_n_20",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "pflanzen, hat gepflanzt.",
+    "Die Stadt pflanzt neue Bäume."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "der Baum, die Bäume.",
+    "Vor dem Haus steht ein alter Baum."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "lassen, du lässt, hat gelassen.",
+    "Ich lasse mein Fahrrad reparieren."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "statt.",
+    "Statt zu fliegen, nehme ich die Bahn."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "schaden, hat geschadet.",
+    "Abgase schaden der Gesundheit."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "die Ressource, die Ressourcen.",
+    "Wir müssen Ressourcen sparen."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "ich lasse, du lässt, er lässt"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "wir lassen, ihr lasst, sie lassen"
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "Ich repariere das Fahrrad. Ich lasse das Fahrrad reparieren."
+   ]
+  },
+  {
+   "pid": "b1-2/3",
+   "who": "N",
+   "parts": [
+    "statt zu fliegen. statt alles auszudrucken."
+   ]
+  }
+ ],
+ "script": "Also. [pause] pflanzen, hat gepflanzt. Die Stadt pflanzt neue Bäume. [pause] der Baum, die Bäume. Vor dem Haus steht ein alter Baum. [pause] lassen, du lässt, hat gelassen. Ich lasse mein Fahrrad reparieren. [pause] statt. Statt zu fliegen, nehme ich die Bahn. [pause] schaden, hat geschadet. Abgase schaden der Gesundheit. [pause] die Ressource, die Ressourcen. Wir müssen Ressourcen sparen. [pause] ich lasse, du lässt, er lässt [pause] wir lassen, ihr lasst, sie lassen [pause] Ich repariere das Fahrrad. Ich lasse das Fahrrad reparieren. [pause] statt zu fliegen. statt alles auszudrucken. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

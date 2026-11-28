@@ -1,0 +1,90 @@
+{
+ "job": "b12_n_04",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Erwartung, die Erwartungen.",
+    "Die Stelle passt zu meinen Erwartungen."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Gehaltsvorstellung, die Gehaltsvorstellungen.",
+    "Wie sind Ihre Gehaltsvorstellungen?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "verhandeln, hat verhandelt.",
+    "Über das Gehalt kann man verhandeln."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "begründen, hat begründet.",
+    "Können Sie Ihre Entscheidung begründen?"
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "der Kandidat, die Kandidaten.",
+    "Wir laden drei Kandidaten ein."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "auswählen, hat ausgewählt.",
+    "Wir wählen die besten Bewerber aus."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "einstellen, hat eingestellt.",
+    "Die Firma stellt zwei Mitarbeiter ein."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Karriere, die Karrieren.",
+    "Sie möchte Karriere machen."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Zusage, die Zusagen."
+   ]
+  },
+  {
+   "pid": "b1-2/1",
+   "who": "N",
+   "parts": [
+    "die Absage, die Absagen.",
+    "Leider habe ich eine Absage bekommen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Erwartung, die Erwartungen. Die Stelle passt zu meinen Erwartungen. [pause] die Gehaltsvorstellung, die Gehaltsvorstellungen. Wie sind Ihre Gehaltsvorstellungen? [pause] verhandeln, hat verhandelt. Über das Gehalt kann man verhandeln. [pause] begründen, hat begründet. Können Sie Ihre Entscheidung begründen? [pause] der Kandidat, die Kandidaten. Wir laden drei Kandidaten ein. [pause] auswählen, hat ausgewählt. Wir wählen die besten Bewerber aus. [pause] einstellen, hat eingestellt. Die Firma stellt zwei Mitarbeiter ein. [pause] die Karriere, die Karrieren. Sie möchte Karriere machen. [pause] die Zusage, die Zusagen. [pause] die Absage, die Absagen. Leider habe ich eine Absage bekommen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}
