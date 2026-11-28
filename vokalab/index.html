@@ -869,6 +869,100 @@ html[data-theme="dark"] #hub .lv-pdf-t{color:#A3ADBA}
 html[data-theme="dark"] #hub .lv-pdf-a{background:#161B22;border-color:#344052;color:#AEB9DD}
 html[data-theme="dark"] #hub .lv-pdf-a:hover{border-color:#8FB0E0;background:#1B2028}
 html[data-theme="dark"] #hub .lv-pdf-a:focus-visible{outline-color:#AEB9DD}
+
+/* ===== 레벨 선택: 레벨 먼저 고르는 화면(2026-11-28) ===== */
+#hub .wrap.l4-wrap{max-width:960px}
+#hub .l4{--m-bg:#fff;--m-bd:#ddd5c4;--m-k:#384568;--m-s:#4c6078;--m-bar:#e9e1cf;--m-bar-i:#384568;--m-go:#384568;--m-go-i:#fff;
+  --x-bg:#EAF4EF;--x-bd:#A9CDBC;--x-k:#22594A;--x-s:#3E6357;--x-bar:#CFE4DA;--x-bar-i:#2B6B55;--x-go:#2B6B55;--x-go-i:#fff;
+  --a-bg:#EEF1F5;--a-bd:#C3CCD8;--a-k:#3F5068;--a-s:#56667A;--a-bar:#D5DCE6;--a-bar-i:#4A5A70;--a-go:#4A5A70;--a-go-i:#fff;
+  --card:#fff;--line:#ddd5c4;--ink:#1f2f4a;--sub:#4c6078;--acc:#384568;--sel:#EEF0F7;--dash:#d9d0bd;
+  display:grid;grid-template-columns:232px minmax(0,1fr);gap:14px;align-items:stretch;margin-bottom:18px}
+html[data-theme="dark"] #hub .l4{--m-bg:#161B22;--m-bd:#2F3744;--m-k:#AEB9DD;--m-s:#A9B0BA;--m-bar:#2A313B;--m-bar-i:#8FB0E0;--m-go:#AEB9DD;--m-go-i:#14181E;
+  --x-bg:#13241E;--x-bd:#2C5A47;--x-k:#8FD6B6;--x-s:#A9C4B8;--x-bar:#1F3A30;--x-bar-i:#6FBF9C;--x-go:#7FCBAA;--x-go-i:#0F1A15;
+  --a-bg:#181D25;--a-bd:#344052;--a-k:#B4C2D3;--a-s:#A3ADBA;--a-bar:#263040;--a-bar-i:#8EA3BC;--a-go:#9FB2C8;--a-go-i:#14181E;
+  --card:#1B2028;--line:#2A313B;--ink:#ECEAE4;--sub:#A9B0BA;--acc:#AEB9DD;--sel:#242B35;--dash:#2F3744}
+#hub .l4 .bar{display:block;height:3px;border-radius:3px;overflow:hidden;background:var(--m-bar)}
+#hub .l4 .bar i{display:block;height:100%;border-radius:3px;background:var(--m-bar-i)}
+#hub .l4-nv{display:flex;flex-direction:column;gap:5px}
+#hub .l4-ni{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:4px 9px;padding:7px 13px 8px;border:1px solid var(--line);border-radius:11px;background:var(--card);color:var(--ink);font:inherit;text-align:left;cursor:pointer;transition:border-color .15s,background .15s}
+#hub .l4-ni-l{font-size:19px;font-weight:300;letter-spacing:-.03em;line-height:1.1;color:var(--acc);white-space:nowrap}
+#hub .l4-ni-s{justify-self:end;font-size:12px;font-weight:500;color:var(--sub);white-space:nowrap}
+#hub .l4-ni .bar{grid-column:1/-1;height:2px}
+#hub .l4-ni:hover{border-color:var(--acc)}
+#hub .l4-ni.l4-on{border-color:var(--acc);background:var(--sel);box-shadow:inset 0 0 0 1px var(--acc)}
+#hub .l4-ni.l4-on .l4-ni-s{color:var(--ink)}
+#hub .l4-ni:focus-visible,#hub .l4-act:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+#hub .l4-nv-c{font-size:12.5px;font-weight:700;color:var(--ink);margin:10px 2px 1px}
+#hub .l4-pn{display:flex;flex-direction:column;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 14px}
+#hub .l4-pn-h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:15px}
+#hub .l4-big{font-size:34px;font-weight:300;letter-spacing:-.03em;line-height:1.1;color:var(--acc)}
+#hub .l4-nm{font-size:15px;font-weight:600;color:var(--ink)}
+#hub .l4-pn-d{margin-left:auto;font-size:13px;color:var(--sub)}
+#hub .l4-acts{flex:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+#hub .l4-acts.l4-n2{grid-template-columns:repeat(2,minmax(0,1fr))}
+#hub .l4-acts.l4-n1{grid-template-columns:minmax(0,1fr)}
+#hub .l4-act{display:flex;flex-direction:column;min-width:0;padding:13px 13px 12px;border:1px solid var(--m-bd);border-radius:12px;background:var(--m-bg);color:var(--ink);font:inherit;text-align:left;cursor:pointer;transition:border-color .15s}
+#hub .l4-act-h{display:flex;flex-direction:column;gap:10px}
+#hub .l4-act-t{font-size:14.5px;font-weight:700;color:var(--m-k);white-space:nowrap}
+#hub .l4-act-n{font-size:32px;font-weight:300;letter-spacing:-.03em;line-height:1;color:var(--m-k);white-space:nowrap;min-height:32px}
+#hub .l4-act-n small{font-size:12.5px;font-weight:500;letter-spacing:0;margin-left:4px}
+#hub .l4-act-d{font-size:12.5px;line-height:1.5;color:var(--m-s);margin-top:9px;word-break:keep-all}
+#hub .l4-act-s{font-size:12.5px;font-weight:600;color:var(--ink);margin-top:auto;padding-top:14px}
+#hub .l4-act-s .l4-sm{display:none}
+#hub .l4-act .bar{height:4px;margin-top:6px;background:var(--m-bar)}
+#hub .l4-act .bar i{background:var(--m-bar-i)}
+#hub .l4-act-p{font-size:12px;color:var(--m-s);margin-top:6px;min-height:18px}
+#hub .l4-act-go{display:flex;align-items:center;justify-content:center;gap:1px;min-height:38px;margin-top:12px;border-radius:9px;border:1px solid var(--m-go);color:var(--m-go);font-size:13.5px;font-weight:700}
+#hub .l4-act-go svg{width:15px;height:15px;margin-right:-4px}
+#hub .l4-act.l4-run .l4-act-go{background:var(--m-go);color:var(--m-go-i)}
+#hub .l4-act:hover{border-color:var(--m-go)}
+#hub .l4-act.l4-x{background:var(--x-bg);border-color:var(--x-bd)}
+#hub .l4-act.l4-x .l4-act-t,#hub .l4-act.l4-x .l4-act-n{color:var(--x-k)}
+#hub .l4-act.l4-x .l4-act-d,#hub .l4-act.l4-x .l4-act-p{color:var(--x-s)}
+#hub .l4-act.l4-x .bar{background:var(--x-bar)}#hub .l4-act.l4-x .bar i{background:var(--x-bar-i)}
+#hub .l4-act.l4-x .l4-act-go{border-color:var(--x-go);color:var(--x-go)}
+#hub .l4-act.l4-x.l4-run .l4-act-go{background:var(--x-go);color:var(--x-go-i)}
+#hub .l4-act.l4-x:hover{border-color:var(--x-go)}
+#hub .l4-act.l4-a{background:var(--a-bg);border-color:var(--a-bd)}
+#hub .l4-act.l4-a .l4-act-t,#hub .l4-act.l4-a .l4-act-n{color:var(--a-k)}
+#hub .l4-act.l4-a .l4-act-d,#hub .l4-act.l4-a .l4-act-p{color:var(--a-s)}
+#hub .l4-act.l4-a .bar{background:var(--a-bar)}#hub .l4-act.l4-a .bar i{background:var(--a-bar-i)}
+#hub .l4-act.l4-a .l4-act-go{border-color:var(--a-go);color:var(--a-go)}
+#hub .l4-act.l4-a.l4-run .l4-act-go{background:var(--a-go);color:var(--a-go-i)}
+#hub .l4-act.l4-a:hover{border-color:var(--a-go)}
+#hub .l4-pdf{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:13px;padding-top:11px;border-top:1px dashed var(--dash)}
+#hub .l4-pdf-t{margin-right:auto;font-size:12px;font-weight:600;color:var(--sub)}
+#hub .l4-pdf-b{display:flex;gap:6px}
+#hub .l4-pdf .lv-pdf-a{min-height:34px;padding:0 12px;font-size:12.5px}
+@media (max-width:880px){
+  #hub .l4{grid-template-columns:minmax(0,1fr);gap:12px}
+  #hub .l4-nv{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+  #hub .l4-nv-c{grid-column:1/-1;margin:5px 2px 0}
+  #hub .l4-ni{grid-template-columns:minmax(0,1fr);justify-items:center;gap:6px;padding:11px 4px 9px;min-height:44px}
+  #hub .l4-ni-l{font-size:15px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+  #hub .l4-ni-s{display:none}
+  #hub .l4-ni .bar{width:100%}
+  #hub .l4-ni.l4-on .l4-ni-l{color:var(--acc)}
+  #hub .l4-pn{padding:15px 14px 12px}
+  #hub .l4-pn-h{margin-bottom:12px;gap:8px}
+  #hub .l4-big{font-size:30px}
+  #hub .l4-nm{font-size:14px}
+  #hub .l4-pn-d{font-size:12px}
+  #hub .l4-acts,#hub .l4-acts.l4-n2,#hub .l4-acts.l4-n3{flex:none;grid-template-columns:minmax(0,1fr);gap:8px}
+  #hub .l4-act{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"h g" "d g" "s g" "b b";column-gap:10px;padding:11px 12px}
+  #hub .l4-act-h{grid-area:h;flex-direction:row;align-items:baseline;gap:8px}
+  #hub .l4-act-n{font-size:13.5px;font-weight:700;letter-spacing:0;line-height:inherit;min-height:0}
+  #hub .l4-act-n small{font-size:11px;margin-left:2px}
+  #hub .l4-act-d{grid-area:d;margin-top:3px;font-size:12px}
+  #hub .l4-act-s{grid-area:s;margin-top:5px;padding-top:0;font-size:12px}
+  #hub .l4-act-s .l4-lg,#hub .l4-act-p{display:none}
+  #hub .l4-act-s .l4-sm{display:inline}
+  #hub .l4-act .bar{grid-area:b;margin-top:7px}
+  #hub .l4-act-go{grid-area:g;align-self:center;min-height:38px;margin:0;padding:0 7px 0 12px;font-size:12.5px;white-space:nowrap}
+}
+@media (max-width:600px){
+  #hub .l4-ni.l4-f .l4-ni-l{font-size:12.5px;line-height:1.32;letter-spacing:-.03em}
+}
 #hub .art-tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:#e9e1cf;border-radius:12px;padding:4px;margin-bottom:16px}
 #hub .art-tab{border:0;border-radius:9px;padding:10px 6px;font:inherit;font-size:15px;font-weight:700;color:#4c6078;background:transparent;cursor:pointer;line-height:1.3}
 #hub .art-tab small{font-weight:500;font-size:12px;margin-left:3px}
@@ -5207,6 +5301,19 @@ window.__okKO=__okKO;window.__okDE=__okDE;
     if (!L) return '';
     return '<button type="button" class="lv-opt lv-art" data-art-l="' + i + '" title="관사·복수 훈련: 명사의 관사(der·die·das)와 복수형 연습">' + lvInner(L) + '</button>';
   }
+  /* 레벨 선택 화면(레벨 먼저 보기)용: 명사 목록이 준비됐으면 숫자를 바로 돌려주고, 아니면 준비한 뒤 cb 로 알린다 */
+  function statOf(L) {
+    if (!cache[L.id]) return null;
+    var ctx = { L: L, base: L }, d = load(ctx), A = counts(ctx, 'a', d), P = counts(ctx, 'p', d);
+    var done = A.done + P.done;
+    return { nouns: A.total, due: A.due + P.due, done: done, learn: A.learn + P.learn, pct: pct(done, A.total + P.total) };
+  }
+  function levelStat(i, cb) {
+    var L = window.LEVELS[i]; if (!L) return null;
+    var st = statOf(L); if (st) return st;
+    prepare(L, function () { if (cb) cb(statOf(L)); });
+    return null;
+  }
   /* 목록이 뜬 뒤 레벨마다 차례로 명사 목록을 준비해 칸을 채웁니다 */
   function fillLevels(root) {
     var todo = window.LEVELS.map(function (L, i) { return i; }).filter(function (i) { return !cache[window.LEVELS[i].id]; });
@@ -5496,7 +5603,7 @@ window.__okKO=__okKO;window.__okDE=__okDE;
   });
 
   window.VokaArt = {
-    levelTile: levelTile, fillLevels: fillLevels, open: open,
+    levelTile: levelTile, fillLevels: fillLevels, levelStat: levelStat, open: open,
     isOpen: function () { return !!hub.querySelector('.art-root, .art-run'); },
     /* 다른 기기의 기록을 받았을 때: 훈련 홈이면 다시 그리고, 문제를 푸는 중이면 그대로 둡니다(답할 때마다 저장된 기록을 새로 읽어 고칩니다) */
     refresh: function () { if (cur && !S && hub.querySelector('.art-root')) renderHome(); },
@@ -6429,26 +6536,67 @@ function makeLevel(L, shell) {
     return '<div class="lv-pdf"><span class="lv-pdf-t">암기용 PDF 내려받기</span><div class="lv-pdf-b">' +
       pdfLink(L, 'all', '일반') + (X ? pdfLink(L, 'exam', '시험용') : '') + '</div></div>';
   }
+  /* 레벨 선택 화면: 왼쪽(휴대폰은 위)에서 레벨을 고르면 그 레벨의 학습 종류가 크게 나온다.
+     고른 레벨은 voka-sel 에 둔다(없으면 마지막으로 연 레벨). */
+  var GO_ICON = '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5l5 5-5 5"/></svg>';
+  function selGet() {
+    try { var id = localStorage.getItem('voka-sel'); for (var k = 0; k < LEVELS.length; k++) if (LEVELS[k].id === id) return k; } catch (e) {}
+    var lp = lastPlace(); return lp ? lp.i : 0;
+  }
+  function selSet(i) { try { localStorage.setItem('voka-sel', LEVELS[i].id); } catch (e) {} }
+  function lvPct(sm, n) { return sm ? Math.min(100, Math.round(sm.learned / n * 100)) : 0; }
+  function l4Bar(p) { return '<span class="bar"><i style="width:' + p + '%"></i></span>'; }
+  function l4Act(kind, i, title, n, unit, desc, st1, st2, st0, p, go, run) {
+    return '<button type="button" class="l4-act l4-' + kind + (run ? ' l4-run' : '') + '" data-k="' + kind + '" data-i="' + i + '">' +
+      '<span class="l4-act-h"><span class="l4-act-t">' + title + '</span><span class="l4-act-n">' + n + (unit ? '<small>' + unit + '</small>' : '') + '</span></span>' +
+      '<span class="l4-act-d">' + desc + '</span>' +
+      '<span class="l4-act-s"><span class="l4-lg">' + st1 + '</span><span class="l4-sm">' + st0 + '</span></span>' + l4Bar(p) +
+      '<span class="l4-act-p">' + st2 + '</span><span class="l4-act-go">' + go + GO_ICON + '</span></button>';
+  }
+  function artAct(i, st) {
+    if (!st) return l4Act('a', i, '관사·복수 훈련', '', '', '명사의 관사(der·die·das)와 복수형을 훈련합니다.', '불러오는 중', '', '불러오는 중', 0, '열기', false);
+    var on = st.due || st.done || st.learn;
+    var s1 = st.due ? '오늘 복습 ' + fmtN(st.due) + '개' : on ? '익힘 ' + fmtN(st.done) + ' · 연습 ' + fmtN(st.learn) : '아직 시작하지 않았습니다';
+    var s0 = st.due ? '오늘 복습 ' + fmtN(st.due) + '개' : on ? '익힘 ' + fmtN(st.done) + ' · 연습 ' + fmtN(st.learn) : '시작 전';
+    return l4Act('a', i, '관사·복수 훈련', fmtN(st.nouns), '명사', '명사의 관사(der·die·das)와 복수형을 훈련합니다.', s1, on ? '진행 ' + st.pct + '%' : '명사 ' + fmtN(st.nouns) + '개', s0, st.pct,
+      st.due ? '오늘 복습 시작' : on ? '이어서 훈련' : '시작하기', !!on);
+  }
+  function wordAct(kind, i, L, sm, n, title, desc) {
+    var p = lvPct(sm, n);
+    return l4Act(kind, i, title, fmtN(n), '단어', desc,
+      sm ? sm.cur + '주차 진행 중 · 주 ' + fmtN(sm.target) + '개 목표' : '아직 시작하지 않았습니다',
+      sm ? '학습됨 ' + fmtN(sm.learned) + ' / ' + fmtN(n) + ' (' + p + '%)' : '전체 ' + fmtN(n) + '단어',
+      sm ? sm.cur + '주차 · ' + p + '%' : '시작 전', p, sm ? '이어서 학습' : '시작하기', !!sm);
+  }
+  function levelPanel(i) {
+    var L = LEVELS[i], X = XLEVELS[i];
+    var art = window.VokaArt ? window.VokaArt.levelStat(i, function () { var pn = document.getElementById('l4-pn'); if (pn && +pn.dataset.i === i) { var b = pn.querySelector('.l4-act.l4-a'); if (b) { b.outerHTML = artAct(i, window.VokaArt.levelStat(i)); bindPanel(); } } }) : null;
+    var acts = [wordAct('m', i, L, apis[i].summary(), L.words.length, '전체 단어', '레벨의 모든 단어를 주차별 목표로 학습합니다.')];
+    if (X) acts.push(wordAct('x', i, X, xapis[i].summary(), X.words.length, '시험용', esc(X.examName) + ' 필수 단어만 모아 학습합니다.'));
+    if (window.VokaArt) acts.push(artAct(i, art));
+    return '<section class="l4-pn" id="l4-pn" data-i="' + i + '" aria-live="polite"><header class="l4-pn-h"><span class="l4-big">' + esc(L.label) + '</span><span class="l4-nm">' + esc(L.sub || L.name.replace(/^[A-C][0-9](-[A-C][0-9])?\s*/, '')) + '</span><span class="l4-pn-d">' + esc(L.desc || '') + '</span></header>' +
+      '<div class="l4-acts l4-n' + acts.length + '">' + acts.join('') + '</div>' +
+      '<div class="l4-pdf"><span class="l4-pdf-t">암기용 PDF 내려받기</span><span class="l4-pdf-b">' + pdfLink(L, 'all', '일반') + (X ? pdfLink(L, 'exam', '시험용') : '') + '</span></div></section>';
+  }
+  function bindPanel() {
+    hub.querySelectorAll('#l4-pn .l4-act').forEach(function (b) {
+      b.onclick = function () { var i = +b.dataset.i, k = b.dataset.k; if (k === 'x') enterX(i); else if (k === 'a') artOpen(i); else enter(i); };
+    });
+  }
   function showLevels() {
     hub.classList.remove('xmode');
     shell.tick++;
     screen = 'levels'; current = null; closeModal(); guard();
     document.title = PAGE_TITLE;
-    var gen = [], fach = [];   // 레벨(A1–C1)과 분야별 단어(L.cat === 'fach', 레벨 구분 없음)를 따로 묶어 보인다
+    var sel = selGet(), gen = [], fach = [];   // 레벨(A1–C1)과 분야별 단어(L.cat === 'fach', 레벨 구분 없음)를 따로 묶는다
     LEVELS.forEach(function (L, i) {
-      var sm = apis[i].summary(), pct = sm ? Math.round(sm.learned / L.words.length * 100) : 0;
-      var state = sm ? '<div class="lv-st"><b>' + sm.cur + '주차</b> 진행 중 · 주 ' + sm.target + '개 목표 · 총 ' + sm.weeks + '주</div><div class="bar"><i style="width:' + pct + '%"></i></div><div class="lv-p">학습됨 ' + fmtN(sm.learned) + ' / ' + fmtN(L.words.length) + ' (' + pct + '%)</div>'
-        : '<div class="lv-st">아직 시작하지 않았습니다</div><div class="bar"><i style="width:0"></i></div><div class="lv-p">전체 ' + fmtN(L.words.length) + '단어</div>';
-      var X = XLEVELS[i];
-      (L.cat === 'fach' ? fach : gen).push('<div class="lv"><span class="lv-big' + (L.label.length > 9 ? ' lv-big-s' : '') + '">' + esc(L.label) + '</span><span class="lv-nm">' + esc(L.sub || L.name.replace(/^[A-C][0-9](-[A-C][0-9])?\s*/, '')) + '</span><div class="lv-opts">' +
-        optTile(false, i, L.words.length, L.short + ' 어휘 전체', sm) +
-        (X ? optTile(true, i, X.words.length, X.examName + ' 필수', xapis[i].summary()) : '') +
-        (window.VokaArt ? window.VokaArt.levelTile(i) : '') + '</div>' + pdfBlock(i, L, X) + '</div>');
+      var p = lvPct(apis[i].summary(), L.words.length);
+      (L.cat === 'fach' ? fach : gen).push('<button type="button" class="l4-ni' + (L.cat === 'fach' ? ' l4-f' : '') + (i === sel ? ' l4-on' : '') + '" data-sel="' + i + '" aria-pressed="' + (i === sel) + '">' +
+        '<span class="l4-ni-l">' + esc(L.label) + '</span><span class="l4-ni-s">' + esc(L.sub || L.name.replace(/^[A-C][0-9](-[A-C][0-9])?\s*/, '')) + '</span>' + l4Bar(p) + '</button>');
     });
-    var cards = gen.join('') + '</div>' + (fach.length ? '<div class="lvs-h"><b>분야별 단어</b><span>레벨 구분 없이 한 목록으로 학습합니다</span></div><div class="lvs">' + fach.join('') : '');
     hub.innerHTML =
-      '<div class="wrap narrow"><header class="hd"><img class="logo" src="' + window.__LOGO + '" alt=""><div><h1>VOKALAB</h1><p class="sub">학습할 레벨을 선택하세요</p>' + syncBadge() + '</div><div class="hd-a"><button class="btn" id="btn-cover">표지</button></div></header>' +
-      '<div class="lvs">' + cards + '</div>' +
+      '<div class="wrap l4-wrap"><header class="hd"><img class="logo" src="' + window.__LOGO + '" alt=""><div><h1>VOKALAB</h1><p class="sub">레벨을 고르면 학습 종류가 나옵니다</p>' + syncBadge() + '</div><div class="hd-a"><button class="btn" id="btn-cover">표지</button></div></header>' +
+      '<div class="l4"><nav class="l4-nv" aria-label="레벨 선택">' + gen.join('') + (fach.length ? '<div class="l4-nv-c">분야별 단어</div>' + fach.join('') : '') + '</nav>' + levelPanel(sel) + '</div>' +
       '<section class="card"><h2>데이터 관리</h2>' + syncNote('levels', '<p class="muted">모든 레벨의 기록은 이 브라우저에만 저장됩니다. 기기를 바꾸거나 브라우저 데이터를 지우기 전에 백업하세요.</p>') +
       '<div class="row"><button class="btn" id="btn-bk">전체 백업 저장</button><label class="btn">전체 백업 불러오기<input type="file" id="file-bk" accept=".json,application/json" hidden></label></div>' +
       spaceBlock() + '</section>' +
@@ -6460,10 +6608,16 @@ function makeLevel(L, shell) {
         document.getElementById('m-ok').onclick = function () { var r = VSPACE.run(allPrefixes(), 1, null); closeModal(); showLevels(); modal('<h2>정리했습니다</h2><p>' + (r.weeks ? r.weeks + '개 주차의 기록을 줄여 약 ' + Math.round(r.freed / 1024) + 'KB를 비웠습니다.' : '줄일 기록이 없습니다.') + '</p><div class="row"><button class="btn primary" id="m-no">확인</button></div>', function () { document.getElementById('m-no').onclick = closeModal; }); };
       });
     };
-    hub.querySelectorAll('.lv-main').forEach(function (b) { b.onclick = function () { enter(parseInt(b.dataset.i)); }; });
-    hub.querySelectorAll('.lv-x').forEach(function (b) { b.onclick = function () { enterX(parseInt(b.dataset.x)); }; });
-    hub.querySelectorAll('.lv-art').forEach(function (b) { b.onclick = function () { artOpen(parseInt(b.dataset.artL)); }; });
-    if (window.VokaArt) window.VokaArt.fillLevels(hub);
+    hub.querySelectorAll('.l4-ni').forEach(function (b) {
+      b.onclick = function () {
+        var i = +b.dataset.sel; selSet(i);
+        hub.querySelectorAll('.l4-ni').forEach(function (x) { var on = x === b; x.classList.toggle('l4-on', on); x.setAttribute('aria-pressed', on); });
+        var pn = document.getElementById('l4-pn'); if (pn) { pn.outerHTML = levelPanel(i); bindPanel(); }
+        /* 휴대폰: 고른 레벨의 학습 칸이 화면 밖이면 보이게 */
+        var np = document.getElementById('l4-pn'); if (np && window.matchMedia('(max-width:880px)').matches) { var r = np.getBoundingClientRect(); if (r.top > hub.clientHeight - 120) np.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
+      };
+    });
+    bindPanel();
     document.getElementById('btn-cover').onclick = function () { showCover(); };
     document.getElementById('btn-bk').onclick = backupAll;
     document.getElementById('file-bk').onchange = function (e) { restoreAll(e.target.files[0]); };
