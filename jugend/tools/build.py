@@ -87,7 +87,7 @@ def item(it, n, pid):
     on = pid in OPEN; attr = (' auf" data-id="%s' % pid) if on else ''; stat = '<span class="stat"></span>' if on else ''
     if it['t'] == 'l':
         name = ('<a class="de" lang="de" href="%s/">%s</a>' % (pid, de(it['de']))) if on else '<span class="de" lang="de">%s</span>' % de(it['de'])
-        return ('      <li class="lek%s"><span class="num">%d</span><div><h3>%s<span class="ko">%s</span>%s</h3>'
+        return ('      <li class="lek%s"><span class="num" lang="de">Lektion %d</span><div><h3>%s<span class="ko">%s</span>%s</h3>'
                 '<dl><div><dt>말하기</dt><dd>%s</dd></div><div><dt>문법</dt><dd class="gr">%s</dd></div></dl></div></li>'
                 % (attr, n, name, esc(it['ko']), stat, esc(it['ziel']), de(it['gr'])))
     name = ('<a href="%s/">%s</a>' % (pid, esc(it['de']))) if on else esc(it['de'])

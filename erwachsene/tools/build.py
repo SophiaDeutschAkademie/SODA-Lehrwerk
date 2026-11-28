@@ -119,7 +119,7 @@ def item(it, n, lv, book, pid, slug):
             auf = esc(it['auf'])
         syn = ''.join('<a href="../grammatik/#/L%02d" aria-label="Syntalab Lektion %d">%02d</a>' % (k, k, k) for k in it['syn'])
         name = ('<a class="de go" lang="de" href="%s">%s</a>' % (href, de(it['de']))) if on else '<span class="de" lang="de">%s</span>' % de(it['de'])
-        return ('      <li class="lek%s"><span class="num">%d</span><div><h3>%s<span class="ko">%s</span>%s</h3>'
+        return ('      <li class="lek%s"><span class="num" lang="de">Lektion %d</span><div><h3>%s<span class="ko">%s</span>%s</h3>'
                 '<dl><div><dt>목표</dt><dd>%s</dd></div>'
                 '<div><dt>문법</dt><dd class="gr"><span lang="de">%s</span><span class="syn">Syntalab %s</span></dd></div>'
                 '<div><dt>과제</dt><dd>%s</dd></div></dl></div></li>'

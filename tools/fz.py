@@ -35,7 +35,7 @@ FEST_LEKTION = [
 FEST_TOC = [
     r'^h1$',                                                # 표지의 교재 이름
     r'^\.step$', r'^\.groups div$', r'^\.groups b$',        # 단계 계단과 그 아래 이름
-    r'^\.num$', r'^\.teile li::before$',                    # 동그라미 안의 숫자
+    r'^\.teile li::before$',                                # 동그라미 안의 숫자
     r'^\.p-name$',                                          # 단계 이름(한 줄에 들어가야 함)
     r'^\.syn a$',                                           # 높이가 정해진 작은 알약
 ]
