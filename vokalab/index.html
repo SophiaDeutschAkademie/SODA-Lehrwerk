@@ -715,6 +715,16 @@ html[data-theme="dark"] #hub .sp-h span{color:#A3ADBA}
 #hub .srs-sum div{flex:1;border:1px solid #ddd5c4;border-radius:12px;padding:14px;text-align:center}
 #hub .srs-sum b{display:block;font-size:28px;font-weight:800}
 #hub .srs-sum span{font-size:12.5px;color:#6b7a8e}
+#hub .srs-dir{display:inline-flex;border:1px solid #ddd5c4;border-radius:10px;overflow:hidden;background:#fff;margin:12px 0 2px}
+#hub .srs-dir button{border:0;border-left:1px solid #ddd5c4;background:transparent;color:#384568;font:inherit;font-size:13.5px;font-weight:700;min-height:40px;padding:0 16px;cursor:pointer}
+#hub .srs-dir button:first-child{border-left:0}
+#hub .srs-dir button.on{background:#384568;color:#fff}
+#hub .srs-ko.q{font-size:clamp(22px,6.4vw,30px);line-height:1.35;color:#1f2f4a;overflow-wrap:anywhere;text-align:center}
+#hub .srs-de.a{font-size:clamp(22px,6.4vw,30px)}
+html[data-theme="dark"] #hub .srs-dir{background:#1B2028;border-color:#2F3744}
+html[data-theme="dark"] #hub .srs-dir button{color:#C8D3E8;border-left-color:#2F3744}
+html[data-theme="dark"] #hub .srs-dir button.on{background:#8FB0E0;color:#17202E}
+html[data-theme="dark"] #hub .srs-ko.q{color:#ECEAE4}
 html[data-theme="dark"] #hub .srs-card{background:#1B2028;border-color:#2F3744}
 html[data-theme="dark"] #hub .srs-de{color:#ECEAE4}
 html[data-theme="dark"] #hub .srs-ko{color:#AEB9DD}
@@ -6073,6 +6083,9 @@ function makeLevel(L, shell) {
   function bindDash() {
     hub.querySelectorAll('[data-open]').forEach(function (b) { b.onclick = function () { launch(parseInt(b.dataset.open)); }; });
     var bs = document.getElementById('btn-srs'); if (bs) bs.onclick = openSrs;
+    [].forEach.call(hub.querySelectorAll('.srs-dir button'), function (b) {
+      b.onclick = function () { srsDirSet(b.getAttribute('data-d')); [].forEach.call(b.parentNode.children, function (x) { x.classList.toggle('on', x === b); }); };
+    });
     bindMode();
     hub.querySelectorAll('[data-cur]').forEach(function (b) { b.onclick = function () { plan.cur = parseInt(b.dataset.cur); ls.set(PK, plan); render(); }; });
     document.getElementById('btn-goal').onclick = openGoalModal;
@@ -6253,11 +6266,14 @@ function makeLevel(L, shell) {
     due.sort(function (a, b) { return a.d - b.d || a.w.i - b.w.i; });
     return { due: due, learned: learned, soon: soon };
   }
+  function srsDirGet() { try { return localStorage.getItem('voka-srs-dir') === 'kd' ? 'kd' : 'dk'; } catch (e) { return 'dk'; } }
+  function srsDirSet(d) { try { d === 'kd' ? localStorage.setItem('voka-srs-dir', 'kd') : localStorage.removeItem('voka-srs-dir'); } catch (e) {} }
   function srsCard() {
     var s = srsList();
     if (!s.learned && !s.due.length) return '';
     return '<section class="card srs"><h2>오늘 복습</h2>' +
       '<p class="muted">학습됨이 된 단어를 3일 · 7일 · 14일 · 30일 · 60일 간격으로 다시 확인합니다. 기억하면 다음 간격으로 넘어가고, 잊었으면 학습 필요로 돌아가 다음 날 다시 나옵니다.</p>' +
+      (s.due.length ? '<div class="srs-dir" role="group" aria-label="복습 방향"><button type="button" data-d="dk" class="' + (srsDirGet() === 'dk' ? 'on' : '') + '">독일어 → 한국어</button><button type="button" data-d="kd" class="' + (srsDirGet() === 'kd' ? 'on' : '') + '">한국어 → 독일어</button></div>' : '') +
       '<div class="srs-row"><div class="srs-n"><b>' + fmtN(s.due.length) + '</b><span>개 · 학습됨 ' + fmtN(s.learned) + '개 중' + (s.soon ? ' · 7일 안에 ' + fmtN(s.soon) + '개 더' : '') + '</span></div>' +
       (s.due.length ? '<button class="btn primary" id="btn-srs">복습 시작</button>' : '<span class="srs-none">오늘 복습할 단어가 없습니다</span>') + '</div></section>';
   }
@@ -6279,20 +6295,23 @@ function makeLevel(L, shell) {
   }
   function openSrs() {
     shell.tick++;
-    var all = srsList().due, queue = all.slice(0, 20), idx = 0, okN = 0, noN = 0, shown = false;
+    var all = srsList().due, queue = all.slice(0, 20), idx = 0, okN = 0, noN = 0, shown = false, kd = srsDirGet() === 'kd';
     window.__VOKA_SAY = sayMap(L.allWords || L.words);
     var T = window.VokaTTS, tts = !!(T && T.ok);
     function draw() {
       if (idx >= queue.length) return done();
       var it = queue[idx], w = it.w, img = w.h ? 'img/' + BASE.id + '/' + w.i + '.webp?v=' + (window.VOKA_IMG_V || 1) : '';
-      hub.innerHTML = '<div class="wrap narrow srs-run"><header class="hd"><div><h1>오늘 복습</h1><p class="sub">' + esc(L.label) + ' · ' + (idx + 1) + ' / ' + queue.length + '</p></div><div class="hd-a"><button class="btn" id="srs-quit" type="button">← 그만하기</button></div></header>' +
+      hub.innerHTML = '<div class="wrap narrow srs-run"><header class="hd"><div><h1>오늘 복습</h1><p class="sub">' + esc(L.label) + ' · ' + (kd ? '한→독 · ' : '') + (idx + 1) + ' / ' + queue.length + '</p></div><div class="hd-a"><button class="btn" id="srs-quit" type="button">← 그만하기</button></div></header>' +
         '<div class="bar srs-bar"><i style="width:' + Math.round(idx / queue.length * 100) + '%"></i></div>' +
-        '<div class="srs-card"><div class="srs-q"><div class="srs-de" lang="de">' + esc(w.de) + '</div>' + (tts ? '<button class="srs-say" id="srs-say" type="button" aria-label="발음 듣기">발음</button>' : '') + '</div>' +
-        '<div class="srs-a"' + (shown ? '' : ' hidden') + '><div class="srs-ko">' + esc(w.ko) + '</div>' +
+        (kd
+          ? '<div class="srs-card"><div class="srs-q"><div class="srs-ko q">' + esc(w.ko) + '</div></div>' +
+            '<div class="srs-a"' + (shown ? '' : ' hidden') + '><div class="srs-q"><div class="srs-de a" lang="de">' + esc(w.de) + '</div>' + (tts ? '<button class="srs-say" id="srs-say" type="button" aria-label="발음 듣기">발음</button>' : '') + '</div>'
+          : '<div class="srs-card"><div class="srs-q"><div class="srs-de" lang="de">' + esc(w.de) + '</div>' + (tts ? '<button class="srs-say" id="srs-say" type="button" aria-label="발음 듣기">발음</button>' : '') + '</div>' +
+            '<div class="srs-a"' + (shown ? '' : ' hidden') + '><div class="srs-ko">' + esc(w.ko) + '</div>') +
         (w.ex ? '<div class="srs-ex" lang="de">' + esc(w.ex) + '</div><div class="srs-exko">' + esc(w.exKo || '') + '</div>' : '') +
         (img ? '<img class="srs-img" src="' + img + '" alt="" width="160" height="160" onerror="this.remove()">' : '') + '</div></div>' +
         '<div class="srs-act">' + (shown ? '<button class="btn srs-no" id="srs-no" type="button">몰라요</button><button class="btn primary srs-ok" id="srs-ok" type="button">알아요</button>'
-                                         : '<button class="btn primary srs-show" id="srs-show" type="button">뜻 보기</button>') + '</div></div>';
+                                         : '<button class="btn primary srs-show" id="srs-show" type="button">' + (kd ? '독일어 보기' : '뜻 보기') + '</button>') + '</div></div>';
       document.getElementById('srs-quit').onclick = function () { render(); };
       var sy = document.getElementById('srs-say'); if (sy) sy.onclick = function () { try { T.speak(T.prepWord(w.de)); } catch (e) {} };
       if (!shown) document.getElementById('srs-show').onclick = function () { shown = true; draw(); };
