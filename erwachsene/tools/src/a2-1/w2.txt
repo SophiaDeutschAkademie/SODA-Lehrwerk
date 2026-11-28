@@ -1,0 +1,136 @@
+@id a2-1/wiederholung-2
+@typ station
+@lektionen 4 5 6
+
+== rueckblick
+-- info Lektion 4부터 6까지 왔어요
+p: 여기서는 새 내용을 배우지 않아요. 관청과 서류, 초대와 식사, 쇼핑과 교환에서 배운 것을 섞어서 다시 써 봐요. 마지막에는 관청에 가져갈 서류 목록을 만들고 예약을 부탁하는 메일을 써 봐요.
+p: 먼저 어느 과까지 마쳤는지 보고, 낱말을 다시 떠올려 보세요.
+-- fortschritt
+-- quiz 낱말 다시 보기 | Lektion 4–6의 낱말로 여덟 문제를 풀어요. 다시 하면 다른 낱말이 나와요.
+
+== training
+-- ex Hören | Dohyun이 식당에 전화해서 자리를 예약해요. 듣고 답하세요.
+audio | Ein Tisch für Freitag | Frau=Restaurant
+> Frau: Restaurant am Main, guten Tag.
+> Dohyun: Guten Tag, hier ist Park. Ich hätte gern einen Tisch für Freitagabend.
+> Frau: Gern. Für wie viele Personen?
+> Dohyun: Für vier Personen, um sieben Uhr. Können Sie mir sagen, ob Sie auch Gerichte ohne Fleisch haben?
+> Frau: Ja, natürlich. Um sieben ist es leider voll. Wenn Sie um halb acht kommen, habe ich einen Tisch am Fenster.
+> Dohyun: Halb acht ist gut. Vielen Dank!
+mc: 몇 사람 자리를 예약하나요? | 네 사람* | 두 사람 | 일곱 사람
+rf: Das Restaurant hat keine Gerichte ohne Fleisch. | f => Ja, natürlich.라고 답했어요.
+mc: Wann kommen die Gäste? | um halb acht* | um sieben | um acht => 7시에는 자리가 없어요.
+mc: Dohyun은 어떤 자리를 받나요? | 창가 자리* | 문 옆 자리 | 바깥 자리
+
+-- ex Höflich fragen | 알맞은 형태를 고르세요.
+gap: [Könnten|Könntest|Könntet] Sie mir bitte helfen? | 도와주실 수 있을까요? => Sie에게는 könnten을 써요.
+gap: Ich [hätte|hätten|hättest] gern eine Auskunft. | 한 가지 여쭤보고 싶습니다.
+gap: [Könntest|Könnten|Könnte] du das bitte wiederholen? | 다시 말해 줄 수 있어요?
+gap: Wir [hätten|hätte|hättet] gern einen Tisch für zwei Personen. | 두 사람 자리를 예약하고 싶습니다.
+gap: [Hätten|Hätte|Hättest] Sie einen Moment Zeit? | 잠깐 시간 있으세요?
+
+-- ex Indirekte Fragen | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: wissen Sie, / wann / das Amt / aufmacht? | 관청이 언제 여는지 아세요?
+ord: können Sie mir sagen, / wo / ich / unterschreiben / muss? | 어디에 서명해야 하는지 알려 주실 수 있나요?
+ord: ich weiß nicht, / ob / der Pass / noch gültig / ist. | 여권이 아직 유효한지 모르겠어요.
+ord: wissen Sie, / ob / ich / eine Kopie / brauche? | 복사본이 필요한지 아세요?
+
+-- ex dass, wenn, weil, ob | 알맞은 말을 고르세요.
+gap: Ich hoffe, [dass|wenn|ob] du am Samstag kommst. | 토요일에 와 주면 좋겠어요.
+gap: [Wenn|Dass|Ob] das Gerät kaputt ist, bekommen Sie Ihr Geld zurück. | 기기가 고장 났으면 돈을 돌려받으세요. => 조건은 wenn으로 말해요.
+gap: Ich weiß nicht, [ob|dass|wenn] ich einen Termin brauche. | 예약이 필요한지 모르겠어요. => '~인지'는 ob이에요.
+gap: Wir essen drinnen, [weil|dass|ob] es regnet. | 비가 와서 안에서 먹어요.
+gap: Die Verkäuferin sagt, [dass|ob|wenn] das Modell sehr gut ist. | 점원은 그 모델이 아주 좋다고 해요.
+gap: [Wenn|Ob|Dass] Sie möchten, bestelle ich für Sie. | 원하시면 제가 주문할게요.
+
+-- ex Dativ und Akkusativ | 알맞은 말을 고르세요.
+gap: Ich schenke [meinem|meinen|mein] Bruder ein Buch. | 저는 남동생에게 책을 선물해요. => 받는 사람은 Dativ예요.
+gap: Die Kellnerin bringt [uns|wir|unser] die Rechnung. | 종업원이 우리에게 계산서를 가져다줘요.
+gap: Können Sie [mir|mich|ich] die Liste geben? | 그 목록을 저한테 주실 수 있나요?
+gap: Dohyun schickt [der|die|den] Firma eine E-Mail. | Dohyun이 그 회사에 메일을 보내요.
+gap: Ich empfehle [dir|dich|du] den Fisch. | 생선을 추천해요.
+
+-- ex Komparativ und Superlativ | 알맞은 말을 고르세요.
+gap: Der Zug ist [schneller|schnell|am schnellsten] als der Bus. | 기차가 버스보다 빨라요.
+gap: Dieses Restaurant ist [besser|guter|am besten] als das Restaurant am Bahnhof. | 이 식당이 역 앞 식당보다 좋아요.
+gap: Im Winter ist es am [kältesten|kälter|kalt]. | 겨울이 가장 추워요.
+gap: Ich trinke [lieber|gerner|am liebsten] Tee als Kaffee. | 저는 커피보다 차를 즐겨 마셔요.
+gap: Welches Handy ist am [billigsten|billiger|billig]? | 어느 휴대폰이 가장 싸요?
+
+-- ex Adjektive | 형용사의 알맞은 끝을 고르세요.
+gap: Ich brauche einen [neuen|neuer|neues] Pass. | 새 여권이 필요해요. => der 명사의 Akkusativ는 -en이에요.
+gap: Das ist ein [gutes|guter|gute] Restaurant. | 여기는 좋은 식당이에요.
+gap: Sora hat eine [nette|netten|netter] Nachbarin. | Sora에게는 친절한 이웃이 있어요.
+gap: Wir essen in einem [kleinen|kleines|kleiner] Restaurant. | 우리는 작은 식당에서 먹어요. => Dativ에서는 늘 -en이에요.
+gap: Das ist kein [billiger|billiges|billigen] Laptop. | 그건 싼 노트북이 아니에요.
+
+-- ex Wo sagt man das? | 말과 그 말을 하는 곳을 짝지으세요.
+paar: Ich hätte gern einen Termin. = das Amt ; Die Rechnung, bitte. = das Restaurant ; Ich möchte das zurückgeben. = das Geschäft ; Haben Sie die Bestellnummer? = der Kundenservice
+
+-- ex Lesen | Jiu가 Carlos에게 보낸 메시지예요. 읽고 답하세요.
+text notiz | Nachricht von Jiu
+> Hallo Carlos,
+> danke für den Wein am Samstag! Ich hoffe, dass dir das Essen geschmeckt hat.
+> Ich habe eine Frage: Du hast doch einen neuen Laptop. Bist du zufrieden? Ich brauche auch einen, weil mein alter Laptop zu langsam ist.
+> Am Montag habe ich einen Termin bei der Ausländerbehörde. Weißt du, ob man dort mit Karte zahlen kann?
+> Wenn du Zeit hast, können wir am Mittwoch zusammen in die Stadt gehen.
+> Viele Grüße
+> Jiu
+mc: Was hat Carlos am Samstag mitgebracht? | Wein* | einen Kuchen | einen Salat
+rf: Jiu hat schon einen neuen Laptop. | f => 예전 노트북이 느려서 새것이 필요하다고 했어요.
+mc: Wo hat Jiu am Montag einen Termin? | bei der Ausländerbehörde* | im Restaurant | beim Arzt
+rf: Jiu möchte am Mittwoch mit Carlos in die Stadt gehen. | r
+
+-- ex Diktat | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Könnten Sie das bitte wiederholen? | 다시 말씀해 주시겠어요?
+dik: N: Ich hoffe, dass du kommst. | 와 주면 좋겠어요.
+dik: N: Dieses Modell ist besser. | 이 모델이 더 좋아요.
+dik: N: Ich brauche einen neuen Pass. | 새 여권이 필요해요.
+
+== projekt
+-- info 관청에 가기 전에 준비해요
+p: 관청 일은 준비가 절반이에요. 예약을 하고, 필요한 서류를 목록으로 만들고, 하나씩 모아요. 온라인 예약이 되지 않을 때는 메일로 예약을 부탁하기도 해요.
+p: 독일에서는 이사하면 2주 안에 새 주소를 Bürgeramt에 신고해야 해요. 이사했다는 말은 Ich bin umgezogen.이라고 해요. 먼저 Bürgeramt 누리집의 안내를 읽어 보세요.
+
+-- ex Verstehen | Bürgeramt 누리집의 안내예요. 읽고 답하세요.
+text notiz | Anmeldung einer Wohnung
+> Sie sind umgezogen? Dann müssen Sie Ihre neue Adresse in zwei Wochen beim Bürgeramt anmelden.
+> Bitte buchen Sie online einen Termin.
+> Das brauchen Sie:
+> 1. Ausweis oder Pass
+> 2. das Formular (ausgefüllt und unterschrieben)
+> 3. die Bestätigung von Ihrem Vermieter
+> 4. bei Familien: die Pässe von allen Personen
+> Die Anmeldung kostet nichts. Sie bekommen sofort eine Meldebescheinigung.
+mc: 이사한 뒤 언제까지 신고해야 하나요? | 2주 안에* | 두 달 안에 | 이사하기 전에
+rf: Man braucht einen Termin. | r => Bitte buchen Sie online einen Termin.
+mc: Von wem braucht man eine Bestätigung? | vom Vermieter* | von der Firma | von der Krankenkasse
+rf: Die Anmeldung kostet zehn Euro. | f => Die Anmeldung kostet nichts.
+mc: 신고하면 바로 무엇을 받나요? | 거주 증명서* | 새 여권 | 임대 계약서
+
+-- projekt Meine Checkliste | 칸을 채우면 관청에 가져갈 내 목록이 완성돼요. | Checkliste für das Bürgeramt
+p: 새집으로 이사했다고 생각하고 칸을 채워요. 날짜는 am 4. Februar처럼, 시각은 um 9 Uhr처럼 써요.
+feld: adresse | 새 주소 | Musterstraße 12, 60487 Frankfurt
+feld: einzug | 이사한 날 | am 1. Februar
+feld: termin | 예약한 날 | am 4. Februar
+feld: zeit | 예약한 시각 | um 9 Uhr
+feld: personen | 함께 신고하는 사람 | 1 Person
+karte: Neue Adresse = {adresse}
+karte: Umzug = {einzug}
+karte: Termin = {termin}, {zeit}
+karte: Personen = {personen}
+karte: Unterlagen = Pass, Formular, Bestätigung vom Vermieter
+satz: Ich bin {einzug} umgezogen. Meine neue Adresse ist {adresse}.
+satz: Ich habe {termin} {zeit} einen Termin beim Bürgeramt.
+check: 새 주소를 번지와 우편 번호까지 썼어요 ; 날짜 앞에 am, 시각 앞에 um을 썼어요 ; 가져갈 서류 세 가지를 확인했어요 ; 집주인에게 확인서를 미리 부탁했어요
+
+-- schreiben Eine E-Mail an das Bürgeramt | 온라인 예약이 되지 않아요. Bürgeramt에 예약을 부탁하는 정중한 메일을 써 보세요. 여섯 문장쯤 써요.
+punkt: 내가 누구인지 ; 무엇을 하려는지 ; 온라인 예약이 안 된다는 것 ; 예약을 부탁하는 말 ; 갈 수 있는 때 ; 서류가 더 필요한지 묻는 말
+start: Sehr geehrte Damen und Herren, …
+muster: Sehr geehrte Damen und Herren, mein Name ist Minji Choi. Ich bin am 1. Februar umgezogen und möchte meine neue Adresse anmelden. Leider kann ich online keinen Termin buchen. Könnten Sie mir bitte einen Termin geben? Ich habe am Vormittag Zeit, am liebsten am Mittwoch oder Donnerstag. Ich bringe den Pass, das Formular und die Bestätigung von meinem Vermieter mit. Können Sie mir sagen, ob ich noch etwas brauche? Mit freundlichen Grüßen, Minji Choi
+check: Sehr geehrte Damen und Herren과 Mit freundlichen Grüßen을 썼어요 ; Könnten Sie …?로 부탁했어요 ; ob 뒤에서 동사를 문장 끝에 썼어요 ; 갈 수 있는 때를 적었어요 ; 가져갈 서류를 적었어요
+
+-- tipp 서류는 한 곳에 모아 둬요
+p: 독일에서는 같은 서류를 여러 번 내요. 여권, 임대 계약서, 거주 증명서, 보험 증명서는 관청마다 다시 달라고 해요. 서류철을 하나 마련해서 원본을 모아 두고, 복사본도 몇 장씩 넣어 두세요.
+p: 관청에 메일을 쓸 때는 첫 문장에 용건을 쓰세요. 이름, 하려는 일, 부탁하는 것을 차례로 쓰면 돼요. 답장이 오면 예약 날짜와 시각, 가져갈 서류를 달력에 바로 적어 두세요.

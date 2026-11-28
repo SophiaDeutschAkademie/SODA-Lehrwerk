@@ -1,0 +1,155 @@
+@id a2-1/stufentest
+@typ test
+
+== hoeren
+-- info A2.1을 돌아보는 평가예요
+p: 듣기, 읽기, 쓰기, 말하기 네 부분으로 되어 있어요. 시간 제한은 없어요. 문제를 풀면 바로 맞았는지 알려 주고, 마지막 Ergebnis에서 부분마다 몇 문제를 맞혔는지 보여 줘요.
+p: 음성은 여러 번 들을 수 있어요. 먼저 한 번만 듣고 풀어 보면 내 듣기 실력을 더 정확히 알 수 있어요.
+
+-- ex Hören 1 | 짧은 말을 듣고 알맞은 것을 고르세요.
+hör: Lena: Stell das Fahrrad bitte in den Keller, nicht in den Flur.
+mc: 자전거를 어디에 둬야 하나요? | 지하실* | 복도 | 마당 => in den Keller
+hör: Dohyun: Der Zug hatte eine Stunde Verspätung, und ich habe die Besprechung verpasst.
+mc: Dohyun에게 무슨 일이 있었나요? | 기차가 늦어서 회의를 놓쳤어요* | 기차를 놓쳐서 집에 있었어요 | 회의가 한 시간 늦게 시작했어요
+hör: Jiu: Ich kann morgen nicht kommen, weil ich zum Arzt muss.
+mc: Jiu는 왜 내일 못 오나요? | 병원에 가야 해서* | 시험이 있어서 | 일해야 해서 => weil ich zum Arzt muss
+hör: Hoffmann: Könnten Sie mir bitte die Unterlagen bis Freitag schicken?
+mc: Frau Hoffmann은 무엇을 부탁하나요? | 금요일까지 서류를 보내 달라고* | 금요일에 회의에 오라고 | 금요일까지 서명하라고
+hör: Sora: Mein neuer Wasserkocher ist schneller, aber er ist auch lauter.
+mc: Sora의 새 전기 주전자는 어떤가요? | 더 빠르지만 더 시끄러워요* | 더 느리지만 더 조용해요 | 더 싸고 더 가벼워요
+
+-- ex Hören 2 | Sora가 집주인에게 전화해요. 듣고 답하세요.
+audio | Die Waschmaschine | Mann=Vermieter
+> Mann: Berger, guten Tag.
+> Sora: Guten Tag, Herr Berger, hier ist Lee aus dem ersten Stock. Unsere Waschmaschine funktioniert nicht.
+> Mann: Oh. Seit wann denn?
+> Sora: Seit Montag. Sie wäscht nicht mehr richtig, und es ist Wasser auf dem Boden.
+> Mann: Das tut mir leid. Ich schicke Ihnen einen Handwerker. Wann sind Sie zu Hause?
+> Sora: Am Donnerstag bin ich den ganzen Tag zu Hause.
+> Mann: Gut. Dann kommt er am Donnerstag zwischen neun und elf Uhr.
+rf: Die Waschmaschine ist seit Montag kaputt. | r
+mc: Wo ist das Wasser? | auf dem Boden* | an der Decke | im Keller
+mc: Wann kommt der Handwerker? | am Donnerstag zwischen neun und elf* | am Montag um neun | am Donnerstagnachmittag
+rf: Sora ist am Donnerstag nicht zu Hause. | f => 목요일에는 하루 종일 집에 있어요.
+
+-- ex Hören 3 | Markus가 주말에 있었던 일을 이야기해요. 듣고 답하세요.
+audio | Mein Wochenende
+> Markus: Am Samstag wollten wir mit den Kindern an den See fahren.
+> Markus: Aber am Morgen hat es geregnet, und Paul hatte Fieber. Wir mussten zu Hause bleiben.
+> Markus: Meine Frau hat Paul einen Tee gemacht, und ich habe mit Mia gekocht.
+> Markus: Am Sonntag war das Wetter besser, und Paul hat sich auch besser gefühlt.
+> Markus: Dann haben wir meine Eltern besucht und zusammen Kuchen gegessen.
+mc: Wohin wollte die Familie am Samstag fahren? | an den See* | in die Berge | zu den Eltern
+mc: 토요일에 왜 집에 있었나요? | 비가 오고 Paul이 열이 나서* | 차가 고장 나서 | Markus가 일해야 해서
+rf: Am Sonntag war das Wetter schlechter. | f => 일요일에는 날씨가 더 좋았어요.
+mc: Was hat die Familie am Sonntag gemacht? | die Eltern von Markus besucht* | einen Ausflug an den See gemacht | den ganzen Tag gekocht
+
+== lesen
+-- ex Lesen 1 | 건물 입구에 붙은 안내문이에요. 읽고 답하세요.
+text notiz | Information für alle Mieter
+> Liebe Mieterinnen und Mieter,
+> am Dienstag, 12. Januar, reparieren Handwerker die Heizung im Haus.
+> Von 8 bis 14 Uhr funktioniert die Heizung nicht, und es gibt kein warmes Wasser.
+> Die Handwerker müssen auch in die Wohnungen. Bitte bleiben Sie zu Hause, oder geben Sie dem Hausmeister Ihren Schlüssel.
+> Wenn Sie Fragen haben, rufen Sie bitte an: 069 90009-214.
+> Ihre Hausverwaltung
+mc: Was passiert am 12. Januar? | Handwerker reparieren die Heizung.* | Der Hausmeister kontrolliert die Schlüssel. | Die Mieter bekommen neue Fenster.
+rf: Um 10 Uhr gibt es warmes Wasser. | f => 8시부터 14시까지 따뜻한 물이 나오지 않아요.
+mc: 그날 집에 있을 수 없으면 어떻게 해야 하나요? | 관리인에게 열쇠를 맡겨요* | 문을 열어 둬요 | 이웃에게 전화해요
+rf: Bei Fragen kann man anrufen. | r
+
+-- ex Lesen 2 | 가게에 붙은 안내예요. 읽고 답하세요.
+text notiz | Umtausch und Reklamation
+> Sie sind mit einem Gerät nicht zufrieden?
+> Sie können alle Geräte in 14 Tagen umtauschen. Bitte bringen Sie den Kassenzettel mit.
+> Sie bekommen Ihr Geld zurück oder ein neues Gerät.
+> Ist ein Gerät kaputt? Dann reparieren wir es. Die Garantie ist zwei Jahre gültig.
+> Geräte im Angebot können Sie leider nicht umtauschen.
+mc: Wie lange kann man ein Gerät umtauschen? | 14 Tage* | zwei Jahre | einen Monat
+rf: Für den Umtausch braucht man den Kassenzettel. | r
+mc: 할인해서 산 기기는 어떤가요? | 바꿀 수 없어요* | 한 달 안에 바꿀 수 있어요 | 돈만 돌려받을 수 있어요 => Geräte im Angebot können Sie leider nicht umtauschen.
+rf: Die Garantie ist ein Jahr gültig. | f => 보증 기간은 2년이에요.
+
+-- ex Lesen 3 | Dohyun이 Markus에게 보낸 메일이에요. 읽고 답하세요.
+text mail | Abendessen am Freitag
+> Von: d.park@example.com
+> An: m.weber@example.com
+> Betreff: Abendessen am Freitag
+> Hallo Markus,
+> meine Familie ist jetzt seit vier Monaten in Deutschland, und wir möchten dich und deine Familie zum Essen einladen.
+> Hast du am Freitag um 18 Uhr Zeit? Sujin kocht koreanisch. Ich hoffe, dass die Kinder gern Reis essen.
+> Wenn Mia und Paul etwas nicht essen, schreib es mir bitte.
+> Ihr müsst nichts mitbringen.
+> Viele Grüße
+> Dohyun
+mc: Wen lädt Dohyun ein? | Markus und seine Familie* | das Team | Frau Hoffmann
+rf: Dohyun kocht am Freitag. | f => Sujin kocht koreanisch.
+mc: Wann ist das Essen? | am Freitag um 18 Uhr* | am Samstag um 18 Uhr | am Freitag um 20 Uhr
+mc: 손님은 무엇을 가져와야 하나요? | 아무것도 가져오지 않아도 돼요* | 후식 | 마실 것 => Ihr müsst nichts mitbringen.
+
+== schreiben
+-- ex Schreiben 1 | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / stelle / die Lampe / auf den Tisch. | 전등을 탁자 위에 놓아요.
+ord: wir / haben / das Schloss / besichtigt. | 우리는 성을 구경했어요.
+ord: ich / bleibe / zu Hause, / weil / ich / krank / bin. | 아파서 집에 있어요.
+ord: wissen Sie, / wo / das Bürgeramt / ist? | 주민 센터가 어디인지 아세요?
+ord: ich / hoffe, / dass / du / kommst. | 와 주면 좋겠어요.
+ord: dieser Laptop / ist / leichter / als / mein Rucksack. | 이 노트북은 제 배낭보다 가벼워요.
+
+-- ex Schreiben 2 | 괄호 안의 낱말을 알맞은 형태로 바꿔 빈칸에 쓰세요.
+gap: Ich hänge das Bild an [=die] Wand. (die Wand) | 그림을 벽에 걸어요. => 옮기는 방향은 Akkusativ예요.
+gap: Wir sind um neun Uhr [=angekommen]. (ankommen) | 우리는 9시에 도착했어요. => ankommen, ist angekommen
+gap: Als Kind [=wollte] ich Lehrerin werden. (wollen) | 어릴 때 저는 선생님이 되고 싶었어요.
+gap: Du [=solltest] zum Arzt gehen. (sollen) | 병원에 가는 게 좋겠어요. => 조언할 때는 sollte를 써요.
+gap: Ich habe [=mich] erkältet. (ich) | 저는 감기에 걸렸어요.
+gap: [=Könnten] Sie mir bitte helfen? (können) | 도와주실 수 있을까요?
+gap: Der Zug ist [=schneller] als der Bus. (schnell) | 기차가 버스보다 빨라요.
+gap: Ich brauche einen [=neuen] Pass. (neu) | 새 여권이 필요해요. => der 명사의 Akkusativ는 einen neuen이에요.
+
+-- ex Schreiben 3 | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Die Leiter steht im Keller. | 사다리는 지하실에 있어요.
+dik: N: Ich musste lange warten. | 저는 오래 기다려야 했어요.
+dik: N: Du solltest dich ausruhen. | 쉬는 게 좋겠어요.
+dik: N: Ich hätte gern einen Termin. | 예약을 하고 싶습니다.
+
+-- schreiben Mein Text | 집에 문제가 생겨서 집주인에게 메일을 써요. 아래 내용을 넣어서 여섯 문장 넘게 써 보세요. 이 글은 자동으로 채점하지 않아요. 다 쓴 뒤에 예시 글과 비교하고 아래 항목을 스스로 확인해요.
+punkt: 인사 ; 무엇이 언제부터 문제인지 ; 왜 급한지 ; 부탁하는 것 ; 내가 집에 있는 때 ; 맺음말
+start: Sehr geehrte Frau Krause, …
+muster: Sehr geehrte Frau Krause, ich wohne im zweiten Stock und habe ein Problem. Seit Montag funktioniert die Heizung im Wohnzimmer nicht. Es ist sehr kalt, und das ist ein Problem, weil ich oft zu Hause arbeite. Könnten Sie bitte einen Handwerker schicken? Ich bin am Mittwoch und am Donnerstag ab 15 Uhr zu Hause. Können Sie mir sagen, wann er kommt? Vielen Dank für Ihre Hilfe. Mit freundlichen Grüßen, Minji Choi
+check: 여섯 문장 넘게 썼어요 ; 무엇이 언제부터 문제인지 썼어요 ; weil 뒤에서 동사를 문장 끝에 썼어요 ; Könnten Sie …?로 정중하게 부탁했어요 ; 인사와 맺음말을 썼어요
+
+== sprechen
+-- info 소리 내어 말해요
+p: 말하기는 자동으로 채점하지 않아요. 질문을 듣고 바로 소리 내어 답한 다음, 예시 답과 비교해 보세요.
+p: 녹음 단추를 누르면 내 목소리를 다시 들을 수 있어요. 녹음은 저장되지 않아요.
+
+-- sprich Fragen und Antworten | 질문을 듣고 소리 내어 답하세요. 한두 문장으로 답하면 돼요. | Frau=Kellnerin; Mann=Sachbearbeiter
+f: Lena: Wohin stellen wir das Regal? | 선반을 어디에 놓을까요? => Wir stellen es an die Wand, neben die Tür.
+f: Markus: Wie war dein Wochenende? | 주말은 어땠어요? => Schön. Ich habe die Altstadt besichtigt und Freunde getroffen.
+f: Becker: Was wollten Sie als Kind werden? | 어릴 때 뭐가 되고 싶으셨어요? => Als Kind wollte ich Ärztin werden.
+f: Hoffmann: Sie sehen krank aus. Wie fühlen Sie sich? | 아파 보이네요. 몸은 어떠세요? => Nicht gut. Ich habe mich erkältet und habe Kopfschmerzen.
+f: Jiu: Ich habe morgen eine Prüfung, aber ich habe Fieber. Was soll ich machen? | 내일 시험이 있는데 열이 나요. 어떻게 해야 할까요? => Du solltest zum Arzt gehen und ein Attest holen.
+f: Mann: Guten Tag. Was kann ich für Sie tun? | 안녕하세요. 무엇을 도와드릴까요? => Guten Tag. Ich möchte meine Aufenthaltserlaubnis verlängern. / Ich hätte gern einen Termin.
+f: Frau: Zusammen oder getrennt? | 같이 계산하세요, 따로 하세요? => Zusammen, bitte. / Getrennt, bitte.
+f: Lena: Was ist für dich bei einem Handy am wichtigsten? | 휴대폰에서 뭐가 가장 중요해요? => Am wichtigsten ist für mich der Akku. / Der Preis ist für mich am wichtigsten.
+
+-- sprich Ein Problem | 아래 낱말을 보면서 30초쯤 이야기하세요. 산 물건이나 집에 문제가 있었던 때를 떠올려요. 먼저 혼자 말해 보고, 그다음에 예시를 확인해요.
+thema: Was? ; Wann? ; Welches Problem? ; Was gemacht? ; Wie war das Ende?
+muster: Letzten Monat habe ich einen Wasserkocher gekauft. Nach einer Woche hat er nicht mehr funktioniert. Ich bin mit dem Kassenzettel ins Geschäft gegangen und habe das Problem erklärt. Der Verkäufer war sehr nett. Ich habe ein neues Gerät bekommen und musste nichts zahlen.
+
+== ergebnis
+-- bilanz
+hoch: A2.1에서 배운 내용을 잘 익혔어요. 이제 A2.2 Mittendrin으로 넘어가요.
+mittel: 대부분 익혔어요. 틀린 문제의 설명을 다시 읽고, 점수가 낮은 부분은 Wiederholung 1과 Wiederholung 2의 복습 문제로 한 번 더 연습해 보세요.
+tief: 아직 헷갈리는 내용이 많아요. Wiederholung 1과 Wiederholung 2의 복습 문제를 다시 풀고, 어려웠던 과의 Grammatik과 Training을 본 다음 평가를 한 번 더 해 보세요.
+
+-- info 쓰기와 말하기는 스스로 확인해요
+p: 글쓰기 과제와 말하기는 점수에 들어가지 않아요. 아래 세 가지를 얼마나 할 수 있는지 스스로 표시해 보세요.
+
+-- kann
+Ich kann ein Problem in einer E-Mail beschreiben und höflich um Hilfe bitten. | 문제를 메일로 설명하고 정중하게 도움을 청할 수 있어요.
+Ich kann Fragen aus dem Alltag beantworten und Gründe nennen. | 생활 속 질문에 답하고 이유를 말할 수 있어요.
+Ich kann erzählen, was passiert ist. | 있었던 일을 이야기할 수 있어요.
+
+-- info 다음 단계는 A2.2 Mittendrin
+p: A2.2에서는 일과 배움, 돈과 계약, 여가까지 생활이 넓어져요. 계획과 바람을 말하고, 사람과 물건을 자세히 설명하는 법을 배워요.
