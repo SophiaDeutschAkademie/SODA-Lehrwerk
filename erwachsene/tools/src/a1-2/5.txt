@@ -1,0 +1,372 @@
+@id a1-2/5
+
+== ziel
+bild: The clothing floor of a department store. JIU stands in front of a tall mirror and tries on a blue jacket, she looks at the viewer with a questioning smile. LENA stands next to her, holds a second jacket on a hanger and smiles. Racks with clothes behind them. Both faces are clearly visible.
+alt: 백화점 옷 매장에서 Jiu가 거울 앞에서 재킷을 입어 보고, Lena가 다른 재킷을 들고 옆에 서 있어요.
+lead: 옷을 살 때는 치수와 색을 말하고, 마음에 드는지, 몸에 맞는지 말해야 해요. 친구나 동료의 선물을 함께 고를 때도 같은 말을 써요. 이 과에서는 '나에게, 너에게, 그에게'를 뜻하는 말을 배워요.
+mission: 이 과를 마치면 가게에서 옷을 사고, 마음에 드는지와 맞는지를 말하고, 다른 사람과 선물을 정할 수 있어요.
+wort: Die Jacke gefällt mir. | 그 재킷이 마음에 들어요.
+wort: Die Hose passt mir nicht. | 그 바지는 저한테 안 맞아요.
+wort: Kann ich Ihnen helfen? | 도와드릴까요?
+wort: Was schenken wir ihm? | 그에게 뭘 선물할까요?
+mc: 가게에서 점원이 Kann ich Ihnen helfen?이라고 물어요. 무슨 뜻일까요? | 도와드릴까요?* | 저를 도와주시겠어요? | 무엇을 사셨어요? => Ihnen은 '당신에게'라는 뜻이에요. 점원이 손님을 돕겠다는 말이에요.
+mc: '그 재킷이 마음에 들어요'는 어떻게 말할까요? | Die Jacke gefällt mir.* | Ich gefalle die Jacke. | Die Jacke gefällt ich. => 마음에 드는 물건이 주어이고, 사람은 mir로 써요.
+
+== hoeren
+-- dialog A | Im Kaufhaus | 토요일 오후, 시내의 백화점이에요. Jiu가 재킷을 사려고 해요. Lena가 같이 왔어요.
+vor: 들으면서 찾아보세요. Jiu는 재킷을 얼마에 사나요?
+Lena: Schau mal, hier sind die Jacken. Welche Jacke gefällt dir? | 이것 봐요, 여기 재킷이 있어요. 어떤 재킷이 마음에 들어요?
+Jiu: Diese Jacke hier. Die Farbe gefällt mir. | 여기 이 재킷이요. 색이 마음에 들어요.
+Lena: Ja, Blau steht dir gut. Welche Größe hast du? | 네, 파란색이 Jiu 씨한테 잘 어울려요. 치수가 어떻게 돼요?
+Jiu: Größe 36. Ich probiere die Jacke an. | 36이에요. 재킷을 입어 볼게요. | say=Größe sechsunddreißig. Ich probiere die Jacke an.
+Lena: Und? Passt sie? | 어때요? 맞아요?
+Jiu: Nein, sie passt mir nicht. Sie ist zu klein. | 아니요, 저한테 안 맞아요. 너무 작아요.
+Lena: Warte, ich helfe dir. Hier ist die Jacke in Größe 38. | 잠깐만요, 제가 도와줄게요. 여기 38 사이즈가 있어요. | say=Warte, ich helfe dir. Hier ist die Jacke in Größe achtunddreißig.
+Jiu: Danke! Ja, diese Jacke passt. Wie findest du sie? | 고마워요! 네, 이 재킷은 맞아요. 어때 보여요?
+Lena: Sie steht dir sehr gut! Was kostet sie? | 정말 잘 어울려요! 얼마예요?
+Jiu: 89 Euro. Das ist teuer. | 89유로예요. 비싸네요. | say=Neunundachtzig Euro. Das ist teuer.
+Lena: Nein, schau mal! Heute ist alles im Angebot. Die Jacke kostet nur 69 Euro. | 아니에요, 이것 봐요! 오늘은 전부 할인이에요. 재킷이 69유로밖에 안 해요. | say=Nein, schau mal! Heute ist alles im Angebot. Die Jacke kostet nur neunundsechzig Euro.
+Jiu: Super! Dann nehme ich sie. | 잘됐네요! 그럼 이걸로 할게요.
+Lena: Brauchst du auch einen Schal? Dieser Schal hier ist schön. | 목도리도 필요해요? 여기 이 목도리 예뻐요.
+Jiu: Er gefällt mir auch. Aber ich habe schon einen Schal. | 그것도 마음에 들어요. 하지만 목도리는 이미 있어요.
+
+-- dialog B | Ein Geschenk für Herrn Braun | 월요일 점심시간, 회사 휴게실이에요. 동료 Herr Braun이 다음 주에 정년퇴직해요. 팀이 선물을 정해요.
+vor: 들으면서 찾아보세요. 팀은 Herr Braun에게 무엇을 선물하나요?
+Hoffmann: Herr Braun geht nächste Woche in Rente. Wir brauchen ein Geschenk für ihn. | Herr Braun이 다음 주에 정년퇴직해요. 그분께 드릴 선물이 필요해요.
+Markus: Was schenken wir ihm? Haben Sie eine Idee? | 그분께 뭘 선물할까요? 좋은 생각 있으세요?
+Hoffmann: Er wandert gern. Vielleicht einen Rucksack? | 걷기 여행을 좋아하시잖아요. 배낭은 어떨까요?
+Dohyun: Er hat schon einen Rucksack. Der Rucksack ist ganz neu. | 배낭은 이미 있으세요. 아주 새것이에요.
+Markus: Dann ein Buch? Er liest gern Krimis. | 그럼 책은요? 추리 소설을 즐겨 읽으세요.
+Hoffmann: Ein Buch ist gut. Aber welches Buch? Ich habe keine Idee. | 책 좋네요. 그런데 어떤 책으로요? 저는 잘 모르겠어요.
+Dohyun: Wir schenken ihm einen Gutschein von der Buchhandlung. Dann kann er die Bücher selbst kaufen. | 서점 상품권을 드려요. 그러면 책을 직접 사실 수 있어요.
+Hoffmann: Sehr gut, Herr Park! Und dazu Blumen und eine Karte. | 아주 좋아요, Herr Park! 거기에 꽃과 카드도 드려요.
+Markus: Wie viel gibt jeder? Zehn Euro? | 한 사람이 얼마씩 낼까요? 10유로요?
+Hoffmann: Ja, zehn Euro. Wer kauft das Geschenk? | 네, 10유로요. 선물은 누가 사죠?
+Dohyun: Ich kann das machen. Die Buchhandlung ist in der Nähe. | 제가 할게요. 서점이 가까이에 있어요.
+Markus: Ich helfe dir. Ich hole die Blumen. | 내가 도와줄게요. 꽃은 내가 사 올게요.
+Hoffmann: Vielen Dank! Der Gutschein gefällt ihm bestimmt. | 고마워요! 상품권이 분명히 마음에 드실 거예요.
+
+-- dialog C | Ein Pullover für Minho | 오전, 백화점의 남성복 매장이에요. Sora가 남편 Minho에게 줄 스웨터를 사러 왔어요. | Frau=Verkäuferin
+vor: 들으면서 찾아보세요. Sora는 어떤 색 스웨터를 사나요?
+Frau: Guten Tag! Kann ich Ihnen helfen? | 안녕하세요! 도와드릴까요?
+Sora: Ja, bitte. Ich suche einen Pullover für meinen Mann. | 네, 부탁해요. 남편에게 줄 스웨터를 찾고 있어요.
+Frau: Gern. Welche Größe hat er? | 네. 남편분 치수가 어떻게 되세요?
+Sora: Größe L. | L이에요.
+Frau: Und welche Farbe gefällt ihm? | 어떤 색을 좋아하세요?
+Sora: Er trägt gern Blau und Grau. | 파란색과 회색을 즐겨 입어요.
+Frau: Dann schauen Sie mal: Dieser Pullover hier ist im Angebot. Er kostet 39 Euro. | 그럼 이것 보세요. 여기 이 스웨터가 할인 중이에요. 39유로예요. | say=Dann schauen Sie mal: Dieser Pullover hier ist im Angebot. Er kostet neununddreißig Euro.
+Sora: Der Pullover gefällt mir. Aber Grün steht ihm nicht. Haben Sie den Pullover auch in Blau? | 스웨터는 마음에 들어요. 그런데 초록색은 남편한테 안 어울려요. 이 스웨터 파란색도 있나요?
+Frau: Ja, hier bitte. In Blau und in Größe L. | 네, 여기 있어요. 파란색 L 사이즈예요.
+Sora: Sehr schön. Diesen Pullover nehme ich. Kann ich ihn umtauschen? Vielleicht passt er meinem Mann nicht. | 아주 좋네요. 이 스웨터로 할게요. 교환할 수 있나요? 남편한테 안 맞을 수도 있어서요.
+Frau: Ja, natürlich. Sie können ihn 14 Tage umtauschen. Aber Sie brauchen den Kassenzettel. | 네, 물론이에요. 14일 동안 교환하실 수 있어요. 하지만 영수증이 필요해요. | say=Ja, natürlich. Sie können ihn vierzehn Tage umtauschen. Aber Sie brauchen den Kassenzettel.
+Sora: Gut. Wo ist die Kasse? | 알겠어요. 계산대는 어디예요?
+Frau: Dort hinten links. Vielen Dank! | 저기 뒤쪽 왼편이에요. 감사합니다!
+
+-- fragen 세 대화를 듣고 답하세요.
+mc: 처음 입어 본 재킷은 어땠나요? | 너무 작았어요* | 너무 컸어요 | 색이 마음에 들지 않았어요
+mc: Jiu는 재킷을 얼마에 사나요? | 69 Euro* | 89 Euro | 38 Euro => 원래 값은 89유로인데 할인해서 69유로예요.
+rf: Jiu kauft auch einen Schal. | f => 목도리는 이미 있어서 사지 않아요.
+mc: 팀은 Herr Braun에게 무엇을 선물하나요? | 서점 상품권과 꽃, 카드* | 배낭 | 추리 소설 한 권
+mc: Wie viel gibt jeder? | zehn Euro* | fünf Euro | zwanzig Euro
+rf: Markus kauft den Gutschein. | f => 상품권은 Dohyun이 사고, Markus는 꽃을 사 와요.
+mc: Sora는 어떤 색 스웨터를 사나요? | Blau* | Grün | Grau
+rf: Sora kann den Pullover 14 Tage umtauschen. | r => 영수증이 있으면 14일 동안 교환할 수 있어요.
+
+-- kultur 옷 치수와 할인, 그리고 교환
+p: 독일의 옷 치수는 한국과 달라요. 여성복은 34, 36, 38, 40처럼 짝수로 올라가는데, 36이 한국의 55, 38이 66쯤이에요. S, M, L도 함께 써요. 신발은 240mm가 38, 250mm가 40, 270mm가 43쯤이에요. 상표마다 조금씩 다르니 꼭 입어 보고 신어 보세요. 입어 보는 곳은 Umkleidekabine 또는 Anprobe라고 적혀 있어요.
+p: 가게에 Angebot, Sale, reduziert라고 적혀 있으면 값을 내린 물건이에요. 1월 말과 7월 말에는 철 지난 옷을 싸게 파는 큰 할인 기간이 있어요. 겨울 것은 Winterschlussverkauf, 여름 것은 Sommerschlussverkauf라고 해요.
+p: 가게에서 직접 산 물건은 흠이 없으면 가게가 꼭 바꿔 줘야 하는 것은 아니에요. 그래도 대부분의 가게는 영수증(Kassenzettel 또는 Kassenbon)이 있으면 14일이나 30일 안에 바꿔 주거나 돈을 돌려줘요. 그러니 영수증은 버리지 말고, 살 때 Kann ich das umtauschen?이라고 물어보세요. 인터넷으로 산 물건은 받은 날부터 14일 안에 이유 없이 돌려보낼 수 있어요.
+mc: 가게에서 산 스웨터를 바꾸러 갈 때 꼭 챙길 것은 무엇일까요? | der Kassenzettel* | der Gutschein | die Versichertenkarte
+
+== wortschatz
+-- gruppe Kleidung | 옷
+die Kleidung | 옷, 의류 | Die Kleidung ist heute im Angebot. | 오늘은 옷이 할인 중이에요.
+die Jacke, die Jacken | 재킷, 점퍼 | Die Jacke gefällt mir. | 그 재킷이 마음에 들어요.
+der Mantel, die Mäntel | 외투 | Der Mantel ist zu lang. | 그 외투는 너무 길어요.
+der Pullover, die Pullover | 스웨터 | Ich suche einen Pullover. | 스웨터를 찾고 있어요.
+das Hemd, die Hemden | 셔츠 | Dohyun trägt ein Hemd. | Dohyun은 셔츠를 입고 있어요.
+die Bluse, die Blusen | 블라우스 | Die Bluse ist schick. | 그 블라우스는 세련됐어요.
+das T-Shirt, die T-Shirts | 티셔츠 | Das T-Shirt kostet zehn Euro. | 그 티셔츠는 10유로예요.
+die Hose, die Hosen | 바지 | Die Hose passt mir nicht. | 그 바지는 저한테 안 맞아요.
+der Rock, die Röcke | 치마 | Der Rock ist zu kurz. | 그 치마는 너무 짧아요.
+das Kleid, die Kleider | 원피스 | Das Kleid steht dir gut. | 그 원피스가 잘 어울려요.
+der Schuh, die Schuhe | 신발 | Die Schuhe sind bequem. | 그 신발은 편해요.
+die Mütze, die Mützen | (챙이 없는) 모자 | Heute trage ich eine Mütze. | 오늘은 모자를 써요.
+der Schal, die Schals | 목도리 | Dieser Schal ist schön. | 이 목도리는 예뻐요.
+der Handschuh, die Handschuhe | 장갑 | Wo sind meine Handschuhe? | 제 장갑이 어디 있죠?
+der Anzug, die Anzüge | 정장 | Im Büro trägt er einen Anzug. | 그는 사무실에서 정장을 입어요.
+die Tasche, die Taschen | 가방 | Wem gehört diese Tasche? | 이 가방은 누구 거예요?
+tragen (du trägst, hat getragen) | 입다, 쓰다, 신다 | Sie trägt gern Blau. | 그녀는 파란색을 즐겨 입어요.
+anprobieren (hat anprobiert) | 입어 보다, 신어 보다 | Ich probiere die Jacke an. | 재킷을 입어 볼게요.
+
+-- gruppe Im Kaufhaus | 백화점에서
+das Kaufhaus, die Kaufhäuser | 백화점 | Das Kaufhaus ist im Zentrum. | 백화점은 시내 중심에 있어요.
+das Geschäft, die Geschäfte | 가게 | Das Geschäft ist in der Nähe. | 그 가게는 가까이에 있어요.
+die Verkäuferin, die Verkäuferinnen | 판매원 (여자) | Die Verkäuferin hilft mir. | 판매원이 저를 도와줘요.
+die Größe, die Größen | 치수, 사이즈 | Welche Größe haben Sie? | 치수가 어떻게 되세요?
+die Farbe, die Farben | 색 | Welche Farbe gefällt dir? | 어떤 색이 마음에 들어요?
+die Umkleidekabine, die Umkleidekabinen | 탈의실 | Wo ist die Umkleidekabine? | 탈의실이 어디예요?
+die Kasse, die Kassen | 계산대 | Die Kasse ist dort hinten. | 계산대는 저기 뒤쪽에 있어요.
+der Kassenzettel, die Kassenzettel | 영수증 | Sie brauchen den Kassenzettel. | 영수증이 필요해요.
+im Angebot | 할인 중인 | Die Jacke ist im Angebot. | 그 재킷은 할인 중이에요.
+umtauschen (hat umgetauscht) | 교환하다 | Kann ich den Pullover umtauschen? | 이 스웨터를 교환할 수 있나요?
+passen (hat gepasst) | (치수가) 맞다 | Die Jacke passt mir. | 그 재킷은 저한테 맞아요.
+gefallen (es gefällt, hat gefallen) | 마음에 들다 | Die Farbe gefällt mir. | 그 색이 마음에 들어요.
+Das steht dir gut. | 잘 어울려요. | Blau steht dir gut. | 파란색이 잘 어울려요.
+zu | 너무 | Die Hose ist zu klein. | 그 바지는 너무 작아요.
+eng | 꽉 끼는 | Das Hemd ist zu eng. | 그 셔츠는 너무 껴요.
+lang | 긴 | Der Mantel ist lang. | 그 외투는 길어요.
+kurz | 짧은 | Der Rock ist kurz. | 그 치마는 짧아요.
+bequem | 편한 | Die Schuhe sind sehr bequem. | 그 신발은 아주 편해요.
+schick | 세련된, 멋진 | Der Anzug ist schick. | 그 정장은 멋져요.
+schön | 예쁜, 좋은 | Das Kleid ist schön. | 그 원피스는 예뻐요.
+
+-- gruppe Geschenke | 선물
+das Geschenk, die Geschenke | 선물 | Wir brauchen ein Geschenk. | 우리는 선물이 필요해요.
+schenken (hat geschenkt) | 선물하다 | Wir schenken ihm einen Gutschein. | 우리는 그분께 상품권을 선물해요.
+der Geburtstag, die Geburtstage | 생일 | Lena hat am Samstag Geburtstag. | Lena는 토요일이 생일이에요.
+der Gutschein, die Gutscheine | 상품권 | Der Gutschein ist von der Buchhandlung. | 그 상품권은 서점 것이에요.
+das Buch, die Bücher | 책 | Er liest gern Bücher. | 그는 책을 즐겨 읽어요.
+die Buchhandlung, die Buchhandlungen | 서점 | Die Buchhandlung ist in der Nähe. | 서점은 가까이에 있어요.
+die Blume, die Blumen | 꽃 | Ich hole die Blumen. | 꽃은 제가 사 올게요.
+die Karte, die Karten | 카드 | Wir schreiben eine Karte. | 우리는 카드를 써요.
+die Idee, die Ideen | 생각, 아이디어 | Hast du eine Idee? | 좋은 생각 있어요?
+in Rente gehen | 정년퇴직하다 | Herr Braun geht in Rente. | Herr Braun은 정년퇴직해요.
+helfen (du hilfst, hat geholfen) | 돕다 | Kann ich Ihnen helfen? | 도와드릴까요?
+gehören (hat gehört) | ~의 것이다 | Die Tasche gehört mir. | 그 가방은 제 거예요.
+geben (du gibst, hat gegeben) | 주다 | Jeder gibt zehn Euro. | 한 사람이 10유로씩 내요.
+bestimmt | 분명히, 틀림없이 | Das gefällt ihm bestimmt. | 분명히 마음에 들어 할 거예요.
+
+-- bilder
+die Jacke, die Jacken: a single blue zip jacket with a collar hanging on a wooden hanger
+der Mantel, die Mäntel: a single long sand colored coat with buttons hanging on a wooden hanger
+der Pullover, die Pullover: a single folded gray knit sweater with long sleeves
+das Hemd, die Hemden: a single ivory button-up shirt with a collar and long sleeves, laid flat
+die Bluse, die Blusen: a single ochre women's blouse with a soft collar and short sleeves, laid flat
+die Hose, die Hosen: a single pair of navy trousers, laid flat
+der Rock, die Röcke: a single knee-length slate gray skirt
+das Kleid, die Kleider: a single navy dress with short sleeves on a wooden hanger
+der Schuh, die Schuhe: a pair of brown leather shoes with laces, seen from the side
+die Mütze, die Mützen: a single ochre knitted winter hat
+der Schal, die Schals: a single long striped scarf in navy and sand, loosely folded
+der Handschuh, die Handschuhe: a pair of gray knitted gloves
+
+-- tafel Farben | 색
+p: 줄을 누르면 소리가 나요. 색을 나타내는 말은 문장에서 Die Jacke ist blau.처럼 쓰고, 색 이름 자체를 말할 때는 Blau gefällt mir.처럼 대문자로 써요.
+r: rot = 빨간색 ; blau = 파란색 ; grün = 초록색 | say=rot, blau, grün.
+r: gelb = 노란색 ; schwarz = 검은색 ; weiß = 흰색 | say=gelb, schwarz, weiß.
+r: grau = 회색 ; braun = 갈색 ; rosa = 분홍색 | say=grau, braun, rosa.
+
+-- tafel Wie ist die Hose? | 옷이 어떤지 말하기
+p: 줄을 누르면 소리가 나요. zu는 '너무'라는 뜻이에요. 마음에 들지 않는 이유를 말할 때 써요.
+r: zu groß ; zu klein ; zu teuer | say=zu groß, zu klein, zu teuer.
+r: zu lang ; zu kurz ; zu eng | say=zu lang, zu kurz, zu eng.
+r: in Größe 38 ; in Blau ; in Schwarz | say=in Größe achtunddreißig, in Blau, in Schwarz.
+
+-- aussprache H | 소리 나는 h, 소리 없는 h
+p: 낱말이나 음절의 첫머리에 있는 h는 숨을 내쉬듯이 소리 내요. Hose, Hemd, helfen, Handschuh가 그래요. 한국어 'ㅎ'과 비슷하지만 더 또렷하게 내요.
+p: 모음 뒤에 있는 h는 소리 내지 않아요. 앞의 모음을 길게 말하라는 표시예요. ihm은 '임'을 길게, ihr는 '이어'처럼 말해요. Schuh, Jahr, wohnen, fahren의 h도 소리 나지 않아요.
+hör: Hose, Hemd, Handschuh | 첫머리의 h는 소리 내요
+hör: helfen, holen, heute | 첫머리의 h는 소리 내요
+hör: ihm, ihr, Ihnen | 모음 뒤의 h는 소리 내지 않아요
+hör: Schuh, Jahr, wohnen | 앞 모음을 길게 말해요
+hör: Ich helfe ihm. Er hilft ihr. | 문장으로 들어요
+
+== grammatik
+-- punkt Personalpronomen im Dativ | 나에게, 너에게, 그에게
+bsp: Die Jacke gefällt *mir*. | 그 재킷이 제 마음에 들어요.
+bsp: Kann ich *Ihnen* helfen? | 도와드릴까요?
+bsp: Was schenken wir *ihm*? | 그에게 뭘 선물할까요?
+finde: 손님에게 정중하게 물어요. Kann ich … helfen? | Ihnen* | Sie | Ihr
+regel: gefallen, passen, helfen 같은 동사는 '누구에게'에 해당하는 사람을 Dativ로 써요. 인칭대명사는 Dativ에서 아래처럼 바뀌어요. 이미 배운 Wie geht es Ihnen?의 Ihnen과 Wie geht es dir?의 dir도 Dativ예요.
+| Nominativ | Dativ | 뜻
+| ich | mir | 나에게
+| du | dir | 너에게
+| er, es | ihm | 그에게
+| sie | ihr | 그녀에게
+| wir | uns | 우리에게
+| ihr | euch | 너희에게
+| sie, Sie | ihnen, Ihnen | 그들에게, 당신에게
+merke: 선물하는 문장에서는 받는 사람이 Dativ, 선물이 Akkusativ예요. Wir schenken ihm einen Gutschein. Ich schenke ihr Blumen. '누구에게'를 물을 때는 Wem?을 써요. Wem gehört die Tasche? – Mir.
+
+-- punkt Verben mit Dativ | Dativ와 함께 쓰는 동사
+bsp: Die Schuhe *gefallen* mir. | 그 신발이 마음에 들어요.
+bsp: Die Hose *passt* mir nicht. | 그 바지는 저한테 안 맞아요.
+bsp: Ich *helfe* dir. | 내가 도와줄게요.
+finde: Die Schuhe … mir. 빈칸에 알맞은 말은 무엇인가요? | gefallen* | gefällt | gefalle
+regel: gefallen은 한국어와 주어가 달라요. 마음에 드는 물건이 주어이고, 사람은 Dativ예요. 그래서 동사는 물건에 맞춰요. 물건이 하나면 gefällt, 여럿이면 gefallen이에요. passen, stehen, gehören도 같은 짜임이에요.
+| 주어 (물건) | 동사 | Dativ (사람)
+| Die Jacke | gefällt | mir.
+| Die Schuhe | gefallen | mir.
+| Der Pullover | passt | ihm nicht.
+| Blau | steht | dir gut.
+| Die Tasche | gehört | ihr.
+merke: '나는 그 재킷을 좋아해요'를 Ich gefalle die Jacke.라고 하면 안 돼요. Die Jacke gefällt mir.가 맞아요. helfen과 danken도 Dativ와 써요. Ich helfe dir. Ich danke Ihnen.
+
+-- punkt welcher und dieser | 어느 것, 이것
+bsp: *Welche* Jacke gefällt dir? – *Diese* Jacke hier. | 어떤 재킷이 마음에 들어요? – 여기 이 재킷이요.
+bsp: *Welcher* Pullover ist im Angebot? – *Dieser* hier. | 어느 스웨터가 할인 중이에요? – 여기 이거요.
+bsp: *Welchen* Pullover nehmen Sie? – *Diesen*. | 어느 스웨터로 하시겠어요? – 이걸로요.
+finde: … Kleid gefällt dir? das Kleid 앞에 알맞은 말은 무엇인가요? | Welches* | Welcher | Welche
+regel: welcher는 여럿 가운데 어느 것인지 물을 때, dieser는 눈앞의 것을 가리킬 때 써요. 끝소리가 der, das, die의 끝소리와 같아요. 남성 명사가 목적어일 때만 -en이 돼요.
+| | Nominativ | Akkusativ
+| der Pullover | welcher, dieser | welchen, diesen
+| das Kleid | welches, dieses | welches, dieses
+| die Jacke | welche, diese | welche, diese
+| die Schuhe | welche, diese | welche, diese
+merke: 가리키면서 짧게 답할 때는 명사를 빼도 돼요. Welche Jacke? – Diese hier. 색과 치수는 in으로 붙여 말해요. die Jacke in Blau, die Hose in Größe 38.
+
+== training
+-- ex Hören | 듣고 알맞은 것을 고르세요.
+hör: Lena: Die Schuhe gefallen mir. Aber sie sind zu teuer.
+mc: Lena는 왜 신발을 사지 않나요? | 너무 비싸서* | 너무 작아서 | 색이 마음에 들지 않아서
+hör: Sora: Ich habe diesen Pullover gekauft. Er hat neununddreißig Euro gekostet.
+mc: 스웨터는 얼마였나요? | 39 Euro* | 93 Euro | 29 Euro => neununddreißig는 39예요. 일의 자리를 먼저 말해요.
+hör: Markus: Mia hat am Samstag Geburtstag. Ich schenke ihr ein Fahrrad.
+mc: Markus는 딸에게 무엇을 선물하나요? | 자전거* | 책 | 원피스
+hör: Dohyun: Das Hemd passt mir nicht. Es ist zu eng.
+mc: 셔츠는 어떤가요? | 너무 껴요* | 너무 길어요 | 너무 비싸요
+
+-- ex Hören | Jiu가 신발 가게에 왔어요. 듣고 알맞은 것을 고르세요.
+audio | Im Schuhgeschäft | Mann=Verkäufer
+> Mann: Guten Tag! Kann ich Ihnen helfen?
+> Jiu: Ja, bitte. Diese Schuhe hier gefallen mir.
+> Mann: Welche Größe haben Sie?
+> Jiu: Größe achtunddreißig.
+> Mann: Hier, bitte. Passen sie?
+> Jiu: Nein, sie sind zu klein. Haben Sie die Schuhe auch in neununddreißig?
+> Mann: Ja, aber nur in Schwarz.
+> Jiu: Schwarz ist gut. Ja, diese Schuhe passen. Ich nehme sie.
+mc: Jiu가 처음 신어 본 신발은 어땠나요? | 너무 작았어요* | 너무 컸어요 | 너무 비쌌어요
+mc: Jiu는 어떤 치수의 신발을 사나요? | 39* | 38 | 36
+mc: Welche Farbe haben die Schuhe? | Schwarz* | Braun | Blau
+
+-- ex Lesen | 백화점의 할인 안내예요. 읽고, 맞으면 richtig, 틀리면 falsch를 고르세요.
+text plan | Angebote der Woche
+> | Was? | Farben | Preis |
+> | Jacken | Blau, Schwarz | 69 € |
+> | Pullover | Grau, Grün, Blau | 39 € |
+> | Hemden | Weiß, Blau | 25 € |
+> | Schuhe | Schwarz, Braun | 49 € |
+rf: Die Jacken gibt es in Blau und in Schwarz. | r
+rf: Ein Pullover kostet 49 Euro. | f => 스웨터는 39유로예요. 49유로는 신발이에요.
+rf: Die Hemden gibt es in Grün. | f => 셔츠는 흰색과 파란색이 있어요.
+rf: Zwei Hemden kosten 50 Euro. | r => 한 벌에 25유로예요.
+rf: Die Schuhe gibt es in Braun. | r
+
+-- ex Grammatik | 알맞은 말을 고르세요.
+gap: Die Jacke gefällt [mir|ich|mich]. | 그 재킷이 제 마음에 들어요.
+gap: Kann ich [Ihnen|Sie|Ihr] helfen? | 도와드릴까요?
+gap: Herr Braun geht in Rente. Wir schenken [ihm|ihr|er] ein Buch. | Herr Braun이 정년퇴직해요. 우리는 그분께 책을 선물해요.
+gap: Lena hat Geburtstag. Wir schenken [ihr|ihm|sie] Blumen. | Lena의 생일이에요. 우리는 Lena에게 꽃을 선물해요.
+gap: Wie geht es [dir|du|dich]? | 어떻게 지내요?
+gap: Das sind Jiu und Lena. Die Wohnung gefällt [ihnen|ihr|sie]. | Jiu와 Lena예요. 두 사람은 그 집이 마음에 들어요.
+
+-- ex Grammatik | 주어를 보고 알맞은 동사를 고르세요.
+gap: Die Jacke [gefällt|gefallen] mir.
+gap: Die Schuhe [gefallen|gefällt] mir nicht.
+gap: Das Kleid [passt|passen] ihr gut.
+gap: Die Handschuhe [passen|passt] mir nicht.
+gap: Wem [gehört|gehören] die Tasche?
+gap: Die Bücher [gehören|gehört] Herrn Braun.
+
+-- ex Grammatik | welcher와 dieser의 알맞은 형태를 고르세요.
+gap: [Welche|Welcher|Welches] Jacke gefällt dir?
+gap: [Welcher|Welche|Welches] Mantel ist im Angebot?
+gap: [Welches|Welcher|Welche] Hemd passt dir?
+gap: Ich nehme [diesen|dieser|dieses] Pullover.
+gap: [Diese|Dieser|Dieses] Schuhe sind bequem.
+gap: [Dieses|Dieser|Diese] Kleid steht dir gut.
+
+-- ex Grammatik | 앞의 말을 Dativ로 바꿔 빈칸에 쓰세요.
+gap: ich – Die Hose passt [=mir]. | 그 바지는 저한테 맞아요.
+gap: du – Das Hemd steht [=dir] gut. | 그 셔츠가 잘 어울려요.
+gap: er – Blau gefällt [=ihm]. | 그는 파란색을 좋아해요.
+gap: sie – Ich helfe [=ihr]. | 제가 그녀를 도와요.
+gap: Sie – Kann ich [=Ihnen] helfen? | 도와드릴까요?
+
+-- ex Grammatik | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: die Jacke / gefällt / mir. | 그 재킷이 마음에 들어요.
+ord: kann / ich / Ihnen / helfen? | 도와드릴까요?
+ord: wir / schenken / ihm / einen Gutschein. | 우리는 그분께 상품권을 선물해요.
+ord: welche / Größe / haben / Sie? | 치수가 어떻게 되세요?
+ord: die Schuhe / passen / mir / nicht. | 그 신발은 저한테 안 맞아요.
+
+-- ex Wortschatz | 옷과 그 옷을 걸치는 몸의 부분을 짝지으세요.
+paar: die Mütze = der Kopf ; der Schal = der Hals ; der Handschuh = die Hand ; der Schuh = der Fuß ; die Hose = das Bein
+
+-- ex Wortschatz | 빈칸에 알맞은 낱말을 쓰세요.
+gap: Welche [=Größe] haben Sie? – 38. | 치수가 어떻게 되세요? – 38이에요.
+gap: Die Hose ist [=zu] klein. | 그 바지는 너무 작아요.
+gap: Sie brauchen den [=Kassenzettel]. | 영수증이 필요해요.
+gap: Blau [=steht] dir gut. | 파란색이 잘 어울려요.
+
+-- ex Schreiben | 듣고 그대로 써 보세요.
+dik: Lena: Welche Jacke gefällt dir? | 어떤 재킷이 마음에 들어요?
+dik: Jiu: Die Hose passt mir nicht. | 그 바지는 저한테 안 맞아요.
+dik: Dohyun: Wir schenken ihm einen Gutschein. | 우리는 그분께 상품권을 선물해요.
+
+== aufgabe
+-- redemittel
+찾는 것 말하기: Ich suche eine Jacke. | 재킷을 찾고 있어요. ; Haben Sie die Jacke auch in Größe 38? | 이 재킷 38 사이즈도 있나요? ; Haben Sie den Pullover auch in Blau? | 이 스웨터 파란색도 있나요?
+입어 보기: Kann ich die Hose anprobieren? | 이 바지 입어 봐도 돼요? ; Wo ist die Umkleidekabine? | 탈의실이 어디예요? ; Die Hose passt mir. | 바지가 저한테 맞아요. ; Sie ist zu klein. | 너무 작아요.
+마음에 드는지 말하기: Die Jacke gefällt mir. | 그 재킷이 마음에 들어요. ; Die Schuhe gefallen mir nicht. | 그 신발은 마음에 안 들어요. ; Wie findest du die Jacke? | 이 재킷 어때 보여요? ; Das steht dir gut. | 잘 어울려요.
+사기와 교환하기: Ich nehme die Jacke. | 이 재킷으로 할게요. ; Was kostet das? | 얼마예요? ; Kann ich mit Karte zahlen? | 카드로 계산할 수 있나요? ; Kann ich den Pullover umtauschen? | 이 스웨터를 교환할 수 있나요?
+선물 고르기: Was schenken wir ihm? | 그에게 뭘 선물할까요? ; Hast du eine Idee? | 좋은 생각 있어요? ; Vielleicht ein Buch? | 책은 어떨까요? ; Wir schenken ihr einen Gutschein. | 그녀에게 상품권을 선물해요. ; Das gefällt ihm bestimmt. | 분명히 마음에 들어 할 거예요.
+함께 정하기: Wie viel gibt jeder? | 한 사람이 얼마씩 내요? ; Jeder gibt zehn Euro. | 한 사람이 10유로씩 내요. ; Wer kauft das Geschenk? | 선물은 누가 사요? ; Ich kann das machen. | 제가 할게요.
+
+--S rolle A | Jiu, Lena
+
+--B rolle B | Dohyun, Markus
+
+-- ich 내가 즐겨 입는 옷 | 내 옷장을 떠올리고 칸을 채우세요. 옷은 Hosen und Pullover처럼 복수로, 색은 Blau, Schwarz처럼 대문자로 써요. 완성된 문장을 소리 내어 읽어 보세요.
+feld: was | 즐겨 입는 옷 | Hosen und Pullover
+feld: farbe | 좋아하는 색 | Blau
+feld: nummer | 내 옷 치수 | 38
+satz: Ich trage gern {was}.
+satz: {farbe} gefällt mir.
+satz: Ich habe Größe {nummer}.
+
+--S info 친구의 생일 선물
+p: 같은 반의 Carlos가 토요일에 생일 파티를 해요. Jiu와 함께 선물을 정해요.
+p: Carlos는 커피를 즐겨 마셔요. 책은 잘 읽지 않아요. 내 생각은 카페 상품권이에요. 한 사람이 15유로씩 내면 모두 30유로예요. 카페가 가까이에 있어서 상품권은 내가 살 수 있어요.
+
+--S sprich Ein Geschenk für Carlos | 같은 반의 Jiu와 Carlos의 생일 선물을 정해요. 쪽지를 보고 답하세요. 친구끼리는 du를 써요. 질문을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요.
+f: Jiu: Carlos hat am Samstag Geburtstag. Was schenken wir ihm? | Carlos가 토요일에 생일이에요. 뭘 선물할까요? => Ich habe eine Idee. Er trinkt gern Kaffee.
+f: Jiu: Stimmt! Oder schenken wir ihm ein Buch? | 맞아요! 아니면 책을 선물할까요? => Nein, er liest nicht gern. Ein Buch gefällt ihm nicht.
+f: Jiu: Und ein Gutschein? | 그럼 상품권은요? => Ja, gute Idee! Wir schenken ihm einen Gutschein für ein Café.
+f: Jiu: Wie viel geben wir? | 얼마씩 낼까요? => Jeder gibt 15 Euro. Zusammen sind das 30 Euro.
+f: Jiu: Wer kauft den Gutschein? | 상품권은 누가 사요? => Ich kann das machen. Das Café ist in der Nähe.
+
+--S schreiben Eine Nachricht an den Kurs | 같은 반 사람들에게 Carlos의 선물을 함께 하자는 메시지를 써 보세요. 다섯 문장이면 충분해요.
+punkt: 누구의 생일이 언제인지 ; 무엇을 선물하는지 ; 한 사람이 얼마를 내는지 ; 언제까지 답해 달라는 말
+start: Hallo zusammen, …
+muster: Hallo zusammen, Carlos hat am Samstag Geburtstag. Jiu und ich haben eine Idee: Wir schenken ihm einen Gutschein für ein Café. Er trinkt gern Kaffee. Jeder gibt fünf Euro. Wer möchte auch etwas geben? Schreibt mir bitte bis Donnerstag. Viele Grüße, Minji
+check: 선물 받는 사람을 ihm이나 ihr로 썼나요? ; 선물 앞에 einen, ein, eine를 맞게 썼나요? ; 요일 앞에 am을 썼나요? ; 인사와 맺음말을 썼나요?
+
+--B info 퇴직 선물 쪽지
+p: 같은 팀의 Frau Keller가 다음 달에 정년퇴직해요. 점심시간에 Markus와 선물을 정해요.
+p: Frau Keller는 여행을 좋아하고 꽃도 좋아해요. 팀은 모두 여덟 명이고 한 사람이 10유로씩 내요. 내 생각은 기차 상품권과 꽃, 카드예요. 여행 가방은 너무 비싸요. 상품권은 내가 사고, 꽃은 Markus에게 부탁하고 싶어요.
+
+--B sprich Ein Geschenk für Frau Keller | 동료 Markus와 Frau Keller의 퇴직 선물을 정해요. 쪽지를 보고 답하세요. Markus와는 du를 써요. 질문을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요.
+f: Markus: Frau Keller geht nächsten Monat in Rente. Was schenken wir ihr? | Frau Keller가 다음 달에 정년퇴직해요. 뭘 선물할까요? => Sie reist gern. Vielleicht einen Gutschein von der Bahn?
+f: Markus: Gute Idee. Oder eine Reisetasche? | 좋은 생각이에요. 아니면 여행 가방은요? => Eine Reisetasche ist zu teuer. Wir haben nur 80 Euro.
+f: Markus: Stimmt. Was gefällt ihr noch? | 맞아요. 또 뭘 좋아하시죠? => Blumen gefallen ihr. Wir kaufen auch Blumen und eine Karte.
+f: Markus: Wie viel gibt jeder? | 한 사람이 얼마씩 내요? => Jeder gibt zehn Euro. Wir sind acht Kolleginnen und Kollegen.
+f: Markus: Wer kauft das Geschenk? | 선물은 누가 사요? => Ich kaufe den Gutschein. Kannst du mir helfen und die Blumen holen?
+
+--B schreiben Eine E-Mail an das Team | 팀 사람들에게 Frau Keller의 퇴직 선물을 알리는 메일을 써 보세요. 다섯 문장이면 충분해요.
+punkt: 누가 언제 퇴직하는지 ; 무엇을 선물하는지 ; 한 사람이 얼마를 내는지 ; 돈을 언제까지 누구에게 주는지
+start: Liebe Kolleginnen und Kollegen, …
+muster: Liebe Kolleginnen und Kollegen, Frau Keller geht nächsten Monat in Rente. Wir möchten ihr einen Gutschein von der Bahn und Blumen schenken. Sie reist gern. Jeder gibt zehn Euro. Bitte geben Sie mir das Geld bis Freitag. Vielen Dank! Viele Grüße, Minji Choi
+check: 선물 받는 사람을 ihr로 썼나요? ; möchten 문장에서 schenken을 맨 끝에 썼나요? ; 금액과 날짜를 썼나요? ; 인사와 맺음말을 썼나요?
+
+-- kann
+Ich kann Kleidung kaufen und nach Größe und Farbe fragen. | 옷을 사고 치수와 색을 물을 수 있어요.
+Ich kann sagen, was mir gefällt und was mir passt. | 마음에 드는 것과 몸에 맞는 것을 말할 수 있어요.
+Ich kann mit anderen ein Geschenk aussuchen. | 다른 사람과 함께 선물을 고를 수 있어요.
+Ich kann mir, dir, ihm, ihr und Ihnen benutzen. | mir, dir, ihm, ihr, Ihnen을 쓸 수 있어요.
+
+-- tipp gefällt mir를 한 덩어리로 익혀요
+p: gefallen은 한국어로 옮기며 만들면 자꾸 틀려요. 주어를 고민하지 말고 Das gefällt mir.와 Das gefällt mir nicht.를 한 덩어리로 외워 두세요. 물건이 여럿이면 Die gefallen mir.로 바꾸면 돼요.
+p: 옷을 입을 때나 가게를 둘러볼 때 혼잣말로 연습해 보세요. Diese Hose passt mir. Dieses Hemd gefällt mir nicht. Die Schuhe sind zu klein. 눈에 보이는 물건마다 한 문장씩 말하면 dieser와 Dativ가 금방 입에 붙어요.

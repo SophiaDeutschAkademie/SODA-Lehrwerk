@@ -35,8 +35,15 @@ def ohne_audio():
         return set()
 
 
+def ohne_seiten():
+    """음성이 아직 없는 화면의 이름 (tools/lektion.py site 가 tools/open.json 의 na 에 적어 둔다)"""
+    p = os.path.join(T, 'open.json')
+    return set(json.load(open(p)).get('na') or []) if os.path.exists(p) else set()
+
+
 OPEN = open_ids()
 NA = ohne_audio()
+OHNE = ohne_seiten()
 
 
 def lv_open(lv):
@@ -156,8 +163,16 @@ def panels(levels, book):
                 go += '      <p class="p-go"><a class="btn" href="%s/1/" data-go="%s">Lektion 1 시작하기</a></p>\n' % (hid(lv), hid(lv))
             if len(offen) < len(lv['items']):
                 go += '      <p class="p-wart">지금은 과 %d개 가운데 %d개를 볼 수 있어요. 나머지는 차례로 올라와요.</p>\n' % (nl, len(ol))
-            if lv['id'] in NA:
+            ohne = [x for x in offen if x in OHNE]
+            if lv['id'] in NA and ohne and len(ohne) == len(offen):
                 go += '      <p class="p-na">음성은 준비 중이에요. 지금은 글과 그림으로 공부할 수 있어요.</p>\n'
+            elif lv['id'] in NA and ohne:                   # 음성이 있는 화면과 없는 화면이 섞인 단계: 없는 화면만 적는다
+                nam = ['Lektion ' + x.rsplit('/', 1)[1] for x in ohne if x.rsplit('/', 1)[1].isdigit()]
+                if any('wiederholung' in x for x in ohne):
+                    nam.append('복습')
+                if any(x.endswith('/stufentest') for x in ohne):
+                    nam.append('평가')
+                go += '      <p class="p-na">음성이 준비 중인 화면이 있어요: %s. 이 화면은 글과 그림으로 공부할 수 있어요.</p>\n' % ', '.join(nam)
         extra = '<div><dt>함께 쓰는 앱</dt><dd class="lnk">%s</dd></div>' % links(lv['apps']) if lv.get('apps') else ''
         if lv.get('nach'):
             extra += '<div><dt>단계를 마친 뒤</dt><dd class="lnk">%s</dd></div>' % links(lv['nach'])

@@ -1,0 +1,151 @@
+@id a1-2/stufentest
+@typ test
+
+== hoeren
+-- info A1.2를 돌아보는 평가예요
+p: 듣기, 읽기, 쓰기, 말하기 네 부분으로 되어 있어요. 시간 제한은 없어요. 문제를 풀면 바로 맞았는지 알려 주고, 마지막 Ergebnis에서 부분마다 몇 문제를 맞혔는지 보여 줘요.
+p: 음성은 여러 번 들을 수 있어요. 먼저 한 번만 듣고 풀어 보면 내 듣기 실력을 더 정확히 알 수 있어요.
+
+-- ex Hören 1 | 짧은 말을 듣고 알맞은 것을 고르세요.
+hör: Markus: Gehen Sie geradeaus und dann links. Die Apotheke ist neben der Bank.
+mc: 약국은 어디에 있나요? | 은행 옆* | 우체국 옆 | 역 옆 => Die Apotheke ist neben der Bank.
+hör: Lena: Die Wohnung hat drei Zimmer und kostet neunhundertfünfzig Euro.
+mc: 집세는 얼마인가요? | 950 €* | 590 € | 915 € => neunhundertfünfzig는 950이에요.
+hör: Sora: Hana hat Fieber und Husten. Sie soll im Bett bleiben.
+mc: Hana는 무엇을 해야 하나요? | 침대에 누워 있어야 해요* | 학교에 가야 해요 | 약국에 가야 해요 => Sie soll im Bett bleiben.
+hör: Dohyun: Am Wochenende bin ich nach Heidelberg gefahren.
+mc: Dohyun은 주말에 무엇을 했나요? | 하이델베르크에 갔어요* | 집에 있었어요 | 일했어요
+hör: Jiu: Lena hat am zwölften Juni Geburtstag.
+mc: Lena의 생일은 언제인가요? | 6월 12일* | 6월 2일 | 7월 12일 => am zwölften Juni
+
+-- ex Hören 2 | Dohyun이 백화점에서 셔츠를 사요. 듣고 답하세요.
+audio | Im Kaufhaus | Frau=Verkäuferin
+> Frau: Guten Tag! Kann ich Ihnen helfen?
+> Dohyun: Ja, ich suche ein Hemd. Dieses Hemd hier gefällt mir.
+> Frau: Welche Größe haben Sie?
+> Dohyun: Größe vierzig.
+> Frau: Hier, bitte. Die Umkleidekabine ist dort hinten.
+> Dohyun: Danke. Das Hemd passt. Was kostet es?
+> Frau: Neunundzwanzig Euro.
+> Dohyun: Gut, ich nehme es.
+rf: Dohyun sucht eine Hose. | f => Ich suche ein Hemd.
+mc: Welche Größe hat Dohyun? | 40* | 14 | 44 => Größe vierzig
+rf: Das Hemd passt ihm. | r => Das Hemd passt.
+mc: Was kostet das Hemd? | 29 €* | 92 € | 39 € => neunundzwanzig는 29예요.
+
+-- ex Hören 3 | Sora가 여름휴가 이야기를 해요. 듣고 답하세요.
+audio | Unser Urlaub
+> Sora: Im Juli sind wir nach Konstanz gefahren. Die Fahrt hat vier Stunden gedauert.
+> Sora: Wir haben in einer Ferienwohnung gewohnt. Sie war klein, aber hell.
+> Sora: Das Wetter war schön, und wir sind viel geschwommen.
+> Sora: Am Mittwoch hatte Hana Halsschmerzen. Wir sind zur Apotheke gegangen.
+> Sora: Am Freitag sind wir wieder nach Frankfurt gefahren.
+mc: Wie lange hat die Fahrt gedauert? | vier Stunden* | zwei Stunden | sechs Stunden
+mc: 휴가용 집은 어땠나요? | 작지만 밝았어요* | 크고 조용했어요 | 어둡고 시끄러웠어요 => Sie war klein, aber hell.
+mc: Was hatte Hana? | Halsschmerzen* | Fieber | Kopfschmerzen
+rf: Die Familie ist am Mittwoch wieder nach Frankfurt gefahren. | f => 금요일에 돌아왔어요. 수요일은 약국에 간 날이에요.
+
+== lesen
+-- ex Lesen 1 | 집 광고예요. 읽고 답하세요.
+text notiz | Wohnung in Bornheim
+> 2-Zi.-Wohnung in Frankfurt-Bornheim, 55 qm
+> Wohnzimmer, Schlafzimmer, Küche, Bad, Balkon
+> KM 890 €, NK 180 €, Kaution 2.670 €
+> Keller und Waschmaschine im Haus
+> U-Bahn und Supermarkt in der Nähe
+> Ab sofort frei. Telefon: 069 90009-377
+mc: Wie viele Zimmer hat die Wohnung? | zwei* | drei | fünf => 2-Zi.-Wohnung은 방이 두 개인 집이에요.
+rf: Die Wohnung hat einen Balkon. | r
+mc: 관리비를 포함하면 한 달에 얼마를 내나요? | 1.070 €* | 890 € | 2.670 € => Kaltmiete 890유로에 Nebenkosten 180유로를 더해요.
+rf: Es gibt keinen Keller. | f => Keller und Waschmaschine im Haus
+
+-- ex Lesen 2 | 병원에 붙은 안내예요. 읽고 답하세요.
+text notiz | Praxis Dr. Neumann: Informationen
+> Bitte bringen Sie Ihre Versichertenkarte mit.
+> Sie haben Fieber und Husten? Bitte rufen Sie zuerst an!
+> Rezepte können Sie am Nachmittag holen.
+> In der Praxis dürfen Sie nicht telefonieren.
+> Am Mittwochnachmittag haben wir keine Sprechstunde.
+mc: 열과 기침이 있으면 먼저 무엇을 해야 하나요? | 병원에 전화해요* | 바로 병원에 가요 | 약국에 가요 => Bitte rufen Sie zuerst an!
+rf: Rezepte kann man am Vormittag holen. | f => 처방전은 오후에 받을 수 있어요.
+mc: Was darf man in der Praxis nicht? | telefonieren* | warten | fragen
+rf: Am Mittwochnachmittag gibt es keine Sprechstunde. | r
+
+-- ex Lesen 3 | Lena가 친구들에게 보낸 초대 글이에요. 읽고 답하세요.
+text notiz | Einladung
+> Liebe Freunde,
+> am Freitag, 12. Juni, habe ich Geburtstag. Ich lade euch ein!
+> Wir feiern ab 16 Uhr im Park hinter der Universität. Bei Regen feiern wir in der WG.
+> Bitte bringt einen Salat oder einen Kuchen mit. Getränke kaufe ich.
+> Könnt ihr kommen? Schreibt mir bitte bis zum 5. Juni.
+> Eure Lena
+mc: Wann ist die Party? | am 12. Juni* | am 5. Juni | am 16. Juni => 5. Juni는 답해야 하는 날, 16 Uhr는 시작하는 시각이에요.
+rf: Bei Regen gibt es keine Party. | f => 비가 오면 WG에서 해요.
+mc: Was sollen die Gäste mitbringen? | einen Salat oder einen Kuchen* | Getränke | ein Geschenk
+mc: 언제까지 답해야 하나요? | 6월 5일까지* | 6월 12일까지 | 6월 16일까지 => Schreibt mir bitte bis zum 5. Juni.
+
+== schreiben
+-- ex Schreiben 1 | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / fahre / mit dem Bus / zur Arbeit. | 저는 버스를 타고 일하러 가요.
+ord: die Lampe / hängt / an der Wand. | 등은 벽에 걸려 있어요.
+ord: ich / habe / am Samstag / eingekauft. ~ am Samstag / habe / ich / eingekauft. | 저는 토요일에 장을 봤어요.
+ord: wir / sind / nach Hamburg / gefahren. | 우리는 함부르크에 갔어요.
+ord: die Jacke / gefällt / mir. | 그 재킷이 마음에 들어요.
+ord: im August / fahren / wir / nach Hamburg. ~ wir / fahren / im August / nach Hamburg. | 8월에 우리는 함부르크에 가요.
+
+-- ex Schreiben 2 | 괄호 안의 낱말을 알맞은 형태로 바꿔 빈칸에 쓰세요.
+gap: Ich fahre mit [=dem] Bus. (der Bus) | 저는 버스를 타고 가요. => mit dem Bus
+gap: Das Bett steht [=im] Schlafzimmer. (in, das Schlafzimmer) | 침대는 침실에 있어요. => in dem을 줄여 im이라고 해요.
+gap: Sie [=sollen] viel trinken. (sollen) | 물을 많이 드셔야 해요.
+gap: Ich habe einen Film [=gesehen]. (sehen) | 저는 영화를 봤어요. => sehen, hat gesehen
+gap: Wir [=sind] nach Köln gefahren. (sein) | 우리는 쾰른에 갔어요. => fahren은 sein과 써요.
+gap: Die Schuhe passen [=mir] nicht. (ich) | 그 신발은 저한테 안 맞아요. => ich의 Dativ는 mir예요.
+gap: Lena hat am [=zwölften] Juni Geburtstag. (12.) | Lena는 6월 12일이 생일이에요. => am zwölften
+
+-- ex Schreiben 3 | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Wie komme ich zur Post? | 우체국에 어떻게 가요?
+dik: N: Es gibt einen Balkon. | 발코니가 있어요.
+dik: N: Ich bin zu Hause geblieben. | 저는 집에 있었어요.
+dik: N: Kann ich Ihnen helfen? | 도와드릴까요?
+
+-- schreiben Mein Text | 지난 주말이나 휴가에 한 일을 써요. 아래 내용을 넣어서 여섯 문장 넘게 써 보세요. 이 글은 자동으로 채점하지 않아요. 다 쓴 뒤에 예시 글과 비교하고 아래 항목을 스스로 확인해요.
+punkt: 언제 어디에 갔는지 ; 무엇을 타고 갔는지 ; 날씨 ; 한 일 두 가지 ; 어땠는지
+start: Am Wochenende …
+muster: Am Wochenende bin ich nach Heidelberg gefahren. Ich bin mit dem Zug gefahren. Das Wetter war warm und sonnig. Zuerst habe ich das Schloss besucht. Dann habe ich in der Stadt gegessen und ein Geschenk gekauft. Am Abend bin ich wieder nach Frankfurt gefahren. Der Tag war sehr schön.
+check: 여섯 문장 넘게 썼어요 ; 움직임을 나타내는 동사를 sein과 썼어요 ; 과거분사를 문장 맨 끝에 썼어요 ; mit dem Zug처럼 mit 뒤에 dem이나 der를 썼어요 ; war와 hatte를 맞게 썼어요
+
+== sprechen
+-- info 소리 내어 말해요
+p: 말하기는 자동으로 채점하지 않아요. 질문을 듣고 바로 소리 내어 답한 다음, 예시 답과 비교해 보세요.
+p: 녹음 단추를 누르면 내 목소리를 다시 들을 수 있어요. 녹음은 저장되지 않아요.
+
+-- sprich Fragen und Antworten | 질문을 듣고 소리 내어 답하세요. 한두 문장으로 답하면 돼요. | Frau=Verkäuferin
+f: Lena: Wie war dein Wochenende? | 주말 어땠어요? => Es war schön. Ich bin nach Heidelberg gefahren.
+f: Hoffmann: Was haben Sie letzte Woche gemacht? | 지난주에 무슨 일을 하셨어요? => Ich habe viel gearbeitet und Deutsch gelernt.
+f: Markus: Entschuldigung, wie komme ich zum Bahnhof? | 실례합니다, 역에 어떻게 가나요? => Gehen Sie geradeaus und dann links. / Fahren Sie mit der U-Bahn.
+f: Lena: Wie ist deine Wohnung? | 집이 어때요? => Meine Wohnung ist klein, aber hell. Es gibt einen Balkon.
+f: Becker: Sie sehen müde aus. Was fehlt Ihnen? | 피곤해 보이네요. 어디가 안 좋으세요? => Ich habe Kopfschmerzen und Fieber.
+f: Frau: Welche Größe haben Sie? | 치수가 어떻게 되세요? => Größe 38. / Größe M.
+f: Jiu: Wann hast du Geburtstag? | 생일이 언제예요? => Am zwölften März.
+f: Markus: Wie ist das Wetter heute? | 오늘 날씨가 어때요? => Es ist warm und die Sonne scheint. / Es regnet.
+
+-- sprich Meine Reise | 아래 낱말을 보면서 30초쯤 여행 이야기를 하세요. 먼저 혼자 말해 보고, 그다음에 예시를 확인해요.
+thema: Wohin? ; Wann? ; Womit? ; Wetter ; Was gemacht? ; Wie war es?
+muster: Im Sommer bin ich nach Busan gefahren. Ich bin mit dem Zug gefahren. Das Wetter war sonnig und heiß. Ich bin im Meer geschwommen und habe viel Fisch gegessen. Die Reise war toll!
+
+== ergebnis
+-- bilanz
+hoch: A1.2에서 배운 내용을 잘 익혔어요. 이것으로 A1 과정을 마쳤어요. 이제 A2.1 Angekommen으로 넘어가요.
+mittel: 대부분 익혔어요. 틀린 문제의 설명을 다시 읽고, 점수가 낮은 부분은 Wiederholung 1과 Wiederholung 2의 복습 문제로 한 번 더 연습해 보세요.
+tief: 아직 헷갈리는 내용이 많아요. Wiederholung 1과 Wiederholung 2의 복습 문제를 다시 풀고, 어려웠던 과의 Grammatik과 Training을 본 다음 평가를 한 번 더 해 보세요.
+
+-- info 쓰기와 말하기는 스스로 확인해요
+p: 글쓰기 과제와 말하기는 점수에 들어가지 않아요. 아래 세 가지를 얼마나 할 수 있는지 스스로 표시해 보세요.
+
+-- kann
+Ich kann über das Wochenende und den Urlaub schreiben. | 주말과 휴가에 한 일을 글로 쓸 수 있어요.
+Ich kann einfache Fragen im Alltag beantworten. | 생활 속의 쉬운 질문에 답할 수 있어요.
+Ich kann von einer Reise erzählen. | 여행 이야기를 할 수 있어요.
+
+-- info 다음 단계는 A2.1 Angekommen
+p: A2.1에서는 독일 생활에 자리를 잡아요. 집 문제를 해결하고, 관청 일을 보고, 사람들을 초대해요. 이유를 말하고 정중하게 부탁하는 법도 배워요.

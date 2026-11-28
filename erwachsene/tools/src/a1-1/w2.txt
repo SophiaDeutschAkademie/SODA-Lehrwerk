@@ -1,0 +1,129 @@
+@id a1-1/wiederholung-2
+@typ station
+@lektionen 4 5 6
+
+== rueckblick
+-- info Lektion 4부터 6까지 왔어요
+p: 여기서는 새 내용을 배우지 않아요. 장보기와 주문, 하루 일과, 약속과 예약에서 배운 것을 섞어서 다시 써 봐요. 마지막에는 병원에 전화해서 진료를 예약해 봐요.
+p: 먼저 어느 과까지 마쳤는지 보고, 낱말을 다시 떠올려 보세요.
+-- fortschritt
+-- quiz 낱말 다시 보기 | Lektion 4–6의 낱말로 여덟 문제를 풀어요. 다시 하면 다른 낱말이 나와요.
+
+== training
+-- ex Hören | Markus가 하루 일과를 이야기해요. 듣고 답하세요.
+audio | Mein Tag
+> Markus: Ich stehe um sechs Uhr auf. Um halb sieben frühstücke ich.
+> Markus: Die Arbeit fängt um acht Uhr an.
+> Markus: Von zwölf bis eins habe ich Pause. Ich esse einen Salat.
+> Markus: Am Abend koche ich. Dann sehe ich fern.
+mc: Wann steht Markus auf? | um sechs Uhr* | um halb sieben | um acht Uhr => Ich stehe um sechs Uhr auf.
+mc: Wann fängt die Arbeit an? | um acht Uhr* | um sechs Uhr | um zwölf Uhr => Die Arbeit fängt um acht Uhr an.
+mc: Markus는 점심시간에 무엇을 먹나요? | 샐러드* | 빵 | 생선 => Ich esse einen Salat.
+rf: Am Abend sieht Markus fern. | r => Dann sehe ich fern.
+
+-- ex ein, kein, der | 알맞은 말을 고르세요.
+gap: Ich möchte [einen|ein|eine] Kaffee. | 커피 한 잔 주세요. => der Kaffee는 목적어일 때 einen이 돼요.
+gap: Ich nehme [ein|einen|eine] Brötchen. | 작은 빵 하나 살게요. => das Brötchen은 목적어일 때도 ein이에요.
+gap: Wir brauchen [eine|einen|ein] Flasche Wasser. | 물 한 병이 필요해요.
+gap: Ich habe [keinen|kein|keine] Apfel. | 사과가 없어요. => der Apfel은 목적어일 때 keinen이 돼요.
+gap: Haben Sie [keine|keinen|kein] Milch? | 우유가 없나요?
+gap: [Der|Das|Die] Kuchen kostet drei Euro. | 케이크는 3유로예요.
+
+-- ex Trennbare Verben | 낱말을 순서대로 눌러 문장을 만드세요. 떨어지는 앞부분은 문장 끝에 와요.
+ord: ich / stehe / um sieben Uhr / auf. ~ um sieben Uhr / stehe / ich / auf. | 저는 7시에 일어나요.
+ord: der Kurs / fängt / um neun / an. ~ um neun / fängt / der Kurs / an. | 수업은 9시에 시작해요.
+ord: ich / kaufe / am Samstag / ein. ~ am Samstag / kaufe / ich / ein. | 저는 토요일에 장을 봐요.
+ord: wann / rufst / du / an? | 언제 전화할 거예요?
+
+-- ex Verben mit Vokalwechsel | 알맞은 형태를 고르세요.
+gap: Wann [fährst|fahrst|fährt] du ins Büro? | 사무실에 언제 가요? => du와 er, sie에서 a가 ä로 바뀌어요.
+gap: Er [isst|esst|esse] gern Fisch. | 그는 생선을 즐겨 먹어요.
+gap: Sora [liest|lest|lese] am Abend. | Sora는 저녁에 책을 읽어요.
+gap: [Nimmst|Nehmst|Nimmt] du einen Tee? | 차 마실래요?
+gap: Das Kind [schläft|schlaft|schlafe] schon. | 아이는 벌써 자요.
+gap: [Sprichst|Sprechst|Spricht] du Englisch? | 영어 해요?
+
+-- ex können, müssen, wollen | 알맞은 형태를 고르세요.
+gap: Ich [kann|kannst|können] am Montag kommen. | 저는 월요일에 올 수 있어요.
+gap: [Können|Kann|Könnt] Sie um zehn Uhr kommen? | 10시에 오실 수 있어요?
+gap: Ich [muss|musst|müssen] heute arbeiten. | 저는 오늘 일해야 해요.
+gap: Wir [wollen|will|wollt] ins Kino gehen. | 우리는 영화 보러 가려고 해요.
+gap: Am Freitag [kann|können|kannst] er nicht. | 금요일에 그는 안 돼요.
+
+-- ex Satzklammer | 낱말을 순서대로 눌러 문장을 만드세요. 조동사는 둘째 자리, 다른 동사는 맨 끝에 와요.
+ord: ich / muss / den Termin / verschieben. | 저는 약속을 미뤄야 해요.
+ord: können / wir / einen Termin / vereinbaren? | 약속을 잡을 수 있을까요?
+ord: ich / kann / am Dienstag / nicht / kommen. ~ am Dienstag / kann / ich / nicht / kommen. | 저는 화요일에 올 수 없어요.
+
+-- ex Uhrzeit | 시각과 읽는 법을 짝지으세요.
+paar: 7:30 = halb acht ; 8:15 = Viertel nach acht ; 9:45 = Viertel vor zehn ; 12:10 = zehn nach zwölf ; 14:00 = vierzehn Uhr
+
+-- ex Lesen | 병원의 진료 시간 안내예요. 읽고 답하세요. Sprechzeiten은 진료 시간이에요.
+text plan | Sprechzeiten: Praxis Dr. Neumann
+> | Tag | Vormittag | Nachmittag |
+> | Montag | 8–12 Uhr | 14–18 Uhr |
+> | Dienstag | 8–12 Uhr | 14–18 Uhr |
+> | Mittwoch | 8–13 Uhr | – |
+> | Donnerstag | 8–12 Uhr | 15–19 Uhr |
+> | Freitag | 8–13 Uhr | – |
+mc: 수요일 오후에 진료를 받을 수 있나요? | 아니요, 오전에만 해요* | 네, 6시까지 해요 | 네, 7시까지 해요
+mc: Wann kann man am Donnerstag am Abend kommen? | bis 19 Uhr* | bis 18 Uhr | bis 13 Uhr => 목요일 오후에는 15시부터 19시까지 해요.
+rf: Am Montag ist die Sprechstunde von acht bis zwölf und von vierzehn bis achtzehn Uhr. | r
+rf: Am Freitag kann man um fünfzehn Uhr kommen. | f => 금요일에는 13시까지만 해요.
+
+-- ex Diktat | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Ich möchte einen Kaffee. | 커피 한 잔 주세요.
+dik: N: Wann fängt der Kurs an? | 수업은 언제 시작해요?
+dik: N: Ich kann am Montag kommen. | 저는 월요일에 올 수 있어요.
+dik: N: Das geht leider nicht. | 아쉽지만 안 돼요.
+
+== projekt
+-- info 병원에 전화로 예약하기
+p: 독일의 병원(Praxis)은 대부분 미리 예약하고 가요. 전화하면 접수 직원이 이름을 묻고, 올 수 있는 날과 시각을 정해요. 갈 때는 보험 카드(Versichertenkarte)를 꼭 가져가요. 예약한 시각보다 5분쯤 일찍 가는 것이 좋아요.
+p: 전화는 얼굴이 보이지 않아서 더 어려워요. 그래서 전화하기 전에 할 말을 적어 두면 좋아요. 전화를 끊을 때는 Auf Wiedersehen 대신 Auf Wiederhören이라고 인사해요. 먼저 Sora가 병원에 전화하는 것을 들어 보세요.
+
+-- ex Verstehen | Sora가 병원에 전화해요. 듣고 답하세요.
+audio | Ein Anruf in der Praxis | Frau=Praxis
+> Frau: Praxis Doktor Neumann, guten Morgen!
+> Sora: Guten Morgen! Hier ist Sora Lee. Ich möchte einen Termin vereinbaren.
+> Frau: Gern. Können Sie am Dienstag um zehn Uhr kommen?
+> Sora: Am Dienstag kann ich leider nicht. Ich habe Unterricht. Geht es am Mittwoch?
+> Frau: Ja, am Mittwoch um halb neun.
+> Sora: Das geht. Muss ich etwas mitbringen?
+> Frau: Ja, bitte bringen Sie Ihre Versichertenkarte mit.
+> Sora: Gut. Vielen Dank! Auf Wiederhören!
+mc: Warum kann Sora am Dienstag nicht kommen? | Sie hat Unterricht.* | Sie muss arbeiten. | Sie will ins Kino gehen. => Ich habe Unterricht.
+mc: Wann ist der Termin? | am Mittwoch um halb neun* | am Dienstag um zehn | am Mittwoch um neun => halb neun은 8시 30분이에요.
+rf: Sora muss ihre Versichertenkarte mitbringen. | r => Bitte bringen Sie Ihre Versichertenkarte mit.
+
+-- sprich Ich rufe in der Praxis an | 이제 내가 병원에 전화해요. 나는 월요일에는 일해야 해서 갈 수 없어요. 접수 직원의 말을 듣고 소리 내어 답한 뒤 예시 답과 비교해 보세요. | Frau=Praxis
+f: Frau: Praxis Doktor Neumann, guten Tag! | Neumann 선생님 병원입니다, 안녕하세요! => Guten Tag! Hier ist Minji Choi. Ich möchte einen Termin vereinbaren.
+f: Frau: Gern. Wie ist Ihr Name? Können Sie das bitte buchstabieren? | 네. 성함이 어떻게 되세요? 철자를 불러 주시겠어요? => Choi. C, H, O, I.
+f: Frau: Können Sie am Montag um neun Uhr kommen? | 월요일 9시에 오실 수 있어요? => Am Montag kann ich leider nicht. Ich muss arbeiten.
+f: Frau: Und am Donnerstag um Viertel nach drei? | 그럼 목요일 3시 15분은요? => Ja, das geht.
+f: Frau: Gut. Bitte bringen Sie Ihre Versichertenkarte mit. | 좋아요. 보험 카드를 가져오세요. => Ja, natürlich. Vielen Dank! Auf Wiederhören!
+
+-- projekt Mein Terminzettel | 전화하기 전에 할 말을 쪽지로 준비해요. 칸을 채우면 쪽지와 전화에서 할 말이 완성돼요. | Mein Termin
+p: 요일은 am Donnerstag처럼, 시각은 um halb vier처럼 써요. 갈 수 없는 요일도 하나 정해 두세요.
+feld: name | 내 이름 | Minji Choi
+feld: tag | 가고 싶은 요일 | am Donnerstag
+feld: zeit | 가고 싶은 시각 | um halb vier
+feld: nicht | 갈 수 없는 요일 | am Montag
+karte: Name = {name}
+karte: Termin = {tag} {zeit}
+karte: Das geht nicht = {nicht}
+karte: Mitbringen = Versichertenkarte
+satz: Guten Tag, hier ist {name}. Ich möchte einen Termin vereinbaren.
+satz: Ich kann {tag} {zeit} kommen.
+satz: Leider kann ich {nicht} nicht kommen.
+check: 이름을 또박또박 말했어요 ; 요일 앞에 am, 시각 앞에 um을 썼어요 ; kann을 둘째 자리에, kommen을 맨 끝에 썼어요 ; 전화를 끊을 때 Auf Wiederhören이라고 인사했어요
+
+-- schreiben Eine Nachricht an Frau Becker | 병원 예약 때문에 수업에 늦어요. 선생님 Frau Becker에게 짧은 메시지를 써 보세요. 네 문장쯤 써요.
+punkt: 인사 ; 병원 예약이 언제인지 ; 수업에 늦는다는 말 ; 몇 시에 오는지
+start: Liebe Frau Becker, …
+muster: Liebe Frau Becker, am Mittwoch um halb neun habe ich einen Arzttermin. Ich kann leider nicht pünktlich kommen. Ich komme um zehn Uhr. Viele Grüße, Minji Choi
+check: 요일 앞에 am, 시각 앞에 um을 썼어요 ; einen Arzttermin처럼 목적어를 맞게 썼어요 ; 조동사 문장에서 동사를 맨 끝에 썼어요 ; 인사와 맺음말을 썼어요
+
+-- tipp 전화하기 전에 세 가지를 적어요
+p: 전화로 예약할 때는 세 가지만 준비하면 돼요. 내 이름의 철자, 갈 수 있는 요일과 시각, 갈 수 없는 요일이에요. 쪽지에 적어 두고 보면서 말해도 괜찮아요.
+p: 상대의 말을 못 알아들었으면 Wie bitte?나 Noch einmal, bitte.라고 말하세요. 날짜와 시각은 마지막에 한 번 더 말해서 확인해요. Also am Donnerstag um Viertel nach drei.처럼 되풀이하면 실수가 줄어요.

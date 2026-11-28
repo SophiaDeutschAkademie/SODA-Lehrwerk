@@ -1688,7 +1688,7 @@ def cmd_site(draft=False):
     rd = lambda f: open(os.path.join(T, 'blocks', f), encoding='utf-8').read()
     sys.path.insert(0, os.path.join(ROOT, 'tools')); import fz; fz.muss(['erwachsene/lektion.css'])          # 글자 크기 배율(오른쪽 위 「가」 버튼)을 따르는지
     tpl = tpl.replace('<!--SODA_THEME_JS-->', rd('soda-theme-js.html')).replace('<!--SODA_FZ-->', rd('soda-fz.html')).replace('/*SODA_DARK_SHARED*/', rd('soda-dark-shared.css')).replace('__VER__', asset_ver())
-    ps = have_src(); allsrc = [(q, parse(src_path(q['id']))) for q in ps]; ready = []
+    ps = have_src(); allsrc = [(q, parse(src_path(q['id']))) for q in ps]; ready = []; ohne = []
     for book in books():
         mine = [(p, L) for p, L in allsrc if p['lv']['id'] in book['levels']]; ok = []
         for p, L in mine:
@@ -1712,11 +1712,13 @@ def cmd_site(draft=False):
             open(os.path.join(d, 'index.html'), 'w', encoding='utf-8').write(out)
             if pg.miss:
                 print('  %s %s (초안) 빠진 것 %d개' % (book['id'], p['id'], len(pg.miss)))
+            if pg.na and pg.nan and p['id'] not in ohne:
+                ohne.append(p['id'])                                      # 음성이 아직 없는 화면 (목차 안내에 쓴다)
         for x in ok:
             if x not in ready:
                 ready.append(x)
         print(book['id'], '열린 화면:', ok)
-    json.dump({'open': ready, 'date': datetime.date.today().isoformat()}, open(os.path.join(T, 'open.json'), 'w'), indent=0)
+    json.dump({'open': ready, 'na': ohne, 'date': datetime.date.today().isoformat()}, open(os.path.join(T, 'open.json'), 'w'), indent=0)
 
 
 if __name__ == '__main__':

@@ -121,6 +121,35 @@ Ich kann … | 한국어
 p: 문단
 ```
 
+## 복습과 단계 평가
+
+복습(Wiederholung)은 `w1.txt`, `w2.txt`, 단계 평가(Stufentest)는 `t.txt` 입니다. 블록 쓰는 법은 과와 같고, 새 낱말이나 새 문법은 넣지 않습니다. 예는 `a1-1/w1.txt`, `a1-1/t.txt` 입니다.
+
+```
+@id a1-1/wiederholung-1
+@typ station
+@lektionen 1 2 3            돌아볼 과. 낱말 문제와 진행 표시가 이 과들에서 나옵니다
+
+== rueckblick               -- info, -- fortschritt, -- quiz 제목 | 설명
+== training                 -- ex 여덟 개쯤 (듣기, 문법, 읽기, 받아쓰기)
+== projekt                  실전 과제: -- info, -- ex, -- projekt 제목 | 설명 | 카드 제목 (feld, karte, satz, check), -- schreiben, -- tipp
+```
+
+```
+@id a1-1/stufentest
+@typ test
+
+== hoeren                   -- info, -- ex Hören 1, 2, 3
+== lesen                    -- ex Lesen 1, 2, 3
+== schreiben                -- ex Schreiben 1, 2, 3 과 -- schreiben Mein Text (스스로 확인)
+== sprechen                 -- info, -- sprich Fragen und Antworten, -- sprich 주제 (thema, muster)
+== ergebnis                 -- bilanz (hoch, mittel, tief), -- info, -- kann, -- info 다음 단계는 …
+```
+
+- 자동으로 채점하는 것은 Hören, Lesen, Schreiben의 `ex` 입니다. 쓰기 글과 말하기는 학습자가 예시와 견주어 스스로 확인합니다.
+- 단계 평가는 학원 시험이나 자격시험의 형식을 따르지 않고, 그 단계에서 배운 것을 돌아보는 용도입니다.
+- 앞 과에 음성이 있는 문장을 그대로 쓰면 그 음성을 다시 씁니다.
+
 ## 지키는 것
 
 - 학습자에게 보이는 한국어는 해요체로 씁니다. du로 나눈 어른들의 대화도 '해요'로 옮깁니다.

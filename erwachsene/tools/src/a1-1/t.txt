@@ -1,0 +1,150 @@
+@id a1-1/stufentest
+@typ test
+
+== hoeren
+-- info A1.1을 돌아보는 평가예요
+p: 듣기, 읽기, 쓰기, 말하기 네 부분으로 되어 있어요. 시간 제한은 없어요. 문제를 풀면 바로 맞았는지 알려 주고, 마지막 Ergebnis에서 부분마다 몇 문제를 맞혔는지 보여 줘요.
+p: 음성은 여러 번 들을 수 있어요. 먼저 한 번만 듣고 풀어 보면 내 듣기 실력을 더 정확히 알 수 있어요.
+
+-- ex Hören 1 | 짧은 말을 듣고 알맞은 것을 고르세요.
+hör: Dohyun: Guten Tag, ich heiße Dohyun Park. Ich komme aus Korea, aus Busan.
+mc: Dohyun은 어느 도시에서 왔나요? | 부산* | 서울 | 대구 => Ich komme aus Korea, aus Busan.
+hör: Lena: Das Brot kostet zwei Euro fünfzig.
+mc: 빵은 얼마인가요? | 2,50 €* | 2,15 € | 5,20 € => zwei Euro fünfzig
+hör: Jiu: Meine Handynummer ist null eins sieben sechs, null vier, null sechs, neun null, eins zwei.
+mc: 전화번호의 마지막 두 자리는 무엇인가요? | 12* | 21 | 20 => 마지막에 eins zwei라고 했어요.
+hör: Markus: Der Kurs fängt um halb neun an.
+mc: 수업은 몇 시에 시작하나요? | 8시 30분* | 9시 30분 | 9시 => halb neun은 9시가 되기 30분 전이에요.
+hör: Sora: Am Mittwoch kann ich nicht. Ich habe einen Arzttermin.
+mc: Sora는 수요일에 왜 안 되나요? | 병원 예약이 있어서* | 수업이 있어서 | 일해야 해서 => Ich habe einen Arzttermin.
+
+-- ex Hören 2 | Dohyun이 아침에 빵집에 왔어요. 듣고 답하세요.
+audio | In der Bäckerei | Frau=Verkäuferin
+> Frau: Guten Morgen! Was möchten Sie?
+> Dohyun: Guten Morgen! Ich möchte zwei Brötchen und einen Kaffee, bitte.
+> Frau: Gern. Möchten Sie auch ein Stück Kuchen?
+> Dohyun: Nein, danke. Was kostet das?
+> Frau: Drei Euro achtzig, bitte.
+> Dohyun: Hier, bitte. Auf Wiedersehen!
+rf: Dohyun möchte zwei Brötchen. | r => Ich möchte zwei Brötchen und einen Kaffee.
+mc: Was trinkt Dohyun? | einen Kaffee* | einen Tee | ein Wasser
+rf: Dohyun nimmt auch ein Stück Kuchen. | f => Nein, danke.라고 했어요.
+mc: Was kostet das? | 3,80 €* | 3,18 € | 8,30 € => drei Euro achtzig
+
+-- ex Hören 3 | Lena와 Jiu가 주말 약속을 정해요. 듣고 답하세요.
+audio | Hast du Zeit?
+> Lena: Jiu, hast du am Samstag Zeit? Ich will ins Kino gehen.
+> Jiu: Am Samstag kann ich leider nicht. Ich muss lernen.
+> Lena: Und am Sonntag?
+> Jiu: Am Sonntag habe ich Zeit. Wann fängt der Film an?
+> Lena: Um sechs Uhr.
+> Jiu: Gut, ich komme gern mit.
+mc: Lena는 무엇을 하고 싶어 하나요? | 영화 보러 가기* | 수영하기 | 장보기 => Ich will ins Kino gehen.
+rf: Jiu hat am Samstag Zeit. | f => Am Samstag kann ich leider nicht. Ich muss lernen.
+mc: Wann gehen sie ins Kino? | am Sonntag* | am Samstag | am Montag => Am Sonntag habe ich Zeit.
+mc: Wann fängt der Film an? | um sechs Uhr* | um sieben Uhr | um halb sechs
+
+== lesen
+-- ex Lesen 1 | 어학원 수강 신청서예요. 읽고 답하세요.
+text formular | Anmeldung zum Deutschkurs
+> Name: Maria Rossi
+> Land: Italien
+> Wohnort: Wiesbaden
+> Beruf: Ingenieurin
+> Sprachen: Italienisch, Englisch
+> Telefon: 0176 04069034
+> Kurs: A1, Montag bis Freitag, 9–12 Uhr
+mc: Woher kommt Maria? | aus Italien* | aus Wiesbaden | aus England => Land: Italien
+rf: Maria wohnt in Wiesbaden. | r => Wohnort는 사는 곳이에요.
+mc: Was ist Maria von Beruf? | Ingenieurin* | Lehrerin | Studentin
+rf: Der Kurs ist am Nachmittag. | f => 9시부터 12시까지니까 오전이에요.
+
+-- ex Lesen 2 | 빵집 문에 붙은 안내예요. 읽고 답하세요.
+text notiz | Bäckerei Sommer
+> Montag bis Freitag: 6 bis 18 Uhr
+> Samstag: 6 bis 13 Uhr
+> Sonntag: 8 bis 11 Uhr
+> Heute: Ein Kaffee und ein Stück Kuchen kosten zusammen 3,50 Euro.
+mc: 토요일에는 몇 시까지 여나요? | bis 13 Uhr* | bis 18 Uhr | bis 11 Uhr
+rf: Am Sonntag um zwölf Uhr kann ich Brötchen kaufen. | f => 일요일에는 11시까지만 열어요.
+mc: Was kostet 3,50 Euro? | ein Kaffee und ein Stück Kuchen* | ein Brot | zwei Kaffee
+rf: Am Montag um sieben Uhr kann ich Brot kaufen. | r => 월요일에는 6시부터 18시까지 열어요.
+
+-- ex Lesen 3 | Markus가 Dohyun에게 보낸 메시지예요. 읽고 답하세요.
+text notiz | Nachricht von Markus
+> Hallo Dohyun,
+> am Donnerstag um zehn Uhr haben wir eine Besprechung mit Frau Hoffmann. Kannst du kommen?
+> Du musst den Kalender mitbringen.
+> Um zwölf essen wir zusammen. Kommst du mit?
+> Viele Grüße
+> Markus
+mc: Wann ist die Besprechung? | am Donnerstag um zehn Uhr* | am Dienstag um zehn Uhr | am Donnerstag um zwölf Uhr
+rf: Die Besprechung ist mit Frau Hoffmann. | r
+mc: Dohyun은 무엇을 가져가야 하나요? | 달력* | 사진 | 케이크 => Du musst den Kalender mitbringen.
+rf: Um zwölf fängt die Besprechung an. | f => 12시에는 같이 밥을 먹어요. 회의는 10시예요.
+
+== schreiben
+-- ex Schreiben 1 | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: ich / komme / aus Korea. | 저는 한국에서 왔어요.
+ord: wie / heißen / Sie? | 성함이 어떻게 되세요?
+ord: ich / möchte / einen Kaffee. | 커피 한 잔 주세요.
+ord: der Kurs / fängt / um neun / an. ~ um neun / fängt / der Kurs / an. | 수업은 9시에 시작해요.
+ord: ich / kann / am Montag / kommen. ~ am Montag / kann / ich / kommen. | 저는 월요일에 올 수 있어요.
+ord: wir / haben / zwei Kinder. | 우리는 아이가 둘이에요.
+
+-- ex Schreiben 2 | 괄호 안의 낱말을 알맞은 형태로 바꿔 빈칸에 쓰세요.
+gap: Woher [=kommst] du? (kommen) | 어디에서 왔어요? => du kommst
+gap: Das [=ist] meine Schwester. (sein) | 이 사람은 제 언니예요.
+gap: Ich möchte [=einen] Tee. (ein) | 차 한 잔 주세요. => der Tee는 목적어일 때 einen이 돼요.
+gap: Er [=fährt] um acht ins Büro. (fahren) | 그는 8시에 사무실에 가요. => er fährt
+gap: Ich habe [=keine] Zeit. (kein) | 저는 시간이 없어요. => die Zeit 앞에는 keine예요.
+gap: [=Kannst] du am Freitag kommen? (können) | 금요일에 올 수 있어요? => du kannst
+gap: Wir [=müssen] heute arbeiten. (müssen) | 우리는 오늘 일해야 해요.
+
+-- ex Schreiben 3 | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Wie ist Ihr Name? | 성함이 어떻게 되세요?
+dik: N: Ich wohne in Frankfurt. | 저는 프랑크푸르트에 살아요.
+dik: N: Was kostet das? | 얼마예요?
+dik: N: Ich habe keine Zeit. | 저는 시간이 없어요.
+
+-- schreiben Mein Text | 나와 내 하루를 소개하는 글을 써요. 아래 내용을 넣어서 여섯 문장 넘게 써 보세요. 이 글은 자동으로 채점하지 않아요. 다 쓴 뒤에 예시 글과 비교하고 아래 항목을 스스로 확인해요.
+punkt: 이름과 나라 ; 사는 곳 ; 직업이나 전공 ; 가족 ; 하루 일과 두 가지와 시각
+start: Ich heiße …
+muster: Ich heiße Minji Choi und komme aus Korea. Ich wohne in Frankfurt. Ich bin Studentin und lerne Deutsch. Meine Eltern wohnen in Daegu. Ich stehe um sieben Uhr auf. Der Kurs fängt um neun Uhr an. Am Abend koche ich und lese.
+check: 여섯 문장 넘게 썼어요 ; 동사를 문장의 둘째 자리에 썼어요 ; 시각 앞에 um을 썼어요 ; 분리동사의 앞부분을 문장 끝에 썼어요 ; 명사와 문장 첫 글자를 대문자로 썼어요
+
+== sprechen
+-- info 소리 내어 말해요
+p: 말하기는 자동으로 채점하지 않아요. 질문을 듣고 바로 소리 내어 답한 다음, 예시 답과 비교해 보세요.
+p: 녹음 단추를 누르면 내 목소리를 다시 들을 수 있어요. 녹음은 저장되지 않아요.
+
+-- sprich Fragen und Antworten | 질문을 듣고 소리 내어 답하세요. 한두 문장으로 답하면 돼요. | Frau=Verkäuferin
+f: Becker: Wie heißen Sie? | 성함이 어떻게 되세요? => Ich heiße Minji Choi.
+f: Becker: Woher kommen Sie? | 어디에서 오셨어요? => Ich komme aus Korea, aus Daegu.
+f: Hoffmann: Was sind Sie von Beruf? | 직업이 무엇인가요? => Ich bin Studentin. / Ich bin Ingenieur.
+f: Hoffmann: Sprechen Sie Englisch? | 영어 하세요? => Ja, ich spreche Englisch und ein bisschen Deutsch.
+f: Lena: Hast du Geschwister? | 형제자매가 있어요? => Ja, ich habe eine Schwester. / Nein, ich habe keine Geschwister.
+f: Lena: Wann stehst du auf? | 몇 시에 일어나요? => Ich stehe um sieben Uhr auf.
+f: Frau: Guten Tag! Was möchten Sie? | 안녕하세요! 무엇을 드릴까요? => Ich möchte einen Kaffee und ein Brötchen, bitte.
+f: Markus: Hast du am Samstag Zeit? | 토요일에 시간 있어요? => Ja, am Samstag habe ich Zeit. / Nein, leider nicht. Ich muss lernen.
+
+-- sprich Mein Tag | 아래 낱말을 보면서 30초쯤 내 하루를 이야기하세요. 먼저 혼자 말해 보고, 그다음에 예시를 확인해요.
+thema: Aufstehen ; Arbeit oder Kurs ; Mittag ; Abend ; Wochenende
+muster: Ich stehe um sieben Uhr auf. Um neun fängt der Kurs an. Um zwölf esse ich. Am Nachmittag lerne ich. Am Abend koche ich und sehe fern. Am Wochenende schlafe ich lange.
+
+== ergebnis
+-- bilanz
+hoch: A1.1에서 배운 내용을 잘 익혔어요. 이제 A1.2 Im Alltag으로 넘어가요.
+mittel: 대부분 익혔어요. 틀린 문제의 설명을 다시 읽고, 점수가 낮은 부분은 Wiederholung 1과 Wiederholung 2의 복습 문제로 한 번 더 연습해 보세요.
+tief: 아직 헷갈리는 내용이 많아요. Wiederholung 1과 Wiederholung 2의 복습 문제를 다시 풀고, 어려웠던 과의 Grammatik과 Training을 본 다음 평가를 한 번 더 해 보세요.
+
+-- info 쓰기와 말하기는 스스로 확인해요
+p: 글쓰기 과제와 말하기는 점수에 들어가지 않아요. 아래 세 가지를 얼마나 할 수 있는지 스스로 표시해 보세요.
+
+-- kann
+Ich kann mich vorstellen und über meine Familie sprechen. | 나를 소개하고 가족 이야기를 할 수 있어요.
+Ich kann einfache Fragen beantworten. | 쉬운 질문에 답할 수 있어요.
+Ich kann über meinen Tag sprechen und schreiben. | 내 하루를 말하고 쓸 수 있어요.
+
+-- info 다음 단계는 A1.2 Im Alltag
+p: A1.2에서는 길을 찾고, 집을 구하고, 병원에 가요. 지난 일을 말하는 법을 배우고 독일에서의 첫 여행을 계획해요.

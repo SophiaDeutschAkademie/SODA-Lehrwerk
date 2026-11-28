@@ -1,6 +1,6 @@
 # 성인 교재 세 권: SODA Basis, SODA Studium, SODA Beruf
 
-성인 학습자를 위한 독일어 교재 세 권의 원고와 도구가 있는 폴더입니다. 지금은 세 권의 목차와 「성인 독일어」 열 과(A1.1의 1과부터 6과, A1.2의 1과부터 4과)의 본문이 있고, 모두 비공개입니다. 본문 음성은 Eleven v3로 만들어 넣었습니다(2026.11.25에 A1.1의 다섯 과, 2026.11.26에 그다음 다섯 과, 모두 1,488줄).
+성인 학습자를 위한 독일어 교재 세 권의 원고와 도구가 있는 폴더입니다. 지금은 세 권의 목차와 「성인 독일어」 본문 18화면(과 12개, 복습 4개, 단계 평가 2개)이 있고, 모두 비공개입니다. 음성은 A1.1의 1과부터 6과, A1.2의 1과부터 4과에 있습니다(Eleven v3, 2026.11.25와 11.26에 만든 1,488줄). 그 밖의 8화면은 음성 없이 올렸고 화면에 「음성은 준비 중이에요」 안내가 나옵니다.
 
 | 교재 | 이름 | 대상 | 범위 | 목차 주소 |
 |---|---|---|---|---|
@@ -12,7 +12,7 @@ Lehrwerk 목차에서는 세 교재 모두 「작업 중」 칸으로 보이고 
 
 2026.11.27에 분류를 바꿨습니다. 그전에는 대학생용(A1–C1 Hochschule, 68과)과 직장인용(A1–B2, 56과) 두 권이었고, A1–B1 40과가 두 권에 똑같이 들어 있었습니다. 같은 과가 두 번 나오지 않게 공통 과정을 「성인 독일어」 한 권으로 떼고, B2부터 두 권으로 나눴습니다. 교재 이름은 2026.11.28에 「성인 독일어 밑바탕」「대학생 독일어 디딤돌」「직장인 독일어 길잡이」에서 뒤의 낱말을 떼어 「성인 독일어」「대학생 독일어」「직장인 독일어」로 줄였습니다(청소년 교재도 「청소년 독일어 발돋움」에서 「청소년 독일어」로). 폴더 이름 `basis` 는 임시로 정한 것입니다. 이름이나 폴더를 바꾸려면 `tools/inhalt.json` 의 `books` 와 `tools/seo.py`, 루트 `index.html` 의 칸을 고치고 폴더를 옮깁니다. `studium/a1-…`, `beruf/a1-…` 주소는 없앴습니다(비공개 상태라 옛 주소에서 넘겨 주는 화면은 두지 않았습니다).
 
-본문이 있는 과 (2026.11.26): A1.1 Lektion 1 Guten Tag!, 2 Beruf und Studium, 3 Familie und Freunde, 4 Einkaufen, 5 Mein Tag, 6 Termine, A1.2 Lektion 1 In der Stadt, 2 Meine Wohnung, 3 Gesundheit, 4 Was haben Sie gemacht? 주소는 `basis/a1-1/1/` … `basis/a1-1/6/`, `basis/a1-2/1/` … `basis/a1-2/4/`입니다. 과마다 여섯째 순서 Aufgabe의 과제가 두 가지(대학 과제, 직장 과제)이고 학습자가 하나를 고릅니다. A1.1의 Wiederholung 두 개와 Stufentest, A1.2의 5과부터는 아직 없습니다. 그래서 A1.1 6과 끝의 「다음」 단추는 A1.2 1과로 바로 갑니다(`site` 는 단계의 마지막 화면을 그 뒤에 열려 있는 첫 화면으로 잇습니다).
+본문이 있는 화면 (2026.11.28): A1.1 Neu hier: Lektion 1 Guten Tag!, 2 Beruf und Studium, 3 Familie und Freunde, 4 Einkaufen, 5 Mein Tag, 6 Termine, Wiederholung 1·2, Stufentest. A1.2 Im Alltag: Lektion 1 In der Stadt, 2 Meine Wohnung, 3 Gesundheit, 4 Was haben Sie gemacht?, 5 Kleidung und Geschenke, 6 Feste und Reisen, Wiederholung 1·2, Stufentest. 주소는 `basis/a1-1/1/`, `basis/a1-1/wiederholung-1/`, `basis/a1-1/stufentest/` 꼴입니다. 과마다 여섯째 순서 Aufgabe의 과제가 두 가지(대학 과제, 직장 과제)이고 학습자가 하나를 고릅니다. 단계의 마지막 화면(Stufentest)은 다음 단계의 1과로 이어집니다(`site` 는 단계의 마지막 화면을 그 뒤에 열려 있는 첫 화면으로 잇습니다).
 
 ## 구조
 
@@ -52,7 +52,7 @@ C1 Hochschule 단계는 긴 글과 강의가 중심이라, 본문을 만들 때 
 
 ## 설정
 
-무대는 프랑크푸르트입니다. 대학에 가려는 사람, 직장인, 가족과 사는 사람 세 명이 함께 나와서 대학 과제와 직장 과제가 같은 이야기 위에 놓입니다. 지금까지 쓴 열 과를 아래 설정으로 썼습니다. 교재 속의 지금은 2026년입니다.
+무대는 프랑크푸르트입니다. 대학에 가려는 사람, 직장인, 가족과 사는 사람 세 명이 함께 나와서 대학 과제와 직장 과제가 같은 이야기 위에 놓입니다. 지금까지 쓴 본문을 모두 아래 설정으로 썼습니다. 교재 속의 지금은 2026년입니다.
 
 | 인물 | 설정 |
 |---|---|
@@ -66,6 +66,7 @@ C1 Hochschule 단계는 긴 글과 강의가 중심이라, 본문을 만들 때 
 
 - 그 밖에 나오는 사람: 어학원 수강생 Carlos García(스페인, Offenbach)와 Ewa Nowak(폴란드, Mainz), 어학원 사무실의 Frau Wagner, Kessler Technik의 동료 Frau Schulz(Sabine Schulz), 거래처의 Herr Schneider(Peter Schneider. A1.1 2과의 업무 행사에서 처음 만나고 A1.2 1과에서 회사로 찾아옴), 의사 Dr. Neumann(여자. Sora의 딸 Hana와 Dohyun이 가는 병원), 집주인 Frau Krause, Jiu와 Lena의 WG에서 이사 나가는 Tim.
 - A1.1 6과부터 A1.2 4과까지 더한 설정: Kessler Technik은 U4 Bockenheimer Warte 역에서 걸어서 5분, 약국 근처입니다(중앙역에서 두 정거장). WG의 빈방은 16 qm, 520유로 warm이고 과제에 나오는 WG 주소는 Beispielweg 7입니다. Dohyun이 가족과 살려고 본 집은 방 3개, 78 qm, Kaltmiete 1.350유로, Nebenkosten 250유로, Kaution은 석 달 치 Kaltmiete입니다. Sora는 서울에서 Design을 전공하고(2007–2011) 가구 회사에서 10년 동안 Designerin으로 일했고(2011–2021), 여섯 달 전에 독일에 와서 지금 일자리를 찾습니다. Lena는 주말에 Hamburg의 언니들에게 다녀왔고, Dohyun의 고객은 Mainz에 있습니다.
+- A1.2 5과, 6과와 복습에서 더한 설정(2026.11.28): Jiu는 Lena와 백화점에서 파란 재킷을 69유로에 삽니다(전에는 89유로). 팀은 퇴직하는 Herr Braun에게 서점 상품권과 꽃, 카드를 선물합니다(한 사람 10유로. Dohyun이 상품권을 사고 Markus가 꽃을 가져옴). Sora는 Minho에게 줄 파란 스웨터(L, 39유로)를 사고, 교환은 영수증이 있으면 14일 안에 됩니다. 과제 속 퇴직자는 Frau Keller, Carlos에게 주는 선물은 카페 상품권입니다. Lena의 생일은 6월 12일 금요일이고 16시에 대학 뒤 공원에서 파티를 합니다(비가 오면 WG). Jiu와 Lena는 8월에 Hamburg에 갑니다. 회사 Sommerfest는 7월 3일 금요일 17시에 회사 뒤 정원에서 하고(비가 오면 회사 안), 6월 20일까지 Frau Schulz에게 답합니다. Dohyun은 독일에 온 지 여덟 달이 되었고 Sujin과 Minjun은 8월에 옵니다. Sora의 가족은 7월 10일부터 17일까지 기차(네 시간)로 Bodensee의 Konstanz에 가서 Ferienwohnung에 묵습니다. A1.2 복습 1의 집 광고는 Sachsenhausen의 1-Zimmer-Wohnung(32 qm, Kaltmiete 650유로, Nebenkosten 120유로, Kaution 1.950유로, 연락은 Herr Vogel)이고, 복습 2의 기차는 Frankfurt에서 Heidelberg까지 IC 8.20–9.14(RE는 9.06–10.32, Mannheim에서 갈아탐), 7번 선로, 왕복 38유로입니다. 기차 시각과 값은 지어낸 것입니다.
 - 바뀔 수 있는 사실은 쓰기 전에 확인했습니다(2026.11.26): RMV 프랑크푸르트 Einzelfahrkarte 어른 3,80유로, 어린이 1,55유로. U4는 Bockenheimer Warte, Festhalle/Messe, Hauptbahnhof, Willy-Brandt-Platz, Dom/Römer, Konstablerwache 순서로 서고, Zoo 역은 Konstablerwache 다음 역으로 U6와 U7이 섭니다. Deutschlandticket은 값이 해마다 바뀌어서 값을 적지 않았습니다. 요금이 바뀌면 A1.2 1과의 대화 B, 듣기 문제, 받아쓰기를 고치고 그 줄의 음성을 다시 만듭니다.
 - Kessler Technik은 지어낸 회사입니다. 주소는 견본 주소 Musterstraße 12, 60487 Frankfurt am Main, 전화번호는 드라마용 번호(0176 040690xx, 069 90009-xxx), 이메일은 example.com과 example.org를 씁니다.
 - 과제의 예시 답에 나오는 학습자는 Minji Choi(대구 출신, 프랑크푸르트 거주)입니다.
@@ -218,13 +219,19 @@ basis/, studium/, beruf/       빌드 결과 (index.html, manifest.webmanifest, 
 3. `python3 erwachsene/tools/lektion.py site` 가 과 화면을 만들고 `tools/open.json` 을 고칩니다. 그림이 하나라도 빠지면 그 과는 열리지 않습니다.
 4. `ERWACHSENE_DATE=그날 날짜 python3 erwachsene/tools/build.py` 로 목차를 다시 만듭니다. 본문이 있는 과에 링크와 「시작하기」 단추가 생깁니다.
 
+복습(Wiederholung)과 단계 평가(Stufentest)도 같은 방법으로 만듭니다. 원고 이름은 `w1.txt`, `w2.txt`, `t.txt` 이고 화면은 `basis/a1-1/wiederholung-1/`, `basis/a1-1/stufentest/` 에 생깁니다. 이 화면에는 그림이 없고, 앞 과에 음성이 있는 문장은 그 음성을 그대로 씁니다.
+
+`img` 에 주는 폴더는 그때 받은 그림만 든 새 폴더여야 합니다. 예전 그림이 남아 있는 폴더를 주면 이미 올린 그림을 예전 것으로 덮어씁니다(2026.11.28에 A1.1 3과와 4과의 그림이 그렇게 바뀌어서 git에서 되돌렸습니다).
+
 2026.11.24에 다섯 과의 그림 15장을 만들었습니다(장면 5, 낱말 그림 묶음 6, 인물 2, 다시 그린 것 2). 4과의 Brötchen 그림은 생성된 그림이 달걀처럼 보여서 칼집을 직접 그려 넣었습니다.
 
 2026.11.26에 그다음 다섯 과의 그림 15장을 만들었습니다(장면 5, 낱말 그림 묶음 8, 다시 그린 것 2). 사람 얼굴에 눈, 코, 입이 없거나 뒷모습으로 나온 낱말 그림은 다시 그렸습니다(A1.2 4과의 묶음 전체, A1.2 1과의 Bahnhof, U-Bahn, Fahrrad, Fahrkarte). 낱말 그림 하나만 바꿀 때는 `단계_번호_c번호.webp` 로 저장해서 `img` 에 주면 그 그림만 바뀝니다. 사람이 나오는 그림 설명에는 `face with clearly drawn eyes, nose and mouth` 를 적습니다. A1.1 6과의 Praxis 그림은 책상 위 물건에 깨진 글자가 있어서 그 글자만 지웠습니다.
 
 ### 음성을 만들 때
 
-A1.1의 1과부터 5과 음성은 2026.11.25에, A1.1 6과와 A1.2의 1과부터 4과 음성은 2026.11.26에 만들었습니다(뒤의 다섯 과는 64묶음, 쉼 표시 포함 약 33,000자). `status.json` 의 `ohne_audio` 는 비어 있습니다. 새 단계를 음성 없이 먼저 올릴 때는 그 단계 id를 `ohne_audio` 에 적습니다. 그러면 화면 위에 「음성은 준비 중이에요」 안내가 나오고, 듣기 단추는 눌리지 않고, 듣고 푸는 문제에는 들려줄 글이 보이고, 받아쓰기는 문장만 보이고, 역할 대화는 상대의 말을 읽고 넘어갑니다.
+A1.1의 1과부터 5과 음성은 2026.11.25에, A1.1 6과와 A1.2의 1과부터 4과 음성은 2026.11.26에 만들었습니다(뒤의 다섯 과는 64묶음, 쉼 표시 포함 약 33,000자). 새 화면을 음성 없이 먼저 올릴 때는 그 단계 id를 `status.json` 의 `ohne_audio` 에 적습니다. 그러면 음성이 빠진 화면 위에 「음성은 준비 중이에요」 안내가 나오고, 듣기 단추는 눌리지 않고, 듣고 푸는 문제에는 들려줄 글이 보이고, 받아쓰기는 문장만 보이고, 역할 대화는 상대의 말을 읽고 넘어갑니다. 음성이 다 있는 화면은 그 단계가 `ohne_audio` 에 있어도 그대로입니다. `site` 가 음성이 빠진 화면의 이름을 `open.json` 의 `na` 에 적고, 목차는 그것을 읽어 단계마다 어느 화면의 음성이 준비 중인지 알려 줍니다.
+
+2026.11.28에 A1.1의 복습 둘과 단계 평가, A1.2의 5과, 6과, 복습 둘, 단계 평가를 음성 없이 올렸습니다(`ohne_audio` 에 `a1-1`, `a1-2`). 이 여덟 화면의 음성은 쉼 표시를 포함해 약 19,350자입니다(5과 6,953자, 6과 7,249자, 복습과 평가 여섯 화면 약 5,150자). Lena의 목소리 값을 넣으면 약 21,300크레딧입니다.
 
 1. `python3 erwachsene/tools/lektion.py tts 이름 단계` 로 음성이 없는 줄만 모아 음성 목록을 만듭니다(다섯 과는 54묶음, 쉼 표시 포함 약 24,000자, 글자 수만큼 크레딧이 듭니다).
 2. ElevenLabs flow `ey7DgxIxSWctcTQ7kvGQ`(Eleven v3, `language_code` de)의 TTS 노드 10개에 묶음을 넣어 만들고, 모두 끝난 뒤 낱말 시각 정렬 노드를 돌립니다(음성이 끝나기 전에 돌리면 크레딧이 듭니다). 받은 파일을 `python3 erwachsene/tools/lektion.py cut 폴더` 로 잘라 `erwachsene/audio/` 에 넣습니다. 방법은 청소년 교재(`jugend/README.md`)와 같습니다.

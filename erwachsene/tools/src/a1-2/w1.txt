@@ -1,0 +1,128 @@
+@id a1-2/wiederholung-1
+@typ station
+@lektionen 1 2 3
+
+== rueckblick
+-- info Lektion 1부터 3까지 왔어요
+p: 여기서는 새 내용을 배우지 않아요. 길 찾기와 교통, 집 구하기, 병원과 약국에서 배운 것을 섞어서 다시 써 봐요. 마지막에는 집 광고를 읽고 집주인에게 문의 메일을 써 봐요.
+p: 먼저 어느 과까지 마쳤는지 보고, 낱말을 다시 떠올려 보세요.
+-- fortschritt
+-- quiz 낱말 다시 보기 | Lektion 1–3의 낱말로 여덟 문제를 풀어요. 다시 하면 다른 낱말이 나와요.
+
+== training
+-- ex Hören | Lena가 전화로 WG에 오는 길을 알려 줘요. 듣고 답하세요.
+audio | Der Weg zur WG
+> Lena: Du fährst mit der U-Bahn bis zur Station Bockenheimer Warte.
+> Lena: Dann gehst du geradeaus bis zur Ampel und dann links.
+> Lena: Unsere Wohnung ist neben der Bäckerei.
+> Lena: Zu Fuß sind es nur fünf Minuten.
+mc: WG까지 무엇을 타고 가나요? | 지하철* | 버스 | 트램 => Du fährst mit der U-Bahn.
+mc: 신호등에서 어느 쪽으로 가나요? | 왼쪽* | 오른쪽 | 곧장 => bis zur Ampel und dann links
+mc: Wo ist die Wohnung? | neben der Bäckerei* | neben der Apotheke | neben der Bank
+rf: Von der Station sind es zu Fuß fünfzehn Minuten. | f => fünf Minuten, 5분이에요.
+
+-- ex Imperativ | 누구에게 하는 말인지 보고 알맞은 형태를 고르세요.
+gap: [Gehen|Geh|Geht] Sie geradeaus! | 곧장 가세요. => Sie에게는 동사 원형과 Sie를 써요.
+gap: Lena, [nimm|nehmen|nehmt] eine Tablette! | Lena, 약을 한 알 먹어요! => du에게는 -st를 뺀 형태를 써요. nehmen은 nimm이 돼요.
+gap: Kinder, [macht|mach|machen] bitte das Fenster auf! | 얘들아, 창문 좀 열어 줘! => 여럿에게는 ihr 형태를 써요.
+gap: Herr Park, [bleiben|bleib|bleibt] Sie bitte zu Hause! | Herr Park, 집에 계세요.
+gap: Jiu, [trink|trinken|trinkt] viel Tee! | Jiu, 차를 많이 마셔요!
+
+-- ex Dativ | 알맞은 말을 고르세요.
+gap: Ich fahre mit [dem|der] Bus. | 저는 버스를 타고 가요. => der Bus는 mit dem Bus가 돼요.
+gap: Sora fährt mit [der|dem] U-Bahn. | Sora는 지하철을 타고 가요. => die U-Bahn은 mit der U-Bahn이 돼요.
+gap: Wie komme ich [zum|zur] Bahnhof? | 역에 어떻게 가요? => der Bahnhof는 zum Bahnhof가 돼요.
+gap: Ich gehe [zur|zum] Apotheke. | 저는 약국에 가요. => die Apotheke는 zur Apotheke가 돼요.
+gap: Dohyun ist [beim|bei der] Arzt. | Dohyun은 병원에 있어요.
+gap: Das Sofa steht [im|in der] Wohnzimmer. | 소파는 거실에 있어요. => das Wohnzimmer는 im Wohnzimmer가 돼요.
+gap: Die Lampe hängt an [der|dem] Wand. | 등은 벽에 걸려 있어요.
+gap: Die Tabletten liegen auf [dem|der] Tisch. | 약은 탁자 위에 있어요.
+
+-- ex es gibt | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: in der Wohnung / gibt / es / einen Balkon. ~ es / gibt / in der Wohnung / einen Balkon. | 그 집에는 발코니가 있어요.
+ord: gibt / es / hier / eine Waschmaschine? | 여기 세탁기가 있나요?
+ord: das Zimmer / ist / sehr / hell. | 그 방은 아주 밝아요.
+ord: wie / hoch / ist / die Miete? | 집세가 얼마예요?
+
+-- ex sollen und dürfen | 알맞은 형태를 고르세요.
+gap: Die Ärztin sagt: Ich [soll|sollst|sollen] viel trinken. | 의사 선생님이 물을 많이 마시라고 해요.
+gap: Hier [dürfen|darf|darfst] Sie nicht rauchen. | 여기서는 담배를 피우시면 안 돼요.
+gap: Du [darfst|darf|dürfen] heute nicht arbeiten. | 오늘은 일하면 안 돼요.
+gap: [Soll|Sollst|Sollen] ich das Fenster aufmachen? | 창문을 열까요?
+gap: Die Kinder [sollen|soll|sollt] im Bett bleiben. | 아이들은 침대에 누워 있어야 해요.
+
+-- ex mein, dein, Ihr im Akkusativ | 알맞은 말을 고르세요.
+gap: Ich besuche [meinen|mein|meine] Bruder. | 저는 남동생을 만나러 가요. => der Bruder는 목적어일 때 meinen이 돼요.
+gap: Brauchen Sie [Ihre|Ihren|Ihr] Versichertenkarte? | 보험 카드가 필요하세요?
+gap: Nimm [deine|deinen|dein] Tablette! | 약 먹어요!
+gap: Ich suche [mein|meinen|meine] Rezept. | 제 처방전을 찾고 있어요.
+
+-- ex Wo macht man das? | 할 일과 장소를 짝지으세요.
+paar: Geld holen = die Bank ; Medikamente kaufen = die Apotheke ; Bücher lesen = die Bibliothek ; eine Fahrkarte kaufen = der Automat ; den Zug nehmen = der Bahnhof
+
+-- ex Lesen | Dohyun이 팀장에게 보낸 메시지예요. 읽고 답하세요.
+text notiz | Nachricht von Dohyun
+> Guten Morgen, Frau Hoffmann,
+> ich bin leider krank. Ich habe Fieber und Halsschmerzen.
+> Ich gehe heute zum Arzt. Ich kann nicht ins Büro kommen.
+> Die Krankmeldung bringe ich am Montag mit.
+> Viele Grüße
+> Dohyun Park
+mc: Was hat Dohyun? | Fieber und Halsschmerzen* | Kopfschmerzen | Husten
+rf: Dohyun geht heute ins Büro. | f => Ich kann nicht ins Büro kommen.
+mc: Wohin geht Dohyun heute? | zum Arzt* | zur Apotheke | ins Krankenhaus
+rf: Dohyun bringt die Krankmeldung am Montag mit. | r
+
+-- ex Diktat | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Wie komme ich zum Bahnhof? | 역에 어떻게 가요?
+dik: N: Die Wohnung ist hell und ruhig. | 그 집은 밝고 조용해요.
+dik: N: Mein Kopf tut weh. | 머리가 아파요.
+dik: N: Sie sollen viel trinken. | 물을 많이 마셔야 해요.
+
+== projekt
+-- info 집 광고를 보고 문의하기
+p: 독일에서 방이나 집을 구할 때는 인터넷이나 게시판의 광고를 보고 먼저 메일을 보내요. 광고에는 줄임말이 많아요. Zi.는 Zimmer, qm은 Quadratmeter, KM은 Kaltmiete, NK는 Nebenkosten이에요. EBK는 붙박이 부엌이 있다는 뜻이에요.
+p: 좋은 집은 문의가 많이 와요. 그래서 첫 메일에 내가 누구인지 짧게 소개하고, 궁금한 것을 묻고, 집을 보러 갈 수 있는 때를 써요. 먼저 광고를 읽어 보세요.
+
+-- ex Verstehen | 집 광고예요. 읽고 답하세요.
+text notiz | Wohnung in Sachsenhausen
+> 1-Zi.-Wohnung in Frankfurt-Sachsenhausen
+> 32 qm, hell und ruhig, mit Balkon und EBK
+> KM 650 €, NK 120 €, Kaution 1.950 €
+> Keine Waschmaschine in der Wohnung
+> Bus und Straßenbahn in der Nähe
+> Ab sofort frei
+> Kontakt: Herr Vogel, vogel@example.org
+mc: Wie groß ist die Wohnung? | 32 Quadratmeter* | 650 Quadratmeter | 120 Quadratmeter
+mc: 관리비를 포함하면 한 달에 얼마를 내나요? | 770 Euro* | 650 Euro | 1.950 Euro => Kaltmiete 650유로에 Nebenkosten 120유로를 더해요.
+rf: Die Wohnung hat einen Balkon. | r
+rf: In der Wohnung gibt es eine Waschmaschine. | f => Keine Waschmaschine in der Wohnung
+mc: 이 집에는 언제부터 들어갈 수 있나요? | 지금 바로* | 다음 달부터 | 내년부터 => Ab sofort frei는 지금 바로 들어갈 수 있다는 뜻이에요.
+
+-- projekt Meine Anfrage | 칸을 채우면 집주인에게 보내는 문의 메일이 완성돼요. | E-Mail an Herrn Vogel
+p: 나에 대해 한 가지, 궁금한 것 한 가지, 집을 보러 갈 수 있는 때를 정해요. 직업은 Studentin, Ingenieur처럼 관사 없이, 궁금한 것은 eine Waschmaschine im Keller, einen Supermarkt in der Nähe처럼 써요.
+feld: name | 내 이름 | Minji Choi
+feld: beruf | 직업이나 하는 일 | Studentin
+feld: frage | 있는지 묻고 싶은 것 | eine Waschmaschine im Keller
+feld: tag | 보러 갈 수 있는 요일 | am Samstag
+feld: zeit | 보러 갈 수 있는 시각 | um elf Uhr
+karte: An = vogel@example.org
+karte: Betreff = Wohnung in Sachsenhausen
+karte: Von = {name}, {beruf}
+karte: Frage = Gibt es {frage}?
+karte: Termin = {tag} {zeit}
+satz: Guten Tag, Herr Vogel, mein Name ist {name}. Ich bin {beruf}.
+satz: Ich suche eine Wohnung in Frankfurt. Ist die Wohnung in Sachsenhausen noch frei?
+satz: Gibt es {frage}?
+satz: Ich kann {tag} {zeit} kommen. Geht das?
+check: 인사와 내 이름으로 메일을 시작했어요 ; 집이 아직 비어 있는지 물었어요 ; es gibt 뒤의 der 명사에 einen을 썼어요 ; 보러 갈 요일과 시각을 am, um과 함께 썼어요
+
+-- schreiben Eine E-Mail an den Vermieter | 위의 광고를 보고 집주인 Herr Vogel에게 문의 메일을 처음부터 끝까지 써 보세요. 여섯 문장쯤 써요.
+punkt: 인사와 내 소개 ; 집이 아직 비어 있는지 ; 궁금한 것 두 가지 ; 보러 갈 수 있는 때 ; 맺음말
+start: Guten Tag, Herr Vogel, …
+muster: Guten Tag, Herr Vogel, mein Name ist Minji Choi. Ich komme aus Korea und studiere in Frankfurt. Ich suche eine Wohnung. Ist die Wohnung in Sachsenhausen noch frei? Gibt es eine Waschmaschine im Keller? Und wie komme ich mit der Straßenbahn zur Universität? Ich kann am Samstag um elf Uhr kommen. Viele Grüße, Minji Choi
+check: 인사와 맺음말을 썼어요 ; 나를 한두 문장으로 소개했어요 ; 궁금한 것을 물음표로 끝나는 문장으로 물었어요 ; mit der, zur처럼 mit과 zu 뒤의 관사를 맞게 썼어요 ; 보러 갈 수 있는 요일과 시각을 썼어요
+
+-- tipp 메일은 짧고 분명하게
+p: 집주인은 하루에도 문의를 여러 통 받아요. 길게 쓴 메일보다 누가, 무엇을, 언제를 분명히 쓴 메일에 답이 빨리 와요. 이름과 하는 일, 궁금한 것, 방문할 수 있는 날을 한 줄씩 쓰면 충분해요.
+p: 보내기 전에 세 가지를 확인해요. 인사에 상대의 이름을 맞게 썼는지, 광고의 집을 정확히 가리켰는지, 내 이름으로 끝냈는지요. 답장이 오면 집을 보러 갈 때 할 질문을 미리 적어 두세요. Wie hoch ist die Kaution? Gibt es einen Keller?
