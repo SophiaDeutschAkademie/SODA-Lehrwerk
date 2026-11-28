@@ -8,7 +8,7 @@ Sophia Deutsch Akademie(소피아 독일어학원)의 독일어 학습 자료를
 |---|---|---|
 | `grammatik/` | Syntalab | 문법 교재, Lektion 37개와 부록「암기 노트」, 과마다 연습문제 37개(보강 포함)와 통합 복습 4세트. 별도 항목 「C1 문법」에 Lektion 38~46의 교재와 연습 9개, 통합 복습 5. 교재와 연습 모두 인쇄용 PDF(전체·과별) |
 | `lesetraining/` | SODA Lesetraining | 독해 훈련, A1–C1, 텍스트 125개 |
-| `hoertraining/` | Lehrwerk Hörtraining | 듣기 훈련, A1–C1, 88세트 |
+| `hoertraining/` | Lehrwerk Hörtraining | 듣기 훈련, A1–C1, 100세트 |
 | `schreibtraining/` | SODA Schreibtraining | 쓰기 훈련, A1–C1 레벨별 10챕터(총 50개), 챕터마다 구성·표현·연습·쓰기·모범답안, 「선생님께 제출하기」(소피아 독일어학원 수강생 전용 안내 팝업) |
 | `sprechtraining/` | SODA Sprechtraining | 말하기 훈련, A1–C1과 MZ 구어체, 대화 54개, 독일어 음성 649줄 |
 | `diktattraining/` | SODA Diktattraining | 받아쓰기 훈련, A1–C1, 문장 563개(56세트), 문장마다 음성, 틀린 곳을 종류별로 표시(어미·관사·철자·빠진 단어 등), 다시 쓸 문장, 나의 기록, 「선생님께 기록 보내기」(소피아 독일어학원 수강생 전용 안내 팝업) |
@@ -52,7 +52,7 @@ assets/           표지와 목차에 쓰는 로고, 글꼴, 홈 화면 아이�
 grammatik/        SODA-Lehrwerk-Grammatik 저장소의 내용
 grammatik-pdf/    Syntalab 문법 교재와 문법 연습의 인쇄용 PDF — 교재 39개, 문법 연습 42개, C1 문법 21개(교재 10개·연습 11개) (grammatik/tools/pdf-build.py가 만듦, 아래 「Syntalab 인쇄용 PDF」)
 lesetraining/     SODA-Lehrwerk-Lesetraining 저장소의 내용
-hoertraining/     SODA-Lehrwerk-Hoertraining 저장소의 내용
+hoertraining/     SODA-Lehrwerk-Hoertraining 저장소의 내용. 89번째 세트부터는 hoertraining/tools/(원고 src/, sets.py)로 만들어 덧붙임
 sprechtraining/   SODA-SPRECHTRAINING 저장소의 내용 (대화 앱, 음성 mp3 포함)
 schreibtraining/  쓰기 훈련 (챕터 데이터는 data/chapters.js, 화면은 assets/app.js)
 diktattraining/   받아쓰기 훈련 (문장은 data/saetze.js, 문장별 음성은 audio/, 채점은 assets/grade.js, 만드는 스크립트는 tools/build.py)
@@ -138,6 +138,16 @@ Syntalab(문법 교재)과 문법 연습(Grammatikübungen)을 종이에 뽑아 
 - 학생이 쓴 글은 학생 기기의 브라우저(localStorage `soda-schreib-draft:<챕터 id>`)에 입력할 때마다 자동 저장됩니다. 저장 이름에 챕터 `id`가 들어가므로, 이미 올린 챕터의 `id`(예: `b1-01`)는 바꾸지 않습니다. 새 챕터는 새 `id`로 더합니다.
 - 한국어 설명과 해석은 해요체로 씁니다. B1 이상 격식 편지의 해석만 합니다체로 씁니다.
 - 레벨 화면의 제목과 소개 문장은 `schreibtraining/assets/app.js` 맨 위 `LEVELS`에 있습니다. 챕터 구성이 바뀌면 함께 고칩니다.
+
+## 듣기 훈련(`hoertraining/`)에 세트 더하기
+
+- 처음 88세트는 듣기 훈련 루틴 빌더로 만든 것이고 원고가 이 저장소에 없습니다. 자료는 `hoertraining/index.html`의 `routine-data`에만 있습니다.
+- 89번째 세트부터는 `hoertraining/tools/sets.py`로 만들어 그 자료 뒤에 덧붙입니다. 원고는 `hoertraining/tools/src/<세트>.txt`이고, 원고 형식과 쓰는 규칙은 `hoertraining/tools/README.md`에 있습니다.
+- 순서는 `check`(원고 검사) → `tts`(화자별 음성 대본) → 음성 만들기 → `mix`(음원) → `merge`(앱에 넣기) → `walk.py`(브라우저에서 7단계 눌러 보기)입니다.
+- `merge`는 `sw.js`의 음원 목록과 `VERSION`, 그리고 세트 수가 적힌 곳(앱 제목·설명, `manifest.webmanifest`, `tools/seo.py`, 이 문서의 자료 표, 목차 칸, `lernmethoden/`의 바로가기 칸)을 함께 고칩니다. 목차 칸의 업데이트 날짜와 공지는 직접 고칩니다.
+- 처음 88세트의 글을 고칠 때는 `routine-data`를 직접 고친 뒤 `python3 hoertraining/tools/sets.py merge`를 실행합니다. `sw.js`의 `VERSION`이 바뀌어 학생 기기가 새 내용을 받습니다.
+- 말 빠르기는 레벨마다 목표가 있습니다(말하는 시간 1초에 읽는 음절 수: A1 3.2, A2 3.8, B1 4.2, B2 4.4, C1 4.4). 받은 음성이 이보다 빠르면 `mix`가 높낮이는 그대로 두고 느리게 늘입니다.
+- 받아쓰기 훈련은 듣기 훈련의 줄에서 문장을 골라 옵니다. 세트를 더해도 받아쓰기 문장은 그대로이고, `diktattraining/tools/build.py`를 다시 실행할 때 새 세트의 문장이 그 레벨의 새 받아쓰기 세트로 붙습니다.
 
 ## 받아쓰기 훈련(`diktattraining/`) 고치기
 

@@ -1,0 +1,267 @@
+@set B1_18
+@titel WG-Besichtigung
+@art 대화
+@id b1-18-a-wg
+@datei b1-18-a
+@thema Ein Zimmer in der WG | 셰어하우스의 방 보기
+@lage Sie hören ein Gespräch in einer Wohngemeinschaft. Carla sieht sich ein Zimmer an.
+@form richtig / falsch
+@plays 2
+@prep 60
+@stimme Felix = Leon | #4A7FB5
+@stimme Carla = Ava | #C54B4B
+
+[text]
+Felix: Hallo, du musst Carla sein. Ich bin Felix, komm rein! | 안녕, 네가 카를라구나. 나는 펠릭스야, 들어와!
+Carla: Hallo Felix, danke. Entschuldige, ich bin ein paar Minuten zu spät. Ich habe die Hausnummer nicht gleich gefunden. | 안녕 펠릭스, 고마워. 미안, 몇 분 늦었어. 번지수를 바로 못 찾았어.
+Felix: Kein Problem. Wir sind hier zu dritt: Hanna, Mehmet und ich. Die beiden sind leider noch nicht zu Hause. | 괜찮아. 여기는 셋이 살아, 한나, 메메트, 그리고 나. 둘은 아쉽게도 아직 집에 안 왔어.
+Felix: Ich zeige dir zuerst das Zimmer. | 먼저 방부터 보여 줄게.
+Carla: Gern. Oh, das ist ja schön hell! | 좋아. 와, 방이 정말 밝고 좋다!
+Felix: Ja, es hat sechzehn Quadratmeter und geht zum Hof. Deshalb ist es sehr ruhig. Bis letzte Woche hat hier Timo gewohnt, aber er hat eine Stelle in Wien bekommen. | 응, 십육 제곱미터이고 안뜰 쪽으로 나 있어. 그래서 아주 조용해. 지난주까지 티모가 여기 살았는데, 빈에 일자리를 얻었어.
+Carla: Und das Bett und der Schreibtisch? Gehören die noch ihm? | 그럼 침대랑 책상은? 아직 티모 거야?
+Felix: Die hat er dagelassen. Wenn du sie brauchst, kannst du sie umsonst haben. | 두고 갔어. 필요하면 네가 공짜로 가져도 돼.
+Carla: Super, ich habe nämlich kaum Möbel. Wie hoch ist die Miete genau? | 잘됐다, 나는 가구가 거의 없거든. 집세는 정확히 얼마야?
+Felix: Vierhundertzwanzig Euro warm, das Internet ist schon dabei. Dazu kommt die Kaution, das sind zwei Monatsmieten. | 관리비 포함해서 사백이십 유로이고, 인터넷도 이미 들어 있어. 여기에 보증금이 더 있는데, 두 달 치 집세야.
+Carla: Das ist in Ordnung. Und wie läuft das Zusammenleben bei euch? | 그 정도면 괜찮아. 그리고 너희는 같이 사는 게 어떤 식이야?
+Felix: Eigentlich ganz entspannt. Wir haben einen Putzplan, jede Woche ist jemand anderes mit Bad und Küche dran. Am Sonntagabend kochen wir meistens zusammen. | 사실 꽤 편해. 청소 당번표가 있어서 매주 다른 사람이 욕실과 부엌을 맡아. 일요일 저녁에는 대개 같이 요리해.
+Felix: Für Dinge wie Kaffee, Öl oder Spülmittel haben wir eine gemeinsame Kasse. Jeder zahlt fünfzehn Euro im Monat ein. | 커피나 기름이나 주방 세제 같은 것은 공동 경비로 사. 각자 한 달에 십오 유로씩 내.
+Carla: Das klingt gut. Gibt es auch Regeln? | 좋네. 규칙도 있어?
+Felix: Nur wenige. Geraucht wird nur auf dem Balkon. Und Hanna ist Krankenschwester und hat oft Nachtschicht. | 몇 개 안 돼. 담배는 발코니에서만 피워. 그리고 한나는 간호사라서 야간 근무가 많아.
+Felix: Deshalb sind wir am Vormittag leise, bis ungefähr vierzehn Uhr, weil sie dann schläft. | 그래서 오전에는, 열네 시쯤까지는 조용히 해, 한나가 그때 자거든.
+Carla: Verstehe. Ich spiele Gitarre, ist das ein Problem? | 알겠어. 나는 기타를 치는데, 그게 문제가 될까?
+Felix: Am Nachmittag und am frühen Abend überhaupt nicht. Mehmet spielt übrigens Klavier, vielleicht könnt ihr zusammen Musik machen. Erzähl doch mal, was machst du so? | 오후하고 이른 저녁에는 전혀 문제없어. 참고로 메메트는 피아노를 쳐, 어쩌면 둘이 같이 연주할 수도 있겠다. 네 얘기 좀 해 봐, 너는 뭐 해?
+Carla: Ich bin dreiundzwanzig und studiere Grafikdesign im dritten Semester. Am Wochenende arbeite ich in einem Café in der Altstadt. | 나는 스물세 살이고 그래픽 디자인을 전공해, 지금 삼 학기야. 주말에는 구시가지에 있는 카페에서 일해.
+Carla: Zur Hochschule brauche ich von hier nur zehn Minuten mit dem Rad, das wäre perfekt. | 여기서 학교까지는 자전거로 십 분밖에 안 걸려, 그럼 딱 좋을 거야.
+Felix: Ab wann suchst du denn ein Zimmer? | 방은 언제부터 필요해?
+Carla: Am liebsten ab Mitte Februar. Mein Zimmer zur Zwischenmiete muss ich am fünfzehnten Februar verlassen. | 이월 중순부터면 제일 좋아. 지금 단기로 빌린 방에서 이월 십오일에 나가야 해.
+Felix: Offiziell ist das Zimmer erst ab dem ersten März frei. Aber Timo ist ja schon weg. Ich frage ihn, ob du früher einziehen kannst. | 공식적으로는 방이 삼월 일일부터 비어. 그런데 티모는 이미 떠났으니까. 네가 더 일찍 들어올 수 있는지 내가 물어볼게.
+Carla: Das wäre toll. Wann entscheidet ihr euch? | 그럼 정말 좋겠다. 너희는 언제 결정해?
+Felix: Morgen kommen noch zwei andere Interessenten. Am Freitagabend setzen wir uns zu dritt zusammen und entscheiden gemeinsam. Am Samstag rufe ich dich auf jeden Fall an. | 내일 관심 있는 사람이 두 명 더 와. 금요일 저녁에 우리 셋이 모여 앉아서 함께 결정해. 토요일에는 어떻게 되든 내가 꼭 전화할게.
+Carla: Gut, dann drücke ich mir selbst die Daumen. Vielen Dank für die Führung! | 알았어, 그럼 내가 잘되기를 스스로 빌어야겠다. 방 보여 줘서 정말 고마워!
+Felix: Gern. Komm gut nach Hause, Carla! | 천만에. 조심히 들어가, 카를라!
+
+[woerter]
+die WG (Wohngemeinschaft) | 셰어하우스, 여럿이 함께 사는 집
+hell | 밝은
+der Hof | 안뜰
+die Stelle | 일자리
+umsonst | 공짜로
+die Miete | 집세
+die Kaution | 보증금
+das Zusammenleben | 함께 사는 생활
+der Putzplan | 청소 당번표
+die Kasse | (공동) 경비, 돈통
+die Nachtschicht | 야간 근무
+die Zwischenmiete | 단기 임대
+ein|ziehen | 이사 들어오다
+sich entscheiden | 결정하다
+
+[saetze]
+Ich habe die Hausnummer nicht gleich gefunden. | 번지수를 바로 못 찾았어.
+Wenn du sie brauchst, kannst du sie umsonst haben. | 필요하면 네가 공짜로 가져도 돼.
+Wie hoch ist die Miete genau? | 집세는 정확히 얼마야?
+Geraucht wird nur auf dem Balkon. | 담배는 발코니에서만 피워.
+Ich frage ihn, ob du früher einziehen kannst. | 네가 더 일찍 들어올 수 있는지 그에게 물어볼게.
+Am Samstag rufe ich dich auf jeden Fall an. | 토요일에는 어떻게 되든 내가 꼭 전화할게.
+
+[vokabeln]
+musst | ~해야 한다, ~임이 틀림없다 (müssen) — du musst Carla sein = 네가 카를라구나
+Carla | 카를라 (여자 이름)
+sein | ~이다
+Felix | 펠릭스 (남자 이름)
+komm, Komm | 오다 (kommen) — komm rein = 들어와 · Komm gut nach Hause = 조심히 들어가
+rein | 안으로 — komm rein = 들어와
+Entschuldige | 미안해 (entschuldigen)
+paar | 몇몇의 — ein paar Minuten = 몇 분
+Minuten | 분 (die Minute, 복수 Minuten)
+spät | 늦은 — zu spät = 늦은, 지각한
+Hausnummer | 번지수 (die Hausnummer)
+gefunden | 찾았다 (finden의 과거분사)
+Problem | 문제 (das Problem) — Kein Problem = 괜찮아
+dritt | 셋이서 — zu dritt = 셋이서
+Hanna | 한나 (여자 이름)
+Mehmet | 메메트 (남자 이름)
+beiden | 둘 다 — die beiden = 그 둘
+Hause | 집 — zu Hause = 집에 · nach Hause = 집으로
+zeige | 보여 주다 (zeigen)
+Zimmer | 방 (das Zimmer)
+schön | 좋은, 예쁜 — schön hell = 기분 좋게 밝은
+hell | 밝은
+sechzehn | 16, 열여섯
+Quadratmeter | 제곱미터 (der Quadratmeter)
+geht | 가다, 향하다 (gehen) — Das Zimmer geht zum Hof = 방이 안뜰 쪽으로 나 있다
+Hof | 안뜰 (der Hof)
+ruhig | 조용한
+letzte | 지난 (letzt-) — bis letzte Woche = 지난주까지
+Woche | 주 (die Woche)
+Timo | 티모 (남자 이름)
+gewohnt | 살았다 (wohnen의 과거분사)
+Stelle | 일자리 (die Stelle)
+Wien | 빈 (오스트리아의 수도)
+bekommen | 받다, 얻다
+Bett | 침대 (das Bett)
+Schreibtisch | 책상 (der Schreibtisch)
+Gehören | ~의 것이다 (gehören) — Gehören die noch ihm? = 그것들은 아직 그의 것이야?
+dagelassen | 두고 갔다 (da|lassen의 과거분사)
+brauchst, brauche | 필요하다 (brauchen)
+kannst | ~할 수 있다 (können)
+umsonst | 공짜로
+Super | 아주 좋아, 잘됐다
+nämlich | ~거든 (이유를 덧붙임)
+kaum | 거의 ~ 않다
+Möbel | 가구 (die Möbel, 복수)
+hoch | 높은 — Wie hoch ist die Miete? = 집세가 얼마야?
+Miete | 집세 (die Miete)
+genau | 정확히
+Vierhundertzwanzig | 420, 사백이십
+warm | (집세에서) 난방비·관리비가 포함된, 따뜻한
+Internet | 인터넷 (das Internet)
+dabei | 포함된, 들어 있는
+Dazu | 거기에 더해
+kommt, kommen | 오다 (kommen) — Dazu kommt … = ~이 더 붙는다
+Kaution | 보증금 (die Kaution)
+Monatsmieten | 한 달 집세 (die Monatsmiete, 복수 Monatsmieten)
+Ordnung | 질서 (die Ordnung) — Das ist in Ordnung = 괜찮아
+läuft | 진행되다, 굴러가다 (laufen) — Wie läuft das? = 어떤 식이야?
+Zusammenleben | 함께 사는 생활 (das Zusammenleben)
+entspannt | 편안한, 느긋한
+Putzplan | 청소 당번표 (der Putzplan)
+anderes, andere | 다른 (ander-) — jemand anderes = 다른 누군가
+Bad | 욕실 (das Bad)
+Küche | 부엌 (die Küche)
+dran | 차례인 — mit etwas dran sein = ~을 할 차례이다
+Sonntagabend | 일요일 저녁 (der Sonntagabend)
+kochen | 요리하다
+meistens | 대개
+Dinge | 물건, 것 (das Ding, 복수 Dinge)
+Kaffee | 커피 (der Kaffee)
+Öl | 기름 (das Öl)
+Spülmittel | 주방 세제 (das Spülmittel)
+gemeinsame, gemeinsam | 공동의, 함께 (gemeinsam)
+Kasse | 공동 경비, 돈통 (die Kasse)
+Jeder | 각자, 모두 (jed-)
+zahlt | 내다 (ein|zahlen) — Jeder zahlt fünfzehn Euro ein = 각자 십오 유로를 낸다
+Monat | 달, 월 (der Monat) — im Monat = 한 달에
+ein | (ein|zahlen의 앞부분) · 하나의
+klingt | ~하게 들리다 (klingen) — Das klingt gut = 좋네
+gut | 좋은, 잘
+Regeln | 규칙 (die Regel, 복수 Regeln)
+Geraucht | 담배를 피우는 (rauchen의 과거분사) — Geraucht wird nur auf dem Balkon = 담배는 발코니에서만 피운다
+Balkon | 발코니 (der Balkon)
+Krankenschwester | 간호사 (die Krankenschwester)
+Nachtschicht | 야간 근무 (die Nachtschicht)
+Vormittag | 오전 (der Vormittag)
+leise | 조용한, 조용히
+schläft | 자다 (schlafen)
+Verstehe | 이해하다 (verstehen) — Verstehe = 알겠어
+spiele, spielt | (악기를) 연주하다, 놀다 (spielen)
+Gitarre | 기타 (die Gitarre)
+Nachmittag | 오후 (der Nachmittag)
+frühen | 이른 (früh)
+Abend | 저녁 (der Abend)
+überhaupt | 전혀 — überhaupt nicht = 전혀 아니다
+Klavier | 피아노 (das Klavier)
+könnt | ~할 수 있다 (können)
+Musik | 음악 (die Musik) — Musik machen = 연주하다
+machen, machst | 하다 (machen) — Was machst du so? = 너는 뭐 하고 지내?
+Erzähl | 이야기하다 (erzählen) — Erzähl doch mal = 얘기 좀 해 봐
+dreiundzwanzig | 23, 스물셋
+studiere | 전공하다, 대학에 다니다 (studieren)
+Grafikdesign | 그래픽 디자인 (das Grafikdesign)
+dritten | 세 번째의 (dritt-) — im dritten Semester = 삼 학기에
+Semester | 학기 (das Semester)
+Wochenende | 주말 (das Wochenende)
+arbeite | 일하다 (arbeiten)
+Café | 카페 (das Café)
+Altstadt | 구시가지 (die Altstadt)
+Hochschule | 대학 (die Hochschule)
+Rad | 자전거 (das Rad)
+perfekt | 완벽한, 딱 좋은
+suchst | 찾다 (suchen)
+liebsten | 가장 즐겨 (gern의 최상급) — am liebsten = 가장 좋기로는
+Mitte | 가운데, 중순 (die Mitte) — Mitte Februar = 이월 중순
+Zwischenmiete | 단기 임대 (die Zwischenmiete) — 집주인이 비운 동안 잠깐 빌려 사는 것
+fünfzehnten | 열다섯 번째의, 십오일 (fünfzehnt-)
+verlassen | 떠나다, 나가다
+Offiziell | 공식적으로 (offiziell)
+ersten | 첫 번째의, 일일 (erst-)
+frei | 비어 있는
+weg | 떠난, 없는
+frage | 묻다 (fragen)
+früher | 더 일찍 (früh의 비교급)
+einziehen | 이사 들어오다 (ein|ziehen)
+toll | 멋진, 아주 좋은
+entscheidet, entscheiden | 결정하다 (sich entscheiden)
+Interessenten | 관심 있는 사람 (der Interessent, 복수 Interessenten)
+Freitagabend | 금요일 저녁 (der Freitagabend)
+setzen | 앉다 (sich setzen) — Wir setzen uns zusammen = 모여 앉는다 (sich zusammen|setzen)
+rufe | 전화하다 (an|rufen) — Ich rufe dich an = 너에게 전화할게
+auf | ~ 위에 — auf dem Balkon = 발코니에서 · auf jeden Fall = 어떻게 되든, 꼭
+Fall | 경우 (der Fall) — auf jeden Fall = 어떻게 되든, 꼭
+an | (an|rufen의 앞부분)
+drücke | 누르다 (drücken) — die Daumen drücken = 행운을 빌다
+selbst | 스스로, 직접
+Daumen | 엄지손가락 (der Daumen, 복수 Daumen) — die Daumen drücken = 행운을 빌다
+Dank | 감사 (der Dank) — Vielen Dank = 정말 고마워
+Führung | 안내 (die Führung)
+
+[fragen]
+1 | In der Wohnung leben zurzeit drei Personen. | 이 집에는 지금 세 사람이 살고 있다
+= richtig
+> Wir sind hier zu dritt: Hanna, Mehmet und ich.
+! 셋이서(zu dritt) 산다고 했습니다. 한나, 메메트, 펠릭스 세 사람입니다. 티모는 이미 나갔습니다. → richtig
+~ number
+
+2 | Timo ist ausgezogen, weil er jetzt in einer anderen Stadt arbeitet. | 티모는 이제 다른 도시에서 일하기 때문에 이사를 나갔다
+= richtig
+> Bis letzte Woche hat hier Timo gewohnt, aber er hat eine Stelle in Wien bekommen.
+! 티모는 빈에 일자리(Stelle)를 얻어서 나갔습니다 → 다른 도시에서 일합니다. → richtig
+~ paraphrase
+
+3 | Carla muss für das Bett und den Schreibtisch etwas bezahlen. | 카를라는 침대와 책상 값을 내야 한다
+= falsch
+> Wenn du sie brauchst, kannst du sie umsonst haben.
+! 티모가 두고 간 침대와 책상은 공짜로(umsonst) 가져도 된다고 했습니다. → falsch
+~ wording
+
+4 | Für das Internet zahlt man zusätzlich fünfzehn Euro im Monat. | 인터넷 요금으로 한 달에 십오 유로를 따로 낸다
+= falsch
+> Vierhundertzwanzig Euro warm, das Internet ist schon dabei.
+! 인터넷은 집세에 이미 들어 있습니다(schon dabei). 십오 유로는 커피나 세제를 사는 공동 경비입니다. → falsch
+~ number
+
+5 | Die Kaution ist so hoch wie die Miete für zwei Monate. | 보증금은 두 달 치 집세와 같다
+= richtig
+> Dazu kommt die Kaution, das sind zwei Monatsmieten.
+! 보증금은 두 달 치 집세(zwei Monatsmieten)라고 했습니다. → richtig
+~ paraphrase
+
+6 | Bad und Küche werden abwechselnd geputzt. | 욕실과 부엌은 돌아가며 청소한다
+= richtig
+> Wir haben einen Putzplan, jede Woche ist jemand anderes mit Bad und Küche dran.
+! 청소 당번표가 있어서 매주 다른 사람이(jemand anderes) 욕실과 부엌을 맡는다고 했습니다 → 돌아가며(abwechselnd) 청소합니다. → richtig
+~ paraphrase
+
+7 | Rauchen ist in der ganzen Wohnung verboten, auch auf dem Balkon. | 발코니를 포함해 집 전체에서 담배를 피울 수 없다
+= falsch
+> Geraucht wird nur auf dem Balkon.
+! 담배는 발코니에서만(nur auf dem Balkon) 피운다고 했습니다 → 발코니에서는 피워도 됩니다. → falsch
+~ negation
+
+8 | Am Vormittag soll es in der Wohnung ruhig sein. | 오전에는 집 안이 조용해야 한다
+= richtig
+> Deshalb sind wir am Vormittag leise, bis ungefähr vierzehn Uhr, weil sie dann schläft.
+! 한나가 야간 근무 뒤에 자기 때문에 오전에는, 열네 시쯤까지 조용히 한다고 했습니다. → richtig
+~ context
+
+9 | Carla möchte erst Anfang März einziehen. | 카를라는 삼월 초에야 이사 들어오고 싶어 한다
+= falsch
+> Am liebsten ab Mitte Februar.
+! 카를라는 이월 중순(Mitte Februar)부터 들어오고 싶어 합니다. 삼월 일일은 방이 공식적으로 비는 날입니다. → falsch
+~ context
+
+10 | Felix verspricht Carla das Zimmer schon heute. | 펠릭스는 오늘 바로 카를라에게 방을 주겠다고 약속한다
+= falsch
+> Am Freitagabend setzen wir uns zu dritt zusammen und entscheiden gemeinsam.
+! 내일 두 명이 더 방을 보러 오고, 금요일 저녁에 셋이 함께 결정한 뒤 토요일에 전화하겠다고 했습니다. 오늘 약속한 것은 없습니다. → falsch
+~ context

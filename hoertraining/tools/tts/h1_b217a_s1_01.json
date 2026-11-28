@@ -1,0 +1,36 @@
+{
+ "job": "h1_b217a_s1_01",
+ "set": "B2_17",
+ "who": "Moderatorin",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "i": 0,
+   "parts": [
+    "Herzlich willkommen zu unserer Sendung Forum am Mittag. Immer mehr Unternehmen holen ihre Beschäftigten zurück ins Büro. Ist das Homeoffice also schon wieder am Ende?"
+   ]
+  },
+  {
+   "i": 1,
+   "parts": [
+    "Darüber spreche ich mit Claudia Hartmann, Geschäftsführerin eines Softwareunternehmens, und mit Deniz Kaya, Betriebsratsvorsitzender bei einer Versicherung."
+   ]
+  },
+  {
+   "i": 2,
+   "parts": [
+    "Frau Hartmann, Sie haben in Ihrer Firma gerade drei feste Bürotage eingeführt. Warum?"
+   ]
+  },
+  {
+   "i": 6,
+   "parts": [
+    "Herr Kaya, überzeugt Sie das?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Herzlich willkommen zu unserer Sendung Forum am Mittag. Immer mehr Unternehmen holen ihre Beschäftigten zurück ins Büro. Ist das Homeoffice also schon wieder am Ende? [pause] Darüber spreche ich mit Claudia Hartmann, Geschäftsführerin eines Softwareunternehmens, und mit Deniz Kaya, Betriebsratsvorsitzender bei einer Versicherung. [pause] Frau Hartmann, Sie haben in Ihrer Firma gerade drei feste Bürotage eingeführt. Warum? [pause] Herr Kaya, überzeugt Sie das? [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

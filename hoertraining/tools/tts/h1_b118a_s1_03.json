@@ -1,0 +1,42 @@
+{
+ "job": "h1_b118a_s1_03",
+ "set": "B1_18",
+ "who": "Felix",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "i": 17,
+   "parts": [
+    "Am Nachmittag und am frühen Abend überhaupt nicht. Mehmet spielt übrigens Klavier, vielleicht könnt ihr zusammen Musik machen. Erzähl doch mal, was machst du so?"
+   ]
+  },
+  {
+   "i": 20,
+   "parts": [
+    "Ab wann suchst du denn ein Zimmer?"
+   ]
+  },
+  {
+   "i": 22,
+   "parts": [
+    "Offiziell ist das Zimmer erst ab dem ersten März frei. Aber Timo ist ja schon weg. Ich frage ihn, ob du früher einziehen kannst."
+   ]
+  },
+  {
+   "i": 24,
+   "parts": [
+    "Morgen kommen noch zwei andere Interessenten. Am Freitagabend setzen wir uns zu dritt zusammen und entscheiden gemeinsam. Am Samstag rufe ich dich auf jeden Fall an."
+   ]
+  },
+  {
+   "i": 26,
+   "parts": [
+    "Gern. Komm gut nach Hause, Carla!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Am Nachmittag und am frühen Abend überhaupt nicht. Mehmet spielt übrigens Klavier, vielleicht könnt ihr zusammen Musik machen. Erzähl doch mal, was machst du so? [pause] Ab wann suchst du denn ein Zimmer? [pause] Offiziell ist das Zimmer erst ab dem ersten März frei. Aber Timo ist ja schon weg. Ich frage ihn, ob du früher einziehen kannst. [pause] Morgen kommen noch zwei andere Interessenten. Am Freitagabend setzen wir uns zu dritt zusammen und entscheiden gemeinsam. Am Samstag rufe ich dich auf jeden Fall an. [pause] Gern. Komm gut nach Hause, Carla! [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

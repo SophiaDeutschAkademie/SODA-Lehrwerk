@@ -1,0 +1,24 @@
+{
+ "job": "h1_b119a_s2_01",
+ "set": "B1_19",
+ "who": "Mutter",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "i": 13,
+   "parts": [
+    "Darf ich kurz etwas fragen? Dürfen die Kinder ihre Handys mitnehmen?"
+   ]
+  },
+  {
+   "i": 16,
+   "parts": [
+    "Und wie erreichen wir Sie im Notfall?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Darf ich kurz etwas fragen? Dürfen die Kinder ihre Handys mitnehmen? [pause] Und wie erreichen wir Sie im Notfall? [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

@@ -1,0 +1,42 @@
+{
+ "job": "h1_b119a_s1_03",
+ "set": "B1_19",
+ "who": "Herr Krüger",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "i": 11,
+   "parts": [
+    "Wenn das für Ihre Familie schwierig ist, sprechen Sie mich bitte an. Der Förderverein der Schule kann einen Teil der Kosten übernehmen, und niemand in der Klasse erfährt davon."
+   ]
+  },
+  {
+   "i": 12,
+   "parts": [
+    "Als Taschengeld reichen dreißig Euro völlig aus. Mehr sollten die Kinder nicht mitnehmen."
+   ]
+  },
+  {
+   "i": 14,
+   "parts": [
+    "Ja, das dürfen sie. Aber wir sammeln die Handys ein und geben sie nur abends zwischen achtzehn und neunzehn Uhr heraus."
+   ]
+  },
+  {
+   "i": 15,
+   "parts": [
+    "Letztes Jahr haben einige Schüler die halbe Nacht am Handy gespielt und waren am nächsten Tag todmüde. Das möchten wir nicht noch einmal erleben."
+   ]
+  },
+  {
+   "i": 17,
+   "parts": [
+    "Ich habe ein Diensthandy dabei, das Tag und Nacht eingeschaltet ist. Die Nummer steht auf dem Elternbrief, den Sie heute bekommen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wenn das für Ihre Familie schwierig ist, sprechen Sie mich bitte an. Der Förderverein der Schule kann einen Teil der Kosten übernehmen, und niemand in der Klasse erfährt davon. [pause] Als Taschengeld reichen dreißig Euro völlig aus. Mehr sollten die Kinder nicht mitnehmen. [pause] Ja, das dürfen sie. Aber wir sammeln die Handys ein und geben sie nur abends zwischen achtzehn und neunzehn Uhr heraus. [pause] Letztes Jahr haben einige Schüler die halbe Nacht am Handy gespielt und waren am nächsten Tag todmüde. Das möchten wir nicht noch einmal erleben. [pause] Ich habe ein Diensthandy dabei, das Tag und Nacht eingeschaltet ist. Die Nummer steht auf dem Elternbrief, den Sie heute bekommen. [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

@@ -1,0 +1,54 @@
+{
+ "job": "h1_a217a_s2_02",
+ "set": "A2_17",
+ "who": "Jonas",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "i": 15,
+   "parts": [
+    "Dann frage ich meinen Mitbewohner Tim. Er ist stark und hilft bestimmt gern."
+   ]
+  },
+  {
+   "i": 17,
+   "parts": [
+    "Klar, meine Bohrmaschine bringe ich mit. Brauchst du noch Kartons? Ich habe vom letzten Umzug noch viele im Keller."
+   ]
+  },
+  {
+   "i": 19,
+   "parts": [
+    "Dann bringe ich sie dir am Freitagabend vorbei. Am Samstag hast du dafür keine Zeit mehr."
+   ]
+  },
+  {
+   "i": 21,
+   "parts": [
+    "Und was machst du mit dem alten Sofa? Nimmst du es mit?"
+   ]
+  },
+  {
+   "i": 23,
+   "parts": [
+    "Sehr gut, dann müssen wir es nicht tragen."
+   ]
+  },
+  {
+   "i": 26,
+   "parts": [
+    "Pizza ist immer gut. Für mich bitte ohne Fleisch."
+   ]
+  },
+  {
+   "i": 28,
+   "parts": [
+    "Bis Freitag, Mia. Tschüss!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Dann frage ich meinen Mitbewohner Tim. Er ist stark und hilft bestimmt gern. [pause] Klar, meine Bohrmaschine bringe ich mit. Brauchst du noch Kartons? Ich habe vom letzten Umzug noch viele im Keller. [pause] Dann bringe ich sie dir am Freitagabend vorbei. Am Samstag hast du dafür keine Zeit mehr. [pause] Und was machst du mit dem alten Sofa? Nimmst du es mit? [pause] Sehr gut, dann müssen wir es nicht tragen. [pause] Pizza ist immer gut. Für mich bitte ohne Fleisch. [pause] Bis Freitag, Mia. Tschüss! [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

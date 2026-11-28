@@ -1,0 +1,48 @@
+{
+ "job": "h1_a219a_s1_02",
+ "set": "A2_19",
+ "who": "Frau Lindner",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "i": 14,
+   "parts": [
+    "Gar nicht. Frau Rossi, die Kursleiterin, kocht an jedem Abend auch ein Gericht ohne Fleisch. Sagen Sie es ihr einfach am ersten Abend."
+   ]
+  },
+  {
+   "i": 16,
+   "parts": [
+    "Ja, im Moment sind noch drei Plätze frei. Ich melde Sie also beide an. Wie heißt Ihre Frau?"
+   ]
+  },
+  {
+   "i": 18,
+   "parts": [
+    "Danke. Und wie möchten Sie bezahlen, mit Karte im Internet oder per Überweisung?"
+   ]
+  },
+  {
+   "i": 20,
+   "parts": [
+    "Gut. Dann schicke ich Ihnen heute noch eine E-Mail mit der Rechnung. Bitte überweisen Sie das Geld innerhalb von einer Woche, sonst bekommt jemand anderes die Plätze."
+   ]
+  },
+  {
+   "i": 22,
+   "parts": [
+    "Bis eine Woche vor dem ersten Abend können Sie kostenlos absagen. Danach bekommen Sie das Geld leider nicht mehr zurück."
+   ]
+  },
+  {
+   "i": 24,
+   "parts": [
+    "Gern geschehen. Viel Spaß beim Kochen, Herr Weber!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gar nicht. Frau Rossi, die Kursleiterin, kocht an jedem Abend auch ein Gericht ohne Fleisch. Sagen Sie es ihr einfach am ersten Abend. [pause] Ja, im Moment sind noch drei Plätze frei. Ich melde Sie also beide an. Wie heißt Ihre Frau? [pause] Danke. Und wie möchten Sie bezahlen, mit Karte im Internet oder per Überweisung? [pause] Gut. Dann schicke ich Ihnen heute noch eine E-Mail mit der Rechnung. Bitte überweisen Sie das Geld innerhalb von einer Woche, sonst bekommt jemand anderes die Plätze. [pause] Bis eine Woche vor dem ersten Abend können Sie kostenlos absagen. Danach bekommen Sie das Geld leider nicht mehr zurück. [pause] Gern geschehen. Viel Spaß beim Kochen, Herr Weber! [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

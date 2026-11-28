@@ -1,0 +1,48 @@
+{
+ "job": "h1_a219a_s2_02",
+ "set": "A2_19",
+ "who": "Herr Weber",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "i": 13,
+   "parts": [
+    "Ich habe noch eine Frage. Ich esse kein Fleisch. Ist das ein Problem?"
+   ]
+  },
+  {
+   "i": 15,
+   "parts": [
+    "Wunderbar. Meine Frau möchte auch gern mitkommen. Gibt es noch zwei freie Plätze?"
+   ]
+  },
+  {
+   "i": 17,
+   "parts": [
+    "Sie heißt Anna Weber."
+   ]
+  },
+  {
+   "i": 19,
+   "parts": [
+    "Lieber per Überweisung."
+   ]
+  },
+  {
+   "i": 21,
+   "parts": [
+    "Das mache ich gleich morgen. Und wenn wir doch nicht kommen können?"
+   ]
+  },
+  {
+   "i": 23,
+   "parts": [
+    "Verstanden. Vielen Dank für Ihre Hilfe, Frau Lindner."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich habe noch eine Frage. Ich esse kein Fleisch. Ist das ein Problem? [pause] Wunderbar. Meine Frau möchte auch gern mitkommen. Gibt es noch zwei freie Plätze? [pause] Sie heißt Anna Weber. [pause] Lieber per Überweisung. [pause] Das mache ich gleich morgen. Und wenn wir doch nicht kommen können? [pause] Verstanden. Vielen Dank für Ihre Hilfe, Frau Lindner. [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

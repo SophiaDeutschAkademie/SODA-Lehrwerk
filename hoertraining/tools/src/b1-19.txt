@@ -1,0 +1,300 @@
+@set B1_19
+@titel Klassenfahrt
+@art 설명회
+@id b1-19-a-klassenfahrt
+@datei b1-19-a
+@thema Elternabend zur Klassenfahrt | 수학여행 학부모 설명회
+@lage Sie hören Informationen auf einem Elternabend. Der Klassenlehrer spricht über die Klassenfahrt.
+@form 3지선다
+@plays 2
+@prep 60
+@stimme Herr Krüger = Ben | #4A7FB5
+@stimme Mutter = Ela | #C54B4B
+@stimme Vater = Andrew | #3A7D44
+
+[text]
+Herr Krüger: Guten Abend, liebe Eltern. Schön, dass heute so viele von Ihnen gekommen sind. Wir sprechen über die Klassenfahrt der Klasse acht b. | 안녕하세요, 학부모 여러분. 오늘 이렇게 많이 와 주셔서 기쁩니다. 팔 학년 비 반의 수학여행에 대해 말씀드리겠습니다.
+Herr Krüger: Wir fahren vom achten bis zum zwölften Juni an die Ostsee, also von Montag bis Freitag. | 유월 팔일부터 십이일까지, 그러니까 월요일부터 금요일까지 발트해로 갑니다.
+Herr Krüger: Dieses Jahr fahren wir mit der Bahn. Der Bus ist leider zu teuer geworden. | 올해는 기차로 갑니다. 버스는 아쉽게도 너무 비싸졌습니다.
+Herr Krüger: Wir treffen uns am Montag um Viertel nach sieben am Hauptbahnhof, direkt vor dem Blumenladen. Der Zug fährt um sieben Uhr zweiundvierzig ab, bitte seien Sie pünktlich. | 월요일 일곱 시 십오 분에 중앙역, 꽃집 바로 앞에서 모입니다. 기차는 일곱 시 사십이 분에 출발하니 시간을 꼭 지켜 주십시오.
+Herr Krüger: Am Freitag sind wir gegen siebzehn Uhr wieder zurück. | 금요일에는 열일곱 시쯤 다시 돌아옵니다.
++0.8 Herr Krüger: Wir wohnen in einer Jugendherberge direkt am Strand. Die Schülerinnen und Schüler schlafen in Vierbettzimmern. | 바닷가 바로 옆 유스호스텔에서 지냅니다. 학생들은 사인실에서 잡니다.
+Herr Krüger: Jedes Kind darf zwei Namen auf einen Zettel schreiben, mit wem es gern im Zimmer wäre. Entscheiden werden aber wir Lehrer. | 아이마다 누구와 같은 방을 쓰고 싶은지 이름 두 개를 쪽지에 적어 낼 수 있습니다. 하지만 결정은 저희 교사가 합니다.
++0.8 Herr Krüger: Nun zum Programm. Am Dienstag machen wir eine Radtour zum Leuchtturm. Am Mittwoch besuchen wir das Meeresmuseum, und am Donnerstag wandern wir an der Küste entlang. | 이제 일정입니다. 화요일에는 자전거로 등대까지 갑니다. 수요일에는 해양 박물관에 가고, 목요일에는 해안을 따라 걷습니다.
+Herr Krüger: Am letzten Abend grillen wir zusammen am Strand. | 마지막 날 저녁에는 바닷가에서 함께 바비큐를 합니다.
++0.8 Herr Krüger: Die Fahrt kostet zweihundertfünfundachtzig Euro pro Kind. In diesem Preis sind die Bahnfahrt, die Unterkunft, das Essen und alle Eintritte enthalten. | 여행 비용은 아이 한 명당 이백팔십오 유로입니다. 이 금액에 기차 요금, 숙박, 식사, 모든 입장료가 들어 있습니다.
+Herr Krüger: Bitte überweisen Sie das Geld bis zum dreißigsten April auf das Klassenkonto. | 돈은 사월 삼십일까지 학급 계좌로 보내 주십시오.
+Herr Krüger: Wenn das für Ihre Familie schwierig ist, sprechen Sie mich bitte an. Der Förderverein der Schule kann einen Teil der Kosten übernehmen, und niemand in der Klasse erfährt davon. | 가정 형편상 어려우시면 저에게 말씀해 주십시오. 학교 후원회가 비용의 일부를 대 줄 수 있고, 반에서는 아무도 그 사실을 알지 못합니다.
+Herr Krüger: Als Taschengeld reichen dreißig Euro völlig aus. Mehr sollten die Kinder nicht mitnehmen. | 용돈은 삼십 유로면 충분합니다. 아이들이 그보다 많이 가져가지 않는 것이 좋습니다.
+Mutter: Darf ich kurz etwas fragen? Dürfen die Kinder ihre Handys mitnehmen? | 잠깐 여쭤봐도 될까요? 아이들이 휴대폰을 가져가도 되나요?
+Herr Krüger: Ja, das dürfen sie. Aber wir sammeln die Handys ein und geben sie nur abends zwischen achtzehn und neunzehn Uhr heraus. | 네, 가져가도 됩니다. 하지만 휴대폰은 저희가 걷어 두었다가 저녁 열여덟 시에서 열아홉 시 사이에만 내줍니다.
+Herr Krüger: Letztes Jahr haben einige Schüler die halbe Nacht am Handy gespielt und waren am nächsten Tag todmüde. Das möchten wir nicht noch einmal erleben. | 작년에 몇몇 학생이 밤늦도록 휴대폰으로 게임을 하다가 다음 날 몹시 피곤해했습니다. 그런 일을 다시 겪고 싶지 않습니다.
+Mutter: Und wie erreichen wir Sie im Notfall? | 그럼 급한 일이 생기면 선생님께 어떻게 연락하나요?
+Herr Krüger: Ich habe ein Diensthandy dabei, das Tag und Nacht eingeschaltet ist. Die Nummer steht auf dem Elternbrief, den Sie heute bekommen. | 제가 업무용 휴대폰을 가져가는데, 밤낮으로 켜 둡니다. 번호는 오늘 받으시는 가정통신문에 적혀 있습니다.
+Vater: Was passiert eigentlich, wenn ein Kind krank wird? | 그런데 아이가 아프면 어떻게 되나요?
+Herr Krüger: Dann rufen wir Sie sofort an. Abholen müssen Sie Ihr Kind aber nur, wenn der Arzt das für nötig hält. | 그러면 바로 전화를 드립니다. 하지만 아이를 데리러 오셔야 하는 것은 의사가 필요하다고 볼 때뿐입니다.
+Herr Krüger: Wichtig ist deshalb das Formular zur Gesundheit. Bitte schreiben Sie dort auf, ob Ihr Kind Medikamente nimmt oder eine Allergie hat, und geben Sie es bis nächsten Freitag ab. | 그래서 건강 관련 서류가 중요합니다. 아이가 약을 먹는지, 알레르기가 있는지 거기에 적어서 다음 주 금요일까지 내 주십시오.
+Vater: Und was sollen die Kinder einpacken? | 그리고 아이들은 무엇을 챙겨야 하나요?
+Herr Krüger: Eine Regenjacke, feste Schuhe, Badesachen und die Versichertenkarte. Bettwäsche brauchen sie nicht mitzubringen, die bekommen sie in der Jugendherberge. | 비옷, 튼튼한 신발, 수영 용품, 그리고 건강 보험 카드입니다. 침구는 가져올 필요가 없고 유스호스텔에서 받습니다.
++0.8 Herr Krüger: Zum Schluss noch eine Bitte. Außer mir fährt Frau Yilmaz mit, unsere Sportlehrerin. Wir suchen aber noch eine Mutter oder einen Vater als dritte Begleitperson. | 마지막으로 부탁이 하나 있습니다. 저 말고 체육 교사인 일마즈 선생님이 함께 갑니다. 하지만 세 번째 인솔자로 어머니나 아버지 한 분을 더 찾고 있습니다.
+Herr Krüger: Wer Zeit und Lust hat, meldet sich bitte nach dem Elternabend bei mir. Vielen Dank für Ihre Aufmerksamkeit. | 시간과 마음이 있으신 분은 설명회가 끝난 뒤 저에게 말씀해 주십시오. 들어 주셔서 감사합니다.
+
+[woerter]
+die Klassenfahrt | 수학여행
+der Elternabend | 학부모 모임
+die Jugendherberge | 유스호스텔
+der Leuchtturm | 등대
+die Küste | 해안
+der Eintritt | 입장, 입장료
+überweisen | 송금하다
+der Förderverein | 후원회
+das Taschengeld | 용돈
+ein|sammeln | 걷다, 모으다
+der Notfall | 비상시, 급한 일
+die Versichertenkarte | 건강 보험 카드
+die Bettwäsche | 침구
+die Begleitperson | 인솔자
+
+[saetze]
+Der Bus ist leider zu teuer geworden. | 버스는 아쉽게도 너무 비싸졌습니다.
+Entscheiden werden aber wir Lehrer. | 하지만 결정은 저희 교사가 합니다.
+Bitte überweisen Sie das Geld bis zum dreißigsten April auf das Klassenkonto. | 돈은 사월 삼십일까지 학급 계좌로 보내 주십시오.
+Wenn das für Ihre Familie schwierig ist, sprechen Sie mich bitte an. | 가정 형편상 어려우시면 저에게 말씀해 주십시오.
+Abholen müssen Sie Ihr Kind aber nur, wenn der Arzt das für nötig hält. | 하지만 아이를 데리러 오셔야 하는 것은 의사가 필요하다고 볼 때뿐입니다.
+Bettwäsche brauchen sie nicht mitzubringen. | 침구는 가져올 필요가 없습니다.
+
+[vokabeln]
+Guten | 좋은 (gut) — Guten Abend = 안녕하세요 (저녁 인사)
+Abend | 저녁 (der Abend)
+liebe | 친애하는 (lieb) — liebe Eltern = 학부모 여러분
+Eltern | 부모 (die Eltern, 복수)
+Schön | 좋은, 기쁜 (schön) — Schön, dass … = ~해서 기쁩니다
+gekommen | 왔다 (kommen의 과거분사)
+sprechen | 말하다 — sprechen über = ~에 대해 이야기하다 · sprechen Sie mich an = 저에게 말씀해 주세요 (an|sprechen)
+Klassenfahrt | 수학여행 (die Klassenfahrt)
+Klasse | 반, 학급 (die Klasse)
+b | 비 (반 이름) — die Klasse acht b = 팔 학년 비 반
+fahren | (타고) 가다
+achten | 여덟 번째의, 팔일 (acht-)
+zwölften | 열두 번째의, 십이일 (zwölft-)
+Ostsee | 발트해 (die Ostsee)
+Jahr | 해, 년 (das Jahr) — dieses Jahr = 올해 · letztes Jahr = 작년
+Bahn | 기차, 철도 (die Bahn)
+Bus | 버스 (der Bus)
+teuer | 비싼
+geworden | ~해졌다 (werden의 과거분사)
+treffen | 만나다 (sich treffen) — Wir treffen uns = 우리는 모입니다
+Viertel | 사분의 일, 십오 분 (das Viertel) — Viertel nach sieben = 일곱 시 십오 분
+Hauptbahnhof | 중앙역 (der Hauptbahnhof)
+direkt | 바로
+Blumenladen | 꽃집 (der Blumenladen)
+Zug | 기차 (der Zug)
+fährt | (타고) 가다 (fahren) — fährt … ab = 출발하다 (ab|fahren) · fährt … mit = 함께 가다 (mit|fahren)
+ab | (분리 동사의 앞부분) — fährt … ab = 출발하다 (ab|fahren) · geben Sie es ab = 내 주세요 (ab|geben)
+zweiundvierzig | 42, 사십이
+seien | ~이다 (sein의 명령형) — seien Sie pünktlich = 시간을 지켜 주세요
+pünktlich | 시간을 지키는
+zurück | 돌아온, 다시
+wohnen | 살다, 묵다
+Jugendherberge | 유스호스텔 (die Jugendherberge)
+Strand | 바닷가, 해변 (der Strand)
+Schülerinnen | 여학생 (die Schülerin, 복수 Schülerinnen)
+Schüler | 학생 (der Schüler, 복수 Schüler)
+schlafen | 자다
+Vierbettzimmern | 사인실 (das Vierbettzimmer, 복수 Vierbettzimmer)
+Kind | 아이 (das Kind)
+Namen | 이름 (der Name, 복수 Namen)
+auf | ~ 위에, ~에 · (분리 동사의 앞부분) schreiben Sie dort auf = 거기에 적어 주세요 (auf|schreiben)
+Zettel | 쪽지 (der Zettel)
+schreiben | 쓰다 — schreiben Sie dort auf = 거기에 적어 주세요 (auf|schreiben)
+mit | ~와 함께, ~을 타고 · (분리 동사의 앞부분) fährt … mit = 함께 가다 (mit|fahren)
+wem | 누구에게 (wer의 3격) — mit wem = 누구와
+Zimmer | 방 (das Zimmer)
+Entscheiden | 결정하다 (entscheiden)
+Lehrer | 교사 (der Lehrer, 복수 Lehrer)
+Nun | 이제 (nun)
+Programm | 일정, 프로그램 (das Programm)
+machen | 하다
+Radtour | 자전거 여행 (die Radtour)
+Leuchtturm | 등대 (der Leuchtturm)
+besuchen | 방문하다
+Meeresmuseum | 해양 박물관 (das Meeresmuseum)
+wandern | 걷다, 하이킹하다
+an | ~에, ~로 · (분리 동사의 앞부분) sprechen Sie mich an = 저에게 말씀해 주세요 (an|sprechen) · rufen … an = 전화하다 (an|rufen)
+Küste | 해안 (die Küste)
+entlang | ~을 따라 — an der Küste entlang = 해안을 따라
+letzten | 마지막의 (letzt-)
+grillen | 바비큐를 하다, 굽다
+Fahrt | 여행, 타고 가는 길 (die Fahrt)
+kostet | 값이 ~이다 (kosten)
+zweihundertfünfundachtzig | 285, 이백팔십오
+Preis | 가격 (der Preis)
+Bahnfahrt | 기차 여행, 기차 요금 (die Bahnfahrt)
+Unterkunft | 숙소, 숙박 (die Unterkunft)
+Essen | 식사, 음식 (das Essen)
+Eintritte | 입장료 (der Eintritt, 복수 Eintritte)
+enthalten | 포함된 — im Preis enthalten = 가격에 들어 있는
+Bitte | 부디, ~해 주세요 (bitte) · 부탁 (die Bitte) — noch eine Bitte = 부탁이 하나 더 있습니다
+überweisen | 송금하다
+Geld | 돈 (das Geld)
+dreißigsten | 서른 번째의, 삼십일 (dreißigst-)
+Klassenkonto | 학급 계좌 (das Klassenkonto)
+Familie | 가족, 가정 (die Familie)
+schwierig | 어려운
+Förderverein | 후원회 (der Förderverein)
+Schule | 학교 (die Schule)
+Teil | 부분, 일부 (der Teil)
+Kosten | 비용 (die Kosten, 복수)
+übernehmen | 떠맡다, 대신 내다
+erfährt | 알게 되다 (erfahren)
+davon | 그것에 대해
+Taschengeld | 용돈 (das Taschengeld)
+reichen | 충분하다 (aus|reichen) — dreißig Euro reichen aus = 삼십 유로면 충분하다
+völlig | 완전히
+aus | (aus|reichen의 앞부분) — reichen … aus = 충분하다
+Kinder | 아이들 (das Kind, 복수 Kinder)
+mitnehmen | 가져가다 (mit|nehmen)
+kurz | 잠깐, 짧게
+fragen | 묻다
+Handys | 휴대폰 (das Handy, 복수 Handys)
+sammeln | 모으다, 걷다 (ein|sammeln) — wir sammeln die Handys ein = 휴대폰을 걷습니다
+ein | 하나의 · (분리 동사의 앞부분) sammeln … ein = 걷다 (ein|sammeln)
+geben | 주다 — geben … heraus = 내주다 (heraus|geben) · geben Sie es ab = 내 주세요 (ab|geben)
+abends | 저녁에
+heraus | 밖으로 (heraus|geben의 앞부분) — geben … heraus = 내주다
+Letztes | 지난 (letzt-) — letztes Jahr = 작년
+halbe | 절반의 (halb) — die halbe Nacht = 밤늦도록, 밤의 절반
+Nacht | 밤 (die Nacht)
+Handy | 휴대폰 (das Handy)
+gespielt | 놀았다, 게임을 했다 (spielen의 과거분사)
+nächsten | 다음의 (nächst-) — am nächsten Tag = 다음 날 · bis nächsten Freitag = 다음 주 금요일까지
+Tag | 날, 낮 (der Tag) — Tag und Nacht = 밤낮으로
+todmüde | 몹시 피곤한
+erleben | 겪다
+erreichen | 연락이 닿다, 도달하다
+Notfall | 비상시, 급한 일 (der Notfall) — im Notfall = 급한 일이 생기면
+Diensthandy | 업무용 휴대폰 (das Diensthandy)
+dabei | 가지고 있는 — Ich habe ein Diensthandy dabei = 업무용 휴대폰을 가지고 갑니다 (dabei|haben)
+eingeschaltet | 켜진 (ein|schalten의 과거분사)
+Nummer | 번호 (die Nummer)
+steht | 서 있다, 적혀 있다 (stehen)
+Elternbrief | 가정통신문 (der Elternbrief)
+bekommen | 받다
+passiert | 일어나다 (passieren) — Was passiert, wenn …? = ~하면 어떻게 되나요?
+krank | 아픈 — krank werden = 아프게 되다
+rufen | 부르다 (an|rufen) — Wir rufen Sie an = 전화를 드립니다
+Abholen | 데리러 오다 (ab|holen)
+Arzt | 의사 (der Arzt)
+nötig | 필요한 — für nötig halten = 필요하다고 보다
+hält | 여기다, 잡다 (halten) — für nötig halten = 필요하다고 보다
+Wichtig | 중요한 (wichtig)
+Formular | 서류, 양식 (das Formular)
+Gesundheit | 건강 (die Gesundheit)
+Medikamente | 약 (das Medikament, 복수 Medikamente)
+nimmt | 먹다, 복용하다 (nehmen)
+Allergie | 알레르기 (die Allergie)
+einpacken | 짐을 싸다, 챙기다 (ein|packen)
+Regenjacke | 비옷 (die Regenjacke)
+feste | 튼튼한 (fest) — feste Schuhe = 튼튼한 신발
+Schuhe | 신발 (der Schuh, 복수 Schuhe)
+Badesachen | 수영 용품 (die Badesachen, 복수)
+Versichertenkarte | 건강 보험 카드 (die Versichertenkarte)
+Bettwäsche | 침구 (die Bettwäsche)
+brauchen | 필요하다 — brauchen nicht … zu = ~할 필요가 없다
+mitzubringen | 가져오다 (mit|bringen의 zu 부정형)
+Schluss | 끝 (der Schluss) — zum Schluss = 마지막으로
+Außer | ~ 말고, ~ 외에 (außer)
+Yilmaz | 일마즈 (성)
+Sportlehrerin | 체육 교사 (die Sportlehrerin)
+suchen | 찾다
+Mutter | 어머니 (die Mutter)
+Vater | 아버지 (der Vater)
+dritte | 세 번째의 (dritt-)
+Begleitperson | 인솔자, 동행하는 사람 (die Begleitperson)
+Zeit | 시간 (die Zeit)
+Lust | 하고 싶은 마음 (die Lust) — Lust haben = ~하고 싶다
+meldet | 연락하다, 알리다 (sich melden) — meldet sich bei mir = 저에게 말씀해 주세요
+Elternabend | 학부모 모임 (der Elternabend)
+Dank | 감사 (der Dank) — Vielen Dank = 감사합니다
+Aufmerksamkeit | 주의, 경청 (die Aufmerksamkeit) — Vielen Dank für Ihre Aufmerksamkeit = 들어 주셔서 감사합니다
+
+[fragen]
+1 | Wie kommt die Klasse an die Ostsee? | 반은 발트해까지 무엇을 타고 가는가?
+- mit dem Bus | 버스
+* mit dem Zug | 기차
+- mit dem Schiff | 배
+> Dieses Jahr fahren wir mit der Bahn.
+! 올해는 기차(Bahn)로 간다고 했습니다. 버스는 너무 비싸져서(zu teuer geworden) 타지 않습니다.
+~ paraphrase
+
+2 | Wann sollen die Schüler am Montag am Bahnhof sein? | 월요일에 학생들은 몇 시에 역에 있어야 하는가?
+* um Viertel nach sieben | 일곱 시 십오 분
+- um sieben Uhr zweiundvierzig | 일곱 시 사십이 분
+- um Viertel vor acht | 일곱 시 사십오 분
+> Wir treffen uns am Montag um Viertel nach sieben am Hauptbahnhof
+! 모이는 시각은 일곱 시 십오 분(Viertel nach sieben)입니다. 일곱 시 사십이 분은 기차가 출발하는 시각입니다.
+~ number
+
+3 | Wer entscheidet, welche Kinder zusammen in einem Zimmer schlafen? | 어느 아이들이 같은 방을 쓸지 누가 정하는가?
+- die Kinder selbst | 아이들 스스로
+- die Jugendherberge | 유스호스텔
+* die Lehrer | 교사들
+> Entscheiden werden aber wir Lehrer.
+! 아이들은 같은 방을 쓰고 싶은 친구 이름 두 개를 적어 낼 수 있지만, 결정은 교사가 한다(Entscheiden werden wir Lehrer)고 했습니다.
+~ context
+
+4 | Was macht die Klasse am Mittwoch? | 수요일에 반은 무엇을 하는가?
+- Sie fährt mit dem Rad zum Leuchtturm. | 자전거로 등대까지 간다.
+* Sie geht in ein Museum. | 박물관에 간다.
+- Sie wandert an der Küste. | 해안을 걷는다.
+> Am Mittwoch besuchen wir das Meeresmuseum
+! 화요일은 등대까지 자전거 타기, 수요일은 해양 박물관, 목요일은 해안 걷기입니다. 세 가지가 모두 들리므로 요일을 잘 들어야 합니다.
+~ context
+
+5 | Was ist im Preis nicht enthalten? | 여행 비용에 들어 있지 않은 것은 무엇인가?
+- das Essen | 식사
+- die Eintritte | 입장료
+* das Taschengeld | 용돈
+> In diesem Preis sind die Bahnfahrt, die Unterkunft, das Essen und alle Eintritte enthalten.
+! 기차 요금, 숙박, 식사, 입장료는 모두 이백팔십오 유로에 들어 있습니다. 용돈(삼십 유로)은 아이가 따로 가져가는 돈입니다.
+~ context
+
+6 | Was sollen Eltern tun, wenn die Fahrt für sie zu teuer ist? | 여행 비용이 부담되는 부모는 어떻게 해야 하는가?
+* Sie sollen mit Herrn Krüger sprechen. | 크뤼거 선생님과 이야기한다.
+- Sie sollen das Geld später überweisen. | 돈을 나중에 보낸다.
+- Sie sollen dem Förderverein schreiben. | 후원회에 편지를 쓴다.
+> Wenn das für Ihre Familie schwierig ist, sprechen Sie mich bitte an.
+! 어려우면 자신에게 말해 달라(sprechen Sie mich an)고 했습니다. 후원회가 비용의 일부를 대 주지만, 부모가 연락할 사람은 선생님입니다.
+~ paraphrase
+
+7 | Was gilt auf der Klassenfahrt für die Handys? | 수학여행에서 휴대폰은 어떻게 하는가?
+- Die Kinder müssen sie zu Hause lassen. | 집에 두고 와야 한다.
+* Die Kinder bekommen sie nur eine Stunde am Abend. | 저녁에 한 시간만 받는다.
+- Die Kinder dürfen sie nur im Notfall benutzen. | 급한 일이 있을 때만 쓸 수 있다.
+> Aber wir sammeln die Handys ein und geben sie nur abends zwischen achtzehn und neunzehn Uhr heraus.
+! 휴대폰은 가져가도 되지만 교사가 걷어 두었다가(einsammeln) 저녁 열여덟 시에서 열아홉 시 사이, 곧 한 시간만 내줍니다.
+~ paraphrase
+
+8 | Warum gibt es diese Regel für die Handys? | 이 휴대폰 규칙은 왜 생겼는가?
+- Weil letztes Jahr ein Handy verloren gegangen ist. | 작년에 휴대폰 한 대를 잃어버려서
+- Weil die Eltern sich das gewünscht haben. | 부모들이 그렇게 원해서
+* Weil letztes Jahr einige Schüler nachts zu lange gespielt haben. | 작년에 몇몇 학생이 밤에 너무 오래 게임을 해서
+> Letztes Jahr haben einige Schüler die halbe Nacht am Handy gespielt und waren am nächsten Tag todmüde.
+! 작년에 몇몇 학생이 밤늦도록(die halbe Nacht) 휴대폰으로 게임을 하고 다음 날 몹시 피곤해했다(todmüde)고 했습니다.
+~ context
+
+9 | Was passiert, wenn ein Kind auf der Fahrt krank wird? | 여행 중에 아이가 아프면 어떻게 되는가?
+* Die Eltern werden sofort angerufen. | 부모에게 바로 전화한다.
+- Die Eltern müssen das Kind auf jeden Fall abholen. | 부모가 반드시 아이를 데리러 와야 한다.
+- Frau Yilmaz fährt mit dem Kind nach Hause. | 일마즈 선생님이 아이와 집으로 간다.
+> Dann rufen wir Sie sofort an.
+! 바로 전화한다(rufen wir Sie sofort an)고 했습니다. 데리러 와야 하는 것은 의사가 필요하다고 볼 때뿐(nur, wenn)이므로 반드시(auf jeden Fall)는 아닙니다.
+~ wording
+
+10 | Was brauchen die Kinder nicht einzupacken? | 아이들이 챙기지 않아도 되는 것은 무엇인가?
+- Badesachen | 수영 용품
+* Bettwäsche | 침구
+- die Versichertenkarte | 건강 보험 카드
+> Bettwäsche brauchen sie nicht mitzubringen
+! 침구는 가져올 필요가 없고(brauchen nicht mitzubringen) 유스호스텔에서 받는다고 했습니다. 수영 용품과 건강 보험 카드는 챙길 물건입니다.
+~ negation

@@ -1,0 +1,42 @@
+{
+ "job": "h1_a218a_s1_03",
+ "set": "A2_18",
+ "who": "Frau Brandt",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "i": 12,
+   "parts": [
+    "Hinter der Brücke machen wir eine Pause von fünfzehn Minuten im Café Rosengarten. Der Apfelkuchen dort ist in der ganzen Region bekannt. Im Café finden Sie auch Toiletten."
+   ]
+  },
+  {
+   "i": 13,
+   "parts": [
+    "Nach der Pause besuchen wir das Stadtmuseum. Das Gebäude war früher eine Schule. Heute ist der Eintritt frei, weil das Museum Geburtstag feiert."
+   ]
+  },
+  {
+   "i": 14,
+   "parts": [
+    "Unsere Führung endet um zwölf Uhr wieder hier am Rathaus. Wenn Sie danach Hunger haben, empfehle ich Ihnen das Gasthaus Zum Löwen in der Bahnhofstraße."
+   ]
+  },
+  {
+   "i": 15,
+   "parts": [
+    "Dort bekommen Sie mit Ihrer Eintrittskarte von der Führung ein Getränk gratis."
+   ]
+  },
+  {
+   "i": 16,
+   "parts": [
+    "Haben Sie noch Fragen? Nein? Dann gehen wir los!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hinter der Brücke machen wir eine Pause von fünfzehn Minuten im Café Rosengarten. Der Apfelkuchen dort ist in der ganzen Region bekannt. Im Café finden Sie auch Toiletten. [pause] Nach der Pause besuchen wir das Stadtmuseum. Das Gebäude war früher eine Schule. Heute ist der Eintritt frei, weil das Museum Geburtstag feiert. [pause] Unsere Führung endet um zwölf Uhr wieder hier am Rathaus. Wenn Sie danach Hunger haben, empfehle ich Ihnen das Gasthaus Zum Löwen in der Bahnhofstraße. [pause] Dort bekommen Sie mit Ihrer Eintrittskarte von der Führung ein Getränk gratis. [pause] Haben Sie noch Fragen? Nein? Dann gehen wir los! [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

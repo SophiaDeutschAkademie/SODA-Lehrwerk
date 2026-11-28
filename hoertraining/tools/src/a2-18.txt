@@ -1,0 +1,228 @@
+@set A2_18
+@titel Stadtführung
+@art 도시 안내
+@id a2-18-a-stadtfuehrung
+@datei a2-18-a
+@thema Eine Führung durch die Altstadt | 구시가지 안내
+@lage Sie machen eine Stadtführung und hören die Stadtführerin.
+@form richtig / falsch
+@plays 2
+@prep 45
+@stimme Frau Brandt = Bettina | #C54B4B
+
+[text]
+Frau Brandt: Guten Morgen und herzlich willkommen in Rosenbach! Mein Name ist Karin Brandt, und ich zeige Ihnen heute unsere Altstadt. | 안녕하세요, 로젠바흐에 오신 것을 환영합니다! 제 이름은 카린 브란트이고, 오늘 여러분께 우리 구시가지를 보여 드리겠습니다.
+Frau Brandt: Die Führung dauert ungefähr neunzig Minuten. Wir gehen nur zu Fuß, aber keine Angst, der Weg ist nicht lang, nur zwei Kilometer. | 안내는 구십 분쯤 걸립니다. 걸어서만 다니지만 걱정하지 마세요, 길은 길지 않아서 이 킬로미터밖에 안 됩니다.
+Frau Brandt: Bitte bleiben Sie immer bei der Gruppe. Fotos dürfen Sie natürlich machen. Nur in der Kirche bitte ohne Blitz. | 항상 일행과 함께 계셔 주세요. 사진은 물론 찍으셔도 됩니다. 다만 교회 안에서는 플래시 없이 찍어 주세요.
++0.9 Frau Brandt: Wir stehen hier vor dem Rathaus. Es ist dreihundert Jahre alt und das schönste Haus am Marktplatz. Der Bürgermeister arbeitet noch heute in diesem Haus. | 우리는 지금 시청 앞에 서 있습니다. 이 건물은 삼백 년이 되었고 시장 광장에서 가장 아름다운 집입니다. 시장님은 지금도 이 건물에서 일합니다.
+Frau Brandt: Auf dem Marktplatz gibt es zweimal in der Woche einen Markt, am Mittwoch und am Samstag. Dann können Sie hier von sieben bis dreizehn Uhr Obst, Gemüse und Blumen kaufen. | 시장 광장에서는 일주일에 두 번, 수요일과 토요일에 장이 섭니다. 그때는 여기서 일곱 시부터 열세 시까지 과일과 채소와 꽃을 살 수 있습니다.
+Frau Brandt: Heute ist Donnerstag, deshalb ist der Platz leider leer. | 오늘은 목요일이라서 아쉽게도 광장이 비어 있습니다.
++0.9 Frau Brandt: Jetzt gehen wir nach links zum Stadtturm. Der Turm ist vierzig Meter hoch und hat hundertachtzig Stufen. Von oben sieht man die ganze Stadt. | 이제 왼쪽으로 가서 시 탑으로 갑니다. 탑은 높이가 사십 미터이고 계단이 백팔십 칸 있습니다. 위에서는 도시 전체가 보입니다.
+Frau Brandt: Leider können wir heute nicht hinaufgehen. Die Treppe wird gerade repariert. Ab Mai ist der Turm wieder geöffnet. | 아쉽지만 오늘은 올라갈 수 없습니다. 지금 계단을 수리하고 있습니다. 오월부터 탑이 다시 열립니다.
+Frau Brandt: Neben dem Turm sehen Sie die Marienkirche. Sie ist die älteste Kirche der Stadt. Wir gehen kurz hinein, bitte sprechen Sie dort leise. | 탑 옆에 마리아 교회가 보입니다. 이 교회는 도시에서 가장 오래된 교회입니다. 잠깐 들어갈 텐데, 안에서는 조용히 말씀해 주세요.
++0.9 Frau Brandt: So, jetzt gehen wir weiter zur Alten Brücke. Früher sind hier Pferde und Wagen gefahren, heute ist die Brücke nur noch für Fußgänger und Radfahrer. | 자, 이제 옛 다리로 계속 갑니다. 예전에는 이곳으로 말과 수레가 다녔지만, 지금은 걷는 사람과 자전거 타는 사람만 다닐 수 있습니다.
+Frau Brandt: Von der Brücke sehen Sie oben auf dem Berg das Schloss. Es gehört nicht zu unserer Führung. Aber Sie können es am Wochenende besuchen. | 다리에서 보면 산 위에 성이 보입니다. 성은 우리 안내에 들어 있지 않습니다. 하지만 주말에 가 보실 수 있습니다.
+Frau Brandt: Der Eintritt kostet acht Euro, und Kinder unter zwölf Jahren zahlen nichts. | 입장료는 팔 유로이고, 열두 살 미만 어린이는 돈을 내지 않습니다.
++0.9 Frau Brandt: Hinter der Brücke machen wir eine Pause von fünfzehn Minuten im Café Rosengarten. Der Apfelkuchen dort ist in der ganzen Region bekannt. Im Café finden Sie auch Toiletten. | 다리 뒤쪽의 카페 로젠가르텐에서 십오 분 동안 쉽니다. 그곳의 사과 케이크는 이 지역 전체에 알려져 있습니다. 카페에는 화장실도 있습니다.
+Frau Brandt: Nach der Pause besuchen wir das Stadtmuseum. Das Gebäude war früher eine Schule. Heute ist der Eintritt frei, weil das Museum Geburtstag feiert. | 쉬고 나서는 시립 박물관에 갑니다. 그 건물은 예전에 학교였습니다. 오늘은 박물관이 생일을 맞아서 입장료가 무료입니다.
++0.9 Frau Brandt: Unsere Führung endet um zwölf Uhr wieder hier am Rathaus. Wenn Sie danach Hunger haben, empfehle ich Ihnen das Gasthaus Zum Löwen in der Bahnhofstraße. | 우리 안내는 열두 시에 다시 이곳 시청 앞에서 끝납니다. 그 뒤에 배가 고프시면 반호프 거리에 있는 식당 '춤 뢰벤'을 추천합니다.
+Frau Brandt: Dort bekommen Sie mit Ihrer Eintrittskarte von der Führung ein Getränk gratis. | 거기서는 안내 입장권을 보여 주면 음료 한 잔을 공짜로 받습니다.
+Frau Brandt: Haben Sie noch Fragen? Nein? Dann gehen wir los! | 더 궁금한 점 있으세요? 없으세요? 그럼 출발하겠습니다!
+
+[woerter]
+die Führung | 안내, 투어
+die Altstadt | 구시가지
+das Rathaus | 시청
+der Bürgermeister | 시장 (市長)
+der Marktplatz | 시장 광장
+der Turm | 탑
+die Stufe | 계단 한 칸
+reparieren | 수리하다
+die Brücke | 다리
+der Fußgänger | 걷는 사람, 보행자
+das Schloss | 성
+der Eintritt | 입장, 입장료
+die Pause | 휴식
+empfehlen | 추천하다
+
+[saetze]
+Die Führung dauert ungefähr neunzig Minuten. | 안내는 구십 분쯤 걸립니다.
+Bitte bleiben Sie immer bei der Gruppe. | 항상 일행과 함께 계셔 주세요.
+Leider können wir heute nicht hinaufgehen. | 아쉽지만 오늘은 올라갈 수 없습니다.
+Es gehört nicht zu unserer Führung. | 성은 우리 안내에 들어 있지 않습니다.
+Kinder unter zwölf Jahren zahlen nichts. | 열두 살 미만 어린이는 돈을 내지 않습니다.
+Haben Sie noch Fragen? | 더 궁금한 점 있으세요?
+
+[vokabeln]
+Guten | 좋은 (gut) — Guten Morgen = 안녕하세요 (아침 인사)
+Morgen | 아침 (der Morgen)
+herzlich | 진심으로 — herzlich willkommen = 진심으로 환영합니다
+willkommen | 환영받는, 환영합니다
+Rosenbach | 로젠바흐 (도시 이름)
+Name | 이름 (der Name)
+Karin | 카린 (여자 이름)
+Brandt | 브란트 (성)
+zeige | 보여 주다 (zeigen)
+Altstadt | 구시가지 (die Altstadt)
+Führung | 안내, 투어 (die Führung)
+dauert | (시간이) 걸리다 (dauern)
+neunzig | 90, 아흔
+Minuten | 분 (die Minute, 복수 Minuten)
+gehen | 가다, 걷다 — Wir gehen los = 출발합니다 (los|gehen)
+Fuß | 발 (der Fuß) — zu Fuß = 걸어서
+Angst | 두려움, 걱정 (die Angst) — keine Angst = 걱정하지 마세요
+Weg | 길 (der Weg)
+lang | 긴
+Kilometer | 킬로미터 (der Kilometer)
+bleiben | 머무르다, 있다 — bei der Gruppe bleiben = 일행과 함께 있다
+Gruppe | 일행, 그룹 (die Gruppe)
+Fotos | 사진 (das Foto, 복수 Fotos) — Fotos machen = 사진을 찍다
+machen | 하다, 만들다 — eine Pause machen = 쉬다
+Kirche | 교회 (die Kirche)
+Blitz | 플래시 (der Blitz) — ohne Blitz = 플래시 없이
+stehen | 서 있다
+Rathaus | 시청 (das Rathaus)
+dreihundert | 300, 삼백
+Jahre, Jahren | 해, 년 (das Jahr, 복수 Jahre) — dreihundert Jahre alt = 삼백 년 된
+alt | 오래된, 나이 든
+schönste | 가장 아름다운 (schön의 최상급)
+Haus | 집, 건물 (das Haus)
+Marktplatz | 시장 광장 (der Marktplatz)
+Bürgermeister | 시장 (der Bürgermeister, 시의 대표)
+arbeitet | 일하다 (arbeiten)
+Woche | 주 (die Woche) — zweimal in der Woche = 일주일에 두 번
+Markt | 장, 시장 (der Markt)
+dreizehn | 13, 열셋
+Obst | 과일 (das Obst)
+Gemüse | 채소 (das Gemüse)
+Blumen | 꽃 (die Blume, 복수 Blumen)
+kaufen | 사다
+Platz | 광장, 자리 (der Platz)
+leer | 빈
+links | 왼쪽 — nach links = 왼쪽으로
+Stadtturm | 시 탑 (der Stadtturm)
+Turm | 탑 (der Turm)
+Meter | 미터 (der Meter)
+hoch | 높은
+hundertachtzig | 180, 백팔십
+Stufen | 계단 칸 (die Stufe, 복수 Stufen)
+oben | 위에 — von oben = 위에서
+sieht, sehen | 보다 (sehen)
+ganze, ganzen | 전체의 (ganz)
+Stadt | 도시 (die Stadt)
+hinaufgehen | 올라가다 (hinauf|gehen)
+Treppe | 계단 (die Treppe)
+repariert | 수리된 (reparieren의 과거분사) — wird repariert = 수리되고 있다
+geöffnet | 열린
+Marienkirche | 마리아 교회 (die Marienkirche)
+älteste | 가장 오래된 (alt의 최상급)
+kurz | 잠깐, 짧게
+hinein | 안으로 — Wir gehen hinein = 들어갑니다 (hinein|gehen)
+sprechen | 말하다
+leise | 조용히, 작은 소리로
+weiter | 계속, 더 — Wir gehen weiter = 계속 갑니다 (weiter|gehen)
+Alten | 오래된 (alt) — die Alte Brücke = 옛 다리 (다리 이름)
+Brücke | 다리 (die Brücke)
+Pferde | 말 (das Pferd, 복수 Pferde)
+Wagen | 수레, 마차 (der Wagen, 복수 Wagen)
+gefahren | (타고) 갔다, 다녔다 (fahren의 과거분사) — sind gefahren = 다녔다
+Fußgänger | 걷는 사람, 보행자 (der Fußgänger, 복수 Fußgänger)
+Radfahrer | 자전거 타는 사람 (der Radfahrer, 복수 Radfahrer)
+Berg | 산 (der Berg)
+Schloss | 성 (das Schloss)
+gehört | 속하다 (gehören) — zu etwas gehören = ~에 속하다, 들어 있다
+Wochenende | 주말 (das Wochenende)
+besuchen | 방문하다, 가 보다
+Eintritt | 입장, 입장료 (der Eintritt)
+kostet | 값이 ~이다 (kosten)
+Kinder | 아이들 (das Kind, 복수 Kinder)
+zahlen | 돈을 내다
+Pause | 휴식 (die Pause)
+Café | 카페 (das Café)
+Rosengarten | 로젠가르텐 (카페 이름, 장미 정원이라는 뜻)
+Apfelkuchen | 사과 케이크 (der Apfelkuchen)
+Region | 지역 (die Region)
+bekannt | 알려진, 유명한
+finden | 찾다, 발견하다 — Im Café finden Sie Toiletten = 카페에 화장실이 있습니다
+Toiletten | 화장실 (die Toilette, 복수 Toiletten)
+Stadtmuseum | 시립 박물관 (das Stadtmuseum)
+Gebäude | 건물 (das Gebäude)
+Schule | 학교 (die Schule)
+frei | 무료의 — Der Eintritt ist frei = 입장료가 무료이다
+Museum | 박물관 (das Museum)
+Geburtstag | 생일 (der Geburtstag) — Geburtstag feiern = 생일을 맞다, 생일잔치를 하다
+feiert | 축하하다, 잔치하다 (feiern)
+endet | 끝나다 (enden)
+Hunger | 배고픔 (der Hunger) — Hunger haben = 배가 고프다
+empfehle | 추천하다 (empfehlen)
+Gasthaus | 식당, 여관 (das Gasthaus)
+Löwen | 사자 (der Löwe) — Zum Löwen = 식당 이름 (사자 집)
+Bahnhofstraße | 반호프 거리 (die Bahnhofstraße, 역 앞길)
+bekommen | 받다
+Eintrittskarte | 입장권 (die Eintrittskarte)
+Getränk | 음료 (das Getränk)
+gratis | 공짜로
+Fragen | 질문 (die Frage, 복수 Fragen)
+los | 출발하여 — Wir gehen los = 출발합니다 (los|gehen)
+
+[fragen]
+1 | Die Führung dauert zwei Stunden. | 안내는 두 시간 걸린다
+= falsch
+> Die Führung dauert ungefähr neunzig Minuten.
+! 안내는 구십 분쯤(ungefähr neunzig Minuten), 곧 한 시간 반 걸립니다. zwei는 걷는 거리(zwei Kilometer)에서 나온 숫자입니다. → falsch
+~ number
+
+2 | In der Kirche sind Fotos verboten. | 교회 안에서는 사진을 찍으면 안 된다
+= falsch
+> Nur in der Kirche bitte ohne Blitz.
+! 사진은 찍어도 되고, 교회 안에서만 플래시 없이(ohne Blitz) 찍으라고 했습니다. 사진이 금지된 것은 아닙니다. → falsch
+~ negation
+
+3 | Der Bürgermeister hat sein Büro im Rathaus. | 시장의 사무실은 시청에 있다
+= richtig
+> Der Bürgermeister arbeitet noch heute in diesem Haus.
+! 시장이 지금도 이 건물(시청)에서 일한다고 했습니다 → 사무실(Büro)이 시청에 있습니다. → richtig
+~ paraphrase
+
+4 | Am Donnerstag kann man auf dem Marktplatz Obst kaufen. | 목요일에는 시장 광장에서 과일을 살 수 있다
+= falsch
+> Auf dem Marktplatz gibt es zweimal in der Woche einen Markt, am Mittwoch und am Samstag.
+> Heute ist Donnerstag, deshalb ist der Platz leider leer.
+! 장은 수요일과 토요일에만 섭니다. 목요일인 오늘은 광장이 비어 있습니다(leer). → falsch
+~ context
+
+5 | Die Gruppe steigt heute auf den Stadtturm. | 일행은 오늘 시 탑에 올라간다
+= falsch
+> Leider können wir heute nicht hinaufgehen.
+! 계단을 수리하고 있어서 오늘은 올라갈 수 없다(nicht hinaufgehen)고 했습니다. 탑은 오월부터 다시 열립니다. → falsch
+~ negation
+
+6 | Keine Kirche in Rosenbach ist so alt wie die Marienkirche. | 로젠바흐에는 마리아 교회만큼 오래된 교회가 없다
+= richtig
+> Sie ist die älteste Kirche der Stadt.
+! 마리아 교회가 도시에서 가장 오래된(die älteste) 교회라고 했습니다 → 이만큼 오래된 교회는 없습니다. → richtig
+~ paraphrase
+
+7 | Über die Alte Brücke fahren heute keine Autos. | 지금은 옛 다리로 자동차가 다니지 않는다
+= richtig
+> heute ist die Brücke nur noch für Fußgänger und Radfahrer
+! 지금 다리는 걷는 사람과 자전거 타는 사람만(nur noch) 다닐 수 있다고 했습니다 → 자동차는 다니지 않습니다. → richtig
+~ paraphrase
+
+8 | Bei dieser Führung besucht die Gruppe auch das Schloss. | 이번 안내에서는 성에도 간다
+= falsch
+> Es gehört nicht zu unserer Führung.
+! 성은 다리에서 보기만 하고, 안내에는 들어 있지 않다(gehört nicht zu unserer Führung)고 했습니다. 성은 주말에 따로 가 볼 수 있습니다. → falsch
+~ context
+
+9 | Ein Kind von zehn Jahren muss im Schloss keinen Eintritt zahlen. | 열 살 어린이는 성에서 입장료를 내지 않아도 된다
+= richtig
+> Der Eintritt kostet acht Euro, und Kinder unter zwölf Jahren zahlen nichts.
+! 열두 살 미만(unter zwölf Jahren) 어린이는 돈을 내지 않습니다. 열 살은 열두 살보다 어리므로 무료입니다. → richtig
+~ number
+
+10 | Wer an der Führung teilgenommen hat, bekommt im Gasthaus ein Getränk umsonst. | 안내에 참가한 사람은 식당에서 음료 한 잔을 공짜로 받는다
+= richtig
+> Dort bekommen Sie mit Ihrer Eintrittskarte von der Führung ein Getränk gratis.
+! 안내 입장권을 보여 주면 음료 한 잔을 공짜로(gratis) 받는다고 했습니다. gratis와 umsonst는 같은 뜻입니다. → richtig
+~ paraphrase

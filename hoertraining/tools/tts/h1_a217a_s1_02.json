@@ -1,0 +1,54 @@
+{
+ "job": "h1_a217a_s1_02",
+ "set": "A2_17",
+ "who": "Mia",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "i": 16,
+   "parts": [
+    "Das wäre super! Kannst du auch Werkzeug mitbringen? Ich muss noch zwei Lampen und ein Regal aufhängen, aber ich habe keine Bohrmaschine."
+   ]
+  },
+  {
+   "i": 18,
+   "parts": [
+    "Oh ja, bitte! Zwanzig Kartons habe ich schon gepackt, aber für die Bücher und das Geschirr brauche ich noch zehn."
+   ]
+  },
+  {
+   "i": 20,
+   "parts": [
+    "Danke, das ist lieb von dir."
+   ]
+  },
+  {
+   "i": 22,
+   "parts": [
+    "Nein, es ist zu groß für das neue Wohnzimmer. Ich wollte es im Internet verkaufen, aber niemand hat sich gemeldet. Jetzt schenke ich es meiner Nachbarin."
+   ]
+  },
+  {
+   "i": 24,
+   "parts": [
+    "Genau. Und am Abend lade ich euch alle zum Essen ein. Kochen kann ich noch nicht, weil der Herd erst am Montag kommt."
+   ]
+  },
+  {
+   "i": 25,
+   "parts": [
+    "Deshalb bestelle ich Pizza."
+   ]
+  },
+  {
+   "i": 27,
+   "parts": [
+    "Das weiß ich doch. Also dann, bis Freitag!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das wäre super! Kannst du auch Werkzeug mitbringen? Ich muss noch zwei Lampen und ein Regal aufhängen, aber ich habe keine Bohrmaschine. [pause] Oh ja, bitte! Zwanzig Kartons habe ich schon gepackt, aber für die Bücher und das Geschirr brauche ich noch zehn. [pause] Danke, das ist lieb von dir. [pause] Nein, es ist zu groß für das neue Wohnzimmer. Ich wollte es im Internet verkaufen, aber niemand hat sich gemeldet. Jetzt schenke ich es meiner Nachbarin. [pause] Genau. Und am Abend lade ich euch alle zum Essen ein. Kochen kann ich noch nicht, weil der Herd erst am Montag kommt. [pause] Deshalb bestelle ich Pizza. [pause] Das weiß ich doch. Also dann, bis Freitag! [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

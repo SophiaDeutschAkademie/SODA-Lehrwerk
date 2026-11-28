@@ -1,0 +1,54 @@
+{
+ "job": "h1_a219a_s1_01",
+ "set": "A2_19",
+ "who": "Frau Lindner",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "i": 0,
+   "parts": [
+    "Volkshochschule Neustadt, Lindner, guten Tag."
+   ]
+  },
+  {
+   "i": 2,
+   "parts": [
+    "Sehr gern. Welcher Kurs interessiert Sie denn?"
+   ]
+  },
+  {
+   "i": 4,
+   "parts": [
+    "Oh, das tut mir leid. Der Kurs am Dienstag ist leider schon voll. Aber wir haben den gleichen Kurs noch einmal am Donnerstag."
+   ]
+  },
+  {
+   "i": 6,
+   "parts": [
+    "Von halb sieben bis neun Uhr abends. Der Kurs beginnt am fünften März und hat sechs Abende."
+   ]
+  },
+  {
+   "i": 8,
+   "parts": [
+    "Der Kurs kostet sechsundneunzig Euro. Dazu kommen acht Euro pro Abend für die Lebensmittel. Dieses Geld geben Sie bitte direkt der Kursleiterin."
+   ]
+  },
+  {
+   "i": 10,
+   "parts": [
+    "Nein, wir haben leider keine eigene Küche. Der Kurs ist in der Küche der Goethe-Schule in der Parkstraße zwölf. Sie gehen dort bitte über den Schulhof."
+   ]
+  },
+  {
+   "i": 12,
+   "parts": [
+    "Nein, Messer und Töpfe sind in der Küche. Bringen Sie bitte nur eine Schürze mit und eine Dose für das Essen, das übrig bleibt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Volkshochschule Neustadt, Lindner, guten Tag. [pause] Sehr gern. Welcher Kurs interessiert Sie denn? [pause] Oh, das tut mir leid. Der Kurs am Dienstag ist leider schon voll. Aber wir haben den gleichen Kurs noch einmal am Donnerstag. [pause] Von halb sieben bis neun Uhr abends. Der Kurs beginnt am fünften März und hat sechs Abende. [pause] Der Kurs kostet sechsundneunzig Euro. Dazu kommen acht Euro pro Abend für die Lebensmittel. Dieses Geld geben Sie bitte direkt der Kursleiterin. [pause] Nein, wir haben leider keine eigene Küche. Der Kurs ist in der Küche der Goethe-Schule in der Parkstraße zwölf. Sie gehen dort bitte über den Schulhof. [pause] Nein, Messer und Töpfe sind in der Küche. Bringen Sie bitte nur eine Schürze mit und eine Dose für das Essen, das übrig bleibt. [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

@@ -1,0 +1,54 @@
+{
+ "job": "h1_a217a_s1_01",
+ "set": "A2_17",
+ "who": "Mia",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "i": 0,
+   "parts": [
+    "Hallo Jonas, hier ist Mia. Hast du kurz Zeit?"
+   ]
+  },
+  {
+   "i": 2,
+   "parts": [
+    "Du weißt ja, ich ziehe am Samstag um. Leider ist mein Cousin krank geworden, und jetzt fehlt mir ein Helfer. Kannst du mir vielleicht helfen?"
+   ]
+  },
+  {
+   "i": 5,
+   "parts": [
+    "Ja, sie ist schön und auch nicht teuer. Aber ich fahre jeden Morgen eine Stunde mit dem Bus zur Arbeit. Von der neuen Wohnung brauche ich nur zehn Minuten zu Fuß."
+   ]
+  },
+  {
+   "i": 7,
+   "parts": [
+    "Wir fangen um neun Uhr an. Kannst du so früh kommen?"
+   ]
+  },
+  {
+   "i": 10,
+   "parts": [
+    "Kein Problem, wir haben dann noch genug Arbeit. Ich habe einen kleinen Transporter gemietet, von acht bis sechzehn Uhr."
+   ]
+  },
+  {
+   "i": 12,
+   "parts": [
+    "Nein, ich habe ein bisschen Angst vor so einem großen Auto. Mein Bruder Paul fährt. Ich sitze nur daneben und zeige ihm den Weg."
+   ]
+  },
+  {
+   "i": 14,
+   "parts": [
+    "Leider nicht, und die Wohnung ist im dritten Stock. Das ist das einzige Problem. Die Waschmaschine ist sehr schwer."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hallo Jonas, hier ist Mia. Hast du kurz Zeit? [pause] Du weißt ja, ich ziehe am Samstag um. Leider ist mein Cousin krank geworden, und jetzt fehlt mir ein Helfer. Kannst du mir vielleicht helfen? [pause] Ja, sie ist schön und auch nicht teuer. Aber ich fahre jeden Morgen eine Stunde mit dem Bus zur Arbeit. Von der neuen Wohnung brauche ich nur zehn Minuten zu Fuß. [pause] Wir fangen um neun Uhr an. Kannst du so früh kommen? [pause] Kein Problem, wir haben dann noch genug Arbeit. Ich habe einen kleinen Transporter gemietet, von acht bis sechzehn Uhr. [pause] Nein, ich habe ein bisschen Angst vor so einem großen Auto. Mein Bruder Paul fährt. Ich sitze nur daneben und zeige ihm den Weg. [pause] Leider nicht, und die Wohnung ist im dritten Stock. Das ist das einzige Problem. Die Waschmaschine ist sehr schwer. [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

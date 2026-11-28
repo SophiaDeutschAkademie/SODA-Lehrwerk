@@ -1,0 +1,48 @@
+{
+ "job": "h1_b118a_s1_01",
+ "set": "B1_18",
+ "who": "Felix",
+ "voice": "Leon",
+ "voice_id": "KJGvwDt0zADAAvDmMQEN",
+ "items": [
+  {
+   "i": 0,
+   "parts": [
+    "Hallo, du musst Carla sein. Ich bin Felix, komm rein!"
+   ]
+  },
+  {
+   "i": 2,
+   "parts": [
+    "Kein Problem. Wir sind hier zu dritt: Hanna, Mehmet und ich. Die beiden sind leider noch nicht zu Hause."
+   ]
+  },
+  {
+   "i": 3,
+   "parts": [
+    "Ich zeige dir zuerst das Zimmer."
+   ]
+  },
+  {
+   "i": 5,
+   "parts": [
+    "Ja, es hat sechzehn Quadratmeter und geht zum Hof. Deshalb ist es sehr ruhig. Bis letzte Woche hat hier Timo gewohnt, aber er hat eine Stelle in Wien bekommen."
+   ]
+  },
+  {
+   "i": 7,
+   "parts": [
+    "Die hat er dagelassen. Wenn du sie brauchst, kannst du sie umsonst haben."
+   ]
+  },
+  {
+   "i": 9,
+   "parts": [
+    "Vierhundertzwanzig Euro warm, das Internet ist schon dabei. Dazu kommt die Kaution, das sind zwei Monatsmieten."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hallo, du musst Carla sein. Ich bin Felix, komm rein! [pause] Kein Problem. Wir sind hier zu dritt: Hanna, Mehmet und ich. Die beiden sind leider noch nicht zu Hause. [pause] Ich zeige dir zuerst das Zimmer. [pause] Ja, es hat sechzehn Quadratmeter und geht zum Hof. Deshalb ist es sehr ruhig. Bis letzte Woche hat hier Timo gewohnt, aber er hat eine Stelle in Wien bekommen. [pause] Die hat er dagelassen. Wenn du sie brauchst, kannst du sie umsonst haben. [pause] Vierhundertzwanzig Euro warm, das Internet ist schon dabei. Dazu kommt die Kaution, das sind zwei Monatsmieten. [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

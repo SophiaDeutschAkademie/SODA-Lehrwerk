@@ -1,0 +1,48 @@
+{
+ "job": "h1_b219a_s1_02",
+ "set": "B2_19",
+ "who": "Reporter",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "i": 9,
+   "parts": [
+    "Geht dabei nicht ständig etwas kaputt?"
+   ]
+  },
+  {
+   "i": 12,
+   "parts": [
+    "Neben mir steht jetzt Lena Vogt, die gerade einen Hochdruckreiniger zurückgibt. Frau Vogt, warum leihen Sie, statt zu kaufen?"
+   ]
+  },
+  {
+   "i": 15,
+   "parts": [
+    "Gibt es auch etwas, das Sie stört?"
+   ]
+  },
+  {
+   "i": 17,
+   "parts": [
+    "Frau Petersen, sehen die Händler am Ort Ihr Angebot nicht als Konkurrenz?"
+   ]
+  },
+  {
+   "i": 20,
+   "parts": [
+    "Und wie geht es weiter?"
+   ]
+  },
+  {
+   "i": 22,
+   "parts": [
+    "Leihen statt kaufen, in Neustadt scheint das zu funktionieren. Damit zurück ins Studio."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Geht dabei nicht ständig etwas kaputt? [pause] Neben mir steht jetzt Lena Vogt, die gerade einen Hochdruckreiniger zurückgibt. Frau Vogt, warum leihen Sie, statt zu kaufen? [pause] Gibt es auch etwas, das Sie stört? [pause] Frau Petersen, sehen die Händler am Ort Ihr Angebot nicht als Konkurrenz? [pause] Und wie geht es weiter? [pause] Leihen statt kaufen, in Neustadt scheint das zu funktionieren. Damit zurück ins Studio. [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

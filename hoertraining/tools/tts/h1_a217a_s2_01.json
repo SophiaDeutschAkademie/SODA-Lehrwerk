@@ -1,0 +1,60 @@
+{
+ "job": "h1_a217a_s2_01",
+ "set": "A2_17",
+ "who": "Jonas",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "i": 1,
+   "parts": [
+    "Hallo Mia! Klar, was gibt es denn?"
+   ]
+  },
+  {
+   "i": 3,
+   "parts": [
+    "Am Samstag? Ja, das geht. Aber warum ziehst du eigentlich um?"
+   ]
+  },
+  {
+   "i": 4,
+   "parts": [
+    "Deine Wohnung ist doch schön."
+   ]
+  },
+  {
+   "i": 6,
+   "parts": [
+    "Das ist natürlich viel besser. Wann fangt ihr denn an?"
+   ]
+  },
+  {
+   "i": 8,
+   "parts": [
+    "Um neun kann ich leider nicht. Ich habe am Samstagvormittag Fußballtraining, das dauert bis elf."
+   ]
+  },
+  {
+   "i": 9,
+   "parts": [
+    "Dann brauche ich noch eine halbe Stunde zu dir. Ich bin also um halb zwölf da."
+   ]
+  },
+  {
+   "i": 11,
+   "parts": [
+    "Fährst du den Transporter selbst?"
+   ]
+  },
+  {
+   "i": 13,
+   "parts": [
+    "Gut. Und wie ist die neue Wohnung? Gibt es dort einen Aufzug?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hallo Mia! Klar, was gibt es denn? [pause] Am Samstag? Ja, das geht. Aber warum ziehst du eigentlich um? [pause] Deine Wohnung ist doch schön. [pause] Das ist natürlich viel besser. Wann fangt ihr denn an? [pause] Um neun kann ich leider nicht. Ich habe am Samstagvormittag Fußballtraining, das dauert bis elf. [pause] Dann brauche ich noch eine halbe Stunde zu dir. Ich bin also um halb zwölf da. [pause] Fährst du den Transporter selbst? [pause] Gut. Und wie ist die neue Wohnung? Gibt es dort einen Aufzug? [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

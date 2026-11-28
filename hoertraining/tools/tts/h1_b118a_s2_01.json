@@ -1,0 +1,54 @@
+{
+ "job": "h1_b118a_s2_01",
+ "set": "B1_18",
+ "who": "Carla",
+ "voice": "Ava",
+ "voice_id": "AnvlJBAqSLDzEevYr9Ap",
+ "items": [
+  {
+   "i": 1,
+   "parts": [
+    "Hallo Felix, danke. Entschuldige, ich bin ein paar Minuten zu spät. Ich habe die Hausnummer nicht gleich gefunden."
+   ]
+  },
+  {
+   "i": 4,
+   "parts": [
+    "Gern. Oh, das ist ja schön hell!"
+   ]
+  },
+  {
+   "i": 6,
+   "parts": [
+    "Und das Bett und der Schreibtisch? Gehören die noch ihm?"
+   ]
+  },
+  {
+   "i": 8,
+   "parts": [
+    "Super, ich habe nämlich kaum Möbel. Wie hoch ist die Miete genau?"
+   ]
+  },
+  {
+   "i": 10,
+   "parts": [
+    "Das ist in Ordnung. Und wie läuft das Zusammenleben bei euch?"
+   ]
+  },
+  {
+   "i": 13,
+   "parts": [
+    "Das klingt gut. Gibt es auch Regeln?"
+   ]
+  },
+  {
+   "i": 16,
+   "parts": [
+    "Verstehe. Ich spiele Gitarre, ist das ein Problem?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hallo Felix, danke. Entschuldige, ich bin ein paar Minuten zu spät. Ich habe die Hausnummer nicht gleich gefunden. [pause] Gern. Oh, das ist ja schön hell! [pause] Und das Bett und der Schreibtisch? Gehören die noch ihm? [pause] Super, ich habe nämlich kaum Möbel. Wie hoch ist die Miete genau? [pause] Das ist in Ordnung. Und wie läuft das Zusammenleben bei euch? [pause] Das klingt gut. Gibt es auch Regeln? [pause] Verstehe. Ich spiele Gitarre, ist das ein Problem? [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

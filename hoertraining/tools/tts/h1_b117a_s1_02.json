@@ -1,0 +1,42 @@
+{
+ "job": "h1_b117a_s1_02",
+ "set": "B1_17",
+ "who": "Moderator",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "i": 14,
+   "parts": [
+    "Können Sie wirklich alles reparieren?"
+   ]
+  },
+  {
+   "i": 17,
+   "parts": [
+    "Kommen die Leute vor allem, um Geld zu sparen?"
+   ]
+  },
+  {
+   "i": 20,
+   "parts": [
+    "Was wünschen Sie sich für die Zukunft?"
+   ]
+  },
+  {
+   "i": 22,
+   "parts": [
+    "Wann ist der nächste Termin?"
+   ]
+  },
+  {
+   "i": 24,
+   "parts": [
+    "Frau Albers, vielen Dank für das Gespräch."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Können Sie wirklich alles reparieren? [pause] Kommen die Leute vor allem, um Geld zu sparen? [pause] Was wünschen Sie sich für die Zukunft? [pause] Wann ist der nächste Termin? [pause] Frau Albers, vielen Dank für das Gespräch. [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}

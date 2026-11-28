@@ -1,0 +1,48 @@
+{
+ "job": "h1_a219a_s2_01",
+ "set": "A2_19",
+ "who": "Herr Weber",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "i": 1,
+   "parts": [
+    "Guten Tag, hier spricht Thomas Weber. Ich möchte mich für einen Kochkurs anmelden."
+   ]
+  },
+  {
+   "i": 3,
+   "parts": [
+    "Der Kurs Italienisch kochen für Anfänger am Dienstagabend. Ich habe ihn im Internet gefunden."
+   ]
+  },
+  {
+   "i": 5,
+   "parts": [
+    "Donnerstag passt auch. Um wie viel Uhr ist der Kurs?"
+   ]
+  },
+  {
+   "i": 7,
+   "parts": [
+    "Sehr gut. Und was kostet er?"
+   ]
+  },
+  {
+   "i": 9,
+   "parts": [
+    "Alles klar. Findet der Kurs bei Ihnen in der Volkshochschule statt?"
+   ]
+  },
+  {
+   "i": 11,
+   "parts": [
+    "Muss ich etwas mitbringen? Messer oder Töpfe vielleicht?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag, hier spricht Thomas Weber. Ich möchte mich für einen Kochkurs anmelden. [pause] Der Kurs Italienisch kochen für Anfänger am Dienstagabend. Ich habe ihn im Internet gefunden. [pause] Donnerstag passt auch. Um wie viel Uhr ist der Kurs? [pause] Sehr gut. Und was kostet er? [pause] Alles klar. Findet der Kurs bei Ihnen in der Volkshochschule statt? [pause] Muss ich etwas mitbringen? Messer oder Töpfe vielleicht? [pause] Gut.",
+ "head": "Also.",
+ "tail": "Gut."
+}
