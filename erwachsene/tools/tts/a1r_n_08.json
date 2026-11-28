@@ -1,0 +1,84 @@
+{
+ "job": "a1r_n_08",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Welcher Pullover ist im Angebot? – Dieser hier."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Welchen Pullover nehmen Sie? – Diesen."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Ich lade dich ein."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Am zwölften Juni habe ich Geburtstag."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Wie ist das Wetter?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Im August fahren wir nach Hamburg."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "das Fest, die Feste.",
+    "Das Fest ist im Garten."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "die Einladung, die Einladungen.",
+    "Danke für die Einladung!"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "einladen, du lädst ein, hat eingeladen."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "feiern, hat gefeiert.",
+    "Wir feiern im Park."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Welcher Pullover ist im Angebot? – Dieser hier. [pause] Welchen Pullover nehmen Sie? – Diesen. [pause] Ich lade dich ein. [pause] Am zwölften Juni habe ich Geburtstag. [pause] Wie ist das Wetter? [pause] Im August fahren wir nach Hamburg. [pause] das Fest, die Feste. Das Fest ist im Garten. [pause] die Einladung, die Einladungen. Danke für die Einladung! [pause] einladen, du lädst ein, hat eingeladen. [pause] feiern, hat gefeiert. Wir feiern im Park. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

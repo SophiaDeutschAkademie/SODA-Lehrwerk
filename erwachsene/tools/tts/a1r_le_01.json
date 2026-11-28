@@ -1,0 +1,81 @@
+{
+ "job": "a1r_le_01",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Schau mal, hier sind die Jacken. Welche Jacke gefällt dir?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Ja, Blau steht dir gut. Welche Größe hast du?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Und? Passt sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Warte, ich helfe dir. Hier ist die Jacke in Größe achtunddreißig."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Sie steht dir sehr gut! Was kostet sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Nein, schau mal! Heute ist alles im Angebot. Die Jacke kostet nur neunundsechzig Euro."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Brauchst du auch einen Schal? Dieser Schal hier ist schön."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Die Schuhe gefallen mir. Aber sie sind zu teuer."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Lena",
+   "parts": [
+    "Welche Jacke gefällt dir?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Lena",
+   "parts": [
+    "Jiu, ich habe am zwölften Juni Geburtstag. Ich mache eine Party. Ich lade dich ein!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Schau mal, hier sind die Jacken. Welche Jacke gefällt dir? [pause] Ja, Blau steht dir gut. Welche Größe hast du? [pause] Und? Passt sie? [pause] Warte, ich helfe dir. Hier ist die Jacke in Größe achtunddreißig. [pause] Sie steht dir sehr gut! Was kostet sie? [pause] Nein, schau mal! Heute ist alles im Angebot. Die Jacke kostet nur neunundsechzig Euro. [pause] Brauchst du auch einen Schal? Dieser Schal hier ist schön. [pause] Die Schuhe gefallen mir. Aber sie sind zu teuer. [pause] Welche Jacke gefällt dir? [pause] Jiu, ich habe am zwölften Juni Geburtstag. Ich mache eine Party. Ich lade dich ein! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

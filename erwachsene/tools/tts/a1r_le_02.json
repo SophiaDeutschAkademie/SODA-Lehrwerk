@@ -1,0 +1,60 @@
+{
+ "job": "a1r_le_02",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "Lena",
+   "parts": [
+    "Nein, im Park. Im Juni ist es warm, und wir können grillen."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Lena",
+   "parts": [
+    "Dann feiern wir hier. Aber ich glaube, die Sonne scheint."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Lena",
+   "parts": [
+    "Ja, gern einen Salat oder einen Kuchen. Aber bitte kein Geschenk!"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Lena",
+   "parts": [
+    "Um vier Uhr. Und im August fahren wir zusammen nach Hamburg, ja?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Lena",
+   "parts": [
+    "Meistens warm, aber es regnet oft. Nimm eine Jacke mit!"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Lena",
+   "parts": [
+    "Ich habe am zwölften Juni Geburtstag."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Lena",
+   "parts": [
+    "Ich lade dich ein."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Nein, im Park. Im Juni ist es warm, und wir können grillen. [pause] Dann feiern wir hier. Aber ich glaube, die Sonne scheint. [pause] Ja, gern einen Salat oder einen Kuchen. Aber bitte kein Geschenk! [pause] Um vier Uhr. Und im August fahren wir zusammen nach Hamburg, ja? [pause] Meistens warm, aber es regnet oft. Nimm eine Jacke mit! [pause] Ich habe am zwölften Juni Geburtstag. [pause] Ich lade dich ein. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,53 @@
+{
+ "job": "a1r_ho_01",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Herr Braun geht nächste Woche in Rente. Wir brauchen ein Geschenk für ihn."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Er wandert gern. Vielleicht einen Rucksack?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Ein Buch ist gut. Aber welches Buch? Ich habe keine Idee."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Sehr gut, Herr Park! Und dazu Blumen und eine Karte."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Ja, zehn Euro. Wer kauft das Geschenk?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Hoffmann",
+   "parts": [
+    "Vielen Dank! Der Gutschein gefällt ihm bestimmt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Herr Braun geht nächste Woche in Rente. Wir brauchen ein Geschenk für ihn. [pause] Er wandert gern. Vielleicht einen Rucksack? [pause] Ein Buch ist gut. Aber welches Buch? Ich habe keine Idee. [pause] Sehr gut, Herr Park! Und dazu Blumen und eine Karte. [pause] Ja, zehn Euro. Wer kauft das Geschenk? [pause] Vielen Dank! Der Gutschein gefällt ihm bestimmt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

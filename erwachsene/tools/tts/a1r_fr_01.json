@@ -1,0 +1,81 @@
+{
+ "job": "a1r_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag! Kann ich Ihnen helfen?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Gern. Welche Größe hat er?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Und welche Farbe gefällt ihm?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Dann schauen Sie mal: Dieser Pullover hier ist im Angebot. Er kostet neununddreißig Euro."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Ja, hier bitte. In Blau und in Größe L."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Ja, natürlich. Sie können ihn vierzehn Tage umtauschen. Aber Sie brauchen den Kassenzettel."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Frau",
+   "parts": [
+    "Dort hinten links. Vielen Dank!"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Frau",
+   "parts": [
+    "Und jetzt das Wetter für das Wochenende."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Frau",
+   "parts": [
+    "Am Samstag regnet es in Frankfurt. Es sind nur vierzehn Grad."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Frau",
+   "parts": [
+    "Am Sonntag scheint die Sonne, und es ist warm. Es sind dreiundzwanzig Grad."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag! Kann ich Ihnen helfen? [pause] Gern. Welche Größe hat er? [pause] Und welche Farbe gefällt ihm? [pause] Dann schauen Sie mal: Dieser Pullover hier ist im Angebot. Er kostet neununddreißig Euro. [pause] Ja, hier bitte. In Blau und in Größe L. [pause] Ja, natürlich. Sie können ihn vierzehn Tage umtauschen. Aber Sie brauchen den Kassenzettel. [pause] Dort hinten links. Vielen Dank! [pause] Und jetzt das Wetter für das Wochenende. [pause] Am Samstag regnet es in Frankfurt. Es sind nur vierzehn Grad. [pause] Am Sonntag scheint die Sonne, und es ist warm. Es sind dreiundzwanzig Grad. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

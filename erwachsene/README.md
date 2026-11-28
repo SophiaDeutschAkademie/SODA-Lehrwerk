@@ -1,6 +1,6 @@
 # 성인 교재 세 권: SODA Basis, SODA Studium, SODA Beruf
 
-성인 학습자를 위한 독일어 교재 세 권의 원고와 도구가 있는 폴더입니다. 지금은 세 권의 목차와 「성인 독일어」 본문 58화면(과 40개, 복습 12개, 단계 평가 6개)이 있고, 모두 비공개입니다. 음성은 A1.1의 1과부터 6과, A1.2의 1과부터 4과에 있습니다(Eleven v3, 2026.11.25와 11.26에 만든 1,488줄). 그 밖의 48화면은 음성 없이 올렸고 화면에 「음성은 준비 중이에요」 안내가 나옵니다.
+성인 학습자를 위한 독일어 교재 세 권의 원고와 도구가 있는 폴더입니다. 지금은 세 권의 목차와 「성인 독일어」 본문 58화면(과 40개, 복습 12개, 단계 평가 6개)이 있고, 모두 비공개입니다. 음성은 A1.1, A1.2의 모든 화면에 있습니다(Eleven v3, 2026.11.25부터 11.28까지 만든 1,953줄). 그 밖의 40화면은 음성 없이 올렸고 화면에 「음성은 준비 중이에요」 안내가 나옵니다.
 
 | 교재 | 이름 | 대상 | 범위 | 목차 주소 |
 |---|---|---|---|---|
@@ -163,11 +163,11 @@ erwachsene/tools/blocks/       다크 모드 스위치, 홈 버튼, 글자 크�
 erwachsene/tools/lektion.py    과 화면 도구: check, prompts, img, site, tts, cut
 erwachsene/tools/page.html     과 화면 틀
 erwachsene/tools/src/          과 원고 (단계 폴더/과 번호.txt)와 쓰는 법 README.md
-erwachsene/tools/tts/          그림 설명 묶음(*.prompts.json). 음성을 만들면 음성 목록도 여기에 생깁니다
+erwachsene/tools/tts/          그림 설명 묶음(*.prompts.json)과 음성 목록(이름.plan.json, 이름_목소리_번호.json)
 erwachsene/tools/open.json     본문이 있는 과 목록 (site 가 씁니다. 목차 빌드가 읽어서 링크를 겁니다)
 erwachsene/lektion.css, lektion.js   과 화면의 모양과 동작 (세 교재가 함께 씁니다). 글자 크기는 font-size:calc(17px*var(--fz)) 처럼 적습니다 (저장소 README 「글자 크기(교재)」)
 erwachsene/img/                과 그림: 단계/과/szene.webp(장면), c1.webp …(낱말 그림), c/(인물 얼굴), titel/<교재>.webp(목차 표지 그림 1200×900, 그림 설명은 inhalt.json books 의 bildalt). 폭 700px 이상인 화면에서는 장면 그림을 높이 600px까지만 그립니다(lektion.css 의 `.szene img{max-height:600px;object-fit:contain}`. 세로로 긴 그림이 화면을 넘지 않게 함)
-erwachsene/audio/              과 음성(mp3, 한 줄에 파일 하나, 31MB)
+erwachsene/audio/              과 음성(mp3, 한 줄에 파일 하나, 41MB)
 erwachsene/fonts/              독일어 글꼴 DM Sans(라틴 글자만)와 사용 허가서 OFL.txt
 basis/, studium/, beruf/       빌드 결과 (index.html, manifest.webmanifest, icons/, 단계/과/index.html)
 ```
@@ -239,6 +239,8 @@ A1.1의 1과부터 5과 음성은 2026.11.25에, A1.1 6과와 A1.2의 1과부터
 
 2026.11.28에 A1.1의 복습 둘과 단계 평가, A1.2의 5과, 6과, 복습 둘, 단계 평가를 음성 없이 올렸습니다(`ohne_audio` 에 `a1-1`, `a1-2`). 이 여덟 화면의 음성은 쉼 표시를 포함해 약 19,350자입니다(5과 6,953자, 6과 7,249자, 복습과 평가 여섯 화면 약 5,150자). Lena의 목소리 값을 넣으면 약 21,300크레딧입니다.
 
+같은 날 이 여덟 화면의 음성을 만들었습니다(47묶음: 5과와 6과 33묶음, 복습과 평가 14묶음. 465줄, 22,038크레딧). 자르기 검사에서 다시 볼 묶음은 없었습니다. `ohne_audio` 에서 `a1-1`, `a1-2` 를 뺐고, A1.1과 A1.2는 모든 화면에 음성이 있습니다.
+
 같은 날 A2.1과 A2.2의 열여덟 화면(단계마다 과 6개, 복습 2개, 단계 평가 1개)도 음성 없이 올렸습니다(`ohne_audio` 에 `a2-1`, `a2-2`). 음성은 쉼 표시를 포함해 A2.1이 48,708자, A2.2가 51,775자입니다(`check a2-1`, `check a2-2` 의 마지막 줄). 글자 수만큼 크레딧이 들고, Lena의 대사는 약 2.5배입니다.
 
 같은 날 B1.1의 열한 화면(과 8개, 복습 2개, 단계 평가 1개)도 음성 없이 올렸습니다(`ohne_audio` 에 `b1-1`). 음성은 쉼 표시를 포함해 83,280자입니다(`check b1-1` 의 마지막 줄). Lena의 대사(약 6,900자)를 2.5배로 치면 약 93,700크레딧입니다.
@@ -246,7 +248,7 @@ A1.1의 1과부터 5과 음성은 2026.11.25에, A1.1 6과와 A1.2의 1과부터
 같은 날 B1.2의 열한 화면(과 8개, 복습 2개, 단계 평가 1개)도 음성 없이 올렸습니다(`ohne_audio` 에 `b1-2`). 음성은 쉼 표시를 포함해 87,153자입니다(`check b1-2` 의 마지막 줄). Lena의 대사(약 6,500자)를 2.5배로 치면 약 97,000크레딧입니다. 이것으로 「성인 독일어」의 여섯 단계(과 40개, 복습 12개, 단계 평가 6개)에 본문이 모두 있습니다. 음성이 없는 화면의 음성을 모두 만들려면 A1의 나머지 약 21,300, A2.1 약 52,300, A2.2 약 54,900, B1.1 약 93,700, B1.2 약 97,000, 모두 약 319,000크레딧이 듭니다(다시 만드는 줄은 따로 듭니다).
 
 1. `python3 erwachsene/tools/lektion.py tts 이름 단계` 로 음성이 없는 줄만 모아 음성 목록을 만듭니다(다섯 과는 54묶음, 쉼 표시 포함 약 24,000자, 글자 수만큼 크레딧이 듭니다).
-2. ElevenLabs flow `ey7DgxIxSWctcTQ7kvGQ`(Eleven v3, `language_code` de)의 TTS 노드 10개에 묶음을 넣어 만들고, 모두 끝난 뒤 낱말 시각 정렬 노드를 돌립니다(음성이 끝나기 전에 돌리면 크레딧이 듭니다). 받은 파일을 `python3 erwachsene/tools/lektion.py cut 폴더` 로 잘라 `erwachsene/audio/` 에 넣습니다. 방법은 청소년 교재(`jugend/README.md`)와 같습니다.
+2. ElevenLabs flow `ey7DgxIxSWctcTQ7kvGQ`(Eleven v3, `language_code` de)의 TTS 노드 20개에 묶음을 넣어 만들고, 모두 끝난 뒤 낱말 시각 정렬 노드를 돌립니다(음성이 끝나기 전에 돌리면 크레딧이 듭니다). 받은 파일을 `python3 erwachsene/tools/lektion.py cut 폴더` 로 잘라 `erwachsene/audio/` 에 넣습니다. 방법은 청소년 교재(`jugend/README.md`)와 같습니다.
 3. `status.json` 의 `ohne_audio` 에서 그 단계를 빼고 `site` 와 목차 빌드를 다시 실행합니다.
 
 정해 둔 목소리(`tools/lektion.py`의 `CAST`): Jiu는 Nadine, Dohyun은 Andrew, Sora는 Ithaka, Lena는 Lucy, Frau Becker는 Melissa, Markus는 Jonas, Frau Hoffmann은 Bettina, 이름 없는 여자는 Ela, 이름 없는 남자는 Ben, 해설은 Toni. 목소리 설명만 보고 골랐고 만든 음성을 들어 보지는 않았습니다. Dohyun은 처음 고른 Andreas가 소유자에 의해 비활성화되어 있어 Andrew(bNFIvb6Gmmlk9QMIWo7U)로 바꿨습니다. Jiu는 처음에 Leni였는데 2026.11.26에 그 목소리도 소유자가 비활성화해서 Nadine(XFigb6fqZPxl2Q2dFOXN)으로 바꾸고, 한 사람의 목소리가 과마다 달라지지 않게 A1.1 1과부터 5과의 Jiu 대사 29줄도 같은 목소리로 다시 만들어 바꿨습니다. 목소리가 비활성화되면 그 묶음만 실패하고 크레딧은 들지 않습니다. 묶음을 다시 만들 때는 `tts` 를 같은 이름으로 다시 실행하지 않습니다(묶음 번호가 바뀝니다). Lena의 Lucy는 글자당 크레딧이 다른 목소리의 약 2.5배입니다.

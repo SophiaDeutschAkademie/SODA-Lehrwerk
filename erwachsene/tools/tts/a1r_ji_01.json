@@ -1,0 +1,81 @@
+{
+ "job": "a1r_ji_01",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Diese Jacke hier. Die Farbe gefällt mir."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Größe sechsunddreißig. Ich probiere die Jacke an."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Nein, sie passt mir nicht. Sie ist zu klein."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Danke! Ja, diese Jacke passt. Wie findest du sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Neunundachtzig Euro. Das ist teuer."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Super! Dann nehme ich sie."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Er gefällt mir auch. Aber ich habe schon einen Schal."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Ja, bitte. Diese Schuhe hier gefallen mir."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Größe achtunddreißig."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Nein, sie sind zu klein. Haben Sie die Schuhe auch in neununddreißig?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Diese Jacke hier. Die Farbe gefällt mir. [pause] Größe sechsunddreißig. Ich probiere die Jacke an. [pause] Nein, sie passt mir nicht. Sie ist zu klein. [pause] Danke! Ja, diese Jacke passt. Wie findest du sie? [pause] Neunundachtzig Euro. Das ist teuer. [pause] Super! Dann nehme ich sie. [pause] Er gefällt mir auch. Aber ich habe schon einen Schal. [pause] Ja, bitte. Diese Schuhe hier gefallen mir. [pause] Größe achtunddreißig. [pause] Nein, sie sind zu klein. Haben Sie die Schuhe auch in neununddreißig? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

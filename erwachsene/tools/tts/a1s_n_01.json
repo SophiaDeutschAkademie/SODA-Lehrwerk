@@ -1,0 +1,81 @@
+{
+ "job": "a1s_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-1/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "sechsundsechzig"
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "null eins sieben sechs"
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "Ich bin verheiratet."
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "N",
+   "parts": [
+    "Ich kann am Montag kommen."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Wie ist Ihr Name?"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Ich habe keine Zeit."
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "Die Wohnung ist hell und ruhig."
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "Sie sollen viel trinken."
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-2",
+   "who": "N",
+   "parts": [
+    "Was hast du am Wochenende gemacht?"
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-2",
+   "who": "N",
+   "parts": [
+    "Am dritten Juli ist das Fest."
+   ]
+  }
+ ],
+ "script": "Also. [pause] sechsundsechzig [pause] null eins sieben sechs [pause] Ich bin verheiratet. [pause] Ich kann am Montag kommen. [pause] Wie ist Ihr Name? [pause] Ich habe keine Zeit. [pause] Die Wohnung ist hell und ruhig. [pause] Sie sollen viel trinken. [pause] Was hast du am Wochenende gemacht? [pause] Am dritten Juli ist das Fest. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

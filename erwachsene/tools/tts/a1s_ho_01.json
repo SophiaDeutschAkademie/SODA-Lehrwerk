@@ -1,0 +1,32 @@
+{
+ "job": "a1s_ho_01",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Hoffmann",
+   "parts": [
+    "Was sind Sie von Beruf?"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Hoffmann",
+   "parts": [
+    "Sprechen Sie Englisch?"
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Hoffmann",
+   "parts": [
+    "Was haben Sie letzte Woche gemacht?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Was sind Sie von Beruf? [pause] Sprechen Sie Englisch? [pause] Was haben Sie letzte Woche gemacht? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

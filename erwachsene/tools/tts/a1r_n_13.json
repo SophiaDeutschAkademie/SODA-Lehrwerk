@@ -1,0 +1,89 @@
+{
+ "job": "a1r_n_13",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "die Fahrt, die Fahrten.",
+    "Die Fahrt dauert vier Stunden."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "die Postkarte, die Postkarten.",
+    "Ich schreibe dir eine Postkarte."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "buchen, hat gebucht.",
+    "Hast du das Hotel gebucht?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "dauern, hat gedauert.",
+    "Wie lange dauert die Fahrt?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "fliegen, ist geflogen.",
+    "Wir sind nach Korea geflogen."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "mitnehmen, du nimmst mit, hat mitgenommen.",
+    "Nimm eine Jacke mit!"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "bald.",
+    "Bald sind Sommerferien."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "meistens.",
+    "Im August ist es meistens warm."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Januar, Februar, März."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "April, Mai, Juni."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Fahrt, die Fahrten. Die Fahrt dauert vier Stunden. [pause] die Postkarte, die Postkarten. Ich schreibe dir eine Postkarte. [pause] buchen, hat gebucht. Hast du das Hotel gebucht? [pause] dauern, hat gedauert. Wie lange dauert die Fahrt? [pause] fliegen, ist geflogen. Wir sind nach Korea geflogen. [pause] mitnehmen, du nimmst mit, hat mitgenommen. Nimm eine Jacke mit! [pause] bald. Bald sind Sommerferien. [pause] meistens. Im August ist es meistens warm. [pause] Januar, Februar, März. [pause] April, Mai, Juni. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

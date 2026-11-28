@@ -1,0 +1,91 @@
+{
+ "job": "a1r_n_12",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "sonnig.",
+    "Morgen ist es sonnig."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "windig.",
+    "In Hamburg ist es oft windig."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "der See, die Seen.",
+    "Konstanz ist am Bodensee."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "das Meer, die Meere.",
+    "Ich war noch nie am Meer."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "der Berg, die Berge.",
+    "In den Bergen kann man wandern."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "das Hotel, die Hotels.",
+    "Das Hotel ist sehr teuer."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "die Ferienwohnung, die Ferienwohnungen.",
+    "Wir haben eine Ferienwohnung gebucht."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "das Schiff, die Schiffe.",
+    "Hana möchte mit dem Schiff fahren."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "das Flugzeug, die Flugzeuge.",
+    "Das Flugzeug kommt um neun an."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "der Koffer, die Koffer.",
+    "Mein Koffer ist zu klein."
+   ]
+  }
+ ],
+ "script": "Also. [pause] sonnig. Morgen ist es sonnig. [pause] windig. In Hamburg ist es oft windig. [pause] der See, die Seen. Konstanz ist am Bodensee. [pause] das Meer, die Meere. Ich war noch nie am Meer. [pause] der Berg, die Berge. In den Bergen kann man wandern. [pause] das Hotel, die Hotels. Das Hotel ist sehr teuer. [pause] die Ferienwohnung, die Ferienwohnungen. Wir haben eine Ferienwohnung gebucht. [pause] das Schiff, die Schiffe. Hana möchte mit dem Schiff fahren. [pause] das Flugzeug, die Flugzeuge. Das Flugzeug kommt um neun an. [pause] der Koffer, die Koffer. Mein Koffer ist zu klein. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

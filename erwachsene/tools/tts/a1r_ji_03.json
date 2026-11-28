@@ -1,0 +1,53 @@
+{
+ "job": "a1r_ji_03",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Doch, natürlich bringe ich ein Geschenk mit! Wann fängt die Party an?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Ja! Ich freue mich schon. Wie ist das Wetter dort im August?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Kein Problem. Ich habe ja jetzt eine Jacke."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Du machst eine Party? Wann ist sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Wo feiern wir?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Wann fängt die Party an?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Doch, natürlich bringe ich ein Geschenk mit! Wann fängt die Party an? [pause] Ja! Ich freue mich schon. Wie ist das Wetter dort im August? [pause] Kein Problem. Ich habe ja jetzt eine Jacke. [pause] Du machst eine Party? Wann ist sie? [pause] Wo feiern wir? [pause] Wann fängt die Party an? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

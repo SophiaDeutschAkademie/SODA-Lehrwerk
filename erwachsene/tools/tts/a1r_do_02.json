@@ -1,0 +1,25 @@
+{
+ "job": "a1r_do_02",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "Dohyun",
+   "parts": [
+    "Gern! Muss ich für das Sommerfest zusagen?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Dohyun",
+   "parts": [
+    "Ich wohne seit acht Monaten in Frankfurt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gern! Muss ich für das Sommerfest zusagen? [pause] Ich wohne seit acht Monaten in Frankfurt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

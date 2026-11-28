@@ -1,0 +1,81 @@
+{
+ "job": "a1s_le_01",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Das Brot kostet zwei Euro fünfzig."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Jiu, hast du am Samstag Zeit? Ich will ins Kino gehen."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Und am Sonntag?"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Um sechs Uhr."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Hast du Geschwister?"
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-1",
+   "who": "Lena",
+   "parts": [
+    "Du fährst mit der U-Bahn bis zur Station Bockenheimer Warte."
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-1",
+   "who": "Lena",
+   "parts": [
+    "Dann gehst du geradeaus bis zur Ampel und dann links."
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-1",
+   "who": "Lena",
+   "parts": [
+    "Unsere Wohnung ist neben der Bäckerei."
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-1",
+   "who": "Lena",
+   "parts": [
+    "Zu Fuß sind es nur fünf Minuten."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Die Wohnung hat drei Zimmer und kostet neunhundertfünfzig Euro."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das Brot kostet zwei Euro fünfzig. [pause] Jiu, hast du am Samstag Zeit? Ich will ins Kino gehen. [pause] Und am Sonntag? [pause] Um sechs Uhr. [pause] Hast du Geschwister? [pause] Du fährst mit der U-Bahn bis zur Station Bockenheimer Warte. [pause] Dann gehst du geradeaus bis zur Ampel und dann links. [pause] Unsere Wohnung ist neben der Bäckerei. [pause] Zu Fuß sind es nur fünf Minuten. [pause] Die Wohnung hat drei Zimmer und kostet neunhundertfünfzig Euro. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

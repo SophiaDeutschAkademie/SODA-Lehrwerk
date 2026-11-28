@@ -1,0 +1,39 @@
+{
+ "job": "a1r_mk_03",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "Markus",
+   "parts": [
+    "Kommst du?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Markus",
+   "parts": [
+    "Bringst du deine Familie mit?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Markus",
+   "parts": [
+    "Schade. Seit wann bist du in Deutschland?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Markus",
+   "parts": [
+    "Was machen wir bei Regen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Kommst du? [pause] Bringst du deine Familie mit? [pause] Schade. Seit wann bist du in Deutschland? [pause] Was machen wir bei Regen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "a1r_so_01",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "Sora",
+   "parts": [
+    "Ja, bitte. Ich suche einen Pullover für meinen Mann."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Sora",
+   "parts": [
+    "Größe L."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Sora",
+   "parts": [
+    "Er trägt gern Blau und Grau."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Sora",
+   "parts": [
+    "Der Pullover gefällt mir. Aber Grün steht ihm nicht. Haben Sie den Pullover auch in Blau?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Sora",
+   "parts": [
+    "Sehr schön. Diesen Pullover nehme ich. Kann ich ihn umtauschen? Vielleicht passt er meinem Mann nicht."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Sora",
+   "parts": [
+    "Gut. Wo ist die Kasse?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Sora",
+   "parts": [
+    "Ich habe diesen Pullover gekauft. Er hat neununddreißig Euro gekostet."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Sora",
+   "parts": [
+    "Wir fahren im Juli nach Konstanz. Das ist am Bodensee."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Sora",
+   "parts": [
+    "Vom zehnten bis zum siebzehnten Juli."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Sora",
+   "parts": [
+    "Nein, mit dem Zug. Wir haben kein Auto, aber die Fahrt dauert nur vier Stunden."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ja, bitte. Ich suche einen Pullover für meinen Mann. [pause] Größe L. [pause] Er trägt gern Blau und Grau. [pause] Der Pullover gefällt mir. Aber Grün steht ihm nicht. Haben Sie den Pullover auch in Blau? [pause] Sehr schön. Diesen Pullover nehme ich. Kann ich ihn umtauschen? Vielleicht passt er meinem Mann nicht. [pause] Gut. Wo ist die Kasse? [pause] Ich habe diesen Pullover gekauft. Er hat neununddreißig Euro gekostet. [pause] Wir fahren im Juli nach Konstanz. Das ist am Bodensee. [pause] Vom zehnten bis zum siebzehnten Juli. [pause] Nein, mit dem Zug. Wir haben kein Auto, aber die Fahrt dauert nur vier Stunden. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

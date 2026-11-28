@@ -1,0 +1,18 @@
+{
+ "job": "a1s_le_02",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Wie ist deine Wohnung?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wie ist deine Wohnung? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

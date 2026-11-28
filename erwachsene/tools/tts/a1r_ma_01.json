@@ -1,0 +1,39 @@
+{
+ "job": "a1r_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag! Kann ich Ihnen helfen?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Welche Größe haben Sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Hier, bitte. Passen sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Mann",
+   "parts": [
+    "Ja, aber nur in Schwarz."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag! Kann ich Ihnen helfen? [pause] Welche Größe haben Sie? [pause] Hier, bitte. Passen sie? [pause] Ja, aber nur in Schwarz. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

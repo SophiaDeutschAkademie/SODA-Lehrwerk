@@ -1,0 +1,25 @@
+{
+ "job": "a1s_be_01",
+ "who": "Becker",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Becker",
+   "parts": [
+    "Woher kommen Sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Becker",
+   "parts": [
+    "Sie sehen müde aus. Was fehlt Ihnen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Woher kommen Sie? [pause] Sie sehen müde aus. Was fehlt Ihnen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

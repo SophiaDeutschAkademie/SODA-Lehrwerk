@@ -1,0 +1,81 @@
+{
+ "job": "a1s_ji_01",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Meine Handynummer ist null eins sieben sechs, null vier, null sechs, neun null, eins zwei."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Am Samstag kann ich leider nicht. Ich muss lernen."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Am Sonntag habe ich Zeit. Wann fängt der Film an?"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Gut, ich komme gern mit."
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-2",
+   "who": "Jiu",
+   "parts": [
+    "Am Samstag bin ich mit Lena ins Kaufhaus gegangen. Ich habe eine Jacke gekauft."
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-2",
+   "who": "Jiu",
+   "parts": [
+    "Die Jacke hat neunundsechzig Euro gekostet. Sie gefällt mir sehr."
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-2",
+   "who": "Jiu",
+   "parts": [
+    "Am Sonntag war das Wetter schlecht. Es hat geregnet."
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-2",
+   "who": "Jiu",
+   "parts": [
+    "Ich bin zu Hause geblieben und habe einen Film gesehen."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Lena hat am zwölften Juni Geburtstag."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Wann hast du Geburtstag?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Meine Handynummer ist null eins sieben sechs, null vier, null sechs, neun null, eins zwei. [pause] Am Samstag kann ich leider nicht. Ich muss lernen. [pause] Am Sonntag habe ich Zeit. Wann fängt der Film an? [pause] Gut, ich komme gern mit. [pause] Am Samstag bin ich mit Lena ins Kaufhaus gegangen. Ich habe eine Jacke gekauft. [pause] Die Jacke hat neunundsechzig Euro gekostet. Sie gefällt mir sehr. [pause] Am Sonntag war das Wetter schlecht. Es hat geregnet. [pause] Ich bin zu Hause geblieben und habe einen Film gesehen. [pause] Lena hat am zwölften Juni Geburtstag. [pause] Wann hast du Geburtstag? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

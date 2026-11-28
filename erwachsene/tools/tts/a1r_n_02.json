@@ -1,0 +1,90 @@
+{
+ "job": "a1r_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "das T-Shirt, die T-Shirts.",
+    "Das T-Shirt kostet zehn Euro."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Hose, die Hosen."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "der Rock, die Röcke.",
+    "Der Rock ist zu kurz."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "das Kleid, die Kleider.",
+    "Das Kleid steht dir gut."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "der Schuh, die Schuhe.",
+    "Die Schuhe sind bequem."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Mütze, die Mützen.",
+    "Heute trage ich eine Mütze."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "der Schal, die Schals.",
+    "Dieser Schal ist schön."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "der Handschuh, die Handschuhe.",
+    "Wo sind meine Handschuhe?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "der Anzug, die Anzüge.",
+    "Im Büro trägt er einen Anzug."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Tasche, die Taschen.",
+    "Wem gehört diese Tasche?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] das T-Shirt, die T-Shirts. Das T-Shirt kostet zehn Euro. [pause] die Hose, die Hosen. [pause] der Rock, die Röcke. Der Rock ist zu kurz. [pause] das Kleid, die Kleider. Das Kleid steht dir gut. [pause] der Schuh, die Schuhe. Die Schuhe sind bequem. [pause] die Mütze, die Mützen. Heute trage ich eine Mütze. [pause] der Schal, die Schals. Dieser Schal ist schön. [pause] der Handschuh, die Handschuhe. Wo sind meine Handschuhe? [pause] der Anzug, die Anzüge. Im Büro trägt er einen Anzug. [pause] die Tasche, die Taschen. Wem gehört diese Tasche? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

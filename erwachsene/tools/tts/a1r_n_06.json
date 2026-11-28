@@ -1,0 +1,86 @@
+{
+ "job": "a1r_n_06",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Idee, die Ideen.",
+    "Hast du eine Idee?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "in Rente gehen.",
+    "Herr Braun geht in Rente."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "helfen, du hilfst, hat geholfen."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "gehören, hat gehört.",
+    "Die Tasche gehört mir."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "geben, du gibst, hat gegeben.",
+    "Jeder gibt zehn Euro."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "bestimmt.",
+    "Das gefällt ihm bestimmt."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "rot, blau, grün."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "gelb, schwarz, weiß."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "grau, braun, rosa."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "zu groß, zu klein, zu teuer."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Idee, die Ideen. Hast du eine Idee? [pause] in Rente gehen. Herr Braun geht in Rente. [pause] helfen, du hilfst, hat geholfen. [pause] gehören, hat gehört. Die Tasche gehört mir. [pause] geben, du gibst, hat gegeben. Jeder gibt zehn Euro. [pause] bestimmt. Das gefällt ihm bestimmt. [pause] rot, blau, grün. [pause] gelb, schwarz, weiß. [pause] grau, braun, rosa. [pause] zu groß, zu klein, zu teuer. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

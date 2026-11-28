@@ -1,0 +1,81 @@
+{
+ "job": "a1s_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Hallo! Ich heiße Ana Silva. Ich komme aus Brasilien."
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Jetzt wohne ich in Frankfurt. Ich bin Lehrerin."
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Ich spreche Englisch und ein bisschen Deutsch."
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Ich bin verheiratet. Mein Mann heißt Paulo. Wir haben zwei Kinder."
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Praxis Doktor Neumann, guten Morgen!"
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Gern. Können Sie am Dienstag um zehn Uhr kommen?"
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Ja, am Mittwoch um halb neun."
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Ja, bitte bringen Sie Ihre Versichertenkarte mit."
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Gern. Wie ist Ihr Name? Können Sie das bitte buchstabieren?"
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Können Sie am Montag um neun Uhr kommen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hallo! Ich heiße Ana Silva. Ich komme aus Brasilien. [pause] Jetzt wohne ich in Frankfurt. Ich bin Lehrerin. [pause] Ich spreche Englisch und ein bisschen Deutsch. [pause] Ich bin verheiratet. Mein Mann heißt Paulo. Wir haben zwei Kinder. [pause] Praxis Doktor Neumann, guten Morgen! [pause] Gern. Können Sie am Dienstag um zehn Uhr kommen? [pause] Ja, am Mittwoch um halb neun. [pause] Ja, bitte bringen Sie Ihre Versichertenkarte mit. [pause] Gern. Wie ist Ihr Name? Können Sie das bitte buchstabieren? [pause] Können Sie am Montag um neun Uhr kommen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

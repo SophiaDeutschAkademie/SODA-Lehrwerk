@@ -1,0 +1,53 @@
+{
+ "job": "a1r_so_02",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "Sora",
+   "parts": [
+    "Man kann schwimmen, Rad fahren und wandern. Und Hana möchte mit dem Schiff fahren."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Sora",
+   "parts": [
+    "Wir haben eine Ferienwohnung gebucht, denn Hotels sind im Juli sehr teuer."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Sora",
+   "parts": [
+    "Im Sommer ist es warm und sonnig. Aber manchmal gibt es ein Gewitter."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Sora",
+   "parts": [
+    "Vielen Dank! Ich schreibe Ihnen eine Postkarte."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Sora",
+   "parts": [
+    "Wir fahren vom zehnten bis zum siebzehnten Juli nach Konstanz."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Sora",
+   "parts": [
+    "Im Sommer ist es warm."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Man kann schwimmen, Rad fahren und wandern. Und Hana möchte mit dem Schiff fahren. [pause] Wir haben eine Ferienwohnung gebucht, denn Hotels sind im Juli sehr teuer. [pause] Im Sommer ist es warm und sonnig. Aber manchmal gibt es ein Gewitter. [pause] Vielen Dank! Ich schreibe Ihnen eine Postkarte. [pause] Wir fahren vom zehnten bis zum siebzehnten Juli nach Konstanz. [pause] Im Sommer ist es warm. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

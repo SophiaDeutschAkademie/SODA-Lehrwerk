@@ -1,0 +1,91 @@
+{
+ "job": "a1r_n_04",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "im Angebot.",
+    "Die Jacke ist im Angebot."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "umtauschen, hat umgetauscht.",
+    "Kann ich den Pullover umtauschen?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "passen, hat gepasst.",
+    "Die Jacke passt mir."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "gefallen.",
+    "Die Farbe gefällt mir."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Das steht dir gut.",
+    "Blau steht dir gut."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "zu.",
+    "Die Hose ist zu klein."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "eng.",
+    "Das Hemd ist zu eng."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "lang.",
+    "Der Mantel ist lang."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "kurz.",
+    "Der Rock ist kurz."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "bequem.",
+    "Die Schuhe sind sehr bequem."
+   ]
+  }
+ ],
+ "script": "Also. [pause] im Angebot. Die Jacke ist im Angebot. [pause] umtauschen, hat umgetauscht. Kann ich den Pullover umtauschen? [pause] passen, hat gepasst. Die Jacke passt mir. [pause] gefallen. Die Farbe gefällt mir. [pause] Das steht dir gut. Blau steht dir gut. [pause] zu. Die Hose ist zu klein. [pause] eng. Das Hemd ist zu eng. [pause] lang. Der Mantel ist lang. [pause] kurz. Der Rock ist kurz. [pause] bequem. Die Schuhe sind sehr bequem. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

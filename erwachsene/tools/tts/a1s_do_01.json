@@ -1,0 +1,74 @@
+{
+ "job": "a1s_do_01",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Dohyun",
+   "parts": [
+    "Guten Tag, ich heiße Dohyun Park. Ich komme aus Korea, aus Busan."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Dohyun",
+   "parts": [
+    "Guten Morgen! Ich möchte zwei Brötchen und einen Kaffee, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Dohyun",
+   "parts": [
+    "Nein, danke. Was kostet das?"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Dohyun",
+   "parts": [
+    "Hier, bitte. Auf Wiedersehen!"
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Dohyun",
+   "parts": [
+    "Am Wochenende bin ich nach Heidelberg gefahren."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Dohyun",
+   "parts": [
+    "Ja, ich suche ein Hemd. Dieses Hemd hier gefällt mir."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Dohyun",
+   "parts": [
+    "Größe vierzig."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Dohyun",
+   "parts": [
+    "Danke. Das Hemd passt. Was kostet es?"
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Dohyun",
+   "parts": [
+    "Gut, ich nehme es."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag, ich heiße Dohyun Park. Ich komme aus Korea, aus Busan. [pause] Guten Morgen! Ich möchte zwei Brötchen und einen Kaffee, bitte. [pause] Nein, danke. Was kostet das? [pause] Hier, bitte. Auf Wiedersehen! [pause] Am Wochenende bin ich nach Heidelberg gefahren. [pause] Ja, ich suche ein Hemd. Dieses Hemd hier gefällt mir. [pause] Größe vierzig. [pause] Danke. Das Hemd passt. Was kostet es? [pause] Gut, ich nehme es. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

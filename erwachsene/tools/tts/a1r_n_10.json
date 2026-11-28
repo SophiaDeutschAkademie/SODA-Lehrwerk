@@ -1,0 +1,91 @@
+{
+ "job": "a1r_n_10",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "wünschen, hat gewünscht.",
+    "Ich wünsche dir viel Spaß."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "allein.",
+    "Dohyun wohnt allein."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "die Jahreszeit, die Jahreszeiten.",
+    "Welche Jahreszeit gefällt dir?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "der Frühling.",
+    "Im Frühling ist es warm."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "der Sommer.",
+    "Im Sommer ist es lange hell."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "der Herbst.",
+    "Im Herbst regnet es oft."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "der Winter.",
+    "Im Winter ist es kalt."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "das Datum.",
+    "Welches Datum ist heute?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "die Sonne.",
+    "Die Sonne scheint."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "der Regen.",
+    "Bei Regen feiern wir hier."
+   ]
+  }
+ ],
+ "script": "Also. [pause] wünschen, hat gewünscht. Ich wünsche dir viel Spaß. [pause] allein. Dohyun wohnt allein. [pause] die Jahreszeit, die Jahreszeiten. Welche Jahreszeit gefällt dir? [pause] der Frühling. Im Frühling ist es warm. [pause] der Sommer. Im Sommer ist es lange hell. [pause] der Herbst. Im Herbst regnet es oft. [pause] der Winter. Im Winter ist es kalt. [pause] das Datum. Welches Datum ist heute? [pause] die Sonne. Die Sonne scheint. [pause] der Regen. Bei Regen feiern wir hier. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

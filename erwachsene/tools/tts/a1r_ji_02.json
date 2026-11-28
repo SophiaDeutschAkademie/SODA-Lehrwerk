@@ -1,0 +1,81 @@
+{
+ "job": "a1r_ji_02",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Schwarz ist gut. Ja, diese Schuhe passen. Ich nehme sie."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Die Hose passt mir nicht."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Carlos hat am Samstag Geburtstag. Was schenken wir ihm?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Stimmt! Oder schenken wir ihm ein Buch?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Und ein Gutschein?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Wie viel geben wir?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Jiu",
+   "parts": [
+    "Wer kauft den Gutschein?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Oh, danke für die Einladung! Ich komme gern. Ist die Party hier in der Wohnung?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Und bei Regen?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Jiu",
+   "parts": [
+    "Soll ich etwas mitbringen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Schwarz ist gut. Ja, diese Schuhe passen. Ich nehme sie. [pause] Die Hose passt mir nicht. [pause] Carlos hat am Samstag Geburtstag. Was schenken wir ihm? [pause] Stimmt! Oder schenken wir ihm ein Buch? [pause] Und ein Gutschein? [pause] Wie viel geben wir? [pause] Wer kauft den Gutschein? [pause] Oh, danke für die Einladung! Ich komme gern. Ist die Party hier in der Wohnung? [pause] Und bei Regen? [pause] Soll ich etwas mitbringen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

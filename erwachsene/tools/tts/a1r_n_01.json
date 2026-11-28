@@ -1,0 +1,86 @@
+{
+ "job": "a1r_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Die Jacke gefällt mir."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Die Hose passt mir nicht."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Kann ich Ihnen helfen?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Was schenken wir ihm?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Kleidung.",
+    "Die Kleidung ist heute im Angebot."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Jacke, die Jacken."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "der Mantel, die Mäntel.",
+    "Der Mantel ist zu lang."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "der Pullover, die Pullover.",
+    "Ich suche einen Pullover."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "das Hemd, die Hemden.",
+    "Dohyun trägt ein Hemd."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Bluse, die Blusen.",
+    "Die Bluse ist schick."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Die Jacke gefällt mir. [pause] Die Hose passt mir nicht. [pause] Kann ich Ihnen helfen? [pause] Was schenken wir ihm? [pause] die Kleidung. Die Kleidung ist heute im Angebot. [pause] die Jacke, die Jacken. [pause] der Mantel, die Mäntel. Der Mantel ist zu lang. [pause] der Pullover, die Pullover. Ich suche einen Pullover. [pause] das Hemd, die Hemden. Dohyun trägt ein Hemd. [pause] die Bluse, die Blusen. Die Bluse ist schick. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

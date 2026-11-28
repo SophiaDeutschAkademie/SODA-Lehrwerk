@@ -1,0 +1,81 @@
+{
+ "job": "a1r_mk_01",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "Markus",
+   "parts": [
+    "Was schenken wir ihm? Haben Sie eine Idee?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Markus",
+   "parts": [
+    "Dann ein Buch? Er liest gern Krimis."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Markus",
+   "parts": [
+    "Wie viel gibt jeder? Zehn Euro?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Markus",
+   "parts": [
+    "Ich helfe dir. Ich hole die Blumen."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Markus",
+   "parts": [
+    "Mia hat am Samstag Geburtstag. Ich schenke ihr ein Fahrrad."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Markus",
+   "parts": [
+    "Frau Keller geht nächsten Monat in Rente. Was schenken wir ihr?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Markus",
+   "parts": [
+    "Gute Idee. Oder eine Reisetasche?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Markus",
+   "parts": [
+    "Stimmt. Was gefällt ihr noch?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Markus",
+   "parts": [
+    "Wie viel gibt jeder?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Markus",
+   "parts": [
+    "Wer kauft das Geschenk?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Was schenken wir ihm? Haben Sie eine Idee? [pause] Dann ein Buch? Er liest gern Krimis. [pause] Wie viel gibt jeder? Zehn Euro? [pause] Ich helfe dir. Ich hole die Blumen. [pause] Mia hat am Samstag Geburtstag. Ich schenke ihr ein Fahrrad. [pause] Frau Keller geht nächsten Monat in Rente. Was schenken wir ihr? [pause] Gute Idee. Oder eine Reisetasche? [pause] Stimmt. Was gefällt ihr noch? [pause] Wie viel gibt jeder? [pause] Wer kauft das Geschenk? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

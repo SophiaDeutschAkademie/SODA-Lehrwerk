@@ -1,0 +1,81 @@
+{
+ "job": "a1r_n_07",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "zu lang, zu kurz, zu eng."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "in Größe achtunddreißig, in Blau, in Schwarz."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Hose, Hemd, Handschuh"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "helfen, holen, heute"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "ihm, ihr, Ihnen"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Schuh, Jahr, wohnen"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Ich helfe ihm. Er hilft ihr."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Die Schuhe gefallen mir."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Ich helfe dir."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "Welche Jacke gefällt dir? – Diese Jacke hier."
+   ]
+  }
+ ],
+ "script": "Also. [pause] zu lang, zu kurz, zu eng. [pause] in Größe achtunddreißig, in Blau, in Schwarz. [pause] Hose, Hemd, Handschuh [pause] helfen, holen, heute [pause] ihm, ihr, Ihnen [pause] Schuh, Jahr, wohnen [pause] Ich helfe ihm. Er hilft ihr. [pause] Die Schuhe gefallen mir. [pause] Ich helfe dir. [pause] Welche Jacke gefällt dir? – Diese Jacke hier. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

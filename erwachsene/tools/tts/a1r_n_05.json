@@ -1,0 +1,91 @@
+{
+ "job": "a1r_n_05",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "schick.",
+    "Der Anzug ist schick."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "schön.",
+    "Das Kleid ist schön."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "das Geschenk, die Geschenke.",
+    "Wir brauchen ein Geschenk."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "schenken, hat geschenkt.",
+    "Wir schenken ihm einen Gutschein."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "der Geburtstag, die Geburtstage.",
+    "Lena hat am Samstag Geburtstag."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "der Gutschein, die Gutscheine.",
+    "Der Gutschein ist von der Buchhandlung."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "das Buch, die Bücher.",
+    "Er liest gern Bücher."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Buchhandlung, die Buchhandlungen.",
+    "Die Buchhandlung ist in der Nähe."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Blume, die Blumen.",
+    "Ich hole die Blumen."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Karte, die Karten.",
+    "Wir schreiben eine Karte."
+   ]
+  }
+ ],
+ "script": "Also. [pause] schick. Der Anzug ist schick. [pause] schön. Das Kleid ist schön. [pause] das Geschenk, die Geschenke. Wir brauchen ein Geschenk. [pause] schenken, hat geschenkt. Wir schenken ihm einen Gutschein. [pause] der Geburtstag, die Geburtstage. Lena hat am Samstag Geburtstag. [pause] der Gutschein, die Gutscheine. Der Gutschein ist von der Buchhandlung. [pause] das Buch, die Bücher. Er liest gern Bücher. [pause] die Buchhandlung, die Buchhandlungen. Die Buchhandlung ist in der Nähe. [pause] die Blume, die Blumen. Ich hole die Blumen. [pause] die Karte, die Karten. Wir schreiben eine Karte. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

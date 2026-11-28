@@ -1,0 +1,25 @@
+{
+ "job": "a1s_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/wiederholung-2",
+   "who": "N",
+   "parts": [
+    "Im Sommer ist es warm."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "N",
+   "parts": [
+    "Wie komme ich zur Post?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Im Sommer ist es warm. [pause] Wie komme ich zur Post? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

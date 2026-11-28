@@ -1,0 +1,81 @@
+{
+ "job": "a1r_do_01",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "Dohyun",
+   "parts": [
+    "Er hat schon einen Rucksack. Der Rucksack ist ganz neu."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Dohyun",
+   "parts": [
+    "Wir schenken ihm einen Gutschein von der Buchhandlung. Dann kann er die Bücher selbst kaufen."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Dohyun",
+   "parts": [
+    "Ich kann das machen. Die Buchhandlung ist in der Nähe."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Dohyun",
+   "parts": [
+    "Das Hemd passt mir nicht. Es ist zu eng."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "Dohyun",
+   "parts": [
+    "Wir schenken ihm einen Gutschein."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Dohyun",
+   "parts": [
+    "Nein, noch nicht. Was ist das Sommerfest?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Dohyun",
+   "parts": [
+    "Wo ist das Fest?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Dohyun",
+   "parts": [
+    "Kann man die Familie mitbringen?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Dohyun",
+   "parts": [
+    "Leider nicht. Meine Frau und mein Sohn sind noch in Korea. Aber sie kommen im August nach Deutschland!"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Dohyun",
+   "parts": [
+    "Seit acht Monaten."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Er hat schon einen Rucksack. Der Rucksack ist ganz neu. [pause] Wir schenken ihm einen Gutschein von der Buchhandlung. Dann kann er die Bücher selbst kaufen. [pause] Ich kann das machen. Die Buchhandlung ist in der Nähe. [pause] Das Hemd passt mir nicht. Es ist zu eng. [pause] Wir schenken ihm einen Gutschein. [pause] Nein, noch nicht. Was ist das Sommerfest? [pause] Wo ist das Fest? [pause] Kann man die Familie mitbringen? [pause] Leider nicht. Meine Frau und mein Sohn sind noch in Korea. Aber sie kommen im August nach Deutschland! [pause] Seit acht Monaten. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

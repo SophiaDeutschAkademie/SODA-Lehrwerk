@@ -1,0 +1,81 @@
+{
+ "job": "a1s_so_01",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Sora",
+   "parts": [
+    "Guten Morgen! Hier ist Sora Lee. Ich möchte einen Termin vereinbaren."
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Sora",
+   "parts": [
+    "Am Dienstag kann ich leider nicht. Ich habe Unterricht. Geht es am Mittwoch?"
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Sora",
+   "parts": [
+    "Das geht. Muss ich etwas mitbringen?"
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Sora",
+   "parts": [
+    "Gut. Vielen Dank! Auf Wiederhören!"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Am Mittwoch kann ich nicht. Ich habe einen Arzttermin."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Hana hat Fieber und Husten. Sie soll im Bett bleiben."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Im Juli sind wir nach Konstanz gefahren. Die Fahrt hat vier Stunden gedauert."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Wir haben in einer Ferienwohnung gewohnt. Sie war klein, aber hell."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Das Wetter war schön, und wir sind viel geschwommen."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Am Mittwoch hatte Hana Halsschmerzen. Wir sind zur Apotheke gegangen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Morgen! Hier ist Sora Lee. Ich möchte einen Termin vereinbaren. [pause] Am Dienstag kann ich leider nicht. Ich habe Unterricht. Geht es am Mittwoch? [pause] Das geht. Muss ich etwas mitbringen? [pause] Gut. Vielen Dank! Auf Wiederhören! [pause] Am Mittwoch kann ich nicht. Ich habe einen Arzttermin. [pause] Hana hat Fieber und Husten. Sie soll im Bett bleiben. [pause] Im Juli sind wir nach Konstanz gefahren. Die Fahrt hat vier Stunden gedauert. [pause] Wir haben in einer Ferienwohnung gewohnt. Sie war klein, aber hell. [pause] Das Wetter war schön, und wir sind viel geschwommen. [pause] Am Mittwoch hatte Hana Halsschmerzen. Wir sind zur Apotheke gegangen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

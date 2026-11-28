@@ -1,0 +1,74 @@
+{
+ "job": "a1s_mk_01",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Markus",
+   "parts": [
+    "Ich stehe um sechs Uhr auf. Um halb sieben frühstücke ich."
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Markus",
+   "parts": [
+    "Die Arbeit fängt um acht Uhr an."
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Markus",
+   "parts": [
+    "Von zwölf bis eins habe ich Pause. Ich esse einen Salat."
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Markus",
+   "parts": [
+    "Am Abend koche ich. Dann sehe ich fern."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Der Kurs fängt um halb neun an."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Hast du am Samstag Zeit?"
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Gehen Sie geradeaus und dann links. Die Apotheke ist neben der Bank."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Entschuldigung, wie komme ich zum Bahnhof?"
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Wie ist das Wetter heute?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich stehe um sechs Uhr auf. Um halb sieben frühstücke ich. [pause] Die Arbeit fängt um acht Uhr an. [pause] Von zwölf bis eins habe ich Pause. Ich esse einen Salat. [pause] Am Abend koche ich. Dann sehe ich fern. [pause] Der Kurs fängt um halb neun an. [pause] Hast du am Samstag Zeit? [pause] Gehen Sie geradeaus und dann links. Die Apotheke ist neben der Bank. [pause] Entschuldigung, wie komme ich zum Bahnhof? [pause] Wie ist das Wetter heute? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

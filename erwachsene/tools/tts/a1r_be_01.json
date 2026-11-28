@@ -1,0 +1,60 @@
+{
+ "job": "a1r_be_01",
+ "who": "Becker",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "Becker",
+   "parts": [
+    "Frau Lee, bald sind Sommerferien. Was machen Sie im Urlaub?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Becker",
+   "parts": [
+    "Wie schön! Wann fahren Sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Becker",
+   "parts": [
+    "Fahren Sie mit dem Auto?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Becker",
+   "parts": [
+    "Und was kann man dort machen?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Becker",
+   "parts": [
+    "Haben Sie schon ein Hotel?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Becker",
+   "parts": [
+    "Sehr gut. Wie ist das Wetter dort im Sommer?"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "Becker",
+   "parts": [
+    "Dann nehmen Sie einen Regenschirm mit. Ich wünsche Ihnen einen schönen Urlaub!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Frau Lee, bald sind Sommerferien. Was machen Sie im Urlaub? [pause] Wie schön! Wann fahren Sie? [pause] Fahren Sie mit dem Auto? [pause] Und was kann man dort machen? [pause] Haben Sie schon ein Hotel? [pause] Sehr gut. Wie ist das Wetter dort im Sommer? [pause] Dann nehmen Sie einen Regenschirm mit. Ich wünsche Ihnen einen schönen Urlaub! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

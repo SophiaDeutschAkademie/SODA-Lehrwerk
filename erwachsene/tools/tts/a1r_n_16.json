@@ -1,0 +1,25 @@
+{
+ "job": "a1r_n_16",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Es ist warm, aber es regnet oft."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Wir nehmen eine Ferienwohnung, denn Hotels sind teuer."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Es ist warm, aber es regnet oft. [pause] Wir nehmen eine Ferienwohnung, denn Hotels sind teuer. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

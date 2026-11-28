@@ -1,0 +1,91 @@
+{
+ "job": "a1r_n_11",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "der Schnee.",
+    "Im Winter gibt es Schnee."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "der Wind.",
+    "Der Wind ist kalt."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "das Gewitter, die Gewitter.",
+    "Am Abend gibt es ein Gewitter."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "der Regenschirm, die Regenschirme.",
+    "Nimm einen Regenschirm mit!"
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "der Grad.",
+    "Heute sind es 25 Grad."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Es regnet.",
+    "Heute regnet es."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "Es schneit.",
+    "Im Januar schneit es."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "warm.",
+    "Im Juni ist es warm."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "kalt.",
+    "Heute ist es kalt."
+   ]
+  },
+  {
+   "pid": "a1-2/6",
+   "who": "N",
+   "parts": [
+    "heiß.",
+    "Im August ist es heiß."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Schnee. Im Winter gibt es Schnee. [pause] der Wind. Der Wind ist kalt. [pause] das Gewitter, die Gewitter. Am Abend gibt es ein Gewitter. [pause] der Regenschirm, die Regenschirme. Nimm einen Regenschirm mit! [pause] der Grad. Heute sind es 25 Grad. [pause] Es regnet. Heute regnet es. [pause] Es schneit. Im Januar schneit es. [pause] warm. Im Juni ist es warm. [pause] kalt. Heute ist es kalt. [pause] heiß. Im August ist es heiß. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,91 @@
+{
+ "job": "a1r_n_03",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "tragen, du trägst, hat getragen.",
+    "Sie trägt gern Blau."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "anprobieren, hat anprobiert.",
+    "Ich probiere die Jacke an."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "das Kaufhaus, die Kaufhäuser.",
+    "Das Kaufhaus ist im Zentrum."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "das Geschäft, die Geschäfte.",
+    "Das Geschäft ist in der Nähe."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Verkäuferin, die Verkäuferinnen.",
+    "Die Verkäuferin hilft mir."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Größe, die Größen.",
+    "Welche Größe haben Sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Farbe, die Farben.",
+    "Welche Farbe gefällt dir?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Umkleidekabine, die Umkleidekabinen.",
+    "Wo ist die Umkleidekabine?"
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "die Kasse, die Kassen.",
+    "Die Kasse ist dort hinten."
+   ]
+  },
+  {
+   "pid": "a1-2/5",
+   "who": "N",
+   "parts": [
+    "der Kassenzettel, die Kassenzettel.",
+    "Sie brauchen den Kassenzettel."
+   ]
+  }
+ ],
+ "script": "Also. [pause] tragen, du trägst, hat getragen. Sie trägt gern Blau. [pause] anprobieren, hat anprobiert. Ich probiere die Jacke an. [pause] das Kaufhaus, die Kaufhäuser. Das Kaufhaus ist im Zentrum. [pause] das Geschäft, die Geschäfte. Das Geschäft ist in der Nähe. [pause] die Verkäuferin, die Verkäuferinnen. Die Verkäuferin hilft mir. [pause] die Größe, die Größen. Welche Größe haben Sie? [pause] die Farbe, die Farben. Welche Farbe gefällt dir? [pause] die Umkleidekabine, die Umkleidekabinen. Wo ist die Umkleidekabine? [pause] die Kasse, die Kassen. Die Kasse ist dort hinten. [pause] der Kassenzettel, die Kassenzettel. Sie brauchen den Kassenzettel. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

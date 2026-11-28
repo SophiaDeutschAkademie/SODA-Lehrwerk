@@ -1,0 +1,32 @@
+{
+ "job": "a1s_fr_03",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Welche Größe haben Sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Hier, bitte. Die Umkleidekabine ist dort hinten."
+   ]
+  },
+  {
+   "pid": "a1-2/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Neunundzwanzig Euro."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Welche Größe haben Sie? [pause] Hier, bitte. Die Umkleidekabine ist dort hinten. [pause] Neunundzwanzig Euro. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

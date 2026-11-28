@@ -1,0 +1,81 @@
+{
+ "job": "a1s_fr_02",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Und am Donnerstag um Viertel nach drei?"
+   ]
+  },
+  {
+   "pid": "a1-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Gut. Bitte bringen Sie Ihre Versichertenkarte mit."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Gern. Möchten Sie auch ein Stück Kuchen?"
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Drei Euro achtzig, bitte."
+   ]
+  },
+  {
+   "pid": "a1-1/stufentest",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag! Was möchten Sie?"
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag! Bitte schön?"
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Wann möchten Sie fahren?"
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Einfach oder hin und zurück?"
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Der Zug fährt um acht Uhr zwanzig auf Gleis sieben ab. Sie müssen nicht umsteigen."
+   ]
+  },
+  {
+   "pid": "a1-2/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Hin und zurück achtunddreißig Euro."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Und am Donnerstag um Viertel nach drei? [pause] Gut. Bitte bringen Sie Ihre Versichertenkarte mit. [pause] Gern. Möchten Sie auch ein Stück Kuchen? [pause] Drei Euro achtzig, bitte. [pause] Guten Tag! Was möchten Sie? [pause] Guten Tag! Bitte schön? [pause] Wann möchten Sie fahren? [pause] Einfach oder hin und zurück? [pause] Der Zug fährt um acht Uhr zwanzig auf Gleis sieben ab. Sie müssen nicht umsteigen. [pause] Hin und zurück achtunddreißig Euro. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}
