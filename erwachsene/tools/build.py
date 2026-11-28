@@ -198,13 +198,16 @@ def panels(levels, book):
 
 def note(levels):
     """표지 아래 안내: 본문이 어디까지 올라왔는지"""
-    parts = []
+    parts = []; alle = True; zahl = 0
     for lv in levels:
         ns = sorted(int(x.rsplit('/', 1)[1]) for x in lv_open(lv) if x.rsplit('/', 1)[1].isdigit())
+        zahl += len(ns); alle = alle and len(lv_open(lv)) == len(lv['items'])
         if ns:
             parts.append('%s Lektion %s' % (lv['code'], ('%d–%d' % (ns[0], ns[-1])) if ns == list(range(ns[0], ns[-1] + 1)) and len(ns) > 1 else ', '.join(str(n) for n in ns)))
     if not parts:
         return '지금은 목차만 볼 수 있어요. 본문은 %s부터 차례로 올라와요.' % levels[0]['code']
+    if alle:                                                    # 모든 단계의 과, 복습, 단계 평가가 열려 있다
+        return '본문은 %s부터 %s까지 과 %d개가 모두 올라와 있어요.' % (levels[0]['code'], levels[-1]['code'], zahl)
     return '본문은 %s까지 올라와 있어요. 나머지는 차례로 올라와요.' % ', '.join(parts)
 
 

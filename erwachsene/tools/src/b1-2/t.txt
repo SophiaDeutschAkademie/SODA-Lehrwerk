@@ -1,0 +1,154 @@
+@id b1-2/stufentest
+@typ test
+
+== hoeren
+-- info B1.2를 돌아보는 평가예요
+p: 듣기, 읽기, 쓰기, 말하기 네 부분으로 되어 있어요. 시간 제한은 없어요. 문제를 풀면 바로 맞았는지 알려 주고, 마지막 Ergebnis에서 부분마다 몇 문제를 맞혔는지 보여 줘요.
+p: 음성은 여러 번 들을 수 있어요. 먼저 한 번만 듣고 풀어 보면 내 듣기 실력을 더 정확히 알 수 있어요.
+
+-- ex Hören 1 | 짧은 말을 듣고 알맞은 것을 고르세요.
+hör: Jiu: Nachdem ich das Praktikum beendet hatte, habe ich mich um die Stelle beworben.
+mc: 어느 일이 먼저 있었나요? | 인턴을 마쳤어요* | 자리에 지원했어요 | 두 일이 같은 때 있었어요 => nachdem 문장의 일이 먼저예요.
+hör: Lena: Ich bewerbe mich sowohl für Biologie als auch für Biochemie.
+mc: Lena는 어디에 지원하나요? | 생물학과 생화학 둘 다* | 생물학에만 | 어느 쪽에도 지원하지 않아요
+hör: Markus: Statt zu fliegen, fahren wir mit der Bahn nach Hamburg.
+mc: 두 사람은 함부르크에 어떻게 가나요? | 기차로* | 비행기로 | 차로
+hör: Dohyun: Wenn ich das gewusst hätte, hätte ich die Karte mit beiden Händen gegeben.
+mc: Dohyun은 명함을 두 손으로 줬나요? | 아니요, 그렇게 하지 않았어요* | 네, 두 손으로 줬어요 | 명함을 주지 않았어요 => hätte와 Partizip은 실제로는 하지 않은 일을 말해요.
+hör: Hoffmann: Die Einführung wird wohl ein halbes Jahr dauern.
+mc: Frau Hoffmann은 얼마나 확실하게 말하나요? | 그럴 것 같다고 짐작해요* | 틀림없다고 해요 | 그럴 리 없다고 해요
+
+-- ex Hören 2 | Jiu가 고장 난 청소기를 들고 Repair-Café에 갔어요. 듣고 답하세요.
+audio | Im Repair-Café | Mann=Helfer
+> Jiu: Guten Tag. Mein Staubsauger geht nicht mehr an. Können Sie ihn sich mal ansehen?
+> Mann: Gern. Seit wann funktioniert er nicht mehr?
+> Jiu: Seit einer Woche. Zuerst wurde er sehr heiß, dann ging er aus.
+> Mann: Dann ist wohl der Motor kaputt. Ich lasse ihn von meinem Kollegen prüfen, der weiß mehr darüber.
+> Jiu: Und was kostet die Reparatur?
+> Mann: Nichts. Wir arbeiten hier ehrenamtlich. Falls wir ein neues Teil brauchen, bezahlen Sie nur das Teil.
+> Jiu: Das ist ja toll. Wie lange dauert es?
+> Mann: Ungefähr eine Stunde. Trinken Sie doch so lange einen Kaffee.
+mc: Was ist das Problem? | Der Staubsauger geht nicht mehr an.* | Der Staubsauger ist zu laut. | Der Staubsauger ist zu schwer.
+rf: Der Helfer vermutet, dass der Motor kaputt ist. | r
+mc: Was muss Jiu bezahlen? | nur ein neues Teil, falls man eins braucht* | fünfzig Euro für die Reparatur | eine Stunde Arbeit
+mc: Wie lange dauert die Reparatur? | ungefähr eine Stunde* | eine Woche | zehn Minuten
+
+-- ex Hören 3 | 라디오의 주말 소식이에요. 듣고 답하세요.
+audio | Ein Tipp für das Wochenende | Frau=Radio
+> Frau: Und nun ein Tipp für das Wochenende. Am Samstag findet in unserer Stadt die Nacht der Museen statt.
+> Frau: Mehr als dreißig Museen haben von neunzehn Uhr bis zwei Uhr nachts geöffnet. Mit einem Ticket können Sie alle Häuser besuchen.
+> Frau: Das Ticket kostet zwölf Euro. Studierende bekommen eine Ermäßigung, sodass sie nur acht Euro bezahlen.
+> Frau: Im Historischen Museum erzählen Zeitzeugen vom Fall der Mauer. Falls Sie mit Kindern kommen: Für sie gibt es ein eigenes Programm bis einundzwanzig Uhr.
+mc: Wann findet die Nacht der Museen statt? | am Samstag* | am Sonntag | am Freitag
+mc: Was kann man mit einem Ticket tun? | alle Museen besuchen* | nur ein Museum besuchen | kostenlos mit dem Bus fahren
+rf: Studierende bezahlen genauso viel wie alle anderen. | f => 할인을 받아서 8유로만 내요.
+mc: 역사 박물관에서는 무엇을 들을 수 있나요? | 그때를 겪은 사람들이 들려주는 장벽이 무너진 이야기* | 어린이를 위한 음악 | 새 전시에 대한 강연
+
+== lesen
+-- ex Lesen 1 | 도서관 게시판에 붙은 글이에요. 읽고 답하세요.
+text notiz | Ehrenamtliche gesucht
+> Das Sprachcafé in der Stadtbibliothek sucht Ehrenamtliche!
+> Jeden Dienstag von 17 bis 19 Uhr treffen sich bei uns Menschen, die Deutsch üben möchten. Wir suchen Helferinnen und Helfer, die Zeit und Geduld haben.
+> Sie müssen weder Lehrer sein noch perfekt Deutsch sprechen. Wichtig ist, dass Sie gern zuhören.
+> Was wir bieten: eine Einführung für neue Helfer, nette Leute sowie Kaffee und Kuchen.
+> Falls Sie Interesse haben, kommen Sie einfach an einem Dienstag vorbei oder schreiben Sie an sprachcafe@example.org.
+mc: Wann findet das Sprachcafé statt? | jeden Dienstag am Abend* | jeden Samstag am Vormittag | einmal im Monat
+rf: Die Helfer müssen Lehrer sein. | f => 교사가 아니어도 되고 독일어가 완벽하지 않아도 돼요.
+mc: Was ist für die Arbeit wichtig? | dass man gern zuhört* | dass man Geld spendet | dass man ein Auto hat
+mc: 관심이 있으면 어떻게 하나요? | 화요일에 그냥 들르거나 메일을 써요* | 전화로 면접 날짜를 잡아요 | 지원서를 우편으로 보내요
+
+-- ex Lesen 2 | 지역 신문의 기사예요. 읽고 답하세요.
+text notiz | Aus der alten Fabrik wird ein Kulturzentrum
+> Frankfurt. In der 1905 gebauten Fabrik im Osten der Stadt wurden früher Maschinen hergestellt. 1991 wurde sie geschlossen. Seitdem stand das Gebäude leer.
+> Nun hat die Stadt entschieden: Das Gebäude bleibt stehen und wird renoviert. In zwei Jahren soll dort ein Kulturzentrum mit einem Theater, Werkstätten und einem Café entstehen.
+> „Zwar ist die Renovierung teurer als ein neues Gebäude, aber die Fabrik gehört zur Geschichte des Stadtteils“, sagte Frau Wolf von der Stadt.
+> Nicht alle sind zufrieden. Einige Nachbarn haben Angst vor mehr Lärm und Verkehr.
+> Am 14. September können die Bürger im Bürgerhaus ihre Fragen stellen.
+mc: Was passiert mit der alten Fabrik? | Sie wird renoviert.* | Sie wird zerstört. | Sie wird wieder eine Fabrik.
+mc: Was soll in dem Gebäude entstehen? | ein Kulturzentrum* | ein Einkaufszentrum | ein Museum für Maschinen
+rf: Die Renovierung ist billiger als ein neues Gebäude. | f => 새로 짓는 것보다 비싸다고 했어요.
+mc: Wovor haben einige Nachbarn Angst? | vor mehr Lärm und Verkehr* | vor höheren Mieten | vor weniger Parkplätzen
+
+-- ex Lesen 3 | 인사부의 Frau Schulz가 Dohyun에게 보낸 메일이에요. 읽고 답하세요.
+text mail | Ihre neue Aufgabe ab Januar
+> Von: a.schulz@example.com
+> An: dohyun.park@example.com
+> Betreff: Ihre neue Aufgabe ab Januar
+> Sehr geehrter Herr Park,
+> wie Frau Hoffmann Ihnen schon gesagt hat, übernehmen Sie ab dem 1. Januar die Projektleitung für unseren Kunden in Hamburg.
+> Nachdem die Leitung der Firma zugestimmt hat, bekommen Sie in den nächsten Tagen den neuen Vertrag. Bitte lesen Sie ihn in Ruhe, bevor Sie unterschreiben.
+> Die Firma übernimmt außerdem die Kosten für Ihren Deutschkurs. Schicken Sie mir dafür bitte sowohl die Anmeldung als auch die Rechnung.
+> Falls Sie Fragen zum Vertrag haben, können Sie mich gern anrufen.
+> Mit freundlichen Grüßen
+> Anke Schulz
+mc: Was übernimmt Herr Park ab Januar? | die Projektleitung für einen Kunden in Hamburg* | die Leitung der Personalabteilung | ein neues Büro in Hamburg
+rf: Herr Park soll den Vertrag lesen, bevor er unterschreibt. | r
+mc: Was soll Herr Park für den Deutschkurs schicken? | die Anmeldung und die Rechnung* | nur die Rechnung | sein Zeugnis
+mc: 계약서에 대해 궁금한 것이 있으면 어떻게 하나요? | Frau Schulz에게 전화해요* | Frau Hoffmann에게 메일을 써요 | 다음 면담까지 기다려요
+
+== schreiben
+-- ex Schreiben 1 | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: nachdem / ich / angekommen war, / rief ich / meine Eltern an. | 도착한 뒤에 부모님께 전화했어요.
+ord: ich / werde / im Oktober / nach Leipzig / ziehen. ~ im Oktober / werde / ich / nach Leipzig / ziehen. | 10월에 라이프치히로 이사할 거예요.
+ord: wir / lassen / die Maschine / reparieren. | 우리는 기계를 수리 맡겨요.
+ord: das ist / alles, / was / ich / weiß. | 제가 아는 건 그게 다예요.
+ord: wenn / ich / Zeit / gehabt hätte, / wäre ich / gekommen. | 시간이 있었다면 갔을 거예요.
+ord: falls / es / regnet, / bleiben / wir / zu Hause. | 혹시 비가 오면 우리는 집에 있어요.
+
+-- ex Schreiben 2 | 괄호 안의 낱말을 알맞은 형태로 바꿔 빈칸에 쓰세요.
+gap: Nachdem er gegessen [=hatte], ging er spazieren. (haben) | 그 사람은 밥을 먹은 뒤에 산책하러 갔어요. => 더 앞선 일은 Plusquamperfekt로 써요.
+gap: Im Herbst [=wird] Lena in Leipzig studieren. (werden) | 가을에 Lena는 라이프치히에서 공부할 거예요.
+gap: Ich [=lasse] mein Fahrrad reparieren. (lassen) | 저는 자전거를 수리 맡겨요.
+gap: Das ist alles, [=was] ich weiß. (das 또는 was) | 제가 아는 건 그게 다예요. => alles, etwas, nichts 뒤에는 was로 이어요.
+gap: Wenn ich das gewusst [=hätte], hätte ich gefragt. (haben) | 그걸 알았다면 물어봤을 거예요.
+gap: Die Mauer [=fiel] 1989. (fallen) | 장벽은 1989년에 무너졌어요.
+gap: Berlin war eine [=geteilte] Stadt. (teilen) | 베를린은 나뉜 도시였어요. => Partizip II에 형용사의 끝을 붙여요.
+gap: Die [=wachsende] Firma brauchte mehr Platz. (wachsen) | 커 가는 회사에 자리가 더 필요했어요. => Partizip I은 Infinitiv에 d를 붙여요.
+
+-- ex Schreiben 3 | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Bevor ich unterschreibe, lese ich den Vertrag. | 서명하기 전에 계약서를 읽어요.
+dik: N: Ich habe weder Zeit noch Geld. | 저는 시간도 돈도 없어요.
+dik: N: Das hätte ich früher wissen sollen. | 그건 더 일찍 알았어야 했어요.
+dik: N: Falls du Zeit hast, komm doch mal vorbei. | 혹시 시간이 나면 한번 들러요.
+
+-- schreiben Mein Text | 내가 사는 도시가 내년부터 시내 중심가에 차가 들어오지 못하게 하려고 해요. 시에 내 의견을 메일로 써요. 아래 내용을 넣어서 여덟 문장 넘게 써 보세요. 이 글은 자동으로 채점하지 않아요. 다 쓴 뒤에 예시 글과 비교하고 아래 항목을 스스로 확인해요.
+punkt: 인사 ; 내 의견 ; 좋은 점과 나쁜 점 ; 내 경험 ; 조건이나 제안 ; 맺음말
+start: Sehr geehrte Damen und Herren, …
+muster: Sehr geehrte Damen und Herren, ich habe gelesen, dass ab dem nächsten Jahr keine Autos mehr in die Innenstadt fahren dürfen. Ich finde diese Idee gut. Zwar brauchen manche Menschen ihr Auto, aber ohne Autos wird die Luft besser, und die Straßen werden ruhiger. In meiner Stadt in Korea wurde vor einigen Jahren eine Straße für Autos geschlossen. Seitdem gehen dort viel mehr Menschen spazieren und einkaufen. Wichtig ist, dass die Busse und Bahnen öfter fahren, sodass alle gut ins Zentrum kommen. Falls ältere Menschen Hilfe brauchen, sollte es für sie kleine Busse geben. Ich hoffe, dass die Stadt bei ihrem Plan bleibt. Mit freundlichen Grüßen, Minji Choi
+check: 여덟 문장 넘게 썼어요 ; 의견을 첫머리에 분명히 썼어요 ; zwar … aber로 좋은 점과 나쁜 점을 썼어요 ; 경험을 Präteritum이나 Passiv로 썼어요 ; falls나 sodass를 한 번 넘게 썼어요
+
+== sprechen
+-- info 소리 내어 말해요
+p: 말하기는 자동으로 채점하지 않아요. 질문을 듣고 바로 소리 내어 답한 다음, 예시 답과 비교해 보세요.
+p: 녹음 단추를 누르면 내 목소리를 다시 들을 수 있어요. 녹음은 저장되지 않아요.
+
+-- sprich Fragen und Antworten | 질문을 듣고 소리 내어 답하세요. 두세 문장으로 답하면 돼요. | Frau=Personalleiterin; Mann=Museumsmitarbeiter
+f: Becker: Was hatten Sie gemacht, bevor Sie nach Deutschland kamen? | 독일에 오기 전에는 무엇을 하셨어요? => Bevor ich nach Deutschland kam, hatte ich in Seoul studiert. Danach hatte ich zwei Jahre gearbeitet.
+f: Lena: Was wirst du in fünf Jahren machen? | 5년 뒤에는 뭘 하고 있을 것 같아요? => In fünf Jahren werde ich wohl in Deutschland arbeiten. Vielleicht leite ich dann ein kleines Team.
+f: Markus: Was machst du für die Umwelt? | 환경을 위해 뭘 해요? => Ich fahre mit dem Rad, statt das Auto zu nehmen. Außerdem lasse ich kaputte Geräte reparieren.
+f: Frau: Warum sollten wir Sie einstellen? | 우리가 왜 지원자님을 뽑아야 할까요? => Weil ich nicht nur Erfahrung habe, sondern auch schnell lerne. Außerdem arbeite ich gern im Team.
+f: Hoffmann: Was hätten Sie in Ihrem ersten Jahr in Deutschland anders gemacht? | 독일에서 보낸 첫해에 무엇을 달리 했을 것 같아요? => Ich hätte früher einen Tandempartner gesucht. Und ich hätte mehr Fragen stellen sollen.
+f: Mann: Guten Tag. Möchten Sie an der Führung teilnehmen? | 안녕하세요. 안내에 참여하시겠어요? => Ja, gern. Wie lange dauert die Führung? Und gibt es eine Ermäßigung für Studierende?
+f: Dohyun: Wie wird künstliche Intelligenz deine Arbeit verändern? | 인공 지능이 일을 어떻게 바꿀 것 같아요? => Vermutlich werde ich weniger einfache Aufgaben haben, sodass ich mehr Zeit für schwierige Probleme habe.
+f: Sora: Was sind deine Ziele für das nächste Jahr? | 내년 목표가 뭐예요? => Kurzfristig möchte ich die B2-Prüfung bestehen. Langfristig möchte ich mich beruflich weiterentwickeln.
+
+-- sprich Meine Meinung | 아래 낱말을 보면서 1분쯤 말하세요. 주제는 '일상 속의 인공 지능'이에요. 먼저 혼자 말해 보고, 그다음에 예시를 확인해요.
+thema: Thema ; Meine Erfahrung ; Vorteile ; Risiken ; Meine Meinung
+muster: Ich möchte über künstliche Intelligenz im Alltag sprechen. Ich benutze sie fast jeden Tag, zum Beispiel wenn ich einen Text übersetze oder eine E-Mail korrigieren lasse. Ein Vorteil ist, dass man Zeit spart, sodass man sich auf wichtigere Aufgaben konzentrieren kann. Es gibt aber auch Risiken. Man wird abhängig, und nicht alles, was das Programm schreibt, ist richtig. Deshalb prüfe ich die Ergebnisse immer selbst. Meiner Meinung nach ist künstliche Intelligenz eine gute Hilfe, falls man selbst weiterdenkt.
+
+== ergebnis
+-- bilanz
+hoch: B1.2에서 배운 내용을 잘 익혔어요. A1부터 B1까지 「성인 독일어」를 모두 마쳤어요. 이제 B2로 넘어갈 준비가 됐어요.
+mittel: 대부분 익혔어요. 틀린 문제의 설명을 다시 읽고, 점수가 낮은 부분은 Wiederholung 1과 Wiederholung 2의 복습 문제로 한 번 더 연습해 보세요.
+tief: 아직 헷갈리는 내용이 많아요. Wiederholung 1과 Wiederholung 2의 복습 문제를 다시 풀고, 어려웠던 과의 Grammatik과 Training을 본 다음 평가를 한 번 더 해 보세요.
+
+-- info 쓰기와 말하기는 스스로 확인해요
+p: 글쓰기 과제와 말하기는 점수에 들어가지 않아요. 아래 세 가지를 얼마나 할 수 있는지 스스로 표시해 보세요.
+
+-- kann
+Ich kann meine Meinung zu einem Thema begründen und auf andere Meinungen reagieren. | 주제에 대한 의견에 이유를 붙이고 다른 의견에 반응할 수 있어요.
+Ich kann über Vergangenes berichten und sagen, was ich anders gemacht hätte. | 지난 일을 전하고, 무엇을 달리 했을지 말할 수 있어요.
+Ich kann über Pläne, Vermutungen und Bedingungen sprechen. | 계획과 추측, 조건을 말할 수 있어요.
+
+-- info 다음 단계는 B2
+p: 「성인 독일어」는 여기까지예요. 첫인사에서 시작해서 지원서, 토론, 의견 글까지 왔어요. B2부터는 목적에 따라 교재가 나뉘어요. 대학에서 공부하려는 사람은 「대학생 독일어」로, 일터에서 쓰려는 사람은 「직장인 독일어」로 이어 가요. 두 교재의 과는 아직 준비 중이에요.

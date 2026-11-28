@@ -393,7 +393,7 @@ def parse(path):
                     raise AssertionError('tafel 에 쓸 수 없는 줄')
             elif t == 'punkt':
                 if key == 'bsp':
-                    f = fields(rest); blk['bsp'].append((f[0], f[1] if len(f) > 1 else ''))
+                    f, say = take_say(fields(rest)); blk['bsp'].append((f[0], f[1] if len(f) > 1 else '', say or plain(f[0])))
                 elif key == 'finde':
                     blk['finde'] = p_mc(rest)
                 elif key in ('regel', 'merke'):
@@ -572,8 +572,8 @@ def audio_items(L):
                 for h in b['hoer']:
                     add('N', h['say'])
             elif t == 'punkt':
-                for de_, _ in b['bsp']:                                   # 문법 예문도 눌러서 들을 수 있게 한다
-                    add('N', plain(de_))
+                for _, _, say_ in b['bsp']:                               # 문법 예문도 눌러서 들을 수 있게 한다
+                    add('N', say_)
             elif t == 'alphabet':
                 for _, say, _ in ALPHABET:
                     add('N', say)
@@ -1427,8 +1427,8 @@ class Page:
         for b in blocks:
             if b['t'] == 'punkt':
                 bsp = ''
-                for de_, ko_ in b['bsp']:
-                    a = any_voice(self.mp, self.pid, plain(de_))
+                for de_, ko_, say_ in b['bsp']:
+                    a = any_voice(self.mp, self.pid, say_)
                     bsp += '<li>%s<span lang="de">%s</span><span class="ko">%s</span></li>' % (self.ton(a, 'klein') if a else '<span class="punkt" aria-hidden="true"></span>', hl(de_), ko(ko_))
                 finde = self.ex('', '규칙을 보고 바로 확인해 보세요.', [b['finde']], 'finde' + b['de'], 'ex finde') if b['finde'] else ''
                 tab = ''

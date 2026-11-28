@@ -1,0 +1,150 @@
+@id b1-2/wiederholung-1
+@typ station
+@lektionen 1 2 3 4
+
+== rueckblick
+-- info Lektion 1부터 4까지 왔어요
+p: 여기서는 새 내용을 배우지 않아요. 지원과 면접, 대학과 직무 교육, 환경, 사회 참여에서 배운 것을 섞어서 다시 써 봐요. 마지막에는 독일식 이력서를 만들고 지원 메일을 써 봐요.
+p: 먼저 어느 과까지 마쳤는지 보고, 낱말을 다시 떠올려 보세요.
+-- fortschritt
+-- quiz 낱말 다시 보기 | Lektion 1–4의 낱말로 여덟 문제를 풀어요. 다시 하면 다른 낱말이 나와요.
+
+== training
+-- ex Hören | Dohyun이 함부르크 사무실에 지원한 Frau Petersen에게 전화해요. 듣고 답하세요.
+audio | Eine gute Nachricht für Frau Petersen | Frau=Frau Petersen
+> Dohyun: Guten Tag, Frau Petersen, hier ist Park von Kessler Technik. Ich habe eine gute Nachricht für Sie.
+> Frau: Guten Tag, Herr Park. Jetzt bin ich aber gespannt.
+> Dohyun: Nachdem wir mit allen Kandidaten gesprochen hatten, haben wir uns für Sie entschieden. Wir möchten Ihnen die Stelle anbieten.
+> Frau: Das freut mich sehr! Wann wäre der Arbeitsbeginn?
+> Dohyun: Am ersten August. Der Vertrag ist unbefristet, und die Probezeit dauert sechs Monate.
+> Frau: Wunderbar. Bekomme ich den Vertrag per Post?
+> Dohyun: Ja, er wird Ihnen morgen geschickt. Bitte geben Sie uns bis Freitag Bescheid, ob Sie die Stelle annehmen.
+> Frau: Das mache ich. Ich werde den Vertrag lesen, sobald er da ist.
+mc: Was hat die Firma entschieden? | Frau Petersen bekommt die Stelle.* | Frau Petersen soll noch einmal kommen. | Die Stelle wird nicht besetzt.
+mc: Wann ist der Arbeitsbeginn? | am 1. August* | am Freitag | in sechs Monaten
+rf: Der Vertrag ist auf ein Jahr befristet. | f => 기간이 정해지지 않은 계약이에요.
+mc: Wie bekommt Frau Petersen den Vertrag? | per Post* | per E-Mail | bei einem Gespräch in Frankfurt
+rf: Frau Petersen soll bis Freitag antworten. | r
+
+-- ex Plusquamperfekt, nachdem, bevor | 알맞은 말을 고르세요.
+gap: Nachdem ich die Zusage bekommen [hatte|habe|war], rief ich meine Eltern an. | 합격 통보를 받은 뒤에 부모님께 전화했어요.
+gap: Als ich ankam, [war|hatte|ist] der Zug schon abgefahren. | 제가 도착했을 때 기차는 벌써 떠나고 없었어요. => abfahren은 sein과 써요.
+gap: [Bevor|Nachdem|Seitdem] ich unterschreibe, lese ich den Vertrag genau. | 서명하기 전에 계약서를 꼼꼼히 읽어요.
+gap: [Seitdem|Bevor|Sobald] ich bei Datenwerk arbeite, habe ich weniger Zeit. | Datenwerk에서 일한 뒤로 시간이 줄었어요.
+gap: Sie [hatte|hat|war] zuvor fünf Jahre im Vertrieb gearbeitet. | 그 사람은 그전에 영업부에서 5년 동안 일했어요.
+gap: Ich melde mich, [sobald|bevor|seitdem] ich den Vertrag gelesen habe. | 계약서를 읽는 대로 연락할게요.
+
+-- ex Futur I, sowohl, entweder, weder | 알맞은 말을 고르세요.
+gap: Im Oktober [wird|werde|werden] Lena nach Leipzig ziehen. | 10월에 Lena는 라이프치히로 이사할 거예요.
+gap: Ich werde im Winter mit der Masterarbeit [anfangen|anfange|angefangen]. | 겨울에 석사 논문을 시작할 거예요.
+gap: Sie bewirbt sich [sowohl|entweder|weder] für Biologie als auch für Biochemie. | 그 사람은 생물학에도 생화학에도 지원해요.
+gap: [Entweder|Weder|Sowohl] nehme ich das Seminar, oder ich mache den Online-Kurs. | 연수를 듣거나, 아니면 온라인 과정을 들어요.
+gap: Im Online-Kurs gibt es weder Übungen [noch|oder|als auch] eine Rückmeldung. | 온라인 과정에는 연습도 없고 평가도 없어요.
+gap: Wahrscheinlich [werden|wird|werdet] wir die Kosten übernehmen. | 아마 우리가 비용을 낼 거예요.
+
+-- ex lassen, statt … zu, ohne … zu | 알맞은 말을 고르세요.
+gap: Wir [lassen|lässt|lasst] den Staubsauger reparieren. | 우리는 청소기를 수리 맡겨요.
+gap: Frau Becker [lässt|lasst|lassen] sich die Getränke liefern. | Frau Becker는 마실 것을 배달시켜요.
+gap: [Statt|Ohne|Um] zu fliegen, fahre ich mit der Bahn. | 비행기를 타는 대신 기차로 가요.
+gap: Er geht nach Hause, [ohne|statt|um] den Computer auszuschalten. | 그 사람은 컴퓨터를 끄지 않고 퇴근해요.
+gap: Statt alles [wegzuwerfen|zu wegwerfen|wegwerfen], reparieren wir die Geräte. | 다 버리는 대신 기기를 고쳐요. => 나뉘는 동사에서는 zu가 가운데에 들어가요.
+gap: Gestern habe ich mein Fahrrad [reparieren lassen|repariert lassen|reparieren gelassen]. | 어제 자전거를 수리 맡겼어요.
+
+-- ex was, wo, nicht nur, zwar | 알맞은 말을 고르세요.
+gap: Das ist alles, [was|das|wo] ich weiß. | 제가 아는 건 그게 다예요.
+gap: Das Sprachcafé ist ein Ort, [wo|was|der] man ohne Angst sprechen kann. | Sprachcafé는 겁내지 않고 말할 수 있는 곳이에요.
+gap: Das ist das Formular, [das|was|wo] ich nicht verstehe. | 제가 이해하지 못하는 서류예요. => 앞에 명사가 있으면 das로 이어요.
+gap: Man hilft nicht nur anderen, [sondern|aber|oder] lernt auch selbst viel. | 남을 도울 뿐 아니라 스스로도 많이 배워요.
+gap: Ich habe [zwar|nicht nur|weder] wenig Zeit, aber ich komme. | 시간은 별로 없지만 갈게요.
+gap: Es ist das Beste, [was|der|wo] ich tun kann. | 제가 할 수 있는 가장 좋은 일이에요.
+
+-- ex Sätze bauen | 낱말을 순서대로 눌러 문장을 만드세요.
+ord: nachdem / ich / angekommen war, / rief ich / an. | 도착한 뒤에 전화했어요.
+ord: die Firma / wird / die Kosten / übernehmen. | 회사가 비용을 낼 거예요.
+ord: ich / lasse / mein Fahrrad / reparieren. | 자전거를 수리 맡겨요.
+ord: es ist / zwar / anstrengend, / aber / schön. | 힘들기는 하지만 좋아요.
+ord: ich / habe / weder / Zeit / noch / Geld. | 저는 시간도 돈도 없어요.
+
+-- ex Wortschatz | 낱말과 설명을 짝지으세요.
+paar: das Anschreiben = Brief zu einer Bewerbung ; die Zusage = positive Antwort ; die Fortbildung = Kurs für Berufstätige ; das Ehrenamt = Arbeit ohne Geld für andere
+
+-- ex Lesen | 대학 학업 상담소가 보낸 답장이에요. 읽고 답하세요.
+text mail | Ihre Anfrage zum Master Informatik
+> Von: studienberatung@hochschule.example.org
+> An: minji.choi@example.com
+> Betreff: Ihre Anfrage zum Master Informatik
+> Sehr geehrte Frau Choi,
+> vielen Dank für Ihre Anfrage. Gern beantworte ich Ihre Fragen.
+> Voraussetzung für den Master ist ein Bachelor in Informatik oder in einem ähnlichen Fach. Ihr Abschluss aus Korea muss anerkannt werden. Das dauert ungefähr sechs Wochen.
+> Sie brauchen sowohl einen Nachweis über Deutschkenntnisse auf dem Niveau B2 als auch über Englischkenntnisse.
+> Die Bewerbungsfrist für das Wintersemester endet am 15. Juli. Bewerbungen, die später kommen, können nicht mehr angenommen werden.
+> Am Montag, dem 12. Juni, findet online ein Informationstag statt. Dort werden alle Fragen zur Bewerbung beantwortet. Die Teilnahme ist kostenlos.
+> Mit freundlichen Grüßen
+> Thomas Lindemann
+mc: Was ist Voraussetzung für den Master? | ein Bachelor in Informatik oder einem ähnlichen Fach* | drei Jahre Berufserfahrung | ein Praktikum in Deutschland
+mc: Wie lange dauert die Anerkennung des Abschlusses? | ungefähr sechs Wochen* | ungefähr sechs Monate | einen Tag
+rf: Man braucht entweder einen Nachweis für Deutsch oder für Englisch. | f => 독일어와 영어 둘 다 증명해야 해요.
+mc: Wann endet die Bewerbungsfrist? | am 15. Juli* | am 12. Juni | im Wintersemester
+rf: Die Teilnahme am Informationstag kostet nichts. | r
+
+-- ex Diktat | 문장을 듣고 그대로 받아쓰세요.
+dik: N: Ich habe drei Jahre Berufserfahrung. | 저는 경력이 3년이에요.
+dik: N: Im Oktober werden die Vorlesungen beginnen. | 10월에 강의가 시작될 거예요.
+dik: N: Ich fahre mit der Bahn, statt zu fliegen. | 비행기를 타는 대신 기차로 가요.
+dik: N: Das ist alles, was ich weiß. | 제가 아는 건 그게 다예요.
+
+== projekt
+-- info 이력서와 지원 메일을 만들어요
+p: 독일식 이력서(Lebenslauf)는 표처럼 짧게 써요. 문장으로 쓰지 않고 때와 한 일만 적어요. 맨 위에 이름과 연락처를 쓰고, 그 아래에 일한 경험(Berufserfahrung), 공부(Ausbildung, Studium), 언어(Sprachkenntnisse), 그 밖의 실력(Weitere Kenntnisse)을 나눠 적어요. 칸마다 가장 최근의 일을 맨 위에 써요. 비는 기간이 없어야 해요.
+p: 지원 메일은 짧게 써요. 어느 자리에 지원하는지 첫 문장에서 말하고, 이력서와 증명서는 PDF로 붙여요. 붙인 서류는 Anlage라고 해요. 먼저 Jiu의 이력서를 읽어 보세요.
+
+-- ex Verstehen | Jiu의 이력서예요. 읽고 답하세요.
+text plan | Lebenslauf
+> | | Jiu Kim
+> | Kontakt | Frankfurt am Main, jiu.kim@example.com
+> | Berufserfahrung |
+> | seit 06/2028 | Werkstudentin im Bereich Softwaretest, Datenwerk, Frankfurt
+> | 02/2028 – 03/2028 | Praktikum im Bereich Softwaretest, Datenwerk, Frankfurt
+> | 04/2027 – 05/2028 | Service im Café Morgenrot, Frankfurt
+> | Studium |
+> | seit 04/2027 | Master Informatik, Frankfurt
+> | 03/2026 – 03/2027 | Deutschkurse A1 bis A2, Frankfurt
+> | 03/2022 – 02/2026 | Bachelor Informatik, Seoul
+> | Sprachkenntnisse | Koreanisch (Muttersprache), Englisch (fließend), Deutsch (B1)
+> | Engagement | Buddy-Programm der Universität (ab 10/2028)
+mc: Was steht in jedem Teil ganz oben? | das Neueste* | das Älteste | das Wichtigste
+mc: Wo arbeitet Jiu seit Juni 2028? | bei Datenwerk* | im Café Morgenrot | an der Universität
+rf: Zwischen dem Bachelor und dem Master gibt es eine Zeit ohne Angabe. | f => 그사이에 독일어 과정을 들었다고 적혀 있어요.
+mc: Wie gut ist Jius Englisch? | fließend* | Muttersprache | Niveau B1
+rf: Jiu hat ihr Praktikum bei Datenwerk gemacht. | r
+
+-- projekt Mein Lebenslauf | 칸을 채우면 내 이력서와 지원 메일이 완성돼요. | Lebenslauf
+p: 지원하고 싶은 자리를 하나 떠올리세요. 실제로 있는 자리가 아니어도 돼요. 때는 04/2027처럼 달과 해로 적고, 지금도 하는 일은 seit로 시작해요.
+feld: name | 이름 | Minji Choi
+feld: jetzt | 지금 하는 일 (seit와 함께) | seit 04/2027 Master Informatik, Frankfurt
+feld: zuvor | 그전에 한 공부나 일 | 03/2022 – 02/2026 Bachelor Informatik, Seoul
+feld: erfahrung | 일한 경험 | 02/2028 – 03/2028 Praktikum bei einer Softwarefirma
+feld: sprachen | 언어와 수준 | Koreanisch (Muttersprache), Englisch (fließend), Deutsch (B1)
+feld: kenntnisse | 그 밖의 실력 | Softwaretest, Statistik
+feld: stelle | 이 이력서로 지원하는 자리 | Werkstudentin im Bereich Softwaretest
+karte: Name = {name}
+karte: Aktuell = {jetzt}
+karte: Zuvor = {zuvor}
+karte: Berufserfahrung = {erfahrung}
+karte: Sprachkenntnisse = {sprachen}
+karte: Weitere Kenntnisse = {kenntnisse}
+satz: Sehr geehrte Damen und Herren, hiermit bewerbe ich mich um die Stelle als {stelle}.
+satz: Meinen Lebenslauf und meine Zeugnisse finden Sie in der Anlage.
+satz: Über eine Einladung zu einem Gespräch freue ich mich sehr.
+satz: Mit freundlichen Grüßen, {name}
+check: 칸마다 최근의 일을 먼저 적었어요 ; 비는 기간이 없어요 ; 언어마다 수준을 적었어요 ; 지금도 하는 일은 seit로 적었어요
+
+-- schreiben Die Bewerbungsmail | 이력서와 함께 보낼 지원 메일을 써 보세요. 여덟 문장쯤 써요.
+punkt: 어느 자리에 지원하는지 ; 지금 하는 일 ; 그전의 경험 ; 강점 ; 언어 실력 ; 언제부터 일할 수 있는지 ; 붙인 서류 ; 맺음말
+start: Sehr geehrte Damen und Herren, …
+muster: Sehr geehrte Damen und Herren, hiermit bewerbe ich mich um die Stelle als Werkstudentin im Bereich Softwaretest. Ich studiere im dritten Semester Informatik im Master. Nachdem ich meinen Bachelor in Seoul beendet hatte, bin ich nach Deutschland gekommen. Im Februar und März habe ich ein Praktikum bei einer Softwarefirma gemacht und war dort für die Tests verantwortlich. Ich arbeite genau und bin teamfähig. Ich spreche fließend Englisch und habe den Deutschkurs B1 beendet. Ich könnte sowohl im Juni als auch im Juli anfangen. Meinen Lebenslauf und meine Zeugnisse finden Sie in der Anlage. Über eine Einladung zu einem Gespräch freue ich mich sehr. Mit freundlichen Grüßen, Minji Choi
+check: 첫 문장에서 어느 자리에 지원하는지 말했어요 ; nachdem이나 zuvor로 그전의 일을 썼어요 ; 강점을 한 가지 넘게 썼어요 ; 붙인 서류를 알렸어요 ; 인사말과 맺음말이 격식에 맞아요
+
+-- tipp 이력서는 한 쪽, 메일은 열 줄
+p: 경력이 길지 않으면 이력서는 한 쪽이면 돼요. 어릴 때 다닌 학교까지 적을 필요는 없어요. 대학이나 마지막 학교부터 적어요. 한국에서 한 일도 독일어로 풀어서 적으세요. 회사 이름만 적지 말고 어떤 분야에서 무슨 일을 했는지 한 줄로 덧붙여요.
+p: 메일을 보내기 전에 세 가지를 확인하세요. 받는 사람의 이름이 맞는지, 서류가 정말 붙어 있는지, 파일 이름에 내 이름이 들어 있는지예요. 그리고 독일어를 잘하는 사람에게 한 번 읽어 달라고 부탁하세요. Könntest du meine Bewerbung lesen, bevor ich sie abschicke?
