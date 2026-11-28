@@ -1,22 +1,22 @@
 # 성인 교재 세 권: SODA Basis, SODA Studium, SODA Beruf
 
-성인 학습자를 위한 독일어 교재 세 권의 원고와 도구가 있는 폴더입니다. 지금은 세 권의 목차와 「성인 독일어 밑바탕」 열 과(A1.1의 1과부터 6과, A1.2의 1과부터 4과)의 본문이 있고, 모두 비공개입니다. 본문 음성은 Eleven v3로 만들어 넣었습니다(2026.11.25에 A1.1의 다섯 과, 2026.11.26에 그다음 다섯 과, 모두 1,488줄).
+성인 학습자를 위한 독일어 교재 세 권의 원고와 도구가 있는 폴더입니다. 지금은 세 권의 목차와 「성인 독일어」 열 과(A1.1의 1과부터 6과, A1.2의 1과부터 4과)의 본문이 있고, 모두 비공개입니다. 본문 음성은 Eleven v3로 만들어 넣었습니다(2026.11.25에 A1.1의 다섯 과, 2026.11.26에 그다음 다섯 과, 모두 1,488줄).
 
 | 교재 | 이름 | 대상 | 범위 | 목차 주소 |
 |---|---|---|---|---|
-| SODA Basis | 성인 독일어 밑바탕 | 독일에서 공부하거나 일하거나 살려는 성인 | A1–B1, 여섯 단계 40과 (공통 과정) | https://sophiadeutschakademie.github.io/SODA-Lehrwerk/basis/ |
-| SODA Studium | 대학생 독일어 디딤돌 | 독일 유학과 교환 학기를 준비하는 대학생 | B2–C1 Hochschule, 네 단계 28과 | https://sophiadeutschakademie.github.io/SODA-Lehrwerk/studium/ |
-| SODA Beruf | 직장인 독일어 길잡이 | 독일 취업과 이직을 준비하는 직장인과 성인 | B2, 두 단계 16과 | https://sophiadeutschakademie.github.io/SODA-Lehrwerk/beruf/ |
+| SODA Basis | 성인 독일어 | 독일에서 공부하거나 일하거나 살려는 성인 | A1–B1, 여섯 단계 40과 (공통 과정) | https://sophiadeutschakademie.github.io/SODA-Lehrwerk/basis/ |
+| SODA Studium | 대학생 독일어 | 독일 유학과 교환 학기를 준비하는 대학생 | B2–C1 Hochschule, 네 단계 28과 | https://sophiadeutschakademie.github.io/SODA-Lehrwerk/studium/ |
+| SODA Beruf | 직장인 독일어 | 독일 취업과 이직을 준비하는 직장인과 성인 | B2, 두 단계 16과 | https://sophiadeutschakademie.github.io/SODA-Lehrwerk/beruf/ |
 
 Lehrwerk 목차에서는 세 교재 모두 「작업 중」 칸으로 보이고 링크가 없습니다. 위 주소를 직접 열면 목차를 볼 수 있습니다.
 
-2026.11.27에 분류를 바꿨습니다. 그전에는 대학생용(A1–C1 Hochschule, 68과)과 직장인용(A1–B2, 56과) 두 권이었고, A1–B1 40과가 두 권에 똑같이 들어 있었습니다. 같은 과가 두 번 나오지 않게 공통 과정을 「성인 독일어 밑바탕」 한 권으로 떼고, B2부터 두 권으로 나눴습니다. 「성인 독일어 밑바탕」이라는 이름과 폴더 이름 `basis` 는 임시로 정한 것입니다. 바꾸려면 `tools/inhalt.json` 의 `books` 와 `tools/seo.py`, 루트 `index.html` 의 칸을 고치고 폴더를 옮깁니다. `studium/a1-…`, `beruf/a1-…` 주소는 없앴습니다(비공개 상태라 옛 주소에서 넘겨 주는 화면은 두지 않았습니다).
+2026.11.27에 분류를 바꿨습니다. 그전에는 대학생용(A1–C1 Hochschule, 68과)과 직장인용(A1–B2, 56과) 두 권이었고, A1–B1 40과가 두 권에 똑같이 들어 있었습니다. 같은 과가 두 번 나오지 않게 공통 과정을 「성인 독일어」 한 권으로 떼고, B2부터 두 권으로 나눴습니다. 교재 이름은 2026.11.28에 「성인 독일어 밑바탕」「대학생 독일어 디딤돌」「직장인 독일어 길잡이」에서 뒤의 낱말을 떼어 「성인 독일어」「대학생 독일어」「직장인 독일어」로 줄였습니다(청소년 교재도 「청소년 독일어 발돋움」에서 「청소년 독일어」로). 폴더 이름 `basis` 는 임시로 정한 것입니다. 이름이나 폴더를 바꾸려면 `tools/inhalt.json` 의 `books` 와 `tools/seo.py`, 루트 `index.html` 의 칸을 고치고 폴더를 옮깁니다. `studium/a1-…`, `beruf/a1-…` 주소는 없앴습니다(비공개 상태라 옛 주소에서 넘겨 주는 화면은 두지 않았습니다).
 
 본문이 있는 과 (2026.11.26): A1.1 Lektion 1 Guten Tag!, 2 Beruf und Studium, 3 Familie und Freunde, 4 Einkaufen, 5 Mein Tag, 6 Termine, A1.2 Lektion 1 In der Stadt, 2 Meine Wohnung, 3 Gesundheit, 4 Was haben Sie gemacht? 주소는 `basis/a1-1/1/` … `basis/a1-1/6/`, `basis/a1-2/1/` … `basis/a1-2/4/`입니다. 과마다 여섯째 순서 Aufgabe의 과제가 두 가지(대학 과제, 직장 과제)이고 학습자가 하나를 고릅니다. A1.1의 Wiederholung 두 개와 Stufentest, A1.2의 5과부터는 아직 없습니다. 그래서 A1.1 6과 끝의 「다음」 단추는 A1.2 1과로 바로 갑니다(`site` 는 단계의 마지막 화면을 그 뒤에 열려 있는 첫 화면으로 잇습니다).
 
 ## 구조
 
-A1부터 B1까지는 대학생과 직장인이 배우는 문법과 기본 어휘가 같으므로 한 권(「성인 독일어 밑바탕」)으로 만듭니다. B2부터는 필요한 말이 달라지므로 목적에 따라 두 권으로 나눕니다.
+A1부터 B1까지는 대학생과 직장인이 배우는 문법과 기본 어휘가 같으므로 한 권(「성인 독일어」)으로 만듭니다. B2부터는 필요한 말이 달라지므로 목적에 따라 두 권으로 나눕니다.
 
 | 단계 | 이름 | 과 | 교재 |
 |---|---|---|---|
@@ -161,7 +161,7 @@ erwachsene/tools/src/          과 원고 (단계 폴더/과 번호.txt)와 쓰�
 erwachsene/tools/tts/          그림 설명 묶음(*.prompts.json). 음성을 만들면 음성 목록도 여기에 생깁니다
 erwachsene/tools/open.json     본문이 있는 과 목록 (site 가 씁니다. 목차 빌드가 읽어서 링크를 겁니다)
 erwachsene/lektion.css, lektion.js   과 화면의 모양과 동작 (세 교재가 함께 씁니다). 글자 크기는 font-size:calc(17px*var(--fz)) 처럼 적습니다 (저장소 README 「글자 크기(교재)」)
-erwachsene/img/                과 그림: 단계/과/szene.webp(장면), c1.webp …(낱말 그림), c/(인물 얼굴)
+erwachsene/img/                과 그림: 단계/과/szene.webp(장면), c1.webp …(낱말 그림), c/(인물 얼굴), titel/<교재>.webp(목차 표지 그림 1200×900, 그림 설명은 inhalt.json books 의 bildalt)
 erwachsene/audio/              과 음성(mp3, 한 줄에 파일 하나, 31MB)
 erwachsene/fonts/              독일어 글꼴 DM Sans(라틴 글자만)와 사용 허가서 OFL.txt
 basis/, studium/, beruf/       빌드 결과 (index.html, manifest.webmanifest, icons/, 단계/과/index.html)
@@ -169,7 +169,7 @@ basis/, studium/, beruf/       빌드 결과 (index.html, manifest.webmanifest, 
 
 ## inhalt.json
 
-- `books`: 교재마다 이름, 소개 글, 색(`farbe`), 그 교재에 든 단계의 `id` 목록(`levels`), 앞뒤 교재를 알리는 글과 링크(`weiter`). 한 교재에는 `art` 가 같은 단계만 넣고, 단계마다 교재가 하나씩 있어야 합니다(`build.py` 가 검사합니다)
+- `books`: 교재마다 이름, 소개 글, 표지 그림 설명(`bildalt`. 그림 파일은 `erwachsene/img/titel/<id>.webp`), 색(`farbe`), 그 교재에 든 단계의 `id` 목록(`levels`), 앞뒤 교재를 알리는 글과 링크(`weiter`). 한 교재에는 `art` 가 같은 단계만 넣고, 단계마다 교재가 하나씩 있어야 합니다(`build.py` 가 검사합니다)
 - `levels`: 단계마다 `id`, `code`(A1.1), `art`(`g` 공통, `s` 대학생, `b` 직장인), 이름(`de`, `ko`), 소개(`lead`), 마치면 할 수 있는 일 세 가지(`kann`), 읽고 쓰는 글(`text`), 독일 생활과 제도(`leben`), 함께 쓰는 앱(`apps`), 마친 뒤 연결(`nach`), 과 목록(`items`)
 - 과(`t: l`): 제목(`de`), 주제(`ko`), 목표(`ziel`), 문법(`gr`), Syntalab Lektion 번호(`syn`), 과제. 공통 과정은 `as`(대학 과제)와 `ab`(직장 과제), B2부터는 `auf` 하나
 - 복습(`t: w`)과 단계 평가(`t: t`): 제목과 설명(`txt`)

@@ -8,7 +8,7 @@
   python3 erwachsene/tools/lektion.py img RAW_DIR              RAW_DIR 의 그림(<단계>_<이름>_szene.webp, _kartenN.webp, cast_N.webp)을 img/ 에 넣습니다
   python3 erwachsene/tools/lektion.py site [--draft]           과 화면을 그 단계가 든 교재 폴더(basis/<단계>/<이름>/, studium/…, beruf/…)에 만들고 tools/open.json 을 씁니다
 
-원고 하나가 화면 하나가 됩니다. 공통 단계(A1.1–B1.2, 「성인 독일어 밑바탕」)의 과는 과제 구역에 과제가 두 가지 있습니다: --S 로 시작한 블록은 대학 과제, --B 로 시작한 블록은 직장 과제.
+원고 하나가 화면 하나가 됩니다. 공통 단계(A1.1–B1.2, 「성인 독일어」)의 과는 과제 구역에 과제가 두 가지 있습니다: --S 로 시작한 블록은 대학 과제, --B 로 시작한 블록은 직장 과제.
 화면에는 둘 다 들어가고, 학습자가 고른 쪽만 보입니다(고른 것은 기록의 o.sp 에 남아 다음 과에서도 이어집니다).
 원고 형식은 tools/src/README.md 에 있습니다. 음성은 ElevenLabs eleven_v3(language_code de), 그림은 Recraft 4.1 Flash(SODA 삽화 그림체)입니다.
 """

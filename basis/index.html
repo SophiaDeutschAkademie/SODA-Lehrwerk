@@ -118,7 +118,7 @@ html[data-theme="dark"] .soda-fz-seg button[aria-pressed="true"]{background:#AEB
 </script>
 
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>성인 독일어 밑바탕 · A1–B1 성인 독일어 교재 목차 | SODA Basis</title>
+<title>성인 독일어 · A1–B1 독일어 교재 목차 | SODA Basis</title>
 <meta name="theme-color" content="#14181E">
 <meta name="color-scheme" content="light dark">
 <meta name="format-detection" content="telephone=no">
@@ -133,13 +133,13 @@ html[data-theme="dark"] .soda-fz-seg button[aria-pressed="true"]{background:#AEB
 /* Schrift: DM Sans (gekürzt auf Latein, Strichstärke 400–900), Copyright 2014 The DM Sans Project Authors, SIL Open Font License 1.1 (../erwachsene/fonts/OFL.txt) */
 @font-face{font-family:"DM Sans";font-weight:400 900;font-style:normal;font-display:swap;src:url(../erwachsene/fonts/DMSans-latin.woff) format("woff")}
 :root{
-  --bg:#FBF8F1;--surface:#FFFFFF;--ink:#2E3A55;--ink2:#5E687F;--line:#E9DFCB;--sand:#DECDB0;--soft:#F4ECDD;
+  --bg:#FBF8F1;--surface:#FFFFFF;--ink:#2E3A55;--ink2:#5E687F;--line:#E9DFCB;--sand:#DECDB0;--soft:#F4ECDD;--paper:#FFFFFF;
   --accent:#6B4FA3;--accent-ink:#553D86;--fill:#614796;--on-fill:#FFFFFF;--on-ink:#FBF8F1;
   --de:"DM Sans","Pretendard Variable","Pretendard",system-ui,sans-serif;
   --ko:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Noto Sans CJK KR","Malgun Gothic",sans-serif;
 }
 html[data-theme="dark"]{
-  --bg:#182033;--surface:#232D46;--ink:#F4EFE3;--ink2:#AAB3C7;--line:#36415E;--sand:#4D5979;--soft:#2B3654;
+  --bg:#182033;--surface:#232D46;--ink:#F4EFE3;--ink2:#AAB3C7;--line:#36415E;--sand:#4D5979;--soft:#2B3654;--paper:#F3EDE0;
   --accent:#B9A4EC;--accent-ink:#CDBDF3;--fill:#B9A4EC;--on-fill:#182033;--on-ink:#182033;
 }
 *{box-sizing:border-box}
@@ -156,7 +156,10 @@ a{color:inherit}
 .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
 
 /* 표지와 단계 계단 */
-.top{display:grid;gap:34px;padding:76px 0 34px}
+.top{display:grid;gap:28px;padding:76px 0 34px}
+/* 표지 그림: 좁은 화면에서는 교재 이름 위에, 넓은 화면(720px부터)에서는 글 오른쪽에 놓인다. 흰 바탕 그림을 종이 색 카드에 겹쳐 놓는다 */
+.titelbild{order:-1;justify-self:start;width:100%;max-width:520px;padding:10px;border-radius:22px;background:var(--paper)}
+.titelbild img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
 .hero{display:flex;flex-direction:column;align-items:flex-start}
 .mark{font-family:var(--de);font-weight:800;font-size:calc(16px*var(--fz));line-height:1.2;letter-spacing:.01em;color:var(--accent-ink)}
 h1{margin-top:10px;font-weight:800;font-size:clamp(34px,8.6vw,58px)/*고정*/;line-height:1.14;letter-spacing:-.035em}
@@ -275,13 +278,21 @@ footer a{text-underline-offset:3px}
   .step{font-size:14px/*고정*/;padding-top:10px;flex-direction:row;justify-content:center;align-items:flex-start;border-radius:12px 12px 5px 5px}
   .groups div{font-size:13px/*고정*/}
 }
+@media (min-width:720px){
+  .top{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:34px 36px;align-items:center}
+  .titelbild{order:0;justify-self:stretch;max-width:none}
+  .stufen{grid-column:1/-1}
+}
 @media (min-width:900px){
   .wrap{padding:0 32px}
-  .top{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:end;padding:96px 0 46px}
-  .stairs{height:208px}
+  .top{gap:40px 56px;padding:96px 0 46px}
+  /* 단계 계단: 아래 목차와 같은 두 칸(이름 320px | 목록)에 맞춰 놓는다 */
+  .stufen{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:0 52px;align-items:end}
+  .st-kopf{padding-bottom:38px}
+  .stairs{height:156px;margin-top:0}
   .step{font-size:13px/*고정*/}
   .panel{grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:52px;padding:40px 0 48px}
-  .p-name{font-size:46px/*고정*/}
+  .p-name{font-size:44px/*고정*/}          /* 「Argumentieren」이 320px 칸에 들어가는 크기 */
   .p-info{position:sticky;top:20px;align-self:start}
   .more{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;padding:44px 0 14px}
   .lek{grid-template-columns:calc(80px*var(--fz)) minmax(0,1fr);gap:0 12px}
@@ -316,15 +327,19 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
   <div class="top">
     <header class="hero">
       <p class="mark" lang="de">SODA Basis</p>
-      <h1>성인 독일어 밑바탕</h1>
+      <h1>성인 독일어</h1>
       <p class="sub" lang="de">Deutsch für Alltag, Studium und Beruf, A1 bis B1</p>
       <p class="lead">독일에서 공부하거나 일하거나 살려는 성인을 위한 기초 교재예요. 처음 배우는 A1부터 생활과 일에서 스스로 말하고 쓰는 B1까지 여섯 단계, 40과로 배워요.</p>
       <p class="cta"><a class="btn" href="#inhalt">목차 보기</a></p>
       <p class="note">본문은 A1.1 Lektion 1–6, A1.2 Lektion 1–4까지 올라와 있어요. 나머지는 차례로 올라와요.</p>
     </header>
+    <figure class="titelbild"><img src="../erwachsene/img/titel/basis.webp" alt="강가에 나란히 선 세 사람. 공책을 든 Jiu, 가방을 멘 Dohyun, 커피를 든 Sora" width="1200" height="900" decoding="async" fetchpriority="high"></figure>
     <section class="stufen" aria-labelledby="stufen-h" style="--n:6">
+      <div class="st-kopf">
       <h2 id="stufen-h">여섯 단계</h2>
       <p class="hint">단계를 누르면 그 단계의 목차가 열려요.</p>
+      </div>
+      <div class="st-treppe">
       <div class="stairs" role="tablist" aria-label="단계 고르기">
         <button type="button" role="tab" class="step offen" id="tab-a1-1" aria-controls="p-a1-1" aria-selected="true" aria-label="A1.1 Neu hier, 새 출발, 공통 과정" style="--i:0;--h:40.0%"><span>A1</span><span>.1</span></button>
         <button type="button" role="tab" class="step offen" id="tab-a1-2" aria-controls="p-a1-2" aria-selected="false" aria-label="A1.2 Im Alltag, 생활 꾸리기, 공통 과정" style="--i:1;--h:52.0%"><span>A1</span><span>.2</span></button>
@@ -337,6 +352,7 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
         <div><b>A1</b></div>
         <div><b>A2</b></div>
         <div><b>B1</b></div>
+      </div>
       </div>
     </section>
   </div>
@@ -470,7 +486,7 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
       <p class="p-wart">이 단계의 본문은 준비 중이에요. 지금은 목차만 볼 수 있어요.</p>
       <h3>이 단계를 마치면</h3>
       <ul class="kann"><li>지원서와 면접에서 나를 설명해요</li><li>사회 문제에 대해 근거를 들어 의견을 말해요</li><li>지난 일, 계획, 가정을 섞어 길게 이야기해요</li></ul>
-      <dl><div><dt>읽고 쓰는 글</dt><dd>구인 광고와 지원서, 보도 기사, 인터뷰, 토론 글, 공식 편지</dd></div><div><dt>독일 생활과 제도</dt><dd>독일의 지원 서류, 대학과 직업 교육 제도, 환경 정책, 자원봉사(Ehrenamt), 통일의 역사</dd></div><div><dt>함께 쓰는 앱</dt><dd class="lnk"><a href="../vokalab/">Vokalab</a><a href="../grammatik/">Syntalab</a><a href="../hoertraining/">Hörtraining</a><a href="../lesetraining/">Lesetraining</a><a href="../schreibtraining/">Schreibtraining</a><a href="../sprechtraining/">Sprechtraining</a></dd></div><div><dt>단계를 마친 뒤</dt><dd class="lnk"><a href="../studium/">대학생 독일어 디딤돌 (B2부터)</a><a href="../beruf/">직장인 독일어 길잡이 (B2)</a><a href="https://sophiadeutschakademie.github.io/SODA-Goethe/goethe-b1/">Goethe-Zertifikat B1 Modelltest</a><a href="https://sophiadeutschakademie.github.io/SODA-TELC/telc-b1/">telc Deutsch B1 Modelltest</a></dd></div></dl>
+      <dl><div><dt>읽고 쓰는 글</dt><dd>구인 광고와 지원서, 보도 기사, 인터뷰, 토론 글, 공식 편지</dd></div><div><dt>독일 생활과 제도</dt><dd>독일의 지원 서류, 대학과 직업 교육 제도, 환경 정책, 자원봉사(Ehrenamt), 통일의 역사</dd></div><div><dt>함께 쓰는 앱</dt><dd class="lnk"><a href="../vokalab/">Vokalab</a><a href="../grammatik/">Syntalab</a><a href="../hoertraining/">Hörtraining</a><a href="../lesetraining/">Lesetraining</a><a href="../schreibtraining/">Schreibtraining</a><a href="../sprechtraining/">Sprechtraining</a></dd></div><div><dt>단계를 마친 뒤</dt><dd class="lnk"><a href="../studium/">대학생 독일어 (B2부터)</a><a href="../beruf/">직장인 독일어 (B2)</a><a href="https://sophiadeutschakademie.github.io/SODA-Goethe/goethe-b1/">Goethe-Zertifikat B1 Modelltest</a><a href="https://sophiadeutschakademie.github.io/SODA-TELC/telc-b1/">telc Deutsch B1 Modelltest</a></dd></div></dl>
      </div>
      <ol class="leks">
       <li class="lek"><span class="num" lang="de">Lektion 1</span><div><h3><span class="de" lang="de">Bewerbung</span><span class="ko">지원과 면접</span></h3><dl><div><dt>목표</dt><dd>구인 광고 분석하기, 지원서 쓰기, 면접 질문에 답하기</dd></div><div><dt>문법</dt><dd class="gr"><span lang="de">Plusquamperfekt, nachdem, bevor, seitdem, während</span><span class="syn">Syntalab <a href="../grammatik/#/L26" aria-label="Syntalab Lektion 26">26</a><a href="../grammatik/#/L27" aria-label="Syntalab Lektion 27">27</a></span></dd></div><div><dt>과제</dt><dd><span class="zw"><i>대학</i>인턴십에 지원하고 면접 보기</span><span class="zw"><i>직장</i>옮기고 싶은 회사에 지원하고 면접 보기</span></dd></div></dl></div></li>
@@ -512,13 +528,13 @@ html[data-theme="dark"] .a2hs-btn:hover{color:#ECEAE4}
       <h2 class="zwei">한 단계는 이렇게 이루어져요</h2>
       <p class="weiter">A1과 A2 단계에는 과가 6개씩, B1 단계에는 8개씩 있어요. 단계마다 복습과 실전 과제를 하는 Wiederholung 2개와 단계 평가 1개가 함께 있어요. 과마다 마지막 순서의 과제는 대학 생활과 직장 생활 두 가지예요. 하나를 고르면 다음 과에서도 그쪽 과제가 나와요.</p>
       <h2 class="zwei">B1을 마친 뒤</h2>
-      <p class="weiter">B1.2까지 마치면 목적에 따라 두 교재로 이어져요. 대학에서 공부하려면 「대학생 독일어 디딤돌」(B2–C1 Hochschule)로, 직장에서 쓰려면 「직장인 독일어 길잡이」(B2)로 가요.</p>
-      <p class="weiter wl"><a href="../studium/">대학생 독일어 디딤돌 목차 보기</a> <a href="../beruf/">직장인 독일어 길잡이 목차 보기</a></p>
+      <p class="weiter">B1.2까지 마치면 목적에 따라 두 교재로 이어져요. 대학에서 공부하려면 「대학생 독일어」(B2–C1 Hochschule)로, 직장에서 쓰려면 「직장인 독일어」(B2)로 가요.</p>
+      <p class="weiter wl"><a href="../studium/">대학생 독일어 목차 보기</a> <a href="../beruf/">직장인 독일어 목차 보기</a></p>
     </section>
   </div>
 
   <footer>
-    <p><span class="de">SODA Basis</span>, 성인 독일어 밑바탕. 2026.11.28 업데이트. <a href="../#inhalt">SODA Lehrwerk 목차로</a></p>
+    <p><span class="de">SODA Basis</span>, 성인 독일어. 2026.11.28 업데이트. <a href="../#inhalt">SODA Lehrwerk 목차로</a></p>
   </footer>
 </main>
 <!-- ===== SODA 공통 홈 화면에 앱 추가 ===== -->

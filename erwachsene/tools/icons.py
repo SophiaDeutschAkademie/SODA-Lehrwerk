@@ -4,7 +4,7 @@
   python3 erwachsene/tools/icons.py
 
 남색 바탕에 단계 수만큼 막대가 올라가는 그림입니다(청소년 교재 아이콘과 같은 모양).
-공통 과정(A1–B1) 여섯 막대는 아이보리입니다. 「성인 독일어 밑바탕」은 이 여섯 막대만 그리고,
+공통 과정(A1–B1) 여섯 막대는 아이보리입니다. 「성인 독일어」는 이 여섯 막대만 그리고,
 B2부터의 두 교재는 그 뒤에 자기 단계 수만큼 교재 색 막대를 더 그립니다(대학생 4개, 직장인 2개).
 -> basis/icons/, studium/icons/, beruf/icons/ 에 icon-512.png, icon-192.png, icon-maskable-512.png, apple-touch-icon.png
 """

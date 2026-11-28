@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """성인 교재 세 권의 목차 페이지 빌드.
 
-  SODA Basis   「성인 독일어 밑바탕」    A1–B1            -> basis/index.html
-  SODA Studium 「대학생 독일어 디딤돌」  B2–C1 Hochschule -> studium/index.html
-  SODA Beruf   「직장인 독일어 길잡이」  B2               -> beruf/index.html
+  SODA Basis   「성인 독일어」    A1–B1            -> basis/index.html
+  SODA Studium 「대학생 독일어」  B2–C1 Hochschule -> studium/index.html
+  SODA Beruf   「직장인 독일어」  B2               -> beruf/index.html
 
 tools/inhalt.json(교재, 단계, 과 목록) + tools/shell.html(화면 틀) + tools/blocks(공통 조각)
-A1.1부터 B1.2까지 여섯 단계(art = g)는 공통 과정으로 「성인 독일어 밑바탕」 한 권에 있고, 과마다 과제만 두 가지입니다(as = 대학 생활, ab = 직장 생활).
+A1.1부터 B1.2까지 여섯 단계(art = g)는 공통 과정으로 「성인 독일어」 한 권에 있고, 과마다 과제만 두 가지입니다(as = 대학 생활, ab = 직장 생활).
 B2부터는 목적에 따라 교재가 갈립니다(art = s 대학생, b 직장인). 한 교재에는 art 가 같은 단계만 들어갑니다.
 
 실행: python3 erwachsene/tools/build.py   (끝에 저장소 tools/seo.py 를 부릅니다)
@@ -228,6 +228,7 @@ def page(book, data, shell, date):
         ('__ALT__', json.dumps(ALT_STORES if levels[0]['art'] == 'g' else [])),
         ('__ACC__', f['accent']), ('__INK__', f['ink']), ('__FILL__', f['fill']), ('__DACC__', f['daccent']), ('__DINK__', f['dink']), ('__DFILL__', f['dfill']),
         ('__NG__', str(len(codes))), ('__N__', str(n)),
+        ('__ID__', book['id']), ('__BILD_ALT__', esc(book['bildalt'])),          # 표지 그림: erwachsene/img/titel/<id>.webp
         ('__IDS__', json.dumps([hid(x) for x in levels])),
         ('__DATE__', date),
     )

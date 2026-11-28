@@ -5,7 +5,7 @@
 <!--SODA_THEME_JS-->
 <!--SODA_FZ-->
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>청소년 독일어 발돋움 · A1–B1 청소년 독일어 교재 목차 | SODA Jugendliche</title>
+<title>청소년 독일어 · A1–B1 독일어 교재 목차 | SODA Jugendliche</title>
 <meta name="theme-color" content="#14181E">
 <meta name="color-scheme" content="light dark">
 <meta name="format-detection" content="telephone=no">
@@ -20,13 +20,13 @@
 /* Schrift: DM Sans (gekürzt auf Latein, Strichstärke 400–900), Copyright 2014 The DM Sans Project Authors, SIL Open Font License 1.1 (fonts/OFL.txt) */
 @font-face{font-family:"DM Sans";font-weight:400 900;font-style:normal;font-display:swap;src:url(fonts/DMSans-latin.woff) format("woff")}
 :root{
-  --bg:#FBF8F1;--surface:#FFFFFF;--ink:#2E3A55;--ink2:#5E687F;--line:#E9DFCB;--sand:#DECDB0;--soft:#F4ECDD;
+  --bg:#FBF8F1;--surface:#FFFFFF;--ink:#2E3A55;--ink2:#5E687F;--line:#E9DFCB;--sand:#DECDB0;--soft:#F4ECDD;--paper:#FFFFFF;
   --accent:#B87830;--accent-ink:#8A591D;--fill:#9C6420;--on-fill:#FFFFFF;--on-ink:#FBF8F1;
   --de:"DM Sans","Pretendard Variable","Pretendard",system-ui,sans-serif;
   --ko:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Noto Sans CJK KR","Malgun Gothic",sans-serif;
 }
 html[data-theme="dark"]{
-  --bg:#182033;--surface:#232D46;--ink:#F4EFE3;--ink2:#AAB3C7;--line:#36415E;--sand:#4D5979;--soft:#2B3654;
+  --bg:#182033;--surface:#232D46;--ink:#F4EFE3;--ink2:#AAB3C7;--line:#36415E;--sand:#4D5979;--soft:#2B3654;--paper:#F3EDE0;
   --accent:#DDA65B;--accent-ink:#E9BC7E;--fill:#DDA65B;--on-fill:#182033;--on-ink:#182033;
 }
 *{box-sizing:border-box}
@@ -43,7 +43,10 @@ a{color:inherit}
 .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
 
 /* 표지와 단계 계단 */
-.top{display:grid;gap:34px;padding:76px 0 34px}
+.top{display:grid;gap:28px;padding:76px 0 34px}
+/* 표지 그림: 좁은 화면에서는 교재 이름 위에, 넓은 화면(720px부터)에서는 글 오른쪽에 놓인다. 흰 바탕 그림을 종이 색 카드에 겹쳐 놓는다 */
+.titelbild{order:-1;justify-self:start;width:100%;max-width:520px;padding:10px;border-radius:22px;background:var(--paper)}
+.titelbild img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
 .hero{display:flex;flex-direction:column;align-items:flex-start}
 .mark{font-family:var(--de);font-weight:800;font-size:calc(16px*var(--fz));line-height:1.2;letter-spacing:.01em;color:var(--accent-ink)}
 h1{margin-top:10px;font-weight:800;font-size:clamp(34px,8.6vw,58px)/*고정*/;line-height:1.14;letter-spacing:-.035em}
@@ -146,10 +149,18 @@ footer a{text-underline-offset:3px}
   .step{font-size:16px/*고정*/;padding-top:11px}
   .groups div{font-size:13px/*고정*/}
 }
+@media (min-width:720px){
+  .top{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:34px 36px;align-items:center}
+  .titelbild{order:0;justify-self:stretch;max-width:none}
+  .stufen{grid-column:1/-1}
+}
 @media (min-width:900px){
   .wrap{padding:0 32px}
-  .top{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:end;padding:96px 0 46px}
-  .stairs{height:208px}
+  .top{gap:40px 56px;padding:96px 0 46px}
+  /* 단계 계단: 아래 목차와 같은 두 칸(이름 320px | 목록)에 맞춰 놓는다 */
+  .stufen{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:0 52px;align-items:end}
+  .st-kopf{padding-bottom:38px}
+  .stairs{height:156px;margin-top:0}
   .panel{grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:52px;padding:40px 0 48px}
   .p-name{font-size:46px/*고정*/}
   .p-info{position:sticky;top:20px;align-self:start}
@@ -169,20 +180,25 @@ footer a{text-underline-offset:3px}
   <div class="top">
     <header class="hero">
       <p class="mark" lang="de">SODA Jugendliche</p>
-      <h1>청소년 독일어 발돋움</h1>
+      <h1>청소년 독일어</h1>
       <p class="sub" lang="de">Deutsch für Jugendliche, A1 bis B1</p>
       <p class="lead">독일어를 처음 배우는 초등 고학년, 중학생, 고등학생을 위한 교재예요. 서울에서 온 Yuna가 쾰른의 학교에서 보내는 두 해를 따라가며 A1부터 B1까지 여섯 단계, 48과를 배워요.</p>
       <p class="cta"><a class="btn" href="#inhalt">목차 보기</a></p>
       <p class="note"><!--NOTE--></p>
     </header>
+    <figure class="titelbild"><img src="img/titel.webp" alt="가방을 메고 함께 학교에 가는 Yuna와 친구들" width="1200" height="900" decoding="async" fetchpriority="high"></figure>
     <section class="stufen" aria-labelledby="stufen-h">
+      <div class="st-kopf">
       <h2 id="stufen-h">여섯 단계</h2>
       <p class="hint">단계를 누르면 그 단계의 목차가 열려요.</p>
+      </div>
+      <div class="st-treppe">
       <div class="stairs" role="tablist" aria-label="단계 고르기">
 <!--STAIRS-->
       </div>
       <div class="groups">
 <!--GROUPS-->
+      </div>
       </div>
     </section>
   </div>
@@ -210,7 +226,7 @@ footer a{text-underline-offset:3px}
   </div>
 
   <footer>
-    <p><span class="de">SODA Jugendliche</span>, 청소년 독일어 발돋움. __DATE__ 업데이트. <a href="../#inhalt">SODA Lehrwerk 목차로</a></p>
+    <p><span class="de">SODA Jugendliche</span>, 청소년 독일어. __DATE__ 업데이트. <a href="../#inhalt">SODA Lehrwerk 목차로</a></p>
   </footer>
 </main>
 <!--A2HS-->

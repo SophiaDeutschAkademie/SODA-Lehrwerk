@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SODA Jugendliche (청소년 독일어 발돋움) 목차 페이지 빌드.
+"""SODA Jugendliche (청소년 독일어) 목차 페이지 빌드.
 
 tools/inhalt.json(단계와 과 목록) + tools/shell.html(화면 틀) + tools/blocks(공통 조각)
 -> jugend/index.html
