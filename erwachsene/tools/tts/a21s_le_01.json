@@ -1,0 +1,32 @@
+{
+ "job": "a21s_le_01",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Stell das Fahrrad bitte in den Keller, nicht in den Flur."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Wohin stellen wir das Regal?"
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Lena",
+   "parts": [
+    "Was ist für dich bei einem Handy am wichtigsten?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Stell das Fahrrad bitte in den Keller, nicht in den Flur. [pause] Wohin stellen wir das Regal? [pause] Was ist für dich bei einem Handy am wichtigsten? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

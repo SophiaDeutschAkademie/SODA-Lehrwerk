@@ -1,0 +1,74 @@
+{
+ "job": "a21_fr_07",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Das ist unser Fehler. Entschuldigen Sie bitte."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Ich verstehe. Wir schicken Ihnen morgen einen großen Drucker und einen neuen Bildschirm."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Unser Fahrer holt ihn morgen ab. Sie müssen nichts zahlen."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Natürlich. Sie bekommen die E-Mail in einer Stunde."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Kundenservice, guten Tag. Was kann ich für Sie tun?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Das tut mir leid. Haben Sie die Bestellnummer?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Was ist das Problem?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Entschuldigen Sie bitte, das ist unser Fehler. Bis wann brauchen Sie die Möbel?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Gut, wir liefern am Donnerstag."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Das ist unser Fehler. Entschuldigen Sie bitte. [pause] Ich verstehe. Wir schicken Ihnen morgen einen großen Drucker und einen neuen Bildschirm. [pause] Unser Fahrer holt ihn morgen ab. Sie müssen nichts zahlen. [pause] Natürlich. Sie bekommen die E-Mail in einer Stunde. [pause] Kundenservice, guten Tag. Was kann ich für Sie tun? [pause] Das tut mir leid. Haben Sie die Bestellnummer? [pause] Was ist das Problem? [pause] Entschuldigen Sie bitte, das ist unser Fehler. Bis wann brauchen Sie die Möbel? [pause] Gut, wir liefern am Donnerstag. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_29",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "lecker.",
+    "Das Essen ist lecker."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "scharf.",
+    "Ist das Essen scharf?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "salzig.",
+    "Die Suppe ist zu salzig."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "satt.",
+    "Danke, ich bin satt."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "vegetarisch.",
+    "Ich esse vegetarisch."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "das Gericht, die Gerichte.",
+    "Das Gericht kommt aus Korea."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "der Nachtisch.",
+    "Als Nachtisch gibt es Kuchen."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "der Wein, die Weine.",
+    "Carlos bringt Wein mit."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Guten Appetit!",
+    "Das Essen ist fertig. Guten Appetit!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Prost!",
+    "Alle sagen: Prost!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] lecker. Das Essen ist lecker. [pause] scharf. Ist das Essen scharf? [pause] salzig. Die Suppe ist zu salzig. [pause] satt. Danke, ich bin satt. [pause] vegetarisch. Ich esse vegetarisch. [pause] das Gericht, die Gerichte. Das Gericht kommt aus Korea. [pause] der Nachtisch. Als Nachtisch gibt es Kuchen. [pause] der Wein, die Weine. Carlos bringt Wein mit. [pause] Guten Appetit! Das Essen ist fertig. Guten Appetit! [pause] Prost! Alle sagen: Prost! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

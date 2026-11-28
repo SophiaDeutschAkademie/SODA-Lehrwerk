@@ -1,0 +1,81 @@
+{
+ "job": "a21_so_03",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "Sora",
+   "parts": [
+    "In Ordnung. Was soll ich noch machen?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Sora",
+   "parts": [
+    "Das mache ich. Wie lange dauert es?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Sora",
+   "parts": [
+    "Mein Nachbar ist auf der Treppe gefallen und blutet am Kopf."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sora",
+   "parts": [
+    "Frau Becker, hätten Sie kurz Zeit? Ich hätte eine Frage zu einem Formular."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sora",
+   "parts": [
+    "Ein Antrag für das Bürgeramt. Ich brauche eine Meldebescheinigung für die Schule von Hana."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sora",
+   "parts": [
+    "Hier steht Familienstand. Können Sie mir sagen, was das bedeutet?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sora",
+   "parts": [
+    "Ah, danke. Und Staatsangehörigkeit?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sora",
+   "parts": [
+    "Und ich weiß nicht, ob ich hier unterschreiben muss."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sora",
+   "parts": [
+    "Wissen Sie, ob ich einen Termin brauche?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sora",
+   "parts": [
+    "Könnten Sie das Wort Meldebescheinigung noch einmal langsam sagen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] In Ordnung. Was soll ich noch machen? [pause] Das mache ich. Wie lange dauert es? [pause] Mein Nachbar ist auf der Treppe gefallen und blutet am Kopf. [pause] Frau Becker, hätten Sie kurz Zeit? Ich hätte eine Frage zu einem Formular. [pause] Ein Antrag für das Bürgeramt. Ich brauche eine Meldebescheinigung für die Schule von Hana. [pause] Hier steht Familienstand. Können Sie mir sagen, was das bedeutet? [pause] Ah, danke. Und Staatsangehörigkeit? [pause] Und ich weiß nicht, ob ich hier unterschreiben muss. [pause] Wissen Sie, ob ich einen Termin brauche? [pause] Könnten Sie das Wort Meldebescheinigung noch einmal langsam sagen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

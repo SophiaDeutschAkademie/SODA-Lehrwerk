@@ -1,0 +1,81 @@
+{
+ "job": "a21_do_03",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Ich habe Fieber, und mein Rücken tut sehr weh. Ich fühle mich ganz schwach."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Ja, ich habe um zehn einen Termin bei meiner Hausärztin."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Das weiß ich noch nicht. Ich rufe Sie nach dem Termin noch einmal an."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Muss ich Ihnen die Krankschreibung schicken?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Gut. Und die Besprechung mit Herrn Schneider heute Nachmittag?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Vielen Dank, Frau Hoffmann."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Ich bin bis Freitag krankgeschrieben."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Nicht gut. Ich habe seit gestern Fieber, und mein Rücken tut weh."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Darf ich am Donnerstag wieder arbeiten?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Dohyun",
+   "parts": [
+    "Ich kann nicht kommen, weil ich krank bin."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich habe Fieber, und mein Rücken tut sehr weh. Ich fühle mich ganz schwach. [pause] Ja, ich habe um zehn einen Termin bei meiner Hausärztin. [pause] Das weiß ich noch nicht. Ich rufe Sie nach dem Termin noch einmal an. [pause] Muss ich Ihnen die Krankschreibung schicken? [pause] Gut. Und die Besprechung mit Herrn Schneider heute Nachmittag? [pause] Vielen Dank, Frau Hoffmann. [pause] Ich bin bis Freitag krankgeschrieben. [pause] Nicht gut. Ich habe seit gestern Fieber, und mein Rücken tut weh. [pause] Darf ich am Donnerstag wieder arbeiten? [pause] Ich kann nicht kommen, weil ich krank bin. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

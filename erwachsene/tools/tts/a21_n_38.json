@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_38",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Vorteil, die Vorteile.",
+    "Der Preis ist ein Vorteil."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Nachteil, die Nachteile.",
+    "Der Akku ist klein. Das ist ein Nachteil."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "zufrieden.",
+    "Ich bin sehr zufrieden."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "reklamieren, hat reklamiert.",
+    "Ich möchte den Wasserkocher reklamieren."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Lieferung, die Lieferungen.",
+    "Die Lieferung ist falsch."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "liefern, hat geliefert.",
+    "Wann liefern Sie den Drucker?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Bestellung, die Bestellungen.",
+    "Meine Bestellung ist noch nicht da."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Bestellnummer, die Bestellnummern.",
+    "Haben Sie die Bestellnummer?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Kundenservice.",
+    "Ich rufe den Kundenservice an."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "zurückschicken, hat zurückgeschickt.",
+    "Ich schicke den Laptop zurück."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Vorteil, die Vorteile. Der Preis ist ein Vorteil. [pause] der Nachteil, die Nachteile. Der Akku ist klein. Das ist ein Nachteil. [pause] zufrieden. Ich bin sehr zufrieden. [pause] reklamieren, hat reklamiert. Ich möchte den Wasserkocher reklamieren. [pause] die Lieferung, die Lieferungen. Die Lieferung ist falsch. [pause] liefern, hat geliefert. Wann liefern Sie den Drucker? [pause] die Bestellung, die Bestellungen. Meine Bestellung ist noch nicht da. [pause] die Bestellnummer, die Bestellnummern. Haben Sie die Bestellnummer? [pause] der Kundenservice. Ich rufe den Kundenservice an. [pause] zurückschicken, hat zurückgeschickt. Ich schicke den Laptop zurück. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

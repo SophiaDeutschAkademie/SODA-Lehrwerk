@@ -1,0 +1,90 @@
+{
+ "job": "a21_n_35",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Laptop, die Laptops."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Bildschirm, die Bildschirme.",
+    "Der Bildschirm ist groß."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Tastatur, die Tastaturen.",
+    "Die Tastatur ist neu."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Ladekabel, die Ladekabel.",
+    "Wo ist mein Ladekabel?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Akku, die Akkus.",
+    "Der Akku ist leer."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Drucker, die Drucker.",
+    "Der Drucker ist kaputt."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Kopfhörer, die Kopfhörer.",
+    "Ich höre Musik mit Kopfhörern."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Kamera, die Kameras.",
+    "Die Kamera ist klein und leicht."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Wasserkocher, die Wasserkocher.",
+    "Der Wasserkocher funktioniert nicht."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Gerät, die Geräte.",
+    "Das Gerät ist ganz neu."
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Laptop, die Laptops. [pause] der Bildschirm, die Bildschirme. Der Bildschirm ist groß. [pause] die Tastatur, die Tastaturen. Die Tastatur ist neu. [pause] das Ladekabel, die Ladekabel. Wo ist mein Ladekabel? [pause] der Akku, die Akkus. Der Akku ist leer. [pause] der Drucker, die Drucker. Der Drucker ist kaputt. [pause] der Kopfhörer, die Kopfhörer. Ich höre Musik mit Kopfhörern. [pause] die Kamera, die Kameras. Die Kamera ist klein und leicht. [pause] der Wasserkocher, die Wasserkocher. Der Wasserkocher funktioniert nicht. [pause] das Gerät, die Geräte. Das Gerät ist ganz neu. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

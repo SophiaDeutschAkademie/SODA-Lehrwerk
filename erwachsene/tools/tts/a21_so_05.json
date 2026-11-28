@@ -1,0 +1,81 @@
+{
+ "job": "a21_so_05",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "Sora",
+   "parts": [
+    "Ich möchte einen Tisch reservieren."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sora",
+   "parts": [
+    "Guten Tag. Ich habe letzte Woche diesen Wasserkocher gekauft, aber er funktioniert nicht."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sora",
+   "parts": [
+    "Das Wasser bleibt kalt."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sora",
+   "parts": [
+    "Ja, hier ist er."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sora",
+   "parts": [
+    "Haben Sie dieses Modell noch einmal?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sora",
+   "parts": [
+    "Hm. Ist das Modell wirklich besser?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sora",
+   "parts": [
+    "Gut, dann nehme ich das."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sora",
+   "parts": [
+    "Vielen Dank für Ihre Hilfe."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sora",
+   "parts": [
+    "Ich möchte den Wasserkocher zurückgeben und mein Geld zurückbekommen."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Sora",
+   "parts": [
+    "Ich möchte mein Geld zurück."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich möchte einen Tisch reservieren. [pause] Guten Tag. Ich habe letzte Woche diesen Wasserkocher gekauft, aber er funktioniert nicht. [pause] Das Wasser bleibt kalt. [pause] Ja, hier ist er. [pause] Haben Sie dieses Modell noch einmal? [pause] Hm. Ist das Modell wirklich besser? [pause] Gut, dann nehme ich das. [pause] Vielen Dank für Ihre Hilfe. [pause] Ich möchte den Wasserkocher zurückgeben und mein Geld zurückbekommen. [pause] Ich möchte mein Geld zurück. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

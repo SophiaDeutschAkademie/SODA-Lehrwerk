@@ -1,0 +1,85 @@
+{
+ "job": "a21_n_26",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "das Erdgeschoss.",
+    "Der Automat steht im Erdgeschoss."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Nehmen Sie bitte Platz.",
+    "Guten Morgen, nehmen Sie bitte Platz."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "ohne.",
+    "Ohne Termin geht es nicht."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "genau.",
+    "Ja, genau."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Könnten Sie mir bitte helfen? Könnten Sie das bitte wiederholen?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Ich hätte gern einen Termin. Ich hätte eine Frage."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "ich weiß, du weißt, er weiß."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "wir wissen, ihr wisst, sie wissen."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Brauche ich einen Termin?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Wo ist das Bürgeramt?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Erdgeschoss. Der Automat steht im Erdgeschoss. [pause] Nehmen Sie bitte Platz. Guten Morgen, nehmen Sie bitte Platz. [pause] ohne. Ohne Termin geht es nicht. [pause] genau. Ja, genau. [pause] Könnten Sie mir bitte helfen? Könnten Sie das bitte wiederholen? [pause] Ich hätte gern einen Termin. Ich hätte eine Frage. [pause] ich weiß, du weißt, er weiß. [pause] wir wissen, ihr wisst, sie wissen. [pause] Brauche ich einen Termin? [pause] Wo ist das Bürgeramt? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

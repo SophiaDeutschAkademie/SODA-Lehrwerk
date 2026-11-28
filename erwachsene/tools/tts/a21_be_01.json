@@ -1,0 +1,81 @@
+{
+ "job": "a21_be_01",
+ "who": "Becker",
+ "voice": "Melissa",
+ "voice_id": "paJLeKT4SGdqKEMFGc6U",
+ "items": [
+  {
+   "pid": "a2-1/2",
+   "who": "Becker",
+   "parts": [
+    "Frau Lee, wo haben Sie als Kind gewohnt?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Becker",
+   "parts": [
+    "Was haben Sie gern gemacht?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Becker",
+   "parts": [
+    "Und jetzt sind Sie Designerin. Das passt ja! Mussten Sie als Kind viel lernen?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Becker",
+   "parts": [
+    "Oh, Ihre Eltern waren streng!"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Becker",
+   "parts": [
+    "Wie schön! Konnten Sie schon als Kind schwimmen?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Becker",
+   "parts": [
+    "Ich wollte Ärztin werden. Aber ich konnte kein Blut sehen!"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Becker",
+   "parts": [
+    "Ja, gern. Welches Formular ist das?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Becker",
+   "parts": [
+    "Zeigen Sie mal. Was verstehen Sie nicht?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Becker",
+   "parts": [
+    "Das bedeutet: Sind Sie verheiratet oder ledig? Sie kreuzen verheiratet an."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Becker",
+   "parts": [
+    "Das ist das Land in Ihrem Pass. Sie schreiben koreanisch."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Frau Lee, wo haben Sie als Kind gewohnt? [pause] Was haben Sie gern gemacht? [pause] Und jetzt sind Sie Designerin. Das passt ja! Mussten Sie als Kind viel lernen? [pause] Oh, Ihre Eltern waren streng! [pause] Wie schön! Konnten Sie schon als Kind schwimmen? [pause] Ich wollte Ärztin werden. Aber ich konnte kein Blut sehen! [pause] Ja, gern. Welches Formular ist das? [pause] Zeigen Sie mal. Was verstehen Sie nicht? [pause] Das bedeutet: Sind Sie verheiratet oder ledig? Sie kreuzen verheiratet an. [pause] Das ist das Land in Ihrem Pass. Sie schreiben koreanisch. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

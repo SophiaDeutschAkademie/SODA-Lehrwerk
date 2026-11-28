@@ -1,0 +1,81 @@
+{
+ "job": "a21_n_27",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Wissen Sie, wo das Bürgeramt ist?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Können Sie mir sagen, ob ich einen Termin brauche?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Könntest du mir das Formular geben?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Hätten Sie kurz Zeit?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Können Sie mir sagen, wann ich die Karte bekomme?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Ich weiß nicht, welche Unterlagen ich brauche."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Wissen Sie, ob ich einen Termin brauche?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Ich weiß nicht, ob ich hier unterschreiben muss."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Können Sie mir sagen, ob das Formular richtig ist?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Ich möchte dich zum Essen einladen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wissen Sie, wo das Bürgeramt ist? [pause] Können Sie mir sagen, ob ich einen Termin brauche? [pause] Könntest du mir das Formular geben? [pause] Hätten Sie kurz Zeit? [pause] Können Sie mir sagen, wann ich die Karte bekomme? [pause] Ich weiß nicht, welche Unterlagen ich brauche. [pause] Wissen Sie, ob ich einen Termin brauche? [pause] Ich weiß nicht, ob ich hier unterschreiben muss. [pause] Können Sie mir sagen, ob das Formular richtig ist? [pause] Ich möchte dich zum Essen einladen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

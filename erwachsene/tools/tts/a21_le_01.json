@@ -1,0 +1,81 @@
+{
+ "job": "a21_le_01",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Jiu, komm mal! Das Fahrrad von Felix steht schon wieder im Flur."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Das Fahrrad muss in den Keller. Ich spreche heute Abend mit ihm."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Ins Regal. Ich habe gestern ein Schuhregal gekauft. Es steht noch in meinem Zimmer."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Ja, gute Idee. Und den Spiegel hängen wir über das Regal."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Er liegt auf dem Küchentisch. Ich hänge ihn gleich an den Kühlschrank."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Du putzt das Bad, ich mache die Küche sauber, und Felix bringt den Müll raus."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Stell die Schuhe bitte ins Regal."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Stell das Regal bitte an die Wand."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Wer putzt diese Woche das Bad?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Und was mache ich?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Jiu, komm mal! Das Fahrrad von Felix steht schon wieder im Flur. [pause] Das Fahrrad muss in den Keller. Ich spreche heute Abend mit ihm. [pause] Ins Regal. Ich habe gestern ein Schuhregal gekauft. Es steht noch in meinem Zimmer. [pause] Ja, gute Idee. Und den Spiegel hängen wir über das Regal. [pause] Er liegt auf dem Küchentisch. Ich hänge ihn gleich an den Kühlschrank. [pause] Du putzt das Bad, ich mache die Küche sauber, und Felix bringt den Müll raus. [pause] Stell die Schuhe bitte ins Regal. [pause] Stell das Regal bitte an die Wand. [pause] Wer putzt diese Woche das Bad? [pause] Und was mache ich? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

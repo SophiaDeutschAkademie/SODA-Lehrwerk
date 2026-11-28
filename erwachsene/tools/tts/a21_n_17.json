@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_17",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "sich hinlegen, hat sich hingelegt.",
+    "Leg dich wieder hin!"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "sich bewegen, hat sich bewegt.",
+    "Er sollte sich nicht bewegen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "untersuchen, hat untersucht.",
+    "Die Ärztin untersucht den Hals."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Hausärztin, die Hausärztinnen.",
+    "Ich habe einen Termin bei meiner Hausärztin."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "das Attest, die Atteste.",
+    "Für die Prüfung brauche ich ein Attest."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Krankschreibung, die Krankschreibungen.",
+    "Die Praxis schickt die Krankschreibung an die Krankenkasse."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "krankgeschrieben.",
+    "Ich bin bis Freitag krankgeschrieben."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Krankenkasse, die Krankenkassen.",
+    "Meine Krankenkasse zahlt das Medikament."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "das Pflaster, die Pflaster.",
+    "Hast du ein Pflaster?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Salbe, die Salben.",
+    "Die Salbe hilft bei Rückenschmerzen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] sich hinlegen, hat sich hingelegt. Leg dich wieder hin! [pause] sich bewegen, hat sich bewegt. Er sollte sich nicht bewegen. [pause] untersuchen, hat untersucht. Die Ärztin untersucht den Hals. [pause] die Hausärztin, die Hausärztinnen. Ich habe einen Termin bei meiner Hausärztin. [pause] das Attest, die Atteste. Für die Prüfung brauche ich ein Attest. [pause] die Krankschreibung, die Krankschreibungen. Die Praxis schickt die Krankschreibung an die Krankenkasse. [pause] krankgeschrieben. Ich bin bis Freitag krankgeschrieben. [pause] die Krankenkasse, die Krankenkassen. Meine Krankenkasse zahlt das Medikament. [pause] das Pflaster, die Pflaster. Hast du ein Pflaster? [pause] die Salbe, die Salben. Die Salbe hilft bei Rückenschmerzen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

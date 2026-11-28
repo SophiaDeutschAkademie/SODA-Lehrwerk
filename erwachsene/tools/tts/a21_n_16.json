@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_16",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "der Unfall, die Unfälle.",
+    "Markus hatte einen Unfall."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "fallen, du fällst, ist gefallen.",
+    "Er ist auf der Treppe gefallen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "gebrochen.",
+    "Der Arm ist gebrochen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Verletzung, die Verletzungen.",
+    "Die Verletzung ist nicht schlimm."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "schlimm.",
+    "Ist es schlimm?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "stark.",
+    "Die Schmerzen sind sehr stark."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "schwach.",
+    "Ich fühle mich schwach."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "sich fühlen, hat sich gefühlt.",
+    "Wie fühlen Sie sich?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "sich erkälten, hat sich erkältet.",
+    "Ich habe mich erkältet."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "sich ausruhen, hat sich ausgeruht.",
+    "Ruhen Sie sich aus!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Unfall, die Unfälle. Markus hatte einen Unfall. [pause] fallen, du fällst, ist gefallen. Er ist auf der Treppe gefallen. [pause] gebrochen. Der Arm ist gebrochen. [pause] die Verletzung, die Verletzungen. Die Verletzung ist nicht schlimm. [pause] schlimm. Ist es schlimm? [pause] stark. Die Schmerzen sind sehr stark. [pause] schwach. Ich fühle mich schwach. [pause] sich fühlen, hat sich gefühlt. Wie fühlen Sie sich? [pause] sich erkälten, hat sich erkältet. Ich habe mich erkältet. [pause] sich ausruhen, hat sich ausgeruht. Ruhen Sie sich aus! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

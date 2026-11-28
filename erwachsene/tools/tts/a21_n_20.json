@@ -1,0 +1,81 @@
+{
+ "job": "a21_n_20",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "fühlen, Ruhe, Fieber"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Bett, Grippe, Rücken"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "fühlen, füllen"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Ich fühle mich schwach und bleibe im Bett."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Du solltest heute im Bett bleiben."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Sie sollten zum Arzt gehen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Ich muss lernen, weil ich morgen eine Prüfung habe."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Er kann nicht aufstehen, weil sein Bein wehtut."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Hast du dich erkältet?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Könnten Sie mir bitte helfen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] fühlen, Ruhe, Fieber [pause] Bett, Grippe, Rücken [pause] fühlen, füllen [pause] Ich fühle mich schwach und bleibe im Bett. [pause] Du solltest heute im Bett bleiben. [pause] Sie sollten zum Arzt gehen. [pause] Ich muss lernen, weil ich morgen eine Prüfung habe. [pause] Er kann nicht aufstehen, weil sein Bein wehtut. [pause] Hast du dich erkältet? [pause] Könnten Sie mir bitte helfen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

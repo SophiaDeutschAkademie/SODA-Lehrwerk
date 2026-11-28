@@ -1,0 +1,81 @@
+{
+ "job": "a21_le_03",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "Lena",
+   "parts": [
+    "Guten Morgen, Jiu! Du siehst aber schlecht aus. Wie fühlst du dich?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Lena",
+   "parts": [
+    "Hast du Fieber?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Lena",
+   "parts": [
+    "Dann solltest du heute im Bett bleiben."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Lena",
+   "parts": [
+    "Mit Fieber kannst du doch keine Prüfung schreiben! Du solltest zum Arzt gehen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Lena",
+   "parts": [
+    "Du brauchst ein Attest. Der Arzt schreibt: Du bist krank. Dann kannst du die Prüfung später schreiben."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Lena",
+   "parts": [
+    "Ja. Aber du musst das Attest schnell in der Sprachschule abgeben."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Lena",
+   "parts": [
+    "Und ich mache dir einen Tee. Leg dich wieder hin und ruh dich aus!"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Lena",
+   "parts": [
+    "Du solltest zum Arzt gehen."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Klar! Was kochst du?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Lecker! Weißt du, ob Ewa Fleisch isst?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Morgen, Jiu! Du siehst aber schlecht aus. Wie fühlst du dich? [pause] Hast du Fieber? [pause] Dann solltest du heute im Bett bleiben. [pause] Mit Fieber kannst du doch keine Prüfung schreiben! Du solltest zum Arzt gehen. [pause] Du brauchst ein Attest. Der Arzt schreibt: Du bist krank. Dann kannst du die Prüfung später schreiben. [pause] Ja. Aber du musst das Attest schnell in der Sprachschule abgeben. [pause] Und ich mache dir einen Tee. Leg dich wieder hin und ruh dich aus! [pause] Du solltest zum Arzt gehen. [pause] Klar! Was kochst du? [pause] Lecker! Weißt du, ob Ewa Fleisch isst? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

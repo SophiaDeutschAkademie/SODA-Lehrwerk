@@ -1,0 +1,81 @@
+{
+ "job": "a21_n_34",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Wenn Ewa kein Fleisch isst, mache ich etwas mit Tofu."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Wenn Sie möchten, bestellen wir zuerst eine Suppe."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Wir essen draußen, wenn das Wetter schön ist."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Ich schenke ihr Blumen."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Die Kellnerin bringt uns die Speisekarte."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Ich empfehle Ihnen den Fisch."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Dieser Laptop ist leichter als mein Rucksack."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Welches Modell ist am besten?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Ich brauche einen neuen Laptop."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Ich möchte mein Geld zurück."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wenn Ewa kein Fleisch isst, mache ich etwas mit Tofu. [pause] Wenn Sie möchten, bestellen wir zuerst eine Suppe. [pause] Wir essen draußen, wenn das Wetter schön ist. [pause] Ich schenke ihr Blumen. [pause] Die Kellnerin bringt uns die Speisekarte. [pause] Ich empfehle Ihnen den Fisch. [pause] Dieser Laptop ist leichter als mein Rucksack. [pause] Welches Modell ist am besten? [pause] Ich brauche einen neuen Laptop. [pause] Ich möchte mein Geld zurück. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

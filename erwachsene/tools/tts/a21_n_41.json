@@ -1,0 +1,60 @@
+{
+ "job": "a21_n_41",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "So ist es am günstigsten."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Was ist für dich am wichtigsten?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Das ist ein neuer Laptop."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Ich brauche ein neues Ladekabel und eine neue Tasche."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Ich arbeite mit einem neuen Laptop."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Sie spricht mit einer netten Verkäuferin."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Ich bin mit meinem alten Handy zufrieden."
+   ]
+  }
+ ],
+ "script": "Also. [pause] So ist es am günstigsten. [pause] Was ist für dich am wichtigsten? [pause] Das ist ein neuer Laptop. [pause] Ich brauche ein neues Ladekabel und eine neue Tasche. [pause] Ich arbeite mit einem neuen Laptop. [pause] Sie spricht mit einer netten Verkäuferin. [pause] Ich bin mit meinem alten Handy zufrieden. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

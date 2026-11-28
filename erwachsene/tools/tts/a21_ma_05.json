@@ -1,0 +1,74 @@
+{
+ "job": "a21_ma_05",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "Mann",
+   "parts": [
+    "Ja, zum Beispiel Nudeln mit Tomatensoße."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Mann",
+   "parts": [
+    "Das geht leider nicht. Aber wir haben auch Kuchen. Wenn Sie möchten, bringen wir ihn nach dem Essen an den Tisch."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Mann",
+   "parts": [
+    "Dann sage ich nichts. Auf welchen Namen darf ich reservieren?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Mann",
+   "parts": [
+    "Oh. Was ist das Problem?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Mann",
+   "parts": [
+    "Das ist ärgerlich. Haben Sie den Kassenzettel?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Mann",
+   "parts": [
+    "Danke. Möchten Sie einen neuen Wasserkocher, oder möchten Sie Ihr Geld zurück?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Mann",
+   "parts": [
+    "Ja. Aber wir haben auch ein neues Modell. Es ist schneller und leiser. Es kostet zehn Euro mehr."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Mann",
+   "parts": [
+    "Ja. Es ist am schnellsten, und unsere Kunden sind sehr zufrieden."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Mann",
+   "parts": [
+    "Gern. Sie zahlen nur die zehn Euro. Und Sie haben wieder zwei Jahre Garantie."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ja, zum Beispiel Nudeln mit Tomatensoße. [pause] Das geht leider nicht. Aber wir haben auch Kuchen. Wenn Sie möchten, bringen wir ihn nach dem Essen an den Tisch. [pause] Dann sage ich nichts. Auf welchen Namen darf ich reservieren? [pause] Oh. Was ist das Problem? [pause] Das ist ärgerlich. Haben Sie den Kassenzettel? [pause] Danke. Möchten Sie einen neuen Wasserkocher, oder möchten Sie Ihr Geld zurück? [pause] Ja. Aber wir haben auch ein neues Modell. Es ist schneller und leiser. Es kostet zehn Euro mehr. [pause] Ja. Es ist am schnellsten, und unsere Kunden sind sehr zufrieden. [pause] Gern. Sie zahlen nur die zehn Euro. Und Sie haben wieder zwei Jahre Garantie. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

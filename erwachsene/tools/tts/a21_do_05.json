@@ -1,0 +1,81 @@
+{
+ "job": "a21_do_05",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Vielen Dank. Herr Schneider, es freut mich, dass Sie heute Zeit haben."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Meine Kollegen sagen, dass der Fisch hier sehr gut ist. Mögen Sie Fisch?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Ich nehme das Hähnchen mit Reis. Wenn Sie möchten, bestellen wir zuerst eine Suppe."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Ja. Zweimal die Tomatensuppe, einmal den Fisch und einmal das Hähnchen, bitte."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Und ich nehme einen Apfelsaft."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Bringen Sie uns bitte die Rechnung."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Zusammen, bitte. Herr Schneider, ich lade Sie ein."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Dohyun",
+   "parts": [
+    "Die Rechnung, bitte."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Guten Tag, hier ist Park von der Firma Kessler Technik. Ich möchte eine Lieferung reklamieren."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Ja, die Nummer ist vier, sieben, zwei, null."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Vielen Dank. Herr Schneider, es freut mich, dass Sie heute Zeit haben. [pause] Meine Kollegen sagen, dass der Fisch hier sehr gut ist. Mögen Sie Fisch? [pause] Ich nehme das Hähnchen mit Reis. Wenn Sie möchten, bestellen wir zuerst eine Suppe. [pause] Ja. Zweimal die Tomatensuppe, einmal den Fisch und einmal das Hähnchen, bitte. [pause] Und ich nehme einen Apfelsaft. [pause] Bringen Sie uns bitte die Rechnung. [pause] Zusammen, bitte. Herr Schneider, ich lade Sie ein. [pause] Die Rechnung, bitte. [pause] Guten Tag, hier ist Park von der Firma Kessler Technik. Ich möchte eine Lieferung reklamieren. [pause] Ja, die Nummer ist vier, sieben, zwei, null. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

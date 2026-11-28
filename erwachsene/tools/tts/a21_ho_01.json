@@ -1,0 +1,81 @@
+{
+ "job": "a21_ho_01",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Hoffmann, guten Morgen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Oh, das tut mir leid. Was haben Sie denn?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Dann sollten Sie zum Arzt gehen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Gut. Kommen Sie morgen wieder?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "In Ordnung. Vergessen Sie bitte die Krankschreibung nicht."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Nein. Die Praxis schickt sie an die Krankenkasse, und wir bekommen sie von dort. Aber sagen Sie uns bitte: Bis wann sind Sie krankgeschrieben?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Die macht Herr Weber. Ruhen Sie sich aus, und gute Besserung!"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Sie sollten heute zu Hause bleiben und sich ausruhen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Gehen Sie zum Arzt?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Hoffmann",
+   "parts": [
+    "Wie lange sind Sie krank?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Hoffmann, guten Morgen. [pause] Oh, das tut mir leid. Was haben Sie denn? [pause] Dann sollten Sie zum Arzt gehen. [pause] Gut. Kommen Sie morgen wieder? [pause] In Ordnung. Vergessen Sie bitte die Krankschreibung nicht. [pause] Nein. Die Praxis schickt sie an die Krankenkasse, und wir bekommen sie von dort. Aber sagen Sie uns bitte: Bis wann sind Sie krankgeschrieben? [pause] Die macht Herr Weber. Ruhen Sie sich aus, und gute Besserung! [pause] Sie sollten heute zu Hause bleiben und sich ausruhen. [pause] Gehen Sie zum Arzt? [pause] Wie lange sind Sie krank? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

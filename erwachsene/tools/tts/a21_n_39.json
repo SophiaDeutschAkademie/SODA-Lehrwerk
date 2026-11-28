@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_39",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "zurückgeben, du gibst zurück, hat zurückgegeben.",
+    "Kann ich die Schuhe zurückgeben?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "zurückbekommen, hat zurückbekommen.",
+    "Ich möchte mein Geld zurückbekommen."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "falsch.",
+    "Die Farbe ist falsch."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "richtig.",
+    "Ist die Adresse richtig?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Fehler, die Fehler.",
+    "Das ist unser Fehler."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "bestätigen, hat bestätigt.",
+    "Können Sie das per E-Mail bestätigen?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "sich beschweren, hat sich beschwert.",
+    "Ich möchte mich beschweren."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "ärgerlich.",
+    "Das ist wirklich ärgerlich."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Entschuldigen Sie bitte.",
+    "Entschuldigen Sie bitte, das war unser Fehler."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "per E-Mail.",
+    "Ich schicke Ihnen die Rechnung per E-Mail."
+   ]
+  }
+ ],
+ "script": "Also. [pause] zurückgeben, du gibst zurück, hat zurückgegeben. Kann ich die Schuhe zurückgeben? [pause] zurückbekommen, hat zurückbekommen. Ich möchte mein Geld zurückbekommen. [pause] falsch. Die Farbe ist falsch. [pause] richtig. Ist die Adresse richtig? [pause] der Fehler, die Fehler. Das ist unser Fehler. [pause] bestätigen, hat bestätigt. Können Sie das per E-Mail bestätigen? [pause] sich beschweren, hat sich beschwert. Ich möchte mich beschweren. [pause] ärgerlich. Das ist wirklich ärgerlich. [pause] Entschuldigen Sie bitte. Entschuldigen Sie bitte, das war unser Fehler. [pause] per E-Mail. Ich schicke Ihnen die Rechnung per E-Mail. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

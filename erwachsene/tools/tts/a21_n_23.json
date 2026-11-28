@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_23",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "das Formular, die Formulare.",
+    "Das Formular ist lang."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "ausfüllen, hat ausgefüllt.",
+    "Füllen Sie bitte das Formular aus."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "unterschreiben, hat unterschrieben.",
+    "Könnten Sie bitte hier unterschreiben?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Unterschrift, die Unterschriften.",
+    "Hier fehlt Ihre Unterschrift."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "ankreuzen, hat angekreuzt.",
+    "Kreuzen Sie bitte Ja oder Nein an."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Pass, die Pässe.",
+    "Hier ist mein Pass."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Ausweis, die Ausweise.",
+    "Haben Sie einen Ausweis?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "das Passfoto, die Passfotos.",
+    "Es fehlt noch ein Passfoto."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Vertrag, die Verträge.",
+    "Ich habe den Vertrag unterschrieben."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Mietvertrag, die Mietverträge.",
+    "Bringen Sie den Mietvertrag mit."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Formular, die Formulare. Das Formular ist lang. [pause] ausfüllen, hat ausgefüllt. Füllen Sie bitte das Formular aus. [pause] unterschreiben, hat unterschrieben. Könnten Sie bitte hier unterschreiben? [pause] die Unterschrift, die Unterschriften. Hier fehlt Ihre Unterschrift. [pause] ankreuzen, hat angekreuzt. Kreuzen Sie bitte Ja oder Nein an. [pause] der Pass, die Pässe. Hier ist mein Pass. [pause] der Ausweis, die Ausweise. Haben Sie einen Ausweis? [pause] das Passfoto, die Passfotos. Es fehlt noch ein Passfoto. [pause] der Vertrag, die Verträge. Ich habe den Vertrag unterschrieben. [pause] der Mietvertrag, die Mietverträge. Bringen Sie den Mietvertrag mit. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

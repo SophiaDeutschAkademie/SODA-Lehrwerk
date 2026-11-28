@@ -1,0 +1,81 @@
+{
+ "job": "a21_do_01",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "Dohyun",
+   "parts": [
+    "Guten Morgen, Frau Krause. Hier ist Park aus dem zweiten Stock. Wir haben ein Problem."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Dohyun",
+   "parts": [
+    "Die Heizung im Wohnzimmer funktioniert nicht. Sie ist seit Samstag kalt."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Dohyun",
+   "parts": [
+    "Dort ist sie warm. Aber im Bad tropft auch der Wasserhahn."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Dohyun",
+   "parts": [
+    "Ich arbeite bis fünf. Aber meine Frau ist am Vormittag zu Hause."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Dohyun",
+   "parts": [
+    "Ja, das passt. Muss ich die Reparatur zahlen?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Dohyun",
+   "parts": [
+    "Vielen Dank, Frau Krause."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Dohyun",
+   "parts": [
+    "Das mache ich. Auf Wiederhören!"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Dohyun",
+   "parts": [
+    "Der Wasserhahn im Bad tropft seit gestern."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Dohyun",
+   "parts": [
+    "Die Heizung funktioniert nicht."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Dohyun",
+   "parts": [
+    "Lang! Ich musste um fünf Uhr aufstehen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Morgen, Frau Krause. Hier ist Park aus dem zweiten Stock. Wir haben ein Problem. [pause] Die Heizung im Wohnzimmer funktioniert nicht. Sie ist seit Samstag kalt. [pause] Dort ist sie warm. Aber im Bad tropft auch der Wasserhahn. [pause] Ich arbeite bis fünf. Aber meine Frau ist am Vormittag zu Hause. [pause] Ja, das passt. Muss ich die Reparatur zahlen? [pause] Vielen Dank, Frau Krause. [pause] Das mache ich. Auf Wiederhören! [pause] Der Wasserhahn im Bad tropft seit gestern. [pause] Die Heizung funktioniert nicht. [pause] Lang! Ich musste um fünf Uhr aufstehen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,67 @@
+{
+ "job": "a21s_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag. Was fehlt Ihnen denn?"
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Seit wann haben Sie die Beschwerden?"
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Können Sie gut schlafen?"
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Haben Sie schon Medikamente genommen?"
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-1",
+   "who": "Frau",
+   "parts": [
+    "Sie sollten drei Tage zu Hause bleiben. Brauchen Sie eine Krankschreibung?"
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Restaurant am Main, guten Tag."
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Gern. Für wie viele Personen?"
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-2",
+   "who": "Frau",
+   "parts": [
+    "Ja, natürlich. Um sieben ist es leider voll. Wenn Sie um halb acht kommen, habe ich einen Tisch am Fenster."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag. Was fehlt Ihnen denn? [pause] Seit wann haben Sie die Beschwerden? [pause] Können Sie gut schlafen? [pause] Haben Sie schon Medikamente genommen? [pause] Sie sollten drei Tage zu Hause bleiben. Brauchen Sie eine Krankschreibung? [pause] Restaurant am Main, guten Tag. [pause] Gern. Für wie viele Personen? [pause] Ja, natürlich. Um sieben ist es leider voll. Wenn Sie um halb acht kommen, habe ich einen Tisch am Fenster. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

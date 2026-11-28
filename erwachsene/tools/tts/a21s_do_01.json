@@ -1,0 +1,67 @@
+{
+ "job": "a21s_do_01",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a2-1/wiederholung-1",
+   "who": "Dohyun",
+   "parts": [
+    "Guten Tag, Frau Krause, hier ist Park aus dem zweiten Stock."
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-1",
+   "who": "Dohyun",
+   "parts": [
+    "Der Handwerker war gestern da und hat die Heizung repariert. Jetzt ist sie wieder warm."
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-1",
+   "who": "Dohyun",
+   "parts": [
+    "Aber der Wasserhahn im Bad tropft noch. Er konnte ihn nicht reparieren, weil er keine Zeit hatte."
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-1",
+   "who": "Dohyun",
+   "parts": [
+    "Er will am Freitag noch einmal kommen. Vielen Dank und auf Wiederhören!"
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-2",
+   "who": "Dohyun",
+   "parts": [
+    "Guten Tag, hier ist Park. Ich hätte gern einen Tisch für Freitagabend."
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-2",
+   "who": "Dohyun",
+   "parts": [
+    "Für vier Personen, um sieben Uhr. Können Sie mir sagen, ob Sie auch Gerichte ohne Fleisch haben?"
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-2",
+   "who": "Dohyun",
+   "parts": [
+    "Halb acht ist gut. Vielen Dank!"
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Dohyun",
+   "parts": [
+    "Der Zug hatte eine Stunde Verspätung, und ich habe die Besprechung verpasst."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Tag, Frau Krause, hier ist Park aus dem zweiten Stock. [pause] Der Handwerker war gestern da und hat die Heizung repariert. Jetzt ist sie wieder warm. [pause] Aber der Wasserhahn im Bad tropft noch. Er konnte ihn nicht reparieren, weil er keine Zeit hatte. [pause] Er will am Freitag noch einmal kommen. Vielen Dank und auf Wiederhören! [pause] Guten Tag, hier ist Park. Ich hätte gern einen Tisch für Freitagabend. [pause] Für vier Personen, um sieben Uhr. Können Sie mir sagen, ob Sie auch Gerichte ohne Fleisch haben? [pause] Halb acht ist gut. Vielen Dank! [pause] Der Zug hatte eine Stunde Verspätung, und ich habe die Besprechung verpasst. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

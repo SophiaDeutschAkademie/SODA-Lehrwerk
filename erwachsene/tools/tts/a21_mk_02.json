@@ -1,0 +1,46 @@
+{
+ "job": "a21_mk_02",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "Du warst gestern in München, oder? Wie war's?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "War der Zug pünktlich?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "Wie war die Besprechung?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "Und was hat sie gesagt?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "Wann bist du zurückgekommen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Du warst gestern in München, oder? Wie war's? [pause] War der Zug pünktlich? [pause] Wie war die Besprechung? [pause] Und was hat sie gesagt? [pause] Wann bist du zurückgekommen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

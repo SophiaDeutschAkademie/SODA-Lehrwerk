@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_18",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Tropfen.",
+    "Nehmen Sie die Tropfen dreimal am Tag."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "im Bett bleiben.",
+    "Du solltest im Bett bleiben."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "weil.",
+    "Ich komme nicht, weil ich krank bin."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "der Notfall, die Notfälle.",
+    "Das ist ein Notfall!"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "der Notruf.",
+    "Im Notfall ruft man den Notruf an."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "der Krankenwagen, die Krankenwagen.",
+    "Der Krankenwagen kommt sofort."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Notaufnahme, die Notaufnahmen.",
+    "Wir fahren in die Notaufnahme."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Feuerwehr.",
+    "Die Feuerwehr ist schnell gekommen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Polizei.",
+    "Ruf die Polizei an!"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Hilfe.",
+    "Ich brauche Hilfe!"
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Tropfen. Nehmen Sie die Tropfen dreimal am Tag. [pause] im Bett bleiben. Du solltest im Bett bleiben. [pause] weil. Ich komme nicht, weil ich krank bin. [pause] der Notfall, die Notfälle. Das ist ein Notfall! [pause] der Notruf. Im Notfall ruft man den Notruf an. [pause] der Krankenwagen, die Krankenwagen. Der Krankenwagen kommt sofort. [pause] die Notaufnahme, die Notaufnahmen. Wir fahren in die Notaufnahme. [pause] die Feuerwehr. Die Feuerwehr ist schnell gekommen. [pause] die Polizei. Ruf die Polizei an! [pause] die Hilfe. Ich brauche Hilfe! [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

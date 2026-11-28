@@ -1,0 +1,81 @@
+{
+ "job": "a21_ma_04",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "Mann",
+   "parts": [
+    "Ja, Sie können es online ausfüllen und dann mitbringen. Die Gebühr steht auch auf der Liste."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Mann",
+   "parts": [
+    "Danke für die Einladung, Herr Park. Das Restaurant sieht sehr schön aus."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Mann",
+   "parts": [
+    "Ja, sehr gern. Und was nehmen Sie?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Mann",
+   "parts": [
+    "Gute Idee."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Mann",
+   "parts": [
+    "Für mich bitte ein Wasser. Ich muss noch Auto fahren."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Mann",
+   "parts": [
+    "Ja, sehr gut. Der Fisch war wirklich lecker."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Mann",
+   "parts": [
+    "Restaurant Lindenhof, guten Tag."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Mann",
+   "parts": [
+    "Gern. Für wann?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Mann",
+   "parts": [
+    "Für wie viele Personen?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Mann",
+   "parts": [
+    "Am Sonntag ist es sehr voll. Aber wenn Sie um zwölf kommen, habe ich einen Tisch am Fenster."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ja, Sie können es online ausfüllen und dann mitbringen. Die Gebühr steht auch auf der Liste. [pause] Danke für die Einladung, Herr Park. Das Restaurant sieht sehr schön aus. [pause] Ja, sehr gern. Und was nehmen Sie? [pause] Gute Idee. [pause] Für mich bitte ein Wasser. Ich muss noch Auto fahren. [pause] Ja, sehr gut. Der Fisch war wirklich lecker. [pause] Restaurant Lindenhof, guten Tag. [pause] Gern. Für wann? [pause] Für wie viele Personen? [pause] Am Sonntag ist es sehr voll. Aber wenn Sie um zwölf kommen, habe ich einen Tisch am Fenster. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "a21_ji_04",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Meine Aufenthaltserlaubnis ist nur noch bis zum einunddreißigsten Januar gültig. Ich möchte sie verlängern."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Noch nicht. Ich besuche einen Sprachkurs und möchte danach studieren."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Können Sie mir sagen, wie ich einen Termin bekomme?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Und wissen Sie, welche Unterlagen ich brauche?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Das ist viel. Könnten Sie das bitte aufschreiben?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Vielen Dank! Ich hätte noch eine Frage: Wissen Sie, ob ich das Formular schon zu Hause ausfüllen kann?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Super, vielen Dank für Ihre Hilfe!"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Könnten Sie mir bitte sagen, wo Schalter drei ist?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Könnten Sie mir bitte helfen?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Jiu",
+   "parts": [
+    "Lena, ich möchte am Samstag Carlos und Ewa zum Essen einladen. Ist das okay für dich?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Meine Aufenthaltserlaubnis ist nur noch bis zum einunddreißigsten Januar gültig. Ich möchte sie verlängern. [pause] Noch nicht. Ich besuche einen Sprachkurs und möchte danach studieren. [pause] Können Sie mir sagen, wie ich einen Termin bekomme? [pause] Und wissen Sie, welche Unterlagen ich brauche? [pause] Das ist viel. Könnten Sie das bitte aufschreiben? [pause] Vielen Dank! Ich hätte noch eine Frage: Wissen Sie, ob ich das Formular schon zu Hause ausfüllen kann? [pause] Super, vielen Dank für Ihre Hilfe! [pause] Könnten Sie mir bitte sagen, wo Schalter drei ist? [pause] Könnten Sie mir bitte helfen? [pause] Lena, ich möchte am Samstag Carlos und Ewa zum Essen einladen. Ist das okay für dich? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

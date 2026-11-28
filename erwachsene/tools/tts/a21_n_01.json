@@ -1,0 +1,87 @@
+{
+ "job": "a21_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Die Heizung funktioniert nicht."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Wohin stellen wir das Regal?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Stell es bitte an die Wand."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Wann kann der Handwerker kommen?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "die Heizung, die Heizungen.",
+    "Die Heizung ist kalt."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Kühlschrank, die Kühlschränke.",
+    "Die Milch steht im Kühlschrank."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Herd, die Herde.",
+    "Der Herd ist neu."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "die Spülmaschine, die Spülmaschinen.",
+    "Die Spülmaschine ist kaputt."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "die Dusche, die Duschen.",
+    "Die Dusche ist im Bad."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "die Toilette, die Toiletten.",
+    "Wo ist die Toilette?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Die Heizung funktioniert nicht. [pause] Wohin stellen wir das Regal? [pause] Stell es bitte an die Wand. [pause] Wann kann der Handwerker kommen? [pause] die Heizung, die Heizungen. Die Heizung ist kalt. [pause] der Kühlschrank, die Kühlschränke. Die Milch steht im Kühlschrank. [pause] der Herd, die Herde. Der Herd ist neu. [pause] die Spülmaschine, die Spülmaschinen. Die Spülmaschine ist kaputt. [pause] die Dusche, die Duschen. Die Dusche ist im Bad. [pause] die Toilette, die Toiletten. Wo ist die Toilette? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,90 @@
+{
+ "job": "a21_n_30",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "das Restaurant, die Restaurants.",
+    "Das Restaurant ist am Main."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "reservieren, hat reserviert."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "die Speisekarte, die Speisekarten.",
+    "Ich bringe Ihnen die Speisekarte."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "bestellen, hat bestellt.",
+    "Möchten Sie bestellen?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "empfehlen, du empfiehlst, hat empfohlen.",
+    "Was können Sie empfehlen?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "die Kellnerin, die Kellnerinnen.",
+    "Die Kellnerin bringt das Essen."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "die Rechnung, die Rechnungen.",
+    "Die Rechnung, bitte!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "das Trinkgeld.",
+    "Ich gebe zwei Euro Trinkgeld."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "zusammen oder getrennt.",
+    "Zahlen Sie zusammen oder getrennt?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Stimmt so.",
+    "Dreißig Euro. Stimmt so."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Restaurant, die Restaurants. Das Restaurant ist am Main. [pause] reservieren, hat reserviert. [pause] die Speisekarte, die Speisekarten. Ich bringe Ihnen die Speisekarte. [pause] bestellen, hat bestellt. Möchten Sie bestellen? [pause] empfehlen, du empfiehlst, hat empfohlen. Was können Sie empfehlen? [pause] die Kellnerin, die Kellnerinnen. Die Kellnerin bringt das Essen. [pause] die Rechnung, die Rechnungen. Die Rechnung, bitte! [pause] das Trinkgeld. Ich gebe zwei Euro Trinkgeld. [pause] zusammen oder getrennt. Zahlen Sie zusammen oder getrennt? [pause] Stimmt so. Dreißig Euro. Stimmt so. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

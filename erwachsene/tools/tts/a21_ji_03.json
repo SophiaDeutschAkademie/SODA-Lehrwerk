@@ -1,0 +1,81 @@
+{
+ "job": "a21_ji_03",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "Jiu",
+   "parts": [
+    "Nicht gut. Ich habe mich erkältet. Mein Hals tut weh, und mir ist schwindlig."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Jiu",
+   "parts": [
+    "Ja, achtunddreißig Komma fünf. Ich habe heute Nacht fast nicht geschlafen, weil ich so viel husten musste."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Jiu",
+   "parts": [
+    "Das geht nicht. Ich muss lernen, weil ich morgen eine Prüfung habe."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Jiu",
+   "parts": [
+    "Aber dann verpasse ich die Prüfung."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Jiu",
+   "parts": [
+    "Wirklich? Geht das?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Jiu",
+   "parts": [
+    "Gut. Ich rufe gleich in der Praxis an."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Jiu",
+   "parts": [
+    "Danke, Lena. Das ist sehr nett von dir."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Jiu",
+   "parts": [
+    "Ich habe mich erkältet, und mein Hals tut weh."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Jiu",
+   "parts": [
+    "Ich fühle mich nicht gut."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Jiu",
+   "parts": [
+    "Guten Tag. Entschuldigung, könnten Sie mir bitte helfen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Nicht gut. Ich habe mich erkältet. Mein Hals tut weh, und mir ist schwindlig. [pause] Ja, achtunddreißig Komma fünf. Ich habe heute Nacht fast nicht geschlafen, weil ich so viel husten musste. [pause] Das geht nicht. Ich muss lernen, weil ich morgen eine Prüfung habe. [pause] Aber dann verpasse ich die Prüfung. [pause] Wirklich? Geht das? [pause] Gut. Ich rufe gleich in der Praxis an. [pause] Danke, Lena. Das ist sehr nett von dir. [pause] Ich habe mich erkältet, und mein Hals tut weh. [pause] Ich fühle mich nicht gut. [pause] Guten Tag. Entschuldigung, könnten Sie mir bitte helfen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

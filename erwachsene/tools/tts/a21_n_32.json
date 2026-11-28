@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_32",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "wenn.",
+    "Wenn es regnet, essen wir drinnen."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "glauben, hat geglaubt.",
+    "Ich glaube, dass es schmeckt."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "meinen, hat gemeint.",
+    "Was meinst du?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "denken, hat gedacht.",
+    "Ich denke, dass wir reservieren sollten."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "antworten, hat geantwortet.",
+    "Ewa hat noch nicht geantwortet."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "drinnen.",
+    "Wir essen heute drinnen."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "hoffentlich.",
+    "Hoffentlich schmeckt es dir."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "sicher.",
+    "Carlos kommt sicher."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "klar.",
+    "Klar, ich helfe dir!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Es freut mich, dass …",
+    "Es freut mich, dass Sie Zeit haben."
+   ]
+  }
+ ],
+ "script": "Also. [pause] wenn. Wenn es regnet, essen wir drinnen. [pause] glauben, hat geglaubt. Ich glaube, dass es schmeckt. [pause] meinen, hat gemeint. Was meinst du? [pause] denken, hat gedacht. Ich denke, dass wir reservieren sollten. [pause] antworten, hat geantwortet. Ewa hat noch nicht geantwortet. [pause] drinnen. Wir essen heute drinnen. [pause] hoffentlich. Hoffentlich schmeckt es dir. [pause] sicher. Carlos kommt sicher. [pause] klar. Klar, ich helfe dir! [pause] Es freut mich, dass … Es freut mich, dass Sie Zeit haben. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

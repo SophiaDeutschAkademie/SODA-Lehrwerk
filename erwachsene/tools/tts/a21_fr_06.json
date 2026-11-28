@@ -1,0 +1,81 @@
+{
+ "job": "a21_fr_06",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Ich komme ein bisschen später, um halb acht, weil ich bis sieben arbeiten muss."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Ich freue mich schon. Bis Samstag!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Vielen Dank für die Einladung. Das Restaurant ist sehr schön."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Waren Sie schon einmal hier?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Dann nehme ich den Fisch. Und Sie?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Gern. Was trinken Sie?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Das Essen war sehr gut. Zahlen wir getrennt?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Kundenservice, mein Name ist Lang. Was kann ich für Sie tun?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Oh, das tut mir leid. Haben Sie die Bestellnummer?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Frau",
+   "parts": [
+    "Einen Moment, bitte. Sie haben einen großen Drucker und zwei Bildschirme bestellt, richtig?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich komme ein bisschen später, um halb acht, weil ich bis sieben arbeiten muss. [pause] Ich freue mich schon. Bis Samstag! [pause] Vielen Dank für die Einladung. Das Restaurant ist sehr schön. [pause] Waren Sie schon einmal hier? [pause] Dann nehme ich den Fisch. Und Sie? [pause] Gern. Was trinken Sie? [pause] Das Essen war sehr gut. Zahlen wir getrennt? [pause] Kundenservice, mein Name ist Lang. Was kann ich für Sie tun? [pause] Oh, das tut mir leid. Haben Sie die Bestellnummer? [pause] Einen Moment, bitte. Sie haben einen großen Drucker und zwei Bildschirme bestellt, richtig? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

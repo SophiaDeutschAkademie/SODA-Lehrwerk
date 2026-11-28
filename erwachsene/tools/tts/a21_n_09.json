@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_09",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "die Führung, die Führungen.",
+    "Die Führung dauert eine Stunde."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "der Stadtplan, die Stadtpläne.",
+    "Hast du einen Stadtplan?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "der Rucksack, die Rucksäcke.",
+    "Mein Rucksack ist schwer."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "der Stau, die Staus.",
+    "Wir hatten eine Stunde Stau."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "die Verspätung, die Verspätungen.",
+    "Der Zug hatte vierzig Minuten Verspätung."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "besichtigen, hat besichtigt.",
+    "Ich wollte die Stadt besichtigen."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "verpassen, hat verpasst.",
+    "Wir haben den Zug verpasst."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "übernachten, hat übernachtet.",
+    "Wir haben im Hotel übernachtet."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "zurückkommen, ist zurückgekommen.",
+    "Wann bist du zurückgekommen?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "abholen, hat abgeholt.",
+    "Markus hat mich am Bahnhof abgeholt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Führung, die Führungen. Die Führung dauert eine Stunde. [pause] der Stadtplan, die Stadtpläne. Hast du einen Stadtplan? [pause] der Rucksack, die Rucksäcke. Mein Rucksack ist schwer. [pause] der Stau, die Staus. Wir hatten eine Stunde Stau. [pause] die Verspätung, die Verspätungen. Der Zug hatte vierzig Minuten Verspätung. [pause] besichtigen, hat besichtigt. Ich wollte die Stadt besichtigen. [pause] verpassen, hat verpasst. Wir haben den Zug verpasst. [pause] übernachten, hat übernachtet. Wir haben im Hotel übernachtet. [pause] zurückkommen, ist zurückgekommen. Wann bist du zurückgekommen? [pause] abholen, hat abgeholt. Markus hat mich am Bahnhof abgeholt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

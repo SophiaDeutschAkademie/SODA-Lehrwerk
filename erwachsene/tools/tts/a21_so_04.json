@@ -1,0 +1,81 @@
+{
+ "job": "a21_so_04",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "Sora",
+   "parts": [
+    "Ich weiß nicht, ob ich eine Kopie brauche."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Sora",
+   "parts": [
+    "Was bedeutet das Wort?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Sora",
+   "parts": [
+    "Guten Tag, hier ist Lee. Ich möchte gern einen Tisch reservieren."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Sora",
+   "parts": [
+    "Für Sonntag, um halb eins. Mein Mann hat Geburtstag."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Sora",
+   "parts": [
+    "Für drei, zwei Erwachsene und ein Kind."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Sora",
+   "parts": [
+    "Zwölf Uhr ist gut. Haben Sie auch Gerichte für Kinder?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Sora",
+   "parts": [
+    "Schön. Und noch eine Frage: Dürfen wir einen Kuchen mitbringen?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Sora",
+   "parts": [
+    "Das ist eine tolle Idee! Mein Mann weiß nicht, dass wir ins Restaurant gehen. Es ist eine Überraschung."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Sora",
+   "parts": [
+    "Lee. Vielen Dank und bis Sonntag!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Sora",
+   "parts": [
+    "Einen Tisch für drei Personen, am Sonntag um zwölf Uhr."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich weiß nicht, ob ich eine Kopie brauche. [pause] Was bedeutet das Wort? [pause] Guten Tag, hier ist Lee. Ich möchte gern einen Tisch reservieren. [pause] Für Sonntag, um halb eins. Mein Mann hat Geburtstag. [pause] Für drei, zwei Erwachsene und ein Kind. [pause] Zwölf Uhr ist gut. Haben Sie auch Gerichte für Kinder? [pause] Schön. Und noch eine Frage: Dürfen wir einen Kuchen mitbringen? [pause] Das ist eine tolle Idee! Mein Mann weiß nicht, dass wir ins Restaurant gehen. Es ist eine Überraschung. [pause] Lee. Vielen Dank und bis Sonntag! [pause] Einen Tisch für drei Personen, am Sonntag um zwölf Uhr. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

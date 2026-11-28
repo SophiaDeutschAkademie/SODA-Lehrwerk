@@ -1,0 +1,87 @@
+{
+ "job": "a21_n_19",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Was ist passiert?",
+    "Was ist denn passiert?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "wach.",
+    "Ist er wach?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "ungefähr.",
+    "Es dauert ungefähr acht Minuten."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "unterwegs.",
+    "Hilfe ist unterwegs."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "schnell.",
+    "Kommen Sie bitte schnell!"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "dringend.",
+    "Es ist dringend."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "ich fühle mich, du fühlst dich, er fühlt sich."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "wir fühlen uns, ihr fühlt euch, sie fühlen sich."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Du solltest im Bett bleiben. Du solltest viel trinken."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Sie sollten zum Arzt gehen. Sie sollten sich ausruhen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Was ist passiert? Was ist denn passiert? [pause] wach. Ist er wach? [pause] ungefähr. Es dauert ungefähr acht Minuten. [pause] unterwegs. Hilfe ist unterwegs. [pause] schnell. Kommen Sie bitte schnell! [pause] dringend. Es ist dringend. [pause] ich fühle mich, du fühlst dich, er fühlt sich. [pause] wir fühlen uns, ihr fühlt euch, sie fühlen sich. [pause] Du solltest im Bett bleiben. Du solltest viel trinken. [pause] Sie sollten zum Arzt gehen. Sie sollten sich ausruhen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

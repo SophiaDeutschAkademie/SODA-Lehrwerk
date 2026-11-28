@@ -1,0 +1,81 @@
+{
+ "job": "a21_le_04",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Gute Idee. Und ist das Essen scharf?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Hast du Carlos und Ewa schon gefragt?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Ich hoffe, dass sie Zeit hat. Soll ich einen Nachtisch machen?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Gern. Wann kommen die Gäste?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Mache ich. Ich freue mich schon!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Ich hoffe, dass Ewa am Samstag Zeit hat."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Du machst am Samstag ein Essen? Wann denn?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Gern! Was kochst du?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Ist das scharf? Und ist Fleisch dabei?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Soll ich etwas mitbringen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gute Idee. Und ist das Essen scharf? [pause] Hast du Carlos und Ewa schon gefragt? [pause] Ich hoffe, dass sie Zeit hat. Soll ich einen Nachtisch machen? [pause] Gern. Wann kommen die Gäste? [pause] Mache ich. Ich freue mich schon! [pause] Ich hoffe, dass Ewa am Samstag Zeit hat. [pause] Du machst am Samstag ein Essen? Wann denn? [pause] Gern! Was kochst du? [pause] Ist das scharf? Und ist Fleisch dabei? [pause] Soll ich etwas mitbringen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

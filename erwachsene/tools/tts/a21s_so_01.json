@@ -1,0 +1,39 @@
+{
+ "job": "a21s_so_01",
+ "who": "Sora",
+ "voice": "Ithaka",
+ "voice_id": "b07hJVVJyFDBHxFNr1Qb",
+ "items": [
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Mein neuer Wasserkocher ist schneller, aber er ist auch lauter."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Guten Tag, Herr Berger, hier ist Lee aus dem ersten Stock. Unsere Waschmaschine funktioniert nicht."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Seit Montag. Sie wäscht nicht mehr richtig, und es ist Wasser auf dem Boden."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Sora",
+   "parts": [
+    "Am Donnerstag bin ich den ganzen Tag zu Hause."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Mein neuer Wasserkocher ist schneller, aber er ist auch lauter. [pause] Guten Tag, Herr Berger, hier ist Lee aus dem ersten Stock. Unsere Waschmaschine funktioniert nicht. [pause] Seit Montag. Sie wäscht nicht mehr richtig, und es ist Wasser auf dem Boden. [pause] Am Donnerstag bin ich den ganzen Tag zu Hause. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

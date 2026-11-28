@@ -1,0 +1,25 @@
+{
+ "job": "a21s_ji_01",
+ "who": "Jiu",
+ "voice": "Nadine",
+ "voice_id": "XFigb6fqZPxl2Q2dFOXN",
+ "items": [
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Ich kann morgen nicht kommen, weil ich zum Arzt muss."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Jiu",
+   "parts": [
+    "Ich habe morgen eine Prüfung, aber ich habe Fieber. Was soll ich machen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich kann morgen nicht kommen, weil ich zum Arzt muss. [pause] Ich habe morgen eine Prüfung, aber ich habe Fieber. Was soll ich machen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

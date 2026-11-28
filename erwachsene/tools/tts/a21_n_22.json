@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_22",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Antrag, die Anträge.",
+    "Ich fülle den Antrag aus."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "beantragen, hat beantragt.",
+    "Ich möchte eine Meldebescheinigung beantragen."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Bescheinigung, die Bescheinigungen.",
+    "Ich brauche eine Bescheinigung von der Sprachschule."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Meldebescheinigung.",
+    "Ich hätte gern eine Meldebescheinigung."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Bestätigung, die Bestätigungen.",
+    "Ich habe eine Bestätigung von der Firma."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Gebühr, die Gebühren.",
+    "Die Gebühr zahlen Sie an der Kasse."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Schalter, die Schalter.",
+    "Gehen Sie bitte zu Schalter drei."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Wartezeit, die Wartezeiten.",
+    "Die Wartezeit ist lang."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Internetseite, die Internetseiten.",
+    "Auf der Internetseite kann man einen Termin buchen."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Unterlagen.",
+    "Haben Sie alle Unterlagen dabei?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Antrag, die Anträge. Ich fülle den Antrag aus. [pause] beantragen, hat beantragt. Ich möchte eine Meldebescheinigung beantragen. [pause] die Bescheinigung, die Bescheinigungen. Ich brauche eine Bescheinigung von der Sprachschule. [pause] die Meldebescheinigung. Ich hätte gern eine Meldebescheinigung. [pause] die Bestätigung, die Bestätigungen. Ich habe eine Bestätigung von der Firma. [pause] die Gebühr, die Gebühren. Die Gebühr zahlen Sie an der Kasse. [pause] der Schalter, die Schalter. Gehen Sie bitte zu Schalter drei. [pause] die Wartezeit, die Wartezeiten. Die Wartezeit ist lang. [pause] die Internetseite, die Internetseiten. Auf der Internetseite kann man einen Termin buchen. [pause] die Unterlagen. Haben Sie alle Unterlagen dabei? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

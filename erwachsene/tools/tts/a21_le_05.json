@@ -1,0 +1,81 @@
+{
+ "job": "a21_le_05",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "Lena",
+   "parts": [
+    "Wie viele Personen kommen?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Klar. Hast du schon ein Modell gefunden?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Der erste ist billiger. Aber ist er auch besser?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Und der Bildschirm?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Was ist für dich am wichtigsten?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Dann nimm den Laptop für siebenhundertfünfzig. Hast du die Bewertungen gelesen?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Und wenn er dir nicht gefällt?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Sehr gut. Brauchst du auch eine neue Tasche für den Laptop?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Dann bestell alles zusammen. So ist es am günstigsten."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Am liebsten kaufe ich im Geschäft, nicht online."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wie viele Personen kommen? [pause] Klar. Hast du schon ein Modell gefunden? [pause] Der erste ist billiger. Aber ist er auch besser? [pause] Und der Bildschirm? [pause] Was ist für dich am wichtigsten? [pause] Dann nimm den Laptop für siebenhundertfünfzig. Hast du die Bewertungen gelesen? [pause] Und wenn er dir nicht gefällt? [pause] Sehr gut. Brauchst du auch eine neue Tasche für den Laptop? [pause] Dann bestell alles zusammen. So ist es am günstigsten. [pause] Am liebsten kaufe ich im Geschäft, nicht online. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

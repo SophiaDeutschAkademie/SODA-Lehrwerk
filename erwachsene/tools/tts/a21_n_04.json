@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_04",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "In Ordnung.",
+    "Ist alles in Ordnung?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "sofort.",
+    "Ich komme sofort."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "gleich.",
+    "Ich fange gleich an."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "zwischen.",
+    "Er kommt zwischen acht und zehn Uhr."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Sehr geehrte Frau …",
+    "Sehr geehrte Frau Krause, wir haben ein Problem."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Mit freundlichen Grüßen.",
+    "Mit freundlichen Grüßen, Dohyun Park"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "stellen, hat gestellt.",
+    "Ich stelle das Regal an die Wand."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "legen, hat gelegt.",
+    "Ich lege das Buch auf den Tisch."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Putzplan, die Putzpläne.",
+    "Der Putzplan hängt am Kühlschrank."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "die Regel, die Regeln.",
+    "Wir haben drei Regeln."
+   ]
+  }
+ ],
+ "script": "Also. [pause] In Ordnung. Ist alles in Ordnung? [pause] sofort. Ich komme sofort. [pause] gleich. Ich fange gleich an. [pause] zwischen. Er kommt zwischen acht und zehn Uhr. [pause] Sehr geehrte Frau … Sehr geehrte Frau Krause, wir haben ein Problem. [pause] Mit freundlichen Grüßen. Mit freundlichen Grüßen, Dohyun Park [pause] stellen, hat gestellt. Ich stelle das Regal an die Wand. [pause] legen, hat gelegt. Ich lege das Buch auf den Tisch. [pause] der Putzplan, die Putzpläne. Der Putzplan hängt am Kühlschrank. [pause] die Regel, die Regeln. Wir haben drei Regeln. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

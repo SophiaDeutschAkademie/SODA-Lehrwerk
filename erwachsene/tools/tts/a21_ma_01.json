@@ -1,0 +1,81 @@
+{
+ "job": "a21_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "Mann",
+   "parts": [
+    "Guten Abend, Frau Lee! Ich habe ein Paket für Sie. Der Bote hat es heute Mittag bei mir abgegeben."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Mann",
+   "parts": [
+    "Kein Problem. Es ist aber schwer. Was ist denn drin?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Mann",
+   "parts": [
+    "Haben Sie eine Leiter?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Mann",
+   "parts": [
+    "Ich kann Ihnen meine Leiter leihen. Sie steht im Keller, hinter den Fahrrädern."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Mann",
+   "parts": [
+    "Stellen Sie sie einfach wieder in den Keller."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Mann",
+   "parts": [
+    "Das stört mich nicht. Aber ab zehn Uhr bitte ein bisschen leise, ja?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag, hier ist Krüger, der Hausmeister."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Mann",
+   "parts": [
+    "Am Mittwoch reparieren wir die Heizung im Haus. Der Handwerker kommt um neun Uhr."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Mann",
+   "parts": [
+    "Von neun bis zwölf Uhr gibt es kein Wasser, und die Heizung bleibt kalt."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Mann",
+   "parts": [
+    "Bitte stellen Sie keine Fahrräder in den Flur. Der Handwerker braucht Platz."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Guten Abend, Frau Lee! Ich habe ein Paket für Sie. Der Bote hat es heute Mittag bei mir abgegeben. [pause] Kein Problem. Es ist aber schwer. Was ist denn drin? [pause] Haben Sie eine Leiter? [pause] Ich kann Ihnen meine Leiter leihen. Sie steht im Keller, hinter den Fahrrädern. [pause] Stellen Sie sie einfach wieder in den Keller. [pause] Das stört mich nicht. Aber ab zehn Uhr bitte ein bisschen leise, ja? [pause] Guten Tag, hier ist Krüger, der Hausmeister. [pause] Am Mittwoch reparieren wir die Heizung im Haus. Der Handwerker kommt um neun Uhr. [pause] Von neun bis zwölf Uhr gibt es kein Wasser, und die Heizung bleibt kalt. [pause] Bitte stellen Sie keine Fahrräder in den Flur. Der Handwerker braucht Platz. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,53 @@
+{
+ "job": "a21s_mk_01",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Am Samstag wollten wir mit den Kindern an den See fahren."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Aber am Morgen hat es geregnet, und Paul hatte Fieber. Wir mussten zu Hause bleiben."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Meine Frau hat Paul einen Tee gemacht, und ich habe mit Mia gekocht."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Am Sonntag war das Wetter besser, und Paul hat sich auch besser gefühlt."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Dann haben wir meine Eltern besucht und zusammen Kuchen gegessen."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Markus",
+   "parts": [
+    "Wie war dein Wochenende?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Am Samstag wollten wir mit den Kindern an den See fahren. [pause] Aber am Morgen hat es geregnet, und Paul hatte Fieber. Wir mussten zu Hause bleiben. [pause] Meine Frau hat Paul einen Tee gemacht, und ich habe mit Mia gekocht. [pause] Am Sonntag war das Wetter besser, und Paul hat sich auch besser gefühlt. [pause] Dann haben wir meine Eltern besucht und zusammen Kuchen gegessen. [pause] Wie war dein Wochenende? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,81 @@
+{
+ "job": "a21_fr_04",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Wir sind von Montag bis Freitag von acht bis zwölf Uhr für Sie da."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Am Donnerstag sind wir auch von vierzehn bis achtzehn Uhr für Sie da."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Bitte kommen Sie nur mit Termin. Termine können Sie online buchen."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Bringen Sie bitte Ihren Ausweis oder Ihren Pass mit."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag. Was kann ich für Sie tun?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Was machen Sie in Deutschland?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Es fehlt noch das Passfoto."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Im Erdgeschoss steht ein Automat. Haben Sie noch eine Frage?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Wo arbeiten Sie?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Es fehlt noch die Bescheinigung von der Krankenversicherung."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wir sind von Montag bis Freitag von acht bis zwölf Uhr für Sie da. [pause] Am Donnerstag sind wir auch von vierzehn bis achtzehn Uhr für Sie da. [pause] Bitte kommen Sie nur mit Termin. Termine können Sie online buchen. [pause] Bringen Sie bitte Ihren Ausweis oder Ihren Pass mit. [pause] Guten Tag. Was kann ich für Sie tun? [pause] Was machen Sie in Deutschland? [pause] Es fehlt noch das Passfoto. [pause] Im Erdgeschoss steht ein Automat. Haben Sie noch eine Frage? [pause] Wo arbeiten Sie? [pause] Es fehlt noch die Bescheinigung von der Krankenversicherung. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

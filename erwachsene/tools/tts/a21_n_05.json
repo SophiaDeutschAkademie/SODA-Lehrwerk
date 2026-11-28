@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_05",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "die Hausordnung.",
+    "Die Hausordnung hängt im Treppenhaus."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Müll.",
+    "Wer bringt den Müll raus?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "die Mülltonne, die Mülltonnen.",
+    "Die Mülltonnen stehen im Hof."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Hof, die Höfe.",
+    "Die Kinder spielen im Hof."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "rausbringen, hat rausgebracht.",
+    "Felix bringt den Müll raus."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "sauber.",
+    "Das Bad ist sauber."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "schmutzig.",
+    "Der Boden ist schmutzig."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "sauber machen, hat sauber gemacht.",
+    "Ich mache die Küche sauber."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "das Paket, die Pakete.",
+    "Ich habe ein Paket für Sie."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "abgeben, du gibst ab, hat abgegeben.",
+    "Der Bote hat das Paket bei mir abgegeben."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Hausordnung. Die Hausordnung hängt im Treppenhaus. [pause] der Müll. Wer bringt den Müll raus? [pause] die Mülltonne, die Mülltonnen. Die Mülltonnen stehen im Hof. [pause] der Hof, die Höfe. Die Kinder spielen im Hof. [pause] rausbringen, hat rausgebracht. Felix bringt den Müll raus. [pause] sauber. Das Bad ist sauber. [pause] schmutzig. Der Boden ist schmutzig. [pause] sauber machen, hat sauber gemacht. Ich mache die Küche sauber. [pause] das Paket, die Pakete. Ich habe ein Paket für Sie. [pause] abgeben, du gibst ab, hat abgegeben. Der Bote hat das Paket bei mir abgegeben. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

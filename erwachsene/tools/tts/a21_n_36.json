@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_36",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "das Modell, die Modelle.",
+    "Dieses Modell ist besser."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Marke, die Marken.",
+    "Welche Marke ist das?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Qualität.",
+    "Die Qualität ist sehr gut."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "der Preis, die Preise.",
+    "Der Preis ist zu hoch."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Garantie, die Garantien.",
+    "Das Gerät hat zwei Jahre Garantie."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "die Bewertung, die Bewertungen.",
+    "Ich lese zuerst die Bewertungen."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "vergleichen, hat verglichen.",
+    "Ich vergleiche zwei Modelle."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "billig.",
+    "Das Kabel ist billig."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "leicht.",
+    "Der Laptop ist sehr leicht."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "modern.",
+    "Das Gerät ist modern."
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Modell, die Modelle. Dieses Modell ist besser. [pause] die Marke, die Marken. Welche Marke ist das? [pause] die Qualität. Die Qualität ist sehr gut. [pause] der Preis, die Preise. Der Preis ist zu hoch. [pause] die Garantie, die Garantien. Das Gerät hat zwei Jahre Garantie. [pause] die Bewertung, die Bewertungen. Ich lese zuerst die Bewertungen. [pause] vergleichen, hat verglichen. Ich vergleiche zwei Modelle. [pause] billig. Das Kabel ist billig. [pause] leicht. Der Laptop ist sehr leicht. [pause] modern. Das Gerät ist modern. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

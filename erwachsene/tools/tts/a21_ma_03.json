@@ -1,0 +1,74 @@
+{
+ "job": "a21_ma_03",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "Mann",
+   "parts": [
+    "Gut. Der Krankenwagen kommt sofort. Bleiben Sie bitte bei ihm. Er sollte sich nicht bewegen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Mann",
+   "parts": [
+    "Legen Sie eine Jacke über ihn, weil es im Treppenhaus kalt ist. Und machen Sie bitte die Haustür auf."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Mann",
+   "parts": [
+    "Ungefähr acht Minuten. Bleiben Sie ruhig, Hilfe ist unterwegs."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag. Ja, natürlich. Was kann ich für Sie tun?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Mann",
+   "parts": [
+    "Sind Sie Studentin?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Mann",
+   "parts": [
+    "Dann brauchen Sie einen Termin. Ohne Termin geht es leider nicht."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Mann",
+   "parts": [
+    "Online, auf unserer Internetseite. Aber buchen Sie bald, weil die Wartezeit lang ist."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Mann",
+   "parts": [
+    "Ihren Pass, ein Passfoto, die Bescheinigung von der Sprachschule, den Mietvertrag und die Papiere von Ihrer Krankenversicherung und von Ihrer Bank."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Mann",
+   "parts": [
+    "Hier ist eine Liste. Dort steht alles."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Gut. Der Krankenwagen kommt sofort. Bleiben Sie bitte bei ihm. Er sollte sich nicht bewegen. [pause] Legen Sie eine Jacke über ihn, weil es im Treppenhaus kalt ist. Und machen Sie bitte die Haustür auf. [pause] Ungefähr acht Minuten. Bleiben Sie ruhig, Hilfe ist unterwegs. [pause] Guten Tag. Ja, natürlich. Was kann ich für Sie tun? [pause] Sind Sie Studentin? [pause] Dann brauchen Sie einen Termin. Ohne Termin geht es leider nicht. [pause] Online, auf unserer Internetseite. Aber buchen Sie bald, weil die Wartezeit lang ist. [pause] Ihren Pass, ein Passfoto, die Bescheinigung von der Sprachschule, den Mietvertrag und die Papiere von Ihrer Krankenversicherung und von Ihrer Bank. [pause] Hier ist eine Liste. Dort steht alles. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

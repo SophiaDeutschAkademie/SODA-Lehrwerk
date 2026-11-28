@@ -1,0 +1,87 @@
+{
+ "job": "a21_n_21",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Ich hätte gern einen Termin."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Wissen Sie, wo Schalter drei ist?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Ich möchte meine Aufenthaltserlaubnis verlängern."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "das Amt, die Ämter.",
+    "Morgen muss ich aufs Amt."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Ausländerbehörde.",
+    "Ich habe einen Termin bei der Ausländerbehörde."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "das Bürgeramt.",
+    "Die Anmeldung macht man im Bürgeramt."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Aufenthaltserlaubnis.",
+    "Meine Aufenthaltserlaubnis ist bis Januar gültig."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "gültig.",
+    "Der Pass ist noch zwei Jahre gültig."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "verlängern, hat verlängert."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Verlängerung, die Verlängerungen.",
+    "Die Verlängerung dauert sechs Wochen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich hätte gern einen Termin. [pause] Wissen Sie, wo Schalter drei ist? [pause] Ich möchte meine Aufenthaltserlaubnis verlängern. [pause] das Amt, die Ämter. Morgen muss ich aufs Amt. [pause] die Ausländerbehörde. Ich habe einen Termin bei der Ausländerbehörde. [pause] das Bürgeramt. Die Anmeldung macht man im Bürgeramt. [pause] die Aufenthaltserlaubnis. Meine Aufenthaltserlaubnis ist bis Januar gültig. [pause] gültig. Der Pass ist noch zwei Jahre gültig. [pause] verlängern, hat verlängert. [pause] die Verlängerung, die Verlängerungen. Die Verlängerung dauert sechs Wochen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

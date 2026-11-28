@@ -1,0 +1,81 @@
+{
+ "job": "a21_mk_01",
+ "who": "Markus",
+ "voice": "Jonas",
+ "voice_id": "xlbJQnFFGB01bv7HK5CZ",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "Markus",
+   "parts": [
+    "Der Handwerker kommt am Donnerstag zwischen zwei und vier Uhr."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "Morgen, Dohyun! Du warst gestern in Stuttgart, oder? Wie war die Dienstreise?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "So früh? Warum bist du nicht mit dem Auto gefahren?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "Warst du dann pünktlich beim Kunden?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "Und wie war die Besprechung?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "Konntest du alles auf Deutsch sagen?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "Super. Und was hat er gesagt?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "Bist du danach gleich zurückgefahren?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "Dann erzähl das bitte auch Frau Hoffmann. Sie hat schon gefragt."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Markus",
+   "parts": [
+    "Ich habe meinen Schlüssel verloren, aber meine Frau hat ihn gefunden."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Der Handwerker kommt am Donnerstag zwischen zwei und vier Uhr. [pause] Morgen, Dohyun! Du warst gestern in Stuttgart, oder? Wie war die Dienstreise? [pause] So früh? Warum bist du nicht mit dem Auto gefahren? [pause] Warst du dann pünktlich beim Kunden? [pause] Und wie war die Besprechung? [pause] Konntest du alles auf Deutsch sagen? [pause] Super. Und was hat er gesagt? [pause] Bist du danach gleich zurückgefahren? [pause] Dann erzähl das bitte auch Frau Hoffmann. Sie hat schon gefragt. [pause] Ich habe meinen Schlüssel verloren, aber meine Frau hat ihn gefunden. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

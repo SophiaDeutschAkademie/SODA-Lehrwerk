@@ -1,0 +1,60 @@
+{
+ "job": "a21_do_06",
+ "who": "Dohyun",
+ "voice": "Andrew",
+ "voice_id": "bNFIvb6Gmmlk9QMIWo7U",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Genau. Aber Sie haben uns einen kleinen Drucker geschickt. Und ein Bildschirm ist kaputt."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Wir brauchen den Drucker dringend, weil wir am Freitag eine wichtige Besprechung haben."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Und was machen wir mit dem kleinen Drucker?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Gut. Können Sie mir das bitte per E-Mail bestätigen?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Vielen Dank. Auf Wiederhören!"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Wir haben einen großen Drucker bestellt, aber Sie haben uns einen kleinen geschickt."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Dohyun",
+   "parts": [
+    "Die Lieferung ist falsch."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Genau. Aber Sie haben uns einen kleinen Drucker geschickt. Und ein Bildschirm ist kaputt. [pause] Wir brauchen den Drucker dringend, weil wir am Freitag eine wichtige Besprechung haben. [pause] Und was machen wir mit dem kleinen Drucker? [pause] Gut. Können Sie mir das bitte per E-Mail bestätigen? [pause] Vielen Dank. Auf Wiederhören! [pause] Wir haben einen großen Drucker bestellt, aber Sie haben uns einen kleinen geschickt. [pause] Die Lieferung ist falsch. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

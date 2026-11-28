@@ -1,0 +1,87 @@
+{
+ "job": "a21_n_06",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "die Leiter, die Leitern.",
+    "Die Leiter steht im Keller."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "leihen, hat geliehen.",
+    "Kannst du mir die Leiter leihen?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "zurückbringen, hat zurückgebracht.",
+    "Ich bringe die Leiter am Montag zurück."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "stören, hat gestört.",
+    "Die Musik stört mich nicht."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "leise.",
+    "Ab zehn Uhr bitte leise!"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "schwer.",
+    "Das Paket ist schwer."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Ich stelle die Lampe auf den Tisch. Die Lampe steht auf dem Tisch."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Ich lege den Teppich in den Flur. Der Teppich liegt im Flur."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Ich hänge den Spiegel an die Wand. Der Spiegel hängt an der Wand."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Wohnung, Heizung, Besprechung"
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Leiter, die Leitern. Die Leiter steht im Keller. [pause] leihen, hat geliehen. Kannst du mir die Leiter leihen? [pause] zurückbringen, hat zurückgebracht. Ich bringe die Leiter am Montag zurück. [pause] stören, hat gestört. Die Musik stört mich nicht. [pause] leise. Ab zehn Uhr bitte leise! [pause] schwer. Das Paket ist schwer. [pause] Ich stelle die Lampe auf den Tisch. Die Lampe steht auf dem Tisch. [pause] Ich lege den Teppich in den Flur. Der Teppich liegt im Flur. [pause] Ich hänge den Spiegel an die Wand. Der Spiegel hängt an der Wand. [pause] Wohnung, Heizung, Besprechung [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

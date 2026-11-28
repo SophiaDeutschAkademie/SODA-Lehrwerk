@@ -1,0 +1,81 @@
+{
+ "job": "a21_fr_01",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "Frau",
+   "parts": [
+    "Krause, guten Morgen."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Frau",
+   "parts": [
+    "Oh. Was ist denn los?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Frau",
+   "parts": [
+    "Und im Schlafzimmer?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Frau",
+   "parts": [
+    "Das tut mir leid. Unser Handwerker hat morgen Zeit. Wann sind Sie zu Hause?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Frau",
+   "parts": [
+    "Gut. Dann kommt er morgen zwischen acht und zehn Uhr. Passt das?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Frau",
+   "parts": [
+    "Nein, natürlich nicht. Das zahle ich."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Frau",
+   "parts": [
+    "Gern. Rufen Sie mich bitte morgen noch einmal an. Ist dann alles in Ordnung?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Frau",
+   "parts": [
+    "Krause, guten Tag. Was kann ich für Sie tun?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Frau",
+   "parts": [
+    "Was ist denn los?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Frau",
+   "parts": [
+    "Ist das alles?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Krause, guten Morgen. [pause] Oh. Was ist denn los? [pause] Und im Schlafzimmer? [pause] Das tut mir leid. Unser Handwerker hat morgen Zeit. Wann sind Sie zu Hause? [pause] Gut. Dann kommt er morgen zwischen acht und zehn Uhr. Passt das? [pause] Nein, natürlich nicht. Das zahle ich. [pause] Gern. Rufen Sie mich bitte morgen noch einmal an. Ist dann alles in Ordnung? [pause] Krause, guten Tag. Was kann ich für Sie tun? [pause] Was ist denn los? [pause] Ist das alles? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

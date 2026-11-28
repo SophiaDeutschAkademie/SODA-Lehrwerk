@@ -1,0 +1,46 @@
+{
+ "job": "a21s_ma_01",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Berger, guten Tag."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Oh. Seit wann denn?"
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Das tut mir leid. Ich schicke Ihnen einen Handwerker. Wann sind Sie zu Hause?"
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Gut. Dann kommt er am Donnerstag zwischen neun und elf Uhr."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Mann",
+   "parts": [
+    "Guten Tag. Was kann ich für Sie tun?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Berger, guten Tag. [pause] Oh. Seit wann denn? [pause] Das tut mir leid. Ich schicke Ihnen einen Handwerker. Wann sind Sie zu Hause? [pause] Gut. Dann kommt er am Donnerstag zwischen neun und elf Uhr. [pause] Guten Tag. Was kann ich für Sie tun? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

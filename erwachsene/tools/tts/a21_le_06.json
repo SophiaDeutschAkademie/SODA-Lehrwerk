@@ -1,0 +1,46 @@
+{
+ "job": "a21_le_06",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Du hast doch einen neuen Laptop, oder? Bist du zufrieden?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Oh nein. Ist das alles?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Was machst du jetzt?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Geht das noch?"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "Lena",
+   "parts": [
+    "Und dann? Kaufst du einen neuen Laptop?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Du hast doch einen neuen Laptop, oder? Bist du zufrieden? [pause] Oh nein. Ist das alles? [pause] Was machst du jetzt? [pause] Geht das noch? [pause] Und dann? Kaufst du einen neuen Laptop? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

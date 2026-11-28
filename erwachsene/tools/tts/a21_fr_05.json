@@ -1,0 +1,81 @@
+{
+ "job": "a21_fr_05",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Ja, das geht. Haben Sie noch eine Frage?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Guten Abend! Haben Sie reserviert?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Bitte, hier am Fenster. Ich bringe Ihnen gleich die Speisekarte."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Möchten Sie bestellen?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Gern. Und zu trinken?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "So, hat es Ihnen geschmeckt?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Zusammen oder getrennt?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Hallo Jiu, hier ist Ewa. Vielen Dank für die Einladung!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Ich komme sehr gern am Samstag. Aber ich muss dir sagen, dass ich kein Fleisch esse."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "Frau",
+   "parts": [
+    "Ist das ein Problem? Wenn du möchtest, bringe ich einen Salat mit."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ja, das geht. Haben Sie noch eine Frage? [pause] Guten Abend! Haben Sie reserviert? [pause] Bitte, hier am Fenster. Ich bringe Ihnen gleich die Speisekarte. [pause] Möchten Sie bestellen? [pause] Gern. Und zu trinken? [pause] So, hat es Ihnen geschmeckt? [pause] Zusammen oder getrennt? [pause] Hallo Jiu, hier ist Ewa. Vielen Dank für die Einladung! [pause] Ich komme sehr gern am Samstag. Aber ich muss dir sagen, dass ich kein Fleisch esse. [pause] Ist das ein Problem? Wenn du möchtest, bringe ich einen Salat mit. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

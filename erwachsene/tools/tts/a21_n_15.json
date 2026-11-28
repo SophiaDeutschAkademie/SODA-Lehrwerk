@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_15",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Grippe.",
+    "Ich habe eine Grippe."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Bauchschmerzen.",
+    "Seit gestern habe ich Bauchschmerzen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Rückenschmerzen.",
+    "Mit Rückenschmerzen kann ich nicht sitzen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "die Allergie, die Allergien.",
+    "Ich habe eine Allergie."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "der Durchfall.",
+    "Hana hat Durchfall."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Mir ist übel.",
+    "Mir ist seit heute Morgen übel."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Mir ist schwindlig.",
+    "Mir ist schwindlig. Ich muss sitzen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "husten, hat gehustet.",
+    "Ich musste die ganze Nacht husten."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "bluten, hat geblutet.",
+    "Er blutet am Kopf."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "das Blut.",
+    "Ich kann kein Blut sehen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] die Grippe. Ich habe eine Grippe. [pause] die Bauchschmerzen. Seit gestern habe ich Bauchschmerzen. [pause] die Rückenschmerzen. Mit Rückenschmerzen kann ich nicht sitzen. [pause] die Allergie, die Allergien. Ich habe eine Allergie. [pause] der Durchfall. Hana hat Durchfall. [pause] Mir ist übel. Mir ist seit heute Morgen übel. [pause] Mir ist schwindlig. Mir ist schwindlig. Ich muss sitzen. [pause] husten, hat gehustet. Ich musste die ganze Nacht husten. [pause] bluten, hat geblutet. Er blutet am Kopf. [pause] das Blut. Ich kann kein Blut sehen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

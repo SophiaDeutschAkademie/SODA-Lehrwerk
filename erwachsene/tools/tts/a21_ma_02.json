@@ -1,0 +1,81 @@
+{
+ "job": "a21_ma_02",
+ "who": "Mann",
+ "voice": "Ben",
+ "voice_id": "aTTiK3YzK3dXETpuDE2h",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "Mann",
+   "parts": [
+    "Haben Sie Fragen? Dann rufen Sie mich bitte an. Vielen Dank!"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Mann",
+   "parts": [
+    "Hallo Jiu, hier ist Carlos. Du, ich muss dir etwas erzählen!"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Mann",
+   "parts": [
+    "Gestern bin ich mit dem Fahrrad zum See gefahren. Zuerst war das Wetter schön."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Mann",
+   "parts": [
+    "Aber dann hat es plötzlich geregnet, und ich habe meinen Rucksack am See vergessen."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Mann",
+   "parts": [
+    "Ich bin sofort zurückgefahren. Zum Glück war der Rucksack noch da."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Mann",
+   "parts": [
+    "Am Ende war ich um neun Uhr zu Hause und sehr müde. Aber ich habe meinen Rucksack wieder!"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Mann",
+   "parts": [
+    "Notruf, Feuerwehr und Rettungsdienst. Wo ist der Notfall?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Mann",
+   "parts": [
+    "Was ist passiert?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Mann",
+   "parts": [
+    "Ist er wach? Kann er sprechen?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Mann",
+   "parts": [
+    "Wie alt ist Ihr Nachbar?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Haben Sie Fragen? Dann rufen Sie mich bitte an. Vielen Dank! [pause] Hallo Jiu, hier ist Carlos. Du, ich muss dir etwas erzählen! [pause] Gestern bin ich mit dem Fahrrad zum See gefahren. Zuerst war das Wetter schön. [pause] Aber dann hat es plötzlich geregnet, und ich habe meinen Rucksack am See vergessen. [pause] Ich bin sofort zurückgefahren. Zum Glück war der Rucksack noch da. [pause] Am Ende war ich um neun Uhr zu Hause und sehr müde. Aber ich habe meinen Rucksack wieder! [pause] Notruf, Feuerwehr und Rettungsdienst. Wo ist der Notfall? [pause] Was ist passiert? [pause] Ist er wach? Kann er sprechen? [pause] Wie alt ist Ihr Nachbar? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

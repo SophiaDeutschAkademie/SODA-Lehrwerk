@@ -1,0 +1,89 @@
+{
+ "job": "a21_n_24",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Arbeitsvertrag, die Arbeitsverträge.",
+    "Hier ist mein Arbeitsvertrag."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Kopie, die Kopien.",
+    "Ich brauche eine Kopie vom Pass."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "das Original, die Originale.",
+    "Bringen Sie bitte das Original mit."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Krankenversicherung, die Krankenversicherungen.",
+    "Haben Sie eine Krankenversicherung?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Stempel, die Stempel.",
+    "Auf der Bescheinigung ist ein Stempel."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "das Geburtsdatum.",
+    "Schreiben Sie hier Ihr Geburtsdatum."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "der Familienstand.",
+    "Mein Familienstand ist ledig."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Staatsangehörigkeit, die Staatsangehörigkeiten.",
+    "Meine Staatsangehörigkeit ist koreanisch."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Könnten Sie …?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "Ich hätte gern …"
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Arbeitsvertrag, die Arbeitsverträge. Hier ist mein Arbeitsvertrag. [pause] die Kopie, die Kopien. Ich brauche eine Kopie vom Pass. [pause] das Original, die Originale. Bringen Sie bitte das Original mit. [pause] die Krankenversicherung, die Krankenversicherungen. Haben Sie eine Krankenversicherung? [pause] der Stempel, die Stempel. Auf der Bescheinigung ist ein Stempel. [pause] das Geburtsdatum. Schreiben Sie hier Ihr Geburtsdatum. [pause] der Familienstand. Mein Familienstand ist ledig. [pause] die Staatsangehörigkeit, die Staatsangehörigkeiten. Meine Staatsangehörigkeit ist koreanisch. [pause] Könnten Sie …? [pause] Ich hätte gern … [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

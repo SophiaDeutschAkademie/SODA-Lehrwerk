@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_02",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Wasserhahn, die Wasserhähne.",
+    "Der Wasserhahn im Bad ist neu."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Spiegel, die Spiegel.",
+    "Der Spiegel hängt im Flur."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Teppich, die Teppiche.",
+    "Der Teppich liegt im Wohnzimmer."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Boden, die Böden.",
+    "Die Tasche steht auf dem Boden."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "die Decke, die Decken.",
+    "Die Lampe hängt an der Decke."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "das Licht, die Lichter.",
+    "Das Licht im Flur ist kaputt."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Stock, die Stockwerke.",
+    "Wir wohnen im zweiten Stock."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "das Treppenhaus, die Treppenhäuser.",
+    "Im Treppenhaus ist es dunkel."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Briefkasten, die Briefkästen.",
+    "Der Briefkasten ist unten am Eingang."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Schlüssel, die Schlüssel.",
+    "Wo ist mein Schlüssel?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] der Wasserhahn, die Wasserhähne. Der Wasserhahn im Bad ist neu. [pause] der Spiegel, die Spiegel. Der Spiegel hängt im Flur. [pause] der Teppich, die Teppiche. Der Teppich liegt im Wohnzimmer. [pause] der Boden, die Böden. Die Tasche steht auf dem Boden. [pause] die Decke, die Decken. Die Lampe hängt an der Decke. [pause] das Licht, die Lichter. Das Licht im Flur ist kaputt. [pause] der Stock, die Stockwerke. Wir wohnen im zweiten Stock. [pause] das Treppenhaus, die Treppenhäuser. Im Treppenhaus ist es dunkel. [pause] der Briefkasten, die Briefkästen. Der Briefkasten ist unten am Eingang. [pause] der Schlüssel, die Schlüssel. Wo ist mein Schlüssel? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

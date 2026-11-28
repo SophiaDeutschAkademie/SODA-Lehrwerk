@@ -1,0 +1,81 @@
+{
+ "job": "a21_fr_02",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "Frau",
+   "parts": [
+    "Ich rufe den Handwerker an. Wann sind Sie zu Hause?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Frau",
+   "parts": [
+    "Kann er am Freitag zwischen zwei und vier Uhr kommen?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag, Herr Park. Wie fühlen Sie sich?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Frau",
+   "parts": [
+    "Ich untersuche Sie jetzt. Ja, Sie haben eine Grippe."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Frau",
+   "parts": [
+    "Sie sollten viel trinken und im Bett bleiben. Ich schreibe Sie bis Freitag krank."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Frau",
+   "parts": [
+    "Nein. Sie sollten sich wirklich ausruhen, weil Sie Ruhe brauchen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Frau",
+   "parts": [
+    "Praxis Dr. Neumann, guten Morgen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Frau",
+   "parts": [
+    "Was haben Sie denn?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Frau",
+   "parts": [
+    "Seit wann haben Sie Fieber?"
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "Frau",
+   "parts": [
+    "Können Sie um halb elf kommen?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich rufe den Handwerker an. Wann sind Sie zu Hause? [pause] Kann er am Freitag zwischen zwei und vier Uhr kommen? [pause] Guten Tag, Herr Park. Wie fühlen Sie sich? [pause] Ich untersuche Sie jetzt. Ja, Sie haben eine Grippe. [pause] Sie sollten viel trinken und im Bett bleiben. Ich schreibe Sie bis Freitag krank. [pause] Nein. Sie sollten sich wirklich ausruhen, weil Sie Ruhe brauchen. [pause] Praxis Dr. Neumann, guten Morgen. [pause] Was haben Sie denn? [pause] Seit wann haben Sie Fieber? [pause] Können Sie um halb elf kommen? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

@@ -1,0 +1,53 @@
+{
+ "job": "a21s_n_01",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "Der Wasserhahn im Bad tropft."
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "Wir sind um neun Uhr angekommen."
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-1",
+   "who": "N",
+   "parts": [
+    "Ich musste lange warten."
+   ]
+  },
+  {
+   "pid": "a2-1/wiederholung-2",
+   "who": "N",
+   "parts": [
+    "Ich brauche einen neuen Pass."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Ich musste lange warten."
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "N",
+   "parts": [
+    "Du solltest dich ausruhen."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Der Wasserhahn im Bad tropft. [pause] Wir sind um neun Uhr angekommen. [pause] Ich musste lange warten. [pause] Ich brauche einen neuen Pass. [pause] Ich musste lange warten. [pause] Du solltest dich ausruhen. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

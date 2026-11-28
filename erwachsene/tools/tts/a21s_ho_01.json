@@ -1,0 +1,25 @@
+{
+ "job": "a21s_ho_01",
+ "who": "Hoffmann",
+ "voice": "Bettina",
+ "voice_id": "VwrOyjuYiIhDmERAlgrS",
+ "items": [
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Hoffmann",
+   "parts": [
+    "Könnten Sie mir bitte die Unterlagen bis Freitag schicken?"
+   ]
+  },
+  {
+   "pid": "a2-1/stufentest",
+   "who": "Hoffmann",
+   "parts": [
+    "Sie sehen krank aus. Wie fühlen Sie sich?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Könnten Sie mir bitte die Unterlagen bis Freitag schicken? [pause] Sie sehen krank aus. Wie fühlen Sie sich? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

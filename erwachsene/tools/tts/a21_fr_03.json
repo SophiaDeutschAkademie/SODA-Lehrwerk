@@ -1,0 +1,81 @@
+{
+ "job": "a21_fr_03",
+ "who": "Frau",
+ "voice": "Ela",
+ "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+ "items": [
+  {
+   "pid": "a2-1/3",
+   "who": "Frau",
+   "parts": [
+    "Kein Problem. Bringen Sie bitte Ihre Versichertenkarte mit."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Guten Morgen, Herr Park. Nehmen Sie bitte Platz. Sie möchten Ihre Aufenthaltserlaubnis verlängern?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Haben Sie alle Unterlagen dabei?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Danke. Ich hätte gern auch eine Bestätigung von Ihrer Firma."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Sehr gut. Es fehlt noch ein Passfoto."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Im Erdgeschoss steht ein Automat, neben dem Eingang."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Ja, kein Problem. Könnten Sie bitte hier unterschreiben?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "In ungefähr sechs Wochen. Sie bekommen einen Brief."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Ja. Ich gebe Ihnen heute eine Bescheinigung. Die Gebühr zahlen Sie bitte an der Kasse."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "Frau",
+   "parts": [
+    "Guten Tag, hier ist das Bürgeramt."
+   ]
+  }
+ ],
+ "script": "Also. [pause] Kein Problem. Bringen Sie bitte Ihre Versichertenkarte mit. [pause] Guten Morgen, Herr Park. Nehmen Sie bitte Platz. Sie möchten Ihre Aufenthaltserlaubnis verlängern? [pause] Haben Sie alle Unterlagen dabei? [pause] Danke. Ich hätte gern auch eine Bestätigung von Ihrer Firma. [pause] Sehr gut. Es fehlt noch ein Passfoto. [pause] Im Erdgeschoss steht ein Automat, neben dem Eingang. [pause] Ja, kein Problem. Könnten Sie bitte hier unterschreiben? [pause] In ungefähr sechs Wochen. Sie bekommen einen Brief. [pause] Ja. Ich gebe Ihnen heute eine Bescheinigung. Die Gebühr zahlen Sie bitte an der Kasse. [pause] Guten Tag, hier ist das Bürgeramt. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

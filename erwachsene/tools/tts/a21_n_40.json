@@ -1,0 +1,81 @@
+{
+ "job": "a21_n_40",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "gut, besser, am besten."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "viel, mehr, am meisten."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "gern, lieber, am liebsten."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "teuer, teurer, am teuersten."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "alt, älter, am ältesten"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "groß, größer, am größten"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "jung, jünger, kurz, kürzer"
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Mein Bruder ist älter und größer als ich."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Der erste Laptop ist billiger."
+   ]
+  },
+  {
+   "pid": "a2-1/6",
+   "who": "N",
+   "parts": [
+    "Die Bewertungen sind besser."
+   ]
+  }
+ ],
+ "script": "Also. [pause] gut, besser, am besten. [pause] viel, mehr, am meisten. [pause] gern, lieber, am liebsten. [pause] teuer, teurer, am teuersten. [pause] alt, älter, am ältesten [pause] groß, größer, am größten [pause] jung, jünger, kurz, kürzer [pause] Mein Bruder ist älter und größer als ich. [pause] Der erste Laptop ist billiger. [pause] Die Bewertungen sind besser. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

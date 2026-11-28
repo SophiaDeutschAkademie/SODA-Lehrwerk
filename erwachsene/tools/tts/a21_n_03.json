@@ -1,0 +1,90 @@
+{
+ "job": "a21_n_03",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "das Problem, die Probleme.",
+    "Wir haben ein Problem."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "kaputt.",
+    "Die Waschmaschine ist kaputt."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "funktionieren, hat funktioniert."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "tropfen, hat getropft.",
+    "Der Wasserhahn tropft."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "die Reparatur, die Reparaturen.",
+    "Die Reparatur zahlt die Vermieterin."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "reparieren, hat repariert.",
+    "Der Handwerker repariert die Heizung."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Handwerker, die Handwerker.",
+    "Der Handwerker kommt morgen."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "der Hausmeister, die Hausmeister.",
+    "Der Hausmeister hat einen Schlüssel."
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Bescheid sagen.",
+    "Sag mir bitte Bescheid!"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "N",
+   "parts": [
+    "Was ist los?",
+    "Was ist denn los?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] das Problem, die Probleme. Wir haben ein Problem. [pause] kaputt. Die Waschmaschine ist kaputt. [pause] funktionieren, hat funktioniert. [pause] tropfen, hat getropft. Der Wasserhahn tropft. [pause] die Reparatur, die Reparaturen. Die Reparatur zahlt die Vermieterin. [pause] reparieren, hat repariert. Der Handwerker repariert die Heizung. [pause] der Handwerker, die Handwerker. Der Handwerker kommt morgen. [pause] der Hausmeister, die Hausmeister. Der Hausmeister hat einen Schlüssel. [pause] Bescheid sagen. Sag mir bitte Bescheid! [pause] Was ist los? Was ist denn los? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

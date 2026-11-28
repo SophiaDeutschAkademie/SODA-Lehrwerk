@@ -1,0 +1,91 @@
+{
+ "job": "a21_n_25",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "wissen, du weißt, hat gewusst.",
+    "Wissen Sie, wo der Schalter ist?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "ob.",
+    "Ich weiß nicht, ob ich einen Termin brauche."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "bedeuten, hat bedeutet.",
+    "Was bedeutet das Wort?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "wiederholen, hat wiederholt.",
+    "Könnten Sie das bitte wiederholen?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "aufschreiben, hat aufgeschrieben.",
+    "Könnten Sie das bitte aufschreiben?"
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "langsam.",
+    "Sprechen Sie bitte langsam."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "fehlen, hat gefehlt.",
+    "Es fehlt noch ein Foto."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "dabeihaben, hat dabeigehabt.",
+    "Ich habe meinen Pass dabei."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Liste, die Listen.",
+    "Auf der Liste steht alles."
+   ]
+  },
+  {
+   "pid": "a2-1/4",
+   "who": "N",
+   "parts": [
+    "die Auskunft, die Auskünfte.",
+    "Ich hätte gern eine Auskunft."
+   ]
+  }
+ ],
+ "script": "Also. [pause] wissen, du weißt, hat gewusst. Wissen Sie, wo der Schalter ist? [pause] ob. Ich weiß nicht, ob ich einen Termin brauche. [pause] bedeuten, hat bedeutet. Was bedeutet das Wort? [pause] wiederholen, hat wiederholt. Könnten Sie das bitte wiederholen? [pause] aufschreiben, hat aufgeschrieben. Könnten Sie das bitte aufschreiben? [pause] langsam. Sprechen Sie bitte langsam. [pause] fehlen, hat gefehlt. Es fehlt noch ein Foto. [pause] dabeihaben, hat dabeigehabt. Ich habe meinen Pass dabei. [pause] die Liste, die Listen. Auf der Liste steht alles. [pause] die Auskunft, die Auskünfte. Ich hätte gern eine Auskunft. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

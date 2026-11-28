@@ -1,0 +1,81 @@
+{
+ "job": "a21_le_02",
+ "who": "Lena",
+ "voice": "Lucy",
+ "voice_id": "MiVAi0PlB7YlXfCDRCkq",
+ "items": [
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Wohin hängen wir den Putzplan?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Wohin stellen wir die Schuhe?"
+   ]
+  },
+  {
+   "pid": "a2-1/1",
+   "who": "Lena",
+   "parts": [
+    "Und das Fahrrad von Felix?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Lena",
+   "parts": [
+    "Hallo Jiu! Wie war's in Heidelberg?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Lena",
+   "parts": [
+    "Was habt ihr gemacht?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Lena",
+   "parts": [
+    "Und das Wetter?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Lena",
+   "parts": [
+    "Oh nein! Und dann?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Lena",
+   "parts": [
+    "So ein Pech!"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Lena",
+   "parts": [
+    "Dann bist du spät zurückgekommen, oder?"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "Lena",
+   "parts": [
+    "Das ist doch schön. Hast du Fotos gemacht?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Wohin hängen wir den Putzplan? [pause] Wohin stellen wir die Schuhe? [pause] Und das Fahrrad von Felix? [pause] Hallo Jiu! Wie war's in Heidelberg? [pause] Was habt ihr gemacht? [pause] Und das Wetter? [pause] Oh nein! Und dann? [pause] So ein Pech! [pause] Dann bist du spät zurückgekommen, oder? [pause] Das ist doch schön. Hast du Fotos gemacht? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

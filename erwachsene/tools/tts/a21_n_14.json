@@ -1,0 +1,81 @@
+{
+ "job": "a21_n_14",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "einkaufen, verkaufen"
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "Ich bin um neun angekommen und habe ein Paket bekommen."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "Wir sind um acht Uhr abgefahren."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "Ich habe den Kunden angerufen."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "Ich musste um fünf Uhr aufstehen."
+   ]
+  },
+  {
+   "pid": "a2-1/2",
+   "who": "N",
+   "parts": [
+    "Wir konnten den ganzen Tag draußen spielen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Ich fühle mich nicht gut."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Du solltest zum Arzt gehen."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Ich kann nicht kommen, weil ich krank bin."
+   ]
+  },
+  {
+   "pid": "a2-1/3",
+   "who": "N",
+   "parts": [
+    "Ich brauche ein Attest."
+   ]
+  }
+ ],
+ "script": "Also. [pause] einkaufen, verkaufen [pause] Ich bin um neun angekommen und habe ein Paket bekommen. [pause] Wir sind um acht Uhr abgefahren. [pause] Ich habe den Kunden angerufen. [pause] Ich musste um fünf Uhr aufstehen. [pause] Wir konnten den ganzen Tag draußen spielen. [pause] Ich fühle mich nicht gut. [pause] Du solltest zum Arzt gehen. [pause] Ich kann nicht kommen, weil ich krank bin. [pause] Ich brauche ein Attest. [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}

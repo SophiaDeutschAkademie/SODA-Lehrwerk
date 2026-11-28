@@ -1,0 +1,87 @@
+{
+ "job": "a21_n_28",
+ "who": "N",
+ "voice": "Toni",
+ "voice_id": "tR9bEXIX9ixlxSis0fqv",
+ "items": [
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Ich hoffe, dass du kommst."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Ich möchte einen Tisch reservieren."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "Es schmeckt sehr gut."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "der Besuch.",
+    "Am Samstag haben wir Besuch."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "vorbeikommen, ist vorbeigekommen.",
+    "Komm doch am Samstag vorbei!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "die Überraschung, die Überraschungen.",
+    "Das ist eine Überraschung!"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "hoffen, hat gehofft."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "mögen.",
+    "Magst du Fisch?"
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "schmecken, hat geschmeckt.",
+    "Der Kuchen schmeckt sehr gut."
+   ]
+  },
+  {
+   "pid": "a2-1/5",
+   "who": "N",
+   "parts": [
+    "probieren, hat probiert.",
+    "Möchtest du die Suppe probieren?"
+   ]
+  }
+ ],
+ "script": "Also. [pause] Ich hoffe, dass du kommst. [pause] Ich möchte einen Tisch reservieren. [pause] Es schmeckt sehr gut. [pause] der Besuch. Am Samstag haben wir Besuch. [pause] vorbeikommen, ist vorbeigekommen. Komm doch am Samstag vorbei! [pause] die Überraschung, die Überraschungen. Das ist eine Überraschung! [pause] hoffen, hat gehofft. [pause] mögen. Magst du Fisch? [pause] schmecken, hat geschmeckt. Der Kuchen schmeckt sehr gut. [pause] probieren, hat probiert. Möchtest du die Suppe probieren? [pause] Gut.",
+ "tail": "Gut.",
+ "head": "Also."
+}
